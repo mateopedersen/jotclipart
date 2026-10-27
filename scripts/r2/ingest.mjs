@@ -18,6 +18,7 @@ import { tmpdir } from 'node:os';
 import { setTimeout as delay } from 'node:timers/promises';
 import { buildPlan, validateBatch, enforceStorageBudget, HARD_CAP } from './plan.mjs';
 import { acquireAccountWriter } from '../delivery/account-lock.mjs';
+import { openNativeInventorySession } from './native-inventory-session.mjs';
 import { configuredToken, cloudflareTransport } from './cloudflare-api.mjs';
 import {
   measureAccount,
@@ -145,11 +146,26 @@ async function aws(command, fields = [], requestEndpoint = endpoint) {
     );
   }
 }
+let nativeInventory;
 async function measure() {
   const options = {
     endpoint,
     batch,
-    aws,
+    aws: (command, fields, requestEndpoint) => {
+      if (command !== 'list-objects-v2' || !nativeInventory)
+        return aws(command, fields, requestEndpoint);
+      const value = (flag) => fields[fields.indexOf(flag) + 1];
+      return nativeInventory.read(
+        {
+          bucket: value('--bucket'),
+          jurisdiction: parseEndpoint(requestEndpoint).jurisdiction,
+          cursor: fields.includes('--continuation-token')
+            ? value('--continuation-token')
+            : undefined,
+        },
+        () => aws(command, fields, requestEndpoint),
+      );
+    },
     ...(rest ? { proveAbsent: rest.proveAbsent, enumerationSource: rest.enumerationSource } : {}),
     ...(!rest && verifyAbsentScopes
       ? {
@@ -168,7 +184,12 @@ async function measure() {
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
       const inventory = await measureAccount(options);
+      if (nativeInventory) nativeInventory.update(inventory);
       if (Date.now() - inventory.observedAt <= 45_000) return inventory;
+      // A slow, complete census may only supply hints to a read-only session.
+      // The next full census must still finish within the original 45 seconds.
+      if (apply && rest && !nativeInventory)
+        nativeInventory = await openNativeInventorySession(inventory);
       if (attempt === 2) throw new Error('Fresh all-account inventory could not finish in time');
     } catch (error) {
       if (
@@ -338,10 +359,14 @@ try {
     console.log('All objects verified. Editorial publication remains a separate reviewed step.');
   }
 } finally {
-  rmSync(verificationDir, { recursive: true, force: true });
-  if (lock !== undefined) {
-    closeSync(lock);
-    unlinkSync(lockPath);
+  try {
+    await nativeInventory?.close();
+  } finally {
+    rmSync(verificationDir, { recursive: true, force: true });
+    if (lock !== undefined) {
+      closeSync(lock);
+      unlinkSync(lockPath);
+    }
+    releaseAccountLock?.();
   }
-  releaseAccountLock?.();
 }
