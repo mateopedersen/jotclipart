@@ -1,0 +1,77 @@
+{
+  "wave": "wave_494",
+  "topic": "feast",
+  "method": "builtin-image-generation",
+  "research": "data/research/feast-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "feast-turkey-carving-chef",
+      "title": "Chef Carving a Turkey Roast",
+      "alt": "A smiling chef in a white toque and blue apron carves a turkey roast at a narrow wooden stand beside cranberry sauce and rolls.",
+      "description": "Round glasses and short curls distinguish the chef, whose knife and fork frame the pale slices exposed beneath the browned crust.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_494/source/feast-turkey-carving-chef.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-turkey-and-stuffed-squash",
+      "title": "Turkey Feast with Stuffed Squash",
+      "alt": "A golden roast turkey shares a copper handled platter with two filled squash halves and a cranberry sauce bowl.",
+      "description": "Herbs and red berries connect the larger bird at the rear to the two long grain-filled squash halves angled across the front.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_494/source/feast-turkey-and-stuffed-squash.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-turkey-picnic-hamper",
+      "title": "Turkey Feast Picnic Hamper",
+      "alt": "An open wicker hamper contains a roast turkey in an enamel dish beside cranberry sauce, rolls and folded green napkins.",
+      "description": "Leather straps and a complete front handle frame the deep basket, while its upright woven lid leaves each packed item visible.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_494/source/feast-turkey-picnic-hamper.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-round-table-friends",
+      "title": "Friends Sharing a Turkey Feast",
+      "alt": "Three smiling cartoon friends share a roast-turkey meal at a round wooden table while passing a bowl of green beans.",
+      "description": "Mustard, teal and plum tops distinguish the diners, with plated portions, mashed potatoes and gravy arranged around the centerpiece.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_494/source/feast-round-table-friends.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-potluck-arrival",
+      "title": "Neighbors Bringing a Turkey Potluck",
+      "alt": "Three cartoon neighbors carry a roast turkey, a bread basket and a pumpkin pie for a shared meal.",
+      "description": "A tall woman in green, an older man in denim and a shorter woman in a coral dress hold their dishes across a varied group silhouette.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_494/source/feast-potluck-arrival.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-school-friendship-table",
+      "title": "Children Sharing a Turkey Feast",
+      "alt": "Four smiling cartoon children share a roast turkey, corn, fruit and rolls around a small wooden table.",
+      "description": "Different hairstyles, bows and green, yellow, blue and pink outfits distinguish the children as one offers a bread roll across the food.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_494/source/feast-school-friendship-table.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

@@ -1,0 +1,501 @@
+{
+  "wave": "wave_451",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "reindeer-peeking-pine-sprig",
+      "title": "Reindeer Peeking Around a Pine Sprig",
+      "alt": "Blue-eyed cartoon reindeer peeking around a small upright pine sprig tied with a red bow.",
+      "description": "A swept cream forelock and wide antler crown rise above the little pine branch. The reindeer's long muzzle and two front hooves remain visible on either side of the greenery.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_451/source/reindeer-peeking-pine-sprig.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1287,
+      "height": 1222,
+      "pdfWidth": 1000,
+      "pdfHeight": 949,
+      "sourceType": "raster",
+      "sourceSha256": "f04de73aade1240aefd431028c8dbd93372349ca12b6751dc6ad83bb2bc7ddca",
+      "inputSignature": "855100ff33a2c4184bb9755089f21f212af39ada5900e0ee7b2d208d22d1aec3",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 823117,
+        "weightedCmykRmse": 0.879303
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1041583,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 823117,
+          "weightedCmykRmse": 0.879303
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        159,
+        16,
+        1079,
+        1183
+      ],
+      "image": {
+        "width": 1000,
+        "height": 949,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_451/exports/reindeer-peeking-pine-sprig.pdf",
+          "bytes": 823117,
+          "sha256": "fe7008bc6879ff603236ccc4e86983ca6c0c433d5bcd77a87dee312d7e862603"
+        },
+        "webp": {
+          "path": "work/production/wave_451/exports/reindeer-peeking-pine-sprig.webp",
+          "bytes": 851526,
+          "sha256": "ed8190105f0eb3f90f26f21151bed0b579314383bbe4fa1d42f61ce781b01007"
+        },
+        "thumb": {
+          "path": "work/production/wave_451/exports/reindeer-peeking-pine-sprig-thumb.webp",
+          "bytes": 57784,
+          "sha256": "c4f26fb0b5a29499a47eb1484e9a772d676ec694cc994a2978e81466d11bff78"
+        }
+      },
+      "proofSha256": "50c299f3ae63480f7449a9230f7e6d10addb82d0848fd7c073f2be7b5a5d837a",
+      "pairMeanRgbDifference": 3.42591
+    },
+    {
+      "id": "reindeer-jingle-bell-trio",
+      "title": "Three Different Christmas Reindeer",
+      "alt": "Three distinct cartoon reindeer arranged together: a seated cinnamon animal, a tall gray one in a cream scarf and a dark-brown one stepping forward.",
+      "description": "Different faces, antlers and body proportions give each member of the trio its own identity. A red bell collar, cream scarf and green bell bow distinguish their outfits.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_451/source/reindeer-jingle-bell-trio.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "03267a55e0dbb1be8f281e941cbd98ed2cc8e431ff2d36ceb76999a890ffc91c",
+      "inputSignature": "a1b5723952dcc349a97bb4fef53b025f3e4e2e808b9adaefc62a5e8d866455e8",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 898222,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 898222,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        144,
+        17,
+        1403,
+        965
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_451/exports/reindeer-jingle-bell-trio.pdf",
+          "bytes": 898222,
+          "sha256": "5ac6a5d20275d04ef38afee25e88ae594615f40fd91eed57cd22f781c81d2e9d"
+        },
+        "webp": {
+          "path": "work/production/wave_451/exports/reindeer-jingle-bell-trio.webp",
+          "bytes": 1294828,
+          "sha256": "328ee45ec0cbbc1a6dc65ed1bddcdf0a250105b25a6adff33b9b68a8bfec01c8"
+        },
+        "thumb": {
+          "path": "work/production/wave_451/exports/reindeer-jingle-bell-trio-thumb.webp",
+          "bytes": 55126,
+          "sha256": "7db34ada29f74637a07243266cb39ff0672a77cca39403299b9f6e47397fe410"
+        }
+      },
+      "proofSha256": "3b6049e92667856f0751cd6bc0aa360901f0330dcba9e3d17fb72631b4a1375c",
+      "pairMeanRgbDifference": 5.30533
+    },
+    {
+      "id": "reindeer-snowman-meeting",
+      "title": "Reindeer Greeting a Tiny Snowman",
+      "alt": "Brown cartoon reindeer lowering its nose to the carrot nose of a tiny snowman wearing a green knitted cap.",
+      "description": "The three-ball snowman smiles up with twig arms spread. Cream cheek fur, small white back spots and broad antlers distinguish the four-legged reindeer beside it.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_451/source/reindeer-snowman-meeting.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1385,
+      "height": 1136,
+      "pdfWidth": 1000,
+      "pdfHeight": 820,
+      "sourceType": "raster",
+      "sourceSha256": "cff4a0d5e6e2bcb425512de4bc3ca3cca112fe130bb969a52db7caca51fe8077",
+      "inputSignature": "6da6e4468fb32b1d3972932fac4f569e6f0ad2c21440a69824403e991671d011",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 806252,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 806252,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        192,
+        43,
+        1208,
+        1067
+      ],
+      "image": {
+        "width": 1000,
+        "height": 820,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_451/exports/reindeer-snowman-meeting.pdf",
+          "bytes": 806252,
+          "sha256": "b0a37a92e1e43802d370b08acce9028201ee3bd4be35367cfcb9d5048a07995c"
+        },
+        "webp": {
+          "path": "work/production/wave_451/exports/reindeer-snowman-meeting.webp",
+          "bytes": 724908,
+          "sha256": "141bd83b15ed68ff7221034c719b9c056cbf74993e1b19cc5b7236f6706d68fc"
+        },
+        "thumb": {
+          "path": "work/production/wave_451/exports/reindeer-snowman-meeting-thumb.webp",
+          "bytes": 49298,
+          "sha256": "a4263706d6ee19ea3f534c4ccf03bf9a4f4e47f80ae991e3bc204c34f27a4906"
+        }
+      },
+      "proofSha256": "822fbfdc3862aea7475506570568069c95a65e9aed219bddd3b2f9b269e02cd7",
+      "pairMeanRgbDifference": 3.01592
+    },
+    {
+      "id": "reindeer-holly-ear-bow",
+      "title": "Reindeer Holding a Holly Sprig",
+      "alt": "Seated cartoon reindeer with large brown eyes holding a small holly sprig in its mouth and wearing a cream bow near one ear.",
+      "description": "The folded legs form a long horizontal base below the reindeer's upright chest. Delicate antler branches and a white cheek ruff frame the gentle face above the red berries.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_451/source/reindeer-holly-ear-bow.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1230,
+      "height": 1278,
+      "pdfWidth": 962,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "cdcbea5364cdc1bc68a68521752c65768f8a5229920cd32f6497839ffb3b67cf",
+      "inputSignature": "66ee00ae3ae149cc731276d61df4d7f91050e72f19d18b0bcf81769ac815054d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 780028,
+        "weightedCmykRmse": 0.881157
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1018061,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 780028,
+          "weightedCmykRmse": 0.881157
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        194,
+        36,
+        1062,
+        1243
+      ],
+      "image": {
+        "width": 962,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_451/exports/reindeer-holly-ear-bow.pdf",
+          "bytes": 780028,
+          "sha256": "8dd9fa122a11fb9d19d36585a6099b6735c6b8eef0fdb4f27008cacc3bdf6004"
+        },
+        "webp": {
+          "path": "work/production/wave_451/exports/reindeer-holly-ear-bow.webp",
+          "bytes": 798730,
+          "sha256": "ee051e751e1bac4169f1482ba0d377f830841098410c6a262936d57a7ffa03c6"
+        },
+        "thumb": {
+          "path": "work/production/wave_451/exports/reindeer-holly-ear-bow-thumb.webp",
+          "bytes": 52384,
+          "sha256": "5279cb2e51e0acfa4a09cc201a8789143ab91d6f4a0b4e960314b80e34a0664c"
+        }
+      },
+      "proofSha256": "52700c294e68711d784b9557386613008a65d82ccd83adb4fc416c8344a43cc2",
+      "pairMeanRgbDifference": 2.69853
+    },
+    {
+      "id": "reindeer-blank-wooden-sign",
+      "title": "Reindeer Presenting a Blank Wooden Sign",
+      "alt": "Teal-eyed cartoon reindeer standing behind a blank wooden sign with two forehooves on its upper edge and rear hooves below.",
+      "description": "Rounded wood grain fills the empty sign, leaving space for a visitor's own wording. A dark forelock, cream chest and wide antlers rise clearly above it.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_451/source/reindeer-blank-wooden-sign.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "5aa15c36164c1b8f2195f92a5a9381b7ba233f777891c9bdb931c6b0471fa153",
+      "inputSignature": "98ffec7362863c7313602cd47951f1f0a5013b387e24f9647a5bd9f1ffa08e04",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 767488,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 767488,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        275,
+        46,
+        1037,
+        1146
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_451/exports/reindeer-blank-wooden-sign.pdf",
+          "bytes": 767488,
+          "sha256": "49d12090959865e6cf60e78337c2a637a0354943aaf462f953abbf73626297d2"
+        },
+        "webp": {
+          "path": "work/production/wave_451/exports/reindeer-blank-wooden-sign.webp",
+          "bytes": 626058,
+          "sha256": "8e9678785989adcdd86b0b6205db187a9b563d9e814338b2511151819cb397a7"
+        },
+        "thumb": {
+          "path": "work/production/wave_451/exports/reindeer-blank-wooden-sign-thumb.webp",
+          "bytes": 39034,
+          "sha256": "dd1e21a9a78c9b25a6943510430e99b73afcc45798408da97d3010a96a9adbfd"
+        }
+      },
+      "proofSha256": "45e665dd1f5f601de23a5427a61ecc63357a261aac9ef16ceeb02de21fb75ddb",
+      "pairMeanRgbDifference": 2.52306
+    },
+    {
+      "id": "reindeer-sledding-hat",
+      "title": "Reindeer Riding a Red Sled",
+      "alt": "Smiling cartoon reindeer seated on a red sled, wearing a green pom-pom beanie and a fringed gold scarf.",
+      "description": "The reindeer gathers all four hooves on the sled's slatted seat. Gold curved runners and a forward-curling front support complete the little winter vehicle.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_451/source/reindeer-sledding-hat.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "e5cb06daa50473994f5f24d90c247065d6660e00ff6b27bf848ec74ad2632df4",
+      "inputSignature": "f4f629eea197bd83a471036e8913fae675a6c592e37c253e6dd61f93283fbb70",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 776282,
+        "weightedCmykRmse": 0.86718
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1029248,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 776282,
+          "weightedCmykRmse": 0.86718
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        193,
+        16,
+        1177,
+        1186
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_451/exports/reindeer-sledding-hat.pdf",
+          "bytes": 776282,
+          "sha256": "acd179d054cf43c6a5c3092bd8b3db743d06b727fd138b72ecc0058fda74d2c0"
+        },
+        "webp": {
+          "path": "work/production/wave_451/exports/reindeer-sledding-hat.webp",
+          "bytes": 904792,
+          "sha256": "e491a1c677bda7a530d878168181c8074b276d0577b5cb1c2b5e3259a9d6c416"
+        },
+        "thumb": {
+          "path": "work/production/wave_451/exports/reindeer-sledding-hat-thumb.webp",
+          "bytes": 61318,
+          "sha256": "d14e8f204affb323fccf597d7bcf56e1ebf1a937654b94dcc99fa3f426f97741"
+        }
+      },
+      "proofSha256": "0d44f00e202f7cef7414dfbb6dff94cbf852b7a80735dd4f1d5d11223e52e6a2",
+      "pairMeanRgbDifference": 3.91724
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T06:58:17.408860+00:00",
+  "screenReviewEvidence": "work/production/wave_451/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T07:33:51.591Z"
+}

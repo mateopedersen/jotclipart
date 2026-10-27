@@ -1,0 +1,485 @@
+{
+  "wave": "wave_489",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "2027-class-of-university-emblem",
+      "title": "Gold 2027 Graduation Trophy",
+      "alt": "Gold trophy-shaped 2027 numerals on an ivory pedestal labeled Class of 2027, with a black cap resting on the seven.",
+      "description": "A navy ribbon curls around the complete base beneath the reflective numeral sculpture and hanging gold tassel.",
+      "color": "Gold",
+      "style": "Color",
+      "source": "work/production/wave_489/source/2027-class-of-university-emblem.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "c595b4d1a4e96a66fdc552fa4dfae7d046cb2deb54378606ba6152b2ba611069",
+      "inputSignature": "0f06e25a93f61123fbf33ba0d8e7d8ab2e7e8f3530b4cbed2b9852b9044bc413",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 706989,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 706989,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        41,
+        155,
+        1496,
+        846
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_489/exports/2027-class-of-university-emblem.pdf",
+          "bytes": 706989,
+          "sha256": "45c7596cc91085af2e0e4edd16ac6b00e243f61453158a2a766a4e7ed41f7438"
+        },
+        "webp": {
+          "path": "work/production/wave_489/exports/2027-class-of-university-emblem.webp",
+          "bytes": 1233772,
+          "sha256": "aafdfcd5c96c0fa5f09460d6dd4d109c603f02b6aa28e81f6cbc3bf92f4d0617"
+        },
+        "thumb": {
+          "path": "work/production/wave_489/exports/2027-class-of-university-emblem-thumb.webp",
+          "bytes": 40670,
+          "sha256": "cb599127b0c01d90bf247b5d122e9ea9f6025c953ba5a7854d2d0df765540ef1"
+        }
+      },
+      "proofSha256": "0946c223b352d3a4c5691bb00dde77d306a3927211742d3d64b18efe3ba02cc3",
+      "pairMeanRgbDifference": 4.2093
+    },
+    {
+      "id": "2027-outline-party-animals",
+      "title": "Welcome 2027 Rabbit and Tortoise Coloring",
+      "alt": "A rabbit and a tortoise in party hats hold a Welcome 2027 banner in a black-and-white coloring illustration.",
+      "description": "The rabbit’s long ears and the tortoise’s patterned shell frame a broad banner with open letters and small stars for coloring.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_489/source/2027-outline-party-animals.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "4dd61e8acbd85eb2776806f6cf1a4fae4193aaaf87d2a32fff6b38f5ca96ac93",
+      "inputSignature": "3de9844d97c2b92f79e8c47eae87dc74726e78a5b8bfdaadcbd56d1eee1f77f4",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 249900,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 249900,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        137,
+        55,
+        1444,
+        955
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_489/exports/2027-outline-party-animals.pdf",
+          "bytes": 249900,
+          "sha256": "eeb90b7572b4e1e7d15d5489bc97da4be0484842d8424ffffb55cffb7e6e3c13"
+        },
+        "webp": {
+          "path": "work/production/wave_489/exports/2027-outline-party-animals.webp",
+          "bytes": 934304,
+          "sha256": "6486db35234a6d1ac2a73e113beb7aa4acef03a646726e34e255d1377d60f662"
+        },
+        "thumb": {
+          "path": "work/production/wave_489/exports/2027-outline-party-animals-thumb.webp",
+          "bytes": 40068,
+          "sha256": "6d0a0d9279cf48d26439eef084f5d93abe58619ad8cabe97047f76dc0b33bad4"
+        }
+      },
+      "proofSha256": "61f064028fa4c77ef825a52572283c9f2b8b0b12a328fb958952c6113f8b349b",
+      "pairMeanRgbDifference": 9.33422
+    },
+    {
+      "id": "2027-outline-flower-year",
+      "title": "2027 Rose Vine Coloring Lettering",
+      "alt": "Large outlined 2027 numerals are wrapped in a rose vine, with a small bee above the seven.",
+      "description": "Open petals, leaves and broad numeral spaces make the black-and-white floral year a detailed coloring composition.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_489/source/2027-outline-flower-year.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "9aa5368b91d26b0e9e3e53e64a014fc761b3e3591b90ebe5b8b1f725fd7e1b9c",
+      "inputSignature": "ae30c0072f98138efcc957cc0c8f49c3cd4636ac0f1573987d5d9c549988737b",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 250600,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 250600,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        71,
+        115,
+        1456,
+        831
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_489/exports/2027-outline-flower-year.pdf",
+          "bytes": 250600,
+          "sha256": "249e00eaf6ecadec3fca68ca5ccc99666c256f0c41d0c4343bb694d3751ed6c4"
+        },
+        "webp": {
+          "path": "work/production/wave_489/exports/2027-outline-flower-year.webp",
+          "bytes": 937608,
+          "sha256": "8e7dd49b376b17dac37b06ce0c600185a51fb4c763077da8c10e67df3b8e53ee"
+        },
+        "thumb": {
+          "path": "work/production/wave_489/exports/2027-outline-flower-year-thumb.webp",
+          "bytes": 42892,
+          "sha256": "f1819343ed1a90726c0507e8ee0ccc916bf4de2cae01034508c0cb75fdcd7b8d"
+        }
+      },
+      "proofSha256": "55161a2f0dd85499d8337817bba4f59da378ff4404de2b1a4558e5c014c14a8d",
+      "pairMeanRgbDifference": 8.55755
+    },
+    {
+      "id": "2027-outline-rocket-year",
+      "title": "Ready for 2027 Space Coloring",
+      "alt": "A waving ringed planet rises above a Ready for 2027 round sign beside a small wheeled spaceship in black and white.",
+      "description": "Stars surround the circular lettering while the toy-like spacecraft rests at the lower left with its cockpit and wheels fully outlined.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_489/source/2027-outline-rocket-year.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "cb0a3bd165e5a699d99ed526fa59598561eb0fc1f0508dd8170bbbd266645f81",
+      "inputSignature": "271cefcef4553777b1a8b72e287f0e96fe54d88057409e74e09a0debcd294a6e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 222147,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 222147,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        191,
+        21,
+        1266,
+        1005
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_489/exports/2027-outline-rocket-year.pdf",
+          "bytes": 222147,
+          "sha256": "b717a8ea7082d05bf907e3d47f16b8766200f84c0774d334aa5ae749158f2dff"
+        },
+        "webp": {
+          "path": "work/production/wave_489/exports/2027-outline-rocket-year.webp",
+          "bytes": 850668,
+          "sha256": "eb3a39327ab027a8ab17f644ef9c5560e00436c7f9385c3afe0a2154adee2fc1"
+        },
+        "thumb": {
+          "path": "work/production/wave_489/exports/2027-outline-rocket-year-thumb.webp",
+          "bytes": 36560,
+          "sha256": "52b4748b216ce5d1d868b77f6a04ba935193bc5bc4c0004e117a100fc9b3de83"
+        }
+      },
+      "proofSha256": "e48b4421fa0bc2091126a7da4fc04299e74cfb884ffd45623228e884482ebc69",
+      "pairMeanRgbDifference": 8.72623
+    },
+    {
+      "id": "2027-outline-graduation",
+      "title": "Class of 2027 Gown Coloring",
+      "alt": "A graduation gown hangs beneath a mortarboard, with a Class of 2027 tag, in a black-and-white outline illustration.",
+      "description": "Long pleated sleeves, a V-shaped yoke and a complete tassel distinguish the academic outfit while leaving broad areas for coloring.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_489/source/2027-outline-graduation.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "2027",
+      "width": 1134,
+      "height": 1387,
+      "pdfWidth": 818,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "6113b266fd825055fbb543622bc80492415fe6c1349a9999523490e4c33dbe2c",
+      "inputSignature": "0299d559b2485cb6023c8e7fa4fde7e82a61549c51d067ee39ff2eae794c70ca",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 202815,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 202815,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        155,
+        54,
+        979,
+        1319
+      ],
+      "image": {
+        "width": 818,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_489/exports/2027-outline-graduation.pdf",
+          "bytes": 202815,
+          "sha256": "aaeef28a455846a20b7c660aea8e32877604e6fa83227ba16ebed9c7811a752b"
+        },
+        "webp": {
+          "path": "work/production/wave_489/exports/2027-outline-graduation.webp",
+          "bytes": 485588,
+          "sha256": "849b9b071381b95712a89e4328e8cf83708015a46385e4f83ebfa6a69f0354af"
+        },
+        "thumb": {
+          "path": "work/production/wave_489/exports/2027-outline-graduation-thumb.webp",
+          "bytes": 31208,
+          "sha256": "57f15a40a8c5d84db4d5a44398e48b5a9935c5fee52d7b68549e4c146f82d697"
+        }
+      },
+      "proofSha256": "54d9e5137305356334ac6a94ea482f221e64293b0b86a4719b39aed624264615",
+      "pairMeanRgbDifference": 5.30147
+    },
+    {
+      "id": "2027-outline-happy-year",
+      "title": "Happy New Year 2027 Patchwork Coloring",
+      "alt": "Happy New Year 2027 appears in patterned outlined bubble lettering beside a star wand and party hat.",
+      "description": "Stitches, stars, dots and diagonal panels fill the large letters, with ribbons curling from the wand and pointed hat.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_489/source/2027-outline-happy-year.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "6a9c4cea905dabcb1b16889ec86dbb4bd0c77ab3e579261f71339c9493ce1539",
+      "inputSignature": "1e9cdc3ce240b54256d4035b0fb5ba5e0ba25d718cc1dad05ba8dacd94076952",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 335553,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 335553,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        92,
+        45,
+        1442,
+        984
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_489/exports/2027-outline-happy-year.pdf",
+          "bytes": 335553,
+          "sha256": "00ab873e98ceddf8210ba348f741c9809b11a855b8fbd36f9651e55922202471"
+        },
+        "webp": {
+          "path": "work/production/wave_489/exports/2027-outline-happy-year.webp",
+          "bytes": 1092402,
+          "sha256": "57e0d860f4c22c29c709ab47f28cb1f760e7de8f61e06f1589da0f41afd649dc"
+        },
+        "thumb": {
+          "path": "work/production/wave_489/exports/2027-outline-happy-year-thumb.webp",
+          "bytes": 59290,
+          "sha256": "f84b930c26fd15713109f47bfc097e6c5d42c9861159e5088dfd6eaf12337925"
+        }
+      },
+      "proofSha256": "9dd970c700c10cc85055cd3218ef19176d1faf550d53161932fe76a36efc3f06",
+      "pairMeanRgbDifference": 11.02218
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T12:33:44.482029+00:00",
+  "screenReviewEvidence": "work/production/wave_489/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T12:33:45.532Z"
+}

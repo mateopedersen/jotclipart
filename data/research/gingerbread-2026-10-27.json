@@ -1,0 +1,51 @@
+{
+  "topic": "gingerbread",
+  "researchedAt": "2026-10-27T09:06:55.580900+00:00",
+  "googleImagesUrl": "https://www.google.com/search?udm=2&q=gingerbread+clipart&gl=us&hl=en",
+  "googleImagesActuallyViewed": true,
+  "observedIntent": [
+    "Friendly cartoon cookie characters with icing faces, simple readable contours and independent silhouettes.",
+    "Decorated gingerbread objects, houses, stars, trees, frames and coloring images are common useful intents.",
+    "Create independent compositions; do not copy stock images or use recoloring to inflate the collection."
+  ],
+  "sourceImageReuse": false,
+  "existingContentCheck": {
+    "acceptedCatalog": 13884,
+    "exactTopic": 0,
+    "liveHttpStatus": 404,
+    "liveCatalogTotal": 13784,
+    "queuedPlans": 0,
+    "stagedSources": 0,
+    "relatedArtworks": [
+      {
+        "id": "cookie-gingerbread-baker-character-crayon-clipart",
+        "imageSha256": "3da6dec8372079e212c9fcdd9521e200fa92b86195318919846adb45a82feb3e",
+        "actuallyViewed": true
+      },
+      {
+        "id": "cookie-gingerbread-cookie-pair-black-and-white-linocut-clipart",
+        "imageSha256": "831fd96918747d23523f3ebb84adeea546045ca2d91c9b0947625306c108e0a4",
+        "actuallyViewed": true
+      },
+      {
+        "id": "cookie-gingerbread-person-paper-cut-clipart",
+        "imageSha256": "67c8980addc70b86ffd35386a728ccfbaf5f60227bb45c0aa0f86c2336fb3d9b",
+        "actuallyViewed": true
+      },
+      {
+        "id": "elf-building-a-gingerbread-house",
+        "imageSha256": "48010238384fff461a42c95e506df6aebf97b47b09d38d4800077353649bf26e",
+        "actuallyViewed": true
+      }
+    ],
+    "evidence": "work/production/gingerbread-existing-related.jpg",
+    "excludedConcepts": [
+      "chef cookie with whisk",
+      "plain flat cookie person",
+      "dancing black-and-white cookie pair",
+      "elf piping icing onto a house"
+    ]
+  },
+  "actualVisualReviewOfNewSources": true,
+  "sourceReviewEvidence": "work/production/gingerbread-source-reviews.json"
+}

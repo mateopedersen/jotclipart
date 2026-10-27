@@ -1,0 +1,77 @@
+{
+  "wave": "wave_458",
+  "topic": "snowman",
+  "method": "builtin-image-generation",
+  "research": "data/research/snowman-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "snowman-snow-angel",
+      "title": "Snowman Relaxing with Outstretched Arms",
+      "alt": "Leaning snowman with closed smiling eyes, spread twig arms, mint pom-pom cap, orange scarf and a red heart button.",
+      "description": "The relaxed figure tilts backward with two round snow feet forward and both arms open wide.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_458/source/snowman-snow-angel.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-lantern-evening",
+      "title": "Snowman Carrying a Brass Lantern",
+      "alt": "Tall snowman in a wide gray felt hat and cream scarf holding a brass lantern by its ring handle.",
+      "description": "The narrow head and stacked snow body make a gentle upright silhouette, with one branch arm extended beside the lantern.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_458/source/snowman-lantern-evening.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-snowball-juggler",
+      "title": "Snowman Juggling Three Snowballs",
+      "alt": "Laughing snowman in a purple and gold jester cap juggling three snowballs above its twig hands.",
+      "description": "The bell-tipped cap and striped scarf add a playful rhythm to the arcing snowballs.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_458/source/snowman-snowball-juggler.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-sleeping-crescent",
+      "title": "Snowman Sleeping in a Knitted Crescent",
+      "alt": "Small sleeping snowman in a red nightcap and scarf nestled inside a cream cable-knit crescent cushion.",
+      "description": "Folded twig arms and closed eyes create a quiet resting pose within the curved knitted shape.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_458/source/snowman-sleeping-crescent.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-lettering-let-it-snow",
+      "title": "Let It Snow Lettering with a Snowman",
+      "alt": "Blue snow-capped lettering reading Let It Snow with a smiling gray-hatted snowman beside the final letter.",
+      "description": "Rounded blue letters form a compact two-line greeting, finished with two snowflakes and a small pink-scarfed character.",
+      "color": "Blue",
+      "style": "Color",
+      "source": "work/production/wave_458/source/snowman-lettering-let-it-snow.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-window-peek",
+      "title": "Two Snowmen Peeking over a Wooden Ledge",
+      "alt": "Two smiling snowmen in teal and red knitted hats leaning their twig hands on a snow-covered wooden ledge.",
+      "description": "A round-faced character and a taller narrow-faced companion share a cheerful cropped window composition.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_458/source/snowman-window-peek.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

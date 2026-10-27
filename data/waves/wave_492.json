@@ -1,0 +1,481 @@
+{
+  "wave": "wave_492",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "feast-afternoon-tea-stand",
+      "title": "Three-Tier Afternoon Tea Stand",
+      "alt": "A floral three-tier tea stand displays sandwiches, scones and pink pastries beside a matching cup and saucer.",
+      "description": "A heart-shaped gold handle tops the delicate stand, with jam and cream dishes tucked beside the middle-tier scones.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_492/source/feast-afternoon-tea-stand.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1230,
+      "height": 1278,
+      "pdfWidth": 962,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "7ace0cb55dd0eae5b366760df974461ec6fc2ab3ac36967318a77a329e91524c",
+      "inputSignature": "fcfe4d35f0b592efee82710ebbff461c3dd1be6a3d76af956a440a321a87a5a5",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 907193,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 907193,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        252,
+        46,
+        1097,
+        1192
+      ],
+      "image": {
+        "width": 962,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_492/exports/feast-afternoon-tea-stand.pdf",
+          "bytes": 907193,
+          "sha256": "c28587a3d470e1a992e396239822c5558a3be162d16db0721e4648ab52b4a73e"
+        },
+        "webp": {
+          "path": "work/production/wave_492/exports/feast-afternoon-tea-stand.webp",
+          "bytes": 887410,
+          "sha256": "18694832d4883379aa1a30f729d62c59b966b361c9aa90bb4d0b1ff34ab56133"
+        },
+        "thumb": {
+          "path": "work/production/wave_492/exports/feast-afternoon-tea-stand-thumb.webp",
+          "bytes": 58450,
+          "sha256": "820238c0529a0c30e7d2ab8b41c897ab25243455e053500223b1244d1619779c"
+        }
+      },
+      "proofSha256": "b44fe54f2d459df937ff1e9968a997b7669918f7b90ef72fd0cdaf502427d925",
+      "pairMeanRgbDifference": 3.27734
+    },
+    {
+      "id": "feast-taco-serving-station",
+      "title": "Taco Sharing Station with Toppings",
+      "alt": "Three filled tacos stand in a yellow rack behind bowls of tomato, corn and avocado beside stacked tortillas.",
+      "description": "Colorful toppings remain separate from the large taco shells, creating a compact serving arrangement with clear individual dishes.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_492/source/feast-taco-serving-station.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "cfed8b8b9b56cf65b0904b9b702283a94f1a09df2822c9c875b44c0c4a63ceb5",
+      "inputSignature": "e86602ef74001e10f6e563f55ac56c48c5845144dfa57acf2aa263ddee723000",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 636633,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 636633,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        193,
+        181,
+        1345,
+        828
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_492/exports/feast-taco-serving-station.pdf",
+          "bytes": 636633,
+          "sha256": "51f66bb616184b87bf373b93979bab9a8f937a13a443de0d91f949e25994e57a"
+        },
+        "webp": {
+          "path": "work/production/wave_492/exports/feast-taco-serving-station.webp",
+          "bytes": 1314184,
+          "sha256": "4b4e28698ee24b36dae1787309ba4498b0b6d9fc099ae558c7e1fc0b0cf22a92"
+        },
+        "thumb": {
+          "path": "work/production/wave_492/exports/feast-taco-serving-station-thumb.webp",
+          "bytes": 37544,
+          "sha256": "dbadf814776ac11d8ac0b85bf92ffc79a09be7d7899a9d4bdba488f491877f6b"
+        }
+      },
+      "proofSha256": "baedd32a35e7e9d51aa4b31f9077e1ba7701918e97dd35b333ef528a2f93dad1",
+      "pairMeanRgbDifference": 4.50449
+    },
+    {
+      "id": "feast-steamer-dumpling-feast",
+      "title": "Dumpling Steamers with a Red Teapot",
+      "alt": "Two bamboo steamers hold crescent dumplings and open-topped dumplings beside a red teapot and dipping sauce.",
+      "description": "Pleated white dumplings contrast with the yellow open wrappers, while a small floral pattern decorates the rounded teapot.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_492/source/feast-steamer-dumpling-feast.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "357a627a1dd915e70db5e13bd885e118246a18360fee0747d16564566775b41b",
+      "inputSignature": "dfa9a9cf12ce50ab61cafedf5d4db3fdccd94038beda87e31a80e0c08c88f3b5",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 634630,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 634630,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        286,
+        141,
+        1328,
+        880
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_492/exports/feast-steamer-dumpling-feast.pdf",
+          "bytes": 634630,
+          "sha256": "7b3c4aed5bffec1e4c40d4de7e849daba041e07c8746999c765a52258216290a"
+        },
+        "webp": {
+          "path": "work/production/wave_492/exports/feast-steamer-dumpling-feast.webp",
+          "bytes": 1241136,
+          "sha256": "7ac8c9089450400bd779132eb1128c7b945d6fea30e556a719a60bef0490e08f"
+        },
+        "thumb": {
+          "path": "work/production/wave_492/exports/feast-steamer-dumpling-feast-thumb.webp",
+          "bytes": 35766,
+          "sha256": "9dc2fa1c09c034149ac85ad8f12ba1dd970f25a42c5059cee9f724181e029ec6"
+        }
+      },
+      "proofSha256": "2d3c06a60a4f5e2d74a786fd8988f050c5adc551632897c82c94d9c3474a6049",
+      "pairMeanRgbDifference": 3.73221
+    },
+    {
+      "id": "feast-sushi-sharing-boat",
+      "title": "Sushi Serving Boat with Nigiri and Rolls",
+      "alt": "A wooden serving boat holds six sushi rolls and two salmon-topped nigiri beside a small sauce dish.",
+      "description": "Green leaf garnish and folded pink ginger sit near the raised stern, keeping the complete boat silhouette visible around the food.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_492/source/feast-sushi-sharing-boat.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "6f6ac5df388b0f605279a6960a643c1dcb494e9cf3a1864b21d97671034261fc",
+      "inputSignature": "9e67ceac5c152d1e5d5d2cd3cbbdeb51f426e2b50df809de0b88c15460b9dd24",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 539654,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 539654,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        151,
+        187,
+        1386,
+        815
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_492/exports/feast-sushi-sharing-boat.pdf",
+          "bytes": 539654,
+          "sha256": "a0101ffd57716edc8b4b3ee5c68b56a13353080a798cc1ffc0a144d792f427e3"
+        },
+        "webp": {
+          "path": "work/production/wave_492/exports/feast-sushi-sharing-boat.webp",
+          "bytes": 1130516,
+          "sha256": "6e581c90b00fada8a14a7719753cd432e31a637b6222290f70eb3c0941720496"
+        },
+        "thumb": {
+          "path": "work/production/wave_492/exports/feast-sushi-sharing-boat-thumb.webp",
+          "bytes": 29972,
+          "sha256": "1adb7d54acbd5366ff7b09d1e13cf860b77921ab432e9bed49504be3538dc93e"
+        }
+      },
+      "proofSha256": "ee9e92a2217441044c83d19e8c73152a0f5f61f9ead22c05b37b187d20d75b19",
+      "pairMeanRgbDifference": 3.77245
+    },
+    {
+      "id": "feast-cheese-and-fruit-board",
+      "title": "Slate Cheese Board with Grapes and Figs",
+      "alt": "A dark slate board holds a cheese wedge, a cut round cheese, grapes, sliced figs and fanned crackers.",
+      "description": "A wooden-handled cheese knife lies along the front edge, balancing the pale cheeses against the purple fruit and rough slate rim.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_492/source/feast-cheese-and-fruit-board.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "8bd174feba73aab0391f6c42575af9ca0cc16bdd48e33aa225a1727558848df0",
+      "inputSignature": "0ae8dcb27bd0ec8195e5bc5d06a01f9c5a71efcb96643c4d8b35b0dda6b5d8bc",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 640062,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 640062,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        227,
+        188,
+        1382,
+        809
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_492/exports/feast-cheese-and-fruit-board.pdf",
+          "bytes": 640062,
+          "sha256": "cb81131d0336e41fdcf07682e1bd0fd6b60bbf0716ff2ea43d9c1dc61f41c947"
+        },
+        "webp": {
+          "path": "work/production/wave_492/exports/feast-cheese-and-fruit-board.webp",
+          "bytes": 1144466,
+          "sha256": "89d66bd132acc7c89a0c719c009645d1b797509e365445ea613900d7410100bd"
+        },
+        "thumb": {
+          "path": "work/production/wave_492/exports/feast-cheese-and-fruit-board-thumb.webp",
+          "bytes": 31870,
+          "sha256": "a2c784b0762ed15e3a171539e0f3ac672b3667a371ba18642e226bae10a093c3"
+        }
+      },
+      "proofSha256": "54523808963873e298859c83303020ef2a0424346f1706efea74400fd040130d",
+      "pairMeanRgbDifference": 2.7122
+    },
+    {
+      "id": "feast-shellfish-rice-pan",
+      "title": "Mussel Rice Feast Pan with Salad",
+      "alt": "A two-handled black pan contains golden rice, mussels, pepper strips, peas and lemon wedges beside a salad bowl.",
+      "description": "Opened dark shells form a clear pattern across the bright rice, with the small leafy salad set behind the right handle.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_492/source/feast-shellfish-rice-pan.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "af17063db0e158b62e84c91dfd76f04a339ec8dd8353c0eb2a4fcd1557bd1136",
+      "inputSignature": "d77dcc1756e5dd8b7420fdf383b4adf58ae147a0ac6c508992f334b0baa96c0f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 681363,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 681363,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        141,
+        233,
+        1431,
+        829
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_492/exports/feast-shellfish-rice-pan.pdf",
+          "bytes": 681363,
+          "sha256": "095791d55af264bfbbe7411df8ccc080a2b4f3482cd3652c567e743328c2c8bf"
+        },
+        "webp": {
+          "path": "work/production/wave_492/exports/feast-shellfish-rice-pan.webp",
+          "bytes": 1219412,
+          "sha256": "51c6fe83b30da4870b1082d5a3982a9766651929e33ce70e2559dc94150b2837"
+        },
+        "thumb": {
+          "path": "work/production/wave_492/exports/feast-shellfish-rice-pan-thumb.webp",
+          "bytes": 34900,
+          "sha256": "69eaf58635132308045110b0655b367afda6af2386f8c56bab4e4874ec4b675e"
+        }
+      },
+      "proofSha256": "fd01efd195eb1c40cc28a3672982c00b8a3abcb1681254401392b3054e3fd043",
+      "pairMeanRgbDifference": 4.12241
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T14:29:55.420724+00:00",
+  "screenReviewEvidence": "work/production/wave_492/native-proof-review.jpg",
+  "screenReviewEvidenceSha256": "e0549dac22c1c0ddf04f1272e18205affce88ba1ee06c5928d04cbed11a98a87",
+  "screenReviewNotes": "All six actual CMYK-rendered PDF proofs inspected for correct pairing, intact vessels and utensils, food separation, framing and legible detail. No physical print proof claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T14:34:19.344Z"
+}

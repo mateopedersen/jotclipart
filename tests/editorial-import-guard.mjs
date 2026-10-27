@@ -7,6 +7,7 @@ import {
   collectionSourceSignature,
   requiredCollectionIntroductions,
   readRequiredCollectionIntroductions,
+  readCollectionAudit,
 } from '../scripts/collection-editorial.mjs';
 const read = (p) => JSON.parse(readFileSync(new URL('../' + p, import.meta.url)));
 const catalog = read('data/art.json'),
@@ -78,4 +79,17 @@ test('future subjects need an inventory-bound short introduction and replacement
     /missing or stale/,
   );
   assert(readRequiredCollectionIntroductions(catalog).size >= 13);
+});
+
+test('the audit reads the split collection registries used by the public catalog', () => {
+  const root = new URL('..', import.meta.url).pathname;
+  const report = readCollectionAudit(root);
+  const expected = readRequiredCollectionIntroductions(catalog, root);
+  assert.equal(report.checkedIntroductions, expected.size);
+  assert.equal(report.uniqueIntroductions, expected.size);
+  assert.equal(
+    report.checkedIntroductions + report.legacyTopicsAwaitingIntroductionReview,
+    new Set(catalog.filter((item) => item.published && item.indexable).map((item) => item.topic))
+      .size,
+  );
 });

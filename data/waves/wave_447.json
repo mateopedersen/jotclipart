@@ -1,0 +1,515 @@
+{
+  "wave": "wave_447",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "reindeer-scarf-prance",
+      "title": "Reindeer Prancing in a Knitted Scarf",
+      "alt": "Big-eyed brown cartoon reindeer prancing with one forehoof lifted and a teal-and-cream knitted scarf trailing behind.",
+      "description": "The reindeer's lifted foreleg and sweeping fringed scarf give the figure a lively sideways silhouette. Short branched antlers, a dark forelock and cream chest distinguish the cheerful animal.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_447/source/reindeer-scarf-prance.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1234,
+      "height": 1274,
+      "pdfWidth": 969,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "0656b853a76b559c116e10cd47f396887eb6f57a00548a491c7a41587bac6363",
+      "inputSignature": "3fd4458e2bb993c322bf59708fd25f9e46c9c41aad06ca1d49577beac3d5c3ab",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 801315,
+        "weightedCmykRmse": 0.883364
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1042900,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 801315,
+          "weightedCmykRmse": 0.883364
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        179,
+        43,
+        1039,
+        1200
+      ],
+      "image": {
+        "width": 969,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_447/exports/reindeer-scarf-prance.pdf",
+          "bytes": 801315,
+          "sha256": "10286ac66e1b761ff3f62847b4c8911cd41378bef46999d4f586804d2bae0701"
+        },
+        "webp": {
+          "path": "work/production/wave_447/exports/reindeer-scarf-prance.webp",
+          "bytes": 881700,
+          "sha256": "9803a260679e1714c86bd30f37c42f891c9459b69da4198461a38cb8a05aa3dd"
+        },
+        "thumb": {
+          "path": "work/production/wave_447/exports/reindeer-scarf-prance-thumb.webp",
+          "bytes": 60088,
+          "sha256": "376d7d15604ad78e3be1d7656efa6768d8a86da25f4530d68ff7b7f71305b86f"
+        }
+      },
+      "proofSha256": "46cfff8da5c34b76449b6fc2f09fa2e5dd766ef31022c4dd3378be95bb66c623",
+      "pairMeanRgbDifference": 2.75258
+    },
+    {
+      "id": "reindeer-gift-box-peek",
+      "title": "Reindeer Peeking from a Round Gift Box",
+      "alt": "Blue-eyed cartoon reindeer peeking from a red round Christmas gift box, with two forehooves resting on its rim.",
+      "description": "A gold bow and snowflake pattern decorate the open box. The reindeer's long face, wide antler crown and large sideward ears rise above the rim beside the tipped lid.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_447/source/reindeer-gift-box-peek.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 1000,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "9b9a7252690830ebb953a05e47eea0c8c20dd76cd253b315d03c679d6a916570",
+      "inputSignature": "818af50db6407f233b28f241bd1e5d3eeedd919755fb487178a223d863cd969a",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 790557,
+        "weightedCmykRmse": 0.858133
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1039956,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 790557,
+          "weightedCmykRmse": 0.858133
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        287,
+        43,
+        1129,
+        1182
+      ],
+      "image": {
+        "width": 1000,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_447/exports/reindeer-gift-box-peek.pdf",
+          "bytes": 790557,
+          "sha256": "346d89eb4d690f23a1d88f378c43164d321a6ca398c3c07160b560cee68c5cce"
+        },
+        "webp": {
+          "path": "work/production/wave_447/exports/reindeer-gift-box-peek.webp",
+          "bytes": 890290,
+          "sha256": "0bfafeb8f55b4d479ce851c6d5baddcc57341ac4e13ff3915431be8607b3226d"
+        },
+        "thumb": {
+          "path": "work/production/wave_447/exports/reindeer-gift-box-peek-thumb.webp",
+          "bytes": 52040,
+          "sha256": "f7a2552aa51c7e91e4b9f272ab28a89e7cdefee92c96cea31fa4866818007323"
+        }
+      },
+      "proofSha256": "8a55644fa85d1cac1b89d6f6dab94259dee17012d071937ac9f88f5d9eb6e39b",
+      "pairMeanRgbDifference": 4.51954
+    },
+    {
+      "id": "reindeer-snowball-roll",
+      "title": "Reindeer Nudging a Snowball",
+      "alt": "Stocky dark-brown cartoon reindeer in green earmuffs lowering its nose against a small white snowball.",
+      "description": "The reindeer leans forward with its broad muzzle touching the snowball. Pale brows, a cream neck ruff and short wide antlers distinguish its rounded face.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_447/source/reindeer-snowball-roll.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "412f72834c21bdc0dd72e80c7355acca0d93673e0bbe4ba8bd01246c403a52a3",
+      "inputSignature": "6c847ab2f7f0319a7efde63b939bfc9f1675bc745b7537d3463d093408d18c64",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 959862,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 959862,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        176,
+        102,
+        1259,
+        1036
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_447/exports/reindeer-snowball-roll.pdf",
+          "bytes": 959862,
+          "sha256": "f0e9079e047ab4f97ce4bd45e5efa348e19e32ae1dbbaa8dfb583c6d0270e172"
+        },
+        "webp": {
+          "path": "work/production/wave_447/exports/reindeer-snowball-roll.webp",
+          "bytes": 775208,
+          "sha256": "ed26e7f0c9e0d38698d3aa75cc46c1436f38604dffd619019d08bb2df11da8cb"
+        },
+        "thumb": {
+          "path": "work/production/wave_447/exports/reindeer-snowball-roll-thumb.webp",
+          "bytes": 40824,
+          "sha256": "ef9d27af72cb39a530f8116a38c8d7cc5a2c2b221b64a62dafb9b837703d31d4"
+        }
+      },
+      "proofSha256": "4b932a2be974d3f0d3bd9ac40a9fc7e2e74d88d5aee2f0a5db4dab1bc834b2d0",
+      "pairMeanRgbDifference": 2.19987
+    },
+    {
+      "id": "reindeer-bell-collar-bow",
+      "title": "Reindeer Bowing with Jingle Bells",
+      "alt": "Golden-brown cartoon reindeer stretching its forelegs into a bow, wearing a red ribbon collar with three gold bells.",
+      "description": "The long front legs reach diagonally forward beneath the reindeer's lifted face. A cream forelock, green eyes and slender branching antlers distinguish the graceful figure.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_447/source/reindeer-bell-collar-bow.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "e400bf76e2711d3384be2a6e05a7dc8b0ea4212cfc79a01169778ec94f26fae2",
+      "inputSignature": "06a604980b8d56ba6eeafa8e1431ccf0fc2164ce709497f786bd92dfaf72c474",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 795486,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 795486,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        241,
+        31,
+        1084,
+        1137
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_447/exports/reindeer-bell-collar-bow.pdf",
+          "bytes": 795486,
+          "sha256": "7237837c99493fc924cbf94ce5dc1bec0dbaa781064efe89f4d32d9aa763fd84"
+        },
+        "webp": {
+          "path": "work/production/wave_447/exports/reindeer-bell-collar-bow.webp",
+          "bytes": 639530,
+          "sha256": "9fcbdb3b13ab575ecd2fc05b0455218e3d5e6d97152556c8092873d0962a00a7"
+        },
+        "thumb": {
+          "path": "work/production/wave_447/exports/reindeer-bell-collar-bow-thumb.webp",
+          "bytes": 45428,
+          "sha256": "5dd64909cb5e9e9f048068e001cd6122e5fc9a1545babe5e9315cb229613cb26"
+        }
+      },
+      "proofSha256": "7733bf33c26a66cf7177668ec7e2c3b0abd12fbe9d8abdf4314d56c981c979d3",
+      "pairMeanRgbDifference": 2.25743
+    },
+    {
+      "id": "reindeer-sleeping-star-blanket",
+      "title": "Reindeer Sleeping Under a Star Blanket",
+      "alt": "Gray-brown cartoon reindeer asleep with folded legs beneath a plum blanket patterned with gold stars.",
+      "description": "Closed eyes and a broad cream cheek ruff give this resting reindeer a peaceful expression. Its antlers, tucked cloven hooves and short tail remain visible around the gold-edged blanket.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_447/source/reindeer-sleeping-star-blanket.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1430,
+      "height": 1100,
+      "pdfWidth": 1000,
+      "pdfHeight": 769,
+      "sourceType": "raster",
+      "sourceSha256": "432102b617c579109d9b64af4289abf7b7ef844d389fc125bb2533ec95dc702b",
+      "inputSignature": "914eeb81b26c4cf7ae2030d5b71c8494753cb84d86d7412980965a888dc9b2c6",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 921919,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 921919,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        145,
+        80,
+        1353,
+        935
+      ],
+      "image": {
+        "width": 1000,
+        "height": 769,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_447/exports/reindeer-sleeping-star-blanket.pdf",
+          "bytes": 921919,
+          "sha256": "204e5a0beea0fe915550f1ec02ec9f37a820ef1a59cee34b76a841f9eb86dea9"
+        },
+        "webp": {
+          "path": "work/production/wave_447/exports/reindeer-sleeping-star-blanket.webp",
+          "bytes": 860512,
+          "sha256": "ee3da4aee7707e11ed7421bb5e6f3b47c6fdb25c14c1a4977f2d485a1676ac13"
+        },
+        "thumb": {
+          "path": "work/production/wave_447/exports/reindeer-sleeping-star-blanket-thumb.webp",
+          "bytes": 40870,
+          "sha256": "d963f7d7c24fdd7a7888114f79d48c11eed519f9cbfdd172159f7c91876cd608"
+        }
+      },
+      "proofSha256": "700cd77ce89d82740899b81c86a5deb206b593961e0085dcdf22b97c371b1f65",
+      "pairMeanRgbDifference": 2.53045
+    },
+    {
+      "id": "reindeer-wreath-window-face",
+      "title": "Reindeer Face in a Holly Wreath",
+      "alt": "Smiling brown cartoon reindeer head with complete antlers rising above a green holly wreath and cream bow.",
+      "description": "A broad cream muzzle and warm brown eyes sit within the leafy oval. Red berry clusters and a gold-edged cream bow frame the intentionally cropped head-and-neck composition.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_447/source/reindeer-wreath-window-face.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1265,
+      "height": 1243,
+      "pdfWidth": 1000,
+      "pdfHeight": 983,
+      "sourceType": "raster",
+      "sourceSha256": "3d678c4be9c34550d1a2730c96c8a3c7adf236b1b6382d0b568ffdd7097f2565",
+      "inputSignature": "6934cbfa0a25aaa3a2dbe61e78c28185ac2a63e59f30981aace18169a582a0e7",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 50,
+        "losslessCmyk": false,
+        "bytes": 985337,
+        "weightedCmykRmse": 1.137651
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1410676,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1139881,
+          "weightedCmykRmse": 0.799936
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1071306,
+          "weightedCmykRmse": 0.931794
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 985337,
+          "weightedCmykRmse": 1.137651
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        179,
+        40,
+        1094,
+        1212
+      ],
+      "image": {
+        "width": 1000,
+        "height": 983,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_447/exports/reindeer-wreath-window-face.pdf",
+          "bytes": 985337,
+          "sha256": "b8e7b9cde63e3b1f50e45e1e92b4bb4402f3a36cb78b6aa7e13d932757c2c1c5"
+        },
+        "webp": {
+          "path": "work/production/wave_447/exports/reindeer-wreath-window-face.webp",
+          "bytes": 1231722,
+          "sha256": "d6169cffa0fb3570e90ba1a12c3c1427fd41e67e0573dd6e61084f558431ee42"
+        },
+        "thumb": {
+          "path": "work/production/wave_447/exports/reindeer-wreath-window-face-thumb.webp",
+          "bytes": 79456,
+          "sha256": "20fe3560e28962c524dce7a9c4834395c11d2a2305aab1a888d96e0b8b22afd8"
+        }
+      },
+      "proofSha256": "d17debcdb6b6b21086496ec1b075f5ea53676edb13d8805d51f98d0abf92ac7f",
+      "pairMeanRgbDifference": 4.59123
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T06:15:15.376762+00:00",
+  "screenReviewEvidence": "work/production/wave_447/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T07:33:50.476Z"
+}

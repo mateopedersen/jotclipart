@@ -1,0 +1,77 @@
+{
+  "wave": "wave_469",
+  "topic": "gingerbread",
+  "method": "builtin-image-generation",
+  "research": "data/research/gingerbread-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "gingerbread-cookie-hedgehog",
+      "title": "Gingerbread Hedgehog with an Apple",
+      "alt": "Side-view hedgehog-shaped gingerbread cookie with chocolate icing spines, a cream muzzle and a small red apple by its nose.",
+      "description": "White strokes accent the pointed chocolate spines above two tiny rounded cookie feet.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_469/source/gingerbread-cookie-hedgehog.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-cookie-reindeer",
+      "title": "Gingerbread Reindeer Face Cookie",
+      "alt": "Reindeer-head gingerbread cookie with two branched antlers, almond icing eyes and a green bow below its chin.",
+      "description": "White icing follows the antlers and ears around a central diamond forehead marking and a round brown nose.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_469/source/gingerbread-cookie-reindeer.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-cookie-mitten-pair",
+      "title": "Dancing Gingerbread Mittens",
+      "alt": "Two smiling mitten-shaped gingerbread characters joined by a red cord, one with a star decoration and the other with green chevron icing.",
+      "description": "Their small cookie feet and different expressions turn the mismatched mittens into a playful pair.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_469/source/gingerbread-cookie-mitten-pair.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-cookie-snowflake",
+      "title": "Iced Gingerbread Snowflake Cookie",
+      "alt": "Six-armed gingerbread snowflake cookie decorated with white lace-like icing and a round blue candy center.",
+      "description": "Piped branches and pearl-shaped icing dots follow each amber cookie arm around the symmetrical center.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_469/source/gingerbread-cookie-snowflake.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-cookie-tree",
+      "title": "Gingerbread Christmas Tree Cookie",
+      "alt": "Fir-tree gingerbread cookie with green zigzag icing garlands, red candy berries and a gold star at its tip.",
+      "description": "The irregular stacked branches narrow toward the star above a short exposed brown cookie trunk.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_469/source/gingerbread-cookie-tree.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-cookie-bell",
+      "title": "Gingerbread Bell with a Red Bow",
+      "alt": "Bell-shaped gingerbread cookie with white icing filigree, a broad red bow and holly above a red candy clapper.",
+      "description": "Gold candy dots and a curved white border emphasize the flared bell body and its shaded opening.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_469/source/gingerbread-cookie-bell.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

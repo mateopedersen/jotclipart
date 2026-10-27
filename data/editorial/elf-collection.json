@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "topics": {
+    "elf": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "0029e9c6013de23eaf402c8a26dad937c64ac9c503b8076607bf63f494acedc1",
+      "intro": "Cheerful Christmas elves in green outfits, with big pointed ears and playful expressions. Find toy-making helpers, skating friends, gift deliveries, festive lettering and small craft decorations in soft shaded and clean cartoon styles.",
+      "checkedAt": "2026-10-27T05:29:06.784Z",
+      "evidence": [
+        {
+          "id": "elf-wrapping-a-parcel",
+          "imageSha256": "826ae02478a51a4727bb2cf9e6c48dd10dac086aea345e8b72aeef55a7eb5f38"
+        },
+        {
+          "id": "elf-felt-elf-craft-kit",
+          "imageSha256": "fd7a00b125a056f7adf8cf042ddbcd360ff0f301f34b6bbf8250ee27b625daa9"
+        },
+        {
+          "id": "elf-happy-holidays-lettering",
+          "imageSha256": "21bbf7b88b1d56b065ed99029272201fac5e793161188ab2852c2c69658209b3"
+        },
+        {
+          "id": "elf-ribbon-knot-lesson",
+          "imageSha256": "c86a4bc45dd21d38327841b3596235e0b465a93365f47434e537861484f9a5c7"
+        }
+      ]
+    }
+  }
+}

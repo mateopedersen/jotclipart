@@ -1,0 +1,515 @@
+{
+  "wave": "wave_482",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "2027-month-february",
+      "title": "February 2027 Heart Ribbon Lettering",
+      "alt": "Burgundy February lettering sits beneath a pink satin heart ribbon, above ivory 2027 numerals and two red heart seals.",
+      "description": "Looped satin ribbon frames the ornate month name, with wax-like heart seals flanking the pale raised year.",
+      "color": "Red",
+      "style": "Color",
+      "source": "work/production/wave_482/source/2027-month-february.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "ecdaeaf39fef7667a22d7067019f05159e53a67141322cf7221aa608672f1c2d",
+      "inputSignature": "04bdc3d165af9e1fdd7bf8fe840fb164eea4f1e487d65aa9b0c7c2313a9342f2",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 980674,
+        "weightedCmykRmse": 0.885197
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1201290,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1031471,
+          "weightedCmykRmse": 0.759371
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 980674,
+          "weightedCmykRmse": 0.885197
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        77,
+        58,
+        1471,
+        952
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_482/exports/2027-month-february.pdf",
+          "bytes": 980674,
+          "sha256": "09f116f28f863344385d3c42a6930817f40e755db837c386f81b5e97bde83271"
+        },
+        "webp": {
+          "path": "work/production/wave_482/exports/2027-month-february.webp",
+          "bytes": 1572852,
+          "sha256": "c9982c58cdb9d29b44be692bd9b844132dbff9b35f452f43639ddb978f3e6d37"
+        },
+        "thumb": {
+          "path": "work/production/wave_482/exports/2027-month-february-thumb.webp",
+          "bytes": 69928,
+          "sha256": "71eb6b0aec351fa9d7a2a90c3b6e733f396cd62c6699e2a10772b0dc415a7f9e"
+        }
+      },
+      "proofSha256": "941c72bb9e27f0dff55b539046d9c5f18d254698824694da1e9c1546b7103c0d",
+      "pairMeanRgbDifference": 6.27308
+    },
+    {
+      "id": "2027-month-march",
+      "title": "March 2027 Kite Lettering",
+      "alt": "A green diamond kite flies above green March lettering and blue 2027 numerals, with clover leaves at the sides.",
+      "description": "The kite’s golden string curves across the bold lettering, balancing its trailing green ribbons and the two small clovers.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_482/source/2027-month-march.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "9c953c67fa6b9fd746217a895c37dc764942956467713fc7fd92576b5d44e7fb",
+      "inputSignature": "a37e5181c28fbb7cac3a8589d5790a8233ab3bc8e5dcde743492437d2dc93d76",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 872467,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 872467,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        145,
+        99,
+        1267,
+        1116
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_482/exports/2027-month-march.pdf",
+          "bytes": 872467,
+          "sha256": "03ed3dc0d359c51ea44ace3edf542afa90ae16ce6e134a6d1077ae69e3ea5523"
+        },
+        "webp": {
+          "path": "work/production/wave_482/exports/2027-month-march.webp",
+          "bytes": 786270,
+          "sha256": "933b9b481c1b909affe81ead426e6c8f87f1a42cc79ae6c6cba8287565e9e652"
+        },
+        "thumb": {
+          "path": "work/production/wave_482/exports/2027-month-march-thumb.webp",
+          "bytes": 61630,
+          "sha256": "b6796b6de1cbf0973a946a20879eb58f6f715b7ca40e5c80dbd3f9c562ee47e2"
+        }
+      },
+      "proofSha256": "f9d2ce6a79178c4a280dae665029768a20664dd0ca325f6bd3f6a3d57431c0df",
+      "pairMeanRgbDifference": 9.66192
+    },
+    {
+      "id": "2027-month-april",
+      "title": "April 2027 Umbrella Lettering",
+      "alt": "A lilac umbrella shelters purple April lettering above aqua 2027 numerals surrounded by blue raindrops.",
+      "description": "The curved umbrella handle extends below the glossy year, bringing the whole rainy-day heading into one compact shape.",
+      "color": "Purple",
+      "style": "Color",
+      "source": "work/production/wave_482/source/2027-month-april.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "07f8edd03121fb302c1263c52925c4e01f7b91ec5315600224eaa364bfe3ced4",
+      "inputSignature": "85f1dc04c75de940e88d188badd5445e2caa6a84c5f9161388001fe2594d6a2a",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 755351,
+        "weightedCmykRmse": 0.714536
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1070620,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 755351,
+          "weightedCmykRmse": 0.714536
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        55,
+        12,
+        1275,
+        1187
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_482/exports/2027-month-april.pdf",
+          "bytes": 755351,
+          "sha256": "7dfb9cf274f364669bec9935db54ee4a8fc0e2d7a4670c5427acd7d883e86b3e"
+        },
+        "webp": {
+          "path": "work/production/wave_482/exports/2027-month-april.webp",
+          "bytes": 1097088,
+          "sha256": "a59ffef478a18338567ad36a5e2c63be987577f017a1418108a9f0ef80279aff"
+        },
+        "thumb": {
+          "path": "work/production/wave_482/exports/2027-month-april-thumb.webp",
+          "bytes": 75410,
+          "sha256": "1e2ce83eb019b8e09cf579c54f6f8309d7cca1a4abcb017dfd9f69cf97ca9136"
+        }
+      },
+      "proofSha256": "28593b8744628d9a0af002070f99fe5f5fa002beaa2e700ae141b674432beb38",
+      "pairMeanRgbDifference": 12.55784
+    },
+    {
+      "id": "2027-month-may",
+      "title": "May 2027 Tulip Planter",
+      "alt": "Coral May lettering stands before pink tulips in a cream planter marked 2027, with a watering can pouring from above.",
+      "description": "Green leaves fill the flowerpot around the raised month name, while floral decorations frame the year on its front.",
+      "color": "Pink",
+      "style": "Color",
+      "source": "work/production/wave_482/source/2027-month-may.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 1000,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "e5f1ce7194c8384a54a57cc202647659a6fc160e401f16968102320f0451739d",
+      "inputSignature": "dacfb645032e1c1313e0641062123c7253d15f2842e3c7ff4fe13a06023516a6",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 833217,
+        "weightedCmykRmse": 0.788457
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1139685,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 833217,
+          "weightedCmykRmse": 0.788457
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        130,
+        55,
+        1229,
+        1202
+      ],
+      "image": {
+        "width": 1000,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_482/exports/2027-month-may.pdf",
+          "bytes": 833217,
+          "sha256": "43636da20e4f1cd13bdf1244227e735f84a15d3e33f0f5699f253fb211b2ba1a"
+        },
+        "webp": {
+          "path": "work/production/wave_482/exports/2027-month-may.webp",
+          "bytes": 1014210,
+          "sha256": "1bfe5cf2fc30555a4b4fee2cfcde0d368a0cb8d8c765ada9e5ce07bf6704a271"
+        },
+        "thumb": {
+          "path": "work/production/wave_482/exports/2027-month-may-thumb.webp",
+          "bytes": 64162,
+          "sha256": "0e95f155d0d187322c1b9b90b0ba8359b25dec43d78ead7154fa9e67d71f18c5"
+        }
+      },
+      "proofSha256": "d407460fbd11bbaa79e10adffabd30bec9d3e5c7137a22f838398410cc9646b4",
+      "pairMeanRgbDifference": 6.48435
+    },
+    {
+      "id": "2027-month-june",
+      "title": "June 2027 Sunshine and Seashells",
+      "alt": "Turquoise June lettering rises above sandy 2027 numerals, with a golden sun and two seashells.",
+      "description": "Small aqua splashes and a sunburst give the smooth month lettering a bright contrast against the grainy sand-textured year.",
+      "color": "Blue",
+      "style": "Color",
+      "source": "work/production/wave_482/source/2027-month-june.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "ba3bb2215f34e3876be8e1fe5d233ee6b3b1504078c728c75e8fd3ec9a986547",
+      "inputSignature": "b32c4fd4e27498e5a18375767f6171c7de407213974d54a7823672dc0ecfca04",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 753739,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 753739,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        154,
+        38,
+        1406,
+        964
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_482/exports/2027-month-june.pdf",
+          "bytes": 753739,
+          "sha256": "5eb36d8e36a6951c93d3eeac9daa418cb33114cf92ac9bc7c30f95dfd646d983"
+        },
+        "webp": {
+          "path": "work/production/wave_482/exports/2027-month-june.webp",
+          "bytes": 1319458,
+          "sha256": "8a032addace99f8551993b8b44af81def0820357f1b7dc90e4ec9b5798234da0"
+        },
+        "thumb": {
+          "path": "work/production/wave_482/exports/2027-month-june-thumb.webp",
+          "bytes": 49980,
+          "sha256": "e6788650e88a94673cbc17aecfb045d378742970b3be55370d881605ab0f4cc2"
+        }
+      },
+      "proofSha256": "b640203e576944a368fd53726c35b02047aa85d49e5b874949c1e1aa10f16481",
+      "pairMeanRgbDifference": 8.37902
+    },
+    {
+      "id": "2027-month-july",
+      "title": "July 2027 Pennant Lettering",
+      "alt": "Navy July lettering and red 2027 numerals sit beneath red, white and navy pennants, with gold starbursts at the sides.",
+      "description": "Fine gold borders sharpen the large serif letters and numerals, while striped ribbon ties finish the garland.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_482/source/2027-month-july.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "cbf1a9d4241825d53447c1fa4cfbd604568ea8eee2b3ab9275109649f234ae9e",
+      "inputSignature": "8ee7b09e9e4d1b7492b3ac1e92fb70e726ae6ff8c4dd96006c67e7655474990d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 836066,
+        "weightedCmykRmse": 0.753101
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1002678,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 836066,
+          "weightedCmykRmse": 0.753101
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        57,
+        62,
+        1472,
+        939
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_482/exports/2027-month-july.pdf",
+          "bytes": 836066,
+          "sha256": "efe676844afa4da4f87887a87eab0cf2721c0d74758a9a6bcbd8a07fe03cc925"
+        },
+        "webp": {
+          "path": "work/production/wave_482/exports/2027-month-july.webp",
+          "bytes": 1356014,
+          "sha256": "edf2db1e11cb487e1b6cb23caa309cfb398345ba0ec3db1987c3d237d1ef1e94"
+        },
+        "thumb": {
+          "path": "work/production/wave_482/exports/2027-month-july-thumb.webp",
+          "bytes": 63732,
+          "sha256": "ca4b24a4a9db2e0fa14b8b06a860995518cad3a65b8a76309c6e5f183595477c"
+        }
+      },
+      "proofSha256": "2973222bbfc2ecace230b43196103da6c1a6d2f95b171b4117ee3993dfff5079",
+      "pairMeanRgbDifference": 7.46168
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T12:30:06.821668+00:00",
+  "screenReviewEvidence": "work/production/wave_482/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T12:30:09.560Z"
+}

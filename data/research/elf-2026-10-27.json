@@ -1,0 +1,58 @@
+{
+  "topic": "elf",
+  "checkedAt": "2026-10-27T03:05:35.997781+00:00",
+  "status": "RESEARCH_AND_PLAN_COMPLETE_NO_ACCEPTED_ARTWORK",
+  "sourceImageReuse": false,
+  "googleImagesUrl": "https://www.google.com/search?udm=2&q=elf+clipart&gl=us&hl=en",
+  "googleImagesActuallyViewed": true,
+  "observedNeeds": [
+    "Holiday workshop helpers",
+    "Distinct male and female character identities",
+    "Paper craft and ornament elements",
+    "Woodland fantasy elves",
+    "Black-and-white activities"
+  ],
+  "acceptedTopicCount": 0,
+  "relatedIdentityMatches": 0,
+  "liveTopicStatus": 404,
+  "liveStatsCount": 0,
+  "stagedOrQueuedMatchingPathsBeforeThisPlan": 0,
+  "catalogCount": 13184,
+  "catalogSha256": "4a05d92a7f01a83d18ba9bfbc01bdf672ac6895a05e9d278014ed16f0daa127d",
+  "references": [
+    {
+      "publisher": "National Museum of Finland",
+      "url": "https://suomenkansallismuseo.fi/en/exhibit/tontut-4/",
+      "purpose": "General context for varied Christmas-elf imagery only; do not copy collection objects or claim a fictional outfit belongs to an exact regional tradition."
+    },
+    {
+      "publisher": "Library of Congress",
+      "url": "https://blogs.loc.gov/loc/2020/12/a-visit-from-santa-who-you-might-not-recognize/",
+      "purpose": "General historical illustration context; no source-image reuse or replicated historic design."
+    }
+  ],
+  "safeguards": [
+    "Entirely original unbranded fantasy character designs.",
+    "No accepted artwork count before actual source, format, similarity, editorial, CDN and release checks.",
+    "Generic equipment; no safety certification, medical, food-species, geography or real-event claims."
+  ],
+  "ownerStyleReferences": [
+    {
+      "artId": "elf-cute-gift-greeting",
+      "path": "work/production/elf-references/owner-cute-cartoon-reference.png",
+      "sha256": "74bfa25ec884404fafd27a4d299b2a492ea4e173536f01f83bdce2cc9a34c037",
+      "usage": "Private image-generation style reference for a new independent composition. Reference source is never published or counted as an original."
+    }
+  ],
+  "ownerCorrection": {
+    "updatedAt": "2026-10-27T04:22:05.106015+00:00",
+    "subjectIdentity": "Cute Christmas elves in green primary clothing; not realistic people with pointed ears.",
+    "visualLanguage": "Oversized expressive eyes, large pointed ears, tiny rounded bodies, floppy pointed caps, striped tights and curled shoes. Majority soft 3D cartoon, remainder clean 2D cartoon.",
+    "clipartUse": "Clear reusable isolated illustration, recognizable at thumbnail size, useful in a layout; complex realistic worker scenes are excluded for this topic.",
+    "definitionReferences": [
+      "https://dictionary.cambridge.org/us/dictionary/english/clip-art",
+      "https://data.fitzmuseum.cam.ac.uk/id/terminology/term-97865"
+    ],
+    "existingSourceVersionsExcluded": 36
+  }
+}

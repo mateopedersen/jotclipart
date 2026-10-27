@@ -1,0 +1,78 @@
+{
+  "wave": "wave_475",
+  "topic": "2027",
+  "collectionTarget": 100,
+  "method": "builtin-image-generation",
+  "research": "data/research/2027-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "2027-my-year-sunrise",
+      "title": "2027 Is My Year Sunrise",
+      "alt": "Coral 2027 Is My Year lettering framing a gold rising sun between two olive sprigs.",
+      "description": "The arched year sits above the short personal message, with gold bevels following the rounded coral letters.",
+      "color": "Coral",
+      "style": "Color",
+      "source": "work/production/wave_475/source/2027-my-year-sunrise.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-year-to-shine",
+      "title": "2027 My Year to Shine Star",
+      "alt": "Navy-and-gold 2027 My Year to Shine lettering across a large gold star with pink and teal star accents.",
+      "description": "The oversized word Shine anchors the base beneath the smaller message and bold blue year.",
+      "color": "Gold",
+      "style": "Color",
+      "source": "work/production/wave_475/source/2027-year-to-shine.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-make-it-happen",
+      "title": "Make It Happen in 2027 Arrow",
+      "alt": "Make It Happen in 2027 lettering inside an upward arrow outline, with a small orange rocket at one side.",
+      "description": "Cream and orange lettering stands against the navy inner shapes, while the rocket's curved flame follows the bottom of the year.",
+      "color": "Orange",
+      "style": "Color",
+      "source": "work/production/wave_475/source/2027-make-it-happen.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-new-possibilities",
+      "title": "New Year New Possibilities 2027 Doorway",
+      "alt": "Open lavender doors above gold-and-purple ribbons reading New Year New Possibilities 2027.",
+      "description": "Golden light rays fill the doorway while the large year curves across a cream ribbon below the two-line message.",
+      "color": "Purple",
+      "style": "Color",
+      "source": "work/production/wave_475/source/2027-new-possibilities.png",
+      "printMaxEdgePx": 900,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-rocket-boost",
+      "title": "Blast Off into 2027 Rocket",
+      "alt": "Red-and-blue toy rocket rising above 2027, beneath the words Blast Off into and beside a ringed blue planet.",
+      "description": "A broad flame curves behind the year, linking the tilted rocket to the arched greeting.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_475/source/2027-rocket-boost.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-rainbow-kids",
+      "title": "Hello 2027 Rainbow and Clouds",
+      "alt": "Multicolored Hello 2027 lettering beneath a bright rainbow with two smiling cloud characters.",
+      "description": "One cloud winks while the other wears a pink bow, framing the rounded glossy greeting below the rainbow.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_475/source/2027-rainbow-kids.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

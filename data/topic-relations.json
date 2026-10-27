@@ -1421,6 +1421,28 @@
     "desktop-computer",
     "smartphone"
   ],
+  "elf": [
+    "winter",
+    "nutcracker",
+    "christmas",
+    "santa",
+    "gingerbread"
+  ],
+  "reindeer": [
+    "winter",
+    "elf",
+    "nutcracker",
+    "deer",
+    "christmas",
+    "santa"
+  ],
+  "snowman": [
+    "winter",
+    "reindeer",
+    "elf",
+    "nutcracker",
+    "christmas"
+  ],
   "golden-snitch": [
     "sorting-hat",
     "ron-weasley",
@@ -1482,5 +1504,24 @@
     "sorting-hat",
     "golden-snitch",
     "magic-spell"
+  ],
+  "gingerbread": [
+    "cookie",
+    "elf",
+    "christmas",
+    "snowman"
+  ],
+  "2027": [
+    "countdown",
+    "fireworks",
+    "celebration",
+    "party"
+  ],
+  "feast": [
+    "thanksgiving",
+    "turkey",
+    "cornucopia",
+    "dinner",
+    "family"
   ]
 }

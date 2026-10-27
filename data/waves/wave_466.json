@@ -1,0 +1,480 @@
+{
+  "wave": "wave_466",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "gingerbread-rolling-pin-rider",
+      "title": "Gingerbread Riding a Rolling Pin",
+      "alt": "Moustached gingerbread character with a red neckerchief riding a wooden rolling pin and raising one cookie arm.",
+      "description": "Two green peppermint buttons sit below the spotted neckerchief, while one bent cookie leg hangs over the pin.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_466/source/gingerbread-rolling-pin-rider.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1284,
+      "height": 1225,
+      "pdfWidth": 1000,
+      "pdfHeight": 954,
+      "sourceType": "raster",
+      "sourceSha256": "32041ea8abd35cf3d684fd556ae75a28b1fe279d8304f589d20728bb5b4857a9",
+      "inputSignature": "261975f4f7d6c64096ee3a1a92d0c21b223de373d159a66a04927418b7c55608",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 904785,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 904785,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        75,
+        83,
+        1236,
+        1093
+      ],
+      "image": {
+        "width": 1000,
+        "height": 954,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_466/exports/gingerbread-rolling-pin-rider.pdf",
+          "bytes": 904785,
+          "sha256": "b43f9e467f4f956f32a8406007fe78f43e42a2a3f16bdc13b566dde9a503c5a9"
+        },
+        "webp": {
+          "path": "work/production/wave_466/exports/gingerbread-rolling-pin-rider.webp",
+          "bytes": 858420,
+          "sha256": "d704efaa53405eaab9611e8a5d98646fcb499ebf9338584f1bd1c19c84e76dcb"
+        },
+        "thumb": {
+          "path": "work/production/wave_466/exports/gingerbread-rolling-pin-rider-thumb.webp",
+          "bytes": 44526,
+          "sha256": "b9cc6c77b04450a7e94dde1eb812ef93fe98e3fc6e7cbb793fdfa7610a190e08"
+        }
+      },
+      "proofSha256": "ee108717915b89f0b4ad87059d3a8f51ae2ce4750eaf384b42d209fd3d2e21a0",
+      "pairMeanRgbDifference": 2.48638
+    },
+    {
+      "id": "gingerbread-bookworm",
+      "title": "Gingerbread Reader with Heart-Shaped Head",
+      "alt": "Heart-headed gingerbread character with striped round glasses reading a green book while seated on a thick red book.",
+      "description": "A tiny red heart joins the icing hairline above the eyes, and a scalloped collar frames two red candy buttons.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_466/source/gingerbread-bookworm.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1211,
+      "height": 1299,
+      "pdfWidth": 932,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "cc960b732c18f192d81fe6f903cc577d234174e2e4c36d047d348534b0aa8c81",
+      "inputSignature": "f3fb90a610a2cf3086bf505170dfa039ab38c7cae059c39b9a50c922797060a4",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 918805,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 918805,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        172,
+        100,
+        1036,
+        1211
+      ],
+      "image": {
+        "width": 932,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_466/exports/gingerbread-bookworm.pdf",
+          "bytes": 918805,
+          "sha256": "2b840a70c1e676faf92ce87d7c089d33651dcd8cd2a45acf2df44c673e8b69a7"
+        },
+        "webp": {
+          "path": "work/production/wave_466/exports/gingerbread-bookworm.webp",
+          "bytes": 915474,
+          "sha256": "9a14203ef6fab90ef7bc90b64cd215bdd52718f5cc11017da4e0c8a37a1208ba"
+        },
+        "thumb": {
+          "path": "work/production/wave_466/exports/gingerbread-bookworm-thumb.webp",
+          "bytes": 43498,
+          "sha256": "a5c4fbd52f6072a71c176a61ef37f40f0e6aba11ffc7e79c9928a289b61f6262"
+        }
+      },
+      "proofSha256": "6b035047375d340fa4169adb47cb0d5441e6db0c78482f14fbd65ba9eaba952b",
+      "pairMeanRgbDifference": 4.14856
+    },
+    {
+      "id": "gingerbread-snowflake-ballerina",
+      "title": "Gingerbread Ballerina in a Snowflake Skirt",
+      "alt": "Slender gingerbread ballerina in an aqua icing tutu balancing on one foot with both arms curved overhead.",
+      "description": "White snowflake piping, pink sugar pearls and a small crown decorate the lifted dancing pose.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_466/source/gingerbread-snowflake-ballerina.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1216,
+      "height": 1294,
+      "pdfWidth": 940,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "c3c43b2f305b2df05057e3e0e3ffba9a1609dbc857efd89d139d2fde9b7cc921",
+      "inputSignature": "a4cbd2d0e5e06463609ea33b93c3b3a8caec0439642eb40887289996c0ce2add",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 651577,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 651577,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        260,
+        90,
+        1013,
+        1220
+      ],
+      "image": {
+        "width": 940,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_466/exports/gingerbread-snowflake-ballerina.pdf",
+          "bytes": 651577,
+          "sha256": "7605ac2bd2339fc59470c8748b52fbf1705c28123cc33e902ba4264ff64021c7"
+        },
+        "webp": {
+          "path": "work/production/wave_466/exports/gingerbread-snowflake-ballerina.webp",
+          "bytes": 515666,
+          "sha256": "721c489d4307f59c39e04bf06b94802593e96b37bc1bb898c6205634b5252c61"
+        },
+        "thumb": {
+          "path": "work/production/wave_466/exports/gingerbread-snowflake-ballerina-thumb.webp",
+          "bytes": 36768,
+          "sha256": "14d1722716f290cd55222ed39ae59767cf615c0d12231f10096a7f225bdccd52"
+        }
+      },
+      "proofSha256": "69e8d7f4c487261641c0f2de971f2971418c3c79c7998a27b72a09aa83cc4335",
+      "pairMeanRgbDifference": 1.76791
+    },
+    {
+      "id": "gingerbread-cocoa-dip",
+      "title": "Gingerbread Standing in a Cocoa Mug",
+      "alt": "Small gingerbread character in a red scarf standing in a cream cocoa mug decorated with holly and red icing waves.",
+      "description": "The figure looks sideways with one raised eyebrow, surrounded by floating marshmallows on the cocoa surface.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_466/source/gingerbread-cocoa-dip.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1222,
+      "height": 1287,
+      "pdfWidth": 949,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "1bd946fdd1c7d303cdf405d17646e5fe2b3e8a965ccb37d63a546574e825ca61",
+      "inputSignature": "48cbe4891aba8d99e86059c7368c3205e3281d1c614544125fd585777ab8ab0e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 791786,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 791786,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        283,
+        78,
+        1064,
+        1197
+      ],
+      "image": {
+        "width": 949,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_466/exports/gingerbread-cocoa-dip.pdf",
+          "bytes": 791786,
+          "sha256": "c7700201fbf959a86b3c226ba201751b1f1abfa582bf8d57eeaceb4a7b77a8bf"
+        },
+        "webp": {
+          "path": "work/production/wave_466/exports/gingerbread-cocoa-dip.webp",
+          "bytes": 741568,
+          "sha256": "3893dfa41cf2ee5d08521187274adb374f8daa5a374f5c7ac4f877989fa95939"
+        },
+        "thumb": {
+          "path": "work/production/wave_466/exports/gingerbread-cocoa-dip-thumb.webp",
+          "bytes": 42898,
+          "sha256": "805a1d6c43d119be5f9cb5b190da3c92e29a8403d765f3f55d3a9a5e0e1fd57f"
+        }
+      },
+      "proofSha256": "4d13ded410793a4baac1ef448f916a4cb63b4d3890a1ae42a8a9b70028433a47",
+      "pairMeanRgbDifference": 3.08522
+    },
+    {
+      "id": "gingerbread-peppermint-drummer",
+      "title": "Gingerbread Playing a Peppermint Drum",
+      "alt": "Tall oval-headed gingerbread drummer in a blue beret playing a red-and-white peppermint drum with two sticks.",
+      "description": "A striped shoulder strap supports the drum while one red-tipped stick rises above the laughing face.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_466/source/gingerbread-peppermint-drummer.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1024,
+      "height": 1536,
+      "pdfWidth": 667,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "c3b96694a7fdd9244b2caa6b692a42de65d41af5e3226b376abd9687a828b86e",
+      "inputSignature": "0fd8406802f7df92ec58c7566d53b9c6b0e2182ff10211fc4b7155e6d1fe1308",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 499642,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 499642,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        241,
+        215,
+        850,
+        1352
+      ],
+      "image": {
+        "width": 667,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_466/exports/gingerbread-peppermint-drummer.pdf",
+          "bytes": 499642,
+          "sha256": "3051bb3f7e26ce4470e85aa35c503836039099bc8d29c6dbde3fd3126031108f"
+        },
+        "webp": {
+          "path": "work/production/wave_466/exports/gingerbread-peppermint-drummer.webp",
+          "bytes": 1042654,
+          "sha256": "f10800ddd2b1397f5a7f6b64b5baa4e6e148cf215f2c57e2278ea21e0d7d5347"
+        },
+        "thumb": {
+          "path": "work/production/wave_466/exports/gingerbread-peppermint-drummer-thumb.webp",
+          "bytes": 28494,
+          "sha256": "e1981545a0c1714686de6f9658e26bb0e605c2df155e8cde4cc4b7bc12dcd1d2"
+        }
+      },
+      "proofSha256": "bb4261df8336626f8d5ad0d3f1a881641f5420ccf1dfda0ab7ca4e5ea5400d24",
+      "pairMeanRgbDifference": 2.85914
+    },
+    {
+      "id": "gingerbread-tiny-gardener",
+      "title": "Gingerbread Watering Peppermint Sprouts",
+      "alt": "Kneeling gingerbread gardener in a green bonnet and yellow overalls watering peppermint-striped sprouts in a brown pot.",
+      "description": "Small white flowers decorate the bonnet, watering can and overall pocket around the rounded cookie face.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_466/source/gingerbread-tiny-gardener.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1303,
+      "height": 1207,
+      "pdfWidth": 1000,
+      "pdfHeight": 926,
+      "sourceType": "raster",
+      "sourceSha256": "dfee78851bba0ff2c0595c47f1942b3a2a11ea5f9d704778d86ef63d3262400c",
+      "inputSignature": "f97b2550894cc2b4b9a764f9485c398df9a2032a704aa174896ab0ec7a484923",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 927515,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 927515,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        193,
+        75,
+        1118,
+        1099
+      ],
+      "image": {
+        "width": 1000,
+        "height": 926,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_466/exports/gingerbread-tiny-gardener.pdf",
+          "bytes": 927515,
+          "sha256": "0d59bbe8a2855fcb923ab7d5fa6258dc90397a431641528e526c93d1fb6e0c51"
+        },
+        "webp": {
+          "path": "work/production/wave_466/exports/gingerbread-tiny-gardener.webp",
+          "bytes": 921010,
+          "sha256": "c0e6a3a06f2f47e2d5deeda4c8a8f52638d6f40f5ff6aaf516d98fde94e3a06b"
+        },
+        "thumb": {
+          "path": "work/production/wave_466/exports/gingerbread-tiny-gardener-thumb.webp",
+          "bytes": 52744,
+          "sha256": "abcf1db3a85ed40607e38ec3dd2acc2b978b2ba050277ad99896111a863086a5"
+        }
+      },
+      "proofSha256": "8be0df1b1a128efbfd1c0b4e4565fa4ed849cfd0870395b552f4061809d87a9f",
+      "pairMeanRgbDifference": 4.16126
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T10:22:12.678303+00:00",
+  "screenReviewEvidence": "work/production/wave_466/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T10:23:25.053Z"
+}

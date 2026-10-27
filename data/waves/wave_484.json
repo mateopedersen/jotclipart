@@ -1,0 +1,529 @@
+{
+  "wave": "wave_484",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "2027-friendship-hands",
+      "title": "Together in 2027 Winter Mitten Badge",
+      "alt": "Three smiling navy, red and cream mittens rise above a Together in 2027 badge trimmed with evergreen and gold ornaments.",
+      "description": "Snowflake and geometric patterns decorate the raised mittens, while striped ribbon curls around the round gold-edged badge.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_484/source/2027-friendship-hands.png",
+      "printMaxEdgePx": 900,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 900,
+      "pdfHeight": 822,
+      "sourceType": "raster",
+      "sourceSha256": "d67e936077f70579a51db2026c244093e6fe59a4ea85b7e42e01955d85f5cd4b",
+      "inputSignature": "da5d4de11d860911edf05cec13db2a6831f684b16c7dde9689861e56408db323",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 48,
+        "losslessCmyk": false,
+        "bytes": 962914,
+        "weightedCmykRmse": 1.206519
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1451704,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1195038,
+          "weightedCmykRmse": 0.690502
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1128122,
+          "weightedCmykRmse": 0.817935
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 1047518,
+          "weightedCmykRmse": 0.973766
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 48,
+          "losslessCmyk": false,
+          "bytes": 962914,
+          "weightedCmykRmse": 1.206519
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        12,
+        17,
+        1297,
+        1183
+      ],
+      "image": {
+        "width": 900,
+        "height": 822,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_484/exports/2027-friendship-hands.pdf",
+          "bytes": 962914,
+          "sha256": "ca15c53de05f47d8f794ab347a3aee4ffeafa05095b7c65a58d3fdda996460c3"
+        },
+        "webp": {
+          "path": "work/production/wave_484/exports/2027-friendship-hands.webp",
+          "bytes": 1808492,
+          "sha256": "13f269478d51e7422bbfef61928698323c009f6be11c12eac13bfa72778e7241"
+        },
+        "thumb": {
+          "path": "work/production/wave_484/exports/2027-friendship-hands-thumb.webp",
+          "bytes": 92698,
+          "sha256": "98682d9c52fef832bf46558af6ae42ece480fc199422a69e8d9cd23b0a220a3b"
+        }
+      },
+      "proofSha256": "2f65aa4489c4206f77f04ab9ea2fa2ce225c1de50db2eeaca73a17b7f5d1fd31",
+      "pairMeanRgbDifference": 7.78882
+    },
+    {
+      "id": "2027-family-party",
+      "title": "Welcome 2027 Family Celebration",
+      "alt": "Two adults hold a red Welcome banner behind two children carrying gold 2027 numerals.",
+      "description": "A blue-sweatered adult and a red-skirted adult frame the smiling children, whose blue outfit and dotted red dress echo the banner’s bright colors.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_484/source/2027-family-party.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "e4da8834b5a65ea6316ec5478a94056e4f79ca5391951c27874dfda737b9f859",
+      "inputSignature": "2f060f813a399cfcf09592b0a5662f231f7d4f9f32d59c467afa3603159a446d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 886209,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 886209,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        193,
+        18,
+        1357,
+        992
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_484/exports/2027-family-party.pdf",
+          "bytes": 886209,
+          "sha256": "82fae6a447f7b375560b26efe628fcc2fbf24fc331f0f83ec37b13505160b951"
+        },
+        "webp": {
+          "path": "work/production/wave_484/exports/2027-family-party.webp",
+          "bytes": 1522042,
+          "sha256": "bf4e5f21f8fa8dd625bbe985beadbf7da9429399eae9da459c15429dbecfff56"
+        },
+        "thumb": {
+          "path": "work/production/wave_484/exports/2027-family-party-thumb.webp",
+          "bytes": 53040,
+          "sha256": "4fb42debbfbee3e015ead7d2013aba7664baeb55fad5ceb55cbf520ebe00f15e"
+        }
+      },
+      "proofSha256": "cf05355c3072e7f0bcd3beb4d1a9c3370896d9ffc26dccd066866232745a0e16",
+      "pairMeanRgbDifference": 5.28981
+    },
+    {
+      "id": "2027-couple-toast",
+      "title": "Our 2027 Couple Toast",
+      "alt": "A smiling cartoon couple raises clear drinks behind a red heart sign reading Our 2027.",
+      "description": "The woman’s red dress and the man’s navy jacket frame a gold-edged heart decorated with small hearts and a wide red ribbon.",
+      "color": "Red",
+      "style": "Color",
+      "source": "work/production/wave_484/source/2027-couple-toast.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "4e0738f256f783136a5454ea4c95ebcae310342025fa73788545b0cd4204d63a",
+      "inputSignature": "36a7d511e6bb2d7c267ce1f755331a1583eb7177b663876fc197171f94e76579",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 940265,
+        "weightedCmykRmse": 0.754269
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1279027,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 940265,
+          "weightedCmykRmse": 0.754269
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        121,
+        24,
+        1297,
+        1159
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_484/exports/2027-couple-toast.pdf",
+          "bytes": 940265,
+          "sha256": "09954ad448dbb3183bf6dfc0c8f90563d10f9c9c1b492e560f9278fbd26a0797"
+        },
+        "webp": {
+          "path": "work/production/wave_484/exports/2027-couple-toast.webp",
+          "bytes": 1243898,
+          "sha256": "66fca589b008b9b3cd1a92223264ea8696808923125120a7ad30c55e6888d9fe"
+        },
+        "thumb": {
+          "path": "work/production/wave_484/exports/2027-couple-toast-thumb.webp",
+          "bytes": 70570,
+          "sha256": "a9810975adc2f282c5847b1c12c19ef69998234016dd210a100631bd8a86a8cf"
+        }
+      },
+      "proofSha256": "fb3295ef96c3e3a7486d066d4614082d9c40c158e85b35cde1c197ae7961a272",
+      "pairMeanRgbDifference": 6.19872
+    },
+    {
+      "id": "2027-self-belief",
+      "title": "2027 I’ve Got This Thumbs-Up Lettering",
+      "alt": "Orange 2027 I’ve Got This lettering is flanked by two white cartoon thumbs-up gloves beneath a navy star.",
+      "description": "Heavy rounded letters and dark outlines create a bold compact sticker shape with the year above the two-line message.",
+      "color": "Orange",
+      "style": "Color",
+      "source": "work/production/wave_484/source/2027-self-belief.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "d9339e3be7af08416d99ca642344ed909f4c95594d8887abc758fc7f37eb9a12",
+      "inputSignature": "418595815dbc7414e1c16b9e456ed0846e3edb1d2b0fa9c286a4cf2ab4691ba3",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 847011,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 847011,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        53,
+        146,
+        1321,
+        1006
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_484/exports/2027-self-belief.pdf",
+          "bytes": 847011,
+          "sha256": "b3671c985ce94f8153ae78cbe15383753efac4e9b67625724a7d194573950a8b"
+        },
+        "webp": {
+          "path": "work/production/wave_484/exports/2027-self-belief.webp",
+          "bytes": 851334,
+          "sha256": "b4bd50e2a54b543a6295e3c7abe4677ec1747509f57d3d162e4ba4b60e4a85e0"
+        },
+        "thumb": {
+          "path": "work/production/wave_484/exports/2027-self-belief-thumb.webp",
+          "bytes": 53600,
+          "sha256": "63a1dd848fd7a4ff3eb0af7b476fe0627a0f255c3c241ed4f0a62f987c5d5eb4"
+        }
+      },
+      "proofSha256": "6d94658c777c321f92551b59a7e2080afaa4d7eaba95d3ce4e244e0ec00f3607",
+      "pairMeanRgbDifference": 6.38738
+    },
+    {
+      "id": "2027-positive-postcard",
+      "title": "2027 Looks Good on Me Sunshine",
+      "alt": "A smiling sun in blue sunglasses points outward beneath navy 2027 numerals and above coral Looks Good on Me lettering.",
+      "description": "A yellow star and a coral star balance the lively sun character, whose raised hands extend into the open sides of the phrase.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_484/source/2027-positive-postcard.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "ba0db0671bb460d797eeb6b941cd4b98a85f7b91c4c89c6a9c8c65f376b34549",
+      "inputSignature": "79d642c6087565cb90460f1e230a5f3d45fa2a223a847ceafa940a28d3fc64a0",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 929086,
+        "weightedCmykRmse": 0.759797
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1219885,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 929086,
+          "weightedCmykRmse": 0.759797
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        117,
+        71,
+        1200,
+        1126
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_484/exports/2027-positive-postcard.pdf",
+          "bytes": 929086,
+          "sha256": "3336c9241f243514a7306b6d9e794bb2dda8a5f47bf0b687881dc685cfc9c307"
+        },
+        "webp": {
+          "path": "work/production/wave_484/exports/2027-positive-postcard.webp",
+          "bytes": 1086206,
+          "sha256": "8fb684229953c5aba5df0b7bdcf3c1fe70a8dfe5e5bcd1f0e5b4b9d4f0e22286"
+        },
+        "thumb": {
+          "path": "work/production/wave_484/exports/2027-positive-postcard-thumb.webp",
+          "bytes": 79008,
+          "sha256": "fade2f24b0dba8c73c32cca4a1ce8086eaf57236df58d171cb011dd4b8bf9aa7"
+        }
+      },
+      "proofSha256": "c8ff0f55666bf4d29a618af096558a5385a547b41142f98002ae8738ba1cac0e",
+      "pairMeanRgbDifference": 7.09048
+    },
+    {
+      "id": "2027-possibility-door",
+      "title": "Hello New Possibilities 2027 Key Plaque",
+      "alt": "A gold key with a teal star bow leans beside a teal plaque reading Hello New Possibilities 2027.",
+      "description": "Gold scrollwork frames the raised cream message, while the star-shaped key head and small rays extend beyond the plaque.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_484/source/2027-possibility-door.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "61c5b537748397a6f2d031391b3d37d448fadf607f37a948e22e8f2b95b48cd6",
+      "inputSignature": "0ce736ad9e22c0b1768066238f906afdeb06fafb2f7eb8dc1d38116082f1addd",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 915685,
+        "weightedCmykRmse": 0.76752
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1247862,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 915685,
+          "weightedCmykRmse": 0.76752
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        94,
+        38,
+        1263,
+        1126
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_484/exports/2027-possibility-door.pdf",
+          "bytes": 915685,
+          "sha256": "d9f3616c904a9121807fbff4518184a2991c0ee87fbd057d6e8d64b31f2f7434"
+        },
+        "webp": {
+          "path": "work/production/wave_484/exports/2027-possibility-door.webp",
+          "bytes": 1306520,
+          "sha256": "9d68ea91dc9d34821cf4011dc6f6fc43c5d00a7a35f38c47b35f1fbfd5e6efad"
+        },
+        "thumb": {
+          "path": "work/production/wave_484/exports/2027-possibility-door-thumb.webp",
+          "bytes": 67496,
+          "sha256": "31ab7343c493770d14540d1d6f4c576266e772fa13b804b59029df2ea4aff5e4"
+        }
+      },
+      "proofSha256": "8326a8188ce0b0f0f859e26462d767d86d5cf6bb432140907ce3a437b438117b",
+      "pairMeanRgbDifference": 7.11451
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T12:34:33.938043+00:00",
+  "screenReviewEvidence": "work/production/wave_484/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T12:34:34.390Z"
+}

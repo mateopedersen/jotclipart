@@ -1,0 +1,77 @@
+{
+  "wave": "wave_457",
+  "topic": "snowman",
+  "method": "builtin-image-generation",
+  "research": "data/research/snowman-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "snowman-hanging-star",
+      "title": "Snowman Adding a Tree-Top Star",
+      "alt": "Snowman standing on a wooden stool and lifting a gold star above a small decorated Christmas tree.",
+      "description": "The slim character stretches a twig arm toward the tree while balancing on the stool in a blue hat and red checked scarf.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_457/source/snowman-hanging-star.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-cocoa-tray",
+      "title": "Snowman Serving Two Cups of Cocoa",
+      "alt": "Round snowman in a mustard cap and green apron carrying two cream cocoa cups on a wooden tray.",
+      "description": "Closed smiling eyes and a carefully balanced tray make this a warm winter refreshment illustration.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_457/source/snowman-cocoa-tray.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-snowflake-nose",
+      "title": "Snowman Watching a Snowflake",
+      "alt": "Small snowman with lavender earmuffs and a mint bow tie looking up at a snowflake above its carrot nose.",
+      "description": "The oversized eyes, raised face and spread twig arms focus attention on the single delicate flake.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_457/source/snowman-snowflake-nose.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-knitting-long-scarf",
+      "title": "Snowman Knitting a Striped Scarf",
+      "alt": "Seated snowman in a teal floral hat knitting a long coral and cream scarf beside a matching yarn ball.",
+      "description": "Two wooden needles meet above the growing scarf, whose fringed end falls between the snowman's round feet.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_457/source/snowman-knitting-long-scarf.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-broom-dance",
+      "title": "Snowman Dancing with a Broom",
+      "alt": "Cheerful snowman in a green waistcoat and brown top hat holding a straw broom with one snow foot lifted.",
+      "description": "The broad smile, sweeping branch arm and jaunty stance turn a simple broom into a playful dance partner.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_457/source/snowman-broom-dance.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-gift-stacker",
+      "title": "Snowman Stacking Christmas Gifts",
+      "alt": "Snowman in a red earflap cap and blue neckerchief placing a green parcel on a stack of three gift boxes.",
+      "description": "Both branch hands reach toward the smallest present above a blue snowflake box and a red striped package.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_457/source/snowman-gift-stacker.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "topics": {
+    "gingerbread": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "158bd27a0f189bdab41f7d9aa6ca87c23ca630e3e91870d58e8ae08b80b556e6",
+      "intro": "Cheerful gingerbread characters, iced animal cookies and fanciful biscuit buildings. Explore distinct cookie faces and outfits, decorating scenes, festive objects, a seasonal greeting and four independent black-and-white coloring compositions.",
+      "checkedAt": "2026-10-27T10:23:28.533Z",
+      "evidence": [
+        {
+          "id": "gingerbread-candy-cane-walk",
+          "imageSha256": "dfee0e26475e6d4898d0b39824263059b8eb5c9ef8ee877edbd0879eaa7c72cc"
+        },
+        {
+          "id": "gingerbread-cookie-owl",
+          "imageSha256": "fda9f60053839fb0565114a2bffdf20f41a7c7dbfbea2b2e0b013e24b461e5ac"
+        },
+        {
+          "id": "gingerbread-gingerbread-lighthouse",
+          "imageSha256": "6bb704a37f0fabb259a82c4b58c23cb4fb421cba2238293bad48f6d60167955a"
+        },
+        {
+          "id": "gingerbread-outline-gingerbread-banner",
+          "imageSha256": "5a8212eb770325f1fe1717be7cc63ae6075a3b16a3620b30759cf218d52e6b6c"
+        }
+      ]
+    }
+  }
+}

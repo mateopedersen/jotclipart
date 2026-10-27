@@ -1,0 +1,481 @@
+{
+  "wave": "wave_505",
+  "status": "AWAITING_CDN",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "blessings-blessings-note-jar",
+      "title": "Blessings Note Jar",
+      "alt": "A clear jar labeled “BLESSINGS” holds folded pastel notes beside its wooden lid, a pencil and two heart-shaped papers.",
+      "description": "A small pink-heart-and-leaf border decorates the cream label, leaving the colored notes visible through the glass.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_505/source/blessings-blessings-note-jar.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "02042d53c8d03bfcb07d76cc6bb2e450d49431dc1b9513ea12d04456d56294a0",
+      "inputSignature": "aaa2c92ec7cc7832b52c7163af4d95f2ab77061d37b3ee0decbcafcb27687275",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 824715,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 824715,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        182,
+        157,
+        1165,
+        1055
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_505/exports/blessings-blessings-note-jar.pdf",
+          "bytes": 824715,
+          "sha256": "14ad38a6f8de01c829256ad5141019023827e41fb1fc4d5fb8cc6d308bc8d3fd"
+        },
+        "webp": {
+          "path": "work/production/wave_505/exports/blessings-blessings-note-jar.webp",
+          "bytes": 799902,
+          "sha256": "dc4b35c8a3d83f538c8e5164dd7c8d00b67850c71fc1d9dcbab9674bc06b19ef"
+        },
+        "thumb": {
+          "path": "work/production/wave_505/exports/blessings-blessings-note-jar-thumb.webp",
+          "bytes": 43994,
+          "sha256": "dd245d94c094f16abc0d3d4e5848216a6e42765ca0c1bf0abb3dce8b0686952a"
+        }
+      },
+      "proofSha256": "42a39e7dd4763dc0f8bdf1b1e8d8cbf23ba0f5f7bff38cd735512a06f5cf7789",
+      "pairMeanRgbDifference": 3.09575
+    },
+    {
+      "id": "blessings-blessings-reflection-tree",
+      "title": "Blessings Reflection Tag Tree",
+      "alt": "A wooden display tree holds blank heart, leaf and star tags above a base marked “BLESSINGS.”",
+      "description": "Six hanging shapes form balanced branches, each with a pale center and a colored border for personal notes.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_505/source/blessings-blessings-reflection-tree.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "0e66fb76a4bd32706d8b5faa0a8d21e04c946db03334c5d6c42129d4f67b9c7b",
+      "inputSignature": "36350e06bd181d670759737e03889a2f96c4466fb022150321c985ff6161cbb4",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 834035,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 834035,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        187,
+        33,
+        1136,
+        1152
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_505/exports/blessings-blessings-reflection-tree.pdf",
+          "bytes": 834035,
+          "sha256": "f28a8f736a03af525a3db6c0c8f80a956d3a09252a3a466cda859b86046480d7"
+        },
+        "webp": {
+          "path": "work/production/wave_505/exports/blessings-blessings-reflection-tree.webp",
+          "bytes": 699030,
+          "sha256": "f1b2c30ad71ea708e64da6629a6dae7c6cbd66c079304576073a9df1fbf63bd8"
+        },
+        "thumb": {
+          "path": "work/production/wave_505/exports/blessings-blessings-reflection-tree-thumb.webp",
+          "bytes": 49210,
+          "sha256": "88ad5e6df1931af5031d16bbc54651f1cb33c4a19160d345c08075f55770660c"
+        }
+      },
+      "proofSha256": "d751f2d0163581e46e5dc4ed30882f9c8387dfbcc62c038bc03e48f57d233f14",
+      "pairMeanRgbDifference": 2.90431
+    },
+    {
+      "id": "blessings-community-blessing-box",
+      "title": "Community Blessing Box Pantry",
+      "alt": "An open green-roofed pantry marked “BLESSING BOX” displays unbranded tins, food boxes and bread rolls.",
+      "description": "Two clear-front doors swing outward from the cream cabinet above its complete green support post.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_505/source/blessings-community-blessing-box.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1214,
+      "height": 1295,
+      "pdfWidth": 937,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "d9e4ddf8a26ee895a9f777c8a8083b62733778ba945a4b2c03c2d89995b09ab6",
+      "inputSignature": "ae764f850cf52c89f18cfda7c331bad03c7be26de428ce7552339ac06cf9d124",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 986609,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 986609,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        168,
+        73,
+        1045,
+        1218
+      ],
+      "image": {
+        "width": 937,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_505/exports/blessings-community-blessing-box.pdf",
+          "bytes": 986609,
+          "sha256": "0e7002e7a003ae4158d34f6380f0bb086cc6efb54d527f64bfc0f9b67f55487e"
+        },
+        "webp": {
+          "path": "work/production/wave_505/exports/blessings-community-blessing-box.webp",
+          "bytes": 821816,
+          "sha256": "7c6bff51be16f01c4d938ca042b45310e291b0fef007e3b08afa39c2c0ccc413"
+        },
+        "thumb": {
+          "path": "work/production/wave_505/exports/blessings-community-blessing-box-thumb.webp",
+          "bytes": 42460,
+          "sha256": "f55721d16b20a6ee6310f6ada286288f3952c080090ff9c6370e37e3606a7b37"
+        }
+      },
+      "proofSha256": "fa29ea2e0dbdceabde34d83b28c94b5ddc8f37a3d127332e5749a7e8e5ffeb96",
+      "pairMeanRgbDifference": 3.56042
+    },
+    {
+      "id": "blessings-blessings-food-hamper",
+      "title": "Blessings Bread and Apple Gift Basket",
+      "alt": "A cloth-lined wicker basket holds bread rolls, apples and a red preserve jar with a “BLESSINGS” gift tag.",
+      "description": "A red-striped tea towel crosses the cream lining beneath the jar’s checked lid and tied cord.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_505/source/blessings-blessings-food-hamper.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "5a9290a2aa266590bd7ba17d8905294e9f8c1888cb1f841eb1e586f2d2521c19",
+      "inputSignature": "025685fa454ef6a2ef4da35c263831177e251fe9cdd976b08266812e6a2f2593",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 751250,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 751250,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        254,
+        202,
+        1315,
+        860
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_505/exports/blessings-blessings-food-hamper.pdf",
+          "bytes": 751250,
+          "sha256": "e497f79fe036a1018f60d1afdc2e575bd570687f1929b0abbaccce21cb5a595b"
+        },
+        "webp": {
+          "path": "work/production/wave_505/exports/blessings-blessings-food-hamper.webp",
+          "bytes": 1418964,
+          "sha256": "a9b7c32e4c9b11695daf15593af17c5abdd9fb518c87b6158154ecedb7343376"
+        },
+        "thumb": {
+          "path": "work/production/wave_505/exports/blessings-blessings-food-hamper-thumb.webp",
+          "bytes": 38332,
+          "sha256": "916329782402202203eb1a53d3512f5c397e2a89f5588bf55463e364978e0383"
+        }
+      },
+      "proofSha256": "780da1ceaf4999e2846d80e12cca90316e79d63cae94b3150e23943e15eb5fc3",
+      "pairMeanRgbDifference": 4.23323
+    },
+    {
+      "id": "blessings-lily-cross-keepsake",
+      "title": "Blessed Cross and Lily Keepsake",
+      "alt": "A gold Christian cross stands between white lilies above a burgundy ribbon reading “BLESSED.”",
+      "description": "Polished beveled edges and a complete oval pedestal give the floral devotional object a formal, freestanding shape.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_505/source/blessings-lily-cross-keepsake.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "3ffba2fd6eba061ab30f93f6e9badee36d7b6ca4f6ecb02ae85bfb97553cd2e5",
+      "inputSignature": "34aa9aa6406af8758dc7fbb822e8c6de0b725ef3d9a6bdb57e71fa49379854f1",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 746535,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 746535,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        220,
+        83,
+        1163,
+        1048
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_505/exports/blessings-lily-cross-keepsake.pdf",
+          "bytes": 746535,
+          "sha256": "c74f5294acfcad1138a1e7112994019fe206cfd668f65292fdec94eb5eed8ee3"
+        },
+        "webp": {
+          "path": "work/production/wave_505/exports/blessings-lily-cross-keepsake.webp",
+          "bytes": 794826,
+          "sha256": "ba062e559f03a9aecfc39c0293305c9189481e7cab6ed9552a9042183be9c8c1"
+        },
+        "thumb": {
+          "path": "work/production/wave_505/exports/blessings-lily-cross-keepsake-thumb.webp",
+          "bytes": 45006,
+          "sha256": "764acea9470241ec8700e679355d7cc83f483c25ddf4a04dd6d2eb14e7a193be"
+        }
+      },
+      "proofSha256": "dde2039d778eafc86e22a0c7c71eec8f3d09683170ff01f530b163513f16d487",
+      "pairMeanRgbDifference": 3.89379
+    },
+    {
+      "id": "blessings-paired-ceramic-doves",
+      "title": "Ceramic Doves with a Blank Heart Tag",
+      "alt": "Two blue-grey and ivory ceramic doves perch on a curved branch above a blank cream heart tag.",
+      "description": "One bird tilts its head toward the other, while small gold-colored loops suspend the heart below the complete branch.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_505/source/blessings-paired-ceramic-doves.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "6bf4add11051ad6336c66ecf6482cd37f9c4f36560729c33bd4e9d468c1c0fbf",
+      "inputSignature": "9dc637f1361d0370005a340875bb0d17dc996754208cdb5ae86b69ca6a9d9c22",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 545179,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 545179,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        190,
+        91,
+        1352,
+        925
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_505/exports/blessings-paired-ceramic-doves.pdf",
+          "bytes": 545179,
+          "sha256": "18e1353cf0f530fbf540701ec39baeb145a07456edb2ac99abd7509e15f49be2"
+        },
+        "webp": {
+          "path": "work/production/wave_505/exports/blessings-paired-ceramic-doves.webp",
+          "bytes": 1026036,
+          "sha256": "00e8d14b9a2147141fbc7a94de92c629ba0227f6815c54e3ac475ad311fe62e0"
+        },
+        "thumb": {
+          "path": "work/production/wave_505/exports/blessings-paired-ceramic-doves-thumb.webp",
+          "bytes": 33796,
+          "sha256": "f9a56327eca87159ab6fc130c9e97ec6a16a5275cbd2a83880a9a79f4f6977c7"
+        }
+      },
+      "proofSha256": "d2585cb006895fc0ab7a77db84e70bd82ecf29fefbe91c05fa9617333fd5dd6f",
+      "pairMeanRgbDifference": 2.08353
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T15:50:51.071808+00:00",
+  "screenReviewEvidence": "work/production/wave_505/native-proof-review.jpg",
+  "screenReviewEvidenceSha256": "418cc645ef6a063543d68c03f60d54bbba2d8fc165fd19a10b2e048b3237e213",
+  "screenReviewNotes": "Every actual rendered CMYK proof inspected: readable words, complete outlines and props, clean margins and original-image correspondence. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T15:56:00.763Z"
+}

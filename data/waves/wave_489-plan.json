@@ -1,0 +1,83 @@
+{
+  "wave": "wave_489",
+  "topic": "2027",
+  "collectionTarget": 100,
+  "method": "builtin-image-generation",
+  "research": "data/research/2027-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "2027-class-of-university-emblem",
+      "title": "Gold 2027 Graduation Trophy",
+      "alt": "Gold trophy-shaped 2027 numerals on an ivory pedestal labeled Class of 2027, with a black cap resting on the seven.",
+      "description": "A navy ribbon curls around the complete base beneath the reflective numeral sculpture and hanging gold tassel.",
+      "color": "Gold",
+      "style": "Color",
+      "source": "work/production/wave_489/source/2027-class-of-university-emblem.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-outline-party-animals",
+      "title": "Welcome 2027 Rabbit and Tortoise Coloring",
+      "alt": "A rabbit and a tortoise in party hats hold a Welcome 2027 banner in a black-and-white coloring illustration.",
+      "description": "The rabbit\u2019s long ears and the tortoise\u2019s patterned shell frame a broad banner with open letters and small stars for coloring.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_489/source/2027-outline-party-animals.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    },
+    {
+      "id": "2027-outline-flower-year",
+      "title": "2027 Rose Vine Coloring Lettering",
+      "alt": "Large outlined 2027 numerals are wrapped in a rose vine, with a small bee above the seven.",
+      "description": "Open petals, leaves and broad numeral spaces make the black-and-white floral year a detailed coloring composition.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_489/source/2027-outline-flower-year.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    },
+    {
+      "id": "2027-outline-rocket-year",
+      "title": "Ready for 2027 Space Coloring",
+      "alt": "A waving ringed planet rises above a Ready for 2027 round sign beside a small wheeled spaceship in black and white.",
+      "description": "Stars surround the circular lettering while the toy-like spacecraft rests at the lower left with its cockpit and wheels fully outlined.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_489/source/2027-outline-rocket-year.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    },
+    {
+      "id": "2027-outline-graduation",
+      "title": "Class of 2027 Gown Coloring",
+      "alt": "A graduation gown hangs beneath a mortarboard, with a Class of 2027 tag, in a black-and-white outline illustration.",
+      "description": "Long pleated sleeves, a V-shaped yoke and a complete tassel distinguish the academic outfit while leaving broad areas for coloring.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_489/source/2027-outline-graduation.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    },
+    {
+      "id": "2027-outline-happy-year",
+      "title": "Happy New Year 2027 Patchwork Coloring",
+      "alt": "Happy New Year 2027 appears in patterned outlined bubble lettering beside a star wand and party hat.",
+      "description": "Stitches, stars, dots and diagonal panels fill the large letters, with ribbons curling from the wand and pointed hat.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_489/source/2027-outline-happy-year.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    }
+  ]
+}

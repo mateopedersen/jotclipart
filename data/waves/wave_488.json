@@ -1,0 +1,564 @@
+{
+  "wave": "wave_488",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "2027-mountain-bear",
+      "title": "Explore 2027 Hiking Bear",
+      "alt": "A smiling brown bear with a coral backpack holds a wooden Explore 2027 sign beside a pine sprig.",
+      "description": "A rolled sleeping mat rests atop the backpack, while the bear’s paws grip the plank above its large coral year numerals.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_488/source/2027-mountain-bear.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 1000,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "cdc3d9e6bdd017408dc4b7d5577a9a3e131d3c4943546d494b6083a77746031c",
+      "inputSignature": "1df354a20c7049144cef01ca778f3633a6ed8d9e84755bd7f321ed146adaa556",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 50,
+        "losslessCmyk": false,
+        "bytes": 928576,
+        "weightedCmykRmse": 1.08839
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1426586,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1113619,
+          "weightedCmykRmse": 0.770201
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1030643,
+          "weightedCmykRmse": 0.903958
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 928576,
+          "weightedCmykRmse": 1.08839
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        143,
+        27,
+        1131,
+        1217
+      ],
+      "image": {
+        "width": 1000,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_488/exports/2027-mountain-bear.pdf",
+          "bytes": 928576,
+          "sha256": "f19710291e830898e665627b3d436e7a79059ad489f6e792a5b69f9aed4a608d"
+        },
+        "webp": {
+          "path": "work/production/wave_488/exports/2027-mountain-bear.webp",
+          "bytes": 1215476,
+          "sha256": "a65f16a27688fddaf30e1a40bfa3de8838157c1729de81457c1cd3543a1586ad"
+        },
+        "thumb": {
+          "path": "work/production/wave_488/exports/2027-mountain-bear-thumb.webp",
+          "bytes": 71014,
+          "sha256": "2c56f51ce0a0fd79edded2bc311d3c1415097e823113cbe057433dfb2478296f"
+        }
+      },
+      "proofSha256": "fe9ebd5d202707e64fea7bebf2f4cab7f08e87ba813382406b25b642aa324433",
+      "pairMeanRgbDifference": 6.32332
+    },
+    {
+      "id": "2027-book-dragon",
+      "title": "New Stories 2027 Dragon and Book",
+      "alt": "A turquoise dragon curls around a navy book titled New Stories 2027, spreading gold-lined wings.",
+      "description": "The dragon’s claws rest along the top of the ornate cover, and its curled tail circles the lower corner beside a ribbon bookmark.",
+      "color": "Blue",
+      "style": "Color",
+      "source": "work/production/wave_488/source/2027-book-dragon.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 1000,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "4f052c8e690f2407432d5666904a9728cb3551a5445383115e59ef34cb790b8b",
+      "inputSignature": "92050b31b30b03020813e0ac2a2f8f25bc8a14885f267065ad5220bfd9325acc",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 50,
+        "losslessCmyk": false,
+        "bytes": 963788,
+        "weightedCmykRmse": 1.082348
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1476448,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1138485,
+          "weightedCmykRmse": 0.765735
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1062661,
+          "weightedCmykRmse": 0.900039
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 963788,
+          "weightedCmykRmse": 1.082348
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        72,
+        8,
+        1184,
+        1232
+      ],
+      "image": {
+        "width": 1000,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_488/exports/2027-book-dragon.pdf",
+          "bytes": 963788,
+          "sha256": "f2122d8910073f3a18d96cdf105e03bf72159c5220d9cbffc8f243f1274aeb82"
+        },
+        "webp": {
+          "path": "work/production/wave_488/exports/2027-book-dragon.webp",
+          "bytes": 1345334,
+          "sha256": "13de9d738d522b42b3682cad5009865ae9edb8d8593e192f2593dc91506cb70b"
+        },
+        "thumb": {
+          "path": "work/production/wave_488/exports/2027-book-dragon-thumb.webp",
+          "bytes": 79294,
+          "sha256": "2a0af2d6604f374c7a5c6c4192e5bdc5c4b61737a7c42dba748e155a73070454"
+        }
+      },
+      "proofSha256": "4ac5fcb4475b6e6dd39f12e96c50f801ba650e3c5db0181a086213c45cafba57",
+      "pairMeanRgbDifference": 8.43637
+    },
+    {
+      "id": "2027-porcelain-stacked-year",
+      "title": "Ivory and Rose Gold Stacked 2027",
+      "alt": "Ivory serif numerals arranged as 20 above 27, with thick rose-gold sidewalls and recessed counters.",
+      "description": "The projecting serifs and smooth pale faces give the stacked year a sculptural, architectural form.",
+      "color": "Ivory",
+      "style": "Color",
+      "source": "work/production/wave_488/source/2027-porcelain-stacked-year.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1214,
+      "height": 1295,
+      "pdfWidth": 937,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "40b4530120f474c8e6a0420389296a6ac710ca46cea8fc3a91d18adc2ab5e12f",
+      "inputSignature": "c8b63c7d03081c838d515820dd01821bf1222b02280ad7b162bea2c57261d9ce",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 860384,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 860384,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        224,
+        154,
+        1032,
+        1179
+      ],
+      "image": {
+        "width": 937,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_488/exports/2027-porcelain-stacked-year.pdf",
+          "bytes": 860384,
+          "sha256": "c74af03915a5d35a1e9703ad01592e63bab4cc4be8a9245335b9de9bff3de1e6"
+        },
+        "webp": {
+          "path": "work/production/wave_488/exports/2027-porcelain-stacked-year.webp",
+          "bytes": 789558,
+          "sha256": "081796698ea0078d5510f2440f7026646c6e0118c77063d50af76f3bac2b9c17"
+        },
+        "thumb": {
+          "path": "work/production/wave_488/exports/2027-porcelain-stacked-year-thumb.webp",
+          "bytes": 51766,
+          "sha256": "eeca0cbca93d44f7e516aeb5a64cc669277cb177de222bdd3165319cdd9b7a7e"
+        }
+      },
+      "proofSha256": "de8092c0ac51b29e0b7daa5f837bccd68d2586e738624095e99221ddeac4a11d",
+      "pairMeanRgbDifference": 3.39046
+    },
+    {
+      "id": "2027-business-network",
+      "title": "Connect in 2027 Teamwork Ring",
+      "alt": "Five gold, teal and navy person-shaped figures link around gold 2027 numerals above a Connect in 2027 ribbon.",
+      "description": "The abstract figures hold a circular gold line, giving the networking emblem an open center and a clear lower message.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_488/source/2027-business-network.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 1000,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "564ee5ed21307551bb3e757e5e19c26c1d8cfd48b0df57cca7189e4772801cc6",
+      "inputSignature": "d292e76adb71387c598f118cec10b346b18d83cfb06133fdc88e8d900e957758",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 948972,
+        "weightedCmykRmse": 0.96185
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1298923,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1018245,
+          "weightedCmykRmse": 0.83972
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 948972,
+          "weightedCmykRmse": 0.96185
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        35,
+        53,
+        1220,
+        1150
+      ],
+      "image": {
+        "width": 1000,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_488/exports/2027-business-network.pdf",
+          "bytes": 948972,
+          "sha256": "dfd8e1fa7f7766c243eb137bfa160610afadff76f957e909ee8147d341bb739a"
+        },
+        "webp": {
+          "path": "work/production/wave_488/exports/2027-business-network.webp",
+          "bytes": 1044750,
+          "sha256": "e92c1abce80b4c80fa6544b4dab593bc2bf86ba2b322f803b8d4250418a295ad"
+        },
+        "thumb": {
+          "path": "work/production/wave_488/exports/2027-business-network-thumb.webp",
+          "bytes": 76624,
+          "sha256": "b0de7b62504783b96af4994ceeb293c450197fc4a52e38cae099ee90af43dfd2"
+        }
+      },
+      "proofSha256": "f561fd80c5e2ad79f97740da3b98f93cf4590be15e100f30ed551b55e7756f94",
+      "pairMeanRgbDifference": 6.25189
+    },
+    {
+      "id": "2027-business-desk",
+      "title": "Plan Create Grow 2027 Desk",
+      "alt": "A wooden desk holds an open laptop displaying 2027, a potted plant and a notebook beneath Plan Create Grow lettering.",
+      "description": "A cream upholstered chair faces the compact workspace, balancing the leafy plant on the left and gold pencil on the right.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_488/source/2027-business-desk.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 1000,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "b3bcd42768258f4104f31316ee114fdbf6a4c8e182d40ef623ae9972ae8b961f",
+      "inputSignature": "07962604c379f434f38ae3e06a2582a09774fd602dd1ec3144a05d57d28ea8fe",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 48,
+        "losslessCmyk": false,
+        "bytes": 920807,
+        "weightedCmykRmse": 1.38824
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1440187,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1185146,
+          "weightedCmykRmse": 0.801352
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1107816,
+          "weightedCmykRmse": 0.926468
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 1008849,
+          "weightedCmykRmse": 1.117097
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 48,
+          "losslessCmyk": false,
+          "bytes": 920807,
+          "weightedCmykRmse": 1.38824
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        50,
+        83,
+        1222,
+        1195
+      ],
+      "image": {
+        "width": 1000,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_488/exports/2027-business-desk.pdf",
+          "bytes": 920807,
+          "sha256": "b6dfc3a78f68fe8c35e8784769f6fd2d54adcc0fc88b5cd43770aa16e019bb24"
+        },
+        "webp": {
+          "path": "work/production/wave_488/exports/2027-business-desk.webp",
+          "bytes": 1047180,
+          "sha256": "0346f89bffabcfa93af9bad2e4a5cb695978a5115c2c869557646ed77ad1846e"
+        },
+        "thumb": {
+          "path": "work/production/wave_488/exports/2027-business-desk-thumb.webp",
+          "bytes": 72788,
+          "sha256": "095f113d543e830c6e1b83276fe0a07a6310f2b468b2234a1701f65b9b1fc68d"
+        }
+      },
+      "proofSha256": "20fe6303576cd7fde5cab3ac6e29cbb59faed6e9db88155e1dc306f0b489c20f",
+      "pairMeanRgbDifference": 5.1609
+    },
+    {
+      "id": "2027-ribbon-folded-year",
+      "title": "Folded Gold Ribbon 2027",
+      "alt": "2027 numerals shaped from broad folded gold ribbons with burgundy inner surfaces.",
+      "description": "Curled metal-like bands form airy digits, with the zero kept open and the seven ending in a clean diagonal.",
+      "color": "Gold",
+      "style": "Color",
+      "source": "work/production/wave_488/source/2027-ribbon-folded-year.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1774,
+      "height": 887,
+      "pdfWidth": 1000,
+      "pdfHeight": 500,
+      "sourceType": "raster",
+      "sourceSha256": "e722c6a121c7e76d8bef6ca8a5f85a54a016a2d3fab96e2106e57b95e59e6b9c",
+      "inputSignature": "ae2ea08d278b933c756d0b89355c630c68585e2d57f2c941d0bc90973de2364b",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 436220,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 436220,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        196,
+        210,
+        1598,
+        694
+      ],
+      "image": {
+        "width": 1000,
+        "height": 500,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_488/exports/2027-ribbon-folded-year.pdf",
+          "bytes": 436220,
+          "sha256": "e28a95f94893feb3a26f20306e2fb86ec27a1043b245513c83259f2b7c1a62a2"
+        },
+        "webp": {
+          "path": "work/production/wave_488/exports/2027-ribbon-folded-year.webp",
+          "bytes": 612412,
+          "sha256": "9fbd6ff2c3ca11d596f379785028a8f9dc312ab08154ed22d1f6d4177ad61272"
+        },
+        "thumb": {
+          "path": "work/production/wave_488/exports/2027-ribbon-folded-year-thumb.webp",
+          "bytes": 27656,
+          "sha256": "3a60b7c26224064b53dee752a778f6cf534ecca7c27f645e9ee402719bb67813"
+        }
+      },
+      "proofSha256": "e9cbbc0a496c57019fb59fa5d0b060072690db93a8c53f6b10027b4631c93caa",
+      "pairMeanRgbDifference": 5.0554
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T12:33:44.466003+00:00",
+  "screenReviewEvidence": "work/production/wave_488/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T12:33:45.114Z"
+}

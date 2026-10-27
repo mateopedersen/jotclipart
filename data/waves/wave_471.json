@@ -1,0 +1,494 @@
+{
+  "wave": "wave_471",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "gingerbread-gingerbread-train",
+      "title": "Gingerbread Train Carrying Candy",
+      "alt": "Gingerbread locomotive with a teal cab roof and peppermint wheels pulling a small wagon filled with striped candy sticks.",
+      "description": "White icing seams and red-and-green candies trace the engine and the fully connected sweet-filled wagon.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_471/source/gingerbread-gingerbread-train.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "830b6de113de7522654a45a607d104376c2d80079d0526c8cdde7e22d2181b7c",
+      "inputSignature": "37fef5805abf2de27da6ebd7c1ce59019f728c6d2cbec9890afe8d30a8bab189",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 837850,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 837850,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        92,
+        153,
+        1434,
+        863
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_471/exports/gingerbread-gingerbread-train.pdf",
+          "bytes": 837850,
+          "sha256": "ee92826f4eca73dd791a59f10c80977fdc07915d17ba0f370253bfd0a1c4c112"
+        },
+        "webp": {
+          "path": "work/production/wave_471/exports/gingerbread-gingerbread-train.webp",
+          "bytes": 1509650,
+          "sha256": "6aa105cdee5b948d26207ad4ba3be96c2402fb71069898edf02759dea9a52bf6"
+        },
+        "thumb": {
+          "path": "work/production/wave_471/exports/gingerbread-gingerbread-train-thumb.webp",
+          "bytes": 47400,
+          "sha256": "23cfdede317158aa500ae4816ff432692f7918b759cb5ca434f50067bdf1f539"
+        }
+      },
+      "proofSha256": "afb9fef60d7d6c994cac76f31e1bcf4495ad28b85af849683eccc3d7a0e75fac",
+      "pairMeanRgbDifference": 6.54899
+    },
+    {
+      "id": "gingerbread-gingerbread-camper",
+      "title": "Gingerbread Camper Trailer",
+      "alt": "Rounded gingerbread camper with two peppermint wheels, striped window awnings and a brown arched door decorated with a wreath.",
+      "description": "White icing curls and candy berries frame the amber windows above a small front step and exposed tow hitch.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_471/source/gingerbread-gingerbread-camper.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "0a0be00dd91964e9a33ab5addb6be6b0f976a7118348dd96bfb62d0305e81d5f",
+      "inputSignature": "a5222237d453b177f515dbc3403b6302dd70bf76120927f7180644f1fe82cf0e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 870443,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 870443,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        168,
+        120,
+        1444,
+        921
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_471/exports/gingerbread-gingerbread-camper.pdf",
+          "bytes": 870443,
+          "sha256": "f777f29a28d2ed605c37e69be53526bef48a368f20afd28f6738feeef21269da"
+        },
+        "webp": {
+          "path": "work/production/wave_471/exports/gingerbread-gingerbread-camper.webp",
+          "bytes": 1530718,
+          "sha256": "6e3c6a0dd4030e9fba2e29616d9ee161ee523afea5675b3606aafc5766b80639"
+        },
+        "thumb": {
+          "path": "work/production/wave_471/exports/gingerbread-gingerbread-camper-thumb.webp",
+          "bytes": 47760,
+          "sha256": "484585eb453f7d24c7a48cb860800e3b2999b63ee687c43767fbc1bab36aa491"
+        }
+      },
+      "proofSha256": "1a364b6ebf67570884904405e87e85495d0bc72de6ab6f3611c07d9df82b86c8",
+      "pairMeanRgbDifference": 7.03056
+    },
+    {
+      "id": "gingerbread-gingerbread-carousel",
+      "title": "Gingerbread Animal Carousel",
+      "alt": "Gingerbread carousel with a reindeer, horse and bear beneath a red-and-green candy canopy topped by a gold star.",
+      "description": "Peppermint trim and white icing scrolls decorate the round base around the three different suspended animal cookies.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_471/source/gingerbread-gingerbread-carousel.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1263,
+      "height": 1246,
+      "pdfWidth": 1000,
+      "pdfHeight": 987,
+      "sourceType": "raster",
+      "sourceSha256": "c8b17a933a2c1db5e9ef91c197c05f6cac597df772d047d9ebfb4e9620769243",
+      "inputSignature": "1508d3fc532651fab34e13b61c391efea5d768cd337c0b74b5e0c878df38c86f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 958196,
+        "weightedCmykRmse": 0.823143
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1225634,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 958196,
+          "weightedCmykRmse": 0.823143
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        124,
+        35,
+        1125,
+        1197
+      ],
+      "image": {
+        "width": 1000,
+        "height": 987,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_471/exports/gingerbread-gingerbread-carousel.pdf",
+          "bytes": 958196,
+          "sha256": "d28764575e36b5835f044057006bdb5ec83d52420d952837e07a37fd3be4aef7"
+        },
+        "webp": {
+          "path": "work/production/wave_471/exports/gingerbread-gingerbread-carousel.webp",
+          "bytes": 1064892,
+          "sha256": "f9ca2d2220996e4b4184922aeeb8c1c34b94bd750345fed39da6e5ede2bbf8d6"
+        },
+        "thumb": {
+          "path": "work/production/wave_471/exports/gingerbread-gingerbread-carousel-thumb.webp",
+          "bytes": 74706,
+          "sha256": "968954f81d476699fbccc3d75531131f022505ddd6de259c24e1a46b730e3ae0"
+        }
+      },
+      "proofSha256": "ef604cb34e30554ea91ada5b2d6c22c2df1ca822fb1d6e569e8f4acb91b47f8b",
+      "pairMeanRgbDifference": 5.62722
+    },
+    {
+      "id": "gingerbread-gingerbread-teapot",
+      "title": "Floral Gingerbread Teapot",
+      "alt": "Round gingerbread teapot decorated with pink floral icing, white scrolls and a scalloped lid topped by a small cookie knob.",
+      "description": "The broad open handle and upward-curving spout frame the raised flower and green leaves on the side.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_471/source/gingerbread-gingerbread-teapot.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1402,
+      "height": 1122,
+      "pdfWidth": 1000,
+      "pdfHeight": 800,
+      "sourceType": "raster",
+      "sourceSha256": "27e7365b260dfdcd03f5e0c9ccb253e9b1c3a273bd2728fbd5ab50d7408dca70",
+      "inputSignature": "40f47bda18072eaccad85de9738b13bd0e7056a3c43336db040bfb7b31a500ec",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 879755,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 879755,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        65,
+        92,
+        1352,
+        1050
+      ],
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_471/exports/gingerbread-gingerbread-teapot.pdf",
+          "bytes": 879755,
+          "sha256": "01651f4548092a43e56dab3423b264e733389bb1fe29bbf4c76cbdd645c14817"
+        },
+        "webp": {
+          "path": "work/production/wave_471/exports/gingerbread-gingerbread-teapot.webp",
+          "bytes": 1016396,
+          "sha256": "d8d46fd76669f886341e88a8efd1a55810e7bcd43b25be9032108b0de298fa16"
+        },
+        "thumb": {
+          "path": "work/production/wave_471/exports/gingerbread-gingerbread-teapot-thumb.webp",
+          "bytes": 49552,
+          "sha256": "18b0069ff00047a674a76ccb4cd1e04a799c528405ae7e67e0639d2721a09052"
+        }
+      },
+      "proofSha256": "aa0a90a8c8d9819109fe81b3a4dce541633968c0eefff41948e0a4c4fe30e6b8",
+      "pairMeanRgbDifference": 6.57789
+    },
+    {
+      "id": "gingerbread-heart-gift-box",
+      "title": "Gingerbread Cookies in a Heart Gift Box",
+      "alt": "Open heart-shaped gift box holding four different smiling gingerbread cookies, with a ribboned lid resting behind it.",
+      "description": "The star, tree, heart and round character cookies sit in individual paper liners inside the cream-and-red box.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_471/source/gingerbread-heart-gift-box.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "0da2bf325b708b72f635b37e4fbd8ebfcec745469f513b588fc2e591045464e5",
+      "inputSignature": "edcfcb46e90a9f2b2fa7ae57438ab99d504606d5ccb8802ef0f608438df0e7c6",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 814579,
+        "weightedCmykRmse": 0.786366
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1124820,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 814579,
+          "weightedCmykRmse": 0.786366
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        156,
+        70,
+        1286,
+        1117
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_471/exports/gingerbread-heart-gift-box.pdf",
+          "bytes": 814579,
+          "sha256": "4249501eabdc052c4fcb21f10917705dd1502ff0ff595b6be8aab7d4e1400323"
+        },
+        "webp": {
+          "path": "work/production/wave_471/exports/gingerbread-heart-gift-box.webp",
+          "bytes": 1212874,
+          "sha256": "cb9ab5cce5f457436175b4d5b5fb62d1e573d9d61e4613d3bc526d0cc072c73d"
+        },
+        "thumb": {
+          "path": "work/production/wave_471/exports/gingerbread-heart-gift-box-thumb.webp",
+          "bytes": 57890,
+          "sha256": "45de69e936f759355f40e9ec8b04b57d7475137ee0174f0f87faecd4e053c14b"
+        }
+      },
+      "proofSha256": "eecfac04415327edce5ba00f837d591ad2ffd4dbc2e6e4bfbafafcdacb4da884",
+      "pairMeanRgbDifference": 6.13656
+    },
+    {
+      "id": "gingerbread-icing-tools",
+      "title": "Icing a Gingerbread Star",
+      "alt": "Star-shaped gingerbread cookie edged with white icing beside a piping bag and two bowls of red and green frosting.",
+      "description": "The metal piping tip touches the cookie border, with the colored frosting bowls placed above the star.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_471/source/gingerbread-icing-tools.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1330,
+      "height": 1182,
+      "pdfWidth": 1000,
+      "pdfHeight": 889,
+      "sourceType": "raster",
+      "sourceSha256": "328964f0ba5def9393586fa8ce819488f723e1702bce0ba8c0c05ada266be9b9",
+      "inputSignature": "b1523230f7efdb0dab45e2fdeecec85fb6b428d77da25bae3e0cf3ff2934ec13",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 786438,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 786438,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        99,
+        62,
+        1310,
+        1078
+      ],
+      "image": {
+        "width": 1000,
+        "height": 889,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_471/exports/gingerbread-icing-tools.pdf",
+          "bytes": 786438,
+          "sha256": "87a4eb7da1d8de743cb69c4d972701f82820c435c1b8e359eddfc2810456c5c2"
+        },
+        "webp": {
+          "path": "work/production/wave_471/exports/gingerbread-icing-tools.webp",
+          "bytes": 842268,
+          "sha256": "09fca3c6721016aa985f2d89c57b4d9b5a489679398bc8efbc9fd0e2a7943bf7"
+        },
+        "thumb": {
+          "path": "work/production/wave_471/exports/gingerbread-icing-tools-thumb.webp",
+          "bytes": 49554,
+          "sha256": "c22996232bb89d6633e0ea69daad0707635aab4c8895e07ddd97d5e96fdee348"
+        }
+      },
+      "proofSha256": "9d9fc9e42bd0d555f90e754731761abc3c07bb1eb213335309d046b3fe8a40b6",
+      "pairMeanRgbDifference": 3.11741
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T10:23:24.208599+00:00",
+  "screenReviewEvidence": "work/production/wave_471/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T10:23:26.816Z"
+}

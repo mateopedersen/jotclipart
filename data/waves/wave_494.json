@@ -1,0 +1,516 @@
+{
+  "wave": "wave_494",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "feast-turkey-carving-chef",
+      "title": "Chef Carving a Turkey Roast",
+      "alt": "A smiling chef in a white toque and blue apron carves a turkey roast at a narrow wooden stand beside cranberry sauce and rolls.",
+      "description": "Round glasses and short curls distinguish the chef, whose knife and fork frame the pale slices exposed beneath the browned crust.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_494/source/feast-turkey-carving-chef.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1225,
+      "height": 1284,
+      "pdfWidth": 954,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "b625724e34424b7b2eb9a5a3127bf1b87ea0451b8c2b6b0b3d9bda5ef6df2f18",
+      "inputSignature": "e3a916edac217d4b73a08cb0a59147272079173784dd96a9a3b460a3b5cc89c6",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 859334,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 859334,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        317,
+        44,
+        1123,
+        1205
+      ],
+      "image": {
+        "width": 954,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_494/exports/feast-turkey-carving-chef.pdf",
+          "bytes": 859334,
+          "sha256": "4b34a1a768331ca2455d0d78517db5fe64c8d8cd495cfcbc71b1a6a220ffdb45"
+        },
+        "webp": {
+          "path": "work/production/wave_494/exports/feast-turkey-carving-chef.webp",
+          "bytes": 725888,
+          "sha256": "e74b21ccc962d09efca9ff7af1fd7de785d0635124ff4899993b27ad56465a80"
+        },
+        "thumb": {
+          "path": "work/production/wave_494/exports/feast-turkey-carving-chef-thumb.webp",
+          "bytes": 46506,
+          "sha256": "c95a5393183925328311ff3d1c12a84bc696229bf1ad43d58fe29351e2a5c330"
+        }
+      },
+      "proofSha256": "47435511ccf02f7f0bd2b94eb610914762dddcfb5565f2c44cb8708251edd9fa",
+      "pairMeanRgbDifference": 3.18924
+    },
+    {
+      "id": "feast-turkey-and-stuffed-squash",
+      "title": "Turkey Feast with Stuffed Squash",
+      "alt": "A golden roast turkey shares a copper handled platter with two filled squash halves and a cranberry sauce bowl.",
+      "description": "Herbs and red berries connect the larger bird at the rear to the two long grain-filled squash halves angled across the front.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_494/source/feast-turkey-and-stuffed-squash.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "3f3c53fa945e7891d115aa4f4897b91b93d9af90ff7972abf5fb8a00bb6c514a",
+      "inputSignature": "b1787f575338d758b70fe9520197d99264bd44bdd00bff6539144be892da8111",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 842845,
+        "weightedCmykRmse": 0.776804
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1018409,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 842845,
+          "weightedCmykRmse": 0.776804
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        72,
+        129,
+        1464,
+        853
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_494/exports/feast-turkey-and-stuffed-squash.pdf",
+          "bytes": 842845,
+          "sha256": "4c3406ca4556be8e73a24bc12ce4a76d91c0adaf8e89c3c116fb8e88dfd07e8b"
+        },
+        "webp": {
+          "path": "work/production/wave_494/exports/feast-turkey-and-stuffed-squash.webp",
+          "bytes": 1720380,
+          "sha256": "5759eb8cb39032dd1f3a434cc83ec3c08d5e92a68e654dbd7bc3042d1cba3e4f"
+        },
+        "thumb": {
+          "path": "work/production/wave_494/exports/feast-turkey-and-stuffed-squash-thumb.webp",
+          "bytes": 51218,
+          "sha256": "64c9a72a143d0e924c7fbcf820f35fe39f1b6f5429753996c3645e33d2d49404"
+        }
+      },
+      "proofSha256": "f653b2443c25744f41fce5f8853ed24fd0c0920c11ba355c426f7ecd9fe4ddab",
+      "pairMeanRgbDifference": 5.19687
+    },
+    {
+      "id": "feast-turkey-picnic-hamper",
+      "title": "Turkey Feast Picnic Hamper",
+      "alt": "An open wicker hamper contains a roast turkey in an enamel dish beside cranberry sauce, rolls and folded green napkins.",
+      "description": "Leather straps and a complete front handle frame the deep basket, while its upright woven lid leaves each packed item visible.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_494/source/feast-turkey-picnic-hamper.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "727a9a46c8a52f6b5a157c5c6891a52466d39a98adffa0cf309df334975f7812",
+      "inputSignature": "c97f3846866796c37f123d99276c04d00ec322566292a243adca71102ef6f2d4",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 985699,
+        "weightedCmykRmse": 0.935131
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1320814,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1050031,
+          "weightedCmykRmse": 0.789103
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 985699,
+          "weightedCmykRmse": 0.935131
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        192,
+        148,
+        1135,
+        1101
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_494/exports/feast-turkey-picnic-hamper.pdf",
+          "bytes": 985699,
+          "sha256": "7a36ba0562064ad9c09fab69f76464636d0d38952bc50be4c06263fa7866cd1a"
+        },
+        "webp": {
+          "path": "work/production/wave_494/exports/feast-turkey-picnic-hamper.webp",
+          "bytes": 1283886,
+          "sha256": "e68f43f861b406d920e949af273bfa9fc7cf0d756b9d4a36ca86fbf90bc5ffd3"
+        },
+        "thumb": {
+          "path": "work/production/wave_494/exports/feast-turkey-picnic-hamper-thumb.webp",
+          "bytes": 65168,
+          "sha256": "be27d9aea0771c15220f9bb96f8e890cd67e2df583c2fc97659583aff83a6576"
+        }
+      },
+      "proofSha256": "66d42ca7cd0e104e2534163f23126a493f1f2b64e51f156cb02b4eb896955937",
+      "pairMeanRgbDifference": 5.08302
+    },
+    {
+      "id": "feast-round-table-friends",
+      "title": "Friends Sharing a Turkey Feast",
+      "alt": "Three smiling cartoon friends share a roast-turkey meal at a round wooden table while passing a bowl of green beans.",
+      "description": "Mustard, teal and plum tops distinguish the diners, with plated portions, mashed potatoes and gravy arranged around the centerpiece.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_494/source/feast-round-table-friends.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1351,
+      "height": 1164,
+      "pdfWidth": 1000,
+      "pdfHeight": 862,
+      "sourceType": "raster",
+      "sourceSha256": "3ed1b6583f27119e7cc7dcc375c99cde5ac5d8b1e725706c5448ecff84e9b3c3",
+      "inputSignature": "8b7b62cf6e29be6d9f44d3f43acb8e48e58d31c6b88e00a9bc37238feb45c45f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 984340,
+        "weightedCmykRmse": 0.929691
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1274626,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1050398,
+          "weightedCmykRmse": 0.797938
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 984340,
+          "weightedCmykRmse": 0.929691
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        88,
+        122,
+        1281,
+        1043
+      ],
+      "image": {
+        "width": 1000,
+        "height": 862,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_494/exports/feast-round-table-friends.pdf",
+          "bytes": 984340,
+          "sha256": "d2d78d1049cebbd5d627c05d4d68ce7aab8646a418253495bdef1ff584722530"
+        },
+        "webp": {
+          "path": "work/production/wave_494/exports/feast-round-table-friends.webp",
+          "bytes": 1080096,
+          "sha256": "64e59a87b16cdb08c0caf90ac2cc7a2016c1d82b6378f2b03377d7d235ac3b9f"
+        },
+        "thumb": {
+          "path": "work/production/wave_494/exports/feast-round-table-friends-thumb.webp",
+          "bytes": 63718,
+          "sha256": "580a5ce88d1558157ef3798907c57a62c95ad6600936109d6f0e981c4db3185f"
+        }
+      },
+      "proofSha256": "c893a86baf772c66a5ed03fff3556f616c661986dc24eb7f5224265c9acf4348",
+      "pairMeanRgbDifference": 5.37698
+    },
+    {
+      "id": "feast-potluck-arrival",
+      "title": "Neighbors Bringing a Turkey Potluck",
+      "alt": "Three cartoon neighbors carry a roast turkey, a bread basket and a pumpkin pie for a shared meal.",
+      "description": "A tall woman in green, an older man in denim and a shorter woman in a coral dress hold their dishes across a varied group silhouette.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_494/source/feast-potluck-arrival.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "ab52a35863076599a4677d85498a2c8900d5975095b7a388c9292f3c365ec559",
+      "inputSignature": "b69b517935e96e4df85fd233a99ef94ef7cf3315ecd4d9285515ca7b7f5ea605",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 637499,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 637499,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        319,
+        56,
+        1235,
+        968
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_494/exports/feast-potluck-arrival.pdf",
+          "bytes": 637499,
+          "sha256": "67d2ae795cd4c15d0e6dba089bb1b3271113cb6662afb9dc072fec3f875e6886"
+        },
+        "webp": {
+          "path": "work/production/wave_494/exports/feast-potluck-arrival.webp",
+          "bytes": 1160656,
+          "sha256": "7184695797234cd4f92e4ea0a749547936a09b27c4f58bc909ef61f8bb1d06a4"
+        },
+        "thumb": {
+          "path": "work/production/wave_494/exports/feast-potluck-arrival-thumb.webp",
+          "bytes": 34996,
+          "sha256": "68032ec168377797d6e5d933943c83828c96757cc63c94f79879f537795c99fd"
+        }
+      },
+      "proofSha256": "024b1720aed7db29768c2757931e9cc4026879c25169520bb596267fd9ffa9e4",
+      "pairMeanRgbDifference": 3.00586
+    },
+    {
+      "id": "feast-school-friendship-table",
+      "title": "Children Sharing a Turkey Feast",
+      "alt": "Four smiling cartoon children share a roast turkey, corn, fruit and rolls around a small wooden table.",
+      "description": "Different hairstyles, bows and green, yellow, blue and pink outfits distinguish the children as one offers a bread roll across the food.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_494/source/feast-school-friendship-table.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "d796138a1f2101a59da9ebcf3eb7d227a64b2602c644eaa613a10640df5742bb",
+      "inputSignature": "bf2dad94ebe33355d9947d93915a4ef21ae26da4d5454ecaa2052f20a9bf7711",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 923015,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 923015,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        133,
+        62,
+        1414,
+        917
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_494/exports/feast-school-friendship-table.pdf",
+          "bytes": 923015,
+          "sha256": "dc69f6d1292b006f5924271e174d497354eff18770efa7e6abfe5fa29e6d5e96"
+        },
+        "webp": {
+          "path": "work/production/wave_494/exports/feast-school-friendship-table.webp",
+          "bytes": 1438702,
+          "sha256": "c00b7447a937236614fba2536de8693dabcd75951309cd1e068f970bddfbcf48"
+        },
+        "thumb": {
+          "path": "work/production/wave_494/exports/feast-school-friendship-table-thumb.webp",
+          "bytes": 52926,
+          "sha256": "522afddcc38e4c0dadbb4b507bf366633e3043dcc36766f7ac45d770f4c85f52"
+        }
+      },
+      "proofSha256": "0767cccca389b6dae001fbdd25ded00274f9a54c4d62289bc7362532781fe55f",
+      "pairMeanRgbDifference": 6.14553
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T14:32:34.221836+00:00",
+  "screenReviewEvidence": "work/production/wave_494/native-proof-review.jpg",
+  "screenReviewEvidenceSha256": "904d3666f026e61169facba3345276f34c003ce95f48fe9b955146e186d0a917",
+  "screenReviewNotes": "Every actual rendered CMYK PDF proof inspected: distinct characters, clear serving actions, complete framing, coherent food and furniture, or clean outline coloring details. No physical print proof claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T14:34:20.130Z"
+}

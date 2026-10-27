@@ -1,0 +1,41 @@
+{
+  "topic": "feast",
+  "researchedAt": "2026-10-27T13:35:01.485475+00:00",
+  "queries": [
+    {
+      "query": "feast clipart",
+      "url": "https://www.google.com/search?udm=2&q=feast+clipart&gl=us&hl=en",
+      "actualResultsVisuallyInspected": true
+    },
+    {
+      "query": "thanksgiving feast clipart turkey table",
+      "url": "https://www.google.com/search?udm=2&q=thanksgiving+feast+clipart+turkey+table&gl=us&hl=en",
+      "actualResultsVisuallyInspected": true
+    }
+  ],
+  "sourceImageReuse": false,
+  "observations": [
+    "Results emphasize abundant food groupings, sharing tables, buffet service, holiday meals and cartoon families rather than isolated kitchen appliances.",
+    "Both clean cartoon food motifs and black-and-white coloring scenes appear, with useful audiences including school friendship meals, potlucks and invitations.",
+    "The refined query centers whole roast turkeys with side dishes, occupied family tables, buffet spreads, overhead place settings and greeting compositions. Use these subject conventions for original independent designs; never copy the visible stock art."
+  ],
+  "catalogCheck": {
+    "currentAcceptedExactTopic": 0,
+    "latestMainExactTopic": 0,
+    "concurrentImportExactTopic": 0,
+    "queuedNativeExactTopic": 0,
+    "actualExistingReferenceImagesInspected": 23,
+    "referenceRecords": "work/production/feast-existing-reference-records.json",
+    "referenceContact": "work/production/feast-existing-references.jpg",
+    "actualExistingTurkeyReferenceImagesInspected": 5,
+    "turkeyReferenceContact": "work/production/feast-existing-turkey-references.jpg"
+  },
+  "excludedConcepts": [
+    "Existing copper community soup pot with two bowls",
+    "Existing insulated red casserole tote",
+    "Existing roast-turkey feast coloring table",
+    "Existing cornucopia table and family scenes"
+  ],
+  "actualSourceImagesViewed": 0,
+  "copyPolicy": "Only actual pixels can authorize image-specific metadata; planning descriptions are not visual evidence."
+}

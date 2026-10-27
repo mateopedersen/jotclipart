@@ -1,0 +1,480 @@
+{
+  "wave": "wave_458",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "snowman-snow-angel",
+      "title": "Snowman Relaxing with Outstretched Arms",
+      "alt": "Leaning snowman with closed smiling eyes, spread twig arms, mint pom-pom cap, orange scarf and a red heart button.",
+      "description": "The relaxed figure tilts backward with two round snow feet forward and both arms open wide.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_458/source/snowman-snow-angel.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "605d22bef5b675d561342058cf132612b84125664179cdd9fcdb08e939d11126",
+      "inputSignature": "81029a797742331db472f9da56b370f7b67d3f717e58260fc4258e547fe3cd06",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 475374,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 475374,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        299,
+        96,
+        1248,
+        924
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_458/exports/snowman-snow-angel.pdf",
+          "bytes": 475374,
+          "sha256": "4b6672becdb196c3919ef6d2be6e0418389e9647ce6fed881af9986f32e0f874"
+        },
+        "webp": {
+          "path": "work/production/wave_458/exports/snowman-snow-angel.webp",
+          "bytes": 955408,
+          "sha256": "d10c7c2512f912ae0a56b50111f75eaddf5efc547cc584b15feb3a807559f68a"
+        },
+        "thumb": {
+          "path": "work/production/wave_458/exports/snowman-snow-angel-thumb.webp",
+          "bytes": 26634,
+          "sha256": "b82523d1722d477185edf14cb8940602dfb4f67d08ed8687d5f791d9195804e7"
+        }
+      },
+      "proofSha256": "132ba3035597100ce4e2e9255c1371b28309f68d117af9b589e5f7e1c909198c",
+      "pairMeanRgbDifference": 1.87166
+    },
+    {
+      "id": "snowman-lantern-evening",
+      "title": "Snowman Carrying a Brass Lantern",
+      "alt": "Tall snowman in a wide gray felt hat and cream scarf holding a brass lantern by its ring handle.",
+      "description": "The narrow head and stacked snow body make a gentle upright silhouette, with one branch arm extended beside the lantern.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_458/source/snowman-lantern-evening.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "3dc0749be2accece883f0e305f99fcd0648c3595f1864e7180668093a433d078",
+      "inputSignature": "ede2eb385adda1f7383b45acdb8b3788d6dd7774d0842949892d8d9c0bdd8639",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 630326,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 630326,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        288,
+        47,
+        1082,
+        1086
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_458/exports/snowman-lantern-evening.pdf",
+          "bytes": 630326,
+          "sha256": "f98a1c83c98170cbb7503d2bdc3669ac99fb3cc1e6210e3cab13b99f6f488393"
+        },
+        "webp": {
+          "path": "work/production/wave_458/exports/snowman-lantern-evening.webp",
+          "bytes": 600348,
+          "sha256": "697e6a87b829839ab5e55fe2a34463afe1c425b8484ed44af3e6d3460c88675d"
+        },
+        "thumb": {
+          "path": "work/production/wave_458/exports/snowman-lantern-evening-thumb.webp",
+          "bytes": 31720,
+          "sha256": "7a6f43ec82088207de15a8ab21279c7414d41cdf40f2b320fb0a583370cf133b"
+        }
+      },
+      "proofSha256": "77479b657c07e40d5923dd018968cb0670cae14e3dc921d029b80b785b5a764e",
+      "pairMeanRgbDifference": 1.67159
+    },
+    {
+      "id": "snowman-snowball-juggler",
+      "title": "Snowman Juggling Three Snowballs",
+      "alt": "Laughing snowman in a purple and gold jester cap juggling three snowballs above its twig hands.",
+      "description": "The bell-tipped cap and striped scarf add a playful rhythm to the arcing snowballs.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_458/source/snowman-snowball-juggler.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "116eaab14f2ff94e4ff7720c371caaa9c27ebcd6c99913dde93e52b31ad1c996",
+      "inputSignature": "8105d60bc58400a83f5b4fdaf06d2c2ccd101b7340667f327a76ef767f92bec6",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 431258,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 431258,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        434,
+        32,
+        1152,
+        996
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_458/exports/snowman-snowball-juggler.pdf",
+          "bytes": 431258,
+          "sha256": "9a48cdc626cf377acb8d01089f718c8e20a1d23ac7f4fab955efe8432b3112dd"
+        },
+        "webp": {
+          "path": "work/production/wave_458/exports/snowman-snowball-juggler.webp",
+          "bytes": 915028,
+          "sha256": "97bf0f9e5a5b26dfdb804c9382ed9e67a29284c63f2196f0992822aacc3d9780"
+        },
+        "thumb": {
+          "path": "work/production/wave_458/exports/snowman-snowball-juggler-thumb.webp",
+          "bytes": 24488,
+          "sha256": "8422b8d4c5bd415f2ef45e50ef8091fb1b8bf1e95750dd92947005452d60f5ec"
+        }
+      },
+      "proofSha256": "3d67f58771eae8a89fbd8d6a2cff51c261a835ea235abfb98c03736f153ffd6c",
+      "pairMeanRgbDifference": 1.85934
+    },
+    {
+      "id": "snowman-sleeping-crescent",
+      "title": "Snowman Sleeping in a Knitted Crescent",
+      "alt": "Small sleeping snowman in a red nightcap and scarf nestled inside a cream cable-knit crescent cushion.",
+      "description": "Folded twig arms and closed eyes create a quiet resting pose within the curved knitted shape.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_458/source/snowman-sleeping-crescent.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "7cde49a403c89f8cb58b1e85061c4707b2bfdb032bfb72bad0e67233d3236298",
+      "inputSignature": "c3d01083e9886788b6d69e6e74b0f3888611df8481312deff1de712d8dd02dac",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 563848,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 563848,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        298,
+        70,
+        1314,
+        956
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_458/exports/snowman-sleeping-crescent.pdf",
+          "bytes": 563848,
+          "sha256": "129bb7104cd100b6d27c926520ca79dcc7d305b28302735978f8ec99631580ff"
+        },
+        "webp": {
+          "path": "work/production/wave_458/exports/snowman-sleeping-crescent.webp",
+          "bytes": 1127888,
+          "sha256": "9a18fa42945d04402db13be753021b3bd1e5e14e756ae06746a8e6e47304d824"
+        },
+        "thumb": {
+          "path": "work/production/wave_458/exports/snowman-sleeping-crescent-thumb.webp",
+          "bytes": 28750,
+          "sha256": "5542852e46afd980145df479ecefe04731d6397e99dc49d984725e66c8351d98"
+        }
+      },
+      "proofSha256": "50d01cbaa117e75b401529e96069c440a2f46dfc5584b3f91dd82b6b0e37f0c9",
+      "pairMeanRgbDifference": 2.27051
+    },
+    {
+      "id": "snowman-lettering-let-it-snow",
+      "title": "Let It Snow Lettering with a Snowman",
+      "alt": "Blue snow-capped lettering reading Let It Snow with a smiling gray-hatted snowman beside the final letter.",
+      "description": "Rounded blue letters form a compact two-line greeting, finished with two snowflakes and a small pink-scarfed character.",
+      "color": "Blue",
+      "style": "Color",
+      "source": "work/production/wave_458/source/snowman-lettering-let-it-snow.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "fd3d4333a56f00aa71ee7d36883f6fb595e9dd6f2b0d6cf40960872f3443a123",
+      "inputSignature": "0043dca976d32eda8a96a56cbed1d5b3521e5336045e35a2687d6b4203c36555",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 651302,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 651302,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        105,
+        168,
+        1426,
+        883
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_458/exports/snowman-lettering-let-it-snow.pdf",
+          "bytes": 651302,
+          "sha256": "cb1bd7d2cff9b16103c431b8b8d809327887d36aed8e5e9f46a0c282ecab3d82"
+        },
+        "webp": {
+          "path": "work/production/wave_458/exports/snowman-lettering-let-it-snow.webp",
+          "bytes": 1275838,
+          "sha256": "d33ddf6994a8708bb52508ddba110d1c8330fbcb2bd21301fceaf02fd6faa313"
+        },
+        "thumb": {
+          "path": "work/production/wave_458/exports/snowman-lettering-let-it-snow-thumb.webp",
+          "bytes": 43368,
+          "sha256": "a9c3d11401eb3fcdadd9bf87f0049f028340d8d76f1abc7556ee57dc17d5c1ef"
+        }
+      },
+      "proofSha256": "78c77d6dd37fa16884f28040ada2cf063cb89fe020521dfc8ba7f93b293339d2",
+      "pairMeanRgbDifference": 6.5262
+    },
+    {
+      "id": "snowman-window-peek",
+      "title": "Two Snowmen Peeking over a Wooden Ledge",
+      "alt": "Two smiling snowmen in teal and red knitted hats leaning their twig hands on a snow-covered wooden ledge.",
+      "description": "A round-faced character and a taller narrow-faced companion share a cheerful cropped window composition.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_458/source/snowman-window-peek.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "011ed6e08887da52cfed4e8a9f0ae23e37ef23b69cf93bdfc1b528f40cba6b03",
+      "inputSignature": "7d7ca890afca91890cd4cec16cefba14d8059bde644c3d1caf274030c6ed8d74",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 806200,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 806200,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        196,
+        98,
+        1368,
+        894
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_458/exports/snowman-window-peek.pdf",
+          "bytes": 806200,
+          "sha256": "51fbaf5db6624d7b32ce1161a1356c9c3f7603a93911481c29bdfdf106b96ae8"
+        },
+        "webp": {
+          "path": "work/production/wave_458/exports/snowman-window-peek.webp",
+          "bytes": 1385596,
+          "sha256": "0fae1ed7170589c68b583d6d58b6841f010bf8f3fed9642d905fd803b144fd5a"
+        },
+        "thumb": {
+          "path": "work/production/wave_458/exports/snowman-window-peek-thumb.webp",
+          "bytes": 41224,
+          "sha256": "2169d439901af1cb91bceac426cdbf51bed3fa7676d983a06c78e16773cb0851"
+        }
+      },
+      "proofSha256": "1d569a4850e86d49e6b590c3bf0bee2a3e569f10976c9ec33d87b63a968ba8d7",
+      "pairMeanRgbDifference": 3.62291
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T09:16:53.898049+00:00",
+  "screenReviewEvidence": "work/production/wave_458/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T09:22:12.479Z"
+}

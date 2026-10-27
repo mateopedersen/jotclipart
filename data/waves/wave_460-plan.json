@@ -1,0 +1,77 @@
+{
+  "wave": "wave_460",
+  "topic": "snowman",
+  "method": "builtin-image-generation",
+  "research": "data/research/snowman-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "snowman-umbrella-flakes",
+      "title": "Snowman Catching a Snowflake",
+      "alt": "Tall snowman in a lime green cap and navy scarf holding a closed burgundy umbrella and reaching toward one snowflake.",
+      "description": "The long carrot nose and raised twig hand point toward the flake while the folded umbrella rests at the opposite side.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_460/source/snowman-umbrella-flakes.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-drum-parade",
+      "title": "Snowman Playing a Red Drum",
+      "alt": "Round snowman wearing a green tassel cap and gold scarf playing a red drum with two wooden mallets.",
+      "description": "The drum sits on a shoulder strap, with one mallet lifted and the other poised over its cream drumhead.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_460/source/snowman-drum-parade.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-violin-melody",
+      "title": "Snowman Playing a Violin",
+      "alt": "Slender snowman in a burgundy beret and blue scarf playing a small brown violin with its eyes closed.",
+      "description": "A diagonal bow crosses the strings while one branch hand supports the instrument beneath the snowman's chin.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_460/source/snowman-violin-melody.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-snowboard-balance",
+      "title": "Snowman Balancing on a Snowboard",
+      "alt": "Small snowman in a teal helmet and red scarf balancing on an orange snowboard with both twig arms spread.",
+      "description": "Two rounded snow feet rest on the curved board while the open smile and trailing scarf suggest motion.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_460/source/snowman-snowboard-balance.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-fishing-ice-hole",
+      "title": "Snowman Ice Fishing",
+      "alt": "Snowman in a yellow patched cap and green scarf seated on a wooden stool, fishing through a small blue ice hole.",
+      "description": "Green mittens hold a short rod whose line drops into the ring of ice beside the stool.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_460/source/snowman-fishing-ice-hole.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-garden-carrot",
+      "title": "Snowman Studying a Spare Carrot",
+      "alt": "Surprised snowman in a navy cap and red vest holding a leafy carrot and looking at it with raised eyebrows.",
+      "description": "The large spare carrot contrasts with the tiny orange nose on the wide-eyed face.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_460/source/snowman-garden-carrot.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

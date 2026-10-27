@@ -1,0 +1,487 @@
+{
+  "wave": "wave_448",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "reindeer-present-sled-pull",
+      "title": "Reindeer Pulling a Gift Sled",
+      "alt": "Dark-brown cartoon reindeer in a green chest harness pulling a small wooden sled loaded with red and green presents.",
+      "description": "Two green traces connect the harness to the sled's curved runners. A thick cream neck ruff, long face and wide branching antlers distinguish the walking animal.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_448/source/reindeer-present-sled-pull.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "e080eb95fd4f93866e1517c8410b6462290c27658445ebcacf10cd89f2eb5175",
+      "inputSignature": "8216ed065f08edd3ac16e65cc42a81edc65ef38327c47db41fd2e3de1f109d10",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 634066,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 634066,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        389,
+        21,
+        1327,
+        989
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_448/exports/reindeer-present-sled-pull.pdf",
+          "bytes": 634066,
+          "sha256": "9b3d85fc4506f6905f154bf08110dac138934505aec5f9723bb000005a9e8436"
+        },
+        "webp": {
+          "path": "work/production/wave_448/exports/reindeer-present-sled-pull.webp",
+          "bytes": 1067146,
+          "sha256": "e34d69fa7beed8123c105c48dcf6ce80619885e04575ca91b51c56d83d93635c"
+        },
+        "thumb": {
+          "path": "work/production/wave_448/exports/reindeer-present-sled-pull-thumb.webp",
+          "bytes": 36284,
+          "sha256": "55bc307ab0128e07b0fc02e9876f456a1d1736bb0f4a2bb17114b0a52eb72563"
+        }
+      },
+      "proofSha256": "89778b0a899f65951e6dfad67651e049c268e2e4879ef05b3785af6d6fa66cbf",
+      "pairMeanRgbDifference": 2.82936
+    },
+    {
+      "id": "reindeer-cocoa-mug-cuddle",
+      "title": "Reindeer Holding a Cocoa Mug",
+      "alt": "Round golden-brown cartoon reindeer seated with a red cocoa mug between its forehooves and a blue neckerchief.",
+      "description": "Cream marshmallows rise above the snowflake-patterned mug. Large green eyes, short antler forks and two forward-facing rear hooves give the little animal a cozy seated silhouette.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_448/source/reindeer-cocoa-mug-cuddle.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1265,
+      "height": 1243,
+      "pdfWidth": 1000,
+      "pdfHeight": 983,
+      "sourceType": "raster",
+      "sourceSha256": "7cbe58abecc1318932a5a0920eb45e6187becd36b2521ca99d7ce301ef4d0c03",
+      "inputSignature": "68187504e68e88bb91965ccef5a93341b2f6e4409d5ef6a25259654a52c45494",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 918671,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 918671,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        271,
+        88,
+        1043,
+        1145
+      ],
+      "image": {
+        "width": 1000,
+        "height": 983,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_448/exports/reindeer-cocoa-mug-cuddle.pdf",
+          "bytes": 918671,
+          "sha256": "0c53cd365b9df4a6d832a6ae1bafaf9cf51f0805a84b80634c9528abeb05fa2f"
+        },
+        "webp": {
+          "path": "work/production/wave_448/exports/reindeer-cocoa-mug-cuddle.webp",
+          "bytes": 703746,
+          "sha256": "cceaebcbe8e87a338e4267de46441677fa4aa0fa5c152ff6892a9feb2cafadb8"
+        },
+        "thumb": {
+          "path": "work/production/wave_448/exports/reindeer-cocoa-mug-cuddle-thumb.webp",
+          "bytes": 43954,
+          "sha256": "9b7ef38eff65a74c2668893cb71f05c251ce6854881d5ebe4d2203a6a4f9387b"
+        }
+      },
+      "proofSha256": "5ac2ea83e81db8945e9fdbe2bf0e31bc8b2848cf9aee4d8533c3d23068d8359e",
+      "pairMeanRgbDifference": 2.30095
+    },
+    {
+      "id": "reindeer-ice-skating-solo",
+      "title": "Reindeer Balancing on Ice Skates",
+      "alt": "Blue-eyed cartoon reindeer in a green knitted beanie balancing on two silver-bladed skates with forelegs stretched outward.",
+      "description": "One rear leg lifts behind the reindeer while the other skate supports the pose. A cream chest and wide antler crown contrast with its slim cinnamon-brown body.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_448/source/reindeer-ice-skating-solo.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1263,
+      "height": 1246,
+      "pdfWidth": 1000,
+      "pdfHeight": 987,
+      "sourceType": "raster",
+      "sourceSha256": "7b95c201ebc898f0e886d916f1cbe4e1b0a1cd54e21ffb0bceab575b839482b6",
+      "inputSignature": "7c788166ade0b618ab64566480c84906bc3cdba85c8e0d21e7d0ed1a3a795ad5",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 768037,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 768037,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        284,
+        26,
+        1070,
+        1191
+      ],
+      "image": {
+        "width": 1000,
+        "height": 987,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_448/exports/reindeer-ice-skating-solo.pdf",
+          "bytes": 768037,
+          "sha256": "7088169418ee534146a84b9526fd643b822cab69cfb35e84efd1bc699463f19a"
+        },
+        "webp": {
+          "path": "work/production/wave_448/exports/reindeer-ice-skating-solo.webp",
+          "bytes": 569460,
+          "sha256": "50d55991ba0f237e913d2e3440c50160aef65a0ae47beed458af8fdbe884dd57"
+        },
+        "thumb": {
+          "path": "work/production/wave_448/exports/reindeer-ice-skating-solo-thumb.webp",
+          "bytes": 41682,
+          "sha256": "517dfddf32665a854793c4b96b9ab5c032c3adcb347bb21a64f3a641a2fe8526"
+        }
+      },
+      "proofSha256": "38f0f29a84b0e7bf67642df318293e3d758b61f3db8f98865e16edc2697b13e7",
+      "pairMeanRgbDifference": 2.02609
+    },
+    {
+      "id": "reindeer-holiday-letter-carrier",
+      "title": "Reindeer Delivering a Christmas Letter",
+      "alt": "Brown cartoon reindeer walking with a cream envelope held in its mouth and a red mail satchel over its shoulder.",
+      "description": "A buckled strap crosses the reindeer's cream chest above the forward-stepping hoof. The blank envelope and red satchel create a simple festive delivery scene.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_448/source/reindeer-holiday-letter-carrier.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1230,
+      "height": 1278,
+      "pdfWidth": 962,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "32789fad3deae0328be9db6686643eb7502a1c4c9236747537601e1bde0fad35",
+      "inputSignature": "1cb1ae27c7208d9128042f3558a271517153cced435e6ca3e56eece58b44631f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 894862,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 894862,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        288,
+        27,
+        1053,
+        1225
+      ],
+      "image": {
+        "width": 962,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_448/exports/reindeer-holiday-letter-carrier.pdf",
+          "bytes": 894862,
+          "sha256": "82c9b37cd968c2b8a1d33614d2c8981ec5588ded4fd4472652261982fc0cf4dd"
+        },
+        "webp": {
+          "path": "work/production/wave_448/exports/reindeer-holiday-letter-carrier.webp",
+          "bytes": 729598,
+          "sha256": "e0630bda00db22d264abb522c4cb5c4b942141b7271d0d6f4471262b373dcf7d"
+        },
+        "thumb": {
+          "path": "work/production/wave_448/exports/reindeer-holiday-letter-carrier-thumb.webp",
+          "bytes": 45950,
+          "sha256": "9b417523797ac8d1a5c6be15802c62f9dc0acb139e6136df59bb42b31733c2cd"
+        }
+      },
+      "proofSha256": "4981aa813694a6d214c3fa0f0b5eaec8f6400c08156567aab5476057418b437d",
+      "pairMeanRgbDifference": 2.20003
+    },
+    {
+      "id": "reindeer-lantern-nose-guide",
+      "title": "Reindeer Looking at a Lantern",
+      "alt": "Small brown cartoon reindeer in a burgundy knitted neck warmer looking down at a glowing brass lantern beside its front hooves.",
+      "description": "The reindeer tilts its round face toward the lantern's warm light. Short antlers, a pale chest and a few small white back markings distinguish the standing animal.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_448/source/reindeer-lantern-nose-guide.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "c34b04ba3cf3ef5b7c4c4d771f6c358ec10a20d77fa3b68d68132064605e933d",
+      "inputSignature": "2c67763f985d5a37c17663793c6628b8db67daaf03032fe162c5a3d4ec61bbc9",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 795029,
+        "weightedCmykRmse": 0.870456
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1017083,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 795029,
+          "weightedCmykRmse": 0.870456
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        211,
+        28,
+        1186,
+        1143
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_448/exports/reindeer-lantern-nose-guide.pdf",
+          "bytes": 795029,
+          "sha256": "d2c025848f572807fb164f33cf2328ee20352b07599d2c2b5a5fce1b80717466"
+        },
+        "webp": {
+          "path": "work/production/wave_448/exports/reindeer-lantern-nose-guide.webp",
+          "bytes": 909600,
+          "sha256": "8228e1c81a13656c50e9e5ab59e49c5e83ff5e25fe6091a673509f322728baed"
+        },
+        "thumb": {
+          "path": "work/production/wave_448/exports/reindeer-lantern-nose-guide-thumb.webp",
+          "bytes": 56778,
+          "sha256": "b30c31bd2ae8ac0f211db4bd0762dab466dca89a49f9dea20642ca422eec52e9"
+        }
+      },
+      "proofSha256": "6ee7bde6b3f09ad590c3206344049577715b4143d95e754849f4918ffa42f2fe",
+      "pairMeanRgbDifference": 3.01109
+    },
+    {
+      "id": "reindeer-bauble-antler-dance",
+      "title": "Reindeer with Hanging Christmas Baubles",
+      "alt": "Green-eyed brown cartoon reindeer lifting one rear hoof, with three red and gold baubles hanging from its antlers.",
+      "description": "The ornaments hang from separate antler branches above a slim, side-stepping body. A long cream throat patch and raised short tail add to the flowing silhouette.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_448/source/reindeer-bauble-antler-dance.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1285,
+      "height": 1224,
+      "pdfWidth": 1000,
+      "pdfHeight": 953,
+      "sourceType": "raster",
+      "sourceSha256": "356b1ebb87b3e45e5781af73b3317ac2dd7d7d7e21a9d39904a28703abfa5a03",
+      "inputSignature": "675e1ac85a77edbee61398458cfb42c1f21397dec4aca1a9a2fbfc9106a233f7",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 992901,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 992901,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        183,
+        12,
+        1185,
+        1199
+      ],
+      "image": {
+        "width": 1000,
+        "height": 953,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_448/exports/reindeer-bauble-antler-dance.pdf",
+          "bytes": 992901,
+          "sha256": "b759ec742a105cc964ddd5ff5ddb36120b47b904a781b398868c525e1223c2d3"
+        },
+        "webp": {
+          "path": "work/production/wave_448/exports/reindeer-bauble-antler-dance.webp",
+          "bytes": 657106,
+          "sha256": "49afe1c31b4a6044c7e5fe87e251e0ac425cc4adb0da4451d73ae57daa3a469b"
+        },
+        "thumb": {
+          "path": "work/production/wave_448/exports/reindeer-bauble-antler-dance-thumb.webp",
+          "bytes": 50874,
+          "sha256": "6baa5b769df479df894946c7908d8a47768dae9cd3a67bea38d4a13005ef1559"
+        }
+      },
+      "proofSha256": "819d9a8508e4fe871a8db3b4735ace07d3e0c156cb6fd657fac274b924057d33",
+      "pairMeanRgbDifference": 2.3637
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T06:27:36.309249+00:00",
+  "screenReviewEvidence": "work/production/wave_448/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T07:33:50.781Z"
+}

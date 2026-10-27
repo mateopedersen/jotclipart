@@ -1,0 +1,480 @@
+{
+  "wave": "wave_460",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "snowman-umbrella-flakes",
+      "title": "Snowman Catching a Snowflake",
+      "alt": "Tall snowman in a lime green cap and navy scarf holding a closed burgundy umbrella and reaching toward one snowflake.",
+      "description": "The long carrot nose and raised twig hand point toward the flake while the folded umbrella rests at the opposite side.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_460/source/snowman-umbrella-flakes.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1351,
+      "height": 1164,
+      "pdfWidth": 1000,
+      "pdfHeight": 862,
+      "sourceType": "raster",
+      "sourceSha256": "664036322ca2c60683e44f5e56997faa4dffe2bdc799a37af9d61bc3f84b9b1c",
+      "inputSignature": "f3addab6b02550a3f7c2823fa4cbecc0c5e20c1ca3e46c6997971b20c656c53f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 560037,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 560037,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        357,
+        92,
+        1066,
+        1067
+      ],
+      "image": {
+        "width": 1000,
+        "height": 862,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_460/exports/snowman-umbrella-flakes.pdf",
+          "bytes": 560037,
+          "sha256": "c87ffa9eca0be9568e5f972f11b266a213f71c82b3956c64bda26177c2ac3114"
+        },
+        "webp": {
+          "path": "work/production/wave_460/exports/snowman-umbrella-flakes.webp",
+          "bytes": 539662,
+          "sha256": "a34a9dcb0b9ea223a7315c586ebc9c021141d46c6e7b99ed64a55582334dc400"
+        },
+        "thumb": {
+          "path": "work/production/wave_460/exports/snowman-umbrella-flakes-thumb.webp",
+          "bytes": 32822,
+          "sha256": "90cc503039143898571b0c50ece70d85336d89256ef3787fe0ef39a4bd39e280"
+        }
+      },
+      "proofSha256": "5b3d0de0c1882a5191f48a109bb1af338f587c02f380ea944ed90a96312dd1d0",
+      "pairMeanRgbDifference": 2.2448
+    },
+    {
+      "id": "snowman-drum-parade",
+      "title": "Snowman Playing a Red Drum",
+      "alt": "Round snowman wearing a green tassel cap and gold scarf playing a red drum with two wooden mallets.",
+      "description": "The drum sits on a shoulder strap, with one mallet lifted and the other poised over its cream drumhead.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_460/source/snowman-drum-parade.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "7b32aebbfaefd974bd9d6d1b60713aa422d365cd1983a2b113901fef5b778004",
+      "inputSignature": "8448a5e0af9e1d535ab4cb685b38afc86083dd779c0bf2b44746e05553ef5a9c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 557357,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 557357,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        374,
+        68,
+        1134,
+        956
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_460/exports/snowman-drum-parade.pdf",
+          "bytes": 557357,
+          "sha256": "9c905cc9cdcfa18386057e369e91c8fcff4d570a78337ce37ade552d2fe7f2f5"
+        },
+        "webp": {
+          "path": "work/production/wave_460/exports/snowman-drum-parade.webp",
+          "bytes": 1092422,
+          "sha256": "5df3e307d51ce32903bc489d9a34ae075182953b5d9da8854daf9f9800e3b15e"
+        },
+        "thumb": {
+          "path": "work/production/wave_460/exports/snowman-drum-parade-thumb.webp",
+          "bytes": 28490,
+          "sha256": "4e05d622426bd4dc2ad30e1268b118056193ee5e865d961eec7d50f137cbd2ca"
+        }
+      },
+      "proofSha256": "3da8f842e387e25d1d1b8984b2bef04d4bf6a7728f1a653d7eae6b28dce41cb4",
+      "pairMeanRgbDifference": 2.86399
+    },
+    {
+      "id": "snowman-violin-melody",
+      "title": "Snowman Playing a Violin",
+      "alt": "Slender snowman in a burgundy beret and blue scarf playing a small brown violin with its eyes closed.",
+      "description": "A diagonal bow crosses the strings while one branch hand supports the instrument beneath the snowman's chin.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_460/source/snowman-violin-melody.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1287,
+      "height": 1222,
+      "pdfWidth": 1000,
+      "pdfHeight": 949,
+      "sourceType": "raster",
+      "sourceSha256": "246292244ebf72c31e40bc417835809a3fd747adf1c08303e194f76a830d8a05",
+      "inputSignature": "9b3f8c8434ea61db2121f44635b6e0105e4f26f08bbd050f95897b4a72661602",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 766194,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 766194,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        300,
+        60,
+        1168,
+        1167
+      ],
+      "image": {
+        "width": 1000,
+        "height": 949,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_460/exports/snowman-violin-melody.pdf",
+          "bytes": 766194,
+          "sha256": "1fc6a536b6ae54cfdf475d53298d8cc5a12b6e1f7b559a61fc92bd212568cfa1"
+        },
+        "webp": {
+          "path": "work/production/wave_460/exports/snowman-violin-melody.webp",
+          "bytes": 640588,
+          "sha256": "817ac8b14e4d1a7337fdb04769e15c8ef09c48cd89e1055c4d2626447e670466"
+        },
+        "thumb": {
+          "path": "work/production/wave_460/exports/snowman-violin-melody-thumb.webp",
+          "bytes": 39764,
+          "sha256": "2960d4af49a6db7e8b320a7e7d19693c448f3319b53de23683b60ae6903276c3"
+        }
+      },
+      "proofSha256": "a5e3d9a703dde8fa42707d8cbcd2e8aefe9d32a1684e9300076ccbe126b446ed",
+      "pairMeanRgbDifference": 2.61754
+    },
+    {
+      "id": "snowman-snowboard-balance",
+      "title": "Snowman Balancing on a Snowboard",
+      "alt": "Small snowman in a teal helmet and red scarf balancing on an orange snowboard with both twig arms spread.",
+      "description": "Two rounded snow feet rest on the curved board while the open smile and trailing scarf suggest motion.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_460/source/snowman-snowboard-balance.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "718977cd28df8306889c8e4666c163547d0483508d8fd8c9d587aa6f6c36a06a",
+      "inputSignature": "f759fea98b1cffb366274d82ee93e57efb0a04a1ea11ad40900626f26ad4b9ab",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 413426,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 413426,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        337,
+        99,
+        1257,
+        942
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_460/exports/snowman-snowboard-balance.pdf",
+          "bytes": 413426,
+          "sha256": "4349fd37163cf35c92b2159158fcbd3da13148c34e77ff395ec6ec3a51930bdc"
+        },
+        "webp": {
+          "path": "work/production/wave_460/exports/snowman-snowboard-balance.webp",
+          "bytes": 911302,
+          "sha256": "c77ee8e78138152a317e52a53970955d2f4643f93c733705584fef7902eb2ea6"
+        },
+        "thumb": {
+          "path": "work/production/wave_460/exports/snowman-snowboard-balance-thumb.webp",
+          "bytes": 25308,
+          "sha256": "07afb4b8a857ed794dd0d77d213b11d9287945b1c170fa1ce1bea35c962e9640"
+        }
+      },
+      "proofSha256": "6779a978230a9c1fefb37a15e38144c084c2955b660c06698a32cfcde7cbad33",
+      "pairMeanRgbDifference": 2.44878
+    },
+    {
+      "id": "snowman-fishing-ice-hole",
+      "title": "Snowman Ice Fishing",
+      "alt": "Snowman in a yellow patched cap and green scarf seated on a wooden stool, fishing through a small blue ice hole.",
+      "description": "Green mittens hold a short rod whose line drops into the ring of ice beside the stool.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_460/source/snowman-fishing-ice-hole.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "e966e7bc919d0f326f86b4c268c603a14e3547e9ba06f384805370076ecd4dcd",
+      "inputSignature": "fe1e16402a64b315e52db605c6f66691d036a1f394e5f24dd2ea6b69f6dbb550",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 428339,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 428339,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        391,
+        59,
+        1220,
+        927
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_460/exports/snowman-fishing-ice-hole.pdf",
+          "bytes": 428339,
+          "sha256": "48fb36ab0e7ed35483d94575a7bd6a14379e8c744be1caeef85b838b99cbcc36"
+        },
+        "webp": {
+          "path": "work/production/wave_460/exports/snowman-fishing-ice-hole.webp",
+          "bytes": 923028,
+          "sha256": "64a109ff758ddb90d391fde1b5b42a831062451404d8a7c4ba4fa3aa1733708c"
+        },
+        "thumb": {
+          "path": "work/production/wave_460/exports/snowman-fishing-ice-hole-thumb.webp",
+          "bytes": 24786,
+          "sha256": "c5d6dac8a546ac531b87fe1163c1564c89f11eb15e7e149d01c6cf52f73f0dfe"
+        }
+      },
+      "proofSha256": "3173d0ad1bce9b55afcb3182f6c46c1ef949459802a59535bd18dfe540c55dc7",
+      "pairMeanRgbDifference": 2.14232
+    },
+    {
+      "id": "snowman-garden-carrot",
+      "title": "Snowman Studying a Spare Carrot",
+      "alt": "Surprised snowman in a navy cap and red vest holding a leafy carrot and looking at it with raised eyebrows.",
+      "description": "The large spare carrot contrasts with the tiny orange nose on the wide-eyed face.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_460/source/snowman-garden-carrot.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "3d0922d54c44f571715ce44be62534cfc652d640d2da62c0342115fcb0c403da",
+      "inputSignature": "73d2f4a81b62ad307bf1de06fc2c039edb80c4d3a4364692d8fcdacd5d0964e5",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 491988,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 491988,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        390,
+        45,
+        1240,
+        948
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_460/exports/snowman-garden-carrot.pdf",
+          "bytes": 491988,
+          "sha256": "4d35d2f472c4bc6354e76c5135790df388eb94ffbb8e5d9531edd736745c4663"
+        },
+        "webp": {
+          "path": "work/production/wave_460/exports/snowman-garden-carrot.webp",
+          "bytes": 958032,
+          "sha256": "9a06834f66edae4e7d15ad0d6b86332172a707b2aee375852b6fb3414d76dc29"
+        },
+        "thumb": {
+          "path": "work/production/wave_460/exports/snowman-garden-carrot-thumb.webp",
+          "bytes": 28540,
+          "sha256": "bdebe5069b985471a099e0e888c49a3f6e5261c6b759b57345440a80e57ee77d"
+        }
+      },
+      "proofSha256": "71b208779d128ec754ceaa45cb91e8ca1b9f48173398cebe08a2f00867989720",
+      "pairMeanRgbDifference": 3.02222
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T09:22:11.398033+00:00",
+  "screenReviewEvidence": "work/production/wave_460/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T09:22:13.271Z"
+}

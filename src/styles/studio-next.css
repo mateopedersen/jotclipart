@@ -520,8 +520,8 @@
     padding: 10px;
     --wb-work-height: clamp(320px, 57dvh, 600px);
   }
-  .uc-editor.uc-next[data-work-mode][data-art-id] .uc-workspace,
-  .uc-editor.uc-next[data-work-mode][data-art-id][data-properties-collapsed='true'] .uc-workspace {
+  .uc-editor.uc-next[data-work-mode] .uc-workspace,
+  .uc-editor.uc-next[data-work-mode][data-properties-collapsed='true'] .uc-workspace {
     grid-template-columns: minmax(0, 1fr);
     grid-template-areas: 'tools' 'canvas' 'panel';
   }
@@ -541,7 +541,7 @@
   .uc-editor.uc-next[data-work-mode] .uc-tools button[aria-pressed='true'] {
     box-shadow: inset 0 -3px var(--brand-accent);
   }
-  .uc-editor.uc-next[data-work-mode][data-art-id] .uc-properties {
+  .uc-editor.uc-next[data-work-mode] .uc-properties {
     position: relative;
     inset: auto;
     grid-column: 1;

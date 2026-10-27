@@ -1,0 +1,78 @@
+{
+  "wave": "wave_482",
+  "topic": "2027",
+  "collectionTarget": 100,
+  "method": "builtin-image-generation",
+  "research": "data/research/2027-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "2027-month-february",
+      "title": "February 2027 Heart Ribbon Lettering",
+      "alt": "Burgundy February lettering sits beneath a pink satin heart ribbon, above ivory 2027 numerals and two red heart seals.",
+      "description": "Looped satin ribbon frames the ornate month name, with wax-like heart seals flanking the pale raised year.",
+      "color": "Red",
+      "style": "Color",
+      "source": "work/production/wave_482/source/2027-month-february.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-month-march",
+      "title": "March 2027 Kite Lettering",
+      "alt": "A green diamond kite flies above green March lettering and blue 2027 numerals, with clover leaves at the sides.",
+      "description": "The kite\u2019s golden string curves across the bold lettering, balancing its trailing green ribbons and the two small clovers.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_482/source/2027-month-march.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-month-april",
+      "title": "April 2027 Umbrella Lettering",
+      "alt": "A lilac umbrella shelters purple April lettering above aqua 2027 numerals surrounded by blue raindrops.",
+      "description": "The curved umbrella handle extends below the glossy year, bringing the whole rainy-day heading into one compact shape.",
+      "color": "Purple",
+      "style": "Color",
+      "source": "work/production/wave_482/source/2027-month-april.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-month-may",
+      "title": "May 2027 Tulip Planter",
+      "alt": "Coral May lettering stands before pink tulips in a cream planter marked 2027, with a watering can pouring from above.",
+      "description": "Green leaves fill the flowerpot around the raised month name, while floral decorations frame the year on its front.",
+      "color": "Pink",
+      "style": "Color",
+      "source": "work/production/wave_482/source/2027-month-may.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-month-june",
+      "title": "June 2027 Sunshine and Seashells",
+      "alt": "Turquoise June lettering rises above sandy 2027 numerals, with a golden sun and two seashells.",
+      "description": "Small aqua splashes and a sunburst give the smooth month lettering a bright contrast against the grainy sand-textured year.",
+      "color": "Blue",
+      "style": "Color",
+      "source": "work/production/wave_482/source/2027-month-june.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-month-july",
+      "title": "July 2027 Pennant Lettering",
+      "alt": "Navy July lettering and red 2027 numerals sit beneath red, white and navy pennants, with gold starbursts at the sides.",
+      "description": "Fine gold borders sharpen the large serif letters and numerals, while striped ribbon ties finish the garland.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_482/source/2027-month-july.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

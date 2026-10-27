@@ -1,0 +1,487 @@
+{
+  "wave": "wave_444",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "elf-costume-accessories",
+      "title": "Green Christmas Elf Costume",
+      "alt": "Separate green elf cap and belted tunic arranged with striped stockings and red curled shoes, without a person.",
+      "description": "A gold star hangs from the pointed cap above the empty costume. Cream cuffs, a gold buckle and bell-tipped curled shoes make the individual clothing pieces easy to recognize.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_444/source/elf-costume-accessories.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "e1baba79ff198e9e386dd0fa852f3996b26fb3b7d717853a8b40b3c790d20ee7",
+      "inputSignature": "ddf3e1dd3a33ed4f383d5c1d9a87ed7bcc1f23564445b2ab135bd370b73a5943",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 732787,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 732787,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        311,
+        11,
+        1040,
+        1171
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_444/exports/elf-costume-accessories.pdf",
+          "bytes": 732787,
+          "sha256": "9679dc2e771e83b05e58daac643f47033f18d7761e4998d645ef35e345cfc4fa"
+        },
+        "webp": {
+          "path": "work/production/wave_444/exports/elf-costume-accessories.webp",
+          "bytes": 579194,
+          "sha256": "191f191dad05d19fd412cc36b19dc2bea189a578f6bf498363624cd72c19f5f9"
+        },
+        "thumb": {
+          "path": "work/production/wave_444/exports/elf-costume-accessories-thumb.webp",
+          "bytes": 41310,
+          "sha256": "df425b5ee2abd89ff1c975615121a2f585a4b4231344208fad38f50128176b31"
+        }
+      },
+      "proofSha256": "310871b6616746317496435816c776ccf7a2120c35370d4f844f70bafad28558",
+      "pairMeanRgbDifference": 3.88255
+    },
+    {
+      "id": "elf-elf-mailbox",
+      "title": "Green Elf Mailbox",
+      "alt": "Green Christmas mailbox with red trim, a gold bell, the words ELF MAIL and two envelopes on a small shelf.",
+      "description": "A red flag stands above the rounded mailbox, topped by a bow and holly. Gold lettering and a snowflake decorate its sides above a complete red-and-green pedestal.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_444/source/elf-elf-mailbox.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "8d1734b952ef3fbaa46887c39a017f2cf14422a40367860c17d0e92f1c5042fa",
+      "inputSignature": "838c0b45dd703371708899c2fbdbfdc6b54eecc7c45879017f0fa476166de706",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 812033,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 812033,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        264,
+        19,
+        1055,
+        1172
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_444/exports/elf-elf-mailbox.pdf",
+          "bytes": 812033,
+          "sha256": "27bccca894755f652b66a2751f193bf7804252326aae45bc7a6bc8bb882c5b0c"
+        },
+        "webp": {
+          "path": "work/production/wave_444/exports/elf-elf-mailbox.webp",
+          "bytes": 714852,
+          "sha256": "53be028a935de67f699e387379ac16f16505cab6c05ea9daa2c96baf854c9f25"
+        },
+        "thumb": {
+          "path": "work/production/wave_444/exports/elf-elf-mailbox-thumb.webp",
+          "bytes": 44012,
+          "sha256": "450a2161a2de158db1ba22d4e50aa6c74018c738dd490f9203198314c242c8e9"
+        }
+      },
+      "proofSha256": "6eb27933b5b187a80a947cc0094bc89358e58f459d281c6192dae18a941a1bc9",
+      "pairMeanRgbDifference": 5.18086
+    },
+    {
+      "id": "elf-workshop-door-sign",
+      "title": "Elf Beside a Workshop Door",
+      "alt": "Blond cartoon elf in a green dress gesturing toward a small green door with an ELF WORKSHOP sign.",
+      "description": "The elf presents a rounded toy-sized door with red hinges, a gold handle and a tiny red hat decoration. Gold-edged dress panels and red curled shoes frame the cheerful guide beside it.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_444/source/elf-workshop-door-sign.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "e83d97704ee6bec187938827c8e804027d29529c4d14985e55c0813042bd75dd",
+      "inputSignature": "1bc021dcbad4ad1b81cc05fd46044cedcc7d26e99d8d6b0aa0fee2e2ecc660bf",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 734591,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 734591,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        204,
+        36,
+        1332,
+        963
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_444/exports/elf-workshop-door-sign.pdf",
+          "bytes": 734591,
+          "sha256": "2d616c8beab6e4189fefa6fe1a1a4ab9e0a016d6ffa8d284f6dd97d3fdbda364"
+        },
+        "webp": {
+          "path": "work/production/wave_444/exports/elf-workshop-door-sign.webp",
+          "bytes": 1215910,
+          "sha256": "7d2e69df69610bda964452924505f39bc5cd094817acc64e5d517e5bd9d8ad05"
+        },
+        "thumb": {
+          "path": "work/production/wave_444/exports/elf-workshop-door-sign-thumb.webp",
+          "bytes": 41876,
+          "sha256": "ec5bf734c69671afe6808e0a785e68399c267063bb695e323a45c4d9e237c03d"
+        }
+      },
+      "proofSha256": "fff01a6b6f22a7e7d81513ea3fb1437be9d7ac0a28c574fc426336ea9e393343",
+      "pairMeanRgbDifference": 5.23834
+    },
+    {
+      "id": "elf-happy-holidays-lettering",
+      "title": "Happy Holidays Lettering with an Elf",
+      "alt": "Red, green and gold HAPPY HOLIDAYS lettering with snowy tops, holly and a small green-clothed elf seated on the final letter.",
+      "description": "Patterns, snow caps and a string of tiny lights decorate the two-line greeting. A curly-haired elf rests both hands under the chin above the last red letter.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_444/source/elf-happy-holidays-lettering.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "9f1c4dd777d185c370645cf00a64a664073d9f42577687555e4285f6aa608899",
+      "inputSignature": "7bfebe8d3185293482f079da5339526b61f1ca66a3ec1af301962d0f2ae8c83a",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 948256,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 948256,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        47,
+        80,
+        1489,
+        932
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_444/exports/elf-happy-holidays-lettering.pdf",
+          "bytes": 948256,
+          "sha256": "eecab2c4a28cdb18dcbb3d1b6e4029606573b1f6bf6f189462848b0f94dad6df"
+        },
+        "webp": {
+          "path": "work/production/wave_444/exports/elf-happy-holidays-lettering.webp",
+          "bytes": 1371750,
+          "sha256": "21bbf7b88b1d56b065ed99029272201fac5e793161188ab2852c2c69658209b3"
+        },
+        "thumb": {
+          "path": "work/production/wave_444/exports/elf-happy-holidays-lettering-thumb.webp",
+          "bytes": 59310,
+          "sha256": "087391111aead8cb2cccff24e4152611edd6aea870f23f3dc7e983f76dce67d2"
+        }
+      },
+      "proofSha256": "c339a3e68e4e37c145ee143b5a15981c887292742ed59942e7f2c7d70e087a1d",
+      "pairMeanRgbDifference": 11.22944
+    },
+    {
+      "id": "elf-elf-cookie-plate",
+      "title": "Plate of Two Christmas Elf Cookies",
+      "alt": "Cream plate holding two different elf-shaped iced cookies in green outfits, with small star cookies around them.",
+      "description": "One cookie has white hair and a star-tipped hat; the other has dark braids and a red-banded cap. Green icing, curled shoes and holly decorations bring the festive plate together.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_444/source/elf-elf-cookie-plate.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "ac7fc34aafd3b63093f349655b7a619213d73ad7081731eaa36efc18cecb6b33",
+      "inputSignature": "4c4155e41c254ee2c1b8b6cb437d99a103bff0479fb598d315e0bd6afcc5fe83",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 861319,
+        "weightedCmykRmse": 0.735727
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1182794,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 861319,
+          "weightedCmykRmse": 0.735727
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        88,
+        68,
+        1287,
+        1076
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_444/exports/elf-elf-cookie-plate.pdf",
+          "bytes": 861319,
+          "sha256": "b357d90d7b413094dae40d1c951a517178cc5054518b80511895ae7e85d88027"
+        },
+        "webp": {
+          "path": "work/production/wave_444/exports/elf-elf-cookie-plate.webp",
+          "bytes": 1334432,
+          "sha256": "d554037c2b7a74afd54577a87aa6bdbbaf6835e338a1e21ce3e98fdab0d154ac"
+        },
+        "thumb": {
+          "path": "work/production/wave_444/exports/elf-elf-cookie-plate-thumb.webp",
+          "bytes": 62362,
+          "sha256": "3efa08304d9e3104d699201f589549ff367ebc854dea529e91ce987b49626bfb"
+        }
+      },
+      "proofSha256": "9a20e73b0e4592c2acde37aeee00f1ff675d1bcd895cd0d7e4d724f23f63233c",
+      "pairMeanRgbDifference": 7.57765
+    },
+    {
+      "id": "elf-elf-fabric-ornament",
+      "title": "Green Christmas Elf Bell Ornament",
+      "alt": "Smiling elf-shaped Christmas ornament with a gold hanging loop, green dress, silver hair buns and a handbell.",
+      "description": "A red pom-pom and cream-edged green skirt frame the ornament's silver curls. The small gold bell and bright red curled shoes balance its outstretched arms.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_444/source/elf-elf-fabric-ornament.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1182,
+      "height": 1330,
+      "pdfWidth": 889,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "f5feb2dc980782c0f63bdb82c895e3073d1f7f4ed3d72a5918dfc9df0e4b971c",
+      "inputSignature": "2282cc28c4aef83387454a2a4c91caba1e37e315c3b83139823096a044b68133",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 899480,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 899480,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        152,
+        10,
+        1048,
+        1313
+      ],
+      "image": {
+        "width": 889,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_444/exports/elf-elf-fabric-ornament.pdf",
+          "bytes": 899480,
+          "sha256": "ac5967ef2cbe0022be99290f9359759b5a3d3806a392561e8f238d7dfcfa7906"
+        },
+        "webp": {
+          "path": "work/production/wave_444/exports/elf-elf-fabric-ornament.webp",
+          "bytes": 821704,
+          "sha256": "7842e9c30eccbed43c281baeeca7299e5852515f6ded204d50c195ec960cdb44"
+        },
+        "thumb": {
+          "path": "work/production/wave_444/exports/elf-elf-fabric-ornament-thumb.webp",
+          "bytes": 54042,
+          "sha256": "5c193fb33567230b1cca350778725b40d59cacfbb2843e6d76a771ee6e5a2d2a"
+        }
+      },
+      "proofSha256": "69df5ce10fcab8379fe606ad0b4d88b3e0d5dfc255548712df222353fb0ffdbe",
+      "pairMeanRgbDifference": 5.82165
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T05:20:01.664209+00:00",
+  "screenReviewEvidence": "work/production/wave_444/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T05:29:04.906Z"
+}

@@ -1,0 +1,77 @@
+{
+  "wave": "wave_496",
+  "topic": "feast",
+  "method": "builtin-image-generation",
+  "research": "data/research/feast-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "feast-turkey-shaped-bread-feast",
+      "title": "Turkey-Shaped Bread Centerpiece",
+      "alt": "A golden turkey-shaped bread loaf with a roll-feather tail stands on a board beside herb butter and cranberries.",
+      "description": "Scored rolls fan behind the bread bird\u2019s small head, red wattle and rounded wings, creating an edible centerpiece with a complete paddle-board outline.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_496/source/feast-turkey-shaped-bread-feast.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-turkey-cranberry-sandwich-feast",
+      "title": "Open-Faced Turkey and Cranberry Sandwiches",
+      "alt": "Two open-faced turkey sandwiches with cranberry topping and lettuce share a wooden board with chips and gravy.",
+      "description": "Thick bread slices support overlapping roast slices and glossy red berries, while the curved paddle handle balances the chip pile.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_496/source/feast-turkey-cranberry-sandwich-feast.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-turkey-feast-garden-wreath",
+      "title": "Roast Turkey with a Ring of Harvest Sides",
+      "alt": "A roast turkey fills the center of a round platter ringed with corn, squash halves, rolls and herbs.",
+      "description": "The overhead arrangement forms a compact circular feast, with the golden bird framed by alternating yellow, orange and green sides.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_496/source/feast-turkey-feast-garden-wreath.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-turkey-dinner-place-setting",
+      "title": "Turkey Dinner on a Blue Scalloped Plate",
+      "alt": "Sliced roast turkey, mashed potatoes and green beans fill a blue scalloped plate beside cranberry sauce and a mustard napkin.",
+      "description": "Silver cutlery rests on the folded napkin, and gravy follows the curved row of turkey slices opposite the green beans.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_496/source/feast-turkey-dinner-place-setting.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-long-buffet-bench",
+      "title": "Turkey Feast on a Wooden Buffet Bench",
+      "alt": "A wooden buffet bench displays roast turkey on a pedestal platter with salad, stuffing and a basket of rolls.",
+      "description": "A cream runner with small leafy motifs crosses the timber top, while two carved supports and their full feet remain visible below.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_496/source/feast-long-buffet-bench.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-overhead-sharing-table",
+      "title": "Overhead Turkey Feast for Four",
+      "alt": "A central turkey platter is surrounded by four served plates, vegetable bowls, rolls and small glasses of orange juice.",
+      "description": "The circular meal arrangement pairs sliced turkey with potatoes, green beans and cranberry sauce, leaving clear gaps between the individual dishes.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_496/source/feast-overhead-sharing-table.png",
+      "printMaxEdgePx": 950,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

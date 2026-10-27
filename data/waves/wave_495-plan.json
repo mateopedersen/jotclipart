@@ -1,0 +1,77 @@
+{
+  "wave": "wave_495",
+  "topic": "feast",
+  "method": "builtin-image-generation",
+  "research": "data/research/feast-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "feast-passing-turkey-platter",
+      "title": "Sharing a Turkey Feast Platter",
+      "alt": "Two pairs of hands pass a roast-turkey platter above separate bowls of mashed potatoes and green beans.",
+      "description": "Red and green sweater sleeves frame the serving action, with cranberry and herb garnish ringing the large roast.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_495/source/feast-passing-turkey-platter.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-grandparents-sharing",
+      "title": "Older Couple Serving a Turkey Feast",
+      "alt": "A smiling older couple serves roast turkey at a small table with stuffing, green beans and a lattice-topped pie.",
+      "description": "The silver-haired woman in a blue apron holds a carving utensil while the bespectacled man in a green cardigan waits with a plate.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_495/source/feast-grandparents-sharing.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-catering-trolley",
+      "title": "Turkey Feast Catering Trolley",
+      "alt": "A metal catering trolley carries roast turkey beneath an open cloche, with green beans, rolls and berry desserts.",
+      "description": "Brass-colored rails surround the two silver shelves, and dark caster wheels anchor the tall handle and compact mobile spread.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_495/source/feast-catering-trolley.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-celebration-dessert-table",
+      "title": "Floral Celebration Dessert Table",
+      "alt": "An ivory two-tier cake, berry cupcakes and strawberries stand on a small white table decorated with flowers and greenery.",
+      "description": "Curved table legs and a draped foliage garland give the compact dessert arrangement a soft oval silhouette.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_495/source/feast-celebration-dessert-table.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-storybook-royal-banquet",
+      "title": "Storybook King at a Turkey Banquet",
+      "alt": "A cheerful fictional cartoon king raises a gold goblet behind a table with roast turkey, savory pie and grapes.",
+      "description": "An auburn curled beard, purple fur-trimmed robe and jeweled crown distinguish the seated character above the compact round banquet table.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_495/source/feast-storybook-royal-banquet.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-woodland-animals-supper",
+      "title": "Woodland Friends Sharing a Feast",
+      "alt": "A squirrel, hedgehog and rabbit share pie, berries and nuts around a small tree-stump table.",
+      "description": "Different face shapes and green, blue and cream clothing distinguish the animals as they hold food beside bowls set around the pie.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_495/source/feast-woodland-animals-supper.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

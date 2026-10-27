@@ -1,0 +1,78 @@
+{
+  "wave": "wave_488",
+  "topic": "2027",
+  "collectionTarget": 100,
+  "method": "builtin-image-generation",
+  "research": "data/research/2027-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "2027-mountain-bear",
+      "title": "Explore 2027 Hiking Bear",
+      "alt": "A smiling brown bear with a coral backpack holds a wooden Explore 2027 sign beside a pine sprig.",
+      "description": "A rolled sleeping mat rests atop the backpack, while the bear\u2019s paws grip the plank above its large coral year numerals.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_488/source/2027-mountain-bear.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-book-dragon",
+      "title": "New Stories 2027 Dragon and Book",
+      "alt": "A turquoise dragon curls around a navy book titled New Stories 2027, spreading gold-lined wings.",
+      "description": "The dragon\u2019s claws rest along the top of the ornate cover, and its curled tail circles the lower corner beside a ribbon bookmark.",
+      "color": "Blue",
+      "style": "Color",
+      "source": "work/production/wave_488/source/2027-book-dragon.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-porcelain-stacked-year",
+      "title": "Ivory and Rose Gold Stacked 2027",
+      "alt": "Ivory serif numerals arranged as 20 above 27, with thick rose-gold sidewalls and recessed counters.",
+      "description": "The projecting serifs and smooth pale faces give the stacked year a sculptural, architectural form.",
+      "color": "Ivory",
+      "style": "Color",
+      "source": "work/production/wave_488/source/2027-porcelain-stacked-year.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-business-network",
+      "title": "Connect in 2027 Teamwork Ring",
+      "alt": "Five gold, teal and navy person-shaped figures link around gold 2027 numerals above a Connect in 2027 ribbon.",
+      "description": "The abstract figures hold a circular gold line, giving the networking emblem an open center and a clear lower message.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_488/source/2027-business-network.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-business-desk",
+      "title": "Plan Create Grow 2027 Desk",
+      "alt": "A wooden desk holds an open laptop displaying 2027, a potted plant and a notebook beneath Plan Create Grow lettering.",
+      "description": "A cream upholstered chair faces the compact workspace, balancing the leafy plant on the left and gold pencil on the right.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_488/source/2027-business-desk.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-ribbon-folded-year",
+      "title": "Folded Gold Ribbon 2027",
+      "alt": "2027 numerals shaped from broad folded gold ribbons with burgundy inner surfaces.",
+      "description": "Curled metal-like bands form airy digits, with the zero kept open and the seven ending in a clean diagonal.",
+      "color": "Gold",
+      "style": "Color",
+      "source": "work/production/wave_488/source/2027-ribbon-folded-year.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

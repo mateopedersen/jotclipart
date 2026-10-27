@@ -1,0 +1,77 @@
+{
+  "wave": "wave_444",
+  "topic": "elf",
+  "method": "builtin-image-generation",
+  "research": "data/research/elf-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "elf-costume-accessories",
+      "title": "Green Christmas Elf Costume",
+      "alt": "Separate green elf cap and belted tunic arranged with striped stockings and red curled shoes, without a person.",
+      "description": "A gold star hangs from the pointed cap above the empty costume. Cream cuffs, a gold buckle and bell-tipped curled shoes make the individual clothing pieces easy to recognize.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_444/source/elf-costume-accessories.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-elf-mailbox",
+      "title": "Green Elf Mailbox",
+      "alt": "Green Christmas mailbox with red trim, a gold bell, the words ELF MAIL and two envelopes on a small shelf.",
+      "description": "A red flag stands above the rounded mailbox, topped by a bow and holly. Gold lettering and a snowflake decorate its sides above a complete red-and-green pedestal.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_444/source/elf-elf-mailbox.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-workshop-door-sign",
+      "title": "Elf Beside a Workshop Door",
+      "alt": "Blond cartoon elf in a green dress gesturing toward a small green door with an ELF WORKSHOP sign.",
+      "description": "The elf presents a rounded toy-sized door with red hinges, a gold handle and a tiny red hat decoration. Gold-edged dress panels and red curled shoes frame the cheerful guide beside it.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_444/source/elf-workshop-door-sign.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-happy-holidays-lettering",
+      "title": "Happy Holidays Lettering with an Elf",
+      "alt": "Red, green and gold HAPPY HOLIDAYS lettering with snowy tops, holly and a small green-clothed elf seated on the final letter.",
+      "description": "Patterns, snow caps and a string of tiny lights decorate the two-line greeting. A curly-haired elf rests both hands under the chin above the last red letter.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_444/source/elf-happy-holidays-lettering.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-elf-cookie-plate",
+      "title": "Plate of Two Christmas Elf Cookies",
+      "alt": "Cream plate holding two different elf-shaped iced cookies in green outfits, with small star cookies around them.",
+      "description": "One cookie has white hair and a star-tipped hat; the other has dark braids and a red-banded cap. Green icing, curled shoes and holly decorations bring the festive plate together.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_444/source/elf-elf-cookie-plate.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-elf-fabric-ornament",
+      "title": "Green Christmas Elf Bell Ornament",
+      "alt": "Smiling elf-shaped Christmas ornament with a gold hanging loop, green dress, silver hair buns and a handbell.",
+      "description": "A red pom-pom and cream-edged green skirt frame the ornament's silver curls. The small gold bell and bright red curled shoes balance its outstretched arms.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_444/source/elf-elf-fabric-ornament.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

@@ -1,0 +1,494 @@
+{
+  "wave": "wave_441",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "elf-pulling-a-toy-train",
+      "title": "Elf Pulling a Christmas Toy Train",
+      "alt": "Braided cartoon elf in a green tunic pulling a red-and-green toy locomotive with two gift-filled wagons.",
+      "description": "A cord connects the elf's hand to the small locomotive. Presents, candy canes and a teddy bear ride in the two wagons behind the skipping figure.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_441/source/elf-pulling-a-toy-train.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "f5e4b0fd75abcf385520987b8ad777a92f02eaf5b960885f39a775d1fc6c1c40",
+      "inputSignature": "fce3796cf7ebe53e4ca2e454a13e56c93f00247ff986523da3255f5e61514007",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 625176,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 625176,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        192,
+        90,
+        1417,
+        936
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_441/exports/elf-pulling-a-toy-train.pdf",
+          "bytes": 625176,
+          "sha256": "5fd5f41abf4220bfe5b91dcad1ad6aa6fa21e3de88da28087032a808f1a1bd05"
+        },
+        "webp": {
+          "path": "work/production/wave_441/exports/elf-pulling-a-toy-train.webp",
+          "bytes": 1153742,
+          "sha256": "2dbe163fd29dd2ed67b9629702c0556814a9a9fa093bbce2407c9e1c927f1e76"
+        },
+        "thumb": {
+          "path": "work/production/wave_441/exports/elf-pulling-a-toy-train-thumb.webp",
+          "bytes": 38216,
+          "sha256": "094ad0c81308c70acd964fe3ea28958d95009c8792e09e467c07d49b31764712"
+        }
+      },
+      "proofSha256": "1cd8cb954eccec6d04395a632bcd1513623d4890d01a29f94d88637f11672aa7",
+      "pairMeanRgbDifference": 3.67804
+    },
+    {
+      "id": "elf-making-a-toy-boat",
+      "title": "Elf Holding a Toy Sailboat",
+      "alt": "Blue-eyed cartoon elf in a green jacket holding a wooden sailboat and touching the top of its cream sail.",
+      "description": "One hand supports the boat's red-brown hull while the other reaches toward the mast. A floppy green cap, red shorts and long striped stockings distinguish the standing elf.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_441/source/elf-making-a-toy-boat.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1222,
+      "height": 1287,
+      "pdfWidth": 949,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "550b8fbdf0c4baac05a316172ec78bf7804cfc16cc63dec5e4cf622f0b8c5a7a",
+      "inputSignature": "beb9606b54488924ebaf696868cce8f7b967ae291af8e5ac30755ded93216b4c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 930365,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 930365,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        213,
+        72,
+        1032,
+        1209
+      ],
+      "image": {
+        "width": 949,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_441/exports/elf-making-a-toy-boat.pdf",
+          "bytes": 930365,
+          "sha256": "45f479756de5c5258a8de52b57e00d3321540c37afec79593930026e2b2678af"
+        },
+        "webp": {
+          "path": "work/production/wave_441/exports/elf-making-a-toy-boat.webp",
+          "bytes": 755272,
+          "sha256": "2ba7738aa4a08c5d12c202540a2c1d5021a31b166ace0e5e994c3cf2768086da"
+        },
+        "thumb": {
+          "path": "work/production/wave_441/exports/elf-making-a-toy-boat-thumb.webp",
+          "bytes": 43250,
+          "sha256": "870a67ad83fecdd0f677323a1fd12c9815f77683e8b58ddd4573b5d476eb0d5c"
+        }
+      },
+      "proofSha256": "eb2e1e5e643cc55830439c48ad2568d1c6a854714bf48aa99c38287dfa1e2920",
+      "pairMeanRgbDifference": 2.89133
+    },
+    {
+      "id": "elf-shelving-storybooks",
+      "title": "Elf Putting Away a Storybook",
+      "alt": "Blond cartoon elf standing on a small wooden step and sliding a green book onto a two-shelf bookcase.",
+      "description": "The elf looks back while placing a plain green volume on the little bookcase. Heart-shaped cutouts, rows of festive book spines and a low two-step stool make the reading corner distinct.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_441/source/elf-shelving-storybooks.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1230,
+      "height": 1278,
+      "pdfWidth": 962,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "c69745220be2e18403eb2582b80676c44863342c2b1e9e4557de9ec2d922c843",
+      "inputSignature": "c932ecf0ddddf4112037a07e3ec216a9f7e7f3b7e652f7feaa54ef9b3868c6e5",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 968136,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 968136,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        152,
+        52,
+        1135,
+        1197
+      ],
+      "image": {
+        "width": 962,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_441/exports/elf-shelving-storybooks.pdf",
+          "bytes": 968136,
+          "sha256": "69df90a8565820e3ca580d5f3dc1809ec5679570e50e1be30613b2ec18a313f5"
+        },
+        "webp": {
+          "path": "work/production/wave_441/exports/elf-shelving-storybooks.webp",
+          "bytes": 888218,
+          "sha256": "1c0df032e3484501b6026cc993f20db67b8d2d64d312eed1b002de0e3654844e"
+        },
+        "thumb": {
+          "path": "work/production/wave_441/exports/elf-shelving-storybooks-thumb.webp",
+          "bytes": 50946,
+          "sha256": "c08fb82cc32d053268028520f0d2479ad0f72e9b74ae563cfdeef7d121d1a075"
+        }
+      },
+      "proofSha256": "c80128acc5aa42762ad50075f363889406099ee1b4a6056d06dfad994b8812ae",
+      "pairMeanRgbDifference": 3.78672
+    },
+    {
+      "id": "elf-tying-a-large-bow",
+      "title": "Two Elves Tying a Giant Gift Bow",
+      "alt": "Two different green-clothed cartoon elves holding opposite loops of a large red bow above a cream Christmas gift.",
+      "description": "A white-haired elf in a green coat works beside a dark-braided elf in a green dress. Their different caps, stockings and faces frame the oversized red bow between them.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_441/source/elf-tying-a-large-bow.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "786b85e7987e31898fa81d2979db255fcd9bce7f0ec376a49b1349de23bcc54a",
+      "inputSignature": "af85c18853605c51d9b9f130c17716a834142cf413d70c50bf590eb2373f4356",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 972679,
+        "weightedCmykRmse": 0.759413
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1276681,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 972679,
+          "weightedCmykRmse": 0.759413
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        49,
+        30,
+        1295,
+        1168
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_441/exports/elf-tying-a-large-bow.pdf",
+          "bytes": 972679,
+          "sha256": "e08a7a73b85f8212207c4953fdda4c4cb8ae3829a86b6a967a9eca1e7e48047a"
+        },
+        "webp": {
+          "path": "work/production/wave_441/exports/elf-tying-a-large-bow.webp",
+          "bytes": 1271100,
+          "sha256": "0a648c66aa5b7034e81c7f4bd244f2be55836400eec7c275fe4a6326ef0d961d"
+        },
+        "thumb": {
+          "path": "work/production/wave_441/exports/elf-tying-a-large-bow-thumb.webp",
+          "bytes": 69588,
+          "sha256": "3c71e4ae56992da9d6f548b45f75f3aa15cd931bd4179e43f6d8ea9d7db49273"
+        }
+      },
+      "proofSha256": "bc3dc40ff79be3de009cd0f1c38c708c60a97de88841c2c5a499d0dcaf2ef11d",
+      "pairMeanRgbDifference": 6.6539
+    },
+    {
+      "id": "elf-rolling-a-gift-cart",
+      "title": "Elf in a Wheelchair with Christmas Gifts",
+      "alt": "Auburn-braided cartoon elf seated in a manual wheelchair with a lap parcel and a small gift wagon alongside.",
+      "description": "The green-clothed elf holds a cream gift with a red bow above the wheelchair footplate. A red wagon beside the chair carries a teddy bear, candy canes and more wrapped parcels.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_441/source/elf-rolling-a-gift-cart.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1287,
+      "height": 1222,
+      "pdfWidth": 1000,
+      "pdfHeight": 949,
+      "sourceType": "raster",
+      "sourceSha256": "1f922509ceb93febe637a29a33720780f8b8a86e69ab0ca4a782e70a357fa36b",
+      "inputSignature": "5535234e455eb1dfacaef43a9460c237a99d6626df223c8c78a60b1e9079574e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 984933,
+        "weightedCmykRmse": 0.829545
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1265558,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 984933,
+          "weightedCmykRmse": 0.829545
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        212,
+        23,
+        1205,
+        1179
+      ],
+      "image": {
+        "width": 1000,
+        "height": 949,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_441/exports/elf-rolling-a-gift-cart.pdf",
+          "bytes": 984933,
+          "sha256": "9fef8fbd29fe639657c2316aed1659592797bbbd83f994b06b5ae5a3eeaf6de6"
+        },
+        "webp": {
+          "path": "work/production/wave_441/exports/elf-rolling-a-gift-cart.webp",
+          "bytes": 1091976,
+          "sha256": "cdaac30f19589526fb3117e15ead9f6a01418f9d1d661d4c7934adcd183a8115"
+        },
+        "thumb": {
+          "path": "work/production/wave_441/exports/elf-rolling-a-gift-cart-thumb.webp",
+          "bytes": 69960,
+          "sha256": "ebf63ae20a84266835410f927b2deaf233bf3c74fff7db6b3753d3239048cce0"
+        }
+      },
+      "proofSha256": "b40e9b91952411e665a577b661f61aaba0633fd62f93f260f09eddc4ce1a1d1e",
+      "pairMeanRgbDifference": 5.13417
+    },
+    {
+      "id": "elf-resting-in-a-leaf-hammock",
+      "title": "Elf Sleeping in a Leaf Hammock",
+      "alt": "Small curly-haired cartoon elf asleep in a green leaf hammock suspended between two carved wooden posts.",
+      "description": "Folded hands, closed eyes and bent striped legs give the elf a peaceful pose. Holly-tied ropes support the leaf-shaped hammock between two complete scroll-topped stands.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_441/source/elf-resting-in-a-leaf-hammock.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "20ab1574b65134d3db28365fb1552a6f7369c3904efc154a861dd3cd0219806a",
+      "inputSignature": "8575c410d443f12675586a7c7888528b20d21d74b59825f2a8111cfc2f9dc070",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 859322,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 859322,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        77,
+        85,
+        1468,
+        897
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_441/exports/elf-resting-in-a-leaf-hammock.pdf",
+          "bytes": 859322,
+          "sha256": "69339c8f9460d8093718a5b99adae209b04c36b5f736b658b4252d039e3ef0f2"
+        },
+        "webp": {
+          "path": "work/production/wave_441/exports/elf-resting-in-a-leaf-hammock.webp",
+          "bytes": 1311816,
+          "sha256": "731c1b7c6dd5aa6939cad32bb49f7e548a12dc1d57bdd048ce9bc4f93cd7ae0f"
+        },
+        "thumb": {
+          "path": "work/production/wave_441/exports/elf-resting-in-a-leaf-hammock-thumb.webp",
+          "bytes": 43394,
+          "sha256": "866ac981d634a26e9400f8befc2628f5d641f122c9064ec415e708ffa01a6967"
+        }
+      },
+      "proofSha256": "33a3511943c15f73bff1669fb3033e76d99f3e51bdec802a51f191713707fcf4",
+      "pairMeanRgbDifference": 4.97953
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T05:05:36.599084+00:00",
+  "screenReviewEvidence": "work/production/wave_441/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T05:29:03.722Z"
+}

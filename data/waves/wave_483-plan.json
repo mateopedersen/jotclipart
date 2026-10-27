@@ -1,0 +1,78 @@
+{
+  "wave": "wave_483",
+  "topic": "2027",
+  "collectionTarget": 100,
+  "method": "builtin-image-generation",
+  "research": "data/research/2027-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "2027-birthday-confetti",
+      "title": "Happy 2027 Banner with Two Party Characters",
+      "alt": "Two round confetti-covered party characters hold a gold-framed Happy 2027 banner with colorful balloon letters.",
+      "description": "A party hat tops the banner while two smiling characters hang from its poles, wearing bright sneakers and scattered confetti dots.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_483/source/2027-birthday-confetti.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-calendar-january",
+      "title": "January 2027 Calendar Page",
+      "alt": "A red-topped tear-off calendar displays January in blue and 2027 in raised red numerals.",
+      "description": "Metal rings hold a stack of cream pages beneath a stitched red binding; the month and year fill the front without a date grid.",
+      "color": "Red",
+      "style": "Color",
+      "source": "work/production/wave_483/source/2027-calendar-january.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-chrome-italic-sweep",
+      "title": "Slanted Chrome and Blue 2027",
+      "alt": "Forward-slanted 2027 numerals with silver chrome faces and deep blue extruded sides.",
+      "description": "Sharp diagonal strokes and reflective chamfered edges give the wide number row a streamlined shape.",
+      "color": "Silver",
+      "style": "Color",
+      "source": "work/production/wave_483/source/2027-chrome-italic-sweep.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-resolution-checklist",
+      "title": "My 2027 Plans Clipboard",
+      "alt": "A coral clipboard with a gold clip displays My 2027 Plans above four empty checkboxes and a teal pencil.",
+      "description": "Four blank writing lines leave room for goals, while the large diagonal pencil overlaps the lower corner of the rounded clipboard.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_483/source/2027-resolution-checklist.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-vision-board",
+      "title": "Dream Big in 2027 Rocket Board",
+      "alt": "A turquoise note reading Dream Big in 2027 is pinned to a wooden board beside a red rocket and smiling yellow star.",
+      "description": "The rocket climbs through a compact white cloud along the board\u2019s left edge, balancing the star at the upper right.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_483/source/2027-vision-board.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-time-capsule",
+      "title": "Memories of 2027 Keepsake Box",
+      "alt": "An open embossed gold keepsake box holds blank photo cards and a red ribbon above a Memories of 2027 tag.",
+      "description": "Cream quilted lining frames the upright cards, with a wide red bow draped across the ornate box and its hanging label.",
+      "color": "Gold",
+      "style": "Color",
+      "source": "work/production/wave_483/source/2027-time-capsule.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

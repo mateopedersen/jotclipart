@@ -1,0 +1,175 @@
+{
+  "wave": "wave_499",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 2,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "feast-outline-chef-turkey-serving",
+      "title": "Chef Carrying a Turkey Platter Coloring Page",
+      "alt": "A tall cartoon chef with a curled mustache carries roast turkey beside a stool topped with a pie in black outline.",
+      "description": "A high toque, neckerchief, double-button jacket and tied apron distinguish the full standing chef, with the platter supported by both hands.",
+      "color": "Black",
+      "style": "Outline",
+      "source": "work/production/wave_499/source/feast-outline-chef-turkey-serving.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "feast",
+      "width": 1024,
+      "height": 1536,
+      "pdfWidth": 667,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "b3de19a5213bd07df33fd34c39aef05fda6bdd36dbed9a59d75491380a0e46b9",
+      "inputSignature": "97c4e030ff090ceb7c142e411080c3bbdcaa1a9f0df4027bed81cc1da1c353cd",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 200392,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 200392,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        193,
+        71,
+        927,
+        1476
+      ],
+      "image": {
+        "width": 667,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_499/exports/feast-outline-chef-turkey-serving.pdf",
+          "bytes": 200392,
+          "sha256": "805c1d20f957bb69f213169530907005ef2bc474741a2c87ea9c72bce281342b"
+        },
+        "webp": {
+          "path": "work/production/wave_499/exports/feast-outline-chef-turkey-serving.webp",
+          "bytes": 888690,
+          "sha256": "ee922f446db35b72d7d89ed7ac56a801ea3a46e0058fc3ea7ec6fe4258369c27"
+        },
+        "thumb": {
+          "path": "work/production/wave_499/exports/feast-outline-chef-turkey-serving-thumb.webp",
+          "bytes": 36334,
+          "sha256": "e7d5f46fd0e54984065b4c106317e87e8fec70f2a60815cad1fb3c4d1e58298c"
+        }
+      },
+      "proofSha256": "9a2f597ecfae9bdb0098e6269058bfb8d6f6d0493ae4822ed6248bd3383f4af2",
+      "pairMeanRgbDifference": 5.94672
+    },
+    {
+      "id": "feast-outline-open-lunchbox-spread",
+      "title": "Open Picnic Lunchbox Coloring Page",
+      "alt": "An open compartment lunchbox contains triangular sandwiches, apple wedges and spiral wraps beside a bottle and spoon in black outline.",
+      "description": "The upright lid, front clasp and separate food sections keep the picnic graphic easy to recognize and color.",
+      "color": "Black",
+      "style": "Outline",
+      "source": "work/production/wave_499/source/feast-outline-open-lunchbox-spread.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "feast",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "3086e4fd154a59af474c3c1a881f75fdedb20ae2f0c3cb27e9fe46abe4979b3a",
+      "inputSignature": "d638fbd7e6eb5f3c39c5d54d1a4817dbf602b7117aa555cdfdcf2cf954cfd157",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 350328,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 350328,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        74,
+        56,
+        1252,
+        1150
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_499/exports/feast-outline-open-lunchbox-spread.pdf",
+          "bytes": 350328,
+          "sha256": "cffb31612bf69c00d9f2df89b713c9c39f519d02e4797fb83318b9b08b298406"
+        },
+        "webp": {
+          "path": "work/production/wave_499/exports/feast-outline-open-lunchbox-spread.webp",
+          "bytes": 750130,
+          "sha256": "a0b13ffc22c56eba2eadef7b89da6667d0eec504e071ba84812c702e93289391"
+        },
+        "thumb": {
+          "path": "work/production/wave_499/exports/feast-outline-open-lunchbox-spread-thumb.webp",
+          "bytes": 53948,
+          "sha256": "64eeb5a11bee81d195f57af1d77831d2fd4190b347e459924d8151207558ff9f"
+        }
+      },
+      "proofSha256": "3c12d9c159907127eebee55126c7099a7694afdc8e85b733e898f6f61df7e2fc",
+      "pairMeanRgbDifference": 9.15751
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T14:32:34.223705+00:00",
+  "screenReviewEvidence": "work/production/wave_499/native-proof-review.jpg",
+  "screenReviewEvidenceSha256": "f9a88e7bdd8869bf414864d7eca4a7a5fd69a97c38684896cd7ea55521c03010",
+  "screenReviewNotes": "Every actual rendered CMYK PDF proof inspected: distinct characters, clear serving actions, complete framing, coherent food and furniture, or clean outline coloring details. No physical print proof claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T14:34:21.952Z"
+}

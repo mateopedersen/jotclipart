@@ -1,0 +1,77 @@
+{
+  "wave": "wave_438",
+  "topic": "elf",
+  "method": "builtin-image-generation",
+  "research": "data/research/elf-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "elf-wrapping-a-parcel",
+      "title": "Elf Tying a Christmas Gift Bow",
+      "alt": "Big-eyed cartoon elf in a green dress and floppy cap tying a red bow around a cream parcel.",
+      "description": "The kneeling elf steadies a broad red ribbon above the cream gift box. Black braids, a red leaf collar and green-striped stockings give the small Christmas character a clear festive silhouette.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_438/source/elf-wrapping-a-parcel.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-carpenter-toy-wagon",
+      "title": "Elf Fitting a Toy Wagon Wheel",
+      "alt": "Small green-overalled cartoon elf crouching beside a wooden wagon and fitting one wheel to its axle.",
+      "description": "The elf holds a round wheel beside the little green wagon. A red pointed cap with a green band, short copper curls and curled red shoes frame the crouching pose.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_438/source/elf-carpenter-toy-wagon.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-sewing-felt-fox",
+      "title": "Elf Sewing a Little Felt Fox",
+      "alt": "Green-clothed cartoon elf seated on a gift box, sewing a small orange felt fox beside a basket of thread.",
+      "description": "A little felt fox rests against the elf's green coat while one hand guides the thread. Cream hat trim, striped stockings and bright curled shoes surround the low gift-box seat.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_438/source/elf-sewing-felt-fox.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-cookie-baker",
+      "title": "Elf Carrying Star Cookies",
+      "alt": "Curly-haired cartoon elf in a green tunic and cap holding a tray of three decorated star cookies.",
+      "description": "Three iced stars sit on the elf's small gold-edged tray. Copper ringlets, bright violet eyes and a green zigzag hatband distinguish the cheerful standing character.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_438/source/elf-cookie-baker.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-lantern-keeper",
+      "title": "Elf with a Lantern and Firewood",
+      "alt": "Smiling cartoon elf in a green outfit carrying a brass lantern and a small tied bundle of firewood.",
+      "description": "The elf steps forward with a warm lantern held at one side and a small wood bundle at the other. A long dark braid, red sash and striped stockings add movement to the compact figure.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_438/source/elf-lantern-keeper.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-mail-satchel",
+      "title": "Elf Sitting on a Christmas Mail Sack",
+      "alt": "Big-eyed cartoon elf in a green coat sitting on a mail sack and holding two sealed cream envelopes.",
+      "description": "Two red-sealed envelopes rise above the elf's green coat. A floppy pom-pom cap, striped stockings and curled red shoes sit above the soft sack's holly and bell decorations.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_438/source/elf-mail-satchel.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

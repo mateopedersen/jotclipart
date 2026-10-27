@@ -1,0 +1,35 @@
+{
+  "wave": "wave_508",
+  "topic": "blessings",
+  "method": "builtin-image-generation",
+  "research": "data/research/blessings-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "blessings-outline-blessings-balloon",
+      "title": "Blessings Hot-Air Balloon Coloring Page",
+      "alt": "Two cheerful cartoon children wave from a woven hot-air-balloon basket beneath a \u201cBLESSINGS\u201d banner in black outline.",
+      "description": "Complete ropes, scalloped swags and the rounded balloon envelope connect the two distinct children to the basket.",
+      "color": "Black",
+      "style": "Outline",
+      "source": "work/production/wave_508/source/blessings-outline-blessings-balloon.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    },
+    {
+      "id": "blessings-outline-blessings-picnic-letter",
+      "title": "Hedgehog Writing a Blessings Card Coloring Page",
+      "alt": "A smiling cartoon hedgehog writes \u201cBLESSINGS\u201d on a card at a mushroom-shaped desk in black outline.",
+      "description": "A feather pen, small ink bottle and flower pot complete the whimsical seated character scene.",
+      "color": "Black",
+      "style": "Outline",
+      "source": "work/production/wave_508/source/blessings-outline-blessings-picnic-letter.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    }
+  ]
+}

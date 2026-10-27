@@ -1,0 +1,512 @@
+{
+  "wave": "wave_472",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 1,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "gingerbread-cookie-cutter-dough",
+      "title": "Gingerbread Dough with a Star Cutter",
+      "alt": "Rolled brown gingerbread dough with a clean star-shaped opening and a metal star cutter beside it.",
+      "description": "A light dusting of flour stays within the irregular dough shape around the empty cutout.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_472/source/gingerbread-cookie-cutter-dough.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "4c315384f1ff725fe2516b692f3cf3d249a94d7e8055dcfbd95258b82f94c68f",
+      "inputSignature": "1b1603bf7a9f29727a7274681b5982f3977ee5c9720ed6c57dd9b70295d25078",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 922516,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 922516,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        137,
+        208,
+        1254,
+        938
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_472/exports/gingerbread-cookie-cutter-dough.pdf",
+          "bytes": 922516,
+          "sha256": "6565c19c017866f77443d48aa5813796a201b4a88ea9bc2f358e920ae9fd4ed3"
+        },
+        "webp": {
+          "path": "work/production/wave_472/exports/gingerbread-cookie-cutter-dough.webp",
+          "bytes": 884202,
+          "sha256": "cd484b141af11fee63b2ea6fd908f795a0c9461d7818869cc39e4839f378d57f"
+        },
+        "thumb": {
+          "path": "work/production/wave_472/exports/gingerbread-cookie-cutter-dough-thumb.webp",
+          "bytes": 47338,
+          "sha256": "dd6d1365f8daeddeac8f499ec84e3270b90461fd158fbd55b27d87519896a757"
+        }
+      },
+      "proofSha256": "3014d05fd92359e90d7ae007e5d7edc51fe82a258d1e487b36e817170fcfe007",
+      "pairMeanRgbDifference": 2.88298
+    },
+    {
+      "id": "gingerbread-gingerbread-door-wreath",
+      "title": "Gingerbread Cookie Wreath",
+      "alt": "Round wreath of iced star, heart and house cookies with holly leaves, red berries and a large sage green bow.",
+      "description": "The cookies overlap around an open center, with long ribbon tails hanging beneath the top bow.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_472/source/gingerbread-gingerbread-door-wreath.png",
+      "printMaxEdgePx": 950,
+      "alphaCompression": "zopfli",
+      "jpeg2000Resolutions": 6,
+      "topic": "gingerbread",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 950,
+      "pdfHeight": 950,
+      "sourceType": "raster",
+      "sourceSha256": "30cea7fcc04b8645fa6db540c132f7c888e9a6c2faee0d6ba4e31475846e28ea",
+      "inputSignature": "5c4f1cb67c1a69232320f5b0441b75fd4e8eeedb2d7fb236b32dbae066968124",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 48,
+        "losslessCmyk": false,
+        "bytes": 965315,
+        "weightedCmykRmse": 1.348202
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1453706,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1210620,
+          "weightedCmykRmse": 0.760932
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1139175,
+          "weightedCmykRmse": 0.891222
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 1044286,
+          "weightedCmykRmse": 1.075746
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 48,
+          "losslessCmyk": false,
+          "bytes": 965315,
+          "weightedCmykRmse": 1.348202
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        71,
+        72,
+        1188,
+        1141
+      ],
+      "image": {
+        "width": 950,
+        "height": 950,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_472/exports/gingerbread-gingerbread-door-wreath.pdf",
+          "bytes": 965315,
+          "sha256": "40e9a9f9e995202bee69b0a397db75ed8291a880275e015dab85d3e8d3c997f2"
+        },
+        "webp": {
+          "path": "work/production/wave_472/exports/gingerbread-gingerbread-door-wreath.webp",
+          "bytes": 1278580,
+          "sha256": "23f632eaf8b1542392d5ece9d4cc94f36fa3332b0a5bf2dd31eac0cba367439c"
+        },
+        "thumb": {
+          "path": "work/production/wave_472/exports/gingerbread-gingerbread-door-wreath-thumb.webp",
+          "bytes": 77654,
+          "sha256": "8c14f112220ed6b99c916a7bdd0b9ee5f2d0da2ccea3245664d3648ec04cf968"
+        }
+      },
+      "proofSha256": "17d61b4c5705c94c0b10ae91e1ab8946cec9b22464e6979695a4ed47b7f41aaa",
+      "pairMeanRgbDifference": 8.52696
+    },
+    {
+      "id": "gingerbread-sweet-holidays-lettering",
+      "title": "Sweet Holidays Gingerbread Lettering",
+      "alt": "Smiling gingerbread letters spelling Sweet Holidays in two rows, edged with white icing and dotted with red and green candy.",
+      "description": "Tiny cookie arms and feet animate the letters, with a small smiling star at the end of the top row.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_472/source/gingerbread-sweet-holidays-lettering.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "11c6be3f0e2399e8618aa017c9de7608cf9565caca60c8c3374b4da73197b3e4",
+      "inputSignature": "8a64c7d670f81195c65d00f6766b2a041ea9326ad5972c84262aabb3fc7602e1",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 979186,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 979186,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        20,
+        232,
+        1516,
+        854
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_472/exports/gingerbread-sweet-holidays-lettering.pdf",
+          "bytes": 979186,
+          "sha256": "49537aeb98ce616603f704e6b1bd5053edc54f93c649da5e1314a5b1c17274fc"
+        },
+        "webp": {
+          "path": "work/production/wave_472/exports/gingerbread-sweet-holidays-lettering.webp",
+          "bytes": 1516766,
+          "sha256": "e1748c710b3fd07618d0ac49eb2c7723c031624f9df402f956360da1035c8f49"
+        },
+        "thumb": {
+          "path": "work/production/wave_472/exports/gingerbread-sweet-holidays-lettering-thumb.webp",
+          "bytes": 61800,
+          "sha256": "f391a926fbf19b1286a75cc716dbc1d4301d53bb06eaee1d5ea54b3bc7c78c1f"
+        }
+      },
+      "proofSha256": "c6dfee14476cf8d8b519987a1d49390ce60fd9caf9e3b4536695359e704f310f",
+      "pairMeanRgbDifference": 7.39086
+    },
+    {
+      "id": "gingerbread-outline-gingerbread-kite",
+      "title": "Gingerbread Flying a Star Kite Outline",
+      "alt": "Black-and-white gingerbread character in a striped cap flying a star-shaped kite with a bow-tailed string.",
+      "description": "Three heart buttons and scalloped icing cuffs decorate the one-legged skipping pose.",
+      "color": "Black and White",
+      "style": "Outline",
+      "source": "work/production/wave_472/source/gingerbread-outline-gingerbread-kite.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "gingerbread",
+      "width": 1240,
+      "height": 1268,
+      "pdfWidth": 978,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "74a3d47357ca867a59ccaba328e31ba9a804e1a34d38047ca5e5b283c7f8b8f2",
+      "inputSignature": "ac2709cdd3fa4bd7cfdbb17b790265d54f103042fdab18e443001f68718ae2ff",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 263941,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 263941,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        102,
+        52,
+        1191,
+        1222
+      ],
+      "image": {
+        "width": 978,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_472/exports/gingerbread-outline-gingerbread-kite.pdf",
+          "bytes": 263941,
+          "sha256": "06147358f4be12e0a3c160de5e00609bcb7278d4f03924d13f65f5cec38ff101"
+        },
+        "webp": {
+          "path": "work/production/wave_472/exports/gingerbread-outline-gingerbread-kite.webp",
+          "bytes": 455146,
+          "sha256": "7d3e48f3c852c052b9e97b189f0cd9c13799003511c2885e5b9d7395c34a4d10"
+        },
+        "thumb": {
+          "path": "work/production/wave_472/exports/gingerbread-outline-gingerbread-kite-thumb.webp",
+          "bytes": 40000,
+          "sha256": "8bbc1bfb84b3e1e06f4bcd507685104facba3c9903e47f30067d757bc325fdfa"
+        }
+      },
+      "proofSha256": "c4e4efa494809194b4bdfcbd50002fd43e1bddedd503effd521451383ade3b13",
+      "pairMeanRgbDifference": 5.65487
+    },
+    {
+      "id": "gingerbread-outline-gingerbread-house-book",
+      "title": "Gingerbread Castle Pop-Up Book Outline",
+      "alt": "Black-and-white open book with a two-towered gingerbread castle rising from its pages.",
+      "description": "Striped candy columns, heart decorations and iced battlements frame the arched castle door.",
+      "color": "Black and White",
+      "style": "Outline",
+      "source": "work/production/wave_472/source/gingerbread-outline-gingerbread-house-book.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "gingerbread",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "328abb5da6c9925f8962332a31594f91b6966b51c8da88ff5bde0dc4fcc420fe",
+      "inputSignature": "7f8cd147198820f5e49c1facd92f7bb309d25c089a05b308b1c2e2a0257a92f4",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 290433,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 290433,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        7,
+        6,
+        1366,
+        1139
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_472/exports/gingerbread-outline-gingerbread-house-book.pdf",
+          "bytes": 290433,
+          "sha256": "ddc3bd9b53540f68af4293fbb0ec729580199585e72c76558fa7fbeb95ff3cb7"
+        },
+        "webp": {
+          "path": "work/production/wave_472/exports/gingerbread-outline-gingerbread-house-book.webp",
+          "bytes": 677916,
+          "sha256": "ab5c739e893e3f381bd338671576dab01fc92c7ef3ea239edf9978ea7615496f"
+        },
+        "thumb": {
+          "path": "work/production/wave_472/exports/gingerbread-outline-gingerbread-house-book-thumb.webp",
+          "bytes": 48574,
+          "sha256": "32876353a0a61b38a0b751d21058c6db2ae557b32c2c2a59a6f9670f11215d85"
+        }
+      },
+      "proofSha256": "2a6ed60bb16a5911064f2b3a5e5276889457332d6d5f92fbe517eb47d0da9234",
+      "pairMeanRgbDifference": 8.75558
+    },
+    {
+      "id": "gingerbread-outline-gingerbread-bicycle",
+      "title": "Gingerbread Riding a Bicycle Outline",
+      "alt": "Black-and-white gingerbread character in a pom-pom cap and dotted vest riding a small bicycle.",
+      "description": "Both cookie hands meet the handlebars, with bent legs positioned over the pedals between the full wheels.",
+      "color": "Black and White",
+      "style": "Outline",
+      "source": "work/production/wave_472/source/gingerbread-outline-gingerbread-bicycle.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "gingerbread",
+      "width": 1230,
+      "height": 1278,
+      "pdfWidth": 962,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "784de1a40fd029d48fc6c52847fa03b0313d86a73e2e3fbd350aea84623cf1d8",
+      "inputSignature": "c6656629e08286703ec1fb182ff37efaab380bb8752dbd20ef1ceaf264f14969",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 833135,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 833135,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        187,
+        61,
+        1043,
+        1201
+      ],
+      "image": {
+        "width": 962,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_472/exports/gingerbread-outline-gingerbread-bicycle.pdf",
+          "bytes": 833135,
+          "sha256": "2401c4889f5a1961ea17aa7151f905d1150cd35b3afab24120b4e60f3c045c17"
+        },
+        "webp": {
+          "path": "work/production/wave_472/exports/gingerbread-outline-gingerbread-bicycle.webp",
+          "bytes": 469668,
+          "sha256": "65393ce146b18040aa527cbba18b8f4e7837b95ff326f22fe6dce3e927b70bc2"
+        },
+        "thumb": {
+          "path": "work/production/wave_472/exports/gingerbread-outline-gingerbread-bicycle-thumb.webp",
+          "bytes": 40178,
+          "sha256": "fce7c37678bd30a7e80cb79e9fb0b8aa5267ca818f92bcf2b9d1eadd91e612c7"
+        }
+      },
+      "proofSha256": "f48e5e4c4364aed15bdf3361a48740bf896e21a2d6d411abefeb035df5879124",
+      "pairMeanRgbDifference": 6.60615
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T10:23:24.224903+00:00",
+  "screenReviewEvidence": "work/production/wave_472/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T10:23:27.144Z"
+}

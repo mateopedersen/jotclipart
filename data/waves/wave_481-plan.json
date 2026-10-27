@@ -1,0 +1,78 @@
+{
+  "wave": "wave_481",
+  "topic": "2027",
+  "collectionTarget": 100,
+  "method": "builtin-image-generation",
+  "research": "data/research/2027-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "2027-graduation-flowers",
+      "title": "2027 Grad Floral Badge",
+      "alt": "Gold 2027 Grad lettering on an ivory oval badge topped by a black mortarboard and decorated with a red rose and eucalyptus.",
+      "description": "The asymmetrical flower spray follows the lower left of the slim gold frame beneath the cap's full tassel.",
+      "color": "Ivory",
+      "style": "Color",
+      "source": "work/production/wave_481/source/2027-graduation-flowers.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-achievement-path",
+      "title": "My Next Chapter 2027 Book Steps",
+      "alt": "Three cream books arranged as steps toward a gold star beneath the words My Next Chapter, with 2027 on the front book.",
+      "description": "A curled gold ribbon links the stepped books and their gold-edged pages beneath the arched message.",
+      "color": "Ivory",
+      "style": "Color",
+      "source": "work/production/wave_481/source/2027-achievement-path.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-class-of-school-lettering",
+      "title": "Class of 2027 Varsity Pennant",
+      "alt": "Burgundy Class of pennant above large navy varsity 2027 numerals, with a gold pole and tassel at the side.",
+      "description": "Cream inset strokes and wide gold borders keep the angular year clear beneath the triangular flag.",
+      "color": "Navy",
+      "style": "Color",
+      "source": "work/production/wave_481/source/2027-class-of-school-lettering.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-ruby-gold-bevel",
+      "title": "Ruby and Gold Beveled 2027",
+      "alt": "Upright ruby-red 2027 numerals with broad gold beveled edges and thick metallic sidewalls.",
+      "description": "The tall serif digits share a straight baseline, with light catching the polished gold edges around the open zero.",
+      "color": "Red",
+      "style": "Color",
+      "source": "work/production/wave_481/source/2027-ruby-gold-bevel.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-comic-burst",
+      "title": "2027 Let's Go Comic Burst",
+      "alt": "Coral 2027 and navy Let's Go lettering inside a gold comic burst with two lightning accents.",
+      "description": "Thick navy outlines and irregular pointed rays give the compact message a lively sticker shape.",
+      "color": "Coral",
+      "style": "Color",
+      "source": "work/production/wave_481/source/2027-comic-burst.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-skateboard-sticker",
+      "title": "Roll into 2027 Skateboard",
+      "alt": "Teal skateboard with pink 2027 numerals and yellow stars beneath large pink Roll into lettering.",
+      "description": "The complete wheels and trucks remain visible under the angled deck, whose brown edge adds a layered detail.",
+      "color": "Teal",
+      "style": "Color",
+      "source": "work/production/wave_481/source/2027-skateboard-sticker.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

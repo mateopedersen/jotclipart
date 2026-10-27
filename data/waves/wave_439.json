@@ -1,0 +1,508 @@
+{
+  "wave": "wave_439",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "elf-ribbon-weaver",
+      "title": "Elf Guiding a Red Ribbon",
+      "alt": "Blond cartoon elf in green clothes seated beside a small wooden loom, guiding a red ribbon over its rollers.",
+      "description": "A long red ribbon curls from the little wooden loom past the elf's pointed shoes. A red bell-tipped cap, embroidered green waistcoat and broad striped stockings frame the seated character.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_439/source/elf-ribbon-weaver.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1320,
+      "height": 1191,
+      "pdfWidth": 1000,
+      "pdfHeight": 902,
+      "sourceType": "raster",
+      "sourceSha256": "29bc4dd49b70c7877804f61f33fec1e7aaeeb016508c9b1e85bb87c2feca4c90",
+      "inputSignature": "6136205f79d1f84f557b277ed715c85fc13817e1abf6bd83449ab7ae49c9a3e3",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 906298,
+        "weightedCmykRmse": 0.818518
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1178138,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 906298,
+          "weightedCmykRmse": 0.818518
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        135,
+        29,
+        1187,
+        1150
+      ],
+      "image": {
+        "width": 1000,
+        "height": 902,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_439/exports/elf-ribbon-weaver.pdf",
+          "bytes": 906298,
+          "sha256": "6532b564a6ad8af6686620070037378c0856fa26ebbd6c96150b01deb4b1c5ce"
+        },
+        "webp": {
+          "path": "work/production/wave_439/exports/elf-ribbon-weaver.webp",
+          "bytes": 1172170,
+          "sha256": "e74f3c9c779f7377ef677c4e03db20f22ead894cab1246bc38b4416a434bccf3"
+        },
+        "thumb": {
+          "path": "work/production/wave_439/exports/elf-ribbon-weaver-thumb.webp",
+          "bytes": 60648,
+          "sha256": "ca145671c63a3a9fb415efb070fe61e42e05a8bf5db9e810eddbfa41cd67fd15"
+        }
+      },
+      "proofSha256": "91ba21171b7c68843302b218d3e088f1110d84cc44a13a277b1b2055b2222222",
+      "pairMeanRgbDifference": 4.39661
+    },
+    {
+      "id": "elf-mending-a-snow-globe",
+      "title": "Elf Lifting a Snow Globe",
+      "alt": "White-haired cartoon elf lifting a clear snow globe above a decorated green Christmas-tree base.",
+      "description": "The elf carefully holds a snowy globe containing a tiny house and fir trees. A gap above its separate gold-rimmed tree base makes the lifting action easy to see.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_439/source/elf-mending-a-snow-globe.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1214,
+      "height": 1295,
+      "pdfWidth": 937,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "70340526c6219330afe5fa185fa65e88d70ed9a39bf64fc669df982790c8f3a7",
+      "inputSignature": "8c0c0653c222534124a2a1f970688b7f2ba73d9ef52e657c98ec8faa5f462906",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 939000,
+        "weightedCmykRmse": 0.816715
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1211030,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 939000,
+          "weightedCmykRmse": 0.816715
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        159,
+        22,
+        1111,
+        1244
+      ],
+      "image": {
+        "width": 937,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_439/exports/elf-mending-a-snow-globe.pdf",
+          "bytes": 939000,
+          "sha256": "31231e8482a2839c62580a0e66ed8cee449d475214ea9fa30623187c321f008f"
+        },
+        "webp": {
+          "path": "work/production/wave_439/exports/elf-mending-a-snow-globe.webp",
+          "bytes": 1092572,
+          "sha256": "90aa2eafa2cf58d0df9e3b768aaf6da452cd6a381d114972fd65c236b5714157"
+        },
+        "thumb": {
+          "path": "work/production/wave_439/exports/elf-mending-a-snow-globe-thumb.webp",
+          "bytes": 63014,
+          "sha256": "3938d29950e9b3ef1a0c86791c7caf8baeb1ba5fd52c6b45f530a2f9cf4bd7a5"
+        }
+      },
+      "proofSha256": "8d339c727fea01fce61a9ac6b3a43e29e8afaeb4d7f939a7f6819f4697dcd59e",
+      "pairMeanRgbDifference": 5.31209
+    },
+    {
+      "id": "elf-painting-a-sled",
+      "title": "Elf Painting a Red Sled",
+      "alt": "Auburn-pigtailed cartoon elf kneeling beside a red sled with a paintbrush and a small silver paint tin.",
+      "description": "The elf presses a red-tipped brush against the sled's curved runner. Gold bells trim the green cap and capelet, while curled shoes and striped stockings complete the low kneeling pose.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_439/source/elf-painting-a-sled.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "9400e56e381ff958bd54cec7133ae06fcce2ba4271271116baa67700f36ae822",
+      "inputSignature": "2b6949391acd0f29098c6b0051431ccb2993a59c9a3cf416b471e9b4eb15a88c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 864415,
+        "weightedCmykRmse": 0.831686
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1098508,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 864415,
+          "weightedCmykRmse": 0.831686
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        92,
+        89,
+        1220,
+        1094
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_439/exports/elf-painting-a-sled.pdf",
+          "bytes": 864415,
+          "sha256": "a69d6328705a5207599ef275bf80dbb42c055bcc3373d7b51343f50df74ec89a"
+        },
+        "webp": {
+          "path": "work/production/wave_439/exports/elf-painting-a-sled.webp",
+          "bytes": 932834,
+          "sha256": "cf10159644263773fa6da6e47f300abd9a9ead28ae7a90ab4947a8b6e97922a3"
+        },
+        "thumb": {
+          "path": "work/production/wave_439/exports/elf-painting-a-sled-thumb.webp",
+          "bytes": 53734,
+          "sha256": "c14e4d6651182fc5217b48928f057f1dc3c3ea2d639479c5a9117c7404ec0ba1"
+        }
+      },
+      "proofSha256": "6cb36ab16c24d1c6bc58d522fcbcf94b52a5a74a569ab89ac38e06cb1e0a542d",
+      "pairMeanRgbDifference": 4.08284
+    },
+    {
+      "id": "elf-testing-handbells",
+      "title": "Elf Ringing Two Handbells",
+      "alt": "Silver-haired cartoon elf in a flared green dress ringing two gold bells while balancing on one foot.",
+      "description": "Raised arms and a lifted shoe give this bell-ringing elf a lively diagonal pose. A gold bow, scalloped dress panels and red shoes distinguish the small Christmas character.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_439/source/elf-testing-handbells.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "fe9ef4df7e6409ecfb7c27058c132678ac686f67dd91d5d9a991b52075cbea3f",
+      "inputSignature": "94135d33a3847a96fa6c6306b80c1afd3e1b18bb557873ef8c66ac3b20837e3c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 855467,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 855467,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        278,
+        66,
+        1118,
+        1143
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_439/exports/elf-testing-handbells.pdf",
+          "bytes": 855467,
+          "sha256": "ef0a2d2f59368a94ed936a3bba16e0de595905d47c92a34dc085157e29631809"
+        },
+        "webp": {
+          "path": "work/production/wave_439/exports/elf-testing-handbells.webp",
+          "bytes": 775510,
+          "sha256": "799d5d719d297136e5c4c3f589112fae68a4ec0f628b65acaeb769b7460583ac"
+        },
+        "thumb": {
+          "path": "work/production/wave_439/exports/elf-testing-handbells-thumb.webp",
+          "bytes": 48716,
+          "sha256": "977ce216b21bd9b328a1d7484ba234bce5a72fed2272bb6d8dc919fa57ccb1da"
+        }
+      },
+      "proofSha256": "61e3e3e082dfbaf0e1d7957b62bbdd33b559dbdea1862e361d17b86300e919a9",
+      "pairMeanRgbDifference": 3.83898
+    },
+    {
+      "id": "elf-sorting-wooden-blocks",
+      "title": "Elf Playing with Shape Blocks",
+      "alt": "Blue-eyed cartoon elf with silver hair buns sitting beside a wooden shape tray, holding a green cube and red triangle.",
+      "description": "A divided wooden tray holds bright blocks between the elf's outstretched legs. Silver hair buns, a folded red cap and a cream-edged green jacket distinguish the seated figure.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_439/source/elf-sorting-wooden-blocks.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1322,
+      "height": 1190,
+      "pdfWidth": 1000,
+      "pdfHeight": 900,
+      "sourceType": "raster",
+      "sourceSha256": "c4f32b4da3aae2c454ec415eb131d14320b976f7ccdd63e521edee7783d55049",
+      "inputSignature": "d8b3d000029c57600240344172cc4ca89285376b6d5eaeacaa1a99307d07bc87",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 748132,
+        "weightedCmykRmse": 0.847837
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1027731,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 748132,
+          "weightedCmykRmse": 0.847837
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        196,
+        43,
+        1213,
+        1129
+      ],
+      "image": {
+        "width": 1000,
+        "height": 900,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_439/exports/elf-sorting-wooden-blocks.pdf",
+          "bytes": 748132,
+          "sha256": "ee0aeee2485fa9962a26f30e6222a392eb64a176802cb4258098fc589a768643"
+        },
+        "webp": {
+          "path": "work/production/wave_439/exports/elf-sorting-wooden-blocks.webp",
+          "bytes": 973290,
+          "sha256": "8d5564cb9be75e1339c4d0170ee56116bd20e85f9f3124dd4d511bc44884ddbd"
+        },
+        "thumb": {
+          "path": "work/production/wave_439/exports/elf-sorting-wooden-blocks-thumb.webp",
+          "bytes": 51610,
+          "sha256": "60c72abf2760804b741185e136e3666fd001c7644aa2baf96b8933666321709b"
+        }
+      },
+      "proofSha256": "c5b8578c3181aa2f9be706a3a20ac6ef29f2d2ccca6338b905c3199f236e5e8d",
+      "pairMeanRgbDifference": 5.25205
+    },
+    {
+      "id": "elf-singing-at-a-music-stand",
+      "title": "Elf Singing with a Red Songbook",
+      "alt": "White-haired cartoon elf in a green capelet holding a red book and raising one open hand while singing.",
+      "description": "The elf's open mouth and outstretched hand suggest a cheerful carol. A curled bell-tipped hat, cream piping and layered green hems keep the standing silhouette clear.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_439/source/elf-singing-at-a-music-stand.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1214,
+      "height": 1296,
+      "pdfWidth": 937,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "fdd2abb1c8ef94794c9c859dd6ad3046de490a04146695e676751b55611880f0",
+      "inputSignature": "493e48cbda50523059eacea7e4bb75e5ec3d40789d8cdb71dc3238ab2a69321a",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 811963,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 811963,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        235,
+        98,
+        1038,
+        1202
+      ],
+      "image": {
+        "width": 937,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_439/exports/elf-singing-at-a-music-stand.pdf",
+          "bytes": 811963,
+          "sha256": "8057549b98af064ad4b13a61996ec63ba2403e34f80be6efb111991a704707e0"
+        },
+        "webp": {
+          "path": "work/production/wave_439/exports/elf-singing-at-a-music-stand.webp",
+          "bytes": 666452,
+          "sha256": "e005806dd279dba9274df3f497d9ba031db0938c1983cfdaba402a6115deeb5b"
+        },
+        "thumb": {
+          "path": "work/production/wave_439/exports/elf-singing-at-a-music-stand-thumb.webp",
+          "bytes": 40612,
+          "sha256": "3496d7e9957fccdab26d1daafaedc1fd12f23b93206f9f468ac6a947acffb21c"
+        }
+      },
+      "proofSha256": "02f0f850cb626f60c187719919cd4b87db7c01b0681d798372963b9cc738b58d",
+      "pairMeanRgbDifference": 3.0205
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T04:56:23.925453+00:00",
+  "screenReviewEvidence": "work/production/wave_439/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T05:29:03.052Z"
+}
