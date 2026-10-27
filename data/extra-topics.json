@@ -2300,5 +2300,115 @@
     "target_original_artworks": 50,
     "focus_note": "Follow online shopping from comparing products and choosing sizes to receiving parcels, assembling purchases and arranging returns. These scenes include shoppers of different ages, small sellers, collection counters and everyday items such as plants, books, groceries and clothing.",
     "supplemental": true
+  },
+  {
+    "id": 461,
+    "keyword": "Golden Snitch clipart",
+    "slug": "golden-snitch",
+    "cluster": "Arts & entertainment",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 45,
+    "focus_note": "Golden Snitch illustrations show the winged ball in flight, on workbenches, among Quidditch equipment and in small keepsake displays. Close-up objects sit alongside scenes with gloves, books and curious owls.",
+    "supplemental": true
+  },
+  {
+    "id": 462,
+    "keyword": "Fantasy crafts and inventions clipart",
+    "slug": "fantasy-crafts",
+    "cluster": "Arts & entertainment",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 33,
+    "focus_note": "Fantasy makers tend miniature gardens, build unusual instruments and shape enchanted objects. Mechanical insects, a giant planted boot and a tiny leaf boat bring different scales and materials into these workshop scenes.",
+    "supplemental": true
+  },
+  {
+    "id": 463,
+    "keyword": "Fantasy headwear clipart",
+    "slug": "fantasy-headwear",
+    "cluster": "Arts & entertainment",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 13,
+    "focus_note": "Explore crescent hats, crystal aviator headgear, living branch crowns and delicate insect-wing headdresses. Each design has its own silhouette, with pearls, folded metal, clouds or leaves shaping the details.",
+    "supplemental": true
+  },
+  {
+    "id": 464,
+    "keyword": "Sorting Hat clipart",
+    "slug": "sorting-hat",
+    "cluster": "Arts & entertainment",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 37,
+    "focus_note": "The patched Sorting Hat appears with repair tools, house banners, school trunks and watchful animals. Other scenes pair the hat with students, portraits, chess pieces and floating candles.",
+    "supplemental": true
+  },
+  {
+    "id": 465,
+    "keyword": "Ron Weasley clipart",
+    "slug": "ron-weasley",
+    "cluster": "Arts & entertainment",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 22,
+    "focus_note": "Ron Weasley scenes include wand repairs, wizard chess, Quidditch and school-day mishaps. The collection mixes expressive close-ups with larger illustrations of the red-haired character and his familiar equipment.",
+    "supplemental": true
+  },
+  {
+    "id": 466,
+    "keyword": "Football couples clipart",
+    "slug": "football-couple",
+    "cluster": "Sports",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Football couples share game-day celebrations, quiet radio breaks, practice drills and equipment projects. The scenes include players and supporters of different ages, with affectionate portraits alongside full-body activities.",
+    "supplemental": true
+  },
+  {
+    "id": 467,
+    "keyword": "Football fans and hobbies clipart",
+    "slug": "football-love",
+    "cluster": "Sports",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Football enthusiasm appears in personal keepsakes, baking, knitting, model stadiums and carefully maintained equipment. Fan portraits and small arrangements offer alternatives to on-field action scenes.",
+    "supplemental": true
+  },
+  {
+    "id": 468,
+    "keyword": "Football hearts clipart",
+    "slug": "football-heart",
+    "cluster": "Sports",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Football leather, laces and field markings form hearts with different structures. Discover clockwork mechanisms, glass ornaments, balloons, growing plants and small inventions alongside simpler stitched heart shapes.",
+    "supplemental": true
+  },
+  {
+    "id": 469,
+    "keyword": "Football Valentine clipart",
+    "slug": "football-valentine",
+    "cluster": "Sports",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 100,
+    "focus_note": "American football meets Valentine's Day in heart-marked players, playful mascots and gift arrangements. Roses, chocolates, ribbons and blank cards accompany the footballs, while character scenes show training and celebrations.",
+    "supplemental": true
+  },
+  {
+    "id": 470,
+    "keyword": "Basketball brackets clipart",
+    "slug": "basketball-bracket",
+    "cluster": "Sports",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Basketball tournament bracket illustrations appear on chalkboards, clipboards, jerseys and screens. Additional designs arrange the blank entry boxes as trees, stepped paths and trophy-centered diagrams.",
+    "supplemental": true
+  },
+  {
+    "id": 471,
+    "keyword": "Hogwarts clipart",
+    "slug": "hogwarts",
+    "cluster": "Arts & entertainment",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Explore Hogwarts through castle views, classrooms, house common rooms and lakeside scenes. The illustrations also visit the Great Hall, library, greenhouses and Quidditch pitch in both color and monochrome.",
+    "supplemental": true
   }
 ]

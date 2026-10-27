@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
 import {
   readCollectionAudit,
+  readCollectionRegistries,
   validateCollectionCopy,
   verifyCollectionEditorial,
 } from '../scripts/collection-editorial.mjs';
@@ -10,7 +11,7 @@ import {
 const root = new URL('../', import.meta.url);
 const read = (path) => JSON.parse(readFileSync(new URL(path, root), 'utf8'));
 const catalog = read('data/art.json');
-const registry = read('data/editorial/collections.json');
+const registry = readCollectionRegistries(root.pathname);
 
 test('every published subject has its own concise introduction tied to the actual catalog', () => {
   const report = readCollectionAudit(root.pathname);
