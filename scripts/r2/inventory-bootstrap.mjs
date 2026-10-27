@@ -1,4 +1,5 @@
 import { validateInventoryScope } from './inventory.mjs';
+import { inventoryBoundaries } from '../delivery/inventory-reader.mjs';
 
 // Old journals and local manifests only provide range/binding hints. They are
 // deliberately not returned as a reservation and cannot authorize any write.
@@ -13,25 +14,29 @@ export function bootstrapInventoryHints(journal, accountId, knownKeys = []) {
     list.add(item.key);
     grouped.set(item.bucket, list);
   }
-  const inventory = {
+  const roster = {
     schemaVersion: 2,
     scopeVersion: scope.scopeVersion,
     accountId,
     observedAt: scope.observedAt,
-    complete: true,
     jurisdictions: scope.jurisdictions,
     buckets: scope.jurisdictions.flatMap((s) =>
       s.buckets.map((name) => ({
         name,
         jurisdiction: s.jurisdiction,
-        complete: true,
-        objects:
-          s.jurisdiction === 'default'
-            ? [...(grouped.get(name) ?? [])].map((key) => ({ key, bytes: 0 }))
-            : [],
       })),
     ),
   };
-  validateInventoryScope(inventory);
-  return inventory;
+  validateInventoryScope(roster);
+  return {
+    accountId,
+    hintOnly: true,
+    buckets: roster.buckets.map(({ name, jurisdiction }) => ({
+      bucket: name,
+      jurisdiction,
+      bounds: inventoryBoundaries(
+        jurisdiction === 'default' ? [...(grouped.get(name) ?? [])].map((key) => ({ key })) : [],
+      ),
+    })),
+  };
 }

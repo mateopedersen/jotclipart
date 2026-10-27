@@ -29,11 +29,9 @@ test('old journal can provide hints but never a fresh reservation', () => {
     { bucket: 'media', key: 'a' },
     { bucket: 'media', key: 'b' },
   ]);
-  assert.deepEqual(
-    hints.buckets[0].objects.map((x) => x.key),
-    ['a', 'b'],
-  );
-  assert.throws(() => reserveInventory(hints, 1, now), /Fresh complete/);
+  assert.equal(hints.hintOnly, true);
+  assert.equal(hints.complete, undefined);
+  assert.throws(() => reserveInventory(hints, 1, now), /scope|coverage|inventory/i);
   assert.throws(
     () => bootstrapInventoryHints({ inventoryScope: scope }, 'b'.repeat(32)),
     /another account/,

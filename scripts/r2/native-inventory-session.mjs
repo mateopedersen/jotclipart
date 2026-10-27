@@ -18,7 +18,8 @@ export async function openNativeInventorySession(
     dir = mkdtempSync(join(tmpdir(), 'uc-native-inventory-'));
   const secret = randomBytes(32).toString('hex'),
     marker = randomBytes(32).toString('hex');
-  const buckets = inventoryHints(inventory)
+  const hintBuckets = inventory.hintOnly === true ? inventory.buckets : inventoryHints(inventory);
+  const buckets = hintBuckets
     .filter((b) => b.jurisdiction === 'default')
     .map((b, i) => ({ ...b, binding: `INVENTORY_${i}` }));
   const job = {
