@@ -8,6 +8,7 @@ import { representationKinds } from '../scripts/asset-representations.mjs';
 import { readPublication } from '../scripts/publication-policy.mjs';
 import { collectDeliveryFiles } from '../scripts/delivery/manifest.mjs';
 import { releaseRevision } from '../scripts/release-revision.mjs';
+import { testBuildDirectory } from './support/build-directory.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const topics = JSON.parse(readFileSync(join(root, 'data/topics.json'))).topics;
@@ -144,14 +145,14 @@ test('every artwork has its declared real, correctly typed, paired and hashed re
 
 test(
   'built static payload fits Workers Free file and individual size limits',
-  { skip: !existsSync(join(root, 'dist')) },
+  { skip: !existsSync(testBuildDirectory) },
   () => {
     function files(dir) {
       return readdirSync(dir, { withFileTypes: true }).flatMap((entry) =>
         entry.isDirectory() ? files(join(dir, entry.name)) : [join(dir, entry.name)],
       );
     }
-    const dist = join(root, 'dist');
+    const dist = testBuildDirectory;
     // Development bundles local masters for offline editing. Production removes
     // catalog staging and the byte-verified R2 representations before upload.
     // CF_PAGES checks the actual output with no exclusions.

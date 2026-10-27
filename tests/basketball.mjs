@@ -1,3 +1,4 @@
+import { testBuildUrl } from './support/build-directory.mjs';
 import { sitemapXml } from './support/sitemaps.mjs';
 import { assertPublishedImage } from './support/published-page.mjs';
 import test from 'node:test';
@@ -59,10 +60,10 @@ test('Sports includes basketball with truthful copy and 50 searchable designs', 
 test(
   'basketball category and all artwork pages are indexable with media and editors',
   {
-    skip: !existsSync(new URL('../dist/clipart/basketball/index.html', import.meta.url)),
+    skip: !existsSync(new URL('clipart/basketball/index.html', testBuildUrl)),
   },
   () => {
-    const text = (path) => readFileSync(new URL('../dist/' + path, import.meta.url), 'utf8');
+    const text = (path) => readFileSync(new URL(path, testBuildUrl), 'utf8');
     const page = text('clipart/basketball/index.html');
     assert.ok(page.includes('https://ultraclipart.com/clipart/basketball/'));
     assert.ok(page.includes('"numberOfItems":50'));
@@ -75,7 +76,7 @@ test(
       assert.ok(detail.includes('ImageObject'));
       assertPublishedImage(item, detail);
       assert.ok(!detail.includes('content="noindex'));
-      assert.ok(existsSync(new URL(`../dist/edit/${item.id}/index.html`, import.meta.url)));
+      assert.ok(existsSync(new URL(`edit/${item.id}/index.html`, testBuildUrl)));
     }
   },
 );

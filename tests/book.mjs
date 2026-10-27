@@ -1,3 +1,4 @@
+import { testBuildUrl } from './support/build-directory.mjs';
 import { sitemapXml } from './support/sitemaps.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -60,10 +61,10 @@ test('School & learning includes book with truthful copy and 50 searchable desig
 test(
   'book category and all artwork pages are indexable with media and editors',
   {
-    skip: !existsSync(new URL('../dist/clipart/book/index.html', import.meta.url)),
+    skip: !existsSync(new URL('clipart/book/index.html', testBuildUrl)),
   },
   () => {
-    const text = (path) => readFileSync(new URL('../dist/' + path, import.meta.url), 'utf8');
+    const text = (path) => readFileSync(new URL(path, testBuildUrl), 'utf8');
     const page = text('clipart/book/index.html');
     assert.ok(page.includes('https://ultraclipart.com/clipart/book/'));
     assert.ok(page.includes('"numberOfItems":50'));

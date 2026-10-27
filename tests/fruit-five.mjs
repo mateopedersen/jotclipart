@@ -1,3 +1,4 @@
+import { testBuildUrl } from './support/build-directory.mjs';
 import { sitemapXml } from './support/sitemaps.mjs';
 import { assertPublishedImage } from './support/published-page.mjs';
 import test from 'node:test';
@@ -69,10 +70,10 @@ test('new subjects have one Food category, 50 searchable designs and unique text
 test(
   'all 250 new pages have searchable, indexable production output',
   {
-    skip: !existsSync(new URL('../dist/clipart/starfruit/index.html', import.meta.url)),
+    skip: !existsSync(new URL('clipart/starfruit/index.html', testBuildUrl)),
   },
   () => {
-    const text = (path) => readFileSync(new URL('../dist/' + path, import.meta.url), 'utf8');
+    const text = (path) => readFileSync(new URL(path, testBuildUrl), 'utf8');
     const pages = sitemapXml('pages'),
       images = sitemapXml('images');
     for (const topic of topics) {
@@ -87,7 +88,7 @@ test(
         assert.ok(detail.includes('ImageObject'));
         assertPublishedImage(item, detail);
         assert.ok(!detail.includes('content="noindex'));
-        assert.ok(existsSync(new URL(`../dist/edit/${item.id}/index.html`, import.meta.url)));
+        assert.ok(existsSync(new URL(`edit/${item.id}/index.html`, testBuildUrl)));
       }
     }
   },

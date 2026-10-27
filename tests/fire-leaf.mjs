@@ -1,3 +1,4 @@
+import { testBuildUrl } from './support/build-directory.mjs';
 import { sitemapXml } from './support/sitemaps.mjs';
 import { assertPublishedImage } from './support/published-page.mjs';
 import test from 'node:test';
@@ -77,10 +78,10 @@ test('fire and leaves appear in their own relevant catalog destinations', () => 
 test(
   'every new page has an indexable URL, image sitemap entry and editor',
   {
-    skip: !existsSync(new URL('../dist/clipart/fire/index.html', import.meta.url)),
+    skip: !existsSync(new URL('clipart/fire/index.html', testBuildUrl)),
   },
   () => {
-    const text = (path) => readFileSync(new URL('../dist/' + path, import.meta.url), 'utf8');
+    const text = (path) => readFileSync(new URL(path, testBuildUrl), 'utf8');
     const pages = sitemapXml('pages');
     const images = sitemapXml('images');
     for (const topic of ['fire', 'leaves']) {
@@ -95,7 +96,7 @@ test(
         assert.ok(detail.includes('ImageObject'));
         assertPublishedImage(item, detail);
         assert.ok(!detail.includes('content="noindex'));
-        assert.ok(existsSync(new URL(`../dist/edit/${item.id}/index.html`, import.meta.url)));
+        assert.ok(existsSync(new URL(`edit/${item.id}/index.html`, testBuildUrl)));
       }
     }
   },

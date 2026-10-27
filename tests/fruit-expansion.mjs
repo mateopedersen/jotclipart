@@ -1,3 +1,4 @@
+import { testBuildUrl } from './support/build-directory.mjs';
 import { sitemapXml } from './support/sitemaps.mjs';
 import { assertPublishedImage } from './support/published-page.mjs';
 import test from 'node:test';
@@ -111,9 +112,9 @@ test('fruit categories are separate, searchable and have descriptive metadata an
 
 test(
   'all new artwork and topic pages expose indexable canonicals, schemas, CDN media and sitemap entries',
-  { skip: !existsSync(new URL('../dist/clipart/green-apple/index.html', import.meta.url)) },
+  { skip: !existsSync(new URL('clipart/green-apple/index.html', testBuildUrl)) },
   () => {
-    const text = (p) => readFileSync(new URL('../dist/' + p, import.meta.url), 'utf8');
+    const text = (p) => readFileSync(new URL(p, testBuildUrl), 'utf8');
     const pages = sitemapXml('pages'),
       images = sitemapXml('images');
     for (const topic of topics) {
@@ -134,7 +135,7 @@ test(
         assertPublishedImage(item, detail);
         assert.doesNotMatch(detail, /content="noindex/);
         assert.ok(collection.includes(`/edit/${item.id}/`));
-        assert.ok(existsSync(new URL(`../dist/edit/${item.id}/index.html`, import.meta.url)));
+        assert.ok(existsSync(new URL(`edit/${item.id}/index.html`, testBuildUrl)));
         for (const kind of ['pdf', 'webp'])
           assert.ok(detail.includes(`download="${item.id}.${kind}"`));
       }
