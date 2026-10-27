@@ -1,0 +1,225 @@
+{
+  "schema": 1,
+  "topics": {
+    "golden-snitch": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "b80fd2216dba0173edb82a99e0112f2a3fdac01ba39b62de06ea1423d678ab54",
+      "intro": "Golden Snitch illustrations show the winged ball in flight, on workbenches, among Quidditch equipment and in small keepsake displays. Close-up objects sit alongside scenes with gloves, books and curious owls.",
+      "checkedAt": "2026-10-27T11:24:36.867Z",
+      "evidence": [
+        {
+          "id": "golden-snitch-above-brass-binoculars-clipart",
+          "imageSha256": "8094f03ff8608606a495885b740c4df2d379bbeb5cef17e6d17e0f8e8005988a"
+        },
+        {
+          "id": "golden-snitch-dodging-a-bludger-clipart",
+          "imageSha256": "4fda9610c44e3a8562d88cd7e12b2e376a776f0ac89599160c27df49afeb204c"
+        },
+        {
+          "id": "golden-snitch-caught-on-a-branch-clipart",
+          "imageSha256": "2f46ea88eaa0897ba056c0da54d31e6d1e619fee8edbdeb5f1890849bf6f1bba"
+        }
+      ]
+    },
+    "sorting-hat": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "d910796c3fb7ccabd29ddadd6af8a600e7eff4b615037baae55a9b7a7a351206",
+      "intro": "The patched Sorting Hat appears with repair tools, house banners, school trunks and watchful animals. Other scenes pair the hat with students, portraits, chess pieces and floating candles.",
+      "checkedAt": "2026-10-27T11:24:36.867Z",
+      "evidence": [
+        {
+          "id": "sorting-hat-on-a-brass-balance-clipart",
+          "imageSha256": "c726d8c0a54b2b9bb9cc4935ff5cc5bc186d848a9118e03181fa8b30792b9512"
+        },
+        {
+          "id": "child-sheltering-beneath-the-sorting-hat-clipart",
+          "imageSha256": "53588e9c30a42a32f9816a0b659d01d48827e41f5fd28f5181f2b4a932da165b"
+        },
+        {
+          "id": "sorting-hat-with-a-seam-magnifier-clipart",
+          "imageSha256": "93e08098da56a4a967a7252cd0c8d320220c28aa096694778088ff9b956ff74d"
+        }
+      ]
+    },
+    "ron-weasley": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "6ee78722b96f80dc6911a7ca944321d0441f63fc4dbf1f309bcc05499dcbd512",
+      "intro": "Ron Weasley scenes include wand repairs, wizard chess, Quidditch and school-day mishaps. The collection mixes expressive close-ups with larger illustrations of the red-haired character and his familiar equipment.",
+      "checkedAt": "2026-10-27T11:24:36.867Z",
+      "evidence": [
+        {
+          "id": "ron-weasley-feeding-a-house-elf-clipart",
+          "imageSha256": "2c19b7ecd79753e1b620e0c64cd2f2d3641adf4117667caac996c1f7bd03e78c"
+        },
+        {
+          "id": "ron-weasley-repairing-his-wand-clipart",
+          "imageSha256": "59ed04773b912077ed9e826aeaeeaa178746c9bdd78f4b6a86cb1818be0384ca"
+        },
+        {
+          "id": "ron-weasley-checking-a-broom-clipart",
+          "imageSha256": "93f784df156e564e5a7701ce0062ca5a0f59da846d08da2cfe32c026e1eb10f8"
+        }
+      ]
+    },
+    "fantasy-crafts": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "c1adc4772a9600df53b00fea9c90ab1202f5a52c2efb354ef7fd96dd21da7986",
+      "intro": "Fantasy makers tend miniature gardens, build unusual instruments and shape enchanted objects. Mechanical insects, a giant planted boot and a tiny leaf boat bring different scales and materials into these workshop scenes.",
+      "checkedAt": "2026-10-27T11:24:36.867Z",
+      "evidence": [
+        {
+          "id": "winged-kite-with-trailing-ribbons-clipart",
+          "imageSha256": "90b9cfa3aa6221cab115dc1d47817a331804710fab57daee22f5cb363012e044"
+        },
+        {
+          "id": "dragonfly-propeller-bottle-clipart",
+          "imageSha256": "117f2c185ed92177c5c61e9941ca091be0114b25b953f3c6bafe6265308af070"
+        },
+        {
+          "id": "jewelled-mechanical-hummingbird-clipart",
+          "imageSha256": "a45831899d481c85afe9ab20d24c520284a1af0790ab2a426f5806523e0ffc64"
+        }
+      ]
+    },
+    "fantasy-headwear": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "c212ee70198b98198095ba822160c344d696ffd81c3f18548fb2200a0ee42706",
+      "intro": "Explore crescent hats, crystal aviator headgear, living branch crowns and delicate insect-wing headdresses. Each design has its own silhouette, with pearls, folded metal, clouds or leaves shaping the details.",
+      "checkedAt": "2026-10-27T11:24:36.867Z",
+      "evidence": [
+        {
+          "id": "moon-circlet-with-flowing-ribbons-clipart",
+          "imageSha256": "2ab6bf452c73519f2d8a2ffe46aeaec55516ccdd620df3ee1855972cc3a88c2d"
+        },
+        {
+          "id": "dragonfly-lace-headdress-clipart",
+          "imageSha256": "0bf1ce5b8c9a82c43d68a42c68d60c7b9dafaf0b2e2d6f8b652474ac4f1929f8"
+        },
+        {
+          "id": "petal-bonnet-on-a-stand-clipart",
+          "imageSha256": "a130facd29def2680746c42cf765710f8b0337412b0641e6e3f293e821ab9719"
+        }
+      ]
+    },
+    "football-couple": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "88fb6e2ccba96c60861f6e91700d2123427fc9bc4a14c13a1c38b6114ec80277",
+      "intro": "Football couples share game-day celebrations, quiet radio breaks, practice drills and equipment projects. The scenes include players and supporters of different ages, with affectionate portraits alongside full-body activities.",
+      "checkedAt": "2026-10-27T11:24:36.867Z",
+      "evidence": [
+        {
+          "id": "older-couple-opening-a-football-keepsake-box-clipart",
+          "imageSha256": "5e0b66acb093b810ffcc77e2085817a44c0a8c7626b1c6b06c245619e09928ed"
+        },
+        {
+          "id": "couple-holding-a-football-together-clipart",
+          "imageSha256": "de3043573fefd01a62ea1572dcaa652ab05d194fa3c24f1a29cc38a080adfad4"
+        },
+        {
+          "id": "couple-sharing-a-blanket-in-the-bleachers-clipart",
+          "imageSha256": "76c78e9a33312c67e10862a3d691084ec8958fd16b351d1fb8123ca328c0a17f"
+        }
+      ]
+    },
+    "football-love": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "315de49feddaf5ee7fd1169a095850ee2d012cc8af7009a2a285280373c541c4",
+      "intro": "Football enthusiasm appears in personal keepsakes, baking, knitting, model stadiums and carefully maintained equipment. Fan portraits and small arrangements offer alternatives to on-field action scenes.",
+      "checkedAt": "2026-10-27T11:24:36.867Z",
+      "evidence": [
+        {
+          "id": "repairing-the-laces-of-a-leather-football-clipart",
+          "imageSha256": "d8af47a0e461c86a23f00f75bb693d7919bff4ed9bb968795f232c5800edc793"
+        },
+        {
+          "id": "brushing-mud-from-a-football-cleat-clipart",
+          "imageSha256": "50099e53430b76570a5aaf3d0dd9521ec49423fb04182246487e0514298b6971"
+        },
+        {
+          "id": "football-memorabilia-on-a-shelf-clipart",
+          "imageSha256": "ab2a64a3f40524f37a734a205a46db94daa28b043368958377d0a37e110c57e0"
+        }
+      ]
+    },
+    "football-heart": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "f3c1c4867e27ee4d9595a690409501e08879b5ea2761ee083a7afa77791b8bbe",
+      "intro": "Football leather, laces and field markings form hearts with different structures. Discover clockwork mechanisms, glass ornaments, balloons, growing plants and small inventions alongside simpler stitched heart shapes.",
+      "checkedAt": "2026-10-27T11:24:36.867Z",
+      "evidence": [
+        {
+          "id": "anatomical-heart-made-from-football-leather-clipart",
+          "imageSha256": "8f6b12b713688c9bc618b5c80cb219b0576dd9459d37ab0f06d124b5f3b6975b"
+        },
+        {
+          "id": "glowing-football-heart-outline-clipart",
+          "imageSha256": "8d9801dbd71e7780a567ef4fb0d4058ed82cbcada4f317af39fab1a734ac8c61"
+        },
+        {
+          "id": "football-framed-by-feathered-wings-clipart",
+          "imageSha256": "d35e094c663142c2ccf164a75d604bc705912f02280110e41bd32d4a52bb01a8"
+        }
+      ]
+    },
+    "football-valentine": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "69b89bdd77fad3eb110918937482552d618f0de154f17a729bb87bc3b0e830c8",
+      "intro": "American football meets Valentine's Day in heart-marked players, playful mascots and gift arrangements. Roses, chocolates, ribbons and blank cards accompany the footballs, while character scenes show training and celebrations.",
+      "checkedAt": "2026-10-27T11:24:36.867Z",
+      "evidence": [
+        {
+          "id": "bear-football-center-in-red-pads-clipart",
+          "imageSha256": "942de3052edae4d501650e2e27f68053218c48f8cf235703b5b21093143ac277"
+        },
+        {
+          "id": "cat-catching-a-football-by-a-field-marker-clipart",
+          "imageSha256": "02429f0c2d56b0ff5d81e6ab8b7ec222889e587aa70e1ed0ed5abbac3704a0e0"
+        },
+        {
+          "id": "coach-drawing-a-heart-shaped-football-play-clipart",
+          "imageSha256": "e5e393beca30ef097f9d0ed1cbb2378cf2f04f80fb14d702ecfc555109b2e40b"
+        }
+      ]
+    },
+    "basketball-bracket": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "5f68f63c0660e20bb6158692928dc9093b0716f0adfa9e2d1cc839151bddb773",
+      "intro": "Basketball tournament bracket illustrations appear on chalkboards, clipboards, jerseys and screens. Additional designs arrange the blank entry boxes as trees, stepped paths and trophy-centered diagrams.",
+      "checkedAt": "2026-10-27T11:24:36.867Z",
+      "evidence": [
+        {
+          "id": "folded-basketball-tournament-bracket-clipart",
+          "imageSha256": "0bf3c119fd20069f0bcc932bbf6fb2aebda5bf9b83b73e6a0f35cacdcbb8d359"
+        },
+        {
+          "id": "basketball-bracket-in-an-arched-window-clipart",
+          "imageSha256": "bde0b5a472ff73d3525163fdb5e043332c2c215fac020b65781266a3fd268760"
+        },
+        {
+          "id": "basketball-bracket-on-a-television-clipart",
+          "imageSha256": "0c44cd42eafa25af5e1a549b1d5e3061fb4d6a8211df910e07e06ef7a7786fda"
+        }
+      ]
+    },
+    "hogwarts": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "f7f94e6c1ef23880ce58911c3bfdf5eca419a5e33e66e851c1cd52a824d3d494",
+      "intro": "Explore Hogwarts through castle views, classrooms, house common rooms and lakeside scenes. The illustrations also visit the Great Hall, library, greenhouses and Quidditch pitch in both color and monochrome.",
+      "checkedAt": "2026-10-27T11:24:36.867Z",
+      "evidence": [
+        {
+          "id": "hogwarts-cloister-in-black-and-white-clipart",
+          "imageSha256": "38170af999f45f3b3164d9243b2951b3fb52689a88d1238a8dc3620593fbb89f"
+        },
+        {
+          "id": "hogwarts-suits-of-armour-clipart",
+          "imageSha256": "db3020a1eeebcf6f6a71d06928935a9657ddbadf45f5556d535152b1e11e4825"
+        },
+        {
+          "id": "hogwarts-astronomy-tower-and-telescope-clipart",
+          "imageSha256": "3a99861b33e19c4a7cc0de9461dc39956fcda2703dc968e211d18d3bcee136d0"
+        }
+      ]
+    }
+  }
+}

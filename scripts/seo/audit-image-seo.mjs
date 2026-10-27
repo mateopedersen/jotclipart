@@ -17,6 +17,7 @@ import {
   decodeHtml,
 } from './image-seo.mjs';
 import { imageFileSignature } from './image-file-signature.mjs';
+import { readReviewedImportCatalog } from '../reviewed-imports.mjs';
 
 export function auditImageSeo({ root, directory, catalog, publishedAssets = null }) {
   const eligible = catalog.filter((a) => a.published && a.indexable);
@@ -123,6 +124,12 @@ export function auditImageSeo({ root, directory, catalog, publishedAssets = null
         counts.catalogImageInstances++;
         if (a.alt !== record.item.alt || a.title !== record.item.title)
           fail(page, 'rendered image wording', record.item.id);
+        if (!noindex) {
+          const original =
+            /\.svg(?:$|[?#])/i.test(a.src) && record.item.svg ? record.item.svg : record.item.webp;
+          if (url !== absoluteImageUrl(original) || a.srcset)
+            fail(page, 'public artwork must display its full original', record.item.id);
+        }
       }
       if (a.srcset && record) {
         for (const candidate of a.srcset.split(',')) {
@@ -256,7 +263,7 @@ export function auditImageSeo({ root, directory, catalog, publishedAssets = null
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   const root = resolve(import.meta.dirname, '../..');
-  const catalog = JSON.parse(readFileSync(join(root, 'data/art.json'), 'utf8'));
+  const catalog = readReviewedImportCatalog(root);
   let publishedAssets = null;
   if (process.env.CF_PAGES === '1') {
     const { readPublication } = await import('../publication-policy.mjs');

@@ -7,7 +7,7 @@
     "node": ">=22.23.4"
   },
   "scripts": {
-    "content:audit": "node scripts/reviewed-imports.mjs",
+    "content:audit": "node scripts/artwork-editorial.mjs",
     "content:review": "node scripts/prepare-editorial-review.mjs",
     "content:apply": "node scripts/apply-editorial-review.mjs",
     "dev": "astro dev --host 127.0.0.1",
@@ -61,7 +61,10 @@
     "icons:build": "node scripts/build-site-icons.mjs",
     "seo:core:audit": "node scripts/seo/audit-core-seo.mjs",
     "seo:core:report": "node scripts/seo/report-core-seo.mjs",
-    "test:e2e:seo-core": "node tests/e2e/core-seo.mjs"
+    "test:e2e:seo-core": "node tests/e2e/core-seo.mjs",
+    "test:e2e:studio-mobile-scroll": "node tests/e2e/studio-mobile-scroll.mjs",
+    "test:e2e:button-states": "node tests/e2e/button-states.mjs",
+    "test:e2e:studio-entry": "node tests/e2e/studio-entry.mjs"
   },
   "dependencies": {
     "@fontsource/inter": "5.2.8",

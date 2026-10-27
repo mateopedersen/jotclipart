@@ -1442,5 +1442,67 @@
     "elf",
     "nutcracker",
     "christmas"
+  ],
+  "golden-snitch": [
+    "sorting-hat",
+    "ron-weasley",
+    "hogwarts",
+    "fantasy-crafts"
+  ],
+  "sorting-hat": [
+    "hogwarts",
+    "ron-weasley",
+    "golden-snitch",
+    "fantasy-headwear"
+  ],
+  "ron-weasley": [
+    "hogwarts",
+    "sorting-hat",
+    "golden-snitch"
+  ],
+  "fantasy-crafts": [
+    "fantasy-headwear",
+    "magic-spell",
+    "golden-snitch"
+  ],
+  "fantasy-headwear": [
+    "fantasy-crafts",
+    "sorting-hat",
+    "hat"
+  ],
+  "football-couple": [
+    "football-love",
+    "football-valentine",
+    "football-heart",
+    "football"
+  ],
+  "football-love": [
+    "football-couple",
+    "football-heart",
+    "football-valentine",
+    "football"
+  ],
+  "football-heart": [
+    "football-valentine",
+    "football-love",
+    "football-couple",
+    "football"
+  ],
+  "football-valentine": [
+    "football-heart",
+    "football-couple",
+    "football-love",
+    "football"
+  ],
+  "basketball-bracket": [
+    "basketball",
+    "gaming-trophy",
+    "football"
+  ],
+  "hogwarts": [
+    "ron-weasley",
+    "sorting-hat",
+    "golden-snitch",
+    "magic-spell"
   ]
 }

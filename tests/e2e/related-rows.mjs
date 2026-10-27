@@ -1,15 +1,14 @@
 import { chromium, webkit, expect } from '@playwright/test';
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 import assert from 'node:assert/strict';
+import { readEditorialCatalog } from '../helpers/editorial-catalog.mjs';
 const base = process.env.BASE_URL || 'http://127.0.0.1:4326';
 const fixturesOnly = process.env.ROWS_FIXTURES_ONLY === '1';
 const output = 'reports/related-rows';
 mkdirSync(output, { recursive: true });
 const report = { fixtures: [], pages: [], errors: [] };
 const css = readFileSync('src/styles/related.css', 'utf8');
-const catalog = new Map(
-  JSON.parse(readFileSync('data/art.json', 'utf8')).map((item) => [item.id, item]),
-);
+const catalog = new Map(readEditorialCatalog().map((item) => [item.id, item]));
 for (const [engine, implementation] of Object.entries({ chromium, webkit })) {
   const browser = await implementation.launch();
   try {
@@ -89,10 +88,39 @@ for (const [engine, implementation] of Object.entries({ chromium, webkit })) {
             assert.equal(example.title, artwork.title);
           }
           const more = root.locator('[data-related-more]');
+          await page.evaluate(() => {
+            document.documentElement.dataset.relatedTestButtonCount = '0';
+            window.addEventListener('ultraclipart:related', (event) => {
+              if (
+                event instanceof CustomEvent &&
+                event.detail.event === 'show_more' &&
+                event.detail.trigger === 'button'
+              ) {
+                const root = document.documentElement;
+                root.dataset.relatedTestButtonCount = String(
+                  Number(root.dataset.relatedTestButtonCount) + 1,
+                );
+              }
+            });
+          });
           for (let i = 0; i < 20 && (await more.isVisible()); i++) {
+            // Focusing is the real keyboard-accessible path. It also prevents the
+            // automatic scroll observer from moving the button while Playwright
+            // scrolls it into view, so this checks a genuine button activation.
+            await more.focus();
             const before = await root.locator('.related-card').count();
+            const previousButtonEvents = await page.evaluate(() =>
+              Number(document.documentElement.dataset.relatedTestButtonCount),
+            );
             await more.click();
             await expect.poll(() => root.locator('.related-card').count()).toBeGreaterThan(before);
+            await expect
+              .poll(() =>
+                page.evaluate(() =>
+                  Number(document.documentElement.dataset.relatedTestButtonCount),
+                ),
+              )
+              .toBeGreaterThan(previousButtonEvents);
           }
           await expect(more).toBeHidden();
           const counts = await root

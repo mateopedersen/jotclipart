@@ -1,0 +1,68 @@
+{
+  "golden-snitch": {
+    "label": "Golden Snitch",
+    "cluster": "Arts & entertainment",
+    "intro": "Golden Snitch illustrations show the winged ball in flight, on workbenches, among Quidditch equipment and in small keepsake displays. Close-up objects sit alongside scenes with gloves, books and curious owls.",
+    "related": ["sorting-hat", "ron-weasley", "hogwarts", "fantasy-crafts"]
+  },
+  "sorting-hat": {
+    "label": "Sorting Hat",
+    "cluster": "Arts & entertainment",
+    "intro": "The patched Sorting Hat appears with repair tools, house banners, school trunks and watchful animals. Other scenes pair the hat with students, portraits, chess pieces and floating candles.",
+    "related": ["hogwarts", "ron-weasley", "golden-snitch", "fantasy-headwear"]
+  },
+  "ron-weasley": {
+    "label": "Ron Weasley",
+    "cluster": "Arts & entertainment",
+    "intro": "Ron Weasley scenes include wand repairs, wizard chess, Quidditch and school-day mishaps. The collection mixes expressive close-ups with larger illustrations of the red-haired character and his familiar equipment.",
+    "related": ["hogwarts", "sorting-hat", "golden-snitch"]
+  },
+  "fantasy-crafts": {
+    "label": "Fantasy crafts and inventions",
+    "cluster": "Arts & entertainment",
+    "intro": "Fantasy makers tend miniature gardens, build unusual instruments and shape enchanted objects. Mechanical insects, a giant planted boot and a tiny leaf boat bring different scales and materials into these workshop scenes.",
+    "related": ["fantasy-headwear", "magic-spell", "golden-snitch"]
+  },
+  "fantasy-headwear": {
+    "label": "Fantasy headwear",
+    "cluster": "Arts & entertainment",
+    "intro": "Explore crescent hats, crystal aviator headgear, living branch crowns and delicate insect-wing headdresses. Each design has its own silhouette, with pearls, folded metal, clouds or leaves shaping the details.",
+    "related": ["fantasy-crafts", "sorting-hat", "hat"]
+  },
+  "football-couple": {
+    "label": "Football couples",
+    "cluster": "Sports",
+    "intro": "Football couples share game-day celebrations, quiet radio breaks, practice drills and equipment projects. The scenes include players and supporters of different ages, with affectionate portraits alongside full-body activities.",
+    "related": ["football-love", "football-valentine", "football-heart", "football"]
+  },
+  "football-love": {
+    "label": "Football fans and hobbies",
+    "cluster": "Sports",
+    "intro": "Football enthusiasm appears in personal keepsakes, baking, knitting, model stadiums and carefully maintained equipment. Fan portraits and small arrangements offer alternatives to on-field action scenes.",
+    "related": ["football-couple", "football-heart", "football-valentine", "football"]
+  },
+  "football-heart": {
+    "label": "Football hearts",
+    "cluster": "Sports",
+    "intro": "Football leather, laces and field markings form hearts with different structures. Discover clockwork mechanisms, glass ornaments, balloons, growing plants and small inventions alongside simpler stitched heart shapes.",
+    "related": ["football-valentine", "football-love", "football-couple", "football"]
+  },
+  "football-valentine": {
+    "label": "Football Valentine",
+    "cluster": "Sports",
+    "intro": "American football meets Valentine's Day in heart-marked players, playful mascots and gift arrangements. Roses, chocolates, ribbons and blank cards accompany the footballs, while character scenes show training and celebrations.",
+    "related": ["football-heart", "football-couple", "football-love", "football"]
+  },
+  "basketball-bracket": {
+    "label": "Basketball brackets",
+    "cluster": "Sports",
+    "intro": "Basketball tournament bracket illustrations appear on chalkboards, clipboards, jerseys and screens. Additional designs arrange the blank entry boxes as trees, stepped paths and trophy-centered diagrams.",
+    "related": ["basketball", "gaming-trophy", "football"]
+  },
+  "hogwarts": {
+    "label": "Hogwarts",
+    "cluster": "Arts & entertainment",
+    "intro": "Explore Hogwarts through castle views, classrooms, house common rooms and lakeside scenes. The illustrations also visit the Great Hall, library, greenhouses and Quidditch pitch in both color and monochrome.",
+    "related": ["ron-weasley", "sorting-hat", "golden-snitch", "magic-spell"]
+  }
+}

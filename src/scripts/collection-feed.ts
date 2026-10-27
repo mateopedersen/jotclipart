@@ -33,7 +33,7 @@ if (grid) {
       for (const item of feed.items) {
         if (
           !safePath(item.href) ||
-          !safeImage(item.sample?.thumb) ||
+          !safeImage(item.sample?.webp ?? item.sample?.thumb) ||
           typeof item.name !== 'string' ||
           typeof item.sample?.alt !== 'string' ||
           typeof item.sample?.title !== 'string' ||
@@ -47,7 +47,7 @@ if (grid) {
         const media = document.createElement('div');
         media.className = 'subject-collection-art';
         const img = document.createElement('img');
-        img.src = item.sample.thumb;
+        img.src = item.sample.webp ?? item.sample.thumb;
         img.alt = item.sample.alt;
         img.title = item.sample.title;
         img.width = 275;

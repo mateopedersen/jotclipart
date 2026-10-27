@@ -87,3 +87,39 @@ Fresh lists still measure every object's current size before each artwork. A ful
 Create a staging wave batch with `node scripts/r2/make-wave-batch.mjs wave_001 BUCKET`; then use the same dry run, apply, readback and separate publication preparation. `prepare-publication.mjs --catalog work/art.next.json` permits review of the complete next catalog before promoting either catalog or manifest.
 
 Readback reuse holds at most 16 MB of downloaded bytes in memory and requires the same freshly listed ETag and size. A new bucket listing clears absent version entries, and a PUT invalidates cached bytes before readback. Already verified groups that add no bytes do not need an additional occupancy scan; every group that may add bytes still requires a fresh complete account scan. Final inventory must contain the complete batch. Read-only initial checksum checks are bounded to four concurrent requests.
+
+## Large-account inventory and throughput — 2026-10-27
+
+The normal media publisher keeps the complete all-jurisdiction inventory, shared
+account writer lock, 10 TB ceiling and 45-second freshness requirement. If the
+cold Cloudflare REST enumeration cannot complete in time, a validated old bucket
+roster and known local keys can supply range hints to a temporary authenticated,
+inventory-only Workers session. Hints are not a measured inventory or a budget
+reservation. The session must measure the complete current account again before
+any write. Unknown or newly appearing scopes still use the normal enumeration
+path and all missing/denied coverage blocks publication. The session exposes no
+write route and is stopped before the account lock is released.
+
+Fresh native R2 listings include object ETag and size. The transport may reuse a
+SHA only when it previously read and hashed that exact ETag and size. A missing
+or changed ETag, changed size, new object, unverified data or a resumed process
+requires another real read; a filename or untrusted metadata is never proof of
+content. Conditional uploads and independent source and remote byte checks remain
+mandatory. Run `node --test tests/r2-native-inventory-session.mjs
+ tests/r2-cloudflare-api.mjs tests/delivery-inventory.mjs tests/r2-ingestion.mjs`
+when changing this path.
+
+Workers Paid does not remove the Cloudflare management REST API rate limit.
+Cloudflare recommends the S3-compatible API or an R2 Workers binding for bulk
+object operations. A future bounded, private media uploader may use those paths
+to reduce transfer time, but it must preserve source-bound manifests, immutable
+conditional writes, exact MIME and PDF disposition, independent remote hashes,
+resume journals and the same storage/account protections. Benchmark against a
+reviewed small batch before adopting it; do not promise a speedup or relax the
+45-second account coverage check based on an estimate. At much larger catalog
+sizes, a separately proven reservation ledger and reconciliation design is
+needed to avoid repeated full-account scans; that work has not been completed.
+Workers and R2 requests and storage can incur usage charges. See the official
+[API overview](https://developers.cloudflare.com/r2/api/),
+[limits](https://developers.cloudflare.com/r2/platform/limits/) and
+[R2 pricing](https://developers.cloudflare.com/r2/pricing/).

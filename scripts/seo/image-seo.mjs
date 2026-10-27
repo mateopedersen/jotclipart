@@ -79,6 +79,7 @@ export function createImageIndex(catalog, { publishedAssets = null, previewIndex
     const item = {
       ...source,
       webp: publishedAssets?.[source.id]?.webp ?? source.webp,
+      svg: publishedAssets?.[source.id]?.svg ?? source.svg,
       thumb: files[440] ? urls[440] : (publishedAssets?.[source.id]?.thumb ?? source.thumb),
     };
     for (const kind of ['webp', 'svg']) {
@@ -106,6 +107,50 @@ export const isNoindex = (elements) =>
       /\b(noindex|none)\b/i.test(a.content ?? ''),
   );
 
+// Public catalog pages present the original image. Small derivatives remain
+// available to private editor libraries, but are not alternate public sources.
+// Run in the shared build hook so new pages/imports inherit the same contract.
+export function restoreOriginalCatalogImages(html, index, elements = htmlElements(html)) {
+  const changes = [];
+  const escape = (value) =>
+    value
+      .replace(/&/g, '&amp;')
+      .replace(/"/g, '&quot;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+  for (const element of elements) {
+    const a = element.attributes;
+    const image = element.name === 'img' && a.alt?.trim();
+    const preload = element.name === 'link' && a.rel === 'preload' && a.as === 'image';
+    if (!image && !preload) continue;
+    const key = image ? 'src' : 'href';
+    if (!a[key]) continue;
+    const record = index.get(absoluteImageUrl(a[key]));
+    if (!record) continue;
+    const original =
+      /\.svg(?:$|[?#])/i.test(a[key]) && record.item.svg ? record.item.svg : record.item.webp;
+    if (!original) throw new Error(`Original catalog source missing: ${record.item.id}`);
+    let changed = a[key] !== original;
+    for (const name of image ? ['srcset', 'sizes'] : ['imagesrcset', 'imagesizes']) {
+      changed ||= Object.hasOwn(a, name);
+      delete a[name];
+    }
+    a[key] = original;
+    if (changed) {
+      // Attribute names come from the parsed start tag. Never search its raw
+      // text for names: words such as "sizes" may be part of an alt/title value.
+      const attributes = Object.entries(a)
+        .map(([name, value]) => ` ${name}="${escape(value)}"`)
+        .join('');
+      const ending = html.slice(element.index, element.end).endsWith('/>') ? '/>' : '>';
+      changes.push({ ...element, tag: `<${element.name}${attributes}${ending}` });
+    }
+  }
+  for (const change of changes.reverse())
+    html = html.slice(0, change.index) + change.tag + html.slice(change.end);
+  return html;
+}
+
 export function renderedCatalogImages(elements, index) {
   const result = new Map();
   for (const { name, attributes: a } of elements) {
@@ -123,6 +168,7 @@ export function attachImageMetadata(html, index) {
   html = deferLargeStructuredData(html);
   const elements = htmlElements(html);
   if (isNoindex(elements)) return { html, images: 0, added: 0, noindex: true };
+  html = restoreOriginalCatalogImages(html, index, elements);
   const known = new Set();
   for (const { name, attributes: a, text } of elements)
     if (name === 'script' && a.type === 'application/ld+json')

@@ -17,6 +17,8 @@ const routes = [
   '/clipart/baby/',
   '/clipart/glove/',
   '/clipart/candy/',
+  '/clipart/camera/',
+  '/art/donald-trump-architectural-blueprint-clipart/',
   '/art/elephant-clay-miniature-clipart/',
   `/art/${fixture.id}/`,
   '/guides/',
@@ -72,14 +74,19 @@ for (const [engine, implementation] of Object.entries({ chromium, webkit })) {
               document.querySelector('meta[name="robots"]').content,
             );
             const images = [...document.images].filter(
-              (img) => img.alt.trim() && new URL(img.src).pathname.startsWith('/previews/p1/'),
+              (img) =>
+                img.alt.trim() &&
+                (new URL(img.src).pathname.startsWith('/catalog/') ||
+                  new URL(img.src).hostname === 'assets.ultraclipart.com'),
             );
             const missing = images.filter(
               (img) =>
                 !nodes.some(
                   (node) =>
                     node.contentUrl ===
-                      new URL(new URL(img.src).pathname, 'https://ultraclipart.com').href &&
+                      (new URL(img.src).hostname === 'assets.ultraclipart.com'
+                        ? img.src
+                        : new URL(new URL(img.src).pathname, 'https://ultraclipart.com').href) &&
                     node.creator?.name === 'UltraClipart' &&
                     node.copyrightNotice?.includes('third-party rights') &&
                     node.license === 'https://ultraclipart.com/license/',
@@ -90,6 +97,11 @@ for (const [engine, implementation] of Object.entries({ chromium, webkit })) {
               schemas: nodes.length,
               images: images.length,
               missing: missing.map((img) => img.src),
+              smallPublicSources: [...document.images]
+                .filter(
+                  (img) => img.alt.trim() && new URL(img.src).pathname.startsWith('/previews/p1/'),
+                )
+                .map((img) => img.src),
               generated: !!generated,
               horizontalOverflow: document.documentElement.scrollWidth > innerWidth + 1,
               canonical: document.querySelector('link[rel="canonical"]').href,
@@ -97,6 +109,7 @@ for (const [engine, implementation] of Object.entries({ chromium, webkit })) {
           });
           if (state.indexable) {
             assert.deepEqual(state.missing, [], route);
+            assert.deepEqual(state.smallPublicSources, [], route);
             assert.ok(state.schemas > 0, route);
           } else assert.equal(state.generated, false, route);
           assert.equal(state.horizontalOverflow, false, route);
@@ -106,7 +119,13 @@ for (const [engine, implementation] of Object.entries({ chromium, webkit })) {
             await expect(preview).toHaveAttribute('title', fixture.title);
             await expect(page.locator('h1')).toHaveText(fixture.title);
             await expect(preview).toHaveJSProperty('complete', true);
-            assert.ok(await preview.evaluate((img) => img.naturalWidth > 0));
+            assert.equal(await preview.getAttribute('srcset'), null);
+            assert.equal(await preview.evaluate((img) => img.naturalWidth), fixture.width);
+            assert.equal(await preview.evaluate((img) => img.naturalHeight), fixture.height);
+            assert.equal(
+              await page.locator('#art-preview').getAttribute('href'),
+              await preview.getAttribute('src'),
+            );
           }
           if (['/', '/clipart/candy/', `/art/${fixture.id}/`].includes(route)) {
             const name =

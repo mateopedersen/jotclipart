@@ -86,6 +86,7 @@ jobs:
     env:
       ASTRO_TELEMETRY_DISABLED: '1'
       CF_PAGES: '1'
+      UC_DELIVERY_PREPARE: '1'
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -98,6 +99,8 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
       - run: pnpm test:release
+      - name: Verify atomic delivery and final capacity gates
+        run: node --test tests/delivery*.mjs tests/pages-session.mjs tests/studio-style-delivery.mjs
   browser:
     needs: plan
     if: ${{ needs.plan.outputs.run_browser == 'true' }}
@@ -262,6 +265,10 @@ jobs:
               UC_BASE_URL=http://127.0.0.1:4321 UC_BROWSER="$engine" UC_EVIDENCE_DIR=reports/editor node scripts/test-editor-browser.mjs
               UC_BASE_URL=http://127.0.0.1:4321 UC_BROWSER="$engine" UC_EVIDENCE_DIR=reports/creator node tests/e2e/creator.mjs
               BASE_URL=http://127.0.0.1:4321 UC_BROWSER="$engine" node tests/e2e/creative-studio.mjs
+              if [ '${{ matrix.engine }}' = chromium ]; then
+                BASE_URL=http://127.0.0.1:4321 node tests/e2e/studio-entry.mjs
+                BASE_URL=http://127.0.0.1:4321 node tests/e2e/button-states.mjs
+              fi
               BASE_URL=http://127.0.0.1:4321 UC_BROWSER="$engine" node tests/e2e/real-artwork.mjs
               BASE_URL=http://127.0.0.1:4321 BROWSER="$engine" node tests/e2e/ai-builder.mjs
               UC_BASE_URL=http://127.0.0.1:4321 UC_BROWSER="$engine" node tests/e2e/ai-studio-transfer.mjs
@@ -277,6 +284,7 @@ jobs:
                 BASE_URL=http://127.0.0.1:4321 UC_BROWSER=chromium SOURCE_COLLECTION=owner-basketball-pack-2026-10-24 EXPECTED_ARTWORKS=50 EXPECTED_TOPICS=1 EVIDENCE_DIR=reports/basketball node tests/e2e/package-gallery.mjs
                 BASE_URL=http://127.0.0.1:4321 UC_BROWSER=chromium SOURCE_COLLECTION=owner-book-pack-2026-10-24 EXPECTED_ARTWORKS=50 EXPECTED_TOPICS=1 EVIDENCE_DIR=reports/book node tests/e2e/package-gallery.mjs
                 UC_BASE_URL=http://127.0.0.1:4321 UC_EVIDENCE_DIR=reports/creator-touch node tests/e2e/creator-touch.mjs
+                BASE_URL=http://127.0.0.1:4321 node tests/e2e/studio-mobile-scroll.mjs
                 BASE_URL=http://127.0.0.1:4321 node tests/e2e/studio-input.mjs
                 BASE_URL=http://127.0.0.1:4321 node tests/e2e/studio-upload.mjs
               fi

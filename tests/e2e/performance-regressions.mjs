@@ -42,18 +42,17 @@ for (const [engine, implementation] of Object.entries(engines)) {
           false,
           route,
         );
-        const images = page.locator('main img[src^="/previews/"]');
-        assert.ok(await images.count(), route);
-        await expect(images.first()).toHaveAttribute(
-          'srcset',
-          route.startsWith('/art/') ? /960\.webp/ : /96\.webp/,
+        const images = page.locator(
+          'main img[src^="/catalog/"], main img[src^="https://assets.ultraclipart.com/"]',
         );
+        assert.ok(await images.count(), route);
+        assert.equal(await images.first().getAttribute('srcset'), null);
         await images.first().scrollIntoViewIfNeeded();
         await expect
           .poll(() => images.first().evaluate((img) => img.complete && img.naturalWidth > 0))
           .toBe(true);
         if (route === '/') await page.screenshot({ path: `${out}/${engine}-${width}-home.png` });
-        record(`Responsive previews and viewport: ${route}`);
+        record(`Full original image and viewport: ${route}`);
       }
       await go('/');
       await page.locator('#search-q').fill('baby pumpkin costume');
@@ -66,7 +65,11 @@ for (const [engine, implementation] of Object.entries(engines)) {
       else await suggestion.click();
       await page.waitForURL('**/art/baby-pumpkin-costume-clipart/');
       await page.locator('[data-related-mode="subject"]').click();
-      await expect(page.locator('.related-card img').first()).toHaveAttribute('srcset', /96\.webp/);
+      await expect(page.locator('.related-card img').first()).toHaveAttribute(
+        'src',
+        /(?:\/catalog\/|https:\/\/assets\.ultraclipart\.com\/)/,
+      );
+      assert.equal(await page.locator('.related-card img').first().getAttribute('srcset'), null);
       const download = page
         .locator('[data-download-open="baby-pumpkin-costume-clipart"][data-download-format="webp"]')
         .first();
