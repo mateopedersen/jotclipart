@@ -20,7 +20,7 @@ const items = art.filter((a) => ts.some((t) => t.slug === a.topic));
 <Layout
   title={cluster + ' Clipart Collection'}
   description={`Browse ${cluster.toLowerCase()} clipart subjects. Open an illustration to see its image, printable PDF and editing options.`}
-  noindex={true}
+  noindex={items.length === 0}
   image={items[0]?.webp}
   imageAlt={items[0]?.alt}
   imageWidth={items[0]?.width}

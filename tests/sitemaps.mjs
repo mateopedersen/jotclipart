@@ -20,13 +20,16 @@ const example = {
   indexable: true,
 };
 
-test('published works remain discoverable before their subject is a complete collection', () => {
+test('a first approved work makes its subject discoverable without a fifty-item gate', () => {
   const complete = Array.from({ length: 50 }, (_, i) => ({ ...example, id: `full-${i}` }));
   const growing = { ...example, id: 'first-new-work', topic: 'new-subject' };
   const draft = { ...growing, id: 'draft', published: false };
   const noindex = { ...growing, id: 'private', indexable: false };
   const topics = [{ slug: 'pumpkin' }, { slug: 'new-subject' }];
-  assert.deepEqual(directoryArtwork([...complete, growing, draft, noindex], topics), [growing]);
+  assert.deepEqual(directoryArtwork([...complete, growing, draft, noindex], topics), []);
+  assert.deepEqual(indexableTopics([growing, draft, noindex], topics), [topics[1]]);
+  assert.ok(pageSitemap([growing, draft, noindex], topics).includes('/clipart/new-subject/'));
+  assert.deepEqual(directoryArtwork([growing, draft, noindex], [topics[0]]), [growing]);
   const completed = Array.from({ length: 50 }, (_, i) => ({ ...growing, id: `new-${i}` }));
   assert.deepEqual(directoryArtwork([...complete, ...completed], topics), []);
 });
@@ -102,8 +105,9 @@ test('new approved subjects enter HTML/XML discovery and drafts do not hide an e
   const draft = { ...items[0], id: 'future-draft', published: false };
   assert.deepEqual(indexableTopics([...items, draft], [topic]), [topic]);
   assert.ok(pageSitemap([...items, draft], [topic]).includes('/clipart/new-subject/'));
-  assert.deepEqual(indexableTopics(items.slice(0, 49), [topic]), []);
-  assert.ok(!pageSitemap(items.slice(0, 49), [topic]).includes('/clipart/new-subject/'));
+  assert.deepEqual(indexableTopics(items.slice(0, 1), [topic]), [topic]);
+  assert.ok(pageSitemap(items.slice(0, 1), [topic]).includes('/clipart/new-subject/'));
+  assert.deepEqual(indexableTopics([], [topic]), []);
   assert.deepEqual(
     indexableTopics(
       items.map((item) => ({ ...item, indexable: false })),
@@ -121,7 +125,7 @@ test('the pilot index excludes an empty image sitemap; approval adds a real chil
   assert.ok(imageSitemap([example]).includes(`<image:loc>${example.webp}</image:loc>`));
 });
 
-test('topics enter the sitemap at 50 or more approved distinct catalog items', () => {
+test('only approved nonempty topics enter the sitemap, regardless of collection size', () => {
   const collection = Array.from({ length: 50 }, (_, index) => ({
     ...example,
     id: `pumpkin-${index + 1}`,
@@ -133,13 +137,39 @@ test('topics enter the sitemap at 50 or more approved distinct catalog items', (
       '/clipart/pumpkin/',
     ),
   );
-  assert.ok(!pageSitemap(collection.slice(0, 49), topics).includes('/clipart/pumpkin/'));
+  assert.ok(pageSitemap(collection.slice(0, 1), topics).includes('/clipart/pumpkin/'));
   assert.ok(
-    !pageSitemap(
-      [...collection.slice(0, 49), { ...collection[49], indexable: false }],
-      topics,
-    ).includes('/clipart/pumpkin/'),
+    !pageSitemap([{ ...collection[0], indexable: false }], topics).includes('/clipart/pumpkin/'),
   );
+});
+
+test('public catalog entry pages and nonempty primary collections share sitemap eligibility', () => {
+  const topics = [
+    { slug: 'fresh-subject', cluster: 'A New Collection' },
+    { slug: 'empty-subject', cluster: 'Empty Collection' },
+    { slug: 'draft-subject', cluster: 'Draft Collection' },
+  ];
+  const approved = { ...example, topic: 'fresh-subject', monochrome: true };
+  const xml = pageSitemap(
+    [approved, { ...approved, id: 'draft', topic: 'draft-subject', published: false }],
+    topics,
+  );
+  for (const route of [
+    '/new/',
+    '/black-and-white/',
+    '/collection/a-new-collection/',
+    '/clipart/fresh-subject/',
+  ])
+    assert.ok(xml.includes(`https://ultraclipart.com${route}`), route);
+  for (const route of [
+    '/collection/empty-collection/',
+    '/collection/draft-collection/',
+    '/favorites/',
+    '/search/',
+  ])
+    assert.ok(!xml.includes(`https://ultraclipart.com${route}`), route);
+  assert.ok(!pageSitemap([], topics).includes('/new/'));
+  assert.ok(!pageSitemap([example], topics).includes('/black-and-white/'));
 });
 
 test('XML output escapes all reserved characters and real image URL queries', () => {

@@ -1,10 +1,18 @@
 import { guides } from './guides.ts';
+import { primaryClusterForTopic } from './topic-clusters.ts';
 const SITE = 'https://ultraclipart.com/';
 const XML = '<?xml version="1.0" encoding="UTF-8"?>';
 const NS = 'http://www.sitemaps.org/schemas/sitemap/0.9';
 
-type Artwork = { id: string; topic: string; webp: string; published: boolean; indexable: boolean };
-type Topic = { slug: string };
+type Artwork = {
+  id: string;
+  topic: string;
+  webp: string;
+  published: boolean;
+  indexable: boolean;
+  monochrome?: boolean;
+};
+type Topic = { slug: string; cluster?: string; sourceCluster?: string; browseCluster?: string };
 
 /** Escape XML data, including query strings in real CDN image URLs. */
 export function xmlEscape(value: string): string {
@@ -25,11 +33,11 @@ export const approvedArt = (art: Artwork[]) =>
 export function indexableTopics<T extends Topic>(art: Artwork[], topics: T[]): T[] {
   const counts = new Map<string, number>();
   for (const item of approvedArt(art)) counts.set(item.topic, (counts.get(item.topic) ?? 0) + 1);
-  return topics.filter((topic) => (counts.get(topic.slug) ?? 0) >= 50);
+  return topics.filter((topic) => (counts.get(topic.slug) ?? 0) > 0);
 }
 
-/** Published individual works still need an HTML discovery path while their
- * subject is below the collection threshold. Never expose drafts as a bridge. */
+/** Keep approved works discoverable even when a caller lacks their topic row.
+ * A growing registered subject is public from its first approved artwork. */
 export function directoryArtwork<T extends Artwork>(art: T[], topics: Topic[]): T[] {
   const indexed = new Set(indexableTopics(art, topics).map((topic) => topic.slug));
   return art.filter((item) => item.published && item.indexable && !indexed.has(item.topic));
@@ -61,6 +69,21 @@ function pageEntries(art: Artwork[], topics: Topic[]): string[] {
     'editorial-process/',
   ];
   const urls = routes.map(absolute);
+  const approved = approvedArt(art);
+  if (approved.length) urls.push(absolute('new/'));
+  if (approved.some((item) => item.monochrome === true)) urls.push(absolute('black-and-white/'));
+  const collectionNames = new Set(
+    indexableTopics(art, topics)
+      .filter((topic): topic is Topic & { cluster: string } => typeof topic.cluster === 'string')
+      .map(primaryClusterForTopic),
+  );
+  for (const cluster of collectionNames) {
+    const slug = cluster
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-|-$/g, '');
+    if (slug) urls.push(absolute(`collection/${slug}/`));
+  }
   urls.push(...approvedArt(art).map(artUrl));
   for (const topic of indexableTopics(art, topics))
     urls.push(absolute(`clipart/${encodeURIComponent(topic.slug)}/`));
