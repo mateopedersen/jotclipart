@@ -15,6 +15,17 @@ const context = await browser.newContext({
   viewport: { width: 1500, height: 1100 },
   acceptDownloads: true,
 });
+// The production R2 policy permits the production origin, not loopback. Keep
+// the real CDN response bytes while allowing the local browser test to read them.
+if (/^http:\/\/(?:127\.0\.0\.1|localhost)(?::\d+)?$/.test(base)) {
+  await context.route('https://assets.ultraclipart.com/**', async (route) => {
+    const response = await route.fetch();
+    await route.fulfill({
+      response,
+      headers: { ...response.headers(), 'access-control-allow-origin': base },
+    });
+  });
+}
 const page = await context.newPage();
 const report = { engine, base, checks: [], sources: [], errors: [], states: [], status: 'running' };
 page.on('pageerror', (e) => report.errors.push(e.message));
@@ -106,6 +117,7 @@ async function selectPoint(p) {
   await expect(page.locator('[data-status]')).toContainText('Selection ready', { timeout: 60000 });
 }
 async function downloadAction(selector, name) {
+  if (selector === '[data-action=save]') await openFileMenu();
   const p = page.waitForEvent('download', { timeout: 120000 });
   await page.locator(selector).click();
   const d = await p;
@@ -113,6 +125,10 @@ async function downloadAction(selector, name) {
   await d.saveAs(file);
   assert.ok(statSync(file).size > 40);
   return file;
+}
+async function openFileMenu() {
+  const menu = page.locator('details').filter({ has: page.locator('[data-action=reset]') });
+  if (!(await menu.evaluate((element) => element.open))) await menu.locator('summary').click();
 }
 try {
   const targets = [
@@ -169,6 +185,7 @@ try {
   await open(a);
   const source = await pixelInfo();
   // Keep only the source to make each tool's effect independently observable.
+  await openFileMenu();
   await page.locator('[data-action=reset]').click();
   await settle();
   await page.locator('button[data-work-mode=edit]').click();
@@ -364,6 +381,7 @@ try {
     });
   });
   await open(art.find((a) => a.topic === 'volleyball' && a.style === 'Outline'));
+  await openFileMenu();
   await page.locator('[data-action=reset]').click();
   await settle();
   await page.locator('button[data-work-mode=print]').click();
