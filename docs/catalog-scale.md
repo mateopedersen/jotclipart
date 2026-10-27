@@ -68,3 +68,104 @@ The manual deploy must finish after a Git-driven build.
 The Book offload is the first working stage, not a claim that the remaining
 static catalog can already hold five million entries. The site must complete
 stages 1–5 before that target is supportable.
+
+## Coordinated delivery migration — 2026-10-27
+
+The verified 7ff19d7 production release contains 13,784 artworks but **95,739
+Pages deployment files**. These numbers describe different resources. Its frozen,
+audited full output is the rollback source. The rollback-source staging inventory contains 92,443 detail,
+editor, responsive-preview and hashed runtime files (13,019,834,044 actual bytes)
+in the existing private `ultraclipart-pages` bucket. Those are generated delivery
+files; original downloadable artwork, accepted metadata, IDs and licenses remain
+unchanged. Do not call this migration live until its successful final receipt and
+canonical deployment have been checked.
+
+The owner explicitly approved disabling automatic production deployments during
+the transition. `source.config.production_deployments_enabled=false` was verified
+through the project API. Do not turn it back on merely because a source commit
+passes CI: Git builds have no authenticated R2 staging step. Manual publication
+must use `node scripts/deploy.mjs`, not a raw upload of an old `dist` directory.
+No new subscription, paid inference or indexing submission is authorized.
+
+The normal publisher renders and runs source/editorial, media, SEO, CSP and unit
+gates before staging. `UC_DELIVERY_PREPARE=1` marks an intermediate full build,
+not a deployable artifact; only that preparation may exceed the raw Pages file
+count. The final artifact is separately checked against the actual Pages and
+Worker size budgets. Never remove a limit check from the final upload stage.
+
+`delivery/stage.mjs` holds an account writer lock shared across local checkouts.
+The existing original-media ingest now takes the same lock as well. Other
+machines/operators must serialize account writes too; a local lock cannot prevent
+an unrelated remote account administrator from uploading. A stale lock is never
+automatically deleted. Confirm its process and private listener are gone first.
+
+Each stage uses the existing account login, a complete fresh all-jurisdiction
+inventory and the 10,000,000,000,000-byte ceiling. Inventory age stays limited to
+45 seconds. A bounded private remote-development Worker can enumerate the same
+actual bucket objects faster; every bucket roster and unsupported jurisdiction
+still requires the original Cloudflare API proof. Enumeration failures, loops,
+expired leases, missing bindings and unknown scopes stop writes. The private
+Worker accepts only HMAC-authenticated inventory commands and Merkle proofs for
+one fixed reviewed file set. It exposes no production administrative route.
+
+Every object is conditionally created, then fetched and hashed independently.
+Successful receipts are appended durably. A restart checks the exact current
+manifest root and reuses only matching verified records; unverified work never
+becomes active. An unavailable or mismatching published source can fall back only
+to the exact locally hashed release bytes. Credentials, private preview tokens
+and staging secrets stay out of source control and user-visible output.
+
+`delivery/activate.mjs` requires the complete rendered catalog, exact revision,
+manifest, byte counts and hashes before pruning a separate copy. The full build
+stays available. Only the new Pages Worker activates the new R2 HTML prefix;
+failed staging or uploading cannot switch the live prefix. Published URLs,
+canonical and image schema remain intact. Editors retain noindex and their own
+CSP. Unknown/withdrawn artwork keeps the existing real-404 policy; a verified
+active file missing from R2 returns an uncacheable 503. Public caches are isolated
+by release, and old hashed runtime assets are retained for cached older HTML.
+
+The upload transport is process-local and pinned to the reviewed Wrangler source.
+It renews sessions, checkpoints server-acknowledged uploads and checks the remote
+cache before replaying. It never edits installed dependencies or treats an
+ordinary permission-denied response as an expired session. A changed dependency
+fingerprint stops publication for review.
+
+A separate static-origin retry protects GET/HEAD against one transient
+500/502/503/504. APIs, mutation methods and ordinary 4xx responses are not retried.
+The emergency Studio presentation patch uses the exact committed shared CSS only
+on successful editor/create HTML. It changes neither immutable asset bytes nor
+user data. Rendered HTML revision and control revision must be reported separately
+when this temporary patch is used. A fresh normal build with the same CSS needs
+no patch.
+
+The final capacity gate rejects Pages assets above 25 MiB, a Worker above the
+current 64 MiB uncompressed limit, and a single Studio catalog above its 20 MiB
+operational growth budget. It warns by failing closed before 85,000 Pages files.
+The actual site currently has a roughly 14 MB Studio JSON; the next scale stage
+must shard that catalog and versioned search data. Moving current delivery files
+out of Pages does not complete the five-million-item database, incremental-build,
+search, sitemap, CPU, request-quota or traffic-cost work listed above. Never claim
+unlimited capacity or guaranteed unchanged speed.
+
+Latest owner direction: the final public catalog must restore original R2 image sources. The 7ff HTML is rollback material only; never activate it as the final migration after the original-image restoration has been approved. Use the later clean, completely audited renderer revision. A build whose HTML text/alt audit fails is not a release candidate, even if its targeted unit tests passed.
+
+The owner activated Workers Paid on 2026-10-27; authenticated dashboard evidence
+is retained with the release handoff. The project publisher now uses at most 16
+transfer actors and four native list pages per inventory invocation. The separate
+range reader remains limited to four readers per bucket. The existing 128 MB
+reservation allowance covers all in-flight sources at their hard 8 MB maximum;
+the 10 TB account cap and 45-second freshness checks are unchanged. A slow cold
+census supplies read-only partition hints only, then a new complete live census
+must produce a valid write reservation. Local sources use a single raw binary
+body with signed metadata and optional gzip transport, avoiding large base64 JSON.
+Stored R2 bytes remain the exact reviewed source, independently read back and
+hashed. Never treat the older deliberately stopped session logs as current errors.
+Workers Paid is separate from the domain Pro and R2 storage subscriptions; no
+paid AI inference or expanded generation budgets are enabled by this change.
+
+Before activating a pruned production artifact, verify Workers Paid is active
+and set the Pages production runtime to fail closed (`fail_open: false`). A
+pruned `/art/` or `/edit/` file is deliberately absent from static storage: falling
+through after a Worker failure could otherwise turn a temporary outage into a
+false 404. Record the actual project setting and successful deployment receipt;
+an account-plan assumption or a prepared local artifact is insufficient.

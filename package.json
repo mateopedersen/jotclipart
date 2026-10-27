@@ -7,7 +7,7 @@
     "node": ">=22.23.4"
   },
   "scripts": {
-    "content:audit": "node scripts/reviewed-imports.mjs",
+    "content:audit": "node scripts/artwork-editorial.mjs",
     "content:review": "node scripts/prepare-editorial-review.mjs",
     "content:apply": "node scripts/apply-editorial-review.mjs",
     "dev": "astro dev --host 127.0.0.1",

@@ -1,5 +1,8 @@
 import { spawnSync } from 'node:child_process';
-import { readdirSync } from 'node:fs';
+import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
+import { prepareDeliveryRelease } from './delivery/activate.mjs';
+import { assertReleaseBudgets } from './delivery/budgets.mjs';
 import { resolve } from 'node:path';
 import { readPublication } from './publication-policy.mjs';
 
@@ -9,9 +12,14 @@ const env = {
   CF_PAGES: '1',
   ASTRO_TELEMETRY_DISABLED: '1',
   PAGES_WRANGLER_MAJOR_VERSION: '4',
+  UC_DELIVERY_PREPARE: '1',
+  // The owner activated Workers Paid on 2026-10-27. These project-scoped
+  // bounds reduce transfer latency without changing the request count or proofs.
+  UC_DELIVERY_ACTORS: process.env.UC_DELIVERY_ACTORS ?? '16',
+  UC_DELIVERY_INVENTORY_PAGES: process.env.UC_DELIVERY_INVENTORY_PAGES ?? '4',
 };
-// Keep a manual build's HTML and compiled assets in one Pages deployment.
-// R2 HTML offload is a separate migration and must not be inherited here.
+// Each release stages and verifies its own catalog before atomic activation.
+// A pilot selector cannot silently change the reviewed release scope.
 delete env.CATALOG_OFFLOAD_COLLECTION;
 function run(script, args = []) {
   const result = spawnSync(process.execPath, [script, ...args], {
@@ -38,12 +46,35 @@ run(
     .filter((name) => name.endsWith('.mjs'))
     .map((name) => `tests/${name}`),
 );
-run('node_modules/wrangler/bin/wrangler.js', [
+const revision = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
+run('scripts/delivery/stage.mjs', ['dist']);
+const target = resolve(root, 'work/delivery', revision, `pages-release-${Date.now()}`);
+const manifestPath = resolve(root, 'work/delivery', revision, 'verified-manifest.json');
+const release = await prepareDeliveryRelease({
+  source: resolve(root, 'dist'),
+  target,
+  manifestPath,
+  revision,
+  controlRevision: revision,
+});
+const budgets = assertReleaseBudgets(target);
+writeFileSync(
+  resolve(root, 'work/delivery', revision, 'release-budget.json'),
+  JSON.stringify(budgets, null, 2) + '\n',
+);
+// Use the process-local pinned uploader: proactive token renewal and durable
+// checkpoints. No dependency file or reviewed content is modified.
+run('--require', [
+  './scripts/delivery/pages-upload-preload.cjs',
+  'node_modules/wrangler/wrangler-dist/cli.js',
   'pages',
   'deploy',
-  'dist',
+  target,
   '--project-name',
   'ultraclipart',
   '--branch',
   'main',
+  '--commit-hash',
+  revision,
 ]);
+console.log(JSON.stringify({ prepared: release, receiptRequired: true }));

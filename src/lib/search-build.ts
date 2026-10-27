@@ -41,7 +41,8 @@ export function getSearchBuild(): Promise<SearchBuild> {
     build.files.set(`${version}/site`, site);
     // Includes artwork/editor pages, all topics and 200 shell/runtime files.
     // Media must be served from R2 at scale, not duplicated in Pages output.
-    assertPagesFileCount(build.files.size + data.length * 2 + topics.length + 200);
+    if (process.env.UC_DELIVERY_PREPARE !== '1')
+      assertPagesFileCount(build.files.size + data.length * 2 + topics.length + 200);
     return build;
   })();
   return cached;

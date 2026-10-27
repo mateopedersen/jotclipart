@@ -85,7 +85,7 @@ test(
     const pages = sitemapXml('pages'),
       images = sitemapXml('images');
     const cookieBreadcrumb = text('clipart/cookie/index.html').match(
-      /<div class="breadcrumb">([\s\S]*?)<\/div>/,
+      /<div\b[^>]*class="breadcrumb"[^>]*>([\s\S]*?)<\/div>/,
     )?.[1];
     assert.ok(cookieBreadcrumb?.includes('/collection/food-drink/'));
     for (const topic of topics) {

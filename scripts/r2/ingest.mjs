@@ -12,11 +12,15 @@ import {
   mkdtempSync,
   rmSync,
   realpathSync,
+  readdirSync,
 } from 'node:fs';
 import { resolve, join, extname } from 'node:path';
 import { tmpdir } from 'node:os';
 import { setTimeout as delay } from 'node:timers/promises';
 import { buildPlan, validateBatch, enforceStorageBudget, HARD_CAP } from './plan.mjs';
+import { acquireAccountWriter } from '../delivery/account-lock.mjs';
+import { openNativeInventorySession } from './native-inventory-session.mjs';
+import { bootstrapInventoryHints } from './inventory-bootstrap.mjs';
 import { configuredToken, cloudflareTransport } from './cloudflare-api.mjs';
 import {
   measureAccount,
@@ -144,11 +148,32 @@ async function aws(command, fields = [], requestEndpoint = endpoint) {
     );
   }
 }
+let nativeInventory;
 async function measure() {
   const options = {
     endpoint,
     batch,
-    aws,
+    aws: async (command, fields, requestEndpoint) => {
+      if (command !== 'list-objects-v2' || !nativeInventory)
+        return aws(command, fields, requestEndpoint);
+      const value = (flag) => fields[fields.indexOf(flag) + 1];
+      const page = await nativeInventory.read(
+        {
+          bucket: value('--bucket'),
+          jurisdiction: parseEndpoint(requestEndpoint).jurisdiction,
+          cursor: fields.includes('--continuation-token')
+            ? value('--continuation-token')
+            : undefined,
+        },
+        () => aws(command, fields, requestEndpoint),
+      );
+      // Native listings carry R2's real ETag. Reuse an already byte-verified
+      // hash only when this complete fresh listing reports the same version.
+      const jurisdiction = parseEndpoint(requestEndpoint).jurisdiction;
+      if (!page.IsTruncated && nativeInventory.owns(value('--bucket'), jurisdiction))
+        rest.observeNativeListing(value('--bucket'), jurisdiction, page.Contents ?? []);
+      return page;
+    },
     ...(rest ? { proveAbsent: rest.proveAbsent, enumerationSource: rest.enumerationSource } : {}),
     ...(!rest && verifyAbsentScopes
       ? {
@@ -167,7 +192,12 @@ async function measure() {
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
       const inventory = await measureAccount(options);
+      if (nativeInventory) nativeInventory.update(inventory);
       if (Date.now() - inventory.observedAt <= 45_000) return inventory;
+      // A slow, complete census may only supply hints to a read-only session.
+      // The next full census must still finish within the original 45 seconds.
+      if (apply && rest && !nativeInventory)
+        nativeInventory = await openNativeInventorySession(inventory);
       if (attempt === 2) throw new Error('Fresh all-account inventory could not finish in time');
     } catch (error) {
       if (
@@ -183,6 +213,7 @@ async function measure() {
   }
 }
 let lock;
+let releaseAccountLock;
 const lockPath = resolve('.r2-ingest.lock');
 const journalPath = resolve('r2-ingest-journal.json');
 const verificationDir = mkdtempSync(join(tmpdir(), 'ultraclipart-r2-'));
@@ -193,8 +224,48 @@ function checkpoint(value) {
 }
 try {
   if (apply) {
+    releaseAccountLock = acquireAccountWriter();
     lock = openSync(lockPath, 'wx', 0o600);
     writeFileSync(lock, String(process.pid));
+    if (rest) {
+      try {
+        const previous = JSON.parse(readFileSync(journalPath, 'utf8'));
+        const known = [];
+        const publication = JSON.parse(readFileSync('data/publication.json', 'utf8'));
+        for (const file of publication.files ?? []) {
+          const url = new URL(file.url);
+          if (url.hostname === 'assets.ultraclipart.com')
+            known.push({
+              bucket: 'ultraclipart-media',
+              key: decodeURIComponent(url.pathname.slice(1)),
+            });
+        }
+        const candidates = readdirSync('work/delivery', { withFileTypes: true }).filter((x) =>
+          x.isDirectory(),
+        );
+        for (const candidate of candidates) {
+          try {
+            const manifest = JSON.parse(
+              readFileSync(join('work/delivery', candidate.name, 'verified-manifest.json'), 'utf8'),
+            );
+            if (manifest.status !== 'remote-byte-verified' || !Array.isArray(manifest.files))
+              continue;
+            for (const file of manifest.files)
+              known.push({ bucket: manifest.bucket, key: file.key });
+            break;
+          } catch {}
+        }
+        const hints = bootstrapInventoryHints(previous, parseEndpoint(endpoint).accountId, known);
+        nativeInventory = await openNativeInventorySession(hints);
+        console.log(
+          'Read-only inventory session bootstrapped from prior range hints; a fresh complete census is still required.',
+        );
+      } catch {
+        // No prior receipt or a stale/missing bucket binding: use the original
+        // cold census. Never turn bootstrap failure into an authorization.
+        console.log('Prior range hints unavailable; using a full cold census.');
+      }
+    }
   }
   const inventory = inventoryPath
     ? JSON.parse(readFileSync(inventoryPath, 'utf8'))
@@ -335,9 +406,14 @@ try {
     console.log('All objects verified. Editorial publication remains a separate reviewed step.');
   }
 } finally {
-  rmSync(verificationDir, { recursive: true, force: true });
-  if (lock !== undefined) {
-    closeSync(lock);
-    unlinkSync(lockPath);
+  try {
+    await nativeInventory?.close();
+  } finally {
+    rmSync(verificationDir, { recursive: true, force: true });
+    if (lock !== undefined) {
+      closeSync(lock);
+      unlinkSync(lockPath);
+    }
+    releaseAccountLock?.();
   }
 }

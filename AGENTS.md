@@ -1,3 +1,11 @@
+# Artwork-specific writing — latest owner direction, 2026-10-26
+
+Latest clarification: all current and future topics use this policy, including Donald Trump. Public-figure illustrations may show imagined activities, costumes, props and scenery; do not imply real events, achievements, election results, endorsements or documentary evidence. Describe the image neutrally. Use the reusable `content:review` / `content:apply` batch pipeline instead of independent page edits. A vision reviewer must actually receive and inspect the images. Atomic application rejects the entire batch if any item is pending, stale, duplicated or invalid; do not extend the legacy ledger to admit new items. The shared owner policy is also recorded in the global Codex AGENTS.md and `/Users/melihozcan/Documents/Codex/AGENTS.md` for other chats and checkouts.
+
+Read `docs/content/artwork-editorial.md` for all catalog work. Inspect each actual image before writing a natural, specific title/H1, alt and description; do not derive prose from filenames, reuse a category-wide usage paragraph, or append repeated download instructions. Describe the actual composition and visible details without invented facts, credentials or human-authorship claims. User-facing download labels use Image, while actual file formats/MIME remain accurate. All new or changed entries require a source-bound editorial review; changed image hashes invalidate approval. The automatic resolver may remove known boilerplate but must never pretend to have inspected unseen pixels. The legacy baseline is a finite migration ledger, not permission to approve future imports. Keep the exact review backlog honest. This editorial batch is explicitly authorized for publication by the owner.
+
+Category pages follow the same principle: one concise, topic-specific introduction describing actual available drawings and helping visitors choose. Use `data/editorial/collections.json` and `collectionIntroduction`; never restore long SEO essays or repeated download/print/license/editor paragraphs beneath every gallery. Technical guidance belongs in the shared file guide and artwork facts. `scripts/collection-editorial.mjs` verifies every published topic's unique introduction against its current catalog and example-image hashes; a new topic or changed source requires a checked summary. Do not meet a supposed Google word count or invent expert authority. These concise summaries are checked against catalog records; that is not a claim that every underlying image has been newly visually reviewed.
+
 # Check existing content before every new production topic — 2026-10-26
 
 Latest explicit owner direction: do not draw a topic that already has content.
@@ -347,6 +355,22 @@ The separate `fix/artwork-editorial-quality` branch is implementing the shared s
 
 The owner explicitly authorized inspection, repair and live publication of eleven supplied 50-pair archives. Read `docs/content/tesla-commerce-import.md` and `work/imports/tesla-commerce-550/local-state.json` before resuming. No new drawing is authorized. The two Cybercab spellings share one canonical collection; Optimus is identified at family level, while three visibly generic robots belong to Robot. Preserve exact original files and their actual PDF print dimensions/densities. Short source-specific copy and the current image hashes must pass the shared editorial validator. The existing editorial registry is normalized to the coordinated array format without dropping concurrent reviews; future importers must preserve that format. The finite 13,004-entry legacy ledger is reused unchanged, never extended, and never called a fresh visual review. All later or changed images/metadata require real source-bound reviews in every topic. Future new topic inventories also require concise source-bound introductions in `data/editorial/*-collection.json` or the shared collection registry. Existing legacy prose is not bulk rewritten in this integration. Recheck main before promotion and preserve concurrently accepted collections. Call the batch live only after matching the successful production revision and real deployment receipt. The paused 134 Marvel drawings remain separate.
 
+## Delivery migration and shared publication ownership — 2026-10-27
+
+The owner authorized the permanent delivery plan, coordination with the other
+UltraClipart chats, and explicitly approved temporarily disabling Cloudflare's
+automatic production deployments. Read `docs/catalog-scale.md` before publishing.
+Use the guarded normal `scripts/deploy.mjs` path once the migration is activated;
+never upload a stale dist, bypass source-bound reviews, extend the finite legacy
+ledger, relax the 10 TB/45-second inventory controls, or describe queued/staged
+objects as live. Preserve the full verified build for rollback. During this
+migration the content-upload chat coordinates the sole production activation;
+other chats supply reviewed source commits without launching independent uploads.
+The pending Marvel artwork remains unrelated. No new plan purchase or Search
+Console/Bing submission is authorized. Record actual successful deployment counts
+and distinguish rendered HTML from a newer delivery-control revision. The first
+migration is not proof that the remaining five-million-item architecture is done.
+
 ## Public image delivery — latest owner decision, 2026-10-27
 
 The owner reverted the public low-resolution preview strategy after Google
@@ -364,3 +388,20 @@ still use small thumbnails; editing and export must use verified originals.
 The original-source decision does not cancel the separate R2/Pages capacity
 migration. Preserve old URLs, personal data and the coordinated single-publisher
 workflow. Do not claim Google rankings or immediate reindexing are guaranteed.
+
+## Supplied wizard and football package — 2026-10-27
+
+The owner authorized inspection, repair and live publication of ten supplied
+archives. Resume from `work/imports/wizard-football-2026-10-27` and read its
+`visual-copy-review.json`, `review.next.json` and current upload journals.
+All ten contain 50 actual image/PDF pairs; 500 originals and PDF renderings were
+inspected, and 88 similarity candidates were compared from actual paired pixels.
+The package includes generic original alternatives: do not falsely identify those
+as Ron Weasley, the Sorting Hat or the Golden Snitch. The reviewed allocation is
+45 Golden Snitch, 37 Sorting Hat, 22 Ron Weasley, 33 fantasy crafts, 13 fantasy
+headwear, 50 football couples, 50 football hobbies, 50 football hearts, 100 Football
+Valentine, 50 basketball brackets and 50 Hogwarts. The two Valentine Football
+spellings share one collection. Counts describe catalog topics, not missing files;
+do not draw filler to force every resulting subject to 50. All supplied originals
+remain unchanged. Reviewed preparation is not CDN verification or publication.
+Preserve current accepted content and the unrelated paused Marvel backlog.
