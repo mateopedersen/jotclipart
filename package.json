@@ -61,7 +61,8 @@
     "icons:build": "node scripts/build-site-icons.mjs",
     "seo:core:audit": "node scripts/seo/audit-core-seo.mjs",
     "seo:core:report": "node scripts/seo/report-core-seo.mjs",
-    "test:e2e:seo-core": "node tests/e2e/core-seo.mjs"
+    "test:e2e:seo-core": "node tests/e2e/core-seo.mjs",
+    "test:e2e:studio-mobile-scroll": "node tests/e2e/studio-mobile-scroll.mjs"
   },
   "dependencies": {
     "@fontsource/inter": "5.2.8",
