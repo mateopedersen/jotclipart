@@ -56,6 +56,7 @@ test('R2 detail/editor responses retain full HTML, headers, noindex and URL iden
   assert.equal(response.status, 200);
   assert.equal(await response.text(), body);
   assert.equal(response.headers.get('Content-Security-Policy'), "default-src 'self'");
+  assert.match(response.headers.get('Cache-Control'), /no-transform/);
   assert.match(response.headers.get('X-UC-Delivery'), /r2/);
   const editor = await run('/edit/scene/');
   assert.equal(editor.headers.get('X-Robots-Tag'), 'noindex');
@@ -94,6 +95,7 @@ test('missing binding/object and R2 errors are honest uncacheable outages', asyn
 test('HEAD, ETag, partial and invalid ranges use the correct object bounds', async () => {
   const { run } = fixture();
   const head = await run(imagePath, { method: 'HEAD' });
+  assert.match(head.headers.get('Cache-Control'), /no-transform/);
   assert.equal(await head.text(), '');
   assert.equal(head.headers.get('Content-Length'), '11');
   assert.equal((await run(imagePath, { headers: { 'If-None-Match': '"checked"' } })).status, 304);

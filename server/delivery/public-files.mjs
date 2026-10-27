@@ -54,7 +54,11 @@ export function createPublicFileHandler(options) {
         const hit = await cache.match(cacheKey);
         if (hit) {
           if (html)
-            hit.headers.set('Cache-Control', 'public,max-age=0,s-maxage=300,must-revalidate');
+            hit.headers.set(
+              'Cache-Control',
+              'public,max-age=0,s-maxage=300,must-revalidate,no-transform',
+            );
+          else hit.headers.set('Cache-Control', 'public,max-age=31536000,immutable,no-transform');
           if (request.headers.get('If-None-Match') === hit.headers.get('ETag'))
             return new Response(null, { status: 304, headers: hit.headers });
           return new Response(request.method === 'HEAD' ? null : hit.body, {
@@ -85,7 +89,9 @@ export function createPublicFileHandler(options) {
     headers.set('ETag', object.httpEtag);
     headers.set(
       'Cache-Control',
-      html ? 'public,max-age=0,s-maxage=300,must-revalidate' : 'public,max-age=31536000,immutable',
+      html
+        ? 'public,max-age=0,s-maxage=300,must-revalidate,no-transform'
+        : 'public,max-age=31536000,immutable,no-transform',
     );
     headers.set('X-UC-Delivery', `r2; html=${options.revision}`);
     if (html && match[1] === 'edit') headers.set('X-Robots-Tag', 'noindex');
@@ -145,7 +151,7 @@ export function createPublicFileHandler(options) {
     });
     if (request.method === 'GET' && !range && status === 200 && cache && context?.waitUntil) {
       const stored = response.clone();
-      if (html) stored.headers.set('Cache-Control', 'public,max-age=300');
+      if (html) stored.headers.set('Cache-Control', 'public,max-age=300,no-transform');
       context.waitUntil(cache.put(cacheKey, stored).catch(() => {}));
     }
     return response;
