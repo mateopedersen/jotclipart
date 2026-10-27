@@ -90,9 +90,18 @@ for (const [engine, implementation] of Object.entries({ chromium, webkit })) {
           }
           const more = root.locator('[data-related-more]');
           await page.evaluate(() => {
-            window.__relatedTestEvents = [];
+            document.documentElement.dataset.relatedTestButtonCount = '0';
             window.addEventListener('ultraclipart:related', (event) => {
-              if (event.detail.event === 'show_more') window.__relatedTestEvents.push(event.detail);
+              if (
+                event instanceof CustomEvent &&
+                event.detail.event === 'show_more' &&
+                event.detail.trigger === 'button'
+              ) {
+                const root = document.documentElement;
+                root.dataset.relatedTestButtonCount = String(
+                  Number(root.dataset.relatedTestButtonCount) + 1,
+                );
+              }
             });
           });
           for (let i = 0; i < 20 && (await more.isVisible()); i++) {
@@ -101,16 +110,15 @@ for (const [engine, implementation] of Object.entries({ chromium, webkit })) {
             // scrolls it into view, so this checks a genuine button activation.
             await more.focus();
             const before = await root.locator('.related-card').count();
-            const previousButtonEvents = await page.evaluate(
-              () => window.__relatedTestEvents.filter((event) => event.trigger === 'button').length,
+            const previousButtonEvents = await page.evaluate(() =>
+              Number(document.documentElement.dataset.relatedTestButtonCount),
             );
             await more.click();
             await expect.poll(() => root.locator('.related-card').count()).toBeGreaterThan(before);
             await expect
               .poll(() =>
-                page.evaluate(
-                  () =>
-                    window.__relatedTestEvents.filter((event) => event.trigger === 'button').length,
+                page.evaluate(() =>
+                  Number(document.documentElement.dataset.relatedTestButtonCount),
                 ),
               )
               .toBeGreaterThan(previousButtonEvents);
