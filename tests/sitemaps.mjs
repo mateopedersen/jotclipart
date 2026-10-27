@@ -10,6 +10,7 @@ import {
   directoryArtwork,
   sitemapDocuments,
   partitionSitemapEntries,
+  SITEMAP_MAX_BYTES,
 } from '../src/lib/sitemaps.ts';
 
 const example = {
@@ -65,6 +66,26 @@ test('growing catalogs split automatically while retaining the first sitemap URL
   );
   assert.ok(sitemapIndex(art).includes('/sitemap-images-2.xml'));
 });
+test('100,001 approved artworks produce complete bounded image sitemap partitions', () => {
+  const art = Array.from({ length: 100001 }, (_, index) => ({
+    ...example,
+    id: `large-${index}`,
+    webp: `https://assets.ultraclipart.com/large/${index}.webp`,
+  }));
+  const documents = sitemapDocuments(art, []);
+  const images = documents.filter((document) => document.kind.startsWith('images'));
+  assert.deepEqual(
+    images.map((document) => document.kind),
+    ['images', 'images-2', 'images-3'],
+  );
+  const urls = images.flatMap((document) => {
+    assert.ok(Buffer.byteLength(document.xml) <= SITEMAP_MAX_BYTES);
+    return [...document.xml.matchAll(/<image:loc>([^<]+)<\/image:loc>/g)].map((match) => match[1]);
+  });
+  assert.equal(urls.length, 100001);
+  assert.equal(new Set(urls).size, 100001);
+  assert.ok(urls.includes('https://assets.ultraclipart.com/large/100000.webp'));
+});
 test('sitemap splitting respects UTF-8 bytes as well as URL counts', () => {
   const entry = '<url><loc>https://ultraclipart.com/žiedas/</loc></url>';
   const overhead =
@@ -79,6 +100,14 @@ test('sitemap splitting respects UTF-8 bytes as well as URL counts', () => {
   assert.throws(() =>
     partitionSitemapEntries([entry], false, 50000, overhead + Buffer.byteLength(entry) - 1),
   );
+});
+
+test('default sitemap partitions fit the hosting per-file budget', () => {
+  const entry = `<url><loc>https://ultraclipart.com/${'a'.repeat(13 * 1024 ** 2)}</loc></url>`;
+  const parts = partitionSitemapEntries([entry, entry]);
+  assert.equal(parts.length, 2);
+  assert.ok(parts.every((part) => Buffer.byteLength(part) <= SITEMAP_MAX_BYTES));
+  assert.ok(SITEMAP_MAX_BYTES < 25 * 1024 ** 2);
 });
 
 test('unapproved and noindex assets never enter the image or page sitemap', () => {

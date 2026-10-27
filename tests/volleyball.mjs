@@ -1,3 +1,4 @@
+import { sitemapXml } from './support/sitemaps.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
@@ -79,8 +80,8 @@ test(
     assert.match(topic, /"@type":"CollectionPage"/);
     assert.match(topic, /"numberOfItems":50/);
     assert.doesNotMatch(topic, /<meta name="robots" content="noindex/);
-    const sitemap = read('dist/sitemap-pages.xml'),
-      images = read('dist/sitemap-images.xml');
+    const sitemap = sitemapXml('pages'),
+      images = sitemapXml('images');
     assert.ok(sitemap.includes('https://ultraclipart.com/clipart/volleyball/'));
     for (const a of volleyball) {
       const html = read(`dist/art/${a.id}/index.html`);

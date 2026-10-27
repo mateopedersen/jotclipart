@@ -16,6 +16,9 @@ const context = await browser.newContext({
   reducedMotion: 'reduce',
 });
 const page = await context.newPage();
+await page.route('**/api/cookie-region.json', (route) =>
+  route.fulfill({ contentType: 'application/json', body: '{"showNotice":false}' }),
+);
 const errors = [],
   violations = [],
   checks = [],
@@ -37,6 +40,11 @@ const change = async (selector, value) => {
 };
 const saved = async (name) => {
   const p = page.waitForEvent('download');
+  await page
+    .locator('details')
+    .filter({ has: page.locator('[data-action="save"]') })
+    .locator('summary')
+    .click();
   await action('save').click();
   const d = await p;
   const file = path.join(out, name);
@@ -253,7 +261,15 @@ try {
     if (actionName === 'new-shape') {
       await panel('create');
       await page.locator('[data-shape="heart"]').click();
-    } else await action(actionName).click();
+    } else {
+      if (actionName === 'reset' && !(await action('reset').isVisible()))
+        await page
+          .locator('details')
+          .filter({ has: page.locator('[data-action="reset"]') })
+          .locator('summary')
+          .click();
+      await action(actionName).click();
+    }
     const chosen = await state();
     await page.waitForTimeout(850);
     expect(await state()).toEqual(chosen);

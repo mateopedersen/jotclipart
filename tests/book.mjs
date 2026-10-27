@@ -1,3 +1,4 @@
+import { sitemapXml } from './support/sitemaps.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
@@ -66,8 +67,8 @@ test(
     const page = text('clipart/book/index.html');
     assert.ok(page.includes('https://ultraclipart.com/clipart/book/'));
     assert.ok(page.includes('"numberOfItems":50'));
-    const pages = text('sitemap-pages.xml');
-    const images = text('sitemap-images.xml');
+    const pages = sitemapXml('pages');
+    const images = sitemapXml('images');
     for (const item of items) {
       const detail = readPublishedPage(item, 'art');
       assert.ok(pages.includes(`/art/${item.id}/`));

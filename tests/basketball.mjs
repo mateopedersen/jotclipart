@@ -1,3 +1,4 @@
+import { sitemapXml } from './support/sitemaps.mjs';
 import { assertPublishedImage } from './support/published-page.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -65,8 +66,8 @@ test(
     const page = text('clipart/basketball/index.html');
     assert.ok(page.includes('https://ultraclipart.com/clipart/basketball/'));
     assert.ok(page.includes('"numberOfItems":50'));
-    const pages = text('sitemap-pages.xml');
-    const images = text('sitemap-images.xml');
+    const pages = sitemapXml('pages');
+    const images = sitemapXml('images');
     for (const item of items) {
       const detail = text(`art/${item.id}/index.html`);
       assert.ok(pages.includes(`/art/${item.id}/`));

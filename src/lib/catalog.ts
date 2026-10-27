@@ -8,12 +8,7 @@ import { validateEditorSource } from './artwork-source';
 import { auditMonochrome } from '../../scripts/monochrome-catalog.mjs';
 import type { MonochromeKind } from './monochrome';
 import { newestFirst } from './publication-order.ts';
-import {
-  previewUrls,
-  previewIdentity,
-  preparePreviewAssets,
-  readPreviewIndex,
-} from '../../scripts/preview-assets.mjs';
+import { preparePreviewAssets } from '../../scripts/preview-assets.mjs';
 import { clustersForTopic, topicInCluster, primaryClusterForTopic } from './topic-clusters';
 export { clustersForTopic, topicInCluster } from './topic-clusters';
 export const topics = [...source.topics, ...extraTopics].map((topic) => ({
@@ -28,35 +23,17 @@ const reviewedIllustrations = reviewedImportCatalog(illustrations, editorialRevi
 const monochromeAudit = await auditMonochrome(reviewedIllustrations);
 export const reviewedCollectionIntroductions = readRequiredCollectionIntroductions(illustrations);
 await preparePreviewAssets(reviewedIllustrations);
-const previewIndex = readPreviewIndex();
 const screenImages = (item: (typeof illustrations)[number]) => {
-  if (!item.published || !item.indexable)
-    return {
-      originalThumb: item.thumb,
-      preview: item.webp,
-      previewWidth: item.width,
-      previewHeight: item.height,
-      previewSrcSet: undefined as string | undefined,
-      thumbWidth: 440,
-      thumbSrcSet: undefined as string | undefined,
-    };
-  const urls = previewUrls(item),
-    files = previewIndex[previewIdentity(item)].files;
+  const original = publishedAssets?.[item.id]?.webp ?? item.webp;
   return {
     originalThumb: publishedAssets?.[item.id]?.thumb ?? item.thumb,
-    thumb: urls[440],
-    thumbWidth: files[440].width,
-    preview: urls[960],
-    previewWidth: files[960].width,
-    previewHeight: files[960].height,
-    previewSrcSet: [440, 640, 960]
-      .filter((w) => files[w])
-      .map((w) => `${urls[w]} ${files[w].width}w`)
-      .join(', '),
-    thumbSrcSet: [96, 220, 320, 440]
-      .filter((w) => files[w])
-      .map((w) => `${urls[w]} ${files[w].width}w`)
-      .join(', '),
+    thumb: original,
+    thumbWidth: item.width,
+    preview: original,
+    previewWidth: item.width,
+    previewHeight: item.height,
+    previewSrcSet: undefined as string | undefined,
+    thumbSrcSet: undefined as string | undefined,
   };
 };
 export const art = reviewedIllustrations.map((item) => ({
@@ -74,8 +51,7 @@ export const art = reviewedIllustrations.map((item) => ({
       return [kind, publishedAssets?.[item.id]?.[kind] ?? item[kind]];
     }),
   ),
-  // Originals and their download checksums stay untouched. Only screen previews
-  // use the reproducible, source-bound presentation files generated before build.
+  // Public artwork uses the original; editor-specific preview assets remain available.
   ...screenImages(item),
 }));
 // Public counters and navigation exclude drafts, withdrawn and non-indexable records.

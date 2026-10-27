@@ -104,11 +104,14 @@ function imageEntries(art: Artwork[]): string[] {
 const prefix = (images: boolean) =>
   `${XML}<urlset xmlns="${NS}"${images ? ' xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"' : ''}>`;
 const suffix = '</urlset>';
+// Google permits 50 MiB, but Pages rejects individual assets above 25 MiB.
+// Keep a margin so every generated XML file also fits the hosting limit.
+export const SITEMAP_MAX_BYTES = 24 * 1024 ** 2;
 export function partitionSitemapEntries(
   entries: string[],
   images = false,
   maxUrls = 50000,
-  maxBytes = 50 * 1024 ** 2,
+  maxBytes = SITEMAP_MAX_BYTES,
 ): string[] {
   const start = prefix(images),
     overhead = Buffer.byteLength(start + suffix),

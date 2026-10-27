@@ -1,3 +1,4 @@
+import { sitemapXml } from './support/sitemaps.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
@@ -81,7 +82,7 @@ test(
   { skip: !existsSync(new URL('../dist/clipart/gta-6/index.html', import.meta.url)) },
   () => {
     const text = (p) => readFileSync(new URL('../dist/' + p, import.meta.url), 'utf8');
-    const sitemap = text('sitemap-images.xml');
+    const sitemap = sitemapXml('images');
     for (const topic of Object.keys(packageContexts)) {
       const html = text('clipart/' + topic + '/index.html');
       const count = rows.filter((item) => item.topic === topic).length;

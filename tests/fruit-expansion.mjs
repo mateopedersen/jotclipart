@@ -1,3 +1,4 @@
+import { sitemapXml } from './support/sitemaps.mjs';
 import { assertPublishedImage } from './support/published-page.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -113,8 +114,8 @@ test(
   { skip: !existsSync(new URL('../dist/clipart/green-apple/index.html', import.meta.url)) },
   () => {
     const text = (p) => readFileSync(new URL('../dist/' + p, import.meta.url), 'utf8');
-    const pages = text('sitemap-pages.xml'),
-      images = text('sitemap-images.xml');
+    const pages = sitemapXml('pages'),
+      images = sitemapXml('images');
     for (const topic of topics) {
       const collection = text(`clipart/${topic}/index.html`);
       assert.ok(collection.includes(`https://ultraclipart.com/clipart/${topic}/`));

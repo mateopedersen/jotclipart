@@ -87,8 +87,12 @@ if (process.env.CF_PAGES === '1') {
     references: compiled,
     root,
     directory: dist,
+    useOriginalScreens: true,
   });
   console.log(`Source-verified screen thumbnails: ${presentation.screenThumbnails}.`);
+  console.log(
+    `Verified original images used for screen thumbnails: ${presentation.originalScreens}.`,
+  );
   if (process.env.CATALOG_OFFLOAD_COLLECTION) {
     const collection = process.env.CATALOG_OFFLOAD_COLLECTION;
     const revision = releaseRevision();

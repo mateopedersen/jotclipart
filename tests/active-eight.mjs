@@ -1,3 +1,4 @@
+import { sitemapXml } from './support/sitemaps.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
@@ -81,8 +82,8 @@ test(
   },
   () => {
     const text = (path) => readFileSync(new URL('../dist/' + path, import.meta.url), 'utf8');
-    const pages = text('sitemap-pages.xml'),
-      images = text('sitemap-images.xml');
+    const pages = sitemapXml('pages'),
+      images = sitemapXml('images');
     const cookieBreadcrumb = text('clipart/cookie/index.html').match(
       /<div\b[^>]*class="breadcrumb"[^>]*>([\s\S]*?)<\/div>/,
     )?.[1];
