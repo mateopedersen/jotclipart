@@ -1,5 +1,7 @@
 import { chromium, webkit, expect } from '@playwright/test';
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { mkdirSync, writeFileSync, readFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import assert from 'node:assert/strict';
 import AxeBuilder from '@axe-core/playwright';
 import { inspectLayout } from '../helpers/layout-audit.mjs';
 const base = process.env.BASE_URL || 'http://127.0.0.1:4323';
@@ -8,9 +10,34 @@ const out = process.env.EVIDENCE_DIR || `reports/layout-states/${engine}`;
 mkdirSync(out, { recursive: true });
 const browser = await { chromium, webkit }[engine].launch();
 const context = await browser.newContext({ reducedMotion: 'reduce', hasTouch: true });
+// Localhost is not an allowed production CDN origin. Keep UI layout checks
+// deterministic while the delivery suite verifies the real R2 CORS response.
+const shareFixture = readFileSync(
+  new URL('../../public/catalog/winter/winter-arctic-fox-resting.webp', import.meta.url),
+);
+assert.equal(
+  createHash('sha256').update(shareFixture).digest('hex').slice(0, 16),
+  'bcd9ea9b093fb409',
+);
+await context.route(
+  'https://assets.ultraclipart.com/winter/winter-arctic-fox-resting.webp.*',
+  (route) =>
+    route.fulfill({
+      body: shareFixture,
+      contentType: 'image/webp',
+      headers: { 'Access-Control-Allow-Origin': '*' },
+    }),
+);
 const page = await context.newPage();
 page.setDefaultTimeout(18000);
-const report = { engine, date: new Date().toISOString(), states: [], errors: [], requests: [] };
+const report = {
+  engine,
+  date: new Date().toISOString(),
+  states: [],
+  errors: [],
+  requests: [],
+  shareImageTransport: 'Verified local original fixture; CDN CORS tested separately',
+};
 page.on('pageerror', (e) => report.errors.push({ url: page.url(), message: e.message }));
 page.on('request', (r) => {
   if (!['GET', 'HEAD'].includes(r.method()))
@@ -128,12 +155,11 @@ try {
       await go('/create/');
       await page.locator('.uc-editor').scrollIntoViewIfNeeded();
       await expect(page.locator('.uc-workspace')).not.toHaveAttribute('inert', '');
-      const select = page.locator('[data-inspector-panel]');
-      const options = await select
-        .locator('option')
-        .evaluateAll((items) => items.map((o) => o.value));
+      const options = await page
+        .locator('.uc-tools [data-panel]')
+        .evaluateAll((items) => items.map((button) => button.dataset.panel));
       for (const panel of options) {
-        await select.selectOption(panel);
+        await page.locator(`.uc-tools [data-panel="${panel}"]`).click();
         await snapshot('studio-' + panel, '.uc-properties');
       }
     });
