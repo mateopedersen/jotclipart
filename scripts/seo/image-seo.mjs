@@ -113,9 +113,11 @@ export const isNoindex = (elements) =>
 export function restoreOriginalCatalogImages(html, index, elements = htmlElements(html)) {
   const changes = [];
   const escape = (value) =>
-    value.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
-  const attribute = (name) =>
-    new RegExp(`\\s+${name}(?![\\w:-])(?:\\s*=\\s*(?:"[^"]*"|'[^']*'|[^\\s>]+))?`, 'i');
+    value
+      .replace(/&/g, '&amp;')
+      .replace(/"/g, '&quot;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
   for (const element of elements) {
     const a = element.attributes;
     const image = element.name === 'img' && a.alt?.trim();
@@ -128,14 +130,21 @@ export function restoreOriginalCatalogImages(html, index, elements = htmlElement
     const original =
       /\.svg(?:$|[?#])/i.test(a[key]) && record.item.svg ? record.item.svg : record.item.webp;
     if (!original) throw new Error(`Original catalog source missing: ${record.item.id}`);
-    let tag = html.slice(element.index, element.end);
-    tag = tag.replace(attribute(key), ` ${key}="${escape(original)}"`);
+    let changed = a[key] !== original;
     for (const name of image ? ['srcset', 'sizes'] : ['imagesrcset', 'imagesizes']) {
-      tag = tag.replace(attribute(name), '');
+      changed ||= Object.hasOwn(a, name);
       delete a[name];
     }
     a[key] = original;
-    if (tag !== html.slice(element.index, element.end)) changes.push({ ...element, tag });
+    if (changed) {
+      // Attribute names come from the parsed start tag. Never search its raw
+      // text for names: words such as "sizes" may be part of an alt/title value.
+      const attributes = Object.entries(a)
+        .map(([name, value]) => ` ${name}="${escape(value)}"`)
+        .join('');
+      const ending = html.slice(element.index, element.end).endsWith('/>') ? '/>' : '>';
+      changes.push({ ...element, tag: `<${element.name}${attributes}${ending}` });
+    }
   }
   for (const change of changes.reverse())
     html = html.slice(0, change.index) + change.tag + html.slice(change.end);
