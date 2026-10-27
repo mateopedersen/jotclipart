@@ -17,6 +17,7 @@ import {
   decodeHtml,
 } from './image-seo.mjs';
 import { imageFileSignature } from './image-file-signature.mjs';
+import { readIndexedSitemaps } from './indexed-sitemaps.mjs';
 
 export function auditImageSeo({ root, directory, catalog, publishedAssets = null }) {
   const eligible = catalog.filter((a) => a.published && a.indexable);
@@ -181,25 +182,28 @@ export function auditImageSeo({ root, directory, catalog, publishedAssets = null
         fail('(assets)', 'image bytes do not match filename format', value);
     }
   }
-  const xml = readFileSync(join(directory, 'sitemap-images.xml'), 'utf8');
-  const imageLocations = [...xml.matchAll(/<image:loc>([^<]+)<\/image:loc>/g)].map((m) =>
-    decodeHtml(m[1]),
+  const sitemap = readIndexedSitemaps(directory, IMAGE_SITE);
+  for (const error of sitemap.errors) fail('(sitemap.xml)', 'sitemap index', error);
+  const imageLocations = sitemap.images.flatMap(({ xml }) =>
+    [...xml.matchAll(/<image:loc>([^<]+)<\/image:loc>/g)].map((m) => decodeHtml(m[1])),
   );
   const expected = new Set(
     eligible.map((a) => absoluteImageUrl(publishedAssets?.[a.id]?.webp ?? a.webp)),
   );
   if (imageLocations.length !== eligible.length || new Set(imageLocations).size !== eligible.length)
-    fail('(sitemap-images.xml)', 'image count or duplicate original URL', imageLocations.length);
+    fail('(image sitemaps)', 'image count or duplicate original URL', imageLocations.length);
   for (const url of imageLocations)
-    if (!expected.has(url)) fail('(sitemap-images.xml)', 'unexpected original', url);
-  if (/<image:(caption|title|license|geo_location)>/.test(xml))
-    fail('(sitemap-images.xml)', 'deprecated image sitemap field', 'found');
-  const pageMap = readFileSync(join(directory, 'sitemap-pages.xml'), 'utf8');
-  const sitemapPages = [...pageMap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => decodeHtml(m[1]));
+    if (!expected.has(url)) fail('(image sitemaps)', 'unexpected original', url);
+  for (const { path, xml } of sitemap.images)
+    if (/<image:(caption|title|license|geo_location)>/.test(xml))
+      fail(path, 'deprecated image sitemap field', 'found');
+  const sitemapPages = sitemap.pages.flatMap(({ xml }) =>
+    [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => decodeHtml(m[1])),
+  );
   const indexed = new Map(rows.map((r) => [r.canonical, r]));
   for (const url of sitemapPages)
     if (!indexed.get(url)?.indexable)
-      fail('(sitemap-pages.xml)', 'missing or noindex destination', url);
+      fail('(page sitemaps)', 'missing or noindex destination', url);
   for (const item of eligible) {
     const url = new URL(`art/${encodeURIComponent(item.id)}/`, IMAGE_SITE).href;
     if (!indexed.get(url)?.indexable) fail('(catalog)', 'missing indexable detail page', item.id);
