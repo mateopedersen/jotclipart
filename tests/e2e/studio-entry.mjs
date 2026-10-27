@@ -86,8 +86,9 @@ for (const [engine, implementation] of Object.entries({ chromium, webkit })) {
         await page.locator('.site-footer').scrollIntoViewIfNeeded();
         await expect(page.locator('.site-footer')).toBeInViewport();
         assert.ok(await page.evaluate(() => scrollY > 100));
-        await page.reload({ waitUntil: 'domcontentloaded' });
+        await page.reload({ waitUntil: 'load' });
         await root.scrollIntoViewIfNeeded();
+        await expect(root).toBeInViewport();
         await expect(page.locator('.uc-workspace')).not.toHaveAttribute('inert', '', {
           timeout: 60000,
         });
