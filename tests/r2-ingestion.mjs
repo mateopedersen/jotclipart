@@ -97,6 +97,17 @@ closeSync(lock);unlinkSync(path+'.lock');console.log(JSON.stringify(result));`;
     assert.equal(journal.verifiedObjects.length, 16);
     run('--apply', '--workers', '4');
     assert.equal(JSON.parse(readFileSync(env.FAKE_STATE)).puts, 16, 'resume must not upload again');
+    env.UC_INGEST_JOURNAL = join(dir, 'separate-journal.json');
+    run('--apply', '--workers', '4');
+    assert.equal(
+      JSON.parse(readFileSync(env.UC_INGEST_JOURNAL)).status,
+      'uploaded-and-byte-verified',
+    );
+    assert.equal(
+      JSON.parse(readFileSync(join(dir, 'r2-ingest-journal.json'))).status,
+      'uploaded-and-byte-verified',
+    );
+    assert.equal(JSON.parse(readFileSync(env.FAKE_STATE)).puts, 16);
     const state = JSON.parse(readFileSync(env.FAKE_STATE));
     state.objects[batch[0].key].body = Buffer.from('corrupted bytes').toString('base64');
     writeFileSync(env.FAKE_STATE, JSON.stringify(state));

@@ -215,7 +215,7 @@ async function measure() {
 let lock;
 let releaseAccountLock;
 const lockPath = resolve('.r2-ingest.lock');
-const journalPath = resolve('r2-ingest-journal.json');
+const journalPath = resolve(process.env.UC_INGEST_JOURNAL || 'r2-ingest-journal.json');
 const verificationDir = mkdtempSync(join(tmpdir(), 'ultraclipart-r2-'));
 function checkpoint(value) {
   const temp = `${journalPath}.${process.pid}.tmp`;
