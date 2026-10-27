@@ -1,0 +1,501 @@
+{
+  "wave": "wave_445",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "elf-reading-to-a-hedgehog",
+      "title": "Elf Reading with a Hedgehog",
+      "alt": "White-haired cartoon elf seated on a stump and showing an open blank storybook to a small scarf-wearing hedgehog.",
+      "description": "The friendly hedgehog looks up beside the elf's red lace-up shoes. A cream-sleeved green outfit and red folded cap frame the open book between them.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_445/source/elf-reading-to-a-hedgehog.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "29193a6d4cd287b65798848739290c2a1e8ceb824ba7984b82817146ff1fa28c",
+      "inputSignature": "c75df412dda2b05bcafa757d765357332aa68a5441eca2e677fb309e63c3bc85",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 964716,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 964716,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        159,
+        29,
+        1170,
+        1101
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_445/exports/elf-reading-to-a-hedgehog.pdf",
+          "bytes": 964716,
+          "sha256": "c20f02df988b50b629ab20f1158056d7c6038b2530b9e581477a2a2e71b0604e"
+        },
+        "webp": {
+          "path": "work/production/wave_445/exports/elf-reading-to-a-hedgehog.webp",
+          "bytes": 849016,
+          "sha256": "7eafd5cef4fd9409eed7e0a30d30e0d7413ef841646f130c26ac20a921b9061b"
+        },
+        "thumb": {
+          "path": "work/production/wave_445/exports/elf-reading-to-a-hedgehog-thumb.webp",
+          "bytes": 51962,
+          "sha256": "2d72db3e41b491a55b6ffa3506cce380afac0a51c16357ad8336c17ed7f88853"
+        }
+      },
+      "proofSha256": "7958eda1fdef9a77879e9059f5e6b69d23c6c8c2be56e31cdd0065d121427503",
+      "pairMeanRgbDifference": 4.40123
+    },
+    {
+      "id": "elf-parcel-delivery-bicycle",
+      "title": "Elf Walking a Christmas Cargo Bicycle",
+      "alt": "Black-curled cartoon elf in green short overalls walking beside a red cargo bicycle carrying wrapped Christmas gifts.",
+      "description": "One hand holds the handlebar beside the loaded wooden cargo box. A wreath with a gold bell decorates its front, while the elf steps forward in bright red curled shoes.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_445/source/elf-parcel-delivery-bicycle.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1244,
+      "height": 1264,
+      "pdfWidth": 984,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "2c7dcad78a66c95f25328ba3c4bb0b5a84cea903d47e2d4f8a3a75ef61d0e5d9",
+      "inputSignature": "fb17368e0134ba87874bf3064f004606f9594361a48d2916cbdd5da992dcf509",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 871298,
+        "weightedCmykRmse": 0.818749
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1172889,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 871298,
+          "weightedCmykRmse": 0.818749
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        88,
+        46,
+        1218,
+        1196
+      ],
+      "image": {
+        "width": 984,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_445/exports/elf-parcel-delivery-bicycle.pdf",
+          "bytes": 871298,
+          "sha256": "6c6c4f0cef05fbe8530d03139fa1da1570819814db9c13f274131138896ab0cb"
+        },
+        "webp": {
+          "path": "work/production/wave_445/exports/elf-parcel-delivery-bicycle.webp",
+          "bytes": 962618,
+          "sha256": "7b2eeadad63817c301c1b43b19fc104a8341c7e3f84921106f398545ceec5d04"
+        },
+        "thumb": {
+          "path": "work/production/wave_445/exports/elf-parcel-delivery-bicycle-thumb.webp",
+          "bytes": 68368,
+          "sha256": "f2eb1b18b840067b659a0d419441d83a292fc830c51e1df155217e38c968456c"
+        }
+      },
+      "proofSha256": "33fb7f7ce4ad4d18bea89cc4b372b98012e6c3a4e1e7042a274428a3c11c7cc6",
+      "pairMeanRgbDifference": 5.41241
+    },
+    {
+      "id": "elf-ribbon-knot-lesson",
+      "title": "Three Christmas Elves Ice Skating",
+      "alt": "Three different green-clothed cartoon elves holding hands in a curved skating chain, each wearing complete silver-bladed skates.",
+      "description": "A curly-haired elf leads two smaller companions with dark braids and a red fringe. Different green outfits, hats and striped or plain leggings give each skater a distinct identity.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_445/source/elf-ribbon-knot-lesson.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "e7bc55fed466ec4d51d00f7c00eee5bbcd9d4c3494f03d4d68d63041b2851789",
+      "inputSignature": "2dedb8f35e7aafa35d6c79e39cb62aced60e82329101208892488024efe66790",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 962821,
+        "weightedCmykRmse": 0.749551
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1144655,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 962821,
+          "weightedCmykRmse": 0.749551
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        17,
+        12,
+        1519,
+        995
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_445/exports/elf-ribbon-knot-lesson.pdf",
+          "bytes": 962821,
+          "sha256": "4ffddd515e3b6f541daf85ed8dff894355a9cc612b34090622d6ab1f5c12b9b8"
+        },
+        "webp": {
+          "path": "work/production/wave_445/exports/elf-ribbon-knot-lesson.webp",
+          "bytes": 1650286,
+          "sha256": "c86a4bc45dd21d38327841b3596235e0b465a93365f47434e537861484f9a5c7"
+        },
+        "thumb": {
+          "path": "work/production/wave_445/exports/elf-ribbon-knot-lesson-thumb.webp",
+          "bytes": 66484,
+          "sha256": "78fa7de0aa3d51dcda63ac7128ca100436ab82d35af6b4dba983c3890ea126a2"
+        }
+      },
+      "proofSha256": "0583e7910b0d1149fdb806afaea7f266535b518e02d214913ff624ff3ef70345",
+      "pairMeanRgbDifference": 8.00963
+    },
+    {
+      "id": "elf-kite-test",
+      "title": "Elf Flying a Christmas Kite",
+      "alt": "Braided cartoon elf in a green tunic holding a red-and-green diamond kite and its connected string spool.",
+      "description": "The kite's red ribbon tail curves beside the elf's raised hand. Blue eyes, a star-tipped green cap and brown curled shoes distinguish the cheerful standing figure.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_445/source/elf-kite-test.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1245,
+      "height": 1263,
+      "pdfWidth": 986,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "f5ecda5e217482aaa69ced0eeab965af54ddc3eb8075b68ed54f5b194cfc3e07",
+      "inputSignature": "c845e9d08cc378e70b16e3be1a690f9058a238ee5e69104071f816b88368aa97",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 847920,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 847920,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        159,
+        27,
+        1203,
+        1190
+      ],
+      "image": {
+        "width": 986,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_445/exports/elf-kite-test.pdf",
+          "bytes": 847920,
+          "sha256": "5e5919761cd6bbb077c24dddcdf346a41167ffd0d6ea46a98ebf4261f20736c0"
+        },
+        "webp": {
+          "path": "work/production/wave_445/exports/elf-kite-test.webp",
+          "bytes": 665848,
+          "sha256": "82f842ba6826e33025c08842d2bbd0fc9774aa167fdffd4ea5fdfe8ca14933d9"
+        },
+        "thumb": {
+          "path": "work/production/wave_445/exports/elf-kite-test-thumb.webp",
+          "bytes": 51058,
+          "sha256": "58de08ca8f27ea6321160cf30ad34d16f6f8b1383894fdadacba334f34266e49"
+        }
+      },
+      "proofSha256": "7ec586ce3c0780e99abd6a8cd06a1610f529d36e1dae432298b279dbeb780a9e",
+      "pairMeanRgbDifference": 4.20662
+    },
+    {
+      "id": "elf-cleaning-paintbrushes",
+      "title": "Elf Rinsing a Paintbrush",
+      "alt": "Curly-haired cartoon elf seated on a red gift, rinsing a brush in a small bowl beside a jar of paintbrushes.",
+      "description": "Water droplets rise beside the brush as it touches the bowl. A red sash, striped stockings and buckled brown boots distinguish the green-clothed character.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_445/source/elf-cleaning-paintbrushes.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1272,
+      "height": 1237,
+      "pdfWidth": 1000,
+      "pdfHeight": 972,
+      "sourceType": "raster",
+      "sourceSha256": "1e494b8d5408150995c35117a37a93076386cfb0f37b6fddbbc5b54d75ed7c4f",
+      "inputSignature": "94bdc42f9e10ea6fc939d2176aa99c2d94677ec74b5f380ee9a890ce1728cee5",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 750185,
+        "weightedCmykRmse": 0.81885
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1033676,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 750185,
+          "weightedCmykRmse": 0.81885
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        137,
+        55,
+        1193,
+        1170
+      ],
+      "image": {
+        "width": 1000,
+        "height": 972,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_445/exports/elf-cleaning-paintbrushes.pdf",
+          "bytes": 750185,
+          "sha256": "95708974ebc397f60305b4a852c63889bd69a16ecd0a9a4b3389d582891d54b7"
+        },
+        "webp": {
+          "path": "work/production/wave_445/exports/elf-cleaning-paintbrushes.webp",
+          "bytes": 844626,
+          "sha256": "194fff9999c335ba3258d59265a9e995027a6bd9211959c0011f8769f4f5937e"
+        },
+        "thumb": {
+          "path": "work/production/wave_445/exports/elf-cleaning-paintbrushes-thumb.webp",
+          "bytes": 59848,
+          "sha256": "a8ff2da479f270fa08fa07ad0a284c7c522c97d1c717f3681417c33574d9c261"
+        }
+      },
+      "proofSha256": "cece24468108c2e948efd361c2acab109c49c4a7c8efcda0f0003be4d6830909",
+      "pairMeanRgbDifference": 6.2105
+    },
+    {
+      "id": "elf-map-and-compass",
+      "title": "Elf Planning a Gift Delivery Route",
+      "alt": "Black-haired cartoon elf kneeling beside a red gift sack, holding a compass and pointing to a tree-marked imaginary map.",
+      "description": "A dotted route winds between green tree symbols on the cream map. The elf's compass, red cap and full sack of toys create a clear fictional delivery-planning scene.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_445/source/elf-map-and-compass.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1318,
+      "height": 1193,
+      "pdfWidth": 1000,
+      "pdfHeight": 905,
+      "sourceType": "raster",
+      "sourceSha256": "e8e2cddc08a8c224d2e25c4529532c86c5351ca010f486191c86c6c933222b84",
+      "inputSignature": "6ad35d534c20001abb98a18b3d75e16616f4042365a3c3598c09632f38894ded",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 904596,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 904596,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        126,
+        27,
+        1169,
+        1148
+      ],
+      "image": {
+        "width": 1000,
+        "height": 905,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_445/exports/elf-map-and-compass.pdf",
+          "bytes": 904596,
+          "sha256": "69d730e4131b56ec7b160f974917200d69f7154f74d947fb3f4eae4b71ec4e98"
+        },
+        "webp": {
+          "path": "work/production/wave_445/exports/elf-map-and-compass.webp",
+          "bytes": 798654,
+          "sha256": "ecb989581513b07d2cb0d11315e25d49bd8d94c71aff23f5efc01fc3bacb1690"
+        },
+        "thumb": {
+          "path": "work/production/wave_445/exports/elf-map-and-compass-thumb.webp",
+          "bytes": 50632,
+          "sha256": "ed5c315172db28f4d2785ea5f415cca1a94fd1cf546732ae4cc678078c891332"
+        }
+      },
+      "proofSha256": "e91556a492935bc24547b8fd6531b52c1f7acabc9a13ea147bc78f961c8a648e",
+      "pairMeanRgbDifference": 5.52138
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T05:22:28.556429+00:00",
+  "screenReviewEvidence": "work/production/wave_445/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T05:29:05.303Z"
+}

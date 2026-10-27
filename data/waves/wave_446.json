@@ -1,0 +1,179 @@
+{
+  "wave": "wave_446",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 2,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "elf-choosing-green-fabric",
+      "title": "Elf Comparing Green Fabrics",
+      "alt": "Copper-curled cartoon elf in a green waistcoat and red shorts holding plain and patterned green fabric beside three thread spools.",
+      "description": "A cream measuring tape drapes over the patterned cloth. The elf compares its holly-and-scroll design with a plain dark-green piece held in the other hand.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_446/source/elf-choosing-green-fabric.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "6a81ce98f09ceb477f59ad76064d9cbc2a69fec26ccd714575d2ab74b82882e1",
+      "inputSignature": "108b5464257c54e53ad596bc9de729f59e8722d995b2ed043e52a5e31490eda3",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 830926,
+        "weightedCmykRmse": 0.816849
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1115126,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 830926,
+          "weightedCmykRmse": 0.816849
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        52,
+        26,
+        1310,
+        1108
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_446/exports/elf-choosing-green-fabric.pdf",
+          "bytes": 830926,
+          "sha256": "5af1a8cce9857def838c7e6639cef0c6ac09a5ea7b5b3e7fac6a89d44c1f1231"
+        },
+        "webp": {
+          "path": "work/production/wave_446/exports/elf-choosing-green-fabric.webp",
+          "bytes": 1028660,
+          "sha256": "7eab22726d6294308a93ef2d53f3fba06badab5267698afada87bb6b5ceb2f7e"
+        },
+        "thumb": {
+          "path": "work/production/wave_446/exports/elf-choosing-green-fabric-thumb.webp",
+          "bytes": 59360,
+          "sha256": "9551bed0fc4d796d08ca3583677ceaf98a09064bd69a7106d8645f82f295660f"
+        }
+      },
+      "proofSha256": "49aeb9378a88f2415ece6dd7fb4b1ccc82ff39aac39327430946e0a7c834beb8",
+      "pairMeanRgbDifference": 5.57007
+    },
+    {
+      "id": "elf-folding-paper-lantern",
+      "title": "Elf Folding a Red Paper Lantern",
+      "alt": "Dark-braided cartoon elf seated cross-legged, folding a red accordion-paper lantern beside a finished gold lantern and two paper strips.",
+      "description": "The elf pinches the red folds above striped knees. A red-banded green cap, cream cuffs and gold bells on the curled shoes distinguish the paper-craft scene.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_446/source/elf-folding-paper-lantern.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "cb8cd37d829530db9154d766c409f71ae9b993437b12c469ebadc6345f71acc5",
+      "inputSignature": "cfa7a3caf678d94ce6a25f138767ddb187ab63646eb2c3c409445d74b3e83f60",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 829828,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 829828,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        211,
+        36,
+        1174,
+        1112
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_446/exports/elf-folding-paper-lantern.pdf",
+          "bytes": 829828,
+          "sha256": "580b6bb92addf8e14b6dac9970cd45deb9fc7bf9947d4675503b9b77d23380dc"
+        },
+        "webp": {
+          "path": "work/production/wave_446/exports/elf-folding-paper-lantern.webp",
+          "bytes": 698390,
+          "sha256": "cc28ddc272e023a97e6029cfa68783e07a7c86a53084f4a2873e0b6dea7fad57"
+        },
+        "thumb": {
+          "path": "work/production/wave_446/exports/elf-folding-paper-lantern-thumb.webp",
+          "bytes": 44202,
+          "sha256": "416263959417dba53aaf9b4ce8357c75e53ec115dc8389d92431919177c3b7c6"
+        }
+      },
+      "proofSha256": "edca4871291aaa087c91cc8ed632e312f7a37ef3df1bf405a2e1116acb9f75a3",
+      "pairMeanRgbDifference": 3.93193
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T05:22:28.559856+00:00",
+  "screenReviewEvidence": "work/production/wave_446/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T05:29:05.635Z"
+}

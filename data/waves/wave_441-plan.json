@@ -1,0 +1,77 @@
+{
+  "wave": "wave_441",
+  "topic": "elf",
+  "method": "builtin-image-generation",
+  "research": "data/research/elf-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "elf-pulling-a-toy-train",
+      "title": "Elf Pulling a Christmas Toy Train",
+      "alt": "Braided cartoon elf in a green tunic pulling a red-and-green toy locomotive with two gift-filled wagons.",
+      "description": "A cord connects the elf's hand to the small locomotive. Presents, candy canes and a teddy bear ride in the two wagons behind the skipping figure.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_441/source/elf-pulling-a-toy-train.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-making-a-toy-boat",
+      "title": "Elf Holding a Toy Sailboat",
+      "alt": "Blue-eyed cartoon elf in a green jacket holding a wooden sailboat and touching the top of its cream sail.",
+      "description": "One hand supports the boat's red-brown hull while the other reaches toward the mast. A floppy green cap, red shorts and long striped stockings distinguish the standing elf.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_441/source/elf-making-a-toy-boat.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-shelving-storybooks",
+      "title": "Elf Putting Away a Storybook",
+      "alt": "Blond cartoon elf standing on a small wooden step and sliding a green book onto a two-shelf bookcase.",
+      "description": "The elf looks back while placing a plain green volume on the little bookcase. Heart-shaped cutouts, rows of festive book spines and a low two-step stool make the reading corner distinct.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_441/source/elf-shelving-storybooks.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-tying-a-large-bow",
+      "title": "Two Elves Tying a Giant Gift Bow",
+      "alt": "Two different green-clothed cartoon elves holding opposite loops of a large red bow above a cream Christmas gift.",
+      "description": "A white-haired elf in a green coat works beside a dark-braided elf in a green dress. Their different caps, stockings and faces frame the oversized red bow between them.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_441/source/elf-tying-a-large-bow.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-rolling-a-gift-cart",
+      "title": "Elf in a Wheelchair with Christmas Gifts",
+      "alt": "Auburn-braided cartoon elf seated in a manual wheelchair with a lap parcel and a small gift wagon alongside.",
+      "description": "The green-clothed elf holds a cream gift with a red bow above the wheelchair footplate. A red wagon beside the chair carries a teddy bear, candy canes and more wrapped parcels.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_441/source/elf-rolling-a-gift-cart.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-resting-in-a-leaf-hammock",
+      "title": "Elf Sleeping in a Leaf Hammock",
+      "alt": "Small curly-haired cartoon elf asleep in a green leaf hammock suspended between two carved wooden posts.",
+      "description": "Folded hands, closed eyes and bent striped legs give the elf a peaceful pose. Holly-tied ropes support the leaf-shaped hammock between two complete scroll-topped stands.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_441/source/elf-resting-in-a-leaf-hammock.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

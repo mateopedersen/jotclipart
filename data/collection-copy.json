@@ -10608,5 +10608,48 @@
       "cyber-monday",
       "black-friday"
     ]
+  },
+  "elf": {
+    "description": "Christmas elf clipart with cute green-clothed characters, toy-making scenes, gift deliveries, festive lettering and craft decorations.",
+    "intro": "Cheerful Christmas elves in green outfits, with big pointed ears and playful expressions. Find toy-making helpers, skating friends, gift deliveries, festive lettering and small craft decorations in soft shaded and clean cartoon styles.",
+    "lead": "Little Christmas helpers, gifts and playful holiday scenes.",
+    "featured": [
+      "elf-wrapping-a-parcel",
+      "elf-testing-handbells",
+      "elf-ribbon-knot-lesson",
+      "elf-happy-holidays-lettering",
+      "elf-leaf-umbrella",
+      "elf-folding-paper-lantern"
+    ],
+    "chips": [
+      {
+        "label": "Christmas helpers",
+        "query": "elf Christmas"
+      },
+      {
+        "label": "Toy workshop",
+        "query": "elf toy"
+      },
+      {
+        "label": "Gift scenes",
+        "query": "elf gift"
+      },
+      {
+        "label": "Holiday lettering",
+        "query": "elf holidays"
+      },
+      {
+        "label": "Craft decorations",
+        "query": "elf ornament"
+      }
+    ],
+    "heading": "",
+    "paragraphs": [],
+    "print": "Choose a single character, a small group or a festive decoration to fit your holiday layout.",
+    "related": [
+      "winter",
+      "nutcracker",
+      "gingerbread"
+    ]
   }
 }

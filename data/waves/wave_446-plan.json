@@ -1,0 +1,33 @@
+{
+  "wave": "wave_446",
+  "topic": "elf",
+  "method": "builtin-image-generation",
+  "research": "data/research/elf-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "elf-choosing-green-fabric",
+      "title": "Elf Comparing Green Fabrics",
+      "alt": "Copper-curled cartoon elf in a green waistcoat and red shorts holding plain and patterned green fabric beside three thread spools.",
+      "description": "A cream measuring tape drapes over the patterned cloth. The elf compares its holly-and-scroll design with a plain dark-green piece held in the other hand.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_446/source/elf-choosing-green-fabric.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-folding-paper-lantern",
+      "title": "Elf Folding a Red Paper Lantern",
+      "alt": "Dark-braided cartoon elf seated cross-legged, folding a red accordion-paper lantern beside a finished gold lantern and two paper strips.",
+      "description": "The elf pinches the red folds above striped knees. A red-banded green cap, cream cuffs and gold bells on the curled shoes distinguish the paper-craft scene.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_446/source/elf-folding-paper-lantern.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "wave": "wave_440",
+  "topic": "elf",
+  "method": "builtin-image-generation",
+  "research": "data/research/elf-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "elf-building-a-gingerbread-house",
+      "title": "Elf Icing a Gingerbread Roof",
+      "alt": "Black-curled cartoon elf in a green dress piping white icing onto a gingerbread house resting on a wrapped gift.",
+      "description": "The piping bag meets the snowy edge of a candy-covered roof. A scalloped green dress, gold bow belt and red curled shoes frame the small baker beside a green Christmas parcel.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_440/source/elf-building-a-gingerbread-house.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-reading-an-envelope",
+      "title": "Elf Reading a Christmas Letter",
+      "alt": "Smiling brown-haired cartoon elf seated on two Christmas gifts and holding an unfolded cream letter.",
+      "description": "The elf reads a large blank letter with both hands while sitting above a green star-patterned parcel. Red lace-up curled boots hang over the gifts beneath a green tunic and cream sleeves.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_440/source/elf-reading-an-envelope.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-stamping-gift-tags",
+      "title": "Elf Stamping a Star Gift Tag",
+      "alt": "Dark-haired cartoon elf in green overalls pressing a wooden stamp onto a large star-decorated gift tag.",
+      "description": "A cream tag and red-and-white tie rest on the little wooden work surface. The elf leans over the stamp in green short overalls, with a red-sleeved shirt and striped stockings.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_440/source/elf-stamping-gift-tags.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-checking-parcel-balance",
+      "title": "Elf Weighing a Christmas Parcel",
+      "alt": "Auburn-haired cartoon elf in a green coat holding a small brass balance with a wrapped gift and gold weights.",
+      "description": "The elf steadies the top of a hanging balance while pointing toward its ribboned parcel. A red folded cap and cream-trimmed green coat distinguish the upright figure.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_440/source/elf-checking-parcel-balance.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-assembling-a-music-box",
+      "title": "Elf with an Open Christmas Music Box",
+      "alt": "Blond-curled cartoon elf kneeling beside an open green music box containing a miniature tree and rocking horse.",
+      "description": "A Christmas tree, gold stars and a little white rocking horse fill the red-lined box. The elf leans forward with one hand at its inner edge, dressed in a cream-trimmed green coat and brown curled shoes.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_440/source/elf-assembling-a-music-box.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-knitting-a-scarf",
+      "title": "Elf Knitting a Striped Scarf",
+      "alt": "Braided cartoon elf in a green dress sitting on a Christmas gift and knitting a long red-and-cream scarf.",
+      "description": "Broad red and cream stripes lead from the elf's wooden needles to a fringed scarf end. Two dark braids, a red-banded green cap and buckled brown boots give the seated figure its own silhouette.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_440/source/elf-knitting-a-scarf.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

@@ -1,0 +1,508 @@
+{
+  "wave": "wave_440",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "elf-building-a-gingerbread-house",
+      "title": "Elf Icing a Gingerbread Roof",
+      "alt": "Black-curled cartoon elf in a green dress piping white icing onto a gingerbread house resting on a wrapped gift.",
+      "description": "The piping bag meets the snowy edge of a candy-covered roof. A scalloped green dress, gold bow belt and red curled shoes frame the small baker beside a green Christmas parcel.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_440/source/elf-building-a-gingerbread-house.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1222,
+      "height": 1287,
+      "pdfWidth": 949,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "4c42f06775ae10a009bbe1c160618b31582ad670371066f38610427518f5629e",
+      "inputSignature": "f9e266754985b19d8c4c119fefbae9749ffabcb4d5f8932126f608a3d43c38cf",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 884978,
+        "weightedCmykRmse": 0.802903
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1143137,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 884978,
+          "weightedCmykRmse": 0.802903
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        117,
+        24,
+        1143,
+        1229
+      ],
+      "image": {
+        "width": 949,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_440/exports/elf-building-a-gingerbread-house.pdf",
+          "bytes": 884978,
+          "sha256": "504ea76cc23bcb2f82971657d5b53fc0a5cc4583687fad84ac2247f32a299a02"
+        },
+        "webp": {
+          "path": "work/production/wave_440/exports/elf-building-a-gingerbread-house.webp",
+          "bytes": 1113924,
+          "sha256": "48010238384fff461a42c95e506df6aebf97b47b09d38d4800077353649bf26e"
+        },
+        "thumb": {
+          "path": "work/production/wave_440/exports/elf-building-a-gingerbread-house-thumb.webp",
+          "bytes": 64664,
+          "sha256": "27000fe9cc84249df3cae0523cb2cf8c6cdffdd261e49b9eab431b150e4b12e8"
+        }
+      },
+      "proofSha256": "a698b64c4828d57755532e71f33ebd8e81595cfcc8d3817223f67b911736a364",
+      "pairMeanRgbDifference": 5.51459
+    },
+    {
+      "id": "elf-reading-an-envelope",
+      "title": "Elf Reading a Christmas Letter",
+      "alt": "Smiling brown-haired cartoon elf seated on two Christmas gifts and holding an unfolded cream letter.",
+      "description": "The elf reads a large blank letter with both hands while sitting above a green star-patterned parcel. Red lace-up curled boots hang over the gifts beneath a green tunic and cream sleeves.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_440/source/elf-reading-an-envelope.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1214,
+      "height": 1295,
+      "pdfWidth": 937,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "ff338e29a8ed70dc3513d7acf238b31e85b5b56788d6b50fffa694d44440374b",
+      "inputSignature": "76d89a6a14c8092a86147ba69e3ae042130dd85c253dd8f949994a4104f5eee2",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 847801,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 847801,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        284,
+        97,
+        967,
+        1188
+      ],
+      "image": {
+        "width": 937,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_440/exports/elf-reading-an-envelope.pdf",
+          "bytes": 847801,
+          "sha256": "7babcc583d1d4bf3925211658f1108c9438ca822abbf5e69ceb33407adf04a12"
+        },
+        "webp": {
+          "path": "work/production/wave_440/exports/elf-reading-an-envelope.webp",
+          "bytes": 812070,
+          "sha256": "168a486ae85942a97fee67e7dc8862b02a9265b8ecf0348f961d521706525f9b"
+        },
+        "thumb": {
+          "path": "work/production/wave_440/exports/elf-reading-an-envelope-thumb.webp",
+          "bytes": 40646,
+          "sha256": "02fc5391a00d083ce4875539164d7762785758faa5f33fd19be5ca2f7201d0d8"
+        }
+      },
+      "proofSha256": "92b73e4d1c51a5bb0f7a77dd555824233570a8ce48000b2f082139d45e93d365",
+      "pairMeanRgbDifference": 3.35683
+    },
+    {
+      "id": "elf-stamping-gift-tags",
+      "title": "Elf Stamping a Star Gift Tag",
+      "alt": "Dark-haired cartoon elf in green overalls pressing a wooden stamp onto a large star-decorated gift tag.",
+      "description": "A cream tag and red-and-white tie rest on the little wooden work surface. The elf leans over the stamp in green short overalls, with a red-sleeved shirt and striped stockings.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_440/source/elf-stamping-gift-tags.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1322,
+      "height": 1190,
+      "pdfWidth": 1000,
+      "pdfHeight": 900,
+      "sourceType": "raster",
+      "sourceSha256": "5096cb9dbc371f0fce1268a9f1acaaa53ebf0b3c1c063456aab15f01fbcf967c",
+      "inputSignature": "89474e1487cf6f51db539ea79b3f2d7f401b04f42a9a5890b1f635b4dc0c7d74",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 956449,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 956449,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        215,
+        52,
+        1203,
+        1138
+      ],
+      "image": {
+        "width": 1000,
+        "height": 900,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_440/exports/elf-stamping-gift-tags.pdf",
+          "bytes": 956449,
+          "sha256": "3d10209d71b41dfcffe9f704d90de8a54e0273303d168e80caf87496cf851b60"
+        },
+        "webp": {
+          "path": "work/production/wave_440/exports/elf-stamping-gift-tags.webp",
+          "bytes": 860574,
+          "sha256": "ef4d2f51edfc7ea274796ece1bae2c05194aec3250bbbc88c1efc5f6d1a55601"
+        },
+        "thumb": {
+          "path": "work/production/wave_440/exports/elf-stamping-gift-tags-thumb.webp",
+          "bytes": 45866,
+          "sha256": "0bdd86fa545ae6866e88f76aaa9b383369dd5ed91231bde6b62edb996195b8b9"
+        }
+      },
+      "proofSha256": "cf5ee400ebc7eab4006e40473317c693417e72f72f8d6fd4a3f41463535e9ba2",
+      "pairMeanRgbDifference": 3.87297
+    },
+    {
+      "id": "elf-checking-parcel-balance",
+      "title": "Elf Weighing a Christmas Parcel",
+      "alt": "Auburn-haired cartoon elf in a green coat holding a small brass balance with a wrapped gift and gold weights.",
+      "description": "The elf steadies the top of a hanging balance while pointing toward its ribboned parcel. A red folded cap and cream-trimmed green coat distinguish the upright figure.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_440/source/elf-checking-parcel-balance.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1222,
+      "height": 1287,
+      "pdfWidth": 949,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "6553362af0601442a783681bf1ebdc5793c4fef713b31fec1c7d635d4afb3cd9",
+      "inputSignature": "0c5a948328fc55b4af3c7dc296f9cf5ffa30f5329113a017947860b73b7f4532",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 840178,
+        "weightedCmykRmse": 0.853245
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1072311,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 840178,
+          "weightedCmykRmse": 0.853245
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        87,
+        79,
+        1152,
+        1203
+      ],
+      "image": {
+        "width": 949,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_440/exports/elf-checking-parcel-balance.pdf",
+          "bytes": 840178,
+          "sha256": "1aa75d892fc626676eccb212de7a26fb9913f179496351b31ed90d173bf68b57"
+        },
+        "webp": {
+          "path": "work/production/wave_440/exports/elf-checking-parcel-balance.webp",
+          "bytes": 883620,
+          "sha256": "0332b91bc5ef8706a3540d692d307572314733bbaf88a00ccf595d7759e513c9"
+        },
+        "thumb": {
+          "path": "work/production/wave_440/exports/elf-checking-parcel-balance-thumb.webp",
+          "bytes": 55752,
+          "sha256": "ac9dea21928c135a7442be27c6fd3efda32a31333ede9b66e53dc77ac792c6ea"
+        }
+      },
+      "proofSha256": "edd0b72de8d70d6a96573499df1437f7544980e34c1ac2714a244f202da27059",
+      "pairMeanRgbDifference": 4.18877
+    },
+    {
+      "id": "elf-assembling-a-music-box",
+      "title": "Elf with an Open Christmas Music Box",
+      "alt": "Blond-curled cartoon elf kneeling beside an open green music box containing a miniature tree and rocking horse.",
+      "description": "A Christmas tree, gold stars and a little white rocking horse fill the red-lined box. The elf leans forward with one hand at its inner edge, dressed in a cream-trimmed green coat and brown curled shoes.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_440/source/elf-assembling-a-music-box.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "82de988355f482d3c99c28fb36c02931570508c806c73f4bbb5edf5a4db6bd49",
+      "inputSignature": "91949af1b0251fc85c98a5692c55867802121ace4efc0d56050f53eaba977bc0",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 799581,
+        "weightedCmykRmse": 0.831091
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1063927,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 799581,
+          "weightedCmykRmse": 0.831091
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        218,
+        38,
+        1168,
+        1107
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_440/exports/elf-assembling-a-music-box.pdf",
+          "bytes": 799581,
+          "sha256": "d895a4e53c3d299f051cdfb570be80f346993014840e54430aa1b9e1182b8d4e"
+        },
+        "webp": {
+          "path": "work/production/wave_440/exports/elf-assembling-a-music-box.webp",
+          "bytes": 1044258,
+          "sha256": "4b9742d3ffdd999353fc758d425a9725ba2116d348c6ee10449655c47433290b"
+        },
+        "thumb": {
+          "path": "work/production/wave_440/exports/elf-assembling-a-music-box-thumb.webp",
+          "bytes": 54592,
+          "sha256": "8bbb702f887cb8ad04cd60ff897663726cafe47530bb63d2b70daad4a33f3a99"
+        }
+      },
+      "proofSha256": "b1c08305dd39cf32b78be53fa5cfdf7e0ba360aa824849ff390335dca4685190",
+      "pairMeanRgbDifference": 4.17
+    },
+    {
+      "id": "elf-knitting-a-scarf",
+      "title": "Elf Knitting a Striped Scarf",
+      "alt": "Braided cartoon elf in a green dress sitting on a Christmas gift and knitting a long red-and-cream scarf.",
+      "description": "Broad red and cream stripes lead from the elf's wooden needles to a fringed scarf end. Two dark braids, a red-banded green cap and buckled brown boots give the seated figure its own silhouette.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_440/source/elf-knitting-a-scarf.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1235,
+      "height": 1274,
+      "pdfWidth": 969,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "1424bc5bc53e1be567058f55e2eaeb03073b03323f9e4689f3bb0d3a60ed7428",
+      "inputSignature": "686634559a8fe3efcee8ac501017870fd252596420876b5f829b3bddc6c1a33a",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 776889,
+        "weightedCmykRmse": 0.841037
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1054438,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 776889,
+          "weightedCmykRmse": 0.841037
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        110,
+        30,
+        1180,
+        1236
+      ],
+      "image": {
+        "width": 969,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_440/exports/elf-knitting-a-scarf.pdf",
+          "bytes": 776889,
+          "sha256": "1db0b30b02cf261280c5215439c7fba5f94f14af82f093f0a49dc370bba46149"
+        },
+        "webp": {
+          "path": "work/production/wave_440/exports/elf-knitting-a-scarf.webp",
+          "bytes": 956254,
+          "sha256": "58d36f401f16797e229177bb99127e0e79cb7c36f0b9f5afdb4dd9ffa8747f50"
+        },
+        "thumb": {
+          "path": "work/production/wave_440/exports/elf-knitting-a-scarf-thumb.webp",
+          "bytes": 51258,
+          "sha256": "1b1de4da854868bcd725fdaed589d188dcffa1e1620304bea78a504d28ccb50e"
+        }
+      },
+      "proofSha256": "51b7ff10e9226515d0887ea74874c7261cd7fef337a233482bdcfc0acc91d6e4",
+      "pairMeanRgbDifference": 4.11098
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T05:01:03.314927+00:00",
+  "screenReviewEvidence": "work/production/wave_440/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T05:29:03.390Z"
+}

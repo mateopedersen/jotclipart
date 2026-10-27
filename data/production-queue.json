@@ -17,17 +17,17 @@
     "PUBLISHED"
   ],
   "targetArtworkCount": 5500,
-  "generatedArtworkCount": 1702,
+  "generatedArtworkCount": 1752,
   "suppliedArtworkCount": 11280,
-  "originalTopicArtworkCount": 2050,
+  "originalTopicArtworkCount": 2100,
   "supplementalArtworkCount": 11734,
-  "qualityApprovedArtworkCount": 2050,
+  "qualityApprovedArtworkCount": 2100,
   "supplementalApprovedArtworkCount": 11734,
   "reviewerType": "AI_AGENT_NOT_HUMAN",
   "humanApprovedArtworkCount": 0,
-  "availableArtworkCount": 13784,
-  "remainingToDraw": 3798,
-  "nextAction": "Nutcracker, Election, Hanukkah and Veterans are complete and live-verified at 50 each. Finish the owner-corrected green Christmas Elf cartoon collection. The 36 rejected private sources are excluded and do not count. Preserve distinct character identities, image-specific copy and all source/CMYK/CDN/editor/live gates.",
+  "availableArtworkCount": 13834,
+  "remainingToDraw": 3748,
+  "nextAction": "Publish and live-verify the owner-corrected 50-artwork green Christmas Elf cartoon collection. Then continue genuinely missing original topics after live/catalog/supplied/staged/queued and Google Images checks. Do not count supplied packages, repairs or rejected sources as new originals.",
   "topics": [
     {
       "topic": "halloween",
@@ -905,13 +905,13 @@
       "keyword": "Elf clipart",
       "wave": "W2",
       "target": 50,
-      "generated": 0,
+      "generated": 50,
       "supplied": 0,
-      "available": 0,
-      "approved": 0,
-      "remainingToDraw": 50,
-      "briefStatus": "NOT_STARTED",
-      "briefPath": null
+      "available": 50,
+      "approved": 50,
+      "remainingToDraw": 0,
+      "briefStatus": "50_COMPOSITIONS_REVIEWED",
+      "briefPath": "data/briefs/elf.json"
     },
     {
       "topic": "snowman",
@@ -153087,5 +153087,5 @@
     }
   ],
   "verifiedPublishedGeneratedArtworkCount": 1702,
-  "acceptedAwaitingRelease": 0
+  "acceptedAwaitingRelease": 50
 }

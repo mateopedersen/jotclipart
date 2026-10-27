@@ -71,7 +71,19 @@ export function verifyCollectionEditorial(catalog, registry) {
 
 export function readCollectionAudit(root) {
   const read = (path) => JSON.parse(readFileSync(resolve(root, path), 'utf8'));
-  return verifyCollectionEditorial(read('data/art.json'), read('data/editorial/collections.json'));
+  const catalog = read('data/art.json');
+  // Audit the same committed per-topic records used by the public catalog.
+  // A missing monolithic registry must not hide concurrent import reviews.
+  const introductions = readRequiredCollectionIntroductions(catalog, root);
+  const topics = new Set(
+    catalog.filter((item) => item.published && item.indexable).map((item) => item.topic),
+  ).size;
+  return {
+    topics,
+    checkedIntroductions: introductions.size,
+    uniqueIntroductions: new Set(introductions.values()).size,
+    legacyTopicsAwaitingIntroductionReview: topics - introductions.size,
+  };
 }
 
 /** Protect every new topic without rewriting unfinished legacy topic prose. */
