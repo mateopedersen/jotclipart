@@ -11,6 +11,7 @@ import {
   htmlElements,
   imageSchemas,
   deferLargeStructuredData,
+  restoreOriginalCatalogImages,
 } from '../scripts/seo/image-seo.mjs';
 import { previewUrls, previewIdentity } from '../scripts/preview-assets.mjs';
 
@@ -77,7 +78,8 @@ test('only actual informative catalog images receive deduplicated metadata; repe
   assert.equal(result.images, 1);
   const nodes = schemas(result.html);
   assert.equal(nodes.length, 1);
-  assert.equal(nodes[0].contentUrl, `https://ultraclipart.com${urls[440]}`);
+  assert.equal(nodes[0].contentUrl, `https://ultraclipart.com${item.webp}`);
+  assert.equal(nodes[0].width, item.width);
   assert.equal(nodes[0].caption, item.alt);
   assert.equal(attachImageMetadata(result.html, index).html, result.html);
 });
@@ -119,9 +121,39 @@ test('exact approved CDN URLs and verified derivatives resolve to the same revie
     previewIndex,
   });
   const result = attachImageMetadata(page(), cdnIndex);
-  assert.equal(schemas(result.html)[0].isBasedOn['@id'], imageObject(item)['@id']);
+  assert.equal(schemas(result.html)[0].contentUrl, cdn);
   assert.equal(cdnIndex.get(cdn).item.id, item.id);
   assert.equal(cdnIndex.get(`https://ultraclipart.com${urls[440]}`).item.webp, cdn);
+});
+
+test('public image sources and preloads restore exact originals without touching private editor previews', () => {
+  const original = 'https://assets.ultraclipart.com/verified/original.webp';
+  const catalogIndex = createImageIndex([item], {
+    publishedAssets: { [item.id]: { webp: original } },
+    previewIndex,
+  });
+  const markup = `<img data-src="untouched" src="${urls[440]}" srcset="${urls[440]} 440w" sizes="240px" alt="Real artwork" loading="lazy"><link rel="preload" as="image" href="${urls[440]}" imagesrcset="${urls[440]} 440w" imagesizes="240px">`;
+  const result = attachImageMetadata(page(markup), catalogIndex);
+  const tags = htmlElements(result.html);
+  const image = tags.find((e) => e.name === 'img').attributes;
+  assert.equal(image.src, original);
+  assert.equal(image['data-src'], 'untouched');
+  assert.equal(image.loading, 'lazy');
+  assert.equal(image.srcset, undefined);
+  const preload = tags.find((e) => e.name === 'link').attributes;
+  assert.equal(preload.href, original);
+  assert.equal(preload.imagesrcset, undefined);
+  assert.equal(schemas(result.html)[0].contentUrl, original);
+  assert.equal(attachImageMetadata(result.html, catalogIndex).html, result.html);
+  const privatePage = page(markup, '<meta name="robots" content="noindex">');
+  assert.equal(attachImageMetadata(privatePage, catalogIndex).html, privatePage);
+});
+
+test('source restoration ignores markup examples and preserves unrelated image sources', () => {
+  const input = page(
+    `<script>const example='${image}'</script><template>${image}</template><img src="/team/avatar.webp" alt="Team member">`,
+  );
+  assert.equal(restoreOriginalCatalogImages(input, index), input);
 });
 test('raw script/style/textarea/template/comment markup is not indexed as a displayed image', () => {
   const html =

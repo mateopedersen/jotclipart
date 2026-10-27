@@ -72,14 +72,19 @@ for (const [engine, implementation] of Object.entries({ chromium, webkit })) {
               document.querySelector('meta[name="robots"]').content,
             );
             const images = [...document.images].filter(
-              (img) => img.alt.trim() && new URL(img.src).pathname.startsWith('/previews/p1/'),
+              (img) =>
+                img.alt.trim() &&
+                (new URL(img.src).pathname.startsWith('/catalog/') ||
+                  new URL(img.src).hostname === 'assets.ultraclipart.com'),
             );
             const missing = images.filter(
               (img) =>
                 !nodes.some(
                   (node) =>
                     node.contentUrl ===
-                      new URL(new URL(img.src).pathname, 'https://ultraclipart.com').href &&
+                      (new URL(img.src).hostname === 'assets.ultraclipart.com'
+                        ? img.src
+                        : new URL(new URL(img.src).pathname, 'https://ultraclipart.com').href) &&
                     node.creator?.name === 'UltraClipart' &&
                     node.copyrightNotice?.includes('third-party rights') &&
                     node.license === 'https://ultraclipart.com/license/',

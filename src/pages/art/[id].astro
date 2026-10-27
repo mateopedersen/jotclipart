@@ -22,11 +22,7 @@ const note = (
 )[item.id];
 if (item.layered && !note) throw new Error(`Missing source layers for ${item.id}`);
 const layers = note?.layers ?? [];
-const previewSrcSet = item.layered ? undefined : item.previewSrcSet;
-// The image is contained in 90% of a 1.15-ratio frame. Size the actual artwork,
-// including portrait letterboxing, rather than assuming the whole column is image.
-const visibleFraction = 0.9 * Math.min(1, item.width / item.height / 1.15);
-const previewSizes = `(max-width: 580px) calc((100vw - 34px) * ${visibleFraction}), (max-width: 1100px) 50vw, 600px`;
+const originalImage = item.layered ? item.svg! : item.webp;
 const topic = topics.find((t) => t.slug === item.topic)!;
 const facts = artworkDetails(item);
 const downloadRecord = {
@@ -50,16 +46,7 @@ const downloadRecord = {
   imageHeight={item.height}
 >
   <Fragment slot="head">
-    {!item.layered && (
-      <link
-        rel="preload"
-        as="image"
-        href={item.preview}
-        imagesrcset={previewSrcSet}
-        imagesizes={previewSizes}
-        fetchpriority="high"
-      />
-    )}
+    {!item.layered && <link rel="preload" as="image" href={originalImage} fetchpriority="high" />}
     {item.published && item.indexable && (
       <script
         type="application/ld+json"
@@ -82,19 +69,24 @@ const downloadRecord = {
   </div>
   <div class="detail art-detail">
     <div>
-      <div class="preview" id="art-preview">
+      <a
+        class="preview"
+        id="art-preview"
+        href={originalImage}
+        target="_blank"
+        rel="noopener"
+        aria-label={`Open original image: ${item.title}`}
+      >
         <img
           title={item.title}
-          src={item.layered ? item.svg! : item.preview}
-          srcset={previewSrcSet}
-          sizes={previewSizes}
+          src={originalImage}
           alt={item.alt}
           width={item.width}
           height={item.height}
           fetchpriority="high"
           decoding="async"
         />
-      </div>
+      </a>
       <fieldset class="swatches art-preview-controls">
         <legend>
           Preview background <span>Find the right contrast</span>

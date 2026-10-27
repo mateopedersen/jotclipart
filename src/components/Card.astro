@@ -10,9 +10,7 @@ const { item } = Astro.props;
   <a class="art-picture" href={`/art/${item.id}/`}>
     <img
       title={item.title}
-      src={item.thumb}
-      srcset={item.thumbSrcSet}
-      sizes="(max-width: 540px) 45vw, (max-width: 1000px) 30vw, 240px"
+      src={item.webp}
       alt={item.alt}
       width="400"
       height="400"
