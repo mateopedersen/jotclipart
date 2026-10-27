@@ -142,17 +142,18 @@ if (retirement) {
     join(dist, '_routes.json'),
     JSON.stringify({
       ...retirement.routes,
-      include: [...retirement.routes.include, ...apiRoutes, ...catalogRoutes],
+      include: ['/*'],
+      exclude: [],
     }),
   );
   retiredWorker = `(${createRetiredHandler.toString()})(${JSON.stringify(retirement.retired)}, ${JSON.stringify(responseHeaders)})`;
   console.log(
-    `Unavailable routes: ${retirement.retired.length}; live collections/assets bypass the 404 function.`,
+    `Unavailable routes: ${retirement.retired.length}; the shared Worker preserves withdrawal handling and retries only transient static reads.`,
   );
 } else {
   writeFileSync(
     join(dist, '_routes.json'),
-    JSON.stringify({ version: 1, include: [...apiRoutes, ...catalogRoutes], exclude: [] }),
+    JSON.stringify({ version: 1, include: ['/*'], exclude: [] }),
   );
 }
 await bundleWorker({
@@ -161,9 +162,10 @@ await bundleWorker({
 import {handleShare} from './server/share/handler.mjs';
 import {handleCatalogPage} from './server/catalog/pages.mjs';
 import {handleCookieRegion} from './server/cookies/region.mjs';
+import {fetchAssetWithRetry} from './server/delivery/asset-retry.mjs';
 const retired = ${retiredWorker};
 const catalogOptions = ${JSON.stringify({ pageHeaders: responseHeaders, editorHeaders, withdrawnIds, revision: releaseRevision() })};
-export default {fetch(request, env, context) { const path = new URL(request.url).pathname; return path === '/api/cookie-region.json' ? handleCookieRegion(request) : path.startsWith('/api/ai/') ? handleAi(request, env, context) : path.startsWith('/api/share/') || path.startsWith('/share/') ? handleShare(request, env, context) : path.startsWith('/art/') || path.startsWith('/edit/') ? handleCatalogPage(request, env, retired, catalogOptions) : retired.fetch(request, env); }};`,
+export default {fetch(request, env, context) { const path = new URL(request.url).pathname; const publicFallback = {fetch: (r) => retired.fetch(r, {...env, ASSETS: {fetch: (q) => fetchAssetWithRetry(q, env.ASSETS)}})}; return path === '/api/cookie-region.json' ? handleCookieRegion(request) : path.startsWith('/api/ai/') ? handleAi(request, env, context) : path.startsWith('/api/share/') || path.startsWith('/share/') ? handleShare(request, env, context) : path.startsWith('/art/') || path.startsWith('/edit/') ? handleCatalogPage(request, env, publicFallback, catalogOptions) : publicFallback.fetch(request); }};`,
     resolveDir: root,
     sourcefile: 'worker-entry.js',
   },
@@ -178,7 +180,8 @@ const routes = JSON.parse(readFileSync(join(dist, '_routes.json'), 'utf8'));
 if (routes.include.length + routes.exclude.length > 100)
   throw new Error('AI + retirement route count exceeds Pages limit');
 const count = files(dist).length;
-if (process.env.CF_PAGES === '1') assertPagesFileCount(count);
+if (process.env.CF_PAGES === '1' && process.env.UC_DELIVERY_PREPARE !== '1')
+  assertPagesFileCount(count);
 console.log(
   `CSP: ${hashes.size} exact script hashes. ${process.env.CF_PAGES === '1' ? 'Production' : 'Local'} build: ${count} files${process.env.CF_PAGES === '1' ? ` / ${PAGES_FILE_LIMIT.toLocaleString('en-US')} allowed` : ' (bundled development media included)'}.`,
 );

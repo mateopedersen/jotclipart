@@ -346,3 +346,19 @@ The separate `fix/artwork-editorial-quality` branch is implementing the shared s
 ## Supplied Tesla and commerce batch — 2026-10-27
 
 The owner explicitly authorized inspection, repair and live publication of eleven supplied 50-pair archives. Read `docs/content/tesla-commerce-import.md` and `work/imports/tesla-commerce-550/local-state.json` before resuming. No new drawing is authorized. The two Cybercab spellings share one canonical collection; Optimus is identified at family level, while three visibly generic robots belong to Robot. Preserve exact original files and their actual PDF print dimensions/densities. Short source-specific copy and the current image hashes must pass the shared editorial validator. The existing editorial registry is normalized to the coordinated array format without dropping concurrent reviews; future importers must preserve that format. The finite 13,004-entry legacy ledger is reused unchanged, never extended, and never called a fresh visual review. All later or changed images/metadata require real source-bound reviews in every topic. Future new topic inventories also require concise source-bound introductions in `data/editorial/*-collection.json` or the shared collection registry. Existing legacy prose is not bulk rewritten in this integration. Recheck main before promotion and preserve concurrently accepted collections. Call the batch live only after matching the successful production revision and real deployment receipt. The paused 134 Marvel drawings remain separate.
+
+## Delivery migration and shared publication ownership — 2026-10-27
+
+The owner authorized the permanent delivery plan, coordination with the other
+UltraClipart chats, and explicitly approved temporarily disabling Cloudflare's
+automatic production deployments. Read `docs/catalog-scale.md` before publishing.
+Use the guarded normal `scripts/deploy.mjs` path once the migration is activated;
+never upload a stale dist, bypass source-bound reviews, extend the finite legacy
+ledger, relax the 10 TB/45-second inventory controls, or describe queued/staged
+objects as live. Preserve the full verified build for rollback. During this
+migration the content-upload chat coordinates the sole production activation;
+other chats supply reviewed source commits without launching independent uploads.
+The pending Marvel artwork remains unrelated. No new plan purchase or Search
+Console/Bing submission is authorized. Record actual successful deployment counts
+and distinguish rendered HTML from a newer delivery-control revision. The first
+migration is not proof that the remaining five-million-item architecture is done.

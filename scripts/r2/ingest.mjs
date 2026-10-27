@@ -17,6 +17,7 @@ import { resolve, join, extname } from 'node:path';
 import { tmpdir } from 'node:os';
 import { setTimeout as delay } from 'node:timers/promises';
 import { buildPlan, validateBatch, enforceStorageBudget, HARD_CAP } from './plan.mjs';
+import { acquireAccountWriter } from '../delivery/account-lock.mjs';
 import { configuredToken, cloudflareTransport } from './cloudflare-api.mjs';
 import {
   measureAccount,
@@ -183,6 +184,7 @@ async function measure() {
   }
 }
 let lock;
+let releaseAccountLock;
 const lockPath = resolve('.r2-ingest.lock');
 const journalPath = resolve('r2-ingest-journal.json');
 const verificationDir = mkdtempSync(join(tmpdir(), 'ultraclipart-r2-'));
@@ -193,6 +195,7 @@ function checkpoint(value) {
 }
 try {
   if (apply) {
+    releaseAccountLock = acquireAccountWriter();
     lock = openSync(lockPath, 'wx', 0o600);
     writeFileSync(lock, String(process.pid));
   }
@@ -340,4 +343,5 @@ try {
     closeSync(lock);
     unlinkSync(lockPath);
   }
+  releaseAccountLock?.();
 }

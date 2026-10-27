@@ -86,6 +86,7 @@ jobs:
     env:
       ASTRO_TELEMETRY_DISABLED: '1'
       CF_PAGES: '1'
+      UC_DELIVERY_PREPARE: '1'
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -98,6 +99,8 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
       - run: pnpm test:release
+      - name: Verify atomic delivery and final capacity gates
+        run: node --test tests/delivery*.mjs tests/pages-session.mjs tests/studio-style-delivery.mjs
   browser:
     needs: plan
     if: ${{ needs.plan.outputs.run_browser == 'true' }}
