@@ -90,6 +90,21 @@ test('a rendered source-bound screen derivative can replace only its CDN thumbna
   }
 });
 
+test('a verified original can replace its optional thumbnail in original-screen mode', () => {
+  const f = fixture();
+  try {
+    f.references.delete(f.preview);
+    assert.deepEqual(verifyCompiledPublication({ ...f, useOriginalScreens: true }), {
+      screenThumbnails: 0,
+      originalScreens: 1,
+    });
+    f.references.delete(f.publication.assetUrls[f.item.id].webp);
+    assert.throws(() => verifyCompiledPublication({ ...f, useOriginalScreens: true }), /omitted/);
+  } finally {
+    rmSync(f.root, { recursive: true, force: true });
+  }
+});
+
 test('missing originals, unrendered previews and changed sources still block production', () => {
   for (const mutate of [
     (f) => f.references.delete(f.publication.assetUrls[f.item.id].webp),

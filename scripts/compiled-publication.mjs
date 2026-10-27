@@ -25,14 +25,26 @@ export function collectCompiledMediaReferences(
 
 /** Originals remain verified by readPublication. A screen thumbnail may use its
  * source-bound derivative, but downloadable representations must still appear. */
-export function verifyCompiledPublication({ publication, catalog, references, root, directory }) {
+export function verifyCompiledPublication({
+  publication,
+  catalog,
+  references,
+  root,
+  directory,
+  useOriginalScreens = false,
+}) {
   const thumbnails = new Map(catalog.map((item) => [publication.assetUrls[item.id]?.thumb, item]));
   let previews;
   let screenThumbnails = 0;
+  let originalScreens = 0;
   for (const url of publication.urls) {
     if (references.has(url)) continue;
     const item = thumbnails.get(url);
     if (item?.published && item.indexable) {
+      if (useOriginalScreens && references.has(publication.assetUrls[item.id]?.webp)) {
+        originalScreens++;
+        continue;
+      }
       previews ??= readPreviewIndex(root);
       const preview = previewUrls(item)[440];
       const record = previews[previewIdentity(item)]?.files?.[440];
@@ -49,5 +61,5 @@ export function verifyCompiledPublication({ publication, catalog, references, ro
     }
     throw Error(`Verified media was omitted from compiled output: ${url}`);
   }
-  return { screenThumbnails };
+  return useOriginalScreens ? { screenThumbnails, originalScreens } : { screenThumbnails };
 }
