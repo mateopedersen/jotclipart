@@ -13,6 +13,10 @@ const env = {
   ASTRO_TELEMETRY_DISABLED: '1',
   PAGES_WRANGLER_MAJOR_VERSION: '4',
   UC_DELIVERY_PREPARE: '1',
+  // The owner activated Workers Paid on 2026-10-27. These project-scoped
+  // bounds reduce transfer latency without changing the request count or proofs.
+  UC_DELIVERY_ACTORS: process.env.UC_DELIVERY_ACTORS ?? '16',
+  UC_DELIVERY_INVENTORY_PAGES: process.env.UC_DELIVERY_INVENTORY_PAGES ?? '4',
 };
 // Each release stages and verifies its own catalog before atomic activation.
 // A pilot selector cannot silently change the reviewed release scope.

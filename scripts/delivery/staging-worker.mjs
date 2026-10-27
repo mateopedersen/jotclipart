@@ -16,6 +16,9 @@ function decodeBase64(text) {
 const json = (body, status = 200) =>
   Response.json(body, { status, headers: { 'Cache-Control': 'no-store' } });
 export function stagingWorker(job) {
+  const inventoryPages = job.inventoryPages ?? 1;
+  if (!Number.isInteger(inventoryPages) || inventoryPages < 1 || inventoryPages > 4)
+    throw Error('Bounded inventory page count required');
   return {
     async fetch(request, env) {
       const url = new URL(request.url);
@@ -25,8 +28,11 @@ export function stagingWorker(job) {
         return json({ error: 'Not found' }, 404);
       if (Number(request.headers.get('content-length')) > 12_000_000)
         return json({ error: 'Request too large' }, 413);
-      let body;
+      let body, rawBlob;
       try {
+        const metadata = request.headers.get('X-UC-Stage-Metadata');
+        if (metadata && (url.pathname !== '/stage' || metadata.length > 16_000))
+          throw Error('Invalid binary staging metadata');
         const stream =
           request.headers.get('X-UC-Body-Encoding') === 'gzip'
             ? request.body.pipeThrough(new DecompressionStream('gzip'))
@@ -54,7 +60,11 @@ export function stagingWorker(job) {
           bytes.set(part, offset);
           offset += part.byteLength;
         }
-        body = JSON.parse(new TextDecoder().decode(bytes));
+        if (metadata) {
+          body = JSON.parse(metadata);
+          if (body.records?.length !== 1 || body.blobs) throw Error('One binary source required');
+          rawBlob = bytes;
+        } else body = JSON.parse(new TextDecoder().decode(bytes));
       } catch {
         return json({ error: 'Invalid request' }, 400);
       }
@@ -93,7 +103,7 @@ export function stagingWorker(job) {
           entries = [],
           truncated = false;
         const seen = new Set();
-        for (let page = 0; page < 1; page++) {
+        for (let page = 0; page < inventoryPages; page++) {
           const result = await env[bound.binding].list({
             limit:
               Number.isInteger(command.limit) && command.limit >= 1 && command.limit <= 1000
@@ -191,7 +201,8 @@ export function stagingWorker(job) {
             // Local bytes are mandatory for new releases. Initial migration may copy
             // the same checked bytes from the current site; a mismatch never writes.
             let bytes;
-            if (body.blobs?.[record.path]) bytes = decodeBase64(body.blobs[record.path]);
+            if (rawBlob) bytes = rawBlob;
+            else if (body.blobs?.[record.path]) bytes = decodeBase64(body.blobs[record.path]);
             else {
               const source = new URL(record.path.replace(/\/index\.html$/, '/'), job.sourceOrigin);
               let response;

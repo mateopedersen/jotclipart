@@ -18,9 +18,15 @@ import { releaseRevision } from '../release-revision.mjs';
 import { createSignedInventoryFetch } from './inventory-fetch.mjs';
 import { createBoundInventoryReader } from './inventory-reader.mjs';
 import { acquireAccountWriter } from './account-lock.mjs';
+import {
+  deliveryActorCount,
+  inventoryPageCount,
+  IN_FLIGHT_ALLOWANCE_BYTES,
+} from './staging-limits.mjs';
 const root = process.cwd(),
   dist = resolve(process.argv[2] ?? 'dist'),
-  revision = releaseRevision();
+  revision = releaseRevision(),
+  actors = deliveryActorCount();
 if (revision === 'local') throw Error('Production revision required');
 async function main() {
   const releaseLock = acquireAccountWriter();
@@ -74,6 +80,7 @@ async function main() {
       secret,
       sourceOrigin,
       inventoryBuckets,
+      inventoryPages: inventoryPageCount(),
     };
     writeFileSync(
       join(work, 'job-entry.mjs'),
@@ -104,7 +111,9 @@ async function main() {
       if (!leasePromise)
         leasePromise = (async () => {
           const unverified =
-            remaining.slice(cursor).reduce((sum, x) => sum + x.record.bytes, 0) + 128_000_000;
+            remaining.slice(cursor).reduce((sum, x) => sum + x.record.bytes, 0) +
+            IN_FLIGHT_ALLOWANCE_BYTES;
+          const measuredStartedAt = Date.now();
           const measured = await measureReservation(
             accountId,
             unverified,
@@ -123,16 +132,23 @@ async function main() {
           }
           lease = { ...measured, root: tree.root, bucket };
           console.log(
-            `Fresh account reservation: ${lease.measuredBytes} + ${lease.additionalBytes} bytes`,
+            `Fresh account reservation: ${lease.measuredBytes} + ${lease.additionalBytes} bytes; complete measurement ${Date.now() - measuredStartedAt} ms`,
           );
           return lease;
         })().finally(() => (leasePromise = undefined));
       return leasePromise;
     }
     try {
-      await reservation();
+      let bindings;
+      try {
+        bindings = (await reservation()).roster;
+      } catch (error) {
+        if (!Array.isArray(error.readOnlyInventoryHints)) throw error;
+        bindings = error.readOnlyInventoryHints;
+        console.log('Slow cold census: bootstrapping read-only inventory; no write lease issued');
+      }
       inventoryBuckets.push(
-        ...lease.roster
+        ...bindings
           .filter((b) => b.jurisdiction === 'default')
           .map((b, index) => ({
             ...b,
@@ -193,27 +209,28 @@ async function main() {
       }
       if (!ready) throw Error('Private remote staging session did not become ready');
       remoteReady = true;
+      // A slow REST census cannot authorize a write. Re-read the full live
+      // roster and every object through the bounded remote reader first.
+      await reservation(true);
       console.log(
         `Private staging ready: ${remaining.length} remaining of ${allFiles.length}, root ${tree.root}`,
       );
       async function transfer(batch, local = false, leaseRetries = 0) {
+        if (local && batch.length > 1) {
+          for (const row of batch) await transfer([row], true);
+          return;
+        }
         const current = await reservation();
+        const { roster: _partitionHints, ...writeLease } = current;
         const body = {
-          lease: current,
+          lease: writeLease,
           signature: createHmac('sha256', Buffer.from(secret, 'hex'))
-            .update(JSON.stringify(current))
+            .update(JSON.stringify(writeLease))
             .digest('hex'),
           records: batch,
         };
-        if (local)
-          body.blobs = Object.fromEntries(
-            batch.map(({ record }) => [
-              record.path,
-              readFileSync(join(dist, record.path)).toString('base64'),
-            ]),
-          );
         const serialized = JSON.stringify(body),
-          encoded = local ? gzipSync(Buffer.from(serialized)) : serialized;
+          encoded = local ? gzipSync(readFileSync(join(dist, batch[0].record.path))) : serialized;
         let last;
         for (let attempt = 0; attempt < 3; attempt++) {
           try {
@@ -221,7 +238,9 @@ async function main() {
               method: 'POST',
               headers: {
                 'Content-Type': local ? 'application/octet-stream' : 'application/json',
-                ...(local ? { 'X-UC-Body-Encoding': 'gzip' } : {}),
+                ...(local
+                  ? { 'X-UC-Body-Encoding': 'gzip', 'X-UC-Stage-Metadata': serialized }
+                  : {}),
               },
               body: encoded,
               signal: AbortSignal.timeout(90_000),
@@ -277,9 +296,7 @@ async function main() {
         // this exact reviewed local source. The Merkle proof and readback still apply.
         if (!local) {
           if (batch.length === 1) return transfer(batch, true);
-          const results = await Promise.allSettled(batch.map((record) => transfer([record], true)));
-          const failed = results.find((r) => r.status === 'rejected');
-          if (failed) throw failed.reason;
+          for (const record of batch) await transfer([record], true);
           return;
         }
         throw last;
@@ -293,13 +310,13 @@ async function main() {
         }
       }
       await Promise.allSettled(
-        Array.from({ length: process.env.UC_DELIVERY_LOCAL_HTML === '1' ? 8 : 4 }, async () => {
+        Array.from({ length: actors }, async () => {
           while (cursor < remaining.length && !failed) {
             const batch = [];
             const htmlGroup =
               process.env.UC_DELIVERY_LOCAL_HTML === '1' &&
               remaining[cursor].record.path.endsWith('.html');
-            const itemLimit = htmlGroup ? 2 : 8,
+            const itemLimit = htmlGroup ? 1 : 8,
               byteLimit = htmlGroup ? 1_000_000 : 4_000_000;
             let groupBytes = 0;
             while (

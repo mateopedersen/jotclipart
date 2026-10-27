@@ -8,6 +8,20 @@ import {
 } from '../r2/cloudflare-api.mjs';
 import { inventoryBoundaries } from './inventory-reader.mjs';
 import { HARD_CAP, enforceStorageBudget } from '../r2/plan.mjs';
+// An expired census may supply partition hints for a read-only session. It is
+// never a storage reservation; the complete account must be measured again.
+export function inventoryHints(inventory) {
+  validateInventoryScope(inventory);
+  if (inventory.complete !== true) throw Error('Incomplete inventory cannot supply hints');
+  return inventory.buckets.map((b) => {
+    if (b.complete !== true) throw Error('Incomplete bucket cannot supply hints');
+    return {
+      bucket: b.name,
+      jurisdiction: b.jurisdiction,
+      bounds: inventoryBoundaries(b.objects),
+    };
+  });
+}
 export function reserveInventory(inventory, bytes, now = Date.now()) {
   validateInventoryScope(inventory);
   if (
@@ -84,12 +98,12 @@ export async function measureReservation(accountId, remainingBytes, listObjects)
     proveAbsent: transport.proveAbsent,
     enumerationSource: transport.enumerationSource,
   });
-  return {
-    ...reserveInventory(inventory, remainingBytes),
-    roster: inventory.buckets.map((b) => ({
-      bucket: b.name,
-      jurisdiction: b.jurisdiction,
-      bounds: inventoryBoundaries(b.objects),
-    })),
-  };
+  const roster = inventoryHints(inventory);
+  try {
+    return { ...reserveInventory(inventory, remainingBytes), roster };
+  } catch (error) {
+    if (error.message === 'Fresh complete account inventory required')
+      error.readOnlyInventoryHints = roster;
+    throw error;
+  }
 }

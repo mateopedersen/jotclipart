@@ -272,6 +272,110 @@ test('private inventory enumerates bounded pages without exposing any write oper
   assert.equal((await call({ ...command, bucket: 'outside' })).status, 404);
   assert.equal((await call({ ...command, at: Date.now() - 60_000 })).status, 409);
 });
+test('paid multi-page reads retain every cursor, terminate at four pages and reject loops', async () => {
+  const configured = {
+    ...job,
+    inventoryPages: 4,
+    inventoryBuckets: [{ bucket: job.bucket, jurisdiction: 'default', binding: 'TARGET' }],
+  };
+  const command = { action: 'list', bucket: job.bucket, jurisdiction: 'default', at: Date.now() };
+  const request = () =>
+    new Request('https://private.example/inventory', {
+      method: 'POST',
+      body: JSON.stringify({
+        command,
+        signature: createHmac('sha256', Buffer.from(secret, 'hex'))
+          .update(JSON.stringify(command))
+          .digest('hex'),
+      }),
+    });
+  const calls = [];
+  const env = {
+    TARGET: {
+      list: async ({ cursor }) => {
+        const n = Number(cursor ?? 0);
+        calls.push(n);
+        return { objects: [{ key: 'k' + n, size: n + 1 }], truncated: true, cursor: String(n + 1) };
+      },
+      put: async () => {
+        throw Error('read-only');
+      },
+    },
+  };
+  const response = await stagingWorker(configured).fetch(request(), env),
+    data = await response.json();
+  assert.deepEqual(calls, [0, 1, 2, 3]);
+  assert.equal(data.Contents.length, 4);
+  assert.equal(data.NextContinuationToken, '4');
+  assert.equal(data.IsTruncated, true);
+  await assert.rejects(
+    stagingWorker(configured).fetch(request(), {
+      TARGET: { list: async () => ({ objects: [], truncated: true, cursor: 'same' }) },
+    }),
+    /looping/,
+  );
+  assert.throws(() => stagingWorker({ ...configured, inventoryPages: 5 }), /Bounded/);
+});
+test('four-page signed inventory and range partitions include new keys and deleted Unicode boundaries', async () => {
+  const { inventoryBoundaries, createBoundInventoryReader } =
+    await import('../scripts/delivery/inventory-reader.mjs');
+  const { createSignedInventoryFetch } = await import('../scripts/delivery/inventory-fetch.mjs');
+  const cmp = (a, b) => Buffer.compare(Buffer.from(a), Buffer.from(b));
+  const old = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'z', 'é', 'Ω', '🙂'];
+  const actual = old
+    .filter((s) => s !== 'f' && s !== 'é')
+    .concat(['0', 'bb', 'zz', '中'])
+    .sort(cmp)
+    .map((key, i) => ({ key, size: i + 1 }));
+  const configured = {
+    ...job,
+    inventoryPages: 4,
+    inventoryBuckets: [{ bucket: job.bucket, jurisdiction: 'default', binding: 'TARGET' }],
+  };
+  const worker = stagingWorker(configured);
+  const env = {
+    TARGET: {
+      list: async ({ cursor, startAfter }) => {
+        const offset = cursor
+          ? Number(cursor)
+          : startAfter
+            ? actual.findIndex((x) => cmp(x.key, startAfter) > 0)
+            : 0;
+        const objects = offset < 0 ? [] : actual.slice(offset, offset + 2),
+          next = offset + objects.length;
+        return { objects, truncated: offset >= 0 && next < actual.length, cursor: String(next) };
+      },
+      put: async () => {
+        throw Error('Inventory is read-only');
+      },
+    },
+  };
+  const fetchPage = createSignedInventoryFetch({
+    secret,
+    fetcher: (url, init) => worker.fetch(new Request(url, init), env),
+  });
+  const read = createBoundInventoryReader({
+    buckets: [
+      {
+        bucket: job.bucket,
+        jurisdiction: 'default',
+        bounds: inventoryBoundaries(
+          old.map((key) => ({ key })),
+          3,
+        ),
+      },
+    ],
+    fetchPage,
+  });
+  const result = await read({ bucket: job.bucket, jurisdiction: 'default' }, () => {
+    throw Error('Unexpected fallback');
+  });
+  assert.equal(result.IsTruncated, false);
+  assert.deepEqual(
+    result.Contents,
+    actual.map((x) => ({ Key: x.key, Size: x.size })),
+  );
+});
 test('gzip is only a bounded transport; stored bytes and their independent SHA stay exact', async () => {
   const { gzipSync } = await import('node:zlib');
   const body = stageBody();
@@ -304,4 +408,52 @@ test('gzip is only a bounded transport; stored bytes and their independent SHA s
   assert.equal(response.status, 200);
   assert.equal(stored.toString(), 'abc');
   assert.equal((await response.json()).verified[0].sha256, record.sha256);
+});
+test('binary gzip stages raw bytes with the same signed lease, proof and independent readback', async () => {
+  const { gzipSync } = await import('node:zlib');
+  const metadata = stageBody();
+  delete metadata.blobs;
+  let stored,
+    puts = 0;
+  const env = {
+    TARGET: {
+      get: async () =>
+        stored
+          ? {
+              size: stored.length,
+              httpMetadata: { contentType: record.mime },
+              etag: 'binary',
+              arrayBuffer: async () => stored,
+            }
+          : null,
+      put: async (key, bytes, options) => {
+        assert.equal(options.onlyIf.etagDoesNotMatch, '*');
+        stored = Buffer.from(bytes);
+        puts++;
+      },
+    },
+  };
+  const request = (value, body = metadata) =>
+    new Request('https://private.example/stage', {
+      method: 'POST',
+      headers: { 'X-UC-Body-Encoding': 'gzip', 'X-UC-Stage-Metadata': JSON.stringify(body) },
+      body: gzipSync(Buffer.from(value)),
+    });
+  assert.equal((await stagingWorker(job).fetch(request('abc'), env)).status, 200);
+  assert.equal(stored.toString(), 'abc');
+  assert.equal((await stagingWorker(job).fetch(request('abc'), env)).status, 200);
+  assert.equal(puts, 1);
+  stored = null;
+  await assert.rejects(stagingWorker(job).fetch(request('wrong'), env), /Source checksum mismatch/);
+  assert.equal(puts, 1);
+  assert.equal(
+    (
+      await stagingWorker(job).fetch(
+        request('abc', { ...metadata, records: [...metadata.records, ...metadata.records] }),
+        env,
+      )
+    ).status,
+    400,
+  );
+  assert.equal(puts, 1);
 });

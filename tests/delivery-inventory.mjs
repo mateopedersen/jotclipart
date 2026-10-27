@@ -4,6 +4,67 @@ import {
   createBoundInventoryReader,
   inventoryBoundaries,
 } from '../scripts/delivery/inventory-reader.mjs';
+import { inventoryHints, reserveInventory } from '../scripts/delivery/storage-reservation.mjs';
+import { JURISDICTIONS, SCOPE_VERSION, endpointFor } from '../scripts/r2/inventory.mjs';
+import {
+  deliveryActorCount,
+  IN_FLIGHT_ALLOWANCE_BYTES,
+  MAX_SINGLE_SOURCE_BYTES,
+  inventoryPageCount,
+} from '../scripts/delivery/staging-limits.mjs';
+test('multi-page inventory remains explicitly bounded and defaults to the free-safe single page', () => {
+  assert.equal(inventoryPageCount({}), 1);
+  assert.equal(inventoryPageCount({ UC_DELIVERY_INVENTORY_PAGES: '4' }), 4);
+  for (const value of ['0', '5', 'NaN', '4.5', ''])
+    assert.throws(() => inventoryPageCount({ UC_DELIVERY_INVENTORY_PAGES: value }));
+});
+test('configured transfer concurrency cannot exceed the existing in-flight byte reservation', () => {
+  assert.equal(deliveryActorCount({}), 8);
+  assert.equal(deliveryActorCount({ UC_DELIVERY_ACTORS: '16' }), 16);
+  for (const value of ['0', '-1', '17', '24', '1.5', 'NaN', '16x', ''])
+    assert.throws(() => deliveryActorCount({ UC_DELIVERY_ACTORS: value }));
+  assert.equal(
+    deliveryActorCount({ UC_DELIVERY_ACTORS: '16' }) * MAX_SINGLE_SOURCE_BYTES,
+    IN_FLIGHT_ALLOWANCE_BYTES,
+  );
+});
+test('a slow cold census supplies read-only partitions but never a write reservation', () => {
+  const accountId = 'a'.repeat(32),
+    now = Date.now();
+  const inventory = {
+    schemaVersion: 2,
+    scopeVersion: SCOPE_VERSION,
+    accountId,
+    complete: true,
+    observedAt: now - 45_001,
+    jurisdictions: JURISDICTIONS.map((jurisdiction) => ({
+      jurisdiction,
+      endpoint: endpointFor(accountId, jurisdiction),
+      complete: true,
+      buckets: jurisdiction === 'default' ? ['media'] : [],
+      proof: { source: 's3-list-buckets' },
+    })),
+    buckets: [
+      {
+        name: 'media',
+        jurisdiction: 'default',
+        complete: true,
+        objects: [{ key: 'first', bytes: 10 }],
+      },
+    ],
+  };
+  assert.throws(() => reserveInventory(inventory, 1, now), /Fresh complete/);
+  const hints = inventoryHints(inventory);
+  assert.deepEqual(hints, [{ bucket: 'media', jurisdiction: 'default', bounds: [] }]);
+  assert.equal(hints[0].observedAt, undefined);
+  assert.equal(hints[0].projectedBytes, undefined);
+  assert.throws(() => inventoryHints({ ...inventory, jurisdictions: [] }), /coverage/);
+  assert.throws(() => inventoryHints({ ...inventory, complete: false }), /Incomplete/);
+  assert.throws(
+    () => reserveInventory({ ...inventory, observedAt: now }, 10_000_000_000_001, now),
+    /cap|budget|10/i,
+  );
+});
 const cmp = (a, b) => Buffer.compare(Buffer.from(a), Buffer.from(b));
 function reader(keys, bounds) {
   let active = 0,

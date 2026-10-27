@@ -148,3 +148,24 @@ search, sitemap, CPU, request-quota or traffic-cost work listed above. Never cla
 unlimited capacity or guaranteed unchanged speed.
 
 Latest owner direction: the final public catalog must restore original R2 image sources. The 7ff HTML is rollback material only; never activate it as the final migration after the original-image restoration has been approved. Use the later clean, completely audited renderer revision. A build whose HTML text/alt audit fails is not a release candidate, even if its targeted unit tests passed.
+
+The owner activated Workers Paid on 2026-10-27; authenticated dashboard evidence
+is retained with the release handoff. The project publisher now uses at most 16
+transfer actors and four native list pages per inventory invocation. The separate
+range reader remains limited to four readers per bucket. The existing 128 MB
+reservation allowance covers all in-flight sources at their hard 8 MB maximum;
+the 10 TB account cap and 45-second freshness checks are unchanged. A slow cold
+census supplies read-only partition hints only, then a new complete live census
+must produce a valid write reservation. Local sources use a single raw binary
+body with signed metadata and optional gzip transport, avoiding large base64 JSON.
+Stored R2 bytes remain the exact reviewed source, independently read back and
+hashed. Never treat the older deliberately stopped session logs as current errors.
+Workers Paid is separate from the domain Pro and R2 storage subscriptions; no
+paid AI inference or expanded generation budgets are enabled by this change.
+
+Before activating a pruned production artifact, verify Workers Paid is active
+and set the Pages production runtime to fail closed (`fail_open: false`). A
+pruned `/art/` or `/edit/` file is deliberately absent from static storage: falling
+through after a Worker failure could otherwise turn a temporary outage into a
+false 404. Record the actual project setting and successful deployment receipt;
+an account-plan assumption or a prepared local artifact is insufficient.

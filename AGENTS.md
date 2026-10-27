@@ -380,3 +380,20 @@ still use small thumbnails; editing and export must use verified originals.
 The original-source decision does not cancel the separate R2/Pages capacity
 migration. Preserve old URLs, personal data and the coordinated single-publisher
 workflow. Do not claim Google rankings or immediate reindexing are guaranteed.
+
+## Supplied wizard and football package — 2026-10-27
+
+The owner authorized inspection, repair and live publication of ten supplied
+archives. Resume from `work/imports/wizard-football-2026-10-27` and read its
+`visual-copy-review.json`, `review.next.json` and current upload journals.
+All ten contain 50 actual image/PDF pairs; 500 originals and PDF renderings were
+inspected, and 88 similarity candidates were compared from actual paired pixels.
+The package includes generic original alternatives: do not falsely identify those
+as Ron Weasley, the Sorting Hat or the Golden Snitch. The reviewed allocation is
+45 Golden Snitch, 37 Sorting Hat, 22 Ron Weasley, 33 fantasy crafts, 13 fantasy
+headwear, 50 football couples, 50 football hobbies, 50 football hearts, 100 Football
+Valentine, 50 basketball brackets and 50 Hogwarts. The two Valentine Football
+spellings share one collection. Counts describe catalog topics, not missing files;
+do not draw filler to force every resulting subject to 50. All supplied originals
+remain unchanged. Reviewed preparation is not CDN verification or publication.
+Preserve current accepted content and the unrelated paused Marvel backlog.

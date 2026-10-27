@@ -58,6 +58,7 @@ closeSync(lock);unlinkSync(path+'.lock');console.log(JSON.stringify(result));`;
       PATH: `${join(dir, 'bin')}:${dirname(process.execPath)}:${process.env.PATH ?? ''}`,
       R2_ENDPOINT: `https://${'a'.repeat(32)}.r2.cloudflarestorage.com`,
       FAKE_STATE: join(dir, 'state.json'),
+      UC_R2_LOCK_ROOT: dir,
     };
     const script = resolve('scripts/r2/ingest.mjs');
     const run = (...flags) =>
