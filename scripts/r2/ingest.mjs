@@ -151,11 +151,11 @@ async function measure() {
   const options = {
     endpoint,
     batch,
-    aws: (command, fields, requestEndpoint) => {
+    aws: async (command, fields, requestEndpoint) => {
       if (command !== 'list-objects-v2' || !nativeInventory)
         return aws(command, fields, requestEndpoint);
       const value = (flag) => fields[fields.indexOf(flag) + 1];
-      return nativeInventory.read(
+      const page = await nativeInventory.read(
         {
           bucket: value('--bucket'),
           jurisdiction: parseEndpoint(requestEndpoint).jurisdiction,
@@ -165,6 +165,12 @@ async function measure() {
         },
         () => aws(command, fields, requestEndpoint),
       );
+      // Native listings carry R2's real ETag. Reuse an already byte-verified
+      // hash only when this complete fresh listing reports the same version.
+      const jurisdiction = parseEndpoint(requestEndpoint).jurisdiction;
+      if (!page.IsTruncated && nativeInventory.owns(value('--bucket'), jurisdiction))
+        rest.observeNativeListing(value('--bucket'), jurisdiction, page.Contents ?? []);
+      return page;
     },
     ...(rest ? { proveAbsent: rest.proveAbsent, enumerationSource: rest.enumerationSource } : {}),
     ...(!rest && verifyAbsentScopes

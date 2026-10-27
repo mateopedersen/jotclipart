@@ -36,7 +36,7 @@ test('slow inventory bootstrap is read-only, signed, bounded and cleans up', asy
     const config = JSON.parse(readFileSync(args[args.indexOf('--config') + 1]));
     entry = config.main;
     const source = readFileSync(entry, 'utf8');
-    job = JSON.parse(source.match(/stagingWorker\((.*)\);/)[1]);
+    job = JSON.parse(source.match(/nativeInventoryWorker\((.*)\);/)[1]);
     assert.equal(config.r2_buckets.length, 1);
     child = new EventEmitter();
     child.exitCode = null;
@@ -68,6 +68,25 @@ test('slow inventory bootstrap is read-only, signed, bounded and cleans up', asy
   const session = await openNativeInventorySession(inventory, { spawnProcess, fetcher });
   const worker = (await import(pathToFileURL(entry).href)).default;
   assert.equal((await worker.fetch(new Request('http://localhost/stage'), {})).status, 404);
+  const command = { action: 'list', bucket: 'media', jurisdiction: 'default', at: Date.now() };
+  const signature = createHmac('sha256', Buffer.from(job.secret, 'hex'))
+    .update(JSON.stringify(command))
+    .digest('hex');
+  const actual = await worker.fetch(
+    new Request('http://localhost/inventory', {
+      method: 'POST',
+      body: JSON.stringify({ command, signature }),
+    }),
+    {
+      INVENTORY_0: {
+        list: async () => ({
+          objects: [{ key: 'a', size: 10, etag: 'r2-version' }],
+          truncated: false,
+        }),
+      },
+    },
+  );
+  assert.deepEqual((await actual.json()).Contents, [{ Key: 'a', Size: 10, ETag: 'r2-version' }]);
   assert.deepEqual(
     (
       await session.read({ bucket: 'media', jurisdiction: 'default' }, () => {

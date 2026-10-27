@@ -33,10 +33,10 @@ export async function openNativeInventorySession(
   };
   const entry = join(dir, 'entry.mjs'),
     config = join(dir, 'wrangler.json');
-  const worker = resolve(root, 'scripts/delivery/staging-worker.mjs');
+  const worker = resolve(root, 'scripts/r2/native-inventory-worker.mjs');
   writeFileSync(
     entry,
-    `import {stagingWorker} from ${JSON.stringify(worker)};\nconst worker=stagingWorker(${JSON.stringify(job)});\nexport default {fetch(request,env,ctx){const p=new URL(request.url).pathname;if(p!=="/health"&&p!=="/inventory")return new Response(null,{status:404});return worker.fetch(request,env,ctx);}};\n`,
+    `import {nativeInventoryWorker} from ${JSON.stringify(worker)};\nexport default nativeInventoryWorker(${JSON.stringify(job)});\n`,
     { mode: 0o600 },
   );
   writeFileSync(
@@ -112,6 +112,9 @@ export async function openNativeInventorySession(
     });
     return {
       read: reader,
+      owns(bucket, jurisdiction) {
+        return buckets.some((item) => item.bucket === bucket && item.jurisdiction === jurisdiction);
+      },
       update(fresh) {
         for (const hint of inventoryHints(fresh)) {
           const existing = buckets.find(

@@ -22,6 +22,37 @@ const envelope = (result, result_info) => ({
   result,
   ...(result_info ? { result_info } : {}),
 });
+test('native listing reuses only the hash of the exact independently read R2 version', async () => {
+  let calls = 0,
+    value = 'one',
+    tag = 'v1';
+  const rest = cloudflareTransport({
+    accountId,
+    token,
+    fetcher: async () => {
+      calls++;
+      return new Response(value, { headers: { ETag: `"${tag}"` } });
+    },
+  });
+  const args = ['--bucket', 'ultraclipart-media', '--key', 'cat/image.webp'];
+  const first = await rest.aws('head-object', args, endpoint);
+  rest.observeNativeListing('ultraclipart-media', 'default', [
+    { Key: 'cat/image.webp', Size: 3, ETag: 'v1' },
+  ]);
+  assert.deepEqual(await rest.aws('head-object', args, endpoint), first);
+  assert.equal(calls, 1);
+  value = 'two';
+  tag = 'v2';
+  rest.observeNativeListing('ultraclipart-media', 'default', [
+    { Key: 'cat/image.webp', Size: 3, ETag: 'v2' },
+  ]);
+  const changed = await rest.aws('head-object', args, endpoint);
+  assert.notEqual(changed.Metadata.sha256, first.Metadata.sha256);
+  assert.equal(calls, 2);
+  rest.observeNativeListing('ultraclipart-media', 'default', [{ Key: 'cat/image.webp', Size: 3 }]);
+  await rest.aws('head-object', args, endpoint);
+  assert.equal(calls, 3, 'missing ETag must not authorize a cached hash');
+});
 test('transient body interruption retries a GET and never caches a partial representation', async () => {
   const dir = mkdtempSync(join(tmpdir(), 'uc-read-retry-'));
   let calls = 0;

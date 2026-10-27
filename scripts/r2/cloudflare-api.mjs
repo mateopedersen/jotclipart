@@ -345,5 +345,27 @@ export function cloudflareTransport({
       throw new Error('Upload response differs from the immutable snapshot');
     return result.result;
   }
-  return { aws, proveAbsent: disabledProof, enumerationSource: 'cloudflare-api-list-buckets' };
+  function observeNativeListing(bucket, jurisdiction, entries) {
+    if (!Array.isArray(entries)) throw new Error('Invalid native listing');
+    const prefix = `${jurisdiction}/${bucket}/`;
+    for (const identity of listedVersions.keys())
+      if (identity.startsWith(prefix)) listedVersions.delete(identity);
+    for (const entry of entries) {
+      if (
+        typeof entry.Key !== 'string' ||
+        !entry.Key ||
+        !Number.isSafeInteger(entry.Size) ||
+        entry.Size < 0
+      )
+        throw new Error('Invalid native listing entry');
+      const observed = version(etag(entry.ETag), entry.Size);
+      if (observed) listedVersions.set(prefix + entry.Key, observed);
+    }
+  }
+  return {
+    aws,
+    observeNativeListing,
+    proveAbsent: disabledProof,
+    enumerationSource: 'cloudflare-api-list-buckets',
+  };
 }
