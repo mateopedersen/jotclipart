@@ -16,9 +16,7 @@ const { card } = Astro.props;
   <a class="related-picture" href={card.href} data-related-detail>
     <img
       title={card.title}
-      src={card.thumb}
-      srcset={card.thumbSrcSet}
-      sizes="(max-width: 540px) 45vw, (max-width: 1000px) 30vw, 240px"
+      src={card.webp}
       alt={card.alt}
       width="400"
       height="400"

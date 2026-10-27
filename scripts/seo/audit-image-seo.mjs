@@ -123,6 +123,12 @@ export function auditImageSeo({ root, directory, catalog, publishedAssets = null
         counts.catalogImageInstances++;
         if (a.alt !== record.item.alt || a.title !== record.item.title)
           fail(page, 'rendered image wording', record.item.id);
+        if (!noindex) {
+          const original =
+            /\.svg(?:$|[?#])/i.test(a.src) && record.item.svg ? record.item.svg : record.item.webp;
+          if (url !== absoluteImageUrl(original) || a.srcset)
+            fail(page, 'public artwork must display its full original', record.item.id);
+        }
       }
       if (a.srcset && record) {
         for (const candidate of a.srcset.split(',')) {

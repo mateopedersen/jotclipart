@@ -169,9 +169,9 @@ export function initRelatedArtwork() {
     node.querySelector('.related-card-title')!.textContent = data.title;
     node.querySelector('.related-reason')!.textContent = data.reason;
     const image = node.querySelector('img')!;
-    image.src = data.thumb;
-    if (data.thumbSrcSet) image.srcset = data.thumbSrcSet;
-    else image.removeAttribute('srcset');
+    image.removeAttribute('srcset');
+    image.removeAttribute('sizes');
+    image.src = data.webp;
     image.alt = data.alt;
     image.title = data.title;
     node.querySelectorAll<HTMLAnchorElement>('[data-related-download]').forEach((link) => {

@@ -2,7 +2,7 @@ export interface CollectionSubject {
   slug: string;
   name: string;
   count: number;
-  sample: { thumb: string; thumbSrcSet?: string; alt: string; title: string };
+  sample: { thumb: string; thumbSrcSet?: string; webp?: string; alt: string; title: string };
 }
 export interface CollectionArtwork {
   id: string;
@@ -31,6 +31,7 @@ export function latestSubjectCollections(
       sample: {
         thumb: subject.sample.thumb,
         thumbSrcSet: subject.sample.thumbSrcSet,
+        webp: subject.sample.webp,
         alt: subject.sample.alt,
         title: subject.sample.title,
       },
