@@ -6,7 +6,7 @@ export function mountInspector(root: HTMLElement) {
   const toggle = inspector.querySelector<HTMLButtonElement>(
     '[data-smart-action="collapse-properties"]',
   )!;
-  const mobile = window.matchMedia('(max-width: 800px)');
+  const mobile = window.matchMedia('(max-width: 800px), (pointer: coarse) and (max-height: 600px)');
   const viewport = () =>
     root.style.setProperty(
       '--uc-viewport-height',
