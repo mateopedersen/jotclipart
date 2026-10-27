@@ -1,0 +1,59 @@
+{
+  "topic": "snowman",
+  "researchedAt": "2026-10-27T07:49:18.335194+00:00",
+  "googleImagesUrl": "https://www.google.com/search?udm=2&q=snowman+clipart&gl=us&hl=en",
+  "googleImagesActuallyViewed": true,
+  "observedIntent": [
+    "Clear cartoon stacked snowballs, carrot nose, coal face, twig arms and recognizable winter accessories dominate.",
+    "Cute soft 3D, clean 2D, simple outlines and independent seasonal decorations are useful; avoid needless landscape detail.",
+    "Existing two related family-building scenes were actually viewed and excluded from the new concept matrix."
+  ],
+  "clipartPrincipleReferences": [
+    {
+      "publisher": "Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/powerpoint/tips-for-finding-clip-art-or-other-images",
+      "reason": "Clipart filtering describes cartoon-like images; illustrations should be reusable and readable."
+    },
+    {
+      "publisher": "Canva",
+      "url": "https://www.canva.com/features/clipart/",
+      "reason": "Ready-made reusable illustrations, icons, frames and graphics, not exclusively photorealistic cutouts."
+    }
+  ],
+  "existingContentCheck": {
+    "catalogTotal": 13834,
+    "exactTopic": 0,
+    "relatedArtworks": [
+      {
+        "id": "winter-child-building-snowman",
+        "imageSha256": "b0f40ada95f68e32c47a32e816d261136488a7812c5aba7b0bdf06978e35b889",
+        "actuallyViewed": true
+      },
+      {
+        "id": "dad-clipart-father-child-snowman",
+        "imageSha256": "af3d8f1d63223d07878e82484ccd98bb1ae7ed40d54d1c45e19392212fa48b6a",
+        "actuallyViewed": true
+      },
+      {
+        "id": "reindeer-snowman-meeting",
+        "imageSha256": "141bd83b15ed68ff7221034c719b9c056cbf74993e1b19cc5b7236f6706d68fc",
+        "actuallyViewed": true,
+        "observations": [
+          "A brown cartoon reindeer lowers its nose to the carrot of a small three-ball snowman.",
+          "The snowman wears a green pom-pom cap and spreads its twig arms."
+        ],
+        "newCollectionOverlapDecision": "No reindeer-and-snowman pairing occurs in the new 50 compositions."
+      }
+    ],
+    "liveTopicStatus": 404,
+    "liveCatalogTotal": 13234,
+    "priorQueuedPlans": 0,
+    "stagedSourceCount": 0,
+    "followupAcceptedCatalog": 13884,
+    "followupCheckedAt": "2026-10-27T08:54:49.591836+00:00"
+  },
+  "actualVisualReviewOfNewSources": true,
+  "copyFromSearchResults": false,
+  "sourceImageReuse": false,
+  "sourceReviewEvidence": "work/production/snowman-source-reviews.json"
+}

@@ -17,17 +17,17 @@
     "PUBLISHED"
   ],
   "targetArtworkCount": 5500,
-  "generatedArtworkCount": 1802,
+  "generatedArtworkCount": 2002,
   "suppliedArtworkCount": 11280,
-  "originalTopicArtworkCount": 2150,
-  "supplementalArtworkCount": 11734,
-  "qualityApprovedArtworkCount": 2150,
-  "supplementalApprovedArtworkCount": 11734,
+  "originalTopicArtworkCount": 2350,
+  "supplementalArtworkCount": 11784,
+  "qualityApprovedArtworkCount": 2350,
+  "supplementalApprovedArtworkCount": 11784,
   "reviewerType": "AI_AGENT_NOT_HUMAN",
   "humanApprovedArtworkCount": 0,
-  "availableArtworkCount": 13884,
-  "remainingToDraw": 3698,
-  "nextAction": "Publish and live-verify the completed 50-artwork Elf and 50-artwork Reindeer collections together, preserving all concurrent catalog and editorial changes. Then continue genuinely missing original topics after live/catalog/supplied/staged/queued and Google Images checks. Do not count supplied packages, repairs or rejected sources as new originals.",
+  "availableArtworkCount": 14134,
+  "remainingToDraw": 3498,
+  "nextAction": "Publish accepted collections through the coordinated release, verify live routes and downloads, and continue only genuinely missing original-list topics. Owner-supplied art never counts toward the 5500 original target.",
   "topics": [
     {
       "topic": "halloween",
@@ -385,13 +385,15 @@
       "keyword": "Feast clipart",
       "wave": "W2",
       "target": 50,
-      "generated": 0,
+      "generated": 50,
       "supplied": 0,
-      "available": 0,
-      "approved": 0,
-      "remainingToDraw": 50,
-      "briefStatus": "NOT_STARTED",
-      "briefPath": null
+      "available": 50,
+      "approved": 50,
+      "remainingToDraw": 0,
+      "briefStatus": "50_COMPOSITIONS_REVIEWED",
+      "briefPath": "data/briefs/feast.json",
+      "sourceMastersCreated": 6,
+      "sourceMastersReviewed": 6
     },
     {
       "topic": "gratitude",
@@ -918,12 +920,12 @@
       "keyword": "Snowman clipart",
       "wave": "W2",
       "target": 50,
-      "generated": 0,
+      "generated": 50,
       "supplied": 0,
-      "available": 0,
-      "approved": 0,
-      "remainingToDraw": 50,
-      "briefStatus": "DRAFT_ROWS_REQUIRE_REVIEW",
+      "available": 50,
+      "approved": 50,
+      "remainingToDraw": 0,
+      "briefStatus": "50_COMPOSITIONS_REVIEWED",
       "briefPath": "data/briefs/snowman.json"
     },
     {
@@ -931,13 +933,13 @@
       "keyword": "Gingerbread clipart",
       "wave": "W2",
       "target": 50,
-      "generated": 0,
+      "generated": 50,
       "supplied": 0,
-      "available": 0,
-      "approved": 0,
-      "remainingToDraw": 50,
-      "briefStatus": "NOT_STARTED",
-      "briefPath": null
+      "available": 50,
+      "approved": 50,
+      "remainingToDraw": 0,
+      "briefStatus": "50_COMPOSITIONS_REVIEWED",
+      "briefPath": "data/briefs/gingerbread.json"
     },
     {
       "topic": "nutcracker",
@@ -1347,13 +1349,16 @@
       "keyword": "2027 clipart",
       "wave": "W4",
       "target": 50,
-      "generated": 0,
+      "generated": 50,
       "supplied": 0,
-      "available": 0,
-      "approved": 0,
-      "remainingToDraw": 50,
-      "briefStatus": "NOT_STARTED",
-      "briefPath": null
+      "available": 100,
+      "approved": 100,
+      "remainingToDraw": 0,
+      "briefStatus": "100_COMPOSITIONS_REVIEWED",
+      "briefPath": "data/briefs/2027.json",
+      "priorityCollectionTarget": 100,
+      "original110Allocation": 50,
+      "additionalOwnerPriorityArtworks": 50
     },
     {
       "topic": "valentine",
@@ -153087,5 +153092,5 @@
     }
   ],
   "verifiedPublishedGeneratedArtworkCount": 1702,
-  "acceptedAwaitingRelease": 100
+  "acceptedAwaitingRelease": 300
 }

@@ -1,0 +1,494 @@
+{
+  "wave": "wave_477",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "2027-owl-graduation",
+      "title": "Graduation Owl with Class of 2027",
+      "alt": "Brown owl wearing mint glasses and a black mortarboard above a book and large Class of 2027 lettering.",
+      "description": "Gold laurels frame the year beside a rolled diploma tied with a red ribbon.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_477/source/2027-owl-graduation.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1246,
+      "height": 1263,
+      "pdfWidth": 987,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "c3a48a28de1437a458345d7b284e8f0903e7bbc4d97f4d481d2fe6e02708abcd",
+      "inputSignature": "71da481970ff9cbea12219fe731caa7330e84e4eaea1bc54745069e16a640b84",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 985097,
+        "weightedCmykRmse": 0.771562
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1313209,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 985097,
+          "weightedCmykRmse": 0.771562
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        82,
+        30,
+        1194,
+        1177
+      ],
+      "image": {
+        "width": 987,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_477/exports/2027-owl-graduation.pdf",
+          "bytes": 985097,
+          "sha256": "490419446a7e6f93ff8f0d513a0634faba861182db91bef2c39c5e2efc813582"
+        },
+        "webp": {
+          "path": "work/production/wave_477/exports/2027-owl-graduation.webp",
+          "bytes": 1193452,
+          "sha256": "6e907409236059d4b17036f6257c904c5460da1d5dabab010165c590017dd4e2"
+        },
+        "thumb": {
+          "path": "work/production/wave_477/exports/2027-owl-graduation-thumb.webp",
+          "bytes": 66990,
+          "sha256": "9ea11dd1d9b89ccf6da8ee4dbea971d1d374d811819d3067264dc4031a344220"
+        }
+      },
+      "proofSha256": "375a0e0f83956460ed061698dae91e507ce4583eae1aea4eca6b7816f8939f63",
+      "pairMeanRgbDifference": 5.95547
+    },
+    {
+      "id": "2027-kids-pencil",
+      "title": "Pencil Character with a 2027 Plaque",
+      "alt": "Smiling yellow pencil character holding a navy plaque with large colorful 2027 numerals.",
+      "description": "A raised eraser-shaped hand waves above one red sneaker, while the number plaque keeps its full gold border.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_477/source/2027-kids-pencil.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "ef67bed9662b693af52f93b8d28692b43315ec0123aa0dbff7665c2e926a4d71",
+      "inputSignature": "6556d9a98cf94366526fe3ee158a37cc81aeecf2d458fc20e9ffd2aab7fc7fb9",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 704964,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 704964,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        123,
+        73,
+        1436,
+        928
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_477/exports/2027-kids-pencil.pdf",
+          "bytes": 704964,
+          "sha256": "0f06fae97fa280a51aa323ea14e208835fef87ebdc409e96e26b21e820102fc0"
+        },
+        "webp": {
+          "path": "work/production/wave_477/exports/2027-kids-pencil.webp",
+          "bytes": 1250662,
+          "sha256": "43fda06405fcc78926ffbd7f5db7aef3295f8a14bcd8abac871006dd191cc3f0"
+        },
+        "thumb": {
+          "path": "work/production/wave_477/exports/2027-kids-pencil-thumb.webp",
+          "bytes": 39338,
+          "sha256": "81f3ce89336a1e78065effd3e58d6fcc1cf006d9491f582c243eec9c5a66a9a2"
+        }
+      },
+      "proofSha256": "d4183bdb4967cdeb55dbaf5619285115d0a421ef933f6b159b32bb15141f6aa9",
+      "pairMeanRgbDifference": 5.36842
+    },
+    {
+      "id": "2027-marquee-numbers",
+      "title": "Illuminated Marquee 2027",
+      "alt": "Red 2027 marquee numerals filled with warm round bulbs, standing above a curling gold ribbon.",
+      "description": "Gold beveled borders trace the clear digits while the full ribbon sweeps beneath the row.",
+      "color": "Red",
+      "style": "Color",
+      "source": "work/production/wave_477/source/2027-marquee-numbers.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1774,
+      "height": 887,
+      "pdfWidth": 1000,
+      "pdfHeight": 500,
+      "sourceType": "raster",
+      "sourceSha256": "9cab03e3b8fb0d1536c645e727967733106b38de6aeae2d97e7e7d6a87b91d27",
+      "inputSignature": "fc6a373c9c99e970ff6ff00721b593420566c9a786e14eb16ea382bc9e76bc54",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 667681,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 667681,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        104,
+        131,
+        1671,
+        775
+      ],
+      "image": {
+        "width": 1000,
+        "height": 500,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_477/exports/2027-marquee-numbers.pdf",
+          "bytes": 667681,
+          "sha256": "f2321926ce40e74a4525faa10b5eba6a459d8dcb46696d693bdd024fc0f41516"
+        },
+        "webp": {
+          "path": "work/production/wave_477/exports/2027-marquee-numbers.webp",
+          "bytes": 1211596,
+          "sha256": "42c79aec0b2e3819f1fefa52c1daf3a7f78442f916181184cc668ee0b75d5877"
+        },
+        "thumb": {
+          "path": "work/production/wave_477/exports/2027-marquee-numbers-thumb.webp",
+          "bytes": 40242,
+          "sha256": "9bd5f96b29f962be9cfed4c4737e74cc12d9f51143a16f8e661226e295241988"
+        }
+      },
+      "proofSha256": "7e43682228bee580da0bf9fd814a8f5e807eb0a2954e0426d1f1c40abafd6317",
+      "pairMeanRgbDifference": 10.84432
+    },
+    {
+      "id": "2027-disco-dance",
+      "title": "Dance into 2027 Disco Greeting",
+      "alt": "Magenta Dance into 2027 lettering beneath a mirrored disco ball, with a pair of glittering pink heels beside the year.",
+      "description": "Silver mirror tiles and small star glints contrast with the sweeping glossy script and full shoe straps.",
+      "color": "Pink",
+      "style": "Color",
+      "source": "work/production/wave_477/source/2027-disco-dance.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "487915c2e8aabfdae2ca5c369263e038a7226a8f273454d0e93e1624c451c2da",
+      "inputSignature": "5421b3de760135522bcc93c34242a1df95ad791cdf64574154cd09de247b93f8",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 963104,
+        "weightedCmykRmse": 0.796709
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1197628,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 963104,
+          "weightedCmykRmse": 0.796709
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        137,
+        60,
+        1169,
+        1114
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_477/exports/2027-disco-dance.pdf",
+          "bytes": 963104,
+          "sha256": "e05f31581e26303335e4890adda9effaf94497f9fca1a8c0e934c45d43ad1eeb"
+        },
+        "webp": {
+          "path": "work/production/wave_477/exports/2027-disco-dance.webp",
+          "bytes": 1205968,
+          "sha256": "489651e2f41c11c6065e8b5f8706463e68ed443393398524c93aaff5f9d9ea96"
+        },
+        "thumb": {
+          "path": "work/production/wave_477/exports/2027-disco-dance-thumb.webp",
+          "bytes": 68516,
+          "sha256": "c20ecb1064b245eed4f7dd2eb5c06b6d01b97f69a0916320a2f60d8b1d579db0"
+        }
+      },
+      "proofSha256": "92262c9f716d4bdc7ed67b4227382383f7fc186d45b8525d1db4d93fccf54dc2",
+      "pairMeanRgbDifference": 6.51624
+    },
+    {
+      "id": "2027-party-glasses",
+      "title": "2027 Gold-Number Party Glasses",
+      "alt": "Purple glitter party glasses with ordinary clear lenses and four separate gold 2027 numerals attached above the frame.",
+      "description": "A purple bow and small gold stars decorate the bridge and rims, with both temple arms fully visible.",
+      "color": "Purple",
+      "style": "Color",
+      "source": "work/production/wave_477/source/2027-party-glasses.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "d64755b3da021e7df6b3abdb89773ea3b4ad6514f30aa97cb854ba6da94f995d",
+      "inputSignature": "4a21774229c072c98f8ba2c34a9099cad90ac2b9aa1b069019b1d111ecc97d78",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 792188,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 792188,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        92,
+        175,
+        1445,
+        832
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_477/exports/2027-party-glasses.pdf",
+          "bytes": 792188,
+          "sha256": "70c15cb6cbf03066979fa719c47e654a634df0aaf87c0e08d8c1017f12f302ad"
+        },
+        "webp": {
+          "path": "work/production/wave_477/exports/2027-party-glasses.webp",
+          "bytes": 1431258,
+          "sha256": "87e67a9bbed5430bb072526827cabeb0caec71b2811c9591cafdb9ac7cab0d7b"
+        },
+        "thumb": {
+          "path": "work/production/wave_477/exports/2027-party-glasses-thumb.webp",
+          "bytes": 46218,
+          "sha256": "94426f69a82806f2522a9b4a3cb1977e377779c1b0643bfd14b0783753275f8e"
+        }
+      },
+      "proofSha256": "f8da1c174cd74a40faa6261463e5febc4b2d5d5dba22e5e8dbfcadc23cb7157a",
+      "pairMeanRgbDifference": 4.65706
+    },
+    {
+      "id": "2027-party-hat-badge",
+      "title": "Ready for 2027 Party Badge",
+      "alt": "Teal shield-shaped Ready for 2027 badge topped with an orange striped party hat and wrapped by a gold ribbon.",
+      "description": "Cream beveled lettering fills the dark center beneath the hat's small curled topper.",
+      "color": "Teal",
+      "style": "Color",
+      "source": "work/production/wave_477/source/2027-party-hat-badge.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1295,
+      "height": 1214,
+      "pdfWidth": 1000,
+      "pdfHeight": 937,
+      "sourceType": "raster",
+      "sourceSha256": "2d50b63f3e75bd9223e609ffdd2db738a14d2abfe50cc7ffdf067e0c67ff68fd",
+      "inputSignature": "d604f07a54f0f4f1e6515e665fd833d04e275ad039a4420a3cd2022f74284876",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 821895,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 821895,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        260,
+        10,
+        1099,
+        1154
+      ],
+      "image": {
+        "width": 1000,
+        "height": 937,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_477/exports/2027-party-hat-badge.pdf",
+          "bytes": 821895,
+          "sha256": "832a6cc6ffae6567320f3a486d9c8d8712b95c968a7efbec5b96d9912cf121c9"
+        },
+        "webp": {
+          "path": "work/production/wave_477/exports/2027-party-hat-badge.webp",
+          "bytes": 847100,
+          "sha256": "00cb2967574f806172ead4691d850c7745caf552f72c78403b9ad4284f9389d9"
+        },
+        "thumb": {
+          "path": "work/production/wave_477/exports/2027-party-hat-badge-thumb.webp",
+          "bytes": 48606,
+          "sha256": "acc58fded6d99d5595d757f2ee12728f96d9f7310b89e151824040f23fc33d69"
+        }
+      },
+      "proofSha256": "109001d185bf52be8506d970e839c8529e34d2c7ee8a606009acd02a4cb8f312",
+      "pairMeanRgbDifference": 4.08992
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T12:30:06.787983+00:00",
+  "screenReviewEvidence": "work/production/wave_477/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T12:30:07.983Z"
+}

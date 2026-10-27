@@ -1,0 +1,77 @@
+{
+  "wave": "wave_462",
+  "topic": "snowman",
+  "method": "builtin-image-generation",
+  "research": "data/research/snowman-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "snowman-snowman-knitted-toy",
+      "title": "Knitted Snowman with Earflap Hat",
+      "alt": "Cream knitted snowman plush with a rust-colored earflap hat, green scarf, brown mittens and wooden buttons.",
+      "description": "Chunky stitches, small hat tassels and stitched mitten edges emphasize the rounded toy\u2019s looped yarn texture.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_462/source/snowman-snowman-knitted-toy.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-snowman-wooden-ornament",
+      "title": "Snowman Face on a Wood-Slice Ornament",
+      "alt": "Round bark-edged wood ornament painted with a smiling snowman face and teal top hat, hanging beneath a red gingham bow.",
+      "description": "The complete twine loop sits above the broad bow, with the painted face centered on the pale wood.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_462/source/snowman-snowman-wooden-ornament.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-snowman-felt-garland",
+      "title": "Three Felt Snowmen on a Garland",
+      "alt": "Curved red cord holding three stitched felt snowmen with different hats, scarves and twig arms.",
+      "description": "The left charm wears red mittens, the slender middle charm has a tall red hat, and the broad right charm carries a broom.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_462/source/snowman-snowman-felt-garland.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-snowman-snowglobe",
+      "title": "Snowman in a Burgundy Snow Globe",
+      "alt": "Clear snow globe containing a waving snowman in a blue cap and orange scarf, above a burgundy base with a silver snowflake.",
+      "description": "White snow flecks sit inside the rounded glass dome while silver trim outlines the stepped base.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_462/source/snowman-snowman-snowglobe.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-snowman-pop-up-card",
+      "title": "Paper Snowman Pop-Up Card",
+      "alt": "Open pale blue card with a faceted paper snowman, green pointed hat, red scarf and two folded evergreen trees.",
+      "description": "The angular snowballs and raised branch arms stand out from the flat card, with all four outer corners visible.",
+      "color": "Blue",
+      "style": "Color",
+      "source": "work/production/wave_462/source/snowman-snowman-pop-up-card.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-snowman-sugar-cookie-house",
+      "title": "Snowman Offering Seeds Beside a Birdhouse",
+      "alt": "Seated snowman in a plum knitted hat and cream scarf holding seeds beside a snow-covered gingerbread-style birdhouse.",
+      "description": "A small red heart decorates the snowman's chest, matching the berries on the birdhouse post.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_462/source/snowman-snowman-sugar-cookie-house.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

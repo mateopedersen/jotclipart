@@ -1,0 +1,77 @@
+{
+  "wave": "wave_461",
+  "topic": "snowman",
+  "method": "builtin-image-generation",
+  "research": "data/research/snowman-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "snowman-heart-embrace",
+      "title": "Snowman Pair Holding a Knitted Heart",
+      "alt": "Two smiling snowmen, one in a black top hat and gold scarf and the other in a purple bonnet, holding a red knitted heart.",
+      "description": "The taller figure leans toward its smaller companion, whose ruffled bonnet is decorated with pale flowers and red berries.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_461/source/snowman-heart-embrace.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-winter-welcome-sign",
+      "title": "Snowman Above a Blank Winter Sign",
+      "alt": "Small snowman in a blue pom-pom hat and red scarf waving above a blank wooden sign bordered with snow, pine sprigs and berries.",
+      "description": "The broad unlettered wood panel leaves room for a short message, with pinecones and red berries beneath it.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_461/source/snowman-winter-welcome-sign.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-snowman-head-wreath",
+      "title": "Snowman Face in a Pine and Berry Wreath",
+      "alt": "Smiling blue-eyed snowman face in a long red knitted cap, framed by pine needles, blue berries and pinecones.",
+      "description": "The curved greenery follows the lower face while the long snowflake-patterned cap falls to one side.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_461/source/snowman-snowman-head-wreath.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-snowman-postbox",
+      "title": "Snowman-Shaped Red Postbox",
+      "alt": "Red snowman-shaped postbox with a green postal cap, striped scarf, twig arms and a snowflake-decorated mail door.",
+      "description": "A dark horizontal mail slot and brass-colored fittings sit beneath the smiling carrot-nosed head.",
+      "color": "Red",
+      "style": "Color",
+      "source": "work/production/wave_461/source/snowman-snowman-postbox.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-snowman-cookie",
+      "title": "Snowman Cookie with Teal Icing Hat",
+      "alt": "Snowman-shaped cookie decorated with white icing, a teal hat, purple snowflake scarf and three gold buttons.",
+      "description": "The golden cookie edge outlines the rounded body and branch-shaped arms, with a white pom-pom at the end of the hat.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_461/source/snowman-snowman-cookie.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-snowman-candle",
+      "title": "Snowman Candle with Green Scarf",
+      "alt": "White snowman candle with an unlit wick above a black top hat, green scarf, twig arms and coal buttons.",
+      "description": "A small holly decoration rests on the hatband, and the cream-colored wick remains fully visible.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_461/source/snowman-snowman-candle.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

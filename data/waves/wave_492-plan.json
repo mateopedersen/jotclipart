@@ -1,0 +1,77 @@
+{
+  "wave": "wave_492",
+  "topic": "feast",
+  "method": "builtin-image-generation",
+  "research": "data/research/feast-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "feast-afternoon-tea-stand",
+      "title": "Three-Tier Afternoon Tea Stand",
+      "alt": "A floral three-tier tea stand displays sandwiches, scones and pink pastries beside a matching cup and saucer.",
+      "description": "A heart-shaped gold handle tops the delicate stand, with jam and cream dishes tucked beside the middle-tier scones.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_492/source/feast-afternoon-tea-stand.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-taco-serving-station",
+      "title": "Taco Sharing Station with Toppings",
+      "alt": "Three filled tacos stand in a yellow rack behind bowls of tomato, corn and avocado beside stacked tortillas.",
+      "description": "Colorful toppings remain separate from the large taco shells, creating a compact serving arrangement with clear individual dishes.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_492/source/feast-taco-serving-station.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-steamer-dumpling-feast",
+      "title": "Dumpling Steamers with a Red Teapot",
+      "alt": "Two bamboo steamers hold crescent dumplings and open-topped dumplings beside a red teapot and dipping sauce.",
+      "description": "Pleated white dumplings contrast with the yellow open wrappers, while a small floral pattern decorates the rounded teapot.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_492/source/feast-steamer-dumpling-feast.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-sushi-sharing-boat",
+      "title": "Sushi Serving Boat with Nigiri and Rolls",
+      "alt": "A wooden serving boat holds six sushi rolls and two salmon-topped nigiri beside a small sauce dish.",
+      "description": "Green leaf garnish and folded pink ginger sit near the raised stern, keeping the complete boat silhouette visible around the food.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_492/source/feast-sushi-sharing-boat.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-cheese-and-fruit-board",
+      "title": "Slate Cheese Board with Grapes and Figs",
+      "alt": "A dark slate board holds a cheese wedge, a cut round cheese, grapes, sliced figs and fanned crackers.",
+      "description": "A wooden-handled cheese knife lies along the front edge, balancing the pale cheeses against the purple fruit and rough slate rim.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_492/source/feast-cheese-and-fruit-board.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-shellfish-rice-pan",
+      "title": "Mussel Rice Feast Pan with Salad",
+      "alt": "A two-handled black pan contains golden rice, mussels, pepper strips, peas and lemon wedges beside a salad bowl.",
+      "description": "Opened dark shells form a clear pattern across the bright rice, with the small leafy salad set behind the right handle.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_492/source/feast-shellfish-rice-pan.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

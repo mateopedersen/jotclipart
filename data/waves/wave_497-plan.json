@@ -1,0 +1,77 @@
+{
+  "wave": "wave_497",
+  "topic": "feast",
+  "method": "builtin-image-generation",
+  "research": "data/research/feast-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "feast-breaking-bread-hands",
+      "title": "Sharing a Freshly Torn Bread Loaf",
+      "alt": "Two pairs of hands pull a round crusty loaf apart above a board with olive oil, tomatoes and olives.",
+      "description": "The open bread reveals an airy crumb, with the small dipping bowl centered between tomato wedges on the handled board.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_497/source/feast-breaking-bread-hands.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-lets-feast-lettering",
+      "title": "Let\u2019s Feast Turkey Lettering",
+      "alt": "Cream and rust lettering reads \u201cLET\u2019S FEAST\u201d above roast turkey, corn and cranberries between a fork and spoon.",
+      "description": "Shaded rounded letters and autumn leaves form a compact food-themed graphic around the complete serving platter.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_497/source/feast-lets-feast-lettering.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-friends-greeting",
+      "title": "Feast with Friends Turkey Banner",
+      "alt": "A cream ribbon reading \u201cFEAST WITH FRIENDS\u201d arches above roast turkey, green beans and stuffing.",
+      "description": "Small leafy flourishes finish the curved banner while the two side dishes extend the low, welcoming food arrangement.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_497/source/feast-friends-greeting.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-share-table-lettering",
+      "title": "Share the Table Food Lettering",
+      "alt": "Green \u201cSHARE THE TABLE\u201d lettering sits above a fruit bowl and bread basket framed by open hands.",
+      "description": "Red apples, purple and green grapes, a yellow-orange fruit and crusty rolls add warm color beneath the three lines of text.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_497/source/feast-share-table-lettering.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-campfire-skillet-feast",
+      "title": "Turkey Drumstick Feast over a Campfire",
+      "alt": "Two roasted turkey drumsticks cook with corn and potatoes in a black skillet over a small campfire stand.",
+      "description": "A blue enamel mug and cloth-wrapped bread loaf complete the compact outdoor meal beside the full skillet handle.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_497/source/feast-campfire-skillet-feast.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-grilled-skewer-spread",
+      "title": "Grilled Vegetable Skewer Feast",
+      "alt": "Grilled skewers with mushrooms, zucchini and peppers share a pale tray with flatbread, green dip and tomato salad.",
+      "description": "Long wooden sticks point toward the front of the tray, creating a diagonal arrangement beside the neatly separated accompaniments.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_497/source/feast-grilled-skewer-spread.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

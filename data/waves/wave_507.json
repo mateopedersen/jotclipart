@@ -1,0 +1,484 @@
+{
+  "wave": "wave_507",
+  "status": "AWAITING_CDN",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "blessings-rabbit-quiet-prayer",
+      "title": "Rabbit Praying on a Blue Mat",
+      "alt": "A grey cartoon rabbit in a moon-pattern nightshirt kneels with clasped paws on a stitched blue mat beside a closed book.",
+      "description": "Long complete ears, closed eyes and soft pink cheeks give the little fantasy animal a calm bedtime pose.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_507/source/blessings-rabbit-quiet-prayer.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1284,
+      "height": 1225,
+      "pdfWidth": 1000,
+      "pdfHeight": 954,
+      "sourceType": "raster",
+      "sourceSha256": "bf813bfdba3a15e5aea447ef31bcbe3c8019963139b42dbdf9f77038f99a71ac",
+      "inputSignature": "89545b5d848d9ec12a5b1be76ee97c86910ea6f67581f05f2f87eb8c8e31256f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 762490,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 762490,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        271,
+        57,
+        1077,
+        1148
+      ],
+      "image": {
+        "width": 1000,
+        "height": 954,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_507/exports/blessings-rabbit-quiet-prayer.pdf",
+          "bytes": 762490,
+          "sha256": "fcd7249c28aee3e23ad662c4d765bcef2786ff3051e6e94e60d981443b6d80c6"
+        },
+        "webp": {
+          "path": "work/production/wave_507/exports/blessings-rabbit-quiet-prayer.webp",
+          "bytes": 626534,
+          "sha256": "1aecf3e7ecc97af3dc5735355fe73985a931b0a0a44f870eba5d344f811df142"
+        },
+        "thumb": {
+          "path": "work/production/wave_507/exports/blessings-rabbit-quiet-prayer-thumb.webp",
+          "bytes": 38076,
+          "sha256": "bcc02e2b20681e35a7fb1ae20eb2f69838778274c4bfbec012574e8775bf6af8"
+        }
+      },
+      "proofSha256": "9383de4e506231ae42ec37d0a995d20af234e009b1f79f19feff6408397b473a",
+      "pairMeanRgbDifference": 1.56156
+    },
+    {
+      "id": "blessings-peace-dove-ribbon",
+      "title": "Peace and Blessings Dove Ribbon",
+      "alt": "A flying white dove carries a teal ribbon reading “PEACE AND BLESSINGS” with a pink flower at one end.",
+      "description": "Layered blue-grey feathers, a curled tail ribbon and tucked pink feet create a wide greeting graphic.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_507/source/blessings-peace-dove-ribbon.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "28992ed48f32071ffa13d2062675d94486695b3c0a5302a60417b3ea20d8aa48",
+      "inputSignature": "1584f4304f57ed7f09ad67a864634099cbdcf87b2905573e75ce60d2e3b304f4",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 463869,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 463869,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        183,
+        179,
+        1387,
+        820
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_507/exports/blessings-peace-dove-ribbon.pdf",
+          "bytes": 463869,
+          "sha256": "75dd176f9fded29fe576394893e550c4e50ae5b28c4863255c6b4484bb06e1fb"
+        },
+        "webp": {
+          "path": "work/production/wave_507/exports/blessings-peace-dove-ribbon.webp",
+          "bytes": 948430,
+          "sha256": "873b3521a33f913fc033f0e1b8a261b464704bd053104d360acb9ffcd4c4a8d1"
+        },
+        "thumb": {
+          "path": "work/production/wave_507/exports/blessings-peace-dove-ribbon-thumb.webp",
+          "bytes": 30496,
+          "sha256": "ad0cbc2a33d2ff06058996b35482edad816f680194ebf394aadf247351d7a176"
+        }
+      },
+      "proofSha256": "268a7896b3af159479961ab21fd15f4e96147d34c4ab7916d17f1f2beefd9494",
+      "pairMeanRgbDifference": 2.04449
+    },
+    {
+      "id": "blessings-blessings-classroom-checklist",
+      "title": "Count Your Blessings Checklist",
+      "alt": "A wooden clipboard holds a “COUNT YOUR BLESSINGS” sheet with three empty checkboxes and writing lines.",
+      "description": "A complete red pencil and two star stickers sit at the lower corner beneath the silver clip.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_507/source/blessings-blessings-classroom-checklist.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "5ea5d4096981a20465563e0956167c9c5facb48dba164c540fc8565d91d92e69",
+      "inputSignature": "430adac9e9cfba42d5c4029a6ba78799245c2fd39acdbe8c6a89370295312974",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 665402,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 665402,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        280,
+        91,
+        1055,
+        1097
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_507/exports/blessings-blessings-classroom-checklist.pdf",
+          "bytes": 665402,
+          "sha256": "e94e23032129404bd1ff35165e17bf253b88269f01cd8d651e4d43d330f6875b"
+        },
+        "webp": {
+          "path": "work/production/wave_507/exports/blessings-blessings-classroom-checklist.webp",
+          "bytes": 571758,
+          "sha256": "60b9f650594007a93acbc4d1feabffca8cc8e718e429154501734eb20c1040ac"
+        },
+        "thumb": {
+          "path": "work/production/wave_507/exports/blessings-blessings-classroom-checklist-thumb.webp",
+          "bytes": 30508,
+          "sha256": "e55cb2b6b34aaff1297131a405b2dd6a7f7d314d9a2a992abfff7cd828653bce"
+        }
+      },
+      "proofSha256": "f40cea4fb465046e94a08079a8c657a9b5530cad9f224b94e1892e92be42038c",
+      "pairMeanRgbDifference": 4.40796
+    },
+    {
+      "id": "blessings-outline-bear-blessing-mailbox",
+      "title": "Bear Mailing a Blessings Letter Coloring Page",
+      "alt": "A smiling cartoon bear posts a heart-sealed letter into a mailbox marked “BLESSINGS” in black outline.",
+      "description": "A striped waistcoat, raised mailbox flag and open door give the complete mail-delivery scene clear coloring details.",
+      "color": "Black",
+      "style": "Outline",
+      "source": "work/production/wave_507/source/blessings-outline-bear-blessing-mailbox.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "blessings",
+      "width": 1269,
+      "height": 1239,
+      "pdfWidth": 1000,
+      "pdfHeight": 976,
+      "sourceType": "raster",
+      "sourceSha256": "acd46f729aa19282aca1a07ee57e5d4e8830291d14da8a70aa3e346d40d5e615",
+      "inputSignature": "296c74f96b9577f13228deff3f12a67661bbbf584e4336bfece6d16c61f35575",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 228728,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 228728,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        200,
+        171,
+        1103,
+        1048
+      ],
+      "image": {
+        "width": 1000,
+        "height": 976,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_507/exports/blessings-outline-bear-blessing-mailbox.pdf",
+          "bytes": 228728,
+          "sha256": "5fea9e66a91c0656c84f4ceef16e6d36d26d4193c9790622cc88e2e260b9c0aa"
+        },
+        "webp": {
+          "path": "work/production/wave_507/exports/blessings-outline-bear-blessing-mailbox.webp",
+          "bytes": 419844,
+          "sha256": "95e5fb1386f7a3d99e0e346f9aa51622d1e86ddefab9b64911fdb6cee54ddd84"
+        },
+        "thumb": {
+          "path": "work/production/wave_507/exports/blessings-outline-bear-blessing-mailbox-thumb.webp",
+          "bytes": 34900,
+          "sha256": "4c9e6ca508636b8541f1d91bfe469e45bec2e9a909fb0955ec8d6bf859ce2026"
+        }
+      },
+      "proofSha256": "a8b99274d8bd96ccaee19ed562a6103a334776cc38212fb8c5a806f09bcb4f12",
+      "pairMeanRgbDifference": 5.29268
+    },
+    {
+      "id": "blessings-outline-family-blessing-tree",
+      "title": "Family Planting a Blessings Tree Coloring Page",
+      "alt": "A cartoon adult and two children plant a sapling in a rounded planter with a “BLESSINGS” sign in black outline.",
+      "description": "One child tips a small watering can while the other helps press soil beside the leafy young tree.",
+      "color": "Black",
+      "style": "Outline",
+      "source": "work/production/wave_507/source/blessings-outline-family-blessing-tree.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "blessings",
+      "width": 1301,
+      "height": 1209,
+      "pdfWidth": 1000,
+      "pdfHeight": 929,
+      "sourceType": "raster",
+      "sourceSha256": "942bd75d720fe39ac9b51f76ba3d77351f2445c7a4619f9e375ff80e4a965cca",
+      "inputSignature": "45bb9521879f04e47f21d2cb95e00c6c27e72aab06af83927a27de8ae355dc03",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 348937,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 348937,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        164,
+        105,
+        1210,
+        1075
+      ],
+      "image": {
+        "width": 1000,
+        "height": 929,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_507/exports/blessings-outline-family-blessing-tree.pdf",
+          "bytes": 348937,
+          "sha256": "616caa839aecb336e1af91fedfdeb6aedade06c21193192eeff519ed89ea4c13"
+        },
+        "webp": {
+          "path": "work/production/wave_507/exports/blessings-outline-family-blessing-tree.webp",
+          "bytes": 704844,
+          "sha256": "1462e719698d2fc9394926251df0f347fde884ed0a67ce5954fc8dfe9887bbfe"
+        },
+        "thumb": {
+          "path": "work/production/wave_507/exports/blessings-outline-family-blessing-tree-thumb.webp",
+          "bytes": 57440,
+          "sha256": "530f55ebb6661ce69f9f35117ae735a24ef85d10c26432207ffa55e2a6cec717"
+        }
+      },
+      "proofSha256": "27ba4c1890f7ce7b773541022ae9d255f606daaf6e5159398bca9dc500bba080",
+      "pairMeanRgbDifference": 8.46848
+    },
+    {
+      "id": "blessings-outline-cross-window",
+      "title": "Cross and Dove Window Coloring Page",
+      "alt": "A pointed-arch window contains a central Christian cross, leaf-shaped panels and an upper dove in black outline.",
+      "description": "Broad unshaded panes and a complete stone-style outer border define the independent stained-glass coloring design.",
+      "color": "Black",
+      "style": "Outline",
+      "source": "work/production/wave_507/source/blessings-outline-cross-window.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "blessings",
+      "width": 1024,
+      "height": 1536,
+      "pdfWidth": 667,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "45c737faffe85770944fdd69f3abcba477d1c9d9892abdb74aa8c49dbb0af0a6",
+      "inputSignature": "7f163cfa7004996b90230801d516bccf39996bc998dd6658e026e937200df976",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 204541,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 204541,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        160,
+        149,
+        863,
+        1332
+      ],
+      "image": {
+        "width": 667,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_507/exports/blessings-outline-cross-window.pdf",
+          "bytes": 204541,
+          "sha256": "4bbf026f815ab5ada9569045265044c82f4e16697989ce8d988f4995d3289004"
+        },
+        "webp": {
+          "path": "work/production/wave_507/exports/blessings-outline-cross-window.webp",
+          "bytes": 837796,
+          "sha256": "2d5306a0a6e851e2fcfd6167b71a79eb4cd955ded0075e499d173e8fb0fad297"
+        },
+        "thumb": {
+          "path": "work/production/wave_507/exports/blessings-outline-cross-window-thumb.webp",
+          "bytes": 30094,
+          "sha256": "b41463a16546a197df1c8274d4bb8e706cba9d78081d69f32c61f3e1ec5836b6"
+        }
+      },
+      "proofSha256": "eb75a749193f159f00f19c9d7dae89fdea22f28e8f250aae5f932828fc8fcffd",
+      "pairMeanRgbDifference": 9.86323
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T15:52:36.778175+00:00",
+  "screenReviewEvidence": "work/production/wave_507/native-proof-review.jpg",
+  "screenReviewEvidenceSha256": "e68458c34550c0cadf24bae63a20cb2a644962d484e3372ab7f76f48659e0e39",
+  "screenReviewNotes": "All actual rendered CMYK PDF compositions viewed: legible ribbon and clipboard words, complete rabbit and dove, coherent independent outline scenes. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T15:56:01.394Z"
+}

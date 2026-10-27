@@ -1,0 +1,483 @@
+{
+  "wave": "wave_463",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "snowman-snowman-snow-telescope",
+      "title": "Snowman Looking Through a Brass Telescope",
+      "alt": "Snowman in a green fleece-lined earflap hat and orange scarf looking through a brass telescope on a wooden tripod.",
+      "description": "One twig hand steadies the eyepiece while the other rests on the tall tripod beneath the extended brass barrel.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_463/source/snowman-snowman-snow-telescope.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "33c74be2bed4fafbdb145408b155db370a0d41e57b45d3d5440f0c72fd101796",
+      "inputSignature": "2b56c3968acf7cae0b3c10fddff93dd744aed939a36e14a0a260ce273df1e881",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 834834,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 834834,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        258,
+        94,
+        1175,
+        1097
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_463/exports/snowman-snowman-snow-telescope.pdf",
+          "bytes": 834834,
+          "sha256": "40e0ef752185781ab3af451b79552d94bcbfbc251e6e4aa16699924afa6f1acf"
+        },
+        "webp": {
+          "path": "work/production/wave_463/exports/snowman-snowman-snow-telescope.webp",
+          "bytes": 701292,
+          "sha256": "211c2c6aa4d857d5d922f7dc247405312cb177bad051981b3680e2c0c20856c9"
+        },
+        "thumb": {
+          "path": "work/production/wave_463/exports/snowman-snowman-snow-telescope-thumb.webp",
+          "bytes": 48456,
+          "sha256": "8f2f1e60bc72088415efac46ae2e31fe1b2fce772c8d6c42783d7a4936b05c2e"
+        }
+      },
+      "proofSha256": "5988ff37ce779df51e62c4bd7e91d7652097d0d7be2330c4856c6d36f85110d7",
+      "pairMeanRgbDifference": 3.69724
+    },
+    {
+      "id": "snowman-snowman-paper-lantern",
+      "title": "Snowman Paper Lantern with Handle",
+      "alt": "Round white paper lantern shaped like a snowman, with a red cap, green scarf, twig arms and a curved hanging handle.",
+      "description": "Horizontal paper ribs remain visible across both round sections, with simple black dots forming the eyes, smile and buttons.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_463/source/snowman-snowman-paper-lantern.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1426,
+      "height": 1103,
+      "pdfWidth": 1000,
+      "pdfHeight": 773,
+      "sourceType": "raster",
+      "sourceSha256": "d6b96aaee75eb2043e333b1896dbde348328516137dffb31452507b2b18290d7",
+      "inputSignature": "8f73528e0b238f14fa0c22c00d80b79f794f3368e0a604f57d19dcd44d05f33f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 520657,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 520657,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        297,
+        9,
+        1157,
+        1073
+      ],
+      "image": {
+        "width": 1000,
+        "height": 773,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_463/exports/snowman-snowman-paper-lantern.pdf",
+          "bytes": 520657,
+          "sha256": "28594fff49fce3770f76a53ff39cd33dda256c829c562a77e2b5f9821fda78d2"
+        },
+        "webp": {
+          "path": "work/production/wave_463/exports/snowman-snowman-paper-lantern.webp",
+          "bytes": 577966,
+          "sha256": "c93578b39cee1bba0b2461afd93dedd616a6edc909765a6c297997b8454f4392"
+        },
+        "thumb": {
+          "path": "work/production/wave_463/exports/snowman-snowman-paper-lantern-thumb.webp",
+          "bytes": 26882,
+          "sha256": "03de8d41a71b5b3ffcfa80310b7574a25589fd4bfb20713188d55afcbdd29d77"
+        }
+      },
+      "proofSha256": "f0ba065e390f68c21b2a68d761df13c871dc66adec13cd32f54a81ab3b09928f",
+      "pairMeanRgbDifference": 1.90973
+    },
+    {
+      "id": "snowman-snowman-gift-bow",
+      "title": "Snowman Peeking from a Ribboned Gift",
+      "alt": "Small snowman with blue earmuffs peeking out of a red gift box tied with a large gold ribbon bow.",
+      "description": "The open box frames the round face and twig hands while the ribbon tails curl away from the front.",
+      "color": "Red",
+      "style": "Color",
+      "source": "work/production/wave_463/source/snowman-snowman-gift-bow.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "5b6a82c87a9ec17f601601e22863412e9ab0ab1938e563c4c9861b6ee910841a",
+      "inputSignature": "501eb0fc7b90d1e91c4186be40551c4575a866c18e78fc508eddb8d823654c3f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 564555,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 564555,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        221,
+        90,
+        1318,
+        955
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_463/exports/snowman-snowman-gift-bow.pdf",
+          "bytes": 564555,
+          "sha256": "8441e307af879af5aa838067c7a5f6a70b59956be7638ec0a957879a53eea01c"
+        },
+        "webp": {
+          "path": "work/production/wave_463/exports/snowman-snowman-gift-bow.webp",
+          "bytes": 1224162,
+          "sha256": "f033aa5dca42a46c31ac9908faacd2b889f6ff0f94946965ac1379f82aab6544"
+        },
+        "thumb": {
+          "path": "work/production/wave_463/exports/snowman-snowman-gift-bow-thumb.webp",
+          "bytes": 29460,
+          "sha256": "c24609c34b269833e2a705d37b61b17293e7a3732d63522825fc48d0772f11ed"
+        }
+      },
+      "proofSha256": "0359cebaf98346ce6a73027535f9f6bf151aebb2866620de41274b63f96fcf10",
+      "pairMeanRgbDifference": 4.05003
+    },
+    {
+      "id": "snowman-outline-snowman-snowshoe",
+      "title": "Snowman on Snowshoes Outline",
+      "alt": "Black-and-white outline of a tall snowman in a pom-pom cap and scarf standing on two woven snowshoes.",
+      "description": "Spread twig arms and a trailing fringed scarf balance the long body above the detailed snowshoe webbing.",
+      "color": "Black and White",
+      "style": "Outline",
+      "source": "work/production/wave_463/source/snowman-outline-snowman-snowshoe.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "259a76d51ab75c72d2539aedc1915e944c5d25743e0f59f61ed9a1bd1fdd9160",
+      "inputSignature": "90b091aa80ea7fbf665041e94a30b4c7c5051682729f44ca461056f3881be52c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 174500,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 174500,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        403,
+        22,
+        1193,
+        992
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_463/exports/snowman-outline-snowman-snowshoe.pdf",
+          "bytes": 174500,
+          "sha256": "954e713e93b22654f9dabaf9609a0ef11956eb8b1317dddea58277897c7d4eef"
+        },
+        "webp": {
+          "path": "work/production/wave_463/exports/snowman-outline-snowman-snowshoe.webp",
+          "bytes": 815046,
+          "sha256": "740dc11e5b72f26e40236a3efb0afeb22672021286494c5c8e98ecdad47fbfd1"
+        },
+        "thumb": {
+          "path": "work/production/wave_463/exports/snowman-outline-snowman-snowshoe-thumb.webp",
+          "bytes": 29656,
+          "sha256": "1c1e04f6198b0da3989a71a1dcce0e0aa68c16a9a4db4f33d930cf226f58f411"
+        }
+      },
+      "proofSha256": "e7f528c8c3ae0845faeb4c8882b2013b6551fc6a35606e3742039503683b4816",
+      "pairMeanRgbDifference": 5.14184
+    },
+    {
+      "id": "snowman-outline-snowman-birdbath",
+      "title": "Snowman Beside a Birdbath Outline",
+      "alt": "Black-and-white snowman in a knitted cap and scarf reaching toward a small bird on a stone birdbath.",
+      "description": "The plump figure faces the bird across the rounded basin, whose pedestal has a simple cobblestone pattern.",
+      "color": "Black and White",
+      "style": "Outline",
+      "source": "work/production/wave_463/source/snowman-outline-snowman-birdbath.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "545308255dd950e0d44ea2c1035e9e34b6238115143707404b7e5f8b597128c3",
+      "inputSignature": "d5e29211a0845c4799ddd907c57ef30c8f321c3d432cae491421a13674cef3f1",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 178001,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 178001,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        232,
+        43,
+        1290,
+        986
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_463/exports/snowman-outline-snowman-birdbath.pdf",
+          "bytes": 178001,
+          "sha256": "3828bb2d32158d249e8393c1737a6ce9e1380225e0347d8e08cc4c7c44448eb3"
+        },
+        "webp": {
+          "path": "work/production/wave_463/exports/snowman-outline-snowman-birdbath.webp",
+          "bytes": 756860,
+          "sha256": "e10234f9339b1d20f955c5370d918d007e260ea35654f8e616fc3d7e876b2862"
+        },
+        "thumb": {
+          "path": "work/production/wave_463/exports/snowman-outline-snowman-birdbath-thumb.webp",
+          "bytes": 28730,
+          "sha256": "d8509c7b31ba484cadaa6b080470834a2c3c3451fe9f1b6b3491c246db1908d9"
+        }
+      },
+      "proofSha256": "9584878441f777b4b154ecf5a7373f6cfbc5c2b750ef345742c226bac22cfb7e",
+      "pairMeanRgbDifference": 5.71851
+    },
+    {
+      "id": "snowman-outline-snowman-puzzle",
+      "title": "Snowmen Making a Snowflake Puzzle Outline",
+      "alt": "Black-and-white drawing of two snowmen assembling a large snowflake-shaped puzzle on a round wooden table.",
+      "description": "The tall character lifts one loose piece while the shorter earmuff-wearing companion reaches across the tabletop.",
+      "color": "Black and White",
+      "style": "Outline",
+      "source": "work/production/wave_463/source/snowman-outline-snowman-puzzle.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "50acc9664ac053038655b991d1715a05490a6424f814273e545e0a33958fac3c",
+      "inputSignature": "45423202179117a46b18a261cb27623db23a21a596543167b93c05e31436c815",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 211633,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 211633,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        150,
+        22,
+        1390,
+        986
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_463/exports/snowman-outline-snowman-puzzle.pdf",
+          "bytes": 211633,
+          "sha256": "55ec9c3d446c890cf18bb399beb8725cfdd1628f33d7916f03eb71919a539867"
+        },
+        "webp": {
+          "path": "work/production/wave_463/exports/snowman-outline-snowman-puzzle.webp",
+          "bytes": 873244,
+          "sha256": "28c95e5ee0eb3f40f4f02ac2e3856ba0c372c8923469136513138fc6ccefcc05"
+        },
+        "thumb": {
+          "path": "work/production/wave_463/exports/snowman-outline-snowman-puzzle-thumb.webp",
+          "bytes": 35226,
+          "sha256": "665e41981ac727e9c4990067371494ebe0f59882ce0cb63e1fc97d3dab7b5bc4"
+        }
+      },
+      "proofSha256": "4f82e7b67846963295450ec1538d393cb0673d1b9e475b88ebec01c234791c88",
+      "pairMeanRgbDifference": 6.58602
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T09:22:11.468626+00:00",
+  "screenReviewEvidence": "work/production/wave_463/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T09:22:14.246Z"
+}

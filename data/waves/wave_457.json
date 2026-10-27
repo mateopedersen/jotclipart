@@ -1,0 +1,480 @@
+{
+  "wave": "wave_457",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "snowman-hanging-star",
+      "title": "Snowman Adding a Tree-Top Star",
+      "alt": "Snowman standing on a wooden stool and lifting a gold star above a small decorated Christmas tree.",
+      "description": "The slim character stretches a twig arm toward the tree while balancing on the stool in a blue hat and red checked scarf.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_457/source/snowman-hanging-star.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "4b86ea984df08d40d552481a5248a0bee35bc509711af82a158c6496b8aba684",
+      "inputSignature": "c875057601c3bddd07c7ddfe74040e97b33470eeb4539eea1896ddd9aa2e3d02",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 928363,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 928363,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        340,
+        107,
+        1117,
+        1069
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_457/exports/snowman-hanging-star.pdf",
+          "bytes": 928363,
+          "sha256": "0aa4e5b8afe37a96264ed98a032f47587c3ed6d7b2b3bf55994029b174727b3c"
+        },
+        "webp": {
+          "path": "work/production/wave_457/exports/snowman-hanging-star.webp",
+          "bytes": 849446,
+          "sha256": "9d923aa2a957150e80224fc5da9d7d55ae4cfc98d4a33953bef2476651e93998"
+        },
+        "thumb": {
+          "path": "work/production/wave_457/exports/snowman-hanging-star-thumb.webp",
+          "bytes": 48538,
+          "sha256": "07f58e3fc76f6353f8ba4db9ee12054724ffb615492126a72c98eefe5fb6f15a"
+        }
+      },
+      "proofSha256": "784c1f7fdad9dacc87263762821a81fc14c066c205c926ee0e328f464ab59ed8",
+      "pairMeanRgbDifference": 3.13384
+    },
+    {
+      "id": "snowman-cocoa-tray",
+      "title": "Snowman Serving Two Cups of Cocoa",
+      "alt": "Round snowman in a mustard cap and green apron carrying two cream cocoa cups on a wooden tray.",
+      "description": "Closed smiling eyes and a carefully balanced tray make this a warm winter refreshment illustration.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_457/source/snowman-cocoa-tray.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "701e07360ab936f23a882f00222c06dc1a8d595fc84d61ea4bbbeb5984b8a61c",
+      "inputSignature": "fa07cefa9a022d442f0200f220bd5849819defb7537037a1b35b68589b41e4f4",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 436754,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 436754,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        477,
+        25,
+        1146,
+        997
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_457/exports/snowman-cocoa-tray.pdf",
+          "bytes": 436754,
+          "sha256": "e0a03fdf9069e871b6d1384e6c4533967657ce45336a0b094cfb9aaa3ac094c8"
+        },
+        "webp": {
+          "path": "work/production/wave_457/exports/snowman-cocoa-tray.webp",
+          "bytes": 964816,
+          "sha256": "de64cb03d73cb77d01ea3b15025c2bd689f512ff79acdf1aeb902316a726f68a"
+        },
+        "thumb": {
+          "path": "work/production/wave_457/exports/snowman-cocoa-tray-thumb.webp",
+          "bytes": 22396,
+          "sha256": "4941632eec7f80b0cb73559cd4b59bf33f6a4fc4227fb01d1fa7ec4480bd8a5b"
+        }
+      },
+      "proofSha256": "114a4165c7ff23d1c8b31f6e5f19c3f33b780284e5d4e095d6afde03d15a1c99",
+      "pairMeanRgbDifference": 1.79543
+    },
+    {
+      "id": "snowman-snowflake-nose",
+      "title": "Snowman Watching a Snowflake",
+      "alt": "Small snowman with lavender earmuffs and a mint bow tie looking up at a snowflake above its carrot nose.",
+      "description": "The oversized eyes, raised face and spread twig arms focus attention on the single delicate flake.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_457/source/snowman-snowflake-nose.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "bf34743f93dbc7ffb42a14b33ebb8637928a1058a2be9e3fab4607398256e5f0",
+      "inputSignature": "577536828f26a431b5e69a4e2ec3dc3a196fa34fa5410d43bdd1781fa8e3d712",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 377670,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 377670,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        389,
+        51,
+        1150,
+        982
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_457/exports/snowman-snowflake-nose.pdf",
+          "bytes": 377670,
+          "sha256": "145aaab8d3f7dfd5b34015ce5fceb3edba0dddb5139598a8343f5f013f0dc8a9"
+        },
+        "webp": {
+          "path": "work/production/wave_457/exports/snowman-snowflake-nose.webp",
+          "bytes": 898810,
+          "sha256": "2c243df77d5a0fa60a0579c24b68ee51cedf9a349576bc9d672f9d2831430855"
+        },
+        "thumb": {
+          "path": "work/production/wave_457/exports/snowman-snowflake-nose-thumb.webp",
+          "bytes": 25084,
+          "sha256": "1f1f99793b4d3e3131246900c930b5f0062576cc118e3ad15ff29fe3158a6657"
+        }
+      },
+      "proofSha256": "158f5031df97fc1ffc9ebdf42d990374e51caeaa7fce0a336ff75d9d96ab3925",
+      "pairMeanRgbDifference": 1.46804
+    },
+    {
+      "id": "snowman-knitting-long-scarf",
+      "title": "Snowman Knitting a Striped Scarf",
+      "alt": "Seated snowman in a teal floral hat knitting a long coral and cream scarf beside a matching yarn ball.",
+      "description": "Two wooden needles meet above the growing scarf, whose fringed end falls between the snowman's round feet.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_457/source/snowman-knitting-long-scarf.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1448,
+      "height": 1086,
+      "pdfWidth": 1000,
+      "pdfHeight": 750,
+      "sourceType": "raster",
+      "sourceSha256": "059708cb95992dc9634c4fecd9575c55669bab5c5eb37775c69b8e7fb4da1aad",
+      "inputSignature": "56e6c47134a388b2d156894f388cf5b648cbdc1a8a35c1d437cd6ee73bea3eeb",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 579763,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 579763,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        294,
+        47,
+        1150,
+        1037
+      ],
+      "image": {
+        "width": 1000,
+        "height": 750,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_457/exports/snowman-knitting-long-scarf.pdf",
+          "bytes": 579763,
+          "sha256": "0feee718632ee0f216fc4b0e2ff5c294e12d59c5bc0bf36b97573d79e5e737be"
+        },
+        "webp": {
+          "path": "work/production/wave_457/exports/snowman-knitting-long-scarf.webp",
+          "bytes": 686630,
+          "sha256": "dbc86c12cf967a73b445fa5273d65c12d58e2ac37f818e2ace7bd2c4eb9b6e05"
+        },
+        "thumb": {
+          "path": "work/production/wave_457/exports/snowman-knitting-long-scarf-thumb.webp",
+          "bytes": 32812,
+          "sha256": "90ad75798e85976bef30fd3828908db58b63f1b5621bb8381c6af450126c28c2"
+        }
+      },
+      "proofSha256": "50ab63688576d78862470554316eb2884df4df1d23ae9a5f5e0fbce21bf4ea81",
+      "pairMeanRgbDifference": 2.97847
+    },
+    {
+      "id": "snowman-broom-dance",
+      "title": "Snowman Dancing with a Broom",
+      "alt": "Cheerful snowman in a green waistcoat and brown top hat holding a straw broom with one snow foot lifted.",
+      "description": "The broad smile, sweeping branch arm and jaunty stance turn a simple broom into a playful dance partner.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_457/source/snowman-broom-dance.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "40ae8750395f587c34c14fbc64699e115aab77d0daa816cab7b52c026c67a44b",
+      "inputSignature": "021c4a54cd7ab3a96940c1da68cd193e54cd2f4439100ca9e942226cc4df2348",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 922907,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 922907,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        227,
+        8,
+        1205,
+        1170
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_457/exports/snowman-broom-dance.pdf",
+          "bytes": 922907,
+          "sha256": "d86aa1cbb22395586eac569aefc20aaa671120cfba5482e2d7008b747f555717"
+        },
+        "webp": {
+          "path": "work/production/wave_457/exports/snowman-broom-dance.webp",
+          "bytes": 790626,
+          "sha256": "abdde22f34dadea9e916809f20d9a2519fe159c69adb32fb8e7e527009a52147"
+        },
+        "thumb": {
+          "path": "work/production/wave_457/exports/snowman-broom-dance-thumb.webp",
+          "bytes": 48012,
+          "sha256": "259e8ffdbc8763cbeb38f4f03f0d1f4e4c7f944b7761a6d5b1f92ce99ef0276f"
+        }
+      },
+      "proofSha256": "ec369762f0dae328b4b7075798020c8bc312dd07675ee1c629a9baa4fb4076bc",
+      "pairMeanRgbDifference": 2.49049
+    },
+    {
+      "id": "snowman-gift-stacker",
+      "title": "Snowman Stacking Christmas Gifts",
+      "alt": "Snowman in a red earflap cap and blue neckerchief placing a green parcel on a stack of three gift boxes.",
+      "description": "Both branch hands reach toward the smallest present above a blue snowflake box and a red striped package.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_457/source/snowman-gift-stacker.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "039bf2795c3b66da42af03e2b7b15e31224268fa2949b85f4824e39fb93837ec",
+      "inputSignature": "dd20b5f026688e51250b294cea7bc4bfdf33f70e2683c3c3da5934ac201d10db",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 534973,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 534973,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        357,
+        54,
+        1201,
+        937
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_457/exports/snowman-gift-stacker.pdf",
+          "bytes": 534973,
+          "sha256": "e7d369023997975e0fb2bcde16dca4e259cf6a2b159368adaef80718d0b77ab8"
+        },
+        "webp": {
+          "path": "work/production/wave_457/exports/snowman-gift-stacker.webp",
+          "bytes": 1076092,
+          "sha256": "94085d20d34b7773d4a1a1570244f1541e7f430d7bc897cfc9c1dca1026fe02f"
+        },
+        "thumb": {
+          "path": "work/production/wave_457/exports/snowman-gift-stacker-thumb.webp",
+          "bytes": 28692,
+          "sha256": "733c067ae44b858965c0faefa8719a1159bb44c8ae2fb87614b21bc9ae46054d"
+        }
+      },
+      "proofSha256": "7b6f136410b5bf8ab13b030c33cdc0241fc3095a66cc524d953d0d7a7c8feb62",
+      "pairMeanRgbDifference": 2.86319
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T09:06:55.855839+00:00",
+  "screenReviewEvidence": "work/production/wave_457/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T09:22:12.089Z"
+}

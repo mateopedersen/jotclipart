@@ -1,0 +1,78 @@
+{
+  "wave": "wave_477",
+  "topic": "2027",
+  "collectionTarget": 100,
+  "method": "builtin-image-generation",
+  "research": "data/research/2027-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "2027-owl-graduation",
+      "title": "Graduation Owl with Class of 2027",
+      "alt": "Brown owl wearing mint glasses and a black mortarboard above a book and large Class of 2027 lettering.",
+      "description": "Gold laurels frame the year beside a rolled diploma tied with a red ribbon.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_477/source/2027-owl-graduation.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-kids-pencil",
+      "title": "Pencil Character with a 2027 Plaque",
+      "alt": "Smiling yellow pencil character holding a navy plaque with large colorful 2027 numerals.",
+      "description": "A raised eraser-shaped hand waves above one red sneaker, while the number plaque keeps its full gold border.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_477/source/2027-kids-pencil.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-marquee-numbers",
+      "title": "Illuminated Marquee 2027",
+      "alt": "Red 2027 marquee numerals filled with warm round bulbs, standing above a curling gold ribbon.",
+      "description": "Gold beveled borders trace the clear digits while the full ribbon sweeps beneath the row.",
+      "color": "Red",
+      "style": "Color",
+      "source": "work/production/wave_477/source/2027-marquee-numbers.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-disco-dance",
+      "title": "Dance into 2027 Disco Greeting",
+      "alt": "Magenta Dance into 2027 lettering beneath a mirrored disco ball, with a pair of glittering pink heels beside the year.",
+      "description": "Silver mirror tiles and small star glints contrast with the sweeping glossy script and full shoe straps.",
+      "color": "Pink",
+      "style": "Color",
+      "source": "work/production/wave_477/source/2027-disco-dance.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-party-glasses",
+      "title": "2027 Gold-Number Party Glasses",
+      "alt": "Purple glitter party glasses with ordinary clear lenses and four separate gold 2027 numerals attached above the frame.",
+      "description": "A purple bow and small gold stars decorate the bridge and rims, with both temple arms fully visible.",
+      "color": "Purple",
+      "style": "Color",
+      "source": "work/production/wave_477/source/2027-party-glasses.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-party-hat-badge",
+      "title": "Ready for 2027 Party Badge",
+      "alt": "Teal shield-shaped Ready for 2027 badge topped with an orange striped party hat and wrapped by a gold ribbon.",
+      "description": "Cream beveled lettering fills the dark center beneath the hat's small curled topper.",
+      "color": "Teal",
+      "style": "Color",
+      "source": "work/production/wave_477/source/2027-party-hat-badge.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

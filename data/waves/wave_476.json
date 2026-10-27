@@ -1,0 +1,515 @@
+{
+  "wave": "wave_476",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "2027-penguin-party",
+      "title": "Penguins Holding a 2027 Sign",
+      "alt": "Two different penguins in striped and spotted party hats holding a cream sign with large red 2027 numerals.",
+      "description": "The tall penguin leans from one side while the rounder companion grips the opposite edge of the gold-trimmed sign.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_476/source/2027-penguin-party.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "d300f4b9e56f9bc05451e1da84963a71d009ff8d2eb7db2b9b257c5aa41b6c16",
+      "inputSignature": "aaaeefce00e11b250ffd7ed688aeb65a2925125ac2a71cede766eb77233e1072",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 639803,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 639803,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        170,
+        15,
+        1358,
+        987
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_476/exports/2027-penguin-party.pdf",
+          "bytes": 639803,
+          "sha256": "71848d0ba3f4095c43f7811e60623373fb659f1513134e35a858c91313c6bc5c"
+        },
+        "webp": {
+          "path": "work/production/wave_476/exports/2027-penguin-party.webp",
+          "bytes": 1224194,
+          "sha256": "57af0f7e7496dd85badf30241c5867e4e47c9af7cdb1dd641963866956397f19"
+        },
+        "thumb": {
+          "path": "work/production/wave_476/exports/2027-penguin-party-thumb.webp",
+          "bytes": 37508,
+          "sha256": "6a7077bfaa809800a2015a7cef56927af9457d493e0158409fb6b4f699d83be0"
+        }
+      },
+      "proofSha256": "a336fd6f2b9e39b7495297c2f8204d2509b3f82a891321543746a6a85ec10609",
+      "pairMeanRgbDifference": 4.8643
+    },
+    {
+      "id": "2027-bear-sparkler",
+      "title": "Teddy Bear with Happy 2027",
+      "alt": "Brown teddy bear in a teal star-patterned vest and party hat beside gold Happy and multicolored 2027 lettering.",
+      "description": "One paw holds a gold star wand tied with a small teal bow, while the lifted leg suggests a happy greeting.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_476/source/2027-bear-sparkler.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "654d30b2229611717dd775c50e3240f368dbdd05c7f7b68c9c6451c9713dad3e",
+      "inputSignature": "481b061cf8af14a916431568364ffb0bb380d0301e7e0cff39462fcaf443e992",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 871039,
+        "weightedCmykRmse": 0.793266
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1108560,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 871039,
+          "weightedCmykRmse": 0.793266
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        144,
+        53,
+        1280,
+        1075
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_476/exports/2027-bear-sparkler.pdf",
+          "bytes": 871039,
+          "sha256": "40b7e92e1fcab8d703414fc441966743d5f000573cc59f6758a742143e25fa9c"
+        },
+        "webp": {
+          "path": "work/production/wave_476/exports/2027-bear-sparkler.webp",
+          "bytes": 1263090,
+          "sha256": "e8d6fe0a5bc32b07d42594da84120af20260cfaaae8b07f60cbb97a56c518df1"
+        },
+        "thumb": {
+          "path": "work/production/wave_476/exports/2027-bear-sparkler-thumb.webp",
+          "bytes": 65726,
+          "sha256": "0e2ee39e4b27d4ba090dd66979811a2f4af9bfc00a36020e0d9a98b71ca2b7ff"
+        }
+      },
+      "proofSha256": "75aafbc046154dd0be687d0d4651e333fd899faf571819cf9cf2e143a6f0bacd",
+      "pairMeanRgbDifference": 6.23923
+    },
+    {
+      "id": "2027-dinosaur-welcome",
+      "title": "Dinosaur Welcoming 2027",
+      "alt": "Friendly green triceratops in a blue paper crown leaning over orange Welcome and blue 2027 lettering.",
+      "description": "The broad spotted frill and three cream horns frame the smiling dinosaur face above the raised lettering.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_476/source/2027-dinosaur-welcome.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "efd5889ebc64109e1d67d303dd23863e8f34b5c07424dae8d5613735d69039bf",
+      "inputSignature": "9aaf302c3b6065664f821caed6290c1cfbc45c4c5b87ae9de2e58bc6c7ac01fb",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 977341,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 977341,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        49,
+        35,
+        1331,
+        1095
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_476/exports/2027-dinosaur-welcome.pdf",
+          "bytes": 977341,
+          "sha256": "67f7e67a09ad6569cbb087ff8a0f79fb4adb6ec647f6bfd8b57279e439bcedf0"
+        },
+        "webp": {
+          "path": "work/production/wave_476/exports/2027-dinosaur-welcome.webp",
+          "bytes": 1140884,
+          "sha256": "8fed4f1c0e7bedf8f674ff559d4d17da7eac007ad8f4f54c1a34d6e9c3f60a6e"
+        },
+        "thumb": {
+          "path": "work/production/wave_476/exports/2027-dinosaur-welcome-thumb.webp",
+          "bytes": 57014,
+          "sha256": "4c36c91ff9b02eea599af83f025627a522c7c43490c4dded97a83aab20f43237"
+        }
+      },
+      "proofSha256": "a16ef322d9879885cc5c9976d7395a828f5482c05ab06e8be0988f1d6fc6b1fc",
+      "pairMeanRgbDifference": 8.8142
+    },
+    {
+      "id": "2027-unicorn-rainbow",
+      "title": "Unicorn Jumping Above 2027",
+      "alt": "Lavender unicorn with a pink mane and gold hooves jumping through a rainbow above sparkling 2027 numerals.",
+      "description": "The rounded pink, blue, purple and gold digits sit beneath the small leaping figure and star-trimmed rainbow.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_476/source/2027-unicorn-rainbow.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "caf1d3cf6c6404b101b3b0cb9adef354e6888f39103ff7e6a6fab997bcc5905e",
+      "inputSignature": "cc2bf872bbef88b2375926fa4f0a77ab2e6f8550e1b1a37113b131c9c4597b77",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 692150,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 692150,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        214,
+        77,
+        1322,
+        951
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_476/exports/2027-unicorn-rainbow.pdf",
+          "bytes": 692150,
+          "sha256": "3c75ad6a25a92ddf3e8562ec99d4dc86b0395403de12436031d9c799ce12b48c"
+        },
+        "webp": {
+          "path": "work/production/wave_476/exports/2027-unicorn-rainbow.webp",
+          "bytes": 1419886,
+          "sha256": "16eb054be8074d0bf0d74041267ed2dd6aedec7bf2fdbbb314a4822fd55eeb60"
+        },
+        "thumb": {
+          "path": "work/production/wave_476/exports/2027-unicorn-rainbow-thumb.webp",
+          "bytes": 48920,
+          "sha256": "da8a2718e5717c39a2904af2c7ee49938ee50df5bb7690aed22d5e82c8a3e02c"
+        }
+      },
+      "proofSha256": "b2afbf23817a62ed2964a8199681f501b638a0b9d1d31ad5bfc52cf23ba69e63",
+      "pairMeanRgbDifference": 7.59208
+    },
+    {
+      "id": "2027-robot-party",
+      "title": "Robot Holding a Hello 2027 Sign",
+      "alt": "Rounded silver robot with a red bow tie holding a cream placard reading Hello 2027 in blue and red.",
+      "description": "Unequal glowing blue square eyes and two wide wheels give the little robot a friendly mechanical silhouette.",
+      "color": "Silver",
+      "style": "Color",
+      "source": "work/production/wave_476/source/2027-robot-party.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 1000,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "b890af05b70743ffd6209040e19fa660e86ebe2deeb1aa3ed979fb617f65cf05",
+      "inputSignature": "5e23f9e22230b69cd78e2d66460f1aa108f36b894ca40118075440dd495576d3",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 715320,
+        "weightedCmykRmse": 0.848181
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1001209,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 715320,
+          "weightedCmykRmse": 0.848181
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        168,
+        42,
+        1089,
+        1213
+      ],
+      "image": {
+        "width": 1000,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_476/exports/2027-robot-party.pdf",
+          "bytes": 715320,
+          "sha256": "6cb3a18e220a7df78eea44010d6f0512ea63ca41c429f1538cefbd43508de04b"
+        },
+        "webp": {
+          "path": "work/production/wave_476/exports/2027-robot-party.webp",
+          "bytes": 909622,
+          "sha256": "1f47af51f1cef8ae4398e3a071089b899f963db69c5db603023b602b5f649851"
+        },
+        "thumb": {
+          "path": "work/production/wave_476/exports/2027-robot-party-thumb.webp",
+          "bytes": 53516,
+          "sha256": "618a946cc70df17e36c0640b1b0a2e757fdff6818762c1459d2126d559895a75"
+        }
+      },
+      "proofSha256": "412e49e3063896c50293ebb37cd12892ec8ca272bff83de5d03bb223271ecba3",
+      "pairMeanRgbDifference": 6.30812
+    },
+    {
+      "id": "2027-fox-mittens",
+      "title": "Fox with Happy New Year 2027 Ribbon",
+      "alt": "Seated orange fox wearing blue snowflake mittens and scarf, holding a gold Happy New Year 2027 ribbon.",
+      "description": "The full white-tipped tail curls beside the fox's feet beneath the short arched greeting.",
+      "color": "Orange",
+      "style": "Color",
+      "source": "work/production/wave_476/source/2027-fox-mittens.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 1000,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "33b8c472b7e17e94b1e01d3ea13429078dc959230cdf949f54f351c82452cdd9",
+      "inputSignature": "8d7a61d373910d28bc2043f36a87c36baf68edb9d80b59c922938347004dee8f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 50,
+        "losslessCmyk": false,
+        "bytes": 968747,
+        "weightedCmykRmse": 1.039941
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1491319,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1149293,
+          "weightedCmykRmse": 0.729394
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1069942,
+          "weightedCmykRmse": 0.861538
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 968747,
+          "weightedCmykRmse": 1.039941
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        46,
+        16,
+        1235,
+        1213
+      ],
+      "image": {
+        "width": 1000,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_476/exports/2027-fox-mittens.pdf",
+          "bytes": 968747,
+          "sha256": "f70986bc4de524a70c0709d9caa4439f9763d57f5e0090f12439b998d1ec1c5f"
+        },
+        "webp": {
+          "path": "work/production/wave_476/exports/2027-fox-mittens.webp",
+          "bytes": 1542110,
+          "sha256": "ce472fcfae98122f5fb392c1a17bd23dbd121f3fc24b25be6f3550de83b37eeb"
+        },
+        "thumb": {
+          "path": "work/production/wave_476/exports/2027-fox-mittens-thumb.webp",
+          "bytes": 86544,
+          "sha256": "fc2337bf3ece5b95a59ca6e438cf30ffa674e6037d5085424a41f00ae888f576"
+        }
+      },
+      "proofSha256": "b5b7024b6a82f7187c419c5c89b05bd4f6ba5cc9557ba1d47ae014e99a64403b",
+      "pairMeanRgbDifference": 6.87296
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T12:30:06.775305+00:00",
+  "screenReviewEvidence": "work/production/wave_476/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T12:30:07.675Z"
+}

@@ -1,0 +1,80 @@
+{
+  "wave": "wave_463",
+  "topic": "snowman",
+  "method": "builtin-image-generation",
+  "research": "data/research/snowman-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "snowman-snowman-snow-telescope",
+      "title": "Snowman Looking Through a Brass Telescope",
+      "alt": "Snowman in a green fleece-lined earflap hat and orange scarf looking through a brass telescope on a wooden tripod.",
+      "description": "One twig hand steadies the eyepiece while the other rests on the tall tripod beneath the extended brass barrel.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_463/source/snowman-snowman-snow-telescope.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-snowman-paper-lantern",
+      "title": "Snowman Paper Lantern with Handle",
+      "alt": "Round white paper lantern shaped like a snowman, with a red cap, green scarf, twig arms and a curved hanging handle.",
+      "description": "Horizontal paper ribs remain visible across both round sections, with simple black dots forming the eyes, smile and buttons.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_463/source/snowman-snowman-paper-lantern.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-snowman-gift-bow",
+      "title": "Snowman Peeking from a Ribboned Gift",
+      "alt": "Small snowman with blue earmuffs peeking out of a red gift box tied with a large gold ribbon bow.",
+      "description": "The open box frames the round face and twig hands while the ribbon tails curl away from the front.",
+      "color": "Red",
+      "style": "Color",
+      "source": "work/production/wave_463/source/snowman-snowman-gift-bow.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-outline-snowman-snowshoe",
+      "title": "Snowman on Snowshoes Outline",
+      "alt": "Black-and-white outline of a tall snowman in a pom-pom cap and scarf standing on two woven snowshoes.",
+      "description": "Spread twig arms and a trailing fringed scarf balance the long body above the detailed snowshoe webbing.",
+      "color": "Black and White",
+      "style": "Outline",
+      "source": "work/production/wave_463/source/snowman-outline-snowman-snowshoe.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    },
+    {
+      "id": "snowman-outline-snowman-birdbath",
+      "title": "Snowman Beside a Birdbath Outline",
+      "alt": "Black-and-white snowman in a knitted cap and scarf reaching toward a small bird on a stone birdbath.",
+      "description": "The plump figure faces the bird across the rounded basin, whose pedestal has a simple cobblestone pattern.",
+      "color": "Black and White",
+      "style": "Outline",
+      "source": "work/production/wave_463/source/snowman-outline-snowman-birdbath.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    },
+    {
+      "id": "snowman-outline-snowman-puzzle",
+      "title": "Snowmen Making a Snowflake Puzzle Outline",
+      "alt": "Black-and-white drawing of two snowmen assembling a large snowflake-shaped puzzle on a round wooden table.",
+      "description": "The tall character lifts one loose piece while the shorter earmuff-wearing companion reaches across the tabletop.",
+      "color": "Black and White",
+      "style": "Outline",
+      "source": "work/production/wave_463/source/snowman-outline-snowman-puzzle.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    }
+  ]
+}

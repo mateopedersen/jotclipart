@@ -1,0 +1,508 @@
+{
+  "wave": "wave_481",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "2027-graduation-flowers",
+      "title": "2027 Grad Floral Badge",
+      "alt": "Gold 2027 Grad lettering on an ivory oval badge topped by a black mortarboard and decorated with a red rose and eucalyptus.",
+      "description": "The asymmetrical flower spray follows the lower left of the slim gold frame beneath the cap's full tassel.",
+      "color": "Ivory",
+      "style": "Color",
+      "source": "work/production/wave_481/source/2027-graduation-flowers.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1222,
+      "height": 1287,
+      "pdfWidth": 949,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "2e9b17b0c855b817da63c87df37a461428ad4f380478eb8cc649dc5e2e3c7399",
+      "inputSignature": "1242b0e603524aa6fed4e732348365ba00b23812ca2b3e0f00bba11b55d0a96e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 817772,
+        "weightedCmykRmse": 0.826575
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1082527,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 817772,
+          "weightedCmykRmse": 0.826575
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        69,
+        196,
+        1147,
+        1039
+      ],
+      "image": {
+        "width": 949,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_481/exports/2027-graduation-flowers.pdf",
+          "bytes": 817772,
+          "sha256": "191534469377805f6eaa94d8bb7ca3df7d2edb8dc2d4259007b59721240a2851"
+        },
+        "webp": {
+          "path": "work/production/wave_481/exports/2027-graduation-flowers.webp",
+          "bytes": 974952,
+          "sha256": "dd31a135d6360c8dcf8465c47f7bba99f020689f29a4c6301644e868a2945865"
+        },
+        "thumb": {
+          "path": "work/production/wave_481/exports/2027-graduation-flowers-thumb.webp",
+          "bytes": 50188,
+          "sha256": "a3e67854495cd2fc18479efd523cf159180500422265d3d2e8f506ec951ec0bd"
+        }
+      },
+      "proofSha256": "0ada366720c15c5d2cb4be3a751d7632817b35a3e4c75d4f62036d5e36f05fc9",
+      "pairMeanRgbDifference": 3.82258
+    },
+    {
+      "id": "2027-achievement-path",
+      "title": "My Next Chapter 2027 Book Steps",
+      "alt": "Three cream books arranged as steps toward a gold star beneath the words My Next Chapter, with 2027 on the front book.",
+      "description": "A curled gold ribbon links the stepped books and their gold-edged pages beneath the arched message.",
+      "color": "Ivory",
+      "style": "Color",
+      "source": "work/production/wave_481/source/2027-achievement-path.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 1000,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "822cd4d6e902964d68277d5dfd906ff111fe3ffde838c85ab8764a18ac0b0090",
+      "inputSignature": "a6016fb1a5d7cf3a7dba6f6555b7453a03d014675403e889a432a535802777dd",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 976097,
+        "weightedCmykRmse": 0.938593
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1299940,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1045424,
+          "weightedCmykRmse": 0.822371
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 976097,
+          "weightedCmykRmse": 0.938593
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        76,
+        124,
+        1211,
+        1143
+      ],
+      "image": {
+        "width": 1000,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_481/exports/2027-achievement-path.pdf",
+          "bytes": 976097,
+          "sha256": "6f5f2250878f25b20e3a291e5cb7d3a6fcf7571d5d82767667f340f22c683a62"
+        },
+        "webp": {
+          "path": "work/production/wave_481/exports/2027-achievement-path.webp",
+          "bytes": 1031816,
+          "sha256": "3cabfb947991f6f070aeeb250700b82ee78b1109e55fc24f5d4bad8ae3317d4e"
+        },
+        "thumb": {
+          "path": "work/production/wave_481/exports/2027-achievement-path-thumb.webp",
+          "bytes": 74192,
+          "sha256": "90723bfaa0f08004e6ede28e812127bae894ba4f6d5e09515d40808b02b6b677"
+        }
+      },
+      "proofSha256": "afa62d4a72921b078b32391fd4b739b2abde8c94884fc898706de890cafa4b15",
+      "pairMeanRgbDifference": 5.16797
+    },
+    {
+      "id": "2027-class-of-school-lettering",
+      "title": "Class of 2027 Varsity Pennant",
+      "alt": "Burgundy Class of pennant above large navy varsity 2027 numerals, with a gold pole and tassel at the side.",
+      "description": "Cream inset strokes and wide gold borders keep the angular year clear beneath the triangular flag.",
+      "color": "Navy",
+      "style": "Color",
+      "source": "work/production/wave_481/source/2027-class-of-school-lettering.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "9efd4ed79105b12bc77126721861d0175b68618e3a6a9953a32afe1a8803c8b7",
+      "inputSignature": "4635c566479a6dddc436a35f3ef7131f711c96fa3701229949b5c6d344e3e433",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 840693,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 840693,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        148,
+        108,
+        1404,
+        878
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_481/exports/2027-class-of-school-lettering.pdf",
+          "bytes": 840693,
+          "sha256": "140bb433af6b69e128de9a627502086a7ce6bb4df5afd640725b8b0ee11c4712"
+        },
+        "webp": {
+          "path": "work/production/wave_481/exports/2027-class-of-school-lettering.webp",
+          "bytes": 1437004,
+          "sha256": "57169f9f33679be50200e4086505679b78eccb47562ffe1182a8f679c4e26ea0"
+        },
+        "thumb": {
+          "path": "work/production/wave_481/exports/2027-class-of-school-lettering-thumb.webp",
+          "bytes": 39560,
+          "sha256": "832bb71569d3d4455c2d54ecacc188a721e533c294917bec165fb2df02337bea"
+        }
+      },
+      "proofSha256": "edc3aa4dcae99ed00aba0841dd3c8fe68704937366ccb8e94080af3216d7ace3",
+      "pairMeanRgbDifference": 6.2014
+    },
+    {
+      "id": "2027-ruby-gold-bevel",
+      "title": "Ruby and Gold Beveled 2027",
+      "alt": "Upright ruby-red 2027 numerals with broad gold beveled edges and thick metallic sidewalls.",
+      "description": "The tall serif digits share a straight baseline, with light catching the polished gold edges around the open zero.",
+      "color": "Red",
+      "style": "Color",
+      "source": "work/production/wave_481/source/2027-ruby-gold-bevel.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1774,
+      "height": 887,
+      "pdfWidth": 1000,
+      "pdfHeight": 500,
+      "sourceType": "raster",
+      "sourceSha256": "5cd9e0f934041c5cc30a06e0f04e9590664a38e9e6a53a0c346cbcff70b301d9",
+      "inputSignature": "3fd988d2bbf8c7695281f7d8eae9b9650bfd39e052761a1d80d53d9ff270dd3e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 484507,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 484507,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        193,
+        199,
+        1591,
+        691
+      ],
+      "image": {
+        "width": 1000,
+        "height": 500,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_481/exports/2027-ruby-gold-bevel.pdf",
+          "bytes": 484507,
+          "sha256": "6a7760d1af39cd61731af7992219ba3b97f79d3cf963dcd3e79ad30ec6919c04"
+        },
+        "webp": {
+          "path": "work/production/wave_481/exports/2027-ruby-gold-bevel.webp",
+          "bytes": 752554,
+          "sha256": "6d3892b951b5bd1aa4ba8f4850ab265f889c269e48bcde79d611b52ffa24ba89"
+        },
+        "thumb": {
+          "path": "work/production/wave_481/exports/2027-ruby-gold-bevel-thumb.webp",
+          "bytes": 29598,
+          "sha256": "520e2a8b4570d599c7651e297fdb3a3de0b7c8ebf89ef440c08f9d4c4124aaf5"
+        }
+      },
+      "proofSha256": "efb7e69e0edc9adc29bda0f1405e8ff8671948aef5753cd767b4ba222d5f8ba1",
+      "pairMeanRgbDifference": 7.50348
+    },
+    {
+      "id": "2027-comic-burst",
+      "title": "2027 Let's Go Comic Burst",
+      "alt": "Coral 2027 and navy Let's Go lettering inside a gold comic burst with two lightning accents.",
+      "description": "Thick navy outlines and irregular pointed rays give the compact message a lively sticker shape.",
+      "color": "Coral",
+      "style": "Color",
+      "source": "work/production/wave_481/source/2027-comic-burst.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "aa7bf1d5902a509091782fd400f6248916ac067de65d0260af5262a840ebd2e9",
+      "inputSignature": "d099a5566344500927f33242db2133b39301ec99216101db743c3cef7f1a0ed9",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 787890,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 787890,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        148,
+        49,
+        1414,
+        969
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_481/exports/2027-comic-burst.pdf",
+          "bytes": 787890,
+          "sha256": "5d8518c78f3b06e8fe41d71f154dc99b4d2bc02236a29ddd9128a36728c9af89"
+        },
+        "webp": {
+          "path": "work/production/wave_481/exports/2027-comic-burst.webp",
+          "bytes": 1220462,
+          "sha256": "1f838ff963e6431ef948caa695e88d876c7247bfdecb5055ee50cce209ca1f42"
+        },
+        "thumb": {
+          "path": "work/production/wave_481/exports/2027-comic-burst-thumb.webp",
+          "bytes": 49630,
+          "sha256": "5a3650d027ad7000e177f75e80fb019c9acabfc08567f74d3a7b76b93899b6f3"
+        }
+      },
+      "proofSha256": "ffced033844f1a54d1f9e85ef6ede1d43b9d4a9858e87be67d6fc85af9e52e46",
+      "pairMeanRgbDifference": 8.59605
+    },
+    {
+      "id": "2027-skateboard-sticker",
+      "title": "Roll into 2027 Skateboard",
+      "alt": "Teal skateboard with pink 2027 numerals and yellow stars beneath large pink Roll into lettering.",
+      "description": "The complete wheels and trucks remain visible under the angled deck, whose brown edge adds a layered detail.",
+      "color": "Teal",
+      "style": "Color",
+      "source": "work/production/wave_481/source/2027-skateboard-sticker.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "e6712775ade75dbe94dd7011adc32625a12209362ced5246dc0821cefcece38a",
+      "inputSignature": "bb877dbff3896230ca10391d32192e17f177b8c3c8ee96d23a61077d035cc7a6",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 834607,
+        "weightedCmykRmse": 0.768648
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1093181,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 834607,
+          "weightedCmykRmse": 0.768648
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        102,
+        80,
+        1239,
+        1163
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_481/exports/2027-skateboard-sticker.pdf",
+          "bytes": 834607,
+          "sha256": "57487e8023b74a5c8a8719fcbb9ef4b10a3664822acfb3eb4f9503998b32c234"
+        },
+        "webp": {
+          "path": "work/production/wave_481/exports/2027-skateboard-sticker.webp",
+          "bytes": 936752,
+          "sha256": "1529dd48d9a6759df0859f56c5da5996e76a6298236aa2057c0c1603280d07b6"
+        },
+        "thumb": {
+          "path": "work/production/wave_481/exports/2027-skateboard-sticker-thumb.webp",
+          "bytes": 60496,
+          "sha256": "35a609e0926f02500fbe84d6b128edacd37afcc4e0271ed5583b4ffac0caf450"
+        }
+      },
+      "proofSha256": "0b2accb6474df3e3819adc6a38aca3468640a69cb1888ec6fc136036c0d3e6d5",
+      "pairMeanRgbDifference": 6.93404
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T12:30:06.809773+00:00",
+  "screenReviewEvidence": "work/production/wave_481/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T12:30:08.918Z"
+}

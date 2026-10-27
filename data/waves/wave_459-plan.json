@@ -1,0 +1,77 @@
+{
+  "wave": "wave_459",
+  "topic": "snowman",
+  "method": "builtin-image-generation",
+  "research": "data/research/snowman-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "snowman-family-trio",
+      "title": "Three Snowmen in Winter Hats",
+      "alt": "Three different snowmen in green, plum and yellow winter hats standing together with scarves and raised mittens.",
+      "description": "A tall narrow figure, a rounded companion and a tiny snowman form a cheerful family-sized grouping.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_459/source/snowman-family-trio.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-snowman-dog-friend",
+      "title": "Snowman with a Mitten-Carrying Puppy",
+      "alt": "Smiling snowman in a cream hood and navy scarf beside a shaggy brown puppy holding a red mitten in its mouth.",
+      "description": "The puppy sits close to the snowman's rounded feet, with its mitten and the character's tilted head creating a small winter friendship scene.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_459/source/snowman-snowman-dog-friend.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-snowman-cat-nap",
+      "title": "Snowman with a Kitten on Its Hat",
+      "alt": "Snowman with a berry scarf standing beneath a sleeping gray kitten curled on the brim of a navy top hat.",
+      "description": "Folded twig hands and a slightly tilted face keep the character still while the kitten rests above.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_459/source/snowman-snowman-cat-nap.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-penguin-scarf-share",
+      "title": "Snowman and Penguin Sharing a Scarf",
+      "alt": "Tall snowman and small penguin wrapped together in one red and cream striped scarf, with green mittens and a knit cap.",
+      "description": "The snowman lifts one mitten while the penguin leans close with a happy expression and one orange foot raised.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_459/source/snowman-penguin-scarf-share.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-candy-cane-arch",
+      "title": "Snowman beneath a Candy Cane Arch",
+      "alt": "Small snowman in a blue pom-pom cap and mustard scarf stepping beneath a red and white candy cane arch.",
+      "description": "The curved striped arch frames the open-armed character, with holly leaves and berries at the top.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_459/source/snowman-candy-cane-arch.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-snowman-chef",
+      "title": "Snowman Chef with a Mixing Bowl",
+      "alt": "Snowman in a white chef hat and red apron holding a wooden spoon and a green mixing bowl.",
+      "description": "A blue neckerchief and simple button face complete this friendly baking character.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_459/source/snowman-snowman-chef.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

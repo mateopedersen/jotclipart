@@ -1,0 +1,78 @@
+{
+  "wave": "wave_478",
+  "topic": "2027",
+  "collectionTarget": 100,
+  "method": "builtin-image-generation",
+  "research": "data/research/2027-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "2027-floral-garden-year",
+      "title": "Ivory 2027 with Garden Flowers",
+      "alt": "Ivory 2027 numerals edged in gold, surrounded by coral flowers, small blue daisies and green leaves.",
+      "description": "The asymmetrical flower arrangement follows the base of the first digits and rises around the final seven.",
+      "color": "Ivory",
+      "style": "Color",
+      "source": "work/production/wave_478/source/2027-floral-garden-year.png",
+      "printMaxEdgePx": 1205,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-wildflower-wreath",
+      "title": "Welcome 2027 Spring Flower Wreath",
+      "alt": "Welcome 2027 lettering inside an oval wreath of pink tulips, yellow flowers, white daisies and small blue blossoms.",
+      "description": "A gold Welcome ribbon crosses the upper center while the navy year remains clear within the complete flower ring.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_478/source/2027-wildflower-wreath.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-winter-knit",
+      "title": "Cozy New Year 2027 Knitted Greeting",
+      "alt": "Blue knitted Cozy New Year 2027 lettering wrapped in a red scarf, with a pom-pom cap and two pale snowflakes.",
+      "description": "Thick yarn loops define each large letter, and both scarf ends remain visible beneath the year.",
+      "color": "Blue",
+      "style": "Color",
+      "source": "work/production/wave_478/source/2027-winter-knit.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-summer-beach",
+      "title": "Hello 2027 Seashell Greeting",
+      "alt": "Coral Hello 2027 lettering across a cream scallop shell with green palm leaves, a blue wave and an orange starfish.",
+      "description": "The ridged shell provides a compact shape behind the greeting while the wave curls up one side.",
+      "color": "Coral",
+      "style": "Color",
+      "source": "work/production/wave_478/source/2027-summer-beach.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-mountain-adventure",
+      "title": "Adventure Awaits 2027 Mountain Patch",
+      "alt": "Round Adventure Awaits 2027 patch with three mountain peaks, pine trees, a reflective lake and rising sun.",
+      "description": "Cream curved lettering follows the navy outer border above a rust-colored year banner at the base.",
+      "color": "Navy",
+      "style": "Color",
+      "source": "work/production/wave_478/source/2027-mountain-adventure.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-travel-suitcase",
+      "title": "Next Stop 2027 Suitcase",
+      "alt": "Teal wheeled suitcase with a cream Next Stop ribbon and four hanging number tags spelling 2027.",
+      "description": "A small airplane and curved blue trail rise beside the extended handle, with a tiny travel tag at the top corner.",
+      "color": "Teal",
+      "style": "Color",
+      "source": "work/production/wave_478/source/2027-travel-suitcase.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

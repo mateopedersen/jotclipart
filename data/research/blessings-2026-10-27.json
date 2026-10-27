@@ -1,0 +1,36 @@
+{
+  "topic": "blessings",
+  "researchedAt": "2026-10-27T14:57:51.425790+00:00",
+  "queries": [
+    {
+      "query": "blessings clipart",
+      "url": "https://www.google.com/search?udm=2&q=blessings+clipart&gl=us&hl=en",
+      "actualResultsVisuallyInspected": true
+    }
+  ],
+  "sourceImageReuse": false,
+  "observations": [
+    "Results emphasize blessing word art, Count Your Blessings messages, seasonal greetings, jars, open hands and prayer imagery.",
+    "Plan separate adult stationery, child-friendly characters, gift objects and independent coloring graphics rather than a repeated word-art base."
+  ],
+  "catalogCheck": {
+    "currentAcceptedExactTopic": 0,
+    "queuedNativeExactTopic": 0,
+    "concurrentImportExactTopic": 0,
+    "actualExistingReferenceImagesInspected": 8,
+    "referenceRecords": "work/production/blessings-existing-reference-records.json",
+    "referenceContact": "work/production/blessings-existing-references.jpg"
+  },
+  "excludedConcepts": [
+    "Existing older woman seated quietly on a bench",
+    "Existing hand-on-heart child",
+    "Existing family raising glasses",
+    "Existing wooden memory box",
+    "Existing bag of reflection stones",
+    "Existing hanging pocket banner",
+    "Existing journal-writing woman",
+    "Existing classroom thanks circle"
+  ],
+  "actualSourceImagesViewed": 0,
+  "copyPolicy": "Plans are not pixel evidence. Describe each actual image only after inspecting it; do not infer a real person\u2019s religion from clothing or assign real events."
+}

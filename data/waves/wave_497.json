@@ -1,0 +1,502 @@
+{
+  "wave": "wave_497",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "feast-breaking-bread-hands",
+      "title": "Sharing a Freshly Torn Bread Loaf",
+      "alt": "Two pairs of hands pull a round crusty loaf apart above a board with olive oil, tomatoes and olives.",
+      "description": "The open bread reveals an airy crumb, with the small dipping bowl centered between tomato wedges on the handled board.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_497/source/feast-breaking-bread-hands.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "f09fe9a3f05ce533bbf394873dab371b520c66a93bc67d07b9a0013234b0e55d",
+      "inputSignature": "b472da855fe01ee26190fa585ce1a2607d160fe4ddbd449e0369e14adf81b13c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 782690,
+        "weightedCmykRmse": 0.828701
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1007723,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 782690,
+          "weightedCmykRmse": 0.828701
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        122,
+        201,
+        1250,
+        967
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_497/exports/feast-breaking-bread-hands.pdf",
+          "bytes": 782690,
+          "sha256": "5625339fd05298bfe65ac2e587ac559f0fa43e714b3c4049f74a0822efebf6a7"
+        },
+        "webp": {
+          "path": "work/production/wave_497/exports/feast-breaking-bread-hands.webp",
+          "bytes": 1077270,
+          "sha256": "7bfc4bbfb84ed93625dd47c69208bc4c39a7587ff421aa508b5b118ade97a968"
+        },
+        "thumb": {
+          "path": "work/production/wave_497/exports/feast-breaking-bread-hands-thumb.webp",
+          "bytes": 54334,
+          "sha256": "be6bc5383a15028dc4458ec762debd5ecd80b3c32a28ab361bd25a7a12f21429"
+        }
+      },
+      "proofSha256": "ce923ba465b58592dbc997ffd59cb7ea9377c9849835a63d52063f96af95f26f",
+      "pairMeanRgbDifference": 3.21788
+    },
+    {
+      "id": "feast-lets-feast-lettering",
+      "title": "Let’s Feast Turkey Lettering",
+      "alt": "Cream and rust lettering reads “LET’S FEAST” above roast turkey, corn and cranberries between a fork and spoon.",
+      "description": "Shaded rounded letters and autumn leaves form a compact food-themed graphic around the complete serving platter.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_497/source/feast-lets-feast-lettering.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "7c3a5f07c7b6cf8214a29b8f705cc5bd4a0e999fa5c6266d720f934eb6dae74b",
+      "inputSignature": "04148dc0bd6e9d9aa37371feb99bcf7525f538e9566cabd29912f00f6148970d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 769607,
+        "weightedCmykRmse": 0.814657
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1027950,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 769607,
+          "weightedCmykRmse": 0.814657
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        173,
+        171,
+        1221,
+        954
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_497/exports/feast-lets-feast-lettering.pdf",
+          "bytes": 769607,
+          "sha256": "d0d7ebda4c78ab4cf38c4a2335d38009109525933532be3c035a7fddb9f0e6d1"
+        },
+        "webp": {
+          "path": "work/production/wave_497/exports/feast-lets-feast-lettering.webp",
+          "bytes": 1061642,
+          "sha256": "9befa85b94967a2f6e035f5bd39163ce719c4200bc3d855e455d94f72ec174e0"
+        },
+        "thumb": {
+          "path": "work/production/wave_497/exports/feast-lets-feast-lettering-thumb.webp",
+          "bytes": 55666,
+          "sha256": "f02b22fe012c61bb7fa5a0f43f27fc8fb02a1f7edc0a8f87fabe29ac771c2643"
+        }
+      },
+      "proofSha256": "922ca36c9ae141863bd0d2c14c470718a0a4d5b27d6c28df05c08f7c81083714",
+      "pairMeanRgbDifference": 5.7919
+    },
+    {
+      "id": "feast-friends-greeting",
+      "title": "Feast with Friends Turkey Banner",
+      "alt": "A cream ribbon reading “FEAST WITH FRIENDS” arches above roast turkey, green beans and stuffing.",
+      "description": "Small leafy flourishes finish the curved banner while the two side dishes extend the low, welcoming food arrangement.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_497/source/feast-friends-greeting.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "194a605197286d07e02ba9eaca620f87bae50b405bfe8be280c1de888499ea0a",
+      "inputSignature": "ac48deab5e7aa80ec1c462ec1d134bfc36698cfe90bb3460fad79110c907f15e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 787660,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 787660,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        227,
+        161,
+        1311,
+        846
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_497/exports/feast-friends-greeting.pdf",
+          "bytes": 787660,
+          "sha256": "724367c52c8f59515cde4ac633376a415f94866cad87a07d6698c763ac7a4969"
+        },
+        "webp": {
+          "path": "work/production/wave_497/exports/feast-friends-greeting.webp",
+          "bytes": 1318250,
+          "sha256": "e9e0750a484ec0f7582340da633ebb40185869122e453b980bd873d54c10ef15"
+        },
+        "thumb": {
+          "path": "work/production/wave_497/exports/feast-friends-greeting-thumb.webp",
+          "bytes": 41862,
+          "sha256": "e8650aa5944cfc20c90c3b4eebc698d7ac66a2967e5d1f159511034a9dd18d81"
+        }
+      },
+      "proofSha256": "7497dfaa1d0480838eb24018d56698be013ab94e3bac77f51764f7486847e873",
+      "pairMeanRgbDifference": 4.40738
+    },
+    {
+      "id": "feast-share-table-lettering",
+      "title": "Share the Table Food Lettering",
+      "alt": "Green “SHARE THE TABLE” lettering sits above a fruit bowl and bread basket framed by open hands.",
+      "description": "Red apples, purple and green grapes, a yellow-orange fruit and crusty rolls add warm color beneath the three lines of text.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_497/source/feast-share-table-lettering.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1380,
+      "height": 1140,
+      "pdfWidth": 1000,
+      "pdfHeight": 826,
+      "sourceType": "raster",
+      "sourceSha256": "538e511f386e3b6516ac521b7425861e382f91948db78680584610bc185001c8",
+      "inputSignature": "84b2d7e00a23a2e92c8f920458bf4643c19851405d2b57b3c849939f0cc8d68b",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 847473,
+        "weightedCmykRmse": 0.800644
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1104262,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 847473,
+          "weightedCmykRmse": 0.800644
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        75,
+        156,
+        1305,
+        1006
+      ],
+      "image": {
+        "width": 1000,
+        "height": 826,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_497/exports/feast-share-table-lettering.pdf",
+          "bytes": 847473,
+          "sha256": "88d58360fc05411f03fbf79782b0645c0c23d2c0c9bd594bdfd99d21a4b6b990"
+        },
+        "webp": {
+          "path": "work/production/wave_497/exports/feast-share-table-lettering.webp",
+          "bytes": 1067798,
+          "sha256": "e4998b1d7401a035570ab05bdaf97363bdc85766e4e684736b7a6ebc15a20e6c"
+        },
+        "thumb": {
+          "path": "work/production/wave_497/exports/feast-share-table-lettering-thumb.webp",
+          "bytes": 67806,
+          "sha256": "d9ea9486ca650482cd60a6c640b2521c5878e42e736346df409a3241c938d941"
+        }
+      },
+      "proofSha256": "77c3a0544886cf69439ef70e65ee35f2bb418807a2380af861d1a9a6bbab84f9",
+      "pairMeanRgbDifference": 7.45359
+    },
+    {
+      "id": "feast-campfire-skillet-feast",
+      "title": "Turkey Drumstick Feast over a Campfire",
+      "alt": "Two roasted turkey drumsticks cook with corn and potatoes in a black skillet over a small campfire stand.",
+      "description": "A blue enamel mug and cloth-wrapped bread loaf complete the compact outdoor meal beside the full skillet handle.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_497/source/feast-campfire-skillet-feast.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "3decc6f6714fb9526c3bed5b98fc8aa1849ead746eabcc9d52874aee0205e352",
+      "inputSignature": "c4085f01352ac37289e4aa2c32ccdc490f1aac929449bd39b781220c1422425a",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 899394,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 899394,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        234,
+        116,
+        1365,
+        894
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_497/exports/feast-campfire-skillet-feast.pdf",
+          "bytes": 899394,
+          "sha256": "4059a109fc31c7eb7ea1fbf4c01dea23acadf97115e59a91ebf0aef2b3f0a6ea"
+        },
+        "webp": {
+          "path": "work/production/wave_497/exports/feast-campfire-skillet-feast.webp",
+          "bytes": 1545696,
+          "sha256": "93b6c9c23ede6ec484af86e77347eb5fa1918f1d1cd8996f1eca995ce64776e6"
+        },
+        "thumb": {
+          "path": "work/production/wave_497/exports/feast-campfire-skillet-feast-thumb.webp",
+          "bytes": 45438,
+          "sha256": "0abcf83c20f7eb4bbe3a0334c7f724f4474d930eba86eae0acea7526b3c3e0ad"
+        }
+      },
+      "proofSha256": "c20a65067b0beff11618fb2c0ce2975ce9afe4dcdecfbcaca6327199fc543861",
+      "pairMeanRgbDifference": 4.66472
+    },
+    {
+      "id": "feast-grilled-skewer-spread",
+      "title": "Grilled Vegetable Skewer Feast",
+      "alt": "Grilled skewers with mushrooms, zucchini and peppers share a pale tray with flatbread, green dip and tomato salad.",
+      "description": "Long wooden sticks point toward the front of the tray, creating a diagonal arrangement beside the neatly separated accompaniments.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_497/source/feast-grilled-skewer-spread.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "b06e7b5e1badab5df584a8ea45b35e29ec99920bdbf768af7a204db8c66d894e",
+      "inputSignature": "68f9af6de1a4f4b7083a089f9af05c653450583423f74a6705feb3af79b69dac",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 735746,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 735746,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        200,
+        191,
+        1367,
+        819
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_497/exports/feast-grilled-skewer-spread.pdf",
+          "bytes": 735746,
+          "sha256": "f243546221f7d447626e8684cf857186790baa390412d120066268c91dc15c04"
+        },
+        "webp": {
+          "path": "work/production/wave_497/exports/feast-grilled-skewer-spread.webp",
+          "bytes": 1390172,
+          "sha256": "dff52afa246c1dfb25ac8873d59e173b8d80287abbd4995f5bc01f860d2f45b4"
+        },
+        "thumb": {
+          "path": "work/production/wave_497/exports/feast-grilled-skewer-spread-thumb.webp",
+          "bytes": 38614,
+          "sha256": "5349c5f1b67dafb97ec8dd030cac0e3dc9f1f746fc0afc7fd117ef3606b9546a"
+        }
+      },
+      "proofSha256": "0b105881d886d0acc1ef4aeb91b2e8d60d23d8c7a177fe1fa7e68b4706db3acc",
+      "pairMeanRgbDifference": 3.94355
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T14:33:16.207280+00:00",
+  "screenReviewEvidence": "work/production/wave_497/native-proof-review.jpg",
+  "screenReviewEvidenceSha256": "f2c21a28a796f8722d02d44cc5a67f9f94233a3c10b1bf321cd338266b4b761a",
+  "screenReviewNotes": "All actual rendered PDF proofs visually inspected for readable lettering, complete shapes and utensils, distinct character anatomy, food correspondence and clean monochrome lines. No physical print proof claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T14:34:21.248Z"
+}

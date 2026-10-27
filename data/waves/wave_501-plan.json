@@ -1,0 +1,77 @@
+{
+  "wave": "wave_501",
+  "topic": "blessings",
+  "method": "builtin-image-generation",
+  "research": "data/research/blessings-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "blessings-morning-blessings-teapot",
+      "title": "Morning Blessings Sunflower Tea Set",
+      "alt": "A yellow sunflower teapot and cup sit beside a blue flower jug above a \u201cMORNING BLESSINGS\u201d ribbon.",
+      "description": "Small blue flowers decorate the lid and banner, linking the warm tea set to the tall sunflower arrangement.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_501/source/blessings-morning-blessings-teapot.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-birthday-blessings-cake",
+      "title": "Birthday Blessings Lavender Cake",
+      "alt": "Gold \u201cBIRTHDAY BLESSINGS\u201d lettering rises above a lavender cake with three lit candles and white flowers.",
+      "description": "Pearled icing swags and an ornate gold pedestal give the small celebration cake a formal, decorative silhouette.",
+      "color": "Purple",
+      "style": "Color",
+      "source": "work/production/wave_501/source/blessings-birthday-blessings-cake.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-anniversary-blessings-rings",
+      "title": "Anniversary Blessings Rings and Lilies",
+      "alt": "Two interlinked gold rings rest on an ivory ribbon between white calla lilies beneath \u201cANNIVERSARY BLESSINGS\u201d lettering.",
+      "description": "Fine gold edges on the curled ribbon echo the raised serif text, while green leaves separate the white flower shapes.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_501/source/blessings-anniversary-blessings-rings.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-new-baby-blessings-cradle",
+      "title": "New Baby Blessings Wicker Cradle",
+      "alt": "A wicker cradle with a cream knitted blanket and blue bow stands beside tiny booties under a \u201cNEW BABY BLESSINGS\u201d banner.",
+      "description": "Golden stars follow the curved cream-and-blue ribbon above the empty, softly lined basket.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_501/source/blessings-new-baby-blessings-cradle.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-wedding-blessings-dove",
+      "title": "Wedding Blessings Dove and Peonies",
+      "alt": "A white dove with spread wings carries a cream \u201cWEDDING BLESSINGS\u201d ribbon above a pink peony bouquet.",
+      "description": "Layered wing feathers and flowing ivory ribbon tails frame the rose-and-cream flowers and muted green leaves.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_501/source/blessings-wedding-blessings-dove.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-travel-blessings-suitcase",
+      "title": "Travel Blessings Vintage Suitcase",
+      "alt": "A teal suitcase with brass corners and brown straps stands beneath a \u201cTRAVEL BLESSINGS\u201d banner beside a blank blue booklet.",
+      "description": "Two luggage tags show a green sprig and yellow sun beside the case\u2019s brown straps, brass-colored corner guards and plain navy booklet.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_501/source/blessings-travel-blessings-suitcase.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

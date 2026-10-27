@@ -10,6 +10,22 @@ spec=importlib.util.spec_from_file_location('producer',ROOT/'scripts/produce-ras
 producer=importlib.util.module_from_spec(spec);spec.loader.exec_module(producer)
 
 class GeneratedRasterContract(unittest.TestCase):
+    def test_expanded_collection_requires_complete_unique_reviewed_brief(self):
+        def brief(count):
+            return {'target':count,'rows':[{'artId':str(i),'briefReview':'REVIEWED_FOR_DISTINCT_COMPOSITION'} for i in range(count)]}
+        producer.validate_collection_brief({'items':[{'id':'0'}]},brief(50))
+        expanded=brief(100);plan={'collectionTarget':100,'items':[{'id':'99'}]}
+        with self.assertRaises(AssertionError):producer.validate_collection_brief(plan,expanded)
+        expanded['ownerApprovedTarget']=100;producer.validate_collection_brief(plan,expanded)
+        from copy import deepcopy
+        bad=deepcopy(expanded);bad['rows'][99]['artId']='0'
+        with self.assertRaises(AssertionError):producer.validate_collection_brief(plan,bad)
+        bad=deepcopy(expanded);bad['rows'][0]['briefReview']='PLANNED_NOT_AN_IMAGE_REVIEW'
+        with self.assertRaises(AssertionError):producer.validate_collection_brief(plan,bad)
+        for bad in [brief(50),{**expanded,'rows':expanded['rows'][:-1]}]:
+            with self.assertRaises(AssertionError):producer.validate_collection_brief(plan,bad)
+        with self.assertRaises(AssertionError):producer.validate_collection_brief({**plan,'items':[{'id':'not-reviewed'}]},expanded)
+        with self.assertRaises(AssertionError):producer.validate_collection_brief({'collectionTarget':True,'items':[]},brief(50))
     def test_native_pdf_budget_reserves_editor_space_below_the_owner_limit(self):
         for budget in [980000,995913,997000]:producer.validate_pdf_budget(budget)
         for budget in [0,-1,997001,1000000,True,997000.0]:

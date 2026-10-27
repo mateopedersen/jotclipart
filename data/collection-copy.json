@@ -1,4 +1,47 @@
 {
+  "2027": {
+    "description": "2027 clipart with New Year greetings, twelve monthly headings, Class of 2027 graduation designs, dimensional numbers and coloring illustrations.",
+    "intro": "Find 2027 lettering for New Year greetings, all twelve months, graduation and personal goals. Choose embossed numerals, formal Class of 2027 graphics, cheerful character stickers, business motifs or separate black-and-white coloring designs.",
+    "lead": "New Year greetings, monthly lettering and Class of 2027 designs.",
+    "featured": [
+      "2027-ruby-gold-bevel",
+      "2027-midnight-clock-greeting",
+      "2027-calendar-january",
+      "2027-class-of-school-lettering",
+      "2027-business-desk",
+      "2027-outline-happy-year"
+    ],
+    "chips": [
+      {
+        "label": "New Year greetings",
+        "query": "2027 new year"
+      },
+      {
+        "label": "January 2027",
+        "query": "january 2027"
+      },
+      {
+        "label": "Class of 2027",
+        "query": "2027 graduation"
+      },
+      {
+        "label": "Business & goals",
+        "query": "2027 goals"
+      },
+      {
+        "label": "Coloring designs",
+        "query": "2027 outline"
+      }
+    ],
+    "heading": "",
+    "paragraphs": [],
+    "print": "",
+    "related": [
+      "new-year",
+      "graduation",
+      "christmas"
+    ]
+  },
   "watermelon": {
     "description": "Explore 50 watermelon clipart designs for personal and classroom projects. Edit online and download matching transparent WebP or CMYK PDF files.",
     "lead": "A fresh slice of summer for your page.",
@@ -10694,6 +10737,138 @@
       "elf",
       "nutcracker",
       "deer"
+    ]
+  },
+  "snowman": {
+    "description": "Snowman clipart with playful winter characters, seasonal greetings, crafted decorations, snowy activities and coloring scenes.",
+    "intro": "Cheerful snowmen reading, skating, sharing gifts and enjoying winter adventures. Explore different cartoon faces and outfits, felt, yarn and paper decorations, two seasonal greetings and four independent black-and-white coloring scenes.",
+    "lead": "Friendly snowman characters, winter activities and felt, yarn and paper decorations.",
+    "featured": [
+      "snowman-waving-mitten",
+      "snowman-snowman-pop-up-card",
+      "snowman-heart-embrace",
+      "snowman-happy-winter-lettering",
+      "snowman-snowman-snowglobe",
+      "snowman-outline-snowman-puzzle"
+    ],
+    "chips": [
+      {
+        "label": "Winter activities",
+        "query": "snowman winter"
+      },
+      {
+        "label": "Decorations",
+        "query": "snowman ornament"
+      },
+      {
+        "label": "Greetings",
+        "query": "snowman lettering"
+      },
+      {
+        "label": "Character pairs",
+        "query": "snowman pair"
+      },
+      {
+        "label": "Coloring scenes",
+        "query": "snowman outline"
+      }
+    ],
+    "heading": "",
+    "paragraphs": [],
+    "print": "Choose a character, a decorative object or a blank frame for your winter design.",
+    "related": [
+      "winter",
+      "reindeer",
+      "elf",
+      "nutcracker"
+    ]
+  },
+  "gingerbread": {
+    "description": "Gingerbread clipart with cookie characters, iced animals, festive biscuit buildings, decorating objects and coloring scenes.",
+    "intro": "Cheerful gingerbread characters, iced animal cookies and fanciful biscuit buildings. Explore distinct cookie faces and outfits, decorating scenes, festive objects, a seasonal greeting and four independent black-and-white coloring compositions.",
+    "lead": "Expressive cookie characters and decorative gingerbread illustrations.",
+    "featured": [
+      "gingerbread-candy-cane-walk",
+      "gingerbread-heart-hug",
+      "gingerbread-cookie-owl",
+      "gingerbread-gingerbread-lighthouse",
+      "gingerbread-sweet-holidays-lettering",
+      "gingerbread-outline-gingerbread-banner"
+    ],
+    "chips": [
+      {
+        "label": "Cookie characters",
+        "query": "gingerbread character"
+      },
+      {
+        "label": "Iced animals",
+        "query": "gingerbread cookie"
+      },
+      {
+        "label": "Biscuit buildings",
+        "query": "gingerbread house"
+      },
+      {
+        "label": "Decorating",
+        "query": "gingerbread icing"
+      },
+      {
+        "label": "Coloring scenes",
+        "query": "gingerbread outline"
+      }
+    ],
+    "heading": "",
+    "paragraphs": [],
+    "print": "Choose a playful cookie figure, a small decorative object or a blank banner for your festive layout.",
+    "related": [
+      "cookie",
+      "elf",
+      "snowman",
+      "christmas"
+    ]
+  },
+  "feast": {
+    "description": "Feast clipart with turkey dinners, sharing tables, buffet displays, varied food spreads, greeting lettering and coloring scenes.",
+    "intro": "Turkey dinners, shared tables and abundant food spreads for feast-themed designs. Explore carving and serving scenes, buffet arrangements, different meal traditions, food lettering and four separate cartoon coloring compositions.",
+    "lead": "Turkey feasts, shared meals and illustrated food spreads.",
+    "featured": [
+      "feast-turkey-carving-chef",
+      "feast-school-friendship-table",
+      "feast-overhead-sharing-table",
+      "feast-lets-feast-lettering",
+      "feast-seafood-boil-platter",
+      "feast-outline-bear-turkey-wagon"
+    ],
+    "chips": [
+      {
+        "label": "Turkey feasts",
+        "query": "feast turkey"
+      },
+      {
+        "label": "Sharing a meal",
+        "query": "feast sharing"
+      },
+      {
+        "label": "Buffet displays",
+        "query": "feast buffet"
+      },
+      {
+        "label": "Food lettering",
+        "query": "feast lettering"
+      },
+      {
+        "label": "Coloring scenes",
+        "query": "feast outline"
+      }
+    ],
+    "heading": "",
+    "paragraphs": [],
+    "print": "",
+    "related": [
+      "thanksgiving",
+      "turkey",
+      "cornucopia",
+      "friendsgiving"
     ]
   }
 }

@@ -1,0 +1,35 @@
+{
+  "wave": "wave_499",
+  "topic": "feast",
+  "method": "builtin-image-generation",
+  "research": "data/research/feast-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "feast-outline-chef-turkey-serving",
+      "title": "Chef Carrying a Turkey Platter Coloring Page",
+      "alt": "A tall cartoon chef with a curled mustache carries roast turkey beside a stool topped with a pie in black outline.",
+      "description": "A high toque, neckerchief, double-button jacket and tied apron distinguish the full standing chef, with the platter supported by both hands.",
+      "color": "Black",
+      "style": "Outline",
+      "source": "work/production/wave_499/source/feast-outline-chef-turkey-serving.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    },
+    {
+      "id": "feast-outline-open-lunchbox-spread",
+      "title": "Open Picnic Lunchbox Coloring Page",
+      "alt": "An open compartment lunchbox contains triangular sandwiches, apple wedges and spiral wraps beside a bottle and spoon in black outline.",
+      "description": "The upright lid, front clasp and separate food sections keep the picnic graphic easy to recognize and color.",
+      "color": "Black",
+      "style": "Outline",
+      "source": "work/production/wave_499/source/feast-outline-open-lunchbox-spread.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    }
+  ]
+}

@@ -1,0 +1,481 @@
+{
+  "wave": "wave_491",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "feast-brunch-waffle-board",
+      "title": "Waffle Brunch on a Heart-Shaped Board",
+      "alt": "Three waffle quarters topped with berries sit on a heart-shaped wooden board beside a syrup jug and a plate of scrambled eggs.",
+      "description": "A small berry bowl fills the board’s upper corner, while the separate egg plate balances its pointed lower edge.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_491/source/feast-brunch-waffle-board.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "7f695f90ae67f85cdbedae3462ec025f8f889eb8f04bbab66dfec16eed142e15",
+      "inputSignature": "d949104ce954dfc7c102f79b9a8fa2bb50241014cc3168f5727b0d5397a06946",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 628953,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 628953,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        360,
+        139,
+        1245,
+        866
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_491/exports/feast-brunch-waffle-board.pdf",
+          "bytes": 628953,
+          "sha256": "2d76b9c6428a98416a5485370099840916e586a247d908b3d3e2e5da46000252"
+        },
+        "webp": {
+          "path": "work/production/wave_491/exports/feast-brunch-waffle-board.webp",
+          "bytes": 1258238,
+          "sha256": "78a82620928123a56d4daf1ebbefb1d6e3cf953e2c7cb4ece84cf7032ead844f"
+        },
+        "thumb": {
+          "path": "work/production/wave_491/exports/feast-brunch-waffle-board-thumb.webp",
+          "bytes": 34328,
+          "sha256": "d9c959a146e5ff6006f50927b16d3ad5f74e316a6dec4b2015cdcb223cffe58f"
+        }
+      },
+      "proofSha256": "df7b8180c4916cdbc0d4894b6b263429886eac380c105ebe3ea11a9b3fa0ccc8",
+      "pairMeanRgbDifference": 3.9401
+    },
+    {
+      "id": "feast-barbecue-picnic-tray",
+      "title": "Barbecue Slider Sharing Tray",
+      "alt": "Two barbecue sliders share a red enamel tray with grilled corn, baked beans and shredded slaw.",
+      "description": "Shiny round buns sit over shredded barbecue filling and pickle slices, with the side dishes arranged behind them on brown paper.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_491/source/feast-barbecue-picnic-tray.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "60826844a686406f811cb51261f32f2747650ac086021e9998a18a989853e7dc",
+      "inputSignature": "6f9fbbf5f565b47beac6bd75d31c27372dec394ae5c15f590199e8c32e69369a",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 832040,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 832040,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        160,
+        167,
+        1383,
+        895
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_491/exports/feast-barbecue-picnic-tray.pdf",
+          "bytes": 832040,
+          "sha256": "9d8eb4ecd8a9bef39c7cf6112d6f9146de7dd90e0fabdde7b96d9cf5c09a5bba"
+        },
+        "webp": {
+          "path": "work/production/wave_491/exports/feast-barbecue-picnic-tray.webp",
+          "bytes": 1403660,
+          "sha256": "f4f916496fa1a052dd0296992f47da8f13572d727a6c3fd0d00dddf13a91cf46"
+        },
+        "thumb": {
+          "path": "work/production/wave_491/exports/feast-barbecue-picnic-tray-thumb.webp",
+          "bytes": 43738,
+          "sha256": "ce4f8d40eaf07784bf52c6fc9a0eb0a4b643b10f63cca0ab94909a081b703c4c"
+        }
+      },
+      "proofSha256": "b420a07f34305ce412c07eef2f5b159f1d931550f06c3cc5eb364e75622c1a93",
+      "pairMeanRgbDifference": 5.18899
+    },
+    {
+      "id": "feast-seafood-boil-platter",
+      "title": "Crab and Shrimp Feast Platter",
+      "alt": "A red crab and curled shrimp fill a blue oval platter with corn, baby potatoes and lemon wedges.",
+      "description": "The large crab anchors the center, with its claws visible above the bright corn and mixed whole and halved potatoes.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_491/source/feast-seafood-boil-platter.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "cb0f31afa149992893827e97c4e9c824222d270d15318f02c8516e0e6a9ab312",
+      "inputSignature": "e0c3f189a725f99a9580849ebd30a3aa4b0502da3d66d69c52ad36b92fe95a9d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 906339,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 906339,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        108,
+        175,
+        1437,
+        821
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_491/exports/feast-seafood-boil-platter.pdf",
+          "bytes": 906339,
+          "sha256": "056d51bcc0d59603baf3da8bf1b0954550dfe2e988449ce7c2832032816ffa3d"
+        },
+        "webp": {
+          "path": "work/production/wave_491/exports/feast-seafood-boil-platter.webp",
+          "bytes": 1621424,
+          "sha256": "b58bf0d1b8a20619039131ce6b8aaee705a5913c63d8256c2fc2b49f5dab5ced"
+        },
+        "thumb": {
+          "path": "work/production/wave_491/exports/feast-seafood-boil-platter-thumb.webp",
+          "bytes": 46356,
+          "sha256": "832d4489873a56926e12018a722ac3cdc6c3603970cc5cb0670e4b030ae32d3b"
+        }
+      },
+      "proofSha256": "79f010846cc4d4b6fc67afc2667d8e97481322fc67ebf70b914598cd8a12066e",
+      "pairMeanRgbDifference": 4.67617
+    },
+    {
+      "id": "feast-garden-flatbread-spread",
+      "title": "Herb Flatbread with Salad and Hummus",
+      "alt": "Herb-covered flatbread strips sit on a wooden paddle beside a chopped salad bowl and a patterned bowl of hummus.",
+      "description": "The long handled board leads diagonally between the two blue-rimmed bowls, keeping the golden bread and fresh vegetables distinct.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_491/source/feast-garden-flatbread-spread.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "8c5983b8f41369fe75d674b1887b2ca1455d7d106a49451b838684e8993b0533",
+      "inputSignature": "37b93c796c2fc8f3cc59533060a9e1042448ca96a7f40608355789571908756b",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 906913,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 906913,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        235,
+        150,
+        1358,
+        909
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_491/exports/feast-garden-flatbread-spread.pdf",
+          "bytes": 906913,
+          "sha256": "ce31a42e1302d47b0d090c8596cb7bdc7c369ba30805f433c4e41c8ebf07713c"
+        },
+        "webp": {
+          "path": "work/production/wave_491/exports/feast-garden-flatbread-spread.webp",
+          "bytes": 1614288,
+          "sha256": "e6ffe97eacab8b4aa3147bd800d82d19da25fa361933e52b1ecdfb46e18c0a98"
+        },
+        "thumb": {
+          "path": "work/production/wave_491/exports/feast-garden-flatbread-spread-thumb.webp",
+          "bytes": 47642,
+          "sha256": "3a58c4919891909c49e4a5f9115090ea9ebbf6b3139563d45f62c0168a926b6e"
+        }
+      },
+      "proofSha256": "75f57b94d7893c1149ac9fc2f6dded13a5b21001aa5380bcba7fde7324ffc75c",
+      "pairMeanRgbDifference": 5.3106
+    },
+    {
+      "id": "feast-mezze-sharing-tray",
+      "title": "Hummus and Vine-Leaf Sharing Tray",
+      "alt": "A round brass tray holds hummus, pita triangles, olives, cucumber slices and stuffed vine-leaf rolls.",
+      "description": "Small inset dishes surround the central hummus bowl, leaving the engraved gold rim visible around the meal.",
+      "color": "Gold",
+      "style": "Color",
+      "source": "work/production/wave_491/source/feast-mezze-sharing-tray.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "d5ec1ee38ec051dc53fb52a39bb3d539ba58544b5e5c220ef8b94cde53e4efcc",
+      "inputSignature": "ab5c845247a3ff9a0172971d7fcb92d12a6c3fde26700cfd9e7f42443c1073d3",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 970328,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 970328,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        197,
+        175,
+        1175,
+        960
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_491/exports/feast-mezze-sharing-tray.pdf",
+          "bytes": 970328,
+          "sha256": "84c6dfe4ad87144be39f51b5c3b1db5e8d8cfc23fa343e7dda9af5790d2c5b25"
+        },
+        "webp": {
+          "path": "work/production/wave_491/exports/feast-mezze-sharing-tray.webp",
+          "bytes": 1109132,
+          "sha256": "b969771d549f93c050f0c924e37c0747896d26af391a0d1a019a48fbafcb1de4"
+        },
+        "thumb": {
+          "path": "work/production/wave_491/exports/feast-mezze-sharing-tray-thumb.webp",
+          "bytes": 49772,
+          "sha256": "f7734b9de59f9d14a82ddbb6f4397054b6887d49dee0502b060216a03fb9938b"
+        }
+      },
+      "proofSha256": "61b11e2f9dee9b61c725bd9a18c33fd8912ec7c54172a9c7407b76ddbf132a2f",
+      "pairMeanRgbDifference": 4.44839
+    },
+    {
+      "id": "feast-baked-lasagna-supper",
+      "title": "Lasagna Supper with Bread and Salad",
+      "alt": "A lifted lasagna portion rises from a blue baking dish beside garlic bread and a bowl of green salad.",
+      "description": "Long cheese strands connect the square serving to the pan, while the complete wooden-handled spatula extends from its right side.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_491/source/feast-baked-lasagna-supper.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "6da6e2cd0b24713ce1c27965b35b2ce676acfa947f53ec78f9192783478aa3d6",
+      "inputSignature": "6f61e8c0b89b30cbfbb5ba293892a627c889cee750258ab715d557c398492706",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 813191,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 813191,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        239,
+        136,
+        1425,
+        890
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_491/exports/feast-baked-lasagna-supper.pdf",
+          "bytes": 813191,
+          "sha256": "a00f360888c88c76ba8b5362eb8e3d086868bbcaca4cc987fb0548ab7fdf89c0"
+        },
+        "webp": {
+          "path": "work/production/wave_491/exports/feast-baked-lasagna-supper.webp",
+          "bytes": 1514656,
+          "sha256": "d138c21c84b3ad73e8e1e18aa3a4a4b3bdb17a9e6a50362eb42138a9fed3be48"
+        },
+        "thumb": {
+          "path": "work/production/wave_491/exports/feast-baked-lasagna-supper-thumb.webp",
+          "bytes": 44508,
+          "sha256": "fec782e7469038c6999eae3f2211a13e175e53b7aeab63c1f6ea1890c38fb8e2"
+        }
+      },
+      "proofSha256": "4f0ef9c7b755df80f7d7d92dcab8c50a215a7e2f993650d2a746c7a50fec3889",
+      "pairMeanRgbDifference": 5.37102
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T14:29:55.419095+00:00",
+  "screenReviewEvidence": "work/production/wave_491/native-proof-review.jpg",
+  "screenReviewEvidenceSha256": "a1f5b2b0f1caa157ab0cd9642b08e6102e0b393a1df42cc50f7b4cf67b86b9b1",
+  "screenReviewNotes": "All six actual CMYK-rendered PDF proofs inspected for correct pairing, intact vessels and utensils, food separation, framing and legible detail. No physical print proof claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T14:34:02.823Z"
+}

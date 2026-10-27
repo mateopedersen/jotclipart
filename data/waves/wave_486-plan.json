@@ -1,0 +1,78 @@
+{
+  "wave": "wave_486",
+  "topic": "2027",
+  "collectionTarget": 100,
+  "method": "builtin-image-generation",
+  "research": "data/research/2027-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "2027-month-august",
+      "title": "August 2027 Peach Lettering",
+      "alt": "Coral August lettering arches over whole and halved peaches above green 2027 numerals.",
+      "description": "A detailed peach stone and glossy green leaves give the fruit cluster a clear focal point between the month and year.",
+      "color": "Orange",
+      "style": "Color",
+      "source": "work/production/wave_486/source/2027-month-august.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-month-september",
+      "title": "September 2027 Books and Pencil",
+      "alt": "Plum September lettering curves above three stacked books and a yellow pencil, with gold 2027 numerals below.",
+      "description": "Mustard, plum and teal covers form a compact book stack, contrasted by the large sharpened pencil leaning across its right edge.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_486/source/2027-month-september.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-game-controller",
+      "title": "Level Up in 2027 Gaming Controller",
+      "alt": "A silver and navy game controller rises behind orange Level Up lettering and angular blue 2027 numerals.",
+      "description": "Two thumbsticks, a directional pad and colored face buttons give the controller a clear shape above the bold gaming slogan and small pixel star.",
+      "color": "Blue",
+      "style": "Color",
+      "source": "work/production/wave_486/source/2027-game-controller.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-gel-rounded-year",
+      "title": "Iridescent Gel 2027",
+      "alt": "Glossy rounded 2027 numerals with flowing iridescent highlights, arranged as 20 above a sweeping 27.",
+      "description": "Amber, pink, violet and blue reflections follow the soft inflated strokes around the open zero.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_486/source/2027-gel-rounded-year.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-month-october",
+      "title": "October 2027 Pumpkin and Oak Leaves",
+      "alt": "An orange pumpkin stands beside brown October lettering above copper 2027 numerals and autumn oak leaves.",
+      "description": "The curved pumpkin stem and sweeping branch line frame the warm metal-like year without obscuring the large month name.",
+      "color": "Orange",
+      "style": "Color",
+      "source": "work/production/wave_486/source/2027-month-october.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-month-november",
+      "title": "November 2027 Wheat and Acorn Banner",
+      "alt": "A cream November banner crosses two golden wheat stems above green 2027 numerals and paired acorns.",
+      "description": "The crossed grain stalks form a tall open silhouette, while brown textured acorn caps and small oak leaves finish its base.",
+      "color": "Gold",
+      "style": "Color",
+      "source": "work/production/wave_486/source/2027-month-november.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

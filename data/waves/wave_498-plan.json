@@ -1,0 +1,79 @@
+{
+  "wave": "wave_498",
+  "topic": "feast",
+  "method": "builtin-image-generation",
+  "research": "data/research/feast-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "feast-bread-basket-spread",
+      "title": "Bread Basket with Butter and Jam",
+      "alt": "A woven basket holds a scored round loaf, baguette and twisted rolls beside butter, red jam and a knife.",
+      "description": "A folded striped cloth gathers the bread spread into one low arrangement, with the wooden-handled knife resting clear of the basket.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_498/source/feast-bread-basket-spread.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-chocolate-fondue-feast",
+      "title": "Chocolate Fondue with Fruit and Marshmallows",
+      "alt": "An ivory chocolate fondue pot stands above a candle beside strawberries, banana slices, marshmallows and dipping forks.",
+      "description": "The dark metal stand supports the two-handled pot, while a separate small plate keeps the two long forks together.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_498/source/feast-chocolate-fondue-feast.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-community-meal-serving",
+      "title": "Sharing a Turkey Dinner with a Wheelchair User",
+      "alt": "A woman in a rust apron passes a turkey dinner to a smiling man in a blue sweater using a wheelchair.",
+      "description": "The pair supports opposite edges of the meal plate, with bread and cranberry sauce carried close to the serving woman\u2019s arm.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_498/source/feast-community-meal-serving.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-pasta-cheese-wheel",
+      "title": "Ribbon Pasta Served in a Cheese Wheel",
+      "alt": "Ribbon pasta with basil and cherry tomatoes fills an open cheese wheel beside rolls and a green salad.",
+      "description": "The thick pale rind forms the serving bowl, with the smaller bread plate and clear salad bowl completing the rounded spread.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_498/source/feast-pasta-cheese-wheel.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-outline-bear-turkey-wagon",
+      "title": "Bear Pulling a Turkey Feast Wagon Coloring Page",
+      "alt": "A smiling cartoon bear in a waistcoat and bow tie pulls a wagon with roast turkey, pie and a roll basket in black outline.",
+      "description": "The full walking bear, pull handle and wheeled wooden cart form one cheerful horizontal scene with open coloring areas.",
+      "color": "Black",
+      "style": "Outline",
+      "source": "work/production/wave_498/source/feast-outline-bear-turkey-wagon.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    },
+    {
+      "id": "feast-outline-turtle-watermelon-cart",
+      "title": "Turtle Pulling a Picnic Cart Coloring Page",
+      "alt": "A smiling turtle pulls a wooden cart loaded with watermelon, sandwiches and a pitcher in black outline.",
+      "description": "The patterned shell and complete wheeled cart create a separate picnic character scene with clear, unshaded coloring spaces.",
+      "color": "Black",
+      "style": "Outline",
+      "source": "work/production/wave_498/source/feast-outline-turtle-watermelon-cart.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    }
+  ]
+}

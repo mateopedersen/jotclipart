@@ -1,0 +1,77 @@
+{
+  "wave": "wave_470",
+  "topic": "gingerbread",
+  "method": "builtin-image-generation",
+  "research": "data/research/gingerbread-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "gingerbread-cookie-stocking",
+      "title": "Gingerbread Stocking Cookie",
+      "alt": "Stocking-shaped gingerbread cookie with a cream icing cuff, red lattice piping and green peppermint candies.",
+      "description": "A small wrapped-candy decoration sits below the cuff, with white icing pearls defining the toe and heel.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_470/source/gingerbread-cookie-stocking.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-cookie-rocking-horse",
+      "title": "Gingerbread Rocking Horse Cookie",
+      "alt": "Rocking-horse gingerbread cookie with a turquoise icing saddle, white mane and tail, and a curved decorated rocker.",
+      "description": "The raised front leg and flowing piped mane give the horse a lively profile above the full rocker.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_470/source/gingerbread-cookie-rocking-horse.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-cottage-round-tower",
+      "title": "Gingerbread Cottage with a Round Tower",
+      "alt": "Gingerbread cottage with a tall round tower, pink scalloped candy roofs, green arched door and glowing amber sugar windows.",
+      "description": "White icing curls and red candy dots decorate the walls above a line of colored gumdrops.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_470/source/gingerbread-cottage-round-tower.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-a-frame-chalet",
+      "title": "Gingerbread Chalet with Almond Roof",
+      "alt": "Steep-roofed gingerbread chalet with almond-like roof tiles, amber windows and a teal door bearing a tiny wreath.",
+      "description": "Two striped candy posts flank the front beneath thick white roof icing and a star above the doorway.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_470/source/gingerbread-a-frame-chalet.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-gingerbread-windmill",
+      "title": "Gingerbread Windmill with Wafer Sails",
+      "alt": "Gingerbread windmill with four lattice-patterned wafer sails, a peppermint center and green arched door.",
+      "description": "White icing curls wrap the tapered tower beneath red and green candy accents on the sails.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_470/source/gingerbread-gingerbread-windmill.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-gingerbread-lighthouse",
+      "title": "Gingerbread Lighthouse with Candy Stripes",
+      "alt": "Tall gingerbread lighthouse with red icing bands, amber lantern windows and a striped peppermint dome.",
+      "description": "Chocolate railing surrounds the lantern room above the tapered tower and round iced cookie base.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_470/source/gingerbread-gingerbread-lighthouse.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

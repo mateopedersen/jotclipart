@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "topics": {
+    "snowman": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "a756b3f97890161be207194bb939b4ae5adc5ca33c75f2e091c249b6e56a582f",
+      "intro": "Cheerful snowmen reading, skating, sharing gifts and enjoying winter adventures. Explore different cartoon faces and outfits, felt, yarn and paper decorations, two seasonal greetings and four independent black-and-white coloring scenes.",
+      "checkedAt": "2026-10-27T09:29:23.363Z",
+      "evidence": [
+        {
+          "id": "snowman-waving-mitten",
+          "imageSha256": "bbbea741bcf6f268408421c62bf9fefc244b47546886062801e06ae5100e1784"
+        },
+        {
+          "id": "snowman-heart-embrace",
+          "imageSha256": "a93c12d082e2ef924cee26b6f7f6b0ad519971fbdd5f89d7434484da82d9bce0"
+        },
+        {
+          "id": "snowman-snowman-felt-garland",
+          "imageSha256": "5d35733552b8f4cdb38bde63277e936e444ae2f4f9ceee989d6874ec990becb9"
+        },
+        {
+          "id": "snowman-outline-snowman-puzzle",
+          "imageSha256": "28c95e5ee0eb3f40f4f02ac2e3856ba0c372c8923469136513138fc6ccefcc05"
+        }
+      ]
+    }
+  }
+}

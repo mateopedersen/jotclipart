@@ -1,0 +1,515 @@
+{
+  "wave": "wave_487",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "2027-puzzle-year",
+      "title": "2027 Better Together Puzzle Characters",
+      "alt": "Four smiling red, yellow, blue and green jigsaw characters form 2027 above a Better Together ribbon.",
+      "description": "White gloves, colorful sneakers and different expressions give each connected puzzle piece a separate personality.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_487/source/2027-puzzle-year.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "0e333770d0ad8781d04d98d88d984c43fc3b2df8994bfb648c4b94b02e2280e3",
+      "inputSignature": "90de6c9d0b604074aeb37fbc334675efec642bb621dc91521fdd9c523d6c5a6d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 806681,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 806681,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        65,
+        142,
+        1475,
+        903
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_487/exports/2027-puzzle-year.pdf",
+          "bytes": 806681,
+          "sha256": "d906dfdfb4768cbff478ab9f00194343f4ec8db37b9ffd45dca171d2786d132a"
+        },
+        "webp": {
+          "path": "work/production/wave_487/exports/2027-puzzle-year.webp",
+          "bytes": 1266542,
+          "sha256": "8cacc7283903319e4272ad3ca0e05cbc9ebf3c24dbec888dceb6bdb1374afbaa"
+        },
+        "thumb": {
+          "path": "work/production/wave_487/exports/2027-puzzle-year-thumb.webp",
+          "bytes": 51062,
+          "sha256": "5942d9fe157d679e2a233d9795efb6b6b2875096e34f46e466840842250d5dd5"
+        }
+      },
+      "proofSha256": "1f0adbf6a862e708a0210074ce55c2734addb299635582d3fd75b2b824f63704",
+      "pairMeanRgbDifference": 8.70813
+    },
+    {
+      "id": "2027-origami-cranes",
+      "title": "Welcome 2027 Origami Crane Greeting",
+      "alt": "Three patterned paper cranes fly above Welcome 2027 lettering decorated with small pink blossoms and flowing ribbons.",
+      "description": "Ivory, teal and coral folded birds echo the year’s floral pattern and gold borders in an asymmetrical greeting composition.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_487/source/2027-origami-cranes.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "6542b2e4bd241b6ca7411bd9d799b193b353710235b22bcc1df0406ed01033ea",
+      "inputSignature": "a130e36600aa174afe290de0a9bf8ad371d22e7fcb4b53694fd3bad257e26fa6",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 840812,
+        "weightedCmykRmse": 0.779152
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1039359,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 840812,
+          "weightedCmykRmse": 0.779152
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        89,
+        21,
+        1487,
+        999
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_487/exports/2027-origami-cranes.pdf",
+          "bytes": 840812,
+          "sha256": "511382c690aacfe1fa84d43e5203be15674248f9e9faae6fc6b0ca8f76ac44eb"
+        },
+        "webp": {
+          "path": "work/production/wave_487/exports/2027-origami-cranes.webp",
+          "bytes": 1703562,
+          "sha256": "6a14da2b2f1cd2ee8d8ae4029ec6e4b196b918a31f413521a6464d9f1b0a0434"
+        },
+        "thumb": {
+          "path": "work/production/wave_487/exports/2027-origami-cranes-thumb.webp",
+          "bytes": 72676,
+          "sha256": "d5d1939dddc969e3706323f11f8c92740f115bd2187366229dc91ffe52969f70"
+        }
+      },
+      "proofSha256": "94f579ee22d5d0a91a5b71e51dfe1c8c53c15767c547c9399b0450e6ed60fa66",
+      "pairMeanRgbDifference": 5.61602
+    },
+    {
+      "id": "2027-hot-air-balloon",
+      "title": "Up and Away 2027 Patchwork Balloon",
+      "alt": "A colorful patchwork hot-air balloon displays Up and Away above 2027, with a complete wicker basket suspended below.",
+      "description": "Striped, dotted and checked fabric panels surround the cream central label, while gold ropes connect the envelope to the basket.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_487/source/2027-hot-air-balloon.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1024,
+      "height": 1536,
+      "pdfWidth": 667,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "cc55c2d3a4a6fe6bb8cf4e731c78df4fb30b3ec73007ec6be95e7d59c0d860d8",
+      "inputSignature": "a662d1209387df5fb5f1446b66ea891992c155c4497348fa550fd8fab6b1fd49",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 991444,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 991444,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        38,
+        57,
+        991,
+        1476
+      ],
+      "image": {
+        "width": 667,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_487/exports/2027-hot-air-balloon.pdf",
+          "bytes": 991444,
+          "sha256": "7d2315ee4cb12a673442603bc9565a1392cf0972cbc5618a8b2fbab4cbf03925"
+        },
+        "webp": {
+          "path": "work/production/wave_487/exports/2027-hot-air-balloon.webp",
+          "bytes": 1713488,
+          "sha256": "02ca756823dacac8ccf9036c0a750c087cb2df88e6ce4732ee49e9a8b455e948"
+        },
+        "thumb": {
+          "path": "work/production/wave_487/exports/2027-hot-air-balloon-thumb.webp",
+          "bytes": 54518,
+          "sha256": "78f41ee577fdc22714091d611c6811c3593b00e22349a7bd520820d4eaa77fd9"
+        }
+      },
+      "proofSha256": "85ad23280b5e96685da133c1501b6e619bf2764ce103e73dba5bfdb978da367b",
+      "pairMeanRgbDifference": 6.26952
+    },
+    {
+      "id": "2027-class-of-floral-monogram",
+      "title": "Class of 2027 Graduation Bouquet",
+      "alt": "Ivory magnolias, blue irises and eucalyptus wrapped in cream paper, tied with a navy bow and a Class of 2027 tag.",
+      "description": "The tall flower arrangement rises above the large hanging cream label, with the stem ends kept visible below.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_487/source/2027-class-of-floral-monogram.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1024,
+      "height": 1536,
+      "pdfWidth": 667,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "58c1a29d06d1f13862f5a940e234ceb0d2c41389dfc848e26cedceee3567c08f",
+      "inputSignature": "810888fabb1dff83651d17e5e490bbca0a70d516177b7b01fc1bb12d16771f08",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 977167,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 977167,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        91,
+        49,
+        969,
+        1483
+      ],
+      "image": {
+        "width": 667,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_487/exports/2027-class-of-floral-monogram.pdf",
+          "bytes": 977167,
+          "sha256": "589f9ff416f33b56b18128f76aac619c4670bbd2f28a4b546ff9371c5a9a16e4"
+        },
+        "webp": {
+          "path": "work/production/wave_487/exports/2027-class-of-floral-monogram.webp",
+          "bytes": 1508172,
+          "sha256": "bd26c7a8aa450a985c154be4ad60fbf2d0184ace4c58e7c72468f313735b41a8"
+        },
+        "thumb": {
+          "path": "work/production/wave_487/exports/2027-class-of-floral-monogram-thumb.webp",
+          "bytes": 56664,
+          "sha256": "09cf1cf02222091ef708f5781e81b0609b371f29bbdbd88f4ca6e60b6f37e841"
+        }
+      },
+      "proofSha256": "9d990d07f5bca3bd855301be1ac5340596e9b922a72e985c832883a6d4a2f6d0",
+      "pairMeanRgbDifference": 5.3449
+    },
+    {
+      "id": "2027-month-december",
+      "title": "December 2027 Evergreen Lettering",
+      "alt": "Green December lettering and red 2027 numerals sit beneath an evergreen branch with a red bow and gold ornament.",
+      "description": "Gold borders and delicate snowflake patterns decorate the raised year, with red berries tucked among the pine needles.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_487/source/2027-month-december.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "8a65d07d1485952e644b7a00a57dfaa5e7277cc8d262a9301b3f15b8f77881cd",
+      "inputSignature": "1ba24053d278a8b0719e362bfe859397a4b7c572a944120f8962df08dcf02c95",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 48,
+        "losslessCmyk": false,
+        "bytes": 985750,
+        "weightedCmykRmse": 1.230109
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1394860,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1188816,
+          "weightedCmykRmse": 0.703936
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1132944,
+          "weightedCmykRmse": 0.832908
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 1060168,
+          "weightedCmykRmse": 0.991469
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 48,
+          "losslessCmyk": false,
+          "bytes": 985750,
+          "weightedCmykRmse": 1.230109
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        50,
+        20,
+        1493,
+        970
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_487/exports/2027-month-december.pdf",
+          "bytes": 985750,
+          "sha256": "b2369c742bee4498a9d4b20a80802c8b8624fb4a2f9be6ba990c1247a53c2bba"
+        },
+        "webp": {
+          "path": "work/production/wave_487/exports/2027-month-december.webp",
+          "bytes": 1954054,
+          "sha256": "0d20d14f1fa097fd2cc6ca27d288e973e3452f54e0428a9d378844c6276bd3a5"
+        },
+        "thumb": {
+          "path": "work/production/wave_487/exports/2027-month-december-thumb.webp",
+          "bytes": 87110,
+          "sha256": "08e84b47352482f85c5f0a490ab826cee7070fdad032d8febb308fc32ac0d77a"
+        }
+      },
+      "proofSha256": "5540bc1a01b6602f7e7c2042fa814a2a11eb247dfcb65a9f7928a673089a0bab",
+      "pairMeanRgbDifference": 9.98372
+    },
+    {
+      "id": "2027-faceted-crystal-year",
+      "title": "Emerald Crystal 2027",
+      "alt": "Wide 2027 numerals formed from faceted emerald-green crystal with clear beveled edges.",
+      "description": "Triangular reflections run through the low geometric digits, with a full open center in the zero.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_487/source/2027-faceted-crystal-year.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1774,
+      "height": 887,
+      "pdfWidth": 1000,
+      "pdfHeight": 500,
+      "sourceType": "raster",
+      "sourceSha256": "47c5ed61acf2fe27f355b59a9b37340d7bfe76f5453e6576397566d800b242b7",
+      "inputSignature": "51f1ab4db3637f6f16297b57994e32805f368a1dec165b5bec0726d21b9f9523",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 772664,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 772664,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        146,
+        207,
+        1643,
+        685
+      ],
+      "image": {
+        "width": 1000,
+        "height": 500,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_487/exports/2027-faceted-crystal-year.pdf",
+          "bytes": 772664,
+          "sha256": "9d276572f41397e0b5df002c6c935aee3da73de28c374ee4d2aa69e5b0ec2839"
+        },
+        "webp": {
+          "path": "work/production/wave_487/exports/2027-faceted-crystal-year.webp",
+          "bytes": 1003722,
+          "sha256": "f0c8e81f77412a50928824354be956f06d6a5b46022b5be589bc909a117e3098"
+        },
+        "thumb": {
+          "path": "work/production/wave_487/exports/2027-faceted-crystal-year-thumb.webp",
+          "bytes": 38688,
+          "sha256": "86ca6728a4453de68d25d77da83e43a0197e24377a60cf5e5c771622d7323cb8"
+        }
+      },
+      "proofSha256": "7b441244cbe534ea53677a8182cfe0e34c4fcd4881aa3c2df6833229ebb241f5",
+      "pairMeanRgbDifference": 8.63938
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T12:33:44.451524+00:00",
+  "screenReviewEvidence": "work/production/wave_487/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T12:33:44.735Z"
+}

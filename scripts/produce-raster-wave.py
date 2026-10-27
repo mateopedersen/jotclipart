@@ -24,12 +24,24 @@ def validate_pdf_budget(value):
     # This is an encoding reserve, not a second user-facing file-size limit.
     # All edited exports still require the independent 1,000,000-byte preflight.
     assert type(value) is int and 0<value<=STANDARD_PDF_LIMIT-MIN_EDITOR_HEADROOM
+def validate_collection_brief(plan,brief):
+    target=plan.get('collectionTarget',50)
+    assert type(target) is int and target in (50,100), 'Unsupported collection target'
+    assert brief.get('target',50)==target, 'Plan and creative brief targets differ'
+    if target==100:
+        assert brief.get('ownerApprovedTarget')==100, 'Expanded collection needs the recorded owner target'
+    rows=brief['rows'];assert len(rows)==target, 'Incomplete creative brief'
+    planned_ids=[row['artId'] for row in rows]
+    assert len(set(planned_ids))==target, 'Repeated creative brief artwork ID'
+    assert all(row.get('briefReview')=='REVIEWED_FOR_DISTINCT_COMPOSITION' for row in rows)
+    assert {item['id'] for item in plan['items']}<=set(planned_ids), 'Wave is outside the reviewed brief'
 def atomic_json(path, data):
     temp=path.with_suffix('.tmp');temp.write_text(json.dumps(data,indent=2)+'\n');temp.replace(path)
 def export_signature(plan, item, dependencies):
     # A deferred neighbor must not invalidate verified artwork. Every export-affecting
     # policy, this item's metadata, and encoder/profile/research bytes still bind reuse.
     policy={key:plan[key] for key in ('wave','topic','method','research','maxPdfBytes','minimumJpxQualityDb','maximumWeightedCmykRmse')}
+    if 'collectionTarget' in plan:policy['collectionTarget']=plan['collectionTarget']
     contract=json.dumps({'schema':2,'policy':policy,'item':item},sort_keys=True,separators=(',',':')).encode()
     return sha(contract+dependencies)
 def validate_native_alpha(alpha):
@@ -117,8 +129,7 @@ def main():
             assert meta['replacesRevision']==prior['revision'], 'Stale replacement revision'
     else:
         briefs=json.loads((ROOT/f'data/briefs/{plan["topic"]}.json').read_text())
-        assert len(briefs['rows'])==50 and all(row['briefReview']=='REVIEWED_FOR_DISTINCT_COMPOSITION' for row in briefs['rows'])
-        assert set(ids)<=set(row['artId']for row in briefs['rows'])
+        validate_collection_brief(plan,briefs)
     research=json.loads((ROOT/plan['research']).read_text());assert research['topic']==plan['topic'] and research['sourceImageReuse'] is False
     binary=os.environ.get('PDFTOPPM_BIN') or shutil.which('pdftoppm');assert binary,'Poppler required'
     transform=ImageCms.buildTransformFromOpenProfiles(ImageCms.createProfile('sRGB'),ImageCms.getOpenProfile(str(PROFILE)),'RGB','CMYK',renderingIntent=ImageCms.Intent.RELATIVE_COLORIMETRIC,flags=ImageCms.Flags.BLACKPOINTCOMPENSATION)

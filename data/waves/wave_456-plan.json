@@ -1,0 +1,77 @@
+{
+  "wave": "wave_456",
+  "topic": "snowman",
+  "method": "builtin-image-generation",
+  "research": "data/research/snowman-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "snowman-waving-mitten",
+      "title": "Snowman Waving a Red Mitten",
+      "alt": "Smiling snowman waving a red knitted mitten, wearing a teal cap and chevron scarf with three wooden buttons.",
+      "description": "A raised mitten, tilted pom-pom cap and curved twig arm give this round snowman a friendly greeting pose.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_456/source/snowman-waving-mitten.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-bird-feeder",
+      "title": "Snowman Feeding a Cardinal",
+      "alt": "Tall snowman in a green earflap hat holding a wooden seed tray with a red cardinal perched on its edge.",
+      "description": "The snowman looks toward the small red bird while holding a seed-filled tray with both branch arms.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_456/source/snowman-bird-feeder.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-sled-downhill",
+      "title": "Snowman Riding a Red Sled",
+      "alt": "Laughing snowman in a purple pom-pom hat and cream scarf seated on a red sled with both twig arms raised.",
+      "description": "Rounded snow feet rest on the sled while the character leans back with an open smile and lifted arms.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_456/source/snowman-sled-downhill.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-mailbox-delivery",
+      "title": "Snowman Posting a Letter",
+      "alt": "Snowman in a red wool cap and scarf placing an envelope in a blue mailbox, with a brown satchel at its side.",
+      "description": "A branch hand reaches into the open mailbox as the other arm rests beside the shoulder bag.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_456/source/snowman-mailbox-delivery.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-skating-spin",
+      "title": "Snowman Gliding on Ice Skates",
+      "alt": "Slender snowman in a green beanie and orange striped scarf balancing on one skate with the other leg raised behind.",
+      "description": "Outstretched twig arms and a trailing scarf emphasize the sweeping skating pose.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_456/source/snowman-skating-spin.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "snowman-book-reader",
+      "title": "Snowman Reading a Blue Book",
+      "alt": "Seated snowman with round spectacles and a burgundy beret holding an open blue book above a red heart button.",
+      "description": "The round-eyed reader sits with two snow feet forward and both branch hands holding the book covers.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_456/source/snowman-book-reader.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

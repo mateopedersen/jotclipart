@@ -1,0 +1,77 @@
+{
+  "wave": "wave_500",
+  "topic": "blessings",
+  "method": "builtin-image-generation",
+  "research": "data/research/blessings-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "blessings-count-your-blessings-wreath",
+      "title": "Count Your Blessings Autumn Wreath",
+      "alt": "Cream \u201cCOUNT YOUR BLESSINGS\u201d lettering crosses dark-teal ribbons within a wheat and autumn-leaf wreath.",
+      "description": "A single sunflower brightens the right side of the open oval, with curled gold ribbon edges separating the two lines of text.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_500/source/blessings-count-your-blessings-wreath.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-blessed-porcelain-cup",
+      "title": "Blessed Floral Teacup on Books",
+      "alt": "A blue-and-white floral teacup marked \u201cBLESSED\u201d rests on two closed books beside a silver spoon.",
+      "description": "Cobalt flowers wrap the gold-rimmed cup above navy and cream cloth covers with blank spines.",
+      "color": "Blue",
+      "style": "Color",
+      "source": "work/production/wave_500/source/blessings-blessed-porcelain-cup.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-thankful-grateful-blessed-tags",
+      "title": "Thankful, Grateful and Blessed Gift Tags",
+      "alt": "Three botanical gift tags reading \u201cTHANKFUL,\u201d \u201cGRATEFUL\u201d and \u201cBLESSED\u201d hang from a copper-colored ring.",
+      "description": "Round cream, pointed burgundy and scalloped sage shapes give each word its own paper silhouette and floral decoration.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_500/source/blessings-thankful-grateful-blessed-tags.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-god-bless-you-medallion",
+      "title": "God Bless You Gold and Navy Medallion",
+      "alt": "Gold \u201cGOD BLESS YOU\u201d lettering fills a navy circular medallion bordered by olive branches and fine rays.",
+      "description": "The raised serif letters and complete gold rim form a formal round greeting graphic with an evenly balanced central stack.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_500/source/blessings-god-bless-you-medallion.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-bless-this-home-plaque",
+      "title": "Bless This Home Hydrangea Plaque",
+      "alt": "An ivory plaque reading \u201cBLESS THIS HOME\u201d is framed by blue hydrangeas with a small brass key hanging below.",
+      "description": "Gold edging follows the rounded plaque outline, while green leaves and little blue flower buds soften its sides.",
+      "color": "Blue",
+      "style": "Color",
+      "source": "work/production/wave_500/source/blessings-bless-this-home-plaque.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-autumn-blessings-wagon",
+      "title": "Autumn Blessings Pumpkin Wagon",
+      "alt": "A wooden wagon carries orange pumpkins and red flowers beneath a rust banner reading \u201cAUTUMN BLESSINGS.\u201d",
+      "description": "Metal corner brackets, full spoked wheels and a raised pull handle give the low harvest cart a sturdy silhouette.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_500/source/blessings-autumn-blessings-wagon.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

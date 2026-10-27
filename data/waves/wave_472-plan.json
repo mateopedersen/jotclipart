@@ -1,0 +1,81 @@
+{
+  "wave": "wave_472",
+  "topic": "gingerbread",
+  "method": "builtin-image-generation",
+  "research": "data/research/gingerbread-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "gingerbread-cookie-cutter-dough",
+      "title": "Gingerbread Dough with a Star Cutter",
+      "alt": "Rolled brown gingerbread dough with a clean star-shaped opening and a metal star cutter beside it.",
+      "description": "A light dusting of flour stays within the irregular dough shape around the empty cutout.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_472/source/gingerbread-cookie-cutter-dough.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-gingerbread-door-wreath",
+      "title": "Gingerbread Cookie Wreath",
+      "alt": "Round wreath of iced star, heart and house cookies with holly leaves, red berries and a large sage green bow.",
+      "description": "The cookies overlap around an open center, with long ribbon tails hanging beneath the top bow.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_472/source/gingerbread-gingerbread-door-wreath.png",
+      "printMaxEdgePx": 950,
+      "alphaCompression": "zopfli",
+      "jpeg2000Resolutions": 6
+    },
+    {
+      "id": "gingerbread-sweet-holidays-lettering",
+      "title": "Sweet Holidays Gingerbread Lettering",
+      "alt": "Smiling gingerbread letters spelling Sweet Holidays in two rows, edged with white icing and dotted with red and green candy.",
+      "description": "Tiny cookie arms and feet animate the letters, with a small smiling star at the end of the top row.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_472/source/gingerbread-sweet-holidays-lettering.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-outline-gingerbread-kite",
+      "title": "Gingerbread Flying a Star Kite Outline",
+      "alt": "Black-and-white gingerbread character in a striped cap flying a star-shaped kite with a bow-tailed string.",
+      "description": "Three heart buttons and scalloped icing cuffs decorate the one-legged skipping pose.",
+      "color": "Black and White",
+      "style": "Outline",
+      "source": "work/production/wave_472/source/gingerbread-outline-gingerbread-kite.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    },
+    {
+      "id": "gingerbread-outline-gingerbread-house-book",
+      "title": "Gingerbread Castle Pop-Up Book Outline",
+      "alt": "Black-and-white open book with a two-towered gingerbread castle rising from its pages.",
+      "description": "Striped candy columns, heart decorations and iced battlements frame the arched castle door.",
+      "color": "Black and White",
+      "style": "Outline",
+      "source": "work/production/wave_472/source/gingerbread-outline-gingerbread-house-book.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    },
+    {
+      "id": "gingerbread-outline-gingerbread-bicycle",
+      "title": "Gingerbread Riding a Bicycle Outline",
+      "alt": "Black-and-white gingerbread character in a pom-pom cap and dotted vest riding a small bicycle.",
+      "description": "Both cookie hands meet the handlebars, with bent legs positioned over the pedals between the full wheels.",
+      "color": "Black and White",
+      "style": "Outline",
+      "source": "work/production/wave_472/source/gingerbread-outline-gingerbread-bicycle.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk"
+    }
+  ]
+}

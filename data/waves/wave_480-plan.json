@@ -1,0 +1,78 @@
+{
+  "wave": "wave_480",
+  "topic": "2027",
+  "collectionTarget": 100,
+  "method": "builtin-image-generation",
+  "research": "data/research/2027-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "2027-growth-sapling",
+      "title": "Grow in 2027 Seedling",
+      "alt": "Green seedling in a terracotta pot below Grow in lettering, with a cream 2027 plant label in the soil.",
+      "description": "Two broad leaves rise between the gold-edged green words and the softly rounded pot rim.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_480/source/2027-growth-sapling.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-coffee-goals",
+      "title": "Coffee and Goals 2027",
+      "alt": "Navy-and-gold Coffee and Goals lettering above a frothy coffee cup, matching saucer and journal labeled 2027.",
+      "description": "A gold spoon crosses the foreground beneath the cup's full handle and the closed book's ribbon bookmark.",
+      "color": "Navy",
+      "style": "Color",
+      "source": "work/production/wave_480/source/2027-coffee-goals.png",
+      "printMaxEdgePx": 950,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-creative-palette",
+      "title": "Create More in 2027 Paint Palette",
+      "alt": "Wooden artist palette with five colored paint wells, a full paintbrush and Create More in 2027 lettering.",
+      "description": "The colorful year follows the wood grain below the cream brush lettering, beside the open thumb hole.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_480/source/2027-creative-palette.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-fresh-start-sailboat",
+      "title": "Fresh Start 2027 Sailboat",
+      "alt": "Ivory-and-teal sailboat with 2027 printed on its main sail and a Fresh Start ribbon beneath the wooden hull.",
+      "description": "Gold mast fittings and fine rigging frame the sails above a small blue wave at the base.",
+      "color": "Teal",
+      "style": "Color",
+      "source": "work/production/wave_480/source/2027-fresh-start-sailboat.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-graduation-cap",
+      "title": "Class of 2027 with Cap and Diploma",
+      "alt": "Navy-and-gold Class of 2027 lettering beneath a mortarboard and rolled diploma, framed by teal laurel sprigs.",
+      "description": "The bold varsity numerals sit within a broad open wreath below the cream diploma and full gold tassel.",
+      "color": "Navy",
+      "style": "Color",
+      "source": "work/production/wave_480/source/2027-graduation-cap.png",
+      "printMaxEdgePx": 900,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-senior-ribbon",
+      "title": "Senior 2027 Burgundy Ribbon",
+      "alt": "Cream varsity Senior 2027 lettering across a long folded burgundy ribbon with gold edging.",
+      "description": "Three small gold stars and one hanging tassel finish the curled right end of the full ribbon.",
+      "color": "Burgundy",
+      "style": "Color",
+      "source": "work/production/wave_480/source/2027-senior-ribbon.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

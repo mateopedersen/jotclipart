@@ -1,0 +1,77 @@
+{
+  "wave": "wave_504",
+  "topic": "blessings",
+  "method": "builtin-image-generation",
+  "research": "data/research/blessings-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "blessings-open-bible-and-cross",
+      "title": "Open Bible with a Wooden Cross",
+      "alt": "A wooden cross rests on the blank cream pages of an open blue-covered Bible with a red ribbon bookmark.",
+      "description": "Thick layered page edges and two pointed ribbon tails frame the simple devotional still life.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_504/source/blessings-open-bible-and-cross.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-child-prayer-box-craft",
+      "title": "Child Decorating a Prayer Box",
+      "alt": "A curly-haired cartoon child in yellow glasses decorates a wooden cross-marked box on a small stool.",
+      "description": "A denim apron, star cutouts, blue scissors and a glue bottle distinguish the hands-on craft scene.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_504/source/blessings-child-prayer-box-craft.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-standing-woman-prayer",
+      "title": "Older Woman Praying Beside Violets",
+      "alt": "A smiling cartoon older woman with a silver bun and oval glasses stands with clasped hands beside a pot of purple flowers.",
+      "description": "Her teal cardigan, long floral skirt and brown ankle boots create a complete, distinct standing character.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_504/source/blessings-standing-woman-prayer.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-dove-olive-branch",
+      "title": "Blessings Dove with an Olive Branch",
+      "alt": "A white dove with raised wings carries an olive branch above a gold \u201cBLESSINGS\u201d ribbon.",
+      "description": "Layered flight feathers, tucked pink feet and green olives give the complete bird clear detail against the open background.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_504/source/blessings-dove-olive-branch.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-hands-catching-heart-letter",
+      "title": "Blessings Envelope with Hearts and Open Hands",
+      "alt": "Two open hands support an envelope marked \u201cBLESSINGS\u201d as red and pink hearts rise above it.",
+      "description": "Blue and pink knitted cuffs frame the cream envelope, which closes with a red heart-shaped wax seal.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_504/source/blessings-hands-catching-heart-letter.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-little-angel-harp",
+      "title": "Little Angel Playing a Gold Harp",
+      "alt": "A curly-haired cartoon angel in a cream robe holds a small gold harp with both hands.",
+      "description": "Soft feathered wings, a star hair clip and bare feet frame the smiling fantasy character\u2019s full figure.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_504/source/blessings-little-angel-harp.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

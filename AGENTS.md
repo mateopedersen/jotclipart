@@ -346,3 +346,130 @@ The separate `fix/artwork-editorial-quality` branch is implementing the shared s
 ## Supplied Tesla and commerce batch — 2026-10-27
 
 The owner explicitly authorized inspection, repair and live publication of eleven supplied 50-pair archives. Read `docs/content/tesla-commerce-import.md` and `work/imports/tesla-commerce-550/local-state.json` before resuming. No new drawing is authorized. The two Cybercab spellings share one canonical collection; Optimus is identified at family level, while three visibly generic robots belong to Robot. Preserve exact original files and their actual PDF print dimensions/densities. Short source-specific copy and the current image hashes must pass the shared editorial validator. The existing editorial registry is normalized to the coordinated array format without dropping concurrent reviews; future importers must preserve that format. The finite 13,004-entry legacy ledger is reused unchanged, never extended, and never called a fresh visual review. All later or changed images/metadata require real source-bound reviews in every topic. Future new topic inventories also require concise source-bound introductions in `data/editorial/*-collection.json` or the shared collection registry. Existing legacy prose is not bulk rewritten in this integration. Recheck main before promotion and preserve concurrently accepted collections. Call the batch live only after matching the successful production revision and real deployment receipt. The paused 134 Marvel drawings remain separate.
+
+## Image-specific English metadata — owner standard, 2026-10-26
+
+Inspect each actual source image before writing its title/H1, alt text and description. Write natural, meaningful English about that image's visible subject, action, composition and distinguishing details. Turning a filename into a sentence or repeating the same usage/download paragraph across artworks is not acceptable. Do not reuse: "Download the transparent WebP for a digital layout, or choose the matching PDF for printing."
+
+Use **Image** for the user-facing image-download action. Preserve the real file format, extension, MIME type, download URL, checksums and technical metadata. Do not invent unseen details, exact product models, human-authorship claims, credentials or other E-E-A-T evidence. Branded identity still requires inspection against official sources and a review bound to the source SHA-256; changing the source invalidates that review. Apply this standard to every future generation and import.
+
+### Editorial review registry and migration guard — 2026-10-26
+
+Reference implementation: `fix/artwork-editorial-quality` in
+`/Users/melihozcan/Documents/Codex/2026-10-20/https-koledar365-si-datumski-kalkulator-https-4/work/ultraclipart-discovery`;
+read `docs/content/artwork-editorial.md` and `scripts/artwork-editorial.mjs`.
+At this handoff it was not yet published. Check its current integration state
+before using it; do not claim that this checkout already has the build gate.
+
+Future imports and changed entries require real image inspection and a matching
+`data/editorial/reviews.json` record: image-specific copy, at least two actual
+visual observations, source/rendered-image hashes, incoming metadata hash,
+review date and necessary official references. Use `reviewed-from-image` only
+after viewing the image. Source or metadata changes invalidate the old review.
+
+The single public-copy resolver is the shared authority for published text.
+Preserve accepted source files, stable IDs/URLs and technical metadata.
+Automatic removal of known boilerplate is not a visual or semantic review.
+Do not append Image/PDF instructions to artwork descriptions or replace
+image-specific writing with category-wide paragraphs.
+
+`data/editorial/legacy-baseline.json` fingerprints the 13,004 pre-existing
+records at the referenced migration; it does not certify a new visual review.
+Never add new IDs or refresh changed fingerprints to bypass the gate.
+Replace legacy coverage with genuine image reviews as work is completed.
+An automated `content:audit` pass must not be reported as a full visual review.
+
+This handoff records the standard only. The originating chat is handling the
+catalog cleanup; do not bulk-rewrite its catalog files concurrently or start
+a separate publication because of this notification.
+
+## Short, specific topic introductions — owner standard, 2026-10-26
+
+For every category, topic and clipart collection, write a short, original,
+direct introduction grounded in its actual drawings and what helps visitors
+choose among them. Do not reuse one paragraph with only the topic name changed.
+Do not restore long SEO, usage or technical explanation blocks such as the
+previous Sunflower copy. Do not impose word-count targets for ranking or treat
+E-E-A-T as a separate numeric score; prioritize accurate, useful information.
+
+Keep repeated Image/PDF download instructions, CMYK/ICC/300 PPI explanations,
+licensing paragraphs and editor tutorials out of topic introductions. Preserve
+necessary format facts, technical information, license restrictions and tool
+instructions in their dedicated file, guide, license or help areas.
+
+The originating `fix/artwork-editorial-quality` branch is migrating existing
+topic pages to one shared short-copy layer. Future topics and imports must use
+that same editorial validation; check its current integration state and
+documented interface rather than inventing another template or assuming the
+gate is already installed here. This notice authorizes recording the standard,
+not concurrent bulk catalog edits or a separate release.
+# Audience coverage and cute artwork — owner direction, 2026-10-27
+
+Before starting each keyword, plan its useful audiences and applications: children,
+teachers, families, adult makers and designers where appropriate. Include friendly,
+age-appropriate cute compositions when the subject supports them, alongside other
+relevant styles and practical uses. Do not assume one aesthetic serves everyone.
+For the current Elf collection, include distinctly cute characters and playful
+children's activities as well as the existing workshop and woodland scenes.
+Cute characters still need different faces, hair, clothing, palettes, silhouettes
+and independent compositions; one big-eyed base with recolors does not qualify.
+Inspect actual images before writing age, character, action or visual details.
+
+## Elf correction and reusable clipart intent — latest owner direction, 2026-10-27
+
+This supersedes the earlier broad Elf workshop/woodland aesthetic. Elf must read
+immediately as a cute CHRISTMAS ELF: green dominant clothing, floppy pointed cap,
+large outward-pointed ears, oversized expressive eyes, a small rounded face and a
+short toy-like cartoon body. Favor soft 3D cartoon, with complementary clean 2D
+cartoon designs. Do not publish realistic human workers with pointed ears. The
+owner rejected the first 36 private Elf sources; they are excluded under
+`work/production/elf-held/rejected-direction-v1/` and count zero. Replacements
+retain generated artwork IDs and never add another original for the same slot.
+Green outfits still need different cuts, hats, trims, faces, hairstyles, gestures,
+silhouettes and independent compositions. The reference character is not a base
+to recolor or copy. Inspect each corrected source and invalidate old copy reviews.
+
+For every future keyword, examine Google Images for the intended SUBJECT,
+recognizable character conventions, dominant illustration language and likely
+uses. Plan clear, isolated, reusable graphics that remain readable at thumbnail
+size. Do not turn a character keyword into generic realistic people or infer
+visual facts from the prompt. Style remains subject-specific; preserve accurate
+depiction for technical/branded products and the owner's accepted references.
+
+## Match the audience and purpose — latest owner direction, 2026-10-27
+
+Do not make every collection uniformly cute. Plan distinct, useful visual styles
+for children, teenagers, adults, professional/business use and sticker layouts
+when relevant to the subject. Cute mascots suit the children's portion; high
+school and university graduation graphics also need mature typography, restrained
+palettes, varsity lettering and clear cap/diploma compositions. Preserve accurate
+subject conventions while choosing an age-appropriate design language. The 2027
+collection now has an explicit owner-approved target of 100 independent artworks
+(100 PDFs and 100 WebPs), including Welcome/Happy New Year messages, personal-year
+motivation, graduation, business, stickers and dimensional embossed numerals.
+The owner requested production and publication of this priority collection after
+Gingerbread before resuming the remaining original queue. Existing accepted or
+staged designs are preserved; do not treat style or color variations as new IDs.
+
+The 2027 collection must include all twelve month names with the year 2027.
+Keep the owner-approved total at 100 by substituting unproduced planned slots;
+preserve existing sources. Each month needs its own useful visual composition,
+not the same base with a different month label. Review spelling and year digits
+from the actual image. Decorative monthly headings do not require date grids.
+
+Owner reaffirmed topic-specific writing on 2026-10-27: research the actual
+keyword intent before production, and write each collection heading and short
+introduction from its inspected inventory. Do not swap a keyword into generic
+prose. Keep individual image copy grounded in that image's visible details.
+
+## Feast subject emphasis — owner steering, 2026-10-27
+
+The Feast collection needs many turkey-centered festive meal compositions.
+Research Thanksgiving feast imagery and develop different shared tables,
+serving actions, food arrangements, buffet formats and family scenes. Compare
+the existing roast platter, turkey pan, carved slices and single drumstick first.
+Do not reuse one bird base or fill the collection with platter recolors. Existing
+accepted source designs remain; vary new composition, purpose and characters.
+The owner also authorized continued original-list production while the shared
+transfer runs; 2027 keeps publication priority as soon as that transition is ready.
+

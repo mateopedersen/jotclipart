@@ -1,0 +1,59 @@
+{
+  "wave": "wave_490",
+  "topic": "2027",
+  "collectionTarget": 100,
+  "method": "builtin-image-generation",
+  "research": "data/research/2027-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "2027-outline-goals",
+      "title": "My 2027 Goals Journal Coloring",
+      "alt": "An open journal displays My 2027 Goals above three empty star checkboxes and writing lines in black and white.",
+      "description": "Layered page edges, small hearts and a stitched ribbon bookmark frame the blank goal space across the spread.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_490/source/2027-outline-goals.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    },
+    {
+      "id": "2027-outline-kite-hope",
+      "title": "Hope in 2027 Mouse and Kite Coloring",
+      "alt": "A smiling mouse holds a heart-shaped kite labeled Hope in 2027 in a black-and-white coloring illustration.",
+      "description": "The mouse\u2019s large ears and long curved tail balance the tall kite, whose string is decorated with small bows.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_490/source/2027-outline-kite-hope.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    },
+    {
+      "id": "2027-outline-party-crown",
+      "title": "2027 Crown and Party Horn Coloring",
+      "alt": "A tall pointed party crown marked 2027 sits beside a striped horn and two hanging stars in black and white.",
+      "description": "Rounded tips, inset stars and simple decorative bursts create clear coloring spaces across the crown\u2019s wide band.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_490/source/2027-outline-party-crown.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    },
+    {
+      "id": "2027-welcome-door-mat",
+      "title": "Welcome 2027 Navy and Gold Mat",
+      "alt": "A navy semicircular mat displays Welcome 2027 in cream and gold lettering framed by leafy sprigs and a small rising sun.",
+      "description": "Fine fabric texture and a double gold border give the curved welcome graphic a restrained decorative finish.",
+      "color": "Blue",
+      "style": "Color",
+      "source": "work/production/wave_490/source/2027-welcome-door-mat.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

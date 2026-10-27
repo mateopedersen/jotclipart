@@ -1,0 +1,487 @@
+{
+  "wave": "wave_461",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "snowman-heart-embrace",
+      "title": "Snowman Pair Holding a Knitted Heart",
+      "alt": "Two smiling snowmen, one in a black top hat and gold scarf and the other in a purple bonnet, holding a red knitted heart.",
+      "description": "The taller figure leans toward its smaller companion, whose ruffled bonnet is decorated with pale flowers and red berries.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_461/source/snowman-heart-embrace.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "6134f5716b20f77fe6345e2093790514e399fd6163dfe3094a68abe332aefa63",
+      "inputSignature": "4f567d00594c6adba875905f355c785b13c61bd0e80e834e7136ac4348158571",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 635082,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 635082,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        273,
+        11,
+        1178,
+        984
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_461/exports/snowman-heart-embrace.pdf",
+          "bytes": 635082,
+          "sha256": "bf78f5639b8dc79d0cf69cf695922767e673ac3912faf50d03c6b20f0df46e03"
+        },
+        "webp": {
+          "path": "work/production/wave_461/exports/snowman-heart-embrace.webp",
+          "bytes": 1170576,
+          "sha256": "a93c12d082e2ef924cee26b6f7f6b0ad519971fbdd5f89d7434484da82d9bce0"
+        },
+        "thumb": {
+          "path": "work/production/wave_461/exports/snowman-heart-embrace-thumb.webp",
+          "bytes": 33816,
+          "sha256": "49f4d84e228fa2ba59ffbc457a11accf019c8223703d2594e8d2e28cc777dd47"
+        }
+      },
+      "proofSha256": "c431ae835e01c9c03909c23aa68f41b37a27aadcc91605e0adfa51fe3d03de8b",
+      "pairMeanRgbDifference": 3.25926
+    },
+    {
+      "id": "snowman-winter-welcome-sign",
+      "title": "Snowman Above a Blank Winter Sign",
+      "alt": "Small snowman in a blue pom-pom hat and red scarf waving above a blank wooden sign bordered with snow, pine sprigs and berries.",
+      "description": "The broad unlettered wood panel leaves room for a short message, with pinecones and red berries beneath it.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_461/source/snowman-winter-welcome-sign.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "a59932d26faf7108400cb31ea39b25804784277b1e71b2ebdedb215e6320613d",
+      "inputSignature": "a304b91a7aaf0874258989918cadafef781b59c2b18bd58e66e49475b70aaaa7",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 744495,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 744495,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        246,
+        82,
+        1292,
+        949
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_461/exports/snowman-winter-welcome-sign.pdf",
+          "bytes": 744495,
+          "sha256": "de981f6bc44c1125df9e1bcc6e43aadf7ea1d3795352655fb9cd7e31815dc12c"
+        },
+        "webp": {
+          "path": "work/production/wave_461/exports/snowman-winter-welcome-sign.webp",
+          "bytes": 1273516,
+          "sha256": "4037b84cc6d448181348a25989f7186c4344f285a7e233987531bda867b58770"
+        },
+        "thumb": {
+          "path": "work/production/wave_461/exports/snowman-winter-welcome-sign-thumb.webp",
+          "bytes": 38588,
+          "sha256": "8c1e7e673714a1c61f534ac7cffb3cf9332c7f3f758091e61902c11082c1672a"
+        }
+      },
+      "proofSha256": "f1238ccb79e80f4dfb355c9d9187b11f22116a7780fa6aafc18a0da4555a8b00",
+      "pairMeanRgbDifference": 2.97183
+    },
+    {
+      "id": "snowman-snowman-head-wreath",
+      "title": "Snowman Face in a Pine and Berry Wreath",
+      "alt": "Smiling blue-eyed snowman face in a long red knitted cap, framed by pine needles, blue berries and pinecones.",
+      "description": "The curved greenery follows the lower face while the long snowflake-patterned cap falls to one side.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_461/source/snowman-snowman-head-wreath.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "9a9ae78a770445f3348da8d9088b4cdc9be7efbaf731d2b37de180023742f7a5",
+      "inputSignature": "cdcbcc43dca9ea499956cecfaef8eae5d4dc54a2a8b5a8de86dfec66730c2405",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 846134,
+        "weightedCmykRmse": 0.773554
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1036094,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 846134,
+          "weightedCmykRmse": 0.773554
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        213,
+        23,
+        1324,
+        998
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_461/exports/snowman-snowman-head-wreath.pdf",
+          "bytes": 846134,
+          "sha256": "d38814137021f553ea78849a6a161466a43c69606d34c1b095a423b12b348e6e"
+        },
+        "webp": {
+          "path": "work/production/wave_461/exports/snowman-snowman-head-wreath.webp",
+          "bytes": 1613512,
+          "sha256": "0bd8aa61815e7831ae98bbca687d368286f571c6a87172823f45317de8b574f7"
+        },
+        "thumb": {
+          "path": "work/production/wave_461/exports/snowman-snowman-head-wreath-thumb.webp",
+          "bytes": 56720,
+          "sha256": "9fea85e3cba2955686c61844970c2757e6094e0836e6d6d8fa772496e64219c1"
+        }
+      },
+      "proofSha256": "0c64dc2a6bdae683e339ba66b0ea903e0c80fc93cdc6d274c14f53ab717bdaa4",
+      "pairMeanRgbDifference": 5.81591
+    },
+    {
+      "id": "snowman-snowman-postbox",
+      "title": "Snowman-Shaped Red Postbox",
+      "alt": "Red snowman-shaped postbox with a green postal cap, striped scarf, twig arms and a snowflake-decorated mail door.",
+      "description": "A dark horizontal mail slot and brass-colored fittings sit beneath the smiling carrot-nosed head.",
+      "color": "Red",
+      "style": "Color",
+      "source": "work/production/wave_461/source/snowman-snowman-postbox.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "ccd09f6a355c64f832e0c285f0e2b1242551e328f324a7965736d50a72414e4e",
+      "inputSignature": "6b28d82e6b084d3e4e849c9df44ac9fb47f9556fdc90f99295c00e1b51429bfd",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 572531,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 572531,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        335,
+        12,
+        1203,
+        1002
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_461/exports/snowman-snowman-postbox.pdf",
+          "bytes": 572531,
+          "sha256": "b01d4899ad907808aaa1dce3077a0c283dc04b5aa20fd0469b439405d34b652f"
+        },
+        "webp": {
+          "path": "work/production/wave_461/exports/snowman-snowman-postbox.webp",
+          "bytes": 1082232,
+          "sha256": "37cfc8390a178d62980c396c6508ca0de468f1360877b015cb16fae6b42c01cd"
+        },
+        "thumb": {
+          "path": "work/production/wave_461/exports/snowman-snowman-postbox-thumb.webp",
+          "bytes": 28974,
+          "sha256": "3636c49813f4614c0e797483601e1f2c4dbe10c610fe83429dea04a652b0610b"
+        }
+      },
+      "proofSha256": "ce5d3b9b0d549328c2de801ba40cf026a53c662154f475804d6bef56b8705565",
+      "pairMeanRgbDifference": 3.83582
+    },
+    {
+      "id": "snowman-snowman-cookie",
+      "title": "Snowman Cookie with Teal Icing Hat",
+      "alt": "Snowman-shaped cookie decorated with white icing, a teal hat, purple snowflake scarf and three gold buttons.",
+      "description": "The golden cookie edge outlines the rounded body and branch-shaped arms, with a white pom-pom at the end of the hat.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_461/source/snowman-snowman-cookie.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "51059375afb486fdd47051facc3e4468ec9d034bf0b12cf50dc8fd0ec3329218",
+      "inputSignature": "ee7459380002a189bf10c23192cd443ceed88bfb1eac6e4050bd43932aadc18e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 536303,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 536303,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        354,
+        49,
+        1178,
+        982
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_461/exports/snowman-snowman-cookie.pdf",
+          "bytes": 536303,
+          "sha256": "409a7113155d15c79b33b9ae0f42d37f050ae49e1955c3c2a9af13f43f1984c4"
+        },
+        "webp": {
+          "path": "work/production/wave_461/exports/snowman-snowman-cookie.webp",
+          "bytes": 1015800,
+          "sha256": "126f0833e4324992a092e7f156c2bda545a35cfcd2f0b65eb0c19bfb18dbf33e"
+        },
+        "thumb": {
+          "path": "work/production/wave_461/exports/snowman-snowman-cookie-thumb.webp",
+          "bytes": 30074,
+          "sha256": "d515d6157eca795b8f5feb32239a7271d7823a3fee32a146a38f2792f6ee8726"
+        }
+      },
+      "proofSha256": "78688c7593a315679b0c8c161b395d0087ac2668b5b77edd955f886ed5ee602f",
+      "pairMeanRgbDifference": 3.51309
+    },
+    {
+      "id": "snowman-snowman-candle",
+      "title": "Snowman Candle with Green Scarf",
+      "alt": "White snowman candle with an unlit wick above a black top hat, green scarf, twig arms and coal buttons.",
+      "description": "A small holly decoration rests on the hatband, and the cream-colored wick remains fully visible.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_461/source/snowman-snowman-candle.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "f9b4b1674e148fd999ec56e9a88753562401e9511158bca6d677c5810800b9b2",
+      "inputSignature": "2fe4b485fa7873582c41f4f5cceb4b58844f9c1e71aad4af47111e54229e1e80",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 313211,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 313211,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        462,
+        29,
+        1071,
+        978
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_461/exports/snowman-snowman-candle.pdf",
+          "bytes": 313211,
+          "sha256": "1b576c8eebe68211b2ad24c04a1d22ca08798e522d14cdf613c625bb906ef799"
+        },
+        "webp": {
+          "path": "work/production/wave_461/exports/snowman-snowman-candle.webp",
+          "bytes": 730284,
+          "sha256": "09832ab07cd9370e7d1c44638e7db11fb5dfd012069ac2dc2280bd87011f9d93"
+        },
+        "thumb": {
+          "path": "work/production/wave_461/exports/snowman-snowman-candle-thumb.webp",
+          "bytes": 17784,
+          "sha256": "348d37ff360d9bc0fa2a4c21003e49d5647c6fc208c7e356a69d5bfc69f7ea8f"
+        }
+      },
+      "proofSha256": "1bce9c1536db1952694e587b68044aba138cd0ee8537981c7ee1cefff9d2937d",
+      "pairMeanRgbDifference": 1.45952
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T09:22:11.439824+00:00",
+  "screenReviewEvidence": "work/production/wave_461/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T09:22:13.617Z"
+}

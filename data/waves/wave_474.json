@@ -1,0 +1,515 @@
+{
+  "wave": "wave_474",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "2027-foil-balloon-bouquet",
+      "title": "Gold 2027 Number Balloons",
+      "alt": "Four gold foil balloons spelling 2027, each tied with a teal bow, with a round navy balloon behind the final seven.",
+      "description": "Crimped foil edges and curled gold ribbons give the clear number row a festive dimensional finish.",
+      "color": "Gold",
+      "style": "Color",
+      "source": "work/production/wave_474/source/2027-foil-balloon-bouquet.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "52385697632abff9e9d3cd8762859686a08536e08cd48d143c16184a895470f5",
+      "inputSignature": "1402ed63c4db76ec755b61b4d7902a41b539fbc742818c74441cc2d8deabfd27",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 943565,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 943565,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        47,
+        108,
+        1515,
+        957
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_474/exports/2027-foil-balloon-bouquet.pdf",
+          "bytes": 943565,
+          "sha256": "27ec4a6e4e4c04a3bc021f0d5d2816583782f9a82610595bd6fb990e2359876c"
+        },
+        "webp": {
+          "path": "work/production/wave_474/exports/2027-foil-balloon-bouquet.webp",
+          "bytes": 1459124,
+          "sha256": "619e0b8208b99ce85b2aed9a68337aab6fc6d4177b8bd78cfe8e73d1f314a118"
+        },
+        "thumb": {
+          "path": "work/production/wave_474/exports/2027-foil-balloon-bouquet-thumb.webp",
+          "bytes": 57770,
+          "sha256": "1220c07fdd3812381c4788459ea7dd79c0749dde6f5030d5985c1caaacaed204"
+        }
+      },
+      "proofSha256": "b6153998f09212e68ffe49bc1bcdf251a6c9c74dfea81ba23e7e378246f6d24f",
+      "pairMeanRgbDifference": 5.91241
+    },
+    {
+      "id": "2027-midnight-clock-greeting",
+      "title": "Happy New Year 2027 with a Midnight Clock",
+      "alt": "Gold-and-navy Happy New Year 2027 lettering beneath a round Roman-numeral clock with both hands pointing to twelve.",
+      "description": "Gold leafy sprigs flank the dark blue clock above a sweeping navy ribbon under the large year.",
+      "color": "Gold",
+      "style": "Color",
+      "source": "work/production/wave_474/source/2027-midnight-clock-greeting.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1234,
+      "height": 1275,
+      "pdfWidth": 968,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "939d8ddaf3e1311fc95a2420abf24d563a12e712d66a9d8c2a31ea1e7aebbbdb",
+      "inputSignature": "5cc32e1459d9f136118a576408c5cf77b6c501884d14f5676af914f69611bb86",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 50,
+        "losslessCmyk": false,
+        "bytes": 995621,
+        "weightedCmykRmse": 1.021868
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1569041,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1185998,
+          "weightedCmykRmse": 0.735572
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1098704,
+          "weightedCmykRmse": 0.864398
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 995621,
+          "weightedCmykRmse": 1.021868
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        13,
+        35,
+        1220,
+        1226
+      ],
+      "image": {
+        "width": 968,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_474/exports/2027-midnight-clock-greeting.pdf",
+          "bytes": 995621,
+          "sha256": "7df6a5bf279e80098a0de6a5351e7b71005a1225314f600620e47583f1360fac"
+        },
+        "webp": {
+          "path": "work/production/wave_474/exports/2027-midnight-clock-greeting.webp",
+          "bytes": 1449384,
+          "sha256": "d05a81a7ac63fc0846d0110ee2c92e104a6f9595a7393c3eca80b80d76451d52"
+        },
+        "thumb": {
+          "path": "work/production/wave_474/exports/2027-midnight-clock-greeting-thumb.webp",
+          "bytes": 82472,
+          "sha256": "d7474920e23c15bb4dbcbd1f9815635354df002ff74e9674b6b12a585100a824"
+        }
+      },
+      "proofSha256": "5754bd4ed787958993e7ec310f718d98ff29666660e9e9a87b5aa8a73bce3bf2",
+      "pairMeanRgbDifference": 7.5714
+    },
+    {
+      "id": "2027-confetti-popper",
+      "title": "Welcome 2027 Party Popper",
+      "alt": "Bright Welcome 2027 lettering bursting from a striped party popper with curled ribbons, stars and small confetti shapes.",
+      "description": "The multicolored message sits diagonally across the fan of streamers above the red-and-gold cone.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_474/source/2027-confetti-popper.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "86f3ec6aba031c90ca5ca34d05c8a1a206d8ce5248cf7759057ba74d23981776",
+      "inputSignature": "8bdf78444db413f661cf6ed666bc752c32dc50c3a384ae202e0091f0b379eb1f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 853330,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 853330,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        123,
+        55,
+        1441,
+        959
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_474/exports/2027-confetti-popper.pdf",
+          "bytes": 853330,
+          "sha256": "34afaf77005f183dea43c8fa82c6d22eb97ec1fc53eec1deba2b52d4e97dbdb6"
+        },
+        "webp": {
+          "path": "work/production/wave_474/exports/2027-confetti-popper.webp",
+          "bytes": 1469476,
+          "sha256": "c2b514a788e755c2e95b52aaa71bb075ab271edcb1b8c49c6e21e579bcd08ee5"
+        },
+        "thumb": {
+          "path": "work/production/wave_474/exports/2027-confetti-popper-thumb.webp",
+          "bytes": 67298,
+          "sha256": "c1129143b26885a832ee3faf4f3ff1ca55c56a504df5c33b0c979e5cc7f8b14e"
+        }
+      },
+      "proofSha256": "9df621b80115ced07c9483630a420432c7f7566eed5e986ddda07100f3956ec8",
+      "pairMeanRgbDifference": 9.72248
+    },
+    {
+      "id": "2027-firework-lettering",
+      "title": "Hello 2027 with Colorful Fireworks",
+      "alt": "Teal Hello lettering above coral 2027 numerals, crowned by three colorful star-centered firework bursts.",
+      "description": "Gold outlines and small stars connect the pink, teal and purple bursts around the greeting.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_474/source/2027-firework-lettering.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "60f0f6948ac37f6dfb84f7e73dfd71b7d3b1211761c79d46708f70bd8e486879",
+      "inputSignature": "58c0497e32728e9589737a3c4f9031ea8c4f4c8ccdd928d6cc7414b8f266a142",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 877340,
+        "weightedCmykRmse": 0.708457
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1115890,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 877340,
+          "weightedCmykRmse": 0.708457
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        144,
+        21,
+        1394,
+        982
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_474/exports/2027-firework-lettering.pdf",
+          "bytes": 877340,
+          "sha256": "eb289d442b911a43931b481dfc0894457acd596396b6650e57229610ccd71de3"
+        },
+        "webp": {
+          "path": "work/production/wave_474/exports/2027-firework-lettering.webp",
+          "bytes": 1717300,
+          "sha256": "807dc207c47869801b0c76a857dda1be6fb6a24cd03fb892dd6fe5932d807fbf"
+        },
+        "thumb": {
+          "path": "work/production/wave_474/exports/2027-firework-lettering-thumb.webp",
+          "bytes": 86462,
+          "sha256": "ac886d86970d29cf33e0484cda235a4988e4213903aa697248cd14739a506fce"
+        }
+      },
+      "proofSha256": "0c2677f4854cd585b10a1e9a3761aa6ea9a6160562afd5d2ee798a4638486a39",
+      "pairMeanRgbDifference": 9.03547
+    },
+    {
+      "id": "2027-champagne-toast",
+      "title": "Cheers to 2027 Toast",
+      "alt": "Two gold-filled champagne flutes touching above navy-and-gold Cheers to 2027 lettering and a curling gold ribbon.",
+      "description": "The slender glass stems frame the word Cheers while the large year anchors the bottom of the greeting.",
+      "color": "Gold",
+      "style": "Color",
+      "source": "work/production/wave_474/source/2027-champagne-toast.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "b4af744665a19e9a4950432e4221851df65db7a25689c2b11e427d3374252ec0",
+      "inputSignature": "7b27c22be677b417fd449943ae69b0b2b464134fe17b4b87fcb6516be57c175d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 946821,
+        "weightedCmykRmse": 0.843621
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1184625,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 946821,
+          "weightedCmykRmse": 0.843621
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        88,
+        45,
+        1226,
+        1156
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_474/exports/2027-champagne-toast.pdf",
+          "bytes": 946821,
+          "sha256": "44092684320fcd8d5cce37f63b2c46b5773b0e1aec96ffd895022b461ef83c7d"
+        },
+        "webp": {
+          "path": "work/production/wave_474/exports/2027-champagne-toast.webp",
+          "bytes": 1054114,
+          "sha256": "3a64df765fc576d3b899feef99036497e075b1f3e8dd2dec3cb0d5012f0f702a"
+        },
+        "thumb": {
+          "path": "work/production/wave_474/exports/2027-champagne-toast-thumb.webp",
+          "bytes": 74116,
+          "sha256": "9e0b2fc70ffb03cc63dcea8ace550a8c1970fd6c01ef0318a44693a2e1c58440"
+        }
+      },
+      "proofSha256": "ed529c001a2d5d097a2b42dad18b46c2c50d1d6508bf82c2de5fba5c4e6de16a",
+      "pairMeanRgbDifference": 4.49127
+    },
+    {
+      "id": "2027-child-block-tower",
+      "title": "2027 Toy Blocks with a Star",
+      "alt": "Four colorful toy blocks arranged as 20 above 27, beside a smiling yellow star character waving one hand.",
+      "description": "The blue, red, green and yellow blocks form a compact square, with large contrasting numerals for easy reading.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_474/source/2027-child-block-tower.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "9666d93a958ec3af417e6e3dc43ccdd46772982d529960e839df5736450b34eb",
+      "inputSignature": "ca43c5a18d03886cbf6194d908ba5de88d7f503bd78561e6aa0de948d685aff4",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 480478,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 480478,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        252,
+        64,
+        1422,
+        953
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_474/exports/2027-child-block-tower.pdf",
+          "bytes": 480478,
+          "sha256": "aeb652c0dc4b024923c59d36edc1c5fb0e613b92804102c6c9be72330dc90876"
+        },
+        "webp": {
+          "path": "work/production/wave_474/exports/2027-child-block-tower.webp",
+          "bytes": 983796,
+          "sha256": "121da26417773cf10182f5fd6533d21e12746a2e32ff81c9e48bf13a85a0385a"
+        },
+        "thumb": {
+          "path": "work/production/wave_474/exports/2027-child-block-tower-thumb.webp",
+          "bytes": 31044,
+          "sha256": "a7dba2bb6360463ad3b6e9b304f6fb4773403238fdc82bf3f51394e2494affae"
+        }
+      },
+      "proofSha256": "ee746159108ac9cf76c3ba76aee52dc138e546f0367aee91e18236da7c0ab860",
+      "pairMeanRgbDifference": 6.79629
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T12:30:06.752192+00:00",
+  "screenReviewEvidence": "work/production/wave_474/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T12:30:06.986Z"
+}
