@@ -261,7 +261,15 @@ try {
     if (actionName === 'new-shape') {
       await panel('create');
       await page.locator('[data-shape="heart"]').click();
-    } else await action(actionName).click();
+    } else {
+      if (actionName === 'reset' && !(await action('reset').isVisible()))
+        await page
+          .locator('details')
+          .filter({ has: page.locator('[data-action="reset"]') })
+          .locator('summary')
+          .click();
+      await action(actionName).click();
+    }
     const chosen = await state();
     await page.waitForTimeout(850);
     expect(await state()).toEqual(chosen);
