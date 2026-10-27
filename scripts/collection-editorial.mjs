@@ -71,7 +71,12 @@ export function verifyCollectionEditorial(catalog, registry) {
 
 export function readCollectionAudit(root) {
   const read = (path) => JSON.parse(readFileSync(resolve(root, path), 'utf8'));
-  return verifyCollectionEditorial(read('data/art.json'), readCollectionRegistries(root));
+  const report = verifyCollectionEditorial(read('data/art.json'), readCollectionRegistries(root));
+  return {
+    ...report,
+    checkedIntroductions: report.uniqueIntroductions,
+    legacyTopicsAwaitingIntroductionReview: report.topics - report.uniqueIntroductions,
+  };
 }
 
 /** Protect every new topic without rewriting unfinished legacy topic prose. */

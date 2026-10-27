@@ -1504,5 +1504,24 @@
     "sorting-hat",
     "golden-snitch",
     "magic-spell"
+  ],
+  "gingerbread": [
+    "cookie",
+    "elf",
+    "christmas",
+    "snowman"
+  ],
+  "2027": [
+    "countdown",
+    "fireworks",
+    "celebration",
+    "party"
+  ],
+  "feast": [
+    "thanksgiving",
+    "turkey",
+    "cornucopia",
+    "dinner",
+    "family"
   ]
 }
