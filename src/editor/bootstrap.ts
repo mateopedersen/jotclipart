@@ -51,16 +51,18 @@ export function bootstrapEditors() {
     void ensureEditors().catch(() => {});
   };
   const params = new URLSearchParams(location.search);
-  const direct = [
-    'import',
-    'workspace',
-    'editor-tool',
-    'starter',
-    'scene-view',
-    'vector',
-    'text-style',
-    'studio-tool',
-  ].some((key) => params.has(key));
+  const direct =
+    params.get('view') === 'workspace' ||
+    [
+      'import',
+      'workspace',
+      'editor-tool',
+      'starter',
+      'scene-view',
+      'vector',
+      'text-style',
+      'studio-tool',
+    ].some((key) => params.has(key));
   if (root.dataset.creator !== 'true' || direct || !('IntersectionObserver' in window)) start();
   else {
     // The landing page can render before an offscreen Studio loads its tools.
