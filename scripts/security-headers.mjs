@@ -15,7 +15,7 @@ import { assertPagesFileCount, PAGES_FILE_LIMIT } from '../src/lib/pages-limits.
 import { build as bundleWorker } from 'esbuild';
 
 const root = resolve(import.meta.dirname, '..');
-const dist = join(root, 'dist');
+const dist = resolve(root, process.env.UC_SECURITY_BUILD_DIR || 'dist');
 const files = (path) =>
   readdirSync(path, { withFileTypes: true }).flatMap((entry) =>
     entry.isDirectory() ? files(join(path, entry.name)) : [join(path, entry.name)],
