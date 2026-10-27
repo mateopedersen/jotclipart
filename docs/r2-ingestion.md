@@ -92,9 +92,10 @@ Readback reuse holds at most 16 MB of downloaded bytes in memory and requires th
 
 The normal media publisher keeps the complete all-jurisdiction inventory, shared
 account writer lock, 10 TB ceiling and 45-second freshness requirement. If the
-cold Cloudflare REST enumeration cannot complete in time, a complete old census
-can supply bucket and range hints to a temporary authenticated, inventory-only
-Workers session. It must then measure the complete current account again before
+cold Cloudflare REST enumeration cannot complete in time, a validated old bucket
+roster and known local keys can supply range hints to a temporary authenticated,
+inventory-only Workers session. Hints are not a measured inventory or a budget
+reservation. The session must measure the complete current account again before
 any write. Unknown or newly appearing scopes still use the normal enumeration
 path and all missing/denied coverage blocks publication. The session exposes no
 write route and is stopped before the account lock is released.
