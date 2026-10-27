@@ -1,7 +1,7 @@
 // Complete lexicographic ranges, not guessed filename prefixes. Boundaries affect
 // concurrency only: every possible object key belongs to exactly one range.
 const compare = (a, b) => Buffer.compare(Buffer.from(a), Buffer.from(b));
-export function inventoryBoundaries(objects, stride = 2500) {
+export function inventoryBoundaries(objects, stride = 4000) {
   const keys = objects.map((o) => o.key).sort(compare);
   if (new Set(keys).size !== keys.length) throw Error('Duplicate inventory object');
   const bounds = [];

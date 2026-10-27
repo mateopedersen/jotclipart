@@ -115,3 +115,36 @@ test('a second publisher cannot mutate a live private session before acquiring i
     fs.rmSync(directory, { recursive: true, force: true });
   }
 });
+test('transient inventory failures reduce page size while 403 stops without retry', async () => {
+  const { createSignedInventoryFetch } = await import('../scripts/delivery/inventory-fetch.mjs');
+  const calls = [];
+  const read = createSignedInventoryFetch({
+    secret: 'a'.repeat(64),
+    wait: async () => {},
+    fetcher: async (url, init) => {
+      const command = JSON.parse(init.body).command;
+      calls.push(command);
+      return calls.length === 1
+        ? new Response('busy', { status: 503 })
+        : Response.json({ IsTruncated: false, Contents: [{ Key: 'actual', Size: 9 }] });
+    },
+  });
+  const result = await read({ bucket: 'media', jurisdiction: 'default', cursor: 'same-scope' });
+  assert.deepEqual(
+    calls.map((c) => c.limit),
+    [1000, 500],
+  );
+  assert.equal(calls[1].cursor, 'same-scope');
+  assert.equal(result.Contents[0].Size, 9);
+  let forbidden = 0;
+  const denied = createSignedInventoryFetch({
+    secret: 'a'.repeat(64),
+    wait: async () => {},
+    fetcher: async () => {
+      forbidden++;
+      return new Response('denied', { status: 403 });
+    },
+  });
+  await assert.rejects(denied({ bucket: 'media', jurisdiction: 'default' }), /refused: 403/);
+  assert.equal(forbidden, 1);
+});

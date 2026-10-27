@@ -15,6 +15,7 @@ import { setTimeout as wait } from 'node:timers/promises';
 import { collectDeliveryFiles, merkle } from './manifest.mjs';
 import { measureReservation } from './storage-reservation.mjs';
 import { releaseRevision } from '../release-revision.mjs';
+import { createSignedInventoryFetch } from './inventory-fetch.mjs';
 import { createBoundInventoryReader } from './inventory-reader.mjs';
 import { acquireAccountWriter } from './account-lock.mjs';
 const root = process.cwd(),
@@ -95,6 +96,7 @@ async function main() {
       leasePromise,
       cursor = 0,
       completed = done.size,
+      nextProgress = (Math.floor(done.size / 200) + 1) * 200,
       failed = false,
       remoteReady = false;
     async function reservation(force = false) {
@@ -109,30 +111,7 @@ async function main() {
             remoteReady
               ? createBoundInventoryReader({
                   buckets: inventoryBuckets,
-                  fetchPage: async (command) => {
-                    const payload = { ...command, action: 'list', at: Date.now() };
-                    const signature = createHmac('sha256', Buffer.from(secret, 'hex'))
-                      .update(JSON.stringify(payload))
-                      .digest('hex');
-                    let response;
-                    for (let attempt = 0; attempt < 3; attempt++) {
-                      try {
-                        response = await fetch('http://127.0.0.1:8899/inventory', {
-                          method: 'POST',
-                          headers: { 'Content-Type': 'application/json' },
-                          body: JSON.stringify({ command: payload, signature }),
-                          signal: AbortSignal.timeout(15_000),
-                        });
-                        if (![500, 502, 503, 504].includes(response.status) || attempt === 2) break;
-                        await response.body?.cancel();
-                      } catch (error) {
-                        if (attempt === 2) throw error;
-                      }
-                      await wait(250 * (attempt + 1));
-                    }
-                    if (!response.ok) throw Error(`Bound inventory failed: ${response.status}`);
-                    return response.json();
-                  },
+                  fetchPage: createSignedInventoryFetch({ secret }),
                 })
               : undefined,
           );
@@ -217,7 +196,7 @@ async function main() {
       console.log(
         `Private staging ready: ${remaining.length} remaining of ${allFiles.length}, root ${tree.root}`,
       );
-      async function transfer(batch, local = false) {
+      async function transfer(batch, local = false, leaseRetries = 0) {
         const current = await reservation();
         const body = {
           lease: current,
@@ -249,11 +228,19 @@ async function main() {
             });
             if (response.status === 409) {
               await response.body.cancel();
+              if (leaseRetries >= 3)
+                throw Object.assign(Error('Fresh storage lease could not be acquired in time'), {
+                  permanent: true,
+                });
               await reservation(true);
-              return transfer(batch, local);
+              return transfer(batch, local, leaseRetries + 1);
             }
             if (!response.ok) {
               const detail = (await response.text()).slice(0, 500);
+              if ([400, 401, 403, 413].includes(response.status))
+                throw Object.assign(Error(`Staging refused: ${response.status}`), {
+                  permanent: true,
+                });
               throw Error(`Staging HTTP ${response.status}: ${detail}`);
             }
             const result = await response.json();
@@ -275,10 +262,13 @@ async function main() {
               done.set(row.path, row);
               completed++;
             }
-            if (completed % 200 < 4 || completed === allFiles.length)
+            if (completed >= nextProgress || completed === allFiles.length) {
+              while (nextProgress <= completed) nextProgress += 200;
               console.log(JSON.stringify({ verified: completed, total: allFiles.length }));
+            }
             return;
           } catch (error) {
+            if (error.permanent) throw error;
             last = error;
             if (attempt < 2) await wait(1000 * (attempt + 1));
           }
@@ -303,21 +293,26 @@ async function main() {
         }
       }
       await Promise.allSettled(
-        Array.from({ length: 4 }, async () => {
+        Array.from({ length: process.env.UC_DELIVERY_LOCAL_HTML === '1' ? 8 : 4 }, async () => {
           while (cursor < remaining.length && !failed) {
             const batch = [];
+            const htmlGroup =
+              process.env.UC_DELIVERY_LOCAL_HTML === '1' &&
+              remaining[cursor].record.path.endsWith('.html');
+            const itemLimit = htmlGroup ? 2 : 8,
+              byteLimit = htmlGroup ? 1_000_000 : 4_000_000;
             let groupBytes = 0;
             while (
               cursor < remaining.length &&
-              batch.length < 8 &&
-              (batch.length === 0 || groupBytes + remaining[cursor].record.bytes <= 4_000_000)
+              batch.length < itemLimit &&
+              (batch.length === 0 || groupBytes + remaining[cursor].record.bytes <= byteLimit)
             ) {
               const row = remaining[cursor++];
               batch.push(row);
               groupBytes += row.record.bytes;
             }
             try {
-              await transfer(batch, process.env.UC_DELIVERY_LOCAL_ONLY === '1');
+              await transfer(batch, process.env.UC_DELIVERY_LOCAL_ONLY === '1' || htmlGroup);
             } catch (error) {
               failed = true;
               throw error;

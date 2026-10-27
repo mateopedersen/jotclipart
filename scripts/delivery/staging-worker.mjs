@@ -95,7 +95,10 @@ export function stagingWorker(job) {
         const seen = new Set();
         for (let page = 0; page < 1; page++) {
           const result = await env[bound.binding].list({
-            limit: 500,
+            limit:
+              Number.isInteger(command.limit) && command.limit >= 1 && command.limit <= 1000
+                ? command.limit
+                : 1000,
             ...(cursor ? { cursor } : command.startAfter ? { startAfter: command.startAfter } : {}),
           });
           if (

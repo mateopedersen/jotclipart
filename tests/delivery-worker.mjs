@@ -232,7 +232,7 @@ test('private inventory enumerates bounded pages without exposing any write oper
   const env = {
     TARGET: {
       list: async ({ cursor, limit }) => {
-        assert.equal(limit, 500);
+        assert.equal(limit, 1000);
         pages++;
         return cursor
           ? { objects: [{ key: 'z', size: 7 }], truncated: false }

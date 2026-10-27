@@ -2,6 +2,7 @@ import { readFileSync, writeFileSync, existsSync, cpSync, readdirSync } from 'no
 import { resolve, join } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { build } from 'esbuild';
+import { assertOriginalImageDelivery } from './original-image-gate.mjs';
 import { pruneDeliveryFiles, digest } from './manifest.mjs';
 export async function prepareDeliveryRelease({
   source,
@@ -38,6 +39,7 @@ export async function prepareDeliveryRelease({
     manifest.files.filter((a) => a.path.startsWith('/edit/')).length !== ids.length
   )
     throw Error('Delivery manifest does not cover the complete rendered catalog');
+  assertOriginalImageDelivery(source);
   // Keep the full checked build intact for rollback and whole-site audits.
   cpSync(source, target, { recursive: true, mode: 2 });
   const removed = pruneDeliveryFiles(target, manifest, revision);
@@ -53,16 +55,7 @@ export async function prepareDeliveryRelease({
     execFileSync('git', ['show', `${revision}:data/retired-artwork.json`], { encoding: 'utf8' }),
   ).artworkIds;
   const options = { revision, ids, withdrawnIds, pageHeaders, editorHeaders };
-  const css = readFileSync(join(root, 'src/styles/studio-next.css'), 'utf8'),
-    styleVersion = digest(Buffer.from(css)).slice(0, 16);
-  const renderedCss = execFileSync('git', ['show', `${revision}:src/styles/studio-next.css`], {
-    encoding: 'utf8',
-  });
-  const needsStudioPatch = digest(Buffer.from(renderedCss)) !== digest(Buffer.from(css));
-  const studioDeclaration = needsStudioPatch
-    ? `studioStylePatch(${JSON.stringify(css)},${JSON.stringify(styleVersion)})`
-    : 'async(q,r)=>r';
-  const entry = `import original from ${JSON.stringify(join(source, '_worker.js'))};import {fetchAssetWithRetry} from './server/delivery/asset-retry.mjs';import {createPublicFileHandler} from './server/delivery/public-files.mjs';import {studioStylePatch,studioStyleRequest} from './server/delivery/studio-styles.mjs';const studio=${studioDeclaration};const delivery=createPublicFileHandler(${JSON.stringify(options)});export default {async fetch(request,env,context){const fallback={fetch:q=>original.fetch(q,{...env,ASSETS:{fetch:r=>fetchAssetWithRetry(r,env.ASSETS)}},context)};return studio(request,await delivery(studioStyleRequest(request),env,context,fallback));}};`;
+  const entry = `import original from ${JSON.stringify(join(source, '_worker.js'))};import {fetchAssetWithRetry} from './server/delivery/asset-retry.mjs';import {createPublicFileHandler} from './server/delivery/public-files.mjs';const delivery=createPublicFileHandler(${JSON.stringify(options)});export default {fetch(request,env,context){const fallback={fetch:q=>original.fetch(q,{...env,ASSETS:{fetch:r=>fetchAssetWithRetry(r,env.ASSETS)}},context)};return delivery(request,env,context,fallback);}};`;
   await build({
     stdin: { contents: entry, resolveDir: root, sourcefile: 'verified-delivery-release.mjs' },
     bundle: true,
@@ -72,6 +65,11 @@ export async function prepareDeliveryRelease({
     minify: true,
     outfile: join(target, '_worker.js'),
   });
+  writeFileSync(
+    join(target, '_headers'),
+    readFileSync(join(target, '_headers'), 'utf8') +
+      '\n/delivery-release.json\n  Cache-Control: no-store\n',
+  );
   writeFileSync(
     join(target, '_routes.json'),
     JSON.stringify({ version: 1, include: ['/*'], exclude: [] }) + '\n',
