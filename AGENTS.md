@@ -346,3 +346,21 @@ The separate `fix/artwork-editorial-quality` branch is implementing the shared s
 ## Supplied Tesla and commerce batch — 2026-10-27
 
 The owner explicitly authorized inspection, repair and live publication of eleven supplied 50-pair archives. Read `docs/content/tesla-commerce-import.md` and `work/imports/tesla-commerce-550/local-state.json` before resuming. No new drawing is authorized. The two Cybercab spellings share one canonical collection; Optimus is identified at family level, while three visibly generic robots belong to Robot. Preserve exact original files and their actual PDF print dimensions/densities. Short source-specific copy and the current image hashes must pass the shared editorial validator. The existing editorial registry is normalized to the coordinated array format without dropping concurrent reviews; future importers must preserve that format. The finite 13,004-entry legacy ledger is reused unchanged, never extended, and never called a fresh visual review. All later or changed images/metadata require real source-bound reviews in every topic. Future new topic inventories also require concise source-bound introductions in `data/editorial/*-collection.json` or the shared collection registry. Existing legacy prose is not bulk rewritten in this integration. Recheck main before promotion and preserve concurrently accepted collections. Call the batch live only after matching the successful production revision and real deployment receipt. The paused 134 Marvel drawings remain separate.
+
+## Public image delivery — latest owner decision, 2026-10-27
+
+The owner reverted the public low-resolution preview strategy after Google
+Images selected a 293 × 440 derivative. Public home, collection and artwork pages
+must display the original reviewed R2 image at its stable
+`https://assets.ultraclipart.com/` URL. Do not replace these public image sources
+with `/previews/` files or responsive candidates that select smaller derivatives
+without a new explicit owner decision. Keep lazy loading, reserved layout space,
+and immutable original URLs; do not re-encode or enlarge originals.
+
+The shared image build hook enforces original sources and original ImageObject
+metadata for indexable catalog pages, including future imported content. Main
+artwork images link to the full original. Private/noindex editor libraries may
+still use small thumbnails; editing and export must use verified originals.
+The original-source decision does not cancel the separate R2/Pages capacity
+migration. Preserve old URLs, personal data and the coordinated single-publisher
+workflow. Do not claim Google rankings or immediate reindexing are guaranteed.
