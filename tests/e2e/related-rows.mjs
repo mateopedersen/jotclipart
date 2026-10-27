@@ -89,10 +89,31 @@ for (const [engine, implementation] of Object.entries({ chromium, webkit })) {
             assert.equal(example.title, artwork.title);
           }
           const more = root.locator('[data-related-more]');
+          await page.evaluate(() => {
+            window.__relatedTestEvents = [];
+            window.addEventListener('ultraclipart:related', (event) => {
+              if (event.detail.event === 'show_more') window.__relatedTestEvents.push(event.detail);
+            });
+          });
           for (let i = 0; i < 20 && (await more.isVisible()); i++) {
+            // Focusing is the real keyboard-accessible path. It also prevents the
+            // automatic scroll observer from moving the button while Playwright
+            // scrolls it into view, so this checks a genuine button activation.
+            await more.focus();
             const before = await root.locator('.related-card').count();
+            const previousButtonEvents = await page.evaluate(
+              () => window.__relatedTestEvents.filter((event) => event.trigger === 'button').length,
+            );
             await more.click();
             await expect.poll(() => root.locator('.related-card').count()).toBeGreaterThan(before);
+            await expect
+              .poll(() =>
+                page.evaluate(
+                  () =>
+                    window.__relatedTestEvents.filter((event) => event.trigger === 'button').length,
+                ),
+              )
+              .toBeGreaterThan(previousButtonEvents);
           }
           await expect(more).toBeHidden();
           const counts = await root
