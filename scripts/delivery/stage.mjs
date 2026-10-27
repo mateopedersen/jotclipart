@@ -8,7 +8,6 @@ import {
   appendFileSync,
 } from 'node:fs';
 import { resolve, join } from 'node:path';
-import { gzipSync } from 'node:zlib';
 import { randomBytes, createHmac } from 'node:crypto';
 import { spawn, execFileSync } from 'node:child_process';
 import { setTimeout as wait } from 'node:timers/promises';
@@ -18,6 +17,7 @@ import { releaseRevision } from '../release-revision.mjs';
 import { createSignedInventoryFetch } from './inventory-fetch.mjs';
 import { createBoundInventoryReader } from './inventory-reader.mjs';
 import { acquireAccountWriter } from './account-lock.mjs';
+import { encodeLocalBatch } from './local-batch.mjs';
 import {
   deliveryActorCount,
   inventoryPageCount,
@@ -216,10 +216,6 @@ async function main() {
         `Private staging ready: ${remaining.length} remaining of ${allFiles.length}, root ${tree.root}`,
       );
       async function transfer(batch, local = false, leaseRetries = 0) {
-        if (local && batch.length > 1) {
-          for (const row of batch) await transfer([row], true);
-          return;
-        }
         const current = await reservation();
         const { roster: _partitionHints, ...writeLease } = current;
         const body = {
@@ -230,17 +226,15 @@ async function main() {
           records: batch,
         };
         const serialized = JSON.stringify(body),
-          encoded = local ? gzipSync(readFileSync(join(dist, batch[0].record.path))) : serialized;
+          encoded = local ? encodeLocalBatch(dist, body) : serialized;
         let last;
         for (let attempt = 0; attempt < 3; attempt++) {
           try {
             const response = await fetch('http://127.0.0.1:8899/stage', {
               method: 'POST',
               headers: {
-                'Content-Type': local ? 'application/octet-stream' : 'application/json',
-                ...(local
-                  ? { 'X-UC-Body-Encoding': 'gzip', 'X-UC-Stage-Metadata': serialized }
-                  : {}),
+                'Content-Type': 'application/json',
+                ...(local ? { 'X-UC-Body-Encoding': 'gzip' } : {}),
               },
               body: encoded,
               signal: AbortSignal.timeout(90_000),
@@ -316,12 +310,15 @@ async function main() {
             const htmlGroup =
               process.env.UC_DELIVERY_LOCAL_HTML === '1' &&
               remaining[cursor].record.path.endsWith('.html');
-            const itemLimit = htmlGroup ? 1 : 8,
-              byteLimit = htmlGroup ? 1_000_000 : 4_000_000;
+            const itemLimit = 8,
+              byteLimit = 4_000_000;
             let groupBytes = 0;
             while (
               cursor < remaining.length &&
               batch.length < itemLimit &&
+              (batch.length === 0 ||
+                (process.env.UC_DELIVERY_LOCAL_HTML === '1' &&
+                  remaining[cursor].record.path.endsWith('.html')) === htmlGroup) &&
               (batch.length === 0 || groupBytes + remaining[cursor].record.bytes <= byteLimit)
             ) {
               const row = remaining[cursor++];
