@@ -6,6 +6,43 @@ import { existsSync, readFileSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
 import { openNativeInventorySession } from '../scripts/r2/native-inventory-session.mjs';
 import { JURISDICTIONS, SCOPE_VERSION, endpointFor } from '../scripts/r2/inventory.mjs';
+import { bootstrapInventoryHints } from '../scripts/r2/inventory-bootstrap.mjs';
+import { reserveInventory } from '../scripts/delivery/storage-reservation.mjs';
+
+test('old journal can provide hints but never a fresh reservation', () => {
+  const accountId = 'a'.repeat(32),
+    now = Date.now();
+  const scope = {
+    accountId,
+    scopeVersion: SCOPE_VERSION,
+    observedAt: now - 60_000,
+    jurisdictions: JURISDICTIONS.map((jurisdiction) => ({
+      jurisdiction,
+      endpoint: endpointFor(accountId, jurisdiction),
+      complete: true,
+      buckets: jurisdiction === 'default' ? ['media'] : [],
+      proof: { source: 's3-list-buckets' },
+    })),
+  };
+  const hints = bootstrapInventoryHints({ inventoryScope: scope }, accountId, [
+    { bucket: 'media', key: 'a' },
+    { bucket: 'media', key: 'a' },
+    { bucket: 'media', key: 'b' },
+  ]);
+  assert.deepEqual(
+    hints.buckets[0].objects.map((x) => x.key),
+    ['a', 'b'],
+  );
+  assert.throws(() => reserveInventory(hints, 1, now), /Fresh complete/);
+  assert.throws(
+    () => bootstrapInventoryHints({ inventoryScope: scope }, 'b'.repeat(32)),
+    /another account/,
+  );
+  assert.throws(
+    () => bootstrapInventoryHints({ inventoryScope: { ...scope, jurisdictions: [] } }, accountId),
+    /coverage/,
+  );
+});
 
 test('slow inventory bootstrap is read-only, signed, bounded and cleans up', async () => {
   const accountId = 'a'.repeat(32);

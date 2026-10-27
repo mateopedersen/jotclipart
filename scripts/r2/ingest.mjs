@@ -12,6 +12,7 @@ import {
   mkdtempSync,
   rmSync,
   realpathSync,
+  readdirSync,
 } from 'node:fs';
 import { resolve, join, extname } from 'node:path';
 import { tmpdir } from 'node:os';
@@ -19,6 +20,7 @@ import { setTimeout as delay } from 'node:timers/promises';
 import { buildPlan, validateBatch, enforceStorageBudget, HARD_CAP } from './plan.mjs';
 import { acquireAccountWriter } from '../delivery/account-lock.mjs';
 import { openNativeInventorySession } from './native-inventory-session.mjs';
+import { bootstrapInventoryHints } from './inventory-bootstrap.mjs';
 import { configuredToken, cloudflareTransport } from './cloudflare-api.mjs';
 import {
   measureAccount,
@@ -225,6 +227,45 @@ try {
     releaseAccountLock = acquireAccountWriter();
     lock = openSync(lockPath, 'wx', 0o600);
     writeFileSync(lock, String(process.pid));
+    if (rest) {
+      try {
+        const previous = JSON.parse(readFileSync(journalPath, 'utf8'));
+        const known = [];
+        const publication = JSON.parse(readFileSync('data/publication.json', 'utf8'));
+        for (const file of publication.files ?? []) {
+          const url = new URL(file.url);
+          if (url.hostname === 'assets.ultraclipart.com')
+            known.push({
+              bucket: 'ultraclipart-media',
+              key: decodeURIComponent(url.pathname.slice(1)),
+            });
+        }
+        const candidates = readdirSync('work/delivery', { withFileTypes: true }).filter((x) =>
+          x.isDirectory(),
+        );
+        for (const candidate of candidates) {
+          try {
+            const manifest = JSON.parse(
+              readFileSync(join('work/delivery', candidate.name, 'verified-manifest.json'), 'utf8'),
+            );
+            if (manifest.status !== 'remote-byte-verified' || !Array.isArray(manifest.files))
+              continue;
+            for (const file of manifest.files)
+              known.push({ bucket: manifest.bucket, key: file.key });
+            break;
+          } catch {}
+        }
+        const hints = bootstrapInventoryHints(previous, parseEndpoint(endpoint).accountId, known);
+        nativeInventory = await openNativeInventorySession(hints);
+        console.log(
+          'Read-only inventory session bootstrapped from prior range hints; a fresh complete census is still required.',
+        );
+      } catch {
+        // No prior receipt or a stale/missing bucket binding: use the original
+        // cold census. Never turn bootstrap failure into an authorization.
+        console.log('Prior range hints unavailable; using a full cold census.');
+      }
+    }
   }
   const inventory = inventoryPath
     ? JSON.parse(readFileSync(inventoryPath, 'utf8'))
