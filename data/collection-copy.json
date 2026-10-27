@@ -10651,5 +10651,49 @@
       "nutcracker",
       "gingerbread"
     ]
+  },
+  "reindeer": {
+    "description": "Reindeer clipart with playful Christmas animals, winter activities, festive lettering, decorative objects, wildlife illustrations and coloring scenes.",
+    "intro": "Playful Christmas reindeer with scarves, bells, gifts and winter adventures. Browse distinct cartoon characters, festive lettering and crafted decorations, alongside four natural wildlife illustrations and four independent black-and-white coloring scenes.",
+    "lead": "Festive reindeer characters and independent winter illustrations.",
+    "featured": [
+      "reindeer-scarf-prance",
+      "reindeer-jingle-bell-trio",
+      "reindeer-reindeer-ornament-mobile",
+      "reindeer-merry-christmas-lettering",
+      "reindeer-lichen-forager",
+      "reindeer-outline-star-frame"
+    ],
+    "chips": [
+      {
+        "label": "Christmas characters",
+        "query": "reindeer Christmas"
+      },
+      {
+        "label": "Winter activities",
+        "query": "reindeer snow"
+      },
+      {
+        "label": "Festive lettering",
+        "query": "reindeer greeting"
+      },
+      {
+        "label": "Decorations",
+        "query": "reindeer ornament"
+      },
+      {
+        "label": "Coloring scenes",
+        "query": "reindeer outline"
+      }
+    ],
+    "heading": "",
+    "paragraphs": [],
+    "print": "Choose a single animal, a small story scene or a festive decorative composition to suit the space in your design.",
+    "related": [
+      "winter",
+      "elf",
+      "nutcracker",
+      "deer"
+    ]
   }
 }

@@ -1,0 +1,81 @@
+{
+  "wave": "wave_454",
+  "topic": "reindeer",
+  "method": "builtin-image-generation",
+  "research": "data/research/reindeer-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "reindeer-felt-bookmark",
+      "title": "Felt Reindeer Bookmark",
+      "alt": "Tall rust-colored felt reindeer bookmark with closed embroidered eyes, a green bow tie and two complete stitched antlers.",
+      "description": "Long cream belly panels and slender legs give the bookmark a narrow vertical shape. Small dark felt hooves and visible blanket stitches outline the decorative animal.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_454/source/reindeer-felt-bookmark.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-reindeer-snow-globe",
+      "title": "Reindeer Christmas Snow Globe",
+      "alt": "Clear snow globe containing a small prancing reindeer above a green evergreen-style base with a red bow and gold trim.",
+      "description": "White snow specks surround the miniature animal inside the complete glass dome. Layered green branches, a large red bow and gold edging decorate the base.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_454/source/reindeer-reindeer-snow-globe.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-outline-scarf-sleigh",
+      "title": "Reindeer Pulling an Empty Sleigh Outline",
+      "alt": "Black-and-white cartoon reindeer looking back while pulling an empty sleigh through a simple connected harness.",
+      "description": "Long antlers and a short scarf rise above the reindeer's lifted forehoof. Sweeping double runners and an open seat distinguish the empty sleigh behind it.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_454/source/reindeer-outline-scarf-sleigh.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    },
+    {
+      "id": "reindeer-outline-two-friends",
+      "title": "Two Reindeer Friends Outline",
+      "alt": "Black-and-white cartoon of two different reindeer seated back-to-back, one tall and surprised and the other round and laughing.",
+      "description": "Contrasting body proportions, antlers and expressions distinguish the two friends. Folded rear legs and long front legs create an open coloring composition.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_454/source/reindeer-outline-two-friends.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    },
+    {
+      "id": "reindeer-outline-star-frame",
+      "title": "Reindeer with an Empty Star Frame Outline",
+      "alt": "Black-and-white reindeer bust leaning above a large empty five-point star frame, with two forehooves resting on its top edges.",
+      "description": "A smiling freckled muzzle and wide antlers rise above the open star. One lowered ear and a loose forelock give the head a playful asymmetric shape.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_454/source/reindeer-outline-star-frame.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    },
+    {
+      "id": "reindeer-outline-baking",
+      "title": "Reindeer Baker with Cookie Tray Outline",
+      "alt": "Black-and-white upright cartoon reindeer wearing an apron and holding a tray of three cookies, with a small mixing bowl beside one hoof.",
+      "description": "Short antlers, large oval eyes and a scalloped apron distinguish the cheerful baker. The separate bowl and complete cookie tray leave clear open areas for coloring.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_454/source/reindeer-outline-baking.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk"
+    }
+  ]
+}

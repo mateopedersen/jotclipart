@@ -17,17 +17,17 @@
     "PUBLISHED"
   ],
   "targetArtworkCount": 5500,
-  "generatedArtworkCount": 1752,
+  "generatedArtworkCount": 1802,
   "suppliedArtworkCount": 11280,
-  "originalTopicArtworkCount": 2100,
+  "originalTopicArtworkCount": 2150,
   "supplementalArtworkCount": 11734,
-  "qualityApprovedArtworkCount": 2100,
+  "qualityApprovedArtworkCount": 2150,
   "supplementalApprovedArtworkCount": 11734,
   "reviewerType": "AI_AGENT_NOT_HUMAN",
   "humanApprovedArtworkCount": 0,
-  "availableArtworkCount": 13834,
-  "remainingToDraw": 3748,
-  "nextAction": "Publish and live-verify the owner-corrected 50-artwork green Christmas Elf cartoon collection. Then continue genuinely missing original topics after live/catalog/supplied/staged/queued and Google Images checks. Do not count supplied packages, repairs or rejected sources as new originals.",
+  "availableArtworkCount": 13884,
+  "remainingToDraw": 3698,
+  "nextAction": "Publish and live-verify the completed 50-artwork Elf and 50-artwork Reindeer collections together, preserving all concurrent catalog and editorial changes. Then continue genuinely missing original topics after live/catalog/supplied/staged/queued and Google Images checks. Do not count supplied packages, repairs or rejected sources as new originals.",
   "topics": [
     {
       "topic": "halloween",
@@ -892,13 +892,13 @@
       "keyword": "Reindeer clipart",
       "wave": "W2",
       "target": 50,
-      "generated": 0,
+      "generated": 50,
       "supplied": 0,
-      "available": 0,
-      "approved": 0,
-      "remainingToDraw": 50,
-      "briefStatus": "NOT_STARTED",
-      "briefPath": null
+      "available": 50,
+      "approved": 50,
+      "remainingToDraw": 0,
+      "briefStatus": "50_COMPOSITIONS_REVIEWED",
+      "briefPath": "data/briefs/reindeer.json"
     },
     {
       "topic": "elf",
@@ -153087,5 +153087,5 @@
     }
   ],
   "verifiedPublishedGeneratedArtworkCount": 1702,
-  "acceptedAwaitingRelease": 50
+  "acceptedAwaitingRelease": 100
 }

@@ -1,0 +1,77 @@
+{
+  "wave": "wave_452",
+  "topic": "reindeer",
+  "method": "builtin-image-generation",
+  "research": "data/research/reindeer-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "reindeer-patchwork-toy",
+      "title": "Patchwork Reindeer Plush Toy",
+      "alt": "Seated brown-and-cream patchwork reindeer plush with stitched hooves, soft felt antlers and a red-and-green checked scarf.",
+      "description": "A central stitched seam runs down the toy's cream belly. Floppy ears, embroidered eyes and soft rounded hooves distinguish the fabric animal from a live reindeer.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_452/source/reindeer-patchwork-toy.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-wooden-rocker",
+      "title": "Wooden Reindeer Rocking Toy",
+      "alt": "Carved wooden reindeer toy with a green saddle, red neck bow and two complete curved wooden rockers.",
+      "description": "Wood grain follows the toy's rounded body and antlers. Visible crossbars join the curved rockers below four shaped wooden hooves.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_452/source/reindeer-wooden-rocker.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-paper-wreath-decoration",
+      "title": "Layered Paper Reindeer Wreath",
+      "alt": "Circular layered-paper holly wreath with a stylized reindeer face at the lower center, red berries and two cream paper bells.",
+      "description": "Folded leaf edges give the green ring depth around its open center. Brown paper antlers rise from a simple cream-muzzled reindeer face beneath the berry clusters.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_452/source/reindeer-paper-wreath-decoration.png",
+      "printMaxEdgePx": 900,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-reindeer-cookie-display",
+      "title": "Reindeer-Shaped Iced Cookie",
+      "alt": "Large brown-iced reindeer cookie reclining on a cream napkin, with gold antlers and a green icing scarf.",
+      "description": "A golden biscuit edge outlines the curled resting pose. Cream hoof details, tiny white back dots and the scarf's piped pattern distinguish the festive biscuit.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_452/source/reindeer-reindeer-cookie-display.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-reindeer-ornament-mobile",
+      "title": "Amber Glass Reindeer Ornament",
+      "alt": "Full-body amber glass reindeer ornament hanging from a gold loop with a red ribbon bow above its antlers.",
+      "description": "Faceted translucent glass catches warm highlights across the small reindeer's torso. Gold-capped antlers and delicate glass hooves complete the decorative figure.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_452/source/reindeer-reindeer-ornament-mobile.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-merry-christmas-lettering",
+      "title": "Merry Christmas Greeting with a Reindeer",
+      "alt": "Red, green and cream MERRY CHRISTMAS lettering topped with holly, with a small sleeping reindeer curled beside the final letters.",
+      "description": "Snow caps, stars and gold scrolls decorate the two-line greeting. A little green-scarved reindeer rests at the upper right with its eyes closed.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_452/source/reindeer-merry-christmas-lettering.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

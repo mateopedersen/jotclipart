@@ -1,0 +1,77 @@
+{
+  "wave": "wave_453",
+  "topic": "reindeer",
+  "method": "builtin-image-generation",
+  "research": "data/research/reindeer-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "reindeer-reindeer-crossing-sign",
+      "title": "Decorative Reindeer Crossing Sign",
+      "alt": "Red-and-green wooden holiday sign reading REINDEER CROSSING, with a prancing reindeer silhouette and a gold bell above.",
+      "description": "A carved gold border frames the two-line wording on a striped post. Pine sprigs, holly and a red bow make the complete sign clearly decorative.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_453/source/reindeer-reindeer-crossing-sign.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-antler-light-garland",
+      "title": "Three Felt Reindeer Face Garland",
+      "alt": "Garland of three different felt reindeer faces linked with gold stars and holly, with bow-tied hanging loops at both ends.",
+      "description": "A cream smiling face sits between two brown faces with different ears, antlers and expressions. Red and green knitted scarf details brighten the small hanging decoration.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_453/source/reindeer-antler-light-garland.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-lichen-forager",
+      "title": "Reindeer Lowering Its Head to Lichen",
+      "alt": "Brown-and-cream reindeer lowering its broad muzzle toward a small isolated lichen sprig, with full antlers and four sturdy legs.",
+      "description": "A thick pale neck ruff follows the downward angle of the head. Irregular antler branches and broad cloven hooves distinguish the animal's sturdy natural silhouette.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_453/source/reindeer-lichen-forager.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-tundra-walking",
+      "title": "Reindeer Walking in Profile",
+      "alt": "Gray-brown reindeer walking left in profile with one forehoof lifted, a thick cream neck ruff and long branched antlers.",
+      "description": "The full side view shows a short tail, broad muzzle and pale flank stripe. Four distinct legs and wide cloven hooves keep the walking anatomy clear.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_453/source/reindeer-tundra-walking.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-mother-calf",
+      "title": "Adult Reindeer with a Resting Calf",
+      "alt": "Adult brown-and-cream reindeer standing behind a small dark-coated calf resting with folded legs, both complete figures.",
+      "description": "The adult's wide antler crown and thick pale neck contrast with the calf's smooth, antlerless head. Their different sizes and overlapping positions form a compact wildlife pair.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_453/source/reindeer-mother-calf.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-snow-coat-rest",
+      "title": "Reindeer Resting and Looking Back",
+      "alt": "Pale winter-coated reindeer resting with folded legs and looking back over its shoulder beneath long branching antlers.",
+      "description": "Cream and gray fur follow the curve of the animal's sturdy body. A broad dark muzzle, short pale tail and tucked cloven hooves distinguish the quiet resting pose.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_453/source/reindeer-snow-coat-rest.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

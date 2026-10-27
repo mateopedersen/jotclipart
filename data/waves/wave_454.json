@@ -1,0 +1,498 @@
+{
+  "wave": "wave_454",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 5,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "reindeer-felt-bookmark",
+      "title": "Felt Reindeer Bookmark",
+      "alt": "Tall rust-colored felt reindeer bookmark with closed embroidered eyes, a green bow tie and two complete stitched antlers.",
+      "description": "Long cream belly panels and slender legs give the bookmark a narrow vertical shape. Small dark felt hooves and visible blanket stitches outline the decorative animal.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_454/source/reindeer-felt-bookmark.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1024,
+      "height": 1536,
+      "pdfWidth": 667,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "d9c575307a7e9521fa541162b44f68738310d6c69cefcb329f1f7058ca9b43dc",
+      "inputSignature": "26bd3f74161d1d33d0bb13c5e5644e85ba8f25ede4b17608185bbfaea087ec21",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 653189,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 653189,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        176,
+        48,
+        852,
+        1494
+      ],
+      "image": {
+        "width": 667,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_454/exports/reindeer-felt-bookmark.pdf",
+          "bytes": 653189,
+          "sha256": "36fb7d7d230a40c5dd40e1412d396240a78746f63c91f0b87f948d74ec746b9d"
+        },
+        "webp": {
+          "path": "work/production/wave_454/exports/reindeer-felt-bookmark.webp",
+          "bytes": 1173512,
+          "sha256": "afd1ebee91cacbed7f5bbb7922b8185230726caf0dc39c42a140cc023644d293"
+        },
+        "thumb": {
+          "path": "work/production/wave_454/exports/reindeer-felt-bookmark-thumb.webp",
+          "bytes": 34752,
+          "sha256": "2ee6d89d57eb4db62fb07c4e556c5ab5c88eace3d946e558cf018166fd04f46c"
+        }
+      },
+      "proofSha256": "baee8a32eee81651508e095e2c2b7d2dcf9cc37c756515e10d7d1f43dd5cd1bb",
+      "pairMeanRgbDifference": 2.78526
+    },
+    {
+      "id": "reindeer-reindeer-snow-globe",
+      "title": "Reindeer Christmas Snow Globe",
+      "alt": "Clear snow globe containing a small prancing reindeer above a green evergreen-style base with a red bow and gold trim.",
+      "description": "White snow specks surround the miniature animal inside the complete glass dome. Layered green branches, a large red bow and gold edging decorate the base.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_454/source/reindeer-reindeer-snow-globe.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 1000,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "235c300dbec880e0e5702244d4dd33ba7ee77b4fbe051d2edf7043e904d94fd8",
+      "inputSignature": "68553da3ca251be202d0a64334ec4050eca3b8ac692841be677bc2b844c5b406",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 962763,
+        "weightedCmykRmse": 0.933302
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1328247,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1031906,
+          "weightedCmykRmse": 0.804495
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 962763,
+          "weightedCmykRmse": 0.933302
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        206,
+        69,
+        1045,
+        1171
+      ],
+      "image": {
+        "width": 1000,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_454/exports/reindeer-reindeer-snow-globe.pdf",
+          "bytes": 962763,
+          "sha256": "210ac12a24b1f28b95e00bcb794c543153102bd311242a2593abea1e3a787d56"
+        },
+        "webp": {
+          "path": "work/production/wave_454/exports/reindeer-reindeer-snow-globe.webp",
+          "bytes": 1111604,
+          "sha256": "e46ef663cb5cc086380fdc8d1f7a2521497ae10ec3979a2aa867b3921d456282"
+        },
+        "thumb": {
+          "path": "work/production/wave_454/exports/reindeer-reindeer-snow-globe-thumb.webp",
+          "bytes": 82206,
+          "sha256": "d177bd34972ee042a9b2c763988f55a13d9cc960e31f761485de6179b45eb799"
+        }
+      },
+      "proofSha256": "d5d1efe0e210be653d6657579da84ec6c9c723ad9b33ec1b449e915c35ff8a91",
+      "pairMeanRgbDifference": 4.97105
+    },
+    {
+      "id": "reindeer-outline-scarf-sleigh",
+      "title": "Reindeer Pulling an Empty Sleigh Outline",
+      "alt": "Black-and-white cartoon reindeer looking back while pulling an empty sleigh through a simple connected harness.",
+      "description": "Long antlers and a short scarf rise above the reindeer's lifted forehoof. Sweeping double runners and an open seat distinguish the empty sleigh behind it.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_454/source/reindeer-outline-scarf-sleigh.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "reindeer",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "6893b67d291c6a8d3b6a2a7a05cc8d138cf92686aa91bc3c6c67bb7aa9fcd31e",
+      "inputSignature": "590243dd170d79e55f45e83a377a63f98eae0830a255b7207fd7e5a718369c3b",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 223299,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 223299,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        171,
+        29,
+        1457,
+        994
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_454/exports/reindeer-outline-scarf-sleigh.pdf",
+          "bytes": 223299,
+          "sha256": "2fa0926160ccb3104c9b7df16ff3cfb28851fea62a64dd913bd7821621115aa5"
+        },
+        "webp": {
+          "path": "work/production/wave_454/exports/reindeer-outline-scarf-sleigh.webp",
+          "bytes": 923472,
+          "sha256": "588b750a89c6d0e4fccba85eb4431b85ec0004cddd837516489e69bad45c53ca"
+        },
+        "thumb": {
+          "path": "work/production/wave_454/exports/reindeer-outline-scarf-sleigh-thumb.webp",
+          "bytes": 40162,
+          "sha256": "f3719e477fdc1ccea2e6847e1a8f77ef2fa65ecec023877f26169db82faeb3b5"
+        }
+      },
+      "proofSha256": "2d08af5f44ad7893ed0bbe6115298b283e50e6849f78ea75235b551ce2b72744",
+      "pairMeanRgbDifference": 6.53528
+    },
+    {
+      "id": "reindeer-outline-two-friends",
+      "title": "Two Reindeer Friends Outline",
+      "alt": "Black-and-white cartoon of two different reindeer seated back-to-back, one tall and surprised and the other round and laughing.",
+      "description": "Contrasting body proportions, antlers and expressions distinguish the two friends. Folded rear legs and long front legs create an open coloring composition.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_454/source/reindeer-outline-two-friends.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "reindeer",
+      "width": 1278,
+      "height": 1230,
+      "pdfWidth": 1000,
+      "pdfHeight": 962,
+      "sourceType": "raster",
+      "sourceSha256": "feaf23b4327f452b96d925ed52312cb9caa0b0d5397413ece131d69fccb4843e",
+      "inputSignature": "4b266b011aeadbf2cbb49f5af63c764afe1da830271680d2833c909a54d59a88",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 285531,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 285531,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        59,
+        24,
+        1222,
+        1179
+      ],
+      "image": {
+        "width": 1000,
+        "height": 962,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_454/exports/reindeer-outline-two-friends.pdf",
+          "bytes": 285531,
+          "sha256": "ed7e739400dcc3b33c9452d258da60e078bd336868c3a11c034b7bb09b492eee"
+        },
+        "webp": {
+          "path": "work/production/wave_454/exports/reindeer-outline-two-friends.webp",
+          "bytes": 511274,
+          "sha256": "c7aeb600020bd191681232813187c203d87f3d5137ddf6cf2c989bf3d896a610"
+        },
+        "thumb": {
+          "path": "work/production/wave_454/exports/reindeer-outline-two-friends-thumb.webp",
+          "bytes": 47448,
+          "sha256": "38e8486c9530670f53df4712762ad9bdec9c83e8aecb79ecd00447c43bd5b406"
+        }
+      },
+      "proofSha256": "8419f56f6ab04f7fabc39d3df9f23ee0ad7bd727ae42f48756fa8f2ea010058d",
+      "pairMeanRgbDifference": 6.17007
+    },
+    {
+      "id": "reindeer-outline-star-frame",
+      "title": "Reindeer with an Empty Star Frame Outline",
+      "alt": "Black-and-white reindeer bust leaning above a large empty five-point star frame, with two forehooves resting on its top edges.",
+      "description": "A smiling freckled muzzle and wide antlers rise above the open star. One lowered ear and a loose forelock give the head a playful asymmetric shape.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_454/source/reindeer-outline-star-frame.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "reindeer",
+      "width": 1230,
+      "height": 1278,
+      "pdfWidth": 962,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "96ea708b0440c924eb4740350c3916823881dc44e63d50cf2db6e89c6bb132c8",
+      "inputSignature": "f2233e3e2621f5f56055d12cf1ac9740823d59b05959db4a6cef1578611292b7",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 266267,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 266267,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        181,
+        18,
+        1032,
+        1243
+      ],
+      "image": {
+        "width": 962,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_454/exports/reindeer-outline-star-frame.pdf",
+          "bytes": 266267,
+          "sha256": "cd658e29a5b696e97a7f5867383ed2416b3452dbad41248fd28a799d3b8d142e"
+        },
+        "webp": {
+          "path": "work/production/wave_454/exports/reindeer-outline-star-frame.webp",
+          "bytes": 448194,
+          "sha256": "0b445ba9cc8c72876fa4ab055fdddc5fce787476b243cf12483dfc480539da42"
+        },
+        "thumb": {
+          "path": "work/production/wave_454/exports/reindeer-outline-star-frame-thumb.webp",
+          "bytes": 39876,
+          "sha256": "d68bf90f60130a3005c25a2d63bd30aa957e4a70810bec880ad2211b5c0d7e24"
+        }
+      },
+      "proofSha256": "5ae41612455003208b4e526c337a43255fd20870b97a4a2f51b8ecdd48404351",
+      "pairMeanRgbDifference": 4.72965
+    },
+    {
+      "id": "reindeer-outline-baking",
+      "title": "Reindeer Baker with Cookie Tray Outline",
+      "alt": "Black-and-white upright cartoon reindeer wearing an apron and holding a tray of three cookies, with a small mixing bowl beside one hoof.",
+      "description": "Short antlers, large oval eyes and a scalloped apron distinguish the cheerful baker. The separate bowl and complete cookie tray leave clear open areas for coloring.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_454/source/reindeer-outline-baking.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "reindeer",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 1000,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "81f196eef39948329aa5aa3e45db9a4278b56e354086f706efbe53f1f1227c5a",
+      "inputSignature": "f5ee71abb033a3fdf480bb2d6a6472ab1025810c0a724574f6d3a8d3a77631a3",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 823086,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 823086,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        297,
+        24,
+        1047,
+        1237
+      ],
+      "image": {
+        "width": 1000,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_454/exports/reindeer-outline-baking.pdf",
+          "bytes": 823086,
+          "sha256": "26838f8f0076c9c920f97eb2c8f83caf87843efa84d8f1d004a2785e191dd57f"
+        },
+        "webp": {
+          "path": "work/production/wave_454/exports/reindeer-outline-baking.webp",
+          "bytes": 453550,
+          "sha256": "4e3602fc5d4b91a309b0c362905c745e55da7b868d63a9198eff12911654c7e9"
+        },
+        "thumb": {
+          "path": "work/production/wave_454/exports/reindeer-outline-baking-thumb.webp",
+          "bytes": 39694,
+          "sha256": "7fd951a401f43f805a255255706941ab9dd8ea342f1df2b657316bc7de535c83"
+        }
+      },
+      "proofSha256": "d7452cb102ca0c88e23ae2bbc25957c39d0419263b5c97fef8e977c67bafb5fd",
+      "pairMeanRgbDifference": 6.64535
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T07:33:50.320007+00:00",
+  "screenReviewEvidence": "work/production/wave_454/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T07:33:52.422Z"
+}

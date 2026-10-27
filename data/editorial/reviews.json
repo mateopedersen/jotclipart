@@ -22247,6 +22247,1506 @@
         "alt": "Dark-braided cartoon elf seated cross-legged, folding a red accordion-paper lantern beside a finished gold lantern and two paper strips.",
         "description": "The elf pinches the red folds above striped knees. A red-banded green cap, cream cuffs and gold bells on the curled shoes distinguish the paper-craft scene."
       }
+    },
+    {
+      "id": "reindeer-scarf-prance",
+      "status": "reviewed-from-image",
+      "sourceSha256": "9803a260679e1714c86bd30f37c42f891c9459b69da4198461a38cb8a05aa3dd",
+      "imageSha256": "9803a260679e1714c86bd30f37c42f891c9459b69da4198461a38cb8a05aa3dd",
+      "inputMetadataSha256": "6c8b49a16279206249520d2cfcec64b552d1f4aee01df1b305c90742317349d7",
+      "inspectedImage": "/catalog/wave_447/reindeer-scarf-prance.webp",
+      "reviewedAt": "2026-10-27T06:08:53.154222+00:00",
+      "observations": [
+        "Golden amber eyes, short broad muzzle, dark forehead tuft and two short branching antlers.",
+        "Four separate cloven-hoofed legs, one front leg raised, and long teal-and-cream knitted scarf with complete fringes."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Prancing in a Knitted Scarf",
+        "alt": "Big-eyed brown cartoon reindeer prancing with one forehoof lifted and a teal-and-cream knitted scarf trailing behind.",
+        "description": "The reindeer's lifted foreleg and sweeping fringed scarf give the figure a lively sideways silhouette. Short branched antlers, a dark forelock and cream chest distinguish the cheerful animal."
+      }
+    },
+    {
+      "id": "reindeer-gift-box-peek",
+      "status": "reviewed-from-image",
+      "sourceSha256": "0bfafeb8f55b4d479ce851c6d5baddcc57341ac4e13ff3915431be8607b3226d",
+      "imageSha256": "0bfafeb8f55b4d479ce851c6d5baddcc57341ac4e13ff3915431be8607b3226d",
+      "inputMetadataSha256": "058b81d742a85ad0c71e1cdb19469808c828a3e5a996545031302b422f309708",
+      "inspectedImage": "/catalog/wave_447/reindeer-gift-box-peek.webp",
+      "reviewedAt": "2026-10-27T06:08:53.154222+00:00",
+      "observations": [
+        "Large blue eyes, long narrow cream muzzle and wide irregular branching antlers.",
+        "Two cloven forehooves rest on the red circular box rim; complete red-and-gold lid leans at the side."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Peeking from a Round Gift Box",
+        "alt": "Blue-eyed cartoon reindeer peeking from a red round Christmas gift box, with two forehooves resting on its rim.",
+        "description": "A gold bow and snowflake pattern decorate the open box. The reindeer's long face, wide antler crown and large sideward ears rise above the rim beside the tipped lid."
+      }
+    },
+    {
+      "id": "reindeer-snowball-roll",
+      "status": "reviewed-from-image",
+      "sourceSha256": "ed26e7f0c9e0d38698d3aa75cc46c1436f38604dffd619019d08bb2df11da8cb",
+      "imageSha256": "ed26e7f0c9e0d38698d3aa75cc46c1436f38604dffd619019d08bb2df11da8cb",
+      "inputMetadataSha256": "ac521c4b5202fb9cde63596f9ec806ea291861f06696a0ae9b6750ad4cc99a1f",
+      "inspectedImage": "/catalog/wave_447/reindeer-snowball-roll.webp",
+      "reviewedAt": "2026-10-27T06:08:53.154222+00:00",
+      "observations": [
+        "Broad dark muzzle, rounded brown eyes, pale eyebrows and green knitted earmuffs below short wide antlers.",
+        "Four sturdy separate cloven-hoofed legs support the forward lean; nose meets one small textured snowball."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Nudging a Snowball",
+        "alt": "Stocky dark-brown cartoon reindeer in green earmuffs lowering its nose against a small white snowball.",
+        "description": "The reindeer leans forward with its broad muzzle touching the snowball. Pale brows, a cream neck ruff and short wide antlers distinguish its rounded face."
+      }
+    },
+    {
+      "id": "reindeer-bell-collar-bow",
+      "status": "reviewed-from-image",
+      "sourceSha256": "9fcbdb3b13ab575ecd2fc05b0455218e3d5e6d97152556c8092873d0962a00a7",
+      "imageSha256": "9fcbdb3b13ab575ecd2fc05b0455218e3d5e6d97152556c8092873d0962a00a7",
+      "inputMetadataSha256": "e02e9ba209b3b343becaaa0ea17a97ba450d93fdb400c026be4216b1dfb3d2d4",
+      "inspectedImage": "/catalog/wave_447/reindeer-bell-collar-bow.webp",
+      "reviewedAt": "2026-10-27T06:08:53.154222+00:00",
+      "observations": [
+        "Swept cream forelock, green eyes, slender face and complete tall irregular antlers.",
+        "Red neck ribbon carries three gold bells; forelegs extend into a bow while both rear legs remain planted."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Bowing with Jingle Bells",
+        "alt": "Golden-brown cartoon reindeer stretching its forelegs into a bow, wearing a red ribbon collar with three gold bells.",
+        "description": "The long front legs reach diagonally forward beneath the reindeer's lifted face. A cream forelock, green eyes and slender branching antlers distinguish the graceful figure."
+      }
+    },
+    {
+      "id": "reindeer-sleeping-star-blanket",
+      "status": "reviewed-from-image",
+      "sourceSha256": "ee3da4aee7707e11ed7421bb5e6f3b47c6fdb25c14c1a4977f2d485a1676ac13",
+      "imageSha256": "ee3da4aee7707e11ed7421bb5e6f3b47c6fdb25c14c1a4977f2d485a1676ac13",
+      "inputMetadataSha256": "05787ea80417229837c699aadf3388ec7a1a4ae080539865c55ab48ba34556f0",
+      "inspectedImage": "/catalog/wave_447/reindeer-sleeping-star-blanket.webp",
+      "reviewedAt": "2026-10-27T06:08:53.154222+00:00",
+      "observations": [
+        "Closed eyes, broad cream cheeks, gray-brown coat and low branching antler crown.",
+        "Four folded hoofed limbs around the resting body; plum star-patterned blanket drapes over the back with complete gold edging."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Sleeping Under a Star Blanket",
+        "alt": "Gray-brown cartoon reindeer asleep with folded legs beneath a plum blanket patterned with gold stars.",
+        "description": "Closed eyes and a broad cream cheek ruff give this resting reindeer a peaceful expression. Its antlers, tucked cloven hooves and short tail remain visible around the gold-edged blanket."
+      }
+    },
+    {
+      "id": "reindeer-wreath-window-face",
+      "status": "reviewed-from-image",
+      "sourceSha256": "d6169cffa0fb3570e90ba1a12c3c1427fd41e67e0573dd6e61084f558431ee42",
+      "imageSha256": "d6169cffa0fb3570e90ba1a12c3c1427fd41e67e0573dd6e61084f558431ee42",
+      "inputMetadataSha256": "bf0206b192e368c7a69210404382366043b5a7255343a9ec879b23b3ca7aa2dc",
+      "inspectedImage": "/catalog/wave_447/reindeer-wreath-window-face.webp",
+      "reviewedAt": "2026-10-27T06:08:53.154222+00:00",
+      "observations": [
+        "Large dark brown eyes, russet forehead tuft, broad cream muzzle and asymmetrical complete antlers.",
+        "Oval holly wreath surrounds the head and short neck, with red berry clusters and a full cream bow at its lower edge."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Face in a Holly Wreath",
+        "alt": "Smiling brown cartoon reindeer head with complete antlers rising above a green holly wreath and cream bow.",
+        "description": "A broad cream muzzle and warm brown eyes sit within the leafy oval. Red berry clusters and a gold-edged cream bow frame the intentionally cropped head-and-neck composition."
+      }
+    },
+    {
+      "id": "reindeer-present-sled-pull",
+      "status": "reviewed-from-image",
+      "sourceSha256": "e34d69fa7beed8123c105c48dcf6ce80619885e04575ca91b51c56d83d93635c",
+      "imageSha256": "e34d69fa7beed8123c105c48dcf6ce80619885e04575ca91b51c56d83d93635c",
+      "inputMetadataSha256": "fd73931abc7d25d9d572e01a6c06e7c7f1069a8ea3014f7126daf13d244fdfca",
+      "inspectedImage": "/catalog/wave_448/reindeer-present-sled-pull.webp",
+      "reviewedAt": "2026-10-27T06:15:15.231886+00:00",
+      "observations": [
+        "Charcoal-brown coat, cream shaggy neck, broad dark muzzle and complete long irregular antlers.",
+        "Four separate cloven hooves; green harness traces attach to a small complete wooden gift sled."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Pulling a Gift Sled",
+        "alt": "Dark-brown cartoon reindeer in a green chest harness pulling a small wooden sled loaded with red and green presents.",
+        "description": "Two green traces connect the harness to the sled's curved runners. A thick cream neck ruff, long face and wide branching antlers distinguish the walking animal."
+      }
+    },
+    {
+      "id": "reindeer-cocoa-mug-cuddle",
+      "status": "reviewed-from-image",
+      "sourceSha256": "cceaebcbe8e87a338e4267de46441677fa4aa0fa5c152ff6892a9feb2cafadb8",
+      "imageSha256": "cceaebcbe8e87a338e4267de46441677fa4aa0fa5c152ff6892a9feb2cafadb8",
+      "inputMetadataSha256": "adab210172746c1d07c5be433ec74cff422dcbc38e96729d90d27c63d417a1a4",
+      "inspectedImage": "/catalog/wave_448/reindeer-cocoa-mug-cuddle.webp",
+      "reviewedAt": "2026-10-27T06:15:15.231886+00:00",
+      "observations": [
+        "Large emerald eyes, short branched antlers, pale round muzzle and blue snowflake-patterned neckerchief.",
+        "Two rounded cloven forehooves hold a red marshmallow-filled mug; seated rear hooves point outward."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Holding a Cocoa Mug",
+        "alt": "Round golden-brown cartoon reindeer seated with a red cocoa mug between its forehooves and a blue neckerchief.",
+        "description": "Cream marshmallows rise above the snowflake-patterned mug. Large green eyes, short antler forks and two forward-facing rear hooves give the little animal a cozy seated silhouette."
+      }
+    },
+    {
+      "id": "reindeer-ice-skating-solo",
+      "status": "reviewed-from-image",
+      "sourceSha256": "50d55991ba0f237e913d2e3440c50160aef65a0ae47beed458af8fdbe884dd57",
+      "imageSha256": "50d55991ba0f237e913d2e3440c50160aef65a0ae47beed458af8fdbe884dd57",
+      "inputMetadataSha256": "d409b061eef32f0ce5d7742c33e88bdf120e075cd49b661f29900b2ebdd62109",
+      "inspectedImage": "/catalog/wave_448/reindeer-ice-skating-solo.webp",
+      "reviewedAt": "2026-10-27T06:15:15.231886+00:00",
+      "observations": [
+        "Large blue eyes, slim cream muzzle and green snowflake-patterned beanie between complete antlers.",
+        "Two cloven forehooves spread outward; two separate rear-hoof skates have complete attached silver blades."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Balancing on Ice Skates",
+        "alt": "Blue-eyed cartoon reindeer in a green knitted beanie balancing on two silver-bladed skates with forelegs stretched outward.",
+        "description": "One rear leg lifts behind the reindeer while the other skate supports the pose. A cream chest and wide antler crown contrast with its slim cinnamon-brown body."
+      }
+    },
+    {
+      "id": "reindeer-holiday-letter-carrier",
+      "status": "reviewed-from-image",
+      "sourceSha256": "e0630bda00db22d264abb522c4cb5c4b942141b7271d0d6f4471262b373dcf7d",
+      "imageSha256": "e0630bda00db22d264abb522c4cb5c4b942141b7271d0d6f4471262b373dcf7d",
+      "inputMetadataSha256": "808330e058f439547120722c0216b63b8aefbc5a58b1f9a042f57cc03167740d",
+      "inspectedImage": "/catalog/wave_448/reindeer-holiday-letter-carrier.webp",
+      "reviewedAt": "2026-10-27T06:15:15.231886+00:00",
+      "observations": [
+        "Large brown eyes, pale cheek patches, dark forelock and broad branching antlers.",
+        "Envelope held gently at the mouth; red buckled satchel and coherent shoulder strap above four separate hoofed legs."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Delivering a Christmas Letter",
+        "alt": "Brown cartoon reindeer walking with a cream envelope held in its mouth and a red mail satchel over its shoulder.",
+        "description": "A buckled strap crosses the reindeer's cream chest above the forward-stepping hoof. The blank envelope and red satchel create a simple festive delivery scene."
+      }
+    },
+    {
+      "id": "reindeer-lantern-nose-guide",
+      "status": "reviewed-from-image",
+      "sourceSha256": "8228e1c81a13656c50e9e5ab59e49c5e83ff5e25fe6091a673509f322728baed",
+      "imageSha256": "8228e1c81a13656c50e9e5ab59e49c5e83ff5e25fe6091a673509f322728baed",
+      "inputMetadataSha256": "d47dfca5ac434a0489007fb186678748c59b7195b6c0d4a4eda519b6bb5173e6",
+      "inspectedImage": "/catalog/wave_448/reindeer-lantern-nose-guide.webp",
+      "reviewedAt": "2026-10-27T06:15:15.231886+00:00",
+      "observations": [
+        "Warm amber eyes, pale muzzle, short broad antlers and thick burgundy cable-knit neck warmer.",
+        "Complete brass lantern with ring handle stands beside four visible cloven hooves; reindeer looks down toward it."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Looking at a Lantern",
+        "alt": "Small brown cartoon reindeer in a burgundy knitted neck warmer looking down at a glowing brass lantern beside its front hooves.",
+        "description": "The reindeer tilts its round face toward the lantern's warm light. Short antlers, a pale chest and a few small white back markings distinguish the standing animal."
+      }
+    },
+    {
+      "id": "reindeer-bauble-antler-dance",
+      "status": "reviewed-from-image",
+      "sourceSha256": "49afe1c31b4a6044c7e5fe87e251e0ac425cc4adb0da4451d73ae57daa3a469b",
+      "imageSha256": "49afe1c31b4a6044c7e5fe87e251e0ac425cc4adb0da4451d73ae57daa3a469b",
+      "inputMetadataSha256": "acbcc3c9831040868faea6c9e836c4a292ea3f0d0f69b11985b3e0e9c8cc0d20",
+      "inspectedImage": "/catalog/wave_448/reindeer-bauble-antler-dance.webp",
+      "reviewedAt": "2026-10-27T06:15:15.231886+00:00",
+      "observations": [
+        "Large green eyes, long narrow face, cream neck patch and tall wide branched antlers.",
+        "Three complete red-and-gold baubles hang on separate loops; one rear hoof raised and the other three hoofed legs clearly separated."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer with Hanging Christmas Baubles",
+        "alt": "Green-eyed brown cartoon reindeer lifting one rear hoof, with three red and gold baubles hanging from its antlers.",
+        "description": "The ornaments hang from separate antler branches above a slim, side-stepping body. A long cream throat patch and raised short tail add to the flowing silhouette."
+      }
+    },
+    {
+      "id": "reindeer-book-nook",
+      "status": "reviewed-from-image",
+      "sourceSha256": "242d368e380e62be9d0ef299bb250c5b700524c5adea58d248ed1b39177c4f0f",
+      "imageSha256": "242d368e380e62be9d0ef299bb250c5b700524c5adea58d248ed1b39177c4f0f",
+      "inputMetadataSha256": "4bf057fad0e41e5767d87888865357f3cec4d1f518453afc43080c0750bfba49",
+      "inspectedImage": "/catalog/wave_449/reindeer-book-nook.webp",
+      "reviewedAt": "2026-10-27T06:27:36.228855+00:00",
+      "observations": [
+        "Large violet eyes, rounded pale cheeks and short branching antlers above a dark forehead tuft.",
+        "Both forehooves rest on the open blank book; seated on a complete red cushion with gold piping."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Reading on a Red Cushion",
+        "alt": "Violet-eyed cartoon reindeer seated on a red cushion, with its forehooves resting on an open blank green-covered book.",
+        "description": "The little reindeer tilts its round face above two cream pages. A gold-edged cushion, short antler crown and forward-folded rear hooves create a compact reading scene."
+      }
+    },
+    {
+      "id": "reindeer-knitted-earmuff-listener",
+      "status": "reviewed-from-image",
+      "sourceSha256": "c3125b0900ca47ac12dcc1c987ae50b3b6a7ccd25c3ef2f7f69b2c0904306e48",
+      "imageSha256": "c3125b0900ca47ac12dcc1c987ae50b3b6a7ccd25c3ef2f7f69b2c0904306e48",
+      "inputMetadataSha256": "b128cf19a1eb4a8fcf65a19473dacd2668efbaa01c214ece37099b5a6b86d055",
+      "inspectedImage": "/catalog/wave_449/reindeer-knitted-earmuff-listener.webp",
+      "reviewedAt": "2026-10-27T06:27:36.228855+00:00",
+      "observations": [
+        "Brown eyes, broad pale muzzle and red earmuffs with band behind the small antlers.",
+        "Yellow knitted neck bow above four separate cloven-hoofed legs and a few white back markings."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Listening in Red Earmuffs",
+        "alt": "Brown cartoon reindeer standing in red knitted earmuffs and a yellow scarf tied in a bow.",
+        "description": "The reindeer turns its face slightly upward above the bow-tied scarf. Slim legs, small white back markings and a short branched antler crown distinguish the listening pose."
+      }
+    },
+    {
+      "id": "reindeer-snowflake-butterfly-pose",
+      "status": "reviewed-from-image",
+      "sourceSha256": "612c047682a0f34304ff4dbed908e5c348ceeda5a8ccfbd9827af58afe19e008",
+      "imageSha256": "612c047682a0f34304ff4dbed908e5c348ceeda5a8ccfbd9827af58afe19e008",
+      "inputMetadataSha256": "fc829e963dcaa3caed53bbe73a75994d35ea5abf7fb1986b53020c6da35d29f9",
+      "inspectedImage": "/catalog/wave_449/reindeer-snowflake-butterfly-pose.webp",
+      "reviewedAt": "2026-10-27T06:27:36.228855+00:00",
+      "observations": [
+        "Large teal eyes look upward beneath a broad complete antler crown; open mouth and pale muzzle.",
+        "Single blue snowflake above the nose, both forehooves lifted and two rear hoofed legs folded below the seated body."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Watching a Snowflake",
+        "alt": "Seated cartoon reindeer gazing up at a large blue snowflake with both forehooves lifted beside its cream chest.",
+        "description": "A single detailed snowflake floats just above the dark nose. Wide antlers, teal eyes and rounded folded legs make the surprised upward-looking pose easy to recognize."
+      }
+    },
+    {
+      "id": "reindeer-ornament-painter",
+      "status": "reviewed-from-image",
+      "sourceSha256": "45e5f0b16fa27df17afceed37eea8a297a7ef16380ba94a7b290945d7306c30f",
+      "imageSha256": "45e5f0b16fa27df17afceed37eea8a297a7ef16380ba94a7b290945d7306c30f",
+      "inputMetadataSha256": "ff4ae8c293b3eef439de27038277eac5c891cdd6afc0ced46154901012a7a31e",
+      "inspectedImage": "/catalog/wave_449/reindeer-ornament-painter.webp",
+      "reviewedAt": "2026-10-27T06:27:36.228855+00:00",
+      "observations": [
+        "Copper curled forelock, large amber eyes, short forked antlers and cream muzzle.",
+        "Forehoof-held brush touches gold star on a green bauble; opposite hoof steadies it above a wooden cradle and small red paint pot."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Painting a Gold Star Ornament",
+        "alt": "Curly-forelocked cartoon reindeer painting a gold star on a green bauble supported by a small wooden cradle.",
+        "description": "A short brush touches the star while the other forehoof steadies the ornament. The gold-capped bauble, red paint pot and small supporting cradle form a clear holiday craft scene."
+      }
+    },
+    {
+      "id": "reindeer-carrot-basket",
+      "status": "reviewed-from-image",
+      "sourceSha256": "7e3105c5939a8b91ff9c3d445857551b69ea36bd74fdc9e02852cf55346eaf6c",
+      "imageSha256": "7e3105c5939a8b91ff9c3d445857551b69ea36bd74fdc9e02852cf55346eaf6c",
+      "inputMetadataSha256": "860ced34f464cbbe9e75ac5004646183eb952b0664450ae6911037a5b3558821",
+      "inspectedImage": "/catalog/wave_449/reindeer-carrot-basket.webp",
+      "reviewedAt": "2026-10-27T06:27:36.228855+00:00",
+      "observations": [
+        "Large brown eyes, pale rounded muzzle and green gingham bow below short antlers.",
+        "Nose reaches toward a small wicker basket holding three carrots; handle, green carrot tops and four separate legs remain complete."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Looking into a Carrot Basket",
+        "alt": "Small brown cartoon reindeer in a green gingham neck bow lowering its nose toward a wicker basket of carrots.",
+        "description": "The animal leans over the basket's arched handle while all four hooves remain visible. Pale cheeks, upright ears and small white back markings distinguish the curious figure."
+      }
+    },
+    {
+      "id": "reindeer-ribbon-tail-play",
+      "status": "reviewed-from-image",
+      "sourceSha256": "892812e34d4efe1b16765b1c8a94025f8bf49345090a81a69f56d8a6eae2b8b5",
+      "imageSha256": "892812e34d4efe1b16765b1c8a94025f8bf49345090a81a69f56d8a6eae2b8b5",
+      "inputMetadataSha256": "fa3fec326d7eb349381188d972a9399458f79198a3e799a1e13c85a3d35761d9",
+      "inspectedImage": "/catalog/wave_449/reindeer-ribbon-tail-play.webp",
+      "reviewedAt": "2026-10-27T06:27:36.228855+00:00",
+      "observations": [
+        "Hazel eyes glance backward beneath small irregular antlers and a swept russet forelock.",
+        "Four distinct cloven-hoofed legs; complete spool and loose red ribbon lie beside the rear hoof without wrapping around the legs."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Watching an Unrolling Ribbon",
+        "alt": "Russet cartoon reindeer turning its head back toward a red ribbon unrolling from a spool beside its rear hoof.",
+        "description": "The curved body and sideways glance lead toward the loose ribbon. Cream cheeks, a short tail and uneven branching antlers distinguish the playful standing figure."
+      }
+    },
+    {
+      "id": "reindeer-holiday-cape-greeting",
+      "status": "reviewed-from-image",
+      "sourceSha256": "154849a3e709a8fdf336d2943835d6880d60a549831bdafb0db0df1586e98127",
+      "imageSha256": "154849a3e709a8fdf336d2943835d6880d60a549831bdafb0db0df1586e98127",
+      "inputMetadataSha256": "cad9b809acb20c11c99e6fe13dc3f4b00ec9740750b67d0f2ec12b3fdf15d6fb",
+      "inspectedImage": "/catalog/wave_450/reindeer-holiday-cape-greeting.webp",
+      "reviewedAt": "2026-10-27T06:41:05.134517+00:00",
+      "observations": [
+        "Large gray-blue eyes, long pale muzzle and full branching antlers with one small red bow.",
+        "Deep green velvet capelet with cream edging and gold clasp; one raised forehoof, three planted hooves and short tail."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer in a Green Velvet Cape",
+        "alt": "Gray-blue-eyed cartoon reindeer lifting one forehoof in a cream-edged green velvet cape with a gold clasp.",
+        "description": "A small red bow decorates one antler above the reindeer's long pale muzzle. The short capelet leaves its cream chest, four legs and curled tail silhouette clearly visible."
+      }
+    },
+    {
+      "id": "reindeer-family-nuzzle",
+      "status": "reviewed-from-image",
+      "sourceSha256": "07b9390d32956a27df84cf4199229c1b1a1a3274759165eaae68bcc82e51db75",
+      "imageSha256": "07b9390d32956a27df84cf4199229c1b1a1a3274759165eaae68bcc82e51db75",
+      "inputMetadataSha256": "bd1262368d66c95e30004fb8776a488e174c2e78b990df97caa9895102227d6c",
+      "inspectedImage": "/catalog/wave_450/reindeer-family-nuzzle.webp",
+      "reviewedAt": "2026-10-27T06:41:05.134517+00:00",
+      "observations": [
+        "Larger chestnut reindeer has broad heavy antlers and amber eyes; smaller gray-brown figure has short thin antlers and dark eyes.",
+        "Two complete four-legged bodies lean inward with noses meeting; different coat colors, proportions and faces."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Two Reindeer Touching Noses",
+        "alt": "Large chestnut cartoon reindeer gently touching noses with a smaller gray-brown reindeer, both standing with complete bodies.",
+        "description": "The larger animal's heavy antler crown contrasts with the smaller one's short forks and round cream cheeks. Their inward-facing heads create a gentle shared focal point."
+      }
+    },
+    {
+      "id": "reindeer-toy-train-watch",
+      "status": "reviewed-from-image",
+      "sourceSha256": "7c578b12c10fbf66f78b4d12d662cc9b67efbb4a87a7896ef9bf103a1a25d264",
+      "imageSha256": "7c578b12c10fbf66f78b4d12d662cc9b67efbb4a87a7896ef9bf103a1a25d264",
+      "inputMetadataSha256": "893f2760683b5156502d5b3871d7dd11967033706a5af4b9e98fb194f63bbffc",
+      "inspectedImage": "/catalog/wave_450/reindeer-toy-train-watch.webp",
+      "reviewedAt": "2026-10-27T06:41:05.134517+00:00",
+      "observations": [
+        "Dark gray coat, pale face and chest, large emerald eyes and complete tall antlers.",
+        "Folded forelegs beside one red locomotive; long green knitted scarf drapes across the neck and lies beside the body."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Watching a Little Toy Train",
+        "alt": "Gray cartoon reindeer lying with folded forelegs beside a small red wooden locomotive, wearing a long green scarf.",
+        "description": "The reindeer lowers its broad cream muzzle toward the toy's green roof. Tall antlers, bright green eyes and the scarf's trailing fringe distinguish the resting figure."
+      }
+    },
+    {
+      "id": "reindeer-star-wand-parade",
+      "status": "reviewed-from-image",
+      "sourceSha256": "369f85020cfd106c7566258c2ccb306d975e2620ca4db7ad6ecf159da2521973",
+      "imageSha256": "369f85020cfd106c7566258c2ccb306d975e2620ca4db7ad6ecf159da2521973",
+      "inputMetadataSha256": "296911f20f38ed8ca7ef402aef59790ad1641a834d95efa01548db43c16361f2",
+      "inspectedImage": "/catalog/wave_450/reindeer-star-wand-parade.webp",
+      "reviewedAt": "2026-10-27T06:41:05.134517+00:00",
+      "observations": [
+        "Curly gold forelock, large violet eyes, cream muzzle and short uneven antlers.",
+        "Both cloven forehooves clasp the gold star wand; red-and-cream neck bow and one lifted rear leg."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Marching with a Gold Star Wand",
+        "alt": "Violet-eyed golden cartoon reindeer taking an upright marching step while holding a gold star wand between its forehooves.",
+        "description": "A red-and-cream striped bow sits below the reindeer's curled forelock. One lifted rear hoof and the upright star wand give the compact character a bright parade pose."
+      }
+    },
+    {
+      "id": "reindeer-sack-snooze",
+      "status": "reviewed-from-image",
+      "sourceSha256": "5c63415d4ffd8390e619f4dcea410fd8a1ea27db7d86684e4dabed7649059de1",
+      "imageSha256": "5c63415d4ffd8390e619f4dcea410fd8a1ea27db7d86684e4dabed7649059de1",
+      "inputMetadataSha256": "8ed136f8d7ff32a48b928c7c915fdbde3b5cab2a7e68fddb7135c416ab13037f",
+      "inspectedImage": "/catalog/wave_450/reindeer-sack-snooze.webp",
+      "reviewedAt": "2026-10-27T06:41:05.134517+00:00",
+      "observations": [
+        "Half-closed brown eyes, pale eyebrows, long cream muzzle and wide branching antlers.",
+        "Cheek rests on a tied green sack with gold drawstring; red collar with one gold bell and seated rear hooves visible."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Sleepy Reindeer Beside a Gift Sack",
+        "alt": "Sleepy brown cartoon reindeer resting its cheek against a full green gift sack, with two rear hooves forward and a gold bell collar.",
+        "description": "The sack's thick gold drawstring hangs beside the reindeer's half-closed eyes. Broad antlers, cream eyebrows and a pale neck ruff distinguish the relaxed seated figure."
+      }
+    },
+    {
+      "id": "reindeer-leaping-candy-arch",
+      "status": "reviewed-from-image",
+      "sourceSha256": "96796d68c3f9ab9f2f0daccae18e3c6ea42a9bbb2d3d45d3447d2b9d652c0e3e",
+      "imageSha256": "96796d68c3f9ab9f2f0daccae18e3c6ea42a9bbb2d3d45d3447d2b9d652c0e3e",
+      "inputMetadataSha256": "2e29d541bb93d2fcace52867f30546a446a6824ceb2703dff8ee46638ff17ce0",
+      "inspectedImage": "/catalog/wave_450/reindeer-leaping-candy-arch.webp",
+      "reviewedAt": "2026-10-27T06:41:05.134517+00:00",
+      "observations": [
+        "Large green eyes, long smiling cream muzzle, chestnut forelock and broad complete antlers.",
+        "Four distinct raised hoofed legs, short blue scarf and one complete red-and-white curved candy cane beneath the leap."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Leaping over a Candy Cane",
+        "alt": "Green-eyed cartoon reindeer in a short blue scarf leaping sideways over a low red-and-white candy cane arch.",
+        "description": "Four separate tucked hooves float above the striped arch. A smiling long face, broad antlers and wind-swept fringed scarf emphasize the forward motion."
+      }
+    },
+    {
+      "id": "reindeer-peeking-pine-sprig",
+      "status": "reviewed-from-image",
+      "sourceSha256": "ed8190105f0eb3f90f26f21151bed0b579314383bbe4fa1d42f61ce781b01007",
+      "imageSha256": "ed8190105f0eb3f90f26f21151bed0b579314383bbe4fa1d42f61ce781b01007",
+      "inputMetadataSha256": "ecdedc5303822e767544346e38e544d80a58085b98e0358a1e0a70fe9a554cef",
+      "inspectedImage": "/catalog/wave_451/reindeer-peeking-pine-sprig.webp",
+      "reviewedAt": "2026-10-27T06:49:48.410878+00:00",
+      "observations": [
+        "Large blue eyes, cream forehead tuft, wide complete antlers and long pale muzzle.",
+        "Pine sprig with complete red bow in front of the torso; two front hooves visible beneath the branch and no canvas-edge crop."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Peeking Around a Pine Sprig",
+        "alt": "Blue-eyed cartoon reindeer peeking around a small upright pine sprig tied with a red bow.",
+        "description": "A swept cream forelock and wide antler crown rise above the little pine branch. The reindeer's long muzzle and two front hooves remain visible on either side of the greenery."
+      }
+    },
+    {
+      "id": "reindeer-jingle-bell-trio",
+      "status": "reviewed-from-image",
+      "sourceSha256": "328ee45ec0cbbc1a6dc65ed1bddcdf0a250105b25a6adff33b9b68a8bfec01c8",
+      "imageSha256": "328ee45ec0cbbc1a6dc65ed1bddcdf0a250105b25a6adff33b9b68a8bfec01c8",
+      "inputMetadataSha256": "4fbeb8c5171a176959d01b2f3fdf60787182786ed43ce68caea00dd6143fd04e",
+      "inspectedImage": "/catalog/wave_451/reindeer-jingle-bell-trio.webp",
+      "reviewedAt": "2026-10-27T06:49:48.410878+00:00",
+      "observations": [
+        "Seated round cinnamon figure, lanky gray standing figure and stocky dark-brown stepping figure have visibly different faces and antlers.",
+        "Red collar with gold bells, cream knitted scarf and green bow with bells; three complete separate bodies."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Three Different Christmas Reindeer",
+        "alt": "Three distinct cartoon reindeer arranged together: a seated cinnamon animal, a tall gray one in a cream scarf and a dark-brown one stepping forward.",
+        "description": "Different faces, antlers and body proportions give each member of the trio its own identity. A red bell collar, cream scarf and green bell bow distinguish their outfits."
+      }
+    },
+    {
+      "id": "reindeer-snowman-meeting",
+      "status": "reviewed-from-image",
+      "sourceSha256": "141bd83b15ed68ff7221034c719b9c056cbf74993e1b19cc5b7236f6706d68fc",
+      "imageSha256": "141bd83b15ed68ff7221034c719b9c056cbf74993e1b19cc5b7236f6706d68fc",
+      "inputMetadataSha256": "c8235050693b73b1102f13a9f4b29d21b8aa5ca87dd0f9923cb12b3e37c15c3b",
+      "inspectedImage": "/catalog/wave_451/reindeer-snowman-meeting.webp",
+      "reviewedAt": "2026-10-27T06:49:48.410878+00:00",
+      "observations": [
+        "Reindeer's broad dark nose touches the snowman's carrot; brown eyes and complete branching antlers.",
+        "Tiny three-ball snowman has green pom-pom cap, two twig arms and black buttons beside four full reindeer legs."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Greeting a Tiny Snowman",
+        "alt": "Brown cartoon reindeer lowering its nose to the carrot nose of a tiny snowman wearing a green knitted cap.",
+        "description": "The three-ball snowman smiles up with twig arms spread. Cream cheek fur, small white back spots and broad antlers distinguish the four-legged reindeer beside it."
+      }
+    },
+    {
+      "id": "reindeer-holly-ear-bow",
+      "status": "reviewed-from-image",
+      "sourceSha256": "ee051e751e1bac4169f1482ba0d377f830841098410c6a262936d57a7ffa03c6",
+      "imageSha256": "ee051e751e1bac4169f1482ba0d377f830841098410c6a262936d57a7ffa03c6",
+      "inputMetadataSha256": "d258a8235dafc49d79b785f55008c7386fbfc7a9f97a22e0b29c0b788c7debdb",
+      "inspectedImage": "/catalog/wave_451/reindeer-holly-ear-bow.webp",
+      "reviewedAt": "2026-10-27T06:49:48.410878+00:00",
+      "observations": [
+        "Large glossy brown eyes, narrow cream muzzle, cream ear bow and delicate full antlers.",
+        "Small holly sprig with red berries held at the mouth; four folded hoofed limbs form a complete seated silhouette."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Holding a Holly Sprig",
+        "alt": "Seated cartoon reindeer with large brown eyes holding a small holly sprig in its mouth and wearing a cream bow near one ear.",
+        "description": "The folded legs form a long horizontal base below the reindeer's upright chest. Delicate antler branches and a white cheek ruff frame the gentle face above the red berries."
+      }
+    },
+    {
+      "id": "reindeer-blank-wooden-sign",
+      "status": "reviewed-from-image",
+      "sourceSha256": "8e9678785989adcdd86b0b6205db187a9b563d9e814338b2511151819cb397a7",
+      "imageSha256": "8e9678785989adcdd86b0b6205db187a9b563d9e814338b2511151819cb397a7",
+      "inputMetadataSha256": "41984d572c2f59a3aac078619544da9926310538d35becc09e47485a7279a681",
+      "inspectedImage": "/catalog/wave_451/reindeer-blank-wooden-sign.webp",
+      "reviewedAt": "2026-10-27T06:49:48.410878+00:00",
+      "observations": [
+        "Large teal eyes, pale smiling muzzle, dark forehead tuft and complete broad antlers.",
+        "Two cloven forehooves rest on blank rounded sign; two rear hoofed legs remain visible beneath it."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Presenting a Blank Wooden Sign",
+        "alt": "Teal-eyed cartoon reindeer standing behind a blank wooden sign with two forehooves on its upper edge and rear hooves below.",
+        "description": "Rounded wood grain fills the empty sign, leaving space for a visitor's own wording. A dark forelock, cream chest and wide antlers rise clearly above it."
+      }
+    },
+    {
+      "id": "reindeer-sledding-hat",
+      "status": "reviewed-from-image",
+      "sourceSha256": "e491a1c677bda7a530d878168181c8074b276d0577b5cb1c2b5e3259a9d6c416",
+      "imageSha256": "e491a1c677bda7a530d878168181c8074b276d0577b5cb1c2b5e3259a9d6c416",
+      "inputMetadataSha256": "ed28f41684d27e0bca28b727caee2e18e5ec845f22d52356c1b3424d34aa2ba1",
+      "inspectedImage": "/catalog/wave_451/reindeer-sledding-hat.webp",
+      "reviewedAt": "2026-10-27T06:49:48.410878+00:00",
+      "observations": [
+        "Large blue eyes, cream muzzle and green knitted beanie between full antlers, with a gold knitted scarf.",
+        "Seated four-hoof pose on red slatted sled; both gold curved runners and full front curl visible."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Riding a Red Sled",
+        "alt": "Smiling cartoon reindeer seated on a red sled, wearing a green pom-pom beanie and a fringed gold scarf.",
+        "description": "The reindeer gathers all four hooves on the sled's slatted seat. Gold curved runners and a forward-curling front support complete the little winter vehicle."
+      }
+    },
+    {
+      "id": "reindeer-patchwork-toy",
+      "status": "reviewed-from-image",
+      "sourceSha256": "dba5f41af39e85cbda7003b3b00a38fad8434c6c95824b119f86435ecfaf7c3d",
+      "imageSha256": "dba5f41af39e85cbda7003b3b00a38fad8434c6c95824b119f86435ecfaf7c3d",
+      "inputMetadataSha256": "51cac7b128a0408fe1a7c881c02497b03fe32b51007ddb8ab0ee034fec35a4d1",
+      "inspectedImage": "/catalog/wave_452/reindeer-patchwork-toy.webp",
+      "reviewedAt": "2026-10-27T06:58:17.222321+00:00",
+      "observations": [
+        "Brown and cream fabric panels, visible central seams, dark embroidered eyes and soft black nose.",
+        "Four stitched cloven hooves, floppy ears, soft felt antlers and a checked fringed scarf."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Patchwork Reindeer Plush Toy",
+        "alt": "Seated brown-and-cream patchwork reindeer plush with stitched hooves, soft felt antlers and a red-and-green checked scarf.",
+        "description": "A central stitched seam runs down the toy's cream belly. Floppy ears, embroidered eyes and soft rounded hooves distinguish the fabric animal from a live reindeer."
+      }
+    },
+    {
+      "id": "reindeer-wooden-rocker",
+      "status": "reviewed-from-image",
+      "sourceSha256": "021daacb1de290a71fb6ecc9eeb2202468564be60c2f3fba4c7913d946ab6410",
+      "imageSha256": "021daacb1de290a71fb6ecc9eeb2202468564be60c2f3fba4c7913d946ab6410",
+      "inputMetadataSha256": "6fbf3307b36120a177dba556c775332185236a4f2f82a130d12f44fea42eaf3d",
+      "inspectedImage": "/catalog/wave_452/reindeer-wooden-rocker.webp",
+      "reviewedAt": "2026-10-27T06:58:17.222321+00:00",
+      "observations": [
+        "Honey-colored wood grain, painted dark eyes, carved rounded muzzle and complete wooden antlers.",
+        "Green seat with gold studs, red neck bow, four wooden hoofed legs and paired curved rockers joined by crossbars."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Wooden Reindeer Rocking Toy",
+        "alt": "Carved wooden reindeer toy with a green saddle, red neck bow and two complete curved wooden rockers.",
+        "description": "Wood grain follows the toy's rounded body and antlers. Visible crossbars join the curved rockers below four shaped wooden hooves."
+      }
+    },
+    {
+      "id": "reindeer-paper-wreath-decoration",
+      "status": "reviewed-from-image",
+      "sourceSha256": "61ddf24d34521d0367ff215da5c258df8de579674a3384ff8f2203696a7e325b",
+      "imageSha256": "61ddf24d34521d0367ff215da5c258df8de579674a3384ff8f2203696a7e325b",
+      "inputMetadataSha256": "1b68c88c1482a3b0f0b5c3350daf4ae122990c151363f8f6063e0ec3c95d49a9",
+      "inspectedImage": "/catalog/wave_452/reindeer-paper-wreath-decoration.webp",
+      "reviewedAt": "2026-10-27T06:58:17.222321+00:00",
+      "observations": [
+        "Layered green paper leaves, complete circular outline and two cream paper bells on opposite sides.",
+        "Flat brown reindeer head at the lower center has pale muzzle, small dark eyes and complete paper antlers; red berry clusters around the ring."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Layered Paper Reindeer Wreath",
+        "alt": "Circular layered-paper holly wreath with a stylized reindeer face at the lower center, red berries and two cream paper bells.",
+        "description": "Folded leaf edges give the green ring depth around its open center. Brown paper antlers rise from a simple cream-muzzled reindeer face beneath the berry clusters."
+      }
+    },
+    {
+      "id": "reindeer-reindeer-cookie-display",
+      "status": "reviewed-from-image",
+      "sourceSha256": "e786fe6affe7ddcb29b9f77d138b8181ae6367f41fc28f10d6d69aa7cf9883d5",
+      "imageSha256": "e786fe6affe7ddcb29b9f77d138b8181ae6367f41fc28f10d6d69aa7cf9883d5",
+      "inputMetadataSha256": "475747c807c5a1714ca85ca9625ca4588a72822769e3ece18d3fb29ddd378395",
+      "inspectedImage": "/catalog/wave_452/reindeer-reindeer-cookie-display.webp",
+      "reviewedAt": "2026-10-27T06:58:17.222321+00:00",
+      "observations": [
+        "Single reindeer-shaped biscuit has brown icing, golden edge, raised gold antler icing and dark chocolate nose.",
+        "Cream napkin below the resting cookie, green piped scarf and complete folded iced hoof shapes; no live animal."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer-Shaped Iced Cookie",
+        "alt": "Large brown-iced reindeer cookie reclining on a cream napkin, with gold antlers and a green icing scarf.",
+        "description": "A golden biscuit edge outlines the curled resting pose. Cream hoof details, tiny white back dots and the scarf's piped pattern distinguish the festive biscuit."
+      }
+    },
+    {
+      "id": "reindeer-reindeer-ornament-mobile",
+      "status": "reviewed-from-image",
+      "sourceSha256": "b2185438e4e87eb1be5a71eca95322f53b6e41780780cce23c07d3b03d5564e1",
+      "imageSha256": "b2185438e4e87eb1be5a71eca95322f53b6e41780780cce23c07d3b03d5564e1",
+      "inputMetadataSha256": "589f46b0cc0e854e0df92aa40f12c9fe782a675a8bcf3c5630434b575fe070fc",
+      "inspectedImage": "/catalog/wave_452/reindeer-reindeer-ornament-mobile.webp",
+      "reviewedAt": "2026-10-27T06:58:17.222321+00:00",
+      "observations": [
+        "Transparent amber glass body with reflected highlights, dark painted eyes and gold-capped complete antlers.",
+        "Full hanging loop and red bow above the head; four small glass hoofed legs and short glass tail."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Amber Glass Reindeer Ornament",
+        "alt": "Full-body amber glass reindeer ornament hanging from a gold loop with a red ribbon bow above its antlers.",
+        "description": "Faceted translucent glass catches warm highlights across the small reindeer's torso. Gold-capped antlers and delicate glass hooves complete the decorative figure."
+      }
+    },
+    {
+      "id": "reindeer-merry-christmas-lettering",
+      "status": "reviewed-from-image",
+      "sourceSha256": "8cc567095c55ecea8f597a6bee8840243520cbcde01a0fc9b6d573484a44ad90",
+      "imageSha256": "8cc567095c55ecea8f597a6bee8840243520cbcde01a0fc9b6d573484a44ad90",
+      "inputMetadataSha256": "8bdff1b09e7c50ab6d959582f9722f604c17548bb62f081346e08a4f0de81083",
+      "inspectedImage": "/catalog/wave_452/reindeer-merry-christmas-lettering.webp",
+      "reviewedAt": "2026-10-27T06:58:17.222321+00:00",
+      "observations": [
+        "Correctly spelled MERRY above CHRISTMAS in rounded red, green and cream patterned letters with white snowy tops.",
+        "Tiny curled reindeer has closed eyes, short complete antlers and green scarf beside the last letters; holly above the wording."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Merry Christmas Greeting with a Reindeer",
+        "alt": "Red, green and cream MERRY CHRISTMAS lettering topped with holly, with a small sleeping reindeer curled beside the final letters.",
+        "description": "Snow caps, stars and gold scrolls decorate the two-line greeting. A little green-scarved reindeer rests at the upper right with its eyes closed."
+      }
+    },
+    {
+      "id": "reindeer-reindeer-crossing-sign",
+      "status": "reviewed-from-image",
+      "sourceSha256": "46ef435c86b8c99d8a4c7cd12423a99d384273c7135800ab84ee5f2a4be35c4f",
+      "imageSha256": "46ef435c86b8c99d8a4c7cd12423a99d384273c7135800ab84ee5f2a4be35c4f",
+      "inputMetadataSha256": "85aace711b61db647edb124027168b7f86f98b8e8c6393e137edd8747b76386c",
+      "inspectedImage": "/catalog/wave_453/reindeer-reindeer-crossing-sign.webp",
+      "reviewedAt": "2026-10-27T07:08:32.618579+00:00",
+      "observations": [
+        "Correctly spelled REINDEER CROSSING on a pale wood panel with a dark prancing reindeer inset.",
+        "Complete red-and-green striped post, gold-edged border, bow and hanging bell with holly decorations."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Decorative Reindeer Crossing Sign",
+        "alt": "Red-and-green wooden holiday sign reading REINDEER CROSSING, with a prancing reindeer silhouette and a gold bell above.",
+        "description": "A carved gold border frames the two-line wording on a striped post. Pine sprigs, holly and a red bow make the complete sign clearly decorative."
+      }
+    },
+    {
+      "id": "reindeer-antler-light-garland",
+      "status": "reviewed-from-image",
+      "sourceSha256": "63652a403fa88eb9813cd508eee303e14d002584e44871f3bc66b34feb25d164",
+      "imageSha256": "63652a403fa88eb9813cd508eee303e14d002584e44871f3bc66b34feb25d164",
+      "inputMetadataSha256": "77dea1885e01e22da5cc1fca5ea42e32dd9680f0348210eb2f2d9ad2b3454210",
+      "inspectedImage": "/catalog/wave_453/reindeer-antler-light-garland.webp",
+      "reviewedAt": "2026-10-27T07:08:32.618579+00:00",
+      "observations": [
+        "Three visibly different felt faces: brown open-eyed, cream closed-eye smiling and chestnut long-eared; different antlers.",
+        "Complete end loops and red bows; gold stars and holly separate the three heads along a curved hanging arrangement."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Three Felt Reindeer Face Garland",
+        "alt": "Garland of three different felt reindeer faces linked with gold stars and holly, with bow-tied hanging loops at both ends.",
+        "description": "A cream smiling face sits between two brown faces with different ears, antlers and expressions. Red and green knitted scarf details brighten the small hanging decoration."
+      }
+    },
+    {
+      "id": "reindeer-lichen-forager",
+      "status": "reviewed-from-image",
+      "sourceSha256": "347b7c1d6a1ac4ea28977f23fbbd1954c637280faee5af952a0478a285a10d13",
+      "imageSha256": "347b7c1d6a1ac4ea28977f23fbbd1954c637280faee5af952a0478a285a10d13",
+      "inputMetadataSha256": "a33f6329cf34be6157ddd88e7a92d8efcbfbdfb94fb3a61ae720372a482c5a32",
+      "inspectedImage": "/catalog/wave_453/reindeer-lichen-forager.webp",
+      "reviewedAt": "2026-10-27T07:08:32.618579+00:00",
+      "observations": [
+        "Shaggy brown winter coat, broad pale muzzle, natural dark eyes and complete irregular antlers angled above lowered head.",
+        "Four sturdy cloven-hoofed legs support the forward bend beside one small lichen sprig; no landscape."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Lowering Its Head to Lichen",
+        "alt": "Brown-and-cream reindeer lowering its broad muzzle toward a small isolated lichen sprig, with full antlers and four sturdy legs.",
+        "description": "A thick pale neck ruff follows the downward angle of the head. Irregular antler branches and broad cloven hooves distinguish the animal's sturdy natural silhouette."
+      }
+    },
+    {
+      "id": "reindeer-tundra-walking",
+      "status": "reviewed-from-image",
+      "sourceSha256": "9c578935582c035a1edc8326caa822cf2522c8c118e306c72336b61b41e48ba9",
+      "imageSha256": "9c578935582c035a1edc8326caa822cf2522c8c118e306c72336b61b41e48ba9",
+      "inputMetadataSha256": "834521b158c06f850a40f97e565bca9ce5764404f3c66794f3f67e0303f08d9f",
+      "inspectedImage": "/catalog/wave_453/reindeer-tundra-walking.webp",
+      "reviewedAt": "2026-10-27T07:08:32.618579+00:00",
+      "observations": [
+        "Long asymmetric antler crown, broad muzzle, pale shaggy neck and natural dark eye in left-facing profile.",
+        "One front hoof lifted, three other legs separated beneath the brown-gray body, short pale tail and light flank stripe."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Walking in Profile",
+        "alt": "Gray-brown reindeer walking left in profile with one forehoof lifted, a thick cream neck ruff and long branched antlers.",
+        "description": "The full side view shows a short tail, broad muzzle and pale flank stripe. Four distinct legs and wide cloven hooves keep the walking anatomy clear."
+      }
+    },
+    {
+      "id": "reindeer-mother-calf",
+      "status": "reviewed-from-image",
+      "sourceSha256": "0165cb12b9ef1426d2f07c377bd2311750120054de80737ffbd7ee69127cabae",
+      "imageSha256": "0165cb12b9ef1426d2f07c377bd2311750120054de80737ffbd7ee69127cabae",
+      "inputMetadataSha256": "500e314feb71e631099267061241ae86ccd29e1c90e13d0cb214aca2b7c33e6b",
+      "inspectedImage": "/catalog/wave_453/reindeer-mother-calf.webp",
+      "reviewedAt": "2026-10-27T07:08:32.618579+00:00",
+      "observations": [
+        "Large antlered adult stands behind a dark-chocolate calf with no antlers and no white fawn spots.",
+        "Adult's four sturdy legs and calf's folded hoofed limbs remain visible; natural broad muzzles and short tails."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Adult Reindeer with a Resting Calf",
+        "alt": "Adult brown-and-cream reindeer standing behind a small dark-coated calf resting with folded legs, both complete figures.",
+        "description": "The adult's wide antler crown and thick pale neck contrast with the calf's smooth, antlerless head. Their different sizes and overlapping positions form a compact wildlife pair."
+      }
+    },
+    {
+      "id": "reindeer-snow-coat-rest",
+      "status": "reviewed-from-image",
+      "sourceSha256": "b462085252b8efe882343672ffd5683b0ac85f553488ae3d7788435defcf183b",
+      "imageSha256": "b462085252b8efe882343672ffd5683b0ac85f553488ae3d7788435defcf183b",
+      "inputMetadataSha256": "ca9ecd7057dccc77a6cb4a658ce80f254c4bb571b616400e27fefdb45b3b8f11",
+      "inspectedImage": "/catalog/wave_453/reindeer-snow-coat-rest.webp",
+      "reviewedAt": "2026-10-27T07:08:32.618579+00:00",
+      "observations": [
+        "Light gray-cream shaggy coat, natural brown eyes, broad dark muzzle and complete asymmetric antler crown.",
+        "Resting body with folded legs and visible cloven hooves; head turned back toward its short pale tail."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Resting and Looking Back",
+        "alt": "Pale winter-coated reindeer resting with folded legs and looking back over its shoulder beneath long branching antlers.",
+        "description": "Cream and gray fur follow the curve of the animal's sturdy body. A broad dark muzzle, short pale tail and tucked cloven hooves distinguish the quiet resting pose."
+      }
+    },
+    {
+      "id": "reindeer-felt-bookmark",
+      "status": "reviewed-from-image",
+      "sourceSha256": "afd1ebee91cacbed7f5bbb7922b8185230726caf0dc39c42a140cc023644d293",
+      "imageSha256": "afd1ebee91cacbed7f5bbb7922b8185230726caf0dc39c42a140cc023644d293",
+      "inputMetadataSha256": "7a1016fc82d0827173d8b381365e07c64520ccfd50329e02c4aa1a7a0443d102",
+      "inspectedImage": "/catalog/wave_454/reindeer-felt-bookmark.webp",
+      "reviewedAt": "2026-10-27T07:19:50.165465+00:00",
+      "observations": [
+        "Rust-red felt body, cream muzzle and belly, closed embroidered eyes and long soft antlers.",
+        "Small green bow tie and four stitched hoof shapes below a slim elongated body; no hanging loop."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Felt Reindeer Bookmark",
+        "alt": "Tall rust-colored felt reindeer bookmark with closed embroidered eyes, a green bow tie and two complete stitched antlers.",
+        "description": "Long cream belly panels and slender legs give the bookmark a narrow vertical shape. Small dark felt hooves and visible blanket stitches outline the decorative animal."
+      }
+    },
+    {
+      "id": "reindeer-reindeer-snow-globe",
+      "status": "reviewed-from-image",
+      "sourceSha256": "e46ef663cb5cc086380fdc8d1f7a2521497ae10ec3979a2aa867b3921d456282",
+      "imageSha256": "e46ef663cb5cc086380fdc8d1f7a2521497ae10ec3979a2aa867b3921d456282",
+      "inputMetadataSha256": "46444c58cc615c1ad8ed77178bba190f3dbadf0142bbded338f463781e375f63",
+      "inspectedImage": "/catalog/wave_454/reindeer-reindeer-snow-globe.webp",
+      "reviewedAt": "2026-10-27T07:19:50.165465+00:00",
+      "observations": [
+        "Complete transparent globe encloses one brown reindeer with short antlers, pale muzzle and red bell collar on a small white mound.",
+        "Green branch-shaped base with gold trim and large red bow; no hand or live character outside the glass."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Christmas Snow Globe",
+        "alt": "Clear snow globe containing a small prancing reindeer above a green evergreen-style base with a red bow and gold trim.",
+        "description": "White snow specks surround the miniature animal inside the complete glass dome. Layered green branches, a large red bow and gold edging decorate the base."
+      }
+    },
+    {
+      "id": "reindeer-outline-scarf-sleigh",
+      "status": "reviewed-from-image",
+      "sourceSha256": "588b750a89c6d0e4fccba85eb4431b85ec0004cddd837516489e69bad45c53ca",
+      "imageSha256": "588b750a89c6d0e4fccba85eb4431b85ec0004cddd837516489e69bad45c53ca",
+      "inputMetadataSha256": "303cb306f9087b651551246797f7de5c3f537092f8ef5c1dd38c993909f3e5a6",
+      "inspectedImage": "/catalog/wave_454/reindeer-outline-scarf-sleigh.webp",
+      "reviewedAt": "2026-10-27T07:19:50.165465+00:00",
+      "observations": [
+        "Neutral black contours, complete antlers, looking-back head and four separate hoofed legs.",
+        "Harness traces visibly join the reindeer to one empty sleigh with full curved runners and open interior; no gifts or person."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Pulling an Empty Sleigh Outline",
+        "alt": "Black-and-white cartoon reindeer looking back while pulling an empty sleigh through a simple connected harness.",
+        "description": "Long antlers and a short scarf rise above the reindeer's lifted forehoof. Sweeping double runners and an open seat distinguish the empty sleigh behind it."
+      }
+    },
+    {
+      "id": "reindeer-outline-two-friends",
+      "status": "reviewed-from-image",
+      "sourceSha256": "c7aeb600020bd191681232813187c203d87f3d5137ddf6cf2c989bf3d896a610",
+      "imageSha256": "c7aeb600020bd191681232813187c203d87f3d5137ddf6cf2c989bf3d896a610",
+      "inputMetadataSha256": "f7712d7c452c6f1ce8e11d672a9d9a4611f7bf7de3a47600d033d8931688d624",
+      "inspectedImage": "/catalog/wave_454/reindeer-outline-two-friends.webp",
+      "reviewedAt": "2026-10-27T07:19:50.165465+00:00",
+      "observations": [
+        "Tall narrow-faced surprised reindeer beside short broad-faced laughing reindeer; visibly different antler silhouettes.",
+        "Two complete seated bodies with separate hoofed limbs and short tails, drawn in neutral black outlines."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Two Reindeer Friends Outline",
+        "alt": "Black-and-white cartoon of two different reindeer seated back-to-back, one tall and surprised and the other round and laughing.",
+        "description": "Contrasting body proportions, antlers and expressions distinguish the two friends. Folded rear legs and long front legs create an open coloring composition."
+      }
+    },
+    {
+      "id": "reindeer-outline-star-frame",
+      "status": "reviewed-from-image",
+      "sourceSha256": "0b445ba9cc8c72876fa4ab055fdddc5fce787476b243cf12483dfc480539da42",
+      "imageSha256": "0b445ba9cc8c72876fa4ab055fdddc5fce787476b243cf12483dfc480539da42",
+      "inputMetadataSha256": "10c16812d6d8fb604b4113b3099ab02720fc6b6132382985cf2aec79d7c7c93b",
+      "inspectedImage": "/catalog/wave_454/reindeer-outline-star-frame.webp",
+      "reviewedAt": "2026-10-27T07:19:50.165465+00:00",
+      "observations": [
+        "Smiling freckled muzzle, one floppy ear and complete irregular branching antlers above the bust.",
+        "Two cloven forehooves rest on the upper edges of a complete blank five-point star frame; neutral black outlines only."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer with an Empty Star Frame Outline",
+        "alt": "Black-and-white reindeer bust leaning above a large empty five-point star frame, with two forehooves resting on its top edges.",
+        "description": "A smiling freckled muzzle and wide antlers rise above the open star. One lowered ear and a loose forelock give the head a playful asymmetric shape."
+      }
+    },
+    {
+      "id": "reindeer-outline-baking",
+      "status": "reviewed-from-image",
+      "sourceSha256": "4e3602fc5d4b91a309b0c362905c745e55da7b868d63a9198eff12911654c7e9",
+      "imageSha256": "4e3602fc5d4b91a309b0c362905c745e55da7b868d63a9198eff12911654c7e9",
+      "inputMetadataSha256": "e9bf75123fc248a9c8f7132dca1306ad703306289a4bca35d2f3cabbe009aa92",
+      "inspectedImage": "/catalog/wave_454/reindeer-outline-baking.webp",
+      "reviewedAt": "2026-10-27T07:19:50.165465+00:00",
+      "observations": [
+        "Round face, short antlers, large oval eyes and four distinct hoofed limbs beneath a simple apron.",
+        "Three round cookies on a tray held between the forehooves; small separate bowl beside a rear hoof; neutral black contours."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Baker with Cookie Tray Outline",
+        "alt": "Black-and-white upright cartoon reindeer wearing an apron and holding a tray of three cookies, with a small mixing bowl beside one hoof.",
+        "description": "Short antlers, large oval eyes and a scalloped apron distinguish the cheerful baker. The separate bowl and complete cookie tray leave clear open areas for coloring."
+      }
+    },
+    {
+      "id": "reindeer-north-pole-postcard",
+      "status": "reviewed-from-image",
+      "sourceSha256": "a4af549f45c27d1c7fd78a4ccfe9f2f6342baf2e71c1191479199f91c388346d",
+      "imageSha256": "a4af549f45c27d1c7fd78a4ccfe9f2f6342baf2e71c1191479199f91c388346d",
+      "inputMetadataSha256": "d5eb6fb7e3b6cc7897c37af07171b7155cb779de4e7162ce9f7eede4c7b4632c",
+      "inspectedImage": "/catalog/wave_455/reindeer-north-pole-postcard.webp",
+      "reviewedAt": "2026-10-27T07:19:50.165465+00:00",
+      "observations": [
+        "Russet coat, large brown eyes, cream muzzle, blue neck bow and complete branching antlers.",
+        "Blue saddlebag holds paper cards; complete striped post carries a blank cream envelope-shaped plaque with red seal and holly decorations."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer Delivering Cards by a Holiday Post",
+        "alt": "Cartoon reindeer in a blue bow and saddlebag trotting beside a red-and-white decorative post with a blank envelope-shaped plaque.",
+        "description": "Cream cards with small festive symbols peek from the blue satchel. The reindeer's raised foreleg and the plaque's red seal give the delivery scene a clear focal point."
+      }
+    },
+    {
+      "id": "reindeer-holiday-hug",
+      "status": "reviewed-from-image",
+      "sourceSha256": "3df4b3c24afad8ee392f6dc1d607d1b3acbc6c0ee6080b6494f64023b3ed0c32",
+      "imageSha256": "3df4b3c24afad8ee392f6dc1d607d1b3acbc6c0ee6080b6494f64023b3ed0c32",
+      "inputMetadataSha256": "34f412be13699f6f5974c5ee23a9c1149cb5a2cc387f23b54078a5b2d0dbc7da",
+      "inspectedImage": "/catalog/wave_455/reindeer-holiday-hug.webp",
+      "reviewedAt": "2026-10-27T07:19:50.165465+00:00",
+      "observations": [
+        "Elongated ivory muzzle, large amber eyes, thick pale eyebrows and full asymmetric antler crown above charcoal fur.",
+        "One complete small brown bird with red chest perches on the outer antler branch; deliberate rounded shoulder edge and red neckband visible."
+      ],
+      "references": [
+        {
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+          "reason": "General reindeer/caribou identity and broad appearance for natural depictions. No subspecies, sex, provenance or named branded character inferred."
+        },
+        {
+          "publisher": "Alaska Department of Fish and Game",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+          "reason": "General antler, broad-muzzle, coat and hoof morphology. Festive cartoons and crafted objects remain illustrative designs."
+        }
+      ],
+      "copy": {
+        "title": "Reindeer with a Bird on Its Antler",
+        "alt": "Shaggy charcoal-brown cartoon reindeer bust looking up at a tiny red-breasted brown bird perched on one antler branch.",
+        "description": "The small bird grips the outer branch above the reindeer's surprised face. A long cream muzzle, pale eyebrows and narrow red neckband distinguish the wide head-and-shoulders portrait."
+      }
     }
   ]
 }
