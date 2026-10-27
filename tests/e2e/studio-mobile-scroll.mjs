@@ -39,6 +39,9 @@ try {
       const cookie = page.locator('[data-cookie-choice=necessary]:visible');
       if (await cookie.count()) await cookie.click();
       const root = page.locator('.uc-editor');
+      // The normal entry keeps the welcome page; focus mode is an explicit action.
+      await expect(root).not.toHaveAttribute('data-wb-focus', 'true');
+      await page.locator('[data-wb-back-page]').click();
       await expect(root).toHaveAttribute('data-wb-focus', 'true');
       if (await page.locator('[data-inspector-canvas]').isVisible())
         await page.locator('[data-inspector-canvas]').tap();
@@ -161,6 +164,9 @@ try {
           await expect(desktopPage.locator('.uc-editor')).not.toHaveAttribute('aria-busy', 'true', {
             timeout: 60000,
           });
+          const choice = desktopPage.locator('[data-cookie-choice=necessary]:visible').first();
+          if (await choice.count()) await choice.click();
+          await desktopPage.locator('[data-wb-back-page]').click();
           assert.equal(
             await desktopPage
               .locator('.uc-editor')

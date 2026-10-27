@@ -31,18 +31,30 @@
   min-height: 42px;
   border: 1px solid #cfdef1;
   border-radius: 10px;
-  background: #fff;
-  color: #183f72;
+  background: var(--uc-share-button-bg, #fff);
+  color: var(--uc-share-button-fg, #183f72);
   padding: 10px 14px;
   cursor: pointer;
 }
-.uc-share button:hover,
-.uc-share-network:hover {
+.uc-share button:not(:disabled):is(:hover, :focus-visible) {
+  background: var(--uc-share-button-hover-bg, #edf5ff);
+  border-color: var(--uc-share-button-hover-border, #8db6ef);
+  color: var(--uc-share-button-fg, #183f72);
+}
+.uc-share button:not(:disabled):active {
+  background: var(--uc-share-button-active-bg, #dfeeff);
+  border-color: var(--uc-share-button-hover-border, #8db6ef);
+  color: var(--uc-share-button-fg, #183f72);
+}
+.uc-share-network:is(:hover, :focus-visible) {
   background: #edf5ff;
   border-color: #8db6ef;
 }
 .uc-share button:disabled {
-  opacity: 0.55;
+  background: #edf2f8;
+  border-color: #ced9e8;
+  color: #506584;
+  opacity: 1;
   cursor: default;
 }
 .uc-share :focus-visible {
@@ -129,10 +141,16 @@
   justify-content: center;
   gap: 8px;
   width: 100%;
-  background: #075ee6;
-  border-color: #075ee6;
-  color: #fff;
   margin-top: 22px;
+}
+.uc-share .uc-share-native,
+.uc-share .uc-share-publish-button {
+  --uc-share-button-bg: #075ee6;
+  --uc-share-button-hover-bg: #084fba;
+  --uc-share-button-active-bg: #073f95;
+  --uc-share-button-hover-border: #084fba;
+  --uc-share-button-fg: #fff;
+  border-color: #075ee6;
 }
 .uc-share-native svg {
   width: 21px;
@@ -292,9 +310,6 @@
   accent-color: #075ee6;
 }
 .uc-share .uc-share-publish-button {
-  background: #075ee6;
-  color: #fff;
-  border-color: #075ee6;
   width: 100%;
 }
 .uc-share-verification {
