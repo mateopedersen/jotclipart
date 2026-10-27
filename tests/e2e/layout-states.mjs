@@ -13,7 +13,7 @@ const context = await browser.newContext({ reducedMotion: 'reduce', hasTouch: tr
 // Localhost is not an allowed production CDN origin. Keep UI layout checks
 // deterministic while the delivery suite verifies the real R2 CORS response.
 const shareFixture = readFileSync(
-  new URL('../../public/catalog/winter/winter-arctic-fox-resting.webp', import.meta.url),
+  new URL('../../public/catalog/wave_003/winter-arctic-fox-resting.webp', import.meta.url),
 );
 assert.equal(
   createHash('sha256').update(shareFixture).digest('hex').slice(0, 16),
