@@ -1,0 +1,78 @@
+{
+  "wave": "wave_485",
+  "topic": "2027",
+  "collectionTarget": 100,
+  "method": "builtin-image-generation",
+  "research": "data/research/2027-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "2027-small-steps",
+      "title": "Small Steps Big Year 2027 Footprints",
+      "alt": "Three colored shoe prints climb toward a gold star marked 2027 above green Small Steps Big Year lettering.",
+      "description": "Brown, blue and pink soles show different tread patterns along a curling green trail that links the message to the year.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_485/source/2027-small-steps.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-gratitude-year",
+      "title": "Grateful for 2027 Flower Basket",
+      "alt": "A woven basket holds a sunflower, white daisies and a pink lily behind a Grateful For ribbon and blue 2027 tag.",
+      "description": "The arched basket handle and broad green leaves frame the mixed flowers, with the cream ribbon curving across the wicker front.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_485/source/2027-gratitude-year.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-kindness-year",
+      "title": "Kindness in 2027 Bird Pair",
+      "alt": "A blue bird and a pink bird hold a red heart reading Kindness in 2027.",
+      "description": "The birds\u2019 open smiles, rounded wings and yellow feet flank the gold-edged heart; a red flower bow distinguishes the pink bird.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_485/source/2027-kindness-year.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-dream-flight",
+      "title": "Dreams Take Flight 2027 Paper Airplane",
+      "alt": "A white paper airplane flies over navy 2027 numerals and a cream Dreams Take Flight ribbon with a curling gold trail.",
+      "description": "A loose gold orbit and small stars carry the eye around the large beveled year beneath the departing paper plane.",
+      "color": "Blue",
+      "style": "Color",
+      "source": "work/production/wave_485/source/2027-dream-flight.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-bold-beginnings",
+      "title": "Bold Beginnings 2027 Paintbrush",
+      "alt": "Cream Bold Beginnings lettering and gold 2027 numerals sit inside a blue and gold paint sweep above a broad brush.",
+      "description": "Thick curved paint strokes form an open oval around the message, ending near the brush\u2019s dark blue bristles and brown handle.",
+      "color": "Blue",
+      "style": "Color",
+      "source": "work/production/wave_485/source/2027-bold-beginnings.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-bloom-year",
+      "title": "Bloom in 2027 Floral Watering Can",
+      "alt": "A teal watering can marked 2027 holds a pink tulip, yellow sunflower and white daisy beneath Bloom In lettering.",
+      "description": "Gold edging, small painted flowers and pink hearts decorate the can, whose long spout and curved handle remain fully visible.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_485/source/2027-bloom-year.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

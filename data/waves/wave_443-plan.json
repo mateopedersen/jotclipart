@@ -1,0 +1,77 @@
+{
+  "wave": "wave_443",
+  "topic": "elf",
+  "method": "builtin-image-generation",
+  "research": "data/research/elf-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "elf-stargazer",
+      "title": "Elf Looking Through a Brass Telescope",
+      "alt": "Blond-curled cartoon elf in green overalls looking through a brass telescope on a complete wooden tripod.",
+      "description": "One hand rests near the telescope's focusing knob while the elf peers through the eyepiece. Green short overalls, a red shirt and red curled shoes make a compact stargazing character.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_443/source/elf-stargazer.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-leaf-umbrella",
+      "title": "Elf Stepping Under a Leaf Umbrella",
+      "alt": "Braided cartoon elf in a green dress holding a broad leaf umbrella and lifting one red shoe above a tiny puddle.",
+      "description": "Water droplets cling to the large leaf above the elf's zigzag hat. A cream-edged green dress and two dark braids accompany the playful stepping pose.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_443/source/elf-leaf-umbrella.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-cute-gift-greeting",
+      "title": "Elf Waving with a Teal Gift",
+      "alt": "Blue-eyed cartoon elf in green overalls waving one hand and carrying a teal Christmas gift with a red bow.",
+      "description": "A lifted knee and open waving hand give this greeting character a lively silhouette. Brown curled shoes and a red shirt contrast with the long green overalls.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_443/source/elf-cute-gift-greeting.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-stirring-a-soup-pot",
+      "title": "Elf Stirring a Copper Soup Pot",
+      "alt": "Freckled cartoon elf in a green tunic stirring a small steaming copper pot on a low wooden stump.",
+      "description": "Both hands hold the long wooden spoon above the colorful soup. A red sash, cream cuffs and buckled brown shoes distinguish the standing kitchen helper.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_443/source/elf-stirring-a-soup-pot.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-mending-a-curled-boot",
+      "title": "Elf Stitching a Curled Green Boot",
+      "alt": "Copper-curled cartoon elf seated on a gift box, stitching a large green boot held on a little wooden stand.",
+      "description": "A red seam runs up the boot's side beneath its red bow and gold bells. The elf guides the needle and thread in a cream-trimmed green coat and red curled shoes.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_443/source/elf-mending-a-curled-boot.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-felt-elf-craft-kit",
+      "title": "Felt Christmas Elf Sewing Kit",
+      "alt": "Green-clothed felt elf ornament arranged with green fabric, a thread spool, a blunt needle and an embroidery hoop.",
+      "description": "Visible stitches edge the little elf's coat, cap and curled shoes. A complete hanging loop rises above its head, with sewing materials arranged on either side.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_443/source/elf-felt-elf-craft-kit.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

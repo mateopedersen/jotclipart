@@ -1,0 +1,77 @@
+{
+  "wave": "wave_451",
+  "topic": "reindeer",
+  "method": "builtin-image-generation",
+  "research": "data/research/reindeer-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "reindeer-peeking-pine-sprig",
+      "title": "Reindeer Peeking Around a Pine Sprig",
+      "alt": "Blue-eyed cartoon reindeer peeking around a small upright pine sprig tied with a red bow.",
+      "description": "A swept cream forelock and wide antler crown rise above the little pine branch. The reindeer's long muzzle and two front hooves remain visible on either side of the greenery.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_451/source/reindeer-peeking-pine-sprig.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-jingle-bell-trio",
+      "title": "Three Different Christmas Reindeer",
+      "alt": "Three distinct cartoon reindeer arranged together: a seated cinnamon animal, a tall gray one in a cream scarf and a dark-brown one stepping forward.",
+      "description": "Different faces, antlers and body proportions give each member of the trio its own identity. A red bell collar, cream scarf and green bell bow distinguish their outfits.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_451/source/reindeer-jingle-bell-trio.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-snowman-meeting",
+      "title": "Reindeer Greeting a Tiny Snowman",
+      "alt": "Brown cartoon reindeer lowering its nose to the carrot nose of a tiny snowman wearing a green knitted cap.",
+      "description": "The three-ball snowman smiles up with twig arms spread. Cream cheek fur, small white back spots and broad antlers distinguish the four-legged reindeer beside it.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_451/source/reindeer-snowman-meeting.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-holly-ear-bow",
+      "title": "Reindeer Holding a Holly Sprig",
+      "alt": "Seated cartoon reindeer with large brown eyes holding a small holly sprig in its mouth and wearing a cream bow near one ear.",
+      "description": "The folded legs form a long horizontal base below the reindeer's upright chest. Delicate antler branches and a white cheek ruff frame the gentle face above the red berries.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_451/source/reindeer-holly-ear-bow.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-blank-wooden-sign",
+      "title": "Reindeer Presenting a Blank Wooden Sign",
+      "alt": "Teal-eyed cartoon reindeer standing behind a blank wooden sign with two forehooves on its upper edge and rear hooves below.",
+      "description": "Rounded wood grain fills the empty sign, leaving space for a visitor's own wording. A dark forelock, cream chest and wide antlers rise clearly above it.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_451/source/reindeer-blank-wooden-sign.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-sledding-hat",
+      "title": "Reindeer Riding a Red Sled",
+      "alt": "Smiling cartoon reindeer seated on a red sled, wearing a green pom-pom beanie and a fringed gold scarf.",
+      "description": "The reindeer gathers all four hooves on the sled's slatted seat. Gold curved runners and a forward-curling front support complete the little winter vehicle.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_451/source/reindeer-sledding-hat.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

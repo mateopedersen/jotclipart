@@ -1,0 +1,77 @@
+{
+  "wave": "wave_468",
+  "topic": "gingerbread",
+  "method": "builtin-image-generation",
+  "research": "data/research/gingerbread-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "gingerbread-candy-balloon",
+      "title": "Gingerbread Child with a Heart Balloon",
+      "alt": "Small gingerbread child in mint overalls and a yellow hair bow holding a red heart-shaped balloon.",
+      "description": "The floating pose lifts both cookie feet, with one arm spread and the other gripping the thin balloon string.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_468/source/gingerbread-candy-balloon.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-gift-wheelbarrow",
+      "title": "Gingerbread Pushing a Gift Wheelbarrow",
+      "alt": "Gingerbread character in an orange cap and teal vest pushing a red wheelbarrow carrying two ribboned presents.",
+      "description": "The forward-leaning figure grips both handles while the red wheel and metal support legs remain visible.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_468/source/gingerbread-gift-wheelbarrow.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-cookie-puppy",
+      "title": "Gingerbread Puppy Cookie",
+      "alt": "Dog-shaped gingerbread cookie with floppy ears, a raised paw, pink tongue and a green peppermint collar.",
+      "description": "White piping outlines the ears, paws and curved tail around the smiling chocolate-eyed puppy face.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_468/source/gingerbread-cookie-puppy.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-cookie-kitten",
+      "title": "Sleeping Gingerbread Cat Cookie",
+      "alt": "Curled cat-shaped gingerbread cookie with chocolate stripes, closed icing eyes and a small red bow.",
+      "description": "The striped tail wraps around the tucked front paws, with pink icing filling the pointed ears.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_468/source/gingerbread-cookie-kitten.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-cookie-fox",
+      "title": "Gingerbread Fox Cookie",
+      "alt": "Seated fox-shaped gingerbread cookie with white icing cheeks, chest and tail tip, decorated with holly by one ear.",
+      "description": "The broad upright tail balances the pointed ears and small dark chocolate nose above two rounded cookie paws.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_468/source/gingerbread-cookie-fox.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-cookie-owl",
+      "title": "Gingerbread Owl Cookie",
+      "alt": "Round owl-shaped gingerbread cookie with pale green icing eye rings and white scalloped feather piping, perched on an iced branch.",
+      "description": "Large chocolate eyes and an orange beak stand above two tiny orange feet gripping the branch.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_468/source/gingerbread-cookie-owl.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

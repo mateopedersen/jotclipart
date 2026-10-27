@@ -1,0 +1,1026 @@
+{
+  "topic": "reindeer",
+  "keyword": "Reindeer clipart",
+  "target": 50,
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "reviewedAt": "2026-10-27T05:44:40.010154+00:00",
+  "conceptMatrix": "Independent cute Christmas characters, original action and group scenes, crafted objects and lettering, four natural wildlife studies and four separate coloring compositions. Different animal identities and silhouettes; no medium variants.",
+  "rows": [
+    {
+      "briefId": "reindeer-001",
+      "artId": "reindeer-scarf-prance",
+      "title": "Reindeer Prancing in a Striped Scarf",
+      "composition": "A cheerful young reindeer caught in a compact sideways prance, four distinct legs, cream chest, a long teal-and-cream knitted scarf curling behind; no Christmas hat.",
+      "characterDesignMatrix": "chestnut coat, round cheeks, a short broad muzzle, small upward antler branches, huge warm amber eyes and a little dark forelock",
+      "wave": "wave_447",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "0656b853a76b559c116e10cd47f396887eb6f57a00548a491c7a41587bac6363",
+      "sourceReviewedAt": "2026-10-27T06:08:53.154222+00:00",
+      "actualComposition": "Golden amber eyes, short broad muzzle, dark forehead tuft and two short branching antlers. Four separate cloven-hoofed legs, one front leg raised, and long teal-and-cream knitted scarf with complete fringes."
+    },
+    {
+      "briefId": "reindeer-002",
+      "artId": "reindeer-gift-box-peek",
+      "title": "Reindeer Peeking from a Gift Box",
+      "composition": "A wide-eyed small reindeer with head and forelegs emerging from an open round cranberry-red gift box, two cloven forehooves resting naturally on its rim; full antlers and open lid beside box.",
+      "characterDesignMatrix": "warm cinnamon coat, long narrow face, a broad cream muzzle, tall asymmetrical branching antlers, glossy blue eyes and sideways ears",
+      "wave": "wave_447",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "9b9a7252690830ebb953a05e47eea0c8c20dd76cd253b315d03c679d6a916570",
+      "sourceReviewedAt": "2026-10-27T06:08:53.154222+00:00",
+      "actualComposition": "Large blue eyes, long narrow cream muzzle and wide irregular branching antlers. Two cloven forehooves rest on the red circular box rim; complete red-and-gold lid leans at the side."
+    },
+    {
+      "briefId": "reindeer-003",
+      "artId": "reindeer-snowball-roll",
+      "title": "Reindeer Rolling a Snowball",
+      "composition": "One stocky cartoon reindeer gently pushing a small snowball with its forehead, head lowered and all four feet visible; green ear warmers, no other snowman or ground patch.",
+      "characterDesignMatrix": "dark chocolate coat, broad pear-shaped head, cream eyebrows, short rounded nose, low swept-back antlers and lively hazel eyes",
+      "wave": "wave_447",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "412f72834c21bdc0dd72e80c7355acca0d93673e0bbe4ba8bd01246c403a52a3",
+      "sourceReviewedAt": "2026-10-27T06:08:53.154222+00:00",
+      "actualComposition": "Broad dark muzzle, rounded brown eyes, pale eyebrows and green knitted earmuffs below short wide antlers. Four sturdy separate cloven-hoofed legs support the forward lean; nose meets one small textured snowball."
+    },
+    {
+      "briefId": "reindeer-004",
+      "artId": "reindeer-bell-collar-bow",
+      "title": "Reindeer Taking a Festive Bow",
+      "composition": "A slim elegant reindeer lowering its front body in a theatrical bow, one foreleg extended, a red velvet neck ribbon with three gold bells; proud friendly expression.",
+      "characterDesignMatrix": "golden tan coat, slender oval face, tapered cream muzzle, delicate tall antlers, green eyes and a swept cream forehead tuft",
+      "wave": "wave_447",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "e400bf76e2711d3384be2a6e05a7dc8b0ea4212cfc79a01169778ec94f26fae2",
+      "sourceReviewedAt": "2026-10-27T06:08:53.154222+00:00",
+      "actualComposition": "Swept cream forelock, green eyes, slender face and complete tall irregular antlers. Red neck ribbon carries three gold bells; forelegs extend into a bow while both rear legs remain planted."
+    },
+    {
+      "briefId": "reindeer-005",
+      "artId": "reindeer-sleeping-star-blanket",
+      "title": "Reindeer Sleeping Under a Star Blanket",
+      "composition": "A tiny reindeer sleeping curled on its side, four folded legs arranged plausibly, a plum blanket with simple gold stars over the back, a full small antler crown and relaxed ears.",
+      "characterDesignMatrix": "soft gray-brown coat, a small heart-shaped face, a velvety dark nose, low forked antlers and a thick cream cheek ruff",
+      "wave": "wave_447",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "432102b617c579109d9b64af4289abf7b7ef844d389fc125bb2533ec95dc702b",
+      "sourceReviewedAt": "2026-10-27T06:08:53.154222+00:00",
+      "actualComposition": "Closed eyes, broad cream cheeks, gray-brown coat and low branching antler crown. Four folded hoofed limbs around the resting body; plum star-patterned blanket drapes over the back with complete gold edging."
+    },
+    {
+      "briefId": "reindeer-006",
+      "artId": "reindeer-wreath-window-face",
+      "title": "Reindeer in a Holly Wreath",
+      "composition": "A single original reindeer head and short neck centered inside a loose oval holly wreath, ears and branching antlers extending ABOVE the wreath without being clipped; red berries and one cream bow, no detached random limbs.",
+      "characterDesignMatrix": "russet coat, broad rounded forehead, large dark brown eyes, a wide smiling cream muzzle and uneven forward-sweeping antlers",
+      "wave": "wave_447",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "3d678c4be9c34550d1a2730c96c8a3c7adf236b1b6382d0b568ffdd7097f2565",
+      "sourceReviewedAt": "2026-10-27T06:08:53.154222+00:00",
+      "actualComposition": "Large dark brown eyes, russet forehead tuft, broad cream muzzle and asymmetrical complete antlers. Oval holly wreath surrounds the head and short neck, with red berry clusters and a full cream bow at its lower edge."
+    },
+    {
+      "briefId": "reindeer-007",
+      "artId": "reindeer-present-sled-pull",
+      "title": "Reindeer Pulling a Parcel Sled",
+      "composition": "One full four-legged reindeer in a simple green chest harness walking ahead of one tiny complete wooden sled carrying two gifts; visible coherent traces connect chest harness to sled, no Santa.",
+      "characterDesignMatrix": "charcoal-brown coat, long expressive face, silver cream neck ruff, strong branching antlers and golden eyes",
+      "wave": "wave_448",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "e080eb95fd4f93866e1517c8410b6462290c27658445ebcacf10cd89f2eb5175",
+      "sourceReviewedAt": "2026-10-27T06:15:15.231886+00:00",
+      "actualComposition": "Charcoal-brown coat, cream shaggy neck, broad dark muzzle and complete long irregular antlers. Four separate cloven hooves; green harness traces attach to a small complete wooden gift sled."
+    },
+    {
+      "briefId": "reindeer-008",
+      "artId": "reindeer-cocoa-mug-cuddle",
+      "title": "Reindeer Warming a Cocoa Mug",
+      "composition": "A seated cute fantasy reindeer holding one small red cocoa mug between two rounded cloven forehooves, rear legs forward, cream marshmallows visible, small blue neckerchief; no human fingers.",
+      "characterDesignMatrix": "honey brown coat, round little face, a button nose, stubby forked antlers and very large emerald eyes",
+      "wave": "wave_448",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "7cbe58abecc1318932a5a0920eb45e6187becd36b2521ca99d7ce301ef4d0c03",
+      "sourceReviewedAt": "2026-10-27T06:15:15.231886+00:00",
+      "actualComposition": "Large emerald eyes, short branched antlers, pale round muzzle and blue snowflake-patterned neckerchief. Two rounded cloven forehooves hold a red marshmallow-filled mug; seated rear hooves point outward."
+    },
+    {
+      "briefId": "reindeer-009",
+      "artId": "reindeer-ice-skating-solo",
+      "title": "Reindeer on Ice Skates",
+      "composition": "One playful upright cartoon reindeer balancing on two properly attached little silver-bladed rear-hoof skates, two forehooves spread, green pom-pom beanie between exposed full antlers, no ice patch or extra legs.",
+      "characterDesignMatrix": "copper brown coat, soft square face, long cream muzzle, upward curved antler branches and oval blue-gray eyes",
+      "wave": "wave_448",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "7b95c201ebc898f0e886d916f1cbe4e1b0a1cd54e21ffb0bceab575b839482b6",
+      "sourceReviewedAt": "2026-10-27T06:15:15.231886+00:00",
+      "actualComposition": "Large blue eyes, slim cream muzzle and green snowflake-patterned beanie between complete antlers. Two cloven forehooves spread outward; two separate rear-hoof skates have complete attached silver blades."
+    },
+    {
+      "briefId": "reindeer-010",
+      "artId": "reindeer-holiday-letter-carrier",
+      "title": "Reindeer Carrying Holiday Mail",
+      "composition": "A four-legged little reindeer with a red mail satchel over its shoulder, one blank cream envelope gently held by its mouth, walking toward the viewer; all straps and hooves coherent.",
+      "characterDesignMatrix": "deep umber coat, triangular face with big cheeks, white eye rings, short antlers and large brown eyes",
+      "wave": "wave_448",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "32789fad3deae0328be9db6686643eb7502a1c4c9236747537601e1bde0fad35",
+      "sourceReviewedAt": "2026-10-27T06:15:15.231886+00:00",
+      "actualComposition": "Large brown eyes, pale cheek patches, dark forelock and broad branching antlers. Envelope held gently at the mouth; red buckled satchel and coherent shoulder strap above four separate hoofed legs."
+    },
+    {
+      "briefId": "reindeer-011",
+      "artId": "reindeer-lantern-nose-guide",
+      "title": "Reindeer Beside a Winter Lantern",
+      "composition": "A fluffy reindeer looking curiously down at a complete brass lantern resting beside a front hoof, a burgundy cable-knit neck warmer, no hand holding or extra leg.",
+      "characterDesignMatrix": "pale caramel coat, round forehead, broad white muzzle, short wide antlers and amber oval eyes",
+      "wave": "wave_448",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "c34b04ba3cf3ef5b7c4c4d771f6c358ec10a20d77fa3b68d68132064605e933d",
+      "sourceReviewedAt": "2026-10-27T06:15:15.231886+00:00",
+      "actualComposition": "Warm amber eyes, pale muzzle, short broad antlers and thick burgundy cable-knit neck warmer. Complete brass lantern with ring handle stands beside four visible cloven hooves; reindeer looks down toward it."
+    },
+    {
+      "briefId": "reindeer-012",
+      "artId": "reindeer-bauble-antler-dance",
+      "title": "Reindeer Dancing with Antler Ornaments",
+      "composition": "A cheerful reindeer doing a compact side-step with one rear hoof lifted, three light red and gold baubles hanging coherently from different antler branches, no tangled wires or costume.",
+      "characterDesignMatrix": "walnut coat, long narrow face, cream cheek patches, a small nose and tall swept branching antlers with bright green eyes",
+      "wave": "wave_448",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "356b1ebb87b3e45e5781af73b3317ac2dd7d7d7e21a9d39904a28703abfa5a03",
+      "sourceReviewedAt": "2026-10-27T06:15:15.231886+00:00",
+      "actualComposition": "Large green eyes, long narrow face, cream neck patch and tall wide branched antlers. Three complete red-and-gold baubles hang on separate loops; one rear hoof raised and the other three hoofed legs clearly separated."
+    },
+    {
+      "briefId": "reindeer-013",
+      "artId": "reindeer-book-nook",
+      "title": "Reindeer Looking at a Storybook",
+      "composition": "A seated cartoon reindeer leaning over an open blank green storybook on a low folded red cushion, both forehooves on either side of the book, no writing or human hands.",
+      "characterDesignMatrix": "mocha coat, wide round cheeks, a short white muzzle, small rounded forked antlers and violet eyes",
+      "wave": "wave_449",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "c3b3dee9238363645227e4cd9364248f91be881da448958259da3bd526f326ae",
+      "sourceReviewedAt": "2026-10-27T06:27:36.228855+00:00",
+      "actualComposition": "Large violet eyes, rounded pale cheeks and short branching antlers above a dark forehead tuft. Both forehooves rest on the open blank book; seated on a complete red cushion with gold piping."
+    },
+    {
+      "briefId": "reindeer-014",
+      "artId": "reindeer-knitted-earmuff-listener",
+      "title": "Reindeer Wearing Knitted Earmuffs",
+      "composition": "One full side-turned young reindeer listening with one ear raised, oversized red knitted earmuffs curving behind antlers, a yellow scarf tied in a short bow, weight securely on four cloven hooves.",
+      "characterDesignMatrix": "ash brown coat, pear-shaped face, a long cream nose, small thin antlers and honey-colored eyes",
+      "wave": "wave_449",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "dee826f250540e897b26a75ab0e5f1633b9d551ce802e1a4f5ae5c2e8e57c2c0",
+      "sourceReviewedAt": "2026-10-27T06:27:36.228855+00:00",
+      "actualComposition": "Brown eyes, broad pale muzzle and red earmuffs with band behind the small antlers. Yellow knitted neck bow above four separate cloven-hoofed legs and a few white back markings."
+    },
+    {
+      "briefId": "reindeer-015",
+      "artId": "reindeer-snowflake-butterfly-pose",
+      "title": "Reindeer Catching a Snowflake",
+      "composition": "A seated little reindeer gazing upward at one complete large snowflake just above its dark nose, two forehooves lifted in surprise, no hat and no landscape.",
+      "characterDesignMatrix": "golden brown coat, little heart-shaped face, a cream blaze, wide delicate antlers and glossy teal eyes",
+      "wave": "wave_449",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "ad303f345df96be3e43db0f0622a539c76c71deb8c0d9777ee539db8464b33aa",
+      "sourceReviewedAt": "2026-10-27T06:27:36.228855+00:00",
+      "actualComposition": "Large teal eyes look upward beneath a broad complete antler crown; open mouth and pale muzzle. Single blue snowflake above the nose, both forehooves lifted and two rear hoofed legs folded below the seated body."
+    },
+    {
+      "briefId": "reindeer-016",
+      "artId": "reindeer-ornament-painter",
+      "title": "Reindeer Decorating a Christmas Ornament",
+      "composition": "An upright cute fantasy reindeer using a soft brush held between cloven forehooves to paint a star on one LARGE green bauble on a small cradle, tiny red paint pot; no human fingers.",
+      "characterDesignMatrix": "chocolate coat, broad soft-square head, cream jaw, short forward antlers, a curled chestnut forelock and amber eyes",
+      "wave": "wave_449",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "85dee6af5f60627bf1aa72915216e18523b350596729ec653e70118f906af8d7",
+      "sourceReviewedAt": "2026-10-27T06:27:36.228855+00:00",
+      "actualComposition": "Copper curled forelock, large amber eyes, short forked antlers and cream muzzle. Forehoof-held brush touches gold star on a green bauble; opposite hoof steadies it above a wooden cradle and small red paint pot."
+    },
+    {
+      "briefId": "reindeer-017",
+      "artId": "reindeer-carrot-basket",
+      "title": "Reindeer with a Carrot Basket",
+      "composition": "A four-legged young reindeer lowering its nose toward a tiny wicker basket holding three carrots; a green gingham neck bow, whole basket handle and all legs visible.",
+      "characterDesignMatrix": "light tawny coat, small oval face, broad dark nose, low twig-like antlers and smiling brown eyes",
+      "wave": "wave_449",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "d1162b87e7ab69c7bf31d45abae2976dc3b18c6e37bea441b44943e6e1a5c376",
+      "sourceReviewedAt": "2026-10-27T06:27:36.228855+00:00",
+      "actualComposition": "Large brown eyes, pale rounded muzzle and green gingham bow below short antlers. Nose reaches toward a small wicker basket holding three carrots; handle, green carrot tops and four separate legs remain complete."
+    },
+    {
+      "briefId": "reindeer-018",
+      "artId": "reindeer-ribbon-tail-play",
+      "title": "Reindeer Playing with a Ribbon Spool",
+      "composition": "A mischievous reindeer turning its head back to watch a loose red ribbon unrolling from one complete spool beside its hind hoof; playful curved four-legged pose, no ribbon tied around legs.",
+      "characterDesignMatrix": "reddish sable coat, rounded forehead, white cheek tufts, one slightly bent antler tip and hazel eyes",
+      "wave": "wave_449",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "d8cbb301790124844eacd505587b382ac79b1cda5f76304a9abd8c14657740d7",
+      "sourceReviewedAt": "2026-10-27T06:27:36.228855+00:00",
+      "actualComposition": "Hazel eyes glance backward beneath small irregular antlers and a swept russet forelock. Four distinct cloven-hoofed legs; complete spool and loose red ribbon lie beside the rear hoof without wrapping around the legs."
+    },
+    {
+      "briefId": "reindeer-019",
+      "artId": "reindeer-holiday-cape-greeting",
+      "title": "Reindeer in a Festive Cape",
+      "composition": "A proud short-bodied reindeer standing three-quarter front in a deep green velvet capelet with cream edging and one gold clasp, one forehoof politely lifted, a small red bow on one antler.",
+      "characterDesignMatrix": "dark fawn coat, broad heart-shaped face, a long pale muzzle, tall branching antlers and large gray-blue eyes",
+      "wave": "wave_450",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "1ee94d4b5f96add3a88b8681ba6e25794c4b7a07aad783884cac881d564029c7",
+      "sourceReviewedAt": "2026-10-27T06:41:05.134517+00:00",
+      "actualComposition": "Large gray-blue eyes, long pale muzzle and full branching antlers with one small red bow. Deep green velvet capelet with cream edging and gold clasp; one raised forehoof, three planted hooves and short tail."
+    },
+    {
+      "briefId": "reindeer-020",
+      "artId": "reindeer-family-nuzzle",
+      "title": "Two Reindeer Sharing a Nuzzle",
+      "composition": "TWO distinctly designed reindeer, a larger broad-muzzled brown animal and a smaller cream-cheeked one, gently touching noses in a curved intimate composition; both complete bodies, no copied face.",
+      "characterDesignMatrix": "larger chestnut reindeer has broad heavy antlers and amber eyes; smaller gray-brown reindeer has short thin antlers, round face and dark brown eyes",
+      "wave": "wave_450",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "5715e90cfbbface3c01224a7b8a75a7b4e4e09d9eaa27e4e069f74fe37105774",
+      "sourceReviewedAt": "2026-10-27T06:41:05.134517+00:00",
+      "actualComposition": "Larger chestnut reindeer has broad heavy antlers and amber eyes; smaller gray-brown figure has short thin antlers and dark eyes. Two complete four-legged bodies lean inward with noses meeting; different coat colors, proportions and faces."
+    },
+    {
+      "briefId": "reindeer-021",
+      "artId": "reindeer-toy-train-watch",
+      "title": "Reindeer Watching a Toy Train",
+      "composition": "A lying cartoon reindeer with forelegs folded neatly watching one tiny red wooden locomotive beside its nose, a long green scarf looped loosely at neck; no wagons.",
+      "characterDesignMatrix": "soft charcoal coat, wide oval face, broad ivory muzzle, slender antler crown and large emerald eyes",
+      "wave": "wave_450",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "5bf95e76167f0d6fcc2a0e0b72ac4d78d8dfc103d9bdbb9f54ea0f90c504cd1a",
+      "sourceReviewedAt": "2026-10-27T06:41:05.134517+00:00",
+      "actualComposition": "Dark gray coat, pale face and chest, large emerald eyes and complete tall antlers. Folded forelegs beside one red locomotive; long green knitted scarf drapes across the neck and lies beside the body."
+    },
+    {
+      "briefId": "reindeer-022",
+      "artId": "reindeer-star-wand-parade",
+      "title": "Reindeer with a Star Wand",
+      "composition": "A joyful upright fantasy reindeer taking a little marching step, gold star wand tucked naturally between its cloven forehooves, a red-and-cream striped neck bow, no human palms.",
+      "characterDesignMatrix": "golden cinnamon coat, round smiling face, a small dark nose, curly forehead tuft, short uneven antlers and violet eyes",
+      "wave": "wave_450",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "1b2922ff0602a1bcd442056ec88ed94337c86ea810e9d3f1d4970b91422cc932",
+      "sourceReviewedAt": "2026-10-27T06:41:05.134517+00:00",
+      "actualComposition": "Curly gold forelock, large violet eyes, cream muzzle and short uneven antlers. Both cloven forehooves clasp the gold star wand; red-and-cream neck bow and one lifted rear leg."
+    },
+    {
+      "briefId": "reindeer-023",
+      "artId": "reindeer-sack-snooze",
+      "title": "Reindeer Napping Against a Gift Sack",
+      "composition": "A sleepy small reindeer leaning its cheek against one soft full green gift sack, sitting with rear hooves visible, eyes half closed, one tiny gold bell on collar.",
+      "characterDesignMatrix": "dark mahogany coat, long slim face, white brow tufts, broad branching antlers and soft brown sleepy eyes",
+      "wave": "wave_450",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "a46d8d710ebce6c22afca9a318d97f3f26d3ece82a5483da0be73b5de2546d01",
+      "sourceReviewedAt": "2026-10-27T06:41:05.134517+00:00",
+      "actualComposition": "Half-closed brown eyes, pale eyebrows, long cream muzzle and wide branching antlers. Cheek rests on a tied green sack with gold drawstring; red collar with one gold bell and seated rear hooves visible."
+    },
+    {
+      "briefId": "reindeer-024",
+      "artId": "reindeer-leaping-candy-arch",
+      "title": "Reindeer Leaping a Candy Cane",
+      "composition": "An energetic compact reindeer leaping sideways over ONE low complete red-and-white candy cane lying in a curved arch, four separate tucked hooves, a short blue scarf.",
+      "characterDesignMatrix": "bright chestnut coat, slightly angular smiling face, pale muzzle, thick curved antlers and green eyes",
+      "wave": "wave_450",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "e7739ef663cd130e9c229889a749e51b2d171c6c3e6388a7fef444692279cf1b",
+      "sourceReviewedAt": "2026-10-27T06:41:05.134517+00:00",
+      "actualComposition": "Large green eyes, long smiling cream muzzle, chestnut forelock and broad complete antlers. Four distinct raised hoofed legs, short blue scarf and one complete red-and-white curved candy cane beneath the leap."
+    },
+    {
+      "briefId": "reindeer-025",
+      "artId": "reindeer-peeking-pine-sprig",
+      "title": "Reindeer Behind a Pine Sprig",
+      "composition": "Clean 2D cartoon bust of a curious reindeer peeking around a small upright pine branch tied with a red bow; complete head, both ears and full antlers, clearly an intentionally framed bust.",
+      "characterDesignMatrix": "caramel coat, broad triangular face, very round blue eyes, short dark muzzle and long upward antlers",
+      "wave": "wave_451",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "f04de73aade1240aefd431028c8dbd93372349ca12b6751dc6ad83bb2bc7ddca",
+      "sourceReviewedAt": "2026-10-27T06:49:48.410878+00:00",
+      "actualComposition": "Large blue eyes, cream forehead tuft, wide complete antlers and long pale muzzle. Pine sprig with complete red bow in front of the torso; two front hooves visible beneath the branch and no canvas-edge crop."
+    },
+    {
+      "briefId": "reindeer-026",
+      "artId": "reindeer-jingle-bell-trio",
+      "title": "Three Reindeer with Jingle Bells",
+      "composition": "THREE full small cartoon reindeer in a shallow curved row, each different coat, face, antler shape, pose and collar; one sitting, one standing, one taking a step. No identical bases.",
+      "characterDesignMatrix": "one round chestnut character with red bell collar; one slender gray-brown with cream scarf; one stocky dark brown with green bow and small bells",
+      "wave": "wave_451",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "03267a55e0dbb1be8f281e941cbd98ed2cc8e431ff2d36ceb76999a890ffc91c",
+      "sourceReviewedAt": "2026-10-27T06:49:48.410878+00:00",
+      "actualComposition": "Seated round cinnamon figure, lanky gray standing figure and stocky dark-brown stepping figure have visibly different faces and antlers. Red collar with gold bells, cream knitted scarf and green bow with bells; three complete separate bodies."
+    },
+    {
+      "briefId": "reindeer-027",
+      "artId": "reindeer-snowman-meeting",
+      "title": "Reindeer Greeting a Tiny Snowman",
+      "composition": "One four-legged cartoon reindeer gently touching a tiny three-ball snowman with its dark nose; snowman has a green cap and carrot nose, no human figures or snowfield.",
+      "characterDesignMatrix": "warm umber coat, long pale muzzle, rounded cheeks, wide forked antlers and hazel eyes",
+      "wave": "wave_451",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "cff4a0d5e6e2bcb425512de4bc3ca3cca112fe130bb969a52db7caca51fe8077",
+      "sourceReviewedAt": "2026-10-27T06:49:48.410878+00:00",
+      "actualComposition": "Reindeer's broad dark nose touches the snowman's carrot; brown eyes and complete branching antlers. Tiny three-ball snowman has green pom-pom cap, two twig arms and black buttons beside four full reindeer legs."
+    },
+    {
+      "briefId": "reindeer-028",
+      "artId": "reindeer-holly-ear-bow",
+      "title": "Reindeer Holding a Holly Sprig",
+      "composition": "An elegant seated cartoon reindeer with a small holly sprig held lightly in the mouth and a cream velvet bow near one ear, feet folded to one side, complete antlers.",
+      "characterDesignMatrix": "light cocoa coat, narrow heart-shaped head, wide glossy brown eyes and delicate antlers with one inward-curving branch",
+      "wave": "wave_451",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "cdcbea5364cdc1bc68a68521752c65768f8a5229920cd32f6497839ffb3b67cf",
+      "sourceReviewedAt": "2026-10-27T06:49:48.410878+00:00",
+      "actualComposition": "Large glossy brown eyes, narrow cream muzzle, cream ear bow and delicate full antlers. Small holly sprig with red berries held at the mouth; four folded hoofed limbs form a complete seated silhouette."
+    },
+    {
+      "briefId": "reindeer-029",
+      "artId": "reindeer-blank-wooden-sign",
+      "title": "Reindeer Presenting a Blank Sign",
+      "composition": "A friendly little cartoon reindeer standing behind a short blank rounded wooden sign, two forehooves resting on its upper edge and rear hooves visible below; full antlers above sign.",
+      "characterDesignMatrix": "dark cinnamon coat, round face, a cream oval muzzle, short many-branched antlers and large teal eyes",
+      "wave": "wave_451",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "5aa15c36164c1b8f2195f92a5a9381b7ba233f777891c9bdb931c6b0471fa153",
+      "sourceReviewedAt": "2026-10-27T06:49:48.410878+00:00",
+      "actualComposition": "Large teal eyes, pale smiling muzzle, dark forehead tuft and complete broad antlers. Two cloven forehooves rest on blank rounded sign; two rear hoofed legs remain visible beneath it."
+    },
+    {
+      "briefId": "reindeer-030",
+      "artId": "reindeer-sledding-hat",
+      "title": "Reindeer Riding a Small Sled",
+      "composition": "A seated cartoon reindeer riding one compact red sled, four hooves arranged clearly, a green knitted cap between exposed full antlers and a short gold scarf; full sled runners.",
+      "characterDesignMatrix": "pale brown coat, chubby heart-shaped face, deep blue eyes, broad pale muzzle and low antler forks",
+      "wave": "wave_451",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "e5cb06daa50473994f5f24d90c247065d6660e00ff6b27bf848ec74ad2632df4",
+      "sourceReviewedAt": "2026-10-27T06:49:48.410878+00:00",
+      "actualComposition": "Large blue eyes, cream muzzle and green knitted beanie between full antlers, with a gold knitted scarf. Seated four-hoof pose on red slatted sled; both gold curved runners and full front curl visible."
+    },
+    {
+      "briefId": "reindeer-031",
+      "artId": "reindeer-patchwork-toy",
+      "title": "Patchwork Reindeer Toy",
+      "composition": "OBJECT ONLY a soft patchwork reindeer plush toy, seated with two floppy fabric ears, four stitched hooves, soft felt antlers, a red-and-green checked scarf and one full seam along its belly.",
+      "characterDesignMatrix": "cream and warm brown fabric panels, oval embroidered eyes, soft black fabric nose and small felt antlers",
+      "wave": "wave_452",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "9b902831bcf3fd3b2db0ce70a43be40db1a0535735e79d0a952f0bcef8e76e06",
+      "sourceReviewedAt": "2026-10-27T06:58:17.222321+00:00",
+      "actualComposition": "Brown and cream fabric panels, visible central seams, dark embroidered eyes and soft black nose. Four stitched cloven hooves, floppy ears, soft felt antlers and a checked fringed scarf."
+    },
+    {
+      "briefId": "reindeer-032",
+      "artId": "reindeer-wooden-rocker",
+      "title": "Wooden Reindeer Rocker",
+      "composition": "OBJECT ONLY a small carved wooden reindeer rocking toy with a green leather seat, simple shaped antlers, red neck bow and two complete curved wooden rockers joined by visible crossbars.",
+      "characterDesignMatrix": "honey-colored carved wood, softly rounded muzzle, painted dark eyes and broad stylized wooden antlers",
+      "wave": "wave_452",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "c26a45f86ca836acf92a1984d84eebaf10ebd5aea8f4a42c26b0d1bec04b5a73",
+      "sourceReviewedAt": "2026-10-27T06:58:17.222321+00:00",
+      "actualComposition": "Honey-colored wood grain, painted dark eyes, carved rounded muzzle and complete wooden antlers. Green seat with gold studs, red neck bow, four wooden hoofed legs and paired curved rockers joined by crossbars."
+    },
+    {
+      "briefId": "reindeer-033",
+      "artId": "reindeer-paper-wreath-decoration",
+      "title": "Paper Reindeer Christmas Wreath",
+      "composition": "OBJECT ONLY an original layered-paper circular wreath with a single stylized REINDEER head at its lower center, folded green leaves, red berries and two cream paper bells; no live deer.",
+      "characterDesignMatrix": "flat cocoa paper head, tiny dark eyes, pale paper muzzle and thin layered brown antlers",
+      "wave": "wave_452",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "e6cd3fb769b5fab80b1c41d1b6fdbb35cbc3ce1fba39b7dcc060c70b24061426",
+      "sourceReviewedAt": "2026-10-27T06:58:17.222321+00:00",
+      "actualComposition": "Layered green paper leaves, complete circular outline and two cream paper bells on opposite sides. Flat brown reindeer head at the lower center has pale muzzle, small dark eyes and complete paper antlers; red berry clusters around the ring."
+    },
+    {
+      "briefId": "reindeer-034",
+      "artId": "reindeer-reindeer-cookie-display",
+      "title": "Reindeer Iced Cookie",
+      "composition": "OBJECT ONLY one large reindeer-shaped iced biscuit reclining across a small cream napkin, gold-brown biscuit edge, cream muzzle icing, dark nose and green scarf icing; no plate and no live animal.",
+      "characterDesignMatrix": "one independent curled resting reindeer cookie silhouette with cocoa icing and small gold sugar antlers",
+      "wave": "wave_452",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "5096d5f8cfa71597c5f71f14949e4bb3df01646d93b26544f4694d705a7ba244",
+      "sourceReviewedAt": "2026-10-27T06:58:17.222321+00:00",
+      "actualComposition": "Single reindeer-shaped biscuit has brown icing, golden edge, raised gold antler icing and dark chocolate nose. Cream napkin below the resting cookie, green piped scarf and complete folded iced hoof shapes; no live animal."
+    },
+    {
+      "briefId": "reindeer-035",
+      "artId": "reindeer-reindeer-ornament-mobile",
+      "title": "Reindeer Hanging Ornament",
+      "composition": "OBJECT ONLY an elegant full-body reindeer Christmas ornament made of translucent amber glass with a complete gold hanging loop, metal antler caps and one red ribbon; no extra live deer.",
+      "characterDesignMatrix": "thin amber-glass torso, little black painted eyes, small gold-capped branched antlers and four delicate glass hooves",
+      "wave": "wave_452",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "b57d40af1a5cc005c902899ad844006fbb7c7a4c8688735ec7221b87462bf74f",
+      "sourceReviewedAt": "2026-10-27T06:58:17.222321+00:00",
+      "actualComposition": "Transparent amber glass body with reflected highlights, dark painted eyes and gold-capped complete antlers. Full hanging loop and red bow above the head; four small glass hoofed legs and short glass tail."
+    },
+    {
+      "briefId": "reindeer-036",
+      "artId": "reindeer-merry-christmas-lettering",
+      "title": "Merry Christmas Reindeer Greeting",
+      "composition": "Original playful lettering reading exactly MERRY CHRISTMAS in two balanced lines, one tiny full reindeer curled beside the final S and a loose holly sprig, no other words.",
+      "characterDesignMatrix": "tiny round chestnut cartoon reindeer with green scarf, dark nose, short antlers and closed smiling eyes",
+      "wave": "wave_452",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "57f7ea2ae302e9d8ff33debe0a01fb2c3c48682331101c0994cd7a187ec3ead1",
+      "sourceReviewedAt": "2026-10-27T06:58:17.222321+00:00",
+      "actualComposition": "Correctly spelled MERRY above CHRISTMAS in rounded red, green and cream patterned letters with white snowy tops. Tiny curled reindeer has closed eyes, short complete antlers and green scarf beside the last letters; holly above the wording."
+    },
+    {
+      "briefId": "reindeer-037",
+      "artId": "reindeer-reindeer-crossing-sign",
+      "title": "Reindeer Crossing Holiday Sign",
+      "composition": "OBJECT ONLY a decorative red-and-green wooden sign on a short complete post reading exactly REINDEER CROSSING with a small prancing reindeer silhouette inset, a gold bell and bow; no real road regulation claim.",
+      "characterDesignMatrix": "flat dark-brown inset silhouette with a clearly branched reindeer antler profile",
+      "wave": "wave_453",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "ece0663e566836499ae9a2574f56ce8263fbd71003d9bb896a0b48ed99cf0296",
+      "sourceReviewedAt": "2026-10-27T07:08:32.618579+00:00",
+      "actualComposition": "Correctly spelled REINDEER CROSSING on a pale wood panel with a dark prancing reindeer inset. Complete red-and-green striped post, gold-edged border, bow and hanging bell with holly decorations."
+    },
+    {
+      "briefId": "reindeer-038",
+      "artId": "reindeer-antler-light-garland",
+      "title": "Reindeer Antler Light Garland",
+      "composition": "OBJECT ONLY a loose half-circle garland of three clearly different little felt reindeer faces separated by gold stars and holly, one complete string with both ends and no text.",
+      "characterDesignMatrix": "first cocoa round face with wide antlers, second cream oval face with short forks, third chestnut heart face with curved antlers; all distinct",
+      "wave": "wave_453",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "54d22bd5db28dca22d9b28bdd60a3bcf8cb844612958a30898848df4b5d8e1d3",
+      "sourceReviewedAt": "2026-10-27T07:08:32.618579+00:00",
+      "actualComposition": "Three visibly different felt faces: brown open-eyed, cream closed-eye smiling and chestnut long-eared; different antlers. Complete end loops and red bows; gold stars and holly separate the three heads along a curved hanging arrangement."
+    },
+    {
+      "briefId": "reindeer-039",
+      "artId": "reindeer-lichen-forager",
+      "title": "Reindeer Lowering Its Head",
+      "composition": "Carefully observed painterly wildlife clipart of a stocky REINDEER lowering its broad muzzle to a small isolated lichen sprig, four full sturdy legs, wide cloven hooves, cream neck ruff and branching asymmetrical antlers. No holiday outfit, background or species/subspecies label.",
+      "characterDesignMatrix": "deep brown winter coat with pale neck and muzzle, broad snout, natural dark eyes and low wide branching antlers",
+      "wave": "wave_453",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "cf30a15a00f80aa6bf32243e9d953a31698f969c3988ddf07f711aa86df93852",
+      "sourceReviewedAt": "2026-10-27T07:08:32.618579+00:00",
+      "actualComposition": "Shaggy brown winter coat, broad pale muzzle, natural dark eyes and complete irregular antlers angled above lowered head. Four sturdy cloven-hoofed legs support the forward bend beside one small lichen sprig; no landscape."
+    },
+    {
+      "briefId": "reindeer-040",
+      "artId": "reindeer-tundra-walking",
+      "title": "Reindeer Walking in Profile",
+      "composition": "Carefully observed painterly wildlife clipart of a sturdy REINDEER walking left in calm full profile, one lifted forehoof, broad cloven hooves, thick pale neck ruff, short tail and long irregular branched antlers. No props or landscape.",
+      "characterDesignMatrix": "gray-brown coat with broad cream neck patch, natural dark eyes, broad rounded muzzle and wide asymmetric antlers",
+      "wave": "wave_453",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "f619032a49f3ea6d114d62fa7490d948f07612377ab487b1e092fc2e701a4a14",
+      "sourceReviewedAt": "2026-10-27T07:08:32.618579+00:00",
+      "actualComposition": "Long asymmetric antler crown, broad muzzle, pale shaggy neck and natural dark eye in left-facing profile. One front hoof lifted, three other legs separated beneath the brown-gray body, short pale tail and light flank stripe."
+    },
+    {
+      "briefId": "reindeer-041",
+      "artId": "reindeer-mother-calf",
+      "title": "Reindeer and a Resting Calf",
+      "composition": "Carefully observed painterly wildlife clipart of an adult REINDEER standing protectively beside a small resting dark-coated calf. Adult has full branched antlers and pale neck; newborn-style calf has NO antlers or white fawn spots. Both complete figures, no scenery.",
+      "characterDesignMatrix": "adult brown-gray coat and pale muzzle with natural eyes; small dark-chocolate calf with short ears and smooth antlerless head",
+      "wave": "wave_453",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "90d4467404931cf2c9b4b2f7c951ebcf96c67c88dc653b7ec2a769099bb20193",
+      "sourceReviewedAt": "2026-10-27T07:08:32.618579+00:00",
+      "actualComposition": "Large antlered adult stands behind a dark-chocolate calf with no antlers and no white fawn spots. Adult's four sturdy legs and calf's folded hoofed limbs remain visible; natural broad muzzles and short tails."
+    },
+    {
+      "briefId": "reindeer-042",
+      "artId": "reindeer-snow-coat-rest",
+      "title": "Reindeer Resting with Folded Legs",
+      "composition": "Carefully observed painterly wildlife clipart of a pale winter-coated REINDEER resting upright with all four legs folded coherently under its sturdy body, looking back over shoulder, broad muzzle, short tail and complete asymmetric antlers. No snow ground or landscape.",
+      "characterDesignMatrix": "light gray-cream shaggy winter coat, dark broad nose and natural brown eyes with long branched antlers",
+      "wave": "wave_453",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "dc2519ab9d4e05f915f7d432e5cb708ceb6a95578a8ca2643bec8a5caf0cf30f",
+      "sourceReviewedAt": "2026-10-27T07:08:32.618579+00:00",
+      "actualComposition": "Light gray-cream shaggy coat, natural brown eyes, broad dark muzzle and complete asymmetric antler crown. Resting body with folded legs and visible cloven hooves; head turned back toward its short pale tail."
+    },
+    {
+      "briefId": "reindeer-043",
+      "artId": "reindeer-felt-bookmark",
+      "title": "Reindeer Bookmark Craft",
+      "composition": "OBJECT ONLY a complete tall felt bookmark shaped as a different sleepy reindeer with narrow body, stitched cloven feet, small green bow tie and two long soft felt antlers, flat front view with no hanging loop.",
+      "characterDesignMatrix": "rust-red felt head, narrow cream muzzle, embroidered sleepy eyes and slender brown felt antlers",
+      "wave": "wave_454",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "d9c575307a7e9521fa541162b44f68738310d6c69cefcb329f1f7058ca9b43dc",
+      "sourceReviewedAt": "2026-10-27T07:19:50.165465+00:00",
+      "actualComposition": "Rust-red felt body, cream muzzle and belly, closed embroidered eyes and long soft antlers. Small green bow tie and four stitched hoof shapes below a slim elongated body; no hanging loop."
+    },
+    {
+      "briefId": "reindeer-044",
+      "artId": "reindeer-reindeer-snow-globe",
+      "title": "Reindeer Snow Globe Decoration",
+      "composition": "OBJECT ONLY one transparent snow globe containing a small prancing reindeer on a tiny white mound, evergreen-shaped green base with gold trim and red bow; full glass dome, no elf or hand.",
+      "characterDesignMatrix": "miniature dark brown reindeer with complete antlers, cream muzzle and a gold neck bell inside the globe",
+      "wave": "wave_454",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "235c300dbec880e0e5702244d4dd33ba7ee77b4fbe051d2edf7043e904d94fd8",
+      "sourceReviewedAt": "2026-10-27T07:19:50.165465+00:00",
+      "actualComposition": "Complete transparent globe encloses one brown reindeer with short antlers, pale muzzle and red bell collar on a small white mound. Green branch-shaped base with gold trim and large red bow; no hand or live character outside the glass."
+    },
+    {
+      "briefId": "reindeer-045",
+      "artId": "reindeer-outline-scarf-sleigh",
+      "title": "Reindeer Pulling an Empty Sleigh Outline",
+      "composition": "BLACK AND WHITE coloring clipart: one long-legged reindeer in a coherent simple harness pulling ONE small EMPTY sleigh with complete curved runners; reindeer looking over shoulder, four feet distinct, no gift or person. New original pose, no color-version reuse.",
+      "characterDesignMatrix": "long oval muzzle, broad natural branched antlers, narrow eyes, strong cloven hooves and a short curly scarf",
+      "wave": "wave_454",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "6893b67d291c6a8d3b6a2a7a05cc8d138cf92686aa91bc3c6c67bb7aa9fcd31e",
+      "sourceReviewedAt": "2026-10-27T07:19:50.165465+00:00",
+      "actualComposition": "Neutral black contours, complete antlers, looking-back head and four separate hoofed legs. Harness traces visibly join the reindeer to one empty sleigh with full curved runners and open interior; no gifts or person."
+    },
+    {
+      "briefId": "reindeer-046",
+      "artId": "reindeer-outline-two-friends",
+      "title": "Two Reindeer Friends Outline",
+      "composition": "BLACK AND WHITE coloring clipart: two DIFFERENT cartoon reindeer seated back-to-back, one tall and lanky with upright antlers and one short round with sideways antlers, one looking surprised and the other laughing; no props. Original composition, no color counterpart.",
+      "characterDesignMatrix": "distinct faces, body proportions, ears, antler silhouettes and hoof sizes; no repeated base",
+      "wave": "wave_454",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "feaf23b4327f452b96d925ed52312cb9caa0b0d5397413ece131d69fccb4843e",
+      "sourceReviewedAt": "2026-10-27T07:19:50.165465+00:00",
+      "actualComposition": "Tall narrow-faced surprised reindeer beside short broad-faced laughing reindeer; visibly different antler silhouettes. Two complete seated bodies with separate hoofed limbs and short tails, drawn in neutral black outlines."
+    },
+    {
+      "briefId": "reindeer-047",
+      "artId": "reindeer-outline-star-frame",
+      "title": "Reindeer Star Frame Outline",
+      "composition": "BLACK AND WHITE coloring clipart: a unique playful reindeer head with full antlers leaning over the TOP of a large empty five-point star frame; two small cloven forehooves on the frame, clean deliberate bust composition. No full-body crop or color variant.",
+      "characterDesignMatrix": "wide smiling muzzle, freckles, one floppy ear and large irregular branching antlers",
+      "wave": "wave_454",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "96ea708b0440c924eb4740350c3916823881dc44e63d50cf2db6e89c6bb132c8",
+      "sourceReviewedAt": "2026-10-27T07:19:50.165465+00:00",
+      "actualComposition": "Smiling freckled muzzle, one floppy ear and complete irregular branching antlers above the bust. Two cloven forehooves rest on the upper edges of a complete blank five-point star frame; neutral black outlines only."
+    },
+    {
+      "briefId": "reindeer-048",
+      "artId": "reindeer-outline-baking",
+      "title": "Reindeer Baking Cookies Outline",
+      "composition": "BLACK AND WHITE coloring clipart: an upright fantasy reindeer wearing a simple apron holding one small tray of three round cookies between two cloven forehooves, one little bowl beside a rear hoof, no human fingers, clean short antlers. New scene with no color counterpart.",
+      "characterDesignMatrix": "chubby round face, short antlers, large oval eyes, narrow black nose and four separate hooves",
+      "wave": "wave_454",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "81f196eef39948329aa5aa3e45db9a4278b56e354086f706efbe53f1f1227c5a",
+      "sourceReviewedAt": "2026-10-27T07:19:50.165465+00:00",
+      "actualComposition": "Round face, short antlers, large oval eyes and four distinct hoofed limbs beneath a simple apron. Three round cookies on a tray held between the forehooves; small separate bowl beside a rear hoof; neutral black contours."
+    },
+    {
+      "briefId": "reindeer-049",
+      "artId": "reindeer-north-pole-postcard",
+      "title": "Reindeer Postcard Delivery",
+      "composition": "Clean 2D cartoon of one small reindeer trotting beside a short decorative red-and-white striped post bearing a blank envelope-shaped plaque, one blue saddlebag holding paper cards, no geographic or real address text.",
+      "characterDesignMatrix": "russet coat, long pointed face, cream jaw, small wide antlers, dark eyes and blue neck bow",
+      "wave": "wave_455",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "f370f972abb40fc4233cbdaeb8966f7bf101d25259c716611b2b8443da137b24",
+      "sourceReviewedAt": "2026-10-27T07:19:50.165465+00:00",
+      "actualComposition": "Russet coat, large brown eyes, cream muzzle, blue neck bow and complete branching antlers. Blue saddlebag holds paper cards; complete striped post carries a blank cream envelope-shaped plaque with red seal and holly decorations."
+    },
+    {
+      "briefId": "reindeer-050",
+      "artId": "reindeer-holiday-hug",
+      "title": "Reindeer with a Bird on Its Antler",
+      "composition": "A wide head-and-shoulders cartoon reindeer portrait looking up at one tiny bird perched on a complete antler branch.",
+      "characterDesignMatrix": "Charcoal shaggy coat, elongated broad ivory muzzle, cream eyebrows and large amber eyes; distinct full asymmetric antlers.",
+      "wave": "wave_455",
+      "status": "CDN_VERIFIED_AWAITING_RELEASE",
+      "briefReview": "REVIEWED_FOR_DISTINCT_COMPOSITION",
+      "compositionReviewedAsPlanOnly": true,
+      "reviewerType": "AI_AGENT_NOT_HUMAN",
+      "qaRisks": [
+        "Actual anatomy, full antler tips, hooves, proportions and hand/hoof contacts must be checked in final pixels.",
+        "Do not reuse a prior face, silhouette, pose or scene; no variants count as extra originals.",
+        "Source-bound English copy, exact RGBA WebP, real CMYK PDF <=1000000 bytes and full-catalog duplicate audit required."
+      ],
+      "sourceSha256": "4541fb0de89b44e574c2e0f0b1f68eb06eb704f204b93c0c5983a3941cb5f991",
+      "sourceReviewedAt": "2026-10-27T07:19:50.165465+00:00",
+      "actualComposition": "Elongated ivory muzzle, large amber eyes, thick pale eyebrows and full asymmetric antler crown above charcoal fur. One complete small brown bird with red chest perches on the outer antler branch; deliberate rounded shoulder edge and red neckband visible."
+    }
+  ],
+  "actualCollectionReview": {
+    "reviewedAt": "2026-10-27T07:26:52.759850+00:00",
+    "actualSourcesViewed": 50,
+    "contactSheets": [
+      "work/production/reindeer-source-447.jpg",
+      "work/production/reindeer-source-448.jpg",
+      "work/production/reindeer-source-449.jpg",
+      "work/production/reindeer-source-450.jpg",
+      "work/production/reindeer-source-451.jpg",
+      "work/production/reindeer-source-452.jpg",
+      "work/production/reindeer-source-453.jpg",
+      "work/production/reindeer-source-454.jpg",
+      "work/production/reindeer-source-455.jpg"
+    ],
+    "result": "50 independent complete compositions actually viewed: distinct cartoon reindeer identities, groups, actions, crafted objects, lettering, natural wildlife and four separate coloring scenes. One overlapping seated-star concept replaced under its same ID by a wide bird-and-antler portrait; held source excluded. No repair or medium variant counted as an extra original."
+  }
+}

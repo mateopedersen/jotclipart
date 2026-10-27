@@ -1,0 +1,522 @@
+{
+  "wave": "wave_452",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 2,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "reindeer-patchwork-toy",
+      "title": "Patchwork Reindeer Plush Toy",
+      "alt": "Seated brown-and-cream patchwork reindeer plush with stitched hooves, soft felt antlers and a red-and-green checked scarf.",
+      "description": "A central stitched seam runs down the toy's cream belly. Floppy ears, embroidered eyes and soft rounded hooves distinguish the fabric animal from a live reindeer.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_452/source/reindeer-patchwork-toy.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1222,
+      "height": 1287,
+      "pdfWidth": 949,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "9b902831bcf3fd3b2db0ce70a43be40db1a0535735e79d0a952f0bcef8e76e06",
+      "inputSignature": "7be6616a763db89c0346dd7fd36e779a19f342c09ddcd6facfc149554e4af035",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 979284,
+        "weightedCmykRmse": 0.815367
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1224690,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 979284,
+          "weightedCmykRmse": 0.815367
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        203,
+        41,
+        1086,
+        1218
+      ],
+      "image": {
+        "width": 949,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_452/exports/reindeer-patchwork-toy.pdf",
+          "bytes": 979284,
+          "sha256": "e62720fd0426019c5f86c52645b88c176fa88a429d057bc4be09d16f4228e3ae"
+        },
+        "webp": {
+          "path": "work/production/wave_452/exports/reindeer-patchwork-toy.webp",
+          "bytes": 1086206,
+          "sha256": "dba5f41af39e85cbda7003b3b00a38fad8434c6c95824b119f86435ecfaf7c3d"
+        },
+        "thumb": {
+          "path": "work/production/wave_452/exports/reindeer-patchwork-toy-thumb.webp",
+          "bytes": 57318,
+          "sha256": "c6aefc350c4d6fe26bada46b8ea371f02a855c7f2da936f86ef5916009d7892c"
+        }
+      },
+      "proofSha256": "7c023b34f92089a0848184c2e852bfba1245080ed2d89566a3747d52c33e5edf",
+      "pairMeanRgbDifference": 3.05118
+    },
+    {
+      "id": "reindeer-wooden-rocker",
+      "title": "Wooden Reindeer Rocking Toy",
+      "alt": "Carved wooden reindeer toy with a green saddle, red neck bow and two complete curved wooden rockers.",
+      "description": "Wood grain follows the toy's rounded body and antlers. Visible crossbars join the curved rockers below four shaped wooden hooves.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_452/source/reindeer-wooden-rocker.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1295,
+      "height": 1214,
+      "pdfWidth": 1000,
+      "pdfHeight": 937,
+      "sourceType": "raster",
+      "sourceSha256": "c26a45f86ca836acf92a1984d84eebaf10ebd5aea8f4a42c26b0d1bec04b5a73",
+      "inputSignature": "d00849703455320f38c6e9ddf1797ebe6f99218a669e7a3b4887e7bb40242729",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 942269,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 942269,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        137,
+        49,
+        1158,
+        1161
+      ],
+      "image": {
+        "width": 1000,
+        "height": 937,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_452/exports/reindeer-wooden-rocker.pdf",
+          "bytes": 942269,
+          "sha256": "cccdf88ec489bf9947fb42e49d98b62c87cb2fdf19210b943526286d3c3cbf41"
+        },
+        "webp": {
+          "path": "work/production/wave_452/exports/reindeer-wooden-rocker.webp",
+          "bytes": 803300,
+          "sha256": "021daacb1de290a71fb6ecc9eeb2202468564be60c2f3fba4c7913d946ab6410"
+        },
+        "thumb": {
+          "path": "work/production/wave_452/exports/reindeer-wooden-rocker-thumb.webp",
+          "bytes": 52054,
+          "sha256": "d843cfddf7b6002bd9db75627bb8a84de4ee3990bee905d51f78c0f4d0974045"
+        }
+      },
+      "proofSha256": "26f8b3c876ae98b89cf32ed085cbc34f5bb08f207845bcb286f76b6ce8df9c43",
+      "pairMeanRgbDifference": 3.20176
+    },
+    {
+      "id": "reindeer-paper-wreath-decoration",
+      "title": "Layered Paper Reindeer Wreath",
+      "alt": "Circular layered-paper holly wreath with a stylized reindeer face at the lower center, red berries and two cream paper bells.",
+      "description": "Folded leaf edges give the green ring depth around its open center. Brown paper antlers rise from a simple cream-muzzled reindeer face beneath the berry clusters.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_452/source/reindeer-paper-wreath-decoration.png",
+      "printMaxEdgePx": 900,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 900,
+      "pdfHeight": 900,
+      "sourceType": "raster",
+      "sourceSha256": "e6cd3fb769b5fab80b1c41d1b6fdbb35cbc3ce1fba39b7dcc060c70b24061426",
+      "inputSignature": "4a81db6fc72772f49e5bc76bfd3ff6a72cd69f6b8e3cf31ab6574e4d4cb0cc94",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 48,
+        "losslessCmyk": false,
+        "bytes": 989815,
+        "weightedCmykRmse": 1.295163
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1470218,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1234346,
+          "weightedCmykRmse": 0.73862
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1160573,
+          "weightedCmykRmse": 0.87061
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 1074503,
+          "weightedCmykRmse": 1.029483
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 48,
+          "losslessCmyk": false,
+          "bytes": 989815,
+          "weightedCmykRmse": 1.295163
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        47,
+        22,
+        1213,
+        1191
+      ],
+      "image": {
+        "width": 900,
+        "height": 900,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_452/exports/reindeer-paper-wreath-decoration.pdf",
+          "bytes": 989815,
+          "sha256": "c908f06d8ac8fbe88a70e4ce7f1a4cc50a81ce1e3820ad8ca098c10bb1c3e8d4"
+        },
+        "webp": {
+          "path": "work/production/wave_452/exports/reindeer-paper-wreath-decoration.webp",
+          "bytes": 1373944,
+          "sha256": "61ddf24d34521d0367ff215da5c258df8de579674a3384ff8f2203696a7e325b"
+        },
+        "thumb": {
+          "path": "work/production/wave_452/exports/reindeer-paper-wreath-decoration-thumb.webp",
+          "bytes": 80628,
+          "sha256": "6aa344e956197b42bee05a9edc4a34d1d4a0be459e11691804630193dc1f848e"
+        }
+      },
+      "proofSha256": "34be8fce471161f8676709a8811814da989b102ff2fff48c6bbbf78ff5eb7e1f",
+      "pairMeanRgbDifference": 7.44792
+    },
+    {
+      "id": "reindeer-reindeer-cookie-display",
+      "title": "Reindeer-Shaped Iced Cookie",
+      "alt": "Large brown-iced reindeer cookie reclining on a cream napkin, with gold antlers and a green icing scarf.",
+      "description": "A golden biscuit edge outlines the curled resting pose. Cream hoof details, tiny white back dots and the scarf's piped pattern distinguish the festive biscuit.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_452/source/reindeer-reindeer-cookie-display.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1456,
+      "height": 1080,
+      "pdfWidth": 1000,
+      "pdfHeight": 742,
+      "sourceType": "raster",
+      "sourceSha256": "5096d5f8cfa71597c5f71f14949e4bb3df01646d93b26544f4694d705a7ba244",
+      "inputSignature": "2c3e8c9862f33f0b6927054dcb9ad2e5345fbc53971d66176c88895849ec6385",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 873679,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 873679,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        174,
+        26,
+        1304,
+        1052
+      ],
+      "image": {
+        "width": 1000,
+        "height": 742,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_452/exports/reindeer-reindeer-cookie-display.pdf",
+          "bytes": 873679,
+          "sha256": "dd5ee5972d1f0859e482cfb4ea1f00c5067cbf5b5096f6b0c757d3f7d8447a7d"
+        },
+        "webp": {
+          "path": "work/production/wave_452/exports/reindeer-reindeer-cookie-display.webp",
+          "bytes": 970088,
+          "sha256": "e786fe6affe7ddcb29b9f77d138b8181ae6367f41fc28f10d6d69aa7cf9883d5"
+        },
+        "thumb": {
+          "path": "work/production/wave_452/exports/reindeer-reindeer-cookie-display-thumb.webp",
+          "bytes": 43596,
+          "sha256": "0fec9e35f066a4328e6bdb96be643ae07717b422b4f6789b795d4ddca339e21d"
+        }
+      },
+      "proofSha256": "d96919147f63b47c04f599d3da5a43157822c56ee8c930a143ee7a502c58c490",
+      "pairMeanRgbDifference": 4.24268
+    },
+    {
+      "id": "reindeer-reindeer-ornament-mobile",
+      "title": "Amber Glass Reindeer Ornament",
+      "alt": "Full-body amber glass reindeer ornament hanging from a gold loop with a red ribbon bow above its antlers.",
+      "description": "Faceted translucent glass catches warm highlights across the small reindeer's torso. Gold-capped antlers and delicate glass hooves complete the decorative figure.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_452/source/reindeer-reindeer-ornament-mobile.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1230,
+      "height": 1278,
+      "pdfWidth": 962,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "b57d40af1a5cc005c902899ad844006fbb7c7a4c8688735ec7221b87462bf74f",
+      "inputSignature": "1ad243bd60528e7dfb9ad7a1f2c161baef56a05aa49dd5bd5693215bb04b7587",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 879083,
+        "weightedCmykRmse": 0.860778
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1038205,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 879083,
+          "weightedCmykRmse": 0.860778
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        305,
+        12,
+        976,
+        1235
+      ],
+      "image": {
+        "width": 962,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_452/exports/reindeer-reindeer-ornament-mobile.pdf",
+          "bytes": 879083,
+          "sha256": "fac5b54ff19b27c899f117a4a577c4a58155e0c90ae3653e9d1629b5965780ed"
+        },
+        "webp": {
+          "path": "work/production/wave_452/exports/reindeer-reindeer-ornament-mobile.webp",
+          "bytes": 816420,
+          "sha256": "b2185438e4e87eb1be5a71eca95322f53b6e41780780cce23c07d3b03d5564e1"
+        },
+        "thumb": {
+          "path": "work/production/wave_452/exports/reindeer-reindeer-ornament-mobile-thumb.webp",
+          "bytes": 60752,
+          "sha256": "806fc3568bc8f7a17faa4aaddbfc1b4d629f275915c06a293dff53086bf1f214"
+        }
+      },
+      "proofSha256": "9efa38b6c3a1c16975da407b807aa3c9b099825eed0819da1224021de9deb536",
+      "pairMeanRgbDifference": 3.33101
+    },
+    {
+      "id": "reindeer-merry-christmas-lettering",
+      "title": "Merry Christmas Greeting with a Reindeer",
+      "alt": "Red, green and cream MERRY CHRISTMAS lettering topped with holly, with a small sleeping reindeer curled beside the final letters.",
+      "description": "Snow caps, stars and gold scrolls decorate the two-line greeting. A little green-scarved reindeer rests at the upper right with its eyes closed.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_452/source/reindeer-merry-christmas-lettering.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "57f7ea2ae302e9d8ff33debe0a01fb2c3c48682331101c0994cd7a187ec3ead1",
+      "inputSignature": "956fa3f0c55b63feba1f08acf3151d336876ceaa9f4ab3f64d85bca4a228c99d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 792110,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 792110,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        106,
+        197,
+        1431,
+        828
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_452/exports/reindeer-merry-christmas-lettering.pdf",
+          "bytes": 792110,
+          "sha256": "032925a31ac561c5f46308ecd80815eabeaf964c7e9c8a49628a5a3c59530344"
+        },
+        "webp": {
+          "path": "work/production/wave_452/exports/reindeer-merry-christmas-lettering.webp",
+          "bytes": 1277532,
+          "sha256": "8cc567095c55ecea8f597a6bee8840243520cbcde01a0fc9b6d573484a44ad90"
+        },
+        "thumb": {
+          "path": "work/production/wave_452/exports/reindeer-merry-christmas-lettering-thumb.webp",
+          "bytes": 48278,
+          "sha256": "d5e38bc4ebd4d99104b0b18669208bb236b3d5ca30f3ad2bf813953a1488452a"
+        }
+      },
+      "proofSha256": "f1746e1811a9481ff380c75987d9e2638a3ce110cbcc19570cd3cf540f63ded3",
+      "pairMeanRgbDifference": 5.74238
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T07:08:32.812429+00:00",
+  "screenReviewEvidence": "work/production/wave_452/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T07:33:51.883Z"
+}

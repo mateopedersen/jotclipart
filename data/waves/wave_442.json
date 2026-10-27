@@ -1,0 +1,480 @@
+{
+  "wave": "wave_442",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "elf-berry-gatherer",
+      "title": "Elf with a Basket of Blue Berries",
+      "alt": "Small brown-eyed cartoon elf in a green capelet holding a wicker basket of blue berries, with a loose sprig beside the shoes.",
+      "description": "Both hands rest on the basket's curved handle. A strawberry-blond fringe, red bell-tipped cap and short green capelet distinguish the compact standing character.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_442/source/elf-berry-gatherer.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1233,
+      "height": 1275,
+      "pdfWidth": 967,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "4dc6d2148cb11b3a24dc768c58356c020504ef79af6c55356f0bb5d0f26bc720",
+      "inputSignature": "d8bee86d6125605f0694c8d28cc8a365b04475007c6ae5790b634b1b0c984947",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 916554,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 916554,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        263,
+        108,
+        1043,
+        1170
+      ],
+      "image": {
+        "width": 967,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_442/exports/elf-berry-gatherer.pdf",
+          "bytes": 916554,
+          "sha256": "281ba44f785a9549b0d85822edbf6a8867a77df6a28fee9d7ce229eba43f2676"
+        },
+        "webp": {
+          "path": "work/production/wave_442/exports/elf-berry-gatherer.webp",
+          "bytes": 765202,
+          "sha256": "8c55e3373d1905cbd4ab95012756e2ff91d9d141e6ac46fdb60f1c1f5b58d5a4"
+        },
+        "thumb": {
+          "path": "work/production/wave_442/exports/elf-berry-gatherer-thumb.webp",
+          "bytes": 48246,
+          "sha256": "e7f43cbf5bc9ae4ff3cd80f12b4f7772023a2ed9d805b629eec58135a9038453"
+        }
+      },
+      "proofSha256": "ba7e39bde3332543bcca2476f59f218374fe1a93bdc0ca8b4044d82181bc36f8",
+      "pairMeanRgbDifference": 3.4247
+    },
+    {
+      "id": "elf-cute-bubble-wand",
+      "title": "Elf Blowing Soap Bubbles",
+      "alt": "Curly-haired cartoon elf seated on a wooden stool with a red bubble wand, a small cup and three floating bubbles.",
+      "description": "Three iridescent bubbles rise beside the elf's open smile. A cream-trimmed curled green hat and flared green skirt surround the little seated figure.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_442/source/elf-cute-bubble-wand.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "c999115cef83a72d36f4eeb31e963b0af0c185077270da59e663365c72bce851",
+      "inputSignature": "a91d787667925fc6f73829beb50955b1322375df820479eec11aba8bc1059499",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 864957,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 864957,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        243,
+        42,
+        1150,
+        1140
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_442/exports/elf-cute-bubble-wand.pdf",
+          "bytes": 864957,
+          "sha256": "a589323742cf9ed2b70d284ae50c18a7eea0c8b48e55595587b40e5f7302cf9e"
+        },
+        "webp": {
+          "path": "work/production/wave_442/exports/elf-cute-bubble-wand.webp",
+          "bytes": 814964,
+          "sha256": "33549fcf757f89e0d087b118ca9661872f9ddc6beca25a1c54e5e986ab9801df"
+        },
+        "thumb": {
+          "path": "work/production/wave_442/exports/elf-cute-bubble-wand-thumb.webp",
+          "bytes": 51380,
+          "sha256": "914dce00521bb105dad797d4f89955a57d7d125059fdfb241f984768dd66b543"
+        }
+      },
+      "proofSha256": "c1d38684a42a0e9e3c9de3ed4a26323bf78f199207f39cde4c93b10bc6258096",
+      "pairMeanRgbDifference": 3.85535
+    },
+    {
+      "id": "elf-mushroom-cart",
+      "title": "Elf Pushing a Decorative Mushroom Cart",
+      "alt": "Silver-haired cartoon elf in a green dress pushing a little wooden cart filled with three colorful spotted mushrooms.",
+      "description": "Red, green and ochre mushroom caps rise above a bow-decorated wooden cart. The elf leans on its handle in a cream blouse, green dress and red lace-up shoes.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_442/source/elf-mushroom-cart.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "8b0b4209d5d59a4658aea241656e086106dab8b7bf85d4c8a8da63c76e1fc9e1",
+      "inputSignature": "92d4951aa1a7421676f0ea68076a907c8c6fdd8bdae19f214f158c34cae71d93",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 927679,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 927679,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        232,
+        63,
+        1220,
+        1072
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_442/exports/elf-mushroom-cart.pdf",
+          "bytes": 927679,
+          "sha256": "93aef380c1f92ff886108101cc59bb07b7d24fcb43bb2d20f3380dce769355e8"
+        },
+        "webp": {
+          "path": "work/production/wave_442/exports/elf-mushroom-cart.webp",
+          "bytes": 914814,
+          "sha256": "5ac1f4036a90d30e2df58d51f24bc62a4bccc96362f5ac9a5c8855c99aa0861b"
+        },
+        "thumb": {
+          "path": "work/production/wave_442/exports/elf-mushroom-cart-thumb.webp",
+          "bytes": 49472,
+          "sha256": "31c6f994bbe423f1b770371ccda56a9d92fa60f40d012bd60be325b30a3caf4d"
+        }
+      },
+      "proofSha256": "92164d5ea26f8dc0ce84dd0c8dae1010ef2aa1e9ba0d0d60efb00f522b46c56f",
+      "pairMeanRgbDifference": 3.81419
+    },
+    {
+      "id": "elf-checking-a-tiny-hive",
+      "title": "Elf Holding a Wooden Hive Frame",
+      "alt": "Violet-eyed cartoon elf in green overalls holding an empty wooden frame beside a small slatted hive box.",
+      "description": "The rectangular frame rests across the elf's hands above an open wooden box. A red shirt, scalloped green shorts and a star-tipped cap keep the workshop character distinctly festive.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_442/source/elf-checking-a-tiny-hive.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1275,
+      "height": 1233,
+      "pdfWidth": 1000,
+      "pdfHeight": 967,
+      "sourceType": "raster",
+      "sourceSha256": "2e3181b80d3fd533601b860bb0a433e3300b69067b9b87060b32b25dc860ac7e",
+      "inputSignature": "ab343a82304789d6c77f0c4a8182e12b2ca795c1ba008bb26f7ead441af36faf",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 899726,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 899726,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        188,
+        85,
+        1101,
+        1129
+      ],
+      "image": {
+        "width": 1000,
+        "height": 967,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_442/exports/elf-checking-a-tiny-hive.pdf",
+          "bytes": 899726,
+          "sha256": "9feae118666960d5b5728abf3a6ab86ff668493a5f39ddb03a265a84c7d5e156"
+        },
+        "webp": {
+          "path": "work/production/wave_442/exports/elf-checking-a-tiny-hive.webp",
+          "bytes": 762760,
+          "sha256": "71a91d41b6b634c64e69b66d3368411b5fa5edca58df43ea820e8d4a368136b0"
+        },
+        "thumb": {
+          "path": "work/production/wave_442/exports/elf-checking-a-tiny-hive-thumb.webp",
+          "bytes": 47268,
+          "sha256": "1d94c9d7d3a83c63deb5983c23739d4be58ef29c69fafff4161beb2b77bfc1ca"
+        }
+      },
+      "proofSha256": "a153de79078de522c6f76586df977c0d010c853fe7c3f37d96eda038ecaff67f",
+      "pairMeanRgbDifference": 2.78866
+    },
+    {
+      "id": "elf-painting-botanical-cards",
+      "title": "Elf Painting a Holly Card",
+      "alt": "Dark-haired cartoon elf seated cross-legged and painting holly leaves and red berries on a cream card.",
+      "description": "A small red paint jar sits beside the elf's curled shoes. The brush meets a berry on the card, held above green-striped stockings and a cream-trimmed coat.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_442/source/elf-painting-botanical-cards.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1310,
+      "height": 1200,
+      "pdfWidth": 1000,
+      "pdfHeight": 916,
+      "sourceType": "raster",
+      "sourceSha256": "e0057c39ad7553fc1dd5c0d637f9beae1c3667b92337ca4fb438b3c47564630d",
+      "inputSignature": "e1fdbabc60bf8dc43e002d02eccbfc13db93f2ca4b5b271b8b97a16c5a635649",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 964537,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 964537,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        233,
+        66,
+        1071,
+        1139
+      ],
+      "image": {
+        "width": 1000,
+        "height": 916,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_442/exports/elf-painting-botanical-cards.pdf",
+          "bytes": 964537,
+          "sha256": "1d8a76088764b0d955d933a8301af8971d42f7ccb714a02f73a2ef4366e3cc57"
+        },
+        "webp": {
+          "path": "work/production/wave_442/exports/elf-painting-botanical-cards.webp",
+          "bytes": 815652,
+          "sha256": "fe2324f4c7866e0800b0e9ad13b9914838243e6fdc41eb596eed570b6a4f56bd"
+        },
+        "thumb": {
+          "path": "work/production/wave_442/exports/elf-painting-botanical-cards-thumb.webp",
+          "bytes": 42440,
+          "sha256": "cbff557f1717508d890dd78b4386aec930b1600a937c64e27b40a88b21c27537"
+        }
+      },
+      "proofSha256": "a0bd74310282e0ed015040e8461e23c034a70c34e35495d2b292ab397369f201",
+      "pairMeanRgbDifference": 3.12726
+    },
+    {
+      "id": "elf-forest-potter",
+      "title": "Elf Shaping a Clay Bird",
+      "alt": "Auburn-haired cartoon elf in a green outfit shaping a little clay bird on a low wooden pottery wheel.",
+      "description": "Clay-coated hands cup the bird's rounded body while its beak and wing remain clearly visible. A red folded cap and gold-buckled green tunic frame the small pottery scene.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_442/source/elf-forest-potter.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1278,
+      "height": 1230,
+      "pdfWidth": 1000,
+      "pdfHeight": 962,
+      "sourceType": "raster",
+      "sourceSha256": "c71552f30e6c1a0eedf5216e86a0db86adea54aa077fcce1b28583e40f2bf50d",
+      "inputSignature": "77466721bb88fe0a1faf754b5a4a7b2644ab97babab3aee123f75c6c4b05b82d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 895916,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 895916,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        221,
+        46,
+        1152,
+        1166
+      ],
+      "image": {
+        "width": 1000,
+        "height": 962,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_442/exports/elf-forest-potter.pdf",
+          "bytes": 895916,
+          "sha256": "5057418add5fbb73d5abde40577dff96f9f9986bc7d34be4287cb57788a9c354"
+        },
+        "webp": {
+          "path": "work/production/wave_442/exports/elf-forest-potter.webp",
+          "bytes": 823608,
+          "sha256": "0dfb93c5bed34872013d6cbf63e775342f9a6bb242f812a646e94995fff1cb46"
+        },
+        "thumb": {
+          "path": "work/production/wave_442/exports/elf-forest-potter-thumb.webp",
+          "bytes": 44024,
+          "sha256": "c5306c203a01b184d3bf6c17b0c204c7d8e54e21c1327c0019eb954a2cda0106"
+        }
+      },
+      "proofSha256": "5ba32eb1f4293d9c0e5b8b2c4ff35067a0a60dd5c648c24e03177ed2af2a9bbc",
+      "pairMeanRgbDifference": 3.55683
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T05:10:24.729853+00:00",
+  "screenReviewEvidence": "work/production/wave_442/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T05:29:04.064Z"
+}

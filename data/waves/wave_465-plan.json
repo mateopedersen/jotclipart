@@ -1,0 +1,77 @@
+{
+  "wave": "wave_465",
+  "topic": "gingerbread",
+  "method": "builtin-image-generation",
+  "research": "data/research/gingerbread-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "gingerbread-candy-cane-walk",
+      "title": "Gingerbread Walker with a Candy Cane",
+      "alt": "Long-legged gingerbread character in a green icing vest and red bow tie walking with a tall striped candy cane.",
+      "description": "Closed crescent eyes, gold candy buttons and crossed cookie legs give the walker a lighthearted stride.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_465/source/gingerbread-candy-cane-walk.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-peek-cookie-jar",
+      "title": "Gingerbread Peeking from a Cookie Jar",
+      "alt": "Round-eyed gingerbread character peeking out of a clear jar containing two iced star cookies, with a red gingham bow around the neck.",
+      "description": "Two small cookie hands rest on the glass rim beneath a surprised open mouth and wavy icing hairline.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_465/source/gingerbread-peek-cookie-jar.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-sugar-sled",
+      "title": "Gingerbread Riding a Peppermint Sled",
+      "alt": "Laughing gingerbread character in a blue pom-pom cap and cream scarf seated on a red sled with striped candy-cane runners.",
+      "description": "Both rounded cookie arms rise in delight, with two red peppermint buttons centered above the seated feet.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_465/source/gingerbread-sugar-sled.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-heart-hug",
+      "title": "Gingerbread Girl Holding a Heart Cookie",
+      "alt": "Seated gingerbread girl with an icing braid and lavender skirt hugging a large red heart cookie with white piping.",
+      "description": "Purple flowers and bows decorate the long braid, while a small icing heart sits within the larger heart she holds.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_465/source/gingerbread-heart-hug.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-mail-carrier",
+      "title": "Gingerbread Posting a Letter",
+      "alt": "Slender gingerbread courier with a diamond-shaped head, burgundy cape and blue satchel posting a letter in a green mailbox.",
+      "description": "A peppermint clasp fastens the sweeping cape, and the open mailbox stands on a red-and-white striped post.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_465/source/gingerbread-mail-carrier.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-star-lantern",
+      "title": "Gingerbread Carrying a Star Lantern",
+      "alt": "Small gingerbread character in a teal pointed cap and navy coat holding a gold star-shaped lantern.",
+      "description": "The tilted head and pursed icing mouth face the lantern, whose handle hangs from a raised cookie hand.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_465/source/gingerbread-star-lantern.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

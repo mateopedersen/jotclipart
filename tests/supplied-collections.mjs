@@ -1,3 +1,4 @@
+import { originalGoalArtworkIds } from '../scripts/original-goal-counts.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
@@ -68,11 +69,20 @@ test('owner-supplied heart coverage does not inflate generated artwork counts', 
   assert.equal(topics.size, 110);
   assert.equal(
     queue.generatedArtworkCount,
-    art.filter((a) => topics.has(a.topic) && a.productionMethod !== 'owner-supplied').length,
+    originalGoalArtworkIds(
+      art,
+      JSON.parse(read('data/topics.json')).topics,
+      JSON.parse(read('data/original-goal-allocation.json')),
+    ).size,
   );
   assert.equal(
     queue.remainingToDraw,
-    5500 - art.filter((a) => topics.has(a.topic) && a.productionMethod !== 'owner-supplied').length,
+    5500 -
+      originalGoalArtworkIds(
+        art,
+        JSON.parse(read('data/topics.json')).topics,
+        JSON.parse(read('data/original-goal-allocation.json')),
+      ).size,
   );
   assert.equal(queue.topics.find((t) => t.topic === 'heart').supplied, 50);
 });

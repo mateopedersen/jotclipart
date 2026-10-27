@@ -1,0 +1,77 @@
+{
+  "wave": "wave_505",
+  "topic": "blessings",
+  "method": "builtin-image-generation",
+  "research": "data/research/blessings-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "blessings-blessings-note-jar",
+      "title": "Blessings Note Jar",
+      "alt": "A clear jar labeled \u201cBLESSINGS\u201d holds folded pastel notes beside its wooden lid, a pencil and two heart-shaped papers.",
+      "description": "A small pink-heart-and-leaf border decorates the cream label, leaving the colored notes visible through the glass.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_505/source/blessings-blessings-note-jar.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-blessings-reflection-tree",
+      "title": "Blessings Reflection Tag Tree",
+      "alt": "A wooden display tree holds blank heart, leaf and star tags above a base marked \u201cBLESSINGS.\u201d",
+      "description": "Six hanging shapes form balanced branches, each with a pale center and a colored border for personal notes.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_505/source/blessings-blessings-reflection-tree.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-community-blessing-box",
+      "title": "Community Blessing Box Pantry",
+      "alt": "An open green-roofed pantry marked \u201cBLESSING BOX\u201d displays unbranded tins, food boxes and bread rolls.",
+      "description": "Two clear-front doors swing outward from the cream cabinet above its complete green support post.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_505/source/blessings-community-blessing-box.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-blessings-food-hamper",
+      "title": "Blessings Bread and Apple Gift Basket",
+      "alt": "A cloth-lined wicker basket holds bread rolls, apples and a red preserve jar with a \u201cBLESSINGS\u201d gift tag.",
+      "description": "A red-striped tea towel crosses the cream lining beneath the jar\u2019s checked lid and tied cord.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_505/source/blessings-blessings-food-hamper.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-lily-cross-keepsake",
+      "title": "Blessed Cross and Lily Keepsake",
+      "alt": "A gold Christian cross stands between white lilies above a burgundy ribbon reading \u201cBLESSED.\u201d",
+      "description": "Polished beveled edges and a complete oval pedestal give the floral devotional object a formal, freestanding shape.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_505/source/blessings-lily-cross-keepsake.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-paired-ceramic-doves",
+      "title": "Ceramic Doves with a Blank Heart Tag",
+      "alt": "Two blue-grey and ivory ceramic doves perch on a curved branch above a blank cream heart tag.",
+      "description": "One bird tilts its head toward the other, while small gold-colored loops suspend the heart below the complete branch.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_505/source/blessings-paired-ceramic-doves.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

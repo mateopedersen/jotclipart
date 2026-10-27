@@ -1,0 +1,77 @@
+{
+  "wave": "wave_493",
+  "topic": "feast",
+  "method": "builtin-image-generation",
+  "research": "data/research/feast-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "feast-tagine-and-couscous",
+      "title": "Vegetable Tagine with Couscous and Olives",
+      "alt": "An open terracotta tagine holds mixed vegetables beside a conical lid, a patterned couscous bowl and olives.",
+      "description": "The warm clay dish sits behind two cream-and-blue bowls, with a narrow decorated lid leaning to its right.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_493/source/feast-tagine-and-couscous.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-pizza-party-boxes",
+      "title": "Pizza Party Boxes with Salad and Drinks",
+      "alt": "An open pizza box rests on another box beside a plated slice, a salad cup and two plain paper drinks.",
+      "description": "The vegetable-topped pizza has a visible gap where the separate slice was removed, with the full upright lid behind it.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_493/source/feast-pizza-party-boxes.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-noodle-bowl-banquet",
+      "title": "Two-Bowl Noodle Banquet Tray",
+      "alt": "Two patterned noodle bowls sit on a black tray with a cream teapot and two pairs of resting chopsticks.",
+      "description": "One bowl shows broth and egg halves, while the other contains noodles and vegetables, giving the compact meal two distinct focal points.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_493/source/feast-noodle-bowl-banquet.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-loaded-potato-bar",
+      "title": "Loaded Baked Potato Sharing Dish",
+      "alt": "Three open baked potatoes with different toppings fill a green handled dish beside grated cheese and cream.",
+      "description": "Broccoli, beans and tomato distinguish the three fillings, with each split potato skin visible around its topping.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_493/source/feast-loaded-potato-bar.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-carved-ham-platter",
+      "title": "Glazed Ham with Potatoes and Asparagus",
+      "alt": "A scored glazed ham with fanned slices sits on a white platter with potatoes, asparagus and apple wedges beside gravy.",
+      "description": "Clove-like dark studs follow the diamond-cut glaze, contrasting with the pink cut face and pale slices at the front.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_493/source/feast-carved-ham-platter.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-pumpkin-soup-spread",
+      "title": "Pumpkin Soup Tureen with Bread",
+      "alt": "A hollow pumpkin holds golden soup beside its stemmed lid, a small soup bowl and sliced bread.",
+      "description": "Cream swirls and chopped green garnish decorate the soup, while the pumpkin\u2019s ridged orange shell gives the serving vessel a clear outline.",
+      "color": "Orange",
+      "style": "Color",
+      "source": "work/production/wave_493/source/feast-pumpkin-soup-spread.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

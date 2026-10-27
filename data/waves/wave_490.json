@@ -1,0 +1,350 @@
+{
+  "wave": "wave_490",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 4,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "2027-outline-goals",
+      "title": "My 2027 Goals Journal Coloring",
+      "alt": "An open journal displays My 2027 Goals above three empty star checkboxes and writing lines in black and white.",
+      "description": "Layered page edges, small hearts and a stitched ribbon bookmark frame the blank goal space across the spread.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_490/source/2027-outline-goals.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "2027",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "81d3d852caec127afb4bd591e32b734ce323decf9cdc5c81a7f48f77c9ba79d5",
+      "inputSignature": "0d9e42849b74e1c5fba76f3846745de2c36d3eb3b98688ad3a581b5e46e28c09",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 284857,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 284857,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        26,
+        151,
+        1286,
+        1072
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_490/exports/2027-outline-goals.pdf",
+          "bytes": 284857,
+          "sha256": "79bafd39d84b23e71fd9a7bdae3a0f6e2ed79e63afb7c817a27ec16cfb9903d0"
+        },
+        "webp": {
+          "path": "work/production/wave_490/exports/2027-outline-goals.webp",
+          "bytes": 605258,
+          "sha256": "0cd344a89b2d22a8443dbd0fc476cceaa37a26320e583eeee5e5f401f5d3f9fb"
+        },
+        "thumb": {
+          "path": "work/production/wave_490/exports/2027-outline-goals-thumb.webp",
+          "bytes": 35648,
+          "sha256": "e7aa4b92d92286f9a9741684ac0c2ab6be649e7b7c234741643b300797a65b8a"
+        }
+      },
+      "proofSha256": "166b501aa6146f5de101ec2f8298386ebb939bd427341d4267315d385646b9b0",
+      "pairMeanRgbDifference": 9.50838
+    },
+    {
+      "id": "2027-outline-kite-hope",
+      "title": "Hope in 2027 Mouse and Kite Coloring",
+      "alt": "A smiling mouse holds a heart-shaped kite labeled Hope in 2027 in a black-and-white coloring illustration.",
+      "description": "The mouse’s large ears and long curved tail balance the tall kite, whose string is decorated with small bows.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_490/source/2027-outline-kite-hope.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "2027",
+      "width": 1287,
+      "height": 1222,
+      "pdfWidth": 1000,
+      "pdfHeight": 949,
+      "sourceType": "raster",
+      "sourceSha256": "49d199cd95fc6bb79021d3b1ce409b266b62d502203712efbf62be3bbf525073",
+      "inputSignature": "81614bc55f4d021237b9f5ecace9ec5c390a9f2c435f550eff95607912074984",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 264699,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 264699,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        77,
+        57,
+        1209,
+        1186
+      ],
+      "image": {
+        "width": 1000,
+        "height": 949,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_490/exports/2027-outline-kite-hope.pdf",
+          "bytes": 264699,
+          "sha256": "8eb3003f9b157e8facafb66b9be6ee7fcd81adb50812ebf1ab0929d3eceb2e30"
+        },
+        "webp": {
+          "path": "work/production/wave_490/exports/2027-outline-kite-hope.webp",
+          "bytes": 469462,
+          "sha256": "cd28c76bfd02db0870f451021b2b66a908f6ba9789b1ab4cbd2d357bfabedcac"
+        },
+        "thumb": {
+          "path": "work/production/wave_490/exports/2027-outline-kite-hope-thumb.webp",
+          "bytes": 42396,
+          "sha256": "d12cfeaa0e14dd34c711244684ef7a906cfdcf4ef362381a526769e0a3264df3"
+        }
+      },
+      "proofSha256": "4b2631cca6c46b1179993270771f8ab396726fef98e7cb49c5238c1b1337f50f",
+      "pairMeanRgbDifference": 6.56763
+    },
+    {
+      "id": "2027-outline-party-crown",
+      "title": "2027 Crown and Party Horn Coloring",
+      "alt": "A tall pointed party crown marked 2027 sits beside a striped horn and two hanging stars in black and white.",
+      "description": "Rounded tips, inset stars and simple decorative bursts create clear coloring spaces across the crown’s wide band.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_490/source/2027-outline-party-crown.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "eb634c94b1cf64a1b76d729d9932c8392b0bdd81a67afd452951a443a546a237",
+      "inputSignature": "56c8d041078512ff79b94a53513becbabf463524592ed381a688118dd9a02c28",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 242323,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 242323,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        131,
+        39,
+        1452,
+        988
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_490/exports/2027-outline-party-crown.pdf",
+          "bytes": 242323,
+          "sha256": "1ebfbd71da2fa3a31225053e882dc4a283f8cc0d59fc764c5880314ce1d3e63a"
+        },
+        "webp": {
+          "path": "work/production/wave_490/exports/2027-outline-party-crown.webp",
+          "bytes": 923148,
+          "sha256": "756100d0ea8d91722eca752d3d0a7ad81bf9b69bce418fec05e151200e7578d8"
+        },
+        "thumb": {
+          "path": "work/production/wave_490/exports/2027-outline-party-crown-thumb.webp",
+          "bytes": 38998,
+          "sha256": "62ff64282913bec4346ee998a5ea9169fe417c517a90e0169579c890d7bc04be"
+        }
+      },
+      "proofSha256": "0b32a7482b519e8a2ab8ef5e2d285a9b27e45fa4107d386518999dfcdabeed0c",
+      "pairMeanRgbDifference": 10.44131
+    },
+    {
+      "id": "2027-welcome-door-mat",
+      "title": "Welcome 2027 Navy and Gold Mat",
+      "alt": "A navy semicircular mat displays Welcome 2027 in cream and gold lettering framed by leafy sprigs and a small rising sun.",
+      "description": "Fine fabric texture and a double gold border give the curved welcome graphic a restrained decorative finish.",
+      "color": "Blue",
+      "style": "Color",
+      "source": "work/production/wave_490/source/2027-welcome-door-mat.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "11e57df380d79dc0a98f1bb399d584be329c7eb32a850499456ef0b2b9f74797",
+      "inputSignature": "936d52a5e0f149f678d25a7674d6f5547a949f450465238299a20b485db13e47",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 50,
+        "losslessCmyk": false,
+        "bytes": 951296,
+        "weightedCmykRmse": 1.010973
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1299368,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1079209,
+          "weightedCmykRmse": 0.704501
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1024201,
+          "weightedCmykRmse": 0.839487
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 951296,
+          "weightedCmykRmse": 1.010973
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        51,
+        102,
+        1485,
+        936
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_490/exports/2027-welcome-door-mat.pdf",
+          "bytes": 951296,
+          "sha256": "9846da04a5ad790c96b96893f99e93ff0f8a1185638bbd3268b980456a041835"
+        },
+        "webp": {
+          "path": "work/production/wave_490/exports/2027-welcome-door-mat.webp",
+          "bytes": 2124374,
+          "sha256": "1807fb990dae463987bd07b96f629c18d5e8069c77273311443853397f3a21ff"
+        },
+        "thumb": {
+          "path": "work/production/wave_490/exports/2027-welcome-door-mat-thumb.webp",
+          "bytes": 49850,
+          "sha256": "37a9f05a00c140b403fd6f247836792355d97a1189bb26d2751447af4208b706"
+        }
+      },
+      "proofSha256": "c6c6168c4025e73f11d009fa6ebc23caeed3e638f1250ca87a01a6f6c1dfc1ae",
+      "pairMeanRgbDifference": 7.86033
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T12:33:44.493213+00:00",
+  "screenReviewEvidence": "work/production/wave_490/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T12:33:46.202Z"
+}

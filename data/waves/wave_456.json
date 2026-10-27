@@ -1,0 +1,480 @@
+{
+  "wave": "wave_456",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "snowman-waving-mitten",
+      "title": "Snowman Waving a Red Mitten",
+      "alt": "Smiling snowman waving a red knitted mitten, wearing a teal cap and chevron scarf with three wooden buttons.",
+      "description": "A raised mitten, tilted pom-pom cap and curved twig arm give this round snowman a friendly greeting pose.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_456/source/snowman-waving-mitten.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "b1e939b15bd95b4af10f232d6d732e0f84756be64b537bf75f60eb238c917b7f",
+      "inputSignature": "1aa16466a50e746edb523a26494a61763cd32c0e24401f8f67b4b6ee17e05846",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 711891,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 711891,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        211,
+        116,
+        1175,
+        1033
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_456/exports/snowman-waving-mitten.pdf",
+          "bytes": 711891,
+          "sha256": "aef0148c0018c8532636bfd819b367ebd6da4892cc95429eaddd346ddf513829"
+        },
+        "webp": {
+          "path": "work/production/wave_456/exports/snowman-waving-mitten.webp",
+          "bytes": 739764,
+          "sha256": "bbbea741bcf6f268408421c62bf9fefc244b47546886062801e06ae5100e1784"
+        },
+        "thumb": {
+          "path": "work/production/wave_456/exports/snowman-waving-mitten-thumb.webp",
+          "bytes": 35152,
+          "sha256": "70d2e134ac040a59d382a0f5d6bcb572faaecd11f7f1382a9c995ab172ec81e1"
+        }
+      },
+      "proofSha256": "41a53c10c2566e7bf5724b1b554f916633e145466df82ed335ec43652ae4110a",
+      "pairMeanRgbDifference": 2.2254
+    },
+    {
+      "id": "snowman-bird-feeder",
+      "title": "Snowman Feeding a Cardinal",
+      "alt": "Tall snowman in a green earflap hat holding a wooden seed tray with a red cardinal perched on its edge.",
+      "description": "The snowman looks toward the small red bird while holding a seed-filled tray with both branch arms.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_456/source/snowman-bird-feeder.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "c61dbcc37836594b40beefb23da0fa2374955de76275d12a0e909c28d8a5a5a3",
+      "inputSignature": "14f18c738df7aa9f8e3b97edeab0a6a405ddea3eca74c389eb18106f3d839757",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 605133,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 605133,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        440,
+        21,
+        1061,
+        1122
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_456/exports/snowman-bird-feeder.pdf",
+          "bytes": 605133,
+          "sha256": "17f310a633aa7b084ea814d0b27429fdc3bda3b1117f58ea2c0068d307762897"
+        },
+        "webp": {
+          "path": "work/production/wave_456/exports/snowman-bird-feeder.webp",
+          "bytes": 623958,
+          "sha256": "93230236b167369af72154784697338e2378101dc91a8911c78745aaa2c617bb"
+        },
+        "thumb": {
+          "path": "work/production/wave_456/exports/snowman-bird-feeder-thumb.webp",
+          "bytes": 32076,
+          "sha256": "f87a9926c3c543aee8d6059492b8c5bf0c8562fa5a24cb8b9527fd343fc87a9a"
+        }
+      },
+      "proofSha256": "82263d2144454bcbe2170a13c6f6266e67a07b61a9f023142d7fe9da61b4a0de",
+      "pairMeanRgbDifference": 1.94614
+    },
+    {
+      "id": "snowman-sled-downhill",
+      "title": "Snowman Riding a Red Sled",
+      "alt": "Laughing snowman in a purple pom-pom hat and cream scarf seated on a red sled with both twig arms raised.",
+      "description": "Rounded snow feet rest on the sled while the character leans back with an open smile and lifted arms.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_456/source/snowman-sled-downhill.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "1ce7f896c0c8cc4a8082cc244472cbf1ad5d860556b59303d6331203b1f35930",
+      "inputSignature": "8d74e580052c07ab01ef768ecc3412240d07e6e9f6e0fb20f71fb6e06711030d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 537154,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 537154,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        364,
+        72,
+        1266,
+        980
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_456/exports/snowman-sled-downhill.pdf",
+          "bytes": 537154,
+          "sha256": "3e50b5491cd290a9ffe8ecd6e8b2cb31972407baa29a377b07f23884a9c4675d"
+        },
+        "webp": {
+          "path": "work/production/wave_456/exports/snowman-sled-downhill.webp",
+          "bytes": 1065718,
+          "sha256": "5f5097de17c7d7496a5d046c340d048945517b61b1be7cfa0db027d55264eb10"
+        },
+        "thumb": {
+          "path": "work/production/wave_456/exports/snowman-sled-downhill-thumb.webp",
+          "bytes": 33140,
+          "sha256": "4936aaac1d618ab272459fbd3804978dd0c33340e796671f2da2a59009630593"
+        }
+      },
+      "proofSha256": "eadf71f62c8b79fba488ca23aa21f517354163563207b839a5d603274e2501a5",
+      "pairMeanRgbDifference": 2.76886
+    },
+    {
+      "id": "snowman-mailbox-delivery",
+      "title": "Snowman Posting a Letter",
+      "alt": "Snowman in a red wool cap and scarf placing an envelope in a blue mailbox, with a brown satchel at its side.",
+      "description": "A branch hand reaches into the open mailbox as the other arm rests beside the shoulder bag.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_456/source/snowman-mailbox-delivery.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "d5deeb5cd02a7be0ab181d0483efe709fea12eadaac16c91b990bc2ef0eda7f4",
+      "inputSignature": "e0c717bb84cb10abf956c5df8eb840f60dc9bd5a85caadab61d9497802646933",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 545175,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 545175,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        284,
+        99,
+        1318,
+        926
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_456/exports/snowman-mailbox-delivery.pdf",
+          "bytes": 545175,
+          "sha256": "b8d8ecf6431855dddf7d16efa3a29edd982b5598fb136cc97089733373a04fd1"
+        },
+        "webp": {
+          "path": "work/production/wave_456/exports/snowman-mailbox-delivery.webp",
+          "bytes": 1087472,
+          "sha256": "88501ce36834eaab4dc5841c9a5c0d9a8ba276caba06f96d20bc37adf802eb3a"
+        },
+        "thumb": {
+          "path": "work/production/wave_456/exports/snowman-mailbox-delivery-thumb.webp",
+          "bytes": 28414,
+          "sha256": "7689cd008ab2786b8cf7df0ab79b6b1cc0ff6376895567cdc9dcd327638cf720"
+        }
+      },
+      "proofSha256": "eab9ee707984354da510970d013e87d4e6b06fda3449c602682d6438640fe0fe",
+      "pairMeanRgbDifference": 2.92875
+    },
+    {
+      "id": "snowman-skating-spin",
+      "title": "Snowman Gliding on Ice Skates",
+      "alt": "Slender snowman in a green beanie and orange striped scarf balancing on one skate with the other leg raised behind.",
+      "description": "Outstretched twig arms and a trailing scarf emphasize the sweeping skating pose.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_456/source/snowman-skating-spin.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "d4b549cd37132dc27747dcf17051673e7159783c92b8685025f24a05904c2b6c",
+      "inputSignature": "8e6df919359e695ce7f4d53c78f667ae5e2548133e1fb1a87112e4e539d318c3",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 407852,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 407852,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        380,
+        28,
+        1209,
+        977
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_456/exports/snowman-skating-spin.pdf",
+          "bytes": 407852,
+          "sha256": "3d2fc916cec25e07b1f802f39218b386ff8555b94bde96b8b705efee24790842"
+        },
+        "webp": {
+          "path": "work/production/wave_456/exports/snowman-skating-spin.webp",
+          "bytes": 870560,
+          "sha256": "c75328573d4b88486eb5995a3e0d643b2d72a95ac13d2067496b532b22e419de"
+        },
+        "thumb": {
+          "path": "work/production/wave_456/exports/snowman-skating-spin-thumb.webp",
+          "bytes": 25238,
+          "sha256": "72c4e7590db127266430822c74bd61bb25da5ac53158945d04a78a88e60d026c"
+        }
+      },
+      "proofSha256": "ebe2afd6ad70edf8453e2159ce3801a3563a4abd09f9926cca585e936f9cc1fa",
+      "pairMeanRgbDifference": 1.78899
+    },
+    {
+      "id": "snowman-book-reader",
+      "title": "Snowman Reading a Blue Book",
+      "alt": "Seated snowman with round spectacles and a burgundy beret holding an open blue book above a red heart button.",
+      "description": "The round-eyed reader sits with two snow feet forward and both branch hands holding the book covers.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_456/source/snowman-book-reader.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "f5c9d45b095c843bd1808c87bc70879415e1e44063601bfa4b8de90fb444c279",
+      "inputSignature": "4cecf7d880f2df9b3e364dc7feeb91fad5d984c2c50782bea220bc36fedca57a",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 412396,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 412396,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        465,
+        60,
+        1083,
+        965
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_456/exports/snowman-book-reader.pdf",
+          "bytes": 412396,
+          "sha256": "5560c3373bee14dc8d01a61581a28b78de65e42e48d308ae9c9af87d18b38b2a"
+        },
+        "webp": {
+          "path": "work/production/wave_456/exports/snowman-book-reader.webp",
+          "bytes": 888152,
+          "sha256": "4dc36c0187c6fb681de77248b3a7611a289b916cdc83292487b93ad77bb3fcdd"
+        },
+        "thumb": {
+          "path": "work/production/wave_456/exports/snowman-book-reader-thumb.webp",
+          "bytes": 19200,
+          "sha256": "e9415430a29573373e5387e1f1c5e264c29b10d6e991387877c8f808f6580f9c"
+        }
+      },
+      "proofSha256": "d2c419a99948408e41ef8adb783f4f03f9476a6058f6529602b6eb7eb733ef71",
+      "pairMeanRgbDifference": 1.65577
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T09:06:55.846732+00:00",
+  "screenReviewEvidence": "work/production/wave_456/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T09:22:11.648Z"
+}

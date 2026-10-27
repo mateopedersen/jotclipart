@@ -1,0 +1,173 @@
+{
+  "wave": "wave_473",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 2,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "gingerbread-outline-gingerbread-banner",
+      "title": "Gingerbread Pair Holding a Blank Banner Outline",
+      "alt": "Black-and-white gingerbread pair holding a blank ribbon banner, one in a bow tie and the other in a bonnet and scalloped dress.",
+      "description": "Different face shapes and body proportions frame the open writing space across the center.",
+      "color": "Black and White",
+      "style": "Outline",
+      "source": "work/production/wave_473/source/gingerbread-outline-gingerbread-banner.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "gingerbread",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "ad30e741d9f474237206a33951a1916baeb87064b0bafe4b9ae71b8bbd551430",
+      "inputSignature": "a4dd36066dd28cfca15c9de804951ce36a8b76107124c2ef596a74a240c1fc00",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 194729,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 194729,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        125,
+        45,
+        1478,
+        982
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_473/exports/gingerbread-outline-gingerbread-banner.pdf",
+          "bytes": 194729,
+          "sha256": "73b632ecadaf6f024559bd49912a5fb0a2d0b3bca74130bdcc810ec1109d7151"
+        },
+        "webp": {
+          "path": "work/production/wave_473/exports/gingerbread-outline-gingerbread-banner.webp",
+          "bytes": 822028,
+          "sha256": "5a8212eb770325f1fe1717be7cc63ae6075a3b16a3620b30759cf218d52e6b6c"
+        },
+        "thumb": {
+          "path": "work/production/wave_473/exports/gingerbread-outline-gingerbread-banner-thumb.webp",
+          "bytes": 30836,
+          "sha256": "c62948d9e84b2bc0c8213308ca51c908bcf2f82011203d76bd9f3363550b17b4"
+        }
+      },
+      "proofSha256": "79a8c94b0c9ddf3a61af15f0de5fa76d49142770826506cc9215d15cfd8fd8ac",
+      "pairMeanRgbDifference": 7.61436
+    },
+    {
+      "id": "gingerbread-gingerbread-counting-tray",
+      "title": "Five Gingerbread Cookies on a Teal Tray",
+      "alt": "Teal baking tray holding five different smiling gingerbread cookies shaped as a heart, star, tree, bell and house.",
+      "description": "The cookies stand in a loose row over a cream liner, with the tray's two full handles visible.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_473/source/gingerbread-gingerbread-counting-tray.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1774,
+      "height": 887,
+      "pdfWidth": 1000,
+      "pdfHeight": 500,
+      "sourceType": "raster",
+      "sourceSha256": "957c1489bcb126456522b950f17b83dc187bbc21d353263fad904200fc4be238",
+      "inputSignature": "cc88e89f1e69202f03eeaf5e910b3aa2facb238b918d97289bc5696d9a4eff9c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 662754,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 662754,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        66,
+        201,
+        1709,
+        681
+      ],
+      "image": {
+        "width": 1000,
+        "height": 500,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_473/exports/gingerbread-gingerbread-counting-tray.pdf",
+          "bytes": 662754,
+          "sha256": "fa92dd242f3a1681de1ffef752b1f2b11cff88abf7760b8baa538476a30e9a69"
+        },
+        "webp": {
+          "path": "work/production/wave_473/exports/gingerbread-gingerbread-counting-tray.webp",
+          "bytes": 1033726,
+          "sha256": "4f725b0f0a001ccc43aa215b5d3de01a2dc454641c92bed6fefe3fc1477279e3"
+        },
+        "thumb": {
+          "path": "work/production/wave_473/exports/gingerbread-gingerbread-counting-tray-thumb.webp",
+          "bytes": 28760,
+          "sha256": "f81b7ea462a61d40400b4230f0a27b7f194961fcbcb5b140beb0a9fe7101d746"
+        }
+      },
+      "proofSha256": "d0fdab8abbe9f0d6f28fe6a4d0c2ef2b16127715d09da983018f55f416044799",
+      "pairMeanRgbDifference": 8.12681
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T10:23:24.230334+00:00",
+  "screenReviewEvidence": "work/production/wave_473/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T10:23:27.450Z"
+}

@@ -82,12 +82,25 @@ test('art identities, topic assignment, provenance and review states remain hone
       assert.doesNotMatch(art.licenseStatus, /REQUIRED|PENDING|UNKNOWN/i);
     }
   }
-  for (const topic of topics)
-    assert.ok(
-      arts.filter(
-        (a) => a.topic === topic.slug && a.published && a.productionMethod !== 'owner-supplied',
-      ).length <= 50,
+  for (const topic of topics) {
+    const generated = arts.filter(
+      (a) => a.topic === topic.slug && a.published && a.productionMethod !== 'owner-supplied',
     );
+    if (generated.length <= 50) continue;
+    const brief = JSON.parse(readFileSync(join(root, 'data/briefs', topic.slug + '.json')));
+    assert.equal(
+      brief.ownerApprovedTarget,
+      100,
+      'Expanded collection needs recorded owner approval',
+    );
+    assert.equal(brief.target, 100);
+    assert.equal(brief.original110Allocation, 50);
+    assert.equal(brief.additionalOwnerPriorityArtworks, 50);
+    const planned = new Set(brief.rows.map((row) => row.artId));
+    assert.equal(planned.size, 100);
+    assert.ok(generated.length <= 100);
+    assert.ok(generated.every((item) => planned.has(item.id)));
+  }
 });
 
 test('every artwork has its declared real, correctly typed, paired and hashed representations', () => {

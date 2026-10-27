@@ -1,0 +1,529 @@
+{
+  "wave": "wave_475",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 3,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "2027-my-year-sunrise",
+      "title": "2027 Is My Year Sunrise",
+      "alt": "Coral 2027 Is My Year lettering framing a gold rising sun between two olive sprigs.",
+      "description": "The arched year sits above the short personal message, with gold bevels following the rounded coral letters.",
+      "color": "Coral",
+      "style": "Color",
+      "source": "work/production/wave_475/source/2027-my-year-sunrise.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "0e5b5db3e94614787a1ee1b5ee1458e3c04803dce35030c197e16ed529d825f5",
+      "inputSignature": "e6027abecf7d81bcd13dc16e7aa6114f467b56b20648755f69dd91ae020bc129",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 773275,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 773275,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        115,
+        139,
+        1421,
+        889
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_475/exports/2027-my-year-sunrise.pdf",
+          "bytes": 773275,
+          "sha256": "66bbf6201dbfcc3ff1a35d05c8a44076580f9db85837e24fe40d9ba9d84d14fe"
+        },
+        "webp": {
+          "path": "work/production/wave_475/exports/2027-my-year-sunrise.webp",
+          "bytes": 1306080,
+          "sha256": "404f76522390492ee6f0e58c72b3b6b13d6285d2e8efdcbe24efc942c6f28d93"
+        },
+        "thumb": {
+          "path": "work/production/wave_475/exports/2027-my-year-sunrise-thumb.webp",
+          "bytes": 56872,
+          "sha256": "3dd45dc2cd468221c9efd90bcb89ba0e44c35da28ce0d6db5afc9a7bad0320b3"
+        }
+      },
+      "proofSha256": "f5df981f774bf6b33df5e4d40bb5424149c690bfe4816e1ae4f9f605f038eae2",
+      "pairMeanRgbDifference": 5.20296
+    },
+    {
+      "id": "2027-year-to-shine",
+      "title": "2027 My Year to Shine Star",
+      "alt": "Navy-and-gold 2027 My Year to Shine lettering across a large gold star with pink and teal star accents.",
+      "description": "The oversized word Shine anchors the base beneath the smaller message and bold blue year.",
+      "color": "Gold",
+      "style": "Color",
+      "source": "work/production/wave_475/source/2027-year-to-shine.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 1000,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "bbeaf65bfc1c7c065a0841cbebd65dd6ebf3ebec06af9c013bca5742aa2cf825",
+      "inputSignature": "cd2a1404cb82fbf768b2a569b5c7f8d306c563ab7abff7583a6980784f01372c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 972025,
+        "weightedCmykRmse": 0.890321
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1358828,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1042471,
+          "weightedCmykRmse": 0.759741
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 972025,
+          "weightedCmykRmse": 0.890321
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        51,
+        73,
+        1204,
+        1175
+      ],
+      "image": {
+        "width": 1000,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_475/exports/2027-year-to-shine.pdf",
+          "bytes": 972025,
+          "sha256": "d0076e805152dd41b5413a0c3d719bacba8868b176437c2c82eae7032c343375"
+        },
+        "webp": {
+          "path": "work/production/wave_475/exports/2027-year-to-shine.webp",
+          "bytes": 1377294,
+          "sha256": "d0715780fcd0d045aa24d23e62fcf531670a7622f29d4d1934af3194334479e7"
+        },
+        "thumb": {
+          "path": "work/production/wave_475/exports/2027-year-to-shine-thumb.webp",
+          "bytes": 75796,
+          "sha256": "c38dd0267094ceb0cc3b898a53fec4f696422c588e2514874cd452eb2f2f43e2"
+        }
+      },
+      "proofSha256": "2465bb897984054bb6d2a7288c61ad46f509adead579ce2ec95458bb07046f86",
+      "pairMeanRgbDifference": 8.42686
+    },
+    {
+      "id": "2027-make-it-happen",
+      "title": "Make It Happen in 2027 Arrow",
+      "alt": "Make It Happen in 2027 lettering inside an upward arrow outline, with a small orange rocket at one side.",
+      "description": "Cream and orange lettering stands against the navy inner shapes, while the rocket's curved flame follows the bottom of the year.",
+      "color": "Orange",
+      "style": "Color",
+      "source": "work/production/wave_475/source/2027-make-it-happen.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1284,
+      "height": 1225,
+      "pdfWidth": 1000,
+      "pdfHeight": 954,
+      "sourceType": "raster",
+      "sourceSha256": "af49635c0dfa221125d6844a10a4f128b64c5a77b7c4bca63a8247f81b32a1fd",
+      "inputSignature": "31affe7d564f19c433abdcd5a5dc6f39d110d99c941f84e763afb7ad077a388e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 924387,
+        "weightedCmykRmse": 0.739183
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1201475,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 924387,
+          "weightedCmykRmse": 0.739183
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        95,
+        34,
+        1195,
+        1148
+      ],
+      "image": {
+        "width": 1000,
+        "height": 954,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_475/exports/2027-make-it-happen.pdf",
+          "bytes": 924387,
+          "sha256": "557eed64985ce5b52d46f43247cca4b27593f7f44d910b186a4eff26e3c396b6"
+        },
+        "webp": {
+          "path": "work/production/wave_475/exports/2027-make-it-happen.webp",
+          "bytes": 1106098,
+          "sha256": "e6528f127a5db462ba4cfc22bd78ca9cc2796496194e51fa0ac02696cfb731c8"
+        },
+        "thumb": {
+          "path": "work/production/wave_475/exports/2027-make-it-happen-thumb.webp",
+          "bytes": 79302,
+          "sha256": "60aad1a9e83674109af20479631482b70d592100fd41f5e08227274b55832dc5"
+        }
+      },
+      "proofSha256": "e58174e4ac36623d5147ec1e4283d645ce5cebb4c2ccedef46ddfc1f5773b9ea",
+      "pairMeanRgbDifference": 7.75768
+    },
+    {
+      "id": "2027-new-possibilities",
+      "title": "New Year New Possibilities 2027 Doorway",
+      "alt": "Open lavender doors above gold-and-purple ribbons reading New Year New Possibilities 2027.",
+      "description": "Golden light rays fill the doorway while the large year curves across a cream ribbon below the two-line message.",
+      "color": "Purple",
+      "style": "Color",
+      "source": "work/production/wave_475/source/2027-new-possibilities.png",
+      "printMaxEdgePx": 900,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 900,
+      "pdfHeight": 900,
+      "sourceType": "raster",
+      "sourceSha256": "2c1ba93d63bbb5504fc1d033b842c39780c86d39b5dcffdefa007e538b792efc",
+      "inputSignature": "477d04af4c6ef9e54eb8f9ab0fd2b0ed7a4eb5c0b94d5a9949d5f2a993235a30",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 48,
+        "losslessCmyk": false,
+        "bytes": 958312,
+        "weightedCmykRmse": 1.126711
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1527692,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1217294,
+          "weightedCmykRmse": 0.674437
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1136136,
+          "weightedCmykRmse": 0.796849
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 1047619,
+          "weightedCmykRmse": 0.917841
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 48,
+          "losslessCmyk": false,
+          "bytes": 958312,
+          "weightedCmykRmse": 1.126711
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        65,
+        57,
+        1203,
+        1201
+      ],
+      "image": {
+        "width": 900,
+        "height": 900,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_475/exports/2027-new-possibilities.pdf",
+          "bytes": 958312,
+          "sha256": "2acb157b2cd977476fc2fdd60388645c3a33ccc85368982b9b1f6864ea0fce03"
+        },
+        "webp": {
+          "path": "work/production/wave_475/exports/2027-new-possibilities.webp",
+          "bytes": 1740816,
+          "sha256": "34572d75762d69f8df1b4da6f2f7a9836cbe8d200494eff1bcccb032a92bffe8"
+        },
+        "thumb": {
+          "path": "work/production/wave_475/exports/2027-new-possibilities-thumb.webp",
+          "bytes": 115786,
+          "sha256": "35abb2f90dfb514b7c7375ef11805e6cf2de05d364a2ff971480795d3e34da79"
+        }
+      },
+      "proofSha256": "efbc87afa241a745671c81c3a9e8648058fef700318f77307ec859d301790c22",
+      "pairMeanRgbDifference": 10.19035
+    },
+    {
+      "id": "2027-rocket-boost",
+      "title": "Blast Off into 2027 Rocket",
+      "alt": "Red-and-blue toy rocket rising above 2027, beneath the words Blast Off into and beside a ringed blue planet.",
+      "description": "A broad flame curves behind the year, linking the tilted rocket to the arched greeting.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_475/source/2027-rocket-boost.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "1093db80ae09bce2ba6e2f770c7690587c185d4cdb854f997d09c5da2f7981ba",
+      "inputSignature": "5c7f0073fc006c687060326caf461241a6de491c8198936f44084d84ff624050",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 988524,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 988524,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        172,
+        41,
+        1232,
+        1076
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_475/exports/2027-rocket-boost.pdf",
+          "bytes": 988524,
+          "sha256": "c1d7102ef481685dec265675bf82fc578c32fee29b802e812bc6b0af859e52b4"
+        },
+        "webp": {
+          "path": "work/production/wave_475/exports/2027-rocket-boost.webp",
+          "bytes": 1057006,
+          "sha256": "6ee7637d078277f9f9f81f543a9c9b49141615d5c5bf59635d740c623a5ccde4"
+        },
+        "thumb": {
+          "path": "work/production/wave_475/exports/2027-rocket-boost-thumb.webp",
+          "bytes": 58366,
+          "sha256": "334a9885722063d2ebb00f9dc2198f09130b0e3a1a525bbce3bfc8e89a93907e"
+        }
+      },
+      "proofSha256": "c2728997acfd8f6cc7cdd72b43ef0edb5fe172bef3bdb031cbbfe318ef5e2fdc",
+      "pairMeanRgbDifference": 7.48918
+    },
+    {
+      "id": "2027-rainbow-kids",
+      "title": "Hello 2027 Rainbow and Clouds",
+      "alt": "Multicolored Hello 2027 lettering beneath a bright rainbow with two smiling cloud characters.",
+      "description": "One cloud winks while the other wears a pink bow, framing the rounded glossy greeting below the rainbow.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_475/source/2027-rainbow-kids.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "129015f529f016bc6ad951ac727bf5eddba18d4166f38531495d1050b008fbc2",
+      "inputSignature": "9c4b35b6f28bf0caa1f5a53080bba1d0f7bdbd904dac6aa30340774edb1a90e1",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 633585,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 633585,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        151,
+        60,
+        1386,
+        956
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_475/exports/2027-rainbow-kids.pdf",
+          "bytes": 633585,
+          "sha256": "09d94db4d5e93afca3ee725f677f910191261e1e71ceb27974c7707f4a22c4d2"
+        },
+        "webp": {
+          "path": "work/production/wave_475/exports/2027-rainbow-kids.webp",
+          "bytes": 1231326,
+          "sha256": "882b9139d063967c4409224ad044047609b6242e687983f6e9560a78f3b3b16f"
+        },
+        "thumb": {
+          "path": "work/production/wave_475/exports/2027-rainbow-kids-thumb.webp",
+          "bytes": 46318,
+          "sha256": "cb111b1c3407175212e41db34218add1c15b099c5447108fd49d76202416e2bf"
+        }
+      },
+      "proofSha256": "a18c24e6371852137d92ad365366dd7b1f9e4d080a022897dbde843b16564bf7",
+      "pairMeanRgbDifference": 9.10459
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T12:30:06.763855+00:00",
+  "screenReviewEvidence": "work/production/wave_475/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T12:30:07.320Z"
+}

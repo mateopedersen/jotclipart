@@ -1,0 +1,543 @@
+{
+  "wave": "wave_478",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "2027-floral-garden-year",
+      "title": "Ivory 2027 with Garden Flowers",
+      "alt": "Ivory 2027 numerals edged in gold, surrounded by coral flowers, small blue daisies and green leaves.",
+      "description": "The asymmetrical flower arrangement follows the base of the first digits and rises around the final seven.",
+      "color": "Ivory",
+      "style": "Color",
+      "source": "work/production/wave_478/source/2027-floral-garden-year.png",
+      "printMaxEdgePx": 1205,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1942,
+      "height": 809,
+      "pdfWidth": 1205,
+      "pdfHeight": 502,
+      "sourceType": "raster",
+      "sourceSha256": "2658ca1f0880c93fe092627e111741ec29ee00b4bf3d8d80e88f46f7ad67239b",
+      "inputSignature": "2af3ba245fe57fbce32da6bf2b1adb822b2b657afdf19c9cdf1c53f63c3fff0e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 986809,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 986809,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        25,
+        23,
+        1929,
+        786
+      ],
+      "image": {
+        "width": 1205,
+        "height": 502,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_478/exports/2027-floral-garden-year.pdf",
+          "bytes": 986809,
+          "sha256": "68bb1b5b1c6475770de7b72c8866d0c56c94ddb5d5e82701866aaccaa0ff13ea"
+        },
+        "webp": {
+          "path": "work/production/wave_478/exports/2027-floral-garden-year.webp",
+          "bytes": 1400500,
+          "sha256": "6ba17bd8da702f1735f64b8fb4db3783441cda9e0d429791e4d17140d847d0b4"
+        },
+        "thumb": {
+          "path": "work/production/wave_478/exports/2027-floral-garden-year-thumb.webp",
+          "bytes": 50122,
+          "sha256": "9ba5f0229177432c072b83773bc50518869cb754a3d3a779db05d99d3c697e1c"
+        }
+      },
+      "proofSha256": "24107206ca5c9db977b0351a5e8f095a73dc1eefec743a4cbbc1ab97e241dc1a",
+      "pairMeanRgbDifference": 5.6072
+    },
+    {
+      "id": "2027-wildflower-wreath",
+      "title": "Welcome 2027 Spring Flower Wreath",
+      "alt": "Welcome 2027 lettering inside an oval wreath of pink tulips, yellow flowers, white daisies and small blue blossoms.",
+      "description": "A gold Welcome ribbon crosses the upper center while the navy year remains clear within the complete flower ring.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_478/source/2027-wildflower-wreath.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "4e0104bac895e348fd5cf953a01066b31eaa35a34d8bce047dab292a69aad007",
+      "inputSignature": "e019af36dcbac79be190193084e43a3930177c1de84e8560a5eaf1d95232e1a5",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 50,
+        "losslessCmyk": false,
+        "bytes": 992208,
+        "weightedCmykRmse": 0.955762
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1338316,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1125454,
+          "weightedCmykRmse": 0.683161
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1064573,
+          "weightedCmykRmse": 0.81548
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 992208,
+          "weightedCmykRmse": 0.955762
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        57,
+        27,
+        1489,
+        993
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_478/exports/2027-wildflower-wreath.pdf",
+          "bytes": 992208,
+          "sha256": "4c2a849871836f4281a42f7d0d9a380f9a27fc907cd756154f3b51ae83573c1b"
+        },
+        "webp": {
+          "path": "work/production/wave_478/exports/2027-wildflower-wreath.webp",
+          "bytes": 1958718,
+          "sha256": "d33a821310daab2f7743faedacc97561f7ec27af62e57128848762ec182db4d8"
+        },
+        "thumb": {
+          "path": "work/production/wave_478/exports/2027-wildflower-wreath-thumb.webp",
+          "bytes": 92064,
+          "sha256": "9307d1c469bdc93fd38a5e7573165dd75aee4c2f386df1f50e31197b02fdd11b"
+        }
+      },
+      "proofSha256": "e3ae192d679da19bad9a746a9392e88029ed6e43f7099aa4da3eb3b7a2df9dcc",
+      "pairMeanRgbDifference": 9.47909
+    },
+    {
+      "id": "2027-winter-knit",
+      "title": "Cozy New Year 2027 Knitted Greeting",
+      "alt": "Blue knitted Cozy New Year 2027 lettering wrapped in a red scarf, with a pom-pom cap and two pale snowflakes.",
+      "description": "Thick yarn loops define each large letter, and both scarf ends remain visible beneath the year.",
+      "color": "Blue",
+      "style": "Color",
+      "source": "work/production/wave_478/source/2027-winter-knit.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "9acff665eb6228a0c896b16864c76a638cc922e3ff2bdb70af7888dae7296028",
+      "inputSignature": "12bb3c851f0c626b3c1d99b06f91e025826edfbe8c766b86ba6b84ad1258cea9",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 892063,
+        "weightedCmykRmse": 0.713114
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1090855,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 892063,
+          "weightedCmykRmse": 0.713114
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        54,
+        43,
+        1490,
+        955
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_478/exports/2027-winter-knit.pdf",
+          "bytes": 892063,
+          "sha256": "7730dad6f71859975cdf8431af9457245cab31a53e9bbbc91a9db696011c0beb"
+        },
+        "webp": {
+          "path": "work/production/wave_478/exports/2027-winter-knit.webp",
+          "bytes": 1875886,
+          "sha256": "1633d6f6325cf742e880e008328e3b20a5eb0b503bc11fd9b5532ef45ab2508b"
+        },
+        "thumb": {
+          "path": "work/production/wave_478/exports/2027-winter-knit-thumb.webp",
+          "bytes": 67524,
+          "sha256": "e3f638d9d553edb2e4442eadb2346ded1f993fc56a1a02525985495e73240951"
+        }
+      },
+      "proofSha256": "e00fc8b7ea5d7ed26f2e40108dff758c18590d8001f8aa50959436ada50fc34a",
+      "pairMeanRgbDifference": 8.26233
+    },
+    {
+      "id": "2027-summer-beach",
+      "title": "Hello 2027 Seashell Greeting",
+      "alt": "Coral Hello 2027 lettering across a cream scallop shell with green palm leaves, a blue wave and an orange starfish.",
+      "description": "The ridged shell provides a compact shape behind the greeting while the wave curls up one side.",
+      "color": "Coral",
+      "style": "Color",
+      "source": "work/production/wave_478/source/2027-summer-beach.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1426,
+      "height": 1103,
+      "pdfWidth": 1000,
+      "pdfHeight": 773,
+      "sourceType": "raster",
+      "sourceSha256": "734a8ee034db539172ccffdecbdcdf954f58ecb250c7a27d4609704469d8d458",
+      "inputSignature": "2f1ca2301a8651b45bdb463d243017360de8af9272b415220aaaf5643e53e38b",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 943225,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 943225,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        107,
+        83,
+        1379,
+        1013
+      ],
+      "image": {
+        "width": 1000,
+        "height": 773,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_478/exports/2027-summer-beach.pdf",
+          "bytes": 943225,
+          "sha256": "2145692cfb3d48f033de5c3b7c67e3942d38f783a9bf296ffeddd41ffb23d0a2"
+        },
+        "webp": {
+          "path": "work/production/wave_478/exports/2027-summer-beach.webp",
+          "bytes": 1174082,
+          "sha256": "5475638e3048a457569522a91c936baa8411a6818a419d3541f56f32d31514f2"
+        },
+        "thumb": {
+          "path": "work/production/wave_478/exports/2027-summer-beach-thumb.webp",
+          "bytes": 57610,
+          "sha256": "18946b17dcd143f4acf850955606dc7c8d5ac84d8a2a3537b704576384db2181"
+        }
+      },
+      "proofSha256": "adbb53378dde09fa5df5f6e7a360bb3e72b432a0739f0c9f70b11d79d4c5c301",
+      "pairMeanRgbDifference": 5.46868
+    },
+    {
+      "id": "2027-mountain-adventure",
+      "title": "Adventure Awaits 2027 Mountain Patch",
+      "alt": "Round Adventure Awaits 2027 patch with three mountain peaks, pine trees, a reflective lake and rising sun.",
+      "description": "Cream curved lettering follows the navy outer border above a rust-colored year banner at the base.",
+      "color": "Navy",
+      "style": "Color",
+      "source": "work/production/wave_478/source/2027-mountain-adventure.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 1000,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "86e3f3a99929b5f13985237734d247a288d424c1e6669d4979a9c171027eea0c",
+      "inputSignature": "0545b2550846a8aa06f796965c57ac3f17080cac8832c7c38cd9d5335b08e36d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 48,
+        "losslessCmyk": false,
+        "bytes": 914430,
+        "weightedCmykRmse": 1.275513
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1596194,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1217190,
+          "weightedCmykRmse": 0.735535
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1121703,
+          "weightedCmykRmse": 0.866555
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 1015831,
+          "weightedCmykRmse": 1.030032
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 48,
+          "losslessCmyk": false,
+          "bytes": 914430,
+          "weightedCmykRmse": 1.275513
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        51,
+        65,
+        1204,
+        1188
+      ],
+      "image": {
+        "width": 1000,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_478/exports/2027-mountain-adventure.pdf",
+          "bytes": 914430,
+          "sha256": "3b7214496a7c90d8311ee28b40f1ec296615a6ae23bcc1cfb7d8d566db6c3446"
+        },
+        "webp": {
+          "path": "work/production/wave_478/exports/2027-mountain-adventure.webp",
+          "bytes": 1410232,
+          "sha256": "e0050f92f4c63e924c0c8d1a441555daa7de8d449ffd8e53750e86078abbe8b3"
+        },
+        "thumb": {
+          "path": "work/production/wave_478/exports/2027-mountain-adventure-thumb.webp",
+          "bytes": 69948,
+          "sha256": "5d270fb1512698a40618ed164234c96ddad0569a033ada4d5da847d7c21dd5d7"
+        }
+      },
+      "proofSha256": "2e06dc47b3976c7a013c023048f5ae8556a371e4031665dcaaf460eaeecb6703",
+      "pairMeanRgbDifference": 9.73135
+    },
+    {
+      "id": "2027-travel-suitcase",
+      "title": "Next Stop 2027 Suitcase",
+      "alt": "Teal wheeled suitcase with a cream Next Stop ribbon and four hanging number tags spelling 2027.",
+      "description": "A small airplane and curved blue trail rise beside the extended handle, with a tiny travel tag at the top corner.",
+      "color": "Teal",
+      "style": "Color",
+      "source": "work/production/wave_478/source/2027-travel-suitcase.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 1000,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "ffc358e04e64e9f7a085a69c7e97d0c6f96426cdf4d5e3202f42e94a57d9fca1",
+      "inputSignature": "f2a1bbc7846eb1735cb7fe1e98344f03d4e1fd7e67e71eb0ee8e8ddf9efed573",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 778778,
+        "weightedCmykRmse": 0.809099
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1117004,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 778778,
+          "weightedCmykRmse": 0.809099
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        126,
+        51,
+        1164,
+        1215
+      ],
+      "image": {
+        "width": 1000,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_478/exports/2027-travel-suitcase.pdf",
+          "bytes": 778778,
+          "sha256": "8159ef221d3e29ecacd6c1198ef7e1680a26a736396d77b5d5a5383fbaf8c362"
+        },
+        "webp": {
+          "path": "work/production/wave_478/exports/2027-travel-suitcase.webp",
+          "bytes": 1007770,
+          "sha256": "6ff426475a6fca05259fbb07529a6d7e5c5f59ec7402bac85ffd40beb2ecf572"
+        },
+        "thumb": {
+          "path": "work/production/wave_478/exports/2027-travel-suitcase-thumb.webp",
+          "bytes": 64340,
+          "sha256": "d8942977b36260b4586a198bc0dd2592c962aa23f55a8404243b3a6b56f29fd1"
+        }
+      },
+      "proofSha256": "e5d53852a498394991d71bd522eec3b1d2464767eac94b4ebe6411ca8bccc702",
+      "pairMeanRgbDifference": 6.48651
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T12:32:34.700411+00:00",
+  "screenReviewEvidence": "work/production/wave_478/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T12:32:35.012Z"
+}

@@ -1,0 +1,78 @@
+{
+  "wave": "wave_484",
+  "topic": "2027",
+  "collectionTarget": 100,
+  "method": "builtin-image-generation",
+  "research": "data/research/2027-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "2027-friendship-hands",
+      "title": "Together in 2027 Winter Mitten Badge",
+      "alt": "Three smiling navy, red and cream mittens rise above a Together in 2027 badge trimmed with evergreen and gold ornaments.",
+      "description": "Snowflake and geometric patterns decorate the raised mittens, while striped ribbon curls around the round gold-edged badge.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_484/source/2027-friendship-hands.png",
+      "printMaxEdgePx": 900,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-family-party",
+      "title": "Welcome 2027 Family Celebration",
+      "alt": "Two adults hold a red Welcome banner behind two children carrying gold 2027 numerals.",
+      "description": "A blue-sweatered adult and a red-skirted adult frame the smiling children, whose blue outfit and dotted red dress echo the banner\u2019s bright colors.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_484/source/2027-family-party.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-couple-toast",
+      "title": "Our 2027 Couple Toast",
+      "alt": "A smiling cartoon couple raises clear drinks behind a red heart sign reading Our 2027.",
+      "description": "The woman\u2019s red dress and the man\u2019s navy jacket frame a gold-edged heart decorated with small hearts and a wide red ribbon.",
+      "color": "Red",
+      "style": "Color",
+      "source": "work/production/wave_484/source/2027-couple-toast.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-self-belief",
+      "title": "2027 I\u2019ve Got This Thumbs-Up Lettering",
+      "alt": "Orange 2027 I\u2019ve Got This lettering is flanked by two white cartoon thumbs-up gloves beneath a navy star.",
+      "description": "Heavy rounded letters and dark outlines create a bold compact sticker shape with the year above the two-line message.",
+      "color": "Orange",
+      "style": "Color",
+      "source": "work/production/wave_484/source/2027-self-belief.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-positive-postcard",
+      "title": "2027 Looks Good on Me Sunshine",
+      "alt": "A smiling sun in blue sunglasses points outward beneath navy 2027 numerals and above coral Looks Good on Me lettering.",
+      "description": "A yellow star and a coral star balance the lively sun character, whose raised hands extend into the open sides of the phrase.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_484/source/2027-positive-postcard.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-possibility-door",
+      "title": "Hello New Possibilities 2027 Key Plaque",
+      "alt": "A gold key with a teal star bow leans beside a teal plaque reading Hello New Possibilities 2027.",
+      "description": "Gold scrollwork frames the raised cream message, while the star-shaped key head and small rays extend beyond the plaque.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_484/source/2027-possibility-door.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

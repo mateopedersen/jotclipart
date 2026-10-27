@@ -1,0 +1,80 @@
+{
+  "wave": "wave_507",
+  "topic": "blessings",
+  "method": "builtin-image-generation",
+  "research": "data/research/blessings-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "blessings-rabbit-quiet-prayer",
+      "title": "Rabbit Praying on a Blue Mat",
+      "alt": "A grey cartoon rabbit in a moon-pattern nightshirt kneels with clasped paws on a stitched blue mat beside a closed book.",
+      "description": "Long complete ears, closed eyes and soft pink cheeks give the little fantasy animal a calm bedtime pose.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_507/source/blessings-rabbit-quiet-prayer.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-peace-dove-ribbon",
+      "title": "Peace and Blessings Dove Ribbon",
+      "alt": "A flying white dove carries a teal ribbon reading \u201cPEACE AND BLESSINGS\u201d with a pink flower at one end.",
+      "description": "Layered blue-grey feathers, a curled tail ribbon and tucked pink feet create a wide greeting graphic.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_507/source/blessings-peace-dove-ribbon.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-blessings-classroom-checklist",
+      "title": "Count Your Blessings Checklist",
+      "alt": "A wooden clipboard holds a \u201cCOUNT YOUR BLESSINGS\u201d sheet with three empty checkboxes and writing lines.",
+      "description": "A complete red pencil and two star stickers sit at the lower corner beneath the silver clip.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_507/source/blessings-blessings-classroom-checklist.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-outline-bear-blessing-mailbox",
+      "title": "Bear Mailing a Blessings Letter Coloring Page",
+      "alt": "A smiling cartoon bear posts a heart-sealed letter into a mailbox marked \u201cBLESSINGS\u201d in black outline.",
+      "description": "A striped waistcoat, raised mailbox flag and open door give the complete mail-delivery scene clear coloring details.",
+      "color": "Black",
+      "style": "Outline",
+      "source": "work/production/wave_507/source/blessings-outline-bear-blessing-mailbox.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    },
+    {
+      "id": "blessings-outline-family-blessing-tree",
+      "title": "Family Planting a Blessings Tree Coloring Page",
+      "alt": "A cartoon adult and two children plant a sapling in a rounded planter with a \u201cBLESSINGS\u201d sign in black outline.",
+      "description": "One child tips a small watering can while the other helps press soil beside the leafy young tree.",
+      "color": "Black",
+      "style": "Outline",
+      "source": "work/production/wave_507/source/blessings-outline-family-blessing-tree.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    },
+    {
+      "id": "blessings-outline-cross-window",
+      "title": "Cross and Dove Window Coloring Page",
+      "alt": "A pointed-arch window contains a central Christian cross, leaf-shaped panels and an upper dove in black outline.",
+      "description": "Broad unshaded panes and a complete stone-style outer border define the independent stained-glass coloring design.",
+      "color": "Black",
+      "style": "Outline",
+      "source": "work/production/wave_507/source/blessings-outline-cross-window.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    }
+  ]
+}

@@ -1,0 +1,515 @@
+{
+  "wave": "wave_453",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "reindeer-reindeer-crossing-sign",
+      "title": "Decorative Reindeer Crossing Sign",
+      "alt": "Red-and-green wooden holiday sign reading REINDEER CROSSING, with a prancing reindeer silhouette and a gold bell above.",
+      "description": "A carved gold border frames the two-line wording on a striped post. Pine sprigs, holly and a red bow make the complete sign clearly decorative.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_453/source/reindeer-reindeer-crossing-sign.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1278,
+      "height": 1230,
+      "pdfWidth": 1000,
+      "pdfHeight": 962,
+      "sourceType": "raster",
+      "sourceSha256": "ece0663e566836499ae9a2574f56ce8263fbd71003d9bb896a0b48ed99cf0296",
+      "inputSignature": "1b006e39f447876ff0bd06542ebff058a40600be1d8b691689ffd9f15c5e4132",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 901903,
+        "weightedCmykRmse": 0.807709
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1196384,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 901903,
+          "weightedCmykRmse": 0.807709
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        96,
+        43,
+        1189,
+        1195
+      ],
+      "image": {
+        "width": 1000,
+        "height": 962,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_453/exports/reindeer-reindeer-crossing-sign.pdf",
+          "bytes": 901903,
+          "sha256": "3992e31aa004f4c2068b0a40b4796425e84c1cb0cea2a6d8eb663207d4aeb741"
+        },
+        "webp": {
+          "path": "work/production/wave_453/exports/reindeer-reindeer-crossing-sign.webp",
+          "bytes": 1114240,
+          "sha256": "46ef435c86b8c99d8a4c7cd12423a99d384273c7135800ab84ee5f2a4be35c4f"
+        },
+        "thumb": {
+          "path": "work/production/wave_453/exports/reindeer-reindeer-crossing-sign-thumb.webp",
+          "bytes": 60044,
+          "sha256": "e75803149b0c4e0341d0619b2c0f05e86832dcf890160b548a7508f3b2d98db7"
+        }
+      },
+      "proofSha256": "48396ca54999041e9a13aa8ac2f35f785633e631272ed62a4e91c417abcea4d5",
+      "pairMeanRgbDifference": 6.28843
+    },
+    {
+      "id": "reindeer-antler-light-garland",
+      "title": "Three Felt Reindeer Face Garland",
+      "alt": "Garland of three different felt reindeer faces linked with gold stars and holly, with bow-tied hanging loops at both ends.",
+      "description": "A cream smiling face sits between two brown faces with different ears, antlers and expressions. Red and green knitted scarf details brighten the small hanging decoration.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_453/source/reindeer-antler-light-garland.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "54d22bd5db28dca22d9b28bdd60a3bcf8cb844612958a30898848df4b5d8e1d3",
+      "inputSignature": "5e4fd8c7d4b2eb4d3ceefdcca91640becc64b8669a308e04b5fe598972f8b69c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 660092,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 660092,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        18,
+        135,
+        1518,
+        797
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_453/exports/reindeer-antler-light-garland.pdf",
+          "bytes": 660092,
+          "sha256": "b81720467b0e8f3ac64bf2cae0f6321e6bcd9983edc13e286e8ebf2be459fbef"
+        },
+        "webp": {
+          "path": "work/production/wave_453/exports/reindeer-antler-light-garland.webp",
+          "bytes": 1213518,
+          "sha256": "63652a403fa88eb9813cd508eee303e14d002584e44871f3bc66b34feb25d164"
+        },
+        "thumb": {
+          "path": "work/production/wave_453/exports/reindeer-antler-light-garland-thumb.webp",
+          "bytes": 42388,
+          "sha256": "84638c4bb2a7dd923a1fa119a127adb10c63b3ec1d3d25c6c5cb7bd5d9cffe52"
+        }
+      },
+      "proofSha256": "83cfbc5f56f6f92f1a329b56fd4daca0a9ce507a4db221b6f123488227c64a8b",
+      "pairMeanRgbDifference": 3.99157
+    },
+    {
+      "id": "reindeer-lichen-forager",
+      "title": "Reindeer Lowering Its Head to Lichen",
+      "alt": "Brown-and-cream reindeer lowering its broad muzzle toward a small isolated lichen sprig, with full antlers and four sturdy legs.",
+      "description": "A thick pale neck ruff follows the downward angle of the head. Irregular antler branches and broad cloven hooves distinguish the animal's sturdy natural silhouette.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_453/source/reindeer-lichen-forager.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "cf30a15a00f80aa6bf32243e9d953a31698f969c3988ddf07f711aa86df93852",
+      "inputSignature": "bfac067df41c70d78c84a4593440b2180ff0565a48f8e0c0ec19b52c830184af",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 962583,
+        "weightedCmykRmse": 0.966283
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1196537,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1020862,
+          "weightedCmykRmse": 0.806641
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 962583,
+          "weightedCmykRmse": 0.966283
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        127,
+        115,
+        1288,
+        993
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_453/exports/reindeer-lichen-forager.pdf",
+          "bytes": 962583,
+          "sha256": "23ca617b373e2fd62b1d2aa9e141c15c709fe265686d2aa55a33d384ed65815b"
+        },
+        "webp": {
+          "path": "work/production/wave_453/exports/reindeer-lichen-forager.webp",
+          "bytes": 1007410,
+          "sha256": "347b7c1d6a1ac4ea28977f23fbbd1954c637280faee5af952a0478a285a10d13"
+        },
+        "thumb": {
+          "path": "work/production/wave_453/exports/reindeer-lichen-forager-thumb.webp",
+          "bytes": 60300,
+          "sha256": "5a9804abba0b799688f9970a4cd5e8029bcea64bae01a2cc18687c67853806c0"
+        }
+      },
+      "proofSha256": "d5891b78b9d50aa23356b02c68bba4f303671393edca6329f1be04f3e4c0933b",
+      "pairMeanRgbDifference": 3.03755
+    },
+    {
+      "id": "reindeer-tundra-walking",
+      "title": "Reindeer Walking in Profile",
+      "alt": "Gray-brown reindeer walking left in profile with one forehoof lifted, a thick cream neck ruff and long branched antlers.",
+      "description": "The full side view shows a short tail, broad muzzle and pale flank stripe. Four distinct legs and wide cloven hooves keep the walking anatomy clear.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_453/source/reindeer-tundra-walking.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "f619032a49f3ea6d114d62fa7490d948f07612377ab487b1e092fc2e701a4a14",
+      "inputSignature": "487ca46997c61e2781ecffb734840723b7951b25a944284a04ee8e1f91660b6c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 726046,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 726046,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        232,
+        11,
+        1339,
+        993
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_453/exports/reindeer-tundra-walking.pdf",
+          "bytes": 726046,
+          "sha256": "f728174e65135a4e2ab782cb8e8d3f83e24f0fa284bfcd68a05396b08b6f6b5f"
+        },
+        "webp": {
+          "path": "work/production/wave_453/exports/reindeer-tundra-walking.webp",
+          "bytes": 1140804,
+          "sha256": "9c578935582c035a1edc8326caa822cf2522c8c118e306c72336b61b41e48ba9"
+        },
+        "thumb": {
+          "path": "work/production/wave_453/exports/reindeer-tundra-walking-thumb.webp",
+          "bytes": 39436,
+          "sha256": "0dc41388b0ab40f2948501dc0e08fd2b5df2ef0b9b23537bbcccf3250a819db8"
+        }
+      },
+      "proofSha256": "374f8b37bf71d51c8474a118b7dcc4117d13fd70c5ee2bc6859162638aee525d",
+      "pairMeanRgbDifference": 2.35519
+    },
+    {
+      "id": "reindeer-mother-calf",
+      "title": "Adult Reindeer with a Resting Calf",
+      "alt": "Adult brown-and-cream reindeer standing behind a small dark-coated calf resting with folded legs, both complete figures.",
+      "description": "The adult's wide antler crown and thick pale neck contrast with the calf's smooth, antlerless head. Their different sizes and overlapping positions form a compact wildlife pair.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_453/source/reindeer-mother-calf.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "90d4467404931cf2c9b4b2f7c951ebcf96c67c88dc653b7ec2a769099bb20193",
+      "inputSignature": "90a8b34fdb4ba2cda489cca4b1263102fc3f5e91ada1dfadf49ebafa873626e0",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 906904,
+        "weightedCmykRmse": 0.866209
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1102443,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 906904,
+          "weightedCmykRmse": 0.866209
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        235,
+        33,
+        1135,
+        1121
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_453/exports/reindeer-mother-calf.pdf",
+          "bytes": 906904,
+          "sha256": "31756b555f2e1b13e89d181d4a3ea5edb2df8d3774847897e5ec76cf355cd2b0"
+        },
+        "webp": {
+          "path": "work/production/wave_453/exports/reindeer-mother-calf.webp",
+          "bytes": 894758,
+          "sha256": "0165cb12b9ef1426d2f07c377bd2311750120054de80737ffbd7ee69127cabae"
+        },
+        "thumb": {
+          "path": "work/production/wave_453/exports/reindeer-mother-calf-thumb.webp",
+          "bytes": 56296,
+          "sha256": "2001c09c11cd8f0be4f18f5d1aca3705ce0e459b01a98e7da8c569dcf22b8862"
+        }
+      },
+      "proofSha256": "266fdaa244750cd01d522281282474019e3e6ec45bf5faa474b7e15cbea680eb",
+      "pairMeanRgbDifference": 2.88079
+    },
+    {
+      "id": "reindeer-snow-coat-rest",
+      "title": "Reindeer Resting and Looking Back",
+      "alt": "Pale winter-coated reindeer resting with folded legs and looking back over its shoulder beneath long branching antlers.",
+      "description": "Cream and gray fur follow the curve of the animal's sturdy body. A broad dark muzzle, short pale tail and tucked cloven hooves distinguish the quiet resting pose.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_453/source/reindeer-snow-coat-rest.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "dc2519ab9d4e05f915f7d432e5cb708ceb6a95578a8ca2643bec8a5caf0cf30f",
+      "inputSignature": "584eb9df9ad5ed0c1c91d881bab4dddb2b6614a12decf06634b14f366938c4bb",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 835068,
+        "weightedCmykRmse": 0.855492
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1039396,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 835068,
+          "weightedCmykRmse": 0.855492
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        139,
+        72,
+        1216,
+        1100
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_453/exports/reindeer-snow-coat-rest.pdf",
+          "bytes": 835068,
+          "sha256": "91b84c1ae5d786c7ba0f3f224992c7dc23efb7dd79b09dd46ed0abe9d191cf48"
+        },
+        "webp": {
+          "path": "work/production/wave_453/exports/reindeer-snow-coat-rest.webp",
+          "bytes": 900324,
+          "sha256": "b462085252b8efe882343672ffd5683b0ac85f553488ae3d7788435defcf183b"
+        },
+        "thumb": {
+          "path": "work/production/wave_453/exports/reindeer-snow-coat-rest-thumb.webp",
+          "bytes": 53134,
+          "sha256": "b941e46875962c7980c450f4c4aa69c2e59420aa8ebb76778fd124205d3d6170"
+        }
+      },
+      "proofSha256": "42db6b37486b6f393b253c72a885610e479d5c20f9ad8a62d055caa4d58bc495",
+      "pairMeanRgbDifference": 2.50867
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T07:19:50.289433+00:00",
+  "screenReviewEvidence": "work/production/wave_453/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T07:33:52.156Z"
+}

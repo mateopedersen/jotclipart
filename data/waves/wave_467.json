@@ -1,0 +1,487 @@
+{
+  "wave": "wave_467",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "gingerbread-ribbon-spinner",
+      "title": "Gingerbread Ribbon Gymnast",
+      "alt": "Gingerbread gymnast in a yellow icing leotard sweeping a rainbow ribbon around a one-legged balancing pose.",
+      "description": "A purple hair bow and pink candy buttons accent the heart-shaped face, while the wide ribbon loop frames the raised leg.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_467/source/gingerbread-ribbon-spinner.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1305,
+      "height": 1206,
+      "pdfWidth": 1000,
+      "pdfHeight": 924,
+      "sourceType": "raster",
+      "sourceSha256": "2d02537bc6ed34f375718ddfa146499394176ae79916af948b60f83911fc660a",
+      "inputSignature": "2a60eb2503963a421888e0b0bbf2adaf9b75f3a1bd0fd3162040443f061f6fc5",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 810849,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 810849,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        167,
+        17,
+        1282,
+        1180
+      ],
+      "image": {
+        "width": 1000,
+        "height": 924,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_467/exports/gingerbread-ribbon-spinner.pdf",
+          "bytes": 810849,
+          "sha256": "bb104dc6e1c2a6c2e313dab8798d1c1a35257c7db41148525bd363ce41142587"
+        },
+        "webp": {
+          "path": "work/production/wave_467/exports/gingerbread-ribbon-spinner.webp",
+          "bytes": 799946,
+          "sha256": "7454ebdb7d0bcca3e8df765de119f73a183b599cab9e989f103c3bbc3300bf85"
+        },
+        "thumb": {
+          "path": "work/production/wave_467/exports/gingerbread-ribbon-spinner-thumb.webp",
+          "bytes": 54988,
+          "sha256": "48118f510d13000380f3733bafd40614381b997f8b800af9ca2c2ebe26ffca20"
+        }
+      },
+      "proofSha256": "e968f87d8b02d44d837dd231074857572f79f2c2a5a5de6628b3e77d4a42d725",
+      "pairMeanRgbDifference": 3.30124
+    },
+    {
+      "id": "gingerbread-candy-crown",
+      "title": "Gingerbread King on a Candy Throne",
+      "alt": "Square-headed gingerbread king with a gold crown and green icing cape seated on a red-and-green gumdrop throne.",
+      "description": "A white icing moustache and pointed beard frame the smile, with a striped candy scepter held beside the chair.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_467/source/gingerbread-candy-crown.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 1000,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "b2d24f681b2ae98d3cb9280796b6ac3629cf20afad7cc8ad3fc174144b358660",
+      "inputSignature": "fa953f80eee5cc855990a2512ade9376af5fec1dc36b745560ffa689c2a05319",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 846631,
+        "weightedCmykRmse": 0.838551
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1112953,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 846631,
+          "weightedCmykRmse": 0.838551
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        126,
+        88,
+        1131,
+        1117
+      ],
+      "image": {
+        "width": 1000,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_467/exports/gingerbread-candy-crown.pdf",
+          "bytes": 846631,
+          "sha256": "b520ad45e101267f03e5f5719d3ae4e2750a2e9e3418378d5906b8d8b2bb8115"
+        },
+        "webp": {
+          "path": "work/production/wave_467/exports/gingerbread-candy-crown.webp",
+          "bytes": 990420,
+          "sha256": "3a8fd897cfff9ea03912cc92816c1760dd51bc7874cf00c53fea1de43693cde2"
+        },
+        "thumb": {
+          "path": "work/production/wave_467/exports/gingerbread-candy-crown-thumb.webp",
+          "bytes": 55758,
+          "sha256": "7bd840d0149c4990fbd77174383d080c443514f02c49c9b8cd812c9f8c5adea1"
+        }
+      },
+      "proofSha256": "1869dd7879fb5e165cde20be1c624d4ed44f80f9b418358997f183fe80420e79",
+      "pairMeanRgbDifference": 5.75857
+    },
+    {
+      "id": "gingerbread-snowy-window",
+      "title": "Gingerbread Pair Around an Arched Frame",
+      "alt": "Two different gingerbread characters peeking around an empty arched cookie frame decorated with white icing and holly.",
+      "description": "The left figure wears a red cap, while its smaller companion wears a green bow and matching icing skirt.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_467/source/gingerbread-snowy-window.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "4e13d5ce00cffdc9ae781b24f47801c809c1f5d799d5f7e90a28ac9f94c35aae",
+      "inputSignature": "c55b3b5288a05c4e2f0f3475c5bd8c7fec71c242a448be8b097811daf9625015",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 723393,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 723393,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        96,
+        67,
+        1429,
+        908
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_467/exports/gingerbread-snowy-window.pdf",
+          "bytes": 723393,
+          "sha256": "6203081e9849b1400270a27a002b9c37d98839e00620619c4ac4c6135a4e04b4"
+        },
+        "webp": {
+          "path": "work/production/wave_467/exports/gingerbread-snowy-window.webp",
+          "bytes": 1224152,
+          "sha256": "63e116a5b42dc88ac50b5573254fc3aa2f5b545541405f972cf5e70a30cbc5e1"
+        },
+        "thumb": {
+          "path": "work/production/wave_467/exports/gingerbread-snowy-window-thumb.webp",
+          "bytes": 37480,
+          "sha256": "603c43bb2c48983549ab32e37f674c549f6f5d02347af83dc62e7dd423ce443a"
+        }
+      },
+      "proofSha256": "1e576e9e3b549ff85d4a16f8821306c48e123a3b60a56a2d7951a8edc87a10e6",
+      "pairMeanRgbDifference": 4.57681
+    },
+    {
+      "id": "gingerbread-gingerbread-family",
+      "title": "Gingerbread Family Holding Hands",
+      "alt": "Three gingerbread characters holding hands: a tall teal-vested figure, a small child in green overalls and a bonneted figure in a pink dress.",
+      "description": "Their different heights, icing faces and scalloped outfits create a compact family grouping.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_467/source/gingerbread-gingerbread-family.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "d1457f27183e7ee1686b73e7856afec2beebb1ae558074b386f81211232b35d5",
+      "inputSignature": "dd85b4131f555c52f395c533f02d129e04f101fb10fcf8c643d425c23388f226",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 851983,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 851983,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        107,
+        63,
+        1434,
+        942
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_467/exports/gingerbread-gingerbread-family.pdf",
+          "bytes": 851983,
+          "sha256": "2778cd3dc2ad1ba5865e2c5ae2d3982c61d6bbfd25246807c7f5f80f971a1230"
+        },
+        "webp": {
+          "path": "work/production/wave_467/exports/gingerbread-gingerbread-family.webp",
+          "bytes": 1452234,
+          "sha256": "7c1f75b44743a8335828fec7b71bd9c0ba3b5dcc363a1f2cb1f49c146edbd11e"
+        },
+        "thumb": {
+          "path": "work/production/wave_467/exports/gingerbread-gingerbread-family-thumb.webp",
+          "bytes": 48218,
+          "sha256": "dbe2772b1f1278952b99c9cf0d5e3fbe0bddd2ff8fa35b1312a8332bdff6a1ec"
+        }
+      },
+      "proofSha256": "b7d9c4caf96d03a8165fe3edadc8e4ed40ba232f930160240cccbd674c93f657",
+      "pairMeanRgbDifference": 4.13787
+    },
+    {
+      "id": "gingerbread-blank-recipe-card",
+      "title": "Gingerbread Beside a Blank Recipe Card",
+      "alt": "Small gingerbread character in a red gingham apron and scalloped headband holding the edge of a blank cream card.",
+      "description": "The wide rounded card has a fine double brown border, leaving its center clear for a short recipe or message.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_467/source/gingerbread-blank-recipe-card.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "a7a7680fc45ecbf7313ae99b472b6785368b16f9c69f2dbf436f3d372fc0cc91",
+      "inputSignature": "92aafa6b985682308562c8499aa0c010402228cbbc2e43c24f62cab18bc08617",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 519812,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 519812,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        177,
+        104,
+        1423,
+        895
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_467/exports/gingerbread-blank-recipe-card.pdf",
+          "bytes": 519812,
+          "sha256": "392881af28b9b9d7429b638712d562e105402164012da643decbffdfaede016c"
+        },
+        "webp": {
+          "path": "work/production/wave_467/exports/gingerbread-blank-recipe-card.webp",
+          "bytes": 1076218,
+          "sha256": "b57b30114ab909664e57b79b3249a47acea420d4ba6952f21137fe3df7a9cf39"
+        },
+        "thumb": {
+          "path": "work/production/wave_467/exports/gingerbread-blank-recipe-card-thumb.webp",
+          "bytes": 23774,
+          "sha256": "a6749d5ff8a830d15c008018887622fddd88bb1c6dcd95c754d40644b436480d"
+        }
+      },
+      "proofSha256": "30858e54e2fe718ab7a0065887e5959768ce46d54ee5dbfb653031b38ed6c790",
+      "pairMeanRgbDifference": 3.17043
+    },
+    {
+      "id": "gingerbread-sugar-telescope",
+      "title": "Gingerbread Looking Through a Telescope",
+      "alt": "Tall gingerbread figure in a starry navy cap and purple cape looking through a brass telescope on a wafer-patterned tripod.",
+      "description": "One eye closes while the other meets the eyepiece, and the long cape curves behind the slim cookie body.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_467/source/gingerbread-sugar-telescope.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1246,
+      "height": 1263,
+      "pdfWidth": 987,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "26e0aa7e640982cd2a6111ec4ff2bc8435c857bea533d283d02900b82b551dc2",
+      "inputSignature": "91d65637cc0f7c8e7a39c124ff27f6b7423408c5434651720ef2a9ffc8973e88",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 946191,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 946191,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        226,
+        99,
+        1090,
+        1162
+      ],
+      "image": {
+        "width": 987,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_467/exports/gingerbread-sugar-telescope.pdf",
+          "bytes": 946191,
+          "sha256": "e7d6bb0b9e6aee8cc6cf37fad9c3604f775bed7bdb58b8413aa26f2bd3873d52"
+        },
+        "webp": {
+          "path": "work/production/wave_467/exports/gingerbread-sugar-telescope.webp",
+          "bytes": 785914,
+          "sha256": "d3413be7e818b78aaa09d7c412c7435deb4f870fb1f2c5a1a0be0a54f128d27f"
+        },
+        "thumb": {
+          "path": "work/production/wave_467/exports/gingerbread-sugar-telescope-thumb.webp",
+          "bytes": 54466,
+          "sha256": "ae1762cb770fe641e5e5e9fd9c0a8483cd6625e18ec0e0a9b0e338db5f8db57e"
+        }
+      },
+      "proofSha256": "81c82aa4a93a574d58708d5caf012edc48289f2efef6c1c675c2881ccb68ac19",
+      "pairMeanRgbDifference": 3.22386
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T10:22:12.690760+00:00",
+  "screenReviewEvidence": "work/production/wave_467/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T10:23:25.391Z"
+}

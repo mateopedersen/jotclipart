@@ -1,0 +1,78 @@
+{
+  "wave": "wave_474",
+  "topic": "2027",
+  "collectionTarget": 100,
+  "method": "builtin-image-generation",
+  "research": "data/research/2027-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "2027-foil-balloon-bouquet",
+      "title": "Gold 2027 Number Balloons",
+      "alt": "Four gold foil balloons spelling 2027, each tied with a teal bow, with a round navy balloon behind the final seven.",
+      "description": "Crimped foil edges and curled gold ribbons give the clear number row a festive dimensional finish.",
+      "color": "Gold",
+      "style": "Color",
+      "source": "work/production/wave_474/source/2027-foil-balloon-bouquet.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-midnight-clock-greeting",
+      "title": "Happy New Year 2027 with a Midnight Clock",
+      "alt": "Gold-and-navy Happy New Year 2027 lettering beneath a round Roman-numeral clock with both hands pointing to twelve.",
+      "description": "Gold leafy sprigs flank the dark blue clock above a sweeping navy ribbon under the large year.",
+      "color": "Gold",
+      "style": "Color",
+      "source": "work/production/wave_474/source/2027-midnight-clock-greeting.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-confetti-popper",
+      "title": "Welcome 2027 Party Popper",
+      "alt": "Bright Welcome 2027 lettering bursting from a striped party popper with curled ribbons, stars and small confetti shapes.",
+      "description": "The multicolored message sits diagonally across the fan of streamers above the red-and-gold cone.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_474/source/2027-confetti-popper.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-firework-lettering",
+      "title": "Hello 2027 with Colorful Fireworks",
+      "alt": "Teal Hello lettering above coral 2027 numerals, crowned by three colorful star-centered firework bursts.",
+      "description": "Gold outlines and small stars connect the pink, teal and purple bursts around the greeting.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_474/source/2027-firework-lettering.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-champagne-toast",
+      "title": "Cheers to 2027 Toast",
+      "alt": "Two gold-filled champagne flutes touching above navy-and-gold Cheers to 2027 lettering and a curling gold ribbon.",
+      "description": "The slender glass stems frame the word Cheers while the large year anchors the bottom of the greeting.",
+      "color": "Gold",
+      "style": "Color",
+      "source": "work/production/wave_474/source/2027-champagne-toast.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-child-block-tower",
+      "title": "2027 Toy Blocks with a Star",
+      "alt": "Four colorful toy blocks arranged as 20 above 27, beside a smiling yellow star character waving one hand.",
+      "description": "The blue, red, green and yellow blocks form a compact square, with large contrasting numerals for easy reading.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_474/source/2027-child-block-tower.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

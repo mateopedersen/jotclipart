@@ -1,0 +1,501 @@
+{
+  "wave": "wave_468",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "gingerbread-candy-balloon",
+      "title": "Gingerbread Child with a Heart Balloon",
+      "alt": "Small gingerbread child in mint overalls and a yellow hair bow holding a red heart-shaped balloon.",
+      "description": "The floating pose lifts both cookie feet, with one arm spread and the other gripping the thin balloon string.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_468/source/gingerbread-candy-balloon.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1024,
+      "height": 1536,
+      "pdfWidth": 667,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "24e049578ad70e72e7c110bf7d65d57ebbbccc4123746df9caa5e9d6a10302f3",
+      "inputSignature": "1bba5191769c760579ab5862a41516d916c331db14267288893c7009d5e8dfc2",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 502983,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 502983,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        150,
+        169,
+        986,
+        1342
+      ],
+      "image": {
+        "width": 667,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_468/exports/gingerbread-candy-balloon.pdf",
+          "bytes": 502983,
+          "sha256": "d459a5b911f52cd3ed483eadba724cc1e3220586c06a66a6f590a3dbf1e37d9b"
+        },
+        "webp": {
+          "path": "work/production/wave_468/exports/gingerbread-candy-balloon.webp",
+          "bytes": 1085510,
+          "sha256": "9cab22248d3873e6f469acf012aa2fe20dcc019a8f9406ae97f51319c8329830"
+        },
+        "thumb": {
+          "path": "work/production/wave_468/exports/gingerbread-candy-balloon-thumb.webp",
+          "bytes": 29750,
+          "sha256": "5b7e63e6beec44bb5c717a62019b30c9601fd9c5de539b82fc934c6c3f076f62"
+        }
+      },
+      "proofSha256": "9ae7e5c4136b4dae203695f162058d3e4516dbf11e4e6956b86076cbea297732",
+      "pairMeanRgbDifference": 2.81268
+    },
+    {
+      "id": "gingerbread-gift-wheelbarrow",
+      "title": "Gingerbread Pushing a Gift Wheelbarrow",
+      "alt": "Gingerbread character in an orange cap and teal vest pushing a red wheelbarrow carrying two ribboned presents.",
+      "description": "The forward-leaning figure grips both handles while the red wheel and metal support legs remain visible.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_468/source/gingerbread-gift-wheelbarrow.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "a761e215b305bd6ddf9b98993f91f89ccd31e19d769c830eef3b98c599e6ac01",
+      "inputSignature": "89589012a03d8599418647d6a5c85a0059b66e77210da3cdf3c73b472d642ef3",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 722297,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 722297,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        198,
+        108,
+        1228,
+        1047
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_468/exports/gingerbread-gift-wheelbarrow.pdf",
+          "bytes": 722297,
+          "sha256": "6861d2faa7beecc145f30db529f06e2385f3e702a6316bf69eda3698c2fd1a13"
+        },
+        "webp": {
+          "path": "work/production/wave_468/exports/gingerbread-gift-wheelbarrow.webp",
+          "bytes": 723318,
+          "sha256": "b9c559bbb086911d344068fd4cc9a125346f343a99f5d2311a392ede34e29ed3"
+        },
+        "thumb": {
+          "path": "work/production/wave_468/exports/gingerbread-gift-wheelbarrow-thumb.webp",
+          "bytes": 40906,
+          "sha256": "cab5540908907637bc0d0ef184b3b0e1302805ca20268eb9a0bbdff21f97a748"
+        }
+      },
+      "proofSha256": "f811fa58284af2c16276c09ab5a280ad475dc4bb56ac59c66d930da73001c21d",
+      "pairMeanRgbDifference": 3.21142
+    },
+    {
+      "id": "gingerbread-cookie-puppy",
+      "title": "Gingerbread Puppy Cookie",
+      "alt": "Dog-shaped gingerbread cookie with floppy ears, a raised paw, pink tongue and a green peppermint collar.",
+      "description": "White piping outlines the ears, paws and curved tail around the smiling chocolate-eyed puppy face.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_468/source/gingerbread-cookie-puppy.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "ee8e2214977ccedf4b7fd9a6af48dad3406bedb85f89f86709756af7a4414a0d",
+      "inputSignature": "8d219c8a91b2bbb724a237d1616b17c4e3bb3f43afe37f3f72475dd476dbdb6e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 813597,
+        "weightedCmykRmse": 0.825034
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1091878,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 813597,
+          "weightedCmykRmse": 0.825034
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        131,
+        92,
+        1210,
+        1128
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_468/exports/gingerbread-cookie-puppy.pdf",
+          "bytes": 813597,
+          "sha256": "4aa67a6225b7ec5f43fb5886b46e1486e2c8c6744bd95bce845fdb48a5cd64f3"
+        },
+        "webp": {
+          "path": "work/production/wave_468/exports/gingerbread-cookie-puppy.webp",
+          "bytes": 1101312,
+          "sha256": "94fde4591f683721770f56dec1095b5a7d9cc8b3490963e5df09b6792274c666"
+        },
+        "thumb": {
+          "path": "work/production/wave_468/exports/gingerbread-cookie-puppy-thumb.webp",
+          "bytes": 58182,
+          "sha256": "eabb502a4efee8d60154107cfcdc864c50c39ecccef54bab8b6977d085ccfb7b"
+        }
+      },
+      "proofSha256": "73f0b3472c4d04fa5341bd5856f4d30a7ef41ef73ec23032a9ec943117e20ad8",
+      "pairMeanRgbDifference": 4.83509
+    },
+    {
+      "id": "gingerbread-cookie-kitten",
+      "title": "Sleeping Gingerbread Cat Cookie",
+      "alt": "Curled cat-shaped gingerbread cookie with chocolate stripes, closed icing eyes and a small red bow.",
+      "description": "The striped tail wraps around the tucked front paws, with pink icing filling the pointed ears.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_468/source/gingerbread-cookie-kitten.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1278,
+      "height": 1230,
+      "pdfWidth": 1000,
+      "pdfHeight": 962,
+      "sourceType": "raster",
+      "sourceSha256": "9868715a91545008ce1421fe84f02f84ef2452d5605793e74430ef7b11fa4b4a",
+      "inputSignature": "1b684daedcb033d48545b5e1da0c1b7cd9160db7a90fc3f0d74b916fb53ede3c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 934002,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 934002,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        150,
+        164,
+        1160,
+        1073
+      ],
+      "image": {
+        "width": 1000,
+        "height": 962,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_468/exports/gingerbread-cookie-kitten.pdf",
+          "bytes": 934002,
+          "sha256": "8fef20dab05ed0932f6d07d7b47d8dad39104e2159b0d40df9d4e52271464047"
+        },
+        "webp": {
+          "path": "work/production/wave_468/exports/gingerbread-cookie-kitten.webp",
+          "bytes": 956608,
+          "sha256": "9f1b9587c17fd2a063bf224156c2cdf180286d9bf65c4151454ab62491aaf386"
+        },
+        "thumb": {
+          "path": "work/production/wave_468/exports/gingerbread-cookie-kitten-thumb.webp",
+          "bytes": 48766,
+          "sha256": "6b629c9e5f991b4f00946332847860d967f1f80e36416fe4c160cda9a21b6692"
+        }
+      },
+      "proofSha256": "0c71fd5da8b350bab7a8888af271f05405120c93ed752674717bb9616395ebd9",
+      "pairMeanRgbDifference": 3.71615
+    },
+    {
+      "id": "gingerbread-cookie-fox",
+      "title": "Gingerbread Fox Cookie",
+      "alt": "Seated fox-shaped gingerbread cookie with white icing cheeks, chest and tail tip, decorated with holly by one ear.",
+      "description": "The broad upright tail balances the pointed ears and small dark chocolate nose above two rounded cookie paws.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_468/source/gingerbread-cookie-fox.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1225,
+      "height": 1284,
+      "pdfWidth": 954,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "8db9b66f24c9fddffa85ea07c78b4c539e719c9a0d7036a2cc4dcad4885c8e87",
+      "inputSignature": "f7c1c0211c691b7884780a66bcba725dff43713fdaadec84202383c734fa121b",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 897549,
+        "weightedCmykRmse": 0.769988
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1224328,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 897549,
+          "weightedCmykRmse": 0.769988
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        111,
+        60,
+        1162,
+        1203
+      ],
+      "image": {
+        "width": 954,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_468/exports/gingerbread-cookie-fox.pdf",
+          "bytes": 897549,
+          "sha256": "20e83c2c57c11c30c9170f17f44d77f22fb6b515c566772c7dd732d047d9cd59"
+        },
+        "webp": {
+          "path": "work/production/wave_468/exports/gingerbread-cookie-fox.webp",
+          "bytes": 1227162,
+          "sha256": "b5575fd7a21928e5ef8bdd621a30676b872b753bd33b1b48462cbd710ce825a0"
+        },
+        "thumb": {
+          "path": "work/production/wave_468/exports/gingerbread-cookie-fox-thumb.webp",
+          "bytes": 63360,
+          "sha256": "a6fccd3563127e4e7e45281cf46275eb634b93119ef5d14fc7695f315b799bab"
+        }
+      },
+      "proofSha256": "04e224910dc56621b71fca059e2e1b9c23dc63b082be0a65cc8b597e19341790",
+      "pairMeanRgbDifference": 4.67129
+    },
+    {
+      "id": "gingerbread-cookie-owl",
+      "title": "Gingerbread Owl Cookie",
+      "alt": "Round owl-shaped gingerbread cookie with pale green icing eye rings and white scalloped feather piping, perched on an iced branch.",
+      "description": "Large chocolate eyes and an orange beak stand above two tiny orange feet gripping the branch.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_468/source/gingerbread-cookie-owl.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1261,
+      "height": 1247,
+      "pdfWidth": 1000,
+      "pdfHeight": 989,
+      "sourceType": "raster",
+      "sourceSha256": "041d4e08fff76e708f3b451262d1741deea75791b3bb6be461fd0287e8bbe7c7",
+      "inputSignature": "a78e810b41e4864788ef17a224ec76bff40b9e48271f61aaf2f4b50e6367b2e8",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 759951,
+        "weightedCmykRmse": 0.835831
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1049485,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 759951,
+          "weightedCmykRmse": 0.835831
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        172,
+        141,
+        1089,
+        1105
+      ],
+      "image": {
+        "width": 1000,
+        "height": 989,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_468/exports/gingerbread-cookie-owl.pdf",
+          "bytes": 759951,
+          "sha256": "b460f34a70806ecef5a296b7e96dd76fc1ed616951aea5e7229caa4efcf3b2d6"
+        },
+        "webp": {
+          "path": "work/production/wave_468/exports/gingerbread-cookie-owl.webp",
+          "bytes": 1000240,
+          "sha256": "fda9f60053839fb0565114a2bffdf20f41a7c7dbfbea2b2e0b013e24b461e5ac"
+        },
+        "thumb": {
+          "path": "work/production/wave_468/exports/gingerbread-cookie-owl-thumb.webp",
+          "bytes": 55182,
+          "sha256": "129499fbc4fdad5121649f7bfcf4fa9e15889672731c31b7e169a3db58f47ce2"
+        }
+      },
+      "proofSha256": "844c85d8ca55ab1f1d2bdfa07630beeba63f36ce4fa233a9102fa17745a87c3d",
+      "pairMeanRgbDifference": 4.64382
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T10:22:40.452372+00:00",
+  "screenReviewEvidence": "work/production/wave_468/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T10:23:25.795Z"
+}

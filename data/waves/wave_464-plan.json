@@ -1,0 +1,34 @@
+{
+  "wave": "wave_464",
+  "topic": "snowman",
+  "method": "builtin-image-generation",
+  "research": "data/research/snowman-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "snowman-outline-snowman-frame",
+      "title": "Snowman with an Oval Frame Outline",
+      "alt": "Black-and-white snowman in a holly-decorated top hat leaning around a large blank oval frame.",
+      "description": "The smiling face, fringed scarf and twig hands sit along the frame's left edge, leaving the center open.",
+      "color": "Black and White",
+      "style": "Outline",
+      "source": "work/production/wave_464/source/snowman-outline-snowman-frame.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only"
+    },
+    {
+      "id": "snowman-happy-winter-lettering",
+      "title": "Happy Winter Lettering with a Snowman",
+      "alt": "Snow-capped Happy Winter lettering in red and teal, with a top-hatted snowman forming the letter I and blue snowflakes at the sides.",
+      "description": "The two stacked words create a compact greeting, with a gold scarf adding a warm accent to the snowman.",
+      "color": "Teal",
+      "style": "Color",
+      "source": "work/production/wave_464/source/snowman-happy-winter-lettering.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

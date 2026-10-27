@@ -1,0 +1,508 @@
+{
+  "wave": "wave_479",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "2027-business-vision",
+      "title": "2027 Vision Compass",
+      "alt": "Navy 2027 Vision lettering inside a gold compass ring with four pointed markers and a curved upward arrow.",
+      "description": "The clear year sits above the word Vision within the open center of the circular design.",
+      "color": "Gold",
+      "style": "Color",
+      "source": "work/production/wave_479/source/2027-business-vision.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 1000,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "de8616439398f868f3a3c8cd0bb4b8542eaee86db6a5e8e4a7fe10de18223ce4",
+      "inputSignature": "2020624ce0ff78f2754cc4c048fb1ec55dc2f8a58fdf7bdc6264e44115f32233",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 971394,
+        "weightedCmykRmse": 0.976112
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1291843,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1040781,
+          "weightedCmykRmse": 0.847906
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 971394,
+          "weightedCmykRmse": 0.976112
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        27,
+        27,
+        1228,
+        1199
+      ],
+      "image": {
+        "width": 1000,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_479/exports/2027-business-vision.pdf",
+          "bytes": 971394,
+          "sha256": "bac73d0e82e066c828965b933b958ff51217405b2eaf753d6c8806835309b75c"
+        },
+        "webp": {
+          "path": "work/production/wave_479/exports/2027-business-vision.webp",
+          "bytes": 885138,
+          "sha256": "6fde8bf17a4594e407eb398eb1e4d1ffff743c1f06c950376debde148693b7e4"
+        },
+        "thumb": {
+          "path": "work/production/wave_479/exports/2027-business-vision-thumb.webp",
+          "bytes": 80156,
+          "sha256": "41c634c852acb5c016ebaff0622e1fb37eaee66bf0e29406ddde5c70b7efc2c2"
+        }
+      },
+      "proofSha256": "b4a3d021b835be9a4c978c08020f3c0a1bb6b751a8bf7986deb968670a8044c4",
+      "pairMeanRgbDifference": 5.45692
+    },
+    {
+      "id": "2027-business-goals",
+      "title": "2027 Goals Planner",
+      "alt": "Open navy spiral planner labeled 2027 Goals, with three empty checkbox lines and a matching blue pen.",
+      "description": "Gold binding rings separate the dark cover-facing page from the clean cream checklist.",
+      "color": "Navy",
+      "style": "Color",
+      "source": "work/production/wave_479/source/2027-business-goals.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "5e776487ed99a32de98a5dceb7b65948f24ca08f4d1a42c6c785a056cf0a3e58",
+      "inputSignature": "dd51ff580e5e19357322469d54a8cbcd91d2c1156e850c852321200bdccd10ec",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 880088,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 880088,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        146,
+        87,
+        1466,
+        919
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_479/exports/2027-business-goals.pdf",
+          "bytes": 880088,
+          "sha256": "69cc5a688dfe4c3042a965b4dc97625d093319044bbe66a147589b79eac40abf"
+        },
+        "webp": {
+          "path": "work/production/wave_479/exports/2027-business-goals.webp",
+          "bytes": 1448688,
+          "sha256": "7218d24d6c57c6f512e7b22caa913366dd156c95fc0b83b9c639553782ae205d"
+        },
+        "thumb": {
+          "path": "work/production/wave_479/exports/2027-business-goals-thumb.webp",
+          "bytes": 37366,
+          "sha256": "28aa51f3fe750c81fda7c1c5d82f05ecf780d1d60a1d7087fd707ae846d281d3"
+        }
+      },
+      "proofSha256": "783ca218b67e013e5dcafbad84207868642d0ad689452972847f9bf8f0515f87",
+      "pairMeanRgbDifference": 4.25573
+    },
+    {
+      "id": "2027-business-ideas",
+      "title": "New Ideas for 2027 Lightbulb",
+      "alt": "Gold lightbulb with navy New Ideas for 2027 lettering inside the glass and two green leaves beside its base.",
+      "description": "The large serif year follows three shorter words above the visible glowing filament.",
+      "color": "Gold",
+      "style": "Color",
+      "source": "work/production/wave_479/source/2027-business-ideas.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1182,
+      "height": 1330,
+      "pdfWidth": 889,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "138422827d0760ae8b516c3812a0c2150d291700d32e06b0e1eb28b07c32397d",
+      "inputSignature": "56570ab546415b7059e7a9f0a7713da3a48d548cb959638ffc5edc14b5164cd5",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 878855,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 878855,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        165,
+        96,
+        1016,
+        1250
+      ],
+      "image": {
+        "width": 889,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_479/exports/2027-business-ideas.pdf",
+          "bytes": 878855,
+          "sha256": "d2d743219203b65643669785854031405dd6bada2925d0166fa32fbe6f4551de"
+        },
+        "webp": {
+          "path": "work/production/wave_479/exports/2027-business-ideas.webp",
+          "bytes": 957574,
+          "sha256": "984fa80d47bf126a56a37a177f3111e9b82be691be7dca2506c6141e962ac3ab"
+        },
+        "thumb": {
+          "path": "work/production/wave_479/exports/2027-business-ideas-thumb.webp",
+          "bytes": 49814,
+          "sha256": "b3223a07a89ad611a220a22840c99e305f61276820e37b32a214c0172d634c21"
+        }
+      },
+      "proofSha256": "3732b1ab9290da6d477c11a7a8707eec0124d68f028ea8f1ff450c201745d722",
+      "pairMeanRgbDifference": 4.87927
+    },
+    {
+      "id": "2027-teamwork-bridge",
+      "title": "Team Building a 2027 Bridge",
+      "alt": "Two illustrated office workers positioning gold 2027 blocks across a small stone bridge labeled Building Together.",
+      "description": "A curly-haired woman in navy and a short-haired man in a rust jacket lean toward the numbered arch from opposite sides.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_479/source/2027-teamwork-bridge.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "603fbff387c54a20a3c6afd499af0e17f6380edc26d85546a924d52e918b5b84",
+      "inputSignature": "d8b1fa0e984145b352adfa83278dad4859ba7ab296c093c01486ebf9af743f4e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 885822,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 885822,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        128,
+        119,
+        1435,
+        889
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_479/exports/2027-teamwork-bridge.pdf",
+          "bytes": 885822,
+          "sha256": "58f778f65b1d46aa59689e9411054f14ae4ffed86e80607628a1d48c8ec9e6e8"
+        },
+        "webp": {
+          "path": "work/production/wave_479/exports/2027-teamwork-bridge.webp",
+          "bytes": 1376200,
+          "sha256": "216ab1cc35b5f51c3a4ac7a8b6d05a8487ca0fd3b492da1e9a70d6d3e535c0b1"
+        },
+        "thumb": {
+          "path": "work/production/wave_479/exports/2027-teamwork-bridge-thumb.webp",
+          "bytes": 42726,
+          "sha256": "3f4200ffb39fbecd67baba281d683a2c3258eb411e78b6bf68b3a3300ec06014"
+        }
+      },
+      "proofSha256": "57dc11b61150b83ffe6d7a039786a0eaf4c0a1730bf17b373f099eb80c5c5047",
+      "pairMeanRgbDifference": 4.4732
+    },
+    {
+      "id": "2027-launch-briefcase",
+      "title": "Launch into 2027 Briefcase",
+      "alt": "Navy business briefcase with a gold rocket clasp beneath a Launch into 2027 ribbon and sweeping upward arrow.",
+      "description": "The full gold arrow curves around the lower case and rises at one side of its stitched flap.",
+      "color": "Navy",
+      "style": "Color",
+      "source": "work/production/wave_479/source/2027-launch-briefcase.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "2e596d5b3d99d085f08d6ee13daba5adcc42b160f966e4b92960a458f60a7641",
+      "inputSignature": "bd021605faaa00ecdddffdfb2aaa521fe95263d2367d0be2d7e5d0373bd209d2",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 992427,
+        "weightedCmykRmse": 0.898334
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1326542,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1060917,
+          "weightedCmykRmse": 0.761099
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 992427,
+          "weightedCmykRmse": 0.898334
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        57,
+        83,
+        1321,
+        1075
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_479/exports/2027-launch-briefcase.pdf",
+          "bytes": 992427,
+          "sha256": "8d9c63260f7f2f3dccf268b35a84fa3ff81ba304effa68360e2e1d5aa333144f"
+        },
+        "webp": {
+          "path": "work/production/wave_479/exports/2027-launch-briefcase.webp",
+          "bytes": 1259328,
+          "sha256": "4577a4f9baad9844bf62f36fe0b195c046ca39cb1771893d9be2bf59b274d615"
+        },
+        "thumb": {
+          "path": "work/production/wave_479/exports/2027-launch-briefcase-thumb.webp",
+          "bytes": 56428,
+          "sha256": "00898f1d4ae5463665e10dcf8d88439c1e9f89433d05007423585ed299c5d38c"
+        }
+      },
+      "proofSha256": "62d48fd80a550feba30a3cff528a416065b421d13c3eec8395dc0200befce335",
+      "pairMeanRgbDifference": 4.6443
+    },
+    {
+      "id": "2027-new-chapter-book",
+      "title": "A New Chapter 2027 Book",
+      "alt": "Open cream-and-gold book with A New Chapter across the pages and large 2027 below the right-hand wording.",
+      "description": "Small blue floral ornaments and a gold ribbon bookmark frame the clear serif message.",
+      "color": "Ivory",
+      "style": "Color",
+      "source": "work/production/wave_479/source/2027-new-chapter-book.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "b88b5062c7f4f200bec3d0c0ab1130a151ab0c2ca0ae3da53b9b8575b1349b70",
+      "inputSignature": "1805dfc42871ba7b7fc5bb68587b5088d6200eba13370f97c52492b78ece53ac",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 902289,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 902289,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        59,
+        120,
+        1480,
+        944
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_479/exports/2027-new-chapter-book.pdf",
+          "bytes": 902289,
+          "sha256": "35290277b02bd7af0f34bca493387ca520b12bacf2d1c10f3dbd68027323d960"
+        },
+        "webp": {
+          "path": "work/production/wave_479/exports/2027-new-chapter-book.webp",
+          "bytes": 1504354,
+          "sha256": "5dd4818fb638a224de127ef54a53e534c3dfeedcfff16ac0c50c22be4ccb7a8f"
+        },
+        "thumb": {
+          "path": "work/production/wave_479/exports/2027-new-chapter-book-thumb.webp",
+          "bytes": 41250,
+          "sha256": "dbf5254de5f7df269760385c2f2f5b6211e2296a9adaf861239f6754bc3e7477"
+        }
+      },
+      "proofSha256": "87d2371ee22f2d1db46ae6f05cc0416138db213ddd3312e888873bd135f8e5a9",
+      "pairMeanRgbDifference": 5.90355
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T12:30:06.799261+00:00",
+  "screenReviewEvidence": "work/production/wave_479/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T12:30:08.361Z"
+}

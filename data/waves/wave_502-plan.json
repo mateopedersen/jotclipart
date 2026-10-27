@@ -1,0 +1,77 @@
+{
+  "wave": "wave_502",
+  "topic": "blessings",
+  "method": "builtin-image-generation",
+  "research": "data/research/blessings-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "blessings-school-year-blessings-backpack",
+      "title": "School Year Blessings Backpack",
+      "alt": "A yellow backpack, blue globe, closed notebook and red apple sit beneath a green \u201cSCHOOL YEAR BLESSINGS\u201d ribbon.",
+      "description": "Brown edging and two zippered pockets give the bag a clear school-day silhouette beside the globe\u2019s complete stand.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_502/source/blessings-school-year-blessings-backpack.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-holiday-blessings-sled",
+      "title": "Holiday Blessings Gift Sled",
+      "alt": "A red wooden sled carries a green scarf, wrapped gift and pine branches beneath gold \u201cHOLIDAY BLESSINGS\u201d lettering.",
+      "description": "Curled runner tips, a bright red bow and small pine cones frame the compact festive gift arrangement.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_502/source/blessings-holiday-blessings-sled.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-spring-blessings-tulips",
+      "title": "Spring Blessings Tulip Boots",
+      "alt": "Pink and yellow tulips fill blue gardening boots below pink-and-gold \u201cSPRING BLESSINGS\u201d lettering.",
+      "description": "Pale checked bows wrap the boot tops, and smaller white flowers fill the gaps between the tall tulip stems.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_502/source/blessings-spring-blessings-tulips.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-summer-blessings-sunhat",
+      "title": "Summer Blessings Straw Hat",
+      "alt": "A woven straw hat with a coral bow and pale tropical flowers sits beneath yellow-and-teal \u201cSUMMER BLESSINGS\u201d lettering.",
+      "description": "The wide textured brim and oversized ribbon loops form a low, warm-weather greeting graphic.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_502/source/blessings-summer-blessings-sunhat.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-winter-blessings-lantern",
+      "title": "Winter Blessings Candle Lantern",
+      "alt": "A navy lantern with a lit candle is wrapped in an ivory scarf behind a \u201cWINTER BLESSINGS\u201d ribbon.",
+      "description": "Gold-edged glass panels, small star openings and a pine cone finish the dark lantern beneath its full curved handle.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_502/source/blessings-winter-blessings-lantern.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-harvest-blessings-apple-pail",
+      "title": "Harvest Blessings Apples and Wheat",
+      "alt": "Red and green apples fill a metal pail beside a tied wheat sheaf under burgundy \u201cHARVEST BLESSINGS\u201d lettering.",
+      "description": "A wooden grip crosses the pail\u2019s curved handle, balancing the tall golden wheat and small autumn-leaf accents.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_502/source/blessings-harvest-blessings-apple-pail.png",
+      "printMaxEdgePx": 995,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

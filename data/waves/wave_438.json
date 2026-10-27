@@ -1,0 +1,494 @@
+{
+  "wave": "wave_438",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "elf-wrapping-a-parcel",
+      "title": "Elf Tying a Christmas Gift Bow",
+      "alt": "Big-eyed cartoon elf in a green dress and floppy cap tying a red bow around a cream parcel.",
+      "description": "The kneeling elf steadies a broad red ribbon above the cream gift box. Black braids, a red leaf collar and green-striped stockings give the small Christmas character a clear festive silhouette.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_438/source/elf-wrapping-a-parcel.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 1000,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "07e97a962261c99213cf47631536e7a2049993d709e959efc3da780e401a0096",
+      "inputSignature": "83dfac23124157898677e46db984f1f4386f6fa197e965dd43b530a91878615d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 788805,
+        "weightedCmykRmse": 0.828934
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1107671,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 788805,
+          "weightedCmykRmse": 0.828934
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        161,
+        54,
+        1142,
+        1196
+      ],
+      "image": {
+        "width": 1000,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_438/exports/elf-wrapping-a-parcel.pdf",
+          "bytes": 788805,
+          "sha256": "9e9902a43bf1d3e472741a7aec4628ab0f18cdeb9ba6ed0a4f5fc140ca0a43e6"
+        },
+        "webp": {
+          "path": "work/production/wave_438/exports/elf-wrapping-a-parcel.webp",
+          "bytes": 991394,
+          "sha256": "826ae02478a51a4727bb2cf9e6c48dd10dac086aea345e8b72aeef55a7eb5f38"
+        },
+        "thumb": {
+          "path": "work/production/wave_438/exports/elf-wrapping-a-parcel-thumb.webp",
+          "bytes": 54650,
+          "sha256": "64eb80f4f7bdeee27bb865a4daead23f8a24b9b430bcbddea16691125c9b681a"
+        }
+      },
+      "proofSha256": "2430eb11a237b277ed62f0bcdce8efbce8df35825ea8d0ffb7a1bccd7e597099",
+      "pairMeanRgbDifference": 5.56094
+    },
+    {
+      "id": "elf-carpenter-toy-wagon",
+      "title": "Elf Fitting a Toy Wagon Wheel",
+      "alt": "Small green-overalled cartoon elf crouching beside a wooden wagon and fitting one wheel to its axle.",
+      "description": "The elf holds a round wheel beside the little green wagon. A red pointed cap with a green band, short copper curls and curled red shoes frame the crouching pose.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_438/source/elf-carpenter-toy-wagon.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1243,
+      "height": 1265,
+      "pdfWidth": 983,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "45e6c0856783d9bf60dc00549109ef43f8006ebcb763bc5487ef9e03c950e318",
+      "inputSignature": "c38060a0644dbc6af559c221740323f9a43f36be36edf86ef34336a7502fec6e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 929946,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 929946,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        197,
+        83,
+        1204,
+        1138
+      ],
+      "image": {
+        "width": 983,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_438/exports/elf-carpenter-toy-wagon.pdf",
+          "bytes": 929946,
+          "sha256": "37e73a751e8f1e2a1065ba5b62c200fa330014bfa15a5fee044e36a0773d6d29"
+        },
+        "webp": {
+          "path": "work/production/wave_438/exports/elf-carpenter-toy-wagon.webp",
+          "bytes": 842994,
+          "sha256": "94902dd52a0721965f9ac68b1d52d199d140e66e35b1edb5936b23acd30a5ce0"
+        },
+        "thumb": {
+          "path": "work/production/wave_438/exports/elf-carpenter-toy-wagon-thumb.webp",
+          "bytes": 45096,
+          "sha256": "da77c8c36ff650791768d554d7055d90e7b8dc64a7b1c9f567504155c5a19922"
+        }
+      },
+      "proofSha256": "580f3bca2f9635a878194c7fd1530c813bb18f8f7f9f5496dfc0dfd1c7967727",
+      "pairMeanRgbDifference": 3.67216
+    },
+    {
+      "id": "elf-sewing-felt-fox",
+      "title": "Elf Sewing a Little Felt Fox",
+      "alt": "Green-clothed cartoon elf seated on a gift box, sewing a small orange felt fox beside a basket of thread.",
+      "description": "A little felt fox rests against the elf's green coat while one hand guides the thread. Cream hat trim, striped stockings and bright curled shoes surround the low gift-box seat.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_438/source/elf-sewing-felt-fox.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1275,
+      "height": 1233,
+      "pdfWidth": 1000,
+      "pdfHeight": 967,
+      "sourceType": "raster",
+      "sourceSha256": "237d78f62ce5cd8715cca20bfdf5679fc7e4ed6a0f1842074ec31c33be6681b6",
+      "inputSignature": "57869ebfbbdf8ae7ba2b659cc2fb4701340b04802988916c79afb049e17732d1",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 904176,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 904176,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        263,
+        76,
+        999,
+        1142
+      ],
+      "image": {
+        "width": 1000,
+        "height": 967,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_438/exports/elf-sewing-felt-fox.pdf",
+          "bytes": 904176,
+          "sha256": "dc4cfcecc009441aba281280b4e6a33f0e0d5c42350f6e5482faad35c78124df"
+        },
+        "webp": {
+          "path": "work/production/wave_438/exports/elf-sewing-felt-fox.webp",
+          "bytes": 815882,
+          "sha256": "2a692e46d9418b8fe8d34a73babcaf51b71938d940e9fa43838d6fbf3d30d31b"
+        },
+        "thumb": {
+          "path": "work/production/wave_438/exports/elf-sewing-felt-fox-thumb.webp",
+          "bytes": 46268,
+          "sha256": "63f4d614bc4e3d3f0c11527379f6778f9d4da2c1f10e4c40157cdbb9bea1b58c"
+        }
+      },
+      "proofSha256": "8905ea17b4259e93ed1a8a7d025bc2930ac6524406c5d5b025b1684a6d947f4c",
+      "pairMeanRgbDifference": 3.54408
+    },
+    {
+      "id": "elf-cookie-baker",
+      "title": "Elf Carrying Star Cookies",
+      "alt": "Curly-haired cartoon elf in a green tunic and cap holding a tray of three decorated star cookies.",
+      "description": "Three iced stars sit on the elf's small gold-edged tray. Copper ringlets, bright violet eyes and a green zigzag hatband distinguish the cheerful standing character.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_438/source/elf-cookie-baker.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1230,
+      "height": 1278,
+      "pdfWidth": 962,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "fd13074e1ff9174a5e7086d51f47a092b7bd6eb94201041139bc45c010c0b992",
+      "inputSignature": "0a65e02468308d990cc0d196af73c87d90f01ad7f9b9dc96a18e32c84849de9b",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 957231,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 957231,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        267,
+        31,
+        1103,
+        1236
+      ],
+      "image": {
+        "width": 962,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_438/exports/elf-cookie-baker.pdf",
+          "bytes": 957231,
+          "sha256": "6b5ce94f9d862ad8f13b0435e339d73867d45cc1dd2346272086987eb67e16ec"
+        },
+        "webp": {
+          "path": "work/production/wave_438/exports/elf-cookie-baker.webp",
+          "bytes": 865100,
+          "sha256": "ba3c86ba345793b1ccc4015a4b6a2f895376aa333b3a5bd52520e52d8674c8f4"
+        },
+        "thumb": {
+          "path": "work/production/wave_438/exports/elf-cookie-baker-thumb.webp",
+          "bytes": 50342,
+          "sha256": "50995f8870f0e89712b11139a08b4db9598917746e98e1f9260b1e20f4cf0f8f"
+        }
+      },
+      "proofSha256": "fc7858b71cd4efa9230218018273b1960b7dfb940e444372c6444218e3213a2b",
+      "pairMeanRgbDifference": 3.95855
+    },
+    {
+      "id": "elf-lantern-keeper",
+      "title": "Elf with a Lantern and Firewood",
+      "alt": "Smiling cartoon elf in a green outfit carrying a brass lantern and a small tied bundle of firewood.",
+      "description": "The elf steps forward with a warm lantern held at one side and a small wood bundle at the other. A long dark braid, red sash and striped stockings add movement to the compact figure.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_438/source/elf-lantern-keeper.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1225,
+      "height": 1284,
+      "pdfWidth": 954,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "8728012af8fa4ce109f7c52b4cf4d9c08e33b8fd2f0830234b5c74ef76f3948c",
+      "inputSignature": "5ef2211a5458042bf2e5b40b66f20ef79b4cec8e43d2e1d5e76a759963a2108a",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 920191,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 920191,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        270,
+        80,
+        1029,
+        1209
+      ],
+      "image": {
+        "width": 954,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_438/exports/elf-lantern-keeper.pdf",
+          "bytes": 920191,
+          "sha256": "17e2638e3341cf5e6da1fff2ab7256aefcb01ae60009c0579716d1bd75e59a0b"
+        },
+        "webp": {
+          "path": "work/production/wave_438/exports/elf-lantern-keeper.webp",
+          "bytes": 813164,
+          "sha256": "07027026e31ded8997ebf0df2a819000cded3bfa444865be1c5ac626978a1fb6"
+        },
+        "thumb": {
+          "path": "work/production/wave_438/exports/elf-lantern-keeper-thumb.webp",
+          "bytes": 53424,
+          "sha256": "e0a32809e427478aba203990a5d99f3e08955eb5d232bab9b1c3f43403357599"
+        }
+      },
+      "proofSha256": "6817a80abae6ba79e1366009078fcc1d3b478552766ea3afdbbcc676648e4520",
+      "pairMeanRgbDifference": 4.10638
+    },
+    {
+      "id": "elf-mail-satchel",
+      "title": "Elf Sitting on a Christmas Mail Sack",
+      "alt": "Big-eyed cartoon elf in a green coat sitting on a mail sack and holding two sealed cream envelopes.",
+      "description": "Two red-sealed envelopes rise above the elf's green coat. A floppy pom-pom cap, striped stockings and curled red shoes sit above the soft sack's holly and bell decorations.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_438/source/elf-mail-satchel.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1230,
+      "height": 1278,
+      "pdfWidth": 962,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "c1bb965fcc5e4bb1a225fd7f5da984fbc4e58acf783e4f63e51ec868a3555e10",
+      "inputSignature": "e33cd7120a004a843e93e35c0e86d91f87be4eeb95c2abd9ab7b92c9cdd55d6b",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 822280,
+        "weightedCmykRmse": 0.8122
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1113515,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 822280,
+          "weightedCmykRmse": 0.8122
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        176,
+        35,
+        1067,
+        1232
+      ],
+      "image": {
+        "width": 962,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_438/exports/elf-mail-satchel.pdf",
+          "bytes": 822280,
+          "sha256": "878a67b556ff738c535b422c4046608b7ad2bedee45492a6e0409b05dec70c00"
+        },
+        "webp": {
+          "path": "work/production/wave_438/exports/elf-mail-satchel.webp",
+          "bytes": 1059620,
+          "sha256": "878d207406542a8ff5f6303222b37731d8b68359ef0bb3016f330f9021498a37"
+        },
+        "thumb": {
+          "path": "work/production/wave_438/exports/elf-mail-satchel-thumb.webp",
+          "bytes": 55622,
+          "sha256": "343838d072e3f565508407ae562fb604261cceb8a473d1ef03b4aa152c33cae4"
+        }
+      },
+      "proofSha256": "cfe2af898e14bd73cb363a4f2b4b5073b96dec50b1873b9be65fb2acae2dff2b",
+      "pairMeanRgbDifference": 4.2413
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T04:52:32.586664+00:00",
+  "screenReviewEvidence": "work/production/wave_438/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T05:29:02.639Z"
+}

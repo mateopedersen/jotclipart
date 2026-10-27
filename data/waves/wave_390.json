@@ -1,6 +1,6 @@
 {
   "wave": "wave_390",
-  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "status": "PUBLISHED",
   "actualExportedDrawings": 6,
   "resumed": 4,
   "screenReview": "PASS",
@@ -643,5 +643,7 @@
   "screenReviewedAt": "2026-10-26T09:34:37.939051+00:00",
   "screenReviewEvidence": "work/production/wave_390/native-proof-review.jpg",
   "reviewerType": "AI_AGENT_NOT_HUMAN",
-  "createdAt": "2026-10-26T09:34:38.094Z"
+  "createdAt": "2026-10-26T09:34:38.094Z",
+  "liveRevision": "861977acc8d8e0463c694b8fbde2f8c1b979f247",
+  "liveVerifiedAt": "2026-10-26T10:38:47.968957+00:00"
 }

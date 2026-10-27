@@ -1,0 +1,508 @@
+{
+  "wave": "wave_443",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "elf-stargazer",
+      "title": "Elf Looking Through a Brass Telescope",
+      "alt": "Blond-curled cartoon elf in green overalls looking through a brass telescope on a complete wooden tripod.",
+      "description": "One hand rests near the telescope's focusing knob while the elf peers through the eyepiece. Green short overalls, a red shirt and red curled shoes make a compact stargazing character.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_443/source/elf-stargazer.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 1000,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "5329dc2161ede5bb858e6c7bcc96189ff5b7bd52eb3e7199465558c7ca036a71",
+      "inputSignature": "e3f68399100e18d420b7baef630d12f0a38b7a562bf884fc40041222e8169c1f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 874561,
+        "weightedCmykRmse": 0.831663
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1146868,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 874561,
+          "weightedCmykRmse": 0.831663
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        107,
+        54,
+        1162,
+        1164
+      ],
+      "image": {
+        "width": 1000,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_443/exports/elf-stargazer.pdf",
+          "bytes": 874561,
+          "sha256": "853dde8070c88a7fe9f13cf6c015e17214f6ed89b547fe74a724401b9fa9a11e"
+        },
+        "webp": {
+          "path": "work/production/wave_443/exports/elf-stargazer.webp",
+          "bytes": 844810,
+          "sha256": "38775c45b81941a040c133869015678021f775009b959e9dce6b82ce036de0bc"
+        },
+        "thumb": {
+          "path": "work/production/wave_443/exports/elf-stargazer-thumb.webp",
+          "bytes": 62776,
+          "sha256": "5c0e101d2d0d3bf195b3de073b6d54cb8812213dfce96574fa3ec2e656bd57d2"
+        }
+      },
+      "proofSha256": "ffb8d5c16924f5d0f31948f8980eaef2d9a9c1d786804e244a65f6e048ae81b9",
+      "pairMeanRgbDifference": 5.66048
+    },
+    {
+      "id": "elf-leaf-umbrella",
+      "title": "Elf Stepping Under a Leaf Umbrella",
+      "alt": "Braided cartoon elf in a green dress holding a broad leaf umbrella and lifting one red shoe above a tiny puddle.",
+      "description": "Water droplets cling to the large leaf above the elf's zigzag hat. A cream-edged green dress and two dark braids accompany the playful stepping pose.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_443/source/elf-leaf-umbrella.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1241,
+      "height": 1268,
+      "pdfWidth": 979,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "8b382eecd3d65a6b0860694eea50347a94a3ee9c57cc8d67f0d82d5064bbc21d",
+      "inputSignature": "9e025e85ea1c2980268b340eb127c6f66e561a080518a06fea32f6324a1ce79f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 936407,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 936407,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        152,
+        66,
+        1104,
+        1186
+      ],
+      "image": {
+        "width": 979,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_443/exports/elf-leaf-umbrella.pdf",
+          "bytes": 936407,
+          "sha256": "15bd4949530f9bd4fc8c998b64e075684cf99ac2805f2150b4f82453ddb93e6c"
+        },
+        "webp": {
+          "path": "work/production/wave_443/exports/elf-leaf-umbrella.webp",
+          "bytes": 712562,
+          "sha256": "470a866c7f1e1c73c246005878f0474fce9cc979aca6789e32b170f3e8bd5956"
+        },
+        "thumb": {
+          "path": "work/production/wave_443/exports/elf-leaf-umbrella-thumb.webp",
+          "bytes": 54904,
+          "sha256": "7a92f785f6f484a00f04955e373fee6cb3a9c382819ac00957374aaf67bf9ed1"
+        }
+      },
+      "proofSha256": "08c59e4923be0740b296d1ce56fe9b089838c53f5ab593b402c8aee0f57731a9",
+      "pairMeanRgbDifference": 4.38779
+    },
+    {
+      "id": "elf-cute-gift-greeting",
+      "title": "Elf Waving with a Teal Gift",
+      "alt": "Blue-eyed cartoon elf in green overalls waving one hand and carrying a teal Christmas gift with a red bow.",
+      "description": "A lifted knee and open waving hand give this greeting character a lively silhouette. Brown curled shoes and a red shirt contrast with the long green overalls.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_443/source/elf-cute-gift-greeting.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1230,
+      "height": 1278,
+      "pdfWidth": 962,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "bae15b75b38457fb2f5ca7777ec648ab34c12b4ee509764aeaaad5668599c54c",
+      "inputSignature": "46a46229d6611dd558564aa4b64647450058d8dc049181476faf474cb52ae5dc",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 826999,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 826999,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        198,
+        90,
+        1106,
+        1161
+      ],
+      "image": {
+        "width": 962,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_443/exports/elf-cute-gift-greeting.pdf",
+          "bytes": 826999,
+          "sha256": "d9da077115a8213c0f0dd3c073c804ffb7d35012c29d1b451a986c77ae254712"
+        },
+        "webp": {
+          "path": "work/production/wave_443/exports/elf-cute-gift-greeting.webp",
+          "bytes": 628460,
+          "sha256": "7e6e952e9263ec651c2b558ce09eb1747d68c80d33b0dc5661e819affd56dcc8"
+        },
+        "thumb": {
+          "path": "work/production/wave_443/exports/elf-cute-gift-greeting-thumb.webp",
+          "bytes": 45862,
+          "sha256": "0ff0074005542627b6b891aaebe3ccfe472e54f0c4ea23a0546df5b604540a7b"
+        }
+      },
+      "proofSha256": "52b1841b20766c37069cf61e5aa236f5c8f16f522be000ead00e2942f8f6ab42",
+      "pairMeanRgbDifference": 3.76148
+    },
+    {
+      "id": "elf-stirring-a-soup-pot",
+      "title": "Elf Stirring a Copper Soup Pot",
+      "alt": "Freckled cartoon elf in a green tunic stirring a small steaming copper pot on a low wooden stump.",
+      "description": "Both hands hold the long wooden spoon above the colorful soup. A red sash, cream cuffs and buckled brown shoes distinguish the standing kitchen helper.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_443/source/elf-stirring-a-soup-pot.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1278,
+      "height": 1230,
+      "pdfWidth": 1000,
+      "pdfHeight": 962,
+      "sourceType": "raster",
+      "sourceSha256": "74463688b22ed8dc362fea4c69998dd73c0de9e96fe33d44cafeb72ac7b231f3",
+      "inputSignature": "3aa003ee493e5aee558bbe19991f3401a893e84623865516850af2a7c6a18f83",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 805973,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 805973,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        235,
+        115,
+        1080,
+        1106
+      ],
+      "image": {
+        "width": 1000,
+        "height": 962,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_443/exports/elf-stirring-a-soup-pot.pdf",
+          "bytes": 805973,
+          "sha256": "46c7e23716f9fcfa400f6ec5a156d174e9866626e722ef809d7ea945793a005d"
+        },
+        "webp": {
+          "path": "work/production/wave_443/exports/elf-stirring-a-soup-pot.webp",
+          "bytes": 651028,
+          "sha256": "bb48392dbb2ad1871e07653f2a4fd85c249380f6f2c32f48ce56885b53b6bc0e"
+        },
+        "thumb": {
+          "path": "work/production/wave_443/exports/elf-stirring-a-soup-pot-thumb.webp",
+          "bytes": 46972,
+          "sha256": "9d33f8fb6db6bcce6b93682ce5dcc900d7f57fe9df16b2e14e2100776a525c01"
+        }
+      },
+      "proofSha256": "2fc54d11d516e6683847493cddd2d879940a55e657050b41e607fbbbff0580ac",
+      "pairMeanRgbDifference": 3.80653
+    },
+    {
+      "id": "elf-mending-a-curled-boot",
+      "title": "Elf Stitching a Curled Green Boot",
+      "alt": "Copper-curled cartoon elf seated on a gift box, stitching a large green boot held on a little wooden stand.",
+      "description": "A red seam runs up the boot's side beneath its red bow and gold bells. The elf guides the needle and thread in a cream-trimmed green coat and red curled shoes.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_443/source/elf-mending-a-curled-boot.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1275,
+      "height": 1233,
+      "pdfWidth": 1000,
+      "pdfHeight": 967,
+      "sourceType": "raster",
+      "sourceSha256": "23026dce15cd5a384098a691dacc50bb6b9ce8fb80768d8e924f1f52f9ec29a2",
+      "inputSignature": "7c63515e3dd819322c6c67942d5f9994c05473f464e2bc017f54bac392a7cf98",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 969650,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 969650,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        215,
+        39,
+        1126,
+        1170
+      ],
+      "image": {
+        "width": 1000,
+        "height": 967,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_443/exports/elf-mending-a-curled-boot.pdf",
+          "bytes": 969650,
+          "sha256": "a5d2fba9579dfcadcc47fa496b9bd5933c3b80404e460b3e3d471f0d61db8f2a"
+        },
+        "webp": {
+          "path": "work/production/wave_443/exports/elf-mending-a-curled-boot.webp",
+          "bytes": 827950,
+          "sha256": "434e5d82247b2e5e88f0417b173161329133011b1990499dd178f56b5924a43d"
+        },
+        "thumb": {
+          "path": "work/production/wave_443/exports/elf-mending-a-curled-boot-thumb.webp",
+          "bytes": 52714,
+          "sha256": "26b8dc68e0754310bc0c914d45d649e13011371ab69ffef54ee8627cf4a30155"
+        }
+      },
+      "proofSha256": "c84a3788fdfea1bb6a7d519ff3cf4b46e4c6acd277667f77c602b040cfdd2bda",
+      "pairMeanRgbDifference": 4.50737
+    },
+    {
+      "id": "elf-felt-elf-craft-kit",
+      "title": "Felt Christmas Elf Sewing Kit",
+      "alt": "Green-clothed felt elf ornament arranged with green fabric, a thread spool, a blunt needle and an embroidery hoop.",
+      "description": "Visible stitches edge the little elf's coat, cap and curled shoes. A complete hanging loop rises above its head, with sewing materials arranged on either side.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_443/source/elf-felt-elf-craft-kit.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "elf",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "0c222d35b462074dd2b88ea08261185f7be763e08a6739bd969f82217eba22cc",
+      "inputSignature": "f6c1dfb4941d890031ffa640fe4f47f606f7cd9e50d3a990b766f5dbb638c7a4",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 50,
+        "losslessCmyk": false,
+        "bytes": 932849,
+        "weightedCmykRmse": 1.121494
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1349585,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1089580,
+          "weightedCmykRmse": 0.791452
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1022306,
+          "weightedCmykRmse": 0.925013
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 932849,
+          "weightedCmykRmse": 1.121494
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        66,
+        20,
+        1256,
+        1160
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_443/exports/elf-felt-elf-craft-kit.pdf",
+          "bytes": 932849,
+          "sha256": "dea6ce2eeaa9f420ebde40914b41c0334ede80fbd0c9817581a69da47d773ac8"
+        },
+        "webp": {
+          "path": "work/production/wave_443/exports/elf-felt-elf-craft-kit.webp",
+          "bytes": 1200280,
+          "sha256": "fd7a00b125a056f7adf8cf042ddbcd360ff0f301f34b6bbf8250ee27b625daa9"
+        },
+        "thumb": {
+          "path": "work/production/wave_443/exports/elf-felt-elf-craft-kit-thumb.webp",
+          "bytes": 69082,
+          "sha256": "492cac5e3377c7669afc488e3143f524fdc34b78a6375941c5674fc0b9e9defd"
+        }
+      },
+      "proofSha256": "8b6f9ffa0e2a523f869757fb514da23b9a1ebce5cf62ee84f3bf3c2b3f082412",
+      "pairMeanRgbDifference": 5.34767
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T05:20:01.658272+00:00",
+  "screenReviewEvidence": "work/production/wave_443/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T05:29:04.439Z"
+}

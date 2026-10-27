@@ -1,0 +1,529 @@
+{
+  "wave": "wave_485",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "2027-small-steps",
+      "title": "Small Steps Big Year 2027 Footprints",
+      "alt": "Three colored shoe prints climb toward a gold star marked 2027 above green Small Steps Big Year lettering.",
+      "description": "Brown, blue and pink soles show different tread patterns along a curling green trail that links the message to the year.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_485/source/2027-small-steps.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1225,
+      "height": 1284,
+      "pdfWidth": 954,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "efbf0a00940971816d8cc6b5ffa9a30a446f97d584f909b4eba6b1f12b41dacf",
+      "inputSignature": "cc2ec491b3c2b9155d259b5e4237ce93061e3a3316fb3f7ee6ee9dbbdd44c4be",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 976089,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 976089,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        83,
+        63,
+        1186,
+        1240
+      ],
+      "image": {
+        "width": 954,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_485/exports/2027-small-steps.pdf",
+          "bytes": 976089,
+          "sha256": "fa0fd16e0ebf045ca53204f224f315c03383509883f8583d7616c0b6e0c64499"
+        },
+        "webp": {
+          "path": "work/production/wave_485/exports/2027-small-steps.webp",
+          "bytes": 876798,
+          "sha256": "690602ce5e1a0b26db47711d94ccee775da58ddd0b743bfd61bfa1be0cb04a02"
+        },
+        "thumb": {
+          "path": "work/production/wave_485/exports/2027-small-steps-thumb.webp",
+          "bytes": 65310,
+          "sha256": "e1207d73bba138c9eca960adefd2ba9e498a9381a891307c852e93278b800f47"
+        }
+      },
+      "proofSha256": "6595fbcb68c713e4459f0b1fa0b047ab7c399b29039e99063c24e7b285bfa40d",
+      "pairMeanRgbDifference": 7.68485
+    },
+    {
+      "id": "2027-gratitude-year",
+      "title": "Grateful for 2027 Flower Basket",
+      "alt": "A woven basket holds a sunflower, white daisies and a pink lily behind a Grateful For ribbon and blue 2027 tag.",
+      "description": "The arched basket handle and broad green leaves frame the mixed flowers, with the cream ribbon curving across the wicker front.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_485/source/2027-gratitude-year.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 1000,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "091b0b5f8c60195e82f3cc8941b0ae03b8fdbec5aba22c8099ed598382560822",
+      "inputSignature": "ad76337389d6bfec72550558198e6067feea10c04c4e430ad6dcd02152c88ba9",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 50,
+        "losslessCmyk": false,
+        "bytes": 960307,
+        "weightedCmykRmse": 1.034977
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1518177,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1151832,
+          "weightedCmykRmse": 0.735029
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1066009,
+          "weightedCmykRmse": 0.868487
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 960307,
+          "weightedCmykRmse": 1.034977
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        26,
+        76,
+        1228,
+        1178
+      ],
+      "image": {
+        "width": 1000,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_485/exports/2027-gratitude-year.pdf",
+          "bytes": 960307,
+          "sha256": "0acf3d1977c905bd431330979feea70a1c255fa3dd9c026e1978ac8857e369ae"
+        },
+        "webp": {
+          "path": "work/production/wave_485/exports/2027-gratitude-year.webp",
+          "bytes": 1464968,
+          "sha256": "a685674185451b99dc5909098d962b392bce6a3026500620a7721c6edd7f6bcc"
+        },
+        "thumb": {
+          "path": "work/production/wave_485/exports/2027-gratitude-year-thumb.webp",
+          "bytes": 84068,
+          "sha256": "252c545fb9b0e46487164829ae48c88695777f759358f705567356cd8e51f063"
+        }
+      },
+      "proofSha256": "ee3ae24f64e4789d2981dba34471f4f87b20c173e28d519d3cecab9342d6623a",
+      "pairMeanRgbDifference": 9.77876
+    },
+    {
+      "id": "2027-kindness-year",
+      "title": "Kindness in 2027 Bird Pair",
+      "alt": "A blue bird and a pink bird hold a red heart reading Kindness in 2027.",
+      "description": "The birds’ open smiles, rounded wings and yellow feet flank the gold-edged heart; a red flower bow distinguishes the pink bird.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_485/source/2027-kindness-year.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "6c935c17d1073bc412d9cb21d8fae2e7a4a7a91f5fec5c6ef2a26090e5675f51",
+      "inputSignature": "f65ba19030aff79c7e4bd6cc561efca5e077de5556ed70881fb235847f2f5e50",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 783045,
+        "weightedCmykRmse": 0.756213
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1045656,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 783045,
+          "weightedCmykRmse": 0.756213
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        71,
+        57,
+        1304,
+        1073
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_485/exports/2027-kindness-year.pdf",
+          "bytes": 783045,
+          "sha256": "f6379f440e145653fa6bf989fb4eed61bd11259984e0d463684246f4cd4de270"
+        },
+        "webp": {
+          "path": "work/production/wave_485/exports/2027-kindness-year.webp",
+          "bytes": 1173464,
+          "sha256": "c1fdb93e5de0f12d184f052a409b5c9ab9987415422adcd3524f3f664084e99b"
+        },
+        "thumb": {
+          "path": "work/production/wave_485/exports/2027-kindness-year-thumb.webp",
+          "bytes": 62702,
+          "sha256": "9a576351a0667de35bcfba27bc403b395580d8bd52e13a3325d26107035ce277"
+        }
+      },
+      "proofSha256": "b7ba1b1eaeabe058cb7f729531011eb58bfc6e67d4bc042257601e5327cd023a",
+      "pairMeanRgbDifference": 6.78318
+    },
+    {
+      "id": "2027-dream-flight",
+      "title": "Dreams Take Flight 2027 Paper Airplane",
+      "alt": "A white paper airplane flies over navy 2027 numerals and a cream Dreams Take Flight ribbon with a curling gold trail.",
+      "description": "A loose gold orbit and small stars carry the eye around the large beveled year beneath the departing paper plane.",
+      "color": "Blue",
+      "style": "Color",
+      "source": "work/production/wave_485/source/2027-dream-flight.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "ccf75c897c9447826eacf52e522a7d0668b2a10cfd1f7646553d9ff0f685efea",
+      "inputSignature": "1a708c82a79cabfa12950ead8f4f548b01f393358663e4a0cebbfa0982ec32e4",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 750684,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 750684,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        128,
+        65,
+        1479,
+        903
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_485/exports/2027-dream-flight.pdf",
+          "bytes": 750684,
+          "sha256": "39297622fca42f85a3bc2f5907c05a79dd0ed638f4132528d0f01571fb89c393"
+        },
+        "webp": {
+          "path": "work/production/wave_485/exports/2027-dream-flight.webp",
+          "bytes": 1260250,
+          "sha256": "d4d211d3cf7c0ffb5eb3876a8e2c5da639ab0fe010a44932e910daeddd459176"
+        },
+        "thumb": {
+          "path": "work/production/wave_485/exports/2027-dream-flight-thumb.webp",
+          "bytes": 52376,
+          "sha256": "83e9d08876588dcc23f6ad4b3c332429f4349d60cd1786c29975df82154c0806"
+        }
+      },
+      "proofSha256": "1b9046a87204c3f013bc7a0c8204ad41701f32b18c25a2deba93164713fd49ca",
+      "pairMeanRgbDifference": 5.55951
+    },
+    {
+      "id": "2027-bold-beginnings",
+      "title": "Bold Beginnings 2027 Paintbrush",
+      "alt": "Cream Bold Beginnings lettering and gold 2027 numerals sit inside a blue and gold paint sweep above a broad brush.",
+      "description": "Thick curved paint strokes form an open oval around the message, ending near the brush’s dark blue bristles and brown handle.",
+      "color": "Blue",
+      "style": "Color",
+      "source": "work/production/wave_485/source/2027-bold-beginnings.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "ac9c9f4e316ef043988776b6227e2e9c0834f8e3636e6203740fc0cf6202db31",
+      "inputSignature": "aa07e312c44d8516565632dbccf368679c670ea2d80777bf9a4d12597381a063",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 819084,
+        "weightedCmykRmse": 0.72117
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1067314,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 819084,
+          "weightedCmykRmse": 0.72117
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        96,
+        38,
+        1468,
+        981
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_485/exports/2027-bold-beginnings.pdf",
+          "bytes": 819084,
+          "sha256": "560cdde84ef223f316638b201aa3a8ccad5abacf9c18dc27d1d1dd32839e2537"
+        },
+        "webp": {
+          "path": "work/production/wave_485/exports/2027-bold-beginnings.webp",
+          "bytes": 1691378,
+          "sha256": "2d2f166653f5097909a7fc87ad573fd017fbf5c6551ffd88c02ea57bd0513369"
+        },
+        "thumb": {
+          "path": "work/production/wave_485/exports/2027-bold-beginnings-thumb.webp",
+          "bytes": 61762,
+          "sha256": "c804bb24581295005c562d679d1781c1c31250e8c53f1cd7fc57c62af1823fad"
+        }
+      },
+      "proofSha256": "07d2b40e893cf57dd57a4cef89b589cff39ac86948e3f107518b1f54dcbb7cc4",
+      "pairMeanRgbDifference": 8.57836
+    },
+    {
+      "id": "2027-bloom-year",
+      "title": "Bloom in 2027 Floral Watering Can",
+      "alt": "A teal watering can marked 2027 holds a pink tulip, yellow sunflower and white daisy beneath Bloom In lettering.",
+      "description": "Gold edging, small painted flowers and pink hearts decorate the can, whose long spout and curved handle remain fully visible.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_485/source/2027-bloom-year.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "92c8d139a8c0b922d32142d12f8c1245a3bd82c6ca0ce98f26d30a31b5af1065",
+      "inputSignature": "979975ab4e1996ad053f8afcdda5d2590547470a4c81f7241824121308e1fa79",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 976372,
+        "weightedCmykRmse": 0.891465
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1343900,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1042486,
+          "weightedCmykRmse": 0.759948
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 976372,
+          "weightedCmykRmse": 0.891465
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        74,
+        87,
+        1265,
+        1130
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_485/exports/2027-bloom-year.pdf",
+          "bytes": 976372,
+          "sha256": "4de0cf578db8c5511d13e8ae9622a93026980cab5fcf0fce76d3cc54c39d0523"
+        },
+        "webp": {
+          "path": "work/production/wave_485/exports/2027-bloom-year.webp",
+          "bytes": 1379420,
+          "sha256": "cae5f5ccd2e79eb42b2d15445deaa875616fb44029b3cdc95e9ed7697b76ca51"
+        },
+        "thumb": {
+          "path": "work/production/wave_485/exports/2027-bloom-year-thumb.webp",
+          "bytes": 78820,
+          "sha256": "e3ed82c45f40043680aa8af89680b8e5a4c87e97a5f201daa8758c490608e099"
+        }
+      },
+      "proofSha256": "a485275ce4437be7c303668a189b415b45f047ec22ab1b3178280b4ac5d2ae75",
+      "pairMeanRgbDifference": 7.34627
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T12:32:34.712998+00:00",
+  "screenReviewEvidence": "work/production/wave_485/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T12:32:35.403Z"
+}

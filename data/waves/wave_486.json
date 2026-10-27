@@ -1,0 +1,543 @@
+{
+  "wave": "wave_486",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "2027-month-august",
+      "title": "August 2027 Peach Lettering",
+      "alt": "Coral August lettering arches over whole and halved peaches above green 2027 numerals.",
+      "description": "A detailed peach stone and glossy green leaves give the fruit cluster a clear focal point between the month and year.",
+      "color": "Orange",
+      "style": "Color",
+      "source": "work/production/wave_486/source/2027-month-august.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "da6a39a3fa8b4c838bb6b48fd99802c47983ad72de7a0c214d47e8896ee069ad",
+      "inputSignature": "275b877d32b70a501309b3518382d10b2345312521b897f97c31d012de98db9e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 50,
+        "losslessCmyk": false,
+        "bytes": 940339,
+        "weightedCmykRmse": 0.990107
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1365700,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1095000,
+          "weightedCmykRmse": 0.71127
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1027940,
+          "weightedCmykRmse": 0.833135
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 940339,
+          "weightedCmykRmse": 0.990107
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        84,
+        39,
+        1292,
+        1118
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_486/exports/2027-month-august.pdf",
+          "bytes": 940339,
+          "sha256": "327782a19e3439619c2dc70b83b596f0f00528897a31cd1b5ccd13d30834c000"
+        },
+        "webp": {
+          "path": "work/production/wave_486/exports/2027-month-august.webp",
+          "bytes": 1473292,
+          "sha256": "32325c85af98fec84a52c34c827889c94e270fe8d835959c1436514ed2e0ea26"
+        },
+        "thumb": {
+          "path": "work/production/wave_486/exports/2027-month-august-thumb.webp",
+          "bytes": 83442,
+          "sha256": "d53f7073a89c16810493668a615c172592775874a456373c3ead0e93cf9f96b9"
+        }
+      },
+      "proofSha256": "1213ef0038ba120ca8383da7f6a4c4d2dee357808e1cdb1697ff3dadb930fb75",
+      "pairMeanRgbDifference": 6.71757
+    },
+    {
+      "id": "2027-month-september",
+      "title": "September 2027 Books and Pencil",
+      "alt": "Plum September lettering curves above three stacked books and a yellow pencil, with gold 2027 numerals below.",
+      "description": "Mustard, plum and teal covers form a compact book stack, contrasted by the large sharpened pencil leaning across its right edge.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_486/source/2027-month-september.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 1000,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "244d814b7fabdfb10f4a9270b9436af737a012f1788a414ffaa091a32e05f737",
+      "inputSignature": "76dd8adba68597ad54fc4dde79eb2ba938ba55aecdacb85929f4f327466ca45f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 50,
+        "losslessCmyk": false,
+        "bytes": 919888,
+        "weightedCmykRmse": 1.051134
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1445923,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1098710,
+          "weightedCmykRmse": 0.75672
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1017483,
+          "weightedCmykRmse": 0.878346
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 919888,
+          "weightedCmykRmse": 1.051134
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        43,
+        113,
+        1213,
+        1171
+      ],
+      "image": {
+        "width": 1000,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_486/exports/2027-month-september.pdf",
+          "bytes": 919888,
+          "sha256": "0d599bfaf977e98a2eec020ff81a484057318b61d07242f38fd473bd7bf492f7"
+        },
+        "webp": {
+          "path": "work/production/wave_486/exports/2027-month-september.webp",
+          "bytes": 1192592,
+          "sha256": "842083199ac9ffb3565c37d8d9d1f7652731cf7552452cf87bc07a6f50f6757e"
+        },
+        "thumb": {
+          "path": "work/production/wave_486/exports/2027-month-september-thumb.webp",
+          "bytes": 76946,
+          "sha256": "d263aa81178d9a7c156bd02e21c0669fb86f33431521534afc26e8e1bf08404e"
+        }
+      },
+      "proofSha256": "1f96ff80cb2f384f334c8be5f845af6f2ba0f798450add042fde9cfaf0e981fd",
+      "pairMeanRgbDifference": 7.53262
+    },
+    {
+      "id": "2027-game-controller",
+      "title": "Level Up in 2027 Gaming Controller",
+      "alt": "A silver and navy game controller rises behind orange Level Up lettering and angular blue 2027 numerals.",
+      "description": "Two thumbsticks, a directional pad and colored face buttons give the controller a clear shape above the bold gaming slogan and small pixel star.",
+      "color": "Blue",
+      "style": "Color",
+      "source": "work/production/wave_486/source/2027-game-controller.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "32a60bc3f44266ff6b4eee74ec19ade9bfaffaca9c9325903c1b7882e04fd733",
+      "inputSignature": "edbb98aa489a1baef7465da088ff14c123b45872b466e75979a0640724e6bb0c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 828655,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 828655,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        222,
+        52,
+        1373,
+        981
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_486/exports/2027-game-controller.pdf",
+          "bytes": 828655,
+          "sha256": "d965e21546cfad2b2ff38a11205b6b6be7cc224bc488d77d1062afa9ca0fa314"
+        },
+        "webp": {
+          "path": "work/production/wave_486/exports/2027-game-controller.webp",
+          "bytes": 1328658,
+          "sha256": "5661b8cf3bf16f0399a5c68f599d26775ed6ea6bb2e8eeb13277912abc423578"
+        },
+        "thumb": {
+          "path": "work/production/wave_486/exports/2027-game-controller-thumb.webp",
+          "bytes": 47960,
+          "sha256": "e5ed050754b346bb6e262f5c8de3d2300811e3fe115499e61e2e45b194ff4fee"
+        }
+      },
+      "proofSha256": "e82ebd6821597c297bf5ff891b8d46c090705e54dfd4a830d58a5520094a7294",
+      "pairMeanRgbDifference": 10.54745
+    },
+    {
+      "id": "2027-gel-rounded-year",
+      "title": "Iridescent Gel 2027",
+      "alt": "Glossy rounded 2027 numerals with flowing iridescent highlights, arranged as 20 above a sweeping 27.",
+      "description": "Amber, pink, violet and blue reflections follow the soft inflated strokes around the open zero.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_486/source/2027-gel-rounded-year.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "54038c9d3e29db5e619a4e6dbd8c73268081a29cac0688708d8e1e788685ea48",
+      "inputSignature": "2f68b91a8aa26938bb58010315736fa6a265e690df3d65ba8559024d4051db70",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 702268,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 702268,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        127,
+        205,
+        1443,
+        833
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_486/exports/2027-gel-rounded-year.pdf",
+          "bytes": 702268,
+          "sha256": "355a328af02403e127f49f47962f373d7bced8389fdb595696d438f18f1a3ee7"
+        },
+        "webp": {
+          "path": "work/production/wave_486/exports/2027-gel-rounded-year.webp",
+          "bytes": 1348054,
+          "sha256": "e6860e173508406d2e548aa3eaa0e24fcf7f85642d8641c6d9e5035d81ee1fa9"
+        },
+        "thumb": {
+          "path": "work/production/wave_486/exports/2027-gel-rounded-year-thumb.webp",
+          "bytes": 41344,
+          "sha256": "91a4531792856a725aa9ea1ffe4326c969b42a8465a5625186751038ace0350d"
+        }
+      },
+      "proofSha256": "db07e12a17d943dc7257b909484200aefbac784ab937ddd796cb50617d4da75b",
+      "pairMeanRgbDifference": 3.88223
+    },
+    {
+      "id": "2027-month-october",
+      "title": "October 2027 Pumpkin and Oak Leaves",
+      "alt": "An orange pumpkin stands beside brown October lettering above copper 2027 numerals and autumn oak leaves.",
+      "description": "The curved pumpkin stem and sweeping branch line frame the warm metal-like year without obscuring the large month name.",
+      "color": "Orange",
+      "style": "Color",
+      "source": "work/production/wave_486/source/2027-month-october.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "299e15d761dd3fe35b32a018100281882f6b24217935315f83fc0c87ea9b1cc1",
+      "inputSignature": "8d368441b2dc834c3ce7e39867456bd6839b3ee76524ca1b840702ddb4506225",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 891406,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 891406,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        38,
+        148,
+        1505,
+        858
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_486/exports/2027-month-october.pdf",
+          "bytes": 891406,
+          "sha256": "7069c83f423df117685f85b3002e0cce5d1ae1c63ffb6662608832b95a9fe8d8"
+        },
+        "webp": {
+          "path": "work/production/wave_486/exports/2027-month-october.webp",
+          "bytes": 1352098,
+          "sha256": "bd14d7ec703cd544514668a3ebe8786f2ed59eb9d6f4202e4287cbf056cac56a"
+        },
+        "thumb": {
+          "path": "work/production/wave_486/exports/2027-month-october-thumb.webp",
+          "bytes": 53850,
+          "sha256": "6d4ef8aa41535deafd84d4d81bc4e101fc126853a0db54f49ee457a29b586876"
+        }
+      },
+      "proofSha256": "c3a513aff55b5e204d50dfed9b66a42155f4691c66f8d7fc7c8f5ef83c62cd5f",
+      "pairMeanRgbDifference": 6.87771
+    },
+    {
+      "id": "2027-month-november",
+      "title": "November 2027 Wheat and Acorn Banner",
+      "alt": "A cream November banner crosses two golden wheat stems above green 2027 numerals and paired acorns.",
+      "description": "The crossed grain stalks form a tall open silhouette, while brown textured acorn caps and small oak leaves finish its base.",
+      "color": "Gold",
+      "style": "Color",
+      "source": "work/production/wave_486/source/2027-month-november.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1367,
+      "height": 1151,
+      "pdfWidth": 1000,
+      "pdfHeight": 842,
+      "sourceType": "raster",
+      "sourceSha256": "b05e1f7091ab8bb773093dea2592e92e61cab079c8c822358c1858a87fa52e5e",
+      "inputSignature": "f61c901d530fb7a8a4a9bf7447763ec0cf3f35418056f570e0224624a4bca029",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 50,
+        "losslessCmyk": false,
+        "bytes": 943642,
+        "weightedCmykRmse": 1.060049
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1333058,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1092104,
+          "weightedCmykRmse": 0.76756
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1029434,
+          "weightedCmykRmse": 0.890887
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 943642,
+          "weightedCmykRmse": 1.060049
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        73,
+        14,
+        1298,
+        1116
+      ],
+      "image": {
+        "width": 1000,
+        "height": 842,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_486/exports/2027-month-november.pdf",
+          "bytes": 943642,
+          "sha256": "e6007f9a57f9f8f2d9d5ef1982451b6604acd89eab9b2137f7f40913f0000057"
+        },
+        "webp": {
+          "path": "work/production/wave_486/exports/2027-month-november.webp",
+          "bytes": 1220482,
+          "sha256": "aa68c112086c4cf17872184217b0be8468e0f5053d2b4e4fda37c670d7b85ae4"
+        },
+        "thumb": {
+          "path": "work/production/wave_486/exports/2027-month-november-thumb.webp",
+          "bytes": 80166,
+          "sha256": "8406e1bbcd589c903880607d440fd10a0f3cc11ded69244022deee56a0cd74b3"
+        }
+      },
+      "proofSha256": "1a355472763c2217e6f0c1df5bdd55302b4f3ba0dde79479eea6d04aa040d915",
+      "pairMeanRgbDifference": 5.95929
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T12:32:34.724987+00:00",
+  "screenReviewEvidence": "work/production/wave_486/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T12:32:35.759Z"
+}

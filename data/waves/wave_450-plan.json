@@ -1,0 +1,77 @@
+{
+  "wave": "wave_450",
+  "topic": "reindeer",
+  "method": "builtin-image-generation",
+  "research": "data/research/reindeer-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "reindeer-holiday-cape-greeting",
+      "title": "Reindeer in a Green Velvet Cape",
+      "alt": "Gray-blue-eyed cartoon reindeer lifting one forehoof in a cream-edged green velvet cape with a gold clasp.",
+      "description": "A small red bow decorates one antler above the reindeer's long pale muzzle. The short capelet leaves its cream chest, four legs and curled tail silhouette clearly visible.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_450/source/reindeer-holiday-cape-greeting.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-family-nuzzle",
+      "title": "Two Reindeer Touching Noses",
+      "alt": "Large chestnut cartoon reindeer gently touching noses with a smaller gray-brown reindeer, both standing with complete bodies.",
+      "description": "The larger animal's heavy antler crown contrasts with the smaller one's short forks and round cream cheeks. Their inward-facing heads create a gentle shared focal point.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_450/source/reindeer-family-nuzzle.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-toy-train-watch",
+      "title": "Reindeer Watching a Little Toy Train",
+      "alt": "Gray cartoon reindeer lying with folded forelegs beside a small red wooden locomotive, wearing a long green scarf.",
+      "description": "The reindeer lowers its broad cream muzzle toward the toy's green roof. Tall antlers, bright green eyes and the scarf's trailing fringe distinguish the resting figure.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_450/source/reindeer-toy-train-watch.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-star-wand-parade",
+      "title": "Reindeer Marching with a Gold Star Wand",
+      "alt": "Violet-eyed golden cartoon reindeer taking an upright marching step while holding a gold star wand between its forehooves.",
+      "description": "A red-and-cream striped bow sits below the reindeer's curled forelock. One lifted rear hoof and the upright star wand give the compact character a bright parade pose.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_450/source/reindeer-star-wand-parade.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-sack-snooze",
+      "title": "Sleepy Reindeer Beside a Gift Sack",
+      "alt": "Sleepy brown cartoon reindeer resting its cheek against a full green gift sack, with two rear hooves forward and a gold bell collar.",
+      "description": "The sack's thick gold drawstring hangs beside the reindeer's half-closed eyes. Broad antlers, cream eyebrows and a pale neck ruff distinguish the relaxed seated figure.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_450/source/reindeer-sack-snooze.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-leaping-candy-arch",
+      "title": "Reindeer Leaping over a Candy Cane",
+      "alt": "Green-eyed cartoon reindeer in a short blue scarf leaping sideways over a low red-and-white candy cane arch.",
+      "description": "Four separate tucked hooves float above the striped arch. A smiling long face, broad antlers and wind-swept fringed scarf emphasize the forward motion.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_450/source/reindeer-leaping-candy-arch.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

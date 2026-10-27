@@ -1,0 +1,480 @@
+{
+  "wave": "wave_459",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "snowman-family-trio",
+      "title": "Three Snowmen in Winter Hats",
+      "alt": "Three different snowmen in green, plum and yellow winter hats standing together with scarves and raised mittens.",
+      "description": "A tall narrow figure, a rounded companion and a tiny snowman form a cheerful family-sized grouping.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_459/source/snowman-family-trio.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "a69d3dbf7c043ec7126140dacd0b91206e2f042663a1520e74345a8cf4a41759",
+      "inputSignature": "d0e114add8b0ecc19557f5ff8e6fa7c9f438f53a0ceee667f4bb32383cb634b2",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 692691,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 692691,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        167,
+        8,
+        1368,
+        986
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_459/exports/snowman-family-trio.pdf",
+          "bytes": 692691,
+          "sha256": "4b5c07b514d177772c67601d8af6ff0291b47bccf7078baa29114fe6797bcce1"
+        },
+        "webp": {
+          "path": "work/production/wave_459/exports/snowman-family-trio.webp",
+          "bytes": 1235464,
+          "sha256": "79b8e9b28aa693e7e2adb9a8003ab05f3ba58e39be3ff5ff49ba3db2ce894f29"
+        },
+        "thumb": {
+          "path": "work/production/wave_459/exports/snowman-family-trio-thumb.webp",
+          "bytes": 37162,
+          "sha256": "5ccd3fc1b9e4840a977b3366708c166db49ebe62665e17d706ac35cb0c7035b4"
+        }
+      },
+      "proofSha256": "580db56a2bc6e25886dc4e761d18c98b4069b57d635e6557304cb34a770d2d27",
+      "pairMeanRgbDifference": 3.04455
+    },
+    {
+      "id": "snowman-snowman-dog-friend",
+      "title": "Snowman with a Mitten-Carrying Puppy",
+      "alt": "Smiling snowman in a cream hood and navy scarf beside a shaggy brown puppy holding a red mitten in its mouth.",
+      "description": "The puppy sits close to the snowman's rounded feet, with its mitten and the character's tilted head creating a small winter friendship scene.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_459/source/snowman-snowman-dog-friend.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1330,
+      "height": 1182,
+      "pdfWidth": 1000,
+      "pdfHeight": 889,
+      "sourceType": "raster",
+      "sourceSha256": "3b615e375af01b5d10a7c5723dc5665a13dd2508972931b2eaade49a2545f223",
+      "inputSignature": "19665ad508af3439198e088166efcc1d33dbd4654c185609654ffac73881d5e4",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 983567,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 983567,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        116,
+        44,
+        1225,
+        1104
+      ],
+      "image": {
+        "width": 1000,
+        "height": 889,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_459/exports/snowman-snowman-dog-friend.pdf",
+          "bytes": 983567,
+          "sha256": "60b15d864a6a0cfb269fd99f55dfb8b9275a90900cff2ccdfc1517574d5f1af2"
+        },
+        "webp": {
+          "path": "work/production/wave_459/exports/snowman-snowman-dog-friend.webp",
+          "bytes": 978644,
+          "sha256": "5eea2d8da483189ba12615953566148d98edebd8497e13d439d43987903635c6"
+        },
+        "thumb": {
+          "path": "work/production/wave_459/exports/snowman-snowman-dog-friend-thumb.webp",
+          "bytes": 50298,
+          "sha256": "b0cbed3451f4837e419c6d9ed27c396ff32001a7e81093b145af6795c8c9bb06"
+        }
+      },
+      "proofSha256": "6722ce722560745ec568147f1c9df5afdcdc8ad5736d2d3cf6f5197f8e99fb7a",
+      "pairMeanRgbDifference": 2.52208
+    },
+    {
+      "id": "snowman-snowman-cat-nap",
+      "title": "Snowman with a Kitten on Its Hat",
+      "alt": "Snowman with a berry scarf standing beneath a sleeping gray kitten curled on the brim of a navy top hat.",
+      "description": "Folded twig hands and a slightly tilted face keep the character still while the kitten rests above.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_459/source/snowman-snowman-cat-nap.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1317,
+      "height": 1194,
+      "pdfWidth": 1000,
+      "pdfHeight": 907,
+      "sourceType": "raster",
+      "sourceSha256": "bd3bae971ff5a35e94360d2095243aef85a0c3421f72caa7685ed97f99e71b78",
+      "inputSignature": "d473d7c8be8dde622baf6302d505edf093be0707fe5d4c1f61905a27cba54921",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 707435,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 707435,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        331,
+        39,
+        1049,
+        1129
+      ],
+      "image": {
+        "width": 1000,
+        "height": 907,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_459/exports/snowman-snowman-cat-nap.pdf",
+          "bytes": 707435,
+          "sha256": "f3bd80fd05e8b314fb1e131dc349e688b034d3a1b23c22df5dac19a18d849659"
+        },
+        "webp": {
+          "path": "work/production/wave_459/exports/snowman-snowman-cat-nap.webp",
+          "bytes": 689428,
+          "sha256": "98de0ca8b251137a8b0808078d991d6b11d1d6713ddaa946e50ff2bd483f533b"
+        },
+        "thumb": {
+          "path": "work/production/wave_459/exports/snowman-snowman-cat-nap-thumb.webp",
+          "bytes": 32706,
+          "sha256": "639ff1f5c301d645151fcf49fc8f2c1834ed92c3f9bff385777ae7e19a1dfb39"
+        }
+      },
+      "proofSha256": "08f7d1b40fe852e649d61ed2e40e43f5fb5011d8ae22ab58dd0c4db656b87391",
+      "pairMeanRgbDifference": 2.07372
+    },
+    {
+      "id": "snowman-penguin-scarf-share",
+      "title": "Snowman and Penguin Sharing a Scarf",
+      "alt": "Tall snowman and small penguin wrapped together in one red and cream striped scarf, with green mittens and a knit cap.",
+      "description": "The snowman lifts one mitten while the penguin leans close with a happy expression and one orange foot raised.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_459/source/snowman-penguin-scarf-share.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "fea0856180355ad505e7b87a5c7d384bf1d4082406f2adbc60faaa77817c7e9a",
+      "inputSignature": "f0082b96d55a3e8045cec8b1fb159bba0869e0d8ae3f612616db7bf214e8b991",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 460028,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 460028,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        384,
+        33,
+        1213,
+        923
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_459/exports/snowman-penguin-scarf-share.pdf",
+          "bytes": 460028,
+          "sha256": "83c984e5552fd37236d104b0208bbe482b83eaa53336c9bfb412341e3629221e"
+        },
+        "webp": {
+          "path": "work/production/wave_459/exports/snowman-penguin-scarf-share.webp",
+          "bytes": 928240,
+          "sha256": "0257d2ce2c98b5cfd43059878e4b6756f40df71fec28fcb95338881670ba5414"
+        },
+        "thumb": {
+          "path": "work/production/wave_459/exports/snowman-penguin-scarf-share-thumb.webp",
+          "bytes": 25252,
+          "sha256": "cabb93f96088b4011bc074df5a79f7c6f6e299b4b9bf08e6382d05aae3ce5839"
+        }
+      },
+      "proofSha256": "f0c613a923c3e27604b46b6377d2b1874e4a8c4b2e7480863081ea438a8041c1",
+      "pairMeanRgbDifference": 2.3204
+    },
+    {
+      "id": "snowman-candy-cane-arch",
+      "title": "Snowman beneath a Candy Cane Arch",
+      "alt": "Small snowman in a blue pom-pom cap and mustard scarf stepping beneath a red and white candy cane arch.",
+      "description": "The curved striped arch frames the open-armed character, with holly leaves and berries at the top.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_459/source/snowman-candy-cane-arch.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "a9f2e6c3088082bca49b4372ebbb2c99926faea6794e03c749ecc8f546869474",
+      "inputSignature": "6994e2c5a589dfaadf8b1f4ae7e6644c379d1acf3a91eca717d19ca0f3442f2a",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 559090,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 559090,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        319,
+        9,
+        1219,
+        992
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_459/exports/snowman-candy-cane-arch.pdf",
+          "bytes": 559090,
+          "sha256": "336699fedfc349c51876c5b6cf345bd5e007f0b4712bcaf1138da3bcfd342ed3"
+        },
+        "webp": {
+          "path": "work/production/wave_459/exports/snowman-candy-cane-arch.webp",
+          "bytes": 1097866,
+          "sha256": "c50ef30ef9202a636408eb47bf22673e55deaa9c4002775e716df4475d3e42a7"
+        },
+        "thumb": {
+          "path": "work/production/wave_459/exports/snowman-candy-cane-arch-thumb.webp",
+          "bytes": 37552,
+          "sha256": "759fb3af8e9f695e6005dc97e39a20254ce09ce06230c246364fb20fc3baff4d"
+        }
+      },
+      "proofSha256": "fd2164d11c87a9c78289b09f2d121cdba9c865c4542d251b8f137cffa912fbe9",
+      "pairMeanRgbDifference": 3.161
+    },
+    {
+      "id": "snowman-snowman-chef",
+      "title": "Snowman Chef with a Mixing Bowl",
+      "alt": "Snowman in a white chef hat and red apron holding a wooden spoon and a green mixing bowl.",
+      "description": "A blue neckerchief and simple button face complete this friendly baking character.",
+      "color": "White",
+      "style": "Color",
+      "source": "work/production/wave_459/source/snowman-snowman-chef.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "5511a7f4013f08f797f8c23074dd9b5d9d0ded74488b672607fed66b22618a79",
+      "inputSignature": "54675676a9bf4f4380e9da51fccafba7e68c08db9d424784b9fd8aeb55005b7b",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 408951,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 408951,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        396,
+        32,
+        1133,
+        993
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_459/exports/snowman-snowman-chef.pdf",
+          "bytes": 408951,
+          "sha256": "ea86fe9b3eb76295966f45550140c39106758197a2fb095d57847d3d41665437"
+        },
+        "webp": {
+          "path": "work/production/wave_459/exports/snowman-snowman-chef.webp",
+          "bytes": 935626,
+          "sha256": "bd681486aee291a85d9f57540ee754078b2820d52ee12a2e8e8d955c11dd224b"
+        },
+        "thumb": {
+          "path": "work/production/wave_459/exports/snowman-snowman-chef-thumb.webp",
+          "bytes": 21832,
+          "sha256": "18a41ef269d24b644d00eeed71a02c29c48c8ad6a209ff68b31a68a240bebbda"
+        }
+      },
+      "proofSha256": "9fc69af5b25d8ced1f73f96706bb806e348d0595a875d134e9327f86c55197df",
+      "pairMeanRgbDifference": 1.68031
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T09:16:53.911921+00:00",
+  "screenReviewEvidence": "work/production/wave_459/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T09:22:12.890Z"
+}

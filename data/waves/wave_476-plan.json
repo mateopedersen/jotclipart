@@ -1,0 +1,78 @@
+{
+  "wave": "wave_476",
+  "topic": "2027",
+  "collectionTarget": 100,
+  "method": "builtin-image-generation",
+  "research": "data/research/2027-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "2027-penguin-party",
+      "title": "Penguins Holding a 2027 Sign",
+      "alt": "Two different penguins in striped and spotted party hats holding a cream sign with large red 2027 numerals.",
+      "description": "The tall penguin leans from one side while the rounder companion grips the opposite edge of the gold-trimmed sign.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_476/source/2027-penguin-party.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-bear-sparkler",
+      "title": "Teddy Bear with Happy 2027",
+      "alt": "Brown teddy bear in a teal star-patterned vest and party hat beside gold Happy and multicolored 2027 lettering.",
+      "description": "One paw holds a gold star wand tied with a small teal bow, while the lifted leg suggests a happy greeting.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_476/source/2027-bear-sparkler.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-dinosaur-welcome",
+      "title": "Dinosaur Welcoming 2027",
+      "alt": "Friendly green triceratops in a blue paper crown leaning over orange Welcome and blue 2027 lettering.",
+      "description": "The broad spotted frill and three cream horns frame the smiling dinosaur face above the raised lettering.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_476/source/2027-dinosaur-welcome.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-unicorn-rainbow",
+      "title": "Unicorn Jumping Above 2027",
+      "alt": "Lavender unicorn with a pink mane and gold hooves jumping through a rainbow above sparkling 2027 numerals.",
+      "description": "The rounded pink, blue, purple and gold digits sit beneath the small leaping figure and star-trimmed rainbow.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_476/source/2027-unicorn-rainbow.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-robot-party",
+      "title": "Robot Holding a Hello 2027 Sign",
+      "alt": "Rounded silver robot with a red bow tie holding a cream placard reading Hello 2027 in blue and red.",
+      "description": "Unequal glowing blue square eyes and two wide wheels give the little robot a friendly mechanical silhouette.",
+      "color": "Silver",
+      "style": "Color",
+      "source": "work/production/wave_476/source/2027-robot-party.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-fox-mittens",
+      "title": "Fox with Happy New Year 2027 Ribbon",
+      "alt": "Seated orange fox wearing blue snowflake mittens and scarf, holding a gold Happy New Year 2027 ribbon.",
+      "description": "The full white-tipped tail curls beside the fox's feet beneath the short arched greeting.",
+      "color": "Orange",
+      "style": "Color",
+      "source": "work/production/wave_476/source/2027-fox-mittens.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

@@ -1,0 +1,502 @@
+{
+  "wave": "wave_501",
+  "status": "AWAITING_CDN",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "blessings-morning-blessings-teapot",
+      "title": "Morning Blessings Sunflower Tea Set",
+      "alt": "A yellow sunflower teapot and cup sit beside a blue flower jug above a “MORNING BLESSINGS” ribbon.",
+      "description": "Small blue flowers decorate the lid and banner, linking the warm tea set to the tall sunflower arrangement.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_501/source/blessings-morning-blessings-teapot.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "84aeddab2367bf92d5382dbf0aa6c08570b64b0636c3946d851181096bcd1e5d",
+      "inputSignature": "90c5fc3a23d6c5cc93d0547ade0e224a429af4f13483f88881f17dab8267ce46",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 730339,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 730339,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        262,
+        85,
+        1311,
+        894
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_501/exports/blessings-morning-blessings-teapot.pdf",
+          "bytes": 730339,
+          "sha256": "e771c746eee38cea57653f9fbd83005771bd43436cc90b8901df536d83da393a"
+        },
+        "webp": {
+          "path": "work/production/wave_501/exports/blessings-morning-blessings-teapot.webp",
+          "bytes": 1347424,
+          "sha256": "8ab517b4e9a8395048b601b2907bf6039e02cda179a6739ee204aca0a792f120"
+        },
+        "thumb": {
+          "path": "work/production/wave_501/exports/blessings-morning-blessings-teapot-thumb.webp",
+          "bytes": 44302,
+          "sha256": "642a3f2165e0e32a75a3d483b6647ae17d1186b608f37f91e2fbf78476b76bce"
+        }
+      },
+      "proofSha256": "e892520d232c5e30c4e1d11a7d2da53e0c9c36fbd73fa52fd98590e9c3bd5763",
+      "pairMeanRgbDifference": 5.16202
+    },
+    {
+      "id": "blessings-birthday-blessings-cake",
+      "title": "Birthday Blessings Lavender Cake",
+      "alt": "Gold “BIRTHDAY BLESSINGS” lettering rises above a lavender cake with three lit candles and white flowers.",
+      "description": "Pearled icing swags and an ornate gold pedestal give the small celebration cake a formal, decorative silhouette.",
+      "color": "Purple",
+      "style": "Color",
+      "source": "work/production/wave_501/source/blessings-birthday-blessings-cake.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1245,
+      "height": 1263,
+      "pdfWidth": 986,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "6a813dd4abbe903522304a2a6630a610228d8c368a90c584489b4b83ee92aa04",
+      "inputSignature": "2654fbddda13e18a3ada431d38c847b990db84ed929b1333bfa5fdbd21465a8d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 949461,
+        "weightedCmykRmse": 0.983766
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1241382,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1017067,
+          "weightedCmykRmse": 0.828267
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 949461,
+          "weightedCmykRmse": 0.983766
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        206,
+        90,
+        1068,
+        1182
+      ],
+      "image": {
+        "width": 986,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_501/exports/blessings-birthday-blessings-cake.pdf",
+          "bytes": 949461,
+          "sha256": "223865bde4b1ceed4319d724b4c73055ea89fd96364ef2a8adc87b54ae27befb"
+        },
+        "webp": {
+          "path": "work/production/wave_501/exports/blessings-birthday-blessings-cake.webp",
+          "bytes": 1063044,
+          "sha256": "af3102db0e626f52afdd0944a1766ed4f6a558f51c104e3198f8b5a94c9a7b92"
+        },
+        "thumb": {
+          "path": "work/production/wave_501/exports/blessings-birthday-blessings-cake-thumb.webp",
+          "bytes": 83096,
+          "sha256": "86f7b449cdcbe514b24d48c727d8db72e1f3c5b4f7c70513718116aa4d5cdbac"
+        }
+      },
+      "proofSha256": "89aa5bba57d48132612c80034e2253e1804c2c18e3fe3c0b37ef7923e1042314",
+      "pairMeanRgbDifference": 3.82134
+    },
+    {
+      "id": "blessings-anniversary-blessings-rings",
+      "title": "Anniversary Blessings Rings and Lilies",
+      "alt": "Two interlinked gold rings rest on an ivory ribbon between white calla lilies beneath “ANNIVERSARY BLESSINGS” lettering.",
+      "description": "Fine gold edges on the curled ribbon echo the raised serif text, while green leaves separate the white flower shapes.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_501/source/blessings-anniversary-blessings-rings.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "c14f4c6a12277f33e6ffe73880ffc1249053878bc3cd31c165b99b5a99b5a2de",
+      "inputSignature": "bde3adde51227cf7e2a6c3b6878fca25cbb3dce2d728180ebd042d2847808ac0",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 810555,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 810555,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        223,
+        119,
+        1336,
+        925
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_501/exports/blessings-anniversary-blessings-rings.pdf",
+          "bytes": 810555,
+          "sha256": "74870d40c064640cbffc1e43aaf0170b60e9123a0f3b157c2b06474ebf812ed3"
+        },
+        "webp": {
+          "path": "work/production/wave_501/exports/blessings-anniversary-blessings-rings.webp",
+          "bytes": 1348552,
+          "sha256": "783418594e1c3c855b65a4e0f8266da3064a1624545591c0b72b2619a6b54fbc"
+        },
+        "thumb": {
+          "path": "work/production/wave_501/exports/blessings-anniversary-blessings-rings-thumb.webp",
+          "bytes": 57268,
+          "sha256": "353fd74b94e627501cfc6593ccd114784bcc082de38aebae20d89ba10af960fa"
+        }
+      },
+      "proofSha256": "9a290a65bd73f3ef6301eab93df4cb01f06f6f23a477fbc626f8342aa3bde2b3",
+      "pairMeanRgbDifference": 4.43675
+    },
+    {
+      "id": "blessings-new-baby-blessings-cradle",
+      "title": "New Baby Blessings Wicker Cradle",
+      "alt": "A wicker cradle with a cream knitted blanket and blue bow stands beside tiny booties under a “NEW BABY BLESSINGS” banner.",
+      "description": "Golden stars follow the curved cream-and-blue ribbon above the empty, softly lined basket.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_501/source/blessings-new-baby-blessings-cradle.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "ff28b8246e1651004d9bb87aa6bccab757fcb5c38ae1db0e135d38bbcc5c6acf",
+      "inputSignature": "644b5bf9cd9e3e07803c0a597b1c49c5cf088f2d4146c685a38b720c3badb8eb",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 884721,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 884721,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        145,
+        119,
+        1168,
+        1036
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_501/exports/blessings-new-baby-blessings-cradle.pdf",
+          "bytes": 884721,
+          "sha256": "a1e90792ecd930b7c3923ae2f387d82d05638a692c67405b82c7cdb53bca77eb"
+        },
+        "webp": {
+          "path": "work/production/wave_501/exports/blessings-new-baby-blessings-cradle.webp",
+          "bytes": 896238,
+          "sha256": "738e8f5dc668c31e493b7417ff0ed2ecb696e88600cd66964029f6e577e60dd0"
+        },
+        "thumb": {
+          "path": "work/production/wave_501/exports/blessings-new-baby-blessings-cradle-thumb.webp",
+          "bytes": 56500,
+          "sha256": "c663370fd80a6893c31170a2a8584582f0d9bb81f99cb99d3de2dc6e70a8cde4"
+        }
+      },
+      "proofSha256": "3c046385bf6cf37d953077ae194ef328db3195fb534a00846872d8d2d2287659",
+      "pairMeanRgbDifference": 2.7017
+    },
+    {
+      "id": "blessings-wedding-blessings-dove",
+      "title": "Wedding Blessings Dove and Peonies",
+      "alt": "A white dove with spread wings carries a cream “WEDDING BLESSINGS” ribbon above a pink peony bouquet.",
+      "description": "Layered wing feathers and flowing ivory ribbon tails frame the rose-and-cream flowers and muted green leaves.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_501/source/blessings-wedding-blessings-dove.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "7e65d6689323d95390363a2c48f45dae43c5993eb5a15116b3b2e547228ed59c",
+      "inputSignature": "3a72075cba753171c7ae99faff4906f8e5457f07a1b96ab83da2592c4b8f411d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 594029,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 594029,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        258,
+        29,
+        1316,
+        1000
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_501/exports/blessings-wedding-blessings-dove.pdf",
+          "bytes": 594029,
+          "sha256": "820cc4c46750dcf942761c296f8754270ba487de76fa7a423ad98bf5a622c8dd"
+        },
+        "webp": {
+          "path": "work/production/wave_501/exports/blessings-wedding-blessings-dove.webp",
+          "bytes": 1162194,
+          "sha256": "0512e0f5f55f59933c40441f1010aaaedd7ecce43c1d6c0de220908ef2e2ad9f"
+        },
+        "thumb": {
+          "path": "work/production/wave_501/exports/blessings-wedding-blessings-dove-thumb.webp",
+          "bytes": 39908,
+          "sha256": "96da0dd8ea47dd2101ceb56779ec126e8895ad16dd14c217ce19e8ac32947167"
+        }
+      },
+      "proofSha256": "d22ae3c11c89f70985433111ab8800a109df41cbea252acd16d35f4d65cd0c95",
+      "pairMeanRgbDifference": 2.35247
+    },
+    {
+      "id": "blessings-travel-blessings-suitcase",
+      "title": "Travel Blessings Vintage Suitcase",
+      "alt": "A teal suitcase with brass corners and brown straps stands beneath a “TRAVEL BLESSINGS” banner beside a blank blue booklet.",
+      "description": "Two luggage tags show a green sprig and yellow sun beside the case’s brown straps, brass-colored corner guards and plain navy booklet.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_501/source/blessings-travel-blessings-suitcase.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "6c62c64674cd0b9d284608044cbbeef4c9a89e461dcf6e3043cbfb0eb948098e",
+      "inputSignature": "afa410631ba595ed8e9e3339ddd98b8cf8e383326daa99753ddb95e156e64e8a",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 837438,
+        "weightedCmykRmse": 0.833153
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1100307,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 837438,
+          "weightedCmykRmse": 0.833153
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        121,
+        161,
+        1192,
+        1030
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_501/exports/blessings-travel-blessings-suitcase.pdf",
+          "bytes": 837438,
+          "sha256": "024a921d1949846c61d211712896fea879eb85098a9cb07c8c0f454cefe6769a"
+        },
+        "webp": {
+          "path": "work/production/wave_501/exports/blessings-travel-blessings-suitcase.webp",
+          "bytes": 1005516,
+          "sha256": "a719b2233ae95e263bbb18a5971f5f9876daf12d4293faea5168b589a7bf5067"
+        },
+        "thumb": {
+          "path": "work/production/wave_501/exports/blessings-travel-blessings-suitcase-thumb.webp",
+          "bytes": 50992,
+          "sha256": "9f9e5fac5e468df78cecdce9ba9f6a0ea6792b78067358030b9cc657b48bd0f2"
+        }
+      },
+      "proofSha256": "15a828a62db2247e29c278160159bc56c31933a0a4a903941e423dda52808fa4",
+      "pairMeanRgbDifference": 4.47451
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T15:49:14.342023+00:00",
+  "screenReviewEvidence": "work/production/wave_501/native-proof-review.jpg",
+  "screenReviewEvidenceSha256": "e099c722af86e3efd7e850a55d773fe64379f2b01616e3bc74395d9b4221c443",
+  "screenReviewNotes": "Every actual rendered CMYK proof viewed for correct wording, full shapes and decorative details, clean framing and correspondence to the reviewed source. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T15:55:59.383Z"
+}

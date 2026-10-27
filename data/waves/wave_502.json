@@ -1,0 +1,530 @@
+{
+  "wave": "wave_502",
+  "status": "AWAITING_CDN",
+  "actualExportedDrawings": 6,
+  "resumed": 5,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "blessings-school-year-blessings-backpack",
+      "title": "School Year Blessings Backpack",
+      "alt": "A yellow backpack, blue globe, closed notebook and red apple sit beneath a green “SCHOOL YEAR BLESSINGS” ribbon.",
+      "description": "Brown edging and two zippered pockets give the bag a clear school-day silhouette beside the globe’s complete stand.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_502/source/blessings-school-year-blessings-backpack.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "57d6465b9c3a4069309e4925cb8879d9cf8d5d681e669212f3c3342c8b16f67f",
+      "inputSignature": "86679dc692c3c9f25648ea7b3398c5c16f749638b26603a04445b0b911a10487",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 966348,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 966348,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        155,
+        137,
+        1170,
+        1041
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_502/exports/blessings-school-year-blessings-backpack.pdf",
+          "bytes": 966348,
+          "sha256": "621a43c4a538a8c447092ac90d279823a1f9675956976607da66598f24778b55"
+        },
+        "webp": {
+          "path": "work/production/wave_502/exports/blessings-school-year-blessings-backpack.webp",
+          "bytes": 876904,
+          "sha256": "087cd33fa1095ad8472cf7be4b3e4f7704f35d74e9f6fd4c0039259418d8f87e"
+        },
+        "thumb": {
+          "path": "work/production/wave_502/exports/blessings-school-year-blessings-backpack-thumb.webp",
+          "bytes": 53244,
+          "sha256": "0cb79a8ceb7a8c88b967a4433e494376ceaec503bb1b9a6edee7c6da2429664c"
+        }
+      },
+      "proofSha256": "0916f7cae9426c50f7c1d1897e032bd11955bfb8f92f11c17b5adc5fdcba7a50",
+      "pairMeanRgbDifference": 5.05113
+    },
+    {
+      "id": "blessings-holiday-blessings-sled",
+      "title": "Holiday Blessings Gift Sled",
+      "alt": "A red wooden sled carries a green scarf, wrapped gift and pine branches beneath gold “HOLIDAY BLESSINGS” lettering.",
+      "description": "Curled runner tips, a bright red bow and small pine cones frame the compact festive gift arrangement.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_502/source/blessings-holiday-blessings-sled.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "2240650d00d40f951fb384ee590e23538bd5348413998ebe0c6939fb2d8146ef",
+      "inputSignature": "5d160517684ba94cbb331aad8eacfcda01316029f3bc7ea43d3657c2dde1b583",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 830664,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 830664,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        294,
+        118,
+        1297,
+        932
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_502/exports/blessings-holiday-blessings-sled.pdf",
+          "bytes": 830664,
+          "sha256": "7b438590213309b446d8d5f6485463740848fffe687f2609ad069b668ab2440e"
+        },
+        "webp": {
+          "path": "work/production/wave_502/exports/blessings-holiday-blessings-sled.webp",
+          "bytes": 1401458,
+          "sha256": "4e7e0472b1b09410eaefd20e627255798e11febcb4356e9f8ed47659a075defc"
+        },
+        "thumb": {
+          "path": "work/production/wave_502/exports/blessings-holiday-blessings-sled-thumb.webp",
+          "bytes": 54130,
+          "sha256": "8edfa7a926cde12d26278a379fa3cd3e9363963381eea5b3dc6ecd93ee61109a"
+        }
+      },
+      "proofSha256": "d133e181006dc6e6aa65a237d51b13afb9668f95b274d4a53d63531aed9ad583",
+      "pairMeanRgbDifference": 5.9468
+    },
+    {
+      "id": "blessings-spring-blessings-tulips",
+      "title": "Spring Blessings Tulip Boots",
+      "alt": "Pink and yellow tulips fill blue gardening boots below pink-and-gold “SPRING BLESSINGS” lettering.",
+      "description": "Pale checked bows wrap the boot tops, and smaller white flowers fill the gaps between the tall tulip stems.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_502/source/blessings-spring-blessings-tulips.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "793fa8d33a736c66dcfee24382e385817a8f4f66823a73758d5441a11d005211",
+      "inputSignature": "98f3b5036ae6267a60eab1b939faaf593d323fcb512578771ad720902ce6e3b1",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 801668,
+        "weightedCmykRmse": 0.839757
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1023789,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 801668,
+          "weightedCmykRmse": 0.839757
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        271,
+        101,
+        1075,
+        1104
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_502/exports/blessings-spring-blessings-tulips.pdf",
+          "bytes": 801668,
+          "sha256": "b74fab942826deea7b0bd9c3e351f21d9e32cc86e84d44dc88af2d477283d3a6"
+        },
+        "webp": {
+          "path": "work/production/wave_502/exports/blessings-spring-blessings-tulips.webp",
+          "bytes": 1015230,
+          "sha256": "4501e17a4527d6d8334888f04328bac94f93a85698ada11ac3d597dae565d368"
+        },
+        "thumb": {
+          "path": "work/production/wave_502/exports/blessings-spring-blessings-tulips-thumb.webp",
+          "bytes": 71486,
+          "sha256": "57abbca8cf0be97dce9bbc12624612a4b8d3e336b4619ce87c52448725fe8fc5"
+        }
+      },
+      "proofSha256": "45d97aff66702365d1a885342684eb4c1fa3dd7c22664e1caa1c955591e98197",
+      "pairMeanRgbDifference": 3.79785
+    },
+    {
+      "id": "blessings-summer-blessings-sunhat",
+      "title": "Summer Blessings Straw Hat",
+      "alt": "A woven straw hat with a coral bow and pale tropical flowers sits beneath yellow-and-teal “SUMMER BLESSINGS” lettering.",
+      "description": "The wide textured brim and oversized ribbon loops form a low, warm-weather greeting graphic.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_502/source/blessings-summer-blessings-sunhat.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 1000,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "ff96aa9ce03886f80af45c059af31b2177106148a36dbc4ccb9825ebdd0dfdc2",
+      "inputSignature": "2771b472c8427aca82855fbe233296cead4137618ffda6b3a88be16c3eb1d825",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 983957,
+        "weightedCmykRmse": 0.887516
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1335838,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1053670,
+          "weightedCmykRmse": 0.755683
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 983957,
+          "weightedCmykRmse": 0.887516
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        64,
+        186,
+        1192,
+        1078
+      ],
+      "image": {
+        "width": 1000,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_502/exports/blessings-summer-blessings-sunhat.pdf",
+          "bytes": 983957,
+          "sha256": "5c26ccbd20db553a7b8facac0ae02094a3c0c2844f59e23b439ff1c205e2cc1e"
+        },
+        "webp": {
+          "path": "work/production/wave_502/exports/blessings-summer-blessings-sunhat.webp",
+          "bytes": 1315704,
+          "sha256": "e6d350cb5fead2dccac4444c591d3a62d32cd62cc420a1d9c87e50524264f842"
+        },
+        "thumb": {
+          "path": "work/production/wave_502/exports/blessings-summer-blessings-sunhat-thumb.webp",
+          "bytes": 84690,
+          "sha256": "9aeb7e1c170d9b2fda3b4ec0217e023979bc087c11462d65b53ab8728c5580fb"
+        }
+      },
+      "proofSha256": "71656ed4325b8853d6dbce1346d7a75e67e8a665907be4d0e410a79e993733fa",
+      "pairMeanRgbDifference": 8.68239
+    },
+    {
+      "id": "blessings-winter-blessings-lantern",
+      "title": "Winter Blessings Candle Lantern",
+      "alt": "A navy lantern with a lit candle is wrapped in an ivory scarf behind a “WINTER BLESSINGS” ribbon.",
+      "description": "Gold-edged glass panels, small star openings and a pine cone finish the dark lantern beneath its full curved handle.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_502/source/blessings-winter-blessings-lantern.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1225,
+      "height": 1284,
+      "pdfWidth": 954,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "dcf2567a1b2514ae379a5651cf99b870994a2a6e13cd31e71708c2718cf2ee9c",
+      "inputSignature": "7228a7d50d9ee6c544f7419457afbb869ccb7c8a4aa88607ac4b7e5f004b255d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 960421,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 960421,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        203,
+        42,
+        1045,
+        1240
+      ],
+      "image": {
+        "width": 954,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_502/exports/blessings-winter-blessings-lantern.pdf",
+          "bytes": 960421,
+          "sha256": "25c2806b9946def7dc3705130da72b451e39d1e5cb916e70c3a9293d76f72e60"
+        },
+        "webp": {
+          "path": "work/production/wave_502/exports/blessings-winter-blessings-lantern.webp",
+          "bytes": 746004,
+          "sha256": "1080b9941ec53ca1d93106da18f01da1000caff76092878c5fe1e1217dca1f2e"
+        },
+        "thumb": {
+          "path": "work/production/wave_502/exports/blessings-winter-blessings-lantern-thumb.webp",
+          "bytes": 47304,
+          "sha256": "d2c83d67c1cc346d6442a295c623e151d14aae4aa160df8d16551e132892c4fb"
+        }
+      },
+      "proofSha256": "2ccf2bd766feb7d3e3f60a906bf1bcf490712d56a5c66b059bd36b36f6addae0",
+      "pairMeanRgbDifference": 3.28314
+    },
+    {
+      "id": "blessings-harvest-blessings-apple-pail",
+      "title": "Harvest Blessings Apples and Wheat",
+      "alt": "Red and green apples fill a metal pail beside a tied wheat sheaf under burgundy “HARVEST BLESSINGS” lettering.",
+      "description": "A wooden grip crosses the pail’s curved handle, balancing the tall golden wheat and small autumn-leaf accents.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_502/source/blessings-harvest-blessings-apple-pail.png",
+      "printMaxEdgePx": 995,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1310,
+      "height": 1201,
+      "pdfWidth": 995,
+      "pdfHeight": 912,
+      "sourceType": "raster",
+      "sourceSha256": "73541e66a994b24b60c5fe253da9874285f776399fe6bffaf7aff996a94f01f7",
+      "inputSignature": "4d06b45e64b1bddec5e25e52524ca977bd95844166f66d86ab810f99829b8ad0",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 48,
+        "losslessCmyk": false,
+        "bytes": 991875,
+        "weightedCmykRmse": 1.356318
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1479823,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1222747,
+          "weightedCmykRmse": 0.767067
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1158046,
+          "weightedCmykRmse": 0.898174
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 1066676,
+          "weightedCmykRmse": 1.082994
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 48,
+          "losslessCmyk": false,
+          "bytes": 991875,
+          "weightedCmykRmse": 1.356318
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        218,
+        131,
+        1208,
+        1094
+      ],
+      "image": {
+        "width": 995,
+        "height": 912,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_502/exports/blessings-harvest-blessings-apple-pail.pdf",
+          "bytes": 991875,
+          "sha256": "b73a2ced4ef5e9880e834b6b09348951dea2de56b1505c0ea59f24f3f8884c15"
+        },
+        "webp": {
+          "path": "work/production/wave_502/exports/blessings-harvest-blessings-apple-pail.webp",
+          "bytes": 1407702,
+          "sha256": "5f1f5527d36b2382ae1ba245c788516e14c5df483662ee3027c995327f36b854"
+        },
+        "thumb": {
+          "path": "work/production/wave_502/exports/blessings-harvest-blessings-apple-pail-thumb.webp",
+          "bytes": 88572,
+          "sha256": "3ad85e6bef583bfbc8c5dc4f272310f34a9d602727cb94d0ca30a9625b98fe2f"
+        }
+      },
+      "proofSha256": "532403cef8ed449f27dd4111de68e6389a39c93b0fa88158bef3531ea41427ea",
+      "pairMeanRgbDifference": 3.64487
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T15:50:51.070135+00:00",
+  "screenReviewEvidence": "work/production/wave_502/native-proof-review.jpg",
+  "screenReviewEvidenceSha256": "1218f574418f400cf77254acca42550d45109123dd2bf729362280bf4f8ecad1",
+  "screenReviewNotes": "Every actual rendered CMYK proof inspected: readable words, complete outlines and props, clean margins and original-image correspondence. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T15:55:59.734Z"
+}

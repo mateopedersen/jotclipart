@@ -1,0 +1,481 @@
+{
+  "wave": "wave_504",
+  "status": "AWAITING_CDN",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "blessings-open-bible-and-cross",
+      "title": "Open Bible with a Wooden Cross",
+      "alt": "A wooden cross rests on the blank cream pages of an open blue-covered Bible with a red ribbon bookmark.",
+      "description": "Thick layered page edges and two pointed ribbon tails frame the simple devotional still life.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_504/source/blessings-open-bible-and-cross.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "38ca91ae5eaf206dcc051b34c4fba228d9366a3e5aea87dfb29e2f0add8b5bba",
+      "inputSignature": "b0d22499924f94ab1ea90cf3a43b66786150217e1bfaaff67f705eddb53e8317",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 548429,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 548429,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        123,
+        145,
+        1414,
+        885
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_504/exports/blessings-open-bible-and-cross.pdf",
+          "bytes": 548429,
+          "sha256": "dd09f2d32326560b755e78a4215f3222619f54fd0fe00de31165f65441d3bb6b"
+        },
+        "webp": {
+          "path": "work/production/wave_504/exports/blessings-open-bible-and-cross.webp",
+          "bytes": 1061684,
+          "sha256": "ec0184ea5a15614009fc118d4b11ce5d36f4decd4d3211f37c26504df05e77a3"
+        },
+        "thumb": {
+          "path": "work/production/wave_504/exports/blessings-open-bible-and-cross-thumb.webp",
+          "bytes": 23494,
+          "sha256": "186762b975ee4994707083e8566cbf33379475ee51bedc499f9954336f8a0643"
+        }
+      },
+      "proofSha256": "fdd9df922530bf6d0cac79c506512d3a03e43d98b371bb7771e57c3713bc1ee0",
+      "pairMeanRgbDifference": 2.40454
+    },
+    {
+      "id": "blessings-child-prayer-box-craft",
+      "title": "Child Decorating a Prayer Box",
+      "alt": "A curly-haired cartoon child in yellow glasses decorates a wooden cross-marked box on a small stool.",
+      "description": "A denim apron, star cutouts, blue scissors and a glue bottle distinguish the hands-on craft scene.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_504/source/blessings-child-prayer-box-craft.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1224,
+      "height": 1285,
+      "pdfWidth": 953,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "d899eb703c2d876e0a2f84cd86a96b112edea589d95d47fb49d212564cafaa7c",
+      "inputSignature": "41a88bca8b93a183269cfe5d4fd89c0e43395831530e331ced402e63f7996d32",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 675195,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 675195,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        312,
+        105,
+        898,
+        1186
+      ],
+      "image": {
+        "width": 953,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_504/exports/blessings-child-prayer-box-craft.pdf",
+          "bytes": 675195,
+          "sha256": "32a41fc00de230a64e22a9be8e2909336289319f2563558a0084917c3e4195b8"
+        },
+        "webp": {
+          "path": "work/production/wave_504/exports/blessings-child-prayer-box-craft.webp",
+          "bytes": 602906,
+          "sha256": "650e5fed9c055051d8adb78ca6a61104f213d51db39a49cefbf9ef7e4e8ea0d6"
+        },
+        "thumb": {
+          "path": "work/production/wave_504/exports/blessings-child-prayer-box-craft-thumb.webp",
+          "bytes": 36828,
+          "sha256": "1e4be7c322fa2fcae1da9807311ccbd61e4bfb75583576e21c119597eb290fbd"
+        }
+      },
+      "proofSha256": "daa7acf79a76243e38f850dd8b7bf57d859a231776fb33af99ec91ffab5ee286",
+      "pairMeanRgbDifference": 2.0594
+    },
+    {
+      "id": "blessings-standing-woman-prayer",
+      "title": "Older Woman Praying Beside Violets",
+      "alt": "A smiling cartoon older woman with a silver bun and oval glasses stands with clasped hands beside a pot of purple flowers.",
+      "description": "Her teal cardigan, long floral skirt and brown ankle boots create a complete, distinct standing character.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_504/source/blessings-standing-woman-prayer.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1145,
+      "height": 1374,
+      "pdfWidth": 833,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "6b58f8ebb8d491d9aacf45adb6f2d755e1b35e5c4d70e22c9aa01f9197d717a2",
+      "inputSignature": "988209671cc423b6998c3304240c28e6b3690f4890f96cef8eeee46255f4dba4",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 694658,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 694658,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        275,
+        74,
+        920,
+        1285
+      ],
+      "image": {
+        "width": 833,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_504/exports/blessings-standing-woman-prayer.pdf",
+          "bytes": 694658,
+          "sha256": "622beb0da27cff0878a9caa6a27f488ec315a20a047772e8e485212bb767c9d3"
+        },
+        "webp": {
+          "path": "work/production/wave_504/exports/blessings-standing-woman-prayer.webp",
+          "bytes": 649880,
+          "sha256": "a962c30ced0208e9b70fffd7f07bbb6d7f0cbe509461b136ccd14cc7eb8a940c"
+        },
+        "thumb": {
+          "path": "work/production/wave_504/exports/blessings-standing-woman-prayer-thumb.webp",
+          "bytes": 36248,
+          "sha256": "6db8981d937c4bc783f53f5f298a0a0f7432c72e9d4a0ae6bb298174d7d3a403"
+        }
+      },
+      "proofSha256": "3045d0e633bdb7eeb8405e27085bb9df49fc232f3989696585d652e3cb6de996",
+      "pairMeanRgbDifference": 2.15582
+    },
+    {
+      "id": "blessings-dove-olive-branch",
+      "title": "Blessings Dove with an Olive Branch",
+      "alt": "A white dove with raised wings carries an olive branch above a gold “BLESSINGS” ribbon.",
+      "description": "Layered flight feathers, tucked pink feet and green olives give the complete bird clear detail against the open background.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_504/source/blessings-dove-olive-branch.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "98391bf52199a194a027fad89698bda9a507fcdac2b43eff51af1437c529d16e",
+      "inputSignature": "75fae5fea353089a5d52f6e815c23e67bad3decde58cfd3b037355e46fb94c8f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 768333,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 768333,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        162,
+        80,
+        1149,
+        1098
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_504/exports/blessings-dove-olive-branch.pdf",
+          "bytes": 768333,
+          "sha256": "d308c7e19f66560d9d0ec4815edd17e0cceff8a762c810549ee402afaf11f493"
+        },
+        "webp": {
+          "path": "work/production/wave_504/exports/blessings-dove-olive-branch.webp",
+          "bytes": 707084,
+          "sha256": "8948a9133cedf39d9964b77ba31a27bcc0ae4b3adbddee06bca0972346fa9605"
+        },
+        "thumb": {
+          "path": "work/production/wave_504/exports/blessings-dove-olive-branch-thumb.webp",
+          "bytes": 51212,
+          "sha256": "326381731e70c0c647ef4b0fc374d8f0903a08cd9da0fcc2f642db375507ef43"
+        }
+      },
+      "proofSha256": "35c27f90eb553c5215a9f7b41be64b8541bc69551efb8868f312494b3a4ddd1b",
+      "pairMeanRgbDifference": 2.17331
+    },
+    {
+      "id": "blessings-hands-catching-heart-letter",
+      "title": "Blessings Envelope with Hearts and Open Hands",
+      "alt": "Two open hands support an envelope marked “BLESSINGS” as red and pink hearts rise above it.",
+      "description": "Blue and pink knitted cuffs frame the cream envelope, which closes with a red heart-shaped wax seal.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_504/source/blessings-hands-catching-heart-letter.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1303,
+      "height": 1207,
+      "pdfWidth": 1000,
+      "pdfHeight": 926,
+      "sourceType": "raster",
+      "sourceSha256": "6bd5f2175bbf1c033bc0edb6cfbc29e0bb8acde6de22dffd107249f4a91edc88",
+      "inputSignature": "b6d86014377221e4c9ce3693f75bafdb4e88c5a1f5d2f7e8a0feca65c3376c75",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 936923,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 936923,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        103,
+        63,
+        1211,
+        1151
+      ],
+      "image": {
+        "width": 1000,
+        "height": 926,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_504/exports/blessings-hands-catching-heart-letter.pdf",
+          "bytes": 936923,
+          "sha256": "0a0d60cdb9a1b4e0bf07ccc197e7d3d38a174815e00d7c53c929ad9928b93239"
+        },
+        "webp": {
+          "path": "work/production/wave_504/exports/blessings-hands-catching-heart-letter.webp",
+          "bytes": 874148,
+          "sha256": "5e6d339b3f4f99ed29d89a9230bcba316bf82efae11dc5a17d0bf879801bead8"
+        },
+        "thumb": {
+          "path": "work/production/wave_504/exports/blessings-hands-catching-heart-letter-thumb.webp",
+          "bytes": 57134,
+          "sha256": "74b050fab5a7a7e4d4146bc2aae757b9f9e2508abc7fc3098e32415d04427786"
+        }
+      },
+      "proofSha256": "0bd8ead5040ab9a42e0484ff7b0e4c74b6f037e6b84deb2a322ef13c6c2e73c1",
+      "pairMeanRgbDifference": 3.6259
+    },
+    {
+      "id": "blessings-little-angel-harp",
+      "title": "Little Angel Playing a Gold Harp",
+      "alt": "A curly-haired cartoon angel in a cream robe holds a small gold harp with both hands.",
+      "description": "Soft feathered wings, a star hair clip and bare feet frame the smiling fantasy character’s full figure.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_504/source/blessings-little-angel-harp.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1246,
+      "height": 1262,
+      "pdfWidth": 987,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "0d027f0e163ee2942004fe35c1ca649500e9182be63371b10c5783c66c5968db",
+      "inputSignature": "9ff48cde23f7ad86020cd844ab351630e91b9e12e1dfed742799229674168244",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 705832,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 705832,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        237,
+        118,
+        1020,
+        1135
+      ],
+      "image": {
+        "width": 987,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_504/exports/blessings-little-angel-harp.pdf",
+          "bytes": 705832,
+          "sha256": "5803522beb1d45a6dec790b348ce46794d7b8eec1657b851435c21ef478a863d"
+        },
+        "webp": {
+          "path": "work/production/wave_504/exports/blessings-little-angel-harp.webp",
+          "bytes": 674870,
+          "sha256": "ec1b06d3787198840cbc99eb666822ebf772c901117b0b5dc6253845de057248"
+        },
+        "thumb": {
+          "path": "work/production/wave_504/exports/blessings-little-angel-harp-thumb.webp",
+          "bytes": 42476,
+          "sha256": "c150cea6e49042d45fcfecbeee83310de911f86dde3fdc6073b9844277850d58"
+        }
+      },
+      "proofSha256": "538cc1c27d92355238f795adaadec53015cb7382fe5f06fde5fa50fe6a853627",
+      "pairMeanRgbDifference": 1.65901
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T15:50:05.420266+00:00",
+  "screenReviewEvidence": "work/production/wave_504/native-proof-review.jpg",
+  "screenReviewEvidenceSha256": "3c1b15cad12726f932f5c3fa760a30e4da079b964c34b783a87e6bef4bb961fe",
+  "screenReviewNotes": "Every actual CMYK-rendered proof inspected for complete characters and hands, correctly spelled wording, coherent objects and intact composition. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T15:56:00.419Z"
+}

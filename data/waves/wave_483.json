@@ -1,0 +1,487 @@
+{
+  "wave": "wave_483",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "2027-birthday-confetti",
+      "title": "Happy 2027 Banner with Two Party Characters",
+      "alt": "Two round confetti-covered party characters hold a gold-framed Happy 2027 banner with colorful balloon letters.",
+      "description": "A party hat tops the banner while two smiling characters hang from its poles, wearing bright sneakers and scattered confetti dots.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_483/source/2027-birthday-confetti.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "d0a40fda9e819cb528e72aea786d4c85d2409846f63cb484050d1dccdd4f9ac0",
+      "inputSignature": "b21a3a0299b1b215dbff6e560a369bcb6db7dc4691c1cf056657b87e38133755",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 815429,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 815429,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        95,
+        30,
+        1473,
+        993
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_483/exports/2027-birthday-confetti.pdf",
+          "bytes": 815429,
+          "sha256": "c042dfc44c1a99f33299d5db68395cbc57f157298624d05fdecfde60dff31e39"
+        },
+        "webp": {
+          "path": "work/production/wave_483/exports/2027-birthday-confetti.webp",
+          "bytes": 1515836,
+          "sha256": "9a3eb9c3c0840a7e383269ed8e183db196768cac0e811f4318f7d0e9c1d0c499"
+        },
+        "thumb": {
+          "path": "work/production/wave_483/exports/2027-birthday-confetti-thumb.webp",
+          "bytes": 54758,
+          "sha256": "cb102522ff6a080a0a503b0ab3e5f412d96b817d551ec87f92c2da0225296320"
+        }
+      },
+      "proofSha256": "ee1db3eb6309df2bad27e1b2b4b5ebcbe40ede98dafa26e8d8022fadbe897de4",
+      "pairMeanRgbDifference": 6.57331
+    },
+    {
+      "id": "2027-calendar-january",
+      "title": "January 2027 Calendar Page",
+      "alt": "A red-topped tear-off calendar displays January in blue and 2027 in raised red numerals.",
+      "description": "Metal rings hold a stack of cream pages beneath a stitched red binding; the month and year fill the front without a date grid.",
+      "color": "Red",
+      "style": "Color",
+      "source": "work/production/wave_483/source/2027-calendar-january.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "a494032003152c3a1ab3ec0ffb8c9806f2a80b1050dcead0e7b56ed665203c9d",
+      "inputSignature": "4de1d485fbb97bfe6208601b7185556c983c93022d0aea3a90fbdb9ab13ef9a8",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 760182,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 760182,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        155,
+        39,
+        1221,
+        1049
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_483/exports/2027-calendar-january.pdf",
+          "bytes": 760182,
+          "sha256": "d0ede809a62e85fefb2b227f35bdde5c630b982683dbb3d7bc4a051aeb5445e2"
+        },
+        "webp": {
+          "path": "work/production/wave_483/exports/2027-calendar-january.webp",
+          "bytes": 847168,
+          "sha256": "348e61172697f476d6ca12beacd6fbd30d23af4379301a82be7bb6417670212d"
+        },
+        "thumb": {
+          "path": "work/production/wave_483/exports/2027-calendar-january-thumb.webp",
+          "bytes": 40024,
+          "sha256": "30d3b4b8ffb89d6aa319433703b890d8c218826907e4c8502629dbb3c6665a26"
+        }
+      },
+      "proofSha256": "1d1c9b4d75c533506fa0ca27256cd6a0c19d707754ca3d1e92598bd929cc0a66",
+      "pairMeanRgbDifference": 6.02242
+    },
+    {
+      "id": "2027-chrome-italic-sweep",
+      "title": "Slanted Chrome and Blue 2027",
+      "alt": "Forward-slanted 2027 numerals with silver chrome faces and deep blue extruded sides.",
+      "description": "Sharp diagonal strokes and reflective chamfered edges give the wide number row a streamlined shape.",
+      "color": "Silver",
+      "style": "Color",
+      "source": "work/production/wave_483/source/2027-chrome-italic-sweep.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "d6c01110f8d9b9c434fd21f2d6e90b41f68660aeba4d17617dc6933404a28316",
+      "inputSignature": "02b7d3b058037306b936a6297a56a0ab3a6fc983e925fc0904e66b72ba5f658e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 606253,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 606253,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        85,
+        290,
+        1474,
+        784
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_483/exports/2027-chrome-italic-sweep.pdf",
+          "bytes": 606253,
+          "sha256": "fa24bb121faea78921042be59eda516f1af79747e09958c2bb3204f80261c394"
+        },
+        "webp": {
+          "path": "work/production/wave_483/exports/2027-chrome-italic-sweep.webp",
+          "bytes": 1030054,
+          "sha256": "fd37aad1445a8b5e055a3cf85514fa5fb98f8ecb25985c22c34c8b308258555a"
+        },
+        "thumb": {
+          "path": "work/production/wave_483/exports/2027-chrome-italic-sweep-thumb.webp",
+          "bytes": 31714,
+          "sha256": "eee7bb86162fb61bc7ada3ab4e2c3cb2a680a2b4688619dfdfb08b5faaf70248"
+        }
+      },
+      "proofSha256": "8ea88861ec5581306b9960ed568b7029a8dbda6c5c6c3ed0b88f27486665a491",
+      "pairMeanRgbDifference": 4.29537
+    },
+    {
+      "id": "2027-resolution-checklist",
+      "title": "My 2027 Plans Clipboard",
+      "alt": "A coral clipboard with a gold clip displays My 2027 Plans above four empty checkboxes and a teal pencil.",
+      "description": "Four blank writing lines leave room for goals, while the large diagonal pencil overlaps the lower corner of the rounded clipboard.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_483/source/2027-resolution-checklist.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1182,
+      "height": 1330,
+      "pdfWidth": 889,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "de7b8a9057135b0cdeae7548a56e80361933b45fc9ba9f75a88583488378764c",
+      "inputSignature": "9856a72417fa954ef5ab205addfac6f06779f1094f0a92594a93c537a490c9ae",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 743685,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 743685,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        136,
+        43,
+        1118,
+        1243
+      ],
+      "image": {
+        "width": 889,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_483/exports/2027-resolution-checklist.pdf",
+          "bytes": 743685,
+          "sha256": "4a7f435d55d7a6db5a3e10396cbe81783cdb0c63990a3b64530513972eef47f1"
+        },
+        "webp": {
+          "path": "work/production/wave_483/exports/2027-resolution-checklist.webp",
+          "bytes": 739368,
+          "sha256": "89e0c86964e071d452e3327acd98a1db1da18db8552c486b4daa18d52287e4c0"
+        },
+        "thumb": {
+          "path": "work/production/wave_483/exports/2027-resolution-checklist-thumb.webp",
+          "bytes": 36318,
+          "sha256": "22c67df2da1c9e4155982f4ce70cf05d8431d2450424436279812058cd334b90"
+        }
+      },
+      "proofSha256": "f0e6d1e99f1ab0fede4b1f90822d5f4cf42d04ad1a305108ddecde5043c3b656",
+      "pairMeanRgbDifference": 4.15166
+    },
+    {
+      "id": "2027-vision-board",
+      "title": "Dream Big in 2027 Rocket Board",
+      "alt": "A turquoise note reading Dream Big in 2027 is pinned to a wooden board beside a red rocket and smiling yellow star.",
+      "description": "The rocket climbs through a compact white cloud along the board’s left edge, balancing the star at the upper right.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_483/source/2027-vision-board.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "feda7305889f27b0d05b58eb6be244c7d20d9e33f447dc66be4b336265f65d1d",
+      "inputSignature": "54d24e6bcaf3e9a87100d60954c29f4ec517f92c57d0a1c86536d582bb56cf21",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 921210,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 921210,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        105,
+        106,
+        1243,
+        1076
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_483/exports/2027-vision-board.pdf",
+          "bytes": 921210,
+          "sha256": "2a09b17271b191f08680437da7710b701660fb759767875340e5c0db8dd72942"
+        },
+        "webp": {
+          "path": "work/production/wave_483/exports/2027-vision-board.webp",
+          "bytes": 952954,
+          "sha256": "e15f983158c370e63ba034927fc2d42ee6ce8e47b53d4278ebd270220ccc2e03"
+        },
+        "thumb": {
+          "path": "work/production/wave_483/exports/2027-vision-board-thumb.webp",
+          "bytes": 48366,
+          "sha256": "ef4eedf59c75ed07804bdd585f1d00fd2b68304c3a0073df2947624cbfa9a3ec"
+        }
+      },
+      "proofSha256": "10a9cc2765933189cb8637c571b29351fb047a74b9e8bac19750208003b97724",
+      "pairMeanRgbDifference": 7.24103
+    },
+    {
+      "id": "2027-time-capsule",
+      "title": "Memories of 2027 Keepsake Box",
+      "alt": "An open embossed gold keepsake box holds blank photo cards and a red ribbon above a Memories of 2027 tag.",
+      "description": "Cream quilted lining frames the upright cards, with a wide red bow draped across the ornate box and its hanging label.",
+      "color": "Gold",
+      "style": "Color",
+      "source": "work/production/wave_483/source/2027-time-capsule.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "2027",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 1000,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "2a6af0ece0711a9e2d5d884e5b92b1537c84d9c6adde71d9aeee915d8132ff30",
+      "inputSignature": "fa263c3c42a5a4c8048ca9c68bbee04ace3fd3986ac8e069898dc7dc25b0cd0d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 871802,
+        "weightedCmykRmse": 0.76222
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1219152,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 871802,
+          "weightedCmykRmse": 0.76222
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        104,
+        55,
+        1148,
+        1181
+      ],
+      "image": {
+        "width": 1000,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_483/exports/2027-time-capsule.pdf",
+          "bytes": 871802,
+          "sha256": "a7068f29369a0f0bf8d7f12212564926fba6d6da6f27b5939d594e56b5cb55ce"
+        },
+        "webp": {
+          "path": "work/production/wave_483/exports/2027-time-capsule.webp",
+          "bytes": 1283160,
+          "sha256": "b5bc765296129f51e5b5601759db0d0f1670063f55945d485a5471f05bcbfe75"
+        },
+        "thumb": {
+          "path": "work/production/wave_483/exports/2027-time-capsule-thumb.webp",
+          "bytes": 59622,
+          "sha256": "77e12a679acdac27c2acda48258a7e21b8457408304615b1801008cef5de0caf"
+        }
+      },
+      "proofSha256": "e35dabe4299a7e7499c48774f2de5e9c28891a7185cd5f7c9d9678cf9ce50cc5",
+      "pairMeanRgbDifference": 6.96416
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T12:30:06.833185+00:00",
+  "screenReviewEvidence": "work/production/wave_483/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T12:30:10.193Z"
+}

@@ -1,0 +1,78 @@
+{
+  "wave": "wave_487",
+  "topic": "2027",
+  "collectionTarget": 100,
+  "method": "builtin-image-generation",
+  "research": "data/research/2027-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "2027-puzzle-year",
+      "title": "2027 Better Together Puzzle Characters",
+      "alt": "Four smiling red, yellow, blue and green jigsaw characters form 2027 above a Better Together ribbon.",
+      "description": "White gloves, colorful sneakers and different expressions give each connected puzzle piece a separate personality.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_487/source/2027-puzzle-year.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-origami-cranes",
+      "title": "Welcome 2027 Origami Crane Greeting",
+      "alt": "Three patterned paper cranes fly above Welcome 2027 lettering decorated with small pink blossoms and flowing ribbons.",
+      "description": "Ivory, teal and coral folded birds echo the year\u2019s floral pattern and gold borders in an asymmetrical greeting composition.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_487/source/2027-origami-cranes.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-hot-air-balloon",
+      "title": "Up and Away 2027 Patchwork Balloon",
+      "alt": "A colorful patchwork hot-air balloon displays Up and Away above 2027, with a complete wicker basket suspended below.",
+      "description": "Striped, dotted and checked fabric panels surround the cream central label, while gold ropes connect the envelope to the basket.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_487/source/2027-hot-air-balloon.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-class-of-floral-monogram",
+      "title": "Class of 2027 Graduation Bouquet",
+      "alt": "Ivory magnolias, blue irises and eucalyptus wrapped in cream paper, tied with a navy bow and a Class of 2027 tag.",
+      "description": "The tall flower arrangement rises above the large hanging cream label, with the stem ends kept visible below.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_487/source/2027-class-of-floral-monogram.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-month-december",
+      "title": "December 2027 Evergreen Lettering",
+      "alt": "Green December lettering and red 2027 numerals sit beneath an evergreen branch with a red bow and gold ornament.",
+      "description": "Gold borders and delicate snowflake patterns decorate the raised year, with red berries tucked among the pine needles.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_487/source/2027-month-december.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-faceted-crystal-year",
+      "title": "Emerald Crystal 2027",
+      "alt": "Wide 2027 numerals formed from faceted emerald-green crystal with clear beveled edges.",
+      "description": "Triangular reflections run through the low geometric digits, with a full open center in the zero.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_487/source/2027-faceted-crystal-year.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

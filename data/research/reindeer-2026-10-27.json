@@ -1,0 +1,57 @@
+{
+  "topic": "reindeer",
+  "keyword": "reindeer clipart",
+  "researchedAt": "2026-10-27T05:44:40.010154+00:00",
+  "googleImagesUrl": "https://www.google.com/search?udm=2&q=reindeer+clipart&gl=us&hl=en",
+  "googleImagesActuallyViewed": true,
+  "observedIntent": [
+    "Cute cartoon holiday animals dominate, with big eyes, clean outlines and isolated silhouettes.",
+    "Standing, prancing, head portraits, gift scenes, scarves, bells, silhouettes and coloring sheets appear.",
+    "Choose original independent compositions; do not copy a result image, branded character or repeat a common base."
+  ],
+  "primarySources": [
+    {
+      "url": "https://www.nps.gov/articles/000/reinderrvscaribou.htm",
+      "publisher": "U.S. National Park Service",
+      "use": "Reindeer/caribou general identity and appearance; no subspecies identity inferred."
+    },
+    {
+      "url": "https://www.adfg.alaska.gov/index.cfm?adfg=caribouidentification.main",
+      "publisher": "Alaska Department of Fish and Game",
+      "use": "Broad muzzle, cloven hooves, antler and coat characteristics for wildlife depictions; no sex inferred solely from antlers."
+    }
+  ],
+  "existingContentCheck": {
+    "acceptedCatalog": 13784,
+    "exactTopic": 0,
+    "relatedReindeerOrCaribouMetadata": 0,
+    "liveHttpStatus": 404,
+    "liveCheckedAt": "2026-10-27T05:44:40.010154+00:00",
+    "liveTotalAtCheck": 13234,
+    "stagedSources": 0,
+    "priorQueuedWavePlans": 0,
+    "original110QueueTarget": 50,
+    "relatedOriginalsActuallyViewed": [
+      {
+        "id": "deer-christmas-folk-art-clipart",
+        "sourceSha256": "0905513f9ed1f63779896487683b757a90d57b5f842bd183a2e598c8d36c5de9"
+      },
+      {
+        "id": "deer-flower-crown-botanical-clipart",
+        "sourceSha256": "e1534244d35c924f7749b7bcb0d6efd0940cca548581526c76da68bbc62cdee9"
+      },
+      {
+        "id": "deer-standing-low-poly-clipart",
+        "sourceSha256": "832f0504cac3338cc9bf453cb360cb72abae1e3002f5ad8980c60246af7cd0e0"
+      },
+      {
+        "id": "stag-deer-standing-flat-clipart",
+        "sourceSha256": "78ed81f4daaeed54d7d7533f30e9eb6c8b6c53db4ac34bfbfd024a622ab1b01b"
+      }
+    ],
+    "relatedSourceConclusion": "Four strongest related deer originals inspected: two spotted fawn-style deer and two slender generic stags. These are not the broad-muzzled reindeer collection; no exact prior reindeer composition identified.",
+    "contactEvidence": "work/production/reindeer-prior-deer-check.jpg"
+  },
+  "sourceImageReuse": false,
+  "countingRule": "One accepted unique ID per independent composition. Repair versions and exports never count twice."
+}

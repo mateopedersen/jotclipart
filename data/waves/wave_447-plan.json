@@ -1,0 +1,77 @@
+{
+  "wave": "wave_447",
+  "topic": "reindeer",
+  "method": "builtin-image-generation",
+  "research": "data/research/reindeer-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "reindeer-scarf-prance",
+      "title": "Reindeer Prancing in a Knitted Scarf",
+      "alt": "Big-eyed brown cartoon reindeer prancing with one forehoof lifted and a teal-and-cream knitted scarf trailing behind.",
+      "description": "The reindeer's lifted foreleg and sweeping fringed scarf give the figure a lively sideways silhouette. Short branched antlers, a dark forelock and cream chest distinguish the cheerful animal.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_447/source/reindeer-scarf-prance.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-gift-box-peek",
+      "title": "Reindeer Peeking from a Round Gift Box",
+      "alt": "Blue-eyed cartoon reindeer peeking from a red round Christmas gift box, with two forehooves resting on its rim.",
+      "description": "A gold bow and snowflake pattern decorate the open box. The reindeer's long face, wide antler crown and large sideward ears rise above the rim beside the tipped lid.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_447/source/reindeer-gift-box-peek.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-snowball-roll",
+      "title": "Reindeer Nudging a Snowball",
+      "alt": "Stocky dark-brown cartoon reindeer in green earmuffs lowering its nose against a small white snowball.",
+      "description": "The reindeer leans forward with its broad muzzle touching the snowball. Pale brows, a cream neck ruff and short wide antlers distinguish its rounded face.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_447/source/reindeer-snowball-roll.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-bell-collar-bow",
+      "title": "Reindeer Bowing with Jingle Bells",
+      "alt": "Golden-brown cartoon reindeer stretching its forelegs into a bow, wearing a red ribbon collar with three gold bells.",
+      "description": "The long front legs reach diagonally forward beneath the reindeer's lifted face. A cream forelock, green eyes and slender branching antlers distinguish the graceful figure.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_447/source/reindeer-bell-collar-bow.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-sleeping-star-blanket",
+      "title": "Reindeer Sleeping Under a Star Blanket",
+      "alt": "Gray-brown cartoon reindeer asleep with folded legs beneath a plum blanket patterned with gold stars.",
+      "description": "Closed eyes and a broad cream cheek ruff give this resting reindeer a peaceful expression. Its antlers, tucked cloven hooves and short tail remain visible around the gold-edged blanket.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_447/source/reindeer-sleeping-star-blanket.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-wreath-window-face",
+      "title": "Reindeer Face in a Holly Wreath",
+      "alt": "Smiling brown cartoon reindeer head with complete antlers rising above a green holly wreath and cream bow.",
+      "description": "A broad cream muzzle and warm brown eyes sit within the leafy oval. Red berry clusters and a gold-edged cream bow frame the intentionally cropped head-and-neck composition.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_447/source/reindeer-wreath-window-face.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

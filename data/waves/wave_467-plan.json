@@ -1,0 +1,77 @@
+{
+  "wave": "wave_467",
+  "topic": "gingerbread",
+  "method": "builtin-image-generation",
+  "research": "data/research/gingerbread-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "gingerbread-ribbon-spinner",
+      "title": "Gingerbread Ribbon Gymnast",
+      "alt": "Gingerbread gymnast in a yellow icing leotard sweeping a rainbow ribbon around a one-legged balancing pose.",
+      "description": "A purple hair bow and pink candy buttons accent the heart-shaped face, while the wide ribbon loop frames the raised leg.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_467/source/gingerbread-ribbon-spinner.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-candy-crown",
+      "title": "Gingerbread King on a Candy Throne",
+      "alt": "Square-headed gingerbread king with a gold crown and green icing cape seated on a red-and-green gumdrop throne.",
+      "description": "A white icing moustache and pointed beard frame the smile, with a striped candy scepter held beside the chair.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_467/source/gingerbread-candy-crown.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-snowy-window",
+      "title": "Gingerbread Pair Around an Arched Frame",
+      "alt": "Two different gingerbread characters peeking around an empty arched cookie frame decorated with white icing and holly.",
+      "description": "The left figure wears a red cap, while its smaller companion wears a green bow and matching icing skirt.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_467/source/gingerbread-snowy-window.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-gingerbread-family",
+      "title": "Gingerbread Family Holding Hands",
+      "alt": "Three gingerbread characters holding hands: a tall teal-vested figure, a small child in green overalls and a bonneted figure in a pink dress.",
+      "description": "Their different heights, icing faces and scalloped outfits create a compact family grouping.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_467/source/gingerbread-gingerbread-family.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-blank-recipe-card",
+      "title": "Gingerbread Beside a Blank Recipe Card",
+      "alt": "Small gingerbread character in a red gingham apron and scalloped headband holding the edge of a blank cream card.",
+      "description": "The wide rounded card has a fine double brown border, leaving its center clear for a short recipe or message.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_467/source/gingerbread-blank-recipe-card.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-sugar-telescope",
+      "title": "Gingerbread Looking Through a Telescope",
+      "alt": "Tall gingerbread figure in a starry navy cap and purple cape looking through a brass telescope on a wafer-patterned tripod.",
+      "description": "One eye closes while the other meets the eyepiece, and the long cape curves behind the slim cookie body.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_467/source/gingerbread-sugar-telescope.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "wave": "wave_442",
+  "topic": "elf",
+  "method": "builtin-image-generation",
+  "research": "data/research/elf-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "elf-berry-gatherer",
+      "title": "Elf with a Basket of Blue Berries",
+      "alt": "Small brown-eyed cartoon elf in a green capelet holding a wicker basket of blue berries, with a loose sprig beside the shoes.",
+      "description": "Both hands rest on the basket's curved handle. A strawberry-blond fringe, red bell-tipped cap and short green capelet distinguish the compact standing character.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_442/source/elf-berry-gatherer.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-cute-bubble-wand",
+      "title": "Elf Blowing Soap Bubbles",
+      "alt": "Curly-haired cartoon elf seated on a wooden stool with a red bubble wand, a small cup and three floating bubbles.",
+      "description": "Three iridescent bubbles rise beside the elf's open smile. A cream-trimmed curled green hat and flared green skirt surround the little seated figure.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_442/source/elf-cute-bubble-wand.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-mushroom-cart",
+      "title": "Elf Pushing a Decorative Mushroom Cart",
+      "alt": "Silver-haired cartoon elf in a green dress pushing a little wooden cart filled with three colorful spotted mushrooms.",
+      "description": "Red, green and ochre mushroom caps rise above a bow-decorated wooden cart. The elf leans on its handle in a cream blouse, green dress and red lace-up shoes.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_442/source/elf-mushroom-cart.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-checking-a-tiny-hive",
+      "title": "Elf Holding a Wooden Hive Frame",
+      "alt": "Violet-eyed cartoon elf in green overalls holding an empty wooden frame beside a small slatted hive box.",
+      "description": "The rectangular frame rests across the elf's hands above an open wooden box. A red shirt, scalloped green shorts and a star-tipped cap keep the workshop character distinctly festive.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_442/source/elf-checking-a-tiny-hive.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-painting-botanical-cards",
+      "title": "Elf Painting a Holly Card",
+      "alt": "Dark-haired cartoon elf seated cross-legged and painting holly leaves and red berries on a cream card.",
+      "description": "A small red paint jar sits beside the elf's curled shoes. The brush meets a berry on the card, held above green-striped stockings and a cream-trimmed coat.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_442/source/elf-painting-botanical-cards.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-forest-potter",
+      "title": "Elf Shaping a Clay Bird",
+      "alt": "Auburn-haired cartoon elf in a green outfit shaping a little clay bird on a low wooden pottery wheel.",
+      "description": "Clay-coated hands cup the bird's rounded body while its beak and wing remain clearly visible. A red folded cap and gold-buckled green tunic frame the small pottery scene.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_442/source/elf-forest-potter.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

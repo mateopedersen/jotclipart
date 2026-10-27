@@ -1,0 +1,481 @@
+{
+  "wave": "wave_493",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "feast-tagine-and-couscous",
+      "title": "Vegetable Tagine with Couscous and Olives",
+      "alt": "An open terracotta tagine holds mixed vegetables beside a conical lid, a patterned couscous bowl and olives.",
+      "description": "The warm clay dish sits behind two cream-and-blue bowls, with a narrow decorated lid leaning to its right.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_493/source/feast-tagine-and-couscous.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "52c94d46fa5fd576437b9b24573b86bb117568af7d99ace8bbee5f649db2334a",
+      "inputSignature": "67e3869543a6b935c0258f29e46375aafafc6a39b3bbaad303ddcaea98aa2182",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 687117,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 687117,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        232,
+        121,
+        1330,
+        905
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_493/exports/feast-tagine-and-couscous.pdf",
+          "bytes": 687117,
+          "sha256": "f7ef79a2558c716f420e952fb1f682d1d7e1dcae5510b200fe1c0776892f0588"
+        },
+        "webp": {
+          "path": "work/production/wave_493/exports/feast-tagine-and-couscous.webp",
+          "bytes": 1299438,
+          "sha256": "9b3eaa086749a03a9bba150eed477013fea7af2d1b51deaa2fe1b9d370b39222"
+        },
+        "thumb": {
+          "path": "work/production/wave_493/exports/feast-tagine-and-couscous-thumb.webp",
+          "bytes": 36122,
+          "sha256": "c39d323ffb674197633c0d2eba9b2b818dbc9fd1c5435e3a3f2bf9ad5803ed20"
+        }
+      },
+      "proofSha256": "d5c8d44c8fc6ca32c5aae237284bf42d2e8d9820b425db13e462232bae47c1a9",
+      "pairMeanRgbDifference": 4.30688
+    },
+    {
+      "id": "feast-pizza-party-boxes",
+      "title": "Pizza Party Boxes with Salad and Drinks",
+      "alt": "An open pizza box rests on another box beside a plated slice, a salad cup and two plain paper drinks.",
+      "description": "The vegetable-topped pizza has a visible gap where the separate slice was removed, with the full upright lid behind it.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_493/source/feast-pizza-party-boxes.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "563447f4a1c29b52eccac6e5f1a2a89dec289f85782bafa3f0154b4e5a26e08c",
+      "inputSignature": "794b88ad105efb20c6b26091002f47d9c949e8affb62b9f11eb5b29c64fbfa81",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 750340,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 750340,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        184,
+        55,
+        1362,
+        931
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_493/exports/feast-pizza-party-boxes.pdf",
+          "bytes": 750340,
+          "sha256": "c32ea400b794521dec9fdaa72c65632a9599ce8453680b3bdc8e8a9d20194e42"
+        },
+        "webp": {
+          "path": "work/production/wave_493/exports/feast-pizza-party-boxes.webp",
+          "bytes": 1387908,
+          "sha256": "8145f7e8325e385650dc9eccf248681ccee77e178178ba267e85741da500aec1"
+        },
+        "thumb": {
+          "path": "work/production/wave_493/exports/feast-pizza-party-boxes-thumb.webp",
+          "bytes": 38894,
+          "sha256": "0bbe279f68f9437adb1cc97b62979bdcd91ce91805e50691c896c4e5e0ed32cb"
+        }
+      },
+      "proofSha256": "5336bed9143c5706d7e8c1e86ce2ee480ace0234734006618ec03029645fda8e",
+      "pairMeanRgbDifference": 3.33709
+    },
+    {
+      "id": "feast-noodle-bowl-banquet",
+      "title": "Two-Bowl Noodle Banquet Tray",
+      "alt": "Two patterned noodle bowls sit on a black tray with a cream teapot and two pairs of resting chopsticks.",
+      "description": "One bowl shows broth and egg halves, while the other contains noodles and vegetables, giving the compact meal two distinct focal points.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_493/source/feast-noodle-bowl-banquet.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "4feddbce3c9433d0ee90498d89d1c919398b5af73f8ebebdc01d5b7e68c6226f",
+      "inputSignature": "72a604255c35923ae0a7a7382cc3114dd00b2b9bbbf1527f4874deb4b4cff5a7",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 748705,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 748705,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        247,
+        137,
+        1294,
+        831
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_493/exports/feast-noodle-bowl-banquet.pdf",
+          "bytes": 748705,
+          "sha256": "674775a4c54eb3a48790ebaba292684dc239c79ecc49ac242c5101baaa870334"
+        },
+        "webp": {
+          "path": "work/production/wave_493/exports/feast-noodle-bowl-banquet.webp",
+          "bytes": 1216516,
+          "sha256": "e2c2d7b81d00fb207e4bb832267fbe720456ef513f4f569d512e20e3b708edd9"
+        },
+        "thumb": {
+          "path": "work/production/wave_493/exports/feast-noodle-bowl-banquet-thumb.webp",
+          "bytes": 34006,
+          "sha256": "c5aa9c521801476271a7ec3866ec32a804b455535cac66bdd838139b69abe20c"
+        }
+      },
+      "proofSha256": "342ea6449bcca9588a6c7af81d444d38717c749293d7e4b8ea3f70329140d53b",
+      "pairMeanRgbDifference": 3.6003
+    },
+    {
+      "id": "feast-loaded-potato-bar",
+      "title": "Loaded Baked Potato Sharing Dish",
+      "alt": "Three open baked potatoes with different toppings fill a green handled dish beside grated cheese and cream.",
+      "description": "Broccoli, beans and tomato distinguish the three fillings, with each split potato skin visible around its topping.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_493/source/feast-loaded-potato-bar.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "53314c7006860cea38e705d0cd7a078cf6788eba676989274b2ccea5e5884db5",
+      "inputSignature": "06d1ca47d4698d047d8532f1b1fdcdc3d7627c806090124ed3da82dacdb501b7",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 870614,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 870614,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        214,
+        122,
+        1362,
+        882
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_493/exports/feast-loaded-potato-bar.pdf",
+          "bytes": 870614,
+          "sha256": "a250dd200aaf04792308df1534f0f3b9d4f3f803aa914827de7867d75c5425fb"
+        },
+        "webp": {
+          "path": "work/production/wave_493/exports/feast-loaded-potato-bar.webp",
+          "bytes": 1356530,
+          "sha256": "fcc419a87ffc434e6b6ce6a4f4d702b530ea25e01155edc74a61967411fa2852"
+        },
+        "thumb": {
+          "path": "work/production/wave_493/exports/feast-loaded-potato-bar-thumb.webp",
+          "bytes": 41346,
+          "sha256": "b69440d7d4f84d2dd69f59280bb79532111acc069c5766a74b8ecb23fa0031e0"
+        }
+      },
+      "proofSha256": "ff98537a2b238a4f9d9236fb2455c8d047a6718ce93885331a641122eb48de53",
+      "pairMeanRgbDifference": 4.643
+    },
+    {
+      "id": "feast-carved-ham-platter",
+      "title": "Glazed Ham with Potatoes and Asparagus",
+      "alt": "A scored glazed ham with fanned slices sits on a white platter with potatoes, asparagus and apple wedges beside gravy.",
+      "description": "Clove-like dark studs follow the diamond-cut glaze, contrasting with the pink cut face and pale slices at the front.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_493/source/feast-carved-ham-platter.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "8b17b145525b8ca1989672fd702acd16dce7cd7c58c0f3dd95c391ebe6262947",
+      "inputSignature": "8db6bcaae077b1c7f3b9d1e7784875ce276b301de6c68a906855dd32544b7c5d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 762183,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 762183,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        168,
+        201,
+        1417,
+        807
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_493/exports/feast-carved-ham-platter.pdf",
+          "bytes": 762183,
+          "sha256": "6d145d65f74d94c37e17f56060734a74c53450e60ca0977439a295d5fc64d2fe"
+        },
+        "webp": {
+          "path": "work/production/wave_493/exports/feast-carved-ham-platter.webp",
+          "bytes": 1442608,
+          "sha256": "d989e4f26d2c6ab386a01ac5f3f142dcbb9fa8cca8bbed804676ebabe3cb4d6c"
+        },
+        "thumb": {
+          "path": "work/production/wave_493/exports/feast-carved-ham-platter-thumb.webp",
+          "bytes": 41464,
+          "sha256": "6a2097ddba8cd63cc51730071a48d7e5926db56de999c90941d44a45b80dc591"
+        }
+      },
+      "proofSha256": "8f78cf8ecd2bb46b1e747be5a5467276c85ee07874c42a99b991c8bc6de26763",
+      "pairMeanRgbDifference": 3.75373
+    },
+    {
+      "id": "feast-pumpkin-soup-spread",
+      "title": "Pumpkin Soup Tureen with Bread",
+      "alt": "A hollow pumpkin holds golden soup beside its stemmed lid, a small soup bowl and sliced bread.",
+      "description": "Cream swirls and chopped green garnish decorate the soup, while the pumpkin’s ridged orange shell gives the serving vessel a clear outline.",
+      "color": "Orange",
+      "style": "Color",
+      "source": "work/production/wave_493/source/feast-pumpkin-soup-spread.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "6340a8ff9684015ded45030ed00b23effcb961151a7430a3963c6ba57fe26cdc",
+      "inputSignature": "b2a53681ee0c04eaa0dea14e8d3911ce8eda80de205d56d8999d5c592fa8c258",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 607493,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 607493,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        208,
+        162,
+        1384,
+        872
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_493/exports/feast-pumpkin-soup-spread.pdf",
+          "bytes": 607493,
+          "sha256": "1f0c6e0c804745366d6040d188abb45e66e62a69139d3373515612ea2f386d8f"
+        },
+        "webp": {
+          "path": "work/production/wave_493/exports/feast-pumpkin-soup-spread.webp",
+          "bytes": 1288490,
+          "sha256": "cde3b2cbde6f9f07735f2c4f7e2cd4553f0d79d35d3e3c593d646bc7e5af049a"
+        },
+        "thumb": {
+          "path": "work/production/wave_493/exports/feast-pumpkin-soup-spread-thumb.webp",
+          "bytes": 35772,
+          "sha256": "a473d7ec9c8f867a18fc5dde44acad9aa408f73d3c70c3abb2f3aa0ed33587b5"
+        }
+      },
+      "proofSha256": "bbf7797d462bd4ea2e68018950443273c2a1945f42a32fac4d6bb59fecbe5aec",
+      "pairMeanRgbDifference": 3.99778
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T14:29:55.421554+00:00",
+  "screenReviewEvidence": "work/production/wave_493/native-proof-review.jpg",
+  "screenReviewEvidenceSha256": "a9e2236993ff56ebc5af85398c0c6ca81ea90dc484056254d39aedf693ec9b0f",
+  "screenReviewNotes": "All six actual CMYK-rendered PDF proofs inspected for correct pairing, intact vessels and utensils, food separation, framing and legible detail. No physical print proof claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T14:34:19.783Z"
+}

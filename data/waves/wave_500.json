@@ -1,0 +1,523 @@
+{
+  "wave": "wave_500",
+  "status": "AWAITING_CDN",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "blessings-count-your-blessings-wreath",
+      "title": "Count Your Blessings Autumn Wreath",
+      "alt": "Cream “COUNT YOUR BLESSINGS” lettering crosses dark-teal ribbons within a wheat and autumn-leaf wreath.",
+      "description": "A single sunflower brightens the right side of the open oval, with curled gold ribbon edges separating the two lines of text.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_500/source/blessings-count-your-blessings-wreath.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "f43aaea1d1c5f330a2833b2ec7a0e0e0e11ba8498c4803239a52124d88ad5f5f",
+      "inputSignature": "6594a3c50ffabfc269dafb699dc64532e36a0a86104296e8bbdc0cbd20a26ea8",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 957117,
+        "weightedCmykRmse": 0.885879
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1194167,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1008806,
+          "weightedCmykRmse": 0.762178
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 957117,
+          "weightedCmykRmse": 0.885879
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        89,
+        61,
+        1452,
+        946
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_500/exports/blessings-count-your-blessings-wreath.pdf",
+          "bytes": 957117,
+          "sha256": "c23d2a1db4277a28a9bf610c4d40f6d8ff9c5fb58484dfa935d4e545ad944823"
+        },
+        "webp": {
+          "path": "work/production/wave_500/exports/blessings-count-your-blessings-wreath.webp",
+          "bytes": 1711886,
+          "sha256": "3a19ed33ae56f4a9dcc91bd07a173d73862a680080030680a077c213cbabc8ad"
+        },
+        "thumb": {
+          "path": "work/production/wave_500/exports/blessings-count-your-blessings-wreath-thumb.webp",
+          "bytes": 69110,
+          "sha256": "c802c3195f24a8a803a1b5163f5c5eaf5e42be5842b8c81951fee31445bc0766"
+        }
+      },
+      "proofSha256": "e293f0c8cad2928131a2519ba798c667ec7f60c2a5c986d121ed1ad88287a62f",
+      "pairMeanRgbDifference": 6.86987
+    },
+    {
+      "id": "blessings-blessed-porcelain-cup",
+      "title": "Blessed Floral Teacup on Books",
+      "alt": "A blue-and-white floral teacup marked “BLESSED” rests on two closed books beside a silver spoon.",
+      "description": "Cobalt flowers wrap the gold-rimmed cup above navy and cream cloth covers with blank spines.",
+      "color": "Blue",
+      "style": "Color",
+      "source": "work/production/wave_500/source/blessings-blessed-porcelain-cup.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "de56f297b0f306eb855c345dfd60c78941cc27e024c576f5a529f2786f851430",
+      "inputSignature": "19efa0ebce4f60d27f566bf85fd348cb2afd4ff1caa01155a25d33a4454d69a6",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 621622,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 621622,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        300,
+        183,
+        1235,
+        953
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_500/exports/blessings-blessed-porcelain-cup.pdf",
+          "bytes": 621622,
+          "sha256": "5c3044ec9d1717534de83357dbd61fa714f07bd4521e93109af8650b44d3ceb4"
+        },
+        "webp": {
+          "path": "work/production/wave_500/exports/blessings-blessed-porcelain-cup.webp",
+          "bytes": 1190822,
+          "sha256": "852024eecfd7e5c3059dcaff0653a963a40a6ff1f4c0272b4565f006352677a0"
+        },
+        "thumb": {
+          "path": "work/production/wave_500/exports/blessings-blessed-porcelain-cup-thumb.webp",
+          "bytes": 31026,
+          "sha256": "899c2d5e6fecab5aeb12b6aa2e1568dd8be632aa76c0b34030e876da5b481645"
+        }
+      },
+      "proofSha256": "1bf02f5a60baa88e0bc15d9c04dae51ff461b0b7c5f0f48ac7485304a85a6ffb",
+      "pairMeanRgbDifference": 2.6077
+    },
+    {
+      "id": "blessings-thankful-grateful-blessed-tags",
+      "title": "Thankful, Grateful and Blessed Gift Tags",
+      "alt": "Three botanical gift tags reading “THANKFUL,” “GRATEFUL” and “BLESSED” hang from a copper-colored ring.",
+      "description": "Round cream, pointed burgundy and scalloped sage shapes give each word its own paper silhouette and floral decoration.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_500/source/blessings-thankful-grateful-blessed-tags.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1389,
+      "height": 1132,
+      "pdfWidth": 1000,
+      "pdfHeight": 815,
+      "sourceType": "raster",
+      "sourceSha256": "1c36701192eb094cbe97daeefff7ff682b9a1394d6a005e850dc3c8b0182a527",
+      "inputSignature": "af98943c076225f62a9d57db0a4d4b2200dca6a5ce11b31e391f50428f129f20",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 927491,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 927491,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        153,
+        147,
+        1262,
+        992
+      ],
+      "image": {
+        "width": 1000,
+        "height": 815,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_500/exports/blessings-thankful-grateful-blessed-tags.pdf",
+          "bytes": 927491,
+          "sha256": "f7f9f09354b1a6ce4fb0574fbec5535317d0b78767fd990f87623cb991a3639a"
+        },
+        "webp": {
+          "path": "work/production/wave_500/exports/blessings-thankful-grateful-blessed-tags.webp",
+          "bytes": 956708,
+          "sha256": "07c99d5033b0144ae645b8bbd242f5439edd12ba0ced19aa95a106ab9c1ab43d"
+        },
+        "thumb": {
+          "path": "work/production/wave_500/exports/blessings-thankful-grateful-blessed-tags-thumb.webp",
+          "bytes": 46552,
+          "sha256": "42bd908ec7040abc8b77417980b8ad4bcc1b2f122f2b9ef8b4083fc616128e5c"
+        }
+      },
+      "proofSha256": "0fe5ee17a4ad60d02039e9278c55a5ac647f6f332a14abd7e4c4d654cac9b9b0",
+      "pairMeanRgbDifference": 4.28305
+    },
+    {
+      "id": "blessings-god-bless-you-medallion",
+      "title": "God Bless You Gold and Navy Medallion",
+      "alt": "Gold “GOD BLESS YOU” lettering fills a navy circular medallion bordered by olive branches and fine rays.",
+      "description": "The raised serif letters and complete gold rim form a formal round greeting graphic with an evenly balanced central stack.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_500/source/blessings-god-bless-you-medallion.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1278,
+      "height": 1230,
+      "pdfWidth": 1000,
+      "pdfHeight": 962,
+      "sourceType": "raster",
+      "sourceSha256": "8a4b43335ce290d630c604d074b393084de5e307933cfb10e4dfc86e4e25244b",
+      "inputSignature": "5e4029fbc556ae0d6658f992e8972ccc0990a3a96f264197c48e8addb00d281f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 929608,
+        "weightedCmykRmse": 0.938326
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1327423,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 997401,
+          "weightedCmykRmse": 0.796286
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 929608,
+          "weightedCmykRmse": 0.938326
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        146,
+        118,
+        1131,
+        1108
+      ],
+      "image": {
+        "width": 1000,
+        "height": 962,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_500/exports/blessings-god-bless-you-medallion.pdf",
+          "bytes": 929608,
+          "sha256": "47c3b19ffe931f4899d712ad1c55b8fdc4bc525bcc7e2db462566417b9b90834"
+        },
+        "webp": {
+          "path": "work/production/wave_500/exports/blessings-god-bless-you-medallion.webp",
+          "bytes": 1249604,
+          "sha256": "bc007bec431bc7f85eea33d5d3124b988775ed42a53ae3e41fd6b1980705d477"
+        },
+        "thumb": {
+          "path": "work/production/wave_500/exports/blessings-god-bless-you-medallion-thumb.webp",
+          "bytes": 61810,
+          "sha256": "55aba707ffaf04c818545806d84a4338117e0c1cf4e4956e8d0beb658b7f0d5a"
+        }
+      },
+      "proofSha256": "2b518abb8b2695b498c31c2e35d4a51f2fb10676752ce6132c55efe46138459d",
+      "pairMeanRgbDifference": 5.9295
+    },
+    {
+      "id": "blessings-bless-this-home-plaque",
+      "title": "Bless This Home Hydrangea Plaque",
+      "alt": "An ivory plaque reading “BLESS THIS HOME” is framed by blue hydrangeas with a small brass key hanging below.",
+      "description": "Gold edging follows the rounded plaque outline, while green leaves and little blue flower buds soften its sides.",
+      "color": "Blue",
+      "style": "Color",
+      "source": "work/production/wave_500/source/blessings-bless-this-home-plaque.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "b73b344721c44a2edc9396693780fc0264683fbb3f4d164df3c9ca33402219a2",
+      "inputSignature": "c2e61cc1bfd58e9e234ffa2dd1b4d2199105dc7f491d791e34b45ee9ea8aa4ea",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 730554,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 730554,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        214,
+        132,
+        1319,
+        930
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_500/exports/blessings-bless-this-home-plaque.pdf",
+          "bytes": 730554,
+          "sha256": "33e18781f487017e7a546deef042d4f4db85015f7029dec1efdf113b01f3a515"
+        },
+        "webp": {
+          "path": "work/production/wave_500/exports/blessings-bless-this-home-plaque.webp",
+          "bytes": 1296438,
+          "sha256": "78726194459abdf89a472af8cdc25d4d949443d4d966ef513861187da229661f"
+        },
+        "thumb": {
+          "path": "work/production/wave_500/exports/blessings-bless-this-home-plaque-thumb.webp",
+          "bytes": 41022,
+          "sha256": "49b2c1843ac6671ef92d133d9b3dbee41cf086e3e0a9144f07b0758f5f5bde13"
+        }
+      },
+      "proofSha256": "ae6a00469bd70e572003af538ba4001ea36225f48401c5759cfc292eaea8aa53",
+      "pairMeanRgbDifference": 5.00803
+    },
+    {
+      "id": "blessings-autumn-blessings-wagon",
+      "title": "Autumn Blessings Pumpkin Wagon",
+      "alt": "A wooden wagon carries orange pumpkins and red flowers beneath a rust banner reading “AUTUMN BLESSINGS.”",
+      "description": "Metal corner brackets, full spoked wheels and a raised pull handle give the low harvest cart a sturdy silhouette.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_500/source/blessings-autumn-blessings-wagon.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "766f2ec3ccd72c25bbec3acaeb1272a2aaf88487bc452a27d85b0157558fd30b",
+      "inputSignature": "af9108d1d553b15baa2b023e7fdec0772074ab60abc76a9b40c42e43b917be48",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 956809,
+        "weightedCmykRmse": 0.932875
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1248780,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1014925,
+          "weightedCmykRmse": 0.787262
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 956809,
+          "weightedCmykRmse": 0.932875
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        133,
+        113,
+        1274,
+        1060
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_500/exports/blessings-autumn-blessings-wagon.pdf",
+          "bytes": 956809,
+          "sha256": "97c4101e3088e5130cbc635c1b73cc43b33cf8aab3a9855ffaf1dd7d99986a9c"
+        },
+        "webp": {
+          "path": "work/production/wave_500/exports/blessings-autumn-blessings-wagon.webp",
+          "bytes": 1304174,
+          "sha256": "a36bcf01d0e1190935f722ff84c26c8b88ff86118cfd8c5a535330c5d3a434ab"
+        },
+        "thumb": {
+          "path": "work/production/wave_500/exports/blessings-autumn-blessings-wagon-thumb.webp",
+          "bytes": 69326,
+          "sha256": "2db056c952f404df397b6effed22238a10a1e4726c66f8f031c4692b4ae7c5cb"
+        }
+      },
+      "proofSha256": "b4235db00744d5777505e49beb2054e0611617e67a69eecb4cc540b0fb9c91fe",
+      "pairMeanRgbDifference": 5.736
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T15:49:14.339490+00:00",
+  "screenReviewEvidence": "work/production/wave_500/native-proof-review.jpg",
+  "screenReviewEvidenceSha256": "b66503aa3a73044446d1ad4413ef68319d68157dd905a6e7384acbe66f2e1705",
+  "screenReviewNotes": "Every actual rendered CMYK proof viewed for correct wording, full shapes and decorative details, clean framing and correspondence to the reviewed source. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T15:55:59.037Z"
+}

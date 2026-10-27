@@ -1,0 +1,516 @@
+{
+  "wave": "wave_496",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 5,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "feast-turkey-shaped-bread-feast",
+      "title": "Turkey-Shaped Bread Centerpiece",
+      "alt": "A golden turkey-shaped bread loaf with a roll-feather tail stands on a board beside herb butter and cranberries.",
+      "description": "Scored rolls fan behind the bread bird’s small head, red wattle and rounded wings, creating an edible centerpiece with a complete paddle-board outline.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_496/source/feast-turkey-shaped-bread-feast.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "43447283f80fa85aa5b04d2ec6329c19a9e9602389904e32b07809068d58a372",
+      "inputSignature": "98a539e5d0ca14ede71e8d49c886445b93bad06c6a68aad0531ef93a361b3fc3",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 870102,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 870102,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        166,
+        100,
+        1406,
+        871
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_496/exports/feast-turkey-shaped-bread-feast.pdf",
+          "bytes": 870102,
+          "sha256": "83f04ed5b3bf39c7caf5f4531b031da068aec7dbdc44e717297f655ad330763d"
+        },
+        "webp": {
+          "path": "work/production/wave_496/exports/feast-turkey-shaped-bread-feast.webp",
+          "bytes": 1547016,
+          "sha256": "91715d167b830fbfa544bb0dbc04d4d1f5084bf16e06b55a563778003806cce6"
+        },
+        "thumb": {
+          "path": "work/production/wave_496/exports/feast-turkey-shaped-bread-feast-thumb.webp",
+          "bytes": 44284,
+          "sha256": "8db1eb3e9bde927dc9e088b1fb166dee843b7adce04cb699f43cd59503fd93f5"
+        }
+      },
+      "proofSha256": "599c93e55380ec30502f6ddc4525f0168748a96de1f26023be9aa9f1ef7d5d2e",
+      "pairMeanRgbDifference": 4.37467
+    },
+    {
+      "id": "feast-turkey-cranberry-sandwich-feast",
+      "title": "Open-Faced Turkey and Cranberry Sandwiches",
+      "alt": "Two open-faced turkey sandwiches with cranberry topping and lettuce share a wooden board with chips and gravy.",
+      "description": "Thick bread slices support overlapping roast slices and glossy red berries, while the curved paddle handle balances the chip pile.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_496/source/feast-turkey-cranberry-sandwich-feast.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "311a739b70db0e9aca613872214d78d487dda68d7d0a1dd2e81b8c65af52d5bc",
+      "inputSignature": "afd6d597dc202b41a75cdac59d704bb72ce634ca52a16c93f2238a9b1cfab7ee",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 701543,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 701543,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        259,
+        217,
+        1400,
+        859
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_496/exports/feast-turkey-cranberry-sandwich-feast.pdf",
+          "bytes": 701543,
+          "sha256": "1916c45b141e79cfde6aeeaf304b8ab24daadbe218d698724be72c64933c8297"
+        },
+        "webp": {
+          "path": "work/production/wave_496/exports/feast-turkey-cranberry-sandwich-feast.webp",
+          "bytes": 1315632,
+          "sha256": "7ea8732a11a548ca66ae051476093b57bfc4235735946f5312d9d7b5dd034a7a"
+        },
+        "thumb": {
+          "path": "work/production/wave_496/exports/feast-turkey-cranberry-sandwich-feast-thumb.webp",
+          "bytes": 35998,
+          "sha256": "af55b81ff13f6fb1d9a1a0bce72e1a3aea8b219e25d500cfb5d75b9737ab24d5"
+        }
+      },
+      "proofSha256": "22db0594021d60e05fdc9b974084991d15346bfb94ff0f720bfc99ebabf60ab7",
+      "pairMeanRgbDifference": 3.40586
+    },
+    {
+      "id": "feast-turkey-feast-garden-wreath",
+      "title": "Roast Turkey with a Ring of Harvest Sides",
+      "alt": "A roast turkey fills the center of a round platter ringed with corn, squash halves, rolls and herbs.",
+      "description": "The overhead arrangement forms a compact circular feast, with the golden bird framed by alternating yellow, orange and green sides.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_496/source/feast-turkey-feast-garden-wreath.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1271,
+      "height": 1238,
+      "pdfWidth": 1000,
+      "pdfHeight": 974,
+      "sourceType": "raster",
+      "sourceSha256": "bf63823accd9421b170036f252a4f59bdad9ae4387b1e02dd073fa861d45e0b7",
+      "inputSignature": "814936b4d08748c3c47a121d638ba51faaa5401bc4f66807bd5fb426722a6d18",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 882632,
+        "weightedCmykRmse": 0.841577
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1133843,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 882632,
+          "weightedCmykRmse": 0.841577
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        200,
+        192,
+        1066,
+        1049
+      ],
+      "image": {
+        "width": 1000,
+        "height": 974,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_496/exports/feast-turkey-feast-garden-wreath.pdf",
+          "bytes": 882632,
+          "sha256": "ad71d9c65ff89a2691ad560ec2904828eba31cf5dc7078ef80ecd9cd4f208ad3"
+        },
+        "webp": {
+          "path": "work/production/wave_496/exports/feast-turkey-feast-garden-wreath.webp",
+          "bytes": 1181966,
+          "sha256": "c9768e3dbc869ab519dc07e2f62994930fc80969303ed927393e22e8858412c3"
+        },
+        "thumb": {
+          "path": "work/production/wave_496/exports/feast-turkey-feast-garden-wreath-thumb.webp",
+          "bytes": 61826,
+          "sha256": "90b12f04416e5a32a130a00ba20d4d534020f5c3d6202c25991e78e0617b82b6"
+        }
+      },
+      "proofSha256": "1c7e9a527b02a679fd254be55c3894b2e5e11ae418855200f9ac97a18bca34c7",
+      "pairMeanRgbDifference": 3.83666
+    },
+    {
+      "id": "feast-turkey-dinner-place-setting",
+      "title": "Turkey Dinner on a Blue Scalloped Plate",
+      "alt": "Sliced roast turkey, mashed potatoes and green beans fill a blue scalloped plate beside cranberry sauce and a mustard napkin.",
+      "description": "Silver cutlery rests on the folded napkin, and gravy follows the curved row of turkey slices opposite the green beans.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_496/source/feast-turkey-dinner-place-setting.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "bdb908ea58b83351621a6d9837ecf8694c11dab63f694cb18d08760008a09627",
+      "inputSignature": "235ff2adf94c4be93342181e1fb1f28c1b780cd938b7a076c241c337866d14a1",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 961438,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 961438,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        149,
+        108,
+        1439,
+        913
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_496/exports/feast-turkey-dinner-place-setting.pdf",
+          "bytes": 961438,
+          "sha256": "3c3a733032b8b4506ae4946c237086b01d9d2aa89e9c165af3e6643945e20ebb"
+        },
+        "webp": {
+          "path": "work/production/wave_496/exports/feast-turkey-dinner-place-setting.webp",
+          "bytes": 1712326,
+          "sha256": "53fd504e08bc4f252e2953702c570f6ba574b7b4a37c76f07ff348b47d1b18ce"
+        },
+        "thumb": {
+          "path": "work/production/wave_496/exports/feast-turkey-dinner-place-setting-thumb.webp",
+          "bytes": 48656,
+          "sha256": "e10c740d6b11f37d2bb0791922a1149d192d88f3ad31a00e9f9a50b327f6ff3a"
+        }
+      },
+      "proofSha256": "08547d2d12232fb0974af26959a0e91a09717f2955fadbd339d30920fa0abf72",
+      "pairMeanRgbDifference": 6.32465
+    },
+    {
+      "id": "feast-long-buffet-bench",
+      "title": "Turkey Feast on a Wooden Buffet Bench",
+      "alt": "A wooden buffet bench displays roast turkey on a pedestal platter with salad, stuffing and a basket of rolls.",
+      "description": "A cream runner with small leafy motifs crosses the timber top, while two carved supports and their full feet remain visible below.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_496/source/feast-long-buffet-bench.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "9221dac19ccffb53607e6d7487a17b6edb3c60bc59f801b8bb53fe07311aff29",
+      "inputSignature": "472e8190738b0a5697231b43e4bfa6f3433ae21f11e8c78b3226406f51f5c004",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 662583,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 662583,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        199,
+        182,
+        1337,
+        901
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_496/exports/feast-long-buffet-bench.pdf",
+          "bytes": 662583,
+          "sha256": "c1133bfeabc73d5846fb88d33994940d6d781a0c00ed01537d2e8920ec021824"
+        },
+        "webp": {
+          "path": "work/production/wave_496/exports/feast-long-buffet-bench.webp",
+          "bytes": 1207270,
+          "sha256": "ffb1ecd7ccfab59c3e20b34a32f670b229356aaca64dca703b08914633cc878a"
+        },
+        "thumb": {
+          "path": "work/production/wave_496/exports/feast-long-buffet-bench-thumb.webp",
+          "bytes": 36684,
+          "sha256": "279445e67888f077b70cc7b5a2b04b58248a5cf656e135db232aba0a351ec032"
+        }
+      },
+      "proofSha256": "b278d7e36b76be48c016917eb18d9b6e45512f767d66c2dc3d41543bf1cdbbb0",
+      "pairMeanRgbDifference": 3.05396
+    },
+    {
+      "id": "feast-overhead-sharing-table",
+      "title": "Overhead Turkey Feast for Four",
+      "alt": "A central turkey platter is surrounded by four served plates, vegetable bowls, rolls and small glasses of orange juice.",
+      "description": "The circular meal arrangement pairs sliced turkey with potatoes, green beans and cranberry sauce, leaving clear gaps between the individual dishes.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_496/source/feast-overhead-sharing-table.png",
+      "printMaxEdgePx": 950,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1286,
+      "height": 1223,
+      "pdfWidth": 950,
+      "pdfHeight": 903,
+      "sourceType": "raster",
+      "sourceSha256": "956a230a77b8e0679952ae5c7c33cb9fae6a97a31c42706d59959eaeb66cda09",
+      "inputSignature": "00d3cfc79b1f2a053295d50bbcfda6025c9846d58bf9010ccd3581c3b41eb7df",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 48,
+        "losslessCmyk": false,
+        "bytes": 979172,
+        "weightedCmykRmse": 1.30328
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1479335,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1206530,
+          "weightedCmykRmse": 0.732655
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1143119,
+          "weightedCmykRmse": 0.866312
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 1051625,
+          "weightedCmykRmse": 1.041734
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 48,
+          "losslessCmyk": false,
+          "bytes": 979172,
+          "weightedCmykRmse": 1.30328
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        55,
+        95,
+        1232,
+        1158
+      ],
+      "image": {
+        "width": 950,
+        "height": 903,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_496/exports/feast-overhead-sharing-table.pdf",
+          "bytes": 979172,
+          "sha256": "7ad2626652a9aadd3fbfc97da8fc5fbafeadf60bc36322b058ebc3099a5da1c1"
+        },
+        "webp": {
+          "path": "work/production/wave_496/exports/feast-overhead-sharing-table.webp",
+          "bytes": 1619154,
+          "sha256": "4af376678b613ce0cd29291caf693dbe21cdcfe0fc6221cc527932fcce5087f2"
+        },
+        "thumb": {
+          "path": "work/production/wave_496/exports/feast-overhead-sharing-table-thumb.webp",
+          "bytes": 96478,
+          "sha256": "372d0916be8c1753e5f3b96237598ab56ef13e8c4f49a3d96ae9e8799a29001b"
+        }
+      },
+      "proofSha256": "c96d0a1a673f0af299ee264037b631822c14e614b52ecd09ea31fc2976ba738d",
+      "pairMeanRgbDifference": 6.7198
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T14:34:02.633708+00:00",
+  "screenReviewEvidence": "work/production/wave_496/native-proof-review.jpg",
+  "screenReviewEvidenceSha256": "4c5af769a794ab6e2c18a9fa309e5ac143215844443ad8555f9fe30c980162ae",
+  "screenReviewNotes": "All six actual CMYK PDF proofs inspected, including the 950-pixel print-scale overhead dinner. Complete utensils, platter edges, food arrangement and transparent composition preserved. Native lossless WebP unchanged. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T14:34:20.893Z"
+}

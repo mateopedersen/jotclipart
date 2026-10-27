@@ -1,0 +1,523 @@
+{
+  "wave": "wave_506",
+  "status": "AWAITING_CDN",
+  "actualExportedDrawings": 6,
+  "resumed": 1,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "blessings-blessings-floral-lantern",
+      "title": "Floral Blessings Lantern",
+      "alt": "A rose-gold lantern with an unlit candle carries a “BLESSINGS” tag beside peach roses and green foliage.",
+      "description": "The faceted glass body and full curved handle give the floral lantern a tall, complete gift-object silhouette.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_506/source/blessings-blessings-floral-lantern.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1247,
+      "height": 1261,
+      "pdfWidth": 989,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "27a24af42ef4ae03caaf7eb493b59f3e8b14eb649b2d82d93864eaa940612044",
+      "inputSignature": "44957488377477866a9d56e0e3cd29fdff25cc9d104291ffe3d9ed206346f8be",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 849400,
+        "weightedCmykRmse": 0.856585
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1069487,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 849400,
+          "weightedCmykRmse": 0.856585
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        210,
+        81,
+        1093,
+        1119
+      ],
+      "image": {
+        "width": 989,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_506/exports/blessings-blessings-floral-lantern.pdf",
+          "bytes": 849400,
+          "sha256": "22cd3a256e9f8b4d67668dd25dbb54ca11e8b6b1a470be988f24a920e94895f1"
+        },
+        "webp": {
+          "path": "work/production/wave_506/exports/blessings-blessings-floral-lantern.webp",
+          "bytes": 852838,
+          "sha256": "988f0f0ee80bc7155751661462a2a95486c0ae363baddebb915c922000515da7"
+        },
+        "thumb": {
+          "path": "work/production/wave_506/exports/blessings-blessings-floral-lantern-thumb.webp",
+          "bytes": 56458,
+          "sha256": "19105231b1fb4069afb78d4485f10bee071bcc714a981d67ad565ff4e251bbf0"
+        }
+      },
+      "proofSha256": "144366b9d87b3e0eaec12667552e6fe0968732a954f9b6097c055514826aa9dc",
+      "pairMeanRgbDifference": 3.18569
+    },
+    {
+      "id": "blessings-blessings-patchwork-quilt",
+      "title": "Blessings Patchwork Quilt Gift",
+      "alt": "A folded coral, navy and cream quilt is tied with a cotton ribbon reading “BLESSINGS.”",
+      "description": "Stitched hearts, a star, leaves and a small house make the individual fabric patches easy to distinguish.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_506/source/blessings-blessings-patchwork-quilt.png",
+      "printMaxEdgePx": 970,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 970,
+      "pdfHeight": 886,
+      "sourceType": "raster",
+      "sourceSha256": "aa044396631ec52e9d41ef209faa14ea383e735a3bc008159ce3ce0373e8431c",
+      "inputSignature": "b54ff3e6d39d920b2a18306912842a9642f6b48bb2c8b423e941f913b88b0fd1",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 48,
+        "losslessCmyk": false,
+        "bytes": 989958,
+        "weightedCmykRmse": 1.315118
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1471115,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1216010,
+          "weightedCmykRmse": 0.728943
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1154815,
+          "weightedCmykRmse": 0.869303
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 1061931,
+          "weightedCmykRmse": 1.057907
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 48,
+          "losslessCmyk": false,
+          "bytes": 989958,
+          "weightedCmykRmse": 1.315118
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        96,
+        168,
+        1223,
+        1083
+      ],
+      "image": {
+        "width": 970,
+        "height": 886,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_506/exports/blessings-blessings-patchwork-quilt.pdf",
+          "bytes": 989958,
+          "sha256": "c9961b2fb7e2053935e06dd7c7d8d84ff040150f7dd5eedde1c9bbfbdb750753"
+        },
+        "webp": {
+          "path": "work/production/wave_506/exports/blessings-blessings-patchwork-quilt.webp",
+          "bytes": 1608084,
+          "sha256": "e6069721db0ef4d958fe5ad4fd114a4a8d09bc7384ae87f36f15a088901aab06"
+        },
+        "thumb": {
+          "path": "work/production/wave_506/exports/blessings-blessings-patchwork-quilt-thumb.webp",
+          "bytes": 76700,
+          "sha256": "11fd56c92ee0a83d29e14fa70dd953169fb2c60e05c3d3e407e7e0302cae99d0"
+        }
+      },
+      "proofSha256": "08f9b7d021d6f19836a242fe6617037fef26759d081d44452ee495a257f80051",
+      "pairMeanRgbDifference": 2.98819
+    },
+    {
+      "id": "blessings-blessings-floral-envelope",
+      "title": "Sending Blessings Lavender Card",
+      "alt": "An open lilac envelope holds a cream “SENDING BLESSINGS” card with lavender stems and a purple butterfly.",
+      "description": "A tied natural-colored cord gathers the flower spray beside the gold-edged card and complete envelope flap.",
+      "color": "Purple",
+      "style": "Color",
+      "source": "work/production/wave_506/source/blessings-blessings-floral-envelope.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "6d67b85f32c9aceb23e07431bcd09e4812edbf8939b36f98fbb4d144b0d2f9f4",
+      "inputSignature": "89220d8b1b10fdc8be536a1cc2b483e20b0869b6a5ab6bcf4bc1138b8c7bbda9",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 941927,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 941927,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        192,
+        107,
+        1165,
+        1077
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_506/exports/blessings-blessings-floral-envelope.pdf",
+          "bytes": 941927,
+          "sha256": "ade74315655fecf5bcadf5c46c85bfc4db1507380d76ce868fdce287a69a95bc"
+        },
+        "webp": {
+          "path": "work/production/wave_506/exports/blessings-blessings-floral-envelope.webp",
+          "bytes": 1013054,
+          "sha256": "3966158470e7718e3214b8a17527095f54ff5c79e1c081ec11a0bfbcff555707"
+        },
+        "thumb": {
+          "path": "work/production/wave_506/exports/blessings-blessings-floral-envelope-thumb.webp",
+          "bytes": 44674,
+          "sha256": "76f121557d75036af870c836a578566db1cc3553c1a88067272f627dd9e15965"
+        }
+      },
+      "proofSha256": "269d6fc16678289cff3416e67c848abaa7bd9f4549e06d9902e2603209e6ab24",
+      "pairMeanRgbDifference": 4.18114
+    },
+    {
+      "id": "blessings-grow-blessings-planter",
+      "title": "Grow Blessings Seedling Planter",
+      "alt": "A green seedling grows in a terracotta pot beside a wooden “GROW BLESSINGS” marker, seed packet and trowel.",
+      "description": "Broad glossy leaves rise above dark soil, with the full silver tool and blank packet arranged along the pot’s base.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_506/source/blessings-grow-blessings-planter.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "0f56b1efbd2a4317c0ebd6ad21f58891f7a481117337b3431739a1972199e3f1",
+      "inputSignature": "9667b48c22f4d162449f666635995bd28264c19440e7416455fc76eb6aba6aea",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 944547,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 944547,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        162,
+        142,
+        1222,
+        1047
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_506/exports/blessings-grow-blessings-planter.pdf",
+          "bytes": 944547,
+          "sha256": "0cb83ff6369b4146d709b90cb46f4b8031b17f9f98a0c9b34cdbf3a47d88b107"
+        },
+        "webp": {
+          "path": "work/production/wave_506/exports/blessings-grow-blessings-planter.webp",
+          "bytes": 910156,
+          "sha256": "0dc27096fbf923663df05ed70caa9dbe67808cc43cbed611500706887acda500"
+        },
+        "thumb": {
+          "path": "work/production/wave_506/exports/blessings-grow-blessings-planter-thumb.webp",
+          "bytes": 49128,
+          "sha256": "ea37ff32b25d1b223a5691103ffe11720dd9204c7031482799fd5ec833f4c93b"
+        }
+      },
+      "proofSha256": "51bb3eebab6be57cb9618ffc26e5083a3052d72c2ccf6a67c827be6b85952a39",
+      "pairMeanRgbDifference": 4.06818
+    },
+    {
+      "id": "blessings-blessed-botanical-bookmark",
+      "title": "Blessed Floral Bookmark on a Book",
+      "alt": "An embroidered cream bookmark reading “BLESSED” lies diagonally across a closed burgundy book.",
+      "description": "Blue flowers and green leaves run along the bookmark beside its complete navy tassel and the book’s pale page edges.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_506/source/blessings-blessed-botanical-bookmark.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1311,
+      "height": 1200,
+      "pdfWidth": 1000,
+      "pdfHeight": 915,
+      "sourceType": "raster",
+      "sourceSha256": "728ae5833abdb8b91ea636ea975c506a7bf4a1b52abc4d8aa7a36221806d188e",
+      "inputSignature": "9785b5dda1cd274f7b64e8ce02b1c059ebf92351be31d1606f140ac05bf8ce63",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 838681,
+        "weightedCmykRmse": 0.845589
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1072006,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 838681,
+          "weightedCmykRmse": 0.845589
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        94,
+        168,
+        1221,
+        1037
+      ],
+      "image": {
+        "width": 1000,
+        "height": 915,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_506/exports/blessings-blessed-botanical-bookmark.pdf",
+          "bytes": 838681,
+          "sha256": "929c4d94fd4b0ffce90dc818a4d5150aebeb6fffd2a71d92098f7729c4a27219"
+        },
+        "webp": {
+          "path": "work/production/wave_506/exports/blessings-blessed-botanical-bookmark.webp",
+          "bytes": 1079114,
+          "sha256": "ebc52a8fdf48f534bc6a2f121207e16fa6a3c99233964c439587bfc560a2361f"
+        },
+        "thumb": {
+          "path": "work/production/wave_506/exports/blessings-blessed-botanical-bookmark-thumb.webp",
+          "bytes": 46622,
+          "sha256": "8bd89b56de504a6685fd34a9937dd252fdff92a276f13876d14bd1746a6a2a19"
+        }
+      },
+      "proofSha256": "fb0b34a89758d04ee27588cc6ab3f5bf4e84672df0cdc03c71f2ea5828cad440",
+      "pairMeanRgbDifference": 4.29001
+    },
+    {
+      "id": "blessings-blessings-star-mascot",
+      "title": "Many Blessings Star Character",
+      "alt": "A smiling yellow cartoon star holds a cream “MANY BLESSINGS” card while wearing a purple bow tie and sneakers.",
+      "description": "Freckled cheeks, white gloves and striped socks give the full five-pointed character a playful greeting-card pose.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_506/source/blessings-blessings-star-mascot.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1294,
+      "height": 1216,
+      "pdfWidth": 1000,
+      "pdfHeight": 940,
+      "sourceType": "raster",
+      "sourceSha256": "8e5ef0c3a9d57d35d7825173f0de24f015c22b6fd4def05a8d740ef1f27a900d",
+      "inputSignature": "9e682beadfa04f911a885562581dc65dea2d0cb643b6a09d52f293692fafeba0",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 588857,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 588857,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        247,
+        95,
+        1047,
+        1121
+      ],
+      "image": {
+        "width": 1000,
+        "height": 940,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_506/exports/blessings-blessings-star-mascot.pdf",
+          "bytes": 588857,
+          "sha256": "8f1e5017af61ff8e7e94cd6ece26e0d6be98b12e6d85274c2a098efffcb6a1a6"
+        },
+        "webp": {
+          "path": "work/production/wave_506/exports/blessings-blessings-star-mascot.webp",
+          "bytes": 558236,
+          "sha256": "f5aa70c3f281aac32d2f8f932549e097a06c49c78523706efa69178d55e006b9"
+        },
+        "thumb": {
+          "path": "work/production/wave_506/exports/blessings-blessings-star-mascot-thumb.webp",
+          "bytes": 36002,
+          "sha256": "10b969b97f9bdfcce020f27b668e09d191b1d2bceb38d03506931af96558f1d0"
+        }
+      },
+      "proofSha256": "fb163c5a8f3028b9b3935e67f0b0a03e162c3dc4881c2df698d6de68c6e28b22",
+      "pairMeanRgbDifference": 3.55125
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T15:55:57.708473+00:00",
+  "screenReviewEvidence": "work/production/wave_506/native-proof-review.jpg",
+  "screenReviewEvidenceSha256": "ec0c9d0dc432f45fddbfe199c9a46902ad18ba8b8c8b95322b406a0a8a20f9b2",
+  "screenReviewNotes": "All actual CMYK PDF proofs viewed, including final 970-pixel print-scale quilt. Readable lettering, intact fabric, flower and character details, complete margins. Native WebP pixels unchanged; physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T15:56:01.071Z"
+}

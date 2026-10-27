@@ -1,0 +1,77 @@
+{
+  "wave": "wave_471",
+  "topic": "gingerbread",
+  "method": "builtin-image-generation",
+  "research": "data/research/gingerbread-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "gingerbread-gingerbread-train",
+      "title": "Gingerbread Train Carrying Candy",
+      "alt": "Gingerbread locomotive with a teal cab roof and peppermint wheels pulling a small wagon filled with striped candy sticks.",
+      "description": "White icing seams and red-and-green candies trace the engine and the fully connected sweet-filled wagon.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_471/source/gingerbread-gingerbread-train.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-gingerbread-camper",
+      "title": "Gingerbread Camper Trailer",
+      "alt": "Rounded gingerbread camper with two peppermint wheels, striped window awnings and a brown arched door decorated with a wreath.",
+      "description": "White icing curls and candy berries frame the amber windows above a small front step and exposed tow hitch.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_471/source/gingerbread-gingerbread-camper.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-gingerbread-carousel",
+      "title": "Gingerbread Animal Carousel",
+      "alt": "Gingerbread carousel with a reindeer, horse and bear beneath a red-and-green candy canopy topped by a gold star.",
+      "description": "Peppermint trim and white icing scrolls decorate the round base around the three different suspended animal cookies.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_471/source/gingerbread-gingerbread-carousel.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-gingerbread-teapot",
+      "title": "Floral Gingerbread Teapot",
+      "alt": "Round gingerbread teapot decorated with pink floral icing, white scrolls and a scalloped lid topped by a small cookie knob.",
+      "description": "The broad open handle and upward-curving spout frame the raised flower and green leaves on the side.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_471/source/gingerbread-gingerbread-teapot.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-heart-gift-box",
+      "title": "Gingerbread Cookies in a Heart Gift Box",
+      "alt": "Open heart-shaped gift box holding four different smiling gingerbread cookies, with a ribboned lid resting behind it.",
+      "description": "The star, tree, heart and round character cookies sit in individual paper liners inside the cream-and-red box.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_471/source/gingerbread-heart-gift-box.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-icing-tools",
+      "title": "Icing a Gingerbread Star",
+      "alt": "Star-shaped gingerbread cookie edged with white icing beside a piping bag and two bowls of red and green frosting.",
+      "description": "The metal piping tip touches the cookie border, with the colored frosting bowls placed above the star.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_471/source/gingerbread-icing-tools.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

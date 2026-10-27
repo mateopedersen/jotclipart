@@ -1,0 +1,77 @@
+{
+  "wave": "wave_449",
+  "topic": "reindeer",
+  "method": "builtin-image-generation",
+  "research": "data/research/reindeer-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "reindeer-book-nook",
+      "title": "Reindeer Reading on a Red Cushion",
+      "alt": "Violet-eyed cartoon reindeer seated on a red cushion, with its forehooves resting on an open blank green-covered book.",
+      "description": "The little reindeer tilts its round face above two cream pages. A gold-edged cushion, short antler crown and forward-folded rear hooves create a compact reading scene.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_449/source/reindeer-book-nook.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-knitted-earmuff-listener",
+      "title": "Reindeer Listening in Red Earmuffs",
+      "alt": "Brown cartoon reindeer standing in red knitted earmuffs and a yellow scarf tied in a bow.",
+      "description": "The reindeer turns its face slightly upward above the bow-tied scarf. Slim legs, small white back markings and a short branched antler crown distinguish the listening pose.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_449/source/reindeer-knitted-earmuff-listener.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-snowflake-butterfly-pose",
+      "title": "Reindeer Watching a Snowflake",
+      "alt": "Seated cartoon reindeer gazing up at a large blue snowflake with both forehooves lifted beside its cream chest.",
+      "description": "A single detailed snowflake floats just above the dark nose. Wide antlers, teal eyes and rounded folded legs make the surprised upward-looking pose easy to recognize.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_449/source/reindeer-snowflake-butterfly-pose.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-ornament-painter",
+      "title": "Reindeer Painting a Gold Star Ornament",
+      "alt": "Curly-forelocked cartoon reindeer painting a gold star on a green bauble supported by a small wooden cradle.",
+      "description": "A short brush touches the star while the other forehoof steadies the ornament. The gold-capped bauble, red paint pot and small supporting cradle form a clear holiday craft scene.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_449/source/reindeer-ornament-painter.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-carrot-basket",
+      "title": "Reindeer Looking into a Carrot Basket",
+      "alt": "Small brown cartoon reindeer in a green gingham neck bow lowering its nose toward a wicker basket of carrots.",
+      "description": "The animal leans over the basket's arched handle while all four hooves remain visible. Pale cheeks, upright ears and small white back markings distinguish the curious figure.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_449/source/reindeer-carrot-basket.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-ribbon-tail-play",
+      "title": "Reindeer Watching an Unrolling Ribbon",
+      "alt": "Russet cartoon reindeer turning its head back toward a red ribbon unrolling from a spool beside its rear hoof.",
+      "description": "The curved body and sideways glance lead toward the loose ribbon. Cream cheeks, a short tail and uneven branching antlers distinguish the playful standing figure.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_449/source/reindeer-ribbon-tail-play.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

@@ -135,7 +135,7 @@ try {
           i.src = img.getAttribute('href');
         }),
     );
-    await page.locator('[data-work-mode=edit]').click();
+    await page.locator('button[data-work-mode=edit]').click();
     await page.locator('[data-panel=transform]').click();
     await commitInput('[data-prop=scaleX]', 70);
     await commitInput('[data-prop=scaleY]', 70);
@@ -179,9 +179,11 @@ try {
     await page.locator('[data-action=crop]').click();
     await page.locator('[data-panel=background]').click();
     await page.locator('[data-bg="#edf1e7"]').click();
-    const projectPending = page.waitForEvent('download');
-    await page.locator('[data-action=save]').click();
-    const project = await projectPending;
+    await page.locator('.wb-file-menu summary').click();
+    const [project] = await Promise.all([
+      page.waitForEvent('download', { timeout: 60000 }),
+      page.locator('.wb-file-menu [data-action=save]').click(),
+    ]);
     await project.saveAs(resolve(out, `${a.id}-project.json`));
     const data = JSON.parse(readFileSync(resolve(out, `${a.id}-project.json`)));
     assert.equal(data.layers.filter((l) => l.kind === 'raster').length, imageCount);

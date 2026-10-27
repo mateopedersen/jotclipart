@@ -1,0 +1,494 @@
+{
+  "wave": "wave_470",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "gingerbread-cookie-stocking",
+      "title": "Gingerbread Stocking Cookie",
+      "alt": "Stocking-shaped gingerbread cookie with a cream icing cuff, red lattice piping and green peppermint candies.",
+      "description": "A small wrapped-candy decoration sits below the cuff, with white icing pearls defining the toe and heel.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_470/source/gingerbread-cookie-stocking.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1199,
+      "height": 1312,
+      "pdfWidth": 914,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "ee6cc1a7005b3619649a518045415bf2f205a237aa8885d39bf9d5306cc2ad25",
+      "inputSignature": "aaf23c2644e0f03ffa12697371c8cf2afed4543ad2e4a79244c0bff0cea3704b",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 674399,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 674399,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        201,
+        196,
+        1050,
+        1131
+      ],
+      "image": {
+        "width": 914,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_470/exports/gingerbread-cookie-stocking.pdf",
+          "bytes": 674399,
+          "sha256": "04e7e04e26eec0515a2d91db60d5e3e22f57dc072e6bce78b2e21ae02dd9be39"
+        },
+        "webp": {
+          "path": "work/production/wave_470/exports/gingerbread-cookie-stocking.webp",
+          "bytes": 684408,
+          "sha256": "a497e9f5f62976b4957750fcc4ad2ff2280c6246b59c26f514a6a37662238f28"
+        },
+        "thumb": {
+          "path": "work/production/wave_470/exports/gingerbread-cookie-stocking-thumb.webp",
+          "bytes": 35506,
+          "sha256": "c9c71ed6f34cb915bf19aeccf15b9c0a4dbe243c4a9b8ef08d3f5a4c30a75068"
+        }
+      },
+      "proofSha256": "2dc22326423d42291c87237ba0e73a104f2faeca5f49db9828397671683a8b47",
+      "pairMeanRgbDifference": 3.33271
+    },
+    {
+      "id": "gingerbread-cookie-rocking-horse",
+      "title": "Gingerbread Rocking Horse Cookie",
+      "alt": "Rocking-horse gingerbread cookie with a turquoise icing saddle, white mane and tail, and a curved decorated rocker.",
+      "description": "The raised front leg and flowing piped mane give the horse a lively profile above the full rocker.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_470/source/gingerbread-cookie-rocking-horse.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "8181e3c5086525e9905f66ec90926e1f239ba1d6b512b3c6a367e4508e3306e0",
+      "inputSignature": "7f835dc233a66f9c6c0a7fce821078f68268631fd1c3e89d15030dd9a73cbd47",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 978159,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 978159,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        159,
+        75,
+        1217,
+        1134
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_470/exports/gingerbread-cookie-rocking-horse.pdf",
+          "bytes": 978159,
+          "sha256": "83d676c277d7b97b13f3d6e767d548faf02845593b502c8ef57014731bff588e"
+        },
+        "webp": {
+          "path": "work/production/wave_470/exports/gingerbread-cookie-rocking-horse.webp",
+          "bytes": 871032,
+          "sha256": "280b25fbd62d023f6a12b31a10802b4c3b4c865de3793b1bb8bf1a11ce29aa17"
+        },
+        "thumb": {
+          "path": "work/production/wave_470/exports/gingerbread-cookie-rocking-horse-thumb.webp",
+          "bytes": 50834,
+          "sha256": "57e040a2aed49111f078ab02c13c59ba17ed1e4bc8dc7ae92559361cae696b13"
+        }
+      },
+      "proofSha256": "bd1d8e133373bf79b33e7ea5e956bcdc14e2622dfc51c5a20acbf18b698d7a68",
+      "pairMeanRgbDifference": 4.01628
+    },
+    {
+      "id": "gingerbread-cottage-round-tower",
+      "title": "Gingerbread Cottage with a Round Tower",
+      "alt": "Gingerbread cottage with a tall round tower, pink scalloped candy roofs, green arched door and glowing amber sugar windows.",
+      "description": "White icing curls and red candy dots decorate the walls above a line of colored gumdrops.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_470/source/gingerbread-cottage-round-tower.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1333,
+      "height": 1180,
+      "pdfWidth": 1000,
+      "pdfHeight": 885,
+      "sourceType": "raster",
+      "sourceSha256": "8912eea6ab770e345ba1c75bb20651c3bc46b3706931b29b63e43a33e4b5fb36",
+      "inputSignature": "a7915e05669a7a6f4d05a7fc143a03a42aab0d8e605ef7668be3abbd0fa1992b",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 743686,
+        "weightedCmykRmse": 0.81551
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1011530,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 743686,
+          "weightedCmykRmse": 0.81551
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        144,
+        59,
+        1220,
+        1105
+      ],
+      "image": {
+        "width": 1000,
+        "height": 885,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_470/exports/gingerbread-cottage-round-tower.pdf",
+          "bytes": 743686,
+          "sha256": "6894755308429064de3f907eac7473f6e749f3b85f2366e39bf11e8e6fa65d9b"
+        },
+        "webp": {
+          "path": "work/production/wave_470/exports/gingerbread-cottage-round-tower.webp",
+          "bytes": 1115426,
+          "sha256": "2018366dd35d8a08fbbcee91cd2f646ab9635b8a07050c4f44ec7b1c59a2c6ef"
+        },
+        "thumb": {
+          "path": "work/production/wave_470/exports/gingerbread-cottage-round-tower-thumb.webp",
+          "bytes": 55580,
+          "sha256": "b4a76db29f627787ec6990f3dde509e57d9149664d30894eb96317e390b60712"
+        }
+      },
+      "proofSha256": "32599e217c0a7cb31a0e644b66acf70db9db41f1a8d3aa7413b8fd8e055664c2",
+      "pairMeanRgbDifference": 4.91017
+    },
+    {
+      "id": "gingerbread-a-frame-chalet",
+      "title": "Gingerbread Chalet with Almond Roof",
+      "alt": "Steep-roofed gingerbread chalet with almond-like roof tiles, amber windows and a teal door bearing a tiny wreath.",
+      "description": "Two striped candy posts flank the front beneath thick white roof icing and a star above the doorway.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_470/source/gingerbread-a-frame-chalet.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1287,
+      "height": 1222,
+      "pdfWidth": 1000,
+      "pdfHeight": 949,
+      "sourceType": "raster",
+      "sourceSha256": "83873bc8718ec421d23bb58a8ee1dd231dc77a5b67e083f79517f8ecd5337a37",
+      "inputSignature": "7a3bc7dcd08f907c9101b2318413ae317894adc546385e2a98e483d797f1ee2d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 753645,
+        "weightedCmykRmse": 0.823672
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1027832,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 753645,
+          "weightedCmykRmse": 0.823672
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        139,
+        125,
+        1148,
+        1107
+      ],
+      "image": {
+        "width": 1000,
+        "height": 949,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_470/exports/gingerbread-a-frame-chalet.pdf",
+          "bytes": 753645,
+          "sha256": "0cad966b44ab385bcf8a8700d433c86fafac3fbd82502babf7ac4bcd0137447a"
+        },
+        "webp": {
+          "path": "work/production/wave_470/exports/gingerbread-a-frame-chalet.webp",
+          "bytes": 1024526,
+          "sha256": "caf103fa383d8272202f9f55b9211ab843c76d5588c1bc0b8960f4b837226eb8"
+        },
+        "thumb": {
+          "path": "work/production/wave_470/exports/gingerbread-a-frame-chalet-thumb.webp",
+          "bytes": 55928,
+          "sha256": "cf3369a2062e7b466de279688f2b593274b7334f8930697c603992e967bcd0e4"
+        }
+      },
+      "proofSha256": "d0aafc4399f179322d35bfab843067c583d0f94d54145ee754ff9e8016e57c3f",
+      "pairMeanRgbDifference": 5.60802
+    },
+    {
+      "id": "gingerbread-gingerbread-windmill",
+      "title": "Gingerbread Windmill with Wafer Sails",
+      "alt": "Gingerbread windmill with four lattice-patterned wafer sails, a peppermint center and green arched door.",
+      "description": "White icing curls wrap the tapered tower beneath red and green candy accents on the sails.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_470/source/gingerbread-gingerbread-windmill.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1145,
+      "height": 1374,
+      "pdfWidth": 833,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "c2d56ec50d85573ef853a625b14d0101a4d9fc118b0d8db017b1316c7ad5095b",
+      "inputSignature": "2678f6481f166ab28c4cf3945c37a5497fa1a2e641dd0891f83f93fccb3ae6fd",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 939802,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 939802,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        132,
+        54,
+        1008,
+        1317
+      ],
+      "image": {
+        "width": 833,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_470/exports/gingerbread-gingerbread-windmill.pdf",
+          "bytes": 939802,
+          "sha256": "91b9d61cae67f5fbfaaf95c60bcd27c35c1bd0b6b981d960a92e1184ea108a71"
+        },
+        "webp": {
+          "path": "work/production/wave_470/exports/gingerbread-gingerbread-windmill.webp",
+          "bytes": 990172,
+          "sha256": "03102a2e7523ef13df4f152dc67d62f743f4a6c8ee90e7f2a778b634d3dc9a83"
+        },
+        "thumb": {
+          "path": "work/production/wave_470/exports/gingerbread-gingerbread-windmill-thumb.webp",
+          "bytes": 53476,
+          "sha256": "be6c7a01165fe0f718052cb82d2bcabad8a8ed2794346dc019aefba80b69fd47"
+        }
+      },
+      "proofSha256": "0f503cce1d99cc03bc2fc713f25450cbc8c4d655162b0c36fb98ffefce0b991c",
+      "pairMeanRgbDifference": 5.12099
+    },
+    {
+      "id": "gingerbread-gingerbread-lighthouse",
+      "title": "Gingerbread Lighthouse with Candy Stripes",
+      "alt": "Tall gingerbread lighthouse with red icing bands, amber lantern windows and a striped peppermint dome.",
+      "description": "Chocolate railing surrounds the lantern room above the tapered tower and round iced cookie base.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_470/source/gingerbread-gingerbread-lighthouse.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "gingerbread",
+      "width": 1024,
+      "height": 1536,
+      "pdfWidth": 667,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "b60871793e2c89c7f11f5ee8b9cf6324b810dbbc1afee903e1de77795dae386d",
+      "inputSignature": "359905f211535864ca8e5d061a3b97e01e0cd79d3de31f38045e25e74cddf398",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 540681,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 540681,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        225,
+        77,
+        801,
+        1447
+      ],
+      "image": {
+        "width": 667,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_470/exports/gingerbread-gingerbread-lighthouse.pdf",
+          "bytes": 540681,
+          "sha256": "5365568885ed884a4254f1a31e95482748d79bbb39eedc9ed2831ef1d8be5496"
+        },
+        "webp": {
+          "path": "work/production/wave_470/exports/gingerbread-gingerbread-lighthouse.webp",
+          "bytes": 1126738,
+          "sha256": "6bb704a37f0fabb259a82c4b58c23cb4fb421cba2238293bad48f6d60167955a"
+        },
+        "thumb": {
+          "path": "work/production/wave_470/exports/gingerbread-gingerbread-lighthouse-thumb.webp",
+          "bytes": 30728,
+          "sha256": "83e60b0cf853f9fc6efad371070091ff8d14ad2e0c5e64780426d50bcc5aa669"
+        }
+      },
+      "proofSha256": "49518be7c38c1816e54d58bba2e39e8bb024627067e57f650820971f276cc93f",
+      "pairMeanRgbDifference": 4.3935
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T10:22:40.476824+00:00",
+  "screenReviewEvidence": "work/production/wave_470/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T10:23:26.514Z"
+}

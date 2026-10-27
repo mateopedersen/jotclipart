@@ -1,0 +1,173 @@
+{
+  "wave": "wave_464",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 2,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "snowman-outline-snowman-frame",
+      "title": "Snowman with an Oval Frame Outline",
+      "alt": "Black-and-white snowman in a holly-decorated top hat leaning around a large blank oval frame.",
+      "description": "The smiling face, fringed scarf and twig hands sit along the frame's left edge, leaving the center open.",
+      "color": "Black and White",
+      "style": "Outline",
+      "source": "work/production/wave_464/source/snowman-outline-snowman-frame.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "dd8388fd2be102b5bd78e8028ea750fa49c005c6f0b79dc0bc44d6e83556a000",
+      "inputSignature": "00d3078fd190e18a2da19ca37ce7514beb47ba37e1d0dcbb232a7785049301ad",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 181089,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 181089,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        132,
+        25,
+        1404,
+        991
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_464/exports/snowman-outline-snowman-frame.pdf",
+          "bytes": 181089,
+          "sha256": "cbc3142756ef382d7c58e0f34628931c44d664a502823fabc3159836e441adcd"
+        },
+        "webp": {
+          "path": "work/production/wave_464/exports/snowman-outline-snowman-frame.webp",
+          "bytes": 714308,
+          "sha256": "f46066e4a92b56233a3a377c2934f2451639f6a107e9bebce846a8675363bc9e"
+        },
+        "thumb": {
+          "path": "work/production/wave_464/exports/snowman-outline-snowman-frame-thumb.webp",
+          "bytes": 23580,
+          "sha256": "57d2f64768810d85907e1e90e0e5420a8a92a3d648140e58e0f1cec525f0c467"
+        }
+      },
+      "proofSha256": "1f3f82f858a1c34867434007c62ecd03bd5584b940f9c437a45ce63ae84a66c8",
+      "pairMeanRgbDifference": 4.81559
+    },
+    {
+      "id": "snowman-happy-winter-lettering",
+      "title": "Happy Winter Lettering with a Snowman",
+      "alt": "Snow-capped Happy Winter lettering in red and teal, with a top-hatted snowman forming the letter I and blue snowflakes at the sides.",
+      "description": "The two stacked words create a compact greeting, with a gold scarf adding a warm accent to the snowman.",
+      "color": "Teal",
+      "style": "Color",
+      "source": "work/production/wave_464/source/snowman-happy-winter-lettering.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "snowman",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "a3dd0bc4b686c355d6e5ce726346cc757244c851b127b496dfa937f0dc00dcff",
+      "inputSignature": "bc04f202eca01ba9e907679b988485313a5a58726f6dcacdae7c5f523f1ac96a",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 787124,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 787124,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        156,
+        166,
+        1398,
+        863
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_464/exports/snowman-happy-winter-lettering.pdf",
+          "bytes": 787124,
+          "sha256": "97055b91b1723a2d699045c7159fe9d16aa500eb6dc1e11dd7e8830756892f38"
+        },
+        "webp": {
+          "path": "work/production/wave_464/exports/snowman-happy-winter-lettering.webp",
+          "bytes": 1154552,
+          "sha256": "d6096b26c8e28c279277dd00e429cca232c214ad82b049dc13ff543bed99df87"
+        },
+        "thumb": {
+          "path": "work/production/wave_464/exports/snowman-happy-winter-lettering-thumb.webp",
+          "bytes": 48852,
+          "sha256": "bed4f1a30adae455ea98088ce72f2b785bedb9810eadecfeac64ff645dc0fc13"
+        }
+      },
+      "proofSha256": "a305492a10602ccc3628fa3208dff5c7d07d56603ac92aa460225d2fb1899872",
+      "pairMeanRgbDifference": 5.31412
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T09:22:11.472677+00:00",
+  "screenReviewEvidence": "work/production/wave_464/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T09:22:14.570Z"
+}

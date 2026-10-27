@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "topics": {
+    "2027": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "a9ab4a4c3d3d670debf2c68e32e44c7202e23f75a6b435d5707560a8afdf99e5",
+      "intro": "Find 2027 lettering for New Year greetings, all twelve months, graduation and personal goals. Choose embossed numerals, formal Class of 2027 graphics, cheerful character stickers, business motifs or separate black-and-white coloring designs.",
+      "checkedAt": "2026-10-27T15:46:42.193Z",
+      "evidence": [
+        {
+          "id": "2027-month-march",
+          "imageSha256": "933b9b481c1b909affe81ead426e6c8f87f1a42cc79ae6c6cba8287565e9e652"
+        },
+        {
+          "id": "2027-business-desk",
+          "imageSha256": "0346f89bffabcfa93af9bad2e4a5cb695978a5115c2c869557646ed77ad1846e"
+        },
+        {
+          "id": "2027-class-of-university-emblem",
+          "imageSha256": "aafdfcd5c96c0fa5f09460d6dd4d109c603f02b6aa28e81f6cbc3bf92f4d0617"
+        },
+        {
+          "id": "2027-outline-happy-year",
+          "imageSha256": "57e0d860f4c22c29c709ab47f28cb1f760e7de8f61e06f1589da0f41afd649dc"
+        }
+      ]
+    }
+  }
+}

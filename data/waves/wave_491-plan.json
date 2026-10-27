@@ -1,0 +1,77 @@
+{
+  "wave": "wave_491",
+  "topic": "feast",
+  "method": "builtin-image-generation",
+  "research": "data/research/feast-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "feast-brunch-waffle-board",
+      "title": "Waffle Brunch on a Heart-Shaped Board",
+      "alt": "Three waffle quarters topped with berries sit on a heart-shaped wooden board beside a syrup jug and a plate of scrambled eggs.",
+      "description": "A small berry bowl fills the board\u2019s upper corner, while the separate egg plate balances its pointed lower edge.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_491/source/feast-brunch-waffle-board.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-barbecue-picnic-tray",
+      "title": "Barbecue Slider Sharing Tray",
+      "alt": "Two barbecue sliders share a red enamel tray with grilled corn, baked beans and shredded slaw.",
+      "description": "Shiny round buns sit over shredded barbecue filling and pickle slices, with the side dishes arranged behind them on brown paper.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_491/source/feast-barbecue-picnic-tray.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-seafood-boil-platter",
+      "title": "Crab and Shrimp Feast Platter",
+      "alt": "A red crab and curled shrimp fill a blue oval platter with corn, baby potatoes and lemon wedges.",
+      "description": "The large crab anchors the center, with its claws visible above the bright corn and mixed whole and halved potatoes.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_491/source/feast-seafood-boil-platter.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-garden-flatbread-spread",
+      "title": "Herb Flatbread with Salad and Hummus",
+      "alt": "Herb-covered flatbread strips sit on a wooden paddle beside a chopped salad bowl and a patterned bowl of hummus.",
+      "description": "The long handled board leads diagonally between the two blue-rimmed bowls, keeping the golden bread and fresh vegetables distinct.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_491/source/feast-garden-flatbread-spread.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-mezze-sharing-tray",
+      "title": "Hummus and Vine-Leaf Sharing Tray",
+      "alt": "A round brass tray holds hummus, pita triangles, olives, cucumber slices and stuffed vine-leaf rolls.",
+      "description": "Small inset dishes surround the central hummus bowl, leaving the engraved gold rim visible around the meal.",
+      "color": "Gold",
+      "style": "Color",
+      "source": "work/production/wave_491/source/feast-mezze-sharing-tray.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "feast-baked-lasagna-supper",
+      "title": "Lasagna Supper with Bread and Salad",
+      "alt": "A lifted lasagna portion rises from a blue baking dish beside garlic bread and a bowl of green salad.",
+      "description": "Long cheese strands connect the square serving to the pan, while the complete wooden-handled spatula extends from its right side.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_491/source/feast-baked-lasagna-supper.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

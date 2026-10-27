@@ -1,0 +1,77 @@
+{
+  "wave": "wave_448",
+  "topic": "reindeer",
+  "method": "builtin-image-generation",
+  "research": "data/research/reindeer-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "reindeer-present-sled-pull",
+      "title": "Reindeer Pulling a Gift Sled",
+      "alt": "Dark-brown cartoon reindeer in a green chest harness pulling a small wooden sled loaded with red and green presents.",
+      "description": "Two green traces connect the harness to the sled's curved runners. A thick cream neck ruff, long face and wide branching antlers distinguish the walking animal.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_448/source/reindeer-present-sled-pull.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-cocoa-mug-cuddle",
+      "title": "Reindeer Holding a Cocoa Mug",
+      "alt": "Round golden-brown cartoon reindeer seated with a red cocoa mug between its forehooves and a blue neckerchief.",
+      "description": "Cream marshmallows rise above the snowflake-patterned mug. Large green eyes, short antler forks and two forward-facing rear hooves give the little animal a cozy seated silhouette.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_448/source/reindeer-cocoa-mug-cuddle.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-ice-skating-solo",
+      "title": "Reindeer Balancing on Ice Skates",
+      "alt": "Blue-eyed cartoon reindeer in a green knitted beanie balancing on two silver-bladed skates with forelegs stretched outward.",
+      "description": "One rear leg lifts behind the reindeer while the other skate supports the pose. A cream chest and wide antler crown contrast with its slim cinnamon-brown body.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_448/source/reindeer-ice-skating-solo.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-holiday-letter-carrier",
+      "title": "Reindeer Delivering a Christmas Letter",
+      "alt": "Brown cartoon reindeer walking with a cream envelope held in its mouth and a red mail satchel over its shoulder.",
+      "description": "A buckled strap crosses the reindeer's cream chest above the forward-stepping hoof. The blank envelope and red satchel create a simple festive delivery scene.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_448/source/reindeer-holiday-letter-carrier.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-lantern-nose-guide",
+      "title": "Reindeer Looking at a Lantern",
+      "alt": "Small brown cartoon reindeer in a burgundy knitted neck warmer looking down at a glowing brass lantern beside its front hooves.",
+      "description": "The reindeer tilts its round face toward the lantern's warm light. Short antlers, a pale chest and a few small white back markings distinguish the standing animal.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_448/source/reindeer-lantern-nose-guide.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-bauble-antler-dance",
+      "title": "Reindeer with Hanging Christmas Baubles",
+      "alt": "Green-eyed brown cartoon reindeer lifting one rear hoof, with three red and gold baubles hanging from its antlers.",
+      "description": "The ornaments hang from separate antler branches above a slim, side-stepping body. A long cream throat patch and raised short tail add to the flowing silhouette.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_448/source/reindeer-bauble-antler-dance.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "wave": "wave_508",
+  "status": "AWAITING_CDN",
+  "actualExportedDrawings": 2,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "blessings-outline-blessings-balloon",
+      "title": "Blessings Hot-Air Balloon Coloring Page",
+      "alt": "Two cheerful cartoon children wave from a woven hot-air-balloon basket beneath a “BLESSINGS” banner in black outline.",
+      "description": "Complete ropes, scalloped swags and the rounded balloon envelope connect the two distinct children to the basket.",
+      "color": "Black",
+      "style": "Outline",
+      "source": "work/production/wave_508/source/blessings-outline-blessings-balloon.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "blessings",
+      "width": 1155,
+      "height": 1362,
+      "pdfWidth": 848,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "6f2e6fbdf687ea8288759319005e2f52a62f5901df56f3a11bcb8e4d580e072e",
+      "inputSignature": "b1e566863567f66a8afe339471ed66545a886d7e62957fc049558e50583ebea1",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 312528,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 312528,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        106,
+        50,
+        1051,
+        1311
+      ],
+      "image": {
+        "width": 848,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_508/exports/blessings-outline-blessings-balloon.pdf",
+          "bytes": 312528,
+          "sha256": "594ba02dbe144171ad22a16d9dc19d898a78d32e4006426c1f68a4b976f14a7f"
+        },
+        "webp": {
+          "path": "work/production/wave_508/exports/blessings-outline-blessings-balloon.webp",
+          "bytes": 707390,
+          "sha256": "6782b58ce82946e1e8b7b6a5fa105e83fc8dae5b07e2a7a2bc18b8fb60cc6910"
+        },
+        "thumb": {
+          "path": "work/production/wave_508/exports/blessings-outline-blessings-balloon-thumb.webp",
+          "bytes": 50900,
+          "sha256": "eec16f5c032be6df557902e6154b6a1f9a1fa2c76abd11af55130fe333a13b32"
+        }
+      },
+      "proofSha256": "b51a9ccca72ac6f5ab4c80431f0f8c90bb1af34d052242f1bf960afad14be9a0",
+      "pairMeanRgbDifference": 8.81543
+    },
+    {
+      "id": "blessings-outline-blessings-picnic-letter",
+      "title": "Hedgehog Writing a Blessings Card Coloring Page",
+      "alt": "A smiling cartoon hedgehog writes “BLESSINGS” on a card at a mushroom-shaped desk in black outline.",
+      "description": "A feather pen, small ink bottle and flower pot complete the whimsical seated character scene.",
+      "color": "Black",
+      "style": "Outline",
+      "source": "work/production/wave_508/source/blessings-outline-blessings-picnic-letter.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "blessings",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "40c233cc5cb4def843f9f8fb81b9a111a3d38359b16fa8a3f53e87bd0dae2957",
+      "inputSignature": "d98b55c6c5ab1735e95535606b4b75344a26fd939a0e9394536155f994f1cb8f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 281916,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 281916,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        198,
+        141,
+        1088,
+        1074
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_508/exports/blessings-outline-blessings-picnic-letter.pdf",
+          "bytes": 281916,
+          "sha256": "7f19f48c3f178ed4927dee8b27ebe1df1958b9d15497e28923a4540470609642"
+        },
+        "webp": {
+          "path": "work/production/wave_508/exports/blessings-outline-blessings-picnic-letter.webp",
+          "bytes": 572558,
+          "sha256": "9093dfbef5f8687b71ccd45b2a445a0d215694b1b935bd42bc776969d5de506f"
+        },
+        "thumb": {
+          "path": "work/production/wave_508/exports/blessings-outline-blessings-picnic-letter-thumb.webp",
+          "bytes": 45978,
+          "sha256": "2f1f5605c4be155d4d1f4740f3b502c12163db52fca6ba41b170348126fc5513"
+        }
+      },
+      "proofSha256": "42f917f664d9e8261af4d82bb09ec7a5364c4f82f1d0899c4cf6350c4da3cbfe",
+      "pairMeanRgbDifference": 6.53031
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T15:50:51.072645+00:00",
+  "screenReviewEvidence": "work/production/wave_508/native-proof-review.jpg",
+  "screenReviewEvidenceSha256": "6531d59b7c215eb6e82f3750f8b8e3aed38b7f35c2efc84c2c1175123dfa590c",
+  "screenReviewNotes": "Every actual rendered CMYK proof inspected: readable words, complete outlines and props, clean margins and original-image correspondence. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T15:56:01.699Z"
+}

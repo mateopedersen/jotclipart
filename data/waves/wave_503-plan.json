@@ -1,0 +1,77 @@
+{
+  "wave": "wave_503",
+  "topic": "blessings",
+  "method": "builtin-image-generation",
+  "research": "data/research/blessings-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "blessings-friends-are-blessings-bracelets",
+      "title": "Friends Are Blessings Bracelet Card",
+      "alt": "Two braided friendship bracelets overlap a peach card reading \u201cFRIENDS ARE BLESSINGS\u201d beside a stitched heart and daisy.",
+      "description": "Pink-and-blue and green-and-yellow cords form different loops, finished with small heart charms and tasseled ends.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_503/source/blessings-friends-are-blessings-bracelets.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-you-are-a-blessing-bee",
+      "title": "You Are a Blessing Bee",
+      "alt": "A smiling yellow cartoon bee holds a cream sign reading \u201cYOU ARE A BLESSING\u201d and a white daisy.",
+      "description": "Blue translucent wings, rounded shoes and long black antennae give the cheerful character a compact sticker silhouette.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_503/source/blessings-you-are-a-blessing-bee.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-girl-bedside-prayer",
+      "title": "Girl Praying Beside a Bedside Cabinet",
+      "alt": "A cartoon girl with long braids and round glasses kneels with clasped hands beside a small lamp and closed book.",
+      "description": "Lavender heart-pattern pajamas and an oval cushion distinguish the quiet pose alongside the complete two-drawer cabinet.",
+      "color": "Purple",
+      "style": "Color",
+      "source": "work/production/wave_503/source/blessings-girl-bedside-prayer.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-boy-bedtime-prayer",
+      "title": "Boy Praying with a Plush Rabbit",
+      "alt": "A red-haired cartoon boy in green striped pajamas sits cross-legged with clasped hands beside a plush rabbit.",
+      "description": "A round patchwork mat and two star cushions frame the boy\u2019s closed-eyed smile and bare feet.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_503/source/blessings-boy-bedtime-prayer.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-family-before-meal-prayer",
+      "title": "Family Saying Grace Before a Meal",
+      "alt": "Two cartoon adults and two children close their eyes around a table with a green casserole and bread rolls.",
+      "description": "Different green, rust, blue and pink outfits distinguish the four figures around the cream cloth and checked table runner.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_503/source/blessings-family-before-meal-prayer.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-praying-hands-wooden-cross",
+      "title": "Praying Hands with a Cross and Lily",
+      "alt": "Clasped hands in cream sleeves appear in front of a wooden Christian cross and a white lily.",
+      "description": "Green stems pass behind the hands beneath the upright wood-grain cross, keeping the devotional symbol group compact.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_503/source/blessings-praying-hands-wooden-cross.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

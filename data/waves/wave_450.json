@@ -1,0 +1,508 @@
+{
+  "wave": "wave_450",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "reindeer-holiday-cape-greeting",
+      "title": "Reindeer in a Green Velvet Cape",
+      "alt": "Gray-blue-eyed cartoon reindeer lifting one forehoof in a cream-edged green velvet cape with a gold clasp.",
+      "description": "A small red bow decorates one antler above the reindeer's long pale muzzle. The short capelet leaves its cream chest, four legs and curled tail silhouette clearly visible.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_450/source/reindeer-holiday-cape-greeting.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1295,
+      "height": 1214,
+      "pdfWidth": 1000,
+      "pdfHeight": 937,
+      "sourceType": "raster",
+      "sourceSha256": "1ee94d4b5f96add3a88b8681ba6e25794c4b7a07aad783884cac881d564029c7",
+      "inputSignature": "4855c88d37a390ae7a898a13f3e716d8ec51695a02de92783075687c9abf3436",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 793673,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 793673,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        339,
+        22,
+        978,
+        1175
+      ],
+      "image": {
+        "width": 1000,
+        "height": 937,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_450/exports/reindeer-holiday-cape-greeting.pdf",
+          "bytes": 793673,
+          "sha256": "3b8b045e71175c2dabfe2c2837f3fc60754df5a68ddfc60301fa412774609770"
+        },
+        "webp": {
+          "path": "work/production/wave_450/exports/reindeer-holiday-cape-greeting.webp",
+          "bytes": 614662,
+          "sha256": "154849a3e709a8fdf336d2943835d6880d60a549831bdafb0db0df1586e98127"
+        },
+        "thumb": {
+          "path": "work/production/wave_450/exports/reindeer-holiday-cape-greeting-thumb.webp",
+          "bytes": 43064,
+          "sha256": "fe9cadcf0c211d8d2ec73ba5053d8981ea8b7aec447729b92ef940928b60cda9"
+        }
+      },
+      "proofSha256": "b1df962b3660a6352dd5a612e8b3bca07ba2934fabf7e6132568d55c929679e1",
+      "pairMeanRgbDifference": 2.42923
+    },
+    {
+      "id": "reindeer-family-nuzzle",
+      "title": "Two Reindeer Touching Noses",
+      "alt": "Large chestnut cartoon reindeer gently touching noses with a smaller gray-brown reindeer, both standing with complete bodies.",
+      "description": "The larger animal's heavy antler crown contrasts with the smaller one's short forks and round cream cheeks. Their inward-facing heads create a gentle shared focal point.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_450/source/reindeer-family-nuzzle.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1283,
+      "height": 1226,
+      "pdfWidth": 1000,
+      "pdfHeight": 956,
+      "sourceType": "raster",
+      "sourceSha256": "5715e90cfbbface3c01224a7b8a75a7b4e4e09d9eaa27e4e069f74fe37105774",
+      "inputSignature": "9daf8d6e4e0231b560a57e093ad29eff0c15c633cb5234ab44efa839664aaabb",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 982646,
+        "weightedCmykRmse": 0.948638
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1313577,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1054107,
+          "weightedCmykRmse": 0.817117
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 982646,
+          "weightedCmykRmse": 0.948638
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        61,
+        16,
+        1229,
+        1172
+      ],
+      "image": {
+        "width": 1000,
+        "height": 956,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_450/exports/reindeer-family-nuzzle.pdf",
+          "bytes": 982646,
+          "sha256": "bd01627ec62097e6ff5d39ca17e6426f31d007d4560670c984c05ef52188bc5b"
+        },
+        "webp": {
+          "path": "work/production/wave_450/exports/reindeer-family-nuzzle.webp",
+          "bytes": 1042200,
+          "sha256": "07b9390d32956a27df84cf4199229c1b1a1a3274759165eaae68bcc82e51db75"
+        },
+        "thumb": {
+          "path": "work/production/wave_450/exports/reindeer-family-nuzzle-thumb.webp",
+          "bytes": 70992,
+          "sha256": "5b26890987b228336bb60fe09cde66f18720613f67364b8a919eaa5d144f67e3"
+        }
+      },
+      "proofSha256": "c3d5acf7a79d90fdeff6599869cd2ea6ed0bc1225cc1edac4a4b305701879d5f",
+      "pairMeanRgbDifference": 3.53399
+    },
+    {
+      "id": "reindeer-toy-train-watch",
+      "title": "Reindeer Watching a Little Toy Train",
+      "alt": "Gray cartoon reindeer lying with folded forelegs beside a small red wooden locomotive, wearing a long green scarf.",
+      "description": "The reindeer lowers its broad cream muzzle toward the toy's green roof. Tall antlers, bright green eyes and the scarf's trailing fringe distinguish the resting figure.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_450/source/reindeer-toy-train-watch.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1402,
+      "height": 1122,
+      "pdfWidth": 1000,
+      "pdfHeight": 800,
+      "sourceType": "raster",
+      "sourceSha256": "5bf95e76167f0d6fcc2a0e0b72ac4d78d8dfc103d9bdbb9f54ea0f90c504cd1a",
+      "inputSignature": "14f3f210870c9f19d981062915974db3284f2b7acbafe5935acc16a9985b69d4",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 976054,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 976054,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        328,
+        34,
+        1279,
+        1066
+      ],
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_450/exports/reindeer-toy-train-watch.pdf",
+          "bytes": 976054,
+          "sha256": "43b207ded8f30f032e6a21cb4ab79a2293344f856d6e32a043f203804bc4b766"
+        },
+        "webp": {
+          "path": "work/production/wave_450/exports/reindeer-toy-train-watch.webp",
+          "bytes": 862422,
+          "sha256": "7c578b12c10fbf66f78b4d12d662cc9b67efbb4a87a7896ef9bf103a1a25d264"
+        },
+        "thumb": {
+          "path": "work/production/wave_450/exports/reindeer-toy-train-watch-thumb.webp",
+          "bytes": 46116,
+          "sha256": "323a42c513e196e417e550bd36a07f27a449e02cd31a910047a2d7f837a9dd90"
+        }
+      },
+      "proofSha256": "20ef537e6fe3d387d17267d99cbf82d3668b8ec687a230281fc8bd220ec7def5",
+      "pairMeanRgbDifference": 4.29382
+    },
+    {
+      "id": "reindeer-star-wand-parade",
+      "title": "Reindeer Marching with a Gold Star Wand",
+      "alt": "Violet-eyed golden cartoon reindeer taking an upright marching step while holding a gold star wand between its forehooves.",
+      "description": "A red-and-cream striped bow sits below the reindeer's curled forelock. One lifted rear hoof and the upright star wand give the compact character a bright parade pose.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_450/source/reindeer-star-wand-parade.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1230,
+      "height": 1278,
+      "pdfWidth": 962,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "1b2922ff0602a1bcd442056ec88ed94337c86ea810e9d3f1d4970b91422cc932",
+      "inputSignature": "9c7e0686d87e9ac4b150bbe84b919902646ebb67a18c27b50d9b1393998e6011",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 796685,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 796685,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        276,
+        31,
+        1012,
+        1204
+      ],
+      "image": {
+        "width": 962,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_450/exports/reindeer-star-wand-parade.pdf",
+          "bytes": 796685,
+          "sha256": "79c82c4499272f654d1bc33c470582d087099af38d35a7cbf78079d6486c485e"
+        },
+        "webp": {
+          "path": "work/production/wave_450/exports/reindeer-star-wand-parade.webp",
+          "bytes": 691418,
+          "sha256": "369f85020cfd106c7566258c2ccb306d975e2620ca4db7ad6ecf159da2521973"
+        },
+        "thumb": {
+          "path": "work/production/wave_450/exports/reindeer-star-wand-parade-thumb.webp",
+          "bytes": 44892,
+          "sha256": "5185d496cae7097b6e08621fc5bba27f559a28a718a99f0948246ae7227c89f4"
+        }
+      },
+      "proofSha256": "760b6714fa30cf6d984e230d6333c1787d7b24ab148b1d90ffe20cb990c3ba5f",
+      "pairMeanRgbDifference": 2.01462
+    },
+    {
+      "id": "reindeer-sack-snooze",
+      "title": "Sleepy Reindeer Beside a Gift Sack",
+      "alt": "Sleepy brown cartoon reindeer resting its cheek against a full green gift sack, with two rear hooves forward and a gold bell collar.",
+      "description": "The sack's thick gold drawstring hangs beside the reindeer's half-closed eyes. Broad antlers, cream eyebrows and a pale neck ruff distinguish the relaxed seated figure.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_450/source/reindeer-sack-snooze.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1254,
+      "height": 1254,
+      "pdfWidth": 1000,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "a46d8d710ebce6c22afca9a318d97f3f26d3ece82a5483da0be73b5de2546d01",
+      "inputSignature": "6f3c9ab38987eb978c968b306b1f091e15cb11ac3e0a3034e833ec3bb6f65ba6",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 945159,
+        "weightedCmykRmse": 0.846121
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1216496,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 945159,
+          "weightedCmykRmse": 0.846121
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        129,
+        34,
+        1151,
+        1180
+      ],
+      "image": {
+        "width": 1000,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_450/exports/reindeer-sack-snooze.pdf",
+          "bytes": 945159,
+          "sha256": "86b9151cc88a7fe27132b30be92fb63c07eaa78de29167a7bef800e12788756a"
+        },
+        "webp": {
+          "path": "work/production/wave_450/exports/reindeer-sack-snooze.webp",
+          "bytes": 994120,
+          "sha256": "5c63415d4ffd8390e619f4dcea410fd8a1ea27db7d86684e4dabed7649059de1"
+        },
+        "thumb": {
+          "path": "work/production/wave_450/exports/reindeer-sack-snooze-thumb.webp",
+          "bytes": 55680,
+          "sha256": "0b8b4d6745d56f9db32276d9e81c6172dde97abe0d01b7704759c6202b756e8d"
+        }
+      },
+      "proofSha256": "1fe2bc256b6a04a711f884fd29d1d2c93930ad02cff508f999cd08399e509b34",
+      "pairMeanRgbDifference": 4.22892
+    },
+    {
+      "id": "reindeer-leaping-candy-arch",
+      "title": "Reindeer Leaping over a Candy Cane",
+      "alt": "Green-eyed cartoon reindeer in a short blue scarf leaping sideways over a low red-and-white candy cane arch.",
+      "description": "Four separate tucked hooves float above the striped arch. A smiling long face, broad antlers and wind-swept fringed scarf emphasize the forward motion.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_450/source/reindeer-leaping-candy-arch.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1305,
+      "height": 1206,
+      "pdfWidth": 1000,
+      "pdfHeight": 924,
+      "sourceType": "raster",
+      "sourceSha256": "e7739ef663cd130e9c229889a749e51b2d171c6c3e6388a7fef444692279cf1b",
+      "inputSignature": "2617a5ed39134efcbb0a3866f0109022b812fdb28162e459c8dc77cfef991bc4",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 843976,
+        "weightedCmykRmse": 0.863497
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1051284,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 843976,
+          "weightedCmykRmse": 0.863497
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        202,
+        22,
+        1118,
+        1179
+      ],
+      "image": {
+        "width": 1000,
+        "height": 924,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_450/exports/reindeer-leaping-candy-arch.pdf",
+          "bytes": 843976,
+          "sha256": "3314f531fc544bbcf4816ab1cbd0f48e3870a8115f243f51f422bcb6ed7b680b"
+        },
+        "webp": {
+          "path": "work/production/wave_450/exports/reindeer-leaping-candy-arch.webp",
+          "bytes": 807682,
+          "sha256": "96796d68c3f9ab9f2f0daccae18e3c6ea42a9bbb2d3d45d3447d2b9d652c0e3e"
+        },
+        "thumb": {
+          "path": "work/production/wave_450/exports/reindeer-leaping-candy-arch-thumb.webp",
+          "bytes": 53632,
+          "sha256": "627b3a41a524ca1b61497ed72d2faf259e6b8502dbd847b4fcd7e6634f3e4ae3"
+        }
+      },
+      "proofSha256": "79b85dc066c99c0a55a9789652376edf3539abb809219385149bc7ad1dbafece",
+      "pairMeanRgbDifference": 2.69572
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T06:49:48.556446+00:00",
+  "screenReviewEvidence": "work/production/wave_450/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T07:33:51.309Z"
+}

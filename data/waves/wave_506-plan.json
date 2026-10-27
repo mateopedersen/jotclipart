@@ -1,0 +1,77 @@
+{
+  "wave": "wave_506",
+  "topic": "blessings",
+  "method": "builtin-image-generation",
+  "research": "data/research/blessings-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "blessings-blessings-floral-lantern",
+      "title": "Floral Blessings Lantern",
+      "alt": "A rose-gold lantern with an unlit candle carries a \u201cBLESSINGS\u201d tag beside peach roses and green foliage.",
+      "description": "The faceted glass body and full curved handle give the floral lantern a tall, complete gift-object silhouette.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_506/source/blessings-blessings-floral-lantern.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-blessings-patchwork-quilt",
+      "title": "Blessings Patchwork Quilt Gift",
+      "alt": "A folded coral, navy and cream quilt is tied with a cotton ribbon reading \u201cBLESSINGS.\u201d",
+      "description": "Stitched hearts, a star, leaves and a small house make the individual fabric patches easy to distinguish.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_506/source/blessings-blessings-patchwork-quilt.png",
+      "printMaxEdgePx": 970,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-blessings-floral-envelope",
+      "title": "Sending Blessings Lavender Card",
+      "alt": "An open lilac envelope holds a cream \u201cSENDING BLESSINGS\u201d card with lavender stems and a purple butterfly.",
+      "description": "A tied natural-colored cord gathers the flower spray beside the gold-edged card and complete envelope flap.",
+      "color": "Purple",
+      "style": "Color",
+      "source": "work/production/wave_506/source/blessings-blessings-floral-envelope.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-grow-blessings-planter",
+      "title": "Grow Blessings Seedling Planter",
+      "alt": "A green seedling grows in a terracotta pot beside a wooden \u201cGROW BLESSINGS\u201d marker, seed packet and trowel.",
+      "description": "Broad glossy leaves rise above dark soil, with the full silver tool and blank packet arranged along the pot\u2019s base.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_506/source/blessings-grow-blessings-planter.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-blessed-botanical-bookmark",
+      "title": "Blessed Floral Bookmark on a Book",
+      "alt": "An embroidered cream bookmark reading \u201cBLESSED\u201d lies diagonally across a closed burgundy book.",
+      "description": "Blue flowers and green leaves run along the bookmark beside its complete navy tassel and the book\u2019s pale page edges.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_506/source/blessings-blessed-botanical-bookmark.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "blessings-blessings-star-mascot",
+      "title": "Many Blessings Star Character",
+      "alt": "A smiling yellow cartoon star holds a cream \u201cMANY BLESSINGS\u201d card while wearing a purple bow tie and sneakers.",
+      "description": "Freckled cheeks, white gloves and striped socks give the full five-pointed character a playful greeting-card pose.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_506/source/blessings-blessings-star-mascot.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

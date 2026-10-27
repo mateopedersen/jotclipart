@@ -1,0 +1,77 @@
+{
+  "wave": "wave_466",
+  "topic": "gingerbread",
+  "method": "builtin-image-generation",
+  "research": "data/research/gingerbread-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "gingerbread-rolling-pin-rider",
+      "title": "Gingerbread Riding a Rolling Pin",
+      "alt": "Moustached gingerbread character with a red neckerchief riding a wooden rolling pin and raising one cookie arm.",
+      "description": "Two green peppermint buttons sit below the spotted neckerchief, while one bent cookie leg hangs over the pin.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_466/source/gingerbread-rolling-pin-rider.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-bookworm",
+      "title": "Gingerbread Reader with Heart-Shaped Head",
+      "alt": "Heart-headed gingerbread character with striped round glasses reading a green book while seated on a thick red book.",
+      "description": "A tiny red heart joins the icing hairline above the eyes, and a scalloped collar frames two red candy buttons.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_466/source/gingerbread-bookworm.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-snowflake-ballerina",
+      "title": "Gingerbread Ballerina in a Snowflake Skirt",
+      "alt": "Slender gingerbread ballerina in an aqua icing tutu balancing on one foot with both arms curved overhead.",
+      "description": "White snowflake piping, pink sugar pearls and a small crown decorate the lifted dancing pose.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_466/source/gingerbread-snowflake-ballerina.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-cocoa-dip",
+      "title": "Gingerbread Standing in a Cocoa Mug",
+      "alt": "Small gingerbread character in a red scarf standing in a cream cocoa mug decorated with holly and red icing waves.",
+      "description": "The figure looks sideways with one raised eyebrow, surrounded by floating marshmallows on the cocoa surface.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_466/source/gingerbread-cocoa-dip.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-peppermint-drummer",
+      "title": "Gingerbread Playing a Peppermint Drum",
+      "alt": "Tall oval-headed gingerbread drummer in a blue beret playing a red-and-white peppermint drum with two sticks.",
+      "description": "A striped shoulder strap supports the drum while one red-tipped stick rises above the laughing face.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_466/source/gingerbread-peppermint-drummer.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "gingerbread-tiny-gardener",
+      "title": "Gingerbread Watering Peppermint Sprouts",
+      "alt": "Kneeling gingerbread gardener in a green bonnet and yellow overalls watering peppermint-striped sprouts in a brown pot.",
+      "description": "Small white flowers decorate the bonnet, watering can and overall pocket around the rounded cookie face.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_466/source/gingerbread-tiny-gardener.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

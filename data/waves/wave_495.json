@@ -1,0 +1,502 @@
+{
+  "wave": "wave_495",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "feast-passing-turkey-platter",
+      "title": "Sharing a Turkey Feast Platter",
+      "alt": "Two pairs of hands pass a roast-turkey platter above separate bowls of mashed potatoes and green beans.",
+      "description": "Red and green sweater sleeves frame the serving action, with cranberry and herb garnish ringing the large roast.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_495/source/feast-passing-turkey-platter.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "b83eae5c260e38bb7cf844fe8296d48b419839b2909b240d7454768966873c46",
+      "inputSignature": "cff9614490a872fcc7e3b125c1daaca1e060473f73fde9fc9191de6bd5f0c294",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 689980,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 689980,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        124,
+        230,
+        1413,
+        885
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_495/exports/feast-passing-turkey-platter.pdf",
+          "bytes": 689980,
+          "sha256": "67fbd03d747232a22a2c335d9d8a89da4420284ce3ebb58ed359ed1089645eff"
+        },
+        "webp": {
+          "path": "work/production/wave_495/exports/feast-passing-turkey-platter.webp",
+          "bytes": 1284934,
+          "sha256": "6021bf9e442ae2fb55bcc3d4f47332dfc7016e5cb41cab8a4b9aa1085d8f3ab0"
+        },
+        "thumb": {
+          "path": "work/production/wave_495/exports/feast-passing-turkey-platter-thumb.webp",
+          "bytes": 38396,
+          "sha256": "3144cc77a36a3fd884439efb9b2425b25c667e3a87465667173e868364e33b7a"
+        }
+      },
+      "proofSha256": "9cda27feb9f7c41759376351cd24bccdb11b50a3ba2216591896531f48cab76a",
+      "pairMeanRgbDifference": 3.72113
+    },
+    {
+      "id": "feast-grandparents-sharing",
+      "title": "Older Couple Serving a Turkey Feast",
+      "alt": "A smiling older couple serves roast turkey at a small table with stuffing, green beans and a lattice-topped pie.",
+      "description": "The silver-haired woman in a blue apron holds a carving utensil while the bespectacled man in a green cardigan waits with a plate.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_495/source/feast-grandparents-sharing.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1316,
+      "height": 1195,
+      "pdfWidth": 1000,
+      "pdfHeight": 908,
+      "sourceType": "raster",
+      "sourceSha256": "bcaeadc3c7bf3785c92002b579125ecc849bebbc3535dcf41b9bf34de4eb23a0",
+      "inputSignature": "1e226555bfb99edd5a77dab4697e1157dfd0d294de4cb64885a1e457ba50157d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 932985,
+        "weightedCmykRmse": 0.948381
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1252798,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 997178,
+          "weightedCmykRmse": 0.817496
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 932985,
+          "weightedCmykRmse": 0.948381
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        94,
+        111,
+        1221,
+        1101
+      ],
+      "image": {
+        "width": 1000,
+        "height": 908,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_495/exports/feast-grandparents-sharing.pdf",
+          "bytes": 932985,
+          "sha256": "d9623b08ad98f2332c9040e31f5e99fc7b92d0e42148e73e73e1aeffeaa19f29"
+        },
+        "webp": {
+          "path": "work/production/wave_495/exports/feast-grandparents-sharing.webp",
+          "bytes": 1097498,
+          "sha256": "dc193eea854b7fe7e15c03501c20534026260edf52d7b067c51800ffa0bb9753"
+        },
+        "thumb": {
+          "path": "work/production/wave_495/exports/feast-grandparents-sharing-thumb.webp",
+          "bytes": 66224,
+          "sha256": "e424ab29a2c9eb8335df7c2c231188bec0832ef980472b37b8b7d0977a4c0856"
+        }
+      },
+      "proofSha256": "2cd3f1c5e834cc8224808816e331ee0fd1bcac1faacc7e28d4c4d007d45446f3",
+      "pairMeanRgbDifference": 5.53794
+    },
+    {
+      "id": "feast-catering-trolley",
+      "title": "Turkey Feast Catering Trolley",
+      "alt": "A metal catering trolley carries roast turkey beneath an open cloche, with green beans, rolls and berry desserts.",
+      "description": "Brass-colored rails surround the two silver shelves, and dark caster wheels anchor the tall handle and compact mobile spread.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_495/source/feast-catering-trolley.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "d3e6d019d45ab04f88c02351a6018d128cd1809e42d20a236b96dc87daa80f4a",
+      "inputSignature": "03053343a89758739e086a2744c7b2c98873bc43570852bada43f52e0e8fe0ee",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 817611,
+        "weightedCmykRmse": 0.859002
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1013560,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 817611,
+          "weightedCmykRmse": 0.859002
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        267,
+        107,
+        1196,
+        1063
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_495/exports/feast-catering-trolley.pdf",
+          "bytes": 817611,
+          "sha256": "3adecc6565c4172bdc3618765e8347fd3a07a8957da653dd35b468d353a9963d"
+        },
+        "webp": {
+          "path": "work/production/wave_495/exports/feast-catering-trolley.webp",
+          "bytes": 965828,
+          "sha256": "e55817ae7ad9ef123e8ef5f7313b99cc3e1cc806ebd2beee8ed804aafc6c3818"
+        },
+        "thumb": {
+          "path": "work/production/wave_495/exports/feast-catering-trolley-thumb.webp",
+          "bytes": 55928,
+          "sha256": "d13dddba656a80814ce0209d433c633358a8549b31dd0987ddae84fcab60bb0b"
+        }
+      },
+      "proofSha256": "3305ef883d6f0788f73bbe1d55489e0932773ef1f4722d40d19b5a135cee9986",
+      "pairMeanRgbDifference": 4.14847
+    },
+    {
+      "id": "feast-celebration-dessert-table",
+      "title": "Floral Celebration Dessert Table",
+      "alt": "An ivory two-tier cake, berry cupcakes and strawberries stand on a small white table decorated with flowers and greenery.",
+      "description": "Curved table legs and a draped foliage garland give the compact dessert arrangement a soft oval silhouette.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_495/source/feast-celebration-dessert-table.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1328,
+      "height": 1184,
+      "pdfWidth": 1000,
+      "pdfHeight": 892,
+      "sourceType": "raster",
+      "sourceSha256": "5cfa0c542c90e4ef9fb4fff1a2854689d83c14464ef8a4e40f76182ad7447787",
+      "inputSignature": "a814b9f95629df679a31e0cb7280223c751e9bae246c2f278dac7e8775bd2654",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 889573,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 889573,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        197,
+        92,
+        1136,
+        1106
+      ],
+      "image": {
+        "width": 1000,
+        "height": 892,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_495/exports/feast-celebration-dessert-table.pdf",
+          "bytes": 889573,
+          "sha256": "490bd1fc547c64d17f68b588a74568512618812549bed07fadfe7bd460a7d71a"
+        },
+        "webp": {
+          "path": "work/production/wave_495/exports/feast-celebration-dessert-table.webp",
+          "bytes": 1175180,
+          "sha256": "d7446880fb6708c12df5a6dcd486deeac779d431a85645b4d9554cd385b75af3"
+        },
+        "thumb": {
+          "path": "work/production/wave_495/exports/feast-celebration-dessert-table-thumb.webp",
+          "bytes": 51776,
+          "sha256": "9cbfda926ec5193ca8182dd0b81975632de8806c55fb7ad91a8fa829575149b8"
+        }
+      },
+      "proofSha256": "3b817ec5a3eec3ac3a3cd5bf68b784c165ca436faed4b7e228f4350854e4198c",
+      "pairMeanRgbDifference": 2.37486
+    },
+    {
+      "id": "feast-storybook-royal-banquet",
+      "title": "Storybook King at a Turkey Banquet",
+      "alt": "A cheerful fictional cartoon king raises a gold goblet behind a table with roast turkey, savory pie and grapes.",
+      "description": "An auburn curled beard, purple fur-trimmed robe and jeweled crown distinguish the seated character above the compact round banquet table.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_495/source/feast-storybook-royal-banquet.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "a43f98d88975959d0c5a5bbeacd888d959769f64c27be8088287397141b6b00f",
+      "inputSignature": "d5ddb3088893b80284df57a70b684c034697dfa78db40c19591d1b7a7ddc47ac",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 990693,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 990693,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        267,
+        162,
+        1055,
+        1041
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_495/exports/feast-storybook-royal-banquet.pdf",
+          "bytes": 990693,
+          "sha256": "13864b99ce1bed8d28b6ff4c0dbd040e6c892281cce9d0d503b7543052203bf4"
+        },
+        "webp": {
+          "path": "work/production/wave_495/exports/feast-storybook-royal-banquet.webp",
+          "bytes": 856394,
+          "sha256": "678a668577e59af33bd5e7f73ef754736505ec52e47f188a7a6d8dfd76b505f2"
+        },
+        "thumb": {
+          "path": "work/production/wave_495/exports/feast-storybook-royal-banquet-thumb.webp",
+          "bytes": 49362,
+          "sha256": "7893d5d1ef66bf661b087d31591557f3cf2056cbf8749ad89d93cbb4270c0d2a"
+        }
+      },
+      "proofSha256": "d0c558c9fc0e2ee491d91bcada44fa8b245fec7a6bfc43e2e5ca1541f8f40e5b",
+      "pairMeanRgbDifference": 3.88141
+    },
+    {
+      "id": "feast-woodland-animals-supper",
+      "title": "Woodland Friends Sharing a Feast",
+      "alt": "A squirrel, hedgehog and rabbit share pie, berries and nuts around a small tree-stump table.",
+      "description": "Different face shapes and green, blue and cream clothing distinguish the animals as they hold food beside bowls set around the pie.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_495/source/feast-woodland-animals-supper.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "feast",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "8a42b07a3d30df16cc5e723728a994f90c34ddc8b6b5e4ec5c4bb689f3bfe13a",
+      "inputSignature": "c665c4504559c8fc7b286ee28d1b287c37143b8f35f4798f031dc65e3568aa5f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 881449,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 881449,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        231,
+        146,
+        1267,
+        882
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_495/exports/feast-woodland-animals-supper.pdf",
+          "bytes": 881449,
+          "sha256": "db0797fe7252f1757445546fbaf9d617aefa051f7ed9e462bd2704368519f220"
+        },
+        "webp": {
+          "path": "work/production/wave_495/exports/feast-woodland-animals-supper.webp",
+          "bytes": 1316554,
+          "sha256": "3df9a38236a54bf1c7c9b6529fe98ce7d993937cfb9a8b1bc4600b970364362e"
+        },
+        "thumb": {
+          "path": "work/production/wave_495/exports/feast-woodland-animals-supper-thumb.webp",
+          "bytes": 40016,
+          "sha256": "0ca5fcb11e7f74676cc3a56560b3d3b82e69f2cdc61915e7367bf62b075ad021"
+        }
+      },
+      "proofSha256": "a1f51dd69d9fab8622e899b7c23235d45d396eaa6dcda54cefe50b28c2e924b5",
+      "pairMeanRgbDifference": 3.57275
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T14:32:34.222873+00:00",
+  "screenReviewEvidence": "work/production/wave_495/native-proof-review.jpg",
+  "screenReviewEvidenceSha256": "bab328933b30031d49d089f6017cc78450e839ab32ec7354cfe2c6adf4409f46",
+  "screenReviewNotes": "Every actual rendered CMYK PDF proof inspected: distinct characters, clear serving actions, complete framing, coherent food and furniture, or clean outline coloring details. No physical print proof claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T14:34:20.501Z"
+}

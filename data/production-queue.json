@@ -17,17 +17,17 @@
     "PUBLISHED"
   ],
   "targetArtworkCount": 5500,
-  "generatedArtworkCount": 1702,
+  "generatedArtworkCount": 2002,
   "suppliedArtworkCount": 11780,
-  "originalTopicArtworkCount": 2050,
-  "supplementalArtworkCount": 12234,
-  "qualityApprovedArtworkCount": 2050,
-  "supplementalApprovedArtworkCount": 12234,
+  "originalTopicArtworkCount": 2350,
+  "supplementalArtworkCount": 12284,
+  "qualityApprovedArtworkCount": 2350,
+  "supplementalApprovedArtworkCount": 12284,
   "reviewerType": "AI_AGENT_NOT_HUMAN",
   "humanApprovedArtworkCount": 0,
-  "availableArtworkCount": 14284,
-  "remainingToDraw": 3798,
-  "nextAction": "Develop distinct compositions for the remaining topic targets; export, visually review, verify all R2/CDN representations, then publish a complete wave.",
+  "availableArtworkCount": 14634,
+  "remainingToDraw": 3498,
+  "nextAction": "Publish accepted collections through the coordinated release, verify live routes and downloads, and continue only genuinely missing original-list topics. Owner-supplied art never counts toward the 5500 original target.",
   "topics": [
     {
       "topic": "halloween",
@@ -385,13 +385,15 @@
       "keyword": "Feast clipart",
       "wave": "W2",
       "target": 50,
-      "generated": 0,
+      "generated": 50,
       "supplied": 0,
-      "available": 0,
-      "approved": 0,
-      "remainingToDraw": 50,
-      "briefStatus": "NOT_STARTED",
-      "briefPath": null
+      "available": 50,
+      "approved": 50,
+      "remainingToDraw": 0,
+      "briefStatus": "50_COMPOSITIONS_REVIEWED",
+      "briefPath": "data/briefs/feast.json",
+      "sourceMastersCreated": 6,
+      "sourceMastersReviewed": 6
     },
     {
       "topic": "gratitude",
@@ -892,38 +894,38 @@
       "keyword": "Reindeer clipart",
       "wave": "W2",
       "target": 50,
-      "generated": 0,
+      "generated": 50,
       "supplied": 0,
-      "available": 0,
-      "approved": 0,
-      "remainingToDraw": 50,
-      "briefStatus": "NOT_STARTED",
-      "briefPath": null
+      "available": 50,
+      "approved": 50,
+      "remainingToDraw": 0,
+      "briefStatus": "50_COMPOSITIONS_REVIEWED",
+      "briefPath": "data/briefs/reindeer.json"
     },
     {
       "topic": "elf",
       "keyword": "Elf clipart",
       "wave": "W2",
       "target": 50,
-      "generated": 0,
+      "generated": 50,
       "supplied": 0,
-      "available": 0,
-      "approved": 0,
-      "remainingToDraw": 50,
-      "briefStatus": "NOT_STARTED",
-      "briefPath": null
+      "available": 50,
+      "approved": 50,
+      "remainingToDraw": 0,
+      "briefStatus": "50_COMPOSITIONS_REVIEWED",
+      "briefPath": "data/briefs/elf.json"
     },
     {
       "topic": "snowman",
       "keyword": "Snowman clipart",
       "wave": "W2",
       "target": 50,
-      "generated": 0,
+      "generated": 50,
       "supplied": 0,
-      "available": 0,
-      "approved": 0,
-      "remainingToDraw": 50,
-      "briefStatus": "DRAFT_ROWS_REQUIRE_REVIEW",
+      "available": 50,
+      "approved": 50,
+      "remainingToDraw": 0,
+      "briefStatus": "50_COMPOSITIONS_REVIEWED",
       "briefPath": "data/briefs/snowman.json"
     },
     {
@@ -931,13 +933,13 @@
       "keyword": "Gingerbread clipart",
       "wave": "W2",
       "target": 50,
-      "generated": 0,
+      "generated": 50,
       "supplied": 0,
-      "available": 0,
-      "approved": 0,
-      "remainingToDraw": 50,
-      "briefStatus": "NOT_STARTED",
-      "briefPath": null
+      "available": 50,
+      "approved": 50,
+      "remainingToDraw": 0,
+      "briefStatus": "50_COMPOSITIONS_REVIEWED",
+      "briefPath": "data/briefs/gingerbread.json"
     },
     {
       "topic": "nutcracker",
@@ -1347,13 +1349,16 @@
       "keyword": "2027 clipart",
       "wave": "W4",
       "target": 50,
-      "generated": 0,
+      "generated": 50,
       "supplied": 0,
-      "available": 0,
-      "approved": 0,
-      "remainingToDraw": 50,
-      "briefStatus": "NOT_STARTED",
-      "briefPath": null
+      "available": 100,
+      "approved": 100,
+      "remainingToDraw": 0,
+      "briefStatus": "100_COMPOSITIONS_REVIEWED",
+      "briefPath": "data/briefs/2027.json",
+      "priorityCollectionTarget": 100,
+      "original110Allocation": 50,
+      "additionalOwnerPriorityArtworks": 50
     },
     {
       "topic": "valentine",
@@ -158585,5 +158590,7 @@
       "publicationBlocked": false,
       "sha256": "2ff340ed0edc02b2b2d8a4fb8787a5bde906209ccec096c6400d29a5851017d6"
     }
-  ]
+  ],
+  "verifiedPublishedGeneratedArtworkCount": 1702,
+  "acceptedAwaitingRelease": 300
 }

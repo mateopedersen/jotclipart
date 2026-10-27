@@ -1,0 +1,488 @@
+{
+  "wave": "wave_503",
+  "status": "AWAITING_CDN",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "blessings-friends-are-blessings-bracelets",
+      "title": "Friends Are Blessings Bracelet Card",
+      "alt": "Two braided friendship bracelets overlap a peach card reading “FRIENDS ARE BLESSINGS” beside a stitched heart and daisy.",
+      "description": "Pink-and-blue and green-and-yellow cords form different loops, finished with small heart charms and tasseled ends.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_503/source/blessings-friends-are-blessings-bracelets.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1374,
+      "height": 1145,
+      "pdfWidth": 1000,
+      "pdfHeight": 833,
+      "sourceType": "raster",
+      "sourceSha256": "4555022421718291f88030651f1590c8ad1ec6a06afc9a638a27d58a98d580d1",
+      "inputSignature": "c5340ec9e4152d1582f576936d2d8b17c5a21d52add064f4cdaed6ff291679b5",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 721954,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 721954,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        201,
+        242,
+        1216,
+        956
+      ],
+      "image": {
+        "width": 1000,
+        "height": 833,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_503/exports/blessings-friends-are-blessings-bracelets.pdf",
+          "bytes": 721954,
+          "sha256": "0804e34de265dbae2e986ad4a56218d4dd873ff22baaa2b3309c3959b008d34b"
+        },
+        "webp": {
+          "path": "work/production/wave_503/exports/blessings-friends-are-blessings-bracelets.webp",
+          "bytes": 740300,
+          "sha256": "b4b092c2003ab8b8f1d95c3ec9e105aa5f4cd1e52b99a832c42bb12a8bb230c5"
+        },
+        "thumb": {
+          "path": "work/production/wave_503/exports/blessings-friends-are-blessings-bracelets-thumb.webp",
+          "bytes": 42562,
+          "sha256": "3cc31d066068e652737f6f0fc538c476512888890148b9db36b3ff3ff1af492b"
+        }
+      },
+      "proofSha256": "1f3709758fae9dc9a42ccf1e59c9f2e59400bb42f15db57c2b8be0b68834fa95",
+      "pairMeanRgbDifference": 2.79654
+    },
+    {
+      "id": "blessings-you-are-a-blessing-bee",
+      "title": "You Are a Blessing Bee",
+      "alt": "A smiling yellow cartoon bee holds a cream sign reading “YOU ARE A BLESSING” and a white daisy.",
+      "description": "Blue translucent wings, rounded shoes and long black antennae give the cheerful character a compact sticker silhouette.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_503/source/blessings-you-are-a-blessing-bee.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1244,
+      "height": 1265,
+      "pdfWidth": 983,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "f00a7c0de7e5f31baf741a9ea762258a493a11e6b50c74115ac5a70822a29210",
+      "inputSignature": "8871bae35240d6e65ee18313865779545111d91fc0018f6244665ab6dee316b9",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 796490,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 796490,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        305,
+        125,
+        1091,
+        1145
+      ],
+      "image": {
+        "width": 983,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_503/exports/blessings-you-are-a-blessing-bee.pdf",
+          "bytes": 796490,
+          "sha256": "478c15001783ea56f7e9b70481331a046341ee6be78031f693b518f314a5c539"
+        },
+        "webp": {
+          "path": "work/production/wave_503/exports/blessings-you-are-a-blessing-bee.webp",
+          "bytes": 644882,
+          "sha256": "98ec4e2b7f8389650b8cbca54215d1f31334672bb24d61322f1c11ec656f5be9"
+        },
+        "thumb": {
+          "path": "work/production/wave_503/exports/blessings-you-are-a-blessing-bee-thumb.webp",
+          "bytes": 44094,
+          "sha256": "e9109c2b7aa1790f849c2f71a79dbb8f9f32374eb85d83a6a73c6ce9fa37626b"
+        }
+      },
+      "proofSha256": "e1b1df59eac5a8248faea680c10c835425dfedb4aab27032068b07f5508f02e6",
+      "pairMeanRgbDifference": 3.72305
+    },
+    {
+      "id": "blessings-girl-bedside-prayer",
+      "title": "Girl Praying Beside a Bedside Cabinet",
+      "alt": "A cartoon girl with long braids and round glasses kneels with clasped hands beside a small lamp and closed book.",
+      "description": "Lavender heart-pattern pajamas and an oval cushion distinguish the quiet pose alongside the complete two-drawer cabinet.",
+      "color": "Purple",
+      "style": "Color",
+      "source": "work/production/wave_503/source/blessings-girl-bedside-prayer.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "27163358d13a2967f43b879b5c6693624d5703f65608f55c7f7658779c0078d9",
+      "inputSignature": "489fb6576259c9738f878e071325868283cceba732703a4600c33079b947f69b",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 715945,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 715945,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        221,
+        168,
+        1128,
+        1065
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_503/exports/blessings-girl-bedside-prayer.pdf",
+          "bytes": 715945,
+          "sha256": "4b9ad972c45bb94018095d12b6f60ee4a49d062b446ef75e64311b3caff6470b"
+        },
+        "webp": {
+          "path": "work/production/wave_503/exports/blessings-girl-bedside-prayer.webp",
+          "bytes": 642302,
+          "sha256": "f6d7c41a889f2afde3dc9b5f7227e694c6fa2b01201e4db2c9030822ccf8bfd4"
+        },
+        "thumb": {
+          "path": "work/production/wave_503/exports/blessings-girl-bedside-prayer-thumb.webp",
+          "bytes": 37314,
+          "sha256": "7f346dc47d427554457fa0f0a4f1563982d911f6e3902a3bb9c8c2794e7d4b08"
+        }
+      },
+      "proofSha256": "1c279a4f7a84bb0de50187d8f97db9b26b848f4fc0f149b30f61506f6f5c11ba",
+      "pairMeanRgbDifference": 2.70728
+    },
+    {
+      "id": "blessings-boy-bedtime-prayer",
+      "title": "Boy Praying with a Plush Rabbit",
+      "alt": "A red-haired cartoon boy in green striped pajamas sits cross-legged with clasped hands beside a plush rabbit.",
+      "description": "A round patchwork mat and two star cushions frame the boy’s closed-eyed smile and bare feet.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_503/source/blessings-boy-bedtime-prayer.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "01cf5ee6e7fc2fe1d17878907c69189a1df7c7ea6aeb16a4bd896962c1222462",
+      "inputSignature": "55ebfc0a9f41d2c8991db7a02fdc93a8acbc3299e2178dbed663e9ad6807a499",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 814711,
+        "weightedCmykRmse": 0.830184
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1042879,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 814711,
+          "weightedCmykRmse": 0.830184
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        96,
+        95,
+        1217,
+        1087
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_503/exports/blessings-boy-bedtime-prayer.pdf",
+          "bytes": 814711,
+          "sha256": "22b074a4ca1121ed338a484c8660f65b2dd440c9cf6533122a9ad43653aebb61"
+        },
+        "webp": {
+          "path": "work/production/wave_503/exports/blessings-boy-bedtime-prayer.webp",
+          "bytes": 923358,
+          "sha256": "a9adffc9af5b175d5c1fb77f3ca00728128ca46397edaed50c520fa0cff212e9"
+        },
+        "thumb": {
+          "path": "work/production/wave_503/exports/blessings-boy-bedtime-prayer-thumb.webp",
+          "bytes": 49422,
+          "sha256": "a1d178b85a9f549118012b645259b22c331e2cc673cae7547ad811e56cbe90d2"
+        }
+      },
+      "proofSha256": "d667e72d76bdacbb17479141393d93fc1f8050b65ef6374365223c77447aa86b",
+      "pairMeanRgbDifference": 2.80707
+    },
+    {
+      "id": "blessings-family-before-meal-prayer",
+      "title": "Family Saying Grace Before a Meal",
+      "alt": "Two cartoon adults and two children close their eyes around a table with a green casserole and bread rolls.",
+      "description": "Different green, rust, blue and pink outfits distinguish the four figures around the cream cloth and checked table runner.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_503/source/blessings-family-before-meal-prayer.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1536,
+      "height": 1024,
+      "pdfWidth": 1000,
+      "pdfHeight": 667,
+      "sourceType": "raster",
+      "sourceSha256": "37d9ed9b359b7a260d2ec059175b2265b0e39c37ee76add8209c615687dfa454",
+      "inputSignature": "1765f21c533ebe93938a1ca1969cc4f44056dfeefea0d976d722a7501049b7d4",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 894704,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 894704,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        142,
+        100,
+        1397,
+        879
+      ],
+      "image": {
+        "width": 1000,
+        "height": 667,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_503/exports/blessings-family-before-meal-prayer.pdf",
+          "bytes": 894704,
+          "sha256": "38a9ca73bf0775332cd88511bf7fe0ed568ec4b6e4a5ac320a588f4f80404ac5"
+        },
+        "webp": {
+          "path": "work/production/wave_503/exports/blessings-family-before-meal-prayer.webp",
+          "bytes": 1389012,
+          "sha256": "78bcde400f1bbedb2861666adf307cfc0af5b1024a929cc373d8dadcc729b9bd"
+        },
+        "thumb": {
+          "path": "work/production/wave_503/exports/blessings-family-before-meal-prayer-thumb.webp",
+          "bytes": 49196,
+          "sha256": "1738a04b76bfa4c3006f9fcc942396dd831e127e1fca3eeb9f08a6b2015688e6"
+        }
+      },
+      "proofSha256": "836c85d8c92f806a22e23f8171740f54fa1ad7903877a658c1a490e14a6f5a62",
+      "pairMeanRgbDifference": 4.98076
+    },
+    {
+      "id": "blessings-praying-hands-wooden-cross",
+      "title": "Praying Hands with a Cross and Lily",
+      "alt": "Clasped hands in cream sleeves appear in front of a wooden Christian cross and a white lily.",
+      "description": "Green stems pass behind the hands beneath the upright wood-grain cross, keeping the devotional symbol group compact.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_503/source/blessings-praying-hands-wooden-cross.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "blessings",
+      "width": 1223,
+      "height": 1286,
+      "pdfWidth": 951,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "3aea6548e2293a916fd27e49a6657b2acca12231101c4d3e490c7410f08db4a8",
+      "inputSignature": "97927b09f95c08ec6bdd9c38e8be284392d6417b1f2b29f8a96e800a7e79037c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 770258,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 770258,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        209,
+        122,
+        1030,
+        1160
+      ],
+      "image": {
+        "width": 951,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_503/exports/blessings-praying-hands-wooden-cross.pdf",
+          "bytes": 770258,
+          "sha256": "2267609368c8cf955794d9f48bd988790001d3ba949dd5bf93f38b0e694249aa"
+        },
+        "webp": {
+          "path": "work/production/wave_503/exports/blessings-praying-hands-wooden-cross.webp",
+          "bytes": 679982,
+          "sha256": "81c72421374505a33b86cdd2e52d8cd16277ae2d656704b7fe02ee42752d5a43"
+        },
+        "thumb": {
+          "path": "work/production/wave_503/exports/blessings-praying-hands-wooden-cross-thumb.webp",
+          "bytes": 38862,
+          "sha256": "c6fb719a1cf5f73685b0b45a8590388110372decaa455def947d3fa075156981"
+        }
+      },
+      "proofSha256": "bbde61745f7e7df4d22b3264d9c56061aafa28e31e16a228cae5e669a1ccd780",
+      "pairMeanRgbDifference": 2.52083
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T15:50:05.419366+00:00",
+  "screenReviewEvidence": "work/production/wave_503/native-proof-review.jpg",
+  "screenReviewEvidenceSha256": "7131c47367b86cb7149803952abb294a0a2fbf86e99ab58ea7a9fc62bdb6f062",
+  "screenReviewNotes": "Every actual CMYK-rendered proof inspected for complete characters and hands, correctly spelled wording, coherent objects and intact composition. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T15:56:00.085Z"
+}

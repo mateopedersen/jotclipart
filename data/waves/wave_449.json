@@ -1,0 +1,494 @@
+{
+  "wave": "wave_449",
+  "status": "CDN_VERIFIED_AWAITING_RELEASE",
+  "actualExportedDrawings": 6,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "reindeer-book-nook",
+      "title": "Reindeer Reading on a Red Cushion",
+      "alt": "Violet-eyed cartoon reindeer seated on a red cushion, with its forehooves resting on an open blank green-covered book.",
+      "description": "The little reindeer tilts its round face above two cream pages. A gold-edged cushion, short antler crown and forward-folded rear hooves create a compact reading scene.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_449/source/reindeer-book-nook.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "c3b3dee9238363645227e4cd9364248f91be881da448958259da3bd526f326ae",
+      "inputSignature": "97741fc3878a2cd7666a88be61ed8afb3e79123ce73d2ab326c50ad11c0cc15e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 867273,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 867273,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        164,
+        54,
+        1150,
+        1099
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_449/exports/reindeer-book-nook.pdf",
+          "bytes": 867273,
+          "sha256": "fa14f41701151ab588f425d92607c0d1673c32a2862b09ac37fdbfadbdb76613"
+        },
+        "webp": {
+          "path": "work/production/wave_449/exports/reindeer-book-nook.webp",
+          "bytes": 715642,
+          "sha256": "242d368e380e62be9d0ef299bb250c5b700524c5adea58d248ed1b39177c4f0f"
+        },
+        "thumb": {
+          "path": "work/production/wave_449/exports/reindeer-book-nook-thumb.webp",
+          "bytes": 37718,
+          "sha256": "78bc2bea3f0e48e52320d275e3add42ab27bb120f7b640b68b59e10fe7f44caf"
+        }
+      },
+      "proofSha256": "ab36a70cfd5743e4fea3feeed8e6efc557e7ffe12917a852eb20f2833e298e1c",
+      "pairMeanRgbDifference": 3.5989
+    },
+    {
+      "id": "reindeer-knitted-earmuff-listener",
+      "title": "Reindeer Listening in Red Earmuffs",
+      "alt": "Brown cartoon reindeer standing in red knitted earmuffs and a yellow scarf tied in a bow.",
+      "description": "The reindeer turns its face slightly upward above the bow-tied scarf. Slim legs, small white back markings and a short branched antler crown distinguish the listening pose.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_449/source/reindeer-knitted-earmuff-listener.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "dee826f250540e897b26a75ab0e5f1633b9d551ce802e1a4f5ae5c2e8e57c2c0",
+      "inputSignature": "f6fb27adb4fc67bfd990b57979a8b8b8f060df27a06ea294d41e218e1c460cdf",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 878687,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 878687,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        288,
+        20,
+        1030,
+        1157
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_449/exports/reindeer-knitted-earmuff-listener.pdf",
+          "bytes": 878687,
+          "sha256": "43f395e2ccff1078258184842849bcc73eb8042eda4a465ff4678356490d383c"
+        },
+        "webp": {
+          "path": "work/production/wave_449/exports/reindeer-knitted-earmuff-listener.webp",
+          "bytes": 702882,
+          "sha256": "c3125b0900ca47ac12dcc1c987ae50b3b6a7ccd25c3ef2f7f69b2c0904306e48"
+        },
+        "thumb": {
+          "path": "work/production/wave_449/exports/reindeer-knitted-earmuff-listener-thumb.webp",
+          "bytes": 43838,
+          "sha256": "b48cb43626c77d40a42936ee15e6b20f27ee34f126fdd708a0f7f9d5adf08c43"
+        }
+      },
+      "proofSha256": "73231e31cb51201068348bc6a199affd956f79b65f14953f30c0bd538568ad31",
+      "pairMeanRgbDifference": 2.38736
+    },
+    {
+      "id": "reindeer-snowflake-butterfly-pose",
+      "title": "Reindeer Watching a Snowflake",
+      "alt": "Seated cartoon reindeer gazing up at a large blue snowflake with both forehooves lifted beside its cream chest.",
+      "description": "A single detailed snowflake floats just above the dark nose. Wide antlers, teal eyes and rounded folded legs make the surprised upward-looking pose easy to recognize.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_449/source/reindeer-snowflake-butterfly-pose.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1241,
+      "height": 1268,
+      "pdfWidth": 979,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "ad303f345df96be3e43db0f0622a539c76c71deb8c0d9777ee539db8464b33aa",
+      "inputSignature": "786da5ffb33e0863d117473cd62732e195e10091bd02e135d2e86fda842ad8b3",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 968191,
+        "weightedCmykRmse": 0.851664
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1135539,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 968191,
+          "weightedCmykRmse": 0.851664
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        143,
+        62,
+        957,
+        1181
+      ],
+      "image": {
+        "width": 979,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_449/exports/reindeer-snowflake-butterfly-pose.pdf",
+          "bytes": 968191,
+          "sha256": "e524a401563eac2a4eb79ac7e81a4c67d7ad848ff73906ff1b570add97c669ca"
+        },
+        "webp": {
+          "path": "work/production/wave_449/exports/reindeer-snowflake-butterfly-pose.webp",
+          "bytes": 741854,
+          "sha256": "612c047682a0f34304ff4dbed908e5c348ceeda5a8ccfbd9827af58afe19e008"
+        },
+        "thumb": {
+          "path": "work/production/wave_449/exports/reindeer-snowflake-butterfly-pose-thumb.webp",
+          "bytes": 52510,
+          "sha256": "d82dfb0a67809ce3c834b789be41fe66cf6cde7b91fb70a18fc0f74d415cae46"
+        }
+      },
+      "proofSha256": "646b2ff6a78403acbf824ef3a9e3e1a1725540e991c9923f8f37af7e8bdf8a60",
+      "pairMeanRgbDifference": 1.87857
+    },
+    {
+      "id": "reindeer-ornament-painter",
+      "title": "Reindeer Painting a Gold Star Ornament",
+      "alt": "Curly-forelocked cartoon reindeer painting a gold star on a green bauble supported by a small wooden cradle.",
+      "description": "A short brush touches the star while the other forehoof steadies the ornament. The gold-capped bauble, red paint pot and small supporting cradle form a clear holiday craft scene.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_449/source/reindeer-ornament-painter.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1223,
+      "height": 1286,
+      "pdfWidth": 951,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "85dee6af5f60627bf1aa72915216e18523b350596729ec653e70118f906af8d7",
+      "inputSignature": "dae7aa7f41ed2cce9afcbd9afefb5b168d5639275b59a1c419a9aafb04b75fbd",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 844370,
+        "weightedCmykRmse": 0.849209
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1084225,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 844370,
+          "weightedCmykRmse": 0.849209
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        210,
+        24,
+        1052,
+        1220
+      ],
+      "image": {
+        "width": 951,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_449/exports/reindeer-ornament-painter.pdf",
+          "bytes": 844370,
+          "sha256": "0d39c6cfa3509a326e75596c2735d5f4e63259aea860697a36f4b8bbc8254043"
+        },
+        "webp": {
+          "path": "work/production/wave_449/exports/reindeer-ornament-painter.webp",
+          "bytes": 933190,
+          "sha256": "45e5f0b16fa27df17afceed37eea8a297a7ef16380ba94a7b290945d7306c30f"
+        },
+        "thumb": {
+          "path": "work/production/wave_449/exports/reindeer-ornament-painter-thumb.webp",
+          "bytes": 54766,
+          "sha256": "22402a51bd2ad7b66c8ebfdbc5f702cf712ed160cba25800abdbac2d096072ee"
+        }
+      },
+      "proofSha256": "7e45f983c382afa8b2632801069d5237343eb6aee3b200ea274b94140caeef3b",
+      "pairMeanRgbDifference": 3.80296
+    },
+    {
+      "id": "reindeer-carrot-basket",
+      "title": "Reindeer Looking into a Carrot Basket",
+      "alt": "Small brown cartoon reindeer in a green gingham neck bow lowering its nose toward a wicker basket of carrots.",
+      "description": "The animal leans over the basket's arched handle while all four hooves remain visible. Pale cheeks, upright ears and small white back markings distinguish the curious figure.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_449/source/reindeer-carrot-basket.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1312,
+      "height": 1199,
+      "pdfWidth": 1000,
+      "pdfHeight": 914,
+      "sourceType": "raster",
+      "sourceSha256": "d1162b87e7ab69c7bf31d45abae2976dc3b18c6e37bea441b44943e6e1a5c376",
+      "inputSignature": "e1b01035333de5bea8fe764a1cfdba33065e6c87e6a65723e1aefdcb0ddea0c1",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 970263,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 970263,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        192,
+        141,
+        1132,
+        1051
+      ],
+      "image": {
+        "width": 1000,
+        "height": 914,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_449/exports/reindeer-carrot-basket.pdf",
+          "bytes": 970263,
+          "sha256": "f6f6eea83447aa19a21dd60464701346c670ca5fdcbe6711bd2301931853d86a"
+        },
+        "webp": {
+          "path": "work/production/wave_449/exports/reindeer-carrot-basket.webp",
+          "bytes": 827876,
+          "sha256": "7e3105c5939a8b91ff9c3d445857551b69ea36bd74fdc9e02852cf55346eaf6c"
+        },
+        "thumb": {
+          "path": "work/production/wave_449/exports/reindeer-carrot-basket-thumb.webp",
+          "bytes": 54576,
+          "sha256": "cff0fb88d1bacbc3e817b3fb86918a6afbadeb3cba54ed6dbd005e66f5c18bff"
+        }
+      },
+      "proofSha256": "1f4a95383bbce98df9439351524332dd49507b93c7eba9c43b478e8e128c41c3",
+      "pairMeanRgbDifference": 2.97528
+    },
+    {
+      "id": "reindeer-ribbon-tail-play",
+      "title": "Reindeer Watching an Unrolling Ribbon",
+      "alt": "Russet cartoon reindeer turning its head back toward a red ribbon unrolling from a spool beside its rear hoof.",
+      "description": "The curved body and sideways glance lead toward the loose ribbon. Cream cheeks, a short tail and uneven branching antlers distinguish the playful standing figure.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_449/source/reindeer-ribbon-tail-play.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli",
+      "topic": "reindeer",
+      "width": 1239,
+      "height": 1269,
+      "pdfWidth": 976,
+      "pdfHeight": 1000,
+      "sourceType": "raster",
+      "sourceSha256": "d8cbb301790124844eacd505587b382ac79b1cda5f76304a9abd8c14657740d7",
+      "inputSignature": "a989c03763b8962b631aa51e61b620efcd41b538b7b54a68d3cdbb5c012434a0",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 827877,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 827877,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        300,
+        55,
+        1082,
+        1190
+      ],
+      "image": {
+        "width": 976,
+        "height": 1000,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_449/exports/reindeer-ribbon-tail-play.pdf",
+          "bytes": 827877,
+          "sha256": "0764ddbff3de1f1e8295972cb0d494389d9aaaf59c412c4937c9954431bb77ff"
+        },
+        "webp": {
+          "path": "work/production/wave_449/exports/reindeer-ribbon-tail-play.webp",
+          "bytes": 664252,
+          "sha256": "892812e34d4efe1b16765b1c8a94025f8bf49345090a81a69f56d8a6eae2b8b5"
+        },
+        "thumb": {
+          "path": "work/production/wave_449/exports/reindeer-ribbon-tail-play-thumb.webp",
+          "bytes": 48318,
+          "sha256": "5a00b222ec2bf161cdf67204924e5c4efe202dc6bbcb12e6b88f3345c83d433f"
+        }
+      },
+      "proofSha256": "d6431bca227634cb7e87d646f7c3f0fdf808fb0ce8d1101174a231fff4106645",
+      "pairMeanRgbDifference": 2.41956
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-27T06:41:05.421430+00:00",
+  "screenReviewEvidence": "work/production/wave_449/native-proof-review.jpg",
+  "screenReviewNotes": "Actual rendered CMYK proofs inspected; complete composition, coherent visible details, no clipping or unintended backdrop, matching specific metadata. Physical print proof not claimed.",
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-27T07:33:51.050Z"
+}

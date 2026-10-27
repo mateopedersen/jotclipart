@@ -1,0 +1,77 @@
+{
+  "wave": "wave_445",
+  "topic": "elf",
+  "method": "builtin-image-generation",
+  "research": "data/research/elf-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "elf-reading-to-a-hedgehog",
+      "title": "Elf Reading with a Hedgehog",
+      "alt": "White-haired cartoon elf seated on a stump and showing an open blank storybook to a small scarf-wearing hedgehog.",
+      "description": "The friendly hedgehog looks up beside the elf's red lace-up shoes. A cream-sleeved green outfit and red folded cap frame the open book between them.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_445/source/elf-reading-to-a-hedgehog.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-parcel-delivery-bicycle",
+      "title": "Elf Walking a Christmas Cargo Bicycle",
+      "alt": "Black-curled cartoon elf in green short overalls walking beside a red cargo bicycle carrying wrapped Christmas gifts.",
+      "description": "One hand holds the handlebar beside the loaded wooden cargo box. A wreath with a gold bell decorates its front, while the elf steps forward in bright red curled shoes.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_445/source/elf-parcel-delivery-bicycle.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-ribbon-knot-lesson",
+      "title": "Three Christmas Elves Ice Skating",
+      "alt": "Three different green-clothed cartoon elves holding hands in a curved skating chain, each wearing complete silver-bladed skates.",
+      "description": "A curly-haired elf leads two smaller companions with dark braids and a red fringe. Different green outfits, hats and striped or plain leggings give each skater a distinct identity.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_445/source/elf-ribbon-knot-lesson.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-kite-test",
+      "title": "Elf Flying a Christmas Kite",
+      "alt": "Braided cartoon elf in a green tunic holding a red-and-green diamond kite and its connected string spool.",
+      "description": "The kite's red ribbon tail curves beside the elf's raised hand. Blue eyes, a star-tipped green cap and brown curled shoes distinguish the cheerful standing figure.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_445/source/elf-kite-test.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-cleaning-paintbrushes",
+      "title": "Elf Rinsing a Paintbrush",
+      "alt": "Curly-haired cartoon elf seated on a red gift, rinsing a brush in a small bowl beside a jar of paintbrushes.",
+      "description": "Water droplets rise beside the brush as it touches the bowl. A red sash, striped stockings and buckled brown boots distinguish the green-clothed character.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_445/source/elf-cleaning-paintbrushes.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-map-and-compass",
+      "title": "Elf Planning a Gift Delivery Route",
+      "alt": "Black-haired cartoon elf kneeling beside a red gift sack, holding a compass and pointing to a tree-marked imaginary map.",
+      "description": "A dotted route winds between green tree symbols on the cream map. The elf's compass, red cap and full sack of toys create a clear fictional delivery-planning scene.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_445/source/elf-map-and-compass.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

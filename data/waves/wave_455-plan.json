@@ -1,0 +1,33 @@
+{
+  "wave": "wave_455",
+  "topic": "reindeer",
+  "method": "builtin-image-generation",
+  "research": "data/research/reindeer-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "reindeer-north-pole-postcard",
+      "title": "Reindeer Delivering Cards by a Holiday Post",
+      "alt": "Cartoon reindeer in a blue bow and saddlebag trotting beside a red-and-white decorative post with a blank envelope-shaped plaque.",
+      "description": "Cream cards with small festive symbols peek from the blue satchel. The reindeer's raised foreleg and the plaque's red seal give the delivery scene a clear focal point.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_455/source/reindeer-north-pole-postcard.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "reindeer-holiday-hug",
+      "title": "Reindeer with a Bird on Its Antler",
+      "alt": "Shaggy charcoal-brown cartoon reindeer bust looking up at a tiny red-breasted brown bird perched on one antler branch.",
+      "description": "The small bird grips the outer branch above the reindeer's surprised face. A long cream muzzle, pale eyebrows and narrow red neckband distinguish the wide head-and-shoulders portrait.",
+      "color": "Brown",
+      "style": "Color",
+      "source": "work/production/wave_455/source/reindeer-holiday-hug.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

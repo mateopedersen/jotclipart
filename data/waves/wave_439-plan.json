@@ -1,0 +1,77 @@
+{
+  "wave": "wave_439",
+  "topic": "elf",
+  "method": "builtin-image-generation",
+  "research": "data/research/elf-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "elf-ribbon-weaver",
+      "title": "Elf Guiding a Red Ribbon",
+      "alt": "Blond cartoon elf in green clothes seated beside a small wooden loom, guiding a red ribbon over its rollers.",
+      "description": "A long red ribbon curls from the little wooden loom past the elf's pointed shoes. A red bell-tipped cap, embroidered green waistcoat and broad striped stockings frame the seated character.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_439/source/elf-ribbon-weaver.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-mending-a-snow-globe",
+      "title": "Elf Lifting a Snow Globe",
+      "alt": "White-haired cartoon elf lifting a clear snow globe above a decorated green Christmas-tree base.",
+      "description": "The elf carefully holds a snowy globe containing a tiny house and fir trees. A gap above its separate gold-rimmed tree base makes the lifting action easy to see.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_439/source/elf-mending-a-snow-globe.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-painting-a-sled",
+      "title": "Elf Painting a Red Sled",
+      "alt": "Auburn-pigtailed cartoon elf kneeling beside a red sled with a paintbrush and a small silver paint tin.",
+      "description": "The elf presses a red-tipped brush against the sled's curved runner. Gold bells trim the green cap and capelet, while curled shoes and striped stockings complete the low kneeling pose.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_439/source/elf-painting-a-sled.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-testing-handbells",
+      "title": "Elf Ringing Two Handbells",
+      "alt": "Silver-haired cartoon elf in a flared green dress ringing two gold bells while balancing on one foot.",
+      "description": "Raised arms and a lifted shoe give this bell-ringing elf a lively diagonal pose. A gold bow, scalloped dress panels and red shoes distinguish the small Christmas character.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_439/source/elf-testing-handbells.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-sorting-wooden-blocks",
+      "title": "Elf Playing with Shape Blocks",
+      "alt": "Blue-eyed cartoon elf with silver hair buns sitting beside a wooden shape tray, holding a green cube and red triangle.",
+      "description": "A divided wooden tray holds bright blocks between the elf's outstretched legs. Silver hair buns, a folded red cap and a cream-edged green jacket distinguish the seated figure.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_439/source/elf-sorting-wooden-blocks.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "elf-singing-at-a-music-stand",
+      "title": "Elf Singing with a Red Songbook",
+      "alt": "White-haired cartoon elf in a green capelet holding a red book and raising one open hand while singing.",
+      "description": "The elf's open mouth and outstretched hand suggest a cheerful carol. A curled bell-tipped hat, cream piping and layered green hems keep the standing silhouette clear.",
+      "color": "Green",
+      "style": "Color",
+      "source": "work/production/wave_439/source/elf-singing-at-a-music-stand.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}

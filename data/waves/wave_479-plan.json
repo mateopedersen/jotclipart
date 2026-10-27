@@ -1,0 +1,78 @@
+{
+  "wave": "wave_479",
+  "topic": "2027",
+  "collectionTarget": 100,
+  "method": "builtin-image-generation",
+  "research": "data/research/2027-2026-10-27.json",
+  "maxPdfBytes": 997000,
+  "minimumJpxQualityDb": 48,
+  "maximumWeightedCmykRmse": 1.8,
+  "items": [
+    {
+      "id": "2027-business-vision",
+      "title": "2027 Vision Compass",
+      "alt": "Navy 2027 Vision lettering inside a gold compass ring with four pointed markers and a curved upward arrow.",
+      "description": "The clear year sits above the word Vision within the open center of the circular design.",
+      "color": "Gold",
+      "style": "Color",
+      "source": "work/production/wave_479/source/2027-business-vision.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-business-goals",
+      "title": "2027 Goals Planner",
+      "alt": "Open navy spiral planner labeled 2027 Goals, with three empty checkbox lines and a matching blue pen.",
+      "description": "Gold binding rings separate the dark cover-facing page from the clean cream checklist.",
+      "color": "Navy",
+      "style": "Color",
+      "source": "work/production/wave_479/source/2027-business-goals.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-business-ideas",
+      "title": "New Ideas for 2027 Lightbulb",
+      "alt": "Gold lightbulb with navy New Ideas for 2027 lettering inside the glass and two green leaves beside its base.",
+      "description": "The large serif year follows three shorter words above the visible glowing filament.",
+      "color": "Gold",
+      "style": "Color",
+      "source": "work/production/wave_479/source/2027-business-ideas.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-teamwork-bridge",
+      "title": "Team Building a 2027 Bridge",
+      "alt": "Two illustrated office workers positioning gold 2027 blocks across a small stone bridge labeled Building Together.",
+      "description": "A curly-haired woman in navy and a short-haired man in a rust jacket lean toward the numbered arch from opposite sides.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_479/source/2027-teamwork-bridge.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-launch-briefcase",
+      "title": "Launch into 2027 Briefcase",
+      "alt": "Navy business briefcase with a gold rocket clasp beneath a Launch into 2027 ribbon and sweeping upward arrow.",
+      "description": "The full gold arrow curves around the lower case and rises at one side of its stitched flap.",
+      "color": "Navy",
+      "style": "Color",
+      "source": "work/production/wave_479/source/2027-launch-briefcase.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    },
+    {
+      "id": "2027-new-chapter-book",
+      "title": "A New Chapter 2027 Book",
+      "alt": "Open cream-and-gold book with A New Chapter across the pages and large 2027 below the right-hand wording.",
+      "description": "Small blue floral ornaments and a gold ribbon bookmark frame the clear serif message.",
+      "color": "Ivory",
+      "style": "Color",
+      "source": "work/production/wave_479/source/2027-new-chapter-book.png",
+      "printMaxEdgePx": 1000,
+      "alphaCompression": "zopfli"
+    }
+  ]
+}
