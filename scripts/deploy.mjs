@@ -64,6 +64,9 @@ writeFileSync(
 );
 // Use the process-local pinned uploader: proactive token renewal and durable
 // checkpoints. No dependency file or reviewed content is modified.
+// The live configuration can change while a long staging job runs. Recheck
+// immediately before activating a pruned release; failure stops deployment.
+run('scripts/delivery/production-preflight.mjs');
 run('--require', [
   './scripts/delivery/pages-upload-preload.cjs',
   'node_modules/wrangler/wrangler-dist/cli.js',
