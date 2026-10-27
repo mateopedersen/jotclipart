@@ -6,6 +6,8 @@ import { resolve, join, relative } from 'node:path';
 import { createHash } from 'node:crypto';
 import { representationKinds } from '../scripts/asset-representations.mjs';
 import { readPublication } from '../scripts/publication-policy.mjs';
+import { collectDeliveryFiles } from '../scripts/delivery/manifest.mjs';
+import { releaseRevision } from '../scripts/release-revision.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const topics = JSON.parse(readFileSync(join(root, 'data/topics.json'))).topics;
@@ -161,7 +163,19 @@ test(
         process.env.CF_PAGES === '1' || (!path.startsWith('/catalog/') && !localMedia.has(path))
       );
     });
-    assert.ok(output.length <= PAGES_FILE_LIMIT, `too many static assets: ${output.length}`);
+    // Preparation output is never uploaded. Its reviewed delivery files are
+    // verified in R2 and removed from a separate final artifact; that artifact
+    // receives an independent exact count and size check before deployment.
+    if (process.env.CF_PAGES === '1' && process.env.UC_DELIVERY_PREPARE === '1') {
+      const delivery = collectDeliveryFiles(dist, releaseRevision());
+      assert.ok(delivery.length > 0, 'delivery preparation has no verified-file candidates');
+      assert.ok(
+        output.length - delivery.length <= PAGES_FILE_LIMIT,
+        `prepared output still exceeds Pages limit: ${output.length - delivery.length}`,
+      );
+    } else {
+      assert.ok(output.length <= PAGES_FILE_LIMIT, `too many static assets: ${output.length}`);
+    }
     for (const file of output)
       assert.ok(statSync(file).size <= 25 * 1024 * 1024, `oversized static asset: ${file}`);
   },
