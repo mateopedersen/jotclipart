@@ -17,13 +17,13 @@ const cases = [
   ['/search/?q=flower', false],
   ['/favorites/', false],
   ['/edit/winter-arctic-fox-resting/', false],
-  ['/404/', false],
+  ['/uc-qa-nonexistent-page/', false],
 ];
 const report = { date: new Date().toISOString(), base, checks: [], errors: [] };
 for (const [path, indexable] of cases) {
   try {
     const res = await fetch(base + path, { signal: AbortSignal.timeout(30000) });
-    assert.equal(res.status, path === '/404/' ? 404 : 200);
+    assert.equal(res.status, path === '/uc-qa-nonexistent-page/' ? 404 : 200);
     const html = await res.text();
     const attribute = (tag, key) => tag.match(new RegExp(`\\b${key}=["']([^"']*)["']`, 'i'))?.[1];
     const tags = [...html.matchAll(/<meta\b[^>]*>/gi)]
