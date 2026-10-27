@@ -1,3 +1,4 @@
+import { sitemapXml } from './support/sitemaps.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
@@ -23,7 +24,7 @@ test('inline downloads accept verified originals and reject external or malforme
 });
 test('every inline catalog journey preserves exact original URLs, filenames, sizes and hashes without download HTML pages', () => {
   assert.ok(!existsSync('dist/download'));
-  assert.ok(!readFileSync('dist/sitemap-pages.xml', 'utf8').includes('/download/'));
+  assert.ok(!sitemapXml('pages').includes('/download/'));
   assert.match(readFileSync('dist/_redirects', 'utf8'), /\/download\/\* \/art\/:splat 301/);
   const manifest = JSON.parse(readFileSync('dist/search-data/manifest.json'));
   const records = new Map(

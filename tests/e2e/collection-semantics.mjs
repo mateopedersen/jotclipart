@@ -97,12 +97,23 @@ try {
     assert.equal(image.aggregateRating, undefined);
     report.checkedArtwork++;
   }
-  const pages = await page.request.get(base + '/sitemap-pages.xml'),
-    images = await page.request.get(base + '/sitemap-images.xml');
-  assert.equal(pages.status(), 200);
-  assert.equal(images.status(), 200);
-  const pageXml = await pages.text(),
-    imageXml = await images.text();
+  const index = await page.request.get(base + '/sitemap.xml');
+  assert.equal(index.status(), 200);
+  const indexXml = await index.text();
+  const paths = [
+    ...indexXml.matchAll(
+      /<sitemap>\s*<loc>https:\/\/ultraclipart\.com\/(sitemap-(?:pages|images)(?:-(?:[2-9]|[1-9]\d+))?\.xml)<\/loc>\s*<\/sitemap>/g,
+    ),
+  ].map((match) => match[1]);
+  const groups = { pages: [], images: [] };
+  for (const path of paths) {
+    const response = await page.request.get(`${base}/${path}`);
+    assert.equal(response.status(), 200, path);
+    groups[path.startsWith('sitemap-images') ? 'images' : 'pages'].push(await response.text());
+  }
+  assert.ok(groups.pages.length && groups.images.length, 'Both sitemap types must be indexed');
+  const pageXml = groups.pages.join(''),
+    imageXml = groups.images.join('');
   assert.ok(pageXml.includes('https://ultraclipart.com/clipart/' + topic + '/'));
   for (const artwork of rows) {
     assert.ok(pageXml.includes('/art/' + artwork.id + '/'));

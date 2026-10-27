@@ -1,3 +1,4 @@
+import { sitemapXml } from './support/sitemaps.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
@@ -79,8 +80,8 @@ test(
   },
   () => {
     const text = (path) => readFileSync(new URL('../dist/' + path, import.meta.url), 'utf8');
-    const pages = text('sitemap-pages.xml'),
-      images = text('sitemap-images.xml');
+    const pages = sitemapXml('pages'),
+      images = sitemapXml('images');
     for (const topic of topics) {
       const html = text(`clipart/${topic}/index.html`);
       assert.ok(html.includes(`https://ultraclipart.com/clipart/${topic}/`));

@@ -1,3 +1,4 @@
+import { sitemapXml } from './support/sitemaps.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
@@ -90,8 +91,8 @@ test(
       assert.doesNotMatch(collection, /content="noindex/);
       for (const item of items.filter((a) => a.topic === topic)) {
         const detail = text(`art/${item.id}/index.html`);
-        assert.ok(text('sitemap-images.xml').includes(`https://ultraclipart.com/art/${item.id}/`));
-        assert.ok(text('sitemap-pages.xml').includes(`https://ultraclipart.com/art/${item.id}/`));
+        assert.ok(sitemapXml('images').includes(`https://ultraclipart.com/art/${item.id}/`));
+        assert.ok(sitemapXml('pages').includes(`https://ultraclipart.com/art/${item.id}/`));
         assert.ok(collection.includes(`/edit/${item.id}/`));
         assert.ok(detail.includes(`https://ultraclipart.com/art/${item.id}/`));
         assert.match(detail, /ImageObject/);
