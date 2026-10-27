@@ -16,6 +16,9 @@ const context = await browser.newContext({
   reducedMotion: 'reduce',
 });
 const page = await context.newPage();
+await page.route('**/api/cookie-region.json', (route) =>
+  route.fulfill({ contentType: 'application/json', body: '{"showNotice":false}' }),
+);
 const errors = [],
   violations = [],
   checks = [],
@@ -37,6 +40,11 @@ const change = async (selector, value) => {
 };
 const saved = async (name) => {
   const p = page.waitForEvent('download');
+  await page
+    .locator('details')
+    .filter({ has: page.locator('[data-action="save"]') })
+    .locator('summary')
+    .click();
   await action('save').click();
   const d = await p;
   const file = path.join(out, name);
