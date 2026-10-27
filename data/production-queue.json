@@ -27,7 +27,7 @@
   "humanApprovedArtworkCount": 0,
   "availableArtworkCount": 13784,
   "remainingToDraw": 3798,
-  "nextAction": "Develop distinct compositions for the remaining topic targets; export, visually review, verify all R2/CDN representations, then publish a complete wave.",
+  "nextAction": "Nutcracker, Election, Hanukkah and Veterans are complete and live-verified at 50 each. Finish the owner-corrected green Christmas Elf cartoon collection. The 36 rejected private sources are excluded and do not count. Preserve distinct character identities, image-specific copy and all source/CMYK/CDN/editor/live gates.",
   "topics": [
     {
       "topic": "halloween",
@@ -153085,5 +153085,7 @@
       "publicationBlocked": false,
       "sha256": "a99692ce28383f7e930b78da5d10436c7ca39ad256414641cb7fa8e748f922af"
     }
-  ]
+  ],
+  "verifiedPublishedGeneratedArtworkCount": 1702,
+  "acceptedAwaitingRelease": 0
 }
