@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { resolve } from 'node:path';
 import { publishedArt } from './catalog';
+import sourceArt from '../../data/art.json';
 import { studioScenes } from './studio-scenes';
 import { buildStudioComposition, studioCompositionSvg } from './studio-compositions';
 
@@ -9,16 +10,22 @@ import { buildStudioComposition, studioCompositionSvg } from './studio-compositi
 // just like the shared screenshot generator, rather than the emitted chunk.
 const publicRoot = resolve(process.cwd(), 'public');
 const artwork = new Map(publishedArt.map((item) => [item.id, item]));
+const originalArt = new Map(sourceArt.map((item) => [item.id, item]));
 const embedded = new Map<string, string>();
 function previewImage(id: string) {
-  const item = artwork.get(id);
-  if (!item || !item.thumb.startsWith('/previews/') || item.thumb.includes('..'))
+  const item = originalArt.get(id);
+  if (!item || !/^\/catalog\/[a-zA-Z0-9/._-]+\.webp$/.test(item.webp) || item.webp.includes('..'))
     throw new Error(`Unverified Studio preview source: ${id}`);
-  if (!embedded.has(item.thumb)) {
-    const bytes = readFileSync(resolve(publicRoot, '.' + item.thumb));
-    embedded.set(item.thumb, 'data:image/webp;base64,' + bytes.toString('base64'));
+  if (!embedded.has(item.webp)) {
+    const bytes = readFileSync(resolve(publicRoot, '.' + item.webp));
+    if (
+      bytes.length !== item.files.webp.bytes ||
+      createHash('sha256').update(bytes).digest('hex') !== item.files.webp.sha256
+    )
+      throw new Error(`Studio preview original failed verification: ${id}`);
+    embedded.set(item.webp, 'data:image/webp;base64,' + bytes.toString('base64'));
   }
-  return embedded.get(item.thumb)!;
+  return embedded.get(item.webp)!;
 }
 
 // A self-contained, source-bound SVG allows native image lazy loading. An SVG
