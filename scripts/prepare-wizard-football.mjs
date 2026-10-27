@@ -3,7 +3,11 @@ import path from 'node:path';
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import sharp from 'sharp';
-import { metadataSignature, validateEditorialReview } from './artwork-editorial.mjs';
+import {
+  metadataSignature,
+  reviewContextSignature,
+  validateEditorialReview,
+} from './artwork-editorial.mjs';
 import { mergeEditorialBatch } from './apply-editorial-review.mjs';
 import { reviewedImportCatalog } from './reviewed-imports.mjs';
 import { collectionSourceSignature, validateCollectionCopy } from './collection-editorial.mjs';
@@ -212,6 +216,7 @@ for (const row of reviewed.items) {
     sourceSha256: item.files.webp.sha256,
     imageSha256: item.files.webp.sha256,
     inputMetadataSha256: metadataSignature(item),
+    inputContextSha256: reviewContextSignature(item),
     inspectedImage: item.webp,
     reviewedAt: row.reviewedAt,
     observations: row.observations,
