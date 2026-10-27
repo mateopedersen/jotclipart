@@ -155,6 +155,23 @@ test('source restoration ignores markup examples and preserves unrelated image s
   );
   assert.equal(restoreOriginalCatalogImages(input, index), input);
 });
+
+test('source restoration preserves attribute-like words and entities inside text values', () => {
+  const alt = 'Two acorns of different sizes rest beside a sign saying srcset & "hello".';
+  const input = page(
+    `<img src="${urls[440]}" srcset="${urls[440]} 440w" sizes="240px" alt="${alt.replaceAll('&', '&amp;').replaceAll('"', '&quot;')}" title="Image sizes and href values" data-label="sizes srcset imagesizes" loading="lazy">`,
+  );
+  const output = restoreOriginalCatalogImages(input, index);
+  const attributes = htmlElements(output).find((e) => e.name === 'img').attributes;
+  assert.equal(attributes.alt, alt);
+  assert.equal(attributes.title, 'Image sizes and href values');
+  assert.equal(attributes['data-label'], 'sizes srcset imagesizes');
+  assert.equal(attributes.loading, 'lazy');
+  assert.equal(attributes.src, item.webp);
+  assert.equal(attributes.srcset, undefined);
+  assert.equal(attributes.sizes, undefined);
+  assert.equal(restoreOriginalCatalogImages(output, index), output);
+});
 test('raw script/style/textarea/template/comment markup is not indexed as a displayed image', () => {
   const html =
     page(`<!-- ${image} --><script>const example = '${image}'</script><style>/* ${image} */</style>
