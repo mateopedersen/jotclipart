@@ -362,3 +362,21 @@ The pending Marvel artwork remains unrelated. No new plan purchase or Search
 Console/Bing submission is authorized. Record actual successful deployment counts
 and distinguish rendered HTML from a newer delivery-control revision. The first
 migration is not proof that the remaining five-million-item architecture is done.
+
+## Public image delivery — latest owner decision, 2026-10-27
+
+The owner reverted the public low-resolution preview strategy after Google
+Images selected a 293 × 440 derivative. Public home, collection and artwork pages
+must display the original reviewed R2 image at its stable
+`https://assets.ultraclipart.com/` URL. Do not replace these public image sources
+with `/previews/` files or responsive candidates that select smaller derivatives
+without a new explicit owner decision. Keep lazy loading, reserved layout space,
+and immutable original URLs; do not re-encode or enlarge originals.
+
+The shared image build hook enforces original sources and original ImageObject
+metadata for indexable catalog pages, including future imported content. Main
+artwork images link to the full original. Private/noindex editor libraries may
+still use small thumbnails; editing and export must use verified originals.
+The original-source decision does not cancel the separate R2/Pages capacity
+migration. Preserve old URLs, personal data and the coordinated single-publisher
+workflow. Do not claim Google rankings or immediate reindexing are guaranteed.

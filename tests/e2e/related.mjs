@@ -416,6 +416,7 @@ try {
   const failureExample = renderedSnapshot.alternatives[0];
   const firstThumb = failureExample.id;
   const failedUrls = new Set([
+    failureExample.webp,
     failureExample.thumb,
     ...(failureExample.thumbSrcSet || '')
       .split(',')
