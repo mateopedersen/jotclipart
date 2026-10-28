@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
+import { testBuildUrl } from './support/build-directory.mjs';
 import {
   readCollectionAudit,
   readCollectionRegistries,
@@ -57,10 +58,14 @@ test('new topics, changed pictures, duplicated prose and stale example IDs canno
 
 test(
   'all built subject pages render the short summary and matching schema without the removed essays',
-  { skip: !existsSync(new URL('dist/clipart/sunflower/index.html', root)) },
+  { skip: !process.env.UC_TEST_BUILD_DIR && !existsSync(new URL('clipart/sunflower/index.html', testBuildUrl)) },
   () => {
+    if (process.env.UC_TEST_BUILD_REVISION)
+      assert.ok(readFileSync(new URL('index.html', testBuildUrl), 'utf8').includes(
+        `name="build-revision" content="${process.env.UC_TEST_BUILD_REVISION}"`,
+      ), 'Unexpected build revision');
     for (const [topic, record] of Object.entries(registry.topics)) {
-      const html = readFileSync(new URL(`dist/clipart/${topic}/index.html`, root), 'utf8');
+      const html = readFileSync(new URL(`clipart/${topic}/index.html`, testBuildUrl), 'utf8');
       const schema = [
         ...html.matchAll(/<script[^>]+type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g),
       ]

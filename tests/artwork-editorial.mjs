@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
+import { testBuildUrl } from './support/build-directory.mjs';
 import {
   cleanLegacyCopy,
   copyIssues,
@@ -181,13 +182,17 @@ test('reviews reject stale source pixels, metadata, missing evidence and generic
 test(
   'visible artwork copy, search data and image schema agree after a production build',
   {
-    skip: !existsSync(
-      new URL('dist/art/new-york-clipart-central-park-bow-bridge/index.html', root),
+    skip: !process.env.UC_TEST_BUILD_DIR && !existsSync(
+      new URL('art/new-york-clipart-central-park-bow-bridge/index.html', testBuildUrl),
     ),
   },
   () => {
-    const manifest = read('dist/search-data/manifest.json');
-    const directory = new URL(`dist/search-data/${manifest.version}/items/`, root);
+    if (process.env.UC_TEST_BUILD_REVISION)
+      assert.ok(readFileSync(new URL('index.html', testBuildUrl), 'utf8').includes(
+        `name="build-revision" content="${process.env.UC_TEST_BUILD_REVISION}"`,
+      ), 'Unexpected build revision');
+    const manifest = JSON.parse(readFileSync(new URL('search-data/manifest.json', testBuildUrl), 'utf8'));
+    const directory = new URL(`search-data/${manifest.version}/items/`, testBuildUrl);
     const cards = new Map(
       readdirSync(directory)
         .filter((name) => name.endsWith('.json'))
@@ -203,7 +208,7 @@ test(
       assert.equal(card.download.files.webp.sha256, item.files.webp.sha256, item.id);
     }
     for (const record of registry.artworks) {
-      const html = readFileSync(new URL(`dist/art/${record.id}/index.html`, root), 'utf8');
+      const html = readFileSync(new URL(`art/${record.id}/index.html`, testBuildUrl), 'utf8');
       const schemas = [
         ...html.matchAll(/<script[^>]+type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g),
       ].map((match) => JSON.parse(match[1]));
