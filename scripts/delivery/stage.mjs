@@ -29,7 +29,10 @@ const root = process.cwd(),
   actors = deliveryActorCount();
 if (revision === 'local') throw Error('Production revision required');
 async function main() {
-  const releaseLock = await awaitAccountWriter(process.env, { notify: console.log });
+  const releaseLock = await awaitAccountWriter(process.env, {
+    timeoutMs: Number(process.env.UC_DELIVERY_WRITER_WAIT_MS ?? 3_600_000),
+    notify: console.log,
+  });
   try {
     const allFiles = collectDeliveryFiles(dist, revision),
       tree = merkle(allFiles);
