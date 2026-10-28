@@ -590,6 +590,7 @@
     0 8px 20px #285e9512;
 }
 .subject-art {
+  content-visibility: auto;
   position: relative;
   height: clamp(170px, 21vw, 235px);
   min-width: 0;

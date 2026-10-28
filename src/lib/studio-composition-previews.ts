@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { resolve } from 'node:path';
+import sharp from 'sharp';
 import { publishedArt } from './catalog';
 import sourceArt from '../../data/art.json';
 import { studioScenes } from './studio-scenes';
@@ -11,7 +12,7 @@ import { buildStudioComposition, studioCompositionSvg } from './studio-compositi
 const publicRoot = resolve(process.cwd(), 'public');
 const artwork = new Map(publishedArt.map((item) => [item.id, item]));
 const originalArt = new Map(sourceArt.map((item) => [item.id, item]));
-const embedded = new Map<string, string>();
+const embedded = new Map<string, Promise<string>>();
 function previewImage(id: string) {
   const item = originalArt.get(id);
   if (!item || !/^\/catalog\/[a-zA-Z0-9/._-]+\.webp$/.test(item.webp) || item.webp.includes('..'))
@@ -23,25 +24,42 @@ function previewImage(id: string) {
       createHash('sha256').update(bytes).digest('hex') !== item.files.webp.sha256
     )
       throw new Error(`Studio preview original failed verification: ${id}`);
-    embedded.set(item.webp, 'data:image/webp;base64,' + bytes.toString('base64'));
+    // These are composite UI cards, never download or editor sources. Embedding
+    // multi-megabyte originals in each SVG made a few small cards cost 30 MB.
+    // Keep the exact composition but size its embedded artwork for a 2x screen.
+    embedded.set(
+      item.webp,
+      sharp(bytes)
+        .rotate()
+        .resize({ width: 768, height: 768, fit: 'inside', withoutEnlargement: true })
+        .webp({ quality: 82, alphaQuality: 100, effort: 4 })
+        .toBuffer()
+        .then((image) => 'data:image/webp;base64,' + image.toString('base64')),
+    );
   }
   return embedded.get(item.webp)!;
 }
 
 // A self-contained, source-bound SVG allows native image lazy loading. An SVG
 // <image> inside an inline document would fetch every offscreen project at once.
-export const studioCompositionPreviews = studioScenes.map((scene) => {
-  const plan = buildStudioComposition(scene, artwork);
-  const images = new Map(scene.items.map((item) => [item.id, previewImage(item.id)]));
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000">${studioCompositionSvg(plan, images)}</svg>`;
-  const hash = createHash('sha256').update(svg).digest('hex').slice(0, 16);
-  return {
-    id: scene.id,
-    filename: `${scene.id}-${hash}.svg`,
-    src: `/studio-previews/${scene.id}-${hash}.svg`,
-    svg,
-    hash,
-    bytes: Buffer.byteLength(svg),
-    layers: plan.layers.length,
-  };
-});
+export const studioCompositionPreviews = await Promise.all(
+  studioScenes.map(async (scene) => {
+    const plan = buildStudioComposition(scene, artwork);
+    const images = new Map(
+      await Promise.all(
+        scene.items.map(async (item) => [item.id, await previewImage(item.id)] as const),
+      ),
+    );
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000">${studioCompositionSvg(plan, images)}</svg>`;
+    const hash = createHash('sha256').update(svg).digest('hex').slice(0, 16);
+    return {
+      id: scene.id,
+      filename: `${scene.id}-${hash}.svg`,
+      src: `/studio-previews/${scene.id}-${hash}.svg`,
+      svg,
+      hash,
+      bytes: Buffer.byteLength(svg),
+      layers: plan.layers.length,
+    };
+  }),
+);

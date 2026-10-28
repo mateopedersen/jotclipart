@@ -91,6 +91,7 @@
   box-shadow: 0 4px 0 #d6e6f5;
 }
 .subject-collection-art {
+  content-visibility: auto;
   height: 185px;
   background: radial-gradient(ellipse, #fff, #edf4fc);
   padding: 12px;
@@ -130,6 +131,8 @@
   padding: 20px;
 }
 .collection-group-art {
+  content-visibility: auto;
+  height: 104px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -194,6 +197,7 @@
     padding: 15px;
   }
   .collection-group-art {
+    height: 81px;
     gap: 5px;
     padding: 8px;
   }

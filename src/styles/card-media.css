@@ -12,6 +12,7 @@
   --card-media-padding: 16px;
 }
 :is(.art-card, .hsg-subject, .related-card) > :is(.art-picture, .hsg-picture, .related-picture) {
+  content-visibility: auto;
   position: relative;
   display: block;
   flex: 0 0 auto;

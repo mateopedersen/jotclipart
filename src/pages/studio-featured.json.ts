@@ -11,12 +11,12 @@ export function GET() {
       categories: categoryCollections.map((category) => ({
         id: category.slug,
         title: category.title,
-        thumb: category.previews[0]?.thumb || '',
+        thumb: category.previews[0]?.originalThumb || '',
         topics: category.subjects.map((subject) => ({
           id: subject.slug,
           title: subject.name,
           count: subject.count,
-          thumb: subject.sample.thumb,
+          thumb: subject.sample.originalThumb,
         })),
       })),
       items: all
@@ -30,8 +30,7 @@ export function GET() {
           featured: true,
           createdAt: a.createdAt,
           monochrome: a.monochrome,
-          thumb: a.thumb,
-          thumbSrcSet: a.thumbSrcSet,
+          thumb: a.originalThumb,
           width: a.width,
           height: a.height,
           webp: { url: a.webp, ...a.files.webp },

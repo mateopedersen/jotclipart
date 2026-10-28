@@ -118,6 +118,7 @@ footer.site-footer {
   background: #fff;
 }
 .footer-art-paper {
+  content-visibility: auto;
   width: 100%;
   height: 110px;
   background: #fff;

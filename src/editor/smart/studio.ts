@@ -17,6 +17,7 @@ import {
   serializeProject,
   type RasterAsset,
 } from '../raster';
+import { lookupRasterAssets } from '../studio-sources';
 import { download, renderWebp, recolor } from '../svg';
 import { exportPdf, paperLayout } from '../pdf';
 import { encodeMask, morphology, fillHoles } from './pixels';
@@ -166,8 +167,7 @@ export class StudioTools {
       : 'No tools match. Try another search or category.';
   }
   async addCatalogue(id: string) {
-    if (!this.catalogue.length) this.catalogue = await rasterCatalog();
-    const asset = this.catalogue.find((a) => a.id === id);
+    const asset = this.catalogue.find((a) => a.id === id) ?? (await lookupRasterAssets([id]))[0];
     if (!asset) throw new Error('Choose a catalogue illustration.');
     const host = this.editor.host;
     const snapshot = host.committed(),

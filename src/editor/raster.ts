@@ -1,6 +1,7 @@
 import { clone, identity, type EditorDocument, type RasterLayer } from './model';
 import type { VerifiedRepresentation as Representation } from './source-policy';
 import { readVerified } from './verified-fetch';
+import { lookupRasterAssets } from './studio-sources';
 export interface RasterAsset {
   id: string;
   width: number;
@@ -198,7 +199,7 @@ export async function prepareProjectSources(doc: EditorDocument) {
   for (const layer of doc.layers)
     if (layer.kind === 'raster' && assets.has(layer.assetId)) requireRaster(layer);
   if (!missing.length) return;
-  const list = await rasterCatalog();
+  const list = await lookupRasterAssets([...new Set(missing.map((layer) => layer.assetId))]);
   for (const layer of missing) {
     const entry = list.find(
       (a) =>
