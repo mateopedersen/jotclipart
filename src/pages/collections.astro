@@ -59,6 +59,7 @@ import '../styles/collection-directory.css';
                 alt={subject.sample.alt}
                 title={subject.sample.title}
                 loading="lazy"
+                fetchpriority="low"
                 decoding="async"
               />
             </div>
@@ -94,6 +95,7 @@ import '../styles/collection-directory.css';
                   width="82"
                   height="82"
                   loading="lazy"
+                  fetchpriority="low"
                   decoding="async"
                 />
               ))}

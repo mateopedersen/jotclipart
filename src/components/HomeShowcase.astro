@@ -2,12 +2,13 @@
 import { publishedArt } from '../lib/catalog';
 import CatalogCount from './CatalogCount.astro';
 import HomeCategoryLinks from './HomeCategoryLinks.astro';
+import { HOME_SHOWCASE_FEATURED_ID } from '../lib/home-showcase-featured';
 import '../styles/home-showcase.css';
 
 const selection = [
   {
     key: 'flowers',
-    id: 'floral-heart-roses-wreath-clipart',
+    id: HOME_SHOWCASE_FEATURED_ID,
     label: 'Rose Heart Wreath',
     detail: 'For Cards & Invitations',
     href: '/clipart/heart/',
@@ -126,7 +127,7 @@ const selection = [
       </span>
     </div>
     <div class="home-collection-shelf">
-      {selection.map((subject, index) => (
+      {selection.map((subject) => (
         <a class={`home-sample home-sample-${subject.key}`} href={subject.href}>
           <span class="home-sample-picture">
             <img
@@ -137,8 +138,8 @@ const selection = [
               alt={subject.image.alt}
               width={subject.image.width}
               height={subject.image.height}
-              loading={index === 0 ? 'eager' : 'lazy'}
-              fetchpriority={index === 0 ? 'high' : 'low'}
+              loading="lazy"
+              fetchpriority="low"
               decoding="async"
             />
           </span>

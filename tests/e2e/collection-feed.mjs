@@ -13,6 +13,10 @@ try {
     await page.setViewportSize({ width, height: 1000 });
     await page.goto(base + '/collections/');
     await expect(page.locator('#latest-collections>a')).toHaveCount(8);
+    await expect(page.locator('#latest-collections img').first()).toHaveAttribute(
+      'fetchpriority',
+      'low',
+    );
     assert.equal(
       await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1),
       false,
@@ -60,6 +64,13 @@ try {
   );
   await expect(page.locator('#latest-collections>a').first().locator('p')).toContainText(
     String(feed.items[1].count + 1),
+  );
+  const refreshedImage = page.locator('#latest-collections img').first();
+  await expect(refreshedImage).toHaveAttribute('loading', 'lazy');
+  await expect(refreshedImage).toHaveAttribute('fetchpriority', 'low');
+  await expect(refreshedImage).toHaveAttribute(
+    'src',
+    feed.items[1].sample.webp ?? feed.items[1].sample.thumb,
   );
   report.liveRefresh = true;
   assert.deepEqual(report.errors, []);

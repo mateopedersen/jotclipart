@@ -2,7 +2,7 @@
 import CardFileActions from './CardFileActions.astro';
 import Icon from './Icon.astro';
 import ShareButton from './ShareButton.astro';
-const { item, deferPriority = false } = Astro.props;
+const { item } = Astro.props;
 ---
 
 <article class="art-card" data-id={item.id}>
@@ -16,7 +16,7 @@ const { item, deferPriority = false } = Astro.props;
       height="400"
       loading="lazy"
       decoding="async"
-      fetchpriority={deferPriority ? 'low' : 'auto'}
+      fetchpriority="low"
     />
   </a>
   <div class="card-body">

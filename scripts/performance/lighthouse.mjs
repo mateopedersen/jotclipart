@@ -5,6 +5,7 @@ import { pathToFileURL } from 'node:url';
 import { gzipSync } from 'node:zlib';
 import { chromium } from '@playwright/test';
 import { templateRoutes } from './routes.mjs';
+import { assertUsableLighthouse } from './lighthouse-result.mjs';
 // Install lighthouse in the audit environment or supply its node_modules directory.
 const dependency = (name) =>
   process.env.LIGHTHOUSE_HOME
@@ -62,6 +63,7 @@ for (const path of routes)
       const lhr = result.lhr;
       writeFileSync(resolve(out, id + '.json.gz'), gzipSync(JSON.stringify(lhr)));
       writeFileSync(resolve(out, id + '.html'), result.report[1]);
+      assertUsableLighthouse(lhr);
       const row = {
         path,
         device,
