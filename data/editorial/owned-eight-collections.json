@@ -1,0 +1,225 @@
+{
+  "schema": 1,
+  "topics": {
+    "blessings": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "f01139815166b4a001020c9e3e70da88676b371137c48cbe851895d3caaffbcd",
+      "intro": "Blessing messages for seasons and special occasions, paired with floral keepsakes, reflection objects and gentle cartoon prayer scenes. Choose formal lettering, cheerful character greetings or five separate black-and-white coloring designs.",
+      "checkedAt": "2026-10-27T16:09:29.261Z",
+      "evidence": [
+        {
+          "id": "blessings-count-your-blessings-wreath",
+          "imageSha256": "3a19ed33ae56f4a9dcc91bd07a173d73862a680080030680a077c213cbabc8ad"
+        },
+        {
+          "id": "blessings-girl-bedside-prayer",
+          "imageSha256": "f6d7c41a889f2afde3dc9b5f7227e694c6fa2b01201e4db2c9030822ccf8bfd4"
+        },
+        {
+          "id": "blessings-community-blessing-box",
+          "imageSha256": "7c6bff51be16f01c4d938ca042b45310e291b0fef007e3b08afa39c2c0ccc413"
+        },
+        {
+          "id": "blessings-outline-cross-window",
+          "imageSha256": "2d5306a0a6e851e2fcfd6167b71a79eb4cd955ded0075e499d173e8fb0fad297"
+        }
+      ]
+    },
+    "family": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "fff0ae5b9b980ec32f643bf62ba59983a852c137b7f8eae742433cc1e996182b",
+      "intro": "Family groups and shared activities, from story time and camping to graduation, music and everyday projects. Choose complete cartoon scenes, a photo-frame tree, family lettering or six separate black-and-white designs.",
+      "checkedAt": "2026-10-27T17:21:39.672Z",
+      "evidence": [
+        {
+          "id": "family-four-person-portrait",
+          "imageSha256": "f6ab7cb2fc895cea4ece71d43a4a9996b575633985acc43ff44c6edb4443a8ff"
+        },
+        {
+          "id": "family-grandparents-video-call",
+          "imageSha256": "4372180d2aee80141fb56d992a7d05e5ade915d72e9cd5dcd6795b0c05fec8d3"
+        },
+        {
+          "id": "family-family-tree-photo-frame",
+          "imageSha256": "040babed44d9ede496c2690df8dd6d2fc3f38576bea720f46ccbe6306a65c5ef"
+        },
+        {
+          "id": "family-family-graduation-portrait",
+          "imageSha256": "ceee2d542bb069f82621cb21d2639478cfc226b85285acc17b27c17581b612bf"
+        },
+        {
+          "id": "family-outline-family-puppet-theater",
+          "imageSha256": "c38e7a70b65b8dce36d99edd999e6d636d626d680acc276effb309e9a5976f2e"
+        }
+      ]
+    },
+    "mistletoe": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "5d6134b6d43bd7b0420115f33793cc9fd34582a7195479ac28b0a52d54b73361",
+      "intro": "White-berried mistletoe in botanical cuttings, hanging decorations, craft objects and festive cartoon scenes. Choose leafy frames, romantic lettering, illustrated keepsakes or six independent black-and-white designs.",
+      "checkedAt": "2026-10-27T18:37:53.263Z",
+      "evidence": [
+        {
+          "id": "mistletoe-forked-white-berry-branch",
+          "imageSha256": "1c7b6cb2ee878d84adc53598785a75c6d38802ef9f59317a5dcbf08037e404c5"
+        },
+        {
+          "id": "mistletoe-embroidered-mistletoe-hoop",
+          "imageSha256": "7045426974422aa99607bc0f9b80112bcf2d5b8f5bd616860a57e59e012d7a52"
+        },
+        {
+          "id": "mistletoe-couple-kiss-under-mistletoe",
+          "imageSha256": "b2fb666e86ec3953f2dfebb7460d3bcacb626674c3e4f0ddee1d53a366a83a60"
+        },
+        {
+          "id": "mistletoe-mistletoe-magic-lettering",
+          "imageSha256": "525a490526696f9f45c99fc671b6aa5452511f054cf66b3cdd39a37e1307f86f"
+        },
+        {
+          "id": "mistletoe-outline-host-tree-branch",
+          "imageSha256": "73e39d2f92ae4b7f30e28e29c41a6953815292118f469d4aebba7cf10fd54282"
+        }
+      ]
+    },
+    "pinecone": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "ac96323b9701e6e6bb4f6bcfa74bb66f3c19f5ace143c0be27501e74674d3ef6",
+      "intro": "Pine cones in botanical arrangements, nature-study objects and illustrated craft figures, alongside playful woodland scenes and practical decorative details. Choose simple natural forms, seasonal lettering or six independent black-and-white designs.",
+      "checkedAt": "2026-10-27T20:27:00.125Z",
+      "evidence": [
+        {
+          "id": "pinecone-open-cone-botanical",
+          "imageSha256": "b5d8df5a96052705e15c729116e264d8db9427caf5de7491a1e38469ec1c23ac"
+        },
+        {
+          "id": "pinecone-pinecone-turkey-craft",
+          "imageSha256": "20e05f163fabb4e21cc4055ecc4e22700267e83e3a62526ef43c5ed4b50ffc89"
+        },
+        {
+          "id": "pinecone-fox-cone-ornament-maker",
+          "imageSha256": "38732d466f8c19609e15ed5de06ec718d590beb40648e6cd8b5940ff72f3ad2a"
+        },
+        {
+          "id": "pinecone-pinecone-stained-glass-panel",
+          "imageSha256": "10e7374c06aed007ad5d92be015a917191aab261d0b1db4e106308fe23d681cf"
+        },
+        {
+          "id": "pinecone-outline-pinecone-garden-cart",
+          "imageSha256": "9d3e7f03557d1857c9c5db962e8dcd01992df8d35b3e48c02cf5e2d9edaabfa5"
+        }
+      ]
+    },
+    "poinsettia": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "99f36d48b697afc58acfa7ab809318058ecc1cdf582bc0f10ca4d84fd6453056",
+      "intro": "Red, cream and pink poinsettias appear as branching plants, floral arrangements and illustrated paper, fabric and decorative objects. Choose an open frame, a seasonal greeting, a character scene or one of six independent coloring designs.",
+      "checkedAt": "2026-10-27T21:12:40.631Z",
+      "evidence": [
+        {
+          "id": "poinsettia-branching-terracotta-plant",
+          "imageSha256": "f279ff323a6a2ac30fc64bfd591e3461a9324dabb968f3d2ca47f47fd52a44cb"
+        },
+        {
+          "id": "poinsettia-folded-paper-poinsettia",
+          "imageSha256": "55b3f91eb8c07616b0c363eb8cb4350a8196b232af27a2367f26edeb69af3acc"
+        },
+        {
+          "id": "poinsettia-poinsettia-quilt-block",
+          "imageSha256": "07be1f16ff835a680f8384b3b4ff741a4cae6094f98673b277b2c40f84d81c9e"
+        },
+        {
+          "id": "poinsettia-florist-wrapping-spray",
+          "imageSha256": "88a6c12308efb56a0b5ed15ad8777851389ba8e4542f687a2aaa35970628e280"
+        },
+        {
+          "id": "poinsettia-outline-flower-cookie-house",
+          "imageSha256": "34c8252f561bfd74bce00cf78029fe1c848115815c1c99ce850b4dfd69b8088a"
+        }
+      ]
+    },
+    "holly": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "a21dbc50f967956a0d96664b7f675b70b77ee4837270165b3375037b6a559692",
+      "intro": "Glossy holly leaves and red fruits appear in botanical studies, garden arrangements, open frames and illustrated crafts. Browse fabric accessories, seasonal lettering, character activities and six separate black-and-white scenes.",
+      "checkedAt": "2026-10-27T21:54:55.182Z",
+      "evidence": [
+        {
+          "id": "holly-spring-flowers-and-fruit-study",
+          "imageSha256": "3ebd3d5ee1581a2dfb7c2911ffbd510a713345bb2374687a17f549e3842d355e"
+        },
+        {
+          "id": "holly-holly-clippings-garden-trug",
+          "imageSha256": "b808966bdcab21fcfaa597942ef8966064ec43a7dd65a80b884311d8e55a5d0d"
+        },
+        {
+          "id": "holly-holly-enameled-pendant",
+          "imageSha256": "1ed2b178d08615b402bb4c655eba8897e0c22cfd25cceffe72df513ce3b16a68"
+        },
+        {
+          "id": "holly-children-making-holly-collage",
+          "imageSha256": "e6c3c8a00ea0331f748716f7b6e197785fe82b9580942e6b75e83e017eb11bc9"
+        },
+        {
+          "id": "holly-outline-holly-kite",
+          "imageSha256": "fb30cc56f259b5524241b012a8566bbe5ff4cbb1567b0c9267649d415a0e683f"
+        }
+      ]
+    },
+    "bell": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "3a700bd2cfc931b0a340dc442e36248ccef2b4665ddc6e4a2645445b537a8c34",
+      "intro": "Explore handbells, counter bells, jingle bells and other distinctive bell forms, from close instrument studies to illustrated crafts and seasonal greetings. Character scenes show listening, music and repair activities, with six separate black-and-white designs.",
+      "checkedAt": "2026-10-27T22:45:45.085Z",
+      "evidence": [
+        {
+          "id": "bell-spherical-jingle-bell-study",
+          "imageSha256": "2dbf70e5210667dea4bc8cef3ad3f480c22f7df09dd22d3d08ac4de87e6ff1a3"
+        },
+        {
+          "id": "bell-percussion-cowbell-and-beater",
+          "imageSha256": "a7c5ed74231bf1b384d8c6b4d4b7f7af2c5ba74981d18c8c48f923d577150661"
+        },
+        {
+          "id": "bell-ceramic-bell-wind-chime",
+          "imageSha256": "5a830b1dc5f22d5be6f436fba8c9cf1aaf19837d4156dfa052a82f85aca05626"
+        },
+        {
+          "id": "bell-woman-repairing-bicycle-bell",
+          "imageSha256": "1747fd6f8f9ca2a20b45bee5ac5050f3825a5ada45c96361e7da6a2d0cbe9f01"
+        },
+        {
+          "id": "bell-outline-bell-ornament-workshop",
+          "imageSha256": "62d1853c4845ac379909b7ad18dca11d852263ac45ceac5e79159d13b5b2a0cd"
+        }
+      ]
+    },
+    "angel": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "75006fe626fd1f15e8048d1875a4727692ac61a1a6140fa2f0665dfdc09b2899",
+      "intro": "Explore angels in quiet moments, musical scenes and imaginative paper, textile and decorative forms. Different faces, ages and robes distinguish the figures, alongside five messages and six separate coloring designs.",
+      "checkedAt": "2026-10-27T23:57:59.934Z",
+      "evidence": [
+        {
+          "id": "angel-sleeping-angel-on-cloud",
+          "imageSha256": "406610215628bd04990d5f99cfb8b29b34d1ff60441fb5ed4cd106fc35cffc48"
+        },
+        {
+          "id": "angel-angel-with-cello",
+          "imageSha256": "58865bf45090590365871bdde2d73c636974b99ec79904d80a66f2d1b4185a06"
+        },
+        {
+          "id": "angel-angel-rag-doll-sewing",
+          "imageSha256": "32aee4ee7b4fd225ea4fa9292e4420188a7685db7461f085f8686f0341dad04b"
+        },
+        {
+          "id": "angel-angels-among-us-lettering",
+          "imageSha256": "395b593097b9ae8b535f3f97dcb4542a85a1bc0d548e25a6409965e6c5d45c3e"
+        },
+        {
+          "id": "angel-outline-angel-craft-basket",
+          "imageSha256": "add60f5a3bcb9c83f1ea67a029a34200071eb4433f8002e3a73db5a3563bcce5"
+        }
+      ]
+    }
+  }
+}
