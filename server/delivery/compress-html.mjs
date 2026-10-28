@@ -3,7 +3,8 @@
 function acceptsGzip(value) {
   let gzip, wildcard;
   for (const part of (value || '').toLowerCase().split(',')) {
-    const [name, ...params] = part.trim().split(';');
+    const [token, ...params] = part.trim().split(';');
+    const name = token.trim();
     if (name !== 'gzip' && name !== '*') continue;
     const q = params.find((p) => /^\s*q\s*=/.test(p));
     const quality = q ? Number(q.split('=')[1]) : 1;

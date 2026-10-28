@@ -34,6 +34,14 @@ test('HEAD advertises the encoded representation without a body', async () => {
   assert.equal(result.headers.get('Content-Encoding'), 'gzip');
   assert.equal(await result.text(), '');
 });
+test('encoding negotiation handles whitespace and wildcard without overriding gzip refusal', async () => {
+  const accepted = compressHtml(req({ 'Accept-Encoding': 'br, gzip ; q=0.5' }), source());
+  assert.equal(accepted.headers.get('Content-Encoding'), 'gzip');
+  assert.equal(gunzipSync(Buffer.from(await accepted.arrayBuffer())).toString(), html);
+  const wildcard = compressHtml(req({ 'Accept-Encoding': '*;q=0.7' }), source());
+  assert.equal(wildcard.headers.get('Content-Encoding'), 'gzip');
+  assert.equal(gunzipSync(Buffer.from(await wildcard.arrayBuffer())).toString(), html);
+});
 test('ranges, already encoded responses, images and non-success responses are untouched', () => {
   for (const [request, response] of [
     [req({ Range: 'bytes=0-10', 'Accept-Encoding': 'gzip' }), source()],
