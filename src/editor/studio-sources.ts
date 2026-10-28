@@ -1,6 +1,10 @@
 import type { RasterAsset } from './raster';
 import { studioBucket } from './studio-bucket';
-type Manifest = { schema: number; buckets: Record<string, string> };
+type Manifest = {
+  schema: number;
+  buckets: Record<string, string>;
+  topics?: Record<string, string>;
+};
 let manifest: Promise<Manifest> | undefined;
 const chunks = new Map<string, Promise<RasterAsset[]>>();
 async function getManifest() {
@@ -58,4 +62,32 @@ export async function lookupRasterAssets(ids: string[]): Promise<RasterAsset[]> 
     if (!item) throw Error('This artwork is unavailable. Your current canvas is preserved.');
     return item;
   });
+}
+
+/** A subject choice transfers its own metadata instead of the complete library. */
+export async function lookupTopicAssets(topic: string): Promise<RasterAsset[]> {
+  if (!/^[a-z0-9-]+$/.test(topic)) throw Error('Invalid artwork subject.');
+  const index = await getManifest(),
+    url = index.topics?.[topic];
+  if (url !== `/studio-topics/${topic}.json`) throw Error('This artwork subject is unavailable.');
+  let request = chunks.get(url);
+  if (!request) {
+    request = fetch(url)
+      .then(async (response) => {
+        if (!response.ok) throw Error('The artwork subject could not load.');
+        const items = await response.json();
+        if (
+          !Array.isArray(items) ||
+          items.some((item) => !item || typeof item.id !== 'string' || item.topic !== topic)
+        )
+          throw Error('The artwork subject chunk is invalid.');
+        return items as RasterAsset[];
+      })
+      .catch((error) => {
+        chunks.delete(url);
+        throw error;
+      });
+    chunks.set(url, request);
+  }
+  return request;
 }

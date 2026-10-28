@@ -39,7 +39,7 @@ const socialImage = pageSocialImage(socialPage, {
 const socialImageUrl = new URL(socialImage.src, 'https://ultraclipart.com').href;
 const readingFont =
   Astro.url.pathname === '/for-teachers/' || Astro.url.pathname.startsWith('/guides/');
-const preloadInterfaceFont = !/^\/(?:art|edit)\//.test(Astro.url.pathname);
+const preloadInterfaceFont = !readingFont && !/^\/(?:art|edit)\//.test(Astro.url.pathname);
 const surprisePicks = cuteSurpriseIndex.slice(0, 48);
 const browseLinks = [
   {
@@ -125,6 +125,7 @@ const releaseRevision = /^[a-f0-9]{40}$/.test(import.meta.env.PUBLIC_RELEASE_REV
         href="/fonts/inter/inter-latin-wght-3100e775e861.woff2"
         as="font"
         type="font/woff2"
+        fetchpriority="high"
         crossorigin
       />
     )}

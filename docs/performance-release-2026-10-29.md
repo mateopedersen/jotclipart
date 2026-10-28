@@ -20,6 +20,15 @@ are unchanged.
   required metadata buckets. Full-library search is still available. Stable,
   revalidated metadata URLs support tabs that remain open across deployment;
   original immutable URLs, byte counts and SHA-256 remain authoritative.
+- Choosing a subject loads only that subject's metadata. A delayed request cannot
+  replace a newer library choice. Global search still loads the full library.
+- The private, noindex image editor displays its checksum-bound 960-pixel screen
+  copy while the original verifies. Controls still wait for the verified original;
+  a missing screen copy falls back to the verified master. Public galleries,
+  image pages, social images and download sources retain the original R2 assets.
+- The interface font uses optional display and an early preload on applicable
+  pages, preventing late text replacement on slow first visits. Reading pages keep
+  their own face; editable canvas text keeps the existing export font contract.
 - The desktop Studio hero preload remains media-gated. Its below-fold mobile
   images and repeated launch icons do not claim high fetch priority. Home
   shortcuts, category covers and offscreen filter images load progressively.
@@ -31,6 +40,14 @@ the Robot and Dinner galleries, 390/1440 widths in Chromium/WebKit, search,
 original-image lightbox, 18 compositions, project restoration and actual export
 formats. A failure stops publication. This is template coverage, not an individual
 interaction test of every artwork URL or a physical-device test.
+
+The local preview origin is not an allowed production R2 CORS origin. Its browser
+tests explicitly enable the existing loopback-only CDN fixture, which passes
+through actual upstream bytes and supplies local-origin CORS headers. It never
+changes R2 settings. Native production-origin checks remain necessary after the
+release. The editor test also delays the original to verify the small preview,
+blocked controls, a single shared original request, and missing-preview fallback
+in both browser engines.
 
 `UC_DELIVERY_EXPECTED_LIVE_REVISION` pins the known production baseline before
 activation. If another content release or control patch appears during the work,

@@ -20,7 +20,7 @@ export async function bridgeLocalCdn(context, base) {
       // Navigation and the editor's deliberate abort test can cancel an
       // in-flight request before the upstream reply. Real fetch failures fail.
       if (
-        !/Route is already handled|Target page, context or browser has been closed/.test(
+        !/Route is already handled|Target page, context or browser has been closed|Request context disposed/.test(
           String(error),
         )
       )

@@ -1,6 +1,7 @@
 import { chromium, webkit, expect } from '@playwright/test';
 import assert from 'node:assert/strict';
 import { mkdirSync, writeFileSync } from 'node:fs';
+import { bridgeLocalCdn } from '../helpers/local-cdn.mjs';
 const engine = process.env.UC_BROWSER || 'chromium',
   base = process.env.BASE_URL || 'http://127.0.0.1:4323',
   out = `reports/studio-compositions/${engine}`;
@@ -11,8 +12,9 @@ const page = await browser.newPage({
   acceptDownloads: true,
 });
 const errors = [];
+const localCdnFixture = await bridgeLocalCdn(page.context(), base);
 page.on('pageerror', (e) => errors.push(e.message));
-const report = { engine, projects: [], errors, status: 'running' };
+const report = { engine, projects: [], errors, status: 'running', localCdnFixture };
 try {
   await page.goto(base + '/create/?view=page');
   await expect(page.locator('.uc-editor')).not.toHaveAttribute('aria-busy', 'true', {

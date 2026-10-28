@@ -111,3 +111,35 @@ test('failed directory requests remain retryable and invalid IDs never reach the
     globalThis.fetch = original;
   }
 });
+
+test('subject browsing loads one small subject, rejects mixed records, and reuses successful data', async () => {
+  const original = globalThis.fetch,
+    calls = [];
+  const item = { ...source('test-robot'), topic: 'robot' };
+  let wrong = true;
+  globalThis.fetch = async (path) => {
+    calls.push(path);
+    return json(
+      path === '/studio-manifest.json'
+        ? { schema: 1, buckets: {}, topics: { robot: '/studio-topics/robot.json' } }
+        : [{ ...item, topic: wrong ? 'apple' : 'robot' }],
+    );
+  };
+  try {
+    const { lookupTopicAssets } = await fresh();
+    await assert.rejects(lookupTopicAssets('../invalid'), /Invalid/);
+    assert.equal(calls.length, 0);
+    await assert.rejects(lookupTopicAssets('robot'), /chunk is invalid/);
+    wrong = false;
+    assert.deepEqual(await lookupTopicAssets('robot'), [item]);
+    assert.deepEqual(await lookupTopicAssets('robot'), [item]);
+    assert.deepEqual(calls, [
+      '/studio-manifest.json',
+      '/studio-topics/robot.json',
+      '/studio-topics/robot.json',
+    ]);
+    await assert.rejects(lookupTopicAssets('unknown'), /unavailable/);
+  } finally {
+    globalThis.fetch = original;
+  }
+});

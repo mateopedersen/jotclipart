@@ -2,6 +2,7 @@ import { chromium, webkit, expect } from '@playwright/test';
 import { templateRoutes } from '../../scripts/performance/routes.mjs';
 import { mkdirSync, writeFileSync } from 'node:fs';
 import assert from 'node:assert/strict';
+import { bridgeLocalCdn } from '../helpers/local-cdn.mjs';
 const base = process.env.BASE_URL || 'http://127.0.0.1:4338';
 const out = process.env.OUT || 'reports/performance/site-speed-pages';
 mkdirSync(out, { recursive: true });
@@ -26,12 +27,16 @@ for (const [engine, type] of Object.entries(engines)) {
         const page = await context.newPage(),
           errors = [];
         page.on('pageerror', (e) => errors.push(e.message));
-        const row = { engine, width, path };
+        const row = { engine, width, path, localCdnFixture: await bridgeLocalCdn(context, base) };
         try {
           const r = await page.goto(base + path, { waitUntil: 'domcontentloaded' });
           assert.ok([200, 404].includes(r.status()), `${r.status()} ${path}`);
           await page.evaluate(() => document.fonts.ready);
           await expect(page.locator('h1').first()).toBeVisible();
+          if (path.startsWith('/edit/'))
+            await expect(page.locator('.uc-workspace')).not.toHaveAttribute('inert', '', {
+              timeout: 30000,
+            });
           const choice = page.locator('[data-cookie-choice=necessary]:visible').first();
           if (await choice.count()) await choice.click();
           await page.waitForTimeout(150);
