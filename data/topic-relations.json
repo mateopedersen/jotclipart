@@ -1523,5 +1523,47 @@
     "cornucopia",
     "dinner",
     "family"
+  ],
+  "blessings": [
+    "thank-you",
+    "heart",
+    "angel"
+  ],
+  "family": [
+    "mom",
+    "dad",
+    "baby",
+    "heart"
+  ],
+  "mistletoe": [
+    "holly",
+    "poinsettia",
+    "pinecone",
+    "winter"
+  ],
+  "pinecone": [
+    "holly",
+    "mistletoe",
+    "leaves",
+    "winter"
+  ],
+  "poinsettia": [
+    "holly",
+    "mistletoe",
+    "winter"
+  ],
+  "holly": [
+    "mistletoe",
+    "poinsettia",
+    "pinecone",
+    "winter"
+  ],
+  "bell": [
+    "music"
+  ],
+  "angel": [
+    "blessings",
+    "heart",
+    "baby"
   ]
 }
