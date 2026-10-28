@@ -1,3 +1,4 @@
+import { testBuildUrl } from './support/build-directory.mjs';
 import { originalGoalArtworkIds } from '../scripts/original-goal-counts.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -37,22 +38,22 @@ for (const topic of ['baby', 'heart']) {
   });
   test(
     `${topic}: collection and every detail have canonical SEO, downloads and editing`,
-    { skip: !existsSync(new URL(`../dist/clipart/${topic}/index.html`, import.meta.url)) },
+    { skip: !existsSync(new URL(`clipart/${topic}/index.html`, testBuildUrl)) },
     () => {
-      const html = read(`dist/clipart/${topic}/index.html`);
+      const html = readFileSync(new URL(`clipart/${topic}/index.html`, testBuildUrl), 'utf8');
       assert.match(html, /CollectionPage/);
       assert.match(html, /"numberOfItems":50/);
       assert.doesNotMatch(html, /content="noindex/);
       assert.ok(html.includes(`https://ultraclipart.com/clipart/${topic}/`));
       for (const a of art.filter((a) => a.topic === topic)) {
-        const detail = read(`dist/art/${a.id}/index.html`);
+        const detail = readFileSync(new URL(`art/${a.id}/index.html`, testBuildUrl), 'utf8');
         assert.ok(html.includes(`/art/${a.id}/`));
         assert.ok(html.includes(`/edit/${a.id}/`));
         assert.ok(detail.includes(`download="${a.id}.pdf"`));
         assert.ok(detail.includes(`download="${a.id}.webp"`));
         assert.match(detail, /ImageObject/);
         assert.ok(detail.includes(`https://ultraclipart.com/art/${a.id}/`));
-        assert.ok(existsSync(new URL(`../dist/edit/${a.id}/index.html`, import.meta.url)));
+        assert.ok(existsSync(new URL(`edit/${a.id}/index.html`, testBuildUrl)));
       }
     },
   );

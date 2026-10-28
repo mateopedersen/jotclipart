@@ -1,3 +1,4 @@
+import { testBuildUrl } from './support/build-directory.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
@@ -108,13 +109,13 @@ test('animal topic counts and source-specific search stay honest', { skip: !hasP
 test(
   'all animal detail pages expose their matching download and editor; held routes are absent',
   {
-    skip: !hasPackage || !existsSync(new URL('../dist/clipart/zebra/index.html', import.meta.url)),
+    skip: !hasPackage || !existsSync(new URL('clipart/zebra/index.html', testBuildUrl)),
   },
   () => {
     const review = read('data/animal-package-review.json');
     for (const item of items) {
       const html = readFileSync(
-        new URL('../dist/art/' + item.id + '/index.html', import.meta.url),
+        new URL('art/' + item.id + '/index.html', testBuildUrl),
         'utf8',
       );
       assert.ok(html.includes(`https://ultraclipart.com/art/${item.id}/`));
@@ -122,17 +123,17 @@ test(
       assert.ok(html.includes(`download="${item.id}.webp"`));
       assert.ok(html.includes(`download="${item.id}.pdf"`));
       assert.match(html, /ImageObject/);
-      assert.ok(existsSync(new URL('../dist/edit/' + item.id + '/index.html', import.meta.url)));
+      assert.ok(existsSync(new URL('edit/' + item.id + '/index.html', testBuildUrl)));
     }
     for (const id of review.heldIds)
       for (const type of ['art', 'edit'])
         assert.equal(
-          existsSync(new URL(`../dist/${type}/${id}/index.html`, import.meta.url)),
+          existsSync(new URL(`${type}/${id}/index.html`, testBuildUrl)),
           false,
         );
     for (const topic of new Set(items.map((item) => item.topic))) {
       const html = readFileSync(
-        new URL(`../dist/clipart/${topic}/index.html`, import.meta.url),
+        new URL(`clipart/${topic}/index.html`, testBuildUrl),
         'utf8',
       );
       assert.doesNotMatch(html, /content="noindex/);

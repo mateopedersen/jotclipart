@@ -1,3 +1,4 @@
+import { testBuildUrl } from './support/build-directory.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
@@ -208,7 +209,7 @@ test('retirement rules reserve space for AI and public-sharing endpoints', () =>
 });
 
 test('compact retirement patterns protect every built HTML alias and static resource', () => {
-  const dist = new URL('../dist/', import.meta.url);
+  const dist = testBuildUrl;
   if (!existsSync(dist)) return;
   const walk = (directory) =>
     readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
@@ -230,7 +231,7 @@ test('compact retirement patterns protect every built HTML alias and static reso
 });
 
 test('production routing covers transient static-origin failures without route-count overflow', () => {
-  const routes = JSON.parse(readFileSync(new URL('../dist/_routes.json', import.meta.url)));
+  const routes = JSON.parse(readFileSync(new URL('_routes.json', testBuildUrl)));
   assert.deepEqual(routes, { version: 1, include: ['/*'], exclude: [] });
   for (const path of [
     '/',

@@ -1,3 +1,4 @@
+import { testBuildUrl } from './support/build-directory.mjs';
 import { sitemapXml } from './support/sitemaps.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -79,9 +80,9 @@ test('GTA aliases and character names find every reviewed design without duplica
 });
 test(
   'published GTA HTML retains reviewed metadata, canonical URLs and image sitemap entries',
-  { skip: !existsSync(new URL('../dist/clipart/gta-6/index.html', import.meta.url)) },
+  { skip: !existsSync(new URL('clipart/gta-6/index.html', testBuildUrl)) },
   () => {
-    const text = (p) => readFileSync(new URL('../dist/' + p, import.meta.url), 'utf8');
+    const text = (p) => readFileSync(new URL(p, testBuildUrl), 'utf8');
     const sitemap = sitemapXml('images');
     for (const topic of Object.keys(packageContexts)) {
       const html = text('clipart/' + topic + '/index.html');
@@ -103,6 +104,6 @@ test(
       assert.ok(sitemap.includes('/art/' + item.id + '/'));
       assert.ok(!html.includes('content="noindex'));
     }
-    assert.ok(!existsSync(new URL('../dist/clipart/gta-vi/index.html', import.meta.url)));
+    assert.ok(!existsSync(new URL('clipart/gta-vi/index.html', testBuildUrl)));
   },
 );

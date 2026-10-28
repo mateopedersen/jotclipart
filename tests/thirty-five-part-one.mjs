@@ -1,3 +1,4 @@
+import { testBuildUrl } from './support/build-directory.mjs';
 import { sitemapXml } from './support/sitemaps.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -76,10 +77,10 @@ test('all four subjects have accurate categories, unique metadata and searchable
 test(
   'all 200 production pages have canonical URLs, image schema and sitemap entries',
   {
-    skip: !existsSync(new URL('../dist/clipart/earth/index.html', import.meta.url)),
+    skip: !existsSync(new URL('clipart/earth/index.html', testBuildUrl)),
   },
   () => {
-    const text = (path) => readFileSync(new URL('../dist/' + path, import.meta.url), 'utf8');
+    const text = (path) => readFileSync(new URL(path, testBuildUrl), 'utf8');
     const pages = sitemapXml('pages'),
       images = sitemapXml('images');
     for (const topic of topics) {

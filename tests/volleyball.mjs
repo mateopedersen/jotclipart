@@ -1,3 +1,4 @@
+import { testBuildUrl } from './support/build-directory.mjs';
 import { sitemapXml } from './support/sitemaps.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -73,9 +74,9 @@ test('volleyball searches include every design and distinguish monochrome, outli
 });
 test(
   'volleyball pages expose real downloads and image SEO with image editing and accurate image SEO',
-  { skip: !existsSync(new URL('../dist/clipart/volleyball/index.html', import.meta.url)) },
+  { skip: !existsSync(new URL('clipart/volleyball/index.html', testBuildUrl)) },
   () => {
-    const topic = read('dist/clipart/volleyball/index.html');
+    const topic = readFileSync(new URL('clipart/volleyball/index.html', testBuildUrl), 'utf8');
     assert.equal((topic.match(/class="art-card"/g) || []).length, 50);
     assert.match(topic, /"@type":"CollectionPage"/);
     assert.match(topic, /"numberOfItems":50/);
@@ -84,14 +85,14 @@ test(
       images = sitemapXml('images');
     assert.ok(sitemap.includes('https://ultraclipart.com/clipart/volleyball/'));
     for (const a of volleyball) {
-      const html = read(`dist/art/${a.id}/index.html`);
+      const html = readFileSync(new URL(`art/${a.id}/index.html`, testBuildUrl), 'utf8');
       assert.ok(html.includes(`download="${a.id}.webp"`));
       assert.ok(html.includes(`download="${a.id}.pdf"`));
       assert.match(html, /"@type":"ImageObject"/);
       assert.match(html, /ICC-based CMYK/);
       assert.ok(images.includes(`/art/${a.id}/`));
       assert.doesNotMatch(html, /named layers|Editable layered vector/);
-      assert.equal(existsSync(new URL(`../dist/edit/${a.id}/index.html`, import.meta.url)), true);
+      assert.equal(existsSync(new URL(`edit/${a.id}/index.html`, testBuildUrl)), true);
     }
   },
 );

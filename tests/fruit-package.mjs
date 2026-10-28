@@ -1,3 +1,4 @@
+import { testBuildUrl } from './support/build-directory.mjs';
 import { sitemapXml } from './support/sitemaps.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -79,9 +80,9 @@ test('fruit categories have real counts, discoverable entries and separate kiwi 
 });
 test(
   'all fruit pages expose matching media, edit routes, canonical and image sitemap entries',
-  { skip: !existsSync(new URL('../dist/clipart/apple/index.html', import.meta.url)) },
+  { skip: !existsSync(new URL('clipart/apple/index.html', testBuildUrl)) },
   () => {
-    const text = (path) => readFileSync(new URL('../dist/' + path, import.meta.url), 'utf8');
+    const text = (path) => readFileSync(new URL(path, testBuildUrl), 'utf8');
     for (const topic of topics) {
       const collection = text(`clipart/${topic}/index.html`);
       assert.ok(collection.includes(`https://ultraclipart.com/clipart/${topic}/`));
@@ -98,7 +99,7 @@ test(
         assert.match(detail, /ImageObject/);
         for (const kind of ['pdf', 'webp'])
           assert.ok(detail.includes(`download="${item.id}.${kind}"`));
-        assert.ok(existsSync(new URL(`../dist/edit/${item.id}/index.html`, import.meta.url)));
+        assert.ok(existsSync(new URL(`edit/${item.id}/index.html`, testBuildUrl)));
       }
     }
   },
