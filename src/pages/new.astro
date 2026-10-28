@@ -19,6 +19,17 @@ const seed = {
   description="Browse the latest illustrations added to UltraClipart. Open each artwork to see its image, printable PDF and editing options."
   noindex={newestArt.length === 0}
 >
+  <Fragment slot="head">
+    {initial[0] && (
+      <link
+        rel="preload"
+        as="image"
+        href={initial[0].webp}
+        media="(min-width: 900px)"
+        fetchpriority="high"
+      />
+    )}
+  </Fragment>
   <section class="hero">
     <h1>New Clipart</h1>
     <p>
