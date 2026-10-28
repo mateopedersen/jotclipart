@@ -45,6 +45,18 @@
   object-fit: contain;
   vertical-align: middle;
 }
+/* These illustration containers already have definite grid/fixed heights.
+   Keep the original pixels and their surrounding 3D card treatment, while
+   deferring whole offscreen scenes rather than only individual lazy images. */
+:is(
+  .home-sample,
+  .home-category-picture,
+  .seasonal-scene,
+  .creative-studio-scene,
+  .benefit-visual
+) {
+  content-visibility: auto;
+}
 .formats .action-icon {
   width: 28px;
   height: 28px;
@@ -66,6 +78,11 @@
     .subject-collection-art,
     .collection-group-art,
     .studio-scene-preview,
+    .home-sample,
+    .home-category-picture,
+    .seasonal-scene,
+    .creative-studio-scene,
+    .benefit-visual,
     .footer-art-paper
   ) {
     content-visibility: visible !important;

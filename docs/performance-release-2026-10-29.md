@@ -13,6 +13,9 @@ are unchanged.
   reliably move the viewport. Actual scrolling and decoding must be tested.
   The same fixed-frame rule covers offscreen Studio composition cards, so their
   reduced SVG files do not all compete with the visible hero on first load.
+  Home's fixed grid cards, seasonal scenes, project example and benefit scenes
+  also defer their originals outside the viewport; their dimensions stay defined
+  by the existing grid tracks or fixed-height scene, and printing restores them.
 - Studio composition previews embed screen-sized, source-verified artwork rather
   than full-resolution masters. The SVG keeps the same 1400 × 1000 composition.
   Each preview has a 500 KiB browser regression limit. Editing/export still load
