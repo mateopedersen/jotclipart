@@ -1,6 +1,7 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import { readReviewedImportCatalog } from '../reviewed-imports.mjs';
+import { detailPreviewImage } from './detail-preview.mjs';
 const root = resolve(import.meta.dirname, '../..');
 const built = resolve(root, process.env.METADATA_BUILD_DIR || 'dist');
 const artwork = readReviewedImportCatalog(root).filter((a) => a.published && a.indexable);
@@ -54,7 +55,7 @@ for (const item of artwork) {
   }
   const html = readFileSync(file, 'utf8');
   auditImageAttributes(file, html);
-  const preview = html.match(/<div\b[^>]*id="art-preview"[^>]*>\s*(<img\b[^>]*>)/)?.[1] || '';
+  const preview = detailPreviewImage(html);
   if (attribute(preview, 'alt') !== item.alt) failed.push('image alt');
   if (attribute(preview, 'title') !== item.title) failed.push('image title');
   const heading = decode(
