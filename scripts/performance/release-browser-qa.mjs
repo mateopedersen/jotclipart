@@ -39,6 +39,8 @@ try {
     ['tests/e2e/editor-source-loading.mjs', {}],
     ['tests/e2e/performance-regressions.mjs', {}],
     ['tests/e2e/catalog-delivery.mjs', {}],
+    ['tests/e2e/ai-builder.mjs', { BROWSER: 'chromium' }],
+    ['tests/e2e/ai-builder.mjs', { BROWSER: 'webkit' }],
     ['tests/e2e/studio-compositions.mjs', { UC_BROWSER: 'chromium' }],
     ['tests/e2e/studio-compositions.mjs', { UC_BROWSER: 'webkit' }],
     ['tests/e2e/studio-export-formats.mjs', { UC_BROWSER: 'chromium' }],
@@ -54,7 +56,11 @@ try {
       child.once('error', fail);
       child.once('exit', done);
     });
-    report.checks.push({ script, browser: extra.UC_BROWSER ?? 'chromium,webkit', code });
+    report.checks.push({
+      script,
+      browser: extra.UC_BROWSER ?? extra.BROWSER ?? 'chromium,webkit',
+      code,
+    });
     writeFileSync(out, JSON.stringify(report, null, 2));
     if (code !== 0) throw Error(`Release browser check failed: ${script}`);
   }

@@ -362,6 +362,7 @@
   background: #fff;
 }
 .ai-idea-picture {
+  content-visibility: auto;
   position: relative;
   background: #fff;
   aspect-ratio: 1.65;

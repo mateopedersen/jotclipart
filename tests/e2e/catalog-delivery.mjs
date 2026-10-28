@@ -37,7 +37,7 @@ for (const [engine, type] of Object.entries({ chromium, webkit })) {
     while (await page.locator('[data-scene-more]').isVisible())
       await page.locator('[data-scene-more]').click();
     for (const image of await images.all()) {
-      await image.scrollIntoViewIfNeeded();
+      await image.locator('..').scrollIntoViewIfNeeded();
       await expect
         .poll(() => image.evaluate((node) => node.complete && node.naturalWidth === 1400))
         .toBe(true);

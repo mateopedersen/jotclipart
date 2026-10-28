@@ -102,6 +102,15 @@ const faq = [
   wide
 >
   <Fragment slot="head">
+    {starterCards[0] && (
+      <link
+        rel="preload"
+        as="image"
+        href={starterCards[0].image}
+        media="(min-width: 951px)"
+        fetchpriority="high"
+      />
+    )}
     <script
       type="application/ld+json"
       set:html={structuredData({
@@ -277,6 +286,7 @@ const faq = [
                     height="140"
                     alt={example.alt}
                     loading="lazy"
+                    fetchpriority="low"
                     decoding="async"
                   />
                   <span>{example.label}</span>
@@ -359,6 +369,7 @@ const faq = [
                     alt={reference.alt}
                     title={reference.imageTitle}
                     loading="lazy"
+                    fetchpriority="low"
                     decoding="async"
                   />
                   <span>
@@ -707,6 +718,7 @@ const faq = [
                     height="320"
                     alt={example.alt}
                     loading="lazy"
+                    fetchpriority="low"
                     decoding="async"
                   />
                   <span class="ai-starter-caption">
@@ -1086,6 +1098,7 @@ const faq = [
                 height="210"
                 alt={example.alt}
                 loading="lazy"
+                fetchpriority="low"
                 decoding="async"
               />
               <span>Subject Reference</span>

@@ -37,6 +37,10 @@ are unchanged.
 - The desktop Studio hero preload remains media-gated. Its below-fold mobile
   images and repeated launch icons do not claim high fetch priority. Home
   shortcuts, category covers and offscreen filter images load progressively.
+- The AI Builder's desktop mosaic prioritizes its original primary illustration.
+  Ingredient, style and idea references use low fetch priority; fixed offscreen
+  idea frames defer their original images. The mobile form and all original
+  sources, choices, generation controls and safeguards remain intact.
 
 For this release, the normal publisher runs with `UC_DELIVERY_BROWSER_QA=1`.
 It completes the fresh render, source/editorial/media/SEO/CSP/unit gates, then
@@ -45,6 +49,8 @@ the Robot and Dinner galleries, 390/1440 widths in Chromium/WebKit, search,
 original-image lightbox, 18 compositions, project restoration and actual export
 formats. A failure stops publication. This is template coverage, not an individual
 interaction test of every artwork URL or a physical-device test.
+AI Builder UI checks use a recorded image and explicitly mocked API/quota and
+challenge responses; they do not make a new inference request or change live limits.
 
 The local preview origin is not an allowed production R2 CORS origin. Its browser
 tests explicitly enable the existing loopback-only CDN fixture, which passes
