@@ -65,6 +65,7 @@
     .collection-filter-art,
     .subject-collection-art,
     .collection-group-art,
+    .studio-scene-preview,
     .footer-art-paper
   ) {
     content-visibility: visible !important;

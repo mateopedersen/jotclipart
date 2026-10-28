@@ -11,6 +11,8 @@ are unchanged.
   Printing explicitly restores rendering. Scroll the reserved frame when testing
   offscreen pictures in WebKit; scrolling its skipped child directly does not
   reliably move the viewport. Actual scrolling and decoding must be tested.
+  The same fixed-frame rule covers offscreen Studio composition cards, so their
+  reduced SVG files do not all compete with the visible hero on first load.
 - Studio composition previews embed screen-sized, source-verified artwork rather
   than full-resolution masters. The SVG keeps the same 1400 × 1000 composition.
   Each preview has a 500 KiB browser regression limit. Editing/export still load
@@ -54,6 +56,12 @@ activation. If another content release or control patch appears during the work,
 reconcile and rebuild instead of overwriting it. All existing account writer,
 fresh inventory, storage cap, read-back verification, release budgets, fail-closed
 and rollback controls remain in force.
+
+Delivery staging waits up to one hour for an occupied account writer lock. It
+never removes another writer's lock, and no inventory, reservation or remote write
+starts while waiting. Once acquired, the normal fresh census and all existing
+storage proofs run. Missing directories and other lock failures stop immediately.
+This lets a tested release follow a concurrent content transfer safely.
 
 Keep measured Lighthouse results separate from Google PageSpeed results. The
 Google API can return a quota error; the ordinary PageSpeed web UI can still run
