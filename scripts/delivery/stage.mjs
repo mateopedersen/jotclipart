@@ -310,7 +310,10 @@ async function main() {
             const htmlGroup =
               process.env.UC_DELIVERY_LOCAL_HTML === '1' &&
               remaining[cursor].record.path.endsWith('.html');
-            const itemLimit = 8,
+            // The byte limit and actor cap still bound the in-flight release
+            // bytes. Larger groups make useful progress during each fresh
+            // account-inventory lease without changing proofs or readback.
+            const itemLimit = 64,
               byteLimit = 4_000_000;
             let groupBytes = 0;
             while (
