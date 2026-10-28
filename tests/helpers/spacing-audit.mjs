@@ -12,12 +12,6 @@ export function inspectSpacing() {
       !element.closest('[hidden],dialog:not([open]),.sr-only,.visually-hidden')
     );
   };
-  const sections = [...main.children].filter(visible).map((e) => ({
-    name: e.id || e.className || e.tagName,
-    top: e.getBoundingClientRect().top,
-    bottom: e.getBoundingClientRect().bottom,
-  }));
-  const last = Math.max(...sections.map((e) => e.bottom));
   // A transparent outer wrapper can conceal its own trailing padding. Measure
   // painted surfaces and normal-flow content as well as that wrapper's edge.
   const contentEdges = [];
@@ -39,6 +33,15 @@ export function inspectSpacing() {
     for (const child of element.children) walk(child, nextClip);
   };
   for (const child of main.children) walk(child);
+  // Reading skipped descendants can commit a pending WebKit resize layout.
+  // Snapshot section and footer edges after that work so a single measurement
+  // never subtracts a pre-layout section edge from a post-layout footer edge.
+  const sections = [...main.children].filter(visible).map((e) => ({
+    name: e.id || e.className || e.tagName,
+    top: e.getBoundingClientRect().top,
+    bottom: e.getBoundingClientRect().bottom,
+  }));
+  const last = Math.max(...sections.map((e) => e.bottom));
   const lastContent = Math.min(main.getBoundingClientRect().bottom, Math.max(...contentEdges));
   const galleries = [...main.querySelectorAll('.gallery')].filter(visible).map((gallery) => {
     const cards = [...gallery.querySelectorAll(':scope > .art-card')].filter(visible);

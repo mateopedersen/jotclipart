@@ -30,7 +30,10 @@ for (const [engine, type] of Object.entries(engines)) {
         const row = { engine, width, path, localCdnFixture: await bridgeLocalCdn(context, base) };
         try {
           const r = await page.goto(base + path, { waitUntil: 'domcontentloaded' });
-          assert.ok([200, 404].includes(r.status()), `${r.status()} ${path}`);
+          assert.ok(
+            path === '/404.html' ? [200, 404].includes(r.status()) : r.status() === 200,
+            `${r.status()} ${path}`,
+          );
           await page.evaluate(() => document.fonts.ready);
           await expect(page.locator('h1').first()).toBeVisible();
           if (path.startsWith('/edit/'))
@@ -65,7 +68,12 @@ for (const [engine, type] of Object.entries(engines)) {
             for (const image of [pictures.first(), pictures.last()]) {
               // WebKit cannot scroll a skipped descendant of content-visibility
               // into view directly. Scroll the reserved frame, as a visitor does.
-              await image.locator('..').scrollIntoViewIfNeeded();
+              await image.evaluate((img) => {
+                let frame = img.parentElement;
+                while (frame && getComputedStyle(frame).contentVisibility !== 'auto')
+                  frame = frame.parentElement;
+                (frame || img).scrollIntoView({ block: 'center' });
+              });
               await expect
                 .poll(() => image.evaluate((n) => n.complete && n.naturalWidth > 0), {
                   timeout: 20000,

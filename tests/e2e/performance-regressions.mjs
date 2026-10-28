@@ -72,7 +72,7 @@ for (const [engine, implementation] of Object.entries(engines)) {
       }));
       assert.equal(preload.href, await featured.evaluate((image) => image.src));
       assert.equal(preload.matches, width >= 901);
-      await featured.scrollIntoViewIfNeeded();
+      await page.locator('.home-sample-flowers').scrollIntoViewIfNeeded();
       await expect
         .poll(() => featured.evaluate((image) => image.complete && image.naturalWidth > 0))
         .toBe(true);
