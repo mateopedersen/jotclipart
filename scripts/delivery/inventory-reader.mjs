@@ -8,8 +8,10 @@ export function inventoryBoundaries(objects, stride = 4000) {
   for (let i = stride - 1; i < keys.length - 1; i += stride) bounds.push(keys[i]);
   return bounds;
 }
-export function createBoundInventoryReader({ buckets, fetchPage, concurrency = 4 }) {
-  if (!Number.isInteger(concurrency) || concurrency < 1 || concurrency > 4)
+// Read disjoint complete key ranges in parallel so the account census can
+// finish within the unchanged 45-second freshness window. This path is read-only.
+export function createBoundInventoryReader({ buckets, fetchPage, concurrency = 16 }) {
+  if (!Number.isInteger(concurrency) || concurrency < 1 || concurrency > 16)
     throw Error('Bounded inventory concurrency required');
   return async function read(command, fallback) {
     const bucket = buckets.find(

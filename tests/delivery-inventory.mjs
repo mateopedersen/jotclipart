@@ -95,7 +95,7 @@ function reader(keys, bounds) {
     peak: () => peak,
   };
 }
-test('complete ranges include inserted/deleted boundary keys and Unicode with at most four readers', async () => {
+test('complete ranges include inserted/deleted boundary keys and Unicode with bounded readers', async () => {
   const source = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'é', '🙂'];
   const bounds = inventoryBoundaries(
     source.map((key) => ({ key })),
@@ -108,7 +108,12 @@ test('complete ranges include inserted/deleted boundary keys and Unicode with at
   });
   assert.deepEqual(actual.Contents, rows);
   assert.equal(actual.IsTruncated, false);
-  assert(peak() <= 4);
+  assert(peak() <= 16);
+  const many = Array.from({ length: 64 }, (_, i) => `key-${String(i).padStart(3, '0')}`);
+  const larger = reader(many, inventoryBoundaries(many.map((key) => ({ key })), 1));
+  assert.deepEqual((await larger.read({ bucket: 'media', jurisdiction: 'default' }, () => {})).Contents, larger.rows);
+  assert.equal(larger.peak(), 16);
+  assert.throws(() => createBoundInventoryReader({ buckets: [], fetchPage: async () => {}, concurrency: 17 }), /Bounded/);
 });
 test('unknown buckets are measured by the original complete-account transport', async () => {
   const { read } = reader(['a'], []);
