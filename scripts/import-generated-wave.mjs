@@ -5,6 +5,7 @@ import { validateEditorSource } from '../src/lib/artwork-source.ts';
 import { validateBatch } from './r2/plan.mjs';
 import { replacementFor, mergeGeneratedWave } from './replacement-contract.mjs';
 import { validateIdentification } from './identification-review.mjs';
+import { generatedPrintMetadata } from './generated-print-metadata.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const wave = process.argv[2];
@@ -114,10 +115,7 @@ for (const row of report.artworks) {
     formats: ['WEBP', 'PDF'],
     printProfile: row.image.profile,
     pdfColorSpace: row.image.colorSpace,
-    pdfPage:
-      [row.pdfWidth ?? row.width, row.pdfHeight ?? row.height]
-        .map((n) => (n / 300).toFixed(3))
-        .join(' × ') + ' in',
+    ...generatedPrintMetadata(row),
     alpha: true,
     files: {},
   };

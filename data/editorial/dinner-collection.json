@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "topics": {
+    "dinner": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "4910f6d2be24f132d35021b4d8e3b87cbbae65cad44efa8aaceb140014550b1d",
+      "checkedAt": "2026-10-28T13:34:49.474Z",
+      "intro": "Family suppers, dinners with friends and Christmas and Thanksgiving tables sit alongside individual meals and Santa enjoying a roast dinner. Choose colorful cartoon scenes or black-and-white drawings, with different characters, foods and table settings.",
+      "evidence": [
+        {
+          "id": "dinner-friends-pasta-night",
+          "imageSha256": "88c6833c02b80bfd55a5c5e941117eac63731ff46c55da5ac9d92acb7e9fdf4a"
+        },
+        {
+          "id": "dinner-mexican-family-tamale-supper",
+          "imageSha256": "461ebe6398a662a1902934702e1851a3d21a4d9f642416e69e51f6a3b0b259e5"
+        },
+        {
+          "id": "dinner-santa-roast-supper",
+          "imageSha256": "dc72fd8be192a671d0f6d3800281d3f3dc80acc1c925edd979a3a5b8351e1485"
+        },
+        {
+          "id": "dinner-outline-thanksgiving-bowl-pass",
+          "imageSha256": "3d697773880cec29c4423384a135a76a773029da0adbae6c0ddf221b833fbe57"
+        }
+      ]
+    }
+  }
+}

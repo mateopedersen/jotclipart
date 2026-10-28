@@ -324288,6 +324288,1112 @@
         "alt": "Black line art shows a young angel hanging a star ornament on a small potted evergreen.",
         "description": "Two short braids, a fur-trimmed coat and rounded shoes distinguish the standing figure beside the decorated branches."
       }
+    },
+    {
+      "id": "dinner-friends-pasta-night",
+      "status": "reviewed-from-image",
+      "sourceSha256": "88c6833c02b80bfd55a5c5e941117eac63731ff46c55da5ac9d92acb7e9fdf4a",
+      "imageSha256": "88c6833c02b80bfd55a5c5e941117eac63731ff46c55da5ac9d92acb7e9fdf4a",
+      "nativeSourceSha256": "5d96253697bbb8d27ca6ca897e50ee70134b9c35597f3972220a299440759a6a",
+      "inputMetadataSha256": "2d648d14c8c5f513418de513bac007456cf38420533a073a1b2461f7a685844d",
+      "inputContextSha256": "a985cbd199e7a16842c004667a53e5461661058ecf6c83b9a67900f55b8ca61e",
+      "inspectedImage": "/catalog/wave_572/dinner-friends-pasta-night.webp",
+      "reviewedAt": "2026-10-28T10:48:07.453Z",
+      "observations": [
+        "The braided diner lifts spaghetti from a blue floral serving bowl with wooden serving utensils.",
+        "The central diner has an auburn bob, red glasses and teal blouse; the diner on the right holds a white salad bowl.",
+        "The full round pedestal table and three seated adult figures fit inside the transparent canvas."
+      ],
+      "copy": {
+        "title": "Three Friends Sharing a Pasta Dinner",
+        "alt": "Three women chat around a round table as one serves spaghetti and another holds a salad bowl.",
+        "description": "Braids, an auburn bob with red glasses and a curly ponytail distinguish the friends. Pasta, sliced bread and water glasses fill the tabletop."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-family-taco-supper",
+      "status": "reviewed-from-image",
+      "sourceSha256": "81cdccab49d6a91e54e41b89ff854beeb645b47bb79d8617b2c83cd40b627733",
+      "imageSha256": "81cdccab49d6a91e54e41b89ff854beeb645b47bb79d8617b2c83cd40b627733",
+      "nativeSourceSha256": "728b487fa65c2bc066fb74dd21543a89764434dacca868c3e6c4e4062799b4d1",
+      "inputMetadataSha256": "17192b1c3f9f354b121c2ff3de0a72333d6e1ced44f194830757a0cb97ef13a7",
+      "inputContextSha256": "b8f5a179980970f3aabb76c9f51f37484351439e31f585f1f1d3c1fd9406340c",
+      "inspectedImage": "/catalog/wave_572/dinner-family-taco-supper.webp",
+      "reviewedAt": "2026-10-28T10:52:14.032794+00:00",
+      "observations": [
+        "The red-haired girl with two buns holds a spoon above the taco.",
+        "The table has separate bowls of beans, shredded lettuce, tomatoes and cheese."
+      ],
+      "copy": {
+        "title": "Family Building Tacos at a Turquoise Table",
+        "alt": "Two children and two adults share taco ingredients around a turquoise dinner table.",
+        "description": "A red-haired girl spoons black beans into a taco held by the bearded diner. Lettuce, cheese, tortillas and bowls of toppings cover the table."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-grandparents-stew-table",
+      "status": "reviewed-from-image",
+      "sourceSha256": "c21739be9fd938ee941018f53d09bf1c10639856c56a22f9c665e7c9378cefcb",
+      "imageSha256": "c21739be9fd938ee941018f53d09bf1c10639856c56a22f9c665e7c9378cefcb",
+      "nativeSourceSha256": "5f8b788372b906da366dcbde737c778479a781c2e542cb7efcaf25f586f6556e",
+      "inputMetadataSha256": "253c30e238dd9007edbc2edf8f023d106a78e88ce0c368a2c4efddb6598ed6c5",
+      "inputContextSha256": "3fb1dde2aab6dafc113081e837963a2316a2ac3b3038e607c9b719be37dd0ca5",
+      "inspectedImage": "/catalog/wave_572/dinner-grandparents-stew-table.webp",
+      "reviewedAt": "2026-10-28T10:52:14.032794+00:00",
+      "observations": [
+        "The silver-haired woman in a floral blouse holds a slice of bread.",
+        "The younger woman has a long dark braid and a salmon-colored shirt."
+      ],
+      "copy": {
+        "title": "Three Diners Sharing Vegetable Stew",
+        "alt": "An older man ladles vegetable stew beside an older woman and a younger woman at an oval table.",
+        "description": "A white-moustached man in a green knit vest fills a bowl above a blue stew pot. Bread, soup bowls and striped napkins sit between the diners."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-solo-soup-evening",
+      "status": "reviewed-from-image",
+      "sourceSha256": "6bf5795300d579c6917f02d232507d9945549ee492404b7a8574d6c84824c9b5",
+      "imageSha256": "6bf5795300d579c6917f02d232507d9945549ee492404b7a8574d6c84824c9b5",
+      "nativeSourceSha256": "4614de541bedba567efcae6d26c0c7f33fef17cc8592a1eedc4aae5c98f15f48",
+      "inputMetadataSha256": "bbb12931152e72e9b8594c90eb0d9adc147c4e96e4fd7766cb39c07cdcb53d88",
+      "inputContextSha256": "c58fd69bf9b2cb287a332677ceffe6d796b7d120f204460cd2dfc2eba87f671d",
+      "inspectedImage": "/catalog/wave_572/dinner-solo-soup-evening.webp",
+      "reviewedAt": "2026-10-28T11:08:53.393364+00:00",
+      "observations": [
+        "The ginger-bearded diner wears round glasses, a blue-and-cream striped sweater and plaid slippers.",
+        "A propped open book and green reading lamp stand beside a bowl of tomato soup and toasted sandwich triangles."
+      ],
+      "copy": {
+        "title": "Soup and a Sandwich beside a Reading Lamp",
+        "alt": "A bearded man in round glasses eats soup at a small table with an open book and a green lamp.",
+        "description": "A striped sweater and plaid slippers give the seated diner a relaxed look. Toasted sandwich triangles sit beside his blue floral soup bowl."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-roommate-kitchen-island",
+      "status": "reviewed-from-image",
+      "sourceSha256": "49ca25918c6e1d96610c7b8281b96901edabed5ef56037f5bf0e8298bfeb91bf",
+      "imageSha256": "49ca25918c6e1d96610c7b8281b96901edabed5ef56037f5bf0e8298bfeb91bf",
+      "nativeSourceSha256": "570ac5bd9e08f10d89d878c60c22c9918eb4536489fa18736e180977b0bd677e",
+      "inputMetadataSha256": "2c096fe7fffa60def005a0e6aa2a54012bad3fe500de0658cb4b004fa5646254",
+      "inputContextSha256": "c63a180c2cbf1acc7916e584b872178f43b904b0e221069d6f5db0ec7cb66265",
+      "inspectedImage": "/catalog/wave_572/dinner-roommate-kitchen-island.webp",
+      "reviewedAt": "2026-10-28T11:08:53.394899+00:00",
+      "observations": [
+        "The curly red-haired woman sits on a yellow stool and holds a rice bowl; she wears blue overalls.",
+        "The bald bearded man stirs a green pot while the black-haired diner in purple holds a large wooden vegetable bowl."
+      ],
+      "copy": {
+        "title": "Roommates Sharing Rice Bowls at a Kitchen Island",
+        "alt": "Three adults serve rice and vegetables around a green kitchen island with yellow stools.",
+        "description": "A curly-haired woman in blue overalls sits beside two friends preparing dinner. A green cooking pot, vegetable bowls and a striped towel fill the wooden countertop."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-backyard-barbecue-table",
+      "status": "reviewed-from-image",
+      "sourceSha256": "d13424f4ee2dd7c7c1a26e434d5b919fceff9bbf3093cfb44bfdcc49b001d11a",
+      "imageSha256": "d13424f4ee2dd7c7c1a26e434d5b919fceff9bbf3093cfb44bfdcc49b001d11a",
+      "nativeSourceSha256": "15ec779deb7ee486f27969ba884debb5add8ba75bff1489e285a1a48e54a38c6",
+      "inputMetadataSha256": "81cb9da620b96854f414bd64784f8ab25f91b65440e8259807faf3631771e2ab",
+      "inputContextSha256": "c10c46dd01dc4112ccae5bb9d48e7ef5a558d5a49342ee6bf290e9b9641e9e82",
+      "inspectedImage": "/catalog/wave_572/dinner-backyard-barbecue-table.webp",
+      "reviewedAt": "2026-10-28T12:32:23.927Z",
+      "observations": [
+        "A woman in a coral sundress holds a platter of grilled vegetables above the picnic table.",
+        "A bearded wheelchair user and a short-haired diner in a red polo hold burgers; corn and grilled vegetables sit on the table.",
+        "The inspected replacement preserves the scene and now leaves generous transparent framing on every side."
+      ],
+      "copy": {
+        "title": "Friends Sharing Burgers at a Picnic Table",
+        "alt": "Four friends share burgers and grilled vegetables at a wooden picnic table with a wheelchair at one end.",
+        "description": "The standing diner brings a colorful vegetable platter while two seated friends hold burgers. Corn cobs, skewers and a wooden serving bowl complete the barbecue spread."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-camping-lantern-supper",
+      "status": "reviewed-from-image",
+      "sourceSha256": "2338acbfa10fd2e38cf52eb86afea61793b507b49046dbd3d069f2cf78c60dfd",
+      "imageSha256": "2338acbfa10fd2e38cf52eb86afea61793b507b49046dbd3d069f2cf78c60dfd",
+      "nativeSourceSha256": "96e34b5094098fcbb17a3dcd605c138069e09678a8b184729ef9f1f28d2bd593",
+      "inputMetadataSha256": "9f2175ee4fe31dcbfb8aa0b28c901f643f3eefbaae5263fed2bc6877ced893c7",
+      "inputContextSha256": "a1f202058e25f0fea7cff461d3b31779742bc1daae5dabacb3891ca28db7c17f",
+      "inspectedImage": "/catalog/wave_573/dinner-camping-lantern-supper.webp",
+      "reviewedAt": "2026-10-28T11:11:47.759Z",
+      "observations": [
+        "Three cartoon campers hold white enamel bowls and spoons around a green folding table.",
+        "The braided girl wears a yellow raincoat; a teal tent and a hanging lantern sit behind the group."
+      ],
+      "copy": {
+        "title": "Soup Supper beside a Camping Tent",
+        "alt": "A parent and two children eat soup at a folding table beside a teal tent and hanging lantern.",
+        "description": "Yellow, plum and blue outdoor clothes distinguish the three campers. Enamel bowls, folding chairs and sturdy boots give the meal a clear camping setting."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-bistro-date-dinner",
+      "status": "reviewed-from-image",
+      "sourceSha256": "41c6ee20b7a05a99806d072abc0bef43f42a35d4341ef8565aa715a2ebcdd021",
+      "imageSha256": "41c6ee20b7a05a99806d072abc0bef43f42a35d4341ef8565aa715a2ebcdd021",
+      "nativeSourceSha256": "f1f3dd3b88344f739864400a5458d14bb2c206d615036e7424d4ad055b006afe",
+      "inputMetadataSha256": "4c1a26f79935ed40a9d3055c2f45a80dfbfc404f1e7bd4ef654758fea1ef6ab4",
+      "inputContextSha256": "32e4aa2c2d27d09f530044bd52bedd19e638e91fcec296ea3637b46b26d3d6ce",
+      "inspectedImage": "/catalog/wave_573/dinner-bistro-date-dinner.webp",
+      "reviewedAt": "2026-10-28T11:11:48.096Z",
+      "observations": [
+        "The man with glasses and a navy blazer gestures across the table while the silver-haired woman lifts a fork.",
+        "Two salmon plates flank a small vase of purple flowers and water glasses."
+      ],
+      "copy": {
+        "title": "Dinner for Two with Salmon and Purple Flowers",
+        "alt": "Two adults chat over salmon dinners at a small table with a purple-flower vase.",
+        "description": "A silver-haired woman in a terracotta cardigan faces a man in a navy blazer. Their bentwood chairs and tiny flower arrangement create a compact bistro scene."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-housewarming-potluck",
+      "status": "reviewed-from-image",
+      "sourceSha256": "44d50b50a6575229aa88cc1446b0ef5448b1391cbbdfc5af83bb14c0cf51ca87",
+      "imageSha256": "44d50b50a6575229aa88cc1446b0ef5448b1391cbbdfc5af83bb14c0cf51ca87",
+      "nativeSourceSha256": "49bea116ccce26e669ea786281e4ce0eadae05f4755a5e9c99c5efaab6ee403d",
+      "inputMetadataSha256": "248b7e4fe65d92763d6b4a2c7d5c655f02c25fdfd075b0911728eb9c231f42b1",
+      "inputContextSha256": "7d6de22c6edb6af03726328fcf86702ca378ab2e4fd16a043c92ed7092920638",
+      "inspectedImage": "/catalog/wave_573/dinner-housewarming-potluck.webp",
+      "reviewedAt": "2026-10-28T12:32:23.932Z",
+      "observations": [
+        "A woman in a sage jumpsuit lifts the red casserole lid while the ginger-bearded diner holds a lasagna plate.",
+        "Three other friends hold a salad bowl, sliced bread and a blue floral serving bowl beside the sideboard.",
+        "The inspected replacement preserves the scene and now leaves generous transparent framing on every side."
+      ],
+      "copy": {
+        "title": "Five Friends Bringing Dishes to a Potluck",
+        "alt": "Five friends gather around a sideboard with lasagna, salad, bread and a vegetable dish.",
+        "description": "A red casserole anchors the meal while each friend carries a different dish or plate. Topknots, silver curls, a ginger beard and contrasting clothes distinguish the group."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-apartment-floor-picnic",
+      "status": "reviewed-from-image",
+      "sourceSha256": "bfa864948d345c93797605c4a01802cf45dee99fc6bdf45f568436ee77a375e2",
+      "imageSha256": "bfa864948d345c93797605c4a01802cf45dee99fc6bdf45f568436ee77a375e2",
+      "nativeSourceSha256": "56f1aa40dcf64d9c9e850e779071f3a9b86a29b139fecfa19b85a706b0ef7bd8",
+      "inputMetadataSha256": "9d78817d13864d58e60169de1a6d4f76453eb036a1a8829f48b25de31293600a",
+      "inputContextSha256": "642cc7f5d2967a949a570f8de26d000b8be41ceb7e1f9040dbda0f6573789fd4",
+      "inspectedImage": "/catalog/wave_573/dinner-apartment-floor-picnic.webp",
+      "reviewedAt": "2026-10-28T11:17:09.672Z",
+      "observations": [
+        "The short-haired woman with round glasses holds a dumpling with chopsticks while sitting cross-legged on a cushion.",
+        "Her curly-haired friend holds a small dipping bowl; a bamboo steamer, floral teapot and two mugs fill the low tray."
+      ],
+      "copy": {
+        "title": "Dumpling Dinner on Floor Cushions",
+        "alt": "Two women sit cross-legged on cushions beside a low tray of dumplings and tea.",
+        "description": "One friend lifts a dumpling with chopsticks while the other cradles a dipping bowl. Patterned cushions, woolly socks and a floral teapot make this an informal dinner scene."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-christmas-friends-supper",
+      "status": "reviewed-from-image",
+      "sourceSha256": "ca9d97a5be9e7e35c417817ba9af9c6fcf1605b617d73fda08ace02eb5682bc5",
+      "imageSha256": "ca9d97a5be9e7e35c417817ba9af9c6fcf1605b617d73fda08ace02eb5682bc5",
+      "nativeSourceSha256": "35a0f5791805c74b69041d551b5d7da223821460bd31982ce8f6f704370bc00a",
+      "inputMetadataSha256": "c592cf163678590b0a6e64bf72d408484b5c74588f54b7f45cb20ed5a5c81de0",
+      "inputContextSha256": "501eece08aba20b616bcc97e9419e55c58af6bedabdce82e9ea376c71897ca87",
+      "inspectedImage": "/catalog/wave_573/dinner-christmas-friends-supper.webp",
+      "reviewedAt": "2026-10-28T12:32:23.934Z",
+      "observations": [
+        "Two friends pass a bread basket across the left side of the dinner table.",
+        "A vegetable tart, roast potatoes, red crackers and a fir centerpiece sit on the red table runner; four diners wear distinct knitted tops.",
+        "The inspected replacement preserves the scene and now leaves generous transparent framing on every side."
+      ],
+      "copy": {
+        "title": "Christmas Supper with Friends and a Vegetable Tart",
+        "alt": "Four friends in festive sweaters pass bread around a Christmas dinner table with a vegetable tart.",
+        "description": "Red crackers and a fir arrangement decorate the table between the diners. A golden vegetable tart and a holly-patterned potato bowl form the center of the meal."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-thanksgiving-passing-corn",
+      "status": "reviewed-from-image",
+      "sourceSha256": "c024e7483c9bc8ef3d8485364236617fa0a3d17bd61dfb6fa65e9e4170faa8aa",
+      "imageSha256": "c024e7483c9bc8ef3d8485364236617fa0a3d17bd61dfb6fa65e9e4170faa8aa",
+      "nativeSourceSha256": "f3b586a3b884b829109373745f0e6767cd735a026ad8fcf555abbdc3f964ac2c",
+      "inputMetadataSha256": "4a3bd031f8e29d66a799d5583199de90fc77319d1ca308764566e17cd1fcc108",
+      "inputContextSha256": "497b2af0b7c9b264938b2aaaa47125256b512fab129d152778e510013f275ec3",
+      "inspectedImage": "/catalog/wave_573/dinner-thanksgiving-passing-corn.webp",
+      "reviewedAt": "2026-10-28T11:21:08.784Z",
+      "observations": [
+        "Grandmother holds a corn bowl toward the boy in green overalls across a small round table.",
+        "The moustached man holds carving cutlery behind the roast turkey; a pumpkin pie and cranberry bowl sit on an orange plaid runner."
+      ],
+      "copy": {
+        "title": "Passing Corn around a Thanksgiving Dinner Table",
+        "alt": "A grandmother offers corn to a boy while two adults sit beside a roast turkey at Thanksgiving dinner.",
+        "description": "A maple-leaf napkin, plaid runner and small pumpkin pie mark the festive meal. The four cartoon diners have different hairstyles, clothing and seated poses."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-friendsgiving-bench-dinner",
+      "status": "reviewed-from-image",
+      "sourceSha256": "a539b90f33c9c59cd4a5711afa3e7ad234f93f87a4e87af4baf2c51228752155",
+      "imageSha256": "a539b90f33c9c59cd4a5711afa3e7ad234f93f87a4e87af4baf2c51228752155",
+      "nativeSourceSha256": "2211437aab1b68b4d8e91a130180b9a57572d10c092d0c9aea3efbc723bc0379",
+      "inputMetadataSha256": "f05efe0e33728182419bdab7ef039bc3bbe0052a07d7d303f1c318e8707f8287",
+      "inputContextSha256": "f6bbae122da9ffe8a50e5121a90d77f47dd021f6a5619692259f056b34272202",
+      "inspectedImage": "/catalog/wave_574/dinner-friendsgiving-bench-dinner.webp",
+      "reviewedAt": "2026-10-28T11:28:33.302Z",
+      "observations": [
+        "The standing purple-haired woman pours water into a glass; her blouse has autumn leaf motifs.",
+        "Two seated friends have turkey slices and soup bowls, with a small pumpkin and leaves at the table center."
+      ],
+      "copy": {
+        "title": "Three Friends Sharing a Friendsgiving Supper",
+        "alt": "Three women share turkey and soup while one pours water at a small Friendsgiving table.",
+        "description": "Long black hair, a purple pixie cut and short blonde curls distinguish the friends. Turkey slices, cranberry sauce and a small pumpkin bring autumn details to the supper."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-christmas-napkin-helper",
+      "status": "reviewed-from-image",
+      "sourceSha256": "d9bddf7c84b169eacef35c9e45eb5047eaaeca053ae52822c6747f2abcb07100",
+      "imageSha256": "d9bddf7c84b169eacef35c9e45eb5047eaaeca053ae52822c6747f2abcb07100",
+      "nativeSourceSha256": "66c2a7fbed46a74e492feb00d29ef8052a62d2a4d7abf66dbf1ace85dcf60f84",
+      "inputMetadataSha256": "1a88328f78342daa7b48410180498bbd1a45dd2fc37efa6f61005dc0039a0a5c",
+      "inputContextSha256": "cead877fda645c628e7ec9df6c74c78396037a4406bf622421ec034b7165de3f",
+      "inspectedImage": "/catalog/wave_574/dinner-christmas-napkin-helper.webp",
+      "reviewedAt": "2026-10-28T11:24:27.235Z",
+      "observations": [
+        "The boy in red dungarees and the silver-haired woman with glasses each hold a red triangular napkin.",
+        "Three place settings and a holly centerpiece sit on the round table with a scalloped white tablecloth."
+      ],
+      "copy": {
+        "title": "Folding Red Napkins for Christmas Dinner",
+        "alt": "A boy and an older woman fold red napkins beside a round Christmas dinner table.",
+        "description": "The young helper wears red dungarees while the older woman wears a green knitted cardigan. Holly sprigs decorate both the tablecloth and the place settings."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-christmas-dinner-nook",
+      "status": "reviewed-from-image",
+      "sourceSha256": "fe793ea20e6abd11de89990d515fb9b7ad40afa1fb32de5cb2bc7fbd0ad9e242",
+      "imageSha256": "fe793ea20e6abd11de89990d515fb9b7ad40afa1fb32de5cb2bc7fbd0ad9e242",
+      "nativeSourceSha256": "d8ad23ed0c4f06ad477e0ddf7b1106ddf77b5739ca53921dd1c805033b2078fa",
+      "inputMetadataSha256": "5c4cd3d62ee9642367c0feac3fec757d71228f476d301ee7fcc97250154ab330",
+      "inputContextSha256": "bafe8ed7c2a143805e934d46a8e9f4179d5e6499f00edace69cb0ee465f3bb2f",
+      "inspectedImage": "/catalog/wave_574/dinner-christmas-dinner-nook.webp",
+      "reviewedAt": "2026-10-28T11:24:27.321Z",
+      "observations": [
+        "Four red chairs surround the round oak table, which has a red tartan runner.",
+        "A roast bird, potatoes, vegetables and cranberry sauce sit among green goblets and a small decorated fir."
+      ],
+      "copy": {
+        "title": "Christmas Dinner Table with Four Red Chairs",
+        "alt": "A round Christmas table is set with roast dinner, green napkins and a small decorated tree.",
+        "description": "The red chairs and tartan runner frame a roast bird and bowls of vegetables. Green glassware and folded napkins coordinate the four place settings."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-office-evening-meal",
+      "status": "reviewed-from-image",
+      "sourceSha256": "187a58445e8fde6a3cdb2438840335961acb04452695d8bb7345b255c7f6718d",
+      "imageSha256": "187a58445e8fde6a3cdb2438840335961acb04452695d8bb7345b255c7f6718d",
+      "nativeSourceSha256": "12e533b4e5a10839ac1c4de23eaf355be52a6a569aaee337b1789f0f2183c998",
+      "inputMetadataSha256": "82ff7b4bd5bc4ef98c524f8b56551bd9c7f8205ebe3f56ac22260bc0daf8b598",
+      "inputContextSha256": "e3ab6d070bf0a30e9c5dc836c2cbe9d724bc95943a98178f556f7df07d900822",
+      "inspectedImage": "/catalog/wave_574/dinner-office-evening-meal.webp",
+      "reviewedAt": "2026-10-28T11:24:27.364Z",
+      "observations": [
+        "Three adults hold open rice cartons around a small round table.",
+        "The left diner wears a blue blazer, the central diner has glasses and a rust shirt, and the right diner wears a gray vest with turquoise trousers."
+      ],
+      "copy": {
+        "title": "Coworkers Sharing a Takeaway Dinner",
+        "alt": "Three coworkers eat rice from takeaway cartons around a small round table.",
+        "description": "A blue blazer, rolled shirt sleeves and a knitted vest give each diner a different workday outfit. Extra cartons and a small succulent sit between them."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-student-noodle-night",
+      "status": "reviewed-from-image",
+      "sourceSha256": "46ca2e35467b42236b8ca2938165caed60959b83dd9c6111a85a9b5d095343f7",
+      "imageSha256": "46ca2e35467b42236b8ca2938165caed60959b83dd9c6111a85a9b5d095343f7",
+      "nativeSourceSha256": "7a88d1d7dd4fa63102bca1b5e41c6405c64445618c34f701a785cc4de88a8f1f",
+      "inputMetadataSha256": "9a21b793c398e502d1add65b10792fc42a373e703d0654eff452dd0cc809ef29",
+      "inputContextSha256": "2344a6788ad08b7979b380fddaf97ffff7301d40f78fa178f88f668f35e9d0ee",
+      "inspectedImage": "/catalog/wave_574/dinner-student-noodle-night.webp",
+      "reviewedAt": "2026-10-28T11:32:07.827Z",
+      "observations": [
+        "Three young adults hold patterned noodle bowls and chopsticks while sitting on floor cushions.",
+        "Two closed books and a floral teapot sit on the low hexagonal table."
+      ],
+      "copy": {
+        "title": "Noodle Night around a Low Table",
+        "alt": "Three young adults sit on cushions and eat noodles beside a low table with books and a teapot.",
+        "description": "A burgundy hoodie, mustard sweatshirt and green T-shirt distinguish the friends. Patterned bowls and lifted noodles make the shared meal the focus."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-pajama-breakfast-dinner",
+      "status": "reviewed-from-image",
+      "sourceSha256": "9bda3b8a50d373378d2eadd8fbcb96f2d97bf8bf0a949625d4c4d15a03b00007",
+      "imageSha256": "9bda3b8a50d373378d2eadd8fbcb96f2d97bf8bf0a949625d4c4d15a03b00007",
+      "nativeSourceSha256": "50b50b52a2d852de1ea486e76b44d3f90448b101b32d0e0b8aa7f0c24928ab07",
+      "inputMetadataSha256": "dc316083390e7a36d1e431701ab763cdb22f7f007dc88677fc52afc76a62c6e5",
+      "inputContextSha256": "16d8a3a50605bc189d22b5b9a5f3604c21ec80796ed0fc0fd49bb66b4583cb7b",
+      "inspectedImage": "/catalog/wave_574/dinner-pajama-breakfast-dinner.webp",
+      "reviewedAt": "2026-10-28T11:32:07.904Z",
+      "observations": [
+        "A curly-haired adult and orange-bobbed girl sit with pancakes, eggs and strawberries.",
+        "A boy in yellow star pajamas stands holding a pancake plate; the girl's slippers have rabbit faces."
+      ],
+      "copy": {
+        "title": "Pancakes for Dinner in Pajamas",
+        "alt": "A family in colorful pajamas shares pancakes, eggs and strawberries at a small table.",
+        "description": "The seated diners wear dotted and striped pajamas while the standing boy carries a pancake stack. Rabbit slippers, toast and a strawberry bowl add playful details."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-neighbors-balcony-supper",
+      "status": "reviewed-from-image",
+      "sourceSha256": "2745b91f077356bbd75b6cffe2cd11912cc4da60750548845964d24715154b92",
+      "imageSha256": "2745b91f077356bbd75b6cffe2cd11912cc4da60750548845964d24715154b92",
+      "nativeSourceSha256": "d17b88ddd5c22e2535510990cc5d1f96a920c0a6e6ce94e916915752fc34560f",
+      "inputMetadataSha256": "865634b75f2aae209d1f3efe25aaa3abb47d1f57da78a948860e12933d613a9b",
+      "inputContextSha256": "c4549bbf0bd95db1a0843e7d60323650664c0a7107a3c3cfdeba60b690e40404",
+      "inspectedImage": "/catalog/wave_575/dinner-neighbors-balcony-supper.webp",
+      "reviewedAt": "2026-10-28T11:32:07.942Z",
+      "observations": [
+        "The older woman has a long silver braid and holds a grilled vegetable plate.",
+        "The curly-haired man in a lavender cardigan holds a pasta bowl; a basil pot and oil bottle sit on their green folding table."
+      ],
+      "copy": {
+        "title": "Pasta and Vegetables at a Folding Bistro Table",
+        "alt": "An older woman and a curly-haired man share dinner beside a basil plant on a green bistro table.",
+        "description": "The woman holds grilled vegetables while her companion lifts pasta on a fork. Folding chairs, cream trousers and a lavender cardigan give the compact scene a relaxed feel."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-family-highchair-dinner",
+      "status": "reviewed-from-image",
+      "sourceSha256": "29cdbf014d9ec265eff89417d915a5992664604cc6230383bba8c1669928aa1c",
+      "imageSha256": "29cdbf014d9ec265eff89417d915a5992664604cc6230383bba8c1669928aa1c",
+      "nativeSourceSha256": "63877116eb3120fa573513d8c7852502d041d7b7623e768583f06f3cb16aaf39",
+      "inputMetadataSha256": "3a586670e25a74b267de9b9d82fcc83e49ea5d909072d1aad87ebd2c7c187004",
+      "inputContextSha256": "03bc7bd586400a575e81e18230fa5b51a57fb3a7565080a929242ac77d3bcba9",
+      "inspectedImage": "/catalog/wave_575/dinner-family-highchair-dinner.webp",
+      "reviewedAt": "2026-10-28T11:36:15.689Z",
+      "observations": [
+        "The toddler sits buckled into a yellow highchair with a divided food tray.",
+        "The father in a burgundy sweater offers peas on a spoon while the blonde mother holds a fork beside chicken and rice."
+      ],
+      "copy": {
+        "title": "Family Dinner beside a Yellow Highchair",
+        "alt": "Two parents eat chicken and rice while their toddler sits in a yellow highchair beside the table.",
+        "description": "The father offers a spoonful of peas as the toddler reaches toward him. A bear bib, divided tray and bright highchair distinguish the youngest diner's place."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-roasted-vegetable-sheet-pan",
+      "status": "reviewed-from-image",
+      "sourceSha256": "6c0f70a5c387ac1d1c9f9b2bc8fbef185770d8f617d3c8c8cfa939dcea94b487",
+      "imageSha256": "6c0f70a5c387ac1d1c9f9b2bc8fbef185770d8f617d3c8c8cfa939dcea94b487",
+      "nativeSourceSha256": "7aac786ea461e895c0dec72e140667416714e57ec4942a3e4fef52a51a9a07d8",
+      "inputMetadataSha256": "0aab78e643a13c8fc859adc09abe24c4498abed5c01b24ccd4ad760fa458bb71",
+      "inputContextSha256": "623c05654b9769682b305774758c166b02afdd90aa3d3dd064a503138464ae79",
+      "inspectedImage": "/catalog/wave_575/dinner-roasted-vegetable-sheet-pan.webp",
+      "reviewedAt": "2026-10-28T11:36:15.948Z",
+      "observations": [
+        "The blue-handled roasting dish contains carrots, broccoli, beet wedges, potatoes and red pepper strips.",
+        "A yellow oven mitt, slotted wooden spatula and blue-rimmed bowl of herb dip sit beside the dish."
+      ],
+      "copy": {
+        "title": "Roasted Vegetables in a Blue Baking Dish",
+        "alt": "A blue baking dish holds colorful roasted vegetables beside an oven mitt, spatula and herb dip.",
+        "description": "Orange carrots, purple beet wedges and green broccoli form distinct shapes inside the cream-lined dish. A quilted yellow mitt and wooden spatula complete the serving arrangement."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-roast-chicken-dinner-board",
+      "status": "reviewed-from-image",
+      "sourceSha256": "7bfe3c40d9b2a282f5bfb480962bbccfb406d8e8685227c8737f0e9a655785ef",
+      "imageSha256": "7bfe3c40d9b2a282f5bfb480962bbccfb406d8e8685227c8737f0e9a655785ef",
+      "nativeSourceSha256": "15395d74992f8b988f35e9a098f14957df92e79aa065bd7261c3339c2371b63e",
+      "inputMetadataSha256": "dcf4a304d630b626473a33ec6588f29914343435ce7b93a53f2183de77cdb423",
+      "inputContextSha256": "70519116f6cbdfda3f03321776cc2bcab4af554e8484d259f1c13a8546f5c7c4",
+      "inspectedImage": "/catalog/wave_575/dinner-roast-chicken-dinner-board.webp",
+      "reviewedAt": "2026-10-28T11:36:16.072Z",
+      "observations": [
+        "The roast chicken has rosemary sprigs and sits on an oval board with potatoes and green beans.",
+        "Lemon halves, a white gravy jug and a two-pronged carving fork surround the bird."
+      ],
+      "copy": {
+        "title": "Roast Chicken Dinner on an Oval Board",
+        "alt": "A golden roast chicken rests on a wooden board with potatoes, green beans, lemon and gravy.",
+        "description": "Rosemary sprigs decorate the browned bird and roasted potatoes. A white gravy jug and wooden-handled carving fork sit along the edge of the oval board."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-red-haired-irish-family",
+      "status": "reviewed-from-image",
+      "sourceSha256": "392ca06106f7818292ab3f1b8daf7110f3973857d97fa878c5360f7a60c69e0e",
+      "imageSha256": "392ca06106f7818292ab3f1b8daf7110f3973857d97fa878c5360f7a60c69e0e",
+      "nativeSourceSha256": "0f8a0502b1cde85438465f3c29b0d22fd243b6c14895438624e8c40a509b3da2",
+      "inputMetadataSha256": "466712d32f3c34a72780d8037382cca761acb369d3597a56f572a9473900fc86",
+      "inputContextSha256": "191bbf7fd067af9769a663ad2b8c58cf32e1cc537b920c51545d90afad7d42c8",
+      "inspectedImage": "/catalog/wave_575/dinner-red-haired-irish-family.webp",
+      "reviewedAt": "2026-10-28T11:43:13.937Z",
+      "observations": [
+        "All four family members have red hair with different styles: curls, long braid, straight bob and tousled curls.",
+        "The woman in a lilac cardigan holds a blue floral vegetable bowl over a table with potatoes and a red casserole."
+      ],
+      "copy": {
+        "title": "Red-Haired Family Sharing a Vegetable Supper",
+        "alt": "A red-haired family of four shares potatoes, vegetables and casserole around a wooden dinner table.",
+        "description": "Freckles, a ginger beard, an auburn braid and a straight bob distinguish the diners. The mother passes a floral vegetable bowl while the children hold their forks."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-black-family-sunday-meal",
+      "status": "reviewed-from-image",
+      "sourceSha256": "5d4f98a6ae02be51df12811a7e97816775a569838d3fa4ebed78f5c34643eca4",
+      "imageSha256": "5d4f98a6ae02be51df12811a7e97816775a569838d3fa4ebed78f5c34643eca4",
+      "nativeSourceSha256": "7bbef2712a094a9a0f26802d66263b29ef886ba9a544e05124e2dcbc4abc2e2f",
+      "inputMetadataSha256": "39f8287bd0f1431e43844a4a3bf6e9334f8d27a63517192be2db70c48c40f279",
+      "inputContextSha256": "41f2acbada17389dca02e50b5049f88ce1a60605ae40a1c21d814142d317a61c",
+      "inspectedImage": "/catalog/wave_575/dinner-black-family-sunday-meal.webp",
+      "reviewedAt": "2026-10-28T11:43:13.981Z",
+      "observations": [
+        "The older woman with silver curls holds a greens bowl while the woman with long twists serves white rice.",
+        "Two children sit at the front of the table; roast chicken portions, orange sweet potatoes and rice fill their plates."
+      ],
+      "copy": {
+        "title": "Family Dinner with Rice, Chicken and Greens",
+        "alt": "Five family members share rice, roast chicken, sweet potatoes and greens around a round table.",
+        "description": "Silver curls, long twists, two hair puffs and close-cropped styles give the family distinct silhouettes. One adult serves rice as the older diner passes a bowl of greens."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-russian-family-soup-table",
+      "status": "reviewed-from-image",
+      "sourceSha256": "da7f7c5697a63b58e13184c5cfeacc644a81a4930e31b8b63a08246f8444917e",
+      "imageSha256": "da7f7c5697a63b58e13184c5cfeacc644a81a4930e31b8b63a08246f8444917e",
+      "nativeSourceSha256": "3d7e16106c546a4d9a29b627ea0ea04ba5af156a1abf6a5c33a239182e6c0e5e",
+      "inputMetadataSha256": "c3dc5016ad743fc2c37d259422a97aa8adf1267286f5c11707f24c1c7b117fcc",
+      "inputContextSha256": "ac825ee13611ab52f3d6523b6d62776a690cfe020bf3634815006f1b520356af",
+      "inspectedImage": "/catalog/wave_576/dinner-russian-family-soup-table.webp",
+      "reviewedAt": "2026-10-28T11:43:14.007Z",
+      "observations": [
+        "A woman with glasses and a blue floral blouse ladles red soup from a flower-decorated enamel pot.",
+        "The man holds a soup bowl, the braided girl holds a spoon, and dark bread, sour cream and dumplings sit on the table."
+      ],
+      "copy": {
+        "title": "Family Sharing Beet Soup and Dumplings",
+        "alt": "Two adults and a girl with braids share beet soup, dark bread and dumplings at a wooden table.",
+        "description": "The woman ladles soup from a floral enamel pot while the man holds his bowl ready. A sour-cream dish and small dumpling plate accompany the red soup."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-african-family-simple-supper",
+      "status": "reviewed-from-image",
+      "sourceSha256": "158138a9bd9562ee7b7c79a71fe9c39f970602306b3ab5894d71c21d354830a5",
+      "imageSha256": "158138a9bd9562ee7b7c79a71fe9c39f970602306b3ab5894d71c21d354830a5",
+      "nativeSourceSha256": "d4b12262b60ad03ba595b5d07c171bc9313d1cb767a9b65a54b1577a3b056fe3",
+      "inputMetadataSha256": "c04071ccbe61e4234ca1ac7b6394c7247fbce8c1aa139c6786d49dc2b691f0b3",
+      "inputContextSha256": "f71b69daf7a4f133bf1b8a47979a53e37ce9a8e94d95d51159517a8c0f22bb53",
+      "inspectedImage": "/catalog/wave_576/dinner-african-family-simple-supper.webp",
+      "reviewedAt": "2026-10-28T11:47:03.449Z",
+      "observations": [
+        "The slim father wears a faded blue shirt and tan trousers with a sewn knee patch; the mother portions a pale porridge-like food.",
+        "Two children hold spoons beside plain enamel plates; only small bowls of beans and leafy greens accompany the shared main bowl."
+      ],
+      "copy": {
+        "title": "Family Sharing a Simple Supper of Beans and Greens",
+        "alt": "A family of four shares a simple meal at a worn wooden table with enamel plates and small food bowls.",
+        "description": "The mother portions the shared food while the children wait with spoons. A patched trouser knee, plain clothing and a small serving of beans and greens distinguish this modest supper."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-asian-family-rice-fish",
+      "status": "reviewed-from-image",
+      "sourceSha256": "e3337ec44540d792d8d964c3dd16c39b415a4536d7a7fa2b0dbe82b17f6474bd",
+      "imageSha256": "e3337ec44540d792d8d964c3dd16c39b415a4536d7a7fa2b0dbe82b17f6474bd",
+      "nativeSourceSha256": "afdd6fb656c35fe93539e2530ed66d4663ca451f9f65250e4d43d35ef8a7f1f3",
+      "inputMetadataSha256": "d52d21e38bda52edce86afb7d51cf8300567abf1d872e26b0c0597edfcc219d9",
+      "inputContextSha256": "7d6a54516a1446d35dda9086cdb711ebbb0e369aa2597961134fb809e849db04",
+      "inspectedImage": "/catalog/wave_576/dinner-asian-family-rice-fish.webp",
+      "reviewedAt": "2026-10-28T11:47:03.487Z",
+      "observations": [
+        "Four family members sit around a low oval table with rice bowls and chopsticks.",
+        "A grilled whole fish, broccoli and carrot bowl and four small soup bowls sit on the table; the girl wears a lilac dress and the boy a blue top."
+      ],
+      "copy": {
+        "title": "Family Dinner with Rice, Fish and Vegetables",
+        "alt": "A family sits at a low table sharing rice bowls, grilled fish, vegetables and soup.",
+        "description": "The mother lifts broccoli with serving chopsticks as the other diners hold rice bowls. Blue stripes and pink floral patterns distinguish the crockery around the low wooden table."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-asian-friends-curry-night",
+      "status": "reviewed-from-image",
+      "sourceSha256": "1f3973074377417fac174753bf38e204dc5c0d5af001159b3a94fc6808a8b6d2",
+      "imageSha256": "1f3973074377417fac174753bf38e204dc5c0d5af001159b3a94fc6808a8b6d2",
+      "nativeSourceSha256": "8e798ddd435caba2b487eb1e2d28fd52424576f11fb08ec0f2a7d68e29f7393f",
+      "inputMetadataSha256": "ff44475a5425d1c2d7c8beb4d83adcc4eeb44c060dd9791dae47ffdbbbea230f",
+      "inputContextSha256": "929165c3112f2779d33e3cf49cd91ac20712b510ed27820997bce92a35fdce41",
+      "inspectedImage": "/catalog/wave_576/dinner-asian-friends-curry-night.webp",
+      "reviewedAt": "2026-10-28T11:51:59.737Z",
+      "observations": [
+        "Four friends sit around a square table; a bearded man with a hair bun holds flatbread and a woman with glasses holds a rice bowl.",
+        "The curly-haired woman serves from a curry bowl while the diner in a sage sweatshirt lifts food with a spoon."
+      ],
+      "copy": {
+        "title": "Four Friends Sharing Curry and Flatbread",
+        "alt": "Four friends share curry, rice and flatbread around a small wooden dinner table.",
+        "description": "A blue blouse, yellow cardigan, rust shirt and sage sweatshirt distinguish the diners. Serving bowls of curry and a stack of flatbreads sit within easy reach."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-asian-children-noodle-supper",
+      "status": "reviewed-from-image",
+      "sourceSha256": "368a51c8b8e61d815d38bb8374ca41066c9f694644da277137aaf9b7cc6f8b3e",
+      "imageSha256": "368a51c8b8e61d815d38bb8374ca41066c9f694644da277137aaf9b7cc6f8b3e",
+      "nativeSourceSha256": "344e62e42264549b9dada8994c9c27dd324027b88a44356d48def6374e8661ae",
+      "inputMetadataSha256": "7499b13083855e382700a85c4b42405af0ec57232304c2c82f3194ad579b3b7b",
+      "inputContextSha256": "ec1a63f289a0c156679642c51141342dbf3e337f3e3380fefe01d3c804883b91",
+      "inspectedImage": "/catalog/wave_576/dinner-asian-children-noodle-supper.webp",
+      "reviewedAt": "2026-10-28T11:51:59.803Z",
+      "observations": [
+        "Three children sit at a bright blue child-height table: a bob-haired girl in pink, spiky-haired boy in orange and braided girl in mint.",
+        "The girl in pink lifts noodles with chopsticks, the boy holds a soup spoon and the braided girl holds vegetables; dumplings sit in the center."
+      ],
+      "copy": {
+        "title": "Children Sharing Noodles at a Blue Table",
+        "alt": "Three children share noodles, vegetables and dumplings at a bright blue table.",
+        "description": "The children use different utensils and bowls as they enjoy the meal. Pink overalls, an orange striped shirt and a mint dress make their silhouettes easy to distinguish."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-lasagna-supper-casserole",
+      "status": "reviewed-from-image",
+      "sourceSha256": "fd0a3a9fa8263d7615ab8f12f9ef142192be71a059cd85a2fd7292705254470b",
+      "imageSha256": "fd0a3a9fa8263d7615ab8f12f9ef142192be71a059cd85a2fd7292705254470b",
+      "nativeSourceSha256": "60979c1534b302e8ccab4d748a4872d24f497ac13d226c0206c95e200b78061f",
+      "inputMetadataSha256": "80dee36452142a77b32be3146b34a87ab885d977879c274cdab178ed5b688b3b",
+      "inputContextSha256": "172be334bf82f182df781c9702ee70bb3784632412f9e9b3b52de9538c017052",
+      "inspectedImage": "/catalog/wave_576/dinner-lasagna-supper-casserole.webp",
+      "reviewedAt": "2026-10-28T11:56:26.128Z",
+      "observations": [
+        "A corner portion is removed from the lasagna in a blue casserole and rests on a separate white plate.",
+        "A metal serving spatula sits beneath the plated piece, with a cucumber-and-tomato salad bowl behind it."
+      ],
+      "copy": {
+        "title": "Lasagna Casserole with a Plated Serving",
+        "alt": "A blue lasagna casserole sits beside a plated slice, serving spatula and salad bowl.",
+        "description": "The cut corner reveals ruffled pasta layers and tomato filling. Basil leaves decorate the golden top, with a small salad alongside the separate serving."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-fish-chips-dinner-tray",
+      "status": "reviewed-from-image",
+      "sourceSha256": "ae794d5564b751c4ac48cb195d154d7bdd9e6ae24545f6c7b318fa8b50f7f9bc",
+      "imageSha256": "ae794d5564b751c4ac48cb195d154d7bdd9e6ae24545f6c7b318fa8b50f7f9bc",
+      "nativeSourceSha256": "9680491e579b0092e738d12fa75b79307c440d96d05769db7ac315fd248fcff1",
+      "inputMetadataSha256": "a35385fa63560d4e4d454e5ca19d8ed3b9b09ed74fb1c3989c1cad263ed2aeed",
+      "inputContextSha256": "35b17593007b52eb04c8f045995122a2baf099260e3a209e931ed9cda1d7ee7f",
+      "inspectedImage": "/catalog/wave_577/dinner-fish-chips-dinner-tray.webp",
+      "reviewedAt": "2026-10-28T11:56:26.173Z",
+      "observations": [
+        "A battered fish fillet lies over thick chips inside a paper-lined cardboard tray.",
+        "Peas, a lemon wedge and a small sauce cup sit at one end, with a wooden fork beside the tray."
+      ],
+      "copy": {
+        "title": "Fish and Chips in a Paper-Lined Tray",
+        "alt": "A battered fish fillet and thick chips fill a tray with peas, lemon and tartar sauce.",
+        "description": "Golden batter and chunky potato shapes contrast with the green peas. A plain wooden fork lies beside the takeaway tray."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-sushi-bento-dinner",
+      "status": "reviewed-from-image",
+      "sourceSha256": "3f3b6d098e94de724dd4b8a958881d993cb09edb144f7bac6a5854d349523be1",
+      "imageSha256": "3f3b6d098e94de724dd4b8a958881d993cb09edb144f7bac6a5854d349523be1",
+      "nativeSourceSha256": "9c0235dd4e6b482dc12eaafe79897fac7fd398a7374c3da0652d7161f37a96b1",
+      "inputMetadataSha256": "d17c24fd2c647dc92c9c2ecc270cb5aa316e921dd42e26bd02dfc9680502471e",
+      "inputContextSha256": "fb5763131ce8f70f0cefcebf49183a7f262e0e83d0497e0f42085562a77dbb90",
+      "inspectedImage": "/catalog/wave_577/dinner-sushi-bento-dinner.webp",
+      "reviewedAt": "2026-10-28T11:56:26.205Z",
+      "observations": [
+        "The divided wooden box contains salmon nigiri, cucumber rolls, edamame, ginger and cucumber slices.",
+        "Chopsticks rest on a blue-and-white ceramic holder beside a matching soy-sauce dish."
+      ],
+      "copy": {
+        "title": "Sushi Dinner in a Divided Wooden Bento",
+        "alt": "A wooden bento holds salmon nigiri, cucumber sushi rolls, edamame and pickled ginger.",
+        "description": "The compartments separate orange salmon, green vegetables and pink ginger. Chopsticks and a floral soy-sauce bowl complete the compact dinner arrangement."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-chili-cornbread-supper",
+      "status": "reviewed-from-image",
+      "sourceSha256": "6a234d71694095fad46651d9d905b2c8c828808e4e02c4142e602040dae884f7",
+      "imageSha256": "6a234d71694095fad46651d9d905b2c8c828808e4e02c4142e602040dae884f7",
+      "nativeSourceSha256": "f87909fe32d0a543a78940b3e741590e2f4f96f3548b34bbea30ffdd8b17a35a",
+      "inputMetadataSha256": "8c9760af4218f36b955375b2596557a8a34c9fde92fa34025516f39b4da22187",
+      "inputContextSha256": "39276584ce78a7f37933b317fac3b8fdb7fa6099b8190c439aefbf209600343a",
+      "inspectedImage": "/catalog/wave_577/dinner-chili-cornbread-supper.webp",
+      "reviewedAt": "2026-10-28T12:02:05.340Z",
+      "observations": [
+        "A red enamel pot holds bean chili with a metal ladle resting inside.",
+        "Two cornbread squares sit on a cream plate beside a blue bowl of sour cream topped with green onion."
+      ],
+      "copy": {
+        "title": "Chili Supper with Cornbread and Sour Cream",
+        "alt": "A red pot of bean chili sits beside two cornbread squares and a bowl of sour cream.",
+        "description": "Kidney beans and tomato pieces are visible beneath the resting ladle. Golden cornbread and green-topped sour cream balance the compact serving arrangement."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-tofu-grain-dinner-bowl",
+      "status": "reviewed-from-image",
+      "sourceSha256": "7f5f0ddbf3115b1fc61f4baa5808d60161f4ecb9700f57f97dda2bc7fdbb9ead",
+      "imageSha256": "7f5f0ddbf3115b1fc61f4baa5808d60161f4ecb9700f57f97dda2bc7fdbb9ead",
+      "nativeSourceSha256": "d9f823007c9b3af6ff43d796bef1186160eac752a03150201b97f2478f287b2c",
+      "inputMetadataSha256": "fd5423d55406e1d9b161186561a3709cb391600ee2dcf6f608ac4a674305cf9e",
+      "inputContextSha256": "5d9fd27cf5ffa0950660c214e6b9bcad22153a58ff9e78f3801138bf606c304b",
+      "inspectedImage": "/catalog/wave_577/dinner-tofu-grain-dinner-bowl.webp",
+      "reviewedAt": "2026-10-28T12:02:05.389Z",
+      "observations": [
+        "Tofu cubes, avocado slices, broccoli, carrot ribbons and rice occupy separate sections of the speckled bowl.",
+        "Sesame seeds and sauce top the tofu, with a spoon and folded tan napkin beside the bowl."
+      ],
+      "copy": {
+        "title": "Tofu, Avocado and Rice Dinner Bowl",
+        "alt": "A speckled bowl holds tofu, avocado, rice, carrot ribbons and broccoli beside a spoon.",
+        "description": "The ingredients sit in clear sections, with sesame seeds and sauce across the golden tofu. A folded tan napkin rests beneath the bowl."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-takeaway-dinner-cartons",
+      "status": "reviewed-from-image",
+      "sourceSha256": "db37aaadb603bfb90555677a661b6cc69dd98d2ed61e5180df165cea51a9e89a",
+      "imageSha256": "db37aaadb603bfb90555677a661b6cc69dd98d2ed61e5180df165cea51a9e89a",
+      "nativeSourceSha256": "ebe448095ae4b3f928659d2c4235177dfbeadec1076f66b5ae8a9d9ded2ff572",
+      "inputMetadataSha256": "122079e1fe20c3a917412d954d4c043fe78a8c7eeb0662ec3709a8ca83afbce7",
+      "inputContextSha256": "560907713cdac8395aed99b3f4a1c0598ada42ac75e6b12183be10e0eb7a7c49",
+      "inspectedImage": "/catalog/wave_577/dinner-takeaway-dinner-cartons.webp",
+      "reviewedAt": "2026-10-28T12:02:05.424Z",
+      "observations": [
+        "One kraft carton holds rice with broccoli and carrots; a second holds two vegetable skewers.",
+        "A plain lidded cup, sauce tub and paper sleeve of wooden cutlery sit beside the food cartons."
+      ],
+      "copy": {
+        "title": "Takeaway Rice and Vegetable Skewer Dinner",
+        "alt": "Two takeaway cartons hold vegetable rice and grilled skewers beside a cup, sauce and wooden cutlery.",
+        "description": "Broccoli, carrot slices and peas brighten the rice carton. Red pepper, mushrooms, onion and zucchini form the two skewers in the separate tray."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-dinosaur-child-dinner-tray",
+      "status": "reviewed-from-image",
+      "sourceSha256": "cb65d9feb7f82185c8bec222018817e54e04a5b42fd494b08c3852ad68687abb",
+      "imageSha256": "cb65d9feb7f82185c8bec222018817e54e04a5b42fd494b08c3852ad68687abb",
+      "nativeSourceSha256": "a804a2290f9970a121d881b7bd664f3a236480340225901dd7e07e952d041487",
+      "inputMetadataSha256": "82970edc65b536818e420505ae7efce3ca035f00d89eb2a659a9303678f873c9",
+      "inputContextSha256": "41cbb50af0060588981e1147b25f7bdc227b6cb9835e598ce94439510bb9e488",
+      "inspectedImage": "/catalog/wave_577/dinner-dinosaur-child-dinner-tray.webp",
+      "reviewedAt": "2026-10-28T12:11:13.681Z",
+      "observations": [
+        "A green dinosaur-shaped divided plate holds peas along the neck, pasta in the body, carrots in the tail and a fish portion in a separate section.",
+        "An orange spoon and a small blue cup sit beside the tray."
+      ],
+      "copy": {
+        "title": "Dinner in a Green Dinosaur Tray",
+        "alt": "A dinosaur-shaped divided tray holds pasta, fish, peas and carrots beside a spoon and cup.",
+        "description": "The long neck and curved tail form separate food compartments. A smiling dinosaur head and bright orange spoon make the tray playful without adding faces to the food."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-mexican-family-tamale-supper",
+      "status": "reviewed-from-image",
+      "sourceSha256": "461ebe6398a662a1902934702e1851a3d21a4d9f642416e69e51f6a3b0b259e5",
+      "imageSha256": "461ebe6398a662a1902934702e1851a3d21a4d9f642416e69e51f6a3b0b259e5",
+      "nativeSourceSha256": "86ba4e9c5b8a54b9ecf021d61a917556df1902b4f895ca08e780a699a2dfc468",
+      "inputMetadataSha256": "01a2fecb20a7552538f164ba982b9f6daa20d3db2a3e138d7ac84b5c00aa60b5",
+      "inputContextSha256": "3360306d17036440c37b45fd037a1b2daac0f82ab8d38d1933e8730915a0a3cc",
+      "inspectedImage": "/catalog/wave_578/dinner-mexican-family-tamale-supper.webp",
+      "reviewedAt": "2026-10-28T12:06:33.118Z",
+      "observations": [
+        "The woman in a turquoise floral-collar blouse opens a corn-husk tamale while the man holds a patterned rice bowl.",
+        "Two children sit between the adults; a tamale platter, salsa and sliced vegetables fill the rectangular table."
+      ],
+      "copy": {
+        "title": "Family Sharing Tamales and Rice",
+        "alt": "A family of four shares corn-husk tamales, rice, salsa and vegetables at a dinner table.",
+        "description": "The mother opens a tamale as the father passes a bowl of rice. Floral crockery, a turquoise blouse and the children's contrasting shirts distinguish the family scene."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-hispanic-family-rice-beans",
+      "status": "reviewed-from-image",
+      "sourceSha256": "f5dc4c0e10fea2b42d12ee3791f8ec048ee8a599abffe79c8233327754f8b5cc",
+      "imageSha256": "f5dc4c0e10fea2b42d12ee3791f8ec048ee8a599abffe79c8233327754f8b5cc",
+      "nativeSourceSha256": "a440216a34496be53742e18a0cacbc4ca9ef7ffb89a06dcfa86ddfbed452c7db",
+      "inputMetadataSha256": "8be576fc4c61174b4c173f1a1a40747894febd7a3d43bfd1a0f59699b628db2e",
+      "inputContextSha256": "d872bc4ea9bab5ee6a5da4cc1a58d2e75796c5cb90e7cc496533393c339dfce8",
+      "inspectedImage": "/catalog/wave_578/dinner-hispanic-family-rice-beans.webp",
+      "reviewedAt": "2026-10-28T12:06:33.155Z",
+      "observations": [
+        "The silver-braided older woman wears glasses and a coral floral blouse; the curly-haired woman passes a bowl of black beans.",
+        "The boy in a yellow polo holds a fork over a plate with rice, beans, chicken and plantain slices."
+      ],
+      "copy": {
+        "title": "Family Supper with Rice, Beans and Plantains",
+        "alt": "Three family members share rice, black beans, roast chicken and golden plantain slices.",
+        "description": "The curly-haired diner passes beans to the older woman while the boy waits with his fork. A large chicken-and-plantain platter sits at the center of the table."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-santa-roast-supper",
+      "status": "reviewed-from-image",
+      "sourceSha256": "dc72fd8be192a671d0f6d3800281d3f3dc80acc1c925edd979a3a5b8351e1485",
+      "imageSha256": "dc72fd8be192a671d0f6d3800281d3f3dc80acc1c925edd979a3a5b8351e1485",
+      "nativeSourceSha256": "6db101f9662fe16e0bb9ab00184b8bc494059e3f46cc16298319381d170eb3ee",
+      "inputMetadataSha256": "fe978ae2800f075d374fcc37ccef6ea3e4065b0741c85510f72c9418529b5e82",
+      "inputContextSha256": "12521325f8f37f7a9f72eedf464cd756d157bf303a167164c958d1544a3a480a",
+      "inspectedImage": "/catalog/wave_578/dinner-santa-roast-supper.webp",
+      "reviewedAt": "2026-10-28T12:06:33.194Z",
+      "observations": [
+        "Santa sits on a green chair in a red fur-trimmed suit and lifts a carrot slice on a fork.",
+        "His plate holds chicken, peas and potatoes, with a green folded napkin, water glass and bread roll beside it."
+      ],
+      "copy": {
+        "title": "Santa Enjoying a Roast Dinner",
+        "alt": "Santa sits at a small wooden table eating roast chicken, potatoes, peas and carrots.",
+        "description": "Round spectacles sit above Santa's fluffy white beard as he lifts a carrot on his fork. A green chair and matching napkin complement his red suit and black boots."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-child-dinner-routine",
+      "status": "reviewed-from-image",
+      "sourceSha256": "42b193012e01f34b5cfc256c76389b60976b6bb5b1912610e5a9871dbddc5452",
+      "imageSha256": "42b193012e01f34b5cfc256c76389b60976b6bb5b1912610e5a9871dbddc5452",
+      "nativeSourceSha256": "bde8fd03c646c25b2c94f3972aa208b5980e570933f5399ebcbb7afdcdaebe36",
+      "inputMetadataSha256": "76d6a19dee4d64e23888cc6551e246f75489ae32c413c5c2718674fc0d816f81",
+      "inputContextSha256": "68abd493fc13763f0f3ec6fb1ba9128799044e5838a05d857d14822f7c4e9fdd",
+      "inspectedImage": "/catalog/wave_578/dinner-child-dinner-routine.webp",
+      "reviewedAt": "2026-10-28T12:11:13.727Z",
+      "observations": [
+        "The boy in an orange striped shirt lifts rice and broccoli on a spoon while seated at a turquoise table.",
+        "A blue cup, folded napkin and freestanding red clock showing six o'clock sit near the meal."
+      ],
+      "copy": {
+        "title": "Dinner Time at a Turquoise Table",
+        "alt": "A boy eats rice and vegetables at a turquoise table beside a red clock showing six o'clock.",
+        "description": "Yellow socks and blue sneakers complement the child's orange striped shirt. A folded napkin, water cup and small clock keep the dinner routine easy to recognize."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-outline-friends-serving-pasta",
+      "status": "reviewed-from-image",
+      "sourceSha256": "c4baa3e4e81b43de2d726816887fedf7a1c253dda45063bbdbff6460998798da",
+      "imageSha256": "c4baa3e4e81b43de2d726816887fedf7a1c253dda45063bbdbff6460998798da",
+      "nativeSourceSha256": "a4b379c79328f77c2750ad9b5411a91629c8f69166c61dcc5646f364c92301a3",
+      "inputMetadataSha256": "f6f9b43a77ad17035c48ef4ea68a6433c3c36ed00c6987411ed0128d3cd66cfa",
+      "inputContextSha256": "e4e8fcb3e7b18464c2fcc194bfe5b7e76fb517daacf76937913dcd10a60d91b7",
+      "inspectedImage": "/catalog/wave_578/dinner-outline-friends-serving-pasta.webp",
+      "reviewedAt": "2026-10-28T11:28:33.418Z",
+      "observations": [
+        "A braided woman with glasses holds a spaghetti bowl while a curly-haired woman spoons sauce over it.",
+        "The counter holds a saucepan, two plates and a tomato bowl; floral and dotted aprons distinguish the characters."
+      ],
+      "copy": {
+        "title": "Friends Adding Sauce to a Pasta Supper",
+        "alt": "Black-and-white drawing of two apron-wearing women adding sauce to a large bowl of pasta.",
+        "description": "The tall, braided cook supports the bowl while her curly-haired friend holds a serving spoon. A saucepan and tomatoes sit on the open-shelf counter."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-outline-father-daughter-dumplings",
+      "status": "reviewed-from-image",
+      "sourceSha256": "e3cffe4b8a485903f8316bb29f176ed2c58f64f064fa5326854d06cf7363e3cc",
+      "imageSha256": "e3cffe4b8a485903f8316bb29f176ed2c58f64f064fa5326854d06cf7363e3cc",
+      "nativeSourceSha256": "9cbdb4822ed9e7956cfc3f114ca3f564cda07c6094d83f405756e3dd0f779cb6",
+      "inputMetadataSha256": "00b9f1fa61af6bdde2e1fc316a7023934be66432a483e740bed19f51ca0999c1",
+      "inputContextSha256": "7cabf1834ffa1ccc5105d0d6b1b99e1cf902d2d2aa5d4c072dab82af87fdb527",
+      "inspectedImage": "/catalog/wave_578/dinner-outline-father-daughter-dumplings.webp",
+      "reviewedAt": "2026-10-28T11:28:33.477Z",
+      "observations": [
+        "The bearded man in a checked shirt and the girl with pigtails each hold a dumpling on a fork.",
+        "Two dinner plates flank a central bamboo steamer, with mugs beside the plates."
+      ],
+      "copy": {
+        "title": "Father and Daughter Sharing Dumplings",
+        "alt": "Black-and-white cartoon of a bearded father and a girl with pigtails eating dumplings.",
+        "description": "The pair lift dumplings on their forks across a small table. A bamboo steamer, two plates and plain mugs leave clear enclosed areas for coloring."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-outline-thanksgiving-bowl-pass",
+      "status": "reviewed-from-image",
+      "sourceSha256": "3d697773880cec29c4423384a135a76a773029da0adbae6c0ddf221b833fbe57",
+      "imageSha256": "3d697773880cec29c4423384a135a76a773029da0adbae6c0ddf221b833fbe57",
+      "nativeSourceSha256": "55e4dd8db353548f42b3725e8b24fb782b7ef5ba21a551b4c7eea4bd50aef643",
+      "inputMetadataSha256": "205062ca30b84fcf03b8c8ad68b1c3e4d4f9e7a0048495c7896ae9891c5a1635",
+      "inputContextSha256": "27612957416a4789909b7fe6911c61bdf41be8e18842cb653364d359d37a5723",
+      "inspectedImage": "/catalog/wave_579/dinner-outline-thanksgiving-bowl-pass.webp",
+      "reviewedAt": "2026-10-28T12:32:23.935Z",
+      "observations": [
+        "A long-haired diner in a striped sweater passes a vegetable bowl to an older man with glasses.",
+        "A turkey platter and pumpkin-shaped serving bowl sit among four place settings and leaf-marked napkins.",
+        "The inspected replacement preserves the scene and now leaves generous transparent framing on every side."
+      ],
+      "copy": {
+        "title": "Passing Vegetables at a Thanksgiving Table",
+        "alt": "Black-and-white cartoon of four family members passing vegetables around a Thanksgiving dinner table.",
+        "description": "The older man receives a bowl from the long-haired diner across the table. A roast turkey, pumpkin-shaped bowl and leaf napkins provide clear festive details for coloring."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-outline-christmas-table-crackers",
+      "status": "reviewed-from-image",
+      "sourceSha256": "9e82fd89e58d4b0c0310c3393c96916e8096ab2c293ea77a5b1d83956c034421",
+      "imageSha256": "9e82fd89e58d4b0c0310c3393c96916e8096ab2c293ea77a5b1d83956c034421",
+      "nativeSourceSha256": "4f2e8b8824cf3be9f32c9f028d13ac9f86c39b935a98c8122401524eddee34d0",
+      "inputMetadataSha256": "fd84c95547928034852ad0b8384ff907c3275258e816579823c9af61aafb774e",
+      "inputContextSha256": "5451c6b14b3fa3d921af7f42f081e3486fd53492d844fea91d16abf7a32cff5e",
+      "inspectedImage": "/catalog/wave_579/dinner-outline-christmas-table-crackers.webp",
+      "reviewedAt": "2026-10-28T12:11:13.760Z",
+      "observations": [
+        "A bob-haired woman places a Christmas cracker while a long-haired man arranges a triangular napkin.",
+        "Three plates surround a tiny decorated tree and a small gravy jug; the woman's cardigan has a cable-knit pattern."
+      ],
+      "copy": {
+        "title": "Friends Setting a Christmas Dinner Table",
+        "alt": "Black-and-white drawing of two friends arranging crackers and napkins on a Christmas dinner table.",
+        "description": "A small star-topped tree stands between the place settings. The bob-haired friend carries a holly-marked cracker while the long-haired friend positions a folded napkin."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-outline-animal-dinner-party",
+      "status": "reviewed-from-image",
+      "sourceSha256": "f03f8b01cc4265730035200de222df080b93c31f93ef1711b5869ab464024dd7",
+      "imageSha256": "f03f8b01cc4265730035200de222df080b93c31f93ef1711b5869ab464024dd7",
+      "nativeSourceSha256": "1875a6304639c242328ac9a23e4829031cbea969ee876690cb39c8cf57d600f8",
+      "inputMetadataSha256": "599197f14aa22d46c437dd2782d7c72cb48ea80bb35d44f9d332d23cb0375b4a",
+      "inputContextSha256": "7f1c298ac974d4d471fbac7890daee91a5ea23d5911e911347196140c7b05b84",
+      "inspectedImage": "/catalog/wave_579/dinner-outline-animal-dinner-party.webp",
+      "reviewedAt": "2026-10-28T12:15:43.854Z",
+      "observations": [
+        "A fox in a striped vest, rabbit in a dotted apron and bear with a bow tie hold soup spoons.",
+        "The mushroom-shaped table has a basket of carrots and bread at its center, with small stools at the sides."
+      ],
+      "copy": {
+        "title": "Woodland Animals at a Pretend Dinner Party",
+        "alt": "Black-and-white cartoon of a fox, rabbit and bear sharing soup at a mushroom-shaped table.",
+        "description": "A striped vest, dotted apron and bow tie distinguish the three animal friends. Their soup bowls surround a basket of carrots and bread."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-outline-camp-soup-table",
+      "status": "reviewed-from-image",
+      "sourceSha256": "fbc87200d6eb544b7e1d992bdfbfb427023854af696eb2d51c9a6b6f1b9ed1ca",
+      "imageSha256": "fbc87200d6eb544b7e1d992bdfbfb427023854af696eb2d51c9a6b6f1b9ed1ca",
+      "nativeSourceSha256": "d12562104486ed1466dd36109c9764700bfef63011784ea6024b1fa592194629",
+      "inputMetadataSha256": "a3fd5d51c2bde1ba7c3f4a671f5d5bb2e532fb8fab009de2018810bb95e3b4e0",
+      "inputContextSha256": "6dc4f8d8749a5b158e3c495d6224715a7816b327c8ba71d4f93482a728e1bc0b",
+      "inspectedImage": "/catalog/wave_579/dinner-outline-camp-soup-table.webp",
+      "reviewedAt": "2026-10-28T12:15:43.896Z",
+      "observations": [
+        "A soup pot with a ladle, two mugs, two bowls and sliced bread sit on a folding camp table.",
+        "A lantern hangs from a separate tripod stand beside the crossed table legs."
+      ],
+      "copy": {
+        "title": "Camping Supper Table with a Hanging Lantern",
+        "alt": "Black-and-white drawing of a folding camp table with soup, mugs, bowls and bread beside a lantern.",
+        "description": "Crossed folding legs and a tripod lantern stand give the arrangement a clear camping silhouette. Wide unshaded shapes leave room for coloring."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-outline-dinner-serving-counter",
+      "status": "reviewed-from-image",
+      "sourceSha256": "fd91c841aa824fafd7d1351e53a984f45c0111d2f5e2d0aba3fabc5947010493",
+      "imageSha256": "fd91c841aa824fafd7d1351e53a984f45c0111d2f5e2d0aba3fabc5947010493",
+      "nativeSourceSha256": "41acd27151afe9cb757a96d855b4a559ecb5e4a12492fa5eeb7fe4fdb5dfe41c",
+      "inputMetadataSha256": "af54dabe8cc12e9e33961439663f1ce1063bd031a1a9164fed2ed6e95a47f0e0",
+      "inputContextSha256": "b0bceec1694151cd0f1867c029410deab43578b35359fbc927054dcba5d0e2cd",
+      "inspectedImage": "/catalog/wave_579/dinner-outline-dinner-serving-counter.webp",
+      "reviewedAt": "2026-10-28T12:26:33.318Z",
+      "observations": [
+        "The three rectangular serving pans hold rice and vegetables, potatoes and soup, with a matching rectangular hinged lid behind the left pan.",
+        "A stack of plates, ladle and serving spoon rest on the lower shelf; four caster wheels and both cart handles are visible.",
+        "The earlier green accents have been removed in this inspected replacement."
+      ],
+      "copy": {
+        "title": "Dinner Buffet Cart with Three Serving Pans",
+        "alt": "Black-and-white drawing of a wheeled dinner buffet cart with three food pans, plates and serving utensils.",
+        "description": "A hinged rectangular lid opens above the rice pan, beside potatoes and soup. Plates, a ladle and a serving spoon are stored on the cart's lower shelf."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-outline-roast-dinner-plate",
+      "status": "reviewed-from-image",
+      "sourceSha256": "e0038328dc8e15d8ebfb68a637261d667342e5137449ddda8505429135aa0f0f",
+      "imageSha256": "e0038328dc8e15d8ebfb68a637261d667342e5137449ddda8505429135aa0f0f",
+      "nativeSourceSha256": "61d36e9a24d20fa2af77b272bd89a4d280aedfcd22e815a4266e8bf05de2e5af",
+      "inputMetadataSha256": "559b62f20ecfe7c7f431e1477cedccdca861e13e06c7c4113766b6125b5b2bbd",
+      "inputContextSha256": "77e396f48ab336e5d66b2baba07e59f5f7d20a3e5c1bde765939c1f0ef23a769",
+      "inspectedImage": "/catalog/wave_579/dinner-outline-roast-dinner-plate.webp",
+      "reviewedAt": "2026-10-28T12:22:53.153Z",
+      "observations": [
+        "A chicken leg, mashed potato mound, peas and carrot rounds sit separately on a scalloped plate.",
+        "A fork and dinner knife are arranged above the plate, with large clear food shapes."
+      ],
+      "copy": {
+        "title": "Roast Chicken Dinner on a Scalloped Plate",
+        "alt": "Black-and-white drawing of a chicken leg, mashed potato, peas and carrots on a scalloped plate.",
+        "description": "The fork and knife frame the plate above the meal. Broad unshaded food shapes and a decorative rim keep the drawing clear for coloring."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-outline-student-window-supper",
+      "status": "reviewed-from-image",
+      "sourceSha256": "365a84a6a40ce41669f7966eb083767459c014daa63cf5c32441919bd8407948",
+      "imageSha256": "365a84a6a40ce41669f7966eb083767459c014daa63cf5c32441919bd8407948",
+      "nativeSourceSha256": "f79a7f9c0c1bb06b8c3eb52ec969bf540d870a54f50601bfca0cf9a7c9b6a3c0",
+      "inputMetadataSha256": "0537a55d63f792331814efe9483b2ca3c95a0caa413006eddaf952ecc7ba24ba",
+      "inputContextSha256": "d4a5f9acad8f2de37f743031cc27905f2895b32f713307639adb267b05181658",
+      "inspectedImage": "/catalog/wave_580/dinner-outline-student-window-supper.webp",
+      "reviewedAt": "2026-10-28T12:22:53.217Z",
+      "observations": [
+        "The wavy-haired student wears round glasses and a hoodie while lifting noodles with chopsticks.",
+        "A cactus sits on the narrow table and a backpack rests on a second stool beside the seated figure."
+      ],
+      "copy": {
+        "title": "Noodle Supper at a Narrow Table",
+        "alt": "Black-and-white cartoon of a student eating noodles beside a cactus and a backpack on a stool.",
+        "description": "Round glasses, wavy hair and cuffed trousers distinguish the seated figure. A narrow ledge table and two stools make a compact evening-meal composition."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "dinner-outline-grandfather-serving-twins",
+      "status": "reviewed-from-image",
+      "sourceSha256": "020addc892b5669e17c00dac48f2f372e7a4e2bf2874689d8c7a3c0b395c30a3",
+      "imageSha256": "020addc892b5669e17c00dac48f2f372e7a4e2bf2874689d8c7a3c0b395c30a3",
+      "nativeSourceSha256": "d05fe804a1e168faddf04cb98b8393ad04fdd6878c496182fa784265f701dbea",
+      "inputMetadataSha256": "a81e45fe0133e98167ff0850e6814e479e0e77eac1a6cf9647bd22ec9d170304",
+      "inputContextSha256": "73610972bceac1a437c4f31506db36a9fb7e9663bc00292e32d85761a8e0644b",
+      "inspectedImage": "/catalog/wave_580/dinner-outline-grandfather-serving-twins.webp",
+      "reviewedAt": "2026-10-28T12:22:53.257Z",
+      "observations": [
+        "The moustached grandfather uses tongs to lower spaghetti onto the curly-haired child's plate.",
+        "The child in a star-patch top holds a napkin while the bob-haired child with round glasses holds a fork."
+      ],
+      "copy": {
+        "title": "Grandfather Serving Spaghetti to Two Children",
+        "alt": "Black-and-white cartoon of a grandfather serving spaghetti to two children at a small table.",
+        "description": "The grandfather holds a large pasta bowl above the place settings. A curly-haired child with a napkin and a bob-haired child with glasses wait for their servings."
+      },
+      "references": [],
+      "reviewerType": "AI_AGENT_NOT_HUMAN"
     }
   ]
 }

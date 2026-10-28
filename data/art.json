@@ -798394,5 +798394,2955 @@
     "pdf": "/catalog/wave_571/angel-outline-angel-decorating-tree.pdf",
     "webp": "/catalog/wave_571/angel-outline-angel-decorating-tree.webp",
     "thumb": "/catalog/wave_571/angel-outline-angel-decorating-tree-thumb.webp"
+  },
+  {
+    "id": "dinner-friends-pasta-night",
+    "topic": "dinner",
+    "title": "Three Friends Sharing a Pasta Dinner",
+    "alt": "Three women chat around a round table as one serves spaghetti and another holds a salad bowl.",
+    "description": "Braids, an auburn bob with red glasses and a curly ponytail distinguish the friends. Pasta, sliced bread and water glasses fill the tabletop.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1312,
+    "height": 1199,
+    "orientation": "Landscape",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_572",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:45.317Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.167 × 2.893 in",
+    "pdfPrint": {
+      "width": 950,
+      "height": 868,
+      "ppi": 300,
+      "pagePoints": [
+        228,
+        208.32
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 971796,
+        "sha256": "de8576338333088f5606221a0159a161659516574eb6342306feced79b6c839a"
+      },
+      "webp": {
+        "bytes": 1470258,
+        "sha256": "88c6833c02b80bfd55a5c5e941117eac63731ff46c55da5ac9d92acb7e9fdf4a"
+      },
+      "thumb": {
+        "bytes": 90804,
+        "sha256": "7528562c7894161610415eb45b965ba7973915d2db637803b1bbbf3272c33ecd"
+      }
+    },
+    "pdf": "/catalog/wave_572/dinner-friends-pasta-night.pdf",
+    "webp": "/catalog/wave_572/dinner-friends-pasta-night.webp",
+    "thumb": "/catalog/wave_572/dinner-friends-pasta-night-thumb.webp"
+  },
+  {
+    "id": "dinner-family-taco-supper",
+    "topic": "dinner",
+    "title": "Family Building Tacos at a Turquoise Table",
+    "alt": "Two children and two adults share taco ingredients around a turquoise dinner table.",
+    "description": "A red-haired girl spoons black beans into a taco held by the bearded diner. Lettuce, cheese, tortillas and bowls of toppings cover the table.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1312,
+    "height": 1199,
+    "orientation": "Landscape",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_572",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:45.317Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.047 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 914,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        219.36
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 960485,
+        "sha256": "63cec5e9c7126e6627009f907f89dd6b3c4182c1f1b9cd7efd0105c6cfd5288d"
+      },
+      "webp": {
+        "bytes": 1370334,
+        "sha256": "81cdccab49d6a91e54e41b89ff854beeb645b47bb79d8617b2c83cd40b627733"
+      },
+      "thumb": {
+        "bytes": 81686,
+        "sha256": "f306087e77464b10a51c88a2d003c1f9db34f4aeb56c3f810f10b546b7599aec"
+      }
+    },
+    "pdf": "/catalog/wave_572/dinner-family-taco-supper.pdf",
+    "webp": "/catalog/wave_572/dinner-family-taco-supper.webp",
+    "thumb": "/catalog/wave_572/dinner-family-taco-supper-thumb.webp"
+  },
+  {
+    "id": "dinner-grandparents-stew-table",
+    "topic": "dinner",
+    "title": "Three Diners Sharing Vegetable Stew",
+    "alt": "An older man ladles vegetable stew beside an older woman and a younger woman at an oval table.",
+    "description": "A white-moustached man in a green knit vest fills a bowl above a blue stew pot. Bread, soup bowls and striped napkins sit between the diners.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1312,
+    "height": 1199,
+    "orientation": "Landscape",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_572",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:45.317Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.047 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 914,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        219.36
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 941272,
+        "sha256": "d706fe0cbc5ab2bcc53b49dbe3f5c7d2bdd14430c1252a9fc439f9ae5d26d2bb"
+      },
+      "webp": {
+        "bytes": 1392960,
+        "sha256": "c21739be9fd938ee941018f53d09bf1c10639856c56a22f9c665e7c9378cefcb"
+      },
+      "thumb": {
+        "bytes": 79662,
+        "sha256": "ec40cca659b23512a650ee23c6399135a11c727d19d63781e444421191f50969"
+      }
+    },
+    "pdf": "/catalog/wave_572/dinner-grandparents-stew-table.pdf",
+    "webp": "/catalog/wave_572/dinner-grandparents-stew-table.webp",
+    "thumb": "/catalog/wave_572/dinner-grandparents-stew-table-thumb.webp"
+  },
+  {
+    "id": "dinner-solo-soup-evening",
+    "topic": "dinner",
+    "title": "Soup and a Sandwich beside a Reading Lamp",
+    "alt": "A bearded man in round glasses eats soup at a small table with an open book and a green lamp.",
+    "description": "A striped sweater and plaid slippers give the seated diner a relaxed look. Toasted sandwich triangles sit beside his blue floral soup bowl.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1212,
+    "height": 1298,
+    "orientation": "Portrait",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_572",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:45.317Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.113 × 3.333 in",
+    "pdfPrint": {
+      "width": 934,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        224.16,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 956859,
+        "sha256": "b7454817e6fc949c03d5e53d03f03e14fc1787a6b65f176f7543d6c3c9d91b66"
+      },
+      "webp": {
+        "bytes": 1145562,
+        "sha256": "6bf5795300d579c6917f02d232507d9945549ee492404b7a8574d6c84824c9b5"
+      },
+      "thumb": {
+        "bytes": 72088,
+        "sha256": "a7128defeb39b0f54f457480e808bb5f936e0704d47b4a9bb7e65798b76589fd"
+      }
+    },
+    "pdf": "/catalog/wave_572/dinner-solo-soup-evening.pdf",
+    "webp": "/catalog/wave_572/dinner-solo-soup-evening.webp",
+    "thumb": "/catalog/wave_572/dinner-solo-soup-evening-thumb.webp"
+  },
+  {
+    "id": "dinner-roommate-kitchen-island",
+    "topic": "dinner",
+    "title": "Roommates Sharing Rice Bowls at a Kitchen Island",
+    "alt": "Three adults serve rice and vegetables around a green kitchen island with yellow stools.",
+    "description": "A curly-haired woman in blue overalls sits beside two friends preparing dinner. A green cooking pot, vegetable bowls and a striped towel fill the wooden countertop.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_572",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:45.317Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 946740,
+        "sha256": "4516fa0a82d47789fb34265d25772962e7b7e654e98e65dff6d5868d4cee6e09"
+      },
+      "webp": {
+        "bytes": 1093746,
+        "sha256": "49ca25918c6e1d96610c7b8281b96901edabed5ef56037f5bf0e8298bfeb91bf"
+      },
+      "thumb": {
+        "bytes": 74832,
+        "sha256": "017423db1440e9385c5ac9999364983472cae86d8feb3b2bff075976fabe04b3"
+      }
+    },
+    "pdf": "/catalog/wave_572/dinner-roommate-kitchen-island.pdf",
+    "webp": "/catalog/wave_572/dinner-roommate-kitchen-island.webp",
+    "thumb": "/catalog/wave_572/dinner-roommate-kitchen-island-thumb.webp"
+  },
+  {
+    "id": "dinner-backyard-barbecue-table",
+    "topic": "dinner",
+    "title": "Friends Sharing Burgers at a Picnic Table",
+    "alt": "Four friends share burgers and grilled vegetables at a wooden picnic table with a wheelchair at one end.",
+    "description": "The standing diner brings a colorful vegetable platter while two seated friends hold burgers. Corn cobs, skewers and a wooden serving bowl complete the barbecue spread.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_572",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:45.317Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 937904,
+        "sha256": "359719f4c2325c0d15f0c0b598118d7760e9331b0fdfdc304b1e20fbfc71329d"
+      },
+      "webp": {
+        "bytes": 1003428,
+        "sha256": "d13424f4ee2dd7c7c1a26e434d5b919fceff9bbf3093cfb44bfdcc49b001d11a"
+      },
+      "thumb": {
+        "bytes": 68262,
+        "sha256": "b4370ccf9c9d92431963d1aa0fcb15382589cf59ee98b256b9d5fecd345d5d43"
+      }
+    },
+    "pdf": "/catalog/wave_572/dinner-backyard-barbecue-table.pdf",
+    "webp": "/catalog/wave_572/dinner-backyard-barbecue-table.webp",
+    "thumb": "/catalog/wave_572/dinner-backyard-barbecue-table-thumb.webp"
+  },
+  {
+    "id": "dinner-camping-lantern-supper",
+    "topic": "dinner",
+    "title": "Soup Supper beside a Camping Tent",
+    "alt": "A parent and two children eat soup at a folding table beside a teal tent and hanging lantern.",
+    "description": "Yellow, plum and blue outdoor clothes distinguish the three campers. Enamel bowls, folding chairs and sturdy boots give the meal a clear camping setting.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_573",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:45.785Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 925394,
+        "sha256": "222a6360125b5191768360e38a08cbd7334a4fd5ee7fe046a3bd70f94dd1e068"
+      },
+      "webp": {
+        "bytes": 977276,
+        "sha256": "2338acbfa10fd2e38cf52eb86afea61793b507b49046dbd3d069f2cf78c60dfd"
+      },
+      "thumb": {
+        "bytes": 73460,
+        "sha256": "4d021c762fc26025bd5a9b1dd4a9e8a682b8887b1ed3d918570aa8203ed01bdb"
+      }
+    },
+    "pdf": "/catalog/wave_573/dinner-camping-lantern-supper.pdf",
+    "webp": "/catalog/wave_573/dinner-camping-lantern-supper.webp",
+    "thumb": "/catalog/wave_573/dinner-camping-lantern-supper-thumb.webp"
+  },
+  {
+    "id": "dinner-bistro-date-dinner",
+    "topic": "dinner",
+    "title": "Dinner for Two with Salmon and Purple Flowers",
+    "alt": "Two adults chat over salmon dinners at a small table with a purple-flower vase.",
+    "description": "A silver-haired woman in a terracotta cardigan faces a man in a navy blazer. Their bentwood chairs and tiny flower arrangement create a compact bistro scene.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_573",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:45.785Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 968447,
+        "sha256": "2745c9bc72ece7e91730e7700b8e0505eb82804472db26b2ad8484b7753ef077"
+      },
+      "webp": {
+        "bytes": 1027276,
+        "sha256": "41c6ee20b7a05a99806d072abc0bef43f42a35d4341ef8565aa715a2ebcdd021"
+      },
+      "thumb": {
+        "bytes": 77208,
+        "sha256": "ed667bf493bf99a09b7677c1ecbd10d7f1edd0aa7377d349defb05dd898891d9"
+      }
+    },
+    "pdf": "/catalog/wave_573/dinner-bistro-date-dinner.pdf",
+    "webp": "/catalog/wave_573/dinner-bistro-date-dinner.webp",
+    "thumb": "/catalog/wave_573/dinner-bistro-date-dinner-thumb.webp"
+  },
+  {
+    "id": "dinner-housewarming-potluck",
+    "topic": "dinner",
+    "title": "Five Friends Bringing Dishes to a Potluck",
+    "alt": "Five friends gather around a sideboard with lasagna, salad, bread and a vegetable dish.",
+    "description": "A red casserole anchors the meal while each friend carries a different dish or plate. Topknots, silver curls, a ginger beard and contrasting clothes distinguish the group.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_573",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:45.785Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 744779,
+        "sha256": "4c7c3909499f375eb1731baae2f09b082899605a02f268eb6151f8f47e33fbe4"
+      },
+      "webp": {
+        "bytes": 789366,
+        "sha256": "44d50b50a6575229aa88cc1446b0ef5448b1391cbbdfc5af83bb14c0cf51ca87"
+      },
+      "thumb": {
+        "bytes": 53562,
+        "sha256": "7d10af2647c3c79476fad5bdce6c423697dc9f0494c4d48a003f3dff6a5897f7"
+      }
+    },
+    "pdf": "/catalog/wave_573/dinner-housewarming-potluck.pdf",
+    "webp": "/catalog/wave_573/dinner-housewarming-potluck.webp",
+    "thumb": "/catalog/wave_573/dinner-housewarming-potluck-thumb.webp"
+  },
+  {
+    "id": "dinner-apartment-floor-picnic",
+    "topic": "dinner",
+    "title": "Dumpling Dinner on Floor Cushions",
+    "alt": "Two women sit cross-legged on cushions beside a low tray of dumplings and tea.",
+    "description": "One friend lifts a dumpling with chopsticks while the other cradles a dipping bowl. Patterned cushions, woolly socks and a floral teapot make this an informal dinner scene.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_573",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:45.785Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.167 × 3.167 in",
+    "pdfPrint": {
+      "width": 950,
+      "height": 950,
+      "ppi": 300,
+      "pagePoints": [
+        228,
+        228
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 981528,
+        "sha256": "a8eaf01a4c85e2aca8945152f2b3bb1e725f32f6ebb4ff301f44a8617a406ae3"
+      },
+      "webp": {
+        "bytes": 1396396,
+        "sha256": "bfa864948d345c93797605c4a01802cf45dee99fc6bdf45f568436ee77a375e2"
+      },
+      "thumb": {
+        "bytes": 80154,
+        "sha256": "42aa736e171b7678b83821fcc17ee072c46b8a3dc322f250e8b8c76d06e196ca"
+      }
+    },
+    "pdf": "/catalog/wave_573/dinner-apartment-floor-picnic.pdf",
+    "webp": "/catalog/wave_573/dinner-apartment-floor-picnic.webp",
+    "thumb": "/catalog/wave_573/dinner-apartment-floor-picnic-thumb.webp"
+  },
+  {
+    "id": "dinner-christmas-friends-supper",
+    "topic": "dinner",
+    "title": "Christmas Supper with Friends and a Vegetable Tart",
+    "alt": "Four friends in festive sweaters pass bread around a Christmas dinner table with a vegetable tart.",
+    "description": "Red crackers and a fir arrangement decorate the table between the diners. A golden vegetable tart and a holly-patterned potato bowl form the center of the meal.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_573",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:45.785Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 978050,
+        "sha256": "605ffca1b1eb55d266c92dbf332833e3da0f771f8359ea458814862aa7b3683b"
+      },
+      "webp": {
+        "bytes": 1067420,
+        "sha256": "ca9d97a5be9e7e35c417817ba9af9c6fcf1605b617d73fda08ace02eb5682bc5"
+      },
+      "thumb": {
+        "bytes": 70338,
+        "sha256": "9792c09fb276d6e176743fb86491fafe149429f464286564d506888e0dfbf07c"
+      }
+    },
+    "pdf": "/catalog/wave_573/dinner-christmas-friends-supper.pdf",
+    "webp": "/catalog/wave_573/dinner-christmas-friends-supper.webp",
+    "thumb": "/catalog/wave_573/dinner-christmas-friends-supper-thumb.webp"
+  },
+  {
+    "id": "dinner-thanksgiving-passing-corn",
+    "topic": "dinner",
+    "title": "Passing Corn around a Thanksgiving Dinner Table",
+    "alt": "A grandmother offers corn to a boy while two adults sit beside a roast turkey at Thanksgiving dinner.",
+    "description": "A maple-leaf napkin, plaid runner and small pumpkin pie mark the festive meal. The four cartoon diners have different hairstyles, clothing and seated poses.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_573",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:45.785Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 954929,
+        "sha256": "13891a8f551302a4d7eaf8c9bd9d7918fa6a460bb1bcc1fe6df3cb571eab2182"
+      },
+      "webp": {
+        "bytes": 932190,
+        "sha256": "c024e7483c9bc8ef3d8485364236617fa0a3d17bd61dfb6fa65e9e4170faa8aa"
+      },
+      "thumb": {
+        "bytes": 68560,
+        "sha256": "d32ae1d5c5acdf392bb2fa1954a7902d4da7577aa3b61a706a6827e58f27c0da"
+      }
+    },
+    "pdf": "/catalog/wave_573/dinner-thanksgiving-passing-corn.pdf",
+    "webp": "/catalog/wave_573/dinner-thanksgiving-passing-corn.webp",
+    "thumb": "/catalog/wave_573/dinner-thanksgiving-passing-corn-thumb.webp"
+  },
+  {
+    "id": "dinner-friendsgiving-bench-dinner",
+    "topic": "dinner",
+    "title": "Three Friends Sharing a Friendsgiving Supper",
+    "alt": "Three women share turkey and soup while one pours water at a small Friendsgiving table.",
+    "description": "Long black hair, a purple pixie cut and short blonde curls distinguish the friends. Turkey slices, cranberry sauce and a small pumpkin bring autumn details to the supper.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_574",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:46.238Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 864757,
+        "sha256": "9bf80b6997e016ac10f590ed759d145ebc61f12a4b06181edfa54277eb066e6f"
+      },
+      "webp": {
+        "bytes": 819148,
+        "sha256": "a539b90f33c9c59cd4a5711afa3e7ad234f93f87a4e87af4baf2c51228752155"
+      },
+      "thumb": {
+        "bytes": 60158,
+        "sha256": "cef4fda87a1db8a6875025457e5ae03676880a48b36138334eee8a6bf46c6485"
+      }
+    },
+    "pdf": "/catalog/wave_574/dinner-friendsgiving-bench-dinner.pdf",
+    "webp": "/catalog/wave_574/dinner-friendsgiving-bench-dinner.webp",
+    "thumb": "/catalog/wave_574/dinner-friendsgiving-bench-dinner-thumb.webp"
+  },
+  {
+    "id": "dinner-christmas-napkin-helper",
+    "topic": "dinner",
+    "title": "Folding Red Napkins for Christmas Dinner",
+    "alt": "A boy and an older woman fold red napkins beside a round Christmas dinner table.",
+    "description": "The young helper wears red dungarees while the older woman wears a green knitted cardigan. Holly sprigs decorate both the tablecloth and the place settings.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_574",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:46.238Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 908348,
+        "sha256": "879238324e792e5d18108910281f3975cc2fb40bc8722f7836d8a410b58b714f"
+      },
+      "webp": {
+        "bytes": 699882,
+        "sha256": "d9bddf7c84b169eacef35c9e45eb5047eaaeca053ae52822c6747f2abcb07100"
+      },
+      "thumb": {
+        "bytes": 49042,
+        "sha256": "b73e31b6abcc6826668a0ede653a524cdbd6bdc47626a02993e8267e1ec95b9a"
+      }
+    },
+    "pdf": "/catalog/wave_574/dinner-christmas-napkin-helper.pdf",
+    "webp": "/catalog/wave_574/dinner-christmas-napkin-helper.webp",
+    "thumb": "/catalog/wave_574/dinner-christmas-napkin-helper-thumb.webp"
+  },
+  {
+    "id": "dinner-christmas-dinner-nook",
+    "topic": "dinner",
+    "title": "Christmas Dinner Table with Four Red Chairs",
+    "alt": "A round Christmas table is set with roast dinner, green napkins and a small decorated tree.",
+    "description": "The red chairs and tartan runner frame a roast bird and bowls of vegetables. Green glassware and folded napkins coordinate the four place settings.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_574",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:46.238Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 878443,
+        "sha256": "b43278c730d21eff0934ba5ce0d21c777d413a15aeb3c58898b614fb33c8757a"
+      },
+      "webp": {
+        "bytes": 841554,
+        "sha256": "fe793ea20e6abd11de89990d515fb9b7ad40afa1fb32de5cb2bc7fbd0ad9e242"
+      },
+      "thumb": {
+        "bytes": 61678,
+        "sha256": "7af46b9945c3348fa4018ceea14cc2993d23b3db2bdb09f529bcee327ccc50f0"
+      }
+    },
+    "pdf": "/catalog/wave_574/dinner-christmas-dinner-nook.pdf",
+    "webp": "/catalog/wave_574/dinner-christmas-dinner-nook.webp",
+    "thumb": "/catalog/wave_574/dinner-christmas-dinner-nook-thumb.webp"
+  },
+  {
+    "id": "dinner-office-evening-meal",
+    "topic": "dinner",
+    "title": "Coworkers Sharing a Takeaway Dinner",
+    "alt": "Three coworkers eat rice from takeaway cartons around a small round table.",
+    "description": "A blue blazer, rolled shirt sleeves and a knitted vest give each diner a different workday outfit. Extra cartons and a small succulent sit between them.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_574",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:46.238Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 829798,
+        "sha256": "48e450e970bcac665e02daa956322eb4dbbf06aa8ccc956d5cd0bf0627b5160c"
+      },
+      "webp": {
+        "bytes": 755796,
+        "sha256": "187a58445e8fde6a3cdb2438840335961acb04452695d8bb7345b255c7f6718d"
+      },
+      "thumb": {
+        "bytes": 59516,
+        "sha256": "b9b46fc042c25cc45704070e7cd7e19e25c5ea9b0219963ed6b3b8a33e7eff2b"
+      }
+    },
+    "pdf": "/catalog/wave_574/dinner-office-evening-meal.pdf",
+    "webp": "/catalog/wave_574/dinner-office-evening-meal.webp",
+    "thumb": "/catalog/wave_574/dinner-office-evening-meal-thumb.webp"
+  },
+  {
+    "id": "dinner-student-noodle-night",
+    "topic": "dinner",
+    "title": "Noodle Night around a Low Table",
+    "alt": "Three young adults sit on cushions and eat noodles beside a low table with books and a teapot.",
+    "description": "A burgundy hoodie, mustard sweatshirt and green T-shirt distinguish the friends. Patterned bowls and lifted noodles make the shared meal the focus.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1300,
+    "height": 1209,
+    "orientation": "Landscape",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_574",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:46.238Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.100 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 930,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        223.2
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 949573,
+        "sha256": "8a67a83c32d9ba579ea08d08401e8fb9d6ca4cf571058181677eb8f595884a40"
+      },
+      "webp": {
+        "bytes": 1009066,
+        "sha256": "46ca2e35467b42236b8ca2938165caed60959b83dd9c6111a85a9b5d095343f7"
+      },
+      "thumb": {
+        "bytes": 60476,
+        "sha256": "2c3667173c089566b26b3e1d626077e03f9ed9ac85b5ac0dee11a9c1382c6729"
+      }
+    },
+    "pdf": "/catalog/wave_574/dinner-student-noodle-night.pdf",
+    "webp": "/catalog/wave_574/dinner-student-noodle-night.webp",
+    "thumb": "/catalog/wave_574/dinner-student-noodle-night-thumb.webp"
+  },
+  {
+    "id": "dinner-pajama-breakfast-dinner",
+    "topic": "dinner",
+    "title": "Pancakes for Dinner in Pajamas",
+    "alt": "A family in colorful pajamas shares pancakes, eggs and strawberries at a small table.",
+    "description": "The seated diners wear dotted and striped pajamas while the standing boy carries a pancake stack. Rabbit slippers, toast and a strawberry bowl add playful details.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_574",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:46.238Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 950103,
+        "sha256": "be5a3c7c33ff2ed27c91297b913f353c245553b7749cca0071aee73251f8495e"
+      },
+      "webp": {
+        "bytes": 1014146,
+        "sha256": "9bda3b8a50d373378d2eadd8fbcb96f2d97bf8bf0a949625d4c4d15a03b00007"
+      },
+      "thumb": {
+        "bytes": 75222,
+        "sha256": "0a0b40e013e7bd4e5099e0ea0fdcb132c78fa4049ce00081037b31870af62c0d"
+      }
+    },
+    "pdf": "/catalog/wave_574/dinner-pajama-breakfast-dinner.pdf",
+    "webp": "/catalog/wave_574/dinner-pajama-breakfast-dinner.webp",
+    "thumb": "/catalog/wave_574/dinner-pajama-breakfast-dinner-thumb.webp"
+  },
+  {
+    "id": "dinner-neighbors-balcony-supper",
+    "topic": "dinner",
+    "title": "Pasta and Vegetables at a Folding Bistro Table",
+    "alt": "An older woman and a curly-haired man share dinner beside a basil plant on a green bistro table.",
+    "description": "The woman holds grilled vegetables while her companion lifts pasta on a fork. Folding chairs, cream trousers and a lavender cardigan give the compact scene a relaxed feel.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_575",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:46.854Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 959218,
+        "sha256": "07801d5621c2dc57038367c6f6330c19db7290d1982f014a58c276b12586d2f8"
+      },
+      "webp": {
+        "bytes": 1031542,
+        "sha256": "2745b91f077356bbd75b6cffe2cd11912cc4da60750548845964d24715154b92"
+      },
+      "thumb": {
+        "bytes": 79920,
+        "sha256": "f7e1735c14ca27b1971ba89282067a036d016e033f579742d581570852d919cd"
+      }
+    },
+    "pdf": "/catalog/wave_575/dinner-neighbors-balcony-supper.pdf",
+    "webp": "/catalog/wave_575/dinner-neighbors-balcony-supper.webp",
+    "thumb": "/catalog/wave_575/dinner-neighbors-balcony-supper-thumb.webp"
+  },
+  {
+    "id": "dinner-family-highchair-dinner",
+    "topic": "dinner",
+    "title": "Family Dinner beside a Yellow Highchair",
+    "alt": "Two parents eat chicken and rice while their toddler sits in a yellow highchair beside the table.",
+    "description": "The father offers a spoonful of peas as the toddler reaches toward him. A bear bib, divided tray and bright highchair distinguish the youngest diner's place.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1278,
+    "height": 1230,
+    "orientation": "Landscape",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_575",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:46.854Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.207 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 962,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        230.88
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 995459,
+        "sha256": "3e55617b86e08302d69612439acb632810be1f8e5ea0ebfc8ee8ecd4f34ddd9f"
+      },
+      "webp": {
+        "bytes": 1065480,
+        "sha256": "29cdbf014d9ec265eff89417d915a5992664604cc6230383bba8c1669928aa1c"
+      },
+      "thumb": {
+        "bytes": 76086,
+        "sha256": "06fd6b67970c629ca85b0e941b480710c7a15857a421fe60e010ea115ea5ad8d"
+      }
+    },
+    "pdf": "/catalog/wave_575/dinner-family-highchair-dinner.pdf",
+    "webp": "/catalog/wave_575/dinner-family-highchair-dinner.webp",
+    "thumb": "/catalog/wave_575/dinner-family-highchair-dinner-thumb.webp"
+  },
+  {
+    "id": "dinner-roasted-vegetable-sheet-pan",
+    "topic": "dinner",
+    "title": "Roasted Vegetables in a Blue Baking Dish",
+    "alt": "A blue baking dish holds colorful roasted vegetables beside an oven mitt, spatula and herb dip.",
+    "description": "Orange carrots, purple beet wedges and green broccoli form distinct shapes inside the cream-lined dish. A quilted yellow mitt and wooden spatula complete the serving arrangement.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_575",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:46.854Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 954001,
+        "sha256": "7824ae7d3307f84d38522a0b73822df03b65c65c8e7b72826b030824f26bb7f0"
+      },
+      "webp": {
+        "bytes": 1398560,
+        "sha256": "6c0f70a5c387ac1d1c9f9b2bc8fbef185770d8f617d3c8c8cfa939dcea94b487"
+      },
+      "thumb": {
+        "bytes": 82054,
+        "sha256": "8054298f970db83534e5c2fba68fc0e0c3bdf7927252a0346f686a43c14d8f3d"
+      }
+    },
+    "pdf": "/catalog/wave_575/dinner-roasted-vegetable-sheet-pan.pdf",
+    "webp": "/catalog/wave_575/dinner-roasted-vegetable-sheet-pan.webp",
+    "thumb": "/catalog/wave_575/dinner-roasted-vegetable-sheet-pan-thumb.webp"
+  },
+  {
+    "id": "dinner-roast-chicken-dinner-board",
+    "topic": "dinner",
+    "title": "Roast Chicken Dinner on an Oval Board",
+    "alt": "A golden roast chicken rests on a wooden board with potatoes, green beans, lemon and gravy.",
+    "description": "Rosemary sprigs decorate the browned bird and roasted potatoes. A white gravy jug and wooden-handled carving fork sit along the edge of the oval board.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_575",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:46.854Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 936047,
+        "sha256": "237724d8d3e75866c283ac5c31cb5bb82fb72cd8c730b23ab99407177a7e0ad1"
+      },
+      "webp": {
+        "bytes": 1283816,
+        "sha256": "7bfe3c40d9b2a282f5bfb480962bbccfb406d8e8685227c8737f0e9a655785ef"
+      },
+      "thumb": {
+        "bytes": 69038,
+        "sha256": "f64115558c2166c86f756c8eaee1a5a5925853794216ead27c3a2b1092b4be74"
+      }
+    },
+    "pdf": "/catalog/wave_575/dinner-roast-chicken-dinner-board.pdf",
+    "webp": "/catalog/wave_575/dinner-roast-chicken-dinner-board.webp",
+    "thumb": "/catalog/wave_575/dinner-roast-chicken-dinner-board-thumb.webp"
+  },
+  {
+    "id": "dinner-red-haired-irish-family",
+    "topic": "dinner",
+    "title": "Red-Haired Family Sharing a Vegetable Supper",
+    "alt": "A red-haired family of four shares potatoes, vegetables and casserole around a wooden dinner table.",
+    "description": "Freckles, a ginger beard, an auburn braid and a straight bob distinguish the diners. The mother passes a floral vegetable bowl while the children hold their forks.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_575",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:46.854Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.167 × 3.167 in",
+    "pdfPrint": {
+      "width": 950,
+      "height": 950,
+      "ppi": 300,
+      "pagePoints": [
+        228,
+        228
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 941947,
+        "sha256": "85aa17d838300256b7d8d9f5751d526252ce42b98de85074ac7329855e663637"
+      },
+      "webp": {
+        "bytes": 1303580,
+        "sha256": "392ca06106f7818292ab3f1b8daf7110f3973857d97fa878c5360f7a60c69e0e"
+      },
+      "thumb": {
+        "bytes": 83544,
+        "sha256": "a967e1fd3e1ec40bb831cdd556fc0f39c5432ca71857108eea3138fe7a09c385"
+      }
+    },
+    "pdf": "/catalog/wave_575/dinner-red-haired-irish-family.pdf",
+    "webp": "/catalog/wave_575/dinner-red-haired-irish-family.webp",
+    "thumb": "/catalog/wave_575/dinner-red-haired-irish-family-thumb.webp"
+  },
+  {
+    "id": "dinner-black-family-sunday-meal",
+    "topic": "dinner",
+    "title": "Family Dinner with Rice, Chicken and Greens",
+    "alt": "Five family members share rice, roast chicken, sweet potatoes and greens around a round table.",
+    "description": "Silver curls, long twists, two hair puffs and close-cropped styles give the family distinct silhouettes. One adult serves rice as the older diner passes a bowl of greens.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_575",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:46.854Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 921988,
+        "sha256": "9671bd1b726d4579deb83198990abe272a4f8afb3d0ac3d96c90b317b8aff398"
+      },
+      "webp": {
+        "bytes": 1036808,
+        "sha256": "5d4f98a6ae02be51df12811a7e97816775a569838d3fa4ebed78f5c34643eca4"
+      },
+      "thumb": {
+        "bytes": 70140,
+        "sha256": "d38e070fa69c1ba578f07cb8767753d0ec1cddab2d84d5b16f4868f93b5c874e"
+      }
+    },
+    "pdf": "/catalog/wave_575/dinner-black-family-sunday-meal.pdf",
+    "webp": "/catalog/wave_575/dinner-black-family-sunday-meal.webp",
+    "thumb": "/catalog/wave_575/dinner-black-family-sunday-meal-thumb.webp"
+  },
+  {
+    "id": "dinner-russian-family-soup-table",
+    "topic": "dinner",
+    "title": "Family Sharing Beet Soup and Dumplings",
+    "alt": "Two adults and a girl with braids share beet soup, dark bread and dumplings at a wooden table.",
+    "description": "The woman ladles soup from a floral enamel pot while the man holds his bowl ready. A sour-cream dish and small dumpling plate accompany the red soup.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_576",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:47.386Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 948958,
+        "sha256": "3288a020b02a9a468dfafcfc02e25da7748966e175a81225839a9e547e2887ab"
+      },
+      "webp": {
+        "bytes": 1093634,
+        "sha256": "da7f7c5697a63b58e13184c5cfeacc644a81a4930e31b8b63a08246f8444917e"
+      },
+      "thumb": {
+        "bytes": 72260,
+        "sha256": "c3140883f3b5cd72fa0c96a50a8b70634410ce0e4043d784631eb834fd82b1ed"
+      }
+    },
+    "pdf": "/catalog/wave_576/dinner-russian-family-soup-table.pdf",
+    "webp": "/catalog/wave_576/dinner-russian-family-soup-table.webp",
+    "thumb": "/catalog/wave_576/dinner-russian-family-soup-table-thumb.webp"
+  },
+  {
+    "id": "dinner-african-family-simple-supper",
+    "topic": "dinner",
+    "title": "Family Sharing a Simple Supper of Beans and Greens",
+    "alt": "A family of four shares a simple meal at a worn wooden table with enamel plates and small food bowls.",
+    "description": "The mother portions the shared food while the children wait with spoons. A patched trouser knee, plain clothing and a small serving of beans and greens distinguish this modest supper.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_576",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:47.386Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 979232,
+        "sha256": "9b5b7b72edac2fb26de191bff1b603b04bdc18e8dc0c8c3c79a01079d8aba7e5"
+      },
+      "webp": {
+        "bytes": 1194282,
+        "sha256": "158138a9bd9562ee7b7c79a71fe9c39f970602306b3ab5894d71c21d354830a5"
+      },
+      "thumb": {
+        "bytes": 78014,
+        "sha256": "ce7e2802116f3ab4f0d6780570035cba297515fe8522e3d571ca7e62384525cf"
+      }
+    },
+    "pdf": "/catalog/wave_576/dinner-african-family-simple-supper.pdf",
+    "webp": "/catalog/wave_576/dinner-african-family-simple-supper.webp",
+    "thumb": "/catalog/wave_576/dinner-african-family-simple-supper-thumb.webp"
+  },
+  {
+    "id": "dinner-asian-family-rice-fish",
+    "topic": "dinner",
+    "title": "Family Dinner with Rice, Fish and Vegetables",
+    "alt": "A family sits at a low table sharing rice bowls, grilled fish, vegetables and soup.",
+    "description": "The mother lifts broccoli with serving chopsticks as the other diners hold rice bowls. Blue stripes and pink floral patterns distinguish the crockery around the low wooden table.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_576",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:47.386Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 784047,
+        "sha256": "94f5defdcd21ff888d8aeec2d659b66bb793cc5b8dc3582f639906708370af8d"
+      },
+      "webp": {
+        "bytes": 852292,
+        "sha256": "e3337ec44540d792d8d964c3dd16c39b415a4536d7a7fa2b0dbe82b17f6474bd"
+      },
+      "thumb": {
+        "bytes": 55984,
+        "sha256": "54e6d45c7ec637bf656c08895e9f9df360aa927bc9cd6a4989b22f64fecf2847"
+      }
+    },
+    "pdf": "/catalog/wave_576/dinner-asian-family-rice-fish.pdf",
+    "webp": "/catalog/wave_576/dinner-asian-family-rice-fish.webp",
+    "thumb": "/catalog/wave_576/dinner-asian-family-rice-fish-thumb.webp"
+  },
+  {
+    "id": "dinner-asian-friends-curry-night",
+    "topic": "dinner",
+    "title": "Four Friends Sharing Curry and Flatbread",
+    "alt": "Four friends share curry, rice and flatbread around a small wooden dinner table.",
+    "description": "A blue blouse, yellow cardigan, rust shirt and sage sweatshirt distinguish the diners. Serving bowls of curry and a stack of flatbreads sit within easy reach.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_576",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:47.386Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 900154,
+        "sha256": "9850d7bf2568a6eb545cfbf83bc85f860d25763aa8e07a2713a35c9381f9a894"
+      },
+      "webp": {
+        "bytes": 881072,
+        "sha256": "1f3973074377417fac174753bf38e204dc5c0d5af001159b3a94fc6808a8b6d2"
+      },
+      "thumb": {
+        "bytes": 61286,
+        "sha256": "b0e87a9ae4fa09924e6f6b718e60aa7e105a1ec8190788c6f454915ec25edd6a"
+      }
+    },
+    "pdf": "/catalog/wave_576/dinner-asian-friends-curry-night.pdf",
+    "webp": "/catalog/wave_576/dinner-asian-friends-curry-night.webp",
+    "thumb": "/catalog/wave_576/dinner-asian-friends-curry-night-thumb.webp"
+  },
+  {
+    "id": "dinner-asian-children-noodle-supper",
+    "topic": "dinner",
+    "title": "Children Sharing Noodles at a Blue Table",
+    "alt": "Three children share noodles, vegetables and dumplings at a bright blue table.",
+    "description": "The children use different utensils and bowls as they enjoy the meal. Pink overalls, an orange striped shirt and a mint dress make their silhouettes easy to distinguish.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_576",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:47.386Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 858883,
+        "sha256": "703cac3ca8f3e679b10fb3c5eb4cbea18b0f5c8b5ef2ae60f22e87657b84db64"
+      },
+      "webp": {
+        "bytes": 912134,
+        "sha256": "368a51c8b8e61d815d38bb8374ca41066c9f694644da277137aaf9b7cc6f8b3e"
+      },
+      "thumb": {
+        "bytes": 67910,
+        "sha256": "6b8dd024894f151f2f2cf9ef33d24df905daf2bdb379d69db406d3a14289a875"
+      }
+    },
+    "pdf": "/catalog/wave_576/dinner-asian-children-noodle-supper.pdf",
+    "webp": "/catalog/wave_576/dinner-asian-children-noodle-supper.webp",
+    "thumb": "/catalog/wave_576/dinner-asian-children-noodle-supper-thumb.webp"
+  },
+  {
+    "id": "dinner-lasagna-supper-casserole",
+    "topic": "dinner",
+    "title": "Lasagna Casserole with a Plated Serving",
+    "alt": "A blue lasagna casserole sits beside a plated slice, serving spatula and salad bowl.",
+    "description": "The cut corner reveals ruffled pasta layers and tomato filling. Basil leaves decorate the golden top, with a small salad alongside the separate serving.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_576",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:47.386Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 845782,
+        "sha256": "b22d39f122140e2211add19e2eb3f3dceba7b6d55e6808c9dbb03a7dbe93805e"
+      },
+      "webp": {
+        "bytes": 1135276,
+        "sha256": "fd0a3a9fa8263d7615ab8f12f9ef142192be71a059cd85a2fd7292705254470b"
+      },
+      "thumb": {
+        "bytes": 63790,
+        "sha256": "e5b8357b0950e0021f0d16f2d2e5a3a6fd25daf1d6de9fdbefaa9f3436e4ee7b"
+      }
+    },
+    "pdf": "/catalog/wave_576/dinner-lasagna-supper-casserole.pdf",
+    "webp": "/catalog/wave_576/dinner-lasagna-supper-casserole.webp",
+    "thumb": "/catalog/wave_576/dinner-lasagna-supper-casserole-thumb.webp"
+  },
+  {
+    "id": "dinner-fish-chips-dinner-tray",
+    "topic": "dinner",
+    "title": "Fish and Chips in a Paper-Lined Tray",
+    "alt": "A battered fish fillet and thick chips fill a tray with peas, lemon and tartar sauce.",
+    "description": "Golden batter and chunky potato shapes contrast with the green peas. A plain wooden fork lies beside the takeaway tray.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_577",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:47.863Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 785795,
+        "sha256": "c0d4808f117ce485455cf695103a29be78a2dbf31c2241170d836275e8fe6534"
+      },
+      "webp": {
+        "bytes": 1055628,
+        "sha256": "ae794d5564b751c4ac48cb195d154d7bdd9e6ae24545f6c7b318fa8b50f7f9bc"
+      },
+      "thumb": {
+        "bytes": 60240,
+        "sha256": "44966c696d10a5fe9cf0a355ab2f9b9ff4e6dc9e3050b3ea858c4645ba1310be"
+      }
+    },
+    "pdf": "/catalog/wave_577/dinner-fish-chips-dinner-tray.pdf",
+    "webp": "/catalog/wave_577/dinner-fish-chips-dinner-tray.webp",
+    "thumb": "/catalog/wave_577/dinner-fish-chips-dinner-tray-thumb.webp"
+  },
+  {
+    "id": "dinner-sushi-bento-dinner",
+    "topic": "dinner",
+    "title": "Sushi Dinner in a Divided Wooden Bento",
+    "alt": "A wooden bento holds salmon nigiri, cucumber sushi rolls, edamame and pickled ginger.",
+    "description": "The compartments separate orange salmon, green vegetables and pink ginger. Chopsticks and a floral soy-sauce bowl complete the compact dinner arrangement.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_577",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:47.863Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 852711,
+        "sha256": "a7d7ac56cf9e7228dc212caac4d6d915f8c9da0862fe279727edd528f4baaceb"
+      },
+      "webp": {
+        "bytes": 1090730,
+        "sha256": "3f3b6d098e94de724dd4b8a958881d993cb09edb144f7bac6a5854d349523be1"
+      },
+      "thumb": {
+        "bytes": 64480,
+        "sha256": "3a183287f412f8d093a78b53869b3e19940c84e359d6e979c7cad94eca0276f7"
+      }
+    },
+    "pdf": "/catalog/wave_577/dinner-sushi-bento-dinner.pdf",
+    "webp": "/catalog/wave_577/dinner-sushi-bento-dinner.webp",
+    "thumb": "/catalog/wave_577/dinner-sushi-bento-dinner-thumb.webp"
+  },
+  {
+    "id": "dinner-chili-cornbread-supper",
+    "topic": "dinner",
+    "title": "Chili Supper with Cornbread and Sour Cream",
+    "alt": "A red pot of bean chili sits beside two cornbread squares and a bowl of sour cream.",
+    "description": "Kidney beans and tomato pieces are visible beneath the resting ladle. Golden cornbread and green-topped sour cream balance the compact serving arrangement.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_577",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:47.863Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 879764,
+        "sha256": "789ba68e546a9fc6690508e4ae56396436411503839f1fcbd5ae34df8d8424fb"
+      },
+      "webp": {
+        "bytes": 1065226,
+        "sha256": "6a234d71694095fad46651d9d905b2c8c828808e4e02c4142e602040dae884f7"
+      },
+      "thumb": {
+        "bytes": 63524,
+        "sha256": "f35d4db00f45eb130111f8dbf27dd781c72159c455f292cd5a5726b61d1c359b"
+      }
+    },
+    "pdf": "/catalog/wave_577/dinner-chili-cornbread-supper.pdf",
+    "webp": "/catalog/wave_577/dinner-chili-cornbread-supper.webp",
+    "thumb": "/catalog/wave_577/dinner-chili-cornbread-supper-thumb.webp"
+  },
+  {
+    "id": "dinner-tofu-grain-dinner-bowl",
+    "topic": "dinner",
+    "title": "Tofu, Avocado and Rice Dinner Bowl",
+    "alt": "A speckled bowl holds tofu, avocado, rice, carrot ribbons and broccoli beside a spoon.",
+    "description": "The ingredients sit in clear sections, with sesame seeds and sauce across the golden tofu. A folded tan napkin rests beneath the bowl.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_577",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:47.863Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 952797,
+        "sha256": "49b480d6c92f2d0ad10201a748bd99bf0abee79c13b34e3d83c14b3bb8068bb3"
+      },
+      "webp": {
+        "bytes": 1178154,
+        "sha256": "7f5f0ddbf3115b1fc61f4baa5808d60161f4ecb9700f57f97dda2bc7fdbb9ead"
+      },
+      "thumb": {
+        "bytes": 65736,
+        "sha256": "0bc3ffe70560b3617f9e435ee33175360adf37f84774f882a2017536d6f7a74b"
+      }
+    },
+    "pdf": "/catalog/wave_577/dinner-tofu-grain-dinner-bowl.pdf",
+    "webp": "/catalog/wave_577/dinner-tofu-grain-dinner-bowl.webp",
+    "thumb": "/catalog/wave_577/dinner-tofu-grain-dinner-bowl-thumb.webp"
+  },
+  {
+    "id": "dinner-takeaway-dinner-cartons",
+    "topic": "dinner",
+    "title": "Takeaway Rice and Vegetable Skewer Dinner",
+    "alt": "Two takeaway cartons hold vegetable rice and grilled skewers beside a cup, sauce and wooden cutlery.",
+    "description": "Broccoli, carrot slices and peas brighten the rice carton. Red pepper, mushrooms, onion and zucchini form the two skewers in the separate tray.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_577",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:47.863Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 776794,
+        "sha256": "42a601355d527bf70dfcba1c16d567655c9c40c29a1b56161a6f8c86a3982d00"
+      },
+      "webp": {
+        "bytes": 988976,
+        "sha256": "db37aaadb603bfb90555677a661b6cc69dd98d2ed61e5180df165cea51a9e89a"
+      },
+      "thumb": {
+        "bytes": 57594,
+        "sha256": "75e3e93287d0546cd07533b00a40c9cbcc3f03006593b0baff1ab8920c167974"
+      }
+    },
+    "pdf": "/catalog/wave_577/dinner-takeaway-dinner-cartons.pdf",
+    "webp": "/catalog/wave_577/dinner-takeaway-dinner-cartons.webp",
+    "thumb": "/catalog/wave_577/dinner-takeaway-dinner-cartons-thumb.webp"
+  },
+  {
+    "id": "dinner-dinosaur-child-dinner-tray",
+    "topic": "dinner",
+    "title": "Dinner in a Green Dinosaur Tray",
+    "alt": "A dinosaur-shaped divided tray holds pasta, fish, peas and carrots beside a spoon and cup.",
+    "description": "The long neck and curved tail form separate food compartments. A smiling dinosaur head and bright orange spoon make the tray playful without adding faces to the food.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_577",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:47.863Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 821466,
+        "sha256": "baf8f3388e8de59337552bd4bbaa49e386fe88ccdfaac15bb0f4d4402a5dd058"
+      },
+      "webp": {
+        "bytes": 765624,
+        "sha256": "cb65d9feb7f82185c8bec222018817e54e04a5b42fd494b08c3852ad68687abb"
+      },
+      "thumb": {
+        "bytes": 50942,
+        "sha256": "d3a978d077c01ac9c6897fb0c683174daba1cbae24478ccf2943c9c62bc2bae5"
+      }
+    },
+    "pdf": "/catalog/wave_577/dinner-dinosaur-child-dinner-tray.pdf",
+    "webp": "/catalog/wave_577/dinner-dinosaur-child-dinner-tray.webp",
+    "thumb": "/catalog/wave_577/dinner-dinosaur-child-dinner-tray-thumb.webp"
+  },
+  {
+    "id": "dinner-mexican-family-tamale-supper",
+    "topic": "dinner",
+    "title": "Family Sharing Tamales and Rice",
+    "alt": "A family of four shares corn-husk tamales, rice, salsa and vegetables at a dinner table.",
+    "description": "The mother opens a tamale as the father passes a bowl of rice. Floral crockery, a turquoise blouse and the children's contrasting shirts distinguish the family scene.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1374,
+    "height": 1145,
+    "orientation": "Landscape",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_578",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:48.304Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 2.777 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 833,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        199.92
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 977144,
+        "sha256": "4376cf83fcb96898d53ac51c4ac3f5bc299cba14e75e24d5055739601a3e53f2"
+      },
+      "webp": {
+        "bytes": 1176330,
+        "sha256": "461ebe6398a662a1902934702e1851a3d21a4d9f642416e69e51f6a3b0b259e5"
+      },
+      "thumb": {
+        "bytes": 64130,
+        "sha256": "85984b27879b311dcc00fcc432e016e135f0569f43933ec99f6c75dc7f5d3c01"
+      }
+    },
+    "pdf": "/catalog/wave_578/dinner-mexican-family-tamale-supper.pdf",
+    "webp": "/catalog/wave_578/dinner-mexican-family-tamale-supper.webp",
+    "thumb": "/catalog/wave_578/dinner-mexican-family-tamale-supper-thumb.webp"
+  },
+  {
+    "id": "dinner-hispanic-family-rice-beans",
+    "topic": "dinner",
+    "title": "Family Supper with Rice, Beans and Plantains",
+    "alt": "Three family members share rice, black beans, roast chicken and golden plantain slices.",
+    "description": "The curly-haired diner passes beans to the older woman while the boy waits with his fork. A large chicken-and-plantain platter sits at the center of the table.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_578",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:48.304Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 971359,
+        "sha256": "7e437131c8e8d5343051eb6046ccd117c231ca7ac011cce129c864394dc9061d"
+      },
+      "webp": {
+        "bytes": 1080678,
+        "sha256": "f5dc4c0e10fea2b42d12ee3791f8ec048ee8a599abffe79c8233327754f8b5cc"
+      },
+      "thumb": {
+        "bytes": 72438,
+        "sha256": "b15ba2fd49eaa908991553403e014b4779a43378c56bb0cc96bbf17807646918"
+      }
+    },
+    "pdf": "/catalog/wave_578/dinner-hispanic-family-rice-beans.pdf",
+    "webp": "/catalog/wave_578/dinner-hispanic-family-rice-beans.webp",
+    "thumb": "/catalog/wave_578/dinner-hispanic-family-rice-beans-thumb.webp"
+  },
+  {
+    "id": "dinner-santa-roast-supper",
+    "topic": "dinner",
+    "title": "Santa Enjoying a Roast Dinner",
+    "alt": "Santa sits at a small wooden table eating roast chicken, potatoes, peas and carrots.",
+    "description": "Round spectacles sit above Santa's fluffy white beard as he lifts a carrot on his fork. A green chair and matching napkin complement his red suit and black boots.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_578",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:48.304Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 770714,
+        "sha256": "d70a850c6b96081b64276b1f4e432506019b6b4549651910ec008afbe28d3201"
+      },
+      "webp": {
+        "bytes": 820848,
+        "sha256": "dc72fd8be192a671d0f6d3800281d3f3dc80acc1c925edd979a3a5b8351e1485"
+      },
+      "thumb": {
+        "bytes": 58354,
+        "sha256": "0a81a85b9ebb684b50aaa1c895c3ef7c36ac179d0b322835b3750f50543c4b2d"
+      }
+    },
+    "pdf": "/catalog/wave_578/dinner-santa-roast-supper.pdf",
+    "webp": "/catalog/wave_578/dinner-santa-roast-supper.webp",
+    "thumb": "/catalog/wave_578/dinner-santa-roast-supper-thumb.webp"
+  },
+  {
+    "id": "dinner-child-dinner-routine",
+    "topic": "dinner",
+    "title": "Dinner Time at a Turquoise Table",
+    "alt": "A boy eats rice and vegetables at a turquoise table beside a red clock showing six o'clock.",
+    "description": "Yellow socks and blue sneakers complement the child's orange striped shirt. A folded napkin, water cup and small clock keep the dinner routine easy to recognize.",
+    "color": "Multicolor",
+    "style": "Cartoon",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_578",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:48.304Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 857779,
+        "sha256": "a8e6fc47ddbfa0c1d408839e95636891600c36eaa58a682083b6d1c3618dcbde"
+      },
+      "webp": {
+        "bytes": 624366,
+        "sha256": "42b193012e01f34b5cfc256c76389b60976b6bb5b1912610e5a9871dbddc5452"
+      },
+      "thumb": {
+        "bytes": 49126,
+        "sha256": "35b317ea02c4af42366e0a232d1fae2a0a2179356682494b314465eaffea8dfb"
+      }
+    },
+    "pdf": "/catalog/wave_578/dinner-child-dinner-routine.pdf",
+    "webp": "/catalog/wave_578/dinner-child-dinner-routine.webp",
+    "thumb": "/catalog/wave_578/dinner-child-dinner-routine-thumb.webp"
+  },
+  {
+    "id": "dinner-outline-friends-serving-pasta",
+    "topic": "dinner",
+    "title": "Friends Adding Sauce to a Pasta Supper",
+    "alt": "Black-and-white drawing of two apron-wearing women adding sauce to a large bowl of pasta.",
+    "description": "The tall, braided cook supports the bowl while her curly-haired friend holds a serving spoon. A saucepan and tomatoes sit on the open-shelf counter.",
+    "color": "Black & White",
+    "style": "Outline",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_578",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:48.304Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 356581,
+        "sha256": "ddc8d3ddca160e4ad2aeb1f6545ed9e8fd04bd5fa75bc0a726ac3cd99bade125"
+      },
+      "webp": {
+        "bytes": 693640,
+        "sha256": "c4baa3e4e81b43de2d726816887fedf7a1c253dda45063bbdbff6460998798da"
+      },
+      "thumb": {
+        "bytes": 56806,
+        "sha256": "e04220281419bc02951141f5971855b9d8028970588a12e9133060c9666b184b"
+      }
+    },
+    "pdf": "/catalog/wave_578/dinner-outline-friends-serving-pasta.pdf",
+    "webp": "/catalog/wave_578/dinner-outline-friends-serving-pasta.webp",
+    "thumb": "/catalog/wave_578/dinner-outline-friends-serving-pasta-thumb.webp"
+  },
+  {
+    "id": "dinner-outline-father-daughter-dumplings",
+    "topic": "dinner",
+    "title": "Father and Daughter Sharing Dumplings",
+    "alt": "Black-and-white cartoon of a bearded father and a girl with pigtails eating dumplings.",
+    "description": "The pair lift dumplings on their forks across a small table. A bamboo steamer, two plates and plain mugs leave clear enclosed areas for coloring.",
+    "color": "Black & White",
+    "style": "Outline",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_578",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:48.304Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 412351,
+        "sha256": "5db336eb2c66f0608fe75f7c816211d893e92149d84671012ba7f8f6cee093cd"
+      },
+      "webp": {
+        "bytes": 778548,
+        "sha256": "e3cffe4b8a485903f8316bb29f176ed2c58f64f064fa5326854d06cf7363e3cc"
+      },
+      "thumb": {
+        "bytes": 69218,
+        "sha256": "551314b6dd905265132f83e480a208605af925617a6f9618cd1a2bfd2309f48e"
+      }
+    },
+    "pdf": "/catalog/wave_578/dinner-outline-father-daughter-dumplings.pdf",
+    "webp": "/catalog/wave_578/dinner-outline-father-daughter-dumplings.webp",
+    "thumb": "/catalog/wave_578/dinner-outline-father-daughter-dumplings-thumb.webp"
+  },
+  {
+    "id": "dinner-outline-thanksgiving-bowl-pass",
+    "topic": "dinner",
+    "title": "Passing Vegetables at a Thanksgiving Table",
+    "alt": "Black-and-white cartoon of four family members passing vegetables around a Thanksgiving dinner table.",
+    "description": "The older man receives a bowl from the long-haired diner across the table. A roast turkey, pumpkin-shaped bowl and leaf napkins provide clear festive details for coloring.",
+    "color": "Black & White",
+    "style": "Outline",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_579",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:48.686Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 329774,
+        "sha256": "68d302808269cfe5de867c6cf33ddaea15d7335ffe3fc94d34a464479059482d"
+      },
+      "webp": {
+        "bytes": 621804,
+        "sha256": "3d697773880cec29c4423384a135a76a773029da0adbae6c0ddf221b833fbe57"
+      },
+      "thumb": {
+        "bytes": 56972,
+        "sha256": "5634f998dc3e0be9e74ca02387cd02c2838fb8d0643da32d895e57b1b3b7820f"
+      }
+    },
+    "pdf": "/catalog/wave_579/dinner-outline-thanksgiving-bowl-pass.pdf",
+    "webp": "/catalog/wave_579/dinner-outline-thanksgiving-bowl-pass.webp",
+    "thumb": "/catalog/wave_579/dinner-outline-thanksgiving-bowl-pass-thumb.webp"
+  },
+  {
+    "id": "dinner-outline-christmas-table-crackers",
+    "topic": "dinner",
+    "title": "Friends Setting a Christmas Dinner Table",
+    "alt": "Black-and-white drawing of two friends arranging crackers and napkins on a Christmas dinner table.",
+    "description": "A small star-topped tree stands between the place settings. The bob-haired friend carries a holly-marked cracker while the long-haired friend positions a folded napkin.",
+    "color": "Black & White",
+    "style": "Outline",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_579",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:48.686Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 399021,
+        "sha256": "361f8d51c97df44983b6d28dfe9f7d66a23532a6b07b39ec3cd05680f39bec91"
+      },
+      "webp": {
+        "bytes": 732092,
+        "sha256": "9e82fd89e58d4b0c0310c3393c96916e8096ab2c293ea77a5b1d83956c034421"
+      },
+      "thumb": {
+        "bytes": 65474,
+        "sha256": "134ea5d5dded00deb90d5b9f721776e5deb3e58d3bb766069602e8d4344d96de"
+      }
+    },
+    "pdf": "/catalog/wave_579/dinner-outline-christmas-table-crackers.pdf",
+    "webp": "/catalog/wave_579/dinner-outline-christmas-table-crackers.webp",
+    "thumb": "/catalog/wave_579/dinner-outline-christmas-table-crackers-thumb.webp"
+  },
+  {
+    "id": "dinner-outline-animal-dinner-party",
+    "topic": "dinner",
+    "title": "Woodland Animals at a Pretend Dinner Party",
+    "alt": "Black-and-white cartoon of a fox, rabbit and bear sharing soup at a mushroom-shaped table.",
+    "description": "A striped vest, dotted apron and bow tie distinguish the three animal friends. Their soup bowls surround a basket of carrots and bread.",
+    "color": "Black & White",
+    "style": "Outline",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_579",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:48.686Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 382839,
+        "sha256": "1206c1fa5aa5e7659eb599ef0fffb65d5710cc036272c62a6f4301f2236c4533"
+      },
+      "webp": {
+        "bytes": 708692,
+        "sha256": "f03f8b01cc4265730035200de222df080b93c31f93ef1711b5869ab464024dd7"
+      },
+      "thumb": {
+        "bytes": 61662,
+        "sha256": "b221dfadd8a9f9cc64bf57e4f2f6aec5ec89ee186c744d32afb1e52345e7e019"
+      }
+    },
+    "pdf": "/catalog/wave_579/dinner-outline-animal-dinner-party.pdf",
+    "webp": "/catalog/wave_579/dinner-outline-animal-dinner-party.webp",
+    "thumb": "/catalog/wave_579/dinner-outline-animal-dinner-party-thumb.webp"
+  },
+  {
+    "id": "dinner-outline-camp-soup-table",
+    "topic": "dinner",
+    "title": "Camping Supper Table with a Hanging Lantern",
+    "alt": "Black-and-white drawing of a folding camp table with soup, mugs, bowls and bread beside a lantern.",
+    "description": "Crossed folding legs and a tripod lantern stand give the arrangement a clear camping silhouette. Wide unshaded shapes leave room for coloring.",
+    "color": "Black & White",
+    "style": "Outline",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_579",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:48.686Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 295538,
+        "sha256": "7aaf78708ea757ebb87017404fda7a1c812cfb7adc0c6c265455736305a50f4b"
+      },
+      "webp": {
+        "bytes": 470146,
+        "sha256": "fbc87200d6eb544b7e1d992bdfbfb427023854af696eb2d51c9a6b6f1b9ed1ca"
+      },
+      "thumb": {
+        "bytes": 50292,
+        "sha256": "6648fb4a29738c932558869a5fd73df15f126ca03a8c7990671ead9cb97fd3ec"
+      }
+    },
+    "pdf": "/catalog/wave_579/dinner-outline-camp-soup-table.pdf",
+    "webp": "/catalog/wave_579/dinner-outline-camp-soup-table.webp",
+    "thumb": "/catalog/wave_579/dinner-outline-camp-soup-table-thumb.webp"
+  },
+  {
+    "id": "dinner-outline-dinner-serving-counter",
+    "topic": "dinner",
+    "title": "Dinner Buffet Cart with Three Serving Pans",
+    "alt": "Black-and-white drawing of a wheeled dinner buffet cart with three food pans, plates and serving utensils.",
+    "description": "A hinged rectangular lid opens above the rice pan, beside potatoes and soup. Plates, a ladle and a serving spoon are stored on the cart's lower shelf.",
+    "color": "Black & White",
+    "style": "Outline",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_579",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:48.686Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 283343,
+        "sha256": "e3d2eeebfb35436eba60f1a2b06064358d0932ce55980ebf1aa6b7f8a02cd7b1"
+      },
+      "webp": {
+        "bytes": 526134,
+        "sha256": "fd91c841aa824fafd7d1351e53a984f45c0111d2f5e2d0aba3fabc5947010493"
+      },
+      "thumb": {
+        "bytes": 42802,
+        "sha256": "d3d9dfc3ccf9596d6ea43d1480107eb6af5a8259a3afb6e5b5d23a4c449e34e2"
+      }
+    },
+    "pdf": "/catalog/wave_579/dinner-outline-dinner-serving-counter.pdf",
+    "webp": "/catalog/wave_579/dinner-outline-dinner-serving-counter.webp",
+    "thumb": "/catalog/wave_579/dinner-outline-dinner-serving-counter-thumb.webp"
+  },
+  {
+    "id": "dinner-outline-roast-dinner-plate",
+    "topic": "dinner",
+    "title": "Roast Chicken Dinner on a Scalloped Plate",
+    "alt": "Black-and-white drawing of a chicken leg, mashed potato, peas and carrots on a scalloped plate.",
+    "description": "The fork and knife frame the plate above the meal. Broad unshaded food shapes and a decorative rim keep the drawing clear for coloring.",
+    "color": "Black & White",
+    "style": "Outline",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_579",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:48.686Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 292884,
+        "sha256": "5f8ffda0bd4a455eac7c8f0c7020c4f14d6b7055c294cae4d3f753bb6881c6a6"
+      },
+      "webp": {
+        "bytes": 522054,
+        "sha256": "e0038328dc8e15d8ebfb68a637261d667342e5137449ddda8505429135aa0f0f"
+      },
+      "thumb": {
+        "bytes": 43068,
+        "sha256": "2bc5abc9cde36982e05eff8e9aa8d01f9f748652cf0e6edb80ead4fd06073e45"
+      }
+    },
+    "pdf": "/catalog/wave_579/dinner-outline-roast-dinner-plate.pdf",
+    "webp": "/catalog/wave_579/dinner-outline-roast-dinner-plate.webp",
+    "thumb": "/catalog/wave_579/dinner-outline-roast-dinner-plate-thumb.webp"
+  },
+  {
+    "id": "dinner-outline-student-window-supper",
+    "topic": "dinner",
+    "title": "Noodle Supper at a Narrow Table",
+    "alt": "Black-and-white cartoon of a student eating noodles beside a cactus and a backpack on a stool.",
+    "description": "Round glasses, wavy hair and cuffed trousers distinguish the seated figure. A narrow ledge table and two stools make a compact evening-meal composition.",
+    "color": "Black & White",
+    "style": "Outline",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_580",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:49.113Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 272005,
+        "sha256": "4c9bb0425b9e5b01dfb196bde57529244f96c69d294681d17b4b331d33e003da"
+      },
+      "webp": {
+        "bytes": 452990,
+        "sha256": "365a84a6a40ce41669f7966eb083767459c014daa63cf5c32441919bd8407948"
+      },
+      "thumb": {
+        "bytes": 47514,
+        "sha256": "4cb3156629b3805f06eecf090321779e78d5c82fc68987f8dc2d17f0c3eca836"
+      }
+    },
+    "pdf": "/catalog/wave_580/dinner-outline-student-window-supper.pdf",
+    "webp": "/catalog/wave_580/dinner-outline-student-window-supper.webp",
+    "thumb": "/catalog/wave_580/dinner-outline-student-window-supper-thumb.webp"
+  },
+  {
+    "id": "dinner-outline-grandfather-serving-twins",
+    "topic": "dinner",
+    "title": "Grandfather Serving Spaghetti to Two Children",
+    "alt": "Black-and-white cartoon of a grandfather serving spaghetti to two children at a small table.",
+    "description": "The grandfather holds a large pasta bowl above the place settings. A curly-haired child with a napkin and a bob-haired child with glasses wait for their servings.",
+    "color": "Black & White",
+    "style": "Outline",
+    "width": 1254,
+    "height": 1254,
+    "orientation": "Square",
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "wave_580",
+    "productionMethod": "generated-raster",
+    "provenance": "Original built-in image generation; native source retained with prompt and export evidence.",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-10-23",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-10-28T13:34:49.113Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "3.333 × 3.333 in",
+    "pdfPrint": {
+      "width": 1000,
+      "height": 1000,
+      "ppi": 300,
+      "pagePoints": [
+        240,
+        240
+      ]
+    },
+    "alpha": true,
+    "files": {
+      "pdf": {
+        "bytes": 352774,
+        "sha256": "f15a8f567c81b5c1fd7b08df4ece8e5556c8fdfb919fe097dd93fc2126098f38"
+      },
+      "webp": {
+        "bytes": 663136,
+        "sha256": "020addc892b5669e17c00dac48f2f372e7a4e2bf2874689d8c7a3c0b395c30a3"
+      },
+      "thumb": {
+        "bytes": 59966,
+        "sha256": "54c41849f08286e5aa4ecb5b468b32a2e49c0abb744207c10fdea2d7ea52023c"
+      }
+    },
+    "pdf": "/catalog/wave_580/dinner-outline-grandfather-serving-twins.pdf",
+    "webp": "/catalog/wave_580/dinner-outline-grandfather-serving-twins.webp",
+    "thumb": "/catalog/wave_580/dinner-outline-grandfather-serving-twins-thumb.webp"
   }
 ]
