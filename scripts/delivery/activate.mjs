@@ -55,7 +55,7 @@ export async function prepareDeliveryRelease({
     execFileSync('git', ['show', `${revision}:data/retired-artwork.json`], { encoding: 'utf8' }),
   ).artworkIds;
   const options = { revision, ids, withdrawnIds, pageHeaders, editorHeaders };
-  const entry = `import original from ${JSON.stringify(join(source, '_worker.js'))};import {fetchAssetWithRetry} from './server/delivery/asset-retry.mjs';import {createPublicFileHandler} from './server/delivery/public-files.mjs';const delivery=createPublicFileHandler(${JSON.stringify(options)});export default {fetch(request,env,context){const fallback={fetch:q=>original.fetch(q,{...env,ASSETS:{fetch:r=>fetchAssetWithRetry(r,env.ASSETS)}},context)};return delivery(request,env,context,fallback);}};`;
+  const entry = `import original from ${JSON.stringify(join(source, '_worker.js'))};import {fetchAssetWithRetry} from './server/delivery/asset-retry.mjs';import {createPublicFileHandler} from './server/delivery/public-files.mjs';import {compressHtml} from './server/delivery/compress-html.mjs';const delivery=createPublicFileHandler(${JSON.stringify(options)});export default {async fetch(request,env,context){const fallback={fetch:q=>original.fetch(q,{...env,ASSETS:{fetch:r=>fetchAssetWithRetry(r,env.ASSETS)}},context)};return compressHtml(request,await delivery(request,env,context,fallback));}};`;
   await build({
     stdin: { contents: entry, resolveDir: root, sourcefile: 'verified-delivery-release.mjs' },
     bundle: true,
