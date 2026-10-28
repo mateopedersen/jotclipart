@@ -37,7 +37,7 @@ const downloadRecord = {
 ---
 
 <Layout
-  title={/\bclipart$/i.test(item.title.trim()) ? item.title : item.title + ' Clipart'}
+  title={item.title}
   description={item.description}
   noindex={!item.indexable}
   image={item.webp}
