@@ -11,6 +11,9 @@ async function loadVerified(
 ) {
   const url = verifiedSourceUrl(file, kind, origin);
   const load = async (cache: RequestCache) => {
+    const requestSignal = signal
+      ? AbortSignal.any([signal, AbortSignal.timeout(30000)])
+      : AbortSignal.timeout(30000);
     let response: Response;
     try {
       response = await fetch(url, {
@@ -19,9 +22,7 @@ async function loadVerified(
         cache,
         priority: 'high',
         redirect: 'error',
-        signal: signal
-          ? AbortSignal.any([signal, AbortSignal.timeout(30000)])
-          : AbortSignal.timeout(30000),
+        signal: requestSignal,
       });
     } catch (error) {
       // A preceding cross-origin <img> can cache an immutable response without
@@ -31,7 +32,7 @@ async function loadVerified(
         cache === 'default' &&
         url.origin !== origin &&
         error instanceof TypeError &&
-        !signal?.aborted
+        !requestSignal.aborted
       )
         throw new StaleRepresentation('The cached artwork response cannot be read.');
       throw error;

@@ -56,6 +56,7 @@ test('a stale same-size browser copy is repaired once and the replacement must v
 });
 test('a cached no-CORS image response is repaired once and still requires exact original bytes', async () => {
   const previous = globalThis.fetch,
+    previousTimeout = AbortSignal.timeout,
     remote = { ...file, url: 'https://assets.ultraclipart.com/test/original.webp' },
     calls = [];
   try {
@@ -89,8 +90,13 @@ test('a cached no-CORS image response is repaired once and still requires exact 
     stopped.abort();
     await assert.rejects(readVerified(remote, 'webp', origin, stopped.signal), /Failed to fetch/);
     assert.deepEqual(calls, ['default'], 'cancelled requests must not restart');
+    calls.length = 0;
+    AbortSignal.timeout = () => AbortSignal.abort(new DOMException('Expired', 'TimeoutError'));
+    await assert.rejects(readVerified(remote, 'webp', origin), /Failed to fetch/);
+    assert.deepEqual(calls, ['default'], 'expired internal timeouts must not restart');
   } finally {
     globalThis.fetch = previous;
+    AbortSignal.timeout = previousTimeout;
   }
 });
 test('oversized copies remain bounded and network errors do not cause repeated retries', async () => {
