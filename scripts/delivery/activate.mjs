@@ -1,9 +1,9 @@
-import { readFileSync, writeFileSync, existsSync, cpSync, readdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { build } from 'esbuild';
 import { assertOriginalImageDelivery } from './original-image-gate.mjs';
-import { pruneDeliveryFiles, digest } from './manifest.mjs';
+import { copyVerifiedPrunedRelease, digest } from './manifest.mjs';
 export async function prepareDeliveryRelease({
   source,
   target,
@@ -41,8 +41,7 @@ export async function prepareDeliveryRelease({
     throw Error('Delivery manifest does not cover the complete rendered catalog');
   assertOriginalImageDelivery(source);
   // Keep the full checked build intact for rollback and whole-site audits.
-  cpSync(source, target, { recursive: true, mode: 2 });
-  const removed = pruneDeliveryFiles(target, manifest, revision);
+  const removed = copyVerifiedPrunedRelease(source, target, manifest, revision);
   const raw = readFileSync(join(target, '_headers'), 'utf8');
   const pairs = (block) =>
     Object.fromEntries([...block.matchAll(/^  ([\w-]+): (.+)$/gm)].map((m) => [m[1], m[2]]));

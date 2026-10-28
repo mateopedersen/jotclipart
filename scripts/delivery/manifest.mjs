@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto';
-import { readFileSync, readdirSync, lstatSync, rmSync } from 'node:fs';
-import { join, relative } from 'node:path';
+import { readFileSync, readdirSync, lstatSync, rmSync, cpSync } from 'node:fs';
+import { join, relative, sep } from 'node:path';
 export const digest = (bytes) => createHash('sha256').update(bytes).digest('hex');
 export function deliveryKey(path, revision) {
   if (!/^[a-f0-9]{40}$/.test(revision)) throw Error('A committed production revision is required');
@@ -103,4 +103,21 @@ export function pruneDeliveryFiles(dist, manifest, revision) {
   const files = verifyDeliveryManifest(dist, manifest, revision);
   for (const file of files) rmSync(join(dist, file.path));
   return files.length;
+}
+
+// Validate the complete source twice around copying, but do not duplicate the
+// R2-backed files on local disk only to delete them from the Pages package.
+export function copyVerifiedPrunedRelease(source, target, manifest, revision) {
+  const verified = verifyDeliveryManifest(source, manifest, revision);
+  const offloaded = new Set(verified.map((file) => file.path));
+  cpSync(source, target, {
+    recursive: true,
+    mode: 2,
+    filter: (path) => {
+      const rel = relative(source, path);
+      return !rel || !offloaded.has('/' + rel.split(sep).join('/'));
+    },
+  });
+  verifyDeliveryManifest(source, manifest, revision);
+  return verified.length;
 }
