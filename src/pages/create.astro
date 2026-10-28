@@ -28,6 +28,13 @@ const workspace = { id: 'my-clipart', title: 'My Clipart Project', svg: '' };
   wide={true}
 >
   <Fragment slot="head">
+    <link
+      rel="preload"
+      as="image"
+      href={heroArt[1].thumb}
+      fetchpriority="high"
+      media="(min-width: 901px)"
+    />
     <script
       type="application/ld+json"
       set:html={structuredData(
@@ -109,6 +116,8 @@ const workspace = { id: 'my-clipart', title: 'My Clipart Project', svg: '' };
                     alt={a.alt}
                     width={a.width}
                     height={a.height}
+                    fetchpriority={i === 1 ? 'high' : 'auto'}
+                    decoding="async"
                   />
                 </div>
                 <figcaption>{['Everyday Life', 'Imagination', 'Music'][i]}</figcaption>

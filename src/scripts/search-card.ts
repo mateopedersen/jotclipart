@@ -26,12 +26,13 @@ export function renderCard(item: SearchCard): HTMLElement {
   const detail = `/art/${item.id}/`,
     picture = link('', detail, 'art-picture'),
     image = document.createElement('img');
-  image.src = item.webp;
+  image.loading = 'lazy';
+  image.decoding = 'async';
   image.alt = item.alt;
   image.title = item.title;
   image.width = 400;
   image.height = 400;
-  image.loading = 'lazy';
+  image.src = item.webp;
   picture.append(image);
   const body = document.createElement('div');
   body.className = 'card-body';
