@@ -13,6 +13,7 @@ import { gzipSync } from 'node:zlib';
 import { createHash } from 'node:crypto';
 import { chromium } from '@playwright/test';
 import { templateRoutes } from './routes.mjs';
+import { assertUsableLighthouse, hasUsableSummary } from './lighthouse-result.mjs';
 const root = resolve(import.meta.dirname, '../..'),
   releasePointer = resolve(root, process.env.PERFORMANCE_BUILD_DIR || 'work/performance-build'),
   release = realpathSync(releasePointer);
@@ -78,6 +79,9 @@ if (existsSync(planFile)) {
 } else writeFileSync(planFile, JSON.stringify(plan, null, 2));
 const rowsFile = join(out, 'summary.json'),
   rows = existsSync(rowsFile) ? JSON.parse(readFileSync(rowsFile)) : [];
+for (const row of rows) {
+  if (!row.error && !hasUsableSummary(row)) row.error = 'Incomplete Lighthouse paint measurement';
+}
 const attemptsFile = join(out, 'attempts.json');
 const attempts = existsSync(attemptsFile) ? JSON.parse(readFileSync(attemptsFile)) : [...rows];
 const key = (row) => `${row.path}|${row.device}|${row.repeat}`;
@@ -110,7 +114,9 @@ try {
             device === 'desktop' ? desktop : undefined,
           );
           const lhr = result.lhr;
-          if (lhr.runtimeError) throw Error(JSON.stringify(lhr.runtimeError));
+          writeFileSync(join(out, id + '.json.gz'), gzipSync(JSON.stringify(lhr)));
+          row.evidence = id + '.json.gz';
+          assertUsableLighthouse(lhr);
           row.date = lhr.fetchTime;
           row.version = lhr.lighthouseVersion;
           row.scores = Object.fromEntries(
@@ -133,8 +139,6 @@ try {
               score: a.score,
               displayValue: a.displayValue,
             }));
-          writeFileSync(join(out, id + '.json.gz'), gzipSync(JSON.stringify(lhr)));
-          row.evidence = id + '.json.gz';
         } catch (error) {
           row.error = String(error);
         } finally {

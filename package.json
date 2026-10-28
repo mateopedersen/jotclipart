@@ -46,7 +46,7 @@
     "performance:serve": "node scripts/performance/serve.mjs",
     "performance:audit": "node scripts/performance/audit-built.mjs",
     "performance:lighthouse": "node scripts/performance/lighthouse.mjs",
-    "test:performance": "node --test tests/preview-assets.mjs tests/screen-previews.mjs tests/verified-fetch.mjs tests/cookie-startup.mjs",
+    "test:performance": "node --test tests/preview-assets.mjs tests/screen-previews.mjs tests/verified-fetch.mjs tests/cookie-startup.mjs tests/lighthouse-result.mjs",
     "test:performance:browser": "node tests/e2e/performance-regressions.mjs && node tests/e2e/performance-layout.mjs && node tests/e2e/mobile-performance.mjs",
     "seo:images:full": "node scripts/seo/audit-image-seo.mjs",
     "test:e2e:image-seo": "node tests/e2e/image-seo.mjs",

@@ -47,13 +47,14 @@ if (grid) {
         const media = document.createElement('div');
         media.className = 'subject-collection-art';
         const img = document.createElement('img');
+        img.loading = 'lazy';
+        img.fetchPriority = 'low';
+        img.decoding = 'async';
         img.src = item.sample.webp ?? item.sample.thumb;
         img.alt = item.sample.alt;
         img.title = item.sample.title;
         img.width = 275;
         img.height = 190;
-        img.loading = 'lazy';
-        img.decoding = 'async';
         media.append(img);
         const copy = document.createElement('div');
         copy.className = 'subject-collection-copy';
