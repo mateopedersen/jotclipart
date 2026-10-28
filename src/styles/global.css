@@ -378,9 +378,6 @@ p {
   min-width: 0;
 }
 .art-picture {
-  /* The frame already reserves its size. Skip offscreen image rendering so
-     native lazy loading does not pull full R2 originals several rows early. */
-  content-visibility: auto;
   position: relative;
   overflow: hidden;
   flex-shrink: 0;

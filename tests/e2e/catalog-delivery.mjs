@@ -25,6 +25,7 @@ for (const [engine, type] of Object.entries({ chromium, webkit })) {
       assert.equal(response.status(), 200);
       assert.match(response.headers()['content-type'], /image\/svg\+xml/);
       const svg = await response.text();
+      assert.ok(Buffer.byteLength(svg) < 512000, 'A small Studio preview must stay below 500 KiB');
       assert.ok(svg.includes('data:image/webp;base64,'));
       assert.doesNotMatch(svg, /<script|(?:href|src)=["']https?:/i);
     }

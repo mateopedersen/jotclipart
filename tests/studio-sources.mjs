@@ -26,7 +26,6 @@ const source = (id) => ({
   webp: { url: '/original.webp', bytes: 10, sha256: 'a'.repeat(64) },
   pdf: { url: '/original.pdf', bytes: 20, sha256: 'b'.repeat(64) },
 });
-const hash = 'a'.repeat(64);
 const json = (value) =>
   new Response(JSON.stringify(value), { headers: { 'Content-Type': 'application/json' } });
 
@@ -35,7 +34,7 @@ test('an opened project fetches only its source buckets and retains verification
     calls = [],
     item = source('test-robot');
   const bucket = studioBucket(item.id),
-    url = `/studio-data/${bucket}-${hash}.json`;
+    url = `/studio-data/${bucket}.json`;
   globalThis.fetch = async (path) => {
     calls.push(path);
     return json(
@@ -62,7 +61,7 @@ test('cross-wired chunks fail closed and can be retried without a poisoned cache
   globalThis.fetch = async (path) =>
     json(
       path === '/studio-manifest.json'
-        ? { schema: 1, buckets: { [bucket]: `/studio-data/${bucket}-${hash}.json` } }
+        ? { schema: 1, buckets: { [bucket]: `/studio-data/${bucket}.json` } }
         : [++attempts === 1 ? wrong : item],
     );
   try {
@@ -84,7 +83,7 @@ test('untrusted source URLs and missing IDs cannot substitute another artwork', 
     globalThis.fetch = async (path) =>
       json(
         path === '/studio-manifest.json'
-          ? { schema: 1, buckets: { [bucket]: `/studio-data/${bucket}-${hash}.json` } }
+          ? { schema: 1, buckets: { [bucket]: `/studio-data/${bucket}.json` } }
           : [],
       );
     await assert.rejects((await fresh()).lookupRasterAssets(['test-robot']), /unavailable/);

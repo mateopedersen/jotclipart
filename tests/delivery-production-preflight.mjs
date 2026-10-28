@@ -1,6 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { verifyProductionConfig } from '../scripts/delivery/production-preflight.mjs';
+import {
+  verifyProductionConfig,
+  verifyLiveBaseline,
+} from '../scripts/delivery/production-preflight.mjs';
 
 test('pruned production release fails closed unless the account settings are safe', () => {
   const base = {
@@ -23,4 +26,22 @@ test('pruned production release fails closed unless the account settings are saf
   delete noBucket.deployment_configs.production.r2_buckets.CATALOG_PAGES;
   assert.throws(() => verifyProductionConfig(noBucket), /binding/);
   assert.throws(() => verifyProductionConfig({}), /paused/);
+});
+
+test('a concurrent content release or control hotfix cannot be overwritten by an older preparation', () => {
+  const expected = 'a'.repeat(40),
+    next = 'b'.repeat(40);
+  assert.equal(
+    verifyLiveBaseline({ renderedRevision: expected, controlRevision: expected }, expected)
+      .liveBaselineVerified,
+    expected,
+  );
+  for (const live of [
+    { renderedRevision: next, controlRevision: next },
+    { renderedRevision: expected, controlRevision: next },
+    {},
+    null,
+  ])
+    assert.throws(() => verifyLiveBaseline(live, expected), /Production changed/);
+  assert.throws(() => verifyLiveBaseline({}, 'unverified'), /Invalid expected/);
 });

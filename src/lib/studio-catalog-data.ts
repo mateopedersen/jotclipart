@@ -1,4 +1,3 @@
-import { createHash } from 'node:crypto';
 import { publishedArt } from './catalog';
 import { featuredStudioIds } from './studio-artwork';
 import { studioBucket } from '../editor/studio-bucket';
@@ -28,8 +27,9 @@ for (const item of studioCatalog) {
 }
 export const studioShards = [...buckets].map(([bucket, items]) => {
   const body = JSON.stringify(items);
-  const hash = createHash('sha256').update(body).digest('hex');
-  return { bucket, file: `${bucket}-${hash}.json`, body };
+  // Revalidated stable URLs also work for tabs opened before a deployment.
+  // Originals inside the metadata retain immutable URLs and SHA-256 checks.
+  return { bucket, file: `${bucket}.json`, body };
 });
 export const studioManifest = {
   schema: 1,

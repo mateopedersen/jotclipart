@@ -4,6 +4,7 @@ import { readVerified } from './verified-fetch';
 import { lookupRasterAssets } from './studio-sources';
 export interface RasterAsset {
   id: string;
+  title?: string;
   width: number;
   height: number;
   webp: Representation;

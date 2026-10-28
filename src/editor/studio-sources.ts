@@ -27,8 +27,7 @@ export async function lookupRasterAssets(ids: string[]): Promise<RasterAsset[]> 
   const lists = await Promise.all(
     [...new Set(ids.map(studioBucket))].map((bucket) => {
       const url = index.buckets[bucket];
-      if (!new RegExp(`^/studio-data/${bucket}-[a-f0-9]{64}\\.json$`).test(url ?? ''))
-        throw Error('This artwork source is unavailable.');
+      if (url !== `/studio-data/${bucket}.json`) throw Error('This artwork source is unavailable.');
       let request = chunks.get(url);
       if (!request) {
         request = fetch(url)

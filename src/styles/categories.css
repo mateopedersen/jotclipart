@@ -377,6 +377,7 @@
   margin: 0;
 }
 .collection-filter-art {
+  content-visibility: auto;
   display: grid;
   place-items: center;
   width: 52px;

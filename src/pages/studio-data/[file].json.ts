@@ -11,6 +11,6 @@ export const GET: APIRoute = ({ props }) =>
   new Response(props.body, {
     headers: {
       'Content-Type': 'application/json',
-      'Cache-Control': 'public, max-age=31536000, immutable',
+      'Cache-Control': 'no-cache, must-revalidate',
     },
   });

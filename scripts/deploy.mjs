@@ -47,6 +47,9 @@ run(
     .map((name) => `tests/${name}`),
 );
 const revision = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
+// Optional local browser gate runs against this fresh build before any R2 write
+// or production activation. It leaves the normal storage safeguards untouched.
+if (process.env.UC_DELIVERY_BROWSER_QA === '1') run('scripts/performance/release-browser-qa.mjs');
 run('scripts/delivery/stage.mjs', ['dist']);
 const target = resolve(root, 'work/delivery', revision, `pages-release-${Date.now()}`);
 const manifestPath = resolve(root, 'work/delivery', revision, 'verified-manifest.json');
