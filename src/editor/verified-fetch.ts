@@ -11,16 +11,31 @@ async function loadVerified(
 ) {
   const url = verifiedSourceUrl(file, kind, origin);
   const load = async (cache: RequestCache) => {
-    const response = await fetch(url, {
-      mode: 'cors',
-      credentials: 'omit',
-      cache,
-      priority: 'high',
-      redirect: 'error',
-      signal: signal
-        ? AbortSignal.any([signal, AbortSignal.timeout(30000)])
-        : AbortSignal.timeout(30000),
-    });
+    let response: Response;
+    try {
+      response = await fetch(url, {
+        mode: 'cors',
+        credentials: 'omit',
+        cache,
+        priority: 'high',
+        redirect: 'error',
+        signal: signal
+          ? AbortSignal.any([signal, AbortSignal.timeout(30000)])
+          : AbortSignal.timeout(30000),
+      });
+    } catch (error) {
+      // A preceding cross-origin <img> can cache an immutable response without
+      // CORS headers. Repair that cache entry once with a real CORS request.
+      // Abort/timeout failures and same-origin requests are not retried here.
+      if (
+        cache === 'default' &&
+        url.origin !== origin &&
+        error instanceof TypeError &&
+        !signal?.aborted
+      )
+        throw new StaleRepresentation('The cached artwork response cannot be read.');
+      throw error;
+    }
     const mime = kind === 'pdf' ? 'application/pdf' : 'image/webp';
     if (
       !response.ok ||

@@ -54,6 +54,45 @@ test('a stale same-size browser copy is repaired once and the replacement must v
     globalThis.fetch = previous;
   }
 });
+test('a cached no-CORS image response is repaired once and still requires exact original bytes', async () => {
+  const previous = globalThis.fetch,
+    remote = { ...file, url: 'https://assets.ultraclipart.com/test/original.webp' },
+    calls = [];
+  try {
+    globalThis.fetch = async (_url, options) => {
+      calls.push(options.cache);
+      if (options.cache === 'default') throw new TypeError('Failed to fetch');
+      return response(bytes);
+    };
+    assert.deepEqual(await readVerified(remote, 'webp', origin), bytes);
+    assert.deepEqual(calls, ['default', 'reload']);
+    calls.length = 0;
+    globalThis.fetch = async (_url, options) => {
+      calls.push(options.cache);
+      if (options.cache === 'default') throw new TypeError('Failed to fetch');
+      return response(new Uint8Array(bytes.length));
+    };
+    await assert.rejects(readVerified(remote, 'webp', origin), /verification failed/);
+    assert.deepEqual(calls, ['default', 'reload']);
+    calls.length = 0;
+    globalThis.fetch = async (_url, options) => {
+      calls.push(options.cache);
+      throw new TypeError('Failed to fetch');
+    };
+    await assert.rejects(readVerified(remote, 'webp', origin), /Failed to fetch/);
+    assert.deepEqual(calls, ['default', 'reload']);
+    calls.length = 0;
+    await assert.rejects(readVerified(file, 'webp', origin), /Failed to fetch/);
+    assert.deepEqual(calls, ['default'], 'same-origin network errors are not cache-repaired');
+    calls.length = 0;
+    const stopped = new AbortController();
+    stopped.abort();
+    await assert.rejects(readVerified(remote, 'webp', origin, stopped.signal), /Failed to fetch/);
+    assert.deepEqual(calls, ['default'], 'cancelled requests must not restart');
+  } finally {
+    globalThis.fetch = previous;
+  }
+});
 test('oversized copies remain bounded and network errors do not cause repeated retries', async () => {
   const previous = globalThis.fetch,
     calls = [];
