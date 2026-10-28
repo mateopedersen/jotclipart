@@ -5,8 +5,8 @@ import { gzipSync } from 'node:zlib';
 // The worker independently checks each source against its Merkle proof, SHA-256
 // and readback. Bound the raw files as well as the decompressed request body.
 export function encodeLocalBatch(dist, body) {
-  if (!Array.isArray(body.records) || !body.records.length || body.records.length > 8)
-    throw Error('Local batch requires one to eight records');
+  if (!Array.isArray(body.records) || !body.records.length || body.records.length > 64)
+    throw Error('Local batch requires one to 64 records');
   const blobs = Object.create(null);
   let bytes = 0;
   for (const { record } of body.records) {

@@ -163,8 +163,10 @@ export function stagingWorker(job) {
         ))
       )
         return json({ error: 'Invalid reservation' }, 403);
-      if (!Array.isArray(body.records) || body.records.length < 1 || body.records.length > 8)
-        return json({ error: 'At most eight files per invocation' }, 400);
+      // Workers Paid permits this bounded group. The per-record proof and
+      // eight-megabyte total response bound below still apply to every file.
+      if (!Array.isArray(body.records) || body.records.length < 1 || body.records.length > 64)
+        return json({ error: 'At most 64 files per invocation' }, 400);
       const checked = [];
       const proofHashes = new Map();
       async function proofHash(pair) {
