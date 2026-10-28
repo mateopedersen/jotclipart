@@ -45,7 +45,7 @@ const recentPicks = diverseRecentArtwork(
     <p>A selection from the latest additions to the catalog.</p>
     <div class="gallery home-recent-grid">
       {recentPicks.slice(0, 15).map((item) => (
-        <Card item={item} />
+        <Card item={item} deferPriority />
       ))}
     </div>
   </section>
