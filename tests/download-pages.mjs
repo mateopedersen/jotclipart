@@ -2,6 +2,8 @@ import { sitemapXml } from './support/sitemaps.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
+import { join } from 'node:path';
+import { testBuildDirectory } from './support/build-directory.mjs';
 import { loadTypescript } from './helpers/typescript.mjs';
 import { readPublishedPage } from './support/published-page.mjs';
 const { verifiedSourceUrl } = await loadTypescript('src/editor/source-policy.ts');
@@ -23,14 +25,14 @@ test('inline downloads accept verified originals and reject external or malforme
     assert.throws(() => verifiedSourceUrl({ ...file, bytes }, 'webp', 'https://ultraclipart.com'));
 });
 test('every inline catalog journey preserves exact original URLs, filenames, sizes and hashes without download HTML pages', () => {
-  assert.ok(!existsSync('dist/download'));
+  assert.ok(!existsSync(join(testBuildDirectory, 'download')));
   assert.ok(!sitemapXml('pages').includes('/download/'));
-  assert.match(readFileSync('dist/_redirects', 'utf8'), /\/download\/\* \/art\/:splat 301/);
-  const manifest = JSON.parse(readFileSync('dist/search-data/manifest.json'));
+  assert.match(readFileSync(join(testBuildDirectory, '_redirects'), 'utf8'), /\/download\/\* \/art\/:splat 301/);
+  const manifest = JSON.parse(readFileSync(join(testBuildDirectory, 'search-data/manifest.json')));
   const records = new Map(
-    readdirSync(`dist/search-data/${manifest.version}/items`)
+    readdirSync(join(testBuildDirectory, 'search-data', manifest.version, 'items'))
       .flatMap((name) =>
-        JSON.parse(readFileSync(`dist/search-data/${manifest.version}/items/${name}`)),
+        JSON.parse(readFileSync(join(testBuildDirectory, 'search-data', manifest.version, 'items', name))),
       )
       .map((item) => [item.id, item]),
   );

@@ -1,4 +1,5 @@
 import { sitemapXml } from './support/sitemaps.mjs';
+import { testBuildUrl } from './support/build-directory.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
@@ -78,10 +79,10 @@ test('all eight subjects have accurate categories, unique metadata and searchabl
 test(
   'all 400 production pages have canonical URLs, image schema and sitemap entries',
   {
-    skip: !existsSync(new URL('../dist/clipart/money/index.html', import.meta.url)),
+    skip: !process.env.UC_TEST_BUILD_DIR && !existsSync(new URL('clipart/money/index.html', testBuildUrl)),
   },
   () => {
-    const text = (path) => readFileSync(new URL('../dist/' + path, import.meta.url), 'utf8');
+    const text = (path) => readFileSync(new URL(path, testBuildUrl), 'utf8');
     const pages = sitemapXml('pages'),
       images = sitemapXml('images');
     const cookieBreadcrumb = text('clipart/cookie/index.html').match(

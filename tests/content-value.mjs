@@ -3,11 +3,12 @@ import assert from 'node:assert/strict';
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { testBuildUrl } from './support/build-directory.mjs';
 const read = (path) => readFileSync(new URL('../' + path, import.meta.url), 'utf8');
 const art = JSON.parse(read('data/art.json'));
 const notes = JSON.parse(read('data/artwork-notes.json'));
 const topics = JSON.parse(read('data/topics.json')).topics;
-const dist = new URL('../dist/', import.meta.url);
+const dist = testBuildUrl;
 test('usage notes cover actual illustrations and expose the exact named source layers', () => {
   const editable = art.filter((item) => item.sourceType !== 'raster');
   assert.deepEqual(Object.keys(notes).sort(), editable.map((item) => item.id).sort());
@@ -37,9 +38,9 @@ test(
         available.has(topic.slug),
         topic.slug,
       );
-    const manifest = JSON.parse(read('dist/search-data/manifest.json'));
+    const manifest = JSON.parse(readFileSync(new URL('search-data/manifest.json', dist), 'utf8'));
     assert.deepEqual(manifest.topics.map((item) => item.slug).sort(), [...available].sort());
-    const directory = read('dist/categories/index.html');
+    const directory = readFileSync(new URL('categories/index.html', dist), 'utf8');
     for (const topic of topics) {
       if (!available.has(topic.slug))
         assert.ok(!directory.includes(`href="/clipart/${topic.slug}/"`));
