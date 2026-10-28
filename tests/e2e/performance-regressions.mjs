@@ -60,7 +60,11 @@ for (const [engine, implementation] of Object.entries(engines)) {
         '.search-suggestions a[href="/art/baby-pumpkin-costume-clipart/"]',
       );
       await expect(suggestion).toBeVisible();
-      await expect(suggestion.locator('img')).toHaveAttribute('srcset', /96\.webp/);
+      await expect(suggestion.locator('img')).toHaveAttribute(
+        'src',
+        /(?:\/catalog\/|https:\/\/assets\.ultraclipart\.com\/)/,
+      );
+      assert.equal(await suggestion.locator('img').getAttribute('srcset'), null);
       if (width === 390) await suggestion.tap();
       else await suggestion.click();
       await page.waitForURL('**/art/baby-pumpkin-costume-clipart/');
@@ -73,7 +77,10 @@ for (const [engine, implementation] of Object.entries(engines)) {
       const download = page
         .locator('[data-download-open="baby-pumpkin-costume-clipart"][data-download-format="webp"]')
         .first();
-      assert.match(await download.getAttribute('href'), /\/catalog\/.*\.webp$/);
+      assert.match(
+        await download.getAttribute('href'),
+        /(?:\/catalog\/.*\.webp$|https:\/\/assets\.ultraclipart\.com\/.*\.webp)/,
+      );
       await download.click();
       await expect(page.locator('#download-dialog')).toBeVisible();
       await expect
