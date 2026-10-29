@@ -112,3 +112,57 @@ test('a replaced image or edited reviewed description requires a fresh visual re
   item.alt = 'A changed description needs to be reviewed again.';
   assert.throws(() => assertCatalogPolicy(input), /renew its source-bound visual review/);
 });
+
+test('the source gate checks resolved public titles and derived catalog counts', async () => {
+  const { mkdtempSync, mkdirSync, writeFileSync, rmSync } = await import('node:fs');
+  const { tmpdir } = await import('node:os');
+  const { join } = await import('node:path');
+  const { pathToFileURL } = await import('node:url');
+  const { metadataSignature, reviewContextSignature } =
+    await import('../scripts/artwork-editorial.mjs');
+  const root = mkdtempSync(join(tmpdir(), 'uc-public-copy-'));
+  const save = (p, v) => writeFileSync(join(root, p), JSON.stringify(v));
+  mkdirSync(join(root, 'data/editorial'), { recursive: true });
+  try {
+    const artwork = rows('fixture', 2).map((a) => ({
+      ...a,
+      webp: '/fixture/' + a.id + '.webp',
+      files: { webp: { sha256: 'a'.repeat(64) } },
+    }));
+    const reviews = artwork.map((a, i) => ({
+      id: a.id,
+      status: 'reviewed-from-image',
+      sourceSha256: a.files.webp.sha256,
+      imageSha256: a.files.webp.sha256,
+      inputMetadataSha256: metadataSignature(a),
+      inputContextSha256: reviewContextSignature(a),
+      inspectedImage: a.webp,
+      reviewedAt: '2026-10-29T00:00:00Z',
+      observations: ['Synthetic fixture evidence one.', 'Synthetic fixture evidence two.'],
+      references: [],
+      copy: {
+        title: 'Same Public Heading',
+        alt: 'A synthetic fixture object number ' + i + '.',
+        description: 'A synthetic composition number ' + i + ' with its own test details.',
+      },
+    }));
+    save('data/art.json', artwork);
+    save('data/topics.json', { topics: [{ slug: 'fixture' }] });
+    save('data/extra-topics.json', []);
+    save('data/topic-relations.json', {});
+    save('data/browse-groups.json', []);
+    save('data/primary-topic-categories.json', {});
+    save('data/image-metadata-reviews.json', { artwork: {} });
+    save('data/editorial/reviews.json', { schema: 1, artworks: reviews });
+    save('data/production-queue.json', { availableArtworkCount: 2 });
+    const url = pathToFileURL(root + '/');
+    assert.throws(() => checkSourceCatalog(url), /Duplicate public title/);
+    reviews[1].copy.title = 'A Distinct Public Heading';
+    save('data/editorial/reviews.json', { schema: 1, artworks: reviews });
+    assert.equal(checkSourceCatalog(url).artwork, 2);
+    save('data/production-queue.json', { availableArtworkCount: 1 });
+    assert.throws(() => checkSourceCatalog(url), /Catalog count is stale/);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});

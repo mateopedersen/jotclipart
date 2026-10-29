@@ -579,8 +579,8 @@
     },
     "ocean": {
       "status": "checked-against-catalog",
-      "sourceSha256": "9661852888167560374f0867421d3d6849c0331b0028f125ed9e051e6af69e11",
-      "checkedAt": "2026-10-28T22:24:21.243Z",
+      "sourceSha256": "462e20d638e0e1de505e0bc85fd7636fc677107404ad773af24b568cb85c91bd",
+      "checkedAt": "2026-10-29T00:47:36.603Z",
       "intro": "Breaking waves, sea creatures, reef gardens and underwater equipment cover several sides of ocean life. Bright color scenes, detailed grayscale studies and fanciful marine compositions offer alternatives to a single beach motif.",
       "evidence": [
         {
@@ -819,8 +819,8 @@
     },
     "wings": {
       "status": "checked-against-catalog",
-      "sourceSha256": "0e662c0091a3155ffab928e961343caaac3446c541c3004f08021cbc99af8bee",
-      "checkedAt": "2026-10-28T22:24:21.249Z",
+      "sourceSha256": "ea1089d4269bfa71b6a9934b1580a23d99fe110dfd36bceae14764eeb87d29ff",
+      "checkedAt": "2026-10-29T00:47:36.603Z",
       "intro": "Feathered wings, insect-inspired forms and decorative fantasy pairs offer different silhouettes. Angel wings, heart emblems, shields, laurel motifs and blue water shapes range from natural-looking studies to symbolic ornament.",
       "evidence": [
         {

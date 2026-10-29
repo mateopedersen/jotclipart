@@ -350480,18 +350480,18 @@
       "status": "reviewed-from-image",
       "sourceSha256": "546dbd3bfa246e8a4a13cf415820753fa9c562fb4982cbd3039309511ff3129e",
       "imageSha256": "546dbd3bfa246e8a4a13cf415820753fa9c562fb4982cbd3039309511ff3129e",
-      "inputMetadataSha256": "d09c246d1981c4475013c8a3890c0f909bb4bf357495a3c14b3b8728e1b20755",
-      "inputContextSha256": "ee4e2a8dafca69e9a1a4e0df1a8d3fa825d02188af3489c099232f7a8252d419",
+      "inputMetadataSha256": "1d0487ee013ee50606e8ff372784a1376ba8ebd5348480e20f4fa199a9a68288",
+      "inputContextSha256": "678d333701e6a19e734f47fc87e08d9d48819d8fe63faa32f181ade60f843555",
       "copy": {
-        "title": "Turquoise Breaking Wave",
+        "title": "Turquoise Curling Wave With Foamy Ridges",
         "alt": "A turquoise wave curls over a dark blue trough with white foam.",
         "description": "Separate droplets and a jagged crest emphasize the rolling motion."
       },
       "observations": [
-        "A turquoise wave curls over a dark blue trough with white foam.",
-        "Separate droplets and a jagged crest emphasize the rolling motion."
+        "The turquoise wave curls around a small opening on the right.",
+        "Thick white foam follows several ridges along the crest and base."
       ],
-      "reviewedAt": "2026-10-28T21:16:35.377505+00:00",
+      "reviewedAt": "2026-10-29T00:47:36.603Z",
       "inspectedImage": "/catalog/ocean/curling-turquoise-ocean-wave-clipart.webp",
       "references": []
     },
@@ -361480,18 +361480,18 @@
       "status": "reviewed-from-image",
       "sourceSha256": "d1d182d08dd5189fd4462c33fff8749eab605cd10a55f0a78c88cf5bc4ddb5dc",
       "imageSha256": "d1d182d08dd5189fd4462c33fff8749eab605cd10a55f0a78c88cf5bc4ddb5dc",
-      "inputMetadataSha256": "3402f62a85b192d41ff2cf936cd43cca4fc45d99c26695248c4b5aa840fa13bd",
-      "inputContextSha256": "a64363de0ac98d4f8d4df32000e4f79060a407967462acc75b5e158084aea219",
+      "inputMetadataSha256": "6fe617a5e2876bfe323885eb1436d93dadc2f67845d1262a746b1cf51c37de26",
+      "inputContextSha256": "d592dabf66aa4a376375bb74e6de21e50c10cb1d90ba80fb0a7b45ea1a8ebc84",
       "copy": {
-        "title": "Red Heart with White Wings",
+        "title": "Glossy Red Heart With Upturned White Wings",
         "alt": "Glossy red heart between two raised white feathered wings.",
         "description": "Soft gray shadows and curled wing tips frame the bright central heart."
       },
       "observations": [
-        "Glossy red heart between two raised white feathered wings.",
-        "Soft gray shadows and curled wing tips frame the bright central heart."
+        "A glossy red heart sits between two tall white feathered wings.",
+        "Layered feathers curve upward and inward, leaving an open space above the heart."
       ],
-      "reviewedAt": "2026-10-28T19:06:38.609760+00:00",
+      "reviewedAt": "2026-10-29T00:47:36.603Z",
       "inspectedImage": "/catalog/wings/wings-heart-pearl-feathers-clipart.webp",
       "references": []
     },

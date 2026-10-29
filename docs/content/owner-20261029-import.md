@@ -33,3 +33,21 @@ A private R2-binding pilot actually transferred and independently read back all 
 The reusable transport is `scripts/r2/binding-ingest.mjs` with `reviewed-binding-input.mjs`. It accepts only a source-bound complete candidate preserving the accepted baseline, independently validates every at-most-50-artwork wave, hashes every local representation, and exposes a fixed Merkle root in a temporary authenticated Worker session. The existing account-wide lock, 10 TB ceiling, bounded actors, complete jurisdiction coverage and 45-second freshness rule remain. Prior keys supply read-only range hints only. Every object is conditionally created and independently read back; matching PDF disposition is checked. A resumed process reads every representation again. Each bounded wave gets its own complete fresh inventory/checksum journal. A stale complete measurement may trigger at most two additional full measurements, never a substituted old lease or an ignored coverage error.
 
 `preparePublicationWaves` validates every separate wave's receipt and limits before any CDN request, then verifies the full candidate and unchanged local baseline once. All new CDN objects still require actual full-byte SHA-256 checks. This removes repeated baseline reads without relaxing source, MIME, CORS or inventory validation. Neither the media transport nor the consolidated preparation activates public pages. The normal fresh guarded deployment and actual live verification remain mandatory.
+
+## Final source gate corrections
+
+The final rendered audit detected two public-title collisions with accepted
+wave/heart images. The incoming originals were reopened and their distinct foamy
+ridges and upturned feather arrangement inspected. Only these two incoming titles
+and their source-bound review/context and collection signatures were renewed;
+source files, stable IDs and URLs are unchanged. The source gate now checks titles
+through the exact public editorial resolver before rendering. Existing raw title,
+alt and description checks remain. This is not a bulk visual re-review of legacy
+captions. A regression fixture proves that distinct input titles with colliding
+reviewed public titles fail.
+
+After a catalog promotion, run `node scripts/sync-production-queue.mjs` before the
+source gate. This regenerates derived availability and per-topic counts while
+preserving the owner's generation pause and separately verified-live counter.
+The source gate rejects a stale total before an expensive build. Generated-goal
+counts and all available catalog entries remain distinct resources.
