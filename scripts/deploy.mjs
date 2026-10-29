@@ -6,9 +6,12 @@ import { assertReleaseBudgets } from './delivery/budgets.mjs';
 import { resolve } from 'node:path';
 import { prepareIndexNowSnapshot } from './seo/indexnow-release.mjs';
 import { runIndexNowNotification } from './seo/indexnow-notify.mjs';
+import { verifyReviewedResume } from './delivery/reviewed-resume.mjs';
+import { assertOwnerPublicationApproval } from './publication-approval.mjs';
 import { readPublication } from './publication-policy.mjs';
 
 const root = resolve(import.meta.dirname, '..');
+assertOwnerPublicationApproval(root);
 const env = {
   ...process.env,
   CF_PAGES: '1',
@@ -33,6 +36,14 @@ function run(script, args = []) {
   if (result.status !== 0) process.exit(result.status ?? 1);
 }
 
+const resumeArgs=process.argv.slice(2);
+if(resumeArgs.length && (resumeArgs.length!==2||resumeArgs[0]!=='--resume-reviewed'))throw Error('Invalid publication resume arguments');
+const resumeFile=resumeArgs[1];
+const revision = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
+if(resumeFile){
+  console.log(JSON.stringify(await verifyReviewedResume(root,resumeFile,revision)));
+  readPublication(root);
+}else{
 // Manual publication has the same gates as Git-driven publication. Never deploy
 // a previously generated local dist: it may contain stale or unverified media.
 run('scripts/restore-assets.mjs');
@@ -48,13 +59,14 @@ run(
     .filter((name) => name.endsWith('.mjs'))
     .map((name) => `tests/${name}`),
 );
-const revision = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
 // Optional local browser gate runs against this fresh build before any R2 write
 // or production activation. It leaves the normal storage safeguards untouched.
 if (process.env.UC_DELIVERY_BROWSER_QA === '1') run('scripts/performance/release-browser-qa.mjs');
 run('scripts/delivery/stage.mjs', ['dist']);
+}
 const target = resolve(root, 'work/delivery', revision, `pages-release-${Date.now()}`);
 const manifestPath = resolve(root, 'work/delivery', revision, 'verified-manifest.json');
+assertOwnerPublicationApproval(root);
 const release = await prepareDeliveryRelease({
   source: resolve(root, 'dist'),
   target,
@@ -73,6 +85,7 @@ console.log(JSON.stringify({indexNowSnapshot:prepareIndexNowSnapshot({root,targe
 // The live configuration can change while a long staging job runs. Recheck
 // immediately before activating a pruned release; failure stops deployment.
 run('scripts/delivery/production-preflight.mjs');
+assertOwnerPublicationApproval(root);
 run('--require', [
   './scripts/delivery/pages-upload-preload.cjs',
   'node_modules/wrangler/wrangler-dist/cli.js',
