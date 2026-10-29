@@ -2,10 +2,12 @@
 import Layout from '../../layouts/Layout.astro';
 import Editor from '../../components/Editor.astro';
 import { art } from '../../lib/catalog';
+import { editorScreen } from '../../lib/editor-screen';
 export function getStaticPaths() {
   return art.map((item) => ({ params: { id: item.id }, props: { item } }));
 }
 const { item } = Astro.props;
+const editorItem = editorScreen(item);
 ---
 
 <Layout
@@ -18,8 +20,8 @@ const { item } = Astro.props;
   imageHeight={item.height}
 >
   <Fragment slot="head">
-    {item.sourceType === 'raster' && item.preview?.startsWith('/previews/') && (
-      <link rel="preload" as="image" href={item.preview} fetchpriority="high" />
+    {item.sourceType === 'raster' && editorItem.preview?.startsWith('/previews/') && (
+      <link rel="preload" as="image" href={editorItem.preview} fetchpriority="high" />
     )}
     {item.sourceType === 'raster' && (
       <script
@@ -46,5 +48,5 @@ const { item } = Astro.props;
       }
     </script>
   </Fragment>
-  <Editor art={item} />
+  <Editor art={editorItem} />
 </Layout>

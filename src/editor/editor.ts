@@ -38,13 +38,13 @@ import {
 } from './export-document';
 import {
   openRaster,
-  rasterCatalog,
   registerLocalImage,
   prepareProjectSources,
   serializeProject,
   withoutEmbeddedSources,
   type RasterAsset,
 } from './raster';
+import { lookupRasterAssets } from './studio-sources';
 import { SmartController } from './smart/controller';
 import { prepareDocument, rasterKey } from './smart/render';
 import { saveLocal, loadLocal, deleteLocal } from './smart/storage';
@@ -880,7 +880,7 @@ function init(root: HTMLElement) {
         button.setAttribute('aria-busy', 'true');
         status('Opening the original-resolution artwork…');
         try {
-          const catalogue = await rasterCatalog();
+          const catalogue = await lookupRasterAssets(scene.items.map((item) => item.id));
           const plan = buildStudioComposition(
             scene,
             new Map(catalogue.map((asset) => [asset.id, asset])),

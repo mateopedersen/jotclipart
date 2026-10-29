@@ -1,14 +1,14 @@
 @import './reader-type.css';
 @import './card-media.css';
 
-/* Locally installed Avenir is used without shipping a proprietary font file.
-   Show the adjusted local fallback immediately while the self-hosted, open-license
-   Inter face loads. Its matched metrics limit movement when the font becomes ready. */
+/* Keep Avenir/Inter and the matched fallback. On a slow first visit, optional
+   display avoids a late UI font swap. Editable canvas text has its own
+   UltraEditorText face and keeps its existing loading/export contract. */
 @font-face {
   font-family: 'UltraClipart Sans';
   font-style: normal;
   font-weight: 100 900;
-  font-display: swap;
+  font-display: optional;
   src: url('/fonts/inter/inter-latin-wght-3100e775e861.woff2') format('woff2');
 }
 @font-face {

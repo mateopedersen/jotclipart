@@ -183,12 +183,15 @@ test('a second publisher cannot mutate a live private session before acquiring i
           CF_PAGES: '1',
           CF_PAGES_COMMIT_SHA: revision,
           UC_R2_LOCK_ROOT: directory,
+          UC_DELIVERY_WRITER_WAIT_MS: '20',
         },
         encoding: 'utf8',
+        timeout: 5000,
       },
     );
     assert.notEqual(result.status, 0);
     assert(result.stderr.includes('EEXIST'));
+    assert(result.stderr.includes('lock was preserved'));
     assert.equal(fs.readFileSync(entry, 'utf8'), 'original-private-session');
   } finally {
     fs.rmSync(directory, { recursive: true, force: true });

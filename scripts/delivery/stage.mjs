@@ -16,7 +16,7 @@ import { measureReservation } from './storage-reservation.mjs';
 import { releaseRevision } from '../release-revision.mjs';
 import { createSignedInventoryFetch } from './inventory-fetch.mjs';
 import { createBoundInventoryReader, readOnlyRangeHints } from './inventory-reader.mjs';
-import { acquireAccountWriter } from './account-lock.mjs';
+import { awaitAccountWriter } from './account-lock.mjs';
 import { encodeLocalBatch, preferLocalStageSource } from './local-batch.mjs';
 import {
   deliveryActorCount,
@@ -29,7 +29,10 @@ const root = process.cwd(),
   actors = deliveryActorCount();
 if (revision === 'local') throw Error('Production revision required');
 async function main() {
-  const releaseLock = acquireAccountWriter();
+  const releaseLock = await awaitAccountWriter(process.env, {
+    timeoutMs: Number(process.env.UC_DELIVERY_WRITER_WAIT_MS ?? 3_600_000),
+    notify: console.log,
+  });
   try {
     const allFiles = collectDeliveryFiles(dist, revision),
       tree = merkle(allFiles);

@@ -116,7 +116,8 @@ const workspace = { id: 'my-clipart', title: 'My Clipart Project', svg: '' };
                     alt={a.alt}
                     width={a.width}
                     height={a.height}
-                    fetchpriority={i === 1 ? 'high' : 'auto'}
+                    loading="lazy"
+                    fetchpriority="low"
                     decoding="async"
                   />
                 </div>
@@ -135,6 +136,8 @@ const workspace = { id: 'my-clipart', title: 'My Clipart Project', svg: '' };
           alt={heroArt[0].alt}
           width="70"
           height="70"
+          loading="lazy"
+          fetchpriority="low"
         />
         <span>
           <strong>Choose Artwork</strong>
@@ -148,6 +151,8 @@ const workspace = { id: 'my-clipart', title: 'My Clipart Project', svg: '' };
           alt={heroArt[1].alt}
           width="70"
           height="70"
+          loading="lazy"
+          fetchpriority="low"
         />
         <span>
           <strong>Draw & Add Shapes</strong>

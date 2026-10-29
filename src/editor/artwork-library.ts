@@ -1,4 +1,5 @@
 import { rasterCatalog, featuredRasterCatalog, type RasterAsset } from './raster';
+import { lookupTopicAssets } from './studio-sources';
 interface LibraryAsset extends RasterAsset {
   title: string;
   alt?: string;
@@ -23,22 +24,27 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
   const position = q<HTMLElement>('[data-artwork-page]');
   const initial = await featuredRasterCatalog();
   let assets = initial.items as LibraryAsset[];
-  let fullLoaded = false;
+  let fullAssets: LibraryAsset[] | undefined;
+  let loadedKey = 'featured';
   let filterRevision = 0;
-  let loadingFull: Promise<void> | undefined;
-  const ensureFull = () => {
-    if (fullLoaded) return Promise.resolve();
-    return (loadingFull ??= (async () => {
-      count.textContent = 'Loading the full artwork library…';
-      list.setAttribute('aria-busy', 'true');
-      try {
-        assets = (await rasterCatalog()) as LibraryAsset[];
-        fullLoaded = true;
-      } finally {
-        list.removeAttribute('aria-busy');
-        loadingFull = undefined;
-      }
-    })());
+  const ensureFull = async (revision: number, subject = topic.value) => {
+    const key = fullAssets ? '*' : subject || '*';
+    if (loadedKey === key) {
+      list.removeAttribute('aria-busy');
+      return;
+    }
+    count.textContent = subject ? 'Loading this subject…' : 'Loading the full artwork library…';
+    list.setAttribute('aria-busy', 'true');
+    try {
+      const found = (fullAssets ??
+        (await (subject ? lookupTopicAssets(subject) : rasterCatalog()))) as LibraryAsset[];
+      if (key === '*') fullAssets = found;
+      if (revision !== filterRevision) return;
+      assets = found;
+      loadedKey = key;
+    } finally {
+      if (revision === filterRevision) list.removeAttribute('aria-busy');
+    }
   };
   let browseMode: 'categories' | 'topics' | 'artwork' = initial.categories?.length
     ? 'categories'
@@ -95,8 +101,8 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
       detail.textContent = entry.detail;
       button.append(image, title, detail);
       button.addEventListener('click', () => {
+        const revision = ++filterRevision;
         void (async () => {
-          const revision = ++filterRevision;
           page = 1;
           if (browseMode === 'categories') {
             categoryId = entry.id;
@@ -106,10 +112,11 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
             topic.value = entry.id;
             browseMode = 'artwork';
             scope = 'all';
-            await ensureFull();
+            await ensureFull(revision);
             if (revision === filterRevision) render();
           }
         })().catch(() => {
+          if (revision !== filterRevision) return;
           count.textContent = 'This category could not load. Select it again to retry.';
         });
       });
@@ -248,7 +255,7 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
   const filter = async () => {
     const revision = ++filterRevision;
     try {
-      if (search.value.trim() || topic.value || style.value) await ensureFull();
+      if (search.value.trim() || topic.value || style.value) await ensureFull(revision);
       if (revision !== filterRevision) return;
       if (search.value.trim() || topic.value || style.value) {
         scope = 'all';
@@ -266,6 +273,7 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
   sort.addEventListener('change', reset);
   q('[data-artwork-clear]').addEventListener('click', () => {
     filterRevision++;
+    list.removeAttribute('aria-busy');
     search.value = '';
     style.value = '';
     topic.value = '';
@@ -279,7 +287,8 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
     button.addEventListener('click', async () => {
       const revision = ++filterRevision;
       try {
-        if (button.dataset.artworkScope === 'all') await ensureFull();
+        if (button.dataset.artworkScope === 'all') await ensureFull(revision, '');
+        else list.removeAttribute('aria-busy');
         if (revision !== filterRevision) return;
         scope = button.dataset.artworkScope!;
         browseMode = 'artwork';
@@ -293,6 +302,7 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
     });
   q('[data-library-home]').addEventListener('click', () => {
     filterRevision++;
+    list.removeAttribute('aria-busy');
     browseMode = 'categories';
     categoryId = '';
     topic.value = '';
@@ -302,6 +312,7 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
   });
   q('[data-library-parent]').addEventListener('click', () => {
     filterRevision++;
+    list.removeAttribute('aria-busy');
     browseMode = 'topics';
     topic.value = '';
     search.value = '';

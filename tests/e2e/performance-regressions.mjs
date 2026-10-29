@@ -1,6 +1,7 @@
 import { chromium, webkit, firefox, expect } from '@playwright/test';
 import assert from 'node:assert/strict';
 import { mkdirSync, writeFileSync } from 'node:fs';
+import { bridgeLocalCdn } from '../helpers/local-cdn.mjs';
 
 const base = process.env.BASE_URL || 'http://127.0.0.1:4326';
 if (!/^http:\/\/(127\.0\.0\.1|localhost)(:\d+)?$/.test(base)) throw Error('Local only');
@@ -19,6 +20,7 @@ for (const [engine, implementation] of Object.entries(engines)) {
       isMobile: width === 390 && engine !== 'firefox',
     });
     const page = await context.newPage();
+    report.localCdnFixture = await bridgeLocalCdn(context, base);
     const requests = [],
       errors = [];
     page.on('request', (r) => requests.push(r.url()));
@@ -70,7 +72,7 @@ for (const [engine, implementation] of Object.entries(engines)) {
       }));
       assert.equal(preload.href, await featured.evaluate((image) => image.src));
       assert.equal(preload.matches, width >= 901);
-      await featured.scrollIntoViewIfNeeded();
+      await page.locator('.home-sample-flowers').scrollIntoViewIfNeeded();
       await expect
         .poll(() => featured.evaluate((image) => image.complete && image.naturalWidth > 0))
         .toBe(true);
@@ -135,7 +137,7 @@ for (const [engine, implementation] of Object.entries(engines)) {
       );
       record('Studio starts with six category choices, without full catalog or vector download');
       // Simulate a slow first subject load. Returning to categories must win.
-      await page.route('**/studio-catalog.json', async (route) => {
+      await page.route('**/studio-topics/*.json', async (route) => {
         const response = await route.fetch();
         await new Promise((resolve) => setTimeout(resolve, 400));
         await route.fulfill({ response });
@@ -151,6 +153,13 @@ for (const [engine, implementation] of Object.entries(engines)) {
       await page.locator('.wb-category-tile').first().click();
       await page.locator('.wb-category-tile').first().click();
       await expect(page.locator('.uc-editor')).toHaveAttribute('data-library-browse', 'artwork');
+      await expect(page.locator('[data-artwork]')).toHaveCount(6);
+      assert.ok(requests.some((u) => /\/studio-topics\/[^/]+\.json$/.test(u)));
+      assert.equal(
+        requests.some((u) => u.endsWith('/studio-catalog.json')),
+        false,
+        'Choosing one subject must not transfer the full library',
+      );
       await page.locator('[data-artwork-scope="featured"]').click();
       await expect(page.locator('[data-artwork-count]')).toHaveText('1–6 of 500 artworks');
       await expect(page.locator('[data-artwork]')).toHaveCount(6);

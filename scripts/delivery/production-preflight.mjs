@@ -18,6 +18,15 @@ export function verifyProductionConfig(project) {
   };
 }
 
+export function verifyLiveBaseline(live, expected) {
+  if (!/^[a-f0-9]{40}$/.test(expected ?? '')) throw Error('Invalid expected live revision');
+  if (live?.renderedRevision !== expected || live?.controlRevision !== expected)
+    throw Error(
+      'Production changed during preparation; reconcile the newer release before activation',
+    );
+  return { liveBaselineVerified: expected };
+}
+
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   const account = '48c779c8eaa80234e0bb9d57f96e588b';
   let token;
@@ -51,4 +60,17 @@ if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1]
   if (!response.ok || data.success !== true)
     throw Error(`Cloudflare project configuration HTTP ${response.status}`);
   console.log(JSON.stringify(verifyProductionConfig(data.result)));
+  if (process.env.UC_DELIVERY_EXPECTED_LIVE_REVISION) {
+    const live = await fetch('https://ultraclipart.com/delivery-release.json', {
+      cache: 'no-store',
+      redirect: 'error',
+      signal: AbortSignal.timeout(15000),
+    });
+    if (!live.ok) throw Error(`Live release verification HTTP ${live.status}`);
+    console.log(
+      JSON.stringify(
+        verifyLiveBaseline(await live.json(), process.env.UC_DELIVERY_EXPECTED_LIVE_REVISION),
+      ),
+    );
+  }
 }

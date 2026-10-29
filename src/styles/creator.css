@@ -794,6 +794,7 @@
   box-shadow: 0 8px 24px #234e8114;
 }
 .studio-scene-preview {
+  content-visibility: auto;
   position: relative;
   display: block;
   aspect-ratio: 1.4;

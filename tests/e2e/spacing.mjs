@@ -50,7 +50,8 @@ for (const [engine, implementation] of Object.entries({ chromium, webkit })) {
       await page.setViewportSize({ width: widths[0], height: 950 });
       try {
         const response = await page.goto(base + route, { waitUntil: 'load', timeout: 30000 });
-        assert.equal(response.status(), 200);
+        if (route === '/404.html') assert.ok([200, 404].includes(response.status()));
+        else assert.equal(response.status(), 200);
         await page.evaluate(() => document.fonts.ready);
         for (const width of widths) {
           await page.setViewportSize({ width, height: 950 });

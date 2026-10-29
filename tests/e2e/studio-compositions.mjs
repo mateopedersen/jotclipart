@@ -1,6 +1,7 @@
 import { chromium, webkit, expect } from '@playwright/test';
 import assert from 'node:assert/strict';
 import { mkdirSync, writeFileSync } from 'node:fs';
+import { bridgeLocalCdn } from '../helpers/local-cdn.mjs';
 const engine = process.env.UC_BROWSER || 'chromium',
   base = process.env.BASE_URL || 'http://127.0.0.1:4323',
   out = `reports/studio-compositions/${engine}`;
@@ -11,8 +12,9 @@ const page = await browser.newPage({
   acceptDownloads: true,
 });
 const errors = [];
+const localCdnFixture = await bridgeLocalCdn(page.context(), base);
 page.on('pageerror', (e) => errors.push(e.message));
-const report = { engine, projects: [], errors, status: 'running' };
+const report = { engine, projects: [], errors, status: 'running', localCdnFixture };
 try {
   await page.goto(base + '/create/?view=page');
   await expect(page.locator('.uc-editor')).not.toHaveAttribute('aria-busy', 'true', {
@@ -35,7 +37,35 @@ try {
       await page.locator('[data-wb-back-page]').click();
     while (await page.locator('[data-scene-more]').isVisible())
       await page.locator('[data-scene-more]').click();
-    await page.locator(`[data-studio-scene="${id}"]`).click();
+    const card = page.locator(`[data-studio-scene="${id}"]`);
+    const preview = card.locator('.studio-scene-preview');
+    await preview.scrollIntoViewIfNeeded();
+    await expect
+      .poll(
+        () => preview.locator('img').evaluate((image) => image.complete && image.naturalWidth > 0),
+        { timeout: 20000 },
+      )
+      .toBe(true);
+    await preview.locator('img').evaluate((image) => image.decode());
+    const frame = await preview.evaluate((element) => {
+      const box = element.getBoundingClientRect(),
+        image = element.querySelector('img').getBoundingClientRect();
+      return {
+        width: box.width,
+        height: box.height,
+        difference: Math.max(
+          Math.abs(box.width - image.width),
+          Math.abs(box.height - image.height),
+        ),
+      };
+    });
+    assert.ok(
+      frame.width > 100 && frame.height > 70 && frame.difference <= 1.1,
+      id + ' preview must fill its reserved frame',
+    );
+    assert.ok(Math.abs(frame.width / frame.height - 1.4) < 0.01);
+    if (!report.projects.length) await preview.screenshot({ path: `${out}/preview.png` });
+    await card.click();
     await expect(page.locator('[data-status]')).toContainText(`${title} opened.`, {
       timeout: 60000,
     });
@@ -85,6 +115,7 @@ try {
       text: doc.layers.filter((l) => l.kind === 'text').length,
       raster: doc.layers.filter((l) => l.kind === 'raster').length,
       exported: true,
+      previewDecodedAndSized: true,
     });
     console.log(`${report.projects.length}/18 ${id} (${doc.layers.length} layers)`);
   }

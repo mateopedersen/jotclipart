@@ -12,6 +12,8 @@
   --card-media-padding: 16px;
 }
 :is(.art-card, .hsg-subject, .related-card) > :is(.art-picture, .hsg-picture, .related-picture) {
+  /* Definite frames preserve layout while the browser defers offscreen originals. */
+  content-visibility: auto;
   position: relative;
   display: block;
   flex: 0 0 auto;
@@ -43,6 +45,18 @@
   object-fit: contain;
   vertical-align: middle;
 }
+/* These illustration containers already have definite grid/fixed heights.
+   Keep the original pixels and their surrounding 3D card treatment, while
+   deferring whole offscreen scenes rather than only individual lazy images. */
+:is(
+  .home-sample,
+  .home-category-picture,
+  .seasonal-scene,
+  .creative-studio-scene,
+  .benefit-visual
+) {
+  content-visibility: auto;
+}
 .formats .action-icon {
   width: 28px;
   height: 28px;
@@ -53,6 +67,27 @@
 .collection-card > div {
   min-width: 0;
   overflow-wrap: anywhere;
+}
+@media print {
+  :is(
+    .art-picture,
+    .hsg-picture,
+    .related-picture,
+    .subject-art,
+    .collection-filter-art,
+    .subject-collection-art,
+    .collection-group-art,
+    .studio-scene-preview,
+    .home-sample,
+    .home-category-picture,
+    .seasonal-scene,
+    .creative-studio-scene,
+    .benefit-visual,
+    .ai-idea-picture,
+    .footer-art-paper
+  ) {
+    content-visibility: visible !important;
+  }
 }
 @media (max-width: 520px) {
   .hsg-subject {
