@@ -1,0 +1,21 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {mkdtempSync,writeFileSync,rmSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+import {createHmac} from 'node:crypto';
+import {gunzipSync} from 'node:zlib';
+import {prepareLocalStagePayload} from '../scripts/delivery/local-batch.mjs';
+import {stagingWorker} from '../scripts/delivery/staging-worker.mjs';
+import {merkle,digest} from '../scripts/delivery/manifest.mjs';
+async function fixture(count=1){
+ const dir=mkdtempSync(join(tmpdir(),'uc-prepared-')),contents=Array.from({length:count},(_,i)=>Buffer.from(`<html>approved source ${i}</html>`)),records=contents.map((b,i)=>({path:`/${i}.html`,key:`reviewed/${i}.html`,bytes:b.length,sha256:digest(b),mime:'text/html'}));records.forEach((r,i)=>writeFileSync(join(dir,r.path),contents[i]));const tree=merkle(records),secret='a'.repeat(64),accountId='b'.repeat(32),bucket='test',job={root:tree.root,secret,accountId,bucket,revision:'c'.repeat(40)},rows=records.map((record,i)=>({record,proof:tree.proof(i)})),payload=await prepareLocalStagePayload(dir,rows),objects=new Map();let puts=0;
+ const env={TARGET:{get:async key=>{const b=objects.get(key);return b&&{size:b.length,httpMetadata:{contentType:'text/html'},etag:'verified',arrayBuffer:async()=>b};},put:async(key,b,opts)=>{assert.equal(opts.onlyIf.etagDoesNotMatch,'*');puts++;objects.set(key,Buffer.from(b));}}};
+ const auth=(fields={})=>{const lease={root:tree.root,accountId,bucket,projectedBytes:1000000,observedAt:Date.now(),...fields};return {lease,signature:createHmac('sha256',Buffer.from(secret,'hex')).update(JSON.stringify(lease)).digest('hex')};};
+ const request=(authorization,body=payload,headers={})=>new Request('https://private.example/stage',{method:'POST',headers:{'X-UC-Body-Encoding':'gzip','X-UC-Stage-Authorization':typeof authorization==='string'?authorization:JSON.stringify(authorization),...headers},body});
+ return{dir,payload,records,rows,objects,env,worker:stagingWorker(job),auth,request,puts:()=>puts,cleanup:()=>rmSync(dir,{recursive:true,force:true})};
+}
+test('a prepared 64-file payload is lease-independent and every original byte is verified',async()=>{const f=await fixture(64);try{const unpacked=JSON.parse(gunzipSync(f.payload));assert.equal(unpacked.lease,undefined);assert.equal(unpacked.signature,undefined);assert.equal(Object.keys(unpacked.blobs).length,64);const response=await f.worker.fetch(f.request(f.auth()),f.env);assert.equal(response.status,200);assert.equal((await response.json()).verified.length,64);assert.equal(f.puts(),64);for(const r of f.records)assert.equal(digest(f.objects.get(r.key)),r.sha256);}finally{f.cleanup();}});
+test('an expired header lease still cannot write; only fresh authorization reuses prepared bytes',async()=>{const f=await fixture();try{const original=digest(f.payload);assert.equal((await f.worker.fetch(f.request(f.auth({observedAt:Date.now()-46000})),f.env)).status,409);assert.equal(f.puts(),0);assert.equal((await f.worker.fetch(f.request(f.auth()),f.env)).status,200);assert.equal(digest(f.payload),original);assert.equal(f.puts(),1);}finally{f.cleanup();}});
+test('header authentication cannot bypass the Merkle root, capacity or signature protections',async()=>{const f=await fixture();try{for(const a of [f.auth({root:'d'.repeat(64)}),f.auth({projectedBytes:10000000000001}),{...f.auth(),signature:'0'.repeat(64)}]){const r=await f.worker.fetch(f.request(a),f.env);assert([403,409].includes(r.status));assert.equal(f.puts(),0);}const bad=structuredClone(f.rows);bad[0].record.key='unreviewed/key';const payload=await prepareLocalStagePayload(f.dir,bad);assert.equal((await f.worker.fetch(f.request(f.auth(),payload),f.env)).status,403);assert.equal(f.puts(),0);}finally{f.cleanup();}});
+test('ambiguous, malformed and oversized authorization headers cannot stage anything',async()=>{const f=await fixture();try{const {gzipSync}=await import('node:zlib');const ambiguous=gzipSync(Buffer.from(JSON.stringify({...JSON.parse(gunzipSync(f.payload)),...f.auth()})));for(const [auth,body]of [[f.auth(),ambiguous],['{bad',f.payload],['x'.repeat(16001),f.payload],[{...f.auth(),unexpected:true},f.payload]]){assert.equal((await f.worker.fetch(f.request(auth,body),f.env)).status,400);assert.equal(f.puts(),0);}}finally{f.cleanup();}});

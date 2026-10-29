@@ -1,10 +1,12 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { gzipSync } from 'node:zlib';
+import { gzipSync, gzip } from 'node:zlib';
+import { promisify } from 'node:util';
+const gzipAsync = promisify(gzip);
 
 // The worker independently checks each source against its Merkle proof, SHA-256
 // and readback. Bound the raw files as well as the decompressed request body.
-export function encodeLocalBatch(dist, body) {
+function localPayload(dist, body) {
   if (!Array.isArray(body.records) || !body.records.length || body.records.length > 64)
     throw Error('Local batch requires one to 64 records');
   const blobs = Object.create(null);
@@ -21,7 +23,25 @@ export function encodeLocalBatch(dist, body) {
   }
   const payload = Buffer.from(JSON.stringify({ ...body, blobs }));
   if (payload.length > 12_000_000) throw Error('Local request exceeds worker bound');
-  return gzipSync(payload);
+  return payload;
+}
+
+export function encodeLocalBatch(dist, body) {
+  return gzipSync(localPayload(dist, body));
+}
+// Local preparation is deliberately lease-independent. Bound asynchronous gzip
+// to four encoders, then acquire the fresh storage lease after it completes.
+let activeEncoders = 0;
+const encoderWaiters = [];
+export async function prepareLocalStagePayload(dist, records) {
+  if (activeEncoders >= 4) await new Promise((accept) => encoderWaiters.push(accept));
+  else activeEncoders++;
+  try {
+    return await gzipAsync(localPayload(dist, { records }));
+  } finally {
+    if (encoderWaiters.length) encoderWaiters.shift()();
+    else activeEncoders--;
+  }
 }
 
 // Inventory membership only chooses the transport body. The Worker still reads

@@ -18,7 +18,7 @@ import { releaseRevision } from '../release-revision.mjs';
 import { createSignedInventoryFetch } from './inventory-fetch.mjs';
 import { createBoundInventoryReader, readOnlyRangeHints } from './inventory-reader.mjs';
 import { awaitAccountWriter } from './account-lock.mjs';
-import { encodeLocalBatch, preferLocalStageSource } from './local-batch.mjs';
+import { prepareLocalStagePayload, preferLocalStageSource } from './local-batch.mjs';
 import {
   deliveryActorCount,
   inventoryPageCount,
@@ -256,18 +256,21 @@ async function main() {
       console.log(
         `Private staging ready: ${remaining.length} remaining of ${allFiles.length}, root ${tree.root}`,
       );
-      async function transfer(batch, local = false, leaseRetries = 0) {
+      async function transfer(batch, local = false, leaseRetries = 0, preparedPayload) {
+        // File reads, base64 conversion and compression precede lease acquisition.
+        // A lease retry reuses the same immutable, source-bound payload.
+        const encoded = preparedPayload ?? (local
+          ? await prepareLocalStagePayload(dist, batch)
+          : JSON.stringify({ records: batch }));
         const current = await reservation();
         const { roster: _partitionHints, ...writeLease } = current;
-        const body = {
+        const authorization = JSON.stringify({
           lease: writeLease,
           signature: createHmac('sha256', Buffer.from(secret, 'hex'))
             .update(JSON.stringify(writeLease))
             .digest('hex'),
-          records: batch,
-        };
-        const serialized = JSON.stringify(body),
-          encoded = local ? encodeLocalBatch(dist, body) : serialized;
+        });
+        if (authorization.length > 16_000) throw Error('Storage authorization metadata exceeds bound');
         let last;
         for (let attempt = 0; attempt < 3; attempt++) {
           try {
@@ -275,6 +278,7 @@ async function main() {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
+                'X-UC-Stage-Authorization': authorization,
                 ...(local ? { 'X-UC-Body-Encoding': 'gzip' } : {}),
               },
               body: encoded,
@@ -287,7 +291,7 @@ async function main() {
                   permanent: true,
                 });
               await reservation(true);
-              return transfer(batch, local, leaseRetries + 1);
+              return transfer(batch, local, leaseRetries + 1, encoded);
             }
             if (!response.ok) {
               const detail = (await response.text()).slice(0, 500);

@@ -31,6 +31,9 @@ export function stagingWorker(job) {
       let body, rawBlob;
       try {
         const metadata = request.headers.get('X-UC-Stage-Metadata');
+        const authorization = request.headers.get('X-UC-Stage-Authorization');
+        if (authorization && (url.pathname !== '/stage' || authorization.length > 16_000))
+          throw Error('Invalid staging authorization metadata');
         if (metadata && (url.pathname !== '/stage' || metadata.length > 16_000))
           throw Error('Invalid binary staging metadata');
         const stream =
@@ -65,6 +68,16 @@ export function stagingWorker(job) {
           if (body.records?.length !== 1 || body.blobs) throw Error('One binary source required');
           rawBlob = bytes;
         } else body = JSON.parse(new TextDecoder().decode(bytes));
+        if (authorization) {
+          if (body.lease !== undefined || body.signature !== undefined)
+            throw Error('Ambiguous staging authorization');
+          const auth = JSON.parse(authorization);
+          if (!auth || typeof auth !== 'object' || Array.isArray(auth) ||
+              Object.keys(auth).some((key) => !['lease', 'signature'].includes(key)))
+            throw Error('Invalid staging authorization metadata');
+          body.lease = auth.lease;
+          body.signature = auth.signature;
+        }
       } catch {
         return json({ error: 'Invalid request' }, 400);
       }
