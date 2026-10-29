@@ -1,4 +1,65 @@
 {
+  "14": [
+    "math",
+    "school",
+    "happy-birthday"
+  ],
+  "21": [
+    "math",
+    "school",
+    "happy-birthday"
+  ],
+  "24": [
+    "math",
+    "school",
+    "happy-birthday"
+  ],
+  "26": [
+    "math",
+    "school",
+    "happy-birthday"
+  ],
+  "35": [
+    "math",
+    "school",
+    "happy-birthday"
+  ],
+  "36": [
+    "math",
+    "school",
+    "happy-birthday"
+  ],
+  "44": [
+    "math",
+    "school",
+    "happy-birthday"
+  ],
+  "55": [
+    "math",
+    "school",
+    "happy-birthday"
+  ],
+  "72": [
+    "math",
+    "school",
+    "happy-birthday"
+  ],
+  "97": [
+    "math",
+    "school",
+    "happy-birthday"
+  ],
+  "123": [
+    "math",
+    "school",
+    "happy-birthday"
+  ],
+  "2027": [
+    "countdown",
+    "fireworks",
+    "celebration",
+    "party"
+  ],
   "3d-printer": [
     "printer",
     "scanner",
@@ -1511,12 +1572,6 @@
     "christmas",
     "snowman"
   ],
-  "2027": [
-    "countdown",
-    "fireworks",
-    "celebration",
-    "party"
-  ],
   "feast": [
     "thanksgiving",
     "turkey",
@@ -1571,5 +1626,213 @@
     "family",
     "thanksgiving",
     "turkey"
+  ],
+  "000": [
+    "math",
+    "school",
+    "happy-birthday"
+  ],
+  "03": [
+    "math",
+    "school",
+    "happy-birthday"
+  ],
+  "09": [
+    "math",
+    "school",
+    "happy-birthday"
+  ],
+  "4th": [
+    "math",
+    "school",
+    "happy-birthday"
+  ],
+  "ai": [
+    "robot",
+    "chatgpt",
+    "openai",
+    "claude",
+    "anthropic"
+  ],
+  "alien": [
+    "astronaut",
+    "mars",
+    "robot",
+    "earth"
+  ],
+  "astronaut": [
+    "moon",
+    "mars",
+    "earth",
+    "alien"
+  ],
+  "donut": [
+    "cookie",
+    "pie",
+    "candy",
+    "juice"
+  ],
+  "juice": [
+    "orange",
+    "apple",
+    "lemon",
+    "watermelon",
+    "donut"
+  ],
+  "lighthouse": [
+    "beach",
+    "ocean",
+    "river"
+  ],
+  "mouth": [
+    "tooth",
+    "brain",
+    "school"
+  ],
+  "nature": [
+    "river",
+    "ocean",
+    "leaves",
+    "acorn",
+    "sunflower"
+  ],
+  "nest": [
+    "eagle",
+    "owl",
+    "duck",
+    "nature"
+  ],
+  "ocean": [
+    "river",
+    "beach",
+    "zooplankton",
+    "lighthouse"
+  ],
+  "popcorn": [
+    "movie",
+    "pizza",
+    "donut",
+    "juice"
+  ],
+  "quokka": [
+    "kangaroo",
+    "koala",
+    "squirrel",
+    "xerus"
+  ],
+  "river": [
+    "ocean",
+    "nature",
+    "lighthouse"
+  ],
+  "tooth": [
+    "mouth",
+    "brain",
+    "school"
+  ],
+  "truck": [
+    "train",
+    "electric-car",
+    "airplane"
+  ],
+  "up": [
+    "movie",
+    "airplane",
+    "dog"
+  ],
+  "uterus": [
+    "brain",
+    "tooth",
+    "mouth",
+    "school"
+  ],
+  "vacuum": [
+    "washing-machine",
+    "smart-home",
+    "robot"
+  ],
+  "window": [
+    "lighthouse",
+    "smart-home",
+    "nature"
+  ],
+  "wings": [
+    "angel",
+    "butterfly",
+    "eagle"
+  ],
+  "xerus": [
+    "squirrel",
+    "quokka",
+    "zookeeper"
+  ],
+  "zigzag": [
+    "wave",
+    "math",
+    "school"
+  ],
+  "zookeeper": [
+    "zoologist",
+    "school",
+    "quokka",
+    "xerus"
+  ],
+  "zoologist": [
+    "zookeeper",
+    "school",
+    "xerus",
+    "quokka"
+  ],
+  "zooplankton": [
+    "ocean",
+    "octopus",
+    "school"
+  ],
+  "chatgpt": [
+    "openai",
+    "ai",
+    "claude",
+    "anthropic"
+  ],
+  "openai": [
+    "chatgpt",
+    "ai",
+    "anthropic",
+    "claude"
+  ],
+  "claude": [
+    "anthropic",
+    "chatgpt",
+    "openai",
+    "ai"
+  ],
+  "anthropic": [
+    "claude",
+    "openai",
+    "chatgpt",
+    "ai"
+  ],
+  "macbook": [
+    "laptop",
+    "iphone",
+    "tablet",
+    "desktop-computer",
+    "computer-mouse"
+  ],
+  "maccabees": [
+    "hanukkah",
+    "gratitude"
+  ],
+  "nativity": [
+    "angel",
+    "christmas",
+    "bell",
+    "family"
+  ],
+  "caroling": [
+    "music",
+    "bell",
+    "family",
+    "nativity"
   ]
 }

@@ -51,7 +51,25 @@ export function reserveInventory(inventory, bytes, now = Date.now()) {
     projectedBytes: measured + bytes,
   };
 }
-export async function measureReservation(accountId, remainingBytes, listObjects) {
+export function reservationEvidence(inventory, bytes, now = Date.now()) {
+  const reservation = reserveInventory(inventory, bytes, now);
+  return {
+    ...reservation,
+    roster: inventoryHints(inventory),
+    inventoryScope: {
+      accountId: inventory.accountId,
+      scopeVersion: inventory.scopeVersion,
+      observedAt: inventory.observedAt,
+      jurisdictions: inventory.jurisdictions,
+    },
+  };
+}
+export async function measureReservation(
+  accountId,
+  remainingBytes,
+  listObjects,
+  onVerifiedInventory,
+) {
   const endpoint = `https://${accountId}.r2.cloudflarestorage.com`;
   let token;
   try {
@@ -100,7 +118,9 @@ export async function measureReservation(accountId, remainingBytes, listObjects)
   });
   const roster = inventoryHints(inventory);
   try {
-    return { ...reserveInventory(inventory, remainingBytes), roster };
+    const evidence = reservationEvidence(inventory, remainingBytes);
+    onVerifiedInventory?.(inventory);
+    return evidence;
   } catch (error) {
     if (error.message === 'Fresh complete account inventory required')
       error.readOnlyInventoryHints = roster;

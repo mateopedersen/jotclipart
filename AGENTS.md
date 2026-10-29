@@ -531,3 +531,18 @@ spellings share one collection. Counts describe catalog topics, not missing file
 do not draw filler to force every resulting subject to 50. All supplied originals
 remain unchanged. Reviewed preparation is not CDN verification or publication.
 Preserve current accepted content and the unrelated paused Marvel backlog.
+
+## Supplied owner collections and coordinated publication — 2026-10-29
+
+Resume this authorized import from `docs/content/owner-20261029-import.md` and
+`work/imports/owner-combined-20261029`. It contains 2,325 supplied artworks plus
+150 sealed Maccabees/Nativity/Caroling additions, target 17,559 accepted entries.
+All supplied source/PDF pairs have actual reviews. Eight AI-brand replacements
+retain private original lineage. New product copy is source-bound and primary-
+referenced; do not infer MacBook chips/years from archive names. Kitty joins Cat.
+The private R2-binding transport has a real 150-file readback/CDN pilot and
+focused tests, but its full media run and final production activation must still
+be checked from receipts; preparation and uploads are not a live release.
+Use the sole publisher, all existing storage/source/SEO gates and fresh normal
+deployment. Preserve the verified b4b730e full rollback build and unrelated
+Marvel edits. Later production sets are held for the next release.

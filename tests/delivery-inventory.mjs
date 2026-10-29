@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {
   createBoundInventoryReader,
   inventoryBoundaries,
+  readOnlyRangeHints,
 } from '../scripts/delivery/inventory-reader.mjs';
 import { inventoryHints, reserveInventory } from '../scripts/delivery/storage-reservation.mjs';
 import { JURISDICTIONS, SCOPE_VERSION, endpointFor } from '../scripts/r2/inventory.mjs';
@@ -110,10 +111,22 @@ test('complete ranges include inserted/deleted boundary keys and Unicode with bo
   assert.equal(actual.IsTruncated, false);
   assert(peak() <= 16);
   const many = Array.from({ length: 64 }, (_, i) => `key-${String(i).padStart(3, '0')}`);
-  const larger = reader(many, inventoryBoundaries(many.map((key) => ({ key })), 1));
-  assert.deepEqual((await larger.read({ bucket: 'media', jurisdiction: 'default' }, () => {})).Contents, larger.rows);
+  const larger = reader(
+    many,
+    inventoryBoundaries(
+      many.map((key) => ({ key })),
+      1,
+    ),
+  );
+  assert.deepEqual(
+    (await larger.read({ bucket: 'media', jurisdiction: 'default' }, () => {})).Contents,
+    larger.rows,
+  );
   assert.equal(larger.peak(), 16);
-  assert.throws(() => createBoundInventoryReader({ buckets: [], fetchPage: async () => {}, concurrency: 17 }), /Bounded/);
+  assert.throws(
+    () => createBoundInventoryReader({ buckets: [], fetchPage: async () => {}, concurrency: 17 }),
+    /Bounded/,
+  );
 });
 test('unknown buckets are measured by the original complete-account transport', async () => {
   const { read } = reader(['a'], []);
@@ -213,4 +226,25 @@ test('transient inventory failures reduce page size while 403 stops without retr
   });
   await assert.rejects(denied({ bucket: 'media', jurisdiction: 'default' }), /refused: 403/);
   assert.equal(forbidden, 1);
+});
+
+test('saved range partitions are account-bound hints and cannot substitute for a storage reservation', () => {
+  const accountId = 'a'.repeat(32),
+    hints = {
+      accountId,
+      hintOnly: true,
+      buckets: [{ bucket: 'media', jurisdiction: 'default', bounds: ['first', 'last'] }],
+    };
+  const value = readOnlyRangeHints(hints, accountId, 'media');
+  assert.deepEqual(value, hints.buckets);
+  assert.equal(value.observedAt, undefined);
+  assert.throws(() => reserveInventory(value, 1), /scope/);
+  for (const input of [
+    { ...hints, hintOnly: false },
+    { ...hints, accountId: 'b'.repeat(32) },
+    { ...hints, buckets: [] },
+    { ...hints, buckets: [...hints.buckets, ...hints.buckets] },
+    { ...hints, buckets: [{ ...hints.buckets[0], bounds: ['last', 'first'] }] },
+  ])
+    assert.throws(() => readOnlyRangeHints(input, accountId, 'media'));
 });

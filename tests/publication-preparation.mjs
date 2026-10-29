@@ -1,7 +1,7 @@
 import test from 'node:test';
 import { HARD_CAP } from '../scripts/r2/plan.mjs';
 import assert from 'node:assert/strict';
-import { preparePublication } from '../scripts/r2/prepare-publication.mjs';
+import { preparePublication, preparePublicationWaves } from '../scripts/r2/prepare-publication.mjs';
 import {
   ASSET_ORIGIN,
   MIME_TYPES,
@@ -238,5 +238,63 @@ test('integrity, MIME, CORS, missing files and redirects fail without retries', 
       /CDN/,
     );
     assert.equal(e.calls.length, 4);
+  }
+});
+
+test('verified bounded waves share one full source pass and retain unchanged prior URLs', async () => {
+  const bodies = new Map(),
+    old = artwork('old-scene', bodies),
+    a = artwork('first-wave', bodies),
+    b = artwork('second-wave', bodies),
+    one = waveFor([a]),
+    two = waveFor([b]),
+    prior = manifestFor([old]),
+    reads = new Map();
+  const env = environment([old, a, b], bodies, { batch: [...one.batch, ...two.batch] });
+  const result = await preparePublicationWaves({
+    prior,
+    ...env.options,
+    waves: [one, two],
+    readAsset: (p) => {
+      reads.set(p, (reads.get(p) ?? 0) + 1);
+      return bodies.get(p);
+    },
+  });
+  assert.equal(result.files.length, 12);
+  assert.equal(env.calls.length, 8);
+  assert.deepEqual(
+    result.files.filter((f) => f.assetId === old.id),
+    prior.files,
+  );
+  assert.equal(reads.get(old.webp), 2);
+});
+test('any invalid multi-wave receipt or duplicate artwork stops all CDN reads', async () => {
+  for (const mode of ['stale', 'coverage', 'duplicate', 'oversized']) {
+    const bodies = new Map(),
+      a = artwork('wave-first', bodies),
+      b = artwork('wave-next', bodies);
+    let items = [a, b],
+      waves = [waveFor([a]), waveFor([b])];
+    if (mode === 'stale') waves[1].journal.status = 'uploading';
+    if (mode === 'coverage') waves[1].journal.inventoryScope.jurisdictions.pop();
+    if (mode === 'duplicate') waves = [waves[0], waves[0]];
+    if (mode === 'oversized') {
+      items = Array.from({ length: 51 }, (_, i) => artwork('large-wave-' + i, bodies));
+      waves = [waveFor(items)];
+    }
+    let calls = 0;
+    await assert.rejects(
+      preparePublicationWaves({
+        prior: null,
+        catalog: items,
+        waves,
+        readAsset: (p) => bodies.get(p),
+        fetcher: async () => {
+          calls++;
+          throw Error('must not fetch');
+        },
+      }),
+    );
+    assert.equal(calls, 0);
   }
 });

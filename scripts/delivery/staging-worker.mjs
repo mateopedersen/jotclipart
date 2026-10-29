@@ -177,7 +177,15 @@ export function stagingWorker(job) {
       for (const { record, proof } of body.records) {
         if (
           !record ||
+          (job.media === true &&
+            (!['image/webp', 'image/svg+xml', 'application/pdf'].includes(record.mime) ||
+              (record.mime === 'application/pdf' && record.bytes > 1_000_000))) ||
           !Array.isArray(proof) ||
+          (record.contentDisposition !== undefined &&
+            (record.mime !== 'application/pdf' ||
+              !/^attachment; filename="[a-z0-9]+(?:-[a-z0-9]+)*\.pdf"$/.test(
+                record.contentDisposition,
+              ))) ||
           proof.length > 24 ||
           !Number.isSafeInteger(record.bytes) ||
           record.bytes < 1 ||
@@ -222,6 +230,9 @@ export function stagingWorker(job) {
               onlyIf: { etagDoesNotMatch: '*' },
               httpMetadata: {
                 contentType: record.mime,
+                ...(record.contentDisposition
+                  ? { contentDisposition: record.contentDisposition }
+                  : {}),
                 cacheControl: record.path.endsWith('.html')
                   ? 'public,max-age=0,must-revalidate'
                   : 'public,max-age=31536000,immutable',
@@ -234,6 +245,8 @@ export function stagingWorker(job) {
             !object ||
             object.size !== record.bytes ||
             object.httpMetadata?.contentType !== record.mime ||
+            (record.contentDisposition !== undefined &&
+              object.httpMetadata?.contentDisposition !== record.contentDisposition) ||
             (await hash(await object.arrayBuffer())) !== record.sha256
           )
             throw Error(`Remote checksum mismatch: ${record.path}`);

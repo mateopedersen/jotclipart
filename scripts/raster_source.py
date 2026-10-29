@@ -37,7 +37,14 @@ def inspect_cmyk_image(image,width,height,output_intents=None):
     else:
         assert len(data)==width*height*4, 'Image data must have four actual color components'
     if cs=='/DeviceCMYK':
-        assert image.get('/Filter') in ('/DCTDecode','/JPXDecode'), 'DeviceCMYK source must contain independently decodable four-channel image data'
+        # Flate is a valid lossless filter for eight-bit color images. Its
+        # decoded four-channel sample count was checked above; do not force a
+        # correct supplied PDF through a lossy re-export just to use JPEG/JPX.
+        assert filters in (['/DCTDecode'],['/JPXDecode'],['/FlateDecode']), 'Unsupported DeviceCMYK image encoding'
+        if filters==['/FlateDecode']:
+            decoded=Image.frombytes('CMYK',(width,height),data)
+            decoded.load()
+            assert decoded.size==(width,height) and len(decoded.getbands())==4
         base.update(profile='Device CMYK (unprofiled)',colorSpace='Device CMYK',iccBytes=0,iccSha256=None)
         if output_intents:
             for ref in output_intents:

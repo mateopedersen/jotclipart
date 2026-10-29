@@ -267,25 +267,25 @@
     },
     "cat": {
       "status": "checked-against-catalog",
-      "checkedAt": "2026-10-26",
-      "sourceSha256": "cbed5da0711cc2ff983516a4ca6bcac5f81ea854e9d9f42c1362d4ad2217ee20",
+      "sourceSha256": "3fef179dcf140ccdaf7b3067e91a1b4f8afa49ba0e54f85ee4d9801a19b3a5e2",
+      "checkedAt": "2026-10-28T22:24:21.242Z",
       "intro": "Curled sleepers, full-body cats and expressive portraits show varied coats, ears and tails. Some compositions focus on the pet itself; others add flowers, props or a small activity.",
       "evidence": [
         {
-          "id": "cat-bengal-outline-standing-black-and-white-clipart",
-          "imageSha256": "c19e95d412e0c3dd196251d97a775cfb4b133233df3497d38e90ff3ea6dd593b"
+          "id": "abyssinian-kitten-sandcastle-beach-poster-clipart",
+          "imageSha256": "a8bc0dd4237e970c5303250ddd95f789df7f87d4c646c6f5092b7608a276c581"
         },
         {
-          "id": "cat-british-shorthair-resting-watercolor-clipart",
-          "imageSha256": "d2ae0e4e59c0cb0f989150658ae04fadb61ac8a488dba9b5b8cc2601084d16da"
+          "id": "cream-kitten-on-snail-shell-fairytale-clipart",
+          "imageSha256": "156a11290d6d32a56bbe59a6fc08f1f66b7540a646e8455cdbce615cf2e32c1a"
         },
         {
-          "id": "cat-calico-stained-glass-emblem-clipart",
-          "imageSha256": "17f522940c235336a1f625104ccee03ee94d3d06817712b2debe463e6272f550"
+          "id": "kitten-sleeping-open-violin-case-stipple-black-white-clipart",
+          "imageSha256": "8febe3aeae5c68b36196bf31bf2c64afc05e81ad21421b10da67d0d847f7886b"
         },
         {
-          "id": "cat-bengal-raincoat-scandinavian-clipart",
-          "imageSha256": "8f6d6dd3aa4ce8aacb43594bcfc8635d2332910aa480adf2ad8066cd9344c53d"
+          "id": "white-kitten-origami-boat-felt-clipart",
+          "imageSha256": "3453b6fb751eed9761b1cbda0d746cc4b43f48d30be70648540e539156f6102c"
         }
       ]
     },

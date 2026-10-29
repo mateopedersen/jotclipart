@@ -77,7 +77,7 @@
     "slug": "cat",
     "cluster": "Animals & nature",
     "wave": "OWNER_COLLECTION",
-    "target_original_artworks": 50,
+    "target_original_artworks": 100,
     "focus_note": "",
     "supplemental": true
   },
@@ -2409,6 +2409,456 @@
     "wave": "OWNER_COLLECTION",
     "target_original_artworks": 50,
     "focus_note": "Explore Hogwarts through castle views, classrooms, house common rooms and lakeside scenes. The illustrations also visit the Great Hall, library, greenhouses and Quidditch pitch in both color and monochrome.",
+    "supplemental": true
+  },
+  {
+    "id": 472,
+    "keyword": "14 clipart",
+    "slug": "14",
+    "cluster": "School & learning",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Paintbrushes, bamboo, coral and ornate gold shapes give 14 several distinct silhouettes. Green stone-like lettering, shimmering scales and yellow toy forms extend the choice beyond plain digits.",
+    "supplemental": true
+  },
+  {
+    "id": 473,
+    "keyword": "21 clipart",
+    "slug": "21",
+    "cluster": "School & learning",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Number 21 ranges from architectural and paintbrush constructions to bamboo, folded fans and bold comic lettering. Blue-and-gold decoration and detailed grayscale versions provide both ornamental and simpler choices.",
+    "supplemental": true
+  },
+  {
+    "id": 474,
+    "keyword": "24 clipart",
+    "slug": "24",
+    "cluster": "School & learning",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Explore 24 as colorful paintbrushes, autumn leaves, soft balloon panels and basketball-style patches. Pastry, dark stone-like forms and comic layers give the same number different moods and surface details.",
+    "supplemental": true
+  },
+  {
+    "id": 475,
+    "keyword": "26 clipart",
+    "slug": "26",
+    "cluster": "School & learning",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Crystal cavities, coiled rope, carved wood, circuit traces and map contours shape the number 26. Food-inspired digits, folded ribbons and denim patches add playful alternatives to the metallic and monochrome lettering.",
+    "supplemental": true
+  },
+  {
+    "id": 476,
+    "keyword": "35 clipart",
+    "slug": "35",
+    "cluster": "School & learning",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Number 35 combines fluted grayscale lettering with mossy bark, orange knit, blue ice and woven textures. Decorative lemon accents and stitched surfaces give each pair of digits a distinct finish.",
+    "supplemental": true
+  },
+  {
+    "id": 477,
+    "keyword": "36 clipart",
+    "slug": "36",
+    "cluster": "School & learning",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Shell inlays, coral growth, popcorn clusters and peacock feathers transform 36 into textured number art. Candy stripes, little cottages, paper rosettes and grayscale linework provide further choices for the same two digits.",
+    "supplemental": true
+  },
+  {
+    "id": 478,
+    "keyword": "44 clipart",
+    "slug": "44",
+    "cluster": "School & learning",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Open fours take shape as bamboo, paintbrushes, clockwork, clouds and miniature buildings. Porcelain patterns, tartan, paper folds and stitched surfaces offer a wide range of decorative treatments for 44.",
+    "supplemental": true
+  },
+  {
+    "id": 479,
+    "keyword": "55 clipart",
+    "slug": "55",
+    "cluster": "School & learning",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Two fives are built from paintbrushes, leaves, yarn, water and musical details. Bright cake and waffle designs sit beside gray chain, carved relief and zipper treatments for a different kind of number label.",
+    "supplemental": true
+  },
+  {
+    "id": 480,
+    "keyword": "72 clipart",
+    "slug": "72",
+    "cluster": "School & learning",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Number 72 appears as fluted monochrome lettering, moss-covered bark, knitted yarn and icy blue forms. Lemon accents, stitched cloth and woven wicker add softer options beside the engraved designs.",
+    "supplemental": true
+  },
+  {
+    "id": 481,
+    "keyword": "97 clipart",
+    "slug": "97",
+    "cluster": "School & learning",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Paintbrushes, autumn leaves, puffy panels and basketball textures form 97 in contrasting styles. Thick paint, linked chains and bold yellow toy digits provide choices from playful to industrial-looking lettering.",
+    "supplemental": true
+  },
+  {
+    "id": 482,
+    "keyword": "123 clipart",
+    "slug": "123",
+    "cluster": "School & learning",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "The full 123 sequence appears in decorative shell, balloon, basketball and miniature mosaic treatments. Bright toy-like digits sit alongside carved floral monochrome designs for a quieter number heading.",
+    "supplemental": true
+  },
+  {
+    "id": 483,
+    "keyword": "000 clipart",
+    "slug": "000",
+    "cluster": "School & learning",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Three zeroes appear together in shell inlays, leafy relief, braided fibers and metallic designs. The set also includes monochrome lettering, giving triple-zero labels a choice of textured or restrained treatments.",
+    "supplemental": true
+  },
+  {
+    "id": 484,
+    "keyword": "03 clipart",
+    "slug": "03",
+    "cluster": "School & learning",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "These designs keep the leading zero beside the three. Mossy bark, cable-knit forms, icy blue shapes, lemon accents and engraved monochrome digits offer different approaches to the same two-character label.",
+    "supplemental": true
+  },
+  {
+    "id": 485,
+    "keyword": "09 clipart",
+    "slug": "09",
+    "cluster": "School & learning",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "The zero and nine remain paired across floral porcelain, butterfly-wing patterns, shell inlays and starry blue lettering. Woven and zipper-edged versions add tactile alternatives without dropping the leading zero.",
+    "supplemental": true
+  },
+  {
+    "id": 486,
+    "keyword": "4th clipart",
+    "slug": "4th",
+    "cluster": "School & learning",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "These designs show the ordinal 4th, with the small letters kept beside the numeral. Pearlescent inlays, gold scrollwork, bamboo, coral and monochrome patterns vary the appearance without turning it into a holiday-specific symbol.",
+    "supplemental": true
+  },
+  {
+    "id": 487,
+    "keyword": "AI clipart",
+    "slug": "ai",
+    "cluster": "Technology & devices",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Friendly robots illustrate coding, conversation, image-making, research and connected devices. Brain-and-chip symbols, tool-using characters and monochrome scenes provide ways to represent AI tasks without assigning them to a particular brand.",
+    "supplemental": true
+  },
+  {
+    "id": 488,
+    "keyword": "Alien clipart",
+    "slug": "alien",
+    "cluster": "Space & science",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Unusual eyes, bright bodies and playful equipment distinguish these imaginary aliens. Rover rides, crystal discoveries, telescopes, rockets and hoverboards give the characters more variety than a single standing pose.",
+    "supplemental": true
+  },
+  {
+    "id": 489,
+    "keyword": "Astronaut clipart",
+    "slug": "astronaut",
+    "cluster": "Space & science",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Astronauts work at controls, inspect instruments, explore rocky terrain and carry out repairs. Flight suits, spacewalk equipment, underwater practice scenes and weightless activities offer different views of the subject.",
+    "supplemental": true
+  },
+  {
+    "id": 490,
+    "keyword": "Donut clipart",
+    "slug": "donut",
+    "cluster": "Food & drink",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Glazed pastries appear alongside donut characters, acrobats and imaginative vehicles. Cut bakery views, ice-cream fillings and playful turtle or unicorn designs give the collection both food-focused and character-led options.",
+    "supplemental": true
+  },
+  {
+    "id": 491,
+    "keyword": "Juice clipart",
+    "slug": "juice",
+    "cluster": "Food & drink",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Juice appears in glasses, bottles, cartons, fruit shells and playful character pouches. Presses, strainers, serving carts and colorful pouring scenes show different stages and settings beyond a single drink glass.",
+    "supplemental": true
+  },
+  {
+    "id": 492,
+    "keyword": "Lighthouse clipart",
+    "slug": "lighthouse",
+    "cluster": "Places & travel",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Coastal towers range from striped beacons and open metal frames to cottage lights, lightships and cutaway stairs. Waves, cliffs, snowy piers and clearly fantastical decorative designs provide contrasting settings without identifying unverified real landmarks.",
+    "supplemental": true
+  },
+  {
+    "id": 493,
+    "keyword": "Mouth clipart",
+    "slug": "mouth",
+    "cluster": "People & activities",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Smiles, puckered lips, singing mouths and exaggerated expressions make this a varied collection of isolated facial details. Dental-care scenes and playful animal or monster mouths sit alongside grayscale linework and bright glossy designs.",
+    "supplemental": true
+  },
+  {
+    "id": 494,
+    "keyword": "Nature clipart",
+    "slug": "nature",
+    "cluster": "Animals & nature",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Plants and animals share small woodland, meadow, desert and shoreline scenes. Seedlings, pollinators, fern shoots, tide pools and gentle storybook characters bring different parts of nature into compact isolated compositions.",
+    "supplemental": true
+  },
+  {
+    "id": 495,
+    "keyword": "Nest clipart",
+    "slug": "nest",
+    "cluster": "Animals & nature",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Twig cups, tree cavities, hanging pouches, mud structures and ground nests give each scene a different form. Birds, eggs and chicks appear beside decorative interpretations and cutaway views that reveal otherwise hidden nest spaces.",
+    "supplemental": true
+  },
+  {
+    "id": 496,
+    "keyword": "Ocean clipart",
+    "slug": "ocean",
+    "cluster": "Nature & elements",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Breaking waves, sea creatures, reef gardens and underwater equipment cover several sides of ocean life. Bright color scenes, detailed grayscale studies and fanciful marine compositions offer alternatives to a single beach motif.",
+    "supplemental": true
+  },
+  {
+    "id": 497,
+    "keyword": "Popcorn clipart",
+    "slug": "popcorn",
+    "cluster": "Food & drink",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Popcorn appears in cinema tubs, gift bags, home bowls, cooking pots and playful treats. Caramel clusters, snack mixtures, decorative wreaths and a cheerful kernel character extend the collection beyond the classic striped container.",
+    "supplemental": true
+  },
+  {
+    "id": 498,
+    "keyword": "Quokka clipart",
+    "slug": "quokka",
+    "cluster": "Animals & nature",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Round-faced quokka characters bake, explore, perform and relax in varied little scenes. Space suits, beach hammocks, winter mugs and a red scooter give each friendly animal a different activity and silhouette.",
+    "supplemental": true
+  },
+  {
+    "id": 499,
+    "keyword": "River clipart",
+    "slug": "river",
+    "cluster": "Nature & elements",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Clear streams wind through flowered banks, autumn bridges, snowy forests and rocky canyons. Wildlife, small boats, river structures and monochrome studies provide both quiet landscapes and more active waterside scenes.",
+    "supplemental": true
+  },
+  {
+    "id": 500,
+    "keyword": "Tooth clipart",
+    "slug": "tooth",
+    "cluster": "Space & science",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Smiling tooth characters appear with fresh leaves, music, camping gear and quiet resting places. Decorative cutaways and playful poses are presented as illustrations, with different shapes and settings across the collection.",
+    "supplemental": true
+  },
+  {
+    "id": 501,
+    "keyword": "Truck clipart",
+    "slug": "truck",
+    "cluster": "Transport & vehicles",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Delivery, emergency, construction and specialist service trucks appear in varied body shapes. Detailed grayscale vehicles, bright work trucks, monster trucks and a wooden toy provide choices without assigning unverified manufacturers or models.",
+    "supplemental": true
+  },
+  {
+    "id": 502,
+    "keyword": "Up clipart",
+    "slug": "up",
+    "cluster": "Arts & entertainment",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Up-inspired artwork includes Kevin, the dog pack, young Ellie, the balloon house and familiar adventure keepsakes. Camping tools, travel objects and decorative flying scenes accompany the recognizable film subjects.",
+    "supplemental": true
+  },
+  {
+    "id": 503,
+    "keyword": "Uterus clipart",
+    "slug": "uterus",
+    "cluster": "Space & science",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Simplified uterus models, supportive hand arrangements, flowers and gentle character designs present the subject in several visual styles. Decorative anatomy and symbolic scenes vary from clear model views to more expressive compositions.",
+    "supplemental": true
+  },
+  {
+    "id": 504,
+    "keyword": "Vacuum clipart",
+    "slug": "vacuum",
+    "cluster": "Technology & devices",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Vacuum equipment ranges from upright, handheld and backpack cleaners to workshop extraction and window-cleaning tools. Operating scenes, small accessories and toy-like designs help distinguish different cleaning tasks and shapes.",
+    "supplemental": true
+  },
+  {
+    "id": 505,
+    "keyword": "Window clipart",
+    "slug": "window",
+    "cluster": "Places & travel",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Arches, shutters, lace curtains and colored glazing give these isolated windows different architectural details. Kitchen plants, Roman blinds, hopper openings and decorative frames offer both furnished and simpler views.",
+    "supplemental": true
+  },
+  {
+    "id": 506,
+    "keyword": "Wings clipart",
+    "slug": "wings",
+    "cluster": "Animals & nature",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Feathered wings, insect-inspired forms and decorative fantasy pairs offer different silhouettes. Angel wings, heart emblems, shields, laurel motifs and blue water shapes range from natural-looking studies to symbolic ornament.",
+    "supplemental": true
+  },
+  {
+    "id": 507,
+    "keyword": "Xerus clipart",
+    "slug": "xerus",
+    "cluster": "Animals & nature",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Striped ground-squirrel characters rest in hammocks, paint, investigate burrows and carry garden finds. Tea parties, tools and winter accessories turn the recognizable animal into varied playful scenes rather than a single repeated pose.",
+    "supplemental": true
+  },
+  {
+    "id": 508,
+    "keyword": "Zigzag clipart",
+    "slug": "zigzag",
+    "cluster": "Arts & entertainment",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Zigzags appear as folded paper, puzzle pieces, architectural panels and woven textures. Balloon forms, layered chevrons, a smiling snake and party bunting provide both abstract patterns and playful objects.",
+    "supplemental": true
+  },
+  {
+    "id": 509,
+    "keyword": "Zookeeper clipart",
+    "slug": "zookeeper",
+    "cluster": "People & activities",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Keepers prepare food, maintain habitats, record observations and work beside many different animals. Feeding, cleaning, enrichment and equipment scenes show varied illustrated tasks across colorful and monochrome compositions.",
+    "supplemental": true
+  },
+  {
+    "id": 510,
+    "keyword": "Zoologist clipart",
+    "slug": "zoologist",
+    "cluster": "People & activities",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Animal researchers use recorders, microscopes, charts and field equipment in varied settings. Track studies, migration diagrams and small-animal observations offer both outdoor work and laboratory-style scenes.",
+    "supplemental": true
+  },
+  {
+    "id": 511,
+    "keyword": "Zooplankton clipart",
+    "slug": "zooplankton",
+    "cluster": "Space & science",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Small drifting organisms appear as transparent, shelled, finned and ribbon-shaped illustrations. Colored studies and monochrome drawings emphasize visible forms; stylized examples avoid claiming an exact species where the artwork does not support one.",
+    "supplemental": true
+  },
+  {
+    "id": 512,
+    "keyword": "ChatGPT clipart",
+    "slug": "chatgpt",
+    "cluster": "Technology & devices",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "ChatGPT wordmarks, plan badges and feature illustrations sit alongside model-name designs. Galaxy, sun, Earth and moon displays distinguish the newer model artwork, while research, image creation and document tools have their own compositions.",
+    "supplemental": true
+  },
+  {
+    "id": 513,
+    "keyword": "OpenAI clipart",
+    "slug": "openai",
+    "cluster": "Technology & devices",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "OpenAI illustrations represent coding, research, image work, speech and tool connections. Documents, diagrams, linked application panels and the blossom mark give each workflow a different visual arrangement.",
+    "supplemental": true
+  },
+  {
+    "id": 514,
+    "keyword": "Claude clipart",
+    "slug": "claude",
+    "cluster": "Technology & devices",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Claude nameplates and sunburst badges cover assistant features, subscription plans and model names. Distinct labels for Code, Artifacts, Research and model families keep the depicted product or plan clear.",
+    "supplemental": true
+  },
+  {
+    "id": 515,
+    "keyword": "Anthropic clipart",
+    "slug": "anthropic",
+    "cluster": "Technology & devices",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 50,
+    "focus_note": "Anthropic artwork combines company wordmarks with research, API, safety and tool-workflow illustrations. Report pages, connected modules, evaluation diagrams and policy handbooks offer more context than a logo alone.",
+    "supplemental": true
+  },
+  {
+    "id": 516,
+    "keyword": "MacBook clipart",
+    "slug": "macbook",
+    "cluster": "Technology & devices",
+    "wave": "OWNER_COLLECTION",
+    "target_original_artworks": 75,
+    "focus_note": "MacBook illustrations include Pro, Air, Neo and older family designs, plus creative-work screens and retail scenes. Color, camera-area shape, body profile and visible accessories distinguish the drawings without guessing a chip or exact model year.",
     "supplemental": true
   }
 ]

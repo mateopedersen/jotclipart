@@ -1,3 +1,4 @@
+import { JURISDICTIONS } from '../r2/inventory.mjs';
 // Complete lexicographic ranges, not guessed filename prefixes. Boundaries affect
 // concurrency only: every possible object key belongs to exactly one range.
 const compare = (a, b) => Buffer.compare(Buffer.from(a), Buffer.from(b));
@@ -7,6 +8,31 @@ export function inventoryBoundaries(objects, stride = 4000) {
   const bounds = [];
   for (let i = stride - 1; i < keys.length - 1; i += stride) bounds.push(keys[i]);
   return bounds;
+}
+/** Old ranges are partition hints only; they never carry counts or grant write permission. */
+export function readOnlyRangeHints(hints, accountId, targetBucket) {
+  if (hints?.hintOnly !== true || hints.accountId !== accountId || !Array.isArray(hints.buckets))
+    throw Error('Read-only inventory hints for this account required');
+  const seen = new Set(),
+    result = hints.buckets.map((b) => {
+      const jurisdiction = b.jurisdiction ?? 'default',
+        id = jurisdiction + '/' + b.bucket;
+      if (
+        !JURISDICTIONS.includes(jurisdiction) ||
+        !/^([a-z0-9][a-z0-9-]{1,61}[a-z0-9])$/.test(b.bucket ?? '') ||
+        seen.has(id) ||
+        !Array.isArray(b.bounds) ||
+        b.bounds.some(
+          (k, i) => typeof k !== 'string' || !k || (i && compare(b.bounds[i - 1], k) >= 0),
+        )
+      )
+        throw Error('Invalid inventory range hints');
+      seen.add(id);
+      return { bucket: b.bucket, jurisdiction, bounds: [...b.bounds] };
+    });
+  if (!result.some((b) => b.bucket === targetBucket && b.jurisdiction === 'default'))
+    throw Error('Target bucket missing from read-only hints');
+  return result;
 }
 // Read disjoint complete key ranges in parallel so the account census can
 // finish within the unchanged 45-second freshness window. This path is read-only.

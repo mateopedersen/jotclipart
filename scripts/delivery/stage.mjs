@@ -15,9 +15,9 @@ import { collectDeliveryFiles, merkle } from './manifest.mjs';
 import { measureReservation } from './storage-reservation.mjs';
 import { releaseRevision } from '../release-revision.mjs';
 import { createSignedInventoryFetch } from './inventory-fetch.mjs';
-import { createBoundInventoryReader } from './inventory-reader.mjs';
+import { createBoundInventoryReader, readOnlyRangeHints } from './inventory-reader.mjs';
 import { acquireAccountWriter } from './account-lock.mjs';
-import { encodeLocalBatch } from './local-batch.mjs';
+import { encodeLocalBatch, preferLocalStageSource } from './local-batch.mjs';
 import {
   deliveryActorCount,
   inventoryPageCount,
@@ -105,7 +105,8 @@ async function main() {
       completed = done.size,
       nextProgress = (Math.floor(done.size / 200) + 1) * 200,
       failed = false,
-      remoteReady = false;
+      remoteReady = false,
+      knownKeys;
     async function reservation(force = false) {
       if (!force && lease && Date.now() - lease.observedAt < 40_000) return lease;
       if (!leasePromise)
@@ -123,6 +124,13 @@ async function main() {
                   fetchPage: createSignedInventoryFetch({ secret }),
                 })
               : undefined,
+            (inventory) => {
+              const target = inventory.buckets.find(
+                (b) => b.name === bucket && b.jurisdiction === 'default',
+              );
+              if (!target) throw Error('Existing target bucket is missing');
+              knownKeys = new Set(target.objects.map((o) => o.key));
+            },
           );
           for (const current of inventoryBuckets) {
             const fresh = measured.roster.find(
@@ -140,12 +148,27 @@ async function main() {
     }
     try {
       let bindings;
-      try {
-        bindings = (await reservation()).roster;
-      } catch (error) {
-        if (!Array.isArray(error.readOnlyInventoryHints)) throw error;
-        bindings = error.readOnlyInventoryHints;
-        console.log('Slow cold census: bootstrapping read-only inventory; no write lease issued');
+      if (process.env.UC_DELIVERY_INVENTORY_HINTS) {
+        const hintPath = resolve(process.env.UC_DELIVERY_INVENTORY_HINTS);
+        if (!hintPath.startsWith(root + '/'))
+          throw Error('Inventory hints must remain inside the project');
+        bindings = readOnlyRangeHints(
+          JSON.parse(readFileSync(hintPath, 'utf8')),
+          accountId,
+          bucket,
+        );
+        console.log(
+          'Prior complete-census ranges are read-only hints; fresh complete coverage is still required before staging.',
+        );
+      }
+      if (!bindings) {
+        try {
+          bindings = (await reservation()).roster;
+        } catch (error) {
+          if (!Array.isArray(error.readOnlyInventoryHints)) throw error;
+          bindings = error.readOnlyInventoryHints;
+          console.log('Slow cold census: bootstrapping read-only inventory; no write lease issued');
+        }
       }
       inventoryBuckets.push(
         ...bindings
@@ -307,9 +330,7 @@ async function main() {
         Array.from({ length: actors }, async () => {
           while (cursor < remaining.length && !failed) {
             const batch = [];
-            const htmlGroup =
-              process.env.UC_DELIVERY_LOCAL_HTML === '1' &&
-              remaining[cursor].record.path.endsWith('.html');
+            const localGroup = preferLocalStageSource(remaining[cursor].record, knownKeys);
             // The byte limit and actor cap still bound the in-flight release
             // bytes. Larger groups make useful progress during each fresh
             // account-inventory lease without changing proofs or readback.
@@ -320,8 +341,7 @@ async function main() {
               cursor < remaining.length &&
               batch.length < itemLimit &&
               (batch.length === 0 ||
-                (process.env.UC_DELIVERY_LOCAL_HTML === '1' &&
-                  remaining[cursor].record.path.endsWith('.html')) === htmlGroup) &&
+                preferLocalStageSource(remaining[cursor].record, knownKeys) === localGroup) &&
               (batch.length === 0 || groupBytes + remaining[cursor].record.bytes <= byteLimit)
             ) {
               const row = remaining[cursor++];
@@ -329,7 +349,7 @@ async function main() {
               groupBytes += row.record.bytes;
             }
             try {
-              await transfer(batch, process.env.UC_DELIVERY_LOCAL_ONLY === '1' || htmlGroup);
+              await transfer(batch, localGroup);
             } catch (error) {
               failed = true;
               throw error;

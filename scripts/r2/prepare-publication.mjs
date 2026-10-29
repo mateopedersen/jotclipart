@@ -161,6 +161,38 @@ export async function preparePublication({
   if (new Set(batch.map((object) => object.assetId)).size > 50)
     throw new Error('At most 50 artworks per reviewed production wave');
   validateJournal(journal, batch, batchSha256);
+  return prepareVerifiedFiles({ prior, catalog, batch, readAsset, fetcher, now, retryWait });
+}
+
+/** Validate each <=50-artwork receipt separately; hash retained local sources once. */
+export async function preparePublicationWaves({
+  prior,
+  catalog,
+  waves,
+  readAsset,
+  fetcher = fetch,
+  now = Date.now,
+  retryWait = waitForRetry,
+}) {
+  if (!Array.isArray(waves) || !waves.length)
+    throw Error('At least one independently verified wave is required');
+  const ids = new Set(),
+    batch = [];
+  for (const wave of waves) {
+    validateBatch(wave.batch);
+    const group = [...new Set(wave.batch.map((o) => o.assetId))];
+    if (group.length > 50) throw Error('At most 50 artworks per reviewed production wave');
+    validateJournal(wave.journal, wave.batch, wave.batchSha256);
+    for (const id of group) {
+      if (ids.has(id)) throw Error('Artwork duplicated across verified waves');
+      ids.add(id);
+    }
+    batch.push(...wave.batch);
+  }
+  return prepareVerifiedFiles({ prior, catalog, batch, readAsset, fetcher, now, retryWait });
+}
+
+async function prepareVerifiedFiles({ prior, catalog, batch, readAsset, fetcher, now, retryWait }) {
   const previous = prior ? validateManifest(prior) : new Map();
   const expected = catalogFiles(catalog),
     expectedById = new Map(expected.map((file) => [assetIdentity(file.assetId, file.kind), file]));

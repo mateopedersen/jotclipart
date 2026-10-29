@@ -97,6 +97,23 @@ class GeneratedRasterContract(unittest.TestCase):
     def test_rgb_relabelled_device_cmyk_is_rejected(self):
         _,image,_=self.fixture('RGB')
         with self.assertRaises(AssertionError):inspect_cmyk_image(image,31,27)
+    def test_lossless_flate_cmyk_keeps_real_four_channel_samples(self):
+        from pypdf.generic import DecodedStreamObject,NameObject,NumberObject
+        raw=bytes([0,0,0,255,12,34,56,78])*6
+        image=DecodedStreamObject();image.set_data(raw);image=image.flate_encode()
+        for key,value in {'/Width':4,'/Height':3,'/BitsPerComponent':8}.items():image[NameObject(key)]=NumberObject(value)
+        image[NameObject('/ColorSpace')]=NameObject('/DeviceCMYK')
+        info=inspect_cmyk_image(image,4,3)
+        self.assertEqual(info['components'],4)
+        self.assertEqual(info['profile'],'Device CMYK (unprofiled)')
+        self.assertEqual(image.get_data(),raw)
+    def test_flate_rgb_relabel_and_truncated_cmyk_fail(self):
+        from pypdf.generic import DecodedStreamObject,NameObject,NumberObject
+        for raw in [bytes(4*3*3),bytes(4*3*4-1),bytes(4*3*4+1)]:
+            image=DecodedStreamObject();image.set_data(raw);image=image.flate_encode()
+            for key,value in {'/Width':4,'/Height':3,'/BitsPerComponent':8}.items():image[NameObject(key)]=NumberObject(value)
+            image[NameObject('/ColorSpace')]=NameObject('/DeviceCMYK')
+            with self.subTest(bytes=len(raw)),self.assertRaises(AssertionError):inspect_cmyk_image(image,4,3)
     def test_wrong_encoded_dimensions_are_rejected(self):
         _,image,_=self.fixture(size=(30,27))
         with self.assertRaises(AssertionError):inspect_cmyk_image(image,31,27)
