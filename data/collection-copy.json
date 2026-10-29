@@ -11894,5 +11894,53 @@
     "heading": "Explore Up Movie illustrations",
     "paragraphs": [],
     "related": []
+  },
+  "background": {
+    "description": "Explore illustrated landscapes and ready-to-use backdrops, from spring meadows and snowy villages to science, music and seasonal frames.",
+    "lead": "Explore illustrated landscapes and ready-to-use backdrops, from spring meadows and snowy villages to science, music and seasonal frames.",
+    "intro": "Explore illustrated landscapes and ready-to-use backdrops, from spring meadows and snowy villages to science, music and seasonal frames.",
+    "heading": "Explore background illustrations",
+    "featured": [
+      "background-spring-meadow",
+      "background-school-chalkboard",
+      "background-baby-clouds",
+      "background-terracotta-arches",
+      "background-lunar-new-year"
+    ],
+    "chips": [],
+    "paragraphs": [],
+    "related": []
+  },
+  "border": {
+    "description": "Choose open frames, decorative corners and illustrated edges, including botanical, geometric, classroom and seasonal designs.",
+    "lead": "Choose open frames, decorative corners and illustrated edges, including botanical, geometric, classroom and seasonal designs.",
+    "intro": "Choose open frames, decorative corners and illustrated edges, including botanical, geometric, classroom and seasonal designs.",
+    "heading": "Explore border illustrations",
+    "featured": [
+      "border-openwork-art-deco-fan-corners",
+      "border-openwork-hexagon-terrarium-wire",
+      "border-openwork-watercolor-magnolia-crescent",
+      "border-openwork-pencil-ruler-school-corner",
+      "border-openwork-soccer-ball-net-corner"
+    ],
+    "chips": [],
+    "paragraphs": [],
+    "related": []
+  },
+  "zoo": {
+    "description": "Explore zoo visits through animal viewing, family outings, entrance signs and printable line drawings of visitor activities.",
+    "lead": "Explore zoo visits through animal viewing, family outings, entrance signs and printable line drawings of visitor activities.",
+    "intro": "Explore zoo visits through animal viewing, family outings, entrance signs and printable line drawings of visitor activities.",
+    "heading": "Explore zoo illustrations",
+    "featured": [
+      "zoo-visit-entrance-arch-animal-cutouts",
+      "zoo-visit-hippo-underwater-window",
+      "zoo-visit-lion-lookout-binoculars",
+      "zoo-visit-child-visitor-wagon",
+      "zoo-visit-night-lantern-tour"
+    ],
+    "chips": [],
+    "paragraphs": [],
+    "related": []
   }
 }

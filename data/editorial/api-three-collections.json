@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "topics": {
+    "background": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "4b5c838fce6a5c80f18c5b0f16eb62d7cc081bda8f376cedd43f2f8d427437ee",
+      "checkedAt": "2026-10-29T13:44:49.051Z",
+      "intro": "Explore illustrated landscapes and ready-to-use backdrops, from spring meadows and snowy villages to science, music and seasonal frames.",
+      "evidence": [
+        {
+          "id": "background-spring-meadow",
+          "imageSha256": "fb17cffaedc7d89a0ff5e9273d6a4cf2fc5bc99ec54d1f8dcc26f918da8e0732"
+        },
+        {
+          "id": "background-music-notes",
+          "imageSha256": "8d112ab1516751a742487047031305249152e39488cc31814430a80ad4d7a6b0"
+        },
+        {
+          "id": "background-lunar-new-year",
+          "imageSha256": "33c0149fce0655fdf36e467f701ff85ba442a97a5a03086de042da7cd52eed9c"
+        }
+      ]
+    },
+    "border": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "63b37a527efa0118179985dc8f66302668f05079ddac55f0549376af51519754",
+      "checkedAt": "2026-10-29T13:44:49.340Z",
+      "intro": "Choose open frames, decorative corners and illustrated edges, including botanical, geometric, classroom and seasonal designs.",
+      "evidence": [
+        {
+          "id": "border-openwork-art-deco-fan-corners",
+          "imageSha256": "5928cb40aa161c483e2354a50b6b5f49792242652b926232f2fbb9baf3730900"
+        },
+        {
+          "id": "border-openwork-desert-adobe-arch-tiles",
+          "imageSha256": "7f8cd0a8a3212976a202148fe5209dec7a0ea269e266c4eae2895e32d7cc4a0f"
+        },
+        {
+          "id": "border-openwork-soccer-ball-net-corner",
+          "imageSha256": "75098c5c30bb5391a825b5c22fea0311f5e122a379a36c38ad46d0a65a527359"
+        }
+      ]
+    },
+    "zoo": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "06baf7ec4e830bb2d1a427b506fa87847d2de434aad078c6075235b23c58a6dc",
+      "checkedAt": "2026-10-29T13:44:49.655Z",
+      "intro": "Explore zoo visits through animal viewing, family outings, entrance signs and printable line drawings of visitor activities.",
+      "evidence": [
+        {
+          "id": "zoo-visit-entrance-arch-animal-cutouts",
+          "imageSha256": "fa8f64d5615f8655ac891d8c7806e3a07ce2c495a397640ca0d26f256a08f542"
+        },
+        {
+          "id": "zoo-visit-orangutan-rope-observers",
+          "imageSha256": "6a4ddb8254b78b72b6e15270cb04c4fe2220dcd5c66c98c9748f01838f91f686"
+        },
+        {
+          "id": "zoo-visit-night-lantern-tour",
+          "imageSha256": "094047e4fadb47387147770baccda737bfbfeb9616f0df8c75e99710c016422b"
+        }
+      ]
+    }
+  }
+}

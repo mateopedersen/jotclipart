@@ -1,0 +1,4082 @@
+{
+  "wave": "wave_702",
+  "status": "AWAITING_CDN",
+  "actualExportedDrawings": 50,
+  "resumed": 31,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "border-openwork-art-deco-fan-corners",
+      "title": "Black and Gold Art Deco Frame",
+      "alt": "Tall open frame with black and gold fan ornaments at all four corners.",
+      "description": "Thin gold rules connect the stepped corner fans. The narrow rectangular opening suits a formal upright layout without covering its center.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-art-deco-fan-corners.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "6ecd195e26625077ee2682cc28f4b2dd432f27d56ce98b2af20e1c84b45cbf15",
+      "inputSignature": "bd2a2b69f21feb8b1f5957e97fda625eb5af13b3948bd95038e4bc328840f2f1",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 947844,
+        "weightedCmykRmse": 1.043468
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1116115,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1019594,
+          "weightedCmykRmse": 0.901922
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 947844,
+          "weightedCmykRmse": 1.043468
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        184,
+        58,
+        840,
+        966
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-art-deco-fan-corners.pdf",
+          "bytes": 947844,
+          "sha256": "1350ba2e5dad823505eda9ee2acad54df01558543e9bb044dbafad159a6a48bc"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-art-deco-fan-corners.webp",
+          "bytes": 603224,
+          "sha256": "5928cb40aa161c483e2354a50b6b5f49792242652b926232f2fbb9baf3730900"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-art-deco-fan-corners-thumb.webp",
+          "bytes": 31118,
+          "sha256": "5bc4824e9c7fc530ad3a43e88e3832955a5fd5cc82d05d0e0d9befaea2734a2c"
+        }
+      },
+      "proofSha256": "9d2b121df740ce3087b489b56073437d7bd5d3bb5b6d4a542d18f29071834c8f",
+      "pairMeanRgbDifference": 0.95993
+    },
+    {
+      "id": "border-openwork-engraved-certificate-oval",
+      "title": "Blue Engraved Oval with Medallion",
+      "alt": "Fine blue looping lines form an oval border with a small empty medallion below.",
+      "description": "Overlapping curves create a woven engraved appearance around the broad opening. A scalloped circular badge interrupts the lower edge.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-engraved-certificate-oval.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "2b2595c5dfc8e4e99cf0f39bd78e18a332f3ca68bdffce7e103e67c7cc43545d",
+      "inputSignature": "8ff2f46d546c3b5424daf7aeb23bba8d961ce9c10c611fbff6ef099204928209",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 880418,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 880418,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        53,
+        219,
+        972,
+        812
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-engraved-certificate-oval.pdf",
+          "bytes": 880418,
+          "sha256": "e7d48c47f871c77a39ac995018828c0828f46e6c0f33b8898737d1f01302e50a"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-engraved-certificate-oval.webp",
+          "bytes": 787666,
+          "sha256": "a55b4315238186073afb8f9ce3898f239be71545350fc26c544a4c09f51961a0"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-engraved-certificate-oval-thumb.webp",
+          "bytes": 46112,
+          "sha256": "8cfe7281e89ed93f899252a1371612d5e2a96a36f152aed0f964659857029d58"
+        }
+      },
+      "proofSha256": "0124e1d41124c694d958f167a89df26634469ca448ed211281685ab380482e64",
+      "pairMeanRgbDifference": 0.78591
+    },
+    {
+      "id": "border-openwork-botanical-ink-top-edge",
+      "title": "Black Botanical Divider",
+      "alt": "Black stems, grasses and seed heads rise from a straight horizontal baseline.",
+      "description": "Long narrow leaves alternate with round and branching flower heads. Their different heights create a lively silhouette above the fine lower rule.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_702/source/border-openwork-botanical-ink-top-edge.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "21c588271c912530ca1bbf0fb8514b040721d37799340853b6efde2671a3753c",
+      "inputSignature": "c6c1d332c21c2adad830057d332e53c7f94709f228a30a0ca644a16004c6216e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 300267,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 300267,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        56,
+        319,
+        965,
+        764
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-botanical-ink-top-edge.pdf",
+          "bytes": 300267,
+          "sha256": "c343e96a973952910f3a3274be2468243f508ed7a7f51f46b811bdaabf29a32e"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-botanical-ink-top-edge.webp",
+          "bytes": 308616,
+          "sha256": "70f85bc1511814b5409fcdaa59a09a97f60005a14585cc5e97b34302a4ac8e50"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-botanical-ink-top-edge-thumb.webp",
+          "bytes": 32590,
+          "sha256": "548eeb13644def6fbe7a8ebe241ac0920e68699d6c0fe0685a6c0439843fabfd"
+        }
+      },
+      "proofSha256": "f51bd0ec5eed9c62f183c93b5f778f6c0f04983e643718beb334fc70ddf92418",
+      "pairMeanRgbDifference": 3.04594
+    },
+    {
+      "id": "border-openwork-lace-doily-round",
+      "title": "Ivory Lace Circle",
+      "alt": "Ivory circular lace border with scalloped petal loops and pierced details.",
+      "description": "Small dotted lines follow the inner ring. Repeated open loops form a delicate edge around the clear circular center.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-lace-doily-round.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "cadff5f27f1bd5dad72b4f7afb0ac2b604975bb65deb6909db505e81eec9f9f2",
+      "inputSignature": "658d33aa69cec451af75872b65bca3642714b90486bbd064fcafe7aec4c54780",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 844827,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 844827,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        109,
+        71,
+        915,
+        914
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-lace-doily-round.pdf",
+          "bytes": 844827,
+          "sha256": "d9f08abea6f363dfe3f086793fed0091b86745915ee0529fed54ab697d16f5d8"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-lace-doily-round.webp",
+          "bytes": 723642,
+          "sha256": "613d5697aa0a2b275a142ab54e9a086c4501dfe01a94eae75f19c2432000a566"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-lace-doily-round-thumb.webp",
+          "bytes": 61906,
+          "sha256": "fc51fa2aa63ba07ab102829c732f86e67d290391ad5f62ef616af7cb82f626e4"
+        }
+      },
+      "proofSha256": "be06952fd016c0822a6fad50a36778b1e9a3612a86822206d6c831cc2890a8c0",
+      "pairMeanRgbDifference": 0.58177
+    },
+    {
+      "id": "border-openwork-filigree-corner-acanthus",
+      "title": "Golden Leaf Scroll Corner",
+      "alt": "Ornate golden corner with curling leaves, tapered tips and a small central rosette.",
+      "description": "The two arms sweep outward at a right angle. Dark recesses and bright ridges give the leafy ornament a raised metallic appearance.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-filigree-corner-acanthus.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "474109819c86a4a2f295845011e29b2825022a543d529e6c706aada758660d40",
+      "inputSignature": "10824d43ef87dbf64a8a915f03c34eeccba4d9f388cacba18773ef361f3da9d2",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 691608,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 691608,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        132,
+        117,
+        930,
+        935
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-filigree-corner-acanthus.pdf",
+          "bytes": 691608,
+          "sha256": "05ac5b5fc5349ef5d32101c84bf025f4229438f36259ebbafdb95d4e5b801d6a"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-filigree-corner-acanthus.webp",
+          "bytes": 673684,
+          "sha256": "4c626ce6428b931d16feadfe8862ca16878bd35852f39b45469a640d74b6988a"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-filigree-corner-acanthus-thumb.webp",
+          "bytes": 38546,
+          "sha256": "e90921f199a0eb54d5b7ab52ce3b6cda9d1a1f60a086e578dc6b925c1bd570a0"
+        }
+      },
+      "proofSha256": "4076d623379fd4861ce97b38bc866fa7403da2589efb7417b2e328c2ce0a5592",
+      "pairMeanRgbDifference": 1.11564
+    },
+    {
+      "id": "border-openwork-nautical-knot-rectangle",
+      "title": "Rope Frame with Blue Anchor",
+      "alt": "Cream rope forms a rectangular frame with knotted corners and a hanging blue anchor.",
+      "description": "Twisted strands run along each side of the opening. The small anchor hangs from a loop at the middle of the lower rope.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-nautical-knot-rectangle.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "0eccd72f7745c5ace076a8f38b94bc850b7ddab1eb2e89bb4ea22d53b0f6b0e3",
+      "inputSignature": "46d6542e341a2cdda3969cc40b01741e0944d15405f036353612fd08433c06fa",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 900941,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 900941,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        53,
+        128,
+        980,
+        948
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-nautical-knot-rectangle.pdf",
+          "bytes": 900941,
+          "sha256": "f1a6f3009d4b54459f335b89bd11d3790a6f4083b408f67dc02169881edb8edb"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-nautical-knot-rectangle.webp",
+          "bytes": 738974,
+          "sha256": "72dea369205b6d22843ae51a7692e89e4bd8f82899b90cab035e9d2dff683d87"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-nautical-knot-rectangle-thumb.webp",
+          "bytes": 48144,
+          "sha256": "9a1f6c16ad722ee3ce589391df58c9ef200a585b95745ce29f7b1cf230ec66ee"
+        }
+      },
+      "proofSha256": "5f85dbcdc588fff06a3bade9d04e799115d8d156790929fe0ead14b6ab9d9357",
+      "pairMeanRgbDifference": 0.93973
+    },
+    {
+      "id": "border-openwork-stitched-denim-pocket-edge",
+      "title": "Stitched Denim U Border",
+      "alt": "Indigo denim seam forms a U-shaped border with amber stitching and copper-colored rivets.",
+      "description": "Two parallel stitch rows follow the curved lower corners. A small folded fabric tab protrudes from one side of the open frame.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-stitched-denim-pocket-edge.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "ad6101778590d639f372ccbabaf74543055386159044b685c384d59038ff4cf8",
+      "inputSignature": "84ccd594b30943f8f9b7244641eb205416bae8de6ac30d227c454a11d4ef317a",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 827702,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 827702,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        87,
+        224,
+        974,
+        872
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-stitched-denim-pocket-edge.pdf",
+          "bytes": 827702,
+          "sha256": "6026a3d13baa1e12f412bac67cf5eb1e4e322816eb47d02695c8460607eef479"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-stitched-denim-pocket-edge.webp",
+          "bytes": 616458,
+          "sha256": "e04b02d2380ceff32e0c4a749a43de866abd3e6b16447b682aab530ce6b92ade"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-stitched-denim-pocket-edge-thumb.webp",
+          "bytes": 27174,
+          "sha256": "d7f7223925c634cda13e8c0def97ceaa793642abedc664d76a9e1e0e225ad4d9"
+        }
+      },
+      "proofSha256": "c827b901f5cf0b3d4a17d78470b812383ebb7d33ef59e3521c38c3d56841a561",
+      "pairMeanRgbDifference": 0.71719
+    },
+    {
+      "id": "border-openwork-embroidered-folk-heart",
+      "title": "Folk Floral Heart Border",
+      "alt": "Red and navy flowers with mustard leaves form an open heart border.",
+      "description": "The floral branches meet at a small pointed cluster below. Tiny diamonds and curled leaves balance the upper lobes.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-embroidered-folk-heart.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "33b10e32e80d3514e31768a2b7e4fe774e4902d196d781d655b1958c5c1174dd",
+      "inputSignature": "57ea174a07815edfd71dc4f3854d355c1432db37923f271985ab08eae2783d8d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 936159,
+        "weightedCmykRmse": 1.095676
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1142944,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1005315,
+          "weightedCmykRmse": 0.898723
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 936159,
+          "weightedCmykRmse": 1.095676
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        84,
+        115,
+        939,
+        933
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-embroidered-folk-heart.pdf",
+          "bytes": 936159,
+          "sha256": "201f98cc6b931b1f0226e939e07202a36c8274d1700f8d842c7453b004ef0492"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-embroidered-folk-heart.webp",
+          "bytes": 828984,
+          "sha256": "46ca503b7700f1716d4adbac4c522983d1d917e40eccb0d39fa28ccbc97ae27b"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-embroidered-folk-heart-thumb.webp",
+          "bytes": 62300,
+          "sha256": "c633449ed6c6d4646f6b9c0e07757a4c07686195f9830eac95bff8e37b6102c7"
+        }
+      },
+      "proofSha256": "ed874fe1b81309f80628afecc38565285c32a15a8a4325c653bcdfcd537090c0",
+      "pairMeanRgbDifference": 1.88689
+    },
+    {
+      "id": "border-openwork-origami-paper-cranes-arch",
+      "title": "Paper Crane Arch",
+      "alt": "Six folded-paper cranes follow a fine curved line to form an open arch.",
+      "description": "Teal, rust and ivory birds alternate in size and wing position. Their angular folds create a light decorative arc.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-origami-paper-cranes-arch.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "bb422b4984340c786ca3258d48be64a0dceceacf3dcae778ce334b5c022f80c5",
+      "inputSignature": "075de3f67041a3c6ccc6e85037deafa74df21ed5423df49284dceeef1a366504",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 532020,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 532020,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        31,
+        198,
+        1000,
+        779
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-origami-paper-cranes-arch.pdf",
+          "bytes": 532020,
+          "sha256": "d570c1ff328fcfc377910cd889e1cf0f28a581140885ea794b75b8c8fda13f1d"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-origami-paper-cranes-arch.webp",
+          "bytes": 569726,
+          "sha256": "f5f960580423f38dd06c374ba05288dd67143b3b715fc3febf115726fa932569"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-origami-paper-cranes-arch-thumb.webp",
+          "bytes": 28982,
+          "sha256": "3f285d03655bb2845c6748c341596c38e44d9164e59704aa96bf2eb065fd94f2"
+        }
+      },
+      "proofSha256": "041f4a583f2851c3527f6f2db8a19c9b174bed31cb4cdc01dc15ec5e0618c53f",
+      "pairMeanRgbDifference": 0.43435
+    },
+    {
+      "id": "border-openwork-quilled-paper-teardrop",
+      "title": "Curled Paper Teardrop Border",
+      "alt": "Burgundy, cream and copper paper curls form a teardrop-shaped open border.",
+      "description": "Tight spirals alternate with elongated loops along the sides. A pointed folded loop closes the top while rounded curls gather below.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-quilled-paper-teardrop.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "37caa038401e0225fd04988bf7ce187ab3f956dcb34dfbae140b6a733f3a5919",
+      "inputSignature": "c7ee7033079da5e9174c059633e95c21a38e352e176f010846cc9e011ad37032",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 787192,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 787192,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        180,
+        51,
+        844,
+        971
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-quilled-paper-teardrop.pdf",
+          "bytes": 787192,
+          "sha256": "a6fd492a64e3ecb6c1571afbe865baa438df9ff6aa0216fb90c52a9e1377b7c4"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-quilled-paper-teardrop.webp",
+          "bytes": 718554,
+          "sha256": "ae7d53196faeae96824599f43b0f01c31a787a41a2235930c4638870c15ae861"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-quilled-paper-teardrop-thumb.webp",
+          "bytes": 46382,
+          "sha256": "6c8fdac901b63cb4cf5693fe4bd44167ecb508d3fa13e7ba0a396da230e6cb71"
+        }
+      },
+      "proofSha256": "c4f20a5fd8f1f801d0f0051b337bc2de99729839284580892ff3af207b087f92",
+      "pairMeanRgbDifference": 1.29228
+    },
+    {
+      "id": "border-openwork-hexagon-terrarium-wire",
+      "title": "Copper Hexagon with Succulents and Crystal",
+      "alt": "Thin copper hexagon frame holds succulents at one corner and a hanging crystal at another.",
+      "description": "Small green rosettes and trailing round leaves cluster at the lower left. A clear pointed pendant hangs inside the upper-right edge.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-hexagon-terrarium-wire.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "8fb86c5ddb867748680b420b2a13f9b55abc482bb14f1c9541f3718e4d981582",
+      "inputSignature": "f8a934d4412569622f2d4d6a0821ae7589264364021eefc1006179fb8752fa4c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 48,
+        "losslessCmyk": false,
+        "bytes": 973662,
+        "weightedCmykRmse": 1.630869
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1321608,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1194082,
+          "weightedCmykRmse": 0.850553
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1121382,
+          "weightedCmykRmse": 0.975482
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 1045056,
+          "weightedCmykRmse": 1.270336
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 48,
+          "losslessCmyk": false,
+          "bytes": 973662,
+          "weightedCmykRmse": 1.630869
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        93,
+        147,
+        930,
+        911
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-hexagon-terrarium-wire.pdf",
+          "bytes": 973662,
+          "sha256": "766437b26db9a4a4f704d3ef361998853116c4c46bbc93b92143c9bc7bd99e00"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-hexagon-terrarium-wire.webp",
+          "bytes": 682818,
+          "sha256": "ab04e82b81296b8bf54983ba8f6e6f8010452e7eeb42dcd782af948387ead2f6"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-hexagon-terrarium-wire-thumb.webp",
+          "bytes": 44736,
+          "sha256": "c09901686564d059df5d59c86fbe01bc4297c43fc2d0aba11fea1dee0adb2162"
+        }
+      },
+      "proofSha256": "da403b21105538640cb87aa11a16635f1df63db4dd7954a35979b85ea0512b9f",
+      "pairMeanRgbDifference": 0.99172
+    },
+    {
+      "id": "border-openwork-beaded-jewel-oval",
+      "title": "Pearl and Blue Gem Oval",
+      "alt": "Pearl-like beads and small blue stones form an oval with a blue teardrop pendant below.",
+      "description": "Silver-colored settings separate the alternating beads. The larger drop hangs beneath a small jeweled connector at the base.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-beaded-jewel-oval.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "457e62139fd81280e3e336f95f4fadcb6f481518225d0d5a5f798cfced69d14f",
+      "inputSignature": "73773a29de85a914f8eaa13c4d53e9a9dfaa07b526d69b8bd81552604897d4ba",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 514891,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 514891,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        234,
+        50,
+        791,
+        975
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-beaded-jewel-oval.pdf",
+          "bytes": 514891,
+          "sha256": "2def37c294bb86f0ff756f8aed60e65470b09366a2d890c23e4e33c8eb92357b"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-beaded-jewel-oval.webp",
+          "bytes": 595754,
+          "sha256": "fcaa3e94a16dad6bd5ff196fafcd7153446cdb1b3376c5db534da3edf4b77969"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-beaded-jewel-oval-thumb.webp",
+          "bytes": 31458,
+          "sha256": "ef36afdd7b05b182eee3cb9eed14e20afcdb005bff40530783098698b6886001"
+        }
+      },
+      "proofSha256": "5dda8f9e69713f424da6ea4787fba88af65b6a4a68b731124d419003417dc7fb",
+      "pairMeanRgbDifference": 0.80122
+    },
+    {
+      "id": "border-openwork-brass-library-bookplate",
+      "title": "Golden Scroll Frame with Blank Shield",
+      "alt": "Slim golden rectangular frame has curled corners and a small empty shield below.",
+      "description": "The upper corners curl inward while leaf-like lower ornaments sweep toward the shield. Thin straight rules leave a broad clear opening.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-brass-library-bookplate.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "66e98cb45973eb56190672c600b3c292bba12de2cc826c4af305f9a9b5989473",
+      "inputSignature": "97ebe8e1286deb80f7d826ad693e888fc9d6e33fa12a43e8756b2413c2daf248",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 50,
+        "losslessCmyk": false,
+        "bytes": 987410,
+        "weightedCmykRmse": 1.256603
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1179075,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1125582,
+          "weightedCmykRmse": 0.855472
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1053367,
+          "weightedCmykRmse": 1.03665
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 987410,
+          "weightedCmykRmse": 1.256603
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        203,
+        103,
+        821,
+        949
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-brass-library-bookplate.pdf",
+          "bytes": 987410,
+          "sha256": "5fce6e27109a7832ca45217c570ffec11a7ace6e7faf5d2a05b5f4c608352e74"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-brass-library-bookplate.webp",
+          "bytes": 618728,
+          "sha256": "3afd68a98b35df89ba63c61c037fe78d0c51c10e51524c376681d4968fe840b1"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-brass-library-bookplate-thumb.webp",
+          "bytes": 31952,
+          "sha256": "2bd83d5df147819b3b1d9f98d49c13601e1dc4c2bba90da62e5d40c537262512"
+        }
+      },
+      "proofSha256": "a5362b425c7eb178c2ae2821f6bfe3edda48e0fb9a1b90a86767b565f6bc2c45",
+      "pairMeanRgbDifference": 0.82627
+    },
+    {
+      "id": "border-openwork-baroque-silver-cartouche",
+      "title": "Silver Scroll Cartouche",
+      "alt": "Silver ornamental border has a shell crest, curled sides and sweeping lower tails.",
+      "description": "Bright ridges and dark grooves emphasize the raised scroll shapes. The opening narrows toward the elaborate split base.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-baroque-silver-cartouche.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "afba2449389737b7573852c5b813990080a5e98c003a12ba6e88125918e6b1bf",
+      "inputSignature": "ca166b30688ae8078482e495efbdbb096612b61ab22bbe6abed9c946f4bb4e24",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 662475,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 662475,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        198,
+        57,
+        825,
+        975
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-baroque-silver-cartouche.pdf",
+          "bytes": 662475,
+          "sha256": "bd27d1da679d42a52de79d333f0291c3865157ba53f232f8f8c6b39a4d0b4b30"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-baroque-silver-cartouche.webp",
+          "bytes": 621500,
+          "sha256": "e90c6892c8fce31c531589cf5fb3d9cbaa180222a73b4d0ebee126dd4066c0a9"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-baroque-silver-cartouche-thumb.webp",
+          "bytes": 37898,
+          "sha256": "fbc22775338b288fd1798d1e474e50efd296b3a2302168a9b0a530306f9f8e8d"
+        }
+      },
+      "proofSha256": "041778f425685ee74fb320e6b4d0f2985b8ffe137086ede34729a624a7c94563",
+      "pairMeanRgbDifference": 0.88932
+    },
+    {
+      "id": "border-openwork-bamboo-ink-square",
+      "title": "Bamboo Frame with Leaf Sprays",
+      "alt": "Four bamboo stems form a square frame with green leaf sprays in opposite corners.",
+      "description": "Visible joints break up the pale tan stems. The leaves extend both inward and outward at the upper left and lower right.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-bamboo-ink-square.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "884b83ada1f2a7da3be3e96ca145ce4655d6969e3d917f9780e25a3d7c038e48",
+      "inputSignature": "d37f85c79720e9d98efed170f2ac31d128fe18d10fcec7a3d365f97efb6aa894",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 50,
+        "losslessCmyk": false,
+        "bytes": 981382,
+        "weightedCmykRmse": 1.20317
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1390087,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1143015,
+          "weightedCmykRmse": 0.867802
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1069232,
+          "weightedCmykRmse": 0.98498
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 981382,
+          "weightedCmykRmse": 1.20317
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        75,
+        48,
+        991,
+        967
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-bamboo-ink-square.pdf",
+          "bytes": 981382,
+          "sha256": "38b4d99da9376df9373e59f2d0c1dcbc5abfce072cfcd0337e2a2c5540d3b9b1"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-bamboo-ink-square.webp",
+          "bytes": 748378,
+          "sha256": "a8413e7eed7288e18c31908ec265a67dd7b6831e2ce4cc62adcf1a02fbe30a6f"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-bamboo-ink-square-thumb.webp",
+          "bytes": 64188,
+          "sha256": "e823fcdb8bedb9ad217455d3bc8cb859161712eb769b3ce413b65862e9f9a02b"
+        }
+      },
+      "proofSha256": "1d2a4ef26acb558bb1cf78a6f9a855a45648109920e17e10e275e405fdb89596",
+      "pairMeanRgbDifference": 1.22501
+    },
+    {
+      "id": "border-openwork-desert-adobe-arch-tiles",
+      "title": "Terracotta Mosaic Arch Border",
+      "alt": "Open rounded arch border made of orange mosaic tiles with blue geometric insets.",
+      "description": "Pale grout lines divide the small warm-colored tiles. Blue diamonds and tiny squares interrupt the pattern around the tall opening.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-desert-adobe-arch-tiles.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "3f7e6c0412647654c6db434e3640206b0efc0adaf7450743db4f475411284733",
+      "inputSignature": "262b4a025e12681c342e418171c2609f8be4efb0c7080fb107229a003384cecb",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 835151,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 835151,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        266,
+        60,
+        759,
+        964
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-desert-adobe-arch-tiles.pdf",
+          "bytes": 835151,
+          "sha256": "cfc6cd67625c865a61760fb0036282e124db7f53c5aa2ff44aa94c59925e0050"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-desert-adobe-arch-tiles.webp",
+          "bytes": 726010,
+          "sha256": "7f8cd0a8a3212976a202148fe5209dec7a0ea269e266c4eae2895e32d7cc4a0f"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-desert-adobe-arch-tiles-thumb.webp",
+          "bytes": 35834,
+          "sha256": "a0e59664f80cf19f69ff09669d121adbb3f957b6b9cf1d32cd39f23491d298e2"
+        }
+      },
+      "proofSha256": "f74ba07154bbc5f7f6de30ae414ef78cbf483d9b81e74b4feba932bcd624fda0",
+      "pairMeanRgbDifference": 0.97647
+    },
+    {
+      "id": "border-openwork-mid-century-orbit-circles",
+      "title": "Mid-Century Ring and Starburst Oval",
+      "alt": "Thin teal and gold rings with small starbursts form a horizontal oval border.",
+      "description": "Larger circles occupy the sides while smaller linked rings stretch across the top and bottom. Tapered black spokes add contrast among the gold accents.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-mid-century-orbit-circles.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "957eda97f264089da0496b5e083e20060ac5175cc4e701e21b011212c9588fed",
+      "inputSignature": "b7e356c404adfabe49ce9b8ec3c3dd98a2f2b2cadf49ce2910d1a4cef66b8bac",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 911599,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 911599,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        27,
+        271,
+        996,
+        781
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-mid-century-orbit-circles.pdf",
+          "bytes": 911599,
+          "sha256": "7cbbb09d81f635ceea6701d27e970aac964dbda6b8625ca5e25bbcf4d9d76d9b"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-mid-century-orbit-circles.webp",
+          "bytes": 638658,
+          "sha256": "3370acbbe3fc0ade142bbbf89354664f093241185cf65f3f45669c1520f544a0"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-mid-century-orbit-circles-thumb.webp",
+          "bytes": 49400,
+          "sha256": "1a2bd559a4cb133bbee985d5ebf6add91ea58314e75726962667d9211d47ae65"
+        }
+      },
+      "proofSha256": "9bbd163c6ebadd745e020bf5195624e5e25ba6280260887146e4da8b369fc6be",
+      "pairMeanRgbDifference": 1.15638
+    },
+    {
+      "id": "border-openwork-irregular-speech-outline",
+      "title": "Double-Line Speech Balloon",
+      "alt": "Black double-line oval speech balloon with a pointed lower-left tail.",
+      "description": "The two slightly uneven contours follow the oval and its small tail. The empty opening leaves space for a short message.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_702/source/border-openwork-irregular-speech-outline.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "9a3af863b647c2f2bf893222c6cd4d9b9c6ddbeda85c604737a338f8031b74e2",
+      "inputSignature": "09672b20d636a27fc39cf5a9bfb1dc8ab5091b6bac583e05ec5cda15ba3e1b65",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 123287,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 123287,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        95,
+        203,
+        939,
+        871
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-irregular-speech-outline.pdf",
+          "bytes": 123287,
+          "sha256": "aa92a47133e1d0c20c4941085a917e3578a49f0c2c9b8735f0c4ddcc74092c1c"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-irregular-speech-outline.webp",
+          "bytes": 198132,
+          "sha256": "f13b354b4828c0ba5ef19b8f2b347ea441fae8c747b0d5aae7062df9e7b311a2"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-irregular-speech-outline-thumb.webp",
+          "bytes": 13808,
+          "sha256": "5bb0710d192492a832df057f686d8c4a3ebe9ca186ed82903e8a9e559de46145"
+        }
+      },
+      "proofSha256": "a0a221437ddddcf8fa1f58d5ec9379fc83b26f7f4e38c489e478a24e425a9c48",
+      "pairMeanRgbDifference": 1.94418
+    },
+    {
+      "id": "border-openwork-notched-postage-stamp",
+      "title": "Perforated Stamp Frame with Fern",
+      "alt": "Tall cream stamp-shaped border with perforated edges, a green inner rule and a tiny fern.",
+      "description": "Small regular notches follow the outer rectangle. A paired fern detail sits just inside the top edge above the empty center.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-notched-postage-stamp.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "dd2e2e0a77d20900ba96b886936094695304c3a3dfa3d28676fb8129b72035ec",
+      "inputSignature": "bdb705ceedf1e5454c43af9f96d2d875fa862eaeac8a1a1e3597e130766885f7",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 784919,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 784919,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        270,
+        88,
+        754,
+        937
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-notched-postage-stamp.pdf",
+          "bytes": 784919,
+          "sha256": "1e46e084a96364296d9ee449fd5fe099dfa73bf6f48de0ce36290816b412bdf8"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-notched-postage-stamp.webp",
+          "bytes": 567710,
+          "sha256": "979ebcb5949b06e680f08f1c051bc9b98dff302ca86faaf77367957ac724de8d"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-notched-postage-stamp-thumb.webp",
+          "bytes": 41284,
+          "sha256": "73a8a20f31617b9c1ca4fe3ff6b466a6527aacca3b19e78f177537747286a516"
+        }
+      },
+      "proofSha256": "80b08649f7261ac115a90e98fb907426aa6794b4a6e172e062a185604cd58d93",
+      "pairMeanRgbDifference": 0.84347
+    },
+    {
+      "id": "border-openwork-folded-banner-bottom-edge",
+      "title": "Burgundy Folded Ribbon Divider",
+      "alt": "Long burgundy ribbon has stitched cream edges, layered ends and small brass-colored fasteners.",
+      "description": "The broad center remains blank between the folded side loops. Pointed swallowtail ends extend from both sides.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-folded-banner-bottom-edge.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "37ec59d105f0fd03946a301190eec3dffbf9d38919a0a02c5cdec8341b309c51",
+      "inputSignature": "f9907c4c31b6d11f20433ce96ea2083fe15435068fb86f5bbf9eb8585ed4a429",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 283148,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 283148,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        47,
+        439,
+        977,
+        625
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-folded-banner-bottom-edge.pdf",
+          "bytes": 283148,
+          "sha256": "fa81d72509ac4e8f304c81372f6064b90b99dccda1de2019e0fbb315b6bd7051"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-folded-banner-bottom-edge.webp",
+          "bytes": 431900,
+          "sha256": "b2b59e615b456dec1313c2e7b3441fc34d4a9439ca04ee1a3a6d8effb2b590ff"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-folded-banner-bottom-edge-thumb.webp",
+          "bytes": 14282,
+          "sha256": "d33b603a5b68ffe28d66d5f70f21dd10dd995adf0f22f882205db3b359078e7e"
+        }
+      },
+      "proofSha256": "d91d52161e73a8fd2e9f8d46ad712eab2eb1555618849e4b39e1507607990b50",
+      "pairMeanRgbDifference": 1.07106
+    },
+    {
+      "id": "border-openwork-watercolor-magnolia-crescent",
+      "title": "Cream Flower Crescent",
+      "alt": "Large cream flowers and dark green leaves follow a sweeping crescent branch.",
+      "description": "Smaller buds extend toward the two tips. The broad blossoms cluster along the lower left while glossy leaves fill the gaps.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-watercolor-magnolia-crescent.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "8d77636fe692e3bf07dc9c53f82250c2dd8824c21d605ff6e984d8bc8655d9c8",
+      "inputSignature": "94b432fd062ef8b11edeaec962a412bbbe3b6e0f2add87c8275dae759e9b3c4e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 744611,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 744611,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        97,
+        54,
+        751,
+        985
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-watercolor-magnolia-crescent.pdf",
+          "bytes": 744611,
+          "sha256": "810f216a1dabf0608e457972e6cea9fe5f86fb72500479edffc5f59c7ab459bf"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-watercolor-magnolia-crescent.webp",
+          "bytes": 682800,
+          "sha256": "5017313801999fe2adffd45b41f07a4f5344c3da4e4a030c33951927e09106f7"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-watercolor-magnolia-crescent-thumb.webp",
+          "bytes": 42676,
+          "sha256": "a1c8a5c74667d705e8dcfef12bd0dd07f62dcdc0d02351e5668ac545a085053e"
+        }
+      },
+      "proofSha256": "0ad250ae747d56eef2722781353001aef6bd858711c7285342e08a242e5c057b",
+      "pairMeanRgbDifference": 1.21817
+    },
+    {
+      "id": "border-openwork-pressed-fern-bookmark",
+      "title": "Fern and Seed-Head Vertical Border",
+      "alt": "Fine fern fronds and small brown seed heads follow a narrow upright stem.",
+      "description": "The sprigs alternate from side to side with uneven spacing. Delicate leaflets create a light vertical accent rather than a filled panel.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-pressed-fern-bookmark.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "ca49e0f103ff537fe7d3fb6dab6138a2f3e76004a9a9361c87d1e8c4d01aa6b5",
+      "inputSignature": "2bc350839aabf5b51f3a1d79aea59bf5c47ef654ed834a8930075a3b8ea67d12",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 734752,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 734752,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        452,
+        28,
+        590,
+        1004
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-pressed-fern-bookmark.pdf",
+          "bytes": 734752,
+          "sha256": "2712080bb5f273d373f19cde22a92ae9e21204d60840361dc74404959dcc5f73"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-pressed-fern-bookmark.webp",
+          "bytes": 563824,
+          "sha256": "4c1a8b2debdccd59625f108fd11c32524ccdc615c58cc987371fe8faa33c0bae"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-pressed-fern-bookmark-thumb.webp",
+          "bytes": 33884,
+          "sha256": "cd798937b6f98dcfa66544694991f13d9445b096f48cfba55c56d01f23852904"
+        }
+      },
+      "proofSha256": "469daeefad087b1a36be5805e5bb9457231b1ef0bb8a3993d131f5b337d704b1",
+      "pairMeanRgbDifference": 0.51864
+    },
+    {
+      "id": "border-openwork-wild-grape-vine-window",
+      "title": "Grapevine Window Border",
+      "alt": "A rectangular grapevine frame with green leaves and two purple grape clusters.",
+      "description": "Twisting brown vines and curled tendrils connect the corners. The grape clusters sit diagonally opposite one another, leaving an open center.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-wild-grape-vine-window.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "d274b88afc866ddc5aba782f000b5a1420b3c952f33dcf114b676dbc55c2d6d9",
+      "inputSignature": "1f80a663a211dcd4b271f7f3879ac1318b4b787cd97cdd638c73070bfc1c0835",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 50,
+        "losslessCmyk": false,
+        "bytes": 949234,
+        "weightedCmykRmse": 1.242443
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1271003,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1090791,
+          "weightedCmykRmse": 0.843896
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1019079,
+          "weightedCmykRmse": 1.01837
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 949234,
+          "weightedCmykRmse": 1.242443
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        42,
+        38,
+        1000,
+        978
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-wild-grape-vine-window.pdf",
+          "bytes": 949234,
+          "sha256": "6f57f35c13fcb3479dc32bc7d439e7b5657c5d6c30b53e6a6707723b335a396c"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-wild-grape-vine-window.webp",
+          "bytes": 939072,
+          "sha256": "c5f12a3a226cc515ba72675a92137ac03b79f00129198695ae38a1e16192f6b9"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-wild-grape-vine-window-thumb.webp",
+          "bytes": 75558,
+          "sha256": "67a4e73ff39d240293a4b9316910b051e67ca4f34d5b137e2feac0187623debc"
+        }
+      },
+      "proofSha256": "6d228c3cdcd801061a0775eceb9cc397c21cc937ef95f97d9bf1fde91746fb18",
+      "pairMeanRgbDifference": 2.63681
+    },
+    {
+      "id": "border-openwork-orchid-corner-cascade",
+      "title": "Purple and White Orchid Cascade",
+      "alt": "Purple and white orchid flowers cascade down a slender stem with pointed green leaves.",
+      "description": "Small unopened buds extend above and below the blossoms. The loose vertical arrangement keeps each flower's shape distinct.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-orchid-corner-cascade.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "b8f67f1644337c9f270e4166b0cd9805052297fdb29958073796b026b4cd9df0",
+      "inputSignature": "4890fb44fdf81125a412156501553c46de23055416e2780fb58c168db80276ec",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 799943,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 799943,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        358,
+        38,
+        981,
+        989
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-orchid-corner-cascade.pdf",
+          "bytes": 799943,
+          "sha256": "52aca191ccb750e52bf1ffb662836485317e626605d65e644da3ee16a26be34c"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-orchid-corner-cascade.webp",
+          "bytes": 691840,
+          "sha256": "72c73303bdaf689078dc740362da598f01b5325322f4ac99d7e3fee9aedd3532"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-orchid-corner-cascade-thumb.webp",
+          "bytes": 54918,
+          "sha256": "5f18fc8859273a941a0e3b29c28ba5222f6602c84f7be9f7f699654048fce7ef"
+        }
+      },
+      "proofSha256": "6928d66cd5f14bcddb92e6c1908921482092b66871b1c8b3ccf68ca934d0f9b5",
+      "pairMeanRgbDifference": 1.85749
+    },
+    {
+      "id": "border-openwork-seashell-sand-dollar-garland",
+      "title": "Seashell and Blue Pendant Garland",
+      "alt": "Cream shells, sand dollars, blue pendants and a pink conch hang from a curved cord.",
+      "description": "The larger pink shell drops beneath the middle of the line. Different shell shapes alternate along the gently sagging natural-colored cord.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-seashell-sand-dollar-garland.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "12a903c31e362eda5cf9f6da7ff0b07604d422f9d59b9f7b4053dcc7ec963715",
+      "inputSignature": "a01d115cd8380064f6748261b463dec44a1e1826fd3a93f7551ea00d63a2f5de",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 458691,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 458691,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        28,
+        339,
+        994,
+        750
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-seashell-sand-dollar-garland.pdf",
+          "bytes": 458691,
+          "sha256": "f480ae99cd728fbaed83ca88b53c914fa4606efef8855fc12b35af44fafde543"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-seashell-sand-dollar-garland.webp",
+          "bytes": 572112,
+          "sha256": "4fb54e3bafa72f205ca12afd3233be264c10f8d2e87409c00290c0431cad7e1e"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-seashell-sand-dollar-garland-thumb.webp",
+          "bytes": 35136,
+          "sha256": "28b6d9f18c65307a262b690699a609f093b08142716d41c009ee1b9cd774917d"
+        }
+      },
+      "proofSha256": "999fe862c27b2700aa0deaf037941b7e248c93b7f8b905db02f99a45585ec16e",
+      "pairMeanRgbDifference": 0.42857
+    },
+    {
+      "id": "border-openwork-coral-seahorse-round",
+      "title": "Coral and Seahorse Circle",
+      "alt": "Peach coral and pale blue sea fans form a circular border with a small seahorse.",
+      "description": "The seahorse curls beside the lower-right arc. Fine branching fans alternate with thicker coral shapes around the clear center.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-coral-seahorse-round.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "9559d56f326d22251ad52dec93fe9744591304b79b1209a2ace4b815b1673a17",
+      "inputSignature": "ee61713da6913603a8af56eb26027717301343ee4f4734070ebee1ccbdc5bb8e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 985907,
+        "weightedCmykRmse": 1.011658
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1306905,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1057855,
+          "weightedCmykRmse": 0.822515
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 985907,
+          "weightedCmykRmse": 1.011658
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        55,
+        51,
+        975,
+        963
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-coral-seahorse-round.pdf",
+          "bytes": 985907,
+          "sha256": "8d8cd0e91538507030d2aa8d89cbd7369435c797f0b37413c4f10eea2f03f69b"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-coral-seahorse-round.webp",
+          "bytes": 1081778,
+          "sha256": "78e2d49c14fffeedc8e71ca825e3a1b7776d117476bfe1db0e5e30efed0e9365"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-coral-seahorse-round-thumb.webp",
+          "bytes": 88774,
+          "sha256": "34cc813ca0da2bfa94aeb07a86e3a6e020b70cf449b620628083c47fb53284ce"
+        }
+      },
+      "proofSha256": "f6e58cff4be109af0dad7fe18cf13be8ba5be1cb9a2843a7e96a4eab83346507",
+      "pairMeanRgbDifference": 1.39695
+    },
+    {
+      "id": "border-openwork-butterfly-wing-corner",
+      "title": "Butterfly Vine Corner",
+      "alt": "Three different butterflies perch around a curved green vine corner.",
+      "description": "Spotted orange, pale blue and cream wings appear at different angles. Small leaves follow the vine's long lower curl.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-butterfly-wing-corner.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "667c0d3273f51baff0e9ed3c4cabb7f30bf515630e76cc8658c94e43f2c49a39",
+      "inputSignature": "e937f0429616334bf2eb13660118f68b2a12191a28c603ab57e3fb5f79a33b34",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 802716,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 802716,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        77,
+        51,
+        942,
+        954
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-butterfly-wing-corner.pdf",
+          "bytes": 802716,
+          "sha256": "ffc7f639b89af843b455e520f3e9cc336eab0ed59c9f8fbe03920801b209a226"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-butterfly-wing-corner.webp",
+          "bytes": 654008,
+          "sha256": "8078ce1b51f4873441734210a9463178881d8db87b44334e688cb1b93547c966"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-butterfly-wing-corner-thumb.webp",
+          "bytes": 43038,
+          "sha256": "b8cb596014497c1b3a56ae5c1c3c72af7d654c322c9418500c1f6edb2133bf1b"
+        }
+      },
+      "proofSha256": "21667cc47f06d039acb00b690f72f4706a0a76e0a7f60cc475c14dcdc9868178",
+      "pairMeanRgbDifference": 1.4676
+    },
+    {
+      "id": "border-openwork-feather-crescent-ink",
+      "title": "Black Feather Crescent",
+      "alt": "Layered black-and-white feathers curve into an open crescent with a tied lower tip.",
+      "description": "Fine lines trace the feather barbs along the sweeping outer edge. Dark quills overlap where the feathers gather below.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_702/source/border-openwork-feather-crescent-ink.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "0cb490c1ff0ba3edb7059499d9e8e778e50e620e0762cfb254a73b193e7159ee",
+      "inputSignature": "b182b1e642a077ca1172a9231a837721dc8e116f2f89ebd1258a08fae3839590",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 799765,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 799765,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        185,
+        69,
+        781,
+        979
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-feather-crescent-ink.pdf",
+          "bytes": 799765,
+          "sha256": "2ba9485cb6a196db58e2cd42bf6f75e895218401cd0960f48f09c58e743085ee"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-feather-crescent-ink.webp",
+          "bytes": 665458,
+          "sha256": "b1a9f6eb666f9df181108e1b2998b58d211011aa129bbf4d52c950c5ac9fef67"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-feather-crescent-ink-thumb.webp",
+          "bytes": 34864,
+          "sha256": "3e50911e5c4d50eee896f3613bdeaebbd9f97db665ae229834700251dc2d111a"
+        }
+      },
+      "proofSha256": "b3bcb3893a453c01b42b292562061ba0fe7c0e6d0fdc747f8e09b49a26cabb96",
+      "pairMeanRgbDifference": 1.09926
+    },
+    {
+      "id": "border-openwork-gingham-bow-top-edge",
+      "title": "Blue Gingham Bow Divider",
+      "alt": "Blue-and-white checked ribbon stretches from a large bow with two small folded loops.",
+      "description": "The left bow has long pointed tails beneath its gathered center. The checked pattern follows the ribbon's small folds along the horizontal strip.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-gingham-bow-top-edge.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "d4094acc48bfe0aa43aa64c256d2cd5da2bd5a7c391a76eadf40bd9390ceed78",
+      "inputSignature": "6513789c34bb25b3192c666bca45a0c0c3940cfb23bc722a812237371f8c601d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 424464,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 424464,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        56,
+        266,
+        994,
+        567
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-gingham-bow-top-edge.pdf",
+          "bytes": 424464,
+          "sha256": "7d0f4f4aee24b5e448de040a0ccf5b498ff48b24f9c9a1e22337a8d1f7a088d3"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-gingham-bow-top-edge.webp",
+          "bytes": 564650,
+          "sha256": "687b1caf7105d14c2d8eb7d8804934875cb2794e0e832f2e1f69e704a7f4e032"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-gingham-bow-top-edge-thumb.webp",
+          "bytes": 22906,
+          "sha256": "bda3dc359e31baad5650e35389aaf4e9c82bd2ad10676d8ac36e054248d0ed03"
+        }
+      },
+      "proofSha256": "6da301e88b4455b6af301e9e434c401ef9f0f74ee4a4ce1e06b2a5b5da45ad68",
+      "pairMeanRgbDifference": 0.83775
+    },
+    {
+      "id": "border-openwork-knitted-yarn-circle",
+      "title": "Purple Knitted Circle with Needles",
+      "alt": "Thick purple knitted ring sits above crossed wooden needles and a small yarn ball.",
+      "description": "Raised cable-like stitches follow the circle. A loose yarn end curls beside the ball beneath the needle crossing.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-knitted-yarn-circle.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "c69f785de685ed72e85a413edeebc06e93a1e081c760bfa5e3cc2f44907212e4",
+      "inputSignature": "70e76999c1e639dd869b8a400faf749eca9b99966126d4ee5e3dcfc7a7030bbf",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 838496,
+        "weightedCmykRmse": 0.913795
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1031620,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 838496,
+          "weightedCmykRmse": 0.913795
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        113,
+        72,
+        916,
+        964
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-knitted-yarn-circle.pdf",
+          "bytes": 838496,
+          "sha256": "da4aeaa95d28779adf211f6984551c4cb1ca98f41945f15659d7b2d73db50910"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-knitted-yarn-circle.webp",
+          "bytes": 832752,
+          "sha256": "daeca644cb439e59dea8e232d85c0115e034ffbf2b60e2891ca7e9c61b7d0f2c"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-knitted-yarn-circle-thumb.webp",
+          "bytes": 48604,
+          "sha256": "d6f938bf9c289c13285deeb531663a4b662582e028b3b397f23b4cee386e6350"
+        }
+      },
+      "proofSha256": "0a8d781e49c84d3b0dfeaa03745d78612b5bf61d1c054b0e70b59615267e7db9",
+      "pairMeanRgbDifference": 1.3623
+    },
+    {
+      "id": "border-openwork-pencil-ruler-school-corner",
+      "title": "Pencil and Ruler Classroom Corner",
+      "alt": "Yellow pencil, wooden rulers, pink eraser and curled shavings form a classroom corner.",
+      "description": "The upright pencil stands beside a slanted ruler, with another ruler extending across the base. The eraser and shavings gather at their meeting point.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-pencil-ruler-school-corner.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "adc1c1139c15bbd99c0d53bc4c8f07ed9357117cd95ff8246fc5a7e0c56b875f",
+      "inputSignature": "960d77020f19506725a832d58d8abf9f878db042f05f2ea3cc98c3dd65103208",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 447239,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 447239,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        153,
+        163,
+        789,
+        935
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-pencil-ruler-school-corner.pdf",
+          "bytes": 447239,
+          "sha256": "dce3b9181033b88cff593843a18469d9ebc22447315bb71138cc597967527eff"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-pencil-ruler-school-corner.webp",
+          "bytes": 573622,
+          "sha256": "acf383ce4a19fe69786861c9f3d903d5beac02a5b7c1454cec74921c9190677b"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-pencil-ruler-school-corner-thumb.webp",
+          "bytes": 22816,
+          "sha256": "e9b68dde0598ef5917224d32eef0da6776b2dd150b069206638af3efaa1850f9"
+        }
+      },
+      "proofSha256": "ceb77c6b4c87e703d610cbf41f242864756bab410f42858a5f983da1cd5a0804",
+      "pairMeanRgbDifference": 0.73849
+    },
+    {
+      "id": "border-openwork-crayon-scribble-zigzag",
+      "title": "Colorful Crayon Zigzag Frame",
+      "alt": "A red, blue, green and yellow zigzag crayon frame with two crayons below.",
+      "description": "Short colored strokes fill the gaps between the zigzags. A red crayon and a blue crayon meet near the lower center of the open frame.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-crayon-scribble-zigzag.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "74d59088ca483041dc030acde00e78ca909a58112366573666d7ea2d2ec17a20",
+      "inputSignature": "cc520e3b2ec668611c5e5c37ee4be86203086b9fc454aa74708c3ccf5c401845",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 877710,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 877710,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        193,
+        110,
+        832,
+        942
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-crayon-scribble-zigzag.pdf",
+          "bytes": 877710,
+          "sha256": "efe7b7f34bd27af571faea4473bef3970ddeee0f436ad9bbeee51e333ce3430f"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-crayon-scribble-zigzag.webp",
+          "bytes": 866496,
+          "sha256": "4c2986886d95d1d48654e1b066ecbaa4e84dbf640e49dc3fcdcd1273ae97d814"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-crayon-scribble-zigzag-thumb.webp",
+          "bytes": 65644,
+          "sha256": "962cfb26e2e214e966cd93430fb56288146bdc582ac31b8d8878287c43e9a4e5"
+        }
+      },
+      "proofSha256": "6a25da14af214a0627bf88246d26a87067e93109160bfec946e4ee52fd9698f7",
+      "pairMeanRgbDifference": 1.84034
+    },
+    {
+      "id": "border-openwork-alphabet-blocks-lower-edge",
+      "title": "ABC Blocks and Toy Train Divider",
+      "alt": "Colorful A, B and C blocks line up with a small toy engine and a red star.",
+      "description": "The blocks tilt at different angles along the low horizontal arrangement. Round toy wheels and a red knob add small raised shapes between the letters.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-alphabet-blocks-lower-edge.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "bd7bdebbcc954a78b47bc02b66bfb2625367b2cb49c2b48983be795e6aedcf0c",
+      "inputSignature": "d8dd4ab0720c0ef1dfcac9d0826b6859ef3cc86c7da92a80e94db39eb6fee3c3",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 420292,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 420292,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        44,
+        743,
+        986,
+        955
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-alphabet-blocks-lower-edge.pdf",
+          "bytes": 420292,
+          "sha256": "05ec62cac0828507963ce9c8bb025bb3e3a7d01fcdd64807d8a4c82034574cb7"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-alphabet-blocks-lower-edge.webp",
+          "bytes": 585950,
+          "sha256": "ea442a6be23ddd6c6fe534195f8110b210c7261dc4340f54f0b346db09c2aa61"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-alphabet-blocks-lower-edge-thumb.webp",
+          "bytes": 23704,
+          "sha256": "5ba2557e4b1561dba89c69cbdd26fd34ab614a589b52b4cd6719e1db5681ddd1"
+        }
+      },
+      "proofSha256": "ccb01ff334f74577ab99afc20787763095f933aad6f96ef81b40092d004abfac",
+      "pairMeanRgbDifference": 1.13475
+    },
+    {
+      "id": "border-openwork-math-tools-triangle",
+      "title": "Geometry Tools Triangle",
+      "alt": "Blue set square, wooden rulers and a silver compass form a triangular arrangement.",
+      "description": "The compass hinge closes the top point while the rulers follow the lower and right sides. The blue set square creates a smaller open triangle inside.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-math-tools-triangle.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "ba653bd28c6e4cb0788456b1f0c735852928fcae5a2f2d4846621dcc548cbabf",
+      "inputSignature": "2955259a97fe0420337df1131179368becd20f94801acd3bc37e1c39b7a5a699",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 562808,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 562808,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        81,
+        80,
+        928,
+        922
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-math-tools-triangle.pdf",
+          "bytes": 562808,
+          "sha256": "ab59712d48f0d707540669ad7dece3af24ec38253f17826a5ea28ed5dbe01aeb"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-math-tools-triangle.webp",
+          "bytes": 637532,
+          "sha256": "592be9c1402058171c91084c376dcd732a6dd58f0c423db87778dd9dbab82a16"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-math-tools-triangle-thumb.webp",
+          "bytes": 35650,
+          "sha256": "a4a5596b4f0e464fcfebad4c4b737e0c8a1f7eafbd05f9b47dafa9a3a5332142"
+        }
+      },
+      "proofSha256": "7fa3c3f36a07ef1a05d8d1ad5ff9c7708d2d8e97dd13fffd64a7c07a41af8980",
+      "pairMeanRgbDifference": 1.63916
+    },
+    {
+      "id": "border-openwork-paintbrush-swatch-side-edge",
+      "title": "Paintbrush and Watercolor Side Border",
+      "alt": "Three paintbrushes, colored swatches and a small watercolor box form a narrow side border.",
+      "description": "The brush tips rise above blue, yellow and green paint marks. A leafy sprig and open paint pans finish the lower end.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-paintbrush-swatch-side-edge.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "a532637500a06e04ddf062826ae050ad5374ed65b617e462f3a390d8eb439cb9",
+      "inputSignature": "3e131c4bea2c3f15da91f6638e656b618e9670cc006d6fd4ce4fa5ded581a3d5",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 412126,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 412126,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        36,
+        37,
+        264,
+        970
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-paintbrush-swatch-side-edge.pdf",
+          "bytes": 412126,
+          "sha256": "6ae7708f67712f2dffee6e2064f3e4a46fd8d1bbb589b0d410fdb160552af59f"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-paintbrush-swatch-side-edge.webp",
+          "bytes": 515410,
+          "sha256": "7158486a30f5e39bce4ba27530b0b44277cb4a4a0d02e3cb5888501db5e1fbfd"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-paintbrush-swatch-side-edge-thumb.webp",
+          "bytes": 25520,
+          "sha256": "8b7f8fb3fa91cdbb3b4e2e5ac7623f15cc94deee25ad5f62cc886d928ce25b98"
+        }
+      },
+      "proofSha256": "41efe771c50fee4165afa32dca3c22cef086109e7b2efb9daee2d570af4a5ab0",
+      "pairMeanRgbDifference": 0.80955
+    },
+    {
+      "id": "border-openwork-science-dna-vertical",
+      "title": "Blue and Green DNA Border",
+      "alt": "Stylized blue and green double helix forms a tall border with small molecular nodes.",
+      "description": "The two winding strands connect through short rungs. Small round nodes extend from the sides at different heights.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-science-dna-vertical.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "640e0e4721c35809168008c445105bfb931df46ddadc9a45cb6bd454f00ad304",
+      "inputSignature": "880f70aca2bf8f3f738876033336343f06f6bd672fcffc21eec0f6731f0f01be",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 700984,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 700984,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        415,
+        50,
+        616,
+        989
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-science-dna-vertical.pdf",
+          "bytes": 700984,
+          "sha256": "5e2b93eb55a21feb9f6a98a75d816f3c6624f51957977dedf8a045051c62d2a4"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-science-dna-vertical.webp",
+          "bytes": 566932,
+          "sha256": "45d6eb8a729ce05de82fe5faf9c80a27fe63fd48d291fb19a23f999f13e4f653"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-science-dna-vertical-thumb.webp",
+          "bytes": 42878,
+          "sha256": "9e5447869f75a7e1755b3a9a10ccba6a8ed46deb851057af16f71393ff4e4704"
+        }
+      },
+      "proofSha256": "76795bb0c26a296a215acae4ff280b7ee468e07002e25e61ce9090f378640357",
+      "pairMeanRgbDifference": 1.32826
+    },
+    {
+      "id": "border-openwork-music-piano-bottom-edge",
+      "title": "Violin, Piano Keys and Treble Clef",
+      "alt": "Orange violin, short piano keyboard and black treble clef line up in a horizontal arrangement.",
+      "description": "Five black keys in two groups sit above eight white keys. The violin's warm wood contrasts with the neutral keyboard and curved music symbol.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-music-piano-bottom-edge.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "fb029d0bd5fb40612eb8b5899b20fd0a1ef1db9d0465cbc06d40596a7b287599",
+      "inputSignature": "dc859642a018f496f687fda9e16d412baf9f8ecb3410d813af7fb90fe8223739",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 441515,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 441515,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        65,
+        250,
+        970,
+        717
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-music-piano-bottom-edge.pdf",
+          "bytes": 441515,
+          "sha256": "ef4926bb0fac565feee7935b6a5a4dc2f46338ffc3d6b624b836c8e214bbe0e5"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-music-piano-bottom-edge.webp",
+          "bytes": 479386,
+          "sha256": "17b8e4144f07967668a36c3914a805998584a601337568c6ac700da35dd5aec3"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-music-piano-bottom-edge-thumb.webp",
+          "bytes": 20790,
+          "sha256": "8708c2891755b089686dccaeb25f01682232de32470f7967909438551805aa68"
+        }
+      },
+      "proofSha256": "725ab0bb0ff2d8dccb651d00b2744f1e6af356887eb2b53ac1d837939babb677",
+      "pairMeanRgbDifference": 1.30561
+    },
+    {
+      "id": "border-openwork-robot-circuit-corner",
+      "title": "Robot Circuit Corner",
+      "alt": "Small blue robot peeks over an L-shaped border of navy circuit traces and gold contacts.",
+      "description": "Parallel traces turn around the lower-left corner and end in round gold pads. The robot's bright eyes and single antenna give the small ornament a friendly focus.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-robot-circuit-corner.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "aaccfabec0cef6faa418115bb079c9d041230589afb95ef15e5dddcdfcae8f87",
+      "inputSignature": "cbdc6b4f3e7c3e7fd3110357db9e997d7a12b7bd18b5c856af3348e9be413c7b",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 396478,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 396478,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        290,
+        260,
+        733,
+        789
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-robot-circuit-corner.pdf",
+          "bytes": 396478,
+          "sha256": "8f125100a9efdf9bf13692f4567eebef0be99aad078719ab86dd3c133da88bfd"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-robot-circuit-corner.webp",
+          "bytes": 439146,
+          "sha256": "6dd31495148e729aa8a7b4e8f3ed9c2d6777465a6ad35049276ba9fcf4d6c110"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-robot-circuit-corner-thumb.webp",
+          "bytes": 16090,
+          "sha256": "ac1931a8f8ce9840037461eaac899eecc101cf49b6aac24c4738ea7acf71a3ba"
+        }
+      },
+      "proofSha256": "3a1f080d7ed060f7706d2a335371fea0fa634df34f2ec7b998621ca396bc341f",
+      "pairMeanRgbDifference": 0.66884
+    },
+    {
+      "id": "border-openwork-library-reading-crescent",
+      "title": "Open Books and Bookmark Crescent",
+      "alt": "Three open books, a small gold-colored lamp and a red ribbon form a curved side border.",
+      "description": "Blank cream pages face the open center at different angles. The ribbon curls away below the lowest book.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-library-reading-crescent.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "1a0467b1e45db4995a097005b7e1174cbae00affd7b2931ac14802f228a8683a",
+      "inputSignature": "236b564a4b7cebf0f4978b80fa027fde3f71caf832791e7b209f090e2ba319a5",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 673651,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 673651,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        139,
+        62,
+        552,
+        981
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-library-reading-crescent.pdf",
+          "bytes": 673651,
+          "sha256": "b9b4ece847e6a10e5c2f13459ac15ad7fcb141ee4cb5d7ee860858b2ba9f1fe6"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-library-reading-crescent.webp",
+          "bytes": 578320,
+          "sha256": "b942cb290e34d0a223c76f7c94daa2bb48431fff1409a759ecc54640f18f137e"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-library-reading-crescent-thumb.webp",
+          "bytes": 35472,
+          "sha256": "50d9409cc349f23bf964f5442ad564aa1d6e58b8cd68c3915a72d123e5de09ea"
+        }
+      },
+      "proofSha256": "83aad16fdd2885ada3b5185f322b1374d4cfb02dc65256fb6b4ca8c191e1e44e",
+      "pairMeanRgbDifference": 0.64137
+    },
+    {
+      "id": "border-openwork-woodland-animal-window",
+      "title": "Fox and Squirrel Branch Frame",
+      "alt": "Thin twisting branches frame a seated fox and a squirrel on the opposite upper corner.",
+      "description": "Small green leaves break up the woody border. The two animals face toward the open center from different heights.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-woodland-animal-window.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "34710ab0d3370b828b84b03bb6dc2457528b5aad3c3194902b7385302e55663c",
+      "inputSignature": "30d63afcb71621576147dc5754bbf2500e4768b7ac533918fff202f713fa4020",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 974314,
+        "weightedCmykRmse": 1.076805
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1172438,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1045469,
+          "weightedCmykRmse": 0.88825
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 974314,
+          "weightedCmykRmse": 1.076805
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        106,
+        58,
+        970,
+        982
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-woodland-animal-window.pdf",
+          "bytes": 974314,
+          "sha256": "7e4f14256841bd15b735f9f965ef2b517d14e78634e27f5adb37e47114f8fd56"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-woodland-animal-window.webp",
+          "bytes": 768392,
+          "sha256": "235b709656cb23f04e36cbcd7b666de896a668823b0a3d7b74eee8e2033d7d4a"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-woodland-animal-window-thumb.webp",
+          "bytes": 55352,
+          "sha256": "f1696039cd536de7b494b1492d93ffff5c7a51d818ea4d6221994ba43786bd5c"
+        }
+      },
+      "proofSha256": "c65eab7a00e89dc6eb0565166e4e0001df05233330dba029ac3ed915e9f5d36b",
+      "pairMeanRgbDifference": 1.3026
+    },
+    {
+      "id": "border-openwork-soccer-ball-net-corner",
+      "title": "Soccer Ball and Goal Net Corner",
+      "alt": "Black-and-white soccer ball rests in grass beside a diagonal section of white goal net.",
+      "description": "The tied net lines rise toward the upper right. Several pointed grass blades surround the lower part of the ball.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-soccer-ball-net-corner.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "445ab05c6e85ff86008b3e17dfa610a7a116943772cea016c9e45125b5e700ac",
+      "inputSignature": "ad55394e084a6014840dfbc6aa3a5a6150c6a69d6a0da18cbde06156c275ab71",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 596307,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 596307,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        450,
+        374,
+        878,
+        917
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-soccer-ball-net-corner.pdf",
+          "bytes": 596307,
+          "sha256": "d713efa5f7b7da5f3ddaa7731355d45e6d69ee0638fb5167f470196b0335625c"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-soccer-ball-net-corner.webp",
+          "bytes": 526730,
+          "sha256": "75098c5c30bb5391a825b5c22fea0311f5e122a379a36c38ad46d0a65a527359"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-soccer-ball-net-corner-thumb.webp",
+          "bytes": 31144,
+          "sha256": "6af3910fe6ef2db92abf1a3138ce8db616c4f7dc2b72b9200e707f109052d8bb"
+        }
+      },
+      "proofSha256": "9e1ae0273996cf04daee2dee57ef0fb619bab02155c7025e98dae3dcf153cb15",
+      "pairMeanRgbDifference": 0.6263
+    },
+    {
+      "id": "border-openwork-basketball-court-oval",
+      "title": "Basketball and Hoop Oval",
+      "alt": "Thin orange oval lines connect an orange basketball and a small hoop with a white net.",
+      "description": "The ball overlaps the left edge while the hoop sits above the right curve. The wide central opening remains clear.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-basketball-court-oval.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "d740e41693c156514ab9ba30c4fe7a2a7cad7916ee59d82e8167ac59c8fcd03e",
+      "inputSignature": "f4ea5efcf10f34b6b18a83a871c0df5b1e1e4b824c0b7e8b9e778e8f7599c4fc",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 581165,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 581165,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        17,
+        229,
+        1007,
+        782
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-basketball-court-oval.pdf",
+          "bytes": 581165,
+          "sha256": "8470f6362e7241fa692e2b7d55d97fe11eef40d03bb612c1187163776e12f5a4"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-basketball-court-oval.webp",
+          "bytes": 649752,
+          "sha256": "c2779d21e35c8c5913df97b951032132fad477f2bd9733bdec13dc7594856e83"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-basketball-court-oval-thumb.webp",
+          "bytes": 38586,
+          "sha256": "096200a60f312cd89c853220faa68316fb6b83bd7282aa0652d67c1a0ea67468"
+        }
+      },
+      "proofSha256": "f5ae03bd8dd6385987c5f4860c999c84760e17609de83675ae202d4fe90d349d",
+      "pairMeanRgbDifference": 0.98391
+    },
+    {
+      "id": "border-openwork-graduation-laurel-cap",
+      "title": "Graduation Laurel Border",
+      "alt": "Dark green laurel branches surround a black graduation cap, diploma and navy bow.",
+      "description": "The two leafy branches rise around a broad opening. A gold tassel hangs from the cap above the rolled cream diploma.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-graduation-laurel-cap.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "870c9720302fc1e5ae5b0b9cea4b2808663c35556b2ec138be6e9fe6641f1f1f",
+      "inputSignature": "cb8b3a85ced619193f7b2c0052e9b5933163b1e192639c9cc227cc14c3dc22e9",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 959778,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 959778,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        74,
+        90,
+        950,
+        945
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-graduation-laurel-cap.pdf",
+          "bytes": 959778,
+          "sha256": "155899ff85b3c7f0b75bd00e5f2d0d88d2f2e6e6a2284558206a8c8e412a1c27"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-graduation-laurel-cap.webp",
+          "bytes": 694620,
+          "sha256": "c1ad696cb9bbe3a123f8ad320379e8e280113b2376cd74a528548cfc819b9d77"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-graduation-laurel-cap-thumb.webp",
+          "bytes": 49756,
+          "sha256": "5a8d1a153f1f94344c19df412b233ac4a566ed7ea4d29f325f43bd4ff7d7241d"
+        }
+      },
+      "proofSha256": "6006431a65755420b84039f7979c29503754d2a548f15257fee3230db9ced62b",
+      "pairMeanRgbDifference": 2.13616
+    },
+    {
+      "id": "border-openwork-wedding-interlocked-rings-divider",
+      "title": "Interlocked Gold Rings Divider",
+      "alt": "Two interlocked gold rings sit between leafy sprigs and ivory ribbon curls.",
+      "description": "The slim branches extend outward from the ring pair. Small pale ribbon folds soften the ends of the compact wedding ornament.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-wedding-interlocked-rings-divider.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "be4662fb0d729d2f5e3affdd2d28a2be3adc5c0ab7dad8ed4a3bd4488740d297",
+      "inputSignature": "2bf6895862a8fb3bc5b63f681dd953e58d1c295914a1e0463780120e6f06c0bc",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 399657,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 399657,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        56,
+        406,
+        968,
+        614
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-wedding-interlocked-rings-divider.pdf",
+          "bytes": 399657,
+          "sha256": "ccf57531a6c876976b8cfa7d9e1d6cc8d4e6c16dc5781a85fd9c91db89a29e7c"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-wedding-interlocked-rings-divider.webp",
+          "bytes": 507510,
+          "sha256": "e6b13398024720115fe6d9389a905e481a7d09ece4f9a9231e55d84a211b0f5a"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-wedding-interlocked-rings-divider-thumb.webp",
+          "bytes": 29222,
+          "sha256": "dc22904c37f6c5151450ec528c915adbd4d9ba8883ad99f915566b0008cd6176"
+        }
+      },
+      "proofSha256": "1ce24c461d2bdc26dd1a0c2283c6c329cab624c0b0ebee22ab3f09fa62445846",
+      "pairMeanRgbDifference": 0.57128
+    },
+    {
+      "id": "border-openwork-hanukkah-dreidel-corner",
+      "title": "Blue Dreidel and Gold Coin Corner",
+      "alt": "Blue dreidel, pouch of gold coins and curling navy ribbon form a festive corner.",
+      "description": "Loose coins spill beside the small blue pouch. Fine gold edges follow the ribbon as it twists above and across the still life.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-hanukkah-dreidel-corner.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "38ff992ec9cf57e03d449b6463107e16b68cdeaa0102ce6d7bb88b57c102fa80",
+      "inputSignature": "55771821902844122f4241a355f002c6b7c8042fb0e38a5ccf37313d5937525d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 612579,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 612579,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        65,
+        88,
+        976,
+        924
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-hanukkah-dreidel-corner.pdf",
+          "bytes": 612579,
+          "sha256": "03fdf5d69835bbeca2f78f1f60c0d3e7b8529efb97ba371ebd3bc945d1d29970"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-hanukkah-dreidel-corner.webp",
+          "bytes": 620940,
+          "sha256": "3291648a2fc27edb7b99cc021215283dc8910fb459ce0bcd4ef82b105cc4d7c9"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-hanukkah-dreidel-corner-thumb.webp",
+          "bytes": 33630,
+          "sha256": "45a433507e0641c70a9940d9a1cdfddfeea503ea242df7ab2a2d8ab229c019c5"
+        }
+      },
+      "proofSha256": "a8b9b0e74c8b16a48a9014ab51650a49343272172f99accbe7389ee0d8acc837",
+      "pairMeanRgbDifference": 1.73613
+    },
+    {
+      "id": "border-openwork-christmas-holly-bell-arch",
+      "title": "Holly and Bell Arch",
+      "alt": "Sparse holly leaves and red berries form an arch topped with two brass-colored bells and a red bow.",
+      "description": "The bells hang beneath the large bow at the top. Small leaf clusters and berries follow the two open sides.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-christmas-holly-bell-arch.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "f895db9979eaec57433cc638a0cbb630d36ab8b870f3eaeabf972053a637604a",
+      "inputSignature": "ff26858f75154e9f2aca4d34e43feb2bb1b3257b2d8ded95acbbefdbfa313e87",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 917759,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 917759,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        99,
+        79,
+        962,
+        953
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-christmas-holly-bell-arch.pdf",
+          "bytes": 917759,
+          "sha256": "24082eddb78b7e72cfe1180f3f39139cd1ec87e907bdbba93cbf4b8b0846c4c4"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-christmas-holly-bell-arch.webp",
+          "bytes": 717734,
+          "sha256": "335f4dadd7203ca9a61b7a88d193ff4b1d6f66723358894e1064fe3d255cf1a9"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-christmas-holly-bell-arch-thumb.webp",
+          "bytes": 50534,
+          "sha256": "ed5901fda06603260e85f603bc620097b4851ddf91f71e5605ecadbf6e57b704"
+        }
+      },
+      "proofSha256": "b62019424f9e92f6232f6c22567cf759f1de058220911c23c398570ee3a59ae8",
+      "pairMeanRgbDifference": 2.01292
+    },
+    {
+      "id": "border-openwork-thanksgiving-corn-stalk-edge",
+      "title": "Basket between Tall Cornstalks",
+      "alt": "Two tall dry cornstalks rise beside a small woven basket.",
+      "description": "Long curled leaves wrap around the golden stalks. Their outward lean creates a narrow U-shaped harvest border above the basket.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-thanksgiving-corn-stalk-edge.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "8a6ac2139274612f61d6f8262ff48ac81bf3692640c82401e34687b60153d3c4",
+      "inputSignature": "cae8c7dd5ffa07c09b806292f26179ef1eb328fb76eb1dfa688b404467870d9c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 851032,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 851032,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        299,
+        34,
+        731,
+        992
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-thanksgiving-corn-stalk-edge.pdf",
+          "bytes": 851032,
+          "sha256": "979cc38ebe094a12eed256ebffd248c836fc2a506033be126d6ca40f3fbb433b"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-thanksgiving-corn-stalk-edge.webp",
+          "bytes": 771696,
+          "sha256": "d7766e8317f4013bd70a9a89aab16311df75ea14f38b9b77bac6046f83b78f84"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-thanksgiving-corn-stalk-edge-thumb.webp",
+          "bytes": 59746,
+          "sha256": "449c74d03aa6979039fa9df958728209fe438bce2b71da19b0455b8dd4907790"
+        }
+      },
+      "proofSha256": "c25247da22c7ca63a4c48340e8e07ea3151a69c3e9c267c3580ceb17c7242e9e",
+      "pairMeanRgbDifference": 1.55679
+    },
+    {
+      "id": "border-openwork-halloween-spiderweb-corner",
+      "title": "Spiderweb Scroll Corner",
+      "alt": "Black-and-white spiderweb fills an ornamental corner above a small hanging spider.",
+      "description": "Curved flourishes extend from the web's two outer arms. The little spider hangs near the inner lower curl.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_702/source/border-openwork-halloween-spiderweb-corner.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "e5ed645945e3362c178e6f2c209d328311bd1285e56f275389395c4e7945b779",
+      "inputSignature": "db9c242275add035bd2d4402b99419d4a86632697e2f3cffc53ac77dfd98ef16",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 146768,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 146768,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        160,
+        115,
+        982,
+        894
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-halloween-spiderweb-corner.pdf",
+          "bytes": 146768,
+          "sha256": "f053931635a540fd0a32dd126314112d9332a932425cdda4a0bba01860c969c5"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-halloween-spiderweb-corner.webp",
+          "bytes": 281444,
+          "sha256": "2908718bdb963b2e4bc24e311b811e5fb189969ee6d8fddcaa3d2a6d9c7af6e9"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-halloween-spiderweb-corner-thumb.webp",
+          "bytes": 16974,
+          "sha256": "9d9b0683a85a4dbb9dfd86518c98e16afdb7cba134af06c6b84b49c4a8d74dfa"
+        }
+      },
+      "proofSha256": "59ee927904434d85ec6af5f7543b05e5d04f09ecd6fc8913782e5bd5fa061885",
+      "pairMeanRgbDifference": 1.88419
+    },
+    {
+      "id": "border-openwork-birthday-pennant-top-edge",
+      "title": "Birthday Pennant Garland",
+      "alt": "Colored patterned pennants hang between two paper honeycomb decorations.",
+      "description": "Stripes, dots and solid colors alternate along the gently sagging cord. Yellow and blue folded-paper ornaments finish the two ends.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_702/source/border-openwork-birthday-pennant-top-edge.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "576eeeb1172dd286f85a0d335717382f4fb2dd1d7aefcb36d03452d7ff737bf5",
+      "inputSignature": "7869d2b9e4169ed77f23b51415a9ff4bcbefefbd23aeadfadb40cbe5362daa39",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 279753,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 279753,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        31,
+        391,
+        994,
+        620
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-birthday-pennant-top-edge.pdf",
+          "bytes": 279753,
+          "sha256": "6257020fd8aceea0398cf2b753a9d2260d3ba64fd6d2dc7e86e838d66fce38b7"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-birthday-pennant-top-edge.webp",
+          "bytes": 496032,
+          "sha256": "92b21e2ea02602b87857358eeb3be6ca8153e4eb554240d2f893e5c25365e577"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-birthday-pennant-top-edge-thumb.webp",
+          "bytes": 22312,
+          "sha256": "4a59db406dac648f302744aa535eb0ad2e9e4092de01b5f3b4167fc932d6e142"
+        }
+      },
+      "proofSha256": "1a4ead960f8699c432f66e91ff424c0da12a822d14a501e433c8ecaa11cb09f5",
+      "pairMeanRgbDifference": 0.59064
+    },
+    {
+      "id": "border-openwork-geometric-maze-ink-frame",
+      "title": "Black Geometric Maze Frame",
+      "alt": "Bold black meandering lines form a square frame with enlarged corner turns.",
+      "description": "A narrow double rule follows the inner opening. Repeated right-angle paths create a structured border around the clear center.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_702/source/border-openwork-geometric-maze-ink-frame.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "border",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "97db420c33a5337df5e56793c9d35e2b87e0e012382893a65200bd9f56dc4c40",
+      "inputSignature": "d04ffb1da0dfb2bc35f1a22a8f8fa2c875bb013fb966da7db4350a547922b759",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 174845,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 174845,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        127,
+        131,
+        897,
+        896
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_702/exports/border-openwork-geometric-maze-ink-frame.pdf",
+          "bytes": 174845,
+          "sha256": "94d9489ab8ef08fe8509f643fa1cd789749e78cd52b883d4dfca15c92a844ea4"
+        },
+        "webp": {
+          "path": "work/production/wave_702/exports/border-openwork-geometric-maze-ink-frame.webp",
+          "bytes": 283858,
+          "sha256": "02580bc427b63ebd4fb30b6751fd8e49a179fc284f954908311e10fcd96625db"
+        },
+        "thumb": {
+          "path": "work/production/wave_702/exports/border-openwork-geometric-maze-ink-frame-thumb.webp",
+          "bytes": 17768,
+          "sha256": "f1dd0e955cc295b4c2735e61b12583d9df944ca9a944eb4c99d73f8a40e39001"
+        }
+      },
+      "proofSha256": "19f6ee603c7193f9cd518ae078c7999ba1d460a2ea8c44b9f18277d3ce468f87",
+      "pairMeanRgbDifference": 5.00327
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-29T12:51:39.879380+00:00",
+  "screenReviewEvidence": {
+    "reviewerType": "AI_AGENT_NOT_HUMAN",
+    "actualProofImagesViewed": 50,
+    "sheets": [
+      "work/production/wave_702/pdf-review-1.jpg",
+      "work/production/wave_702/pdf-review-2.jpg",
+      "work/production/wave_702/pdf-review-3.jpg",
+      "work/production/wave_702/pdf-review-4.jpg",
+      "work/production/wave_702/pdf-review-5.jpg"
+    ],
+    "notes": "All 50 rendered CMYK PDF proofs inspected; not a physical print proof. Each proof hash and paired source/file hash is recorded in its artwork record."
+  },
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-29T13:41:42.132Z"
+}

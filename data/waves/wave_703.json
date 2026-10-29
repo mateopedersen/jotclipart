@@ -1,0 +1,4392 @@
+{
+  "wave": "wave_703",
+  "status": "AWAITING_CDN",
+  "actualExportedDrawings": 50,
+  "resumed": 27,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "zoo-visit-entrance-arch-animal-cutouts",
+      "title": "Family Walking Through a Zoo Entrance",
+      "alt": "A family walks beneath a green ZOO arch decorated with giraffe and elephant silhouettes.",
+      "description": "Leaf-topped pillars frame the open green gates. Giraffes, an elephant and broad trees appear beyond the visitors.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-entrance-arch-animal-cutouts.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "edbb3762a91f312f3fb21040e959c0062553a05f2c9af543efc66e54d6b5b62e",
+      "inputSignature": "58793ca978373e16ce881698bbe46e61fed2a8dc8875051fa524482e8e3fb81d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 50,
+        "losslessCmyk": false,
+        "bytes": 895964,
+        "weightedCmykRmse": 1.046431
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1500516,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1106830,
+          "weightedCmykRmse": 0.748841
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1005971,
+          "weightedCmykRmse": 0.887239
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 895964,
+          "weightedCmykRmse": 1.046431
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        36,
+        94,
+        987,
+        954
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-entrance-arch-animal-cutouts.pdf",
+          "bytes": 895964,
+          "sha256": "a47631b88adfca701dfb8827924c1a6ea348a46d9fef9af45521d724898d85f6"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-entrance-arch-animal-cutouts.webp",
+          "bytes": 1072846,
+          "sha256": "fa8f64d5615f8655ac891d8c7806e3a07ce2c495a397640ca0d26f256a08f542"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-entrance-arch-animal-cutouts-thumb.webp",
+          "bytes": 76062,
+          "sha256": "aa226db59141c88fe21d9e602ea57833c823ecfc1096aac8e45d597d7c8ffe95"
+        }
+      },
+      "proofSha256": "baa4d9e12b89a3e3e234061750d65bfa1dbbd9fe93388469ca63de32b97ecfcb",
+      "pairMeanRgbDifference": 2.54755
+    },
+    {
+      "id": "zoo-visit-folded-visitor-map",
+      "title": "Family Reading a Zoo Map",
+      "alt": "A woman and two children hold an unfolded zoo map with animal icons and winding paths.",
+      "description": "The boy grips one side while the girl points toward the illustrated routes. A penguin, giraffe and butterfly distinguish parts of the map.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-folded-visitor-map.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "c6742bb6a9bdbca03f1c46e350a2d7bb3a30521dd5c9d1b016f4bbbd9d080c26",
+      "inputSignature": "7aadd47b6a4b9b774080f5bd0d76fd195437b00e1a8f09743127f97fdc928dca",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 942810,
+        "weightedCmykRmse": 0.774977
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1351114,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 942810,
+          "weightedCmykRmse": 0.774977
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        47,
+        32,
+        963,
+        984
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-folded-visitor-map.pdf",
+          "bytes": 942810,
+          "sha256": "9e258f00de20880b54fe99696808bbad634114f3b24475e6bbdd8b6a264365ff"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-folded-visitor-map.webp",
+          "bytes": 972314,
+          "sha256": "2fdbd9fb5fa737405af8d9ad056e82fdbf4e94b23525404bc2fc5280413577b5"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-folded-visitor-map-thumb.webp",
+          "bytes": 69058,
+          "sha256": "a4b4f4407c926d2e97ede71c032dc3d0bb47a021b436073c21dc0d865c60afd2"
+        }
+      },
+      "proofSha256": "952fcfe30ff66018736f5d87b48f942a04f334409f3c5a28d4012f49f1d1c658",
+      "pairMeanRgbDifference": 2.60773
+    },
+    {
+      "id": "zoo-visit-family-ticket-window",
+      "title": "Child Collecting a Zoo Ticket",
+      "alt": "A child in yellow overalls reaches toward a ticket at a wooden zoo admission booth beside a woman.",
+      "description": "The small booth has a green roof and an elephant plaque above its open window. The attendant leans forward for the exchange.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-family-ticket-window.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "ce0b6a4f036908ea107d5b9124abb49943863589bd2a3201d1bbbdacb31df785",
+      "inputSignature": "e39d0985884815dbce09267d5e1478f8076a734b9a9f41ceffa98460b0238a8c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 672249,
+        "weightedCmykRmse": 0.801814
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1123953,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 672249,
+          "weightedCmykRmse": 0.801814
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        76,
+        39,
+        977,
+        975
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-family-ticket-window.pdf",
+          "bytes": 672249,
+          "sha256": "44ef12006c54223a7a737530dff2416df5b206e4c0245181b4cf79fb037c7489"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-family-ticket-window.webp",
+          "bytes": 739262,
+          "sha256": "b43cc9d532a77ac846ae4bb4ec7bcca10e39c1ed83b8ebe7dfd3202ec19c984c"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-family-ticket-window-thumb.webp",
+          "bytes": 51318,
+          "sha256": "f4875b62a7261c08339dc8e96feacb7cdf2f88f4893d0fdfd112ecb5f98c75d5"
+        }
+      },
+      "proofSha256": "0275dbed8078e79cf4de87696739d911a353b9253c5b4b6de843e93efc8a6414",
+      "pairMeanRgbDifference": 2.02291
+    },
+    {
+      "id": "zoo-visit-stroller-elephant-view",
+      "title": "Father and Toddler at the Elephant Habitat",
+      "alt": "A father pushes a toddler in a stroller beside a wooden zoo railing overlooking an elephant.",
+      "description": "The elephant stands near rocks and a broad green tree beyond the barrier. The stroller and its seated child remain on the visitor path.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-stroller-elephant-view.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "bae6b84945fa67ff51ec236822cb188af06213c19b396655ec47aac984efb9e4",
+      "inputSignature": "3fededd6b42889c27422926ad8c4d7f601f16576c4c70f2dcde6ed8c526807e7",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 959798,
+        "weightedCmykRmse": 0.915592
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1420762,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1050718,
+          "weightedCmykRmse": 0.776756
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 959798,
+          "weightedCmykRmse": 0.915592
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        64,
+        179,
+        1011,
+        917
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-stroller-elephant-view.pdf",
+          "bytes": 959798,
+          "sha256": "fe127f923edd74c885b8997ac56a283c7bd6d371bb90e99b3096f82620c0419a"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-stroller-elephant-view.webp",
+          "bytes": 1032930,
+          "sha256": "9a51bfbbbe252021be8c631375de05d9d4944da6de57d46cff981a727df99b83"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-stroller-elephant-view-thumb.webp",
+          "bytes": 73368,
+          "sha256": "cfc1aec2d552bc19c2e5fee52fb48c30b7c939421de1178e7c5e20483337ad44"
+        }
+      },
+      "proofSha256": "244bb8af9c2c4c8dc1ba4d96d2a871a3cfe219edb7c96f1f89ff6afb9a1012c6",
+      "pairMeanRgbDifference": 1.57525
+    },
+    {
+      "id": "zoo-visit-class-field-trip-gate",
+      "title": "Teacher Leading Children Through the Zoo",
+      "alt": "A teacher points toward a giraffe as four children walk beneath a wooden ZOO gateway.",
+      "description": "The children wear different bright jackets and carry backpacks. Animal-picture activity cards add a school-trip detail to the group.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-class-field-trip-gate.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "f1bf09a4c0bbaa5bf9e394b0da108c7d758b8b63fde49ec175e70d37111f7b26",
+      "inputSignature": "ce8915f8ed772f6bdfa8df7e8990302abf2175d4cb729e5afabda5116d071e46",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 953306,
+        "weightedCmykRmse": 0.908528
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1422864,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1032390,
+          "weightedCmykRmse": 0.775479
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 953306,
+          "weightedCmykRmse": 0.908528
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        38,
+        59,
+        982,
+        960
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-class-field-trip-gate.pdf",
+          "bytes": 953306,
+          "sha256": "61f6b2b146e2a55426781b8524d2f5ade7d7a24bbbac04b86553a55aedb43d48"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-class-field-trip-gate.webp",
+          "bytes": 1024422,
+          "sha256": "53d4596f827ccdc957998568d3278bc87146d316713bb316c072c35fef65a0c8"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-class-field-trip-gate-thumb.webp",
+          "bytes": 77724,
+          "sha256": "729b1b98f0059e354c0642e88ed795cc5b483645e671f50c43744f021d911217"
+        }
+      },
+      "proofSha256": "35a94e6ba68fb55c81e5f115bda87c2684e49323a716623760a6f1824e0a3b4a",
+      "pairMeanRgbDifference": 2.85043
+    },
+    {
+      "id": "zoo-visit-wheelchair-wetland-boardwalk",
+      "title": "Watching Wetland Birds from a Zoo Boardwalk",
+      "alt": "A silver-haired wheelchair user and a child look at two long-legged birds across a wetland viewing rail.",
+      "description": "Reeds rise behind the mesh-sided wooden deck. The child leans forward and points while the adult rests a hand near the wheelchair wheel.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-wheelchair-wetland-boardwalk.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "3bc40d3b082e8e4e142ad16faa54ad606a6bc64f70475e52be09274f6d6e28b9",
+      "inputSignature": "561c393d31e4323116c0531b62846fe085d9f0e8ad2dac5d8ad50e16dcf9d4ef",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 926235,
+        "weightedCmykRmse": 0.913593
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1439293,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1012698,
+          "weightedCmykRmse": 0.776711
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 926235,
+          "weightedCmykRmse": 0.913593
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        26,
+        204,
+        1005,
+        966
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-wheelchair-wetland-boardwalk.pdf",
+          "bytes": 926235,
+          "sha256": "7a918e7ec6bbd3f5f9dd2fe4d43a59128a6c3089c81c8611d20e37c32d5fa407"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-wheelchair-wetland-boardwalk.webp",
+          "bytes": 1019638,
+          "sha256": "c8c61e7ab1897231deef31ea6ec2babe75c9c13c0222f763d3d0e048e18c93f2"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-wheelchair-wetland-boardwalk-thumb.webp",
+          "bytes": 70474,
+          "sha256": "5112144ce79f210451138522646d6e0a396b74bda72f1ebc0766f45c34362c2c"
+        }
+      },
+      "proofSha256": "699d6c78f03f90521820e499ccf2ed8ecc0430ff6b945f8e69aec4a434c130a3",
+      "pairMeanRgbDifference": 2.00793
+    },
+    {
+      "id": "zoo-visit-little-zoo-tram",
+      "title": "Green Lion Zoo Tram",
+      "alt": "A green zoo tram has a friendly lion-faced engine and open passenger carriages.",
+      "description": "Gold trim outlines the rounded canopy and small wheels. Seated visitors look out from the two linked cars behind the decorative engine.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-little-zoo-tram.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "bebd0bb97b642b9977df99f374ccfd57f5b2a956135fcd769aa87ea3ec753fe7",
+      "inputSignature": "c81af7880bb06cfe5726e4095f2b4efd190f379c18161324d60f0d8c8610f9af",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 757230,
+        "weightedCmykRmse": 0.868139
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1056521,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 757230,
+          "weightedCmykRmse": 0.868139
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        40,
+        219,
+        989,
+        829
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-little-zoo-tram.pdf",
+          "bytes": 757230,
+          "sha256": "ae60b7f3382fc985b782fced9e86c36ae0b7d4f9126cff2788ce17a6539ad9ff"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-little-zoo-tram.webp",
+          "bytes": 804052,
+          "sha256": "7943989f912fdf9c1fa77e04108c4a92f17b54050b51425dbe29367ebc4acbe1"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-little-zoo-tram-thumb.webp",
+          "bytes": 53970,
+          "sha256": "0db1b60ca1384294fabe46185d7257526cc98235c0286343fc308747a820daec"
+        }
+      },
+      "proofSha256": "28c138fee9055effe44a14f20619228b1bd4a64987c0e222527ccd551f16271e",
+      "pairMeanRgbDifference": 1.91619
+    },
+    {
+      "id": "zoo-visit-hand-entry-stamp-ticket",
+      "title": "Zoo Ticket and Elephant Admission Stamp",
+      "alt": "A hand holds an orange ZOO ticket beside a small blue elephant stamp on the wrist.",
+      "description": "A giraffe and elephant decorate the ticket. Behind the close-up hand, visitors walk through a wooden entrance beside an elephant viewing area.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-hand-entry-stamp-ticket.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "b33ac52dd4feea0b57e7889d376d027046d07b0eb2256bbc9d2362101bbb4e26",
+      "inputSignature": "af95b0fd7d355d746f37126f44818ffcef33de7845fbf4b1bd62b77441b0875d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 789552,
+        "weightedCmykRmse": 0.797684
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1199003,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 789552,
+          "weightedCmykRmse": 0.797684
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        19,
+        130,
+        1012,
+        1002
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-hand-entry-stamp-ticket.pdf",
+          "bytes": 789552,
+          "sha256": "2d22ab1049b67a4c065ef7f1ec635e4bd09b8a67851107f140a47a11815095e2"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-hand-entry-stamp-ticket.webp",
+          "bytes": 925886,
+          "sha256": "570f9547ad55453616bdcb8c5b311ef6dfc0a5802dbdf5e0022262203b4feab6"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-hand-entry-stamp-ticket-thumb.webp",
+          "bytes": 65960,
+          "sha256": "e7cca09f312079ba59d9bfa8754bcf463db3771a825ab769e8f07db1014b0fd0"
+        }
+      },
+      "proofSha256": "2f6bdf095c803a1a28d7edb022375e5446b8dc4e1c40db524ddfe60dbd9833ee",
+      "pairMeanRgbDifference": 2.13116
+    },
+    {
+      "id": "zoo-visit-admission-wristband-pair",
+      "title": "Girl Wearing a Zoo Wristband",
+      "alt": "A smiling girl fastens a wristband beside blue and orange admission bands and a giraffe visitor pass.",
+      "description": "The loose bands curl across the foreground. A giraffe and small habitat sign appear beyond the railing behind her.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-admission-wristband-pair.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "9bd146fdd4344b5623e2e42be5b8fda472eed01ca424979d799c751e27831fd8",
+      "inputSignature": "44d425b1f62d175632948ed779f566ae567fe585588f8ec598a467d34f7cfe85",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 766441,
+        "weightedCmykRmse": 0.798962
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1146601,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 766441,
+          "weightedCmykRmse": 0.798962
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        121,
+        78,
+        981,
+        983
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-admission-wristband-pair.pdf",
+          "bytes": 766441,
+          "sha256": "1ad750c6ee92d75afdabcbfec4950eb42ac1762c44c8f58d5e2431cba2ced065"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-admission-wristband-pair.webp",
+          "bytes": 887400,
+          "sha256": "5eb3cea4284ace301d82bb3619998276a79caac68d1471e398db8875af015a55"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-admission-wristband-pair-thumb.webp",
+          "bytes": 66098,
+          "sha256": "cfbfdafd6161493d6e3761617df4141eeb015c2c3250847fa9524743549f9f61"
+        }
+      },
+      "proofSha256": "96a7119019ec8a414327d265c944161be32d29ec7f92fd115aeb2202d2ec179e",
+      "pairMeanRgbDifference": 3.13831
+    },
+    {
+      "id": "zoo-visit-animal-direction-signpost",
+      "title": "Zoo Animal Direction Signpost",
+      "alt": "Wooden arrow signs show penguin, giraffe and butterfly illustrations.",
+      "description": "A penguin arrow points left; the giraffe and butterfly arrows point right. Leafy shoots grow around the base of the wooden post.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-animal-direction-signpost.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "640cc341f6b4bf3e878780a70cbddf2c055074a2ddc57ed3a158fb35c23a341b",
+      "inputSignature": "d0acf005ff26bb429c77a6a2cd70e51c793c852a3a19a8ef1eeec587d0b80b02",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 795904,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 795904,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        177,
+        21,
+        850,
+        1004
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-animal-direction-signpost.pdf",
+          "bytes": 795904,
+          "sha256": "aad93069bc9d8bcc5a4e99222a9c715403692fda3803a7d2c19c075cfdbff97d"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-animal-direction-signpost.webp",
+          "bytes": 709030,
+          "sha256": "14be9e7270af0f8d890f2a8c6c1363b49a2f4b03e00c7f18292959c59b5b740a"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-animal-direction-signpost-thumb.webp",
+          "bytes": 38286,
+          "sha256": "208aef41784198a0fcc9c62cbf62dfb0c1338a8cb30428cbff00283767540811"
+        }
+      },
+      "proofSha256": "69810e7bb556b98b6ad7b762a4f85be63427afc0b13efa0688afe51af14918b5",
+      "pairMeanRgbDifference": 1.41128
+    },
+    {
+      "id": "zoo-visit-hippo-underwater-window",
+      "title": "Children at the Hippo Window",
+      "alt": "Two children crouch beside a rounded underwater window where a hippopotamus swims past.",
+      "description": "Blue water fills the stone-edged opening. The children face one another across the window, wearing purple and green tops with small backpacks.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-hippo-underwater-window.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "31b9a41ff609ec578dfa03cbe67bfae2e52e28b2a6e7ae75d9b429b3eab19cbb",
+      "inputSignature": "4c7f904624e7b9f1a7c840c6869ce000d699b809be42965b56911d85a53db7ea",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 751567,
+        "weightedCmykRmse": 0.801718
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1148209,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 751567,
+          "weightedCmykRmse": 0.801718
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        59,
+        131,
+        986,
+        886
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-hippo-underwater-window.pdf",
+          "bytes": 751567,
+          "sha256": "60107ed5f46c8166f28b8914c8d76de1507a8350de37d20ba3660d4d34dd0877"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-hippo-underwater-window.webp",
+          "bytes": 853464,
+          "sha256": "e80d4e6c56293b1ba963a2c4798f72942b487d3f0609746948880036fc6949d6"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-hippo-underwater-window-thumb.webp",
+          "bytes": 51724,
+          "sha256": "0687a61a050ba512497ed114595bd33fc46508e29b367cb09e99117560ba7e13"
+        }
+      },
+      "proofSha256": "1997213af90d37aa769af0e6cd964ba317fe752c66363a43f6ee083af0ac02ef",
+      "pairMeanRgbDifference": 2.44926
+    },
+    {
+      "id": "zoo-visit-giraffe-viewing-photographer",
+      "title": "Photographing a Giraffe at the Zoo",
+      "alt": "A short-haired visitor raises a camera toward a giraffe beyond a wooden viewing rail.",
+      "description": "A pale sunhat hangs from the visitor backpack. The giraffe leans its long neck into view above the mesh-sided barrier.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-giraffe-viewing-photographer.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "a54ac8c716bdd7eb2dfb2dab9a4827792370a57b74b17ea18bc10528d5caca47",
+      "inputSignature": "d6f3cb225f1d66c3748b80d7ab0da12ce68c937fc4e2d5037bb9bfab2d96a8ac",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 932641,
+        "weightedCmykRmse": 0.932931
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1393202,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1014847,
+          "weightedCmykRmse": 0.793295
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 932641,
+          "weightedCmykRmse": 0.932931
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        60,
+        49,
+        971,
+        973
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-giraffe-viewing-photographer.pdf",
+          "bytes": 932641,
+          "sha256": "651206250ae03ab15fa37173e40042e16f4c688a4c9696d5923285f2457105cf"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-giraffe-viewing-photographer.webp",
+          "bytes": 990618,
+          "sha256": "78cc05e77173956672dcd3c62a58c60e4991ca743715fbf3cb4625742557b8a4"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-giraffe-viewing-photographer-thumb.webp",
+          "bytes": 71702,
+          "sha256": "d60cf54c034d4a62cc78182ceee7db2bdc6abe22e2a0a1c25b718aced993a76e"
+        }
+      },
+      "proofSha256": "f374c653adde1fcc5b20e19e80a4e8e19a7b8c50381cbb9fb80e0abe84c9015f",
+      "pairMeanRgbDifference": 1.86051
+    },
+    {
+      "id": "zoo-visit-grandfather-panda-visit",
+      "title": "Grandfather and Girl Watching a Panda",
+      "alt": "A gray-haired grandfather and a girl sit on a bench facing a panda resting on a wooden platform.",
+      "description": "The panda rests its front paws along the platform edge. Rocks, bamboo and supporting logs surround the small viewing scene.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-grandfather-panda-visit.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "268cb50d9bcc9ce97dfa87284b4883d9e0f1b446ea616727fc2a42c79a77cd56",
+      "inputSignature": "f5f0087ba5ad88edd4aa4c9aea07b6426f7f34a77beefc54ffc7229f76528456",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 939026,
+        "weightedCmykRmse": 0.798887
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1336885,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 939026,
+          "weightedCmykRmse": 0.798887
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        23,
+        74,
+        1010,
+        958
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-grandfather-panda-visit.pdf",
+          "bytes": 939026,
+          "sha256": "c2b305d24d1dd6269d4cb9281ba098bdf49b57023354e2cf3e8ebdf6b2cc1110"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-grandfather-panda-visit.webp",
+          "bytes": 954800,
+          "sha256": "a722a913d47c1ea911732434608b0d7373f09ca2759d1a63308011426de2a9f4"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-grandfather-panda-visit-thumb.webp",
+          "bytes": 71084,
+          "sha256": "cd3bd25ecee943157911401d9ba5b17157df1dc78a085750e46638d5da464ae4"
+        }
+      },
+      "proofSha256": "b0b419587aaaae72fe68ba1b049b5dfe9b4b97e540503b22248638a219ed8ac4",
+      "pairMeanRgbDifference": 2.12839
+    },
+    {
+      "id": "zoo-visit-penguin-window-toddler",
+      "title": "Toddler Pointing at Penguins",
+      "alt": "A toddler with a red backpack points toward penguins through a tall blue zoo window while holding an adult hand.",
+      "description": "The child rises onto one foot in front of the stone window base. The accompanying adult is shown from the shoulders down.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-penguin-window-toddler.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "b053e24b2f389624e20370a2c8b60d2c3e68c5ea269d037b0f869057305752fb",
+      "inputSignature": "d3ac7c608a206d3b12659e1d59ded218bdd586057b0ff8f4ae66f056c7035c3c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 996606,
+        "weightedCmykRmse": 0.857554
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1614231,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1111837,
+          "weightedCmykRmse": 0.709281
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 996606,
+          "weightedCmykRmse": 0.857554
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        86,
+        72,
+        958,
+        987
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-penguin-window-toddler.pdf",
+          "bytes": 996606,
+          "sha256": "6e90b376b8544f10eb6813851db9e98599e8819a935cf0e489bbe6ec44065304"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-penguin-window-toddler.webp",
+          "bytes": 1003418,
+          "sha256": "9a4b8ea5f59eb95e4be370e11f5cc1e0853cf0a5e32d4a65a71ca7d22c940593"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-penguin-window-toddler-thumb.webp",
+          "bytes": 84008,
+          "sha256": "0ab108c766cb7553416db0296bed277abe2ebd226437eb4deca0f026c31fec4e"
+        }
+      },
+      "proofSha256": "07c063d8b1307a0cc28a76b8690914a411369bd5402f3ce47700eab398293d5d",
+      "pairMeanRgbDifference": 2.93606
+    },
+    {
+      "id": "zoo-visit-zebra-sketching-child",
+      "title": "Visitor Sketching a Zebra",
+      "alt": "A visitor with round glasses sketches in a notebook while seated opposite a zebra enclosure.",
+      "description": "The burgundy sweater and folding stool stand out against the pale habitat wall. The zebra faces the visitor from beyond a wood-and-wire fence.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-zebra-sketching-child.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "2cdebb58be52190615d7d3654f01433c48065534b5bb7a5f212ff39a9e1db7a2",
+      "inputSignature": "0690198a3bfec71f11d44a13f85e4c8e143e0aae2f284ff9ead1847294947e46",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 923776,
+        "weightedCmykRmse": 0.913407
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1434325,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1019144,
+          "weightedCmykRmse": 0.775081
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 923776,
+          "weightedCmykRmse": 0.913407
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        84,
+        79,
+        1008,
+        938
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-zebra-sketching-child.pdf",
+          "bytes": 923776,
+          "sha256": "70c23477324c3783c772dddca118e530208c343a710a03bd07ea96d3920aa68d"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-zebra-sketching-child.webp",
+          "bytes": 954526,
+          "sha256": "1c28e49fdf86956d1694aba122c39f9fd6db3d0e955c1f7d2d42d17d8a74b24e"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-zebra-sketching-child-thumb.webp",
+          "bytes": 70736,
+          "sha256": "970ad0495c96b0a2e7f97be0d95c3bdca09a36dbec652f05586f91141f717b7d"
+        }
+      },
+      "proofSha256": "e7881593ce2909b063f863e906f5b8ab369727295a10fc4082726566efba25ce",
+      "pairMeanRgbDifference": 2.23622
+    },
+    {
+      "id": "zoo-visit-orangutan-rope-observers",
+      "title": "Friends Watching an Orangutan",
+      "alt": "Two friends lean near a zoo viewing rail while an orangutan hangs from overhead ropes.",
+      "description": "The orange-haired animal grips two different supports. The visitors wear a lavender headscarf with a denim jacket and a green striped shirt.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-orangutan-rope-observers.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "b6decf5957c022a46f91541a5fea685b97951bb4a9e81e596a25be0c6b0b7fe0",
+      "inputSignature": "b0e7a2e00ecd76a63c729610e54beec81af588db2c3f7ae36e46197eb1b46a95",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 969598,
+        "weightedCmykRmse": 0.901755
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1484253,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1066488,
+          "weightedCmykRmse": 0.764775
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 969598,
+          "weightedCmykRmse": 0.901755
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        26,
+        36,
+        1005,
+        990
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-orangutan-rope-observers.pdf",
+          "bytes": 969598,
+          "sha256": "602560add660bc13419fd32ca4a96c3b2ab2eb2473996805997e7260032fa858"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-orangutan-rope-observers.webp",
+          "bytes": 1022118,
+          "sha256": "6a4ddb8254b78b72b6e15270cb04c4fe2220dcd5c66c98c9748f01838f91f686"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-orangutan-rope-observers-thumb.webp",
+          "bytes": 74022,
+          "sha256": "981b81997ef834ca3b0ade0ba22996043cfac7730915ba68d3d7aa9c2e6874ba"
+        }
+      },
+      "proofSha256": "5260b468ba99742a85b25d0db00aaae30d957df42208e7591531152b5a8df340",
+      "pairMeanRgbDifference": 1.8493
+    },
+    {
+      "id": "zoo-visit-flamingo-family-boardwalk",
+      "title": "Family Walking Beside Flamingos",
+      "alt": "A family follows a curved wooden boardwalk beside a pool of pink flamingos.",
+      "description": "A red-capped child walks between two adults. Reeds and rocks border the shallow blue pool beyond the railing.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-flamingo-family-boardwalk.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "771a08d6ddf96f3f53a443555a5134758e6a61061b308716bb2c5ee0ec5a053c",
+      "inputSignature": "1acbb9dd8c86e06686d85e4d54a20921a615d7f5e2fef24c37975e27e80a866e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 904240,
+        "weightedCmykRmse": 0.878942
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1445957,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1000672,
+          "weightedCmykRmse": 0.747446
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 904240,
+          "weightedCmykRmse": 0.878942
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        23,
+        108,
+        1002,
+        975
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-flamingo-family-boardwalk.pdf",
+          "bytes": 904240,
+          "sha256": "0f3e90a616249c81eca78650ee6caf83c6b5eef70e889e53b0504b41f2d4fab2"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-flamingo-family-boardwalk.webp",
+          "bytes": 1027902,
+          "sha256": "a6dcffa4e4cb0e06f4193c07373b698651497cbf4e7a28f0fdadd5a3d4b64e70"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-flamingo-family-boardwalk-thumb.webp",
+          "bytes": 73928,
+          "sha256": "0bc5666e0da4af280e685c73204f39f40be072ec05dc0c610fb9347b2fd2a8a9"
+        }
+      },
+      "proofSha256": "3dc8113c757461e5e0d14182ddf426899bcb3d3b46f0b5951e4bc13abb78519f",
+      "pairMeanRgbDifference": 2.03492
+    },
+    {
+      "id": "zoo-visit-reptile-house-visitor",
+      "title": "Visitor Looking into an Iguana Terrarium",
+      "alt": "A visitor in a navy hoodie leans toward a glass terrarium containing a green iguana.",
+      "description": "The iguana lies on a diagonal branch among broad leaves. A small lizard pictogram marks the dark display base.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-reptile-house-visitor.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "ba9b0af62bdd9d57d4676439970f275162443d164b83b176d579b6d2cf540351",
+      "inputSignature": "9e6f6e60fae2aa4a86435f542b3099781dbf7ca7afc177d8585de378036e04a8",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 50,
+        "losslessCmyk": false,
+        "bytes": 886731,
+        "weightedCmykRmse": 1.050843
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1596454,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1105616,
+          "weightedCmykRmse": 0.738147
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 997578,
+          "weightedCmykRmse": 0.883
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 886731,
+          "weightedCmykRmse": 1.050843
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        95,
+        75,
+        957,
+        962
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-reptile-house-visitor.pdf",
+          "bytes": 886731,
+          "sha256": "244f72b6fc5c4420327deda430b468e34a274cd00b497a35b2c55dcc678ad6bd"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-reptile-house-visitor.webp",
+          "bytes": 957564,
+          "sha256": "cc4804dea6809932ea4a3c74534b60ab499cd960bf46769ddd93ab1e876d570d"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-reptile-house-visitor-thumb.webp",
+          "bytes": 71916,
+          "sha256": "c14998d011d4633866b394cc149633adc51edcf748a7f2c35a3fc0099059cc23"
+        }
+      },
+      "proofSha256": "19251a98ebaa2bc4a612d765b9ee62ee64b56377729d33592f1d730de08384b1",
+      "pairMeanRgbDifference": 2.06204
+    },
+    {
+      "id": "zoo-visit-butterfly-dome-walk",
+      "title": "Girl in the Butterfly House",
+      "alt": "A girl in a coral pinafore watches butterflies beneath the curved frame of a glass butterfly house.",
+      "description": "Orange and blue butterflies hover near the domed green structure. Flowering plants gather along both sides of the open doorway.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-butterfly-dome-walk.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "b2ff2cc9a138d711a61a230255a45ecd4e39e93dde2faf1755ef1bd745bb7be8",
+      "inputSignature": "24fa9f2971b36b00f09aaa5936836298e639992973a07464e345ff6a9062ac26",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 48,
+        "losslessCmyk": false,
+        "bytes": 994686,
+        "weightedCmykRmse": 1.240005
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1756891,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1290336,
+          "weightedCmykRmse": 0.702323
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1195913,
+          "weightedCmykRmse": 0.835032
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 1086490,
+          "weightedCmykRmse": 0.998703
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 48,
+          "losslessCmyk": false,
+          "bytes": 994686,
+          "weightedCmykRmse": 1.240005
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        164,
+        47,
+        884,
+        1006
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-butterfly-dome-walk.pdf",
+          "bytes": 994686,
+          "sha256": "df185c20c39db4006c4c2cf0a39f5a06bcd03e4b7a48d76d28217767f6222195"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-butterfly-dome-walk.webp",
+          "bytes": 1052688,
+          "sha256": "ec3f3a00f549969318769f8ccabc95271ef43ae6555e01c4b537567ace12831c"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-butterfly-dome-walk-thumb.webp",
+          "bytes": 91422,
+          "sha256": "47f6cbc771013be77bbd0ca6a9d152da6ad41e91797fc45bfee1f51c327b62ec"
+        }
+      },
+      "proofSha256": "1e0c23c807838c1cc424f88295edb045e47f1ef8129e8b740e02f12d1830a690",
+      "pairMeanRgbDifference": 2.31855
+    },
+    {
+      "id": "zoo-visit-insectarium-magnifying-window",
+      "title": "Child at a Beetle Viewing Window",
+      "alt": "A curly-haired child in a green raincoat looks through a circular window at a horned beetle.",
+      "description": "The round metal frame sits in a wooden panel. Leaves and a rough branch surround the large beetle inside the display.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-insectarium-magnifying-window.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "bf2b3d924f585ff66425bb5f21048e06bf91ea52026e476b09727b420282d8c0",
+      "inputSignature": "2f0ae69f52c9a95e7f55347944545463e5363fd2ae4c541c9c485372bd9fc936",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 944973,
+        "weightedCmykRmse": 0.78047
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1383250,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 944973,
+          "weightedCmykRmse": 0.78047
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        55,
+        63,
+        940,
+        973
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-insectarium-magnifying-window.pdf",
+          "bytes": 944973,
+          "sha256": "0c1bad1f8fbad02315235bc9e34dcb94f7a4168f363a80f766c77ad28422c1e1"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-insectarium-magnifying-window.webp",
+          "bytes": 911568,
+          "sha256": "2db68be978b0273d24b3cfbfe2790149aa3f1b3be4cf7bd6c833aea24519edac"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-insectarium-magnifying-window-thumb.webp",
+          "bytes": 61720,
+          "sha256": "a41ab27a78b5b6eda6eab2ccbce1caf1b07f184ad2f9db84b884020991a55f5b"
+        }
+      },
+      "proofSha256": "6f894508231683fe4d5c97664beabba459fd812f1eb979b246df9b187a2767f0",
+      "pairMeanRgbDifference": 1.7292
+    },
+    {
+      "id": "zoo-visit-lion-lookout-binoculars",
+      "title": "Watching a Lion Through Public Binoculars",
+      "alt": "A visitor in an orange jacket uses mounted binoculars to view a lion resting on rocks.",
+      "description": "The public viewing rail separates the visitor from the habitat. A long mane and raised rocky ledge distinguish the reclining lion.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-lion-lookout-binoculars.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "440b6dd378b9931abc8b1be8c231ced0e94643812c99e5bf6f5fe55cb0a0d825",
+      "inputSignature": "e0e81f2194ad56f89fbdb07b96f51b102363a16f801b221b9eb12dd1f48e9f73",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 50,
+        "losslessCmyk": false,
+        "bytes": 891483,
+        "weightedCmykRmse": 1.057241
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1539485,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1098728,
+          "weightedCmykRmse": 0.757312
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 999753,
+          "weightedCmykRmse": 0.890969
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 891483,
+          "weightedCmykRmse": 1.057241
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        22,
+        120,
+        1003,
+        956
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-lion-lookout-binoculars.pdf",
+          "bytes": 891483,
+          "sha256": "06c0aea0f10dc21681d553c281ddc2c90123111d044d75e7741b1d11af58ce8b"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-lion-lookout-binoculars.webp",
+          "bytes": 1053318,
+          "sha256": "383fe8734f2220b860af5efe4cc2d130589dc68a4e9f64180b2a0f83e8ae347c"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-lion-lookout-binoculars-thumb.webp",
+          "bytes": 81336,
+          "sha256": "558bf22ca72c66f5d8baa8531f4dd870e6d6c1aecf9b4d8ade53dad9d9283cef"
+        }
+      },
+      "proofSha256": "7fc607d10137351fba1b5b35e0aba8c1913106c10d7a1acec3bbfdff76ee493a",
+      "pairMeanRgbDifference": 2.37527
+    },
+    {
+      "id": "zoo-visit-rhinoceros-rest-stop",
+      "title": "Older Visitors at the Rhino Window",
+      "alt": "An older couple stands beside a bench looking at a rhinoceros beyond a zoo viewing wall.",
+      "description": "The woman points toward the gray animal while her companion leans closer. Rocks, water and a broad green tree frame the habitat.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-rhinoceros-rest-stop.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "9c8f695f9c5f43238f5739d1ffae33f146a600dd2040e8adec2361e0350531e1",
+      "inputSignature": "a4a6bcbbda449584af61b9a473e8b1ad6968e10c080e09a0968be2eb2698df2f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 942799,
+        "weightedCmykRmse": 0.786259
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1364857,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 942799,
+          "weightedCmykRmse": 0.786259
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        64,
+        54,
+        1010,
+        953
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-rhinoceros-rest-stop.pdf",
+          "bytes": 942799,
+          "sha256": "4a79a894eec4c5ae99505a4bb02749cf27ae306dec11f98b7b3ec333ff385f66"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-rhinoceros-rest-stop.webp",
+          "bytes": 973446,
+          "sha256": "2ecbdbda06008f0d73eb217000f9e64b43e920a222faf911dfbc3a09e8da8a7b"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-rhinoceros-rest-stop-thumb.webp",
+          "bytes": 68484,
+          "sha256": "1c49ba80a10f3048fec81687172a9109b4976f6700612621c7576b3404b192c1"
+        }
+      },
+      "proofSha256": "c6b3a5f09b974f5ffe3cd6457d60c3b04771767ad4dc448d056770763a1f4fb8",
+      "pairMeanRgbDifference": 1.53784
+    },
+    {
+      "id": "zoo-visit-bat-house-silhouettes",
+      "title": "Family Visiting the Bat House",
+      "alt": "A family watches hanging bats through a purple-lit zoo viewing window.",
+      "description": "The rounded dark arch encloses a small nighttime habitat. The child points upward while the two adults stand close behind.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-bat-house-silhouettes.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "c93b2ecb9f09a752041c4dc60f4a16848febc6cf11c1c5a73bc96c4f90865953",
+      "inputSignature": "7390ead6727fff8f40e2788e67916d2a820d976d39e8acb89ef9817693c5b2c3",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 890684,
+        "weightedCmykRmse": 0.773821
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1326641,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 890684,
+          "weightedCmykRmse": 0.773821
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        95,
+        47,
+        950,
+        977
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-bat-house-silhouettes.pdf",
+          "bytes": 890684,
+          "sha256": "123d3a821b2fb4ffc5dcaed7e0782a049e73057bf207c84c7b8b59f4dcba5516"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-bat-house-silhouettes.webp",
+          "bytes": 852318,
+          "sha256": "b4bd94e0e343470e8146c047169c6e9c9161599055ef7dc237b84ab8e5f9a819"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-bat-house-silhouettes-thumb.webp",
+          "bytes": 47932,
+          "sha256": "099a5997a4362c411393306eb5b1ee6bec9dc5d2f333f3c7bb361fda44f3d473"
+        }
+      },
+      "proofSha256": "32a54aeb27ead261264d9a24d7f74429f749b1fc1c7b31afedf0e494bad2600a",
+      "pairMeanRgbDifference": 2.15131
+    },
+    {
+      "id": "zoo-visit-peacock-visitor-path",
+      "title": "Peacock Crossing the Zoo Path",
+      "alt": "A blue-and-green peacock walks across a zoo path while a woman and child pause behind it.",
+      "description": "Its long lowered tail trails across the foreground. An animal information panel and curved mesh barrier mark the visitor route.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-peacock-visitor-path.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "96ce0287b222966caa8738205a61ee84e7600e06449ff7a3a8ba30faae00b1e7",
+      "inputSignature": "356898952ca93c22568c6886cb6f31d6cc310340a9924f5afe26bd975a02f243",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 50,
+        "losslessCmyk": false,
+        "bytes": 909742,
+        "weightedCmykRmse": 1.07716
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1502028,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1108392,
+          "weightedCmykRmse": 0.757116
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1015792,
+          "weightedCmykRmse": 0.895957
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 909742,
+          "weightedCmykRmse": 1.07716
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        47,
+        71,
+        977,
+        963
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-peacock-visitor-path.pdf",
+          "bytes": 909742,
+          "sha256": "1caedc4c0f79cc2b02c03dda7b1ed9db58391544d1f2f6a622902ffd7541c9fd"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-peacock-visitor-path.webp",
+          "bytes": 1102486,
+          "sha256": "0e00a97ac92535b842ff3697c9906715b9d7032a29d649ac19c3ab7321d297f5"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-peacock-visitor-path-thumb.webp",
+          "bytes": 79984,
+          "sha256": "c0552cb193a33b4d1d44a0ae5f18c2ddc1e4583abb428bdc495789d87e11b0b4"
+        }
+      },
+      "proofSha256": "008fa57aa8bcfc7f8080617057231a063bef9c66e54e1818f40c75448d15a64c",
+      "pairMeanRgbDifference": 2.21382
+    },
+    {
+      "id": "zoo-visit-red-panda-tree-deck",
+      "title": "Visitors Watching a Red Panda in a Tree",
+      "alt": "Two visitors lean beside a wooden rail and look up at a red panda resting on a branch.",
+      "description": "The reddish animal curls its thick striped tail down the tree. Leaves and rounded rocks create a compact habitat around the viewing area.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-red-panda-tree-deck.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "76273a613e7e8f9da8c7c23ca3d9b951872e5b2f9acf29bbdf65f013a0bde8ba",
+      "inputSignature": "57f89f310c6756aac09e0aad57f91c61de9c626e433b13148297a856088d5d30",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 48,
+        "losslessCmyk": false,
+        "bytes": 935773,
+        "weightedCmykRmse": 1.224107
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1824753,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1286867,
+          "weightedCmykRmse": 0.696674
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1165079,
+          "weightedCmykRmse": 0.831848
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 1050548,
+          "weightedCmykRmse": 0.991207
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 48,
+          "losslessCmyk": false,
+          "bytes": 935773,
+          "weightedCmykRmse": 1.224107
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        30,
+        24,
+        993,
+        998
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-red-panda-tree-deck.pdf",
+          "bytes": 935773,
+          "sha256": "c5efbff89e52e7ef73c8fa56621092b7fd16deabdf47fafd1a397e0378d77a2f"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-red-panda-tree-deck.webp",
+          "bytes": 1160110,
+          "sha256": "b8fc8621e92a085d54326f53c57f861b46187b42789f7a7cac7610e41a947e64"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-red-panda-tree-deck-thumb.webp",
+          "bytes": 102918,
+          "sha256": "8d3fcfa0b3b982bdf43f583ff9b701d589fda8961b8b8b426b24c7e0a3cd4d50"
+        }
+      },
+      "proofSha256": "73c6bfdcb869dab2f2f27fd5c03b455e24a8d4834f5fd0732d8e5ece7e378638",
+      "pairMeanRgbDifference": 2.60969
+    },
+    {
+      "id": "zoo-visit-meerkat-observation-dome",
+      "title": "Child Inside a Meerkat Viewing Dome",
+      "alt": "A child in a yellow cap looks through a clear observation dome at three meerkats.",
+      "description": "One meerkat stands upright near the dome while the others sit and walk among the rocks. The sealed dome keeps the child separate from the animals.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-meerkat-observation-dome.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "d0e287d6d18bb3a23b2d63312786eaa5cd85406d37003caa62dd1fdddc7cbdb6",
+      "inputSignature": "5829a844841872070747977b0e95cee4c4cb8a064bfc88428df90374103fb499",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 955461,
+        "weightedCmykRmse": 0.801207
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1304785,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 955461,
+          "weightedCmykRmse": 0.801207
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        14,
+        233,
+        1003,
+        893
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-meerkat-observation-dome.pdf",
+          "bytes": 955461,
+          "sha256": "8840c411a73322b5f52881b0ac7f66e3b592588390cc8d7ab888703573a1cec4"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-meerkat-observation-dome.webp",
+          "bytes": 995700,
+          "sha256": "1b9a3f960f067c57d0ffdc7882680c7442cdd9f6259440301bc57727a75336f8"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-meerkat-observation-dome-thumb.webp",
+          "bytes": 66640,
+          "sha256": "071bebf009cc792f31316d2de46374059fa1611672ede3b70e8a1fb79c49b0e2"
+        }
+      },
+      "proofSha256": "15d52729fd4211b868f00e467ec98d736955b33ca8ffbf7913bf524facf48560",
+      "pairMeanRgbDifference": 1.60506
+    },
+    {
+      "id": "zoo-visit-sea-lion-underwater-view",
+      "title": "Friends at the Sea Lion Window",
+      "alt": "A wheelchair user and a standing friend watch a sea lion swim behind a broad underwater window.",
+      "description": "The seated visitor points toward the animal. Blue water and faint underwater rocks remain inside the rounded glass opening.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-sea-lion-underwater-view.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "947d0e9ccbc31e6b202f3a26f18bb6d321094a4533ba9d0110d708c0313ad9f3",
+      "inputSignature": "169e43c39c75319247495414022572dc74035cb63b156f9967552292d5225fda",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 962814,
+        "weightedCmykRmse": 0.851028
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1526105,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1063648,
+          "weightedCmykRmse": 0.719871
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 962814,
+          "weightedCmykRmse": 0.851028
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        66,
+        110,
+        988,
+        927
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-sea-lion-underwater-view.pdf",
+          "bytes": 962814,
+          "sha256": "531993c5a08f6111a28d8f30add3770479031a85976f9ff3d63c80315a8e9892"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-sea-lion-underwater-view.webp",
+          "bytes": 912762,
+          "sha256": "40a3de1ba1ee98b388dd077ae6dab90a6b32ce5c9ec9ae7b9d1001bdeeab0104"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-sea-lion-underwater-view-thumb.webp",
+          "bytes": 76952,
+          "sha256": "244f1b86156f2724477148f1c638e37c698e350b3b85d6155bcd8c961b96728e"
+        }
+      },
+      "proofSha256": "84e8f7c5f3ef389e3f12e4541353dc30eede2c346f5e1f6aac9facbcd1193605",
+      "pairMeanRgbDifference": 3.33743
+    },
+    {
+      "id": "zoo-visit-aviary-rope-bridge",
+      "title": "Visitors Crossing an Aviary Bridge",
+      "alt": "Two visitors cross a wooden rope bridge beneath two colorful parrots.",
+      "description": "The red and blue parrots perch on a leafy branch above the walkway. One visitor wears a yellow jacket while the other carries a backpack over a blue top.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-aviary-rope-bridge.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "0e69b39ab4be991be394480f41ea12970036a1684d07fe80d2043b757af06467",
+      "inputSignature": "c74c271fca20977007df7a2debc9d1d0bda3ad2a87056795302ced786ffe3134",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 956902,
+        "weightedCmykRmse": 0.795882
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1338941,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 956902,
+          "weightedCmykRmse": 0.795882
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        16,
+        46,
+        1009,
+        992
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-aviary-rope-bridge.pdf",
+          "bytes": 956902,
+          "sha256": "0da863daee1d5fbe2333a9f32b4a8280cfa66dae0304dbda194a38b46335b0be"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-aviary-rope-bridge.webp",
+          "bytes": 971164,
+          "sha256": "69e978dfcc153f171be08f37eaf94f2c99c5916f7865e6887690997a6b198cd9"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-aviary-rope-bridge-thumb.webp",
+          "bytes": 86274,
+          "sha256": "0fd9b8ada125294d4496434ef17533d576c1cfa4da8ad9ee8e80d1369c99e0a8"
+        }
+      },
+      "proofSha256": "4cfecb8b3d5b36f0fe865a1034433ab3289c7285da9bfadbc8c5c3e666d267eb",
+      "pairMeanRgbDifference": 3.21162
+    },
+    {
+      "id": "zoo-visit-wallaby-walkthrough-visit",
+      "title": "Watching a Mother and Joey at the Zoo",
+      "alt": "A woman and child watch a long-tailed marsupial with a joey in its pouch from a visitor path.",
+      "description": "The mother animal sits upright beside a small information panel. Low rope posts separate its grassy space from the visitors.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-wallaby-walkthrough-visit.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "739141e6ada2b57e60e0ec2419fc43b11e13c9d054b183f52fe2a967f824e7db",
+      "inputSignature": "9b7186a6aee76b40d91751a180e2b4ba61d33c288ebbd72c2b746b928687e900",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 802605,
+        "weightedCmykRmse": 0.842909
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1122393,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 802605,
+          "weightedCmykRmse": 0.842909
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        86,
+        107,
+        998,
+        942
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-wallaby-walkthrough-visit.pdf",
+          "bytes": 802605,
+          "sha256": "9905df3be5b29447c522d8e3b56b5511b692f8e6ee02f2662e5b1481967cf57e"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-wallaby-walkthrough-visit.webp",
+          "bytes": 907412,
+          "sha256": "57851a7ee4e5bb015c457b299fa94ffaeffa89e4266fd0a87c74d3ad3a77995a"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-wallaby-walkthrough-visit-thumb.webp",
+          "bytes": 66264,
+          "sha256": "bc948bca44705fc226e086572d0f0d66b464cc05f4b2497e14b9064fb4c3d2ed"
+        }
+      },
+      "proofSha256": "aeb7ce15761974593d21f2b6b784e6cad21b0fefd2dd8ecac2c75993cdf5a152",
+      "pairMeanRgbDifference": 1.98078
+    },
+    {
+      "id": "zoo-visit-footprint-scavenger-card",
+      "title": "Children Following Zoo Footprints",
+      "alt": "Three children compare a zoo activity card with large animal footprint shapes along a path.",
+      "description": "One child crouches to touch a print while another holds the card. An elephant habitat and tall giraffes appear beyond the fence.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-footprint-scavenger-card.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "6fd4eb9a6a24c480f262229eea477a0f4460c053c93b67b39556165abf9b2ada",
+      "inputSignature": "402c3533f73bef9909fb6afc251807cb422aa32a3f302b79288bacff2029275d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 48,
+        "losslessCmyk": false,
+        "bytes": 927892,
+        "weightedCmykRmse": 1.286252
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1635423,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1232700,
+          "weightedCmykRmse": 0.733419
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1136314,
+          "weightedCmykRmse": 0.866231
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 1027300,
+          "weightedCmykRmse": 1.037015
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 48,
+          "losslessCmyk": false,
+          "bytes": 927892,
+          "weightedCmykRmse": 1.286252
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        57,
+        50,
+        991,
+        980
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-footprint-scavenger-card.pdf",
+          "bytes": 927892,
+          "sha256": "48e2f90d1dd0931135eeae9c9f40fe81fd20222df9419cf2efd3bf724ba05afa"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-footprint-scavenger-card.webp",
+          "bytes": 1189474,
+          "sha256": "4a239626117ca9fb0e75f3379fa589cdb5ab49fe2917b7e4be025876e430bd11"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-footprint-scavenger-card-thumb.webp",
+          "bytes": 83466,
+          "sha256": "4987de720acbef0db1d0821cf8c224b98e8b7b66e3960a4b68600c84cfab6333"
+        }
+      },
+      "proofSha256": "b799829ad7eaf92adcddcbafbf9901bbe21bb877167c5a2fd4331924f1a415ee",
+      "pairMeanRgbDifference": 2.46767
+    },
+    {
+      "id": "zoo-visit-child-visitor-wagon",
+      "title": "Father Pulling a Child in a Zoo Wagon",
+      "alt": "A father pulls a red wagon carrying a small child with a stuffed animal.",
+      "description": "The child sits inside the low wagon wearing a red top. A tiny giraffe tag hangs from the side as the father walks ahead holding the long handle.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-child-visitor-wagon.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "1e494dbe1d55c9a94fafc6b44eb3046d0c24d07ce924499db009ed87ff36dea2",
+      "inputSignature": "36acdb3f06639ea5c0ba0bc67d028835e6c15675dcf33ff6e53faba5903f566b",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 774824,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 774824,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        62,
+        62,
+        983,
+        955
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-child-visitor-wagon.pdf",
+          "bytes": 774824,
+          "sha256": "b7f6b7a0ab6a9a98735acfe90d6cf443d4c7d5c0081c51fc3761f10726a0e01b"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-child-visitor-wagon.webp",
+          "bytes": 684976,
+          "sha256": "bc106d20293db4ac42641e96643f77c78cde19118966e65995f731f1982aeefc"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-child-visitor-wagon-thumb.webp",
+          "bytes": 46716,
+          "sha256": "18236fbf8abb17a32c95a5e26e63710b716a3101a30b5cfc24eae44da7ab5ea1"
+        }
+      },
+      "proofSha256": "d750510f8ab7561994e876b1b0c743c16dde27d42cab7ba291f888439c9306ff",
+      "pairMeanRgbDifference": 1.71228
+    },
+    {
+      "id": "zoo-visit-zoo-picnic-family",
+      "title": "Family Picnic at the Zoo",
+      "alt": "Four family members share lunch at a wooden picnic table with a giraffe sign.",
+      "description": "The gray-haired grandmother wears a blue floral blouse. Open lunchboxes, bread and small fruit pieces sit between the adults and children.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-zoo-picnic-family.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "c7a55d5e1c88692cde1dcae4b4da9b901008642dbcd9ea96d80de4ad527d5b39",
+      "inputSignature": "e6a5225cfc70dbd816770d3c05fd421b57b79006c861e739e4026c6f13bc224a",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 866608,
+        "weightedCmykRmse": 0.815433
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1259235,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 866608,
+          "weightedCmykRmse": 0.815433
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        45,
+        100,
+        977,
+        946
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-zoo-picnic-family.pdf",
+          "bytes": 866608,
+          "sha256": "4a4e5080c20d4437f035f752961b8797ba1e9110e3b5f669ecb0c6d2fee6366f"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-zoo-picnic-family.webp",
+          "bytes": 864596,
+          "sha256": "301dfe760c8ee1175c99a69a2d78b19245bd37579ce4c132d126f039a0e31777"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-zoo-picnic-family-thumb.webp",
+          "bytes": 60784,
+          "sha256": "541fc5950bbb82c57f7a66c04bbbd47c733b183104551c4a4ef80a6eb9044922"
+        }
+      },
+      "proofSha256": "f5c76cf1378f42a3c81c920944fcca8bb9e5a5642a95faa9fce536d231458258",
+      "pairMeanRgbDifference": 2.35331
+    },
+    {
+      "id": "zoo-visit-animal-cafe-lunch",
+      "title": "Friends Having Lunch at the Zoo",
+      "alt": "Two friends sit beneath a giraffe-topped parasol with a visitor map and drinks.",
+      "description": "An adult in a teal shirt holds a drink while the other studies the map. Giraffes and a viewing rail establish the cafe setting.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-animal-cafe-lunch.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "5df8b927a445efa05fb4e48910278c1ba72b9b3f8034736a1708cc6c7b7a6076",
+      "inputSignature": "dab994addbf51f2913402a2552802ee9964a305f927557c35f3967c155089cd9",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 870035,
+        "weightedCmykRmse": 0.83975
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1212583,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 870035,
+          "weightedCmykRmse": 0.83975
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        100,
+        37,
+        967,
+        966
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-animal-cafe-lunch.pdf",
+          "bytes": 870035,
+          "sha256": "8f9e7af88a0a0b4e2801c81af74a3d0aea10843e4a88bd17e4d27c45711583af"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-animal-cafe-lunch.webp",
+          "bytes": 913746,
+          "sha256": "b8a3cf5ab0d61701058ad8f729b7e9801ff22f4138ab589e112c9fc32b3fcd47"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-animal-cafe-lunch-thumb.webp",
+          "bytes": 69486,
+          "sha256": "e4f59f10e8756ea338a0b94a9338806b476b8446051b2f25edf3518eeb7131be"
+        }
+      },
+      "proofSha256": "80307a006a8125b944f9e3a87a1ef07cac2dc8b801bd562797811bbe34bd1832",
+      "pairMeanRgbDifference": 1.81158
+    },
+    {
+      "id": "zoo-visit-souvenir-plush-stall",
+      "title": "Choosing a Plush Animal at the Zoo",
+      "alt": "A child points toward stuffed animals at a wooden zoo kiosk beside an older woman with glasses.",
+      "description": "Pandas, giraffes and elephants fill the shelves beneath a green awning. The companion has a short silver bob, terracotta jumpsuit and pale shoulder bag.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-souvenir-plush-stall.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "3da389909f5049070d59a776ebcb9e20d01594e194ee7c18f26818e3bd1e987d",
+      "inputSignature": "ab3a37c2ba87a1706413f7c3d052cbbe6d080206c4091647d5fa680658a9061b",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 753920,
+        "weightedCmykRmse": 0.831997
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1125457,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 753920,
+          "weightedCmykRmse": 0.831997
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        91,
+        106,
+        901,
+        946
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-souvenir-plush-stall.pdf",
+          "bytes": 753920,
+          "sha256": "18b5507493508f42d3370c8c97e8da614b039577666e9b92ad35a147b964cc7f"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-souvenir-plush-stall.webp",
+          "bytes": 829538,
+          "sha256": "d1cb480f6e1a5a82eb74d92f7d56bd66aa261a0edacd39e8218724e0a6957e83"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-souvenir-plush-stall-thumb.webp",
+          "bytes": 54846,
+          "sha256": "ecc7c46b78c9218829a059830dbfd3c526558916d1600d0e2e15305e5a7845cc"
+        }
+      },
+      "proofSha256": "3d46f464f2339e1fac90ad3482a42cfb73c8a2f6c1a232dc237551f1aeac3560",
+      "pairMeanRgbDifference": 1.96774
+    },
+    {
+      "id": "zoo-visit-animal-photo-board",
+      "title": "Elephant and Giraffe Photo Board",
+      "alt": "Two children put their faces through openings in an elephant-and-giraffe photo board.",
+      "description": "The animal bodies are printed on a freestanding wooden display. The children hold the side edges as they smile through the face holes.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-animal-photo-board.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "8b7124d39efc13df420c2b161ba59812487d9522108019ae82132e7136523e9e",
+      "inputSignature": "78b14326a86b7487ecaa4e41e0be8540efd300dca56aca27c1ed817b446a7a35",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 935664,
+        "weightedCmykRmse": 0.747305
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1455930,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 935664,
+          "weightedCmykRmse": 0.747305
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        121,
+        17,
+        912,
+        1003
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-animal-photo-board.pdf",
+          "bytes": 935664,
+          "sha256": "d4c69853c94f09a4d1e5c5f2eb43b7f72bd785202d866d17337705dadfad6acc"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-animal-photo-board.webp",
+          "bytes": 932232,
+          "sha256": "8d6e434f60c31eeb215d630e2a82a5798a8f98851e2e7982a85a0a6d484c5bd5"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-animal-photo-board-thumb.webp",
+          "bytes": 74058,
+          "sha256": "8a89502a4ba1e2fb246a1686f3aa44c17d930fab4968fcef7cc81685dfb62282"
+        }
+      },
+      "proofSha256": "c533a297cc91a133d98f120cc2375acf19f7e99ef6018d3e1557706ddfcc683a",
+      "pairMeanRgbDifference": 2.07855
+    },
+    {
+      "id": "zoo-visit-visitor-handwash-station",
+      "title": "Washing Hands After the Petting Area",
+      "alt": "A braided girl washes her hands in an outdoor sink beneath a goat pictogram.",
+      "description": "Water and small bubbles gather around her hands. The freestanding basin, soap dispenser and exposed support pipes remain clearly visible.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-visitor-handwash-station.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "cd6ce389ca16a9925092ffd12fdb8c7143104d396b9604bdd30b5c1ffb07c313",
+      "inputSignature": "013ddd5bdf28f0cf21a21d920ef9de82ae8e844a5549847d96fc1ae157d3df45",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 834916,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 834916,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        255,
+        73,
+        794,
+        967
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-visitor-handwash-station.pdf",
+          "bytes": 834916,
+          "sha256": "0867255a3c9e7e3f3671c166d657f4c56be19248d48fa768830ecef39149ed54"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-visitor-handwash-station.webp",
+          "bytes": 646760,
+          "sha256": "9a0ac0b3b0dc1305dfbc651a71893998a775dc971f00014723c428644b362e5c"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-visitor-handwash-station-thumb.webp",
+          "bytes": 38598,
+          "sha256": "e96cab5d7e836886806ac3038ac4b2b0d7e9db78f3961c022a8f57f73b738653"
+        }
+      },
+      "proofSha256": "d29da0033463fc206d5ab94b11e4ede3b6b7085a2866b5a9ab32014b77c9c2b9",
+      "pairMeanRgbDifference": 1.26688
+    },
+    {
+      "id": "zoo-visit-gentle-goat-petting",
+      "title": "Child and Adult in the Petting Area",
+      "alt": "A child in orange overalls gently pets a brown-and-white goat beside an adult.",
+      "description": "The child wears a green bucket hat and striped shirt. A dark denim jacket and pale trousers distinguish the adult standing beside the low wooden fence.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-gentle-goat-petting.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "4dd4f70580e616c791d96a1de2b86c1329e2ebb2128503a3c13df1e1158646bd",
+      "inputSignature": "e2e450b0aa6f592847f6b8cb5d7a75f0c7129006531d14395615236abf3d355d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 729357,
+        "weightedCmykRmse": 0.870802
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1029170,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 729357,
+          "weightedCmykRmse": 0.870802
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        149,
+        52,
+        907,
+        967
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-gentle-goat-petting.pdf",
+          "bytes": 729357,
+          "sha256": "5e5df1471a9628f48b961b185a5a37735121f30cc88e59595fae2d326733a5bf"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-gentle-goat-petting.webp",
+          "bytes": 760622,
+          "sha256": "96622763377a95734f9e8d4bad4d4608e7cdcce968bc19873631e535ebe6b981"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-gentle-goat-petting-thumb.webp",
+          "bytes": 52718,
+          "sha256": "66ebf9efb8d8ed77b41b97dbfdc1bd5fcdd8a940350ece521a14e47ef8369ff4"
+        }
+      },
+      "proofSha256": "42d0af8edcaffd70b629112c1a1198577763135fe355ba38691ecc40d60357ac",
+      "pairMeanRgbDifference": 1.50532
+    },
+    {
+      "id": "zoo-visit-rainy-zoo-visit",
+      "title": "Rainy Visit to the Zoo",
+      "alt": "An adult and child in blue and yellow raincoats share a clear umbrella outside the zoo.",
+      "description": "Their bright ponchos reflect in a small puddle. A wooden ZOO arch and animal-picture signpost stand behind them.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-rainy-zoo-visit.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "559f16901c7bca94488010012096ce54386ff369c6555804d85bec54e64d2091",
+      "inputSignature": "8d8b9184ffe3f663a2d7e43376f36effbd8e224cd18dfa2aee4d6d986e46e3f0",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 875872,
+        "weightedCmykRmse": 0.764765
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1275004,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 875872,
+          "weightedCmykRmse": 0.764765
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        87,
+        55,
+        997,
+        986
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-rainy-zoo-visit.pdf",
+          "bytes": 875872,
+          "sha256": "c19e109e4d127f45ad0a16f17909dc931b91dc1946f2f5471b94d12e3dd59c5b"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-rainy-zoo-visit.webp",
+          "bytes": 1011436,
+          "sha256": "871439e060274fe7e7d0c77a88843bdf10794506fbdde53c9d2aba276e2233a2"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-rainy-zoo-visit-thumb.webp",
+          "bytes": 77764,
+          "sha256": "05d74506931ec9e4fd1225fae2421ae53378d930e1e36bde5563c74edfb455b6"
+        }
+      },
+      "proofSha256": "f98523917db41a93e9a49ab83dbe7f567b2c84f742e6527959f463efef89df4f",
+      "pairMeanRgbDifference": 4.4758
+    },
+    {
+      "id": "zoo-visit-refill-water-break",
+      "title": "Refilling a Bottle at the Zoo",
+      "alt": "A red-haired visitor fills a bottle at a water station beside a giraffe enclosure.",
+      "description": "The tall green dispenser carries a giraffe pictogram. The visitor wears a green shirt, gray shorts and a black backpack.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-refill-water-break.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "f8225908f4708aecfb253daaa856481e491266fbd3d6ecdf79a3c0c6dcaa0d41",
+      "inputSignature": "acaf0cd42e912dcfb9608a7f74c68fe2d76310c4c005ae2d5cce7e580ac7e28e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 820272,
+        "weightedCmykRmse": 0.81417
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1213532,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 820272,
+          "weightedCmykRmse": 0.81417
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        164,
+        70,
+        975,
+        980
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-refill-water-break.pdf",
+          "bytes": 820272,
+          "sha256": "9aca4110fe0aa920441e0e73711afa3e41800611a2721653acc53d90646f6966"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-refill-water-break.webp",
+          "bytes": 903790,
+          "sha256": "8c299fc9f1ab900c17844ad4265e242fbf82e432e167590bc777e5bce9c99205"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-refill-water-break-thumb.webp",
+          "bytes": 64518,
+          "sha256": "1339f8a225c10375d0e36baa8ede4385a9659b173ab426dbbf0c1bdb71865511"
+        }
+      },
+      "proofSha256": "d5c37b82aed07e833fd26618bb28c6c4e312bc0b2a38f16fd4cc26451f35f26b",
+      "pairMeanRgbDifference": 1.94488
+    },
+    {
+      "id": "zoo-visit-zoo-birthday-table",
+      "title": "Zoo Birthday Picnic",
+      "alt": "Three children wearing animal-themed party hats sit around a birthday cake at a zoo picnic table.",
+      "description": "A lion crown, elephant-ear hat and striped animal headband give each child a different look. An elephant and giraffe appear beyond the fence.",
+      "color": "Multicolor",
+      "style": "Color",
+      "source": "work/production/wave_703/source/zoo-visit-zoo-birthday-table.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "4c7f5440a05b423eebccc911aaaeec51563b761f8782fc3d89330c40e595300c",
+      "inputSignature": "c25db7bca68b0aa81a6a330bed02f243e425e0e4bb23021e2e40fa145e8b7419",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 963903,
+        "weightedCmykRmse": 0.9054
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1472191,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1061480,
+          "weightedCmykRmse": 0.767064
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 963903,
+          "weightedCmykRmse": 0.9054
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        51,
+        65,
+        977,
+        943
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-zoo-birthday-table.pdf",
+          "bytes": 963903,
+          "sha256": "f48a0012fd45020e9eeb95d66911ddf1c7e0d9e7ad2b463b5facb1770fb22181"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-zoo-birthday-table.webp",
+          "bytes": 1033924,
+          "sha256": "dccedf2b36e011b92170bb5b676d9dc50aab8ec6405387bfe6478f73edea11df"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-zoo-birthday-table-thumb.webp",
+          "bytes": 75484,
+          "sha256": "9135d03cc2573f5f60bd0c41422fd72596d992d69f209ed1c6580744a4d4acb6"
+        }
+      },
+      "proofSha256": "13b0cea9b5a889a9e830cdc2a2714428c5829db6406ed7496b41c1ddd09c68ac",
+      "pairMeanRgbDifference": 2.57062
+    },
+    {
+      "id": "zoo-visit-night-lantern-tour",
+      "title": "Lantern Tour Beside an Owl Enclosure",
+      "alt": "A guide carrying a lantern leads a woman and child beside an owl enclosure in black-and-white line art.",
+      "description": "The owl perches on a branch behind mesh. Boots, backpacks and the hanging lantern distinguish the three visitors along the path.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_703/source/zoo-visit-night-lantern-tour.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "03ab1dc78fb2e8ba2af712b26ef9be0e2505c10344daee8a2920568d38b3cd04",
+      "inputSignature": "ce386c1bb467f652c6956f593f2c1dc3364b923bf09621a518ea78d817ad41b7",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 469784,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 469784,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        37,
+        83,
+        995,
+        980
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-night-lantern-tour.pdf",
+          "bytes": 469784,
+          "sha256": "a934be9b8547b726927804f333fad2b61889900a7a3f15cc817b8d766b584243"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-night-lantern-tour.webp",
+          "bytes": 831292,
+          "sha256": "094047e4fadb47387147770baccda737bfbfeb9616f0df8c75e99710c016422b"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-night-lantern-tour-thumb.webp",
+          "bytes": 81358,
+          "sha256": "21c4eea6080a0e5894a830b8c316ebb84da045a16dd206b83ca09cd7f60a26fd"
+        }
+      },
+      "proofSha256": "d2c11bb3c90739d76f1835744c51eb4a2eb954e5589785b3f1923dfab3241a66",
+      "pairMeanRgbDifference": 5.61202
+    },
+    {
+      "id": "zoo-visit-animal-playground-slide",
+      "title": "Children at a Giraffe Playground Slide",
+      "alt": "Children climb and wait beside a giraffe-shaped playground slide in black-and-white line art.",
+      "description": "A long curved chute descends from the tall giraffe structure. Steps and handrails lead to the small platform above.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_703/source/zoo-visit-animal-playground-slide.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "944ca3e459c1e754dfe16d231000131c17602a7720ceb821b601710fd56da262",
+      "inputSignature": "b94b28342632603cf1f711db8b814265fedb4a4e8c5cbdf3a94bc9f6c4dc1830",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 373561,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 373561,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        22,
+        62,
+        1002,
+        961
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-animal-playground-slide.pdf",
+          "bytes": 373561,
+          "sha256": "b8a865f8e3765fb8f7fdfc94cc649257e4d1de9e2f4c23edbcdda70373fb8b13"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-animal-playground-slide.webp",
+          "bytes": 733286,
+          "sha256": "983ceb118e1049c3797ed34a047634515d31ab5427b29d48518ca3b2feb38e62"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-animal-playground-slide-thumb.webp",
+          "bytes": 65160,
+          "sha256": "9131363a34c2a000f2364f4a6dcbf9b960ba64f1c0afc71accfa3675859f84d1"
+        }
+      },
+      "proofSha256": "2abc818417afddf330575c420ac0d90fe5ec173dbe3b9e62a344df074292581e",
+      "pairMeanRgbDifference": 4.54671
+    },
+    {
+      "id": "zoo-visit-schoolbus-zoo-arrival",
+      "title": "School Trip Arriving at the Zoo",
+      "alt": "A teacher and children step from a school bus beside a ZOO ARRIVAL sign in black-and-white line art.",
+      "description": "The open bus doorway fills one side of the scene. An elephant pictogram and distant habitat fence mark the arrival point.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_703/source/zoo-visit-schoolbus-zoo-arrival.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "07e9dcd86bc559a24c2de502835a26b6dc3b676e3bf47cc69e1b5c9d70edd4b6",
+      "inputSignature": "af835725098c25f4fd8258068241462afca8e9ca8cabe63ea807038ab5d1ce54",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 378120,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 378120,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        24,
+        210,
+        1008,
+        873
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-schoolbus-zoo-arrival.pdf",
+          "bytes": 378120,
+          "sha256": "53d26737282113b75267c43ae2708e9d4acd407ed91ef6c23acc1b9e84451e40"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-schoolbus-zoo-arrival.webp",
+          "bytes": 700370,
+          "sha256": "36d58e4222082a348dc9c9b60a4191b51668b7c01015ec9e711c1b3caa06ce8c"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-schoolbus-zoo-arrival-thumb.webp",
+          "bytes": 58516,
+          "sha256": "ba0bdc6aca1e20029b3b1701c106a87d5e229ec2d4ea230218ae8e288feb53ac"
+        }
+      },
+      "proofSha256": "269ab0aaa0760e64bce94c8d3273ba1cb55dbcb06cecd342bee913181bb1431a",
+      "pairMeanRgbDifference": 5.91766
+    },
+    {
+      "id": "zoo-visit-lost-and-found-plush",
+      "title": "Returning a Lost Plush Penguin",
+      "alt": "A zoo attendant hands a plush penguin to a child across a guest-services counter in black-and-white line art.",
+      "description": "A mitten-and-toy pictogram marks the counter. The child reaches up with both hands while the attendant leans forward.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_703/source/zoo-visit-lost-and-found-plush.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "a6d7e6810eb72c7338e39bcb7bd0c186bdc78163e4f58dfbafc52970891819b0",
+      "inputSignature": "94b191af85bdec149c8634770461debf02c12e0165fa02a7b2308e25af23682a",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 462081,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 462081,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        59,
+        81,
+        979,
+        962
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-lost-and-found-plush.pdf",
+          "bytes": 462081,
+          "sha256": "a78daa87e7672fea587c728901c7851b860e5e963c50b2d9193358d0add90fec"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-lost-and-found-plush.webp",
+          "bytes": 770400,
+          "sha256": "a88876e5650bb142e03052569796e5436d3f6288b81978ba531922ed75c3af69"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-lost-and-found-plush-thumb.webp",
+          "bytes": 73964,
+          "sha256": "e54670aef855b4ec92007fea71376bf81ab2acc836045424c4c23cf939952c63"
+        }
+      },
+      "proofSha256": "27e6a392702412491a3e9ffe028c2277a0dbd0bf11cfe50189a1ddee45b04501",
+      "pairMeanRgbDifference": 5.66671
+    },
+    {
+      "id": "zoo-visit-touchscreen-map-kiosk",
+      "title": "Visitors at a Zoo Map Kiosk",
+      "alt": "Two visitors stand beside a freestanding animal-picture map kiosk in black-and-white line art.",
+      "description": "The taller visitor points toward a circular animal symbol. A younger companion holds a folded map while both look at the roofed display.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_703/source/zoo-visit-touchscreen-map-kiosk.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "d2953624c4792fb3ce2847a0e56c0d41083324c8e3608f03cb89f6b87573cd85",
+      "inputSignature": "dcb1c5b40f36485aea2c944ba203b200cb6c310982fb6c9fda3ccf977120499c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 773428,
+        "weightedCmykRmse": 0.7854
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1052550,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 773428,
+          "weightedCmykRmse": 0.7854
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        108,
+        122,
+        924,
+        949
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-touchscreen-map-kiosk.pdf",
+          "bytes": 773428,
+          "sha256": "c5cb8d732f9049e60dc12ac5c31ce1da18568d8dd5a4aded5c07057caa73c841"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-touchscreen-map-kiosk.webp",
+          "bytes": 677978,
+          "sha256": "a168a083427ab43cef0799a8a50046aadfaaead7f264a2b886d49eb03f0597fc"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-touchscreen-map-kiosk-thumb.webp",
+          "bytes": 55552,
+          "sha256": "65c333dddd8c1dfce95a1c502e1111d08ba2137b49680184d152369db63ae63c"
+        }
+      },
+      "proofSha256": "ff2ffbc3aa67fa5c6eb1df5650e9524b64648b7d6b08cfa056e5e584e4e47d4c",
+      "pairMeanRgbDifference": 3.36192
+    },
+    {
+      "id": "zoo-visit-family-souvenir-photo",
+      "title": "Family Posing for a Zoo Photograph",
+      "alt": "A family of four poses on a curved animal-decorated bench before a tripod camera in black-and-white line art.",
+      "description": "The two children sit between the adults. Small animal silhouettes along the bench back reinforce the zoo setting.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_703/source/zoo-visit-family-souvenir-photo.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "9ee67eed44556263df8dd8a61d33bf819e3a669a90559c5bcbff7ebce114019d",
+      "inputSignature": "a2238e52c651352d717e0e4f5c0aab71f489d47dec25700d0c677b8423b44dd3",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 387732,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 387732,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        17,
+        96,
+        1007,
+        982
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-family-souvenir-photo.pdf",
+          "bytes": 387732,
+          "sha256": "a5bdd21dbec3f516526b4020be81ccfde70600401361dccbcfae02fc8b2188ea"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-family-souvenir-photo.webp",
+          "bytes": 752172,
+          "sha256": "802841c13dcbd5afe3d3c472a3c239f8331972922fcd087d3b77e29f3ad56c0d"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-family-souvenir-photo-thumb.webp",
+          "bytes": 64856,
+          "sha256": "39e0c4fcfba4eea67ac2a4c3d97c815089aad9127f84ff10c9a471079c255e2b"
+        }
+      },
+      "proofSha256": "0b8f36de94b73ea5d068b97d213d9ef5d8506a64a5dde1fcfd977a4d4fbbdd40",
+      "pairMeanRgbDifference": 5.21256
+    },
+    {
+      "id": "zoo-visit-tactile-animal-panel",
+      "title": "Visitor Exploring an Elephant Relief Panel",
+      "alt": "A visitor with sunglasses and a white cane touches an elephant relief panel beside a child in black-and-white line art.",
+      "description": "The sloping panel stands at hand height near an elephant viewing area. The child watches the adult trace the raised animal shape.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_703/source/zoo-visit-tactile-animal-panel.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "a232eee286e02c9aab11428076a58b37743f4c3114a0899a80f7c84fd962166d",
+      "inputSignature": "769129275f217f4c3c48b0b65b1bccc623ea9ad88918477e07820750d475a1f3",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 413343,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 413343,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        34,
+        93,
+        1014,
+        941
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-tactile-animal-panel.pdf",
+          "bytes": 413343,
+          "sha256": "ed48f5b966d4ffd86c454927dca3be0aedbedca9e1b6dcbeae12661be2c78714"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-tactile-animal-panel.webp",
+          "bytes": 770726,
+          "sha256": "95491e84fc1544d25206f1a2fc7c00998fb40fc4973daf9c4529ce64e7a8d191"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-tactile-animal-panel-thumb.webp",
+          "bytes": 70966,
+          "sha256": "44a0bd33022c74dcb6a5b05bdf53b533ad5aba02a174d9256142bafdce9199b7"
+        }
+      },
+      "proofSha256": "828bfaa5faf43d574c49bcbb2cae6bbe845e48627bfdf884b6cd671e46a1ddaa",
+      "pairMeanRgbDifference": 5.32478
+    },
+    {
+      "id": "zoo-visit-child-activity-clipboard",
+      "title": "Zoo Activity Clipboard and Binoculars",
+      "alt": "An animal checklist clipboard, pencil and binoculars form a black-and-white outline still life.",
+      "description": "Elephant, penguin, giraffe and butterfly pictures sit beside four empty checkboxes. The tilted clipboard and binoculars remain separate, easy-to-see objects.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_703/source/zoo-visit-child-activity-clipboard.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "4b2e402d5bdaaae2a9acbda0bdd679450d8a2e90d079ba225d41f8a030e0c2ed",
+      "inputSignature": "688a2dbc1890cc44924d6f2451ee80d9748282ec43854a29f77761f7f2afc853",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 235464,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 235464,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        67,
+        128,
+        965,
+        940
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-child-activity-clipboard.pdf",
+          "bytes": 235464,
+          "sha256": "59b055947f2805eb439058102e08cde807d6587f52896f89acda528c3f24fba9"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-child-activity-clipboard.webp",
+          "bytes": 587328,
+          "sha256": "22e7f7f320a743baa10c92c1c50ccbb888a24cb2cc5688990daebe0987c05ffa"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-child-activity-clipboard-thumb.webp",
+          "bytes": 35222,
+          "sha256": "68934c23a04666ad72e58c9e942939b1dbf53bab20a302e7770efb1aeac3dc55"
+        }
+      },
+      "proofSha256": "675e6825f8157f56ea8283365c8742d85718f1bb0e4b2d386336eca7ea0d2118",
+      "pairMeanRgbDifference": 3.44231
+    },
+    {
+      "id": "zoo-visit-exit-souvenir-poster",
+      "title": "Waving Goodbye at the Zoo Exit",
+      "alt": "A child carrying a souvenir bag waves beside an exit arch with a right-pointing arrow in black-and-white line art.",
+      "description": "Animal faces decorate the backpack and bag. A giraffe and elephant appear beyond the simple gate.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_703/source/zoo-visit-exit-souvenir-poster.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "d9161adbd31ada5369d552eadb0fd8e8187752563426b4ef21b3268561166ca1",
+      "inputSignature": "c063ef8172d19dc7c02ad8c95c5321c541ce5e86a359f4070f39ada26adc47b4",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 424251,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 424251,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        65,
+        206,
+        970,
+        947
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-exit-souvenir-poster.pdf",
+          "bytes": 424251,
+          "sha256": "d4f0b9cd435d3d26348a91eb767987275561e9accbb15e7d18e37de7196d6f83"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-exit-souvenir-poster.webp",
+          "bytes": 734654,
+          "sha256": "2b2d93e8029cddbec3fd3b6f06d2b5642b435e63f0d395fb7ea4b5c9a65c859a"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-exit-souvenir-poster-thumb.webp",
+          "bytes": 67518,
+          "sha256": "7c83fb60cf0a43131b7cc79b1351361a4a7a16af643b619d913b24299aa5ff24"
+        }
+      },
+      "proofSha256": "e31c5793bc5d13b015804739d29449142723d9669bf93502554057b52dc8f4e6",
+      "pairMeanRgbDifference": 4.24521
+    },
+    {
+      "id": "zoo-visit-quiet-viewing-rest-bench",
+      "title": "Resting Beside the Tortoise Habitat",
+      "alt": "An older visitor and child sit on a bench beside two tortoises in black-and-white line art.",
+      "description": "The tortoises occupy a raised grassy area behind a low wall. The wide bench scene leaves generous open shapes for coloring.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_703/source/zoo-visit-quiet-viewing-rest-bench.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "zoo",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "7f1c5311f06edadac175744e67f4d039bf00de216ff5b0f9d79b78652194d73f",
+      "inputSignature": "162657c3c438a89cb845fb817910eed6fede3bb23bcc4f04e6705cc24a7689a6",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 959074,
+        "weightedCmykRmse": 0.940365
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1300101,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1031445,
+          "weightedCmykRmse": 0.779141
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 959074,
+          "weightedCmykRmse": 0.940365
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        23,
+        202,
+        1007,
+        849
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_703/exports/zoo-visit-quiet-viewing-rest-bench.pdf",
+          "bytes": 959074,
+          "sha256": "e3ccabb772a0352ecf2b057226b68463cef426499384fe2a08b20632332fbb38"
+        },
+        "webp": {
+          "path": "work/production/wave_703/exports/zoo-visit-quiet-viewing-rest-bench.webp",
+          "bytes": 781684,
+          "sha256": "2c13fb797426b1bbda6fd51f59a66c0910435c3db03dd816fbae8cf8ec0c236e"
+        },
+        "thumb": {
+          "path": "work/production/wave_703/exports/zoo-visit-quiet-viewing-rest-bench-thumb.webp",
+          "bytes": 63864,
+          "sha256": "06bac9dfe54a4c9b716393edc68236c22f1a42efc4947720bab26fe184a8fe00"
+        }
+      },
+      "proofSha256": "d05abb28421e5dab735301fe6086bf956145bff5a61a029b7dd6c27a6372d66e",
+      "pairMeanRgbDifference": 2.83014
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-29T13:05:26.388915+00:00",
+  "screenReviewEvidence": [
+    "work/production/wave_703/pdf-review-1.jpg",
+    "work/production/wave_703/pdf-review-2.jpg",
+    "work/production/wave_703/pdf-review-3.jpg",
+    "work/production/wave_703/pdf-review-4.jpg",
+    "work/production/wave_703/pdf-review-5.jpg"
+  ],
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-29T13:41:42.132Z"
+}

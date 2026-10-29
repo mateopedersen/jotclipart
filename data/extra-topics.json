@@ -2870,5 +2870,35 @@
     "target_original_artworks": 50,
     "focus_note": "Up arrows, pointing hands and stair-climbing characters show direction and movement. Choose road signs, classroom word cards, rising balloons, upload symbols or black-and-white outlines; the collection also includes a wheelchair ramp, a growing sunflower and an ascending mountain trail.",
     "supplemental": true
+  },
+  {
+    "id": 518,
+    "keyword": "Background clipart",
+    "slug": "background",
+    "cluster": "Backgrounds & textures",
+    "wave": "API_WAVE_700",
+    "target_original_artworks": 50,
+    "focus_note": "Explore illustrated landscapes and ready-to-use backdrops, from spring meadows and snowy villages to science, music and seasonal frames.",
+    "supplemental": true
+  },
+  {
+    "id": 519,
+    "keyword": "Border clipart",
+    "slug": "border",
+    "cluster": "Design elements",
+    "wave": "API_WAVE_702",
+    "target_original_artworks": 50,
+    "focus_note": "Choose open frames, decorative corners and illustrated edges, including botanical, geometric, classroom and seasonal designs.",
+    "supplemental": true
+  },
+  {
+    "id": 520,
+    "keyword": "Zoo clipart",
+    "slug": "zoo",
+    "cluster": "Animals",
+    "wave": "API_WAVE_703",
+    "target_original_artworks": 50,
+    "focus_note": "Explore zoo visits through animal viewing, family outings, entrance signs and printable line drawings of visitor activities.",
+    "supplemental": true
   }
 ]

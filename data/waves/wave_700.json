@@ -1,0 +1,4238 @@
+{
+  "wave": "wave_700",
+  "status": "AWAITING_CDN",
+  "actualExportedDrawings": 50,
+  "resumed": 49,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "background-spring-meadow",
+      "title": "Spring Meadow with Daisies",
+      "alt": "Green meadow with white daisies, small pink flowers and distant blue hills under a bright sky.",
+      "description": "Tall grass and flowers fill the lower edge, opening onto rolling fields. Soft clouds and layered hills leave an airy blue area above.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-spring-meadow.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "8b2f48efcb2f33054f6cbf7cefba22a91fbb6a6ac57be2da2b49d73fcc1b48a4",
+      "inputSignature": "39b7b6997875692c264b4c73c1ce00034048f0566e007156fc30df1a1d56d8e4",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 827783,
+        "weightedCmykRmse": 0.728281
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1196681,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 827783,
+          "weightedCmykRmse": 0.728281
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        45,
+        172,
+        983,
+        865
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-spring-meadow.pdf",
+          "bytes": 827783,
+          "sha256": "d9f32c61826b5e9ba7d864e8430db9527f94e7479a85f6e824b64efcdafa0143"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-spring-meadow.webp",
+          "bytes": 1065438,
+          "sha256": "fb17cffaedc7d89a0ff5e9273d6a4cf2fc5bc99ec54d1f8dcc26f918da8e0732"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-spring-meadow-thumb.webp",
+          "bytes": 69494,
+          "sha256": "e7ca4210ff100c868a7fcbfb4f7d14d5cf12ea21476cedb0393c6bae9f09bac2"
+        }
+      },
+      "proofSha256": "2764810e78348d5cf55999e34df7e3e36c0d2dd5fcb6149d509e33cad4f0c967",
+      "pairMeanRgbDifference": 4.08757
+    },
+    {
+      "id": "background-autumn-forest",
+      "title": "Birch Trees Around an Autumn Meadow",
+      "alt": "White birch trunks frame an orange autumn meadow, a pond and a low sun over mountains.",
+      "description": "Red and gold leaves hang above the open meadow. Dark evergreens stand below the distant blue mountain ridge, and light reflects in the small pond.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-autumn-forest.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "0b569ddea9ea5b1e3307603a13a2a22dd39d404f994846a9c48fd9d73e0e2dd4",
+      "inputSignature": "2afca2e5b8eda31ffd924f5b125bb4656c977f7afb1e46ceaff31e78a74ef11b",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 910720,
+        "weightedCmykRmse": 0.817646
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1507258,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1006426,
+          "weightedCmykRmse": 0.701386
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 910720,
+          "weightedCmykRmse": 0.817646
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        20,
+        25,
+        1000,
+        992
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-autumn-forest.pdf",
+          "bytes": 910720,
+          "sha256": "a13e2dd87079eeae1b57129ce72c437a26746f4014951623d65dd6866ba57f7f"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-autumn-forest.webp",
+          "bytes": 1080724,
+          "sha256": "43e38dbe0160eebd5038e4f9cae9a47dbec7e0b31e6ef1b63961bda8db6d558b"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-autumn-forest-thumb.webp",
+          "bytes": 88114,
+          "sha256": "7b0d8120e3c7a8bec3012f70f0148a24874bb7a90add7d8ee60fa442869cd886"
+        }
+      },
+      "proofSha256": "8e58989bd85f7d3088f5201996c1ea1e414f416c92df22238398473c6eb08548",
+      "pairMeanRgbDifference": 4.21893
+    },
+    {
+      "id": "background-winter-village",
+      "title": "Snowy Village Lane",
+      "alt": "Snow-covered village houses face a narrow lane with a distant church spire.",
+      "description": "Warm window light contrasts with the blue snow and evening sky. Bare branches, evergreen trees and falling flakes fill the street edges.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-winter-village.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "ed09f90b8166125b45a76b8d39b64a67516fd6b67233f3e9d86c73fb1726b5ad",
+      "inputSignature": "b01119da6298edcf8dd47e86ee25b98453a23279366f3c3336697e3d96cd54c9",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 50,
+        "losslessCmyk": false,
+        "bytes": 966165,
+        "weightedCmykRmse": 0.978659
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1628833,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1172861,
+          "weightedCmykRmse": 0.687055
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1076150,
+          "weightedCmykRmse": 0.819343
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 966165,
+          "weightedCmykRmse": 0.978659
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        69,
+        144,
+        957,
+        922
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-winter-village.pdf",
+          "bytes": 966165,
+          "sha256": "180df70cf6aa6915d68f7b721affafe8f3b0215354d1d71a41a3bd1d6a9becad"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-winter-village.webp",
+          "bytes": 1146900,
+          "sha256": "08f5bfac4ea720ce2234f2aad68da8d27ecff7e2cebf65c164021dd5f0519855"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-winter-village-thumb.webp",
+          "bytes": 90332,
+          "sha256": "99b5a90be06f3bec2d32dce87878b3af5597845494042936af98ef9cf10f1e07"
+        }
+      },
+      "proofSha256": "cbd2fdb224deb4db73d94057503a1ed673826ebc47a874b3a21ee39e7f2f7ead",
+      "pairMeanRgbDifference": 2.40408
+    },
+    {
+      "id": "background-summer-beach",
+      "title": "Sunny Beach with Striped Umbrellas",
+      "alt": "Sandy beach framed by striped umbrellas and dune grass beside turquoise waves.",
+      "description": "Two empty wooden chairs sit beneath the left umbrella. Pale surf bands and small clouds divide the sea from the bright blue sky.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-summer-beach.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "4fcec590c01711b671c3b718fbfae98f3c7f4c3208f2c220b9d5ed8cc80a1b70",
+      "inputSignature": "fb9d277d8ee4e28f870744fe0e018f7b6090588a49db98efac2c44e1e86d03c2",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 732851,
+        "weightedCmykRmse": 0.720706
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1145928,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 732851,
+          "weightedCmykRmse": 0.720706
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        32,
+        195,
+        1002,
+        903
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-summer-beach.pdf",
+          "bytes": 732851,
+          "sha256": "ef62d3ea578f5dee3b833e1f014a5f88a3155e40edd8284b4076d635ca156364"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-summer-beach.webp",
+          "bytes": 1069650,
+          "sha256": "374af286787ca6474a2b818a5f60c00a3bf9fd5b15156b9bf5b9d9d348788a5c"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-summer-beach-thumb.webp",
+          "bytes": 65102,
+          "sha256": "8bf077f034ed50dde29a39b2c772c781c4a42358ccb78293fd49ca48146952b6"
+        }
+      },
+      "proofSha256": "c9098860ed54edd6f5c6eebba0ce273e6ec4de0928835cdfb9dc3107dc95d11f",
+      "pairMeanRgbDifference": 3.54994
+    },
+    {
+      "id": "background-rainbow-hills",
+      "title": "Rainbow over Rolling Green Hills",
+      "alt": "Broad rainbow arcs between white clouds above green hills and tiny flowers.",
+      "description": "Bushes flank the layered hills below the colorful arch. The simple cartoon shapes leave a clear patch of sky in the middle.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-rainbow-hills.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "564495b4bd833f398036ad68540225472945ea115e4c594782d7c637675032b7",
+      "inputSignature": "53721ae51720545056ddebc3642fcb167a2a169f5e0894bf303d82a6b5e11467",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 866932,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 866932,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        24,
+        152,
+        1007,
+        879
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-rainbow-hills.pdf",
+          "bytes": 866932,
+          "sha256": "ac30d61d72b264b498bb3dd4fb9f008fa6f7ecbfdf8677780454200ce63377b2"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-rainbow-hills.webp",
+          "bytes": 726814,
+          "sha256": "3b1159b482231c3d4978de48d9008626a44df7993c1f733f29bcd7acb61b3846"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-rainbow-hills-thumb.webp",
+          "bytes": 49510,
+          "sha256": "e74dcc96330f4d116c1b1dd35f9b417fb1b9c616423fc1c12b2350bf4f99f71f"
+        }
+      },
+      "proofSha256": "90e6421f392dedc5a248008de793a60e1e15fcaa9a9b8e18c2f6195e4a6625d0",
+      "pairMeanRgbDifference": 3.33841
+    },
+    {
+      "id": "background-sunrise-mountains",
+      "title": "Sunrise above Layered Mountains",
+      "alt": "Golden sunrise illuminates layered blue mountains above dark foreground pines.",
+      "description": "The sun rests low on the right horizon. Rocky grass-covered slopes frame the lower edge beneath the peach-colored sky.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-sunrise-mountains.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "88744b66600539d9ab436423835b29446848f84947aecf75dadf3948d8e433a4",
+      "inputSignature": "c63e320e9b2d6014b9c59a716b61923258e16721374e403af72d22e522cefa65",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 780707,
+        "weightedCmykRmse": 0.750294
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1225423,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 780707,
+          "weightedCmykRmse": 0.750294
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        51,
+        157,
+        975,
+        914
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-sunrise-mountains.pdf",
+          "bytes": 780707,
+          "sha256": "d7ac64d03fae71d0d026ec3832cc668749e0d60d5ba3a62af70b59f2f3e4db5e"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-sunrise-mountains.webp",
+          "bytes": 902006,
+          "sha256": "32b6f20ebd8653b70e123e8b0c288248af0342b80ec79ac8658ac992e9d7c497"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-sunrise-mountains-thumb.webp",
+          "bytes": 52930,
+          "sha256": "bf190869ce33b00036b04207607637763773b25d46e5d9fc1d5a5e8dd9949a86"
+        }
+      },
+      "proofSha256": "334f0591be59b488531ecf6733e120209e8e4af3ad1700cd6b04c3e3c55e53e4",
+      "pairMeanRgbDifference": 1.71105
+    },
+    {
+      "id": "background-desert-dunes",
+      "title": "Desert Dunes at Sunset",
+      "alt": "Warm sand dunes roll between tall cacti beneath a pink and orange sunset sky.",
+      "description": "Soft purple mountains sit behind the dunes. Small desert plants punctuate the foreground while the setting sun brightens the right horizon.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-desert-dunes.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "3b0320f480cd693025254cda37a285b116b4c6b6cbd2461f7d4399065f72bca6",
+      "inputSignature": "1ee6108fd73158437a0ec14a9f3a5c3c2431970fdf1878ca3eaedfea4b74db5f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 995343,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 995343,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        41,
+        160,
+        990,
+        868
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-desert-dunes.pdf",
+          "bytes": 995343,
+          "sha256": "f960356254715a6284c6ff0271040820f16fc40794842d49486d99e51041da58"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-desert-dunes.webp",
+          "bytes": 789066,
+          "sha256": "f2bd1b6bf3d8c2894ed66c5a0ce71a13be5d369bd25e59806c6c5707fd05632c"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-desert-dunes-thumb.webp",
+          "bytes": 43386,
+          "sha256": "38fc4a38e572bb057daa863a9c2cdcbb37ca07f88b91c587519992cb9f9254fb"
+        }
+      },
+      "proofSha256": "d3449c0811c2d41752bb1d4f142ef7e67b9fb9419ff715d2dda1a561c5340d73",
+      "pairMeanRgbDifference": 1.83936
+    },
+    {
+      "id": "background-night-sky",
+      "title": "Moonlit Lake and Constellations",
+      "alt": "Full moon and small constellation lines shine above a dark mountain lake and pine silhouettes.",
+      "description": "Cloud banks follow the distant ridges, and moonlight forms a narrow reflection on the water. The open night sky holds scattered stars.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-night-sky.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "a7f91f5bb1b9bc34b083ccb3040238c3a27e40f10f4fce646b84967b56a64ded",
+      "inputSignature": "f47a2336e0254a8f84000d307c38ba64d6f60a47fb719c950362b9fdc02656e2",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 656038,
+        "weightedCmykRmse": 0.735217
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1031755,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 656038,
+          "weightedCmykRmse": 0.735217
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        75,
+        128,
+        950,
+        926
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-night-sky.pdf",
+          "bytes": 656038,
+          "sha256": "20d7df0c10e2a6893690678ed5e06ac01b6431c6acf32e74aed81a3b622e1d13"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-night-sky.webp",
+          "bytes": 779942,
+          "sha256": "a31e385945389121cb715b89309cf602a742845ccc6d7e933dfdc0bda63ee5e9"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-night-sky-thumb.webp",
+          "bytes": 34284,
+          "sha256": "45dcff12296d0648a3b4d2f13a18a7de2d34eb8abe37ce59f781c90797fd0086"
+        }
+      },
+      "proofSha256": "29b583b7fded8c6f72f6dddbdad9e38b75ecf7399fc6bb790377870065bc529b",
+      "pairMeanRgbDifference": 2.84973
+    },
+    {
+      "id": "background-underwater-reef",
+      "title": "Underwater Reef with Tropical Fish",
+      "alt": "Blue underwater scene framed by coral, tall aquatic plants and small colorful fish.",
+      "description": "Sunlight filters through the rippled surface above an open sandy center. Pink branches and yellow tube-like coral add color along the bottom.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-underwater-reef.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "6404cd0dc95b592c20a40f7f6589c1df242ce0c1c3903cdad57dab4d721b1ec8",
+      "inputSignature": "27e56f0c42d021f64e90155312c87ad0a43cde5538374269675ec17a25b5a23f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 836870,
+        "weightedCmykRmse": 0.718638
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1246160,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 836870,
+          "weightedCmykRmse": 0.718638
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        18,
+        160,
+        1007,
+        902
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-underwater-reef.pdf",
+          "bytes": 836870,
+          "sha256": "0e89fc41c9abf1085cf7af55ee437dec9910bc22e9d58385f367e0240413a304"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-underwater-reef.webp",
+          "bytes": 1056950,
+          "sha256": "810ec38442df3b1e4bd4795d8292119788ce49315dc7f719722356fd71ca198e"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-underwater-reef-thumb.webp",
+          "bytes": 67142,
+          "sha256": "8eef7edd1a2452e8130767d93c02263eef4a9bf7fd3e280eda2c444745b5884b"
+        }
+      },
+      "proofSha256": "6826bbeedc1aceb58723f9f84c4d965d0ca4f2a7136063c329c2afe8e2d605bd",
+      "pairMeanRgbDifference": 4.04099
+    },
+    {
+      "id": "background-woodland-mushrooms",
+      "title": "Mushroom Clearing with Ferns",
+      "alt": "Red spotted mushrooms and brown mushrooms flank a green woodland clearing.",
+      "description": "A moss-covered stump rises behind the brown caps, while fern fronds and scattered orange leaves frame the open grassy center.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-woodland-mushrooms.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "4a1918d4d835ef3debca750b597593e2d039855e33b9874af66b90c3ee96652e",
+      "inputSignature": "d33357206db452effc3bf5a1c15fb69b2ce2307999196475b7fff223a15fce0a",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 856053,
+        "weightedCmykRmse": 0.839997
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1098225,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 856053,
+          "weightedCmykRmse": 0.839997
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        30,
+        237,
+        1000,
+        838
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-woodland-mushrooms.pdf",
+          "bytes": 856053,
+          "sha256": "19fff8df2730b192d2d83146bb88aadeda6117b54732bc172e519db3a6ad5d59"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-woodland-mushrooms.webp",
+          "bytes": 931878,
+          "sha256": "47941905e6a5135d4a00d0b8309b1031351202380fbe91ea3e6cee715f68c1f3"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-woodland-mushrooms-thumb.webp",
+          "bytes": 67550,
+          "sha256": "1e1bdf8703abc69683160b40421320859465a59081a2e22eda955ed3af351094"
+        }
+      },
+      "proofSha256": "5780d66e306448dd3663578e8f29804024b1c1fcaf79bc751372b798ce77a6f4",
+      "pairMeanRgbDifference": 3.55207
+    },
+    {
+      "id": "background-school-chalkboard",
+      "title": "Green Chalkboard with School Doodles",
+      "alt": "Wood-framed green chalkboard with a vertical row of colorful school doodles on the right.",
+      "description": "A light bulb, heart, books, pencil and globe decorate one side. Most of the chalkboard remains empty for a message or lesson heading.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-school-chalkboard.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "7c30ba14d0c4b4e8927314e516a3871052891204a792912727a70e7f8d55bd00",
+      "inputSignature": "c3ac0ba75154c92a8205e4bd085d09a8bd6a77e422736b1541082f255b4984b2",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 980318,
+        "weightedCmykRmse": 0.769882
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1336718,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 980318,
+          "weightedCmykRmse": 0.769882
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        49,
+        168,
+        975,
+        843
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-school-chalkboard.pdf",
+          "bytes": 980318,
+          "sha256": "bdbf5345ea74b04ce6ba18886e89b01ffde0d2023d26e019765801dceb4abf91"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-school-chalkboard.webp",
+          "bytes": 854834,
+          "sha256": "82cecb2cc40d423016226894d9e46e780931e06f409a62d30cfe3e4d307ba55e"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-school-chalkboard-thumb.webp",
+          "bytes": 26768,
+          "sha256": "daabd13730013cf7aa9b8d3721a5cb1653f60ce2ba0a7d03a81702ef8622f4c1"
+        }
+      },
+      "proofSha256": "95738d6751a78f927c887e3bb680963aede6040aee77bbc4ad7c39903a42b798",
+      "pairMeanRgbDifference": 1.19179
+    },
+    {
+      "id": "background-notebook-paper",
+      "title": "Ruled Notebook Page with Pencil",
+      "alt": "Cream ruled notebook sheet with punched holes, a paper clip and yellow pencil.",
+      "description": "A red margin line runs beside the holes on the left. The pencil lies diagonally across the lower right, leaving most ruled lines clear.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-notebook-paper.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "02a6ea831d4aef4382ede630e164199b168641886b1a7d82d7a93ef75473e101",
+      "inputSignature": "e151c858656e02ba09421d420f4e68b1f78d46165bf7770cfc0e1f1ecb71e5d4",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 790131,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 790131,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        154,
+        48,
+        912,
+        959
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-notebook-paper.pdf",
+          "bytes": 790131,
+          "sha256": "c19846272a1802058703308c71ec972ee50bc87b358e00dd00a46f653c1bb06b"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-notebook-paper.webp",
+          "bytes": 733244,
+          "sha256": "e19b80cfc334c970b5066dc4f7d0a17458732233a9bdbe7c14ff3f32264e1216"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-notebook-paper-thumb.webp",
+          "bytes": 27616,
+          "sha256": "b2ddb02756f084d4c1c1a45776581fb75e5dea45c65121a1711d2aae1cc01500"
+        }
+      },
+      "proofSha256": "e9dee73a12551b61e0dc19cb8dc9f475aa89c726d5c97b8c65fd8a2d20247c62",
+      "pairMeanRgbDifference": 0.7571
+    },
+    {
+      "id": "background-art-table",
+      "title": "Colored Pencils and Paint Splashes",
+      "alt": "Short colored pencils surround a cream center with bright watercolor splashes.",
+      "description": "Cool blues and greens gather at the upper left, while reds and oranges occupy the opposite corner. Purple pencils complete the lower edge.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-art-table.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "cd0a3d8694b56d7c2381c88f0918137cfdb204c8fc591f5d3ef0ce35746cf95e",
+      "inputSignature": "5e76a0bbcff181e45651df2ca6d2607626270ca98b7c7537b051eaf2dfe47f01",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 931347,
+        "weightedCmykRmse": 0.810048
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1508269,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1023776,
+          "weightedCmykRmse": 0.678805
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 931347,
+          "weightedCmykRmse": 0.810048
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        69,
+        84,
+        966,
+        945
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-art-table.pdf",
+          "bytes": 931347,
+          "sha256": "3033eb29772bcde227ae13b1b87eab2d439c4e2188619143f334a25383d61e48"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-art-table.webp",
+          "bytes": 1251586,
+          "sha256": "d2be2283036c2b65992ea5cf661e1f85502e5cfd28a5cee4c81b63265660b7ec"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-art-table-thumb.webp",
+          "bytes": 94340,
+          "sha256": "d1d4e83465eae51c15f7cfb4c095774da556daa6a95ac5bad7c440ec7ae80704"
+        }
+      },
+      "proofSha256": "7dc6fb9ebb9499f3c3094494413f65c1ef268d2d8ae41ba868157b6ff028f098",
+      "pairMeanRgbDifference": 2.7367
+    },
+    {
+      "id": "background-science-lab",
+      "title": "Science Frame with Microscope and Molecules",
+      "alt": "Pale blue science frame with small molecular models and a microscope in the lower right.",
+      "description": "Rounded blue and green nodes connect through short rods around the edges. The microscope tilts toward the open blue center.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-science-lab.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "6e450c0ed8b7d886ab824ff754bab329802791108589d2f60554c08b6dc82221",
+      "inputSignature": "c0d2490045feac845ac2f6d3995f70e624a2336ac73872972a6a2ccc6860f323",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 958569,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 958569,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        39,
+        142,
+        990,
+        908
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-science-lab.pdf",
+          "bytes": 958569,
+          "sha256": "42b2dc85d5053ca713b44d0a8bdbb97099e62b939c728c8afa61df81c083e335"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-science-lab.webp",
+          "bytes": 661078,
+          "sha256": "51ec0af9ce1c9b4d551ebf5e30ec3b3e189a2b1e69ba4f3b50f9d85a654ee1d3"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-science-lab-thumb.webp",
+          "bytes": 57164,
+          "sha256": "a34ee86603870fae4b3a08b171666db54f2d8b60d354fbfcf0327517ff1bd85f"
+        }
+      },
+      "proofSha256": "1a05114e82e6712ca28929e31ce65ba3d51ff2a9408fe1a40e873bb434c98fa7",
+      "pairMeanRgbDifference": 1.77837
+    },
+    {
+      "id": "background-library-books",
+      "title": "Books and Trailing Plants Frame",
+      "alt": "Stacks of old books and trailing green plants frame a cream writing area.",
+      "description": "Tall book spines sit behind climbing vines on each side. The lower stacks rest on a narrow wooden surface beneath the empty center.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-library-books.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "21895058a8990133e744c9478e9d15b8a5bceb641cb93adf723b402f2ac66de3",
+      "inputSignature": "b99b25c874e115fc6efbd86e085379f79ebb37062c75e941ed01e5da5645ab3e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 722458,
+        "weightedCmykRmse": 0.746328
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1181291,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 722458,
+          "weightedCmykRmse": 0.746328
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        50,
+        119,
+        985,
+        905
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-library-books.pdf",
+          "bytes": 722458,
+          "sha256": "2ac7e017071f339056adebc3a75b7fcdf7085b75f32564e6bc97b2097966d645"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-library-books.webp",
+          "bytes": 865382,
+          "sha256": "d7357ef29caf7d0d697f6b390d7bdcfd41e900ea3a65a4ade4b72374a1ac3e1a"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-library-books-thumb.webp",
+          "bytes": 48676,
+          "sha256": "f705381435459f037ee8d624e65d50788635b5672fef1f20772167d62eadccb8"
+        }
+      },
+      "proofSha256": "b83c7c0c76ddf8275cca248e5b4d41ddca1d68f97c05cf823c75a2a6847cef29",
+      "pairMeanRgbDifference": 1.87479
+    },
+    {
+      "id": "background-music-notes",
+      "title": "Colorful Music Notes on a Lavender Frame",
+      "alt": "Multicolored music notes curve along staff lines above and below a lavender panel.",
+      "description": "A large purple treble clef anchors the left edge. The gently waving staves leave the middle clear between the two musical bands.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-music-notes.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "720809d84cec39c3ff7788851ee416d4dfd9b40c8baa2207ab97a63e36484b9f",
+      "inputSignature": "a8409a08e253836847b89e04425f398d3e31755e9b5dbf3b1995ea479c7f9cb2",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 828686,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 828686,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        33,
+        150,
+        981,
+        904
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-music-notes.pdf",
+          "bytes": 828686,
+          "sha256": "502cf56357fd7d28b55f0f26d0c34216c5e3b2dc73e3d9887af0752ad4e4bde6"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-music-notes.webp",
+          "bytes": 751374,
+          "sha256": "8d112ab1516751a742487047031305249152e39488cc31814430a80ad4d7a6b0"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-music-notes-thumb.webp",
+          "bytes": 63858,
+          "sha256": "6a517b4c881481825c63084ba938f4b0e2c19329dda5efff548929095147c3ab"
+        }
+      },
+      "proofSha256": "55f1d8416c16b69a3a44e885e473811b8fd41dcd0fa03c66d4f04f53186cd751",
+      "pairMeanRgbDifference": 5.46356
+    },
+    {
+      "id": "background-birthday-confetti",
+      "title": "Confetti and Streamer Celebration Frame",
+      "alt": "Rainbow paper curls and small confetti pieces surround a cream square center.",
+      "description": "Long red, green and yellow streamers hang from the upper corners. Smaller colored squares create a lighter border along the lower edge.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-birthday-confetti.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "0cea80f022ce588f5144bfa267506c888a123cb1dad8ef5cff5c748656393810",
+      "inputSignature": "929e9d64a6fea6827defecdb05b3783350ab8cd30b3f2c3af4c8dab32c8130d2",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 984984,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 984984,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        78,
+        52,
+        962,
+        959
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-birthday-confetti.pdf",
+          "bytes": 984984,
+          "sha256": "ab37c3ecfc1001cd273ed54ff04b76cc619900f17d04c56459ac064744dad4f5"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-birthday-confetti.webp",
+          "bytes": 737540,
+          "sha256": "f5c40a9abe313ec5b04e6204279745687f7fa6bf9d4f97d91d8fa5becce9984a"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-birthday-confetti-thumb.webp",
+          "bytes": 55152,
+          "sha256": "eda5ec24a598c5065777d7edf7047ee69a4bc10d10cf3fab278100953884a7b7"
+        }
+      },
+      "proofSha256": "01fb61911113484ce2f6e621c0a56ee8e3e33d49659b0ac2eabb24e74da5ca53",
+      "pairMeanRgbDifference": 2.14183
+    },
+    {
+      "id": "background-balloon-celebration",
+      "title": "Pastel Balloon Celebration Frame",
+      "alt": "Pastel balloons rise along both sides of a pale mint panel with confetti curls.",
+      "description": "The balloons alternate pink, blue, yellow, lavender and mint. Their thin strings curve down beside the softly scalloped writing space.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-balloon-celebration.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "c64ff8b775337b998fe3e760c35dacaec5189c008d1b0381a68a2e6991a94989",
+      "inputSignature": "c5b5e44c4bc478b689fb6ba171aca059f20fb8f5fcb8d275a405c3f73674a1f9",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 805214,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 805214,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        37,
+        84,
+        998,
+        943
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-balloon-celebration.pdf",
+          "bytes": 805214,
+          "sha256": "163c0d2af754e432c72dc4dd4737de94c49d273f8180872fe963973453d0dca7"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-balloon-celebration.webp",
+          "bytes": 662442,
+          "sha256": "f97043bcb67bac51a72e83dd5f0511b05af33d77607518df3ae06eb2edd80272"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-balloon-celebration-thumb.webp",
+          "bytes": 46492,
+          "sha256": "dd863a3e64dd804c548118467a1c83aba87d159ea2725dbd9b61f2f24fa10662"
+        }
+      },
+      "proofSha256": "6793f21d6d7a6ba9dbc37b3f923b56f9ae9f23e300c8b9cc275e7b8cd0b71696",
+      "pairMeanRgbDifference": 1.94423
+    },
+    {
+      "id": "background-gold-stars",
+      "title": "Gold Stars on a Midnight Blue Frame",
+      "alt": "Tiny gold stars and dots surround a deep blue panel with a fine gold border.",
+      "description": "Notched corners interrupt the thin rectangular outline. Bright starbursts gather near the edges, keeping the dark center mostly clear.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-gold-stars.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "9a3c39b9e2827e8fbe9f806a244fdf6d6150b267cc4a7e025f58579b33eb9a76",
+      "inputSignature": "e19830b213981288227f329320f7f19ff41bc5e8ec0b4ff86a7ab1eb67f0b59c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 989329,
+        "weightedCmykRmse": 0.775785
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1332362,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 989329,
+          "weightedCmykRmse": 0.775785
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        66,
+        181,
+        959,
+        842
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-gold-stars.pdf",
+          "bytes": 989329,
+          "sha256": "7a539435c539133abf20d400cd6d65e8355e475ece0a460f83dea96592224e3b"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-gold-stars.webp",
+          "bytes": 915618,
+          "sha256": "5bf110063dae2dd343645b4ca2eb6ccdd088ca5832dc653ee3385660a52d0f43"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-gold-stars-thumb.webp",
+          "bytes": 28870,
+          "sha256": "df0f52c9a144a80e3bb0f5e4d323b31224578a8d238608b4022c556c3d733e2a"
+        }
+      },
+      "proofSha256": "52ce2cdbc1e823b8ef6307d12df3f4be1cbb148f13e7a0243077a422eb0cb1e4",
+      "pairMeanRgbDifference": 1.74589
+    },
+    {
+      "id": "background-wedding-botanicals",
+      "title": "White Flowers and Sage Leaves Frame",
+      "alt": "White blossoms and muted green leaves decorate opposite corners of a cream panel.",
+      "description": "Small flower clusters extend from the upper left and lower right. A thin gold outline follows the panel's gently shaped corners.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-wedding-botanicals.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "83d8571c514c1ae3966e51c05a2b72fac4531fb9d126c9617d2f0283ae8b2fb7",
+      "inputSignature": "7fee617ca7b862fdc238a5c3bb655f223bbe20e9bd7b000bf6f06d7514ee2a3e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 887273,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 887273,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        169,
+        71,
+        894,
+        955
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-wedding-botanicals.pdf",
+          "bytes": 887273,
+          "sha256": "77c85cf48195d2ee47fde2308a63f073d04e5bf38e868ceb8592182df8da5b71"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-wedding-botanicals.webp",
+          "bytes": 718418,
+          "sha256": "bee3adb7267bb6bafaa2509228256fe0dd03c6a355b95178855671736d648750"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-wedding-botanicals-thumb.webp",
+          "bytes": 39284,
+          "sha256": "eb979beb8cfe6662f2ba08e8c4204e24c4e9ae40cc770c0420e2c19235796ca3"
+        }
+      },
+      "proofSha256": "d4fc9f6da7ae71fd9c24e0dd1244c2ba1e8c9cd05c09a1881db368a28fe32b5b",
+      "pairMeanRgbDifference": 1.18865
+    },
+    {
+      "id": "background-baby-clouds",
+      "title": "Clouds, Crescent Moons and Stars Frame",
+      "alt": "Soft blue clouds, yellow crescent moons and stars frame a pale blue center.",
+      "description": "The clouds gather into rounded corner groups. Smaller moons and stars link the clusters along the open sides.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-baby-clouds.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "83e080fc4bf9822c8ecd2cc8e004f15672612dcb0a9849febf831dfb68ce1828",
+      "inputSignature": "df2aee25ad9a8a40d204e614f12051e99b5cd7256cc29951fb22e8cffbaeee0a",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 921159,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 921159,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        72,
+        132,
+        958,
+        895
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-baby-clouds.pdf",
+          "bytes": 921159,
+          "sha256": "a08edc52918276ecffa5a76f6db597568fe6d7fb124eb81dc459793021c90af5"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-baby-clouds.webp",
+          "bytes": 688410,
+          "sha256": "a392f5313622d6c16a59d07eef596afd5fb59b9eb53f63f72199b14bd3d56fcf"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-baby-clouds-thumb.webp",
+          "bytes": 49740,
+          "sha256": "38336204d57f40153000ab71bcd8a66362c659673acbfd8874785e5ff58740f2"
+        }
+      },
+      "proofSha256": "3b9984501ed7006afaf190df322fc153147a00bf34e708743ebd41ef3a418b82",
+      "pairMeanRgbDifference": 0.83384
+    },
+    {
+      "id": "background-kids-dinosaurs",
+      "title": "Cartoon Dinosaur Valley Frame",
+      "alt": "Three friendly cartoon dinosaurs border a sandy valley with palm trees and a distant volcano.",
+      "description": "A blue long-necked dinosaur stands on the left, a green horned dinosaur rests near the water, and an orange dinosaur appears on the right. Their arrangement leaves a broad open path in the middle.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-kids-dinosaurs.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "4c8c78be0072b4ca4721cebddf156f7b8694d40d86fe6e7a1ae1a9fd68974cf2",
+      "inputSignature": "8dd2632783fa1cf8aa8d162bbd13e0c8499ec8095d63c7cff8aff2b25817396e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 805828,
+        "weightedCmykRmse": 0.797079
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1140440,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 805828,
+          "weightedCmykRmse": 0.797079
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        72,
+        174,
+        967,
+        873
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-kids-dinosaurs.pdf",
+          "bytes": 805828,
+          "sha256": "6e21251b0b62933d4a50fb1773d89871727ce83a516ebb556f9de2ec7aee5b3c"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-kids-dinosaurs.webp",
+          "bytes": 991322,
+          "sha256": "b4a7e1966bce1122c6913910d104840605f76709fdbeb54c80083fe07977e914"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-kids-dinosaurs-thumb.webp",
+          "bytes": 58348,
+          "sha256": "4a1e3456da12b4f99f2adbc8ed7a67ff467c0addbdf635dfbdcb418f51bef1e9"
+        }
+      },
+      "proofSha256": "d6eb8b6d611837b82175067943d9481fbd2f95876f465c7777f7ebf16a36b740",
+      "pairMeanRgbDifference": 2.18419
+    },
+    {
+      "id": "background-kids-space",
+      "title": "Smiling Planets and Rocket Space Frame",
+      "alt": "Smiling cartoon planets surround a dark star field with a red-and-white rocket.",
+      "description": "A blue-green planet and a ringed golden planet fill the upper corners. Orange and gray faces occupy the lower edge beneath the open space.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-kids-space.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "b991c2e487972322343c9f497fcacab67206626134c53f82ddc01ecd448cb14b",
+      "inputSignature": "240e6c70b3b11605471bec97588c4ab6bcaff3d91d0c98976cc3123015ea3f50",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 970031,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 970031,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        44,
+        120,
+        986,
+        921
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-kids-space.pdf",
+          "bytes": 970031,
+          "sha256": "e9315082236b0b81a735a58576489f4663f95ff4fa4e9f1bc93a07c632832b2a"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-kids-space.webp",
+          "bytes": 766348,
+          "sha256": "bb1c2305e37c932bcdd2e0065998e1fe5910119f285611acb970c60d8e5cb7a4"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-kids-space-thumb.webp",
+          "bytes": 45224,
+          "sha256": "a0756e34fdc3c3ce78a49fd8b96ffe45d66c1ce51eac499ca8d6a1349daca631"
+        }
+      },
+      "proofSha256": "e67833a86b34ed3587f6c31d216e97aeac4c025ed20b2efda131fa46ce3aed40",
+      "pairMeanRgbDifference": 5.96688
+    },
+    {
+      "id": "background-farm-landscape",
+      "title": "Red Barn beside Crop Rows",
+      "alt": "Red barn and wooden fence overlook neat crop rows beneath a wide blue sky.",
+      "description": "The curved red roof and white doors stand to the left of the fields. Distant hills and scattered clouds keep the upper half open.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-farm-landscape.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "8a9b29084b8baf0587d877df726cd766abf4177ed54329df0bdad0dc24225941",
+      "inputSignature": "94be505470bba1ba633b201d643fcd629cb598ea62307ffc717eafeb1bc8954c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 687557,
+        "weightedCmykRmse": 0.752215
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1079252,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 687557,
+          "weightedCmykRmse": 0.752215
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        31,
+        173,
+        990,
+        874
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-farm-landscape.pdf",
+          "bytes": 687557,
+          "sha256": "02f6d209f79e81efb181a485492723159b7bd61f43216538eb1d9c1d796da8d9"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-farm-landscape.webp",
+          "bytes": 957026,
+          "sha256": "687c169eaed3afec375790c5426e2ab685da9cc7efa871221cc458c497682217"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-farm-landscape-thumb.webp",
+          "bytes": 54592,
+          "sha256": "113ce4c7f5d6ad8645aab95076e87e36db7ebf9d6470e8591fe6a2a9361d859a"
+        }
+      },
+      "proofSha256": "85f139fe042a111fb4bb56a959f73d6a9e456a8f2049070528554e1839602e9a",
+      "pairMeanRgbDifference": 3.06287
+    },
+    {
+      "id": "background-garden-butterflies",
+      "title": "Lavender and Butterfly Garden Frame",
+      "alt": "Lavender sprigs, green leaves and butterflies surround a pale garden opening.",
+      "description": "Purple flower spikes rise along both sides. Small white blossoms and yellow and violet butterflies soften the leafy border.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-garden-butterflies.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "78c5c61cead1893350e4542f577aaed992bbb36ee3261ea10245289920bb94da",
+      "inputSignature": "738c22a2517d92ec7fb2b918c8d06d1b162f2d0a8493b93ebd6ff8ffbc755f3c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 947537,
+        "weightedCmykRmse": 0.847606
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1480307,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1029223,
+          "weightedCmykRmse": 0.720458
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 947537,
+          "weightedCmykRmse": 0.847606
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        31,
+        127,
+        994,
+        916
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-garden-butterflies.pdf",
+          "bytes": 947537,
+          "sha256": "cfdcd5549b5a731fdcd2a96466b4c05ca2449a498881c36eac92f4c1726e05cd"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-garden-butterflies.webp",
+          "bytes": 1112148,
+          "sha256": "524aaecd281e698d4171db2da1868611bb2cfa7de345f1c1d61871e4ea24202d"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-garden-butterflies-thumb.webp",
+          "bytes": 79594,
+          "sha256": "96936747c3f33003421379d7384fb9d0671eea5562804adba5357f5d8dc32c03"
+        }
+      },
+      "proofSha256": "2d6802017ef4bdce21b0e865459a5694cc7156125e93cc5a709fd16ccbb8a19d",
+      "pairMeanRgbDifference": 1.72859
+    },
+    {
+      "id": "background-ocean-watercolor",
+      "title": "Watercolor Ocean Wave Panel",
+      "alt": "Turquoise watercolor waves and white foam surround a pale watery center.",
+      "description": "Darker curling waves collect in the lower corners. Layered translucent strokes create irregular edges along the top and sides.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-ocean-watercolor.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "821925e2f0475b0ff5f1794df4c00c87d7182f548d6dd94d19b5a099922ef919",
+      "inputSignature": "83ca730cb1023e6fae9295d7df5b534a050c58dabe489f8e75cd72d79b7e1939",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 946628,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 946628,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        36,
+        180,
+        999,
+        864
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-ocean-watercolor.pdf",
+          "bytes": 946628,
+          "sha256": "e72bc23af52a84f2a8ef01882bbf76fa19b5fcdd062d98e02b6e5ee799842620"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-ocean-watercolor.webp",
+          "bytes": 1067084,
+          "sha256": "c81f48835e013ad66c1239d8ade2a22c98a93e043d1794006e643ce379f10076"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-ocean-watercolor-thumb.webp",
+          "bytes": 62746,
+          "sha256": "6fca22eb7e8f84dbd38c4c62e859291b871bab65bec5ff9f6d2a2060783c3b15"
+        }
+      },
+      "proofSha256": "549e3d02fca12ef180d510b7287021e937a73375bd85b0decf7b4d8b1cf76879",
+      "pairMeanRgbDifference": 3.65085
+    },
+    {
+      "id": "background-paper-cut-sunrise",
+      "title": "Layered Paper Sunrise Landscape",
+      "alt": "Stylized yellow sun rises behind layered orange hills and dark teal foreground shapes.",
+      "description": "Simple cream clouds sit above the warm landscape. Curved bands and leafy silhouettes give the panel a cut-paper appearance.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-paper-cut-sunrise.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "a32c1573d92603d6d69e3c99266081290c3de0a3f1a02c9f4f87473b619db9fe",
+      "inputSignature": "7550f77353ba0d53cb4193cf52fc4ff1418b3edc89d9ab905c7d829574123fa6",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 838902,
+        "weightedCmykRmse": 0.710663
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1289057,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 838902,
+          "weightedCmykRmse": 0.710663
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        47,
+        161,
+        977,
+        917
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-paper-cut-sunrise.pdf",
+          "bytes": 838902,
+          "sha256": "0b16cb90991100ac52a0ebd75207ff92e4d97856fb171d5394a17ab66c766ade"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-paper-cut-sunrise.webp",
+          "bytes": 925444,
+          "sha256": "d310422d102aa9a9efbd25c10725e31f7a140d9ec226b5a60e56e1e0e40bf4e1"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-paper-cut-sunrise-thumb.webp",
+          "bytes": 42834,
+          "sha256": "3c041823e7eec385692c4e61a9ebfc3c773260e3ee1bc385abf70c68592c4a51"
+        }
+      },
+      "proofSha256": "872f93404e9bb1fb37f8aa51e6ee4c7f6f4e3e81a79c05f1fc15dd60e9b1f934",
+      "pairMeanRgbDifference": 0.90832
+    },
+    {
+      "id": "background-geometric-pastel",
+      "title": "Pastel Abstract Shape Frame",
+      "alt": "Muted sage, pink, blue and lilac shapes surround an empty cream center.",
+      "description": "Thin pale curves cross the larger color patches. Small gold dots add detail in two opposing corners.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-geometric-pastel.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "ddab7fc28236060f689ca39ffdc03b775037620d8b62963d7f59528e9aad1384",
+      "inputSignature": "f75e81a4d01e0995437d507424a27973a60b5f709e10e56f836828536f1fea46",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 831737,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 831737,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        76,
+        114,
+        984,
+        922
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-geometric-pastel.pdf",
+          "bytes": 831737,
+          "sha256": "511a892d9278503663a648f0e2ab1c75d3ef2bd16cfb6f447a8b345904e30fec"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-geometric-pastel.webp",
+          "bytes": 571848,
+          "sha256": "e63c84086eaacb85b13296d6f1630a010edb189d763b40703825e35b4ce41022"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-geometric-pastel-thumb.webp",
+          "bytes": 39726,
+          "sha256": "63c6fc5f84c8461603ee5025a181fa1ec2662f5637e6e17865a4f7983ee4000e"
+        }
+      },
+      "proofSha256": "8b1f38c19289c787b42ce6adecd4d3bc25fc6ac9f94daa02df7ac93066cec88f",
+      "pairMeanRgbDifference": 0.51199
+    },
+    {
+      "id": "background-retro-sunburst",
+      "title": "Retro Orange Sunburst Panel",
+      "alt": "Orange, gold and cream rays radiate from a blank circular center.",
+      "description": "Alternating narrow and broad bands reach the rounded square edge. The flat warm palette gives the panel a vintage poster appearance.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-retro-sunburst.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "e78f34261c3bb9650abb17bb60388dafeec671a9b559c8bc20f941ad7a87d315",
+      "inputSignature": "cdac827f764a029b8575ea719143a9c44804587375d3d79c63819db62473f8df",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 680438,
+        "weightedCmykRmse": 0.777423
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1102570,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 680438,
+          "weightedCmykRmse": 0.777423
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        149,
+        66,
+        875,
+        956
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-retro-sunburst.pdf",
+          "bytes": 680438,
+          "sha256": "cc420089e2718c58d59c740856e5c2c689115b9a8cef123bfaaeae7ca7998dc1"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-retro-sunburst.webp",
+          "bytes": 904158,
+          "sha256": "f4ae1f5abb12bc0f3c7fad2f18e9c70867b7577ccb15179d43b1f435495654af"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-retro-sunburst-thumb.webp",
+          "bytes": 34722,
+          "sha256": "42bc35909d1627b5c85efd88e02ac45218bccb250248e1e1f384f45359e63008"
+        }
+      },
+      "proofSha256": "8f205b4826d92de29f1c9ab4c5a0f2133b3063f51f22908d2a9cfba18e239783",
+      "pairMeanRgbDifference": 2.26534
+    },
+    {
+      "id": "background-modern-blue-waves",
+      "title": "Layered Blue Wave Business Frame",
+      "alt": "Dark and light blue curved bands frame a large pale blue writing area.",
+      "description": "The waves sweep across the upper left and lower right edges. Their asymmetrical curves leave an uncluttered center for a heading.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-modern-blue-waves.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "d45bbfaec3ceb6b4fe89d642c841f9e137014255bcea1482823085c808b0d5a6",
+      "inputSignature": "f6c59839c4b714793d8ebba72c87b83319a45ea8f747975897ef4365320d038d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 459864,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 459864,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        84,
+        176,
+        939,
+        848
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-modern-blue-waves.pdf",
+          "bytes": 459864,
+          "sha256": "5a186c7fe8c462902e63f1464b6b61213be61d7458c4200d0992192534382147"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-modern-blue-waves.webp",
+          "bytes": 509474,
+          "sha256": "6525ddf118f9f5267182e00a3ae6eb8b72e91a3eea15a8d1b089f1971a01935b"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-modern-blue-waves-thumb.webp",
+          "bytes": 13220,
+          "sha256": "7693519cc0917db0b4e9673504f27df9bd0af232b4134b85e3f682ada2a7bb13"
+        }
+      },
+      "proofSha256": "d55e30c9425680d66130daa46b35fdfed4ae94a8dae21d7edacb929d5d71933d",
+      "pairMeanRgbDifference": 1.63377
+    },
+    {
+      "id": "background-terracotta-arches",
+      "title": "Terracotta Arch with Leaf Sprigs",
+      "alt": "Nested terracotta and cream arches rise between two small leafy sprigs.",
+      "description": "Warm rust-colored bands alternate around the tall central opening. Soft curved shapes fill the lower corners beneath the leaves.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-terracotta-arches.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "5378f167d730fa7ef2dd618c3b1a4a0f3b9434044c506443283d669dc5aa5cba",
+      "inputSignature": "b3dacf3b99925be87511e7b22e85b895c524da43ceddaf75003c6387cb43b84f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 841376,
+        "weightedCmykRmse": 0.756719
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1172159,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 841376,
+          "weightedCmykRmse": 0.756719
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        166,
+        47,
+        856,
+        976
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-terracotta-arches.pdf",
+          "bytes": 841376,
+          "sha256": "eb76471d731cc49ba25017ff822a766f302d8b60b6f8bed4fee9428ca37e44e7"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-terracotta-arches.webp",
+          "bytes": 1009386,
+          "sha256": "c503d44d53e2a26f82532d5b630cee901294ccec58c1a058e113d3a7670d934d"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-terracotta-arches-thumb.webp",
+          "bytes": 37814,
+          "sha256": "eb8c6f634e5d4fa4e48c692bad776399d2f20b6c76a79c328604598aede6ffcd"
+        }
+      },
+      "proofSha256": "8cb10427bd42100a16dfd21f3a3206ef3c6840d931cd34bddd586a6c21bb7713",
+      "pairMeanRgbDifference": 0.9519
+    },
+    {
+      "id": "background-botanical-fern",
+      "title": "Watercolor Fern Border",
+      "alt": "Green fern fronds frame a pale sage watercolor panel.",
+      "description": "The fronds vary in length and overlap around the sides. Soft wash texture fills the large open center.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-botanical-fern.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "2ba6120adc35375edebb433f87c6a85d8e05d9bbf8591c087a73afaa289b8a03",
+      "inputSignature": "8ca43ed74cbb75d0541a983147931dac6a438782e231bc2b4907a943ff8bdfb6",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 916399,
+        "weightedCmykRmse": 0.725532
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1320364,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 916399,
+          "weightedCmykRmse": 0.725532
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        50,
+        125,
+        978,
+        918
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-botanical-fern.pdf",
+          "bytes": 916399,
+          "sha256": "d0c9b735d41649fd8d2ccd4d7de697532381530d7b4f6c9e3631b7a44bbb82db"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-botanical-fern.webp",
+          "bytes": 954516,
+          "sha256": "c89f3fd4ebac1abfa8b915681a314a7e835aab623ffac44a78ef5da7f571b0fa"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-botanical-fern-thumb.webp",
+          "bytes": 51610,
+          "sha256": "e71625691057f2e166d13a5b1121393d71d3b69d169428ef49afcf66d5438045"
+        }
+      },
+      "proofSha256": "1dbbd68ca4b10ffae439e98241b3e1de25ec13a21b56e630153a7de8cdb7b23b",
+      "pairMeanRgbDifference": 1.34644
+    },
+    {
+      "id": "background-watercolor-floral",
+      "title": "Pink Wildflower Corner Frame",
+      "alt": "Pink, white and violet flowers decorate opposite corners of a pale pink panel.",
+      "description": "Thin stems and soft green leaves spread outward from the blossoms. The diagonal arrangement keeps most of the pink center clear.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-watercolor-floral.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "52b6d3524a34ec366e292750457b8ce7332ec5f4bd34e2b4eef2de251a4aee02",
+      "inputSignature": "5b3cdac084ccf491d1e2febc1355f309fcfcb68214e0ac3fdec7266163aee3e5",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 875975,
+        "weightedCmykRmse": 0.684637
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1417350,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 875975,
+          "weightedCmykRmse": 0.684637
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        44,
+        41,
+        996,
+        982
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-watercolor-floral.pdf",
+          "bytes": 875975,
+          "sha256": "c31c2c2d7b30b9c0b3a661be6a6baa67f70b3538575606c175d4fb6cd1d3292a"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-watercolor-floral.webp",
+          "bytes": 1028752,
+          "sha256": "9b4a0027cd1e41ebc3a9528667e30810d882f698add6547f308c40115a3c116c"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-watercolor-floral-thumb.webp",
+          "bytes": 62998,
+          "sha256": "1bf9bf9b11afa54b50a1540435b1a1c386f600dfb298e19e42427be91f949fe0"
+        }
+      },
+      "proofSha256": "ace51fb1b96e86edc57348d2e18610c1c040ffc43f1e0af6412e7fb1119f473b",
+      "pairMeanRgbDifference": 1.42829
+    },
+    {
+      "id": "background-tropical-leaves",
+      "title": "Tropical Leaf Frame",
+      "alt": "Large glossy tropical leaves surround a pale yellow-green center.",
+      "description": "Split leaves and narrow palm fronds overlap at the corners. Their dark and light green bands create a strong leafy edge.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-tropical-leaves.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "795311041995d860cdf73213bf7fe9bf4722fe034543f67deaa87bb1bbffeb5b",
+      "inputSignature": "209d0b25728890951981f3bbb20783f8ae6cd3ca159b55f9d8e19dc41bcd1a6d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 887048,
+        "weightedCmykRmse": 0.670588
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1311844,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 887048,
+          "weightedCmykRmse": 0.670588
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        45,
+        38,
+        981,
+        980
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-tropical-leaves.pdf",
+          "bytes": 887048,
+          "sha256": "c97de36bd9fe95a7c4ad33bcd95619ab038d5495728c9d52660bbc99993ed8d2"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-tropical-leaves.webp",
+          "bytes": 991580,
+          "sha256": "224b71c16785abab9b3351fb12cece95a6407fb5f3483d5b6590d1e6d72de5d8"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-tropical-leaves-thumb.webp",
+          "bytes": 76658,
+          "sha256": "71a5223ac350911673703e3bbf77b1b6d1f6ec686ea201d3445604ae9e89aa60"
+        }
+      },
+      "proofSha256": "a77f607d507855f105771837271de29cea20a0b3915e8ae507fa21dab02ab7f7",
+      "pairMeanRgbDifference": 5.97929
+    },
+    {
+      "id": "background-citrus-summer",
+      "title": "Lemon and Blossom Summer Frame",
+      "alt": "Yellow lemons, sliced fruit, white blossoms and green leaves border a pale yellow panel.",
+      "description": "Fruit clusters fill the upper left and lower right. Smaller white flowers continue along the sides between the leafy branches.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-citrus-summer.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "1af8ca5d479863d2ad40ccf9bba645053325b3f8089965496da3b22ab4f4c5d7",
+      "inputSignature": "a54a46cbd955f54f309d1ecaa998798e86aec7b88b8a2cd704440b0641173598",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 641906,
+        "weightedCmykRmse": 0.732254
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1100302,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 641906,
+          "weightedCmykRmse": 0.732254
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        69,
+        74,
+        974,
+        965
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-citrus-summer.pdf",
+          "bytes": 641906,
+          "sha256": "18c262136dfa31cdd1c85c77de87964b6920a580b26da504023a847921fa0d27"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-citrus-summer.webp",
+          "bytes": 932932,
+          "sha256": "89b96b1df53ea7f6820af643a1bb2ac5b0de45733ddafc71bc5b832675a1aad9"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-citrus-summer-thumb.webp",
+          "bytes": 53936,
+          "sha256": "77468cf09d7db299f8ca4aa392ebc507ea777dbdb4209a5f1caf2bd47f4009c6"
+        }
+      },
+      "proofSha256": "6fdeec75e56f798132404116e8eb4bf38b8e9d32d1944137a63c70dea1cec3b2",
+      "pairMeanRgbDifference": 2.27465
+    },
+    {
+      "id": "background-fall-harvest",
+      "title": "Pumpkin and Wheat Harvest Panel",
+      "alt": "Orange pumpkins and tied wheat sheaves frame a warm parchment center.",
+      "description": "Large wheat bundles rise at both upper sides. Small gourds and autumn leaves fill the lower corners beneath the blank panel.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-fall-harvest.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "545167cd43ec459018b91a300aa86aa33a4c4f49999f19d23d2c35d43a55cb60",
+      "inputSignature": "bf5b9312a1f88025725029dbd0f852aa131ec239ab3843adce382f7e0a7815bd",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 48,
+        "losslessCmyk": false,
+        "bytes": 956015,
+        "weightedCmykRmse": 1.270013
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1621249,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1251078,
+          "weightedCmykRmse": 0.716427
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1160397,
+          "weightedCmykRmse": 0.852717
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 1051365,
+          "weightedCmykRmse": 1.02085
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 48,
+          "losslessCmyk": false,
+          "bytes": 956015,
+          "weightedCmykRmse": 1.270013
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        20,
+        122,
+        1006,
+        896
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-fall-harvest.pdf",
+          "bytes": 956015,
+          "sha256": "c0b4e2fd120407756ea5f9c496e1949658f11c1f0ba08bc9b7076b15ceb5f8bc"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-fall-harvest.webp",
+          "bytes": 1287612,
+          "sha256": "5f2d668ddeb339d9fbe7eaba2b7154d547dac1e95fcd89015d18a34917dd43e4"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-fall-harvest-thumb.webp",
+          "bytes": 85340,
+          "sha256": "8f58175b629115248a2687e94afd359268987c1520e8c92bad282c277e409510"
+        }
+      },
+      "proofSha256": "ac4be7e43dfbb841ab2c57fcf97ba02b12e7c300b15f22474ea962792b7c3b69",
+      "pairMeanRgbDifference": 3.25997
+    },
+    {
+      "id": "background-thanksgiving-table",
+      "title": "Outdoor Harvest Table by a Lake",
+      "alt": "Rustic outdoor dining table and autumn pumpkins overlook a lake and distant hills.",
+      "description": "Fall branches frame the open sky above the table. Blankets, gourds and harvest baskets fill the foreground corners.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-thanksgiving-table.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "8abb4cf83080c5f2ecd2a91c7c0aa0b750fba766c605f32b4f73abcd205ff1ff",
+      "inputSignature": "924624b5764f695be03b479c589b3f7ecaa52370156f098fd87d3c45f2e440c5",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 987431,
+        "weightedCmykRmse": 0.956504
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1371624,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1062946,
+          "weightedCmykRmse": 0.812115
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 987431,
+          "weightedCmykRmse": 0.956504
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        49,
+        119,
+        989,
+        913
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-thanksgiving-table.pdf",
+          "bytes": 987431,
+          "sha256": "6a047c049b9004ec6b29e3e061ff98d4d4f7c89eaac3b17c13801b4c5be3e2cb"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-thanksgiving-table.webp",
+          "bytes": 1078726,
+          "sha256": "14996d1ebc8273cab7852acbcfe1a6873c992f59c2065cabb16c48d21d88957d"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-thanksgiving-table-thumb.webp",
+          "bytes": 76108,
+          "sha256": "1fab29c00661edc87b516a77439b682557ba7b0f794f583a8d2e57270e24abb2"
+        }
+      },
+      "proofSha256": "160913ca9ff541bab04295065125cd829a0ac52222e724aaefcaaf33599efd73",
+      "pairMeanRgbDifference": 1.9878
+    },
+    {
+      "id": "background-christmas-lights",
+      "title": "Christmas Lights and Evergreen Frame",
+      "alt": "Multicolored glowing bulbs and evergreen sprigs frame a dark green panel.",
+      "description": "The string of red, yellow, green and blue lights follows the uneven border. Small needles overlap the edge without filling the center.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-christmas-lights.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "70aba65549394c07ffdf1ca2cd0df5dcd6a3a9fbd90f4294b44b82713a148a75",
+      "inputSignature": "0fb80957f768df48ccf172954153fb611c60096c9bf87192d2c98fae0c29008d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 744451,
+        "weightedCmykRmse": 0.781928
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1189090,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 744451,
+          "weightedCmykRmse": 0.781928
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        75,
+        136,
+        954,
+        895
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-christmas-lights.pdf",
+          "bytes": 744451,
+          "sha256": "7f11bcfeec2fa7e873afcca6eb219bb14c2dcf1f9195d324a7a4f4c0891c62b0"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-christmas-lights.webp",
+          "bytes": 743234,
+          "sha256": "1e45fb854447115c7d568ce1ab66ca6fdb626bcb90cf02a19cac2bd219752ba4"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-christmas-lights-thumb.webp",
+          "bytes": 37060,
+          "sha256": "d3965e0bd48a03a38fafb82689756812064c31c452ee1ed5c0fb37ba735b4246"
+        }
+      },
+      "proofSha256": "86bc17ef3835826fd44b3b6ea2a6aa2935a192d14ec67d55f42c8aed2e65ebb9",
+      "pairMeanRgbDifference": 3.96079
+    },
+    {
+      "id": "background-snowflakes-ice",
+      "title": "Icy Blue Snowflake Frame",
+      "alt": "White snowflakes cluster around the edges of a pale blue frosted panel.",
+      "description": "Large branching crystals sit in the corners, with smaller flakes between them. Watercolor-like blue texture gives the center a wintry appearance.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-snowflakes-ice.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "47468153dda0a2e9084d9db3babc474de8f23a54b68432c9b6dec532905bcc5b",
+      "inputSignature": "6791a49b7bb2b4ea3adf20634558a7ec2cf4ecedede2bd38e0bb485f0019b8ab",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 947253,
+        "weightedCmykRmse": 0.824164
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1468986,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1042365,
+          "weightedCmykRmse": 0.689297
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 947253,
+          "weightedCmykRmse": 0.824164
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        35,
+        119,
+        994,
+        917
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-snowflakes-ice.pdf",
+          "bytes": 947253,
+          "sha256": "d1a887a5aabd8e97c38b04b73e40809bd58c0b14ff5dd30ee4b3435c1148f2f3"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-snowflakes-ice.webp",
+          "bytes": 1241362,
+          "sha256": "400e21889e076f09871730c39f96d62c61d421a5977e7877a526c2ef2d2fddbd"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-snowflakes-ice-thumb.webp",
+          "bytes": 87492,
+          "sha256": "d832c179458935f4c004f6316ae26951540efb911ab3e2acc8d0ec68b6c66484"
+        }
+      },
+      "proofSha256": "cf2333b20bae0abcd5b62861464ab8d7b8a207e834eb7fdfdc742b026191dc3c",
+      "pairMeanRgbDifference": 1.70558
+    },
+    {
+      "id": "background-hanukkah-evening",
+      "title": "Hanukkah Candles by a Night Window",
+      "alt": "Eight blue candles and a taller white candle burn in a gold Hanukkah lamp beside a night window.",
+      "description": "Gold coins fill a small blue bowl beside the lamp. On the opposite side, a blue vase with a gold star holds leafy branches against distant illuminated buildings.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-hanukkah-evening.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "57dc24d438f8ada473af9680c6e6ffbfe64d6d8ce2b18037be75c9e31885fbd7",
+      "inputSignature": "c9f52fe3e09dcd74805f3e30bff8c86ba84186979d7f5bdeaa08b1c3254c35d9",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 653430,
+        "weightedCmykRmse": 0.756306
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1080400,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 653430,
+          "weightedCmykRmse": 0.756306
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        48,
+        167,
+        976,
+        857
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-hanukkah-evening.pdf",
+          "bytes": 653430,
+          "sha256": "d06a59294ac84f7876b94531a94e6c9c279b004e50380eb755fd1ed237b3a174"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-hanukkah-evening.webp",
+          "bytes": 822768,
+          "sha256": "7116f96e0fe53f6940d7afd8c73e2845d3432c85c742a873e83859a79f944407"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-hanukkah-evening-thumb.webp",
+          "bytes": 40678,
+          "sha256": "45915e4adc6b6312bbcf95cb1432ca5e0859674c7494cfad59def82b28e8d658"
+        }
+      },
+      "proofSha256": "f68e87199d48f7e20418cc1e9f085d566b7b421e70c843dc103ceebb09f91cd5",
+      "pairMeanRgbDifference": 2.93694
+    },
+    {
+      "id": "background-lunar-new-year",
+      "title": "Red Lantern and Blossom Frame",
+      "alt": "Red hanging lanterns and blossoms decorate a deep red panel with fine gold trim.",
+      "description": "Flowering branches enter from opposing corners. Gold lines and curled cloud-like motifs finish the ornamental border.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-lunar-new-year.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "c508792249b581e9e4330c6c86309a8d7d1aaaeccd8e2280644307f1e8de69d0",
+      "inputSignature": "0b067a70e9b049422d78d8ef247276f474d2e13256cc431789ce6fc5fddff979",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 979116,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 979116,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        43,
+        130,
+        990,
+        854
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-lunar-new-year.pdf",
+          "bytes": 979116,
+          "sha256": "8646b2df807b701d72234dd28d9ddf433762a95db20f2614c3ead565fb285f9b"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-lunar-new-year.webp",
+          "bytes": 839486,
+          "sha256": "33c0149fce0655fdf36e467f701ff85ba442a97a5a03086de042da7cd52eed9c"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-lunar-new-year-thumb.webp",
+          "bytes": 43176,
+          "sha256": "2945ea82c68fbdf1e4c6027058d1872ab78900f937c7f6fb65fbbe4510a2d0bc"
+        }
+      },
+      "proofSha256": "31dbcc25253ba6de368274efe6dc58a97872910d0a28ee8372faf195541be1bc",
+      "pairMeanRgbDifference": 9.11459
+    },
+    {
+      "id": "background-diwali-lamps",
+      "title": "Diwali Lamps and Rangoli Frame",
+      "alt": "Small lit clay lamps surround a purple panel with a colorful rangoli pattern.",
+      "description": "The large floral floor pattern enters from the lower left. Golden flames and a narrow gold border brighten the otherwise open violet space.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-diwali-lamps.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "4a93a7143967ad78c0f4d2c6f2efd43e14e89109ad31b0096a73e6e302aae70a",
+      "inputSignature": "06e6c7af0f625676d7167d45ac03d0b5ab84c6e95787d36ddef3401c715f60e0",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 862141,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 862141,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        10,
+        94,
+        1013,
+        943
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-diwali-lamps.pdf",
+          "bytes": 862141,
+          "sha256": "1715fee481a43d38f08bb52c64257e16910f6d1a0f126dced7b36c28a55eb76d"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-diwali-lamps.webp",
+          "bytes": 764922,
+          "sha256": "34b7ad4ec6d19c15ad1d55e384a2b08c7a93bd7656d352991d5f90e0f6568f72"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-diwali-lamps-thumb.webp",
+          "bytes": 32342,
+          "sha256": "6439d18a4eca4e6a96d574b562b98d9873201a92cef4c5b0c214b5112449e3de"
+        }
+      },
+      "proofSha256": "1749a8abfd25690ab341a8197fab756d678617ac14c3d512086d3d949f973a7a",
+      "pairMeanRgbDifference": 5.77353
+    },
+    {
+      "id": "background-halloween-moon",
+      "title": "Jack-o'-Lantern under a Crescent Moon",
+      "alt": "Glowing jack-o'-lantern rests beneath a bare tree and crescent moon in a purple night scene.",
+      "description": "A crooked fence runs along the lower right. Distant hills, small stars and a dark tree silhouette surround the open sky.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-halloween-moon.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "ab1bbfd92121739492f23eb05d177772d98f605eabe77085b6142331500ad595",
+      "inputSignature": "2b43e742473498e925a1ebd4167a3601adc9c7d5ee4bd5a4dfcd7731103846dd",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 719032,
+        "weightedCmykRmse": 0.714562
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1118414,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 719032,
+          "weightedCmykRmse": 0.714562
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        53,
+        121,
+        976,
+        905
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-halloween-moon.pdf",
+          "bytes": 719032,
+          "sha256": "12b9e7ff0cc95a33fa904a5bc10498c3c90d7e73d80c95a2f6e777ef1a9d1c74"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-halloween-moon.webp",
+          "bytes": 814232,
+          "sha256": "f8623cd7fcf8240e2a6e4e1c41e2d4d47f27dadeca3291c88412335a721b1446"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-halloween-moon-thumb.webp",
+          "bytes": 42262,
+          "sha256": "77b0f38cc929d8918de0ad0883e3f9d85944db6ded7a6561b414bb8d094b8dd1"
+        }
+      },
+      "proofSha256": "a81fe8f2a6185726bfd683b8a7f3f9d6c626e23f843d0571060a90a2cb2015ce",
+      "pairMeanRgbDifference": 6.46366
+    },
+    {
+      "id": "background-spring-easter",
+      "title": "Easter Egg Meadow Frame",
+      "alt": "Decorated pastel eggs and white daisies border a grassy meadow under blue sky.",
+      "description": "Tall flowering stems climb the side edges. Different egg patterns and colors gather along the bottom, leaving the middle open.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-spring-easter.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "8191ae11f8bae4ce130176ac3592d6e7a41d84a428b754e68a57da1366e76b6b",
+      "inputSignature": "ae5a8d915f41e0de1c601e0ee940dae4689d7263df68eeb89131969a312a0ab3",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 607040,
+        "weightedCmykRmse": 0.710835
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1026554,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 607040,
+          "weightedCmykRmse": 0.710835
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        30,
+        171,
+        994,
+        872
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-spring-easter.pdf",
+          "bytes": 607040,
+          "sha256": "8c700a718b349beb5faa5aeefb1fdf755268210316d31ce7fc38d1675ad3d755"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-spring-easter.webp",
+          "bytes": 897854,
+          "sha256": "42183f7c3506a19c1a1e11216eda3ba8d8546cb88486b4ca4b2cf5fb554e1e92"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-spring-easter-thumb.webp",
+          "bytes": 56110,
+          "sha256": "47ab5840cae42185606d7791392bb7053ba790432c5f1f5c148222080d870609"
+        }
+      },
+      "proofSha256": "8a9d89640aad362430f5c7f7132d42e7a123c9450105589ff5d66acb25202c2b",
+      "pairMeanRgbDifference": 3.8367
+    },
+    {
+      "id": "background-picnic-gingham",
+      "title": "Gingham Picnic Cloth with Strawberries",
+      "alt": "Red-and-white checked picnic cloth holds a strawberry basket in the lower right.",
+      "description": "Loose berries and small white blossoms spill from the wicker basket. Soft folds ripple along the cloth's outer edge.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-picnic-gingham.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "6d409531b4d63447650cc17dbb53d8b1050d4aa53fb6af6123caf625001f6acb",
+      "inputSignature": "47c8d2e1f2cf945889513e6e1e5cb0ff8c0d19697577f582139149197cad9dc5",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 50,
+        "losslessCmyk": false,
+        "bytes": 972075,
+        "weightedCmykRmse": 1.023561
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1531532,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1174294,
+          "weightedCmykRmse": 0.719504
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 1078831,
+          "weightedCmykRmse": 0.852047
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 50,
+          "losslessCmyk": false,
+          "bytes": 972075,
+          "weightedCmykRmse": 1.023561
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        36,
+        161,
+        1008,
+        882
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-picnic-gingham.pdf",
+          "bytes": 972075,
+          "sha256": "e884e3510f1e19cb151020de8fc177101186badc98298cf5978db861f3c0f36f"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-picnic-gingham.webp",
+          "bytes": 1232422,
+          "sha256": "a0240113f68f4cd9aa77dadeca845901b6b89b8b9d0e7a0f934765c5956f4261"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-picnic-gingham-thumb.webp",
+          "bytes": 52540,
+          "sha256": "63b68697b5c3d4506cc7c46d9b003cc003c2b06bd07139307399726b9eddc47f"
+        }
+      },
+      "proofSha256": "d5041db4268a1173619ebffd38b8a581033627a8b658b8b90adbe44585ce4d62",
+      "pairMeanRgbDifference": 2.30952
+    },
+    {
+      "id": "background-bakery-cafe",
+      "title": "Bakery Counter and Pastry Shelves",
+      "alt": "Wooden bakery counter displays breads and pastries between tall plant-topped shelves.",
+      "description": "Croissants and small cakes fill the side shelves and counter. A hanging lamp shines above the open cream wall in the center.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-bakery-cafe.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "b519992b204a2d719f1e11a53e6f8ade71143954d362f540f3759cc32686d7ed",
+      "inputSignature": "9925f73703e105e6cb5e3c9e0aa460d95427cb376ba7261650b08ec875ffb080",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 884166,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 884166,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        138,
+        216,
+        916,
+        822
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-bakery-cafe.pdf",
+          "bytes": 884166,
+          "sha256": "b0fd7af0052cfe31778f5f13f3d887156c054e4b0365fa1230fb6f99da11431e"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-bakery-cafe.webp",
+          "bytes": 783112,
+          "sha256": "81419450a4f8099fbab76bdfac3cf01e9cdb11f462898cc61afc8e972fcdee08"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-bakery-cafe-thumb.webp",
+          "bytes": 35882,
+          "sha256": "dd350f69b269318ce1cf3944247ac561988ca69153ea7f5bf9ee6b1640efd350"
+        }
+      },
+      "proofSha256": "7769d42591a69557973e66bb62eccb9515b729843eaea6f57c9dc0c2db9b950f",
+      "pairMeanRgbDifference": 1.3076
+    },
+    {
+      "id": "background-sports-field",
+      "title": "Sports Field and Running Track",
+      "alt": "Striped green playing field is surrounded by a red running track beneath blue sky.",
+      "description": "White lane markings curve across the foreground. Trees line the horizon below the large open patch of sky.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-sports-field.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "6834c15e076dba8c582f80fe2f436ca903544bad79c857a979cb841af4f1c10b",
+      "inputSignature": "a017f4c08cd8807f1cf62aef91f8291de7722f8cd0daabd1db4c25517dbafab2",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 721995,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 721995,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        72,
+        186,
+        954,
+        838
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-sports-field.pdf",
+          "bytes": 721995,
+          "sha256": "73263daefa60c1b7af632b92a29e2c5d5530d4f084274e3b8a8289c7612cf641"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-sports-field.webp",
+          "bytes": 736134,
+          "sha256": "a88ee5b43e4aee6330ed950931a6de12e40deb248486d185fd6133c7ca4df979"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-sports-field-thumb.webp",
+          "bytes": 34604,
+          "sha256": "225e14a1cd584317d19122b4268e8efa217c5df5e1af08915de4edfd5fb462f6"
+        }
+      },
+      "proofSha256": "a31542a37cf9c892d4e50acd6652facd9941725d1c07a9b9e635d1d1870def09",
+      "pairMeanRgbDifference": 3.81134
+    },
+    {
+      "id": "background-city-skyline",
+      "title": "Blue City Skyline across Water",
+      "alt": "Blue high-rise skyline stands behind green trees and a calm waterfront.",
+      "description": "Different tower heights create a stepped silhouette across the middle. Pale reflections extend into the water below the open sky.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-city-skyline.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "a1bcb2859419f17ee20c607922a2835ac49e4b265c37afefff397251844840cc",
+      "inputSignature": "a6d084819a7cb0dd21548034fc6ae9e2154e4499e6386e4a1e33b090a265cd8a",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 741997,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 741997,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        33,
+        223,
+        993,
+        867
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-city-skyline.pdf",
+          "bytes": 741997,
+          "sha256": "f83e668ea7a9defe369af5440ffa2b5923f8cf1daed10d3d6dec54bea2984f72"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-city-skyline.webp",
+          "bytes": 670826,
+          "sha256": "8ba405716385094069dd2a1341a66250e26c3e792fb6e9413a11ff1cf3f7162e"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-city-skyline-thumb.webp",
+          "bytes": 37740,
+          "sha256": "e138ef056adef1acadc03a951e107ddfbd7ef1b02d668726e7743e00b6f410f2"
+        }
+      },
+      "proofSha256": "b289f2bf7d93d3c247897366f8f5dc838a201dbbbd960fea4a1f7507df806fd8",
+      "pairMeanRgbDifference": 2.38365
+    },
+    {
+      "id": "background-craft-paper",
+      "title": "Decorated Kraft Paper Panel",
+      "alt": "Torn kraft paper is decorated with leafy sprigs, daisies, paint strokes and patterned tape.",
+      "description": "Green checked tape overlaps one corner, while mustard and purple marks color the edges. The speckled paper center stays clear.",
+      "color": "Multicolor",
+      "style": "Illustration",
+      "source": "work/production/wave_700/source/background-craft-paper.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "5d30bbaa4593a374426da47749ca22513be2d690c6e2c6fb4358827728384df5",
+      "inputSignature": "8d4ec176c10ca931981db4bbcfb74215d97a5b6b04f72a5b17148de6792b407e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 52,
+        "losslessCmyk": false,
+        "bytes": 970287,
+        "weightedCmykRmse": 0.889896
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1352489,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 1043292,
+          "weightedCmykRmse": 0.733523
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 52,
+          "losslessCmyk": false,
+          "bytes": 970287,
+          "weightedCmykRmse": 0.889896
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        91,
+        193,
+        947,
+        831
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-craft-paper.pdf",
+          "bytes": 970287,
+          "sha256": "2867296154dc807bad9ae8bbd3545c526f08fd169ad438a691867fe4397e7749"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-craft-paper.webp",
+          "bytes": 1021388,
+          "sha256": "fff788a5034c58af25973b5fed07e60722b05cf692b60b77d9524bde2f185945"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-craft-paper-thumb.webp",
+          "bytes": 69628,
+          "sha256": "c74971538959b42f3c58c63d4f700145879554481d38ac9d836f239fcbac30fb"
+        }
+      },
+      "proofSha256": "134bbb76a4c2a1f83a8f96f41a78ba3598fa07199a66fa96daf007273c7c1c6d",
+      "pairMeanRgbDifference": 0.6765
+    },
+    {
+      "id": "background-black-white-flowers",
+      "title": "Black Floral Border with Open Center",
+      "alt": "Black-and-white flowers and leafy branches form a rectangular border.",
+      "description": "Large blossoms anchor the four corners, with smaller buds along the sides. Solid black leaves contrast with the fine petal outlines.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_700/source/background-black-white-flowers.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "background",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "12cdd096709a7db653245c87b7951a1d178e3b1ec1ef886c04b5fa863ecb8d6b",
+      "inputSignature": "cbef4bbe99fd9ac5110fa41088ce2fa4c041790e2ba002e545f94a135ea1d1c6",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 896399,
+        "weightedCmykRmse": 0.673085
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1311834,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 896399,
+          "weightedCmykRmse": 0.673085
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        34,
+        128,
+        992,
+        904
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_700/exports/background-black-white-flowers.pdf",
+          "bytes": 896399,
+          "sha256": "13b28b9282d5e24a25622a11820dddd53e9fa1d8d2a1391890f6e4c0c2e78b94"
+        },
+        "webp": {
+          "path": "work/production/wave_700/exports/background-black-white-flowers.webp",
+          "bytes": 746844,
+          "sha256": "1770020df84b273007b7a5363ec0731c30400594bb993a30253108e9a7166d28"
+        },
+        "thumb": {
+          "path": "work/production/wave_700/exports/background-black-white-flowers-thumb.webp",
+          "bytes": 66346,
+          "sha256": "1814c8bffa23364c6cbfab64e5843c647b58353fecd9634798acbcbd2e5ab54d"
+        }
+      },
+      "proofSha256": "098396c0924dd0d832497c743dc415e8ab4139ed990616110691cd8072c6b30c",
+      "pairMeanRgbDifference": 3.00631
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-29T13:05:26.385886+00:00",
+  "screenReviewEvidence": [
+    "work/production/wave_700/pdf-review-1.jpg",
+    "work/production/wave_700/pdf-review-2.jpg",
+    "work/production/wave_700/pdf-review-3.jpg",
+    "work/production/wave_700/pdf-review-4.jpg",
+    "work/production/wave_700/pdf-review-5.jpg"
+  ],
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-29T13:41:42.135Z"
+}

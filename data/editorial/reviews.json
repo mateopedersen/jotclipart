@@ -381694,6 +381694,3006 @@
       "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
       "inspectedImage": "/catalog/wave_701/up-direction-up-direction-compass.webp",
       "references": []
+    },
+    {
+      "id": "background-spring-meadow",
+      "status": "reviewed-from-image",
+      "sourceSha256": "fb17cffaedc7d89a0ff5e9273d6a4cf2fc5bc99ec54d1f8dcc26f918da8e0732",
+      "imageSha256": "fb17cffaedc7d89a0ff5e9273d6a4cf2fc5bc99ec54d1f8dcc26f918da8e0732",
+      "inputMetadataSha256": "005f8f122d764e57ae1a334ffd07e5ba60bf822d812fd64064be7aaeda0a8bdb",
+      "inputContextSha256": "3b22267ef2b58f0c0be404e9705e8f10310f970505d342f5257f966f59371442",
+      "copy": {
+        "title": "Spring Meadow with Daisies",
+        "alt": "Green meadow with white daisies, small pink flowers and distant blue hills under a bright sky.",
+        "description": "Tall grass and flowers fill the lower edge, opening onto rolling fields. Soft clouds and layered hills leave an airy blue area above."
+      },
+      "observations": [
+        "White daisies and pink flowers grow along the foreground edge.",
+        "Green fields recede toward blue hills beneath a cloudy blue sky."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-spring-meadow.webp",
+      "references": []
+    },
+    {
+      "id": "background-autumn-forest",
+      "status": "reviewed-from-image",
+      "sourceSha256": "43e38dbe0160eebd5038e4f9cae9a47dbec7e0b31e6ef1b63961bda8db6d558b",
+      "imageSha256": "43e38dbe0160eebd5038e4f9cae9a47dbec7e0b31e6ef1b63961bda8db6d558b",
+      "inputMetadataSha256": "29edb4af9ccef538d12e204c40651685fe914327ee06f42a97376b71930d56ee",
+      "inputContextSha256": "f3eac77bf363d11eb5ab636248dcb9e0e9888eb03c99514d2c2755c892781915",
+      "copy": {
+        "title": "Birch Trees Around an Autumn Meadow",
+        "alt": "White birch trunks frame an orange autumn meadow, a pond and a low sun over mountains.",
+        "description": "Red and gold leaves hang above the open meadow. Dark evergreens stand below the distant blue mountain ridge, and light reflects in the small pond."
+      },
+      "observations": [
+        "Pale birch trunks and red and golden leaves frame a yellow meadow.",
+        "A small pond, dark conifers, distant blue hills and a low pale sun occupy the open center."
+      ],
+      "reviewedAt": "2026-10-29T12:29:10.107110+00:00",
+      "inspectedImage": "/catalog/wave_700/background-autumn-forest.webp",
+      "references": []
+    },
+    {
+      "id": "background-winter-village",
+      "status": "reviewed-from-image",
+      "sourceSha256": "08f5bfac4ea720ce2234f2aad68da8d27ecff7e2cebf65c164021dd5f0519855",
+      "imageSha256": "08f5bfac4ea720ce2234f2aad68da8d27ecff7e2cebf65c164021dd5f0519855",
+      "inputMetadataSha256": "646e2b5ce08a98a1b7f9637c563322f29c4809e2d7d1b7f3cce8e539739ccd02",
+      "inputContextSha256": "bec7184368266df711a8c09bb5094143d587049852420adac0c953b0db6a4ef6",
+      "copy": {
+        "title": "Snowy Village Lane",
+        "alt": "Snow-covered village houses face a narrow lane with a distant church spire.",
+        "description": "Warm window light contrasts with the blue snow and evening sky. Bare branches, evergreen trees and falling flakes fill the street edges."
+      },
+      "observations": [
+        "Snow covers steep-roofed houses with warm yellow windows.",
+        "A narrow lane leads toward a pointed church spire beneath falling snow."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-winter-village.webp",
+      "references": []
+    },
+    {
+      "id": "background-summer-beach",
+      "status": "reviewed-from-image",
+      "sourceSha256": "374af286787ca6474a2b818a5f60c00a3bf9fd5b15156b9bf5b9d9d348788a5c",
+      "imageSha256": "374af286787ca6474a2b818a5f60c00a3bf9fd5b15156b9bf5b9d9d348788a5c",
+      "inputMetadataSha256": "a6efdad2ffac5cc77f98bfb5e18652b5ece5537a9e1922cf360a9aacd1df983d",
+      "inputContextSha256": "e958865f3b875922014a9cea39eb08480e40e5660338bfffa437eb257258c2aa",
+      "copy": {
+        "title": "Sunny Beach with Striped Umbrellas",
+        "alt": "Sandy beach framed by striped umbrellas and dune grass beside turquoise waves.",
+        "description": "Two empty wooden chairs sit beneath the left umbrella. Pale surf bands and small clouds divide the sea from the bright blue sky."
+      },
+      "observations": [
+        "Striped beach umbrellas stand above sand and two wooden chairs.",
+        "Dune grass frames turquoise waves under a sunny blue sky."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-summer-beach.webp",
+      "references": []
+    },
+    {
+      "id": "background-rainbow-hills",
+      "status": "reviewed-from-image",
+      "sourceSha256": "3b1159b482231c3d4978de48d9008626a44df7993c1f733f29bcd7acb61b3846",
+      "imageSha256": "3b1159b482231c3d4978de48d9008626a44df7993c1f733f29bcd7acb61b3846",
+      "inputMetadataSha256": "5676c831069468fb3a5c5be82fee335ea59b1e589f0432808a55d941aad17636",
+      "inputContextSha256": "1b28991d9f454d145e4521624f8a1bd72cba1a512d3a6b9e8af4667b807802c8",
+      "copy": {
+        "title": "Rainbow over Rolling Green Hills",
+        "alt": "Broad rainbow arcs between white clouds above green hills and tiny flowers.",
+        "description": "Bushes flank the layered hills below the colorful arch. The simple cartoon shapes leave a clear patch of sky in the middle."
+      },
+      "observations": [
+        "A multicolored rainbow stretches between two white cloud clusters.",
+        "Rounded green hills and bushes carry small white and yellow flowers."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-rainbow-hills.webp",
+      "references": []
+    },
+    {
+      "id": "background-sunrise-mountains",
+      "status": "reviewed-from-image",
+      "sourceSha256": "32b6f20ebd8653b70e123e8b0c288248af0342b80ec79ac8658ac992e9d7c497",
+      "imageSha256": "32b6f20ebd8653b70e123e8b0c288248af0342b80ec79ac8658ac992e9d7c497",
+      "inputMetadataSha256": "1414d83aad7bc264d062a3d8b9f63f5e286550ebf5d0a09a96ad10d4f886c2f9",
+      "inputContextSha256": "28b60bf06aee2fdf5ebbb6658de9e5f5f02cbac30a254b50841bb4d79fb30e75",
+      "copy": {
+        "title": "Sunrise above Layered Mountains",
+        "alt": "Golden sunrise illuminates layered blue mountains above dark foreground pines.",
+        "description": "The sun rests low on the right horizon. Rocky grass-covered slopes frame the lower edge beneath the peach-colored sky."
+      },
+      "observations": [
+        "Blue mountain ridges recede into pale mist under a peach sky.",
+        "A low yellow sun appears to the right above dark pines and rocks."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-sunrise-mountains.webp",
+      "references": []
+    },
+    {
+      "id": "background-desert-dunes",
+      "status": "reviewed-from-image",
+      "sourceSha256": "f2bd1b6bf3d8c2894ed66c5a0ce71a13be5d369bd25e59806c6c5707fd05632c",
+      "imageSha256": "f2bd1b6bf3d8c2894ed66c5a0ce71a13be5d369bd25e59806c6c5707fd05632c",
+      "inputMetadataSha256": "e60c71da50549445ee7d973996a563a262d148d13dcb4f4198e5b809b1a6a70d",
+      "inputContextSha256": "b7e76f3ddb9d0b691be0ed7d30765a140b4449a6c5b640757646423b55c20f05",
+      "copy": {
+        "title": "Desert Dunes at Sunset",
+        "alt": "Warm sand dunes roll between tall cacti beneath a pink and orange sunset sky.",
+        "description": "Soft purple mountains sit behind the dunes. Small desert plants punctuate the foreground while the setting sun brightens the right horizon."
+      },
+      "observations": [
+        "Tall green cacti stand at the sides of orange desert dunes.",
+        "A pale sun and purple mountains sit beneath a pink-orange sky."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-desert-dunes.webp",
+      "references": []
+    },
+    {
+      "id": "background-night-sky",
+      "status": "reviewed-from-image",
+      "sourceSha256": "a31e385945389121cb715b89309cf602a742845ccc6d7e933dfdc0bda63ee5e9",
+      "imageSha256": "a31e385945389121cb715b89309cf602a742845ccc6d7e933dfdc0bda63ee5e9",
+      "inputMetadataSha256": "1f1fcaabf8e6a7425d02e5c8ae975f3250ed5416b2e4e911c529bec2baa2aded",
+      "inputContextSha256": "9f467803856433f8d5f729a0d5edec33c14d0d5331c8beeea5873b45d6e878e9",
+      "copy": {
+        "title": "Moonlit Lake and Constellations",
+        "alt": "Full moon and small constellation lines shine above a dark mountain lake and pine silhouettes.",
+        "description": "Cloud banks follow the distant ridges, and moonlight forms a narrow reflection on the water. The open night sky holds scattered stars."
+      },
+      "observations": [
+        "A full moon and tiny connected stars fill a deep blue sky.",
+        "Dark pine trees frame a lake with a pale vertical reflection."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-night-sky.webp",
+      "references": []
+    },
+    {
+      "id": "background-underwater-reef",
+      "status": "reviewed-from-image",
+      "sourceSha256": "810ec38442df3b1e4bd4795d8292119788ce49315dc7f719722356fd71ca198e",
+      "imageSha256": "810ec38442df3b1e4bd4795d8292119788ce49315dc7f719722356fd71ca198e",
+      "inputMetadataSha256": "7a3165146b6584c31aa3db280a28950108748534cffbdd3061234cc06dbf64fa",
+      "inputContextSha256": "f78dcbc1af4787c8d506d628fd57ae4cd482529bffc8fbd2842d519091699e5d",
+      "copy": {
+        "title": "Underwater Reef with Tropical Fish",
+        "alt": "Blue underwater scene framed by coral, tall aquatic plants and small colorful fish.",
+        "description": "Sunlight filters through the rippled surface above an open sandy center. Pink branches and yellow tube-like coral add color along the bottom."
+      },
+      "observations": [
+        "Colorful fish swim between tall green plants and branching coral.",
+        "Sun rays descend through turquoise water toward a rippled sandy floor."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-underwater-reef.webp",
+      "references": []
+    },
+    {
+      "id": "background-woodland-mushrooms",
+      "status": "reviewed-from-image",
+      "sourceSha256": "47941905e6a5135d4a00d0b8309b1031351202380fbe91ea3e6cee715f68c1f3",
+      "imageSha256": "47941905e6a5135d4a00d0b8309b1031351202380fbe91ea3e6cee715f68c1f3",
+      "inputMetadataSha256": "6fefb582ca434a9e7e58ecf7d8553e74fa5eada546b5cf9f5820a983998b01ac",
+      "inputContextSha256": "ebc2fae00419f3576e282ee85340577134330c337e5595281d1a57e33186b3ec",
+      "copy": {
+        "title": "Mushroom Clearing with Ferns",
+        "alt": "Red spotted mushrooms and brown mushrooms flank a green woodland clearing.",
+        "description": "A moss-covered stump rises behind the brown caps, while fern fronds and scattered orange leaves frame the open grassy center."
+      },
+      "observations": [
+        "Red caps with white spots rise on the left; brown mushrooms grow beside a mossy stump on the right.",
+        "Fern fronds, gray stones and orange fallen leaves surround the green clearing."
+      ],
+      "reviewedAt": "2026-10-29T12:39:40.396416+00:00",
+      "inspectedImage": "/catalog/wave_700/background-woodland-mushrooms.webp",
+      "references": []
+    },
+    {
+      "id": "background-school-chalkboard",
+      "status": "reviewed-from-image",
+      "sourceSha256": "82cecb2cc40d423016226894d9e46e780931e06f409a62d30cfe3e4d307ba55e",
+      "imageSha256": "82cecb2cc40d423016226894d9e46e780931e06f409a62d30cfe3e4d307ba55e",
+      "inputMetadataSha256": "e0a6cac73aef20ad0cbbca870808226ca9ab95aca3140d11356c18bba6aca43b",
+      "inputContextSha256": "ba8198fec4a1067178d34c6dd052de5e4402a3f5c8979eb80b7b63cc09e47934",
+      "copy": {
+        "title": "Green Chalkboard with School Doodles",
+        "alt": "Wood-framed green chalkboard with a vertical row of colorful school doodles on the right.",
+        "description": "A light bulb, heart, books, pencil and globe decorate one side. Most of the chalkboard remains empty for a message or lesson heading."
+      },
+      "observations": [
+        "A brown wooden frame surrounds a dark green chalkboard.",
+        "A right-hand strip contains chalk drawings of books, a bulb and a globe."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-school-chalkboard.webp",
+      "references": []
+    },
+    {
+      "id": "background-notebook-paper",
+      "status": "reviewed-from-image",
+      "sourceSha256": "e19b80cfc334c970b5066dc4f7d0a17458732233a9bdbe7c14ff3f32264e1216",
+      "imageSha256": "e19b80cfc334c970b5066dc4f7d0a17458732233a9bdbe7c14ff3f32264e1216",
+      "inputMetadataSha256": "b24f90472cb31af85d9092c8d79d1d3aeb4a61f5a1dbc90c166cf5e97da2c253",
+      "inputContextSha256": "beb34ae919d3b3b7eb82df0407ef7a6d22942a68d1afd478b293643844e49676",
+      "copy": {
+        "title": "Ruled Notebook Page with Pencil",
+        "alt": "Cream ruled notebook sheet with punched holes, a paper clip and yellow pencil.",
+        "description": "A red margin line runs beside the holes on the left. The pencil lies diagonally across the lower right, leaving most ruled lines clear."
+      },
+      "observations": [
+        "A lined cream sheet has punched holes and a red vertical margin.",
+        "A silver paper clip and diagonal yellow pencil overlap the right side."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-notebook-paper.webp",
+      "references": []
+    },
+    {
+      "id": "background-art-table",
+      "status": "reviewed-from-image",
+      "sourceSha256": "d2be2283036c2b65992ea5cf661e1f85502e5cfd28a5cee4c81b63265660b7ec",
+      "imageSha256": "d2be2283036c2b65992ea5cf661e1f85502e5cfd28a5cee4c81b63265660b7ec",
+      "inputMetadataSha256": "fa2ba003f3f75b2aa455f1dd7e8dc80671d3e25f1b343d0a4ec30015f0a868c6",
+      "inputContextSha256": "51f72081a0aca2a44c2eb90e9627d5ee1ee26d054c28e2ec93fdab89bd8b975d",
+      "copy": {
+        "title": "Colored Pencils and Paint Splashes",
+        "alt": "Short colored pencils surround a cream center with bright watercolor splashes.",
+        "description": "Cool blues and greens gather at the upper left, while reds and oranges occupy the opposite corner. Purple pencils complete the lower edge."
+      },
+      "observations": [
+        "Clusters of sharpened colored pencils point inward from three corners.",
+        "Rainbow paint splashes form an irregular border around a pale center."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-art-table.webp",
+      "references": []
+    },
+    {
+      "id": "background-science-lab",
+      "status": "reviewed-from-image",
+      "sourceSha256": "51ec0af9ce1c9b4d551ebf5e30ec3b3e189a2b1e69ba4f3b50f9d85a654ee1d3",
+      "imageSha256": "51ec0af9ce1c9b4d551ebf5e30ec3b3e189a2b1e69ba4f3b50f9d85a654ee1d3",
+      "inputMetadataSha256": "6986e9a711d0790e85ec60a9ded8cc0925575ac52cc4847d0d2d25272b5644fc",
+      "inputContextSha256": "084ddd87b235a4dd3488a00a143d2077103b5620fd772f7da296013b994b7c26",
+      "copy": {
+        "title": "Science Frame with Microscope and Molecules",
+        "alt": "Pale blue science frame with small molecular models and a microscope in the lower right.",
+        "description": "Rounded blue and green nodes connect through short rods around the edges. The microscope tilts toward the open blue center."
+      },
+      "observations": [
+        "Small ball-and-stick molecular shapes decorate a pale blue panel.",
+        "A white and blue microscope stands in the lower-right corner."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-science-lab.webp",
+      "references": []
+    },
+    {
+      "id": "background-library-books",
+      "status": "reviewed-from-image",
+      "sourceSha256": "d7357ef29caf7d0d697f6b390d7bdcfd41e900ea3a65a4ade4b72374a1ac3e1a",
+      "imageSha256": "d7357ef29caf7d0d697f6b390d7bdcfd41e900ea3a65a4ade4b72374a1ac3e1a",
+      "inputMetadataSha256": "6dbed466b0c6ea90b5d3ef74164d10ea2d76243c37b97c10dcf424a498181e1d",
+      "inputContextSha256": "4b6146844829996ef5e9cb5e7596a48c703e52a83dc77447b2cfd7d6cc4c5543",
+      "copy": {
+        "title": "Books and Trailing Plants Frame",
+        "alt": "Stacks of old books and trailing green plants frame a cream writing area.",
+        "description": "Tall book spines sit behind climbing vines on each side. The lower stacks rest on a narrow wooden surface beneath the empty center."
+      },
+      "observations": [
+        "Piles of multicolored books stand at both lower corners.",
+        "Leafy vines climb the sides around a blank cream panel."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-library-books.webp",
+      "references": []
+    },
+    {
+      "id": "background-music-notes",
+      "status": "reviewed-from-image",
+      "sourceSha256": "8d112ab1516751a742487047031305249152e39488cc31814430a80ad4d7a6b0",
+      "imageSha256": "8d112ab1516751a742487047031305249152e39488cc31814430a80ad4d7a6b0",
+      "inputMetadataSha256": "9b336bc658d6ee7ce6bc3fb5b04dfede3b36ced3dc8608ba65329ca955ec81cc",
+      "inputContextSha256": "962bf3b0175c6acd95d9ca922d8620a177efb5d01a7057e891fd1d26bf28f81b",
+      "copy": {
+        "title": "Colorful Music Notes on a Lavender Frame",
+        "alt": "Multicolored music notes curve along staff lines above and below a lavender panel.",
+        "description": "A large purple treble clef anchors the left edge. The gently waving staves leave the middle clear between the two musical bands."
+      },
+      "observations": [
+        "Rainbow-colored music notes sit on curved blue staff lines.",
+        "A large purple treble clef borders the pale lavender center."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-music-notes.webp",
+      "references": []
+    },
+    {
+      "id": "background-birthday-confetti",
+      "status": "reviewed-from-image",
+      "sourceSha256": "f5c40a9abe313ec5b04e6204279745687f7fa6bf9d4f97d91d8fa5becce9984a",
+      "imageSha256": "f5c40a9abe313ec5b04e6204279745687f7fa6bf9d4f97d91d8fa5becce9984a",
+      "inputMetadataSha256": "bd1a4394efa2e5f33f916231aee18647a0f8feac86e91aa1b3963a42e242808f",
+      "inputContextSha256": "4cc9d95739531ccb6e2eb9c04320e290355d0d7ae5edad52bd4b09e2b6889eab",
+      "copy": {
+        "title": "Confetti and Streamer Celebration Frame",
+        "alt": "Rainbow paper curls and small confetti pieces surround a cream square center.",
+        "description": "Long red, green and yellow streamers hang from the upper corners. Smaller colored squares create a lighter border along the lower edge."
+      },
+      "observations": [
+        "Curled streamers in bright colors hang around a pale square panel.",
+        "Small square confetti pieces and stars fill the border."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-birthday-confetti.webp",
+      "references": []
+    },
+    {
+      "id": "background-balloon-celebration",
+      "status": "reviewed-from-image",
+      "sourceSha256": "f97043bcb67bac51a72e83dd5f0511b05af33d77607518df3ae06eb2edd80272",
+      "imageSha256": "f97043bcb67bac51a72e83dd5f0511b05af33d77607518df3ae06eb2edd80272",
+      "inputMetadataSha256": "7855fc5fe4616d55373a5287fb45f91d058931b283f03a2c1218d5348a78a336",
+      "inputContextSha256": "dc9ce2a82ea6500847c705815c7698fd6d7710919406c4969b51d7373c7cb304",
+      "copy": {
+        "title": "Pastel Balloon Celebration Frame",
+        "alt": "Pastel balloons rise along both sides of a pale mint panel with confetti curls.",
+        "description": "The balloons alternate pink, blue, yellow, lavender and mint. Their thin strings curve down beside the softly scalloped writing space."
+      },
+      "observations": [
+        "Pastel pink, blue, yellow and lavender balloons frame a mint center.",
+        "Thin strings and small confetti curls follow both side edges."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-balloon-celebration.webp",
+      "references": []
+    },
+    {
+      "id": "background-gold-stars",
+      "status": "reviewed-from-image",
+      "sourceSha256": "5bf110063dae2dd343645b4ca2eb6ccdd088ca5832dc653ee3385660a52d0f43",
+      "imageSha256": "5bf110063dae2dd343645b4ca2eb6ccdd088ca5832dc653ee3385660a52d0f43",
+      "inputMetadataSha256": "e7cce96331b01904c98127611915e8795947c6afe3be08f668e41a00994e760d",
+      "inputContextSha256": "f858273ecdecd6126eb94b203c3783e7816d625d8ecbc0d5e49c7603ddbc9b3b",
+      "copy": {
+        "title": "Gold Stars on a Midnight Blue Frame",
+        "alt": "Tiny gold stars and dots surround a deep blue panel with a fine gold border.",
+        "description": "Notched corners interrupt the thin rectangular outline. Bright starbursts gather near the edges, keeping the dark center mostly clear."
+      },
+      "observations": [
+        "A midnight blue panel has a thin gold border with shaped corners.",
+        "Gold starbursts and tiny pale dots cluster around the margins."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-gold-stars.webp",
+      "references": []
+    },
+    {
+      "id": "background-wedding-botanicals",
+      "status": "reviewed-from-image",
+      "sourceSha256": "bee3adb7267bb6bafaa2509228256fe0dd03c6a355b95178855671736d648750",
+      "imageSha256": "bee3adb7267bb6bafaa2509228256fe0dd03c6a355b95178855671736d648750",
+      "inputMetadataSha256": "9a57da8a78f83ec0d2a3618202e8a976a12591924a7bd0930e765aefa36658b6",
+      "inputContextSha256": "9f177fca9f4fdfddf761534358daef9e609b78702fbbcfa43b957e24dbf61f18",
+      "copy": {
+        "title": "White Flowers and Sage Leaves Frame",
+        "alt": "White blossoms and muted green leaves decorate opposite corners of a cream panel.",
+        "description": "Small flower clusters extend from the upper left and lower right. A thin gold outline follows the panel's gently shaped corners."
+      },
+      "observations": [
+        "White flowers and rounded sage-colored leaves cluster in opposite corners.",
+        "A thin gold line borders a large empty cream panel."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-wedding-botanicals.webp",
+      "references": []
+    },
+    {
+      "id": "background-baby-clouds",
+      "status": "reviewed-from-image",
+      "sourceSha256": "a392f5313622d6c16a59d07eef596afd5fb59b9eb53f63f72199b14bd3d56fcf",
+      "imageSha256": "a392f5313622d6c16a59d07eef596afd5fb59b9eb53f63f72199b14bd3d56fcf",
+      "inputMetadataSha256": "dc04b8af0ae43e73840ed11cc0ea9295a7f25f94b96bbda951ab8774f41656ca",
+      "inputContextSha256": "f01d91b3dd7d087f3f003f456bb68326e2dad6f9862a7d2367582a87e56c88c8",
+      "copy": {
+        "title": "Clouds, Crescent Moons and Stars Frame",
+        "alt": "Soft blue clouds, yellow crescent moons and stars frame a pale blue center.",
+        "description": "The clouds gather into rounded corner groups. Smaller moons and stars link the clusters along the open sides."
+      },
+      "observations": [
+        "Pale blue cloud clusters surround the softly tinted center.",
+        "Yellow crescent moons and small stars sit among the clouds."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-baby-clouds.webp",
+      "references": []
+    },
+    {
+      "id": "background-kids-dinosaurs",
+      "status": "reviewed-from-image",
+      "sourceSha256": "b4a7e1966bce1122c6913910d104840605f76709fdbeb54c80083fe07977e914",
+      "imageSha256": "b4a7e1966bce1122c6913910d104840605f76709fdbeb54c80083fe07977e914",
+      "inputMetadataSha256": "117d6f886573d842c3f1bd32aa466558a4fc15a5591dc2ea80794dcc06480a46",
+      "inputContextSha256": "a407ec0dd66c7596f0a9ba73060ca49c17b5ea88423ab96bb10094b53b6da4d9",
+      "copy": {
+        "title": "Cartoon Dinosaur Valley Frame",
+        "alt": "Three friendly cartoon dinosaurs border a sandy valley with palm trees and a distant volcano.",
+        "description": "A blue long-necked dinosaur stands on the left, a green horned dinosaur rests near the water, and an orange dinosaur appears on the right. Their arrangement leaves a broad open path in the middle."
+      },
+      "observations": [
+        "Blue, green and orange cartoon dinosaurs stand around a sandy clearing.",
+        "Palm trees and an erupting volcano rise behind the open central space."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-kids-dinosaurs.webp",
+      "references": []
+    },
+    {
+      "id": "background-kids-space",
+      "status": "reviewed-from-image",
+      "sourceSha256": "bb1c2305e37c932bcdd2e0065998e1fe5910119f285611acb970c60d8e5cb7a4",
+      "imageSha256": "bb1c2305e37c932bcdd2e0065998e1fe5910119f285611acb970c60d8e5cb7a4",
+      "inputMetadataSha256": "c04257172ce6d8237855c90f8aadc2a210e4a1c1e38896f2a109f6cb370d6d12",
+      "inputContextSha256": "5d0d38b7d57db05e31de64dc12612fcb3338892f00407ecc2c7eb7e4aa60d576",
+      "copy": {
+        "title": "Smiling Planets and Rocket Space Frame",
+        "alt": "Smiling cartoon planets surround a dark star field with a red-and-white rocket.",
+        "description": "A blue-green planet and a ringed golden planet fill the upper corners. Orange and gray faces occupy the lower edge beneath the open space."
+      },
+      "observations": [
+        "Four smiling planets frame a dark blue starry panel.",
+        "A red-and-white rocket climbs near the upper-right edge."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-kids-space.webp",
+      "references": []
+    },
+    {
+      "id": "background-farm-landscape",
+      "status": "reviewed-from-image",
+      "sourceSha256": "687c169eaed3afec375790c5426e2ab685da9cc7efa871221cc458c497682217",
+      "imageSha256": "687c169eaed3afec375790c5426e2ab685da9cc7efa871221cc458c497682217",
+      "inputMetadataSha256": "34543ce942123befbf2d87f976cd4ee8673e1d5495b1755bde83c21932e37616",
+      "inputContextSha256": "dff754ca4ce970363fc7261c74d312ee4a90a1ba7eeb4f2502f040d0467ff80c",
+      "copy": {
+        "title": "Red Barn beside Crop Rows",
+        "alt": "Red barn and wooden fence overlook neat crop rows beneath a wide blue sky.",
+        "description": "The curved red roof and white doors stand to the left of the fields. Distant hills and scattered clouds keep the upper half open."
+      },
+      "observations": [
+        "A red barn with white trim stands beside a wooden fence.",
+        "Parallel green crop rows lead toward low hills under blue sky."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-farm-landscape.webp",
+      "references": []
+    },
+    {
+      "id": "background-garden-butterflies",
+      "status": "reviewed-from-image",
+      "sourceSha256": "524aaecd281e698d4171db2da1868611bb2cfa7de345f1c1d61871e4ea24202d",
+      "imageSha256": "524aaecd281e698d4171db2da1868611bb2cfa7de345f1c1d61871e4ea24202d",
+      "inputMetadataSha256": "998e5130ae211e08f40d2abe1a70d609f2962d0df47172c81998459b25844635",
+      "inputContextSha256": "e19e10f17bbcf8eb593f6ddd30a3167a418461caa8861828a62b9c4b08ddd48d",
+      "copy": {
+        "title": "Lavender and Butterfly Garden Frame",
+        "alt": "Lavender sprigs, green leaves and butterflies surround a pale garden opening.",
+        "description": "Purple flower spikes rise along both sides. Small white blossoms and yellow and violet butterflies soften the leafy border."
+      },
+      "observations": [
+        "Tall purple flower spikes and pale green leaves frame both sides.",
+        "Several butterflies hover around an open cream and blue-green center."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-garden-butterflies.webp",
+      "references": []
+    },
+    {
+      "id": "background-ocean-watercolor",
+      "status": "reviewed-from-image",
+      "sourceSha256": "c81f48835e013ad66c1239d8ade2a22c98a93e043d1794006e643ce379f10076",
+      "imageSha256": "c81f48835e013ad66c1239d8ade2a22c98a93e043d1794006e643ce379f10076",
+      "inputMetadataSha256": "35b064cd9ae75a9248bbe095db7caf97ecea3763963e5a2367e62e30cb52ae48",
+      "inputContextSha256": "c8f4745baa2dd8ec938074f684531b2d391ee67207fb4591e9d3522fa7883947",
+      "copy": {
+        "title": "Watercolor Ocean Wave Panel",
+        "alt": "Turquoise watercolor waves and white foam surround a pale watery center.",
+        "description": "Darker curling waves collect in the lower corners. Layered translucent strokes create irregular edges along the top and sides."
+      },
+      "observations": [
+        "Blue and turquoise brush-like bands form a watery rectangular panel.",
+        "White foam and darker curling waves gather at the lower corners."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-ocean-watercolor.webp",
+      "references": []
+    },
+    {
+      "id": "background-paper-cut-sunrise",
+      "status": "reviewed-from-image",
+      "sourceSha256": "d310422d102aa9a9efbd25c10725e31f7a140d9ec226b5a60e56e1e0e40bf4e1",
+      "imageSha256": "d310422d102aa9a9efbd25c10725e31f7a140d9ec226b5a60e56e1e0e40bf4e1",
+      "inputMetadataSha256": "6dd14f83573ba491159029524c7edebe8c15fedd6d8c99b632fbfacc032fbf15",
+      "inputContextSha256": "412bf24aba08536a0defa8b882473c0b38badcac62e3912b8cbc9584d7d51841",
+      "copy": {
+        "title": "Layered Paper Sunrise Landscape",
+        "alt": "Stylized yellow sun rises behind layered orange hills and dark teal foreground shapes.",
+        "description": "Simple cream clouds sit above the warm landscape. Curved bands and leafy silhouettes give the panel a cut-paper appearance."
+      },
+      "observations": [
+        "A yellow sun appears between orange hills beneath cream clouds.",
+        "Dark teal foreground layers and plant silhouettes overlap the bottom."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-paper-cut-sunrise.webp",
+      "references": []
+    },
+    {
+      "id": "background-geometric-pastel",
+      "status": "reviewed-from-image",
+      "sourceSha256": "e63c84086eaacb85b13296d6f1630a010edb189d763b40703825e35b4ce41022",
+      "imageSha256": "e63c84086eaacb85b13296d6f1630a010edb189d763b40703825e35b4ce41022",
+      "inputMetadataSha256": "166fce712394f7e961448bc7b0a030f7157faa3980a5e8d7a67cb173cf9d5597",
+      "inputContextSha256": "65de9d9213d5a3febe5db5f1e1baaed7f3d75b7aaf5a74378eaf0973b28bd600",
+      "copy": {
+        "title": "Pastel Abstract Shape Frame",
+        "alt": "Muted sage, pink, blue and lilac shapes surround an empty cream center.",
+        "description": "Thin pale curves cross the larger color patches. Small gold dots add detail in two opposing corners."
+      },
+      "observations": [
+        "Soft irregular pastel shapes sit around the edges of a cream panel.",
+        "Thin curved lines and a small group of gold dots decorate the shapes."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-geometric-pastel.webp",
+      "references": []
+    },
+    {
+      "id": "background-retro-sunburst",
+      "status": "reviewed-from-image",
+      "sourceSha256": "f4ae1f5abb12bc0f3c7fad2f18e9c70867b7577ccb15179d43b1f435495654af",
+      "imageSha256": "f4ae1f5abb12bc0f3c7fad2f18e9c70867b7577ccb15179d43b1f435495654af",
+      "inputMetadataSha256": "dcd6d4348ee87f22a091170714f55839e70888c6841342be6403c5a1eafb2c80",
+      "inputContextSha256": "1199db504fa81b030cbad99a6d3e108e75fb4013c9da93d1a5726bc191a46437",
+      "copy": {
+        "title": "Retro Orange Sunburst Panel",
+        "alt": "Orange, gold and cream rays radiate from a blank circular center.",
+        "description": "Alternating narrow and broad bands reach the rounded square edge. The flat warm palette gives the panel a vintage poster appearance."
+      },
+      "observations": [
+        "Alternating orange and gold rays extend across a rounded square.",
+        "A large empty cream circle sits slightly below the panel's center."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-retro-sunburst.webp",
+      "references": []
+    },
+    {
+      "id": "background-modern-blue-waves",
+      "status": "reviewed-from-image",
+      "sourceSha256": "6525ddf118f9f5267182e00a3ae6eb8b72e91a3eea15a8d1b089f1971a01935b",
+      "imageSha256": "6525ddf118f9f5267182e00a3ae6eb8b72e91a3eea15a8d1b089f1971a01935b",
+      "inputMetadataSha256": "d792214519c426ec6529ea7d37847590995594876fc60a40931e69d4c3b68fe5",
+      "inputContextSha256": "df741ffff8030297d2a1005b7ddf95356a1cda99dfd6d6d68d370d869ef2893c",
+      "copy": {
+        "title": "Layered Blue Wave Business Frame",
+        "alt": "Dark and light blue curved bands frame a large pale blue writing area.",
+        "description": "The waves sweep across the upper left and lower right edges. Their asymmetrical curves leave an uncluttered center for a heading."
+      },
+      "observations": [
+        "Layered navy and bright blue curves border a pale blue center.",
+        "The strongest bands sit at the upper-left and lower-right corners."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-modern-blue-waves.webp",
+      "references": []
+    },
+    {
+      "id": "background-terracotta-arches",
+      "status": "reviewed-from-image",
+      "sourceSha256": "c503d44d53e2a26f82532d5b630cee901294ccec58c1a058e113d3a7670d934d",
+      "imageSha256": "c503d44d53e2a26f82532d5b630cee901294ccec58c1a058e113d3a7670d934d",
+      "inputMetadataSha256": "5a6b318f4eb7950fa05c7125230fed9a6b20d9cd02ddf1e18d86876ea8b35b53",
+      "inputContextSha256": "60478bc3153e02b5a09ae885d7451caaabc2fd0b7b1dec48e1f53f21ceadab73",
+      "copy": {
+        "title": "Terracotta Arch with Leaf Sprigs",
+        "alt": "Nested terracotta and cream arches rise between two small leafy sprigs.",
+        "description": "Warm rust-colored bands alternate around the tall central opening. Soft curved shapes fill the lower corners beneath the leaves."
+      },
+      "observations": [
+        "Several nested orange and cream arches form a tall rounded opening.",
+        "Small green leaf sprigs decorate opposite sides of the arch."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-terracotta-arches.webp",
+      "references": []
+    },
+    {
+      "id": "background-botanical-fern",
+      "status": "reviewed-from-image",
+      "sourceSha256": "c89f3fd4ebac1abfa8b915681a314a7e835aab623ffac44a78ef5da7f571b0fa",
+      "imageSha256": "c89f3fd4ebac1abfa8b915681a314a7e835aab623ffac44a78ef5da7f571b0fa",
+      "inputMetadataSha256": "3ff2f268989ad7cd898da60983092d21ced46771196cfa34cf142f6737b7bc7b",
+      "inputContextSha256": "1ab0640ec0a9fbf84aa3685e76fdc2ca58398dc3519214a96c338aeecb56a63a",
+      "copy": {
+        "title": "Watercolor Fern Border",
+        "alt": "Green fern fronds frame a pale sage watercolor panel.",
+        "description": "The fronds vary in length and overlap around the sides. Soft wash texture fills the large open center."
+      },
+      "observations": [
+        "Fern fronds surround all four edges of a green-tinted panel.",
+        "The pale sage center has a mottled watercolor texture."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-botanical-fern.webp",
+      "references": []
+    },
+    {
+      "id": "background-watercolor-floral",
+      "status": "reviewed-from-image",
+      "sourceSha256": "9b4a0027cd1e41ebc3a9528667e30810d882f698add6547f308c40115a3c116c",
+      "imageSha256": "9b4a0027cd1e41ebc3a9528667e30810d882f698add6547f308c40115a3c116c",
+      "inputMetadataSha256": "1bac2835ca46234d170ba1db9b603a74d59868db63e8816c7789b376ea2cdbd4",
+      "inputContextSha256": "0ff71382ac8ce97633a53851c96cef1dff6d3d1a27bc1475a80aef1395f33ecb",
+      "copy": {
+        "title": "Pink Wildflower Corner Frame",
+        "alt": "Pink, white and violet flowers decorate opposite corners of a pale pink panel.",
+        "description": "Thin stems and soft green leaves spread outward from the blossoms. The diagonal arrangement keeps most of the pink center clear."
+      },
+      "observations": [
+        "Mixed pink, white and violet blossoms cluster at opposite corners.",
+        "Fine green stems and leaves extend into the pale pink border."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-watercolor-floral.webp",
+      "references": []
+    },
+    {
+      "id": "background-tropical-leaves",
+      "status": "reviewed-from-image",
+      "sourceSha256": "224b71c16785abab9b3351fb12cece95a6407fb5f3483d5b6590d1e6d72de5d8",
+      "imageSha256": "224b71c16785abab9b3351fb12cece95a6407fb5f3483d5b6590d1e6d72de5d8",
+      "inputMetadataSha256": "81d01dd8f044b2288ce132fea4cc4e4daf278b3827e0824a0bba7f7e57051107",
+      "inputContextSha256": "8d9485c524b9616cb956cda21572fd0374225db3c591ac99c2ff2e4e6a44d0b6",
+      "copy": {
+        "title": "Tropical Leaf Frame",
+        "alt": "Large glossy tropical leaves surround a pale yellow-green center.",
+        "description": "Split leaves and narrow palm fronds overlap at the corners. Their dark and light green bands create a strong leafy edge."
+      },
+      "observations": [
+        "Broad split green leaves overlap narrow palm-like fronds.",
+        "A large pale yellow-green area remains open in the center."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-tropical-leaves.webp",
+      "references": []
+    },
+    {
+      "id": "background-citrus-summer",
+      "status": "reviewed-from-image",
+      "sourceSha256": "89b96b1df53ea7f6820af643a1bb2ac5b0de45733ddafc71bc5b832675a1aad9",
+      "imageSha256": "89b96b1df53ea7f6820af643a1bb2ac5b0de45733ddafc71bc5b832675a1aad9",
+      "inputMetadataSha256": "da7bab6c896aed15e4f200b395c65a124b0559f20b51a49985498858bb103e69",
+      "inputContextSha256": "8a7845a71e43205c776dec79deb31a7647c2b4df9cb7a491b925cd2db7ef0ded",
+      "copy": {
+        "title": "Lemon and Blossom Summer Frame",
+        "alt": "Yellow lemons, sliced fruit, white blossoms and green leaves border a pale yellow panel.",
+        "description": "Fruit clusters fill the upper left and lower right. Smaller white flowers continue along the sides between the leafy branches."
+      },
+      "observations": [
+        "Whole lemons and cut lemon slices sit among glossy green leaves.",
+        "White five-petal blossoms border a pale yellow central area."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-citrus-summer.webp",
+      "references": []
+    },
+    {
+      "id": "background-fall-harvest",
+      "status": "reviewed-from-image",
+      "sourceSha256": "5f2d668ddeb339d9fbe7eaba2b7154d547dac1e95fcd89015d18a34917dd43e4",
+      "imageSha256": "5f2d668ddeb339d9fbe7eaba2b7154d547dac1e95fcd89015d18a34917dd43e4",
+      "inputMetadataSha256": "513853ad2fdd7078116fd1183dd7d18ddf16831ac0052b695b1c9e66532662ba",
+      "inputContextSha256": "8da3b0edea9e1be7a4a32d6db16719a5129002a25268a5d472f9524ee208aad6",
+      "copy": {
+        "title": "Pumpkin and Wheat Harvest Panel",
+        "alt": "Orange pumpkins and tied wheat sheaves frame a warm parchment center.",
+        "description": "Large wheat bundles rise at both upper sides. Small gourds and autumn leaves fill the lower corners beneath the blank panel."
+      },
+      "observations": [
+        "Tied golden wheat sheaves stand beside orange pumpkins.",
+        "Autumn leaves and small gourds surround the lower edge of a brown parchment panel."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-fall-harvest.webp",
+      "references": []
+    },
+    {
+      "id": "background-thanksgiving-table",
+      "status": "reviewed-from-image",
+      "sourceSha256": "14996d1ebc8273cab7852acbcfe1a6873c992f59c2065cabb16c48d21d88957d",
+      "imageSha256": "14996d1ebc8273cab7852acbcfe1a6873c992f59c2065cabb16c48d21d88957d",
+      "inputMetadataSha256": "f69f41934efe221a2fa0bc36ba0e3e479288167270bc34bb64898bbc0f4756b7",
+      "inputContextSha256": "bd2e47fcaa60e50892830f3fc7b4d2c9a40b5fdd983cd1601d0a5df7f3d4973f",
+      "copy": {
+        "title": "Outdoor Harvest Table by a Lake",
+        "alt": "Rustic outdoor dining table and autumn pumpkins overlook a lake and distant hills.",
+        "description": "Fall branches frame the open sky above the table. Blankets, gourds and harvest baskets fill the foreground corners."
+      },
+      "observations": [
+        "A set wooden dining table stands outdoors near a lake.",
+        "Orange pumpkins, blankets and autumn foliage frame the lower and upper edges."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-thanksgiving-table.webp",
+      "references": []
+    },
+    {
+      "id": "background-christmas-lights",
+      "status": "reviewed-from-image",
+      "sourceSha256": "1e45fb854447115c7d568ce1ab66ca6fdb626bcb90cf02a19cac2bd219752ba4",
+      "imageSha256": "1e45fb854447115c7d568ce1ab66ca6fdb626bcb90cf02a19cac2bd219752ba4",
+      "inputMetadataSha256": "75bf2c954bade205fe9dde9bd3ab3d023597870dbf3796839a7aa5fc9c97c4e4",
+      "inputContextSha256": "2c0e964f33d12b408a175a8c3e8c7dc1d2ae9f50687f2b4f90a0f6bb7ece012f",
+      "copy": {
+        "title": "Christmas Lights and Evergreen Frame",
+        "alt": "Multicolored glowing bulbs and evergreen sprigs frame a dark green panel.",
+        "description": "The string of red, yellow, green and blue lights follows the uneven border. Small needles overlap the edge without filling the center."
+      },
+      "observations": [
+        "A dark green panel is edged with evergreen needles.",
+        "A looping string of bright colored bulbs surrounds the open center."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-christmas-lights.webp",
+      "references": []
+    },
+    {
+      "id": "background-snowflakes-ice",
+      "status": "reviewed-from-image",
+      "sourceSha256": "400e21889e076f09871730c39f96d62c61d421a5977e7877a526c2ef2d2fddbd",
+      "imageSha256": "400e21889e076f09871730c39f96d62c61d421a5977e7877a526c2ef2d2fddbd",
+      "inputMetadataSha256": "80defeb86b5443419f4267cbf7cbfc8cecac7abc1817cf86757a50a3b44622db",
+      "inputContextSha256": "876a593bc93b2cf4c7e8ea0fef8144511b96819000a6c9686d85e290b8693587",
+      "copy": {
+        "title": "Icy Blue Snowflake Frame",
+        "alt": "White snowflakes cluster around the edges of a pale blue frosted panel.",
+        "description": "Large branching crystals sit in the corners, with smaller flakes between them. Watercolor-like blue texture gives the center a wintry appearance."
+      },
+      "observations": [
+        "Large white snowflakes occupy the corners of an icy blue panel.",
+        "Smaller snow crystals and soft blue washes fill the surrounding border."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-snowflakes-ice.webp",
+      "references": []
+    },
+    {
+      "id": "background-hanukkah-evening",
+      "status": "reviewed-from-image",
+      "sourceSha256": "7116f96e0fe53f6940d7afd8c73e2845d3432c85c742a873e83859a79f944407",
+      "imageSha256": "7116f96e0fe53f6940d7afd8c73e2845d3432c85c742a873e83859a79f944407",
+      "inputMetadataSha256": "a6b974f25fc0770bc55976a9d80d920f73833955ef612c3454e20ca126905660",
+      "inputContextSha256": "b61f5ea6c996143218540d9ad305bc0c2af370cb0eb8e9f3aaeb2a2e8116fbf6",
+      "copy": {
+        "title": "Hanukkah Candles by a Night Window",
+        "alt": "Eight blue candles and a taller white candle burn in a gold Hanukkah lamp beside a night window.",
+        "description": "Gold coins fill a small blue bowl beside the lamp. On the opposite side, a blue vase with a gold star holds leafy branches against distant illuminated buildings."
+      },
+      "observations": [
+        "A gold nine-branched lamp holds eight blue candles and a taller central white candle.",
+        "Gold coins sit by a blue curtain opposite a star-decorated vase and a night city view."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-hanukkah-evening.webp",
+      "references": []
+    },
+    {
+      "id": "background-lunar-new-year",
+      "status": "reviewed-from-image",
+      "sourceSha256": "33c0149fce0655fdf36e467f701ff85ba442a97a5a03086de042da7cd52eed9c",
+      "imageSha256": "33c0149fce0655fdf36e467f701ff85ba442a97a5a03086de042da7cd52eed9c",
+      "inputMetadataSha256": "c6c0786a05bc0752040264d864c32ba7acbf9ff50acb28f2677dfe1b8e7591cb",
+      "inputContextSha256": "2bcf01f168a7ec78a9838aa71597c282ea3878b94e5ca60bddec98f39faf1d39",
+      "copy": {
+        "title": "Red Lantern and Blossom Frame",
+        "alt": "Red hanging lanterns and blossoms decorate a deep red panel with fine gold trim.",
+        "description": "Flowering branches enter from opposing corners. Gold lines and curled cloud-like motifs finish the ornamental border."
+      },
+      "observations": [
+        "Red lanterns hang beside red blossoms on a dark red panel.",
+        "Thin gold lines and curled corner motifs frame the empty center."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-lunar-new-year.webp",
+      "references": []
+    },
+    {
+      "id": "background-diwali-lamps",
+      "status": "reviewed-from-image",
+      "sourceSha256": "34b7ad4ec6d19c15ad1d55e384a2b08c7a93bd7656d352991d5f90e0f6568f72",
+      "imageSha256": "34b7ad4ec6d19c15ad1d55e384a2b08c7a93bd7656d352991d5f90e0f6568f72",
+      "inputMetadataSha256": "b594fc0fb96e9e801d6574750f665f4a287548b75500f9bfdadb19af7e283482",
+      "inputContextSha256": "006bc25c1ac127bb6e21b70333504e01e650dd8c66dbd5f9ef4b89494c64c8af",
+      "copy": {
+        "title": "Diwali Lamps and Rangoli Frame",
+        "alt": "Small lit clay lamps surround a purple panel with a colorful rangoli pattern.",
+        "description": "The large floral floor pattern enters from the lower left. Golden flames and a narrow gold border brighten the otherwise open violet space."
+      },
+      "observations": [
+        "Small clay lamps with yellow flames sit around a purple panel.",
+        "A multicolored flower-like rangoli pattern spreads from the lower-left corner."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-diwali-lamps.webp",
+      "references": []
+    },
+    {
+      "id": "background-halloween-moon",
+      "status": "reviewed-from-image",
+      "sourceSha256": "f8623cd7fcf8240e2a6e4e1c41e2d4d47f27dadeca3291c88412335a721b1446",
+      "imageSha256": "f8623cd7fcf8240e2a6e4e1c41e2d4d47f27dadeca3291c88412335a721b1446",
+      "inputMetadataSha256": "10968716b40f21322701c7edef4c29c645d30ce54726580d4fee7fce70f03a06",
+      "inputContextSha256": "5f2073a5b0015d4887112fd66bc7a27e300c8a1126c6ef2b38974a23b7e418c0",
+      "copy": {
+        "title": "Jack-o'-Lantern under a Crescent Moon",
+        "alt": "Glowing jack-o'-lantern rests beneath a bare tree and crescent moon in a purple night scene.",
+        "description": "A crooked fence runs along the lower right. Distant hills, small stars and a dark tree silhouette surround the open sky."
+      },
+      "observations": [
+        "An orange carved pumpkin glows beside a bare black tree.",
+        "A yellow crescent moon and a crooked fence sit against layered purple hills."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-halloween-moon.webp",
+      "references": []
+    },
+    {
+      "id": "background-spring-easter",
+      "status": "reviewed-from-image",
+      "sourceSha256": "42183f7c3506a19c1a1e11216eda3ba8d8546cb88486b4ca4b2cf5fb554e1e92",
+      "imageSha256": "42183f7c3506a19c1a1e11216eda3ba8d8546cb88486b4ca4b2cf5fb554e1e92",
+      "inputMetadataSha256": "f86969549b91f2a47979826771ae70fc88e7c784fe69f441813b0e61684bead0",
+      "inputContextSha256": "8cf4c41060e86b2dbc7001dd9a50ecfb5ff59208784c89136b163aa42b8cae5e",
+      "copy": {
+        "title": "Easter Egg Meadow Frame",
+        "alt": "Decorated pastel eggs and white daisies border a grassy meadow under blue sky.",
+        "description": "Tall flowering stems climb the side edges. Different egg patterns and colors gather along the bottom, leaving the middle open."
+      },
+      "observations": [
+        "Pink, blue, yellow and green patterned eggs lie among grass and white daisies.",
+        "Tall leafy stems frame a large open blue sky area."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-spring-easter.webp",
+      "references": []
+    },
+    {
+      "id": "background-picnic-gingham",
+      "status": "reviewed-from-image",
+      "sourceSha256": "a0240113f68f4cd9aa77dadeca845901b6b89b8b9d0e7a0f934765c5956f4261",
+      "imageSha256": "a0240113f68f4cd9aa77dadeca845901b6b89b8b9d0e7a0f934765c5956f4261",
+      "inputMetadataSha256": "c421a64c5011544ac9a980f9296137e9276d17267d5f8c1339c3cacd1c96fee1",
+      "inputContextSha256": "329971cabadc86e1d4b23b4027483fcccd52a6ecfb44138d663642ed795d58ab",
+      "copy": {
+        "title": "Gingham Picnic Cloth with Strawberries",
+        "alt": "Red-and-white checked picnic cloth holds a strawberry basket in the lower right.",
+        "description": "Loose berries and small white blossoms spill from the wicker basket. Soft folds ripple along the cloth's outer edge."
+      },
+      "observations": [
+        "A red-and-white gingham cloth forms a broad rectangular panel.",
+        "A wicker basket of strawberries and white flowers fills one lower corner."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-picnic-gingham.webp",
+      "references": []
+    },
+    {
+      "id": "background-bakery-cafe",
+      "status": "reviewed-from-image",
+      "sourceSha256": "81419450a4f8099fbab76bdfac3cf01e9cdb11f462898cc61afc8e972fcdee08",
+      "imageSha256": "81419450a4f8099fbab76bdfac3cf01e9cdb11f462898cc61afc8e972fcdee08",
+      "inputMetadataSha256": "eec2bfcb01740c31471cb1780beeeef79575ece657b7e49b964096d2a3dc4bc0",
+      "inputContextSha256": "dc82781397b2f8f4590e0df4fb1253b759c6c4a292542c33640e5da7fb0b13b9",
+      "copy": {
+        "title": "Bakery Counter and Pastry Shelves",
+        "alt": "Wooden bakery counter displays breads and pastries between tall plant-topped shelves.",
+        "description": "Croissants and small cakes fill the side shelves and counter. A hanging lamp shines above the open cream wall in the center."
+      },
+      "observations": [
+        "Breads, pastries and small cakes sit on a wooden counter and side shelves.",
+        "Trailing green plants and a hanging lamp frame an open cream wall."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-bakery-cafe.webp",
+      "references": []
+    },
+    {
+      "id": "background-sports-field",
+      "status": "reviewed-from-image",
+      "sourceSha256": "a88ee5b43e4aee6330ed950931a6de12e40deb248486d185fd6133c7ca4df979",
+      "imageSha256": "a88ee5b43e4aee6330ed950931a6de12e40deb248486d185fd6133c7ca4df979",
+      "inputMetadataSha256": "f832da5cc22dfa6d42fa442b1c43ba86be2cbd0f60b6980363686e9e99aec8fe",
+      "inputContextSha256": "0feda7fd933aa2b6dd4273400015f875043a3b26947ae1531b4bf29b06295d33",
+      "copy": {
+        "title": "Sports Field and Running Track",
+        "alt": "Striped green playing field is surrounded by a red running track beneath blue sky.",
+        "description": "White lane markings curve across the foreground. Trees line the horizon below the large open patch of sky."
+      },
+      "observations": [
+        "A broad green striped field sits inside a red athletics track.",
+        "White lane lines, distant green trees and blue sky complete the landscape."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-sports-field.webp",
+      "references": []
+    },
+    {
+      "id": "background-city-skyline",
+      "status": "reviewed-from-image",
+      "sourceSha256": "8ba405716385094069dd2a1341a66250e26c3e792fb6e9413a11ff1cf3f7162e",
+      "imageSha256": "8ba405716385094069dd2a1341a66250e26c3e792fb6e9413a11ff1cf3f7162e",
+      "inputMetadataSha256": "428919a7a1050ad48361c2dd31930629d32ac1eac029b469166c7b229242d816",
+      "inputContextSha256": "01aa7b03bcede823db147b93f5616c8b2ab0bab63dc5d73fc2b96eb2228c54a8",
+      "copy": {
+        "title": "Blue City Skyline across Water",
+        "alt": "Blue high-rise skyline stands behind green trees and a calm waterfront.",
+        "description": "Different tower heights create a stepped silhouette across the middle. Pale reflections extend into the water below the open sky."
+      },
+      "observations": [
+        "Blue towers of varied heights rise behind a line of green trees.",
+        "Still water reflects the skyline under a pale blue sky."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-city-skyline.webp",
+      "references": []
+    },
+    {
+      "id": "background-craft-paper",
+      "status": "reviewed-from-image",
+      "sourceSha256": "fff788a5034c58af25973b5fed07e60722b05cf692b60b77d9524bde2f185945",
+      "imageSha256": "fff788a5034c58af25973b5fed07e60722b05cf692b60b77d9524bde2f185945",
+      "inputMetadataSha256": "3fc5796a11796457caa29e31053fb6a0d2e9e2d407e3d1466b0c5af3a987d6d8",
+      "inputContextSha256": "2dcbf3b20c5e42513df03f350af7b5b4fc0313d6ae3ae5ccef1be7031b3b11c9",
+      "copy": {
+        "title": "Decorated Kraft Paper Panel",
+        "alt": "Torn kraft paper is decorated with leafy sprigs, daisies, paint strokes and patterned tape.",
+        "description": "Green checked tape overlaps one corner, while mustard and purple marks color the edges. The speckled paper center stays clear."
+      },
+      "observations": [
+        "A torn tan paper panel carries green checked tape and colored paint marks.",
+        "Small white flowers and leafy sprigs decorate two opposing edges."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-craft-paper.webp",
+      "references": []
+    },
+    {
+      "id": "background-black-white-flowers",
+      "status": "reviewed-from-image",
+      "sourceSha256": "1770020df84b273007b7a5363ec0731c30400594bb993a30253108e9a7166d28",
+      "imageSha256": "1770020df84b273007b7a5363ec0731c30400594bb993a30253108e9a7166d28",
+      "inputMetadataSha256": "74cd47c28d4326653f03ab16f4392c8bec9249cfbca96cfd9a0d9e073a4ddc15",
+      "inputContextSha256": "8d34abb3fbbef4dd562094905a0eca0cb6d0d1c14d027c25a5b5e63c2ed6c68e",
+      "copy": {
+        "title": "Black Floral Border with Open Center",
+        "alt": "Black-and-white flowers and leafy branches form a rectangular border.",
+        "description": "Large blossoms anchor the four corners, with smaller buds along the sides. Solid black leaves contrast with the fine petal outlines."
+      },
+      "observations": [
+        "Outlined flowers and solid black leaves form a rectangular frame.",
+        "Large corner blossoms surround a completely open white center."
+      ],
+      "reviewedAt": "2026-10-29T09:48:26.171753+00:00",
+      "inspectedImage": "/catalog/wave_700/background-black-white-flowers.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-art-deco-fan-corners",
+      "status": "reviewed-from-image",
+      "sourceSha256": "5928cb40aa161c483e2354a50b6b5f49792242652b926232f2fbb9baf3730900",
+      "imageSha256": "5928cb40aa161c483e2354a50b6b5f49792242652b926232f2fbb9baf3730900",
+      "inputMetadataSha256": "f94d157c0d5571066f0f07561417232b40a4bf35cca63483cdf0aee83229fcce",
+      "inputContextSha256": "a3df4c0459bfaf02118cb1f3a2508144e743cc7f5cf4121d13995a56f17e8c01",
+      "copy": {
+        "title": "Black and Gold Art Deco Frame",
+        "alt": "Tall open frame with black and gold fan ornaments at all four corners.",
+        "description": "Thin gold rules connect the stepped corner fans. The narrow rectangular opening suits a formal upright layout without covering its center."
+      },
+      "observations": [
+        "Four black and gold fan-shaped ornaments anchor a tall rectangular frame.",
+        "Fine straight gold lines connect the decorative corners."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-art-deco-fan-corners.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-engraved-certificate-oval",
+      "status": "reviewed-from-image",
+      "sourceSha256": "a55b4315238186073afb8f9ce3898f239be71545350fc26c544a4c09f51961a0",
+      "imageSha256": "a55b4315238186073afb8f9ce3898f239be71545350fc26c544a4c09f51961a0",
+      "inputMetadataSha256": "a163a92e8a012047e9929257040916fbbe4494b567c555339792afd659e6a940",
+      "inputContextSha256": "0c633dd0cd4408940a48b113ce3830dbe903b53d673ab06d68968882dbd96c44",
+      "copy": {
+        "title": "Blue Engraved Oval with Medallion",
+        "alt": "Fine blue looping lines form an oval border with a small empty medallion below.",
+        "description": "Overlapping curves create a woven engraved appearance around the broad opening. A scalloped circular badge interrupts the lower edge."
+      },
+      "observations": [
+        "Dense blue loops form a horizontal oval around an empty center.",
+        "A small scalloped round medallion overlaps the bottom of the oval."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-engraved-certificate-oval.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-botanical-ink-top-edge",
+      "status": "reviewed-from-image",
+      "sourceSha256": "70f85bc1511814b5409fcdaa59a09a97f60005a14585cc5e97b34302a4ac8e50",
+      "imageSha256": "70f85bc1511814b5409fcdaa59a09a97f60005a14585cc5e97b34302a4ac8e50",
+      "inputMetadataSha256": "ff275b0d986d94aebebedbd7a29e9d21c3f0b5a0350f65a67bc310266103d636",
+      "inputContextSha256": "2501e940b4aa0fabdaf432b7bde683c0d77411608b507fa358f6e96e1032aaed",
+      "copy": {
+        "title": "Black Botanical Divider",
+        "alt": "Black stems, grasses and seed heads rise from a straight horizontal baseline.",
+        "description": "Long narrow leaves alternate with round and branching flower heads. Their different heights create a lively silhouette above the fine lower rule."
+      },
+      "observations": [
+        "Black botanical stems rise from a thin straight baseline.",
+        "Round seed heads, fine grasses and broad branching heads vary in height."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-botanical-ink-top-edge.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-lace-doily-round",
+      "status": "reviewed-from-image",
+      "sourceSha256": "613d5697aa0a2b275a142ab54e9a086c4501dfe01a94eae75f19c2432000a566",
+      "imageSha256": "613d5697aa0a2b275a142ab54e9a086c4501dfe01a94eae75f19c2432000a566",
+      "inputMetadataSha256": "6a8874862cb8f02b05e08fa6d3df9139554989cfee4fd03bc0d2d8d9b15fa468",
+      "inputContextSha256": "a82c7d747db83fe6970ac2927c957e1e7e058abb48fba1bf5481e3c0bea5050d",
+      "copy": {
+        "title": "Ivory Lace Circle",
+        "alt": "Ivory circular lace border with scalloped petal loops and pierced details.",
+        "description": "Small dotted lines follow the inner ring. Repeated open loops form a delicate edge around the clear circular center."
+      },
+      "observations": [
+        "Ivory looped petals form the outside of a circular lace-like border.",
+        "Fine dots and tiny pierced openings follow the inner rim."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-lace-doily-round.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-filigree-corner-acanthus",
+      "status": "reviewed-from-image",
+      "sourceSha256": "4c626ce6428b931d16feadfe8862ca16878bd35852f39b45469a640d74b6988a",
+      "imageSha256": "4c626ce6428b931d16feadfe8862ca16878bd35852f39b45469a640d74b6988a",
+      "inputMetadataSha256": "2d33402117a82b7ebc428a49582992aca70df9347f78dbbe570a0d037121ec23",
+      "inputContextSha256": "06b8b800bb76b5c047d134afa204322d90c5bea2889d97e2d0d114d3a701bdd2",
+      "copy": {
+        "title": "Golden Leaf Scroll Corner",
+        "alt": "Ornate golden corner with curling leaves, tapered tips and a small central rosette.",
+        "description": "The two arms sweep outward at a right angle. Dark recesses and bright ridges give the leafy ornament a raised metallic appearance."
+      },
+      "observations": [
+        "Golden curled leaves extend along two arms of an L-shaped ornament.",
+        "A small rosette joins the arms above a long tapered lower tip."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-filigree-corner-acanthus.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-nautical-knot-rectangle",
+      "status": "reviewed-from-image",
+      "sourceSha256": "72dea369205b6d22843ae51a7692e89e4bd8f82899b90cab035e9d2dff683d87",
+      "imageSha256": "72dea369205b6d22843ae51a7692e89e4bd8f82899b90cab035e9d2dff683d87",
+      "inputMetadataSha256": "15b1478168a8879ea05242405342228ea3aa8d783f0d1b34ee240a95bd4457ef",
+      "inputContextSha256": "f2c4064ccbac9170ef5cde35cdf18c4ee733c013e3a9ba5b6127b6ae56287cc6",
+      "copy": {
+        "title": "Rope Frame with Blue Anchor",
+        "alt": "Cream rope forms a rectangular frame with knotted corners and a hanging blue anchor.",
+        "description": "Twisted strands run along each side of the opening. The small anchor hangs from a loop at the middle of the lower rope."
+      },
+      "observations": [
+        "Thick cream rope and rounded knots form an open rectangle.",
+        "A blue anchor hangs from the center of the bottom edge."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-nautical-knot-rectangle.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-stitched-denim-pocket-edge",
+      "status": "reviewed-from-image",
+      "sourceSha256": "e04b02d2380ceff32e0c4a749a43de866abd3e6b16447b682aab530ce6b92ade",
+      "imageSha256": "e04b02d2380ceff32e0c4a749a43de866abd3e6b16447b682aab530ce6b92ade",
+      "inputMetadataSha256": "4d0b54fb03cbc45888ac7521dd99a034b66d18cfdf50b23cf1aac06692be3ffc",
+      "inputContextSha256": "60e82e0a578118a7e9422df6f894f769ac3de7e59b6f69201e38cfd8586860f4",
+      "copy": {
+        "title": "Stitched Denim U Border",
+        "alt": "Indigo denim seam forms a U-shaped border with amber stitching and copper-colored rivets.",
+        "description": "Two parallel stitch rows follow the curved lower corners. A small folded fabric tab protrudes from one side of the open frame."
+      },
+      "observations": [
+        "A dark denim U-shaped strip carries two rows of amber stitching.",
+        "Small copper-colored rivets and a side fabric tab finish the border."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-stitched-denim-pocket-edge.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-embroidered-folk-heart",
+      "status": "reviewed-from-image",
+      "sourceSha256": "46ca503b7700f1716d4adbac4c522983d1d917e40eccb0d39fa28ccbc97ae27b",
+      "imageSha256": "46ca503b7700f1716d4adbac4c522983d1d917e40eccb0d39fa28ccbc97ae27b",
+      "inputMetadataSha256": "1fc2099c9d62ab155506293fb223f87078f213d6d8791c6dad9b2feb4db2f489",
+      "inputContextSha256": "6ddafd3e5d5659a417f35bcc250ab673058c1f9140855b9e544fd8ceea0d1c29",
+      "copy": {
+        "title": "Folk Floral Heart Border",
+        "alt": "Red and navy flowers with mustard leaves form an open heart border.",
+        "description": "The floral branches meet at a small pointed cluster below. Tiny diamonds and curled leaves balance the upper lobes."
+      },
+      "observations": [
+        "Small red and navy flowers follow a heart-shaped outline.",
+        "Mustard leaves and diamond-shaped details connect the floral branches."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-embroidered-folk-heart.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-origami-paper-cranes-arch",
+      "status": "reviewed-from-image",
+      "sourceSha256": "f5f960580423f38dd06c374ba05288dd67143b3b715fc3febf115726fa932569",
+      "imageSha256": "f5f960580423f38dd06c374ba05288dd67143b3b715fc3febf115726fa932569",
+      "inputMetadataSha256": "ceda330376be28fe6b4c9c0d55704faa0185632fb47b889b708a64d5d1e399c6",
+      "inputContextSha256": "2ff90a0068c6503ab236402ede37a2b08b79b20ed62e86d9c3eb9ba16ed770e0",
+      "copy": {
+        "title": "Paper Crane Arch",
+        "alt": "Six folded-paper cranes follow a fine curved line to form an open arch.",
+        "description": "Teal, rust and ivory birds alternate in size and wing position. Their angular folds create a light decorative arc."
+      },
+      "observations": [
+        "Six paper cranes in teal, rust and ivory sit along a curved line.",
+        "Different wing angles and bird sizes give the arch an uneven silhouette."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-origami-paper-cranes-arch.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-quilled-paper-teardrop",
+      "status": "reviewed-from-image",
+      "sourceSha256": "ae7d53196faeae96824599f43b0f01c31a787a41a2235930c4638870c15ae861",
+      "imageSha256": "ae7d53196faeae96824599f43b0f01c31a787a41a2235930c4638870c15ae861",
+      "inputMetadataSha256": "f8cb687ec0bea443b081731138aa6fb24f8c2956c7fb0f38097a49b5ff0f9874",
+      "inputContextSha256": "59d6bc23ec34cc5941d95bcad58c9c2be5e3f211c0719f549afb4ee524050ffd",
+      "copy": {
+        "title": "Curled Paper Teardrop Border",
+        "alt": "Burgundy, cream and copper paper curls form a teardrop-shaped open border.",
+        "description": "Tight spirals alternate with elongated loops along the sides. A pointed folded loop closes the top while rounded curls gather below."
+      },
+      "observations": [
+        "Curled burgundy, cream and copper strips form a teardrop outline.",
+        "Small spirals alternate with long open loops around the shape."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-quilled-paper-teardrop.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-hexagon-terrarium-wire",
+      "status": "reviewed-from-image",
+      "sourceSha256": "ab04e82b81296b8bf54983ba8f6e6f8010452e7eeb42dcd782af948387ead2f6",
+      "imageSha256": "ab04e82b81296b8bf54983ba8f6e6f8010452e7eeb42dcd782af948387ead2f6",
+      "inputMetadataSha256": "44cd50478a4a4f6df833f2e5ad658ead7bb626783812d815b7db7d77509bf53a",
+      "inputContextSha256": "dd90b9eaea94f782feef1e6b435986a9ee5a209a9f4822a6613656de13444c67",
+      "copy": {
+        "title": "Copper Hexagon with Succulents and Crystal",
+        "alt": "Thin copper hexagon frame holds succulents at one corner and a hanging crystal at another.",
+        "description": "Small green rosettes and trailing round leaves cluster at the lower left. A clear pointed pendant hangs inside the upper-right edge."
+      },
+      "observations": [
+        "Slim copper rods form a six-sided open frame.",
+        "A succulent cluster and a small suspended crystal decorate opposing corners."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-hexagon-terrarium-wire.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-beaded-jewel-oval",
+      "status": "reviewed-from-image",
+      "sourceSha256": "fcaa3e94a16dad6bd5ff196fafcd7153446cdb1b3376c5db534da3edf4b77969",
+      "imageSha256": "fcaa3e94a16dad6bd5ff196fafcd7153446cdb1b3376c5db534da3edf4b77969",
+      "inputMetadataSha256": "0e4c6504be48d6ab4850de17765c43b80d813a2413bd568353360eee3c1cec63",
+      "inputContextSha256": "b51d278053ccdbe04616aa06558a5393283082a68358a72fb3089dc03ae4ee85",
+      "copy": {
+        "title": "Pearl and Blue Gem Oval",
+        "alt": "Pearl-like beads and small blue stones form an oval with a blue teardrop pendant below.",
+        "description": "Silver-colored settings separate the alternating beads. The larger drop hangs beneath a small jeweled connector at the base."
+      },
+      "observations": [
+        "Pale round beads alternate with small dark blue stones around an oval.",
+        "A larger blue teardrop pendant hangs from the lower center."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-beaded-jewel-oval.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-brass-library-bookplate",
+      "status": "reviewed-from-image",
+      "sourceSha256": "3afd68a98b35df89ba63c61c037fe78d0c51c10e51524c376681d4968fe840b1",
+      "imageSha256": "3afd68a98b35df89ba63c61c037fe78d0c51c10e51524c376681d4968fe840b1",
+      "inputMetadataSha256": "140675377dcd72ef737d37cf95de92b282a0a78f98ab782c9f6cde06927c8c51",
+      "inputContextSha256": "285889af17ad11b8a1407dad559b73ca128f3878f9ce9e70d5ae3234cd684bad",
+      "copy": {
+        "title": "Golden Scroll Frame with Blank Shield",
+        "alt": "Slim golden rectangular frame has curled corners and a small empty shield below.",
+        "description": "The upper corners curl inward while leaf-like lower ornaments sweep toward the shield. Thin straight rules leave a broad clear opening."
+      },
+      "observations": [
+        "Golden curled ornaments decorate a rectangular frame with shaped corners.",
+        "A small blank shield overlaps the lower center."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-brass-library-bookplate.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-baroque-silver-cartouche",
+      "status": "reviewed-from-image",
+      "sourceSha256": "e90c6892c8fce31c531589cf5fb3d9cbaa180222a73b4d0ebee126dd4066c0a9",
+      "imageSha256": "e90c6892c8fce31c531589cf5fb3d9cbaa180222a73b4d0ebee126dd4066c0a9",
+      "inputMetadataSha256": "926d29787cd7d519f8b6665b5724b5a5f742caa0acda8e2299ece3baf4b47dad",
+      "inputContextSha256": "4710132f0a095fdc813e390c81de105c35b3ca7aeb3022d53e0821e3a44af33a",
+      "copy": {
+        "title": "Silver Scroll Cartouche",
+        "alt": "Silver ornamental border has a shell crest, curled sides and sweeping lower tails.",
+        "description": "Bright ridges and dark grooves emphasize the raised scroll shapes. The opening narrows toward the elaborate split base."
+      },
+      "observations": [
+        "A silver shell-like crest sits above an irregular open frame.",
+        "Curled side ornaments finish in two sweeping lower tails."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-baroque-silver-cartouche.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-bamboo-ink-square",
+      "status": "reviewed-from-image",
+      "sourceSha256": "a8413e7eed7288e18c31908ec265a67dd7b6831e2ce4cc62adcf1a02fbe30a6f",
+      "imageSha256": "a8413e7eed7288e18c31908ec265a67dd7b6831e2ce4cc62adcf1a02fbe30a6f",
+      "inputMetadataSha256": "15e4eeecb68358f7f5b35d9ef6c1059cec3c39ad1e15da398d87657b537415e8",
+      "inputContextSha256": "bce88577f1095d332927714288c423374ba498d594fbd786386e5b3079379a25",
+      "copy": {
+        "title": "Bamboo Frame with Leaf Sprays",
+        "alt": "Four bamboo stems form a square frame with green leaf sprays in opposite corners.",
+        "description": "Visible joints break up the pale tan stems. The leaves extend both inward and outward at the upper left and lower right."
+      },
+      "observations": [
+        "Four pale bamboo stems with visible joints form a square.",
+        "Pointed green leaves decorate the upper-left and lower-right corners."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-bamboo-ink-square.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-desert-adobe-arch-tiles",
+      "status": "reviewed-from-image",
+      "sourceSha256": "7f8cd0a8a3212976a202148fe5209dec7a0ea269e266c4eae2895e32d7cc4a0f",
+      "imageSha256": "7f8cd0a8a3212976a202148fe5209dec7a0ea269e266c4eae2895e32d7cc4a0f",
+      "inputMetadataSha256": "c1670b7a0015776f74030c89bb6d60b9a97d7d6a9b33e504299c555a2f286613",
+      "inputContextSha256": "dfd90c228ed054060dec9176f6e9c4a35d23b54133eabba1023ef6e8111fe825",
+      "copy": {
+        "title": "Terracotta Mosaic Arch Border",
+        "alt": "Open rounded arch border made of orange mosaic tiles with blue geometric insets.",
+        "description": "Pale grout lines divide the small warm-colored tiles. Blue diamonds and tiny squares interrupt the pattern around the tall opening."
+      },
+      "observations": [
+        "Orange mosaic tiles form a tall rounded arch with a flat lower edge.",
+        "Small blue geometric insets and pale grout lines punctuate the border."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-desert-adobe-arch-tiles.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-mid-century-orbit-circles",
+      "status": "reviewed-from-image",
+      "sourceSha256": "3370acbbe3fc0ade142bbbf89354664f093241185cf65f3f45669c1520f544a0",
+      "imageSha256": "3370acbbe3fc0ade142bbbf89354664f093241185cf65f3f45669c1520f544a0",
+      "inputMetadataSha256": "37121b02280476beb158cfbe896c0c3e9987f8f55874e98ac7d233b35edda2f3",
+      "inputContextSha256": "acc090b9086b93b7a06862f403ba4b4dde4b5c305f6047b719b74adf0b08366f",
+      "copy": {
+        "title": "Mid-Century Ring and Starburst Oval",
+        "alt": "Thin teal and gold rings with small starbursts form a horizontal oval border.",
+        "description": "Larger circles occupy the sides while smaller linked rings stretch across the top and bottom. Tapered black spokes add contrast among the gold accents."
+      },
+      "observations": [
+        "Teal and gold rings join into a broad horizontal oval.",
+        "Small gold starbursts and dark tapered spokes sit between the rings."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-mid-century-orbit-circles.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-irregular-speech-outline",
+      "status": "reviewed-from-image",
+      "sourceSha256": "f13b354b4828c0ba5ef19b8f2b347ea441fae8c747b0d5aae7062df9e7b311a2",
+      "imageSha256": "f13b354b4828c0ba5ef19b8f2b347ea441fae8c747b0d5aae7062df9e7b311a2",
+      "inputMetadataSha256": "b57c3cd78eac2ba749c1cb3a1feed35544101b7ae619c03cb5554e0e5357c15d",
+      "inputContextSha256": "a2d82fc5514c384d0380ecbd4839184347ad88bbeb1d65907bc132fbd4320258",
+      "copy": {
+        "title": "Double-Line Speech Balloon",
+        "alt": "Black double-line oval speech balloon with a pointed lower-left tail.",
+        "description": "The two slightly uneven contours follow the oval and its small tail. The empty opening leaves space for a short message."
+      },
+      "observations": [
+        "Two uneven black lines outline an oval speech balloon.",
+        "A pointed tail projects from the lower-left edge."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-irregular-speech-outline.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-notched-postage-stamp",
+      "status": "reviewed-from-image",
+      "sourceSha256": "979ebcb5949b06e680f08f1c051bc9b98dff302ca86faaf77367957ac724de8d",
+      "imageSha256": "979ebcb5949b06e680f08f1c051bc9b98dff302ca86faaf77367957ac724de8d",
+      "inputMetadataSha256": "ae09f860c2dc235453b88bf51bbaa71dd19de357a55e9349b46fc65012119b55",
+      "inputContextSha256": "fd89c9f3ee5e66fd26412ad8ea7922c239e34fe150ad235502d52eff2bf3bce5",
+      "copy": {
+        "title": "Perforated Stamp Frame with Fern",
+        "alt": "Tall cream stamp-shaped border with perforated edges, a green inner rule and a tiny fern.",
+        "description": "Small regular notches follow the outer rectangle. A paired fern detail sits just inside the top edge above the empty center."
+      },
+      "observations": [
+        "A cream rectangular border has small postage-like perforations.",
+        "A thin green inner line and tiny fern decorate the upper center."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-notched-postage-stamp.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-folded-banner-bottom-edge",
+      "status": "reviewed-from-image",
+      "sourceSha256": "b2b59e615b456dec1313c2e7b3441fc34d4a9439ca04ee1a3a6d8effb2b590ff",
+      "imageSha256": "b2b59e615b456dec1313c2e7b3441fc34d4a9439ca04ee1a3a6d8effb2b590ff",
+      "inputMetadataSha256": "11487e10cfe5516d72cfb0328ac7e7718c3824dc1b6d89b9ee7d5726aac3f304",
+      "inputContextSha256": "def2e748d1978e10b1c3405f9ebf2ea7a19674fa6a688016026ee08928af2750",
+      "copy": {
+        "title": "Burgundy Folded Ribbon Divider",
+        "alt": "Long burgundy ribbon has stitched cream edges, layered ends and small brass-colored fasteners.",
+        "description": "The broad center remains blank between the folded side loops. Pointed swallowtail ends extend from both sides."
+      },
+      "observations": [
+        "A burgundy ribbon strip has cream edge stitching and layered folds.",
+        "Small metallic fasteners sit near its pointed tail ends."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-folded-banner-bottom-edge.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-watercolor-magnolia-crescent",
+      "status": "reviewed-from-image",
+      "sourceSha256": "5017313801999fe2adffd45b41f07a4f5344c3da4e4a030c33951927e09106f7",
+      "imageSha256": "5017313801999fe2adffd45b41f07a4f5344c3da4e4a030c33951927e09106f7",
+      "inputMetadataSha256": "a61c6782b11244836ceb29ee5392f2cd35a59b9e67ab37b4ce23771e0f1744ee",
+      "inputContextSha256": "93968a5c8e4b93f39afa415443a8e05177b9847eac86ce00c8accada26c85b66",
+      "copy": {
+        "title": "Cream Flower Crescent",
+        "alt": "Large cream flowers and dark green leaves follow a sweeping crescent branch.",
+        "description": "Smaller buds extend toward the two tips. The broad blossoms cluster along the lower left while glossy leaves fill the gaps."
+      },
+      "observations": [
+        "Cream blossoms and unopened buds follow a curved brown branch.",
+        "Glossy dark green leaves frame the open side of the crescent."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-watercolor-magnolia-crescent.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-pressed-fern-bookmark",
+      "status": "reviewed-from-image",
+      "sourceSha256": "4c1a8b2debdccd59625f108fd11c32524ccdc615c58cc987371fe8faa33c0bae",
+      "imageSha256": "4c1a8b2debdccd59625f108fd11c32524ccdc615c58cc987371fe8faa33c0bae",
+      "inputMetadataSha256": "26a74b820c9c1915c31bc2588aeb3cee64471ea74cdb32d3f8996486ce910110",
+      "inputContextSha256": "a7b808b10a7ce68051d79d130c493346c70e71f5ae86900ea49a4424dc25d1c4",
+      "copy": {
+        "title": "Fern and Seed-Head Vertical Border",
+        "alt": "Fine fern fronds and small brown seed heads follow a narrow upright stem.",
+        "description": "The sprigs alternate from side to side with uneven spacing. Delicate leaflets create a light vertical accent rather than a filled panel."
+      },
+      "observations": [
+        "Several narrow fern fronds grow along a fine vertical stem.",
+        "Small brown seed-head shapes appear between the green sprigs."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-pressed-fern-bookmark.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-wild-grape-vine-window",
+      "status": "reviewed-from-image",
+      "sourceSha256": "c5f12a3a226cc515ba72675a92137ac03b79f00129198695ae38a1e16192f6b9",
+      "imageSha256": "c5f12a3a226cc515ba72675a92137ac03b79f00129198695ae38a1e16192f6b9",
+      "inputMetadataSha256": "83234eb35c04f940d26dc2812fe584139931f3b09390e3df4acf56344720995e",
+      "inputContextSha256": "c31a69ed16f18061a6cf1d1df647c5df9d9c73fb3fbcfb653dcc884f7d1f5f6f",
+      "copy": {
+        "title": "Grapevine Window Border",
+        "alt": "A rectangular grapevine frame with green leaves and two purple grape clusters.",
+        "description": "Twisting brown vines and curled tendrils connect the corners. The grape clusters sit diagonally opposite one another, leaving an open center."
+      },
+      "observations": [
+        "A rectangular frame of twisting brown vines carries lobed green grape leaves and fine curling tendrils.",
+        "Purple grape clusters sit in the upper left and lower right; the broad center is transparent."
+      ],
+      "reviewedAt": "2026-10-29T12:25:32.319492+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-wild-grape-vine-window.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-orchid-corner-cascade",
+      "status": "reviewed-from-image",
+      "sourceSha256": "72c73303bdaf689078dc740362da598f01b5325322f4ac99d7e3fee9aedd3532",
+      "imageSha256": "72c73303bdaf689078dc740362da598f01b5325322f4ac99d7e3fee9aedd3532",
+      "inputMetadataSha256": "de429c87c1ee75bc09eb22e6f5f01b158e6619bff1ff0dfce04b7c602e300488",
+      "inputContextSha256": "461392ddc54df5e4321560fe9a95d4293b9a53ca7e85d39647bde0199e31518d",
+      "copy": {
+        "title": "Purple and White Orchid Cascade",
+        "alt": "Purple and white orchid flowers cascade down a slender stem with pointed green leaves.",
+        "description": "Small unopened buds extend above and below the blossoms. The loose vertical arrangement keeps each flower's shape distinct."
+      },
+      "observations": [
+        "Purple and white orchids grow along a curving upright stem.",
+        "Pointed leaves and unopened buds extend between the flowers."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-orchid-corner-cascade.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-seashell-sand-dollar-garland",
+      "status": "reviewed-from-image",
+      "sourceSha256": "4fb54e3bafa72f205ca12afd3233be264c10f8d2e87409c00290c0431cad7e1e",
+      "imageSha256": "4fb54e3bafa72f205ca12afd3233be264c10f8d2e87409c00290c0431cad7e1e",
+      "inputMetadataSha256": "7cbb13c0b121caa30b784e8c3f4a0aeada4f8eec71a1368f02c0dee447181ece",
+      "inputContextSha256": "d339b1ae827aa530ef4473783048418763a34ad5d892e44cc847113fdf74c7a7",
+      "copy": {
+        "title": "Seashell and Blue Pendant Garland",
+        "alt": "Cream shells, sand dollars, blue pendants and a pink conch hang from a curved cord.",
+        "description": "The larger pink shell drops beneath the middle of the line. Different shell shapes alternate along the gently sagging natural-colored cord."
+      },
+      "observations": [
+        "Different cream shells and round sand dollars hang from a curved cord.",
+        "A large pink shell and small blue pendants add color near the center."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-seashell-sand-dollar-garland.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-coral-seahorse-round",
+      "status": "reviewed-from-image",
+      "sourceSha256": "78e2d49c14fffeedc8e71ca825e3a1b7776d117476bfe1db0e5e30efed0e9365",
+      "imageSha256": "78e2d49c14fffeedc8e71ca825e3a1b7776d117476bfe1db0e5e30efed0e9365",
+      "inputMetadataSha256": "89c6d4e2eff7411a97d1c311b2902c100069cb7c58edefd234bd40b738a595a4",
+      "inputContextSha256": "eab0c34692be92ee5613ddeb6297d440c0fa3e3bee78fbefa705c6162ec9bb18",
+      "copy": {
+        "title": "Coral and Seahorse Circle",
+        "alt": "Peach coral and pale blue sea fans form a circular border with a small seahorse.",
+        "description": "The seahorse curls beside the lower-right arc. Fine branching fans alternate with thicker coral shapes around the clear center."
+      },
+      "observations": [
+        "Peach branching coral alternates with pale blue sea fans around a circle.",
+        "A small orange seahorse rests along the lower-right side."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-coral-seahorse-round.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-butterfly-wing-corner",
+      "status": "reviewed-from-image",
+      "sourceSha256": "8078ce1b51f4873441734210a9463178881d8db87b44334e688cb1b93547c966",
+      "imageSha256": "8078ce1b51f4873441734210a9463178881d8db87b44334e688cb1b93547c966",
+      "inputMetadataSha256": "c2a278e743d1a3940c7c5041eaece46664562ee5363fdae2c7787c64ff13344f",
+      "inputContextSha256": "9f00146fd7eb224435bccf802ed08cc55e0ec373c02b40353e364ceb0836f17f",
+      "copy": {
+        "title": "Butterfly Vine Corner",
+        "alt": "Three different butterflies perch around a curved green vine corner.",
+        "description": "Spotted orange, pale blue and cream wings appear at different angles. Small leaves follow the vine's long lower curl."
+      },
+      "observations": [
+        "Orange, blue and cream butterflies sit around an L-shaped leafy vine.",
+        "The vine has a long curling lower stem and small pointed leaves."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-butterfly-wing-corner.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-feather-crescent-ink",
+      "status": "reviewed-from-image",
+      "sourceSha256": "b1a9f6eb666f9df181108e1b2998b58d211011aa129bbf4d52c950c5ac9fef67",
+      "imageSha256": "b1a9f6eb666f9df181108e1b2998b58d211011aa129bbf4d52c950c5ac9fef67",
+      "inputMetadataSha256": "7566c4d8d7d9e9906b9f7ff7d79b1bcf7a333b74b2ffe6aa2a7cab94c5cba9a4",
+      "inputContextSha256": "22f0f07b922eaaea2d61658b829ee8b9d76e64cb6bc77f47d5b46da840db8f35",
+      "copy": {
+        "title": "Black Feather Crescent",
+        "alt": "Layered black-and-white feathers curve into an open crescent with a tied lower tip.",
+        "description": "Fine lines trace the feather barbs along the sweeping outer edge. Dark quills overlap where the feathers gather below."
+      },
+      "observations": [
+        "Long black-and-white feathers overlap along a crescent shape.",
+        "Fine barb lines and a small tied cord mark the lower end."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-feather-crescent-ink.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-gingham-bow-top-edge",
+      "status": "reviewed-from-image",
+      "sourceSha256": "687b1caf7105d14c2d8eb7d8804934875cb2794e0e832f2e1f69e704a7f4e032",
+      "imageSha256": "687b1caf7105d14c2d8eb7d8804934875cb2794e0e832f2e1f69e704a7f4e032",
+      "inputMetadataSha256": "14feded75a7e170710ccc9b0d6d092c3b0cb1ff03bed7e94d17c2b72ec5a3b74",
+      "inputContextSha256": "ac1f2403c628c472a594caa6caa6d685b2691402da745e797d911e8c9361895f",
+      "copy": {
+        "title": "Blue Gingham Bow Divider",
+        "alt": "Blue-and-white checked ribbon stretches from a large bow with two small folded loops.",
+        "description": "The left bow has long pointed tails beneath its gathered center. The checked pattern follows the ribbon's small folds along the horizontal strip."
+      },
+      "observations": [
+        "A large blue-and-white gingham bow anchors the left side of a ribbon.",
+        "Two small folded loops interrupt the long checked strip."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-gingham-bow-top-edge.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-knitted-yarn-circle",
+      "status": "reviewed-from-image",
+      "sourceSha256": "daeca644cb439e59dea8e232d85c0115e034ffbf2b60e2891ca7e9c61b7d0f2c",
+      "imageSha256": "daeca644cb439e59dea8e232d85c0115e034ffbf2b60e2891ca7e9c61b7d0f2c",
+      "inputMetadataSha256": "c0ec0c882167ee365e1608ca1d6707e0823c969083eca894a09b9d2fe84e9ecf",
+      "inputContextSha256": "e48fdd5cf6d3f2d315554c019506791fdc830e2363ebfcb31675db30ab2b471a",
+      "copy": {
+        "title": "Purple Knitted Circle with Needles",
+        "alt": "Thick purple knitted ring sits above crossed wooden needles and a small yarn ball.",
+        "description": "Raised cable-like stitches follow the circle. A loose yarn end curls beside the ball beneath the needle crossing."
+      },
+      "observations": [
+        "A thick plum-colored knitted cable forms an open circle.",
+        "Two wooden needles cross above a small purple yarn ball and loose strand."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-knitted-yarn-circle.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-pencil-ruler-school-corner",
+      "status": "reviewed-from-image",
+      "sourceSha256": "acf383ce4a19fe69786861c9f3d903d5beac02a5b7c1454cec74921c9190677b",
+      "imageSha256": "acf383ce4a19fe69786861c9f3d903d5beac02a5b7c1454cec74921c9190677b",
+      "inputMetadataSha256": "16918a9ba5b7dccfc1d984d6beae855f87abf8cf6dba9c18a7d223bdcb6ca759",
+      "inputContextSha256": "f5921fe16c2c5e6607ac6e0df403a5fa28b1d8d5afbebbdbe10f54060222b93c",
+      "copy": {
+        "title": "Pencil and Ruler Classroom Corner",
+        "alt": "Yellow pencil, wooden rulers, pink eraser and curled shavings form a classroom corner.",
+        "description": "The upright pencil stands beside a slanted ruler, with another ruler extending across the base. The eraser and shavings gather at their meeting point."
+      },
+      "observations": [
+        "A yellow pencil and two wooden rulers form a right-angled stationery arrangement.",
+        "A pink eraser and curled pencil shavings cluster near the lower corner."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-pencil-ruler-school-corner.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-crayon-scribble-zigzag",
+      "status": "reviewed-from-image",
+      "sourceSha256": "4c2986886d95d1d48654e1b066ecbaa4e84dbf640e49dc3fcdcd1273ae97d814",
+      "imageSha256": "4c2986886d95d1d48654e1b066ecbaa4e84dbf640e49dc3fcdcd1273ae97d814",
+      "inputMetadataSha256": "62e5c5976dbe70845e69466cd6f2628eaecbecb3cd24ba6e76d11e201804ed12",
+      "inputContextSha256": "1f9c207c05ca2c2ec0924e9fdd4fc7d235e089988d538c145e0a61c4496c2939",
+      "copy": {
+        "title": "Colorful Crayon Zigzag Frame",
+        "alt": "A red, blue, green and yellow zigzag crayon frame with two crayons below.",
+        "description": "Short colored strokes fill the gaps between the zigzags. A red crayon and a blue crayon meet near the lower center of the open frame."
+      },
+      "observations": [
+        "Red, blue, green and yellow crayon-like zigzags and short marks form a narrow rectangular border.",
+        "A red and a blue crayon meet near the lower center; the inner center is transparent."
+      ],
+      "reviewedAt": "2026-10-29T12:45:49.314742+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-crayon-scribble-zigzag.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-alphabet-blocks-lower-edge",
+      "status": "reviewed-from-image",
+      "sourceSha256": "ea442a6be23ddd6c6fe534195f8110b210c7261dc4340f54f0b346db09c2aa61",
+      "imageSha256": "ea442a6be23ddd6c6fe534195f8110b210c7261dc4340f54f0b346db09c2aa61",
+      "inputMetadataSha256": "7c6dbe9bbfa077fc9384fe09d76f7d63e162880993f8d3e6aa6c9e09d3a3bbc2",
+      "inputContextSha256": "7d8d81fba575b1962b30c4636911f89c6a87d3a92cc8c0bf1fd8ec2b39d8d0ce",
+      "copy": {
+        "title": "ABC Blocks and Toy Train Divider",
+        "alt": "Colorful A, B and C blocks line up with a small toy engine and a red star.",
+        "description": "The blocks tilt at different angles along the low horizontal arrangement. Round toy wheels and a red knob add small raised shapes between the letters."
+      },
+      "observations": [
+        "Three colored toy blocks display the letters A, B and C.",
+        "A small toy engine and red star sit between the letter blocks."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-alphabet-blocks-lower-edge.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-math-tools-triangle",
+      "status": "reviewed-from-image",
+      "sourceSha256": "592be9c1402058171c91084c376dcd732a6dd58f0c423db87778dd9dbab82a16",
+      "imageSha256": "592be9c1402058171c91084c376dcd732a6dd58f0c423db87778dd9dbab82a16",
+      "inputMetadataSha256": "38e10a594c246e920f1c74fe8da5c7623a3e4994d8b35322d1b7247db80ec778",
+      "inputContextSha256": "59873e31762f520ae89053690d708b7f02de78d8bebbfe42870b615fe0315718",
+      "copy": {
+        "title": "Geometry Tools Triangle",
+        "alt": "Blue set square, wooden rulers and a silver compass form a triangular arrangement.",
+        "description": "The compass hinge closes the top point while the rulers follow the lower and right sides. The blue set square creates a smaller open triangle inside."
+      },
+      "observations": [
+        "A silver drawing compass sits above two wooden rulers in a triangular shape.",
+        "A blue set square fills the left corner of the arrangement."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-math-tools-triangle.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-paintbrush-swatch-side-edge",
+      "status": "reviewed-from-image",
+      "sourceSha256": "7158486a30f5e39bce4ba27530b0b44277cb4a4a0d02e3cb5888501db5e1fbfd",
+      "imageSha256": "7158486a30f5e39bce4ba27530b0b44277cb4a4a0d02e3cb5888501db5e1fbfd",
+      "inputMetadataSha256": "fd08279d1b5af1d6235fd281d58642fa24aec788b9d6abe767fd237e4dede6cf",
+      "inputContextSha256": "343649d5329f344a4f2b60d7101e89db7021402f21fe253f76671088046ca76e",
+      "copy": {
+        "title": "Paintbrush and Watercolor Side Border",
+        "alt": "Three paintbrushes, colored swatches and a small watercolor box form a narrow side border.",
+        "description": "The brush tips rise above blue, yellow and green paint marks. A leafy sprig and open paint pans finish the lower end."
+      },
+      "observations": [
+        "Three paintbrushes rise beside small blue, yellow and green swatches.",
+        "A small open watercolor box and leafy sprig sit at the bottom."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-paintbrush-swatch-side-edge.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-science-dna-vertical",
+      "status": "reviewed-from-image",
+      "sourceSha256": "45d6eb8a729ce05de82fe5faf9c80a27fe63fd48d291fb19a23f999f13e4f653",
+      "imageSha256": "45d6eb8a729ce05de82fe5faf9c80a27fe63fd48d291fb19a23f999f13e4f653",
+      "inputMetadataSha256": "b20fa7e25f418efafc4999a444854cca925ff92ea9be4fcaf537a360baee9efa",
+      "inputContextSha256": "20a80944a3fd87b4390430093b15e3ac7f339faf9dbaa82d004822ace39a5e6d",
+      "copy": {
+        "title": "Blue and Green DNA Border",
+        "alt": "Stylized blue and green double helix forms a tall border with small molecular nodes.",
+        "description": "The two winding strands connect through short rungs. Small round nodes extend from the sides at different heights."
+      },
+      "observations": [
+        "Two blue and green strands twist around evenly spaced connecting rungs.",
+        "Small round molecular nodes project from both sides of the tall helix."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-science-dna-vertical.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-music-piano-bottom-edge",
+      "status": "reviewed-from-image",
+      "sourceSha256": "17b8e4144f07967668a36c3914a805998584a601337568c6ac700da35dd5aec3",
+      "imageSha256": "17b8e4144f07967668a36c3914a805998584a601337568c6ac700da35dd5aec3",
+      "inputMetadataSha256": "bef38f594b64c1be9a127b34dc3171d9bf0dd5b574539dc0944d2b001db07adb",
+      "inputContextSha256": "3b2b1f1609dd1c4d79ff9a4051ede86efe98f58667900778190b9d4c2d934cc6",
+      "copy": {
+        "title": "Violin, Piano Keys and Treble Clef",
+        "alt": "Orange violin, short piano keyboard and black treble clef line up in a horizontal arrangement.",
+        "description": "Five black keys in two groups sit above eight white keys. The violin's warm wood contrasts with the neutral keyboard and curved music symbol."
+      },
+      "observations": [
+        "An orange violin and a black treble clef flank a short straight keyboard.",
+        "The keyboard has eight white keys and five black keys arranged as a group of two and a group of three."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-music-piano-bottom-edge.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-robot-circuit-corner",
+      "status": "reviewed-from-image",
+      "sourceSha256": "6dd31495148e729aa8a7b4e8f3ed9c2d6777465a6ad35049276ba9fcf4d6c110",
+      "imageSha256": "6dd31495148e729aa8a7b4e8f3ed9c2d6777465a6ad35049276ba9fcf4d6c110",
+      "inputMetadataSha256": "e2b5cf995c46edba8c4d98ad68e42ce199864db4b2cecdd864f43442a5e69fe8",
+      "inputContextSha256": "5a84fdf097c102aaea312a7f5ad805858ff2d19712b0d8ed39d819937e5a6d43",
+      "copy": {
+        "title": "Robot Circuit Corner",
+        "alt": "Small blue robot peeks over an L-shaped border of navy circuit traces and gold contacts.",
+        "description": "Parallel traces turn around the lower-left corner and end in round gold pads. The robot's bright eyes and single antenna give the small ornament a friendly focus."
+      },
+      "observations": [
+        "Navy circuit traces with gold contact pads form a compact L-shaped border.",
+        "A small blue robot with bright eyes and an antenna peeks over the corner."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-robot-circuit-corner.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-library-reading-crescent",
+      "status": "reviewed-from-image",
+      "sourceSha256": "b942cb290e34d0a223c76f7c94daa2bb48431fff1409a759ecc54640f18f137e",
+      "imageSha256": "b942cb290e34d0a223c76f7c94daa2bb48431fff1409a759ecc54640f18f137e",
+      "inputMetadataSha256": "27991d01836c0ae2dfcb560d3a93ecad5930a5a5c9a47de014978ef7f2edeb27",
+      "inputContextSha256": "0dc81cd6fffa5c8a9f602973761b38b6a11f94dbf819ee5f5781b539dfe8a1ef",
+      "copy": {
+        "title": "Open Books and Bookmark Crescent",
+        "alt": "Three open books, a small gold-colored lamp and a red ribbon form a curved side border.",
+        "description": "Blank cream pages face the open center at different angles. The ribbon curls away below the lowest book."
+      },
+      "observations": [
+        "Three open books with cream pages follow a left-hand curve.",
+        "A small gold-colored lamp and curling red bookmark ribbon sit among the books."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-library-reading-crescent.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-woodland-animal-window",
+      "status": "reviewed-from-image",
+      "sourceSha256": "235b709656cb23f04e36cbcd7b666de896a668823b0a3d7b74eee8e2033d7d4a",
+      "imageSha256": "235b709656cb23f04e36cbcd7b666de896a668823b0a3d7b74eee8e2033d7d4a",
+      "inputMetadataSha256": "d7ed94eb40cc450a70a770d4626eee321f42162a305adb68be32d7fc7f4ef374",
+      "inputContextSha256": "c08a64cf9c8a859acc8f40e4e1b513cce076f0d5e0283c5cdae4d424c1e2b9a9",
+      "copy": {
+        "title": "Fox and Squirrel Branch Frame",
+        "alt": "Thin twisting branches frame a seated fox and a squirrel on the opposite upper corner.",
+        "description": "Small green leaves break up the woody border. The two animals face toward the open center from different heights."
+      },
+      "observations": [
+        "An orange fox sits at the lower-left corner of a branch frame.",
+        "A red squirrel balances on the upper-right branch among small leaves."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-woodland-animal-window.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-soccer-ball-net-corner",
+      "status": "reviewed-from-image",
+      "sourceSha256": "75098c5c30bb5391a825b5c22fea0311f5e122a379a36c38ad46d0a65a527359",
+      "imageSha256": "75098c5c30bb5391a825b5c22fea0311f5e122a379a36c38ad46d0a65a527359",
+      "inputMetadataSha256": "f77485a0a617249e0f450a2a4a054eb3aa4d5ea635b455ad2738e589c16838c9",
+      "inputContextSha256": "2cf3e9db3a26b28c56bee911904a43ca621965e851cf4d0502bc4eb5527830e1",
+      "copy": {
+        "title": "Soccer Ball and Goal Net Corner",
+        "alt": "Black-and-white soccer ball rests in grass beside a diagonal section of white goal net.",
+        "description": "The tied net lines rise toward the upper right. Several pointed grass blades surround the lower part of the ball."
+      },
+      "observations": [
+        "A black-and-white soccer ball sits among green grass blades.",
+        "A white tied goal net rises diagonally behind the ball."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-soccer-ball-net-corner.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-basketball-court-oval",
+      "status": "reviewed-from-image",
+      "sourceSha256": "c2779d21e35c8c5913df97b951032132fad477f2bd9733bdec13dc7594856e83",
+      "imageSha256": "c2779d21e35c8c5913df97b951032132fad477f2bd9733bdec13dc7594856e83",
+      "inputMetadataSha256": "aee29dd892a33eacb902a8cbbb7f84b150fdb2f36413da072c08cb19a3d16045",
+      "inputContextSha256": "66079ebacf166b61d4e64c568a854018b809f3da719ec19a3484837f7acdbe63",
+      "copy": {
+        "title": "Basketball and Hoop Oval",
+        "alt": "Thin orange oval lines connect an orange basketball and a small hoop with a white net.",
+        "description": "The ball overlaps the left edge while the hoop sits above the right curve. The wide central opening remains clear."
+      },
+      "observations": [
+        "An orange basketball overlaps a thin oval border on the left.",
+        "A small basketball hoop and white net sit at the upper right."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-basketball-court-oval.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-graduation-laurel-cap",
+      "status": "reviewed-from-image",
+      "sourceSha256": "c1ad696cb9bbe3a123f8ad320379e8e280113b2376cd74a528548cfc819b9d77",
+      "imageSha256": "c1ad696cb9bbe3a123f8ad320379e8e280113b2376cd74a528548cfc819b9d77",
+      "inputMetadataSha256": "3cc7705c63f69ac2cfbba9b249aa1a3943ad71e5729ae9ecc07118c10a13e406",
+      "inputContextSha256": "a4af35fc892babd240a9be3e9790c153a392f031a69e6f5a765d5058528485a4",
+      "copy": {
+        "title": "Graduation Laurel Border",
+        "alt": "Dark green laurel branches surround a black graduation cap, diploma and navy bow.",
+        "description": "The two leafy branches rise around a broad opening. A gold tassel hangs from the cap above the rolled cream diploma."
+      },
+      "observations": [
+        "Two dark green laurel branches form an open circular border.",
+        "A black mortarboard, cream diploma and navy bow meet at the bottom."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-graduation-laurel-cap.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-wedding-interlocked-rings-divider",
+      "status": "reviewed-from-image",
+      "sourceSha256": "e6b13398024720115fe6d9389a905e481a7d09ece4f9a9231e55d84a211b0f5a",
+      "imageSha256": "e6b13398024720115fe6d9389a905e481a7d09ece4f9a9231e55d84a211b0f5a",
+      "inputMetadataSha256": "516f56e0e1aedb48e66ce5587a4de51af55af2450d29a45362730060d9b13bdf",
+      "inputContextSha256": "2c21346566d07212524dd6b9460f8434dbe645004b51f4a18ea2d5117436dace",
+      "copy": {
+        "title": "Interlocked Gold Rings Divider",
+        "alt": "Two interlocked gold rings sit between leafy sprigs and ivory ribbon curls.",
+        "description": "The slim branches extend outward from the ring pair. Small pale ribbon folds soften the ends of the compact wedding ornament."
+      },
+      "observations": [
+        "Two gold rings overlap at the middle of a horizontal divider.",
+        "Olive-colored leafy sprigs and ivory ribbon curls extend to both sides."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-wedding-interlocked-rings-divider.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-hanukkah-dreidel-corner",
+      "status": "reviewed-from-image",
+      "sourceSha256": "3291648a2fc27edb7b99cc021215283dc8910fb459ce0bcd4ef82b105cc4d7c9",
+      "imageSha256": "3291648a2fc27edb7b99cc021215283dc8910fb459ce0bcd4ef82b105cc4d7c9",
+      "inputMetadataSha256": "7768778fe0896854a124a241628873521f92df6ecca528ffaab0f8a17f1e6d2c",
+      "inputContextSha256": "ff53b72209a86b4faafd74b1cee73740d4178b0fc71df5d4a9d01d57fb91f973",
+      "copy": {
+        "title": "Blue Dreidel and Gold Coin Corner",
+        "alt": "Blue dreidel, pouch of gold coins and curling navy ribbon form a festive corner.",
+        "description": "Loose coins spill beside the small blue pouch. Fine gold edges follow the ribbon as it twists above and across the still life."
+      },
+      "observations": [
+        "An unlettered blue dreidel stands beside a blue pouch spilling gold coins.",
+        "A navy ribbon with gold trim curls upward and toward the right."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-hanukkah-dreidel-corner.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-christmas-holly-bell-arch",
+      "status": "reviewed-from-image",
+      "sourceSha256": "335f4dadd7203ca9a61b7a88d193ff4b1d6f66723358894e1064fe3d255cf1a9",
+      "imageSha256": "335f4dadd7203ca9a61b7a88d193ff4b1d6f66723358894e1064fe3d255cf1a9",
+      "inputMetadataSha256": "a3aad0407fc9afc7b0dd05770cfba645eda1bcce085aba05842f93904703070d",
+      "inputContextSha256": "15bae02d548dd1dcddd053b93e39b03d547b7a35aae8478145c17a2566539a8b",
+      "copy": {
+        "title": "Holly and Bell Arch",
+        "alt": "Sparse holly leaves and red berries form an arch topped with two brass-colored bells and a red bow.",
+        "description": "The bells hang beneath the large bow at the top. Small leaf clusters and berries follow the two open sides."
+      },
+      "observations": [
+        "Holly leaves and red berries follow an open arch.",
+        "Two gold-colored bells hang beneath a large red bow at the top."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-christmas-holly-bell-arch.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-thanksgiving-corn-stalk-edge",
+      "status": "reviewed-from-image",
+      "sourceSha256": "d7766e8317f4013bd70a9a89aab16311df75ea14f38b9b77bac6046f83b78f84",
+      "imageSha256": "d7766e8317f4013bd70a9a89aab16311df75ea14f38b9b77bac6046f83b78f84",
+      "inputMetadataSha256": "345440eb6e3983bc4070619fee494ed73e5314387ac0ff922efb769a30fa218f",
+      "inputContextSha256": "de835c6475b3d2d807cad0ad0bde0cf2989b0550192ad03f3804e02d20bd7b99",
+      "copy": {
+        "title": "Basket between Tall Cornstalks",
+        "alt": "Two tall dry cornstalks rise beside a small woven basket.",
+        "description": "Long curled leaves wrap around the golden stalks. Their outward lean creates a narrow U-shaped harvest border above the basket."
+      },
+      "observations": [
+        "Two tall golden cornstalks stand on opposite sides of a woven basket.",
+        "Dry curling leaves and husked ears follow the stalks upward."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-thanksgiving-corn-stalk-edge.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-halloween-spiderweb-corner",
+      "status": "reviewed-from-image",
+      "sourceSha256": "2908718bdb963b2e4bc24e311b811e5fb189969ee6d8fddcaa3d2a6d9c7af6e9",
+      "imageSha256": "2908718bdb963b2e4bc24e311b811e5fb189969ee6d8fddcaa3d2a6d9c7af6e9",
+      "inputMetadataSha256": "cc1c5951ce4190e837b8f71052e117fd92e991508e379ea9a9e4dd439206aa60",
+      "inputContextSha256": "b81775891658b693094e8c66dc4723deec7ec773aff84021812b63857961db73",
+      "copy": {
+        "title": "Spiderweb Scroll Corner",
+        "alt": "Black-and-white spiderweb fills an ornamental corner above a small hanging spider.",
+        "description": "Curved flourishes extend from the web's two outer arms. The little spider hangs near the inner lower curl."
+      },
+      "observations": [
+        "A radial black spiderweb stretches between two curling corner lines.",
+        "A small eight-legged cartoon spider hangs below the web."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-halloween-spiderweb-corner.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-birthday-pennant-top-edge",
+      "status": "reviewed-from-image",
+      "sourceSha256": "92b21e2ea02602b87857358eeb3be6ca8153e4eb554240d2f893e5c25365e577",
+      "imageSha256": "92b21e2ea02602b87857358eeb3be6ca8153e4eb554240d2f893e5c25365e577",
+      "inputMetadataSha256": "4c7f9c2fe063ae1207ed2df50ea79b2c41e7312c1516259d90e7c9df82596670",
+      "inputContextSha256": "161c8ac584fb7a086b7c1a61cb0d95df3e19f3b5335f3aae93d3c60e3e22c6ad",
+      "copy": {
+        "title": "Birthday Pennant Garland",
+        "alt": "Colored patterned pennants hang between two paper honeycomb decorations.",
+        "description": "Stripes, dots and solid colors alternate along the gently sagging cord. Yellow and blue folded-paper ornaments finish the two ends."
+      },
+      "observations": [
+        "Bright triangular flags hang from a curved cord with different patterns.",
+        "Yellow and blue paper honeycomb decorations sit at the garland's ends."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-birthday-pennant-top-edge.webp",
+      "references": []
+    },
+    {
+      "id": "border-openwork-geometric-maze-ink-frame",
+      "status": "reviewed-from-image",
+      "sourceSha256": "02580bc427b63ebd4fb30b6751fd8e49a179fc284f954908311e10fcd96625db",
+      "imageSha256": "02580bc427b63ebd4fb30b6751fd8e49a179fc284f954908311e10fcd96625db",
+      "inputMetadataSha256": "26a788b30794c9ec556a1fbb7de7462f2fbb0892607343fd8f360f93af87f113",
+      "inputContextSha256": "0023812b1dcaa24fa5c728e2c3f1fb0b15adf87d1795f6135a199c6123bb46c9",
+      "copy": {
+        "title": "Black Geometric Maze Frame",
+        "alt": "Bold black meandering lines form a square frame with enlarged corner turns.",
+        "description": "A narrow double rule follows the inner opening. Repeated right-angle paths create a structured border around the clear center."
+      },
+      "observations": [
+        "Black right-angle meander lines form a square ornamental frame.",
+        "Larger corner turns and a fine double inner rule define the opening."
+      ],
+      "reviewedAt": "2026-10-29T10:51:10.774202+00:00",
+      "inspectedImage": "/catalog/wave_702/border-openwork-geometric-maze-ink-frame.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-entrance-arch-animal-cutouts",
+      "status": "reviewed-from-image",
+      "sourceSha256": "fa8f64d5615f8655ac891d8c7806e3a07ce2c495a397640ca0d26f256a08f542",
+      "imageSha256": "fa8f64d5615f8655ac891d8c7806e3a07ce2c495a397640ca0d26f256a08f542",
+      "inputMetadataSha256": "1b42c0f69785e9366270fbea0d9a2c852c238292e0ee776e7a89abf83fe65ee5",
+      "inputContextSha256": "149e8537ed6c652971ad942e70b2c1388b422774d1a1f1c853232b6c84c9aa9c",
+      "copy": {
+        "title": "Family Walking Through a Zoo Entrance",
+        "alt": "A family walks beneath a green ZOO arch decorated with giraffe and elephant silhouettes.",
+        "description": "Leaf-topped pillars frame the open green gates. Giraffes, an elephant and broad trees appear beyond the visitors."
+      },
+      "observations": [
+        "A tall jade-and-ochre entrance arch has the clearly visible word ZOO and animal-shaped pillar decorations.",
+        "Several small visitors walk through the gates, with a giraffe and elephant in separate landscape areas behind."
+      ],
+      "reviewedAt": "2026-10-29T11:33:04.283837+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-entrance-arch-animal-cutouts.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-folded-visitor-map",
+      "status": "reviewed-from-image",
+      "sourceSha256": "2fdbd9fb5fa737405af8d9ad056e82fdbf4e94b23525404bc2fc5280413577b5",
+      "imageSha256": "2fdbd9fb5fa737405af8d9ad056e82fdbf4e94b23525404bc2fc5280413577b5",
+      "inputMetadataSha256": "2e40855deee34c780c9f38633ab128783f5aa98559f3f7b89fccdb9e5e7480d7",
+      "inputContextSha256": "b46dfd8f1e0de3c1f1c5514068f85ed05168ec68de6873ed43ab871cf7a86af3",
+      "copy": {
+        "title": "Family Reading a Zoo Map",
+        "alt": "A woman and two children hold an unfolded zoo map with animal icons and winding paths.",
+        "description": "The boy grips one side while the girl points toward the illustrated routes. A penguin, giraffe and butterfly distinguish parts of the map."
+      },
+      "observations": [
+        "The source includes three people, rather than only the folded-paper object in the planning prompt.",
+        "The large green map has dotted paths and distinct penguin, giraffe and butterfly pictograms; the woman wears a plum top and backpack."
+      ],
+      "reviewedAt": "2026-10-29T11:33:04.283837+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-folded-visitor-map.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-family-ticket-window",
+      "status": "reviewed-from-image",
+      "sourceSha256": "b43cc9d532a77ac846ae4bb4ec7bcca10e39c1ed83b8ebe7dfd3202ec19c984c",
+      "imageSha256": "b43cc9d532a77ac846ae4bb4ec7bcca10e39c1ed83b8ebe7dfd3202ec19c984c",
+      "inputMetadataSha256": "20eb5e677f793a9daaa69e6e777e73afb3fba9bd5ed473b51de450e1224357c2",
+      "inputContextSha256": "11a9ec099914238fa70318a596abc0f61e5bf0189c916c5069cc0a7289129970",
+      "copy": {
+        "title": "Child Collecting a Zoo Ticket",
+        "alt": "A child in yellow overalls reaches toward a ticket at a wooden zoo admission booth beside a woman.",
+        "description": "The small booth has a green roof and an elephant plaque above its open window. The attendant leans forward for the exchange."
+      },
+      "observations": [
+        "The child stands with one arm extended to the attendant at the ticket window; a woman in purple waits beside them.",
+        "The wood-sided kiosk has an elephant silhouette above the window and a potted plant at the lower right."
+      ],
+      "reviewedAt": "2026-10-29T11:33:04.283837+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-family-ticket-window.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-stroller-elephant-view",
+      "status": "reviewed-from-image",
+      "sourceSha256": "9a51bfbbbe252021be8c631375de05d9d4944da6de57d46cff981a727df99b83",
+      "imageSha256": "9a51bfbbbe252021be8c631375de05d9d4944da6de57d46cff981a727df99b83",
+      "inputMetadataSha256": "78bdd61f9858080fd9d14bc2f551f43dea928f46802af1490dd5bc311210f566",
+      "inputContextSha256": "d5387979150315eff936fa2a58014fcde08ec0bb3ed8371e3c118cce5cc0dfc5",
+      "copy": {
+        "title": "Father and Toddler at the Elephant Habitat",
+        "alt": "A father pushes a toddler in a stroller beside a wooden zoo railing overlooking an elephant.",
+        "description": "The elephant stands near rocks and a broad green tree beyond the barrier. The stroller and its seated child remain on the visitor path."
+      },
+      "observations": [
+        "An adult in an orange shirt holds the stroller handle, with a toddler seated inside.",
+        "A gray tusked elephant stands behind a separated visitor rail amid rocks and trees."
+      ],
+      "reviewedAt": "2026-10-29T11:33:04.283837+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-stroller-elephant-view.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-class-field-trip-gate",
+      "status": "reviewed-from-image",
+      "sourceSha256": "53d4596f827ccdc957998568d3278bc87146d316713bb316c072c35fef65a0c8",
+      "imageSha256": "53d4596f827ccdc957998568d3278bc87146d316713bb316c072c35fef65a0c8",
+      "inputMetadataSha256": "9ee00b163ffa5e27352608fa5a02e32dc93196e02d2148ada86b3d7a8b3f0b32",
+      "inputContextSha256": "690a386862f0d3af866e50f3e2dfb0a0de0a7779d9c4329cee336aa8a76aff7f",
+      "copy": {
+        "title": "Teacher Leading Children Through the Zoo",
+        "alt": "A teacher points toward a giraffe as four children walk beneath a wooden ZOO gateway.",
+        "description": "The children wear different bright jackets and carry backpacks. Animal-picture activity cards add a school-trip detail to the group."
+      },
+      "observations": [
+        "The adult with a long braid wears a teal jacket and points toward the giraffe at the right.",
+        "Four children have different hair, skin tones and coat colors; several carry small animal cards."
+      ],
+      "reviewedAt": "2026-10-29T11:33:04.283837+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-class-field-trip-gate.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-wheelchair-wetland-boardwalk",
+      "status": "reviewed-from-image",
+      "sourceSha256": "c8c61e7ab1897231deef31ea6ec2babe75c9c13c0222f763d3d0e048e18c93f2",
+      "imageSha256": "c8c61e7ab1897231deef31ea6ec2babe75c9c13c0222f763d3d0e048e18c93f2",
+      "inputMetadataSha256": "60aaea3b094a5552546622414060bcd81650214a329c26af5d5b6b49bc1bda9e",
+      "inputContextSha256": "86c0a261103b4a22326ecf65bc5484c91f8d68a43ce1ee741150eb1a39e86fb1",
+      "copy": {
+        "title": "Watching Wetland Birds from a Zoo Boardwalk",
+        "alt": "A silver-haired wheelchair user and a child look at two long-legged birds across a wetland viewing rail.",
+        "description": "Reeds rise behind the mesh-sided wooden deck. The child leans forward and points while the adult rests a hand near the wheelchair wheel."
+      },
+      "observations": [
+        "A silver-haired adult in purple is seated in a manual wheelchair beside a curly-haired child.",
+        "Two gray, red-marked long-legged birds stand among the reeds beyond the wooden visitor railing."
+      ],
+      "reviewedAt": "2026-10-29T11:33:04.283837+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-wheelchair-wetland-boardwalk.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-little-zoo-tram",
+      "status": "reviewed-from-image",
+      "sourceSha256": "7943989f912fdf9c1fa77e04108c4a92f17b54050b51425dbe29367ebc4acbe1",
+      "imageSha256": "7943989f912fdf9c1fa77e04108c4a92f17b54050b51425dbe29367ebc4acbe1",
+      "inputMetadataSha256": "39428a55fdf8218618752412b5c76023592e150c6435c0346d0073b51ea5c600",
+      "inputContextSha256": "c2490e480285b3d735a22b3e876329f0fa7b9da99f06b9aa7486159629dd3687",
+      "copy": {
+        "title": "Green Lion Zoo Tram",
+        "alt": "A green zoo tram has a friendly lion-faced engine and open passenger carriages.",
+        "description": "Gold trim outlines the rounded canopy and small wheels. Seated visitors look out from the two linked cars behind the decorative engine."
+      },
+      "observations": [
+        "The engine front has a large sculpted cartoon lion face, with a green funnel above and dark cowcatcher below.",
+        "Two open green carriages carry visitors and connect behind the engine; wheels and roofs are fully visible."
+      ],
+      "reviewedAt": "2026-10-29T11:33:04.283837+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-little-zoo-tram.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-hand-entry-stamp-ticket",
+      "status": "reviewed-from-image",
+      "sourceSha256": "570f9547ad55453616bdcb8c5b311ef6dfc0a5802dbdf5e0022262203b4feab6",
+      "imageSha256": "570f9547ad55453616bdcb8c5b311ef6dfc0a5802dbdf5e0022262203b4feab6",
+      "inputMetadataSha256": "e0f2521aa8f559727c6d054aa2300483c9f1406c5bbca349046eccf62ce0a2ca",
+      "inputContextSha256": "f35a764be6c232b8d1497558ac6a50c08130f976b513035474cf36b9fd30529d",
+      "copy": {
+        "title": "Zoo Ticket and Elephant Admission Stamp",
+        "alt": "A hand holds an orange ZOO ticket beside a small blue elephant stamp on the wrist.",
+        "description": "A giraffe and elephant decorate the ticket. Behind the close-up hand, visitors walk through a wooden entrance beside an elephant viewing area."
+      },
+      "observations": [
+        "An orange ticket with ZOO lettering and two animal silhouettes is pinched by the hand.",
+        "The blue elephant admission mark is visible on the wrist; an entrance arch and elephant habitat form a smaller scene behind."
+      ],
+      "reviewedAt": "2026-10-29T11:33:04.283837+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-hand-entry-stamp-ticket.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-admission-wristband-pair",
+      "status": "reviewed-from-image",
+      "sourceSha256": "5eb3cea4284ace301d82bb3619998276a79caac68d1471e398db8875af015a55",
+      "imageSha256": "5eb3cea4284ace301d82bb3619998276a79caac68d1471e398db8875af015a55",
+      "inputMetadataSha256": "97f6542d5e7052cf0db3784f14330bfacdbbe3f7f65e07f44b7b1fc17c5e1fcf",
+      "inputContextSha256": "fb30876920fb52c2475237c48f605b6cdd148c013840b646794934f93fcca0f2",
+      "copy": {
+        "title": "Girl Wearing a Zoo Wristband",
+        "alt": "A smiling girl fastens a wristband beside blue and orange admission bands and a giraffe visitor pass.",
+        "description": "The loose bands curl across the foreground. A giraffe and small habitat sign appear beyond the railing behind her."
+      },
+      "observations": [
+        "The girl has a high dark ponytail, purple shirt and backpack while holding her opposite wrist.",
+        "Two large curled paper bands and a giraffe pass occupy the foreground, with a giraffe habitat behind."
+      ],
+      "reviewedAt": "2026-10-29T11:33:04.283837+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-admission-wristband-pair.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-animal-direction-signpost",
+      "status": "reviewed-from-image",
+      "sourceSha256": "14be9e7270af0f8d890f2a8c6c1363b49a2f4b03e00c7f18292959c59b5b740a",
+      "imageSha256": "14be9e7270af0f8d890f2a8c6c1363b49a2f4b03e00c7f18292959c59b5b740a",
+      "inputMetadataSha256": "7156cc39e4176d5ee2be409f843c7337d1b5d7100c560c20b92154ba4877afe1",
+      "inputContextSha256": "f9b6c848d39a771e5d51e53c00c3147441df2202c001403380b2b38094cad959",
+      "copy": {
+        "title": "Zoo Animal Direction Signpost",
+        "alt": "Wooden arrow signs show penguin, giraffe and butterfly illustrations.",
+        "description": "A penguin arrow points left; the giraffe and butterfly arrows point right. Leafy shoots grow around the base of the wooden post."
+      },
+      "observations": [
+        "Three wooden arrows show a penguin, a giraffe and an orange butterfly on a central wooden pole.",
+        "The penguin arrow points left and the other two point right; green leaves cluster at the bottom."
+      ],
+      "reviewedAt": "2026-10-29T12:33:44.286472+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-animal-direction-signpost.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-hippo-underwater-window",
+      "status": "reviewed-from-image",
+      "sourceSha256": "e80d4e6c56293b1ba963a2c4798f72942b487d3f0609746948880036fc6949d6",
+      "imageSha256": "e80d4e6c56293b1ba963a2c4798f72942b487d3f0609746948880036fc6949d6",
+      "inputMetadataSha256": "217510d68e40c88d3131b8c9293bc54a20d7289be48b5ab17f136851d964fcb4",
+      "inputContextSha256": "6e3e5689cfdd2e31a40dd2c309137dd2ebd2c66148636dbea456e2158d1476e8",
+      "copy": {
+        "title": "Children at the Hippo Window",
+        "alt": "Two children crouch beside a rounded underwater window where a hippopotamus swims past.",
+        "description": "Blue water fills the stone-edged opening. The children face one another across the window, wearing purple and green tops with small backpacks."
+      },
+      "observations": [
+        "The hippo is shown underwater behind a rounded gray stone viewing window, with its snout turned toward the right.",
+        "Two crouching children occupy opposite sides, one with pigtails and a purple backpack and one with a blue backpack."
+      ],
+      "reviewedAt": "2026-10-29T11:35:29.071233+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-hippo-underwater-window.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-giraffe-viewing-photographer",
+      "status": "reviewed-from-image",
+      "sourceSha256": "78cc05e77173956672dcd3c62a58c60e4991ca743715fbf3cb4625742557b8a4",
+      "imageSha256": "78cc05e77173956672dcd3c62a58c60e4991ca743715fbf3cb4625742557b8a4",
+      "inputMetadataSha256": "501a76a34b55da58d010fbe224b817c720d9e649f5d409027de2ff6c1e5b0080",
+      "inputContextSha256": "88881c13390d3a782552f726b73f38354803c6ab66c2192eae08c0b04e44366a",
+      "copy": {
+        "title": "Photographing a Giraffe at the Zoo",
+        "alt": "A short-haired visitor raises a camera toward a giraffe beyond a wooden viewing rail.",
+        "description": "A pale sunhat hangs from the visitor backpack. The giraffe leans its long neck into view above the mesh-sided barrier."
+      },
+      "observations": [
+        "The photographer has short auburn hair, a green top, dark shorts and a pale hat hanging from a backpack.",
+        "The giraffe has patterned fur and visible ossicones; its long neck rises behind a wooden mesh barrier."
+      ],
+      "reviewedAt": "2026-10-29T11:35:29.071233+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-giraffe-viewing-photographer.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-grandfather-panda-visit",
+      "status": "reviewed-from-image",
+      "sourceSha256": "a722a913d47c1ea911732434608b0d7373f09ca2759d1a63308011426de2a9f4",
+      "imageSha256": "a722a913d47c1ea911732434608b0d7373f09ca2759d1a63308011426de2a9f4",
+      "inputMetadataSha256": "2186c18217ec3cc4fa3f5283ab3d4a492af5e56b97815f629b2f47c8e8a6d974",
+      "inputContextSha256": "101f37489b37a91b06c2ca50addbdbc083b82053d120942cf52fc10eccebdc17",
+      "copy": {
+        "title": "Grandfather and Girl Watching a Panda",
+        "alt": "A gray-haired grandfather and a girl sit on a bench facing a panda resting on a wooden platform.",
+        "description": "The panda rests its front paws along the platform edge. Rocks, bamboo and supporting logs surround the small viewing scene."
+      },
+      "observations": [
+        "The two visitors sit side by side with their backs partly facing the viewer; the grandfather wears a mustard padded vest.",
+        "The giant panda rests on a log-framed elevated platform behind a distinct visitor railing."
+      ],
+      "reviewedAt": "2026-10-29T11:35:29.071233+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-grandfather-panda-visit.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-penguin-window-toddler",
+      "status": "reviewed-from-image",
+      "sourceSha256": "9a4b8ea5f59eb95e4be370e11f5cc1e0853cf0a5e32d4a65a71ca7d22c940593",
+      "imageSha256": "9a4b8ea5f59eb95e4be370e11f5cc1e0853cf0a5e32d4a65a71ca7d22c940593",
+      "inputMetadataSha256": "d818f189f8d114cb5e09d52c63c040d05f9d4e5639dbfd62647a92a431964252",
+      "inputContextSha256": "73048632fc49366bb82bc8ca019ae14cc3fed786884d4b64b4392d86f6a429ec",
+      "copy": {
+        "title": "Toddler Pointing at Penguins",
+        "alt": "A toddler with a red backpack points toward penguins through a tall blue zoo window while holding an adult hand.",
+        "description": "The child rises onto one foot in front of the stone window base. The accompanying adult is shown from the shoulders down."
+      },
+      "observations": [
+        "The child wears an orange top and red backpack, raising one hand to the penguin window and holding the adult with the other.",
+        "Two prominent penguins stand beyond the glass; the companion adult is intentionally shown without the head."
+      ],
+      "reviewedAt": "2026-10-29T11:35:29.071233+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-penguin-window-toddler.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-zebra-sketching-child",
+      "status": "reviewed-from-image",
+      "sourceSha256": "1c28e49fdf86956d1694aba122c39f9fd6db3d0e955c1f7d2d42d17d8a74b24e",
+      "imageSha256": "1c28e49fdf86956d1694aba122c39f9fd6db3d0e955c1f7d2d42d17d8a74b24e",
+      "inputMetadataSha256": "27839072f1be6220942615d3c0818984b4894cf1e748522ee421b6827958b65c",
+      "inputContextSha256": "e163ac260e0a010865d398f19280a3603a6f1017706cabec85d328f81f377a09",
+      "copy": {
+        "title": "Visitor Sketching a Zebra",
+        "alt": "A visitor with round glasses sketches in a notebook while seated opposite a zebra enclosure.",
+        "description": "The burgundy sweater and folding stool stand out against the pale habitat wall. The zebra faces the visitor from beyond a wood-and-wire fence."
+      },
+      "observations": [
+        "A curly-haired visitor in a burgundy sweater and tan trousers sits on a black folding stool with a pencil and notebook.",
+        "One zebra stands behind the horizontal wooden rail and mesh enclosure, with rocks and trees farther behind."
+      ],
+      "reviewedAt": "2026-10-29T11:35:29.071233+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-zebra-sketching-child.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-orangutan-rope-observers",
+      "status": "reviewed-from-image",
+      "sourceSha256": "6a4ddb8254b78b72b6e15270cb04c4fe2220dcd5c66c98c9748f01838f91f686",
+      "imageSha256": "6a4ddb8254b78b72b6e15270cb04c4fe2220dcd5c66c98c9748f01838f91f686",
+      "inputMetadataSha256": "af5cbc9f08d22260706cad89a6f109d08ee6b93b8e39ef56f01515f76d3c9827",
+      "inputContextSha256": "17cb8bda7d2c85c61a672ba872d8c00d2496f5a3bd52c7ff77ef687ce4f1c362",
+      "copy": {
+        "title": "Friends Watching an Orangutan",
+        "alt": "Two friends lean near a zoo viewing rail while an orangutan hangs from overhead ropes.",
+        "description": "The orange-haired animal grips two different supports. The visitors wear a lavender headscarf with a denim jacket and a green striped shirt."
+      },
+      "observations": [
+        "One visitor wears a lavender headscarf and pale denim jacket; the other wears a green striped tee and backpack.",
+        "The orangutan hangs behind the barrier between two overhead supports, one rope above and one to its right."
+      ],
+      "reviewedAt": "2026-10-29T11:35:29.071233+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-orangutan-rope-observers.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-flamingo-family-boardwalk",
+      "status": "reviewed-from-image",
+      "sourceSha256": "a6dcffa4e4cb0e06f4193c07373b698651497cbf4e7a28f0fdadd5a3d4b64e70",
+      "imageSha256": "a6dcffa4e4cb0e06f4193c07373b698651497cbf4e7a28f0fdadd5a3d4b64e70",
+      "inputMetadataSha256": "a6d4baa62857a24ceddfcf1c4b9f226a7be446172346bc5628f68b3bb219b528",
+      "inputContextSha256": "b2b76b90724121ca8abe00824b66f026dccbd6bc718f0ff5caecc790e3cde233",
+      "copy": {
+        "title": "Family Walking Beside Flamingos",
+        "alt": "A family follows a curved wooden boardwalk beside a pool of pink flamingos.",
+        "description": "A red-capped child walks between two adults. Reeds and rocks border the shallow blue pool beyond the railing."
+      },
+      "observations": [
+        "A mother with a short dark bob wears a coral top, while the father wears teal and carries a backpack; a child in a red cap walks between them.",
+        "Several pink flamingos stand in pale blue water, some with lowered heads, beyond the curved mesh-sided boardwalk."
+      ],
+      "reviewedAt": "2026-10-29T11:35:29.071233+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-flamingo-family-boardwalk.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-reptile-house-visitor",
+      "status": "reviewed-from-image",
+      "sourceSha256": "cc4804dea6809932ea4a3c74534b60ab499cd960bf46769ddd93ab1e876d570d",
+      "imageSha256": "cc4804dea6809932ea4a3c74534b60ab499cd960bf46769ddd93ab1e876d570d",
+      "inputMetadataSha256": "81e59783da6d01bfee508e70b155c50ff7918076da9f4f20ee4d3be7c9b462d1",
+      "inputContextSha256": "1b0a451132de5b303aceb1ea1cbbc277e5e8c6ccff27c883bc80ea76ec547a80",
+      "copy": {
+        "title": "Visitor Looking into an Iguana Terrarium",
+        "alt": "A visitor in a navy hoodie leans toward a glass terrarium containing a green iguana.",
+        "description": "The iguana lies on a diagonal branch among broad leaves. A small lizard pictogram marks the dark display base."
+      },
+      "observations": [
+        "The visitor has a blue-gray backpack, jeans and bright yellow sneakers while leaning toward the glass.",
+        "The green iguana rests along a branch inside a tall lit terrarium with foliage and a lizard icon plaque."
+      ],
+      "reviewedAt": "2026-10-29T11:35:29.071233+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-reptile-house-visitor.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-butterfly-dome-walk",
+      "status": "reviewed-from-image",
+      "sourceSha256": "ec3f3a00f549969318769f8ccabc95271ef43ae6555e01c4b537567ace12831c",
+      "imageSha256": "ec3f3a00f549969318769f8ccabc95271ef43ae6555e01c4b537567ace12831c",
+      "inputMetadataSha256": "aea53caf4c41b31048ee30c2cd84cf983412a9e81c0dfb86c59b8654db58ffbd",
+      "inputContextSha256": "cab9d42cb34fd9a5275c2bf85420f15bb71fc08aacf38ebd7d5a158f0405f33c",
+      "copy": {
+        "title": "Girl in the Butterfly House",
+        "alt": "A girl in a coral pinafore watches butterflies beneath the curved frame of a glass butterfly house.",
+        "description": "Orange and blue butterflies hover near the domed green structure. Flowering plants gather along both sides of the open doorway."
+      },
+      "observations": [
+        "A dark-bobbed girl stands with her hands down inside the green-framed domed structure.",
+        "Two prominent butterflies, orange above and blue at the right, appear beside flowering pink and orange plants."
+      ],
+      "reviewedAt": "2026-10-29T11:35:29.071233+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-butterfly-dome-walk.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-insectarium-magnifying-window",
+      "status": "reviewed-from-image",
+      "sourceSha256": "2db68be978b0273d24b3cfbfe2790149aa3f1b3be4cf7bd6c833aea24519edac",
+      "imageSha256": "2db68be978b0273d24b3cfbfe2790149aa3f1b3be4cf7bd6c833aea24519edac",
+      "inputMetadataSha256": "9d8e9e06942b0722610187c44971a8dea30f259ac4d76d655f7f7c9c85b47387",
+      "inputContextSha256": "1b1f04b548f85d2e380b3989439815cea0280c270553cb9c424e397e706e0e5e",
+      "copy": {
+        "title": "Child at a Beetle Viewing Window",
+        "alt": "A curly-haired child in a green raincoat looks through a circular window at a horned beetle.",
+        "description": "The round metal frame sits in a wooden panel. Leaves and a rough branch surround the large beetle inside the display."
+      },
+      "observations": [
+        "The child bends forward with one hand near the round viewing frame, wearing yellow rain boots and a green coat.",
+        "A large dark horned beetle is visible against wood and foliage inside the circular glass display."
+      ],
+      "reviewedAt": "2026-10-29T11:35:29.071233+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-insectarium-magnifying-window.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-lion-lookout-binoculars",
+      "status": "reviewed-from-image",
+      "sourceSha256": "383fe8734f2220b860af5efe4cc2d130589dc68a4e9f64180b2a0f83e8ae347c",
+      "imageSha256": "383fe8734f2220b860af5efe4cc2d130589dc68a4e9f64180b2a0f83e8ae347c",
+      "inputMetadataSha256": "d619827938d1cdcaf7a292d80ba3bcd8d1ec3e8c204d9e4c32a72d34e762f9d4",
+      "inputContextSha256": "e58dedc7f7394df168be09c357c14e84741649934a691c17e735d73d55e87a15",
+      "copy": {
+        "title": "Watching a Lion Through Public Binoculars",
+        "alt": "A visitor in an orange jacket uses mounted binoculars to view a lion resting on rocks.",
+        "description": "The public viewing rail separates the visitor from the habitat. A long mane and raised rocky ledge distinguish the reclining lion."
+      },
+      "observations": [
+        "The visitor has a braided high bun, orange hooded jacket and dark backpack, with both hands holding mounted binoculars.",
+        "A male lion with a brown mane rests on a rock platform beyond the wood rail and moat-like lower habitat."
+      ],
+      "reviewedAt": "2026-10-29T11:39:34.041194+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-lion-lookout-binoculars.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-rhinoceros-rest-stop",
+      "status": "reviewed-from-image",
+      "sourceSha256": "2ecbdbda06008f0d73eb217000f9e64b43e920a222faf911dfbc3a09e8da8a7b",
+      "imageSha256": "2ecbdbda06008f0d73eb217000f9e64b43e920a222faf911dfbc3a09e8da8a7b",
+      "inputMetadataSha256": "110cf01d6609e73148fda80c6ea2c2241371b9acae5cf9e2de4262b7fa591a92",
+      "inputContextSha256": "6b23b3e2429d51ad7b3447467f2357e94cf0104eb4e70afcb5104a74cff300bf",
+      "copy": {
+        "title": "Older Visitors at the Rhino Window",
+        "alt": "An older couple stands beside a bench looking at a rhinoceros beyond a zoo viewing wall.",
+        "description": "The woman points toward the gray animal while her companion leans closer. Rocks, water and a broad green tree frame the habitat."
+      },
+      "observations": [
+        "The gray-haired man wears a blue shirt and tan trousers; the gray-haired woman in burgundy raises a pointing hand.",
+        "A gray rhinoceros stands beside pale blue water behind a low visitor wall and a wooden bench."
+      ],
+      "reviewedAt": "2026-10-29T11:39:34.041194+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-rhinoceros-rest-stop.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-bat-house-silhouettes",
+      "status": "reviewed-from-image",
+      "sourceSha256": "b4bd94e0e343470e8146c047169c6e9c9161599055ef7dc237b84ab8e5f9a819",
+      "imageSha256": "b4bd94e0e343470e8146c047169c6e9c9161599055ef7dc237b84ab8e5f9a819",
+      "inputMetadataSha256": "5a79eb66c819282311155899d7374fd23f7478f1f9fd7ac3db55b73bd3b21ee6",
+      "inputContextSha256": "b6152fbb984eaa9f57759d763cc46aab078be2e39dd8004dc958c7296165d375",
+      "copy": {
+        "title": "Family Visiting the Bat House",
+        "alt": "A family watches hanging bats through a purple-lit zoo viewing window.",
+        "description": "The rounded dark arch encloses a small nighttime habitat. The child points upward while the two adults stand close behind."
+      },
+      "observations": [
+        "Three visitors stand within a dark rounded entrance, one child in front wearing a small pink backpack.",
+        "Several bats hang head down beyond the large viewing panel, with purple and blue light confined to the nocturnal display."
+      ],
+      "reviewedAt": "2026-10-29T11:39:34.041194+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-bat-house-silhouettes.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-peacock-visitor-path",
+      "status": "reviewed-from-image",
+      "sourceSha256": "0e00a97ac92535b842ff3697c9906715b9d7032a29d649ac19c3ab7321d297f5",
+      "imageSha256": "0e00a97ac92535b842ff3697c9906715b9d7032a29d649ac19c3ab7321d297f5",
+      "inputMetadataSha256": "5759749c64984dfb42506be995af2485c8b3575eff608e49d64bbdd8d35d829f",
+      "inputContextSha256": "6861c9919ed76859afed408123bd7699e03ea2dfa2687fb9eab469e1c6e0ca3b",
+      "copy": {
+        "title": "Peacock Crossing the Zoo Path",
+        "alt": "A blue-and-green peacock walks across a zoo path while a woman and child pause behind it.",
+        "description": "Its long lowered tail trails across the foreground. An animal information panel and curved mesh barrier mark the visitor route."
+      },
+      "observations": [
+        "The peacock has a blue neck, crest and long patterned tail with eyespots; its tail is lowered rather than fanned.",
+        "A woman with a bun and purple top stands beside a child in turquoise; they remain behind the foreground bird."
+      ],
+      "reviewedAt": "2026-10-29T11:39:34.041194+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-peacock-visitor-path.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-red-panda-tree-deck",
+      "status": "reviewed-from-image",
+      "sourceSha256": "b8fc8621e92a085d54326f53c57f861b46187b42789f7a7cac7610e41a947e64",
+      "imageSha256": "b8fc8621e92a085d54326f53c57f861b46187b42789f7a7cac7610e41a947e64",
+      "inputMetadataSha256": "50a8cbd9b218a9c16a52a1ad6be8fadb0fcb123a060465be713d4c9857ace292",
+      "inputContextSha256": "104a8238f44613dd796b17221f023e057793aa8a7562eb9d538ca90e83a8fed2",
+      "copy": {
+        "title": "Visitors Watching a Red Panda in a Tree",
+        "alt": "Two visitors lean beside a wooden rail and look up at a red panda resting on a branch.",
+        "description": "The reddish animal curls its thick striped tail down the tree. Leaves and rounded rocks create a compact habitat around the viewing area."
+      },
+      "observations": [
+        "A dark-skinned visitor in a lilac shirt stands beside a person with a long brown braid and pale sweater.",
+        "A reddish panda with pale face markings lies high on a branch, its rust-and-cream striped tail draping down."
+      ],
+      "reviewedAt": "2026-10-29T11:39:34.041194+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-red-panda-tree-deck.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-meerkat-observation-dome",
+      "status": "reviewed-from-image",
+      "sourceSha256": "1b9a3f960f067c57d0ffdc7882680c7442cdd9f6259440301bc57727a75336f8",
+      "imageSha256": "1b9a3f960f067c57d0ffdc7882680c7442cdd9f6259440301bc57727a75336f8",
+      "inputMetadataSha256": "a75c24a4c2f803d434a29656b5bf9e9fc4c0fe3b30f1c29d6da50fd36d933b24",
+      "inputContextSha256": "fa6108e9234e02626d090ab736e5f67b906a3cc652d3974c8427b64ad9447175",
+      "copy": {
+        "title": "Child Inside a Meerkat Viewing Dome",
+        "alt": "A child in a yellow cap looks through a clear observation dome at three meerkats.",
+        "description": "One meerkat stands upright near the dome while the others sit and walk among the rocks. The sealed dome keeps the child separate from the animals."
+      },
+      "observations": [
+        "The child is inside a transparent hemispherical viewing bubble with hands raised against the glass.",
+        "Three meerkats occupy different positions outside: upright at the right, seated near the middle and walking in front."
+      ],
+      "reviewedAt": "2026-10-29T11:39:34.041194+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-meerkat-observation-dome.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-sea-lion-underwater-view",
+      "status": "reviewed-from-image",
+      "sourceSha256": "40a3de1ba1ee98b388dd077ae6dab90a6b32ce5c9ec9ae7b9d1001bdeeab0104",
+      "imageSha256": "40a3de1ba1ee98b388dd077ae6dab90a6b32ce5c9ec9ae7b9d1001bdeeab0104",
+      "inputMetadataSha256": "5eee364417919c982f627ab25e16f07ba35ad7f36dea68a6ee0ebccf40b8ebc9",
+      "inputContextSha256": "fae3f3d2c565f50e7bf4f4755ebdc6f664614494f5feef2178935b1069d9f375",
+      "copy": {
+        "title": "Friends at the Sea Lion Window",
+        "alt": "A wheelchair user and a standing friend watch a sea lion swim behind a broad underwater window.",
+        "description": "The seated visitor points toward the animal. Blue water and faint underwater rocks remain inside the rounded glass opening."
+      },
+      "observations": [
+        "A seated visitor with short coiled hair and a purple top points toward the water; a standing companion wears a green hoodie and tan backpack.",
+        "A gray-brown sea lion swims behind the window with its small external ear and front flippers visible."
+      ],
+      "reviewedAt": "2026-10-29T11:39:34.041194+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-sea-lion-underwater-view.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-aviary-rope-bridge",
+      "status": "reviewed-from-image",
+      "sourceSha256": "69e978dfcc153f171be08f37eaf94f2c99c5916f7865e6887690997a6b198cd9",
+      "imageSha256": "69e978dfcc153f171be08f37eaf94f2c99c5916f7865e6887690997a6b198cd9",
+      "inputMetadataSha256": "1c281a18f32d0ebd07522b8c3b5f1213fce2dc14e4fc962484f1a6560067ba82",
+      "inputContextSha256": "f35f233eba722ae43fe3946bda6ef1d9e601fcac183328d05e614c5b49c99f1d",
+      "copy": {
+        "title": "Visitors Crossing an Aviary Bridge",
+        "alt": "Two visitors cross a wooden rope bridge beneath two colorful parrots.",
+        "description": "The red and blue parrots perch on a leafy branch above the walkway. One visitor wears a yellow jacket while the other carries a backpack over a blue top."
+      },
+      "observations": [
+        "A woman in a yellow jacket and an adult in a blue top stand on a wooden rope bridge.",
+        "A red-and-yellow parrot and a blue-and-yellow parrot perch on a branch among broad green leaves."
+      ],
+      "reviewedAt": "2026-10-29T12:49:31.202169+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-aviary-rope-bridge.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-wallaby-walkthrough-visit",
+      "status": "reviewed-from-image",
+      "sourceSha256": "57851a7ee4e5bb015c457b299fa94ffaeffa89e4266fd0a87c74d3ad3a77995a",
+      "imageSha256": "57851a7ee4e5bb015c457b299fa94ffaeffa89e4266fd0a87c74d3ad3a77995a",
+      "inputMetadataSha256": "5df3e8196bd1515a04bb9be529544c39cc1bf6e5ab839e4eac29a6e996d7e070",
+      "inputContextSha256": "2441c73eb59153d36cc684495de7ae91df8e180103ba371a7be9ba57405a6b05",
+      "copy": {
+        "title": "Watching a Mother and Joey at the Zoo",
+        "alt": "A woman and child watch a long-tailed marsupial with a joey in its pouch from a visitor path.",
+        "description": "The mother animal sits upright beside a small information panel. Low rope posts separate its grassy space from the visitors."
+      },
+      "observations": [
+        "A woman in a blue sunhat bends beside a girl in a purple dress, both standing on the visitor side of low rope posts.",
+        "The brown animal has long upright ears, large hind feet, a heavy tail and a small joey visible in its pouch."
+      ],
+      "reviewedAt": "2026-10-29T11:39:34.041194+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-wallaby-walkthrough-visit.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-footprint-scavenger-card",
+      "status": "reviewed-from-image",
+      "sourceSha256": "4a239626117ca9fb0e75f3379fa589cdb5ab49fe2917b7e4be025876e430bd11",
+      "imageSha256": "4a239626117ca9fb0e75f3379fa589cdb5ab49fe2917b7e4be025876e430bd11",
+      "inputMetadataSha256": "5d864d7e680847732568c2e114c626ba5beef66534c9eb960e9f187eabdb1f99",
+      "inputContextSha256": "c51725fe1db60bf4355198088ce2228a187af7e34460b7f4e8202209e4f49a35",
+      "copy": {
+        "title": "Children Following Zoo Footprints",
+        "alt": "Three children compare a zoo activity card with large animal footprint shapes along a path.",
+        "description": "One child crouches to touch a print while another holds the card. An elephant habitat and tall giraffes appear beyond the fence."
+      },
+      "observations": [
+        "The three children have different hair, skin tones and clothes, including a purple jacket, green top and pale sunhat.",
+        "Four large footprint symbols run along the path, and the standing child holds a small card with animal pictures and checkboxes."
+      ],
+      "reviewedAt": "2026-10-29T11:39:34.041194+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-footprint-scavenger-card.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-child-visitor-wagon",
+      "status": "reviewed-from-image",
+      "sourceSha256": "bc106d20293db4ac42641e96643f77c78cde19118966e65995f731f1982aeefc",
+      "imageSha256": "bc106d20293db4ac42641e96643f77c78cde19118966e65995f731f1982aeefc",
+      "inputMetadataSha256": "6910948d1255dec12f1ab0b91968acb25818f66b3c0f28f718adfb99dd23178e",
+      "inputContextSha256": "9c70904a4444931bc24ddfb7ef1df4993c99701449dbe55bbbaf9834f3c6c2a0",
+      "copy": {
+        "title": "Father Pulling a Child in a Zoo Wagon",
+        "alt": "A father pulls a red wagon carrying a small child with a stuffed animal.",
+        "description": "The child sits inside the low wagon wearing a red top. A tiny giraffe tag hangs from the side as the father walks ahead holding the long handle."
+      },
+      "observations": [
+        "The adult has a bald head, short beard, pale blue polo and tan shorts; his entire figure is now visible.",
+        "The red four-wheel wagon carries a child with two small hair buns and a plush toy; a giraffe tag hangs from its side."
+      ],
+      "reviewedAt": "2026-10-29T11:52:59.304191+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-child-visitor-wagon.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-zoo-picnic-family",
+      "status": "reviewed-from-image",
+      "sourceSha256": "301dfe760c8ee1175c99a69a2d78b19245bd37579ce4c132d126f039a0e31777",
+      "imageSha256": "301dfe760c8ee1175c99a69a2d78b19245bd37579ce4c132d126f039a0e31777",
+      "inputMetadataSha256": "27873b250bc442fe0e71ce991fbf5748ea4cccc38e3c2a49ba5ecfb5e63278fe",
+      "inputContextSha256": "59e5ee9bf358e38bbcdabb96799840a16c82d0dea6515f152d35f5bbea019302",
+      "copy": {
+        "title": "Family Picnic at the Zoo",
+        "alt": "Four family members share lunch at a wooden picnic table with a giraffe sign.",
+        "description": "The gray-haired grandmother wears a blue floral blouse. Open lunchboxes, bread and small fruit pieces sit between the adults and children."
+      },
+      "observations": [
+        "The group includes a gray-curled grandmother, short-haired adult and two children in red and purple tops.",
+        "The entire brown picnic table and benches are visible, with a small giraffe panel attached to the table front."
+      ],
+      "reviewedAt": "2026-10-29T11:52:59.304191+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-zoo-picnic-family.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-animal-cafe-lunch",
+      "status": "reviewed-from-image",
+      "sourceSha256": "b8a3cf5ab0d61701058ad8f729b7e9801ff22f4138ab589e112c9fc32b3fcd47",
+      "imageSha256": "b8a3cf5ab0d61701058ad8f729b7e9801ff22f4138ab589e112c9fc32b3fcd47",
+      "inputMetadataSha256": "b324deec90e5b5f7ce51d3d1be1b2b3a6e582073457cece8d1ae062f8bd191e6",
+      "inputContextSha256": "942e3e5d959ff305314a8acfdb4cf1cccec67af211b7abe141d1273f1380e47a",
+      "copy": {
+        "title": "Friends Having Lunch at the Zoo",
+        "alt": "Two friends sit beneath a giraffe-topped parasol with a visitor map and drinks.",
+        "description": "An adult in a teal shirt holds a drink while the other studies the map. Giraffes and a viewing rail establish the cafe setting."
+      },
+      "observations": [
+        "Two casually dressed visitors sit at a small table beneath a green-and-cream parasol.",
+        "A decorative giraffe head tops the parasol; a real giraffe and zoo habitat are visible behind the seats."
+      ],
+      "reviewedAt": "2026-10-29T11:44:01.192088+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-animal-cafe-lunch.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-souvenir-plush-stall",
+      "status": "reviewed-from-image",
+      "sourceSha256": "d1cb480f6e1a5a82eb74d92f7d56bd66aa261a0edacd39e8218724e0a6957e83",
+      "imageSha256": "d1cb480f6e1a5a82eb74d92f7d56bd66aa261a0edacd39e8218724e0a6957e83",
+      "inputMetadataSha256": "a95bce8cbc9520704ac557f9017d67cb9b32bc1bcefdc3f577176db7865ac277",
+      "inputContextSha256": "19ce6084180a346ca92dc2e3c32f7d7399b937399dc857e4a635a4806cb91c0f",
+      "copy": {
+        "title": "Choosing a Plush Animal at the Zoo",
+        "alt": "A child points toward stuffed animals at a wooden zoo kiosk beside an older woman with glasses.",
+        "description": "Pandas, giraffes and elephants fill the shelves beneath a green awning. The companion has a short silver bob, terracotta jumpsuit and pale shoulder bag."
+      },
+      "observations": [
+        "The companion is now an older gray-bobbed woman with round glasses and terracotta clothing, clearly different from the previous purple-hoodie character.",
+        "The child in lime reaches toward the shelf containing gray elephants, with plush giraffes above and pandas along the side."
+      ],
+      "reviewedAt": "2026-10-29T11:52:59.304191+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-souvenir-plush-stall.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-animal-photo-board",
+      "status": "reviewed-from-image",
+      "sourceSha256": "8d6e434f60c31eeb215d630e2a82a5798a8f98851e2e7982a85a0a6d484c5bd5",
+      "imageSha256": "8d6e434f60c31eeb215d630e2a82a5798a8f98851e2e7982a85a0a6d484c5bd5",
+      "inputMetadataSha256": "592b49753d3c229be8af074f889c7338617c651cb633bd66160997316b20f954",
+      "inputContextSha256": "99e920ee2de8dc2ee143f7d72fe865c040dddf496ec1a970d7cc827dbdb5c232",
+      "copy": {
+        "title": "Elephant and Giraffe Photo Board",
+        "alt": "Two children put their faces through openings in an elephant-and-giraffe photo board.",
+        "description": "The animal bodies are printed on a freestanding wooden display. The children hold the side edges as they smile through the face holes."
+      },
+      "observations": [
+        "The left photo opening is inside a gray elephant face and the right inside a tall giraffe figure.",
+        "Two different children smile through oval face holes, with hands visible along the board edges and wooden supports below."
+      ],
+      "reviewedAt": "2026-10-29T11:44:01.192088+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-animal-photo-board.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-visitor-handwash-station",
+      "status": "reviewed-from-image",
+      "sourceSha256": "9a0ac0b3b0dc1305dfbc651a71893998a775dc971f00014723c428644b362e5c",
+      "imageSha256": "9a0ac0b3b0dc1305dfbc651a71893998a775dc971f00014723c428644b362e5c",
+      "inputMetadataSha256": "01024c4bdc497ae21861433fe8bb712a5103da68ebe734489b1288fea1977f87",
+      "inputContextSha256": "97636c7ec0f0b816ff67a62bb4da1c45dfe83a828187e6892812e749ab87b1e8",
+      "copy": {
+        "title": "Washing Hands After the Petting Area",
+        "alt": "A braided girl washes her hands in an outdoor sink beneath a goat pictogram.",
+        "description": "Water and small bubbles gather around her hands. The freestanding basin, soap dispenser and exposed support pipes remain clearly visible."
+      },
+      "observations": [
+        "The girl has one long dark braid, a red striped shirt, dark jeans and purple sneakers; her whole body is inside the source canvas.",
+        "The gray basin is supported by exposed pipes beside a brown post with a goat icon and blue soap dispenser."
+      ],
+      "reviewedAt": "2026-10-29T11:52:59.304191+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-visitor-handwash-station.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-gentle-goat-petting",
+      "status": "reviewed-from-image",
+      "sourceSha256": "96622763377a95734f9e8d4bad4d4608e7cdcce968bc19873631e535ebe6b981",
+      "imageSha256": "96622763377a95734f9e8d4bad4d4608e7cdcce968bc19873631e535ebe6b981",
+      "inputMetadataSha256": "f92ba6815fb4f0fe305f83c23c2835b8e2171808d63482974c9507c9e5aa81b1",
+      "inputContextSha256": "3311733e662f6010906a5dcf5ccd757585b4a16d68d50b38e4de40880202bf73",
+      "copy": {
+        "title": "Child and Adult in the Petting Area",
+        "alt": "A child in orange overalls gently pets a brown-and-white goat beside an adult.",
+        "description": "The child wears a green bucket hat and striped shirt. A dark denim jacket and pale trousers distinguish the adult standing beside the low wooden fence."
+      },
+      "observations": [
+        "The child has a ginger bob under a green bucket hat and rests one hand near the goat shoulder.",
+        "The adult now has dark skin, a shaved head, short beard and navy denim jacket; the goat has a white face stripe and two visible horns."
+      ],
+      "reviewedAt": "2026-10-29T11:52:59.304191+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-gentle-goat-petting.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-rainy-zoo-visit",
+      "status": "reviewed-from-image",
+      "sourceSha256": "871439e060274fe7e7d0c77a88843bdf10794506fbdde53c9d2aba276e2233a2",
+      "imageSha256": "871439e060274fe7e7d0c77a88843bdf10794506fbdde53c9d2aba276e2233a2",
+      "inputMetadataSha256": "8aa5a63fc6684cc6b4d61322e42e5562a85a891b2407ee78ef7e0dfdebe5e002",
+      "inputContextSha256": "8c4fdf928ee07c4f89981d7072469f6c0b2afaf95f3aa3dd519c8d6ba5528a59",
+      "copy": {
+        "title": "Rainy Visit to the Zoo",
+        "alt": "An adult and child in blue and yellow raincoats share a clear umbrella outside the zoo.",
+        "description": "Their bright ponchos reflect in a small puddle. A wooden ZOO arch and animal-picture signpost stand behind them."
+      },
+      "observations": [
+        "The adult wears a blue hooded poncho while the child wears a yellow hooded poncho and rain boots.",
+        "They share a transparent umbrella with visible ribs; a zoo entrance and pictogram signpost appear behind."
+      ],
+      "reviewedAt": "2026-10-29T11:44:01.192088+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-rainy-zoo-visit.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-refill-water-break",
+      "status": "reviewed-from-image",
+      "sourceSha256": "8c299fc9f1ab900c17844ad4265e242fbf82e432e167590bc777e5bce9c99205",
+      "imageSha256": "8c299fc9f1ab900c17844ad4265e242fbf82e432e167590bc777e5bce9c99205",
+      "inputMetadataSha256": "5bc01d5af58b31cccc2ca9ed332de946a7a4c7b68415609f49bc2c86aa48f095",
+      "inputContextSha256": "56ba1c91f314e10d33a09c9985891a7955295964272255ca0e25e600d12a5ce2",
+      "copy": {
+        "title": "Refilling a Bottle at the Zoo",
+        "alt": "A red-haired visitor fills a bottle at a water station beside a giraffe enclosure.",
+        "description": "The tall green dispenser carries a giraffe pictogram. The visitor wears a green shirt, gray shorts and a black backpack."
+      },
+      "observations": [
+        "A visitor with a long auburn ponytail holds a bottle below the spout of a tall green water refill post.",
+        "A giraffe pictogram marks the post and a tall giraffe stands behind a nearby habitat rail."
+      ],
+      "reviewedAt": "2026-10-29T11:44:01.192088+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-refill-water-break.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-zoo-birthday-table",
+      "status": "reviewed-from-image",
+      "sourceSha256": "dccedf2b36e011b92170bb5b676d9dc50aab8ec6405387bfe6478f73edea11df",
+      "imageSha256": "dccedf2b36e011b92170bb5b676d9dc50aab8ec6405387bfe6478f73edea11df",
+      "inputMetadataSha256": "5241830f9f96ecec34e43818101c7b1b77c2e67155cebc7b06f5ea5c5b28f04e",
+      "inputContextSha256": "63f25d9a1765bd029ac8c37b36b6cea7fe6ffdcf8cf420023f68c20d2705b70f",
+      "copy": {
+        "title": "Zoo Birthday Picnic",
+        "alt": "Three children wearing animal-themed party hats sit around a birthday cake at a zoo picnic table.",
+        "description": "A lion crown, elephant-ear hat and striped animal headband give each child a different look. An elephant and giraffe appear beyond the fence."
+      },
+      "observations": [
+        "Three children with different hair and skin tones sit at a brown picnic table, wearing different animal-style paper crowns.",
+        "A round animal-decorated cake and two bowls sit on the table; an elephant and giraffe are visible behind the fence."
+      ],
+      "reviewedAt": "2026-10-29T11:44:01.192088+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-zoo-birthday-table.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-night-lantern-tour",
+      "status": "reviewed-from-image",
+      "sourceSha256": "094047e4fadb47387147770baccda737bfbfeb9616f0df8c75e99710c016422b",
+      "imageSha256": "094047e4fadb47387147770baccda737bfbfeb9616f0df8c75e99710c016422b",
+      "inputMetadataSha256": "8b6bce0ef2b7ecac036f8829be4035a6e0ec5233ac9a1079a59195640023407b",
+      "inputContextSha256": "5a6f23d1e0dca3520c616d15fe829546a9245bda30388c640c154262fc19b8b8",
+      "copy": {
+        "title": "Lantern Tour Beside an Owl Enclosure",
+        "alt": "A guide carrying a lantern leads a woman and child beside an owl enclosure in black-and-white line art.",
+        "description": "The owl perches on a branch behind mesh. Boots, backpacks and the hanging lantern distinguish the three visitors along the path."
+      },
+      "observations": [
+        "Three walking people appear beside a tall mesh enclosure, with a lantern hanging from the front guide hand.",
+        "An owl perches on a branch inside the enclosure; the entire image is clean monochrome line art with open coloring regions."
+      ],
+      "reviewedAt": "2026-10-29T11:48:56.417895+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-night-lantern-tour.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-animal-playground-slide",
+      "status": "reviewed-from-image",
+      "sourceSha256": "983ceb118e1049c3797ed34a047634515d31ab5427b29d48518ca3b2feb38e62",
+      "imageSha256": "983ceb118e1049c3797ed34a047634515d31ab5427b29d48518ca3b2feb38e62",
+      "inputMetadataSha256": "7b0f2a158f416ccba253212d175e52d4dc006c32046255a46b6d424056ce552e",
+      "inputContextSha256": "2e5ce13da1681c8e74995f7ad0348ae431d6c16d33f71a4267e492bb983ca360",
+      "copy": {
+        "title": "Children at a Giraffe Playground Slide",
+        "alt": "Children climb and wait beside a giraffe-shaped playground slide in black-and-white line art.",
+        "description": "A long curved chute descends from the tall giraffe structure. Steps and handrails lead to the small platform above."
+      },
+      "observations": [
+        "The playground has a giraffe head above the slide and stairs with railings on the opposite side.",
+        "A child sits near the top and another stands at the bottom; bushes and a visitor rail provide a small zoo setting."
+      ],
+      "reviewedAt": "2026-10-29T11:48:56.417895+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-animal-playground-slide.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-schoolbus-zoo-arrival",
+      "status": "reviewed-from-image",
+      "sourceSha256": "36d58e4222082a348dc9c9b60a4191b51668b7c01015ec9e711c1b3caa06ce8c",
+      "imageSha256": "36d58e4222082a348dc9c9b60a4191b51668b7c01015ec9e711c1b3caa06ce8c",
+      "inputMetadataSha256": "38594a51f6d9a847407c5ef879c2210f79c7f83388b755ee5af862d172c75db8",
+      "inputContextSha256": "b294b5ff9ba49f78194ddb26dd7f5518e79a1df3f85d0623a66453cf4a17558b",
+      "copy": {
+        "title": "School Trip Arriving at the Zoo",
+        "alt": "A teacher and children step from a school bus beside a ZOO ARRIVAL sign in black-and-white line art.",
+        "description": "The open bus doorway fills one side of the scene. An elephant pictogram and distant habitat fence mark the arrival point."
+      },
+      "observations": [
+        "The image shows the bus doorway, one large wheel and three people stepping onto a path; the rest of the bus is outside the vignette.",
+        "The tall sign visibly reads ZOO ARRIVAL with an elephant pictogram, and a distant elephant stands behind the fence."
+      ],
+      "reviewedAt": "2026-10-29T11:48:56.417895+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-schoolbus-zoo-arrival.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-lost-and-found-plush",
+      "status": "reviewed-from-image",
+      "sourceSha256": "a88876e5650bb142e03052569796e5436d3f6288b81978ba531922ed75c3af69",
+      "imageSha256": "a88876e5650bb142e03052569796e5436d3f6288b81978ba531922ed75c3af69",
+      "inputMetadataSha256": "99965066ed6d628d2c633b599ae35242b3f5afd5d7b53ed235279e3c7008f6ae",
+      "inputContextSha256": "ebfbb15ecf628e2a729fbbe2b6a4af45e794300a492877d176be2707281228e8",
+      "copy": {
+        "title": "Returning a Lost Plush Penguin",
+        "alt": "A zoo attendant hands a plush penguin to a child across a guest-services counter in black-and-white line art.",
+        "description": "A mitten-and-toy pictogram marks the counter. The child reaches up with both hands while the attendant leans forward."
+      },
+      "observations": [
+        "The attendant wears a collared shirt and name badge and holds a small stuffed penguin toward the child.",
+        "A counter pictogram shows a mitten and teddy bear; giraffes and two visitors appear beyond the service area."
+      ],
+      "reviewedAt": "2026-10-29T11:48:56.417895+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-lost-and-found-plush.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-touchscreen-map-kiosk",
+      "status": "reviewed-from-image",
+      "sourceSha256": "a168a083427ab43cef0799a8a50046aadfaaead7f264a2b886d49eb03f0597fc",
+      "imageSha256": "a168a083427ab43cef0799a8a50046aadfaaead7f264a2b886d49eb03f0597fc",
+      "inputMetadataSha256": "545f065e1f656521a565cea14cbd5a1a8071650e41941ad03ee713798d79177a",
+      "inputContextSha256": "1ca37bfa385a2cbd79cb237cbec6d501b3e959e4199e6223e936794ead0fde64",
+      "copy": {
+        "title": "Visitors at a Zoo Map Kiosk",
+        "alt": "Two visitors stand beside a freestanding animal-picture map kiosk in black-and-white line art.",
+        "description": "The taller visitor points toward a circular animal symbol. A younger companion holds a folded map while both look at the roofed display."
+      },
+      "observations": [
+        "The tall visitor has short tousled hair, shorts and a backpack; the smaller visitor wears two plaits and holds a paper map.",
+        "The complete roofed kiosk has a plinth base and three large animal pictograms connected by simple route lines, without surrounding scenery."
+      ],
+      "reviewedAt": "2026-10-29T11:52:59.304191+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-touchscreen-map-kiosk.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-family-souvenir-photo",
+      "status": "reviewed-from-image",
+      "sourceSha256": "802841c13dcbd5afe3d3c472a3c239f8331972922fcd087d3b77e29f3ad56c0d",
+      "imageSha256": "802841c13dcbd5afe3d3c472a3c239f8331972922fcd087d3b77e29f3ad56c0d",
+      "inputMetadataSha256": "d9ac61fe2c532afd6219cbf61e6ee7b19a95b30a10bde8a784b333b10a162d8c",
+      "inputContextSha256": "a6e585dc1ea3738e9af4ebfb7c0d97b4b01ffce3524f999a70cd7f81de17a636",
+      "copy": {
+        "title": "Family Posing for a Zoo Photograph",
+        "alt": "A family of four poses on a curved animal-decorated bench before a tripod camera in black-and-white line art.",
+        "description": "The two children sit between the adults. Small animal silhouettes along the bench back reinforce the zoo setting."
+      },
+      "observations": [
+        "Four family members with different faces and hair sit or stand close together on a curved bench.",
+        "A small camera on a three-legged tripod is centered in front of the bench, whose back carries animal silhouette panels."
+      ],
+      "reviewedAt": "2026-10-29T11:48:56.417895+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-family-souvenir-photo.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-tactile-animal-panel",
+      "status": "reviewed-from-image",
+      "sourceSha256": "95491e84fc1544d25206f1a2fc7c00998fb40fc4973daf9c4529ce64e7a8d191",
+      "imageSha256": "95491e84fc1544d25206f1a2fc7c00998fb40fc4973daf9c4529ce64e7a8d191",
+      "inputMetadataSha256": "f2ed114d32df78fdd996d4d2c2c28702a07cb537df658095ae0ca680ed11664e",
+      "inputContextSha256": "b9b2d58e2f17326b34db6e643d823523e04341fbe74b0aadf6353a930f63939e",
+      "copy": {
+        "title": "Visitor Exploring an Elephant Relief Panel",
+        "alt": "A visitor with sunglasses and a white cane touches an elephant relief panel beside a child in black-and-white line art.",
+        "description": "The sloping panel stands at hand height near an elephant viewing area. The child watches the adult trace the raised animal shape."
+      },
+      "observations": [
+        "The adult wears dark sunglasses and holds a long cane while extending the other hand to a raised elephant silhouette.",
+        "A child with a ponytail and backpack stands to the left; an elephant is visible beyond the zoo railing."
+      ],
+      "reviewedAt": "2026-10-29T11:48:56.417895+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-tactile-animal-panel.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-child-activity-clipboard",
+      "status": "reviewed-from-image",
+      "sourceSha256": "22e7f7f320a743baa10c92c1c50ccbb888a24cb2cc5688990daebe0987c05ffa",
+      "imageSha256": "22e7f7f320a743baa10c92c1c50ccbb888a24cb2cc5688990daebe0987c05ffa",
+      "inputMetadataSha256": "bf8dffeb0d676f637b15de3f8d1f7bbab6710d5848171f67a2263f1c215a777a",
+      "inputContextSha256": "0cb1d4f69f890e219200f9cf3c17bd2b522d0f3c4b6012acd353db81a70de6ef",
+      "copy": {
+        "title": "Zoo Activity Clipboard and Binoculars",
+        "alt": "An animal checklist clipboard, pencil and binoculars form a black-and-white outline still life.",
+        "description": "Elephant, penguin, giraffe and butterfly pictures sit beside four empty checkboxes. The tilted clipboard and binoculars remain separate, easy-to-see objects."
+      },
+      "observations": [
+        "The new source is an object-only composition with no child or hands, unlike the rejected version.",
+        "Four animal pictograms and empty checkboxes appear on the complete clipboard, with a large pencil to the left and binoculars to the right."
+      ],
+      "reviewedAt": "2026-10-29T11:52:59.304191+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-child-activity-clipboard.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-exit-souvenir-poster",
+      "status": "reviewed-from-image",
+      "sourceSha256": "2b2d93e8029cddbec3fd3b6f06d2b5642b435e63f0d395fb7ea4b5c9a65c859a",
+      "imageSha256": "2b2d93e8029cddbec3fd3b6f06d2b5642b435e63f0d395fb7ea4b5c9a65c859a",
+      "inputMetadataSha256": "9a21fce5df1a7ae4c5a735b0384ad4e7f013849538f08515117861fa384ebc4c",
+      "inputContextSha256": "1a2cd1fb4dd69c2f76c33d37e2cf880666ac5a0793128996dac42e15676e35e0",
+      "copy": {
+        "title": "Waving Goodbye at the Zoo Exit",
+        "alt": "A child carrying a souvenir bag waves beside an exit arch with a right-pointing arrow in black-and-white line art.",
+        "description": "Animal faces decorate the backpack and bag. A giraffe and elephant appear beyond the simple gate."
+      },
+      "observations": [
+        "The smiling curly-haired child wears shorts and a backpack and raises one hand toward the arch.",
+        "A small bag with a lion-face emblem sits at the child side; the arch has an arrow above the opening and a zoo habitat behind."
+      ],
+      "reviewedAt": "2026-10-29T11:48:56.417895+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-exit-souvenir-poster.webp",
+      "references": []
+    },
+    {
+      "id": "zoo-visit-quiet-viewing-rest-bench",
+      "status": "reviewed-from-image",
+      "sourceSha256": "2c13fb797426b1bbda6fd51f59a66c0910435c3db03dd816fbae8cf8ec0c236e",
+      "imageSha256": "2c13fb797426b1bbda6fd51f59a66c0910435c3db03dd816fbae8cf8ec0c236e",
+      "inputMetadataSha256": "f49610d1f8ba62cc8c6480a74ae0a3bac1db2b9bc68fca5a9f5ec69d3dbab738",
+      "inputContextSha256": "5e3c2fa2d521771f32586434d043365b9310bd1917c01cbedf0143f2c3ed5214",
+      "copy": {
+        "title": "Resting Beside the Tortoise Habitat",
+        "alt": "An older visitor and child sit on a bench beside two tortoises in black-and-white line art.",
+        "description": "The tortoises occupy a raised grassy area behind a low wall. The wide bench scene leaves generous open shapes for coloring."
+      },
+      "observations": [
+        "The older visitor in a brimmed cap sits beside a small child on a wood-slatted bench.",
+        "Two large tortoises stand beyond a low wall with grass tufts and a broad tree behind."
+      ],
+      "reviewedAt": "2026-10-29T11:48:56.417895+00:00",
+      "inspectedImage": "/catalog/wave_703/zoo-visit-quiet-viewing-rest-bench.webp",
+      "references": []
     }
   ]
 }
