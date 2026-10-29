@@ -286,15 +286,40 @@
         "border",
         "zoo"
       ],
-      "previewFingerprint": "3eb79d6acd9ff6be2fc2241898807240f284b9ebdeb5a3b88e586dd74ee01b65",
+      "previewFingerprint": "d7c78b55ac0dd482920f94385df7f4406fd1375cde8b3c1d21b7736ac8f70ec6",
       "approval": {
         "ownerThreadId": "01a16729-f3e9-7a33-98d9-1625f995e8c1",
         "ownerMessageId": "01a187cb-e06a-7072-b701-52df60939840",
         "reaffirmedMessageId": "01a187ef-6483-7c83-a992-a3612b8cfba5",
         "approvedAt": "2026-10-29T13:31:20.877859+00:00",
-        "previewFingerprint": "3eb79d6acd9ff6be2fc2241898807240f284b9ebdeb5a3b88e586dd74ee01b65",
+        "previewFingerprint": "d7c78b55ac0dd482920f94385df7f4406fd1375cde8b3c1d21b7736ac8f70ec6",
         "kind": "OWNER_APPROVED_PREVIEWED_THREE_COLLECTIONS",
         "exactInstruction": "tamam begendim hepsini guzel title ve anlamli aciklamalarla yayina al arkada da uretim devam etsin ayni kalitede alakali"
+      },
+      "catalogCategoryCorrection": {
+        "reason": "Producer group labels were not registered browse groups; map to existing semantically matching site categories, retaining all source pixels and all150 image titles/alt/descriptions.",
+        "changes": [
+          {
+            "slug": "background",
+            "previousCluster": "Backgrounds & textures",
+            "previousPrimary": "Design elements",
+            "registeredGroup": "Arts & entertainment"
+          },
+          {
+            "slug": "border",
+            "previousCluster": "Design elements",
+            "previousPrimary": "Design elements",
+            "registeredGroup": "Arts & entertainment"
+          },
+          {
+            "slug": "zoo",
+            "previousCluster": "Animals",
+            "previousPrimary": "Animals",
+            "registeredGroup": "Animals & nature"
+          }
+        ],
+        "previousFingerprint": "3eb79d6acd9ff6be2fc2241898807240f284b9ebdeb5a3b88e586dd74ee01b65",
+        "reviewedAt": "2026-10-29T14:13:38.605Z"
       }
     }
   ],
