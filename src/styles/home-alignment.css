@@ -74,12 +74,25 @@
 .home-recent {
   container-type: inline-size;
 }
+.home-recent > p {
+  color: #405d83;
+  line-height: 1.55;
+  margin: 0 0 22px;
+}
+.home-recent-subject {
+  color: #225db3;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+.home-recent-subject:hover {
+  text-decoration: underline;
+}
 .home-recent .home-recent-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-}
-.home-recent-grid > :nth-child(n + 7) {
-  display: none;
 }
 @container (min-width: 460px) {
   .home-recent .home-recent-grid {
@@ -90,23 +103,16 @@
   .home-recent .home-recent-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .home-recent-grid > :nth-child(-n + 9) {
-    display: flex;
-  }
-}
-@container (min-width: 940px) {
-  .home-recent .home-recent-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-  .home-recent-grid > :nth-child(-n + 12) {
-    display: flex;
-  }
 }
 @container (min-width: 1180px) {
   .home-recent .home-recent-grid {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
-  .home-recent-grid > :nth-child(-n + 15) {
-    display: flex;
+}
+@container (min-width: 460px) and (max-width: 699px) {
+  .home-recent-grid > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    width: calc((100% - var(--gallery-gap, 16px)) / 2);
+    justify-self: center;
   }
 }

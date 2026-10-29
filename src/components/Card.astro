@@ -2,7 +2,7 @@
 import CardFileActions from './CardFileActions.astro';
 import Icon from './Icon.astro';
 import ShareButton from './ShareButton.astro';
-const { item } = Astro.props;
+const { item, subjectLabel } = Astro.props;
 ---
 
 <article class="art-card" data-id={item.id}>
@@ -20,6 +20,7 @@ const { item } = Astro.props;
     />
   </a>
   <div class="card-body">
+    {subjectLabel && <a class="home-recent-subject" href={`/clipart/${item.topic}/`}>{subjectLabel}</a>}
     <a class="card-title" href={`/art/${item.id}/`}>
       {item.title}
     </a>

@@ -58,7 +58,11 @@ try {
             .length,
         }));
         assert.ok(recent.visible > 0, 'Recently Added has visible artwork');
-        assert.equal(recent.visible % recent.columns, 0, 'Recently Added has complete rows');
+        assert.ok(
+          recent.visible % recent.columns === 0 ||
+            (recent.columns === 2 && recent.visible % 2 === 1),
+          'Recently Added has complete rows or a centered final card',
+        );
       }
       if (route.startsWith('/edit/'))
         await page.locator('.uc-canvas [data-layer]').first().waitFor();
