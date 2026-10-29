@@ -22,7 +22,7 @@ const companionLabel = snapshot.companions.length ? 'Matching fruit' : 'Companio
       <h2 id="related-heading">More like this</h2>
       <p class="related-intro">
         {hasCards
-          ? 'Explore another take on the subject, or find a design that pairs with it.'
+          ? 'Explore similar artwork and more designs from this collection.'
           : 'Explore the collection for more artwork and ideas.'}
       </p>
     </div>
@@ -92,7 +92,7 @@ const companionLabel = snapshot.companions.length ? 'Matching fruit' : 'Companio
         >
           <div class="related-group-heading">
             <h3>More from this collection</h3>
-            <p>More reviewed designs from the same collection, ranked by style and composition.</p>
+            <p>More designs from the same collection, ranked by style and composition.</p>
           </div>
           <div class="related-grid">
             {collection.map((card) => (

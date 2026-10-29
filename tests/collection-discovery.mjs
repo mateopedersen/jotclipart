@@ -41,3 +41,30 @@ test('draft and unknown content cannot generate empty collection cards', () =>
     ]),
     [],
   ));
+
+test('updated collection cover uses the newest artwork and its own metadata', () => {
+  const recent = {
+    id: 'recent',
+    topic: 'flower',
+    published: true,
+    indexable: true,
+    thumb: '/new.webp',
+    webp: '/new.webp',
+    alt: 'A yellow flower.',
+    title: 'Yellow Flower',
+  };
+  const [card] = latestSubjectCollections(subjects, [recent]);
+  assert.equal(card.latestArtworkId, recent.id);
+  assert.equal(card.sample.thumb, recent.webp);
+  assert.equal(card.sample.alt, recent.alt);
+  assert.equal(card.sample.title, recent.title);
+  const [fallback] = latestSubjectCollections(subjects, [{ ...recent, alt: '' }]);
+  assert.deepEqual(fallback.sample, subjects[1].sample);
+});
+
+test('collection limit is validated before returning any cards', () => {
+  const items = [{ id: 'a', topic: 'flower' }];
+  assert.deepEqual(latestSubjectCollections(subjects, items, 0), []);
+  for (const limit of [-1, 1.5, NaN])
+    assert.throws(() => latestSubjectCollections(subjects, items, limit));
+});

@@ -1,7 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
-import { relatedCollectionSlugs } from '../src/lib/related-collections.ts';
+import {
+  relatedCollectionSlugs,
+  suggestCollectionRelations,
+} from '../src/lib/related-collections.ts';
 const json = (name) =>
   JSON.parse(readFileSync(new URL('../data/' + name, import.meta.url), 'utf8'));
 const art = json('art.json').filter((item) => item.published && item.indexable);
@@ -9,6 +12,41 @@ const relations = json('topic-relations.json');
 const counts = new Map();
 for (const item of art) counts.set(item.topic, (counts.get(item.topic) || 0) + 1);
 const eligible = new Set([...counts].filter(([, count]) => count >= 50).map(([slug]) => slug));
+
+test('new relation suggestions use reviewed edges and never publish themselves', () => {
+  const map = {
+    newTopic: ['apple'],
+    apple: ['pear'],
+    pear: ['newTopic'],
+    plum: ['apple'],
+    hidden: ['newTopic'],
+  };
+  const visible = new Set(['newTopic', 'apple', 'pear', 'plum']);
+  assert.deepEqual(suggestCollectionRelations('newTopic', map, visible), [
+    { slug: 'pear', evidence: ['reviewed incoming link'] },
+    { slug: 'plum', evidence: ['shared reviewed links: apple'] },
+  ]);
+  assert.deepEqual(relatedCollectionSlugs('newTopic', map, visible), ['apple']);
+  assert.deepEqual(suggestCollectionRelations('newTopic', map, visible, 0), []);
+  assert.deepEqual(suggestCollectionRelations('hidden', map, visible), []);
+  assert.throws(() => suggestCollectionRelations('newTopic', map, visible, -1));
+});
+
+test('new topics can propose same-category candidates without publishing links', () => {
+  const map = { apple: ['pear'] };
+  const visible = new Set(['new-apple', 'apple', 'pear', 'airplane']);
+  const categories = new Map([
+    ['new-apple', 'Food'],
+    ['apple', 'Food'],
+    ['pear', 'Food'],
+    ['airplane', 'Travel'],
+  ]);
+  assert.deepEqual(suggestCollectionRelations('new-apple', map, visible, 6, categories), [
+    { slug: 'apple', evidence: ['same catalog category: Food; review before linking'] },
+    { slug: 'pear', evidence: ['same catalog category: Food; review before linking'] },
+  ]);
+  assert.deepEqual(relatedCollectionSlugs('new-apple', map, visible), []);
+});
 
 test('every published subject has reviewed, distinct, indexable collection destinations', () => {
   for (const source of eligible) {

@@ -1,8 +1,8 @@
 import { artworkCardSummary, CARD_SUMMARY_VERSION } from './summaries';
 import { normalize, safeAsset, type ArtworkInput, type Profile } from './normalize';
-import { companionSubjects, REGISTERED_TOPICS, TAXONOMY_VERSION } from './taxonomy';
+import { companionSubjects, REGISTERED_TOPICS, TAXONOMY_VERSION, words } from './taxonomy';
 import { CLASSIFIER_VERSION } from './normalize';
-export const ALGORITHM_VERSION = 'uc-related-5';
+export const ALGORITHM_VERSION = 'uc-related-6';
 export const CANDIDATE_LIMIT = 240;
 export const BUCKET_LIMIT = 96;
 export const ALTERNATIVE_LIMIT = 56;
@@ -46,6 +46,60 @@ export interface Snapshot {
 function intersection(a: string[], b: string[]) {
   return a.filter((value) => b.includes(value));
 }
+// Match meaningful catalog title details only after the strict
+// subject/scene checks. Never infer an identity or a cross-topic relationship.
+const genericTitleWords = new Set([
+  'and',
+  'the',
+  'with',
+  'for',
+  'clipart',
+  'illustration',
+  'drawing',
+  'design',
+  'color',
+  'colour',
+  'black',
+  'white',
+  'watercolor',
+  'watercolour',
+  'outline',
+  'art',
+  'image',
+  'style',
+  'cartoon',
+  'realistic',
+  'printable',
+  'page',
+]);
+const titleDetailCache = new WeakMap<Profile, Set<string>>();
+function titleDetails(profile: Profile): Set<string> {
+  const cached = titleDetailCache.get(profile);
+  if (cached) return cached;
+  const subjectWords = new Set(
+    (profile.subject?.terms ?? []).flatMap((term) => words(term).split(' ')),
+  );
+  const details = new Set(
+    words(profile.item.title)
+      .split(' ')
+      .filter(
+        (word) => word.length >= 3 && !genericTitleWords.has(word) && !subjectWords.has(word),
+      ),
+  );
+  titleDetailCache.set(profile, details);
+  return details;
+}
+function titleDetailMatch(source: Profile, other: Profile) {
+  const sourceDetails = titleDetails(source),
+    otherDetails = titleDetails(other);
+  const commonDetails = [...sourceDetails].filter((word) => otherDetails.has(word));
+  return {
+    commonDetails,
+    score: Math.round(
+      (100 * commonDetails.length) / Math.max(1, new Set([...sourceDetails, ...otherDetails]).size),
+    ),
+  };
+}
 function baseEligible(source: Profile, other: Profile) {
   return (
     source.eligible &&
@@ -77,10 +131,12 @@ export function rank(source: Profile, other: Profile, companion = false): Ranked
   // Fixed denominator. Unknown attributes add zero, never renormalize to a perfect score.
   const composition =
     shared.length / Math.max(1, new Set([...source.composition, ...other.composition]).size);
+  const { commonDetails, score: detailScore } = titleDetailMatch(source, other);
   const score =
     (sameSubject ? 400 : 200) +
     (technique ? 240 : family ? 110 : 0) +
     Math.round(composition * 160) +
+    detailScore +
     (depiction ? 80 : 0) +
     (source.colorMode !== 'unknown' && source.colorMode === other.colorMode ? 60 : 0) +
     40 +
@@ -88,6 +144,7 @@ export function rank(source: Profile, other: Profile, companion = false): Ranked
   const reasons = [companion ? 'compatible_subject_same_style' : 'same_subject'];
   if (shared.length) reasons.push('similar_composition');
   if (technique || family) reasons.push(technique ? 'same_technique' : 'similar_style');
+  if (commonDetails.length) reasons.push('shared_title_details');
   return { profile: other, score, tier: depiction ? 0 : 1, reasons };
 }
 function keys(profile: Profile) {
@@ -176,10 +233,42 @@ export class RelatedIndex {
   }
   private removeFromIndex(profile: Profile) {
     this.digest ^= BigInt(`0x${profile.fingerprint}`);
-    for (const key of [...keys(profile), `collection:${profile.item.topic}`]) {
-      const next = (this.buckets.get(key) ?? []).filter((id) => id !== profile.item.id);
+    const removedKeys = new Set([...keys(profile), `collection:${profile.item.topic}`]);
+    const saturated = new Set<string>();
+    for (const key of removedKeys) {
+      const previous = this.buckets.get(key) ?? [];
+      if (previous.length === BUCKET_LIMIT && previous.includes(profile.item.id))
+        saturated.add(key);
+      const next = previous.filter((id) => id !== profile.item.id);
       if (next.length) this.buckets.set(key, next);
       else this.buckets.delete(key);
+    }
+    // Postings are intentionally capped. Refill vacated slots from existing
+    // profiles so withdrawing or changing a popular item cannot permanently
+    // hide older eligible candidates from a full bucket.
+    if (!saturated.size) return;
+    const candidates = [...this.profiles.values()]
+      .filter((candidate) => candidate.item.id !== profile.item.id)
+      .sort(
+        (a, b) =>
+          (b.item.createdAt ?? '').localeCompare(a.item.createdAt ?? '') ||
+          b.item.id.localeCompare(a.item.id),
+      );
+    for (const candidate of candidates) {
+      const candidateKeys = [
+        ...keys(candidate),
+        ...(candidate.publicationEligible && REGISTERED_TOPICS.has(candidate.item.topic ?? '')
+          ? [`collection:${candidate.item.topic}`]
+          : []),
+      ];
+      for (const key of candidateKeys) {
+        if (!saturated.has(key)) continue;
+        const bucket = this.buckets.get(key) ?? [];
+        if (bucket.length < BUCKET_LIMIT && !bucket.includes(candidate.item.id)) {
+          bucket.push(candidate.item.id);
+          this.buckets.set(key, bucket);
+        }
+      }
     }
   }
   remove(id: string, revision: number): boolean {
@@ -311,6 +400,7 @@ export class RelatedIndex {
               ? 110
               : 0) +
           shared.length * 40 +
+          titleDetailMatch(source, p).score +
           (source.colorMode !== 'unknown' && source.colorMode === p.colorMode ? 60 : 0),
         reasons: ['same_reviewed_collection'],
       });

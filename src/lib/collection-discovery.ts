@@ -9,6 +9,11 @@ export interface CollectionArtwork {
   topic: string;
   published?: boolean;
   indexable?: boolean;
+  thumb?: string;
+  thumbSrcSet?: string;
+  webp?: string;
+  alt?: string;
+  title?: string;
 }
 /** Input artwork is already sorted by the site's canonical publication order. */
 export function latestSubjectCollections(
@@ -16,6 +21,8 @@ export function latestSubjectCollections(
   orderedArt: CollectionArtwork[],
   limit = 8,
 ) {
+  if (!Number.isSafeInteger(limit) || limit < 0) throw new Error('Invalid collection limit');
+  if (limit === 0) return [];
   const bySlug = new Map(subjects.map((subject) => [subject.slug, subject]));
   const seen = new Set<string>();
   const result = [];
@@ -28,13 +35,19 @@ export function latestSubjectCollections(
       slug: subject.slug,
       name: subject.name,
       count: subject.count,
-      sample: {
-        thumb: subject.sample.thumb,
-        thumbSrcSet: subject.sample.thumbSrcSet,
-        webp: subject.sample.webp,
-        alt: subject.sample.alt,
-        title: subject.sample.title,
-      },
+      // The cover should represent the update being announced. Keep the
+      // source's own text and assets together; an incomplete record cannot
+      // donate just its image to a different record's metadata.
+      sample:
+        art.thumb && art.webp && art.alt && art.title
+          ? {
+              thumb: art.thumb,
+              thumbSrcSet: art.thumbSrcSet,
+              webp: art.webp,
+              alt: art.alt,
+              title: art.title,
+            }
+          : { ...subject.sample },
       latestArtworkId: art.id,
       href: `/clipart/${subject.slug}/`,
     });

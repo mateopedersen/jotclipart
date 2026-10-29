@@ -415,6 +415,8 @@ try {
     'T15 deployed revision mismatch hides stale cards',
     'T22 slow service, retry, failure isolation',
   );
+  await page.goto(`${base}/art/${reference}/`, { waitUntil: 'domcontentloaded' });
+  await expect(page.locator('[data-related-root]')).toHaveAttribute('data-ready', 'true');
   const renderedSnapshot = JSON.parse(await page.locator('[data-related-snapshot]').textContent());
   const failureExample = renderedSnapshot.alternatives[0];
   const firstThumb = failureExample.id;
@@ -428,6 +430,7 @@ try {
   ]);
   for (const url of failedUrls) await page.route(new URL(url, base).href, (route) => route.abort());
   await page.goto(`${base}/art/${reference}/`, { waitUntil: 'networkidle' });
+  await expect(page.locator('[data-related-root]')).toHaveAttribute('data-ready', 'true');
   const failed = page.locator(`[data-related-id="${firstThumb}"]`);
   await failed.scrollIntoViewIfNeeded();
   await expect(failed.locator('.related-image-error')).toBeVisible();

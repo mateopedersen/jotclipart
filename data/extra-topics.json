@@ -2900,5 +2900,505 @@
     "target_original_artworks": 50,
     "focus_note": "Explore zoo visits through animal viewing, family outings, entrance signs and printable line drawings of visitor activities.",
     "supplemental": true
+  },
+  {
+    "id": 521,
+    "keyword": "Shapes clipart",
+    "slug": "shapes",
+    "cluster": "School & learning",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore geometric shapes in a range of colors and materials, from stitched triangles and faceted polygons to three-dimensional solids and outline drawings.",
+    "supplemental": true
+  },
+  {
+    "id": 522,
+    "keyword": "Key clipart",
+    "slug": "key",
+    "cluster": "School & learning",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore keys in everyday scenes, including house keys, lock mechanisms, decorative pendants, car fobs and people using or finding keys.",
+    "supplemental": true
+  },
+  {
+    "id": 523,
+    "keyword": "Number 10 clipart",
+    "slug": "10",
+    "cluster": "School & learning",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Find the number 10 in styles ranging from bold black and varsity outlines to flowers, foil balloons, watercolor and textured decorative numerals.",
+    "supplemental": true
+  },
+  {
+    "id": 524,
+    "keyword": "Arrow clipart",
+    "slug": "arrow",
+    "cluster": "Arts & entertainment",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Browse arrows in many forms, from colorful directional symbols and curved signs to archery scenes, maps and hand-drawn markings.",
+    "supplemental": true
+  },
+  {
+    "id": 525,
+    "keyword": "1st clipart",
+    "slug": "1st",
+    "cluster": "Family & celebrations",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Celebrate first milestones with drawings of first birthdays, school days, hobbies and keepsakes, along with first-place trophies and ribbons.",
+    "supplemental": true
+  },
+  {
+    "id": 526,
+    "keyword": "Number 60 clipart",
+    "slug": "60",
+    "cluster": "School & learning",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore the number 60 in colorful decorative styles, including floral, metallic, watercolor and fabric designs alongside black-and-white lettering.",
+    "supplemental": true
+  },
+  {
+    "id": 527,
+    "keyword": "Copyright clipart",
+    "slug": "copyright",
+    "cluster": "Business & money",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Browse copyright symbols and creative-work scenes, including decorative emblems, books, documents, photography and illustration tools.",
+    "supplemental": true
+  },
+  {
+    "id": 528,
+    "keyword": "Yes clipart",
+    "slug": "yes",
+    "cluster": "School & learning",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore YES lettering, checkmarks, speech bubbles and everyday scenes of people expressing agreement.",
+    "supplemental": true
+  },
+  {
+    "id": 529,
+    "keyword": "Snowflakes clipart",
+    "slug": "snowflakes",
+    "cluster": "Nature & elements",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Discover icy snow crystals, handcrafted snowflake ornaments and cozy winter scenes, from paper crafts to snowy accessories.",
+    "supplemental": true
+  },
+  {
+    "id": 530,
+    "keyword": "1990s clipart",
+    "slug": "90s",
+    "cluster": "Arts & entertainment",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore 1990s-inspired everyday objects, from cassette players and floppy disks to colorful clothing, games and accessories.",
+    "supplemental": true
+  },
+  {
+    "id": 531,
+    "keyword": "Yellow clipart",
+    "slug": "yellow",
+    "cluster": "Arts & entertainment",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Browse yellow objects, flowers, food and vehicles alongside outline drawings ready to color.",
+    "supplemental": true
+  },
+  {
+    "id": 532,
+    "keyword": "Umbrella clipart",
+    "slug": "umbrella",
+    "cluster": "Clothing & accessories",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore umbrellas and parasols in rainy-day scenes, beach settings, craft projects and unexpected everyday designs.",
+    "supplemental": true
+  },
+  {
+    "id": 533,
+    "keyword": "Yarn clipart",
+    "slug": "yarn",
+    "cluster": "Arts & entertainment",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore yarn crafts and tools, from knitting, crochet and weaving to colorful skeins, fiber animals and decorative projects.",
+    "supplemental": true
+  },
+  {
+    "id": 534,
+    "keyword": "Chef clipart",
+    "slug": "chef",
+    "cluster": "People & activities",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore cooks and chefs preparing meals, baking, serving food and working with ingredients and kitchen tools.",
+    "supplemental": true
+  },
+  {
+    "id": 535,
+    "keyword": "Ear clipart",
+    "slug": "ear",
+    "cluster": "People & activities",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore ear illustrations, listening gestures, earrings, protective equipment and a variety of in-ear devices.",
+    "supplemental": true
+  },
+  {
+    "id": 536,
+    "keyword": "Quiet clipart",
+    "slug": "quiet",
+    "cluster": "School & learning",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Find quiet signs, listening gestures, peaceful scenes and illustrations for reading or resting spaces.",
+    "supplemental": true
+  },
+  {
+    "id": 537,
+    "keyword": "Dinosaur clipart",
+    "slug": "dinosaur",
+    "cluster": "Animals & nature",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore dinosaurs with feathers, horns, plates and long necks, plus fossil displays, playful characters and dinosaur crafts.",
+    "supplemental": true
+  },
+  {
+    "id": 538,
+    "keyword": "Notebook clipart",
+    "slug": "notebook",
+    "cluster": "School & learning",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore notebooks for sketches, study, field observations and creative projects, with bindings, tools and everyday writing scenes.",
+    "supplemental": true
+  },
+  {
+    "id": 539,
+    "keyword": "Xylophone clipart",
+    "slug": "xylophone",
+    "cluster": "Arts & entertainment",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore xylophones and other bar percussion instruments in music lessons, performances, crafts and playful scenes.",
+    "supplemental": true
+  },
+  {
+    "id": 540,
+    "keyword": "Library clipart",
+    "slug": "library",
+    "cluster": "School & learning",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore library spaces and services, from book displays and reading areas to community programs, archives and mobile collections.",
+    "supplemental": true
+  },
+  {
+    "id": 541,
+    "keyword": "Sun clipart",
+    "slug": "sun",
+    "cluster": "Nature & elements",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Find smiling sun characters, warm landscapes, decorative sun motifs and illustrations inspired by the sun and sky.",
+    "supplemental": true
+  },
+  {
+    "id": 542,
+    "keyword": "Easter clipart",
+    "slug": "easter",
+    "cluster": "Family & celebrations",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore Easter eggs, spring flowers, celebration foods, religious symbols and playful seasonal scenes.",
+    "supplemental": true
+  },
+  {
+    "id": 543,
+    "keyword": "UFO clipart",
+    "slug": "ufo",
+    "cluster": "Space & science",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore imaginative flying saucers, spacecraft concepts, alien characters and UFO-themed toys and crafts.",
+    "supplemental": true
+  },
+  {
+    "id": 544,
+    "keyword": "Doctor clipart",
+    "slug": "doctor",
+    "cluster": "People & activities",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore doctors and clinicians in patient visits, medical workspaces, care activities and illustrations of medical tools.",
+    "supplemental": true
+  },
+  {
+    "id": 545,
+    "keyword": "Jellyfish clipart",
+    "slug": "jellyfish",
+    "cluster": "Animals & nature",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Discover colorful jellyfish illustrations, underwater observation scenes, playful characters and jellyfish-inspired crafts.",
+    "supplemental": true
+  },
+  {
+    "id": 546,
+    "keyword": "House clipart",
+    "slug": "house",
+    "cluster": "Places & travel",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore homes of many shapes, from cozy cabins and townhouses to treehouses, houseboats and architectural drawings.",
+    "supplemental": true
+  },
+  {
+    "id": 547,
+    "keyword": "Megaphones clipart",
+    "slug": "megaphones",
+    "cluster": "People & activities",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore megaphones and speaking cones in announcements, sports, community events and creative projects.",
+    "supplemental": true
+  },
+  {
+    "id": 548,
+    "keyword": "Teacher clipart",
+    "slug": "teacher",
+    "cluster": "School & learning",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Find teachers and learners sharing lessons in reading, science, art, music, sports and everyday skills.",
+    "supplemental": true
+  },
+  {
+    "id": 549,
+    "keyword": "Unicorn clipart",
+    "slug": "unicorn",
+    "cluster": "Animals & nature",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore unicorns in playful and detailed illustrations, from starry galloping figures to toys, crafts and gentle storybook scenes.",
+    "supplemental": true
+  },
+  {
+    "id": 550,
+    "keyword": "Eyes clipart",
+    "slug": "eyes",
+    "cluster": "People & activities",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Discover eyes in expressive drawings, vision-themed scenes, creative projects and playful characters.",
+    "supplemental": true
+  },
+  {
+    "id": 551,
+    "keyword": "911 Emergency clipart",
+    "slug": "911",
+    "cluster": "People & activities",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore 911 emergency illustrations featuring dispatchers, police officers, firefighters, rescue equipment and calls for help.",
+    "supplemental": true
+  },
+  {
+    "id": 552,
+    "keyword": "Zombie clipart",
+    "slug": "zombie",
+    "cluster": "Halloween",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore zombies in playful scenes, from music and crafts to gardening, sports and everyday adventures.",
+    "supplemental": true
+  },
+  {
+    "id": 553,
+    "keyword": "Picture Frame clipart",
+    "slug": "frame",
+    "cluster": "Arts & entertainment",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore single picture frames, decorative borders and framing activities, from ornate ovals to modern display frames.",
+    "supplemental": true
+  },
+  {
+    "id": 554,
+    "keyword": "Photo Collage Frames clipart",
+    "slug": "frames",
+    "cluster": "Arts & entertainment",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Browse multi-opening frames and photo displays, from folding triptychs and gallery arrangements to keepsake collages.",
+    "supplemental": true
+  },
+  {
+    "id": 555,
+    "keyword": "Wedding clipart",
+    "slug": "wedding",
+    "cluster": "Family & celebrations",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore wedding-day details, from gowns and bouquets to ceremony settings, reception decorations and shared celebrations.",
+    "supplemental": true
+  },
+  {
+    "id": 556,
+    "keyword": "Marriage clipart",
+    "slug": "marriage",
+    "cluster": "Family & celebrations",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore shared moments and everyday activities, from cooking and gardening together to keepsakes, hobbies and quiet time.",
+    "supplemental": true
+  },
+  {
+    "id": 557,
+    "keyword": "September clipart",
+    "slug": "september",
+    "cluster": "Thanksgiving & Autumn",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Celebrate September with autumn leaves, garden harvests, school scenes and decorative month lettering.",
+    "supplemental": true
+  },
+  {
+    "id": 558,
+    "keyword": "Underwear clipart",
+    "slug": "underwear",
+    "cluster": "Clothing & accessories",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Browse everyday undergarments, sleepwear and laundry scenes, including illustrated clothing styles and care activities.",
+    "supplemental": true
+  },
+  {
+    "id": 559,
+    "keyword": "Bundles clipart",
+    "slug": "bundle",
+    "cluster": "Arts & entertainment",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Discover illustrated groupings of gifts, craft supplies, seasonal harvests and everyday objects.",
+    "supplemental": true
+  },
+  {
+    "id": 560,
+    "keyword": "Cartoon clipart",
+    "slug": "cartoon",
+    "cluster": "Arts & entertainment",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Meet playful cartoon animals, objects and fantasy characters in imaginative everyday scenes.",
+    "supplemental": true
+  },
+  {
+    "id": 561,
+    "keyword": "Personal Activities clipart",
+    "slug": "personal",
+    "cluster": "People & activities",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Find illustrations of personal routines, hobbies, keepsakes and everyday belongings.",
+    "supplemental": true
+  },
+  {
+    "id": 562,
+    "keyword": "ED138 clipart",
+    "slug": "ed138",
+    "cluster": "Space & science",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore imagined world designs labeled ED138 in astronomy-themed illustrations, models, crafts and playful characters.",
+    "supplemental": true
+  },
+  {
+    "id": 563,
+    "keyword": "Craft Cutting Projects clipart",
+    "slug": "cricut",
+    "cluster": "Arts & entertainment",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore illustrated craft projects and tools, including paper cutting, vinyl decals and heat-press scenes.",
+    "supplemental": true
+  },
+  {
+    "id": 564,
+    "keyword": "Graphic Design Tools clipart",
+    "slug": "coreldraw",
+    "cluster": "Arts & entertainment",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore illustrations of digital design tools, curved paths, color palettes, layouts and creative workstations.",
+    "supplemental": true
+  },
+  {
+    "id": 565,
+    "keyword": "Business and Commerce clipart",
+    "slug": "commercial",
+    "cluster": "Business & money",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore illustrations of shops, services, workspaces, equipment and everyday business activities.",
+    "supplemental": true
+  },
+  {
+    "id": 566,
+    "keyword": "Ganesha clipart",
+    "slug": "ganesh",
+    "cluster": "Family & celebrations",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore illustrations of Ganesha, devotional settings, festival decorations and creative activities.",
+    "supplemental": true
+  },
+  {
+    "id": 567,
+    "keyword": "Jesus clipart",
+    "slug": "jesus",
+    "cluster": "People & activities",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore illustrated scenes of Jesus, from the Nativity and teachings to moments of compassion and prayer.",
+    "supplemental": true
+  },
+  {
+    "id": 568,
+    "keyword": "Mundan clipart",
+    "slug": "mundan",
+    "cluster": "People & activities",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore illustrations of a child’s first haircut ceremony, family moments, ceremonial clothing and keepsakes.",
+    "supplemental": true
+  },
+  {
+    "id": 569,
+    "keyword": "Upanayanam clipart",
+    "slug": "upanayanam",
+    "cluster": "People & activities",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore illustrations of the Upanayanam ceremony, including sacred threads, family gatherings and traditional learning.",
+    "supplemental": true
+  },
+  {
+    "id": 570,
+    "keyword": "Cloud clipart",
+    "slug": "cloud",
+    "cluster": "Nature & elements",
+    "wave": "OWNER_51_AND_CLOUD_20261030",
+    "target_original_artworks": 50,
+    "focus_note": "Explore clouds in weather scenes, soft painted textures, character designs and black-and-white outlines.",
+    "supplemental": true
   }
 ]

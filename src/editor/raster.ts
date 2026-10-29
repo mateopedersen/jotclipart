@@ -154,7 +154,7 @@ export function featuredRasterCatalog() {
 export function rasterCatalog() {
   return (catalog ??= fetch('/studio-catalog.json')
     .then(async (response) => {
-      if (!response.ok) throw new Error('The clipart catalogue could not be loaded.');
+      if (!response.ok) throw new Error('The clipart catalog could not be loaded.');
       return (await response.json()) as RasterAsset[];
     })
     .catch((error) => {
@@ -211,7 +211,7 @@ export async function prepareProjectSources(doc: EditorDocument) {
     );
     if (!entry)
       throw new Error(
-        'A project source no longer matches this catalogue. The original project has been preserved.',
+        'A project source no longer matches this catalog. The original project has been preserved.',
       );
     await openRaster(entry);
   }

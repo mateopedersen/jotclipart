@@ -1,0 +1,1253 @@
+{
+  "schema": 1,
+  "topics": {
+    "10": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "7f3c5bedd2482b4e94bd72b456a5ea82ecd13d1d89da907f954afeed54a18f66",
+      "checkedAt": "2026-10-29T22:36:26.862Z",
+      "intro": "Find the number 10 in styles ranging from bold black and varsity outlines to flowers, foil balloons, watercolor and textured decorative numerals.",
+      "evidence": [
+        {
+          "id": "one-pulls-zero-number-friends-clipart",
+          "imageSha256": "3e0148b2878b8cbba91bd6e5dc7dcaf6dcc03545c58478597388a74fa373f907"
+        },
+        {
+          "id": "ten-electric-comic-lightning-clipart",
+          "imageSha256": "4bbfa3a0f1fa809804c2cffcdf339374beca7082b9168747e5d95569ccf825f0"
+        },
+        {
+          "id": "ten-lava-rock-cut-numerals-clipart",
+          "imageSha256": "6a8ed1fdec8abaa55000a98089a09df5a1fe209cc25c2dff6f1ca11d018c66be"
+        },
+        {
+          "id": "ten-white-bubble-ink-outline-black-and-white-clipart",
+          "imageSha256": "a205c201c854524b60e9676ad0420c0d453564f136a0b0e497f3c7a8af19cbea"
+        }
+      ]
+    },
+    "60": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "7be59a11f651258c1f4079a56f59814bee22442f18c6a24a1f1de9323d1e1231",
+      "checkedAt": "2026-10-29T22:36:26.863Z",
+      "intro": "Explore the number 60 in colorful decorative styles, including floral, metallic, watercolor and fabric designs alongside black-and-white lettering.",
+      "evidence": [
+        {
+          "id": "art-deco-fan-sixty-clipart",
+          "imageSha256": "3d5aedebd334a439bb163489279e17713dc256ab645bba90f0205354590ed60e"
+        },
+        {
+          "id": "continuous-monoline-sixty-black-and-white-clipart",
+          "imageSha256": "583323291ad59ba96d6ea833351a241459640ee0fad60090111fdd600a33b6a8"
+        },
+        {
+          "id": "halftone-pop-sixty-clipart",
+          "imageSha256": "6602fb58c00619afba3b2a95e54dbd2c8072b1116306f6e6c2961466f581eae7"
+        },
+        {
+          "id": "western-woodcut-sixty-black-and-white-clipart",
+          "imageSha256": "0aa82b235723d35ed5af50797d273bb8c53f4ef07874ad4946dedbcf411ca885"
+        }
+      ]
+    },
+    "911": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "db6fa9f3f39c90edc7d661554ec36f871c5d2d5a221052723ab277714541f586",
+      "checkedAt": "2026-10-29T22:36:26.868Z",
+      "intro": "Explore 911 emergency illustrations featuring dispatchers, police officers, firefighters, rescue equipment and calls for help.",
+      "evidence": [
+        {
+          "id": "ambulance-rescue-ramp-clipart",
+          "imageSha256": "7df401c840f88276d753fc3ab91417be55cd3ca26d7cd15e0bff8061578bbd82"
+        },
+        {
+          "id": "emergency-location-map-pin-clipart",
+          "imageSha256": "b341f8d554d562dcde1e28bbd81668b46c127b1df4c176fa5757e583c33d4b39"
+        },
+        {
+          "id": "neighborhood-emergency-house-clipart",
+          "imageSha256": "d618ab971413f67880fe43c6723b8ddb718fd875bd7e852c0c17ce0a707beb34"
+        },
+        {
+          "id": "traffic-police-stop-hand-whistle-clipart",
+          "imageSha256": "56e825adb0abe4a17985e8d1e6f65e46188e6588856cc9fb770dcaff63f79ca6"
+        }
+      ]
+    },
+    "shapes": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "d719ee1f027f8a61ecbdb9a73646ff8b6a5b63af4129f937716a7dbc1bf1cf3e",
+      "checkedAt": "2026-10-29T22:36:26.856Z",
+      "intro": "Explore geometric shapes in a range of colors and materials, from stitched triangles and faceted polygons to three-dimensional solids and outline drawings.",
+      "evidence": [
+        {
+          "id": "annulus-ring-clipart",
+          "imageSha256": "59d98f2a452ed2e1f0b393d6470ed0204d4b95129709856c0962be18ae3fcd9d"
+        },
+        {
+          "id": "capsule-solid-clipart",
+          "imageSha256": "1774ad475169e7e856f99dfa8c0a15f1f733d2c337c7f40a2d8d2a8cf8551478"
+        },
+        {
+          "id": "heart-shape-clipart",
+          "imageSha256": "0c9c0c45108af1c7b747a11a50d8d70f05f969c3605725741d615608c1560e6f"
+        },
+        {
+          "id": "wide-rectangle-block-clipart",
+          "imageSha256": "e4911871ffdb69eb56c8f00c8e40d08b1a5f20897a3cc24466dba5476beb71da"
+        }
+      ]
+    },
+    "key": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "1f0fde48c315f8542ee6ad58e45c57436779f08cc080ba229d8ae717cebda228",
+      "checkedAt": "2026-10-29T22:36:26.861Z",
+      "intro": "Explore keys in everyday scenes, including house keys, lock mechanisms, decorative pendants, car fobs and people using or finding keys.",
+      "evidence": [
+        {
+          "id": "archaeology-brush-key-find-clipart",
+          "imageSha256": "6165e5730f55a22e1abe6087d923243a0ea09e9bd2b0ede3e1ee7cfada5e64e1"
+        },
+        {
+          "id": "entryway-wall-key-rack-clipart",
+          "imageSha256": "529d855673c4c11190ee3996890da290f25c73249f5d9ef7ca953b2de1a101fd"
+        },
+        {
+          "id": "mantel-clock-winding-key-clipart",
+          "imageSha256": "e38385696da6b53cefe54e06d0adced2f2ea61c9999bbc14427c365556a2cdaf"
+        },
+        {
+          "id": "woman-reaching-keyring-grabber-black-and-white-clipart",
+          "imageSha256": "43a25366c9b128960b6d9f170e91b9117e76e9c8ebefc6cac6c9fd52aa3a40aa"
+        }
+      ]
+    },
+    "arrow": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "3f4183111ac1367003353ab1dcae3147061b0cc07402c11f3436c06c252049ab",
+      "checkedAt": "2026-10-29T22:36:26.862Z",
+      "intro": "Browse arrows in many forms, from colorful directional symbols and curved signs to archery scenes, maps and hand-drawn markings.",
+      "evidence": [
+        {
+          "id": "accelerating-chevron-trail-clipart",
+          "imageSha256": "051b8c0bb59d0a34b88de5046b5d58bcaaa076ab4ca8afd4f50d3d55fbe4e887"
+        },
+        {
+          "id": "curling-marquee-arrow-sign-clipart",
+          "imageSha256": "ac90f782f1566ffefb9897e3810d9437872794c6a58ba6f5cf4dd7c64540a7c5"
+        },
+        {
+          "id": "heart-loop-ribbon-arrow-clipart",
+          "imageSha256": "8bf8d0360158877ea71b4612550510341c5ddb051c5e3aff064697ec47911139"
+        },
+        {
+          "id": "zigzag-lightning-arrow-clipart",
+          "imageSha256": "f0e37f25314290bcd99bfcb4f66db98770def6dc2486dff42399330ec4d48f2d"
+        }
+      ]
+    },
+    "1st": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "8183d975be87833dc60569e25fee58860921f97cb3faf1f4750fd153baa75521",
+      "checkedAt": "2026-10-29T22:36:26.862Z",
+      "intro": "Celebrate first milestones with drawings of first birthdays, school days, hobbies and keepsakes, along with first-place trophies and ribbons.",
+      "evidence": [
+        {
+          "id": "first-anniversary-tea-clipart",
+          "imageSha256": "f540fd524b504091642036c820456cf7083640709faf0afb966aeb88d2146478"
+        },
+        {
+          "id": "first-easter-basket-clipart",
+          "imageSha256": "fdb57825595d581e4444efc2ab78c904801a145a0e1d77bdc6e1b00892c7f346"
+        },
+        {
+          "id": "first-kite-assembly-black-and-white-clipart",
+          "imageSha256": "10f5eb0f9f00a1ce0d2cccf72d648eefe2445d9babf6736d88c2829665698367"
+        },
+        {
+          "id": "first-triangle-music-lesson-clipart",
+          "imageSha256": "9d9b3f8da6e085bbad427be2c912ddffb4d9d8baabc35704669b47172eefce46"
+        }
+      ]
+    },
+    "copyright": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "c2a767f175e650e3dc2a9bf4fa24a9e3e510f08e329b6d8a1a63fb6785a09135",
+      "checkedAt": "2026-10-29T22:36:26.863Z",
+      "intro": "Browse copyright symbols and creative-work scenes, including decorative emblems, books, documents, photography and illustration tools.",
+      "evidence": [
+        {
+          "id": "archivist-copyright-record-clipart",
+          "imageSha256": "6381889d3cd451043f0094e4b5c2c8f66ec11977182f96e222f750a8bbf24a49"
+        },
+        {
+          "id": "copyright-laurel-linework-black-and-white-clipart",
+          "imageSha256": "e909dd7c5e3cc8eae44e3df0938f9e512c2a3984a247e0ddd79997fd5c67e28c"
+        },
+        {
+          "id": "hands-applying-copyright-sticker-black-and-white-clipart",
+          "imageSha256": "954ff87072d6c8987e4cf8effaa52b4fe7a4f2647415da70dd4faebe023e7382"
+        },
+        {
+          "id": "writer-copyright-page-black-and-white-clipart",
+          "imageSha256": "bd151e840fcfc7ca30c3e24e631b5399017711ac474a33ff944c5093e1891621"
+        }
+      ]
+    },
+    "yes": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "7ecf688131b23054d166cf54fdee84c304a29236f875dce497b2b954d553660a",
+      "checkedAt": "2026-10-29T22:36:26.863Z",
+      "intro": "Explore YES lettering, checkmarks, speech bubbles and everyday scenes of people expressing agreement.",
+      "evidence": [
+        {
+          "id": "yes-accessible-choice-board-clipart",
+          "imageSha256": "bc3f2af0e3e6e3a5de156b626dfdb44d3a97d974cf377b43a0a4dafefddab2e6"
+        },
+        {
+          "id": "yes-decision-spinner-black-and-white-clipart",
+          "imageSha256": "0448f8bbb2efbbf513153e8107c7b830e981f66527a0d22502e5312cf975055c"
+        },
+        {
+          "id": "yes-lightbulb-moment-clipart",
+          "imageSha256": "20dbc7130bcb6b955d2f9bfd5126fd6332e5c2f22fc36040479140cfb1f04f54"
+        },
+        {
+          "id": "yes-woman-affirmative-nod-clipart",
+          "imageSha256": "8734542ec593069f6538b9260dc88dd9ea24a052868eefc3b9b4421e93c163ad"
+        }
+      ]
+    },
+    "snowflakes": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "63fbad7cb6015bcfe18dd3a08b296efb6061f186008e7e34e29f493e16a0caf8",
+      "checkedAt": "2026-10-29T22:36:26.863Z",
+      "intro": "Discover icy snow crystals, handcrafted snowflake ornaments and cozy winter scenes, from paper crafts to snowy accessories.",
+      "evidence": [
+        {
+          "id": "artisan-ice-snowflake-sculpture-clipart",
+          "imageSha256": "627041ea92825bb49c8e85bc0e51f833349009d664dd5f5c08b963dbb9c8aaa0"
+        },
+        {
+          "id": "fine-lacy-hexagonal-crystal-clipart",
+          "imageSha256": "eb0144bdab38f14c89ad9d354c6f8d6596576edcd3c3773fe2e9498c44122651"
+        },
+        {
+          "id": "sixfold-paper-cut-snowflake-clipart",
+          "imageSha256": "75df2e17668bf596ebe940b878f20d961a924f5a3806c7041574389b206cee88"
+        },
+        {
+          "id": "wreath-with-three-snowflakes-black-and-white-clipart",
+          "imageSha256": "12e05b895b37e0183200ac627ca1e6632a15ef186e59286b39143f40ca43c537"
+        }
+      ]
+    },
+    "90s": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "dfe6d8bace1632f9b667e00fa8b3cbecdf6bd0dabbe441206e30a665d426b7c7",
+      "checkedAt": "2026-10-29T22:36:26.863Z",
+      "intro": "Explore 1990s-inspired everyday objects, from cassette players and floppy disks to colorful clothing, games and accessories.",
+      "evidence": [
+        {
+          "id": "alphanumeric-pager-belt-clip-clipart",
+          "imageSha256": "4fe4037b7093e8b25c0429f6a81300b506ee1698ba9f5b17994e150434d84369"
+        },
+        {
+          "id": "crt-desktop-internet-station-clipart",
+          "imageSha256": "9e25bbe47f8ef33b4a63bb146f39dc982c1ecca50d698b8ac119afcb8173300c"
+        },
+        {
+          "id": "inline-skates-protective-gear-clipart",
+          "imageSha256": "07190cbd8ca9150e96c6c6111adc9451b59426745f128664fbe7c8c8a3596124"
+        },
+        {
+          "id": "yo-yo-string-trick-black-and-white-clipart",
+          "imageSha256": "f6205fe2e537573447901a9db288874f5e2603f4c2603df6f6d48a3d804a0485"
+        }
+      ]
+    },
+    "yellow": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "e7ea2954da0f86b5c164df59fd034d9f86b0c3280ccf91dadf308339d2a3cef6",
+      "checkedAt": "2026-10-29T22:36:26.864Z",
+      "intro": "Browse yellow objects, flowers, food and vehicles alongside outline drawings ready to color.",
+      "evidence": [
+        {
+          "id": "artist-rolls-yellow-paint-clipart",
+          "imageSha256": "1b599998a47ccc610a53f67b2c9ed9b22e95a76810e1cbc073914d1b17dd55f9"
+        },
+        {
+          "id": "crookneck-squash-on-vine-clipart",
+          "imageSha256": "4e5cca8baf06c3662ec8a0876379ddade0f7d25c80b226efc0ceb863b4aed742"
+        },
+        {
+          "id": "pleated-hand-fan-with-tassel-black-and-white-clipart",
+          "imageSha256": "4ded0a76e42fb4d35f4d6fde4025223a3cb3c1029c48750ede05ebc779d85c72"
+        },
+        {
+          "id": "yellow-task-lamp-and-book-clipart",
+          "imageSha256": "6848eba247a8838a9bba6a26584ed778468007c872f681196073aefe21beb3d5"
+        }
+      ]
+    },
+    "umbrella": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "9270f83fd47b794981d72e6ca76bb308967990c3ba323b56c6baa68e5d001326",
+      "checkedAt": "2026-10-29T22:36:26.864Z",
+      "intro": "Explore umbrellas and parasols in rainy-day scenes, beach settings, craft projects and unexpected everyday designs.",
+      "evidence": [
+        {
+          "id": "baby-shower-umbrella-cake-clipart",
+          "imageSha256": "b567e2ce5bd11102777982c7a76aeb9cc43c39fca688be9bdff8f04a34d06bc5"
+        },
+        {
+          "id": "festival-dancers-paper-parasols-clipart",
+          "imageSha256": "f8f8d050bc9f9dcce86f4aae04f5e7afa5aad4dc9956fc2148f4d08a1d11a98e"
+        },
+        {
+          "id": "parked-bicycle-umbrella-canopy-clipart",
+          "imageSha256": "04afe033beaa00325ed6f8211188e0418e822032e6457785328577fcaa4ea415"
+        },
+        {
+          "id": "wind-inverted-umbrella-surprise-clipart",
+          "imageSha256": "95dd837021a91fc6db8360a60cedc3737b428a2870bf20d3139bf58abec343a3"
+        }
+      ]
+    },
+    "yarn": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "aaf12754d6fa6cf6eec7ecde45c9196a18b58ea27478ae1724d8c804385d89af",
+      "checkedAt": "2026-10-29T22:36:26.864Z",
+      "intro": "Explore yarn crafts and tools, from knitting, crochet and weaving to colorful skeins, fiber animals and decorative projects.",
+      "evidence": [
+        {
+          "id": "angora-rabbit-grooming-wool-clipart",
+          "imageSha256": "5f7751c1e95d2b3f918f40e6caefff6f604986520622b29262f1ffb9af4d7e5f"
+        },
+        {
+          "id": "friends-hand-wind-yarn-hank-clipart",
+          "imageSha256": "f8d8c68e883631757a2e4e04605d96cc07a41bd1f62dd01c682248785b83904d"
+        },
+        {
+          "id": "man-knits-wool-sock-clipart",
+          "imageSha256": "d3df699ead7d8bb1e3222b61e5518d453020c4ebedbae7e283f124172b515c6f"
+        },
+        {
+          "id": "yarn-wrapped-park-bench-clipart",
+          "imageSha256": "a27d1fe841cf5bb4985b839a7346b0fff90cd877f831a3dc49cc3693dfe0ba0d"
+        }
+      ]
+    },
+    "chef": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "d8edb2ab9d25694639e9ed68357058e97aa8299ce0b0aa86f933fc0f07f22541",
+      "checkedAt": "2026-10-29T22:36:26.864Z",
+      "intro": "Explore cooks and chefs preparing meals, baking, serving food and working with ingredients and kitchen tools.",
+      "evidence": [
+        {
+          "id": "artisan-bread-scoring-clipart",
+          "imageSha256": "94d00222e43db21101690e9497a117b6b9fd51acefab5286a3907d2429b7167e"
+        },
+        {
+          "id": "bw-chef-sausage-twine-black-and-white-clipart",
+          "imageSha256": "e998ae29ac49ddeeafb53a0dc8be849a600270392e11e8552b82e02255fcf140"
+        },
+        {
+          "id": "chocolatier-tempering-chocolate-clipart",
+          "imageSha256": "fa438e19a2772b4b09251a1d9d46caa2bcf9441ba0b40ca010849cd746861d3d"
+        },
+        {
+          "id": "wood-fired-oven-chef-clipart",
+          "imageSha256": "9a3ad86080b05152f299ba3f174996e299878372c68b3b90e559219b0502d8f6"
+        }
+      ]
+    },
+    "fireworks": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "8ab1e4f0d2780c7fc926873f9802072307067f29b53813ebc0210acee371108a",
+      "checkedAt": "2026-10-29T22:36:26.864Z",
+      "intro": "Find colorful firework bursts, festive decorations and scenes of people watching displays over water, landmarks and gathering places.",
+      "evidence": [
+        {
+          "id": "balcony-firework-viewers-clipart",
+          "imageSha256": "029efe85ca1b4d9718a73ce52999393372d3e2ec4689de6f8758cbd7584a1178"
+        },
+        {
+          "id": "bw-firework-tote-black-and-white-clipart",
+          "imageSha256": "e480445dda0b61e1c5f64d01b9b03faa2662a5ab6597a816b7f44c452fd5ed29"
+        },
+        {
+          "id": "fireworks-over-castle-clipart",
+          "imageSha256": "d55f8a94ebb8153a25361906dfe3b7efeb7ab73173e8bfeed4f1fefabc1cf013"
+        },
+        {
+          "id": "waterfall-fireworks-curtain-clipart",
+          "imageSha256": "e5f8d531e60b1450d1ed16011d3006cae8009a0df85b8f657999af6983667469"
+        }
+      ]
+    },
+    "ear": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "88c900c95881ac19d47924accb258ce678973f22c7a41ccfac824c03fd9a9234",
+      "checkedAt": "2026-10-29T22:36:26.865Z",
+      "intro": "Explore ear illustrations, listening gestures, earrings, protective equipment and a variety of in-ear devices.",
+      "evidence": [
+        {
+          "id": "acoustic-ear-trumpet-black-and-white-clipart",
+          "imageSha256": "562ae9a65f670299c1d957599f362fa65cab2645463ed7927ab92475f34aa056"
+        },
+        {
+          "id": "deep-bowl-thin-rim-clipart",
+          "imageSha256": "89981bc1d7735e8a205d35b07790df60f3aa59650544fc216bb933b342c9bee3"
+        },
+        {
+          "id": "glasses-behind-prominent-ear-clipart",
+          "imageSha256": "a517079d44f04cd6d0920da7babdbc00022ead17ee7d1f8273cbd8b8fe164819"
+        },
+        {
+          "id": "wired-earbud-fit-clipart",
+          "imageSha256": "630ba8dbb09bd5567f84b2ac71e799133f1e0f0f343c9f600400de415b8ecfbb"
+        }
+      ]
+    },
+    "quiet": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "134a7f07918166ff20cd35aae04f5be7bad38841c3f117ad00f2fc8f84f513ff",
+      "checkedAt": "2026-10-29T22:36:26.865Z",
+      "intro": "Find quiet signs, listening gestures, peaceful scenes and illustrations for reading or resting spaces.",
+      "evidence": [
+        {
+          "id": "adding-felt-to-chair-feet-clipart",
+          "imageSha256": "896dc2beb5da4b4fab6da3887bf779b1ba4bf632c082fef41117db0e5f5e57e5"
+        },
+        {
+          "id": "grandparent-child-quiet-reading-black-and-white-clipart",
+          "imageSha256": "46e55169f825bc9cacb9be5b2963d00a9c11d5df2d0ad27340f805537948e525"
+        },
+        {
+          "id": "peaceful-cabin-night-clipart",
+          "imageSha256": "aaff8304d68c640a7d314da3f5db130c5c0e5524f662738d7a7430b19c960666"
+        },
+        {
+          "id": "turning-off-alarm-clock-clipart",
+          "imageSha256": "bc5406a66c4f41d8092dd9fea0e6ba7bd7b77d13ec0d4286b875f851ccb5c940"
+        }
+      ]
+    },
+    "dinosaur": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "606db1848207a008f6c9a6fd4222315b9dbb42849606d92e9387cd222f7c792e",
+      "checkedAt": "2026-10-29T22:36:26.865Z",
+      "intro": "Explore dinosaurs with feathers, horns, plates and long necks, plus fossil displays, playful characters and dinosaur crafts.",
+      "evidence": [
+        {
+          "id": "allosaurus-descends-rock-step-clipart",
+          "imageSha256": "b5edb88287f5826c50c68f701087024f406122ee395dc1a2ba4cc0fc42df7e89"
+        },
+        {
+          "id": "coelophysis-peers-into-hollow-log-clipart",
+          "imageSha256": "1b5cc1f98dad84ed4a0f3668970650311149ce17575543a33917d178faf82741"
+        },
+        {
+          "id": "maiasaura-leads-three-young-black-and-white-clipart",
+          "imageSha256": "0e8876a61097b8074afb99c0f42f3fb539acff7c629a9fec8e41beac20c6562e"
+        },
+        {
+          "id": "yutyrannus-shakes-snow-from-feathers-clipart",
+          "imageSha256": "58901ee1a3bab18839a778e9a5c480b86f3dd22b47f6dcbcb65d29bfec7bd956"
+        }
+      ]
+    },
+    "notebook": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "a6e08129705e594b562bd188893f3895810cfd4ef87805dacca396eab55a7069",
+      "checkedAt": "2026-10-29T22:36:26.865Z",
+      "intro": "Explore notebooks for sketches, study, field observations and creative projects, with bindings, tools and everyday writing scenes.",
+      "evidence": [
+        {
+          "id": "accordion-sketch-notebook-clipart",
+          "imageSha256": "c022be54a0ad49594d6b9fdf84f4f74a193ab7b66e8e5214c421c9a3b09536be"
+        },
+        {
+          "id": "discbound-page-rearranging-clipart",
+          "imageSha256": "af080660d6a6fcd661031bc313add26e1e32ba74c538a54686d27332714b1def"
+        },
+        {
+          "id": "notebook-cartoon-mascot-black-and-white-clipart",
+          "imageSha256": "40e3245e8ebbcb3c6e0bb7f370eb99d387b91783cca95af6e7cd96b0c2699a32"
+        },
+        {
+          "id": "zippered-notebook-folio-clipart",
+          "imageSha256": "9d68509270dd1802ff0f3252bb003d945f4df4f47297bf2ed161943344f3bfb1"
+        }
+      ]
+    },
+    "xylophone": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "d0fa7fbf7f363c59ce4ba62ea5e84efcd6ad007d763111d61bad6d31d91a7dfb",
+      "checkedAt": "2026-10-29T22:36:26.865Z",
+      "intro": "Explore xylophones and other bar percussion instruments in music lessons, performances, crafts and playful scenes.",
+      "evidence": [
+        {
+          "id": "bass-xylophone-low-register-clipart",
+          "imageSha256": "8e2a98e800b7939ad8e62802ff23e0bcbe01667189355741cebcb2060dc18f61"
+        },
+        {
+          "id": "grandfather-teaches-xylophone-clipart",
+          "imageSha256": "967fd7597a93fdf77a33198c36fd4511418470b2568bfa77c01d6a2e482a5565"
+        },
+        {
+          "id": "removable-bar-learning-xylophone-clipart",
+          "imageSha256": "19788eec5ada77c4d3b8420486c84ac257b8e299e4fd5101ba8cc5e692c7ef42"
+        },
+        {
+          "id": "xylophone-vocal-pitch-matching-black-and-white-clipart",
+          "imageSha256": "094594234dcead4250bd5324225ebe66dc41f7fa02a4a9a3beee1001bb186e07"
+        }
+      ]
+    },
+    "library": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "f6f2be0c48b3ac49ee646d1eb220a0f3ec66e9d72260d5fc15f1463f25fe50c9",
+      "checkedAt": "2026-10-29T22:36:26.866Z",
+      "intro": "Explore library spaces and services, from book displays and reading areas to community programs, archives and mobile collections.",
+      "evidence": [
+        {
+          "id": "accessible-catalog-terminal-clipart",
+          "imageSha256": "99351c3082803fbd338b8e8705d220790add6e40987071eebef80401912f441e"
+        },
+        {
+          "id": "felt-board-storytime-clipart",
+          "imageSha256": "dec7d211464de0586023add35c46aac47622d097cccec3670c9f0614a8c938be"
+        },
+        {
+          "id": "music-folio-librarian-clipart",
+          "imageSha256": "331f7049556381b1ccc20dbc58cc2781e83c9966120365438cfb3c03d693c036"
+        },
+        {
+          "id": "walk-up-bookmobile-clipart",
+          "imageSha256": "a7d293e7a207ce9636617929ce9ee2dc102b4f6f546b618327f18ab6d1e04d53"
+        }
+      ]
+    },
+    "sun": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "6a9d73cbce9856cf640927f411244e14884679e6b65c6bdfc0b94e2f93fb3a9b",
+      "checkedAt": "2026-10-29T22:36:26.866Z",
+      "intro": "Find smiling sun characters, warm landscapes, decorative sun motifs and illustrations inspired by the sun and sky.",
+      "evidence": [
+        {
+          "id": "artist-painting-sun-plaque-clipart",
+          "imageSha256": "029667a888a4af2e8b8a3ae0bcc241266d7a0853bce2061d3045377e97f30fd0"
+        },
+        {
+          "id": "glazed-ceramic-sun-coaster-clipart",
+          "imageSha256": "6e75f718579ca1b4cc4191a63db870f41c65929eb2d2bca2974b9d55cdacaae9"
+        },
+        {
+          "id": "sun-chef-with-baking-tray-clipart",
+          "imageSha256": "8ab388ed7f5aee728fd9655e63075c23670c398d800219c012fad5bee2158e48"
+        },
+        {
+          "id": "waving-sun-with-sunglasses-clipart",
+          "imageSha256": "3d2e2b9d64c9c69dcc1a6afc92026720edb4119c7496b731cc536c8ee5718cee"
+        }
+      ]
+    },
+    "easter": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "0f4230d22c55b00f2faf07bec8a7c67493da72b22fbbe6880f44a0fff8300f80",
+      "checkedAt": "2026-10-29T22:36:26.866Z",
+      "intro": "Explore Easter eggs, spring flowers, celebration foods, religious symbols and playful seasonal scenes.",
+      "evidence": [
+        {
+          "id": "artist-writes-ukrainian-pysanka-clipart",
+          "imageSha256": "379da7dcf52f54f7a35477179507313a92976fdb65eecda7c48617d3f4c89bc7"
+        },
+        {
+          "id": "child-threads-paper-bunny-garland-clipart",
+          "imageSha256": "144461c2a7bd8442e17d35e986629c5c065a11b6ab57e9f5ec57a532dafdc85a"
+        },
+        {
+          "id": "girl-stamps-easter-egg-cards-clipart",
+          "imageSha256": "b269444ffaa0509746d9e5d00af1780dbdfe18cfe67efa08500426d9a5e4db16"
+        },
+        {
+          "id": "wooden-easter-rattle-in-hand-black-and-white-clipart",
+          "imageSha256": "52e899cfa912c0fae8bdde72f037bbe14298d17ea6cb461026588450806b0fae"
+        }
+      ]
+    },
+    "ufo": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "4e8429fe53dd321142cc9999645fa7f37ed21cdb828fabef55a302351544f99d",
+      "checkedAt": "2026-10-29T22:36:26.866Z",
+      "intro": "Explore imaginative flying saucers, spacecraft concepts, alien characters and UFO-themed toys and crafts.",
+      "evidence": [
+        {
+          "id": "alien-bringing-gift-from-ufo-black-and-white-clipart",
+          "imageSha256": "260982ad185d06617fef654f206e01a38b282700b2eb79bf2a745aa1761615ac"
+        },
+        {
+          "id": "desert-cactus-ufo-visit-clipart",
+          "imageSha256": "7cc7db2c14602f4be302d3e1100701bf51c498e2168123e4cb80f88561561e4a"
+        },
+        {
+          "id": "plush-ufo-toy-clipart",
+          "imageSha256": "8f4a287f08706e50f16296363ea1e8b9eebd716965dc2b43e64e4d5e39989529"
+        },
+        {
+          "id": "windup-tin-ufo-toy-clipart",
+          "imageSha256": "44dd08dacab0b2d374026ecd98597c9971a20e3221742f961bd4688ebf7d5846"
+        }
+      ]
+    },
+    "doctor": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "b83fec3c3afa724b4a2755a3c21aa65e43dd3c1df4a4c61c7b182c106cde2c07",
+      "checkedAt": "2026-10-29T22:36:26.866Z",
+      "intro": "Explore doctors and clinicians in patient visits, medical workspaces, care activities and illustrations of medical tools.",
+      "evidence": [
+        {
+          "id": "anesthesia-equipment-check-clipart",
+          "imageSha256": "26386f6f17556444ccce10d5c4477a2b421f66289b8b70de49bdbec0b26c5b01"
+        },
+        {
+          "id": "bw-surgical-cap-tie-black-and-white-clipart",
+          "imageSha256": "d6128dbf2307c5bf0d099dd6b301f7bd1531c39e100eca2d7fd5dfb9e6326c0f"
+        },
+        {
+          "id": "family-physician-welcome-clipart",
+          "imageSha256": "5a49372538cd7e99d46f2acf249091b85790781dea8097e80bb295f5e6cae406"
+        },
+        {
+          "id": "white-coat-pocket-still-life-clipart",
+          "imageSha256": "334ebe0fd7dd9f6f7389b848b0eecf670c234b519b2fefcb4e5581012a856b53"
+        }
+      ]
+    },
+    "jellyfish": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "9901d005516b37a956709cd3a895264c16b22ec67b4e6ac35fe7caea9cc7927f",
+      "checkedAt": "2026-10-29T22:36:26.867Z",
+      "intro": "Discover colorful jellyfish illustrations, underwater observation scenes, playful characters and jellyfish-inspired crafts.",
+      "evidence": [
+        {
+          "id": "aquarist-jelly-window-black-and-white-clipart",
+          "imageSha256": "bb13bb3e512af50c6b05191a92ccc77663735e06731773f2f48579ee5172829d"
+        },
+        {
+          "id": "egg-yolk-jelly-clipart",
+          "imageSha256": "d1fb8821761c5da7c90691ee5b0994c5f48d0a48e79b70cca20225b293447c47"
+        },
+        {
+          "id": "jellyfish-hanging-mobile-black-and-white-clipart",
+          "imageSha256": "b4939ed27daba61f72abfb7ed7e6e7ac35065974d029f48617ed7abbabddf771"
+        },
+        {
+          "id": "wooden-jelly-pull-toy-clipart",
+          "imageSha256": "cbb68e26475b863b914e40f51f87b3ddc6c1cb382c184ccb04b858cc443c7e0b"
+        }
+      ]
+    },
+    "house": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "ff4a7061bd86418f6881fb8ae3864dbd3f60d0c17869c7a26da8378f4c4c8d7e",
+      "checkedAt": "2026-10-29T22:36:26.867Z",
+      "intro": "Explore homes of many shapes, from cozy cabins and townhouses to treehouses, houseboats and architectural drawings.",
+      "evidence": [
+        {
+          "id": "a-frame-cabin-with-loft-window-clipart",
+          "imageSha256": "b4a2f187ffed082bc933f5ba639b533078a5e3f9b95b2929624c2c8862ac0d16"
+        },
+        {
+          "id": "family-moving-into-home-black-and-white-clipart",
+          "imageSha256": "344d4c436ea4fb7bfe691bb04b0e9d900efdc358d0aab8c99a227875749577a2"
+        },
+        {
+          "id": "modern-cantilevered-home-clipart",
+          "imageSha256": "7708a10aaa101143704757a9f50623c36a84e4afa3dc0866c9f232b9bb6f2b91"
+        },
+        {
+          "id": "windmill-converted-home-clipart",
+          "imageSha256": "40d8d4e65a75d60ce71e043bdb4fcbfae11e9a1dbe1203aee86362acefaf4100"
+        }
+      ]
+    },
+    "rose": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "dafbfc2ff4988126053da92bfcdfb19a017b51bcdcb22a0dac3c4d5c731acd01",
+      "checkedAt": "2026-10-29T22:36:26.867Z",
+      "intro": "Find roses in gardens, bouquets and creative projects, from delicate botanical stems to floral gifts and decorative accents.",
+      "evidence": [
+        {
+          "id": "autumn-rosehip-sprig-clipart",
+          "imageSha256": "10187c3df121780ae416715def5641407b1be088076bff81e6057787320b19e3"
+        },
+        {
+          "id": "heart-shaped-rose-wreath-clipart",
+          "imageSha256": "06f521a73e0a8c653e51dced83b452b26b874c1cbcb088a2d4d1a79c0aa233f6"
+        },
+        {
+          "id": "rose-enamel-brooch-clipart",
+          "imageSha256": "2ed943672c500c7128fd905d4bd2440b2c39796d71ea1e21e96da08205b86ef2"
+        },
+        {
+          "id": "white-rambling-rose-fence-clipart",
+          "imageSha256": "fbc86c188130fab501142d3e5435648faa3080bd9b5cb73b203e4fc9a3b7214a"
+        }
+      ]
+    },
+    "megaphones": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "002262e2e8410b40aab3cbf71f2b6ce40f23c77babed7696bb1220446c7efa7a",
+      "checkedAt": "2026-10-29T22:36:26.867Z",
+      "intro": "Explore megaphones and speaking cones in announcements, sports, community events and creative projects.",
+      "evidence": [
+        {
+          "id": "artist-painting-megaphone-black-and-white-clipart",
+          "imageSha256": "15282dc7c53a67230257b84b1916e7ada8635ac051a79fb665a1920dbcf64e43"
+        },
+        {
+          "id": "festival-announcer-shoulder-megaphone-clipart",
+          "imageSha256": "632db76b8265cc3505be412ac5e1c70290fa0c20bea01ba04ae9b06d32a4c412"
+        },
+        {
+          "id": "megaphone-hanging-from-strap-clipart",
+          "imageSha256": "bbec019d10892cfd59cbb0b5badd8b6bf07e69e0ed77f15bced24a30365abfd9"
+        },
+        {
+          "id": "wheelchair-event-announcer-clipart",
+          "imageSha256": "9199446a6f37b5f07578a3e3c3cda9b94b31a6a16a004ff8f6b11e944e76f241"
+        }
+      ]
+    },
+    "teacher": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "b2ecec0d8eec94cc23c4781ef6815c1131fe057033e0f78ca6074328e116f6de",
+      "checkedAt": "2026-10-29T22:36:26.868Z",
+      "intro": "Find teachers and learners sharing lessons in reading, science, art, music, sports and everyday skills.",
+      "evidence": [
+        {
+          "id": "adult-literacy-teacher-wordless-card-clipart",
+          "imageSha256": "b54dae4fb2d48c9f8575d4a75edb6b68bad548b05c662cc1737eb89c2ae1e613"
+        },
+        {
+          "id": "elder-piano-teacher-lesson-clipart",
+          "imageSha256": "4f625044cec12312b8d65a013c6cc1b99675a4372f7d576e5992764d3acb77c9"
+        },
+        {
+          "id": "outdoor-number-line-teacher-clipart",
+          "imageSha256": "ad177ca8a390d5e779bed20055ad34316b9ed8c68f6a5853221d79b7b350057a"
+        },
+        {
+          "id": "woodwork-teacher-measuring-board-clipart",
+          "imageSha256": "b5cc369ad6c85178f3ddf5f641ea98654eb79bdbae8ade4112900197c760a810"
+        }
+      ]
+    },
+    "unicorn": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "8cc5e1fb6b6f9a88e8bfc7cf596caeaa85fecafdd2a8f9d5adc4badae5716c6f",
+      "checkedAt": "2026-10-29T22:36:26.868Z",
+      "intro": "Explore unicorns in playful and detailed illustrations, from starry galloping figures to toys, crafts and gentle storybook scenes.",
+      "evidence": [
+        {
+          "id": "astronaut-unicorn-explorer-clipart",
+          "imageSha256": "fe736d6dbd1cad41c4066afbb8828118aa1798891d0690020c1e450277f15fad"
+        },
+        {
+          "id": "plush-nursery-unicorn-toy-clipart",
+          "imageSha256": "6c3465731b449f83e0715e6b787ef2d61f276ca338d1ef63ceb1bade8502031e"
+        },
+        {
+          "id": "unicorn-bubble-chase-clipart",
+          "imageSha256": "cc5dd34fb52ce8f573808ff6e3e0af15caf41ae7af7854ae729af6484be7112a"
+        },
+        {
+          "id": "woodland-fern-sniffer-clipart",
+          "imageSha256": "2d85c5674bec23ee843f66649d8e939cd5cef3af221a16635cdbe0ea139dca83"
+        }
+      ]
+    },
+    "eyes": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "cea58d6d19aa3994c1f95b8756be1ae8c225fb4420885fbe06aaaea222a01ee7",
+      "checkedAt": "2026-10-29T22:36:26.868Z",
+      "intro": "Discover eyes in expressive drawings, vision-themed scenes, creative projects and playful characters.",
+      "evidence": [
+        {
+          "id": "artist-paints-eye-portrait-clipart",
+          "imageSha256": "0cb8748dbc9ef7ec0767e53a89cc7e0e3ffead3772f9a3ccf16263dff2a9dd5c"
+        },
+        {
+          "id": "drowsy-heavy-eyelid-eyes-clipart",
+          "imageSha256": "f0b8d2b75f40e9963a9503ee2633a1a02bf3f26af873acce8236e921b56ab49e"
+        },
+        {
+          "id": "goggled-child-follows-tiny-fish-clipart",
+          "imageSha256": "4d69d04157d9d5eb1b558b8a1e174ec12442434ff495a25bec0334f3f33bb4bb"
+        },
+        {
+          "id": "worker-adjusts-safety-goggles-clipart",
+          "imageSha256": "39cbc6eb6153d3285ee7bd034105ab9e8784f8ec9f4a738954332fc11df209bf"
+        }
+      ]
+    },
+    "zombie": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "89154241ec5051312d32cef9b94678163ccec3e88e71d65231a92c2db74e0570",
+      "checkedAt": "2026-10-29T22:36:26.868Z",
+      "intro": "Explore zombies in playful scenes, from music and crafts to gardening, sports and everyday adventures.",
+      "evidence": [
+        {
+          "id": "sleepy-zombie-alarm-clock-clipart",
+          "imageSha256": "f3e3f68f1920ae5bab78842ab4e0cda1089fea5e88d1b6a0890466cbcd9b0d06"
+        },
+        {
+          "id": "zombie-carnivorous-plant-tending-clipart",
+          "imageSha256": "362f16a31742c61314c43b9d7c4d60577b39c2823d13da3250d64511337e2e46"
+        },
+        {
+          "id": "zombie-magician-surprised-rabbit-clipart",
+          "imageSha256": "6bbbedb759b4bbf9c97e92d33051f4233f491823ad4a7226d838e8c2175718e8"
+        },
+        {
+          "id": "zombie-yoga-tree-balance-clipart",
+          "imageSha256": "52b15843b16cf8dfcde873c943d38bfc7f67425841a0bd1b27a1702b182ab527"
+        }
+      ]
+    },
+    "frame": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "b93ceaa8e742f98f8b30c161c39c5ba44ab7a76be0e32e1c5838c12db5ddf8ff",
+      "checkedAt": "2026-10-29T22:36:26.869Z",
+      "intro": "Explore single picture frames, decorative borders and framing activities, from ornate ovals to modern display frames.",
+      "evidence": [
+        {
+          "id": "acrylic-standoff-display-frame-clipart",
+          "imageSha256": "083c6344f657b2875fbb5ffe579c20fa38b3150b8397247dede820ea4511e1eb"
+        },
+        {
+          "id": "cleaning-frame-glazing-clipart",
+          "imageSha256": "ec79d97b326b0d1b68b021bccaf7ec6bb93b2a2c9bdc141bbbe0b18af7ad825f"
+        },
+        {
+          "id": "front-loading-snap-frame-clipart",
+          "imageSha256": "97facbcaf6e94c92a7f4b6afc1ee15be8fab0007231842a83f741d0e67a430fb"
+        },
+        {
+          "id": "walking-frame-mascot-black-and-white-clipart",
+          "imageSha256": "eeb1be4ece97cf020e756c1baea41848f2556a5fac2a980f32a9594191edc1f6"
+        }
+      ]
+    },
+    "frames": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "ad006af5422a51b3ff92b39ac22ef0e6e0c01c015d191e5e4c7806ec8dc1fa89",
+      "checkedAt": "2026-10-29T22:36:26.869Z",
+      "intro": "Browse multi-opening frames and photo displays, from folding triptychs and gallery arrangements to keepsake collages.",
+      "evidence": [
+        {
+          "id": "accordion-six-frame-book-clipart",
+          "imageSha256": "ea20eeff4279821d758327b66d58b3a2239b5ee95a81ddd35a2feca9fed3250b"
+        },
+        {
+          "id": "desktop-flip-frame-album-clipart",
+          "imageSha256": "d23033b367a35f3497d3824e3a45f779e7360d2a5521f3834ba42c076a6eedee"
+        },
+        {
+          "id": "interleaving-packed-frame-stack-black-and-white-clipart",
+          "imageSha256": "d3d819de59f3746733d6ea2b6677787cffe62f9d4a6fc9a85203870e66fb839a"
+        },
+        {
+          "id": "vertical-oval-frame-chain-clipart",
+          "imageSha256": "329935fa8d2c554dcebcde9995ad2f9d41bb151d7e408e9f44e87f8fa3a5ebac"
+        }
+      ]
+    },
+    "wedding": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "0f1a51ec52608bfcb009a8171aeac6b50a5505c3331657fe0dd6eab0b6851722",
+      "checkedAt": "2026-10-29T22:36:26.869Z",
+      "intro": "Explore wedding-day details, from gowns and bouquets to ceremony settings, reception decorations and shared celebrations.",
+      "evidence": [
+        {
+          "id": "a-line-bridal-gown-mannequin-clipart",
+          "imageSha256": "04896fb209fd140eafe427a0593fd64e0fe640bc8e321dea571f9d03b0706fae"
+        },
+        {
+          "id": "chinese-bridal-jacket-skirt-display-clipart",
+          "imageSha256": "ff28149ea5fcdf55d6212ce2032a65a707054e30be4cdd9016174e97e0c51f8e"
+        },
+        {
+          "id": "japanese-shiromuku-bride-clipart",
+          "imageSha256": "a664a8918ce94442528416c9651ba404b2efffe995220159a9175bca2936f166"
+        },
+        {
+          "id": "wedding-ring-exchange-clipart",
+          "imageSha256": "44801f523e187ab6b58130a8330fd2e4b1d5d0058dfd187bfecad25313b2117e"
+        }
+      ]
+    },
+    "marriage": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "3561125620ada2c27f478104785bd2455e5276ea95fee41576fc7ff705b4229a",
+      "checkedAt": "2026-10-29T22:36:26.869Z",
+      "intro": "Explore shared moments and everyday activities, from cooking and gardening together to keepsakes, hobbies and quiet time.",
+      "evidence": [
+        {
+          "id": "anniversary-memory-box-together-clipart",
+          "imageSha256": "6f40f748554495fc0d522c678991691be5b891d68296a97814eebdb5a119957e"
+        },
+        {
+          "id": "couple-repairing-torn-coat-clipart",
+          "imageSha256": "38f5ab5caa00617ff2ad365316a0fa6b7f38c03bdcfec93986a74e7e40c54e7c"
+        },
+        {
+          "id": "married-couple-strolling-with-canes-black-and-white-clipart",
+          "imageSha256": "22e9dce22d5263a15c7584859de7ac077cbd5d504b55a4726b49720334793702"
+        },
+        {
+          "id": "two-mugs-and-shared-crossword-clipart",
+          "imageSha256": "4e66bf6d5a0f13438960792ba79e8d00e6924387b22c6b4eb01915c1155dbe7d"
+        }
+      ]
+    },
+    "september": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "f34e3fa8c68b99d1496ef645c42e835fb78fa906627123360ae7e781708be325",
+      "checkedAt": "2026-10-29T22:36:26.870Z",
+      "intro": "Celebrate September with autumn leaves, garden harvests, school scenes and decorative month lettering.",
+      "evidence": [
+        {
+          "id": "acorn-and-bell-wind-chime-black-and-white-clipart",
+          "imageSha256": "b9172f5d30e19b5ed0114e98b675cf456802501d9d89a5cb09bc7401efde199c"
+        },
+        {
+          "id": "installing-september-board-title-clipart",
+          "imageSha256": "67020ff39b444e4c7726a9bfa88246283c6fc957a829b0b9c910c65e3a9314b9"
+        },
+        {
+          "id": "picking-autumn-raspberries-clipart",
+          "imageSha256": "ecb563501181d5f99ec51232eabbefe6b6cbca5dbe4098db01473227b3b27089"
+        },
+        {
+          "id": "writing-month-with-dip-pen-black-and-white-clipart",
+          "imageSha256": "81c28c69d7cf1de13a1cc1e690880d1009175af6e929eac42d3c3bc2a7a3afb8"
+        }
+      ]
+    },
+    "underwear": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "0c7df95056cf023fc44b55c98d21bbe341ac10573c64442ee50707c8db7f05eb",
+      "checkedAt": "2026-10-29T22:36:26.870Z",
+      "intro": "Browse everyday undergarments, sleepwear and laundry scenes, including illustrated clothing styles and care activities.",
+      "evidence": [
+        {
+          "id": "absorbent-underwear-inner-panel-clipart",
+          "imageSha256": "185eae4ba8b847545baa9610189c696831ce3ffcd4f8655e8249997331d80b15"
+        },
+        {
+          "id": "full-length-under-slip-clipart",
+          "imageSha256": "86152e2f65cc3bf378676569241e45c7f9d451c264c103cc9ab98f8cc2b2fd97"
+        },
+        {
+          "id": "longline-bralette-hanger-clipart",
+          "imageSha256": "6a9be17d97d09ebfe6daa9720e3dfe7223c9bf26b75ac50421caf65d3a4aae5f"
+        },
+        {
+          "id": "washing-machine-underwear-load-clipart",
+          "imageSha256": "ea710db13632b65593292d43a9d4948237680f48ae627598bcf8e0499b0360c5"
+        }
+      ]
+    },
+    "bundle": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "96d1eb06c70bc73727780cd9aef8afee4dc23e5862c7107f62be2c185baff2ed",
+      "checkedAt": "2026-10-29T22:36:26.870Z",
+      "intro": "Discover illustrated groupings of gifts, craft supplies, seasonal harvests and everyday objects.",
+      "evidence": [
+        {
+          "id": "autumn-harvest-bundle-clipart",
+          "imageSha256": "7326b27042c5c129b2881b99f8478f48b8ce383b8ebf274f1eef6bdb095d34f2"
+        },
+        {
+          "id": "fabric-fat-quarter-bundle-clipart",
+          "imageSha256": "ab8fa78629b7175f38f90ff4cdab9b96e97475af0e740d845d1e4bb80bfceb5e"
+        },
+        {
+          "id": "letter-and-envelope-bundle-clipart",
+          "imageSha256": "c689483ec4c58b8e467480120b6458d38f3a6dcc5e35eba02cf738ead82009e8"
+        },
+        {
+          "id": "woodland-friends-bundle-clipart",
+          "imageSha256": "a9f9871fa9bfb592752b29e9577c4d40f56447ec9bc3350d4a63e049a69eeda9"
+        }
+      ]
+    },
+    "cartoon": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "3c1d056d48e82fc93bbd38dda43f408d84c0179389726d061925653725e3f6d7",
+      "checkedAt": "2026-10-29T22:36:26.871Z",
+      "intro": "Meet playful cartoon animals, objects and fantasy characters in imaginative everyday scenes.",
+      "evidence": [
+        {
+          "id": "alpaca-wind-up-train-clipart",
+          "imageSha256": "0009fc3a7fa6fb5ce15a5624a34af50e617b70e7138d910046cd88b5ea8d72b9"
+        },
+        {
+          "id": "black-white-robot-flower-black-and-white-clipart",
+          "imageSha256": "60893ab894a410879b0cbf83e7b126d120583efbf76527126d049b882a773964"
+        },
+        {
+          "id": "hedgehog-clay-stars-clipart",
+          "imageSha256": "aaef18da668440cc360ddcc9b7782ea377c57d854ed9e60f961bf27d316fc796"
+        },
+        {
+          "id": "worm-explorer-watering-can-clipart",
+          "imageSha256": "72204d0e390667001f868a0bec2149ea626f41e92396373e6833e9480721d83f"
+        }
+      ]
+    },
+    "personal": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "17037d5d6c8b46a55d72f6e7448ca222423e7cd49c2a301fff507c8ea6bc276f",
+      "checkedAt": "2026-10-29T22:36:26.871Z",
+      "intro": "Find illustrations of personal routines, hobbies, keepsakes and everyday belongings.",
+      "evidence": [
+        {
+          "id": "adjusting-personal-wristwatch-black-and-white-clipart",
+          "imageSha256": "089813a6fe3e232bb338c757c7485add8bc5b5618f89df7d7d70b9d61abb0d65"
+        },
+        {
+          "id": "mending-a-shirt-button-clipart",
+          "imageSha256": "11b1393d71dbee716287874058b77d97f36a64c2fe1c2b13319fd7f46711a1a4"
+        },
+        {
+          "id": "personal-toothbrush-travel-kit-clipart",
+          "imageSha256": "ec4ad5116d64f4d46dc52a1edc52932782ffd0776636ba69b549d20707e86899"
+        },
+        {
+          "id": "writing-in-a-personal-journal-clipart",
+          "imageSha256": "1d27bf2fb788b3c43e2e86e69470015f7aef4f56ee7b5cf5066078abf9db167c"
+        }
+      ]
+    },
+    "ed138": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "96648719e08938af78dca5207b04e260c6a41ee9d52589dde6e1a9db6178d208",
+      "checkedAt": "2026-10-29T22:36:26.871Z",
+      "intro": "Explore imagined world designs labeled ED138 in astronomy-themed illustrations, models, crafts and playful characters.",
+      "evidence": [
+        {
+          "id": "accessible-ed138-astronomy-club-black-and-white-clipart",
+          "imageSha256": "9924e27c2227f1175b82d5748c433e079397521a2e39548735990d0c835c590d"
+        },
+        {
+          "id": "ed138-embroidered-discovery-patch-clipart",
+          "imageSha256": "3e3e13ecb995ba48226f68cf8b7f955d10f7dc42302a66000e40837f1c3d66dd"
+        },
+        {
+          "id": "ed138-spherical-candle-clipart",
+          "imageSha256": "7daa4f49518476ef7f4f96f38fbbafef4e86780424f8a128cd87fe83329c5bbd"
+        },
+        {
+          "id": "young-stargazer-ed138-telescope-clipart",
+          "imageSha256": "156a14efe295bc8b2fa48e6b25768b69561bc7ebde7ea2089c624910c1f018da"
+        }
+      ]
+    },
+    "cricut": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "59c5d874f2ccd57e104d62a7c47b2d9494b3e459a3a76cdae8d888b64557aa0e",
+      "checkedAt": "2026-10-29T22:36:26.871Z",
+      "intro": "Explore illustrated craft projects and tools, including paper cutting, vinyl decals and heat-press scenes.",
+      "evidence": [
+        {
+          "id": "applying-bottle-vinyl-decal-clipart",
+          "imageSha256": "e21a20881ebfbc25300355c431f6bfb9a635ba69fe0a9f5aa94f24fe77184897"
+        },
+        {
+          "id": "craft-tool-caddy-clipart",
+          "imageSha256": "8cd859b09d92f716bcae1230bf36f378bdcdfb03df7237a7d0bffeee3d1c00ee"
+        },
+        {
+          "id": "kiss-cut-mushroom-stickers-clipart",
+          "imageSha256": "afa2ba87989e887523e2354af38203ec8fd54a486098d0aaccfd0f03137f27b7"
+        },
+        {
+          "id": "woven-paper-basket-clipart",
+          "imageSha256": "ba6d387c02851727b903f411c46e53e2ff35891c53fd7607fecdbf5cbc75426c"
+        }
+      ]
+    },
+    "coreldraw": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "f84937df0967785aeec8c588a658ee6d895fa4b5bd5261b3729e7869e5fdc3b6",
+      "checkedAt": "2026-10-29T22:36:26.871Z",
+      "intro": "Explore illustrations of digital design tools, curved paths, color palettes, layouts and creative workstations.",
+      "evidence": [
+        {
+          "id": "bezier-pen-curve-clipart",
+          "imageSha256": "324df9ddd8e559d3c1a2b266718fe6fef887acdf6e1135324427be6c010c19f5"
+        },
+        {
+          "id": "circle-square-blend-clipart",
+          "imageSha256": "527aa33af3d4cef955f1e4a6b81769fae1770023c0bc8e3af4407b17d9f79f1a"
+        },
+        {
+          "id": "export-file-pair-clipart",
+          "imageSha256": "c010395b39accefdfa45c13b872860fb09cc45c0c64f2d346985f4f64d34a35c"
+        },
+        {
+          "id": "vector-trace-rabbit-clipart",
+          "imageSha256": "9cc063bff4285c34e618de9eb3fa320256b150ebba7b823b077047da42939931"
+        }
+      ]
+    },
+    "commercial": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "122136e71dbb530393b9ad0abbfda8cf9efd9fa13695b0bbbec7d157e430132f",
+      "checkedAt": "2026-10-29T22:36:26.872Z",
+      "intro": "Explore illustrations of shops, services, workspaces, equipment and everyday business activities.",
+      "evidence": [
+        {
+          "id": "appliance-fridge-demonstration-clipart",
+          "imageSha256": "5fffa2a145dcf376f545c8f37b01f6929e3407e9540258f8746d0b7ad86543a3"
+        },
+        {
+          "id": "corner-retail-storefront-clipart",
+          "imageSha256": "d9f2a0ba872c8b09c9e2dfef65d167b7a99688689527874aa97d082e7c220ed3"
+        },
+        {
+          "id": "online-shop-laptop-and-order-clipart",
+          "imageSha256": "17e043887933b86d31859ff82057b047598a397cdddbdcd0ea48a83019cb5702"
+        },
+        {
+          "id": "workshop-wheel-balancer-black-and-white-clipart",
+          "imageSha256": "d8c9fe14146c684bc0dcf8d903650776945fd9a3321baff89cb2bd87c54eeeac"
+        }
+      ]
+    },
+    "ganesh": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "af17bbc86814b6a134e0797fce9d18c9383afeeb580351caba15fb42fae3b5b9",
+      "checkedAt": "2026-10-29T22:36:26.872Z",
+      "intro": "Explore illustrations of Ganesha, devotional settings, festival decorations and creative activities.",
+      "evidence": [
+        {
+          "id": "bala-ganapati-fruits-clipart",
+          "imageSha256": "425afa79592723dbbf3454b61a98c55b40fd95eb154ebe1d746d123f653ba029"
+        },
+        {
+          "id": "ganesha-scribes-with-vyasa-clipart",
+          "imageSha256": "014d579d5c75cdb6e50253276a3ee08ef7df90034807b01f0e1ad33bd66b7cc2"
+        },
+        {
+          "id": "lifting-ganesha-block-print-clipart",
+          "imageSha256": "58c6ee1b71a20067eccf3974a139a165643c68fa3ef493f81628362b0b379ef7"
+        },
+        {
+          "id": "yoga-ganapati-meditation-clipart",
+          "imageSha256": "8628bf4aacbd0d8a99ec4beee2bdab78a8b0c8a31049f9ccee862ca0a6d2ee5f"
+        }
+      ]
+    },
+    "jesus": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "a47559c97469d72c0ae350cb7146a228b17b3f7fade95973ce421a695fadbabf",
+      "checkedAt": "2026-10-29T22:36:26.872Z",
+      "intro": "Explore illustrated scenes of Jesus, from the Nativity and teachings to moments of compassion and prayer.",
+      "evidence": [
+        {
+          "id": "artist-painting-jesus-portrait-black-and-white-clipart",
+          "imageSha256": "a7ee18832fac5758c2ff424e900dd866ffa24ab182cba066a43ff6433f91a269"
+        },
+        {
+          "id": "jesus-breaking-bread-at-table-clipart",
+          "imageSha256": "b420eaff6a3a00eee7277ec4b4390f471a334051001628edcc3343022ccfda9e"
+        },
+        {
+          "id": "jesus-on-cross-devotional-clipart",
+          "imageSha256": "c9920dbfe251981c65bebaf67bd803a7c31bddc78928e256d1605d4fc0884742"
+        },
+        {
+          "id": "young-jesus-in-temple-clipart",
+          "imageSha256": "fd75d635f6cad5908c8673620ba2f889368981a1c8a706c8d377d23d1b65ec17"
+        }
+      ]
+    },
+    "mundan": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "6f756b65dd0b4b7bc146ac74e16a80a863af70cac9d14f2cfdb1e1d1c149f955",
+      "checkedAt": "2026-10-29T22:36:26.872Z",
+      "intro": "Explore illustrations of a child’s first haircut ceremony, family moments, ceremonial clothing and keepsakes.",
+      "evidence": [
+        {
+          "id": "aunt-photographing-mundan-family-black-and-white-clipart",
+          "imageSha256": "195f22d7f21b5a27f2eff716752c57d5acc06759cbc448e0554ef5a80bf7f112"
+        },
+        {
+          "id": "combing-first-haircut-lock-clipart",
+          "imageSha256": "6d2a74d798590c25cb7477155388991f2266bf4618c14259fedaa4ae9fe19b4c"
+        },
+        {
+          "id": "mother-and-child-prayer-after-mundan-clipart",
+          "imageSha256": "c8be82c62e308030028bd01eb4cb650cb9157dd8fbdc266b9d2c69d92f3e4526"
+        },
+        {
+          "id": "toddler-touching-smooth-scalp-clipart",
+          "imageSha256": "b2322ec272a200cf130e5e93eb347a798c86a11b4bcc8a064fa6d6d34e724cd6"
+        }
+      ]
+    },
+    "upanayanam": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "ffa60a33db7e5c46cf38af0939d010f11992c86def416131bad08952e33cb076",
+      "checkedAt": "2026-10-29T22:36:26.873Z",
+      "intro": "Explore illustrations of the Upanayanam ceremony, including sacred threads, family gatherings and traditional learning.",
+      "evidence": [
+        {
+          "id": "boy-carrying-brass-alms-bowl-clipart",
+          "imageSha256": "1dd3cbfbd279909989ab0f695d5791a3a6a76ead2d684ae4e192dd6474367244"
+        },
+        {
+          "id": "father-folding-ceremony-mat-black-and-white-clipart",
+          "imageSha256": "83d0943e10fd331fc93685533b392dcac5229796974f72d9318d5914e0bb84b2"
+        },
+        {
+          "id": "initiate-holding-danda-clipart",
+          "imageSha256": "73574191d0bfab71898ffcd2ec397f95c92ab98e93f07ae35ec926f45aae3e00"
+        },
+        {
+          "id": "thread-knot-in-brass-dish-clipart",
+          "imageSha256": "9f053921b3751d08c8b329e2bae4234e77d19c77f34aa2ec8fe20824502f6989"
+        }
+      ]
+    },
+    "cloud": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "aeb363baab1f94681b11a8d8de749af3f2dcd8a8346949cae298e3de04cf5503",
+      "checkedAt": "2026-10-29T22:36:27.409Z",
+      "intro": "Explore clouds in weather scenes, soft painted textures, character designs and black-and-white outlines.",
+      "evidence": [
+        {
+          "id": "cloud-fair-weather",
+          "imageSha256": "45df8958b81d2a04f82b73bfeff8e2d2370784a431fbb8b9755ad284444c3fc3"
+        },
+        {
+          "id": "cloud-cloud-fog-bank",
+          "imageSha256": "a38638381d65cb92c2db9c315ab4a7d5e07da632a31a5f3516899080c355e77b"
+        },
+        {
+          "id": "cloud-cloud-garden",
+          "imageSha256": "1dd6e62e0dfc876879d3121c81e385cd0d50e67bbb6e416d0a21d9b307cbb226"
+        },
+        {
+          "id": "cloud-outline-wind",
+          "imageSha256": "380d936c2eef6642ecc183aebbe3312eb3169e89712bbb9f0b025c97c14c4ec2"
+        }
+      ]
+    }
+  }
+}

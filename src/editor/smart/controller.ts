@@ -202,9 +202,7 @@ export class SmartController {
   requireLayer() {
     const layer = this.layer();
     if (!layer)
-      throw new Error(
-        'Select an image layer first. Add catalogue clipart with Composer if needed.',
-      );
+      throw new Error('Select an image layer first. Add catalog clipart with Composer if needed.');
     if (layer.locked) throw new Error('Unlock this image layer before editing its pixels.');
     if (!layer.visible) throw new Error('Show this image layer before editing.');
     return layer;

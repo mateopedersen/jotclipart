@@ -168,7 +168,7 @@ export class StudioTools {
   }
   async addCatalogue(id: string) {
     const asset = this.catalogue.find((a) => a.id === id) ?? (await lookupRasterAssets([id]))[0];
-    if (!asset) throw new Error('Choose a catalogue illustration.');
+    if (!asset) throw new Error('Choose a catalog illustration.');
     const host = this.editor.host;
     const snapshot = host.committed(),
       d = clone(snapshot),
@@ -187,7 +187,7 @@ export class StudioTools {
       throw new Error(
         'This composition reached its 12-image or 40-million-pixel limit. Save a copy and simplify it before adding more.',
       );
-    host.status('Opening verified catalogue artwork…');
+    host.status('Opening verified catalog artwork…');
     const opened = await openRaster(asset),
       layer = opened.layers[0] as RasterLayer;
     if (snapshot !== host.committed())

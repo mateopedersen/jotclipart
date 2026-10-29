@@ -26,6 +26,74 @@ function item(id, overrides = {}) {
 function ids(result) {
   return [...result.alternatives, ...result.companions].map((c) => c.id);
 }
+test('matching title details improve ranking only within a valid subject', () => {
+  const source = normalize(
+    item('detail-source', {
+      topic: 'cat',
+      title: 'Cat Sleeping on Cushion',
+      alt: 'A cat sleeps on a cushion.',
+    }),
+  );
+  const similar = normalize(
+    item('detail-similar', {
+      topic: 'cat',
+      title: 'Sleeping Cat on Cushion',
+      alt: 'A cat sleeps on a cushion.',
+    }),
+  );
+  const different = normalize(
+    item('detail-different', {
+      topic: 'cat',
+      title: 'Cat Watching Rain',
+      alt: 'A cat watches rain.',
+    }),
+  );
+  const wrong = normalize(
+    item('detail-wrong', {
+      topic: 'dog',
+      title: 'Dog Sleeping on Cushion',
+      alt: 'A dog sleeps on a cushion.',
+    }),
+  );
+  assert.ok(rank(source, similar).score > rank(source, different).score);
+  assert.ok(rank(source, similar).reasons.includes('shared_title_details'));
+  assert.equal(rank(source, wrong), undefined);
+});
+test('unclassified artwork ranks shared details only inside its own collection', () => {
+  const candidate = (id, title, createdAt, topic = 'winter') =>
+    item(id, { topic, title, alt: title, style: 'unknown', createdAt });
+  const entries = [
+    candidate('fallback-source', 'Amber Lantern in Snow', '2026-10-01'),
+    candidate('fallback-match', 'Amber Lantern with Stars', '2026-10-02'),
+    candidate('fallback-other', 'Wooden Bench with Stars', '2026-10-03'),
+    candidate('fallback-wrong', 'Amber Lantern in Snow', '2026-10-04', 'halloween'),
+  ];
+  const local = new RelatedIndex(entries),
+    result = local.snapshot('fallback-source');
+  assert.equal(local.profiles.get('fallback-source').status, 'unclassified');
+  assert.deepEqual(result.alternatives, []);
+  assert.equal(result.collection[0].id, 'fallback-match');
+  assert.ok(result.collection.every((card) => card.id !== 'fallback-wrong'));
+});
+test('withdrawn recent items free bounded index slots for older eligible artwork', () => {
+  const entries = Array.from({ length: 120 }, (_, i) =>
+    item(`refill-${String(i).padStart(3, '0')}`, {
+      createdAt: `2026-10-${String(1 + Math.floor(i / 24)).padStart(2, '0')}T${String(i % 24).padStart(2, '0')}:00:00Z`,
+    }),
+  );
+  const local = new RelatedIndex(entries);
+  const source = entries[0].id;
+  // The old source and its closest neighbors initially fall outside capped postings.
+  for (const record of entries.slice(90)) local.remove(record.id, 2);
+  const result = local.snapshot(source);
+  assert.ok(result.alternatives.length > 0);
+  assert.ok(
+    [...result.alternatives, ...result.collection].every(
+      (card) => !entries.slice(90).some((removed) => removed.id === card.id),
+    ),
+  );
+  assert.ok(result.examined <= CANDIDATE_LIMIT);
+});
 test('T01 / ten real topics: eligibility and group boundaries hold across the catalog', () => {
   for (const topic of [
     'apple',
