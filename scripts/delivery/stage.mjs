@@ -13,6 +13,7 @@ import { spawn, execFileSync } from 'node:child_process';
 import { setTimeout as wait } from 'node:timers/promises';
 import { collectDeliveryFiles, merkle } from './manifest.mjs';
 import { measureReservation } from './storage-reservation.mjs';
+import { freshBindingReservation } from '../r2/binding-reservation.mjs';
 import { releaseRevision } from '../release-revision.mjs';
 import { createSignedInventoryFetch } from './inventory-fetch.mjs';
 import { createBoundInventoryReader, readOnlyRangeHints } from './inventory-reader.mjs';
@@ -118,7 +119,7 @@ async function main() {
             remaining.slice(cursor).reduce((sum, x) => sum + x.record.bytes, 0) +
             IN_FLIGHT_ALLOWANCE_BYTES;
           const measuredStartedAt = Date.now();
-          const measured = await measureReservation(
+          const measure = () => measureReservation(
             accountId,
             unverified,
             remoteReady
@@ -135,12 +136,26 @@ async function main() {
               knownKeys = new Set(target.objects.map((o) => o.key));
             },
           );
-          for (const current of inventoryBuckets) {
-            const fresh = measured.roster.find(
-              (b) => b.bucket === current.bucket && b.jurisdiction === current.jurisdiction,
-            );
-            if (fresh) current.bounds = fresh.bounds;
-          }
+          const updateRanges = (roster) => {
+            for (const current of inventoryBuckets) {
+              const fresh = roster.find(
+                (b) => b.bucket === current.bucket && b.jurisdiction === current.jurisdiction,
+              );
+              if (fresh) current.bounds = fresh.bounds;
+            }
+          };
+          // An occasional slow complete census grants no write lease. Rebalance
+          // only its read-only ranges and repeat a full measurement, at most twice.
+          // Denied scopes, malformed inventories and capacity errors still stop.
+          const measured = remoteReady
+            ? await freshBindingReservation(measure, {
+                onStale: (roster) => {
+                  updateRanges(roster);
+                  console.log('Slow complete census: read-only ranges refreshed; repeating the full measurement without granting a write lease.');
+                },
+              })
+            : await measure();
+          updateRanges(measured.roster);
           lease = { ...measured, root: tree.root, bucket };
           console.log(
             `Fresh account reservation: ${lease.measuredBytes} + ${lease.additionalBytes} bytes; complete measurement ${Date.now() - measuredStartedAt} ms`,
