@@ -11592,18 +11592,18 @@
     "related": []
   },
   "up": {
-    "description": "Up-inspired artwork includes Kevin, the dog pack, young Ellie, the balloon house and familiar adventure keepsakes. Camping tools, travel objects and decorative flying scenes accompany the recognizable film subjects.",
-    "lead": "Up-inspired artwork includes Kevin, the dog pack, young Ellie, the balloon house and familiar adventure keepsakes. Camping tools, travel objects and decorative flying scenes accompany the recognizable film subjects.",
-    "intro": "Up-inspired artwork includes Kevin, the dog pack, young Ellie, the balloon house and familiar adventure keepsakes. Camping tools, travel objects and decorative flying scenes accompany the recognizable film subjects.",
+    "description": "Up arrows, pointing hands and stair-climbing characters show direction and movement. Choose road signs, classroom word cards, rising balloons, upload symbols or black-and-white outlines; the collection also includes a wheelchair ramp, a growing sunflower and an ascending mountain trail.",
+    "lead": "Up arrows, pointing hands and stair-climbing characters show direction and movement. Choose road signs, classroom word cards, rising balloons, upload symbols or black-and-white outlines; the collection also includes a wheelchair ramp, a growing sunflower and an ascending mountain trail.",
+    "intro": "Up arrows, pointing hands and stair-climbing characters show direction and movement. Choose road signs, classroom word cards, rising balloons, upload symbols or black-and-white outlines; the collection also includes a wheelchair ramp, a growing sunflower and an ascending mountain trail.",
+    "heading": "Explore upward arrows and movement",
     "featured": [
-      "up-adventure-living-room-mantel-clipart",
-      "up-adventure-savings-jar-clipart",
-      "up-alpha-doberman-clipart",
-      "up-arrow-adventure-kite-clipart",
-      "up-balloon-inflator-kit-clipart"
+      "up-direction-upward-direction-road-sign",
+      "up-direction-girl-pointing-up",
+      "up-direction-wheelchair-ramp-up",
+      "up-direction-bubbles-floating-up",
+      "up-direction-outline-pointing-hand"
     ],
     "chips": [],
-    "heading": "Explore Up illustrations",
     "paragraphs": [],
     "related": []
   },
@@ -11876,6 +11876,22 @@
     ],
     "chips": [],
     "heading": "Explore Caroling illustrations",
+    "paragraphs": [],
+    "related": []
+  },
+  "up-movie": {
+    "description": "Up Movie illustrations include the balloon-lifted house, Kevin, young Ellie and the dog pack. Adventure books, camping gear, flying objects and familiar keepsakes accompany the film characters in color and black-and-white drawings.",
+    "lead": "Up Movie illustrations include the balloon-lifted house, Kevin, young Ellie and the dog pack. Adventure books, camping gear, flying objects and familiar keepsakes accompany the film characters in color and black-and-white drawings.",
+    "intro": "Up Movie illustrations include the balloon-lifted house, Kevin, young Ellie and the dog pack. Adventure books, camping gear, flying objects and familiar keepsakes accompany the film characters in color and black-and-white drawings.",
+    "featured": [
+      "up-adventure-living-room-mantel-clipart",
+      "up-adventure-savings-jar-clipart",
+      "up-alpha-doberman-clipart",
+      "up-arrow-adventure-kite-clipart",
+      "up-balloon-inflator-kit-clipart"
+    ],
+    "chips": [],
+    "heading": "Explore Up Movie illustrations",
     "paragraphs": [],
     "related": []
   }

@@ -721,30 +721,6 @@
         }
       ]
     },
-    "up": {
-      "status": "checked-against-catalog",
-      "sourceSha256": "59e88abba6e08a9630ffbde905b7b6c5275223652605fa5ee917a6312a3a8f1f",
-      "checkedAt": "2026-10-28T22:24:21.247Z",
-      "intro": "Up-inspired artwork includes Kevin, the dog pack, young Ellie, the balloon house and familiar adventure keepsakes. Camping tools, travel objects and decorative flying scenes accompany the recognizable film subjects.",
-      "evidence": [
-        {
-          "id": "up-adventure-living-room-mantel-clipart",
-          "imageSha256": "c371bfec7d437505d51654e713c311c678bcd535f892f27ce8ddf40c08b534d9"
-        },
-        {
-          "id": "up-carl-bow-tie-keepsakes-black-white-clipart",
-          "imageSha256": "a9635415039aee4519e8821df7cbabf5eca668cc31ee454b765b88af96334e56"
-        },
-        {
-          "id": "up-grape-soda-badge-clipart",
-          "imageSha256": "f42091a96a98c8b6c50e29c1e0b4c1c43e39d567fc6069781a64bd0dc54bbca3"
-        },
-        {
-          "id": "up-zoo-balloon-cart-clipart",
-          "imageSha256": "3131b47b065aeac1f1edfd8a8b72283cb17758200512c494c137b500d2bf6ccd"
-        }
-      ]
-    },
     "uterus": {
       "status": "checked-against-catalog",
       "sourceSha256": "c231047a318123d9bef1e90a1bdf57d412dbae901b4d9c3819eec119d1376407",

@@ -1,0 +1,3617 @@
+{
+  "schema": 1,
+  "status": "SOURCE_BOUND_AND_CDN_VERIFIED",
+  "baselineCatalogSha256": "2b2397ef5abb49abcffcceda09785528d68293a759c60f5359cf917d2e31b44c",
+  "priorArtworkRecords": [
+    {
+      "id": "up-adventure-living-room-mantel-clipart",
+      "title": "Green-Tiled Fireplace and Keepsakes",
+      "alt": "A cream fireplace holds logs beneath two oval frames and purple flowers.",
+      "description": "Green patterned tiles surround the dark hearth.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Orange",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-adventure-living-room-mantel-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.334941+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 704014,
+          "sha256": "c371bfec7d437505d51654e713c311c678bcd535f892f27ce8ddf40c08b534d9"
+        },
+        "pdf": {
+          "bytes": 967545,
+          "sha256": "936d9a57748bda2c3b473b8e5787c93f4d4ace10d2b6b6a6842d4d8dfc00461a"
+        },
+        "thumb": {
+          "bytes": 35880,
+          "sha256": "a15cc46334bfd9bfe8e36cf843cbcbedbcb9a5cc3d5656a346bc184c6f8df3e5"
+        }
+      },
+      "webp": "/catalog/up/up-adventure-living-room-mantel-clipart.webp",
+      "pdf": "/catalog/up/up-adventure-living-room-mantel-clipart.pdf",
+      "thumb": "/catalog/up/up-adventure-living-room-mantel-clipart-thumb.webp"
+    },
+    {
+      "id": "up-adventure-route-map-black-white-clipart",
+      "title": "Adventure Route Across an Open Map",
+      "alt": "A folded map shows a dotted route from a city toward a flat-topped mountain in grayscale.",
+      "description": "A tied ribbon crosses the center pages.",
+      "style": "Black & White",
+      "visualStyle": "Black-and-white illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Gray",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-adventure-route-map-black-white-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.336645+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 314210,
+          "sha256": "8feea6f0e79a2c557aa7f41db13f6e31a167638ef4145bc574cbeadb56cadb32"
+        },
+        "pdf": {
+          "bytes": 607009,
+          "sha256": "d8fc5bbba5d20e35f27747ba38cd4bee1cc7064b8c80effce7a532f1bb00feff"
+        },
+        "thumb": {
+          "bytes": 31534,
+          "sha256": "f9bf4ce586be679116ae2c3a04a95e9d907dff7d5b3906e23f191bc1c96d3673"
+        }
+      },
+      "webp": "/catalog/up/up-adventure-route-map-black-white-clipart.webp",
+      "pdf": "/catalog/up/up-adventure-route-map-black-white-clipart.pdf",
+      "thumb": "/catalog/up/up-adventure-route-map-black-white-clipart-thumb.webp"
+    },
+    {
+      "id": "up-adventure-savings-jar-clipart",
+      "title": "Travel Savings Jar",
+      "alt": "A glass jar packed with coins carries a waterfall picture.",
+      "description": "A loose lid and small airplane ticket sit beside the savings.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Orange",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-adventure-savings-jar-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.336941+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 742446,
+          "sha256": "e90191d99f854782b653421f04eb5e32bbcfbd09776ec02e076dc864097f4d4c"
+        },
+        "pdf": {
+          "bytes": 944212,
+          "sha256": "71e0b20a444318b3f31fdc782d45a3605502c3fa22be573f6090107f5c0054ab"
+        },
+        "thumb": {
+          "bytes": 40188,
+          "sha256": "7ecabb41a45ffac7e295350a4fce6e309ebea2311141ac63ff5208988f5e5645"
+        }
+      },
+      "webp": "/catalog/up/up-adventure-savings-jar-clipart.webp",
+      "pdf": "/catalog/up/up-adventure-savings-jar-clipart.pdf",
+      "thumb": "/catalog/up/up-adventure-savings-jar-clipart-thumb.webp"
+    },
+    {
+      "id": "up-airship-propeller-pod-black-white-clipart",
+      "title": "Airship Propeller Engine",
+      "alt": "A riveted engine pod carries a large three-bladed propeller in grayscale.",
+      "description": "Dark cylinders ring the central hub.",
+      "style": "Black & White",
+      "visualStyle": "Black-and-white illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Gray",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-airship-propeller-pod-black-white-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.337244+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 370976,
+          "sha256": "f90fbaf4df00f72cc89fca86fc7125ffe9d3066ec8057ca78c27138505ab3dab"
+        },
+        "pdf": {
+          "bytes": 733985,
+          "sha256": "9dd32549538c18a47c28dab3d89e25c4597d439ca46d4745b888dee99d26e42b"
+        },
+        "thumb": {
+          "bytes": 35670,
+          "sha256": "731ec7675f8e117145300fe4dd72a1a6d6ec43c90f0856bd2d3d38dc30d636f4"
+        }
+      },
+      "webp": "/catalog/up/up-airship-propeller-pod-black-white-clipart.webp",
+      "pdf": "/catalog/up/up-airship-propeller-pod-black-white-clipart.pdf",
+      "thumb": "/catalog/up/up-airship-propeller-pod-black-white-clipart-thumb.webp"
+    },
+    {
+      "id": "up-alpha-doberman-clipart",
+      "title": "Alpha From Up",
+      "alt": "Alpha the black and tan Doberman from Up stands with pointed ears and a broad collar.",
+      "description": "A red circular device sits at the front of Alpha's collar beneath the dog's stern muzzle.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Black",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-alpha-doberman-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.337449+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 436234,
+          "sha256": "ada3a65e826b41444ac89c4a4ebe06f4be55e5bf9aa5602a3f7af7864b3e7e63"
+        },
+        "pdf": {
+          "bytes": 988252,
+          "sha256": "c3772bcaa477fbb3c4e4ec665b606cfae9f4b8c92653497a10eb3500799f5468"
+        },
+        "thumb": {
+          "bytes": 25526,
+          "sha256": "e810c95707b7de9303915302df892ab7115b2b5cdd501094a13c72992e353077"
+        }
+      },
+      "webp": "/catalog/up/up-alpha-doberman-clipart.webp",
+      "pdf": "/catalog/up/up-alpha-doberman-clipart.pdf",
+      "thumb": "/catalog/up/up-alpha-doberman-clipart-thumb.webp",
+      "productIdentity": {
+        "brand": "Pixar",
+        "family": "Alpha",
+        "model": null,
+        "kind": "product-family",
+        "generation": null,
+        "visibleFeatures": "Alpha the black and tan Doberman stands with pointed ears and a broad collar. A red circular device sits at the front of the stern-looking dog's collar.",
+        "reference": "https://www.pixar.com/upfilm",
+        "checkedAt": "2026-10-28T22:08:44.337449+00:00"
+      }
+    },
+    {
+      "id": "up-arrow-adventure-kite-clipart",
+      "title": "Turquoise Adventure Kite",
+      "alt": "A turquoise diamond kite has coral corners and a bow-tied tail.",
+      "description": "An orange spool of pale string rests below the wooden frame.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Blue",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-arrow-adventure-kite-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.337732+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 451256,
+          "sha256": "67cc3afe44045a3f2fee5fa194eff69674327e9deaaffac095fc135a112348ac"
+        },
+        "pdf": {
+          "bytes": 846372,
+          "sha256": "f9e3c995ada4528471dea1c7c283eb67b57525919285ebcd6c08d96bf348093f"
+        },
+        "thumb": {
+          "bytes": 30728,
+          "sha256": "a0d0aeb5b0bb60aa9363288963d053952a0bfd82c90f17c01f1227e14f08d98b"
+        }
+      },
+      "webp": "/catalog/up/up-arrow-adventure-kite-clipart.webp",
+      "pdf": "/catalog/up/up-arrow-adventure-kite-clipart.pdf",
+      "thumb": "/catalog/up/up-arrow-adventure-kite-clipart-thumb.webp"
+    },
+    {
+      "id": "up-balloon-inflator-kit-clipart",
+      "title": "Balloon Inflator With Colored Balloons",
+      "alt": "A green cylinder connects to a black hose beside three deflated balloons.",
+      "description": "A wooden string spool sits near the red, blue and yellow rubber shapes.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Green",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-balloon-inflator-kit-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.337986+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 726012,
+          "sha256": "ed2df0a4fb71dac2008e19cc7272740e463a9718bb927065cee078be613599d6"
+        },
+        "pdf": {
+          "bytes": 945748,
+          "sha256": "bf4d82365a8f0e6399c455bedb26c8395e81fb2ec72752a8e33994130a560db9"
+        },
+        "thumb": {
+          "bytes": 42698,
+          "sha256": "ec7faa63aed65d066c2904170dc51aa775a4118be8aa22d3369f027617a95dc3"
+        }
+      },
+      "webp": "/catalog/up/up-balloon-inflator-kit-clipart.webp",
+      "pdf": "/catalog/up/up-balloon-inflator-kit-clipart.pdf",
+      "thumb": "/catalog/up/up-balloon-inflator-kit-clipart-thumb.webp"
+    },
+    {
+      "id": "up-balloon-knot-storm-black-white-clipart",
+      "title": "Balloons Beside a Storm Cloud",
+      "alt": "Three tied balloons float beside a thundercloud in grayscale.",
+      "description": "Two lightning bolts hang below the dark cloud.",
+      "style": "Black & White",
+      "visualStyle": "Black-and-white illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Gray",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-balloon-knot-storm-black-white-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.338203+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 206518,
+          "sha256": "597d9bb78a98158ce3e1ed3ccae71b2f7395cc1a1f6ba591ed8fcbc68d46a62f"
+        },
+        "pdf": {
+          "bytes": 491446,
+          "sha256": "5452c807d2f454b91e65f4c2bfc16c7aaf2145bde8133e2dcc6e14c1ee1d39fd"
+        },
+        "thumb": {
+          "bytes": 20280,
+          "sha256": "7b1ac4f9e56bdcec1106389832f48256ac19a4ae5f21e96d05decbd3243c8572"
+        }
+      },
+      "webp": "/catalog/up/up-balloon-knot-storm-black-white-clipart.webp",
+      "pdf": "/catalog/up/up-balloon-knot-storm-black-white-clipart.pdf",
+      "thumb": "/catalog/up/up-balloon-knot-storm-black-white-clipart-thumb.webp"
+    },
+    {
+      "id": "up-balloon-lifted-house-clipart",
+      "title": "Carl's Balloon House From Up",
+      "alt": "A yellow Victorian-style house hangs beneath a dense cluster of colorful balloons.",
+      "description": "Fine strings meet near the chimney above pink and green window trim.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Orange",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-balloon-lifted-house-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.338403+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 712880,
+          "sha256": "0f958cbfbfab799d0e99bc4e60b760920fa2583815da7f32e2d239deb2a3906d"
+        },
+        "pdf": {
+          "bytes": 980322,
+          "sha256": "3bd549a72664094126f8805801dc8b3eff0c02010fc4b768c2da79e1e984fd3a"
+        },
+        "thumb": {
+          "bytes": 41368,
+          "sha256": "389ca2be775e0ff66abe810cc59a596129a211a7bbd8851a95bf2f2db9ce7370"
+        }
+      },
+      "webp": "/catalog/up/up-balloon-lifted-house-clipart.webp",
+      "pdf": "/catalog/up/up-balloon-lifted-house-clipart.pdf",
+      "thumb": "/catalog/up/up-balloon-lifted-house-clipart-thumb.webp"
+    },
+    {
+      "id": "up-beta-rottweiler-clipart",
+      "title": "Beta From Up",
+      "alt": "Beta the black and tan Rottweiler from Up sits wearing a device collar.",
+      "description": "Broad paws and a rounded muzzle distinguish Beta beneath his dark collar.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Brown",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-beta-rottweiler-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.338677+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 554066,
+          "sha256": "1c7c94bb62878a4530ac34440602d10c5264c1d20a8d33b904de3cb73d24e8e0"
+        },
+        "pdf": {
+          "bytes": 985488,
+          "sha256": "26ad1fe36e356f1ca87f4cff7f3244b50521bfb4c100c1fa18985825875315df"
+        },
+        "thumb": {
+          "bytes": 26108,
+          "sha256": "fb8ff371a3af1c3cb2194088aafde9de09bd7087dcd465e157c2d556afb2a594"
+        }
+      },
+      "webp": "/catalog/up/up-beta-rottweiler-clipart.webp",
+      "pdf": "/catalog/up/up-beta-rottweiler-clipart.pdf",
+      "thumb": "/catalog/up/up-beta-rottweiler-clipart-thumb.webp",
+      "productIdentity": {
+        "brand": "Pixar",
+        "family": "Beta",
+        "model": null,
+        "kind": "product-family",
+        "generation": null,
+        "visibleFeatures": "Beta the black and tan Rottweiler sits wearing a device collar. Broad paws and a rounded muzzle distinguish the compact dog.",
+        "reference": "https://www.pixar.com/upfilm",
+        "checkedAt": "2026-10-28T22:08:44.338677+00:00"
+      }
+    },
+    {
+      "id": "up-bird-capture-cage-clipart",
+      "title": "Open Brass Birdcage",
+      "alt": "A domed golden birdcage has an open curved door.",
+      "description": "A small purple feather lies on the round base.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Brown",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-bird-capture-cage-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.338867+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 652356,
+          "sha256": "b43ea1d9d39c0f21ef5e6c50ba454dd6f937b8eb2290d838510541e103d847f6"
+        },
+        "pdf": {
+          "bytes": 992938,
+          "sha256": "08bdd1c057f84f0875fb9cdc5267973c99fdeed11e2f9ebeea3d47b7297d9051"
+        },
+        "thumb": {
+          "bytes": 53000,
+          "sha256": "bf6f70beeafa7c2329394682dae261b679de3152cab53badda0010ab22d52a11"
+        }
+      },
+      "webp": "/catalog/up/up-bird-capture-cage-clipart.webp",
+      "pdf": "/catalog/up/up-bird-capture-cage-clipart.pdf",
+      "thumb": "/catalog/up/up-bird-capture-cage-clipart-thumb.webp"
+    },
+    {
+      "id": "up-bird-skeleton-display-black-white-clipart",
+      "title": "Long-Beaked Bird Skeleton Display",
+      "alt": "A stylized bird skeleton stands on a dark museum plinth in grayscale.",
+      "description": "Its large hooked beak rises above a long curved neck.",
+      "style": "Black & White",
+      "visualStyle": "Black-and-white illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Gray",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-bird-skeleton-display-black-white-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.339424+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 240758,
+          "sha256": "616827a56ae2565f536a916829e624f58d4aede9cb9a76a594ba9b3a9b9928b3"
+        },
+        "pdf": {
+          "bytes": 473469,
+          "sha256": "21fa2ab74c19a05427611c660c709ff12caa7c684f043085218ad241d4fdea84"
+        },
+        "thumb": {
+          "bytes": 26406,
+          "sha256": "91a5780b2e354beeee09795c9386383e5300640049b9960da4684c714521275b"
+        }
+      },
+      "webp": "/catalog/up/up-bird-skeleton-display-black-white-clipart.webp",
+      "pdf": "/catalog/up/up-bird-skeleton-display-black-white-clipart.pdf",
+      "thumb": "/catalog/up/up-bird-skeleton-display-black-white-clipart-thumb.webp"
+    },
+    {
+      "id": "up-carl-bow-tie-keepsakes-black-white-clipart",
+      "title": "Square Glasses With Bow Tie and Watch",
+      "alt": "Black square-framed glasses sit above a bow tie and pocket watch.",
+      "description": "Fine highlights distinguish the grayscale keepsake arrangement.",
+      "style": "Black & White",
+      "visualStyle": "Black-and-white illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Black",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-carl-bow-tie-keepsakes-black-white-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.339643+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 342922,
+          "sha256": "a9635415039aee4519e8821df7cbabf5eca668cc31ee454b765b88af96334e56"
+        },
+        "pdf": {
+          "bytes": 599865,
+          "sha256": "4670a2360b03f6fb6e2e0ef78cfa04c2f48f21be75a44feababbba575acbd51c"
+        },
+        "thumb": {
+          "bytes": 30800,
+          "sha256": "439647212e9a576679e39527342d6cfd190c0985b74a8b1355041c640ded9cd3"
+        }
+      },
+      "webp": "/catalog/up/up-carl-bow-tie-keepsakes-black-white-clipart.webp",
+      "pdf": "/catalog/up/up-carl-bow-tie-keepsakes-black-white-clipart.pdf",
+      "thumb": "/catalog/up/up-carl-bow-tie-keepsakes-black-white-clipart-thumb.webp"
+    },
+    {
+      "id": "up-carl-ellie-armchairs-clipart",
+      "title": "Carl and Ellie's Armchairs",
+      "alt": "A brown square-backed chair sits beside a pink floral wingback chair.",
+      "description": "A small table with a closed book separates the pair.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Brown",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-carl-ellie-armchairs-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.339880+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 783506,
+          "sha256": "56eb4583f97970ff8322e7d9d74ec562d6c3ed0b1ccaab35d1b52a48a87b2cab"
+        },
+        "pdf": {
+          "bytes": 979683,
+          "sha256": "439edb2038d048a68ad95db039c2941f2b979795c0564778f22f3bb45336fd57"
+        },
+        "thumb": {
+          "bytes": 38468,
+          "sha256": "3463dbfc8673971274f2c203d55e4a2f18a69a977cb67910f199cb53287acb26"
+        }
+      },
+      "webp": "/catalog/up/up-carl-ellie-armchairs-clipart.webp",
+      "pdf": "/catalog/up/up-carl-ellie-armchairs-clipart.pdf",
+      "thumb": "/catalog/up/up-carl-ellie-armchairs-clipart-thumb.webp"
+    },
+    {
+      "id": "up-carl-travel-trunk-clipart",
+      "title": "Travel Trunk With a Rolled Map",
+      "alt": "A brown leather trunk carries brass fittings and a strapped paper map.",
+      "description": "A waterfall sticker decorates the worn side panel.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Brown",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-carl-travel-trunk-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.340089+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 798778,
+          "sha256": "a69ffb431f760097bae75b38f5ef2d88876cb6b2623257274f37ebcb97986ec2"
+        },
+        "pdf": {
+          "bytes": 991508,
+          "sha256": "710e695d3d51da4265946177622f21ab571aea1750b564bb95bd66b04e242a55"
+        },
+        "thumb": {
+          "bytes": 40392,
+          "sha256": "2fbfe92e56413b9eae70e571a1dd10886e749ad3e41bd69e56581e7aa92687ac"
+        }
+      },
+      "webp": "/catalog/up/up-carl-travel-trunk-clipart.webp",
+      "pdf": "/catalog/up/up-carl-travel-trunk-clipart.pdf",
+      "thumb": "/catalog/up/up-carl-travel-trunk-clipart-thumb.webp"
+    },
+    {
+      "id": "up-childhood-aviator-goggles-clipart",
+      "title": "Aviator Cap With Goggles and Scarf",
+      "alt": "A brown leather flying cap holds large brass goggles.",
+      "description": "A blue knitted scarf wraps beneath the fleece-lined ear flaps.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Brown",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-childhood-aviator-goggles-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.340285+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 911556,
+          "sha256": "f19361ef6e5435ceeb7766f3b2e759fba17dabd9fd83146878712cb445908a21"
+        },
+        "pdf": {
+          "bytes": 977777,
+          "sha256": "65971680a76518b87149fe611fb5d4e2423ea9aed3c7dadbc6d22c9cad777a08"
+        },
+        "thumb": {
+          "bytes": 48464,
+          "sha256": "8587f5f462a6a2089e9e74633a27361c91c2a8f594a09e613cba38c8dd56ad46"
+        }
+      },
+      "webp": "/catalog/up/up-childhood-aviator-goggles-clipart.webp",
+      "pdf": "/catalog/up/up-childhood-aviator-goggles-clipart.pdf",
+      "thumb": "/catalog/up/up-childhood-aviator-goggles-clipart-thumb.webp"
+    },
+    {
+      "id": "up-chocolate-bird-tracks-clipart",
+      "title": "Bird Tracks Beside Chocolate",
+      "alt": "A partially unwrapped chocolate bar lies beside three-toed prints in brown soil.",
+      "description": "Crumbs and a torn orange wrapper border the footprints.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Brown",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-chocolate-bird-tracks-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.340498+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 748916,
+          "sha256": "4d5647f89801525b6b293e33c10eaff18f45bc3e0b5eee6ea052e013e2fb93a2"
+        },
+        "pdf": {
+          "bytes": 984509,
+          "sha256": "8df6c94e1477a4fc734d3182ff65f581b2aee9ad7137f28a3f59a4fb5bebaffe"
+        },
+        "thumb": {
+          "bytes": 42736,
+          "sha256": "b9216ccd7f709b680344f060974b320766353d52cc8edec112f902077e421345"
+        }
+      },
+      "webp": "/catalog/up/up-chocolate-bird-tracks-clipart.webp",
+      "pdf": "/catalog/up/up-chocolate-bird-tracks-clipart.pdf",
+      "thumb": "/catalog/up/up-chocolate-bird-tracks-clipart-thumb.webp"
+    },
+    {
+      "id": "up-cone-of-shame-clipart",
+      "title": "Transparent Pet Recovery Cone",
+      "alt": "A clear protective collar flares above a black fastening band.",
+      "description": "Pale blue reflections define the wide translucent rim.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "White",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-cone-of-shame-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.340707+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 440028,
+          "sha256": "e2500b1467eee729d21cefe8091b3810b1e8f6c942247b0942c8f0882c08c914"
+        },
+        "pdf": {
+          "bytes": 943685,
+          "sha256": "bbd4465fb698806b9cc553bd695f51a6d3991d9c8229bb739762dd4904505bbb"
+        },
+        "thumb": {
+          "bytes": 21608,
+          "sha256": "3c63db49b8b5f6da032783217e7e22dd85741cf91126b1fe49719d0092036ba0"
+        }
+      },
+      "webp": "/catalog/up/up-cone-of-shame-clipart.webp",
+      "pdf": "/catalog/up/up-cone-of-shame-clipart.pdf",
+      "thumb": "/catalog/up/up-cone-of-shame-clipart-thumb.webp"
+    },
+    {
+      "id": "up-discarded-furniture-pile-black-white-clipart",
+      "title": "Furniture and Moving Boxes",
+      "alt": "An open cabinet, lamp, rolled rug and taped box form a grayscale pile.",
+      "description": "The cabinet doors spread around the empty shelves.",
+      "style": "Black & White",
+      "visualStyle": "Black-and-white illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Gray",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-discarded-furniture-pile-black-white-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.340908+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 299132,
+          "sha256": "0b4a38958e33e17c769796851d326ace59a16bbb46ae074001ee9c358811827c"
+        },
+        "pdf": {
+          "bytes": 661495,
+          "sha256": "24e807ef4b217fa0b71b8d051915c7dd91352bbec579a7a10186c486c4a585bb"
+        },
+        "thumb": {
+          "bytes": 24718,
+          "sha256": "15eaba7e54e4c81bba44937ffa91dac614454afe1ab8075e5d863e28b295475d"
+        }
+      },
+      "webp": "/catalog/up/up-discarded-furniture-pile-black-white-clipart.webp",
+      "pdf": "/catalog/up/up-discarded-furniture-pile-black-white-clipart.pdf",
+      "thumb": "/catalog/up/up-discarded-furniture-pile-black-white-clipart-thumb.webp"
+    },
+    {
+      "id": "up-dog-pilot-biplane-clipart",
+      "title": "Yellow and Navy Biplane",
+      "alt": "A small biplane has yellow wings, a navy body and a wooden propeller.",
+      "description": "Brown goggles rest by the open cockpit; no pilot is visible.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Brown",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-dog-pilot-biplane-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.341101+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 782534,
+          "sha256": "51e25b66082f2d9b93e5fc0d7e4c4cbfb22a78160209800545ad844f9a6b0e99"
+        },
+        "pdf": {
+          "bytes": 959418,
+          "sha256": "7b8ec87a5660c3e5a9038fc6d42b07961607a3e3287a092899660a4c43cc7866"
+        },
+        "thumb": {
+          "bytes": 44288,
+          "sha256": "76775777206dbfa37b41d9d55bd4171ea4ae2b95b54e116aa8a8c7153d200180"
+        }
+      },
+      "webp": "/catalog/up/up-dog-pilot-biplane-clipart.webp",
+      "pdf": "/catalog/up/up-dog-pilot-biplane-clipart.pdf",
+      "thumb": "/catalog/up/up-dog-pilot-biplane-clipart-thumb.webp"
+    },
+    {
+      "id": "up-empty-airship-cockpit-clipart",
+      "title": "Airship Cockpit With Wooden Wheel",
+      "alt": "A large steering wheel stands between brass control panels.",
+      "description": "Riveted window frames curve above the wooden cockpit floor.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Brown",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-empty-airship-cockpit-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.341297+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 1032170,
+          "sha256": "080c018755f38b7dfe49989e0fb977215d57541d45505a8297aacc6ed102e7c6"
+        },
+        "pdf": {
+          "bytes": 978643,
+          "sha256": "dfd0718d772ca22c377b4c9cd147996ab3e498af47f54cb46501c3a395ab47fb"
+        },
+        "thumb": {
+          "bytes": 57276,
+          "sha256": "2e146d69a14edfafd0612b4c7fd198a05be1684b30bf8c215430d00ec681400c"
+        }
+      },
+      "webp": "/catalog/up/up-empty-airship-cockpit-clipart.webp",
+      "pdf": "/catalog/up/up-empty-airship-cockpit-clipart.pdf",
+      "thumb": "/catalog/up/up-empty-airship-cockpit-clipart-thumb.webp"
+    },
+    {
+      "id": "up-expedition-cooking-kit-black-white-clipart",
+      "title": "Strapped Camping Cookware",
+      "alt": "A kettle, pots and spoon pack together in grayscale.",
+      "description": "Dark straps secure the rounded metal cooking kit.",
+      "style": "Black & White",
+      "visualStyle": "Black-and-white illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Gray",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-expedition-cooking-kit-black-white-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.342095+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 345978,
+          "sha256": "7f33cc51508aeacd20871a8daf483a6fcda2c1312a37fcf22be5b87f20bd9b3e"
+        },
+        "pdf": {
+          "bytes": 724007,
+          "sha256": "be90f509855eda376c86fb79072a1e5460c781b194e66d95fdc0f83fb822f896"
+        },
+        "thumb": {
+          "bytes": 30328,
+          "sha256": "a1f866630530e794f98aaa5cd97a974a3960da4e14d2c5cf625ec0711a62ab06"
+        }
+      },
+      "webp": "/catalog/up/up-expedition-cooking-kit-black-white-clipart.webp",
+      "pdf": "/catalog/up/up-expedition-cooking-kit-black-white-clipart.pdf",
+      "thumb": "/catalog/up/up-expedition-cooking-kit-black-white-clipart-thumb.webp"
+    },
+    {
+      "id": "up-expedition-rope-harness-clipart",
+      "title": "Rope and Leather Expedition Harness",
+      "alt": "Coiled tan rope sits beside a brown buckled harness.",
+      "description": "Golden hooks hang from the broad stitched belt.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Brown",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-expedition-rope-harness-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.342306+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 636304,
+          "sha256": "804d57678268a648867fe7e42e54ba3e92461f334ec418cdd9a9ad66737bc2a9"
+        },
+        "pdf": {
+          "bytes": 960684,
+          "sha256": "24cf665daa3723b715bcbb4742a6af7f7a689cdba73d6baab997d82a657e6506"
+        },
+        "thumb": {
+          "bytes": 40236,
+          "sha256": "721ef6d833e283ea13b5d88bab597bf0ac9672984727ae74bbfcd3c9ed912fca"
+        }
+      },
+      "webp": "/catalog/up/up-expedition-rope-harness-clipart.webp",
+      "pdf": "/catalog/up/up-expedition-rope-harness-clipart.pdf",
+      "thumb": "/catalog/up/up-expedition-rope-harness-clipart-thumb.webp"
+    },
+    {
+      "id": "up-floating-adventure-compass-clipart",
+      "title": "Compass Lifted by Balloons",
+      "alt": "Five colorful balloons suspend a green-rimmed compass.",
+      "description": "A rolled paper map hangs beside the golden frame.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Orange",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-floating-adventure-compass-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.342510+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 631246,
+          "sha256": "1b036dba9ccbe03ce2de1a00850c76dbf07b6616e258f493afbd602aec2524ec"
+        },
+        "pdf": {
+          "bytes": 931362,
+          "sha256": "e38cce46bdf076dc7f22996b05faaa1fa2ee28d535643ce2e26207dd21c4ffda"
+        },
+        "thumb": {
+          "bytes": 36818,
+          "sha256": "d296f38068f708649141c0fc0c1feb41d54ae7335e3c15029ba1cec5f81e02b0"
+        }
+      },
+      "webp": "/catalog/up/up-floating-adventure-compass-clipart.webp",
+      "pdf": "/catalog/up/up-floating-adventure-compass-clipart.pdf",
+      "thumb": "/catalog/up/up-floating-adventure-compass-clipart-thumb.webp"
+    },
+    {
+      "id": "up-gamma-bulldog-clipart",
+      "title": "Gamma From Up",
+      "alt": "Gamma the brown and white bulldog from Up stands wearing a dark device collar.",
+      "description": "A red button sits on Gamma's collar beneath the dog's heavy jowls.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Orange",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-gamma-bulldog-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.342716+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 681774,
+          "sha256": "127bf35329d7f5fb3161fc2513cad5606ba6d86408deeba25865c21a40b26780"
+        },
+        "pdf": {
+          "bytes": 999792,
+          "sha256": "17e70dc003ab208f446daecc14e85702a9491f9210d5332827ac745e334df84b"
+        },
+        "thumb": {
+          "bytes": 36688,
+          "sha256": "a41e4f38729f6fd42f5e4e896b7582a7732cbe40486bfc67b5c6041ccff5b1dd"
+        }
+      },
+      "webp": "/catalog/up/up-gamma-bulldog-clipart.webp",
+      "pdf": "/catalog/up/up-gamma-bulldog-clipart.pdf",
+      "thumb": "/catalog/up/up-gamma-bulldog-clipart-thumb.webp",
+      "productIdentity": {
+        "brand": "Pixar",
+        "family": "Gamma",
+        "model": null,
+        "kind": "product-family",
+        "generation": null,
+        "visibleFeatures": "Gamma the brown and white bulldog stands wearing a dark device collar. A red button sits beneath the dog's heavy jowls.",
+        "reference": "https://www.pixar.com/upfilm",
+        "checkedAt": "2026-10-28T22:08:44.342716+00:00"
+      }
+    },
+    {
+      "id": "up-grape-soda-badge-clipart",
+      "title": "Grape Soda Bottle Cap Badge",
+      "alt": "A purple Grape Soda cap hangs from a silver safety pin.",
+      "description": "A small grape cluster appears above the bold lettering.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Purple",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-grape-soda-badge-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.342921+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 630948,
+          "sha256": "f42091a96a98c8b6c50e29c1e0b4c1c43e39d567fc6069781a64bd0dc54bbca3"
+        },
+        "pdf": {
+          "bytes": 982395,
+          "sha256": "6283c2c9146a1dbe644fabdc11562a56bd1ca78f9300c15c799f2dd4124fbf24"
+        },
+        "thumb": {
+          "bytes": 34162,
+          "sha256": "4bf9a210382a874a693436882d4bd75654289a6b452469b6e0c7552aa4122b0e"
+        }
+      },
+      "webp": "/catalog/up/up-grape-soda-badge-clipart.webp",
+      "pdf": "/catalog/up/up-grape-soda-badge-clipart.pdf",
+      "thumb": "/catalog/up/up-grape-soda-badge-clipart-thumb.webp"
+    },
+    {
+      "id": "up-iridescent-kevin-feathers-clipart",
+      "title": "Colorful Feathers Tied With a Bow",
+      "alt": "Orange, purple and turquoise feathers form a small bundle.",
+      "description": "A cream bow gathers their thin stems.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Blue",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-iridescent-kevin-feathers-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.343129+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 591570,
+          "sha256": "0811bd4489384fdeeeefc65000a49b01e407987bb32768099badbc6b1b7c6d58"
+        },
+        "pdf": {
+          "bytes": 967579,
+          "sha256": "3d7bf9e1e0f608d11b146d9070da9527e346dcad35d27f702e698272102c6d93"
+        },
+        "thumb": {
+          "bytes": 37622,
+          "sha256": "05951957dc10ce3f10a1303bc0ebf0b6a27efde0a841126a1bbfc83723f46f86"
+        }
+      },
+      "webp": "/catalog/up/up-iridescent-kevin-feathers-clipart.webp",
+      "pdf": "/catalog/up/up-iridescent-kevin-feathers-clipart.pdf",
+      "thumb": "/catalog/up/up-iridescent-kevin-feathers-clipart-thumb.webp"
+    },
+    {
+      "id": "up-kevin-chicks-nest-clipart",
+      "title": "Kevin's Chicks in a Nest",
+      "alt": "Three blue and golden chicks crowd a leafy twig nest.",
+      "description": "Purple head plumes and wide orange beaks echo Kevin's colorful design from Up.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Brown",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-kevin-chicks-nest-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.343343+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 1006678,
+          "sha256": "d90728adb1f3ec4100f885aa0e07dd745f06f227e72cf4d735a635d23ca2f913"
+        },
+        "pdf": {
+          "bytes": 985096,
+          "sha256": "4f24e58f4fafe00862ca03a3f7c057e52291139d7ba9b333f22a29f73532323e"
+        },
+        "thumb": {
+          "bytes": 61514,
+          "sha256": "00352ddffe0ee4a399d1c9f0b8aaa3bcc2b624ca46cbe59a8f7f532512833977"
+        }
+      },
+      "webp": "/catalog/up/up-kevin-chicks-nest-clipart.webp",
+      "pdf": "/catalog/up/up-kevin-chicks-nest-clipart.pdf",
+      "thumb": "/catalog/up/up-kevin-chicks-nest-clipart-thumb.webp"
+    },
+    {
+      "id": "up-kevin-colorful-bird-clipart",
+      "title": "Kevin From Up",
+      "alt": "Kevin from Up stands on long dark legs with a blue neck and orange beak.",
+      "description": "Purple, turquoise and golden feathers brighten Kevin's tall flightless-bird silhouette.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Blue",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-kevin-colorful-bird-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.343559+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 357618,
+          "sha256": "500781f83b9e8b0c92968af2e4774c4f79b5abb2f3ba96c7664a206178df8f8f"
+        },
+        "pdf": {
+          "bytes": 700074,
+          "sha256": "946062bbca619d66bec3bff664926e86dc30292a7fe63c86524975c7d5c08862"
+        },
+        "thumb": {
+          "bytes": 24936,
+          "sha256": "f6dfbc40fe23cfa07fbaea2152ba37bd395e0d81f7283671fa1a23fb72dcba9d"
+        }
+      },
+      "webp": "/catalog/up/up-kevin-colorful-bird-clipart.webp",
+      "pdf": "/catalog/up/up-kevin-colorful-bird-clipart.pdf",
+      "thumb": "/catalog/up/up-kevin-colorful-bird-clipart-thumb.webp",
+      "productIdentity": {
+        "brand": "Pixar",
+        "family": "Kevin",
+        "model": null,
+        "kind": "product-family",
+        "generation": null,
+        "visibleFeatures": "Kevin stands on long dark legs with a blue neck and orange beak. Purple, turquoise and golden feathers brighten the tall flightless bird.",
+        "reference": "https://www.pixar.com/upfilm",
+        "checkedAt": "2026-10-28T22:08:44.343559+00:00"
+      }
+    },
+    {
+      "id": "up-my-adventure-book-clipart",
+      "title": "My Adventure Book",
+      "alt": "A brown tied scrapbook reads My Adventure Book in colorful letters.",
+      "description": "A small globe emblem sits below the title on the textured cover.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Brown",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-my-adventure-book-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.343769+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 952490,
+          "sha256": "4c5bf8ae13d0b30dc5978e59802268cc13b072ba4a3bbfd5f16865cc0361f1d6"
+        },
+        "pdf": {
+          "bytes": 969407,
+          "sha256": "0316df85ee08627579e9e58c25e13e1b2e1c7ae15a1278c2cc849704f28b1d5c"
+        },
+        "thumb": {
+          "bytes": 47888,
+          "sha256": "aa6c70b85df5a4f2c4627322484e0f46ec05b9befb0482437436963c50011494"
+        }
+      },
+      "webp": "/catalog/up/up-my-adventure-book-clipart.webp",
+      "pdf": "/catalog/up/up-my-adventure-book-clipart.pdf",
+      "thumb": "/catalog/up/up-my-adventure-book-clipart-thumb.webp"
+    },
+    {
+      "id": "up-painted-handprint-mailbox-clipart",
+      "title": "Handprint Mailbox With Red Flag",
+      "alt": "A cream mailbox carries blue and pink handprints.",
+      "description": "A raised red flag stands above the weathered white post.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Orange",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-painted-handprint-mailbox-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.343982+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 533434,
+          "sha256": "456290a3a85879c7da3bad7aaff32d0663abfac59d820b8db8126ace9af8ec04"
+        },
+        "pdf": {
+          "bytes": 859910,
+          "sha256": "1688308017acdf179adc5bc50730758ab85b56b63f10623c73f10d0dc05e3a5e"
+        },
+        "thumb": {
+          "bytes": 26676,
+          "sha256": "4f5ea1e3c7c9579b3d01a4fdf8fdbf9629db7558b47f32ea949b2bde1298423a"
+        }
+      },
+      "webp": "/catalog/up/up-painted-handprint-mailbox-clipart.webp",
+      "pdf": "/catalog/up/up-painted-handprint-mailbox-clipart.pdf",
+      "thumb": "/catalog/up/up-painted-handprint-mailbox-clipart-thumb.webp"
+    },
+    {
+      "id": "up-parachute-treasure-chest-clipart",
+      "title": "Treasure Chest Under a Parachute",
+      "alt": "A wooden chest hangs beneath a coral and mint canopy.",
+      "description": "Golden cords attach the segmented parachute to the brass-trimmed box.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Orange",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-parachute-treasure-chest-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.344534+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 598700,
+          "sha256": "663127f784e7611ce43b09d86ba3971ce06dc0aa6a1ad91924a37ac66367cb37"
+        },
+        "pdf": {
+          "bytes": 964915,
+          "sha256": "1f89b19a0d23a5e80731f42980fcf28fcb3e629ebdce67e07c8fa5e30c3a1d45"
+        },
+        "thumb": {
+          "bytes": 34610,
+          "sha256": "a48b212f97df03332eac62fadbddb68befd4ffeca9946d854e83ceda13b55cae"
+        }
+      },
+      "webp": "/catalog/up/up-parachute-treasure-chest-clipart.webp",
+      "pdf": "/catalog/up/up-parachute-treasure-chest-clipart.pdf",
+      "thumb": "/catalog/up/up-parachute-treasure-chest-clipart-thumb.webp"
+    },
+    {
+      "id": "up-paradise-falls-tepui-clipart",
+      "title": "Paradise Falls-Inspired Waterfall",
+      "alt": "A tall waterfall drops from a flat-topped red cliff into a turquoise pool.",
+      "description": "Dense green foliage lines the summit of this Up-inspired landscape.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Blue",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-paradise-falls-tepui-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.344765+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 1065354,
+          "sha256": "65aa7ee9b0bc32c0d09e863c0a96d904b1d718f53b5b0ce47fe263ca9e9d3a77"
+        },
+        "pdf": {
+          "bytes": 993976,
+          "sha256": "0aafbce811ce7f16b95a7b47f283b7a8aa24414d9ca11ba33ba4710928671d67"
+        },
+        "thumb": {
+          "bytes": 55160,
+          "sha256": "c734b760995a98b3433d57aba6e94d9f7da6c6cd31b73c044989dee842a7d36e"
+        }
+      },
+      "webp": "/catalog/up/up-paradise-falls-tepui-clipart.webp",
+      "pdf": "/catalog/up/up-paradise-falls-tepui-clipart.pdf",
+      "thumb": "/catalog/up/up-paradise-falls-tepui-clipart-thumb.webp"
+    },
+    {
+      "id": "up-picnic-basket-blanket-clipart",
+      "title": "Picnic Basket With Checked Blanket",
+      "alt": "An open wicker basket holds a blue checked blanket, cups and an apple.",
+      "description": "Leather fastenings frame the curved woven lid.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Brown",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-picnic-basket-blanket-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.344972+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 693010,
+          "sha256": "2faaba263573acc9a95feabab55ae54a5cd2f7730f2991020b4c6683391774e9"
+        },
+        "pdf": {
+          "bytes": 977505,
+          "sha256": "e73647068caea72504dabea473ec3e5d6cddec6ead5a7a2a6f43817669d52031"
+        },
+        "thumb": {
+          "bytes": 35182,
+          "sha256": "45c172058416a97c45817c7900024f3a7b666c65ecd836369cbc9a83d594de01"
+        }
+      },
+      "webp": "/catalog/up/up-picnic-basket-blanket-clipart.webp",
+      "pdf": "/catalog/up/up-picnic-basket-blanket-clipart.pdf",
+      "thumb": "/catalog/up/up-picnic-basket-blanket-clipart-thumb.webp"
+    },
+    {
+      "id": "up-porch-flower-planter-clipart",
+      "title": "Bay Window With Flower Boxes",
+      "alt": "A green and pink bay window stands above a colorful flower planter.",
+      "description": "White brackets and trailing leaves support the projecting window box.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Yellow",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-porch-flower-planter-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.345180+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 862004,
+          "sha256": "0f778515f6f2ceffb4af9cf9a96d827e0a4fa95aef064cd549f85fbbdd21bfc5"
+        },
+        "pdf": {
+          "bytes": 984062,
+          "sha256": "df7cdb76f7cb3b230d0d323f5de34c9fc9947f777f75451e001943e96a188fe1"
+        },
+        "thumb": {
+          "bytes": 46834,
+          "sha256": "40290cfc7561302a32546987ad0e842318bf220f674a51f122dc200f4671e55f"
+        }
+      },
+      "webp": "/catalog/up/up-porch-flower-planter-clipart.webp",
+      "pdf": "/catalog/up/up-porch-flower-planter-clipart.pdf",
+      "thumb": "/catalog/up/up-porch-flower-planter-clipart-thumb.webp"
+    },
+    {
+      "id": "up-rooster-roof-weathervane-clipart",
+      "title": "Rooster Weathervane on a Roof",
+      "alt": "A red rooster sits above an arrow on a small tiled roof.",
+      "description": "A dark ball joint supports the metal-like directional ornament.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Red",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-rooster-roof-weathervane-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.345397+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 516770,
+          "sha256": "24b0378a6d9c16e23f6925943abf053286e093f35190d40370eb39c9e4cd5848"
+        },
+        "pdf": {
+          "bytes": 982325,
+          "sha256": "30ac589e1a83a3052bddbbf3ab7ab861af2d811d81777ae53ea94ea5affba586"
+        },
+        "thumb": {
+          "bytes": 34018,
+          "sha256": "3b1d06a3ecc940796d1f99bca4a4286984a5106707bee57ce29f8abb7ba11d61"
+        }
+      },
+      "webp": "/catalog/up/up-rooster-roof-weathervane-clipart.webp",
+      "pdf": "/catalog/up/up-rooster-roof-weathervane-clipart.pdf",
+      "thumb": "/catalog/up/up-rooster-roof-weathervane-clipart-thumb.webp"
+    },
+    {
+      "id": "up-scout-expedition-backpack-clipart",
+      "title": "Expedition Backpack With Camping Gear",
+      "alt": "An olive backpack carries rope, a bedroll, a shovel and a metal cup.",
+      "description": "An orange pennant rises from the tightly packed straps.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Brown",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-scout-expedition-backpack-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.345611+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 845984,
+          "sha256": "37968505720cc01b9d9de8fe093cc99e62e5dfe78e08eceae9e1e12eb47cefe5"
+        },
+        "pdf": {
+          "bytes": 968289,
+          "sha256": "24cc6a0630e888e7fc850a7b16888d69ca262735773691421035786a14226a5d"
+        },
+        "thumb": {
+          "bytes": 38110,
+          "sha256": "d801d49b0a71efdecba633df5369785fecdfa0ae57d3d1a3bdc749cda1115fb4"
+        }
+      },
+      "webp": "/catalog/up/up-scout-expedition-backpack-clipart.webp",
+      "pdf": "/catalog/up/up-scout-expedition-backpack-clipart.pdf",
+      "thumb": "/catalog/up/up-scout-expedition-backpack-clipart-thumb.webp"
+    },
+    {
+      "id": "up-single-yellow-adventure-balloon-clipart",
+      "title": "Yellow Balloon With a Rolled Map",
+      "alt": "A single glossy balloon suspends a small paper scroll.",
+      "description": "A red wax-like seal fastens the map beneath the curled string.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Yellow",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-single-yellow-adventure-balloon-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.345814+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 273832,
+          "sha256": "0b9cfb051319be6229b4ebd8f36635249863117409d7c591ee9183d22e01823d"
+        },
+        "pdf": {
+          "bytes": 599339,
+          "sha256": "d776713d614725fef1c04be3050ba6163ad5a86539568c21e60cf4d770000329"
+        },
+        "thumb": {
+          "bytes": 18708,
+          "sha256": "1e5d2d11634f864b26671ea9f55f9d31ee6a5c47f6d55b68d5f44576dba45e52"
+        }
+      },
+      "webp": "/catalog/up/up-single-yellow-adventure-balloon-clipart.webp",
+      "pdf": "/catalog/up/up-single-yellow-adventure-balloon-clipart.pdf",
+      "thumb": "/catalog/up/up-single-yellow-adventure-balloon-clipart-thumb.webp"
+    },
+    {
+      "id": "up-spirit-of-adventure-airship-clipart",
+      "title": "Spirit of Adventure-Inspired Airship",
+      "alt": "A large gray airship has a suspended cabin and small propellers.",
+      "description": "Golden ribs and angular tail fins define the Up-inspired vessel.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Gray",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-spirit-of-adventure-airship-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.346028+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 606716,
+          "sha256": "dcb1a8889a817379c4949a1f1a573f02ab49d269912368b9e8234c74c4faa6d8"
+        },
+        "pdf": {
+          "bytes": 986003,
+          "sha256": "684ac896c9540c937e51f7bc670289fa3989fa886a8c6baa27a0a115fa76e4be"
+        },
+        "thumb": {
+          "bytes": 27600,
+          "sha256": "b226f35c499d343a27ace1da271d87a2ee501d26fea5b9a8afbc9f34107ddcac"
+        }
+      },
+      "webp": "/catalog/up/up-spirit-of-adventure-airship-clipart.webp",
+      "pdf": "/catalog/up/up-spirit-of-adventure-airship-clipart.pdf",
+      "thumb": "/catalog/up/up-spirit-of-adventure-airship-clipart-thumb.webp"
+    },
+    {
+      "id": "up-stairlift-chair-clipart",
+      "title": "Brown Stairlift Chair",
+      "alt": "A padded brown chair rides a curved rail beside wooden steps.",
+      "description": "A footrest and small arm control distinguish the mobility aid.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Brown",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-stairlift-chair-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.346226+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 563270,
+          "sha256": "5aa34495eda246f0649ec8ae0fe22db553509e98c13247e905fb231e436c6024"
+        },
+        "pdf": {
+          "bytes": 947043,
+          "sha256": "dc4e16b3596793f9d5bacf8d48d7273c14137976741076dd574a4c8eaaecbbd8"
+        },
+        "thumb": {
+          "bytes": 30578,
+          "sha256": "b7c5945ba981247fcbcb1b8f1cd848246ff660ecc11ff23af17d7b47150b7f86"
+        }
+      },
+      "webp": "/catalog/up/up-stairlift-chair-clipart.webp",
+      "pdf": "/catalog/up/up-stairlift-chair-clipart.pdf",
+      "thumb": "/catalog/up/up-stairlift-chair-clipart-thumb.webp"
+    },
+    {
+      "id": "up-summit-arrow-signpost-clipart",
+      "title": "Blue Arrow on a Rocky Summit",
+      "alt": "A blue wooden arrow points right above a pile of rocks.",
+      "description": "An orange flag and footprint-marked stone complete the trail marker.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Orange",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-summit-arrow-signpost-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.346414+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 705772,
+          "sha256": "726d269340f722ce266b6f46067eff11db67ae8de5a2e134f67586f36679a9f4"
+        },
+        "pdf": {
+          "bytes": 950997,
+          "sha256": "8cf51d2681cb306d2ca62766c6a90409d01a40102996eea170cf1f6d99ae0c82"
+        },
+        "thumb": {
+          "bytes": 44136,
+          "sha256": "68d8edb6837ed3ee05ae80ca97340614695373f0e732aab03b251e98d43c95ae"
+        }
+      },
+      "webp": "/catalog/up/up-summit-arrow-signpost-clipart.webp",
+      "pdf": "/catalog/up/up-summit-arrow-signpost-clipart.pdf",
+      "thumb": "/catalog/up/up-summit-arrow-signpost-clipart-thumb.webp"
+    },
+    {
+      "id": "up-talking-dog-collar-clipart",
+      "title": "Talking-Dog Collar From Up",
+      "alt": "A brown collar carries round devices and a glowing red center.",
+      "description": "A small antenna completes the fictional speech-collar design.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Red",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-talking-dog-collar-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.346981+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 488548,
+          "sha256": "2376b33ff50b55c8773e15bf86fb34743cbc357cc446c440afa717f5bd12d38f"
+        },
+        "pdf": {
+          "bytes": 992583,
+          "sha256": "0454e1164db45e72b33477c34efaf35597d208375a60ae49080e0f50f718b9d3"
+        },
+        "thumb": {
+          "bytes": 27530,
+          "sha256": "77cf3785aa290f8057c0c07f54b23f609034d09af772e2d386b3d80ffddcb2f4"
+        }
+      },
+      "webp": "/catalog/up/up-talking-dog-collar-clipart.webp",
+      "pdf": "/catalog/up/up-talking-dog-collar-clipart.pdf",
+      "thumb": "/catalog/up/up-talking-dog-collar-clipart-thumb.webp"
+    },
+    {
+      "id": "up-tennis-ball-walking-cane-clipart",
+      "title": "Walking Cane With Tennis Ball Feet",
+      "alt": "A dark walking stick has a wooden handle and four green ball-covered feet.",
+      "description": "A paper tag hangs near the upper grip.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Yellow",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-tennis-ball-walking-cane-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.347177+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 331876,
+          "sha256": "ff3148b3bd7f6b37bd94697f30d6ee948f01d8c88270c4db7c2698910d47025d"
+        },
+        "pdf": {
+          "bytes": 766699,
+          "sha256": "597a9523f80a7d95ddf57d71eda07eec1609bfd1b37d15da9cbb8013f1a49235"
+        },
+        "thumb": {
+          "bytes": 21444,
+          "sha256": "32588cff5d6c247138a376e3c06a307806e91e1c73cb3101247b18a291645815"
+        }
+      },
+      "webp": "/catalog/up/up-tennis-ball-walking-cane-clipart.webp",
+      "pdf": "/catalog/up/up-tennis-ball-walking-cane-clipart.pdf",
+      "thumb": "/catalog/up/up-tennis-ball-walking-cane-clipart-thumb.webp"
+    },
+    {
+      "id": "up-tepui-rock-spires-black-white-clipart",
+      "title": "Layered Rock Spires",
+      "alt": "Three narrow stone pillars rise above a rocky base in grayscale.",
+      "description": "Broad capstones top the uneven stacked layers.",
+      "style": "Black & White",
+      "visualStyle": "Black-and-white illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Gray",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-tepui-rock-spires-black-white-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.347372+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 364046,
+          "sha256": "0a91dd5e3aff45861dab792650d6af086475e12d5ee4726c07ebbcd5c5672b0a"
+        },
+        "pdf": {
+          "bytes": 660534,
+          "sha256": "c0cf2980cefc3d838f8567f9054b9a6a56b73df518a6906d20de401b3314f3c5"
+        },
+        "thumb": {
+          "bytes": 31406,
+          "sha256": "b57eb74c8dc3a7263e5efee57a205261518cc5446e3116f86d7c8f21f551e99e"
+        }
+      },
+      "webp": "/catalog/up/up-tepui-rock-spires-black-white-clipart.webp",
+      "pdf": "/catalog/up/up-tepui-rock-spires-black-white-clipart.pdf",
+      "thumb": "/catalog/up/up-tepui-rock-spires-black-white-clipart-thumb.webp"
+    },
+    {
+      "id": "up-wilderness-badge-sash-clipart",
+      "title": "Explorer Badge Sash and Orange Scarf",
+      "alt": "A brown sash carries rows of small colorful circular badges.",
+      "description": "An orange neckerchief meets at a round golden clasp.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Brown",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-wilderness-badge-sash-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.347560+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 930200,
+          "sha256": "d29071013cc8092e6498baffcc0a8f1abc7f609f71ae4b57f77ab894fe2c61cb"
+        },
+        "pdf": {
+          "bytes": 980267,
+          "sha256": "63753e243a7e8d29ec5f237f8ea59269efde66700b2638854ccc2600886aeea7"
+        },
+        "thumb": {
+          "bytes": 43808,
+          "sha256": "d9e37b16267289578db1ff1e4ba1b0516157493c057ac320331d04398e4f9a84"
+        }
+      },
+      "webp": "/catalog/up/up-wilderness-badge-sash-clipart.webp",
+      "pdf": "/catalog/up/up-wilderness-badge-sash-clipart.pdf",
+      "thumb": "/catalog/up/up-wilderness-badge-sash-clipart-thumb.webp"
+    },
+    {
+      "id": "up-wilderness-binoculars-black-white-clipart",
+      "title": "Black Binoculars With Mountain Charm",
+      "alt": "A pair of shaded binoculars has a looped neck cord in grayscale.",
+      "description": "A small round mountain emblem hangs beside the lenses.",
+      "style": "Black & White",
+      "visualStyle": "Black-and-white illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Gray",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-wilderness-binoculars-black-white-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.347757+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 296364,
+          "sha256": "740d7f3cf0683b5f7a969b1bdc4853fe16b61f48d3ada93c7fda119559fd98ad"
+        },
+        "pdf": {
+          "bytes": 622749,
+          "sha256": "f5de41060ea4414cb668a5423efc47552b44d6eb213d62308ee88bfb72ada26d"
+        },
+        "thumb": {
+          "bytes": 29374,
+          "sha256": "8fe8e8d5edfb01e685857faf49aeb00bfefab01b7d8f56303ff15bb8b313cad9"
+        }
+      },
+      "webp": "/catalog/up/up-wilderness-binoculars-black-white-clipart.webp",
+      "pdf": "/catalog/up/up-wilderness-binoculars-black-white-clipart.pdf",
+      "thumb": "/catalog/up/up-wilderness-binoculars-black-white-clipart-thumb.webp"
+    },
+    {
+      "id": "up-wilderness-tent-campsite-black-white-clipart",
+      "title": "Explorer Tent and Campfire Ring",
+      "alt": "An open canvas tent stands beside a bedroll and stone fire ring in grayscale.",
+      "description": "A small triangular explorer flag rises from the roof.",
+      "style": "Black & White",
+      "visualStyle": "Black-and-white illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Gray",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-wilderness-tent-campsite-black-white-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.347947+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 280082,
+          "sha256": "3a850a2957364d102ec50137c1528270fbea36a64bff5cae53dba992bced8262"
+        },
+        "pdf": {
+          "bytes": 576124,
+          "sha256": "2bef029f28e25c30263f1d10a3e4671424cc2c8d8d5fbb5652e011c479621aa1"
+        },
+        "thumb": {
+          "bytes": 26920,
+          "sha256": "349e3a0dcb95c4ad0399eeb413a96eb0db637f37547e9bd4a57b44a76de1f6fd"
+        }
+      },
+      "webp": "/catalog/up/up-wilderness-tent-campsite-black-white-clipart.webp",
+      "pdf": "/catalog/up/up-wilderness-tent-campsite-black-white-clipart.pdf",
+      "thumb": "/catalog/up/up-wilderness-tent-campsite-black-white-clipart-thumb.webp"
+    },
+    {
+      "id": "up-yellow-navigation-gps-clipart",
+      "title": "Yellow Handheld Navigation Device",
+      "alt": "A yellow GPS-style device shows a dotted route on a green map.",
+      "description": "An orange wrist strap hangs beside gray direction buttons.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Yellow",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-yellow-navigation-gps-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.348132+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 591812,
+          "sha256": "064a30c43cb1a81672a963d9cfef1cfcb52d359a4b4e123ad5d844ef6ea802de"
+        },
+        "pdf": {
+          "bytes": 960943,
+          "sha256": "a8ef8ae99bff2e7ca8f7f0bc30e8a227ed5212fcf49bec685e5a2843502e76db"
+        },
+        "thumb": {
+          "bytes": 30868,
+          "sha256": "2ac583cbf407017144e7c804d1904095eddefc419d572359ce6d53ff20d3f4e5"
+        }
+      },
+      "webp": "/catalog/up/up-yellow-navigation-gps-clipart.webp",
+      "pdf": "/catalog/up/up-yellow-navigation-gps-clipart.pdf",
+      "thumb": "/catalog/up/up-yellow-navigation-gps-clipart-thumb.webp"
+    },
+    {
+      "id": "up-young-ellie-adventurer-clipart",
+      "title": "Young Ellie From Up",
+      "alt": "Young Ellie from Up raises a rolled map while wearing denim overalls.",
+      "description": "A pink bow, red hair and badge-covered straps distinguish Ellie above her sturdy brown boots.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Brown",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-young-ellie-adventurer-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.348362+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 606114,
+          "sha256": "92139f33f563e51d84e14aa677a86b6c2a27051be5e04178149a41296964dec3"
+        },
+        "pdf": {
+          "bytes": 985044,
+          "sha256": "243dea2e7f4a1bb99253169d295867578aa44b4595c8acef6bffa14a7c2969b3"
+        },
+        "thumb": {
+          "bytes": 34626,
+          "sha256": "9e54e8a0b28e3ed6e41f9266e31337e9f4cebf548ce47634856b65e388f87d88"
+        }
+      },
+      "webp": "/catalog/up/up-young-ellie-adventurer-clipart.webp",
+      "pdf": "/catalog/up/up-young-ellie-adventurer-clipart.pdf",
+      "thumb": "/catalog/up/up-young-ellie-adventurer-clipart-thumb.webp",
+      "productIdentity": {
+        "brand": "Pixar",
+        "family": "Ellie",
+        "model": null,
+        "kind": "product-family",
+        "generation": null,
+        "visibleFeatures": "A red-haired girl in denim overalls raises a rolled map. A pink hair bow, badge-covered straps and brown boots distinguish young Ellie.",
+        "reference": "https://www.pixar.com/upfilm",
+        "checkedAt": "2026-10-28T22:08:44.348362+00:00"
+      }
+    },
+    {
+      "id": "up-zoo-balloon-cart-clipart",
+      "title": "Balloon Cart With a Cream Canopy",
+      "alt": "A wooden handcart stands beneath a scalloped cream awning.",
+      "description": "Red, blue, yellow and green balloons are tied beside the large spoked wheels.",
+      "style": "Color",
+      "visualStyle": "Full-color illustration",
+      "discovery": {
+        "cute": false
+      },
+      "topic": "up",
+      "color": "Orange",
+      "orientation": "Square",
+      "width": 1254,
+      "height": 1254,
+      "sourceType": "raster",
+      "svg": null,
+      "sourceCollection": "owner-reviewed-2325-2026-10-29",
+      "sourceArchiveTopic": "up",
+      "sourceOriginalId": "up-zoo-balloon-cart-clipart",
+      "provenance": "Owner-supplied collection; original PDF and WebP bytes preserved.",
+      "productionMethod": "owner-supplied",
+      "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+      "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+      "licenseApprovedAt": "2026-10-29",
+      "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "published": true,
+      "indexable": true,
+      "createdAt": "2026-10-28T22:08:44.348584+00:00",
+      "revision": 1,
+      "formats": [
+        "WEBP",
+        "PDF"
+      ],
+      "printProfile": "Device CMYK (unprofiled)",
+      "pdfColorSpace": "Device CMYK",
+      "pdfPage": "4.180 × 4.180 in",
+      "pdfPrint": {
+        "width": 1254,
+        "height": 1254,
+        "ppi": 300,
+        "pagePoints": [
+          300.96,
+          300.96
+        ]
+      },
+      "alpha": true,
+      "files": {
+        "webp": {
+          "bytes": 746806,
+          "sha256": "3131b47b065aeac1f1edfd8a8b72283cb17758200512c494c137b500d2bf6ccd"
+        },
+        "pdf": {
+          "bytes": 948609,
+          "sha256": "a16ff79ec8b18a9eb6a5af72877cb6345f7904bf32119e6a79581be565c34357"
+        },
+        "thumb": {
+          "bytes": 43422,
+          "sha256": "8b837a5ef2925f5e6b4e796e145f3a5c61ced534466557cb811a33e208a6ef46"
+        }
+      },
+      "webp": "/catalog/up/up-zoo-balloon-cart-clipart.webp",
+      "pdf": "/catalog/up/up-zoo-balloon-cart-clipart.pdf",
+      "thumb": "/catalog/up/up-zoo-balloon-cart-clipart-thumb.webp"
+    }
+  ],
+  "newArtworkIds": [
+    "up-direction-upward-direction-road-sign",
+    "up-direction-wooden-stairs-sign",
+    "up-direction-elevator-up-button",
+    "up-direction-upload-cloud-arrow",
+    "up-direction-double-chevron-marker",
+    "up-direction-curved-route-up",
+    "up-direction-stairs-arrow-blocks",
+    "up-direction-hand-drawn-up-label",
+    "up-direction-ribbon-arrow-loop",
+    "up-direction-chalkboard-up-arrow",
+    "up-direction-girl-pointing-up",
+    "up-direction-boy-pointing-sky",
+    "up-direction-teacher-up-gesture",
+    "up-direction-child-climbing-stairs",
+    "up-direction-woman-stair-ascent",
+    "up-direction-wheelchair-ramp-up",
+    "up-direction-hands-reaching-up",
+    "up-direction-man-looking-up",
+    "up-direction-rabbit-pointing-up",
+    "up-direction-owl-upward-pointer",
+    "up-direction-balloon-rising",
+    "up-direction-kite-climbing-wind",
+    "up-direction-rocket-lifting-up",
+    "up-direction-paper-plane-climb",
+    "up-direction-bird-taking-flight",
+    "up-direction-hot-air-balloon-ascent",
+    "up-direction-bubbles-floating-up",
+    "up-direction-steam-rising-mug",
+    "up-direction-plant-reaching-sun",
+    "up-direction-water-jet-up",
+    "up-direction-up-word-foam-blocks",
+    "up-direction-way-up-signpost",
+    "up-direction-upstairs-door-sign",
+    "up-direction-this-way-up-box",
+    "up-direction-up-speech-bubble",
+    "up-direction-level-up-game-badge",
+    "up-direction-heads-up-reminder",
+    "up-direction-stand-up-classroom",
+    "up-direction-climb-up-ladder",
+    "up-direction-up-and-away-plane",
+    "up-direction-outline-pointing-hand",
+    "up-direction-outline-stair-climber",
+    "up-direction-outline-elevator-sign",
+    "up-direction-outline-rising-balloon",
+    "up-direction-outline-up-word",
+    "up-direction-outline-cloud-upload",
+    "up-direction-upward-progress-chart",
+    "up-direction-book-page-up",
+    "up-direction-mountain-trail-up",
+    "up-direction-up-direction-compass"
+  ],
+  "newNativeSourceChecks": [
+    {
+      "id": "up-direction-upward-direction-road-sign",
+      "nativeSha256": "a6c9951b8a325862aeab562f5aad2c69ce13597f661d56f7f2f732c0d0bf7508",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-wooden-stairs-sign",
+      "nativeSha256": "53953af5b35a2b69d50c880381d79109d6e4e9d9f0ca3466642bfaf73ba390f6",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-elevator-up-button",
+      "nativeSha256": "2ed824f0040cfd35423e1217f4072b07d3dd7428d4d68c7f85b5441d112d75e3",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-upload-cloud-arrow",
+      "nativeSha256": "9770ed53bca6cc8a2b622758ccf96716db33678c77927b1d496887e18d30c2f3",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-double-chevron-marker",
+      "nativeSha256": "45d2f7c812f9b8d9905afa62da709fb5b71ca7922bc989a033f2dad07c48623e",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-curved-route-up",
+      "nativeSha256": "9a86e28e95a5ac241cfe84afce44ff346b9b9eaf98168fd207c4b984cd03810e",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-stairs-arrow-blocks",
+      "nativeSha256": "0add0296142112c771592ca278850738177dc406113e34d3c72aa4d42407b94b",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-hand-drawn-up-label",
+      "nativeSha256": "b6dc44c3742738e77cbca9af7262e9980c118ee89a497ad6ae9d85962b75c14f",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-ribbon-arrow-loop",
+      "nativeSha256": "12ef0700f103f660051d8b2e084b8a571cd933cb2fc4038aeea7aafd6c685642",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-chalkboard-up-arrow",
+      "nativeSha256": "1e9997b0ff0371ebafb40219620479bfbc772f626ceb7f1658f3ad76064469c3",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-girl-pointing-up",
+      "nativeSha256": "df15a878b50c40743590ad736afbe894450e0f87c899829dbed3b7695f16fbd1",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-boy-pointing-sky",
+      "nativeSha256": "a475aaff1e6c735ac6bb1393a9d8169b23d85ab7b417a07da0e2805441de198e",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-teacher-up-gesture",
+      "nativeSha256": "cbe67592a065b0c44802a0f802d18879491203db8351eee92813abf8044c909e",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-child-climbing-stairs",
+      "nativeSha256": "578d44fdbff77759afd7b176d5d6c2534c84eeaa8e7980cdd6cdc2560028fea1",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-woman-stair-ascent",
+      "nativeSha256": "01131832c1849c2867f47cc95a6c0461f9223994f210b9d109f03d7691de96dd",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-wheelchair-ramp-up",
+      "nativeSha256": "5a272b8880f7c2c2638f403c439684625a464347e993de12e306b5cd49db0705",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-hands-reaching-up",
+      "nativeSha256": "c7f23066a6f8843d2a782bf5e2ce727659c0a575678f585afe21c4b792454ec9",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-man-looking-up",
+      "nativeSha256": "60fedbded80cd09309a3302823d6995f7c7de4b50c98cae8ee413e0f9cbc1cf2",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-rabbit-pointing-up",
+      "nativeSha256": "07a7e74bff1fe824aea094a104001b4ff8a4d151eb20b5b30c4e4746081d9363",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-owl-upward-pointer",
+      "nativeSha256": "a229d8f426c8cc9336d20afb28c4a4c8228bc97dabc87e2e3e73eb255048ca2e",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-balloon-rising",
+      "nativeSha256": "25ca1ad1f41b50802be70fadd3e08e168bcd0de6d885ee3ec7729d0ac261d822",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-kite-climbing-wind",
+      "nativeSha256": "22c39ba3e20e6a666c828e1f2be572bb71676867e848bc3381bb7d42655f9f76",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-rocket-lifting-up",
+      "nativeSha256": "02752dc17d79162b53829c145c1da7bbc50ceb9e4bae02cade6ba2b111ce9a41",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-paper-plane-climb",
+      "nativeSha256": "9094335e5c947cc42b414e01e19a4e24edb254996303fc175edf477d042d71f1",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-bird-taking-flight",
+      "nativeSha256": "ee9f4517cc333a0b2dc1bb8fc4404875a6dba9a015e01ec1a967a4fdf702c58f",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-hot-air-balloon-ascent",
+      "nativeSha256": "dd48add1709190b21e26217bac5bdb180e1dd40c75fcb2420500aef15393a256",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-bubbles-floating-up",
+      "nativeSha256": "dbf3dff1b1ff6188ea5fb5b2c82ec08f199348ccea08b35a429d0898e6773c05",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-steam-rising-mug",
+      "nativeSha256": "71046aba0bc80bd030e685e91ef23987285aad8240f5d6e18f57760f63c8474a",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-plant-reaching-sun",
+      "nativeSha256": "f185943f7fb5203993875d46f5a21ae48f5f38706922fc78c664f8db0c2b474e",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-water-jet-up",
+      "nativeSha256": "d4421c20c8da8ab2defba4e4aed5935a97d07ce838ef2959c8a0b2ca49859462",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-up-word-foam-blocks",
+      "nativeSha256": "acbf64821cb65118f94b06aef164e9674eef720bea3295338cd1cdb190820045",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-way-up-signpost",
+      "nativeSha256": "c3d2375d3a06f1e285087c36e3d7eff26642d207ce03e45cb17cc67e8a1de7f2",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-upstairs-door-sign",
+      "nativeSha256": "6de48e19be202cf59c1c8da962826fa398f966ad7ee4332e42b57c22cc7a0e51",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-this-way-up-box",
+      "nativeSha256": "715fd920c89b1b9a35117108ffa0e57fd48e02ac763be69f9b3349e3969b5e29",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-up-speech-bubble",
+      "nativeSha256": "d492b096e6a0d9d0ce92341d4350267281381f967a0312a559abbec611207c27",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-level-up-game-badge",
+      "nativeSha256": "2e67a1d76c352f00930bc2df2472315a7738332b7763d2a0ef23744eb44976c1",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-heads-up-reminder",
+      "nativeSha256": "0b95328822a27a7d6de74a1f02a1e1a41ddf98b3c613fb657039627aa3281820",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-stand-up-classroom",
+      "nativeSha256": "9591f38fec8033be4b0510864d50a54cef7ae8a976da8a6ffe1f6546f855efd2",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-climb-up-ladder",
+      "nativeSha256": "f690d55a18f985800212c3af9b1e63d8ac415e870a947c436f87b33a2239128b",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-up-and-away-plane",
+      "nativeSha256": "d1b2da1fef4c6c7e76faed23c3236aad0c946df37b2dda6a5f22c40d728d567d",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-outline-pointing-hand",
+      "nativeSha256": "60f1bd78ecf297e66b25182ca53118145d3545928c2adb4f9f9523abc1b34171",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-outline-stair-climber",
+      "nativeSha256": "f2bd2f45cd6216475f2d8e7238039a602f14a4560c99ed5e89b6236c8acaeeeb",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-outline-elevator-sign",
+      "nativeSha256": "230093791ea526863ddab2e68bc95cddbaf9f9b88375ea6c3ef1dc4da80680bc",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-outline-rising-balloon",
+      "nativeSha256": "e9bde88c122081988c96b7e75102a9e29ed73a615fe2d2dc11c417151d912bdb",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-outline-up-word",
+      "nativeSha256": "5e3ff3afc3c2a25e42f7fea657bb85a98b977967a14d7bd9dab48f8e347065f1",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-outline-cloud-upload",
+      "nativeSha256": "6804a2b611da76c5a39583919dd0346d97045cbccf5ee1b7b4f40760f3c2c7e3",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-upward-progress-chart",
+      "nativeSha256": "ed79c8fc99a4bbdb6752735cc936594c7f3621c8656cc41ab808442c8d0db969",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-book-page-up",
+      "nativeSha256": "99bd5847abb6dbbb8641e1cf207d07c8930a07fef490a0f5f69b2d812bda7e8c",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-mountain-trail-up",
+      "nativeSha256": "eda94dfb163a71d496dfdb836aa91b2de6651f4077d63a277a90b95c0fae0a21",
+      "rgbaExact": true
+    },
+    {
+      "id": "up-direction-up-direction-compass",
+      "nativeSha256": "8b0f5f8b9228c56a039468079087b4f522eb1fe62c20c49bd1fbe4a1e083cb24",
+      "rgbaExact": true
+    }
+  ],
+  "expectedCounts": {
+    "up": 50,
+    "up-movie": 50,
+    "total": 17609
+  },
+  "generatedGoalCountUnchanged": 2602
+}

@@ -76,7 +76,7 @@
   "river": "Nature & elements",
   "tooth": "Space & science",
   "truck": "Transport & vehicles",
-  "up": "Arts & entertainment",
+  "up": "School & learning",
   "uterus": "Space & science",
   "vacuum": "Technology & devices",
   "window": "Places & travel",
@@ -93,5 +93,6 @@
   "macbook": "Technology & devices",
   "maccabees": "Hanukkah",
   "nativity": "Christmas & Winter",
-  "caroling": "Christmas & Winter"
+  "caroling": "Christmas & Winter",
+  "up-movie": "Arts & entertainment"
 }

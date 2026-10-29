@@ -20,14 +20,14 @@
   "generatedArtworkCount": 2602,
   "suppliedArtworkCount": 14097,
   "originalTopicArtworkCount": 2950,
-  "supplementalArtworkCount": 14609,
+  "supplementalArtworkCount": 14659,
   "qualityApprovedArtworkCount": 2950,
-  "supplementalApprovedArtworkCount": 14609,
+  "supplementalApprovedArtworkCount": 14659,
   "verifiedPublishedGeneratedArtworkCount": 1702,
   "acceptedAwaitingRelease": 900,
   "reviewerType": "AI_AGENT_NOT_HUMAN",
   "humanApprovedArtworkCount": 0,
-  "availableArtworkCount": 17559,
+  "availableArtworkCount": 17609,
   "remainingToDraw": 2898,
   "nextAction": "New image generation is paused until the owner explicitly resumes it. Import and publish supplied packages after verification.",
   "topics": [
@@ -184444,7 +184444,7 @@
     },
     {
       "id": "up-adventure-living-room-mantel-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184455,7 +184455,7 @@
     },
     {
       "id": "up-adventure-route-map-black-white-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184466,7 +184466,7 @@
     },
     {
       "id": "up-adventure-savings-jar-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184477,7 +184477,7 @@
     },
     {
       "id": "up-airship-propeller-pod-black-white-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184488,7 +184488,7 @@
     },
     {
       "id": "up-alpha-doberman-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184499,7 +184499,7 @@
     },
     {
       "id": "up-arrow-adventure-kite-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184510,7 +184510,7 @@
     },
     {
       "id": "up-balloon-inflator-kit-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184521,7 +184521,7 @@
     },
     {
       "id": "up-balloon-knot-storm-black-white-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184532,7 +184532,7 @@
     },
     {
       "id": "up-balloon-lifted-house-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184543,7 +184543,7 @@
     },
     {
       "id": "up-beta-rottweiler-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184554,7 +184554,7 @@
     },
     {
       "id": "up-bird-capture-cage-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184565,7 +184565,7 @@
     },
     {
       "id": "up-bird-skeleton-display-black-white-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184576,7 +184576,7 @@
     },
     {
       "id": "up-carl-bow-tie-keepsakes-black-white-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184587,7 +184587,7 @@
     },
     {
       "id": "up-carl-ellie-armchairs-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184598,7 +184598,7 @@
     },
     {
       "id": "up-carl-travel-trunk-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184609,7 +184609,7 @@
     },
     {
       "id": "up-childhood-aviator-goggles-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184620,7 +184620,7 @@
     },
     {
       "id": "up-chocolate-bird-tracks-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184631,7 +184631,7 @@
     },
     {
       "id": "up-cone-of-shame-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184642,7 +184642,7 @@
     },
     {
       "id": "up-discarded-furniture-pile-black-white-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184653,7 +184653,7 @@
     },
     {
       "id": "up-dog-pilot-biplane-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184664,7 +184664,7 @@
     },
     {
       "id": "up-empty-airship-cockpit-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184675,7 +184675,7 @@
     },
     {
       "id": "up-expedition-cooking-kit-black-white-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184686,7 +184686,7 @@
     },
     {
       "id": "up-expedition-rope-harness-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184697,7 +184697,7 @@
     },
     {
       "id": "up-floating-adventure-compass-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184708,7 +184708,7 @@
     },
     {
       "id": "up-gamma-bulldog-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184719,7 +184719,7 @@
     },
     {
       "id": "up-grape-soda-badge-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184730,7 +184730,7 @@
     },
     {
       "id": "up-iridescent-kevin-feathers-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184741,7 +184741,7 @@
     },
     {
       "id": "up-kevin-chicks-nest-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184752,7 +184752,7 @@
     },
     {
       "id": "up-kevin-colorful-bird-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184763,7 +184763,7 @@
     },
     {
       "id": "up-my-adventure-book-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184774,7 +184774,7 @@
     },
     {
       "id": "up-painted-handprint-mailbox-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184785,7 +184785,7 @@
     },
     {
       "id": "up-parachute-treasure-chest-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184796,7 +184796,7 @@
     },
     {
       "id": "up-paradise-falls-tepui-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184807,7 +184807,7 @@
     },
     {
       "id": "up-picnic-basket-blanket-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184818,7 +184818,7 @@
     },
     {
       "id": "up-porch-flower-planter-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184829,7 +184829,7 @@
     },
     {
       "id": "up-rooster-roof-weathervane-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184840,7 +184840,7 @@
     },
     {
       "id": "up-scout-expedition-backpack-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184851,7 +184851,7 @@
     },
     {
       "id": "up-single-yellow-adventure-balloon-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184862,7 +184862,7 @@
     },
     {
       "id": "up-spirit-of-adventure-airship-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184873,7 +184873,7 @@
     },
     {
       "id": "up-stairlift-chair-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184884,7 +184884,7 @@
     },
     {
       "id": "up-summit-arrow-signpost-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184895,7 +184895,7 @@
     },
     {
       "id": "up-talking-dog-collar-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184906,7 +184906,7 @@
     },
     {
       "id": "up-tennis-ball-walking-cane-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184917,7 +184917,7 @@
     },
     {
       "id": "up-tepui-rock-spires-black-white-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184928,7 +184928,7 @@
     },
     {
       "id": "up-wilderness-badge-sash-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184939,7 +184939,7 @@
     },
     {
       "id": "up-wilderness-binoculars-black-white-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184950,7 +184950,7 @@
     },
     {
       "id": "up-wilderness-tent-campsite-black-white-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184961,7 +184961,7 @@
     },
     {
       "id": "up-yellow-navigation-gps-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184972,7 +184972,7 @@
     },
     {
       "id": "up-young-ellie-adventurer-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -184983,7 +184983,7 @@
     },
     {
       "id": "up-zoo-balloon-cart-clipart",
-      "topic": "up",
+      "topic": "up-movie",
       "state": "PUBLISHED",
       "retryCount": 0,
       "failReason": null,
@@ -194616,6 +194616,556 @@
       "humanReview": "NOT_PERFORMED",
       "publicationBlocked": false,
       "sha256": "869884c81d9be08024093e3759f252f8a9b2584f343a546b4672aab67b8767a1"
+    },
+    {
+      "id": "up-direction-upward-direction-road-sign",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "61df77e2e99ed745269e26092ae5678a91336741c21b0c45e148bdf1590f6044"
+    },
+    {
+      "id": "up-direction-wooden-stairs-sign",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "972469f234f860409ccdba341008414dd7c1202e0bde4c5afa0a0efbaa27364f"
+    },
+    {
+      "id": "up-direction-elevator-up-button",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "313c46962c603c83e8475f8a9c5b53019745cef1514dd3817797d28a438c2ef3"
+    },
+    {
+      "id": "up-direction-upload-cloud-arrow",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "a5b28a60b7079a3effbd5f6fe95af83b199dd737e40ba27071652e557bedf0d0"
+    },
+    {
+      "id": "up-direction-double-chevron-marker",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "ca9e0ec45a92a3697b11b22fb2737d3840bb91a58872642a34abafe14fc1f715"
+    },
+    {
+      "id": "up-direction-curved-route-up",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "dc650338f1aafb45b08aa8b77432e76e924e8681093ef86f7cde9a74e98e4975"
+    },
+    {
+      "id": "up-direction-stairs-arrow-blocks",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "8f08a82586b933e8c7471289b03fa3c47a13356018355a732c93937ad9803542"
+    },
+    {
+      "id": "up-direction-hand-drawn-up-label",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "876e2bb5eb1dd2385e2ba9d52093e202679554f4ebf046a827dcf1f6556e890a"
+    },
+    {
+      "id": "up-direction-ribbon-arrow-loop",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "b02cdc9135bf1d79cfd9567abab2b4db5c635b73050837be23e60f742074f332"
+    },
+    {
+      "id": "up-direction-chalkboard-up-arrow",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "1788b690bb554e29916d263ed2b0ad64f2f8a5c3ef648273629eeb0f80332658"
+    },
+    {
+      "id": "up-direction-girl-pointing-up",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "6aee5abe3b536deb66043638aa34a0459de6e476507ba861b932f0e9fb897ec1"
+    },
+    {
+      "id": "up-direction-boy-pointing-sky",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "d723c9ec675b0c546d5745f0f49c30b6d85b982fb7fd47e2804feaf6bdf1590d"
+    },
+    {
+      "id": "up-direction-teacher-up-gesture",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "80e5dd5e099236b28a03a7f6f9dbd1f81604ba41d075567598d8c1e8c6e6023f"
+    },
+    {
+      "id": "up-direction-child-climbing-stairs",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "e3e66bcc3ad51e74533debeededa9a08087f0efb6757da46f2534cb8c0013980"
+    },
+    {
+      "id": "up-direction-woman-stair-ascent",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "78cf909d6489b721a6b696ca4e8511acb334bff7ed8bda5d7f97d877a635b4b3"
+    },
+    {
+      "id": "up-direction-wheelchair-ramp-up",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "a62f50051c95bc825d6961cecbf2ae2811607673bec6f7dcbbf1b81fc20f7964"
+    },
+    {
+      "id": "up-direction-hands-reaching-up",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "30abb540f961615aa221ac736584fdffd5f4798b86c6b8f0dde41b17612e5f98"
+    },
+    {
+      "id": "up-direction-man-looking-up",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "863d29403291b9b1e91e98ea7722afe5efdebba02d4e3ec8115a5e73bb33b07d"
+    },
+    {
+      "id": "up-direction-rabbit-pointing-up",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "38bc8c66d4296491158277219c433a37c8b6e6e3fba9b6bafbc4e74652187802"
+    },
+    {
+      "id": "up-direction-owl-upward-pointer",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "190256364be863883151201db2ea2663cdc20ea0d1725d6caf742cf79ad944a1"
+    },
+    {
+      "id": "up-direction-balloon-rising",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "5157bdbf99e37b645777fadc31e4f9ae61225ce806f7f390f1ca8dc7b17ab730"
+    },
+    {
+      "id": "up-direction-kite-climbing-wind",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "f5b73f60be02283be0f67abcac2435d3d68bbc0536468083a605cbc766c076ef"
+    },
+    {
+      "id": "up-direction-rocket-lifting-up",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "dbabdb85c27fcface2b26cafbe19c4255e7290086f12b3c5418ba6d593a6af5f"
+    },
+    {
+      "id": "up-direction-paper-plane-climb",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "b981e8cc0063f4ea08db688f2f5b6f2cc9980aeb9abd3dfa60ae97a4d8274df1"
+    },
+    {
+      "id": "up-direction-bird-taking-flight",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "92790f1cca908e6cdc4185f11edc2048fcf9219b4606d8a274d5a902d57af70c"
+    },
+    {
+      "id": "up-direction-hot-air-balloon-ascent",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "1e250624ca9783d23f5629e402082e997e8d0fe7bf37a7f5822b16661e04147c"
+    },
+    {
+      "id": "up-direction-bubbles-floating-up",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "982cafd74049881f8b3d6d30224cb97df4ac68ff387d81b5c11c97e685419ad0"
+    },
+    {
+      "id": "up-direction-steam-rising-mug",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "77076e9bbbe7a9b8013f9e9eed7ccdcfa39255528d3ccc521b7ba2d5e96b3aa1"
+    },
+    {
+      "id": "up-direction-plant-reaching-sun",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "82dc9b48cafbd392d06e4f278f45c37dbcbe5345fcaf07f387da18fd06bb4a8c"
+    },
+    {
+      "id": "up-direction-water-jet-up",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "97d9f8e4b65bb5ea6d9beeb2e3afa1ccd86811a1bd76b212bf4e8ad83b047427"
+    },
+    {
+      "id": "up-direction-up-word-foam-blocks",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "9463a8832810f9f287464b47962db01dafb8042194bf64637a374e3d93da358f"
+    },
+    {
+      "id": "up-direction-way-up-signpost",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "e777783e8f5ee3a0f36bcc02b927d7eccda1347ee5b737cc1dade6635950e763"
+    },
+    {
+      "id": "up-direction-upstairs-door-sign",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "8f157660bb667ed2d3f98131724fe17c601356a9aa50175c673131dc9f4a3cab"
+    },
+    {
+      "id": "up-direction-this-way-up-box",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "0d1cbc4a376aa5264d15c1efd1f6963bcaa7769c8170a81e355fcb1d4609855e"
+    },
+    {
+      "id": "up-direction-up-speech-bubble",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "183ceb917943a225ded5d048c605daad31d8e7a6a0c3cfa289741578a53acb42"
+    },
+    {
+      "id": "up-direction-level-up-game-badge",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "ef81581c9c8d6b6f04f505628f9b3cf261db975f42de6e69ed95ff47c66c167e"
+    },
+    {
+      "id": "up-direction-heads-up-reminder",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "665defc85a598e85378c9e94e5c3d4db8b8e560b4a75a4d5cabf74385bd1d728"
+    },
+    {
+      "id": "up-direction-stand-up-classroom",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "f2d064a570539911270614e56a6746bea921592c88b41574b504e372fe9c51ae"
+    },
+    {
+      "id": "up-direction-climb-up-ladder",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "84c14f8dec363046b61c0e7fed784c33efa968a1e8311f0212c7596d17bfd439"
+    },
+    {
+      "id": "up-direction-up-and-away-plane",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "1fbfcf0bd582b5c826deb63bccf373105f456dc891f8b5eaccdca298a6a23d1d"
+    },
+    {
+      "id": "up-direction-outline-pointing-hand",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "18f6ceb978655295b84e208dd3fd5d7c767739647bad7b612758089cb6c69e3d"
+    },
+    {
+      "id": "up-direction-outline-stair-climber",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "9f9307634015fcabe451f0846a35f72bdfc3251bb7fcbb2393315e79cbd72e67"
+    },
+    {
+      "id": "up-direction-outline-elevator-sign",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "6126153c45bd8b58749d292fc85e223c0226f9f7e5a5670f0358257c2f0a3d88"
+    },
+    {
+      "id": "up-direction-outline-rising-balloon",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "fc4e9ec370b1420717d5c6aa8673bdf9d3a7d5ec6efbcdfbd241910bbb9d5ebf"
+    },
+    {
+      "id": "up-direction-outline-up-word",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "6e3f85d3f18bb8f5dddb6be509cb3113cf109ff1998d42b121eff51bf233ca9a"
+    },
+    {
+      "id": "up-direction-outline-cloud-upload",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "934332d50d7d17a957e4eeca0b76c37150b965fed34334949c56118e33cf9dec"
+    },
+    {
+      "id": "up-direction-upward-progress-chart",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "22f2cb55ddb21975e2e9ff305c0b0c698703916257e03667da505eef1c9212bc"
+    },
+    {
+      "id": "up-direction-book-page-up",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "db58991900adb303bce4a16bbaec3b6d7a1daee2d8ff74d746961432d1e7c48a"
+    },
+    {
+      "id": "up-direction-mountain-trail-up",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "c4271a47fd19dddbad19063ce5348f86c3920ce036c7796963512381d59e6014"
+    },
+    {
+      "id": "up-direction-up-direction-compass",
+      "topic": "up",
+      "state": "PUBLISHED",
+      "retryCount": 0,
+      "failReason": null,
+      "artReview": "FORMAT_AND_PAIR_REVIEW_PASSED",
+      "humanReview": "NOT_PERFORMED",
+      "publicationBlocked": false,
+      "sha256": "1393763f06df06d2ff475c2164ea347369c7605b417dac72ddc94ef6caff921e"
     }
   ]
 }

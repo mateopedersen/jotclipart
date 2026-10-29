@@ -1,0 +1,3942 @@
+{
+  "wave": "wave_701",
+  "status": "AWAITING_CDN",
+  "actualExportedDrawings": 50,
+  "resumed": 0,
+  "screenReview": "PASS",
+  "physicalPrintProof": false,
+  "profileSha256": "7f822b354f3f4081e3b1dadd381c9f16d583257d1574e583be7d0e3433a6b45b",
+  "profileEmbedded": false,
+  "artworks": [
+    {
+      "id": "up-direction-upward-direction-road-sign",
+      "title": "Blue Upward Arrow Road Sign",
+      "alt": "White upward arrow on a blue rectangular road sign mounted on a short metal post.",
+      "description": "A double white border frames the arrow, with two bolts securing the blue plate to its silver post.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-upward-direction-road-sign.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "a6c9951b8a325862aeab562f5aad2c69ce13597f661d56f7f2f732c0d0bf7508",
+      "inputSignature": "33c971b6387d248aae168ce2e1fd9a6ab52362a718c16af5fcefeed388d7c4e2",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 793597,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 793597,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        341,
+        62,
+        685,
+        962
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-upward-direction-road-sign.pdf",
+          "bytes": 793597,
+          "sha256": "79312cb519d8c5a53b948f1af4aae87107f0213d2b185c09041ba6b7549c1bee"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-upward-direction-road-sign.webp",
+          "bytes": 513342,
+          "sha256": "61df77e2e99ed745269e26092ae5678a91336741c21b0c45e148bdf1590f6044"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-upward-direction-road-sign-thumb.webp",
+          "bytes": 29344,
+          "sha256": "2f1241422c0fe9e224aa0cbc6511f926d24a9bc4ab496c204fae5445f84a149f"
+        }
+      },
+      "proofSha256": "b89c86be655590e96d39067da14e70b9d6445d2710424053c8594e6952bbb6dd",
+      "pairMeanRgbDifference": 2.66827
+    },
+    {
+      "id": "up-direction-wooden-stairs-sign",
+      "title": "Wooden Up Sign beside Three Steps",
+      "alt": "Wooden arrow sign reading UP beside three wooden steps, stones and green plants.",
+      "description": "Wood grain and small metal fasteners give the sign and steps a rustic appearance. The painted white arrow points straight upward.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-wooden-stairs-sign.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "53953af5b35a2b69d50c880381d79109d6e4e9d9f0ca3466642bfaf73ba390f6",
+      "inputSignature": "54cbfba4ebbc9e380c61f4e9f50486b8408936e864b15e768eefd6b19493c94a",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 819487,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 819487,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        149,
+        72,
+        973,
+        978
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-wooden-stairs-sign.pdf",
+          "bytes": 819487,
+          "sha256": "d0dfda51c553f0ebb17f22cd6469718b11df91546b87e5fce42a2caadd97f7f4"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-wooden-stairs-sign.webp",
+          "bytes": 754072,
+          "sha256": "972469f234f860409ccdba341008414dd7c1202e0bde4c5afa0a0efbaa27364f"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-wooden-stairs-sign-thumb.webp",
+          "bytes": 40288,
+          "sha256": "b02429f6bb18bee4aed7145bb4eeb29966f3f0ab41b7dfd74b99ea90ca6d046d"
+        }
+      },
+      "proofSha256": "3e808fa83444613ceaf25f9be399fc379f9f9ef39b6d2fa6fccdd1f32ff7420d",
+      "pairMeanRgbDifference": 1.93288
+    },
+    {
+      "id": "up-direction-elevator-up-button",
+      "title": "Pressing the Elevator Up Button",
+      "alt": "Hand pressing an illuminated yellow up button on a silver elevator call panel.",
+      "description": "The upper triangle glows yellow above an unlit downward triangle. Rounded corners and two screws finish the narrow metal panel.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-elevator-up-button.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "2ed824f0040cfd35423e1217f4072b07d3dd7428d4d68c7f85b5441d112d75e3",
+      "inputSignature": "1b1e16f522a0e89791a54adfbb94895c3127b86e569e4a5371a0453462740677",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 563500,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 563500,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        273,
+        99,
+        993,
+        915
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-elevator-up-button.pdf",
+          "bytes": 563500,
+          "sha256": "519199a484fca9d9e601da269b661be916d4f18ba82c3ca7165db2700cb813d9"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-elevator-up-button.webp",
+          "bytes": 555962,
+          "sha256": "313c46962c603c83e8475f8a9c5b53019745cef1514dd3817797d28a438c2ef3"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-elevator-up-button-thumb.webp",
+          "bytes": 23386,
+          "sha256": "fdeb985d4f45a3b9de6ddc9849b64e76c66430426cc353a5c6b71752e82e0afb"
+        }
+      },
+      "proofSha256": "b85e8529320039450aa1bc3185c4219567ce4d7682287780eb66f5b410ea3401",
+      "pairMeanRgbDifference": 0.98545
+    },
+    {
+      "id": "up-direction-upload-cloud-arrow",
+      "title": "Laptop Uploading to a Blue Cloud",
+      "alt": "Large blue arrow rises from an open laptop toward a rounded blue cloud.",
+      "description": "The upload arrow overlaps the laptop screen and cloud. Pale highlights give the simple blue shapes a glossy finish.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-upload-cloud-arrow.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "9770ed53bca6cc8a2b622758ccf96716db33678c77927b1d496887e18d30c2f3",
+      "inputSignature": "e67f52ff9f129e090ae4f793bac63fa0daea7fb48cbaa7f0f31cef572a5dead4",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 478188,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 478188,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        206,
+        90,
+        823,
+        939
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-upload-cloud-arrow.pdf",
+          "bytes": 478188,
+          "sha256": "2a5b2e55e50d7f6cf934b8f87400095b8b0e434c2ad3f7bd791032a7ea0cc779"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-upload-cloud-arrow.webp",
+          "bytes": 529620,
+          "sha256": "a5b28a60b7079a3effbd5f6fe95af83b199dd737e40ba27071652e557bedf0d0"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-upload-cloud-arrow-thumb.webp",
+          "bytes": 22882,
+          "sha256": "51235f4c057109f02e5f553853080cd6bd933c4e0d749fc1ebf1da3e7a24d468"
+        }
+      },
+      "proofSha256": "6e5274f9d34afe37376b869bd45e7e0748bfb1d531ed0ea933201cd138c0bb45",
+      "pairMeanRgbDifference": 7.32833
+    },
+    {
+      "id": "up-direction-double-chevron-marker",
+      "title": "Amber Double Up Chevron",
+      "alt": "Two amber upward chevrons with thick navy outlines and a white gap between them.",
+      "description": "The stacked angular marks form a compact direction symbol. Dark edging separates each amber face from the open space around it.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-double-chevron-marker.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "45d2f7c812f9b8d9905afa62da709fb5b71ca7922bc989a033f2dad07c48623e",
+      "inputSignature": "5f2ab28bfbd8bb758ee42d4e442de832681fd539ecfaa93aeb1c3cb0abc808b1",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 386945,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 386945,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        229,
+        150,
+        795,
+        845
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-double-chevron-marker.pdf",
+          "bytes": 386945,
+          "sha256": "84e00b6985aefba214561b3ed56057fb50e48be5680ea224c1bff57b53b2e081"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-double-chevron-marker.webp",
+          "bytes": 442658,
+          "sha256": "ca9e0ec45a92a3697b11b22fb2737d3840bb91a58872642a34abafe14fc1f715"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-double-chevron-marker-thumb.webp",
+          "bytes": 18140,
+          "sha256": "a1737c5778ee1cca508c8199058f7f7306cf48f5c400fe8f25753d0fc48e076c"
+        }
+      },
+      "proofSha256": "5ffc65d7eb3f2eb10225b2742ab00eb5da3e2e56dbf36a40f8df0359ef327ab4",
+      "pairMeanRgbDifference": 1.02181
+    },
+    {
+      "id": "up-direction-curved-route-up",
+      "title": "Curving Road Arrow to a Red Flag",
+      "alt": "Dark curved road with a dashed white center line rises to an arrowhead and red flag.",
+      "description": "The wide road sweeps upward from the lower left. A small flag marks the pointed destination at the top.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-curved-route-up.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "9a86e28e95a5ac241cfe84afce44ff346b9b9eaf98168fd207c4b984cd03810e",
+      "inputSignature": "3c93e9ee7e0ccebd22d2d3d53602e98439f7707c47c3b806537e8dd8e651cfad",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 512191,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 512191,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        49,
+        43,
+        956,
+        989
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-curved-route-up.pdf",
+          "bytes": 512191,
+          "sha256": "076e1f152949eef24f27fc5e110c80ee7227d5240414568dc373508df5567e47"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-curved-route-up.webp",
+          "bytes": 464484,
+          "sha256": "dc650338f1aafb45b08aa8b77432e76e924e8681093ef86f7cde9a74e98e4975"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-curved-route-up-thumb.webp",
+          "bytes": 21480,
+          "sha256": "f2a7b73a6e3dc570107c98cc66bca9fdbbf752049396cf49c86c6c39174c398a"
+        }
+      },
+      "proofSha256": "4ba61176e16270939c151eace26ed6bf31ddcb06f8821de2b86ac59aa9bfe791",
+      "pairMeanRgbDifference": 0.99566
+    },
+    {
+      "id": "up-direction-stairs-arrow-blocks",
+      "title": "Building an Up Arrow with Toy Blocks",
+      "alt": "Hand places a red arrowhead on a tower of blue, green, yellow, orange and red blocks.",
+      "description": "The bright blocks form a rising stack capped by a triangular red point. A blue sleeve enters beside the hand placing the top piece.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-stairs-arrow-blocks.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "0add0296142112c771592ca278850738177dc406113e34d3c72aa4d42407b94b",
+      "inputSignature": "d10135ea483eae4f339cbd39cf81442154ba6e708cebd345e94ca2a86e817faa",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 343821,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 343821,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        293,
+        68,
+        914,
+        989
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-stairs-arrow-blocks.pdf",
+          "bytes": 343821,
+          "sha256": "0041a381d627bb7655547a64665612c2ecf2ba91991b5e5a434c1f23ef21a794"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-stairs-arrow-blocks.webp",
+          "bytes": 511770,
+          "sha256": "8f08a82586b933e8c7471289b03fa3c47a13356018355a732c93937ad9803542"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-stairs-arrow-blocks-thumb.webp",
+          "bytes": 20988,
+          "sha256": "37f586a137bc369ceac3fe361c0d1ac6db2ff94795820fb23163c935123b8f33"
+        }
+      },
+      "proofSha256": "d5fec87f81a40a8a0ecd87277c587c2626302b3d8dc522f882cc6e2e7bd01f9c",
+      "pairMeanRgbDifference": 2.10483
+    },
+    {
+      "id": "up-direction-hand-drawn-up-label",
+      "title": "Hand-Drawn Red Up Arrow",
+      "alt": "Textured red upward arrow with a black outline and the word UP below.",
+      "description": "Short accent strokes emphasize the arrow's direction. The uneven red fill and dark edging give the symbol a drawn appearance.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-hand-drawn-up-label.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "b6dc44c3742738e77cbca9af7262e9980c118ee89a497ad6ae9d85962b75c14f",
+      "inputSignature": "faec090033435815e7c303ae60df301e6868878099ad9bf069e6db7ca6bc1c5a",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 537699,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 537699,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        276,
+        97,
+        747,
+        931
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-hand-drawn-up-label.pdf",
+          "bytes": 537699,
+          "sha256": "6f728676ae6e6be5d30e7337f9752b1f9f2355684534ddcd2673b6eb21cf209d"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-hand-drawn-up-label.webp",
+          "bytes": 624046,
+          "sha256": "876e2bb5eb1dd2385e2ba9d52093e202679554f4ebf046a827dcf1f6556e890a"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-hand-drawn-up-label-thumb.webp",
+          "bytes": 29488,
+          "sha256": "9db59a513bb146acba83655e85716994c93ebfb3706f63c00a162673382dde5c"
+        }
+      },
+      "proofSha256": "100464ca191fc478fd911a33b0a31d7007bc6fa5dfbdf2b1808bf3e4d2e11955",
+      "pairMeanRgbDifference": 1.3848
+    },
+    {
+      "id": "up-direction-ribbon-arrow-loop",
+      "title": "Folded Red Ribbon Up Arrow",
+      "alt": "Glossy red ribbon twists into an upward arrow with a notched lower tail.",
+      "description": "Folded bands cross the arrow's stem, with bright highlights along their edges. The pointed top and cut ribbon tail keep the silhouette clear.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-ribbon-arrow-loop.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "12ef0700f103f660051d8b2e084b8a571cd933cb2fc4038aeea7aafd6c685642",
+      "inputSignature": "c875ce103c20994d1693bbf76ca0a8d71737149405deacda02d0e6c36370325e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 326367,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 326367,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        286,
+        70,
+        739,
+        949
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-ribbon-arrow-loop.pdf",
+          "bytes": 326367,
+          "sha256": "6ef4cf36572cf797d213e1777354c283bb8aea0c9935aa2b63335bdd9a914cfe"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-ribbon-arrow-loop.webp",
+          "bytes": 529984,
+          "sha256": "b02cdc9135bf1d79cfd9567abab2b4db5c635b73050837be23e60f742074f332"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-ribbon-arrow-loop-thumb.webp",
+          "bytes": 16496,
+          "sha256": "78ac32736d3d5e0d7923ac0284c2a3f93e5f2c51c2f7a77aa03bba8b577c223b"
+        }
+      },
+      "proofSha256": "705cc18180262188facf03dae79694f6c8b51516468b31750fb6fa5083880bca",
+      "pairMeanRgbDifference": 2.04185
+    },
+    {
+      "id": "up-direction-chalkboard-up-arrow",
+      "title": "Chalkboard Up Arrow on an Easel",
+      "alt": "Small wooden easel supports a black chalkboard with a white arrow and UP lettering.",
+      "description": "Chalk-like texture softens the white marks against the dark board. The wooden frame rests on two angled easel legs.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-chalkboard-up-arrow.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "1e9997b0ff0371ebafb40219620479bfbc772f626ceb7f1658f3ad76064469c3",
+      "inputSignature": "8060f7b6624e4a5c07ee7c75292e9269e30f4a9692f0642da9b6a392f9af24e3",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 833712,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 833712,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        233,
+        47,
+        789,
+        980
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-chalkboard-up-arrow.pdf",
+          "bytes": 833712,
+          "sha256": "84f2ed199d01aa6fc0e00e104a1ccfc2b49154669c6df1ee47d5db4d3286ac23"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-chalkboard-up-arrow.webp",
+          "bytes": 657626,
+          "sha256": "1788b690bb554e29916d263ed2b0ad64f2f8a5c3ef648273629eeb0f80332658"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-chalkboard-up-arrow-thumb.webp",
+          "bytes": 26522,
+          "sha256": "886a28b5dd6a2175b85762cd717dfca930f70b12800ebbd2b70437bcd75c0035"
+        }
+      },
+      "proofSha256": "af7eb5d559e370ae4a43140218405d3c32e8831a4a1e5cd3c378dff4c86b706f",
+      "pairMeanRgbDifference": 1.20813
+    },
+    {
+      "id": "up-direction-girl-pointing-up",
+      "title": "Girl in Yellow Pointing Up",
+      "alt": "Curly-haired cartoon girl in a yellow dress points toward a small yellow arrow above her finger.",
+      "description": "A yellow headband matches her dress, while blue stripes repeat on her shirt and socks. Her raised arm and upward gaze reinforce the direction.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-girl-pointing-up.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "df15a878b50c40743590ad736afbe894450e0f87c899829dbed3b7695f16fbd1",
+      "inputSignature": "3422c089f143e3198d28f7ff141d6753d836dd258d78832278777b37faa416fd",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 586714,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 586714,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        263,
+        26,
+        710,
+        997
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-girl-pointing-up.pdf",
+          "bytes": 586714,
+          "sha256": "0b458d686f2d3b27b9e9d18d8533ac6afe18942eba34e36b1f26d43b3f50c8ab"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-girl-pointing-up.webp",
+          "bytes": 604798,
+          "sha256": "6aee5abe3b536deb66043638aa34a0459de6e476507ba861b932f0e9fb897ec1"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-girl-pointing-up-thumb.webp",
+          "bytes": 35248,
+          "sha256": "3917287128b80facb5aab052f94463c13f18876ad462eb83d03541bf1bf49893"
+        }
+      },
+      "proofSha256": "94bfa3b9a5969d916131c3d7a0fcbd20fff93a6fbe7ade5b25d2cf2baa306a5e",
+      "pairMeanRgbDifference": 1.14514
+    },
+    {
+      "id": "up-direction-boy-pointing-sky",
+      "title": "Boy in a Teal Hoodie Pointing Up",
+      "alt": "Brown-haired cartoon boy in a teal hoodie and jeans points toward a blue upward arrow.",
+      "description": "The boy tilts his face toward the arrow, with one arm stretched diagonally above his shoulder. White-trimmed sneakers complete the standing pose.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-boy-pointing-sky.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "a475aaff1e6c735ac6bb1393a9d8169b23d85ab7b417a07da0e2805441de198e",
+      "inputSignature": "865a3f016230d7843a135a0563b8101f3d845f50237d76d07cfd576c8e3e162b",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 739563,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 739563,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        333,
+        34,
+        732,
+        996
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-boy-pointing-sky.pdf",
+          "bytes": 739563,
+          "sha256": "4672f46450fe5369d5e6ebdbcc19511d50e47a99c59cac345c65e7771600343f"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-boy-pointing-sky.webp",
+          "bytes": 588694,
+          "sha256": "d723c9ec675b0c546d5745f0f49c30b6d85b982fb7fd47e2804feaf6bdf1590d"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-boy-pointing-sky-thumb.webp",
+          "bytes": 40792,
+          "sha256": "0103429ac9c7e8fef1ee0aacaf114d74e3cb61c153fe5831e80d80d2b8a36966"
+        }
+      },
+      "proofSha256": "c500e91ce7892af7c4d535d95007842592d002e6a8dcf12a44b59425705965bf",
+      "pairMeanRgbDifference": 1.04735
+    },
+    {
+      "id": "up-direction-teacher-up-gesture",
+      "title": "Teacher Holding an Up Arrow Card",
+      "alt": "Silver-haired woman with glasses raises one finger while holding a card with a blue arrow and UP.",
+      "description": "The teacher wears a blue cardigan over a white top. Her raised finger repeats the direction printed on the white teaching card.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-teacher-up-gesture.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "cbe67592a065b0c44802a0f802d18879491203db8351eee92813abf8044c909e",
+      "inputSignature": "6f035ca7ed53ccd14dfd4e2d3b965d7c439ca6b8ad113869f9c2a711f2dbfa7e",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 852200,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 852200,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        151,
+        33,
+        871,
+        1000
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-teacher-up-gesture.pdf",
+          "bytes": 852200,
+          "sha256": "b0bbb028046db6454c6cf7e338240562e83d25f728ca6c5f0babb8481b0d74b8"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-teacher-up-gesture.webp",
+          "bytes": 696570,
+          "sha256": "80e5dd5e099236b28a03a7f6f9dbd1f81604ba41d075567598d8c1e8c6e6023f"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-teacher-up-gesture-thumb.webp",
+          "bytes": 40994,
+          "sha256": "33b8a08ee1a3b9fe61d294163b13a7ce08ee8ed83d6e589164810d3ac9d1363c"
+        }
+      },
+      "proofSha256": "4352356e3ccb4e2c8e118716a9cd892f10ebbdeca383444d697bd204a47539f6",
+      "pairMeanRgbDifference": 1.59443
+    },
+    {
+      "id": "up-direction-child-climbing-stairs",
+      "title": "Child with a Backpack Climbing Steps",
+      "alt": "Red-haired cartoon child with an orange backpack climbs gray steps beside a green arrow.",
+      "description": "A green shirt and sneakers contrast with blue trousers and the orange backpack. The side view shows one foot advancing onto a higher step.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-child-climbing-stairs.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "578d44fdbff77759afd7b176d5d6c2534c84eeaa8e7980cdd6cdc2560028fea1",
+      "inputSignature": "fc8bbd4675aa6b6081c376c1cef7a51364c45cfc24a9c919735b39983a12f0ec",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 759820,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 759820,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        258,
+        92,
+        914,
+        945
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-child-climbing-stairs.pdf",
+          "bytes": 759820,
+          "sha256": "6c09bd81a8e168a056b7ac91df1375f46913a4a9d6b689aaa6a54e0b97bedf16"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-child-climbing-stairs.webp",
+          "bytes": 626430,
+          "sha256": "e3e66bcc3ad51e74533debeededa9a08087f0efb6757da46f2534cb8c0013980"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-child-climbing-stairs-thumb.webp",
+          "bytes": 37416,
+          "sha256": "89297477052fcb6720b068a52bc9d3481d12709ae64b83c5927b09f79100dd57"
+        }
+      },
+      "proofSha256": "f0e852e92b428d445c6aac6616714eabfc18dc590708d71e116cac376cc81428",
+      "pairMeanRgbDifference": 1.42135
+    },
+    {
+      "id": "up-direction-woman-stair-ascent",
+      "title": "Woman Walking Up a Staircase",
+      "alt": "Woman in a burgundy top and navy trousers walks up gray stairs beside a blue arrow.",
+      "description": "Her dark ponytail follows the upward stride. Blue heels and a diagonal arrow add direction to the clean side-view composition.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-woman-stair-ascent.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "01131832c1849c2867f47cc95a6c0461f9223994f210b9d109f03d7691de96dd",
+      "inputSignature": "04fdd0ed27ad7604228089a3d84d468e5dfedd99f67fab9e283ce70a5b9f0b28",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 544023,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 544023,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        295,
+        76,
+        830,
+        944
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-woman-stair-ascent.pdf",
+          "bytes": 544023,
+          "sha256": "2f5da265c89af920b56364fb8d7f7c5dc87f5627a5d4ee2c6e05b8cc7e9de3c4"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-woman-stair-ascent.webp",
+          "bytes": 536634,
+          "sha256": "78cf909d6489b721a6b696ca4e8511acb334bff7ed8bda5d7f97d877a635b4b3"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-woman-stair-ascent-thumb.webp",
+          "bytes": 27232,
+          "sha256": "22a0aae019c94d233e5e2fcb46a135b6a0c7bdb8393304507158698305625231"
+        }
+      },
+      "proofSha256": "665fbcb7068f8badd500752e7d17c0d0ab9cb5eaedaafa7db389b75086180136",
+      "pairMeanRgbDifference": 0.9329
+    },
+    {
+      "id": "up-direction-wheelchair-ramp-up",
+      "title": "Wheelchair User Ascending a Ramp",
+      "alt": "Cartoon wheelchair user in a blue jacket moves up a gray ramp beside a blue arrow.",
+      "description": "The sloping ramp includes a silver handrail. A side view shows the large rear wheel, small front caster and the rider facing uphill.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-wheelchair-ramp-up.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "5a272b8880f7c2c2638f403c439684625a464347e993de12e306b5cd49db0705",
+      "inputSignature": "050ef0d489fd327c101917d9d9b84b24b6fc6f5aae0f8e1e752b6bd4eb225c4c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 721515,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 721515,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        144,
+        246,
+        956,
+        815
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-wheelchair-ramp-up.pdf",
+          "bytes": 721515,
+          "sha256": "623098849a05852b8d8e1bd02e4ca521e4471ddea7982b699721ff69ceaa9eb9"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-wheelchair-ramp-up.webp",
+          "bytes": 585420,
+          "sha256": "a62f50051c95bc825d6961cecbf2ae2811607673bec6f7dcbbf1b81fc20f7964"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-wheelchair-ramp-up-thumb.webp",
+          "bytes": 38212,
+          "sha256": "ddeda21024b324542ed287c23b7854c0317067255d3973e35df0397b46f242e7"
+        }
+      },
+      "proofSha256": "2c2392ff2d3e3e7b63e565586c5a93424de31afb77bc28609ac521f67ed3b065",
+      "pairMeanRgbDifference": 1.23218
+    },
+    {
+      "id": "up-direction-hands-reaching-up",
+      "title": "Children Reaching Up Together",
+      "alt": "Two smiling cartoon children reach both arms toward a blue upward arrow.",
+      "description": "One child wears a coral dress and twin braids; the other has blond hair and purple overalls. Their open hands stretch toward the arrow between them.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-hands-reaching-up.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "c7f23066a6f8843d2a782bf5e2ce727659c0a575678f585afe21c4b792454ec9",
+      "inputSignature": "2c4f2b2058dd03f3e611defd010ed93fa31185820c40253b2938867ca72a9188",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 942526,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 942526,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        106,
+        33,
+        919,
+        992
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-hands-reaching-up.pdf",
+          "bytes": 942526,
+          "sha256": "32c70f11a33ed48d946ced07f912d118a0fa4d49a1353b0de4478b972919b0b8"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-hands-reaching-up.webp",
+          "bytes": 750856,
+          "sha256": "30abb540f961615aa221ac736584fdffd5f4798b86c6b8f0dde41b17612e5f98"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-hands-reaching-up-thumb.webp",
+          "bytes": 62192,
+          "sha256": "7be0d6f424644f2ed1e2483722db790de720f9e748e36cbae3a3af3184536d6f"
+        }
+      },
+      "proofSha256": "70f795aaed7ff987219cfc353e502da800aa3efc480580fdc2ee56713288d04f",
+      "pairMeanRgbDifference": 2.33307
+    },
+    {
+      "id": "up-direction-man-looking-up",
+      "title": "Man Looking toward an Up Arrow",
+      "alt": "Bearded man in a denim shirt and tan trousers looks up at a large blue arrow.",
+      "description": "The relaxed standing figure keeps both hands in his pockets. His tilted head directs attention to the bold arrow above his shoulder.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-man-looking-up.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "60fedbded80cd09309a3302823d6995f7c7de4b50c98cae8ee413e0f9cbc1cf2",
+      "inputSignature": "68cbeaf33d32576b0ce9df22035e3f6c69c506f82bb52dc36b3464886fa301f2",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 440488,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 440488,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        316,
+        30,
+        716,
+        1000
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-man-looking-up.pdf",
+          "bytes": 440488,
+          "sha256": "5ea6e09011155b270e27b4b2e934a19b657cf18b3cd697e3ad694a711f4ab2ec"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-man-looking-up.webp",
+          "bytes": 533984,
+          "sha256": "863d29403291b9b1e91e98ea7722afe5efdebba02d4e3ec8115a5e73bb33b07d"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-man-looking-up-thumb.webp",
+          "bytes": 26138,
+          "sha256": "b70f9c135f2778a5b164a75937cd6e5806511e5fefcb96ef2bf06cffd6856fd2"
+        }
+      },
+      "proofSha256": "537730e95862aede2bd6db48f81036290de0fad69be0d65b2354df830ba053d9",
+      "pairMeanRgbDifference": 1.00966
+    },
+    {
+      "id": "up-direction-rabbit-pointing-up",
+      "title": "Rabbit Pointing toward a Green Arrow",
+      "alt": "Gray cartoon rabbit with pink ears and a green scarf points toward a green upward arrow.",
+      "description": "The rabbit smiles beneath its long ears, holding one paw close to its chest. Small green marks emphasize the arrow above the pointing paw.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-rabbit-pointing-up.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "07a7e74bff1fe824aea094a104001b4ff8a4d151eb20b5b30c4e4746081d9363",
+      "inputSignature": "480e2d2e3055b99538d893e16a4c74b93242f7e32fdfdb640938a05f9c0a3fbf",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 836800,
+        "weightedCmykRmse": 0.774597
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1259946,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 836800,
+          "weightedCmykRmse": 0.774597
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        186,
+        67,
+        848,
+        999
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-rabbit-pointing-up.pdf",
+          "bytes": 836800,
+          "sha256": "3ec6681b7ff264229faa61d9a6b461e3c6c07003a65898334acc020bd3bf1d80"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-rabbit-pointing-up.webp",
+          "bytes": 745608,
+          "sha256": "38bc8c66d4296491158277219c433a37c8b6e6e3fba9b6bafbc4e74652187802"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-rabbit-pointing-up-thumb.webp",
+          "bytes": 64920,
+          "sha256": "b7da13ff4b1bea61c3e3852d6a9fb5f203ae0b4f4da859020fc2c0fbac987ecf"
+        }
+      },
+      "proofSha256": "da558111c33a5bd516555bb81af5ce820ed86c0059cf33b41f5679062729dee8",
+      "pairMeanRgbDifference": 1.76034
+    },
+    {
+      "id": "up-direction-owl-upward-pointer",
+      "title": "Owl Teaching the Up Direction",
+      "alt": "Brown owl in round glasses and a navy vest uses a pointer beside a green arrow on an easel.",
+      "description": "A red tie and gold vest buttons dress the owl as a cartoon teacher. Its wooden pointer rests against the arrow on the cream board.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-owl-upward-pointer.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "a229d8f426c8cc9336d20afb28c4a4c8228bc97dabc87e2e3e73eb255048ca2e",
+      "inputSignature": "c2830117450b0187b8773ce4dd187956970617839f35d99f755676a02decec65",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 958240,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 958240,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        107,
+        154,
+        956,
+        914
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-owl-upward-pointer.pdf",
+          "bytes": 958240,
+          "sha256": "72d8fef094950d9335249428cdb99b4464edd8f1faedc3a7879d621da5b831e8"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-owl-upward-pointer.webp",
+          "bytes": 761732,
+          "sha256": "190256364be863883151201db2ea2663cdc20ea0d1725d6caf742cf79ad944a1"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-owl-upward-pointer-thumb.webp",
+          "bytes": 47234,
+          "sha256": "22ad9078dec09f626272351ebc7354a0757177f6ba2d0bf388a27d3c747df4d1"
+        }
+      },
+      "proofSha256": "30a5a4abb5e5ec551d2b6010906e5c2fffabcc1414f02609eab616d52020a6cf",
+      "pairMeanRgbDifference": 2.2815
+    },
+    {
+      "id": "up-direction-balloon-rising",
+      "title": "Red Balloon Rising above a Hand",
+      "alt": "Glossy red-orange balloon floats above a blue-cuffed hand beside a dotted blue up arrow.",
+      "description": "A loose blue string curls between the balloon and hand. The small dotted arrow echoes the balloon's upward movement.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-balloon-rising.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "25ca1ad1f41b50802be70fadd3e08e168bcd0de6d885ee3ec7729d0ac261d822",
+      "inputSignature": "834aa5b8dcddd4f989004562cc93bf9c75565caa711b18066cf217cb4a1f263b",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 913812,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 913812,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        306,
+        49,
+        671,
+        1005
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-balloon-rising.pdf",
+          "bytes": 913812,
+          "sha256": "2582560a0fcba7ddfbf66009d2c5eec8bf74f83b15138f0a1c41bad66fb6e1dd"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-balloon-rising.webp",
+          "bytes": 581790,
+          "sha256": "5157bdbf99e37b645777fadc31e4f9ae61225ce806f7f390f1ca8dc7b17ab730"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-balloon-rising-thumb.webp",
+          "bytes": 39416,
+          "sha256": "eb8b7138d8bea7969e84f29d02cae83ce58fdcfcb3a27f67c11db6dc6ca5d38d"
+        }
+      },
+      "proofSha256": "7f604d28481db77ebda4aa982f9fed4f0d4668ae4424ec78b5fffa9fb5dc0a51",
+      "pairMeanRgbDifference": 0.89629
+    },
+    {
+      "id": "up-direction-kite-climbing-wind",
+      "title": "Kite Climbing into the Wind",
+      "alt": "Red, yellow, blue and green diamond kite rises above two hands holding its line and reel.",
+      "description": "A long tail of colored ties hangs from the kite. The curved blue arrow follows its ascent, while the separate hands manage the taut string below.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-kite-climbing-wind.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "22c39ba3e20e6a666c828e1f2be572bb71676867e848bc3381bb7d42655f9f76",
+      "inputSignature": "eb5c28e39f29d31f564a0d764640e589a528104f45b0bc0ae8ea4d1bad984606",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 531227,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 531227,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        248,
+        71,
+        873,
+        969
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-kite-climbing-wind.pdf",
+          "bytes": 531227,
+          "sha256": "5322bcb922926ec21b2f44e26df524385cae6fc215ff2c67d25c9d82ae139eb8"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-kite-climbing-wind.webp",
+          "bytes": 556228,
+          "sha256": "f5b73f60be02283be0f67abcac2435d3d68bbc0536468083a605cbc766c076ef"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-kite-climbing-wind-thumb.webp",
+          "bytes": 29936,
+          "sha256": "2fa577c956806378638928935441daa0df32593b8ff62f5206c91b3d3b6c9fea"
+        }
+      },
+      "proofSha256": "7ca82587359aab8dd6cef235fa52efd3355ee7bfc68c6d5a002374ec974a4c60",
+      "pairMeanRgbDifference": 1.33007
+    },
+    {
+      "id": "up-direction-rocket-lifting-up",
+      "title": "Cartoon Rocket Launching Upward",
+      "alt": "Red-and-white rocket with a blue window rises on an orange flame beside a green arrow.",
+      "description": "Rounded smoke clouds collect below the rocket's small launch base. Red fins and nose cone frame the white body in this playful space illustration.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-rocket-lifting-up.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "02752dc17d79162b53829c145c1da7bbc50ceb9e4bae02cade6ba2b111ce9a41",
+      "inputSignature": "a4484abdca23747f16e8aa91fa8a7b695e8b25857fa252787a9595196c0340e0",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 984157,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 984157,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        340,
+        49,
+        765,
+        1000
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-rocket-lifting-up.pdf",
+          "bytes": 984157,
+          "sha256": "3d16b911213990049e249584069dc715ef5443e5907952415d463f5db4cfbfa1"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-rocket-lifting-up.webp",
+          "bytes": 609218,
+          "sha256": "dbabdb85c27fcface2b26cafbe19c4255e7290086f12b3c5418ba6d593a6af5f"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-rocket-lifting-up-thumb.webp",
+          "bytes": 48144,
+          "sha256": "adbea12d2c1986ada4741fa666cf21b5e18da79f8e1358f3685e58245348ede7"
+        }
+      },
+      "proofSha256": "39c5b791e841cada782e7bca8ed5ff74cfec3bd0c5c09431de4fe50c9e3738c8",
+      "pairMeanRgbDifference": 1.74278
+    },
+    {
+      "id": "up-direction-paper-plane-climb",
+      "title": "Paper Airplane on an Ascending Path",
+      "alt": "Blue-and-white paper airplane follows a curved dotted path toward the upper right.",
+      "description": "The folded plane sits above the looping blue trail. A small arrowhead at the end of the dashed line marks its climbing route.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-paper-plane-climb.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "9094335e5c947cc42b414e01e19a4e24edb254996303fc175edf477d042d71f1",
+      "inputSignature": "08a0c779dae65925af8757070c714eab5fc363949ad44d9be7f52ab85a481284",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 384559,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 384559,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        108,
+        125,
+        959,
+        874
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-paper-plane-climb.pdf",
+          "bytes": 384559,
+          "sha256": "60f28e6525acc2e7de6fa9026fb22122c862fcd25af850014e80a543e5fd6caa"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-paper-plane-climb.webp",
+          "bytes": 482162,
+          "sha256": "b981e8cc0063f4ea08db688f2f5b6f2cc9980aeb9abd3dfa60ae97a4d8274df1"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-paper-plane-climb-thumb.webp",
+          "bytes": 28444,
+          "sha256": "6dd2ff0d476287c31d3689410a45fd8b3b4e29a6c7a92dd76cc2a919a82f6725"
+        }
+      },
+      "proofSha256": "50a62a066b17ecb1bde59460076fd57d58e7a1ce90155f04007a660e0834407f",
+      "pairMeanRgbDifference": 0.82999
+    },
+    {
+      "id": "up-direction-bird-taking-flight",
+      "title": "Blue Bird Taking Flight",
+      "alt": "Blue songbird spreads its wings above a leafy twig beside a curved upward arrow.",
+      "description": "A white breast and yellow beak brighten the small bird. The rising arrow follows the lift from the twig into open space.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-bird-taking-flight.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "ee9f4517cc333a0b2dc1bb8fc4404875a6dba9a015e01ec1a967a4fdf702c58f",
+      "inputSignature": "5592f15b940616aca79da7e45f9811d4b33fb07df6999952e048f2ab93c8c84b",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 613651,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 613651,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        188,
+        88,
+        833,
+        985
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-bird-taking-flight.pdf",
+          "bytes": 613651,
+          "sha256": "483ade5848959f3c619e3a9ccb6796315ef446b892af30c79363a710e3371de6"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-bird-taking-flight.webp",
+          "bytes": 654252,
+          "sha256": "92790f1cca908e6cdc4185f11edc2048fcf9219b4606d8a274d5a902d57af70c"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-bird-taking-flight-thumb.webp",
+          "bytes": 39462,
+          "sha256": "961aca5387881538a0771dd0fe21c3cb10bfe1905c82c0b06e800d3a960dfff6"
+        }
+      },
+      "proofSha256": "4560ce25f1d3a2def3c7973adc7273a12fbe78f2b861cf97938ea699e0f249af",
+      "pairMeanRgbDifference": 2.88989
+    },
+    {
+      "id": "up-direction-hot-air-balloon-ascent",
+      "title": "Hot-Air Balloon Rising with a Passenger",
+      "alt": "Red, white and blue hot-air balloon carries a small passenger above a blue up arrow.",
+      "description": "The striped balloon tapers toward suspension ropes and a wicker basket. A child's face peeks over the basket rim.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-hot-air-balloon-ascent.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "dd48add1709190b21e26217bac5bdb180e1dd40c75fcb2420500aef15393a256",
+      "inputSignature": "1b6df29f11f759703c94463d0591e519fceb8e556324256261440f590247424d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 406483,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 406483,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        286,
+        54,
+        738,
+        974
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-hot-air-balloon-ascent.pdf",
+          "bytes": 406483,
+          "sha256": "dbadad237ef46b9955527b0ee2a56b4d200c297b3d752c61df8c60ca7262e4c9"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-hot-air-balloon-ascent.webp",
+          "bytes": 522222,
+          "sha256": "1e250624ca9783d23f5629e402082e997e8d0fe7bf37a7f5822b16661e04147c"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-hot-air-balloon-ascent-thumb.webp",
+          "bytes": 26374,
+          "sha256": "849f10c37cbc1aa2bcddf57530a37d3a9b32369a15ae798c1d9679b7b1856c01"
+        }
+      },
+      "proofSha256": "414a3676d4a40a182e656130838482b0dcd31c7927e9c6c7954e01c3b35e5cb7",
+      "pairMeanRgbDifference": 2.34192
+    },
+    {
+      "id": "up-direction-bubbles-floating-up",
+      "title": "Bubbles Floating Up from a Wand",
+      "alt": "Hand holds a blue bubble wand beneath rising rainbow-tinted bubbles and a blue arrow.",
+      "description": "Large and small bubbles form a loose vertical trail above the ring. The curved arrow runs alongside them to show their upward movement.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-bubbles-floating-up.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "dbf3dff1b1ff6188ea5fb5b2c82ec08f199348ccea08b35a429d0898e6773c05",
+      "inputSignature": "ac8838987b0a4a65cfd5311557ee0de530bacb22ffb0c3c2a913ad0d7599e30a",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 508953,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 508953,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        360,
+        56,
+        650,
+        985
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-bubbles-floating-up.pdf",
+          "bytes": 508953,
+          "sha256": "283bb052ce498a6de22414daab3381b32db7831053f0545726be00d6aa164cee"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-bubbles-floating-up.webp",
+          "bytes": 577164,
+          "sha256": "982cafd74049881f8b3d6d30224cb97df4ac68ff387d81b5c11c97e685419ad0"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-bubbles-floating-up-thumb.webp",
+          "bytes": 37290,
+          "sha256": "ed5d983d41b1b1a028c55c4f00ff8bf0d7a9fc7146d0d3537754f8871127a8ab"
+        }
+      },
+      "proofSha256": "315c221837773e8aeab0bc129e1ed11de8cddeba04e6c78578141ff9f0b921f4",
+      "pairMeanRgbDifference": 1.00586
+    },
+    {
+      "id": "up-direction-steam-rising-mug",
+      "title": "Steam Rising from a Striped Mug",
+      "alt": "Cream mug with blue bands and dark drink gives off curls of steam beside a green arrow.",
+      "description": "The rounded handle sits on the left of the cup. Gray steam rises above the rim while the broad arrow emphasizes the same upward direction.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-steam-rising-mug.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "71046aba0bc80bd030e685e91ef23987285aad8240f5d6e18f57760f63c8474a",
+      "inputSignature": "d563211c437b96c1c776081fb79e616387eac538f9f9fbdbb6bb6b2cddc17975",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 601032,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 601032,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        127,
+        92,
+        932,
+        936
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-steam-rising-mug.pdf",
+          "bytes": 601032,
+          "sha256": "c89ba80a00a16b0c5504169bca13174cc63e3f9c61f224a97c56f40d5decea28"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-steam-rising-mug.webp",
+          "bytes": 557504,
+          "sha256": "77076e9bbbe7a9b8013f9e9eed7ccdcfa39255528d3ccc521b7ba2d5e96b3aa1"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-steam-rising-mug-thumb.webp",
+          "bytes": 31230,
+          "sha256": "75cc5a914b0c771b3e0f43dd958f0fdad82801bc98a9d4d9310e6f5565119eec"
+        }
+      },
+      "proofSha256": "ab25cfdcfd91708b834269e935ad42812845cf2f9e23d0a10856cfc1b06eee88",
+      "pairMeanRgbDifference": 1.11181
+    },
+    {
+      "id": "up-direction-plant-reaching-sun",
+      "title": "Sunflower Growing toward the Sun",
+      "alt": "Potted sunflower reaches upward beside a green arrow and a small smiling sun.",
+      "description": "Broad leaves flank the tall stem above a terracotta pot. The yellow bloom and sun create two bright points at the top of the drawing.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-plant-reaching-sun.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "f185943f7fb5203993875d46f5a21ae48f5f38706922fc78c664f8db0c2b474e",
+      "inputSignature": "cde8d0c67b17a8bef8f3ccb544db0d31706682c8ed61b9bc07f8e6e19e66442c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 763469,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 763469,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        319,
+        29,
+        768,
+        995
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-plant-reaching-sun.pdf",
+          "bytes": 763469,
+          "sha256": "3f5b350d3938f8ae3f2830ddf3075d049625df59d265d3a00dd3df28020bfb47"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-plant-reaching-sun.webp",
+          "bytes": 661040,
+          "sha256": "82dc9b48cafbd392d06e4f278f45c37dbcbe5345fcaf07f387da18fd06bb4a8c"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-plant-reaching-sun-thumb.webp",
+          "bytes": 49898,
+          "sha256": "3f77801843d867b96bd3544df5dde9fc9ffbbdcc5738c31a6d03683739676fc3"
+        }
+      },
+      "proofSha256": "ac436ca01063d02bb9ff808b48e86d37664f12132ed2c3d621d5f826ec1aff06",
+      "pairMeanRgbDifference": 1.62485
+    },
+    {
+      "id": "up-direction-water-jet-up",
+      "title": "Water Jet Rising from a Garden Fountain",
+      "alt": "Pale stone garden fountain sends water upward beside a blue arrow and green plants.",
+      "description": "The central jet curves outward into falling streams above the basin. Low leafy plants surround the fountain's base.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-water-jet-up.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "d4421c20c8da8ab2defba4e4aed5935a97d07ce838ef2959c8a0b2ca49859462",
+      "inputSignature": "5887452c762c31137a34e4d8b6efef2890da95b57866fa6528c3f20ca8511d3f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 536713,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 536713,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        234,
+        33,
+        739,
+        998
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-water-jet-up.pdf",
+          "bytes": 536713,
+          "sha256": "6ad31fba1299f0ebe179a390a8c36575a1ebcc786bced8de5b656ba681408fc1"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-water-jet-up.webp",
+          "bytes": 614696,
+          "sha256": "97d9f8e4b65bb5ea6d9beeb2e3afa1ccd86811a1bd76b212bf4e8ad83b047427"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-water-jet-up-thumb.webp",
+          "bytes": 36680,
+          "sha256": "fd3774939481a5de9664642542f48c2dec5fa5c94b374ca50143172f9fef2c93"
+        }
+      },
+      "proofSha256": "201933b3062c4903cb06287c66f4555273820d1ddd6dce2afc1a4acf06b11541",
+      "pairMeanRgbDifference": 1.95588
+    },
+    {
+      "id": "up-direction-up-word-foam-blocks",
+      "title": "Hands Holding Colorful Up Letters",
+      "alt": "Two blue-cuffed hands hold blue U and red P letters below a yellow upward arrow.",
+      "description": "The large rounded letters overlap at their inner edges. Bright yellow rays emphasize the tall arrow rising behind them.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-up-word-foam-blocks.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "acbf64821cb65118f94b06aef164e9674eef720bea3295338cd1cdb190820045",
+      "inputSignature": "9443b42b25d8d1573a516ea39ffd5eda85b17656dd50cdec16422e7e5bb74e8f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 738301,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 738301,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        136,
+        42,
+        884,
+        1011
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-up-word-foam-blocks.pdf",
+          "bytes": 738301,
+          "sha256": "025ec3ef5cb39e54f4ac6aa19741faf9f46ca46ae3b016be717b50fb8a7f5398"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-up-word-foam-blocks.webp",
+          "bytes": 781306,
+          "sha256": "9463a8832810f9f287464b47962db01dafb8042194bf64637a374e3d93da358f"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-up-word-foam-blocks-thumb.webp",
+          "bytes": 45502,
+          "sha256": "157b96c798decb155c2d2b61fd285babae18977f119c6ffcd7f0b495e2201ff1"
+        }
+      },
+      "proofSha256": "191754bc9867c72ad1cbc857d5327f98f11783b5f522a13ee84d01d924ab1720",
+      "pairMeanRgbDifference": 6.13628
+    },
+    {
+      "id": "up-direction-way-up-signpost",
+      "title": "Way Up Hiking Signpost",
+      "alt": "Wooden WAY UP sign with an upward arrow stands beside a hiking boot, stones and grass.",
+      "description": "The orange-laced boot leans against the post beneath the horizontal sign. Wood grain and small fasteners add detail to the outdoor marker.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-way-up-signpost.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "c3d2375d3a06f1e285087c36e3d7eff26642d207ce03e45cb17cc67e8a1de7f2",
+      "inputSignature": "09ad17a207a3156c34e912805d12dd8147c336a4723f432727bc676bf818528b",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 662790,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 662790,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        222,
+        105,
+        842,
+        944
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-way-up-signpost.pdf",
+          "bytes": 662790,
+          "sha256": "5448070f94f19cba3f602497be6c5f86e0a302c6f086534e69c97ee59ae22e8a"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-way-up-signpost.webp",
+          "bytes": 616312,
+          "sha256": "e777783e8f5ee3a0f36bcc02b927d7eccda1347ee5b737cc1dade6635950e763"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-way-up-signpost-thumb.webp",
+          "bytes": 31990,
+          "sha256": "f655ef4bf731ecfe47de75dfa639a713f5443082e8f4150d1e1f27179641ff25"
+        }
+      },
+      "proofSha256": "3f72e3e7e876ba78f627a66f21eba8b3ae4375c07f072ba48e04cecbfeba4340",
+      "pairMeanRgbDifference": 1.62485
+    },
+    {
+      "id": "up-direction-upstairs-door-sign",
+      "title": "Hanging Upstairs Sign",
+      "alt": "Cream hanging sign shows a stair-climbing figure, blue up arrow and the word UPSTAIRS.",
+      "description": "Two short chains suspend the black-edged sign from a wall bracket. The stair pictogram sits to the left of the arrow.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-upstairs-door-sign.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "6de48e19be202cf59c1c8da962826fa398f966ad7ee4332e42b57c22cc7a0e51",
+      "inputSignature": "eeaeb24e7cca973532894bdf837849df94f56eaefa1a9e9a38e2219b3b363bde",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 644367,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 644367,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        107,
+        112,
+        918,
+        895
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-upstairs-door-sign.pdf",
+          "bytes": 644367,
+          "sha256": "1f7485993da84b8fb46f5ec441381feed9b1120bce5b95f40704eda0b58032ee"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-upstairs-door-sign.webp",
+          "bytes": 525766,
+          "sha256": "8f157660bb667ed2d3f98131724fe17c601356a9aa50175c673131dc9f4a3cab"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-upstairs-door-sign-thumb.webp",
+          "bytes": 22168,
+          "sha256": "e4fb2df7118f5e3953be1cc2b9ef56b4dff05920daff279067b7dcda6aeda8d5"
+        }
+      },
+      "proofSha256": "475a9ee76573425d559ecfec7e2f68e71d172f840cbceabf596b80d1e068e993",
+      "pairMeanRgbDifference": 2.2678
+    },
+    {
+      "id": "up-direction-this-way-up-box",
+      "title": "This Way Up Shipping Box",
+      "alt": "Sealed brown cardboard box bears two upward arrows and THIS WAY UP handling text.",
+      "description": "A strip of tan tape crosses the top seam. The front panel's dark arrows and underlined base indicate the box's upright orientation.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-this-way-up-box.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "715fd920c89b1b9a35117108ffa0e57fd48e02ac763be69f9b3349e3969b5e29",
+      "inputSignature": "c763b10fda3251bed6c65783db3aa2e1ee235ef271a420e868b13ec3eb8e0074",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 718592,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 718592,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        158,
+        175,
+        867,
+        869
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-this-way-up-box.pdf",
+          "bytes": 718592,
+          "sha256": "01bf3f53f0728ea20338af359fee84460ab16cd9f1807e8dc7b8b74cd00944bd"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-this-way-up-box.webp",
+          "bytes": 657504,
+          "sha256": "0d1cbc4a376aa5264d15c1efd1f6963bcaa7769c8170a81e355fcb1d4609855e"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-this-way-up-box-thumb.webp",
+          "bytes": 22308,
+          "sha256": "8e0a260632de63a8ea3d119ddba60afced7ed61ba6d35bb4706ac0ad1afc7df5"
+        }
+      },
+      "proofSha256": "d124f13f32b5f76b436e271ab9bfd21509e35d8e5191e57d17114de333e21e10",
+      "pairMeanRgbDifference": 0.7695
+    },
+    {
+      "id": "up-direction-up-speech-bubble",
+      "title": "Boy Pointing beneath an Up Speech Bubble",
+      "alt": "Cartoon boy in a blue shirt points at an UP speech bubble below a yellow arrow.",
+      "description": "The smiling child looks toward his raised finger. Red-and-white sneakers add a small color accent beneath his navy trousers.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-up-speech-bubble.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "d492b096e6a0d9d0ce92341d4350267281381f967a0312a559abbec611207c27",
+      "inputSignature": "9d8263247b075d1746822071afa57c62927209560e00305c622e4f2848b09ef7",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 482769,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 482769,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        266,
+        26,
+        749,
+        1000
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-up-speech-bubble.pdf",
+          "bytes": 482769,
+          "sha256": "f548ecf66bbedbd539bcf371a955a4c75237af0f4bcc34f61ee97c506b795bd0"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-up-speech-bubble.webp",
+          "bytes": 521054,
+          "sha256": "183ceb917943a225ded5d048c605daad31d8e7a6a0c3cfa289741578a53acb42"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-up-speech-bubble-thumb.webp",
+          "bytes": 30096,
+          "sha256": "4061f0a2ca4a3ecd8b39ed3ec60a2e176264abefe348abb3cf357e36f70e92f5"
+        }
+      },
+      "proofSha256": "a467a5a86d73cb61dbdecdaab4c8ff709acac230ca7f72eada8da0521e34f8e3",
+      "pairMeanRgbDifference": 2.15769
+    },
+    {
+      "id": "up-direction-level-up-game-badge",
+      "title": "Level Up Star Badge",
+      "alt": "Blue circular badge with a green upward arrow, gold star and LEVEL UP ribbon.",
+      "description": "The arrow rises through the center toward a faceted star. A navy-edged blue ribbon carries the white lettering across the badge's lower edge.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-level-up-game-badge.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "2e67a1d76c352f00930bc2df2472315a7738332b7763d2a0ef23744eb44976c1",
+      "inputSignature": "532d990f80a59b9528e7991862899d2e0dc536531b346c29ab801f56c9c5c451",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 749121,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 749121,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        94,
+        67,
+        931,
+        964
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-level-up-game-badge.pdf",
+          "bytes": 749121,
+          "sha256": "d4d5905bf3973030c887fe6025b83bf4bc367d1497c5331db3c026bc002ba04d"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-level-up-game-badge.webp",
+          "bytes": 673134,
+          "sha256": "ef81581c9c8d6b6f04f505628f9b3cf261db975f42de6e69ed95ff47c66c167e"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-level-up-game-badge-thumb.webp",
+          "bytes": 46042,
+          "sha256": "47ad7a2bfc14d8493ef81f21497d46baaaabdb4415ac85d9097f0eec04474423"
+        }
+      },
+      "proofSha256": "cda1757d752bac4cb84640d358313ea897eef92a7c1d580c9f8959de1d272b8a",
+      "pairMeanRgbDifference": 6.92727
+    },
+    {
+      "id": "up-direction-heads-up-reminder",
+      "title": "Boy Holding a Heads Up Reminder",
+      "alt": "Smiling boy in a blue hoodie points toward a HEADS UP sign with a blue arrow.",
+      "description": "The small sign sits on a wooden handle beside the child's face. His upward gaze follows the printed arrow and stacked reminder text.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-heads-up-reminder.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "0b95328822a27a7d6de74a1f02a1e1a41ddf98b3c613fb657039627aa3281820",
+      "inputSignature": "bd902ea9ab5c3a3e4229108038211b82f777d32f6ad16558318ecc829ffe9793",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 728799,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 728799,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        142,
+        111,
+        907,
+        923
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-heads-up-reminder.pdf",
+          "bytes": 728799,
+          "sha256": "7e9b55dd04847cf0bae36cc10e6cdb7db0e7be20600ab911a1ba18cdc52731c0"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-heads-up-reminder.webp",
+          "bytes": 645830,
+          "sha256": "665defc85a598e85378c9e94e5c3d4db8b8e560b4a75a4d5cabf74385bd1d728"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-heads-up-reminder-thumb.webp",
+          "bytes": 40654,
+          "sha256": "45bbb775b2f9adf14fa4f871c7d1f9047648a28f270a8dc2eeb38129f4e3ebd3"
+        }
+      },
+      "proofSha256": "6c72034b3372cc4bd07fcba663e39d74733af30e64547dfb02ff6360e60ecff0",
+      "pairMeanRgbDifference": 4.10826
+    },
+    {
+      "id": "up-direction-stand-up-classroom",
+      "title": "Boy Standing Up from a Chair",
+      "alt": "Cartoon boy in a blue hoodie stands beside a classroom chair and a green STAND UP marker.",
+      "description": "His hands hang beside his trousers as he rises in front of the wooden seat. The green arrow and outlined label clarify the action.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-stand-up-classroom.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "9591f38fec8033be4b0510864d50a54cef7ae8a976da8a6ffe1f6546f855efd2",
+      "inputSignature": "76cfdc2dd5d3f01d6934caa80baef3b9a63a579af3def5d1c05dda6b6216db44",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": 54,
+        "losslessCmyk": false,
+        "bytes": 900456,
+        "weightedCmykRmse": 0.764253
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 1309102,
+          "weightedCmykRmse": 0
+        },
+        {
+          "numResolutions": 6,
+          "qualityDb": 54,
+          "losslessCmyk": false,
+          "bytes": 900456,
+          "weightedCmykRmse": 0.764253
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        176,
+        54,
+        930,
+        978
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-stand-up-classroom.pdf",
+          "bytes": 900456,
+          "sha256": "fd77ec94929a332df7fab0493aae719e44df3e16c50507fc69b9a95254bf45d7"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-stand-up-classroom.webp",
+          "bytes": 743776,
+          "sha256": "f2d064a570539911270614e56a6746bea921592c88b41574b504e372fe9c51ae"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-stand-up-classroom-thumb.webp",
+          "bytes": 64842,
+          "sha256": "7ab181672a36802fcbb0abbf9e878d0d0c5d0f85349e120e667a89f6a93c0901"
+        }
+      },
+      "proofSha256": "81c82994ac6578bc6e274e1a5600195c8e9eef097fc1519b970ef15839846fdb",
+      "pairMeanRgbDifference": 2.88512
+    },
+    {
+      "id": "up-direction-climb-up-ladder",
+      "title": "Squirrel Climbing to a Climb Up Sign",
+      "alt": "Orange-brown squirrel climbs a wooden ladder beside a CLIMB UP sign and green arrow.",
+      "description": "Its large curled tail balances the climbing pose. The ladder leans against the signpost above a small patch of grass.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-climb-up-ladder.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "f690d55a18f985800212c3af9b1e63d8ac415e870a947c436f87b33a2239128b",
+      "inputSignature": "76981ed23b42e1c49c3159291c552a1b1322d91918d5091842f49a6b018bc99f",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 896070,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 896070,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        138,
+        33,
+        937,
+        991
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-climb-up-ladder.pdf",
+          "bytes": 896070,
+          "sha256": "0fe24150081b5652dfbf1759bb2804ee85ccd8debb7fbfdd78b18998f802e520"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-climb-up-ladder.webp",
+          "bytes": 737572,
+          "sha256": "84c14f8dec363046b61c0e7fed784c33efa968a1e8311f0212c7596d17bfd439"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-climb-up-ladder-thumb.webp",
+          "bytes": 51710,
+          "sha256": "c15702bde0595c17d35e93958e79450404cd87d09bfd7f7c3f25cbb470ab351f"
+        }
+      },
+      "proofSha256": "3db08b6aabbba8d74549f44d4e3da5b1210f47fe45aafc603b4f578985336e55",
+      "pairMeanRgbDifference": 2.40469
+    },
+    {
+      "id": "up-direction-up-and-away-plane",
+      "title": "Up and Away Cartoon Airplane",
+      "alt": "Red cartoon airplane climbs above UP AND AWAY lettering and a curved yellow arrow.",
+      "description": "A smiling pilot with goggles sits in the blue cockpit. The yellow arrow curves toward the aircraft, linking the stacked words to the climbing flight.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-up-and-away-plane.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "d1b2da1fef4c6c7e76faed23c3236aad0c946df37b2dda6a5f22c40d728d567d",
+      "inputSignature": "19e6870764a1c7d8529a3cb4ca8e141e9b59dad233f923af7a9f52c6dfdbdac9",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 858604,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 858604,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        306,
+        102,
+        911,
+        943
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-up-and-away-plane.pdf",
+          "bytes": 858604,
+          "sha256": "7507c7ff34ffb216edf26bdcbee852902568be176c122795b66c95a2904a1b35"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-up-and-away-plane.webp",
+          "bytes": 699742,
+          "sha256": "1fbfcf0bd582b5c826deb63bccf373105f456dc891f8b5eaccdca298a6a23d1d"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-up-and-away-plane-thumb.webp",
+          "bytes": 52832,
+          "sha256": "8a845110294b1be258a93fbc7adb3b84b7f2a2d6b758a59aeb0efed0955dbe0f"
+        }
+      },
+      "proofSha256": "9a02676447cf454445b7af7673df3d02938098c37666a06452a1f5fbba9947ba",
+      "pairMeanRgbDifference": 3.00106
+    },
+    {
+      "id": "up-direction-outline-pointing-hand",
+      "title": "Pointing Up Hand Outline",
+      "alt": "Black-and-white hand outline with its index finger pointing straight upward.",
+      "description": "Fine creases mark the raised finger, curled knuckles and palm. The wrist ends in a clean curved edge below the hand.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_701/source/up-direction-outline-pointing-hand.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "60f1bd78ecf297e66b25182ca53118145d3545928c2adb4f9f9523abc1b34171",
+      "inputSignature": "36ec1b54c538fda31ae383fbbfbc56d1451f40dca5f2a7ac2074f8ca48fded06",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 112529,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 112529,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        305,
+        67,
+        696,
+        978
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-outline-pointing-hand.pdf",
+          "bytes": 112529,
+          "sha256": "a1a908332c2bcc5124943bee26c227933769550622a87b7866921502858f170e"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-outline-pointing-hand.webp",
+          "bytes": 433290,
+          "sha256": "18f6ceb978655295b84e208dd3fd5d7c767739647bad7b612758089cb6c69e3d"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-outline-pointing-hand-thumb.webp",
+          "bytes": 16492,
+          "sha256": "27bd47d11d12a79519d6c4ddf69d0f1586e4517e83a39b96d73f236a76832834"
+        }
+      },
+      "proofSha256": "4579ea0aa52aedf7ce5e11189cfa3914461375184027049cd82d07c7a3ad49e8",
+      "pairMeanRgbDifference": 1.31624
+    },
+    {
+      "id": "up-direction-outline-stair-climber",
+      "title": "Child Climbing Steps Outline",
+      "alt": "Black-and-white cartoon child climbs three steps toward a large upward arrow.",
+      "description": "The side-view child lifts one knee above the lower step. Open white shapes and clear dark contours distinguish the figure from the stair blocks.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_701/source/up-direction-outline-stair-climber.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "f2bd2f45cd6216475f2d8e7238039a602f14a4560c99ed5e89b6236c8acaeeeb",
+      "inputSignature": "9bfcc88544dbeaaf61354a971f163952d60b9ce6d0616332d978920e6a0b583c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 179817,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 179817,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        218,
+        123,
+        846,
+        944
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-outline-stair-climber.pdf",
+          "bytes": 179817,
+          "sha256": "3e83baf664ce4cc2ffcf3e9411b7c1f44fe8475399da0c6d4eb313c3a3b35431"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-outline-stair-climber.webp",
+          "bytes": 510914,
+          "sha256": "9f9307634015fcabe451f0846a35f72bdfc3251bb7fcbb2393315e79cbd72e67"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-outline-stair-climber-thumb.webp",
+          "bytes": 24420,
+          "sha256": "f103c27533d73a46a1359d4e8e37710fbd60de1ece275f667f63a71d696d1552"
+        }
+      },
+      "proofSha256": "f78f12e8450588f618b6f52fad2dff4fe438ff208505358cf7c6e03b03f75958",
+      "pairMeanRgbDifference": 3.07505
+    },
+    {
+      "id": "up-direction-outline-elevator-sign",
+      "title": "Elevator and Up Arrow Outline",
+      "alt": "Black-and-white closed elevator doors with an up arrow above and call buttons beside them.",
+      "description": "A double-line frame surrounds the two elevator panels. The small button plate repeats the up and down direction symbols.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_701/source/up-direction-outline-elevator-sign.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "230093791ea526863ddab2e68bc95cddbaf9f9b88375ea6c3ef1dc4da80680bc",
+      "inputSignature": "7a8839526aa8ac57d658568f471397b7d7316f8597f6ccc9528a2559b68e5587",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 108486,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 108486,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        287,
+        85,
+        828,
+        932
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-outline-elevator-sign.pdf",
+          "bytes": 108486,
+          "sha256": "3b831f494164e72c842497bf9f818e905241cb36e71acdd5d0a509a5022e1197"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-outline-elevator-sign.webp",
+          "bytes": 415478,
+          "sha256": "6126153c45bd8b58749d292fc85e223c0226f9f7e5a5670f0358257c2f0a3d88"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-outline-elevator-sign-thumb.webp",
+          "bytes": 7852,
+          "sha256": "a2b1de26d7af48749095dfea8a84a69305833f873d3502ad8c91db51de26b9f3"
+        }
+      },
+      "proofSha256": "2e6b1708c2bd7cc6fe2f0f13b17a5853c93b5313c38a879779b346c10f51e1ea",
+      "pairMeanRgbDifference": 2.4586
+    },
+    {
+      "id": "up-direction-outline-rising-balloon",
+      "title": "Rising Balloon Outline",
+      "alt": "Black-and-white balloon with a curling string and an upward arrow beside it.",
+      "description": "Two small highlight shapes sit inside the balloon's upper curve. Short motion strokes reinforce its rise.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_701/source/up-direction-outline-rising-balloon.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "e9bde88c122081988c96b7e75102a9e29ed73a615fe2d2dc11c417151d912bdb",
+      "inputSignature": "c76249c01e8fa656a9062d4bb92e01397c96f90612c27ba194fc362bf85e278a",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 104419,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 104419,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        318,
+        71,
+        719,
+        954
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-outline-rising-balloon.pdf",
+          "bytes": 104419,
+          "sha256": "7a89b9a0da5d1e9f27b9fd765b6ec0a8600822c3a4bf6b1b32951e21f6cfc92a"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-outline-rising-balloon.webp",
+          "bytes": 388406,
+          "sha256": "fc4e9ec370b1420717d5c6aa8673bdf9d3a7d5ec6efbcdfbd241910bbb9d5ebf"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-outline-rising-balloon-thumb.webp",
+          "bytes": 14882,
+          "sha256": "d6f005a9b0b8858e9da1eee9934609e0c188371064a6ba9159b1ab88bd0dfe72"
+        }
+      },
+      "proofSha256": "f4aa6e1057933863101344b18d5d7ec6ebe1a9428fb487d6e038c4257f20a6ff",
+      "pairMeanRgbDifference": 1.35626
+    },
+    {
+      "id": "up-direction-outline-up-word",
+      "title": "Up Lettering with Stair Arrow Outline",
+      "alt": "Black-and-white UP lettering beside a staircase-shaped arrow climbing to the right.",
+      "description": "The hollow block letters sit above the lower stair edges. A broad arrowhead finishes the rising stepped path.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_701/source/up-direction-outline-up-word.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "5e3ff3afc3c2a25e42f7fea657bb85a98b977967a14d7bd9dab48f8e347065f1",
+      "inputSignature": "7316272667180f531a898d9cf33341c0b4a4d600823307fed233e7319cedeb0d",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 151416,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 151416,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        161,
+        150,
+        920,
+        943
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-outline-up-word.pdf",
+          "bytes": 151416,
+          "sha256": "2b50a75cce09603d8cdbfbd4d51daff6337f455a10ca79d50a822b6693f741a5"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-outline-up-word.webp",
+          "bytes": 426274,
+          "sha256": "6e3f85d3f18bb8f5dddb6be509cb3113cf109ff1998d42b121eff51bf233ca9a"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-outline-up-word-thumb.webp",
+          "bytes": 17794,
+          "sha256": "12d074e9eb2eac9cff5c4c4228aa50a808b22fe303e5624aad574f5ab0c74d86"
+        }
+      },
+      "proofSha256": "72a6e242292850bceaa694500c0c9216ec2161e8322b60476ae643f5f8808c83",
+      "pairMeanRgbDifference": 2.40951
+    },
+    {
+      "id": "up-direction-outline-cloud-upload",
+      "title": "Cloud Upload Laptop Outline",
+      "alt": "Black-and-white laptop beneath a cloud with a tall upward upload arrow.",
+      "description": "The arrow passes from the open screen toward the cloud. Bold contours keep the cloud, keyboard base and arrow easy to separate.",
+      "color": "Black & White",
+      "style": "Outline",
+      "source": "work/production/wave_701/source/up-direction-outline-cloud-upload.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "black-only",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "6804a2b611da76c5a39583919dd0346d97045cbccf5ee1b7b4f40760f3c2c7e3",
+      "inputSignature": "e1a55f59e7707f38cd3116f8d7bcafba4b98929c4b8d177971dc11841f796200",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 102522,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 102522,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        234,
+        76,
+        790,
+        949
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-outline-cloud-upload.pdf",
+          "bytes": 102522,
+          "sha256": "b29e786147c3557b4e3a0f17932b358f95079c71644a5d9e396750b64455ef60"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-outline-cloud-upload.webp",
+          "bytes": 222800,
+          "sha256": "934332d50d7d17a957e4eeca0b76c37150b965fed34334949c56118e33cf9dec"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-outline-cloud-upload-thumb.webp",
+          "bytes": 11250,
+          "sha256": "53e398199dc6adcd21a329a71859f08be129342bfda120fc013596059c6a0e9b"
+        }
+      },
+      "proofSha256": "3977fb08dfcdaf9cb449695a123e6bb082b1e844e398e6e994b3f4c260016ac0",
+      "pairMeanRgbDifference": 2.92714
+    },
+    {
+      "id": "up-direction-upward-progress-chart",
+      "title": "Rising Blue Bar Chart",
+      "alt": "Three blue bars increase in height beneath a curved green upward arrow.",
+      "description": "The columns share a baseline but step from short to tall. Dark blue side faces give them a simple dimensional appearance.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-upward-progress-chart.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "ed79c8fc99a4bbdb6752735cc936594c7f3621c8656cc41ab808442c8d0db969",
+      "inputSignature": "d6b076f75c7afe9c64728758e1b7936374c113683ae8e16b2cc940d50d76953c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 498551,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 498551,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        156,
+        138,
+        883,
+        911
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-upward-progress-chart.pdf",
+          "bytes": 498551,
+          "sha256": "b94e1570b3e1cc6f0c4ca3f6c339c723bfc5fb1042c7bcd25914ca62e4cf6c56"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-upward-progress-chart.webp",
+          "bytes": 516414,
+          "sha256": "22f2cb55ddb21975e2e9ff305c0b0c698703916257e03667da505eef1c9212bc"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-upward-progress-chart-thumb.webp",
+          "bytes": 25808,
+          "sha256": "47875c5fd309074da9f2e3e5465d559a1246aa5d6df67967622df7b2565b65b8"
+        }
+      },
+      "proofSha256": "26bd146afa52dc840fe01b7e8061e81244c12acf490f4f314e9574ba87aba0f6",
+      "pairMeanRgbDifference": 6.33937
+    },
+    {
+      "id": "up-direction-book-page-up",
+      "title": "Open Book with an Upward Arrow",
+      "alt": "Two blue-cuffed hands hold an open blue book as a yellow arrow rises between its pages.",
+      "description": "Cream page edges fan outward above the covers. The bright arrow emerges near the center fold without covering the hands.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-book-page-up.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "99bd5847abb6dbbb8641e1cf207d07c8930a07fef490a0f5f69b2d812bda7e8c",
+      "inputSignature": "4529c73aacc692bb088fb6837ec4040384284cc86043427a96ae88ac299e368c",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 773314,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 773314,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        35,
+        107,
+        994,
+        937
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-book-page-up.pdf",
+          "bytes": 773314,
+          "sha256": "db6a061f5d36f3ff03e7d2e18cc0cc2669f159d0dd2d62a99178877c1193f6e8"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-book-page-up.webp",
+          "bytes": 634514,
+          "sha256": "db58991900adb303bce4a16bbaec3b6d7a1daee2d8ff74d746961432d1e7c48a"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-book-page-up-thumb.webp",
+          "bytes": 33078,
+          "sha256": "86c7ffe84596385f02540c6b8f8b54f86971a99414793ad522bf4b4e87bd44c4"
+        }
+      },
+      "proofSha256": "a70a1035271a77b6d4077f8f00d949c1ac799604bb8b152884a5b5d7c81b5da5",
+      "pairMeanRgbDifference": 1.29081
+    },
+    {
+      "id": "up-direction-mountain-trail-up",
+      "title": "Mountain Trail Leading Up to a Flag",
+      "alt": "Winding tan trail climbs a green and gray mountain toward a red summit flag beside a blue arrow.",
+      "description": "Small trees flank the lower slope. The broad blue arrow follows the mountain's left side while the narrow path zigzags toward the peak.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-mountain-trail-up.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "eda94dfb163a71d496dfdb836aa91b2de6651f4077d63a277a90b95c0fae0a21",
+      "inputSignature": "ce7330da4a8f602e5fa85189eb407a27974164af470af85ad047036089817cb3",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 967098,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 967098,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        221,
+        85,
+        834,
+        944
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-mountain-trail-up.pdf",
+          "bytes": 967098,
+          "sha256": "2a7184c4b0e7d1fc94eaabb4e606387fba994848757ed5181f5f13224fdce42e"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-mountain-trail-up.webp",
+          "bytes": 809394,
+          "sha256": "c4271a47fd19dddbad19063ce5348f86c3920ce036c7796963512381d59e6014"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-mountain-trail-up-thumb.webp",
+          "bytes": 55724,
+          "sha256": "c2564f7daae58a45e7b369a59a98adb64b6e8b7766a5004dffa4a6a1c5fe5598"
+        }
+      },
+      "proofSha256": "f41eb85dfbc6e00fdb0d05e247b88a252ad1b80a58893c49d0c4e490c4647a17",
+      "pairMeanRgbDifference": 2.94331
+    },
+    {
+      "id": "up-direction-up-direction-compass",
+      "title": "Hands Holding an Up Direction Card",
+      "alt": "Two hands hold a blue-bordered white card showing UP and a blue upward arrow.",
+      "description": "The rectangular teaching card fills the center between two blue cuffs. Dark lettering above the arrow keeps the word and direction together.",
+      "color": "Multicolor",
+      "style": "Cartoon",
+      "source": "work/production/wave_701/source/up-direction-up-direction-compass.png",
+      "printMaxEdgePx": 1024,
+      "alphaCompression": "zopfli",
+      "printSeparation": "profile-cmyk",
+      "topic": "up",
+      "width": 1024,
+      "height": 1024,
+      "pdfWidth": 1024,
+      "pdfHeight": 1024,
+      "sourceType": "raster",
+      "sourceSha256": "8b0f5f8b9228c56a039468079087b4f522eb1fe62c20c49bd1fbe4a1e083cb24",
+      "inputSignature": "cc896ad25d3c60c121d2e24a5b1253c758f095784cdc16a3af04c0e47a290326",
+      "state": "FORMAT_PREFLIGHT_PASSED",
+      "selectedEncoding": {
+        "numResolutions": 6,
+        "qualityDb": null,
+        "losslessCmyk": true,
+        "bytes": 603084,
+        "weightedCmykRmse": 0
+      },
+      "trials": [
+        {
+          "numResolutions": 6,
+          "qualityDb": null,
+          "losslessCmyk": true,
+          "bytes": 603084,
+          "weightedCmykRmse": 0
+        }
+      ],
+      "webpExactRgba": true,
+      "pdfAlphaExact": true,
+      "nativeResolutionPreserved": false,
+      "webpNativeResolutionPreserved": true,
+      "pdfAt300Ppi": true,
+      "visibleBounds": [
+        43,
+        91,
+        981,
+        999
+      ],
+      "image": {
+        "width": 1024,
+        "height": 1024,
+        "components": 4,
+        "alphaMask": true,
+        "profile": "GRACoL2006_Coated1v2 (registered output intent)",
+        "colorSpace": "Device CMYK",
+        "iccBytes": 0,
+        "iccSha256": null,
+        "registeredCondition": "CGATS TR 006"
+      },
+      "files": {
+        "pdf": {
+          "path": "work/production/wave_701/exports/up-direction-up-direction-compass.pdf",
+          "bytes": 603084,
+          "sha256": "204f4fb3f4e9c99a7d5c4c4387c44c66fe625277ef50a66be1729aded9ab6352"
+        },
+        "webp": {
+          "path": "work/production/wave_701/exports/up-direction-up-direction-compass.webp",
+          "bytes": 567284,
+          "sha256": "1393763f06df06d2ff475c2164ea347369c7605b417dac72ddc94ef6caff921e"
+        },
+        "thumb": {
+          "path": "work/production/wave_701/exports/up-direction-up-direction-compass-thumb.webp",
+          "bytes": 27096,
+          "sha256": "225792119fd59b2bad7c07081d8dc28052ad182622b3f6a3a92a7b32367672c9"
+        }
+      },
+      "proofSha256": "643bbf8523866ca784cb238e3523b68f811a52601cb3a910991756ebd8cd0176",
+      "pairMeanRgbDifference": 4.92836
+    }
+  ],
+  "deferred": [],
+  "screenReviewedAt": "2026-10-29T09:35:26.046845+00:00",
+  "screenReviewEvidence": {
+    "reviewerType": "AI_AGENT_NOT_HUMAN",
+    "actualProofImagesViewed": 50,
+    "sheets": [
+      "work/production/wave_701/pdf-review-1.jpg",
+      "work/production/wave_701/pdf-review-2.jpg",
+      "work/production/wave_701/pdf-review-3.jpg",
+      "work/production/wave_701/pdf-review-4.jpg",
+      "work/production/wave_701/pdf-review-5.jpg"
+    ],
+    "notes": "Viewed all 50 rendered CMYK PDF proof images against the accepted native sources. Text, framing and subject geometry remain intact. This is screen proofing, not a physical print proof."
+  },
+  "reviewerType": "AI_AGENT_NOT_HUMAN",
+  "createdAt": "2026-10-29T09:51:39.970Z"
+}

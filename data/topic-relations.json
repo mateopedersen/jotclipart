@@ -1735,11 +1735,6 @@
     "electric-car",
     "airplane"
   ],
-  "up": [
-    "movie",
-    "airplane",
-    "dog"
-  ],
   "uterus": [
     "brain",
     "tooth",
@@ -1834,5 +1829,11 @@
     "bell",
     "family",
     "nativity"
-  ]
+  ],
+  "up-movie": [
+    "movie",
+    "airplane",
+    "dog"
+  ],
+  "up": []
 }

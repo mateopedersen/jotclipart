@@ -356401,23 +356401,23 @@
       "sourceSha256": "c371bfec7d437505d51654e713c311c678bcd535f892f27ce8ddf40c08b534d9",
       "imageSha256": "c371bfec7d437505d51654e713c311c678bcd535f892f27ce8ddf40c08b534d9",
       "inputMetadataSha256": "74c010b82e8439d29a66c541220bc5d7112f2b38e78f248b2f1d1e766475df3c",
-      "inputContextSha256": "1eef62b7aa914f8cc7d3cd72beeb62b2d96635e6cb1dcb0476e700b7abbe731b",
+      "inputContextSha256": "9fe892c9853b5091d7f7f8ca7480bf88afc1bc70aabddf9aed3b188273fbd86b",
       "copy": {
         "title": "Green-Tiled Fireplace and Keepsakes",
         "alt": "A cream fireplace holds logs beneath two oval frames and purple flowers.",
         "description": "Green patterned tiles surround the dark hearth."
       },
       "observations": [
-        "A cream fireplace holds logs beneath two oval frames and purple flowers.",
-        "Green patterned tiles surround the dark hearth."
+        "Green patterned tiles frame the dark fireplace opening.",
+        "Two oval picture frames and a vase of purple flowers sit on the mantel."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.334941+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-adventure-living-room-mantel-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -356427,23 +356427,23 @@
       "sourceSha256": "8feea6f0e79a2c557aa7f41db13f6e31a167638ef4145bc574cbeadb56cadb32",
       "imageSha256": "8feea6f0e79a2c557aa7f41db13f6e31a167638ef4145bc574cbeadb56cadb32",
       "inputMetadataSha256": "10b60a3e5a60cd090af76e00262c37d8c08a5a23600c2dfda0e5a20080f2b997",
-      "inputContextSha256": "0aad84ad306825125c8b7fac816b54c54fc725559a4560213dc0e62512d1b106",
+      "inputContextSha256": "26b69e43f2eabc96730307ca641b7fe2c14ee580fe26ca8b4a27f110307b5963",
       "copy": {
         "title": "Adventure Route Across an Open Map",
         "alt": "A folded map shows a dotted route from a city toward a flat-topped mountain in grayscale.",
         "description": "A tied ribbon crosses the center pages."
       },
       "observations": [
-        "A folded map shows a dotted route from a city toward a flat-topped mountain in grayscale.",
-        "A tied ribbon crosses the center pages."
+        "A dashed route joins a drawn city to a flat-topped landscape on the open map.",
+        "A ribbon bow binds the illustrated pages at the lower edge."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.336645+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-adventure-route-map-black-white-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -356453,23 +356453,23 @@
       "sourceSha256": "e90191d99f854782b653421f04eb5e32bbcfbd09776ec02e076dc864097f4d4c",
       "imageSha256": "e90191d99f854782b653421f04eb5e32bbcfbd09776ec02e076dc864097f4d4c",
       "inputMetadataSha256": "d49ff4df6b11b330b43cb1971c7f2ea648cf986a87eae0b0a616bf5709249c86",
-      "inputContextSha256": "b011be3243dc120cd9e4f35b8257b703ddbf70f671a9d3d9a516f3e39a2d1e5a",
+      "inputContextSha256": "0396b5dacfe6ab29e135b76d382a714706591ac3c04f8e75cdec0434cac6850e",
       "copy": {
         "title": "Travel Savings Jar",
         "alt": "A glass jar packed with coins carries a waterfall picture.",
         "description": "A loose lid and small airplane ticket sit beside the savings."
       },
       "observations": [
-        "A glass jar packed with coins carries a waterfall picture.",
-        "A loose lid and small airplane ticket sit beside the savings."
+        "Copper and silver coins fill a clear jar beside its loose lid.",
+        "A small waterfall picture is attached to the front of the jar."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.336941+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-adventure-savings-jar-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -356479,23 +356479,23 @@
       "sourceSha256": "f90fbaf4df00f72cc89fca86fc7125ffe9d3066ec8057ca78c27138505ab3dab",
       "imageSha256": "f90fbaf4df00f72cc89fca86fc7125ffe9d3066ec8057ca78c27138505ab3dab",
       "inputMetadataSha256": "b0f30cd1910880ec34d227a24a72901be7141b2e805462de664d10a639a43d97",
-      "inputContextSha256": "bcfea738a8d7328f16325cd59b64d455625e0ef3bd56232a6e22652f2aaf20a4",
+      "inputContextSha256": "2e53087431b828b61e781673e072d2cb7207af50b104b19d1c176261dd64304b",
       "copy": {
         "title": "Airship Propeller Engine",
         "alt": "A riveted engine pod carries a large three-bladed propeller in grayscale.",
         "description": "Dark cylinders ring the central hub."
       },
       "observations": [
-        "A riveted engine pod carries a large three-bladed propeller in grayscale.",
-        "Dark cylinders ring the central hub."
+        "Three broad propeller blades radiate from a circular mechanical hub.",
+        "The black-and-white engine casing has rivets and bracket supports."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.337244+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-airship-propeller-pod-black-white-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -356505,23 +356505,23 @@
       "sourceSha256": "ada3a65e826b41444ac89c4a4ebe06f4be55e5bf9aa5602a3f7af7864b3e7e63",
       "imageSha256": "ada3a65e826b41444ac89c4a4ebe06f4be55e5bf9aa5602a3f7af7864b3e7e63",
       "inputMetadataSha256": "b59e6556e74d19d60ed4429bf32037789178816334dee0e2e8b341cccc234d16",
-      "inputContextSha256": "a8fe16e0165c40de4d49a6008a930737ec95d871c3793ffdd3446bb3b6760189",
+      "inputContextSha256": "e263e362023f9da3f096a6e674bc216ce417106a542db819d997c8261a03e12e",
       "copy": {
         "title": "Alpha From Up",
         "alt": "Alpha the black and tan Doberman from Up stands with pointed ears and a broad collar.",
         "description": "A red circular device sits at the front of Alpha's collar beneath the dog's stern muzzle."
       },
       "observations": [
-        "Alpha the black and tan Doberman stands with pointed ears and a broad collar.",
-        "A red circular device sits at the front of the stern-looking dog's collar."
+        "The upright black-and-tan dog has pointed ears and narrow orange eyes.",
+        "A red-centered device is attached to its dark collar."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.337449+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-alpha-doberman-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -356531,23 +356531,23 @@
       "sourceSha256": "67cc3afe44045a3f2fee5fa194eff69674327e9deaaffac095fc135a112348ac",
       "imageSha256": "67cc3afe44045a3f2fee5fa194eff69674327e9deaaffac095fc135a112348ac",
       "inputMetadataSha256": "2a285d4aef5a79094038e416b8344e1640a928edb83893c6a22c8f282b227128",
-      "inputContextSha256": "715262dd6ebaf1b10d1576e07dd3989e608fad61b39fe73d259ecb0dff1017a2",
+      "inputContextSha256": "67172aeaf2a2e5f1a011912ed1c5e875acbe6367b9de017a58f8e9cd5021309a",
       "copy": {
         "title": "Turquoise Adventure Kite",
         "alt": "A turquoise diamond kite has coral corners and a bow-tied tail.",
         "description": "An orange spool of pale string rests below the wooden frame."
       },
       "observations": [
-        "A turquoise diamond kite has coral corners and a bow-tied tail.",
-        "An orange spool of pale string rests below the wooden frame."
+        "A turquoise diamond kite is stretched across crossed wooden sticks.",
+        "A string reel rests below the kite beside its short yellow tail ties."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.337732+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-arrow-adventure-kite-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -356557,23 +356557,23 @@
       "sourceSha256": "ed2df0a4fb71dac2008e19cc7272740e463a9718bb927065cee078be613599d6",
       "imageSha256": "ed2df0a4fb71dac2008e19cc7272740e463a9718bb927065cee078be613599d6",
       "inputMetadataSha256": "8b6c389f1306a1fb4db531e0948777a8aaad37e4c4adc6dc58b78cd1d7fdc2e9",
-      "inputContextSha256": "04c5dd80b70a9ef04af0b919a64893bbe4a1e793b6e4ea429bade9b72e4601ad",
+      "inputContextSha256": "e2647406e380e1a122614a278291e3b853fb1569830ad5b4aae8f0110f03ec75",
       "copy": {
         "title": "Balloon Inflator With Colored Balloons",
         "alt": "A green cylinder connects to a black hose beside three deflated balloons.",
         "description": "A wooden string spool sits near the red, blue and yellow rubber shapes."
       },
       "observations": [
-        "A green cylinder connects to a black hose beside three deflated balloons.",
-        "A wooden string spool sits near the red, blue and yellow rubber shapes."
+        "A green metal cylinder has a brass valve and a coiled black hose.",
+        "Red, blue and yellow deflated balloons lie beside a spool of string."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.337986+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-balloon-inflator-kit-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -356583,23 +356583,23 @@
       "sourceSha256": "597d9bb78a98158ce3e1ed3ccae71b2f7395cc1a1f6ba591ed8fcbc68d46a62f",
       "imageSha256": "597d9bb78a98158ce3e1ed3ccae71b2f7395cc1a1f6ba591ed8fcbc68d46a62f",
       "inputMetadataSha256": "7d84166aa04fea05f51d169e53918c0c6c0399980c7bca8e8afc3baee1a0e845",
-      "inputContextSha256": "f7c25801a96759962d6ccfc34dfac431bf9112e1295a8ab2869505468e6fcffb",
+      "inputContextSha256": "3c0c47303617e17b03e089b383d76b25ebefe959a899892547700e0f4eea260c",
       "copy": {
         "title": "Balloons Beside a Storm Cloud",
         "alt": "Three tied balloons float beside a thundercloud in grayscale.",
         "description": "Two lightning bolts hang below the dark cloud."
       },
       "observations": [
-        "Three tied balloons float beside a thundercloud in grayscale.",
-        "Two lightning bolts hang below the dark cloud."
+        "Three tied balloons rise beside a shaded storm cloud.",
+        "Two lightning bolts descend from the cloud in the monochrome drawing."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.338203+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-balloon-knot-storm-black-white-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -356609,23 +356609,23 @@
       "sourceSha256": "0f958cbfbfab799d0e99bc4e60b760920fa2583815da7f32e2d239deb2a3906d",
       "imageSha256": "0f958cbfbfab799d0e99bc4e60b760920fa2583815da7f32e2d239deb2a3906d",
       "inputMetadataSha256": "b0449c94c2561095c246e3159717de4eea35f214ab78356c3bdbb3a066939dce",
-      "inputContextSha256": "8aa60ed8903746438cbaed48d695a62f8d7d263ab5d0e8579d080dad9128cbba",
+      "inputContextSha256": "225039376351e2da089f3eb230864c1dc2f2ec9cd2050d39d67b9bca77e8c2b1",
       "copy": {
         "title": "Carl's Balloon House From Up",
         "alt": "A yellow Victorian-style house hangs beneath a dense cluster of colorful balloons.",
         "description": "Fine strings meet near the chimney above pink and green window trim."
       },
       "observations": [
-        "A yellow Victorian-style house hangs beneath a dense cluster of colorful balloons.",
-        "Fine strings meet near the chimney above pink and green window trim."
+        "A dense cluster of bright balloons is tied above a small colorful house.",
+        "The house has a steep roof, a chimney and a projecting front porch."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.338403+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-balloon-lifted-house-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -356635,23 +356635,23 @@
       "sourceSha256": "1c7c94bb62878a4530ac34440602d10c5264c1d20a8d33b904de3cb73d24e8e0",
       "imageSha256": "1c7c94bb62878a4530ac34440602d10c5264c1d20a8d33b904de3cb73d24e8e0",
       "inputMetadataSha256": "e8b5889cd2063e79219eefc0797ad7d0aa973f0b6de780e0cf2556cc70c29d5d",
-      "inputContextSha256": "ff219ecbc03055d1391c6863b5caefd12be211f6a0141727982f47abe86a2878",
+      "inputContextSha256": "ea8986e90bdc70b40c5facde939ce3ec607f8ad659d12de9c5d0b192b476bb3e",
       "copy": {
         "title": "Beta From Up",
         "alt": "Beta the black and tan Rottweiler from Up sits wearing a device collar.",
         "description": "Broad paws and a rounded muzzle distinguish Beta beneath his dark collar."
       },
       "observations": [
-        "Beta the black and tan Rottweiler sits wearing a device collar.",
-        "Broad paws and a rounded muzzle distinguish the compact dog."
+        "The seated black-and-tan dog has a broad head and floppy ears.",
+        "A brown collar with a red circular center surrounds its neck."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.338677+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-beta-rottweiler-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -356661,23 +356661,23 @@
       "sourceSha256": "b43ea1d9d39c0f21ef5e6c50ba454dd6f937b8eb2290d838510541e103d847f6",
       "imageSha256": "b43ea1d9d39c0f21ef5e6c50ba454dd6f937b8eb2290d838510541e103d847f6",
       "inputMetadataSha256": "7a162021348e8fc4adc2e48f48d217688d35df7f5250c2fbefa49b744e8c88d1",
-      "inputContextSha256": "c25ba62f37f29d43e09d21be0ecb05c5a240b2b30a35f6e3bb2d2ffe6e02c257",
+      "inputContextSha256": "76612685f19c405d4fbbe5d4a3ee7a4669a18ed4ba8a934ec1a9b304202f7879",
       "copy": {
         "title": "Open Brass Birdcage",
         "alt": "A domed golden birdcage has an open curved door.",
         "description": "A small purple feather lies on the round base."
       },
       "observations": [
-        "A domed golden birdcage has an open curved door.",
-        "A small purple feather lies on the round base."
+        "An open hinged door interrupts the bars of a brass birdcage.",
+        "A single purple feather lies on the wooden floor beneath the domed top."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.338867+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-bird-capture-cage-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -356687,23 +356687,23 @@
       "sourceSha256": "616827a56ae2565f536a916829e624f58d4aede9cb9a76a594ba9b3a9b9928b3",
       "imageSha256": "616827a56ae2565f536a916829e624f58d4aede9cb9a76a594ba9b3a9b9928b3",
       "inputMetadataSha256": "60a5e4a2ecfa1db603550ea4eeff933deec6d513453e41246eb810b03dc9231b",
-      "inputContextSha256": "f60bff61590576041f6539826634717ebe10b8efc50fad3e49d6e92845b137e0",
+      "inputContextSha256": "cd7e58115ddea4e07797f86918e7de78068b1690defdd2610ff77140d9fdcb17",
       "copy": {
         "title": "Long-Beaked Bird Skeleton Display",
         "alt": "A stylized bird skeleton stands on a dark museum plinth in grayscale.",
         "description": "Its large hooked beak rises above a long curved neck."
       },
       "observations": [
-        "A stylized bird skeleton stands on a dark museum plinth in grayscale.",
-        "Its large hooked beak rises above a long curved neck."
+        "A long-beaked bird skeleton stands on a dark display base.",
+        "The monochrome drawing exposes the rib cage, long neck and short wings."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.339424+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-bird-skeleton-display-black-white-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -356713,23 +356713,23 @@
       "sourceSha256": "a9635415039aee4519e8821df7cbabf5eca668cc31ee454b765b88af96334e56",
       "imageSha256": "a9635415039aee4519e8821df7cbabf5eca668cc31ee454b765b88af96334e56",
       "inputMetadataSha256": "21fb7ed48042501c083d783b8a3d51688ece6c356a39979d8e6db654f93de539",
-      "inputContextSha256": "4f9e33f4b6778c926b3807f633bb2796a0f68f5952a4d4b0377cba86adccdb1a",
+      "inputContextSha256": "ac24b69ea7c33c047e23b42a0ce14e88b89c1737a7fba40fe42c1935a6bee713",
       "copy": {
         "title": "Square Glasses With Bow Tie and Watch",
         "alt": "Black square-framed glasses sit above a bow tie and pocket watch.",
         "description": "Fine highlights distinguish the grayscale keepsake arrangement."
       },
       "observations": [
-        "Black square-framed glasses sit above a bow tie and pocket watch.",
-        "Fine highlights distinguish the grayscale keepsake arrangement."
+        "Thick rectangular black glasses sit behind a dark bow tie.",
+        "A silver pocket watch with a curved chain rests to the lower right."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.339643+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-carl-bow-tie-keepsakes-black-white-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -356739,23 +356739,23 @@
       "sourceSha256": "56eb4583f97970ff8322e7d9d74ec562d6c3ed0b1ccaab35d1b52a48a87b2cab",
       "imageSha256": "56eb4583f97970ff8322e7d9d74ec562d6c3ed0b1ccaab35d1b52a48a87b2cab",
       "inputMetadataSha256": "e3ba28207768cb4e9255c121131e6e332ca7bdae56873d344569f42488be2683",
-      "inputContextSha256": "8002960feab88ab3f6c1c333e226f70c19a8fbe98202718fff16a993fc651de8",
+      "inputContextSha256": "cbeba518e376b4152a8bbbd55c57f34393219b06190392047c25eee23a4d6543",
       "copy": {
         "title": "Carl and Ellie's Armchairs",
         "alt": "A brown square-backed chair sits beside a pink floral wingback chair.",
         "description": "A small table with a closed book separates the pair."
       },
       "observations": [
-        "A brown square-backed chair sits beside a pink floral wingback chair.",
-        "A small table with a closed book separates the pair."
+        "A square brown armchair stands beside a taller pink patterned chair.",
+        "A small round table with a closed book separates the two seats."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.339880+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-carl-ellie-armchairs-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -356765,23 +356765,23 @@
       "sourceSha256": "a69ffb431f760097bae75b38f5ef2d88876cb6b2623257274f37ebcb97986ec2",
       "imageSha256": "a69ffb431f760097bae75b38f5ef2d88876cb6b2623257274f37ebcb97986ec2",
       "inputMetadataSha256": "c7f40cdc0a557298e6b3c2e52c8aa5372901fd5179d0825b520c878880af493b",
-      "inputContextSha256": "7ee150dd3d4b7d2e0e71cc9554e1e6c048ee1c1ad259307bebc9dba6056798b9",
+      "inputContextSha256": "54ffbbd4317e88d1de7daf4eb0cb5f774c4e821b5700fb36a13d5b028d548752",
       "copy": {
         "title": "Travel Trunk With a Rolled Map",
         "alt": "A brown leather trunk carries brass fittings and a strapped paper map.",
         "description": "A waterfall sticker decorates the worn side panel."
       },
       "observations": [
-        "A brown leather trunk carries brass fittings and a strapped paper map.",
-        "A waterfall sticker decorates the worn side panel."
+        "A rolled map is secured above a worn brown travel trunk.",
+        "Brass corner fittings and travel-picture stickers decorate the chest."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.340089+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-carl-travel-trunk-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -356791,23 +356791,23 @@
       "sourceSha256": "f19361ef6e5435ceeb7766f3b2e759fba17dabd9fd83146878712cb445908a21",
       "imageSha256": "f19361ef6e5435ceeb7766f3b2e759fba17dabd9fd83146878712cb445908a21",
       "inputMetadataSha256": "6eca6d09e1663d91c3a33ea14ff63ab8b8432266d5e5c1773683ed23bb640a1c",
-      "inputContextSha256": "383f0b101e321545c0748a636aa2c1a1ec43918150e3dbd92e86891fd7030412",
+      "inputContextSha256": "37ee3a80f54101731fe6b5ad6ff348377d9637efbc4c7016ccd43201b8df2752",
       "copy": {
         "title": "Aviator Cap With Goggles and Scarf",
         "alt": "A brown leather flying cap holds large brass goggles.",
         "description": "A blue knitted scarf wraps beneath the fleece-lined ear flaps."
       },
       "observations": [
-        "A brown leather flying cap holds large brass goggles.",
-        "A blue knitted scarf wraps beneath the fleece-lined ear flaps."
+        "Round brass-framed goggles rest on a brown leather flying cap.",
+        "A blue fringed scarf curls beneath the cap."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.340285+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-childhood-aviator-goggles-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -356817,23 +356817,23 @@
       "sourceSha256": "4d5647f89801525b6b293e33c10eaff18f45bc3e0b5eee6ea052e013e2fb93a2",
       "imageSha256": "4d5647f89801525b6b293e33c10eaff18f45bc3e0b5eee6ea052e013e2fb93a2",
       "inputMetadataSha256": "e40d559b42c8721044d1f4133a673876779740dc4258f5c88ced4e7bdb37d380",
-      "inputContextSha256": "788aaf8bdc504884255ba00e0eaf39a16645970675d21c5318c829b24af881e9",
+      "inputContextSha256": "eb82ce053e4fb84f6c9d7aed5118d40002949f52f1588321c1effacf6a0534c8",
       "copy": {
         "title": "Bird Tracks Beside Chocolate",
         "alt": "A partially unwrapped chocolate bar lies beside three-toed prints in brown soil.",
         "description": "Crumbs and a torn orange wrapper border the footprints."
       },
       "observations": [
-        "A partially unwrapped chocolate bar lies beside three-toed prints in brown soil.",
-        "Crumbs and a torn orange wrapper border the footprints."
+        "Two three-toed bird tracks are pressed into brown soil.",
+        "A partly unwrapped chocolate bar rests along the upper edge."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.340498+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-chocolate-bird-tracks-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -356843,23 +356843,23 @@
       "sourceSha256": "e2500b1467eee729d21cefe8091b3810b1e8f6c942247b0942c8f0882c08c914",
       "imageSha256": "e2500b1467eee729d21cefe8091b3810b1e8f6c942247b0942c8f0882c08c914",
       "inputMetadataSha256": "c5fac60874236381e25470923b53529801c40caa6895dbabd667ab55d55187a8",
-      "inputContextSha256": "32b39159c1af452dc19ebfe01d7dc3982788004ec5ac3d3f76d161f6dd994ba5",
+      "inputContextSha256": "82fc099f41f9849b5a8c37caca94773ac7ccf803948f75911adacfc1da101800",
       "copy": {
         "title": "Transparent Pet Recovery Cone",
         "alt": "A clear protective collar flares above a black fastening band.",
         "description": "Pale blue reflections define the wide translucent rim."
       },
       "observations": [
-        "A clear protective collar flares above a black fastening band.",
-        "Pale blue reflections define the wide translucent rim."
+        "A clear flared plastic cone widens above a dark neck strap.",
+        "A small buckle closes the lower band."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.340707+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-cone-of-shame-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -356869,23 +356869,23 @@
       "sourceSha256": "0b4a38958e33e17c769796851d326ace59a16bbb46ae074001ee9c358811827c",
       "imageSha256": "0b4a38958e33e17c769796851d326ace59a16bbb46ae074001ee9c358811827c",
       "inputMetadataSha256": "031f600fbbae37cdbbab0e0c5698ace2d2585a0ccb85a0486a3bed4795430954",
-      "inputContextSha256": "99a50a2fc8f29d40ec24198ab9b58e155bb2e28ecff9e4e233786f4201978192",
+      "inputContextSha256": "55a4d032516c6127e3ce08f5683d99899ac7ea23ee108d135ff6f7b83d36c0d5",
       "copy": {
         "title": "Furniture and Moving Boxes",
         "alt": "An open cabinet, lamp, rolled rug and taped box form a grayscale pile.",
         "description": "The cabinet doors spread around the empty shelves."
       },
       "observations": [
-        "An open cabinet, lamp, rolled rug and taped box form a grayscale pile.",
-        "The cabinet doors spread around the empty shelves."
+        "A cabinet with an open door stands beside stacked moving boxes.",
+        "A tilted table lamp and a rolled patterned rug complete the monochrome grouping."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.340908+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-discarded-furniture-pile-black-white-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -356895,23 +356895,23 @@
       "sourceSha256": "51e25b66082f2d9b93e5fc0d7e4c4cbfb22a78160209800545ad844f9a6b0e99",
       "imageSha256": "51e25b66082f2d9b93e5fc0d7e4c4cbfb22a78160209800545ad844f9a6b0e99",
       "inputMetadataSha256": "4150505494aa8bc16b5638e68c8e60f0a4a08c50554e0a74bb3cf7dcd43b7ebe",
-      "inputContextSha256": "1f4b78d4e8503779fe8d3147d8a179a8ca4fe9a480687c94712efb4a480ccae8",
+      "inputContextSha256": "e4869e4b8f6ddc694cd537514982fd3e5e52f23710223ee9197fa50bbd339c49",
       "copy": {
         "title": "Yellow and Navy Biplane",
         "alt": "A small biplane has yellow wings, a navy body and a wooden propeller.",
         "description": "Brown goggles rest by the open cockpit; no pilot is visible."
       },
       "observations": [
-        "A small biplane has yellow wings, a navy body and a wooden propeller.",
-        "Brown goggles rest by the open cockpit; no pilot is visible."
+        "A yellow upper wing spans a navy biplane fuselage.",
+        "The small aircraft has two wheels and a front propeller."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.341101+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-dog-pilot-biplane-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -356921,23 +356921,23 @@
       "sourceSha256": "080c018755f38b7dfe49989e0fb977215d57541d45505a8297aacc6ed102e7c6",
       "imageSha256": "080c018755f38b7dfe49989e0fb977215d57541d45505a8297aacc6ed102e7c6",
       "inputMetadataSha256": "065797f6f52f4a674097115c02c96cb1248e99e2f91ce26872fdd7a1e468e055",
-      "inputContextSha256": "5819ae88f89609aac3569d62ba6754ce2a2f6567c557de40d6127f13ae0f143e",
+      "inputContextSha256": "aeccc44e76d07a7b15a9c97d8ccc6433760a90b06b22b0b39dbb323cefd7a4cb",
       "copy": {
         "title": "Airship Cockpit With Wooden Wheel",
         "alt": "A large steering wheel stands between brass control panels.",
         "description": "Riveted window frames curve above the wooden cockpit floor."
       },
       "observations": [
-        "A large steering wheel stands between brass control panels.",
-        "Riveted window frames curve above the wooden cockpit floor."
+        "A large wooden steering wheel sits inside a riveted curved cockpit.",
+        "Small brass gauges and controls line the wood-toned panels."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.341297+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-empty-airship-cockpit-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -356947,23 +356947,23 @@
       "sourceSha256": "7f33cc51508aeacd20871a8daf483a6fcda2c1312a37fcf22be5b87f20bd9b3e",
       "imageSha256": "7f33cc51508aeacd20871a8daf483a6fcda2c1312a37fcf22be5b87f20bd9b3e",
       "inputMetadataSha256": "5654788e00c0f8cd29c6e281957d8e662e647b7db94f083a069c0ff1be254d81",
-      "inputContextSha256": "39103e1c25f8e771f08db3ac14c9bcf35ea3ff990539540ee8ae84a3aafcbf51",
+      "inputContextSha256": "d0b628623139c67e71f725c74ddd0e16aed513f085556977fd1ed1d3a627bcce",
       "copy": {
         "title": "Strapped Camping Cookware",
         "alt": "A kettle, pots and spoon pack together in grayscale.",
         "description": "Dark straps secure the rounded metal cooking kit."
       },
       "observations": [
-        "A kettle, pots and spoon pack together in grayscale.",
-        "Dark straps secure the rounded metal cooking kit."
+        "A kettle and stacked cooking pots are held together by dark straps.",
+        "A spoon is tucked against the side in the monochrome drawing."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.342095+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-expedition-cooking-kit-black-white-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -356973,23 +356973,23 @@
       "sourceSha256": "804d57678268a648867fe7e42e54ba3e92461f334ec418cdd9a9ad66737bc2a9",
       "imageSha256": "804d57678268a648867fe7e42e54ba3e92461f334ec418cdd9a9ad66737bc2a9",
       "inputMetadataSha256": "03fb5c1eba818a32a8c1ad8ee459fba5bc7bd084319b04292db6bfa65fc9bb93",
-      "inputContextSha256": "396533d77a9651d5eea7ac226e6b457a805fdea2d3a12ec29362505806f2851b",
+      "inputContextSha256": "97e9424b0da81edb0faf854efecd289fb4a0d1eec6a70e7bd2eb471bc34c8bd5",
       "copy": {
         "title": "Rope and Leather Expedition Harness",
         "alt": "Coiled tan rope sits beside a brown buckled harness.",
         "description": "Golden hooks hang from the broad stitched belt."
       },
       "observations": [
-        "Coiled tan rope sits beside a brown buckled harness.",
-        "Golden hooks hang from the broad stitched belt."
+        "A thick rope coil lies beside a brown leather harness.",
+        "Buckles, loose straps and a small stone fill the compact equipment grouping."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.342306+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-expedition-rope-harness-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -356999,23 +356999,23 @@
       "sourceSha256": "1b036dba9ccbe03ce2de1a00850c76dbf07b6616e258f493afbd602aec2524ec",
       "imageSha256": "1b036dba9ccbe03ce2de1a00850c76dbf07b6616e258f493afbd602aec2524ec",
       "inputMetadataSha256": "44b8935643b17c972edf02d28ae839a94e2d0958cbb94cdcf1bab8b3276c31f6",
-      "inputContextSha256": "06f62ceb2c9300f0046be05c4b37ddd2210311d87e994780d613dfe081656c24",
+      "inputContextSha256": "ea05e0812ef533e9366db0750f471629cad10638251b0ae0d6abad7feed68885",
       "copy": {
         "title": "Compass Lifted by Balloons",
         "alt": "Five colorful balloons suspend a green-rimmed compass.",
         "description": "A rolled paper map hangs beside the golden frame."
       },
       "observations": [
-        "Five colorful balloons suspend a green-rimmed compass.",
-        "A rolled paper map hangs beside the golden frame."
+        "Five colored balloons are tied above a round gold compass.",
+        "A small rolled map hangs at the compass side."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.342510+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-floating-adventure-compass-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357025,23 +357025,23 @@
       "sourceSha256": "127bf35329d7f5fb3161fc2513cad5606ba6d86408deeba25865c21a40b26780",
       "imageSha256": "127bf35329d7f5fb3161fc2513cad5606ba6d86408deeba25865c21a40b26780",
       "inputMetadataSha256": "3afae1f2f7617ad9b3fc25ee2de58bb938afba35b5e0eb97e56c19a7fd04ae14",
-      "inputContextSha256": "c2fc5601a463ffb3980dc356a6fec725f14cbaacf0df9009eb7d8434b3579f73",
+      "inputContextSha256": "f78124c168bd04438e18de681d11089a73d8f01174b02c74969a5a462c948ccb",
       "copy": {
         "title": "Gamma From Up",
         "alt": "Gamma the brown and white bulldog from Up stands wearing a dark device collar.",
         "description": "A red button sits on Gamma's collar beneath the dog's heavy jowls."
       },
       "observations": [
-        "Gamma the brown and white bulldog stands wearing a dark device collar.",
-        "A red button sits beneath the dog's heavy jowls."
+        "The stocky tan-and-white bulldog stands with a stern expression.",
+        "A dark collar with a red circular device rests below its broad head."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.342716+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-gamma-bulldog-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357051,23 +357051,23 @@
       "sourceSha256": "f42091a96a98c8b6c50e29c1e0b4c1c43e39d567fc6069781a64bd0dc54bbca3",
       "imageSha256": "f42091a96a98c8b6c50e29c1e0b4c1c43e39d567fc6069781a64bd0dc54bbca3",
       "inputMetadataSha256": "49d63cb06e312b8eb6cbf38569c6dbf787e44db6c27481cd511c0b766579fffa",
-      "inputContextSha256": "995dc7be8f985ae17bc6bb286bca27427776295a218bde7217864a9c1e12b6f8",
+      "inputContextSha256": "e2635b4e6a5f37c2abd923828abe3d0aac5a438b46a5fa79fc6adfc0a10a2111",
       "copy": {
         "title": "Grape Soda Bottle Cap Badge",
         "alt": "A purple Grape Soda cap hangs from a silver safety pin.",
         "description": "A small grape cluster appears above the bold lettering."
       },
       "observations": [
-        "A purple Grape Soda cap hangs from a silver safety pin.",
-        "A small grape cluster appears above the bold lettering."
+        "A purple bottle cap is printed with the readable words GRAPE SODA.",
+        "A silver safety pin extends behind the round badge."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.342921+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-grape-soda-badge-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357077,23 +357077,23 @@
       "sourceSha256": "0811bd4489384fdeeeefc65000a49b01e407987bb32768099badbc6b1b7c6d58",
       "imageSha256": "0811bd4489384fdeeeefc65000a49b01e407987bb32768099badbc6b1b7c6d58",
       "inputMetadataSha256": "0e472a9a618aacf95193a035f5ef2dd15f91ad36c635eacbee68f22b9d515951",
-      "inputContextSha256": "48f1ce4aced1976bf9e4c7bb4bc5bbce9e6f17499039d5943a8afda648ba6ef2",
+      "inputContextSha256": "dc288082b42c45fc6d2b36f8ca57eb7c72c9c6e03584569cf7be4a794a5e5b18",
       "copy": {
         "title": "Colorful Feathers Tied With a Bow",
         "alt": "Orange, purple and turquoise feathers form a small bundle.",
         "description": "A cream bow gathers their thin stems."
       },
       "observations": [
-        "Orange, purple and turquoise feathers form a small bundle.",
-        "A cream bow gathers their thin stems."
+        "Three brightly colored feathers spread above a small tied ribbon.",
+        "The outer feather is deep blue while the other two are turquoise and orange."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.343129+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-iridescent-kevin-feathers-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357103,23 +357103,23 @@
       "sourceSha256": "d90728adb1f3ec4100f885aa0e07dd745f06f227e72cf4d735a635d23ca2f913",
       "imageSha256": "d90728adb1f3ec4100f885aa0e07dd745f06f227e72cf4d735a635d23ca2f913",
       "inputMetadataSha256": "01cfddd44f037aa069e51ecc9efbc7f26f97d5fc83dfcbd6cd449692797bba23",
-      "inputContextSha256": "72ee21319b4caa5e9d0fc3633a22973f99fae37fa9d2f04668545a52f9a50b23",
+      "inputContextSha256": "cf8595d48ff7d778a612a9f9d92c4337fd05f9619991be0862e9e3df60398e6d",
       "copy": {
         "title": "Kevin's Chicks in a Nest",
         "alt": "Three blue and golden chicks crowd a leafy twig nest.",
         "description": "Purple head plumes and wide orange beaks echo Kevin's colorful design from Up."
       },
       "observations": [
-        "Three blue and golden chicks crowd a leafy twig nest.",
-        "Purple head plumes and wide orange beaks echo Kevin's colorful design from Up."
+        "Three blue-and-yellow chicks sit inside a woven nest.",
+        "Leafy branches surround the nest and one chick raises its open beak."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.343343+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-kevin-chicks-nest-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357129,23 +357129,23 @@
       "sourceSha256": "500781f83b9e8b0c92968af2e4774c4f79b5abb2f3ba96c7664a206178df8f8f",
       "imageSha256": "500781f83b9e8b0c92968af2e4774c4f79b5abb2f3ba96c7664a206178df8f8f",
       "inputMetadataSha256": "80c102c26ca4106f95a1aca2e994b2c058a7b68bb2f83532401c39fcf381579d",
-      "inputContextSha256": "3045047b4145cb4cf666af4f32a69d5a07a4fdfbd2c9cfe4e60d72779623b0e8",
+      "inputContextSha256": "a648ae7d810af5fac18e058854fac5d0758dc9d71194445de6dd400d381fd8e5",
       "copy": {
         "title": "Kevin From Up",
         "alt": "Kevin from Up stands on long dark legs with a blue neck and orange beak.",
         "description": "Purple, turquoise and golden feathers brighten Kevin's tall flightless-bird silhouette."
       },
       "observations": [
-        "Kevin stands on long dark legs with a blue neck and orange beak.",
-        "Purple, turquoise and golden feathers brighten the tall flightless bird."
+        "The tall bird has a long blue neck and an oversized orange beak.",
+        "Bright wing patches and three head feathers distinguish its slim profile."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.343559+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-kevin-colorful-bird-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357155,23 +357155,23 @@
       "sourceSha256": "4c5bf8ae13d0b30dc5978e59802268cc13b072ba4a3bbfd5f16865cc0361f1d6",
       "imageSha256": "4c5bf8ae13d0b30dc5978e59802268cc13b072ba4a3bbfd5f16865cc0361f1d6",
       "inputMetadataSha256": "169cc62d51242733fe9fd95a30178b09ef9e36991b947a32eb7123099ab0ca44",
-      "inputContextSha256": "290e2bbdec45a0184a555b4be1d8e3539c1c8800cbdc23b5bbb2bb7a2cab351c",
+      "inputContextSha256": "ac88e7f2bc510d7023734f9b8d57b6b692ba6405f0e1c544c422ef661bbce176",
       "copy": {
         "title": "My Adventure Book",
         "alt": "A brown tied scrapbook reads My Adventure Book in colorful letters.",
         "description": "A small globe emblem sits below the title on the textured cover."
       },
       "observations": [
-        "A brown tied scrapbook reads My Adventure Book in colorful letters.",
-        "A small globe emblem sits below the title on the textured cover."
+        "The brown scrapbook cover reads MY ADVENTURE BOOK in colored lettering.",
+        "A globe emblem and stitched binding decorate the closed book."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.343769+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-my-adventure-book-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357181,23 +357181,23 @@
       "sourceSha256": "456290a3a85879c7da3bad7aaff32d0663abfac59d820b8db8126ace9af8ec04",
       "imageSha256": "456290a3a85879c7da3bad7aaff32d0663abfac59d820b8db8126ace9af8ec04",
       "inputMetadataSha256": "5683d916af2feb226047237738acd7f2036e55ecbead71bd0d411c0113cfcb5c",
-      "inputContextSha256": "4602af70a12b4736cfccc1894dd6140e0351b1bfbf7152528262e04dc55308e8",
+      "inputContextSha256": "de55491128d796a83d0758583368944527ca2a3e5e3c7776a20c66a8ef413575",
       "copy": {
         "title": "Handprint Mailbox With Red Flag",
         "alt": "A cream mailbox carries blue and pink handprints.",
         "description": "A raised red flag stands above the weathered white post."
       },
       "observations": [
-        "A cream mailbox carries blue and pink handprints.",
-        "A raised red flag stands above the weathered white post."
+        "A cream mailbox carries a larger blue handprint and a smaller pink handprint.",
+        "Its red signal flag stands upright above a short white wooden post."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.343982+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-painted-handprint-mailbox-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357207,23 +357207,23 @@
       "sourceSha256": "663127f784e7611ce43b09d86ba3971ce06dc0aa6a1ad91924a37ac66367cb37",
       "imageSha256": "663127f784e7611ce43b09d86ba3971ce06dc0aa6a1ad91924a37ac66367cb37",
       "inputMetadataSha256": "82daa344a89020244d031b6530797820b824415827efe40c69fffce96d7fc096",
-      "inputContextSha256": "023e58941d03380093b3988160ee020832ef2d34e894dae778ddfd2976495cbb",
+      "inputContextSha256": "4692961a09c2e5cb1aef2f4823e55f0bae5502b1c9255be925f48eec07b1aaee",
       "copy": {
         "title": "Treasure Chest Under a Parachute",
         "alt": "A wooden chest hangs beneath a coral and mint canopy.",
         "description": "Golden cords attach the segmented parachute to the brass-trimmed box."
       },
       "observations": [
-        "A wooden chest hangs beneath a coral and mint canopy.",
-        "Golden cords attach the segmented parachute to the brass-trimmed box."
+        "A red-and-green canopy is attached to a small gold chest with ropes.",
+        "The chest hangs below the canopy with its curved lid closed."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.344534+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-parachute-treasure-chest-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357233,23 +357233,23 @@
       "sourceSha256": "65aa7ee9b0bc32c0d09e863c0a96d904b1d718f53b5b0ce47fe263ca9e9d3a77",
       "imageSha256": "65aa7ee9b0bc32c0d09e863c0a96d904b1d718f53b5b0ce47fe263ca9e9d3a77",
       "inputMetadataSha256": "d0da33264fe41771d9730146d47c2ecf4fdfcd8ef33b1b1114b518c66cd5f066",
-      "inputContextSha256": "a3545e8ce57d18e3867fc83c5eab857f3c8952e0ecf6b1e4d5020a4550f51c07",
+      "inputContextSha256": "b5a19cc395509d7e19a776f42454924c2875fabc8abf42e33d485518617e1319",
       "copy": {
         "title": "Paradise Falls-Inspired Waterfall",
         "alt": "A tall waterfall drops from a flat-topped red cliff into a turquoise pool.",
         "description": "Dense green foliage lines the summit of this Up-inspired landscape."
       },
       "observations": [
-        "A tall waterfall drops from a flat-topped red cliff into a turquoise pool.",
-        "Dense green foliage lines the summit of this Up-inspired landscape."
+        "A narrow waterfall drops from a green-topped rock plateau into a blue pool.",
+        "Small trees and scattered rocks surround the base of the tall cliff."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.344765+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-paradise-falls-tepui-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357259,23 +357259,23 @@
       "sourceSha256": "2faaba263573acc9a95feabab55ae54a5cd2f7730f2991020b4c6683391774e9",
       "imageSha256": "2faaba263573acc9a95feabab55ae54a5cd2f7730f2991020b4c6683391774e9",
       "inputMetadataSha256": "7597e1cb741369dbe31df031a2228ed1cec9b8704b3ed073694c22e549b5177d",
-      "inputContextSha256": "7204331eb8ed47a5f7c021a5002cfcfb18b50b5ebf9653ba7eb421a30ec61b6f",
+      "inputContextSha256": "2ecbb3bb6174b9c97dbbba41e57051f2139b338a24762cfaa41e37a3a9661c6f",
       "copy": {
         "title": "Picnic Basket With Checked Blanket",
         "alt": "An open wicker basket holds a blue checked blanket, cups and an apple.",
         "description": "Leather fastenings frame the curved woven lid."
       },
       "observations": [
-        "An open wicker basket holds a blue checked blanket, cups and an apple.",
-        "Leather fastenings frame the curved woven lid."
+        "An open wicker picnic basket contains a blue checked blanket and two cups.",
+        "A red apple peeks from the basket opening."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.344972+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-picnic-basket-blanket-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357285,23 +357285,23 @@
       "sourceSha256": "0f778515f6f2ceffb4af9cf9a96d827e0a4fa95aef064cd549f85fbbdd21bfc5",
       "imageSha256": "0f778515f6f2ceffb4af9cf9a96d827e0a4fa95aef064cd549f85fbbdd21bfc5",
       "inputMetadataSha256": "5494651df142cc7d4b108a7a92aad65f5408f803d9254654465757bb06a8f758",
-      "inputContextSha256": "673049e93e86f7c9651af723dd1e6c665d43f681d7ad5e2b7fb8624e3f4c87a1",
+      "inputContextSha256": "5c3dc6e557c7023eaded79f925c6189a9ff136e50491a2659dd6cc6cbc51dffb",
       "copy": {
         "title": "Bay Window With Flower Boxes",
         "alt": "A green and pink bay window stands above a colorful flower planter.",
         "description": "White brackets and trailing leaves support the projecting window box."
       },
       "observations": [
-        "A green and pink bay window stands above a colorful flower planter.",
-        "White brackets and trailing leaves support the projecting window box."
+        "A yellow-green projecting window has pink-trimmed glass panels.",
+        "Pink and yellow flowers fill the box beneath the window."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.345180+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-porch-flower-planter-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357311,23 +357311,23 @@
       "sourceSha256": "24b0378a6d9c16e23f6925943abf053286e093f35190d40370eb39c9e4cd5848",
       "imageSha256": "24b0378a6d9c16e23f6925943abf053286e093f35190d40370eb39c9e4cd5848",
       "inputMetadataSha256": "28a199fa10bb9e74a314f1feabf0a703636bbc4ceb185baa85674889a9d2f96b",
-      "inputContextSha256": "b1262162b262c74298c54e14c279b1f0b355dd88090ff3d56dd00e60f521225d",
+      "inputContextSha256": "c28305daacf7e2f214ec595dd7634422a5434f8ab827e8b7c275b52775b4704a",
       "copy": {
         "title": "Rooster Weathervane on a Roof",
         "alt": "A red rooster sits above an arrow on a small tiled roof.",
         "description": "A dark ball joint supports the metal-like directional ornament."
       },
       "observations": [
-        "A red rooster sits above an arrow on a small tiled roof.",
-        "A dark ball joint supports the metal-like directional ornament."
+        "A red rooster stands above a horizontal arrow-shaped weather vane.",
+        "The assembly is fixed to the peak of a small tiled roof."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.345397+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-rooster-roof-weathervane-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357337,23 +357337,23 @@
       "sourceSha256": "37968505720cc01b9d9de8fe093cc99e62e5dfe78e08eceae9e1e12eb47cefe5",
       "imageSha256": "37968505720cc01b9d9de8fe093cc99e62e5dfe78e08eceae9e1e12eb47cefe5",
       "inputMetadataSha256": "f2aee8679101c4aa3f2b5fad84a0a111737d190408e9d27578b2fd0b5ffc4e1f",
-      "inputContextSha256": "15e2ab092f7b2ee8dd11f60b9700d49ef73fda4a4373dd70bc60526322b76089",
+      "inputContextSha256": "aaaf1d0012df0f0da0aa1a4fd234357fa79367a8c80f77f467427cdc410cae38",
       "copy": {
         "title": "Expedition Backpack With Camping Gear",
         "alt": "An olive backpack carries rope, a bedroll, a shovel and a metal cup.",
         "description": "An orange pennant rises from the tightly packed straps."
       },
       "observations": [
-        "An olive backpack carries rope, a bedroll, a shovel and a metal cup.",
-        "An orange pennant rises from the tightly packed straps."
+        "A rolled yellow sleeping mat is strapped across a green expedition backpack.",
+        "Rope, a shovel, a metal cup and an orange pennant hang from the pack."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.345611+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-scout-expedition-backpack-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357363,23 +357363,23 @@
       "sourceSha256": "0b9cfb051319be6229b4ebd8f36635249863117409d7c591ee9183d22e01823d",
       "imageSha256": "0b9cfb051319be6229b4ebd8f36635249863117409d7c591ee9183d22e01823d",
       "inputMetadataSha256": "dd9f8d2043bfec765a254a98ac7f5dbedbe82b3bd2754ce7feb696cb85a405e8",
-      "inputContextSha256": "db9b0b9444e7f849c8af56776a93a7aacfbd652c926b69ce3fde9770cf3aeff5",
+      "inputContextSha256": "5206d8927a7cffb2bc494e3044d1cee3293dea9a8b69a342f2a5a5ee94aaca8f",
       "copy": {
         "title": "Yellow Balloon With a Rolled Map",
         "alt": "A single glossy balloon suspends a small paper scroll.",
         "description": "A red wax-like seal fastens the map beneath the curled string."
       },
       "observations": [
-        "A single glossy balloon suspends a small paper scroll.",
-        "A red wax-like seal fastens the map beneath the curled string."
+        "A single yellow balloon is tied to a rolled parchment map.",
+        "A red seal secures the map and the string curves between the two objects."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.345814+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-single-yellow-adventure-balloon-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357389,23 +357389,23 @@
       "sourceSha256": "dcb1a8889a817379c4949a1f1a573f02ab49d269912368b9e8234c74c4faa6d8",
       "imageSha256": "dcb1a8889a817379c4949a1f1a573f02ab49d269912368b9e8234c74c4faa6d8",
       "inputMetadataSha256": "5976aff539feb530a4b2496f64e2911b4fe9da1103a7fe05ba9bd437915a7667",
-      "inputContextSha256": "541b1bccc70ae518664171ea09725970efb65a74c83abbe6aa0c9ea0b3a224b9",
+      "inputContextSha256": "ef74781306ba13b5a121767a0f0d9db57bfb59d8af541c1bbf00ef1e6a131f91",
       "copy": {
         "title": "Spirit of Adventure-Inspired Airship",
         "alt": "A large gray airship has a suspended cabin and small propellers.",
         "description": "Golden ribs and angular tail fins define the Up-inspired vessel."
       },
       "observations": [
-        "A large gray airship has a suspended cabin and small propellers.",
-        "Golden ribs and angular tail fins define the Up-inspired vessel."
+        "The gray elongated airship has a tail fin and a small cabin underneath.",
+        "Gold trim and several propeller units run along the lower body."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.346028+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-spirit-of-adventure-airship-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357415,23 +357415,23 @@
       "sourceSha256": "5aa34495eda246f0649ec8ae0fe22db553509e98c13247e905fb231e436c6024",
       "imageSha256": "5aa34495eda246f0649ec8ae0fe22db553509e98c13247e905fb231e436c6024",
       "inputMetadataSha256": "77180881e4b907203246a34f99667ee7c0ee7263c6f4e715f10040c93d485065",
-      "inputContextSha256": "b0737d2af835e2cba667f0e069fe3bfd59f3ca37b818ead32bdcdc47b0c0a631",
+      "inputContextSha256": "c8bedbbb52d717b31f60f6037b44ea7097385f4a837c8b7896a73da1a27af74a",
       "copy": {
         "title": "Brown Stairlift Chair",
         "alt": "A padded brown chair rides a curved rail beside wooden steps.",
         "description": "A footrest and small arm control distinguish the mobility aid."
       },
       "observations": [
-        "A padded brown chair rides a curved rail beside wooden steps.",
-        "A footrest and small arm control distinguish the mobility aid."
+        "A padded brown stairlift seat rests on a pale mechanical base.",
+        "A curved rail follows three short wooden stairs beside the chair."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.346226+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-stairlift-chair-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357441,23 +357441,23 @@
       "sourceSha256": "726d269340f722ce266b6f46067eff11db67ae8de5a2e134f67586f36679a9f4",
       "imageSha256": "726d269340f722ce266b6f46067eff11db67ae8de5a2e134f67586f36679a9f4",
       "inputMetadataSha256": "2233d4a1bfa90edf0885cede04c9cb8928b70a9c9aafbea8cc46722d40d5c0f2",
-      "inputContextSha256": "23f2c65d8dcdfa511a0b8d5d9f85b46c16d174e22060fbba4b190df64226f093",
+      "inputContextSha256": "815e8bb90a6ad59c3bfb87e1205fc2552493ccd3250ca63eec820c5a3acc8c4a",
       "copy": {
         "title": "Blue Arrow on a Rocky Summit",
         "alt": "A blue wooden arrow points right above a pile of rocks.",
         "description": "An orange flag and footprint-marked stone complete the trail marker."
       },
       "observations": [
-        "A blue wooden arrow points right above a pile of rocks.",
-        "An orange flag and footprint-marked stone complete the trail marker."
+        "A blue right-pointing arrow is attached to a wooden post on a rocky hill.",
+        "An orange pennant and a trail of small footprints accompany the sign."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.346414+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-summit-arrow-signpost-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357467,23 +357467,23 @@
       "sourceSha256": "2376b33ff50b55c8773e15bf86fb34743cbc357cc446c440afa717f5bd12d38f",
       "imageSha256": "2376b33ff50b55c8773e15bf86fb34743cbc357cc446c440afa717f5bd12d38f",
       "inputMetadataSha256": "9591181bbaff8cd64661285df25a75178fd804594d4d7a866a43d6149f24bea0",
-      "inputContextSha256": "032a6fd65519056841a93f9636b2ca2dd961a703566f80bc8fa362be99b0af0f",
+      "inputContextSha256": "760a6b9626dc780d4cb7e8d45071d22c60286950cdad3dc1316bdd3cfddd0613",
       "copy": {
         "title": "Talking-Dog Collar From Up",
         "alt": "A brown collar carries round devices and a glowing red center.",
         "description": "A small antenna completes the fictional speech-collar design."
       },
       "observations": [
-        "A brown collar carries round devices and a glowing red center.",
-        "A small antenna completes the fictional speech-collar design."
+        "A brown leather dog collar carries a large red-centered device.",
+        "A small vertical antenna rises beside the circular fitting."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.346981+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-talking-dog-collar-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357493,23 +357493,23 @@
       "sourceSha256": "ff3148b3bd7f6b37bd94697f30d6ee948f01d8c88270c4db7c2698910d47025d",
       "imageSha256": "ff3148b3bd7f6b37bd94697f30d6ee948f01d8c88270c4db7c2698910d47025d",
       "inputMetadataSha256": "23e1ab94dd319969195935b5f5b4cb206e02123492fbf4a68f5bfca381254fef",
-      "inputContextSha256": "5923dba82e5551d15c6a7aa9d4d5e0ff84b736d2367e621e196d0ed135940cce",
+      "inputContextSha256": "61d8ae187b4aaae6c9ca41e38bb8536bcda749d19fddfdba639ec1b60c1f56cd",
       "copy": {
         "title": "Walking Cane With Tennis Ball Feet",
         "alt": "A dark walking stick has a wooden handle and four green ball-covered feet.",
         "description": "A paper tag hangs near the upper grip."
       },
       "observations": [
-        "A dark walking stick has a wooden handle and four green ball-covered feet.",
-        "A paper tag hangs near the upper grip."
+        "A dark walking cane splits into four feet with green tennis-ball tips.",
+        "A small beige tag hangs below the curved wooden handle."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.347177+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-tennis-ball-walking-cane-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357519,23 +357519,23 @@
       "sourceSha256": "0a91dd5e3aff45861dab792650d6af086475e12d5ee4726c07ebbcd5c5672b0a",
       "imageSha256": "0a91dd5e3aff45861dab792650d6af086475e12d5ee4726c07ebbcd5c5672b0a",
       "inputMetadataSha256": "e27bfd784bcec91e4277a3a69605ba22a8a07e02cd3078cd91d69d87df8fc989",
-      "inputContextSha256": "0ec3b4fc3a1a6279a76c6db2dca8f27383f8ad7b34596654cf008b24bf0d2ad5",
+      "inputContextSha256": "29948166ddc3267cadbf76901dbabb3f0450e56af6e974bf2be0ef06122106ef",
       "copy": {
         "title": "Layered Rock Spires",
         "alt": "Three narrow stone pillars rise above a rocky base in grayscale.",
         "description": "Broad capstones top the uneven stacked layers."
       },
       "observations": [
-        "Three narrow stone pillars rise above a rocky base in grayscale.",
-        "Broad capstones top the uneven stacked layers."
+        "Three layered rock spires rise from a scatter of angular stones.",
+        "Cross-hatching and gray tonal areas define the monochrome rock faces."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.347372+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-tepui-rock-spires-black-white-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357545,23 +357545,23 @@
       "sourceSha256": "d29071013cc8092e6498baffcc0a8f1abc7f609f71ae4b57f77ab894fe2c61cb",
       "imageSha256": "d29071013cc8092e6498baffcc0a8f1abc7f609f71ae4b57f77ab894fe2c61cb",
       "inputMetadataSha256": "175bf62222873d81d6e1809331e71ef4d4a13543d8c20acf0086103b2beb68eb",
-      "inputContextSha256": "789e1dea7fdab489f40766ad6cf39070451457873cf1d38846b4ff53f9311c83",
+      "inputContextSha256": "2041912b99637cbaf536600d08dc413eeb99f14012c37b8a67162188aa7119cf",
       "copy": {
         "title": "Explorer Badge Sash and Orange Scarf",
         "alt": "A brown sash carries rows of small colorful circular badges.",
         "description": "An orange neckerchief meets at a round golden clasp."
       },
       "observations": [
-        "A brown sash carries rows of small colorful circular badges.",
-        "An orange neckerchief meets at a round golden clasp."
+        "A curved brown sash carries many small colored badges.",
+        "An orange neckerchief and a round gold clasp sit above the sash."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.347560+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-wilderness-badge-sash-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357571,23 +357571,23 @@
       "sourceSha256": "740d7f3cf0683b5f7a969b1bdc4853fe16b61f48d3ada93c7fda119559fd98ad",
       "imageSha256": "740d7f3cf0683b5f7a969b1bdc4853fe16b61f48d3ada93c7fda119559fd98ad",
       "inputMetadataSha256": "afce7059956f72f39d7cb111132b5101d69829d425f94b6c46b03ed7f02a3d19",
-      "inputContextSha256": "69bd88fbc4159795d7f5a65a48d2a58fcb42e93ab702f6385a9affa784aa3927",
+      "inputContextSha256": "52b13641025265b09b4a20cbabb6af05763eafd23c87dcfa36c9e56a75eda719",
       "copy": {
         "title": "Black Binoculars With Mountain Charm",
         "alt": "A pair of shaded binoculars has a looped neck cord in grayscale.",
         "description": "A small round mountain emblem hangs beside the lenses."
       },
       "observations": [
-        "A pair of shaded binoculars has a looped neck cord in grayscale.",
-        "A small round mountain emblem hangs beside the lenses."
+        "Black binoculars have two textured barrels and a central focusing bridge.",
+        "A mountain-emblem charm hangs from the attached strap."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.347757+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-wilderness-binoculars-black-white-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357597,23 +357597,23 @@
       "sourceSha256": "3a850a2957364d102ec50137c1528270fbea36a64bff5cae53dba992bced8262",
       "imageSha256": "3a850a2957364d102ec50137c1528270fbea36a64bff5cae53dba992bced8262",
       "inputMetadataSha256": "0f7a55ad521191e3fdffb53fa3caadc1d6dab0835348db8239054d08ed44f718",
-      "inputContextSha256": "9d5b62d1e303b365a91c62ea126252440a7e0cdc82b6ad16ab519441ad63b22f",
+      "inputContextSha256": "7cb040b8d3e75e50ba5b54013103fbbe6c244435b9bfac09220c29c378e0389f",
       "copy": {
         "title": "Explorer Tent and Campfire Ring",
         "alt": "An open canvas tent stands beside a bedroll and stone fire ring in grayscale.",
         "description": "A small triangular explorer flag rises from the roof."
       },
       "observations": [
-        "An open canvas tent stands beside a bedroll and stone fire ring in grayscale.",
-        "A small triangular explorer flag rises from the roof."
+        "An open triangular tent stands behind a rolled sleeping mat.",
+        "A ring of stones and a small flag complete the monochrome camping arrangement."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.347947+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-wilderness-tent-campsite-black-white-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357623,23 +357623,23 @@
       "sourceSha256": "064a30c43cb1a81672a963d9cfef1cfcb52d359a4b4e123ad5d844ef6ea802de",
       "imageSha256": "064a30c43cb1a81672a963d9cfef1cfcb52d359a4b4e123ad5d844ef6ea802de",
       "inputMetadataSha256": "1fc94d07cb5cab789afeb4dd899f334cb26e852b19b303fe0e56621b51065950",
-      "inputContextSha256": "c1182ea5d15283ce619d3720f2b8242cfd94289f0212dde5b6e1086afc7cda78",
+      "inputContextSha256": "3b21ac11c76773f7eaab8422dcd34a09973dc6fe086b47e5f805921125e7f043",
       "copy": {
         "title": "Yellow Handheld Navigation Device",
         "alt": "A yellow GPS-style device shows a dotted route on a green map.",
         "description": "An orange wrist strap hangs beside gray direction buttons."
       },
       "observations": [
-        "A yellow GPS-style device shows a dotted route on a green map.",
-        "An orange wrist strap hangs beside gray direction buttons."
+        "A yellow handheld device displays a colored winding route on its screen.",
+        "Four arrow buttons, a red round button and an orange wrist loop surround the display."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.348132+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-yellow-navigation-gps-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357649,23 +357649,23 @@
       "sourceSha256": "92139f33f563e51d84e14aa677a86b6c2a27051be5e04178149a41296964dec3",
       "imageSha256": "92139f33f563e51d84e14aa677a86b6c2a27051be5e04178149a41296964dec3",
       "inputMetadataSha256": "6d2c2794b5a13d761d391a812019ce06fbab96178b19a018c836e44668c17cba",
-      "inputContextSha256": "e30fc82f34373f7a97ae0c9a30cf56d5594a7611ac58563f054d4e8804eea18f",
+      "inputContextSha256": "1fa6838fb8ebac22dc48e7da01e5a19bb779e82c6b6cfae13ac280870a2a0abf",
       "copy": {
         "title": "Young Ellie From Up",
         "alt": "Young Ellie from Up raises a rolled map while wearing denim overalls.",
         "description": "A pink bow, red hair and badge-covered straps distinguish Ellie above her sturdy brown boots."
       },
       "observations": [
-        "A red-haired girl in denim overalls raises a rolled map.",
-        "A pink hair bow, badge-covered straps and brown boots distinguish young Ellie."
+        "A smiling red-haired girl raises a small rolled map in one hand.",
+        "Short dark overalls, a badge-covered shirt and brown boots define her outfit."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.348362+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-young-ellie-adventurer-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -357675,23 +357675,23 @@
       "sourceSha256": "3131b47b065aeac1f1edfd8a8b72283cb17758200512c494c137b500d2bf6ccd",
       "imageSha256": "3131b47b065aeac1f1edfd8a8b72283cb17758200512c494c137b500d2bf6ccd",
       "inputMetadataSha256": "2f48dfb1161a87be932631c055fb13949e19729ac702e2ef0910236f0e6072a6",
-      "inputContextSha256": "55383046692654bc3610be5cd34fde8b69b26f5d72a37666608ca5eb46d7cb71",
+      "inputContextSha256": "c6216016cf054688033db12af390c9345dd1ffb2b603edb4b1cc146db156635f",
       "copy": {
         "title": "Balloon Cart With a Cream Canopy",
         "alt": "A wooden handcart stands beneath a scalloped cream awning.",
         "description": "Red, blue, yellow and green balloons are tied beside the large spoked wheels."
       },
       "observations": [
-        "A wooden handcart stands beneath a scalloped cream awning.",
-        "Red, blue, yellow and green balloons are tied beside the large spoked wheels."
+        "A wooden cart has large spoked wheels and a cream scalloped canopy.",
+        "Four bright balloons are tied beside the empty counter."
       ],
-      "reviewedAt": "2026-10-28T22:08:44.348584+00:00",
+      "reviewedAt": "2026-10-29T09:03:13.464Z",
       "inspectedImage": "/catalog/up/up-zoo-balloon-cart-clipart.webp",
       "references": [
         {
           "url": "https://www.pixar.com/upfilm",
-          "publisher": "Pixar",
-          "reason": "Compare Kevin, Ellie and Alpha pack identities and distinguish generic expedition props from named characters."
+          "publisher": "Pixar Animation Studios",
+          "reason": "Official Up characters, house and adventure setting; generic equipment remains described as the visible object, without an unsupported exact film-prop claim."
         }
       ]
     },
@@ -380694,6 +380694,1006 @@
         }
       ],
       "reviewerType": "AI_AGENT_NOT_HUMAN"
+    },
+    {
+      "id": "up-direction-upward-direction-road-sign",
+      "status": "reviewed-from-image",
+      "sourceSha256": "61df77e2e99ed745269e26092ae5678a91336741c21b0c45e148bdf1590f6044",
+      "imageSha256": "61df77e2e99ed745269e26092ae5678a91336741c21b0c45e148bdf1590f6044",
+      "inputMetadataSha256": "3bbc3f39e3a090a7b9c4b161d5df844e28364114bec37e5f09ae175cbbc510be",
+      "inputContextSha256": "fa3d5d68c617166f069714611a87a743b97ceaf0a836d2260a4f08a44050c5dc",
+      "copy": {
+        "title": "Blue Upward Arrow Road Sign",
+        "alt": "White upward arrow on a blue rectangular road sign mounted on a short metal post.",
+        "description": "A double white border frames the arrow, with two bolts securing the blue plate to its silver post."
+      },
+      "observations": [
+        "Blue rectangular sign with a white up arrow and double white border.",
+        "Two round bolts and a short silver mounting post are visible."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-upward-direction-road-sign.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-wooden-stairs-sign",
+      "status": "reviewed-from-image",
+      "sourceSha256": "972469f234f860409ccdba341008414dd7c1202e0bde4c5afa0a0efbaa27364f",
+      "imageSha256": "972469f234f860409ccdba341008414dd7c1202e0bde4c5afa0a0efbaa27364f",
+      "inputMetadataSha256": "37f8dfe68ead5f70d4fcb215ca5e823dbdde7af8cdf0253b31d0bd2238541aaa",
+      "inputContextSha256": "4229d796dfbe4c82a1cf62ec8a9eda7c1be09db0a3eb033a55744d4d75c48469",
+      "copy": {
+        "title": "Wooden Up Sign beside Three Steps",
+        "alt": "Wooden arrow sign reading UP beside three wooden steps, stones and green plants.",
+        "description": "Wood grain and small metal fasteners give the sign and steps a rustic appearance. The painted white arrow points straight upward."
+      },
+      "observations": [
+        "The upright wooden arrow-shaped sign carries white UP lettering.",
+        "Three wooden steps sit beside small rocks and grass at the base."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-wooden-stairs-sign.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-elevator-up-button",
+      "status": "reviewed-from-image",
+      "sourceSha256": "313c46962c603c83e8475f8a9c5b53019745cef1514dd3817797d28a438c2ef3",
+      "imageSha256": "313c46962c603c83e8475f8a9c5b53019745cef1514dd3817797d28a438c2ef3",
+      "inputMetadataSha256": "ecd266f7e97bfff1da0e9f0f2bbf5f0eeb45db23dc23e8defae28884f0539bd5",
+      "inputContextSha256": "87da061625f4fbe4675efb150ab77014f705889540093040d73d671880c79d8b",
+      "copy": {
+        "title": "Pressing the Elevator Up Button",
+        "alt": "Hand pressing an illuminated yellow up button on a silver elevator call panel.",
+        "description": "The upper triangle glows yellow above an unlit downward triangle. Rounded corners and two screws finish the narrow metal panel."
+      },
+      "observations": [
+        "A finger presses the upper yellow button on a brushed silver panel.",
+        "A separate downward triangle appears on the unlit lower button."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-elevator-up-button.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-upload-cloud-arrow",
+      "status": "reviewed-from-image",
+      "sourceSha256": "a5b28a60b7079a3effbd5f6fe95af83b199dd737e40ba27071652e557bedf0d0",
+      "imageSha256": "a5b28a60b7079a3effbd5f6fe95af83b199dd737e40ba27071652e557bedf0d0",
+      "inputMetadataSha256": "273411f89857a3b3e950e732495f196175e85491975f18e4be3b7d0d0c0d42be",
+      "inputContextSha256": "9200a226b1ee4f4eb946705ce891606e6b1b5a0cbcd6c2dfaff48aa6cd07c3e3",
+      "copy": {
+        "title": "Laptop Uploading to a Blue Cloud",
+        "alt": "Large blue arrow rises from an open laptop toward a rounded blue cloud.",
+        "description": "The upload arrow overlaps the laptop screen and cloud. Pale highlights give the simple blue shapes a glossy finish."
+      },
+      "observations": [
+        "An open gray laptop sits below a large blue cloud.",
+        "A thick blue arrow points vertically upward through the composition."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-upload-cloud-arrow.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-double-chevron-marker",
+      "status": "reviewed-from-image",
+      "sourceSha256": "ca9e0ec45a92a3697b11b22fb2737d3840bb91a58872642a34abafe14fc1f715",
+      "imageSha256": "ca9e0ec45a92a3697b11b22fb2737d3840bb91a58872642a34abafe14fc1f715",
+      "inputMetadataSha256": "df386d2c020b082f0caae6d2fa011aa849c19a1339d897b91ef0a708d17687af",
+      "inputContextSha256": "9cd24cd2cfa0ed89aa0cf16c4188a7267a9a8678b14812d31db52f49bf3cfb84",
+      "copy": {
+        "title": "Amber Double Up Chevron",
+        "alt": "Two amber upward chevrons with thick navy outlines and a white gap between them.",
+        "description": "The stacked angular marks form a compact direction symbol. Dark edging separates each amber face from the open space around it."
+      },
+      "observations": [
+        "Two separate amber chevrons are stacked vertically.",
+        "Both chevrons have broad dark navy borders and upward points."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-double-chevron-marker.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-curved-route-up",
+      "status": "reviewed-from-image",
+      "sourceSha256": "dc650338f1aafb45b08aa8b77432e76e924e8681093ef86f7cde9a74e98e4975",
+      "imageSha256": "dc650338f1aafb45b08aa8b77432e76e924e8681093ef86f7cde9a74e98e4975",
+      "inputMetadataSha256": "864f7ac4584c0b1e5e689375719e6f97b7222326a8a49694e4cdb51962b159f9",
+      "inputContextSha256": "167bb0db340818d37b7789a7e517f5be3afd446e515e58aed73e5fe4693d441e",
+      "copy": {
+        "title": "Curving Road Arrow to a Red Flag",
+        "alt": "Dark curved road with a dashed white center line rises to an arrowhead and red flag.",
+        "description": "The wide road sweeps upward from the lower left. A small flag marks the pointed destination at the top."
+      },
+      "observations": [
+        "A charcoal road-shaped arrow curves upward with white lane dashes.",
+        "A red flag sits at the arrow's upper destination."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-curved-route-up.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-stairs-arrow-blocks",
+      "status": "reviewed-from-image",
+      "sourceSha256": "8f08a82586b933e8c7471289b03fa3c47a13356018355a732c93937ad9803542",
+      "imageSha256": "8f08a82586b933e8c7471289b03fa3c47a13356018355a732c93937ad9803542",
+      "inputMetadataSha256": "9b4b48c573a34d99c3dca9ab3d3ba2ff8e9c31497b4e18528b0de14a765bd861",
+      "inputContextSha256": "b3b68f7d2440075fc3003f4e2ac605f50e46b5716cc68d4d9c1bf0ea2633183d",
+      "copy": {
+        "title": "Building an Up Arrow with Toy Blocks",
+        "alt": "Hand places a red arrowhead on a tower of blue, green, yellow, orange and red blocks.",
+        "description": "The bright blocks form a rising stack capped by a triangular red point. A blue sleeve enters beside the hand placing the top piece."
+      },
+      "observations": [
+        "Five colored blocks form a vertical tower beneath a red triangular cap.",
+        "A hand in a blue cuff holds the top arrowhead."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-stairs-arrow-blocks.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-hand-drawn-up-label",
+      "status": "reviewed-from-image",
+      "sourceSha256": "876e2bb5eb1dd2385e2ba9d52093e202679554f4ebf046a827dcf1f6556e890a",
+      "imageSha256": "876e2bb5eb1dd2385e2ba9d52093e202679554f4ebf046a827dcf1f6556e890a",
+      "inputMetadataSha256": "d44a25fa4e0c6e2225315408f3bcd0c360480a30d446f52ff654eefea15d17dd",
+      "inputContextSha256": "ea15b29dbf2fef5b8d90a48bb34ed5138f457c1ec3a01371561429ba8378709a",
+      "copy": {
+        "title": "Hand-Drawn Red Up Arrow",
+        "alt": "Textured red upward arrow with a black outline and the word UP below.",
+        "description": "Short accent strokes emphasize the arrow's direction. The uneven red fill and dark edging give the symbol a drawn appearance."
+      },
+      "observations": [
+        "A red arrow has a rough dark outline and small emphasis marks.",
+        "The separate word UP appears below in matching red letters."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-hand-drawn-up-label.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-ribbon-arrow-loop",
+      "status": "reviewed-from-image",
+      "sourceSha256": "b02cdc9135bf1d79cfd9567abab2b4db5c635b73050837be23e60f742074f332",
+      "imageSha256": "b02cdc9135bf1d79cfd9567abab2b4db5c635b73050837be23e60f742074f332",
+      "inputMetadataSha256": "c869b27f393647cb327e7791dd656f6f459c83a05546f8793ac263d07ab079cd",
+      "inputContextSha256": "88069ac4dd44a64346823fbdcc8a8a48004810690161b7ea496296f0f5c7bac3",
+      "copy": {
+        "title": "Folded Red Ribbon Up Arrow",
+        "alt": "Glossy red ribbon twists into an upward arrow with a notched lower tail.",
+        "description": "Folded bands cross the arrow's stem, with bright highlights along their edges. The pointed top and cut ribbon tail keep the silhouette clear."
+      },
+      "observations": [
+        "The red satin-like ribbon twists around a vertical central stem.",
+        "Its top forms an arrowhead while the bottom has a split tail."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-ribbon-arrow-loop.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-chalkboard-up-arrow",
+      "status": "reviewed-from-image",
+      "sourceSha256": "1788b690bb554e29916d263ed2b0ad64f2f8a5c3ef648273629eeb0f80332658",
+      "imageSha256": "1788b690bb554e29916d263ed2b0ad64f2f8a5c3ef648273629eeb0f80332658",
+      "inputMetadataSha256": "8805ad39ee9a1a4ee2bb4f88950a600e21369a2897dda3fbe89cd0d0a64bdc3e",
+      "inputContextSha256": "ff7a99a1ad093483b1b468a248f04b89ebb6186432d40fdc8c9d0b0bce09571a",
+      "copy": {
+        "title": "Chalkboard Up Arrow on an Easel",
+        "alt": "Small wooden easel supports a black chalkboard with a white arrow and UP lettering.",
+        "description": "Chalk-like texture softens the white marks against the dark board. The wooden frame rests on two angled easel legs."
+      },
+      "observations": [
+        "White chalk marks form an up arrow and UP on a black board.",
+        "A brown wooden frame and freestanding easel support the board."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-chalkboard-up-arrow.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-girl-pointing-up",
+      "status": "reviewed-from-image",
+      "sourceSha256": "6aee5abe3b536deb66043638aa34a0459de6e476507ba861b932f0e9fb897ec1",
+      "imageSha256": "6aee5abe3b536deb66043638aa34a0459de6e476507ba861b932f0e9fb897ec1",
+      "inputMetadataSha256": "8e8e094db4da1441a22895552b9453972a129d737590bd8ba4f7f6db9917d7c5",
+      "inputContextSha256": "b91d9bd1b88096cd52f5d146c395d913c4a7e8a654ae755e9f3737f59e7aefdb",
+      "copy": {
+        "title": "Girl in Yellow Pointing Up",
+        "alt": "Curly-haired cartoon girl in a yellow dress points toward a small yellow arrow above her finger.",
+        "description": "A yellow headband matches her dress, while blue stripes repeat on her shirt and socks. Her raised arm and upward gaze reinforce the direction."
+      },
+      "observations": [
+        "A curly-haired girl wears a yellow pinafore and striped blue shirt.",
+        "She points at a yellow arrow above her raised index finger."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-girl-pointing-up.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-boy-pointing-sky",
+      "status": "reviewed-from-image",
+      "sourceSha256": "d723c9ec675b0c546d5745f0f49c30b6d85b982fb7fd47e2804feaf6bdf1590d",
+      "imageSha256": "d723c9ec675b0c546d5745f0f49c30b6d85b982fb7fd47e2804feaf6bdf1590d",
+      "inputMetadataSha256": "0e85c9666e5f8014955abad1804c4b0e49d4ac99bfa6ec96792ae79087f59d98",
+      "inputContextSha256": "25c39fb5d41c883ac4be8053c5c3ff83bce06d643876d1cf1216ea6f1b17ffd5",
+      "copy": {
+        "title": "Boy in a Teal Hoodie Pointing Up",
+        "alt": "Brown-haired cartoon boy in a teal hoodie and jeans points toward a blue upward arrow.",
+        "description": "The boy tilts his face toward the arrow, with one arm stretched diagonally above his shoulder. White-trimmed sneakers complete the standing pose."
+      },
+      "observations": [
+        "A brown-haired boy wears a teal hoodie and blue jeans.",
+        "His raised finger and eyes face a blue arrow above him."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-boy-pointing-sky.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-teacher-up-gesture",
+      "status": "reviewed-from-image",
+      "sourceSha256": "80e5dd5e099236b28a03a7f6f9dbd1f81604ba41d075567598d8c1e8c6e6023f",
+      "imageSha256": "80e5dd5e099236b28a03a7f6f9dbd1f81604ba41d075567598d8c1e8c6e6023f",
+      "inputMetadataSha256": "3c7c479fd875abb238f91b11a880495689b44db52567516a7cbf87f03b204e4d",
+      "inputContextSha256": "3da5c40899054393cb4ba8b049b95628c25b4e93af736b9e3ad9b135f051626c",
+      "copy": {
+        "title": "Teacher Holding an Up Arrow Card",
+        "alt": "Silver-haired woman with glasses raises one finger while holding a card with a blue arrow and UP.",
+        "description": "The teacher wears a blue cardigan over a white top. Her raised finger repeats the direction printed on the white teaching card."
+      },
+      "observations": [
+        "A smiling silver-haired woman wears glasses and a blue cardigan.",
+        "She holds an UP card and raises her opposite index finger."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-teacher-up-gesture.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-child-climbing-stairs",
+      "status": "reviewed-from-image",
+      "sourceSha256": "e3e66bcc3ad51e74533debeededa9a08087f0efb6757da46f2534cb8c0013980",
+      "imageSha256": "e3e66bcc3ad51e74533debeededa9a08087f0efb6757da46f2534cb8c0013980",
+      "inputMetadataSha256": "d18cd91b54ccbe821c72a009ec2248dfc1cb886b153038c720d15938281d00fc",
+      "inputContextSha256": "b6a8d8501e7c697c4720a75b6eaea684adf096bde067f38bcebad5fa7b6c67df",
+      "copy": {
+        "title": "Child with a Backpack Climbing Steps",
+        "alt": "Red-haired cartoon child with an orange backpack climbs gray steps beside a green arrow.",
+        "description": "A green shirt and sneakers contrast with blue trousers and the orange backpack. The side view shows one foot advancing onto a higher step."
+      },
+      "observations": [
+        "A red-haired child with an orange backpack climbs a gray staircase.",
+        "A green curved arrow rises beside the child's green shirt."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-child-climbing-stairs.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-woman-stair-ascent",
+      "status": "reviewed-from-image",
+      "sourceSha256": "78cf909d6489b721a6b696ca4e8511acb334bff7ed8bda5d7f97d877a635b4b3",
+      "imageSha256": "78cf909d6489b721a6b696ca4e8511acb334bff7ed8bda5d7f97d877a635b4b3",
+      "inputMetadataSha256": "eb1a494d8f099d159f3671a36222d7f8bfcf5f0f9b142a6efed255a6de5b803a",
+      "inputContextSha256": "a762e20a0eef4f8e2d99ae11947521ce50b1ee91ad8f066bf06a95a8b14c2425",
+      "copy": {
+        "title": "Woman Walking Up a Staircase",
+        "alt": "Woman in a burgundy top and navy trousers walks up gray stairs beside a blue arrow.",
+        "description": "Her dark ponytail follows the upward stride. Blue heels and a diagonal arrow add direction to the clean side-view composition."
+      },
+      "observations": [
+        "A dark-haired woman with a ponytail steps upward on gray stairs.",
+        "She wears a burgundy top, navy trousers and blue heels."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-woman-stair-ascent.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-wheelchair-ramp-up",
+      "status": "reviewed-from-image",
+      "sourceSha256": "a62f50051c95bc825d6961cecbf2ae2811607673bec6f7dcbbf1b81fc20f7964",
+      "imageSha256": "a62f50051c95bc825d6961cecbf2ae2811607673bec6f7dcbbf1b81fc20f7964",
+      "inputMetadataSha256": "0034c191bfe79c43dc4c15741aaca1f4b5389372bfe841b38fed9671d883843c",
+      "inputContextSha256": "bd87b74d42241413d252dd2df565d7481408300d00d2bf905bfc43eb39efe463",
+      "copy": {
+        "title": "Wheelchair User Ascending a Ramp",
+        "alt": "Cartoon wheelchair user in a blue jacket moves up a gray ramp beside a blue arrow.",
+        "description": "The sloping ramp includes a silver handrail. A side view shows the large rear wheel, small front caster and the rider facing uphill."
+      },
+      "observations": [
+        "A dark-haired wheelchair user wears a blue jacket and dark trousers.",
+        "A gray ramp with a silver rail rises to the right beside a blue arrow."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-wheelchair-ramp-up.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-hands-reaching-up",
+      "status": "reviewed-from-image",
+      "sourceSha256": "30abb540f961615aa221ac736584fdffd5f4798b86c6b8f0dde41b17612e5f98",
+      "imageSha256": "30abb540f961615aa221ac736584fdffd5f4798b86c6b8f0dde41b17612e5f98",
+      "inputMetadataSha256": "1e62632b1be2cb9206ecccddf388006ed7246a33c4a95fcd31392b70dc066919",
+      "inputContextSha256": "5fa0ee0e620b540d2180f3c835483c44305a17ecd35865c723903126c9b8d320",
+      "copy": {
+        "title": "Children Reaching Up Together",
+        "alt": "Two smiling cartoon children reach both arms toward a blue upward arrow.",
+        "description": "One child wears a coral dress and twin braids; the other has blond hair and purple overalls. Their open hands stretch toward the arrow between them."
+      },
+      "observations": [
+        "A braided girl in a coral dress stands beside a blond child in purple overalls.",
+        "Both children raise their arms below a blue upward arrow."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-hands-reaching-up.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-man-looking-up",
+      "status": "reviewed-from-image",
+      "sourceSha256": "863d29403291b9b1e91e98ea7722afe5efdebba02d4e3ec8115a5e73bb33b07d",
+      "imageSha256": "863d29403291b9b1e91e98ea7722afe5efdebba02d4e3ec8115a5e73bb33b07d",
+      "inputMetadataSha256": "8735238c1ad02f979e8fd0708e49b9256d3f74e0a151d0da4b9c3cc671d06786",
+      "inputContextSha256": "fda38f20fb80a9f9b26cdaeb2ee419495123dfc9f65010efa733a1556c731152",
+      "copy": {
+        "title": "Man Looking toward an Up Arrow",
+        "alt": "Bearded man in a denim shirt and tan trousers looks up at a large blue arrow.",
+        "description": "The relaxed standing figure keeps both hands in his pockets. His tilted head directs attention to the bold arrow above his shoulder."
+      },
+      "observations": [
+        "A bearded man wears a blue denim shirt and tan trousers.",
+        "He looks upward with both hands resting in his pockets."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-man-looking-up.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-rabbit-pointing-up",
+      "status": "reviewed-from-image",
+      "sourceSha256": "38bc8c66d4296491158277219c433a37c8b6e6e3fba9b6bafbc4e74652187802",
+      "imageSha256": "38bc8c66d4296491158277219c433a37c8b6e6e3fba9b6bafbc4e74652187802",
+      "inputMetadataSha256": "a3abe61de754bbc4ce7a3b54940e81e5ac1faddae6f4ac2a6389f5f87ab9c0ec",
+      "inputContextSha256": "b8ee6934ff0c02a21f1081de74c181742fe93151dd380be66d8abb857794b2e8",
+      "copy": {
+        "title": "Rabbit Pointing toward a Green Arrow",
+        "alt": "Gray cartoon rabbit with pink ears and a green scarf points toward a green upward arrow.",
+        "description": "The rabbit smiles beneath its long ears, holding one paw close to its chest. Small green marks emphasize the arrow above the pointing paw."
+      },
+      "observations": [
+        "A gray rabbit with pink inner ears wears a green scarf.",
+        "One raised paw points toward a green up arrow and accent marks."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-rabbit-pointing-up.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-owl-upward-pointer",
+      "status": "reviewed-from-image",
+      "sourceSha256": "190256364be863883151201db2ea2663cdc20ea0d1725d6caf742cf79ad944a1",
+      "imageSha256": "190256364be863883151201db2ea2663cdc20ea0d1725d6caf742cf79ad944a1",
+      "inputMetadataSha256": "7f146dfc9fa3cc2fc97be2c6c5f06e084d132b260a14a03ca31d3c4030c66b2d",
+      "inputContextSha256": "a47b9ef2c2ba83c7ef2e9bf1bd8d933b02ebadfc0a22ef7615fcfb44021d14cb",
+      "copy": {
+        "title": "Owl Teaching the Up Direction",
+        "alt": "Brown owl in round glasses and a navy vest uses a pointer beside a green arrow on an easel.",
+        "description": "A red tie and gold vest buttons dress the owl as a cartoon teacher. Its wooden pointer rests against the arrow on the cream board."
+      },
+      "observations": [
+        "A brown owl wears round glasses, a navy vest and a red tie.",
+        "The owl points a wooden stick at a green arrow on a framed easel."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-owl-upward-pointer.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-balloon-rising",
+      "status": "reviewed-from-image",
+      "sourceSha256": "5157bdbf99e37b645777fadc31e4f9ae61225ce806f7f390f1ca8dc7b17ab730",
+      "imageSha256": "5157bdbf99e37b645777fadc31e4f9ae61225ce806f7f390f1ca8dc7b17ab730",
+      "inputMetadataSha256": "05ae99cc6fa05fd34fd6a7418c109326729fb1da0b9d6ec4ac2d021fc43ed1dc",
+      "inputContextSha256": "76bee6f6023defa014a7678294c5ebaa9b57232f85ef45f60c6b1bed7c219c62",
+      "copy": {
+        "title": "Red Balloon Rising above a Hand",
+        "alt": "Glossy red-orange balloon floats above a blue-cuffed hand beside a dotted blue up arrow.",
+        "description": "A loose blue string curls between the balloon and hand. The small dotted arrow echoes the balloon's upward movement."
+      },
+      "observations": [
+        "A shiny red-orange balloon floats above an open hand.",
+        "A blue string and dotted upward arrow extend through the lower space."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-balloon-rising.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-kite-climbing-wind",
+      "status": "reviewed-from-image",
+      "sourceSha256": "f5b73f60be02283be0f67abcac2435d3d68bbc0536468083a605cbc766c076ef",
+      "imageSha256": "f5b73f60be02283be0f67abcac2435d3d68bbc0536468083a605cbc766c076ef",
+      "inputMetadataSha256": "f77ff437dd3ce058ad49a82fe7d967e2fc60e72d4bda7fad784bbe479362b75c",
+      "inputContextSha256": "c7b36415eb8e93320cf536385c844dffc3ba67a42fd322900cf2a18329d31c36",
+      "copy": {
+        "title": "Kite Climbing into the Wind",
+        "alt": "Red, yellow, blue and green diamond kite rises above two hands holding its line and reel.",
+        "description": "A long tail of colored ties hangs from the kite. The curved blue arrow follows its ascent, while the separate hands manage the taut string below."
+      },
+      "observations": [
+        "A four-color diamond kite has a long tail with small colored ties.",
+        "Two blue-cuffed hands hold the string and red reel beneath a curved blue arrow."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-kite-climbing-wind.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-rocket-lifting-up",
+      "status": "reviewed-from-image",
+      "sourceSha256": "dbabdb85c27fcface2b26cafbe19c4255e7290086f12b3c5418ba6d593a6af5f",
+      "imageSha256": "dbabdb85c27fcface2b26cafbe19c4255e7290086f12b3c5418ba6d593a6af5f",
+      "inputMetadataSha256": "f9a71572a85305a273ef0ed2208666985525d102bdae0bab53cc25905c2511c3",
+      "inputContextSha256": "4b1e06a7111169610ff22a891c74fe7b42d5df4aea594e8101ced89224913699",
+      "copy": {
+        "title": "Cartoon Rocket Launching Upward",
+        "alt": "Red-and-white rocket with a blue window rises on an orange flame beside a green arrow.",
+        "description": "Rounded smoke clouds collect below the rocket's small launch base. Red fins and nose cone frame the white body in this playful space illustration."
+      },
+      "observations": [
+        "A white cartoon rocket has a red nose, red fins and a blue circular window.",
+        "Orange exhaust and gray smoke sit below, with a green up arrow alongside."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-rocket-lifting-up.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-paper-plane-climb",
+      "status": "reviewed-from-image",
+      "sourceSha256": "b981e8cc0063f4ea08db688f2f5b6f2cc9980aeb9abd3dfa60ae97a4d8274df1",
+      "imageSha256": "b981e8cc0063f4ea08db688f2f5b6f2cc9980aeb9abd3dfa60ae97a4d8274df1",
+      "inputMetadataSha256": "46a73f47279b610f4986c8bf44dcb9dcb668f1ebc6ce8374a34168794cd1b162",
+      "inputContextSha256": "9039be159f3981fc283fc486d01ae04c7f7c553be08205a8c86a4530377bd1f9",
+      "copy": {
+        "title": "Paper Airplane on an Ascending Path",
+        "alt": "Blue-and-white paper airplane follows a curved dotted path toward the upper right.",
+        "description": "The folded plane sits above the looping blue trail. A small arrowhead at the end of the dashed line marks its climbing route."
+      },
+      "observations": [
+        "A folded white paper airplane has blue shaded panels.",
+        "A dashed blue route curves upward toward the plane and ends in an arrowhead."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-paper-plane-climb.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-bird-taking-flight",
+      "status": "reviewed-from-image",
+      "sourceSha256": "92790f1cca908e6cdc4185f11edc2048fcf9219b4606d8a274d5a902d57af70c",
+      "imageSha256": "92790f1cca908e6cdc4185f11edc2048fcf9219b4606d8a274d5a902d57af70c",
+      "inputMetadataSha256": "de5cad07b561fbfeca6977b25e98e59f2b1b197164f26954c033c7e4ccd470c2",
+      "inputContextSha256": "f0ac3a156023df9dadb59a68850cd990ab472cb7b50967b0f21d79d5c9eeb627",
+      "copy": {
+        "title": "Blue Bird Taking Flight",
+        "alt": "Blue songbird spreads its wings above a leafy twig beside a curved upward arrow.",
+        "description": "A white breast and yellow beak brighten the small bird. The rising arrow follows the lift from the twig into open space."
+      },
+      "observations": [
+        "A blue bird with a white chest and yellow beak spreads its wings.",
+        "A leafy twig lies below and a curved blue arrow rises beside it."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-bird-taking-flight.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-hot-air-balloon-ascent",
+      "status": "reviewed-from-image",
+      "sourceSha256": "1e250624ca9783d23f5629e402082e997e8d0fe7bf37a7f5822b16661e04147c",
+      "imageSha256": "1e250624ca9783d23f5629e402082e997e8d0fe7bf37a7f5822b16661e04147c",
+      "inputMetadataSha256": "6a17850b80fde0a5d5dae36111de2ebeffbdc5593673c3adf788f911c7dd2f4f",
+      "inputContextSha256": "3fcbcd3bce418e2dee617f3c35a5a587d84ae460291089f88333122d2925c780",
+      "copy": {
+        "title": "Hot-Air Balloon Rising with a Passenger",
+        "alt": "Red, white and blue hot-air balloon carries a small passenger above a blue up arrow.",
+        "description": "The striped balloon tapers toward suspension ropes and a wicker basket. A child's face peeks over the basket rim."
+      },
+      "observations": [
+        "A striped red, white and blue balloon suspends a wicker basket.",
+        "A small passenger is visible above the basket with an up arrow beneath."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-hot-air-balloon-ascent.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-bubbles-floating-up",
+      "status": "reviewed-from-image",
+      "sourceSha256": "982cafd74049881f8b3d6d30224cb97df4ac68ff387d81b5c11c97e685419ad0",
+      "imageSha256": "982cafd74049881f8b3d6d30224cb97df4ac68ff387d81b5c11c97e685419ad0",
+      "inputMetadataSha256": "b70cb2c352bb09e0b7697a0c0634a634e287789c4cece3d17b3fa3893ac0a695",
+      "inputContextSha256": "651921110e76b9f3430abde883d7789ab77c0b887661067678f7a28888c7c596",
+      "copy": {
+        "title": "Bubbles Floating Up from a Wand",
+        "alt": "Hand holds a blue bubble wand beneath rising rainbow-tinted bubbles and a blue arrow.",
+        "description": "Large and small bubbles form a loose vertical trail above the ring. The curved arrow runs alongside them to show their upward movement."
+      },
+      "observations": [
+        "A hand holds a blue bubble wand below a trail of translucent rainbow bubbles.",
+        "A long blue arrow curves upward beside the bubbles."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-bubbles-floating-up.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-steam-rising-mug",
+      "status": "reviewed-from-image",
+      "sourceSha256": "77076e9bbbe7a9b8013f9e9eed7ccdcfa39255528d3ccc521b7ba2d5e96b3aa1",
+      "imageSha256": "77076e9bbbe7a9b8013f9e9eed7ccdcfa39255528d3ccc521b7ba2d5e96b3aa1",
+      "inputMetadataSha256": "621cd62ff6723e2c3f3cfc027ebfb740b5a1f9e687611ba820c178738221c31f",
+      "inputContextSha256": "cbdff2f8a54a4f0579b6a7dd8ee5bc58f2dd3d8eb5d65c3ca33fb83af4d82b06",
+      "copy": {
+        "title": "Steam Rising from a Striped Mug",
+        "alt": "Cream mug with blue bands and dark drink gives off curls of steam beside a green arrow.",
+        "description": "The rounded handle sits on the left of the cup. Gray steam rises above the rim while the broad arrow emphasizes the same upward direction."
+      },
+      "observations": [
+        "A cream mug has two blue bands, a left-hand handle and a dark drink.",
+        "Gray steam curls rise beside a thick green up arrow."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-steam-rising-mug.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-plant-reaching-sun",
+      "status": "reviewed-from-image",
+      "sourceSha256": "82dc9b48cafbd392d06e4f278f45c37dbcbe5345fcaf07f387da18fd06bb4a8c",
+      "imageSha256": "82dc9b48cafbd392d06e4f278f45c37dbcbe5345fcaf07f387da18fd06bb4a8c",
+      "inputMetadataSha256": "42410ee3e724f3cbd30c39de9ccacda18b4dc56ba6b0f2645bfb83ce9299ec3b",
+      "inputContextSha256": "98b6bd89a0b20cf9179f301012bc6509096904cee80b16a4068f418373ed3721",
+      "copy": {
+        "title": "Sunflower Growing toward the Sun",
+        "alt": "Potted sunflower reaches upward beside a green arrow and a small smiling sun.",
+        "description": "Broad leaves flank the tall stem above a terracotta pot. The yellow bloom and sun create two bright points at the top of the drawing."
+      },
+      "observations": [
+        "A yellow sunflower grows in a terracotta pot with broad green leaves.",
+        "A green arrow rises alongside, with a smiling yellow sun above."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-plant-reaching-sun.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-water-jet-up",
+      "status": "reviewed-from-image",
+      "sourceSha256": "97d9f8e4b65bb5ea6d9beeb2e3afa1ccd86811a1bd76b212bf4e8ad83b047427",
+      "imageSha256": "97d9f8e4b65bb5ea6d9beeb2e3afa1ccd86811a1bd76b212bf4e8ad83b047427",
+      "inputMetadataSha256": "81cf9ee8881682a8f8788fbb68d510b5f79a0b618705b272071cfadfe5ab5161",
+      "inputContextSha256": "c914e7f8fe2b61b5a34743de38957e06b977a8b05ebecb05154689b7d5daf122",
+      "copy": {
+        "title": "Water Jet Rising from a Garden Fountain",
+        "alt": "Pale stone garden fountain sends water upward beside a blue arrow and green plants.",
+        "description": "The central jet curves outward into falling streams above the basin. Low leafy plants surround the fountain's base."
+      },
+      "observations": [
+        "A pale stone fountain is surrounded by compact green plants.",
+        "A tall blue water jet rises and curves down beside an upward arrow."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-water-jet-up.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-up-word-foam-blocks",
+      "status": "reviewed-from-image",
+      "sourceSha256": "9463a8832810f9f287464b47962db01dafb8042194bf64637a374e3d93da358f",
+      "imageSha256": "9463a8832810f9f287464b47962db01dafb8042194bf64637a374e3d93da358f",
+      "inputMetadataSha256": "6a99f0a241c931d70589ab25e99f1d6ffc7b49fe2b01a5fe7ae28644a332dc3a",
+      "inputContextSha256": "0c9db6c5aa557ea165ab547546065c5bb5d3550e2f7abe0f7675d139e12dd045",
+      "copy": {
+        "title": "Hands Holding Colorful Up Letters",
+        "alt": "Two blue-cuffed hands hold blue U and red P letters below a yellow upward arrow.",
+        "description": "The large rounded letters overlap at their inner edges. Bright yellow rays emphasize the tall arrow rising behind them."
+      },
+      "observations": [
+        "Two hands in blue cuffs hold separate blue U and red P letters.",
+        "A tall yellow arrow with small accent rays rises behind the letters."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-up-word-foam-blocks.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-way-up-signpost",
+      "status": "reviewed-from-image",
+      "sourceSha256": "e777783e8f5ee3a0f36bcc02b927d7eccda1347ee5b737cc1dade6635950e763",
+      "imageSha256": "e777783e8f5ee3a0f36bcc02b927d7eccda1347ee5b737cc1dade6635950e763",
+      "inputMetadataSha256": "a396e726ea101c2c2adbe76c3411e5aaf8453b52e41af1f58df8e3f56102eb33",
+      "inputContextSha256": "265213e89e1998e40abb52e5326ec3dd64b71dc923f212e16525e275e8f40631",
+      "copy": {
+        "title": "Way Up Hiking Signpost",
+        "alt": "Wooden WAY UP sign with an upward arrow stands beside a hiking boot, stones and grass.",
+        "description": "The orange-laced boot leans against the post beneath the horizontal sign. Wood grain and small fasteners add detail to the outdoor marker."
+      },
+      "observations": [
+        "A wooden sign reads WAY UP with a dark upward arrow.",
+        "An orange-laced hiking boot, rocks and grass cluster at the post's base."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-way-up-signpost.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-upstairs-door-sign",
+      "status": "reviewed-from-image",
+      "sourceSha256": "8f157660bb667ed2d3f98131724fe17c601356a9aa50175c673131dc9f4a3cab",
+      "imageSha256": "8f157660bb667ed2d3f98131724fe17c601356a9aa50175c673131dc9f4a3cab",
+      "inputMetadataSha256": "0d3607cecbe14fef017bb78ba63c95a6d7e93e3bce4b163445b0a61851d1312e",
+      "inputContextSha256": "c626930d90714632a960e768b033a2fa3b565c291c67f148356e2f6046016954",
+      "copy": {
+        "title": "Hanging Upstairs Sign",
+        "alt": "Cream hanging sign shows a stair-climbing figure, blue up arrow and the word UPSTAIRS.",
+        "description": "Two short chains suspend the black-edged sign from a wall bracket. The stair pictogram sits to the left of the arrow."
+      },
+      "observations": [
+        "A rectangular sign hangs from two chains on a dark wall bracket.",
+        "Its face carries a stair pictogram, blue up arrow and UPSTAIRS lettering."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-upstairs-door-sign.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-this-way-up-box",
+      "status": "reviewed-from-image",
+      "sourceSha256": "0d1cbc4a376aa5264d15c1efd1f6963bcaa7769c8170a81e355fcb1d4609855e",
+      "imageSha256": "0d1cbc4a376aa5264d15c1efd1f6963bcaa7769c8170a81e355fcb1d4609855e",
+      "inputMetadataSha256": "9bce1045648941e3ec198fd77df8cc7d025d3f0437e8adc380862c392b5f428f",
+      "inputContextSha256": "a61e2cd22d10a4ce9316f06bf25da0f36bf04457d3d14fdb17f05a78a4bd60bf",
+      "copy": {
+        "title": "This Way Up Shipping Box",
+        "alt": "Sealed brown cardboard box bears two upward arrows and THIS WAY UP handling text.",
+        "description": "A strip of tan tape crosses the top seam. The front panel's dark arrows and underlined base indicate the box's upright orientation."
+      },
+      "observations": [
+        "A taped cardboard carton is shown in three-quarter view.",
+        "Two black up arrows and THIS WAY UP appear on its front panel."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-this-way-up-box.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-up-speech-bubble",
+      "status": "reviewed-from-image",
+      "sourceSha256": "183ceb917943a225ded5d048c605daad31d8e7a6a0c3cfa289741578a53acb42",
+      "imageSha256": "183ceb917943a225ded5d048c605daad31d8e7a6a0c3cfa289741578a53acb42",
+      "inputMetadataSha256": "3a52828ebfc483fa19efcdfe8d971780862a62e13429a9f859cc5f88310ec6bf",
+      "inputContextSha256": "c6d73fa4713227c6756c88db27f88dafed2f8bd1c641a3e9349b030672f46716",
+      "copy": {
+        "title": "Boy Pointing beneath an Up Speech Bubble",
+        "alt": "Cartoon boy in a blue shirt points at an UP speech bubble below a yellow arrow.",
+        "description": "The smiling child looks toward his raised finger. Red-and-white sneakers add a small color accent beneath his navy trousers."
+      },
+      "observations": [
+        "A brown-haired boy in a blue T-shirt points upward.",
+        "A white speech bubble reads UP beneath a separate yellow arrow."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-up-speech-bubble.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-level-up-game-badge",
+      "status": "reviewed-from-image",
+      "sourceSha256": "ef81581c9c8d6b6f04f505628f9b3cf261db975f42de6e69ed95ff47c66c167e",
+      "imageSha256": "ef81581c9c8d6b6f04f505628f9b3cf261db975f42de6e69ed95ff47c66c167e",
+      "inputMetadataSha256": "b470ef4c6cf508f29431d6aa9e9a60cfc8bc34388553fb40fde783c0ab7eac98",
+      "inputContextSha256": "c1fecd27268eadbd220fff7588214950cf2833558113e66115a12b6d090c7ead",
+      "copy": {
+        "title": "Level Up Star Badge",
+        "alt": "Blue circular badge with a green upward arrow, gold star and LEVEL UP ribbon.",
+        "description": "The arrow rises through the center toward a faceted star. A navy-edged blue ribbon carries the white lettering across the badge's lower edge."
+      },
+      "observations": [
+        "A gold star sits above a green arrow on a layered blue badge.",
+        "A curved ribbon across the bottom reads LEVEL UP in white."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-level-up-game-badge.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-heads-up-reminder",
+      "status": "reviewed-from-image",
+      "sourceSha256": "665defc85a598e85378c9e94e5c3d4db8b8e560b4a75a4d5cabf74385bd1d728",
+      "imageSha256": "665defc85a598e85378c9e94e5c3d4db8b8e560b4a75a4d5cabf74385bd1d728",
+      "inputMetadataSha256": "5c86b3815f99d81a87f2b87abd2a5ba816633aa281a2fa63c9fb83ea0a78a54a",
+      "inputContextSha256": "545efe2ee91547fae3fe68229f0ac528002067e14d488126994f1a3a9bf4e578",
+      "copy": {
+        "title": "Boy Holding a Heads Up Reminder",
+        "alt": "Smiling boy in a blue hoodie points toward a HEADS UP sign with a blue arrow.",
+        "description": "The small sign sits on a wooden handle beside the child's face. His upward gaze follows the printed arrow and stacked reminder text."
+      },
+      "observations": [
+        "A brown-haired boy in a blue hoodie looks toward a small hand-held sign.",
+        "The blue-edged sign reads HEADS UP above an upward arrow."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-heads-up-reminder.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-stand-up-classroom",
+      "status": "reviewed-from-image",
+      "sourceSha256": "f2d064a570539911270614e56a6746bea921592c88b41574b504e372fe9c51ae",
+      "imageSha256": "f2d064a570539911270614e56a6746bea921592c88b41574b504e372fe9c51ae",
+      "inputMetadataSha256": "d124458fc950c64750df9c6ee2e46e9ea9580e1eea625352674fcc7f3202e46e",
+      "inputContextSha256": "8edc9ed398f7719321391d863ee18b933fd11d921a69ccf76d253cb6f644c803",
+      "copy": {
+        "title": "Boy Standing Up from a Chair",
+        "alt": "Cartoon boy in a blue hoodie stands beside a classroom chair and a green STAND UP marker.",
+        "description": "His hands hang beside his trousers as he rises in front of the wooden seat. The green arrow and outlined label clarify the action."
+      },
+      "observations": [
+        "A boy in a blue hoodie stands directly in front of a wooden classroom chair.",
+        "A green upward arrow appears over the separate STAND UP label."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-stand-up-classroom.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-climb-up-ladder",
+      "status": "reviewed-from-image",
+      "sourceSha256": "84c14f8dec363046b61c0e7fed784c33efa968a1e8311f0212c7596d17bfd439",
+      "imageSha256": "84c14f8dec363046b61c0e7fed784c33efa968a1e8311f0212c7596d17bfd439",
+      "inputMetadataSha256": "31636cd4fb98cf9e792e0d5394bccb299d0917c2c6741445508e06784701de39",
+      "inputContextSha256": "0d4c58763eb9a1ac9ec4b91463b29c74f574f8370c0b07ea469dd9679a7243c1",
+      "copy": {
+        "title": "Squirrel Climbing to a Climb Up Sign",
+        "alt": "Orange-brown squirrel climbs a wooden ladder beside a CLIMB UP sign and green arrow.",
+        "description": "Its large curled tail balances the climbing pose. The ladder leans against the signpost above a small patch of grass."
+      },
+      "observations": [
+        "An orange-brown squirrel climbs a wooden ladder with a broad curled tail.",
+        "The wooden sign reads CLIMB UP beside a green arrow."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-climb-up-ladder.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-up-and-away-plane",
+      "status": "reviewed-from-image",
+      "sourceSha256": "1fbfcf0bd582b5c826deb63bccf373105f456dc891f8b5eaccdca298a6a23d1d",
+      "imageSha256": "1fbfcf0bd582b5c826deb63bccf373105f456dc891f8b5eaccdca298a6a23d1d",
+      "inputMetadataSha256": "a2e6c292a9056822b0fe3a2eaf6156b4f7a6b3fa1fdc1efebcbf15636e2583d6",
+      "inputContextSha256": "28c02b34ce6a64124d7363870e4bb320e5f08864e8ed6fb1d883aac8d8f11f93",
+      "copy": {
+        "title": "Up and Away Cartoon Airplane",
+        "alt": "Red cartoon airplane climbs above UP AND AWAY lettering and a curved yellow arrow.",
+        "description": "A smiling pilot with goggles sits in the blue cockpit. The yellow arrow curves toward the aircraft, linking the stacked words to the climbing flight."
+      },
+      "observations": [
+        "A red propeller plane carries a cartoon pilot with goggles and a scarf.",
+        "The words UP AND AWAY sit below beside a curved yellow arrow."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-up-and-away-plane.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-outline-pointing-hand",
+      "status": "reviewed-from-image",
+      "sourceSha256": "18f6ceb978655295b84e208dd3fd5d7c767739647bad7b612758089cb6c69e3d",
+      "imageSha256": "18f6ceb978655295b84e208dd3fd5d7c767739647bad7b612758089cb6c69e3d",
+      "inputMetadataSha256": "0e3419af7c3d5a8d8e9dc4d36c83a4be4b7d0a010d894d4c3da47b9bffabec71",
+      "inputContextSha256": "de7311dce30fcb84121478ed1d5525eec1666ed86aec27f70d52b7f77adbd9ea",
+      "copy": {
+        "title": "Pointing Up Hand Outline",
+        "alt": "Black-and-white hand outline with its index finger pointing straight upward.",
+        "description": "Fine creases mark the raised finger, curled knuckles and palm. The wrist ends in a clean curved edge below the hand."
+      },
+      "observations": [
+        "An outlined hand raises its index finger while the other fingers curl inward.",
+        "Thin lines mark the palm and joints above a short wrist."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-outline-pointing-hand.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-outline-stair-climber",
+      "status": "reviewed-from-image",
+      "sourceSha256": "9f9307634015fcabe451f0846a35f72bdfc3251bb7fcbb2393315e79cbd72e67",
+      "imageSha256": "9f9307634015fcabe451f0846a35f72bdfc3251bb7fcbb2393315e79cbd72e67",
+      "inputMetadataSha256": "11438b6c0a5315221bca839711da51ae31169ffb68d2cd0cac338bc22677009f",
+      "inputContextSha256": "1c29c7e4eddb3d7d7172548c1a993040d7469081f0e3e09258ffb519b3dc3c7d",
+      "copy": {
+        "title": "Child Climbing Steps Outline",
+        "alt": "Black-and-white cartoon child climbs three steps toward a large upward arrow.",
+        "description": "The side-view child lifts one knee above the lower step. Open white shapes and clear dark contours distinguish the figure from the stair blocks."
+      },
+      "observations": [
+        "A short-haired child in a T-shirt and shorts climbs outlined steps.",
+        "A large hollow upward arrow stands above the staircase."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-outline-stair-climber.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-outline-elevator-sign",
+      "status": "reviewed-from-image",
+      "sourceSha256": "6126153c45bd8b58749d292fc85e223c0226f9f7e5a5670f0358257c2f0a3d88",
+      "imageSha256": "6126153c45bd8b58749d292fc85e223c0226f9f7e5a5670f0358257c2f0a3d88",
+      "inputMetadataSha256": "e824939ab4b4ad5a9a78520e79e8b9ce4132d9e43bf4df89be8bbba172aa19eb",
+      "inputContextSha256": "1b4b520e76bdb6b2d6c108f7be83a30a1f582670ac872321e5ff35cbd06d3fed",
+      "copy": {
+        "title": "Elevator and Up Arrow Outline",
+        "alt": "Black-and-white closed elevator doors with an up arrow above and call buttons beside them.",
+        "description": "A double-line frame surrounds the two elevator panels. The small button plate repeats the up and down direction symbols."
+      },
+      "observations": [
+        "Two closed elevator doors sit inside a rectangular outlined frame.",
+        "A hollow up arrow is centered above, with a small call panel to the right."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-outline-elevator-sign.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-outline-rising-balloon",
+      "status": "reviewed-from-image",
+      "sourceSha256": "fc4e9ec370b1420717d5c6aa8673bdf9d3a7d5ec6efbcdfbd241910bbb9d5ebf",
+      "imageSha256": "fc4e9ec370b1420717d5c6aa8673bdf9d3a7d5ec6efbcdfbd241910bbb9d5ebf",
+      "inputMetadataSha256": "50114a20b7e41b0d6a2967bf40cf0577ec032963ce0bd37b51b574450d137e98",
+      "inputContextSha256": "06a2ac05d3425b73aa9af4f5005ed7eddbdb43e272d8352be63d5c29ba817693",
+      "copy": {
+        "title": "Rising Balloon Outline",
+        "alt": "Black-and-white balloon with a curling string and an upward arrow beside it.",
+        "description": "Two small highlight shapes sit inside the balloon's upper curve. Short motion strokes reinforce its rise."
+      },
+      "observations": [
+        "A single outlined balloon has a knot and long curling string.",
+        "A hollow upward arrow and short movement marks sit beside it."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-outline-rising-balloon.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-outline-up-word",
+      "status": "reviewed-from-image",
+      "sourceSha256": "6e3f85d3f18bb8f5dddb6be509cb3113cf109ff1998d42b121eff51bf233ca9a",
+      "imageSha256": "6e3f85d3f18bb8f5dddb6be509cb3113cf109ff1998d42b121eff51bf233ca9a",
+      "inputMetadataSha256": "6949cd2f469c8a169cb5014c808a20161e27035cfcb7cf883a0e8201bc5e5bb0",
+      "inputContextSha256": "982a0995ffad0f36eed7f706c49387f8febb40d686562b64530819ea68620a77",
+      "copy": {
+        "title": "Up Lettering with Stair Arrow Outline",
+        "alt": "Black-and-white UP lettering beside a staircase-shaped arrow climbing to the right.",
+        "description": "The hollow block letters sit above the lower stair edges. A broad arrowhead finishes the rising stepped path."
+      },
+      "observations": [
+        "Large hollow letters spell UP on the left.",
+        "An outlined staircase rises toward a broad upward arrowhead on the right."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-outline-up-word.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-outline-cloud-upload",
+      "status": "reviewed-from-image",
+      "sourceSha256": "934332d50d7d17a957e4eeca0b76c37150b965fed34334949c56118e33cf9dec",
+      "imageSha256": "934332d50d7d17a957e4eeca0b76c37150b965fed34334949c56118e33cf9dec",
+      "inputMetadataSha256": "2284cf8bb493cfa8c56dd3fdc9f96a623547bf334a48b35f0d1390534730316f",
+      "inputContextSha256": "71e30eabf3758b949cb67a875b9af25bec51fbbbc520e499373085727c5df053",
+      "copy": {
+        "title": "Cloud Upload Laptop Outline",
+        "alt": "Black-and-white laptop beneath a cloud with a tall upward upload arrow.",
+        "description": "The arrow passes from the open screen toward the cloud. Bold contours keep the cloud, keyboard base and arrow easy to separate."
+      },
+      "observations": [
+        "A thick outlined cloud sits above an open laptop.",
+        "A long hollow arrow rises from the screen into the cloud."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-outline-cloud-upload.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-upward-progress-chart",
+      "status": "reviewed-from-image",
+      "sourceSha256": "22f2cb55ddb21975e2e9ff305c0b0c698703916257e03667da505eef1c9212bc",
+      "imageSha256": "22f2cb55ddb21975e2e9ff305c0b0c698703916257e03667da505eef1c9212bc",
+      "inputMetadataSha256": "59d3bcd12ac399935b7011dc161e5b714537bb43bea5a157c4784def5e176575",
+      "inputContextSha256": "3b20cf09946fbc5569f4d11db30d45a2c8aedde28b7fcef381177eaf33c7624a",
+      "copy": {
+        "title": "Rising Blue Bar Chart",
+        "alt": "Three blue bars increase in height beneath a curved green upward arrow.",
+        "description": "The columns share a baseline but step from short to tall. Dark blue side faces give them a simple dimensional appearance."
+      },
+      "observations": [
+        "Three blue rectangular bars rise in height from left to right.",
+        "A curved green arrow sweeps upward above the columns."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-upward-progress-chart.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-book-page-up",
+      "status": "reviewed-from-image",
+      "sourceSha256": "db58991900adb303bce4a16bbaec3b6d7a1daee2d8ff74d746961432d1e7c48a",
+      "imageSha256": "db58991900adb303bce4a16bbaec3b6d7a1daee2d8ff74d746961432d1e7c48a",
+      "inputMetadataSha256": "2a6b743dd13b54f893c38b7eecaca86bdf3badedd085b295cec62714dc4e6be7",
+      "inputContextSha256": "25cb97f479ae3d84944828d7f6cbcd410b33ed487e3486ea46a4f798684222fd",
+      "copy": {
+        "title": "Open Book with an Upward Arrow",
+        "alt": "Two blue-cuffed hands hold an open blue book as a yellow arrow rises between its pages.",
+        "description": "Cream page edges fan outward above the covers. The bright arrow emerges near the center fold without covering the hands."
+      },
+      "observations": [
+        "Two hands in blue cuffs hold an open blue hardback book.",
+        "A yellow upward arrow emerges above the cream pages at the center."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-book-page-up.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-mountain-trail-up",
+      "status": "reviewed-from-image",
+      "sourceSha256": "c4271a47fd19dddbad19063ce5348f86c3920ce036c7796963512381d59e6014",
+      "imageSha256": "c4271a47fd19dddbad19063ce5348f86c3920ce036c7796963512381d59e6014",
+      "inputMetadataSha256": "ac26baa059533a4b3c0d25dcf341ae69f5232ced9eeaf0a5c1de489faea99c0f",
+      "inputContextSha256": "3b2eb7af645413eb35d186f721d118b6d3415a86d681b570b92e5daa7e8e032e",
+      "copy": {
+        "title": "Mountain Trail Leading Up to a Flag",
+        "alt": "Winding tan trail climbs a green and gray mountain toward a red summit flag beside a blue arrow.",
+        "description": "Small trees flank the lower slope. The broad blue arrow follows the mountain's left side while the narrow path zigzags toward the peak."
+      },
+      "observations": [
+        "A tan path winds through a green and gray rocky mountain.",
+        "A red summit flag and long curved blue arrow emphasize the ascent."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-mountain-trail-up.webp",
+      "references": []
+    },
+    {
+      "id": "up-direction-up-direction-compass",
+      "status": "reviewed-from-image",
+      "sourceSha256": "1393763f06df06d2ff475c2164ea347369c7605b417dac72ddc94ef6caff921e",
+      "imageSha256": "1393763f06df06d2ff475c2164ea347369c7605b417dac72ddc94ef6caff921e",
+      "inputMetadataSha256": "5efc89681cee863ad93db5c7307ae7b63ef1167a6ed36be147fa29fd96bfb404",
+      "inputContextSha256": "4ec535a0a4b9b7d7d796beb24ab3afc786c9a2f3ecb4650e3c5ee71fa94a342c",
+      "copy": {
+        "title": "Hands Holding an Up Direction Card",
+        "alt": "Two hands hold a blue-bordered white card showing UP and a blue upward arrow.",
+        "description": "The rectangular teaching card fills the center between two blue cuffs. Dark lettering above the arrow keeps the word and direction together."
+      },
+      "observations": [
+        "Two blue-cuffed hands hold the lower sides of a white rectangular card.",
+        "The blue-bordered card shows black UP text above a blue arrow."
+      ],
+      "reviewedAt": "2026-10-29T09:21:34.833955+00:00",
+      "inspectedImage": "/catalog/wave_701/up-direction-up-direction-compass.webp",
+      "references": []
     }
   ]
 }

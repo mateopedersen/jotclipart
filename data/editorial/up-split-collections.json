@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "topics": {
+    "up-movie": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "59e88abba6e08a9630ffbde905b7b6c5275223652605fa5ee917a6312a3a8f1f",
+      "checkedAt": "2026-10-29T09:03:13.464Z",
+      "intro": "Up Movie illustrations include the balloon-lifted house, Kevin, young Ellie and the dog pack. Adventure books, camping gear, flying objects and familiar keepsakes accompany the film characters in color and black-and-white drawings.",
+      "evidence": [
+        {
+          "id": "up-adventure-living-room-mantel-clipart",
+          "imageSha256": "c371bfec7d437505d51654e713c311c678bcd535f892f27ce8ddf40c08b534d9"
+        },
+        {
+          "id": "up-adventure-route-map-black-white-clipart",
+          "imageSha256": "8feea6f0e79a2c557aa7f41db13f6e31a167638ef4145bc574cbeadb56cadb32"
+        },
+        {
+          "id": "up-adventure-savings-jar-clipart",
+          "imageSha256": "e90191d99f854782b653421f04eb5e32bbcfbd09776ec02e076dc864097f4d4c"
+        }
+      ]
+    },
+    "up": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "75059dc34cfca652b42d4a51646952e88b2f58e689642a98b84e82ee6b028d96",
+      "checkedAt": "2026-10-29T09:36:05.805Z",
+      "intro": "Up arrows, pointing hands and stair-climbing characters show direction and movement. Choose road signs, classroom word cards, rising balloons, upload symbols or black-and-white outlines; the collection also includes a wheelchair ramp, a growing sunflower and an ascending mountain trail.",
+      "evidence": [
+        {
+          "id": "up-direction-upward-direction-road-sign",
+          "imageSha256": "61df77e2e99ed745269e26092ae5678a91336741c21b0c45e148bdf1590f6044"
+        },
+        {
+          "id": "up-direction-wheelchair-ramp-up",
+          "imageSha256": "a62f50051c95bc825d6961cecbf2ae2811607673bec6f7dcbbf1b81fc20f7964"
+        },
+        {
+          "id": "up-direction-outline-pointing-hand",
+          "imageSha256": "18f6ceb978655295b84e208dd3fd5d7c767739647bad7b612758089cb6c69e3d"
+        }
+      ]
+    }
+  }
+}

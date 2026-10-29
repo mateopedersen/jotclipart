@@ -5,6 +5,7 @@ import { validateEditorSource } from '../src/lib/artwork-source.ts';
 import { validateBatch } from './r2/plan.mjs';
 import { replacementFor, mergeGeneratedWave } from './replacement-contract.mjs';
 import { validateIdentification } from './identification-review.mjs';
+import { generatedCatalogStyle } from './generated-catalog-style.mjs';
 import { generatedPrintMetadata } from './generated-print-metadata.mjs';
 
 const root = resolve(import.meta.dirname, '..');
@@ -81,7 +82,7 @@ for (const row of report.artworks) {
     alt: meta.alt,
     description: meta.description,
     color: meta.color,
-    style: meta.style,
+    style: generatedCatalogStyle(meta.style),
     width: row.width,
     height: row.height,
     orientation:

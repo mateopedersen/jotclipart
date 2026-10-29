@@ -2713,12 +2713,12 @@
   },
   {
     "id": 502,
-    "keyword": "Up clipart",
-    "slug": "up",
+    "keyword": "Up Movie clipart",
+    "slug": "up-movie",
     "cluster": "Arts & entertainment",
     "wave": "OWNER_COLLECTION",
     "target_original_artworks": 50,
-    "focus_note": "Up-inspired artwork includes Kevin, the dog pack, young Ellie, the balloon house and familiar adventure keepsakes. Camping tools, travel objects and decorative flying scenes accompany the recognizable film subjects.",
+    "focus_note": "Up Movie illustrations include the balloon-lifted house, Kevin, young Ellie and the dog pack. Adventure books, camping gear, flying objects and familiar keepsakes accompany the film characters in color and black-and-white drawings.",
     "supplemental": true
   },
   {
@@ -2859,6 +2859,16 @@
     "wave": "OWNER_COLLECTION",
     "target_original_artworks": 75,
     "focus_note": "MacBook illustrations include Pro, Air, Neo and older family designs, plus creative-work screens and retail scenes. Color, camera-area shape, body profile and visible accessories distinguish the drawings without guessing a chip or exact model year.",
+    "supplemental": true
+  },
+  {
+    "id": 517,
+    "keyword": "Up clipart",
+    "slug": "up",
+    "cluster": "School & learning",
+    "wave": "API_PRIORITY_UP_20261029",
+    "target_original_artworks": 50,
+    "focus_note": "Up arrows, pointing hands and stair-climbing characters show direction and movement. Choose road signs, classroom word cards, rising balloons, upload symbols or black-and-white outlines; the collection also includes a wheelchair ramp, a growing sunflower and an ascending mountain trail.",
     "supplemental": true
   }
 ]
