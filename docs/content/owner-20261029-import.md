@@ -59,3 +59,21 @@ existing validator and the owner's concise-copy policy. An explicit regression
 keeps that legacy flag for unreviewed text and proves that short reviewed copy
 still rejects unsupported authorship and repeated download boilerplate. Source,
 context, identity, observations and uniqueness validation are unchanged.
+
+## Narrow post-publication correction: Maccabees introduction
+
+The later independent browser smoke check found that Maccabees had inherited a
+Dinner paragraph with the subject name mechanically substituted. The collection
+signature and byte checks had passed, but that did not establish semantic accuracy.
+The publisher reopened four original examples (lookout, seven-light lamp, children
+with a storybook, and the outline procession), checked their hashes, and accepted
+the corrected, short story-specific introduction. Both the checked collection
+record and the rendered lead/intro/description fields use it. No artwork, media,
+ID, download URL, catalog count or unrelated collection changes.
+
+Both shared collection gates now reject introductions that become the same after
+normalizing just their own topic names. Regression cases reproduce Dinner to
+Maccabees substitution and cover plural/multiword forms while accepting distinct
+subject-specific copy. This catches that concrete repeated-template error; it is
+not automated vision or a general semantic-review claim. The correction still
+requires the normal fresh guarded deployment and a real live intro/receipt check.

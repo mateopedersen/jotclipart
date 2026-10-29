@@ -15,6 +15,29 @@ export function collectionSourceSignature(items) {
     .digest('hex');
 }
 
+/** Detect topic-name substitution; this is not a visual or semantic review. */
+export function collectionIntroductionTemplate(topic, text) {
+  const escape = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const labels = [...new Set([topic, topic.replaceAll('-', ' ')])].sort(
+    (a, b) => b.length - a.length,
+  );
+  const ownSubject = new RegExp(`\\b(?:${labels.map(escape).join('|')})s*\\b`, 'gi');
+  return text
+    .normalize('NFKC')
+    .toLowerCase()
+    .replace(ownSubject, 'topicplaceholder')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+}
+
+function checkIntroductionTemplate(templates, topic, text) {
+  const signature = collectionIntroductionTemplate(topic, text);
+  const previous = templates.get(signature);
+  if (previous)
+    throw Error(`Topic-name-substituted collection introduction: ${previous} and ${topic}`);
+  templates.set(signature, topic);
+}
+
 export function validateCollectionCopy(topic, items, record) {
   const fail = (reason) => {
     throw new Error(`Collection ${topic}: ${reason}`);
@@ -56,12 +79,14 @@ export function verifyCollectionEditorial(catalog, registry) {
     group.push(item);
     groups.set(item.topic, group);
   }
-  const texts = new Set();
+  const texts = new Set(),
+    templates = new Map();
   for (const [topic, items] of groups) {
     const text = validateCollectionCopy(topic, items, registry.topics[topic]);
     if (texts.has(text.toLowerCase()))
       throw new Error(`Repeated collection introduction: ${topic}`);
     texts.add(text.toLowerCase());
+    checkIntroductionTemplate(templates, topic, text);
   }
   for (const topic of Object.keys(registry.topics))
     if (!groups.has(topic))
@@ -92,13 +117,15 @@ export function requiredCollectionIntroductions(catalog, registry) {
     groups.set(item.topic, group);
   }
   const result = new Map(),
-    texts = new Set();
+    texts = new Set(),
+    templates = new Map();
   for (const [topic, items] of groups) {
     const record = registry.topics[topic];
     if (!record && legacyTopics.has(topic)) continue;
     const text = validateCollectionCopy(topic, items, record);
     if (texts.has(text.toLowerCase())) throw Error('Repeated collection introduction: ' + topic);
     texts.add(text.toLowerCase());
+    checkIntroductionTemplate(templates, topic, text);
     result.set(topic, text);
   }
   for (const topic of Object.keys(registry.topics))
