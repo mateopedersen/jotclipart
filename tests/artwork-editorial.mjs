@@ -53,7 +53,9 @@ test('the complete catalog uses the same source-checked editorial resolver', () 
       publishedTitles.set(globalTitle, item.id);
     }
     if (reviews.has(item.id)) {
-      assert.deepEqual(copyIssues(copy), [], item.id);
+      // These records have already passed the source-bound review validator.
+      // A concise inspected description does not inherit the legacy length flag.
+      assert.deepEqual(copyIssues(copy, { reviewed: true }), [], item.id);
       const description = copy.description.toLowerCase();
       assert(
         !reviewedDescriptions.has(description),
@@ -62,6 +64,32 @@ test('the complete catalog uses the same source-checked editorial resolver', () 
       reviewedDescriptions.set(description, item.id);
     }
   }
+});
+
+test('a concise reviewed description keeps all content checks without a legacy length requirement', () => {
+  const copy = {
+    title: 'Three Plush Polar Bear Zeros',
+    alt: 'Three soft white zeros with rounded bear ears.',
+    description: 'Rounded white ears sit above each plush zero.',
+  };
+  assert.deepEqual(copyIssues(copy), ['description:needs-detail-review']);
+  assert.deepEqual(copyIssues(copy, { reviewed: true }), []);
+  assert(
+    copyIssues(
+      { ...copy, description: 'Expert-approved human-created drawing.' },
+      { reviewed: true },
+    ).includes('description:unsupported-authorship'),
+  );
+  assert(
+    copyIssues(
+      {
+        ...copy,
+        description:
+          'Download the transparent WebP for a digital layout, or choose the matching PDF for printing.',
+      },
+      { reviewed: true },
+    ).includes('description:boilerplate'),
+  );
 });
 
 test('cleanup deletes reviewed filler without adding claims or removing concept qualifications', () => {
@@ -182,16 +210,21 @@ test('reviews reject stale source pixels, metadata, missing evidence and generic
 test(
   'visible artwork copy, search data and image schema agree after a production build',
   {
-    skip: !process.env.UC_TEST_BUILD_DIR && !existsSync(
-      new URL('art/new-york-clipart-central-park-bow-bridge/index.html', testBuildUrl),
-    ),
+    skip:
+      !process.env.UC_TEST_BUILD_DIR &&
+      !existsSync(new URL('art/new-york-clipart-central-park-bow-bridge/index.html', testBuildUrl)),
   },
   () => {
     if (process.env.UC_TEST_BUILD_REVISION)
-      assert.ok(readFileSync(new URL('index.html', testBuildUrl), 'utf8').includes(
-        `name="build-revision" content="${process.env.UC_TEST_BUILD_REVISION}"`,
-      ), 'Unexpected build revision');
-    const manifest = JSON.parse(readFileSync(new URL('search-data/manifest.json', testBuildUrl), 'utf8'));
+      assert.ok(
+        readFileSync(new URL('index.html', testBuildUrl), 'utf8').includes(
+          `name="build-revision" content="${process.env.UC_TEST_BUILD_REVISION}"`,
+        ),
+        'Unexpected build revision',
+      );
+    const manifest = JSON.parse(
+      readFileSync(new URL('search-data/manifest.json', testBuildUrl), 'utf8'),
+    );
     const directory = new URL(`search-data/${manifest.version}/items/`, testBuildUrl);
     const cards = new Map(
       readdirSync(directory)

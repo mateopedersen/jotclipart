@@ -51,3 +51,11 @@ source gate. This regenerates derived availability and per-topic counts while
 preserving the owner's generation pause and separately verified-live counter.
 The source gate rejects a stale total before an expensive build. Generated-goal
 counts and all available catalog entries remain distinct resources.
+
+The catalog-resolver regression now passes `reviewed: true` for records that have
+already passed `validateEditorialReview`. It previously applied the unreviewed
+legacy short-caption flag to genuine source-bound reviews, contradicting the
+existing validator and the owner's concise-copy policy. An explicit regression
+keeps that legacy flag for unreviewed text and proves that short reviewed copy
+still rejects unsupported authorship and repeated download boilerplate. Source,
+context, identity, observations and uniqueness validation are unchanged.
