@@ -4,6 +4,8 @@ import { execFileSync } from 'node:child_process';
 import { prepareDeliveryRelease } from './delivery/activate.mjs';
 import { assertReleaseBudgets } from './delivery/budgets.mjs';
 import { resolve } from 'node:path';
+import { prepareIndexNowSnapshot } from './seo/indexnow-release.mjs';
+import { runIndexNowNotification } from './seo/indexnow-notify.mjs';
 import { readPublication } from './publication-policy.mjs';
 
 const root = resolve(import.meta.dirname, '..');
@@ -65,6 +67,7 @@ writeFileSync(
   resolve(root, 'work/delivery', revision, 'release-budget.json'),
   JSON.stringify(budgets, null, 2) + '\n',
 );
+console.log(JSON.stringify({indexNowSnapshot:prepareIndexNowSnapshot({root,target,revision,manifest:JSON.parse(readFileSync(manifestPath,'utf8'))})}));
 // Use the process-local pinned uploader: proactive token renewal and durable
 // checkpoints. No dependency file or reviewed content is modified.
 // The live configuration can change while a long staging job runs. Recheck
@@ -84,3 +87,6 @@ run('--require', [
   revision,
 ]);
 console.log(JSON.stringify({ prepared: release, receiptRequired: true }));
+
+// This notification can never turn a successful publication into a failed deploy.
+runIndexNowNotification({root,revision,env});

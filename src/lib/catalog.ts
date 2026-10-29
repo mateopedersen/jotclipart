@@ -1,3 +1,4 @@
+import { validateCollectionMetaDescriptions } from './collection-meta.mjs';
 import source from '../../data/topics.json';
 import illustrations from '../../data/art.json';
 import editorialReviews from '../../data/editorial/reviews.json';
@@ -22,6 +23,9 @@ const publishedAssets = import.meta.env.PUBLIC_ASSET_URLS as PublishedAssets | n
 const reviewedIllustrations = reviewedImportCatalog(illustrations, editorialReviews);
 const monochromeAudit = await auditMonochrome(reviewedIllustrations);
 export const reviewedCollectionIntroductions = readRequiredCollectionIntroductions(illustrations);
+const collectionMetaAudit = validateCollectionMetaDescriptions(reviewedCollectionIntroductions);
+if (collectionMetaAudit.needsEditorialReview.length)
+  console.warn('[collection-meta] Review complete search descriptions:', collectionMetaAudit.needsEditorialReview.join(', '));
 await preparePreviewAssets(reviewedIllustrations);
 const screenImages = (item: (typeof illustrations)[number]) => {
   const original = publishedAssets?.[item.id]?.webp ?? item.webp;

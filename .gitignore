@@ -16,3 +16,6 @@ __pycache__/
 reports/
 public/catalog/
 public/previews/
+
+# Preserve accepted IndexNow URL ledger across builds and cleanup.
+/.indexnow/

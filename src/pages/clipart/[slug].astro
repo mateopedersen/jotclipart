@@ -1,5 +1,6 @@
 ---
 import { imageObject } from '../../lib/image-schema';
+import { collectionMetaDescription } from '../../lib/collection-meta.mjs';
 import { structuredData, breadcrumbs } from '../../lib/structured-data';
 import collectionCopy from '../../../data/collection-copy.json';
 import Layout from '../../layouts/Layout.astro';
@@ -27,11 +28,12 @@ const topicReady = items.length > 0 && items.every((item) => item.indexable && i
 const title = topic.keyword.replace('clipart', 'Clipart');
 const description = reviewedIntro;
 if (!description) throw new Error(`Missing topic introduction: ${topic.slug}`);
+const searchDescription = collectionMetaDescription(description);
 ---
 
 <Layout
   title={title}
-  description={description}
+  description={searchDescription.text}
   image={items[0]?.webp}
   imageAlt={items[0]?.alt}
   imageWidth={items[0]?.width}
