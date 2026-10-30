@@ -1,4 +1,4 @@
-import { copyFileSync, mkdirSync, readdirSync, statSync } from 'node:fs';
+import { constants, copyFileSync, mkdirSync, readdirSync, statSync } from 'node:fs';
 import { join, resolve, relative, isAbsolute, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { readIncrementalPlan, incrementalCollectionOptions } from './delivery/incremental.mjs';
@@ -27,7 +27,9 @@ export function copyPublicInterfaceAssets(publicDir, outDir, options = {}) {
         const path = '/' + relative(source, from).split(sep).join('/');
         const prior = options.inherited?.get(path);
         if (prior && options.cache) options.cache.copy(from, to, prior);
-        else copyFileSync(from, to);
+        // APFS can share unchanged data blocks while keeping independent files.
+        // Node falls back to a regular copy on filesystems without reflinks.
+        else copyFileSync(from, to, constants.COPYFILE_FICLONE);
         files++;
         bytes += statSync(from).size;
       } else throw Error('Unsupported public interface asset');

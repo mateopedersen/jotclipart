@@ -39,6 +39,10 @@ test('production copies exact UI bytes without copying or traversing catalog ori
     assert.equal(existsSync(join(output, 'catalog')), false);
     assert.equal(readFileSync(join(originals, 'pending.webp'), 'utf8'), 'unpublished source');
     assert.equal(readFileSync(join(output, 'generated.html'), 'utf8'), 'keep generated page');
+    // A build output is writable and independent; it must never hard-link a
+    // mutable source or damage originals when the output is changed/removed.
+    writeFileSync(join(output, 'fonts', 'reader.woff2'), 'changed build output');
+    assert.deepEqual(readFileSync(join(source, 'fonts', 'reader.woff2')), font);
   } finally {
     rmSync(root, { recursive: true, force: true });
   }
