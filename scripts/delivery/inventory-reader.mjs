@@ -36,8 +36,8 @@ export function readOnlyRangeHints(hints, accountId, targetBucket) {
 }
 // Read disjoint complete key ranges in parallel so the account census can
 // finish within the unchanged 45-second freshness window. This path is read-only.
-export function createBoundInventoryReader({ buckets, fetchPage, concurrency = 16 }) {
-  if (!Number.isInteger(concurrency) || concurrency < 1 || concurrency > 16)
+export function createBoundInventoryReader({ buckets, fetchPage, concurrency = 32 }) {
+  if (!Number.isInteger(concurrency) || concurrency < 1 || concurrency > 32)
     throw Error('Bounded inventory concurrency required');
   return async function read(command, fallback) {
     const bucket = buckets.find(

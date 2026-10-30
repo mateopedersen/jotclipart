@@ -109,7 +109,7 @@ test('complete ranges include inserted/deleted boundary keys and Unicode with bo
   });
   assert.deepEqual(actual.Contents, rows);
   assert.equal(actual.IsTruncated, false);
-  assert(peak() <= 16);
+  assert(peak() <= 32);
   const many = Array.from({ length: 64 }, (_, i) => `key-${String(i).padStart(3, '0')}`);
   const larger = reader(
     many,
@@ -122,9 +122,9 @@ test('complete ranges include inserted/deleted boundary keys and Unicode with bo
     (await larger.read({ bucket: 'media', jurisdiction: 'default' }, () => {})).Contents,
     larger.rows,
   );
-  assert.equal(larger.peak(), 16);
+  assert.equal(larger.peak(), 32);
   assert.throws(
-    () => createBoundInventoryReader({ buckets: [], fetchPage: async () => {}, concurrency: 17 }),
+    () => createBoundInventoryReader({ buckets: [], fetchPage: async () => {}, concurrency: 33 }),
     /Bounded/,
   );
 });
