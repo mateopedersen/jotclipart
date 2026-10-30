@@ -1,5 +1,5 @@
 /** Versioned together with the public index. No invented image labels or remote inference. */
-export const SEARCH_LANGUAGE_VERSION = '12-inflections-and-line-drawings';
+export const SEARCH_LANGUAGE_VERSION = '13-own-aliases-and-line-drawings';
 const groups = [
   ['gift', 'present', 'presents', 'gifts'],
   ['leaf', 'leaves'],
@@ -144,7 +144,7 @@ export function normalizeQuery(query: string): string[] {
     .split(/\s+/)
     .filter((word) => word && !stopWords.has(word))
     .map((word) => {
-      if (aliases[word]) return aliases[word];
+      if (Object.hasOwn(aliases, word)) return aliases[word];
       const singular =
         word.length > 4 && /(?:ches|shes|xes|zes|sses)$/.test(word)
           ? word.slice(0, -2)
@@ -153,7 +153,7 @@ export function normalizeQuery(query: string): string[] {
             : word.length > 3 && /s$/.test(word) && !/(?:ss|us|is)$/.test(word)
               ? word.slice(0, -1)
               : word;
-      return aliases[singular] ?? singular;
+      return Object.hasOwn(aliases, singular) ? aliases[singular] : singular;
     });
 }
 export function oneEditAway(a: string, b: string): boolean {
@@ -195,7 +195,10 @@ const relatedWording: Record<string, string[]> = {
   trio: ['three'],
   bouquet: ['bunch'],
 };
-export const termVariants = (word: string) => [word, ...(relatedWording[word] || [])];
+export const termVariants = (word: string) => [
+  word,
+  ...(Object.hasOwn(relatedWording, word) ? relatedWording[word] : []),
+];
 export function queryTerms(query: string) {
   let text = query
     .normalize('NFKD')

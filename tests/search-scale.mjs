@@ -71,6 +71,24 @@ const queryCases = [
   'NOT-A-REAL-SUBJECT',
   'leaf leaf',
 ];
+test('artwork with a constructor slug builds and searches correctly', async () => {
+  const item = {
+    ...original[0],
+    id: 'bw-polygon-constructor-black-and-white-clipart',
+    title: 'Drawing a Polygon on a Tablet',
+    description: 'A hand uses a stylus to draw a polygon on a tablet.',
+    alt: 'A hand draws a polygon on a tablet.',
+    published: true,
+  };
+  const { repo } = fixture([item]);
+  const state = { ...defaults, q: 'polygon constructor' };
+  const remote = await repo.search(state);
+  assert.deepEqual(
+    remote.items.map((row) => row.id),
+    [item.id],
+  );
+  assert.deepEqual(comparable(remote), comparable(searchArtwork([item], state)));
+});
 test('sharded search exactly matches the existing scorer, typo handling and all facets on the real pilot', async () => {
   const { repo } = fixture(real);
   for (const q of queryCases)
