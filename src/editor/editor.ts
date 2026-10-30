@@ -1085,7 +1085,7 @@ function init(root: HTMLElement) {
     q('[data-pdf-options]').hidden = format !== 'pdf';
     q('[data-large-pdf-options]').hidden = format !== 'pdf';
     q('[data-action=download]').textContent =
-      `Download ${format === 'docx' ? 'Word (.docx)' : format === 'webp' ? 'WebP' : format.toUpperCase()}`;
+      `Download ${format === 'docx' ? 'Word (.docx)' : format === 'webp' ? 'Image' : format.toUpperCase()}`;
     q('[data-format-help]').textContent = (
       {
         png: 'PNG keeps transparent areas and uses lossless RGB pixels.',

@@ -189,6 +189,33 @@ test('stale but complete measurements retry only full reads; denied or unknown c
   assert.equal(calls, 3);
 });
 
+test('rejected capability proofs trigger only bounded complete retries, never a lease', async () => {
+  const { freshBindingReservation } = await import('../scripts/r2/binding-reservation.mjs');
+  const rejected = () => Error('Invalid disabled-jurisdiction capability proof');
+  let calls = 0;
+  const result = await freshBindingReservation(
+    async () => {
+      if (++calls < 3) throw rejected();
+      return { measured: 'fresh complete account inventory' };
+    },
+    { wait: async () => {} },
+  );
+  assert.equal(calls, 3);
+  assert.deepEqual(result, { measured: 'fresh complete account inventory' });
+  calls = 0;
+  await assert.rejects(
+    freshBindingReservation(
+      async () => {
+        calls++;
+        throw rejected();
+      },
+      { wait: async () => {} },
+    ),
+    /Invalid disabled-jurisdiction capability proof/,
+  );
+  assert.equal(calls, 3);
+});
+
 test('complete stale measurements can rebalance ranges without ever becoming a write lease', async () => {
   const { freshBindingReservation } = await import('../scripts/r2/binding-reservation.mjs');
   let calls = 0,

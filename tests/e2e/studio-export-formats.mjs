@@ -140,6 +140,12 @@ try {
   await dialog.locator('.uc-format-choices').screenshot({ path: `${out}/formats.png` });
   for (const format of ['png', 'jpg', 'webp', 'svg', 'docx', 'pdf']) {
     await dialog.locator(`[data-format][value=${format}]`).check({ force: true });
+    if (format === 'webp') {
+      await expect(dialog.locator('[data-action=download]')).toHaveText('Download Image');
+      await expect(
+        dialog.locator('[data-format][value=webp]').locator('xpath=..').locator('strong'),
+      ).toHaveText('Image (.webp)');
+    }
     if (['png', 'jpg', 'webp'].includes(format))
       await dialog.locator('[data-size]').selectOption('1024');
     if (format === 'pdf') await dialog.locator('[data-allow-large-pdf]').check();

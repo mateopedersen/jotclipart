@@ -353,8 +353,16 @@ export class SearchRepository {
     }
     let related: { id: number; score: number; missing: string[] }[] = [];
     if (!ranked.length && tokens.length >= 3) {
-      const topicWords = new Set(manifest.topics.flatMap((topic) => normalizeQuery(topic.keyword)));
-      const anchors = tokens.flatMap((token, i) => (topicWords.has(token) ? [i] : []));
+      // Anchor only a complete topic phrase present in the query. A word such as
+      // "golden" must not independently activate an unrelated "Golden Snitch" topic.
+      const queryWords = new Set(tokens);
+      const presentTopicWords = new Set(
+        manifest.topics.flatMap((topic) => {
+          const words = normalizeQuery(topic.keyword);
+          return words.length && words.every((word) => queryWords.has(word)) ? words : [];
+        }),
+      );
+      const anchors = tokens.flatMap((token, i) => (presentTopicWords.has(token) ? [i] : []));
       const candidates = new Set(termMaps.flatMap((map) => [...map.keys()]));
       related = [...candidates]
         .filter(eligible)

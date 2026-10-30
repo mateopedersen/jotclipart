@@ -5,13 +5,15 @@ export async function freshBindingReservation(measure, { wait = delay, onStale =
     try {
       return await measure();
     } catch (error) {
-      if (
-        attempt >= 2 ||
-        error.message !== 'Fresh complete account inventory required' ||
-        !Array.isArray(error.readOnlyInventoryHints)
-      )
-        throw error;
-      onStale(error.readOnlyInventoryHints);
+      const stale =
+        error.message === 'Fresh complete account inventory required' &&
+        Array.isArray(error.readOnlyInventoryHints);
+      // A failed capability proof is never accepted. A complete new census may
+      // recover from a transient or delayed proof; malformed proofs still stop
+      // publication after the same bounded three attempts.
+      const rejectedCapability = error.message === 'Invalid disabled-jurisdiction capability proof';
+      if (attempt >= 2 || (!stale && !rejectedCapability)) throw error;
+      if (stale) onStale(error.readOnlyInventoryHints);
       await wait(1000 * (attempt + 1));
     }
   }

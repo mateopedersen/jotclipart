@@ -61,6 +61,7 @@ const ready = () => expect(page.locator('#search-results')).toHaveAttribute('ari
 try {
   report.checks.push(...(await checkSearchSuggestions(browser, base, engine)));
   await page.goto(`${base}/search/?q=classroom%20label&type=guide`);
+  await expect(page.locator('#filter-format option[value="webp"]')).toHaveText('Image');
   await expect(
     page.locator('#site-search-results a[href="/guides/make-a-classroom-label/"]'),
   ).toBeVisible();

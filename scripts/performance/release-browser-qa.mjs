@@ -39,6 +39,8 @@ try {
     ['tests/e2e/editor-source-loading.mjs', {}],
     ['tests/e2e/performance-regressions.mjs', {}],
     ['tests/e2e/catalog-delivery.mjs', {}],
+    ['tests/e2e/search.mjs', { UC_BROWSER: 'chromium' }],
+    ['tests/e2e/search.mjs', { UC_BROWSER: 'webkit' }],
     ['tests/e2e/ai-builder.mjs', { BROWSER: 'chromium' }],
     ['tests/e2e/ai-builder.mjs', { BROWSER: 'webkit' }],
     ['tests/e2e/studio-compositions.mjs', { UC_BROWSER: 'chromium' }],
