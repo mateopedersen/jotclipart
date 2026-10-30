@@ -37,8 +37,6 @@ const cuteStyle = /\b(kawaii|chibi|cute|adorable)\b/i;
 const face = /\b(face|eyes|eyed|character|mascot|arms|legs|hands|feet)\b/i;
 const craftedObject =
   /\b(knit|knitted|knitting|crochet|crocheted|amigurumi|embroidery|embroidered|felt|origami|papercut|paper cut)\b/i;
-const excludedTopics =
-  /^(?:.*-flag|political-.*|red-and-blue-states|democrat-donkey|republican-elephant|tesla|electric-car|iphone|samsung|.*monster|godzilla.*|kaiju|gta.*|grand-theft-auto|hunger-games|sunrise-on-the-reaping)$/;
 
 export function cuteConfidence(item: DiscoveryArtwork): number {
   if (!/^[a-z0-9-]+$/.test(item.id) || !/^[a-z0-9-]+$/.test(item.topic)) return 0;
@@ -56,8 +54,7 @@ export function cuteConfidence(item: DiscoveryArtwork): number {
   if (
     item.monochrome === true ||
     mono.test(`${item.style} ${item.id.replace(/-/g, ' ')} ${text}`) ||
-    unsuitable.test(`${item.id.replace(/-/g, ' ')} ${text}`) ||
-    excludedTopics.test(item.topic)
+    unsuitable.test(`${item.id.replace(/-/g, ' ')} ${text}`)
   )
     return 0;
   if (

@@ -143,7 +143,7 @@ test('topic balancing treats cheerful subjects equally instead of privileging an
 });
 
 test('unknown future subjects qualify from visible expressive evidence, never from a slug or actual monochrome pixels', () => {
-  for (const topic of ['quokka', 'donut', 'future-cloud-toy'])
+  for (const topic of ['quokka', 'donut', 'robot', 'tesla', 'iphone', 'future-cloud-toy'])
     assert(
       cuteConfidence({
         ...sample,
