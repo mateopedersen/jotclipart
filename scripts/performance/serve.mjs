@@ -5,9 +5,13 @@ import { resolve, extname } from 'node:path';
 import { gzipSync } from 'node:zlib';
 import { handleCookieRegion } from '../../server/cookies/region.mjs';
 import { previewAiResponse } from '../ai-preview.mjs';
+import { readIncrementalPlan } from '../delivery/incremental.mjs';
+import { refreshRelatedPreview } from '../../server/delivery/related-version.mjs';
 const root = resolve(import.meta.dirname, '../..');
 const built = resolve(root, process.env.PERFORMANCE_BUILD_DIR || 'work/performance-build');
 const publicRoot = resolve(root, 'public');
+const incrementalPlan = readIncrementalPlan(root);
+const renderedIds = new Set(incrementalPlan?.artworkIds ?? []);
 const mime = {
   '.html': 'text/html; charset=utf-8',
   '.js': 'text/javascript',
@@ -125,12 +129,20 @@ createServer(async (req, res) => {
   const stat = statSync(file);
   const shouldZip =
     /text|json|xml|svg/.test(type) && /gzip/.test(req.headers['accept-encoding'] || '');
-  const key = file + ':' + stat.mtimeMs;
+  const artId = /^\/art\/([a-z0-9-]+)\/$/.exec(path)?.[1];
+  const refreshRelated = status === 200 && incrementalPlan && artId && !renderedIds.has(artId);
+  const representation = () =>
+    refreshRelated
+      ? Buffer.from(
+          refreshRelatedPreview(readFileSync(file, 'utf8'), artId, incrementalPlan.relatedVersion),
+        )
+      : readFileSync(file);
+  const key = file + ':' + stat.mtimeMs + ':' + (incrementalPlan?.relatedVersion ?? '');
   let bytes;
   if (shouldZip) {
     bytes = compressed.get(key);
     if (!bytes) {
-      bytes = gzipSync(readFileSync(file));
+      bytes = gzipSync(representation());
       if (bytes.length <= compressionBudget) {
         while (compressedBytes + bytes.length > compressionBudget) {
           const oldest = compressed.keys().next().value;
@@ -144,7 +156,7 @@ createServer(async (req, res) => {
       compressed.delete(key);
       compressed.set(key, bytes);
     }
-  } else bytes = readFileSync(file);
+  } else bytes = representation();
   res.writeHead(status, {
     'Content-Type': type,
     'Content-Length': bytes.length,

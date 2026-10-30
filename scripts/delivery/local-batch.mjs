@@ -49,7 +49,7 @@ export async function prepareLocalStagePayload(dist, records) {
 export function preferLocalStageSource(record, knownKeys, env = process.env) {
   return (
     env.UC_DELIVERY_LOCAL_ONLY === '1' ||
-    (env.UC_DELIVERY_LOCAL_HTML === '1' && record.path.endsWith('.html')) ||
+    ((env.UC_DELIVERY_LOCAL_HTML ?? '1') === '1' && record.path.endsWith('.html')) ||
     (knownKeys instanceof Set && !knownKeys.has(record.key))
   );
 }

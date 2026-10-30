@@ -20,6 +20,8 @@ export async function prepareDeliveryRelease({
   )
     throw Error('Separate new output and full production revisions required');
   const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
+  if (manifest.incrementalPlan?.shadowOnly)
+    throw Error('A shadow/test plan cannot become a production release');
   const catalog = JSON.parse(
     execFileSync('git', ['show', `${revision}:data/art.json`], {
       encoding: 'utf8',
@@ -53,7 +55,28 @@ export async function prepareDeliveryRelease({
   const withdrawnIds = JSON.parse(
     execFileSync('git', ['show', `${revision}:data/retired-artwork.json`], { encoding: 'utf8' }),
   ).artworkIds;
-  const options = { revision, ids, withdrawnIds, pageHeaders, editorHeaders };
+  const inherited = new Map(),
+    byId = new Map();
+  for (const file of manifest.files.filter((f) => /^\/(art|edit)\//.test(f.path))) {
+    const parts = /^delivery\/([a-f0-9]{40})(\/(art|edit)\/([a-z0-9-]+)\/index\.html)$/.exec(
+      file.key,
+    );
+    if (!parts || parts[2] !== file.path) throw Error('Invalid artifact revision mapping');
+    const [, fileRevision, , , id] = parts;
+    if (byId.has(id) && byId.get(id) !== fileRevision)
+      throw Error('Artwork/editor inheritance differs');
+    byId.set(id, fileRevision);
+    if (fileRevision !== revision) {
+      if (!manifest.incrementalPlan)
+        throw Error('HTML inheritance requires a verified incremental plan');
+      const members = inherited.get(fileRevision) ?? new Set();
+      members.add(id);
+      inherited.set(fileRevision, members);
+    }
+  }
+  const htmlRevisions = [...inherited].map(([version, members]) => [version, [...members].sort()]);
+  const options = { revision, ids, withdrawnIds, pageHeaders, editorHeaders, htmlRevisions,
+    ...(manifest.incrementalPlan ? { relatedVersion: manifest.incrementalPlan.relatedVersion } : {}) };
   const entry = `import original from ${JSON.stringify(join(source, '_worker.js'))};import {fetchAssetWithRetry} from './server/delivery/asset-retry.mjs';import {createPublicFileHandler} from './server/delivery/public-files.mjs';import {compressHtml} from './server/delivery/compress-html.mjs';const delivery=createPublicFileHandler(${JSON.stringify(options)});export default {async fetch(request,env,context){const fallback={fetch:q=>original.fetch(q,{...env,ASSETS:{fetch:r=>fetchAssetWithRetry(r,env.ASSETS)}},context)};return compressHtml(request,await delivery(request,env,context,fallback));}};`;
   await build({
     stdin: { contents: entry, resolveDir: root, sourcefile: 'verified-delivery-release.mjs' },
@@ -81,6 +104,12 @@ export async function prepareDeliveryRelease({
     verifiedRoot: manifest.root,
     r2Files: removed,
     artworks: ids.length,
+    ...(manifest.incrementalPlan
+      ? {
+          renderMode: 'append-only-incremental',
+          inheritedArtworks: htmlRevisions.reduce((n, [, members]) => n + members.length, 0),
+        }
+      : {}),
     workerSha256: digest(readFileSync(join(target, '_worker.js'))),
   };
   writeFileSync(join(target, 'delivery-release.json'), JSON.stringify(release) + '\n');

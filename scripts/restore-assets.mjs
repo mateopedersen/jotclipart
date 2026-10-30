@@ -12,6 +12,7 @@ import { pathToFileURL } from 'node:url';
 import { createHash } from 'node:crypto';
 import { setTimeout as delay } from 'node:timers/promises';
 import { validateManifest, catalogFiles, assetIdentity } from './publication-policy.mjs';
+import { verifiedSourceCache } from './verified-source-cache.mjs';
 const sha = (bytes) => createHash('sha256').update(bytes).digest('hex');
 
 class TransientDownloadError extends Error {}
@@ -80,6 +81,7 @@ export async function restoreAssets({ root, catalog, manifest, fetcher = fetch, 
     expected = catalogFiles(catalog);
   if (expected.length !== files.size) throw new Error('Catalog and publication differ');
   const publicRoot = realpathSync(join(root, 'public'));
+  const sourceCache = verifiedSourceCache(root);
   let restored = 0,
     retained = 0,
     cursor = 0;
@@ -102,12 +104,15 @@ export async function restoreAssets({ root, catalog, manifest, fetcher = fetch, 
       if (existsSync(target)) {
         if (!realpathSync(target).startsWith(publicRoot + '/'))
           throw new Error('Asset symlink escapes public/');
-        const local = readFileSync(target);
-        if (local.length === file.bytes && sha(local) === file.sha256) {
-          retained++;
-          continue;
+        try {
+          sourceCache.verify(target, file);
+        } catch (error) {
+          throw new Error(`Local asset changed: ${file.path}; preserve edits before restoring`, {
+            cause: error,
+          });
         }
-        throw new Error(`Local asset changed: ${file.path}; preserve edits before restoring`);
+        retained++;
+        continue;
       }
       const bytes = await downloadAsset(published, fetcher);
       const temp = `${target}.${process.pid}.tmp`;
@@ -118,6 +123,7 @@ export async function restoreAssets({ root, catalog, manifest, fetcher = fetch, 
         rmSync(temp, { force: true });
       }
       restored++;
+      sourceCache.verify(target, file);
     }
   }
   const results = await Promise.allSettled(
@@ -125,6 +131,7 @@ export async function restoreAssets({ root, catalog, manifest, fetcher = fetch, 
   );
   const failed = results.find((result) => result.status === 'rejected');
   if (failed) throw failed.reason;
+  sourceCache.save();
   return { restored, retained };
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {

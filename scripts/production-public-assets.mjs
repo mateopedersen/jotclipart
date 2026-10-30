@@ -1,9 +1,11 @@
 import { copyFileSync, mkdirSync, readdirSync, statSync } from 'node:fs';
 import { join, resolve, relative, isAbsolute, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { readIncrementalPlan, incrementalCollectionOptions } from './delivery/incremental.mjs';
+import { verifiedSourceCache } from './verified-source-cache.mjs';
 
 /** Copy interface assets without traversing the R2-backed catalog, including drafts. */
-export function copyPublicInterfaceAssets(publicDir, outDir) {
+export function copyPublicInterfaceAssets(publicDir, outDir, options = {}) {
   const source = resolve(publicDir),
     output = resolve(outDir);
   const nested = relative(source, output);
@@ -22,13 +24,17 @@ export function copyPublicInterfaceAssets(publicDir, outDir) {
       if (entry.isSymbolicLink()) throw Error('Public interface assets must not be symlinks');
       if (entry.isDirectory()) copy(from, to);
       else if (entry.isFile()) {
-        copyFileSync(from, to);
+        const path = '/' + relative(source, from).split(sep).join('/');
+        const prior = options.inherited?.get(path);
+        if (prior && options.cache) options.cache.copy(from, to, prior);
+        else copyFileSync(from, to);
         files++;
         bytes += statSync(from).size;
       } else throw Error('Unsupported public interface asset');
     }
   }
   copy(source, output, true);
+  options.cache?.save();
   return { files, bytes };
 }
 
@@ -57,7 +63,12 @@ export function productionPublicAssets(enabled) {
           },
         });
         // Copy before rendering, preserving Astro's normal generated-file precedence.
-        const copied = copyPublicInterfaceAssets(publicDir, outDir);
+        const root = resolve(publicDir, '..'),
+          plan = readIncrementalPlan(root);
+        const options = plan
+          ? { ...incrementalCollectionOptions(root, plan), cache: verifiedSourceCache(root) }
+          : {};
+        const copied = copyPublicInterfaceAssets(publicDir, outDir, options);
         console.log(
           `Production interface assets: ${copied.files} files, ${copied.bytes} bytes; catalog stays in R2.`,
         );

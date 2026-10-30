@@ -1,5 +1,5 @@
 import { spawnSync } from 'node:child_process';
-import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { readdirSync, readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { prepareDeliveryRelease } from './delivery/activate.mjs';
 import { assertReleaseBudgets } from './delivery/budgets.mjs';
@@ -9,97 +9,178 @@ import { runIndexNowNotification } from './seo/indexnow-notify.mjs';
 import { verifyReviewedResume } from './delivery/reviewed-resume.mjs';
 import { assertOwnerPublicationApproval } from './publication-approval.mjs';
 import { readPublication } from './publication-policy.mjs';
+import { planIncrementalRelease, sealIncrementalBaseline } from './delivery/incremental.mjs';
+import { incrementalInstalled } from './delivery/installer.mjs';
+import { awaitPublicationWriter } from './delivery/publication-lock.mjs';
 
 const root = resolve(import.meta.dirname, '..');
-assertOwnerPublicationApproval(root);
-const env = {
-  ...process.env,
-  CF_PAGES: '1',
-  ASTRO_TELEMETRY_DISABLED: '1',
-  PAGES_WRANGLER_MAJOR_VERSION: '4',
-  UC_DELIVERY_PREPARE: '1',
-  // The owner activated Workers Paid on 2026-10-27. These project-scoped
-  // bounds reduce transfer latency without changing the request count or proofs.
-  UC_DELIVERY_ACTORS: process.env.UC_DELIVERY_ACTORS ?? '16',
-  UC_DELIVERY_INVENTORY_PAGES: process.env.UC_DELIVERY_INVENTORY_PAGES ?? '4',
-};
-// Each release stages and verifies its own catalog before atomic activation.
-// A pilot selector cannot silently change the reviewed release scope.
-delete env.CATALOG_OFFLOAD_COLLECTION;
-function run(script, args = []) {
-  const result = spawnSync(process.execPath, [script, ...args], {
-    cwd: root,
-    env,
-    stdio: 'inherit',
+const releasePublication = await awaitPublicationWriter(process.env, { notify: console.log });
+try {
+  assertOwnerPublicationApproval(root);
+  const env = {
+    ...process.env,
+    CF_PAGES: '1',
+    ASTRO_TELEMETRY_DISABLED: '1',
+    PAGES_WRANGLER_MAJOR_VERSION: '4',
+    UC_DELIVERY_PREPARE: '1',
+    // The owner activated Workers Paid on 2026-10-27. These project-scoped
+    // bounds reduce transfer latency without changing the request count or proofs.
+    UC_DELIVERY_ACTORS: process.env.UC_DELIVERY_ACTORS ?? '16',
+    UC_DELIVERY_INVENTORY_PAGES: process.env.UC_DELIVERY_INVENTORY_PAGES ?? '4',
+  };
+  // Each release stages and verifies its own catalog before atomic activation.
+  // A pilot selector cannot silently change the reviewed release scope.
+  delete env.CATALOG_OFFLOAD_COLLECTION;
+  // The guarded publisher chooses the scope itself; a caller-provided plan cannot
+  // silently narrow a normal production build.
+  delete env.UC_DELIVERY_INCREMENTAL_PLAN;
+  function run(script, args = []) {
+    const result = spawnSync(process.execPath, [script, ...args], {
+      cwd: root,
+      env,
+      stdio: 'inherit',
+    });
+    if (result.error) throw result.error;
+    if (result.status !== 0)
+      throw Error(`Publication step failed: ${script} (exit ${result.status ?? 1})`);
+  }
+
+  // Pin full releases too: another accepted publication must never be silently
+  // overwritten after a long build. The existing live/configuration check runs
+  // both before preparation and immediately before atomic activation.
+  const priorProduction = JSON.parse(
+    readFileSync(
+      resolve(root, '../ultraclipart/work/remaining-cloudflare-production-report.json'),
+      'utf8',
+    ),
+  );
+  const expectedBaseline = priorProduction.liveDelivery?.renderedRevision;
+  if (!/^[a-f0-9]{40}$/.test(expectedBaseline ?? ''))
+    throw Error('Verified production baseline required');
+  env.UC_DELIVERY_EXPECTED_LIVE_REVISION = expectedBaseline;
+  run('scripts/delivery/production-preflight.mjs');
+
+  const resumeArgs = process.argv.slice(2);
+  if (resumeArgs.length && (resumeArgs.length !== 2 || resumeArgs[0] !== '--resume-reviewed'))
+    throw Error('Invalid publication resume arguments');
+  const resumeFile = resumeArgs[1];
+  const revision = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
+  if (resumeFile) {
+    console.log(JSON.stringify(await verifyReviewedResume(root, resumeFile, revision)));
+    readPublication(root);
+  } else {
+    // Manual publication has the same gates as Git-driven publication. Never deploy
+    // a previously generated local dist: it may contain stale or unverified media.
+    run('scripts/restore-assets.mjs');
+    const publication = readPublication(root);
+    run('scripts/verify-social-images.mjs');
+    // A code change or missing installation proof always retains full publication.
+    if (process.env.UC_DELIVERY_INCREMENTAL !== '0' && incrementalInstalled(root)) {
+      try {
+        const plan = await planIncrementalRelease(root, { publication });
+        const directory = resolve(root, 'work/delivery', revision);
+        mkdirSync(directory, { recursive: true });
+        const file = resolve(directory, 'incremental-plan.json');
+        writeFileSync(file, JSON.stringify(plan, null, 2) + '\n', { mode: 0o600 });
+        env.UC_DELIVERY_INCREMENTAL_PLAN = file;
+        env.UC_DELIVERY_EXPECTED_LIVE_REVISION = plan.baselineRevision;
+        console.log(
+          `Verified incremental publication: ${plan.artworkIds.length} artwork/editor pairs will render; unchanged originals and HTML retain their proven identities.`,
+        );
+      } catch (error) {
+        // Unsupported changes never become an unsafe partial release. Full render,
+        // complete source/editorial/SEO tests and the old staging path remain valid.
+        console.log(`Full publication selected: ${error.message}`);
+      }
+    }
+    run('node_modules/astro/bin/astro.mjs', ['check']);
+    run('node_modules/astro/bin/astro.mjs', ['build']);
+    // Every artwork/editor HTML file remains with this build's asset bundle.
+    run('scripts/security-headers.mjs');
+    run(
+      '--test',
+      readdirSync(resolve(root, 'tests'))
+        .filter((name) => name.endsWith('.mjs'))
+        .map((name) => `tests/${name}`),
+    );
+    // Optional local browser gate runs against this fresh build before any R2 write
+    // or production activation. It leaves the normal storage safeguards untouched.
+    if (process.env.UC_DELIVERY_BROWSER_QA === '1')
+      run('scripts/performance/release-browser-qa.mjs');
+    run('scripts/delivery/stage.mjs', ['dist']);
+  }
+  const manifestPath = resolve(root, 'work/delivery', revision, 'verified-manifest.json');
+  // Seal before activation: a missing local rollback or a full disk must stop
+  // preparation rather than turn a successful live deployment into an error.
+  const predecessorFrozen = resolve(
+    root,
+    'work/delivery',
+    expectedBaseline,
+    'full-source/incremental-baseline.json',
+  );
+  console.log(
+    JSON.stringify({
+      sealedSource: sealIncrementalBaseline(root, manifestPath, resolve(root, 'dist'), {
+        ...(expectedBaseline !== revision && existsSync(predecessorFrozen)
+          ? {
+              previousManifestPath: resolve(
+                root,
+                'work/delivery',
+                expectedBaseline,
+                'verified-manifest.json',
+              ),
+            }
+          : {}),
+      }),
+    }),
+  );
+  const target = resolve(root, 'work/delivery', revision, `pages-release-${Date.now()}`);
+  assertOwnerPublicationApproval(root);
+  const release = await prepareDeliveryRelease({
+    source: resolve(root, 'dist'),
+    target,
+    manifestPath,
+    revision,
+    controlRevision: revision,
   });
-  if (result.error) throw result.error;
-  if (result.status !== 0) process.exit(result.status ?? 1);
-}
+  const budgets = assertReleaseBudgets(target);
+  writeFileSync(
+    resolve(root, 'work/delivery', revision, 'release-budget.json'),
+    JSON.stringify(budgets, null, 2) + '\n',
+  );
+  console.log(
+    JSON.stringify({
+      indexNowSnapshot: prepareIndexNowSnapshot({
+        root,
+        target,
+        revision,
+        manifest: JSON.parse(readFileSync(manifestPath, 'utf8')),
+      }),
+    }),
+  );
+  // Use the process-local pinned uploader: proactive token renewal and durable
+  // checkpoints. No dependency file or reviewed content is modified.
+  // The live configuration can change while a long staging job runs. Recheck
+  // immediately before activating a pruned release; failure stops deployment.
+  run('scripts/delivery/production-preflight.mjs');
+  assertOwnerPublicationApproval(root);
+  run('--require', [
+    './scripts/delivery/pages-upload-preload.cjs',
+    'node_modules/wrangler/wrangler-dist/cli.js',
+    'pages',
+    'deploy',
+    target,
+    '--project-name',
+    'ultraclipart',
+    '--branch',
+    'main',
+    '--commit-hash',
+    revision,
+  ]);
+  console.log(JSON.stringify({ prepared: release, receiptRequired: true }));
 
-const resumeArgs=process.argv.slice(2);
-if(resumeArgs.length && (resumeArgs.length!==2||resumeArgs[0]!=='--resume-reviewed'))throw Error('Invalid publication resume arguments');
-const resumeFile=resumeArgs[1];
-const revision = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
-if(resumeFile){
-  console.log(JSON.stringify(await verifyReviewedResume(root,resumeFile,revision)));
-  readPublication(root);
-}else{
-// Manual publication has the same gates as Git-driven publication. Never deploy
-// a previously generated local dist: it may contain stale or unverified media.
-run('scripts/restore-assets.mjs');
-readPublication(root);
-run('scripts/verify-social-images.mjs');
-run('node_modules/astro/bin/astro.mjs', ['check']);
-run('node_modules/astro/bin/astro.mjs', ['build']);
-// Every artwork/editor HTML file remains with this build's asset bundle.
-run('scripts/security-headers.mjs');
-run(
-  '--test',
-  readdirSync(resolve(root, 'tests'))
-    .filter((name) => name.endsWith('.mjs'))
-    .map((name) => `tests/${name}`),
-);
-// Optional local browser gate runs against this fresh build before any R2 write
-// or production activation. It leaves the normal storage safeguards untouched.
-if (process.env.UC_DELIVERY_BROWSER_QA === '1') run('scripts/performance/release-browser-qa.mjs');
-run('scripts/delivery/stage.mjs', ['dist']);
+  // This notification can never turn a successful publication into a failed deploy.
+  runIndexNowNotification({ root, revision, env });
+} finally {
+  releasePublication();
 }
-const target = resolve(root, 'work/delivery', revision, `pages-release-${Date.now()}`);
-const manifestPath = resolve(root, 'work/delivery', revision, 'verified-manifest.json');
-assertOwnerPublicationApproval(root);
-const release = await prepareDeliveryRelease({
-  source: resolve(root, 'dist'),
-  target,
-  manifestPath,
-  revision,
-  controlRevision: revision,
-});
-const budgets = assertReleaseBudgets(target);
-writeFileSync(
-  resolve(root, 'work/delivery', revision, 'release-budget.json'),
-  JSON.stringify(budgets, null, 2) + '\n',
-);
-console.log(JSON.stringify({indexNowSnapshot:prepareIndexNowSnapshot({root,target,revision,manifest:JSON.parse(readFileSync(manifestPath,'utf8'))})}));
-// Use the process-local pinned uploader: proactive token renewal and durable
-// checkpoints. No dependency file or reviewed content is modified.
-// The live configuration can change while a long staging job runs. Recheck
-// immediately before activating a pruned release; failure stops deployment.
-run('scripts/delivery/production-preflight.mjs');
-assertOwnerPublicationApproval(root);
-run('--require', [
-  './scripts/delivery/pages-upload-preload.cjs',
-  'node_modules/wrangler/wrangler-dist/cli.js',
-  'pages',
-  'deploy',
-  target,
-  '--project-name',
-  'ultraclipart',
-  '--branch',
-  'main',
-  '--commit-hash',
-  revision,
-]);
-console.log(JSON.stringify({ prepared: release, receiptRequired: true }));
-
-// This notification can never turn a successful publication into a failed deploy.
-runIndexNowNotification({root,revision,env});

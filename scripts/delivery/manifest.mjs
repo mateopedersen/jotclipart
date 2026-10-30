@@ -1,6 +1,8 @@
 import { createHash } from 'node:crypto';
 import { readFileSync, readdirSync, lstatSync, rmSync, cpSync } from 'node:fs';
-import { join, relative, sep } from 'node:path';
+import { join, relative, sep, resolve } from 'node:path';
+import { verifiedSourceCache } from '../verified-source-cache.mjs';
+import { incrementalCollectionOptions, readIncrementalPlan } from './incremental.mjs';
 export const digest = (bytes) => createHash('sha256').update(bytes).digest('hex');
 export function deliveryKey(path, revision) {
   if (!/^[a-f0-9]{40}$/.test(revision)) throw Error('A committed production revision is required');
@@ -11,8 +13,15 @@ export function deliveryKey(path, revision) {
   if (/^\/_astro\/[A-Za-z0-9_.-]+$/.test(path)) return `delivery/assets${path}`;
   throw Error(`Unsupported delivery path: ${path}`);
 }
-export function collectDeliveryFiles(dist, revision) {
+export function collectDeliveryFiles(dist, revision, options = {}) {
+  if (
+    arguments.length < 3 &&
+    process.env.UC_DELIVERY_INCREMENTAL_PLAN &&
+    resolve(dist) === resolve(process.cwd(), 'dist')
+  )
+    options = incrementalCollectionOptions(process.cwd(), readIncrementalPlan());
   const entries = [];
+  const cache = options.inherited ? verifiedSourceCache(options.root) : null;
   for (const base of ['art', 'edit', 'previews/p1', '_astro']) {
     function walk(dir) {
       for (const name of readdirSync(dir)) {
@@ -22,6 +31,12 @@ export function collectDeliveryFiles(dist, revision) {
         if (st.isDirectory()) walk(file);
         else {
           const path = '/' + relative(dist, file).replaceAll('\\', '/');
+          const prior = options.inherited?.get(path);
+          if (prior) {
+            cache.verify(file, prior);
+            entries.push(prior);
+            continue;
+          }
           const key = deliveryKey(path, revision),
             bytes = readFileSync(file);
           if (!bytes.length || bytes.length > 8_000_000)
@@ -56,6 +71,7 @@ export function collectDeliveryFiles(dist, revision) {
     }
     walk(join(dist, base));
   }
+  cache?.save();
   return entries.sort((a, b) => a.path.localeCompare(b.path, 'en'));
 }
 export const leaf = (record) => digest(Buffer.from(JSON.stringify(record)));
@@ -90,7 +106,11 @@ export function verifyDeliveryManifest(dist, manifest, revision) {
     manifest.bucket !== 'ultraclipart-pages'
   )
     throw Error('Delivery publication requires a verified manifest for this revision');
-  const actual = collectDeliveryFiles(dist, revision);
+  const actual = collectDeliveryFiles(
+    dist,
+    revision,
+    incrementalCollectionOptions(process.cwd(), manifest.incrementalPlan),
+  );
   if (
     JSON.stringify(actual) !== JSON.stringify(manifest.files) ||
     merkle(actual).root !== manifest.root ||

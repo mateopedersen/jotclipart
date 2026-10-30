@@ -390,6 +390,10 @@
         "kind": "OWNER_REQUESTED_52_SET_PUBLICATION",
         "exactInstruction": "51 ben attim 1 tanede diger chatten geldi toplam 52 dosyayi canliya alacaksin? Hatasiz ol, devam et."
       }
+    },
+    {
+      "id": "LOCAL_SHADOW_TEST_NEVER_PUBLISH",
+      "status": "LOCAL_SHADOW_ONLY_DO_NOT_PUBLISH"
     }
   ],
   "acceptedBeforePolicyImageHashes": {
