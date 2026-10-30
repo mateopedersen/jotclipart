@@ -27,7 +27,7 @@ try {
   for (const pick of index.items)
     assert.ok(cuteConfidence(all.find((x) => x.id === pick.id)) >= 68, pick.id);
   for (let i = 0; i < 8; i++) {
-    const link = page.locator('.site-surprise-link');
+    const link = page.locator('.site-surprise-link:visible');
     await link.hover();
     await link.click();
     await page.waitForURL('**/art/**');
@@ -40,7 +40,7 @@ try {
   for (const width of [1024, 768, 390, 320]) {
     await page.setViewportSize({ width, height: 844 });
     await page.goto(base, { waitUntil: 'networkidle' });
-    const link = page.locator('.site-surprise-link');
+    const link = page.locator('.site-surprise-link:visible');
     await expect(link).toBeVisible();
     await expect(page.locator('#navigation')).toBeHidden();
     const box = await link.boundingBox();
@@ -48,7 +48,7 @@ try {
     await link.tap();
     await page.waitForURL('**/art/**');
     assert.ok(cuteConfidence(all.find((x) => page.url().includes('/' + x.id + '/'))) >= 68);
-    await expect(page.locator('.site-surprise-link')).toBeVisible();
+    await expect(page.locator('.site-surprise-link:visible')).toBeVisible();
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), width);
   }
   report.mobile = true;
@@ -56,8 +56,8 @@ try {
   const fallback = await offline.newPage();
   await fallback.route('**/surprise-picks.json*', (r) => r.abort());
   await fallback.goto(base);
-  await fallback.locator('.site-surprise-link').hover();
-  await fallback.locator('.site-surprise-link').click();
+  await fallback.locator('.site-surprise-link:visible').hover();
+  await fallback.locator('.site-surprise-link:visible').click();
   await fallback.waitForURL('**/art/**');
   assert.ok(cuteConfidence(all.find((x) => fallback.url().includes('/' + x.id + '/'))) >= 68);
   report.fallback = true;
@@ -68,7 +68,7 @@ try {
   });
   const plain = await nojs.newPage();
   await plain.goto(base);
-  await plain.locator('.site-surprise-link').click();
+  await plain.locator('.site-surprise-link:visible').click();
   await plain.waitForURL('**/art/**');
   assert.ok(cuteConfidence(all.find((x) => plain.url().includes('/' + x.id + '/'))) >= 68);
   report.noJavascript = true;

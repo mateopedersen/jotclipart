@@ -6,11 +6,15 @@ import {
 } from '../lib/cute-discovery';
 const key = 'ultraclipart-surprise-recent-v2';
 export function initCuteSurprise() {
-  const link = document.querySelector<HTMLAnchorElement>('[data-surprise-art]');
-  if (!link) return;
+  document.querySelectorAll<HTMLAnchorElement>('[data-surprise-art]').forEach(initCuteLink);
+}
+function initCuteLink(link: HTMLAnchorElement) {
   let pool: CutePick[] = [];
   try {
-    pool = validCuteIndex(JSON.parse(link.dataset.surpriseArt || '[]'));
+    const shared = document.querySelector<HTMLAnchorElement>('[data-surprise-art]');
+    pool = validCuteIndex(
+      JSON.parse(link.dataset.surpriseArt || shared?.dataset.surpriseArt || '[]'),
+    );
   } catch {
     /* Real cute href remains usable. */
   }

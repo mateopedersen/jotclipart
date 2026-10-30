@@ -962,3 +962,15 @@
     font-size: 11px;
   }
 }
+
+/* Render both responsive placements up front so moving the link cannot shift the header. */
+@media (min-width: 1101px) {
+  .site-header .site-surprise-mobile {
+    display: none;
+  }
+}
+@media (max-width: 1100px) {
+  .site-header .site-surprise-desktop {
+    display: none;
+  }
+}

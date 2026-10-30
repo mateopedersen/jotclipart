@@ -97416,16 +97416,16 @@
       "imageSha256": "d8da580324e6b6b36a62e91685cc9b878c977cf90c7b665ab8b4e206361acf5f",
       "inputMetadataSha256": "d6ee70ef4b9d55ed3caa7f95a251c02055e1c4fcb3bb804f4d51da6402e2201a",
       "inspectedImage": "/catalog/persimmon/persimmon-explorer-fruit-colored-pencil-cartoon-clipart.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T04:51:34.679Z",
       "observations": [
-        "A persimmon character wears boots and a brown backpack.",
-        "It holds a rolled map in one hand."
+        "Broad green leaves surround the short stem.",
+        "The character carries a brown shoulder bag and rolled scroll."
       ],
       "references": [],
       "copy": {
-        "title": "Persimmon Explorer with a Map",
-        "description": "A persimmon character wears boots and a brown backpack. It holds a rolled map in one hand.",
-        "alt": "A persimmon character wears boots and a brown backpack."
+        "title": "Persimmon Explorer with a Scroll",
+        "description": "An orange persimmon explorer carries a brown shoulder bag and rolled scroll while wearing hiking boots.",
+        "alt": "Orange persimmon character with hiking boots, a shoulder bag and a rolled scroll."
       },
       "inputContextSha256": "03a4218a0e8dcb4ee79e1f66f5cd610355d8573548aef04c3efd7e535277ceb1"
     },
@@ -98376,16 +98376,16 @@
       "imageSha256": "371b710a48cf1a646ad24687cd06b758293c4fec68a13891cc34941e1f51a39e",
       "inputMetadataSha256": "9a5069e9b495008e8d7254ef79f12d778e396bd57bd2f250c80f04e1fe1098fe",
       "inspectedImage": "/catalog/guava/guava-explorer-fruit-colored-pencil-cartoon-clipart.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T04:51:34.665Z",
       "observations": [
-        "A guava character wears a brown hat, boots and backpack.",
-        "It holds a rolled map in one hand."
+        "Pale seeds are visible across the pink cut face.",
+        "A brown shoulder bag hangs at the character’s side."
       ],
       "references": [],
       "copy": {
-        "title": "Guava Explorer with a Map",
-        "description": "A guava character wears a brown hat, boots and backpack. It holds a rolled map in one hand.",
-        "alt": "A guava character wears a brown hat, boots and backpack."
+        "title": "Guava Explorer with a Scroll",
+        "description": "A pink-centered guava character wears an explorer hat and carries a shoulder bag and scroll.",
+        "alt": "Guava half in a brown hat and boots, carrying a shoulder bag and rolled scroll."
       },
       "inputContextSha256": "19b929c87c7cbb6b02e2448a7d1e5c8cc936c51b8e7b111e1977e7c0c877235e"
     },
@@ -98516,15 +98516,15 @@
       "imageSha256": "798b7dfe66db3abe52a13836b57a7e2c061c3aaab14250bf7127efb38e3262f5",
       "inputMetadataSha256": "dc39de5090ec7d16626dd708c09511fb8533f7998a3288abdbe3927062bb5e0c",
       "inspectedImage": "/catalog/guava/guava-harvest-crate-color-woodcut-clipart.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T05:43:43.087Z",
       "observations": [
-        "A wooden crate is filled with whole guavas and two pink cut halves.",
-        "One whole fruit rests outside the crate."
+        "The cut halves have pink centers and pale seeds.",
+        "A whole green guava and leaf rest in front."
       ],
       "references": [],
       "copy": {
         "title": "Crate of Guavas",
-        "description": "A wooden crate is filled with whole guavas and two pink cut halves. One whole fruit rests outside the crate.",
+        "description": "Green guavas and two pink, seed-filled halves sit among leaves in a wooden crate.",
         "alt": "A wooden crate is filled with whole guavas and two pink cut halves."
       },
       "inputContextSha256": "e079f11e04709ae882cdb7c96956dd255d2af68ac35fed1573da3b40bf58bd2c"
@@ -99396,16 +99396,16 @@
       "imageSha256": "7ecc94772ee5c3c868da90ca5f842ebeebce208fc3b8b57de14dcba2a1796696",
       "inputMetadataSha256": "c4039701caabc81e7461d74257d05b391b56b5e4abf28e7986cdab92d358c31c",
       "inspectedImage": "/catalog/lychee/lychee-explorer-fruit-colored-pencil-cartoon-clipart.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T04:51:34.669Z",
       "observations": [
-        "A peeled lychee character wears a brown hat, boots and shoulder bag.",
-        "It holds a rolled map in one hand."
+        "Textured pink rind surrounds pale exposed flesh.",
+        "A band secures the rolled scroll."
       ],
       "references": [],
       "copy": {
-        "title": "Lychee Explorer with a Map",
-        "description": "A peeled lychee character wears a brown hat, boots and shoulder bag. It holds a rolled map in one hand.",
-        "alt": "A peeled lychee character wears a brown hat, boots and shoulder bag."
+        "title": "Lychee Explorer with a Scroll",
+        "description": "A partially peeled lychee character in a brown hat carries a shoulder bag and a tied scroll.",
+        "alt": "Partially peeled lychee in an explorer hat and boots, carrying a shoulder bag and scroll."
       },
       "inputContextSha256": "717d4c434fbe8a557ddf7a382bd1021811556f22981c53b58390d326676f4f7b"
     },
@@ -100476,16 +100476,16 @@
       "imageSha256": "82f3c6aca285b28aeb4c40aea635c05e0f8bb1cb238eab5e1310dd12212fe0a9",
       "inputMetadataSha256": "0fffd6a41d37b788f4afa5f5166ed80e947a7b4d61d2158ac118e42c3ae9cb3d",
       "inspectedImage": "/catalog/nectarine/nectarine-explorer-fruit-colored-pencil-cartoon-clipart.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T04:51:34.675Z",
       "observations": [
-        "A nectarine character wears a brown hat, boots and backpack.",
-        "It holds a rolled map in one hand."
+        "A green leaf extends from beneath the brown hat.",
+        "A shoulder bag and rolled scroll accompany the character."
       ],
       "references": [],
       "copy": {
-        "title": "Nectarine Explorer with a Map",
-        "description": "A nectarine character wears a brown hat, boots and backpack. It holds a rolled map in one hand.",
-        "alt": "A nectarine character wears a brown hat, boots and backpack."
+        "title": "Nectarine Explorer with a Scroll",
+        "description": "A red and yellow nectarine in hiking boots carries a shoulder bag and rolled scroll.",
+        "alt": "Nectarine in an explorer hat and boots, carrying a shoulder bag and rolled scroll."
       },
       "inputContextSha256": "8e5ef48befe2955807f5fe55dcd477b1f5987ffb22ca317ef0f5f6407c88df24"
     },
@@ -100776,15 +100776,15 @@
       "imageSha256": "e9493c40f20f219e6252ba04b411d67ee986f728d9f569f317fb48894a17c389",
       "inputMetadataSha256": "918ae01a62e59f437ecd4ff07991df77425e91fa24225bee4dec4490e9c19034",
       "inspectedImage": "/catalog/nectarine/nectarine-harvest-crate-color-woodcut-clipart.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T05:43:43.096Z",
       "observations": [
-        "A wooden crate is filled with whole nectarines and a cut half.",
-        "One whole fruit rests outside the crate."
+        "A cut nectarine half reveals a ridged brown pit.",
+        "Green leaves lie among the whole fruit."
       ],
       "references": [],
       "copy": {
         "title": "Crate of Nectarines",
-        "description": "A wooden crate is filled with whole nectarines and a cut half. One whole fruit rests outside the crate.",
+        "description": "Red and yellow nectarines fill a wooden crate beside a cut half with a ridged pit.",
         "alt": "A wooden crate is filled with whole nectarines and a cut half."
       },
       "inputContextSha256": "b8e9669632e13eea35c4e70cc84d9050277bd860f2cb0b79f5aa5ef068c0f635"
@@ -101496,16 +101496,16 @@
       "imageSha256": "351691615e08ca1f4f03d375dfe4acac9eca26350b313cf976e0713e9a64584b",
       "inputMetadataSha256": "87d7e9e50d3d157a3a3484cda46d32fe79dba6a98e5040aa9b83d42f863c27ec",
       "inspectedImage": "/catalog/dragon-fruit/dragon-fruit-explorer-fruit-colored-pencil-cartoon-clipart.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T04:51:34.659Z",
       "observations": [
-        "A dragon fruit character wears boots and a brown shoulder bag.",
-        "It holds a rolled map in one hand."
+        "The white cut face is dotted with black seeds.",
+        "The character wears brown boots and carries a shoulder bag."
       ],
       "references": [],
       "copy": {
-        "title": "Dragon Fruit Explorer with a Map",
-        "description": "A dragon fruit character wears boots and a brown shoulder bag. It holds a rolled map in one hand.",
-        "alt": "A dragon fruit character wears boots and a brown shoulder bag."
+        "title": "Dragon Fruit Explorer with a Scroll",
+        "description": "A pink dragon fruit explorer with a seed-speckled center carries a shoulder bag and rolled scroll.",
+        "alt": "Pink dragon fruit character with hiking boots, a shoulder bag and a rolled scroll."
       },
       "inputContextSha256": "6b143b959989887e00689b43cc9060a0602057e46094ec752142ef41b8345193"
     },
@@ -101676,15 +101676,15 @@
       "imageSha256": "914bdee28c9bf08813416add8b1563af6415b27dbe42ec52867427682ac5b5bb",
       "inputMetadataSha256": "e3aa4c8a2a200793bbe3eee594bc10aa0c4e1cf74bf9599ae13539f8101a8513",
       "inspectedImage": "/catalog/dragon-fruit/dragon-fruit-harvest-crate-color-woodcut-clipart.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T05:43:43.078Z",
       "observations": [
-        "A wooden crate is filled with whole pink dragon fruit and a cut half.",
-        "One whole fruit rests outside the crate."
+        "The cut fruit has white flesh and small black seeds.",
+        "Green-tipped scales surround the whole pink fruit."
       ],
       "references": [],
       "copy": {
         "title": "Crate of Dragon Fruit",
-        "description": "A wooden crate is filled with whole pink dragon fruit and a cut half. One whole fruit rests outside the crate.",
+        "description": "Pink dragon fruit fill a wooden crate; a cut half reveals white flesh dotted with black seeds.",
         "alt": "A wooden crate is filled with whole pink dragon fruit and a cut half."
       },
       "inputContextSha256": "031d1592fe16ce4debe0f04520c73651af984ace79ca1f810051972b39dcf9e5"
@@ -102496,16 +102496,16 @@
       "imageSha256": "ece51fb2ee639c943bf75b54a9cb2acfc2d98d7d9d93edef6d112c7f87342ca2",
       "inputMetadataSha256": "9cf28277fa82c2125b96da773605b97e5a5d88b1fbf4f1db00195543123e8b4f",
       "inspectedImage": "/catalog/date/date-explorer-fruit-colored-pencil-cartoon-clipart.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T04:51:34.657Z",
       "observations": [
-        "A date character wears a brown hat, boots and backpack.",
-        "It holds a rolled map in one hand."
+        "The date has a wrinkled brown surface.",
+        "A backpack and a rolled scroll accompany the character."
       ],
       "references": [],
       "copy": {
-        "title": "Date Fruit Explorer with a Map",
-        "description": "A date character wears a brown hat, boots and backpack. It holds a rolled map in one hand.",
-        "alt": "A date character wears a brown hat, boots and backpack."
+        "title": "Date Fruit Explorer with a Scroll",
+        "description": "A wrinkled date character in an explorer hat and hiking boots carries a backpack and rolled scroll.",
+        "alt": "Brown date character in a hat and boots, carrying a backpack and rolled scroll."
       },
       "inputContextSha256": "a40c8a75779b4160ebb0f698a4765d2c21e52a36b3dbdc025911f5ce1234c75f"
     },
@@ -103456,16 +103456,16 @@
       "imageSha256": "852c9cc1141746c2767dfc1c5fd9a644426f87935df157a9685bfb322f9e42b2",
       "inputMetadataSha256": "8280b0f60e9898c93dedd626c3abaaeea7ac2c86fd3ac9b867c385f18538f8c4",
       "inspectedImage": "/catalog/melon/melon-explorer-fruit-colored-pencil-cartoon-clipart.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T04:51:34.672Z",
       "observations": [
-        "A melon character wears a brown hat, boots and backpack.",
-        "It holds a rolled map in one hand."
+        "Seeds are visible in the pale green cut center.",
+        "A brown shoulder bag hangs at the character’s side."
       ],
       "references": [],
       "copy": {
-        "title": "Melon Explorer with a Map",
-        "description": "A melon character wears a brown hat, boots and backpack. It holds a rolled map in one hand.",
-        "alt": "A melon character wears a brown hat, boots and backpack."
+        "title": "Melon Explorer with a Scroll",
+        "description": "A pale green melon explorer with visible seeds carries a shoulder bag and rolled scroll.",
+        "alt": "Cut melon character in a hat and boots, carrying a shoulder bag and rolled scroll."
       },
       "inputContextSha256": "2179069bd1f8a2795e03a655946ba7c34e614edf4087ddb60e50176ef47dc10b"
     },
@@ -103636,15 +103636,15 @@
       "imageSha256": "326b014c593b9b98e142ca33b56954734b65d601b04bf00ce62325704d1dec02",
       "inputMetadataSha256": "20177bf69245e8bb4986e567f93781d870ead3b2d707218a43a9cdeb9d3bf8ca",
       "inspectedImage": "/catalog/melon/melon-harvest-crate-color-woodcut-clipart.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T05:43:43.091Z",
       "observations": [
-        "A wooden crate is filled with whole melons and a cut half.",
-        "One whole fruit rests outside the crate."
+        "A cut melon displays pale flesh and seeds.",
+        "A whole melon rests against the front of the crate."
       ],
       "references": [],
       "copy": {
         "title": "Crate of Melons",
-        "description": "A wooden crate is filled with whole melons and a cut half. One whole fruit rests outside the crate.",
+        "description": "Pale green melons fill a wooden crate, with one cut open to show its seed-filled center.",
         "alt": "A wooden crate is filled with whole melons and a cut half."
       },
       "inputContextSha256": "cba29ec8f10f559c5ae3b3a3daa596ef39a647bfdafa3f990060172a3102924e"
@@ -104396,16 +104396,16 @@
       "imageSha256": "d98e8682395e82590dc7781cbb324e04bbbab21ee6ddda9bb91ba2426ce85113",
       "inputMetadataSha256": "101dd3474f115cd6a2d78f9f853f4f1f8fe181c28ce9778df75e4424942166b7",
       "inspectedImage": "/catalog/papaya/papaya-explorer-fruit-colored-pencil-cartoon-clipart.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T04:51:34.677Z",
       "observations": [
-        "A papaya character wears a brown hat, boots and shoulder bag.",
-        "It holds a rolled map in one hand."
+        "Dark seeds fill the orange cut center.",
+        "A brown shoulder bag hangs at the character’s side."
       ],
       "references": [],
       "copy": {
-        "title": "Papaya Explorer with a Map",
-        "description": "A papaya character wears a brown hat, boots and shoulder bag. It holds a rolled map in one hand.",
-        "alt": "A papaya character wears a brown hat, boots and shoulder bag."
+        "title": "Papaya Explorer with a Scroll",
+        "description": "A papaya explorer with a seed-filled center carries a brown shoulder bag and rolled scroll.",
+        "alt": "Papaya half in an explorer hat and boots, carrying a shoulder bag and rolled scroll."
       },
       "inputContextSha256": "b682d28754afd3e113623784114f019613218f3bc5fe215ded26d5137788da7b"
     },
@@ -104596,15 +104596,15 @@
       "imageSha256": "249dc8ef6686a813749991a89416a8547a9d21bfbcfd2f09e11d04771bc8d32e",
       "inputMetadataSha256": "2c44fe7e4d52c8d698298b94faedbc257fc2c76815b628624d5abe4310e0d645",
       "inspectedImage": "/catalog/papaya/papaya-harvest-crate-color-woodcut-clipart.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T05:43:43.099Z",
       "observations": [
-        "A wooden crate is filled with whole papayas and cut halves.",
-        "One whole fruit rests outside the crate."
+        "Two cut halves contain clusters of dark seeds.",
+        "A whole yellow-orange papaya rests in front."
       ],
       "references": [],
       "copy": {
         "title": "Crate of Papayas",
-        "description": "A wooden crate is filled with whole papayas and cut halves. One whole fruit rests outside the crate.",
+        "description": "Orange papaya halves with dark seeds sit above whole fruit in a wooden crate.",
         "alt": "A wooden crate is filled with whole papayas and cut halves."
       },
       "inputContextSha256": "ade86e9721b1befc8cf5e9f9c2f08e426f1d120c2bb1b027ffa26571f631053b"
@@ -106816,15 +106816,15 @@
       "imageSha256": "e1f52b0ef14e89b29532aa548d632f837662174fa19ae62bdc0269fc9276fef8",
       "inputMetadataSha256": "fda514389a0a10ec373930d9f80ac2e8b5537db0789a83e11e6ff3d50c10350d",
       "inspectedImage": "/catalog/plum/plum-harvest-crate-color-woodcut-clipart.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T05:43:43.107Z",
       "observations": [
-        "A wooden crate is filled with whole plums and a cut half.",
-        "One whole fruit rests outside the crate."
+        "The cut half shows golden flesh around a brown pit.",
+        "A whole purple plum rests beside the crate."
       ],
       "references": [],
       "copy": {
         "title": "Crate of Plums",
-        "description": "A wooden crate is filled with whole plums and a cut half. One whole fruit rests outside the crate.",
+        "description": "Purple plums and green leaves fill a crate, with a cut half revealing golden flesh and a brown pit.",
         "alt": "A wooden crate is filled with whole plums and a cut half."
       },
       "inputContextSha256": "02213660077a46207cc8e25781936077475f9f279e0e7dbcad0bc20db2ee9a31"
@@ -107676,15 +107676,15 @@
       "imageSha256": "fff84311101dbcd8a80a851e664407a3ae84b71a74d2e4bf93e3a34ebd8f051f",
       "inputMetadataSha256": "612f1bb916183fd4b206b2a9dd2fc67e3dacda94f74bae17e5cbb25d08c92e71",
       "inspectedImage": "/catalog/passion-fruit/passion-fruit-harvest-crate-color-woodcut-clipart.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T05:43:43.103Z",
       "observations": [
-        "A wooden crate is filled with whole passion fruit and cut halves.",
-        "One whole fruit rests outside the crate."
+        "Two cut halves show golden pulp and dark seeds.",
+        "A whole purple fruit sits in front of the wooden crate."
       ],
       "references": [],
       "copy": {
         "title": "Crate of Passion Fruit",
-        "description": "A wooden crate is filled with whole passion fruit and cut halves. One whole fruit rests outside the crate.",
+        "description": "A crate of purple passion fruit includes two halves with golden pulp and dark seeds.",
         "alt": "A wooden crate is filled with whole passion fruit and cut halves."
       },
       "inputContextSha256": "d368a2aed21f08047611650ded9993beb12e5baa279ce6a707c21a14a6459d18"
@@ -108476,16 +108476,16 @@
       "imageSha256": "00eb6b45fa0e892571f62fc5cead69fc654452d27f3d3e41092b54fad8923455",
       "inputMetadataSha256": "598413d61802b3769e900f3f379562c117aa6c9fc21aa7a275eef11eac856c4c",
       "inspectedImage": "/catalog/apricot/apricot-explorer-fruit-colored-pencil-cartoon-clipart.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T04:51:34.648Z",
       "observations": [
-        "An apricot character wears a brown hat, boots and backpack.",
-        "It holds a rolled map in one hand."
+        "A brown shoulder bag hangs at the character’s side.",
+        "A large green leaf extends from the stem."
       ],
       "references": [],
       "copy": {
-        "title": "Apricot Explorer with a Map",
-        "description": "An apricot character wears a brown hat, boots and backpack. It holds a rolled map in one hand.",
-        "alt": "An apricot character wears a brown hat, boots and backpack."
+        "title": "Apricot Explorer with a Scroll",
+        "description": "An apricot explorer in brown boots and a hat carries a shoulder bag and a rolled scroll.",
+        "alt": "Orange apricot character in an explorer hat and boots, carrying a shoulder bag and rolled scroll."
       },
       "inputContextSha256": "f9e2da3faef7ce841fe97b92006c9229ddc9246ea7ecc98cba78ce8de6ac33dc"
     },
@@ -108796,15 +108796,15 @@
       "imageSha256": "7681b4f1bb1fc4ff4a2f8aafa00cf9e9de5d4bae7daca7a2dd055f138d711a12",
       "inputMetadataSha256": "57abe174425ad204d329d1c10bf5494edce3b0776bd192c380f8b739c36f0b1d",
       "inspectedImage": "/catalog/apricot/apricot-harvest-crate-color-woodcut-clipart.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T05:43:43.070Z",
       "observations": [
-        "A wooden crate is filled with whole apricots and a cut half.",
-        "One whole fruit rests outside the crate."
+        "A cut apricot half with a brown pit lies among whole fruit.",
+        "A whole apricot rests in front of the wooden crate."
       ],
       "references": [],
       "copy": {
         "title": "Crate of Apricots",
-        "description": "A wooden crate is filled with whole apricots and a cut half. One whole fruit rests outside the crate.",
+        "description": "Orange apricots and green leaves fill a wooden crate, with a cut half showing its brown pit.",
         "alt": "A wooden crate is filled with whole apricots and a cut half."
       },
       "inputContextSha256": "fe7b50b6e106ba7b92949793ff7df7d1990055de2f838e25a58d68ae7043040c"
@@ -113776,15 +113776,15 @@
       "imageSha256": "e4b44158a848cd965dd886cced461e76941c1a6a96f13caa74f154f24c5df8c3",
       "inputMetadataSha256": "d326e783e208d01a6fcb9f2f7e3701b47409e1bc4786995e2441acb19f6f3b16",
       "inspectedImage": "/catalog/grapefruit/grapefruit-harvest-crate-color-woodcut-clipart.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T05:43:43.082Z",
       "observations": [
-        "A wooden crate is filled with whole grapefruit and cut halves.",
-        "One whole fruit rests outside the crate."
+        "Two cut halves show pink citrus segments.",
+        "Whole yellow-orange grapefruit sit in and in front of the crate."
       ],
       "references": [],
       "copy": {
         "title": "Crate of Grapefruit",
-        "description": "A wooden crate is filled with whole grapefruit and cut halves. One whole fruit rests outside the crate.",
+        "description": "A wooden crate holds whole grapefruit and two pink cut halves, with another fruit in front.",
         "alt": "A wooden crate is filled with whole grapefruit and cut halves."
       },
       "inputContextSha256": "6882da0c97a909b80f37bd700795f596b6cc776881eb7f65d35a0198209c7c47"
@@ -117936,15 +117936,15 @@
       "imageSha256": "b308562c1a8b17b3cbeac68b8ce7273830c78a5e88a9f26678abe65803b8c4f8",
       "inputMetadataSha256": "499d12075336aaa0485c94c4e9d19ca6d345262f38a06af597e8b77b35d6c0ec",
       "inspectedImage": "/catalog/red-apple/red-apple-waving-cartoon-black-and-white-clipart.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T07:23:35.490Z",
       "observations": [
-        "A smiling apple character waves beneath a blossom and leaves.",
-        "The drawing uses black outlines."
+        "A blossom and buds sit beside the apple stem.",
+        "The character waves one gloved hand."
       ],
       "references": [],
       "copy": {
         "title": "Waving Apple with Blossom Coloring Page",
-        "description": "A smiling apple character waves beneath a blossom and leaves. The drawing uses black outlines.",
+        "description": "A smiling apple waves beneath a blossom, buds and a large leaf.",
         "alt": "A smiling apple character waves beneath a blossom and leaves."
       },
       "inputContextSha256": "72477686886a9267d91523a665be81626b552a03e5ac5d790c6ebab55afe0b59"
@@ -120916,15 +120916,15 @@
       "imageSha256": "7af6640e05b40eca61dd1e78c29d8da508c63cfa35ac2e42a76dd7950dcf2b57",
       "inputMetadataSha256": "38292d43ce3c4ab2f4907b00943bf944e055ff64db67436a00ddaafd70f9b43a",
       "inspectedImage": "/catalog/starfruit/starfruit-waving-star-slice-cartoon-black-and-white-clipart.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T07:23:35.494Z",
       "observations": [
-        "A star-shaped fruit character waves one hand.",
-        "The drawing uses black outlines."
+        "The character has a five-pointed fruit-slice shape.",
+        "Several seeds appear on the cut face."
       ],
       "references": [],
       "copy": {
         "title": "Waving Starfruit Coloring Page",
-        "description": "A star-shaped fruit character waves one hand. The drawing uses black outlines.",
+        "description": "A smiling starfruit slice waves, with small seeds drawn across its five-pointed center.",
         "alt": "A star-shaped fruit character waves one hand."
       },
       "inputContextSha256": "3fbf9ad76d544e86eee4da8c615e9c548a27d574f329f11ecef5a041f438c7bf"
@@ -130236,15 +130236,15 @@
       "imageSha256": "a35fa1dd4c0ed330ce2430feae2b477a48c703380b0ade353d86b2197f611c4b",
       "inputMetadataSha256": "9a07d224b1d930c51caa96d90b389149b96915f5d6ced3c256a0bf2ef7e5a1f5",
       "inspectedImage": "/catalog/wave_144/bat-stretch-coloring.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T07:23:35.478Z",
       "observations": [
-        "A smiling bat stands on a tree stump with wings open.",
-        "The drawing uses black outlines."
+        "The bat stands on a tree stump.",
+        "Both wings are spread to either side."
       ],
       "references": [],
       "copy": {
         "title": "Bat on a Stump Coloring Page",
-        "description": "A smiling bat stands on a tree stump with wings open. The drawing uses black outlines.",
+        "description": "A smiling bat spreads its wings while standing on a tree stump.",
         "alt": "A smiling bat stands on a tree stump with wings open."
       },
       "inputContextSha256": "d0b99a01241cd10de737c52dd06c5460571e9d6211e897bf391d7e3842301847"
@@ -131136,15 +131136,15 @@
       "imageSha256": "0015773d27b018075baf8884a1f8e08a1dbd9bcb5525a2e36aa6e694c06870c0",
       "inputMetadataSha256": "a719e269fd43e039a9d4bcd272e57e89c6b428a82a6223ae8080b03ba32d2cd9",
       "inspectedImage": "/catalog/wave_162/spider-snowglobe-coloring.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T07:23:35.492Z",
       "observations": [
-        "A smiling spider peers over a snow globe with a snowflake inside.",
-        "The drawing uses black outlines."
+        "The spider leans over the round snow globe.",
+        "A snowflake and small dots appear inside the globe."
       ],
       "references": [],
       "copy": {
         "title": "Spider with a Snow Globe Coloring Page",
-        "description": "A smiling spider peers over a snow globe with a snowflake inside. The drawing uses black outlines.",
+        "description": "A smiling spider leans over a snow globe containing a large snowflake.",
         "alt": "A smiling spider peers over a snow globe with a snowflake inside."
       },
       "inputContextSha256": "d55ae094f44ca27742841e3fca9e20b70725e456b3804aaaff8c580eb98b603f"
@@ -133216,15 +133216,15 @@
       "imageSha256": "06ea016e216e7574f360cab124616858005022cdb0b2ba8263af9d81228e6b1c",
       "inputMetadataSha256": "f69f1cb6b76e3e42b47abf160d4d6532b2326edde06ba6a5b4a786cd75871039",
       "inspectedImage": "/catalog/wave_224/cornucopia-outline-floral.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T07:23:35.482Z",
       "observations": [
-        "Sunflowers fill an upright horn-shaped container on a stand.",
-        "The drawing uses black outlines."
+        "A large flower sits between two smaller flowers.",
+        "The curved horn is supported by a decorative stand."
       ],
       "references": [],
       "copy": {
         "title": "Cornucopia Flower Arrangement Coloring Page",
-        "description": "Sunflowers fill an upright horn-shaped container on a stand. The drawing uses black outlines.",
+        "description": "Three flowers rise from an upright cornucopia resting on a decorative stand.",
         "alt": "Sunflowers fill an upright horn-shaped container on a stand."
       },
       "inputContextSha256": "8e5c6952ebb4f1b96609fd23c548c613a032854cc3e0487395580119a59375fb"
@@ -134196,15 +134196,15 @@
       "imageSha256": "8dcb06d0a5712df2366755034d0d58471ff89d493d805a81b2645740a7812bbe",
       "inputMetadataSha256": "e2247f099f37bf26c801b8a2c818136c7fd93af4438212a2876eb975f97ad4cc",
       "inspectedImage": "/catalog/wave_233/harvest-outline-grain-sheaf.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T07:23:35.487Z",
       "observations": [
-        "A tied wheat bundle stands beside a scoop and sack of grain.",
-        "The drawing uses black outlines."
+        "The wheat bundle is tied with rope.",
+        "Grain spills from a scoop beside a sack."
       ],
       "references": [],
       "copy": {
         "title": "Wheat and Grain Coloring Page",
-        "description": "A tied wheat bundle stands beside a scoop and sack of grain. The drawing uses black outlines.",
+        "description": "A tied bundle of wheat stands beside a grain-filled sack and a scoop spilling kernels.",
         "alt": "A tied wheat bundle stands beside a scoop and sack of grain."
       },
       "inputContextSha256": "a02cf1b9c91f538b4df5bd8a837d99e625684719dc0829d06572cc74fdd50917"
@@ -137256,15 +137256,15 @@
       "imageSha256": "107bee498934f06284f3da485f227734b1c987b220c16052d5d72ff4643fe3b3",
       "inputMetadataSha256": "69f8755a0d66bea91eba5af032e80435657d27a4dd189a2b9afea4f584ca7d84",
       "inspectedImage": "/catalog/wave_315/gourd-outline-flower-wreath.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T07:23:35.485Z",
       "observations": [
-        "Leaves, flowers and hanging gourds form a circular wreath.",
-        "The drawing uses black outlines."
+        "Two gourds hang below the vine wreath.",
+        "The wreath contains flowers and heart-shaped leaves."
       ],
       "references": [],
       "copy": {
         "title": "Gourd Vine Wreath Coloring Page",
-        "description": "Leaves, flowers and hanging gourds form a circular wreath. The drawing uses black outlines.",
+        "description": "Two gourds hang from a wreath of curling vines, flowers and heart-shaped leaves.",
         "alt": "Leaves, flowers and hanging gourds form a circular wreath."
       },
       "inputContextSha256": "ae4351ecab965e8f5e7e94068053d2061496a7c9eb4a0cde3b870b71f4d9c1d4"
@@ -153536,15 +153536,15 @@
       "imageSha256": "293f998964d962586e2f7bb20440b827b0d3dc0d55986aec1e23232e3d0723b1",
       "inputMetadataSha256": "f40a4095706329659ed7be5f91bb8420dba8b21dcc7b8ea5af938ce71403fa35",
       "inspectedImage": "/catalog/mexico-flag/mexico-flag-clipart-flag-desk-calendar-outline.webp",
-      "reviewedAt": "2026-10-27",
+      "reviewedAt": "2026-10-30T07:23:35.488Z",
       "observations": [
-        "A spiral-bound desk calendar displays a Mexican flag design.",
-        "The drawing uses black outlines."
+        "The calendar has spiral rings across its top.",
+        "An eagle and snake emblem appears between two blank bands."
       ],
       "references": [],
       "copy": {
         "title": "Mexican Flag Desk Calendar Coloring Page",
-        "description": "A spiral-bound desk calendar displays a Mexican flag design. The drawing uses black outlines.",
+        "description": "A spiral-bound desk calendar displays the Mexican flag’s eagle and snake emblem.",
         "alt": "A spiral-bound desk calendar displays a Mexican flag design."
       },
       "inputContextSha256": "e7691ca5929df42c9a94f95aa84bd5781ab79b6a2edf793b235ef7e6f5d6cde3"
