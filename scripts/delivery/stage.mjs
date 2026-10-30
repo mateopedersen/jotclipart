@@ -25,6 +25,7 @@ import {
   validateVerificationReceipt,
 } from './verification-batch.mjs';
 import { verifiedReuse } from './verified-reuse.mjs';
+import { loadBootstrapBindings, saveBootstrapHints } from './inventory-bootstrap.mjs';
 import { readIncrementalPlan, incrementalCollectionOptions } from './incremental.mjs';
 import {
   deliveryActorCount,
@@ -188,6 +189,7 @@ async function main() {
               })
             : await measure();
           updateRanges(measured.roster);
+          saveBootstrapHints(root, accountId, bucket, measured.roster);
           lease = { ...measured, root: tree.root, bucket };
           console.log(
             `Fresh account reservation: ${lease.measuredBytes} + ${lease.additionalBytes} bytes; complete measurement ${Date.now() - measuredStartedAt} ms`,
@@ -212,6 +214,13 @@ async function main() {
         );
       }
       if (!bindings) {
+        bindings = await loadBootstrapBindings(root, accountId, bucket);
+        if (bindings)
+          console.log(
+            'Saved inventory ranges matched the fresh live bucket roster; no counts or write lease reused.',
+          );
+      }
+      if (!bindings) {
         try {
           bindings = (await reservation()).roster;
         } catch (error) {
@@ -220,6 +229,7 @@ async function main() {
           console.log('Slow cold census: bootstrapping read-only inventory; no write lease issued');
         }
       }
+      saveBootstrapHints(root, accountId, bucket, bindings);
       inventoryBuckets.push(
         ...bindings
           .filter((b) => b.jurisdiction === 'default')

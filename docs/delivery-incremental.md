@@ -58,6 +58,25 @@ without duplicating the entire unchanged binary library at every upload.
 
 ## Remote verification and storage reservations
 
+The local publisher retains authenticated partition boundaries in
+`work/delivery/inventory-range-hints.json`. This private derived cache contains
+no object counts, measured bytes or write permission. At each startup it checks
+the actual current all-jurisdiction bucket roster: removed buckets are dropped,
+new buckets enter with a complete unpartitioned range, and preserved buckets
+reuse only their sorted key boundaries. Live absence evidence uses the existing
+shared scope validator. Missing or invalid cache selects the cold path.
+
+This avoids repeating the serial REST object census merely to bootstrap the
+private read-only session. Every write still requires the normal fresh complete
+account measurement through the bounded R2 reader. The 45-second limit and
+10 TB ceiling are unchanged. Successful complete measurements refresh the
+partition cache atomically; it remains a hint, never a storage reservation.
+
+New HTML defaults to the exact local compressed payload instead of first asking
+the still-live predecessor for different page bytes. Merkle, native checksum,
+conditional creation and independent R2 readback still verify every file.
+`UC_DELIVERY_LOCAL_HTML=0` retains the earlier source preference when needed.
+
 The private `/verify` endpoint cannot PUT, delete, fetch public fallback sources
 or grant storage reservations. It accepts only fresh signed read commands for the
 fixed release and per-record Merkle proofs. Previous byte-readback receipts must

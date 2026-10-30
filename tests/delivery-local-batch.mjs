@@ -122,7 +122,7 @@ test('local batch proves and independently reads back each of 64 exact files', a
   }
 });
 
-test('fresh inventory selects exact local bytes only for absent keys and explicit local HTML; existing content still requires Worker readback', () => {
+test('new HTML uses exact local bytes while shared assets retain inventory routing and Worker readback', () => {
   const record = { path: '/previews/p1/scene.webp', key: 'delivery/existing' },
     keys = new Set([record.key]);
   assert.equal(preferLocalStageSource(record, keys, {}), false);
@@ -135,4 +135,8 @@ test('fresh inventory selects exact local bytes only for absent keys and explici
   );
   assert.equal(preferLocalStageSource(record, keys, { UC_DELIVERY_LOCAL_ONLY: '1' }), true);
   assert.equal(preferLocalStageSource(record, undefined, {}), false);
+  const html = { ...record, path: '/art/scene/index.html' };
+  assert.equal(preferLocalStageSource(html, keys, {}), true);
+  assert.equal(preferLocalStageSource(html, undefined, {}), true);
+  assert.equal(preferLocalStageSource(html, keys, { UC_DELIVERY_LOCAL_HTML: '0' }), false);
 });
