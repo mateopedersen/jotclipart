@@ -1,0 +1,365 @@
+{
+  "schema": 1,
+  "topics": {
+    "catfish": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "015231fa3a15d1a5ee803812ea2b3befeb5e9361c0d861e635815d394e6a7110",
+      "checkedAt": "2026-10-30T10:58:10.217Z",
+      "intro": "Explore whiskered catfish among river stones, submerged roots and water plants, alongside playful characters and detailed black-and-white drawings.",
+      "evidence": [
+        {
+          "id": "catfish-by-tangled-roots-clipart",
+          "imageSha256": "311cef61e5a5d13cdffc8f158cc25deed54c243a388c3e6f6a8ff75640c48db5"
+        },
+        {
+          "id": "catfish-near-open-shells-clipart",
+          "imageSha256": "75fc7ff7f8b70555f0a5a87ee69f6d0d106dbe2835f2e04197f947e2662c2f66"
+        },
+        {
+          "id": "catfish-and-salamander-by-a-rock-clipart",
+          "imageSha256": "10bdcade06705be7fe9e614fcf80af0d9b24e0af0365ff6e5fafb480b597b9dd"
+        },
+        {
+          "id": "curved-catfish-profile-in-ink-clipart",
+          "imageSha256": "9eba05b23cea4cb9bc0ff6ea0d7742bc7b82efb72f05d31379afb12aa3d5a0e7"
+        }
+      ]
+    },
+    "northern-pike": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "a2c73b61a29462ea4b2f91c43e9eae555fd9b946d21969b8dc9f13983c1b0224",
+      "checkedAt": "2026-10-30T10:58:10.219Z",
+      "intro": "Long-bodied pike weave through reeds, branches and underwater scenes in this collection of colorful fish and monochrome illustrations.",
+      "evidence": [
+        {
+          "id": "pike-and-a-reed-loop-clipart",
+          "imageSha256": "f48b6a57eda0e5888974f0dd67ab0733caeee72bb4169195b3d0a8f85861030f"
+        },
+        {
+          "id": "pike-beneath-ice-clipart",
+          "imageSha256": "2f9e80848d555c9f1426e97fb92701cce05639bc407f7b931047354b347d4c65"
+        },
+        {
+          "id": "pike-between-curved-reeds-clipart",
+          "imageSha256": "b49df26e911d7df06b232178bead652887288c3db60bd7ff7cb81080c7b9b897"
+        },
+        {
+          "id": "pike-playing-a-harp-clipart",
+          "imageSha256": "a98f1ebbce4ae0f831be213d154cdfa47504fec6bc0fe946d52aafd7c01e054e"
+        }
+      ]
+    },
+    "flounder": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "5a58be952049b20c3c315ac51dfcf4ec624093c48895309e2d4985d310cb1e08",
+      "checkedAt": "2026-10-30T10:58:10.220Z",
+      "intro": "Flatfish glide over sandy seabeds, rest beside shells and appear as cheerful characters in these flounder illustrations.",
+      "evidence": [
+        {
+          "id": "flounder-on-sandy-bottom-clipart",
+          "imageSha256": "d2993540df9606b0a39aff8827deca2b3b7e8805a399bbce650f528669569a7d"
+        },
+        {
+          "id": "flounder-over-sand-ridges-clipart",
+          "imageSha256": "bc05ea6cbddbc8a10f92640a2bae5df4941b7b71bd602680466655e41dfe2eac"
+        },
+        {
+          "id": "two-flounder-over-seagrass-clipart",
+          "imageSha256": "cae1c4a4c64d3b44b0dbb2f889194d41c54cf52f70258a42fcdfd1c9a42f7cde"
+        },
+        {
+          "id": "two-flounder-in-ink-clipart",
+          "imageSha256": "c20165b8d22e1c75f9fba583176939640f93b1977112f67a4e48f48419b72002"
+        }
+      ]
+    },
+    "salmon": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "1517d46f46d0471b170100cf48d61e2a130cde01bfc9f50d115a1e584bfc130b",
+      "checkedAt": "2026-10-30T10:58:10.221Z",
+      "intro": "Find salmon leaping through rapids, swimming in cool streams and appearing in imaginative character scenes and ink-style drawings.",
+      "evidence": [
+        {
+          "id": "salmon-leaping-through-water-clipart",
+          "imageSha256": "adf0180784cc9bf900c8cc7f2a57dc14fcaa326443adf1af5f484642f84a2cc4"
+        },
+        {
+          "id": "salmon-and-golden-seaweed-clipart",
+          "imageSha256": "760a000b51491f39668b68e2976a76423614ade3c0426725126913f00aabd4f6"
+        },
+        {
+          "id": "salmon-above-evergreen-sprigs-clipart",
+          "imageSha256": "6bf47f807e398376c666047234670427ad56fdfff6e366830d5a78ee930076a8"
+        },
+        {
+          "id": "salmon-over-a-stone-in-ink-clipart",
+          "imageSha256": "1bbccf52985ab3993389170a8427f0ed67f74ac5183a1e47e408d435ca9141a0"
+        }
+      ]
+    },
+    "bass": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "9184d8efac70491579811fca18ccf9124b5db8e714ab94e17679cb64596c7314",
+      "checkedAt": "2026-10-30T10:58:10.221Z",
+      "intro": "Browse bass in underwater habitats, lively splashes and whimsical scenes, with colorful fish and black-and-white artwork.",
+      "evidence": [
+        {
+          "id": "bass-beneath-autumn-leaves-clipart",
+          "imageSha256": "d1041e25f8c945bcf844a47b0451110e5c4a44a7281d68ae2247409a06f7161d"
+        },
+        {
+          "id": "bass-beneath-curved-reeds-in-ink-clipart",
+          "imageSha256": "cba95775c270c6c1f26eae43672d531eee8e584f8c1b62d56f97afa232640c3d"
+        },
+        {
+          "id": "bass-leaping-above-a-hand-clipart",
+          "imageSha256": "bc1c73f9e2579d6bba6dd4c2718de309e80dc793eba9787aab813f797ef75023"
+        },
+        {
+          "id": "bass-and-a-waterfall-in-ink-clipart",
+          "imageSha256": "a55c7d36b78bb57612ca3b68e5f6ed243a16274b4f1542e0bb2556fd27fca31e"
+        }
+      ]
+    },
+    "trout": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "d07a51800301603696270b06a72b603a2e4944f5cc9c2fb13b40c1161352f36a",
+      "checkedAt": "2026-10-30T10:58:10.222Z",
+      "intro": "From spotted trout in flowing streams to woodland details and expressive characters, explore a variety of freshwater fish illustrations.",
+      "evidence": [
+        {
+          "id": "trout-rising-toward-an-insect-clipart",
+          "imageSha256": "bb8f7138f074bdb0e8435bf85d196eb499c36d5ae6b31ba94f4bf1660aac13b3"
+        },
+        {
+          "id": "trout-leaping-beside-a-rock-clipart",
+          "imageSha256": "1e317383f974cf65348c84c4f4c33010b5ae16d7602fbc1c45162fb8c51899d1"
+        },
+        {
+          "id": "trout-over-a-round-stone-clipart",
+          "imageSha256": "753dd63cba66b12dcbe4e3670a6dec043e1a5941e65a21f71ecc0feac3dd9481"
+        },
+        {
+          "id": "three-trout-profiles-in-ink-clipart",
+          "imageSha256": "0013d1844cabecc74ce74ba33f2202cfa7e0461d417352907ea8f0eb26b91c93"
+        }
+      ]
+    },
+    "tuna": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "5e2c2a0a91499143c170d825ec1886bcd849dbc32286146b27b25a5054193098",
+      "checkedAt": "2026-10-30T10:58:10.223Z",
+      "intro": "Discover streamlined tuna among ocean waves, small fish and playful nautical scenes, plus detailed monochrome designs.",
+      "evidence": [
+        {
+          "id": "yellow-finned-tuna-profile-clipart",
+          "imageSha256": "27703a7c2821bdc660e9b09e55b10a672db8409940a129604dffde0c8b91f482"
+        },
+        {
+          "id": "tuna-beneath-a-floating-line-clipart",
+          "imageSha256": "033967324c78c95aa7c3a2f7c8399aecd8405877ba27a9485772b6f240c4b65e"
+        },
+        {
+          "id": "blue-tuna-side-view-clipart",
+          "imageSha256": "82886ee0608f84e397ce01edd63b72c1b57568994205d992a6d9d957c8aa720e"
+        },
+        {
+          "id": "tuna-and-a-diving-bell-in-ink-clipart",
+          "imageSha256": "6f99e27f12c71f24effebbcbc10d80b0cdccde6110bb3e610e68799ba65d623e"
+        }
+      ]
+    },
+    "bluegill": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "2792c40593c718b51fe9ed2b228a085dee939f4b151c2bfb426623704c587137",
+      "checkedAt": "2026-10-30T10:58:10.223Z",
+      "intro": "Bluegill swim among pond plants, pebbles and tiny aquatic creatures in a mix of natural scenes and cheerful characters.",
+      "evidence": [
+        {
+          "id": "bluegill-above-water-plants-clipart",
+          "imageSha256": "0b86357bd483a52e5e653a6b04b4c8a04b47dea96840beea47b0b169a0fe2f2b"
+        },
+        {
+          "id": "bluegill-holding-bubbles-clipart",
+          "imageSha256": "5ff8b5a0ebb0b9c72d6d2d1887444797c3a72e6b61bdf7a1dcb98e00e5797a9f"
+        },
+        {
+          "id": "bluegill-in-a-leaf-hammock-clipart",
+          "imageSha256": "a1ed21aed9c48c05b6edf960b0ee213567e0a65a678f391151f555a223d9eec6"
+        },
+        {
+          "id": "bluegill-framed-by-lily-stems-clipart",
+          "imageSha256": "08f26ab9aea691947ff617d6749b43586af6c4fea1cb1f1262372a5e47dac306"
+        }
+      ]
+    },
+    "largemouth-bass": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "6c20cd73058760eceecd0dc51a4d5c3862468c0d77629cbe2f1542b30f4cd4d5",
+      "checkedAt": "2026-10-30T10:58:10.223Z",
+      "intro": "Explore wide-mouthed bass around lily pads, submerged roots and reeds, with playful pond characters and detailed ink drawings.",
+      "evidence": [
+        {
+          "id": "largemouth-bass-above-small-fish-clipart",
+          "imageSha256": "4726084d8e7e21b95778fc704e26daaf269181a78077ebe2eac76af6868c8bf5"
+        },
+        {
+          "id": "largemouth-bass-sheltering-a-small-fish-drawing-clipart",
+          "imageSha256": "4553a53ddd32bd1f7b9ea4beb3c824f8720ff73de4de8546e172bc0fdf23ae27"
+        },
+        {
+          "id": "largemouth-bass-magician-clipart",
+          "imageSha256": "d57429ed8168741e0748fc8ef3981f3a40d3a83db51c1181a0c196d7e004b40b"
+        },
+        {
+          "id": "largemouth-bass-beneath-hanging-roots-clipart",
+          "imageSha256": "cc708410f5dbed9967b19a84d41d7d688268e9e4f4f1f81ad01d87ada63af3e3"
+        }
+      ]
+    },
+    "rainbow-trout": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "7f3494fd9d1e78abe3a1becf493c457675731c36282d2913a4bad1d4d30e43b6",
+      "checkedAt": "2026-10-30T10:58:10.223Z",
+      "intro": "Pink-striped trout leap through streams, shelter beneath roots and appear beside water lilies, butterflies and other pond details.",
+      "evidence": [
+        {
+          "id": "rainbow-trout-leaping-from-a-stream-clipart",
+          "imageSha256": "49f5e8027a6b9ae323be35f145305a24c3697196000808649474e0e790a59385"
+        },
+        {
+          "id": "rainbow-trout-and-tall-pond-leaves-clipart",
+          "imageSha256": "7479c245bd1c65adbe1b325126bc5f89dcd4c88d0ef83148114f555562e6abd2"
+        },
+        {
+          "id": "rainbow-trout-leaping-upstream-clipart",
+          "imageSha256": "b82da0660c2a5c718882a7e4734b6a24eaeba358193b05911a855443110646bd"
+        },
+        {
+          "id": "rainbow-trout-curved-in-profile-drawing-clipart",
+          "imageSha256": "d38777008b95c7d6087e68f1b3c0ece7de8efa6354aa58f5ea2ec9cec6f1c617"
+        }
+      ]
+    },
+    "red-snapper": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "81ef9be276bbd29cdaf848ec441d542ac8daa3e4dc3a27b58bdf809fe1b2c981",
+      "checkedAt": "2026-10-30T10:58:10.224Z",
+      "intro": "Red fish swim past corals, shells and sea fans in these reef scenes, with colorful character art and detailed line drawings.",
+      "evidence": [
+        {
+          "id": "red-snapper-above-reef-plants-clipart",
+          "imageSha256": "5e07043ae1b45304829968fe4518570b9f615908b7392f73dd89a269bbfad391"
+        },
+        {
+          "id": "red-snapper-pair-above-seashells-clipart",
+          "imageSha256": "b54f7d479d1928b5db7976914e134850f471678497bcda90b7ae310d80a4f507"
+        },
+        {
+          "id": "red-snapper-above-sand-dollars-and-shells-clipart",
+          "imageSha256": "799b32ebce1940f99bdcffad05633795015013505ab4827dba9c37adc82fa144"
+        },
+        {
+          "id": "red-snapper-examining-coral-drawing-clipart",
+          "imageSha256": "3459f61f54b0e63fa6465157ea10df42cfa09793c6a37f4628724effe6e4e25f"
+        }
+      ]
+    },
+    "walleye": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "ad17688b6e7e466736d57fa68d6b1fb80ff82a677182be878e6a30453ceb4478",
+      "checkedAt": "2026-10-30T10:58:10.224Z",
+      "intro": "Golden walleye swim above stony riverbeds, beneath ice and among underwater roots, with creative character scenes and ink drawings.",
+      "evidence": [
+        {
+          "id": "walleye-with-a-starry-orb-clipart",
+          "imageSha256": "17a1b652988b1da17693a0e54d79a6bec6381f35f7fd818fa61c6824e1fbbb96"
+        },
+        {
+          "id": "walleye-detective-with-magnifying-glass-clipart",
+          "imageSha256": "11195c6ec21e3f8814ab3521b305216b79a8268507e4bb9a882518fbfb742e29"
+        },
+        {
+          "id": "walleye-and-small-striped-fish-clipart",
+          "imageSha256": "c463141cac1b73d4c99258584cb9dc157f63550ffde9b10284d2eb7f8d25e7b5"
+        },
+        {
+          "id": "walleye-resting-in-river-plants-clipart",
+          "imageSha256": "54196893e4194b3345d91563299df8306917735bc5660d114ae68cdeaa466676"
+        }
+      ]
+    },
+    "mahi-mahi": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "235a9b59115aa462f9791d18332ad2c2b80210e8c390c267da0a28899727ea53",
+      "checkedAt": "2026-10-30T10:58:10.224Z",
+      "intro": "Bright blue, green and gold mahi-mahi swim through ocean currents and seaweed, alongside tropical characters and monochrome art.",
+      "evidence": [
+        {
+          "id": "green-and-gold-mahi-mahi-clipart",
+          "imageSha256": "6eb7580ed159eb183216b2c17debaf0483e6036784c04b453ebb86b5330c7127"
+        },
+        {
+          "id": "mahi-mahi-and-golden-seaweed-clipart",
+          "imageSha256": "4534f08546e39b2fd56d112a4490fb8f02bc9068a8786b0089c261e3d039e50b"
+        },
+        {
+          "id": "three-mahi-mahi-together-clipart",
+          "imageSha256": "8dec3de17bda8f7f9b1ac94c89d3a7ee665efae1af68931f2dd4ef16b15f8518"
+        },
+        {
+          "id": "mahi-mahi-and-butterfly-drawing-clipart",
+          "imageSha256": "75e50331afcc1be6eb4e1c06f5f999edb1e9e90e6ff91f1ee0a7044750358cd7"
+        }
+      ]
+    },
+    "swordfish": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "58dd7baa343aa76996b593d5d314035d3eeb95ed74ca661403c8273423be1aa6",
+      "checkedAt": "2026-10-30T10:58:10.225Z",
+      "intro": "Long-billed ocean fish dive through waves, swim beside squid and appear in playful character scenes and black-and-white drawings.",
+      "evidence": [
+        {
+          "id": "swordfish-cutting-through-a-splash-clipart",
+          "imageSha256": "84af9d7ac830eeb20110eb05f693aa9bb5da2f2288ff24ac40b3b5dc34f7d85e"
+        },
+        {
+          "id": "swordfish-beneath-a-school-of-fish-clipart",
+          "imageSha256": "c0fd812c31eb695ab8c0f472aba9bf88f6b66dffbd69d3647e0aeaffe29977fb"
+        },
+        {
+          "id": "swordfish-and-three-silver-fish-clipart",
+          "imageSha256": "80e33062fb0125ffff264fe40ee7f0f07cdfce3e8534196bfa367978abd4e6ed"
+        },
+        {
+          "id": "swordfish-and-hanging-bell-drawing-clipart",
+          "imageSha256": "ba60d89e52e9f144c81bed60c7cfed78fc852350dd183ef3f09b7ffade580598"
+        }
+      ]
+    },
+    "marlin": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "7285e05bce4b6f888ffed5f32909a0c2e5a4beecb2a3bcbbb1e7f281466fe93f",
+      "checkedAt": "2026-10-30T10:58:10.225Z",
+      "intro": "Striped marlin leap through ocean spray, follow schools of fish and bring a nautical touch to colorful and monochrome illustrations.",
+      "evidence": [
+        {
+          "id": "blue-marlin-leaping-from-the-ocean-clipart",
+          "imageSha256": "95cc1a74dfe89e66618b3cde64da920d821bce9766b00abb96aa57ad7285a7d9"
+        },
+        {
+          "id": "marlin-diving-through-a-wave-clipart",
+          "imageSha256": "018e07b956a1e7ad76ad20b98b92f69a3890383fe2158188f7f8a99df32ae827"
+        },
+        {
+          "id": "marlin-beneath-flying-fish-clipart",
+          "imageSha256": "4680cb08c1aafd9916c0310f2a4e3e711f897b9ac20cae3e4730011bbe8f6f5d"
+        },
+        {
+          "id": "marlin-carrying-a-letter-drawing-clipart",
+          "imageSha256": "2fa64a785aae850afccc1886415dd23e9871388028d278a187299addec691696"
+        }
+      ]
+    }
+  }
+}

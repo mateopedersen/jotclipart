@@ -1890,5 +1890,80 @@
   "jesus": [],
   "mundan": [],
   "upanayanam": [],
-  "cloud": []
+  "cloud": [],
+  "catfish": [
+    "walleye",
+    "trout",
+    "bass"
+  ],
+  "northern-pike": [
+    "walleye",
+    "largemouth-bass",
+    "trout"
+  ],
+  "flounder": [
+    "red-snapper",
+    "ocean",
+    "jellyfish"
+  ],
+  "salmon": [
+    "rainbow-trout",
+    "trout",
+    "river"
+  ],
+  "bass": [
+    "largemouth-bass",
+    "bluegill",
+    "walleye"
+  ],
+  "trout": [
+    "rainbow-trout",
+    "salmon",
+    "river"
+  ],
+  "tuna": [
+    "mahi-mahi",
+    "swordfish",
+    "marlin"
+  ],
+  "bluegill": [
+    "largemouth-bass",
+    "bass",
+    "walleye"
+  ],
+  "largemouth-bass": [
+    "bass",
+    "bluegill",
+    "northern-pike"
+  ],
+  "rainbow-trout": [
+    "trout",
+    "salmon",
+    "river"
+  ],
+  "red-snapper": [
+    "flounder",
+    "mahi-mahi",
+    "ocean"
+  ],
+  "walleye": [
+    "northern-pike",
+    "bass",
+    "catfish"
+  ],
+  "mahi-mahi": [
+    "tuna",
+    "marlin",
+    "ocean"
+  ],
+  "swordfish": [
+    "marlin",
+    "tuna",
+    "ocean"
+  ],
+  "marlin": [
+    "swordfish",
+    "tuna",
+    "mahi-mahi"
+  ]
 }
