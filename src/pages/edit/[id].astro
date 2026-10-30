@@ -3,8 +3,9 @@ import Layout from '../../layouts/Layout.astro';
 import Editor from '../../components/Editor.astro';
 import { art } from '../../lib/catalog';
 import { editorScreen } from '../../lib/editor-screen';
+import { renderArtworkScope } from '../../lib/delivery-build-scope';
 export function getStaticPaths() {
-  return art.map((item) => ({ params: { id: item.id }, props: { item } }));
+  return renderArtworkScope(art).map((item) => ({ params: { id: item.id }, props: { item } }));
 }
 const { item } = Astro.props;
 const editorItem = editorScreen(item);

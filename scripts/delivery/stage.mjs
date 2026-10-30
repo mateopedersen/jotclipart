@@ -20,6 +20,13 @@ import { createBoundInventoryReader, readOnlyRangeHints } from './inventory-read
 import { awaitAccountWriter } from './account-lock.mjs';
 import { prepareLocalStagePayload, preferLocalStageSource } from './local-batch.mjs';
 import {
+  splitVerificationPhase,
+  verifyExistingFiles,
+  validateVerificationReceipt,
+} from './verification-batch.mjs';
+import { verifiedReuse } from './verified-reuse.mjs';
+import { readIncrementalPlan, incrementalCollectionOptions } from './incremental.mjs';
+import {
   deliveryActorCount,
   inventoryPageCount,
   IN_FLIGHT_ALLOWANCE_BYTES,
@@ -35,7 +42,12 @@ async function main() {
     notify: console.log,
   });
   try {
-    const allFiles = collectDeliveryFiles(dist, revision),
+    const incrementalPlan = readIncrementalPlan(root);
+    const allFiles = collectDeliveryFiles(
+        dist,
+        revision,
+        incrementalCollectionOptions(root, incrementalPlan),
+      ),
       tree = merkle(allFiles);
     const accountId = '48c779c8eaa80234e0bb9d57f96e588b',
       bucket = 'ultraclipart-pages';
@@ -57,6 +69,7 @@ async function main() {
       if (error.code !== 'ENOENT') throw error;
     }
     const records = allFiles.map((record, index) => ({ record, proof: tree.proof(index) }));
+    const reuse = await verifiedReuse(root, records);
     let remaining = records.filter(({ record }) => {
       const old = done.get(record.path);
       return (
@@ -85,6 +98,7 @@ async function main() {
       sourceOrigin,
       inventoryBuckets,
       inventoryPages: inventoryPageCount(),
+      reuseRoot: reuse.root,
     };
     writeFileSync(
       join(work, 'job-entry.mjs'),
@@ -111,6 +125,21 @@ async function main() {
       failed = false,
       remoteReady = false,
       knownKeys;
+    function recordVerified(row) {
+      const prior = done.get(row.path);
+      if (prior?.sha256 === row.sha256 && prior.key === row.key && prior.bytes === row.bytes)
+        return;
+      appendFileSync(
+        journalPath,
+        JSON.stringify({ ...row, root: tree.root, at: new Date().toISOString() }) + '\n',
+      );
+      done.set(row.path, row);
+      if (!prior) completed++;
+      if (completed >= nextProgress || completed === allFiles.length) {
+        while (nextProgress <= completed) nextProgress += 200;
+        console.log(JSON.stringify({ verified: completed, total: allFiles.length }));
+      }
+    }
     async function reservation(force = false) {
       if (!force && lease && Date.now() - lease.observedAt < 40_000) return lease;
       if (!leasePromise)
@@ -119,23 +148,24 @@ async function main() {
             remaining.slice(cursor).reduce((sum, x) => sum + x.record.bytes, 0) +
             IN_FLIGHT_ALLOWANCE_BYTES;
           const measuredStartedAt = Date.now();
-          const measure = () => measureReservation(
-            accountId,
-            unverified,
-            remoteReady
-              ? createBoundInventoryReader({
-                  buckets: inventoryBuckets,
-                  fetchPage: createSignedInventoryFetch({ secret }),
-                })
-              : undefined,
-            (inventory) => {
-              const target = inventory.buckets.find(
-                (b) => b.name === bucket && b.jurisdiction === 'default',
-              );
-              if (!target) throw Error('Existing target bucket is missing');
-              knownKeys = new Set(target.objects.map((o) => o.key));
-            },
-          );
+          const measure = () =>
+            measureReservation(
+              accountId,
+              unverified,
+              remoteReady
+                ? createBoundInventoryReader({
+                    buckets: inventoryBuckets,
+                    fetchPage: createSignedInventoryFetch({ secret }),
+                  })
+                : undefined,
+              (inventory) => {
+                const target = inventory.buckets.find(
+                  (b) => b.name === bucket && b.jurisdiction === 'default',
+                );
+                if (!target) throw Error('Existing target bucket is missing');
+                knownKeys = new Set(target.objects.map((o) => o.key));
+              },
+            );
           const updateRanges = (roster) => {
             for (const current of inventoryBuckets) {
               const fresh = roster.find(
@@ -151,7 +181,9 @@ async function main() {
             ? await freshBindingReservation(measure, {
                 onStale: (roster) => {
                   updateRanges(roster);
-                  console.log('Slow complete census: read-only ranges refreshed; repeating the full measurement without granting a write lease.');
+                  console.log(
+                    'Slow complete census: read-only ranges refreshed; repeating the full measurement without granting a write lease.',
+                  );
                 },
               })
             : await measure();
@@ -250,18 +282,39 @@ async function main() {
       }
       if (!ready) throw Error('Private remote staging session did not become ready');
       remoteReady = true;
-      // A slow REST census cannot authorize a write. Re-read the full live
-      // roster and every object through the bounded remote reader first.
-      await reservation(true);
+      // Reads allocate no storage. Independently hash the shared assets without
+      // granting a write lease or repeatedly measuring account capacity. Missing
+      // files alone join the ordinary fresh-census/conditional-write path below.
+      if (process.env.UC_DELIVERY_VERIFY_EXISTING !== '0') {
+        const { existingCandidates, writes } = splitVerificationPhase(remaining, revision);
+        const missing = await verifyExistingFiles(existingCandidates, {
+          actors,
+          root: tree.root,
+          accountId,
+          bucket,
+          secret,
+          onVerified: recordVerified,
+          attachPrior: reuse.attach,
+        });
+        remaining = [...missing, ...writes];
+        console.log(
+          `Read-only verification: ${existingCandidates.length - missing.length} existing files verified; ${remaining.length} files require reserved staging.`,
+        );
+      }
+      // A prior REST census or read-only receipt never authorizes a write.
+      // The first transfer and all later renewals use the complete live account.
+      lease = undefined;
       console.log(
         `Private staging ready: ${remaining.length} remaining of ${allFiles.length}, root ${tree.root}`,
       );
       async function transfer(batch, local = false, leaseRetries = 0, preparedPayload) {
         // File reads, base64 conversion and compression precede lease acquisition.
         // A lease retry reuses the same immutable, source-bound payload.
-        const encoded = preparedPayload ?? (local
-          ? await prepareLocalStagePayload(dist, batch)
-          : JSON.stringify({ records: batch }));
+        const encoded =
+          preparedPayload ??
+          (local
+            ? await prepareLocalStagePayload(dist, batch)
+            : JSON.stringify({ records: batch }));
         const current = await reservation();
         const { roster: _partitionHints, ...writeLease } = current;
         const authorization = JSON.stringify({
@@ -270,7 +323,8 @@ async function main() {
             .update(JSON.stringify(writeLease))
             .digest('hex'),
         });
-        if (authorization.length > 16_000) throw Error('Storage authorization metadata exceeds bound');
+        if (authorization.length > 16_000)
+          throw Error('Storage authorization metadata exceeds bound');
         let last;
         for (let attempt = 0; attempt < 3; attempt++) {
           try {
@@ -302,28 +356,8 @@ async function main() {
               throw Error(`Staging HTTP ${response.status}: ${detail}`);
             }
             const result = await response.json();
-            if (result.root !== tree.root || result.verified?.length !== batch.length)
-              throw Error('Invalid verification receipt');
-            for (const { record } of batch) {
-              const row = result.verified.find((v) => v.path === record.path);
-              if (
-                !row ||
-                row.key !== record.key ||
-                row.bytes !== record.bytes ||
-                row.sha256 !== record.sha256
-              )
-                throw Error('Remote verification receipt differs');
-              appendFileSync(
-                journalPath,
-                JSON.stringify({ ...row, root: tree.root, at: new Date().toISOString() }) + '\n',
-              );
-              done.set(row.path, row);
-              completed++;
-            }
-            if (completed >= nextProgress || completed === allFiles.length) {
-              while (nextProgress <= completed) nextProgress += 200;
-              console.log(JSON.stringify({ verified: completed, total: allFiles.length }));
-            }
+            validateVerificationReceipt(result, batch, tree.root);
+            for (const row of result.verified) recordVerified(row);
             return;
           } catch (error) {
             if (error.permanent) throw error;
@@ -397,6 +431,7 @@ async function main() {
           root: tree.root,
           verified: allFiles.length,
           files: allFiles,
+          ...(incrementalPlan ? { incrementalPlan } : {}),
           at: new Date().toISOString(),
         }) + '\n',
       );

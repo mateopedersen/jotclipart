@@ -9,6 +9,7 @@ import { preparePreviewAssets } from './scripts/preview-assets.mjs';
 import { readFileSync } from 'node:fs';
 import { spawn } from 'node:child_process';
 import { buildSiteIcons, siteIconFiles } from './scripts/build-site-icons.mjs';
+import { incrementalInheritance } from './scripts/delivery/incremental.mjs';
 
 // Run even when CI or Pages invokes Astro directly instead of the package script.
 checkSourceCatalog();
@@ -35,6 +36,7 @@ export default defineConfig({
   devToolbar: { enabled: false },
   build: { inlineStylesheets: 'always' },
   integrations: [
+    incrementalInheritance(),
     productionPublicAssets(production),
     {
       name: 'ultraclipart-site-icons',

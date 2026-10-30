@@ -1,3 +1,4 @@
+import { refreshRelatedRepresentation } from './related-version.mjs';
 const htmlRoute = /^\/(art|edit)\/([a-z0-9]+(?:-[a-z0-9]+)*)\/?$/;
 const previewRoute = /^\/previews\/p1\/[a-f0-9]{24}-(96|220|320|440|640|960)\.webp$/;
 const assetRoute = /^\/_astro\/[A-Za-z0-9_.-]+$/;
@@ -13,6 +14,22 @@ export function createPublicFileHandler(options) {
     throw Error('Verified delivery release required');
   const ids = new Set(options.ids),
     withdrawn = new Set(options.withdrawnIds ?? []);
+  const htmlRevisions = new Map();
+  if (
+    options.relatedVersion !== undefined &&
+    (typeof options.relatedVersion !== 'string' ||
+      !/^[a-zA-Z0-9_.:-]{1,256}$/.test(options.relatedVersion))
+  )
+    throw Error('Invalid related release marker');
+  for (const [revision, members] of options.htmlRevisions ?? []) {
+    if (!/^[a-f0-9]{40}$/.test(revision) || !Array.isArray(members))
+      throw Error('Invalid inherited HTML revision');
+    for (const id of members) {
+      if (!ids.has(id) || htmlRevisions.has(id))
+        throw Error('Foreign or duplicate HTML inheritance');
+      htmlRevisions.set(id, revision);
+    }
+  }
   return async function handle(
     request,
     env,
@@ -37,8 +54,16 @@ export function createPublicFileHandler(options) {
     }
     if (!env.CATALOG_PAGES) return temporary();
     const pathname = url.pathname;
+    const htmlRevision = html
+      ? (htmlRevisions.get(match[2]) ?? options.revision)
+      : options.revision;
+    const refreshRelated =
+      html &&
+      match[1] === 'art' &&
+      htmlRevision !== options.revision &&
+      Boolean(options.relatedVersion);
     const objectKey = html
-      ? `delivery/${options.revision}${pathname}index.html`
+      ? `delivery/${htmlRevision}${pathname}index.html`
       : pathname.startsWith('/_astro/')
         ? `delivery/assets${pathname}`
         : `delivery${pathname}`;
@@ -87,15 +112,22 @@ export function createPublicFileHandler(options) {
     headers.set('Content-Type', object.httpMetadata?.contentType ?? 'application/octet-stream');
     headers.set('Content-Length', String(object.size));
     headers.set('ETag', object.httpEtag);
+    if (refreshRelated) {
+      headers.delete('Content-Length');
+      headers.set(
+        'ETag',
+        `W/"${object.etag ?? object.httpEtag.replaceAll('"', '')}-${options.revision}"`,
+      );
+    }
     headers.set(
       'Cache-Control',
       html
         ? 'public,max-age=0,s-maxage=300,must-revalidate,no-transform'
         : 'public,max-age=31536000,immutable,no-transform',
     );
-    headers.set('X-UC-Delivery', `r2; html=${options.revision}`);
+    headers.set('X-UC-Delivery', `r2; html=${htmlRevision}`);
     if (html && match[1] === 'edit') headers.set('X-Robots-Tag', 'noindex');
-    if (request.headers.get('If-None-Match') === object.httpEtag)
+    if (request.headers.get('If-None-Match') === headers.get('ETag'))
       return new Response(null, { status: 304, headers });
     let status = 200;
     if (
@@ -145,10 +177,17 @@ export function createPublicFileHandler(options) {
       if (!object) return temporary();
     }
     if (!html) headers.set('Accept-Ranges', 'bytes');
-    const response = new Response(request.method === 'HEAD' ? null : object.body, {
+    let response = new Response(request.method === 'HEAD' ? null : object.body, {
       status,
       headers,
     });
+    if (refreshRelated && request.method !== 'HEAD') {
+      try {
+        response = refreshRelatedRepresentation(response, match[2], options.relatedVersion);
+      } catch {
+        return temporary();
+      }
+    }
     if (request.method === 'GET' && !range && status === 200 && cache && context?.waitUntil) {
       const stored = response.clone();
       if (html) stored.headers.set('Cache-Control', 'public,max-age=300,no-transform');

@@ -19,3 +19,6 @@ public/previews/
 
 # Preserve accepted IndexNow URL ledger across builds and cleanup.
 /.indexnow/
+
+# Private, authenticated local byte-verification cache; never a release asset.
+/.asset-integrity/

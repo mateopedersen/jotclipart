@@ -1,5 +1,6 @@
 import { createHash } from 'node:crypto';
 import { readFileSync, realpathSync } from 'node:fs';
+import { verifiedSourceCache } from './verified-source-cache.mjs';
 import { basename, join, posix } from 'node:path';
 import {
   sourceTypeOf,
@@ -166,6 +167,14 @@ export function catalogFiles(catalog) {
 
 /** Reject incomplete or stale releases before any production HTML is generated. */
 export function validatePublication(manifest, catalog, readAsset) {
+  return validatePublicationWithVerifier(manifest, catalog, (asset, file) => {
+    const body = readAsset(asset.path);
+    if (body.length !== file.bytes || hash(body) !== file.sha256)
+      throw new Error(`Source changed after CDN verification: ${file.path}`);
+  });
+}
+
+function validatePublicationWithVerifier(manifest, catalog, verify) {
   const files = validateManifest(manifest),
     expected = catalogFiles(catalog);
   if (files.size !== expected.length)
@@ -182,9 +191,7 @@ export function validatePublication(manifest, catalog, readAsset) {
       file.sha256 !== asset.sha256
     )
       throw new Error(`Unverified catalog asset: ${asset.assetId}/${asset.kind}`);
-    const body = readAsset(asset.path);
-    if (body.length !== file.bytes || hash(body) !== file.sha256)
-      throw new Error(`Source changed after CDN verification: ${file.path}`);
+    verify(asset, file);
     assetUrls[asset.assetId] ??= {};
     assetUrls[asset.assetId][asset.kind] = file.url;
   }
@@ -200,13 +207,18 @@ export function validatePublication(manifest, catalog, readAsset) {
 export function readPublication(root) {
   const readJson = (path) => JSON.parse(readFileSync(join(root, path), 'utf8'));
   const publicRoot = realpathSync(join(root, 'public'));
-  return validatePublication(
+  const cache = verifiedSourceCache(root);
+  const result = validatePublicationWithVerifier(
     readJson('data/publication.json'),
     readJson('data/art.json'),
-    (path) => {
-      const file = realpathSync(join(publicRoot, validateLocalAssetPath(path)));
+    (asset, expected) => {
+      const file = realpathSync(join(publicRoot, validateLocalAssetPath(asset.path)));
       if (!file.startsWith(`${publicRoot}/`)) throw new Error('Source symlink escapes public/');
-      return readFileSync(file);
+      cache.verify(file, expected);
     },
   );
+  cache.save();
+  if (process.env.UC_SOURCE_CACHE_REPORT === '1')
+    console.log('Source verification:', JSON.stringify(cache.stats));
+  return result;
 }

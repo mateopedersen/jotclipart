@@ -24,7 +24,7 @@ export function stagingWorker(job) {
       const url = new URL(request.url);
       if (request.method === 'GET' && url.pathname === '/health')
         return json({ root: job.root, revision: job.revision });
-      if (request.method !== 'POST' || !['/stage', '/inventory'].includes(url.pathname))
+      if (request.method !== 'POST' || !['/stage', '/verify', '/inventory'].includes(url.pathname))
         return json({ error: 'Not found' }, 404);
       if (Number(request.headers.get('content-length')) > 12_000_000)
         return json({ error: 'Request too large' }, 413);
@@ -72,8 +72,12 @@ export function stagingWorker(job) {
           if (body.lease !== undefined || body.signature !== undefined)
             throw Error('Ambiguous staging authorization');
           const auth = JSON.parse(authorization);
-          if (!auth || typeof auth !== 'object' || Array.isArray(auth) ||
-              Object.keys(auth).some((key) => !['lease', 'signature'].includes(key)))
+          if (
+            !auth ||
+            typeof auth !== 'object' ||
+            Array.isArray(auth) ||
+            Object.keys(auth).some((key) => !['lease', 'signature'].includes(key))
+          )
             throw Error('Invalid staging authorization metadata');
           body.lease = auth.lease;
           body.signature = auth.signature;
@@ -147,16 +151,28 @@ export function stagingWorker(job) {
         }
         return json({ IsTruncated: truncated, NextContinuationToken: cursor, Contents: entries });
       }
-      const lease = body.lease;
+      const readOnly = url.pathname === '/verify';
+      const lease = readOnly ? body.command : body.lease;
+      if (readOnly && (rawBlob || body.blobs !== undefined || body.lease !== undefined))
+        return json({ error: 'Read-only verification accepts no write source or lease' }, 400);
       if (
-        !lease ||
-        lease.root !== job.root ||
-        lease.accountId !== job.accountId ||
-        lease.bucket !== job.bucket ||
-        !Number.isSafeInteger(lease.projectedBytes) ||
-        lease.projectedBytes > 10_000_000_000_000 ||
-        lease.observedAt > Date.now() ||
-        Date.now() - lease.observedAt > 45_000
+        readOnly
+          ? !lease ||
+            lease.action !== 'verify' ||
+            lease.root !== job.root ||
+            lease.accountId !== job.accountId ||
+            lease.bucket !== job.bucket ||
+            !Number.isSafeInteger(lease.at) ||
+            lease.at > Date.now() ||
+            Date.now() - lease.at > 45_000
+          : !lease ||
+            lease.root !== job.root ||
+            lease.accountId !== job.accountId ||
+            lease.bucket !== job.bucket ||
+            !Number.isSafeInteger(lease.projectedBytes) ||
+            lease.projectedBytes > 10_000_000_000_000 ||
+            lease.observedAt > Date.now() ||
+            Date.now() - lease.observedAt > 45_000
       )
         return json({ error: 'Fresh storage reservation required' }, 409);
       const key = await crypto.subtle.importKey(
@@ -180,16 +196,22 @@ export function stagingWorker(job) {
       // eight-megabyte total response bound below still apply to every file.
       if (!Array.isArray(body.records) || body.records.length < 1 || body.records.length > 64)
         return json({ error: 'At most 64 files per invocation' }, 400);
-      const checked = [];
+      const checked = [],
+        paths = new Set(),
+        keys = new Set();
       const proofHashes = new Map();
       async function proofHash(pair) {
         if (!proofHashes.has(pair)) proofHashes.set(pair, hash(hex(pair)));
         return proofHashes.get(pair);
       }
       let totalBytes = 0;
-      for (const { record, proof } of body.records) {
+      for (const { record, proof, prior } of body.records) {
         if (
           !record ||
+          typeof record.path !== 'string' ||
+          typeof record.key !== 'string' ||
+          paths.has(record.path) ||
+          keys.has(record.key) ||
           (job.media === true &&
             (!['image/webp', 'image/svg+xml', 'application/pdf'].includes(record.mime) ||
               (record.mime === 'application/pdf' && record.bytes > 1_000_000))) ||
@@ -215,11 +237,45 @@ export function stagingWorker(job) {
         if (node !== job.root) return json({ error: 'Source outside reviewed manifest' }, 403);
         totalBytes += record.bytes;
         if (totalBytes > 8_000_000) return json({ error: 'Batch byte bound exceeded' }, 413);
-        checked.push(record);
+        paths.add(record.path);
+        keys.add(record.key);
+        if (prior) {
+          if (
+            !readOnly ||
+            !/^[a-f0-9]{64}$/.test(job.reuseRoot ?? '') ||
+            typeof prior.etag !== 'string' ||
+            !prior.etag.length ||
+            prior.etag.length > 256 ||
+            !/^[a-f0-9]{64}$/.test(prior.previousRoot ?? '') ||
+            !Array.isArray(prior.proof) ||
+            prior.proof.length > 24
+          )
+            return json({ error: 'Invalid prior verification' }, 403);
+          let previous = await hash(
+            encode.encode(
+              JSON.stringify({
+                ...record,
+                previousRoot: prior.previousRoot,
+                etag: prior.etag,
+              }),
+            ),
+          );
+          for (const p of prior.proof) {
+            if (!/^[a-f0-9]{64}$/.test(p.hash ?? '') || typeof p.left !== 'boolean')
+              return json({ error: 'Invalid prior proof' }, 403);
+            previous = await proofHash(p.left ? p.hash + previous : previous + p.hash);
+          }
+          if (previous !== job.reuseRoot) return json({ error: 'Unverified prior receipt' }, 403);
+        }
+        checked.push({ record, prior });
       }
       const results = await Promise.all(
-        checked.map(async (record) => {
-          let object = await env.TARGET.get(record.key);
+        checked.map(async ({ record, prior }) => {
+          let object = await env.TARGET.get(
+            record.key,
+            prior ? { onlyIf: { etagDoesNotMatch: prior.etag } } : undefined,
+          );
+          if (!object && readOnly) return { missing: true, ...record };
           if (!object) {
             // Local bytes are mandatory for new releases. Initial migration may copy
             // the same checked bytes from the current site; a mismatch never writes.
@@ -241,6 +297,7 @@ export function stagingWorker(job) {
               throw Error(`Source checksum mismatch: ${record.path}`);
             await env.TARGET.put(record.key, bytes, {
               onlyIf: { etagDoesNotMatch: '*' },
+              sha256: record.sha256,
               httpMetadata: {
                 contentType: record.mime,
                 ...(record.contentDisposition
@@ -260,18 +317,38 @@ export function stagingWorker(job) {
             object.httpMetadata?.contentType !== record.mime ||
             (record.contentDisposition !== undefined &&
               object.httpMetadata?.contentDisposition !== record.contentDisposition) ||
-            (await hash(await object.arrayBuffer())) !== record.sha256
+            // A failed conditional GET returns metadata without a body. It is
+            // reusable only for the exact previously byte-verified validator.
+            (typeof object.arrayBuffer === 'function'
+              ? (await hash(await object.arrayBuffer())) !== record.sha256
+              : !prior || object.etag !== prior.etag)
           )
-            throw Error(`Remote checksum mismatch: ${record.path}`);
+            if (readOnly) return { mismatch: true };
+            else throw Error(`Remote checksum mismatch: ${record.path}`);
           return {
             path: record.path,
             key: record.key,
             sha256: record.sha256,
             bytes: record.bytes,
             etag: object.etag,
+            ...(prior && typeof object.arrayBuffer !== 'function'
+              ? {
+                  verification: 'prior-byte-proof-and-current-etag',
+                  previousRoot: prior.previousRoot,
+                }
+              : {}),
           };
         }),
       );
+      if (readOnly) {
+        if (results.some((row) => row.mismatch))
+          return json({ error: 'Remote checksum or metadata mismatch' }, 422);
+        return json({
+          root: job.root,
+          verified: results.filter((row) => !row.missing),
+          missing: results.filter((row) => row.missing).map(({ missing, ...record }) => record),
+        });
+      }
       return json({ root: job.root, verified: results });
     },
   };
