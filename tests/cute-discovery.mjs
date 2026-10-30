@@ -74,6 +74,31 @@ test('decorative materials alone do not make ordinary objects cheerful subjects'
     }) > 0,
   );
 });
+test('heraldic arms and clock faces do not make plain banners or festive lettering cute', () => {
+  for (const [id, title, alt, topic] of [
+    [
+      'flowing-flag',
+      'Flowing tricolor fabric',
+      'Fabric curves into a waving flag with an illustrated coat of arms.',
+      'future-flag',
+    ],
+    [
+      'midnight-clock',
+      'Happy New Year midnight clock',
+      'A gold clock face with clock hands and Happy New Year lettering.',
+      'future-year',
+    ],
+  ])
+    assert.equal(cuteConfidence({ ...sample, id, title, alt, topic }), 0, id);
+  assert(
+    cuteConfidence({
+      ...sample,
+      topic: 'future-flag',
+      title: 'Smiling banner mascot',
+      alt: 'A smiling flag character with bright eyes and small waving hands.',
+    }) > 0,
+  );
+});
 test('explicit review cannot override monochrome or frightening subject exclusions', () => {
   for (const id of [
     'cute-black-and-white-rabbit',

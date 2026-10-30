@@ -8,6 +8,7 @@ import { packageContexts, packageMetadata } from '../scripts/remaining-thirty-on
 import { defaults, searchArtwork } from '../src/lib/search.ts';
 import { primaryClusterForTopic, clustersForTopic } from '../src/lib/topic-clusters.ts';
 import { cuteConfidence } from '../src/lib/cute-discovery.ts';
+import { loadTypescript } from './helpers/typescript.mjs';
 import { artworkDetails } from '../src/lib/artwork-details.ts';
 import { resolveArtworkCopy } from '../scripts/artwork-editorial.mjs';
 const read = (path) => JSON.parse(readFileSync(new URL('../' + path, import.meta.url)));
@@ -26,6 +27,7 @@ const verifiedFiles = new Map(
 );
 const items = art.filter((x) => x.sourceCollection === 'owner-remaining-thirty-one-2026-10-25');
 const topics = Object.keys(packageContexts);
+const { withDiscoveryReview } = await loadTypescript('src/lib/discovery-reviews.ts');
 test('new greetings and ordinary objects do not enter cute discovery through keyword matches', () => {
   const approved = read('data/remaining-thirty-one-review.json').discoveryReview.cuteSelections;
   assert.equal(approved.length, 4);
@@ -33,7 +35,11 @@ test('new greetings and ordinary objects do not enter cute discovery through key
   // every item formerly marked cute (plain gummy sweets have no expression).
   const expressive = approved.filter((id) => id !== 'candy-clipart-gummy-bears');
   for (const item of items)
-    assert.equal(cuteConfidence(item) > 0, expressive.includes(item.id), item.id);
+    assert.equal(
+      cuteConfidence(withDiscoveryReview(item)) > 0,
+      expressive.includes(item.id),
+      item.id,
+    );
 });
 test('31 supplied packs preserve 1,550 verified original PDF/WebP pairs', () => {
   const proof = read('data/remaining-thirty-one-review.json');
@@ -168,7 +174,9 @@ test('all 31 subjects have accurate categories, unique metadata and searchable d
 test(
   'all 1,550 production pages have canonical URLs, image schema and sitemap entries',
   {
-    skip: !process.env.UC_TEST_BUILD_DIR && !existsSync(new URL('clipart/american-flag/index.html', testBuildUrl)),
+    skip:
+      !process.env.UC_TEST_BUILD_DIR &&
+      !existsSync(new URL('clipart/american-flag/index.html', testBuildUrl)),
   },
   () => {
     const text = (path) => readFileSync(new URL(path, testBuildUrl), 'utf8');

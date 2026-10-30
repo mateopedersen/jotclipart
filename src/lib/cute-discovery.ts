@@ -70,7 +70,11 @@ export function cuteConfidence(item: DiscoveryArtwork): number {
   )
     return 0;
   // Positive evidence comes from the visible-subject copy, never from a slug.
-  const visible = `${item.title} ${item.alt ?? ''}`.toLowerCase();
+  const visible = `${item.title} ${item.alt ?? ''}`
+    .toLowerCase()
+    // These object terms describe heraldry or mechanisms, not a character's
+    // face/limbs. A waving flag and a clock face are not expressive subjects.
+    .replace(/\b(coat of arms|clock face|clock hands|hands of (?:a |the )?clock)\b/g, '');
   const textOnly = /\b(lettering|typography|word art|text only)\b/i;
   if (textOnly.test(visible) && !face.test(visible)) return 0;
   const ordinaryAdult =
@@ -115,8 +119,11 @@ function hash(value: string) {
 }
 type Ranked = CutePick & { priority: number };
 class Reservoir<T extends { priority: number }> {
+  readonly capacity: number;
   rows: T[] = [];
-  constructor(readonly capacity: number) {}
+  constructor(capacity: number) {
+    this.capacity = capacity;
+  }
   add(row: T): T | undefined {
     const heap = this.rows;
     let removed: T | undefined;
