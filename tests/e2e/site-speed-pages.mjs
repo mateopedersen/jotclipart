@@ -95,6 +95,9 @@ for (const [engine, type] of Object.entries(engines)) {
         rows.push(row);
         writeFileSync(`${out}/report.json`, JSON.stringify(rows, null, 2));
         console.log(JSON.stringify(row));
+        // The page has already been checked. Stop routing before closing its
+        // context so late fixture responses cannot fail during teardown.
+        await context.unrouteAll({ behavior: 'ignoreErrors' });
         await context.close();
       }
   } finally {
