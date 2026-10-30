@@ -9,7 +9,8 @@ export interface DiscoveryArtwork {
   published?: boolean;
   indexable?: boolean;
   tags?: string[];
-  discovery?: { cute?: boolean; exclude?: boolean };
+  files?: { webp?: { sha256?: string } };
+  discovery?: { cute?: boolean; exclude?: boolean; reviewedSourceSha256?: string };
 }
 export interface CutePick {
   id: string;
@@ -32,7 +33,7 @@ const emotion =
 const affection =
   /\b(cuddling|cuddle|hugging|hug|snuggling|snuggle|affectionate|tender|loving|cradling|reading together)\b/i;
 const juvenile =
-  /\b(baby|newborn|nursery|calf|cub|chick|kitten|puppy|fawn|joey|owlet|eaglet|toddler)\b/i;
+  /\b(baby|newborn|nursery|calf|cub|chick|kitten|puppy|fawn|joey|owlet|eaglet|toddler|child|children|boy|girl|kid|kids)\b/i;
 const cuteStyle = /\b(kawaii|chibi|cute|adorable)\b/i;
 const face = /\b(face|eyes|eyed|character|mascot|arms|legs|hands|feet)\b/i;
 const craftedObject =
@@ -44,9 +45,14 @@ export function cuteConfidence(item: DiscoveryArtwork): number {
     item.published === false ||
     item.indexable === false ||
     item.discovery?.exclude ||
-    item.discovery?.cute === false
+    (item.discovery?.cute === false &&
+      /^[a-f0-9]{64}$/.test(item.discovery.reviewedSourceSha256 ?? '') &&
+      item.discovery.reviewedSourceSha256 === item.files?.webp?.sha256)
   )
     return 0;
+  // Older importers assigned cute:false by topic whitelist or as a default.
+  // An unbound legacy classification is not an image-specific exclusion.
+  // A real negative visual review must bind the inspected source checksum.
   const tags = (Array.isArray(item.tags) ? item.tags : [])
     .filter((value) => typeof value === 'string')
     .join(' ');
@@ -65,8 +71,25 @@ export function cuteConfidence(item: DiscoveryArtwork): number {
     return 0;
   // Positive evidence comes from the visible-subject copy, never from a slug.
   const visible = `${item.title} ${item.alt ?? ''}`.toLowerCase();
+  const textOnly = /\b(lettering|typography|word art|text only)\b/i;
+  if (textOnly.test(visible) && !face.test(visible)) return 0;
+  const ordinaryAdult =
+    /^(?:a |an |the |two |three )?(?:(?:smiling|happy|cheerful|friendly|young|older|elderly|seated|standing|jumping|male|female)\s+){0,4}(?:man|woman|shopper|photographer|player|fans|adult|people|couple|teacher|doctor|professional)\b/i;
+  if (
+    ordinaryAdult.test(item.alt ?? '') &&
+    !cuteStyle.test(visible) &&
+    !juvenile.test(visible) &&
+    !affection.test(visible)
+  )
+    return 0;
+  const whimsical =
+    /\b(cartoon|mascot|plush|stuffed|toy|rounded|cheeks|wears|wearing|carries|carrying|holding|holds|reads|reading|painting|paints|guitar|ukulele|knitted hat|party hat|goggles|spacesuit|astronaut|backpack|teacup|cup|tutu|blowing|bubbles|balloon|gift|present|dancing)\b/i;
   const expressive = /\b(smiling|smile|grinning|laughing|giggling|beaming)\b/i;
-  if (expressive.test(visible) && !/\b(lettering|typography|word art|text only)\b/i.test(visible))
+  if (
+    expressive.test(visible) &&
+    !textOnly.test(visible) &&
+    (face.test(visible) || cuteStyle.test(visible) || whimsical.test(visible))
+  )
     return item.discovery?.cute === true ? 100 : 94;
   const animate =
     animalTopics.has(item.topic) ||

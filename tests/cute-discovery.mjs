@@ -83,7 +83,23 @@ test('explicit review cannot override monochrome or frightening subject exclusio
     'not-cute-fruit',
   ])
     assert.equal(cuteConfidence({ ...sample, id, discovery: { cute: true } }), 0, id);
-  assert.equal(cuteConfidence({ ...sample, discovery: { cute: false } }), 0);
+  assert(cuteConfidence({ ...sample, discovery: { cute: false } }) > 0);
+  assert.equal(cuteConfidence({ ...sample, discovery: { exclude: true } }), 0);
+  assert.equal(
+    cuteConfidence({
+      ...sample,
+      files: { webp: { sha256: 'a'.repeat(64) } },
+      discovery: { cute: false, reviewedSourceSha256: 'a'.repeat(64) },
+    }),
+    0,
+  );
+  assert(
+    cuteConfidence({
+      ...sample,
+      files: { webp: { sha256: 'b'.repeat(64) } },
+      discovery: { cute: false, reviewedSourceSha256: 'a'.repeat(64) },
+    }) > 0,
+  );
   assert.equal(cuteConfidence({ ...sample, published: false }), 0);
   assert.equal(cuteConfidence({ ...sample, indexable: false }), 0);
   assert.equal(cuteConfidence({ ...sample, style: 'Black & White', discovery: { cute: true } }), 0);
@@ -184,4 +200,44 @@ test('new additions enter a bounded recent lane and large categories cannot crow
   assert.equal(new Set(index.map((item) => item.id)).size, index.length);
   assert.deepEqual(validCuteIndex(index), index);
   assert(pickCute(index, [], '', () => Number.NaN));
+});
+
+test('real new donut and fish characters are not blocked by obsolete importer defaults', async () => {
+  const { readReviewedImportCatalog } = await import('../scripts/reviewed-imports.mjs');
+  const actual = readReviewedImportCatalog(process.cwd());
+  const donut = actual.find((item) => item.id === 'donut-astronaut-donut-clipart');
+  assert.equal(donut.discovery.cute, false);
+  assert(cuteConfidence(donut) > 0);
+  assert(
+    actual.some(
+      (item) => item.sourceCollection === 'owner-fish-15-2026-10-30' && cuteConfidence(item) > 0,
+    ),
+  );
+  const { withDiscoveryReview } = await loadTypescript('src/lib/discovery-reviews.ts');
+  const gta = actual.find((item) => item.sourceCollection === 'owner-gta-six-2026-10-26');
+  const reviewed = withDiscoveryReview(gta);
+  assert.equal(reviewed.discovery.reviewedSourceSha256, gta.files.webp.sha256);
+  assert.equal(cuteConfidence(reviewed), 0);
+  const replaced = {
+    ...gta,
+    files: { ...gta.files, webp: { ...gta.files.webp, sha256: 'b'.repeat(64) } },
+  };
+  assert.equal(withDiscoveryReview(replaced), replaced);
+});
+
+test('a smile alone does not admit ordinary adult portraits, clinical closeups or plain natural objects', () => {
+  for (const [title, alt] of [
+    ['Photographer with a camera', 'A smiling photographer holds a camera at his side.'],
+    ['Smiling Mouth With Braces', 'Coral lips reveal white teeth and colored brackets.'],
+    ['Fish resting in rocks', 'A smiling fish rests in a rocky nook beside a golden light.'],
+  ])
+    assert.equal(cuteConfidence({ ...sample, title, alt, discovery: undefined }), 0, title);
+  assert(
+    cuteConfidence({
+      ...sample,
+      topic: 'future-device',
+      title: 'Friendly device',
+      alt: 'A smiling device character with bright eyes and tiny arms.',
+    }) > 0,
+  );
 });
