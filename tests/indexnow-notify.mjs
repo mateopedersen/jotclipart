@@ -13,3 +13,11 @@ test('accepted notification records the exact sender result',()=>{
   const result=runIndexNowNotification({root:'/unused',revision:'a'.repeat(40),spawn:()=>({status:0,stdout:JSON.stringify({updated:0,receipts:[]})}),save:()=>{}});
   assert.equal(result.status,'PUBLISHED_NOTIFICATION_COMPLETE');assert.equal(result.result.updated,0);
 });
+test('explicit notification hold never starts a sender or alters the accepted ledger',()=>{
+  let saved;
+  const result=runIndexNowNotification({root:'/unused',revision:'b'.repeat(40),env:{UC_INDEXNOW_NOTIFY:'0'},spawn:()=>{throw Error('sender must not run')},save:r=>{saved=r}});
+  assert.equal(result.status,'PUBLISHED_NOTIFICATION_HELD');
+  assert.equal(saved,result);
+  assert.equal(result.revision,'b'.repeat(40));
+  assert.equal(result.retry,undefined);
+});

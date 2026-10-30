@@ -295,25 +295,32 @@
   font-size: 11px;
 }
 .download-panel-footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 14px 24px;
+  gap: 12px 24px;
   margin-top: 30px;
-  padding-top: 22px;
-  border-top: 1px solid #e0e8f2;
+  padding: 12px 16px;
+  border: 1px solid #e0e8f2;
+  border-radius: 10px;
+  background: #f5f8fc;
   font-size: 13px;
+  line-height: 1.5;
   color: #57708d;
+}
+.download-panel-footer > span {
+  min-width: 0;
 }
 .download-panel-footer button {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  min-height: 36px;
-  padding: 0;
+  justify-content: center;
+  min-width: 0;
+  min-height: 44px;
+  padding: 10px 12px;
   border: 0;
-  border-radius: 0;
+  border-radius: 6px;
   background: transparent;
   box-shadow: none;
   color: #255f9d;
@@ -321,6 +328,8 @@
   cursor: pointer;
 }
 .download-panel-footer button:hover {
+  background: #e5eefb;
+  color: #1c4c80;
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -387,8 +396,12 @@
     gap: 3px;
   }
   .download-panel-footer {
-    justify-content: center;
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
     text-align: center;
     margin-top: 24px;
+  }
+  .download-panel-footer button {
+    width: 100%;
   }
 }

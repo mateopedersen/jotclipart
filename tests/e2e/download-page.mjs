@@ -42,6 +42,35 @@ try {
       assert.equal(page.url(), originalUrl);
       assert.equal(await page.locator('[data-final-download]').count(), 1);
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), width);
+      const footer = page.locator('#download-dialog .download-panel-footer');
+      const footerLayout = await footer.evaluate((element) => {
+        const rect = element.getBoundingClientRect();
+        const text = element.firstElementChild.getBoundingClientRect();
+        const button = element.querySelector('button').getBoundingClientRect();
+        return {
+          textInset: text.left - rect.left,
+          buttonInset: rect.right - button.right,
+          buttonHeight: button.height,
+          balancedPadding:
+            Math.abs(
+              parseFloat(getComputedStyle(element).paddingTop) -
+                parseFloat(getComputedStyle(element).paddingBottom),
+            ) < 1,
+          contained: element.scrollWidth <= element.clientWidth + 1,
+          aligned: Math.abs((text.top + text.bottom - button.top - button.bottom) / 2) < 1,
+          stacked: button.top >= text.bottom,
+        };
+      });
+      assert.ok(
+        footerLayout.textInset >= 12 && footerLayout.buttonInset >= 12,
+        'Download footer content must have an inset on both edges',
+      );
+      assert.ok(footerLayout.balancedPadding && footerLayout.contained);
+      assert.ok(footerLayout.buttonHeight >= 44, 'Close action must remain touch accessible');
+      assert.ok(
+        width > 700 ? footerLayout.aligned : footerLayout.stacked,
+        'Footer must align horizontally on desktop and stack on mobile',
+      );
       assert.equal(
         await page.locator('link[rel="canonical"]').getAttribute('href'),
         `https://ultraclipart.com/art/${id}/`,
@@ -91,7 +120,7 @@ try {
       }
       if (id.startsWith('usb-') && [1440, 390].includes(width))
         await page.screenshot({ path: `${output}/download-${width}.png`, fullPage: false });
-      report.layouts.push({ id, width, accessibilityViolations: 0 });
+      report.layouts.push({ id, width, accessibilityViolations: 0, footerLayout });
     }
   // The original page address, including its query and hash, is preserved.
   await page.goto(
@@ -102,6 +131,11 @@ try {
   await entry.click();
   await expect(page.locator('#download-dialog [data-final-download="webp"]')).toBeVisible();
   assert.equal(page.url(), originalUrl);
+  await page.locator('#download-dialog .download-panel-footer [data-download-close]').click();
+  await expect(page.locator('#download-dialog')).toHaveCount(0);
+  await expect(entry).toBeFocused();
+  await entry.click();
+  await expect(page.locator('#download-dialog [data-final-download="webp"]')).toBeVisible();
   await page.getByRole('button', { name: 'Close download window', exact: true }).click();
   await expect(page.locator('#download-dialog')).toHaveCount(0);
   await expect(entry).toBeFocused();
