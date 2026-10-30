@@ -1,0 +1,261 @@
+{
+  "schema": 1,
+  "status": "LOCAL_INCREMENTAL_PUBLISHER_VERIFIED",
+  "verifiedAt": "2026-10-30T19:52:45.868439+00:00",
+  "softwareHash": "a4db9562b4868b6f03767fc9ac51107735d39f96aed81668548b4cc14124cd16",
+  "notWebsitePublication": true,
+  "testPublicationBlocked": true,
+  "remoteTestWrites": 0,
+  "unitChecks": {
+    "passed": 100,
+    "failed": 0
+  },
+  "realCatalog": {
+    "status": "REAL_CATALOG_SHADOW_BYTE_AND_AUDIT_VERIFIED",
+    "revision": "111d531e9cb1a6229122fed01c4c32a2cebb1231",
+    "baselineRevision": "42e25f2bd7b242cbd5e95201e08f01e17616beac",
+    "softwareHash": "a4db9562b4868b6f03767fc9ac51107735d39f96aed81668548b4cc14124cd16",
+    "shadowOnly": true,
+    "productionPublishingBlocked": true,
+    "remoteWrites": 0,
+    "artworks": 21109,
+    "subjects": 414,
+    "selectedArtworks": 50,
+    "renderedHtml": 100,
+    "inheritedHtml": 42118,
+    "inheritedOther": 99277,
+    "totalDeliveryFiles": 141503,
+    "localManifestRoot": "2129705e80814a019ccb4586740b077ec24c63ed7930cffc35fff6c4be64abec",
+    "manifestVerificationSeconds": 27.405274666999997,
+    "metadata": {
+      "date": "2026-10-30T19:36:50.931Z",
+      "buildDirectory": "/private/tmp/uc-publisher-real-catalog-20261030/project/dist",
+      "pages": 42683,
+      "indexablePages": 21571,
+      "noindexPages": 21112,
+      "catalogImageInstances": 30788,
+      "addedSchemas": 9629,
+      "changedPages": 512,
+      "reusedVerifiedPages": 42118,
+      "parsedPages": 565,
+      "imageInstanceCountsScope": "freshly-parsed-pages"
+    },
+    "completedAt": "2026-10-30T19:51:59.637Z"
+  },
+  "browser": {
+    "status": "PASS_REAL_CATALOG_BROWSER",
+    "shadowOnly": true,
+    "productionWrites": 0,
+    "localCdnCorsFixture": true,
+    "checks": [
+      {
+        "engine": "chromium",
+        "width": 390,
+        "id": "catfish-by-tangled-roots-clipart",
+        "kind": "newly-rendered",
+        "actualArtifactRevision": "111d531e9cb1a6229122fed01c4c32a2cebb1231",
+        "relatedReady": true,
+        "relatedShowMore": true,
+        "noHorizontalOverflow": true,
+        "originalImageUrl": "https://assets.ultraclipart.com/catfish/catfish-by-tangled-roots-clipart.webp.311cef61e5a5d13c.webp",
+        "editorNoindex": true
+      },
+      {
+        "engine": "chromium",
+        "width": 390,
+        "id": "robot-friendly-robot-reaching-out-to-say-hello",
+        "kind": "inherited",
+        "actualArtifactRevision": "42e25f2bd7b242cbd5e95201e08f01e17616beac",
+        "relatedReady": true,
+        "relatedShowMore": true,
+        "noHorizontalOverflow": true,
+        "originalImageUrl": "https://assets.ultraclipart.com/robot/robot-friendly-robot-reaching-out-to-say-hello.webp.a0ccd53478b19f89.webp",
+        "editorNoindex": true
+      },
+      {
+        "engine": "chromium",
+        "width": 1440,
+        "id": "catfish-by-tangled-roots-clipart",
+        "kind": "newly-rendered",
+        "actualArtifactRevision": "111d531e9cb1a6229122fed01c4c32a2cebb1231",
+        "relatedReady": true,
+        "relatedShowMore": true,
+        "noHorizontalOverflow": true,
+        "originalImageUrl": "https://assets.ultraclipart.com/catfish/catfish-by-tangled-roots-clipart.webp.311cef61e5a5d13c.webp",
+        "editorNoindex": true
+      },
+      {
+        "engine": "chromium",
+        "width": 1440,
+        "id": "robot-friendly-robot-reaching-out-to-say-hello",
+        "kind": "inherited",
+        "actualArtifactRevision": "42e25f2bd7b242cbd5e95201e08f01e17616beac",
+        "relatedReady": true,
+        "relatedShowMore": true,
+        "noHorizontalOverflow": true,
+        "originalImageUrl": "https://assets.ultraclipart.com/robot/robot-friendly-robot-reaching-out-to-say-hello.webp.a0ccd53478b19f89.webp",
+        "editorNoindex": true
+      },
+      {
+        "engine": "webkit",
+        "width": 390,
+        "id": "catfish-by-tangled-roots-clipart",
+        "kind": "newly-rendered",
+        "actualArtifactRevision": "111d531e9cb1a6229122fed01c4c32a2cebb1231",
+        "relatedReady": true,
+        "relatedShowMore": true,
+        "noHorizontalOverflow": true,
+        "originalImageUrl": "https://assets.ultraclipart.com/catfish/catfish-by-tangled-roots-clipart.webp.311cef61e5a5d13c.webp",
+        "editorNoindex": true
+      },
+      {
+        "engine": "webkit",
+        "width": 390,
+        "id": "robot-friendly-robot-reaching-out-to-say-hello",
+        "kind": "inherited",
+        "actualArtifactRevision": "42e25f2bd7b242cbd5e95201e08f01e17616beac",
+        "relatedReady": true,
+        "relatedShowMore": true,
+        "noHorizontalOverflow": true,
+        "originalImageUrl": "https://assets.ultraclipart.com/robot/robot-friendly-robot-reaching-out-to-say-hello.webp.a0ccd53478b19f89.webp",
+        "editorNoindex": true
+      },
+      {
+        "engine": "webkit",
+        "width": 1440,
+        "id": "catfish-by-tangled-roots-clipart",
+        "kind": "newly-rendered",
+        "actualArtifactRevision": "111d531e9cb1a6229122fed01c4c32a2cebb1231",
+        "relatedReady": true,
+        "relatedShowMore": true,
+        "noHorizontalOverflow": true,
+        "originalImageUrl": "https://assets.ultraclipart.com/catfish/catfish-by-tangled-roots-clipart.webp.311cef61e5a5d13c.webp",
+        "editorNoindex": true
+      },
+      {
+        "engine": "webkit",
+        "width": 1440,
+        "id": "robot-friendly-robot-reaching-out-to-say-hello",
+        "kind": "inherited",
+        "actualArtifactRevision": "42e25f2bd7b242cbd5e95201e08f01e17616beac",
+        "relatedReady": true,
+        "relatedShowMore": true,
+        "noHorizontalOverflow": true,
+        "originalImageUrl": "https://assets.ultraclipart.com/robot/robot-friendly-robot-reaching-out-to-say-hello.webp.a0ccd53478b19f89.webp",
+        "editorNoindex": true
+      }
+    ],
+    "startedAt": "2026-10-30T19:42:04.586Z",
+    "completedAt": "2026-10-30T19:42:45.337Z"
+  },
+  "nativeWorkers": {
+    "installer-native-related.log": {
+      "status": "PASS_LOCAL_PUBLIC_WORKER",
+      "relatedRemainsCurrent": true,
+      "cardsAndCopyUnchanged": true,
+      "nativeRepresentationMatchesPreview": true,
+      "noReferrerRequired": true,
+      "sourceBytesUnchanged": true,
+      "headAndConditionalCacheValid": true
+    },
+    "installer-native-staging.log": {
+      "status": "PASS_LOCAL_WORKERD_R2",
+      "independentlyVerified": 128,
+      "reusedWithoutReadingBody": 128,
+      "missingStagedWithFreshLease": 1,
+      "nativeSha256Verified": true,
+      "externalRequests": 0,
+      "workerSourceSha256": "0de60e75b75aaff19ddda34371f8b46e042299adf8d8b5eb2dc3154a9d724768"
+    }
+  },
+  "bootstrap": {
+    "status": "PASS_FINAL_MODULE_LIVE_READ_ONLY_BOOTSTRAP",
+    "softwareRevision": "e49ebeebb69225a2363d8bedd8266ecd9e8cd1bd",
+    "at": "2026-10-30T18:53:32.786Z",
+    "seconds": 2.728935584,
+    "buckets": 10,
+    "ranges": 239,
+    "objectEnumerationRequests": 0,
+    "writeRequests": 0,
+    "capacityReservationIssued": false
+  },
+  "measurements": {
+    "status": "MEASURED_PHASES_NOT_END_TO_END_UPLOAD_BENCHMARK",
+    "at": "2026-10-30T19:49:32.750371+00:00",
+    "catalog": {
+      "artworks": 21109,
+      "subjects": 414,
+      "selectedArtworks": 50,
+      "renderedArtEditorHtml": 100,
+      "reusedArtEditorHtml": 42118,
+      "reusedArtEditorPercent": 99.76313420815765,
+      "allHtml": 42683,
+      "freshSchemaParsedHtml": 565
+    },
+    "renderPhase": {
+      "fullSeconds": 239,
+      "shadowSeconds": 157,
+      "reductionPercent": 34.30962343096235
+    },
+    "completeAstroIncludingInheritanceAndAudits": {
+      "fullSeconds": 925,
+      "shadowSeconds": 1058,
+      "shadowWasFaster": false,
+      "note": "Shadow ran concurrently with the reserved production transfer and required a first independent inherited output copy. Both builds retain full image, link and core SEO audits. Do not describe render-phase savings as total build/upload savings."
+    },
+    "freshRosterBootstrap": {
+      "seconds": 2.728935584,
+      "objectEnumerationRequests": 0,
+      "writeRequests": 0,
+      "reservationIssued": false,
+      "freshNativeCompleteCensusStillRequired": true
+    },
+    "remoteWriteScope": {
+      "fullSoftwareReleaseNewObjects": 42219,
+      "futureAppendOnlyIllustrativeArtworkHtmlFor50": 100,
+      "note": "Illustrative HTML count only, not measured total upload time; native source files/global pages/metadata/affected Related pairs still count. Real source/template/dependency edits correctly select full publication."
+    },
+    "endToEndUploadImprovementPercent": null,
+    "testNeverPublished": true
+  },
+  "limitations": [
+    "Shadow selected 50 existing accepted artworks inside the unchanged 21,109-artwork catalog. Append-only eligibility and changed-Related propagation were independently covered by the unit fixtures.",
+    "All image/link/core audits remain complete. Total Astro time was 17m38s during concurrent production transfer, versus 15m25s for the preceding full build. Render-only savings are not end-to-end upload savings.",
+    "This local installation enables the verified optimization; it does not publish the shadow catalog or replace the ongoing production release.",
+    "Public/template/dependency changes and uncertain baseline evidence require the complete guarded publication path."
+  ],
+  "evidence": [
+    {
+      "name": "real-shadow-byte-proof.json",
+      "sha256": "c042d0328499c5ee0fb65ff6df9e96edfe302bc4245902cab39d68d0c2436fdf"
+    },
+    {
+      "name": "real-shadow-browser.json",
+      "sha256": "af8d6e64e1281dec962442a210c6540a2c41d3ba0d71e3b31cb2d54eadf7a79b"
+    },
+    {
+      "name": "installer-focused-34-tests.log",
+      "sha256": "8a51e74abea7ba4ec3d988b57c38546ecb34a4b924e027872f78b3e4768f8c83"
+    },
+    {
+      "name": "installer-regression-66-tests.log",
+      "sha256": "19e557579c84af4ab84b4b01255c04c1bbf1385a78714feb401ee9e368cb999b"
+    },
+    {
+      "name": "installer-native-related.log",
+      "sha256": "a31670b7ef5b197612b45e5ef4b41411b3f89cf78f0d5f685932a69177f3b0aa"
+    },
+    {
+      "name": "installer-native-staging.log",
+      "sha256": "63d605b59c5cc3cfdb198fa781fadfee65e0dd160dab2dc65e2239302b23b2e5"
+    },
+    {
+      "name": "real-shadow-build.log",
+      "sha256": "3edc0f696d4317b36e9982fa28b94efb8f6b1a2915af4b847c7b57217ca569e7"
+    },
+    {
+      "name": "real-shadow-security.log",
+      "sha256": "603516f915d66348cb5f5f886cf914746d85db81af94312ca7ca16c4c15fa2c3"
+    }
+  ]
+}

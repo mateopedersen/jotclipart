@@ -57,6 +57,11 @@ are historical evidence, not new authorization to deploy. Check the actual live
 revision and single-writer locks before resuming. Reauthenticate with Cloudflare
 locally when required; credentials must never be written into this backup.
 
-As of source `196cef9`, the incremental installation certificate remains disabled;
-the recorded production baseline is `42e25f2`. Preserve this distinction until
-the new software finishes its complete build/browser/publication verification.
+The local incremental installer passed the full-size isolated shadow, 100 unit
+fixtures, 8 real-catalog Chromium/WebKit scenarios and both native workerd/R2
+checks on 2026-10-30. Its exact software hash is bound by
+`config/incremental-publisher.json`; see
+`docs/delivery-incremental-verification-20261030.json` for measured scope and limits.
+The test catalog was publication-blocked and made no remote writes. A successful
+local installation is distinct from a successful website publication. Preserve
+the current independent live receipt and never publish the shadow build.

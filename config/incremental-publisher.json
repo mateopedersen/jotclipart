@@ -1,7 +1,16 @@
 {
   "schema": 1,
-  "enabled": false,
-  "softwareHash": null,
-  "checks": {},
-  "note": "Installation verification in progress; normal full publication remains active."
+  "enabled": true,
+  "softwareHash": "a4db9562b4868b6f03767fc9ac51107735d39f96aed81668548b4cc14124cd16",
+  "verifiedAt": "2026-10-30T19:52:45.868439+00:00",
+  "checks": {
+    "unitPassed": 100,
+    "unitFailed": 0,
+    "shadowBuildVerified": true,
+    "relatedNativeVerified": true,
+    "browserPassed": 8,
+    "nativeWorkerChecksPassed": 2
+  },
+  "evidence": "docs/delivery-incremental-verification-20261030.json",
+  "note": "Verified local publisher installation. The isolated shadow is never a production release; normal single-writer and all integrity, capacity, editorial and activation gates remain required."
 }
