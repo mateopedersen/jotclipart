@@ -10,7 +10,7 @@ const browser = await { chromium, firefox, webkit }[engine].launch();
 const context = await browser.newContext();
 await context.route('**/*', (route) => route.continue());
 const page = await context.newPage();
-const report = { engine, layouts: [], destinations: [], errors: [] };
+const report = { engine, layouts: [], destinations: [], discoveryChecks: [], errors: [] };
 page.on('pageerror', (e) => report.errors.push(e.message));
 try {
   for (const width of [1440, 768, 390, 320])
@@ -21,6 +21,12 @@ try {
       '/art/usb-flash-drive-artist-usb-drive-and-sketchbook-arrangement/',
     ]) {
       await page.setViewportSize({ width, height: 1000 });
+      // Await the deferred shared request before the next viewport unloads this page.
+      // Otherwise WebKit can report a navigation cancellation as an access-check error.
+      const discoveryResponse = page.waitForResponse(
+        (response) => new URL(response.url()).pathname === '/surprise-picks.json',
+        { timeout: 15000 },
+      );
       const response = await page.goto(base + route);
       assert.equal(response.status(), 200);
       const footer = page.locator('.site-footer');
@@ -114,6 +120,18 @@ try {
       );
       if (route === '/' && [1440, 390].includes(width))
         await footer.screenshot({ path: `${output}/footer-${width}.png` });
+      const discovery = await discoveryResponse;
+      assert.equal(discovery.status(), 200);
+      assert.equal(await discovery.finished(), null);
+      const discoveryIndex = await discovery.json();
+      assert.ok(Number.isInteger(discoveryIndex.version));
+      assert.ok(discoveryIndex.items.length > 100);
+      report.discoveryChecks.push({
+        route,
+        width,
+        status: discovery.status(),
+        items: discoveryIndex.items.length,
+      });
       report.layouts.push({ route, width, violations: 0 });
     }
   const links = await page
@@ -129,13 +147,10 @@ try {
   const sculptures = await page
     .locator('.site-footer .footer-nav-object')
     .evaluateAll((images) => [...new Set(images.map((image) => image.getAttribute('src')))]);
-  assert.deepEqual(
-    sculptures.sort(),
-    [
-      ...['boards', 'explore', 'help'].map((name) => `/illustrations/footer/${name}.svg`),
-      '/illustrations/studio-compose-v3.svg',
-    ],
-  );
+  assert.deepEqual(sculptures.sort(), [
+    ...['boards', 'explore', 'help'].map((name) => `/illustrations/footer/${name}.svg`),
+    '/illustrations/studio-compose-v3.svg',
+  ]);
   for (const path of sculptures) {
     const response = await page.request.get(base + path);
     assert.equal(response.status(), 200, path);

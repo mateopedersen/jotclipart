@@ -18,7 +18,16 @@ const context = await browser.newContext({ acceptDownloads: true });
 await context.route('**/*', (route) => route.continue());
 const localCdnBridge = await bridgeLocalCdn(context, base);
 const page = await context.newPage();
-const report = { engine, base, localCdnBridge, layouts: [], downloads: [], errors: [], adRequests: [] };
+const report = {
+  engine,
+  base,
+  localCdnBridge,
+  layouts: [],
+  downloads: [],
+  discoveryChecks: [],
+  errors: [],
+  adRequests: [],
+};
 page.on('pageerror', (e) => report.errors.push(e.message));
 page.on('request', (r) => {
   if (/googlesyndication|doubleclick|googleadservices/.test(r.url()))
@@ -32,6 +41,12 @@ try {
     ]) {
       await page.setViewportSize({ width, height: 1000 });
       const item = catalog.find((a) => a.id === id);
+      // This shared request starts after the initial network-idle interval.
+      // Verify it completes before the next case unloads the current document.
+      const discoveryResponse = page.waitForResponse(
+        (response) => new URL(response.url()).pathname === '/surprise-picks.json',
+        { timeout: 15000 },
+      );
       const response = await page.goto(`${base}/art/${id}/`, {
         waitUntil: 'networkidle',
       });
@@ -122,6 +137,18 @@ try {
       }
       if (id.startsWith('usb-') && [1440, 390].includes(width))
         await page.screenshot({ path: `${output}/download-${width}.png`, fullPage: false });
+      const discovery = await discoveryResponse;
+      assert.equal(discovery.status(), 200);
+      assert.equal(await discovery.finished(), null);
+      const discoveryIndex = await discovery.json();
+      assert.ok(Number.isInteger(discoveryIndex.version));
+      assert.ok(discoveryIndex.items.length > 100);
+      report.discoveryChecks.push({
+        id,
+        width,
+        status: discovery.status(),
+        items: discoveryIndex.items.length,
+      });
       report.layouts.push({ id, width, accessibilityViolations: 0, footerLayout });
     }
   // The original page address, including its query and hash, is preserved.

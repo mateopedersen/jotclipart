@@ -606,3 +606,37 @@ Independent immutable software backup and verified restore are recorded under
 Preserve native originals, frozen `def7fbe.../full-source`, accepted source/Git,
 reviews, IndexNow and the unrelated paused Marvel edit. Do not repeat this upload,
 website publication or notification. No GitHub push or new reminder was made.
+
+## Shared download/footer layout release — 2026-10-31
+
+The newer verified production renderer/control revision is
+`4755fa1fba8bb34bef8b01dfa31e9de0d2fa0d18` (Pages deployment
+`58d0ee74-8f04-4bde-ba49-2d529738d378`). Its full guarded release preserved all
+21,109 accepted artworks, 414 subjects, 24 collections, native originals and the
+shared IndexNow ledger. Notifications were explicitly held. Source CSS now scopes
+site-footer rules to `.site-footer`; the download footer uses balanced insets,
+44-pixel controls and a mobile single-column layout. Keep these shared fixes and
+the permanent Chromium/WebKit release gates in future content publications.
+
+Current continuation source is branch `fix/download-layout-20261030` in
+`work/ultraclipart-layout-20261030`, based on accepted source `80234f96...`.
+Do not republish an older checkout over this UI release. Compare the canonical
+`work/remaining-cloudflare-production-report.json` and actual live delivery
+manifest before every activation. The original primary checkout and unrelated
+pending content were deliberately left untouched. No GitHub push was made.
+
+After publication, the ineffective Mac asset-copy option was restored to the
+exact previously certified implementation. The installer certificate was not
+changed; the software hash still matches `a4db9562b4868b6f03767fc9ac51107735d39f96aed81668548b4cc14124cd16`.
+These local publisher/test follow-ups do not change deployed browser assets.
+The live download/footer tests explicitly await and validate the delayed Surprise
+JSON request before navigating to the next case; do not suppress real page errors
+or interpret WebKit unload cancellations as a successful network response.
+
+Evidence and the Turkish owner report: `work/layout-release-20261030/rapor.html`,
+`final-report.json`, `production-confirmation.json`, `live-verification.json`,
+`live-browser-summary.json`, `default-cache-verification.json` and
+`publisher-compatibility.json`. These distinguish full HTML/source audits,
+representative browser scans and actual live requests; they are not a fresh
+visual review of every artwork or a physical iPhone test. Preserve the sealed
+`4755fa1f.../full-source` rollback and the protected independent software backup.
