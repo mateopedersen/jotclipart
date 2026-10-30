@@ -5,6 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { chromium, firefox, webkit, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
+import { bridgeLocalCdn } from '../helpers/local-cdn.mjs';
 const engine = process.env.UC_BROWSER || 'chromium';
 const base = process.env.BASE_URL || 'http://127.0.0.1:4381';
 const catalog = JSON.parse(readFileSync('data/art.json'));
@@ -15,8 +16,9 @@ const browser = await { chromium, firefox, webkit }[engine].launch();
 const context = await browser.newContext({ acceptDownloads: true });
 // Repeated viewport cases must request fresh HTML rather than conditional cache responses.
 await context.route('**/*', (route) => route.continue());
+const localCdnBridge = await bridgeLocalCdn(context, base);
 const page = await context.newPage();
-const report = { engine, base, layouts: [], downloads: [], errors: [], adRequests: [] };
+const report = { engine, base, localCdnBridge, layouts: [], downloads: [], errors: [], adRequests: [] };
 page.on('pageerror', (e) => report.errors.push(e.message));
 page.on('request', (r) => {
   if (/googlesyndication|doubleclick|googleadservices/.test(r.url()))
