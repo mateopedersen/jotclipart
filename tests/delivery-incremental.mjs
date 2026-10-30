@@ -11,6 +11,7 @@ import {
   validateIncrementalPlan,
   materializeIncrementalSource,
   incrementalCollectionOptions,
+  verifiedInheritedMetadata,
 } from '../scripts/delivery/incremental.mjs';
 import { collectDeliveryFiles, merkle, digest } from '../scripts/delivery/manifest.mjs';
 import { createPublicFileHandler } from '../server/delivery/public-files.mjs';
@@ -159,6 +160,11 @@ test('a verified append builds only new pairs and inherits exact old bytes witho
       );
     const before = readFileSync(join(plan.baselineSource, 'art/old/index.html'));
     assert.equal(materializeIncrementalSource(f.root, output, plan).inherited, f.files.length);
+    const metadata = verifiedInheritedMetadata(f.root, output, plan);
+    assert.equal(metadata.kind(join(output, 'art/old/index.html')), 'indexablePages');
+    assert.equal(metadata.kind(join(output, 'edit/old/index.html')), 'noindexPages');
+    assert.equal(metadata.kind(join(output, 'art/new/index.html')), null);
+    metadata.save();
     const files = collectDeliveryFiles(output, next, incrementalCollectionOptions(f.root, plan));
     assert.equal(files.length, f.files.length + 2);
     assert.equal(
@@ -170,6 +176,7 @@ test('a verified append builds only new pairs and inherits exact old bytes witho
       `delivery/${next}/art/new/index.html`,
     );
     writeFileSync(join(output, 'art/old/index.html'), 'mutated candidate');
+    assert.throws(() => metadata.kind(join(output, 'art/old/index.html')), /Source changed/);
     assert.deepEqual(readFileSync(join(plan.baselineSource, 'art/old/index.html')), before);
     assert.throws(
       () => collectDeliveryFiles(output, next, incrementalCollectionOptions(f.root, plan)),

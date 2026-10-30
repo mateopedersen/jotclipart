@@ -44,6 +44,8 @@ const infrastructure = (path) =>
     'scripts/restore-assets.mjs',
     'scripts/production-public-assets.mjs',
     'scripts/seo/indexnow-release.mjs',
+    'scripts/seo/image-seo.mjs',
+    'scripts/seo/build-image-seo.mjs',
     'scripts/performance/serve.mjs',
     'src/lib/delivery-build-scope.ts',
   ].includes(path);
@@ -433,5 +435,28 @@ export function incrementalInheritance() {
           );
       },
     },
+  };
+}
+
+/** Reuse already-attached schemas only for exact source-verified inherited
+ * artwork/editor HTML. All current SEO, image, link and core audits still run. */
+export function verifiedInheritedMetadata(root, directory, plan) {
+  if (!plan) return null;
+  const manifest = validateIncrementalPlan(root, plan),
+    selected = new Set(plan.artworkIds);
+  const records = new Map(
+    manifest.files
+      .filter((file) => /^\/(art|edit)\//.test(file.path) && !selected.has(file.path.split('/')[2]))
+      .map((file) => [resolve(directory, '.' + file.path), file]),
+  );
+  const cache = verifiedSourceCache(root);
+  return {
+    kind(file) {
+      const record = records.get(resolve(file));
+      if (!record) return null;
+      cache.verify(file, record);
+      return record.path.startsWith('/art/') ? 'indexablePages' : 'noindexPages';
+    },
+    save: () => cache.save(),
   };
 }

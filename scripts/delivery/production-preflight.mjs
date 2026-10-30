@@ -63,6 +63,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1]
   if (process.env.UC_DELIVERY_EXPECTED_LIVE_REVISION) {
     const live = await fetch('https://ultraclipart.com/delivery-release.json', {
       cache: 'no-store',
+      headers: { 'User-Agent': 'Mozilla/5.0', Origin: 'https://ultraclipart.com' },
       redirect: 'error',
       signal: AbortSignal.timeout(15000),
     });

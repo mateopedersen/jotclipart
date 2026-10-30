@@ -101,6 +101,12 @@ including browsers with no Referer. This prevents the existing client from hidin
 valid old recommendations after a global catalog update. A signed plan binds
 new/affected IDs, source state and related version; test/shadow plans cannot activate.
 
+Schema attachment reuses the already-attached metadata of exact inherited HTML,
+after its signed plan and local source identity are verified. A changed inherited
+file is rejected. Only new/affected and global pages need schema attachment again;
+the full current image, link-graph and core SEO audits still run. Reports separate
+reused pages from freshly parsed pages and do not invent old image-instance counts.
+
 IndexNow reuses an unchanged page's meaningful-content fingerprint only from the
 matching predecessor snapshot/root. It checks new/changed pages normally. Missing
 snapshot evidence causes a local byte read, never an unverified notification.

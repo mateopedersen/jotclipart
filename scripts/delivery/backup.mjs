@@ -133,6 +133,10 @@ writeFileSync(
 );
 execFileSync(join(pending, 'runtime/node'), [join(pending, 'verify.mjs')], { stdio: 'pipe' });
 renameSync(pending, final);
+// Completed versioned snapshots remain readable/restorable, but ordinary Mac
+// cleanup cannot unlink them without explicitly clearing the owner lock.
+if (process.platform === 'darwin')
+  execFileSync('/usr/bin/chflags', ['-R', 'uchg', final], { stdio: 'pipe' });
 writeFileSync(
   join(destination, 'LATEST.json'),
   JSON.stringify(

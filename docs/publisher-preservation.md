@@ -9,6 +9,9 @@ Protected independent backup:
 `/Users/melihozcan/Documents/UltraClipart-Publisher-KEEP`
 
 It is deliberately outside Codex's chat, project, worktree and cache directories.
+Completed snapshots receive the macOS user-immutable file flag. Keep that lock;
+do not clear it merely to make general cleanup succeed. The root stays writable
+so new versioned snapshots can be added without overwriting earlier ones.
 Never include this directory in a general cleanup. An explicit instruction to
 delete this particular backup would be a separate decision. The backup is local;
 it does not protect against loss of the Mac or intentional deletion of Documents.

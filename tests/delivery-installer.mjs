@@ -23,6 +23,8 @@ test('missing, disabled, failed and stale installation proof always retains the 
       'scripts/restore-assets.mjs',
       'scripts/production-public-assets.mjs',
       'scripts/seo/indexnow-release.mjs',
+      'scripts/seo/image-seo.mjs',
+      'scripts/seo/build-image-seo.mjs',
       'scripts/performance/serve.mjs',
       'src/lib/delivery-build-scope.ts',
       'src/pages/art/[id].astro',

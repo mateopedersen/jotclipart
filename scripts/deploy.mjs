@@ -1,5 +1,5 @@
 import { spawnSync } from 'node:child_process';
-import { readdirSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readdirSync, readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { prepareDeliveryRelease } from './delivery/activate.mjs';
 import { assertReleaseBudgets } from './delivery/budgets.mjs';
@@ -9,7 +9,7 @@ import { runIndexNowNotification } from './seo/indexnow-notify.mjs';
 import { verifyReviewedResume } from './delivery/reviewed-resume.mjs';
 import { assertOwnerPublicationApproval } from './publication-approval.mjs';
 import { readPublication } from './publication-policy.mjs';
-import { planIncrementalRelease } from './delivery/incremental.mjs';
+import { planIncrementalRelease, sealIncrementalBaseline } from './delivery/incremental.mjs';
 import { incrementalInstalled } from './delivery/installer.mjs';
 import { awaitPublicationWriter } from './delivery/publication-lock.mjs';
 
@@ -44,6 +44,21 @@ try {
     if (result.status !== 0)
       throw Error(`Publication step failed: ${script} (exit ${result.status ?? 1})`);
   }
+
+  // Pin full releases too: another accepted publication must never be silently
+  // overwritten after a long build. The existing live/configuration check runs
+  // both before preparation and immediately before atomic activation.
+  const priorProduction = JSON.parse(
+    readFileSync(
+      resolve(root, '../ultraclipart/work/remaining-cloudflare-production-report.json'),
+      'utf8',
+    ),
+  );
+  const expectedBaseline = priorProduction.liveDelivery?.renderedRevision;
+  if (!/^[a-f0-9]{40}$/.test(expectedBaseline ?? ''))
+    throw Error('Verified production baseline required');
+  env.UC_DELIVERY_EXPECTED_LIVE_REVISION = expectedBaseline;
+  run('scripts/delivery/production-preflight.mjs');
 
   const resumeArgs = process.argv.slice(2);
   if (resumeArgs.length && (resumeArgs.length !== 2 || resumeArgs[0] !== '--resume-reviewed'))
@@ -94,8 +109,32 @@ try {
       run('scripts/performance/release-browser-qa.mjs');
     run('scripts/delivery/stage.mjs', ['dist']);
   }
-  const target = resolve(root, 'work/delivery', revision, `pages-release-${Date.now()}`);
   const manifestPath = resolve(root, 'work/delivery', revision, 'verified-manifest.json');
+  // Seal before activation: a missing local rollback or a full disk must stop
+  // preparation rather than turn a successful live deployment into an error.
+  const predecessorFrozen = resolve(
+    root,
+    'work/delivery',
+    expectedBaseline,
+    'full-source/incremental-baseline.json',
+  );
+  console.log(
+    JSON.stringify({
+      sealedSource: sealIncrementalBaseline(root, manifestPath, resolve(root, 'dist'), {
+        ...(expectedBaseline !== revision && existsSync(predecessorFrozen)
+          ? {
+              previousManifestPath: resolve(
+                root,
+                'work/delivery',
+                expectedBaseline,
+                'verified-manifest.json',
+              ),
+            }
+          : {}),
+      }),
+    }),
+  );
+  const target = resolve(root, 'work/delivery', revision, `pages-release-${Date.now()}`);
   assertOwnerPublicationApproval(root);
   const release = await prepareDeliveryRelease({
     source: resolve(root, 'dist'),

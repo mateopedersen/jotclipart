@@ -238,7 +238,13 @@ export function* htmlFiles(directory) {
   }
 }
 
-export function buildImageMetadata({ root, directory, catalog, publishedAssets = null }) {
+export function buildImageMetadata({
+  root,
+  directory,
+  catalog,
+  publishedAssets = null,
+  inheritedMetadata = null,
+}) {
   const previewIndex = JSON.parse(readFileSync(join(root, '.astro/preview-assets.json'), 'utf8'));
   const index = createImageIndex(catalog, { publishedAssets, previewIndex });
   const summary = {
@@ -250,11 +256,21 @@ export function buildImageMetadata({ root, directory, catalog, publishedAssets =
     catalogImageInstances: 0,
     addedSchemas: 0,
     changedPages: 0,
+    reusedVerifiedPages: 0,
+    parsedPages: 0,
+    imageInstanceCountsScope: 'freshly-parsed-pages',
   };
   for (const file of htmlFiles(directory)) {
+    summary.pages++;
+    const inheritedKind = inheritedMetadata?.kind(file);
+    if (inheritedKind) {
+      summary[inheritedKind]++;
+      summary.reusedVerifiedPages++;
+      continue;
+    }
+    summary.parsedPages++;
     const before = readFileSync(file, 'utf8');
     const result = attachImageMetadata(before, index);
-    summary.pages++;
     if (summary.pages % 5000 === 0)
       console.log(`Image SEO metadata: ${summary.pages} pages scanned.`);
     summary[result.noindex ? 'noindexPages' : 'indexablePages']++;
@@ -265,6 +281,7 @@ export function buildImageMetadata({ root, directory, catalog, publishedAssets =
       summary.changedPages++;
     }
   }
+  inheritedMetadata?.save();
   const out = join(root, 'reports/image-seo');
   mkdirSync(out, { recursive: true });
   writeFileSync(join(out, 'build-metadata.json'), JSON.stringify(summary, null, 2) + '\n');
