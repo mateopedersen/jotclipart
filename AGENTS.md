@@ -1,3 +1,17 @@
+# Protected publisher — owner instruction, 2026-10-30
+
+Preserve this accepted publisher's source/Git history, catalog, source-bound
+reviews, native originals, shared IndexNow ledger, production evidence and latest
+verified rollback during chat deletion or cleanup. They are not disposable dist
+or cache output. The independent local software backup is
+`/Users/melihozcan/Documents/UltraClipart-Publisher-KEEP`, outside Codex-managed
+directories. Do not delete it during general cleanup. Read
+`docs/publisher-preservation.md`; refresh via `scripts/delivery/backup.mjs` after
+important publisher changes, verify the snapshot, and preserve credentials
+separately. No backup/restore automatically authorizes or performs publication.
+The incremental installer remains disabled pending complete verification; never
+confuse a preserved candidate with a verified live installation.
+
 # Artwork-specific writing — latest owner direction, 2026-10-26
 
 Latest clarification: all current and future topics use this policy, including Donald Trump. Public-figure illustrations may show imagined activities, costumes, props and scenery; do not imply real events, achievements, election results, endorsements or documentary evidence. Describe the image neutrally. Use the reusable `content:review` / `content:apply` batch pipeline instead of independent page edits. A vision reviewer must actually receive and inspect the images. Atomic application rejects the entire batch if any item is pending, stale, duplicated or invalid; do not extend the legacy ledger to admit new items. The shared owner policy is also recorded in the global Codex AGENTS.md and `/Users/melihozcan/Documents/Codex/AGENTS.md` for other chats and checkouts.
