@@ -97,7 +97,7 @@ try {
   for (const width of [1440, 1024, 768, 390, 320]) {
     await page.setViewportSize({ width, height: 1000 });
     for (const route of ['/', '/categories/', '/create/', '/ai-clipart-generator/']) {
-      const response = await page.goto(base + route);
+      const response = await page.goto(base + route, { waitUntil: 'domcontentloaded' });
       assert.equal(response.status(), 200, `${route} returns 200`);
       await page.evaluate(() => document.fonts.ready);
       await page.waitForLoadState('networkidle');
