@@ -12,6 +12,12 @@ rerenders every existing pair whose complete Related/More like this snapshot
 changes. It checks all cards, order, groups, copy, category and filter data,
 including results beyond the initially visible thumbnails.
 
+The production planner compares every previous metadata snapshot against the
+current index, using the previous revision's taxonomy/card-summary data for the
+previous index. This is a bounded metadata pass, not recompilation or rereading
+all image/PDF bytes. New rules or a new review on an existing ID require the full
+path, including when that ID previously had no override.
+
 Reuse requires the accepted production report, its complete matching Merkle
 manifest, an unchanged shared renderer/dependency inventory, unchanged accepted
 artwork/identity/license records, and preserved image/download publication URLs.
@@ -43,6 +49,12 @@ Missing or altered baseline files stop inheritance. Preserve this full source,
 its manifest, journal and marker during cleanup; deleting the optimization cache
 is safe but makes the next verification slower. Do not publish or disclose the
 local cache key. The cache never goes in `public/`, Pages or R2.
+
+Later sealed snapshots may share unchanged, read-only files with a prior frozen
+snapshot after exact hash/size/MIME verification. Only frozen rollback trees can
+share these inodes. A mutable build always receives a separate writable copy.
+New/changed files remain independent; a full logical rollback tree is retained
+without duplicating the entire unchanged binary library at every upload.
 
 ## Remote verification and storage reservations
 
@@ -120,6 +132,13 @@ native checksum rejection. It uses no Cloudflare account or external request.
 A full-size local shadow build and complete checks are required before declaring
 this installer ready. A local/shadow check is not production publication or an
 end-to-end network speed guarantee; measure a future authorized package separately.
+
+The Surprise me update changes a shared browser runtime, so its first software
+release deliberately takes the full-render path. After the verified new baseline
+is sealed and the installation proof passes, append-only content packages can
+use incremental compilation. Source/software/template changes still invalidate
+reuse. Local publisher installation is separate from the website's public Worker
+and runtime deployment.
 
 Primary references checked 2026-10-30:
 

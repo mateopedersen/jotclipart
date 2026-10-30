@@ -125,7 +125,7 @@ test('selection avoids recent IDs, the current page and consecutive subjects; sp
   );
   assert.deepEqual(validCuteIndex(new Array(513).fill(pool[0])), []);
 });
-test('topic balancing favors expressive animals without removing cheerful fruit characters', () => {
+test('topic balancing treats cheerful subjects equally instead of privileging animals', () => {
   const pool = [
     { id: 'fox-wave', topic: 'fox' },
     { id: 'apple-smile', topic: 'apple' },
@@ -138,6 +138,50 @@ test('topic balancing favors expressive animals without removing cheerful fruit 
     if (result.topic === 'fox') animals++;
     else fruit++;
   }
-  assert.equal(animals, 80);
-  assert.equal(fruit, 20);
+  assert.equal(animals, 50);
+  assert.equal(fruit, 50);
+});
+
+test('unknown future subjects qualify from visible expressive evidence, never from a slug or actual monochrome pixels', () => {
+  for (const topic of ['quokka', 'donut', 'future-cloud-toy'])
+    assert(
+      cuteConfidence({
+        ...sample,
+        topic,
+        discovery: undefined,
+        title: 'A smiling character',
+        alt: 'A cheerful character with bright eyes',
+      }) > 0,
+    );
+  assert.equal(
+    cuteConfidence({
+      ...sample,
+      id: 'smiling-donut',
+      discovery: undefined,
+      title: 'Glazed doughnut',
+      alt: 'A glazed doughnut with sprinkles',
+    }),
+    0,
+  );
+  assert.equal(cuteConfidence({ ...sample, monochrome: true }), 0);
+  assert.equal(
+    cuteConfidence({ ...sample, title: 'Not smiling', alt: 'A character without a smile' }),
+    0,
+  );
+});
+
+test('new additions enter a bounded recent lane and large categories cannot crowd every other subject out', () => {
+  function* stream() {
+    for (let i = 0; i < 10000; i++) yield { ...sample, id: `old-fruit-${i}`, topic: 'apple' };
+    for (let i = 0; i < 20; i++) yield { ...sample, id: `new-donut-${i}`, topic: 'donut' };
+    for (let i = 0; i < 20; i++) yield { ...sample, id: `new-quokka-${i}`, topic: 'quokka' };
+  }
+  const index = buildCuteIndex(stream(), 64, 'fresh-lane');
+  assert(index.length <= 64);
+  assert(index.some((item) => item.fresh && item.topic === 'donut'));
+  assert(index.some((item) => item.fresh && item.topic === 'quokka'));
+  assert(index.filter((item) => item.topic === 'apple').length <= 5);
+  assert.equal(new Set(index.map((item) => item.id)).size, index.length);
+  assert.deepEqual(validCuteIndex(index), index);
+  assert(pickCute(index, [], '', () => Number.NaN));
 });

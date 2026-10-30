@@ -7,6 +7,8 @@ import {
   statSync,
   realpathSync,
   copyFileSync,
+  chmodSync,
+  linkSync,
   constants,
   existsSync,
 } from 'node:fs';
@@ -90,7 +92,7 @@ export function verifiedSourceCache(root) {
     ) {
       entries[path] = { signature };
       stats.reused++;
-      return;
+      return before;
     }
     const bytes = readFileSync(path);
     if (bytes.length !== expected.bytes || sha(bytes) !== expected.sha256)
@@ -99,15 +101,18 @@ export function verifiedSourceCache(root) {
     entries[path] = { signature };
     stats.hashed++;
     stats.hashedBytes += bytes.length;
+    return before;
   }
   return {
     verify,
     stats,
     copy(source, target, expected) {
-      verify(source, expected);
-      const before = identity(source);
+      const before = verify(source, expected);
       if (existsSync(target)) throw Error('Verified inheritance cannot replace a rendered file');
       copyFileSync(source, target, constants.COPYFILE_FICLONE);
+      // Frozen snapshots may be read-only. A candidate is always a separate,
+      // owner-writable inode, so later auditing cannot mutate the rollback.
+      chmodSync(target, statSync(target).mode | 0o200);
       if (identity(source) !== before || statSync(target).size !== expected.bytes)
         throw Error('Source changed during verified inheritance');
       const record = {
@@ -117,6 +122,41 @@ export function verifiedSourceCache(root) {
         identity: identity(target),
       };
       entries[record.path] = { signature: sign(record) };
+    },
+    linkFrozen(source, target, expected) {
+      const project = realpathSync(root);
+      const safe = (path) =>
+        path.startsWith(project + '/work/delivery/') &&
+        /^[a-f0-9]{40}\/full-source\//.test(path.slice((project + '/work/delivery/').length));
+      if (
+        !safe(realpathSync(source)) ||
+        !safe(join(realpathSync(resolve(target, '..')), target.split('/').at(-1)))
+      )
+        throw Error('Only immutable rollback snapshots may share inodes');
+      const verified = verify(source, expected);
+      const before = statSync(source, { bigint: true });
+      if (identity(source) !== verified) throw Error('Frozen snapshot changed after verification');
+      chmodSync(source, statSync(source).mode & ~0o222);
+      linkSync(source, target);
+      const after = statSync(source, { bigint: true }),
+        linked = statSync(target, { bigint: true });
+      if (
+        ['dev', 'ino', 'size', 'mtimeNs'].some(
+          (field) => before[field] !== after[field] || after[field] !== linked[field],
+        )
+      )
+        throw Error('Frozen snapshot changed during linking');
+      for (const file of [source, target]) {
+        const path = realpathSync(file);
+        const record = {
+          path,
+          sha256: expected.sha256,
+          bytes: expected.bytes,
+          identity: identity(path),
+        };
+        entries[path] = { signature: sign(record) };
+        previous[path] = entries[path];
+      }
     },
     save() {
       // Preserve unrelated accepted entries; replacing any source invalidates its

@@ -34,7 +34,7 @@ function fixture() {
   put('data/retired-artwork.json', { artworkIds: [] });
   put('data/editorial/reviews.json', {
     schema: 1,
-    artwork: { old: { copy: 'Old reviewed copy' } },
+    artworks: [{ id: 'old', copy: 'Old reviewed copy' }],
   });
   put('src/pages/art/[id].astro', 'export function getStaticPaths() { return art.map(a => a); }\n');
   put(
@@ -208,6 +208,41 @@ test('incomplete or changed baseline content cannot acquire an incremental plan'
     f.append();
     f.put('dist/art/old/index.html', 'tampered original');
     await assert.rejects(f.plan(), /Source changed/);
+  } finally {
+    f.close();
+  }
+});
+
+test('new reviews for new IDs are safe but old-ID approvals and new shared copy rules require full publication', async () => {
+  const f = fixture();
+  try {
+    f.append();
+    f.put('data/editorial/reviews.json', {
+      schema: 1,
+      artworks: [
+        { id: 'old', copy: 'Old reviewed copy' },
+        { id: 'new', copy: 'New source-bound copy' },
+      ],
+    });
+    f.commit();
+    await f.plan();
+    f.put('data/editorial/reviews.json', {
+      schema: 1,
+      artworks: [
+        { id: 'old', copy: 'Changed existing copy' },
+        { id: 'new', copy: 'New source-bound copy' },
+      ],
+    });
+    await assert.rejects(f.plan(), /Existing editorial/);
+    f.put('data/editorial/reviews.json', {
+      schema: 1,
+      artworks: [
+        { id: 'old', copy: 'Old reviewed copy' },
+        { id: 'new', copy: 'New source-bound copy' },
+      ],
+    });
+    f.put('data/retired-artwork.json', { artworkIds: ['old'] });
+    await assert.rejects(f.plan(), /Existing editorial/);
   } finally {
     f.close();
   }

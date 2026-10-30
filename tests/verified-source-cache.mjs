@@ -9,6 +9,7 @@ import {
   utimesSync,
   renameSync,
   symlinkSync,
+  mkdirSync,
 } from 'node:fs';
 import { join } from 'node:path';
 import { tmpdir } from 'node:os';
@@ -132,6 +133,33 @@ test('private key and index symlinks cannot redirect verification cache writes',
     symlinkSync(f.file, join(f.root, '.asset-integrity/sources.json'));
     assert.throws(() => verifiedSourceCache(f.root), /Unsafe source cache index/);
     assert.deepEqual(readFileSync(f.file), f.bytes);
+  } finally {
+    rmSync(f.root, { recursive: true, force: true });
+  }
+});
+
+test('only frozen snapshots share exact inodes; mutable candidate copies remain independent and writable', () => {
+  const f = setup();
+  try {
+    const old = join(f.root, 'work/delivery', 'a'.repeat(40), 'full-source'),
+      next = join(f.root, 'work/delivery', 'b'.repeat(40), 'full-source');
+    mkdirSync(old, { recursive: true });
+    mkdirSync(next, { recursive: true });
+    const source = join(old, 'original.webp'),
+      target = join(next, 'original.webp'),
+      candidate = join(f.root, 'candidate.webp');
+    writeFileSync(source, f.bytes);
+    const cache = verifiedSourceCache(f.root);
+    assert.throws(() => cache.linkFrozen(f.file, target, f.expected), /Only immutable/);
+    cache.linkFrozen(source, target, f.expected);
+    assert.equal(statSync(source).ino, statSync(target).ino);
+    assert.equal(statSync(source).mode & 0o222, 0);
+    cache.copy(target, candidate, f.expected);
+    assert.notEqual(statSync(candidate).ino, statSync(source).ino);
+    assert(statSync(candidate).mode & 0o200);
+    writeFileSync(candidate, 'changed candidate');
+    assert.deepEqual(readFileSync(source), f.bytes);
+    assert.deepEqual(readFileSync(target), f.bytes);
   } finally {
     rmSync(f.root, { recursive: true, force: true });
   }

@@ -17,8 +17,7 @@ export function analyzeRelatedImpact(
     if (profile.subject) subjects.add(profile.subject.id);
     if (profile.item.published && profile.item.topic) topics.add(profile.item.topic);
   }
-  const affected = [],
-    missing = [];
+  const affected = [];
   let compared = 0,
     existing = 0;
   for (const id of oldIds) {
@@ -33,13 +32,11 @@ export function analyzeRelatedImpact(
           companionSubjects(source.subject).some((partner) => subjects.has(partner.id))));
     if (!candidate && !exhaustive) continue;
     const changed = semantic(previous.snapshot(id)) !== semantic(current.snapshot(id));
-    if (candidate) {
+    if (candidate || exhaustive) {
       compared++;
       if (changed) affected.push(id);
-    } else if (changed) missing.push(id);
+    }
   }
-  if (missing.length)
-    throw Error(`Incomplete related dependency coverage: ${missing.slice(0, 8).join(', ')}`);
   return {
     version: current.version,
     previousVersion: previous.version,

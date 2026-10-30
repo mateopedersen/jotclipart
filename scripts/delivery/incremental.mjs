@@ -151,10 +151,29 @@ function sourceState(root, baselineRevision) {
     'data/primary-topic-categories.json',
     'data/preview-cache-index.json',
   ]);
+  const previousArtworkIds = new Set(
+    oldJson(root, baselineRevision, 'data/art.json').map((item) => item.id),
+  );
+  const perArtwork = new Map([
+    ['data/editorial/reviews.json', (data) => new Map(data.artworks.map((row) => [row.id, row]))],
+    ['data/image-metadata-reviews.json', (data) => new Map(Object.entries(data.artwork))],
+    ['data/artwork-notes.json', (data) => new Map(Object.entries(data))],
+    ['data/artwork-card-summaries.json', (data) => new Map(Object.entries(data))],
+  ]);
   for (const path of paths.filter((p) => p.startsWith('data/') && p.endsWith('.json'))) {
     const after = json(join(root, path)),
       before = oldJson(root, baselineRevision, path);
-    if (!globalData.has(path) && !/-collections?\.json$/.test(path) && !isAppendOnly(before, after))
+    const extract = perArtwork.get(path);
+    if (extract) {
+      const oldRows = extract(before),
+        newRows = extract(after);
+      for (const id of previousArtworkIds)
+        if (canonical(oldRows.get(id)) !== canonical(newRows.get(id)))
+          throw Error(`Existing editorial or dependency data changed: ${path}/${id}`);
+      // New rules/schema cannot be introduced as an unrelated registry header.
+      if (path === 'data/editorial/reviews.json' && before.schema !== after.schema)
+        throw Error('Editorial schema changed');
+    } else if (!globalData.has(path) && canonical(before) !== canonical(after))
       throw Error(`Existing editorial or dependency data changed: ${path}`);
     hashes.push([path, digest(Buffer.from(canonical(after)))]);
   }
@@ -236,7 +255,7 @@ export function validateIncrementalPlan(root, plan) {
 
 // Run once against the verified release. Subsequent uploads reuse its exact
 // bytes via authenticated filesystem identities and copy-on-write inheritance.
-export function sealIncrementalBaseline(root, manifestPath, source) {
+export function sealIncrementalBaseline(root, manifestPath, source, { previousManifestPath } = {}) {
   const manifest = json(manifestPath),
     target = join(root, 'work/delivery', manifest.revision, 'full-source');
   if (manifest.status !== 'remote-byte-verified' || merkle(manifest.files).root !== manifest.root)
@@ -249,6 +268,20 @@ export function sealIncrementalBaseline(root, manifestPath, source) {
   }
   const cache = verifiedSourceCache(root),
     managed = new Set(manifest.files.map((f) => f.path));
+  const predecessor = previousManifestPath ?? manifest.incrementalPlan?.baselineManifest;
+  let previousFiles = new Map(),
+    previousSource;
+  if (predecessor) {
+    const previous = json(predecessor);
+    previousSource = join(root, 'work/delivery', previous.revision, 'full-source');
+    if (
+      previous.status !== 'remote-byte-verified' ||
+      merkle(previous.files).root !== previous.root ||
+      json(join(previousSource, 'incremental-baseline.json')).root !== previous.root
+    )
+      throw Error('Invalid frozen predecessor snapshot');
+    previousFiles = new Map(previous.files.map((file) => [file.path, file]));
+  }
   // Preserve the complete rollback build, including its Pages/static files.
   cpSync(source, target, {
     recursive: true,
@@ -261,7 +294,12 @@ export function sealIncrementalBaseline(root, manifestPath, source) {
       to = join(target, file.path);
     mkdirSync(dirname(to), { recursive: true });
     if (existsSync(to)) cache.verify(to, file);
-    else cache.copy(from, to, file);
+    else {
+      const old = previousFiles.get(file.path);
+      if (old && old.sha256 === file.sha256 && old.bytes === file.bytes && old.mime === file.mime)
+        cache.linkFrozen(join(previousSource, file.path), to, file);
+      else cache.copy(from, to, file);
+    }
   }
   cache.save();
   writeFileSync(
@@ -273,7 +311,7 @@ export function sealIncrementalBaseline(root, manifestPath, source) {
 
 export async function planIncrementalRelease(
   root,
-  { shadowIds, allowEmpty = false, publication, relatedAnalysis, exhaustiveRelated = false } = {},
+  { shadowIds, allowEmpty = false, publication, relatedAnalysis, exhaustiveRelated = true } = {},
 ) {
   const production = json(
     resolve(root, '../ultraclipart/work/remaining-cloudflare-production-report.json'),
@@ -304,6 +342,7 @@ export async function planIncrementalRelease(
     ? await relatedAnalysis()
     : await relatedImpact(root, previousIds, publication ?? readPublication(root), {
         exhaustive: exhaustiveRelated,
+        baselineRevision,
       });
   if (
     !analysis ||

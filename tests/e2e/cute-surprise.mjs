@@ -3,7 +3,9 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { chromium, webkit, expect } from '@playwright/test';
 import { loadTypescript } from '../helpers/typescript.mjs';
 import { readEditorialCatalog } from '../helpers/editorial-catalog.mjs';
-const { cuteConfidence } = await loadTypescript('src/lib/cute-discovery.ts');
+const { cuteConfidence, SURPRISE_INDEX_VERSION } = await loadTypescript(
+  'src/lib/cute-discovery.ts',
+);
 const all = readEditorialCatalog();
 const base = process.env.BASE_URL || 'http://127.0.0.1:4353';
 const engine = process.env.UC_BROWSER || 'chromium';
@@ -21,7 +23,7 @@ try {
   const response = await page.request.get(base + '/surprise-picks.json');
   assert.equal(response.status(), 200);
   const index = await response.json();
-  assert.equal(index.version, 2);
+  assert.equal(index.version, SURPRISE_INDEX_VERSION);
   assert.match(response.headers()['cache-control'], /no-store/);
   assert.ok(index.items.length > 100 && index.items.length <= 512);
   for (const pick of index.items)
