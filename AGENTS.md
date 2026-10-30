@@ -9,8 +9,8 @@ directories. Do not delete it during general cleanup. Read
 `docs/publisher-preservation.md`; refresh via `scripts/delivery/backup.mjs` after
 important publisher changes, verify the snapshot, and preserve credentials
 separately. No backup/restore automatically authorizes or performs publication.
-The incremental installer remains disabled pending complete verification; never
-confuse a preserved candidate with a verified live installation.
+The incremental installer is locally verified and enabled; read the latest
+2026-10-30 release note below. Keep its installation distinct from website publication.
 
 # Artwork-specific writing — latest owner direction, 2026-10-26
 
@@ -560,3 +560,49 @@ be checked from receipts; preparation and uploads are not a live release.
 Use the sole publisher, all existing storage/source/SEO gates and fresh normal
 deployment. Preserve the verified b4b730e full rollback build and unrelated
 Marvel edits. Later production sets are held for the next release.
+
+
+## Verified publisher and Surprise release — 2026-10-30
+
+Live Pages/control/rendered source is `def7fbe56151cf8ae5830082fecb28099d4a41e0`,
+successful Cloudflare production `15a71281-0bbb-45b4-bbfc-e097dae49a8e`.
+Live root is `9b1eba8b5cb81fa852732be9970ed6e377dc34a518607859de0308b6a36a5478`.
+Catalog remains 21,109 artworks / 414 published subjects; 5,278 Pages deployment
+files are distinct from 141,495 private R2 delivery files. All 735 unit tests,
+16 pre-release browser checks, 28 live pages, 18 original SHA/byte-verified
+Image/PDF downloads, and live Chromium/WebKit Surprise mobile/fallback/no-JS
+flows passed. Exact ads.txt bytes are preserved. IndexNow found zero meaningful
+updates/removals and made zero posts; never reinitialize its protected ledger.
+
+Accepted local source is the same publisher branch `content/tesla-commerce-550`
+in `work/ultraclipart-gta`, containing the verified live source plus local installer
+commits `e49ebeebb69225a2363d8bedd8266ecd9e8cd1bd` and
+`8f422d10ff2ac5e1fc3baf4fad5351720a8701db`. The local incremental publisher is
+now enabled and bound to software hash
+`a4db9562b4868b6f03767fc9ac51107735d39f96aed81668548b4cc14124cd16`.
+Read `docs/delivery-incremental.md`, its verification JSON and preservation guide.
+Its full-size isolated shadow passed 100 focused fixtures, 8 Chromium/WebKit
+scenarios and 2 actual native workerd/R2 checks. It selected 50 accepted artworks,
+rendered 100 art/editor pages and preserved 42,118 exact old art/editor pages;
+full image/link/core audits remained complete. The shadow was explicitly held,
+never published, and removed only after success and independent software backup.
+The source/certificate itself does not require another website deployment.
+Normal `scripts/deploy.mjs`, complete source-bound content reviews, all storage
+controls, single-writer locks and atomic activation remain mandatory.
+
+Do not claim an end-to-end speed percentage from rendering counts. Render phase
+was 157s versus 239s, while complete Astro with inheritance/full audits took
+1058s versus 925s during the concurrent transfer. The main transfer advantage
+for append-only content is avoiding rewrites of proven unchanged delivery files;
+measure a future authorized real package separately. Source/template/dependency
+changes or missing proof select the full guarded path.
+
+Production proof: `work/publisher-release-20261030/production-report.json` and
+`live-verification.json` in the accepted publisher; the primary production records
+are updated. Preserve all prior complete fish/content publication evidence.
+Independent immutable software backup and verified restore are recorded under
+`work/publisher-protection-20261030`; protect
+`/Users/melihozcan/Documents/UltraClipart-Publisher-KEEP` from all general cleanup.
+Preserve native originals, frozen `def7fbe.../full-source`, accepted source/Git,
+reviews, IndexNow and the unrelated paused Marvel edit. Do not repeat this upload,
+website publication or notification. No GitHub push or new reminder was made.
