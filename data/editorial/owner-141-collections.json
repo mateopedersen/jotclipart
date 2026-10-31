@@ -241,22 +241,6 @@
         }
       ]
     },
-    "300": {
-      "status": "checked-against-catalog",
-      "sourceSha256": "6745673d5085c88de1759f8f4c0bff06b2a5e37e8847c6b3c052a84404734246",
-      "intro": "Classical warriors fasten armor, carry equipment and pause between journeys. Scroll readers, oil lamps, olive branches and a warrior offering water to a dog broaden the collection beyond fighting poses.",
-      "checkedAt": "2026-10-31T09:37:00.117Z",
-      "evidence": [
-        {
-          "id": "300-001",
-          "imageSha256": "772a799bc87cd1a2e453aa9336b99483e0a29376027fc1ca9061045f0161d7a6"
-        },
-        {
-          "id": "300-041",
-          "imageSha256": "10e4efa3fc6186c8fb9c02e4300c8ff6a030ba618bd519a50cffc8c14db7fdb1"
-        }
-      ]
-    },
     "2007": {
       "status": "checked-against-catalog",
       "sourceSha256": "e52cf54d42102c85d901a384a42677b73768ef020c36b0f61caa23bf8d4e38d2",
@@ -1363,9 +1347,9 @@
     },
     "xbox": {
       "status": "checked-against-catalog",
-      "sourceSha256": "2bde311edeaac74af7528f9b28165c822fe3c779e6a487c56aa2440df817eacf",
+      "sourceSha256": "546132081f2d9487f3cb67ca63d54e4765289745514922db18ad944a0399ba98",
       "intro": "Xbox consoles and controllers sit beside players and gaming objects. Series X and Series S are named where visible features support them; illustrated accessories and connections are not technical product diagrams.",
-      "checkedAt": "2026-10-31T09:37:00.142Z",
+      "checkedAt": "2026-10-31T21:21:23.901Z",
       "evidence": [
         {
           "id": "xbox-001",
@@ -2238,6 +2222,22 @@
         {
           "id": "zcash-single-token-with-a-notched-rim-outline-clipart",
           "imageSha256": "6dd7592bae8348daea368dd7acae3b4ad4e59df1e03b0b14e1d2a0175edd1514"
+        }
+      ]
+    },
+    "300-movie": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "6745673d5085c88de1759f8f4c0bff06b2a5e37e8847c6b3c052a84404734246",
+      "intro": "Explore 300-inspired Spartan warriors, Persian court figures, shields, helmets and scenes from an ancient world of battle and legend.",
+      "checkedAt": "2026-10-31T21:21:23.897Z",
+      "evidence": [
+        {
+          "id": "300-001",
+          "imageSha256": "772a799bc87cd1a2e453aa9336b99483e0a29376027fc1ca9061045f0161d7a6"
+        },
+        {
+          "id": "300-041",
+          "imageSha256": "10e4efa3fc6186c8fb9c02e4300c8ff6a030ba618bd519a50cffc8c14db7fdb1"
         }
       ]
     }

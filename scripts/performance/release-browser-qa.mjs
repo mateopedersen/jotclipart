@@ -41,6 +41,8 @@ try {
     ['tests/e2e/catalog-delivery.mjs', {}],
     ['tests/e2e/search.mjs', { UC_BROWSER: 'chromium' }],
     ['tests/e2e/search.mjs', { UC_BROWSER: 'webkit' }],
+    ['tests/e2e/urgent-corrections.mjs', { UC_BROWSER: 'chromium' }],
+    ['tests/e2e/urgent-corrections.mjs', { UC_BROWSER: 'webkit' }],
     ['tests/e2e/header.mjs', { UC_BROWSER: 'chromium' }],
     ['tests/e2e/header.mjs', { UC_BROWSER: 'webkit' }],
     ['tests/e2e/download-page.mjs', { UC_BROWSER: 'chromium' }],

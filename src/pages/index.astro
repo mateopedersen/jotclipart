@@ -41,7 +41,7 @@ const recentPicks = diverseRecentArtwork(
         View New Clipart
       </a>
     </div>
-    <p>The latest illustration from each newly updated subject.</p>
+    <p>Recent additions across color and black-and-white styles.</p>
     <div class="gallery home-recent-grid">
       {recentPicks.slice(0, 15).map((item) => (
         <Card item={item} subjectLabel={labelByTopic.get(item.topic)} />

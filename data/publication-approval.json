@@ -7862,7 +7862,7 @@
         "88",
         "95",
         "100",
-        "300",
+        "300-movie",
         "2007",
         "2025",
         "007",
@@ -7988,17 +7988,39 @@
         "xrp",
         "zcash"
       ],
-      "previewFingerprint": "af9269393bb5c216621f4ae27dee1ce532ab11bf5727e2caf3b55e616bf94b79",
+      "previewFingerprint": "02e4dc6bc65c89d80fe9092aae27fac63d825e30808d1c3ff44b90a2979c802f",
       "approval": {
+        "status": "EXPLICIT_OWNER_CORRECTION_AND_PUBLICATION",
         "ownerThreadId": "01a1697f-1407-7f52-9f87-72b4d14927d6",
-        "ownerMessageId": "content-addressed-owner-instruction:sha256:9e3ff3b515e3891d442fede07f68257eaa7def1e1758c63c517b6a48ccfbb80e",
         "ownerMessageIdFormat": "Content-addressed exact instruction; not an invented application message UUID",
-        "approvedAt": "2026-10-31T06:19:25.587855+00:00",
+        "xboxInstruction": "[https://ultraclipart.com/art/xbox-014/](https://ultraclipart.com/art/xbox-014/) burda da adamin eli iki kere cikmis bunu duzetlmemissin bu resmi sil,yeniden bunun icin uygun resim yap o el hatasini gider,yeni resimi canliya al pdfini de degis tabi ona gore tam fixle.",
+        "filmInstructions": [
+          "[https://ultraclipart.com/clipart/300/](https://ultraclipart.com/clipart/300/) burda da bir hata var basligini hemen duzelt 300 spartian movie yi yapmissin ona gore herseyini title meta alt tag text ve yazilarini vs de aciklamalarini da yap hemen fixle canliya al",
+          "up'ta sorun kalmadi fixledik, fakat 300 olayini hmene duzelt ben genel olarak hata yapma diye not al dedim 300 spartian movie tarzi aritk neyse karakterleri vs de analiz et o resim aciklama titleleari 50 taneyi ona gore yeniden yaz deirn ol",
+          "300 spartali olayini movieye cevir urlsinide ona gore cevir sitemapte dogrula urllerinin dogrulandigini yoksa ona gore ekle"
+        ],
+        "recordedAt": "2026-10-31T21:21:24.530Z",
+        "ownerMessageId": "content-addressed-owner-instruction:sha256:ad50b955cf7ec7ed57fe8b3489b43f5831f6c66d938cfa1a1bbcfb4ebfe8ee2c",
+        "approvedAt": "2026-10-31T21:21:24.530Z",
+        "previewFingerprint": "02e4dc6bc65c89d80fe9092aae27fac63d825e30808d1c3ff44b90a2979c802f",
+        "kind": "EXPLICIT_OWNER_XBOX_AND_300_CORRECTION_AND_PUBLICATION",
+        "exactInstructions": "[https://ultraclipart.com/art/xbox-014/](https://ultraclipart.com/art/xbox-014/) burda da adamin eli iki kere cikmis bunu duzetlmemissin bu resmi sil,yeniden bunun icin uygun resim yap o el hatasini gider,yeni resimi canliya al pdfini de degis tabi ona gore tam fixle.\n\n[https://ultraclipart.com/clipart/300/](https://ultraclipart.com/clipart/300/) burda da bir hata var basligini hemen duzelt 300 spartian movie yi yapmissin ona gore herseyini title meta alt tag text ve yazilarini vs de aciklamalarini da yap hemen fixle canliya al\n\nup'ta sorun kalmadi fixledik, fakat 300 olayini hmene duzelt ben genel olarak hata yapma diye not al dedim 300 spartian movie tarzi aritk neyse karakterleri vs de analiz et o resim aciklama titleleari 50 taneyi ona gore yeniden yaz deirn ol\n\n300 spartali olayini movieye cevir urlsinide ona gore cevir sitemapte dogrula urllerinin dogrulandigini yoksa ona gore ekle",
+        "scope": "Only the reviewed xbox-014 replacement and 50 reviewed 300 artwork topic corrections; all other records remain unchanged.",
+        "sourceAuthorizationSha256": "ee2df0d1f6a75677c6f16ca4f7950cae814fc7d700e74258612a4ef0870af314"
+      },
+      "previousApproval": {
         "previewFingerprint": "af9269393bb5c216621f4ae27dee1ce532ab11bf5727e2caf3b55e616bf94b79",
-        "kind": "EXPLICIT_OWNER_141_REVIEW_REPAIR_AND_PUBLISH_WITHOUT_FURTHER_QUESTIONS",
-        "exactInstruction": "tamam sen herseyi tara tum hatalari gider sitedeki dogrula test et ve canliya al,bana soru sorma",
-        "scope": "141 submitted/handed-off packages and requested same-ID repairs after all gates; explicit owner direction supersedes an additional preview-confirmation step",
-        "sourceAuthorizationSha256": "459a0e6d5a14a24b320f75f1986bd2af64271ab4a9771733592a2c1c86c2e353"
+        "approval": {
+          "ownerThreadId": "01a1697f-1407-7f52-9f87-72b4d14927d6",
+          "ownerMessageId": "content-addressed-owner-instruction:sha256:9e3ff3b515e3891d442fede07f68257eaa7def1e1758c63c517b6a48ccfbb80e",
+          "ownerMessageIdFormat": "Content-addressed exact instruction; not an invented application message UUID",
+          "approvedAt": "2026-10-31T06:19:25.587855+00:00",
+          "previewFingerprint": "af9269393bb5c216621f4ae27dee1ce532ab11bf5727e2caf3b55e616bf94b79",
+          "kind": "EXPLICIT_OWNER_141_REVIEW_REPAIR_AND_PUBLISH_WITHOUT_FURTHER_QUESTIONS",
+          "exactInstruction": "tamam sen herseyi tara tum hatalari gider sitedeki dogrula test et ve canliya al,bana soru sorma",
+          "scope": "141 submitted/handed-off packages and requested same-ID repairs after all gates; explicit owner direction supersedes an additional preview-confirmation step",
+          "sourceAuthorizationSha256": "459a0e6d5a14a24b320f75f1986bd2af64271ab4a9771733592a2c1c86c2e353"
+        }
       }
     }
   ],

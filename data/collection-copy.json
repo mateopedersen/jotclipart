@@ -447,22 +447,6 @@
     "paragraphs": [],
     "related": []
   },
-  "300": {
-    "description": "Classical warriors fasten armor, carry equipment and pause between journeys. Scroll readers, oil lamps, olive branches and a warrior offering water to a dog broaden the collection beyond fighting poses.",
-    "lead": "Classical warriors fasten armor, carry equipment and pause between journeys. Scroll readers, oil lamps, olive branches and a warrior offering water to a dog broaden the collection beyond fighting poses.",
-    "intro": "Classical warriors fasten armor, carry equipment and pause between journeys. Scroll readers, oil lamps, olive branches and a warrior offering water to a dog broaden the collection beyond fighting poses.",
-    "featured": [
-      "300-001",
-      "300-002",
-      "300-003",
-      "300-004",
-      "300-005"
-    ],
-    "chips": [],
-    "heading": "Explore 300 illustrations",
-    "paragraphs": [],
-    "related": []
-  },
   "911": {
     "description": "Explore 911 emergency illustrations featuring dispatchers, police officers, firefighters, rescue equipment and calls for help.",
     "lead": "Explore 911 emergency illustrations featuring dispatchers, police officers, firefighters, rescue equipment and calls for help.",
@@ -15252,6 +15236,22 @@
     ],
     "chips": [],
     "heading": "Explore Zcash illustrations",
+    "paragraphs": [],
+    "related": []
+  },
+  "300-movie": {
+    "description": "Explore 300-inspired Spartan warriors, Persian court figures, shields, helmets and scenes from an ancient world of battle and legend.",
+    "lead": "Explore 300-inspired Spartan warriors, Persian court figures, shields, helmets and scenes from an ancient world of battle and legend.",
+    "intro": "Explore 300-inspired Spartan warriors, Persian court figures, shields, helmets and scenes from an ancient world of battle and legend.",
+    "featured": [
+      "300-001",
+      "300-002",
+      "300-003",
+      "300-004",
+      "300-005"
+    ],
+    "chips": [],
+    "heading": "Explore 300 movie illustrations",
     "paragraphs": [],
     "related": []
   }

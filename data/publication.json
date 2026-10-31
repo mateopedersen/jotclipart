@@ -1,7 +1,7 @@
 {
   "schema": 2,
   "status": "verified",
-  "verifiedAt": "2026-10-31T12:01:20.194Z",
+  "verifiedAt": "2026-10-31T21:30:28.551Z",
   "files": [
     {
       "assetId": "classic-white-volleyball-realistic-clipart",
@@ -1172731,42 +1172731,42 @@
       "assetId": "xbox-014",
       "sourceType": "raster",
       "kind": "webp",
-      "path": "/catalog/xbox/xbox-014.webp",
-      "name": "xbox-014.webp",
-      "bytes": 752252,
-      "sha256": "bf5364cb55cee7ae0f889db6e1fec7bb86937ee8a5f082b11e631a3161dffdba",
-      "url": "https://assets.ultraclipart.com/xbox/xbox-014.webp.bf5364cb55cee7ae.webp",
+      "path": "/catalog/xbox/xbox-014-repair-v2.webp",
+      "name": "xbox-014-repair-v2.webp",
+      "bytes": 703890,
+      "sha256": "69b5e3d235eca94c291faadca54be1963444482bcd91d5a33e67c7f04f1dfa6a",
+      "url": "https://assets.ultraclipart.com/xbox/xbox-014.webp.69b5e3d235eca94c.webp",
       "contentType": "image/webp",
       "corsOrigin": "https://ultraclipart.com",
-      "verifiedAt": "2026-10-31T11:59:53.624Z",
+      "verifiedAt": "2026-10-31T21:30:28.541Z",
       "verification": "cdn-get-sha256"
     },
     {
       "assetId": "xbox-014",
       "sourceType": "raster",
       "kind": "pdf",
-      "path": "/catalog/xbox/xbox-014.pdf",
-      "name": "xbox-014.pdf",
-      "bytes": 838053,
-      "sha256": "b3df8ae88eb003c139a1fc5aa4a0b2581769e3201ff2cddfbc39d1737e7e0e86",
-      "url": "https://assets.ultraclipart.com/xbox/xbox-014.pdf.b3df8ae88eb003c1.pdf",
+      "path": "/catalog/xbox/xbox-014-repair-v2.pdf",
+      "name": "xbox-014-repair-v2.pdf",
+      "bytes": 799477,
+      "sha256": "672c5a880be6f4fa81201e5e756831c96ca615a6fda332057eaa34579f89171d",
+      "url": "https://assets.ultraclipart.com/xbox/xbox-014.pdf.672c5a880be6f4fa.pdf",
       "contentType": "application/pdf",
       "corsOrigin": "https://ultraclipart.com",
-      "verifiedAt": "2026-10-31T11:59:53.667Z",
+      "verifiedAt": "2026-10-31T21:30:28.551Z",
       "verification": "cdn-get-sha256"
     },
     {
       "assetId": "xbox-014",
       "sourceType": "raster",
       "kind": "thumb",
-      "path": "/catalog/xbox/xbox-014-thumb.webp",
-      "name": "xbox-014-thumb.webp",
-      "bytes": 39126,
-      "sha256": "2fd519bb0868cf66bbbfbb8a9f1f7810f8696ccecc3abba492455a37ee39d8b3",
-      "url": "https://assets.ultraclipart.com/xbox/xbox-014.thumbnail.2fd519bb0868cf66.webp",
+      "path": "/catalog/xbox/xbox-014-repair-v2-thumb.webp",
+      "name": "xbox-014-repair-v2-thumb.webp",
+      "bytes": 40618,
+      "sha256": "94ad02e60b50a3cc033e1055c87dbd754e604ed2f125c3e9a3d261c00eb5246a",
+      "url": "https://assets.ultraclipart.com/xbox/xbox-014.thumbnail.94ad02e60b50a3cc.webp",
       "contentType": "image/webp",
       "corsOrigin": "https://ultraclipart.com",
-      "verifiedAt": "2026-10-31T11:59:53.574Z",
+      "verifiedAt": "2026-10-31T21:30:28.361Z",
       "verification": "cdn-get-sha256"
     },
     {
@@ -1199482,5 +1199482,5 @@
       "verification": "cdn-get-sha256"
     }
   ],
-  "bytes": 49750767161
+  "bytes": 49750681715
 }

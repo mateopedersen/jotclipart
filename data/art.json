@@ -1664871,8 +1664871,8 @@
   {
     "id": "xbox-014",
     "title": "Older Gamer Studying an Xbox Controller",
-    "alt": "A gray-haired illustrated person sits on a low round stool. A cream cardigan and glasses frame the small Xbox gamepad held near the older gamer’s chin.",
-    "description": "A cream cardigan and glasses frame the small Xbox gamepad held near the older gamer’s chin.",
+    "alt": "An older man with gray hair and glasses sits on a wooden stool, looking at an Xbox controller in his raised hand.",
+    "description": "A seated older man in a cream cable-knit cardigan examines a black Xbox controller.",
     "style": "Color",
     "visualStyle": "Full-color illustration",
     "discovery": {
@@ -1664881,15 +1664881,15 @@
     "topic": "xbox",
     "color": "Multicolor",
     "orientation": "Square",
-    "width": 1024,
-    "height": 1024,
+    "width": 1254,
+    "height": 1254,
     "sourceType": "raster",
     "svg": null,
     "sourceCollection": "owner-141-2026-10-30",
     "sourceArchiveTopic": "xbox",
     "sourceOriginalId": "xbox-014",
-    "sourceOriginalSha256": "26d4bf7f7805c044da5a01481fa5340548aa51c486b2d7b5424d96a218d65c0a",
-    "provenance": "Owner-authorized generated collection; native image and verified export lineage preserved.",
+    "sourceOriginalSha256": "4c0337346855e67dff954966d58a1e8a6582ef080022e66e7816384b924ae07b",
+    "provenance": "Owner-authorized replacement illustration; original source and verified export lineage preserved.",
     "productionMethod": "generated-raster",
     "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
     "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
@@ -1664898,50 +1664898,59 @@
     "published": true,
     "indexable": true,
     "createdAt": "2026-10-31T06:16:02.724Z",
-    "revision": 1,
+    "revision": 2,
     "formats": [
       "WEBP",
       "PDF"
     ],
     "printProfile": "GRACoL2006 Coated1v2 — registered output condition; not embedded",
     "pdfColorSpace": "Device CMYK",
-    "pdfPage": "3.413 × 3.413 in",
+    "pdfPage": "4.180 × 4.180 in",
     "pdfPrint": {
-      "width": 1024,
-      "height": 1024,
+      "width": 1254,
+      "height": 1254,
       "ppi": 300,
       "pagePoints": [
-        245.76,
-        245.76
+        300.96,
+        300.96
       ]
     },
     "alpha": true,
     "files": {
       "webp": {
-        "bytes": 752252,
-        "sha256": "bf5364cb55cee7ae0f889db6e1fec7bb86937ee8a5f082b11e631a3161dffdba"
+        "bytes": 703890,
+        "sha256": "69b5e3d235eca94c291faadca54be1963444482bcd91d5a33e67c7f04f1dfa6a"
       },
       "pdf": {
-        "bytes": 838053,
-        "sha256": "b3df8ae88eb003c139a1fc5aa4a0b2581769e3201ff2cddfbc39d1737e7e0e86"
+        "bytes": 799477,
+        "sha256": "672c5a880be6f4fa81201e5e756831c96ca615a6fda332057eaa34579f89171d"
       },
       "thumb": {
-        "bytes": 39126,
-        "sha256": "2fd519bb0868cf66bbbfbb8a9f1f7810f8696ccecc3abba492455a37ee39d8b3"
+        "bytes": 40618,
+        "sha256": "94ad02e60b50a3cc033e1055c87dbd754e604ed2f125c3e9a3d261c00eb5246a"
       }
     },
-    "webp": "/catalog/xbox/xbox-014.webp",
-    "pdf": "/catalog/xbox/xbox-014.pdf",
-    "thumb": "/catalog/xbox/xbox-014-thumb.webp",
+    "webp": "/catalog/xbox/xbox-014-repair-v2.webp",
+    "pdf": "/catalog/xbox/xbox-014-repair-v2.pdf",
+    "thumb": "/catalog/xbox/xbox-014-repair-v2-thumb.webp",
     "productIdentity": {
       "brand": "Microsoft",
       "family": "Xbox",
       "model": null,
       "kind": "brand-scene",
       "generation": null,
-      "visibleFeatures": "A gray-haired illustrated person sits on a low round stool. A cream cardigan and glasses frame the small gamepad held near the chin.",
+      "visibleFeatures": "Xbox symbol on the central button ABXY face buttons and game controller silhouette",
       "reference": "https://www.xbox.com/en-US/accessories/controllers/xbox-wireless-controller",
-      "checkedAt": "2026-10-31T01:43:36.695707+00:00"
+      "checkedAt": "2026-10-31T21:05:30.966756+00:00"
+    },
+    "replacesArtwork": {
+      "sourceCollection": "owner-141-2026-10-30",
+      "revision": 1,
+      "sourceOriginalSha256": "26d4bf7f7805c044da5a01481fa5340548aa51c486b2d7b5424d96a218d65c0a",
+      "webpSha256": "bf5364cb55cee7ae0f889db6e1fec7bb86937ee8a5f082b11e631a3161dffdba",
+      "pdfSha256": "b3df8ae88eb003c139a1fc5aa4a0b2581769e3201ff2cddfbc39d1737e7e0e86",
+      "thumbSha256": "2fd519bb0868cf66bbbfbb8a9f1f7810f8696ccecc3abba492455a37ee39d8b3",
+      "reason": "OWNER_REQUESTED_VISUAL_DEFECT_CORRECTION"
     }
   },
   {
@@ -1704060,7 +1704069,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1704126,7 +1704135,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Teal",
     "orientation": "Square",
     "width": 1024,
@@ -1704192,7 +1704201,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1704258,7 +1704267,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1704324,7 +1704333,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1704390,7 +1704399,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1704456,7 +1704465,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1704522,7 +1704531,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Brown",
     "orientation": "Square",
     "width": 1024,
@@ -1704588,7 +1704597,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1704654,7 +1704663,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1704720,7 +1704729,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1704786,7 +1704795,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1704852,7 +1704861,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1704918,7 +1704927,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1704984,7 +1704993,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1705050,7 +1705059,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1705116,7 +1705125,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Red",
     "orientation": "Square",
     "width": 1024,
@@ -1705182,7 +1705191,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1705248,7 +1705257,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1705314,7 +1705323,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1705380,7 +1705389,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1705446,7 +1705455,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1705512,7 +1705521,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1705578,7 +1705587,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Brown",
     "orientation": "Square",
     "width": 1024,
@@ -1705644,7 +1705653,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1705710,7 +1705719,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1705776,7 +1705785,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1705842,7 +1705851,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1705908,7 +1705917,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1705974,7 +1705983,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1706040,7 +1706049,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1706106,7 +1706115,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1706172,7 +1706181,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Black",
     "orientation": "Square",
     "width": 1024,
@@ -1706238,7 +1706247,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1706304,7 +1706313,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1706370,7 +1706379,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1706436,7 +1706445,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1706502,7 +1706511,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1706568,7 +1706577,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1706634,7 +1706643,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Multicolor",
     "orientation": "Square",
     "width": 1024,
@@ -1706700,7 +1706709,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Gray",
     "orientation": "Square",
     "width": 1024,
@@ -1706766,7 +1706775,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Gray",
     "orientation": "Square",
     "width": 1024,
@@ -1706832,7 +1706841,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Gray",
     "orientation": "Square",
     "width": 1024,
@@ -1706898,7 +1706907,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Gray",
     "orientation": "Square",
     "width": 1024,
@@ -1706964,7 +1706973,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Gray",
     "orientation": "Square",
     "width": 1024,
@@ -1707030,7 +1707039,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Gray",
     "orientation": "Square",
     "width": 1024,
@@ -1707096,7 +1707105,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Gray",
     "orientation": "Square",
     "width": 1024,
@@ -1707162,7 +1707171,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Gray",
     "orientation": "Square",
     "width": 1024,
@@ -1707228,7 +1707237,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Gray",
     "orientation": "Square",
     "width": 1024,
@@ -1707294,7 +1707303,7 @@
     "discovery": {
       "cute": false
     },
-    "topic": "300",
+    "topic": "300-movie",
     "color": "Gray",
     "orientation": "Square",
     "width": 1024,

@@ -169,9 +169,6 @@
     "school",
     "happy-birthday"
   ],
-  "300": [
-    "movie"
-  ],
   "911": [],
   "2007": [
     "2025",
@@ -188,6 +185,9 @@
     "fireworks",
     "celebration",
     "party"
+  ],
+  "300-movie": [
+    "movie"
   ],
   "3d-printer": [
     "printer",

@@ -4,21 +4,71 @@ import assert from 'node:assert/strict';
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { retirementPolicy, createRetiredHandler } from '../scripts/retired-routes.mjs';
+import { retirementPolicy, createRetiredHandler, protectedPatternCheck } from '../scripts/retired-routes.mjs';
 const topics = [
   ...JSON.parse(readFileSync(new URL('../data/topics.json', import.meta.url))).topics,
   ...JSON.parse(readFileSync(new URL('../data/extra-topics.json', import.meta.url))),
 ];
 const art = JSON.parse(readFileSync(new URL('../data/art.json', import.meta.url)));
-const matches = (pattern, path) =>
-  new RegExp(
-    '^' +
-      pattern
-        .split('*')
-        .map((part) => part.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
-        .join('.*') +
-      '$',
-  ).test(path);
+const expressions = new Map();
+const matches = (pattern, path) => {
+  let expression = expressions.get(pattern);
+  if (!expression) {
+    expression = new RegExp(
+      '^' +
+        pattern
+          .split('*')
+          .map((part) => part.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+          .join('.*') +
+        '$',
+    );
+    expressions.set(pattern, expression);
+  }
+  return expression.test(path);
+};
+
+test('cached route glob matching preserves wildcard and literal behavior', () => {
+  const uncached = (pattern, path) =>
+    new RegExp(
+      '^' + pattern.split('*').map((part) => part.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('.*') + '$',
+    ).test(path);
+  const patterns = ['/*', '/clipart/*/', '/a.b+test/*', '/art/exact/', '/a/*/end*'];
+  const paths = ['/', '/clipart/300-movie/', '/a.b+test/x', '/aXbtest/x', '/art/exact/', '/a/z/end', '/a/z/other'];
+  for (const pattern of patterns)
+    for (const path of paths) {
+      assert.equal(matches(pattern, path), uncached(pattern, path));
+      assert.equal(matches(pattern, path), uncached(pattern, path));
+    }
+});
+test('the protected-path prefix index agrees with a full glob scan', () => {
+  const paths = [
+    '/', '//', '/art/', '/art/cat/', '/art/cat/index.html', '/edit/cat/',
+    '/clipart/300-movie/', '/clipart/a.b+test/index.html', '/foo/a/b/end',
+    '/foo/äbc/', '/foo/a?b', '/foo/a.b+test', '/assets/a/b/c.webp',
+  ];
+  const compile = (pattern) => new RegExp(
+    '^' + pattern.split('*').map((part) => part.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('.*') + '$',
+  );
+  for (const root of ['/*/', '/clipart/', '/foo/', '/assets/', '/foo/a']) {
+    const check = protectedPatternCheck(paths, root);
+    for (const suffix of ['', '*', 'a*', 'cat*', '300*', 'a.b+test*', 'a?b', 'ä*', 'a/b/*', '*end', 'missing*']) {
+      const pattern = root + suffix, matcher = compile(pattern);
+      assert.equal(check({ pattern, matcher }), !paths.some((path) => matcher.test(path)), pattern);
+    }
+  }
+  let state = 92317;
+  const random = () => ((state = (state * 48271) % 2147483647) / 2147483647);
+  const chars = 'abc12-./?+ä';
+  const word = () => Array.from({ length: 1 + Math.floor(random() * 9) }, () => chars[Math.floor(random() * chars.length)]).join('');
+  const generated = Array.from({ length: 250 }, () => '/' + word() + '/' + word());
+  for (const root of ['/*/', '/clipart/', '/foo/']) {
+    const check = protectedPatternCheck(generated, root);
+    for (let i = 0; i < 200; i++) {
+      const pattern = root + word() + '*' + word(), matcher = compile(pattern);
+      assert.equal(check({ pattern, matcher }), !generated.some((path) => matcher.test(path)), pattern);
+    }
+  }
+});
 test('the production catalog fits the Pages route limit and unsupported partitions fail closed', () => {
   const current = retirementPolicy(topics, art);
   assert.ok(current.routes.include.length + current.routes.exclude.length <= 100);

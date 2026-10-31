@@ -29,7 +29,17 @@ const compilePattern = (pattern) =>
         .join('.*') +
       '$',
   );
-const matches = (pattern, path) => compilePattern(pattern).test(path);
+// The same glob is tested against many catalog paths. RegExp has no stateful
+// flags here, so reusing its compiled form keeps identical matching behavior.
+const cachedPatterns = new Map();
+const matches = (pattern, path) => {
+  let expression = cachedPatterns.get(pattern);
+  if (!expression) {
+    expression = compilePattern(pattern);
+    cachedPatterns.set(pattern, expression);
+  }
+  return expression.test(path);
+};
 function subjectRoutes(root, missing, current, compact = false) {
   // Pages also serves its generated index.html files directly. A compact
   // wildcard must never send those current assets through the 404 Function.
@@ -108,6 +118,38 @@ function commonGlob(a, b) {
   return pattern + '*';
 }
 
+// A possible match must start with the pattern's literal prefix after its
+// root. Indexing those suffixes avoids testing unrelated protected paths; it
+// does not relax the final exhaustive route checks below.
+export function protectedPatternCheck(protectedPaths, root) {
+  if (root !== '/*/' && root.includes('*'))
+    return ({ matcher }) => !protectedPaths.some((path) => matcher.test(path));
+  const suffixes = new Set();
+  for (const path of protectedPaths) {
+    if (root === '/*/') {
+      if (!path.startsWith('/')) continue;
+      for (let index = path.indexOf('/', 1); index >= 0; index = path.indexOf('/', index + 1))
+        suffixes.add(path.slice(index + 1));
+    } else if (path.startsWith(root)) suffixes.add(path.slice(root.length));
+  }
+  const all = [...suffixes], one = new Map(), two = new Map();
+  for (const suffix of all) {
+    for (const [length, index] of [[1, one], [2, two]]) {
+      if (suffix.length < length) continue;
+      const key = suffix.slice(0, length), values = index.get(key) ?? [];
+      values.push(suffix); index.set(key, values);
+    }
+  }
+  return ({ pattern, matcher }) => {
+    if (!pattern.startsWith(root)) return !protectedPaths.some((path) => matcher.test(path));
+    const prefix = pattern.slice(root.length).split('*', 1)[0];
+    const options = prefix.length >= 2 ? two.get(prefix.slice(0, 2)) ?? [] :
+      prefix.length === 1 ? one.get(prefix) ?? [] : all;
+    const head = root === '/*/' ? '/x/' : root;
+    return !options.some((suffix) => matcher.test(head + suffix));
+  };
+}
+
 function compactCover(ids, protectedPaths, protectedSuffixes, root = '/*/') {
   const requiredSuffixes = root === '/*/' ? ['', '/'] : ['', '/', '/index.html'];
   const requiredPaths = [
@@ -125,10 +167,11 @@ function compactCover(ids, protectedPaths, protectedSuffixes, root = '/*/') {
         // the current-path filter below must still authorize either pattern.
         candidates.add(root + commonGlob(names[j], names[i]));
       }
+  const isSafe = protectedPatternCheck(protectedPaths, root);
   const safe = [...candidates]
     .filter((pattern) => pattern.length <= 100)
     .map((pattern) => ({ pattern, matcher: compilePattern(pattern) }))
-    .filter(({ matcher }) => !protectedPaths.some((path) => matcher.test(path)))
+    .filter(isSafe)
     .map((candidate) => ({
       ...candidate,
       ids: names.filter((id) =>

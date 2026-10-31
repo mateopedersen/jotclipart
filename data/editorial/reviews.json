@@ -603601,25 +603601,25 @@
     {
       "id": "xbox-014",
       "status": "reviewed-from-image",
-      "sourceSha256": "bf5364cb55cee7ae0f889db6e1fec7bb86937ee8a5f082b11e631a3161dffdba",
-      "imageSha256": "bf5364cb55cee7ae0f889db6e1fec7bb86937ee8a5f082b11e631a3161dffdba",
-      "inputMetadataSha256": "acf54f47c565c1346cbcf2c2de198f9abe56b00e7575619db4af3c1c708917a5",
-      "inputContextSha256": "b1e0647f8ac512b7950c1809d580b726ee1a8196708c058a8db79f740cd34280",
+      "sourceSha256": "69b5e3d235eca94c291faadca54be1963444482bcd91d5a33e67c7f04f1dfa6a",
+      "imageSha256": "69b5e3d235eca94c291faadca54be1963444482bcd91d5a33e67c7f04f1dfa6a",
+      "inputMetadataSha256": "e795f9d6e736f7d8ad14beb788a11276b585f75b5be2784d8ccc7129fde1d268",
+      "inputContextSha256": "43f03e6aebdf6fec491b8f1d78b58ca2cff26f56b76163b91946a7b76fc379e5",
       "copy": {
         "title": "Older Gamer Studying an Xbox Controller",
-        "alt": "A gray-haired illustrated person sits on a low round stool. A cream cardigan and glasses frame the small Xbox gamepad held near the older gamer’s chin.",
-        "description": "A cream cardigan and glasses frame the small Xbox gamepad held near the older gamer’s chin."
+        "alt": "An older man with gray hair and glasses sits on a wooden stool, looking at an Xbox controller in his raised hand.",
+        "description": "A seated older man in a cream cable-knit cardigan examines a black Xbox controller."
       },
       "observations": [
-        "A gray-haired illustrated person sits on a low round stool.",
-        "A cream cardigan and glasses frame the small gamepad held near the chin."
+        "Gray-haired man with glasses sits on a wooden stool in a cream cable-knit cardigan, holding a black Xbox controller in one hand while the other rests on his lap.",
+        "Two hands are visible; no additional hand is present."
       ],
-      "reviewedAt": "2026-10-31T01:40:30.383883+00:00",
-      "inspectedImage": "/catalog/xbox/xbox-014.webp",
+      "reviewedAt": "2026-10-31T21:05:30.966756+00:00",
+      "inspectedImage": "/catalog/xbox/xbox-014-repair-v2.webp",
       "references": [
         {
           "publisher": "Microsoft Xbox",
-          "reason": "Xbox sphere mark, offset sticks, round D-pad and letter-button arrangement match the Xbox Wireless Controller family. Illustrated people and accessory props do not establish official merchandising or endorsements.",
+          "reason": "The Xbox mark and colored ABXY buttons identify the controller family; no model or generation is inferred.",
           "url": "https://www.xbox.com/en-US/accessories/controllers/xbox-wireless-controller"
         }
       ]
@@ -615608,19 +615608,25 @@
       "sourceSha256": "772a799bc87cd1a2e453aa9336b99483e0a29376027fc1ca9061045f0161d7a6",
       "imageSha256": "772a799bc87cd1a2e453aa9336b99483e0a29376027fc1ca9061045f0161d7a6",
       "inputMetadataSha256": "a9837aaadcadb417527e1e4077ec15d96f419796b86c0e27e5717f3a6ac1dd4b",
-      "inputContextSha256": "bec57ae326e8c76de473a1a0af9a6f99b809e65452c3e55f262d4ff661f53062",
-      "copy": {
-        "title": "Warrior Adjusting a Wrist Wrap",
-        "alt": "A bearded warrior wears a dark red cape and short leather-style skirt.",
-        "description": "One hand tightens a pale wrist wrap beside a round lambda-marked shield."
-      },
-      "observations": [
-        "A bearded warrior wears a dark red cape and short leather-style skirt.",
-        "One hand tightens a pale wrist wrap beside a round lambda-marked shield."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.758996+00:00",
+      "inputContextSha256": "d80b4a63890806709d37e89457e37f25a931b857dcad9678ceec096493722b67",
       "inspectedImage": "/catalog/300/300-001.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Dark-haired bearded man in a red cape and bronze greaves, both hands near a pale wrist wrap; round shield with lambda at his side.",
+        "A bearded Spartan warrior adjusts a wrist wrap beside his round shield."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Spartan Warrior Tightening a Wrist Wrap",
+        "alt": "A bearded Spartan warrior adjusts a wrist wrap beside his round shield.",
+        "description": "A red cape falls over the warrior's shoulders as he fastens the white band around his wrist. His weathered shield bears a lambda symbol."
+      }
     },
     {
       "id": "300-002",
@@ -615628,19 +615634,25 @@
       "sourceSha256": "b4b6ed74dd30bb9ce274f6d9c263e5cecf10e9523a6d87927e33bef23945519d",
       "imageSha256": "b4b6ed74dd30bb9ce274f6d9c263e5cecf10e9523a6d87927e33bef23945519d",
       "inputMetadataSha256": "da11b13f0d2fb3feedcf7a0e31437f60f9d995c8196eb5d0d6cabc6bce29c7b0",
-      "inputContextSha256": "29b5f8234ca523c8fba580070f7a63affc47cf8b78db585f185f96d69848a239",
-      "copy": {
-        "title": "Woman in a Teal Cloak",
-        "alt": "A dark-haired woman wears a long cream draped dress.",
-        "description": "Both hands hold a golden-colored shoulder clasp beneath a leafy hair ornament."
-      },
-      "observations": [
-        "A dark-haired woman wears a long cream draped dress.",
-        "Both hands hold a golden-colored shoulder clasp beneath a leafy hair ornament."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.760222+00:00",
+      "inputContextSha256": "1463857ecbf1d2f85a80b9ab9899170381bcacbbed2388f08dd4d0ca143151c3",
       "inspectedImage": "/catalog/300/300-002.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Dark braided hair, gold headband and clasp, white belted gown, blue-green cloak, sandals; figure is not uniquely identifiable as Gorgo.",
+        "A dark-haired woman in a white gown holds a teal cloak at her shoulder."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Spartan Woman in a Teal Cloak",
+        "alt": "A dark-haired woman in a white gown holds a teal cloak at her shoulder.",
+        "description": "A gold headband and clasp accent the flowing white dress and blue-green cloak of this Spartan-inspired figure."
+      }
     },
     {
       "id": "300-003",
@@ -615648,19 +615660,25 @@
       "sourceSha256": "793645399365006d8819ef316c49c472381ea7400815f10ac98e8eb44001a8e9",
       "imageSha256": "793645399365006d8819ef316c49c472381ea7400815f10ac98e8eb44001a8e9",
       "inputMetadataSha256": "8e145a5b725465bb8fff28e396a5ebb4752e4d2f5707dd2259bd3ab0ec889b8c",
-      "inputContextSha256": "25beb88e4ccc50fbc24770bb4f50813ff7d44cb114ef0b999f44233d297050e5",
-      "copy": {
-        "title": "Seated Bandaged Warrior",
-        "alt": "A red-haired bearded figure sits on a rough stone block.",
-        "description": "A pale cloth covers both eyes above a red cloak and one extended open hand."
-      },
-      "observations": [
-        "A red-haired bearded figure sits on a rough stone block.",
-        "A pale cloth covers both eyes above a red cloak and one extended open hand."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.761782+00:00",
+      "inputContextSha256": "a755aa152215c831605f405c0302ea8e24d4dea2186b9f5fecb2b6161c26e282",
       "inspectedImage": "/catalog/300/300-003.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Red-haired bearded figure seated on stone; white cloth across the eyes, red cloak, one hand raised.",
+        "A red-haired warrior sits on a stone block with a white bandage over his eyes."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Seated Warrior with a Bandaged Face",
+        "alt": "A red-haired warrior sits on a stone block with a white bandage over his eyes.",
+        "description": "Wrapped in a red cloak, the seated warrior extends one hand while a pale bandage covers his eyes."
+      }
     },
     {
       "id": "300-004",
@@ -615668,19 +615686,25 @@
       "sourceSha256": "949f4cfbe6e6ead80b55674bde563a7688b2d79aa55097c22726da9c708ba309",
       "imageSha256": "949f4cfbe6e6ead80b55674bde563a7688b2d79aa55097c22726da9c708ba309",
       "inputMetadataSha256": "4bfda4d915f135ab1adb00152641fc94a08767e950e98ec771cffb2118d5d70f",
-      "inputContextSha256": "5bbbc5c53d3c036331b4fb3e1c4a45920ed44f54102b4a268010a373180c7f81",
-      "copy": {
-        "title": "Warrior with Sword and Shield",
-        "alt": "A young armored figure steps into a broad defensive stance.",
-        "description": "A short sword and round red-marked shield frame the flowing dark red cape."
-      },
-      "observations": [
-        "A young armored figure steps into a broad defensive stance.",
-        "A short sword and round red-marked shield frame the flowing dark red cape."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.763201+00:00",
+      "inputContextSha256": "83b718d8d99fd9c11c811f753807d8d7c4e6e880aaf4ae6fa9bbb2b55c3367c1",
       "inspectedImage": "/catalog/300/300-004.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Young clean-shaven warrior lunging, short sword, red cloak, bronze round shield with red lambda and bronze greaves.",
+        "A young Spartan fighter lunges with a sword and a round shield."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Spartan Fighter with Sword and Shield",
+        "alt": "A young Spartan fighter lunges with a sword and a round shield.",
+        "description": "A windblown red cape follows the fighter as he braces behind a bronze shield marked with a red lambda."
+      }
     },
     {
       "id": "300-005",
@@ -615688,19 +615712,25 @@
       "sourceSha256": "1578d25b96d0d3cd097207ef766de9f0b1a0b411724b3d7af0bc3d900d56de29",
       "imageSha256": "1578d25b96d0d3cd097207ef766de9f0b1a0b411724b3d7af0bc3d900d56de29",
       "inputMetadataSha256": "1342548883e02f1787fefeab64c2753e2939089147b30b81dca56cfc00f23bdd",
-      "inputContextSha256": "0cd48ec259863eb30a17bbdfaaa299637b916799dba609e48c23610e8170960b",
-      "copy": {
-        "title": "Young Warrior Holding a Shield",
-        "alt": "A curly-haired figure in a pale tunic looks down at the back of a round shield.",
-        "description": "A red cloak, leather-style skirt panels and crossed sandal straps detail the pose."
-      },
-      "observations": [
-        "A curly-haired figure in a pale tunic looks down at the back of a round shield.",
-        "A red cloak, leather-style skirt panels and crossed sandal straps detail the pose."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.764429+00:00",
+      "inputContextSha256": "0ef015391c3d9a166ac67874b1f7fe56429e18da625e02ec79969481b92d0529",
       "inspectedImage": "/catalog/300/300-005.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Curly-haired young figure viewed mostly from behind, white tunic, red cloak, hands on the inner face of a round shield.",
+        "A young warrior in a red cloak looks at the inside of a round shield."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Young Spartan Holding a Shield",
+        "alt": "A young warrior in a red cloak looks at the inside of a round shield.",
+        "description": "Shown from behind, the young Spartan adjusts a shield while wearing a white tunic and a short red cloak."
+      }
     },
     {
       "id": "300-006",
@@ -615708,19 +615738,25 @@
       "sourceSha256": "44612324630bb8780808b7795fbf7343b2a8c50e656285ba1c54672ed055134c",
       "imageSha256": "44612324630bb8780808b7795fbf7343b2a8c50e656285ba1c54672ed055134c",
       "inputMetadataSha256": "6d56156140bfa811170ee66e61b8d25365000f457d64bd2f1e1023f6700a23a0",
-      "inputContextSha256": "f209dfa75883ab7dc380d7df2a91588380d07fe341937307b4736e4c1c783e5d",
-      "copy": {
-        "title": "Warrior Fastening a Greave",
-        "alt": "A gray-haired warrior kneels beside a crested bronze-colored helmet.",
-        "description": "Both hands work at a shin guard beneath a heavy burgundy cape."
-      },
-      "observations": [
-        "A gray-haired warrior kneels beside a crested bronze-colored helmet.",
-        "Both hands work at a shin guard beneath a heavy burgundy cape."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.766087+00:00",
+      "inputContextSha256": "b3163152e505fd4fde9286b5e03a4fb0dea3e7c34d74df05d8456a17d063ba1a",
       "inspectedImage": "/catalog/300/300-006.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Bearded warrior kneeling in red cloak, fastening bronze greave; crested bronze helmet on ground.",
+        "A bearded Spartan kneels to fasten a bronze shin guard beside his helmet."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Kneeling Spartan Fastening His Greave",
+        "alt": "A bearded Spartan kneels to fasten a bronze shin guard beside his helmet.",
+        "description": "With his crested helmet resting nearby, the red-cloaked warrior tightens a strap around his lower leg."
+      }
     },
     {
       "id": "300-007",
@@ -615728,19 +615764,25 @@
       "sourceSha256": "0486a5e04d27fbfcb96929717d280a834c7c1670f7bd16b2df09e8be1c35ab49",
       "imageSha256": "0486a5e04d27fbfcb96929717d280a834c7c1670f7bd16b2df09e8be1c35ab49",
       "inputMetadataSha256": "7e6b9aa69413cd865c35f949c74390887f96713ddb804fd42b5f271a98a07cd6",
-      "inputContextSha256": "b1bc137375ebac231eb080b434c4db5d9db9148cc320989f1872116a78fad44c",
-      "copy": {
-        "title": "Scribe with a Wax Tablet",
-        "alt": "A gray-haired bearded figure wears olive and ochre draped clothing.",
-        "description": "One hand holds a stylus above an open two-panel wooden writing tablet."
-      },
-      "observations": [
-        "A gray-haired bearded figure wears olive and ochre draped clothing.",
-        "One hand holds a stylus above an open two-panel wooden writing tablet."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.767590+00:00",
+      "inputContextSha256": "5c149d88811c6db81f9bea04e18832f2a09454e72d741d465259e20acbb172c0",
       "inspectedImage": "/catalog/300/300-007.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Gray-haired bearded man in ochre cloak and green tunic, holding stylus against open wooden-framed tablet.",
+        "A gray-haired scribe writes on an open wooden tablet."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Spartan Scribe with a Writing Tablet",
+        "alt": "A gray-haired scribe writes on an open wooden tablet.",
+        "description": "Wearing an ochre cloak over a green tunic, the scribe holds a stylus above two dark writing panels."
+      }
     },
     {
       "id": "300-008",
@@ -615748,19 +615790,25 @@
       "sourceSha256": "41f330274e4a6a2dfe6f7ae04999987a7aeda36a5e0998bb954b23beb26c3062",
       "imageSha256": "41f330274e4a6a2dfe6f7ae04999987a7aeda36a5e0998bb954b23beb26c3062",
       "inputMetadataSha256": "ea6c3b2e11e28688cc81743a3a12d2dad48d880b77346ce4c4b3cc3a3e6baee7",
-      "inputContextSha256": "1b7880b41d773578515b79b69585bcdfd950414f06af30f0e7625b5da3d096ba",
-      "copy": {
-        "title": "Spear Bearer in Brown",
-        "alt": "A ragged brown-cloaked warrior leans forward behind a round shield.",
-        "description": "A long pointed spear angles downward beside dark shin guards and sandals."
-      },
-      "observations": [
-        "A ragged brown-cloaked warrior leans forward behind a round shield.",
-        "A long pointed spear angles downward beside dark shin guards and sandals."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.768900+00:00",
+      "inputContextSha256": "5a9431cd8b30272d37cfa761e8077c16e3560ad9408ab3365bcba0c9e78794cd",
       "inspectedImage": "/catalog/300/300-008.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Thin balding bearded man in rough brown clothing and shin guards, holding long downward-pointed spear and round shield.",
+        "A lean warrior carries a long spear and a round bronze shield."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Spear Bearer with a Bronze Shield",
+        "alt": "A lean warrior carries a long spear and a round bronze shield.",
+        "description": "The warrior leans forward in a weathered brown tunic, with his spear angled toward the ground and his shield raised."
+      }
     },
     {
       "id": "300-009",
@@ -615768,19 +615816,25 @@
       "sourceSha256": "61328d303b61457e4a86927b6455e757f5fc124b278364cca52253878cfa17f3",
       "imageSha256": "61328d303b61457e4a86927b6455e757f5fc124b278364cca52253878cfa17f3",
       "inputMetadataSha256": "494b2d0295cccb30946dcd2a13dd1466079d0889ce8dc115fb04adae3b489faf",
-      "inputContextSha256": "ad1bb3b493217aca70ffcb89cef8916c4f79122815ad8eecf3ce4a4c1a1fa365",
-      "copy": {
-        "title": "Ornately Dressed Court Figure",
-        "alt": "A bald illustrated figure wears a deep purple drape and many golden-colored ornaments.",
-        "description": "Raised hands, fine chains and decorative wrist pieces detail the full-length costume."
-      },
-      "observations": [
-        "A bald illustrated figure wears a deep purple drape and many golden-colored ornaments.",
-        "Raised hands, fine chains and decorative wrist pieces detail the full-length costume."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.770174+00:00",
+      "inputContextSha256": "013c3795b0535b91294569be86ca02a12e709f9beec2d71a8ed7c92528d04534",
       "inspectedImage": "/catalog/300/300-009.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Bald figure in a purple robe and elaborate gold-and-turquoise jewelry; appearance evokes Xerxes but lacks conclusive character identity.",
+        "A bald figure in purple robes wears elaborate gold and turquoise jewelry."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Persian Court Figure in Purple and Gold",
+        "alt": "A bald figure in purple robes wears elaborate gold and turquoise jewelry.",
+        "description": "Layers of jewelry and an ornate purple robe give this court figure a look reminiscent of the Persian court in 300."
+      }
     },
     {
       "id": "300-010",
@@ -615788,19 +615842,25 @@
       "sourceSha256": "947840b075d5ba32ba9805aed7bfc4a7fc597b15eead162111943c651543b148",
       "imageSha256": "947840b075d5ba32ba9805aed7bfc4a7fc597b15eead162111943c651543b148",
       "inputMetadataSha256": "53e22904ed91b38d36b82f463d1f9a3036f45bc71d8780d1e01248baca5cbbcb",
-      "inputContextSha256": "24094d7dcaa921cba89e72c5acc6740d13096dd02c1e9b744c5450cac6c58224",
-      "copy": {
-        "title": "Messenger Holding a Scroll Case",
-        "alt": "A bearded figure wears a long dark blue robe and tall decorated cap.",
-        "description": "Both hands present a horizontal blue case with golden-colored ends."
-      },
-      "observations": [
-        "A bearded figure wears a long dark blue robe and tall decorated cap.",
-        "Both hands present a horizontal blue case with golden-colored ends."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.771345+00:00",
+      "inputContextSha256": "3e86a8c65e7c1f575ba7f2b88e63e88e971c3e035869e31475cb600959ddaefb",
       "inspectedImage": "/catalog/300/300-010.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Bearded dark-haired figure in dark blue gold-trimmed robe and dark cap, holding blue cylindrical case with red seal.",
+        "A dark-robed envoy presents a blue scroll case with both hands."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Persian Envoy Carrying a Scroll Case",
+        "alt": "A dark-robed envoy presents a blue scroll case with both hands.",
+        "description": "Gold trim and a round ornament decorate the envoy's dark blue outfit as he holds a sealed scroll case forward."
+      }
     },
     {
       "id": "300-011",
@@ -615808,19 +615868,25 @@
       "sourceSha256": "4ccc11f9c9993e1df0554c45247a21744f3fcda9b8f3bea74e131d1350b036cc",
       "imageSha256": "4ccc11f9c9993e1df0554c45247a21744f3fcda9b8f3bea74e131d1350b036cc",
       "inputMetadataSha256": "6537efcbbcf5410be969a535f45e7c9abd8f12d4c1bb8fd98b966b1b3d758ac2",
-      "inputContextSha256": "a5e2a293ae261d319070bfa16001254030179574b5521d04c0ed2e90a8bdaae1",
-      "copy": {
-        "title": "Hooded Dual-Sword Fighter",
-        "alt": "A crouched figure wears layered black armor and a narrow silver-colored face mask.",
-        "description": "Two curved blades cross above dark gloves and long purple waist cloths."
-      },
-      "observations": [
-        "A crouched figure wears layered black armor and a narrow silver-colored face mask.",
-        "Two curved blades cross above dark gloves and long purple waist cloths."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.818212+00:00",
+      "inputContextSha256": "4c3da7aae64d03866fd5a49b0fa902049d8a72e0e3ce1a402fdc83e55179481e",
       "inspectedImage": "/catalog/300/300-011.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Black hooded masked warrior crouching, dark armor, purple sash and two curved swords; suggests the film's Immortals without confirmed character identity.",
+        "A hooded fighter in black armor crouches with two curved swords."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Masked Fighter with Twin Curved Swords",
+        "alt": "A hooded fighter in black armor crouches with two curved swords.",
+        "description": "A silver-toned mask, purple sash and crossed blades give the crouching figure a dramatic 300-inspired look."
+      }
     },
     {
       "id": "300-012",
@@ -615828,19 +615894,25 @@
       "sourceSha256": "1d8f9ec5d83f4752d4dd95c1e69776f72bbc89df4f65c21e71d4df02924f5ca1",
       "imageSha256": "1d8f9ec5d83f4752d4dd95c1e69776f72bbc89df4f65c21e71d4df02924f5ca1",
       "inputMetadataSha256": "3ae262e84f7f1a941e47f5946a6727eb5c8f021dd59bd85e15a5cb8ac9dd6e6a",
-      "inputContextSha256": "a7af8a5914898e44aa6c1b179814a3aa74630449c030597102e3bd554432120d",
-      "copy": {
-        "title": "Woman in Flowing Ivory Robes",
-        "alt": "A long-haired figure raises one hand above draped pale sleeves.",
-        "description": "Golden edging and soft pink inner folds follow the sweeping dress."
-      },
-      "observations": [
-        "A long-haired figure raises one hand above draped pale sleeves.",
-        "Golden edging and soft pink inner folds follow the sweeping dress."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.819543+00:00",
+      "inputContextSha256": "9f06c215eda01135b958270aaf61f0c098af4b3a7957a26cdd59fa1357a102ee",
       "inspectedImage": "/catalog/300/300-012.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Brown-haired woman in gold circlet, flowing ivory and pale pink gown with gold borders, one raised arm, bare feet.",
+        "A long-haired woman raises one hand while wearing an ivory gown with gold trim."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Woman in a Flowing Ivory Gown",
+        "alt": "A long-haired woman raises one hand while wearing an ivory gown with gold trim.",
+        "description": "Gold edging traces the sweeping folds of her dress, and a delicate circlet sits in her flowing brown hair."
+      }
     },
     {
       "id": "300-013",
@@ -615848,19 +615920,25 @@
       "sourceSha256": "77b1bb6221cef127b4ae5f3ce4c532c35f9a307d0ed3d1d8b0cf86b9edf6f98f",
       "imageSha256": "77b1bb6221cef127b4ae5f3ce4c532c35f9a307d0ed3d1d8b0cf86b9edf6f98f",
       "inputMetadataSha256": "e28a255621b74b072be2392945e49837c43f7139ce1e4db9bed732d266146581",
-      "inputContextSha256": "e847c2aee645ef8b6fa1825af60792ba6fa07c935fee7703b856b3031f1aa7d8",
-      "copy": {
-        "title": "Hooded Elder Reading a Scroll",
-        "alt": "A white-bearded figure sits on a low stone stool.",
-        "description": "Both hands unroll a pale parchment beneath brown and olive layered robes."
-      },
-      "observations": [
-        "A white-bearded figure sits on a low stone stool.",
-        "Both hands unroll a pale parchment beneath brown and olive layered robes."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.820933+00:00",
+      "inputContextSha256": "96b8a4c0210875937ae70375641bd0a8e3883caf486026af8ec92efc1fae25bf",
       "inspectedImage": "/catalog/300/300-013.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Gray-bearded elderly figure sitting on stone, brown hood and olive layer, reading a parchment scroll.",
+        "A gray-bearded elder in a brown hood reads a parchment scroll."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Elder in a Brown Hood Reading a Scroll",
+        "alt": "A gray-bearded elder in a brown hood reads a parchment scroll.",
+        "description": "Seated on a stone bench, the elder holds the unrolled parchment across his lap above layers of green and gray robes."
+      }
     },
     {
       "id": "300-014",
@@ -615868,19 +615946,25 @@
       "sourceSha256": "a36ba2b6aca414c65a512963af05b960d89e9d1278ca2c7f40743791763ce176",
       "imageSha256": "a36ba2b6aca414c65a512963af05b960d89e9d1278ca2c7f40743791763ce176",
       "inputMetadataSha256": "6ce126268c1d0357c1d22b98ab9110ca3756505f7a8a53f0eb142eaa6defca5d",
-      "inputContextSha256": "7923181b226b80d39b3ac86a5ccbdbb4243464c2bcd8b13c379e5c3ef787f68c",
-      "copy": {
-        "title": "Smith Shaping a Metal Strip",
-        "alt": "A bald bearded smith wears a brown apron over a pale shirt.",
-        "description": "A raised hammer meets a curved metal strip above an anvil, tool bucket and marked shield."
-      },
-      "observations": [
-        "A bald bearded smith wears a brown apron over a pale shirt.",
-        "A raised hammer meets a curved metal strip above an anvil, tool bucket and marked shield."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.822568+00:00",
+      "inputContextSha256": "66c3ecb3bd44e75c1b60384fe9f5220f70fdf6e4764c67c6e816f57d471d5d03",
       "inspectedImage": "/catalog/300/300-014.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Bald bearded blacksmith in apron hammering curved metal strip on anvil; lambda shield and wooden bucket of tools nearby.",
+        "A blacksmith hammers a curved strip of metal beside a lambda shield."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Shield Maker at an Anvil",
+        "alt": "A blacksmith hammers a curved strip of metal beside a lambda shield.",
+        "description": "The smith works at a small anvil, with a bronze-colored shield and a bucket of tools close at hand."
+      }
     },
     {
       "id": "300-015",
@@ -615888,19 +615972,25 @@
       "sourceSha256": "db3077c4709f11ee3399084dfbf4198bc60c1e691867c5bf4a8c15a19791d730",
       "imageSha256": "db3077c4709f11ee3399084dfbf4198bc60c1e691867c5bf4a8c15a19791d730",
       "inputMetadataSha256": "a288e74b187dcb21608880a448dee66731e6643d3d4f444ac95fb63d8ac179a5",
-      "inputContextSha256": "3fa1f0304a6f7a12e62abdff820db51185e33a0db0f901bec51825f471c5b433",
-      "copy": {
-        "title": "Woman Weaving at a Loom",
-        "alt": "A smiling gray-haired weaver wears a long blue dress.",
-        "description": "A small wooden loom holds red cloth beside a stack of folded striped textiles."
-      },
-      "observations": [
-        "A smiling gray-haired weaver wears a long blue dress.",
-        "A small wooden loom holds red cloth beside a stack of folded striped textiles."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.824250+00:00",
+      "inputContextSha256": "7b1777373f3841d402f6528154e070292851e7d051d6a18bf124d4adab856d70",
       "inspectedImage": "/catalog/300/300-015.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Smiling older woman in blue dress weaving red thread at wood loom, with stacked colored textiles; cartoon rendering.",
+        "A smiling woman weaves red cloth on a small wooden loom."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Weaver at a Wooden Loom",
+        "alt": "A smiling woman weaves red cloth on a small wooden loom.",
+        "description": "A stack of folded textiles sits beside the seated weaver, whose blue dress has a Greek-style border."
+      }
     },
     {
       "id": "300-016",
@@ -615908,19 +615998,25 @@
       "sourceSha256": "aa44115785068c23f8091ef5a3f26b8898851eb0ec9b87a745496c97cc6dd4c5",
       "imageSha256": "aa44115785068c23f8091ef5a3f26b8898851eb0ec9b87a745496c97cc6dd4c5",
       "inputMetadataSha256": "37dd922526935cb57124e318792c9987878f2117cfb7339dc14f5461921ae263",
-      "inputContextSha256": "5826c934122cc366196b1fc418aea6794dfdfdcb550b3534e48f26f371cff71a",
-      "copy": {
-        "title": "Child Balancing in a Tunic",
-        "alt": "A dark-haired child wears a short golden tunic and strapped sandals.",
-        "description": "Both arms extend outward above one raised knee and a rolled olive mat."
-      },
-      "observations": [
-        "A dark-haired child wears a short golden tunic and strapped sandals.",
-        "Both arms extend outward above one raised knee and a rolled olive mat."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.825423+00:00",
+      "inputContextSha256": "6e068215a9be922c20fe46a9eb9f47db2f1efb2f487820859f01a4d99ec3b1c6",
       "inspectedImage": "/catalog/300/300-016.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Cartoon child in mustard yellow tunic and sandals, arms out, one knee lifted, rolled mat beside foot.",
+        "A cartoon child balances on one leg with both arms stretched out."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Young Spartan Balancing on One Leg",
+        "alt": "A cartoon child balances on one leg with both arms stretched out.",
+        "description": "A rolled mat rests beside the child, who wears a mustard tunic and strapped sandals."
+      }
     },
     {
       "id": "300-017",
@@ -615928,19 +616024,25 @@
       "sourceSha256": "111b233c78ead43b9258259eb42edf00201da7811f9827dfef8e3d6c6b98dd98",
       "imageSha256": "111b233c78ead43b9258259eb42edf00201da7811f9827dfef8e3d6c6b98dd98",
       "inputMetadataSha256": "7c084a9600cd621f318959772487ca8e7e9b1347b120c78613bbe7540d4d2542",
-      "inputContextSha256": "3ead3be1df80dcaa237dd1fa40117568d68906ebf016f61dc0ec1883b995184b",
-      "copy": {
-        "title": "Red Cloak on a Wall Rail",
-        "alt": "A heavy crimson cloak hangs from a short wooden bar.",
-        "description": "A round golden-colored clasp gathers the upper folds beneath two dark mounting plates."
-      },
-      "observations": [
-        "A heavy crimson cloak hangs from a short wooden bar.",
-        "A round golden-colored clasp gathers the upper folds beneath two dark mounting plates."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.826684+00:00",
+      "inputContextSha256": "17f37ce39120a2ef0b1f478ecbcbeb3d94afd43329243f7a968b1c4a2698349a",
       "inspectedImage": "/catalog/300/300-017.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Unoccupied wall rail carrying a gathered red cloak fixed by round gold-toned brooch.",
+        "A deep red cloak hangs from a rail by a round gold clasp."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Red Spartan Cloak on a Wall Rail",
+        "alt": "A deep red cloak hangs from a rail by a round gold clasp.",
+        "description": "The rich folds of the cloak gather beneath an ornamental brooch, echoing the red capes of the film's warriors."
+      }
     },
     {
       "id": "300-018",
@@ -615948,19 +616050,25 @@
       "sourceSha256": "7834ec5d5d9e4fb2efcb33a8d8776d5708109e83f4e29257ceda7e655feefd32",
       "imageSha256": "7834ec5d5d9e4fb2efcb33a8d8776d5708109e83f4e29257ceda7e655feefd32",
       "inputMetadataSha256": "797389d3f123d6ffb5919b8ca135adba914d2efda0228ce5ca437ac2de654c6a",
-      "inputContextSha256": "77e061abf94cddaa4e703d9ff56cbeee406e4143f8f263329f1c43c884fdefde",
-      "copy": {
-        "title": "Back of a Round Shield",
-        "alt": "Dark wooden planks fill a broad circular shield.",
-        "description": "A wide bronze-colored rim and riveted leather-style grip frame the rear view."
-      },
-      "observations": [
-        "Dark wooden planks fill a broad circular shield.",
-        "A wide bronze-colored rim and riveted leather-style grip frame the rear view."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.828309+00:00",
+      "inputContextSha256": "35119491b46f1237782168a31cfc789a6d32d0c3acd1ac674a5928f50aa59f16",
       "inspectedImage": "/catalog/300/300-018.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Reverse view of round shield with wooden boards, central brown leather arm strap and riveted bronze-colored rim.",
+        "The back of a round shield shows wooden boards and a leather arm strap."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Back of a Round Wooden Shield",
+        "alt": "The back of a round shield shows wooden boards and a leather arm strap.",
+        "description": "A bronze-colored rim frames the dark planks, while a broad stitched grip runs down the center."
+      }
     },
     {
       "id": "300-019",
@@ -615968,19 +616076,25 @@
       "sourceSha256": "7e2fcdacc0b98482b8aedc842046923cdc7650b56129b2e6ffbad5b7c375200f",
       "imageSha256": "7e2fcdacc0b98482b8aedc842046923cdc7650b56129b2e6ffbad5b7c375200f",
       "inputMetadataSha256": "9adee65be6d34c9efc8526cf76c270d437173cd4e83a3d9011971a029103fa5f",
-      "inputContextSha256": "8bf4d510f17f8021a806c3b8a2441c98d7b717ad2ad716c91d642e7d9c04c665",
-      "copy": {
-        "title": "Crested Helmet on a Plinth",
-        "alt": "A weathered bronze-colored helmet has a long dark horsehair-style crest.",
-        "description": "Narrow eye openings and a pointed nose guard sit above a small pale stone base."
-      },
-      "observations": [
-        "A weathered bronze-colored helmet has a long dark horsehair-style crest.",
-        "Narrow eye openings and a pointed nose guard sit above a small pale stone base."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.829860+00:00",
+      "inputContextSha256": "69de62f24c7c2ac635e554055572a931a69a5464483cdd720d85535eb058a07a",
       "inspectedImage": "/catalog/300/300-019.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Bronze Corinthian-style helmet with dark tall plume and nose guard, displayed on rectangular pale stone plinth.",
+        "A bronze Spartan-style helmet with a black crest rests on a stone base."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Crested Spartan Helmet on a Plinth",
+        "alt": "A bronze Spartan-style helmet with a black crest rests on a stone base.",
+        "description": "A tall dark plume curves behind the weathered helmet, which has a long nose guard and narrow eye openings."
+      }
     },
     {
       "id": "300-020",
@@ -615988,19 +616102,25 @@
       "sourceSha256": "f78810aad1b64dea7ef9b74cfcdf5006a316dc963dc251ce7245bd44e7cbe76b",
       "imageSha256": "f78810aad1b64dea7ef9b74cfcdf5006a316dc963dc251ce7245bd44e7cbe76b",
       "inputMetadataSha256": "b8f590677d3d770bf0c890c8e6e4692b2ba602950ac52905153ee3a8e3fae70d",
-      "inputContextSha256": "836fac9fb23f1f37e17df7d63ddafc094fe443836eb5c6c49fd8e2b0866f3802",
-      "copy": {
-        "title": "Short Sword and Scabbard",
-        "alt": "A broad silver-colored blade lies beside a burgundy sheath.",
-        "description": "Golden-colored fittings and two buckled straps detail the matching sword accessories."
-      },
-      "observations": [
-        "A broad silver-colored blade lies beside a burgundy sheath.",
-        "Golden-colored fittings and two buckled straps detail the matching sword accessories."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.831090+00:00",
+      "inputContextSha256": "c3f1cb4120aba54246432ed6624229410dbe7f28565132030935e6aa6bf505b3",
       "inspectedImage": "/catalog/300/300-020.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Straight short double-edged silver blade, dark brown hilt, matching brown scabbard with gold-colored fittings.",
+        "A short silver-colored sword lies beside a brown scabbard."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Short Sword and Leather Scabbard",
+        "alt": "A short silver-colored sword lies beside a brown scabbard.",
+        "description": "Gold-toned fittings finish the sword's handle and the pointed scabbard, shown separately at a diagonal."
+      }
     },
     {
       "id": "300-021",
@@ -616008,19 +616128,25 @@
       "sourceSha256": "5167e19d7b45c7695400d63bf4e8956a017e153802f4b6989d283f52ce51c685",
       "imageSha256": "5167e19d7b45c7695400d63bf4e8956a017e153802f4b6989d283f52ce51c685",
       "inputMetadataSha256": "0ae36f204e0555c1cda5dc343a7b1a4d8428faa190f70f4374f1381b069dcb2c",
-      "inputContextSha256": "5449429e51a749527af5f094f1856194951d81a3bdc432f720e253f1c0faa751",
-      "copy": {
-        "title": "Bundle of Three Spears",
-        "alt": "Three long wooden shafts have pointed bronze-colored tips.",
-        "description": "Red cord and a short woven binding join the weapons near their lower ends."
-      },
-      "observations": [
-        "Three long wooden shafts have pointed bronze-colored tips.",
-        "Red cord and a short woven binding join the weapons near their lower ends."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.854722+00:00",
+      "inputContextSha256": "693aa32ed55666f1bdb3d3075695e8bf633136f5a6ddfa3824c5abd05da0b6a2",
       "inspectedImage": "/catalog/300/300-021.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Three wooden spear shafts with pointed bronze-toned heads, tied with cord and short red strip.",
+        "Three long spears are tied together with cord and a red band."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Bundle of Three Spartan Spears",
+        "alt": "Three long spears are tied together with cord and a red band.",
+        "description": "Bronze-colored spearheads rise above the bundled wooden shafts in this simple warrior equipment illustration."
+      }
     },
     {
       "id": "300-022",
@@ -616028,19 +616154,25 @@
       "sourceSha256": "3472ba1befef32bc2aab4613a1b40b04ae021f128f2037b70357013d05b48594",
       "imageSha256": "3472ba1befef32bc2aab4613a1b40b04ae021f128f2037b70357013d05b48594",
       "inputMetadataSha256": "13cdd7eb34c56f7101be2da8a20c210169add66afe8736b957650f2cddd940e8",
-      "inputContextSha256": "c166fda8b26ab86c0bdbb63bb7daa5198a8176b0c2e4e92f75cb6bc4d4b09607",
-      "copy": {
-        "title": "Pair of Bronze-Style Greaves",
-        "alt": "Two long metal-style shin guards show their front and inner sides.",
-        "description": "Raised decorative ridges, brown linings and pale fastening ties detail the pair."
-      },
-      "observations": [
-        "Two long metal-style shin guards show their front and inner sides.",
-        "Raised decorative ridges, brown linings and pale fastening ties detail the pair."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.856271+00:00",
+      "inputContextSha256": "d84fa4ac0a3d4a350144b05783841199bc0c3357828221ec3fd67e804f675c5f",
       "inspectedImage": "/catalog/300/300-022.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Pair of bronze-toned greaves, one front and one back/interior view, with pale ties and dark inner lining.",
+        "Two bronze-colored shin guards are shown from the front and inside."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Pair of Bronze Spartan Greaves",
+        "alt": "Two bronze-colored shin guards are shown from the front and inside.",
+        "description": "Pale ties hang from the curved greaves, revealing the dark lining on the reverse of one guard."
+      }
     },
     {
       "id": "300-023",
@@ -616048,19 +616180,25 @@
       "sourceSha256": "23d89ff0aa99b4179d80414618d749624cf33360cdf026be456743fee9f90c57",
       "imageSha256": "23d89ff0aa99b4179d80414618d749624cf33360cdf026be456743fee9f90c57",
       "inputMetadataSha256": "d0fa7bc9d3bc08e6ed653a243913a6e3a73e0a234db8d0921779f305a7ccb37b",
-      "inputContextSha256": "ead58753022939c352e5f68c96a5f457e468ca41029f34d60da25e81fb2195d4",
-      "copy": {
-        "title": "Ornate Golden Cuff",
-        "alt": "A broad open bracelet has teal stone-like insets and stepped edges.",
-        "description": "A winged animal relief and delicate dangling chain decorate the fantasy ornament."
-      },
-      "observations": [
-        "A broad open bracelet has teal stone-like insets and stepped edges.",
-        "A winged animal relief and delicate dangling chain decorate the fantasy ornament."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.857800+00:00",
+      "inputContextSha256": "df7c313fce7af6da86a567c460d4a148d204af4008f25b7921868c3111475ed9",
       "inspectedImage": "/catalog/300/300-023.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Gold-toned open cuff with blue-green inlays, central winged animal motif and dangling fine chain.",
+        "An ornate gold-colored cuff features turquoise accents and a fine chain."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Gold Cuff with Turquoise Details",
+        "alt": "An ornate gold-colored cuff features turquoise accents and a fine chain.",
+        "description": "A winged motif fills the center panel, surrounded by small blue-green stones and geometric borders."
+      }
     },
     {
       "id": "300-024",
@@ -616068,19 +616206,25 @@
       "sourceSha256": "7fe5e19c4f33f0c47200424bf0eea9f2a94b58ded056a82071a96046595aa085",
       "imageSha256": "7fe5e19c4f33f0c47200424bf0eea9f2a94b58ded056a82071a96046595aa085",
       "inputMetadataSha256": "6b633bf6fa1540b916f3eed83fedc0fcce4f3233c8e5b73699784f5ddf646328",
-      "inputContextSha256": "38a6fe80707fdded686d77873c3049a5082b9f462517935d55ebb772978a720c",
-      "copy": {
-        "title": "Brown Leather-Style Sandals",
-        "alt": "Two broad strapped sandals show the upper surface and treaded sole.",
-        "description": "Golden-colored buckles and fine edge stitching detail the illustrative footwear."
-      },
-      "observations": [
-        "Two broad strapped sandals show the upper surface and treaded sole.",
-        "Golden-colored buckles and fine edge stitching detail the illustrative footwear."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.859218+00:00",
+      "inputContextSha256": "74acd6edfe4312f65a129632116eb86936372e10d1fabc4f2d1aca0588833de0",
       "inspectedImage": "/catalog/300/300-024.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Pair of brown sandals with buckled crossing straps, one upright and one showing dark treaded sole.",
+        "A pair of brown sandals shows crossed straps and a textured sole."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Pair of Brown Strapped Sandals",
+        "alt": "A pair of brown sandals shows crossed straps and a textured sole.",
+        "description": "Small buckles fasten the leather-look straps; one sandal is tilted to reveal the patterned tread underneath."
+      }
     },
     {
       "id": "300-025",
@@ -616088,19 +616232,25 @@
       "sourceSha256": "3deee74aa48af393c58d3189de8a872f52567cc0751d574cf5a8e36e6e70f22d",
       "imageSha256": "3deee74aa48af393c58d3189de8a872f52567cc0751d574cf5a8e36e6e70f22d",
       "inputMetadataSha256": "bee44cde16bd79666172bd741c3718b5c7b8566ce3aabb9c613685ab60394bb0",
-      "inputContextSha256": "2eb580b0818deec0e7d88bf8a342088e42c0b6cc35424aa7938950d33074f264",
-      "copy": {
-        "title": "Leather-Style Water Flask",
-        "alt": "A small pear-shaped brown flask hangs from a long shoulder strap.",
-        "description": "A stopper, tied cord and stitched outer seam detail the worn pouch."
-      },
-      "observations": [
-        "A small pear-shaped brown flask hangs from a long shoulder strap.",
-        "A stopper, tied cord and stitched outer seam detail the worn pouch."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.860562+00:00",
+      "inputContextSha256": "ae784831c47208cde1fc3abeafeee223d58cc67736342cd8c95a9dfca77ddb48",
       "inspectedImage": "/catalog/300/300-025.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Brown teardrop-shaped stitched leather-look flask, cork stopper and looped shoulder strap.",
+        "A brown flask with a cork stopper hangs from a long shoulder strap."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Corked Travel Flask with a Shoulder Strap",
+        "alt": "A brown flask with a cork stopper hangs from a long shoulder strap.",
+        "description": "The rounded, stitched flask has a narrow neck and a looped strap for carrying it on a journey."
+      }
     },
     {
       "id": "300-026",
@@ -616108,19 +616258,25 @@
       "sourceSha256": "5b11fee17a4b34350b3fe27d5b8cb2b41438ad80e921627f34463304f172ad95",
       "imageSha256": "5b11fee17a4b34350b3fe27d5b8cb2b41438ad80e921627f34463304f172ad95",
       "inputMetadataSha256": "c608a9f90301ff93b2234910717d0dccb0384478b8270263de1324a61fd7f0a7",
-      "inputContextSha256": "b5cb538549fc21fcd527f79952809513ff4baae9624b6ddb7e4a58ecc8f2a0ef",
-      "copy": {
-        "title": "Oil Lamp and Olive Branch",
-        "alt": "A small terracotta lamp burns with a bright golden flame.",
-        "description": "A long green olive sprig with dark fruit curves beside the patterned clay bowl."
-      },
-      "observations": [
-        "A small terracotta lamp burns with a bright golden flame.",
-        "A long green olive sprig with dark fruit curves beside the patterned clay bowl."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.862043+00:00",
+      "inputContextSha256": "64c924daa12ed4f26bc6b595c29758be82d484faf187cbec2a7d1b48dd276d99",
       "inspectedImage": "/catalog/300/300-026.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Reddish terracotta-style oil lamp with flame, alongside olive twig with green olives and leaves.",
+        "A lit terracotta oil lamp sits beside a leafy olive branch."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Glowing Oil Lamp with an Olive Branch",
+        "alt": "A lit terracotta oil lamp sits beside a leafy olive branch.",
+        "description": "A small flame rises from the decorated reddish lamp, next to green olives and slender leaves."
+      }
     },
     {
       "id": "300-027",
@@ -616128,19 +616284,25 @@
       "sourceSha256": "f4458a940d52773ccf5fd780baa9d095df6d5825ad447ddabcd49323fad6dcb4",
       "imageSha256": "f4458a940d52773ccf5fd780baa9d095df6d5825ad447ddabcd49323fad6dcb4",
       "inputMetadataSha256": "6d0b1243a97a5ca4e6ac1e25037194bc0ee8b4d4ebb75fd208b9c5dff1e559db",
-      "inputContextSha256": "89f7773b546bbb9ccf132dcdf14cfbd3ae15d5ac047db15e2852159d09b5f60f",
-      "copy": {
-        "title": "Writing Tablet and Stylus",
-        "alt": "Two dark wax-like panels sit inside a hinged wooden frame.",
-        "description": "A pointed metal-style stylus rests above scratched marks and a small hanging red seal."
-      },
-      "observations": [
-        "Two dark wax-like panels sit inside a hinged wooden frame.",
-        "A pointed metal-style stylus rests above scratched marks and a small hanging red seal."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.863449+00:00",
+      "inputContextSha256": "0f61e8996193b66c0ae53d03bfd729295336c01b3e14e255ee525ab67371abcb",
       "inspectedImage": "/catalog/300/300-027.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Open wooden-framed dark two-panel tablet with drawn marks, gold stylus and red hanging seal.",
+        "A stylus rests across an open two-panel writing tablet."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Open Writing Tablet with Stylus and Seal",
+        "alt": "A stylus rests across an open two-panel writing tablet.",
+        "description": "The tablet's dark surfaces show simple route-like marks, with a red seal hanging from the binding."
+      }
     },
     {
       "id": "300-028",
@@ -616148,19 +616310,25 @@
       "sourceSha256": "56673de7105fbd8365d70406e61eec8671c99dd74182395b3ae27316a0d989f2",
       "imageSha256": "56673de7105fbd8365d70406e61eec8671c99dd74182395b3ae27316a0d989f2",
       "inputMetadataSha256": "515092e39356e3b79b493635706fde44963b88a3c1e06e20b8360c3a566fc218",
-      "inputContextSha256": "da42309fd39613a289affc6502454c951d4074562adbceb39488a913133d887c",
-      "copy": {
-        "title": "Broken Ornate Shackles",
-        "alt": "Two broad purple and golden-colored cuffs have fine floral patterns.",
-        "description": "A dark chain breaks between their open lower links."
-      },
-      "observations": [
-        "Two broad purple and golden-colored cuffs have fine floral patterns.",
-        "A dark chain breaks between their open lower links."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.864777+00:00",
+      "inputContextSha256": "b14abba1cedd3627e1520014ecd13aef45cabd277c2068d31412a083a613c8b4",
       "inspectedImage": "/catalog/300/300-028.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Pair of patterned purple and gold open cuffs with a heavy chain visibly broken at center.",
+        "Two purple-and-gold cuffs are joined by a broken dark chain."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Ornate Cuffs with a Broken Chain",
+        "alt": "Two purple-and-gold cuffs are joined by a broken dark chain.",
+        "description": "Floral patterns cover the wide cuffs, while the separated links leave a visible gap between them."
+      }
     },
     {
       "id": "300-029",
@@ -616168,19 +616336,25 @@
       "sourceSha256": "1347b38f62a9d0ccb0411ca7779669f83c3b3fd135c993be1f95ebd89b74c628",
       "imageSha256": "1347b38f62a9d0ccb0411ca7779669f83c3b3fd135c993be1f95ebd89b74c628",
       "inputMetadataSha256": "5cfeb9c430d44f2daa52f07d2435f67c7af48d964c5b9e3febddfbac8674f5f5",
-      "inputContextSha256": "2119d154a8accd64bfef729a12f103db0151b035ca6077c18c6acf2371d479f2",
-      "copy": {
-        "title": "Coastal Fantasy Map",
-        "alt": "A curled parchment shows blue water beside mountain ranges and tiny trees.",
-        "description": "A red dotted route, three dark markers and a coiled brown strap cross the illustrative map."
-      },
-      "observations": [
-        "A curled parchment shows blue water beside mountain ranges and tiny trees.",
-        "A red dotted route, three dark markers and a coiled brown strap cross the illustrative map."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.866416+00:00",
+      "inputContextSha256": "80f368ae579fbccfbb0a9c9a163734bcfd70e0082b673a32a2bb6fbeb9569570",
       "inspectedImage": "/catalog/300/300-029.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Parchment-style coastal map, mountain illustration, red dotted path and round markers, with brown tied cord.",
+        "A rolled coastal map shows mountains, markers and a red dotted route."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Coastal Map with a Marked Route",
+        "alt": "A rolled coastal map shows mountains, markers and a red dotted route.",
+        "description": "Blue water borders the illustrated landscape, with small round markers along the path and a cord resting on the parchment."
+      }
     },
     {
       "id": "300-030",
@@ -616188,19 +616362,25 @@
       "sourceSha256": "3a6d29cc530bde0507db906c66a43b06be39e051bcf197461f6773af27080fab",
       "imageSha256": "3a6d29cc530bde0507db906c66a43b06be39e051bcf197461f6773af27080fab",
       "inputMetadataSha256": "553260320e555fa7d44d03c3cf0d3df1f4d9f362f1612d453a68de7fde596fd0",
-      "inputContextSha256": "ac256b6dee8a1bb79805ae9b5ad563fc2e523992460b6063525fe55b03f7862d",
-      "copy": {
-        "title": "Armor Repair Tool Roll",
-        "alt": "A brown leather-style wrap has pockets for an awl, mallet and small fasteners.",
-        "description": "A separate curved green-patinated metal plate rests beneath the open kit."
-      },
-      "observations": [
-        "A brown leather-style wrap has pockets for an awl, mallet and small fasteners.",
-        "A separate curved green-patinated metal plate rests beneath the open kit."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.868352+00:00",
+      "inputContextSha256": "60a514f2f0f9c73d790928a09be370a71d01b35a0781e3549b70b0071054bca3",
       "inspectedImage": "/catalog/300/300-030.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Brown leather tool roll containing awl, mallet and small fasteners; curved green-patinated perforated metal strip below.",
+        "A leather tool roll holds a mallet, an awl and small metal pieces."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Warrior's Metalworking Tool Roll",
+        "alt": "A leather tool roll holds a mallet, an awl and small metal pieces.",
+        "description": "A curved green-patinated metal strip lies below the open case, whose pockets keep the tools neatly separated."
+      }
     },
     {
       "id": "300-031",
@@ -616208,19 +616388,25 @@
       "sourceSha256": "dcf7230ed9ae437959c6fe09fa9741065aea0851614ad98427e7f2b8f4f245ff",
       "imageSha256": "dcf7230ed9ae437959c6fe09fa9741065aea0851614ad98427e7f2b8f4f245ff",
       "inputMetadataSha256": "44378f8e57abd731b266855250fbc319e715c3f77c332109c9b6ad8fe7f308f1",
-      "inputContextSha256": "8c1f1ea79224d94c40528bae18fdfb040eb96684753ac95ef7dbc1f59910ff28",
-      "copy": {
-        "title": "Fantasy Armored Rhinoceros",
-        "alt": "A large gray rhino wears a dark saddle and decorated straps.",
-        "description": "Bronze-colored fittings and a patterned side panel frame its heavy horned head."
-      },
-      "observations": [
-        "A large gray rhino wears a dark saddle and decorated straps.",
-        "Bronze-colored fittings and a patterned side panel frame its heavy horned head."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.900765+00:00",
+      "inputContextSha256": "08d1b6b2ed9967db93118d8a4369d2e1763bcf2b4574725bbed0236a1a64ade4",
       "inspectedImage": "/catalog/300/300-031.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Gray rhinoceros with large horn, dark harness, bronze-colored ornaments and decorative side panel.",
+        "A gray rhinoceros wears a dark leather harness with bronze-colored ornaments."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Rhinoceros with Decorative Harness",
+        "alt": "A gray rhinoceros wears a dark leather harness with bronze-colored ornaments.",
+        "description": "The animal leans forward beneath a decorated saddle blanket and a harness accented with round fittings."
+      }
     },
     {
       "id": "300-032",
@@ -616228,19 +616414,25 @@
       "sourceSha256": "0f5284dc54807a507c74c0c03423bc99bfbaf41449dc9ad3406a495decc35a6b",
       "imageSha256": "0f5284dc54807a507c74c0c03423bc99bfbaf41449dc9ad3406a495decc35a6b",
       "inputMetadataSha256": "24a804166bc03ca050ec934f5e39d0e782a642c4428dc190f8692558a2807b74",
-      "inputContextSha256": "09e575550ed13bba5e1d962776546c37be3b5438b79d61bc331a70c0e15c9936",
-      "copy": {
-        "title": "Decorated Elephant with a Platform",
-        "alt": "A gray elephant raises its trunk beneath a wooden railed platform.",
-        "description": "Purple cloth, golden-colored ornaments and long tusks detail the fantasy procession animal."
-      },
-      "observations": [
-        "A gray elephant raises its trunk beneath a wooden railed platform.",
-        "Purple cloth, golden-colored ornaments and long tusks detail the fantasy procession animal."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.902527+00:00",
+      "inputContextSha256": "18710aeb4b7f6b02ad4fe8089a834dee919addf10cf5db7ab900602eac20e054",
       "inspectedImage": "/catalog/300/300-032.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Gray elephant with raised trunk, purple-and-gold cloth and tassels, carrying a wooden platform.",
+        "An elephant raises its trunk beneath a decorated carrying platform."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Elephant with Purple and Gold Trappings",
+        "alt": "An elephant raises its trunk beneath a decorated carrying platform.",
+        "description": "Purple fabric, gold-colored trim and tassels dress the elephant, while a wooden platform rests across its back."
+      }
     },
     {
       "id": "300-033",
@@ -616248,19 +616440,25 @@
       "sourceSha256": "654742bffe217c03fe0cb3e8bc14af8c78b251793d93b09340ebb5bf4a3bcd6c",
       "imageSha256": "654742bffe217c03fe0cb3e8bc14af8c78b251793d93b09340ebb5bf4a3bcd6c",
       "inputMetadataSha256": "b7252e3225f1fb0b248e93df8657f145cfd26c53831b49f401f3d62f9dcb4a89",
-      "inputContextSha256": "c0e09056b864b0d48f653f090b368b700090ec0b22005b7b9a10731ee223dc22",
-      "copy": {
-        "title": "Black Horse in Ornate Tack",
-        "alt": "A dark horse raises one foreleg and turns its head.",
-        "description": "Brown decorative saddle pieces, circular fittings and a long flowing tail frame the pose."
-      },
-      "observations": [
-        "A dark horse raises one foreleg and turns its head.",
-        "Brown decorative saddle pieces, circular fittings and a long flowing tail frame the pose."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.903899+00:00",
+      "inputContextSha256": "35b8ee8adcb708e230ea9360b320c0e53218c2db414033c19b5d2ec73608e378",
       "inspectedImage": "/catalog/300/300-033.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Black horse in motion with brown saddle and bridle, patterned saddlecloth and gold-colored fittings.",
+        "A black horse steps forward wearing a richly decorated saddle and bridle."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Black Horse with Decorated Saddle",
+        "alt": "A black horse steps forward wearing a richly decorated saddle and bridle.",
+        "description": "Brown leather tack and small gold-toned ornaments stand out against the horse's flowing black mane and tail."
+      }
     },
     {
       "id": "300-034",
@@ -616268,19 +616466,25 @@
       "sourceSha256": "df087dadea2099686a4211726335f3e26ce8c9fa0707ed8a30d4c3a100fdbf5a",
       "imageSha256": "df087dadea2099686a4211726335f3e26ce8c9fa0707ed8a30d4c3a100fdbf5a",
       "inputMetadataSha256": "c069ec4c9d905b8f89348593a5803ed48bdcad8279a3d6fde110285ca088625c",
-      "inputContextSha256": "2d4fa3f859f1292c08e9c2abf2a261aca283f425d7ada69b5d1db6aab0fb4724",
-      "copy": {
-        "title": "Lambda Shield on Broken Stone",
-        "alt": "A weathered bronze-colored shield leans against pale masonry.",
-        "description": "A large raised lambda motif and torn red cloth decorate the still-life scene."
-      },
-      "observations": [
-        "A weathered bronze-colored shield leans against pale masonry.",
-        "A large raised lambda motif and torn red cloth decorate the still-life scene."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.905450+00:00",
+      "inputContextSha256": "a4fa2c2a6b9c79508d97f3f89be0dfcae78988d1cbd95dc923ed5e96dc7cb312",
       "inspectedImage": "/catalog/300/300-034.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Worn round bronze-colored shield with dark lambda, resting on pale broken stone and red cloth.",
+        "A bronze-colored lambda shield leans against broken stone above a red cloth."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Spartan Shield Resting on Broken Stone",
+        "alt": "A bronze-colored lambda shield leans against broken stone above a red cloth.",
+        "description": "The weathered round shield bears a large dark lambda, with a strip of red fabric spilling over the rocks beneath it."
+      }
     },
     {
       "id": "300-035",
@@ -616288,19 +616492,25 @@
       "sourceSha256": "0a0c95916ff41dc4203d4c2b9430a35fef312b281fda51a3ab3672fd8357325b",
       "imageSha256": "0a0c95916ff41dc4203d4c2b9430a35fef312b281fda51a3ab3672fd8357325b",
       "inputMetadataSha256": "664d7ea1975b4b786b77df510c5a0fdf6d24e3522a3251116d2437113f339d96",
-      "inputContextSha256": "104a07d6b08c304daccc7ac18c918aef53d0ece766504b05ae5426b8f9edc443",
-      "copy": {
-        "title": "Three Warriors Advancing",
-        "alt": "Three red-caped figures carry round lambda-marked shields and long spears.",
-        "description": "Crested helmets, short skirts and bent legs form a compact fantasy battle line."
-      },
-      "observations": [
-        "Three red-caped figures carry round lambda-marked shields and long spears.",
-        "Crested helmets, short skirts and bent legs form a compact fantasy battle line."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.907303+00:00",
+      "inputContextSha256": "fca9003dc835685e10021059c3fb1249fb2b064fa84c71525f2bc2f9b134061e",
       "inspectedImage": "/catalog/300/300-035.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Three Spartan-style fighters in bronze armor and red crested helmets, holding overlapping lambda shields and raised spears.",
+        "Three helmeted Spartan warriors advance behind overlapping shields."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Three Spartans Advancing Together",
+        "alt": "Three helmeted Spartan warriors advance behind overlapping shields.",
+        "description": "Red crests and capes frame the formation as each warrior carries a spear and a round lambda shield."
+      }
     },
     {
       "id": "300-036",
@@ -616308,19 +616518,25 @@
       "sourceSha256": "d31668248845327b4410716e9cb628e54eed9943908eac1d2bfef603c153f1ff",
       "imageSha256": "d31668248845327b4410716e9cb628e54eed9943908eac1d2bfef603c153f1ff",
       "inputMetadataSha256": "f40829ea91b264ce8e4c0b18c56bf26db98ae6920279b27bfce954fff3e4c01f",
-      "inputContextSha256": "618ee0ec6d0c3f74679681c89289309b101a68d927f7ce5287f3d62f6e866fce",
-      "copy": {
-        "title": "Arrow-Struck Shield",
-        "alt": "Four wooden arrows pierce a tilted bronze-colored shield.",
-        "description": "A broad red lambda and riveted burgundy rim frame the damaged surface."
-      },
-      "observations": [
-        "Four wooden arrows pierce a tilted bronze-colored shield.",
-        "A broad red lambda and riveted burgundy rim frame the damaged surface."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.908749+00:00",
+      "inputContextSha256": "3562479ac9346f523ded9652198db05643e36c45eb28d9116a8439245bff2c6b",
       "inspectedImage": "/catalog/300/300-036.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Round bronze-colored shield, red rim and lambda symbol, pierced by four feathered arrows.",
+        "Four arrows are embedded in a red-rimmed shield with a lambda symbol."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Arrow-Struck Spartan Shield",
+        "alt": "Four arrows are embedded in a red-rimmed shield with a lambda symbol.",
+        "description": "The bronze-colored shield tilts to one side, with feathered arrow shafts projecting from its face."
+      }
     },
     {
       "id": "300-037",
@@ -616328,19 +616544,25 @@
       "sourceSha256": "e3b6bef0accff3281d5b883c47ab954618e603b9c6f7381739961aa5b75c53c0",
       "imageSha256": "e3b6bef0accff3281d5b883c47ab954618e603b9c6f7381739961aa5b75c53c0",
       "inputMetadataSha256": "adecc653cebef44598f147c16580a474d466e71bc28cbb4814f18e22c877ce10",
-      "inputContextSha256": "4e4b823932b35c957cca6abb9d279df1f7c3a987d4a825e2381bfd06126bbdf5",
-      "copy": {
-        "title": "Rocky Coastal Pass Diorama",
-        "alt": "Two steep gray cliffs rise above a narrow winding path.",
-        "description": "Blue water and small green shrubs surround the cutaway landscape base."
-      },
-      "observations": [
-        "Two steep gray cliffs rise above a narrow winding path.",
-        "Blue water and small green shrubs surround the cutaway landscape base."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.910558+00:00",
+      "inputContextSha256": "b23b582683d1817ca4a34ed635b1f3778620f46cc8f970c84a1f20253872353c",
       "inspectedImage": "/catalog/300/300-037.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Small isometric landscape with tall rocky cliffs, coastal water, winding pass, greenery and tiny red figures; not a verified map of Thermopylae.",
+        "A miniature rocky mountain pass runs beside bright blue water."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Mountain Pass Beside the Sea",
+        "alt": "A miniature rocky mountain pass runs beside bright blue water.",
+        "description": "Tiny red figures follow the narrow route between cliffs in this landscape reminiscent of Thermopylae in 300."
+      }
     },
     {
       "id": "300-038",
@@ -616348,19 +616570,25 @@
       "sourceSha256": "4f80a18629c645b303a76d9f85a75a26e1b3c28dadb377d17f975a00c1a0baf9",
       "imageSha256": "4f80a18629c645b303a76d9f85a75a26e1b3c28dadb377d17f975a00c1a0baf9",
       "inputMetadataSha256": "51939bd023b2c868e80d2fe6d9c8fb6d2872f2504af0ad471397d668da3d52ed",
-      "inputContextSha256": "b45451be18e8250871affc24c68b436e4513b95115e92a3fbd520ba6549b30bb",
-      "copy": {
-        "title": "Burning Brazier",
-        "alt": "Bright orange flames rise from a dark round metal-style bowl.",
-        "description": "Three narrow legs stand beside a small bundle of cut firewood."
-      },
-      "observations": [
-        "Bright orange flames rise from a dark round metal-style bowl.",
-        "Three narrow legs stand beside a small bundle of cut firewood."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.912007+00:00",
+      "inputContextSha256": "2671e29e384187f70912b348f039c54ed480684a3915edb1e33828a0215b6530",
       "inspectedImage": "/catalog/300/300-038.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Round copper-colored burning fire bowl on three dark legs, with tied firewood bundle at right.",
+        "A bronze-colored brazier burns on three dark legs beside a bundle of wood."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Burning Brazier with Firewood",
+        "alt": "A bronze-colored brazier burns on three dark legs beside a bundle of wood.",
+        "description": "Bright flames rise from the wide fire bowl, while split logs are tied together on the ground nearby."
+      }
     },
     {
       "id": "300-039",
@@ -616368,19 +616596,25 @@
       "sourceSha256": "c5b1b96fde8aa7d09adcf3bfa927ba3467c07a4d7e5cabb8419c40541822869c",
       "imageSha256": "c5b1b96fde8aa7d09adcf3bfa927ba3467c07a4d7e5cabb8419c40541822869c",
       "inputMetadataSha256": "90fbffdb9c84fb405ad082ca7183008b0a313c879f158ff1b39c49b9e00ca2ef",
-      "inputContextSha256": "f93d8d85af12fe95eba7e2e6dd720afb7d48903a3a95fbff44ce90be5cf00aa4",
-      "copy": {
-        "title": "300 Warrior Badge",
-        "alt": "Pale block digits fill a round burgundy emblem.",
-        "description": "A crested helmet and two olive-like branches sit inside the golden-colored border."
-      },
-      "observations": [
-        "Pale block digits fill a round burgundy emblem.",
-        "A crested helmet and two olive-like branches sit inside the golden-colored border."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.913464+00:00",
+      "inputContextSha256": "498f75ac4a1657edb5d5a98816fabd081e1588954783fd06c26dfaead8719e52",
       "inspectedImage": "/catalog/300/300-039.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Circular burgundy and gold badge showing stylized crested helmet, laurel branches and readable 300.",
+        "A round red badge features a Spartan helmet, laurel branches and the number 300."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "300 Spartan Helmet Badge",
+        "alt": "A round red badge features a Spartan helmet, laurel branches and the number 300.",
+        "description": "A gold-toned border surrounds the helmet emblem and large numerals on a deep red background."
+      }
     },
     {
       "id": "300-040",
@@ -616388,19 +616622,25 @@
       "sourceSha256": "c415ba4017c261c19cf3e742afa8a65fa6e190bbdc9781116d334ece2f5791bb",
       "imageSha256": "c415ba4017c261c19cf3e742afa8a65fa6e190bbdc9781116d334ece2f5791bb",
       "inputMetadataSha256": "4613f3371715da552aa8dc4540c29a81e945a87ba3afc1243248946545b3b69c",
-      "inputContextSha256": "83be73e76e3dac9b795f9ccc1e65ed7c68e648cae991121fb4cc361f368b3beb",
-      "copy": {
-        "title": "Cartoon Messenger with Scrolls",
-        "alt": "A curly-haired cartoon figure wears a teal tunic and short red cape.",
-        "description": "Two rolled parchments rest under one arm beside strapped brown sandals."
-      },
-      "observations": [
-        "A curly-haired cartoon figure wears a teal tunic and short red cape.",
-        "Two rolled parchments rest under one arm beside strapped brown sandals."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.914801+00:00",
+      "inputContextSha256": "7f812f3d09d99465d262a9cb54a9c97c76d27e3158e30212dc1294592553516b",
       "inspectedImage": "/catalog/300/300-040.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Small cartoon dark-curly-haired moustached messenger in teal tunic and red cape, holding rolled parchment.",
+        "A smiling cartoon messenger carries a rolled scroll under one arm."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Cartoon Messenger Carrying a Scroll",
+        "alt": "A smiling cartoon messenger carries a rolled scroll under one arm.",
+        "description": "His red cape, teal tunic and strapped sandals add a playful touch to the ancient-world theme."
+      }
     },
     {
       "id": "300-041",
@@ -616408,19 +616648,25 @@
       "sourceSha256": "10e4efa3fc6186c8fb9c02e4300c8ff6a030ba618bd519a50cffc8c14db7fdb1",
       "imageSha256": "10e4efa3fc6186c8fb9c02e4300c8ff6a030ba618bd519a50cffc8c14db7fdb1",
       "inputMetadataSha256": "b897e74fdde6cf14044e3eb8abe4e832e0473076ac778828c8e227f37cee97be",
-      "inputContextSha256": "05ad5ed636ef5285ce6e8deaf28c26015cf2b2599825a3eb50d7b41257ba04cd",
-      "copy": {
-        "title": "Clasped Forearms",
-        "alt": "Two outlined hands grasp each other's forearms diagonally.",
-        "description": "A braided cord and broad studded cuff detail the opposing wrists."
-      },
-      "observations": [
-        "Two outlined hands grasp each other's forearms diagonally.",
-        "A braided cord and broad studded cuff detail the opposing wrists."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.938343+00:00",
+      "inputContextSha256": "8ccd244209dd0c7f05c996a776af0c027d80cd0d71b26629f8b2d718b17bee92",
       "inspectedImage": "/catalog/300/300-041.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Monochrome close-up of two clasped forearms, one with dark studded cuff and the other braided wrist cord.",
+        "Two people clasp each other's forearms in a black-and-white drawing."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Clasped Forearms in Black and White",
+        "alt": "Two people clasp each other's forearms in a black-and-white drawing.",
+        "description": "A studded wrist cuff and a braided cord distinguish the two arms in this close-up gesture."
+      }
     },
     {
       "id": "300-042",
@@ -616428,19 +616674,25 @@
       "sourceSha256": "f560e20dbd1a85cbdef0dadc6a5cc155c4f32a9647ccfa9b5a5166cbb8a63b1d",
       "imageSha256": "f560e20dbd1a85cbdef0dadc6a5cc155c4f32a9647ccfa9b5a5166cbb8a63b1d",
       "inputMetadataSha256": "7f29043454721c595416aaa83ade1b533dfcd08128493b740ef3d0875926ba9f",
-      "inputContextSha256": "1f34a6d48ba6fa7d5720123ac4ed8d012da0c287b103d9eb9503a17b170acf8b",
-      "copy": {
-        "title": "Warrior Giving a Dog Water",
-        "alt": "A bald bearded figure kneels in a short pale tunic.",
-        "description": "One hand tips a small jug toward a shallow bowl beside a dark and pale dog."
-      },
-      "observations": [
-        "A bald bearded figure kneels in a short pale tunic.",
-        "One hand tips a small jug toward a shallow bowl beside a dark and pale dog."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.939719+00:00",
+      "inputContextSha256": "61561f6690402d0bd81b1b6b0be3e4d3743b0ae1fd3338ddb39d23e50b4495fd",
       "inspectedImage": "/catalog/300/300-042.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Black-and-white drawing of bald bearded kneeling man pouring from pitcher into bowl for dog; helmet nearby.",
+        "A kneeling warrior pours water into a bowl for a dog."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Warrior Pouring Water for a Dog",
+        "alt": "A kneeling warrior pours water into a bowl for a dog.",
+        "description": "A crested helmet lies beside the bearded man as the dog lowers its head to the bowl in this black-and-white scene."
+      }
     },
     {
       "id": "300-043",
@@ -616448,19 +616700,25 @@
       "sourceSha256": "016844903b33f9e27c071062c893109e57befde4bc7da9d4ddda7dff3cbf5072",
       "imageSha256": "016844903b33f9e27c071062c893109e57befde4bc7da9d4ddda7dff3cbf5072",
       "inputMetadataSha256": "23759d9c7778ba16673eebeb185d9839b652f4c105e8b4e681cc248c7d054034",
-      "inputContextSha256": "b84cab7b8fb5ae98b41f26553db6dace7842169d28b14332a594b120c6a4fd0a",
-      "copy": {
-        "title": "Kneeling Archer",
-        "alt": "A bearded archer wears a pointed cap and richly patterned tunic.",
-        "description": "A curved bow and drawn arrow angle upward above one bent knee."
-      },
-      "observations": [
-        "A bearded archer wears a pointed cap and richly patterned tunic.",
-        "A curved bow and drawn arrow angle upward above one bent knee."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.941125+00:00",
+      "inputContextSha256": "c2480da332a08af6590f0c8796fd15f8e03589c3612e8669ebb62a2384063dd0",
       "inspectedImage": "/catalog/300/300-043.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Monochrome bearded archer in patterned Persian-style clothes and pointed cap, kneeling with bow drawn and quiver at waist.",
+        "An archer in patterned clothing kneels and aims a bow upward."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Kneeling Archer with a Drawn Bow",
+        "alt": "An archer in patterned clothing kneels and aims a bow upward.",
+        "description": "The black-and-white figure wears a tall pointed cap and carries a quiver while drawing an arrow."
+      }
     },
     {
       "id": "300-044",
@@ -616468,19 +616726,25 @@
       "sourceSha256": "c50aa6d5f6fbab318bbbb5826fd3529ca33b7cf9744339703534b791eede616e",
       "imageSha256": "c50aa6d5f6fbab318bbbb5826fd3529ca33b7cf9744339703534b791eede616e",
       "inputMetadataSha256": "6b949d85a933e7e56c173221ef19b34a3eac8f839de81eb67f9d3cde163cbc42",
-      "inputContextSha256": "7d5c5c270672d04f068fcbf5f8cf23834e055963d030fe9cc05da6e678a0b9ee",
-      "copy": {
-        "title": "Running Messenger",
-        "alt": "A dark silhouette in a short tunic leaps over broken stone.",
-        "description": "A rectangular tablet sits under one arm beside long streaming cloth ties."
-      },
-      "observations": [
-        "A dark silhouette in a short tunic leaps over broken stone.",
-        "A rectangular tablet sits under one arm beside long streaming cloth ties."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.942194+00:00",
+      "inputContextSha256": "dbca2c1073e2498a82513f0a825515c6e6f5c1dcc5ab42711bb8626be62ea9ff",
       "inspectedImage": "/catalog/300/300-044.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Monochrome running figure with tied-back hair, short draped tunic, sandals and rectangular tablet held at side; stones below.",
+        "A messenger in a short tunic runs over stones carrying a tablet."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Ancient Messenger Running with a Tablet",
+        "alt": "A messenger in a short tunic runs over stones carrying a tablet.",
+        "description": "Flowing fabric trails behind the runner in this energetic black-and-white illustration."
+      }
     },
     {
       "id": "300-045",
@@ -616488,19 +616752,25 @@
       "sourceSha256": "e86259f73afd01b393cab62c5235f56c564ea7730b49f22b24f7bdc744216090",
       "imageSha256": "e86259f73afd01b393cab62c5235f56c564ea7730b49f22b24f7bdc744216090",
       "inputMetadataSha256": "677fe412d1cfb05d3b0ec17f3302bcf7baf96114bebba823344c0b822ecf6cbb",
-      "inputContextSha256": "821a39b1ff8562f45ee3263f4985e32312d857b4ead55f6bdbdefb3736a9e2bd",
-      "copy": {
-        "title": "Wooden Horse Head Emblem",
-        "alt": "A tall angular horse head has a stepped dark mane.",
-        "description": "Fine pale grain marks and a laurel-like neck band detail the carved-style pedestal ornament."
-      },
-      "observations": [
-        "A tall angular horse head has a stepped dark mane.",
-        "Fine pale grain marks and a laurel-like neck band detail the carved-style pedestal ornament."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.943538+00:00",
+      "inputContextSha256": "c0eb4ef0bbcc8f855d13545bcaf71561d9c831818ad45259258095e8b0a5979b",
       "inspectedImage": "/catalog/300/300-045.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Monochrome horse-head ornament on a rectangular plinth, angular mane and braided neck band; no evidence of specific film prop.",
+        "A stylized horse head rises from a small rectangular base."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Carved Horse Head Emblem",
+        "alt": "A stylized horse head rises from a small rectangular base.",
+        "description": "Bold black-and-white lines suggest carved wood, with a braided band around the horse's neck."
+      }
     },
     {
       "id": "300-046",
@@ -616508,19 +616778,25 @@
       "sourceSha256": "84d7f3ffac7343477cd5709890381f3f5d135b17bfe5fba950074cab52107c55",
       "imageSha256": "84d7f3ffac7343477cd5709890381f3f5d135b17bfe5fba950074cab52107c55",
       "inputMetadataSha256": "be48f0ec85a484fcee623eea68ea68128ba3fd8eae0e7828af19e9b50de6a5f1",
-      "inputContextSha256": "deaa44009fdf500861168b9a881e699e73ef1aef781918eac7604f291c2f469f",
-      "copy": {
-        "title": "Three Women Carrying Branches",
-        "alt": "Three outlined figures wear long draped dresses and strapped sandals.",
-        "description": "Each carries a leafy stem beside fine folds and braided hair."
-      },
-      "observations": [
-        "Three outlined figures wear long draped dresses and strapped sandals.",
-        "Each carries a leafy stem beside fine folds and braided hair."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.945243+00:00",
+      "inputContextSha256": "d60dd10fcbe2985f46e1570b195f8ee61cae7deb7ee28ad8fcd7922519154de9",
       "inspectedImage": "/catalog/300/300-046.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Monochrome illustration of three women in draped gowns walking together with leafy branches.",
+        "Three women in draped gowns walk together holding leafy branches."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Three Women Carrying Leafy Branches",
+        "alt": "Three women in draped gowns walk together holding leafy branches.",
+        "description": "Their classical robes and sandals are outlined in black and white, with branches held across the group."
+      }
     },
     {
       "id": "300-047",
@@ -616528,19 +616804,25 @@
       "sourceSha256": "c582743d1f0469136c216b8237a1c29560442972e5d9d56187cc84d5a2ee15f8",
       "imageSha256": "c582743d1f0469136c216b8237a1c29560442972e5d9d56187cc84d5a2ee15f8",
       "inputMetadataSha256": "4809ff25428b1834756df890c8ba001a213ca2dc4296d9472eacc74e273307ea",
-      "inputContextSha256": "ace447f4474d59d122e78571a6e0267dd67cff672787787e5ba81203c156f12f",
-      "copy": {
-        "title": "Warrior Climbing Stone Steps",
-        "alt": "A rear-view warrior carries a round lambda-marked shield on the back.",
-        "description": "One bent leg rises onto rough masonry beneath short skirt panels."
-      },
-      "observations": [
-        "A rear-view warrior carries a round lambda-marked shield on the back.",
-        "One bent leg rises onto rough masonry beneath short skirt panels."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.947292+00:00",
+      "inputContextSha256": "801b9277a1f3648c8f6cbcf2bd30704a40cfcdfc7899455eb47435d44454b5ff",
       "inspectedImage": "/catalog/300/300-047.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Monochrome rear view of muscular warrior ascending stone stairs with lambda shield on back and armor skirt.",
+        "A warrior with a lambda shield on his back climbs a short stone staircase."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Spartan Climbing Stone Steps",
+        "alt": "A warrior with a lambda shield on his back climbs a short stone staircase.",
+        "description": "Seen from behind, the muscular figure wears a leather-style skirt and strapped footwear in a black-and-white drawing."
+      }
     },
     {
       "id": "300-048",
@@ -616548,19 +616830,25 @@
       "sourceSha256": "d7476d27e88ad1cf32665907dffa9a2e8252200f83479893afa018e30aea03e9",
       "imageSha256": "d7476d27e88ad1cf32665907dffa9a2e8252200f83479893afa018e30aea03e9",
       "inputMetadataSha256": "d9d7a9886975b599bd2820d81e0465437d142d0312e29c0b983193d19ec45a42",
-      "inputContextSha256": "d8713977aaae49949b52b6e4690ca65540ad988888f8bc2ab4af9ea17e02f5d7",
-      "copy": {
-        "title": "Decorative Battle Standard",
-        "alt": "A dark waving banner hangs from a tall pole with a diamond finial.",
-        "description": "Pale geometric borders and two long tassels frame the empty central panel."
-      },
-      "observations": [
-        "A dark waving banner hangs from a tall pole with a diamond finial.",
-        "Pale geometric borders and two long tassels frame the empty central panel."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.948662+00:00",
+      "inputContextSha256": "37941227dc958ffbb1009841a6d32698ce08110228883cec54429343d99c9881",
       "inspectedImage": "/catalog/300/300-048.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Monochrome flowing dark flag with diamond-pattern bands, tassels and a diamond finial atop the pole.",
+        "A dark banner with patterned borders and tassels hangs from a tall pole."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Patterned Banner with Hanging Tassels",
+        "alt": "A dark banner with patterned borders and tassels hangs from a tall pole.",
+        "description": "Diamond motifs edge the flowing standard, and matching tassels hang near the pole and the far corner."
+      }
     },
     {
       "id": "300-049",
@@ -616568,19 +616856,25 @@
       "sourceSha256": "89fbeca22c9b6afab78e058444ba5346fef8f9b013452fed73656dcd449bfc69",
       "imageSha256": "89fbeca22c9b6afab78e058444ba5346fef8f9b013452fed73656dcd449bfc69",
       "inputMetadataSha256": "a4e62687087969093e49d37b8c1194e490dafcc75a2248719f083bfd38b85bb6",
-      "inputContextSha256": "c5b4d738c78ff5284a920e662413b471a36e800d46446084e12bd47d18dc2202",
-      "copy": {
-        "title": "Lion Relief Plaque",
-        "alt": "A reclining lion fills a rough rectangular stone-style panel.",
-        "description": "A thick leafy border surrounds the raised mane, paws and curled tail."
-      },
-      "observations": [
-        "A reclining lion fills a rough rectangular stone-style panel.",
-        "A thick leafy border surrounds the raised mane, paws and curled tail."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.951502+00:00",
+      "inputContextSha256": "c89d0772a06ee87b9385d10266bd8b3581bfb5165b2be02be3c8a5975ae01b8d",
       "inspectedImage": "/catalog/300/300-049.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Monochrome stone relief of reclining lion inside rectangular carved frame with leafy ornamental border.",
+        "A reclining lion appears inside a rectangular carved stone frame."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Reclining Lion Stone Relief",
+        "alt": "A reclining lion appears inside a rectangular carved stone frame.",
+        "description": "Fine black-and-white lines bring out the lion's mane and the leafy border around the relief."
+      }
     },
     {
       "id": "300-050",
@@ -616588,19 +616882,25 @@
       "sourceSha256": "cadea4f05d9b24a28467270beb5b754655b29780ff908f682b63614db8610f7e",
       "imageSha256": "cadea4f05d9b24a28467270beb5b754655b29780ff908f682b63614db8610f7e",
       "inputMetadataSha256": "ae97fa9720d6114ec4404fe712b0b0e440a27591c409e37f6b712d0031071c4a",
-      "inputContextSha256": "95e5560e96afd4ad7e5f65674340f79ce6a21e4b471bd0d88259381970e96f76",
-      "copy": {
-        "title": "Elder Handing over a Spear",
-        "alt": "A white-bearded cloaked figure faces a younger person in a short tunic.",
-        "description": "Both pairs of hands meet beneath a long horizontal spear in the imagined exchange."
-      },
-      "observations": [
-        "A white-bearded cloaked figure faces a younger person in a short tunic.",
-        "Both pairs of hands meet beneath a long horizontal spear in the imagined exchange."
-      ],
-      "reviewedAt": "2026-10-31T01:56:58.953199+00:00",
+      "inputContextSha256": "aef91d3ccefec61acb62e15752294a0e8c8d6f117a84f32a750ca2026dcde30a",
       "inspectedImage": "/catalog/300/300-050.webp",
-      "references": []
+      "reviewedAt": "2026-10-31T21:15:27.856Z",
+      "observations": [
+        "Monochrome older bearded robed figure holding long spear toward younger tunic-clad figure, both in sandals.",
+        "An older man holds out a spear to a young man in a short tunic."
+      ],
+      "references": [
+        {
+          "publisher": "Legendary Pictures",
+          "url": "https://www.legendary.com/film/300movie/",
+          "reason": "Primary source for the 2007 film and its Spartan and Persian setting; not proof of an individual character identity."
+        }
+      ],
+      "copy": {
+        "title": "Elder Passing a Spear to a Young Warrior",
+        "alt": "An older man holds out a spear to a young man in a short tunic.",
+        "description": "The pair face each other in a black-and-white scene, with the long spear stretching horizontally between them."
+      }
     }
   ]
 }
