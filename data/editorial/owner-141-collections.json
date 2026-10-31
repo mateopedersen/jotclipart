@@ -1,0 +1,2245 @@
+{
+  "schema": 1,
+  "topics": {
+    "11": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "de86023080eafc6334896097bbc945bd6d231b19c58b872914db6a7d741d91c9",
+      "intro": "Two matching digits appear as folded paper, balloons, stone sculptures and little train cargo. Travel tags, comic bursts and painted lettering give these 11 illustrations distinct settings.",
+      "checkedAt": "2026-10-31T09:37:00.107Z",
+      "evidence": [
+        {
+          "id": "11-001",
+          "imageSha256": "53afdc1b7b306904c94da784733981d571b833562b8d4f529b3f8833f3a19b28"
+        },
+        {
+          "id": "11-041",
+          "imageSha256": "c88ec15cbd3aa1d48f5f405db5008f513ff03165ff8478ef6eb1fb0e8d2d5d38"
+        }
+      ]
+    },
+    "13": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "2d4df7172fe49dd27314a260f9fed7111c328498c07c951448f4c9bf616f1acc",
+      "intro": "Ribbon folds, cookies, candy canes and ornate gates turn 13 into varied number illustrations. The ink designs include zipper construction and domino arrangements.",
+      "checkedAt": "2026-10-31T09:37:00.116Z",
+      "evidence": [
+        {
+          "id": "13-001",
+          "imageSha256": "1065e58a7e4c35ed625616326097c8af1642841282f8d3df1f139e291c99bf5f"
+        },
+        {
+          "id": "13-041",
+          "imageSha256": "baaa45ef2eacb7cd59f3a3c6f6fa75ac3586725390f4ef6297969dd9896c06e8"
+        }
+      ]
+    },
+    "19": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "8e84f35d1382be412c2a4b438d46312510ccdec2c2766e5941e278b94d221de5",
+      "intro": "Find 19 formed from paper, wood, sushi, flowering vines and paper curls. Roller-skate scenes and calendars add context, while contour lines and mechanical parts offer different outline treatments.",
+      "checkedAt": "2026-10-31T09:37:00.116Z",
+      "evidence": [
+        {
+          "id": "19-001",
+          "imageSha256": "d3f995ab2a57ad77c7d555a8878b26a639ce5d0da03cff61ace7067eb6821c12"
+        },
+        {
+          "id": "19-041",
+          "imageSha256": "63f05afd48a0f8aadc6c2024c76997ae1143cfe5952b6c2f54eb760c1bced6a1"
+        }
+      ]
+    },
+    "20": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "bb242ae454121adcb84c83e62abf3cb9fb60f051536e66a151bae67ffcf96523",
+      "intro": "Blue floral ceramics, sun-stamped terracotta and raspberry-topped cakes give the number 20 different personalities. Other drawings use collage, mazes, roads and footprint trails.",
+      "checkedAt": "2026-10-31T09:37:00.116Z",
+      "evidence": [
+        {
+          "id": "20-001",
+          "imageSha256": "b65e9a4d8c6bd9bfab214fa59560577720b44e6fe9d17048333d1bc8a9e7d88c"
+        },
+        {
+          "id": "20-041",
+          "imageSha256": "75aab0b3c637dc65bbec7895683b27136193d2a19b1936f82e292d3aae376101"
+        }
+      ]
+    },
+    "25": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "41fcfe6e8254bfe721d15ba8600605c0498f756ae7336f41ab30fef5e2c3c887",
+      "intro": "The number 25 appears in ceramic ornaments, stained glass, metal frames and block platforms. People holding plaques and animals balancing signs add small stories to the lettering.",
+      "checkedAt": "2026-10-31T09:37:00.116Z",
+      "evidence": [
+        {
+          "id": "25-001",
+          "imageSha256": "52666e29c9f4e655034b511ee026fd2eea797627af43b31e3a8cadf20e42bbf4"
+        },
+        {
+          "id": "25-041",
+          "imageSha256": "9ba30937dcbf442f4264d5882f8cba84002afba668ee9f82e62d1f11029ceb81"
+        }
+      ]
+    },
+    "30": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "d1a76a2982cf6c845b63b453c428bcc27fd3f56ca9ed6198166c220ee9ae5fd8",
+      "intro": "Ribbon lettering, bead ornaments and macaron-topped cakes offer different ways to display 30. Books, mountains and musical notes create unusual numeral shapes beside clear outlines.",
+      "checkedAt": "2026-10-31T09:37:00.116Z",
+      "evidence": [
+        {
+          "id": "30-001",
+          "imageSha256": "e76faadb319f0d5103a4352e2ef509f84b57ad827a13ea8c4fa2cf2fadb0ba95"
+        },
+        {
+          "id": "30-041",
+          "imageSha256": "858c1331c924efe9700b2c0c7c15db25cfd7d41592f2e76dce0cae30d52bdf6c"
+        }
+      ]
+    },
+    "50": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "9801849e54db604743e2ebc9ed7c69244f146b6a7acea04ee0eb065475b3b512",
+      "intro": "Faceted rainbow digits, sea-glass details and wax seals give 50 contrasting textures. A ring box, an astronaut's flag and musical lettering turn the number into different scenes.",
+      "checkedAt": "2026-10-31T09:37:00.116Z",
+      "evidence": [
+        {
+          "id": "50-001",
+          "imageSha256": "9d65355cd5df9787d1166298199b7d3c5d50e570858866cd55cc1c3a76f9d3f8"
+        },
+        {
+          "id": "50-041",
+          "imageSha256": "498ff2fc2f6450a10a934b4984a24909ce42369e0ce06c6a7859e212539300df"
+        }
+      ]
+    },
+    "67": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "3a1b997b72e2471897507405cc27669cbfd2d7dbc1f7d707042c6e46a4dd1ca7",
+      "intro": "A waving child, banner-carrying origami fox and astronaut bring 67 into character scenes. Glass numerals, printing blocks and a skateboard provide alternatives, including Six Seven lettering.",
+      "checkedAt": "2026-10-31T09:37:00.116Z",
+      "evidence": [
+        {
+          "id": "67-001",
+          "imageSha256": "c2d9b1b2d147b480c46dc7f0242b7347b897213a5e9833a0e84edcdf8bb5b2ff"
+        },
+        {
+          "id": "67-041",
+          "imageSha256": "e783b3ca0c9a7b8783475370a84a1989be74f89545da3c468d1c7ba3eca7da64"
+        }
+      ]
+    },
+    "70": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "b4573946bc178908d534d947daf1513c6bed8abe55de04913e2d6351095e77f0",
+      "intro": "Carved wood, floral pennants and pretzel shapes give 70 natural and festive details. Ribbon-cutting scenes, mountain-and-river outlines and applauding hands frame the number differently.",
+      "checkedAt": "2026-10-31T09:37:00.116Z",
+      "evidence": [
+        {
+          "id": "70-001",
+          "imageSha256": "730682ab4293e04e2271ac04f8badf0b0a34d6112663095f0142a1858282bdaf"
+        },
+        {
+          "id": "70-041",
+          "imageSha256": "348dc7ece13ba2bab17aab48067ae045d3a588bc6764e7103ac38c9ca12b3ec7"
+        }
+      ]
+    },
+    "75": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "3ec050f20d188af684adcf89c5385b2ac17d8f6c1a7256c851fb3216b5a555eb",
+      "intro": "Succulent planters, knitted digits and ribbon bows sit alongside a crescent ornament marked 75. Balloon, lion-crest and Art Deco ticket designs add different compositions.",
+      "checkedAt": "2026-10-31T09:37:00.116Z",
+      "evidence": [
+        {
+          "id": "75-001",
+          "imageSha256": "e6d9b7dd32863ecde4e086046988f0e21e3e61525b07bff4871bbecae4d7ace0"
+        },
+        {
+          "id": "75-041",
+          "imageSha256": "fc6ee2851953e0c1b81ec987c0195c91aea9d902da3315ae2ecba48d363c5946"
+        }
+      ]
+    },
+    "80": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "c7510e41ddad3d74b0198438e4816122ab80ad9903382b16ccabb4db563ce9e7",
+      "intro": "Number 80 illustrations use layered paper, pebbles and birthday cake. Celebration glasses, a marching drum and a baby elephant carrying a sign add recognizable props.",
+      "checkedAt": "2026-10-31T09:37:00.116Z",
+      "evidence": [
+        {
+          "id": "80-001",
+          "imageSha256": "1674b99714af87d376af4bb6160125c66b31fe579667280c4541e3e93b0ce131"
+        },
+        {
+          "id": "80-041",
+          "imageSha256": "3226b7981901762accf9073cb84d381102655583df83046e97abbb124efb47ef"
+        }
+      ]
+    },
+    "85": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "5220162b76f907fe069e84ad279d45aeaf3bb05feb3f3d1c284e051595e07485",
+      "intro": "Botanical amber lettering, wood inlay and a pop-up book give 85 different structures. A hanging sloth, balancing sculpture and paper bird add playful scenes.",
+      "checkedAt": "2026-10-31T09:37:00.117Z",
+      "evidence": [
+        {
+          "id": "85-001",
+          "imageSha256": "4bc0fd511911d068cff0b426084c311fa42f96553c2a8be6a753d2a35889f079"
+        },
+        {
+          "id": "85-041",
+          "imageSha256": "d5c33c2ff3a4bd11046ab9d5dacd8856accab64b59a1ef7a6ee11c9fbc7603e7"
+        }
+      ]
+    },
+    "88": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "b22d5dca802625029d9a7ac43ac425c045e28b8e2047d01d115ec8ee7d534f06",
+      "intro": "Paired eights appear as paper, walking characters, tickets and train loads. A robot-building scene, calligraphic lettering and a hot-air balloon offer other compositions around the digits.",
+      "checkedAt": "2026-10-31T09:37:00.117Z",
+      "evidence": [
+        {
+          "id": "88-001",
+          "imageSha256": "6e2986ed0472cb3f364f7fb7aaaa379a93162c965e472e48d0774e53592cd7be"
+        },
+        {
+          "id": "88-041",
+          "imageSha256": "ce91a769d3bea40abd427466501b174655ad97a78de2a829f18a28ef03387c8e"
+        }
+      ]
+    },
+    "95": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "cfb939c9cd5d8ba5d1587b2b8ac1771e2e5d1873fafa9513c64cf7378fef65c1",
+      "intro": "Cakes, topiary and bowling scores display 95 in small scenes. Battery and percentage graphics are decorative illustrations, while nautical lettering and a book-and-lamp arrangement provide alternatives.",
+      "checkedAt": "2026-10-31T09:37:00.117Z",
+      "evidence": [
+        {
+          "id": "95-001",
+          "imageSha256": "115dfa4fb282b2a53814d8a87de32acbaf86abe1629eb39cb096aba31bdb440e"
+        },
+        {
+          "id": "95-041",
+          "imageSha256": "9fc934d1adb377c65eb076c0e5e96c56fe6819e62d81b99346e0cc1915920466"
+        }
+      ]
+    },
+    "100": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "53acf8429b7942dc05309894a9735bdfa32b52bf8ae0aac96d42da3fdcc5f25f",
+      "intro": "Stand-alone 100 lettering appears beside small celebrations and everyday scenes. Letterpress blocks, a kite, a rocket banner and high-five hands offer different focal points, with mechanical and calendar outlines among the ink drawings.",
+      "checkedAt": "2026-10-31T09:37:00.117Z",
+      "evidence": [
+        {
+          "id": "100-001",
+          "imageSha256": "6595f63d6e84d14c9214dfbaa6105042a04f4dc1b13cb57b5e2357b284cf22e1"
+        },
+        {
+          "id": "100-041",
+          "imageSha256": "440417c8e88feb627b58bb89033a23fce159939bab533fbc97522fc4539d64dd"
+        }
+      ]
+    },
+    "300": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "6745673d5085c88de1759f8f4c0bff06b2a5e37e8847c6b3c052a84404734246",
+      "intro": "Classical warriors fasten armor, carry equipment and pause between journeys. Scroll readers, oil lamps, olive branches and a warrior offering water to a dog broaden the collection beyond fighting poses.",
+      "checkedAt": "2026-10-31T09:37:00.117Z",
+      "evidence": [
+        {
+          "id": "300-001",
+          "imageSha256": "772a799bc87cd1a2e453aa9336b99483e0a29376027fc1ca9061045f0161d7a6"
+        },
+        {
+          "id": "300-041",
+          "imageSha256": "10e4efa3fc6186c8fb9c02e4300c8ff6a030ba618bd519a50cffc8c14db7fdb1"
+        }
+      ]
+    },
+    "2007": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "e52cf54d42102c85d901a384a42677b73768ef020c36b0f61caa23bf8d4e38d2",
+      "intro": "Denim patches, pink ribbon lettering and engraved pebbles carry the year 2007 in different materials. Travel tags, woodland wreaths and mechanical key displays offer alternatives to plain digits.",
+      "checkedAt": "2026-10-31T09:37:00.117Z",
+      "evidence": [
+        {
+          "id": "2007-001",
+          "imageSha256": "3def2303bbf05485f21ddec084f517241d3c5f2f7983b8331bf0b2b59dbe7453"
+        },
+        {
+          "id": "2007-041",
+          "imageSha256": "c31799f8bf4cf0451c38db08dd3d3b1d56b54d31e27e4dfb7b72bad0639afab1"
+        }
+      ]
+    },
+    "2025": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "81da83b9703a1b8489bbebbf0ffc353892736d52436209978021f9dfbfab0d9e",
+      "intro": "Art Deco arches, woodland signs, paper curls and lockets frame 2025. A scarf-wearing capybara and desk arrangements add scenes; decorative charts are illustration props rather than reported results.",
+      "checkedAt": "2026-10-31T09:37:00.117Z",
+      "evidence": [
+        {
+          "id": "2025-001",
+          "imageSha256": "301f58c8946cda50728c049e4a601e7acb7f69675767eed635bbb689c00754fb"
+        },
+        {
+          "id": "2025-041",
+          "imageSha256": "cda3b95a744ab27ad8f98b5ee6bf913cd857ab88ee7bebc77263f7592ae2d555"
+        }
+      ]
+    },
+    "007": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "a8af2703b83532fa8aeb0ebd741c85ada7086c645a0a353466c1ab617af99dbb",
+      "intro": "Dinner jackets, sealed messages and miniature spy gadgets give these secret-agent drawings their character. Mission badges, fingerprint symbols and a classic Aston Martin DB-series coupe add different objects; invented gadgets retain concept labels.",
+      "checkedAt": "2026-10-31T09:37:00.117Z",
+      "evidence": [
+        {
+          "id": "007-001",
+          "imageSha256": "642d24490253d67227269e7eacf4498feab1a6b3c678e90e3410e926a4d28005"
+        },
+        {
+          "id": "007-041",
+          "imageSha256": "7d2653401b365f8fdb232c9c681af51c0d0a84c17308ee3311a1b1bc534dade8"
+        }
+      ]
+    },
+    "01": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "6d47cb9a1a63cd10042f9174e04ff349cc26564704bd84ecf060672c0f122c1e",
+      "intro": "The leading zero is part of every 01 design. Folded paper, pasta, clockwork gears and luminous lettering offer different textures, alongside outlined crates, jigsaw pieces and patterned numerals.",
+      "checkedAt": "2026-10-31T09:37:00.117Z",
+      "evidence": [
+        {
+          "id": "01-001",
+          "imageSha256": "aee8c22933740c44b68ff720a54ac51760fbd2b35a96b951f41d0c68f7177b43"
+        },
+        {
+          "id": "01-041",
+          "imageSha256": "4a1bb2ccaf0d326a2e4fee5a9540c11dca0c9cf50ca5c582d80a05648aa61f3d"
+        }
+      ]
+    },
+    "02": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "6270e663ce2224df1a4130a2671c14ac539571fbe7bffb868365c4c3b0c78587",
+      "intro": "Explore 02 lettering in copper-colored metal, knitted yarn, candles and decorative stamp designs. Maze patterns, fingerprint lines and star-filled outlines offer quieter alternatives to the dimensional digits.",
+      "checkedAt": "2026-10-31T09:37:00.117Z",
+      "evidence": [
+        {
+          "id": "02-001",
+          "imageSha256": "aa09728b49b26e729cd62ba5af98b1f257446a30bd0fda5c63121e5449865eb4"
+        },
+        {
+          "id": "02-041",
+          "imageSha256": "48649e4cf1eafd85b40522a304b99830f8217dd1cfb408f159547401ba6588e8"
+        }
+      ]
+    },
+    "07": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "d1ead8f9ef5fd453486f44c56a7b82009a7fe0fb007ac790756b50a7616e0c39",
+      "intro": "Coral branches, breaking waves, woven twigs and musical keyboards form different versions of 07. Hanging signs and soft toy characters sit alongside mechanical, zipper and maze-patterned numerals.",
+      "checkedAt": "2026-10-31T09:37:00.118Z",
+      "evidence": [
+        {
+          "id": "07-001",
+          "imageSha256": "78adc08e9e0b5a3e088acde173f335012c92d5066bd9c5589480899683131abe"
+        },
+        {
+          "id": "07-041",
+          "imageSha256": "d4c68de28bd848178e53d792dcf553eccce978aa6016dfc5feca2d840f2f24b0"
+        }
+      ]
+    },
+    "08": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "cb89385f9e829378f6db773b4c44d96b8ca2dd36a9db0623778b15a3650419b4",
+      "intro": "Choose an 08 made from folded paper, driftwood or candles, or a scene with someone printing the number on a bag. Bracelets and fingerprint outlines provide other arrangements.",
+      "checkedAt": "2026-10-31T09:37:00.118Z",
+      "evidence": [
+        {
+          "id": "08-001",
+          "imageSha256": "96d371455be9bf610355153ec7ae46279de21bd6c4381d511b7687abdc3deb5e"
+        },
+        {
+          "id": "08-041",
+          "imageSha256": "eb3bdb713bb32f45c1f5ad4a9888da912e02336535f3afcd9a7f69053928b276"
+        }
+      ]
+    },
+    "2000s": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "c263b96a7819554a36d8eb0b10a337ece93115ff6deb5fba7fefe64dee4f6949",
+      "intro": "Wired earbuds, compact music players and portable DVD screens anchor these early-digital objects. Tracksuits, puffer jackets, decorated albums and school lockers add clothing and everyday scenes without unverified device brands.",
+      "checkedAt": "2026-10-31T09:37:00.118Z",
+      "evidence": [
+        {
+          "id": "2000s-001",
+          "imageSha256": "4e09ef201c87f2b2dc7cf3ae4e837003e56d73f9f0c953e0e739a455dfb39ca1"
+        },
+        {
+          "id": "2000s-041",
+          "imageSha256": "54b07b23087713de95a08a2ae95b29bcca862cc64b27b8fd62b25f866d17a222"
+        }
+      ]
+    },
+    "3d": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "c5f4680588c971df38dd3a54d5a9619d30d8962755a48d8f77c286f3d1c7cab7",
+      "intro": "Dimensional objects range from chrome tubes and folded ribbon to felt creatures and an origami crane. Magnifying glasses, drawing tools and a jack-in-the-box add varied surfaces and reflections.",
+      "checkedAt": "2026-10-31T09:37:00.118Z",
+      "evidence": [
+        {
+          "id": "3d-001",
+          "imageSha256": "a4ca069060ddcbe7b2b51de23f525f10dea63b3012d4008b832506eaba62839a"
+        },
+        {
+          "id": "3d-041",
+          "imageSha256": "a3a66037b0ef9c03ac9717374be31e0d44b0832859be2a10a5ac686a3af10b88"
+        }
+      ]
+    },
+    "80s": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "5db78ee631ad09fd9fd6f1d3236151e467a56641cdfce137c9c58412e473b635",
+      "intro": "Boomboxes, overhead projectors and digital watches sit beside color-block jackets and acid-wash clothing. Retro objects, party details and fashion illustrations include a zebra-patterned bow shoe.",
+      "checkedAt": "2026-10-31T09:37:00.118Z",
+      "evidence": [
+        {
+          "id": "80s-01",
+          "imageSha256": "391815ed1acc24f6f5980f2719e8258195eec8116095bae1c18add4d90ea7b81"
+        },
+        {
+          "id": "80s-41",
+          "imageSha256": "4c34240f3578cddf9cfb5b5402f74879c5ce09407fb9ab32ded2dc6216b9d1e3"
+        }
+      ]
+    },
+    "aesthetic": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "7cddd45e108474352f22d32113c9d0fb1539b46c0c3df338b709655eaced30ba",
+      "intro": "Pressed flowers, folded pencil cases and a bowl with a bamboo whisk create quiet illustrated objects. Plants, glass mushrooms and decorative keys add different materials alongside craft scenes.",
+      "checkedAt": "2026-10-31T09:37:00.118Z",
+      "evidence": [
+        {
+          "id": "aesthetic-001",
+          "imageSha256": "4484fbe966f24c6b7c53a2a20ce9db179d5002bb380355584c9e69f963846af6"
+        },
+        {
+          "id": "aesthetic-041",
+          "imageSha256": "03bcea0deac08eeb18f0146dc4d450eafed049633ac344b7804c44b037cd8512"
+        }
+      ]
+    },
+    "alligator": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "b5b33d0cc65a4f87d28d649a1575c8d9c213b1c1daf09b0a30c0a0a374147b04",
+      "intro": "These alligators swim, bake and dress for imaginary adventures. A pirate, graduate and beekeeper offer distinct scenes beside more natural walking and diving poses.",
+      "checkedAt": "2026-10-31T09:37:00.118Z",
+      "evidence": [
+        {
+          "id": "alligator-01-measured-stride",
+          "imageSha256": "87ba379e3b800343e0dddf69786d415da6877f85d6b98ac2220b03eafe42fe74"
+        },
+        {
+          "id": "alligator-41-footprint-detective",
+          "imageSha256": "485f7e179e6cd116ec1ac581ff74cae6255387d40d58150ba0ab21f2469ba552"
+        }
+      ]
+    },
+    "app": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "6f72f06274c9b01fca9665374f7b3f0ac8c08614b7498ee04beb662f9c057b35",
+      "intro": "Phones, tablets and app tiles show notifications, drawing tools, budgets and games. Gesture drawings and automation stages describe interface ideas; the illustrated screens are not working products or verified account results.",
+      "checkedAt": "2026-10-31T09:37:00.118Z",
+      "evidence": [
+        {
+          "id": "app-001",
+          "imageSha256": "54f82769cdbe49af85e43299eabaadacc2aac2ef968b37d2c27f031b03a77cb3"
+        },
+        {
+          "id": "app-041",
+          "imageSha256": "663b5df223ba95c9ca763947cdaa791f5f6e6203b8b38314d284c2eda7f16bd9"
+        }
+      ]
+    },
+    "august": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "3629ccb0ca4c2cb7c81e70afbbdc86cdf1770d9c42de6aa644a2a1eee9e46a13",
+      "intro": "August lettering appears on tags, travel accessories and stationery. Picnic boxes, suitcases and a child preparing a backpack bring in late-summer activities, while birds carrying an envelope add a playful design.",
+      "checkedAt": "2026-10-31T09:37:00.118Z",
+      "evidence": [
+        {
+          "id": "august-001",
+          "imageSha256": "4b744fb374893bee832f65bf14ef8b5fc29e3046a83bb956c9ed588028613870"
+        },
+        {
+          "id": "august-041",
+          "imageSha256": "e8782036f0bc82b8f026b80f218d4acd447db9824a2ad4f93f78cbe3e295b6aa"
+        }
+      ]
+    },
+    "baseball": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "1030f98fce076985dd22b05a8fc54d25407048a061ccdf6644017887c8ed6541",
+      "intro": "Cleats, moving balls, an infielder reaching low and batting gloves meeting in a fist bump show equipment and actions. Tickets, trophies and embroidered emblems add supporting designs.",
+      "checkedAt": "2026-10-31T09:37:00.118Z",
+      "evidence": [
+        {
+          "id": "baseball-001-rising-fastball",
+          "imageSha256": "b2c546a1b98c7b6b9d9ccf9c53517da652145c8a92ac8d48849fd41c1ee929e8"
+        },
+        {
+          "id": "baseball-041-knuckleball-grip",
+          "imageSha256": "6e2cf828ce80cc7270efd6b5660d24eceabdc45c5a1908fa2a00516033ea0945"
+        }
+      ]
+    },
+    "bow": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "a71277e1bbe73bfe7efb249163f3dbba78a92d9ac5b867073c29ce28d09bd247",
+      "intro": "Satin, chiffon, felt and quilled paper give these bows different folds and edges. Pearl trim, star buttons, contrasting linings and harlequin checks distinguish the designs beside lace outlines.",
+      "checkedAt": "2026-10-31T09:37:00.118Z",
+      "evidence": [
+        {
+          "id": "bow-001",
+          "imageSha256": "4a0acf75eaa059ab900d1f12bdeb5e928d40135e553e578faf416656048866e6"
+        },
+        {
+          "id": "bow-041",
+          "imageSha256": "382737a35774db954b257510a195406b0a114e8c37e7b2a548f3a0ce42784119"
+        }
+      ]
+    },
+    "cake": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "932b954379cffbfeb4994f15795341c45cfeff1b7099a786adbb16d983477392",
+      "intro": "Whole cakes, ring cakes and cut slices reveal different icing, crumb and topping arrangements. Cherry chocolate layers, mint-colored decoration and berries sit beside checkerboard loaves and a flower-basket cake.",
+      "checkedAt": "2026-10-31T09:37:00.119Z",
+      "evidence": [
+        {
+          "id": "cake-001",
+          "imageSha256": "610789ca66fa80e63b051c93de845253c5c02b41f71754043b8f31669143b135"
+        },
+        {
+          "id": "cake-041",
+          "imageSha256": "902b1e7a4573c1fc7faff140f8c325d717a69d190bac4b972f32a2e4c1568282"
+        }
+      ]
+    },
+    "calendar": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "fbb0e56c85e4b743a74df2200270dc7a5b3bfcc94e2c027209720a77bfbf2cdc",
+      "intro": "Desk stands, family organizers and classroom boards picture different calendars. Stained glass, sailing tags and hands turning pages add decorative treatments; individual dated drawings are distinct from reusable planners.",
+      "checkedAt": "2026-10-31T09:37:00.119Z",
+      "evidence": [
+        {
+          "id": "calendar-001",
+          "imageSha256": "24523e6cf2cdb4ff3e68aee350dee8a09badb62cb2804ac614874d9cde124cc0"
+        },
+        {
+          "id": "calendar-041",
+          "imageSha256": "9f17cadefd378e2a66afab7d4e6924c2c5ed21ce76d0ef3232119f38d8f9d8cb"
+        }
+      ]
+    },
+    "call": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "1d4b8765e201d68856d9df7990d71b9a1d8dfacbc3e329cc44c028befb678ef1",
+      "intro": "Rotary phones, headset users and handset symbols cover different meanings of a call. Hang-up controls, reminder planners and emergency columns add specific objects without presenting them as working services.",
+      "checkedAt": "2026-10-31T09:37:00.119Z",
+      "evidence": [
+        {
+          "id": "call-001",
+          "imageSha256": "027326a319fdb1c0499ce7dc194335ea6f8b8870301026ff86876ec981aef2db"
+        },
+        {
+          "id": "call-041",
+          "imageSha256": "5434c6cf1ec9a97b5bc83faab6cfd22fe0fc6f75f0acd2d14b34731cf8fd9887"
+        }
+      ]
+    },
+    "crown": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "5b75dd39762301e739dac4a0f0f5d8f5d45016c7e91805d5d07ed2f797fcb74d",
+      "intro": "Metal-colored crowns, leaves, felt points and lace create varied headpieces. Blue inlays, stitched stars and hanging heart tips distinguish the designs, with bold silhouettes for a simpler appearance.",
+      "checkedAt": "2026-10-31T09:37:00.119Z",
+      "evidence": [
+        {
+          "id": "crown-001",
+          "imageSha256": "3aa6eb7a0d7254242cdea9243665f842516d90c96a66e97284cf9ca910956e8c"
+        },
+        {
+          "id": "crown-041",
+          "imageSha256": "821da933e6bf32f4b65473a0e2bda8e72851e3aefde7e9fad7b7b538c3812f18"
+        }
+      ]
+    },
+    "dragon": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "612a6880b848aea69e2fd43e28a2ca984e859b698d4311c47015ac28d4eb8782",
+      "intro": "Sleepy hatchlings, shell-carrying sea dragons and golden couriers give these creatures different personalities. Other scenes show a dragon helping a teddy bear or hugging a raspberry beside fantasy emblems.",
+      "checkedAt": "2026-10-31T09:37:00.119Z",
+      "evidence": [
+        {
+          "id": "dragon-001",
+          "imageSha256": "6a6b1fefed2033da87480026415bb257fbc23e8253711a47f5cbc0c864b6d138"
+        },
+        {
+          "id": "dragon-041",
+          "imageSha256": "07aa02148bc920e92b9bf400a3a7e1b90eceacad7962226db5937b9cad3ac006"
+        }
+      ]
+    },
+    "draw": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "96b1dcb989a8b5437e92050a35cc5f7016f4a16ca0853eafcfacc82f510ad85b",
+      "intro": "People draw on paper, screens and sand using different tools and positions. Comic artists, children making a banner and a wheelchair user sketching a house show the activity itself.",
+      "checkedAt": "2026-10-31T09:37:00.119Z",
+      "evidence": [
+        {
+          "id": "draw-001",
+          "imageSha256": "c5d46128622564d544f91bb6e23e9b4f608378666977baebd0b8ed2b5574e8f7"
+        },
+        {
+          "id": "draw-041",
+          "imageSha256": "c44333d1ee2f6b241e2e3461b206d4dc4d5101d2aa8bf2823e2600ac2d4a7cee"
+        }
+      ]
+    },
+    "egg": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "47e684384164f1d7d8443af4d67c8dd07c52fcd02a7824b9e5cbd9ee1449dd29",
+      "intro": "Whole eggs, falling yolks and omelet slices sit beside tools for holding and preparing them. Strainers, slicers and a conveyor add objects, while decorative vessels and crystal fantasies vary the treatment.",
+      "checkedAt": "2026-10-31T09:37:00.119Z",
+      "evidence": [
+        {
+          "id": "egg-001",
+          "imageSha256": "ed401a87c2ee6e58cfbf4fc562e1a2139f5b04dd1c498602cf363b0abc0c94f4"
+        },
+        {
+          "id": "egg-041",
+          "imageSha256": "6aed9d21be39bf08c34198a0589d249a87802a6b73ab33c5db31bba2ce1b9971"
+        }
+      ]
+    },
+    "email": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "b74397817e8fd1cc212acf34018e30040c65adab74c8440650eb23be9d34e199",
+      "intro": "Envelopes, reply arrows, bookmarks and at-sign objects explore email symbols. Distribution trees, account symbols and an Inbox Zero globe add arrangements without claiming messages were actually sent or received.",
+      "checkedAt": "2026-10-31T09:37:00.119Z",
+      "evidence": [
+        {
+          "id": "email-001",
+          "imageSha256": "0241f6327a864e26b5c23fb57101df3109d0828af96f02d3b175ffc3a6706e9b"
+        },
+        {
+          "id": "email-041",
+          "imageSha256": "3a655126dd23282a252c3c8497c5818e2e3c952df4c57f38cce95d4aa149d5a6"
+        }
+      ]
+    },
+    "emoji": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "1350aac997cc90f2f0c570f7a44e7b9b978f4ec7e32d28fd306f18b2a25ae02a",
+      "intro": "Soft faces and characters show surprise, worry, approval and confidence. Stitched fabric, translucent surfaces and fruit-shaped faces vary the appearance, while gestures and eyebrows distinguish the emotions.",
+      "checkedAt": "2026-10-31T09:37:00.119Z",
+      "evidence": [
+        {
+          "id": "emoji-001",
+          "imageSha256": "ac2ed07f147d7b38611a0b7a2ec73b98d264f8a5a5c02284c578db536153acbe"
+        },
+        {
+          "id": "emoji-041",
+          "imageSha256": "0fbc66fa1ec1eaf3036bcca15f5ebbb189cf630e63cd8808d013011dfc568079"
+        }
+      ]
+    },
+    "facebook": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "c27db1a28e8c09579112b7e1d2fc63fcc9ae763ad12a5703fbf2283effc3520f",
+      "intro": "Facebook-themed signs, community scenes and book-club objects place the recognizable mark in illustrated settings. Calendars, newspapers and typewriters add context without representing verified accounts or events.",
+      "checkedAt": "2026-10-31T09:37:00.119Z",
+      "evidence": [
+        {
+          "id": "facebook-001",
+          "imageSha256": "6953c47e2b8b0e834739aadf24f1ccce3767d8f559d637a23a9afe02aff8608e"
+        },
+        {
+          "id": "facebook-041",
+          "imageSha256": "ed472edd046a6dffba50ba1f55544ab38caf62a9d8c550dc6d272214a22adf5b"
+        }
+      ]
+    },
+    "font": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "3bd5265ec29a012433e3db4bda4fa07294f8136055a02b1fe7a1e94bcd4a6f5f",
+      "intro": "Letters range from a flourished blue A to a wooden printing block and a typewriter key. Puzzle pieces, dimensional digits and plain serif outlines offer different lettering styles.",
+      "checkedAt": "2026-10-31T09:37:00.119Z",
+      "evidence": [
+        {
+          "id": "font-serif-a",
+          "imageSha256": "8245f4070dd7dd2e904ee37d36ae62c5fda7237a52115435ae2057e4ff8ed9a5"
+        },
+        {
+          "id": "font-outline-serif-a",
+          "imageSha256": "4ffd30f28bc11b56a068e0c1b4f833223d71fac44a962d54c67f343f09060c7a"
+        }
+      ]
+    },
+    "generator": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "b7483d5b8f3d0226bb1f7a619871b77ea812f49a5efcfe2955f97ddab2f96444",
+      "intro": "Portable frames, towable cabinets and light towers illustrate different generator shapes. Technicians, alternators and a steam cart add equipment details, with speculative branded housings identified as concepts.",
+      "checkedAt": "2026-10-31T09:37:00.120Z",
+      "evidence": [
+        {
+          "id": "generator-001",
+          "imageSha256": "1be63394704b92df38cded48dbcfa4b1bd4cb0422875a67e7fe4b743aef86c95"
+        },
+        {
+          "id": "generator-041",
+          "imageSha256": "17bb1ee7f483bdbed3fb9597edff6427d1f92ebb12619b765aeba0f09e09bfe2"
+        }
+      ]
+    },
+    "guitar": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "cf40186cdaddb9659dfe768867a1845b890baa00a9e00a738d0d03d5581358a4",
+      "intro": "Acoustic bodies, tuning pegs and separated components show different guitar views. Players, lesson emblems and a sleeping cat add scenes around the instrument beside decorative and straightforward line drawings.",
+      "checkedAt": "2026-10-31T09:37:00.120Z",
+      "evidence": [
+        {
+          "id": "guitar-001",
+          "imageSha256": "2992ac0ca5b4ddeedc944bd0ee9a58fd5e5add421bb47745abecdc9dd0d021a8"
+        },
+        {
+          "id": "guitar-041",
+          "imageSha256": "23ea0232726e4228dafcb38d612afa558f23d6e31f0ed794beb64d3441101fa0"
+        }
+      ]
+    },
+    "hand": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "db52bb70167e0446f8a1a380435f36cf0ac858139ae8b93b634a5c2d60ada25d",
+      "intro": "Waving, crossed fingers, handshakes and grips give this collection different gestures. Keys, paper cranes, rope and scissors make each action specific, with different cuffs and hand positions.",
+      "checkedAt": "2026-10-31T09:37:00.120Z",
+      "evidence": [
+        {
+          "id": "hand-001",
+          "imageSha256": "5d7b404351f029a774b7e23163742c22803e5cc11c0b88177db3ebb27f8f71b3"
+        },
+        {
+          "id": "hand-041",
+          "imageSha256": "8312e4c280ee12a696337d787876ba2b27884ee88d32e209b02ed42166770295"
+        }
+      ]
+    },
+    "how": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "bc0cd5045bcfe514c0823724bd35148cd3736ff1108691ad09cc74ef58308673",
+      "intro": "Instruction sheets, gears and people considering a task make these drawings about figuring things out. Stool assembly, handwashing panels and a robot reading a guide provide concrete scenes.",
+      "checkedAt": "2026-10-31T09:37:00.120Z",
+      "evidence": [
+        {
+          "id": "how-001",
+          "imageSha256": "b80004cd8e62297569b7405e16196f7fc76c9969abbbd2b4aabc2a4de73019b9"
+        },
+        {
+          "id": "how-041",
+          "imageSha256": "1982a1938269cacb65690e973a04108319a371acc9b29b1a949ea4c0e77a16cd"
+        }
+      ]
+    },
+    "icon": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "da3ab93a1bfadcd117ba091c9889d85c88093cda2994db4793801a5e64d9085a",
+      "intro": "Doors, sort controls, pinned notes and delivery objects form varied pictorial symbols. Mountain flags, binder clips and open gifts add everyday meanings through clear silhouettes and dimensional objects.",
+      "checkedAt": "2026-10-31T09:37:00.120Z",
+      "evidence": [
+        {
+          "id": "icon-001",
+          "imageSha256": "8ad6c7fe929b9e733150dec4541d4842288e5b3a37489ee048e2a8f4c1b20098"
+        },
+        {
+          "id": "icon-041",
+          "imageSha256": "e3335871eb5ffc8ede85a270e78ab319634e18891a6f894a9a40deba55c0b16f"
+        }
+      ]
+    },
+    "instagram": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "4a437c5c117cb2d607e894d14e1135c7ee5691c078952a012d9fa07b3c73cafb",
+      "intro": "Instagram-themed signs, stamps and cards use the camera mark in different settings. Microphones, bells and people holding symbols add context without implying real profiles, endorsements or follower results.",
+      "checkedAt": "2026-10-31T09:37:00.120Z",
+      "evidence": [
+        {
+          "id": "instagram-001",
+          "imageSha256": "6b7c6efdb77270670dfc197b78cb60668d8670c38cbe4c4ab10778cbb3512091"
+        },
+        {
+          "id": "instagram-041",
+          "imageSha256": "c3365042773a9557723d924666e0d44c2b776f92f87b9fa0dbc301b98e358bf2"
+        }
+      ]
+    },
+    "jar": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "74837b10fd766854405fdeedb43ca3741e3de7c45aa58a1d4c87fa20eb137088",
+      "intro": "Empty glass, layered food and useful storage give these jars different contents. Pencil holders, tip jars, rope-slung pots and spilled hardware provide alternatives to a repeated container shape.",
+      "checkedAt": "2026-10-31T09:37:00.120Z",
+      "evidence": [
+        {
+          "id": "jar-001",
+          "imageSha256": "0fcc4011019dff66a82f3e1e688caad1fda7ae77d1aac2cafb5e34c85f648539"
+        },
+        {
+          "id": "jar-041",
+          "imageSha256": "c0d6234c3f9bb72fe7dd83d46023eb2405885e8bc842602807ba032fa2dd18e3"
+        }
+      ]
+    },
+    "jeans": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "8351b812161978c601920202b3409c727ab51541258b5eafb6714f575e13a9f1",
+      "intro": "Barrel legs, maternity panels, stacked hems and contrasting side pieces distinguish these jeans. Dressmakers, construction drawings and a packed suitcase show garments being handled as well as displayed.",
+      "checkedAt": "2026-10-31T09:37:00.120Z",
+      "evidence": [
+        {
+          "id": "jeans-001",
+          "imageSha256": "048b8a259f72b3f03b9fde6b5ddf8cbf9d982fade71efc442f56b9a8165f8d46"
+        },
+        {
+          "id": "jeans-041",
+          "imageSha256": "9fe0af5506d131c6bbd342ec9a9d2ebc8d24dd14a631b8eb7f2249e47f787570"
+        }
+      ]
+    },
+    "jersey": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "5220ed37703b1e013ff326cb3b8ae8269415b1ded353e6620b57e37a03f663f8",
+      "intro": "Sports shirts vary in neckline, sleeves, panels and numbers. Rugby-style tops, cycling zips, racerback cuts and lace-neck jerseys sit beside folded or draped garments, with visible lettering described individually.",
+      "checkedAt": "2026-10-31T09:37:00.120Z",
+      "evidence": [
+        {
+          "id": "jersey-001",
+          "imageSha256": "ba32e0c6e83d00b855df9f9e8f89dd1d8acdd62f5c64200268d6081c1e9283eb"
+        },
+        {
+          "id": "jersey-041",
+          "imageSha256": "4770ca769928f64b4d56faa353d1c09fb295d2d3f58a6185fbf64a81eb8ca9a6"
+        }
+      ]
+    },
+    "jumping": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "bfe49e0516a23e942d855bb56972c44b1b591a2bebadadc8c47c44bde2d1867b",
+      "intro": "Children hop between markers, players leap for a ball and dancers rise into the air. Pogo sticks, stepping stones, a dolphin and a dog passing through a hoop broaden the scenes.",
+      "checkedAt": "2026-10-31T09:37:00.120Z",
+      "evidence": [
+        {
+          "id": "jumping-001",
+          "imageSha256": "460c4327c9c46607d32cf6f3fa00b8e28b0b067d3653f580cddcaa02f104eae9"
+        },
+        {
+          "id": "jumping-041",
+          "imageSha256": "b6ba83e154d2d82f08ba7de170700552164e0a99367a8abc6f1034baa1a41264"
+        }
+      ]
+    },
+    "kitchen": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "b5b6d5952f86f9ca059676e3b1bf75743738d7559798a338a4919af879c61a43",
+      "intro": "Islands, preparation surfaces and utensils show different parts of a kitchen. Chopping boards, colanders and small appliances add recognizable equipment, with furnished arrangements and isolated tools.",
+      "checkedAt": "2026-10-31T09:37:00.120Z",
+      "evidence": [
+        {
+          "id": "kitchen-001-crescent-island",
+          "imageSha256": "a2675ccaf44be4e2791a419effe529df27fd8401125675a628473090794890de"
+        },
+        {
+          "id": "kitchen-041-hand-crank-egg-beater",
+          "imageSha256": "fcb2e4949464014916e121b988190d73b06138443ea8910776537f12e378c0b3"
+        }
+      ]
+    },
+    "ladybug": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "5bb15ae9807aa01530d4371d095f81d2acee9c6846d2eda92374be6345ccc492",
+      "intro": "Natural-looking insects share the collection with friendly ladybug characters. Baking, gardening and felt-toy designs use different props, while botanical scenes and life-stage illustrations focus on the insect.",
+      "checkedAt": "2026-10-31T09:37:00.120Z",
+      "evidence": [
+        {
+          "id": "ladybug-001",
+          "imageSha256": "522100cf88507b12df0519f74ca69864f0daf71a3db6502e417a7ecc78db11c3"
+        },
+        {
+          "id": "ladybug-041",
+          "imageSha256": "8c8e42f36b19148ab117af4a00f329f076c4ef6472dc1d9184978456f028ff2d"
+        }
+      ]
+    },
+    "line": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "f0899fb2e4a40c54694f1f189f591ea4415286a3fec12ec80ea76ff3b65b32fa",
+      "intro": "Lines become ribbons, borders, paths and graphic marks. Curves, loops and repeating cutouts offer different directions and rhythms, with dimensional materials alongside simple dark strokes.",
+      "checkedAt": "2026-10-31T09:37:00.121Z",
+      "evidence": [
+        {
+          "id": "line-001",
+          "imageSha256": "f35f38e85f2a008006b892d6bec591c9ff1b70249e5fffa9faf93cf96087ea6e"
+        },
+        {
+          "id": "line-041",
+          "imageSha256": "7f16e4f08eea6045e12471b6c330c957be3d5e132b6b9b61c32757319f6bd9a7"
+        }
+      ]
+    },
+    "location": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "2e609287c618df854018d825952ab1ecd00749a5972907ea8f31af2ba63881a8",
+      "intro": "Pins and place markers become fabric tags, folded paper and theatre curtains. Accessibility symbols, people and travel details give the markers specific meanings beyond a plain map pin.",
+      "checkedAt": "2026-10-31T09:37:00.140Z",
+      "evidence": [
+        {
+          "id": "location-001",
+          "imageSha256": "ec430af82498df76d5dafb459373147cf2d90096b0a67ee3ab94c99a6cde409b"
+        },
+        {
+          "id": "location-041",
+          "imageSha256": "ba89cad5f00bea134733161c26a426714ffab0a2cd9bc02738993a3283cae54a"
+        }
+      ]
+    },
+    "mountain": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "4a392d502f29bd01398bab3951b2224e99aa4d93e9dcd0dca2ac180916dde650",
+      "intro": "Rock faces, wooded peaks and flowing water give these mountains different silhouettes. Cutaway terrain, climbing details and character peaks sit beside badges and ink landscapes.",
+      "checkedAt": "2026-10-31T09:37:00.140Z",
+      "evidence": [
+        {
+          "id": "mountain-001",
+          "imageSha256": "dbc736eef1704814fc556277f60a12b83dfab0e4b7a532f9ac6125ecebd80a44"
+        },
+        {
+          "id": "mountain-041",
+          "imageSha256": "eccf58ebd1317acd1b4c1efd6b969148d21d62f474ffff788caa22f608b54849"
+        }
+      ]
+    },
+    "mushroom": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "c425b9be44a4a91a0bc46e5f9cc1e1b8410099360b2f51006f74d6868818e5e2",
+      "intro": "Shelf fungi, small caps and grouped stems show different mushroom shapes. Storybook scenes, including a sleeping animal beneath a broad cap, sit beside natural specimens and patterned outlines.",
+      "checkedAt": "2026-10-31T09:37:00.140Z",
+      "evidence": [
+        {
+          "id": "mushroom-001",
+          "imageSha256": "61a4e7efec356d66225b2b4a061270bfd8418bc310b57f5ca0cc23ea111f123e"
+        },
+        {
+          "id": "mushroom-041",
+          "imageSha256": "a674af265bafa253768ad1eb66f4856c21e46cc9c063d682db94102db4245a3f"
+        }
+      ]
+    },
+    "no": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "a2b71d5af289ae931dff154cc7cca37c4e5b8d75e7996dcfd17fb9a164aacecb",
+      "intro": "Crossed-out objects and prohibition marks picture different meanings of no. Fire, vaping, litter and other subjects remain specific to each sign, with colored badges and bold ink treatments.",
+      "checkedAt": "2026-10-31T09:37:00.140Z",
+      "evidence": [
+        {
+          "id": "no-001",
+          "imageSha256": "99a370b0176eb3999847f700e11c7226d52588be4f4bd6b0a0276edc63a359b0"
+        },
+        {
+          "id": "no-041",
+          "imageSha256": "2d09ca8b2d9e7d10d77f7c0467d3f620d0667a168154d1cb8de69b26a263da9b"
+        }
+      ]
+    },
+    "nose": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "115f99e20a9de944d66391252ce0877647de5c7e3bf750211dca6a7cdd97abb5",
+      "intro": "Profiles, front views and geometric forms show noses in different styles. Gestures and expressive faces add context, while dimensional materials and cut-paper shapes provide less literal alternatives.",
+      "checkedAt": "2026-10-31T09:37:00.140Z",
+      "evidence": [
+        {
+          "id": "nose-001",
+          "imageSha256": "04b2a77fb679211a275d51d291f13edc94f90e36a767cef05b47c491a63f4448"
+        },
+        {
+          "id": "nose-041",
+          "imageSha256": "06e7295652abd57b190ccd48337e3582d4031926cdd8b178683f364ecfd30c71"
+        }
+      ]
+    },
+    "nurse": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "8af3f82305dce840a663742ba4b73647cb1719e909ac943ca9c66727eebc2191",
+      "intro": "Nurses appear with clinical tools, seated breaks and everyday gestures. Different clothing, people and settings distinguish the scenes; the drawings illustrate roles rather than medical instructions or credentials.",
+      "checkedAt": "2026-10-31T09:37:00.140Z",
+      "evidence": [
+        {
+          "id": "nurse-001",
+          "imageSha256": "6a495e1abbc98b314483662977c9c336b2da46319f21e317e764f28dc16e0674"
+        },
+        {
+          "id": "nurse-041",
+          "imageSha256": "d4cb35bbaff0fed1bc95691c88a2c834b628a441c52387e5debb0d6bf1eae750"
+        }
+      ]
+    },
+    "october": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "27b6c64e6a87c3e6431e9e153114a9702eb12f7a7c79f90ec14b9495a1c74493",
+      "intro": "October lettering, tea tins and seasonal objects sit beside clothing and characters. Autumn details connect the collection without making every drawing a pumpkin or a Halloween costume.",
+      "checkedAt": "2026-10-31T09:37:00.140Z",
+      "evidence": [
+        {
+          "id": "october-001",
+          "imageSha256": "baf1a05b67308ad216ec1d95a49263dcc75d4a32a05b0a5e1ea823434d9c4142"
+        },
+        {
+          "id": "october-041",
+          "imageSha256": "dbb36d0c5582978723298253b6777fcc4c5c52ea3cd9f73f33323a0a33da1102"
+        }
+      ]
+    },
+    "pencil": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "449b8b5e2163a3b61512683bf9b12996f8ac3f7cb8c4859518f17f1e1863bb9d",
+      "intro": "Short worn pencils, sharpened tips and arranged drawing tools reveal different surfaces and views. Hands and creative scenes add context beside colored objects and separate ink drawings.",
+      "checkedAt": "2026-10-31T09:37:00.140Z",
+      "evidence": [
+        {
+          "id": "pencil-001",
+          "imageSha256": "a5409896549c6037e2addc46803f49ab655275e185d8a56678c026077e494841"
+        },
+        {
+          "id": "pencil-041",
+          "imageSha256": "4612442c55c3d813b259489d22a806d9366996264b79d08f5a4d9a59861aaec6"
+        }
+      ]
+    },
+    "presentation": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "12fdc4742ee49be7360bd7042ed3981f196883f3a4202dd7835d5d9b385fa59d",
+      "intro": "Presenters, lecterns, charts and visual explanations show ways to share an idea. These are generic presentation activities and props rather than a specific software interface or an official Microsoft product.",
+      "checkedAt": "2026-10-31T09:37:00.140Z",
+      "evidence": [
+        {
+          "id": "powerpoint-001",
+          "imageSha256": "3e5558991a9eaba3fce68b0918ba2ca7985f4a24f06da7a847d891992a059590"
+        },
+        {
+          "id": "powerpoint-041",
+          "imageSha256": "897ea4f826d2a3eccdd26f594c02623a6e1297476ad347ac177d38c96b2fd3e1"
+        }
+      ]
+    },
+    "quail": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "0dcf262a2a506d327576ca011259da3b06ee473bd85b8d59c4b23c6c398cad1c",
+      "intro": "Patterned feathers, rounded bodies and characteristic head plumes anchor this quail collection. Natural poses sit beside raincoats, reading scenes and gardening characters, with nests and botanical details elsewhere.",
+      "checkedAt": "2026-10-31T09:37:00.141Z",
+      "evidence": [
+        {
+          "id": "quail-001",
+          "imageSha256": "9289d8b98bc896369249064786b582acb2772d262576fe8478eaffb9fa502718"
+        },
+        {
+          "id": "quail-041",
+          "imageSha256": "cfd83e23a536a94eee426e2c0c2968029ec075b30e3622456cb4e742059c86ed"
+        }
+      ]
+    },
+    "quarter": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "ae29469627026c42a88a751f95548e93772b507bcac1995aea0431ab9296a272",
+      "intro": "Quarter coins appear alone, grouped and held between fingers, with everyday scenes around the money. Different views show rims and portraits without making collectible-grade coin identification claims.",
+      "checkedAt": "2026-10-31T09:37:00.141Z",
+      "evidence": [
+        {
+          "id": "quarter-001",
+          "imageSha256": "3f84e1e148088d7ff261b3048e5ac08f589056366d12515eb2b93e819469ae88"
+        },
+        {
+          "id": "quarter-041",
+          "imageSha256": "58585e9d32d261c49e4814494991d22d67c8454ee6f095fc51137b48bf41281e"
+        }
+      ]
+    },
+    "quilt": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "7d67994d20e26af55ff26390485014fd57b1db7dcb8d70ad167bffa863e93efe",
+      "intro": "Patchwork blocks, folded blankets and stitching give these quilts distinct patterns. Different fabric arrangements and views distinguish the textiles, with ink versions alongside colored cloth illustrations.",
+      "checkedAt": "2026-10-31T09:37:00.141Z",
+      "evidence": [
+        {
+          "id": "quilt-001",
+          "imageSha256": "dc0b0f21f922af0b4ac7826cae2d1339cc3fb7c13f80fa365c301f90f1aea6ff"
+        },
+        {
+          "id": "quilt-041",
+          "imageSha256": "72eaf8a75ba685243025f0197b06f39cb9a12a3aca8508b3acc54726c227a532"
+        }
+      ]
+    },
+    "rainbow": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "e7910355ad224bacbeb7c5cd7fbfd0861d82433c3ec4fb10cfd8d0fecd5de59b",
+      "intro": "Arched bands, hanging ornaments and bright materials give these rainbows different structures. Stained glass, fabric and decorative objects offer alternatives to a simple painted arc.",
+      "checkedAt": "2026-10-31T09:37:00.141Z",
+      "evidence": [
+        {
+          "id": "rainbow-01-windswept-weather",
+          "imageSha256": "ff4903ddd2ee26c478140b47d77442db7c3e8f8f8638582eece55b5ebe5b491a"
+        },
+        {
+          "id": "rainbow-41-arch-maze",
+          "imageSha256": "4e2d20774ffc55f2d4ce1ca02595716689eb7a73e787ab163bf970d898a55fa4"
+        }
+      ]
+    },
+    "rat": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "8247af90f7606024bbf0abbba800ee129466e48b4d3f8b878f51a8d49b060015",
+      "intro": "Rats read, play instruments and settle into nests, with more natural poses elsewhere. Different coats, expressions and props distinguish the characters, including detailed ink scenes.",
+      "checkedAt": "2026-10-31T09:37:00.141Z",
+      "evidence": [
+        {
+          "id": "rat-001",
+          "imageSha256": "80af2815dcd558753f88cf83a7ba0a41c4298ed4170a33c4ddf4c1f253ff61b2"
+        },
+        {
+          "id": "rat-041",
+          "imageSha256": "279b5a6b4e2d0edb23fab27b93deffd21036ed5db585761a6330c3c8440f6ed9"
+        }
+      ]
+    },
+    "rock": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "0939bae23d1c0d35b6fcbb35798f197b943196f8bb17d9ae896a329e5d06f71a",
+      "intro": "Layered stone, crystals and weathered fragments show different rock surfaces. Fossils, carved marks and a shallow water-filled hollow provide specific details beside boulders and smaller specimens.",
+      "checkedAt": "2026-10-31T09:37:00.141Z",
+      "evidence": [
+        {
+          "id": "rock-001",
+          "imageSha256": "efac8218dd89dad8b84446937dac12f31e229c0d04193283cc691461cf6037ce"
+        },
+        {
+          "id": "rock-041",
+          "imageSha256": "9850d989aa6ac3907f237d1bbb238e21060ba05b3804183c2e15144d4da4f4af"
+        }
+      ]
+    },
+    "sets": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "b95ef67fe1ac04490a0acda752ab8e777bb0ccb38283d8302d1dec5956c47c06",
+      "intro": "Venn diagrams, grouped objects and mathematical arrangements illustrate meanings of a set. Labeled relationships are checked as part of the drawing, with everyday collections providing pictorial alternatives.",
+      "checkedAt": "2026-10-31T09:37:00.141Z",
+      "evidence": [
+        {
+          "id": "sets-001",
+          "imageSha256": "37149b36ac625366ddf2ca0f6e5178862526964d3f3f308779277f16be384875"
+        },
+        {
+          "id": "sets-041",
+          "imageSha256": "3111f2bdcdf55bf7710621cfc038844a4e6c066db1070ecb61f26060b86e8eff"
+        }
+      ]
+    },
+    "star": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "76e18dd773c7f023dcf85e7a559e8b8f95a5c1fff54b99625f4122b080649e12",
+      "intro": "Fabric patches, ribbon, candles and faceted shapes turn stars into different objects. Stitched borders, ornaments and ascending groups provide alternatives to a plain five-point symbol.",
+      "checkedAt": "2026-10-31T09:37:00.141Z",
+      "evidence": [
+        {
+          "id": "star-001-copper-origami",
+          "imageSha256": "503de160e5ebfb93e2d714f1003a314706c598d49ec862d80e8550385a0ceba5"
+        },
+        {
+          "id": "star-041-woodcut-radiance",
+          "imageSha256": "3c7da022b86d2a654c97c196ced4471700b520a107de5e3caea53eacb7eda508"
+        }
+      ]
+    },
+    "toilet": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "0fb06c581805b56f2d6bdd77f79b1db7a87e1d8c1abab36f6d78a6bb5cc6f0ba",
+      "intro": "Fixtures, portable arrangements and maintenance scenes explore toilets in different forms. Plumbing details, workshop activity and distinct bowl designs broaden the collection beyond one repeated bathroom fixture.",
+      "checkedAt": "2026-10-31T09:37:00.141Z",
+      "evidence": [
+        {
+          "id": "toilet-001",
+          "imageSha256": "3ab932d016661c3cc5ad4c208172ebefa5c00efa7738498347324f921814d8a5"
+        },
+        {
+          "id": "toilet-041",
+          "imageSha256": "d02cf87738247cb4b0bb9b378a2c3bfef6a6ee9b7cea119062c9574b0f76e5f7"
+        }
+      ]
+    },
+    "usa": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "30a871d77692203d9c97b0a0b2a9897e5b1580a4f12f18e17a1f4c49c0e72596",
+      "intro": "USA lettering, civic symbols and people with American-themed props share this collection. Letters, certificates and voting imagery are illustrations rather than evidence of real results, official status or endorsements.",
+      "checkedAt": "2026-10-31T09:37:00.141Z",
+      "evidence": [
+        {
+          "id": "usa-001",
+          "imageSha256": "998f519fe7edc8d231b49e4c2af6d2242eb439d8a4baf143758e48590071509f"
+        },
+        {
+          "id": "usa-041",
+          "imageSha256": "5caecf49a07ed605b256bee4c63029dd4b9a2de5c86f81cd1abaf80ba72c1550"
+        }
+      ]
+    },
+    "van": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "fd19bf91856f200c8c09c72fcca34cbdb611c2dd7d06499058c803f9d3502e57",
+      "intro": "Delivery parcels, mobile workshops and family boarding scenes give these vans different uses. Recognizable families are named where supported; custom interiors and cutaway concepts remain distinct from verified factory configurations.",
+      "checkedAt": "2026-10-31T09:37:00.141Z",
+      "evidence": [
+        {
+          "id": "van-001",
+          "imageSha256": "f395010434991e2076e49f2a799158e7b8188a7147354b50351f3289c2e6cbcd"
+        },
+        {
+          "id": "van-041",
+          "imageSha256": "8e205fd6b44783ad20c68b2de130a4a8d8ec336e75767d38bc899c89e6bced23"
+        }
+      ]
+    },
+    "vegetables": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "1a88bd9257ac104cc03b18e2a0a84bb46d5c3fe9b8b0924516f7c81e7be3f14d",
+      "intro": "Whole vegetables, cut faces, roots and young plants show different edible forms. Cauliflower sections, radish slices and Brussels-sprout stalks add specific textures beside colored specimens and separate ink compositions.",
+      "checkedAt": "2026-10-31T09:37:00.141Z",
+      "evidence": [
+        {
+          "id": "vegetables-001-rainbow-carrot-fan",
+          "imageSha256": "ba3bc4860f9103c37628f2a8f62e6ad2d3e8adb312aed86e9654851aef9f98af"
+        },
+        {
+          "id": "vegetables-041-napa-cabbage-spiral",
+          "imageSha256": "72088025baa4eec0282e91593b5b4a898dd92a08af414366dd0cb9021325917f"
+        }
+      ]
+    },
+    "violin": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "4fd750f5ab00bef8461f3119efc8b0f413b0d462f0ca9141b3a75927a5c0d4a4",
+      "intro": "Instrument views, flowers and bowing gestures sit beside repair-bench scenes. Pegs, strings, body outlines and props distinguish the drawings without assigning an unverified maker or model.",
+      "checkedAt": "2026-10-31T09:37:00.142Z",
+      "evidence": [
+        {
+          "id": "violin-001",
+          "imageSha256": "ed0bed830542d460cb34523e28c2215b63756d1e003ad05e72ce50f2809bbc30"
+        },
+        {
+          "id": "violin-041",
+          "imageSha256": "b4b420a425ffadb5c0276beb06009e10eb5556376d0e5c3b1e48384e82fc1fe8"
+        }
+      ]
+    },
+    "vines": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "0176ddbda623bfd6237b13a52c5e923c7d7896e087f785cf39c1cc5e959f6ef4",
+      "intro": "Trailing stems, curling tendrils and branching leaves create different vine silhouettes. Flowering and autumn-colored treatments sit beside botanical outlines, with leaf and stem details described individually.",
+      "checkedAt": "2026-10-31T09:37:00.142Z",
+      "evidence": [
+        {
+          "id": "vines-001",
+          "imageSha256": "b49d3c86c4bb31e3ee9aee4febb7323e34866937669c95cd2b822af286406baa"
+        },
+        {
+          "id": "vines-041",
+          "imageSha256": "3ba81dccb1560087aa39ef5d11314395db23fcc26bc03a3493c767c3e56b2972"
+        }
+      ]
+    },
+    "volcano": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "1fae845534079dcdbcf338832aa0314f97357e154d5152d2c32cc12a2253527d",
+      "intro": "Crater lakes, lava channels and erupting peaks show several volcanic forms. Cutaways, terraced slopes and friendly characters add perspectives, with geological illustrations kept separate from fantasy treatments.",
+      "checkedAt": "2026-10-31T09:37:00.142Z",
+      "evidence": [
+        {
+          "id": "volcano-001",
+          "imageSha256": "5c85441533ba13bd77056d39a9ee3b777e412580f9e2e5106e159da126812ef2"
+        },
+        {
+          "id": "volcano-041",
+          "imageSha256": "fae927f16eee6a9ab94806c87e3231480a7f4c183c0bc734d2fab70bb6345497"
+        }
+      ]
+    },
+    "walmart": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "92b1000aa1a32c6ac164924a411eb28bb1d79628082f79fa331689e13070f347",
+      "intro": "Walmart-themed bags, baskets and store scenes use the spark and wordmark. Shoppers, gifts and car-loading scenes add contexts without claiming the imagined activity is an advertised Walmart service.",
+      "checkedAt": "2026-10-31T09:37:00.142Z",
+      "evidence": [
+        {
+          "id": "walmart-01-market-tote",
+          "imageSha256": "f4450fc9700b4383fc1d66d66aaf167251de4faae1f5e1e61eb2b25dbd35275a"
+        },
+        {
+          "id": "walmart-41-garment-rail",
+          "imageSha256": "c84a5d5d7d25c98b9d86cfc81f546ffbb3ba29674fcb1fe7b0943195bdacf99d"
+        }
+      ]
+    },
+    "water": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "836bd716866bf1cc0b86ca36ad84a9bad3898fd3acfb0f3b43fd6ea36ea96a98",
+      "intro": "Droplets, flowing channels and water-system diagrams cover different ways to picture water. Screw-pump cutaways, underground layers and water running over stone add movement and structure.",
+      "checkedAt": "2026-10-31T09:37:00.142Z",
+      "evidence": [
+        {
+          "id": "water-001",
+          "imageSha256": "5548187a4000c069882b28223565bb1b5d5eb75468dd7391bcf30aba8ed92a7f"
+        },
+        {
+          "id": "water-041",
+          "imageSha256": "b4b78e523c783d95b1f7915a6f4825a388c2df59b89bd1245b4a0bef3b63ff6c"
+        }
+      ]
+    },
+    "website": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "a0939ed84e309d2da0825dbad57a2c0e3db91098875180f18d9bf18f873a08df",
+      "intro": "Browser windows, page layouts and illustrated web objects explore website ideas. Donation graphics and code panels are visual concepts, with each drawing describing its own controls and content.",
+      "checkedAt": "2026-10-31T09:37:00.142Z",
+      "evidence": [
+        {
+          "id": "website-001",
+          "imageSha256": "a0b10b0ddbc5321fd71297f0a6f506e58c75a69093941c4ae16d89bb81880c8a"
+        },
+        {
+          "id": "website-041",
+          "imageSha256": "5b660ef8925e166160b7b0e38fe1d24e2127ffdd6c79a5590be17d1e3c9d5fb0"
+        }
+      ]
+    },
+    "whatsapp": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "5c9e9f19ddc9a901aee778f7768870e05fa1431e731ad752af2fde8e820a7a2d",
+      "intro": "Contact ribbons, catalogs and community scenes place the WhatsApp handset mark in illustrated objects. Signs, baskets and people add compositions without representing working accounts, actual messages or verified outcomes.",
+      "checkedAt": "2026-10-31T09:37:00.142Z",
+      "evidence": [
+        {
+          "id": "whatsapp-001",
+          "imageSha256": "393e807250b31c84718e9dfe7d5237add428f77d7b237cca42081f0fbca38584"
+        },
+        {
+          "id": "whatsapp-041",
+          "imageSha256": "312794f7229316923c91a3ed16b2dd65837d6140a7a07fc72839c894eb5818b3"
+        }
+      ]
+    },
+    "word": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "74a92f924596b4132481ab85e8ce7aff8dde94682a6ccc48130d634cbda82dff",
+      "intro": "Hello, Learn, Kind and other words appear in different materials and scenes. Books, chalk, balloons and character props give the lettering context, with separate outlined words among the ink designs.",
+      "checkedAt": "2026-10-31T09:37:00.142Z",
+      "evidence": [
+        {
+          "id": "word-rainbow-hello",
+          "imageSha256": "5af3ef5b525ca1804ae96438b13139b367f2c45605cf685e30a735a49b0c9ee1"
+        },
+        {
+          "id": "word-outline-hello",
+          "imageSha256": "1cdf69060601d3ae8c7f7c5c94fad87b36a52558ca01bb64b896b0a613f25170"
+        }
+      ]
+    },
+    "xbox": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "2bde311edeaac74af7528f9b28165c822fe3c779e6a487c56aa2440df817eacf",
+      "intro": "Xbox consoles and controllers sit beside players and gaming objects. Series X and Series S are named where visible features support them; illustrated accessories and connections are not technical product diagrams.",
+      "checkedAt": "2026-10-31T09:37:00.142Z",
+      "evidence": [
+        {
+          "id": "xbox-001",
+          "imageSha256": "bb4eb44c7abaf2904c962023a41158b3c4f95a99b59e361893de1f687a2e7d2f"
+        },
+        {
+          "id": "xbox-041",
+          "imageSha256": "915c96d6f90afcb91451466b34342e1ba812739a2c82b4b29f8c04411f60abd2"
+        }
+      ]
+    },
+    "yak": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "3b9c36ca8da4b915f7e29961780ffd0868ae1065ea69753678c158a14e9e4045",
+      "intro": "Shaggy coats, curved horns and resting or standing poses define these yaks. Parent-and-calf scenes, flowers and landscape details add variety through natural and character-based treatments.",
+      "checkedAt": "2026-10-31T09:37:00.142Z",
+      "evidence": [
+        {
+          "id": "yak-001",
+          "imageSha256": "fdf26ca7bb8951e53e08c31daf24ab2d531190f727378523b47cb4f4497fdab0"
+        },
+        {
+          "id": "yak-041",
+          "imageSha256": "4fa3ff3c87736b524704627ffa9592ad3570296386c7ce0a3e53dff58b6385e9"
+        }
+      ]
+    },
+    "yoga": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "c8c01d30d0ee90ab804da6e93860e1aba757cd0e15feef5c28507b5532a3cfc1",
+      "intro": "Standing lunges, seated positions and balancing figures show illustrated yoga poses. Different people, clothing and views distinguish the compositions; they are depictions for visual projects rather than exercise instructions.",
+      "checkedAt": "2026-10-31T09:37:00.142Z",
+      "evidence": [
+        {
+          "id": "yoga-001",
+          "imageSha256": "fef2763112292bd1f49134df891fdd202cf4fa893ae489f6bbb05dbf82ec0730"
+        },
+        {
+          "id": "yoga-041",
+          "imageSha256": "1ba4b3d2ec1e8d9a0c3d8a767e6e1c9867e804428da57d57660d4854b79f4638"
+        }
+      ]
+    },
+    "yogurt": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "3cc9a2b81299c9b4ba9d229e4adeae22a9202a235987367f5f4cacb341c2a4c0",
+      "intro": "Bowls, pots and layered snacks show yogurt with different toppings. Fruit, oats, coconut shells and serving scenes add textures, while characters and packaging provide less literal treatments.",
+      "checkedAt": "2026-10-31T09:37:00.143Z",
+      "evidence": [
+        {
+          "id": "yogurt-001",
+          "imageSha256": "993c1b9806aa37ab6b7751ba070dd15416cce5d897d0538eb7895767fa4b7fc7"
+        },
+        {
+          "id": "yogurt-041",
+          "imageSha256": "6fb74914cb470500dcdfd169218f2d930d2cb725c12d00fdbf9e1bf17326c8eb"
+        }
+      ]
+    },
+    "yoyo": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "d179c9dd99056b56a680d4804cf1e63df3849c745975c41971a30bf3992e5195",
+      "intro": "Yo-yos vary from reflective metal to koi patterns and smiling characters. Strings, stands and hand-held views distinguish the objects, with clear ink drawings among the colored designs.",
+      "checkedAt": "2026-10-31T09:37:00.143Z",
+      "evidence": [
+        {
+          "id": "yoyo-001",
+          "imageSha256": "297ca9dec25397fb19e9d00290aa3aa0c194652ef808aaf7ea1bb4dded7f7f12"
+        },
+        {
+          "id": "yoyo-041",
+          "imageSha256": "9744fb7f646d8e3124461dcd04eaa290c9da487795b925174eeb826b5f4d3054"
+        }
+      ]
+    },
+    "zero": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "66c1a5a7562fd7f5034c7f20ca5aa6cfe0e54bf6d3abe29925f2ca8bcc8cca15",
+      "intro": "Zero appears on calculators, empty objects and decorative signs. Different materials and scenes make the idea of none visible, with clear numeral forms alongside outline drawings.",
+      "checkedAt": "2026-10-31T09:37:00.143Z",
+      "evidence": [
+        {
+          "id": "zero-001",
+          "imageSha256": "0bf295d4402e78d1516b4457a36537de7aaccfd797ab171abccb82a7322d87a4"
+        },
+        {
+          "id": "zero-041",
+          "imageSha256": "3b6a6eb79a5fd1d2a60f0128f64649536293180f2e8bfbbcd31b27eaf0ed2595"
+        }
+      ]
+    },
+    "zipline": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "adb51ac1cc6c68b10c41a01708b1f91cecb3c877b49e8b15e99c2b19d0b9739d",
+      "intro": "Riders, instructors and cable equipment show parts of a zipline scene. Helmets, harnesses and pulley arrangements distinguish the drawings, including adaptive riders; these are not equipment or safety instructions.",
+      "checkedAt": "2026-10-31T09:37:00.143Z",
+      "evidence": [
+        {
+          "id": "zipline-001",
+          "imageSha256": "6f00e257afa578e74f849c072fc48b706a371c1bbab44d9753c43a983db5780a"
+        },
+        {
+          "id": "zipline-041",
+          "imageSha256": "7a1c44f8738e3c8aa975c7a3dfca174bb843e349850f350635a32f1f0997a86c"
+        }
+      ]
+    },
+    "zipper": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "476b5c298fed292821f3b99a49cbf0cb8d08e7a89671074b6213a4c4924fc320",
+      "intro": "Open teeth, joined fabric and curved zipper paths show the fastening mechanism. Bags, garments and decorative motifs add context beside close object views and distinct ink drawings.",
+      "checkedAt": "2026-10-31T09:37:00.143Z",
+      "evidence": [
+        {
+          "id": "zipper-001",
+          "imageSha256": "1f6ca99990c57204ccba13801233f760c15f2ce21b12e20ee760fb6493ff308a"
+        },
+        {
+          "id": "zipper-041",
+          "imageSha256": "847ad752cf02662d9c5d476e0d24b13843c01e2ee927fd9ba085b5279938268b"
+        }
+      ]
+    },
+    "zucchini": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "68779b7b543a5a745e59dc385ce4aad3f2550dc760a63a1a7c3a0b931d8a87ba",
+      "intro": "Whole vegetables, seed cavities, ribbons and prepared dishes show different views of zucchini. Graters, produce crates and seedlings add surrounding objects beside natural textures and outline treatments.",
+      "checkedAt": "2026-10-31T09:37:00.143Z",
+      "evidence": [
+        {
+          "id": "zucchini-001",
+          "imageSha256": "831b33a539d884e7686e27af561fe8ac5843a45811e632ccffa6b88966bf65b3"
+        },
+        {
+          "id": "zucchini-041",
+          "imageSha256": "f1e99e589b68a56a140c9bfa67c99beb4e413ae765dc5da354465431fc36fa78"
+        }
+      ]
+    },
+    "1x-neo": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "e3d85b255ca9b4ff5f1505b3849d9a8c4ff9afcc28acaf95abac8d2f2866752b",
+      "intro": "The fabric-covered 1X NEO appears in illustrated home activities, from carrying objects and sorting blocks to offering a book or opening a cupboard. These scenes do not document tested autonomy or real demonstrations.",
+      "checkedAt": "2026-10-31T09:37:00.143Z",
+      "evidence": [
+        {
+          "id": "neo-robot-with-a-hand-beside-its-head-clipart",
+          "imageSha256": "55765b9e87e2f074665727deeb04abc1e81b5803310671ea69a6a2b1b41b5182"
+        },
+        {
+          "id": "neo-robot-pressing-a-test-button-outline-clipart",
+          "imageSha256": "1b8b446b924d3a87f7000f65575cf39af0fa9c82b14cc12b6a7bcc001952cb04"
+        }
+      ]
+    },
+    "100-days-brighter": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "087e67296fc5e3045f213cdab005ef1a3c4aff90db7285239ecb55fbfbaca750",
+      "intro": "Light bulbs, cheerful school buildings and backpacks connect these designs to 100 Days Brighter. Lettering, characters and separate ink scenes provide different focal points for the school-day celebration.",
+      "checkedAt": "2026-10-31T09:37:00.143Z",
+      "evidence": [
+        {
+          "id": "smiling-sun-with-100-days-brighter-ribbon-clipart",
+          "imageSha256": "62a3ce334e8c573c06f5be8da354b6d413c7fc740ddd4fa9152b1326cb72043d"
+        },
+        {
+          "id": "sun-reading-in-a-brighter-hammock-outline-clipart",
+          "imageSha256": "6244cbd5cf9a9d21fdd595ef9807b90b6fb79565670467cfac13d9614349d300"
+        }
+      ]
+    },
+    "100-days-smarter": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "d2435f6c7952b4bd25cac1575571a4474a8da27192d0cc735b3bb262aacda6d6",
+      "intro": "A reading caterpillar, chess pieces and stationery give 100 Days Smarter different settings. Clear celebratory wording appears with school objects, character scenes and distinct line drawings.",
+      "checkedAt": "2026-10-31T09:37:00.143Z",
+      "evidence": [
+        {
+          "id": "owl-with-a-100-days-smarter-book-clipart",
+          "imageSha256": "61529317a9aff8d46f3bcf83843c3075d3d2de07208f0a7e0d95b54b42bb4364"
+        },
+        {
+          "id": "squirrel-reading-a-smarter-book-outline-clipart",
+          "imageSha256": "9bb4994a26ae32b6293f2b9b8047e4e6e9b74b5f734681c52f77137ca79c93b1"
+        }
+      ]
+    },
+    "100-days-of-school": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "59ad2388ba69c4ed2f559a99e4606aa6a63fdb4611939b3428278423f6d23c80",
+      "intro": "Backpacks, shoes, books and classroom characters frame 100 Days of School. Bright object groups and separate outlines offer different compositions while keeping the celebration message visible.",
+      "checkedAt": "2026-10-31T09:37:00.143Z",
+      "evidence": [
+        {
+          "id": "100-days-of-school-desktop-sign-clipart",
+          "imageSha256": "162f7d66e32fa6b3df65407fc0173f0b71b96ec8b611f543f6b9c867fff8a9d2"
+        },
+        {
+          "id": "schoolhouse-and-long-scroll-outline-clipart",
+          "imageSha256": "a924e979f21b4b57b3222950e9cdc904cd9a4b6a0e502f0cdb98ffed288fb5c5"
+        }
+      ]
+    },
+    "100th-day-of-school": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "676fd045a4d0b6caaed7a8a32a5c292b8378acd3eb7dd0390554dd7dbda819b6",
+      "intro": "Ordinal 100th lettering appears on backpacks, rainbows, paint palettes and classroom objects. These designs emphasize the hundredth school day through different layouts and distinct ink alternatives.",
+      "checkedAt": "2026-10-31T09:37:00.143Z",
+      "evidence": [
+        {
+          "id": "rainbow-rosette-for-the-100th-day-of-school-clipart",
+          "imageSha256": "7aa191606239e444e86656a082edb3c528124e0aa2f56dff3b234bde48731d6f"
+        },
+        {
+          "id": "pencil-rocket-with-100th-badge-outline-clipart",
+          "imageSha256": "b807f21bfd359935f4e4b7150599651561cc2d351552a6fbe1c0f9494aa69a53"
+        }
+      ]
+    },
+    "artemis": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "9c7f67b0546404728df4d2be215613b056b79183e7f203a66ba0a17f33b0a804",
+      "intro": "Artemis-themed drawings combine mission control, spacecraft recovery and astronaut equipment. Work scenes sit beside generic lunar concepts, with imagined hardware and destinations distinguished from verified mission configurations.",
+      "checkedAt": "2026-10-31T09:37:00.144Z",
+      "evidence": [
+        {
+          "id": "adult-and-child-building-an-artemis-rocket-model-clipart",
+          "imageSha256": "1887ed08bdf0e2ac7c6ba417bdca677281a490843cd23139a87c74f05dbdde5f"
+        },
+        {
+          "id": "space-mission-planning-at-a-console-outline-clipart",
+          "imageSha256": "9af2cc58266d8a406824707bf05096938ad06abf52f6414845d74768b80c24b0"
+        }
+      ]
+    },
+    "artemis-3": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "5b81a8de89e76450e3938b25441fedc21e13d3effdedabe1e7ecc1cf45abbad5",
+      "intro": "Training modules, technicians and orbital demonstration concepts anchor this Artemis III collection. Starship and Blue Moon-inspired test hardware appear beside generic equipment; lunar scenes are concepts, not a claim that Artemis III is a Moon-landing mission.",
+      "checkedAt": "2026-10-31T09:37:00.144Z",
+      "evidence": [
+        {
+          "id": "technician-beside-a-round-spacecraft-training-module-clipart",
+          "imageSha256": "44fe1fa2a43e19038db0b1d1715f2e48066de62bdfed93512d79d146de385e38"
+        },
+        {
+          "id": "training-module-access-practice-outline-clipart",
+          "imageSha256": "444ece561f5394cacb340d932a18e4a9d46ad373d68565579e31d705e4db83f7"
+        }
+      ]
+    },
+    "audi": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "8a41ec7bfe6ea1bb0bd19a8c7bef9bcc60a1e49ae9a6739d81b467a29fc1b351",
+      "intro": "Audi coupes, sedans, estates and SUVs appear from different angles. Lights, grilles and body forms support the named families, with classic vehicles and racing illustrations beside current-looking designs.",
+      "checkedAt": "2026-10-31T09:37:00.144Z",
+      "evidence": [
+        {
+          "id": "silver-first-generation-audi-r8-with-dark-side-blades-clipart",
+          "imageSha256": "a35ca14e95723d6291b0b00ccd56bdba05c0636a256da1d54ef4712194cdc2f9"
+        },
+        {
+          "id": "audi-a5-coupe-outline-from-the-front-corner-clipart",
+          "imageSha256": "dd7476a79638c9923316b7a04a48405bc006fc34be663d1e4411315d342b09f5"
+        }
+      ]
+    },
+    "bitcoin-cash": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "a9fb5b1838ddc546db8c1ef5dc6ae5c7f97ceca37ff9edb3561bbf2165e6bb7c",
+      "intro": "The left-leaning Bitcoin Cash mark appears on green illustrated tokens with different borders. Single emblems, stacks and small groups vary the view beside separate black-and-white compositions.",
+      "checkedAt": "2026-10-31T09:37:00.144Z",
+      "evidence": [
+        {
+          "id": "green-bitcoin-cash-token-with-a-silver-edge-clipart",
+          "imageSha256": "b51b88c33bf59d60275f6611bffa5e66d69f8a5916b2432be4bc5f4f3f12586d"
+        },
+        {
+          "id": "single-bitcoin-cash-token-outline-clipart",
+          "imageSha256": "6e49f32fc7ca9497de78eeba919f61042309a45dbbb664d35b21bd5dd37d8cef"
+        }
+      ]
+    },
+    "bitcoin": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "4059620f6817dc724609f55e529125a4050b8462a7eeefedb48df95e7c557b23",
+      "intro": "Orange Bitcoin symbols sit within silver, gold-colored and scalloped frames. Tilted disks, stacks and groups offer different arrangements as decorative representations of the digital currency.",
+      "checkedAt": "2026-10-31T09:37:00.144Z",
+      "evidence": [
+        {
+          "id": "orange-bitcoin-emblem-with-a-silver-rim-clipart",
+          "imageSha256": "7b7393a2ac173bda3fc1adc0b71413b97cd205af572c5ae86bf9768426728e37"
+        },
+        {
+          "id": "single-bitcoin-token-outline-clipart",
+          "imageSha256": "0a8e800e108fe6cfac7bb59a6e8fad1dc334431e630db1b6694691ea94fa70e7"
+        }
+      ]
+    },
+    "bmw": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "09abcc5c9551617645de2744521803da29a3a6531b6135ddf7bf8e4766e933bb",
+      "intro": "BMW families appear as coupes, sedans, estates, roadsters and racing illustrations. Front, rear and side views highlight body shapes and lighting, with generations named only where the drawing supports them.",
+      "checkedAt": "2026-10-31T09:37:00.144Z",
+      "evidence": [
+        {
+          "id": "blue-bmw-m3-e30-with-a-rear-spoiler-clipart",
+          "imageSha256": "e403062dcb7bf6ae12c2000899ed8ee0948783c77d56e0c321a79ca9fe6b8df8"
+        },
+        {
+          "id": "bmw-328-roadster-with-hood-straps-line-art-clipart",
+          "imageSha256": "bf9ec6806f67d409348d95d1014786908d1bdc44506c614ba90c5d443ead19eb"
+        }
+      ]
+    },
+    "bnb": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "b8e38f47cd836fb26e8ea848879af2bc0dac28aa00e84bbb0bb05653614f5654",
+      "intro": "The yellow geometric BNB Chain emblem appears on dark faces, shaped badges and metallic disks. Surrounding emblems, spinning views and grouped tokens vary the compositions beside ink designs.",
+      "checkedAt": "2026-10-31T09:37:00.144Z",
+      "evidence": [
+        {
+          "id": "bnb-chain-round-emblem-with-a-polished-rim-clipart",
+          "imageSha256": "3b11d96bf37cce99598ca92665cd290c66f0ed019696e4fcb13ce8ae3c392905"
+        },
+        {
+          "id": "bnb-chain-single-token-with-a-notched-rim-outline-clipart",
+          "imageSha256": "68495859b87e5261db9cb8ad55750faa3a8a0eea10c2dce4c837d89db8211357"
+        }
+      ]
+    },
+    "bugatti": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "fc2de7f124df610329c26f5fd10911cd6773a2146e3c5d08e0e63be71e1189d8",
+      "intro": "Horseshoe grilles and body forms connect these Bugatti road cars and racing illustrations. Recognizable Veyron, Chiron and other families sit beside vintage vehicles whose exact type is left open where inconclusive.",
+      "checkedAt": "2026-10-31T09:37:00.144Z",
+      "evidence": [
+        {
+          "id": "blue-and-black-bugatti-veyron-clipart",
+          "imageSha256": "c99f5d7dad4e8604e5add7ffaa49a810d572a6eb08eac567ab73f2f1626c3d93"
+        },
+        {
+          "id": "bugatti-veyron-grand-sport-side-outline-clipart",
+          "imageSha256": "420a8cb4efde631962b87567bee318d344106d15502913a516f9e0b862822dd4"
+        }
+      ]
+    },
+    "cardano": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "e265a74e99aa76005626c5d6eb2c5f0bf56c5dd2221805fd693b4beec58e0354",
+      "intro": "Cardano's radial dots appear on blue, silver and gold-colored medallions. Rope-like borders, scallops and raised dots distinguish emblems, while arcs, diamonds and stacks organize the groups.",
+      "checkedAt": "2026-10-31T09:37:00.144Z",
+      "evidence": [
+        {
+          "id": "silver-cardano-coin-with-a-ridged-edge-clipart",
+          "imageSha256": "d66a25e530393dd58c6802e21f48b09f80033d4b466930eba0f852ceaecb22c9"
+        },
+        {
+          "id": "cardano-coin-with-a-ridged-edge-outline-clipart",
+          "imageSha256": "05592113ab3e99ebd2f8adbdbe0bd814fb47fe98baea5569cf9c3f4d51dcb893"
+        }
+      ]
+    },
+    "chainlink": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "de0810f4a972a481da8214e539f2305a550252bbf35acb335d9f95a8352d5853",
+      "intro": "Chainlink's hexagonal mark appears on tokens with smooth, ridged and scalloped rims. Overlapping disks, upright fans and stacks change the layout beside separately outlined compositions.",
+      "checkedAt": "2026-10-31T09:37:00.145Z",
+      "evidence": [
+        {
+          "id": "chainlink-token-with-a-silver-edge-clipart",
+          "imageSha256": "2217634472ae33e803606f88491a0e7ba9d7a3f898bcf5e870bf1d90704efd47"
+        },
+        {
+          "id": "chainlink-single-token-outline-clipart",
+          "imageSha256": "a50ede0cb2abd1bcb6ec11f87ac1388c3c2127bf934812251637a9c183a0cdde"
+        }
+      ]
+    },
+    "dogecoin": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "109904dd55a810c8e1cfc0df4ef7276cbd849d38802b3fd6215004fdd4c1e6d8",
+      "intro": "Dogecoin-themed emblems combine the D mark with dog details and metallic token shapes. Badges, scattered groups and spinning views vary the framing, without unverified exact portrait identities.",
+      "checkedAt": "2026-10-31T09:37:00.145Z",
+      "evidence": [
+        {
+          "id": "dogecoin-round-emblem-with-a-polished-rim-clipart",
+          "imageSha256": "b1b1f01f4ceef7aa458bf3af2049117afe8ed14ff58752b765070e1a2f75c199"
+        },
+        {
+          "id": "dogecoin-single-token-with-a-notched-rim-outline-clipart",
+          "imageSha256": "466b556add037ca8ae68f6d7ba7e4929ce9df729608a08006b219f906f56c1ac"
+        }
+      ]
+    },
+    "ethereum": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "0533a2b32a26ec13855b506f91d3abf7657828beb100288a5211fd571266a60f",
+      "intro": "Ethereum's split diamond centers silver, gold-colored and dark-faced tokens. Rounded-square badges, tilted disks and groups of different sizes give the symbol distinct presentations.",
+      "checkedAt": "2026-10-31T09:37:00.145Z",
+      "evidence": [
+        {
+          "id": "silver-ethereum-token-with-a-black-diamond-clipart",
+          "imageSha256": "85e3306f301cf628ce26c5ad2ee4372b62f7dbd0ce8726b60041306aca6419d3"
+        },
+        {
+          "id": "ethereum-token-front-outline-clipart",
+          "imageSha256": "b5bbb8dc30e90ca33285708644b625b2b8276a6f62df266042ccb4b49db3eb3c"
+        }
+      ]
+    },
+    "ferrari": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "65ea0fff90c7b018e858f893b1d1b859c4d45d0c0b9852a5d0720a8e8954b4a2",
+      "intro": "Noses, intakes and roof shapes distinguish these Ferrari sports cars. Classic coupes, roadsters, current-looking families and racing prototypes are described individually, with imagined speedsters clearly labeled as concepts.",
+      "checkedAt": "2026-10-31T09:37:00.145Z",
+      "evidence": [
+        {
+          "id": "red-ferrari-f40-with-a-tall-rear-wing-clipart",
+          "imageSha256": "ee3af365f2d6d8394bf3a4af74f2657af96b6d8d53f0aae33f8d95df03e6b3d1"
+        },
+        {
+          "id": "ferrari-f40-side-profile-outline-clipart",
+          "imageSha256": "4e4ee3ae638308821504d8b78590a394cb5249ccd96ba56d7a9cdba2a6daf3cd"
+        }
+      ]
+    },
+    "fleur-de-lis": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "b96a9c2e73a04377e9ec03b4c51fd6099703c38d04b6918b222b750de4bdfada",
+      "intro": "Petals, roots, finials and decorative insets give these fleur-de-lis designs different structures. Purple blossoms, sunflower forms and bees connect some to plants; others emphasize curls and ink outlines.",
+      "checkedAt": "2026-10-31T09:37:00.145Z",
+      "evidence": [
+        {
+          "id": "ornate-gold-colored-fleur-de-lis-with-green-inset-clipart",
+          "imageSha256": "a03fa85c6e5536a531f610b5eff3b2fa33822278ed49bf7f83bc5571d2417337"
+        },
+        {
+          "id": "layered-petal-fleur-de-lis-outline-clipart",
+          "imageSha256": "beab9b74a9516f4c6c85313e1f4e685639707a10dfb6369aa120da0772b4a71b"
+        }
+      ]
+    },
+    "ford": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "9f5bdb277bf17bc7a5ad1b0be3f8ec9db3f3e0ae14c98e064aa6da54e98f379b",
+      "intro": "Mustangs, pickups, estate cars and passenger vans show different Ford vehicle families. Classic bodies, modern grilles and working roles distinguish the drawings, with broader names where an exact version is uncertain.",
+      "checkedAt": "2026-10-31T09:37:00.145Z",
+      "evidence": [
+        {
+          "id": "red-first-generation-ford-mustang-fastback-clipart",
+          "imageSha256": "212d8290cc932e854c1d4570db78116cd31f7cb005d89ab11409bbeecbf5c453"
+        },
+        {
+          "id": "ford-model-t-delivery-van-outline-clipart",
+          "imageSha256": "48f41ff0ca20351a25adfc332da7d8d9e8498e3fd3aac7a627316ab6ce20442b"
+        }
+      ]
+    },
+    "hyperliquid": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "03c1c29f40abd71b80b2b274079c0bfd6ca8e6e8285ecadd74e231450f8ccb4e",
+      "intro": "The turquoise Hyperliquid mark appears on metallic token illustrations and shaped badges. Angles, motion marks and differently sized groups vary the arrangement without implying issued physical coins.",
+      "checkedAt": "2026-10-31T09:37:00.145Z",
+      "evidence": [
+        {
+          "id": "hyperliquid-round-emblem-with-a-polished-rim-clipart",
+          "imageSha256": "6542685cbd01a64580b35f7aa01d6d017f26c6d40b5b71f19ade452d3b54dff2"
+        },
+        {
+          "id": "hyperliquid-single-token-with-a-notched-rim-outline-clipart",
+          "imageSha256": "573520820cb8079f08976f8814530bfb613bb4f518d74e840442a2e552057a46"
+        }
+      ]
+    },
+    "king-cake": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "b5e5f2cd29e81bfd280f5c73756be08c42f1821882113228e6ca233aaaed11a8",
+      "intro": "Spiral slices, icing and purple, green and gold-colored decoration distinguish these king cakes. Boxes, boards, trolleys and crowns add serving arrangements beside separate ink drawings.",
+      "checkedAt": "2026-10-31T09:37:00.145Z",
+      "evidence": [
+        {
+          "id": "sliced-king-cake-on-a-gold-rimmed-plate-clipart",
+          "imageSha256": "30e167568bfee125d51fce76e69fd1bafdfcfac0afc323e568742673bc6c8515"
+        },
+        {
+          "id": "king-cake-on-a-floral-stand-outline-clipart",
+          "imageSha256": "20ef7b2cb49f4d179f67f218a80eef725e067fa238461e68e42592cea5c923e6"
+        }
+      ]
+    },
+    "lamborghini": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "e17b82a3403678ea89bfb5b4ee8aa97e86afa9d1a2c4efa298397d8e745c784e",
+      "intro": "Lamborghini illustrations range from eyelash-headlight classics to sharply folded coupes and SUVs. Doors, scoops and rear views reveal different details; speculative roadsters and track designs retain concept labels.",
+      "checkedAt": "2026-10-31T09:37:00.146Z",
+      "evidence": [
+        {
+          "id": "orange-lamborghini-miura-with-eyelash-headlights-clipart",
+          "imageSha256": "80c83b9207326b59c7793fc85369659ca17b5269241d2777bd0ee315edfa7f25"
+        },
+        {
+          "id": "lamborghini-miura-rear-outline-clipart",
+          "imageSha256": "270c6a6d95a03630f12474efd058a99e87c240238b0aa8b6f859192376de41aa"
+        }
+      ]
+    },
+    "laundry-robot": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "e6c22b94fed6cbeb3a3d4eaa7293d9d1eea5a54963ebb751e3cc791f460d68f6",
+      "intro": "A fabric-covered NEO robot carries baskets, handles shirts and works around illustrated washing machines. Folding and sorting props vary the scenes; the actions do not prove tested laundry capabilities.",
+      "checkedAt": "2026-10-31T09:37:00.146Z",
+      "evidence": [
+        {
+          "id": "neo-robot-carrying-a-wicker-basket-clipart",
+          "imageSha256": "9cc81bda4157003417bd6e0e8beba216c50c86a73c3d24e18bc6ef023eb942f9"
+        },
+        {
+          "id": "neo-robot-putting-fabric-in-a-bin-outline-clipart",
+          "imageSha256": "7d34cb418eefabe0556357dcc83feca67b3beb2c1cc2ab8f06e91f7d314882b5"
+        }
+      ]
+    },
+    "lunar-lander": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "081d5e8ed54eb17cb075ba5e75ba3bbd2bcd263baed27cb6e476da052eb1adae",
+      "intro": "Landing legs, windows, antenna masts and solar panels distinguish these lander concepts. Low platforms, faceted cabins and twin-tank arrangements explore shapes without an unverified mission or manufacturer model.",
+      "checkedAt": "2026-10-31T09:37:00.146Z",
+      "evidence": [
+        {
+          "id": "lunar-lander-concept-with-an-ascending-cabin-clipart",
+          "imageSha256": "5a3a306a823968b9bf80e8f7fc118e1fb19a651a017d1bf73b74618412f47cda"
+        },
+        {
+          "id": "faceted-lunar-habitat-and-ladder-outline-clipart",
+          "imageSha256": "82daab229753ee2c2f159d72b6e40f69af09c3d4c68301c03308b0b1e06aad6b"
+        }
+      ]
+    },
+    "mardi-gras-beads": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "816eb6bb7d0ba8ee237665b69dfacd62c0f367694629a0e349fa00328cb6a5dd",
+      "intro": "Bead loops, faceted pendants and charms vary these Mardi Gras necklaces. Music notes, crowns and baskets of strands add objects beside purple-and-green accents and separate ink arrangements.",
+      "checkedAt": "2026-10-31T09:37:00.146Z",
+      "evidence": [
+        {
+          "id": "mardi-gras-necklace-with-a-purple-teardrop-clipart",
+          "imageSha256": "5094c1f5d2ed2b035e72cb429bbbea4d214038b7d7410d2afbed3466368b3c8b"
+        },
+        {
+          "id": "necklace-on-a-display-card-outline-clipart",
+          "imageSha256": "3f7be1312930158bdf0de8fc2c0c37a95c53f5e40cacc22c1cac3f05a0b10702"
+        }
+      ]
+    },
+    "mardi-gras-mask": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "50fe85c43cd24b0831cd40a3eced4aecda7c9abf2d1cac7fb6ef0e2e5129d373",
+      "intro": "Rosettes, plumes, filigree and bows give these carnival masks different silhouettes. Handheld forms sit beside pointed crowns and fleur-de-lis patterns, with distinct decorative outlines.",
+      "checkedAt": "2026-10-31T09:37:00.146Z",
+      "evidence": [
+        {
+          "id": "purple-mardi-gras-mask-with-a-rosette-clipart",
+          "imageSha256": "2232194029370b9717bfb590d100a4e56adb5521425fddaef785c7658d3e910a"
+        },
+        {
+          "id": "harlequin-mask-with-a-side-bow-outline-clipart",
+          "imageSha256": "3d3dcbb869da94be0a7782a3106019e5e9c6792467ecb1067bef42646a768f59"
+        }
+      ]
+    },
+    "mardi-gras": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "51e5f1fd2e9103da48f6c41b464db670c51dc92ae352cf9da343be91108f0db9",
+      "intro": "Crowns, scepters, instruments and carnival clothing form this Mardi Gras collection. Bunting, lanterns and children with musical props add scenes beyond a repeated mask or necklace.",
+      "checkedAt": "2026-10-31T09:37:00.146Z",
+      "evidence": [
+        {
+          "id": "mardi-gras-crown-and-crossed-scepters-clipart",
+          "imageSha256": "964d6729f7164a4f3fa32c82a7b427473c58c007a3cdf8d6e4684ea379331163"
+        },
+        {
+          "id": "crown-and-balloon-bouquet-outline-clipart",
+          "imageSha256": "25d1aa5e876d7d6ef580ccc155ecbc1b1d1c29d18498ec0362aa31767a449216"
+        }
+      ]
+    },
+    "mercedes-benz": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "619b617911e6d444dfbbec49f02abe4e1e79ed4b5b7dbefabe7a2fa162336f69",
+      "intro": "Gullwing doors, classic hoods and different sedan, roadster and SUV bodies distinguish these Mercedes-Benz drawings. Campers and working vehicles broaden the collection, with custom or experimental forms qualified separately.",
+      "checkedAt": "2026-10-31T09:37:00.146Z",
+      "evidence": [
+        {
+          "id": "silver-mercedes-benz-300-sl-w198-with-gullwing-doors-clipart",
+          "imageSha256": "9076fe1143b6f26586b0e58a8a44f3c66481e203259b02d1ea2649faf5c64bc7"
+        },
+        {
+          "id": "mercedes-benz-190-w201-sedan-coloring-drawing-clipart",
+          "imageSha256": "1575c93b6de0ae52d3e516accc2ae12121d4d36ec1d7bd287fdc153411b1bf56"
+        }
+      ]
+    },
+    "monero": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "32dc17ed15c08e73b14e3bfb6314a938f59d79f63febd7bdb8590c90b6d06639",
+      "intro": "Monero's contrasting M mark appears on orange-and-dark faces with varied metal-colored borders. Disks, shaped frames and curving groups offer different layouts beside separately composed ink versions.",
+      "checkedAt": "2026-10-31T09:37:00.146Z",
+      "evidence": [
+        {
+          "id": "monero-round-emblem-with-a-polished-rim-clipart",
+          "imageSha256": "a30d6b3dead8a71d77ac776b8bd5bbdcd6f998809733615938ac7635db144a22"
+        },
+        {
+          "id": "monero-single-token-with-a-notched-rim-outline-clipart",
+          "imageSha256": "e299105ea09820da9625f7faf286a1cf076d602627a7b0c19b56f033faa16fbd"
+        }
+      ]
+    },
+    "moon-mission": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "fb8efc9ed06c2e0a073182820fc42c6ed02d9a5a3e074ff7c9dc210637ad4379",
+      "intro": "Astronaut tasks, rock-handling tools and rover equipment give these Moon scenes specific activities. Desk models, robots and imagined habitat components add alternatives, with speculative hardware described as concepts.",
+      "checkedAt": "2026-10-31T09:37:00.146Z",
+      "evidence": [
+        {
+          "id": "astronaut-stepping-across-lunar-rocks-clipart",
+          "imageSha256": "2aba51393f2d531585982944d8dfa1480b18803f0980e17a3f189f298b0fb52d"
+        },
+        {
+          "id": "astronaut-adjusting-a-dish-antenna-outline-clipart",
+          "imageSha256": "b3c2c003e027aed6782510dbb347a6d297765ee0d395e744a19b1b1f6a0ee9fe"
+        }
+      ]
+    },
+    "near-protocol": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "5bc6ade9e21dfb43995b879243f2505ce3b182a5adb39e593b57e8eb8507b01d",
+      "intro": "The angular NEAR mark sits on bright faces framed by polished, notched or scalloped edges. Disks, shaped badges and curving groups vary the arrangement beside outlined alternatives.",
+      "checkedAt": "2026-10-31T09:37:00.146Z",
+      "evidence": [
+        {
+          "id": "near-protocol-round-emblem-with-a-polished-rim-clipart",
+          "imageSha256": "71479562f120aed529348dc1ef16197ecd21e81426871777a56c6c30a32d3e36"
+        },
+        {
+          "id": "near-protocol-single-token-with-a-notched-rim-outline-clipart",
+          "imageSha256": "3e2bcf701db3387219b46551b480578bb90d66dd005a2fb93e5b41174cd63d5c"
+        }
+      ]
+    },
+    "orion-spacecraft": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "bcd2113875392db17492b6b5f50af1caec47f674ffe920581c7dc413b567a917",
+      "intro": "Heat shields, access platforms, flotation tests and service-module concepts show spacecraft handling. Four-wing Orion-inspired designs are labeled as concepts; generic capsules avoid unsupported Orion model claims.",
+      "checkedAt": "2026-10-31T09:37:00.147Z",
+      "evidence": [
+        {
+          "id": "spacecraft-heat-shield-on-a-wheeled-stand-clipart",
+          "imageSha256": "0a7b0491dccbcbdd3d4417b403da8044ea87b3905846a69588a08dbb9be511fc"
+        },
+        {
+          "id": "capsule-and-separated-fairing-panels-outline-clipart",
+          "imageSha256": "0a2888dab3c8bb55726451cd87fec02408dfba50cb3042b614909f2922f7956b"
+        }
+      ]
+    },
+    "porsche": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "0213262b21d069d62669f99aa02b4539d8349c28df4f4e9be4a0e954269ed042",
+      "intro": "Classic bodies, transaxle coupes, roadsters and modern sports cars appear throughout these Porsche drawings. Different views emphasize details, with racing and off-road adaptations distinguished from exact factory versions.",
+      "checkedAt": "2026-10-31T09:37:00.147Z",
+      "evidence": [
+        {
+          "id": "red-porsche-911-with-round-headlights-clipart",
+          "imageSha256": "a1bb9eff605b6e68331832c0444cc830e4a4ce94e62a22873345d8e9681f9868"
+        },
+        {
+          "id": "porsche-356-coupe-outline-clipart",
+          "imageSha256": "ce35b18d94c7b889447121facb151d8cd05bee5d9b217944adf3cb4b28134790"
+        }
+      ]
+    },
+    "rocket-launch": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "cd7c8f5b80d5d4b81153063f81a6168f6acc4bdc7fd2632fda48c1f6445ca188",
+      "intro": "Pads, erecting rockets and distant spectators give these launches different scales and views. Display models, shorelines and wooden toys offer quieter alternatives to a full plume-and-launch scene.",
+      "checkedAt": "2026-10-31T09:37:00.147Z",
+      "evidence": [
+        {
+          "id": "rocket-releasing-two-side-boosters-clipart",
+          "imageSha256": "6f5acfc6636973603c0e0c00fe604e771fc5b928207a6bd7adcca146894370e0"
+        },
+        {
+          "id": "radio-dish-beside-a-rocket-launch-outline-clipart",
+          "imageSha256": "fcb29bcca898a7e2898c1b6c4f8d7b5d2f6141cd3b570a4c89c899a319f9d6c9"
+        }
+      ]
+    },
+    "solana": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "20d95fd8367186738d8f32e4ec076ab842015609cc7eb537fc8b75cef1659a9b",
+      "intro": "Solana's three slanted bars use turquoise-to-purple coloring within coin and badge illustrations. Dark faces, polished rims and groups of different sizes keep the symbol prominent beside ink compositions.",
+      "checkedAt": "2026-10-31T09:37:00.147Z",
+      "evidence": [
+        {
+          "id": "solana-round-emblem-with-a-polished-rim-clipart",
+          "imageSha256": "1a3b4f8421766f06eb93f5d314228538bd4870a26628e0a02d1de594b0d39735"
+        },
+        {
+          "id": "solana-single-token-with-a-notched-rim-outline-clipart",
+          "imageSha256": "ae3f7c70333eb8d3875995c1035ed7bbf42bb0f4018d7af1524d86abd65eef8b"
+        }
+      ]
+    },
+    "space-capsule": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "f19167ccd2919d25fa86bfb1ab9dac46f0bc35bbde47f0c391ad1bfa2e8cb15d",
+      "intro": "Airbags, lifting frames and recovery boats place these generic capsules in specific scenes. Docking displays, hatch activity and test tanks add details without claiming exact models or technical plans.",
+      "checkedAt": "2026-10-31T09:37:00.147Z",
+      "evidence": [
+        {
+          "id": "space-capsule-on-landing-airbags-clipart",
+          "imageSha256": "dacf864646795015b5716be0233c5e4ea00f734d9b393c696f10ba40b0297320"
+        },
+        {
+          "id": "capsule-on-airbags-with-an-equipment-case-outline-clipart",
+          "imageSha256": "71fee4aafcdfaf59c5fd504eded6c11b886b8f2447bb67add03f3f7e4be25cf4"
+        }
+      ]
+    },
+    "stellar": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "8c0e9f83a8f92013cfd72971466ab106728a9e4759c3b0951ca1622397c8d051",
+      "intro": "Stellar's slashed circular mark appears in gold-colored, silver and dark-framed tokens. Rows, descending groups and stacks vary the compositions beside front-and-back and outlined designs.",
+      "checkedAt": "2026-10-31T09:37:00.147Z",
+      "evidence": [
+        {
+          "id": "stellar-emblem-with-a-gold-inner-ring-clipart",
+          "imageSha256": "ff858b69b6a71bc4a0d96223b91ebec8863ac7646efa82a701afd047eeaab05d"
+        },
+        {
+          "id": "stellar-emblem-with-a-beaded-rim-outline-clipart",
+          "imageSha256": "acd29561ba2fca06bdb1f769699a4f79e683b1ed1b2a13f4f383ff2fcc55687d"
+        }
+      ]
+    },
+    "tether": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "535425742d2f07d8cd6191f3deb20b6754fb0a8887828e6413cf2a0ee4c40c57",
+      "intro": "Tether's T mark appears inside turquoise token illustrations with different rims. Spinning disks, stacks and upright emblems vary the layouts without representing physical currency products.",
+      "checkedAt": "2026-10-31T09:37:00.147Z",
+      "evidence": [
+        {
+          "id": "tether-round-emblem-with-a-polished-rim-clipart",
+          "imageSha256": "e7ce67c22208c57d0c43b3863ea19907938746767ee2212f408dd72fab9a0914"
+        },
+        {
+          "id": "tether-single-token-with-a-notched-rim-outline-clipart",
+          "imageSha256": "eecd182e4135b2914ab87f55ee6c2610b031f6c1e9e3fc58d8f4319b28d3e85e"
+        }
+      ]
+    },
+    "tron": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "2cbef57b1d3e3345b19a42592afa9efa86c1ebdd8fb62bca37d8664062340ecf",
+      "intro": "TRON's angular triangle is presented in red, dark and metal-colored token designs. Scalloped frames, square badges and overlapping groups provide different surroundings beside ink compositions.",
+      "checkedAt": "2026-10-31T09:37:00.147Z",
+      "evidence": [
+        {
+          "id": "tron-round-emblem-with-a-polished-rim-clipart",
+          "imageSha256": "911d07b0a2ec121889f50bcd470eaf1de50fa6ed4ed63cf5d14fb1ff740ae9ac"
+        },
+        {
+          "id": "tron-single-token-with-a-notched-rim-outline-clipart",
+          "imageSha256": "cd9e4e1f106a1f402cc74054007f11f28552c4e0a1d6a160a154557f4c0d6e73"
+        }
+      ]
+    },
+    "unus-sed-leo": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "034edabb6306bd26660043e3cb60acb122ba595c10441723dd5c496b67ba808a",
+      "intro": "The angular UNUS SED LEO lion stands out on dark token illustrations. Wavy gold-colored borders, mixed rims, separate trios and stacks distinguish the views and arrangements.",
+      "checkedAt": "2026-10-31T09:37:00.147Z",
+      "evidence": [
+        {
+          "id": "unus-sed-leo-token-with-a-silver-edge-clipart",
+          "imageSha256": "b263870bb0c9317ce99b35f7d2ec13769f6d53116b43cfe2e36c044d01926c71"
+        },
+        {
+          "id": "unus-sed-leo-single-token-outline-clipart",
+          "imageSha256": "fc2c150b3f886e148b683d09ff3fbcbabede6cc6d96f7f5946b04f0f22835b80"
+        }
+      ]
+    },
+    "usd-coin": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "0e591d93ca78d9e86b397c69b0233196ae54290d9e2a5fe69a64ff8b78b0e3b8",
+      "intro": "Blue USDC tokens display the dollar mark and circular side strokes in varied borders. Smooth disks, wavy rims, polygonal badges and stepped stacks appear beside outlined token groups.",
+      "checkedAt": "2026-10-31T09:37:00.147Z",
+      "evidence": [
+        {
+          "id": "blue-usdc-token-with-a-silver-rim-clipart",
+          "imageSha256": "b5cbdd90d36f84314522298651cb2b2bf8da70ffa76e5e545503fc4ca9d00d28"
+        },
+        {
+          "id": "single-usdc-token-outline-clipart",
+          "imageSha256": "76b395564e9c8793027ebb56385ddf28f1ade17a8bcb6763a7a5fab7864a3320"
+        }
+      ]
+    },
+    "usds": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "d2c3f99753c5ce9c720164343e8563e1a9a1595314df94d6facf5cbde10e14b9",
+      "intro": "The intertwined S motif appears on warm orange USDS tokens. Compact fans, wide groups, smooth rims and stacks vary the compositions beside independently arranged black-and-white drawings.",
+      "checkedAt": "2026-10-31T09:37:00.148Z",
+      "evidence": [
+        {
+          "id": "usds-token-with-a-silver-edge-clipart",
+          "imageSha256": "4912b36634243112efb0655fc6f9b248dac3c727f028fbef8877255ed463dc9b"
+        },
+        {
+          "id": "usds-single-token-outline-clipart",
+          "imageSha256": "94a1a3034ec1f7aed8cca941725f4afc5fbadef80eda708936c710d6e7fde370"
+        }
+      ]
+    },
+    "whitebit-coin": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "863c6f765d88be8c6e8033f36c160185b6875c6d792a0879cf48e6126efded1d",
+      "intro": "WhiteBIT Coin's angled W sits on dark faces with silver or gold-colored edges. Rope borders, square frames, groups and stacks distinguish the designs beside simplified ink compositions.",
+      "checkedAt": "2026-10-31T09:37:00.148Z",
+      "evidence": [
+        {
+          "id": "whitebit-coin-token-with-a-silver-edge-clipart",
+          "imageSha256": "d8a09ad92fe29acf663498a4b0adeaa8bb38f22305dea31f89a98e5b68dab771"
+        },
+        {
+          "id": "whitebit-coin-single-token-outline-clipart",
+          "imageSha256": "ffe83e18c90c246194e1efbbc54d56f6f02565a031b13da342f2af6e114e2db1"
+        }
+      ]
+    },
+    "xrp": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "fcf9b2db77e6f94538eac0b97733e7d5222910c883ee41b3ece33c1ae9325236",
+      "intro": "The curved XRP mark centers metallic disks, shaped badges and token groups. Polished rims, scallops and tilted views vary the treatments without identifying XRP artwork as a Ripple company logo.",
+      "checkedAt": "2026-10-31T09:37:00.148Z",
+      "evidence": [
+        {
+          "id": "xrp-round-emblem-with-a-polished-rim-clipart",
+          "imageSha256": "a7dece5bd6dd18802adb2031b727da29160d5f3f4af3d6ee8b60eca7fb65c021"
+        },
+        {
+          "id": "xrp-single-token-with-a-notched-rim-outline-clipart",
+          "imageSha256": "61b132c0d3e3cb609103527da76edc35d7b36d61b639300fda2806b3704a7631"
+        }
+      ]
+    },
+    "zcash": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "1870b88ec54af3aa8d954232698a4ec84ea9a7cca1c5c52fbf7dadcfcb9a06b6",
+      "intro": "Zcash's barred Z appears on yellow, silver and dark-rimmed token illustrations. Frames, surrounding emblems and coin groups vary the layouts beside separately outlined badges and stacks.",
+      "checkedAt": "2026-10-31T09:37:00.148Z",
+      "evidence": [
+        {
+          "id": "zcash-round-emblem-with-a-polished-rim-clipart",
+          "imageSha256": "c685799711d24bbdf1dc2f2779757d7345b74320c3b7f53a8b00ae6a663ce29e"
+        },
+        {
+          "id": "zcash-single-token-with-a-notched-rim-outline-clipart",
+          "imageSha256": "6dd7592bae8348daea368dd7acae3b4ad4e59df1e03b0b14e1d2a0175edd1514"
+        }
+      ]
+    }
+  }
+}

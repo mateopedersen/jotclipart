@@ -47,3 +47,59 @@ test('unknown models, changed images and invented production concepts fail close
     /First-generation Tesla Roadster/,
   );
 });
+
+test('a model downgrade cannot retain an unreviewed generation from a draft', () => {
+  const model = reviews['tesla-clipart-model-x-falcon-doors'];
+  assert.throws(
+    () => reviewedProductMetadata({ ...model, generation: 'Second generation' }),
+    /Generation needs its own source-bound review/,
+  );
+  assert.throws(
+    () => reviewedProductMetadata({ ...model, model: null, kind: 'product-family', generation: 'F90' }),
+    /Generation needs its own source-bound review/,
+  );
+});
+
+test('a partial chassis code is not evidence for a different generation', () => {
+  const model = reviews['tesla-clipart-model-x-falcon-doors'];
+  assert.throws(
+    () =>
+      reviewedProductMetadata({
+        ...model,
+        generation: 'E3',
+        subject: 'Vehicle E30',
+        caption: 'The E30 body is shown from the side.',
+        evidence: 'E30 body geometry and the visible lamps were compared.',
+      }),
+    /Generation needs its own source-bound review/,
+  );
+});
+
+test('explicit generation evidence is bound to the same pixels and manufacturer', () => {
+  const original = reviews['tesla-clipart-first-roadster-open-top'];
+  const record = {
+    ...original,
+    subject: 'Tesla Roadster with an Open Roof',
+    caption: 'A green Tesla Roadster with its two-seat cabin open.',
+    generationReview: {
+      generation: original.generation,
+      sourceSha256: original.sourceSha256,
+      reviewedFromPixels: true,
+      visibleFeatures: 'Compact original Roadster body, rounded headlamps and open two-seat cabin.',
+      reference: original.reference,
+      checkedAt: original.checkedAt,
+    },
+  };
+  assert.equal(reviewedProductMetadata(record).productIdentity.generation, 'First generation');
+  for (const patch of [
+    { sourceSha256: '0'.repeat(64) },
+    { generation: 'Second generation' },
+    { reviewedFromPixels: false },
+    { checkedAt: 'not a date' },
+    { reference: 'https://unverified.example/car' },
+  ])
+    assert.throws(
+      () => reviewedProductMetadata({ ...record, generationReview: { ...record.generationReview, ...patch } }),
+      /Generation review/,
+    );
+});

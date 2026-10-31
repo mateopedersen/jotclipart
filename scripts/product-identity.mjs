@@ -35,6 +35,39 @@ export function reviewedProductMetadata(record, { sourceSha256 } = {}) {
     throw new Error('Ambiguous or fictional illustrations cannot claim an exact production model');
   if (record.kind === 'recognized-product' && !record.model)
     throw new Error('Recognized products need the reviewed model name');
+  if (record.generation) {
+    const normalized = (value) =>
+      String(value ?? '').normalize('NFKC').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+    const generation = normalized(record.generation);
+    if (!generation) throw new Error('A generation needs an explicit reviewed designation');
+    const proof = record.generationReview;
+    if (proof) {
+      let primary;
+      try {
+        primary = new URL(proof.reference);
+      } catch {
+        throw new Error('Generation review needs a manufacturer reference');
+      }
+      if (
+        proof.reviewedFromPixels !== true ||
+        proof.sourceSha256 !== record.sourceSha256 ||
+        normalized(proof.generation) !== generation ||
+        typeof proof.visibleFeatures !== 'string' ||
+        proof.visibleFeatures.trim().length < 16 ||
+        !Number.isFinite(Date.parse(proof.checkedAt)) ||
+        primary.protocol !== 'https:' ||
+        !record.manufacturerDomains.some(
+          (domain) => primary.hostname === domain || primary.hostname.endsWith('.' + domain),
+        )
+      )
+        throw new Error('Generation review is missing, stale or outside the manufacturer source');
+    } else if (
+      ![record.subject, record.caption, record.evidence].every((value) =>
+        (' ' + normalized(value) + ' ').includes(' ' + generation + ' '),
+      )
+    )
+      throw new Error('Generation needs its own source-bound review; do not inherit a stale designation');
+  }
   if (
     record.kind === 'imagined-concept' &&
     !/concept|imagined/i.test(record.subject + ' ' + record.caption)

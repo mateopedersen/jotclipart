@@ -27,7 +27,9 @@ export function createSignedInventoryFetch({
             throw Object.assign(Error(`Bound inventory refused: ${response.status}`), {
               permanent: true,
             });
-          return response.json();
+          // A connection can close after headers, while the body is being read.
+          // Await here so the same bounded read-only retry covers that failure.
+          return await response.json();
         }
         await response.body?.cancel();
         last = Error(`Bound inventory unavailable: ${response.status}`);

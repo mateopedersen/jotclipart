@@ -58,6 +58,8 @@ export function validateIdentification({ artwork, sourceBytes, record }) {
       brand: record.brand,
       family: record.family ?? record.identity,
       model: record.model ?? null,
+      generation: record.generation ?? null,
+      generationReview: record.generationReview,
       kind:
         record.level === 'character-family'
           ? 'product-family'

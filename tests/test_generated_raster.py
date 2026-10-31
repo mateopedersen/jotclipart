@@ -97,6 +97,24 @@ class GeneratedRasterContract(unittest.TestCase):
     def test_rgb_relabelled_device_cmyk_is_rejected(self):
         _,image,_=self.fixture('RGB')
         with self.assertRaises(AssertionError):inspect_cmyk_image(image,31,27)
+    def test_embedded_output_intent_is_not_an_unprofiled_or_iccbased_image(self):
+        import hashlib
+        from pypdf.generic import DecodedStreamObject,DictionaryObject,NameObject,NumberObject
+        _,image,_=self.fixture()
+        raw=producer.PROFILE.read_bytes()
+        profile=DecodedStreamObject();profile.set_data(raw)
+        profile[NameObject('/N')]=NumberObject(4)
+        intent=DictionaryObject({NameObject('/DestOutputProfile'):profile})
+        info=inspect_cmyk_image(image,31,27,[intent])
+        self.assertEqual(info['colorSpace'],'Device CMYK')
+        self.assertEqual(info['iccBytes'],0)
+        self.assertTrue(info['outputIntentProfileEmbedded'])
+        self.assertEqual(info['outputIntentIccBytes'],len(raw))
+        self.assertEqual(info['outputIntentIccSha256'],hashlib.sha256(raw).hexdigest())
+        self.assertIn('embedded output intent',info['profile'])
+        self.assertEqual(profile.get_data(),raw)
+        profile[NameObject('/N')]=NumberObject(3)
+        with self.assertRaises(AssertionError):inspect_cmyk_image(image,31,27,[intent])
     def test_lossless_flate_cmyk_keeps_real_four_channel_samples(self):
         from pypdf.generic import DecodedStreamObject,NameObject,NumberObject
         raw=bytes([0,0,0,255,12,34,56,78])*6

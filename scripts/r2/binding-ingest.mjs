@@ -21,6 +21,9 @@ import { freshBindingReservation } from './binding-reservation.mjs';
 import { createSignedInventoryFetch } from '../delivery/inventory-fetch.mjs';
 import { createBoundInventoryReader, readOnlyRangeHints } from '../delivery/inventory-reader.mjs';
 import { acquireAccountWriter } from '../delivery/account-lock.mjs';
+import { verifyExistingFiles } from '../delivery/verification-batch.mjs';
+import { completeMediaWaveJournals } from './binding-waves.mjs';
+import { createReservationPrefetch } from './reservation-prefetch.mjs';
 import {
   deliveryActorCount,
   inventoryPageCount,
@@ -68,7 +71,7 @@ async function main() {
     // A resumed process independently reads every object again, including prior receipts.
     const done = new Map(),
       records = allFiles.map((record, index) => ({ record, proof: tree.proof(index) }));
-    const remaining = records;
+    let remaining = records;
     const secret = randomBytes(32).toString('hex');
     const inventoryBuckets = [];
     const sourceOrigin = process.env.UC_DELIVERY_SOURCE_ORIGIN ?? 'https://ultraclipart.com';
@@ -113,6 +116,15 @@ async function main() {
       failed = false,
       remoteReady = false,
       snapshot;
+    // The next census is only a read. Each actual write continues to require
+    // a complete, fresh, signed reservation; the pending-byte allowance also
+    // covers all (at most 16) in-flight sources when a census starts.
+    const prefetch = createReservationPrefetch({
+      refresh: () => reservation(true),
+      current: () => lease,
+      canPrefetch: () => remoteReady && !failed && cursor < remaining.length,
+      onError: () => console.log('Background inventory read failed; a fresh census will be required before writing.'),
+    });
     async function reservation(force = false) {
       if (!force && lease && Date.now() - lease.observedAt < 40_000) return lease;
       if (!leasePromise)
@@ -162,7 +174,9 @@ async function main() {
           );
           return lease;
         })().finally(() => (leasePromise = undefined));
-      return leasePromise;
+      const result = await leasePromise;
+      prefetch.schedule();
+      return result;
     }
     try {
       let bindings;
@@ -268,8 +282,31 @@ async function main() {
       }
       if (!ready) throw Error('Private remote staging session did not become ready');
       remoteReady = true;
-      // A slow REST census cannot authorize a write. Re-read the full live
-      // roster and every object through the bounded remote reader first.
+      // Read existing objects through the authenticated, read-only endpoint.
+      // Every body is independently hashed against this exact release root.
+      // A missing object is only queued here; this path can never write it.
+      const verificationStartedAt = new Date().toISOString();
+      remaining = await verifyExistingFiles(records, {
+        root: tree.root,
+        accountId,
+        bucket,
+        secret,
+        actors,
+        onVerified: (row) => {
+          assert(!done.has(row.path), 'Duplicate independently verified object');
+          appendFileSync(
+            journalPath,
+            JSON.stringify({ ...row, root: tree.root, at: new Date().toISOString(), transport: 'fresh-read-only-full-body-sha256' }) + '\n',
+          );
+          done.set(row.path, row);
+          completed++;
+        },
+      });
+      const initiallyMissing = new Set(remaining.map(({ record }) => record.path));
+      console.log(JSON.stringify({ readOnlyVerified: done.size, missingForFreshReservedWrite: remaining.length, total: allFiles.length }));
+      nextProgress = (Math.floor(completed / 200) + 1) * 200;
+      // Read-only verification cannot authorize a write. Re-read the complete
+      // account roster and current objects before issuing any staging lease.
       await reservation(true);
       console.log(
         `Private staging ready: ${remaining.length} remaining of ${allFiles.length}, root ${tree.root}`,
@@ -357,8 +394,7 @@ async function main() {
         }
         throw last;
       }
-      for (const wave of [...new Set(remaining.map((x) => x.record.wave))]) {
-        const waveStartedAt = new Date().toISOString();
+      for (const wave of [...new Set(records.map((x) => x.record.wave))]) {
         const end = remaining.findLastIndex((x) => x.record.wave === wave) + 1;
         const results = await Promise.allSettled(
           Array.from({ length: actors }, async () => {
@@ -375,51 +411,27 @@ async function main() {
         );
         const failure = results.find((r) => r.status === 'rejected');
         if (failure) throw failure.reason;
-        await reservation(true);
-        const group = remaining.filter((x) => x.record.wave === wave),
-          currentObjects = new Map(
-            snapshot.buckets
-              .find((b) => b.name === bucket && b.jurisdiction === 'default')
-              .objects.map((o) => [o.key, o]),
-          );
-        for (const { record } of group) {
-          assert(done.has(record.path));
-          assert.equal(
-            currentObjects.get(record.key)?.bytes,
-            record.bytes,
-            'Final current inventory omitted verified source',
-          );
-        }
-        const journal = {
-          schemaVersion: 2,
-          inventoryScope: lease.inventoryScope,
-          batchSha256: input.waves[wave - 1].batchSha256,
-          startedAt: waveStartedAt,
-          status: 'uploaded-and-byte-verified',
-          verifiedObjects: group.map(({ record }) => ({
-            jurisdiction: 'default',
-            bucket,
-            key: record.key,
-            sha256: record.sha256,
-            bytes: record.bytes,
-          })),
-          verifiedArtworkIds: [...new Set(group.map((x) => x.record.assetId))],
-          publishApproved: false,
-          completedAt: new Date().toISOString(),
-          aggregateBytes: lease.measuredBytes,
-          transport: 'private-r2-binding-merkle-signed-lease-independent-get-sha256',
-        };
-        writeFileSync(
-          join(work, `wave-${String(wave).padStart(2, '0')}.journal.json`),
-          JSON.stringify(journal, null, 2) + '\n',
-        );
-        console.log(JSON.stringify({ wave, verified: done.size, total: allFiles.length, pilot }));
+        console.log(JSON.stringify({ transferredWave: wave, verified: done.size, total: allFiles.length, pilot, finalInventoryPending: true }));
       }
       if (
         done.size !== allFiles.length ||
         allFiles.some((record) => done.get(record.path)?.sha256 !== record.sha256)
       )
         throw Error('Incomplete delivery verification');
+      // Every write already used a fresh signed capacity reservation and its
+      // own full-body readback. One fresh complete post-transfer census now
+      // confirms all waves before any final wave journal can be created.
+      // A speculative census may have started while writes were still in
+      // flight. Finish it and then measure again for final evidence.
+      await prefetch.stop();
+      await reservation(true);
+      const selectedWaves = input.waves.filter((wave) => records.some(({ record }) => record.wave === wave.number));
+      const journals = completeMediaWaveJournals({ records, waves: selectedWaves, done, snapshot, lease, missing: initiallyMissing, startedAt: verificationStartedAt, completedAt: new Date().toISOString() });
+      for (const [index, journal] of journals.entries()) {
+        const wave = selectedWaves[index].number;
+        writeFileSync(join(work, `wave-${String(wave).padStart(2, '0')}.journal.json`), JSON.stringify(journal, null, 2) + '\n');
+      }
+      console.log(JSON.stringify({ finalCompleteInventoryVerified: true, journaledWaves: journals.length, verified: done.size }));
       writeFileSync(
         manifestPath,
         JSON.stringify({
@@ -446,6 +458,7 @@ async function main() {
         }) + '\n',
       );
     } finally {
+      await prefetch.stop();
       if (child) {
         child.kill('SIGTERM');
         await Promise.race([new Promise((resolve) => child.once('exit', resolve)), wait(5000)]);

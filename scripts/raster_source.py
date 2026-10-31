@@ -49,6 +49,19 @@ def inspect_cmyk_image(image,width,height,output_intents=None):
         if output_intents:
             for ref in output_intents:
                 intent=ref.get_object()
+                output_profile=intent.get('/DestOutputProfile')
+                if output_profile:
+                    output_profile=output_profile.get_object()
+                    profile=output_profile.get_data()
+                    assert output_profile['/N']==4 and profile[16:20]==b'CMYK', 'CMYK output intent needs an actual four-channel ICC profile'
+                    description=ImageCms.getProfileDescription(ImageCms.ImageCmsProfile(io.BytesIO(profile))).strip()
+                    # DeviceCMYK samples remain DeviceCMYK. An embedded output
+                    # intent is different from an ICCBased image color space.
+                    base.update(profile=description+' (embedded output intent)',
+                                outputIntentProfileEmbedded=True,
+                                outputIntentIccBytes=len(profile),
+                                outputIntentIccSha256=hashlib.sha256(profile).hexdigest())
+                    break
                 if (intent.get('/OutputConditionIdentifier')=='CGATS TR 006'
                     and intent.get('/RegistryName')=='http://www.color.org'
                     and intent.get('/OutputCondition')=='GRACoL2006_Coated1v2'):

@@ -231,6 +231,36 @@ test('transient inventory failures reduce page size while 403 stops without retr
   assert.equal(forbidden, 1);
 });
 
+test('inventory retries a truncated successful response body without accepting partial contents', async () => {
+  const { createSignedInventoryFetch } = await import('../scripts/delivery/inventory-fetch.mjs');
+  const calls = [];
+  const read = createSignedInventoryFetch({
+    secret: 'a'.repeat(64),
+    wait: async () => {},
+    fetcher: async (_url, init) => {
+      calls.push(JSON.parse(init.body).command);
+      return calls.length === 1
+        ? { ok: true, status: 200, json: async () => { throw new TypeError('terminated'); } }
+        : Response.json({ IsTruncated: false, Contents: [{ Key: 'complete', Size: 12 }] });
+    },
+  });
+  const result = await read({ bucket: 'media', jurisdiction: 'default', cursor: 'unchanged-cursor' });
+  assert.deepEqual(calls.map((c) => c.limit), [1000, 500]);
+  assert(calls.every((c) => c.cursor === 'unchanged-cursor'));
+  assert.deepEqual(result.Contents, [{ Key: 'complete', Size: 12 }]);
+  let failures = 0;
+  const unavailable = createSignedInventoryFetch({
+    secret: 'a'.repeat(64),
+    wait: async () => {},
+    fetcher: async () => {
+      failures++;
+      return { ok: true, status: 200, json: async () => { throw new TypeError('terminated'); } };
+    },
+  });
+  await assert.rejects(unavailable({ bucket: 'media', jurisdiction: 'default' }), /terminated/);
+  assert.equal(failures, 3);
+});
+
 test('saved range partitions are account-bound hints and cannot substitute for a storage reservation', () => {
   const accountId = 'a'.repeat(32),
     hints = {

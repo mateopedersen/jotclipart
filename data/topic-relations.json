@@ -1,9 +1,39 @@
 {
   "10": [],
+  "11": [
+    "01",
+    "02",
+    "07",
+    "08",
+    "13",
+    "math"
+  ],
+  "13": [
+    "01",
+    "02",
+    "07",
+    "08",
+    "11",
+    "math"
+  ],
   "14": [
     "math",
     "school",
     "happy-birthday"
+  ],
+  "19": [
+    "20",
+    "25",
+    "30",
+    "50",
+    "math"
+  ],
+  "20": [
+    "19",
+    "25",
+    "30",
+    "50",
+    "math"
   ],
   "21": [
     "math",
@@ -15,10 +45,24 @@
     "school",
     "happy-birthday"
   ],
+  "25": [
+    "19",
+    "20",
+    "30",
+    "50",
+    "math"
+  ],
   "26": [
     "math",
     "school",
     "happy-birthday"
+  ],
+  "30": [
+    "19",
+    "20",
+    "25",
+    "50",
+    "math"
   ],
   "35": [
     "math",
@@ -35,28 +79,110 @@
     "school",
     "happy-birthday"
   ],
+  "50": [
+    "19",
+    "20",
+    "25",
+    "30",
+    "math"
+  ],
   "55": [
     "math",
     "school",
     "happy-birthday"
   ],
   "60": [],
+  "67": [
+    "70",
+    "75",
+    "80",
+    "85",
+    "88",
+    "95"
+  ],
+  "70": [
+    "67",
+    "75",
+    "80",
+    "85",
+    "88",
+    "95"
+  ],
   "72": [
     "math",
     "school",
     "happy-birthday"
+  ],
+  "75": [
+    "67",
+    "70",
+    "80",
+    "85",
+    "88",
+    "95"
+  ],
+  "80": [
+    "67",
+    "70",
+    "75",
+    "85",
+    "88",
+    "95"
+  ],
+  "85": [
+    "67",
+    "70",
+    "75",
+    "80",
+    "88",
+    "95"
+  ],
+  "88": [
+    "67",
+    "70",
+    "75",
+    "80",
+    "85",
+    "95"
+  ],
+  "95": [
+    "67",
+    "70",
+    "75",
+    "80",
+    "85",
+    "88"
   ],
   "97": [
     "math",
     "school",
     "happy-birthday"
   ],
+  "100": [
+    "zero",
+    "123",
+    "math",
+    "school"
+  ],
   "123": [
     "math",
     "school",
     "happy-birthday"
   ],
+  "300": [
+    "movie"
+  ],
   "911": [],
+  "2007": [
+    "2025",
+    "2027",
+    "calendar"
+  ],
+  "2025": [
+    "2007",
+    "2027",
+    "calendar"
+  ],
   "2027": [
     "countdown",
     "fireworks",
@@ -1965,5 +2091,680 @@
     "swordfish",
     "tuna",
     "mahi-mahi"
+  ],
+  "007": [
+    "movie",
+    "grand-theft-auto",
+    "camera"
+  ],
+  "01": [
+    "02",
+    "07",
+    "08",
+    "11",
+    "13",
+    "math"
+  ],
+  "02": [
+    "01",
+    "07",
+    "08",
+    "11",
+    "13",
+    "math"
+  ],
+  "07": [
+    "01",
+    "02",
+    "08",
+    "11",
+    "13",
+    "math"
+  ],
+  "08": [
+    "01",
+    "02",
+    "07",
+    "11",
+    "13",
+    "math"
+  ],
+  "2000s": [
+    "80s",
+    "90s"
+  ],
+  "3d": [
+    "draw",
+    "icon",
+    "shapes"
+  ],
+  "80s": [
+    "2000s",
+    "90s"
+  ],
+  "aesthetic": [
+    "rose",
+    "vines",
+    "mushroom",
+    "bow"
+  ],
+  "alligator": [
+    "crocodile",
+    "turtle",
+    "frog"
+  ],
+  "app": [
+    "website",
+    "email",
+    "call",
+    "smartphone"
+  ],
+  "august": [
+    "october",
+    "september",
+    "calendar"
+  ],
+  "baseball": [
+    "basketball",
+    "football",
+    "volleyball"
+  ],
+  "bow": [
+    "hat",
+    "shoe",
+    "jersey"
+  ],
+  "cake": [
+    "yogurt",
+    "egg",
+    "king-cake"
+  ],
+  "calendar": [
+    "august",
+    "october",
+    "september"
+  ],
+  "call": [
+    "facebook",
+    "instagram",
+    "whatsapp"
+  ],
+  "crown": [
+    "hat",
+    "fantasy-headwear",
+    "magic-spell"
+  ],
+  "dragon": [
+    "unicorn",
+    "magic-spell",
+    "fantasy-crafts"
+  ],
+  "draw": [
+    "pencil",
+    "font",
+    "word",
+    "line",
+    "icon"
+  ],
+  "egg": [
+    "yogurt",
+    "cake",
+    "king-cake"
+  ],
+  "email": [
+    "app",
+    "website",
+    "call",
+    "smartphone"
+  ],
+  "emoji": [
+    "heart",
+    "yes",
+    "no",
+    "hand"
+  ],
+  "facebook": [
+    "instagram",
+    "whatsapp",
+    "call"
+  ],
+  "font": [
+    "draw",
+    "pencil",
+    "word",
+    "line",
+    "icon"
+  ],
+  "generator": [],
+  "guitar": [
+    "violin",
+    "music",
+    "microphone"
+  ],
+  "hand": [
+    "nose",
+    "mouth",
+    "eyes"
+  ],
+  "how": [
+    "question-mark",
+    "school",
+    "sets"
+  ],
+  "icon": [
+    "draw",
+    "pencil",
+    "font",
+    "word",
+    "line"
+  ],
+  "instagram": [
+    "facebook",
+    "whatsapp",
+    "call"
+  ],
+  "jar": [
+    "kitchen",
+    "juice",
+    "vegetables"
+  ],
+  "jeans": [
+    "jersey",
+    "shoe",
+    "hat"
+  ],
+  "jersey": [
+    "football",
+    "basketball",
+    "baseball"
+  ],
+  "jumping": [
+    "exercise",
+    "yoga",
+    "zipline"
+  ],
+  "kitchen": [
+    "chef",
+    "microwave",
+    "jar"
+  ],
+  "ladybug": [
+    "bee",
+    "butterfly",
+    "grass"
+  ],
+  "line": [
+    "draw",
+    "pencil",
+    "font",
+    "word",
+    "icon"
+  ],
+  "location": [
+    "house",
+    "lighthouse",
+    "paris"
+  ],
+  "mountain": [
+    "volcano",
+    "rock",
+    "nature"
+  ],
+  "mushroom": [
+    "grass",
+    "vines",
+    "leaves"
+  ],
+  "no": [
+    "yes",
+    "quiet",
+    "hand"
+  ],
+  "nose": [
+    "hand",
+    "mouth",
+    "eyes"
+  ],
+  "nurse": [
+    "doctor",
+    "thermometer",
+    "brain"
+  ],
+  "october": [
+    "august",
+    "september",
+    "calendar"
+  ],
+  "pencil": [
+    "draw",
+    "font",
+    "word",
+    "line",
+    "icon"
+  ],
+  "presentation": [
+    "projector",
+    "teacher",
+    "draw"
+  ],
+  "quail": [
+    "chicken",
+    "duck",
+    "nest"
+  ],
+  "quarter": [
+    "money",
+    "bitcoin",
+    "math"
+  ],
+  "quilt": [
+    "yarn",
+    "family",
+    "bow"
+  ],
+  "rainbow": [
+    "cloud",
+    "sun"
+  ],
+  "rat": [
+    "squirrel",
+    "hedgehog",
+    "xerus"
+  ],
+  "rock": [
+    "mountain",
+    "volcano",
+    "nature"
+  ],
+  "sets": [
+    "math",
+    "shapes",
+    "school"
+  ],
+  "star": [
+    "moon",
+    "sun",
+    "space-capsule"
+  ],
+  "toilet": [
+    "house",
+    "kitchen",
+    "water"
+  ],
+  "usa": [
+    "american-flag",
+    "veterans",
+    "new-york"
+  ],
+  "van": [
+    "truck",
+    "train"
+  ],
+  "vegetables": [
+    "zucchini",
+    "kitchen"
+  ],
+  "violin": [
+    "guitar",
+    "music",
+    "microphone"
+  ],
+  "vines": [
+    "leaves",
+    "rose",
+    "grass"
+  ],
+  "volcano": [
+    "mountain",
+    "rock",
+    "nature"
+  ],
+  "walmart": [
+    "online-shopping",
+    "online-sale",
+    "black-friday"
+  ],
+  "water": [
+    "river",
+    "ocean",
+    "rainbow"
+  ],
+  "website": [
+    "app",
+    "email",
+    "call",
+    "smartphone"
+  ],
+  "whatsapp": [
+    "facebook",
+    "instagram",
+    "call"
+  ],
+  "word": [
+    "draw",
+    "pencil",
+    "font",
+    "line",
+    "icon"
+  ],
+  "xbox": [
+    "game-controller",
+    "game-console",
+    "gaming-trophy"
+  ],
+  "yak": [
+    "cow",
+    "goat",
+    "sheep"
+  ],
+  "yoga": [
+    "exercise",
+    "jumping",
+    "hand"
+  ],
+  "yogurt": [
+    "cake",
+    "egg",
+    "king-cake"
+  ],
+  "yoyo": [
+    "jumping",
+    "hand",
+    "school"
+  ],
+  "zero": [
+    "100",
+    "123",
+    "math",
+    "school"
+  ],
+  "zipline": [
+    "exercise",
+    "mountain",
+    "jumping"
+  ],
+  "zipper": [
+    "jeans",
+    "bow",
+    "shoe"
+  ],
+  "zucchini": [
+    "vegetables",
+    "kitchen"
+  ],
+  "1x-neo": [
+    "laundry-robot",
+    "robot",
+    "tesla-optimus",
+    "robot-hand"
+  ],
+  "100-days-brighter": [
+    "100-days-smarter",
+    "100-days-of-school",
+    "100th-day-of-school",
+    "school",
+    "teacher",
+    "math"
+  ],
+  "100-days-smarter": [
+    "100-days-brighter",
+    "100-days-of-school",
+    "100th-day-of-school",
+    "school",
+    "teacher",
+    "math"
+  ],
+  "100-days-of-school": [
+    "100-days-brighter",
+    "100-days-smarter",
+    "100th-day-of-school",
+    "school",
+    "teacher",
+    "math"
+  ],
+  "100th-day-of-school": [
+    "100-days-brighter",
+    "100-days-smarter",
+    "100-days-of-school",
+    "school",
+    "teacher",
+    "math"
+  ],
+  "artemis": [
+    "artemis-3",
+    "orion-spacecraft",
+    "lunar-lander",
+    "moon-mission",
+    "rocket-launch",
+    "space-capsule"
+  ],
+  "artemis-3": [
+    "artemis",
+    "orion-spacecraft",
+    "lunar-lander",
+    "moon-mission",
+    "rocket-launch",
+    "space-capsule"
+  ],
+  "audi": [
+    "bmw",
+    "mercedes-benz",
+    "porsche",
+    "ford"
+  ],
+  "bitcoin-cash": [
+    "bitcoin",
+    "dogecoin",
+    "money"
+  ],
+  "bitcoin": [
+    "monero",
+    "zcash"
+  ],
+  "bmw": [
+    "mercedes-benz",
+    "audi",
+    "porsche",
+    "ford"
+  ],
+  "bnb": [
+    "whitebit-coin",
+    "unus-sed-leo",
+    "money"
+  ],
+  "bugatti": [
+    "ferrari",
+    "lamborghini",
+    "porsche"
+  ],
+  "cardano": [
+    "ethereum",
+    "solana",
+    "near-protocol",
+    "tron"
+  ],
+  "chainlink": [
+    "hyperliquid",
+    "stellar",
+    "xrp"
+  ],
+  "dogecoin": [
+    "bitcoin",
+    "bitcoin-cash",
+    "money"
+  ],
+  "ethereum": [
+    "solana",
+    "cardano",
+    "near-protocol",
+    "tron"
+  ],
+  "ferrari": [
+    "lamborghini",
+    "bugatti",
+    "porsche"
+  ],
+  "fleur-de-lis": [
+    "mardi-gras",
+    "mardi-gras-mask",
+    "mardi-gras-beads",
+    "king-cake"
+  ],
+  "ford": [
+    "bmw",
+    "mercedes-benz",
+    "audi",
+    "porsche"
+  ],
+  "hyperliquid": [
+    "chainlink",
+    "stellar",
+    "xrp"
+  ],
+  "king-cake": [
+    "yogurt",
+    "cake",
+    "egg"
+  ],
+  "lamborghini": [
+    "ferrari",
+    "bugatti",
+    "porsche"
+  ],
+  "laundry-robot": [
+    "1x-neo",
+    "robot",
+    "tesla-optimus",
+    "robot-hand"
+  ],
+  "lunar-lander": [
+    "artemis",
+    "artemis-3",
+    "orion-spacecraft",
+    "moon-mission",
+    "rocket-launch",
+    "space-capsule"
+  ],
+  "mardi-gras-beads": [
+    "mardi-gras",
+    "mardi-gras-mask",
+    "fleur-de-lis",
+    "king-cake"
+  ],
+  "mardi-gras-mask": [
+    "mardi-gras",
+    "mardi-gras-beads",
+    "fleur-de-lis",
+    "king-cake"
+  ],
+  "mardi-gras": [
+    "mardi-gras-mask",
+    "mardi-gras-beads",
+    "fleur-de-lis",
+    "king-cake"
+  ],
+  "mercedes-benz": [
+    "bmw",
+    "audi",
+    "porsche",
+    "ford"
+  ],
+  "monero": [
+    "zcash",
+    "bitcoin"
+  ],
+  "moon-mission": [
+    "artemis",
+    "artemis-3",
+    "orion-spacecraft",
+    "lunar-lander",
+    "rocket-launch",
+    "space-capsule"
+  ],
+  "near-protocol": [
+    "ethereum",
+    "solana",
+    "cardano",
+    "tron"
+  ],
+  "orion-spacecraft": [
+    "artemis",
+    "artemis-3",
+    "lunar-lander",
+    "moon-mission",
+    "rocket-launch",
+    "space-capsule"
+  ],
+  "porsche": [
+    "ferrari",
+    "lamborghini",
+    "bugatti"
+  ],
+  "rocket-launch": [
+    "artemis",
+    "artemis-3",
+    "orion-spacecraft",
+    "lunar-lander",
+    "moon-mission",
+    "space-capsule"
+  ],
+  "solana": [
+    "ethereum",
+    "cardano",
+    "near-protocol",
+    "tron"
+  ],
+  "space-capsule": [
+    "artemis",
+    "artemis-3",
+    "orion-spacecraft",
+    "lunar-lander",
+    "moon-mission",
+    "rocket-launch"
+  ],
+  "stellar": [
+    "chainlink",
+    "hyperliquid",
+    "xrp"
+  ],
+  "tether": [
+    "usd-coin",
+    "usds",
+    "money"
+  ],
+  "tron": [
+    "ethereum",
+    "solana",
+    "cardano",
+    "near-protocol"
+  ],
+  "unus-sed-leo": [
+    "bnb",
+    "whitebit-coin",
+    "money"
+  ],
+  "usd-coin": [
+    "tether",
+    "usds",
+    "money"
+  ],
+  "usds": [
+    "tether",
+    "usd-coin",
+    "money"
+  ],
+  "whitebit-coin": [
+    "bnb",
+    "unus-sed-leo",
+    "money"
+  ],
+  "xrp": [
+    "chainlink",
+    "hyperliquid",
+    "stellar"
+  ],
+  "zcash": [
+    "monero",
+    "bitcoin"
   ]
 }

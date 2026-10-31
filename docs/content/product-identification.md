@@ -18,3 +18,17 @@ Only `recognized-product` may carry an exact model. The reviewed Tesla, iPhone
 and Samsung examples are in `scripts/remaining-product-identities.json`, each
 bound to its inspected source image checksum and official reference. The importer
 must reject a missing review or changed source image.
+
+## Generation evidence and downgrades
+
+A recognizable model does not establish its generation. When a comparison only
+supports a family, clear stale model and generation fields inherited from an
+earlier draft. A year range or a filename suffix is not a generation review.
+
+For a generation not already explicitly stated in the inspected subject, caption
+and visible evidence, provide `generationReview` with the exact `generation`,
+`sourceSha256`, `reviewedFromPixels: true`, concrete `visibleFeatures`, the official
+manufacturer `reference`, and `checkedAt`. A changed image invalidates that proof.
+The shared product resolver rejects an unsupported inherited designation;
+`validateIdentification` forwards the same evidence. Do not fill the evidence
+automatically from a model string or filename.
