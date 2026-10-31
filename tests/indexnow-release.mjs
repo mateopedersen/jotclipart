@@ -29,6 +29,15 @@ test('wrong canonical deployment, rendered revision and delivery root block noti
   for(const changed of [{...release,controlRevision:'c'.repeat(40)},{...release,verifiedRoot:'d'.repeat(64)}])assert.throws(()=>assertProduction(project,changed,manifest,revision,html));
   assert.throws(()=>assertProduction({...project,canonical_deployment:{...project.canonical_deployment,environment:'preview'}},release,manifest,revision,html));
 });
+test('notification accepts only the explicitly verified separate renderer and control revisions',()=>{
+  const control='c'.repeat(40);
+  const project={canonical_deployment:{id:'control-deployment',environment:'production',latest_stage:{status:'success'},deployment_trigger:{metadata:{commit_hash:control}}}};
+  const release={renderedRevision:revision,controlRevision:control,verifiedRoot:root},manifest={status:'remote-byte-verified',revision,root},html=`name="build-revision" content="${revision}"`;
+  assert.equal(assertProduction(project,release,manifest,revision,html,control),'control-deployment');
+  assert.throws(()=>assertProduction(project,release,manifest,revision,html));
+  assert.throws(()=>assertProduction(project,{...release,controlRevision:revision},manifest,revision,html,control));
+  assert.throws(()=>assertProduction(project,release,manifest,revision,html,'invalid'));
+});
 test('accepted batches survive later failure and cannot be replayed on retry',async()=>{
   const current=Object.fromEntries(Array.from({length:10001},(_,i)=>[`https://ultraclipart.com/art/item-${i}/`,'hash']));let calls=0,saved={};
   await assert.rejects(sendChanges({previous:{},current,config:{host:'ultraclipart.com',key:'a'.repeat(32)},request:async()=>({status:++calls===1?200:429}),save:async s=>{saved=s},wait:async()=>{}}),/429/);

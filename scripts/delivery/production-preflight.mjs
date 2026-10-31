@@ -18,13 +18,14 @@ export function verifyProductionConfig(project) {
   };
 }
 
-export function verifyLiveBaseline(live, expected) {
-  if (!/^[a-f0-9]{40}$/.test(expected ?? '')) throw Error('Invalid expected live revision');
-  if (live?.renderedRevision !== expected || live?.controlRevision !== expected)
+export function verifyLiveBaseline(live, expected, expectedControl = expected) {
+  if (!/^[a-f0-9]{40}$/.test(expected ?? '') || !/^[a-f0-9]{40}$/.test(expectedControl ?? ''))
+    throw Error('Invalid expected live revision');
+  if (live?.renderedRevision !== expected || live?.controlRevision !== expectedControl)
     throw Error(
       'Production changed during preparation; reconcile the newer release before activation',
     );
-  return { liveBaselineVerified: expected };
+  return { liveBaselineVerified: expected, liveControlBaselineVerified: expectedControl };
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
@@ -70,7 +71,8 @@ if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1]
     if (!live.ok) throw Error(`Live release verification HTTP ${live.status}`);
     console.log(
       JSON.stringify(
-        verifyLiveBaseline(await live.json(), process.env.UC_DELIVERY_EXPECTED_LIVE_REVISION),
+        verifyLiveBaseline(await live.json(), process.env.UC_DELIVERY_EXPECTED_LIVE_REVISION,
+          process.env.UC_DELIVERY_EXPECTED_LIVE_CONTROL_REVISION ?? process.env.UC_DELIVERY_EXPECTED_LIVE_REVISION),
       ),
     );
   }

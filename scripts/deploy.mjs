@@ -55,9 +55,12 @@ try {
     ),
   );
   const expectedBaseline = priorProduction.liveDelivery?.renderedRevision;
-  if (!/^[a-f0-9]{40}$/.test(expectedBaseline ?? ''))
+  const expectedControlBaseline = priorProduction.liveDelivery?.controlRevision;
+  if (!/^[a-f0-9]{40}$/.test(expectedBaseline ?? '') ||
+      !/^[a-f0-9]{40}$/.test(expectedControlBaseline ?? ''))
     throw Error('Verified production baseline required');
   env.UC_DELIVERY_EXPECTED_LIVE_REVISION = expectedBaseline;
+  env.UC_DELIVERY_EXPECTED_LIVE_CONTROL_REVISION = expectedControlBaseline;
   run('scripts/delivery/production-preflight.mjs');
 
   const resumeArgs = process.argv.slice(2);

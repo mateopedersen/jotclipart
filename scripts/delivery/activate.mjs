@@ -4,6 +4,24 @@ import { execFileSync } from 'node:child_process';
 import { build } from 'esbuild';
 import { assertOriginalImageDelivery } from './original-image-gate.mjs';
 import { copyVerifiedPrunedRelease, digest } from './manifest.mjs';
+import { shardStudioCatalog } from './studio-catalog-shard.mjs';
+
+/** Read the exact committed catalog without imposing a fixed catalog-size ceiling. */
+export function readCommittedCatalog(revision, run = execFileSync) {
+  if (!/^[a-f0-9]{40}$/.test(revision)) throw Error('Full source revision required');
+  const object = `${revision}:data/art.json`;
+  const raw = run('git', ['cat-file', '-s', object], { encoding: 'utf8', maxBuffer: 1024 }).trim();
+  if (!/^\d+$/.test(raw)) throw Error('Invalid committed catalog size');
+  const size = Number(raw);
+  if (!Number.isSafeInteger(size) || size < 2 || size > Number.MAX_SAFE_INTEGER - 65_536)
+    throw Error('Invalid committed catalog size');
+  const text = run('git', ['show', object], { encoding: 'utf8', maxBuffer: size + 65_536 });
+  if (Buffer.byteLength(text, 'utf8') !== size) throw Error('Committed catalog byte count differs');
+  const catalog = JSON.parse(text);
+  if (!Array.isArray(catalog)) throw Error('Committed catalog must be an array');
+  return catalog;
+}
+
 export async function prepareDeliveryRelease({
   source,
   target,
@@ -22,12 +40,7 @@ export async function prepareDeliveryRelease({
   const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
   if (manifest.incrementalPlan?.shadowOnly)
     throw Error('A shadow/test plan cannot become a production release');
-  const catalog = JSON.parse(
-    execFileSync('git', ['show', `${revision}:data/art.json`], {
-      encoding: 'utf8',
-      maxBuffer: 64_000_000,
-    }),
-  );
+  const catalog = readCommittedCatalog(revision);
   const ids = catalog
     .filter((a) => a.published && a.indexable)
     .map((a) => a.id)
@@ -44,6 +57,14 @@ export async function prepareDeliveryRelease({
   assertOriginalImageDelivery(source);
   // Keep the full checked build intact for rollback and whole-site audits.
   const removed = copyVerifiedPrunedRelease(source, target, manifest, revision);
+  return finalizeVerifiedDeliveryRelease({source, target, manifestPath, revision, controlRevision,
+    root, manifest, catalog, ids, removed});
+}
+
+// Only called after the source's complete verified manifest was checked, or
+// after a separately authenticated and fully compared prepared-target resume.
+export async function finalizeVerifiedDeliveryRelease({source, target, manifestPath, revision,
+    controlRevision, root = process.cwd(), manifest, catalog, ids, removed}) {
   const raw = readFileSync(join(target, '_headers'), 'utf8');
   const pairs = (block) =>
     Object.fromEntries([...block.matchAll(/^  ([\w-]+): (.+)$/gm)].map((m) => [m[1], m[2]]));
@@ -52,6 +73,9 @@ export async function prepareDeliveryRelease({
   if (!pageHeaders['Content-Security-Policy'] || !editorBlock)
     throw Error('Release security headers are incomplete');
   const editorHeaders = { ...pageHeaders, ...pairs(editorBlock) };
+  const studio = shardStudioCatalog(target, catalog
+    .filter((a) => a.published && a.indexable && a.sourceType === 'raster')
+    .map((a) => a.id));
   const withdrawnIds = JSON.parse(
     execFileSync('git', ['show', `${revision}:data/retired-artwork.json`], { encoding: 'utf8' }),
   ).artworkIds;
@@ -77,7 +101,7 @@ export async function prepareDeliveryRelease({
   const htmlRevisions = [...inherited].map(([version, members]) => [version, [...members].sort()]);
   const options = { revision, ids, withdrawnIds, pageHeaders, editorHeaders, htmlRevisions,
     ...(manifest.incrementalPlan ? { relatedVersion: manifest.incrementalPlan.relatedVersion } : {}) };
-  const entry = `import original from ${JSON.stringify(join(source, '_worker.js'))};import {fetchAssetWithRetry} from './server/delivery/asset-retry.mjs';import {createPublicFileHandler} from './server/delivery/public-files.mjs';import {compressHtml} from './server/delivery/compress-html.mjs';const delivery=createPublicFileHandler(${JSON.stringify(options)});export default {async fetch(request,env,context){const fallback={fetch:q=>original.fetch(q,{...env,ASSETS:{fetch:r=>fetchAssetWithRetry(r,env.ASSETS)}},context)};return compressHtml(request,await delivery(request,env,context,fallback));}};`;
+  const entry = `import original from ${JSON.stringify(join(source, '_worker.js'))};import {fetchAssetWithRetry} from './server/delivery/asset-retry.mjs';import {createPublicFileHandler} from './server/delivery/public-files.mjs';import {createStudioCatalogHandler} from './server/delivery/studio-catalog.mjs';import {compressHtml} from './server/delivery/compress-html.mjs';const delivery=createPublicFileHandler(${JSON.stringify(options)});const studio=${studio ? `createStudioCatalogHandler(${JSON.stringify(studio)},${JSON.stringify(pageHeaders)})` : 'null'};export default {async fetch(request,env,context){if(studio){const result=await studio(request,env);if(result)return result;}const fallback={fetch:q=>original.fetch(q,{...env,ASSETS:{fetch:r=>fetchAssetWithRetry(r,env.ASSETS)}},context)};return compressHtml(request,await delivery(request,env,context,fallback));}};`;
   await build({
     stdin: { contents: entry, resolveDir: root, sourcefile: 'verified-delivery-release.mjs' },
     bundle: true,
@@ -104,6 +128,7 @@ export async function prepareDeliveryRelease({
     verifiedRoot: manifest.root,
     r2Files: removed,
     artworks: ids.length,
+    ...(studio ? { studioCatalog: studio } : {}),
     ...(manifest.incrementalPlan
       ? {
           renderMode: 'append-only-incremental',

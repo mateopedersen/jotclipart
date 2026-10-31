@@ -141,11 +141,17 @@ no patch.
 The final capacity gate rejects Pages assets above 25 MiB, a Worker above the
 current 64 MiB uncompressed limit, and a single Studio catalog above its 20 MiB
 operational growth budget. It warns by failing closed before 85,000 Pages files.
-The actual site currently has a roughly 14 MB Studio JSON; the next scale stage
-must shard that catalog and versioned search data. Moving current delivery files
-out of Pages does not complete the five-million-item database, incremental-build,
-search, sitemap, CPU, request-quota or traffic-cost work listed above. Never claim
-unlimited capacity or guaranteed unchanged speed.
+The checked publication step now splits an oversized legacy Studio JSON into
+content-addressed static parts no larger than 8 MiB. The Worker streams those
+exact bytes at the original `/studio-catalog.json` URL, preserving existing open
+tabs and the JSON contract; a missing part fails closed. Existing subject and ID
+shards continue to serve targeted lookups. Each real part remains subject to the
+25 MiB asset gate, and the 20 MiB gate for a single legacy file is unchanged.
+This protects the current publication format; loading the full legacy catalog
+still transfers all its metadata and is not a five-million-artwork architecture.
+Moving delivery files out of Pages does not complete the database, incremental
+build, search, sitemap, CPU, request-quota or traffic-cost work listed above.
+Never claim unlimited capacity or guaranteed unchanged speed.
 
 Latest owner direction: the final public catalog must restore original R2 image sources. The 7ff HTML is rollback material only; never activate it as the final migration after the original-image restoration has been approved. Use the later clean, completely audited renderer revision. A build whose HTML text/alt audit fails is not a release candidate, even if its targeted unit tests passed.
 

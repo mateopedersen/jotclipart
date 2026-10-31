@@ -106,13 +106,15 @@ export function changes(previous, current) {
   };
 }
 
-export function assertProduction(project, release, manifest, revision, html) {
+export function assertProduction(project, release, manifest, revision, html, controlRevision = revision) {
+  if (!/^[a-f0-9]{40}$/.test(revision ?? '') || !/^[a-f0-9]{40}$/.test(controlRevision ?? ''))
+    throw Error('Invalid rendered or control revision');
   const deployment = project?.canonical_deployment;
   if (
     !deployment ||
     deployment.environment !== 'production' ||
     deployment.latest_stage?.status !== 'success' ||
-    deployment.deployment_trigger?.metadata?.commit_hash !== revision
+    deployment.deployment_trigger?.metadata?.commit_hash !== controlRevision
   )
     throw Error('Cloudflare has not confirmed this exact canonical production deployment');
   if (
@@ -120,7 +122,7 @@ export function assertProduction(project, release, manifest, revision, html) {
     manifest.revision !== revision ||
     !/^[a-f0-9]{64}$/.test(manifest.root) ||
     release.renderedRevision !== revision ||
-    release.controlRevision !== revision ||
+    release.controlRevision !== controlRevision ||
     release.verifiedRoot !== manifest.root
   )
     throw Error('Production rendered/control revision or verified delivery root differs');
@@ -274,7 +276,7 @@ export function prepareIndexNowSnapshot({ root, target, revision, manifest }) {
   return { urls: Object.keys(fingerprints).length, revision };
 }
 
-export async function runIndexNow({ root, send = false, initialize = false, attempts = 1 }) {
+export async function runIndexNow({ root, send = false, initialize = false, attempts = 1, renderedRevision }) {
   const config = JSON.parse(readFileSync(join(root, 'config/indexnow.json'), 'utf8'));
   if (
     config.host !== 'ultraclipart.com' ||
@@ -283,10 +285,15 @@ export async function runIndexNow({ root, send = false, initialize = false, atte
     !/^[a-f0-9]{32}$/.test(config.accountId)
   )
     throw Error('Invalid site-scoped IndexNow configuration');
-  const revision = execFileSync('git', ['rev-parse', 'HEAD'], {
+  const controlRevision = execFileSync('git', ['rev-parse', 'HEAD'], {
     cwd: root,
     encoding: 'utf8',
   }).trim();
+  const revision = renderedRevision ?? controlRevision;
+  if (!/^[a-f0-9]{40}$/.test(revision) || !/^[a-f0-9]{40}$/.test(controlRevision))
+    throw Error('Invalid rendered or control revision');
+  if (revision !== controlRevision)
+    execFileSync('git', ['merge-base', '--is-ancestor', revision, controlRevision], { cwd:root });
   const manifest = JSON.parse(
     readFileSync(join(root, 'work/delivery', revision, 'verified-manifest.json'), 'utf8'),
   );
@@ -385,7 +392,8 @@ export async function runIndexNow({ root, send = false, initialize = false, atte
         const release = await receipt.json();
         if (
           release.workerSha256 !== prepared.workerSha256 ||
-          prepared.verifiedRoot !== manifest.root
+          prepared.verifiedRoot !== manifest.root || prepared.renderedRevision !== revision ||
+          prepared.controlRevision !== controlRevision
         )
           throw Error('Live release wrapper differs from the checked package');
         deploymentId = assertProduction(
@@ -394,6 +402,7 @@ export async function runIndexNow({ root, send = false, initialize = false, atte
           manifest,
           revision,
           await home.text(),
+          controlRevision,
         );
         break;
       } catch (error) {
@@ -414,7 +423,7 @@ export async function runIndexNow({ root, send = false, initialize = false, atte
         schema: 1,
         host: config.host,
         keySha256: sha(config.key),
-        revision,
+        revision, controlRevision,
         deploymentId,
         verifiedRoot: manifest.root,
         acceptedAt: new Date().toISOString(),
@@ -428,7 +437,7 @@ export async function runIndexNow({ root, send = false, initialize = false, atte
     const result = await sendChanges({ previous, current, config, save });
     const report = {
       status: 'INDEXNOW_RECEIVED_NOT_INDEXING_GUARANTEE',
-      revision,
+      revision, controlRevision,
       deploymentId,
       verifiedRoot: manifest.root,
       ...result,
@@ -444,6 +453,10 @@ export async function runIndexNow({ root, send = false, initialize = false, atte
 if (process.argv[1] && resolve(process.argv[1]) === resolve(import.meta.filename)) {
   const args = process.argv.slice(2);
   try {
+    const renderedIndex = args.indexOf('--rendered-revision');
+    if (renderedIndex !== -1 && (!/^[a-f0-9]{40}$/.test(args[renderedIndex + 1] ?? '') ||
+        args.lastIndexOf('--rendered-revision') !== renderedIndex))
+      throw Error('Invalid rendered revision argument');
     console.log(
       JSON.stringify(
         await runIndexNow({
@@ -451,6 +464,7 @@ if (process.argv[1] && resolve(process.argv[1]) === resolve(import.meta.filename
           send: args.includes('--send'),
           initialize: args.includes('--initialize'),
           attempts: args.includes('--wait') ? 12 : 1,
+          renderedRevision: renderedIndex === -1 ? undefined : args[renderedIndex + 1],
         }),
       ),
     );

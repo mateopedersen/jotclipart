@@ -3,15 +3,19 @@ import { mkdirSync, writeFileSync, renameSync } from 'node:fs';
 import { join } from 'node:path';
 
 /** Publication is already complete. Retry notification, never redeploy the site. */
-export function runIndexNowNotification({root,revision,env=process.env,spawn=spawnSync,save}) {
+export function runIndexNowNotification({root,revision,renderedRevision,env=process.env,spawn=spawnSync,save}) {
   let report;
   try {
     if (env.UC_INDEXNOW_NOTIFY === '0') {
       report={status:'PUBLISHED_NOTIFICATION_HELD',revision,checkedAt:new Date().toISOString(),reason:'Notification disabled explicitly for this publication; no sender was started.'};
     } else {
-    const result=spawn(process.execPath,['scripts/seo/indexnow-release.mjs','--send','--wait'],{cwd:root,env,encoding:'utf8',maxBuffer:1_000_000});
+    if (renderedRevision !== undefined && !/^[a-f0-9]{40}$/.test(renderedRevision))
+      throw Error('Invalid rendered revision');
+    const args=['scripts/seo/indexnow-release.mjs','--send','--wait'];
+    if (renderedRevision !== undefined) args.push('--rendered-revision',renderedRevision);
+    const result=spawn(process.execPath,args,{cwd:root,env,encoding:'utf8',maxBuffer:1_000_000});
     if (result.error || result.status!==0) {
-      report={status:'PUBLISHED_NOTIFICATION_PENDING',revision,checkedAt:new Date().toISOString(),reason:result.error?'Notification process unavailable':String(result.stderr??'').trim().slice(0,500),retry:'node scripts/seo/indexnow-release.mjs --send --wait'};
+      report={status:'PUBLISHED_NOTIFICATION_PENDING',revision,checkedAt:new Date().toISOString(),reason:result.error?'Notification process unavailable':String(result.stderr??'').trim().slice(0,500),retry:'node scripts/seo/indexnow-release.mjs --send --wait'+(renderedRevision?' --rendered-revision '+renderedRevision:'')};
     } else {
       const last=String(result.stdout).trim().split('\n').at(-1);
       report={status:'PUBLISHED_NOTIFICATION_COMPLETE',revision,result:JSON.parse(last)};

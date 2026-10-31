@@ -44,4 +44,8 @@ test('a concurrent content release or control hotfix cannot be overwritten by an
   ])
     assert.throws(() => verifyLiveBaseline(live, expected), /Production changed/);
   assert.throws(() => verifyLiveBaseline({}, 'unverified'), /Invalid expected/);
+  assert.equal(verifyLiveBaseline({ renderedRevision: expected, controlRevision: next }, expected, next)
+    .liveControlBaselineVerified, next);
+  assert.throws(() => verifyLiveBaseline({ renderedRevision: expected, controlRevision: expected }, expected, next), /Production changed/);
+  assert.throws(() => verifyLiveBaseline({}, expected, 'unverified'), /Invalid expected/);
 });

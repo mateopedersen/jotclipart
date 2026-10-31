@@ -21,3 +21,11 @@ test('explicit notification hold never starts a sender or alters the accepted le
   assert.equal(result.revision,'b'.repeat(40));
   assert.equal(result.retry,undefined);
 });
+test('separate rendered revision is passed to the verified sender and its retry',()=>{
+  let args;
+  const rendered='c'.repeat(40),control='d'.repeat(40);
+  const result=runIndexNowNotification({root:'/unused',revision:control,renderedRevision:rendered,env:{},
+    spawn:(_node,a)=>{args=a;return {status:1,stderr:'temporarily unavailable'}},save:()=>{}});
+  assert.deepEqual(args.slice(-2),['--rendered-revision',rendered]);
+  assert.match(result.retry,new RegExp('--rendered-revision '+rendered));
+});
