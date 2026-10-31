@@ -1,7 +1,7 @@
 import { chromium, webkit, expect } from '@playwright/test';
 import assert from 'node:assert/strict';
 import { mkdirSync, writeFileSync } from 'node:fs';
-import { bridgeLocalCdn } from '../helpers/local-cdn.mjs';
+import { bridgeLocalCdn, markLocalCdnTeardown } from '../helpers/local-cdn.mjs';
 const engine = process.env.UC_BROWSER || 'chromium',
   base = process.env.BASE_URL || 'http://127.0.0.1:4323',
   out = `reports/studio-compositions/${engine}`;
@@ -128,5 +128,6 @@ try {
   throw error;
 } finally {
   writeFileSync(`${out}/report.json`, JSON.stringify(report, null, 2));
+  markLocalCdnTeardown(page.context());
   await browser.close();
 }

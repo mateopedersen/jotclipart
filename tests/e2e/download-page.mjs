@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { chromium, firefox, webkit, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
-import { bridgeLocalCdn } from '../helpers/local-cdn.mjs';
+import { bridgeLocalCdn, markLocalCdnTeardown } from '../helpers/local-cdn.mjs';
 const engine = process.env.UC_BROWSER || 'chromium';
 const base = process.env.BASE_URL || 'http://127.0.0.1:4381';
 const catalog = JSON.parse(readFileSync('data/art.json'));
@@ -256,5 +256,6 @@ try {
   console.log(JSON.stringify(report));
 } finally {
   writeFileSync(`${output}/report.json`, JSON.stringify(report, null, 2));
+  markLocalCdnTeardown(context);
   await browser.close();
 }

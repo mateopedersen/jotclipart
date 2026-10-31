@@ -1,7 +1,11 @@
 import { chromium, webkit, expect } from '@playwright/test';
 import assert from 'node:assert/strict';
 import { mkdirSync, writeFileSync } from 'node:fs';
-import { bridgeLocalCdn } from '../helpers/local-cdn.mjs';
+import {
+  bridgeLocalCdn,
+  isExpectedLocalTeardownError,
+  markLocalCdnTeardown,
+} from '../helpers/local-cdn.mjs';
 const base = process.env.BASE_URL || 'http://127.0.0.1:4340';
 const out = 'reports/performance/editor-source-loading';
 mkdirSync(out, { recursive: true });
@@ -31,15 +35,19 @@ for (const [engine, implementation] of Object.entries({ chromium, webkit })) {
       });
       await page.route(source.url, async (route) => {
         originals++;
-        const response = await route.fetch();
-        await hold;
         try {
+          const response = await route.fetch();
+          await hold;
           await route.fulfill({
             response,
             headers: { ...response.headers(), 'access-control-allow-origin': new URL(base).origin },
           });
         } catch (error) {
-          if (!/already handled|has been closed/.test(String(error))) throw error;
+          if (
+            !isExpectedLocalTeardownError(context, error) &&
+            !/already handled|has been closed/.test(String(error))
+          )
+            throw error;
         }
       });
       if (missing)
@@ -89,6 +97,7 @@ for (const [engine, implementation] of Object.entries({ chromium, webkit })) {
         });
       } finally {
         release();
+        markLocalCdnTeardown(context);
         await context.close();
       }
       writeFileSync(out + '/report.json', JSON.stringify(rows, null, 2));

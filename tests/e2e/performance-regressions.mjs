@@ -1,7 +1,11 @@
 import { chromium, webkit, firefox, expect } from '@playwright/test';
 import assert from 'node:assert/strict';
 import { mkdirSync, writeFileSync } from 'node:fs';
-import { bridgeLocalCdn } from '../helpers/local-cdn.mjs';
+import {
+  bridgeLocalCdn,
+  isExpectedLocalTeardownError,
+  markLocalCdnTeardown,
+} from '../helpers/local-cdn.mjs';
 
 const base = process.env.BASE_URL || 'http://127.0.0.1:4326';
 if (!/^http:\/\/(127\.0\.0\.1|localhost)(:\d+)?$/.test(base)) throw Error('Local only');
@@ -30,7 +34,11 @@ for (const [engine, implementation] of Object.entries(engines)) {
       const consent = page.locator('[data-cookie-choice="necessary"]:visible').first();
       if (await consent.count()) await consent.click();
     };
-    const record = (check) => report.checks.push({ engine, width, check, passed: true });
+    const record = (check) => {
+      const entry = { engine, width, check, passed: true };
+      report.checks.push(entry);
+      console.log(JSON.stringify(entry));
+    };
     try {
       for (const route of [
         '/',
@@ -138,9 +146,13 @@ for (const [engine, implementation] of Object.entries(engines)) {
       record('Studio starts with six category choices, without full catalog or vector download');
       // Simulate a slow first subject load. Returning to categories must win.
       await page.route('**/studio-topics/*.json', async (route) => {
-        const response = await route.fetch();
-        await new Promise((resolve) => setTimeout(resolve, 400));
-        await route.fulfill({ response });
+        try {
+          const response = await route.fetch();
+          await new Promise((resolve) => setTimeout(resolve, 400));
+          await route.fulfill({ response });
+        } catch (error) {
+          if (!isExpectedLocalTeardownError(context, error)) throw error;
+        }
       });
       await page.locator('.wb-category-tile').first().click();
       await expect(page.locator('.uc-editor')).toHaveAttribute('data-library-browse', 'topics');
@@ -212,6 +224,7 @@ for (const [engine, implementation] of Object.entries(engines)) {
       report.failures.push({ engine, width, error: e.stack, pageErrors: errors });
       await page.screenshot({ path: `${out}/${engine}-${width}-failure.png` }).catch(() => {});
     } finally {
+      markLocalCdnTeardown(context);
       await context.close();
     }
     writeFileSync(`${out}/report.json`, JSON.stringify(report, null, 2));

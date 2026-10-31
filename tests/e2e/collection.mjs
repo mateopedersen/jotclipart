@@ -8,7 +8,7 @@ import { createHash } from 'node:crypto';
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { readEditorialCatalog } from '../helpers/editorial-catalog.mjs';
-import { bridgeLocalCdn } from '../helpers/local-cdn.mjs';
+import { bridgeLocalCdn, markLocalCdnTeardown } from '../helpers/local-cdn.mjs';
 
 const base = process.env.BASE_URL || 'http://127.0.0.1:4335';
 const engine = process.env.UC_BROWSER || 'chromium';
@@ -229,5 +229,6 @@ try {
 } finally {
   writeFileSync(resolve(out, 'report.json'), JSON.stringify(report, null, 2) + '\n');
   console.log(JSON.stringify({ ...report, downloads: report.downloads.length }));
+  markLocalCdnTeardown(context);
   await browser.close();
 }

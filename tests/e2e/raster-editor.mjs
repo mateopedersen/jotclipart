@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { chooseExportFormat } from '../helpers/export.mjs';
-import { bridgeLocalCdn } from '../helpers/local-cdn.mjs';
+import { bridgeLocalCdn, markLocalCdnTeardown } from '../helpers/local-cdn.mjs';
 import { originalRasterTargets, shardRasterTargets } from '../../scripts/ci-raster-shards.mjs';
 const base = process.env.BASE_URL || 'http://127.0.0.1:4335',
   engine = process.env.UC_BROWSER || 'chromium';
@@ -249,5 +249,6 @@ try {
 } finally {
   writeFileSync(resolve(out, 'report.json'), JSON.stringify(report, null, 2) + '\n');
   console.log(JSON.stringify({ ...report, exports: report.exports.length }));
+  markLocalCdnTeardown(context);
   await browser.close();
 }
