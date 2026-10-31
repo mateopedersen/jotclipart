@@ -14,11 +14,22 @@ function list(dir) {
 const pages = built ? list(dist).filter((path) => path.endsWith('.html')) : [];
 const attribute = (tag, name) => tag.match(new RegExp(`\\b${name}=(["'])(.*?)\\1`, 'i'))?.[2];
 const tags = (text, tag) =>
-  [...text.matchAll(new RegExp(`<${tag}\\b[^>]*>`, 'gi'))].map((match) => match[0]);
+  [...text.matchAll(new RegExp(`<${tag}\\b(?:"[^"]*"|'[^']*'|[^'">])*>`, 'gi'))].map(
+    (match) => match[0],
+  );
 const routeExists = (pathname) =>
   existsSync(join(dist, pathname)) ||
   existsSync(join(dist, pathname, 'index.html')) ||
   existsSync(join(dist, `${pathname}.html`));
+
+test('HTML tag checks retain greater-than characters inside quoted attributes', () => {
+  const html = `<img title='2 > 1' src="/example.webp" alt="A card showing 8>3" width="10" height="10">`;
+  const found = tags(html, 'img');
+  assert.equal(found.length, 1);
+  assert.equal(found[0], html);
+  assert.equal(attribute(found[0], 'alt'), 'A card showing 8>3');
+  assert.equal(attribute(found[0], 'width'), '10');
+});
 
 test(
   'every built page has English language, one H1 and consistent metadata',
