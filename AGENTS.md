@@ -497,6 +497,18 @@ transfer runs; 2027 keeps publication priority as soon as that transition is rea
 
 ## Delivery migration and shared publication ownership — 2026-10-27
 
+Latest owner override, 2026-11-02: the owner explicitly removed the local 10 TB
+quota and extra capacity allowance for this and all subsequent UltraClipart
+uploads. The earlier complete-account capacity census/45-second census admission
+gate below is superseded. Upload authorization instead binds the exact reviewed
+release, account, bucket, authorized source bytes and a 45-second signed request.
+Do not fabricate account occupancy or mark skipped image/PDF reviews approved.
+Keep single-writer locking, immutable source/Merkle proofs, conditional creation,
+independent SHA/MIME/size readback, content gates and atomic production activation.
+Provider technical limits and charges still apply. See
+`docs/delivery-storage-owner-unlimited.md`; no other project's code or credentials
+are changed by this instruction.
+
 The owner authorized the permanent delivery plan, coordination with the other
 UltraClipart chats, and explicitly approved temporarily disabling Cloudflare's
 automatic production deployments. Read `docs/catalog-scale.md` before publishing.

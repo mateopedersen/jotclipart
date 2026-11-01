@@ -132,9 +132,13 @@ export async function measureAccount({
   proveAbsent,
   now = Date.now,
   enumerationSource = 's3-list-buckets',
+  bucketConcurrency = 4,
+  onBucketMeasured,
 }) {
   if (!['s3-list-buckets', 'cloudflare-api-list-buckets'].includes(enumerationSource))
     throw new Error('Unknown bucket enumeration transport');
+  if (!Number.isInteger(bucketConcurrency) || bucketConcurrency < 1 || bucketConcurrency > 8)
+    throw new Error('Bounded bucket concurrency required');
   const { accountId } = parseEndpoint(endpoint);
   const observedAt = now();
   // Jurisdictions and separate buckets are independent reads. Keep pagination
@@ -229,10 +233,11 @@ export async function measureAccount({
   const buckets = new Array(roster.length);
   let cursor = 0;
   const bucketResults = await Promise.allSettled(
-    Array.from({ length: Math.min(4, roster.length) }, async () => {
+    Array.from({ length: Math.min(bucketConcurrency, roster.length) }, async () => {
       while (cursor < roster.length) {
         const index = cursor++,
           { name, jurisdiction, scopeEndpoint } = roster[index];
+        const bucketStartedAt = Date.now();
         const objects = [],
           seenTokens = new Set();
         let token;
@@ -256,32 +261,38 @@ export async function measureAccount({
           const entries = page.Contents ?? [];
           // Read-only hash checks are independent. Bound concurrency to four so
           // resumed waves fit the freshness window without a request burst.
-          for (let offset = 0; offset < entries.length; offset += 4) {
-            const measured = await Promise.allSettled(
-              entries.slice(offset, offset + 4).map(async (entry) => {
-                const object = { key: entry.Key, bytes: entry.Size };
-                if (
-                  batch.some(
-                    (candidate) =>
-                      jurisdictionOf(candidate) === jurisdiction &&
-                      candidate.bucket === name &&
-                      candidate.key === entry.Key,
+          if (batch.length === 0) {
+            // Capacity-only measurements do not need per-object HEAD requests.
+            // Preserve every entry while avoiding millions of empty promises.
+            for (const entry of entries) objects.push({ key: entry.Key, bytes: entry.Size });
+          } else {
+            for (let offset = 0; offset < entries.length; offset += 4) {
+              const measured = await Promise.allSettled(
+                entries.slice(offset, offset + 4).map(async (entry) => {
+                  const object = { key: entry.Key, bytes: entry.Size };
+                  if (
+                    batch.some(
+                      (candidate) =>
+                        jurisdictionOf(candidate) === jurisdiction &&
+                        candidate.bucket === name &&
+                        candidate.key === entry.Key,
+                    )
                   )
-                )
-                  object.sha256 = (
-                    await checkedHead(['--bucket', name, '--key', entry.Key], scopeEndpoint)
-                  ).Metadata?.sha256;
-                return object;
-              }),
-            );
-            const failedHash = measured.find((result) => result.status === 'rejected');
-            if (failedHash) throw failedHash.reason;
-            objects.push(
-              ...measured.map((result) => {
-                if (result.status === 'rejected') throw result.reason;
-                return result.value;
-              }),
-            );
+                    object.sha256 = (
+                      await checkedHead(['--bucket', name, '--key', entry.Key], scopeEndpoint)
+                    ).Metadata?.sha256;
+                  return object;
+                }),
+              );
+              const failedHash = measured.find((result) => result.status === 'rejected');
+              if (failedHash) throw failedHash.reason;
+              objects.push(
+                ...measured.map((result) => {
+                  if (result.status === 'rejected') throw result.reason;
+                  return result.value;
+                }),
+              );
+            }
           }
           token = page.IsTruncated ? page.NextContinuationToken : undefined;
           if (page.IsTruncated && (!token || typeof token !== 'string' || seenTokens.has(token)))
@@ -289,6 +300,12 @@ export async function measureAccount({
           if (token) seenTokens.add(token);
         } while (token);
         buckets[index] = { name, jurisdiction, complete: true, objects };
+        onBucketMeasured?.({
+          name,
+          jurisdiction,
+          objects: objects.length,
+          durationMs: Date.now() - bucketStartedAt,
+        });
       }
     }),
   );

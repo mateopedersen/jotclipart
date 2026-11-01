@@ -9,6 +9,8 @@ import {
   validatePublication,
 } from '../scripts/publication-policy.mjs';
 import { artwork, manifestFor, waveFor, date } from './fixtures/publication.mjs';
+import { releaseFixture } from './fixtures/publication-release.mjs';
+import { completeReleaseMediaWaveJournals } from '../scripts/r2/binding-waves.mjs';
 function environment(items, bodies, wave, overrides = {}) {
   const calls = [];
   return {
@@ -297,4 +299,116 @@ test('any invalid multi-wave receipt or duplicate artwork stops all CDN reads', 
     );
     assert.equal(calls, 0);
   }
+});
+
+test('release-scoped journals prepare a complete multi-wave catalog and verify actual CDN bytes', async () => {
+  const bodies = new Map(),
+    a = artwork('release-first', bodies),
+    b = artwork('release-second', bodies);
+  const f = releaseFixture([[a], [b]]),
+    journals = completeReleaseMediaWaveJournals(f);
+  const waves = f.waves.map((wave, i) => ({ ...wave, journal: journals[i] }));
+  const env = environment([a, b], bodies, { batch: waves.flatMap((wave) => wave.batch) });
+  const result = await preparePublicationWaves({ prior: null, ...env.options, waves });
+  assert.equal(result.files.length, 8);
+  assert.equal(env.calls.length, 8);
+  assert.equal(validatePublication(result, [a, b], (path) => bodies.get(path)).files, 8);
+});
+
+test('schema 3 fails before CDN on modified proof, scope, byte sums or fake account usage', async () => {
+  const variants = [
+    (waves) => (waves[0].journal.root = 'c'.repeat(64)),
+    (waves) => (waves[0].journal.revision = 'c'.repeat(40)),
+    (waves) => (waves[0].journal.accountId = 'c'.repeat(32)),
+    (waves) => waves[0].journal.authorizedBytes++,
+    (waves) => waves[0].journal.waveBytes++,
+    (waves) => (waves[0].journal.accountUsageMeasured = true),
+    (waves) => (waves[0].journal.aggregateBytes = 0),
+    (waves) => (waves[0].journal.inventoryScope = {}),
+    (waves) => (waves[0].journal.verifiedObjects[0].releaseProof[0].hash = 'c'.repeat(64)),
+    (waves) => waves[0].journal.verifiedObjects[0].releaseRecord.wave++,
+    (waves) => (waves[0].journal.verifiedObjects[0].releaseRecord.assetId = 'unrelated'),
+    (waves) => (waves[0].journal.verifiedObjects[0].bucket = 'other-bucket'),
+    (waves) => (waves[0].journal.verifiedObjects[0].jurisdiction = 'eu'),
+    (waves) => (waves[0].journal.verifiedArtworkIds = []),
+    (waves) => waves[0].journal.verifiedObjects.pop(),
+    (waves) => (waves[0].journal.publishApproved = true),
+    (waves) => waves.pop(),
+    (waves) => (waves[0].journal = waveFor([waves[0].item]).journal),
+  ];
+  for (const mutate of variants) {
+    const bodies = new Map(),
+      a = artwork('release-first', bodies),
+      b = artwork('release-second', bodies);
+    const f = releaseFixture([[a], [b]]),
+      journals = completeReleaseMediaWaveJournals(f);
+    const waves = f.waves.map((wave, i) => ({ ...wave, item: [a, b][i], journal: journals[i] }));
+    mutate(waves);
+    const env = environment([a, b], bodies, { batch: f.waves.flatMap((wave) => wave.batch) });
+    await assert.rejects(preparePublicationWaves({ prior: null, ...env.options, waves }));
+    assert.equal(env.calls.length, 0);
+  }
+});
+
+test('one publication accepts two independently verified complete release cohorts', async () => {
+  const bodies = new Map();
+  const a = artwork('cohort-a1', bodies),
+    b = artwork('cohort-a2', bodies),
+    c = artwork('cohort-b1', bodies);
+  const first = releaseFixture([[a], [b]]),
+    second = releaseFixture([[c]]);
+  assert.notEqual(first.job.root, second.job.root);
+  const cohortWaves = (f) => {
+    const journals = completeReleaseMediaWaveJournals(f);
+    return f.waves.map((wave, i) => ({ ...wave, journal: journals[i] }));
+  };
+  const waves = [...cohortWaves(first), ...cohortWaves(second)];
+  const env = environment([a, b, c], bodies, { batch: waves.flatMap((w) => w.batch) });
+  const result = await preparePublicationWaves({ prior: null, ...env.options, waves });
+  assert.equal(result.files.length, 12);
+  assert.equal(env.calls.length, 12);
+});
+
+test('multi-cohort preparation rejects a partial cohort or an inconsistent shared root before CDN', async () => {
+  for (const mode of ['partial', 'root-revision', 'root-bytes', 'cross-cohort-artwork']) {
+    const bodies = new Map();
+    const a = artwork('cohort-a1', bodies),
+      b = artwork('cohort-a2', bodies),
+      c = artwork('cohort-b1', bodies);
+    const first = releaseFixture([[a], [b]]);
+    const second = releaseFixture(mode === 'cross-cohort-artwork' ? [[a], [c]] : [[c]]);
+    const build = (f) => {
+      const journals = completeReleaseMediaWaveJournals(f);
+      return f.waves.map((wave, i) => ({ ...wave, journal: journals[i] }));
+    };
+    const one = build(first),
+      two = build(second),
+      waves = [...one, ...two];
+    if (mode === 'partial') waves.splice(1, 1);
+    if (mode === 'root-revision') one[1].journal.revision = 'd'.repeat(40);
+    if (mode === 'root-bytes') one[1].journal.authorizedBytes++;
+    const env = environment([a, b, c], bodies, { batch: waves.flatMap((w) => w.batch) });
+    await assert.rejects(preparePublicationWaves({ prior: null, ...env.options, waves }));
+    assert.equal(env.calls.length, 0);
+  }
+});
+
+test('single-wave publication cannot silently accept part of a multi-wave release cohort', async () => {
+  const bodies = new Map(),
+    a = artwork('cohort-a1', bodies),
+    b = artwork('cohort-a2', bodies);
+  const f = releaseFixture([[a], [b]]),
+    journals = completeReleaseMediaWaveJournals(f);
+  const wave = { ...f.waves[0], journal: journals[0] };
+  const env = environment([a], bodies, wave);
+  await assert.rejects(
+    preparePublication({ prior: null, ...env.options }),
+    /complete release cohort/,
+  );
+  assert.equal(env.calls.length, 0);
+  const complete = releaseFixture([[a]]),
+    [journal] = completeReleaseMediaWaveJournals(complete);
+  const fullEnv = environment([a], bodies, { ...complete.waves[0], journal });
+  const result = await preparePublication({ prior: null, ...fullEnv.options });
+  assert.equal(result.files.length, 4);
 });

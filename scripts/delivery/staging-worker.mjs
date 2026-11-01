@@ -1,5 +1,9 @@
 // This module is used only by a private Wrangler remote-development session.
 // A fixed Merkle root limits every write to the locally reviewed release.
+import {
+  OWNER_MANAGED_STORAGE_POLICY,
+  validateReleaseWriteAuthorization,
+} from './release-write-authorization.mjs';
 const encode = new TextEncoder();
 const hash = async (b) =>
   Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', b)), (v) =>
@@ -90,10 +94,23 @@ export function stagingWorker(job) {
         if (
           !command ||
           command.action !== 'list' ||
+          !Number.isSafeInteger(command.at) ||
           command.at > Date.now() ||
           Date.now() - command.at > 45_000
         )
           return json({ error: 'Fresh read request required' }, 409);
+        const treeRead = command.treeRead === true;
+        if (
+          (command.treeRead !== undefined && !treeRead) ||
+          (treeRead &&
+            (typeof command.prefix !== 'string' ||
+              command.prefix.length > 1024 ||
+              typeof command.grouped !== 'boolean' ||
+              command.startAfter !== undefined ||
+              (command.cursor !== undefined &&
+                (typeof command.cursor !== 'string' || !command.cursor))))
+        )
+          return json({ error: 'Invalid prefix inventory request' }, 409);
         const signingKey = await crypto.subtle.importKey(
           'raw',
           hex(job.secret),
@@ -118,6 +135,7 @@ export function stagingWorker(job) {
           return json({ error: 'Bucket is not bound to this inventory session' }, 404);
         let cursor = command.cursor,
           entries = [],
+          prefixes = [],
           truncated = false;
         const seen = new Set();
         for (let page = 0; page < inventoryPages; page++) {
@@ -127,11 +145,14 @@ export function stagingWorker(job) {
                 ? command.limit
                 : 1000,
             ...(cursor ? { cursor } : command.startAfter ? { startAfter: command.startAfter } : {}),
+            ...(treeRead && command.prefix ? { prefix: command.prefix } : {}),
+            ...(treeRead && command.grouped ? { delimiter: '/' } : {}),
           });
           if (
             typeof result.truncated !== 'boolean' ||
             !Array.isArray(result.objects) ||
-            (result.delimitedPrefixes?.length ?? 0) > 0
+            (treeRead && !Array.isArray(result.delimitedPrefixes)) ||
+            ((!treeRead || !command.grouped) && (result.delimitedPrefixes?.length ?? 0) > 0)
           )
             throw Error('Incomplete bound bucket inventory');
           for (const object of result.objects) {
@@ -143,18 +164,43 @@ export function stagingWorker(job) {
               throw Error('Invalid inventory object');
             entries.push({ Key: object.key, Size: object.size });
           }
+          if (treeRead && command.grouped) {
+            for (const prefix of result.delimitedPrefixes) {
+              if (typeof prefix !== 'string' || !prefix) throw Error('Invalid inventory prefix');
+              prefixes.push(prefix);
+            }
+          }
           truncated = result.truncated;
           cursor = truncated ? result.cursor : undefined;
           if (!truncated) break;
           if (!cursor || seen.has(cursor)) throw Error('Incomplete or looping bucket inventory');
           seen.add(cursor);
         }
-        return json({ IsTruncated: truncated, NextContinuationToken: cursor, Contents: entries });
+        return json({
+          IsTruncated: truncated,
+          NextContinuationToken: cursor,
+          Contents: entries,
+          ...(treeRead ? { CommonPrefixes: prefixes } : {}),
+        });
       }
       const readOnly = url.pathname === '/verify';
       const lease = readOnly ? body.command : body.lease;
       if (readOnly && (rawBlob || body.blobs !== undefined || body.lease !== undefined))
         return json({ error: 'Read-only verification accepts no write source or lease' }, 400);
+      if (
+        !readOnly &&
+        job.storagePolicy !== undefined &&
+        job.storagePolicy !== OWNER_MANAGED_STORAGE_POLICY
+      )
+        return json({ error: 'Unknown storage authorization policy' }, 409);
+      let validReleaseAuthorization = false;
+      if (!readOnly && job.storagePolicy === OWNER_MANAGED_STORAGE_POLICY) {
+        try {
+          validReleaseAuthorization = validateReleaseWriteAuthorization(lease, job);
+        } catch {
+          return json({ error: 'Fresh release write authorization required' }, 409);
+        }
+      }
       if (
         readOnly
           ? !lease ||
@@ -165,14 +211,15 @@ export function stagingWorker(job) {
             !Number.isSafeInteger(lease.at) ||
             lease.at > Date.now() ||
             Date.now() - lease.at > 45_000
-          : !lease ||
-            lease.root !== job.root ||
-            lease.accountId !== job.accountId ||
-            lease.bucket !== job.bucket ||
-            !Number.isSafeInteger(lease.projectedBytes) ||
-            lease.projectedBytes > 10_000_000_000_000 ||
-            lease.observedAt > Date.now() ||
-            Date.now() - lease.observedAt > 45_000
+          : !validReleaseAuthorization &&
+            (!lease ||
+              lease.root !== job.root ||
+              lease.accountId !== job.accountId ||
+              lease.bucket !== job.bucket ||
+              !Number.isSafeInteger(lease.projectedBytes) ||
+              lease.projectedBytes > 10_000_000_000_000 ||
+              lease.observedAt > Date.now() ||
+              Date.now() - lease.observedAt > 45_000)
       )
         return json({ error: 'Fresh storage reservation required' }, 409);
       const key = await crypto.subtle.importKey(
@@ -237,6 +284,8 @@ export function stagingWorker(job) {
         if (node !== job.root) return json({ error: 'Source outside reviewed manifest' }, 403);
         totalBytes += record.bytes;
         if (totalBytes > 8_000_000) return json({ error: 'Batch byte bound exceeded' }, 413);
+        if (validReleaseAuthorization && totalBytes > job.authorizedBytes)
+          return json({ error: 'Request exceeds reviewed release bytes' }, 413);
         paths.add(record.path);
         keys.add(record.key);
         if (prior) {

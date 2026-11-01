@@ -56,21 +56,24 @@ share these inodes. A mutable build always receives a separate writable copy.
 New/changed files remain independent; a full logical rollback tree is retained
 without duplicating the entire unchanged binary library at every upload.
 
-## Remote verification and storage reservations
+## Remote verification and release write authorization
 
-The local publisher retains authenticated partition boundaries in
-`work/delivery/inventory-range-hints.json`. This private derived cache contains
-no object counts, measured bytes or write permission. At each startup it checks
-the actual current all-jurisdiction bucket roster: removed buckets are dropped,
-new buckets enter with a complete unpartitioned range, and preserved buckets
-reuse only their sorted key boundaries. Live absence evidence uses the existing
-shared scope validator. Missing or invalid cache selects the cold path.
+Latest owner decision, 2026-11-02: the local 10 TB operational storage budget and
+extra capacity allowance have been removed for this and future UltraClipart
+uploads. A complete-account storage census is no longer a write prerequisite.
+This is a local publisher policy; it does not change Cloudflare technical limits
+or usage billing. See `docs/delivery-storage-owner-unlimited.md`.
 
-This avoids repeating the serial REST object census merely to bootstrap the
-private read-only session. Every write still requires the normal fresh complete
-account measurement through the bounded R2 reader. The 45-second limit and
-10 TB ceiling are unchanged. Successful complete measurements refresh the
-partition cache atomically; it remains a hint, never a storage reservation.
+Every private write is authenticated by a fresh HMAC authorization, valid for at
+most 45 seconds. It binds the account, target bucket, exact reviewed Merkle root,
+revision and complete release byte total. The session exposes only the target
+bucket binding. It cannot write arbitrary content or another release. Actor,
+request-body, per-file and PDF byte bounds remain in effect. No account occupancy
+is inferred: current receipts explicitly record `accountUsageMeasured: false`.
+Historical schema-2 account-inventory receipts remain historical evidence; new
+media receipts use schema 3 with exact per-object independent readback evidence.
+The old S3/REST ingest command is disabled and directs callers to the reviewed
+binding path, avoiding an ambiguous existence/overwrite check.
 
 New HTML defaults to the exact local compressed payload instead of first asking
 the still-live predecessor for different page bytes. Merkle, native checksum,
@@ -78,7 +81,7 @@ conditional creation and independent R2 readback still verify every file.
 `UC_DELIVERY_LOCAL_HTML=0` retains the earlier source preference when needed.
 
 The private `/verify` endpoint cannot PUT, delete, fetch public fallback sources
-or grant storage reservations. It accepts only fresh signed read commands for the
+or authorize writes. It accepts only fresh signed read commands for the
 fixed release and per-record Merkle proofs. Previous byte-readback receipts must
 match the accepted predecessor's manifest/root, exact source hash, size, MIME and
 key. Their validators are pinned into a second fixed Merkle root for the session.
@@ -90,11 +93,12 @@ An absent/changed validator requires an actual full body hash. Missing objects
 join the ordinary write queue; corrupt bodies/metadata or malformed proofs stop
 publication. Receipts distinguish inherited byte evidence from a fresh body hash.
 
-Only files needing writes enter the storage-reserved staging phase. The complete
-all-jurisdiction account census, 10 TB ceiling, 45-second freshness requirement,
-single account writer, conditional creation, native R2 SHA-256 validation and
-independent post-write body readback remain in effect. Existing read-only checks
-do not repeatedly acquire write reservations. Actor and byte bounds are unchanged.
+Only files needing writes enter release-scoped staging. The single account
+writer, conditional creation, native R2 SHA-256 validation and independent
+post-write body readback remain mandatory. Existing read-only checks do not
+measure total account capacity. A failed or incomplete object verification stops
+publication; removing the storage budget does not approve content or activate a
+partially staged release.
 
 ## Complete activation, honest revisions and recovery
 
@@ -132,8 +136,8 @@ snapshot evidence causes a local byte read, never an unverified notification.
 The accepted `.indexnow` ledger and notification-only retry policy are unchanged.
 
 Set `UC_DELIVERY_INCREMENTAL=0` for a normal full build. Set
-`UC_DELIVERY_VERIFY_EXISTING=0` for the older fully reserved staging transport.
-Either fallback retains integrity/capacity gates. No automatic production build
+`UC_DELIVERY_VERIFY_EXISTING=0` to verify existing objects through staging instead of the dedicated read path.
+Either fallback retains the same source, integrity and release-authorization gates. No automatic production build
 is re-enabled. This work does not make the site ready for five million artworks;
 catalog/search/Studio database and shard budgets still apply.
 
@@ -151,7 +155,7 @@ separation and withdrawals. `tests/verified-source-cache.mjs` covers edited,
 replaced, timestamp-restored and forged cache cases. The verification/reuse tests
 cover bad proofs, stale scope, missing/corrupt objects and incomplete receipts.
 `node tests/e2e/delivery-staging-local.mjs` exercises the actual workerd engine
-with isolated local R2, including conditional reuse, fresh reserved upload and
+with isolated local R2, including conditional reuse, fresh release-authorized upload and
 native checksum rejection. It uses no Cloudflare account or external request.
 
 A full-size local shadow build and complete checks are required before declaring

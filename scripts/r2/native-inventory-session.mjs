@@ -5,14 +5,14 @@ import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 import { setTimeout as delay } from 'node:timers/promises';
 import { inventoryHints } from '../delivery/storage-reservation.mjs';
-import { createBoundInventoryReader } from '../delivery/inventory-reader.mjs';
+import { createResilientInventoryReader } from '../delivery/inventory-reader.mjs';
 import { createSignedInventoryFetch } from '../delivery/inventory-fetch.mjs';
 
 // A stale *complete* census supplies range hints and bindings only. It cannot
 // authorize a write: every reservation still performs a fresh full census.
 export async function openNativeInventorySession(
   inventory,
-  { spawnProcess = spawn, fetcher = fetch } = {},
+  { spawnProcess = spawn, fetcher = fetch, preferPrefix = true } = {},
 ) {
   const root = process.cwd(),
     dir = mkdtempSync(join(tmpdir(), 'uc-native-inventory-'));
@@ -107,9 +107,10 @@ export async function openNativeInventorySession(
       await delay(1000);
     }
     if (!ready) throw Error('Private inventory session did not become ready');
-    const reader = createBoundInventoryReader({
+    const reader = createResilientInventoryReader({
       buckets,
       fetchPage: createSignedInventoryFetch({ secret, fetcher }),
+      preferPrefix,
     });
     return {
       read: reader,

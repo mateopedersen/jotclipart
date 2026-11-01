@@ -69,6 +69,34 @@ test(
     );
   },
 );
+test('eight bucket readers preserve complete scope and reject excessive concurrency', async () => {
+  const names = Array.from({ length: 10 }, (_, i) => `bucket-${i}`);
+  let active = 0,
+    peak = 0;
+  const aws = async (command, args, url) => {
+    if (command === 'list-buckets')
+      return {
+        Buckets: jurisdictionFrom(url) === 'default' ? names.map((Name) => ({ Name })) : [],
+      };
+    assert.equal(command, 'list-objects-v2');
+    const name = args[args.indexOf('--bucket') + 1];
+    peak = Math.max(peak, ++active);
+    await new Promise((done) => setTimeout(done, 5));
+    active--;
+    return { IsTruncated: false, Contents: [{ Key: name, Size: 5 }] };
+  };
+  const inventory = await measureAccount({ endpoint, batch: [], aws, bucketConcurrency: 8 });
+  assert.equal(peak, 8);
+  assert.equal(inventory.buckets.length, names.length);
+  assert.deepEqual(
+    inventory.buckets.map((bucket) => bucket.objects[0].key),
+    names,
+  );
+  await assert.rejects(
+    measureAccount({ endpoint, batch: [], aws, bucketConcurrency: 9 }),
+    /Bounded bucket/,
+  );
+});
 function adapter(extra = {}) {
   const calls = [];
   const aws = (command, args, url) => {
@@ -232,7 +260,7 @@ test('object errors in a known populated jurisdiction cannot use an absence over
 });
 
 test('content verification stays bounded to four reads across independent buckets', async () => {
-  const names = ['one', 'two', 'three', 'four'];
+  const names = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight'];
   const candidates = names.flatMap((bucket) =>
     Array.from({ length: 3 }, (_, n) => ({
       bucket,
@@ -247,6 +275,7 @@ test('content verification stays bounded to four reads across independent bucket
   const inventory = await measureAccount({
     endpoint,
     batch: candidates,
+    bucketConcurrency: 8,
     now: () => now,
     aws: async (command, _args, url) => {
       if (command === 'list-buckets')
@@ -270,7 +299,7 @@ test('content verification stays bounded to four reads across independent bucket
     },
   });
   assert.equal(peak, 4);
-  assert.equal(reads, 12);
+  assert.equal(reads, 24);
   assert.equal(active, 0);
   assert.ok(
     inventory.buckets.every((bucket) => bucket.objects.every((object) => object.sha256 === hash)),

@@ -67,6 +67,23 @@ test('a slow cold census supplies read-only partitions but never a write reserva
   );
 });
 const cmp = (a, b) => Buffer.compare(Buffer.from(a), Buffer.from(b));
+test('inventory boundaries preserve exact byte ordering for ASCII, BMP and supplementary Unicode', () => {
+  for (const keys of [
+    ['z', 'a', 'apple', 'á', 'Ω', '中', '\ue000', '\uffff'],
+    ['z', '🙂', '\ue000', 'a', '😀', '\uffff', '中', 'é'],
+  ]) {
+    const expected = [...keys].sort(cmp).slice(0, -1);
+    assert.deepEqual(
+      inventoryBoundaries(
+        keys.map((key) => ({ key })),
+        1,
+      ),
+      expected,
+    );
+  }
+  assert.throws(() => inventoryBoundaries([{ key: 'same' }, { key: 'same' }]), /Duplicate/);
+  assert.throws(() => inventoryBoundaries([{ key: '' }]), /Invalid/);
+});
 function reader(keys, bounds) {
   let active = 0,
     peak = 0;
@@ -240,12 +257,25 @@ test('inventory retries a truncated successful response body without accepting p
     fetcher: async (_url, init) => {
       calls.push(JSON.parse(init.body).command);
       return calls.length === 1
-        ? { ok: true, status: 200, json: async () => { throw new TypeError('terminated'); } }
+        ? {
+            ok: true,
+            status: 200,
+            json: async () => {
+              throw new TypeError('terminated');
+            },
+          }
         : Response.json({ IsTruncated: false, Contents: [{ Key: 'complete', Size: 12 }] });
     },
   });
-  const result = await read({ bucket: 'media', jurisdiction: 'default', cursor: 'unchanged-cursor' });
-  assert.deepEqual(calls.map((c) => c.limit), [1000, 500]);
+  const result = await read({
+    bucket: 'media',
+    jurisdiction: 'default',
+    cursor: 'unchanged-cursor',
+  });
+  assert.deepEqual(
+    calls.map((c) => c.limit),
+    [1000, 500],
+  );
   assert(calls.every((c) => c.cursor === 'unchanged-cursor'));
   assert.deepEqual(result.Contents, [{ Key: 'complete', Size: 12 }]);
   let failures = 0;
@@ -254,7 +284,13 @@ test('inventory retries a truncated successful response body without accepting p
     wait: async () => {},
     fetcher: async () => {
       failures++;
-      return { ok: true, status: 200, json: async () => { throw new TypeError('terminated'); } };
+      return {
+        ok: true,
+        status: 200,
+        json: async () => {
+          throw new TypeError('terminated');
+        },
+      };
     },
   });
   await assert.rejects(unavailable({ bucket: 'media', jurisdiction: 'default' }), /terminated/);

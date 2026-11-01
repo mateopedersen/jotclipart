@@ -7,6 +7,10 @@ import { readFileSync } from 'node:fs';
 import { build } from 'esbuild';
 import { digest, merkle } from '../../scripts/delivery/manifest.mjs';
 import { verifyExistingFiles } from '../../scripts/delivery/verification-batch.mjs';
+import {
+  OWNER_MANAGED_STORAGE_POLICY,
+  createReleaseWriteAuthorization,
+} from '../../scripts/delivery/release-write-authorization.mjs';
 
 const require = createRequire(import.meta.resolve('wrangler'));
 const { Miniflare, convertV4MiniflareOptions } = require('miniflare');
@@ -30,10 +34,20 @@ const priorRecords = records.slice(0, -1).map((record, n) => ({
   etag: createHash('md5').update(data[n]).digest('hex'),
 }));
 const reuseTree = merkle(priorRecords);
+const job = {
+  accountId,
+  bucket,
+  secret,
+  root,
+  reuseRoot: reuseTree.root,
+  revision: 'c'.repeat(40),
+  storagePolicy: OWNER_MANAGED_STORAGE_POLICY,
+  authorizedBytes: records.reduce((sum, row) => sum + row.bytes, 0),
+};
 const code = await build({
   stdin: {
     contents: `import {stagingWorker} from './scripts/delivery/staging-worker.mjs';
-    export default stagingWorker(${JSON.stringify({ accountId, bucket, secret, root, reuseRoot: reuseTree.root, revision: 'c'.repeat(40) })});`,
+    export default stagingWorker(${JSON.stringify(job)});`,
     resolveDir: new URL('../..', import.meta.url).pathname,
   },
   bundle: true,
@@ -106,7 +120,7 @@ try {
     128,
   );
   assert.equal((await storage.list()).objects.length, 128);
-  const lease = { root, accountId, bucket, observedAt: Date.now(), projectedBytes: 100_000 };
+  const lease = createReleaseWriteAuthorization(job);
   const signature = createHmac('sha256', Buffer.from(secret, 'hex'))
     .update(JSON.stringify(lease))
     .digest('hex');
@@ -126,14 +140,49 @@ try {
   assert.equal(Buffer.from(uploaded.checksums.sha256).toString('hex'), records.at(-1).sha256);
   await assert.rejects(storage.put('invalid-native-checksum', 'wrong', { sha256: '0'.repeat(64) }));
   assert.equal(await storage.head('invalid-native-checksum'), null);
+  // A prior receipt is never current evidence after an interrupted candidate.
+  // R2 absence or a changed validator must be checked again on resume.
+  const resumeOptions = {
+    root,
+    accountId,
+    bucket,
+    secret,
+    actors: 1,
+    onVerified: () => {
+      throw Error('Deleted or corrupted object cannot be accepted');
+    },
+    fetcher: (url, init) => mf.dispatchFetch(url, init),
+    attachPrior(row) {
+      return {
+        ...row,
+        prior: {
+          etag: priorRecords[0].etag,
+          previousRoot: priorRecords[0].previousRoot,
+          proof: reuseTree.proof(0),
+        },
+      };
+    },
+  };
+  await storage.delete(records[0].key);
+  const removedOnResume = await verifyExistingFiles([batch[0]], resumeOptions);
+  assert.equal(removedOnResume.length, 1);
+  await storage.put(records[0].key, Buffer.alloc(data[0].length, 0), {
+    httpMetadata: { contentType: 'image/webp' },
+  });
+  await assert.rejects(
+    verifyExistingFiles([batch[0]], resumeOptions),
+    /mismatch|corrupt|verification/i,
+  );
+  await storage.put(records[0].key, data[0], { httpMetadata: { contentType: 'image/webp' } });
   assert.equal((await storage.list()).objects.length, 129);
   console.log(
     JSON.stringify({
       status: 'PASS_LOCAL_WORKERD_R2',
       independentlyVerified: 128,
       reusedWithoutReadingBody: 128,
-      missingStagedWithFreshLease: 1,
+      missingStagedWithFreshReleaseAuthorization: 1,
       nativeSha256Verified: true,
+      candidateResumeDeletionAndCorruptionRejected: true,
       externalRequests: 0,
       workerSourceSha256: digest(
         readFileSync(new URL('../../scripts/delivery/staging-worker.mjs', import.meta.url)),

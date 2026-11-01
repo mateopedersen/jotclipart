@@ -8,6 +8,7 @@ import {
   TAXONOMY_VERSION,
   type Subject,
 } from './taxonomy';
+import { hasUsableFileReview, type OwnerPdfColorDirection } from '../file-review';
 import { fingerprint } from '../cache-fingerprint';
 export { fingerprint } from '../cache-fingerprint';
 
@@ -29,6 +30,10 @@ export interface ArtworkInput {
   recommendationEligible?: boolean;
   licenseStatus?: string;
   reviewStatus?: string;
+  sourceCollection?: string;
+  sourceOriginalId?: string;
+  sourceOriginalSha256?: string;
+  pdfColorReview?: OwnerPdfColorDirection;
   thumb?: string;
   thumbSrcSet?: string;
   webp?: string;
@@ -268,7 +273,7 @@ export function normalize(item: ArtworkInput): Profile {
     asset('thumb') &&
     asset('webp') &&
     item.licenseStatus === 'OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY' &&
-    item.reviewStatus === 'FORMAT_AND_PAIR_REVIEW_PASSED';
+    hasUsableFileReview(item);
   const eligible =
     publicationEligible && !!subject && ['auto_classified', 'verified'].includes(status);
   const secondary = named.filter((m) => m.subject.id !== subject?.id).map((m) => m.subject.id);

@@ -4,19 +4,16 @@ import {
   mkdirSync,
   openSync,
   closeSync,
+  fchmodSync,
   unlinkSync,
   appendFileSync,
 } from 'node:fs';
 import { resolve, join } from 'node:path';
 import { randomBytes, createHmac } from 'node:crypto';
-import { spawn, execFileSync } from 'node:child_process';
+import { spawn } from 'node:child_process';
 import { setTimeout as wait } from 'node:timers/promises';
 import { collectDeliveryFiles, merkle } from './manifest.mjs';
-import { measureReservation } from './storage-reservation.mjs';
-import { freshBindingReservation } from '../r2/binding-reservation.mjs';
 import { releaseRevision } from '../release-revision.mjs';
-import { createSignedInventoryFetch } from './inventory-fetch.mjs';
-import { createBoundInventoryReader, readOnlyRangeHints } from './inventory-reader.mjs';
 import { awaitAccountWriter } from './account-lock.mjs';
 import { prepareLocalStagePayload, preferLocalStageSource } from './local-batch.mjs';
 import {
@@ -25,13 +22,13 @@ import {
   validateVerificationReceipt,
 } from './verification-batch.mjs';
 import { verifiedReuse } from './verified-reuse.mjs';
-import { loadBootstrapBindings, saveBootstrapHints } from './inventory-bootstrap.mjs';
 import { readIncrementalPlan, incrementalCollectionOptions } from './incremental.mjs';
+import { deliveryActorCount } from './staging-limits.mjs';
+import { stopPrivateSession } from './private-session.mjs';
 import {
-  deliveryActorCount,
-  inventoryPageCount,
-  IN_FLIGHT_ALLOWANCE_BYTES,
-} from './staging-limits.mjs';
+  OWNER_MANAGED_STORAGE_POLICY,
+  createReleaseWriteAuthorization,
+} from './release-write-authorization.mjs';
 const root = process.cwd(),
   dist = resolve(process.argv[2] ?? 'dist'),
   revision = releaseRevision(),
@@ -42,6 +39,7 @@ async function main() {
     timeoutMs: Number(process.env.UC_DELIVERY_WRITER_WAIT_MS ?? 3_600_000),
     notify: console.log,
   });
+  let releaseAllowed = true;
   try {
     const incrementalPlan = readIncrementalPlan(root);
     const allFiles = collectDeliveryFiles(
@@ -52,38 +50,23 @@ async function main() {
       tree = merkle(allFiles);
     const accountId = '48c779c8eaa80234e0bb9d57f96e588b',
       bucket = 'ultraclipart-pages';
-    const common = execFileSync('git', ['rev-parse', '--git-common-dir'], {
-      encoding: 'utf8',
-    }).trim();
-    const lockPath = join(resolve(common), 'ultraclipart-r2-writer.lock');
     const work = join(root, 'work/delivery', revision);
     mkdirSync(work, { recursive: true });
     const journalPath = join(work, 'verified.jsonl'),
       manifestPath = join(work, 'verified-manifest.json');
+    // Old candidate journals describe earlier reads, not current R2 state.
+    // Recheck every manifest entry on resume; accepted predecessor proofs can
+    // avoid rereading unchanged bodies only after a current matching R2 ETag.
     const done = new Map();
-    try {
-      for (const line of readFileSync(journalPath, 'utf8').trim().split('\n')) {
-        const row = JSON.parse(line);
-        if (row.root === tree.root) done.set(row.path, row);
-      }
-    } catch (error) {
-      if (error.code !== 'ENOENT') throw error;
-    }
     const records = allFiles.map((record, index) => ({ record, proof: tree.proof(index) }));
     const reuse = await verifiedReuse(root, records);
-    let remaining = records.filter(({ record }) => {
-      const old = done.get(record.path);
-      return (
-        !old || old.sha256 !== record.sha256 || old.bytes !== record.bytes || old.key !== record.key
-      );
-    });
+    let remaining = [...records];
     remaining.sort(
       (a, b) =>
         Number(b.record.path.startsWith('/previews/')) -
         Number(a.record.path.startsWith('/previews/')),
     );
     const secret = randomBytes(32).toString('hex');
-    const inventoryBuckets = [];
     const sourceOrigin = process.env.UC_DELIVERY_SOURCE_ORIGIN ?? 'https://ultraclipart.com';
     if (
       sourceOrigin !== 'https://ultraclipart.com' &&
@@ -97,15 +80,24 @@ async function main() {
       bucket,
       secret,
       sourceOrigin,
-      inventoryBuckets,
-      inventoryPages: inventoryPageCount(),
+      storagePolicy: OWNER_MANAGED_STORAGE_POLICY,
+      authorizedBytes: allFiles.reduce((sum, file) => sum + file.bytes, 0),
       reuseRoot: reuse.root,
     };
-    writeFileSync(
-      join(work, 'job-entry.mjs'),
-      `import {stagingWorker} from ${JSON.stringify(join(root, 'scripts/delivery/staging-worker.mjs'))};export default stagingWorker(${JSON.stringify(job)});\n`,
-      { mode: 0o600 },
-    );
+    // Validate the exact reviewed scope before opening a private remote session.
+    createReleaseWriteAuthorization(job);
+    const entryPath = join(work, 'job-entry.mjs');
+    const entryFd = openSync(entryPath, 'w', 0o600);
+    try {
+      // Opening an existing path does not apply its creation mode.
+      fchmodSync(entryFd, 0o600);
+      writeFileSync(
+        entryFd,
+        `import {stagingWorker} from ${JSON.stringify(join(root, 'scripts/delivery/staging-worker.mjs'))};export default stagingWorker(${JSON.stringify(job)});\n`,
+      );
+    } finally {
+      closeSync(entryFd);
+    }
     writeFileSync(
       join(work, 'wrangler.json'),
       JSON.stringify({
@@ -118,13 +110,10 @@ async function main() {
     );
     let child,
       output,
-      lease,
-      leasePromise,
       cursor = 0,
       completed = done.size,
       nextProgress = (Math.floor(done.size / 200) + 1) * 200,
       failed = false,
-      remoteReady = false,
       knownKeys;
     function recordVerified(row) {
       const prior = done.get(row.path);
@@ -141,116 +130,14 @@ async function main() {
         console.log(JSON.stringify({ verified: completed, total: allFiles.length }));
       }
     }
-    async function reservation(force = false) {
-      if (!force && lease && Date.now() - lease.observedAt < 40_000) return lease;
-      if (!leasePromise)
-        leasePromise = (async () => {
-          const unverified =
-            remaining.slice(cursor).reduce((sum, x) => sum + x.record.bytes, 0) +
-            IN_FLIGHT_ALLOWANCE_BYTES;
-          const measuredStartedAt = Date.now();
-          const measure = () =>
-            measureReservation(
-              accountId,
-              unverified,
-              remoteReady
-                ? createBoundInventoryReader({
-                    buckets: inventoryBuckets,
-                    fetchPage: createSignedInventoryFetch({ secret }),
-                  })
-                : undefined,
-              (inventory) => {
-                const target = inventory.buckets.find(
-                  (b) => b.name === bucket && b.jurisdiction === 'default',
-                );
-                if (!target) throw Error('Existing target bucket is missing');
-                knownKeys = new Set(target.objects.map((o) => o.key));
-              },
-            );
-          const updateRanges = (roster) => {
-            for (const current of inventoryBuckets) {
-              const fresh = roster.find(
-                (b) => b.bucket === current.bucket && b.jurisdiction === current.jurisdiction,
-              );
-              if (fresh) current.bounds = fresh.bounds;
-            }
-          };
-          // An occasional slow complete census grants no write lease. Rebalance
-          // only its read-only ranges and repeat a full measurement, at most twice.
-          // Denied scopes, malformed inventories and capacity errors still stop.
-          const measured = remoteReady
-            ? await freshBindingReservation(measure, {
-                onStale: (roster) => {
-                  updateRanges(roster);
-                  console.log(
-                    'Slow complete census: read-only ranges refreshed; repeating the full measurement without granting a write lease.',
-                  );
-                },
-              })
-            : await measure();
-          updateRanges(measured.roster);
-          saveBootstrapHints(root, accountId, bucket, measured.roster);
-          lease = { ...measured, root: tree.root, bucket };
-          console.log(
-            `Fresh account reservation: ${lease.measuredBytes} + ${lease.additionalBytes} bytes; complete measurement ${Date.now() - measuredStartedAt} ms`,
-          );
-          return lease;
-        })().finally(() => (leasePromise = undefined));
-      return leasePromise;
+    function reservation() {
+      // Fresh authentication is bound to this release, never an account-size estimate.
+      return createReleaseWriteAuthorization(job);
     }
     try {
-      let bindings;
-      if (process.env.UC_DELIVERY_INVENTORY_HINTS) {
-        const hintPath = resolve(process.env.UC_DELIVERY_INVENTORY_HINTS);
-        if (!hintPath.startsWith(root + '/'))
-          throw Error('Inventory hints must remain inside the project');
-        bindings = readOnlyRangeHints(
-          JSON.parse(readFileSync(hintPath, 'utf8')),
-          accountId,
-          bucket,
-        );
-        console.log(
-          'Prior complete-census ranges are read-only hints; fresh complete coverage is still required before staging.',
-        );
-      }
-      if (!bindings) {
-        bindings = await loadBootstrapBindings(root, accountId, bucket);
-        if (bindings)
-          console.log(
-            'Saved inventory ranges matched the fresh live bucket roster; no counts or write lease reused.',
-          );
-      }
-      if (!bindings) {
-        try {
-          bindings = (await reservation()).roster;
-        } catch (error) {
-          if (!Array.isArray(error.readOnlyInventoryHints)) throw error;
-          bindings = error.readOnlyInventoryHints;
-          console.log('Slow cold census: bootstrapping read-only inventory; no write lease issued');
-        }
-      }
-      saveBootstrapHints(root, accountId, bucket, bindings);
-      inventoryBuckets.push(
-        ...bindings
-          .filter((b) => b.jurisdiction === 'default')
-          .map((b, index) => ({
-            ...b,
-            binding: b.bucket === bucket ? 'TARGET' : `INVENTORY_${index}`,
-          })),
-      );
-      writeFileSync(
-        join(work, 'job-entry.mjs'),
-        `import {stagingWorker} from ${JSON.stringify(join(root, 'scripts/delivery/staging-worker.mjs'))};export default stagingWorker(${JSON.stringify(job)});\n`,
-        { mode: 0o600 },
-      );
-      const config = JSON.parse(readFileSync(join(work, 'wrangler.json'), 'utf8'));
-      config.r2_buckets = inventoryBuckets.map((b) => ({
-        binding: b.binding,
-        bucket_name: b.bucket,
-        preview_bucket_name: b.bucket,
-      }));
-      writeFileSync(join(work, 'wrangler.json'), JSON.stringify(config));
       output = openSync(join(work, 'private-session.log'), 'a', 0o600);
+      fchmodSync(output, 0o600);
+      releaseAllowed = false;
       child = spawn(
         process.execPath,
         [
@@ -291,10 +178,9 @@ async function main() {
         await wait(1000);
       }
       if (!ready) throw Error('Private remote staging session did not become ready');
-      remoteReady = true;
       // Reads allocate no storage. Independently hash the shared assets without
       // granting a write lease or repeatedly measuring account capacity. Missing
-      // files alone join the ordinary fresh-census/conditional-write path below.
+      // files alone join the ordinary release-scoped conditional-write path below.
       if (process.env.UC_DELIVERY_VERIFY_EXISTING !== '0') {
         const { existingCandidates, writes } = splitVerificationPhase(remaining, revision);
         const missing = await verifyExistingFiles(existingCandidates, {
@@ -308,12 +194,10 @@ async function main() {
         });
         remaining = [...missing, ...writes];
         console.log(
-          `Read-only verification: ${existingCandidates.length - missing.length} existing files verified; ${remaining.length} files require reserved staging.`,
+          `Read-only verification: ${existingCandidates.length - missing.length} existing files verified; ${remaining.length} files require release-scoped staging.`,
         );
       }
-      // A prior REST census or read-only receipt never authorizes a write.
-      // The first transfer and all later renewals use the complete live account.
-      lease = undefined;
+      // Each write authenticates this exact release independently of read-only receipts.
       console.log(
         `Private staging ready: ${remaining.length} remaining of ${allFiles.length}, root ${tree.root}`,
       );
@@ -326,7 +210,7 @@ async function main() {
             ? await prepareLocalStagePayload(dist, batch)
             : JSON.stringify({ records: batch }));
         const current = await reservation();
-        const { roster: _partitionHints, ...writeLease } = current;
+        const writeLease = current;
         const authorization = JSON.stringify({
           lease: writeLease,
           signature: createHmac('sha256', Buffer.from(secret, 'hex'))
@@ -334,7 +218,7 @@ async function main() {
             .digest('hex'),
         });
         if (authorization.length > 16_000)
-          throw Error('Storage authorization metadata exceeds bound');
+          throw Error('Release authorization metadata exceeds bound');
         let last;
         for (let attempt = 0; attempt < 3; attempt++) {
           try {
@@ -351,9 +235,12 @@ async function main() {
             if (response.status === 409) {
               await response.body.cancel();
               if (leaseRetries >= 3)
-                throw Object.assign(Error('Fresh storage lease could not be acquired in time'), {
-                  permanent: true,
-                });
+                throw Object.assign(
+                  Error('Fresh release authorization could not be acquired in time'),
+                  {
+                    permanent: true,
+                  },
+                );
               await reservation(true);
               return transfer(batch, local, leaseRetries + 1, encoded);
             }
@@ -397,9 +284,8 @@ async function main() {
           while (cursor < remaining.length && !failed) {
             const batch = [];
             const localGroup = preferLocalStageSource(remaining[cursor].record, knownKeys);
-            // The byte limit and actor cap still bound the in-flight release
-            // bytes. Larger groups make useful progress during each fresh
-            // account-inventory lease without changing proofs or readback.
+            // Byte and actor limits bound each invocation without weakening
+            // per-object Merkle proofs, conditional writes or full readback.
             const itemLimit = 64,
               byteLimit = 4_000_000;
             let groupBytes = 0;
@@ -436,6 +322,8 @@ async function main() {
         JSON.stringify({
           schema: 1,
           status: 'remote-byte-verified',
+          storagePolicy: OWNER_MANAGED_STORAGE_POLICY,
+          accountUsageMeasured: false,
           revision,
           bucket,
           root: tree.root,
@@ -447,14 +335,24 @@ async function main() {
       );
       console.log(`Verified delivery manifest: ${manifestPath}`);
     } finally {
-      if (child) {
-        child.kill('SIGTERM');
-        await Promise.race([new Promise((resolve) => child.once('exit', resolve)), wait(5000)]);
+      try {
+        await stopPrivateSession(child);
+        releaseAllowed = true;
+      } finally {
+        if (output !== undefined) closeSync(output);
+        // Only a confirmed stopped child allows removal of its private input.
+        if (releaseAllowed) {
+          try {
+            unlinkSync(entryPath);
+          } catch (error) {
+            if (error.code !== 'ENOENT') throw error;
+          }
+        }
       }
-      if (output !== undefined) closeSync(output);
     }
   } finally {
-    releaseLock();
+    // If process termination cannot be confirmed, preserve the account lock.
+    if (releaseAllowed) releaseLock();
   }
 }
 await main();

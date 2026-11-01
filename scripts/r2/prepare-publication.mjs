@@ -6,6 +6,12 @@ import { pathToFileURL } from 'node:url';
 import { sourceTypeOf } from '../asset-representations.mjs';
 import { validateBatch, HARD_CAP } from './plan.mjs';
 import { objectIdentity, validateInventoryScope } from './inventory.mjs';
+import { leaf } from '../delivery/manifest.mjs';
+import {
+  OWNER_MANAGED_STORAGE_POLICY,
+  createReleaseWriteAuthorization,
+  validateReleaseWriteAuthorization,
+} from '../delivery/release-write-authorization.mjs';
 import {
   ASSET_ORIGIN,
   SITE_ORIGIN,
@@ -23,29 +29,66 @@ const kindOf = (kind) => (kind === 'thumbnail' ? 'thumb' : kind);
 function validateJournal(journal, batch, batchSha256) {
   if (
     !/^[a-f0-9]{64}$/.test(batchSha256 ?? '') ||
-    journal?.schemaVersion !== 2 ||
+    ![2, 3].includes(journal?.schemaVersion) ||
     journal.status !== 'uploaded-and-byte-verified' ||
     journal.batchSha256 !== batchSha256 ||
     !Number.isFinite(Date.parse(journal.completedAt)) ||
     !Array.isArray(journal.verifiedObjects) ||
-    !Array.isArray(journal.verifiedArtworkIds) ||
-    !Number.isSafeInteger(journal.aggregateBytes) ||
-    journal.aggregateBytes > HARD_CAP ||
-    journal.aggregateBytes < 0
+    !Array.isArray(journal.verifiedArtworkIds)
   )
-    throw new Error('A successful matching all-scope upload journal is required');
-  if (journal.aggregateBytes < batch.reduce((sum, object) => sum + object.bytes, 0))
-    throw new Error('Upload journal aggregate is smaller than its verified objects');
-  const scope = journal.inventoryScope;
-  if (!scope || !Array.isArray(scope.jurisdictions))
-    throw new Error('Upload journal is missing its inventory scope');
-  validateInventoryScope({
-    schemaVersion: 2,
-    ...scope,
-    buckets: scope.jurisdictions.flatMap((j) =>
-      j.buckets.map((name) => ({ name, jurisdiction: j.jurisdiction })),
-    ),
-  });
+    throw new Error('A successful matching upload journal is required');
+  const batchBytes = batch.reduce((sum, object) => sum + object.bytes, 0);
+  if (!Number.isSafeInteger(batchBytes)) throw new Error('Unsafe wave byte sum');
+  if (journal.schemaVersion === 2) {
+    if (
+      !Number.isSafeInteger(journal.aggregateBytes) ||
+      journal.aggregateBytes > HARD_CAP ||
+      journal.aggregateBytes < batchBytes
+    )
+      throw new Error('Historical upload journal aggregate is invalid');
+    const scope = journal.inventoryScope;
+    if (!scope || !Array.isArray(scope.jurisdictions))
+      throw new Error('Upload journal is missing its inventory scope');
+    validateInventoryScope({
+      schemaVersion: 2,
+      ...scope,
+      buckets: scope.jurisdictions.flatMap((j) =>
+        j.buckets.map((name) => ({ name, jurisdiction: j.jurisdiction })),
+      ),
+    });
+  } else {
+    if (
+      journal.storagePolicy !== OWNER_MANAGED_STORAGE_POLICY ||
+      journal.accountUsageMeasured !== false ||
+      journal.aggregateBytes !== null ||
+      journal.inventoryScope !== null ||
+      journal.publishApproved !== false ||
+      !Number.isSafeInteger(journal.waveNumber) ||
+      journal.waveNumber < 1 ||
+      journal.waveBytes !== batchBytes ||
+      journal.authorizedBytes < batchBytes ||
+      typeof journal.startedAt !== 'string' ||
+      !Number.isFinite(Date.parse(journal.startedAt)) ||
+      Date.parse(journal.startedAt) > Date.parse(journal.completedAt) ||
+      ![
+        'private-r2-binding-conditional-create-and-independent-get-sha256',
+        'private-r2-binding-existing-independent-get-sha256',
+      ].includes(journal.transport)
+    )
+      throw new Error('Invalid release-scoped upload journal');
+    const job = {
+      storagePolicy: journal.storagePolicy,
+      accountId: journal.accountId,
+      bucket: journal.bucket,
+      root: journal.root,
+      revision: journal.revision,
+      authorizedBytes: journal.authorizedBytes,
+    };
+    // Validate the persisted scope's shape; this does not fabricate a historical
+    // authorization or claim that any account-wide storage was measured.
+    const scope = createReleaseWriteAuthorization(job, 0);
+    validateReleaseWriteAuthorization(scope, job, 0);
+  }
   const verified = new Map(
     journal.verifiedObjects.map((object) => [objectIdentity(object), object]),
   );
@@ -60,6 +103,38 @@ function validateJournal(journal, batch, batchSha256) {
     const entry = verified.get(objectIdentity(object));
     if (!entry || entry.bytes !== object.bytes || entry.sha256 !== object.sha256)
       throw new Error('Upload journal checksum or size differs from the batch');
+    if (journal.schemaVersion === 3) {
+      const record = entry.releaseRecord,
+        proof = entry.releaseProof;
+      if (
+        entry.bucket !== journal.bucket ||
+        entry.jurisdiction !== 'default' ||
+        object.bucket !== journal.bucket ||
+        (object.jurisdiction ?? 'default') !== 'default' ||
+        !record ||
+        typeof record.path !== 'string' ||
+        !record.path.startsWith('/') ||
+        record.path.split('/').includes('..') ||
+        typeof object.path !== 'string' ||
+        resolve(object.path) !== resolve('public' + record.path) ||
+        record.wave !== journal.waveNumber ||
+        record.assetId !== object.assetId ||
+        record.kind !== object.kind ||
+        record.key !== object.key ||
+        record.bytes !== object.bytes ||
+        record.sha256 !== object.sha256 ||
+        !Array.isArray(proof) ||
+        proof.length > 64
+      )
+        throw new Error('Release object scope or reviewed record differs from the batch');
+      let digest = leaf(record);
+      for (const step of proof) {
+        if (!step || typeof step.left !== 'boolean' || !/^[a-f0-9]{64}$/.test(step.hash ?? ''))
+          throw new Error('Invalid release object proof');
+        digest = sha(Buffer.from(step.left ? step.hash + digest : digest + step.hash, 'hex'));
+      }
+      if (digest !== journal.root) throw new Error('Release object proof differs from the root');
+    }
   }
 }
 
@@ -161,6 +236,8 @@ export async function preparePublication({
   if (new Set(batch.map((object) => object.assetId)).size > 50)
     throw new Error('At most 50 artworks per reviewed production wave');
   validateJournal(journal, batch, batchSha256);
+  if (journal.schemaVersion === 3 && journal.waveBytes !== journal.authorizedBytes)
+    throw new Error('A single-wave publication must cover its complete release cohort');
   return prepareVerifiedFiles({ prior, catalog, batch, readAsset, fetcher, now, retryWait });
 }
 
@@ -178,17 +255,47 @@ export async function preparePublicationWaves({
     throw Error('At least one independently verified wave is required');
   const ids = new Set(),
     batch = [];
+  let journalVersion = null;
+  const cohorts = new Map();
   for (const wave of waves) {
     validateBatch(wave.batch);
     const group = [...new Set(wave.batch.map((o) => o.assetId))];
     if (group.length > 50) throw Error('At most 50 artworks per reviewed production wave');
     validateJournal(wave.journal, wave.batch, wave.batchSha256);
+    if (journalVersion !== null && journalVersion !== wave.journal.schemaVersion)
+      throw Error('Historical and release-scoped waves cannot be mixed');
+    journalVersion = wave.journal.schemaVersion;
+    if (wave.journal.schemaVersion === 3) {
+      const j = wave.journal;
+      const scope = JSON.stringify([
+        j.accountId,
+        j.bucket,
+        j.root,
+        j.revision,
+        j.storagePolicy,
+        j.authorizedBytes,
+      ]);
+      let cohort = cohorts.get(j.root);
+      if (cohort && cohort.scope !== scope)
+        throw Error('The same release root has inconsistent scope');
+      if (!cohort) {
+        cohort = { scope, authorizedBytes: j.authorizedBytes, bytes: 0, numbers: new Set() };
+        cohorts.set(j.root, cohort);
+      }
+      if (cohort.numbers.has(j.waveNumber)) throw Error('Duplicate wave within a release cohort');
+      cohort.numbers.add(j.waveNumber);
+      cohort.bytes += j.waveBytes;
+      if (!Number.isSafeInteger(cohort.bytes)) throw Error('Unsafe release byte sum');
+    }
     for (const id of group) {
       if (ids.has(id)) throw Error('Artwork duplicated across verified waves');
       ids.add(id);
     }
     batch.push(...wave.batch);
   }
+  for (const cohort of cohorts.values())
+    if (cohort.bytes !== cohort.authorizedBytes)
+      throw Error('Verified waves do not cover a complete release cohort');
   return prepareVerifiedFiles({ prior, catalog, batch, readAsset, fetcher, now, retryWait });
 }
 

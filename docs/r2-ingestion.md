@@ -1,5 +1,45 @@
 # R2 ingestion
 
+## Current reviewed binding path — owner policy, 2026-11-02
+
+The owner removed the local aggregate 10 TB budget and the additional capacity
+allowance for this and subsequent UltraClipart uploads. Complete-account
+inventory is no longer an upload prerequisite. The current private entry point is
+`node scripts/r2/binding-ingest.mjs work/<reviewed-input>.json`; use `--check`
+first to validate the source-bound catalog, editorial decisions, complete batches
+and actual local files without remote writes. Inputs must have the accepted
+`REVIEWED_READY_NOT_LIVE` descriptor and preserve the full current baseline.
+Do not use a plain unreviewed ZIP or batch as that descriptor.
+
+The session binds only the intended R2 bucket. Every write receives a fresh,
+45-second HMAC authorization bound to the account, bucket, reviewed Merkle root,
+revision and exact authorized source-byte total. Individual Merkle proofs, native
+SHA-256 checksums, conditional creation and independent full-body remote readback
+remain mandatory. Source replacement invalidates prior review; removing the
+storage budget does not approve artwork or bypass image/PDF, editorial, metadata,
+SEO, security or publication gates. Existing provider/request/per-file/PDF byte
+limits remain. Coordinate through the shared single-account writer lock.
+
+New media wave journals use schema 3, with exact verified objects and truthful
+`accountUsageMeasured: false`, `aggregateBytes: null` and `inventoryScope: null`.
+Publication preparation checks each wave against its exact batch and independently
+GETs every new CDN representation to verify full bytes, MIME and CORS before any
+catalog activation. Unchanged accepted source URLs and their proven receipts are
+preserved. The `data/publication.json` media mapping has its own schema; its version
+must not be confused with the upload-journal version.
+
+The legacy `scripts/r2/ingest.mjs` S3/REST command is disabled before source or
+credential reads and directs callers to the reviewed binding path. Its old
+complete-account budget planner and schema-2 receipts remain for historical
+validation only. Do not bypass this decision using an old `--apply` example.
+
+See `docs/delivery-storage-owner-unlimited.md` and `docs/delivery-incremental.md`.
+This local policy does not alter Cloudflare technical limits or usage billing.
+The following sections describe the historical implementation and retained proof;
+they do not reinstate a current quota or authorize the retired CLI.
+
+## Historical implementation and verification
+
 `scripts/r2/plan.mjs` provides the tested byte-budget and complete-file-group validator. `scripts/r2/ingest.mjs` supports AWS CLI and the official Cloudflare REST API for a previously approved, activated R2 Standard account. It does not create buckets, activate subscriptions, configure billing or publish artwork.
 
 ## Preconditions

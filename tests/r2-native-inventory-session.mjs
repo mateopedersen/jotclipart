@@ -94,6 +94,7 @@ test('slow inventory bootstrap is read-only, signed, bounded and cleans up', asy
     assert.equal(command.bucket, 'media');
     return Response.json({
       IsTruncated: false,
+      ...(command.treeRead ? { CommonPrefixes: [] } : {}),
       Contents: [
         { Key: 'a', Size: 10 },
         { Key: 'b', Size: 20 },

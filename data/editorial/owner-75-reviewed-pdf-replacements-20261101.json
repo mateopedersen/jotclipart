@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "status": "SOURCE_BOUND_REVIEWED_REPLACEMENT_PDFS_NOT_LIVE",
+  "sourceCollection": "owner-75-2026-11-01",
+  "heldOriginalRegistrySha256": "a0b917b81182a55cc2326d0b8f448c00a3675dd556973150ec516013173ef5cf",
+  "privateSelectionProofSha256": "b056b4cd8ec9ba4d2c55ef03c5d40832189d5157c42912955f976c0e2a5ba917",
+  "count": 4,
+  "records": {
+    "60:byd:24": {
+      "topic": "byd",
+      "imageSha256": "10ebe1087a2e118adaf9dd9d3f92c968293ca39aafa86ebb6749127b9559dd4d",
+      "originalPdfSha256": "00ca4daba3f275c5f2d31ec6d08cc069f558251c1d94a8d4fe271061e6c86deb",
+      "reviewedPdfSha256": "fd81895e72c51bb0b94cc222a5b6ebb291a2cc3b98e20aac8258070f80d74e5b",
+      "decisionSha256": "09ec0a1a124b375a53585825111ac5c419363245152280f2e637e7655abf7f23"
+    },
+    "60:dodge:54": {
+      "topic": "dodge",
+      "imageSha256": "c06db4aefd86c4d8a5b70419cc6e1a0b770e720aa5472eb1a684adb7171d3e48",
+      "originalPdfSha256": "e49eb6cf9dbe0d8a21b11cfa8c14c33bdda9acdd7b93f1cccc276572d6ae73fb",
+      "reviewedPdfSha256": "935959860c6fb62c4413e41ca24fd6ffb3c15843c3398635a71f04cb2893dadd",
+      "decisionSha256": "55184927e527551e846fb8ec1b18123056baaa3be318e1df58f8f1018cd7a291"
+    },
+    "60:dodge:84": {
+      "topic": "dodge",
+      "imageSha256": "f0af4de007c8cddf4a0fc766bac969f9658e1ed62aabb4fdc5a9da045044243e",
+      "originalPdfSha256": "27826615f4188e527c5ca23b50d3b15fa25eb31faa0f686cb0c6af2da785fe99",
+      "reviewedPdfSha256": "a362f961b65129ab9760d5d5b698c13e0b119444ea8d4f6d23a53deea0352fba",
+      "decisionSha256": "fe0584501105373aef368e3f6cd03cd0b80dfa8b1df098fd32449583b0885f3c"
+    },
+    "60:lexus:20": {
+      "topic": "lexus",
+      "imageSha256": "58fac8fd7493390632c86755edade674870d4354bbb3642106d40ef4d12c0159",
+      "originalPdfSha256": "b353324d297b3a19cb1d2ad46d9fb26e311360ffdc82fa08c98a622a0e49450e",
+      "reviewedPdfSha256": "eccd9d1f8e673f7a607c683ecd8cb912b0095a79a6802d3aea348248236c4dec",
+      "decisionSha256": "874d61a864a3c51c97026d0e63ff608cc77df53a00129340f023fa0ca1caf03d"
+    }
+  }
+}

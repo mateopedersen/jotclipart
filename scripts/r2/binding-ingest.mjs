@@ -4,6 +4,7 @@ import {
   mkdirSync,
   openSync,
   closeSync,
+  fchmodSync,
   unlinkSync,
   appendFileSync,
 } from 'node:fs';
@@ -15,20 +16,15 @@ import { merkle } from '../delivery/manifest.mjs';
 import { reviewedBindingInput } from './reviewed-binding-input.mjs';
 import { createHash } from 'node:crypto';
 import assert from 'node:assert/strict';
-import { measureReservation } from '../delivery/storage-reservation.mjs';
-import { bootstrapInventoryHints } from './inventory-bootstrap.mjs';
-import { freshBindingReservation } from './binding-reservation.mjs';
-import { createSignedInventoryFetch } from '../delivery/inventory-fetch.mjs';
-import { createBoundInventoryReader, readOnlyRangeHints } from '../delivery/inventory-reader.mjs';
 import { acquireAccountWriter } from '../delivery/account-lock.mjs';
 import { verifyExistingFiles } from '../delivery/verification-batch.mjs';
-import { completeMediaWaveJournals } from './binding-waves.mjs';
-import { createReservationPrefetch } from './reservation-prefetch.mjs';
+import { completeReleaseMediaWaveJournals } from './binding-waves.mjs';
 import {
-  deliveryActorCount,
-  inventoryPageCount,
-  IN_FLIGHT_ALLOWANCE_BYTES,
-} from '../delivery/staging-limits.mjs';
+  OWNER_MANAGED_STORAGE_POLICY,
+  createReleaseWriteAuthorization,
+} from '../delivery/release-write-authorization.mjs';
+import { deliveryActorCount } from '../delivery/staging-limits.mjs';
+import { stopPrivateSession } from '../delivery/private-session.mjs';
 const args = process.argv.slice(2);
 if (!args[0] || args.includes('--help')) {
   console.log('node scripts/r2/binding-ingest.mjs reviewed-input.json [--check|--pilot]');
@@ -48,6 +44,13 @@ if (args.includes('--check')) {
       waves: input.waves.length,
       files: input.records.length,
       remoteWrites: 0,
+      storagePolicy: OWNER_MANAGED_STORAGE_POLICY,
+      root: merkle(input.records).root,
+      bindingRevision: createHash('sha256')
+        .update(JSON.stringify(input.records))
+        .digest('hex')
+        .slice(0, 40),
+      authorizedBytes: input.records.reduce((sum, file) => sum + file.bytes, 0),
     }),
   );
   process.exit(0);
@@ -59,6 +62,7 @@ process.env.WRANGLER_AUTH_FILE ??=
   '/Users/melihozcan/Library/Preferences/.wrangler/config/default.toml';
 async function main() {
   const releaseLock = acquireAccountWriter();
+  let releaseAllowed = true;
   try {
     const allFiles = selected,
       tree = merkle(allFiles);
@@ -73,7 +77,6 @@ async function main() {
       records = allFiles.map((record, index) => ({ record, proof: tree.proof(index) }));
     let remaining = records;
     const secret = randomBytes(32).toString('hex');
-    const inventoryBuckets = [];
     const sourceOrigin = process.env.UC_DELIVERY_SOURCE_ORIGIN ?? 'https://ultraclipart.com';
     if (
       sourceOrigin !== 'https://ultraclipart.com' &&
@@ -87,15 +90,24 @@ async function main() {
       bucket,
       secret,
       sourceOrigin,
-      inventoryBuckets,
-      inventoryPages: inventoryPageCount(),
+      storagePolicy: OWNER_MANAGED_STORAGE_POLICY,
+      authorizedBytes: allFiles.reduce((sum, file) => sum + file.bytes, 0),
       media: true,
     };
-    writeFileSync(
-      join(work, 'job-entry.mjs'),
-      `import {stagingWorker} from ${JSON.stringify(join(root, 'scripts/delivery/staging-worker.mjs'))};export default stagingWorker(${JSON.stringify(job)});\n`,
-      { mode: 0o600 },
-    );
+    // Validate this exact reviewed source scope before opening the private session.
+    createReleaseWriteAuthorization(job);
+    const entryPath = join(work, 'job-entry.mjs');
+    const entryFd = openSync(entryPath, 'w', 0o600);
+    try {
+      // Opening an existing path does not apply its creation mode.
+      fchmodSync(entryFd, 0o600);
+      writeFileSync(
+        entryFd,
+        `import {stagingWorker} from ${JSON.stringify(join(root, 'scripts/delivery/staging-worker.mjs'))};export default stagingWorker(${JSON.stringify(job)});\n`,
+      );
+    } finally {
+      closeSync(entryFd);
+    }
     writeFileSync(
       join(work, 'wrangler.json'),
       JSON.stringify({
@@ -108,139 +120,18 @@ async function main() {
     );
     let child,
       output,
-      lease,
-      leasePromise,
       cursor = 0,
       completed = done.size,
       nextProgress = (Math.floor(done.size / 200) + 1) * 200,
-      failed = false,
-      remoteReady = false,
-      snapshot;
-    // The next census is only a read. Each actual write continues to require
-    // a complete, fresh, signed reservation; the pending-byte allowance also
-    // covers all (at most 16) in-flight sources when a census starts.
-    const prefetch = createReservationPrefetch({
-      refresh: () => reservation(true),
-      current: () => lease,
-      canPrefetch: () => remoteReady && !failed && cursor < remaining.length,
-      onError: () => console.log('Background inventory read failed; a fresh census will be required before writing.'),
-    });
-    async function reservation(force = false) {
-      if (!force && lease && Date.now() - lease.observedAt < 40_000) return lease;
-      if (!leasePromise)
-        leasePromise = (async () => {
-          const unverified =
-            remaining.slice(cursor).reduce((sum, x) => sum + x.record.bytes, 0) +
-            IN_FLIGHT_ALLOWANCE_BYTES;
-          const measuredStartedAt = Date.now();
-          const measure = () =>
-            measureReservation(
-              accountId,
-              unverified,
-              remoteReady
-                ? createBoundInventoryReader({
-                    buckets: inventoryBuckets,
-                    fetchPage: createSignedInventoryFetch({ secret }),
-                  })
-                : undefined,
-              (inventory) => {
-                snapshot = inventory;
-              },
-            );
-          const updateRanges = (hints) => {
-            for (const current of inventoryBuckets) {
-              const fresh = hints.find(
-                (b) => b.bucket === current.bucket && b.jurisdiction === current.jurisdiction,
-              );
-              if (fresh) current.bounds = fresh.bounds;
-            }
-          };
-          const measured = remoteReady
-            ? await freshBindingReservation(measure, { onStale: updateRanges })
-            : await measure();
-          for (const current of inventoryBuckets) {
-            const fresh = measured.roster.find(
-              (b) => b.bucket === current.bucket && b.jurisdiction === current.jurisdiction,
-            );
-            if (fresh) current.bounds = fresh.bounds;
-          }
-          writeFileSync(
-            join(work, 'inventory-hints.json'),
-            JSON.stringify({ accountId, hintOnly: true, buckets: measured.roster }) + '\n',
-          );
-          lease = { ...measured, root: tree.root, bucket };
-          console.log(
-            `Fresh account reservation: ${lease.measuredBytes} + ${lease.additionalBytes} bytes; complete measurement ${Date.now() - measuredStartedAt} ms`,
-          );
-          return lease;
-        })().finally(() => (leasePromise = undefined));
-      const result = await leasePromise;
-      prefetch.schedule();
-      return result;
+      failed = false;
+    function reservation() {
+      // Every invocation receives a fresh, manifest-bound signed authorization.
+      return createReleaseWriteAuthorization(job);
     }
     try {
-      let bindings;
-      if (input.descriptor.inventoryHintBuckets) {
-        const hintsFile = resolve(input.descriptor.inventoryHintBuckets);
-        assert(hintsFile.startsWith(root + '/'));
-        const hints = JSON.parse(readFileSync(hintsFile, 'utf8'));
-        bindings = readOnlyRangeHints(hints, accountId, bucket);
-        console.log(
-          'Prior complete-census ranges are read-only hints; a fresh complete account measurement remains mandatory.',
-        );
-      }
-      if (!bindings && input.descriptor.inventoryHintJournal) {
-        const hintFile = resolve(input.descriptor.inventoryHintJournal);
-        assert(hintFile.startsWith(root + '/'));
-        const previous = JSON.parse(readFileSync(hintFile, 'utf8'));
-        const known = input.records.map((r) => ({ bucket, key: r.key }));
-        for (const file of JSON.parse(readFileSync('data/publication.json', 'utf8')).files) {
-          const url = new URL(file.url);
-          if (url.hostname === 'assets.ultraclipart.com')
-            known.push({ bucket, key: decodeURIComponent(url.pathname.slice(1)) });
-        }
-        if (input.descriptor.inventoryKnownManifest) {
-          const manifestFile = resolve(input.descriptor.inventoryKnownManifest);
-          assert(manifestFile.startsWith(root + '/'));
-          const prior = JSON.parse(readFileSync(manifestFile, 'utf8'));
-          assert.equal(prior.status, 'remote-byte-verified');
-          for (const file of prior.files) known.push({ bucket: prior.bucket, key: file.key });
-        }
-        bindings = bootstrapInventoryHints(previous, accountId, known).buckets;
-        console.log(
-          'Prior keys supply read-only partition hints; no write reservation issued until a fresh complete account census.',
-        );
-      }
-      if (!bindings) {
-        try {
-          bindings = (await reservation()).roster;
-        } catch (error) {
-          if (!Array.isArray(error.readOnlyInventoryHints)) throw error;
-          bindings = error.readOnlyInventoryHints;
-          console.log('Slow cold census: bootstrapping read-only inventory; no write lease issued');
-        }
-      }
-      inventoryBuckets.push(
-        ...bindings
-          .filter((b) => b.jurisdiction === 'default')
-          .map((b, index) => ({
-            ...b,
-            binding: b.bucket === bucket ? 'TARGET' : `INVENTORY_${index}`,
-          })),
-      );
-      writeFileSync(
-        join(work, 'job-entry.mjs'),
-        `import {stagingWorker} from ${JSON.stringify(join(root, 'scripts/delivery/staging-worker.mjs'))};export default stagingWorker(${JSON.stringify(job)});\n`,
-        { mode: 0o600 },
-      );
-      const config = JSON.parse(readFileSync(join(work, 'wrangler.json'), 'utf8'));
-      config.r2_buckets = inventoryBuckets.map((b) => ({
-        binding: b.binding,
-        bucket_name: b.bucket,
-        preview_bucket_name: b.bucket,
-      }));
-      writeFileSync(join(work, 'wrangler.json'), JSON.stringify(config));
       output = openSync(join(work, 'private-session.log'), 'a', 0o600);
+      fchmodSync(output, 0o600);
+      releaseAllowed = false;
       child = spawn(
         process.execPath,
         [
@@ -281,7 +172,6 @@ async function main() {
         await wait(1000);
       }
       if (!ready) throw Error('Private remote staging session did not become ready');
-      remoteReady = true;
       // Read existing objects through the authenticated, read-only endpoint.
       // Every body is independently hashed against this exact release root.
       // A missing object is only queued here; this path can never write it.
@@ -296,24 +186,39 @@ async function main() {
           assert(!done.has(row.path), 'Duplicate independently verified object');
           appendFileSync(
             journalPath,
-            JSON.stringify({ ...row, root: tree.root, at: new Date().toISOString(), transport: 'fresh-read-only-full-body-sha256' }) + '\n',
+            JSON.stringify({
+              ...row,
+              root: tree.root,
+              at: new Date().toISOString(),
+              transport: 'fresh-read-only-full-body-sha256',
+            }) + '\n',
           );
-          done.set(row.path, row);
+          done.set(row.path, {
+            ...row,
+            root: tree.root,
+            accountId,
+            bucket,
+            jurisdiction: 'default',
+          });
           completed++;
         },
       });
       const initiallyMissing = new Set(remaining.map(({ record }) => record.path));
-      console.log(JSON.stringify({ readOnlyVerified: done.size, missingForFreshReservedWrite: remaining.length, total: allFiles.length }));
+      console.log(
+        JSON.stringify({
+          readOnlyVerified: done.size,
+          missingForReleaseScopedWrite: remaining.length,
+          total: allFiles.length,
+        }),
+      );
       nextProgress = (Math.floor(completed / 200) + 1) * 200;
-      // Read-only verification cannot authorize a write. Re-read the complete
-      // account roster and current objects before issuing any staging lease.
-      await reservation(true);
+      // Read-only receipts do not authorize writes; each transfer is signed separately.
       console.log(
         `Private staging ready: ${remaining.length} remaining of ${allFiles.length}, root ${tree.root}`,
       );
       async function transfer(batch, local = false, leaseRetries = 0) {
         const current = await reservation();
-        const { roster: _partitionHints, inventoryScope: _scopeEvidence, ...writeLease } = current;
+        const writeLease = current;
         const body = {
           lease: writeLease,
           signature: createHmac('sha256', Buffer.from(secret, 'hex'))
@@ -341,9 +246,12 @@ async function main() {
             if (response.status === 409) {
               await response.body.cancel();
               if (leaseRetries >= 3)
-                throw Object.assign(Error('Fresh storage lease could not be acquired in time'), {
-                  permanent: true,
-                });
+                throw Object.assign(
+                  Error('Fresh release authorization could not be acquired in time'),
+                  {
+                    permanent: true,
+                  },
+                );
               await reservation(true);
               return transfer(batch, local, leaseRetries + 1);
             }
@@ -371,7 +279,13 @@ async function main() {
                 journalPath,
                 JSON.stringify({ ...row, root: tree.root, at: new Date().toISOString() }) + '\n',
               );
-              done.set(row.path, row);
+              done.set(row.path, {
+                ...row,
+                root: tree.root,
+                accountId,
+                bucket,
+                jurisdiction: 'default',
+              });
               completed++;
             }
             if (completed >= nextProgress || completed === allFiles.length) {
@@ -411,32 +325,56 @@ async function main() {
         );
         const failure = results.find((r) => r.status === 'rejected');
         if (failure) throw failure.reason;
-        console.log(JSON.stringify({ transferredWave: wave, verified: done.size, total: allFiles.length, pilot, finalInventoryPending: true }));
+        console.log(
+          JSON.stringify({
+            transferredWave: wave,
+            verified: done.size,
+            total: allFiles.length,
+            pilot,
+            accountUsageMeasured: false,
+          }),
+        );
       }
       if (
         done.size !== allFiles.length ||
         allFiles.some((record) => done.get(record.path)?.sha256 !== record.sha256)
       )
         throw Error('Incomplete delivery verification');
-      // Every write already used a fresh signed capacity reservation and its
-      // own full-body readback. One fresh complete post-transfer census now
-      // confirms all waves before any final wave journal can be created.
-      // A speculative census may have started while writes were still in
-      // flight. Finish it and then measure again for final evidence.
-      await prefetch.stop();
-      await reservation(true);
-      const selectedWaves = input.waves.filter((wave) => records.some(({ record }) => record.wave === wave.number));
-      const journals = completeMediaWaveJournals({ records, waves: selectedWaves, done, snapshot, lease, missing: initiallyMissing, startedAt: verificationStartedAt, completedAt: new Date().toISOString() });
+      // All source bytes are independently read back before any wave receipt.
+      const selectedWaves = input.waves.filter((wave) =>
+        records.some(({ record }) => record.wave === wave.number),
+      );
+      const journals = completeReleaseMediaWaveJournals({
+        records,
+        waves: selectedWaves,
+        done,
+        job,
+        missing: initiallyMissing,
+        startedAt: verificationStartedAt,
+        completedAt: new Date().toISOString(),
+      });
       for (const [index, journal] of journals.entries()) {
         const wave = selectedWaves[index].number;
-        writeFileSync(join(work, `wave-${String(wave).padStart(2, '0')}.journal.json`), JSON.stringify(journal, null, 2) + '\n');
+        writeFileSync(
+          join(work, `wave-${String(wave).padStart(2, '0')}.journal.json`),
+          JSON.stringify(journal, null, 2) + '\n',
+        );
       }
-      console.log(JSON.stringify({ finalCompleteInventoryVerified: true, journaledWaves: journals.length, verified: done.size }));
+      console.log(
+        JSON.stringify({
+          allRequestedObjectsIndependentlyByteVerified: true,
+          accountUsageMeasured: false,
+          journaledWaves: journals.length,
+          verified: done.size,
+        }),
+      );
       writeFileSync(
         manifestPath,
         JSON.stringify({
           schema: 1,
           status: 'remote-byte-verified',
+          storagePolicy: OWNER_MANAGED_STORAGE_POLICY,
+          accountUsageMeasured: false,
           revision,
           bucket,
           root: tree.root,
@@ -458,15 +396,24 @@ async function main() {
         }) + '\n',
       );
     } finally {
-      await prefetch.stop();
-      if (child) {
-        child.kill('SIGTERM');
-        await Promise.race([new Promise((resolve) => child.once('exit', resolve)), wait(5000)]);
+      try {
+        await stopPrivateSession(child);
+        releaseAllowed = true;
+      } finally {
+        if (output !== undefined) closeSync(output);
+        // Only a confirmed stopped child allows removal of its private input.
+        if (releaseAllowed) {
+          try {
+            unlinkSync(entryPath);
+          } catch (error) {
+            if (error.code !== 'ENOENT') throw error;
+          }
+        }
       }
-      if (output !== undefined) closeSync(output);
     }
   } finally {
-    releaseLock();
+    // If process termination cannot be confirmed, preserve the account lock.
+    if (releaseAllowed) releaseLock();
   }
 }
 await main();

@@ -69,6 +69,7 @@ export async function measureReservation(
   remainingBytes,
   listObjects,
   onVerifiedInventory,
+  { onBucketMeasured } = {},
 ) {
   const endpoint = `https://${accountId}.r2.cloudflarestorage.com`;
   let token;
@@ -115,15 +116,16 @@ export async function measureReservation(
     },
     proveAbsent: transport.proveAbsent,
     enumerationSource: transport.enumerationSource,
+    bucketConcurrency: 4,
+    onBucketMeasured,
   });
-  const roster = inventoryHints(inventory);
   try {
     const evidence = reservationEvidence(inventory, remainingBytes);
     onVerifiedInventory?.(inventory);
     return evidence;
   } catch (error) {
     if (error.message === 'Fresh complete account inventory required')
-      error.readOnlyInventoryHints = roster;
+      error.readOnlyInventoryHints = inventoryHints(inventory);
     throw error;
   }
 }

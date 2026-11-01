@@ -1,6 +1,9 @@
 import type { DownloadDetails } from './search-index';
+import { hasUsableFileReview, type FileReviewArtwork } from './file-review';
 
-interface DownloadArtwork extends Omit<DownloadDetails, 'pdfColorSpace'> {
+interface DownloadArtwork
+  extends Omit<DownloadDetails, 'pdfColorSpace'>,
+    Omit<FileReviewArtwork, 'files' | 'reviewStatus' | 'pdf'> {
   pdfColorSpace?: string;
   published: boolean;
   indexable: boolean;
@@ -15,7 +18,7 @@ export function downloadDetails(item: DownloadArtwork): DownloadDetails | undefi
     !item.published ||
     !item.indexable ||
     item.licenseStatus !== 'OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY' ||
-    item.reviewStatus !== 'FORMAT_AND_PAIR_REVIEW_PASSED'
+    !hasUsableFileReview(item)
   )
     return undefined;
   return {
