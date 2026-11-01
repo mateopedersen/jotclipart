@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {canonicalUrl,sitemapUrls,contentFingerprint,changes,assertProduction,sendChanges} from '../scripts/seo/indexnow-release.mjs';
+import {canonicalUrl,sitemapUrls,contentFingerprint,changes,notificationRevisions,assertProduction,sendChanges} from '../scripts/seo/indexnow-release.mjs';
 const revision='a'.repeat(40),root='b'.repeat(64),url='https://ultraclipart.com/clipart/macbook/';
 test('only canonical public sitemap URLs can be submitted',()=>{
   for(const bad of ['https://other.example/','https://ultraclipart.com/edit/x/','https://ultraclipart.com/clipart/macbook/?q=x','https://ultraclipart.com/clipart/macbook/#x','http://ultraclipart.com/'])assert.throws(()=>canonicalUrl(bad));
@@ -38,6 +38,15 @@ test('notification accepts only the explicitly verified separate renderer and co
   assert.throws(()=>assertProduction(project,{...release,controlRevision:revision},manifest,revision,html,control));
   assert.throws(()=>assertProduction(project,release,manifest,revision,html,'invalid'));
 });
+test('notification retry can pin exact live revisions from a descendant tooling checkout',()=>{
+  const head='c'.repeat(40), control='d'.repeat(40), rendered='e'.repeat(40);
+  const isAncestor=(a,b)=>a===control&&b===head || a===rendered&&b===control;
+  assert.deepEqual(notificationRevisions({head,isAncestor}),{revision:head,controlRevision:head});
+  assert.deepEqual(notificationRevisions({head,controlRevision:control,renderedRevision:rendered,isAncestor}),{revision:rendered,controlRevision:control});
+  assert.throws(()=>notificationRevisions({head,controlRevision:'f'.repeat(40),isAncestor}),/not an ancestor/);
+  assert.throws(()=>notificationRevisions({head,controlRevision:control,renderedRevision:'f'.repeat(40),isAncestor}),/not an ancestor/);
+  assert.throws(()=>notificationRevisions({head,controlRevision:'bad',isAncestor}),/Invalid/);
+});
 test('accepted batches survive later failure and cannot be replayed on retry',async()=>{
   const current=Object.fromEntries(Array.from({length:10001},(_,i)=>[`https://ultraclipart.com/art/item-${i}/`,'hash']));let calls=0,saved={};
   await assert.rejects(sendChanges({previous:{},current,config:{host:'ultraclipart.com',key:'a'.repeat(32)},request:async()=>({status:++calls===1?200:429}),save:async s=>{saved=s},wait:async()=>{}}),/429/);
@@ -47,6 +56,52 @@ test('accepted batches survive later failure and cannot be replayed on retry',as
 });
 test('deleted URLs require real 404 or 410 before notifying',async()=>{
   let posts=0;await assert.rejects(sendChanges({previous:{[url]:'old'},current:{},config:{},request:async(_,o)=>{if(o.method==='POST')posts++;return{status:200}},save:async()=>{}}),/still live/);assert.equal(posts,0);
+});
+
+test('permanent same-site redirect to exact verified canonical content is safely notified',async()=>{
+  const target='https://ultraclipart.com/clipart/laptop/';
+  const html=`<link rel="canonical" href="${target}"><main><h1>Laptop</h1></main>`;
+  for(const status of [301,308]){
+    const sent=[],saves=[];
+    const result=await sendChanges({previous:{[url]:'old'},current:{[target]:contentFingerprint(html)},config:{host:'ultraclipart.com',key:'a'.repeat(32)},
+      request:async(u,o)=>{if(o.method==='HEAD'){assert.equal(u,url);return {status,headers:new Headers({location:'/clipart/laptop/'})};}
+        if(o.method==='GET'){assert.equal(u,target);assert.equal(o.redirect,'manual');return {status:200,text:async()=>html};}
+        sent.push(...JSON.parse(o.body).urlList);return {status:200};},save:async state=>saves.push(state)});
+    assert.deepEqual(new Set(sent),new Set([url,target]));assert.equal(result.redirected,1);assert.equal(result.removed,1);
+    assert.equal(saves.at(-1)[url],undefined);assert.equal(saves.at(-1)[target],contentFingerprint(html));
+  }
+});
+
+test('redirect notification fails closed for unsafe destinations, stale content and temporary moves',async()=>{
+  const target='https://ultraclipart.com/clipart/laptop/';
+  const html=`<link rel="canonical" href="${target}"><main><h1>Laptop</h1></main>`;
+  const current={[target]:contentFingerprint(html)};
+  const cases=[
+    {status:302,location:target}, {status:301,location:'https://elsewhere.example/'},
+    {status:301,location:url}, {status:301,location:target+'?q=x'},
+    {status:301,location:'https://ultraclipart.com/clipart/unknown/'},
+    {status:301,location:target,targetStatus:301},
+    {status:301,location:target,targetHtml:html.replace('Laptop','Changed')},
+    {status:301,location:target,targetHtml:html.replace(target,url)},
+    {status:301,location:target,targetHtml:'<meta name="robots" content="noindex">'+html},
+    {status:301,location:target,targetRobots:'noindex'},
+    {status:301},
+  ];
+  for(const row of cases){let posts=0;
+    await assert.rejects(sendChanges({previous:{[url]:'old'},current,config:{},save:async()=>{},request:async(u,o)=>{
+      if(o.method==='HEAD')return {status:row.status,headers:new Headers(row.location?{location:row.location}:{})};
+      if(o.method==='GET')return {status:row.targetStatus??200,headers:new Headers(row.targetRobots?{'x-robots-tag':row.targetRobots}:{}),text:async()=>row.targetHtml??html};
+      posts++;return {status:200};
+    }}));assert.equal(posts,0);
+  }
+});
+
+test('real deletions still notify only after a confirmed 404 or 410',async()=>{
+  for(const status of [404,410]){let posts=0,last;
+    const result=await sendChanges({previous:{[url]:'old'},current:{},config:{host:'ultraclipart.com',key:'a'.repeat(32)},
+      request:async(_,o)=>o.method==='HEAD'?{status}:(posts++,{status:200}),save:async value=>{last=value;}});
+    assert.equal(posts,1);assert.equal(result.removed,1);assert.equal(result.redirected,0);assert.equal(last[url],undefined);
+  }
 });
 
 test('userinfo and noncanonical schemes are never public submission URLs',()=>{

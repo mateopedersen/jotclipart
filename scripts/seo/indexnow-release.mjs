@@ -106,6 +106,19 @@ export function changes(previous, current) {
   };
 }
 
+/** A retry may run from a newer tooling-only checkout, but it must still bind
+ * to the exact live control and rendered revisions confirmed by Cloudflare. */
+export function notificationRevisions({ head, renderedRevision, controlRevision, isAncestor }) {
+  const control = controlRevision ?? head, revision = renderedRevision ?? control;
+  if (![head, control, revision].every((value) => /^[a-f0-9]{40}$/.test(value ?? '')))
+    throw Error('Invalid rendered or control revision');
+  if (control !== head && !isAncestor(control, head))
+    throw Error('The live control revision is not an ancestor of this checkout');
+  if (revision !== control && !isAncestor(revision, control))
+    throw Error('The rendered revision is not an ancestor of the live control revision');
+  return { revision, controlRevision: control };
+}
+
 export function assertProduction(project, release, manifest, revision, html, controlRevision = revision) {
   if (!/^[a-f0-9]{40}$/.test(revision ?? '') || !/^[a-f0-9]{40}$/.test(controlRevision ?? ''))
     throw Error('Invalid rendered or control revision');
@@ -142,14 +155,39 @@ export async function sendChanges({
 }) {
   const delta = changes(previous, current);
   for (const url of [...delta.updated, ...delta.removed]) canonicalUrl(url);
+  const verifiedTargets = new Set();
+  let redirected = 0;
   for (const url of delta.removed) {
     const response = await request(url, {
       method: 'HEAD',
       redirect: 'manual',
       signal: AbortSignal.timeout(30000),
     });
-    if (![404, 410].includes(response.status))
+    if ([404, 410].includes(response.status)) continue;
+    if (![301, 308].includes(response.status))
       throw Error('Removed URL is still live; no deletion notice sent');
+    const location = response.headers?.get('location');
+    if (!location) throw Error('Permanent redirect has no destination');
+    const destination = canonicalUrl(new URL(location, url).href);
+    if (destination === url || !Object.hasOwn(current, destination))
+      throw Error('Permanent redirect destination is not a current canonical page');
+    if (!verifiedTargets.has(destination)) {
+      const target = await request(destination, {
+        method: 'GET', redirect: 'manual', signal: AbortSignal.timeout(30000),
+      });
+      if (target.status !== 200) throw Error('Permanent redirect destination is not directly live');
+      if (/\b(noindex|none)\b/i.test(target.headers?.get('x-robots-tag') ?? ''))
+        throw Error('Permanent redirect destination has an indexing block');
+      const html = await target.text();
+      const canonical = [...html.matchAll(/<link\b[^>]*>/gi)]
+        .map((match) => attributes(match[0]))
+        .find((entry) => entry.rel?.toLowerCase() === 'canonical')?.href;
+      if (!canonical || canonicalUrl(canonical) !== destination ||
+          contentFingerprint(html) !== current[destination])
+        throw Error('Permanent redirect destination does not match the verified current content');
+      verifiedTargets.add(destination);
+    }
+    redirected++;
   }
   const pending = [...delta.updated, ...delta.removed],
     state = { ...previous },
@@ -187,7 +225,7 @@ export async function sendChanges({
     await save({ ...state }, [...receipts]);
     if (offset + 10000 < pending.length) await wait(1100);
   }
-  return { updated: delta.updated.length, removed: delta.removed.length, receipts };
+  return { updated: delta.updated.length, removed: delta.removed.length, redirected, receipts };
 }
 
 /** Shared by linked worktrees; never store accepted state in disposable dist/work. */
@@ -276,7 +314,7 @@ export function prepareIndexNowSnapshot({ root, target, revision, manifest }) {
   return { urls: Object.keys(fingerprints).length, revision };
 }
 
-export async function runIndexNow({ root, send = false, initialize = false, attempts = 1, renderedRevision }) {
+export async function runIndexNow({ root, send = false, initialize = false, attempts = 1, renderedRevision, controlRevision: requestedControlRevision }) {
   const config = JSON.parse(readFileSync(join(root, 'config/indexnow.json'), 'utf8'));
   if (
     config.host !== 'ultraclipart.com' ||
@@ -285,15 +323,15 @@ export async function runIndexNow({ root, send = false, initialize = false, atte
     !/^[a-f0-9]{32}$/.test(config.accountId)
   )
     throw Error('Invalid site-scoped IndexNow configuration');
-  const controlRevision = execFileSync('git', ['rev-parse', 'HEAD'], {
+  const head = execFileSync('git', ['rev-parse', 'HEAD'], {
     cwd: root,
     encoding: 'utf8',
   }).trim();
-  const revision = renderedRevision ?? controlRevision;
-  if (!/^[a-f0-9]{40}$/.test(revision) || !/^[a-f0-9]{40}$/.test(controlRevision))
-    throw Error('Invalid rendered or control revision');
-  if (revision !== controlRevision)
-    execFileSync('git', ['merge-base', '--is-ancestor', revision, controlRevision], { cwd:root });
+  const {revision, controlRevision} = notificationRevisions({head, renderedRevision,
+    controlRevision:requestedControlRevision, isAncestor:(ancestor, descendant)=>{
+      try {execFileSync('git',['merge-base','--is-ancestor',ancestor,descendant],{cwd:root,stdio:'ignore'});return true;}
+      catch {return false;}
+    }});
   const manifest = JSON.parse(
     readFileSync(join(root, 'work/delivery', revision, 'verified-manifest.json'), 'utf8'),
   );
@@ -453,10 +491,12 @@ export async function runIndexNow({ root, send = false, initialize = false, atte
 if (process.argv[1] && resolve(process.argv[1]) === resolve(import.meta.filename)) {
   const args = process.argv.slice(2);
   try {
-    const renderedIndex = args.indexOf('--rendered-revision');
-    if (renderedIndex !== -1 && (!/^[a-f0-9]{40}$/.test(args[renderedIndex + 1] ?? '') ||
-        args.lastIndexOf('--rendered-revision') !== renderedIndex))
-      throw Error('Invalid rendered revision argument');
+    const revisionArgument = (name) => {
+      const index = args.indexOf(name);
+      if (index !== -1 && (!/^[a-f0-9]{40}$/.test(args[index + 1] ?? '') || args.lastIndexOf(name) !== index))
+        throw Error(`Invalid ${name} argument`);
+      return index === -1 ? undefined : args[index + 1];
+    };
     console.log(
       JSON.stringify(
         await runIndexNow({
@@ -464,7 +504,8 @@ if (process.argv[1] && resolve(process.argv[1]) === resolve(import.meta.filename
           send: args.includes('--send'),
           initialize: args.includes('--initialize'),
           attempts: args.includes('--wait') ? 12 : 1,
-          renderedRevision: renderedIndex === -1 ? undefined : args[renderedIndex + 1],
+          renderedRevision: revisionArgument('--rendered-revision'),
+          controlRevision: revisionArgument('--control-revision'),
         }),
       ),
     );
