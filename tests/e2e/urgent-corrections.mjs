@@ -70,8 +70,10 @@ try {
   for (let i = 1; i < states.length; i++) assert.notEqual(states[i], states[i - 1], 'Recent row should alternate actual color and monochrome artwork');
   for (let i = 0; i < 15; i++) {
     const image = cards.nth(i).locator('img').first();
-    await image.scrollIntoViewIfNeeded();
-    await expect.poll(() => image.evaluate((node) => node.complete && node.naturalWidth > 0)).toBe(true);
+    // Headless WebKit may consider a lazy image visible without scrolling it
+    // into the viewport. Use an actual page scroll before waiting for bytes.
+    await image.evaluate((element) => window.scrollTo(0, window.scrollY + element.getBoundingClientRect().top - 80));
+    await expect.poll(() => image.evaluate((node) => node.complete && node.naturalWidth > 0), { timeout: 30000 }).toBe(true);
   }
   if (live) {
     const redirect = await page.request.get(base + '/clipart/300/', { maxRedirects: 0 });
