@@ -2,9 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { loadTypescript } from './helpers/typescript.mjs';
-const { RelatedIndex, rank, CANDIDATE_LIMIT, SNAPSHOT_LIMIT } = await loadTypescript(
-  'src/lib/related/engine.ts',
-);
+const { RelatedIndex, compactBrowserSnapshot, rank, CANDIDATE_LIMIT, SNAPSHOT_LIMIT } =
+  await loadTypescript('src/lib/related/engine.ts');
 const { normalize } = await loadTypescript('src/lib/related/normalize.ts');
 const { artworkCardSummary } = await loadTypescript('src/lib/related/summaries.ts');
 const catalog = JSON.parse(readFileSync('data/art.json'));
@@ -508,7 +507,7 @@ test('a musical keyboard stays a secondary mention rather than a computer subjec
 test('every published catalog page has reviewed, deduplicated discovery across all registered topics', () => {
   for (const source of index.profiles.values()) {
     if (!source.publicationEligible) continue;
-    const snapshot = index.snapshot(source.item.id);
+    const snapshot = compactBrowserSnapshot(index.snapshot(source.item.id));
     const cards = [...snapshot.alternatives, ...snapshot.companions, ...snapshot.collection];
     assert.ok(cards.length > 0, source.item.id);
     assert.ok(cards.length <= SNAPSHOT_LIMIT);

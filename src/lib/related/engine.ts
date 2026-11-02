@@ -43,6 +43,56 @@ export interface Snapshot {
   examined: number;
   algorithm: string;
 }
+export type BrowserRelatedCard = Omit<RelatedCard, 'thumb' | 'thumbSrcSet'>;
+export type BrowserSnapshot = Omit<Snapshot, 'alternatives' | 'companions' | 'collection'> & {
+  alternatives: BrowserRelatedCard[];
+  companions: BrowserRelatedCard[];
+  collection: BrowserRelatedCard[];
+};
+const BROWSER_SNAPSHOT_BYTE_LIMIT = 60_000;
+const snapshotEncoder = new TextEncoder();
+
+/**
+ * Keep the embedded browser payload below the per-script limit while preserving
+ * the server-rendered first row and highest-ranked recommendations. Thumbnail
+ * fields are unnecessary after hydration: cards load their full image URL.
+ */
+export function compactBrowserSnapshot(snapshot: Snapshot): BrowserSnapshot {
+  const compact = (items: RelatedCard[]) =>
+    items.map(({ thumb: _thumb, thumbSrcSet: _thumbSrcSet, ...item }) => item);
+  const result: BrowserSnapshot = {
+    ...snapshot,
+    alternatives: compact(snapshot.alternatives),
+    companions: compact(snapshot.companions),
+    collection: compact(snapshot.collection),
+  };
+  const base: BrowserSnapshot = {
+    ...result,
+    alternatives: [],
+    companions: [],
+    collection: [],
+  };
+  const bytes = (value: unknown) => snapshotEncoder.encode(JSON.stringify(value)).byteLength;
+  let total = bytes(base);
+  const groups = [result.collection, result.companions, result.alternatives];
+  const weights = groups.map((items) => items.map((item) => bytes(item)));
+  for (const group of weights)
+    total += group.reduce((sum, itemBytes) => sum + itemBytes, 0) + Math.max(0, group.length - 1);
+
+  // Remove lowest-ranked collection cards first, then companions, then
+  // same-subject alternatives. This keeps the strongest matches available.
+  for (const [index, items] of groups.entries()) {
+    const itemBytes = weights[index];
+    while (total > BROWSER_SNAPSHOT_BYTE_LIMIT && items.length > 0) {
+      const before = items.length;
+      items.pop();
+      total -= itemBytes.pop()! + (before > 1 ? 1 : 0);
+    }
+  }
+  if (total > BROWSER_SNAPSHOT_BYTE_LIMIT)
+    throw new Error('Related artwork browser snapshot exceeds its byte budget');
+  return result;
+}
 function intersection(a: string[], b: string[]) {
   return a.filter((value) => b.includes(value));
 }

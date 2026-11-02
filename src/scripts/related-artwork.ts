@@ -1,11 +1,11 @@
 import { FAVORITES_KEY, parseFavoriteIds, toggleStoredFavorite } from '../lib/favorites-storage';
-import type { Mode, RelatedCard, Snapshot } from '../lib/related/engine';
+import type { BrowserRelatedCard, BrowserSnapshot, Mode } from '../lib/related/engine';
 export function initRelatedArtwork() {
   const root = document.querySelector<HTMLElement>('[data-related-root]');
   if (!root || root.dataset.ready) return;
   const json = root.querySelector('[data-related-snapshot]');
   if (!json) return;
-  let snapshot: Snapshot;
+  let snapshot: BrowserSnapshot;
   try {
     snapshot = JSON.parse(json.textContent ?? '');
   } catch {
@@ -158,7 +158,7 @@ export function initRelatedArtwork() {
     if (img.complete && img.naturalWidth === 0) imageError(card);
     observer?.observe(card);
   }
-  function createCard(data: RelatedCard) {
+  function createCard(data: BrowserRelatedCard) {
     const node = sample!.cloneNode(true) as HTMLElement;
     node.dataset.relatedId = data.id;
     node.dataset.relatedGroup = data.group;

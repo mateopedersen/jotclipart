@@ -548767,544 +548767,710 @@
       "status": "reviewed-from-image",
       "sourceSha256": "642d24490253d67227269e7eacf4498feab1a6b3c678e90e3410e926a4d28005",
       "imageSha256": "642d24490253d67227269e7eacf4498feab1a6b3c678e90e3410e926a4d28005",
-      "inputMetadataSha256": "2d27eb76aa37d05289a7f709a02833922619eae7b9c4b5489e76d507a85fa5a8",
-      "inputContextSha256": "f248d2dc6ba06df09d1eb0259ad9c7cadb733c487722793e3a01ba4b00d38933",
+      "inputMetadataSha256": "8a7944d067d2627b10e022e7f9183fdf1ffda86ee5b85f683201873a2598c51e",
+      "inputContextSha256": "c4a983c4d7816d801189d51935d9d876d6dbf568fde7339283b9f67508523200",
       "copy": {
-        "title": "Secret Agent in a Cream Dinner Jacket",
-        "alt": "An illustrated dark-haired agent adjusts a cuff beneath black lapels.",
-        "description": "Crossed steps and polished black shoes create a poised walking pose."
+        "title": "007-Inspired Agent in a Cream Dinner Jacket",
+        "alt": "A dark-haired illustrated agent crosses one foot over the other while adjusting a cream jacket cuff.",
+        "description": "Black lapels, a bow tie, slim trousers and polished shoes complete the poised walking look."
       },
       "observations": [
-        "An illustrated dark-haired agent adjusts a cuff beneath black lapels.",
-        "Crossed steps and polished black shoes create a poised walking pose."
+        "A dark-haired illustrated agent crosses one foot over the other while adjusting a cream jacket cuff.",
+        "Black lapels, a bow tie, slim trousers and polished shoes complete the poised walking look."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.796012+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-001.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-002",
       "status": "reviewed-from-image",
       "sourceSha256": "26b2f0c5f59f5f984e57d6611324f8f97203bc0065ea32c1529adfb6f971dc87",
       "imageSha256": "26b2f0c5f59f5f984e57d6611324f8f97203bc0065ea32c1529adfb6f971dc87",
-      "inputMetadataSha256": "152aa3f8453c031096ea1f640863d8ef9a183c94a3ed1f3106b7de8cd0affb2a",
-      "inputContextSha256": "ef646e604ddfaa9226e0484089855d92fc6647365a6acea251b31185ca4b0a09",
+      "inputMetadataSha256": "72b0faea4d57ac2f466b812a572d7d698f04012b4ef29b5a6581c0dd7113e955",
+      "inputContextSha256": "e05e6a096c00a856c01c4cabeca67fc2b8ba956e2cf3b663a20ae569e9155e4c",
       "copy": {
-        "title": "Spy Toasting in an Armchair",
-        "alt": "An illustrated agent in a dark navy tuxedo raises a shallow glass.",
-        "description": "Crossed legs rest above a low burgundy leather-style chair."
+        "title": "007-Inspired Spy Raising a Toast",
+        "alt": "A tuxedoed figure raises a shallow cocktail glass from a burgundy armchair.",
+        "description": "Crossed legs rest above the chair seat, with the dark navy jacket buttoned at the waist."
       },
       "observations": [
-        "An illustrated agent in a dark navy tuxedo raises a shallow glass.",
-        "Crossed legs rest above a low burgundy leather-style chair."
+        "A tuxedoed figure raises a shallow cocktail glass from a burgundy armchair.",
+        "Crossed legs rest above the chair seat, with the dark navy jacket buttoned at the waist."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.797991+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-002.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-003",
       "status": "reviewed-from-image",
       "sourceSha256": "da9c0c76b09a6d1025993707538e51051ffb82828c4bd1c45d1753f81f506e44",
       "imageSha256": "da9c0c76b09a6d1025993707538e51051ffb82828c4bd1c45d1753f81f506e44",
-      "inputMetadataSha256": "0f8511b84c5c9c4fbfd72b82f330802408cbc63ac042039c96eee62c479a83d4",
-      "inputContextSha256": "43924899d79782a5fe31c62901811204fcc2e6264f89f73902915e28bc3388d7",
+      "inputMetadataSha256": "ec38cc8a30ba8e369433a1a209002aab02441119f1c5995d66b7c1b09cee7249",
+      "inputContextSha256": "9af022ecb483b66b7cddd7a90705147564be0391916d563531012dcf5e8a10ab",
       "copy": {
-        "title": "Spy Reading an Invitation",
-        "alt": "An illustrated gray-haired agent wears a burgundy velvet-style dinner jacket.",
-        "description": "Both hands hold a pale folded invitation below a black bow tie."
+        "title": "007-Inspired Agent Reading a Sealed Invitation",
+        "alt": "A silver-haired figure in a burgundy dinner jacket holds a cream invitation beneath a black bow tie.",
+        "description": "Both hands steady the folded card as the agent studies its front."
       },
       "observations": [
-        "An illustrated gray-haired agent wears a burgundy velvet-style dinner jacket.",
-        "Both hands hold a pale folded invitation below a black bow tie."
+        "A silver-haired figure in a burgundy dinner jacket holds a cream invitation beneath a black bow tie.",
+        "Both hands steady the folded card as the agent studies its front."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.799691+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-003.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-004",
       "status": "reviewed-from-image",
       "sourceSha256": "6e1b1f7732ffb0f0a547314d67f5310d1f1712c593511634af0fb5c558795ef5",
       "imageSha256": "6e1b1f7732ffb0f0a547314d67f5310d1f1712c593511634af0fb5c558795ef5",
-      "inputMetadataSha256": "1072e5e9ba14b3454aac9c6bff61cd9b9edd78fc56a234a5c72eda4e60a638a9",
-      "inputContextSha256": "206b255477a06bb400f955084a3ab7b3f9adddfb0e9785d46dd3c4cd0f822d4a",
+      "inputMetadataSha256": "7ddb91a045feb64526ff2b939c3f2dcc724a71f26c6691806690e41f8fc23e2d",
+      "inputContextSha256": "1352195a9169665984e0d7a63b598b7c3557e408fa535b48424527795668b1f0",
       "copy": {
-        "title": "Agent Preparing to Dive",
-        "alt": "An illustrated agent crouches in a dark wetsuit with orange seams.",
-        "description": "One hand lifts diving goggles beside a pair of black fins."
+        "title": "007-Inspired Diver Preparing to Dive",
+        "alt": "A crouching figure in a dark wetsuit with orange seams lifts a pair of diving goggles.",
+        "description": "Black fins lie beside the figure, ready for an underwater spy-adventure scene."
       },
       "observations": [
-        "An illustrated agent crouches in a dark wetsuit with orange seams.",
-        "One hand lifts diving goggles beside a pair of black fins."
+        "A crouching figure in a dark wetsuit with orange seams lifts a pair of diving goggles.",
+        "Black fins lie beside the figure, ready for an underwater spy-adventure scene."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.800963+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-004.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-005",
       "status": "reviewed-from-image",
       "sourceSha256": "468da29b10da9d4d7d7a806357d57883ef723996d97463ac2d01bee9ba3ff7a5",
       "imageSha256": "468da29b10da9d4d7d7a806357d57883ef723996d97463ac2d01bee9ba3ff7a5",
-      "inputMetadataSha256": "5da939bf24a2bac90a399c1d42197d699ee5115b52f33cbe3ac3b80c86f70e78",
-      "inputContextSha256": "91eb7ee2e59f10f5ee7c3e7d8d59760caa193eef46dd0ffe3b053bad6e4ddf4c",
+      "inputMetadataSha256": "445ec97cb6a5083996c87b9e849474083184a1d96ef05fdf3fd15652619d6fe2",
+      "inputContextSha256": "b2ef39e6345dce6c8c6020acca668893684c53494d590480a6d2707c95070ba9",
       "copy": {
-        "title": "Spy on Skis",
-        "alt": "An illustrated skier wears a bright blue jacket and pale trousers.",
-        "description": "Two poles and a spray of snow frame the angled dark skis."
+        "title": "007-Inspired Ski Agent in a Blue Jacket",
+        "alt": "A skier in a bright blue jacket and pale trousers glides on dark skis with two poles.",
+        "description": "A spray of snow marks the turn across the slope."
       },
       "observations": [
-        "An illustrated skier wears a bright blue jacket and pale trousers.",
-        "Two poles and a spray of snow frame the angled dark skis."
+        "A skier in a bright blue jacket and pale trousers glides on dark skis with two poles.",
+        "A spray of snow marks the turn across the slope."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.802201+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-005.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-006",
       "status": "reviewed-from-image",
       "sourceSha256": "45289c69f8b5fb3de897e6e2c62e28f1d368293281ad8f67fd472abd9cae8423",
       "imageSha256": "45289c69f8b5fb3de897e6e2c62e28f1d368293281ad8f67fd472abd9cae8423",
-      "inputMetadataSha256": "97ca35608c890b2eeb8c07ac6aa4642c3863488cd987f87b6722685b8c7622ed",
-      "inputContextSha256": "a09e56bdb7162b4b46fd853ef9e3b96bdfdc1d2bc1bf2efde990efc771aac0d6",
+      "inputMetadataSha256": "7dcc209823c5e3c8de95dcb04ff040193345eed79422b555aee96f8c9e6dc77d",
+      "inputContextSha256": "4b23e8d6a6cd6f75b47707c7cada45ded5605b9cbb34f0c68c1d6ce7dd325fb5",
       "copy": {
-        "title": "Agent Reading a Map",
-        "alt": "An illustrated traveler wears a pale green shirt and cream trousers.",
-        "description": "Both hands hold a folded map above a narrow brown belt."
+        "title": "007-Inspired Agent Studying a Folded Map",
+        "alt": "A traveler in a pale green shirt studies a folded map while walking.",
+        "description": "Cream trousers and a narrow brown belt keep the outfit understated."
       },
       "observations": [
-        "An illustrated traveler wears a pale green shirt and cream trousers.",
-        "Both hands hold a folded map above a narrow brown belt."
+        "A traveler in a pale green shirt studies a folded map while walking.",
+        "Cream trousers and a narrow brown belt keep the outfit understated."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.803339+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-006.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-007",
       "status": "reviewed-from-image",
       "sourceSha256": "6aa5ac9978ca1f27e96e9a1480b49cb6c5c82be64a29eea90f7568f37fb01d74",
       "imageSha256": "6aa5ac9978ca1f27e96e9a1480b49cb6c5c82be64a29eea90f7568f37fb01d74",
-      "inputMetadataSha256": "0c107a57b9f1c698de926bd165c32b4cfb5fb7df9362072186af1167add86b53",
-      "inputContextSha256": "19c6d6db04963c95d8754a8026b3a6f8e90a6e332896bbddcd0d2a6d03f65b14",
+      "inputMetadataSha256": "14ae6e7cc5ab34d36d822c3024a9866fbf6c6be5e5a7ce61b5d9119dba1f4f53",
+      "inputContextSha256": "88c05e00c589f27c64620b6fa7e96e243cc80645bcd4a29616304b69c4400616",
       "copy": {
-        "title": "Agent Descending a Rope",
-        "alt": "A dark-clothed illustrated agent hangs from a vertical rope.",
-        "description": "A red climbing harness and bent legs detail the suspended pose."
+        "title": "007-Inspired Spy Descending on a Rope",
+        "alt": "A dark-clothed agent hangs from a vertical rope with bent legs and a red harness.",
+        "description": "The suspended pose suggests a covert descent."
       },
       "observations": [
-        "A dark-clothed illustrated agent hangs from a vertical rope.",
-        "A red climbing harness and bent legs detail the suspended pose."
+        "A dark-clothed agent hangs from a vertical rope with bent legs and a red harness.",
+        "The suspended pose suggests a covert descent."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.804513+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-007.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-008",
       "status": "reviewed-from-image",
       "sourceSha256": "ef89075aff6e47305c6ff81874505e31bf8daf0dc991fb33d6d0acd90d9cece8",
       "imageSha256": "ef89075aff6e47305c6ff81874505e31bf8daf0dc991fb33d6d0acd90d9cece8",
-      "inputMetadataSha256": "646ad5fbac9595f72ea4972a842d5661a1c650e5dd446f92cc446cbf0d0ea071",
-      "inputContextSha256": "466d59a4be1c5639b2de7bd84a2d1b2295aceca2123134bc2bc1e7a049a4c6b5",
+      "inputMetadataSha256": "8381d44d833cdd94a1aa8e49e70cfe1c40d60c86e7d453a03565c3838f9b7291",
+      "inputContextSha256": "faed5ad1bb41e9cdc7bf0c9c0e50434d9643befb5a052ddd96f6bae7143a7d07",
       "copy": {
-        "title": "Agent with a Motorcycle Helmet",
-        "alt": "A crouching illustrated agent wears a brown leather-style jacket.",
-        "description": "One hand adjusts a tall boot beside a tucked cream helmet."
+        "title": "007-Inspired Agent with a Helmet and Boots",
+        "alt": "A crouching figure in a brown leather-look jacket reaches toward a tall boot beside a cream helmet.",
+        "description": "The tucked helmet and low pose give the scene an adventure-ready feel."
       },
       "observations": [
-        "A crouching illustrated agent wears a brown leather-style jacket.",
-        "One hand adjusts a tall boot beside a tucked cream helmet."
+        "A crouching figure in a brown leather-look jacket reaches toward a tall boot beside a cream helmet.",
+        "The tucked helmet and low pose give the scene an adventure-ready feel."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.805830+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-008.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-009",
       "status": "reviewed-from-image",
       "sourceSha256": "afe1901c3fb32795338523d2c311ef55af5a74430fa7621720c22822bf864869",
       "imageSha256": "afe1901c3fb32795338523d2c311ef55af5a74430fa7621720c22822bf864869",
-      "inputMetadataSha256": "1a78ae080fa0917972c60e38ede5bf2d2462dbf2b856dd568cf3bac82ad8fd69",
-      "inputContextSha256": "4f4dbe36146d8e6692070b5627008773171a130dd69c782466a2ad92032582a0",
+      "inputMetadataSha256": "42ac50ac800dbb0708a3d64846f2a7080d42a589a73b093280b968666b40d61c",
+      "inputContextSha256": "7e0a6ed4ff525500909159e9b72df4b0fa645e5c29f964fb3f860e39d9bfc977",
       "copy": {
-        "title": "Spy Holding a Small Device",
-        "alt": "An illustrated gray-haired agent wears a charcoal three-piece suit and teal tie.",
-        "description": "One raised hand holds a small dark rectangular device."
+        "title": "007-Inspired Agent Holding a Compact Device",
+        "alt": "A gray-haired figure in a charcoal three-piece suit and teal tie raises a small dark device.",
+        "description": "The rectangular gadget sits at eye level against the figure’s open hand."
       },
       "observations": [
-        "An illustrated gray-haired agent wears a charcoal three-piece suit and teal tie.",
-        "One raised hand holds a small dark rectangular device."
+        "A gray-haired figure in a charcoal three-piece suit and teal tie raises a small dark device.",
+        "The rectangular gadget sits at eye level against the figure’s open hand."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.807038+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-009.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-010",
       "status": "reviewed-from-image",
       "sourceSha256": "ac0af4a529f7da4ca30ecfb4b00cbb3a1e8589f070916c19ed79186ab5cbe486",
       "imageSha256": "ac0af4a529f7da4ca30ecfb4b00cbb3a1e8589f070916c19ed79186ab5cbe486",
-      "inputMetadataSha256": "34bf3dd04aa2f4d6de006244d35959f7a842a718076b3a10e460bb3ad94bb52a",
-      "inputContextSha256": "7cf6f6868c311389324f43131a8e67af492af817178250e63266c8f59a84f816",
+      "inputMetadataSha256": "36a430fc693817035d090881488cb015c5d7acfb5e4141dcde2a6aa3700ae02a",
+      "inputContextSha256": "bc3a8aba5b49cc63a0e9fbaf0f43ee47ac6495eb39c2a674563ff4572fe83b43",
       "copy": {
-        "title": "Agent Landing with a Parachute",
-        "alt": "An illustrated agent crouches beneath a broad orange canopy.",
-        "description": "Pale suspension lines connect to a dark green harness above the suit."
+        "title": "007-Inspired Agent beneath an Orange Parachute",
+        "alt": "A crouched agent lands beneath a broad orange parachute.",
+        "description": "Pale suspension lines run from the canopy to a dark green harness."
       },
       "observations": [
-        "An illustrated agent crouches beneath a broad orange canopy.",
-        "Pale suspension lines connect to a dark green harness above the suit."
+        "A crouched agent lands beneath a broad orange parachute.",
+        "Pale suspension lines run from the canopy to a dark green harness."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.808424+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-010.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-011",
       "status": "reviewed-from-image",
       "sourceSha256": "dfe4c83f1dd414c35bcb328e16606d9d24f637e34fbc7937e7a99971f1ddfa12",
       "imageSha256": "dfe4c83f1dd414c35bcb328e16606d9d24f637e34fbc7937e7a99971f1ddfa12",
-      "inputMetadataSha256": "5244341dd499b59bb58a404f0646b89573abe382636c6c8d1704d59549a03397",
-      "inputContextSha256": "d3b9ab49752bf325fde138a98a2ec3b760116381507f8cc995f6d6c7eb2f9aa4",
+      "inputMetadataSha256": "caa10dee5902543c3ee3d560dedf03e16964282bbc1c04dbce855bedd7404929",
+      "inputContextSha256": "552536eda303b3f7177cf835ca0618da57f056ae799c267895cbe9ddec51e257",
       "copy": {
-        "title": "Spy Coordinator with a Folder",
-        "alt": "An illustrated gray-haired person wears a burgundy trouser suit.",
-        "description": "One arm extends a dark folder while the other hand rests at the waist."
+        "title": "007-Inspired Mission Coordinator with a Folder",
+        "alt": "A silver-haired woman in a burgundy trouser suit extends a dark folder.",
+        "description": "Her other hand rests at her waist in a confident standing pose."
       },
       "observations": [
-        "An illustrated gray-haired person wears a burgundy trouser suit.",
-        "One arm extends a dark folder while the other hand rests at the waist."
+        "A silver-haired woman in a burgundy trouser suit extends a dark folder.",
+        "Her other hand rests at her waist in a confident standing pose."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.841021+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-011.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-012",
       "status": "reviewed-from-image",
       "sourceSha256": "c2eb34964525129f11d321a38dd8ac1c20a376d2a876f7f857fb62723439600f",
       "imageSha256": "c2eb34964525129f11d321a38dd8ac1c20a376d2a876f7f857fb62723439600f",
-      "inputMetadataSha256": "249ed187506a11db4e462dca43ae2b46d52ea86b940977eff11ebfe8bfe94681",
-      "inputContextSha256": "e38c4ad61832123734ccd59e8325d76907c967c0b063a272fea1dd181e5c965f",
+      "inputMetadataSha256": "83c9e43b274f45ffad158c7ac6433e8e3cafbce8dd4ef39ba45a6c90fabcf56b",
+      "inputContextSha256": "0bbc3c2ba8b8c9ef7f64b8a5c46538ae791d01f72055a27b705a578ee1c4479d",
       "copy": {
-        "title": "Young Gadget Maker with a Drone",
-        "alt": "A smiling illustrated person wears round glasses and a mustard cardigan.",
-        "description": "A small gray drone rests in one palm beside a raised index finger."
+        "title": "007-Inspired Young Gadget Maker with a Mini Drone",
+        "alt": "A smiling child with round glasses holds a small gray drone and raises one finger.",
+        "description": "A mustard cardigan adds a warm color against the compact gadget."
       },
       "observations": [
-        "A smiling illustrated person wears round glasses and a mustard cardigan.",
-        "A small gray drone rests in one palm beside a raised index finger."
+        "A smiling child with round glasses holds a small gray drone and raises one finger.",
+        "A mustard cardigan adds a warm color against the compact gadget."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.842364+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-012.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-013",
       "status": "reviewed-from-image",
       "sourceSha256": "b0631f819c2e43eddb1aa0168dd60ed077d7284698610fcefef891326086fb58",
       "imageSha256": "b0631f819c2e43eddb1aa0168dd60ed077d7284698610fcefef891326086fb58",
-      "inputMetadataSha256": "bcee1544b1e7b57f2ca394cac81fc01bb71850cff7caeca7f9138d83f161b2e2",
-      "inputContextSha256": "a361b69492af9ce0b795dd4454e318a32b25f6fae1ab243292661185a939fac9",
+      "inputMetadataSha256": "6683de3d28e56182fe35ed64b324cb101bb4558a0937264e80fa6eabb59e9f67",
+      "inputContextSha256": "306fef2ba56eaa845c0bc95fc9ea47ef7a5c9623582222ecfb58ff9a60c03cb3",
       "copy": {
-        "title": "Spy Courier with a Sealed Envelope",
-        "alt": "An illustrated person wears a coral blouse and wide navy trousers.",
-        "description": "One hand extends a dark envelope with a small golden seal."
+        "title": "007-Inspired Courier with a Sealed Envelope",
+        "alt": "A figure in a coral blouse and wide navy trousers offers a dark envelope.",
+        "description": "A small gold-colored seal marks the envelope held out in one hand."
       },
       "observations": [
-        "An illustrated person wears a coral blouse and wide navy trousers.",
-        "One hand extends a dark envelope with a small golden seal."
+        "A figure in a coral blouse and wide navy trousers offers a dark envelope.",
+        "A small gold-colored seal marks the envelope held out in one hand."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.843378+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-013.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-014",
       "status": "reviewed-from-image",
       "sourceSha256": "fc291ee317c1bb886e2070a4a84241eda344fbdddf2396d2bc8c57d8500844f8",
       "imageSha256": "fc291ee317c1bb886e2070a4a84241eda344fbdddf2396d2bc8c57d8500844f8",
-      "inputMetadataSha256": "62c4862f704a4f52aeae6867acfd1ec27ba1bfef2448559765b586bf4ba57d90",
-      "inputContextSha256": "518d61613b19a0beb4e3631986c898a8be900c1c0ffa380148cc18d883ef0327",
+      "inputMetadataSha256": "0610fe021088234c830b0151574ce0589400563e5759f9271e1caeefecbbadde",
+      "inputContextSha256": "a766f2761771b38162fa2c7accce37adfad944a362d0b34cde6169d556af120c",
       "copy": {
-        "title": "Card Dealer in a Green Waistcoat",
-        "alt": "An illustrated dealer wears a white shirt and black bow tie.",
-        "description": "Three dark green cards rise beside the gold-trimmed waistcoat."
+        "title": "007-Inspired Casino Dealer in a Green Waistcoat",
+        "alt": "A card dealer in a green waistcoat holds three dark green cards.",
+        "description": "A white shirt and black bow tie sit beneath the gold-trimmed vest."
       },
       "observations": [
-        "An illustrated dealer wears a white shirt and black bow tie.",
-        "Three dark green cards rise beside the gold-trimmed waistcoat."
+        "A card dealer in a green waistcoat holds three dark green cards.",
+        "A white shirt and black bow tie sit beneath the gold-trimmed vest."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.844650+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-014.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-015",
       "status": "reviewed-from-image",
       "sourceSha256": "84934712d3f377f1cd65ea02738298058f2b5bf42e3fc389db03a86ae8af1f9e",
       "imageSha256": "84934712d3f377f1cd65ea02738298058f2b5bf42e3fc389db03a86ae8af1f9e",
-      "inputMetadataSha256": "45fd24daac4f7bafa1c0018ec5868bdab8e072fd6c072c554075fe9cab32537c",
-      "inputContextSha256": "f9cb2f6942424d44a7fffb19bb7f88771a7490dc10562718658875156c34091e",
+      "inputMetadataSha256": "9e3524c8f5ed21611fcf223b3ff1ea4c8b3e50bf7bca5c970252b87bd2ac130c",
+      "inputContextSha256": "cebc9b972aee295177fc967441a60d1462b99a7b279e89d41045772dcc581e54",
       "copy": {
-        "title": "Villain with a Chess Knight",
-        "alt": "An illustrated short-haired character wears a sharp purple coat.",
-        "description": "Dark gloved hands hold a large pale knight chess piece."
+        "title": "007-Inspired Spy Character with a Chess Knight",
+        "alt": "A short-haired character in a sharp purple coat holds a pale chess knight.",
+        "description": "Dark gloves frame the chess piece against the angular collar."
       },
       "observations": [
-        "An illustrated short-haired character wears a sharp purple coat.",
-        "Dark gloved hands hold a large pale knight chess piece."
+        "A short-haired character in a sharp purple coat holds a pale chess knight.",
+        "Dark gloves frame the chess piece against the angular collar."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.845912+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-015.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-016",
       "status": "reviewed-from-image",
       "sourceSha256": "cbd00e9f82d0908afeb8ffe729bcae0e594d12d9d3deed348be932f3868d1366",
       "imageSha256": "cbd00e9f82d0908afeb8ffe729bcae0e594d12d9d3deed348be932f3868d1366",
-      "inputMetadataSha256": "9178c0ab0db6a4fb6f3fb1065916d4b435b636eba3d28a6a9a56696192167f9f",
-      "inputContextSha256": "8b6eea79dc24c5d33b7762b438ee6e7cfee557ab36f65825b332662b67a9d146",
+      "inputMetadataSha256": "ad29a397bcf964ff5df29f2426e96029d841c5ff019179bb699ee8a207e6c7e6",
+      "inputContextSha256": "402f3c1d6cd3fd05a286024012f462c39005b5195824cd9891d4b9ef6baa0b64",
       "copy": {
-        "title": "Child Detective with a Flashlight",
-        "alt": "A smiling cartoon child wears a yellow 007 raincoat and red boots.",
-        "description": "A small flashlight points toward a paper footprint on the ground."
+        "title": "007-Inspired Child Detective with a Flashlight",
+        "alt": "A cartoon child in a yellow raincoat and red boots points a flashlight toward a paper footprint.",
+        "description": "The small beam and trail marker suggest a playful mystery scene."
       },
       "observations": [
-        "A smiling cartoon child wears a yellow007 raincoat and red boots.",
-        "A small flashlight points toward a paper footprint on the ground."
+        "A cartoon child in a yellow raincoat and red boots points a flashlight toward a paper footprint.",
+        "The small beam and trail marker suggest a playful mystery scene."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.847288+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-016.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-017",
       "status": "reviewed-from-image",
       "sourceSha256": "9667718e499c24b1961779971c43b2e2924f3a100a0d450b6754a231e5fb3c17",
       "imageSha256": "9667718e499c24b1961779971c43b2e2924f3a100a0d450b6754a231e5fb3c17",
-      "inputMetadataSha256": "4aa6d6e0223e11934c0fe58003d469b7a3f4988f9dc6b525369182a09ff7d9bd",
-      "inputContextSha256": "1b562e4efaabc7bbc051a8efd6b5d6a076ff606c52624ce31b495bbc9b830922",
+      "inputMetadataSha256": "18a008dae880417f4b355ee6f2057fcb5b3b20dd355d3287633b9de8ba7bc4c0",
+      "inputContextSha256": "6c8170f7de85ed024bde6dc3d3a33c4ef68a7351a542d758c7280b76678114f8",
       "copy": {
-        "title": "Young Spy with a Hollow Book",
-        "alt": "A red-haired cartoon child sits cross-legged in a mint sweater vest.",
-        "description": "A secret compartment inside a blue book holds a small sealed envelope."
+        "title": "007-Inspired Young Spy with a Hidden-Compartment Book",
+        "alt": "A seated red-haired child in a mint sweater vest opens a blue book with an envelope inside.",
+        "description": "The book’s concealed space turns an ordinary volume into a story prop."
       },
       "observations": [
-        "A red-haired cartoon child sits cross-legged in a mint sweater vest.",
-        "A secret compartment inside a blue book holds a small sealed envelope."
+        "A seated red-haired child in a mint sweater vest opens a blue book with an envelope inside.",
+        "The book’s concealed space turns an ordinary volume into a story prop."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.848805+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-017.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-018",
       "status": "reviewed-from-image",
       "sourceSha256": "a4319b031a6605d82c09c1caaabe3e8c8ab7607a5ded801ad9a9a82b52dc4978",
       "imageSha256": "a4319b031a6605d82c09c1caaabe3e8c8ab7607a5ded801ad9a9a82b52dc4978",
-      "inputMetadataSha256": "f79391467029fd0543263ac6f54f671c2cfc881f86f87778637505a4c08382ec",
-      "inputContextSha256": "2581ff8cdd3d90e04aa241f93ab7b1dca4d734e83ebca1e6fdbfbb8197ea6298",
+      "inputMetadataSha256": "2f5632cecea71f7bccd767d8958b5abfa7bb40fd4cf1de07a9cec012f403b8ad",
+      "inputContextSha256": "439d28fa1bc7579dc6821391dc347b50fed8a4b0ea9399d688a8c5db4ce676b9",
       "copy": {
-        "title": "Action Agent with a Grappling Hook",
-        "alt": "An illustrated agent wears a fitted teal suit and brown utility belt.",
-        "description": "One hand holds a hook while the other carries a coil of rope."
+        "title": "007-Inspired Action Agent with a Grappling Hook",
+        "alt": "An agent in a fitted teal suit and brown utility belt holds a grappling hook and coiled rope.",
+        "description": "The hook and rope are clearly visible at either side of the figure."
       },
       "observations": [
-        "An illustrated agent wears a fitted teal suit and brown utility belt.",
-        "One hand holds a hook while the other carries a coil of rope."
+        "An agent in a fitted teal suit and brown utility belt holds a grappling hook and coiled rope.",
+        "The hook and rope are clearly visible at either side of the figure."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.850181+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-018.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-019",
       "status": "reviewed-from-image",
       "sourceSha256": "a5e956e18ef5b7f139fd6b6ffc1c3a4ce79b2e56b165c2386f70252d96254d16",
       "imageSha256": "a5e956e18ef5b7f139fd6b6ffc1c3a4ce79b2e56b165c2386f70252d96254d16",
-      "inputMetadataSha256": "43d12c6d281b4466841c2d63ade41fe272f239bc912f72fed51d3750d63b17a8",
-      "inputContextSha256": "f5b9937bade602e8d90493fe4d6c2d939967ba6195ed6ad31152db1b13beac7d",
+      "inputMetadataSha256": "086f32c95e0ba148f9f26d4b540e81fb14413fe7d4e97510c79dfcc503fa2b9d",
+      "inputContextSha256": "da330e848591e1794e77b81f68adb302628ea53494151f192ae12e10bf4ed574",
       "copy": {
-        "title": "Green 007 Casino Chips",
-        "alt": "A tall stack of green-and-cream chips stands beside one tilted token.",
-        "description": "Golden outlines and 007 lettering decorate the pale centers."
+        "title": "Green-and-Gold 007 Casino Chips",
+        "alt": "A stack of green-and-cream chips stands beside one tilted token.",
+        "description": "Gold outlines and 007 lettering decorate the round centers."
       },
       "observations": [
-        "A tall stack of green-and-cream chips stands beside one tilted token.",
-        "Golden outlines and007 lettering decorate the pale centers."
+        "A stack of green-and-cream chips stands beside one tilted token.",
+        "Gold outlines and 007 lettering decorate the round centers."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.851527+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-019.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-020",
       "status": "reviewed-from-image",
       "sourceSha256": "42f965909d2d5a40282e2a1eeffaf12e25c22ecf93f99dd7410bc8c5d4104d32",
       "imageSha256": "42f965909d2d5a40282e2a1eeffaf12e25c22ecf93f99dd7410bc8c5d4104d32",
-      "inputMetadataSha256": "74a1b422e35e1213bf506a28ba66ed6e91461cc93a2e1a0aad5cf128ee4ffefa",
-      "inputContextSha256": "749403af467c2571b27473e1e75bb2cae47a2bf2e8a95e7293b6b9dbdf38d100",
+      "inputMetadataSha256": "abadcfaae503b8c077da3b585c5c87e6f0ba5d406ddfc183777f9c83cb8b4107",
+      "inputContextSha256": "74221816cff99ecaba05490abc53e1dbbeead535cd0d93067db5aacc6dc5101a",
       "copy": {
-        "title": "Olive Garnish Cocktail Glass",
-        "alt": "A shallow faceted glass holds a pale golden drink.",
-        "description": "Two green olives rest on a long silver-colored pick across the rim."
+        "title": "007-Inspired Cocktail Glass with Two Olives",
+        "alt": "A shallow cocktail glass holds a pale golden drink and two green olives on a metal pick.",
+        "description": "The faceted bowl and slender stem give the garnish a clear silhouette."
       },
       "observations": [
-        "A shallow faceted glass holds a pale golden drink.",
-        "Two green olives rest on a long silver-colored pick across the rim."
+        "A shallow cocktail glass holds a pale golden drink and two green olives on a metal pick.",
+        "The faceted bowl and slender stem give the garnish a clear silhouette."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.852812+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-020.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-021",
       "status": "reviewed-from-image",
       "sourceSha256": "b1d3b0ce4cac5f9078f18b8bf0c2e545b96b9e1d29f2fce3aaddb56aa6fd1bf5",
       "imageSha256": "b1d3b0ce4cac5f9078f18b8bf0c2e545b96b9e1d29f2fce3aaddb56aa6fd1bf5",
-      "inputMetadataSha256": "15560255a2aaeff26c513a7476715b8685cefa411ed68992c9cab3d15c4f3f6e",
-      "inputContextSha256": "569f64fcfef9b07bf6fdc56b502bccd586560e0b47b227dce9a026b51befff0f",
+      "inputMetadataSha256": "c5e82b1cc33e954725125872789c5edb50811f0715e91ac332ed6215f9ed666e",
+      "inputContextSha256": "0f3e46a0d0e27e542277722fd584899e9dc020ba379ca960d79c564bcbad4441",
       "copy": {
-        "title": "007 Document Folder",
-        "alt": "A thick tan folder has a small numbered label near its top corner.",
-        "description": "A narrow red strap and golden buckle cross the stacked pale papers."
+        "title": "007 Mission Folder with a Red Strap",
+        "alt": "A thick tan folder is wrapped in a narrow red strap with a gold-colored buckle.",
+        "description": "A small 007 label sits near the top corner above the stacked papers."
       },
       "observations": [
-        "A thick tan folder has a small numbered label near its top corner.",
-        "A narrow red strap and golden buckle cross the stacked pale papers."
+        "A thick tan folder is wrapped in a narrow red strap with a gold-colored buckle.",
+        "A small 007 label sits near the top corner above the stacked papers."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.873982+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-021.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-022",
       "status": "reviewed-from-image",
       "sourceSha256": "d927d55462d226af359f8f3c891ca41bff289c16ded26153defac7d9460855db",
       "imageSha256": "d927d55462d226af359f8f3c891ca41bff289c16ded26153defac7d9460855db",
-      "inputMetadataSha256": "7acf98ba78c0afd195095000cdaa721c12e4ee2301d48065a5dec2168a616536",
-      "inputContextSha256": "0db92861ae5bcd309390531e56dfb9e172888a8203a08b5314ee256a4bcf80b4",
+      "inputMetadataSha256": "7ec63e4e3edf43ef96ea7e3ee72749fea8c1e5c25e152f01c3f3c32c1cc28252",
+      "inputContextSha256": "203a13513ed71acd5a77c2ed1a688895cd4094a3c4f9d9ecb11f51c0e7f8139d",
       "copy": {
-        "title": "Radar Watch Concept",
-        "alt": "A metal-colored wristwatch has an open hinged clear cover.",
-        "description": "A glowing green radar-like display fills its blue circular dial."
+        "title": "007-Inspired Radar Wristwatch Concept",
+        "alt": "A metal-colored wristwatch has a hinged clear cover over a blue dial with green radar-style marks.",
+        "description": "This is a fictional spy-gadget illustration, not a depiction of a verified watch model."
       },
       "observations": [
-        "A metal-colored wristwatch has an open hinged clear cover.",
-        "A glowing green radar-like display fills its blue circular dial."
+        "A metal-colored wristwatch has a hinged clear cover over a blue dial with green radar-style marks.",
+        "This is a fictional spy-gadget illustration, not a depiction of a verified watch model."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.875509+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-022.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-023",
       "status": "reviewed-from-image",
       "sourceSha256": "cb15ec535055cff97992911571322bae21d77b1a7ac929d9258d0ef46d18bdc1",
       "imageSha256": "cb15ec535055cff97992911571322bae21d77b1a7ac929d9258d0ef46d18bdc1",
-      "inputMetadataSha256": "4dce85ada7d57c7d96fc16da4d6526dd9f0100528a2e379063a58f41d5fb392e",
-      "inputContextSha256": "853b90122aad2e0a8f2cbaa3c33634d769a9989e641148b5a4897d738cbbf9ad",
+      "inputMetadataSha256": "61d47585b7a940a6bb8ce1325ac37ea82c834e5e6a2152fd28a75a5cd5b4a2c8",
+      "inputContextSha256": "b18bc837be25cde3c89e2bf60f96c857e49c0dab62ca73c6a2ec0304e2894220",
       "copy": {
-        "title": "007 Black Cufflinks",
-        "alt": "Two rectangular dark faces sit inside gold-colored frames.",
-        "description": "A tiny 007 mark decorates one corner beside the rounded fastening bars."
+        "title": "Black-and-Gold 007 Cufflinks",
+        "alt": "Two black rectangular cufflink faces sit inside gold-colored frames.",
+        "description": "A small 007 mark decorates each face beside the rounded fastening bars."
       },
       "observations": [
-        "Two rectangular dark faces sit inside gold-colored frames.",
-        "A tiny007 mark decorates one corner beside the rounded fastening bars."
+        "Two black rectangular cufflink faces sit inside gold-colored frames.",
+        "A small 007 mark decorates each face beside the rounded fastening bars."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.876630+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-023.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-024",
       "status": "reviewed-from-image",
       "sourceSha256": "278f51313c72607ee9e3449ee66f9b4db8ff905d2bcaa9e58f03acd2eb93d71a",
       "imageSha256": "278f51313c72607ee9e3449ee66f9b4db8ff905d2bcaa9e58f03acd2eb93d71a",
-      "inputMetadataSha256": "ef2fc3a46e149553e96a1f7882cb6be902423427ea674dfb9f89267e86767df3",
-      "inputContextSha256": "51c9e08131a3e21b762f771aceee8b206951ead580fea74744e786cf24a2d706",
+      "inputMetadataSha256": "cf38832f4397db9cf8ee95cdfcc43311d70db5c065f525dfc04e9139317b761c",
+      "inputContextSha256": "a97bf7ccc359cbf38edc2c7cd0eeeb79b1c562726305a47e78395fadba662542",
       "copy": {
-        "title": "Dinner Jacket Lapels and Bow Tie",
-        "alt": "Cream folded lapels frame a small black satin-style bow tie.",
-        "description": "A burgundy pocket square sits inside the open right side."
+        "title": "Cream Dinner-Jacket Lapels and Bow Tie",
+        "alt": "Folded cream lapels frame a small black bow tie.",
+        "description": "A burgundy pocket square peeks from the open side of the jacket front."
       },
       "observations": [
-        "Cream folded lapels frame a small black satin-style bow tie.",
-        "A burgundy pocket square sits inside the open right side."
+        "Folded cream lapels frame a small black bow tie.",
+        "A burgundy pocket square peeks from the open side of the jacket front."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.877964+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-024.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-025",
       "status": "reviewed-from-image",
       "sourceSha256": "104cc93516451636b69feeffcc911cafc4471912bd739c7877f6cf911b42a2ba",
       "imageSha256": "104cc93516451636b69feeffcc911cafc4471912bd739c7877f6cf911b42a2ba",
-      "inputMetadataSha256": "bc5655bd12a8b96e4d1ad8bc24a5da66944037e325253447e976b6476d492c71",
-      "inputContextSha256": "c55f81194f3b1fbde174ab3acd8aac743d5d35ea185d768a609fd58a8b658c2d",
+      "inputMetadataSha256": "c6d7892832459d1baf57fdbbcd857723ae9c0fe66ed1ca66ca7038f5f9241b58",
+      "inputContextSha256": "d34430263bedcfcbdafa987d53e8cafd3113ef8dd1b62564b566ddd3ec70b067",
       "copy": {
-        "title": "Compact Pistol Illustration",
-        "alt": "A dark handgun has a short squared slide and rounded trigger guard.",
-        "description": "Two screws secure the textured brown grip panels."
+        "title": "Illustrated Spy Handgun with Brown Grip Panels",
+        "alt": "A dark handgun is shown in profile with a squared slide and rounded trigger guard.",
+        "description": "Textured brown grip panels and two small screws finish the illustrated prop."
       },
       "observations": [
-        "A dark handgun has a short squared slide and rounded trigger guard.",
-        "Two screws secure the textured brown grip panels."
+        "A dark handgun is shown in profile with a squared slide and rounded trigger guard.",
+        "Textured brown grip panels and two small screws finish the illustrated prop."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.879077+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-025.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-026",
       "status": "reviewed-from-image",
       "sourceSha256": "fde1fa74e93dfac86adf769e71181554287ce8907eccfc20e2e7614dcfbdd355",
       "imageSha256": "fde1fa74e93dfac86adf769e71181554287ce8907eccfc20e2e7614dcfbdd355",
-      "inputMetadataSha256": "a3cd26c623ee9a74ce8fa4d51d974410fe31e0832339a39e1d48b4ecc289485a",
-      "inputContextSha256": "e0a1d18e2b21e3db2cfc750f0e1cbd65706730e4467c0be78f7de4e46d02acd9",
+      "inputMetadataSha256": "4354088fd7939959ba688e9a67831642bb2e2c0de1660c9a3081cfa6f97b9c1e",
+      "inputContextSha256": "413495d411d271be94ac524dd93904ff2c5eba61fc001fedb189e20b491b7284",
       "copy": {
-        "title": "Microfilm Fountain Pen Concept",
-        "alt": "A dark green pen has gold-colored trim and a pointed nib.",
-        "description": "A separate small cartridge sits beside the removed cap."
+        "title": "007 Movie Spy Pen and Microfilm Capsule Concept",
+        "alt": "Two dark-green fountain-pen pieces with gold trim cross above a small labeled microfilm capsule.",
+        "description": "The capsule reads “MICROFILM CAPSULE TYPE M-7,” presenting the pen-and-film set as a fictional 007 spy-gadget concept."
       },
       "observations": [
-        "A dark green pen has gold-colored trim and a pointed nib.",
-        "A separate small cartridge sits beside the removed cap."
+        "Two dark-green fountain-pen pieces with gold trim cross over one another.",
+        "The small gold capsule is visibly labeled “MICROFILM CAPSULE TYPE M-7,” making the set a fictional spy-gadget concept."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.880313+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-026.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-027",
       "status": "reviewed-from-image",
       "sourceSha256": "14d3b3794619ceec78f07036978356970c9317d405eb2a4a20023bd3064e00d9",
       "imageSha256": "14d3b3794619ceec78f07036978356970c9317d405eb2a4a20023bd3064e00d9",
-      "inputMetadataSha256": "4c469fb4fb6e4c44914a0590cc676a4455028b0605206a0ee34fd0d1037cdb93",
-      "inputContextSha256": "f5064993d38a79ee1b16699b7415c2438cb659760883eaee33c153bf7ea4e1d2",
+      "inputMetadataSha256": "e4f5063c8ec0a996dcf81f0c12742f687041ccb01b392a8d460f610a22e2da27",
+      "inputContextSha256": "6938b6afb2a50ea469b34619feba4555ca37fe7cc170b82c4a0d59ab5be67ceb",
       "copy": {
-        "title": "Classic Aston Martin DB-Series Coupe",
-        "alt": "A silver classic Aston Martin DB-series coupe has round headlights, a hood scoop and wire-style wheels.",
-        "description": "Burgundy seats show through the classic Aston Martin DB-Series coupe’s curved windows above a split dark grille and slim bumpers."
+        "title": "James Bond 007-Inspired Aston Martin-Style Silver Coupe",
+        "alt": "A silver Aston Martin-style coupe has round headlights, a split grille and wire-style wheels.",
+        "description": "Burgundy seats and a hood scoop detail the silver coupe; this 007-inspired Aston Martin-style artwork does not establish a specific production model."
       },
       "observations": [
-        "A silver two-door coupe has round headlights and wire-style wheels.",
-        "A split dark grille, small hood scoop and burgundy seats detail the front view."
+        "A silver two-door coupe has round headlights, split grille openings and wire-style wheels.",
+        "The hood scoop and grille do not establish an exact production model; the artwork is described only as Aston Martin-style."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.881539+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-027.webp",
       "references": [
         {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official film catalog confirms the James Bond 007 series context; it is not used to infer a specific character or scene."
+        },
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/aston-martin-db5-production-resumes/",
+          "reason": "Confirms Aston Martin’s association with James Bond films; this artwork remains Aston Martin-style and is not assigned an exact model."
+        },
+        {
           "publisher": "Aston Martin",
-          "reason": "Official DB5 front three-quarter photo and manufacturer statement that late DB4 Series5 has virtually identical appearance; supports classic DB family only.",
-          "url": "https://media.astonmartin.com/db5/?lang=eng"
+          "url": "https://www.astonmartin.com/en/models/past-models/db5-db5-convertible",
+          "reason": "Official manufacturer DB5 page supports the franchise context and model comparison; visible differences do not support assigning this artwork to the DB5 or another exact model."
         }
       ]
     },
@@ -549313,460 +549479,598 @@
       "status": "reviewed-from-image",
       "sourceSha256": "c3aa627f3bf420f7e3f393f65396f67195b66b77270f9157104df0a604215eed",
       "imageSha256": "c3aa627f3bf420f7e3f393f65396f67195b66b77270f9157104df0a604215eed",
-      "inputMetadataSha256": "712b3585b470a588037dc34b55bdb509f430d61d89bd6b939d3322b92907ae4c",
-      "inputContextSha256": "cfb612fc83f85a84123b8a308b9b8c03ad650f436f9d99f74b61c446886694a0",
+      "inputMetadataSha256": "780b04aaf3e69f385357ca0804ac0a7faea0e22c154c4334608e4b74ca757669",
+      "inputContextSha256": "8cc27b59887caf4043817a394546c3b41ea7c4e8c114a38c7e3b84596b26dad1",
       "copy": {
-        "title": "Yellow Mini Submarine Concept",
-        "alt": "A pointed yellow hull surrounds a large dark bubble canopy.",
-        "description": "Two small side propellers and a short rear fin frame the imagined craft."
+        "title": "007-Inspired Yellow Mini-Submarine Concept",
+        "alt": "A pointed yellow hull surrounds a broad dark bubble canopy.",
+        "description": "Two small side propellers and a short rear fin mark this fictional vehicle concept."
       },
       "observations": [
-        "A pointed yellow hull surrounds a large dark bubble canopy.",
-        "Two small side propellers and a short rear fin frame the imagined craft."
+        "A pointed yellow hull surrounds a broad dark bubble canopy.",
+        "Two small side propellers and a short rear fin mark this fictional vehicle concept."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.882759+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-028.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-029",
       "status": "reviewed-from-image",
       "sourceSha256": "156884d55fd4b0e9dea5d2bb01569f2960c39c845ce4309bab19180ee610910c",
       "imageSha256": "156884d55fd4b0e9dea5d2bb01569f2960c39c845ce4309bab19180ee610910c",
-      "inputMetadataSha256": "d12f95f0d9e7ac8883359a21f9aa2c726fad2c1620b3670d3fd0d82c8db7ea2e",
-      "inputContextSha256": "e6fa31c23d8de355bd4c9f1213003c46cb7c2ab25e9508037b187396db2eee8d",
+      "inputMetadataSha256": "90378a9a7ebeefd28ace52eb5cf48666b6ffaf6025bff182fb8100f149480609",
+      "inputContextSha256": "5165fff636ba2ec670a76cd0f10d5bc9e1f88d93b9507d0b2b843d5fcba78ee3",
       "copy": {
-        "title": "Open-Frame Autogyro",
-        "alt": "A red tubular frame supports one black seat beneath a broad rotor.",
-        "description": "Three small wheels, a rear tail and pale red-tipped blades detail the aircraft illustration."
+        "title": "007-Inspired Open-Frame Gyrocopter Concept",
+        "alt": "A red tubular frame supports one exposed seat beneath a wide overhead rotor.",
+        "description": "Small wheels and a short tail complete this imagined aircraft rather than a verified vehicle model."
       },
       "observations": [
-        "A red tubular frame supports one black seat beneath a broad rotor.",
-        "Three small wheels, a rear tail and pale red-tipped blades detail the aircraft illustration."
+        "A red tubular frame supports one exposed seat beneath a wide overhead rotor.",
+        "Small wheels and a short tail complete this imagined aircraft rather than a verified vehicle model."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.883991+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-029.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-030",
       "status": "reviewed-from-image",
       "sourceSha256": "09c58b6ed3800145609c1223fca9c2a9a59b9daf9bbe326491d863327518f2b4",
       "imageSha256": "09c58b6ed3800145609c1223fca9c2a9a59b9daf9bbe326491d863327518f2b4",
-      "inputMetadataSha256": "80655cf90c28a96c855d02bd4abc29bfd140c9c0591a73f1911a4b08b8cb4d3c",
-      "inputContextSha256": "17e6c38f1192a9e37543f3fab8e42501752e6ec467dcab5371661bbd52939687",
+      "inputMetadataSha256": "b42fe840dbdfd2557e7db9b355f3f755fdf4ea57e8a4307fadd6c7a0f570e105",
+      "inputContextSha256": "05b30077d0a3fba3f813c7472443124d9c0404d8869f7ec0ecad3a5965632338",
       "copy": {
-        "title": "Spy Equipment Briefcase",
-        "alt": "An open navy case has burgundy fitted compartments.",
-        "description": "Small gold-colored devices and a dark lens-like object fill the lined interior."
+        "title": "007 Spy Briefcase with Fitted Compartments",
+        "alt": "An open navy briefcase contains burgundy fitted compartments and small gold-colored objects.",
+        "description": "A dark lens-shaped item sits among the neatly arranged equipment."
       },
       "observations": [
-        "An open navy case has burgundy fitted compartments.",
-        "Small gold-colored devices and a dark lens-like object fill the lined interior."
+        "An open navy briefcase contains burgundy fitted compartments and small gold-colored objects.",
+        "A dark lens-shaped item sits among the neatly arranged equipment."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.885396+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-030.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-031",
       "status": "reviewed-from-image",
       "sourceSha256": "c06c95cc41f6b35b5c8b82c95425a34db9b42abd84d073b910ba089d20466a78",
       "imageSha256": "c06c95cc41f6b35b5c8b82c95425a34db9b42abd84d073b910ba089d20466a78",
-      "inputMetadataSha256": "5f29ded48b40ff394ea63137ac9045059503ebfb4406cc7a8be59471368684ad",
-      "inputContextSha256": "cb5fe7f4ec665433a5dd90e5b0e3cf952c57c44e8b25f07984e1f33b0990e372",
+      "inputMetadataSha256": "4865609e94c4d85e48984c58a47fa3c9323768508e1444e702988d1db6f73ca0",
+      "inputContextSha256": "9a7b296dd299a74a6ea030fe74806dab884a0348d22a12bba3b8e873e0049d8d",
       "copy": {
-        "title": "Symbol Cipher Wheel",
-        "alt": "Two turquoise rings carry small geometric and pictorial symbols.",
-        "description": "A copper-colored center screw and red pointer frame the circular puzzle motif."
+        "title": "007-Inspired Cipher Wheel with Colorful Symbols",
+        "alt": "A round puzzle wheel pairs turquoise rings marked with small symbols.",
+        "description": "A copper-colored center screw and red pointer complete the cipher-style design."
       },
       "observations": [
-        "Two turquoise rings carry small geometric and pictorial symbols.",
-        "A copper-colored center screw and red pointer frame the circular puzzle motif."
+        "A round puzzle wheel pairs turquoise rings marked with small symbols.",
+        "A copper-colored center screw and red pointer complete the cipher-style design."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.907400+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-031.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-032",
       "status": "reviewed-from-image",
       "sourceSha256": "ee836811435b49cb24f7e7e87343cf3852d86ccefd3251012812ee8273652dca",
       "imageSha256": "ee836811435b49cb24f7e7e87343cf3852d86ccefd3251012812ee8273652dca",
-      "inputMetadataSha256": "1c13687e0ca0c95a6da05d6672325c38c2468e4964b4ed7bad6ddb8bbbd67b8b",
-      "inputContextSha256": "a2bf561671f8b57a8df7bda5c9a5f76b1829c7596c6216790e97dd6951f47ce6",
+      "inputMetadataSha256": "68723f996fd1cd1bd6a5261fdd81d9a94950262935507045746990bfb3d3c364",
+      "inputContextSha256": "7702bec06ecf4887465c57698e88ced999bc4059820fcb7cb6a945ad7a5e27f9",
       "copy": {
-        "title": "Laser Barrier Concept",
-        "alt": "Three glowing pink lines connect two metal-colored posts.",
-        "description": "Magenta edge strips surround the dark polygonal bases."
+        "title": "007-Inspired Laser Barrier Concept",
+        "alt": "Three bright pink beams connect two metal-colored posts.",
+        "description": "Magenta edge strips and dark polygonal bases give the fictional barrier a layered look."
       },
       "observations": [
-        "Three glowing pink lines connect two metal-colored posts.",
-        "Magenta edge strips surround the dark polygonal bases."
+        "Three bright pink beams connect two metal-colored posts.",
+        "Magenta edge strips and dark polygonal bases give the fictional barrier a layered look."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.909518+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-032.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-033",
       "status": "reviewed-from-image",
       "sourceSha256": "8b3a577983a0ae71db1dbcb4659c667c62132da6b50eb533c44ff55f746abe5c",
       "imageSha256": "8b3a577983a0ae71db1dbcb4659c667c62132da6b50eb533c44ff55f746abe5c",
-      "inputMetadataSha256": "27a3902b4d827d331f2d606ff40b3a8c40db1fde30452bbadb3ae623240340de",
-      "inputContextSha256": "91365c74cd6d978eb6dceb530d49fd030b57c699774093fd9374238f0dd819b4",
+      "inputMetadataSha256": "4aca6eceebae0795985b1ea485ad394628cbbcd4b33bdfa53d1f448fa81a64fe",
+      "inputContextSha256": "f3d1af75cc605a436ddd18cea9718432217df7c00cd8568fe1e4788194b0bcff",
       "copy": {
-        "title": "007 Key and Tag",
-        "alt": "A long golden-colored key hangs from an oval red-brown tag.",
-        "description": "Fine stitches surround the pressed 007 numerals."
+        "title": "Golden Key with a 007 Leather Tag",
+        "alt": "A long gold-colored key hangs from an oval red-brown tag.",
+        "description": "Fine stitches frame the pressed 007 numerals on the tag."
       },
       "observations": [
-        "A long golden-colored key hangs from an oval red-brown tag.",
-        "Fine stitches surround the pressed007 numerals."
+        "A long gold-colored key hangs from an oval red-brown tag.",
+        "Fine stitches frame the pressed 007 numerals on the tag."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.910811+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-033.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-034",
       "status": "reviewed-from-image",
       "sourceSha256": "486e06959453a3c466851a7d7d6096ab0c0200add04a58d52a9dcfce01a397db",
       "imageSha256": "486e06959453a3c466851a7d7d6096ab0c0200add04a58d52a9dcfce01a397db",
-      "inputMetadataSha256": "dc45f172483e6a88abd5ea004ea399adb2f9cf8051c4af7d5f0fe948d5998b18",
-      "inputContextSha256": "d21b077b1befadbe1d5a5893f3e1757ac19dad5886f001f277ea3e6fbdd34f69",
+      "inputMetadataSha256": "105489f602f7d21c74cbd896957d53378377d2ea32a0e7422b88d19fbdc11f35",
+      "inputContextSha256": "11567e8bbda6628aa7053c363fe986664dbb6cfd1d3021fe2a4ad1c88b916090",
       "copy": {
-        "title": "Roulette Wheel Illustration",
-        "alt": "Alternating red, dark and green number pockets surround a gold-colored spindle.",
-        "description": "A pale ball rests near the curved wooden outer rim."
+        "title": "007 Casino Roulette Wheel",
+        "alt": "A roulette wheel has red, green and dark number pockets around a gold-colored spindle.",
+        "description": "A pale ball rests near the curved wooden rim."
       },
       "observations": [
-        "Alternating red, dark and green number pockets surround a gold-colored spindle.",
-        "A pale ball rests near the curved wooden outer rim."
+        "A roulette wheel has red, green and dark number pockets around a gold-colored spindle.",
+        "A pale ball rests near the curved wooden rim."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.912432+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-034.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-035",
       "status": "reviewed-from-image",
       "sourceSha256": "a4e67f0ead06fd0aaa99a564a7c49380a896effacb50032fbf95a9676ef37ea4",
       "imageSha256": "a4e67f0ead06fd0aaa99a564a7c49380a896effacb50032fbf95a9676ef37ea4",
-      "inputMetadataSha256": "a4cef35e4618ce057175069c95a1d85a444bf967d66fe62e9f97a7de04eee1bc",
-      "inputContextSha256": "0c2f58d24887af9c79de79cf00eec85b752af9a2305eeb4cbedfe5041f6e6f0b",
+      "inputMetadataSha256": "88d5c69ca1e5341eb36a181432d97e78a00acb3a0b948e045dc8c2791a5c433f",
+      "inputContextSha256": "e482cbdf36e32327a19b12452a78209f09f4427b9cea6c7b2b1e2fe64cc07ef7",
       "copy": {
-        "title": "Gloved Hand with Playing Cards",
-        "alt": "A pale long-gloved hand fans five cream cards.",
+        "title": "Gloved Hand Fanning Five Playing Cards",
+        "alt": "A pale long glove fans five cream playing cards.",
         "description": "Red and dark suit marks alternate across the visible numbered corners."
       },
       "observations": [
-        "A pale long-gloved hand fans five cream cards.",
+        "A pale long glove fans five cream playing cards.",
         "Red and dark suit marks alternate across the visible numbered corners."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.913621+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-035.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-036",
       "status": "reviewed-from-image",
       "sourceSha256": "eb96f6a485125fe9c3b84cdc2ba53ecac7aa128791b197204a09fc243465ee99",
       "imageSha256": "eb96f6a485125fe9c3b84cdc2ba53ecac7aa128791b197204a09fc243465ee99",
-      "inputMetadataSha256": "9e51873a91bb986e28b4cfc2929da2334d4d4443f9f5dcf1dc91439acca5f890",
-      "inputContextSha256": "dd7a81054fb4e19e0ebd9508e199bb60fde95dd35a14225fe6a0ac39a657795b",
+      "inputMetadataSha256": "eaad907c320e920f9636aa962afea27caf2f1c324e6f18f8eeeec41882f8ab9d",
+      "inputContextSha256": "cff30a4bcbdd34e4cc3282b157cfde8f1f74087b7f918fe028d729359daa6ead",
       "copy": {
-        "title": "Green Rotary Telephone",
-        "alt": "A dark green handset floats above a cream numbered dial.",
-        "description": "A thick fabric-like cord curves around the angular base."
+        "title": "Green Rotary Telephone for a Spy Scene",
+        "alt": "A dark green rotary telephone has a cream numbered dial and raised handset.",
+        "description": "A thick coiled cord curves around the angular base."
       },
       "observations": [
-        "A dark green handset floats above a cream numbered dial.",
-        "A thick fabric-like cord curves around the angular base."
+        "A dark green rotary telephone has a cream numbered dial and raised handset.",
+        "A thick coiled cord curves around the angular base."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.915100+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-036.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-037",
       "status": "reviewed-from-image",
       "sourceSha256": "7a1db6aa07fcdf07be30c8ef05c422693e7f0567ce39f38916b0a552e7d1b020",
       "imageSha256": "7a1db6aa07fcdf07be30c8ef05c422693e7f0567ce39f38916b0a552e7d1b020",
-      "inputMetadataSha256": "15a08802723c9a2bb97d7347bcc7f8da43f8c00cf92cd39d40d7c5223d03814c",
-      "inputContextSha256": "675aa4653d3649db3a88ef25901a68bb2af877fafc36e07b07c14c094b1a6778",
+      "inputMetadataSha256": "e62a360ed89f1c495ac5e0f92ec0c90a39fa419b627c501c90fbe85bb6362c7e",
+      "inputContextSha256": "a5c47d619d5af359e75b107c81774b03865a033d5a0050b947f5709885ce21d0",
       "copy": {
-        "title": "Miniature Film Viewer Concept",
-        "alt": "An open plum-colored case has two softly glowing panels.",
-        "description": "A tiny film reel and curling strip rest beside its dark hinge."
+        "title": "Portable Film Viewer Concept",
+        "alt": "An open plum-colored case contains two softly glowing panels beside a small reel.",
+        "description": "A loose strip of film rests near the hinge in this imagined portable viewer."
       },
       "observations": [
-        "An open plum-colored case has two softly glowing panels.",
-        "A tiny film reel and curling strip rest beside its dark hinge."
+        "An open plum-colored case contains two softly glowing panels beside a small reel.",
+        "A loose strip of film rests near the hinge in this imagined portable viewer."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.916406+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-037.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-038",
       "status": "reviewed-from-image",
       "sourceSha256": "c42c68d9345eadff6450ac3c7dc92fb0c9e1a45dbff8d2c14fb0d394ddd5e93c",
       "imageSha256": "c42c68d9345eadff6450ac3c7dc92fb0c9e1a45dbff8d2c14fb0d394ddd5e93c",
-      "inputMetadataSha256": "09921be83e41e3cb22ea24dad124f7c571b13c7acab1137cae99e475197532d4",
-      "inputContextSha256": "efffae8d0fc244f102315cda6a34f2fa9cbc65b2acb14c4c9e25d55acf99457f",
+      "inputMetadataSha256": "91e8c9a019fd747d756d5f7be61f24f920e2b36ffc980c8fa740792ce6b5964d",
+      "inputContextSha256": "e73718038fa2e5fe981d6d4d489978db391fd01a529e7d1ccb99440657e4342f",
       "copy": {
-        "title": "Twin Diving Cylinders",
-        "alt": "Two turquoise tanks sit inside a dark strapped carrier.",
-        "description": "Looped hoses, gauges and a diving mask surround the illustrated equipment."
+        "title": "Diving Gear with Twin Turquoise Cylinders",
+        "alt": "Two turquoise diving tanks sit in a dark strapped carrier.",
+        "description": "Looped hoses, gauges and a diving mask fill the space around the cylinders."
       },
       "observations": [
-        "Two turquoise tanks sit inside a dark strapped carrier.",
-        "Looped hoses, gauges and a diving mask surround the illustrated equipment."
+        "Two turquoise diving tanks sit in a dark strapped carrier.",
+        "Looped hoses, gauges and a diving mask fill the space around the cylinders."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.917850+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-038.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-039",
       "status": "reviewed-from-image",
       "sourceSha256": "a601d30661e906c7405dba49e510b9266211b5e547474c44764ec5701d9308c2",
       "imageSha256": "a601d30661e906c7405dba49e510b9266211b5e547474c44764ec5701d9308c2",
-      "inputMetadataSha256": "01019a66e8c74f48f10fbd708bd2eb6db2d2fd118c7b92e2c2e8758c2a896b80",
-      "inputContextSha256": "a7241784a79ca506114361855279b82754ff8120c675ec17483b60bf3187ac40",
+      "inputMetadataSha256": "f9d31e3f4c5a5a07f843fd61230113e26c02b5b603b5f86e418ca14ed6bc8470",
+      "inputContextSha256": "499dbdd2d2c23e98915f08ab8c4792ee118e52859574755afa2e56bc56b9e1c8",
       "copy": {
-        "title": "Clutch Bag with a Secret Note",
-        "alt": "A rose-gold-colored mesh case opens around a plum envelope.",
-        "description": "A large faceted dark clasp sits above the pale satin-like lining."
+        "title": "Mesh Clutch Bag with a Sealed Envelope",
+        "alt": "A rose-gold mesh clutch opens around a plum envelope.",
+        "description": "A faceted dark clasp sits above the pale satin-colored lining."
       },
       "observations": [
-        "A rose-gold-colored mesh case opens around a plum envelope.",
-        "A large faceted dark clasp sits above the pale satin-like lining."
+        "A rose-gold mesh clutch opens around a plum envelope.",
+        "A faceted dark clasp sits above the pale satin-colored lining."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.919492+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-039.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-040",
       "status": "reviewed-from-image",
       "sourceSha256": "2e1496e45ae292a215e2c1b370f252ff0565057b0238765b53897fd0b896835c",
       "imageSha256": "2e1496e45ae292a215e2c1b370f252ff0565057b0238765b53897fd0b896835c",
-      "inputMetadataSha256": "05d62ebcbdfa129d44f6376e51c88ecfb78e5b49b17a323d7acab63114943197",
-      "inputContextSha256": "90cf6fc9fb617375b2946adbbd945efcd5188a04d7dc542a8dd9eddaa8d07d66",
+      "inputMetadataSha256": "479b7d4260c15b013d4b7dba4b43a05d363118363797e2675a5f93903b11b520",
+      "inputContextSha256": "2f02e78542c76fe602a8bfa0b701862fc931fcf9fa1384f668d8a63bdbae2175",
       "copy": {
-        "title": "Mission Complete Rosette",
-        "alt": "Cream lettering and a large check mark fill a teal badge.",
-        "description": "Two bright orange ribbon tails extend beneath the scalloped edge."
+        "title": "007 Mission-Complete Rosette Badge",
+        "alt": "A teal scalloped badge reads “MISSION COMPLETE” above a large check mark.",
+        "description": "Two bright orange ribbon tails extend from the bottom edge."
       },
       "observations": [
-        "Cream lettering and a large check mark fill a teal badge.",
-        "Two bright orange ribbon tails extend beneath the scalloped edge."
+        "A teal scalloped badge reads “MISSION COMPLETE” above a large check mark.",
+        "Two bright orange ribbon tails extend from the bottom edge."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.920886+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-040.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-041",
       "status": "reviewed-from-image",
       "sourceSha256": "7d2653401b365f8fdb232c9c681af51c0d0a84c17308ee3311a1b1bc534dade8",
       "imageSha256": "7d2653401b365f8fdb232c9c681af51c0d0a84c17308ee3311a1b1bc534dade8",
-      "inputMetadataSha256": "a82881d49f0c996cd03f57e43423b73d67446f9837e407afa893b085ad7443a3",
-      "inputContextSha256": "f756e17338e719e8f19aa7e170ff07829db23f55aa2886cfd76feb901873129c",
+      "inputMetadataSha256": "0d6870f40fc94c64c4852a7bcf4e5a68177176eb4d0bc8cfefa4d892764d82ff",
+      "inputContextSha256": "fdf96d68223f2d9013e480edbe0cbd68bca89a5912fc37c7413397fd8d390368",
       "copy": {
-        "title": "Spy in a Trench Coat",
-        "alt": "A dark-haired illustrated agent walks in a long belted coat.",
-        "description": "One hand holds a closed umbrella beside the flowing lower hem."
+        "title": "007-Inspired Spy in a Trench Coat with an Umbrella",
+        "alt": "A black-and-white illustrated agent walks in a long belted trench coat.",
+        "description": "One hand carries a closed umbrella beside the coat’s flowing lower hem."
       },
       "observations": [
-        "A dark-haired illustrated agent walks in a long belted coat.",
-        "One hand holds a closed umbrella beside the flowing lower hem."
+        "A black-and-white illustrated agent walks in a long belted trench coat.",
+        "One hand carries a closed umbrella beside the coat’s flowing lower hem."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.942750+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-041.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-042",
       "status": "reviewed-from-image",
       "sourceSha256": "676844b1bdbfd67ecdc796d08f82249c818896a3773c1d93649a5d30f0d2c906",
       "imageSha256": "676844b1bdbfd67ecdc796d08f82249c818896a3773c1d93649a5d30f0d2c906",
-      "inputMetadataSha256": "39f65f89c807ab6fbd598c39963644eb1539abb4677f44b142c45d4fe2532a1c",
-      "inputContextSha256": "df948078adfad86b2ab48dfc25b67b3a726569336c97ed269176a2d3d897252b",
+      "inputMetadataSha256": "1f198f8874fbaa3df3fa310a4c4d7c05776d86eb3c584829bf4b268b5355e0b9",
+      "inputContextSha256": "f8491d10fee45bd48a80c0f40f12abf89bcf8f99c5ce388418864d11c7173418",
       "copy": {
-        "title": "Agent with an Earpiece",
-        "alt": "An illustrated short-haired agent wears a high dark collar.",
-        "description": "One raised fingertip touches a small earpiece beside the cheek."
+        "title": "007-Inspired Agent Touching an Earpiece",
+        "alt": "A short-haired figure in a high dark collar touches a small earpiece with one fingertip.",
+        "description": "The raised hand rests beside the cheek in a listening pose."
       },
       "observations": [
-        "An illustrated short-haired agent wears a high dark collar.",
-        "One raised fingertip touches a small earpiece beside the cheek."
+        "A short-haired figure in a high dark collar touches a small earpiece with one fingertip.",
+        "The raised hand rests beside the cheek in a listening pose."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.944009+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-042.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-043",
       "status": "reviewed-from-image",
       "sourceSha256": "a4d745acf0bf9606a0b5f8c71360e54844efef965d9915c6803a6923d7ef1730",
       "imageSha256": "a4d745acf0bf9606a0b5f8c71360e54844efef965d9915c6803a6923d7ef1730",
-      "inputMetadataSha256": "8336d087ab8c167cb38616f47e914b1b45c764cbdd5a6a291eb9f3af52813892",
-      "inputContextSha256": "80f4ea564e7dad1aa44c53f556a70a3c12517edbb3919125f9b32400582ce843",
+      "inputMetadataSha256": "34357a708f88706a4b5637c567e429dc31225fe647c83847599d8157d50e49d1",
+      "inputContextSha256": "bd5b5bed048db81e9f327757079771adb1f62db99bf95e55109d8850ff85dc75",
       "copy": {
-        "title": "Bulldog in a Patterned Blanket",
+        "title": "Bulldog in a Geometric Blanket",
         "alt": "A shaded bulldog sits with a folded geometric blanket around its shoulders.",
-        "description": "Fine wrinkles and broad paws frame the solemn upward gaze."
+        "description": "Fine wrinkles and broad front paws frame the dog’s upward gaze."
       },
       "observations": [
         "A shaded bulldog sits with a folded geometric blanket around its shoulders.",
-        "Fine wrinkles and broad paws frame the solemn upward gaze."
+        "Fine wrinkles and broad front paws frame the dog’s upward gaze."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.945808+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-043.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-044",
       "status": "reviewed-from-image",
       "sourceSha256": "c31168bcdce71e7f567b20397457a27b939bfa87a97691eda8e0bd22824b2c13",
       "imageSha256": "c31168bcdce71e7f567b20397457a27b939bfa87a97691eda8e0bd22824b2c13",
-      "inputMetadataSha256": "d9f6ddf3ad635323350ee919358e6040e3006987c749d157539d35c34e4e041c",
-      "inputContextSha256": "e5f99e59dcc17c66d857ab63effe73e757bfcf73888761efd19f58cac6f0def9",
+      "inputMetadataSha256": "bcc4241d01729d81430815614469343dc4e3275a2999bd3b204edea73b45cce2",
+      "inputContextSha256": "9f853e2acc4a0b5c341b82ad6cae6c2cb89da26b7684f4b6056290c28f34f236",
       "copy": {
-        "title": "Spinning Bowler Hat",
-        "alt": "A dark rounded hat has a narrow curved brim and plain ribbon band.",
-        "description": "Two loose motion strokes suggest a spinning movement."
+        "title": "Black Bowler Hat in Motion",
+        "alt": "A rounded black bowler hat spins above a narrow curved brim and plain ribbon band.",
+        "description": "Two short motion strokes suggest its turn."
       },
       "observations": [
-        "A dark rounded hat has a narrow curved brim and plain ribbon band.",
-        "Two loose motion strokes suggest a spinning movement."
+        "A rounded black bowler hat spins above a narrow curved brim and plain ribbon band.",
+        "Two short motion strokes suggest its turn."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.947037+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-044.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-045",
       "status": "reviewed-from-image",
       "sourceSha256": "71401183c0ab43df990392ade74b225dede7dd9e667a7548932d7c13bc56312a",
       "imageSha256": "71401183c0ab43df990392ade74b225dede7dd9e667a7548932d7c13bc56312a",
-      "inputMetadataSha256": "5d71e6ba59da23a68c9d97337b892635c809bcf48f82ce0e588790c8d1b20886",
-      "inputContextSha256": "5a73b05e113273bef33b964438e62de71741dc94c486fd8633f8892e487c1e4c",
+      "inputMetadataSha256": "5439b6168fc260c311c16053f6c92f01d4e1154f78445089e450701bba2c0978",
+      "inputContextSha256": "7ac9c4593c98daaf9e90f9d9018730edaa04618eb783bad4c3c91ba5fc986e75",
       "copy": {
-        "title": "Faceted Gem on a Cushion",
-        "alt": "A large clear jewel-like shape stands on a dark padded cushion.",
-        "description": "Fine cords and four tassels decorate the square soft base."
+        "title": "Faceted Gem on a Tasselled Cushion",
+        "alt": "A clear faceted jewel stands upright on a dark square cushion.",
+        "description": "Fine cords and four tassels decorate the padded base."
       },
       "observations": [
-        "A large clear jewel-like shape stands on a dark padded cushion.",
-        "Fine cords and four tassels decorate the square soft base."
+        "A clear faceted jewel stands upright on a dark square cushion.",
+        "Fine cords and four tassels decorate the padded base."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.948554+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-045.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-046",
       "status": "reviewed-from-image",
       "sourceSha256": "844463cbd1914dad1ba682098bcb7f6b954edf8a26276f3bfe4b7828e14d8449",
       "imageSha256": "844463cbd1914dad1ba682098bcb7f6b954edf8a26276f3bfe4b7828e14d8449",
-      "inputMetadataSha256": "a6dcbe49040e29bc45d4cb8590d0a3bbe9d21114c7f8c0be5fd7017389c0d0f1",
-      "inputContextSha256": "51e44e20f5d01793c5940fa0f4365389cd16ea3a8ef879916f3f2b389a42f8cf",
+      "inputMetadataSha256": "92b4d91d8cd8c22459555f850eb199a69f9f661658807c6b6758f092185e3d11",
+      "inputContextSha256": "724ebb113364807ceb8774fccfee72cbbb6a0728c907bcfcf9f23f38f333f5fb",
       "copy": {
-        "title": "Rolled 007 Newspaper",
-        "alt": "A tightly curled newspaper has dark columns and a small map panel.",
+        "title": "007 Newspaper Roll with a Numbered Tag",
+        "alt": "A tightly rolled newspaper shows dark columns and a small map panel.",
         "description": "A narrow band and hanging 007 tag wrap around the roll."
       },
       "observations": [
-        "A tightly curled newspaper has dark columns and a small map panel.",
-        "A narrow band and hanging007 tag wrap around the roll."
+        "A tightly rolled newspaper shows dark columns and a small map panel.",
+        "A narrow band and hanging 007 tag wrap around the roll."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.949816+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-046.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-047",
       "status": "reviewed-from-image",
       "sourceSha256": "395608bb5694483d9169a546483110abb3f0f48a7dff2c7a352132b463231a98",
       "imageSha256": "395608bb5694483d9169a546483110abb3f0f48a7dff2c7a352132b463231a98",
-      "inputMetadataSha256": "d781aca636c6ab4fec02ef536ad2199c00ca201f4876313b85c6440bb66d9f11",
-      "inputContextSha256": "6774eed225cb51997f92d466566de2fc99b806e6782699ba085ceac2bdc0d931",
+      "inputMetadataSha256": "99366941201515acf25958496caf473b0945a4770a6115311b994b32a0f82870",
+      "inputContextSha256": "be0bf254251440dbb1b752ae58b1a3001ea993433ce496a32db1bb685e073600",
       "copy": {
         "title": "007 Film Clapperboard",
-        "alt": "Pale chalk-like numerals cross a worn dark board.",
-        "description": "Diagonal black-and-white stripes cover the raised hinged clapper."
+        "alt": "Pale 007 numerals cross a worn dark clapperboard.",
+        "description": "Diagonal black-and-white stripes cover the raised hinged arm."
       },
       "observations": [
-        "Pale chalk-like numerals cross a worn dark board.",
-        "Diagonal black-and-white stripes cover the raised hinged clapper."
+        "Pale 007 numerals cross a worn dark clapperboard.",
+        "Diagonal black-and-white stripes cover the raised hinged arm."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.950878+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-047.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-048",
       "status": "reviewed-from-image",
       "sourceSha256": "447860aa77fbe1a58209f04cf90160685dbdeeb45e4aeb008708b4240c5a7b07",
       "imageSha256": "447860aa77fbe1a58209f04cf90160685dbdeeb45e4aeb008708b4240c5a7b07",
-      "inputMetadataSha256": "e3e471f44cb8b0d29435dd4d55176eb86ae6d87904e6f10f36ec8b4c01e6ef15",
-      "inputContextSha256": "4f4a1c36e1947adc44ac87c6f499c05f39c0cbb68d6dc7c949ae4b999a5dab88",
+      "inputMetadataSha256": "b7dac7dc97d448587cd00c5aae86ce7e04aedbc4cde4b427eb68578c684d9901",
+      "inputContextSha256": "05d6d1e980e232785316ffcb232fe8e559b540b0e2705668821edb46dd792d75",
       "copy": {
-        "title": "Two Tumbling Dice",
-        "alt": "Two outlined cubes show large round dark pips.",
-        "description": "Short motion marks surround their angled corners."
+        "title": "007 Casino Dice in Motion",
+        "alt": "Two outlined dice tumble at an angle with large dark pips.",
+        "description": "Short motion marks emphasize their movement."
       },
       "observations": [
-        "Two outlined cubes show large round dark pips.",
-        "Short motion marks surround their angled corners."
+        "Two outlined dice tumble at an angle with large dark pips.",
+        "Short motion marks emphasize their movement."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.951874+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-048.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-049",
       "status": "reviewed-from-image",
       "sourceSha256": "141b5e9065a88ade3d704bb7c0892ac8521cea63757467357780cc3ad50e3b8b",
       "imageSha256": "141b5e9065a88ade3d704bb7c0892ac8521cea63757467357780cc3ad50e3b8b",
-      "inputMetadataSha256": "7baa7857569e4147540de275c958984a86bc44d4f6ece4532856e9ff46db5f1f",
-      "inputContextSha256": "b325fc5c966e3d1cef26ae2f56e02527fff186b58126ca14f16be2db551b6213",
+      "inputMetadataSha256": "2d650b0eff71a1cdf273ec114700517dde55492be8103a3f01b63d6bee23fc13",
+      "inputContextSha256": "c57f3fd11b7cda908bc8cf4172dff44278bf8e3c7e52f1ad4940847c5a7a6797",
       "copy": {
-        "title": "Underwater Scooter Concept",
-        "alt": "A streamlined pale body has two broad ribbed handgrips.",
-        "description": "A large guarded propeller fills the circular rear opening."
+        "title": "007-Inspired Underwater Scooter Concept",
+        "alt": "A pale streamlined underwater scooter has two ribbed handgrips.",
+        "description": "A guarded propeller fills its circular rear opening; the device is an imagined concept."
       },
       "observations": [
-        "A streamlined pale body has two broad ribbed handgrips.",
-        "A large guarded propeller fills the circular rear opening."
+        "A pale streamlined underwater scooter has two ribbed handgrips.",
+        "A guarded propeller fills its circular rear opening; the device is an imagined concept."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.953096+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-049.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "007-050",
       "status": "reviewed-from-image",
       "sourceSha256": "27cb36cf8cba186a4c4d906c5a0efc7f2bbc86bf909a461567e260b3653a5f8b",
       "imageSha256": "27cb36cf8cba186a4c4d906c5a0efc7f2bbc86bf909a461567e260b3653a5f8b",
-      "inputMetadataSha256": "8972c56175579944e1a38977894804577326bd73b05c64c5c79c5c6868fa01d8",
-      "inputContextSha256": "a6176bc073b9e3af417c3b87c0b0e98bd62c887c45c5c45da5f1ee56c816ceac",
+      "inputMetadataSha256": "b517a6f6b5dab9cf85a3c827e3833584ea7aeaafcef5c3364b1be323b6eab1ad",
+      "inputContextSha256": "dcc5238d239cd3e3e76ea7eccba642510dddf0427218f3042f93d1e0ac360f6e",
       "copy": {
-        "title": "Fingerprint Keyhole Symbol",
-        "alt": "Thick dark curved lines form an oval fingerprint.",
-        "description": "A pale keyhole shape interrupts the center of the bold graphic."
+        "title": "007-Inspired Fingerprint and Keyhole Symbol",
+        "alt": "Thick dark curved lines form an oval fingerprint around a pale keyhole.",
+        "description": "The bold black-and-white symbol condenses a classic spy-story motif."
       },
       "observations": [
-        "Thick dark curved lines form an oval fingerprint.",
-        "A pale keyhole shape interrupts the center of the bold graphic."
+        "Thick dark curved lines form an oval fingerprint around a pale keyhole.",
+        "The bold black-and-white symbol condenses a classic spy-story motif."
       ],
-      "reviewedAt": "2026-10-31T01:26:51.953848+00:00",
+      "reviewedAt": "2026-11-02T14:27:17.643581+00:00",
       "inspectedImage": "/catalog/007/007-050.webp",
-      "references": []
+      "references": [
+        {
+          "publisher": "007.com",
+          "url": "https://www.007.com/the-films/",
+          "reason": "Official James Bond film catalog; supports the 007 film-series context, not an identification of the depicted actor, character, prop or vehicle."
+        }
+      ]
     },
     {
       "id": "11-001",

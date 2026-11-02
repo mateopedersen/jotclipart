@@ -1,12 +1,14 @@
 ---
 import RelatedCard from './RelatedCard.astro';
 import CollectionPreviewLink from './CollectionPreviewLink.astro';
+import { compactBrowserSnapshot } from '../lib/related/engine';
 import { relatedIndex } from '../lib/related/service';
 import '../styles/related.css';
 interface Props {
   sourceId: string;
 }
 const snapshot = relatedIndex.snapshot(Astro.props.sourceId);
+const browserSnapshot = compactBrowserSnapshot(snapshot);
 const alternatives = snapshot.alternatives.slice(0, 8),
   companions = snapshot.companions.slice(0, 4);
 const collection = snapshot.collection.slice(0, 12 - alternatives.length - companions.length);
@@ -120,7 +122,7 @@ const companionLabel = snapshot.companions.length ? 'Matching fruit' : 'Companio
       <script
         type="application/json"
         data-related-snapshot
-        set:html={JSON.stringify(snapshot).replace(/</g, '\\u003c')}
+        set:html={JSON.stringify(browserSnapshot).replace(/</g, '\\u003c')}
       />
     </>
   )}

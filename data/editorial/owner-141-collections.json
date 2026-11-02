@@ -275,17 +275,17 @@
     },
     "007": {
       "status": "checked-against-catalog",
-      "sourceSha256": "a8af2703b83532fa8aeb0ebd741c85ada7086c645a0a353466c1ab617af99dbb",
-      "intro": "Dinner jackets, sealed messages and miniature spy gadgets give these secret-agent drawings their character. Mission badges, fingerprint symbols and a classic Aston Martin DB-series coupe add different objects; invented gadgets retain concept labels.",
-      "checkedAt": "2026-10-31T09:37:00.117Z",
+      "sourceSha256": "9aeb5a0e486eaefc2eaa47f917b64cadb5a224cc91fdf6b38fd82c4a68ea88ca",
+      "intro": "James Bond 007 movie clipart brings together covert scenes, coded messages, casino props and imaginative spy gadgets with the franchise’s well-known Aston Martin car connection. The silver coupe is Aston Martin-style, not an identified production model; imagined submarines, aircraft and underwater devices are labeled as concepts.",
+      "checkedAt": "2026-11-02T18:00:00+03:00",
       "evidence": [
         {
           "id": "007-001",
           "imageSha256": "642d24490253d67227269e7eacf4498feab1a6b3c678e90e3410e926a4d28005"
         },
         {
-          "id": "007-041",
-          "imageSha256": "7d2653401b365f8fdb232c9c681af51c0d0a84c17308ee3311a1b1bc534dade8"
+          "id": "007-027",
+          "imageSha256": "14d3b3794619ceec78f07036978356970c9317d405eb2a4a20023bd3064e00d9"
         }
       ]
     },
