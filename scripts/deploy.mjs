@@ -105,11 +105,17 @@ try {
     run('node_modules/astro/bin/astro.mjs', ['build']);
     // Every artwork/editor HTML file remains with this build's asset bundle.
     run('scripts/security-headers.mjs');
+    // Large release fixtures and disk-reservation tests share the same volume.
+    // Keep the full suite serial so a payload fixture cannot consume the safety
+    // margin while another test checks the real free-space guard.
     run(
       '--test',
-      readdirSync(resolve(root, 'tests'))
-        .filter((name) => name.endsWith('.mjs'))
-        .map((name) => `tests/${name}`),
+      [
+        '--test-concurrency=1',
+        ...readdirSync(resolve(root, 'tests'))
+          .filter((name) => name.endsWith('.mjs'))
+          .map((name) => `tests/${name}`),
+      ],
     );
     // Optional local browser gate runs against this fresh build before any R2 write
     // or production activation. It leaves the normal storage safeguards untouched.
