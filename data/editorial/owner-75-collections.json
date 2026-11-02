@@ -1,0 +1,1677 @@
+{
+  "schema": 1,
+  "topics": {
+    "06": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "34f4e4bd92f670660d6d7b4cde8ae8c9e50ad060e29883725fa8785494bcf93c",
+      "intro": "Explore 06 designs made from rope and paper, with floral details and everyday objects.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "06-001",
+          "imageSha256": "566bf3732ad9d0d6962b1a65a985802c95fec718db94e709d8fafc97a0e40b70"
+        },
+        {
+          "id": "06-002",
+          "imageSha256": "949e2bb48ab087e6f1f882c58ff7ad17b7b8c27202aea0d53e91c98b264b721e"
+        },
+        {
+          "id": "06-003",
+          "imageSha256": "169b636ad12a24e71a5d93ce051f9f7efd13388425cef1a0c4d201296f923e40"
+        }
+      ]
+    },
+    "alpaca": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "1f251ccfa27aa105de6a7db579d90af6c3b0afee25360864d6736db39889fb03",
+      "intro": "Soft alpacas rest, nibble apple slices and play the cello, with a winter character hugging a snowman.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "resting-cream-alpaca-clipart",
+          "imageSha256": "f70a92df3efe00b1911a8ea0ae67ce3dbadf877be4a7e0a89e9390e3b330fe27"
+        },
+        {
+          "id": "alpaca-with-apple-slices-clipart",
+          "imageSha256": "16f6c6b170407113c8b0a7773742364750e1a411f5a7522a0e292ad62d78a26a"
+        },
+        {
+          "id": "alpaca-playing-the-cello-clipart",
+          "imageSha256": "35d061eaae2b3a61ecee8248769855f9a941ac0e6179ebf139177d17273ef4fb"
+        },
+        {
+          "id": "alpaca-hugging-a-snowman-clipart",
+          "imageSha256": "6a6285d62bfd9a0496926b8791c1c9ca516d68ff634ed369134edefc01c0c94d"
+        }
+      ]
+    },
+    "ant": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "a672f2317672a2f147de043b1c4d64ffc3832f9dda01c0aa6e7d7ab941d35fc6",
+      "intro": "Ants carry a larva, tend a green aphid and take part in little adventures with a blue marble and a wrapped gift.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "ant-carrying-a-larva-clipart",
+          "imageSha256": "c80c1fe9b5499a61568d02b8ddbb81264fc82aa9a38cb75d47dc285010ac6c13"
+        },
+        {
+          "id": "ant-and-a-green-aphid-clipart",
+          "imageSha256": "6d4a8c57484ed3cba01dd09e779ce083c42275624951504e009bbfd1348adb98"
+        },
+        {
+          "id": "ant-holding-a-blue-marble-clipart",
+          "imageSha256": "5319d09e51a31bd98c69ad4fa72c3c3a92c177fc4c1a03257a9cff7e4eee039e"
+        },
+        {
+          "id": "ant-tying-a-gift-clipart",
+          "imageSha256": "3beb84f59979aaaa512f32837d57e7049117e4ee6fe3c9692f486d3e43e627a0"
+        }
+      ]
+    },
+    "armadillo": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "cdf32954c13126dd4628b4d3052bb619c0d4567419e6126495c4ff0c1113280e",
+      "intro": "An armadillo walks in profile and appears as a ballerina, a quill writer and a flower arranger in imaginative scenes.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "armadillo-walking-in-profile-clipart",
+          "imageSha256": "71ca5c573b9cdad1c6819ccb51d314f7f21e14980a8d139404b4d4b8b05a11f9"
+        },
+        {
+          "id": "armadillo-ballerina-in-a-pink-tutu-clipart",
+          "imageSha256": "5cf5eec2b03dca1d7e68136af29fac220c948e69dbbd341940ce71f3b8437d86"
+        },
+        {
+          "id": "armadillo-writing-with-a-quill-clipart",
+          "imageSha256": "1c2f77bb101adbab604a3368ef25f6c7eabe4b03dfc6050edc09d98e57db82cc"
+        },
+        {
+          "id": "armadillo-arranging-a-flower-bouquet-clipart",
+          "imageSha256": "d5c6134d24087cb7c8f3e75557a58ea777e81b66a778b88d16022156b508a903"
+        }
+      ]
+    },
+    "axolotl": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "352d7b755b6b18eef290bb6587ea43e34f687ea9175375c3c22c80027224e301",
+      "intro": "Pink axolotls swim, stack stones, play a small guitar and fly a pink kite in these gentle character scenes.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "pink-axolotl-swimming-clipart",
+          "imageSha256": "de73a51cb83bec573c96c0cafb27a1cbf30b3020e9c09f3454611c151bdc641d"
+        },
+        {
+          "id": "axolotl-stacking-stones-clipart",
+          "imageSha256": "4c7c9fd0e14682f62f0bc96c417fbafa6a2b6fdda883ad09e42010ce90c7982c"
+        },
+        {
+          "id": "axolotl-playing-a-small-guitar-clipart",
+          "imageSha256": "b80bd837f5b76b7b74edade741ac67d2e236af3efbdc94dfbf036f39d661fb6c"
+        },
+        {
+          "id": "axolotl-flying-a-pink-kite-clipart",
+          "imageSha256": "a9751acb80413723694d3706be1c61b10abf4bc18e253c3ee08d8ea19f1e1449"
+        }
+      ]
+    },
+    "beaver": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "bcdf77c3cc50b156bc10b90a76393faf23f5c05aee0b203cf276083d70244913",
+      "intro": "Beavers carry leafy twigs and cattails, write with a quill and rest in a hammock in these character scenes.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "beaver-holding-a-leafy-twig-clipart",
+          "imageSha256": "bb4156947554f2fb7a88da5ac78d956995b88cb6bccffb402e0bdfbda0a15dc6"
+        },
+        {
+          "id": "beaver-carrying-cattails-clipart",
+          "imageSha256": "e033be85387ee95b23766fdc27c81666662d58f4a753dada09c28f11f1ee4160"
+        },
+        {
+          "id": "beaver-writing-with-a-quill-clipart",
+          "imageSha256": "bf5b94d5c8c21c3dd85329c5536564982631dc446e7318e24b0765f762400db6"
+        },
+        {
+          "id": "beaver-sleeping-in-a-hammock-clipart",
+          "imageSha256": "20e5b6e98d07834a1f7617071dfaae60fcc9e46a3ff49ce5a93f37eccd3ac008"
+        }
+      ]
+    },
+    "bird": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "8ab22af7b78f1731024646f439fc3abcae9eeee614f18146ae8eb970d43e3e89",
+      "intro": "A bluebird on a flowering branch, a blue jay with an acorn and a kiwi among fallen leaves share space with a dancing chick.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "bluebird-on-a-flowering-branch-clipart",
+          "imageSha256": "f78a02d86d1849a41f2c43727a2c51c18d9c0ca085accefb69bbc6e24664ae86"
+        },
+        {
+          "id": "blue-jay-with-an-acorn-clipart",
+          "imageSha256": "92098a67cc4f831016cae6a0e270cb65bfc5a55229f80d0081df7855d5d4405f"
+        },
+        {
+          "id": "kiwi-bird-among-fallen-leaves-clipart",
+          "imageSha256": "a0c07164fa9ff8d1e73ca041b53668c72d189d7d6bb1ef684264f25193f44aa9"
+        },
+        {
+          "id": "yellow-chick-dancing-in-tap-shoes-clipart",
+          "imageSha256": "b1f2d1d3e2b7e4b73bcd37c6f96e2414e0a8157119e38cbdd2fb0a5031e48b7b"
+        }
+      ]
+    },
+    "bison": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "a9f97ad98d211548e841e7c7e827b06d008a3e095a78a584aedddf4810d6f509",
+      "intro": "Shaggy bison stand and rest beside imaginative characters knitting a scarf or sheltering under a leaf.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "standing-bison-with-a-shaggy-mane-clipart",
+          "imageSha256": "6480ba96f6ea0b1f6bb545e5949628cd87360935c7ed3bfea914413179b36188"
+        },
+        {
+          "id": "bison-resting-on-its-front-knees-clipart",
+          "imageSha256": "a33e2293909521a6ee0655a44e246ec90079761d225dd859a45aa248fa1858ec"
+        },
+        {
+          "id": "bison-knitting-a-yellow-scarf-clipart",
+          "imageSha256": "2a006ce8f668a7e3dcbd01d07993e08f8656380bed06382fa141f73f621bd2a6"
+        },
+        {
+          "id": "bison-under-a-leaf-umbrella-clipart",
+          "imageSha256": "2f19de11eefc2cc9b06e195f015b510cb4be8300f56d87c0cdb10bfec0217f27"
+        }
+      ]
+    },
+    "buick": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "ef8013056c56fc90c541314375d17f65df498fb8ec31f16c8483755706800709",
+      "intro": "Explore finned classic Buick cars, sleek coupes and modern SUVs, along with colorful tri-shield emblem illustrations.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "buick-electra-225-style-sedan-in-grayscale-clipart",
+          "imageSha256": "e2442dc7fda1c6a722f61c378d230718945c538123ddeea1bf057c965fd38eb3"
+        },
+        {
+          "id": "gold-buick-riviera-style-coupe-in-profile-clipart",
+          "imageSha256": "117c3230b1ecefe900194dd159e7fcfe2bce3cf88528dd714d282c7ef21c05bf"
+        },
+        {
+          "id": "blue-buick-enclave-style-suv-in-profile-clipart",
+          "imageSha256": "8040590a4e17cdacc228067e9e39f3ead9af2240d028d493bcf0d243689ca347"
+        },
+        {
+          "id": "buick-tri-shield-with-polished-circular-border-clipart",
+          "imageSha256": "f2ca12b06a0507d7288a4e55e7b70fb0b8ef80e31f4fd072e941f9cd992d9dfe"
+        }
+      ]
+    },
+    "byd": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "63b8d46ebe7d700533bee84cc4f8294893dcca0c48f79eaffacf30e3c36d7e9f",
+      "intro": "BYD-inspired SUVs, sedans and crossovers appear in clean profile and angled views, with light and dark finishes.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "byd-atto-2-style-suv-in-black-and-white-clipart",
+          "imageSha256": "eb25f644e4af1cdf169e8be576d387b67b7832f13fc3f7bfedbe52b18b206170"
+        },
+        {
+          "id": "byd-sedan-with-chrome-grille-clipart",
+          "imageSha256": "e360e7c1f9a4856f00c85b05172e6cfed741c648fe9901c13ce434afed210ddd"
+        },
+        {
+          "id": "cream-byd-sedan-with-wide-grille-clipart",
+          "imageSha256": "614205bc87e619affa4aea62d67a3bee3f1abbef0220e0d7f268bf38bd4f259d"
+        },
+        {
+          "id": "gray-byd-crossover-in-profile-clipart",
+          "imageSha256": "d5839d9c44fa3558971c95ff8dec7f1f98d85f5205f75a3b50f97698da38a404"
+        }
+      ]
+    },
+    "cadillac": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "0cc9b9174634b5690747ec63c1c2d0435d97eca32cb9f486cbb5c9d5d239a9e2",
+      "intro": "Vintage convertibles, classic coupes and modern SUV-style illustrations bring together different Cadillac-inspired body shapes.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "vintage-silver-cadillac-style-convertible-clipart",
+          "imageSha256": "a04221399056d1fa33e62f3b8b766dd00b363e96377e3954a324ce3e90b10f00"
+        },
+        {
+          "id": "light-blue-cadillac-eldorado-style-coupe-clipart",
+          "imageSha256": "a3352da563b9b0c4aba752ff7650e40d5862a8a115898f0e62de4cdbc92c5986"
+        },
+        {
+          "id": "burgundy-cadillac-xlr-style-hardtop-clipart",
+          "imageSha256": "51df00a1fb08890e7590594495cb6b00377ee4389d0c3038c05db2d4fd2dcc19"
+        },
+        {
+          "id": "white-cadillac-escalade-style-suv-front-view-clipart",
+          "imageSha256": "dea4608dee1faa5cb4859eb44f37f2b3368ef8589bab85cfc69643e602d2aece"
+        }
+      ]
+    },
+    "capybara": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "7cef7c0a86fa7ef8c4c79a9e9b50228ac1e2f5b8e6d0503846140bc780ba3607",
+      "intro": "Capybaras sit and nuzzle, while character scenes show them carrying a letter and arranging books.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "seated-capybara-clipart",
+          "imageSha256": "0b73af855fc656d004c51b033aa837fc8151e3e806c4f314390032d1fa7b513f"
+        },
+        {
+          "id": "two-capybaras-nuzzling-clipart",
+          "imageSha256": "da02187daaa8057501172f2ea76b6da1593d1dba6ef0c1adc10513425d52839e"
+        },
+        {
+          "id": "capybara-carrying-a-letter-clipart",
+          "imageSha256": "38706b6a1298ed0f3bf6ace68e61093650aed62bc631f85dca31ab1cf2e123ae"
+        },
+        {
+          "id": "capybara-arranging-books-clipart",
+          "imageSha256": "883bd862317ee427f9956f6fb7e1cd940c634aced93b9f698e2f752c3d3ec2eb"
+        }
+      ]
+    },
+    "cardinal": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "e5381351c62fab4b0327db99a97988c89dc741b48d5d4d3b569f0800a5fcbcbe",
+      "intro": "Cardinals perch near flowers and nests, while patterned feathers and cozy scarves bring a playful touch to these bird illustrations.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "cardinal-in-a-teal-scarf-clipart",
+          "imageSha256": "ed6407c96df39043b38f0fd857e618e711aa7f912ea4ef10a4dd515a0a0c18b9"
+        },
+        {
+          "id": "floral-pattern-cardinal-clipart",
+          "imageSha256": "cd60ce06193b70fd8b4df8b741aff06e68770e3c9c33c1110903001ebfc8b3ac"
+        },
+        {
+          "id": "cardinal-nest-with-eggs-clipart",
+          "imageSha256": "19ca74805ea2ced5842e9731d92e2ac9ed7fd7442a819cf4928830ba4a12c0f5"
+        }
+      ]
+    },
+    "caterpillar": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "cfed0939ad6bf5f96544e79332ee47404a939e2eae92a263edb37e03b1b11287",
+      "intro": "Caterpillars curl on leaves, shelter in bark-covered cases and rest beside a silk cocoon in this nature-inspired set.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "fuzzy-caterpillar-on-an-oak-leaf-clipart",
+          "imageSha256": "e76270bdf1398c0acec94d1697d58cdca19c36f959bfaea7003521b34e2be813"
+        },
+        {
+          "id": "caterpillar-in-a-bark-covered-case-clipart",
+          "imageSha256": "5e18c040b12749ea0ff1a2f7d13d8d92921188a9979b9bd4e4e8247e33f19e8a"
+        },
+        {
+          "id": "caterpillar-in-a-rolled-leaf-clipart",
+          "imageSha256": "a605e2fb96d5e0250fe3dfc03f4783e5775dca5048ff4f3d9c703babaa76fe15"
+        },
+        {
+          "id": "caterpillar-and-a-silk-cocoon-clipart",
+          "imageSha256": "32a72a1fbcfaa7edfa71ce0550e1a512ca779b865d2a54e736c4cc4c1f9da309"
+        }
+      ]
+    },
+    "chameleon": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "82388e643e4c1d1914e3e1c6d485e1599804b188159a2f552071a1cf85de0620",
+      "intro": "Chameleons curl through leafy branches and ferns, with playful characters floating on a balloon or building a sandcastle.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "striped-chameleon-on-a-leafy-branch-clipart",
+          "imageSha256": "172d64da91b748c5205109555a1486971cd15a5034bd65de8597eb3723479060"
+        },
+        {
+          "id": "ornamental-chameleon-and-ferns-clipart",
+          "imageSha256": "0ad3165a6fcc16744b054a4b62c84554c4658ad7c403880e369deee654ee4c08"
+        },
+        {
+          "id": "chameleon-riding-a-lavender-balloon-clipart",
+          "imageSha256": "cfe478b8ac5571e2b8f7017adce54444065ad73a59928aa4fd1eefa815f6092a"
+        },
+        {
+          "id": "chameleon-building-a-sandcastle-clipart",
+          "imageSha256": "015b29c7ba23ea3d5fa48f37430752874dbb2754d93114bb4214d9792e0fee63"
+        }
+      ]
+    },
+    "cheetah": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "1bb8cc2bf90a82d25ce0ed3f54362f6fb97fdce8116dd204c36465415b200753",
+      "intro": "Running cheetahs share the collection with playful characters flying a kite, dancing and playing tennis.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "cheetah-running-clipart",
+          "imageSha256": "84a46176fb350f6307409a133c21adb5d173ebce89d07f904c24dd071b5b98e8"
+        },
+        {
+          "id": "cheetah-flying-a-kite-clipart",
+          "imageSha256": "b8131b4ee9ea9bd36627e9e74b8ffd9d8e3f6495caa691c8ba12463bbe7a43fa"
+        },
+        {
+          "id": "cheetah-dancing-with-a-red-ribbon-clipart",
+          "imageSha256": "30f374a514ab9ed73990921ec8d5961094173646b2b0f13c67fb8518ac3fad0b"
+        },
+        {
+          "id": "cheetah-playing-tennis-clipart",
+          "imageSha256": "a1b4058e63584b9479bc2e869d0d32fdd3af58eaa20d229b0cb1421099addbd3"
+        }
+      ]
+    },
+    "chery": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "0d794a417186dce0f0ae9be36cb107d2bcc3e256b585b844f432e5baffb16dca",
+      "intro": "Explore Chery-inspired hatchbacks, crossovers and boxy city cars in front, side and rear views.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "red-chery-hatchback-front-view-clipart",
+          "imageSha256": "6aeb62319afe22d5feb747744ec79b8321d63841cc81e9fef50e829c5a032b39"
+        },
+        {
+          "id": "gold-chery-crossover-from-behind-clipart",
+          "imageSha256": "c4954668874ec9162412ba2ac2708d41f085d478a642a70350d4889d11163541"
+        },
+        {
+          "id": "boxy-chery-city-car-in-monochrome-clipart",
+          "imageSha256": "843fae09aa428dfe0835b2baf1712526d25b18578d167b12e4b77b7828008b5e"
+        },
+        {
+          "id": "blue-chery-tiggo-7-with-patterned-grille-clipart",
+          "imageSha256": "14844926d15c3b6da24c76cd00e1cb26d704d951f28d55706de8c918bb1c5f9d"
+        }
+      ]
+    },
+    "chevrolet": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "159cb2cf4399d4b556a891486046c245f3820952590cc690d4b950244fcc6289",
+      "intro": "From a finned classic to a modern sports car and a convertible pickup, these Chevrolet illustrations also include bowtie emblems.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "classic-chevrolet-bel-air-in-black-and-white-clipart",
+          "imageSha256": "b214d7d11ff24919fd891b07fe2fbffa1d1df8c4512cce5c1d76fc03998771dd"
+        },
+        {
+          "id": "modern-chevrolet-corvette-from-the-rear-in-black-and-white-clipart",
+          "imageSha256": "977a3d7a3851e716d98f94791aaf0d23cfb91ff9c623293ab8f3fdc22c489602"
+        },
+        {
+          "id": "gold-chevrolet-bowtie-with-brushed-finish-clipart",
+          "imageSha256": "f908ad3869f4889ff5f0b87dcf57bac19f7776987f947d8b2400dfc8e72687d4"
+        },
+        {
+          "id": "red-chevrolet-ssr-convertible-pickup-clipart",
+          "imageSha256": "5c48da1748e69c29feedc08a3ec16e20a935735d6a581134ef1af674eed1f94d"
+        }
+      ]
+    },
+    "chimpanzee": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "9c5f6061668469f37196d2059b9d5713241010df27af89055b995cb1eb507b32",
+      "intro": "Chimpanzees climb vines and take part in lively activities, from chess and tennis to dancing with a ribbon.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "young-chimpanzee-climbing-a-vine-clipart",
+          "imageSha256": "1fa6ee404f5650bf0365146ce64291a9f1a4a8786cadc5da929f95c5a5c00b1a"
+        },
+        {
+          "id": "chimpanzee-playing-chess-clipart",
+          "imageSha256": "c248c5ef39478facc430717cf27cde60244eec3a3128bc08b2251a144c3c4597"
+        },
+        {
+          "id": "chimpanzee-dancing-with-a-ribbon-clipart",
+          "imageSha256": "fe3078788374a3c7ee5d50eba820f7352a31d786c72e1ac368a83b0db20977ae"
+        },
+        {
+          "id": "chimpanzee-playing-tennis-clipart",
+          "imageSha256": "46e6c9f21f339500829178782a3ebb78da746e8cc36a66edbe9f1f34afb3f44c"
+        }
+      ]
+    },
+    "chrysler": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "03c61d549e16bf65f58c96abe527a80bccf9ed44b1e4f5acff79a60571be7c81",
+      "intro": "Vintage open-top cars and a modern minivan sit alongside Chrysler-inspired winged badge designs.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "vintage-open-touring-car-in-grayscale-clipart",
+          "imageSha256": "92fb72c6bc151273204c9e515f77303f4ae62662136330616beb536045160afa"
+        },
+        {
+          "id": "wood-trim-convertible-in-grayscale-clipart",
+          "imageSha256": "79380c40c302d86f2a3a7cc76bb97c9fe9187fd6ff39de29fb1d55e0ff19f7ba"
+        },
+        {
+          "id": "silver-chrysler-pacifica-minivan-clipart",
+          "imageSha256": "a5f1f20ec4e87d0c7bd7eb276801b006a1c7c1f4e7eb6b76d1a9104283fe83e0"
+        },
+        {
+          "id": "polished-chrysler-wing-badge-with-blue-center-clipart",
+          "imageSha256": "a73f558a3232a10da8089f8a53d247ae03883df9b35c7a5570cfb71f13c2668a"
+        }
+      ]
+    },
+    "clownfish": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "9df570fcf817dfb89c4058dc9591b9f0801a9486dfe388201891389c1be02c71",
+      "intro": "Clownfish swim near coral and appear in playful scenes with musical pipes, an ornament and a wrapped gift.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "clownfish-beneath-coral-clipart",
+          "imageSha256": "350083b6ff7cf5f2af22024d3b2e56d14771d3819fb558535b985235501689db"
+        },
+        {
+          "id": "clownfish-playing-panpipes-clipart",
+          "imageSha256": "cc0c3f17c00f0c1a19fad970c1e222e3cf9bdf8c280cfd17bd9fac88eb153c07"
+        },
+        {
+          "id": "clownfish-with-a-striped-ornament-clipart",
+          "imageSha256": "e4892f85f31b2bce88a2ee334eaa0d244fb52eca83098b47b92ea9383a3d56ef"
+        },
+        {
+          "id": "clownfish-carrying-a-gift-clipart",
+          "imageSha256": "453e42a06ca66798b5fb89fa8292744e8f9db915d1c6b8887ce071a327e95b10"
+        }
+      ]
+    },
+    "dodge": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "bba9ef77e611d27de093b441b0c89f3ca35b96a53b8b9707cab9c8a27a468390",
+      "intro": "Finned classic coupes, muscular cars and a pickup feature in this collection of Dodge-inspired vehicle illustrations.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "coral-dodge-classic-finned-coupe-clipart",
+          "imageSha256": "d7aef8ed2a0c112abe15e5ab9f24e4ccf051f23b288878ffb50b33d92185be65"
+        },
+        {
+          "id": "yellow-dodge-super-bee-style-muscle-coupe-clipart",
+          "imageSha256": "48be7dd5cb5d31c66aa296abdfd8eb42af910b69c7a4d79c408d9e2f98d2d7ad"
+        },
+        {
+          "id": "black-dodge-ram-sport-pickup-clipart",
+          "imageSha256": "8b3cb1a278c34a92ea0cbc36c4d5a786cec77a5f2782f83aef64b662cd6ddb65"
+        },
+        {
+          "id": "yellow-dodge-challenger-style-coupe-with-hood-scoop-clipart",
+          "imageSha256": "86c3222bfe1c453428de86d6e172ed626b96f36aeb0b914d6f30dbd145f4b3b5"
+        }
+      ]
+    },
+    "donkey": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "84ea942be26e13457de080a0236c977e43a23ea3da2ec025269ed7c24034e8fe",
+      "intro": "Donkeys graze and rest beside a stone post, walk together and shake water from their coats.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "gray-donkey-grazing-clipart",
+          "imageSha256": "3d4582ee0b09917f4b10edab54d9aa4ab23d8b7eacf8826c301506a34f750075"
+        },
+        {
+          "id": "donkey-resting-against-a-stone-post-clipart",
+          "imageSha256": "41f4e4099ff1c4ca906407fb64951c4d8568c47e3e83babb97727452d4b6b20a"
+        },
+        {
+          "id": "two-donkeys-walking-together-clipart",
+          "imageSha256": "4f1e1980ffcef25bef66393a467bfa8c50e0ef18e98abf57d9f1e95181f8517d"
+        },
+        {
+          "id": "donkey-shaking-off-water-clipart",
+          "imageSha256": "a6dc0f0229d221da5c5392ede4332ffc6a6369250c3e5cb9c511018ae04c7d6d"
+        }
+      ]
+    },
+    "dragonfly": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "b5b42f9c999072c3c060bb712df3ed741b7718fecc845a639cf59792ad4a51a1",
+      "intro": "Delicate dragonflies rest on grass and spread their wings, with imaginative characters carrying a leaf umbrella or dressed as an aviator.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "dragonfly-on-a-grass-blade-clipart",
+          "imageSha256": "4d39e4894829e0dc66b1becd9da36c0a3493a3a222aa0e0e75ad6eca09b1ee23"
+        },
+        {
+          "id": "blue-dragonfly-from-above-clipart",
+          "imageSha256": "93b61bda692759342c30dfbb7e3ce0a4cd1b7bd7744a7334a0753d3a861bfcf0"
+        },
+        {
+          "id": "dragonfly-under-a-leaf-umbrella-clipart",
+          "imageSha256": "9b739535d9606759b12eda5ac29f608d687734683e026b014d76ab6ae25b0909"
+        },
+        {
+          "id": "dragonfly-aviator-clipart",
+          "imageSha256": "bedb10f7ecbbe8e9ccc48c5952dede07a1b2c12e179550b560a84f329b74dfb8"
+        }
+      ]
+    },
+    "eating": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "7852391944af81f9244a9e15bf8bb9d67130d2b1e3b14ab8ec6859322d088cca",
+      "intro": "People of different ages enjoy snacks and meals in everyday illustrated scenes.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "eating-001",
+          "imageSha256": "ecb7e4d8bedb1227b1d45fc994386184fbde0eb4c45669d92d26c5d7bb0bd8ea"
+        },
+        {
+          "id": "eating-005",
+          "imageSha256": "723023c3ff719a01eafd18534b99608c3062443667281be52926b938a776641b"
+        }
+      ]
+    },
+    "gmc": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "fccc638d73205635dcc85852e72710125d31e5b4d13198026529c30355194ed9",
+      "intro": "Classic off-roaders, pickups and large SUVs appear alongside bold GMC lettering in several finishes.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "classic-gmc-jimmy-style-suv-in-black-and-white-clipart",
+          "imageSha256": "36c34f7a9b93a9f8a8037e433f902ff3c7be3ed9072df3b5bb4b868e1b99df4e"
+        },
+        {
+          "id": "gmc-canyon-style-pickup-in-black-and-white-clipart",
+          "imageSha256": "b5ad60afc6dbb5071ae0562ce8b6262efd655d9601a32ceea5b49ddb8a26904c"
+        },
+        {
+          "id": "blue-long-gmc-yukon-style-suv-from-the-rear-clipart",
+          "imageSha256": "deb39055fd081ebc22c49d17832deb56feb5fd34763f78f270bbdbb50f67864a"
+        },
+        {
+          "id": "glossy-red-gmc-wordmark-clipart",
+          "imageSha256": "ad5a1062fe617b2122b6af325edd33f25b57c9885643550f3489d37d4df2b387"
+        }
+      ]
+    },
+    "goldfish": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "d5a50d380b4020e020c7ab293024c975b2eef037be9b4b9de173ab7286aaa586",
+      "intro": "Flowing-finned goldfish swim beside driftwood and seashells, with character scenes that include a curious fish examining a snail.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "orange-and-white-goldfish-with-flowing-fins-clipart",
+          "imageSha256": "371347c83a53d67382011c7d26b4277947988fbe96e34d0b80c9938f40d27938"
+        },
+        {
+          "id": "bubble-eyed-goldfish-and-driftwood-clipart",
+          "imageSha256": "1b46972ae488684c4491e1294a847354adc653e86b6fbfd0dd561208da63f2ed"
+        },
+        {
+          "id": "goldfish-examining-a-snail-clipart",
+          "imageSha256": "ddca330aace163cd408f15a4c8b2b37070183aa32a9c929eec3c3700a88c9cc3"
+        },
+        {
+          "id": "goldfish-beside-a-pink-seashell-clipart",
+          "imageSha256": "78c4d7bb27693f3cf574ed341a6dd34e3406019dea7905ab7d4f7f37bae3d01c"
+        }
+      ]
+    },
+    "goose": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "41e53c5e790a80d2203c43c859374d4651b4c8b66570fce74b203c579e513dc0",
+      "intro": "Goslings hatch and explore, while geese graze on clover or take part in small creative adventures.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "gosling-and-a-feather-clipart",
+          "imageSha256": "b6471b70ca049d09b7e1828349a637dff1c453df6037b6099ccb1c74f03e7646"
+        },
+        {
+          "id": "goose-eating-clover-clipart",
+          "imageSha256": "7d3d52da4ea14c6de9ceacc4e99b840b8af5db19f5dd66d2c71d1b12b97963f9"
+        },
+        {
+          "id": "newly-hatched-gosling-clipart",
+          "imageSha256": "e25e9b77f41c98707e724a0cfc82e6e0a515e25ebe6436d9ab0af82ced826567"
+        },
+        {
+          "id": "goose-painting-a-stone-clipart",
+          "imageSha256": "76def8e79311c6cd73d674a152d6410d5e991aacc0ae1e77393d3980d68f1d8b"
+        }
+      ]
+    },
+    "gorilla": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "df5e1ee8422b248bc4104c54b11019a240267049377bd15efda51837c0c11b7a",
+      "intro": "A walking silverback joins playful gorilla characters with pastel balloons, a dancing ribbon and a tennis racket.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "silverback-gorilla-walking-clipart",
+          "imageSha256": "806c47ba4fcf2a563679d1eb5fa483f5dae7c1e6e3805bc527e7b555896045cb"
+        },
+        {
+          "id": "gorilla-with-pastel-balloons-clipart",
+          "imageSha256": "da1713a0798b20a2e273f95a83af76e2e0df1582e2713fd1d7a615dff880fc46"
+        },
+        {
+          "id": "gorilla-dancing-with-a-red-ribbon-clipart",
+          "imageSha256": "9eddb1c7d67c9fb5d7a203415f73b47a1445fa8dd95be82c63d70fce26e16e0e"
+        },
+        {
+          "id": "gorilla-playing-tennis-clipart",
+          "imageSha256": "689bdf34344ba7d41fb89ae2c6650382b718eac1fd97bca7dcc2986a3ea83c4e"
+        }
+      ]
+    },
+    "grasshopper": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "67c6042c014a9945316cb3556e2638ae1605794c0a2b57ed77d2ad655f2838e7",
+      "intro": "Grasshoppers perch among grain, irises and soil, with a playful insect painting a daisy in one scene.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "grasshopper-on-a-grain-head-clipart",
+          "imageSha256": "640031cdeeb8beae99aa5290e2f9a40acf0d955b72399be815540a735099d86e"
+        },
+        {
+          "id": "grasshopper-beside-a-purple-iris-clipart",
+          "imageSha256": "d71938038e690a5bcbc3101f5fc76316a64543ae9aaeb9cfbd5ebba382faff31"
+        },
+        {
+          "id": "grasshopper-beside-loose-soil-clipart",
+          "imageSha256": "9491a066a4dffac0e550a625f7dee3ae0d1e8c2f6b4be7a49428f73296d2ff63"
+        },
+        {
+          "id": "grasshopper-painting-a-daisy-clipart",
+          "imageSha256": "1858727257bc11e30396ddc9a4ce5f663e667e97a4861e2a2d21b8ed6736b79d"
+        }
+      ]
+    },
+    "guinea-pig": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "61c120dd6eb53249f84ff52b895b7e6ad0209f85ac68b2494f6606be7e00cdea",
+      "intro": "Guinea pigs nibble leaves, pour tea and rest beneath a mushroom, with a little treasure chest in another scene.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "guinea-pig-eating-a-leaf-clipart",
+          "imageSha256": "e6add93500340f77db8f1f85aecde643eec52e5e24d9a7c5cd5044eced2359a8"
+        },
+        {
+          "id": "guinea-pig-pouring-tea-clipart",
+          "imageSha256": "c1d2b5cf1c62fb13916f71447f4e82344d6f162f1eb878337d3ce511bba2baed"
+        },
+        {
+          "id": "guinea-pig-resting-under-a-mushroom-clipart",
+          "imageSha256": "ab4de875e0f21a4ef05e65f44a06e4194f2d0ebce76bbaa4b0928073532bf17e"
+        },
+        {
+          "id": "guinea-pig-with-a-treasure-chest-clipart",
+          "imageSha256": "3c64101d38b11a31f4127a2cb54c956f6ddd89b750126bf0fff275cff3f58860"
+        }
+      ]
+    },
+    "hamster": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "09926a7e6c13a9305c6bb7e87bc43bd432e2b124bc919347ff33fd7188589892",
+      "intro": "Round-cheeked hamsters appear with ice skates, bongo drums and a bouquet of tulips.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "golden-hamster-with-full-cheeks-clipart",
+          "imageSha256": "a93422dc498811408023e10f949b2766d5fb20e8cf56ee91099e573198fe579f"
+        },
+        {
+          "id": "hamster-ice-skating-in-a-scarf-clipart",
+          "imageSha256": "7fa197473a09bda4e2e002ff7614ada0ef3abe3cba98253a32752b358571c2c1"
+        },
+        {
+          "id": "hamster-playing-bongo-drums-clipart",
+          "imageSha256": "8a6bac81d3728054f3f8eca758450f3223244eae30a66e3320d87e4653f8c64a"
+        },
+        {
+          "id": "hamster-holding-a-tulip-bouquet-clipart",
+          "imageSha256": "f541a67a1299e8bb7bd26fbf2ca9ccafd093948fba54881abd07ebd960f06bb6"
+        }
+      ]
+    },
+    "hennessey": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "9356c8373c794a1de57c7382c303c60a0bfc278c0f27dc3b279bb7e49b3570bb",
+      "intro": "Hennessey-themed pickups, low-slung coupes and open-top cars appear with decorative script.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "red-hennessey-goliath-700-pickup-clipart",
+          "imageSha256": "cf070ac8d1c3471af88faaedd78b4840901701576867c83fd9c307dbfba1ba59"
+        },
+        {
+          "id": "cool-silver-hennessey-script-clipart",
+          "imageSha256": "0ed3c63bc46e7a6b7d3e17c142fd6ae84ef84a1964b70da81ad2f281b2489617"
+        },
+        {
+          "id": "silver-hennessey-hypercar-with-rear-wing-clipart",
+          "imageSha256": "ea4c340caf64cf1dee1badb0c68ecb6fa9f7c40cef052d96fd4352af5d8468e8"
+        },
+        {
+          "id": "blue-hennessey-open-top-hypercar-clipart",
+          "imageSha256": "9121cac4dafb71b48a2f6656f9670463c7a101c6ec9bf3cbcc41daff737a4a63"
+        }
+      ]
+    },
+    "honda": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "af04cf8386427d16bb0ab28dc8cb2de9ef99a20fe77c2c8327d2dd4433c12e29",
+      "intro": "Honda-inspired sedans and hatchbacks sit alongside low sports-car profiles, with both colored illustrations and line drawings.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "white-honda-accord-side-view-clipart",
+          "imageSha256": "d29df77f15d575154119e49c9fb218dab033a05ece89a130f8a968f22a7a041f"
+        },
+        {
+          "id": "blue-classic-honda-civic-hatchback-clipart",
+          "imageSha256": "3f53db5326ecb09cdcf03518952c7f0ac1c47a85f86cd03411e5cea6761f500b"
+        },
+        {
+          "id": "honda-civic-type-r-style-hatchback-in-profile-clipart",
+          "imageSha256": "b0ec2baea295c380c798acd561e4ccc74a01f39e3403beb677aaa098c0191e35"
+        },
+        {
+          "id": "blue-honda-nsx-side-view-clipart",
+          "imageSha256": "5d967fd37f4093704157b39def738b7f3b5be3646e394cd5569ba0db33e550d2"
+        }
+      ]
+    },
+    "hummingbird": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "049e2096e4bec7d6523cc630879f56f77e25dbeaf8844deadbf3e72b51dc3908",
+      "intro": "Hummingbirds hover near trumpet-shaped and hanging flowers; other scenes include colorful birds in flight and a tiny witch hat.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "hummingbird-at-a-trumpet-flower-clipart",
+          "imageSha256": "f1e7c2e75fee9574fb20bee9f63b30f7c76dab1fe95076394e4072f48882b6a8"
+        },
+        {
+          "id": "hummingbird-and-pink-hanging-flowers-clipart",
+          "imageSha256": "54b05d300bb8e478e9f32ed0a3a78ed7c5d4d48138238c30d3bf07892ab4d848"
+        },
+        {
+          "id": "red-throated-hummingbird-in-flight-clipart",
+          "imageSha256": "c87e5f3d064c69244c9779b022c2da72191fd96633de2d87bfb1c266b87cf0c1"
+        },
+        {
+          "id": "hummingbird-in-a-witch-hat-clipart",
+          "imageSha256": "aff981ea56ad389a38d7fb9b686cdfe48e9ab39c266b1ac2f50f02e82d66e7c1"
+        }
+      ]
+    },
+    "jaguar": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "314138976dd55fe64e4a6d7c43ccab4b5b1793894a85ca41bb7a7ab45f820f3c",
+      "intro": "Spotted cats drink and climb in nature scenes, then take part in imaginative activities such as chess and clock repair.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "jaguar-walking-forward-clipart",
+          "imageSha256": "3868aa9261ec3c4019f6045b8b909d333b4bbdd8a8154ea92eda792e8e8f7535"
+        },
+        {
+          "id": "spotted-cat-playing-chess-clipart",
+          "imageSha256": "db30758734ac5d0c9fd794f8303fbac98d1deb6234e471d4e8a2ab2949b73acd"
+        },
+        {
+          "id": "spotted-cat-repairing-a-clock-clipart",
+          "imageSha256": "9231bc23574414ebedf1bfbe2dfdac2c11ed1b790527fa096e240d479562c12b"
+        }
+      ]
+    },
+    "jeep": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "c03cd5eaf6a10f8579c5b9f09aeca741bc8dde8c5966ae44c3719736860626b3",
+      "intro": "From striped vintage pickups to modern SUVs and off-roaders, Jeep-themed artwork includes bold wordmark variations.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "red-jeep-honcho-pickup-with-gold-stripes-clipart",
+          "imageSha256": "9bf893888c52146a8e68362d8701fbf6e8b507179e5f3c9f2f25ff17925365e6"
+        },
+        {
+          "id": "jeep-cherokee-rear-view-in-grayscale-clipart",
+          "imageSha256": "95fbf2b01a97f191821e4fff6eddad104fe81153daf8ccdcc39616130b68ae53"
+        },
+        {
+          "id": "teal-jeep-wrangler-rubicon-rear-view-clipart",
+          "imageSha256": "2558f5d72c55b171e66abffe9b1609c22a32e444579f2a220de1b921d85a21d6"
+        },
+        {
+          "id": "glossy-dark-green-jeep-wordmark-clipart",
+          "imageSha256": "358b371c4f259cfdca5fdb2643f63a1c8b9841433886c6c6a6e8cf8fac0ee3f9"
+        }
+      ]
+    },
+    "kia": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "1f7c675fe11c906961ba4e56ba038b1892bc24833d5b51568bf7a43f77fa6892",
+      "intro": "Sedan, small hatchback and SUV-inspired Kia illustrations are shown in color and monochrome from several viewpoints.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "black-kia-cadenza-style-sedan-clipart",
+          "imageSha256": "a7e246dfc98c9e57113204380fe9b82aaa3eacbb88d41f63e58c723419b7a6ec"
+        },
+        {
+          "id": "kia-forte-style-sedan-in-monochrome-clipart",
+          "imageSha256": "0fe6e1e19319f071c8a1e5c5da8bfc0617e6f734025f8c1c7933338c6dac4c0a"
+        },
+        {
+          "id": "yellow-kia-city-hatchback-from-behind-clipart",
+          "imageSha256": "e22c62c4894f60a883ba15661e415b5bd5550a4cec341b2c99fba44352ad790a"
+        },
+        {
+          "id": "red-kia-sorento-style-suv-from-behind-clipart",
+          "imageSha256": "2dd8b2d810ef25bd61d55827d54c86cd236b673b90b3847ed94c39f35bb8b76a"
+        }
+      ]
+    },
+    "king": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "018224d396ae0191bb9757e867f9a4ee8f96288f2b4da8f4f337b82f7aafbb8b",
+      "intro": "Crowned characters read, create, play and take part in familiar daily activities.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "king-001",
+          "imageSha256": "58484dde4c012225712e90a2bf9a7259a0ca26530f6f44a4045fda2af835b4b0"
+        },
+        {
+          "id": "king-014",
+          "imageSha256": "7b05e6df790217b3cc64babe4ea58d456060ec6295fbbf7f515b20ac8a677e14"
+        }
+      ]
+    },
+    "leopard": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "cf8efdc5df2b012d88cec2ffbcf19a5dad5aa76f240c721e89c3d0d3f2fc867b",
+      "intro": "Leopards rest on branches and appear in playful scenes stretching beside a yoga mat, dancing and brushing a fossil.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "leopard-resting-on-a-branch-clipart",
+          "imageSha256": "5cef6d81f78d760e1b2e7864275fa3416f545d9f7e5bdd3e2692b84ec7b27bea"
+        },
+        {
+          "id": "leopard-stretching-beside-a-yoga-mat-clipart",
+          "imageSha256": "4a9ca4a0e76122f2f049e9c839bf68ad963754e6b9c6fc2b0e1798694e79060a"
+        },
+        {
+          "id": "leopard-ballerina-in-a-purple-tutu-clipart",
+          "imageSha256": "a558987aaf4c4bead3c2f53b2cca3751dc00d68d9d71802ba34a8458a5266eb5"
+        },
+        {
+          "id": "leopard-brushing-a-fossil-clipart",
+          "imageSha256": "ebbc35d7fdd3447833c21b71e845d2274df7066a50ea3fad8df8080123e069aa"
+        }
+      ]
+    },
+    "lexus": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "5a048d6657c932355b000aef0435dfc590a1462b1906ee73710f0a22037d3329",
+      "intro": "Explore Lexus-inspired hatchbacks, sedans, a minivan and a race-car design in varied angles and finishes.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "red-lexus-ct-style-hatchback-clipart",
+          "imageSha256": "6cbe8f08ade3f025769d237c3f843894b9ebb68c89224b076702b0c5047bc8b1"
+        },
+        {
+          "id": "white-lexus-is-style-sedan-drawing-clipart",
+          "imageSha256": "31b04a2d5fdb1ed6655478d453ee9585a6159ddd76d8629c57ae9d4f90e5dc8b"
+        },
+        {
+          "id": "black-lexus-lm-style-minivan-rear-view-clipart",
+          "imageSha256": "65782ce87cc2b2ed437c8be61e41ac897f8c1da39ee008f04ea32d7ce01a1916"
+        },
+        {
+          "id": "gold-and-black-lexus-rc-inspired-race-car-clipart",
+          "imageSha256": "88392572655ec157fbe99c4cffef372771a5645a4a61af6f84830c05c3987097"
+        }
+      ]
+    },
+    "lincoln": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "5e2d2c7d25c07b937c8b88388d51c2159bc16542d5f96a96e8d71c0831a4cb24",
+      "intro": "Classic convertibles and modern SUVs are paired with interpretations of Lincoln’s vertical star and wordmark.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "classic-lincoln-continental-style-convertible-from-the-rear-clipart",
+          "imageSha256": "8b906f88baeb1c16d1dcb34245e86597cf2234578696b0c92af4867c1d4683f7"
+        },
+        {
+          "id": "lincoln-navigator-style-suv-in-black-and-white-clipart",
+          "imageSha256": "84a774d106864d90e79fd32a9ae0d3f0d9ccd0623766ef35d23d7985320113cd"
+        },
+        {
+          "id": "light-blue-lincoln-suv-from-the-rear-clipart",
+          "imageSha256": "9f94bb62b81d39cb2a903d7d69bddfd613e5583bd528399cf6383f6f55fc86b1"
+        },
+        {
+          "id": "dark-chrome-lincoln-star-and-wordmark-clipart",
+          "imageSha256": "d924fa6e187aaecb7a8723a6dd5de9200a9270f1e7b6350f104c138273bd6254"
+        }
+      ]
+    },
+    "lizard": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "2640bbefcb9b8a0ee01aa34309b192c56a3f1f842ed0697c8a16d819e69c2250",
+      "intro": "Spotted geckos and patterned lizards appear on stones and in playful scenes with a skateboard or balloon.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "spotted-gecko-on-a-stone-clipart",
+          "imageSha256": "bdc850f684dc0cbfd9cb894ae6f95f14448e07600c702280d52ea5a6776b0634"
+        },
+        {
+          "id": "black-and-white-patterned-lizard-clipart",
+          "imageSha256": "567e60229cb143e9750475e83c649339128c0d8f398b540548d1993d40806155"
+        },
+        {
+          "id": "bearded-lizard-on-a-skateboard-clipart",
+          "imageSha256": "a5f631166f6cb9a6597f495e3aad9311b9f61af528cb8257bd87c363f57152b2"
+        },
+        {
+          "id": "gecko-in-a-hot-air-balloon-clipart",
+          "imageSha256": "58749562110032d7f7dd18475b8d09515caa9efd91048aba4972816e7db5f310"
+        }
+      ]
+    },
+    "llama": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "070b48ccd114db0dc40857ce3cf1eff425058c0018e7ed2a40263ba5c399795a",
+      "intro": "Llamas stand, cross a wooden bridge and take a ride on a skateboard; a scarf and warm drink add a cozy scene.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "brown-and-white-llama-standing-clipart",
+          "imageSha256": "cfc5670fcb15f63574f5d1668432f2781a8e3196b3991988c36c785a2a31849f"
+        },
+        {
+          "id": "llama-crossing-a-wooden-bridge-clipart",
+          "imageSha256": "1ba7f1a6b7a276bf9531a502ac041b368c32a1c93f578f1d4791a2a7056abacf"
+        },
+        {
+          "id": "llama-on-a-red-skateboard-clipart",
+          "imageSha256": "d7c47eb1f55520e2f8de057e052f8625d38b0bc865d3e50c667a355342404ddc"
+        },
+        {
+          "id": "llama-with-a-scarf-and-hot-drink-clipart",
+          "imageSha256": "0f917f4d4e9cd1af5de48940b7cf24412c85fc3d04eaba3acabddfced37b49ed"
+        }
+      ]
+    },
+    "mazda": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "42a697a957bbdef485d2d7f70a1db454aa383f9cff357822a5e0fe4b06414c7c",
+      "intro": "Mazda-inspired hatchbacks and SUVs join open-top roadsters and vintage coupe profiles in these vehicle illustrations.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "red-mazda-323-style-hatchback-in-profile-clipart",
+          "imageSha256": "71f79bf440153b40b2cf97674bc2492c0e5b8aa305275f55f35aef313a441ef2"
+        },
+        {
+          "id": "beige-mazda-cx-90-rear-view-clipart",
+          "imageSha256": "b77fc83736d27f45279015d88c876e35b04a48ad29f37860c75991babb2db191"
+        },
+        {
+          "id": "white-mazda-mx-5-with-raised-headlights-clipart",
+          "imageSha256": "99634df163fea4fe5c4765727824034e763b21874f84272f4e43aa1f937448a1"
+        },
+        {
+          "id": "red-mazda-rx-2-style-coupe-profile-clipart",
+          "imageSha256": "0d96198fd43660906f1dae3b374249e737fbd41c347956f08fdb97879c2a780e"
+        }
+      ]
+    },
+    "meerkat": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "4c0dcb7ef9999b5bd64bb52e62ff89257dde573340e868ed37ad1bd9b1ed3782",
+      "intro": "Meerkats stand alert and appear as playful chess players, a ballerina and a curious fossil explorer.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "standing-meerkat-clipart",
+          "imageSha256": "79477706c55b3739c50229f74fd48bbb1ea799a90eb34affc4a35c87a55954e0"
+        },
+        {
+          "id": "meerkat-playing-chess-clipart",
+          "imageSha256": "d68902abd906563c6b878077fee0861bcf8cc452f456651541b7e187efe79b60"
+        },
+        {
+          "id": "meerkat-ballerina-in-a-purple-tutu-clipart",
+          "imageSha256": "dc353a8ba5cfba19d72a7fef3ef3affb0cfd74584da6d52b2fb3b3eab5bef2e3"
+        },
+        {
+          "id": "meerkat-examining-a-fossil-clipart",
+          "imageSha256": "1317ec881dcb67d53085cb342d08759d5f865db3f96633db0e610c0c5ac9bac2"
+        }
+      ]
+    },
+    "moose": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "af38e2c6949c090f1e5ce56304bc4b83cbdbd8dd952e8df9bf285bf10a571357",
+      "intro": "Moose walk through shallow water and appear in playful scenes with a flying insect, mail bag and teal kite.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "moose-walking-through-shallow-water-clipart",
+          "imageSha256": "9205bf2974d0ec9d154b8a14483ccfe4586e57604f5d74ab85d3b833f1d0d3b8"
+        },
+        {
+          "id": "moose-with-a-flying-insect-clipart",
+          "imageSha256": "4296e11b538ab75440009b5f8154856758c66247f736a81db4aa6cee9b9df6c2"
+        },
+        {
+          "id": "moose-carrying-a-mail-bag-clipart",
+          "imageSha256": "e2e590fdb5db8dbb78637b7d617614cd8b07df0d0053be2c7982d49b59142d8d"
+        },
+        {
+          "id": "moose-flying-a-teal-kite-clipart",
+          "imageSha256": "158683c592cbc5f14065647fc07463db44a43f9a2b96a0ffc9ab10b4db297028"
+        }
+      ]
+    },
+    "mouse": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "16af110752448a33816927efbd0a366cc4c73023e549dcb088f39f6a44c5a3f0",
+      "intro": "Mice hold seeds and nest in grass, while cheerful characters juggle balls and stack rainbow blocks.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "brown-mouse-holding-a-seed-clipart",
+          "imageSha256": "ea45116311c0818db4ed6c41391eeae7b6555b2fcf4a19bb5bc5a9c52608eeac"
+        },
+        {
+          "id": "mouse-with-young-in-a-grass-nest-clipart",
+          "imageSha256": "9aec48e4af2caf7b2437bc163bcf2c61cec26118695541bd2baf45f729e6d209"
+        },
+        {
+          "id": "mouse-juggling-green-balls-clipart",
+          "imageSha256": "bf43ed3e4cc11b2e977f81174ff0764f8c659de4f3ec5e1b21ab86ae538bbd25"
+        },
+        {
+          "id": "mouse-stacking-rainbow-blocks-clipart",
+          "imageSha256": "0dd26c006ea8fa7f123dcafef0278177310d0dd4d9964de1d79ff05e635d64e0"
+        }
+      ]
+    },
+    "narwhal": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "5a53c6be772f94977afb926ea076c1c7a0763e36c912258a618b1cc82710e6c1",
+      "intro": "Spotted narwhals and whale characters appear in swimming scenes and imaginative adventures with balloons and a star wand.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "spotted-narwhal-swimming-clipart",
+          "imageSha256": "5b74441c5897a823cc57023977a4f226171f35e65c03726ce8a41b912d7545f3"
+        },
+        {
+          "id": "narwhal-viewed-from-the-front-clipart",
+          "imageSha256": "63fa20869cd76668973a3cb50661b6ef43cfa3bc2b237c5c0189af3ca486917f"
+        },
+        {
+          "id": "spotted-whale-in-a-hot-air-balloon-clipart",
+          "imageSha256": "0048b334384ac19ac90229faf50c9f91fbbce9760182f75b181bd45d2ae26fb2"
+        },
+        {
+          "id": "narwhal-with-a-star-wand-clipart",
+          "imageSha256": "089bb4d56baa6f5a97272d0e06031735ddbf63c0aba8a6c462c30fb27a872151"
+        }
+      ]
+    },
+    "nissan": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "9be35fac8db74acf631df118d16ce7bbc0cdcf928c8db3ff9f26760432609a68",
+      "intro": "Find Nissan-inspired coupes, compact hatchbacks and classic sedans, shown in colorful views and monochrome line art.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "monochrome-nissan-180sx-side-view-clipart",
+          "imageSha256": "fa63922265461c341399d6daeae03f4e62b41d3279164cdd982532c3747ec9fd"
+        },
+        {
+          "id": "blue-datsun-510-style-sedan-clipart",
+          "imageSha256": "b1ce95948654ffee144d12edea999a317108a18327634f1c8962b5d30b0d94b3"
+        },
+        {
+          "id": "beige-nissan-pao-style-hatchback-clipart",
+          "imageSha256": "7b2c9f3fb9403e0bf48f23c5a93349e0e477057e353f53e1ac49a069590a7cc1"
+        },
+        {
+          "id": "silver-classic-nissan-skyline-gt-r-style-coupe-clipart",
+          "imageSha256": "50af24c96101262eb39a08343cc2e58765e258a9d9cfe1a56ef3f62196243ec5"
+        }
+      ]
+    },
+    "oldsmobile": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "4189a8f59cf599fa571e8558b7c9d54c3ff1e108687f160c5b3dffb0ceb72d00",
+      "intro": "Finned vintage coupes, streamlined cars and stylized oval badges feature in these Oldsmobile-inspired illustrations.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "classic-finned-oldsmobile-style-coupe-in-grayscale-clipart",
+          "imageSha256": "272c4d8343da9a33a9369a662cdb1f50a38a693923de4f790383bf9afaabaf62"
+        },
+        {
+          "id": "gold-toronado-style-coupe-from-behind-clipart",
+          "imageSha256": "72db3093bd545bad49bb164fba6dfa7c07d89056c0a37b6d77813dbc1bedc613"
+        },
+        {
+          "id": "blue-alero-style-coupe-in-profile-clipart",
+          "imageSha256": "c9562012efa52ca42a66cb636d2a68a6e211b650d16626c9a7c4a9294d63ef29"
+        },
+        {
+          "id": "blue-edged-chrome-oldsmobile-style-emblem-clipart",
+          "imageSha256": "738230dc301af770a6cffb33e07e5c8922579ff82c0529a5f06269adaff6db29"
+        }
+      ]
+    },
+    "ostrich": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "f503a0527769905c2f0d9a3604c53ffdcdb19329a40fbd9daf096e2501351d0a",
+      "intro": "Explore ostriches and chicks in nest scenes, patterned portraits and imaginative costumes, from a tiny chess player to a floral cape.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "ostrich-nest-with-eggs-clipart",
+          "imageSha256": "8742cdd2d8840f1830751e35d40cdbab9f1ab044bf310e561f09acba21cd0de8"
+        },
+        {
+          "id": "ostrich-chick-and-a-chess-rook-clipart",
+          "imageSha256": "ba1367433ff8a8b86f5d03e906c8c91b7e010c2114e14f8fd2660bbac6f6a592"
+        },
+        {
+          "id": "ostrich-in-a-floral-cape-clipart",
+          "imageSha256": "450ac495468cfd87fb6680ca77f101443e1738948d23fc46ba86ee0b902747b7"
+        },
+        {
+          "id": "geometric-ostrich-clipart",
+          "imageSha256": "e57e53fc48a12b50bb809132a747604f2c4a8737740ded7ca6ce370148c5eb67"
+        }
+      ]
+    },
+    "otter": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "fc9fae5b2c9d44d57c947618516a344c26dadb10c19f6f42b8d9e58cfaf31152",
+      "intro": "Otters hold shells, fly kites and read beneath a beach umbrella, with one character riding a paper airplane.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "otter-holding-a-shell-clipart",
+          "imageSha256": "f233364fa27518628c6f046ac748651673eb5ccfc6c53cc4dce6238765e2fb58"
+        },
+        {
+          "id": "otter-flying-a-kite-clipart",
+          "imageSha256": "12c3992a5ef9c24926cfb59b965aeebdd4bbbbf6f669977eb73149a4d7c2d4a7"
+        },
+        {
+          "id": "otter-riding-a-paper-airplane-clipart",
+          "imageSha256": "978dca654726b612ab0c0386e1b3e59a7744366a341aaac8275c65f5dbce24bd"
+        },
+        {
+          "id": "otter-reading-under-a-beach-umbrella-clipart",
+          "imageSha256": "fd376031d021309d75f897c52f46d09b1dd680c49d53372ca10b0ef1e1a95d0e"
+        }
+      ]
+    },
+    "polar-bear": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "0dd755896d6aeb8dfb30784546fac2a3f4c3f2fbffa9f2421d9be79deb330238",
+      "intro": "Polar bears walk and play in imaginative scenes, from bongo drums and juggling snowballs to a chest of gems.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "polar-bear-walking-clipart",
+          "imageSha256": "0f95f3593bd741d252b2ffc3a8fb546d17cd931bd6b375d0bb5be1a6a639b6f2"
+        },
+        {
+          "id": "polar-bear-playing-bongo-drums-clipart",
+          "imageSha256": "a074faef8bbee43dc2aeb669edc928c3802dc82ff219852f3f34f88f68f2621c"
+        },
+        {
+          "id": "polar-bear-juggling-snowballs-clipart",
+          "imageSha256": "65084b0698523e595f7a6c4e1c6aafad16fcac8ae2411992885eb4be14f7786f"
+        },
+        {
+          "id": "polar-bear-with-a-chest-of-gems-clipart",
+          "imageSha256": "5f597220277e80c02999e01e5e3309e5fbf590d523c6e1242ef92aa38853478e"
+        }
+      ]
+    },
+    "quesadilla": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "0702ca096a45eda029f01b7905e89c7ac3a97926857cba984da9d232dafb5a08",
+      "intro": "Find quesadilla wedges, colorful fillings, cooking scenes and playful food characters.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "quesadilla-001",
+          "imageSha256": "e9afda0e93b6d63856f1fac536f80ccb724b8ba204063d32b9254e6ed4de8a31"
+        },
+        {
+          "id": "quesadilla-003",
+          "imageSha256": "6779f0ed4334c651f5457550d17096299dba9d62d27bfd653e0ab40366137d51"
+        },
+        {
+          "id": "quesadilla-028",
+          "imageSha256": "2211f20b9c2b6b2061823c47d16da4ee77decdeaab9008553b783a6901b583a0"
+        }
+      ]
+    },
+    "red-panda": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "ae85096caa0c3504073db9cf4230eba6fb17f28f4d208e910026ccc811b4f251",
+      "intro": "Red pandas hold bamboo, play chess and open a ribboned gift; a flower crown adds a gentle character detail.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "red-panda-holding-bamboo-clipart",
+          "imageSha256": "7872233b3dd146788ba61d5a9beb39615619d83736f3c09e53b2bdd388eb7d1b"
+        },
+        {
+          "id": "red-panda-playing-chess-clipart",
+          "imageSha256": "f4ecbdb29aec3abd95902fb7d2d39830c701b8f87552b0b36add84b9053fde42"
+        },
+        {
+          "id": "red-panda-opening-a-ribboned-gift-clipart",
+          "imageSha256": "a1c07dee06dfae9f8c4ffde2cb9746512870ce9e28e89b59c7e2af9c3c895593"
+        },
+        {
+          "id": "red-panda-wearing-a-flower-crown-clipart",
+          "imageSha256": "41a6cb4750435e9420311c72254501465319cf6ab765ba94d3537956163adcf7"
+        }
+      ]
+    },
+    "robin": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "db67dd9305db5bd7432d928e7bc2099dd97d039d624bcd278688d861c70820ef",
+      "intro": "Young robins appear among flowers and nests, alongside storybook birds reading, exploring and caring for their eggs.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "young-robin-above-a-daisy-clipart",
+          "imageSha256": "2099a514810127b236eb979fbb66af22887fd5e40b33b816a0fd9429ba023f41"
+        },
+        {
+          "id": "robin-turning-a-book-page-clipart",
+          "imageSha256": "4fb55c6aec3f2a674ca8cb1029a3ac8cc406fbf5de1bb302d65847c23bf4f89e"
+        },
+        {
+          "id": "robin-in-a-nest-with-eggs-clipart",
+          "imageSha256": "83b9012d8ca676a62e01634e64cc1d0bf022973342a45132d1ce5bcfd5fdfd95"
+        }
+      ]
+    },
+    "rolls-royce": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "14e1140291ffb36b49fe6cb5eda292af768de26f305767df3aabec3f57ca908d",
+      "intro": "Rolls-Royce-inspired roadsters and SUVs appear alongside vintage sedans and touring cars in detailed vehicle views.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "purple-rolls-royce-droptail-inspired-roadster-clipart",
+          "imageSha256": "3eeb86c0d310c0cc6b58ca4c60cf77c5571c6a523b0743d953cb35a58c6ad84a"
+        },
+        {
+          "id": "white-rolls-royce-cullinan-style-suv-front-view-clipart",
+          "imageSha256": "21fbc0db27ce669a8f1cc18cf0e5fbdd59351a22c9e920d422f96d3a67b8700f"
+        },
+        {
+          "id": "vintage-rolls-royce-style-sedan-rear-view-drawing-clipart",
+          "imageSha256": "f3579a8f21df5dc7ffbbe6676bf2e01ccdbef3d7095b3f109db32ab80aeb269a"
+        },
+        {
+          "id": "silver-vintage-rolls-royce-style-touring-car-clipart",
+          "imageSha256": "0ffa4fc5f63602f7bb6be170cda59b82faca2cce0c2e72b7d8deaa0c0f9f47b4"
+        }
+      ]
+    },
+    "scorpion": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "d7ccab95dfe18e841b213ce55e811717a8330b6ad58203346945fe8dd7f97f55",
+      "intro": "Scorpions rest on rocks, lift their claws and appear in imaginative scenes such as a leaf held like an umbrella.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "scorpion-on-a-rock-clipart",
+          "imageSha256": "015bf967ee2e63246f22af6a311028a2dc98bb9e08c2cd5b688022303bb1a16c"
+        },
+        {
+          "id": "golden-scorpion-with-open-claws-clipart",
+          "imageSha256": "44b797281572225dd449e54bb06a7f1981b77985861ded5baed05f9e8e6c76e2"
+        },
+        {
+          "id": "scorpion-with-a-leaf-umbrella-clipart",
+          "imageSha256": "2e7857152abfbaf96252db31129cbb0f2795a2922e8e3e8e06aaad17d2596e96"
+        }
+      ]
+    },
+    "seahorse": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "d722850c3522dc095a2e3e7ea93aae49dd878200b34205d2acbb8a62bb4ae1f4",
+      "intro": "Curled seahorses face one another, nestle among pink petals and take part in playful scenes with a crown or a painted sun.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "golden-seahorse-with-a-crown-clipart",
+          "imageSha256": "68efdda1eeed9d6396ce62fb6ea390f5713732af64fd643aa20ef38d40cb1700"
+        },
+        {
+          "id": "two-seahorses-facing-each-other-clipart",
+          "imageSha256": "364b0e855d8f93d652b9932b85083857ad08783eafcdde23d1d680198516ea47"
+        },
+        {
+          "id": "seahorse-painting-a-sun-clipart",
+          "imageSha256": "69dcb4dcc2eb16edfe058b99a805bc09de806710faa739edcac51239bf58f0d5"
+        },
+        {
+          "id": "seahorse-inside-pink-petals-clipart",
+          "imageSha256": "97ab05546ef8d1c9688bf2e0f091cd823350c9b3802fece4f7a4bf28b4ade647"
+        }
+      ]
+    },
+    "seal": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "c10b197a2479cb6cdea1e1b7f81def3c813977b15fc17edf784562402d184bd8",
+      "intro": "Spotted seals rest and play chess, while cheerful characters perform a magic trick or build a sandcastle.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "spotted-seal-resting-clipart",
+          "imageSha256": "c8ab426a63b5a90cb785f9b2b5b9aad54bc3f854d2c9ea5052432bc87b961574"
+        },
+        {
+          "id": "seal-playing-chess-clipart",
+          "imageSha256": "66252f796ad919b76c28084542577edddfd8a26eaab6d028b5f175215bc5432d"
+        },
+        {
+          "id": "seal-magician-with-a-top-hat-clipart",
+          "imageSha256": "ee378581ded4a6ac78cea2fdb9f1201b37bb95a8994bbad97d691fc1ddb9bed6"
+        },
+        {
+          "id": "seal-building-a-sandcastle-clipart",
+          "imageSha256": "8203ecddf9d4632a23bbe20bfa03f1e7e77baa3277876dccf9cb47f4ccf912a1"
+        }
+      ]
+    },
+    "skunk": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "6698369cbade42f6cde25e1ebbb3e0645794b233db0eff2dd4e64ed426461029",
+      "intro": "A skunk with a curled tail enjoys an apple slice and purple ice cream, then dances with a red ribbon.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "smiling-skunk-with-a-curled-tail-clipart",
+          "imageSha256": "818779312f281c0910ce69d0c9778f663202d005c71e8bf5842728cbf463d5e9"
+        },
+        {
+          "id": "skunk-eating-an-apple-slice-clipart",
+          "imageSha256": "8ff1934dbe394addd8b7ef50ab8ac29de3a39f852e018f3c0e250509183f4eac"
+        },
+        {
+          "id": "skunk-with-purple-ice-cream-clipart",
+          "imageSha256": "8ea25c69fb8edaa17610cb8e993f029bb4c43896cec7454ac56aafc84bc033e7"
+        },
+        {
+          "id": "skunk-dancing-with-a-red-ribbon-clipart",
+          "imageSha256": "3dc9d4ae31fa73688811ec0177499a1a97dc35f38c165e8b079a5f569258aba6"
+        }
+      ]
+    },
+    "sloth": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "0c860b977c711856a74bed442c7d8f104cb158538da2b3e4100cccf37d241f1c",
+      "intro": "Sloths hang from leafy branches and join gentle activities with a pinwheel, colorful blocks and a sandcastle.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "sloth-hanging-from-a-leafy-branch-clipart",
+          "imageSha256": "4746cb844d83f74ed24b13aebf3e3838f35a8a8b2d6977cff3d605f1a33a1aaf"
+        },
+        {
+          "id": "sloth-holding-a-pinwheel-clipart",
+          "imageSha256": "dabc286d16902497020fc9150d1649edd42d72f6c3f7367ff6bc2c42958f902d"
+        },
+        {
+          "id": "sloth-stacking-colorful-blocks-clipart",
+          "imageSha256": "cc71f9ce11b34579f44d52ad8abce47e3b10cee1e58a0dc000d4eea873666514"
+        },
+        {
+          "id": "sloth-building-a-sandcastle-clipart",
+          "imageSha256": "68e7902cfb2f31a4a64558ecb9632e56cef286dca8e2dfe253ef48ded10fe251"
+        }
+      ]
+    },
+    "snail": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "030d8a99ef7d40bec119c9eb24b88787d82b3be64c8332ba2974ff2c58a213ea",
+      "intro": "Snails curl among ferns and apples or take part in cheerful scenes with a scarf and a birthday cupcake.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "snail-on-a-curled-fern-clipart",
+          "imageSha256": "c6e7277fb76764111d649a23ca081f8be3dafd56c90804717154bbbda8f05338"
+        },
+        {
+          "id": "snail-and-a-birthday-cupcake-clipart",
+          "imageSha256": "802759075e6a9a6cfe350c96f47fb01935267853b5d3a385e62b7c907487b7bc"
+        },
+        {
+          "id": "snail-in-a-red-scarf-clipart",
+          "imageSha256": "e27655124df87bda9d66e25f19ffbb09d86a9c0ddce060b5d438c8aaa5d39e36"
+        },
+        {
+          "id": "snail-on-a-red-apple-clipart",
+          "imageSha256": "56ddc30adc6aeacd7369d66a26c1c114e3e75340ea89867a6dc28a0342c0b430"
+        }
+      ]
+    },
+    "squid": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "21267dcb9c55b8e217e9a78309ff26ace299262518219a8ec3f07fba65dc88ef",
+      "intro": "Squid with flowing tentacles join patterned illustrations and playful scenes, including badminton and gift wrapping.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "squid-with-flowing-tentacles-clipart",
+          "imageSha256": "51de82d824851f3ce5bb60ace13e95288948b1637bb11fc9ac7a378c444ca426"
+        },
+        {
+          "id": "squid-playing-badminton-clipart",
+          "imageSha256": "04b3a435dbe8b71bb81b780756961093d9577e440b5bab5cdd3e7a2a93536c5c"
+        },
+        {
+          "id": "mosaic-squid-clipart",
+          "imageSha256": "ed967c389daba17e280baf68b13e811afa64cb7ecb90acf1c02b8809e5c3f53d"
+        },
+        {
+          "id": "squid-wrapping-a-gift-clipart",
+          "imageSha256": "f477ae0d4dca6c9f72c2c5aeecaf1d6ab3917d5a42b277975169930043eac784"
+        }
+      ]
+    },
+    "starfish": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "80ec01070955e6d521ca716582ed62c9ef417468d149d1db53685221fa466f71",
+      "intro": "Textured and colorful starfish appear with leaves, in a wooden wagon and as a little graduation character.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "orange-starfish-with-raised-bumps-clipart",
+          "imageSha256": "f5471b2c0856985b12fd2c5cff81b4276f64aa5c2bbe5e6b1c9eae002e9ae174"
+        },
+        {
+          "id": "pink-starfish-with-a-green-leaf-clipart",
+          "imageSha256": "2857f527c138a276fb6e94fb0e3ba900b6286ee826e7f6470c37a47a92e54cdd"
+        },
+        {
+          "id": "graduating-starfish-clipart",
+          "imageSha256": "850e8caf31196cd3f48d425736eaba6e4ee43e0882f1719bb78d39eab26efb34"
+        },
+        {
+          "id": "starfish-in-a-wooden-wagon-clipart",
+          "imageSha256": "c34df2c4e1e8cb9c3f6f4d2e5b374229f94d814d4d5b65d0a6950c0170aa992e"
+        }
+      ]
+    },
+    "stingray": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "438399a489d3f858ea155c56c49021538c8d2fbc603e983cfec055dbb6ca221a",
+      "intro": "Spotted rays and decorative leaf patterns sit alongside imaginative stingrays in a balloon or building a sandcastle.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "blue-spotted-stingray-clipart",
+          "imageSha256": "a2ea6a4e18c2768b1671c6290187fbe38447ae7d24a76634a2029369fdcb535e"
+        },
+        {
+          "id": "decorative-ray-and-round-leaves-clipart",
+          "imageSha256": "6d71777a5219415df978d7957da820014e29ffa5b95fabfdd3d5b19dfbaf4a36"
+        },
+        {
+          "id": "stingray-in-a-hot-air-balloon-clipart",
+          "imageSha256": "8d5c8c27485c7528e9d761a6c9c8180fbf2f31f4141c38773d33a9ad0e5c929a"
+        },
+        {
+          "id": "stingray-building-a-sandcastle-clipart",
+          "imageSha256": "ce36b1d952d32ba02f0cb6853fe7463745f1de08ad7427b5a06e3b5ef62ad820"
+        }
+      ]
+    },
+    "swan": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "fc8a1959a60818b54b18be7d4a8a97fe71e726c40a459e897eb8ff844d52803b",
+      "intro": "Find swans resting and preening by the water, a newly hatched cygnet and an imaginative bird turning a book page.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "swan-preening-on-the-water-clipart",
+          "imageSha256": "477c61ada0e31d751278ddff75309d0b40f1faf699bd37e293f78e5a489a9781"
+        },
+        {
+          "id": "black-necked-swan-on-a-rock-clipart",
+          "imageSha256": "7706ad388f1fbe9f812f2c3555b2325854f7ba2cb3a54f61be3c266ec1e97588"
+        },
+        {
+          "id": "newly-hatched-cygnet-clipart",
+          "imageSha256": "20c479dd40a48a8f2ae49c5ddeef935b20b4ac16ffce733ca3eab08f3ccbf429"
+        },
+        {
+          "id": "swan-turning-a-book-page-clipart",
+          "imageSha256": "ecd2ef593dc75b38a07a5be7749f6e58234e59c8c2e7fd71c6978f77d94f5b6f"
+        }
+      ]
+    },
+    "toucan": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "b4bf1ca2bfcef787e2d12e5a1f9b558903dd414ae0db4ea647ef3c8dfc9dfca9",
+      "intro": "Colorful toucans share berries, raise their wings and step into whimsical scenes with bright fruit and a star wand.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "two-toucans-sharing-a-berry-clipart",
+          "imageSha256": "320e1be28722caf4f91292cdd975c073ea145b1929feb24a0d5825ad73c7c97d"
+        },
+        {
+          "id": "toucan-tossing-a-blue-berry-clipart",
+          "imageSha256": "119b7d4b53be4c442b2060bf62e2a41b15dd44bfb77d473bfa18fa3ffe095ab4"
+        },
+        {
+          "id": "toucan-raising-a-wing-clipart",
+          "imageSha256": "bd578f50ded95a60f1fbf03832603a66308d0c1b5c052a7a0dfb6b6c5ed00144"
+        },
+        {
+          "id": "toucan-wizard-with-a-star-wand-clipart",
+          "imageSha256": "38431cbb2415cdd7e259c533d4a083f4bb7cf35beefcd2ec3ad0acf4d9b5899a"
+        }
+      ]
+    },
+    "vase": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "435eaa1acdc26546313293637478bb28f2079ddc1409126884d5c02e12f33ef9",
+      "intro": "Discover decorative vases in glass, ceramic and other styles, with flowers and without.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "vase-01-folded-porcelain",
+          "imageSha256": "d247fc745ff5862e0aa305a83bd8c2a45af234f9f479d81a77b0d5956c825b21"
+        },
+        {
+          "id": "vase-02-amber-twist",
+          "imageSha256": "18cc81f0acd39744340a42351ebbfde4b439a79c43e80e672bdc1f869ccfc9e6"
+        }
+      ]
+    },
+    "walrus": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "1a809ea16b764cdef86ba2dc96ab0f208b8859f767b02297eb7e74b2a027e976",
+      "intro": "Long-tusked walruses rest beside seaweed and appear as cheerful characters graduating or riding a skateboard.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "seated-walrus-with-long-tusks-clipart",
+          "imageSha256": "31a6207fd7853332d085ecbda4767528a30239cda4e1f4a5f8e46b39f296f98e"
+        },
+        {
+          "id": "sleeping-walrus-beside-seaweed-clipart",
+          "imageSha256": "72ab021d98cecc926e0063161c33a11cb8b5b672520e77b6f888a9b5479ea800"
+        },
+        {
+          "id": "graduating-walrus-clipart",
+          "imageSha256": "6694b9646f08a377129523c4c5a13ee987d0b0f68b91800c02ee7ed93ae28972"
+        },
+        {
+          "id": "walrus-riding-a-skateboard-clipart",
+          "imageSha256": "467a6452a481004c3c50c1b872154f1d71e9e6633a58ee14e161420361feec7a"
+        }
+      ]
+    },
+    "yay": {
+      "status": "checked-against-catalog",
+      "sourceSha256": "e6c9563d2befb9f4d62e1f489240a1057b12ba872cb491bcc03d5e496e1ed88e",
+      "intro": "Cheerful characters, signs and colorful objects share a little celebration.",
+      "checkedAt": "2026-11-01T17:29:52.955824+00:00",
+      "evidence": [
+        {
+          "id": "yay-001",
+          "imageSha256": "72d5fc8d3a1a53e8f546ba3a3e3e9241cc40e8aad3e8e01a285e585d5124afac"
+        },
+        {
+          "id": "yay-002",
+          "imageSha256": "55492031925e8c22d3ef30039e517f7e18daec0a7ed36f6ff23e9a3dc2f0ec91"
+        }
+      ]
+    }
+  }
+}

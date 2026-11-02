@@ -2151,7 +2151,10 @@
   "alligator": [
     "crocodile",
     "turtle",
-    "frog"
+    "frog",
+    "lizard",
+    "chameleon",
+    "snake"
   ],
   "app": [
     "website",
@@ -2291,7 +2294,10 @@
   "ladybug": [
     "bee",
     "butterfly",
-    "grass"
+    "grass",
+    "dragonfly",
+    "ant",
+    "caterpillar"
   ],
   "line": [
     "draw",
@@ -2766,5 +2772,499 @@
   "zcash": [
     "monero",
     "bitcoin"
+  ],
+  "06": [
+    "01",
+    "02",
+    "03",
+    "07",
+    "08",
+    "math"
+  ],
+  "alpaca": [
+    "llama",
+    "sheep",
+    "goat",
+    "yarn"
+  ],
+  "ant": [
+    "ladybug",
+    "bee",
+    "grasshopper",
+    "caterpillar",
+    "butterfly"
+  ],
+  "armadillo": [
+    "hedgehog",
+    "skunk",
+    "zoo",
+    "nature"
+  ],
+  "axolotl": [
+    "frog",
+    "turtle",
+    "catfish",
+    "water"
+  ],
+  "beaver": [
+    "otter",
+    "capybara",
+    "mouse",
+    "river"
+  ],
+  "bird": [
+    "robin",
+    "cardinal",
+    "hummingbird",
+    "parrot",
+    "nest",
+    "toucan"
+  ],
+  "bison": [
+    "cow",
+    "yak",
+    "moose",
+    "deer",
+    "horse"
+  ],
+  "buick": [
+    "cadillac",
+    "chevrolet",
+    "gmc",
+    "oldsmobile",
+    "ford"
+  ],
+  "byd": [
+    "electric-car",
+    "tesla",
+    "chery",
+    "kia",
+    "nissan"
+  ],
+  "cadillac": [
+    "lincoln",
+    "buick",
+    "chrysler",
+    "gmc",
+    "rolls-royce"
+  ],
+  "capybara": [
+    "guinea-pig",
+    "hamster",
+    "beaver",
+    "mouse",
+    "river"
+  ],
+  "cardinal": [
+    "robin",
+    "bird",
+    "nest",
+    "hummingbird",
+    "parrot"
+  ],
+  "caterpillar": [
+    "butterfly",
+    "ladybug",
+    "ant",
+    "grasshopper",
+    "leaves",
+    "dragonfly"
+  ],
+  "chameleon": [
+    "lizard",
+    "snake",
+    "alligator",
+    "frog",
+    "nature"
+  ],
+  "cheetah": [
+    "leopard",
+    "jaguar",
+    "lion",
+    "tiger",
+    "cat"
+  ],
+  "chery": [
+    "byd",
+    "kia",
+    "honda",
+    "nissan",
+    "electric-car"
+  ],
+  "chevrolet": [
+    "gmc",
+    "buick",
+    "cadillac",
+    "ford",
+    "dodge",
+    "jeep"
+  ],
+  "chimpanzee": [
+    "gorilla",
+    "monkey",
+    "zoo"
+  ],
+  "chrysler": [
+    "dodge",
+    "jeep",
+    "cadillac",
+    "lincoln",
+    "ford"
+  ],
+  "clownfish": [
+    "goldfish",
+    "seahorse",
+    "ocean",
+    "jellyfish",
+    "stingray"
+  ],
+  "dodge": [
+    "chrysler",
+    "jeep",
+    "ford",
+    "chevrolet"
+  ],
+  "donkey": [
+    "horse",
+    "llama",
+    "goat",
+    "cow"
+  ],
+  "dragonfly": [
+    "butterfly",
+    "ladybug",
+    "bee",
+    "grasshopper",
+    "ant"
+  ],
+  "eating": [
+    "dinner",
+    "family",
+    "chef",
+    "kitchen",
+    "vegetables"
+  ],
+  "gmc": [
+    "chevrolet",
+    "cadillac",
+    "buick",
+    "ford",
+    "truck",
+    "jeep"
+  ],
+  "goldfish": [
+    "clownfish",
+    "catfish",
+    "bluegill",
+    "seahorse",
+    "water"
+  ],
+  "goose": [
+    "swan",
+    "duck",
+    "bird",
+    "nest",
+    "turkey"
+  ],
+  "gorilla": [
+    "chimpanzee",
+    "monkey",
+    "zoo"
+  ],
+  "grasshopper": [
+    "ant",
+    "caterpillar",
+    "ladybug",
+    "bee",
+    "butterfly",
+    "dragonfly"
+  ],
+  "guinea-pig": [
+    "hamster",
+    "capybara",
+    "mouse",
+    "rabbit"
+  ],
+  "hamster": [
+    "guinea-pig",
+    "mouse",
+    "rabbit",
+    "capybara"
+  ],
+  "hennessey": [
+    "ferrari",
+    "bugatti",
+    "porsche",
+    "lamborghini",
+    "chevrolet",
+    "ford"
+  ],
+  "honda": [
+    "nissan",
+    "mazda",
+    "kia",
+    "ford",
+    "chevrolet"
+  ],
+  "hummingbird": [
+    "robin",
+    "cardinal",
+    "bird",
+    "sunflower",
+    "nest"
+  ],
+  "jaguar": [
+    "leopard",
+    "cheetah",
+    "tiger",
+    "lion",
+    "cat",
+    "zoo"
+  ],
+  "jeep": [
+    "dodge",
+    "chrysler",
+    "ford",
+    "gmc",
+    "truck"
+  ],
+  "kia": [
+    "honda",
+    "nissan",
+    "byd",
+    "mazda",
+    "ford"
+  ],
+  "king": [
+    "crown",
+    "hat"
+  ],
+  "leopard": [
+    "jaguar",
+    "cheetah",
+    "tiger",
+    "lion",
+    "cat"
+  ],
+  "lexus": [
+    "bmw",
+    "mercedes-benz",
+    "audi",
+    "cadillac",
+    "porsche"
+  ],
+  "lincoln": [
+    "cadillac",
+    "buick",
+    "chrysler",
+    "ford",
+    "rolls-royce"
+  ],
+  "lizard": [
+    "chameleon",
+    "alligator",
+    "crocodile",
+    "snake",
+    "turtle"
+  ],
+  "llama": [
+    "alpaca",
+    "sheep",
+    "goat",
+    "yarn"
+  ],
+  "mazda": [
+    "honda",
+    "nissan",
+    "kia",
+    "ford",
+    "chevrolet"
+  ],
+  "meerkat": [
+    "zoo",
+    "fox",
+    "nature",
+    "skunk"
+  ],
+  "moose": [
+    "deer",
+    "bison",
+    "bear",
+    "fox",
+    "nature"
+  ],
+  "mouse": [
+    "rat",
+    "hamster",
+    "guinea-pig",
+    "cheese"
+  ],
+  "narwhal": [
+    "whale",
+    "dolphin",
+    "ocean",
+    "seal",
+    "polar-bear"
+  ],
+  "nissan": [
+    "honda",
+    "mazda",
+    "kia",
+    "ford",
+    "byd"
+  ],
+  "oldsmobile": [
+    "buick",
+    "chevrolet",
+    "cadillac",
+    "ford",
+    "chrysler"
+  ],
+  "ostrich": [
+    "bird",
+    "flamingo",
+    "peacock",
+    "zoo"
+  ],
+  "otter": [
+    "seal",
+    "beaver",
+    "river",
+    "ocean",
+    "walrus"
+  ],
+  "polar-bear": [
+    "bear",
+    "seal",
+    "walrus",
+    "winter",
+    "otter"
+  ],
+  "quesadilla": [
+    "corn",
+    "cheese",
+    "dinner",
+    "chef",
+    "kitchen",
+    "vegetables"
+  ],
+  "red-panda": [
+    "panda",
+    "fox",
+    "bear",
+    "zoo"
+  ],
+  "robin": [
+    "cardinal",
+    "bird",
+    "nest",
+    "hummingbird",
+    "owl"
+  ],
+  "rolls-royce": [
+    "mercedes-benz",
+    "bmw",
+    "cadillac",
+    "lincoln",
+    "porsche"
+  ],
+  "scorpion": [
+    "spider",
+    "lizard",
+    "snake",
+    "zoo"
+  ],
+  "seahorse": [
+    "starfish",
+    "clownfish",
+    "ocean",
+    "jellyfish",
+    "stingray",
+    "squid"
+  ],
+  "seal": [
+    "walrus",
+    "otter",
+    "ocean",
+    "polar-bear",
+    "whale"
+  ],
+  "skunk": [
+    "raccoon",
+    "fox",
+    "bear",
+    "armadillo",
+    "nature"
+  ],
+  "sloth": [
+    "monkey",
+    "koala",
+    "red-panda",
+    "zoo",
+    "nature"
+  ],
+  "snail": [
+    "caterpillar",
+    "ladybug",
+    "butterfly",
+    "leaves",
+    "nature"
+  ],
+  "squid": [
+    "octopus",
+    "jellyfish",
+    "ocean",
+    "shark",
+    "stingray",
+    "starfish"
+  ],
+  "starfish": [
+    "seahorse",
+    "ocean",
+    "jellyfish",
+    "crab",
+    "stingray",
+    "squid"
+  ],
+  "stingray": [
+    "shark",
+    "ocean",
+    "seahorse",
+    "starfish",
+    "jellyfish",
+    "squid"
+  ],
+  "swan": [
+    "goose",
+    "duck",
+    "bird",
+    "nest"
+  ],
+  "toucan": [
+    "parrot",
+    "bird",
+    "hummingbird",
+    "flamingo",
+    "zoo"
+  ],
+  "vase": [
+    "rose",
+    "sunflower",
+    "poinsettia",
+    "leaves",
+    "wedding"
+  ],
+  "walrus": [
+    "seal",
+    "polar-bear",
+    "ocean",
+    "whale",
+    "otter"
+  ],
+  "yay": [
+    "happy-birthday",
+    "thank-you",
+    "yes",
+    "family"
   ]
 }

@@ -419,7 +419,7 @@
     },
     "alligator": {
       "status": "checked-against-catalog",
-      "sourceSha256": "b5b33d0cc65a4f87d28d649a1575c8d9c213b1c1daf09b0a30c0a0a374147b04",
+      "sourceSha256": "5dfa07ea583511e828b3fbf4b94681d60d41f3b618dea03d50c3146c9735dc22",
       "intro": "These alligators swim, bake and dress for imaginary adventures. A pirate, graduate and beekeeper offer distinct scenes beside more natural walking and diving poses.",
       "checkedAt": "2026-10-31T09:37:00.118Z",
       "evidence": [
@@ -851,7 +851,7 @@
     },
     "ladybug": {
       "status": "checked-against-catalog",
-      "sourceSha256": "5bb15ae9807aa01530d4371d095f81d2acee9c6846d2eda92374be6345ccc492",
+      "sourceSha256": "3b17a7bee30f5f790958408c794394c57cd0730bac8e0180754995a77941fde5",
       "intro": "Natural-looking insects share the collection with friendly ladybug characters. Baking, gardening and felt-toy designs use different props, while botanical scenes and life-stage illustrations focus on the insect.",
       "checkedAt": "2026-10-31T09:37:00.120Z",
       "evidence": [
