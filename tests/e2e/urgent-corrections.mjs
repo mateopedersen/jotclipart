@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import { chromium, webkit, expect } from '@playwright/test';
 import sharp from 'sharp';
 import { readEditorialCatalog } from '../helpers/editorial-catalog.mjs';
-import { bridgeLocalCdn } from '../helpers/local-cdn.mjs';
+import { bridgeLocalCdn, markLocalCdnTeardown } from '../helpers/local-cdn.mjs';
 
 const base = process.env.BASE_URL ?? 'http://127.0.0.1:4339';
 const live = base === 'https://ultraclipart.com';
@@ -56,6 +56,7 @@ const browser = await (engine === 'webkit' ? webkit : chromium).launch();
 const context = await browser.newContext({ viewport: { width: engine === 'webkit' ? 390 : 1440, height: 1000 } });
 if (!live) await bridgeLocalCdn(context, base);
 const page = await context.newPage(); page.setDefaultTimeout(30000);
+let summary;
 try {
   assert.equal((await page.goto(base + '/', { waitUntil: 'domcontentloaded', timeout: 60000 })).status(), 200);
   await expect(page.locator('body')).not.toContainText('For Cards & Invitations');
@@ -98,7 +99,10 @@ try {
     const record = files.get('xbox-014/' + kind), body = await sourceBytes(record);
     assert.equal(body.length, record.bytes); assert.equal(digest(body), record.sha256);
   }
-  console.log(JSON.stringify({ status: live ? 'URGENT_CORRECTIONS_LIVE_BROWSER_PASS' : 'URGENT_CORRECTIONS_LOCAL_BROWSER_PASS', engine, homeCards: ids.length, colors: states.filter((x) => !x).length, monochrome: states.filter(Boolean).length, filmArtworks: 50, related: 2, xboxDownloads: 3 }));
+  summary = { status: live ? 'URGENT_CORRECTIONS_LIVE_BROWSER_PASS' : 'URGENT_CORRECTIONS_LOCAL_BROWSER_PASS', engine, homeCards: ids.length, colors: states.filter((x) => !x).length, monochrome: states.filter(Boolean).length, filmArtworks: 50, related: 2, xboxDownloads: 3 };
 } finally {
-  await context.close(); await browser.close();
+  // Only unused in-flight local CDN requests may be disposed during explicit teardown.
+  markLocalCdnTeardown(context);
+  try { await context.close(); } finally { await browser.close(); }
 }
+console.log(JSON.stringify(summary));
