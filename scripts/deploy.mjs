@@ -76,6 +76,9 @@ try {
     // a previously generated local dist: it may contain stale or unverified media.
     run('scripts/restore-assets.mjs');
     const publication = readPublication(root);
+    // A cleaned local preview cache can reuse the byte-proven frozen release.
+    // This restores presentation metadata only; content and activation gates stay intact.
+    run('scripts/delivery/restore-preview-cache.mjs');
     run('scripts/verify-social-images.mjs');
     // A code change or missing installation proof always retains full publication.
     if (process.env.UC_DELIVERY_INCREMENTAL !== '0' && incrementalInstalled(root)) {
