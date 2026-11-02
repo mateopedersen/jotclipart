@@ -8,6 +8,7 @@ import { gunzipSync } from 'node:zlib';
 import { encodeLocalBatch, preferLocalStageSource } from '../scripts/delivery/local-batch.mjs';
 import { stagingWorker } from '../scripts/delivery/staging-worker.mjs';
 import { merkle, digest } from '../scripts/delivery/manifest.mjs';
+import { deliveryActorCount } from '../scripts/delivery/staging-limits.mjs';
 
 test('local batch proves and independently reads back each of 64 exact files', async () => {
   const dir = mkdtempSync(join(tmpdir(), 'uc-local-batch-'));
@@ -122,7 +123,7 @@ test('local batch proves and independently reads back each of 64 exact files', a
   }
 });
 
-test('new HTML uses exact local bytes while shared assets retain inventory routing and Worker readback', () => {
+test('unknown or missing membership uses local bytes; known existing sources may use remote', () => {
   const record = { path: '/previews/p1/scene.webp', key: 'delivery/existing' },
     keys = new Set([record.key]);
   assert.equal(preferLocalStageSource(record, keys, {}), false);
@@ -134,9 +135,29 @@ test('new HTML uses exact local bytes while shared assets retain inventory routi
     true,
   );
   assert.equal(preferLocalStageSource(record, keys, { UC_DELIVERY_LOCAL_ONLY: '1' }), true);
-  assert.equal(preferLocalStageSource(record, undefined, {}), false);
+  assert.equal(preferLocalStageSource(record, undefined, {}), true);
+  assert.equal(preferLocalStageSource(record, null, {}), true);
+  assert.equal(preferLocalStageSource(record, new Map(), {}), true);
   const html = { ...record, path: '/art/scene/index.html' };
   assert.equal(preferLocalStageSource(html, keys, {}), true);
   assert.equal(preferLocalStageSource(html, undefined, {}), true);
   assert.equal(preferLocalStageSource(html, keys, { UC_DELIVERY_LOCAL_HTML: '0' }), false);
+  assert.equal(preferLocalStageSource(html, undefined, { UC_DELIVERY_LOCAL_HTML: '0' }), true);
+  assert.equal(deliveryActorCount({ UC_DELIVERY_ACTORS: '16' }), 16);
+  assert.throws(() => deliveryActorCount({ UC_DELIVERY_ACTORS: '17' }), /1 to 16/);
+});
+
+test('local batches keep the 4 MB aggregate and 8 MB singleton source limits', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'uc-local-batch-limits-'));
+  try {
+    mkdirSync(join(dir, 'previews'));
+    const paths = ['/previews/a.webp', '/previews/b.webp', '/previews/large.webp'];
+    const sizes = [2_000_001, 2_000_001, 8_000_001];
+    paths.forEach((name, index) => writeFileSync(join(dir, name), Buffer.alloc(sizes[index], index)));
+    const records = paths.map((name, index) => ({ record: { path: name, bytes: sizes[index] } }));
+    assert.throws(() => encodeLocalBatch(dir, { records: records.slice(0, 2) }), /byte bound/);
+    assert.throws(() => encodeLocalBatch(dir, { records: [records[2]] }), /byte bound/);
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
 });

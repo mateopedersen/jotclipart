@@ -4,6 +4,21 @@ import { readFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { configuredToken, refreshConfiguredLogin } from '../r2/cloudflare-api.mjs';
 
+export const PRODUCTION_ACCOUNT_ID = '48c779c8eaa80234e0bb9d57f96e588b';
+
+// Pages deploy resolves this environment variable rather than the account_id
+// from the project config. Reject conflicts before acquiring the writer lock.
+export function pinProductionAccountEnvironment(env) {
+  if (!env || typeof env !== 'object' || Array.isArray(env))
+    throw Error('A process environment is required');
+  if (
+    env.CLOUDFLARE_ACCOUNT_ID !== undefined &&
+    env.CLOUDFLARE_ACCOUNT_ID !== PRODUCTION_ACCOUNT_ID
+  )
+    throw Error('Cloudflare account conflicts with the approved production account');
+  return { ...env, CLOUDFLARE_ACCOUNT_ID: PRODUCTION_ACCOUNT_ID };
+}
+
 export function verifyProductionConfig(project) {
   if (project?.source?.config?.production_deployments_enabled !== false)
     throw Error('Automatic production deployments must remain paused for staged R2 delivery');
@@ -29,7 +44,7 @@ export function verifyLiveBaseline(live, expected, expectedControl = expected) {
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
-  const account = '48c779c8eaa80234e0bb9d57f96e588b';
+  const account = PRODUCTION_ACCOUNT_ID;
   let token;
   try {
     token = configuredToken();

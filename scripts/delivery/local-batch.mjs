@@ -44,12 +44,13 @@ export async function prepareLocalStagePayload(dist, records) {
   }
 }
 
-// Inventory membership only chooses the transport body. The Worker still reads
-// and hashes every object; neither a key nor a listed size verifies its content.
+// Unknown or missing membership uses the local reviewed bytes. A known existing
+// key may use the existing remote path. This does not change the Worker's
+// proof, checksum, conditional-write or readback gates.
 export function preferLocalStageSource(record, knownKeys, env = process.env) {
   return (
     env.UC_DELIVERY_LOCAL_ONLY === '1' ||
     ((env.UC_DELIVERY_LOCAL_HTML ?? '1') === '1' && record.path.endsWith('.html')) ||
-    (knownKeys instanceof Set && !knownKeys.has(record.key))
+    !(knownKeys instanceof Set && knownKeys.has(record.key))
   );
 }

@@ -12,13 +12,15 @@ import { readPublication } from './publication-policy.mjs';
 import { planIncrementalRelease, sealIncrementalBaseline } from './delivery/incremental.mjs';
 import { incrementalInstalled } from './delivery/installer.mjs';
 import { awaitPublicationWriter } from './delivery/publication-lock.mjs';
+import { pinProductionAccountEnvironment } from './delivery/production-preflight.mjs';
 
 const root = resolve(import.meta.dirname, '..');
-const releasePublication = await awaitPublicationWriter(process.env, { notify: console.log });
+const publicationEnv = pinProductionAccountEnvironment(process.env);
+const releasePublication = await awaitPublicationWriter(publicationEnv, { notify: console.log });
 try {
   assertOwnerPublicationApproval(root);
   const env = {
-    ...process.env,
+    ...publicationEnv,
     CF_PAGES: '1',
     ASTRO_TELEMETRY_DISABLED: '1',
     PAGES_WRANGLER_MAJOR_VERSION: '4',
