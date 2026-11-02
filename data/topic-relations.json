@@ -3266,5 +3266,138 @@
     "thank-you",
     "yes",
     "family"
+  ],
+  "andorra-flag": [
+    "spain-flag",
+    "france-flag"
+  ],
+  "australia-flag": [
+    "new-zealand-flag",
+    "united-kingdom-flag",
+    "canada-flag"
+  ],
+  "austria-flag": [
+    "germany-flag",
+    "liechtenstein-flag",
+    "switzerland-flag"
+  ],
+  "belgium-flag": [
+    "france-flag",
+    "netherlands-flag",
+    "luxembourg-flag",
+    "germany-flag"
+  ],
+  "canada-flag": [
+    "american-flag",
+    "united-kingdom-flag",
+    "australia-flag",
+    "new-zealand-flag"
+  ],
+  "denmark-flag": [
+    "sweden-flag",
+    "norway-flag",
+    "finland-flag",
+    "iceland-flag"
+  ],
+  "finland-flag": [
+    "sweden-flag",
+    "norway-flag",
+    "denmark-flag",
+    "iceland-flag"
+  ],
+  "germany-flag": [
+    "austria-flag",
+    "belgium-flag",
+    "luxembourg-flag",
+    "netherlands-flag",
+    "switzerland-flag"
+  ],
+  "iceland-flag": [
+    "norway-flag",
+    "denmark-flag",
+    "sweden-flag",
+    "finland-flag"
+  ],
+  "ireland-flag": [
+    "united-kingdom-flag",
+    "france-flag"
+  ],
+  "israel-flag": [
+    "qatar-flag",
+    "united-arab-emirates-flag"
+  ],
+  "liechtenstein-flag": [
+    "switzerland-flag",
+    "austria-flag"
+  ],
+  "luxembourg-flag": [
+    "belgium-flag",
+    "france-flag",
+    "germany-flag",
+    "netherlands-flag"
+  ],
+  "malta-flag": [
+    "san-marino-flag",
+    "monaco-flag",
+    "france-flag"
+  ],
+  "monaco-flag": [
+    "france-flag",
+    "andorra-flag",
+    "san-marino-flag"
+  ],
+  "netherlands-flag": [
+    "belgium-flag",
+    "germany-flag",
+    "united-kingdom-flag"
+  ],
+  "new-zealand-flag": [
+    "australia-flag",
+    "united-kingdom-flag",
+    "canada-flag"
+  ],
+  "norway-flag": [
+    "sweden-flag",
+    "denmark-flag",
+    "finland-flag",
+    "iceland-flag"
+  ],
+  "qatar-flag": [
+    "united-arab-emirates-flag",
+    "israel-flag"
+  ],
+  "san-marino-flag": [
+    "monaco-flag",
+    "malta-flag",
+    "switzerland-flag",
+    "austria-flag"
+  ],
+  "singapore-flag": [
+    "australia-flag",
+    "united-kingdom-flag",
+    "new-zealand-flag"
+  ],
+  "sweden-flag": [
+    "norway-flag",
+    "denmark-flag",
+    "finland-flag",
+    "germany-flag"
+  ],
+  "switzerland-flag": [
+    "austria-flag",
+    "germany-flag",
+    "france-flag",
+    "liechtenstein-flag"
+  ],
+  "united-arab-emirates-flag": [
+    "qatar-flag",
+    "israel-flag"
+  ],
+  "united-kingdom-flag": [
+    "ireland-flag",
+    "canada-flag",
+    "australia-flag",
+    "new-zealand-flag",
+    "netherlands-flag"
   ]
 }

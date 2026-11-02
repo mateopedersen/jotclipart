@@ -1,0 +1,505 @@
+{
+  "schema": 1,
+  "topics": {
+    "andorra-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "ad1947c68f4d1ae92771c1d175e03aa69a15d98e6a401d30b29cd87f8c269a04",
+      "intro": "Andorra flag clipart features vertical blue, yellow and red bands with the coat of arms centered on the yellow band. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "andorra-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "12628808a089668256178a8c14545edf25cae5e0998fe124bffd133bc419fe2a"
+        },
+        {
+          "id": "andorra-flag-clipart-002-gentle-wind-flag-on-a-tall-pole",
+          "imageSha256": "6d3705fa6e7b73a9f1b4a81af0698723a9d2c00a7f52139e24f28b3a5a3d117c"
+        },
+        {
+          "id": "andorra-flag-clipart-003-folded-flag-on-a-display-cushion",
+          "imageSha256": "1240328cc8b8898b20ea318df52ca42d3e09265c5d171240cc0053d8eb007460"
+        }
+      ]
+    },
+    "australia-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "a53973d5b8fd23aa81223d1aff753571ead190ee00032dccf8034638fb8920e5",
+      "intro": "Australia flag clipart features a blue field with the Union Jack, the Commonwealth Star and the Southern Cross. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "australia-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "97c68e34289397c711002f9d5a417345ad6ee0e88e00586c3227e0d44ba7de98"
+        },
+        {
+          "id": "australia-flag-clipart-002-gentle-wind-flag-on-a-tall-pole",
+          "imageSha256": "dbdd7913043e21e83fb4a449b3a71eafce16a76021a3bd1385cd667e777637cb"
+        },
+        {
+          "id": "australia-flag-clipart-003-folded-flag-on-a-display-cushion",
+          "imageSha256": "da05322011eedd632ce9bd5ee1faaca87d55c38008b057f77b3c3b793cd52f4a"
+        }
+      ]
+    },
+    "austria-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "389887f88e25a3b3839a0a4e87385d6b670dae7fb4fd7fed47abffff57463cd2",
+      "intro": "Austria flag clipart features three horizontal bands of red, white and red. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "austria-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "5b5fb723302ab962a97e6184fab53c0ff5b14b01cee5f6eaa10ccd037d9feec4"
+        },
+        {
+          "id": "austria-flag-clipart-002-gentle-wind-flag-on-a-tall-pole",
+          "imageSha256": "96d82aef864791872ae372a4b6a398c84890ed529fcca60e0bf34eee7e5b318c"
+        },
+        {
+          "id": "austria-flag-clipart-003-folded-flag-on-a-display-cushion",
+          "imageSha256": "5af40852ffcc4e88dffd5959a0f116d795a12cd78e1ec053ce14d9933356f516"
+        }
+      ]
+    },
+    "belgium-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "de3f09a44becf5b4a89e1eae62bee1ac4db9cc4445e14aead8de5c656d4aac2e",
+      "intro": "Belgium flag clipart features three vertical bands of black, yellow and red. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "belgium-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "fb2d53be308dd7125e3dfc4599a938f32c2013a52a2d0a6c41046718d6285703"
+        },
+        {
+          "id": "belgium-flag-clipart-002-gentle-wind-flag-on-a-tall-pole",
+          "imageSha256": "0d410893a2a68bd7c41e824280452b60e6fbe769558b4594077e1f727f2f754e"
+        },
+        {
+          "id": "belgium-flag-clipart-003-folded-flag-on-a-display-cushion",
+          "imageSha256": "4e27a77cbc334e6148891c8175b02bb613eb67a44841d4e2b718c6e2fa52342c"
+        }
+      ]
+    },
+    "canada-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "d771d669ad34afa22efb52a66d99e8c56b22af3ffb196576b1952f4a491f2c61",
+      "intro": "Canada flag clipart features red side bands around a white center bearing a red maple leaf. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "canada-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "f03a2f3f04aefefd31c654078e43d1fc1f790bd9ee921abc5f5ede1e90ba0578"
+        },
+        {
+          "id": "canada-flag-clipart-002-gentle-wind-flag-on-a-tall-pole",
+          "imageSha256": "13dfc9df1778f6ef174a1bcbe2bad690d53d955db8d0382a97580b8b9d451c06"
+        },
+        {
+          "id": "canada-flag-clipart-003-folded-flag-on-a-display-cushion",
+          "imageSha256": "06019958644fd50ec5241a739026a35d094670b125ce2742072754af01a7393f"
+        }
+      ]
+    },
+    "denmark-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "b608cfe8388024567e246187a0614ec9a633a7985b1533092f1d34669c04aa30",
+      "intro": "Denmark flag clipart features a white Nordic cross on a red field. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "denmark-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "69eaad4aa11a6198a4fa9dda23934f85b22dc9661f05528652d5a7b373c757d9"
+        },
+        {
+          "id": "denmark-flag-clipart-002-gentle-wind-flag-on-a-tall-pole",
+          "imageSha256": "b8ef64ab3a6853d3a8514e8c99451935d3c75bb951a1e4fe81134a3fa5180eba"
+        },
+        {
+          "id": "denmark-flag-clipart-003-folded-flag-on-a-display-cushion",
+          "imageSha256": "ed71bc1ec63218a071166f0b276325b78ff2a7bb413bfbb9b13b6f3569076109"
+        }
+      ]
+    },
+    "finland-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "04e30be5a649a96e38ae7abfc9bdea8330888eaaeb7d6c0e92339da3ec7fe24c",
+      "intro": "Finland flag clipart features a blue Nordic cross on a white field. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "finland-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "b2731338a6c2e07d6068344c35b42cb354de81378b75d0f2ed4bd6d0100be62d"
+        },
+        {
+          "id": "finland-flag-clipart-002-gentle-wind-flag-on-a-tall-pole",
+          "imageSha256": "9a904cd7db70e43704de69ccc501d407aa9d599f76fd268b120ebc7551c20b08"
+        },
+        {
+          "id": "finland-flag-clipart-003-folded-flag-on-a-display-cushion",
+          "imageSha256": "217d91b32070beeb9a245061a6d2a3c80a008460e966a56c0427a9d19cbe3b55"
+        }
+      ]
+    },
+    "germany-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "9788fc1210c7e8bc4221400c13ee671423509e71e45e6d314ce028336465aead",
+      "intro": "Germany flag clipart features three horizontal bands of black, red and gold. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "germany-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "12777d74d1cfa290edb22ff53f31ed3f7e263c4413f652faccef90c673fcf07d"
+        },
+        {
+          "id": "germany-flag-clipart-002-gentle-wind-flag-on-a-tall-pole",
+          "imageSha256": "84378ad751eaeeaeaa36dcf650fba02aeb489d0a38aaf5a8e42f4adf351d3bce"
+        },
+        {
+          "id": "germany-flag-clipart-003-folded-flag-on-a-display-cushion",
+          "imageSha256": "05fc8e61929fbc7c4263bf6e80487b7780addc02b5a5808a38204df0e81cb4ed"
+        }
+      ]
+    },
+    "iceland-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "dde2f6bb86bf12c796ff724a4fff4c4bd453e850add5eebc96ce2a66fde84aee",
+      "intro": "Iceland flag clipart features a red Nordic cross edged in white on a blue field. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "iceland-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "56e9a5e3ea516ec28785956e16939f8e1ec8b641c3bdbb54ec866e39ac488e85"
+        },
+        {
+          "id": "iceland-flag-clipart-002-gentle-wind-fabric-flag",
+          "imageSha256": "6b2333f3e6bc6cdd7d548b12056c741538e3ee4bab7f2029f429f9c8add76d42"
+        },
+        {
+          "id": "iceland-flag-clipart-003-rectangular-folded-cotton-flag",
+          "imageSha256": "3f660c71edb1eac00ed7dcfc26d513310a0dd46a4f45fb85ae73194de2a07780"
+        }
+      ]
+    },
+    "ireland-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "158c3efaa739a131745d7d19f0601fa2065a9c9edc449a291159e376a2eeda34",
+      "intro": "Ireland flag clipart features three vertical bands of green, white and orange. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "ireland-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "bab294e86fb35cef6e9b554400fcc07ae80b8883d25c52fd08fad80a2f1f0383"
+        },
+        {
+          "id": "ireland-flag-clipart-002-gentle-wind-fabric-flag",
+          "imageSha256": "6bac1047e9a9da13f8a0b6c64fcb749e935df50a2c1612ca3a6f03cb42aea06e"
+        },
+        {
+          "id": "ireland-flag-clipart-003-rectangular-folded-cotton-flag",
+          "imageSha256": "dfef6222c2669cc77b90db5e3d55a49f86e5ba5d076c2eaaa000793766a41d6c"
+        }
+      ]
+    },
+    "israel-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "9c322f433566cd6ef35da136c24be271348e73dcfb3868a5dc8fb0cbd1756639",
+      "intro": "Israel flag clipart features two blue horizontal stripes and a blue Star of David on white. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "israel-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "087488ec3bede701a8c13b9250d4ef11d73080cb418aec3bdebe25ab3eaea540"
+        },
+        {
+          "id": "israel-flag-clipart-002-gentle-wind-flag-on-a-tall-pole",
+          "imageSha256": "0928f677d5ed35de723f882138a045cb5266f00b26cc515cf9a6dfc2b791b57a"
+        },
+        {
+          "id": "israel-flag-clipart-003-folded-flag-on-a-display-cushion",
+          "imageSha256": "1111e27278061b98e2053928f3b11b8aa8d216152a9e4f765aff0da8cdb5024d"
+        }
+      ]
+    },
+    "liechtenstein-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "7d8c8cf647386b92bb682dd5493638f16156b3d500f7488835e446d209f6a49f",
+      "intro": "Liechtenstein flag clipart features blue over red horizontal bands with a gold crown in the upper hoist corner. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "liechtenstein-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "b2699a0a8ca5910c15faf01e74c218a95cac154cc0123651b640cc182b7af24d"
+        },
+        {
+          "id": "liechtenstein-flag-clipart-002-gentle-wind-fabric-flag",
+          "imageSha256": "54e7cabf3238906c687d7bc6a9c7b895f0f430d7fb2ee8a21609d372b9e812e2"
+        },
+        {
+          "id": "liechtenstein-flag-clipart-003-rectangular-folded-cotton-flag",
+          "imageSha256": "d2972598374e5c8561e3a5e488c6c7546f8f79a02d3ad39f8fbbf205cd0520b7"
+        }
+      ]
+    },
+    "luxembourg-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "5d8a92e0fb5e1653d3e707f9479095f4a3c68cd51752f45fc9b1485428324eed",
+      "intro": "Luxembourg flag clipart features three horizontal bands of red, white and light blue. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "luxembourg-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "10f607f170a41d3ba55eb816f7299dd7f5dc47283b1a56d8ec1d9f3c6ca1e4e4"
+        },
+        {
+          "id": "luxembourg-flag-clipart-002-gentle-wind-fabric-flag",
+          "imageSha256": "6536e3a409657595c24fe7bffe73846f7195798bd9975b349e0d7e2906cc3328"
+        },
+        {
+          "id": "luxembourg-flag-clipart-003-river-bridge-opening-ceremony",
+          "imageSha256": "b71522d4b26e9751be8b4e94180c2bbb0ef408d81e5d8e4f3ae2aa674bba3216"
+        }
+      ]
+    },
+    "malta-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "387f92f02e3815f5fde5459a203e22a91bc79fd1a47ec4be17bf88bc11621c6d",
+      "intro": "Malta flag clipart features white and red vertical halves with the George Cross in the upper hoist corner. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "malta-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "38482f854b55ce7cdce313200a17d3c7388e42354ef4effe4a53ae946a2a8b04"
+        },
+        {
+          "id": "malta-flag-clipart-002-gentle-wind-flag-on-a-tall-pole",
+          "imageSha256": "a7cbb79762d7c7fe0fadbf3c54ab0b0891fee4016648a253ae330bc2db43ef7c"
+        },
+        {
+          "id": "malta-flag-clipart-003-folded-flag-on-a-display-cushion",
+          "imageSha256": "82c717c9fa51d6fd4d253d79b2d6c7dab5ce26070e5bc4870ded5036b267be19"
+        }
+      ]
+    },
+    "monaco-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "25139468b6bb14014c55c8ef3a8b9af2a62a86c8dc3df344fed5aa763fc99627",
+      "intro": "Monaco flag clipart features two equal horizontal bands, red above white. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "monaco-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "88d7aa421e9215b2136841361b698d6573ce5628be701962c22ade31c8a80d85"
+        },
+        {
+          "id": "monaco-flag-clipart-002-gentle-wind-fabric-flag",
+          "imageSha256": "deb219b966e7692e4cc277e0bf657163f709cb4d07c7bfbbd843e5d7f6ca9812"
+        },
+        {
+          "id": "monaco-flag-clipart-003-rectangular-folded-cotton-flag",
+          "imageSha256": "4e696d8897ce1032733cbd7eeefc8ad5a2ebfc44334a6e9d3ca22a530e4a5c77"
+        }
+      ]
+    },
+    "netherlands-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "2b413a4dc38d5cc98ce44ff41c4690e37bdbcc3607d635f02a28107fb228bc1a",
+      "intro": "Netherlands flag clipart features three horizontal bands of red, white and blue. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "netherlands-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "a63057b7e251aa54ecd4a7fb318a606d4ceef22061bec8f8cb928a87a8906dc9"
+        },
+        {
+          "id": "netherlands-flag-clipart-002-gentle-wind-flag-on-a-tall-pole",
+          "imageSha256": "8e0ef9146a41c55aa6e4e65cb1ddcf21fff136924fd3f750b87fedf5cc7a3eb6"
+        },
+        {
+          "id": "netherlands-flag-clipart-003-folded-flag-on-a-display-cushion",
+          "imageSha256": "8e7ff003f25960142398fe7f9759d622e75441c1fa033cb6009d0401e8dbfe9b"
+        }
+      ]
+    },
+    "new-zealand-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "19e2cad8c8b1c6df53bfa832e4ab65640a7d5c5816dc54cc24b50859f1c2338e",
+      "intro": "New Zealand flag clipart features a blue field with the Union Jack and four red stars outlined in white. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "new-zealand-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "e63b0046557d0343e4e26ce68227494b7990ccaf6371c745140d4a8aec1d77cd"
+        },
+        {
+          "id": "new-zealand-flag-clipart-002-gentle-wind-flag-on-a-tall-pole",
+          "imageSha256": "3d4df3d3544d7edce3d6854ed0c49e572c3f67bce1efac74d5ce70f94b0374ff"
+        },
+        {
+          "id": "new-zealand-flag-clipart-003-folded-flag-on-a-display-cushion",
+          "imageSha256": "8250d0ac20938d81a115c6fc9d7ef58a1d73219fe2f7f6464675183458997505"
+        }
+      ]
+    },
+    "norway-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "45befe0fc0086cab8c9d6ef0cc4f6a22effca8436c0038f0cfe4b3974d98146c",
+      "intro": "Norway flag clipart features a blue Nordic cross edged in white on a red field. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "norway-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "3626da8b843c44fa87d125d34d489b49895a6fe384329ee6b6fe9998144181ad"
+        },
+        {
+          "id": "norway-flag-clipart-002-gentle-wind-fabric-flag",
+          "imageSha256": "5925e5a169a444e51831d0478173f3e05acdbe1378825d033fdcf3e9c8992047"
+        },
+        {
+          "id": "norway-flag-clipart-003-rectangular-folded-cotton-flag",
+          "imageSha256": "d48d32098f5856c9c2151b4e2ebda0ce6275b2ab54fa483b2403fe97fe3bbfeb"
+        }
+      ]
+    },
+    "qatar-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "b80b406f4186857b162769c83971bb4cce5277cd695498deb85abba27845a658",
+      "intro": "Qatar flag clipart features a maroon field joined to white by a serrated edge. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "qatar-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "fa6017d5bd80d763d9a08f0b0c80fa8c44cfb0f6069cdeaf1ae5054142ac9a9a"
+        },
+        {
+          "id": "qatar-flag-clipart-002-gentle-wind-flag-on-a-tall-pole",
+          "imageSha256": "1648687d14c060915555d12f7e2e6cf6ea5a583bac119505affd50fdc231c3b6"
+        },
+        {
+          "id": "qatar-flag-clipart-003-folded-flag-on-a-display-cushion",
+          "imageSha256": "4a8dedfb877138b486f4fb8adf98d8f207d4e20a600ad2e06def0511f7cc3cb0"
+        }
+      ]
+    },
+    "san-marino-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "5e74aa048dcb1327b347503fb75a72868e5e772f588940453380b8984a010085",
+      "intro": "San Marino flag clipart features white over light blue with the national coat of arms at the center. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "san-marino-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "c26308a6f3f6d899c2fae0d85b539858716960af1f5b5b19d7ac3a11a1df9eb5"
+        },
+        {
+          "id": "san-marino-flag-clipart-002-gentle-wind-flag-on-a-tall-pole",
+          "imageSha256": "c7167a97e4feec139291324487da75a5baa6a566acd65841d81961f364e3de99"
+        },
+        {
+          "id": "san-marino-flag-clipart-003-folded-flag-on-a-display-cushion",
+          "imageSha256": "514b5e9cba40f5c7ebf268007740f4985345a95a204fe788393ac773e5bf69c1"
+        }
+      ]
+    },
+    "singapore-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "d810af0b7866281629ec9c1d3458a9bdfc3f363f270c38c4f5abd040e2a117fc",
+      "intro": "Singapore flag clipart features red over white with a white crescent and five stars in the red upper half. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "singapore-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "192e32e6d53344f6be3c2af88475002ab877707b540fcb971bb1b3a8cc0faa06"
+        },
+        {
+          "id": "singapore-flag-clipart-002-gentle-wind-fabric-flag",
+          "imageSha256": "5cffbf84254443d8344e9f49340f83abf1784e84e689eb3cf98a392f57ffeca6"
+        },
+        {
+          "id": "singapore-flag-clipart-003-rectangular-folded-cotton-flag",
+          "imageSha256": "a1236d031c51437f09e52d8538f6f869ed65ecbba6667c8b10ff3bf18e227074"
+        }
+      ]
+    },
+    "sweden-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "15135be7ae2e81586b2c1c0dc42b1e7fead6b47a33e87cdb213585fbeea67cc0",
+      "intro": "Sweden flag clipart features a yellow Nordic cross on a blue field. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "sweden-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "9f588a77a8fd5fbba12a40a6514c6e7baeffb79fed53e725e44558bce5ba6150"
+        },
+        {
+          "id": "sweden-flag-clipart-002-gentle-wind-flag-on-a-tall-pole",
+          "imageSha256": "3cf51963ca71ff36613cea2fd3018500228f0ef462827458817848501f8c19ab"
+        },
+        {
+          "id": "sweden-flag-clipart-003-folded-flag-on-a-display-cushion",
+          "imageSha256": "a1d818a67bb7137b9706ba084a261e336429a8beda44ad6d9566552591ccc38f"
+        }
+      ]
+    },
+    "switzerland-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "ffa01cfaca3fea9a3def2d9df3117c3bf16514895ecf2543d53c16b0eee05601",
+      "intro": "Switzerland flag clipart features a white equal-armed cross centered on a red square. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "switzerland-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "642dc39d6eeac82a4f63a1cf4d912d0481dcda6ce1a1fcbaed644973ea98d7bc"
+        },
+        {
+          "id": "switzerland-flag-clipart-002-gentle-wind-fabric-flag",
+          "imageSha256": "2ed20700c923ec8b115e891a518d1608f5476b26b532c5f1601f1689436c6fe8"
+        },
+        {
+          "id": "switzerland-flag-clipart-003-rectangular-folded-cotton-flag",
+          "imageSha256": "0d0a2598aa1521c7a1f31c17c8f48a7485d0ba6575f97a0b543b52e7d9ced5bf"
+        }
+      ]
+    },
+    "united-arab-emirates-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "40d188ff06e63b0ff6db18d3089e59e35ce7c9ac12171a34731965d9afdd1311",
+      "intro": "United Arab Emirates flag clipart features a red vertical hoist band with horizontal green, white and black bands. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "united-arab-emirates-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "292b17d3878773223d8418d8e0d36ef198dca6280574354acb62a78f3e7b58fa"
+        },
+        {
+          "id": "united-arab-emirates-flag-clipart-002-gentle-wind-flag-on-a-tall-pole",
+          "imageSha256": "8f96d469f9aa02d64475c5e20a5630603be9b56d995c38c9e62af39ce83e4a3b"
+        },
+        {
+          "id": "united-arab-emirates-flag-clipart-003-folded-flag-on-a-display-cushion",
+          "imageSha256": "3840eb989d54f5846d1a279d360f4e91176bebb6b1319c8a9079bf66aef39312"
+        }
+      ]
+    },
+    "united-kingdom-flag": {
+      "status": "checked-against-catalog",
+      "checkedAt": "2026-11-02T00:00:00.000Z",
+      "sourceSha256": "adda0b8c404d8b86c3a5ce2514954150fdde6cb7c9c8ac1e98efb43d908fd3a1",
+      "intro": "United Kingdom flag clipart features a blue field layered with the red and white crosses of the Union Flag. Browse sewn and folded flag designs alongside illustrated community scenes and monochrome ink drawings.",
+      "evidence": [
+        {
+          "id": "united-kingdom-flag-clipart-001-flat-sewn-national-flag",
+          "imageSha256": "b56b5862b6bd40fff534ab32f675d541eb4a0220e7e956763af65166f115c343"
+        },
+        {
+          "id": "united-kingdom-flag-clipart-002-gentle-wind-flag-on-a-tall-pole",
+          "imageSha256": "c79f259ef64cc2330895efb5dd877ef2d824e86b9fc7ed35f107c98730aeffed"
+        },
+        {
+          "id": "united-kingdom-flag-clipart-003-folded-flag-on-a-display-cushion",
+          "imageSha256": "68ded5905391cdd71d7943171d1afbfd3315681d1a65859e39ee37ee0f50d213"
+        }
+      ]
+    }
+  }
+}
