@@ -1,8 +1,9 @@
-import { constants, copyFileSync, mkdirSync, readdirSync, statSync } from 'node:fs';
+import { mkdirSync, readdirSync, statSync, lstatSync } from 'node:fs';
 import { join, resolve, relative, isAbsolute, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { readIncrementalPlan, incrementalCollectionOptions } from './delivery/incremental.mjs';
 import { verifiedSourceCache } from './verified-source-cache.mjs';
+import { createIndependentCopier } from './delivery/independent-copy.mjs';
 
 /** Copy interface assets without traversing the R2-backed catalog, including drafts. */
 export function copyPublicInterfaceAssets(publicDir, outDir, options = {}) {
@@ -11,10 +12,19 @@ export function copyPublicInterfaceAssets(publicDir, outDir, options = {}) {
   const nested = relative(source, output);
   if (!nested || (!isAbsolute(nested) && nested !== '..' && !nested.startsWith(`..${sep}`)))
     throw Error('Build output must stay outside public assets');
+  mkdirSync(output, { recursive: true });
+  const copier = createIndependentCopier({ sourceRoot: source, destinationRoot: output });
   let files = 0,
     bytes = 0;
   function copy(directory, destination, topLevel = false) {
-    mkdirSync(destination, { recursive: true });
+    try {
+      const existing = lstatSync(destination);
+      if (!existing.isDirectory() || existing.isSymbolicLink())
+        throw Error('Public interface output directory must not be a symlink');
+    } catch (error) {
+      if (error.code !== 'ENOENT') throw error;
+      mkdirSync(destination);
+    }
     for (const entry of readdirSync(directory, { withFileTypes: true })) {
       // Skip before inspecting or following anything inside the catalog. Source
       // originals remain available to local editors and build-time image audits.
@@ -27,10 +37,9 @@ export function copyPublicInterfaceAssets(publicDir, outDir, options = {}) {
         const path = '/' + relative(source, from).split(sep).join('/');
         const prior = options.inherited?.get(path);
         if (prior && options.cache) options.cache.copy(from, to, prior);
-        // Keep writable build output independent while allowing APFS/reflink
-        // storage to share unchanged blocks. Unsupported filesystems fall back
-        // to an ordinary copy; this never creates a mutable hard link.
-        else copyFileSync(from, to, constants.COPYFILE_FICLONE);
+        // Astro may have already created the same output path. Replacement is
+        // limited to this build directory and uses an independent temporary inode.
+        else copier.copy(from, to, { replaceExisting: true });
         files++;
         bytes += statSync(from).size;
       } else throw Error('Unsupported public interface asset');

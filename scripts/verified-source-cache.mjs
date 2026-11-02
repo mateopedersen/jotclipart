@@ -6,14 +6,13 @@ import {
   lstatSync,
   statSync,
   realpathSync,
-  copyFileSync,
   chmodSync,
   linkSync,
-  constants,
   existsSync,
 } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { createHash, createHmac, randomBytes, timingSafeEqual } from 'node:crypto';
+import { createIndependentCopier } from './delivery/independent-copy.mjs';
 
 const sha = (bytes) => createHash('sha256').update(bytes).digest('hex');
 const identity = (file) => {
@@ -77,6 +76,7 @@ export function verifiedSourceCache(root) {
   }
   const entries = Object.create(null),
     stats = { hashed: 0, reused: 0, hashedBytes: 0 };
+  let independentCopier;
   const sign = (record) => createHmac('sha256', key).update(JSON.stringify(record)).digest('hex');
   function verify(file, expected) {
     const path = realpathSync(file),
@@ -109,10 +109,9 @@ export function verifiedSourceCache(root) {
     copy(source, target, expected) {
       const before = verify(source, expected);
       if (existsSync(target)) throw Error('Verified inheritance cannot replace a rendered file');
-      copyFileSync(source, target, constants.COPYFILE_FICLONE);
-      // Frozen snapshots may be read-only. A candidate is always a separate,
-      // owner-writable inode, so later auditing cannot mutate the rollback.
-      chmodSync(target, statSync(target).mode | 0o200);
+      independentCopier ??= createIndependentCopier({ sourceRoot: root, destinationRoot: root });
+      // Frozen snapshots can be read-only; the copy is an independently writable inode.
+      independentCopier.copy(source, target, { expectedSourceIdentity: before, ownerWritable: true });
       if (identity(source) !== before || statSync(target).size !== expected.bytes)
         throw Error('Source changed during verified inheritance');
       const record = {

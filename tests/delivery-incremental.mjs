@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, rmSync } from 'node:fs';
+import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, rmSync, statSync, symlinkSync, existsSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join, dirname } from 'node:path';
 import { execFileSync } from 'node:child_process';
@@ -12,6 +12,7 @@ import {
   materializeIncrementalSource,
   incrementalCollectionOptions,
   verifiedInheritedMetadata,
+  sealIncrementalBaseline,
 } from '../scripts/delivery/incremental.mjs';
 import { collectDeliveryFiles, merkle, digest } from '../scripts/delivery/manifest.mjs';
 import { createPublicFileHandler } from '../server/delivery/public-files.mjs';
@@ -122,6 +123,37 @@ function fixture() {
     close: () => rmSync(temporary, { recursive: true, force: true }),
   };
 }
+
+test('sealing preserves static files in independent copies and safely resumes a partial seal', () => {
+  const f = fixture();
+  try {
+    const original = join(f.root, 'dist/index.html');
+    const existing = `work/delivery/${f.base}/full-source/index.html`;
+    f.put(existing, 'incomplete old output');
+    const manifest = join(f.root, 'work/delivery', f.base, 'verified-manifest.json');
+    const result = sealIncrementalBaseline(f.root, manifest, join(f.root, 'dist'));
+    assert.equal(readFileSync(join(result, 'index.html'), 'utf8'), 'complete rollback homepage');
+    assert.notEqual(statSync(join(result, 'index.html')).ino, statSync(original).ino);
+    writeFileSync(join(result, 'index.html'), 'changed copy');
+    assert.equal(readFileSync(original, 'utf8'), 'complete rollback homepage');
+    assert.equal(JSON.parse(readFileSync(join(result, 'incremental-baseline.json'), 'utf8')).revision, f.base);
+  } finally { f.close(); }
+});
+
+test('sealing refuses output symlinks instead of writing outside the frozen tree', () => {
+  const f = fixture();
+  try {
+    const outside = join(f.root, 'outside'), frozen = join(f.root, 'work/delivery', f.base, 'full-source');
+    mkdirSync(outside); mkdirSync(frozen, { recursive: true });
+    f.put('dist/extra/static.txt', 'source');
+    symlinkSync(outside, join(frozen, 'extra'));
+    const manifest = join(f.root, 'work/delivery', f.base, 'verified-manifest.json');
+    assert.throws(() => sealIncrementalBaseline(f.root, manifest, join(f.root, 'dist')), /must not be a symlink/);
+    assert.equal(existsSync(join(outside, 'static.txt')), false);
+    assert.equal(readFileSync(join(f.root, 'dist/extra/static.txt'), 'utf8'), 'source');
+    assert.equal(existsSync(join(frozen, 'incremental-baseline.json')), false);
+  } finally { f.close(); }
+});
 
 test('append-only analysis permits new records but never edits, removes or duplicates an accepted artwork', () => {
   const old = [{ id: 'old', title: 'Accepted', files: { sha256: 'source' } }];

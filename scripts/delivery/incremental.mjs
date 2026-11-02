@@ -3,11 +3,11 @@ import {
   writeFileSync,
   existsSync,
   mkdirSync,
-  cpSync,
-  constants,
+  readdirSync,
+  lstatSync,
   realpathSync,
 } from 'node:fs';
-import { join, resolve, dirname } from 'node:path';
+import { join, resolve, dirname, relative, isAbsolute, sep } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { digest, merkle } from './manifest.mjs';
@@ -18,6 +18,7 @@ import {
 } from '../verified-source-cache.mjs';
 import { readPublication } from '../publication-policy.mjs';
 import { relatedImpact } from './related-impact.mjs';
+import { createIndependentCopier } from './independent-copy.mjs';
 
 const json = (file) => JSON.parse(readFileSync(file, 'utf8'));
 const ordered = (v) =>
@@ -260,9 +261,23 @@ export function validateIncrementalPlan(root, plan) {
 export function sealIncrementalBaseline(root, manifestPath, source, { previousManifestPath } = {}) {
   const manifest = json(manifestPath),
     target = join(root, 'work/delivery', manifest.revision, 'full-source');
-  if (manifest.status !== 'remote-byte-verified' || merkle(manifest.files).root !== manifest.root)
+  if (!/^[a-f0-9]{40}$/.test(manifest.revision) ||
+      manifest.status !== 'remote-byte-verified' || merkle(manifest.files).root !== manifest.root)
     throw Error('Cannot seal an unverified baseline');
-  mkdirSync(target, { recursive: true });
+  // Do not create a frozen output through an existing symlink on any level.
+  let safeDirectory = realpathSync(root);
+  for (const component of ['work', 'delivery', manifest.revision, 'full-source']) {
+    safeDirectory = join(safeDirectory, component);
+    try {
+      const current = lstatSync(safeDirectory);
+      if (!current.isDirectory() || current.isSymbolicLink())
+        throw Error('Frozen output directory must not be a symlink');
+    } catch (error) {
+      if (error.code !== 'ENOENT') throw error;
+      mkdirSync(safeDirectory);
+    }
+    if (realpathSync(safeDirectory) !== safeDirectory) throw Error('Frozen output escaped the delivery directory');
+  }
   const marker = join(target, 'incremental-baseline.json');
   if (existsSync(marker)) {
     if (json(marker).root !== manifest.root) throw Error('Baseline marker differs');
@@ -284,13 +299,38 @@ export function sealIncrementalBaseline(root, manifestPath, source, { previousMa
       throw Error('Invalid frozen predecessor snapshot');
     previousFiles = new Map(previous.files.map((file) => [file.path, file]));
   }
-  // Preserve the complete rollback build, including its Pages/static files.
-  cpSync(source, target, {
-    recursive: true,
-    mode: constants.COPYFILE_FICLONE,
-    filter: (path) =>
-      !managed.has('/' + path.slice(resolve(source).length + 1).replaceAll('\\', '/')),
-  });
+  // Preserve Pages/static files as independent COW inodes. Existing files in
+  // an interrupted same-revision seal may be replaced only inside that output.
+  if (lstatSync(source).isSymbolicLink() || lstatSync(target).isSymbolicLink())
+    throw Error('Frozen source and output roots must not be symlinks');
+  const staticSource = realpathSync(source), staticTarget = realpathSync(target);
+  if (!staticTarget.startsWith(realpathSync(root) + '/work/delivery/'))
+    throw Error('Frozen output escaped the delivery directory');
+  const nested = relative(staticSource, staticTarget);
+  if (!nested || (!isAbsolute(nested) && nested !== '..' && !nested.startsWith(`..${sep}`)))
+    throw Error('Frozen output must stay outside its source');
+  const copier = createIndependentCopier({ sourceRoot: staticSource, destinationRoot: staticTarget });
+  function staticTree(from, to) {
+    for (const entry of readdirSync(from, { withFileTypes: true })) {
+      const input = join(from, entry.name), output = join(to, entry.name);
+      if (managed.has('/' + relative(staticSource, input).split(sep).join('/'))) continue;
+      if (entry.isSymbolicLink()) throw Error('Frozen source cannot contain symlinks');
+      if (entry.isDirectory()) {
+        try {
+          const existing = lstatSync(output);
+          if (!existing.isDirectory() || existing.isSymbolicLink())
+            throw Error('Frozen output directory must not be a symlink');
+        } catch (error) {
+          if (error.code !== 'ENOENT') throw error;
+          mkdirSync(output);
+        }
+        if (realpathSync(output) !== output) throw Error('Frozen output directory changed scope');
+        staticTree(input, output);
+      } else if (entry.isFile()) copier.copy(input, output, { replaceExisting: true });
+      else throw Error('Frozen source must contain only regular files');
+    }
+  }
+  staticTree(staticSource, staticTarget);
   for (const file of manifest.files) {
     const from = join(source, file.path),
       to = join(target, file.path);

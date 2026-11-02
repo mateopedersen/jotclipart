@@ -22,6 +22,23 @@ export function publicationSoftwareHash(root) {
         return source;
       });
   });
+  // These files are loaded or used to reproduce the descriptor-anchored macOS
+  // clone backend. They are just as critical as the JavaScript delivery code.
+  const nativeRoot = 'scripts/delivery/native-clone';
+  for (const dir of [nativeRoot, `${nativeRoot}/node-api-headers`]) {
+    const stat = lstatSync(join(root, dir));
+    if (!stat.isDirectory() || stat.isSymbolicLink()) throw Error(`Unsafe software directory: ${dir}`);
+  }
+  const nativeFiles = [
+    'clonefile.c', 'clonefile.node', 'attested-native-loader.mjs', 'build-private.sh',
+    'node-api-headers/node_api.h', 'node-api-headers/node_api_types.h',
+    'node-api-headers/js_native_api.h', 'node-api-headers/js_native_api_types.h',
+    'node-api-headers/LICENSE', 'node-api-headers/SHA256SUMS',
+  ].map((name) => {
+    const source = `${nativeRoot}/${name}`, file = lstatSync(join(root, source));
+    if (!file.isFile() || file.isSymbolicLink()) throw Error(`Unsafe software source: ${source}`);
+    return source;
+  });
   const paths = [
     'scripts/deploy.mjs',
     'scripts/verified-source-cache.mjs',
@@ -40,6 +57,7 @@ export function publicationSoftwareHash(root) {
     'package.json',
     'pnpm-lock.yaml',
     ...modules,
+    ...nativeFiles,
   ].sort();
   const hash = createHash('sha256');
   for (const path of paths)
@@ -55,6 +73,29 @@ const positiveInteger = (value) => Number.isSafeInteger(value) && value > 0;
 const hex40 = (value) => typeof value === 'string' && /^[a-f0-9]{40}$/.test(value);
 const hex64 = (value) => typeof value === 'string' && /^[a-f0-9]{64}$/.test(value);
 
+// A future incremental certification is specific to the runtime and copy
+// backend actually tested. A macOS native proof must never enable Linux (or a
+// different Node-API level), even if the checked-in software is identical.
+export function incrementalRuntimeIdentity(root) {
+  const platform = process.platform, arch = process.arch, nodeApiVersion = Number(process.versions.napi);
+  if (!Number.isSafeInteger(nodeApiVersion) || nodeApiVersion < 8) return null;
+  if (platform === 'darwin' && arch === 'arm64') {
+    const binary = join(root, 'scripts/delivery/native-clone/clonefile.node'), info = lstatSync(binary);
+    if (!info.isFile() || info.isSymbolicLink()) throw Error('Unsafe native copy binary');
+    return { platform, arch, nodeApiVersion, copyBackend: 'darwin-fclonefileat',
+      nativeBinarySha256: sha256(readFileSync(binary)) };
+  }
+  if (platform === 'linux') return {
+    platform, arch, nodeApiVersion, copyBackend: 'linux-ficlone', nativeBinarySha256: null,
+  };
+  return null;
+}
+
+function sameRuntime(a, b) {
+  return !!a && !!b && ['platform', 'arch', 'nodeApiVersion', 'copyBackend', 'nativeBinarySha256']
+    .every((key) => a[key] === b[key]);
+}
+
 /** Tests affecting the full delivery chain must not silently drop out of recertification. */
 export function incrementalFocusedTestPaths(root) {
   const names = readdirSync(join(root, 'tests'))
@@ -65,6 +106,7 @@ export function incrementalFocusedTestPaths(root) {
   const paths = names.map((name) => `tests/${name}`).sort();
   for (const required of [
     'tests/delivery-incremental.mjs',
+    'tests/delivery-independent-copy.mjs',
     'tests/delivery-release-staging.mjs',
     'tests/delivery-release-write-authorization.mjs',
     'tests/r2-binding-media.mjs',
@@ -85,12 +127,14 @@ export function incrementalFocusedTestPaths(root) {
  */
 export function incrementalEvidenceMatches(root, certificate, evidenceBytes) {
   try {
+    const runtime = incrementalRuntimeIdentity(root);
     if (
       certificate.schema !== 2 ||
       certificate.enabled !== true ||
       certificate.storagePolicy !== OWNER_MANAGED_STORAGE_POLICY ||
       !hex64(certificate.softwareHash) ||
       certificate.softwareHash !== publicationSoftwareHash(root) ||
+      !sameRuntime(certificate.runtimeIdentity, runtime) ||
       typeof certificate.evidence !== 'string' ||
       !/^docs\/delivery-incremental-verification-[a-z0-9-]+\.json$/.test(certificate.evidence) ||
       !hex64(certificate.evidenceSha256)
@@ -98,11 +142,12 @@ export function incrementalEvidenceMatches(root, certificate, evidenceBytes) {
     if (sha256(evidenceBytes) !== certificate.evidenceSha256) return false;
     const evidence = JSON.parse(evidenceBytes), shadow = evidence.shadow, browser = evidence.browser,
       unit = evidence.focusedUnitChecks, stage = evidence.nativeWorkers?.staging,
-      publicWorker = evidence.nativeWorkers?.public;
+      publicWorker = evidence.nativeWorkers?.public, copyProbe = evidence.nativeCopyProbe;
     if (
       evidence.schema !== 2 || evidence.status !== 'LOCAL_INCREMENTAL_PUBLISHER_REVALIDATED' ||
       evidence.storagePolicy !== OWNER_MANAGED_STORAGE_POLICY ||
       evidence.softwareHash !== certificate.softwareHash ||
+      !sameRuntime(evidence.runtimeIdentity, runtime) ||
       evidence.notWebsitePublication !== true || evidence.testPublicationBlocked !== true ||
       evidence.remoteTestWrites !== 0 || !hex40(evidence.baselineRevision) ||
       !hex64(evidence.baselineRoot) || !hex40(evidence.shadowRevision) ||
@@ -118,6 +163,12 @@ export function incrementalEvidenceMatches(root, certificate, evidenceBytes) {
       !positiveInteger(unit?.tests) || unit.pass !== unit.tests || unit.fail !== 0 || unit.skipped !== 0 ||
       !Array.isArray(unit.testSources)
     ) return false;
+    if (copyProbe?.status !== 'PASS_LOCAL_INDEPENDENT_COPY' ||
+        copyProbe.copyBackend !== runtime.copyBackend || copyProbe.independentInode !== true ||
+        copyProbe.sourceUnaffectedByTargetMutation !== true ||
+        copyProbe.compressedRoundTrip !== (runtime.platform === 'darwin' ? true : null) ||
+        copyProbe.testSourceSha256 !== sha256(readFileSync(join(root, 'tests/delivery-independent-copy.mjs'))))
+      return false;
     const expectedTests = incrementalFocusedTestPaths(root), actualTests = unit.testSources;
     if (actualTests.length !== expectedTests.length || unit.tests < expectedTests.length) return false;
     for (let i = 0; i < expectedTests.length; i++)

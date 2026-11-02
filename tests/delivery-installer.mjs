@@ -4,12 +4,18 @@ import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, existsSync, rmSync
 import { join, dirname } from 'node:path';
 import { tmpdir } from 'node:os';
 import { createHash } from 'node:crypto';
-import { publicationSoftwareHash, incrementalInstalled, incrementalFocusedTestPaths } from '../scripts/delivery/installer.mjs';
+import { publicationSoftwareHash, incrementalInstalled, incrementalFocusedTestPaths, incrementalRuntimeIdentity } from '../scripts/delivery/installer.mjs';
 import { OWNER_MANAGED_STORAGE_POLICY } from '../scripts/delivery/release-write-authorization.mjs';
 import { awaitPublicationWriter } from '../scripts/delivery/publication-lock.mjs';
 import { acquireAccountWriter } from '../scripts/delivery/account-lock.mjs';
 
 const sha = (value) => createHash('sha256').update(value).digest('hex');
+const nativeInputs = [
+  'clonefile.c', 'clonefile.node', 'attested-native-loader.mjs', 'build-private.sh',
+  'node-api-headers/node_api.h', 'node-api-headers/node_api_types.h',
+  'node-api-headers/js_native_api.h', 'node-api-headers/js_native_api_types.h',
+  'node-api-headers/LICENSE', 'node-api-headers/SHA256SUMS',
+].map((p) => `scripts/delivery/native-clone/${p}`);
 function fixture() {
   const root = mkdtempSync(join(tmpdir(), 'uc-installer-'));
   const put = (path, text) => {
@@ -27,16 +33,16 @@ function fixture() {
     'scripts/delivery/release-write-authorization.mjs', 'scripts/delivery/staging-worker.mjs',
     'scripts/r2/prepare-publication.mjs', 'scripts/r2/reviewed-binding-input.mjs',
     'scripts/r2/binding-ingest.mjs', 'server/r2/private-ingest.mjs',
-    'server/delivery/public-files.mjs', 'tests/delivery-incremental.mjs',
+    'server/delivery/public-files.mjs', 'tests/delivery-incremental.mjs', 'tests/delivery-independent-copy.mjs',
     'tests/delivery-release-staging.mjs', 'tests/delivery-release-write-authorization.mjs',
     'tests/r2-binding-media.mjs', 'tests/r2-binding-waves.mjs', 'tests/r2-ingestion.mjs',
     'tests/publication.mjs', 'tests/publication-preparation.mjs',
     'tests/raster-publication.mjs', 'tests/compiled-publication.mjs',
     'tests/category-ingestion.mjs', 'tests/studio-style-delivery.mjs', 'tests/verified-source-cache.mjs',
-    'tests/e2e/delivery-public-local.mjs', 'tests/e2e/delivery-staging-local.mjs',
+    'tests/e2e/delivery-public-local.mjs', 'tests/e2e/delivery-staging-local.mjs', ...nativeInputs,
   ];
   for (const path of paths) put(path, `fixture ${path}`);
-  const softwareHash = publicationSoftwareHash(root), baselineRevision = 'a'.repeat(40),
+  const softwareHash = publicationSoftwareHash(root), runtimeIdentity = incrementalRuntimeIdentity(root), baselineRevision = 'a'.repeat(40),
     shadowRevision = 'b'.repeat(40), baselineRoot = 'c'.repeat(64);
   const browserChecks = [];
   for (const engine of ['chromium', 'webkit']) for (const width of [390, 1440])
@@ -45,12 +51,16 @@ function fixture() {
       relatedExpanded:kind === 'inherited', editorNoindex:true, noHorizontalOverflow:true, localOriginalImageVerified:true,
       actualArtifactRevision:kind === 'inherited' ? baselineRevision : shadowRevision});
   const evidence = {schema:2, status:'LOCAL_INCREMENTAL_PUBLISHER_REVALIDATED',
-    storagePolicy:OWNER_MANAGED_STORAGE_POLICY, softwareHash, baselineRevision, baselineRoot, shadowRevision,
+    storagePolicy:OWNER_MANAGED_STORAGE_POLICY, softwareHash, runtimeIdentity, baselineRevision, baselineRoot, shadowRevision,
     notWebsitePublication:true, testPublicationBlocked:true, remoteTestWrites:0,
     shadow:{status:'PRIVATE_REAL_CATALOG_INCREMENTAL_SHADOW_VERIFIED_NOT_LIVE', baselineRevision,
       baselineRoot, revision:shadowRevision, softwareHash, shadowOnly:true, productionPublishingBlocked:true,
       productionWrites:0, artworks:100, selectedArtworks:50, renderedHtml:100, inheritedHtml:100,
       auditPages:201, imageSeoErrors:0, linkErrors:0, coreSeoErrors:0},
+    nativeCopyProbe:{status:'PASS_LOCAL_INDEPENDENT_COPY',copyBackend:runtimeIdentity.copyBackend,
+      independentInode:true,sourceUnaffectedByTargetMutation:true,
+      compressedRoundTrip:runtimeIdentity.platform==='darwin'?true:null,
+      testSourceSha256:sha(readFileSync(join(root,'tests/delivery-independent-copy.mjs')))},
     focusedUnitChecks:{tests:200, pass:200, fail:0, skipped:0,
       testSources:incrementalFocusedTestPaths(root).map(path=>({path,sha256:sha(readFileSync(join(root,path)))}))},
     nativeWorkers:{public:{status:'PASS_LOCAL_PUBLIC_WORKER',relatedRemainsCurrent:true,cardsAndCopyUnchanged:true,
@@ -67,12 +77,61 @@ function fixture() {
   const install = (value = evidence, overrides = {}) => {
     const bytes=JSON.stringify(value),evidencePath='docs/delivery-incremental-verification-fixture.json';
     put(evidencePath,bytes);
-    const cert={schema:2,enabled:true,storagePolicy:OWNER_MANAGED_STORAGE_POLICY,softwareHash,
+    const cert={schema:2,enabled:true,storagePolicy:OWNER_MANAGED_STORAGE_POLICY,softwareHash,runtimeIdentity,
       evidence:evidencePath,evidenceSha256:sha(bytes),...overrides};
     put('config/incremental-publisher.json',JSON.stringify(cert));
   };
   return {root,put,evidence,install,close:()=>rmSync(root,{recursive:true,force:true})};
 }
+
+test('all native clone sources, binary, recipe and headers invalidate stale certification', () => {
+  const f = fixture();
+  try {
+    f.install();
+    const before = publicationSoftwareHash(f.root);
+    for (const path of nativeInputs) {
+      f.put(path, 'changed native component');
+      assert.notEqual(publicationSoftwareHash(f.root), before, path);
+      assert.equal(incrementalInstalled(f.root), false, path);
+      f.put(path, `fixture ${path}`);
+      assert.equal(incrementalInstalled(f.root), true, path);
+    }
+    const binary = join(f.root, nativeInputs[1]);
+    unlinkSync(binary);
+    symlinkSync('clonefile.c', binary);
+    assert.throws(() => publicationSoftwareHash(f.root), /Unsafe software source/);
+    assert.equal(incrementalInstalled(f.root), false);
+  } finally { f.close(); }
+});
+
+test('incremental proof is bound to the tested platform, architecture, Node-API and copy backend', () => {
+  const f = fixture();
+  try {
+    f.install(); assert.equal(incrementalInstalled(f.root), true);
+    const changes = [
+      r => { r.platform = 'other-platform'; },
+      r => { r.arch = 'other-arch'; },
+      r => { r.nodeApiVersion++; },
+      r => { r.copyBackend = 'other-backend'; },
+      r => { r.nativeBinarySha256 = '0'.repeat(64); },
+    ];
+    for (const change of changes) {
+      const wrong = structuredClone(f.evidence.runtimeIdentity); change(wrong);
+      f.install(f.evidence, { runtimeIdentity: wrong });
+      assert.equal(incrementalInstalled(f.root), false);
+      const evidence = structuredClone(f.evidence); evidence.runtimeIdentity = wrong;
+      f.install(evidence); assert.equal(incrementalInstalled(f.root), false);
+    }
+    for (const key of ['independentInode', 'sourceUnaffectedByTargetMutation']) {
+      const evidence = structuredClone(f.evidence); evidence.nativeCopyProbe[key] = false;
+      f.install(evidence); assert.equal(incrementalInstalled(f.root), false);
+    }
+    if (process.platform === 'darwin') {
+      const evidence = structuredClone(f.evidence); evidence.nativeCopyProbe.compressedRoundTrip = false;
+      f.install(evidence); assert.equal(incrementalInstalled(f.root), false);
+    }
+  } finally { f.close(); }
+});
 
 test('only matching full-source, fresh-authorization and browser evidence enables incremental use', () => {
   const f=fixture();try {

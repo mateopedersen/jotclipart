@@ -7,6 +7,8 @@ import {
   readFileSync,
   existsSync,
   symlinkSync,
+  statSync,
+  readdirSync,
   rmSync,
 } from 'node:fs';
 import { join } from 'node:path';
@@ -46,6 +48,40 @@ test('production copies exact UI bytes without copying or traversing catalog ori
   } finally {
     rmSync(root, { recursive: true, force: true });
   }
+});
+
+test('existing build files are replaced independently while symlink targets are rejected', () => {
+  const root = mkdtempSync(join(tmpdir(), 'uc-public-overwrite-'));
+  try {
+    const source = join(root, 'public'), output = join(root, 'dist');
+    mkdirSync(source); mkdirSync(output);
+    writeFileSync(join(source, 'logo.svg'), 'source logo');
+    writeFileSync(join(output, 'logo.svg'), 'stale build logo');
+    writeFileSync(join(output, 'unrelated.html'), 'keep');
+    copyPublicInterfaceAssets(source, output);
+    assert.equal(readFileSync(join(output, 'logo.svg'), 'utf8'), 'source logo');
+    assert.notEqual(statSync(join(output, 'logo.svg')).ino, statSync(join(source, 'logo.svg')).ino);
+    assert.equal(readFileSync(join(output, 'unrelated.html'), 'utf8'), 'keep');
+    assert(!readdirSync(output).some((name) => name.startsWith('.uc-copy-')));
+    rmSync(join(output, 'logo.svg'));
+    symlinkSync(join(source, 'logo.svg'), join(output, 'logo.svg'));
+    assert.throws(() => copyPublicInterfaceAssets(source, output), /independent regular/);
+    assert.equal(readFileSync(join(source, 'logo.svg'), 'utf8'), 'source logo');
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+test('public copying never creates files through an existing output directory symlink', () => {
+  const root = mkdtempSync(join(tmpdir(), 'uc-public-output-link-'));
+  try {
+    const source = join(root, 'public'), output = join(root, 'dist'), outside = join(root, 'outside');
+    mkdirSync(join(source, 'icons', 'nested'), { recursive: true });
+    mkdirSync(output); mkdirSync(outside);
+    writeFileSync(join(source, 'icons', 'nested', 'one.svg'), 'source');
+    symlinkSync(outside, join(output, 'icons'));
+    assert.throws(() => copyPublicInterfaceAssets(source, output), /output directory must not be a symlink/);
+    assert.equal(existsSync(join(outside, 'nested')), false);
+    assert.equal(readFileSync(join(source, 'icons', 'nested', 'one.svg'), 'utf8'), 'source');
+  } finally { rmSync(root, { recursive: true, force: true }); }
 });
 
 test('the production hook disables the actual Astro client copy while local builds retain their normal behavior', () => {

@@ -41,6 +41,21 @@ test('only independently hashed bytes create a reusable, private source record',
   }
 });
 
+test('a warm source proof permits an independent copy without another content hash', () => {
+  const f = setup();
+  try {
+    const cold = verifiedSourceCache(f.root);
+    cold.verify(f.file, f.expected); cold.save();
+    const warm = verifiedSourceCache(f.root), target = join(f.root, 'copy.webp');
+    warm.copy(f.file, target, f.expected);
+    assert.deepEqual(warm.stats, { hashed: 0, reused: 1, hashedBytes: 0 });
+    assert.deepEqual(readFileSync(target), f.bytes);
+    assert.notEqual(statSync(target).ino, statSync(f.file).ino);
+    writeFileSync(target, 'independent change');
+    assert.deepEqual(readFileSync(f.file), f.bytes);
+  } finally { rmSync(f.root, { recursive: true, force: true }); }
+});
+
 test('same-length edits with restored modification times invalidate the change-time identity', () => {
   const f = setup();
   try {
