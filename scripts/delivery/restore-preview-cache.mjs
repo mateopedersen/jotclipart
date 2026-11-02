@@ -38,6 +38,17 @@ function optionalFile(path) {
     throw error;
   }
 }
+function unsupportedCloneWithoutTarget(error, target) {
+  const cause = error?.cause;
+  if (error?.message !== 'Physical fallback exceeds its cumulative byte budget' ||
+      cause?.created !== false ||
+      !['ENOTSUP', 'EOPNOTSUPP', 'ENOSYS', 'EXDEV'].includes(cause.code) ||
+      !(cause.syscall === 'fclonefileat' || cause.cloneOperation === 'linux-ficlone')) return false;
+  try { lstatSync(target); return false; } catch (probeError) {
+    if (probeError.code === 'ENOENT') return true;
+    throw probeError;
+  }
+}
 function freeSpaceGuard(root, extra = 0n) {
   const s = statfsSync(root, { bigint: true });
   if (s.bavail * s.bsize < MIN_FREE + extra) throw Error('Preview restoration requires 5 GiB free after its writes');
@@ -139,7 +150,7 @@ export async function restorePreviewCacheAtRoot(projectRoot, { expectedRevision 
   const copier = createIndependentCopier({ sourceRoot: base.sourceRoot, destinationRoot: targetRoot,
     minFreeBytes: MIN_FREE, maxFallbackBytes: 0 });
   const observations = [], stats = { restored: 0, reused: 0, entries: 0, missingBaseline: 0,
-    metadataReads: 0, metadataReused: 0, skippedUnknown: 0, independentlyReproduced: 0 };
+    metadataReads: 0, metadataReused: 0, independentlyReproduced: 0 };
   let sinceSave = 0;
   const verify = (path, expected) => { safeFile(path); return cache.verify(path, expected); };
   const saveSourceCache = () => {
@@ -171,11 +182,7 @@ export async function restorePreviewCacheAtRoot(projectRoot, { expectedRevision 
         .rotate().resize({ width, height: width, fit: 'inside', withoutEnlargement: true })
         .webp({ quality: 80, alphaQuality: 100, effort: 4 }).toBuffer({ resolveWithObject: true });
       const expected = { bytes: data.length, sha256: sha(data) };
-      let proof;
-      try { proof = verify(target, expected); } catch (error) {
-        if (String(error.message).includes('Source changed after verification:')) return;
-        throw error;
-      }
+      const proof = verify(target, expected);
       const s = statSync(target); assert.equal(identity(target), proof, 'Preview changed during cache reproduction');
       files[width] = { ...expected, mtime: s.mtimeMs, width: info.width, height: info.height };
       observations.push([target, proof]); stats.independentlyReproduced++;
@@ -205,16 +212,16 @@ export async function restorePreviewCacheAtRoot(projectRoot, { expectedRevision 
       if (!optionalFile(target)) {
         freeSpaceGuard(root);
         try { copier.copy(source, target, { expectedSourceIdentity: before, ownerWritable: true }); stats.restored++; }
-        catch (error) { if (error.code !== 'EEXIST') throw error; }
-      }
-      let targetProof;
-      try { targetProof = verify(target, record); }
-      catch (error) {
-        if (String(error.message).includes('Source changed after verification:')) {
-          stats.skippedUnknown++; if (PREVIEW_WIDTHS.includes(width)) incomplete = true; continue;
+        catch (error) {
+          if (error.code === 'EEXIST') { /* Verify the raced file below. */ }
+          else if (unsupportedCloneWithoutTarget(error, target)) {
+            // No candidate or .astro cache entry is approved on this path. The
+            // normal, existing preview generator remains responsible for it.
+            return { status: 'SKIPPED_OPTIMIZATION', reason: 'COW_UNSUPPORTED_NO_TARGET_CREATED' };
+          } else throw error;
         }
-        throw error;
       }
+      const targetProof = verify(target, record);
       assert.equal(identity(source), before, 'Frozen preview changed');
       let metadata = ledger[target];
       if (metadata?.identity === targetProof && metadata.sha256 === record.sha256 &&

@@ -6,6 +6,7 @@ import { mkdtempSync, mkdirSync, readFileSync, writeFileSync, rmSync, realpathSy
   symlinkSync, unlinkSync, statSync, utimesSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join, dirname } from 'node:path';
+import { registerHooks } from 'node:module';
 import { previewIdentity } from '../scripts/preview-assets.mjs';
 import { merkle } from '../scripts/delivery/manifest.mjs';
 import { restorePreviewCacheAtRoot } from '../scripts/delivery/restore-preview-cache.mjs';
@@ -111,6 +112,11 @@ test('current non-baseline previews are retained only when reproduced from verif
     const next = JSON.parse(readFileSync(join(f.root, '.astro/preview-assets.json')));
     assert.equal(report.independentlyReproduced, 4); assert.equal(next[key].files['96'].width, 30);
     assert.notEqual(next[key].source, 'not trusted');
+    const indexPath = join(f.root, '.astro/preview-assets.json'), before = readFileSync(indexPath);
+    const target = join(f.root, `public/previews/p1/${key}-96.webp`), bad = Buffer.from(readFileSync(target));
+    bad[bad.length - 1] ^= 1; save(target, bad);
+    await assert.rejects(restorePreviewCacheAtRoot(f.root), /Source changed/);
+    assert.deepEqual(readFileSync(target), bad); assert.deepEqual(readFileSync(indexPath), before);
   } finally { f.close(); }
 });
 
@@ -133,11 +139,54 @@ test('changed original with restored mtime and corrupted target cannot acquire a
     save(f.webp, f.image);
     const dest = join(f.root, 'public', f.records[0].path), bad = Buffer.from(readFileSync(dest)); bad[bad.length - 1] ^= 1;
     save(dest, bad);
-    const report = await restorePreviewCacheAtRoot(f.root);
-    assert.equal(report.entries, 0); assert.equal(report.skippedUnknown, 1);
+    const indexBefore = readFileSync(join(f.root, '.astro/preview-assets.json'));
+    await assert.rejects(restorePreviewCacheAtRoot(f.root), /Source changed/);
     assert.deepEqual(readFileSync(dest), bad);
-    assert.equal(JSON.parse(readFileSync(join(f.root, '.astro/preview-assets.json')))[f.key], undefined);
+    assert.deepEqual(readFileSync(join(f.root, '.astro/preview-assets.json')), indexBefore);
   } finally { f.close(); }
+});
+
+test('only an unsupported COW operation with no created target skips the optimization and makes no cache claim', async () => {
+  const f = await fixture();
+  // Test-only module hook substitutes the platform copy failure, not the
+  // verifier or the helper's filesystem, metadata or attestation checks.
+  const stub = `export function createIndependentCopier() { return {
+    copy(source, target) { const spec = globalThis.__ucPreviewCopyFailure;
+      if (spec.create) requireCreate(target, 'partial');
+      const cause = Object.assign(new Error('clone failed'), spec.cause);
+      throw new Error('Physical fallback exceeds its cumulative byte budget', {cause});
+    }, stats() { return {}; } }; }
+    import { writeFileSync as requireCreate } from 'node:fs';`;
+  const hook = registerHooks({ resolve(specifier, context, nextResolve) {
+    if (context.parentURL?.includes('restore-preview-cache.mjs?unsupported-test') &&
+        specifier === './independent-copy.mjs')
+      return { url: `data:text/javascript,${encodeURIComponent(stub)}`, shortCircuit: true };
+    return nextResolve(specifier, context);
+  } });
+  try {
+    const helper = await import('../scripts/delivery/restore-preview-cache.mjs?unsupported-test');
+    const indexPath = join(f.root, '.astro/preview-assets.json');
+    json(indexPath, { unchanged: { source: 'existing' } });
+    const before = readFileSync(indexPath), dest = join(f.root, 'public', f.records[0].path);
+    globalThis.__ucPreviewCopyFailure = { cause: { code: 'ENOTSUP', syscall: 'fclonefileat', created: false } };
+    const skipped = await helper.restorePreviewCacheAtRoot(f.root);
+    assert.deepEqual(skipped, { status: 'SKIPPED_OPTIMIZATION', reason: 'COW_UNSUPPORTED_NO_TARGET_CREATED' });
+    assert.throws(() => statSync(dest), { code: 'ENOENT' });
+    assert.deepEqual(readFileSync(indexPath), before); assert.deepEqual(readFileSync(f.webp), f.image);
+    globalThis.__ucPreviewCopyFailure = { cause: { code: 'EXDEV', cloneOperation: 'linux-ficlone', created: false } };
+    assert.deepEqual(await helper.restorePreviewCacheAtRoot(f.root), skipped);
+    assert.deepEqual(readFileSync(indexPath), before);
+    globalThis.__ucPreviewCopyFailure = { cause: { code: 'EIO', syscall: 'fclonefileat', created: false } };
+    await assert.rejects(helper.restorePreviewCacheAtRoot(f.root), /fallback exceeds/);
+    assert.deepEqual(readFileSync(indexPath), before);
+    globalThis.__ucPreviewCopyFailure = { cause: { code: 'ENOTSUP', syscall: 'fclonefileat', created: true } };
+    await assert.rejects(helper.restorePreviewCacheAtRoot(f.root), /fallback exceeds/);
+    assert.deepEqual(readFileSync(indexPath), before);
+    globalThis.__ucPreviewCopyFailure = { create: true,
+      cause: { code: 'ENOTSUP', syscall: 'fclonefileat', created: false } };
+    await assert.rejects(helper.restorePreviewCacheAtRoot(f.root), /fallback exceeds/);
+    assert.deepEqual(readFileSync(indexPath), before);
+  } finally { delete globalThis.__ucPreviewCopyFailure; hook.deregister(); f.close(); }
 });
 
 test('source symlink escape and mismatched Merkle production proof fail closed', async () => {
