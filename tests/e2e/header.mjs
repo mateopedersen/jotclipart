@@ -53,12 +53,49 @@ const report = {
   errors,
   errorDetails,
   requestFailures,
+  discoveryChecks: [],
 };
 const header = page.locator('.site-header');
 const navigation = header.locator('#navigation');
 const menu = header.locator('.menu-button');
 const browse = header.locator('#site-browse-toggle');
 const resources = header.locator('#site-resources-toggle');
+
+// Register before every navigation and wait for the actual deferred index response.
+// A network-idle interval can finish before the one-second Surprise timer runs.
+async function navigateWithDiscovery(navigate, route) {
+  const discoveryResponse = page.waitForResponse(
+    (response) => {
+      const url = new URL(response.url());
+      return (
+        url.origin === new URL(base).origin &&
+        url.pathname === '/surprise-picks.json' &&
+        response.request().method() === 'GET'
+      );
+    },
+    { timeout: 15000 },
+  );
+  const [discovery, navigationResult] = await Promise.all([discoveryResponse, navigate()]);
+  assert.equal(new URL(page.url()).pathname, route, `Discovery request belongs to ${route}`);
+  assert.equal(discovery.status(), 200, `${route}: Surprise index status`);
+  assert.equal(await discovery.finished(), null, `${route}: Surprise index completed`);
+  const index = await discovery.json();
+  assert.ok(Number.isInteger(index.version), `${route}: Surprise index version`);
+  assert.ok(
+    Array.isArray(index.items) && index.items.length > 100,
+    `${route}: Surprise index items`,
+  );
+  report.discoveryChecks.push({
+    route,
+    width: page.viewportSize().width,
+    url: discovery.url(),
+    status: discovery.status(),
+    version: index.version,
+    items: index.items.length,
+    finished: true,
+  });
+  return navigationResult;
+}
 
 async function scan(label) {
   const surprise = header.locator('.site-surprise-link:visible');
@@ -97,7 +134,10 @@ try {
   for (const width of [1440, 1024, 768, 390, 320]) {
     await page.setViewportSize({ width, height: 1000 });
     for (const route of ['/', '/categories/', '/create/', '/ai-clipart-generator/']) {
-      const response = await page.goto(base + route, { waitUntil: 'domcontentloaded' });
+      const response = await navigateWithDiscovery(
+        () => page.goto(base + route, { waitUntil: 'domcontentloaded' }),
+        route,
+      );
       assert.equal(response.status(), 200, `${route} returns 200`);
       await page.evaluate(() => document.fonts.ready);
       await page.waitForLoadState('networkidle');
@@ -220,14 +260,21 @@ try {
   );
 
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto(base + '/');
+  const homeResponse = await navigateWithDiscovery(() => page.goto(base + '/'), '/');
+  assert.equal(homeResponse.status(), 200, 'Mobile home returns 200');
   await menu.click();
-  await navigation.getByRole('link', { name: 'Categories', exact: true }).click();
+  await navigateWithDiscovery(
+    () => navigation.getByRole('link', { name: 'Categories', exact: true }).click(),
+    '/categories/',
+  );
   await page.waitForURL('**/categories/');
   await page.waitForLoadState('networkidle');
   await expect(menu).toHaveAttribute('aria-expanded', 'false');
   await menu.click();
-  await navigation.getByRole('link', { name: /AI Clipart Builder/ }).click();
+  await navigateWithDiscovery(
+    () => navigation.getByRole('link', { name: /AI Clipart Builder/ }).click(),
+    '/ai-clipart-generator/',
+  );
   await page.waitForURL('**/ai-clipart-generator/');
   await page.waitForLoadState('networkidle');
   await expect(header.locator('.site-ai-link')).toHaveAttribute('aria-current', 'page');
@@ -246,6 +293,11 @@ try {
   await expectClosed();
   await expect(navigation).toBeVisible();
   report.checks.push('Breakpoint changes clear stale open states and retain desktop navigation');
+  assert.equal(
+    report.discoveryChecks.length,
+    23,
+    'Every header navigation verifies its real Surprise response',
+  );
   assert.equal(generationRequests, 0, 'Header navigation must not generate AI images');
   assert.deepEqual(errors, [], 'No JavaScript page errors');
   report.generationRequests = generationRequests;

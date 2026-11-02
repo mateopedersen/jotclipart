@@ -41,6 +41,7 @@ const pumpkin = expected({ q: 'pumpkin' });
 const pumpkinCount = pumpkin.total;
 const cardinal = expected({ q: 'cardinal' });
 const cardinalCount = cardinal.total;
+const arcticFox = expected({ q: 'arctic fox' });
 const base = process.env.BASE_URL ?? 'http://127.0.0.1:4322';
 const engine = process.env.UC_BROWSER ?? 'chromium';
 const browser = await { chromium, firefox, webkit }[engine].launch({
@@ -152,36 +153,65 @@ try {
   );
   await page.unroute('**/search-data/**');
   await page.click('#search-retry');
-  await expect(cards()).toHaveCount(expected({ q: 'arctic fox' }).items.length);
-  await expect(
-    cards().filter({ has: page.locator('[href="/art/winter-arctic-fox-resting/"]') }),
-  ).toHaveCount(1);
+  assert.ok(arcticFox.total > 0, 'the current catalog must contain arctic fox matches');
+  await expect(cards()).toHaveCount(arcticFox.items.length);
+  await expect
+    .poll(() => cards().evaluateAll((nodes) => nodes.map((node) => node.dataset.id)))
+    .toEqual(arcticFox.items.map((item) => item.id));
   report.checks.push('network error and visible retry recovery');
-  // Hold an old query's network request while a newer query completes.
+  // Hold an old query's network request while a newer query completes. Make
+  // this one request non-cancellable so the late response is actually received
+  // and the client must ignore it after the newer result has rendered.
+  const oldBucket = tokenBucket('pumpkin');
+  await page.evaluate((bucket) => {
+    const originalFetch = window.fetch.bind(window);
+    window.fetch = (input, init) => {
+      const value =
+        typeof input === 'string' ? input : input instanceof Request ? input.url : input.toString();
+      const isDelayedToken = new URL(value, location.href).pathname.endsWith(
+        `/tokens/${bucket}.json`,
+      );
+      return originalFetch(input, isDelayedToken ? { ...init, signal: undefined } : init);
+    };
+  }, oldBucket);
   let release, started;
   const gate = new Promise((resolve) => (release = resolve)),
     seen = new Promise((resolve) => (started = resolve));
-  const slow = `**/tokens/${tokenBucket('pumpkin')}.json`;
+  const slow = `**/tokens/${oldBucket}.json`;
   await page.route(slow, async (route) => {
-    started();
+    started(route.request());
     await gate;
     await route.continue().catch(() => {});
   });
   await page.fill('#search-query', 'pumpkin');
   await page.locator('#catalog-search button').click();
-  await seen;
+  const delayedRequest = await seen;
   await page.fill('#search-query', 'cardinal');
   await page.locator('#catalog-search button').click();
-  await expect(cards()).toHaveCount(cardinal.items.length);
-  await expect(
-    cards().filter({ has: page.locator('[href="/art/winter-red-cardinal-holly/"]') }),
-  ).toHaveCount(1);
+  const cardinalIds = cardinal.items.map((item) => item.id);
+  const displayedIds = () => cards().evaluateAll((nodes) => nodes.map((node) => node.dataset.id));
+  assert.ok(cardinalCount > 0, 'the current catalog must contain cardinal matches');
+  await expect(page.locator('#result-count')).toContainText('for “cardinal”');
+  await expect.poll(displayedIds).toEqual(cardinalIds);
+  const beforeDelayedResponse = await displayedIds();
+  const delayedResponse = page.waitForResponse((response) => response.request() === delayedRequest);
   release();
+  const lateResponse = await delayedResponse;
+  assert.equal(lateResponse.status(), 200);
+  assert.equal(await lateResponse.finished(), null);
   await page.unroute(slow);
+  await page.waitForLoadState('networkidle');
   await expect(page.locator('#result-count')).toContainText(
     `${cardinalCount.toLocaleString('en-US')} artworks`,
   );
   await expect(page.locator('#result-count')).toContainText('for “cardinal”');
+  await expect.poll(displayedIds).toEqual(cardinalIds);
+  report.delayedSearchRace = {
+    expected: cardinalIds,
+    beforeDelayedResponse,
+    afterDelayedResponse: await displayedIds(),
+    delayedResponseStatus: lateResponse.status(),
+  };
   report.checks.push('outdated request cannot overwrite newer results');
   // Favorites have no catalog cards in HTML. Small ID-location tables resolve
   // their bounded metadata chunks without loading the search/ranking index.
