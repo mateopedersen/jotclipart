@@ -1,4 +1,4 @@
-import { copyFileSync, mkdirSync, readdirSync, statSync } from 'node:fs';
+import { constants, copyFileSync, mkdirSync, readdirSync, statSync } from 'node:fs';
 import { join, resolve, relative, isAbsolute, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { readIncrementalPlan, incrementalCollectionOptions } from './delivery/incremental.mjs';
@@ -27,7 +27,10 @@ export function copyPublicInterfaceAssets(publicDir, outDir, options = {}) {
         const path = '/' + relative(source, from).split(sep).join('/');
         const prior = options.inherited?.get(path);
         if (prior && options.cache) options.cache.copy(from, to, prior);
-        else copyFileSync(from, to);
+        // Keep writable build output independent while allowing APFS/reflink
+        // storage to share unchanged blocks. Unsupported filesystems fall back
+        // to an ordinary copy; this never creates a mutable hard link.
+        else copyFileSync(from, to, constants.COPYFILE_FICLONE);
         files++;
         bytes += statSync(from).size;
       } else throw Error('Unsupported public interface asset');
