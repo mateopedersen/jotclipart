@@ -1,7 +1,7 @@
 import { createHash } from 'node:crypto';
 import { readFileSync, realpathSync } from 'node:fs';
 import { verifiedSourceCache } from './verified-source-cache.mjs';
-import { basename, join, posix } from 'node:path';
+import { basename, isAbsolute, join, posix, resolve, sep } from 'node:path';
 import {
   sourceTypeOf,
   representationKinds,
@@ -204,21 +204,56 @@ function validatePublicationWithVerifier(manifest, catalog, verify) {
   };
 }
 
+// This verifier is deliberately built from a project root, rather than
+// accepting a caller-provided function or a claim that a source was verified.
+// Its cache proves local bytes only; it is not a CDN or editorial receipt.
+function localSourceVerifier(root) {
+  if (typeof root !== 'string' || !isAbsolute(root))
+    throw new Error('An absolute project source root is required');
+  const projectRoot = realpathSync(root),
+    publicPath = join(projectRoot, 'public'),
+    publicRoot = realpathSync(publicPath);
+  if (publicRoot !== publicPath) throw new Error('Source public/ root must not be a symlink');
+  const cache = verifiedSourceCache(projectRoot);
+  return {
+    verify(asset) {
+      const file = realpathSync(join(publicRoot, validateLocalAssetPath(asset.path)));
+      if (!file.startsWith(`${publicRoot}${sep}`)) throw new Error('Source symlink escapes public/');
+      cache.verify(file, asset);
+    },
+    save: () => cache.save(),
+    stats: () => ({ ...cache.stats }),
+  };
+}
+
+/** Verify every catalog source locally before network requests. */
+export function verifyCatalogSourcesAtRoot(root, catalog) {
+  const assets = catalogFiles(catalog), verifier = localSourceVerifier(root);
+  for (const asset of assets) verifier.verify(asset);
+  verifier.save();
+  return { files: assets.length, ...verifier.stats() };
+}
+
+/** Validate full manifest metadata and every source using the fixed local verifier. */
+export function validatePublicationAtRoot(root, manifest, catalog) {
+  const verifier = localSourceVerifier(root);
+  const result = validatePublicationWithVerifier(
+    manifest,
+    catalog,
+    (asset) => verifier.verify(asset),
+  );
+  verifier.save();
+  return { result, sourceVerification: verifier.stats() };
+}
+
 export function readPublication(root) {
   const readJson = (path) => JSON.parse(readFileSync(join(root, path), 'utf8'));
-  const publicRoot = realpathSync(join(root, 'public'));
-  const cache = verifiedSourceCache(root);
-  const result = validatePublicationWithVerifier(
+  const { result, sourceVerification } = validatePublicationAtRoot(
+    resolve(root),
     readJson('data/publication.json'),
     readJson('data/art.json'),
-    (asset, expected) => {
-      const file = realpathSync(join(publicRoot, validateLocalAssetPath(asset.path)));
-      if (!file.startsWith(`${publicRoot}/`)) throw new Error('Source symlink escapes public/');
-      cache.verify(file, expected);
-    },
   );
-  cache.save();
   if (process.env.UC_SOURCE_CACHE_REPORT === '1')
-    console.log('Source verification:', JSON.stringify(cache.stats));
+    console.log('Source verification:', JSON.stringify(sourceVerification));
   return result;
 }

@@ -19,14 +19,19 @@ function fixture() {
   };
   const paths = [
     'scripts/deploy.mjs', 'scripts/verified-source-cache.mjs', 'scripts/publication-policy.mjs',
+    'scripts/asset-representations.mjs',
     'scripts/restore-assets.mjs', 'scripts/production-public-assets.mjs', 'scripts/seo/indexnow-release.mjs',
     'scripts/seo/image-seo.mjs', 'scripts/seo/build-image-seo.mjs', 'scripts/performance/serve.mjs',
     'src/lib/delivery-build-scope.ts', 'src/pages/art/[id].astro', 'src/pages/edit/[id].astro',
     'astro.config.mjs', 'package.json', 'pnpm-lock.yaml', 'scripts/delivery/installer.mjs',
     'scripts/delivery/release-write-authorization.mjs', 'scripts/delivery/staging-worker.mjs',
+    'scripts/r2/prepare-publication.mjs', 'scripts/r2/reviewed-binding-input.mjs',
+    'scripts/r2/binding-ingest.mjs', 'server/r2/private-ingest.mjs',
     'server/delivery/public-files.mjs', 'tests/delivery-incremental.mjs',
     'tests/delivery-release-staging.mjs', 'tests/delivery-release-write-authorization.mjs',
     'tests/r2-binding-media.mjs', 'tests/r2-binding-waves.mjs', 'tests/r2-ingestion.mjs',
+    'tests/publication.mjs', 'tests/publication-preparation.mjs',
+    'tests/raster-publication.mjs', 'tests/compiled-publication.mjs',
     'tests/category-ingestion.mjs', 'tests/studio-style-delivery.mjs', 'tests/verified-source-cache.mjs',
     'tests/e2e/delivery-public-local.mjs', 'tests/e2e/delivery-staging-local.mjs',
   ];
@@ -101,6 +106,40 @@ test('legacy lease field, fake source hash, wrong policy or skipped checks never
     ];
     for(const change of variants){const x=structuredClone(f.evidence);change(x);f.install(x);assert.equal(incrementalInstalled(f.root),false);}
     f.install();f.put('tests/r2-binding-media.mjs','changed test source');assert.equal(incrementalInstalled(f.root),false);
+  }finally{f.close();}
+});
+
+test('every R2 preparation module and publication test source invalidates stale certification', () => {
+  const f=fixture();try {
+    f.install();assert.equal(incrementalInstalled(f.root),true);
+    const before=publicationSoftwareHash(f.root);
+    f.put('scripts/r2/prepare-publication.mjs','changed preparation only');
+    assert.notEqual(publicationSoftwareHash(f.root),before);
+    assert.equal(incrementalInstalled(f.root),false);
+    f.put('scripts/r2/prepare-publication.mjs','fixture scripts/r2/prepare-publication.mjs');
+    assert.equal(incrementalInstalled(f.root),true);
+    f.put('scripts/r2/new-reader.mjs','new critical transport');
+    assert.notEqual(publicationSoftwareHash(f.root),before);
+    assert.equal(incrementalInstalled(f.root),false);
+    rmSync(join(f.root,'scripts/r2/new-reader.mjs'));
+    assert.equal(incrementalInstalled(f.root),true);
+    symlinkSync('binding-ingest.mjs',join(f.root,'scripts/r2/new-reader.mjs'));
+    assert.throws(()=>publicationSoftwareHash(f.root),/Unsafe software source/);
+    assert.equal(incrementalInstalled(f.root),false);
+    unlinkSync(join(f.root,'scripts/r2/new-reader.mjs'));
+    assert.equal(incrementalInstalled(f.root),true);
+    f.put('server/r2/private-ingest.mjs','changed server transport');
+    assert.notEqual(publicationSoftwareHash(f.root),before);
+    assert.equal(incrementalInstalled(f.root),false);
+    f.put('server/r2/private-ingest.mjs','fixture server/r2/private-ingest.mjs');
+    assert.equal(incrementalInstalled(f.root),true);
+    f.put('scripts/asset-representations.mjs','changed asset validation');
+    assert.notEqual(publicationSoftwareHash(f.root),before);
+    assert.equal(incrementalInstalled(f.root),false);
+    f.put('scripts/asset-representations.mjs','fixture scripts/asset-representations.mjs');
+    assert.equal(incrementalInstalled(f.root),true);
+    f.put('tests/publication-preparation.mjs','changed publication preparation tests');
+    assert.equal(incrementalInstalled(f.root),false);
   }finally{f.close();}
 });
 

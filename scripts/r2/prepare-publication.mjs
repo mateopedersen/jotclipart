@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { createHash } from 'node:crypto';
-import { readFileSync, writeFileSync, mkdirSync, renameSync, realpathSync } from 'node:fs';
-import { resolve, dirname, join } from 'node:path';
+import { readFileSync, writeFileSync, mkdirSync, renameSync } from 'node:fs';
+import { resolve, dirname, isAbsolute } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { sourceTypeOf } from '../asset-representations.mjs';
 import { validateBatch, HARD_CAP } from './plan.mjs';
@@ -21,12 +21,29 @@ import {
   validateAssetUrl,
   validateManifest,
   validatePublication,
-  validateLocalAssetPath,
+  validatePublicationAtRoot,
+  verifyCatalogSourcesAtRoot,
 } from '../publication-policy.mjs';
 const sha = (body) => createHash('sha256').update(body).digest('hex');
 const kindOf = (kind) => (kind === 'thumbnail' ? 'thumb' : kind);
+const localSourceStats = new WeakMap();
+/** Ephemeral diagnostics only; never serialized into the publication manifest. */
+export function publicationSourceCacheStats(manifest) {
+  const stats = localSourceStats.get(manifest);
+  return stats ? { preflight: { ...stats.preflight }, final: { ...stats.final } } : null;
+}
+const validateReadConcurrency = (value) => {
+  if (!Number.isSafeInteger(value) || value < 1 || value > 32)
+    throw new Error('CDN read concurrency must be an integer from 1 to 32');
+};
+const validateSourceOptions = (readAsset, sourceRoot) => {
+  const diskSources = sourceRoot !== undefined;
+  if (diskSources ? typeof sourceRoot !== 'string' || !isAbsolute(sourceRoot) || readAsset !== undefined
+    : typeof readAsset !== 'function')
+    throw new Error('Specify exactly one absolute local source root or readAsset fixture');
+};
 
-function validateJournal(journal, batch, batchSha256) {
+function validateJournal(journal, batch, batchSha256, sourceRoot) {
   if (
     !/^[a-f0-9]{64}$/.test(batchSha256 ?? '') ||
     ![2, 3].includes(journal?.schemaVersion) ||
@@ -116,7 +133,8 @@ function validateJournal(journal, batch, batchSha256) {
         !record.path.startsWith('/') ||
         record.path.split('/').includes('..') ||
         typeof object.path !== 'string' ||
-        resolve(object.path) !== resolve('public' + record.path) ||
+        resolve(sourceRoot ?? process.cwd(), object.path) !==
+          resolve(sourceRoot ?? process.cwd(), 'public' + record.path) ||
         record.wave !== journal.waveNumber ||
         record.assetId !== object.assetId ||
         record.kind !== object.kind ||
@@ -220,7 +238,13 @@ async function verifiedCdnFile(file, fetcher, now, retryWait) {
   }
 }
 
-/** Read-only publication preparation. Existing verified URLs are retained; only new bytes are fetched. */
+/**
+ * Read-only publication preparation. Existing verified URLs are retained; only
+ * new CDN bytes are fetched. Real filesystem callers can pass
+ * `sourceRoot: process.cwd()` and omit `readAsset` to reuse authenticated local
+ * source hashes; fixture callers may continue supplying `readAsset` instead.
+ * Neither mode skips manifest, journal, CDN or source-change validation.
+ */
 export async function preparePublication({
   prior,
   catalog,
@@ -228,29 +252,43 @@ export async function preparePublication({
   journal,
   batchSha256,
   readAsset,
+  sourceRoot,
   fetcher = fetch,
   now = Date.now,
   retryWait = waitForRetry,
+  readConcurrency = 16,
 }) {
+  validateReadConcurrency(readConcurrency);
+  validateSourceOptions(readAsset, sourceRoot);
   validateBatch(batch);
   if (new Set(batch.map((object) => object.assetId)).size > 50)
     throw new Error('At most 50 artworks per reviewed production wave');
-  validateJournal(journal, batch, batchSha256);
+  validateJournal(journal, batch, batchSha256, sourceRoot);
   if (journal.schemaVersion === 3 && journal.waveBytes !== journal.authorizedBytes)
     throw new Error('A single-wave publication must cover its complete release cohort');
-  return prepareVerifiedFiles({ prior, catalog, batch, readAsset, fetcher, now, retryWait });
+  return prepareVerifiedFiles({ prior, catalog, batch, readAsset, sourceRoot,
+    fetcher, now, retryWait, readConcurrency });
 }
 
-/** Validate each <=50-artwork receipt separately; hash retained local sources once. */
+/**
+ * Validate each <=50-artwork receipt separately. For real multi-wave imports,
+ * use `{ sourceRoot: process.cwd(), ... }` (with no `readAsset` callback).
+ * `publicationSourceCacheStats(manifest)` exposes local diagnostic counters;
+ * they are never accepted as verification evidence or serialized in the manifest.
+ */
 export async function preparePublicationWaves({
   prior,
   catalog,
   waves,
   readAsset,
+  sourceRoot,
   fetcher = fetch,
   now = Date.now,
   retryWait = waitForRetry,
+  readConcurrency = 16,
 }) {
+  validateReadConcurrency(readConcurrency);
+  validateSourceOptions(readAsset, sourceRoot);
   if (!Array.isArray(waves) || !waves.length)
     throw Error('At least one independently verified wave is required');
   const ids = new Set(),
@@ -261,7 +299,7 @@ export async function preparePublicationWaves({
     validateBatch(wave.batch);
     const group = [...new Set(wave.batch.map((o) => o.assetId))];
     if (group.length > 50) throw Error('At most 50 artworks per reviewed production wave');
-    validateJournal(wave.journal, wave.batch, wave.batchSha256);
+    validateJournal(wave.journal, wave.batch, wave.batchSha256, sourceRoot);
     if (journalVersion !== null && journalVersion !== wave.journal.schemaVersion)
       throw Error('Historical and release-scoped waves cannot be mixed');
     journalVersion = wave.journal.schemaVersion;
@@ -296,10 +334,13 @@ export async function preparePublicationWaves({
   for (const cohort of cohorts.values())
     if (cohort.bytes !== cohort.authorizedBytes)
       throw Error('Verified waves do not cover a complete release cohort');
-  return prepareVerifiedFiles({ prior, catalog, batch, readAsset, fetcher, now, retryWait });
+  return prepareVerifiedFiles({ prior, catalog, batch, readAsset, sourceRoot,
+    fetcher, now, retryWait, readConcurrency });
 }
 
-async function prepareVerifiedFiles({ prior, catalog, batch, readAsset, fetcher, now, retryWait }) {
+async function prepareVerifiedFiles({ prior, catalog, batch, readAsset, sourceRoot,
+  fetcher, now, retryWait, readConcurrency }) {
+  const diskSources = sourceRoot !== undefined;
   const previous = prior ? validateManifest(prior) : new Map();
   const expected = catalogFiles(catalog),
     expectedById = new Map(expected.map((file) => [assetIdentity(file.assetId, file.kind), file]));
@@ -319,9 +360,6 @@ async function prepareVerifiedFiles({ prior, catalog, batch, readAsset, fetcher,
   }
   // Preflight the full next catalog and all missing representations before any CDN request.
   const candidates = expected.map((file) => {
-    const body = readAsset(file.path);
-    if (body.length !== file.bytes || sha(body) !== file.sha256)
-      throw new Error(`Local source differs from catalog: ${file.path}`);
     const id = assetIdentity(file.assetId, file.kind),
       old = previous.get(id);
     if (
@@ -340,10 +378,22 @@ async function prepareVerifiedFiles({ prior, catalog, batch, readAsset, fetcher,
       );
     return { fresh: { ...file, url: `${ASSET_ORIGIN}/${object.key}` } };
   });
+  let sourcePreflight;
+  if (diskSources) {
+    // Persist only independent local-byte proofs. A failed CDN verification
+    // still cannot produce a manifest or a CDN receipt from this cache.
+    sourcePreflight = verifyCatalogSourcesAtRoot(sourceRoot, catalog);
+  } else {
+    for (const file of expected) {
+      const body = readAsset(file.path);
+      if (body.length !== file.bytes || sha(body) !== file.sha256)
+        throw new Error(`Local source differs from catalog: ${file.path}`);
+    }
+  }
   const files = new Array(candidates.length);
   let cursor = 0;
   const results = await Promise.allSettled(
-    Array.from({ length: Math.min(8, candidates.length) }, async () => {
+    Array.from({ length: Math.min(readConcurrency, candidates.length) }, async () => {
       while (cursor < candidates.length) {
         const index = cursor++,
           candidate = candidates[index];
@@ -361,7 +411,10 @@ async function prepareVerifiedFiles({ prior, catalog, batch, readAsset, fetcher,
     files,
     bytes: files.reduce((sum, file) => sum + file.bytes, 0),
   };
-  validatePublication(manifest, catalog, readAsset);
+  if (diskSources) {
+    const { sourceVerification } = validatePublicationAtRoot(sourceRoot, manifest, catalog);
+    localSourceStats.set(manifest, { preflight: sourcePreflight, final: sourceVerification });
+  } else validatePublication(manifest, catalog, readAsset);
   return manifest;
 }
 
@@ -399,18 +452,13 @@ async function main() {
     throw new Error('Write a separate reviewable next manifest; do not overwrite an input');
   const rawBatch = readFileSync(options.batch),
     readJson = (path) => JSON.parse(readFileSync(path, 'utf8'));
-  const publicRoot = realpathSync(join(root, 'public'));
   const manifest = await preparePublication({
     prior: options.prior ? readJson(options.prior) : null,
     catalog: readJson(options.catalog),
     batch: JSON.parse(rawBatch),
     journal: readJson(options.journal),
     batchSha256: sha(rawBatch),
-    readAsset: (path) => {
-      const file = realpathSync(join(publicRoot, validateLocalAssetPath(path)));
-      if (!file.startsWith(`${publicRoot}/`)) throw new Error('Source symlink escapes public/');
-      return readFileSync(file);
-    },
+    sourceRoot: root,
   });
   mkdirSync(dirname(options.output), { recursive: true });
   const temp = `${options.output}.${process.pid}.tmp`;

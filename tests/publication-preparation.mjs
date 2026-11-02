@@ -1,12 +1,17 @@
 import test from 'node:test';
 import { HARD_CAP } from '../scripts/r2/plan.mjs';
 import assert from 'node:assert/strict';
-import { preparePublication, preparePublicationWaves } from '../scripts/r2/prepare-publication.mjs';
+import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, rmSync, statSync, unlinkSync,
+  utimesSync, symlinkSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { dirname, join } from 'node:path';
+import { preparePublication, preparePublicationWaves, publicationSourceCacheStats } from '../scripts/r2/prepare-publication.mjs';
 import {
   ASSET_ORIGIN,
   MIME_TYPES,
   SITE_ORIGIN,
   validatePublication,
+  verifyCatalogSourcesAtRoot,
 } from '../scripts/publication-policy.mjs';
 import { artwork, manifestFor, waveFor, date } from './fixtures/publication.mjs';
 import { releaseFixture } from './fixtures/publication-release.mjs';
@@ -40,12 +45,24 @@ function environment(items, bodies, wave, overrides = {}) {
     },
   };
 }
+
+function diskFixture(bodies) {
+  const root = mkdtempSync(join(tmpdir(), 'uc-publication-source-'));
+  mkdirSync(join(root, 'public'), { recursive: true });
+  for (const [path, body] of bodies) {
+    const target = join(root, 'public', path);
+    mkdirSync(dirname(target), { recursive: true });
+    writeFileSync(target, body);
+  }
+  return { root, source: (path) => join(root, 'public', path), close: () => rmSync(root, { recursive: true, force: true }) };
+}
 test('two sequential waves retain old URLs and verify only new CDN files', async () => {
   const bodies = new Map(),
     a = artwork('first-artwork', bodies),
     b = artwork('second-artwork', bodies);
   const one = environment([a], bodies, waveFor([a]));
   const first = await preparePublication({ prior: null, ...one.options });
+  assert.equal(publicationSourceCacheStats(first), null);
   assert.equal(one.calls.length, 4);
   const two = environment([a, b], bodies, waveFor([b]));
   const second = await preparePublication({ prior: first, ...two.options });
@@ -411,4 +428,228 @@ test('single-wave publication cannot silently accept part of a multi-wave releas
   const fullEnv = environment([a], bodies, { ...complete.waves[0], journal });
   const result = await preparePublication({ prior: null, ...fullEnv.options });
   assert.equal(result.files.length, 4);
+});
+
+test('root-bound multi-wave preparation reuses old source proofs and hashes only new bytes', async () => {
+  const bodies = new Map(), old = artwork('cached-old', bodies), fresh = artwork('cached-fresh', bodies);
+  const f = diskFixture(bodies), wave = waveFor([fresh]), prior = manifestFor([old]);
+  try {
+    const warm = verifyCatalogSourcesAtRoot(f.root, [old]);
+    assert.deepEqual({ files: warm.files, hashed: warm.hashed, reused: warm.reused }, { files: 4, hashed: 4, reused: 0 });
+    const env = environment([old, fresh], bodies, wave);
+    const result = await preparePublicationWaves({ prior, ...env.options, readAsset: undefined,
+      sourceRoot: f.root, waves: [wave] });
+    const sourceCacheStats = publicationSourceCacheStats(result);
+    assert.equal(env.calls.length, 4, 'only new CDN objects are read');
+    assert.equal(result.files.length, 8);
+    assert.deepEqual(result.files.filter((x) => x.assetId === old.id), prior.files);
+    assert.equal(sourceCacheStats.preflight.hashed, 4);
+    assert.equal(sourceCacheStats.preflight.reused, 4);
+    assert.equal(sourceCacheStats.preflight.hashedBytes,
+      Object.values(fresh.files).reduce((sum, file) => sum + file.bytes, 0));
+    assert.equal(sourceCacheStats.final.hashed, 0);
+    assert.equal(sourceCacheStats.final.reused, 8);
+    assert.equal(sourceCacheStats.final.hashedBytes, 0);
+    assert(!JSON.stringify(result).includes('sourceCacheStats'), 'diagnostics are not publication metadata');
+    sourceCacheStats.preflight.hashed = 999;
+    assert.equal(publicationSourceCacheStats(result).preflight.hashed, 4, 'diagnostics cannot mutate internal state');
+  } finally { f.close(); }
+});
+
+test('tampered or corrupt source-cache signatures trigger real byte hashing, never approval', () => {
+  const bodies = new Map(), old = artwork('cache-corruption', bodies), f = diskFixture(bodies);
+  try {
+    verifyCatalogSourcesAtRoot(f.root, [old]);
+    const indexPath = join(f.root, '.asset-integrity/sources.json');
+    const index = JSON.parse(readFileSync(indexPath, 'utf8'));
+    const path = Object.keys(index.entries)[0];
+    index.entries[path].signature = '0'.repeat(64);
+    writeFileSync(indexPath, JSON.stringify(index));
+    const tampered = verifyCatalogSourcesAtRoot(f.root, [old]);
+    assert.equal(tampered.hashed, 1);
+    assert.equal(tampered.reused, 3);
+    writeFileSync(indexPath, '{invalid json');
+    const corrupt = verifyCatalogSourcesAtRoot(f.root, [old]);
+    assert.equal(corrupt.hashed, 4);
+    assert.equal(corrupt.reused, 0);
+  } finally { f.close(); }
+});
+
+test('same-length edit with restored mtime invalidates local proof before CDN reads', async () => {
+  const bodies = new Map(), old = artwork('mtime-old', bodies), fresh = artwork('mtime-new', bodies);
+  const f = diskFixture(bodies), wave = waveFor([fresh]);
+  try {
+    verifyCatalogSourcesAtRoot(f.root, [old]);
+    const file = f.source(old.webp), before = statSync(file), identity = statSync(file, { bigint: true });
+    const changed = Buffer.from(readFileSync(file)); changed[0] ^= 1; writeFileSync(file, changed);
+    utimesSync(file, before.atime, before.mtime);
+    assert.notEqual(statSync(file, { bigint: true }).ctimeNs, identity.ctimeNs);
+    assert.equal(statSync(file).size, before.size);
+    assert(Math.abs(statSync(file).mtimeMs - before.mtimeMs) < 1);
+    const env = environment([old, fresh], bodies, wave);
+    await assert.rejects(preparePublicationWaves({ prior: manifestFor([old]), ...env.options,
+      readAsset: undefined, sourceRoot: f.root, waves: [wave] }), /Source changed/);
+    assert.equal(env.calls.length, 0);
+  } finally { f.close(); }
+});
+
+test('missing, escaped and ambiguous source roots fail before any CDN read', async () => {
+  for (const mode of ['missing', 'escaped', 'public-root-symlink', 'relative', 'ambiguous']) {
+    const bodies = new Map(), old = artwork('unsafe-old', bodies), fresh = artwork('unsafe-new', bodies);
+    const f = diskFixture(bodies), wave = waveFor([fresh]), env = environment([old, fresh], bodies, wave);
+    const outside = mkdtempSync(join(tmpdir(), 'uc-outside-'));
+    try {
+      let sourceRoot = f.root, readAsset;
+      if (mode === 'missing') unlinkSync(f.source(old.webp));
+      if (mode === 'escaped') {
+        const external = join(outside, 'outside.webp'); writeFileSync(external, bodies.get(old.webp));
+        unlinkSync(f.source(old.webp)); symlinkSync(external, f.source(old.webp));
+      }
+      if (mode === 'public-root-symlink') {
+        rmSync(join(f.root, 'public'), { recursive: true });
+        symlinkSync(outside, join(f.root, 'public'));
+      }
+      if (mode === 'relative') sourceRoot = '.';
+      if (mode === 'ambiguous') readAsset = () => Buffer.from('fake');
+      await assert.rejects(preparePublicationWaves({ prior: manifestFor([old]), ...env.options,
+        readAsset, sourceRoot, waves: [wave] }));
+      assert.equal(env.calls.length, 0, mode);
+    } finally { f.close(); rmSync(outside, { recursive: true, force: true }); }
+  }
+});
+
+test('a local source changed during CDN checks is rejected by the final root-bound validation', async () => {
+  const bodies = new Map(), old = artwork('race-old', bodies), fresh = artwork('race-new', bodies);
+  const f = diskFixture(bodies), wave = waveFor([fresh]), env = environment([old, fresh], bodies, wave);
+  try {
+    verifyCatalogSourcesAtRoot(f.root, [old]);
+    const fetcher = env.options.fetcher;
+    let changed = false;
+    await assert.rejects(preparePublicationWaves({ prior: manifestFor([old]), ...env.options,
+      readAsset: undefined, sourceRoot: f.root, waves: [wave], fetcher: async (...args) => {
+        if (!changed) {
+          changed = true;
+          const path = f.source(old.webp), bytes = Buffer.from(readFileSync(path));
+          bytes[0] ^= 1; writeFileSync(path, bytes);
+        }
+        return fetcher(...args);
+      } }), /Source changed/);
+    assert.equal(env.calls.length, 4);
+  } finally { f.close(); }
+});
+
+test('root-bound cache never bypasses CDN bytes or format checks', async () => {
+  const bodies = new Map(), old = artwork('cdn-old', bodies), fresh = artwork('cdn-new', bodies);
+  const f = diskFixture(bodies), wave = waveFor([fresh]);
+  try {
+    verifyCatalogSourcesAtRoot(f.root, [old, fresh]);
+    const env = environment([old, fresh], bodies, wave, { headers: { 'content-type': 'text/plain' } });
+    await assert.rejects(preparePublicationWaves({ prior: manifestFor([old]), ...env.options,
+      readAsset: undefined, sourceRoot: f.root, waves: [wave] }), /CDN MIME/);
+    assert.equal(env.calls.length, 4);
+    const checksum = environment([old, fresh], bodies, wave), fetcher = checksum.options.fetcher;
+    await assert.rejects(preparePublicationWaves({ prior: manifestFor([old]), ...checksum.options,
+      readAsset: undefined, sourceRoot: f.root, waves: [wave], fetcher: async (...args) => {
+        const response = await fetcher(...args), bytes = Buffer.from(await response.arrayBuffer());
+        bytes[0] ^= 1;
+        return new Response(bytes, { status: 200, headers: response.headers });
+      } }), /CDN checksum/);
+    assert.equal(checksum.calls.length, 4);
+  } finally { f.close(); }
+});
+
+test('root-bound preflight rejects altered new sources and invalid retained URLs before CDN', async () => {
+  for (const mode of ['fresh-source', 'old-url']) {
+    const bodies = new Map(), old = artwork('preflight-old', bodies), fresh = artwork('preflight-new', bodies);
+    const f = diskFixture(bodies), wave = waveFor([fresh]), prior = manifestFor([old]);
+    const env = environment([old, fresh], bodies, wave);
+    try {
+      verifyCatalogSourcesAtRoot(f.root, [old]);
+      if (mode === 'fresh-source') {
+        const path = f.source(fresh.webp), bytes = Buffer.from(readFileSync(path));
+        bytes[0] ^= 1; writeFileSync(path, bytes);
+      } else prior.files[0].url = `${ASSET_ORIGIN}/mutable.svg`;
+      await assert.rejects(preparePublicationWaves({ prior, ...env.options,
+        readAsset: undefined, sourceRoot: f.root, waves: [wave] }));
+      assert.equal(env.calls.length, 0, mode);
+    } finally { f.close(); }
+  }
+});
+
+test('CDN concurrency is bounded with a default of 16 and configurable 1..32', async () => {
+  for (const configured of [undefined, 1, 3, 32]) {
+    const bodies = new Map(), items = Array.from({ length: 6 }, (_, n) => artwork(`bounded-${n}`, bodies));
+    const wave = waveFor(items), env = environment(items, bodies, wave), fetcher = env.options.fetcher;
+    let active = 0, maximum = 0, started = 0, release;
+    const gate = new Promise((resolve) => { release = resolve; });
+    const task = preparePublication({ prior: null, ...env.options, readConcurrency: configured,
+      fetcher: async (...args) => {
+        active++; started++; maximum = Math.max(maximum, active);
+        await gate;
+        try { return await fetcher(...args); } finally { active--; }
+      } });
+    const expected = Math.min(configured ?? 16, 24);
+    for (let i = 0; i < 100 && started < expected; i++) await new Promise((resolve) => setTimeout(resolve, 5));
+    assert.equal(started, expected);
+    assert.equal(maximum, expected);
+    release();
+    const result = await task;
+    assert.equal(result.files.length, 24);
+    assert.equal(env.calls.length, 24);
+    assert(maximum <= expected);
+  }
+  for (const readConcurrency of [0, -1, 33, 1.5, NaN, '16']) {
+    const bodies = new Map(), a = artwork('invalid-concurrency', bodies), wave = waveFor([a]);
+    const env = environment([a], bodies, wave);
+    await assert.rejects(preparePublication({ prior: null, ...env.options, readConcurrency }), /concurrency/);
+    assert.equal(env.calls.length, 0);
+    await assert.rejects(preparePublicationWaves({ prior: null, ...env.options, waves: [wave], readConcurrency }), /concurrency/);
+    assert.equal(env.calls.length, 0);
+  }
+});
+
+test('failed concurrent CDN verification waits for other in-flight workers', async () => {
+  const bodies = new Map(), item = artwork('settled-check', bodies), wave = waveFor([item]);
+  const env = environment([item], bodies, wave), fetcher = env.options.fetcher;
+  let started = 0, release, settled = false;
+  const gate = new Promise((resolve) => { release = resolve; });
+  const task = preparePublication({ prior: null, ...env.options, readConcurrency: 2,
+    fetcher: async (...args) => {
+      started++;
+      if (started === 1) throw Error('terminal verification failure');
+      await gate;
+      return fetcher(...args);
+    } });
+  task.then(() => { settled = true; }, () => { settled = true; });
+  for (let i = 0; i < 100 && started < 2; i++) await new Promise((resolve) => setTimeout(resolve, 5));
+  assert.equal(started, 2);
+  assert.equal(settled, false);
+  release();
+  await assert.rejects(task, /CDN verification could not fetch/);
+  assert.equal(settled, true);
+});
+
+test('root-bound multi-wave schema-3 verifies exact cohort paths, source bytes and CDN receipts', async () => {
+  const bodies = new Map(), old = artwork('root-scope-old', bodies), a = artwork('root-scope-a', bodies),
+    b = artwork('root-scope-b', bodies), f = diskFixture(bodies);
+  try {
+    verifyCatalogSourcesAtRoot(f.root, [old]);
+    const release = releaseFixture([[a], [b]]), journals = completeReleaseMediaWaveJournals(release);
+    const waves = release.waves.map((wave, i) => ({ ...wave, journal: journals[i] }));
+    const env = environment([old, a, b], bodies, { batch: waves.flatMap((wave) => wave.batch) });
+    const result = await preparePublicationWaves({ prior: manifestFor([old]), ...env.options,
+      readAsset: undefined, sourceRoot: f.root, waves });
+    const stats = publicationSourceCacheStats(result);
+    assert.equal(result.files.length, 12);
+    assert.equal(env.calls.length, 8);
+    assert.equal(stats.preflight.hashed, 8);
+    assert.equal(stats.preflight.reused, 4);
+    assert.equal(stats.final.reused, 12);
+    const altered = structuredClone(waves);
+    altered[0].batch[0].path = join(tmpdir(), 'unrelated', altered[0].batch[0].path);
+    const rejected = environment([old, a, b], bodies, { batch: altered.flatMap((wave) => wave.batch) });
+    await assert.rejects(preparePublicationWaves({ prior: manifestFor([old]), ...rejected.options,
+      readAsset: undefined, sourceRoot: f.root, waves: altered }), /scope|path/);
+    assert.equal(rejected.calls.length, 0);
+  } finally { f.close(); }
 });

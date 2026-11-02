@@ -4,10 +4,29 @@ import { createHash } from 'node:crypto';
 import { OWNER_MANAGED_STORAGE_POLICY } from './release-write-authorization.mjs';
 
 export function publicationSoftwareHash(root) {
+  const directories = ['scripts/delivery', 'server/delivery', 'scripts/r2'];
+  try {
+    lstatSync(join(root, 'server/r2'));
+    directories.push('server/r2');
+  } catch (error) {
+    if (error.code !== 'ENOENT') throw error;
+  }
+  const modules = directories.flatMap((dir) => {
+    const stat = lstatSync(join(root, dir));
+    if (!stat.isDirectory() || stat.isSymbolicLink()) throw Error(`Unsafe software directory: ${dir}`);
+    return readdirSync(join(root, dir))
+      .filter((name) => /\.(mjs|cjs)$/.test(name))
+      .map((name) => {
+        const source = `${dir}/${name}`, file = lstatSync(join(root, source));
+        if (!file.isFile() || file.isSymbolicLink()) throw Error(`Unsafe software source: ${source}`);
+        return source;
+      });
+  });
   const paths = [
     'scripts/deploy.mjs',
     'scripts/verified-source-cache.mjs',
     'scripts/publication-policy.mjs',
+    'scripts/asset-representations.mjs',
     'scripts/restore-assets.mjs',
     'scripts/production-public-assets.mjs',
     'scripts/seo/indexnow-release.mjs',
@@ -20,11 +39,7 @@ export function publicationSoftwareHash(root) {
     'astro.config.mjs',
     'package.json',
     'pnpm-lock.yaml',
-    ...['scripts/delivery', 'server/delivery'].flatMap((dir) =>
-      readdirSync(join(root, dir))
-        .filter((name) => /\.(mjs|cjs)$/.test(name))
-        .map((name) => `${dir}/${name}`),
-    ),
+    ...modules,
   ].sort();
   const hash = createHash('sha256');
   for (const path of paths)
@@ -43,8 +58,9 @@ const hex64 = (value) => typeof value === 'string' && /^[a-f0-9]{64}$/.test(valu
 /** Tests affecting the full delivery chain must not silently drop out of recertification. */
 export function incrementalFocusedTestPaths(root) {
   const names = readdirSync(join(root, 'tests'))
-    .filter((name) => /^(?:delivery-|r2-).*\.mjs$/.test(name));
-  for (const name of ['category-ingestion.mjs', 'studio-style-delivery.mjs', 'verified-source-cache.mjs'])
+    .filter((name) => /^(?:delivery-|r2-|publication).*\.mjs$/.test(name));
+  for (const name of ['category-ingestion.mjs', 'studio-style-delivery.mjs', 'verified-source-cache.mjs',
+    'raster-publication.mjs', 'compiled-publication.mjs'])
     if (!names.includes(name)) names.push(name);
   const paths = names.map((name) => `tests/${name}`).sort();
   for (const required of [
@@ -54,6 +70,10 @@ export function incrementalFocusedTestPaths(root) {
     'tests/r2-binding-media.mjs',
     'tests/r2-binding-waves.mjs',
     'tests/r2-ingestion.mjs',
+    'tests/publication.mjs',
+    'tests/publication-preparation.mjs',
+    'tests/raster-publication.mjs',
+    'tests/compiled-publication.mjs',
   ]) if (!paths.includes(required)) throw Error(`Missing incremental test: ${required}`);
   return paths;
 }
