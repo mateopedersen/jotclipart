@@ -1,0 +1,372 @@
+{
+  "schema": 2,
+  "status": "LOCAL_INCREMENTAL_PUBLISHER_REVALIDATED",
+  "storagePolicy": "owner-managed-unlimited-v1",
+  "softwareHash": "dab4d206b1ccab18e9a23eb1aeadb31eff872c19166b3cd920b3ff55f8bc5555",
+  "runtimeIdentity": {
+    "platform": "darwin",
+    "arch": "arm64",
+    "nodeApiVersion": 10,
+    "copyBackend": "darwin-fclonefileat",
+    "nativeBinarySha256": "627ccf8c494b1dcae9914321dfd65c5fabb380dd985ce3ac36f8a775407a2b04"
+  },
+  "baselineRevision": "118c9ae0466d3d1b14ca5d3295b1f6db6a6d953d",
+  "baselineRoot": "0e9d62ee697215075e61a402dca6a7f6c0b81947b24c8303e37bdd3608ad25ba",
+  "shadowRevision": "9d599a39aeb0d75be665a3da8b167b574edcc030",
+  "notWebsitePublication": true,
+  "testPublicationBlocked": true,
+  "remoteTestWrites": 0,
+  "shadow": {
+    "status": "PRIVATE_REAL_CATALOG_INCREMENTAL_SHADOW_VERIFIED_NOT_LIVE",
+    "revision": "9d599a39aeb0d75be665a3da8b167b574edcc030",
+    "baselineRevision": "118c9ae0466d3d1b14ca5d3295b1f6db6a6d953d",
+    "baselineRoot": "0e9d62ee697215075e61a402dca6a7f6c0b81947b24c8303e37bdd3608ad25ba",
+    "softwareHash": "dab4d206b1ccab18e9a23eb1aeadb31eff872c19166b3cd920b3ff55f8bc5555",
+    "shadowOnly": true,
+    "productionPublishingBlocked": true,
+    "productionWrites": 0,
+    "artworks": 33209,
+    "selectedArtworks": 50,
+    "renderedHtml": 100,
+    "inheritedHtml": 66318,
+    "inheritedOther": 153476,
+    "newAssets": 8,
+    "totalDeliveryFiles": 219902,
+    "localManifestRoot": "8985128bc843f8ce0a8f3dcf2d90a0831dc62c8fb175398da8004e8979fe4a63",
+    "auditPages": 67096,
+    "imageSeoErrors": 0,
+    "linkErrors": 0,
+    "coreSeoErrors": 0,
+    "completedAt": "2026-11-02T10:32:13.648Z"
+  },
+  "focusedUnitChecks": {
+    "tests": 272,
+    "pass": 272,
+    "fail": 0,
+    "skipped": 0,
+    "testSources": [
+      {
+        "path": "tests/category-ingestion.mjs",
+        "sha256": "eac22852a0aadca5624c3363207835bf6c33ebd1a3b7272968ebad1ce9ce3701"
+      },
+      {
+        "path": "tests/compiled-publication.mjs",
+        "sha256": "6649ec2d822fd73d152d2f41029fc752ff46c3716fa7a222ddae229834842e6b"
+      },
+      {
+        "path": "tests/delivery-account-lock.mjs",
+        "sha256": "14e57b8e7dc30d19e7ff84a56ddd92b58dbe49d1628a2d412c9042e93b7f582e"
+      },
+      {
+        "path": "tests/delivery-activate-catalog.mjs",
+        "sha256": "035d7f23af2e0bf6b4d983c77221d324d094f08b9dd1a5ee880bac6ffd609505"
+      },
+      {
+        "path": "tests/delivery-budgets.mjs",
+        "sha256": "9703aa60ff074d9e71523d843ade7edf78fa232b130802406337bc34aa666387"
+      },
+      {
+        "path": "tests/delivery-compression.mjs",
+        "sha256": "ac59860c32370540e9963de8f2887948b0ba1dccf8f9a5f83b8d0dcd9f131b03"
+      },
+      {
+        "path": "tests/delivery-copy-release.mjs",
+        "sha256": "5679442b7b9c95d31afede8549721645c0d7509e99e81f1b9536feece7b244e8"
+      },
+      {
+        "path": "tests/delivery-incremental.mjs",
+        "sha256": "286cf85564a4f843ee939a4e0105ec399d8ac143a3e4b2f6aa34f93b06b55b19"
+      },
+      {
+        "path": "tests/delivery-independent-copy.mjs",
+        "sha256": "71725f7a9100a26db0acc84101206928658c3e78ee2677b073efbf4959f52778"
+      },
+      {
+        "path": "tests/delivery-installer.mjs",
+        "sha256": "4ef1b06cf111af254d7db1ba205aded7a64c5ff4313b493c185294a4a57bfa00"
+      },
+      {
+        "path": "tests/delivery-inventory-bootstrap.mjs",
+        "sha256": "b5b3f6eb8b793a03b2df28866950e768d4c629f15e059cb1d5a45bc739d4f5ec"
+      },
+      {
+        "path": "tests/delivery-inventory.mjs",
+        "sha256": "7d1e348545d98b81dd21331b967c999a623faacef03270e572137831d8bffd46"
+      },
+      {
+        "path": "tests/delivery-local-batch.mjs",
+        "sha256": "167eb28a11f44302e4f1e0d1531e22d6b2d661219591c74978531748c538287c"
+      },
+      {
+        "path": "tests/delivery-manifest.mjs",
+        "sha256": "f0c59d5c1e51006f241b9b8102c8dca9624028d3cd914676eb802fb51d0c3964"
+      },
+      {
+        "path": "tests/delivery-originals.mjs",
+        "sha256": "ba151036182c673434c1f914d4bf7c1db304df88d1ffde9e947e926a72f30115"
+      },
+      {
+        "path": "tests/delivery-prefix-inventory.mjs",
+        "sha256": "b3f95474a4d2c87ef9db73921e7444957e860a0e48a0a67f6998104159afaa4f"
+      },
+      {
+        "path": "tests/delivery-prepared-authorization.mjs",
+        "sha256": "d4f1e776a8e68511eba8645e82123542b7bcddcecad4192e7d309f63f175abb9"
+      },
+      {
+        "path": "tests/delivery-private-session.mjs",
+        "sha256": "0fa45b4b2a4755e18a8f61dd3b601d35a56a2aac12bfaef84fc9294a48b55867"
+      },
+      {
+        "path": "tests/delivery-production-preflight.mjs",
+        "sha256": "9a24f33d9af03f2e26b5ec7d6d72968b7af04d27ba28d5d783dfe8699ff644f5"
+      },
+      {
+        "path": "tests/delivery-related-impact.mjs",
+        "sha256": "a8bf3374fbf9843275ae30789af3b77784e765b3716c3e4eb76bb184c32d872b"
+      },
+      {
+        "path": "tests/delivery-release-staging.mjs",
+        "sha256": "f6b16b57b1dfb66ce8c6fb53b25166539fa56656e077d06861beec28260e6aa7"
+      },
+      {
+        "path": "tests/delivery-release-write-authorization.mjs",
+        "sha256": "1706df68eb9c89786a337c5dd93efb7f75dc4a772108cb894890b2eb550aec6d"
+      },
+      {
+        "path": "tests/delivery-restore-preview-cache.mjs",
+        "sha256": "cfc97de0fc75079de0854d7aa50844851288eeaafd1a2a3a276b28d54eb2ad48"
+      },
+      {
+        "path": "tests/delivery-resume-prepared.mjs",
+        "sha256": "57a6524e1929428adb7a9d0134d1fec00a467f36e598bfc96b06af59799e1bd3"
+      },
+      {
+        "path": "tests/delivery-studio-catalog.mjs",
+        "sha256": "8b5b9e41a224d8bbe0b4974d32146f0903747ed3ed79d4b550143e9b031e6c5f"
+      },
+      {
+        "path": "tests/delivery-verification.mjs",
+        "sha256": "b805e0d40fd2662d4f00318ddb74baad5ac255213d90734fcdfd4dbd7aa634be"
+      },
+      {
+        "path": "tests/delivery-verified-reuse.mjs",
+        "sha256": "ee0b29cedcba7442a4177af3253d8b10359bb508883b87339fa1e6d315e8e8a9"
+      },
+      {
+        "path": "tests/delivery-worker.mjs",
+        "sha256": "b049b6d8302e3040ccecd4dfdf299e3f7d7d1c54be0e9c5f9e5a83100120c03e"
+      },
+      {
+        "path": "tests/publication-order.mjs",
+        "sha256": "7a0b5143a5282754b19eff9a037be64a8329b0348ec5a0d89d5d0eef9b659f4a"
+      },
+      {
+        "path": "tests/publication-owner-approval.mjs",
+        "sha256": "f6b06caaf29246f68195c7605bb8db799308ac563e554279c1cf9e4c7e40b738"
+      },
+      {
+        "path": "tests/publication-preparation.mjs",
+        "sha256": "8ba6d84b91ca6d5cabfb42dd8b17f9936fb83a4260c9bec865d803cfae0395dd"
+      },
+      {
+        "path": "tests/publication.mjs",
+        "sha256": "2e7a0cff2cc32883aba0a418e43818d3ee2868ca6b9dd8d81b88d4cd700dc06e"
+      },
+      {
+        "path": "tests/r2-binding-media.mjs",
+        "sha256": "59d7e621946c82b8db2b2a045b7ef6e00a3dab80e0fb5339db63754f88c4d8ce"
+      },
+      {
+        "path": "tests/r2-binding-waves.mjs",
+        "sha256": "1451d92c5b825f4b58fd556c65c5c2b66ef475977ed1e5839e4c2d72ecae5596"
+      },
+      {
+        "path": "tests/r2-budget.mjs",
+        "sha256": "dc239b1f937f8bfc98d84ef4cb39a132c8f4e5a0815e80685b09c8ddad02aa3e"
+      },
+      {
+        "path": "tests/r2-cloudflare-api.mjs",
+        "sha256": "535f31ba9f3a53893c2b1861c6efda56266493414d68a1510a70ae1ed17408ba"
+      },
+      {
+        "path": "tests/r2-ingestion.mjs",
+        "sha256": "500663821094e2e1a65107d68914b42b30ca9656338a4bb49f9d2192063d956f"
+      },
+      {
+        "path": "tests/r2-jurisdictions.mjs",
+        "sha256": "a4c34976736b975d0cd688728d07d0ba2a34562a2c622d0bd1d3223c294a31ad"
+      },
+      {
+        "path": "tests/r2-native-inventory-session.mjs",
+        "sha256": "a3e5d76974cc8d4d2b4d23fba481e68fdffc038dd1906e8d0c57a2378627f491"
+      },
+      {
+        "path": "tests/r2-reservation-prefetch.mjs",
+        "sha256": "b7401d50af1581e117fd22b22c4c5bce416e72c7e858c1f508b394c5f27dda5a"
+      },
+      {
+        "path": "tests/raster-publication.mjs",
+        "sha256": "627f53870f947d7952e0ec25f6aebeaf9014be61f1b3d8db0c32a8174d13860d"
+      },
+      {
+        "path": "tests/studio-style-delivery.mjs",
+        "sha256": "cbc432045eb445ae329df96810dc78b125c7b2a99f2423dc48861ca1d0894867"
+      },
+      {
+        "path": "tests/verified-source-cache.mjs",
+        "sha256": "9551616400113d2d86c255d14b584f4bc9401b12fd70097d968d034c147c5bc0"
+      }
+    ]
+  },
+  "nativeWorkers": {
+    "public": {
+      "status": "PASS_LOCAL_PUBLIC_WORKER",
+      "relatedRemainsCurrent": true,
+      "cardsAndCopyUnchanged": true,
+      "nativeRepresentationMatchesPreview": true,
+      "noReferrerRequired": true,
+      "sourceBytesUnchanged": true,
+      "headAndConditionalCacheValid": true,
+      "testSourceSha256": "3feec46114064614a46cf906223d3f5a0622a5b8aec4991742141b1f46eafd17"
+    },
+    "staging": {
+      "status": "PASS_LOCAL_WORKERD_R2",
+      "independentlyVerified": 128,
+      "reusedWithoutReadingBody": 128,
+      "missingStagedWithFreshReleaseAuthorization": 1,
+      "nativeSha256Verified": true,
+      "candidateResumeDeletionAndCorruptionRejected": true,
+      "externalRequests": 0,
+      "workerSourceSha256": "7bb2218cbfc4c6941537cdfd09b98a88f10d1e309b4ffd752a4b1b366701ca78",
+      "testSourceSha256": "97910e0ace3302b8e38783c6ddd6f8fc435e764817f4461e47b13e6b14ed0854"
+    }
+  },
+  "nativeCopyProbe": {
+    "status": "PASS_LOCAL_INDEPENDENT_COPY",
+    "copyBackend": "darwin-fclonefileat",
+    "independentInode": true,
+    "sourceUnaffectedByTargetMutation": true,
+    "compressedRoundTrip": true,
+    "testSourceSha256": "71725f7a9100a26db0acc84101206928658c3e78ee2677b073efbf4959f52778",
+    "runtimeIdentity": {
+      "platform": "darwin",
+      "arch": "arm64",
+      "nodeApiVersion": 10,
+      "copyBackend": "darwin-fclonefileat",
+      "nativeBinarySha256": "627ccf8c494b1dcae9914321dfd65c5fabb380dd985ce3ac36f8a775407a2b04"
+    },
+    "softwareHash": "dab4d206b1ccab18e9a23eb1aeadb31eff872c19166b3cd920b3ff55f8bc5555",
+    "sourceSha256": "0bd0c99d8ad98aa17d4614885b7fd4bb931df1cf1940e8a2458f791f15850059",
+    "productionWrites": 0,
+    "notWebsitePublication": true
+  },
+  "browser": {
+    "status": "PASS_PRIVATE_REAL_CATALOG_BROWSER_NOT_LIVE",
+    "shadowOnly": true,
+    "productionWrites": 0,
+    "networkRequestsOutsideLoopback": 0,
+    "localCdnFixture": true,
+    "checks": [
+      {
+        "engine": "chromium",
+        "width": 390,
+        "id": "green-classic-oldsmobile-style-sedan-from-behind-clipart",
+        "kind": "newly-rendered",
+        "actualArtifactRevision": "9d599a39aeb0d75be665a3da8b167b574edcc030",
+        "relatedReady": true,
+        "relatedExpanded": true,
+        "editorNoindex": true,
+        "noHorizontalOverflow": true,
+        "localOriginalImageVerified": true
+      },
+      {
+        "engine": "chromium",
+        "width": 390,
+        "id": "robot-friendly-robot-reaching-out-to-say-hello",
+        "kind": "inherited",
+        "actualArtifactRevision": "118c9ae0466d3d1b14ca5d3295b1f6db6a6d953d",
+        "relatedReady": true,
+        "relatedExpanded": true,
+        "editorNoindex": true,
+        "noHorizontalOverflow": true,
+        "localOriginalImageVerified": true
+      },
+      {
+        "engine": "chromium",
+        "width": 1440,
+        "id": "green-classic-oldsmobile-style-sedan-from-behind-clipart",
+        "kind": "newly-rendered",
+        "actualArtifactRevision": "9d599a39aeb0d75be665a3da8b167b574edcc030",
+        "relatedReady": true,
+        "relatedExpanded": true,
+        "editorNoindex": true,
+        "noHorizontalOverflow": true,
+        "localOriginalImageVerified": true
+      },
+      {
+        "engine": "chromium",
+        "width": 1440,
+        "id": "robot-friendly-robot-reaching-out-to-say-hello",
+        "kind": "inherited",
+        "actualArtifactRevision": "118c9ae0466d3d1b14ca5d3295b1f6db6a6d953d",
+        "relatedReady": true,
+        "relatedExpanded": true,
+        "editorNoindex": true,
+        "noHorizontalOverflow": true,
+        "localOriginalImageVerified": true
+      },
+      {
+        "engine": "webkit",
+        "width": 390,
+        "id": "green-classic-oldsmobile-style-sedan-from-behind-clipart",
+        "kind": "newly-rendered",
+        "actualArtifactRevision": "9d599a39aeb0d75be665a3da8b167b574edcc030",
+        "relatedReady": true,
+        "relatedExpanded": true,
+        "editorNoindex": true,
+        "noHorizontalOverflow": true,
+        "localOriginalImageVerified": true
+      },
+      {
+        "engine": "webkit",
+        "width": 390,
+        "id": "robot-friendly-robot-reaching-out-to-say-hello",
+        "kind": "inherited",
+        "actualArtifactRevision": "118c9ae0466d3d1b14ca5d3295b1f6db6a6d953d",
+        "relatedReady": true,
+        "relatedExpanded": true,
+        "editorNoindex": true,
+        "noHorizontalOverflow": true,
+        "localOriginalImageVerified": true
+      },
+      {
+        "engine": "webkit",
+        "width": 1440,
+        "id": "green-classic-oldsmobile-style-sedan-from-behind-clipart",
+        "kind": "newly-rendered",
+        "actualArtifactRevision": "9d599a39aeb0d75be665a3da8b167b574edcc030",
+        "relatedReady": true,
+        "relatedExpanded": true,
+        "editorNoindex": true,
+        "noHorizontalOverflow": true,
+        "localOriginalImageVerified": true
+      },
+      {
+        "engine": "webkit",
+        "width": 1440,
+        "id": "robot-friendly-robot-reaching-out-to-say-hello",
+        "kind": "inherited",
+        "actualArtifactRevision": "118c9ae0466d3d1b14ca5d3295b1f6db6a6d953d",
+        "relatedReady": true,
+        "relatedExpanded": true,
+        "editorNoindex": true,
+        "noHorizontalOverflow": true,
+        "localOriginalImageVerified": true
+      }
+    ],
+    "startedAt": "2026-11-02T10:32:14.761Z",
+    "showMoreClicks": 8,
+    "completedAt": "2026-11-02T10:32:40.181Z"
+  }
+}

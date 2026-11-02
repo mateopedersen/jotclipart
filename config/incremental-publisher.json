@@ -1,16 +1,17 @@
 {
-  "schema": 1,
+  "schema": 2,
   "enabled": true,
-  "softwareHash": "a4db9562b4868b6f03767fc9ac51107735d39f96aed81668548b4cc14124cd16",
-  "verifiedAt": "2026-10-30T19:52:45.868439+00:00",
-  "checks": {
-    "unitPassed": 100,
-    "unitFailed": 0,
-    "shadowBuildVerified": true,
-    "relatedNativeVerified": true,
-    "browserPassed": 8,
-    "nativeWorkerChecksPassed": 2
+  "storagePolicy": "owner-managed-unlimited-v1",
+  "softwareHash": "dab4d206b1ccab18e9a23eb1aeadb31eff872c19166b3cd920b3ff55f8bc5555",
+  "runtimeIdentity": {
+    "platform": "darwin",
+    "arch": "arm64",
+    "nodeApiVersion": 10,
+    "copyBackend": "darwin-fclonefileat",
+    "nativeBinarySha256": "627ccf8c494b1dcae9914321dfd65c5fabb380dd985ce3ac36f8a775407a2b04"
   },
-  "evidence": "docs/delivery-incremental-verification-20261030.json",
-  "note": "Verified local publisher installation. The isolated shadow is never a production release; normal single-writer and all integrity, capacity, editorial and activation gates remain required."
+  "verifiedAt": "2026-11-02T10:33:30.939Z",
+  "evidence": "docs/delivery-incremental-verification-20261102.json",
+  "evidenceSha256": "ac18fce62bcfff84c69b99836044d2658337226d9406e3a673a78c1dc8dae2b4",
+  "note": "Local held incremental recertification; not a website publication. Normal guards remain required."
 }

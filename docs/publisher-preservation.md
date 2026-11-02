@@ -57,11 +57,19 @@ are historical evidence, not new authorization to deploy. Check the actual live
 revision and single-writer locks before resuming. Reauthenticate with Cloudflare
 locally when required; credentials must never be written into this backup.
 
-The local incremental installer passed the full-size isolated shadow, 100 unit
-fixtures, 8 real-catalog Chromium/WebKit scenarios and both native workerd/R2
-checks on 2026-10-30. Its exact software hash is bound by
+The local incremental installer was revalidated on 2026-11-02 against the
+33,209-artwork production baseline. Its exact software and runtime are bound by
 `config/incremental-publisher.json`; see
-`docs/delivery-incremental-verification-20261030.json` for measured scope and limits.
-The test catalog was publication-blocked and made no remote writes. A successful
+`docs/delivery-incremental-verification-20261102.json` and
+`docs/delivery-incremental.md` for the actual measured scope and limits. The
+test catalog was publication-blocked and made no remote writes. A successful
 local installation is distinct from a successful website publication. Preserve
 the current independent live receipt and never publish the shadow build.
+
+The full private test evidence is independently preserved in the protected
+`recert-evidence-3b234be-20261102` directory under KEEP and in the accepted
+repository's matching private import directory. Both capsules have manifest
+SHA-256 `ab6ab36b4428f6193bffe85a4d461d1636c38863de1449112a24b0a2798d02f9`.
+The regular KEEP snapshot and a separate isolated restore verification remain
+necessary after committing an installer change; the evidence capsule alone is
+not a source backup or a replacement for native originals and rollback assets.

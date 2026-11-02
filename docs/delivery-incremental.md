@@ -169,6 +169,35 @@ use incremental compilation. Source/software/template changes still invalidate
 reuse. Local publisher installation is separate from the website's public Worker
 and runtime deployment.
 
+## Schema-2 local verification — 2026-11-02
+
+The local installer is bound to publisher software SHA-256
+`dab4d206b1ccab18e9a23eb1aeadb31eff872c19166b3cd920b3ff55f8bc5555` and
+the runtime and native copy backend recorded in
+`config/incremental-publisher.json`. Its accepted evidence is
+`docs/delivery-incremental-verification-20261102.json`, SHA-256
+`ac18fce62bcfff84c69b99836044d2658337226d9406e3a673a78c1dc8dae2b4`.
+Changed publisher software, runtime, native binary, test sources or missing
+evidence disable this installation and select the normal guarded full path.
+
+Against the verified 33,209-artwork production baseline `118c9ae`, the held
+local shadow selected 50 artworks, rendered 100 art/editor pages and verified
+66,318 inherited art/editor pages. It passed 272 focused tests, two local
+workerd/R2 checks, eight Chromium/WebKit scenarios and complete image, link and
+core SEO audits of 67,096 pages. The shadow was publication-blocked and made no
+production writes. These results are not a website deployment, a future upload
+time guarantee or proof that the site already scales to five million artworks.
+
+The detailed, hash-verified evidence capsule is preserved at
+`work/imports/owner-75-combined-20261101/private-installer-s-bind-20261102/schema2-evidence-3b234be-20261102`
+and independently at
+`/Users/melihozcan/Documents/UltraClipart-Publisher-KEEP/recert-evidence-3b234be-20261102`;
+both have manifest SHA-256
+`ab6ab36b4428f6193bffe85a4d461d1636c38863de1449112a24b0a2798d02f9`.
+The copied clone journal is archival evidence and was not itself bound by the
+original shadow report. Normal source review, owner approval, single-writer,
+exact-byte, staging, readback and activation checks remain mandatory.
+
 Primary references checked 2026-10-30:
 
 - https://developers.cloudflare.com/r2/api/workers/workers-api-reference/
