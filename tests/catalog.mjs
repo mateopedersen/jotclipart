@@ -1,19 +1,50 @@
 import test from 'node:test';
 import { PAGES_FILE_LIMIT } from '../src/lib/pages-limits.ts';
 import assert from 'node:assert/strict';
-import { readFileSync, statSync, readdirSync, existsSync } from 'node:fs';
+import { readFileSync, statSync, statfsSync, readdirSync, existsSync, mkdtempSync, copyFileSync, writeFileSync, rmSync } from 'node:fs';
 import { resolve, join, relative } from 'node:path';
+import { tmpdir } from 'node:os';
 import { createHash } from 'node:crypto';
 import { representationKinds } from '../scripts/asset-representations.mjs';
 import { readPublication } from '../scripts/publication-policy.mjs';
 import { collectDeliveryFiles } from '../scripts/delivery/manifest.mjs';
 import { releaseRevision } from '../scripts/release-revision.mjs';
+import { validateEditorialReview } from '../scripts/artwork-editorial.mjs';
+import { shardStudioCatalog } from '../scripts/delivery/studio-catalog-shard.mjs';
+import { assertReleaseBudgets } from '../scripts/delivery/budgets.mjs';
 import { testBuildDirectory } from './support/build-directory.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const topics = JSON.parse(readFileSync(join(root, 'data/topics.json'))).topics;
 const arts = JSON.parse(readFileSync(join(root, 'data/art.json')));
 const digest = (b) => createHash('sha256').update(b).digest('hex');
+function assertCatalogText(art) {
+  for (const field of ['title', 'alt', 'description'])
+    assert.ok(typeof art[field] === 'string' && art[field].trim(), `missing ${field}: ${art.id}`);
+}
+
+// Exercise the same sharder as final activation on a disposable copy. This is
+// preparation validation, not a substitute for the final artifact budget gate.
+function verifyStudioPreparation(file, expectedIds, options) {
+  const scratch = mkdtempSync(join(tmpdir(), 'uc-studio-preflight-'));
+  try {
+    const input = readFileSync(file);
+    const volume = statfsSync(scratch, { bigint: true });
+    assert.ok(volume.bavail * volume.bsize >= 5n * 1024n ** 3n + 2n * BigInt(input.length),
+      'Studio preflight would breach the five-GiB free-space reserve');
+    copyFileSync(file, join(scratch, 'studio-catalog.json'));
+    const result = shardStudioCatalog(scratch, expectedIds, options);
+    assert.ok(result, 'Studio catalog should have been split for final delivery');
+    assert.equal(result.bytes, input.length);
+    assert.equal(result.sha256, digest(input));
+    const parts = result.parts.map((part) => readFileSync(join(scratch, part.path)));
+    assert.deepEqual(Buffer.concat(parts), input, 'Studio shards do not reconstruct the source');
+    writeFileSync(join(scratch, '_worker.js'), 'export default {}');
+    writeFileSync(join(scratch, '_routes.json'), JSON.stringify({ include: ['/*'], exclude: [] }));
+    assert.equal(assertReleaseBudgets(scratch).pagesFiles, result.parts.length);
+    return result.parts.length;
+  } finally { rmSync(scratch, { recursive: true, force: true }); }
+}
 function parseCsv(text) {
   const rows = [];
   let row = [];
@@ -75,7 +106,9 @@ test('art identities, topic assignment, provenance and review states remain hone
   for (const art of arts) {
     assert.ok(validTopics.has(art.topic), `unauthorized topic: ${art.topic}`);
     assert.match(art.id, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
-    assert.ok(art.title.length > 5 && art.alt.length > 20 && art.description.length > 30);
+    // A source-reviewed description may be concise; length is not visual proof.
+    // The independent editorial gate validates every new or changed review.
+    assertCatalogText(art);
     assert.ok(art.provenance && art.productionMethod, `missing provenance: ${art.id}`);
     assert.equal(typeof art.published, 'boolean');
     assert.equal(typeof art.indexable, 'boolean');
@@ -104,6 +137,35 @@ test('art identities, topic assignment, provenance and review states remain hone
     assert.ok(generated.length <= 100);
     assert.ok(generated.every((item) => planned.has(item.id)));
   }
+});
+
+test('concise text still needs nonempty fields and the existing source-bound review', () => {
+  const registry = JSON.parse(readFileSync(join(root, 'data/editorial/reviews.json')));
+  const reviewById = new Map(registry.artworks.map((row) => [row.id, row]));
+  const sample = arts.find((art) => reviewById.has(art.id));
+  const review = sample && reviewById.get(sample.id);
+  assert.ok(sample && review);
+  const concise = { ...sample, title: 'Car', alt: 'A car.', description: 'Fine lines.' };
+  assert.doesNotThrow(() => assertCatalogText(concise));
+  assert.doesNotThrow(() => validateEditorialReview(sample, review));
+  assert.throws(() => validateEditorialReview(concise, review), /metadata changed/);
+  for (const field of ['title', 'alt', 'description'])
+    assert.throws(() => assertCatalogText({ ...sample, [field]: ' ' }), /missing/);
+  assert.throws(() => validateEditorialReview(sample, undefined), /actual image review required/);
+  assert.throws(() => validateEditorialReview({ ...sample, files: { ...sample.files,
+    webp: { ...sample.files.webp, sha256: '0'.repeat(64) } } }, review), /image changed/);
+});
+
+test('Studio preflight rejects a mismatched reviewed ID set without changing its source', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'uc-studio-source-'));
+  try {
+    const source = join(dir, 'input.json'), original = Buffer.from('[{"id":"first"},{"id":"second"}]');
+    writeFileSync(source, original);
+    assert.throws(() => verifyStudioPreparation(source, ['first'], { triggerBytes: 1, partBytes: 9 }), /match/);
+    assert.deepEqual(readFileSync(source), original);
+    assert.ok(verifyStudioPreparation(source, ['second', 'first'], { triggerBytes: 1, partBytes: 9 }) > 1);
+    assert.deepEqual(readFileSync(source), original);
+  } finally { rmSync(dir, { recursive: true, force: true }); }
 });
 
 test('every artwork has its declared real, correctly typed, paired and hashed representations', () => {
@@ -167,17 +229,29 @@ test(
     // Preparation output is never uploaded. Its reviewed delivery files are
     // verified in R2 and removed from a separate final artifact; that artifact
     // receives an independent exact count and size check before deployment.
-    if (process.env.CF_PAGES === '1' && process.env.UC_DELIVERY_PREPARE === '1') {
+    const preparing = process.env.CF_PAGES === '1' && process.env.UC_DELIVERY_PREPARE === '1';
+    let studioParts = 0;
+    const studio = resolve(dist, 'studio-catalog.json');
+    if (preparing && existsSync(studio) && statSync(studio).size > 20 * 1024 * 1024) {
+      studioParts = verifyStudioPreparation(studio, arts
+        .filter((art) => art.published && art.indexable && art.sourceType === 'raster')
+        .map((art) => art.id));
+    }
+    if (preparing) {
       const delivery = collectDeliveryFiles(dist, releaseRevision());
       assert.ok(delivery.length > 0, 'delivery preparation has no verified-file candidates');
       assert.ok(
-        output.length - delivery.length <= PAGES_FILE_LIMIT,
-        `prepared output still exceeds Pages limit: ${output.length - delivery.length}`,
+        output.length - delivery.length + (studioParts ? studioParts - 1 : 0) <= PAGES_FILE_LIMIT,
+        `prepared output still exceeds Pages limit after sharding`,
       );
     } else {
       assert.ok(output.length <= PAGES_FILE_LIMIT, `too many static assets: ${output.length}`);
     }
-    for (const file of output)
+    for (const file of output) {
+      // Only the exact preflight-verified source is omitted from this preparatory
+      // check. Activation removes it; the final release has its own 25 MiB gate.
+      if (studioParts && resolve(file) === studio) continue;
       assert.ok(statSync(file).size <= 25 * 1024 * 1024, `oversized static asset: ${file}`);
+    }
   },
 );

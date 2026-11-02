@@ -1,12 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtempSync, readFileSync, existsSync, writeFileSync, rmSync } from 'node:fs';
+import { mkdtempSync, mkdirSync, readFileSync, existsSync, writeFileSync, truncateSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { createHash } from 'node:crypto';
 import { shardStudioCatalog } from '../scripts/delivery/studio-catalog-shard.mjs';
 import { createStudioCatalogHandler } from '../server/delivery/studio-catalog.mjs';
-import { assertReleaseBudgets } from '../scripts/delivery/budgets.mjs';
+import { assertReleaseBudgets, PAGES_MAX_FILE_BYTES } from '../scripts/delivery/budgets.mjs';
 
 const sha = (b) => createHash('sha256').update(b).digest('hex');
 function fixture() {
@@ -52,9 +52,25 @@ test('small catalogs remain unchanged and mismatched or duplicate IDs fail close
     assert.deepEqual(readFileSync(join(target, 'studio-catalog.json')), original);
     assert.throws(() => shardStudioCatalog(target, ['first'], {triggerBytes:1,partBytes:10}), /match/);
     assert.deepEqual(readFileSync(join(target, 'studio-catalog.json')), original);
+    assert(!existsSync(join(target, 'studio-catalog-parts')));
     writeFileSync(join(target, 'studio-catalog.json'), '[{"id":"first"},{"id":"first"}]');
     assert.throws(() => shardStudioCatalog(target, ['first','first'], {triggerBytes:1,partBytes:10}), /match/);
     assert.throws(() => shardStudioCatalog(target, [], {triggerBytes:1,partBytes:0}), /size/);
+    assert.throws(() => shardStudioCatalog(target, [], {triggerBytes:1,partBytes:8 * 1024 * 1024 + 1}), /size/);
+  } finally { rmSync(target, {recursive:true, force:true}); }
+});
+
+test('a final Studio shard over the provider file limit remains a hard failure', () => {
+  const { target } = fixture();
+  try {
+    writeFileSync(join(target, '_routes.json'), JSON.stringify({include:['/*'],exclude:[]}));
+    writeFileSync(join(target, '_worker.js'), 'export default {}');
+    const folder = join(target, 'studio-catalog-parts', 'a'.repeat(64));
+    mkdirSync(folder, {recursive:true});
+    const part = join(folder, '00000.bin');
+    writeFileSync(part, '');
+    truncateSync(part, PAGES_MAX_FILE_BYTES + 1);
+    assert.throws(() => assertReleaseBudgets(target), /Pages asset exceeds 25 MiB/);
   } finally { rmSync(target, {recursive:true, force:true}); }
 });
 

@@ -160,22 +160,108 @@ test('catalog preflight rejects stale, duplicate or falsely passed owner excepti
   assert.throws(() => assertOwnerPdfColorCatalog([{ ...a, reviewStatus: 'FORMAT_AND_PAIR_REVIEW_PASSED', sourceCollection: 'other' }]), /requires an exact reviewed replacement/);
   assert.throws(() => assertOwnerPdfColorCatalog([{ ...a, files: { ...a.files, pdf: { ...a.files.pdf, sha256: 'f'.repeat(64) } } }]), /Invalid owner PDF/);
   assert.throws(() => assertOwnerPdfColorCatalog([{ ...a, sourceCollection: 'other' }]), /Invalid owner PDF/);
-  assert.equal(assertOwnerPdfColorCatalog(live).ownerDirectedOriginals, 0);
+  // The same gate must work before the atomic catalog promotion and after it.
+  // Never treat an owner-directed original as a visually reviewed pair.
+  const present = live.filter((item) => Object.hasOwn(registry.records, item.sourceOriginalId ?? ''));
+  assert.ok([0, registry.count].includes(present.length), 'Owner PDF source catalog is only partially promoted');
+  const seen = new Set();
+  let originals = 0, reviewedReplacements = 0;
+  for (const item of present) {
+    assert.ok(!seen.has(item.sourceOriginalId), 'Duplicate source-bound owner record');
+    seen.add(item.sourceOriginalId);
+    const entry = registry.records[item.sourceOriginalId];
+    assert.equal(item.sourceCollection, registry.sourceCollection);
+    assert.equal(item.topic, entry.topic);
+    assert.equal(item.sourceOriginalSha256, entry.imageSha256);
+    assert.equal(item.files.webp.sha256, entry.imageSha256);
+    assert.equal(hasUsableFileReview(item), true);
+    if (entry.ownerDirectionActive) {
+      originals++;
+      assert.equal(item.reviewStatus, 'FORMAT_OWNER_ORIGINAL_ADDITIONAL_PDF_REVIEW_SKIPPED');
+      assert.equal(item.files.pdf.sha256, entry.pdfSha256);
+      assert.equal(item.pdfColorReview.visualColorApproved, false);
+      assert.equal(item.pdfColorReview.visualPairApproved, false);
+    } else {
+      reviewedReplacements++;
+      assert.equal(item.reviewStatus, 'FORMAT_AND_PAIR_REVIEW_PASSED');
+      assert.equal(item.files.pdf.sha256, replacements.records[item.sourceOriginalId].reviewedPdfSha256);
+    }
+  }
+  if (present.length) {
+    assert.equal(originals, registry.activeOwnerDirectionCount);
+    assert.equal(reviewedReplacements, replacements.count);
+  }
+  const summary = assertOwnerPdfColorCatalog(live);
+  assert.equal(summary.ownerDirectedOriginals, originals);
+  assert.equal(summary.visuallyApprovedByDirection, false);
+  // Simulate the exact pre-promotion state without changing the catalog.
+  const prior = live.filter((item) => !Object.hasOwn(registry.records, item.sourceOriginalId ?? ''));
+  assert.equal(assertOwnerPdfColorCatalog(prior).ownerDirectedOriginals, 0);
 });
 
-test('related collection cards include authorized exceptions and reject a changed PDF', () => {
-  // The new topic becomes registered in the real catalog promotion. Add it only
-  // to this isolated test's in-memory taxonomy to exercise that future state.
+test('related cards retain authorized PDFs and reject changed files across recommendation groups', () => {
+  // A classified topic may rank a valid card as an alternative; an unclassified
+  // one may rank it in the collection lane. Both preserve the file contract.
+  const previouslyRegistered = REGISTERED_TOPICS.has('jeep');
   REGISTERED_TOPICS.add('jeep');
-  const a = exceptionItem(0), b = exceptionItem(1), changed = exceptionItem(2);
-  changed.files.pdf.sha256 = 'f'.repeat(64);
-  const index = new RelatedIndex([a, b, changed]);
+  try {
+    for (const classified of [true, false]) {
+      const a = exceptionItem(0), b = exceptionItem(1), changed = exceptionItem(2);
+      if (!classified) for (const item of [a, b, changed]) {
+        item.title = 'A vehicle illustration'; item.alt = 'A vehicle shown from the side.';
+      }
+      changed.files.pdf.sha256 = 'f'.repeat(64);
+      const index = new RelatedIndex([a, b, changed]);
+      assert.equal(index.profiles.get(a.id).publicationEligible, true);
+      assert.equal(index.profiles.get(b.id).publicationEligible, true);
+      assert.equal(index.profiles.get(changed.id).publicationEligible, false);
+      const result = index.snapshot(a.id);
+      const cards = [...result.alternatives, ...result.companions, ...result.collection];
+      const selected = cards.filter((card) => card.id === b.id);
+      assert.equal(selected.length, 1);
+      assert.equal(selected[0].pdf, b.pdf);
+      assert.equal(downloadDetails(b).files.pdf.sha256, registry.records[b.sourceOriginalId].pdfSha256);
+      assert.ok(cards.every((card) => card.id !== changed.id));
+      if (!classified) assert.equal(selected[0].group, 'collection');
+      const invalid = [
+        { ...b, files: { ...b.files, pdf: { ...b.files.pdf, sha256: 'f'.repeat(64) } } },
+        { ...b, files: { ...b.files, webp: { ...b.files.webp, sha256: '0'.repeat(64) } } },
+        { ...b, topic: 'other' },
+        { ...b, reviewStatus: 'FORMAT_AND_PAIR_REVIEW_PASSED' },
+        { ...b, pdfColorReview: { ...b.pdfColorReview, visualPairApproved: true } },
+      ];
+      for (const candidate of invalid) {
+        const rejected = new RelatedIndex([a, candidate]);
+        assert.equal(rejected.profiles.get(candidate.id).publicationEligible, false);
+        const snapshot = rejected.snapshot(a.id);
+        assert.ok([...snapshot.alternatives, ...snapshot.companions, ...snapshot.collection]
+          .every((card) => card.id !== candidate.id));
+        assert.equal(downloadDetails(candidate), undefined);
+      }
+    }
+  } finally { if (!previouslyRegistered) REGISTERED_TOPICS.delete('jeep'); }
+});
+
+test('promoted owner source records retain their exact PDF in related results', () => {
+  const present = examples.map(([sourceOriginalId]) => live.find((item) => item.sourceOriginalId === sourceOriginalId));
+  if (present.every((item) => !item)) return; // The pre-promotion catalog has no such records.
+  assert.ok(present.every(Boolean), 'Owner source records are only partially promoted');
+  const [a, b, source] = present;
+  const bad = { ...source, files: { ...source.files, pdf: { ...source.files.pdf, sha256: 'f'.repeat(64) } } };
+  const index = new RelatedIndex([a, b, bad]);
   assert.equal(index.profiles.get(a.id).publicationEligible, true);
   assert.equal(index.profiles.get(b.id).publicationEligible, true);
-  assert.equal(index.profiles.get(changed.id).publicationEligible, false);
-  const cards = index.snapshot(a.id).collection;
-  assert.ok(cards.some((card) => card.id === b.id && card.pdf === b.pdf));
-  assert.ok(cards.every((card) => card.id !== changed.id));
+  assert.equal(index.profiles.get(bad.id).publicationEligible, false);
+  const result = index.snapshot(a.id);
+  const cards = [...result.alternatives, ...result.companions, ...result.collection];
+  const selected = cards.filter((card) => card.id === b.id);
+  assert.equal(selected.length, 1);
+  assert.equal(selected[0].pdf, b.pdf);
+  assert.equal(downloadDetails(b).files.pdf.sha256, registry.records[b.sourceOriginalId].pdfSha256);
+  assert.ok(cards.every((card) => card.id !== bad.id));
+  assert.equal(downloadDetails(bad), undefined);
+  assert.equal(b.pdfColorReview.visualColorApproved, false);
+  assert.equal(b.pdfColorReview.visualPairApproved, false);
 });
 
 test('search cards retain exact downloadable original hashes for the selected source', async () => {
