@@ -2,6 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
 import { testBuildUrl } from './support/build-directory.mjs';
+import { collectionCountParts } from '../src/lib/collection-count-tokens.mjs';
+import { formatCatalogCount } from '../src/lib/catalog-counts.ts';
 import {
   readCollectionAudit,
   readCollectionRegistries,
@@ -108,10 +110,11 @@ test(
       for (let i = 0; i < paragraphs.length; i++)
         assert.equal(
           decode(paragraphs[i][1]),
-          record.paragraphs[i].replace(
-            '{{artworkCount}}',
-            new Intl.NumberFormat('en-US').format(published.length),
-          ),
+          collectionCountParts(record.paragraphs[i])
+            .map((part) =>
+              typeof part === 'string' ? part : formatCatalogCount(published.length, part.unit),
+            )
+            .join(''),
           `${topic}/${i}`,
         );
       assert.doesNotMatch(panel, /\{\{artworkCount\}\}/, topic);
