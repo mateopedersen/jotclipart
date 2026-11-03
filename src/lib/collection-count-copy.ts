@@ -1,5 +1,6 @@
 import { catalogStatistics } from './catalog-statistics';
 import { catalogCountValue, formatCatalogCount } from './catalog-counts';
+import { collectionCountParts } from './collection-count-tokens.mjs';
 
 // Legacy collection introductions begin with e.g. "Explore 50 cat clipart designs".
 // Resolve those catalog-size claims centrally, along with explicit future templates.
@@ -11,8 +12,10 @@ export function collectionCountTemplate(text: string): string {
 }
 
 export function resolveCollectionCountCopy(text: string, topic: string): string {
-  return collectionCountTemplate(text).replaceAll(
-    '{{artworkCount}}',
-    formatCatalogCount(catalogCountValue(catalogStatistics, 'topic', topic)),
-  );
+  const value = catalogCountValue(catalogStatistics, 'topic', topic);
+  return collectionCountParts(collectionCountTemplate(text))
+    .map((part: string | { unit?: 'illustration' }) =>
+      typeof part === 'string' ? part : formatCatalogCount(value, part.unit),
+    )
+    .join('');
 }
