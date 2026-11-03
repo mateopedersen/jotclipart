@@ -4,8 +4,8 @@
     "election-day": {
       "status": "checked-against-catalog",
       "intro": "Election Day clipart brings together voting equipment, ballots, stickers and people alongside playful civic characters and patriotic designs.",
-      "sourceSha256": "9aa84b73757211fed2312f29e8c7b086ad2e4c175004a4146cb6c1b90174d74c",
-      "checkedAt": "2026-11-03T02:56:05.917Z",
+      "sourceSha256": "2115712327751b10d83cafba01e9f9abe41ea9eb3456e25f63e602d828730b63",
+      "checkedAt": "2026-11-03T16:09:13.237Z",
       "evidence": [
         {
           "id": "election-day-accessible-ballot-marking-station",
@@ -24,8 +24,8 @@
     "nepal-flag": {
       "status": "checked-against-catalog",
       "intro": "Nepal flag clipart includes double pennant flags, display stands and illustrations of community activities.",
-      "sourceSha256": "7f6cf29ba95d7a6a0bb009ed9512a4d6131dcc62d73dfce3db639fd7e18fe275",
-      "checkedAt": "2026-11-03T02:56:06.239Z",
+      "sourceSha256": "a732b695b278a2f3bbf79ab4c7f381a221f5a9dbbc04d201f0f5212f60fac9ea",
+      "checkedAt": "2026-11-03T16:09:13.238Z",
       "evidence": [
         {
           "id": "nepal-flag-clipart-001-wooden-hand-pole",
@@ -84,8 +84,8 @@
     "marshall-islands-flag": {
       "status": "checked-against-catalog",
       "intro": "Marshall Islands flag clipart includes island flags, display stands and illustrated community scenes.",
-      "sourceSha256": "ccc4a67f6d6e77871a204f6108bfea4a4f8672b73cd7f73a1efbedccc60d3582",
-      "checkedAt": "2026-11-03T02:44:53.661Z",
+      "sourceSha256": "031a7338a234356b8ed48c3c3ec6dd0987e139ec51f4ddab52cd95fa2f762dd4",
+      "checkedAt": "2026-11-03T16:09:13.238Z",
       "evidence": [
         {
           "id": "marshall-islands-flag-clipart-001-wooden-hand-pole",
@@ -144,8 +144,8 @@
     "kiribati-flag": {
       "status": "checked-against-catalog",
       "intro": "Kiribati flag designs feature the golden bird and sun on flags displayed alone and in community scenes.",
-      "sourceSha256": "0b5ca45174ec2ab9d33ce812e4f8b8a6d2279ba6d30b03e13d83978ee7f68a2d",
-      "checkedAt": "2026-11-03T03:08:53.565Z",
+      "sourceSha256": "96a8b1b356dbab54459c344bb6f16db4c484417efde2827b2efecda44fa9c9d4",
+      "checkedAt": "2026-11-03T16:09:13.238Z",
       "evidence": [
         {
           "id": "kiribati-flag-clipart-001-wooden-hand-pole",
@@ -164,8 +164,8 @@
     "kuwait-flag": {
       "status": "checked-against-catalog",
       "intro": "Kuwait flag illustrations show the striped flag and black trapezoid on displays and in community scenes.",
-      "sourceSha256": "aa6319ded0c6d2347a985938e21c85028b08597586d34f38b8d0cf460e496b76",
-      "checkedAt": "2026-11-03T03:08:52.907Z",
+      "sourceSha256": "774c260c8d7f39a216a1cee2b8e9d083dc718ca9e01e8e297a8ffab7b0a6c194",
+      "checkedAt": "2026-11-03T16:09:13.238Z",
       "evidence": [
         {
           "id": "kuwait-flag-clipart-001-wooden-hand-pole",
@@ -184,8 +184,8 @@
     "liberia-flag": {
       "status": "checked-against-catalog",
       "intro": "Liberia flag illustrations show its single white star and stripes on displays and in community scenes.",
-      "sourceSha256": "fde6f8c451710f3220c272a69f4cc95eedc75cc4e8fc596139dd30f03646de52",
-      "checkedAt": "2026-11-03T03:24:47.295Z",
+      "sourceSha256": "33e86ed2dc7de0ac58f9b68e01121385275b8dde507a8103bdcc6bc03726ad57",
+      "checkedAt": "2026-11-03T16:09:13.239Z",
       "evidence": [
         {
           "id": "liberia-flag-clipart-001-wooden-hand-pole",
@@ -324,8 +324,8 @@
     "morocco-flag": {
       "status": "checked-against-catalog",
       "intro": "Morocco’s green five-point star stands out against the red field across these flag pictures and display settings.",
-      "sourceSha256": "8450413a3adb5a6b3489b32be3c33dff7532db3c16aad6f4927e74ce66842ddc",
-      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "sourceSha256": "0d3acc7cb0895aed527af003986ebec9486a4e2023dd4874a91615719081cfb6",
+      "checkedAt": "2026-11-03T16:09:13.239Z",
       "evidence": [
         {
           "id": "morocco-flag-clipart-001-wooden-hand-pole",
@@ -344,8 +344,8 @@
     "mozambique-flag": {
       "status": "checked-against-catalog",
       "intro": "The red triangle and gold emblem anchor these Mozambique flag scenes, alongside green, black and yellow bands.",
-      "sourceSha256": "be80bce38a92c02cb478397f33933bc4856280259a84749d8d3ae5482f12eecd",
-      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "sourceSha256": "7335230d45120ddb3f3dfaba57a9b535b2847eb2782ec551af9fed74c493d717",
+      "checkedAt": "2026-11-03T16:09:13.239Z",
       "evidence": [
         {
           "id": "mozambique-flag-clipart-001-wooden-hand-pole",
@@ -404,8 +404,8 @@
     "libya-flag": {
       "status": "checked-against-catalog",
       "intro": "Libya flag illustrations feature red black and green bands with a crescent and star in a variety of displays.",
-      "sourceSha256": "7f29b68c469897b084de719293ac360cecc199b70cddb7d2cb740d0e22a9287b",
-      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "sourceSha256": "45f34cb9ebc8b1095878dd24d39359347fa21e781627eab4fe5e1ab4a512dc90",
+      "checkedAt": "2026-11-03T16:09:13.239Z",
       "evidence": [
         {
           "id": "libya-flag-clipart-001-wooden-hand-pole",
@@ -424,8 +424,8 @@
     "myanmar-flag": {
       "status": "checked-against-catalog",
       "intro": "Myanmar flag illustrations feature yellow green and red bands with a white star in a variety of displays.",
-      "sourceSha256": "17273a3004d903507340b5f9e469cc0f09557c89f4c9c797eba068615a753454",
-      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "sourceSha256": "fb4d9c820e83f69c5845187b5de5c0f3da10eb628ea11ab035159d9077a47aad",
+      "checkedAt": "2026-11-03T16:09:13.240Z",
       "evidence": [
         {
           "id": "myanmar-flag-clipart-001-wooden-hand-pole",
@@ -444,8 +444,8 @@
     "madagascar-flag": {
       "status": "checked-against-catalog",
       "intro": "Madagascar flag illustrations feature a white panel beside red and green bands in a variety of displays.",
-      "sourceSha256": "b63bead83f9835d64bd8a04a14b387d5c3860df24aee9c177f604ec41c1fea47",
-      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "sourceSha256": "0f5cf69a9b1656fde91cd153ace073df2171393cb50d50d073409d6aa0346bf9",
+      "checkedAt": "2026-11-03T16:09:13.240Z",
       "evidence": [
         {
           "id": "madagascar-flag-clipart-001-wooden-hand-pole",
