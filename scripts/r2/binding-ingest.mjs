@@ -126,7 +126,9 @@ async function main() {
       failed = false;
     function reservation() {
       // Every invocation receives a fresh, manifest-bound signed authorization.
-      return createReleaseWriteAuthorization(job);
+      // Allow small sender/Worker clock skew while keeping the server's 45s
+      // age bound intact; the effective authorization window is shorter.
+      return createReleaseWriteAuthorization(job, Date.now() - 1000);
     }
     try {
       output = openSync(join(work, 'private-session.log'), 'a', 0o600);

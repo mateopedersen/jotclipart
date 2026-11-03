@@ -99,6 +99,21 @@ test('existing assets get independent byte verification with no lease, source fe
   assert.deepEqual(f.counts(), { reads: 3, writes: 0 });
 });
 
+test('default read command allows small clock skew without extending server freshness', async () => {
+  const f = fixture(1);
+  let age;
+  const result = await verifyExistingBatch(f.batch, {
+    ...f.options,
+    fetcher: async (url, init) => {
+      age = Date.now() - JSON.parse(init.body).command.at;
+      return f.options.fetcher(url, init);
+    },
+  });
+  assert(age >= 900 && age < 5000);
+  assert.equal(result.verified.length, 1);
+  assert.deepEqual(f.counts(), { reads: 1, writes: 0 });
+});
+
 test('missing assets are explicitly queued, never fabricated, written or fetched publicly by verification', async () => {
   const f = fixture();
   f.values.delete(f.records[1].key);

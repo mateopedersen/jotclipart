@@ -50,7 +50,7 @@ export function validateVerificationReceipt(result, batch, root, allowMissing = 
 // a public source or grant a storage lease. A missing object needs normal staging.
 export async function verifyExistingBatch(
   batch,
-  { root, accountId, bucket, secret, fetcher = fetch, now = Date.now, wait = delay },
+  { root, accountId, bucket, secret, fetcher = fetch, now = () => Date.now() - 1000, wait = delay },
 ) {
   let last;
   for (let attempt = 0; attempt < 3; attempt++) {
