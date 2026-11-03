@@ -209,8 +209,8 @@
     "arrow": {
       "status": "checked-against-catalog",
       "sourceSha256": "3f4183111ac1367003353ab1dcae3147061b0cc07402c11f3436c06c252049ab",
-      "checkedAt": "2026-10-29T22:36:26.862Z",
-      "intro": "Browse arrows in many forms, from colorful directional symbols and curved signs to archery scenes, maps and hand-drawn markings.",
+      "checkedAt": "2026-11-03T22:45:49.964Z",
+      "intro": "Browse arrows in many forms, from colorful directional symbols and curved signs to archery scenes, maps and sketch-style markings.",
       "evidence": [
         {
           "id": "accelerating-chevron-trail-clipart",
@@ -230,10 +230,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Arrow clipart collection, with {{artworkCount}} illustrations to explore. Browse arrows in many forms, from colorful directional symbols and curved signs to archery scenes, maps and hand-drawn markings.",
+        "Welcome to our Arrow clipart collection, with {{artworkCount}} illustrations to explore. Browse arrows in many forms, from colorful directional symbols and curved signs to archery scenes, maps and sketch-style markings.",
         "The gallery includes “Green Chevron Trail” and “Heart in a Ribbon Arrow” among its drawings. Arrange the artwork around your own text in a personal page layout, an invitation or a classroom display, choosing shapes that frame rather than crowd the main message."
       ],
-      "paragraphSourceSha256": "959629315e680c8dab3f26e10686786242177b237a73b68e556cdb96b8a9f2bc",
+      "paragraphSourceSha256": "4466912c11e38a78f93399f88c8240cc3f5fb793021cd6e48aa1e8bad5d27a6b",
       "paragraphEvidence": [
         {
           "id": "accelerating-chevron-trail-clipart",
@@ -244,8 +244,8 @@
           "imageSha256": "8bf8d0360158877ea71b4612550510341c5ddb051c5e3aff064697ec47911139"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.560Z",
-      "paragraphReviewSha256": "1e537b28f61376cadf623e7c75df8bd3aedd0dfda46f8b918a4656d6d336b3b3"
+      "paragraphsCheckedAt": "2026-11-03T22:45:49.964Z",
+      "paragraphReviewSha256": "a9d1db60c45e784271e3b302aeed04959d4817288db6ad33de70d97b4b82454e"
     },
     "1st": {
       "status": "checked-against-catalog",
