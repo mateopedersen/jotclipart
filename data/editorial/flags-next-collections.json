@@ -1,0 +1,205 @@
+{
+  "schema": 1,
+  "topics": {
+    "election-day": {
+      "status": "checked-against-catalog",
+      "intro": "Election Day clipart brings together voting equipment, ballots, stickers and people alongside playful civic characters and patriotic designs.",
+      "sourceSha256": "9aa84b73757211fed2312f29e8c7b086ad2e4c175004a4146cb6c1b90174d74c",
+      "checkedAt": "2026-11-03T02:56:05.917Z",
+      "evidence": [
+        {
+          "id": "election-day-accessible-ballot-marking-station",
+          "imageSha256": "47583e674b7e014332d2ecb2be97eb2ab6ad6b126029508f4164044310c66ef1"
+        },
+        {
+          "id": "election-day-america-checkmark-mosaic-cartoon-078",
+          "imageSha256": "8acef64b6d5e527a342aaabc217f5da9a9774580a8405c6c818cd647b82d11bc"
+        },
+        {
+          "id": "election-day-american-ballot-box-realistic",
+          "imageSha256": "0d6f6d411c40203efdf4741f34880afbb102413da43f526840350d05f2736e3f"
+        }
+      ]
+    },
+    "nepal-flag": {
+      "status": "checked-against-catalog",
+      "intro": "Nepal flag clipart includes double pennant flags, display stands and illustrations of community activities.",
+      "sourceSha256": "7f6cf29ba95d7a6a0bb009ed9512a4d6131dcc62d73dfce3db639fd7e18fe275",
+      "checkedAt": "2026-11-03T02:56:06.239Z",
+      "evidence": [
+        {
+          "id": "nepal-flag-clipart-001-wooden-hand-pole",
+          "imageSha256": "6de42666221407622204afdf759bc1c144213cec9dee6fdf469aaa353c2d09d7"
+        },
+        {
+          "id": "nepal-flag-clipart-002-free-flying-silk-wave",
+          "imageSha256": "95d68f42411f101c44e748cac4f1cd4792b266be6d15839e88ffa45dbed72918"
+        },
+        {
+          "id": "nepal-flag-clipart-003-brass-ceremonial-stand",
+          "imageSha256": "30235a0354606c68dcd9825158b49925724a45a147833291d29d9c2fe0e8fed6"
+        }
+      ]
+    },
+    "italy-flag": {
+      "status": "checked-against-catalog",
+      "intro": "Nepal flag clipart includes Italian tricolor flags, display stands and illustrations of community activities.",
+      "sourceSha256": "58f94e75ac114b0b57e883dbfb4a847f8c374920f1d850d8cd00f627deec0545",
+      "checkedAt": "2026-11-03T02:35:58.350Z",
+      "evidence": [
+        {
+          "id": "italy-flag-clipart-001-wooden-hand-pole",
+          "imageSha256": "1828e886b04f764413f389b6cedc48f974cc4a5bf14f613a126243455bcd5772"
+        },
+        {
+          "id": "italy-flag-clipart-002-free-flying-silk-wave",
+          "imageSha256": "9e1cb7807c5adf895cc4a830cb784d8c664633a1d376b4bc3ad43bed04b9834e"
+        },
+        {
+          "id": "italy-flag-clipart-003-brass-ceremonial-stand",
+          "imageSha256": "b547fe062d32d76a4735ce92568e4373c9c93dbc67dc9211e792059459750c9c"
+        }
+      ]
+    },
+    "lithuania-flag": {
+      "status": "checked-against-catalog",
+      "intro": "Lithuanian flag clipart includes tricolor flags, display stands and illustrated community scenes.",
+      "sourceSha256": "08d1148f18dcd03fc09bacaba1a3938acd813168da001fb8f61115b39d0672a2",
+      "checkedAt": "2026-11-03T02:41:34.289Z",
+      "evidence": [
+        {
+          "id": "lithuania-flag-clipart-001-wooden-hand-pole",
+          "imageSha256": "0f9de6e2465efbb7baf4eb164c970de38b50f3f453d7803fa986ee53c97707fd"
+        },
+        {
+          "id": "lithuania-flag-clipart-002-free-flying-silk-wave",
+          "imageSha256": "be8940eaf9f47585a12cb2ac7c679f56620b7b84cdf225a8a3a0d416cb4b1e50"
+        },
+        {
+          "id": "lithuania-flag-clipart-003-brass-ceremonial-stand",
+          "imageSha256": "87cd65d3e735374b1a3a3cb4bd63be8ad9e98848ec3a50e4f4330eaf29b6dc43"
+        }
+      ]
+    },
+    "marshall-islands-flag": {
+      "status": "checked-against-catalog",
+      "intro": "Marshall Islands flag clipart includes island flags, display stands and illustrated community scenes.",
+      "sourceSha256": "ccc4a67f6d6e77871a204f6108bfea4a4f8672b73cd7f73a1efbedccc60d3582",
+      "checkedAt": "2026-11-03T02:44:53.661Z",
+      "evidence": [
+        {
+          "id": "marshall-islands-flag-clipart-001-wooden-hand-pole",
+          "imageSha256": "427f0dd75662efdcbb9127803471362194ab4756a682b3a128122b3ad95cc94f"
+        },
+        {
+          "id": "marshall-islands-flag-clipart-002-free-flying-silk-wave",
+          "imageSha256": "6300cc63a73957a89800133584ca8450b09587b7ad5315b57cd706aa120b198f"
+        },
+        {
+          "id": "marshall-islands-flag-clipart-003-brass-ceremonial-stand",
+          "imageSha256": "9d76750f601e42f30c6b9e39bfdeb046f5d363e23f1fa65cfbfe67960b4bef22"
+        }
+      ]
+    },
+    "mauritania-flag": {
+      "status": "checked-against-catalog",
+      "intro": "Mauritania flag clipart includes crescent flags, display stands and illustrated community scenes.",
+      "sourceSha256": "c307a09e52f7624f730dab89616f3647d574504d2be64ef647f487a2ef02ca13",
+      "checkedAt": "2026-11-03T02:44:54.116Z",
+      "evidence": [
+        {
+          "id": "mauritania-flag-clipart-001-wooden-hand-pole",
+          "imageSha256": "d63211d215676fa2d046d64a6d990999d5e2610da2ac7e2f3af90354d8cf0068"
+        },
+        {
+          "id": "mauritania-flag-clipart-002-free-flying-silk-wave",
+          "imageSha256": "942d62894d27aa396a53778dca763151581c9e5246fa81a62b41c5bb015581d6"
+        },
+        {
+          "id": "mauritania-flag-clipart-003-brass-ceremonial-stand",
+          "imageSha256": "9737ec0513385d06e7fde01ad43e9c1c74cd6c77fdb608ecc38ab6449db22dd5"
+        }
+      ]
+    },
+    "mauritius-flag": {
+      "status": "checked-against-catalog",
+      "intro": "Mauritius flag clipart includes striped flags, display stands and illustrated community scenes.",
+      "sourceSha256": "b17011332380ca4d0b0edb76cf5b204623865481f99f7cdadbb602a05064a82f",
+      "checkedAt": "2026-11-03T02:44:54.265Z",
+      "evidence": [
+        {
+          "id": "mauritius-flag-clipart-001-wooden-hand-pole",
+          "imageSha256": "4a3662914a0f2c753647c8b8e9a117458287b46866f1f7177ca80f1dcf672ee1"
+        },
+        {
+          "id": "mauritius-flag-clipart-002-free-flying-silk-wave",
+          "imageSha256": "b855bdfe0178091e41c7e343b0574c1a617500543b9c93a217ed27ed7966654f"
+        },
+        {
+          "id": "mauritius-flag-clipart-003-brass-ceremonial-stand",
+          "imageSha256": "8981d6ed77c3bed6c7f853090ab55b8a155af5d14c6c77d742e11150393dbd73"
+        }
+      ]
+    },
+    "kiribati-flag": {
+      "status": "checked-against-catalog",
+      "intro": "Kiribati flag designs feature the golden bird and sun on flags displayed alone and in community scenes.",
+      "sourceSha256": "0b5ca45174ec2ab9d33ce812e4f8b8a6d2279ba6d30b03e13d83978ee7f68a2d",
+      "checkedAt": "2026-11-03T03:08:53.565Z",
+      "evidence": [
+        {
+          "id": "kiribati-flag-clipart-001-wooden-hand-pole",
+          "imageSha256": "ea42accef1650452441604995fad4a89a1def4f1b57a069737be48361f086662"
+        },
+        {
+          "id": "kiribati-flag-clipart-002-free-flying-silk-wave",
+          "imageSha256": "d11f1b223be9824324726f6391f6d583bf5d8dfa8945c02b2c18cb06a796a53d"
+        },
+        {
+          "id": "kiribati-flag-clipart-003-brass-ceremonial-stand",
+          "imageSha256": "ace18d9a037b7ae45a09fd12ec796636f79ffcb6f33a79bc3fabe2fff065e639"
+        }
+      ]
+    },
+    "kuwait-flag": {
+      "status": "checked-against-catalog",
+      "intro": "Kuwait flag illustrations show the striped flag and black trapezoid on displays and in community scenes.",
+      "sourceSha256": "aa6319ded0c6d2347a985938e21c85028b08597586d34f38b8d0cf460e496b76",
+      "checkedAt": "2026-11-03T03:08:52.907Z",
+      "evidence": [
+        {
+          "id": "kuwait-flag-clipart-001-wooden-hand-pole",
+          "imageSha256": "d726ea8bf20b3d1955031dc295ca3de9bce473475dc296123eddca53850a57b0"
+        },
+        {
+          "id": "kuwait-flag-clipart-002-free-flying-silk-wave",
+          "imageSha256": "0cadb857f0c7b499eb63b4221b25825a08cf4c6f12b555b305062865c7dd7fc9"
+        },
+        {
+          "id": "kuwait-flag-clipart-003-brass-ceremonial-stand",
+          "imageSha256": "6ac7af2b02259e9d38e54fe26fe75adb478b01bb4b02b53736ffe1dd232c6fbe"
+        }
+      ]
+    },
+    "liberia-flag": {
+      "status": "checked-against-catalog",
+      "intro": "Liberia flag illustrations show its single white star and stripes on displays and in community scenes.",
+      "sourceSha256": "fde6f8c451710f3220c272a69f4cc95eedc75cc4e8fc596139dd30f03646de52",
+      "checkedAt": "2026-11-03T03:24:47.295Z",
+      "evidence": [
+        {
+          "id": "liberia-flag-clipart-001-wooden-hand-pole",
+          "imageSha256": "7d57def1ed0de0288d85528dec1ce9a0f11afadb3cf2851b1b092ec122512dde"
+        },
+        {
+          "id": "liberia-flag-clipart-002-free-flying-silk-wave",
+          "imageSha256": "ea997c799e075b26632f233f904688e62eaa0e62b872f582b3e91058ac66919c"
+        },
+        {
+          "id": "liberia-flag-clipart-003-brass-ceremonial-stand",
+          "imageSha256": "3cbd03ac9357f0fc9248b9c9ba0d45c57443fffb074e1a441d50f65dc620b898"
+        }
+      ]
+    }
+  }
+}

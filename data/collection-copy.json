@@ -17281,5 +17281,308 @@
       "spain-flag",
       "mexico-flag"
     ]
+  },
+  "election-day": {
+    "description": "Election Day clipart brings together voting equipment, ballots, stickers and people alongside playful civic characters and patriotic designs.",
+    "intro": "Election Day clipart brings together voting equipment, ballots, stickers and people alongside playful civic characters and patriotic designs.",
+    "lead": "Ballots, voters and playful civic designs.",
+    "featured": [
+      "election-day-accessible-ballot-marking-station",
+      "election-day-america-checkmark-mosaic-cartoon-078",
+      "election-day-american-ballot-box-realistic",
+      "election-day-american-flags-election-letterpress",
+      "election-day-autumn-checkmark-pumpkin-cartoon-083",
+      "election-day-autumn-vote-wreath-cartoon-086"
+    ],
+    "chips": [
+      {
+        "label": "Voting equipment",
+        "query": "election day ballot"
+      },
+      {
+        "label": "I Voted",
+        "query": "election day voter"
+      },
+      {
+        "label": "Cartoon designs",
+        "query": "election day cartoon"
+      }
+    ],
+    "heading": "Explore Election Day designs",
+    "paragraphs": [],
+    "related": [
+      "election",
+      "american-flag"
+    ]
+  },
+  "nepal-flag": {
+    "description": "Nepal flag clipart includes double pennant flags, display stands and illustrations of community activities.",
+    "intro": "Nepal flag clipart includes double pennant flags, display stands and illustrations of community activities.",
+    "lead": "Flag displays and community scenes.",
+    "featured": [
+      "nepal-flag-clipart-001-wooden-hand-pole",
+      "nepal-flag-clipart-002-free-flying-silk-wave",
+      "nepal-flag-clipart-003-brass-ceremonial-stand",
+      "nepal-flag-clipart-004-oak-desktop-display",
+      "nepal-flag-clipart-005-silver-table-flag",
+      "nepal-flag-clipart-006-wind-filled-cotton"
+    ],
+    "chips": [
+      {
+        "label": "Flag displays",
+        "query": "nepal flag stand"
+      },
+      {
+        "label": "Community scenes",
+        "query": "nepal flag people"
+      },
+      {
+        "label": "Black and white",
+        "query": "nepal flag drawing"
+      }
+    ],
+    "heading": "Explore Nepal Flag designs",
+    "paragraphs": [],
+    "related": []
+  },
+  "italy-flag": {
+    "description": "Nepal flag clipart includes Italian tricolor flags, display stands and illustrations of community activities.",
+    "intro": "Nepal flag clipart includes Italian tricolor flags, display stands and illustrations of community activities.",
+    "lead": "Flag displays and community scenes.",
+    "featured": [
+      "italy-flag-clipart-001-wooden-hand-pole",
+      "italy-flag-clipart-002-free-flying-silk-wave",
+      "italy-flag-clipart-003-brass-ceremonial-stand",
+      "italy-flag-clipart-004-oak-desktop-display",
+      "italy-flag-clipart-005-silver-table-flag",
+      "italy-flag-clipart-006-wind-filled-cotton"
+    ],
+    "chips": [
+      {
+        "label": "Flag displays",
+        "query": "italy flag stand"
+      },
+      {
+        "label": "Community scenes",
+        "query": "italy flag people"
+      },
+      {
+        "label": "Black and white",
+        "query": "italy flag drawing"
+      }
+    ],
+    "heading": "Explore Italy Flag designs",
+    "paragraphs": [],
+    "related": []
+  },
+  "lithuania-flag": {
+    "description": "Lithuanian flag clipart includes tricolor flags, display stands and illustrated community scenes.",
+    "intro": "Lithuanian flag clipart includes tricolor flags, display stands and illustrated community scenes.",
+    "lead": "Flag displays and community scenes.",
+    "featured": [
+      "lithuania-flag-clipart-001-wooden-hand-pole",
+      "lithuania-flag-clipart-002-free-flying-silk-wave",
+      "lithuania-flag-clipart-003-brass-ceremonial-stand",
+      "lithuania-flag-clipart-004-oak-desktop-display",
+      "lithuania-flag-clipart-005-silver-table-flag",
+      "lithuania-flag-clipart-006-wind-filled-cotton"
+    ],
+    "chips": [
+      {
+        "label": "Flag displays",
+        "query": "lithuania flag stand"
+      },
+      {
+        "label": "Community scenes",
+        "query": "lithuania flag people"
+      },
+      {
+        "label": "Black and white",
+        "query": "lithuania flag drawing"
+      }
+    ],
+    "heading": "Explore Lithuania Flag designs",
+    "paragraphs": [],
+    "related": []
+  },
+  "marshall-islands-flag": {
+    "description": "Marshall Islands flag clipart includes island flags, display stands and illustrated community scenes.",
+    "intro": "Marshall Islands flag clipart includes island flags, display stands and illustrated community scenes.",
+    "lead": "Flag displays and community scenes.",
+    "featured": [
+      "marshall-islands-flag-clipart-001-wooden-hand-pole",
+      "marshall-islands-flag-clipart-002-free-flying-silk-wave",
+      "marshall-islands-flag-clipart-003-brass-ceremonial-stand",
+      "marshall-islands-flag-clipart-004-oak-desktop-display",
+      "marshall-islands-flag-clipart-005-silver-table-flag",
+      "marshall-islands-flag-clipart-006-wind-filled-cotton"
+    ],
+    "chips": [
+      {
+        "label": "Flag displays",
+        "query": "marshall islands flag stand"
+      },
+      {
+        "label": "Community scenes",
+        "query": "marshall islands flag people"
+      },
+      {
+        "label": "Black and white",
+        "query": "marshall islands flag drawing"
+      }
+    ],
+    "heading": "Explore Marshall Islands Flag designs",
+    "paragraphs": [],
+    "related": []
+  },
+  "mauritania-flag": {
+    "description": "Mauritania flag clipart includes crescent flags, display stands and illustrated community scenes.",
+    "intro": "Mauritania flag clipart includes crescent flags, display stands and illustrated community scenes.",
+    "lead": "Flag displays and community scenes.",
+    "featured": [
+      "mauritania-flag-clipart-001-wooden-hand-pole",
+      "mauritania-flag-clipart-002-free-flying-silk-wave",
+      "mauritania-flag-clipart-003-brass-ceremonial-stand",
+      "mauritania-flag-clipart-004-oak-desktop-display",
+      "mauritania-flag-clipart-005-silver-table-flag",
+      "mauritania-flag-clipart-006-wind-filled-cotton"
+    ],
+    "chips": [
+      {
+        "label": "Flag displays",
+        "query": "mauritania flag stand"
+      },
+      {
+        "label": "Community scenes",
+        "query": "mauritania flag people"
+      },
+      {
+        "label": "Black and white",
+        "query": "mauritania flag drawing"
+      }
+    ],
+    "heading": "Explore Mauritania Flag designs",
+    "paragraphs": [],
+    "related": []
+  },
+  "mauritius-flag": {
+    "description": "Mauritius flag clipart includes striped flags, display stands and illustrated community scenes.",
+    "intro": "Mauritius flag clipart includes striped flags, display stands and illustrated community scenes.",
+    "lead": "Flag displays and community scenes.",
+    "featured": [
+      "mauritius-flag-clipart-001-wooden-hand-pole",
+      "mauritius-flag-clipart-002-free-flying-silk-wave",
+      "mauritius-flag-clipart-003-brass-ceremonial-stand",
+      "mauritius-flag-clipart-004-oak-desktop-display",
+      "mauritius-flag-clipart-005-silver-table-flag",
+      "mauritius-flag-clipart-006-wind-filled-cotton"
+    ],
+    "chips": [
+      {
+        "label": "Flag displays",
+        "query": "mauritius flag stand"
+      },
+      {
+        "label": "Community scenes",
+        "query": "mauritius flag people"
+      },
+      {
+        "label": "Black and white",
+        "query": "mauritius flag drawing"
+      }
+    ],
+    "heading": "Explore Mauritius Flag designs",
+    "paragraphs": [],
+    "related": []
+  },
+  "kiribati-flag": {
+    "description": "Kiribati flag designs feature the golden bird and sun on flags displayed alone and in community scenes.",
+    "intro": "Kiribati flag designs feature the golden bird and sun on flags displayed alone and in community scenes.",
+    "lead": "Flag displays and community scenes.",
+    "featured": [
+      "kiribati-flag-clipart-001-wooden-hand-pole",
+      "kiribati-flag-clipart-002-free-flying-silk-wave",
+      "kiribati-flag-clipart-003-brass-ceremonial-stand",
+      "kiribati-flag-clipart-004-oak-desktop-display",
+      "kiribati-flag-clipart-005-silver-table-flag",
+      "kiribati-flag-clipart-006-wind-filled-cotton"
+    ],
+    "chips": [
+      {
+        "label": "Flag displays",
+        "query": "kiribati flag stand"
+      },
+      {
+        "label": "Community scenes",
+        "query": "kiribati flag people"
+      },
+      {
+        "label": "Black and white",
+        "query": "kiribati flag drawing"
+      }
+    ],
+    "heading": "Explore Kiribati Flag designs",
+    "paragraphs": [],
+    "related": []
+  },
+  "kuwait-flag": {
+    "description": "Kuwait flag illustrations show the striped flag and black trapezoid on displays and in community scenes.",
+    "intro": "Kuwait flag illustrations show the striped flag and black trapezoid on displays and in community scenes.",
+    "lead": "Flag displays and community scenes.",
+    "featured": [
+      "kuwait-flag-clipart-001-wooden-hand-pole",
+      "kuwait-flag-clipart-002-free-flying-silk-wave",
+      "kuwait-flag-clipart-003-brass-ceremonial-stand",
+      "kuwait-flag-clipart-004-oak-desktop-display",
+      "kuwait-flag-clipart-005-silver-table-flag",
+      "kuwait-flag-clipart-006-wind-filled-cotton"
+    ],
+    "chips": [
+      {
+        "label": "Flag displays",
+        "query": "kuwait flag stand"
+      },
+      {
+        "label": "Community scenes",
+        "query": "kuwait flag people"
+      },
+      {
+        "label": "Black and white",
+        "query": "kuwait flag drawing"
+      }
+    ],
+    "heading": "Explore Kuwait Flag designs",
+    "paragraphs": [],
+    "related": []
+  },
+  "liberia-flag": {
+    "description": "Liberia flag illustrations show its single white star and stripes on displays and in community scenes.",
+    "intro": "Liberia flag illustrations show its single white star and stripes on displays and in community scenes.",
+    "lead": "Flag displays and community scenes.",
+    "featured": [
+      "liberia-flag-clipart-001-wooden-hand-pole",
+      "liberia-flag-clipart-002-free-flying-silk-wave",
+      "liberia-flag-clipart-003-brass-ceremonial-stand",
+      "liberia-flag-clipart-004-oak-desktop-display",
+      "liberia-flag-clipart-005-silver-table-flag",
+      "liberia-flag-clipart-006-wind-filled-cotton"
+    ],
+    "chips": [
+      {
+        "label": "Flag displays",
+        "query": "liberia flag stand"
+      },
+      {
+        "label": "Community scenes",
+        "query": "liberia flag people"
+      },
+      {
+        "label": "Black and white",
+        "query": "liberia flag drawing"
+      }
+    ],
+    "heading": "Explore Liberia Flag designs",
+    "paragraphs": [],
+    "related": []
   }
 }
