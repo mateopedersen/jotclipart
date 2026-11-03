@@ -2,13 +2,13 @@ import { isKnownOwnerPdfSource, isOwnerDirectedPdfOriginal, isOwnerReviewedPdfRe
 
 /** A source-bound owner direction; this is not a claim of PDF color approval. */
 export interface OwnerPdfColorDirection {
-  status: 'OWNER_DIRECTED_ADDITIONAL_PDF_REVIEW_SKIPPED';
+  status: string;
   ownerDirectionSha256: string;
   scopeRevisionSha256: string;
   sourceImageSha256: string;
   originalPdfSha256: string;
-  visualColorApproved: false;
-  visualPairApproved: false;
+  visualColorApproved: boolean;
+  visualPairApproved: boolean;
 }
 
 export interface FileReviewArtwork {
