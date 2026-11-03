@@ -23,7 +23,23 @@
           "id": "elf-ribbon-knot-lesson",
           "imageSha256": "c86a4bc45dd21d38327841b3596235e0b465a93365f47434e537861484f9a5c7"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Elf clipart collection, with {{artworkCount}} illustrations to explore. Cheerful Christmas elves in green outfits, with big pointed ears and playful expressions. Find toy-making helpers, skating friends, gift deliveries, festive lettering and small craft decorations in soft shaded and clean cartoon styles.",
+        "The gallery includes “Elf Tying a Christmas Gift Bow” and “Happy Holidays Lettering with an Elf” among its drawings. Choose a focal image for a personal seasonal card, a winter story page or a family craft, leaving room for your own message."
+      ],
+      "paragraphSourceSha256": "c33815b72cfa316635e19eb7a801fed4f502e2db6f7f9f1d52d5ff701be3fbf8",
+      "paragraphEvidence": [
+        {
+          "id": "elf-wrapping-a-parcel",
+          "imageSha256": "826ae02478a51a4727bb2cf9e6c48dd10dac086aea345e8b72aeef55a7eb5f38"
+        },
+        {
+          "id": "elf-happy-holidays-lettering",
+          "imageSha256": "21bbf7b88b1d56b065ed99029272201fac5e793161188ab2852c2c69658209b3"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.544Z"
     }
   }
 }

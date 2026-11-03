@@ -23,7 +23,23 @@
           "id": "2027-outline-happy-year",
           "imageSha256": "57e0d860f4c22c29c709ab47f28cb1f760e7de8f61e06f1589da0f41afd649dc"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 2027 clipart collection, with {{artworkCount}} illustrations to explore. Find 2027 lettering for New Year greetings, all twelve months, graduation and personal goals. Choose embossed numerals, formal Class of 2027 graphics, cheerful character stickers, business motifs or separate black-and-white coloring designs.",
+        "The gallery includes “March 2027 Kite Lettering” and “Happy New Year 2027 Patchwork Coloring” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "a04a565a3935d569a236cd74d873975849b261a726d5a20a32e1f5e6f3546cd5",
+      "paragraphEvidence": [
+        {
+          "id": "2027-month-march",
+          "imageSha256": "933b9b481c1b909affe81ead426e6c8f87f1a42cc79ae6c6cba8287565e9e652"
+        },
+        {
+          "id": "2027-outline-happy-year",
+          "imageSha256": "57e0d860f4c22c29c709ab47f28cb1f760e7de8f61e06f1589da0f41afd649dc"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.527Z"
     }
   }
 }

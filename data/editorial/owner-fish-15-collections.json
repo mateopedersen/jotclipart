@@ -23,7 +23,23 @@
           "id": "curved-catfish-profile-in-ink-clipart",
           "imageSha256": "9eba05b23cea4cb9bc0ff6ea0d7742bc7b82efb72f05d31379afb12aa3d5a0e7"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Catfish clipart collection, with {{artworkCount}} illustrations to explore. Explore whiskered catfish among river stones, submerged roots and water plants, alongside playful characters and detailed black-and-white drawings.",
+        "The gallery includes “Catfish by Tangled Roots” and “Catfish and Salamander by a Rock” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "e4bcc787565dac21be3dc540a0be97c127bce952558d33b782ed55101ff6bfbb",
+      "paragraphEvidence": [
+        {
+          "id": "catfish-by-tangled-roots-clipart",
+          "imageSha256": "311cef61e5a5d13cdffc8f158cc25deed54c243a388c3e6f6a8ff75640c48db5"
+        },
+        {
+          "id": "catfish-and-salamander-by-a-rock-clipart",
+          "imageSha256": "10bdcade06705be7fe9e614fcf80af0d9b24e0af0365ff6e5fafb480b597b9dd"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
     },
     "northern-pike": {
       "status": "checked-against-catalog",
@@ -47,7 +63,23 @@
           "id": "pike-playing-a-harp-clipart",
           "imageSha256": "a98f1ebbce4ae0f831be213d154cdfa47504fec6bc0fe946d52aafd7c01e054e"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Northern Pike clipart collection, with {{artworkCount}} illustrations to explore. Long-bodied pike weave through reeds, branches and underwater scenes in this collection of colorful fish and monochrome illustrations.",
+        "The gallery includes “Pike and a Reed Loop” and “Pike Between Curved Reeds” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "6d8fca031dbc90d5b3efdc02be9f0450cd63dbe07e6e218bdca46a840e7e1047",
+      "paragraphEvidence": [
+        {
+          "id": "pike-and-a-reed-loop-clipart",
+          "imageSha256": "f48b6a57eda0e5888974f0dd67ab0733caeee72bb4169195b3d0a8f85861030f"
+        },
+        {
+          "id": "pike-between-curved-reeds-clipart",
+          "imageSha256": "b49df26e911d7df06b232178bead652887288c3db60bd7ff7cb81080c7b9b897"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
     },
     "flounder": {
       "status": "checked-against-catalog",
@@ -71,7 +103,23 @@
           "id": "two-flounder-in-ink-clipart",
           "imageSha256": "c20165b8d22e1c75f9fba583176939640f93b1977112f67a4e48f48419b72002"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Flounder clipart collection, with {{artworkCount}} illustrations to explore. Flatfish glide over sandy seabeds, rest beside shells and appear as cheerful characters in these flounder illustrations.",
+        "The gallery includes “Flounder on Sandy Bottom” and “Flounder Over Sand Ridges” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "38bb5315b616302bb243e4a8ecd77cfc81d6ff252253fc82a52e6844867f2464",
+      "paragraphEvidence": [
+        {
+          "id": "flounder-on-sandy-bottom-clipart",
+          "imageSha256": "d2993540df9606b0a39aff8827deca2b3b7e8805a399bbce650f528669569a7d"
+        },
+        {
+          "id": "flounder-over-sand-ridges-clipart",
+          "imageSha256": "bc05ea6cbddbc8a10f92640a2bae5df4941b7b71bd602680466655e41dfe2eac"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
     },
     "salmon": {
       "status": "checked-against-catalog",
@@ -95,7 +143,23 @@
           "id": "salmon-over-a-stone-in-ink-clipart",
           "imageSha256": "1bbccf52985ab3993389170a8427f0ed67f74ac5183a1e47e408d435ca9141a0"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Salmon clipart collection, with {{artworkCount}} illustrations to explore. Find salmon leaping through rapids, swimming in cool streams and appearing in imaginative character scenes and ink-style drawings.",
+        "The gallery includes “Salmon Leaping Through Water” and “Salmon Over a Stone in Ink” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "5e52d54d501d0e9c5a2f2c5e337d515f3bb56084eb5464df01d73dfe044b244f",
+      "paragraphEvidence": [
+        {
+          "id": "salmon-leaping-through-water-clipart",
+          "imageSha256": "adf0180784cc9bf900c8cc7f2a57dc14fcaa326443adf1af5f484642f84a2cc4"
+        },
+        {
+          "id": "salmon-over-a-stone-in-ink-clipart",
+          "imageSha256": "1bbccf52985ab3993389170a8427f0ed67f74ac5183a1e47e408d435ca9141a0"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
     },
     "bass": {
       "status": "checked-against-catalog",
@@ -119,7 +183,23 @@
           "id": "bass-and-a-waterfall-in-ink-clipart",
           "imageSha256": "a55c7d36b78bb57612ca3b68e5f6ed243a16274b4f1542e0bb2556fd27fca31e"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Bass clipart collection, with {{artworkCount}} illustrations to explore. Browse bass in underwater habitats, lively splashes and whimsical scenes, with colorful fish and black-and-white artwork.",
+        "The gallery includes “Bass Beneath Autumn Leaves” and “Bass and a Waterfall in Ink” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "75aaec9deef692e0f672d95ce857d4ea471bb744ff2054977877fc3c05977763",
+      "paragraphEvidence": [
+        {
+          "id": "bass-beneath-autumn-leaves-clipart",
+          "imageSha256": "d1041e25f8c945bcf844a47b0451110e5c4a44a7281d68ae2247409a06f7161d"
+        },
+        {
+          "id": "bass-and-a-waterfall-in-ink-clipart",
+          "imageSha256": "a55c7d36b78bb57612ca3b68e5f6ed243a16274b4f1542e0bb2556fd27fca31e"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
     },
     "trout": {
       "status": "checked-against-catalog",
@@ -143,7 +223,23 @@
           "id": "three-trout-profiles-in-ink-clipart",
           "imageSha256": "0013d1844cabecc74ce74ba33f2202cfa7e0461d417352907ea8f0eb26b91c93"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Trout clipart collection, with {{artworkCount}} illustrations to explore. From spotted trout in flowing streams to woodland details and expressive characters, explore a variety of freshwater fish illustrations.",
+        "The gallery includes “Trout Rising Toward an Insect” and “Three Trout Profiles in Ink” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "2cd18f2a640edb82963a7ce606cea7bc5f5f7383ef71d157d229525a4c0df9ae",
+      "paragraphEvidence": [
+        {
+          "id": "trout-rising-toward-an-insect-clipart",
+          "imageSha256": "bb8f7138f074bdb0e8435bf85d196eb499c36d5ae6b31ba94f4bf1660aac13b3"
+        },
+        {
+          "id": "three-trout-profiles-in-ink-clipart",
+          "imageSha256": "0013d1844cabecc74ce74ba33f2202cfa7e0461d417352907ea8f0eb26b91c93"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
     },
     "tuna": {
       "status": "checked-against-catalog",
@@ -167,7 +263,23 @@
           "id": "tuna-and-a-diving-bell-in-ink-clipart",
           "imageSha256": "6f99e27f12c71f24effebbcbc10d80b0cdccde6110bb3e610e68799ba65d623e"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Tuna clipart collection, with {{artworkCount}} illustrations to explore. Discover streamlined tuna among ocean waves, small fish and playful nautical scenes, plus detailed monochrome designs.",
+        "The gallery includes “Yellow-Finned Tuna Profile” and “Tuna and a Diving Bell in Ink” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "6e80dea52534c0e863b6ac56fda1c46d3869864d93e94539777e3f11153dc1eb",
+      "paragraphEvidence": [
+        {
+          "id": "yellow-finned-tuna-profile-clipart",
+          "imageSha256": "27703a7c2821bdc660e9b09e55b10a672db8409940a129604dffde0c8b91f482"
+        },
+        {
+          "id": "tuna-and-a-diving-bell-in-ink-clipart",
+          "imageSha256": "6f99e27f12c71f24effebbcbc10d80b0cdccde6110bb3e610e68799ba65d623e"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
     },
     "bluegill": {
       "status": "checked-against-catalog",
@@ -191,7 +303,23 @@
           "id": "bluegill-framed-by-lily-stems-clipart",
           "imageSha256": "08f26ab9aea691947ff617d6749b43586af6c4fea1cb1f1262372a5e47dac306"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Bluegill clipart collection, with {{artworkCount}} illustrations to explore. Bluegill swim among pond plants, pebbles and tiny aquatic creatures in a mix of natural scenes and cheerful characters.",
+        "The gallery includes “Bluegill Above Water Plants” and “Bluegill Framed by Lily Stems” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "7792bab4441b75c542b294d038df5a82912ac6f10511950bfd0770937ae82e92",
+      "paragraphEvidence": [
+        {
+          "id": "bluegill-above-water-plants-clipart",
+          "imageSha256": "0b86357bd483a52e5e653a6b04b4c8a04b47dea96840beea47b0b169a0fe2f2b"
+        },
+        {
+          "id": "bluegill-framed-by-lily-stems-clipart",
+          "imageSha256": "08f26ab9aea691947ff617d6749b43586af6c4fea1cb1f1262372a5e47dac306"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
     },
     "largemouth-bass": {
       "status": "checked-against-catalog",
@@ -215,7 +343,23 @@
           "id": "largemouth-bass-beneath-hanging-roots-clipart",
           "imageSha256": "cc708410f5dbed9967b19a84d41d7d688268e9e4f4f1f81ad01d87ada63af3e3"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Largemouth Bass clipart collection, with {{artworkCount}} illustrations to explore. Explore wide-mouthed bass around lily pads, submerged roots and reeds, with playful pond characters and detailed ink drawings.",
+        "The gallery includes “Largemouth Bass Above Small Fish” and “Largemouth Bass Beneath Hanging Roots” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "edecb7d762420891dd8be2dd2fd7e26501ef22a17a048637c7a2a0bb4098551e",
+      "paragraphEvidence": [
+        {
+          "id": "largemouth-bass-above-small-fish-clipart",
+          "imageSha256": "4726084d8e7e21b95778fc704e26daaf269181a78077ebe2eac76af6868c8bf5"
+        },
+        {
+          "id": "largemouth-bass-beneath-hanging-roots-clipart",
+          "imageSha256": "cc708410f5dbed9967b19a84d41d7d688268e9e4f4f1f81ad01d87ada63af3e3"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
     },
     "rainbow-trout": {
       "status": "checked-against-catalog",
@@ -239,7 +383,23 @@
           "id": "rainbow-trout-curved-in-profile-drawing-clipart",
           "imageSha256": "d38777008b95c7d6087e68f1b3c0ece7de8efa6354aa58f5ea2ec9cec6f1c617"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Rainbow Trout clipart collection, with {{artworkCount}} illustrations to explore. Pink-striped trout leap through streams, shelter beneath roots and appear beside water lilies, butterflies and other pond details.",
+        "The gallery includes “Rainbow Trout Leaping From a Stream” and “Rainbow Trout and Tall Pond Leaves” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "184abbf0b85f8828b2cba4d21167e65fbdedeccd66adae692f80d5da516daea2",
+      "paragraphEvidence": [
+        {
+          "id": "rainbow-trout-leaping-from-a-stream-clipart",
+          "imageSha256": "49f5e8027a6b9ae323be35f145305a24c3697196000808649474e0e790a59385"
+        },
+        {
+          "id": "rainbow-trout-and-tall-pond-leaves-clipart",
+          "imageSha256": "7479c245bd1c65adbe1b325126bc5f89dcd4c88d0ef83148114f555562e6abd2"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
     },
     "red-snapper": {
       "status": "checked-against-catalog",
@@ -263,7 +423,23 @@
           "id": "red-snapper-examining-coral-drawing-clipart",
           "imageSha256": "3459f61f54b0e63fa6465157ea10df42cfa09793c6a37f4628724effe6e4e25f"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Red Snapper clipart collection, with {{artworkCount}} illustrations to explore. Red fish swim past corals, shells and sea fans in these reef scenes, with colorful character art and detailed line drawings.",
+        "The gallery includes “Red Snapper Above Reef Plants” and “Red Snapper Above Sand Dollars and Shells” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "094f7c195bd34278fcb2ea02cff72e92fbb1fe477d296177862cfd58b366611f",
+      "paragraphEvidence": [
+        {
+          "id": "red-snapper-above-reef-plants-clipart",
+          "imageSha256": "5e07043ae1b45304829968fe4518570b9f615908b7392f73dd89a269bbfad391"
+        },
+        {
+          "id": "red-snapper-above-sand-dollars-and-shells-clipart",
+          "imageSha256": "799b32ebce1940f99bdcffad05633795015013505ab4827dba9c37adc82fa144"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
     },
     "walleye": {
       "status": "checked-against-catalog",
@@ -287,7 +463,23 @@
           "id": "walleye-resting-in-river-plants-clipart",
           "imageSha256": "54196893e4194b3345d91563299df8306917735bc5660d114ae68cdeaa466676"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Walleye clipart collection, with {{artworkCount}} illustrations to explore. Golden walleye swim above stony riverbeds, beneath ice and among underwater roots, with creative character scenes and ink drawings.",
+        "The gallery includes “Walleye With a Starry Orb” and “Walleye and Small Striped Fish” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "7a2e7d057373910253dcaf3b325fda4f49a34b7fe81825cb453d9d57d4fa6252",
+      "paragraphEvidence": [
+        {
+          "id": "walleye-with-a-starry-orb-clipart",
+          "imageSha256": "17a1b652988b1da17693a0e54d79a6bec6381f35f7fd818fa61c6824e1fbbb96"
+        },
+        {
+          "id": "walleye-and-small-striped-fish-clipart",
+          "imageSha256": "c463141cac1b73d4c99258584cb9dc157f63550ffde9b10284d2eb7f8d25e7b5"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
     },
     "mahi-mahi": {
       "status": "checked-against-catalog",
@@ -311,7 +503,23 @@
           "id": "mahi-mahi-and-butterfly-drawing-clipart",
           "imageSha256": "75e50331afcc1be6eb4e1c06f5f999edb1e9e90e6ff91f1ee0a7044750358cd7"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Mahi Mahi clipart collection, with {{artworkCount}} illustrations to explore. Bright blue, green and gold mahi-mahi swim through ocean currents and seaweed, alongside tropical characters and monochrome art.",
+        "The gallery includes “Green and Gold Mahi-Mahi” and “Mahi-Mahi and Butterfly Drawing” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "d83d81ad552e433be5ee966635cd687e364675412c5723cde06236cb361a95f1",
+      "paragraphEvidence": [
+        {
+          "id": "green-and-gold-mahi-mahi-clipart",
+          "imageSha256": "6eb7580ed159eb183216b2c17debaf0483e6036784c04b453ebb86b5330c7127"
+        },
+        {
+          "id": "mahi-mahi-and-butterfly-drawing-clipart",
+          "imageSha256": "75e50331afcc1be6eb4e1c06f5f999edb1e9e90e6ff91f1ee0a7044750358cd7"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
     },
     "swordfish": {
       "status": "checked-against-catalog",
@@ -335,7 +543,23 @@
           "id": "swordfish-and-hanging-bell-drawing-clipart",
           "imageSha256": "ba60d89e52e9f144c81bed60c7cfed78fc852350dd183ef3f09b7ffade580598"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Swordfish clipart collection, with {{artworkCount}} illustrations to explore. Long-billed ocean fish dive through waves, swim beside squid and appear in playful character scenes and black-and-white drawings.",
+        "The gallery includes “Swordfish Cutting Through a Splash” and “Swordfish and Hanging Bell Drawing” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "bb81b644fa5f8d5cc1ae920ce9e164beb247b61bb79a13d167b67526d21304dd",
+      "paragraphEvidence": [
+        {
+          "id": "swordfish-cutting-through-a-splash-clipart",
+          "imageSha256": "84af9d7ac830eeb20110eb05f693aa9bb5da2f2288ff24ac40b3b5dc34f7d85e"
+        },
+        {
+          "id": "swordfish-and-hanging-bell-drawing-clipart",
+          "imageSha256": "ba60d89e52e9f144c81bed60c7cfed78fc852350dd183ef3f09b7ffade580598"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
     },
     "marlin": {
       "status": "checked-against-catalog",
@@ -359,7 +583,23 @@
           "id": "marlin-carrying-a-letter-drawing-clipart",
           "imageSha256": "2fa64a785aae850afccc1886415dd23e9871388028d278a187299addec691696"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Marlin clipart collection, with {{artworkCount}} illustrations to explore. Striped marlin leap through ocean spray, follow schools of fish and bring a nautical touch to colorful and monochrome illustrations.",
+        "The gallery includes “Blue Marlin Leaping From the Ocean” and “Marlin Carrying a Letter Drawing” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "6e1f0c29f75edb27715b194d704f5cfcdaac5a73cd5a0970f97b5bc9752fde82",
+      "paragraphEvidence": [
+        {
+          "id": "blue-marlin-leaping-from-the-ocean-clipart",
+          "imageSha256": "95cc1a74dfe89e66618b3cde64da920d821bce9766b00abb96aa57ad7285a7d9"
+        },
+        {
+          "id": "marlin-carrying-a-letter-drawing-clipart",
+          "imageSha256": "2fa64a785aae850afccc1886415dd23e9871388028d278a187299addec691696"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
     }
   }
 }

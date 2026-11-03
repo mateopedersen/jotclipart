@@ -19,7 +19,23 @@
           "id": "up-adventure-savings-jar-clipart",
           "imageSha256": "e90191d99f854782b653421f04eb5e32bbcfbd09776ec02e076dc864097f4d4c"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Up Movie clipart collection, with {{artworkCount}} illustrations to explore. Up Movie illustrations include the balloon-lifted house, Kevin, young Ellie and the dog pack. Adventure books, camping gear, flying objects and familiar keepsakes accompany the film characters in color and black-and-white drawings.",
+        "The gallery includes “Green-Tiled Fireplace and Keepsakes” and “Adventure Route Across an Open Map” among its drawings. Plan a personal creative notebook, a story activity or an entertainment-themed craft, matching the subject and composition to your own idea."
+      ],
+      "paragraphSourceSha256": "21e595e4299ff4411849aca2bb7896501de2cb434216c35d72c81b608eba70ef",
+      "paragraphEvidence": [
+        {
+          "id": "up-adventure-living-room-mantel-clipart",
+          "imageSha256": "c371bfec7d437505d51654e713c311c678bcd535f892f27ce8ddf40c08b534d9"
+        },
+        {
+          "id": "up-adventure-route-map-black-white-clipart",
+          "imageSha256": "8feea6f0e79a2c557aa7f41db13f6e31a167638ef4145bc574cbeadb56cadb32"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z"
     },
     "up": {
       "status": "checked-against-catalog",
@@ -39,7 +55,23 @@
           "id": "up-direction-outline-pointing-hand",
           "imageSha256": "18f6ceb978655295b84e208dd3fd5d7c767739647bad7b612758089cb6c69e3d"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Up clipart collection, with {{artworkCount}} illustrations to explore. Up arrows, pointing hands and stair-climbing characters show direction and movement. Choose road signs, classroom word cards, rising balloons, upload symbols or black-and-white outlines; the collection also includes a wheelchair ramp, a growing sunflower and an ascending mountain trail.",
+        "The gallery includes “Blue Upward Arrow Road Sign” and “Wheelchair User Ascending a Ramp” among its drawings. Create a classroom activity, a personal study page or a learning journal, choosing the illustration that supports the idea you want to explain."
+      ],
+      "paragraphSourceSha256": "169faf07e530a0084d9071fccd1d38ef15e2477db18f2a84e2e58498f44f9d8e",
+      "paragraphEvidence": [
+        {
+          "id": "up-direction-upward-direction-road-sign",
+          "imageSha256": "61df77e2e99ed745269e26092ae5678a91336741c21b0c45e148bdf1590f6044"
+        },
+        {
+          "id": "up-direction-wheelchair-ramp-up",
+          "imageSha256": "a62f50051c95bc825d6961cecbf2ae2811607673bec6f7dcbbf1b81fc20f7964"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z"
     }
   }
 }

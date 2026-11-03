@@ -4,7 +4,7 @@
     "11": {
       "status": "checked-against-catalog",
       "sourceSha256": "de86023080eafc6334896097bbc945bd6d231b19c58b872914db6a7d741d91c9",
-      "intro": "Two matching digits appear as folded paper, balloons, stone sculptures and little train cargo. Travel tags, comic bursts and painted lettering give these 11 illustrations distinct settings.",
+      "intro": "Two matching digits appear as folded paper, balloons, stone sculptures and little train cargo. Travel tags, comic bursts and painted lettering give the numeral illustrations distinct settings.",
       "checkedAt": "2026-10-31T09:37:00.107Z",
       "evidence": [
         {
@@ -15,7 +15,23 @@
           "id": "11-041",
           "imageSha256": "c88ec15cbd3aa1d48f5f405db5008f513ff03165ff8478ef6eb1fb0e8d2d5d38"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 11 clipart collection, with {{artworkCount}} illustrations to explore. Two matching digits appear as folded paper, balloons, stone sculptures and little train cargo. Travel tags, comic bursts and painted lettering give the numeral illustrations distinct settings.",
+        "The gallery includes “Folded Coral and Teal Number 11” and “Number 11 Built from Stacked Books” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "8d8f7c8cce0eae8f89d13632fec4834626c82989bd0c00b4d83a364937c5222b",
+      "paragraphEvidence": [
+        {
+          "id": "11-001",
+          "imageSha256": "53afdc1b7b306904c94da784733981d571b833562b8d4f529b3f8833f3a19b28"
+        },
+        {
+          "id": "11-041",
+          "imageSha256": "c88ec15cbd3aa1d48f5f405db5008f513ff03165ff8478ef6eb1fb0e8d2d5d38"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.551Z"
     },
     "13": {
       "status": "checked-against-catalog",
@@ -31,7 +47,23 @@
           "id": "13-041",
           "imageSha256": "baaa45ef2eacb7cd59f3a3c6f6fa75ac3586725390f4ef6297969dd9896c06e8"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 13 clipart collection, with {{artworkCount}} illustrations to explore. Ribbon folds, cookies, candy canes and ornate gates turn 13 into varied number illustrations. The ink designs include zipper construction and domino arrangements.",
+        "The gallery includes “13 Layered Paper Numerals” and “13 Flying Bird Line Art” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "3d198d0bdd1b4dfefe7f32b69ff1733e06711caee72b6206fb0521a4e4b62131",
+      "paragraphEvidence": [
+        {
+          "id": "13-001",
+          "imageSha256": "1065e58a7e4c35ed625616326097c8af1642841282f8d3df1f139e291c99bf5f"
+        },
+        {
+          "id": "13-041",
+          "imageSha256": "baaa45ef2eacb7cd59f3a3c6f6fa75ac3586725390f4ef6297969dd9896c06e8"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.551Z"
     },
     "19": {
       "status": "checked-against-catalog",
@@ -47,7 +79,23 @@
           "id": "19-041",
           "imageSha256": "63f05afd48a0f8aadc6c2024c76997ae1143cfe5952b6c2f54eb760c1bced6a1"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 19 clipart collection, with {{artworkCount}} illustrations to explore. Find 19 formed from paper, wood, sushi, flowering vines and paper curls. Roller-skate scenes and calendars add context, while contour lines and mechanical parts offer different outline treatments.",
+        "The gallery includes “19 Folded Paper Digits” and “19 Maze Pattern” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "0afa3c469737b57fffb0b8aff075a36f33e6375b8a28fa4a22a63930eeec54db",
+      "paragraphEvidence": [
+        {
+          "id": "19-001",
+          "imageSha256": "d3f995ab2a57ad77c7d555a8878b26a639ce5d0da03cff61ace7067eb6821c12"
+        },
+        {
+          "id": "19-041",
+          "imageSha256": "63f05afd48a0f8aadc6c2024c76997ae1143cfe5952b6c2f54eb760c1bced6a1"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.551Z"
     },
     "20": {
       "status": "checked-against-catalog",
@@ -63,7 +111,23 @@
           "id": "20-041",
           "imageSha256": "75aab0b3c637dc65bbec7895683b27136193d2a19b1936f82e292d3aae376101"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 20 clipart collection, with {{artworkCount}} illustrations to explore. Blue floral ceramics, sun-stamped terracotta and raspberry-topped cakes give the number 20 different personalities. Other drawings use collage, mazes, roads and footprint trails.",
+        "The gallery includes “Blue Floral Ceramic Number 20” and “Swan and Twig Nest Number 20” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "7a10da8823784675915498a496641f603a5ee188017a5596016d946f1ebcb20a",
+      "paragraphEvidence": [
+        {
+          "id": "20-001",
+          "imageSha256": "b65e9a4d8c6bd9bfab214fa59560577720b44e6fe9d17048333d1bc8a9e7d88c"
+        },
+        {
+          "id": "20-041",
+          "imageSha256": "75aab0b3c637dc65bbec7895683b27136193d2a19b1936f82e292d3aae376101"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.551Z"
     },
     "25": {
       "status": "checked-against-catalog",
@@ -79,7 +143,23 @@
           "id": "25-041",
           "imageSha256": "9ba30937dcbf442f4264d5882f8cba84002afba668ee9f82e62d1f11029ceb81"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 25 clipart collection, with {{artworkCount}} illustrations to explore. The number 25 appears in ceramic ornaments, stained glass, metal frames and block platforms. People holding plaques and animals balancing signs add small stories to the lettering.",
+        "The gallery includes “25 Teal Ceramic Ornament” and “25 Bold Line Emblem” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "d9eb0984de3aded1aa88569aaa62a9cee28d33c24fe2de7943d2dde4aee73942",
+      "paragraphEvidence": [
+        {
+          "id": "25-001",
+          "imageSha256": "52666e29c9f4e655034b511ee026fd2eea797627af43b31e3a8cadf20e42bbf4"
+        },
+        {
+          "id": "25-041",
+          "imageSha256": "9ba30937dcbf442f4264d5882f8cba84002afba668ee9f82e62d1f11029ceb81"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.551Z"
     },
     "30": {
       "status": "checked-against-catalog",
@@ -95,7 +175,23 @@
           "id": "30-041",
           "imageSha256": "858c1331c924efe9700b2c0c7c15db25cfd7d41592f2e76dce0cae30d52bdf6c"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 30 clipart collection, with {{artworkCount}} illustrations to explore. Ribbon lettering, bead ornaments and macaron-topped cakes offer different ways to display 30. Books, mountains and musical notes create unusual numeral shapes beside clear outlines.",
+        "The gallery includes “30 Folded Paper Numerals” and “30 Sweeping Black Calligraphy” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "fa6a7596338619cbbe5e7f0157e222623aa1555ae3ca3049d09c8d73e29e32f2",
+      "paragraphEvidence": [
+        {
+          "id": "30-001",
+          "imageSha256": "e76faadb319f0d5103a4352e2ef509f84b57ad827a13ea8c4fa2cf2fadb0ba95"
+        },
+        {
+          "id": "30-041",
+          "imageSha256": "858c1331c924efe9700b2c0c7c15db25cfd7d41592f2e76dce0cae30d52bdf6c"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.551Z"
     },
     "50": {
       "status": "checked-against-catalog",
@@ -111,7 +207,23 @@
           "id": "50-041",
           "imageSha256": "498ff2fc2f6450a10a934b4984a24909ce42369e0ce06c6a7859e212539300df"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 50 clipart collection, with {{artworkCount}} illustrations to explore. Faceted rainbow digits, sea-glass details and wax seals give 50 contrasting textures. A ring box, an astronaut's flag and musical lettering turn the number into different scenes.",
+        "The gallery includes “50 Faceted Rainbow Numerals” and “Swans beneath 50” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "b949627e580db14d4b1a0859fc12a84f16ec631ede2fcd0638384727cc1ac8c5",
+      "paragraphEvidence": [
+        {
+          "id": "50-001",
+          "imageSha256": "9d65355cd5df9787d1166298199b7d3c5d50e570858866cd55cc1c3a76f9d3f8"
+        },
+        {
+          "id": "50-041",
+          "imageSha256": "498ff2fc2f6450a10a934b4984a24909ce42369e0ce06c6a7859e212539300df"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.551Z"
     },
     "67": {
       "status": "checked-against-catalog",
@@ -127,7 +239,23 @@
           "id": "67-041",
           "imageSha256": "e783b3ca0c9a7b8783475370a84a1989be74f89545da3c468d1c7ba3eca7da64"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 67 clipart collection, with {{artworkCount}} illustrations to explore. A waving child, banner-carrying origami fox and astronaut bring 67 into character scenes. Glass numerals, printing blocks and a skateboard provide alternatives, including Six Seven lettering.",
+        "The gallery includes “Waving Girl in a Number 67 Shirt” and “Magician Revealing a Six Seven Banner” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "4eff4ebd23ed1ea63fc288d983d7248bdbba6180187bdab043ddd76989378625",
+      "paragraphEvidence": [
+        {
+          "id": "67-001",
+          "imageSha256": "c2d9b1b2d147b480c46dc7f0242b7347b897213a5e9833a0e84edcdf8bb5b2ff"
+        },
+        {
+          "id": "67-041",
+          "imageSha256": "e783b3ca0c9a7b8783475370a84a1989be74f89545da3c468d1c7ba3eca7da64"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.551Z"
     },
     "70": {
       "status": "checked-against-catalog",
@@ -143,7 +271,23 @@
           "id": "70-041",
           "imageSha256": "348dc7ece13ba2bab17aab48067ae045d3a588bc6764e7103ac38c9ca12b3ec7"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 70 clipart collection, with {{artworkCount}} illustrations to explore. Carved wood, floral pennants and pretzel shapes give 70 natural and festive details. Ribbon-cutting scenes, mountain-and-river outlines and applauding hands frame the number differently.",
+        "The gallery includes “Folded Coral and Teal 70” and “Calligraphic 70 with a Quill” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "6b382b97e95cd349755f80c305611bbc62a4884f7339acdfe9d0852e90614e18",
+      "paragraphEvidence": [
+        {
+          "id": "70-001",
+          "imageSha256": "730682ab4293e04e2271ac04f8badf0b0a34d6112663095f0142a1858282bdaf"
+        },
+        {
+          "id": "70-041",
+          "imageSha256": "348dc7ece13ba2bab17aab48067ae045d3a588bc6764e7103ac38c9ca12b3ec7"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.551Z"
     },
     "75": {
       "status": "checked-against-catalog",
@@ -159,7 +303,23 @@
           "id": "75-041",
           "imageSha256": "fc6ee2851953e0c1b81ec987c0195c91aea9d902da3315ae2ecba48d363c5946"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 75 clipart collection, with {{artworkCount}} illustrations to explore. Succulent planters, knitted digits and ribbon bows sit alongside a crescent ornament marked 75. Balloon, lion-crest and Art Deco ticket designs add different compositions.",
+        "The gallery includes “75 Silver-Colored Crescent Ornament” and “75 Maze-Patterned Numerals” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "88d4b3dc0812efeac34e8d7b60d4fdd564a2fb8443cebe9168919fbb3dc27818",
+      "paragraphEvidence": [
+        {
+          "id": "75-001",
+          "imageSha256": "e6d9b7dd32863ecde4e086046988f0e21e3e61525b07bff4871bbecae4d7ace0"
+        },
+        {
+          "id": "75-041",
+          "imageSha256": "fc6ee2851953e0c1b81ec987c0195c91aea9d902da3315ae2ecba48d363c5946"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "80": {
       "status": "checked-against-catalog",
@@ -175,7 +335,23 @@
           "id": "80-041",
           "imageSha256": "3226b7981901762accf9073cb84d381102655583df83046e97abbb124efb47ef"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 80 clipart collection, with {{artworkCount}} illustrations to explore. Number 80 illustrations use layered paper, pebbles and birthday cake. Celebration glasses, a marching drum and a baby elephant carrying a sign add recognizable props.",
+        "The gallery includes “Layered Orange and Teal Number 80” and “Lace-Edged Black Number 80” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "984118931ed2f9840e3281c4391bd5ba19fa0a20703743cd882bb97bb118210a",
+      "paragraphEvidence": [
+        {
+          "id": "80-001",
+          "imageSha256": "1674b99714af87d376af4bb6160125c66b31fe579667280c4541e3e93b0ce131"
+        },
+        {
+          "id": "80-041",
+          "imageSha256": "3226b7981901762accf9073cb84d381102655583df83046e97abbb124efb47ef"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "85": {
       "status": "checked-against-catalog",
@@ -191,7 +367,23 @@
           "id": "85-041",
           "imageSha256": "d5c33c2ff3a4bd11046ab9d5dacd8856accab64b59a1ef7a6ee11c9fbc7603e7"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 85 clipart collection, with {{artworkCount}} illustrations to explore. Botanical amber lettering, wood inlay and a pop-up book give 85 different structures. A hanging sloth, balancing sculpture and paper bird add playful scenes.",
+        "The gallery includes “85 Amber Botanical Numerals” and “Elephant Wearing 85 Blanket” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "6a7855ab7bb85973a260679ccbe0d5c152b550824bd300ae83d9a12e33bdfa37",
+      "paragraphEvidence": [
+        {
+          "id": "85-001",
+          "imageSha256": "4bc0fd511911d068cff0b426084c311fa42f96553c2a8be6a753d2a35889f079"
+        },
+        {
+          "id": "85-041",
+          "imageSha256": "d5c33c2ff3a4bd11046ab9d5dacd8856accab64b59a1ef7a6ee11c9fbc7603e7"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "88": {
       "status": "checked-against-catalog",
@@ -207,7 +399,23 @@
           "id": "88-041",
           "imageSha256": "ce91a769d3bea40abd427466501b174655ad97a78de2a829f18a28ef03387c8e"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 88 clipart collection, with {{artworkCount}} illustrations to explore. Paired eights appear as paper, walking characters, tickets and train loads. A robot-building scene, calligraphic lettering and a hot-air balloon offer other compositions around the digits.",
+        "The gallery includes “88 Folded Paper Digits” and “88 Woodcut Lettering” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "49ba5e4499b2a35ff59e29a3a0fd2615aa32631a10838f80fd237c101759cc6a",
+      "paragraphEvidence": [
+        {
+          "id": "88-001",
+          "imageSha256": "6e2986ed0472cb3f364f7fb7aaaa379a93162c965e472e48d0774e53592cd7be"
+        },
+        {
+          "id": "88-041",
+          "imageSha256": "ce91a769d3bea40abd427466501b174655ad97a78de2a829f18a28ef03387c8e"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "95": {
       "status": "checked-against-catalog",
@@ -223,7 +431,23 @@
           "id": "95-041",
           "imageSha256": "9fc934d1adb377c65eb076c0e5e96c56fe6819e62d81b99346e0cc1915920466"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 95 clipart collection, with {{artworkCount}} illustrations to explore. Cakes, topiary and bowling scores display 95 in small scenes. Battery and percentage graphics are decorative illustrations, while nautical lettering and a book-and-lamp arrangement provide alternatives.",
+        "The gallery includes “Fruit Layer Cake with 95 Candles” and “Ninety Plus Five Equals 95 on a Chalkboard” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "2b01fe78d03bee0b0c703c553dd1f7830d9d6b905dfc6e8f8fd9d2ae14574e9c",
+      "paragraphEvidence": [
+        {
+          "id": "95-001",
+          "imageSha256": "115dfa4fb282b2a53814d8a87de32acbaf86abe1629eb39cb096aba31bdb440e"
+        },
+        {
+          "id": "95-041",
+          "imageSha256": "9fc934d1adb377c65eb076c0e5e96c56fe6819e62d81b99346e0cc1915920466"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "100": {
       "status": "checked-against-catalog",
@@ -239,7 +463,23 @@
           "id": "100-041",
           "imageSha256": "440417c8e88feb627b58bb89033a23fce159939bab533fbc97522fc4539d64dd"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 100 clipart collection, with {{artworkCount}} illustrations to explore. Stand-alone 100 lettering appears beside small celebrations and everyday scenes. Letterpress blocks, a kite, a rocket banner and high-five hands offer different focal points, with mechanical and calendar outlines among the ink drawings.",
+        "The gallery includes “Folded Paper 100 in Coral and Cream” and “Graduation Cap with a 100 Charm Outline” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "b849d37693736ed833b51bbd8721ba2ac3cf56e94fee8b3f8cc7952751f7f24f",
+      "paragraphEvidence": [
+        {
+          "id": "100-001",
+          "imageSha256": "6595f63d6e84d14c9214dfbaa6105042a04f4dc1b13cb57b5e2357b284cf22e1"
+        },
+        {
+          "id": "100-041",
+          "imageSha256": "440417c8e88feb627b58bb89033a23fce159939bab533fbc97522fc4539d64dd"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "2007": {
       "status": "checked-against-catalog",
@@ -255,7 +495,23 @@
           "id": "2007-041",
           "imageSha256": "c31799f8bf4cf0451c38db08dd3d3b1d56b54d31e27e4dfb7b72bad0639afab1"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 2007 clipart collection, with {{artworkCount}} illustrations to explore. Denim patches, pink ribbon lettering and engraved pebbles carry the year 2007 in different materials. Travel tags, woodland wreaths and mechanical key displays offer alternatives to plain digits.",
+        "The gallery includes “Folded Blue 2007 Numerals” and “2007 Maze-Patterned Numerals” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "c404825630c5fbd0363942db3461214237e5c368cefa9ed5c76cbe85847cbe16",
+      "paragraphEvidence": [
+        {
+          "id": "2007-001",
+          "imageSha256": "3def2303bbf05485f21ddec084f517241d3c5f2f7983b8331bf0b2b59dbe7453"
+        },
+        {
+          "id": "2007-041",
+          "imageSha256": "c31799f8bf4cf0451c38db08dd3d3b1d56b54d31e27e4dfb7b72bad0639afab1"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "2025": {
       "status": "checked-against-catalog",
@@ -271,7 +527,23 @@
           "id": "2025-041",
           "imageSha256": "cda3b95a744ab27ad8f98b5ee6bf913cd857ab88ee7bebc77263f7592ae2d555"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 2025 clipart collection, with {{artworkCount}} illustrations to explore. Art Deco arches, woodland signs, paper curls and lockets frame 2025. A scarf-wearing capybara and desk arrangements add scenes; decorative charts are illustration props rather than reported results.",
+        "The gallery includes “Art Deco 2025 Arch” and “2025 Swan Crest” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "218a43e297ad7e10c5e4a1193a3acbfa71303a89ed371fc0f363e14a104a78f0",
+      "paragraphEvidence": [
+        {
+          "id": "2025-001",
+          "imageSha256": "301f58c8946cda50728c049e4a601e7acb7f69675767eed635bbb689c00754fb"
+        },
+        {
+          "id": "2025-041",
+          "imageSha256": "cda3b95a744ab27ad8f98b5ee6bf913cd857ab88ee7bebc77263f7592ae2d555"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "007": {
       "status": "checked-against-catalog",
@@ -287,7 +559,23 @@
           "id": "007-027",
           "imageSha256": "14d3b3794619ceec78f07036978356970c9317d405eb2a4a20023bd3064e00d9"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our James Bond 007 Movie clipart collection, with {{artworkCount}} illustrations to explore. James Bond 007 movie clipart brings together covert scenes, coded messages, casino props and imaginative spy gadgets with the franchise’s well-known Aston Martin car connection. The silver coupe is Aston Martin-style, not an identified production model; imagined submarines, aircraft and underwater devices are labeled as concepts.",
+        "The gallery includes “007-Inspired Agent in a Cream Dinner Jacket” and “James Bond 007-Inspired Aston Martin-Style Silver Coupe” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "64533f078f27df478900690b247c449fe4e334607af85c4056ee2a8a589c76c4",
+      "paragraphEvidence": [
+        {
+          "id": "007-001",
+          "imageSha256": "642d24490253d67227269e7eacf4498feab1a6b3c678e90e3410e926a4d28005"
+        },
+        {
+          "id": "007-027",
+          "imageSha256": "14d3b3794619ceec78f07036978356970c9317d405eb2a4a20023bd3064e00d9"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "01": {
       "status": "checked-against-catalog",
@@ -303,7 +591,23 @@
           "id": "01-041",
           "imageSha256": "4a1bb2ccaf0d326a2e4fee5a9540c11dca0c9cf50ca5c582d80a05648aa61f3d"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 01 clipart collection, with {{artworkCount}} illustrations to explore. The leading zero is part of every 01 design. Folded paper, pasta, clockwork gears and luminous lettering offer different textures, alongside outlined crates, jigsaw pieces and patterned numerals.",
+        "The gallery includes “Folded Paper 01 in Coral and Sage” and “Wooden 01 Rubber Stamp Outline” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "472aab562022871c903e273ae513113fb7b24bbc14533269e521dcbd986b1bef",
+      "paragraphEvidence": [
+        {
+          "id": "01-001",
+          "imageSha256": "aee8c22933740c44b68ff720a54ac51760fbd2b35a96b951f41d0c68f7177b43"
+        },
+        {
+          "id": "01-041",
+          "imageSha256": "4a1bb2ccaf0d326a2e4fee5a9540c11dca0c9cf50ca5c582d80a05648aa61f3d"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "02": {
       "status": "checked-against-catalog",
@@ -319,7 +623,23 @@
           "id": "02-041",
           "imageSha256": "48649e4cf1eafd85b40522a304b99830f8217dd1cfb408f159547401ba6588e8"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 02 clipart collection, with {{artworkCount}} illustrations to explore. Explore 02 lettering in copper-colored metal, knitted yarn, candles and decorative stamp designs. Maze patterns, fingerprint lines and star-filled outlines offer quieter alternatives to the dimensional digits.",
+        "The gallery includes “Copper-Colored 02 Numerals” and “02 Impossible Stair Pattern” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "4f1e9f47517eb94bc61913ea286120dcf51848c36caadf8f1af47e804abbfaf6",
+      "paragraphEvidence": [
+        {
+          "id": "02-001",
+          "imageSha256": "aa09728b49b26e729cd62ba5af98b1f257446a30bd0fda5c63121e5449865eb4"
+        },
+        {
+          "id": "02-041",
+          "imageSha256": "48649e4cf1eafd85b40522a304b99830f8217dd1cfb408f159547401ba6588e8"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "07": {
       "status": "checked-against-catalog",
@@ -335,7 +655,23 @@
           "id": "07-041",
           "imageSha256": "d4c68de28bd848178e53d792dcf553eccce978aa6016dfc5feca2d840f2f24b0"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 07 clipart collection, with {{artworkCount}} illustrations to explore. Coral branches, breaking waves, woven twigs and musical keyboards form different versions of 07. Hanging signs and soft toy characters sit alongside mechanical, zipper and maze-patterned numerals.",
+        "The gallery includes “07 Layered Paper Numerals” and “07 Woodcut Leaf Pattern” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "14bdc331d5eb2a39cb3b418516761ed8fb821c315083bb1588f8ba503b18e546",
+      "paragraphEvidence": [
+        {
+          "id": "07-001",
+          "imageSha256": "78adc08e9e0b5a3e088acde173f335012c92d5066bd9c5589480899683131abe"
+        },
+        {
+          "id": "07-041",
+          "imageSha256": "d4c68de28bd848178e53d792dcf553eccce978aa6016dfc5feca2d840f2f24b0"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "08": {
       "status": "checked-against-catalog",
@@ -351,7 +687,23 @@
           "id": "08-041",
           "imageSha256": "eb3bdb713bb32f45c1f5ad4a9888da912e02336535f3afcd9a7f69053928b276"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 08 clipart collection, with {{artworkCount}} illustrations to explore. Choose an 08 made from folded paper, driftwood or candles, or a scene with someone printing the number on a bag. Bracelets and fingerprint outlines provide other arrangements.",
+        "The gallery includes “08 Folded Paper Digits” and “08 Engraved Numerals” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "66dace89409cdc0460fce55f362f42539aa0a5248ea4acbe8bd770f8a130dd8d",
+      "paragraphEvidence": [
+        {
+          "id": "08-001",
+          "imageSha256": "96d371455be9bf610355153ec7ae46279de21bd6c4381d511b7687abdc3deb5e"
+        },
+        {
+          "id": "08-041",
+          "imageSha256": "eb3bdb713bb32f45c1f5ad4a9888da912e02336535f3afcd9a7f69053928b276"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "2000s": {
       "status": "checked-against-catalog",
@@ -367,7 +719,23 @@
           "id": "2000s-041",
           "imageSha256": "54b07b23087713de95a08a2ae95b29bcca862cc64b27b8fd62b25f866d17a222"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 2000s clipart collection, with {{artworkCount}} illustrations to explore. Wired earbuds, compact music players and portable DVD screens anchor these early-digital objects. Tracksuits, puffer jackets, decorated albums and school lockers add clothing and everyday scenes without unverified device brands.",
+        "The gallery includes “Blue Music Player with White Earbuds” and “Looped Tattoo Choker in Black and White” among its drawings. Plan a personal creative notebook, a story activity or an entertainment-themed craft, matching the subject and composition to your own idea."
+      ],
+      "paragraphSourceSha256": "07c7f6434337f0535545207509f592eb0f1ad787b8777056444a88419e67b89f",
+      "paragraphEvidence": [
+        {
+          "id": "2000s-001",
+          "imageSha256": "4e09ef201c87f2b2dc7cf3ae4e837003e56d73f9f0c953e0e739a455dfb39ca1"
+        },
+        {
+          "id": "2000s-041",
+          "imageSha256": "54b07b23087713de95a08a2ae95b29bcca862cc64b27b8fd62b25f866d17a222"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "3d": {
       "status": "checked-against-catalog",
@@ -383,7 +751,23 @@
           "id": "3d-041",
           "imageSha256": "a3a66037b0ef9c03ac9717374be31e0d44b0832859be2a10a5ac686a3af10b88"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 3D clipart collection, with {{artworkCount}} illustrations to explore. Dimensional objects range from chrome tubes and folded ribbon to felt creatures and an origami crane. Magnifying glasses, drawing tools and a jack-in-the-box add varied surfaces and reflections.",
+        "The gallery includes “Red Ribbon Folded into Two Waves” and “Spiral Sculpture on a Square Plinth” among its drawings. Plan a personal creative notebook, a story activity or an entertainment-themed craft, matching the subject and composition to your own idea."
+      ],
+      "paragraphSourceSha256": "a59747dd1d117a9c8fb1bbebc1deebc16d165cf43a110072d440c6d1e5525d5d",
+      "paragraphEvidence": [
+        {
+          "id": "3d-001",
+          "imageSha256": "a4ca069060ddcbe7b2b51de23f525f10dea63b3012d4008b832506eaba62839a"
+        },
+        {
+          "id": "3d-041",
+          "imageSha256": "a3a66037b0ef9c03ac9717374be31e0d44b0832859be2a10a5ac686a3af10b88"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "80s": {
       "status": "checked-against-catalog",
@@ -399,7 +783,23 @@
           "id": "80s-41",
           "imageSha256": "4c34240f3578cddf9cfb5b5402f74879c5ce09407fb9ab32ded2dc6216b9d1e3"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 80s clipart collection, with {{artworkCount}} illustrations to explore. Boomboxes, overhead projectors and digital watches sit beside color-block jackets and acid-wash clothing. Retro objects, party details and fashion illustrations include a zebra-patterned bow shoe.",
+        "The gallery includes “Retro Silver and Black Boombox” and “Punk Collage Artist” among its drawings. Plan a personal creative notebook, a story activity or an entertainment-themed craft, matching the subject and composition to your own idea."
+      ],
+      "paragraphSourceSha256": "49e6c6077f1b6ec256a2da961bdd55064d6a45f452fe2385c36e792d41c9d5fd",
+      "paragraphEvidence": [
+        {
+          "id": "80s-01",
+          "imageSha256": "391815ed1acc24f6f5980f2719e8258195eec8116095bae1c18add4d90ea7b81"
+        },
+        {
+          "id": "80s-41",
+          "imageSha256": "4c34240f3578cddf9cfb5b5402f74879c5ce09407fb9ab32ded2dc6216b9d1e3"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "aesthetic": {
       "status": "checked-against-catalog",
@@ -415,7 +815,23 @@
           "id": "aesthetic-041",
           "imageSha256": "03bcea0deac08eeb18f0146dc4d450eafed049633ac344b7804c44b037cd8512"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Aesthetic clipart collection, with {{artworkCount}} illustrations to explore. Pressed flowers, folded pencil cases and a bowl with a bamboo whisk create quiet illustrated objects. Plants, glass mushrooms and decorative keys add different materials alongside craft scenes.",
+        "The gallery includes “Open Notebook with Pressed Flower Sprig” and “Floral Folding Fan Line Drawing” among its drawings. Arrange the artwork around your own text in a personal page layout, an invitation or a classroom display, choosing shapes that frame rather than crowd the main message."
+      ],
+      "paragraphSourceSha256": "2f3115b5b5351d25f1f41256feb768396d7e4f1927e020ec42bac5c01ca00528",
+      "paragraphEvidence": [
+        {
+          "id": "aesthetic-001",
+          "imageSha256": "4484fbe966f24c6b7c53a2a20ce9db179d5002bb380355584c9e69f963846af6"
+        },
+        {
+          "id": "aesthetic-041",
+          "imageSha256": "03bcea0deac08eeb18f0146dc4d450eafed049633ac344b7804c44b037cd8512"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "alligator": {
       "status": "checked-against-catalog",
@@ -431,7 +847,23 @@
           "id": "alligator-41-footprint-detective",
           "imageSha256": "485f7e179e6cd116ec1ac581ff74cae6255387d40d58150ba0ab21f2469ba552"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Alligator clipart collection, with {{artworkCount}} illustrations to explore. These alligators swim, bake and dress for imaginary adventures. A pirate, graduate and beekeeper offer distinct scenes beside more natural walking and diving poses.",
+        "The gallery includes “Alligator Walking with a Curled Tail” and “Alligator Detective Examining a Footprint” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "e6c803b5812c22a96cb51a9c0411b47a56a66503a4332a14bc613a0a4b6912e7",
+      "paragraphEvidence": [
+        {
+          "id": "alligator-01-measured-stride",
+          "imageSha256": "87ba379e3b800343e0dddf69786d415da6877f85d6b98ac2220b03eafe42fe74"
+        },
+        {
+          "id": "alligator-41-footprint-detective",
+          "imageSha256": "485f7e179e6cd116ec1ac581ff74cae6255387d40d58150ba0ab21f2469ba552"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "app": {
       "status": "checked-against-catalog",
@@ -447,7 +879,23 @@
           "id": "app-041",
           "imageSha256": "663b5df223ba95c9ca763947cdaa791f5f6e6203b8b38314d284c2eda7f16bd9"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our App clipart collection, with {{artworkCount}} illustrations to explore. Phones, tablets and app tiles show notifications, drawing tools, budgets and games. Gesture drawings and automation stages describe interface ideas; the illustrated screens are not working products or verified account results.",
+        "The gallery includes “Phone with a Spring-Loaded Orange Arrow” and “App Tile Dropping into a Wastebasket” among its drawings. Illustrate a communication activity, a personal digital project or a technology vocabulary page, choosing a symbol or scene that makes the intended action clear."
+      ],
+      "paragraphSourceSha256": "a954247a87ec50a599b4344862582410257047ee6a6fca82fe6f2e899701a0ca",
+      "paragraphEvidence": [
+        {
+          "id": "app-001",
+          "imageSha256": "54f82769cdbe49af85e43299eabaadacc2aac2ef968b37d2c27f031b03a77cb3"
+        },
+        {
+          "id": "app-041",
+          "imageSha256": "663b5df223ba95c9ca763947cdaa791f5f6e6203b8b38314d284c2eda7f16bd9"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "august": {
       "status": "checked-against-catalog",
@@ -463,7 +911,23 @@
           "id": "august-041",
           "imageSha256": "e8782036f0bc82b8f026b80f218d4acd447db9824a2ad4f93f78cbe3e295b6aa"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our August clipart collection, with {{artworkCount}} illustrations to explore. August lettering appears on tags, travel accessories and stationery. Picnic boxes, suitcases and a child preparing a backpack bring in late-summer activities, while birds carrying an envelope add a playful design.",
+        "The gallery includes “Folded Teal August Tag” and “Stacked Black August Lettering” among its drawings. Make a personal greeting, an event scrapbook page or a family activity, matching the illustration to the occasion and the space for your message."
+      ],
+      "paragraphSourceSha256": "be2b2945fb33598c20ad1f72e3cb8f2ffbaebae81ccfd36ec350f364bf4d07dc",
+      "paragraphEvidence": [
+        {
+          "id": "august-001",
+          "imageSha256": "4b744fb374893bee832f65bf14ef8b5fc29e3046a83bb956c9ed588028613870"
+        },
+        {
+          "id": "august-041",
+          "imageSha256": "e8782036f0bc82b8f026b80f218d4acd447db9824a2ad4f93f78cbe3e295b6aa"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "baseball": {
       "status": "checked-against-catalog",
@@ -479,7 +943,23 @@
           "id": "baseball-041-knuckleball-grip",
           "imageSha256": "6e2cf828ce80cc7270efd6b5660d24eceabdc45c5a1908fa2a00516033ea0945"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Baseball clipart collection, with {{artworkCount}} illustrations to explore. Cleats, moving balls, an infielder reaching low and batting gloves meeting in a fist bump show equipment and actions. Tickets, trophies and embroidered emblems add supporting designs.",
+        "The gallery includes “Baseball with Blue Motion Trails” and “Hand Gripping a Baseball” among its drawings. Illustrate a personal practice journal, a sports activity or a team-themed keepsake, choosing the pose or equipment that suits the story you are telling."
+      ],
+      "paragraphSourceSha256": "dc46807dce83b749018b53505652b84e16e90672898a3537f42594b5f7c822dd",
+      "paragraphEvidence": [
+        {
+          "id": "baseball-001-rising-fastball",
+          "imageSha256": "b2c546a1b98c7b6b9d9ccf9c53517da652145c8a92ac8d48849fd41c1ee929e8"
+        },
+        {
+          "id": "baseball-041-knuckleball-grip",
+          "imageSha256": "6e2cf828ce80cc7270efd6b5660d24eceabdc45c5a1908fa2a00516033ea0945"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "bow": {
       "status": "checked-against-catalog",
@@ -495,7 +975,23 @@
           "id": "bow-041",
           "imageSha256": "382737a35774db954b257510a195406b0a114e8c37e7b2a548f3a0ce42784119"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Bow clipart collection, with {{artworkCount}} illustrations to explore. Satin, chiffon, felt and quilled paper give these bows different folds and edges. Pearl trim, star buttons, contrasting linings and harlequin checks distinguish the designs beside lace outlines.",
+        "The gallery includes “Champagne Satin Bow with Twisting Tails” and “Long-Tailed Ribbon Bow in Black and White” among its drawings. Plan a personal style board, a clothing vocabulary activity or a costume idea page, comparing the shapes and decorative details that suit your theme."
+      ],
+      "paragraphSourceSha256": "5cd27cba518df36382d0c59988982d6d2a5bf8c6db6b95689eeb812d26ed355f",
+      "paragraphEvidence": [
+        {
+          "id": "bow-001",
+          "imageSha256": "4a0acf75eaa059ab900d1f12bdeb5e928d40135e553e578faf416656048866e6"
+        },
+        {
+          "id": "bow-041",
+          "imageSha256": "382737a35774db954b257510a195406b0a114e8c37e7b2a548f3a0ce42784119"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "cake": {
       "status": "checked-against-catalog",
@@ -511,7 +1007,23 @@
           "id": "cake-041",
           "imageSha256": "902b1e7a4573c1fc7faff140f8c325d717a69d190bac4b972f32a2e4c1568282"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Cake clipart collection, with {{artworkCount}} illustrations to explore. Whole cakes, ring cakes and cut slices reveal different icing, crumb and topping arrangements. Cherry chocolate layers, mint-colored decoration and berries sit beside checkerboard loaves and a flower-basket cake.",
+        "The gallery includes “Teal Birthday Cake” and “Tube Cake Line Art” among its drawings. Illustrate a personal recipe page, a food vocabulary activity or a kitchen journal, selecting a view that makes your chosen ingredient or dish easy to recognize."
+      ],
+      "paragraphSourceSha256": "0fb58aa6e4ff3807eb0ba79000f1a1a00dc3be4cbdab35da65403b45b23683c5",
+      "paragraphEvidence": [
+        {
+          "id": "cake-001",
+          "imageSha256": "610789ca66fa80e63b051c93de845253c5c02b41f71754043b8f31669143b135"
+        },
+        {
+          "id": "cake-041",
+          "imageSha256": "902b1e7a4573c1fc7faff140f8c325d717a69d190bac4b972f32a2e4c1568282"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "calendar": {
       "status": "checked-against-catalog",
@@ -527,7 +1039,23 @@
           "id": "calendar-041",
           "imageSha256": "9f17cadefd378e2a66afab7d4e6924c2c5ed21ce76d0ef3232119f38d8f9d8cb"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Calendar clipart collection, with {{artworkCount}} illustrations to explore. Desk stands, family organizers and classroom boards picture different calendars. Stained glass, sailing tags and hands turning pages add decorative treatments; individual dated drawings are distinct from reusable planners.",
+        "The gallery includes “Monthly Calendar in an Arched Stand” and “Diamond April Calendar on a Stand” among its drawings. Make a personal greeting, an event scrapbook page or a family activity, matching the illustration to the occasion and the space for your message."
+      ],
+      "paragraphSourceSha256": "1e755064a8cc18c9169303f0d3fe396de3d84e762a9ee621131bb83a87d10db2",
+      "paragraphEvidence": [
+        {
+          "id": "calendar-001",
+          "imageSha256": "24523e6cf2cdb4ff3e68aee350dee8a09badb62cb2804ac614874d9cde124cc0"
+        },
+        {
+          "id": "calendar-041",
+          "imageSha256": "9f17cadefd378e2a66afab7d4e6924c2c5ed21ce76d0ef3232119f38d8f9d8cb"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "call": {
       "status": "checked-against-catalog",
@@ -543,7 +1071,23 @@
           "id": "call-041",
           "imageSha256": "5434c6cf1ec9a97b5bc83faab6cfd22fe0fc6f75f0acd2d14b34731cf8fd9887"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Call clipart collection, with {{artworkCount}} illustrations to explore. Rotary phones, headset users and handset symbols cover different meanings of a call. Hang-up controls, reminder planners and emergency columns add specific objects without presenting them as working services.",
+        "The gallery includes “Ringing Red Rotary Telephone” and “Switchboard Operator Line Drawing” among its drawings. Illustrate a communication activity, a personal digital project or a technology vocabulary page, choosing a symbol or scene that makes the intended action clear."
+      ],
+      "paragraphSourceSha256": "769dea48c1c991784b0c10cb6d1a0b229edc09d6443120506aa647594172d555",
+      "paragraphEvidence": [
+        {
+          "id": "call-001",
+          "imageSha256": "027326a319fdb1c0499ce7dc194335ea6f8b8870301026ff86876ec981aef2db"
+        },
+        {
+          "id": "call-041",
+          "imageSha256": "5434c6cf1ec9a97b5bc83faab6cfd22fe0fc6f75f0acd2d14b34731cf8fd9887"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "crown": {
       "status": "checked-against-catalog",
@@ -559,7 +1103,23 @@
           "id": "crown-041",
           "imageSha256": "821da933e6bf32f4b65473a0e2bda8e72851e3aefde7e9fad7b7b538c3812f18"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Crown clipart collection, with {{artworkCount}} illustrations to explore. Metal-colored crowns, leaves, felt points and lace create varied headpieces. Blue inlays, stitched stars and hanging heart tips distinguish the designs, with bold silhouettes for a simpler appearance.",
+        "The gallery includes “Gold Crown with Blue Inlays” and “Paisley Crown in Black and White” among its drawings. Plan a personal style board, a clothing vocabulary activity or a costume idea page, comparing the shapes and decorative details that suit your theme."
+      ],
+      "paragraphSourceSha256": "ace401e84a8bf23bde48d8046814ceb432039036d93f4f86561afb8ee4ce56b0",
+      "paragraphEvidence": [
+        {
+          "id": "crown-001",
+          "imageSha256": "3aa6eb7a0d7254242cdea9243665f842516d90c96a66e97284cf9ca910956e8c"
+        },
+        {
+          "id": "crown-041",
+          "imageSha256": "821da933e6bf32f4b65473a0e2bda8e72851e3aefde7e9fad7b7b538c3812f18"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "dragon": {
       "status": "checked-against-catalog",
@@ -575,7 +1135,23 @@
           "id": "dragon-041",
           "imageSha256": "07aa02148bc920e92b9bf400a3a7e1b90eceacad7962226db5937b9cad3ac006"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Dragon clipart collection, with {{artworkCount}} illustrations to explore. Sleepy hatchlings, shell-carrying sea dragons and golden couriers give these creatures different personalities. Other scenes show a dragon helping a teddy bear or hugging a raspberry beside fantasy emblems.",
+        "The gallery includes “Sleepy Dragon Hatchling” and “Dragon Coiled around a Bell” among its drawings. Plan a personal creative notebook, a story activity or an entertainment-themed craft, matching the subject and composition to your own idea."
+      ],
+      "paragraphSourceSha256": "7829edb1af597419d121e4d82449d6ec7488fda5d8db064fa48a47c9e840f8f0",
+      "paragraphEvidence": [
+        {
+          "id": "dragon-001",
+          "imageSha256": "6a6b1fefed2033da87480026415bb257fbc23e8253711a47f5cbc0c864b6d138"
+        },
+        {
+          "id": "dragon-041",
+          "imageSha256": "07aa02148bc920e92b9bf400a3a7e1b90eceacad7962226db5937b9cad3ac006"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "draw": {
       "status": "checked-against-catalog",
@@ -591,7 +1167,23 @@
           "id": "draw-041",
           "imageSha256": "c44333d1ee2f6b241e2e3461b206d4dc4d5101d2aa8bf2823e2600ac2d4a7cee"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Draw clipart collection, with {{artworkCount}} illustrations to explore. People draw on paper, screens and sand using different tools and positions. Comic artists, children making a banner and a wheelchair user sketching a house show the activity itself.",
+        "The gallery includes “Child Drawing a Colorful Train” and “Self-Portrait beside a Tabletop Mirror Outline” among its drawings. Explore the lettering or making theme in a personal design notebook, an alphabet activity or a creative practice page, choosing details that complement your own words."
+      ],
+      "paragraphSourceSha256": "381b86054fa39296d47514eb036acbf0dff397822bf0874e0a83e27f4103b409",
+      "paragraphEvidence": [
+        {
+          "id": "draw-001",
+          "imageSha256": "c5d46128622564d544f91bb6e23e9b4f608378666977baebd0b8ed2b5574e8f7"
+        },
+        {
+          "id": "draw-041",
+          "imageSha256": "c44333d1ee2f6b241e2e3461b206d4dc4d5101d2aa8bf2823e2600ac2d4a7cee"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "egg": {
       "status": "checked-against-catalog",
@@ -607,7 +1199,23 @@
           "id": "egg-041",
           "imageSha256": "6aed9d21be39bf08c34198a0589d249a87802a6b73ab33c5db31bba2ce1b9971"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Egg clipart collection, with {{artworkCount}} illustrations to explore. Whole eggs, falling yolks and omelet slices sit beside tools for holding and preparing them. Strainers, slicers and a conveyor add objects, while decorative vessels and crystal fantasies vary the treatment.",
+        "The gallery includes “Three Natural-Colored Eggs” and “Egg Display Stand” among its drawings. Make a personal greeting, an event scrapbook page or a family activity, matching the illustration to the occasion and the space for your message."
+      ],
+      "paragraphSourceSha256": "20940e7941e1e05d5697a0e1de8293a8792f237bd890abc62f147dece608c462",
+      "paragraphEvidence": [
+        {
+          "id": "egg-001",
+          "imageSha256": "ed401a87c2ee6e58cfbf4fc562e1a2139f5b04dd1c498602cf363b0abc0c94f4"
+        },
+        {
+          "id": "egg-041",
+          "imageSha256": "6aed9d21be39bf08c34198a0589d249a87802a6b73ab33c5db31bba2ce1b9971"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "email": {
       "status": "checked-against-catalog",
@@ -623,7 +1231,23 @@
           "id": "email-041",
           "imageSha256": "3a655126dd23282a252c3c8497c5818e2e3c952df4c57f38cce95d4aa149d5a6"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Email clipart collection, with {{artworkCount}} illustrations to explore. Envelopes, reply arrows, bookmarks and at-sign objects explore email symbols. Distribution trees, account symbols and an Inbox Zero globe add arrangements without claiming messages were actually sent or received.",
+        "The gallery includes “Coral Envelope with At Sign” and “Bounced Email Stamp” among its drawings. Illustrate a communication activity, a personal digital project or a technology vocabulary page, choosing a symbol or scene that makes the intended action clear."
+      ],
+      "paragraphSourceSha256": "d6b28158d3f741809e883c20845cb5f7b5c9f0f34f5d2a2844425794b0c0b104",
+      "paragraphEvidence": [
+        {
+          "id": "email-001",
+          "imageSha256": "0241f6327a864e26b5c23fb57101df3109d0828af96f02d3b175ffc3a6706e9b"
+        },
+        {
+          "id": "email-041",
+          "imageSha256": "3a655126dd23282a252c3c8497c5818e2e3c952df4c57f38cce95d4aa149d5a6"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "emoji": {
       "status": "checked-against-catalog",
@@ -639,7 +1263,23 @@
           "id": "emoji-041",
           "imageSha256": "0fbc66fa1ec1eaf3036bcca15f5ebbb189cf630e63cd8808d013011dfc568079"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Emoji clipart collection, with {{artworkCount}} illustrations to explore. Soft faces and characters show surprise, worry, approval and confidence. Stitched fabric, translucent surfaces and fruit-shaped faces vary the appearance, while gestures and eyebrows distinguish the emotions.",
+        "The gallery includes “Waving Yellow Smile” and “Quiet Bell with a Zipper” among its drawings. Plan a personal creative notebook, a story activity or an entertainment-themed craft, matching the subject and composition to your own idea."
+      ],
+      "paragraphSourceSha256": "a833460a0246e9ec851e2a845c2cd848a6a244462e95dff783fb5c0c1c385652",
+      "paragraphEvidence": [
+        {
+          "id": "emoji-001",
+          "imageSha256": "ac2ed07f147d7b38611a0b7a2ec73b98d264f8a5a5c02284c578db536153acbe"
+        },
+        {
+          "id": "emoji-041",
+          "imageSha256": "0fbc66fa1ec1eaf3036bcca15f5ebbb189cf630e63cd8808d013011dfc568079"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "facebook": {
       "status": "checked-against-catalog",
@@ -655,7 +1295,23 @@
           "id": "facebook-041",
           "imageSha256": "ed472edd046a6dffba50ba1f55544ab38caf62a9d8c550dc6d272214a22adf5b"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Facebook clipart collection, with {{artworkCount}} illustrations to explore. Facebook-themed signs, community scenes and book-club objects place the recognizable mark in illustrated settings. Calendars, newspapers and typewriters add context without representing verified accounts or events.",
+        "The gallery includes “Facebook Follow Us Clear Sign” and “Door Knocker with Facebook Plaque” among its drawings. Illustrate a communication activity, a personal digital project or a technology vocabulary page, choosing a symbol or scene that makes the intended action clear."
+      ],
+      "paragraphSourceSha256": "a13a1d94d35dc922a1b1ef28edc54dc7cdcd19933aae12deff4f7cbb8bcab496",
+      "paragraphEvidence": [
+        {
+          "id": "facebook-001",
+          "imageSha256": "6953c47e2b8b0e834739aadf24f1ccce3767d8f559d637a23a9afe02aff8608e"
+        },
+        {
+          "id": "facebook-041",
+          "imageSha256": "ed472edd046a6dffba50ba1f55544ab38caf62a9d8c550dc6d272214a22adf5b"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "font": {
       "status": "checked-against-catalog",
@@ -671,7 +1327,23 @@
           "id": "font-outline-serif-a",
           "imageSha256": "4ffd30f28bc11b56a068e0c1b4f833223d71fac44a962d54c67f343f09060c7a"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Font clipart collection, with {{artworkCount}} illustrations to explore. Letters range from a flourished blue A to a wooden printing block and a typewriter key. Puzzle pieces, dimensional digits and plain serif outlines offer different lettering styles.",
+        "The gallery includes “Blue Letter A with Gold Flourishes” and “Decorative Serif Letter A Outline” among its drawings. Explore the lettering or making theme in a personal design notebook, an alphabet activity or a creative practice page, choosing details that complement your own words."
+      ],
+      "paragraphSourceSha256": "55d7d00cd21132fe80057ccd1734cd51ba4c0b1fe0d8f8db38687587e17a568e",
+      "paragraphEvidence": [
+        {
+          "id": "font-serif-a",
+          "imageSha256": "8245f4070dd7dd2e904ee37d36ae62c5fda7237a52115435ae2057e4ff8ed9a5"
+        },
+        {
+          "id": "font-outline-serif-a",
+          "imageSha256": "4ffd30f28bc11b56a068e0c1b4f833223d71fac44a962d54c67f343f09060c7a"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "generator": {
       "status": "checked-against-catalog",
@@ -687,7 +1359,23 @@
           "id": "generator-041",
           "imageSha256": "17bb1ee7f483bdbed3fb9597edff6427d1f92ebb12619b765aeba0f09e09bfe2"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Generator clipart collection, with {{artworkCount}} illustrations to explore. Portable frames, towable cabinets and light towers illustrate different generator shapes. Technicians, alternators and a steam cart add equipment details, with speculative branded housings identified as concepts.",
+        "The gallery includes “Blue Open-Frame Portable Generator” and “Treadle-Driven Dynamo” among its drawings. Use the illustrations in a personal technology journal, a classroom discussion about digital tools or a creative concept board, keeping the pictured scenes separate from product capability claims."
+      ],
+      "paragraphSourceSha256": "f9bacac3a2093fe3a207ade12627a71ee8e3a354eed40c9cdb466a1539f48271",
+      "paragraphEvidence": [
+        {
+          "id": "generator-001",
+          "imageSha256": "1be63394704b92df38cded48dbcfa4b1bd4cb0422875a67e7fe4b743aef86c95"
+        },
+        {
+          "id": "generator-041",
+          "imageSha256": "17bb1ee7f483bdbed3fb9597edff6427d1f92ebb12619b765aeba0f09e09bfe2"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.552Z"
     },
     "guitar": {
       "status": "checked-against-catalog",
@@ -703,7 +1391,23 @@
           "id": "guitar-041",
           "imageSha256": "23ea0232726e4228dafcb38d612afa558f23d6e31f0ed794beb64d3441101fa0"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Guitar clipart collection, with {{artworkCount}} illustrations to explore. Acoustic bodies, tuning pegs and separated components show different guitar views. Players, lesson emblems and a sleeping cat add scenes around the instrument beside decorative and straightforward line drawings.",
+        "The gallery includes “Natural Acoustic Guitar Side View” and “Black Electric Guitar on Stand” among its drawings. Illustrate a personal music notebook, a rehearsal journal or a listening activity, matching the pictured instrument or performance theme to the music you are exploring."
+      ],
+      "paragraphSourceSha256": "ff2132c0398ecca6b3ea7659c467a6fad8c99975f36182d8bcf6cf9368597cd8",
+      "paragraphEvidence": [
+        {
+          "id": "guitar-001",
+          "imageSha256": "2992ac0ca5b4ddeedc944bd0ee9a58fd5e5add421bb47745abecdc9dd0d021a8"
+        },
+        {
+          "id": "guitar-041",
+          "imageSha256": "23ea0232726e4228dafcb38d612afa558f23d6e31f0ed794beb64d3441101fa0"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "hand": {
       "status": "checked-against-catalog",
@@ -719,7 +1423,23 @@
           "id": "hand-041",
           "imageSha256": "8312e4c280ee12a696337d787876ba2b27884ee88d32e209b02ed42166770295"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Hand clipart collection, with {{artworkCount}} illustrations to explore. Waving, crossed fingers, handshakes and grips give this collection different gestures. Keys, paper cranes, rope and scissors make each action specific, with different cuffs and hand positions.",
+        "The gallery includes “Waving Hand in a Coral Cuff” and “Hands Forming a Triangle” among its drawings. Choose an illustration for a body vocabulary activity, a personal study notebook or an illustrated discussion, matching the visible subject to the concept you want to explain."
+      ],
+      "paragraphSourceSha256": "2c50e17ede28df17844d26b7a42c4a599d0b61532039078f92f453e823aca4f8",
+      "paragraphEvidence": [
+        {
+          "id": "hand-001",
+          "imageSha256": "5d7b404351f029a774b7e23163742c22803e5cc11c0b88177db3ebb27f8f71b3"
+        },
+        {
+          "id": "hand-041",
+          "imageSha256": "8312e4c280ee12a696337d787876ba2b27884ee88d32e209b02ed42166770295"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "how": {
       "status": "checked-against-catalog",
@@ -735,7 +1455,23 @@
           "id": "how-041",
           "imageSha256": "1982a1938269cacb65690e973a04108319a371acc9b29b1a949ea4c0e77a16cd"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our How clipart collection, with {{artworkCount}} illustrations to explore. Instruction sheets, gears and people considering a task make these drawings about figuring things out. Stool assembly, handwashing panels and a robot reading a guide provide concrete scenes.",
+        "The gallery includes “Curious Child with Wooden Gears” and “Replacing Flashlight Batteries Outline” among its drawings. Create a classroom activity, a personal study page or a learning journal, choosing the illustration that supports the idea you want to explain."
+      ],
+      "paragraphSourceSha256": "182eac5504bb7483643a3b3d461c6b2526cf7e117be02a6096e864d3eb411a4b",
+      "paragraphEvidence": [
+        {
+          "id": "how-001",
+          "imageSha256": "b80004cd8e62297569b7405e16196f7fc76c9969abbbd2b4aabc2a4de73019b9"
+        },
+        {
+          "id": "how-041",
+          "imageSha256": "1982a1938269cacb65690e973a04108319a371acc9b29b1a949ea4c0e77a16cd"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "icon": {
       "status": "checked-against-catalog",
@@ -751,7 +1487,23 @@
           "id": "icon-041",
           "imageSha256": "e3335871eb5ffc8ede85a270e78ab319634e18891a6f894a9a40deba55c0b16f"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Icon clipart collection, with {{artworkCount}} illustrations to explore. Doors, sort controls, pinned notes and delivery objects form varied pictorial symbols. Mountain flags, binder clips and open gifts add everyday meanings through clear silhouettes and dimensional objects.",
+        "The gallery includes “Open Door Entrance Icon” and “Printing Roller Symbol” among its drawings. Arrange the artwork around your own text in a personal page layout, an invitation or a classroom display, choosing shapes that frame rather than crowd the main message."
+      ],
+      "paragraphSourceSha256": "2ac52be90215843e4a568df9965efc12de93bb99991b58679374fe8ca81d0cfe",
+      "paragraphEvidence": [
+        {
+          "id": "icon-001",
+          "imageSha256": "8ad6c7fe929b9e733150dec4541d4842288e5b3a37489ee048e2a8f4c1b20098"
+        },
+        {
+          "id": "icon-041",
+          "imageSha256": "e3335871eb5ffc8ede85a270e78ab319634e18891a6f894a9a40deba55c0b16f"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "instagram": {
       "status": "checked-against-catalog",
@@ -767,7 +1519,23 @@
           "id": "instagram-041",
           "imageSha256": "c3365042773a9557723d924666e0d44c2b776f92f87b9fa0dbc301b98e358bf2"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Instagram clipart collection, with {{artworkCount}} illustrations to explore. Instagram-themed signs, stamps and cards use the camera mark in different settings. Microphones, bells and people holding symbols add context without implying real profiles, endorsements or follower results.",
+        "The gallery includes “Instagram Follow Us Acrylic Sign” and “Instagram Shopfront Line Drawing” among its drawings. Illustrate a communication activity, a personal digital project or a technology vocabulary page, choosing a symbol or scene that makes the intended action clear."
+      ],
+      "paragraphSourceSha256": "85d58edec5b4a61715d054ea827904a102bebed0740a87c8a2a805252e0ff5f7",
+      "paragraphEvidence": [
+        {
+          "id": "instagram-001",
+          "imageSha256": "6b7c6efdb77270670dfc197b78cb60668d8670c38cbe4c4ab10778cbb3512091"
+        },
+        {
+          "id": "instagram-041",
+          "imageSha256": "c3365042773a9557723d924666e0d44c2b776f92f87b9fa0dbc301b98e358bf2"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "jar": {
       "status": "checked-against-catalog",
@@ -783,7 +1551,23 @@
           "id": "jar-041",
           "imageSha256": "c0d6234c3f9bb72fe7dd83d46023eb2405885e8bc842602807ba032fa2dd18e3"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Jar clipart collection, with {{artworkCount}} illustrations to explore. Empty glass, layered food and useful storage give these jars different contents. Pencil holders, tip jars, rope-slung pots and spilled hardware provide alternatives to a repeated container shape.",
+        "The gallery includes “Empty Faceted Glass Jar with a Wooden Lid” and “Flour Jar with a Full Measuring Cup” among its drawings. Illustrate a personal recipe page, a food vocabulary activity or a kitchen journal, selecting a view that makes your chosen ingredient or dish easy to recognize."
+      ],
+      "paragraphSourceSha256": "f0a2a09700ccc15c56dd3557c4e9727afecf050f97ef4dbfc777dfed6f9bca62",
+      "paragraphEvidence": [
+        {
+          "id": "jar-001",
+          "imageSha256": "0fcc4011019dff66a82f3e1e688caad1fda7ae77d1aac2cafb5e34c85f648539"
+        },
+        {
+          "id": "jar-041",
+          "imageSha256": "c0d6234c3f9bb72fe7dd83d46023eb2405885e8bc842602807ba032fa2dd18e3"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "jeans": {
       "status": "checked-against-catalog",
@@ -799,7 +1583,23 @@
           "id": "jeans-041",
           "imageSha256": "9fe0af5506d131c6bbd342ec9a9d2ebc8d24dd14a631b8eb7f2249e47f787570"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Jeans clipart collection, with {{artworkCount}} illustrations to explore. Barrel legs, maternity panels, stacked hems and contrasting side pieces distinguish these jeans. Dressmakers, construction drawings and a packed suitcase show garments being handled as well as displayed.",
+        "The gallery includes “Dark Barrel-Leg Jeans” and “Accordion-Folded Black Jeans” among its drawings. Plan a personal style board, a clothing vocabulary activity or a costume idea page, comparing the shapes and decorative details that suit your theme."
+      ],
+      "paragraphSourceSha256": "39ee718c7ec94351bb0ec54105dda60ca3ffddbb49ca6ed7020eb46fbb0425a4",
+      "paragraphEvidence": [
+        {
+          "id": "jeans-001",
+          "imageSha256": "048b8a259f72b3f03b9fde6b5ddf8cbf9d982fade71efc442f56b9a8165f8d46"
+        },
+        {
+          "id": "jeans-041",
+          "imageSha256": "9fe0af5506d131c6bbd342ec9a9d2ebc8d24dd14a631b8eb7f2249e47f787570"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "jersey": {
       "status": "checked-against-catalog",
@@ -815,7 +1615,23 @@
           "id": "jersey-041",
           "imageSha256": "4770ca769928f64b4d56faa353d1c09fb295d2d3f58a6185fbf64a81eb8ca9a6"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Jersey clipart collection, with {{artworkCount}} illustrations to explore. Sports shirts vary in neckline, sleeves, panels and numbers. Rugby-style tops, cycling zips, racerback cuts and lace-neck jerseys sit beside folded or draped garments, with visible lettering described individually.",
+        "The gallery includes “Teal Swirl Sports Jersey” and “Hanging Mesh Vest” among its drawings. Plan a personal style board, a clothing vocabulary activity or a costume idea page, comparing the shapes and decorative details that suit your theme."
+      ],
+      "paragraphSourceSha256": "d125ba7d1e42c597a123692fb2a50b4d01c6869400ec6e86296ccd3d5eb8500c",
+      "paragraphEvidence": [
+        {
+          "id": "jersey-001",
+          "imageSha256": "ba32e0c6e83d00b855df9f9e8f89dd1d8acdd62f5c64200268d6081c1e9283eb"
+        },
+        {
+          "id": "jersey-041",
+          "imageSha256": "4770ca769928f64b4d56faa353d1c09fb295d2d3f58a6185fbf64a81eb8ca9a6"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "jumping": {
       "status": "checked-against-catalog",
@@ -831,7 +1647,23 @@
           "id": "jumping-041",
           "imageSha256": "b6ba83e154d2d82f08ba7de170700552164e0a99367a8abc6f1034baa1a41264"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Jumping clipart collection, with {{artworkCount}} illustrations to explore. Children hop between markers, players leap for a ball and dancers rise into the air. Pogo sticks, stepping stones, a dolphin and a dog passing through a hoop broaden the scenes.",
+        "The gallery includes “Child Hopping over Squares” and “Child Reaching toward a Branch” among its drawings. Illustrate a story prompt, a personal journal entry or a classroom discussion, choosing the action and arrangement that make your intended meaning clear."
+      ],
+      "paragraphSourceSha256": "7c6d636ffd815f0d3cba93c6967188f0a9114641a5f886b38081434e560cf803",
+      "paragraphEvidence": [
+        {
+          "id": "jumping-001",
+          "imageSha256": "460c4327c9c46607d32cf6f3fa00b8e28b0b067d3653f580cddcaa02f104eae9"
+        },
+        {
+          "id": "jumping-041",
+          "imageSha256": "b6ba83e154d2d82f08ba7de170700552164e0a99367a8abc6f1034baa1a41264"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "kitchen": {
       "status": "checked-against-catalog",
@@ -847,7 +1679,23 @@
           "id": "kitchen-041-hand-crank-egg-beater",
           "imageSha256": "fcb2e4949464014916e121b988190d73b06138443ea8910776537f12e378c0b3"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Kitchen clipart collection, with {{artworkCount}} illustrations to explore. Islands, preparation surfaces and utensils show different parts of a kitchen. Chopping boards, colanders and small appliances add recognizable equipment, with furnished arrangements and isolated tools.",
+        "The gallery includes “Curved Walnut Kitchen Island” and “Hand-Crank Egg Beater” among its drawings. Illustrate a personal recipe page, a food vocabulary activity or a kitchen journal, selecting a view that makes your chosen ingredient or dish easy to recognize."
+      ],
+      "paragraphSourceSha256": "220484782c8d8802c1c729e3b18231588418f0c6e5789034acde73d7c8b8472a",
+      "paragraphEvidence": [
+        {
+          "id": "kitchen-001-crescent-island",
+          "imageSha256": "a2675ccaf44be4e2791a419effe529df27fd8401125675a628473090794890de"
+        },
+        {
+          "id": "kitchen-041-hand-crank-egg-beater",
+          "imageSha256": "fcb2e4949464014916e121b988190d73b06138443ea8910776537f12e378c0b3"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "ladybug": {
       "status": "checked-against-catalog",
@@ -863,7 +1711,23 @@
           "id": "ladybug-041",
           "imageSha256": "8c8e42f36b19148ab117af4a00f329f076c4ef6472dc1d9184978456f028ff2d"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Ladybug clipart collection, with {{artworkCount}} illustrations to explore. Natural-looking insects share the collection with friendly ladybug characters. Baking, gardening and felt-toy designs use different props, while botanical scenes and life-stage illustrations focus on the insect.",
+        "The gallery includes “Ladybug on a Golden Grass Stem” and “Ladybug Climbing a Twig above an Acorn Cap” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "df50720dce65fbb90a09219bbd81ae1dfc8b707625b5c7f816ee989c87f7c560",
+      "paragraphEvidence": [
+        {
+          "id": "ladybug-001",
+          "imageSha256": "522100cf88507b12df0519f74ca69864f0daf71a3db6502e417a7ecc78db11c3"
+        },
+        {
+          "id": "ladybug-041",
+          "imageSha256": "8c8e42f36b19148ab117af4a00f329f076c4ef6472dc1d9184978456f028ff2d"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "line": {
       "status": "checked-against-catalog",
@@ -879,7 +1743,23 @@
           "id": "line-041",
           "imageSha256": "7f16e4f08eea6045e12471b6c330c957be3d5e132b6b9b61c32757319f6bd9a7"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Line clipart collection, with {{artworkCount}} illustrations to explore. Lines become ribbons, borders, paths and graphic marks. Curves, loops and repeating cutouts offer different directions and rhythms, with dimensional materials alongside simple dark strokes.",
+        "The gallery includes “Stepped Gold Divider” and “Black Calligraphic Loop Divider” among its drawings. Arrange the artwork around your own text in a personal page layout, an invitation or a classroom display, choosing shapes that frame rather than crowd the main message."
+      ],
+      "paragraphSourceSha256": "8583d7c14cc01c2978517a5f745aaca001d79b867d4a8572f69267167f6cb7f9",
+      "paragraphEvidence": [
+        {
+          "id": "line-001",
+          "imageSha256": "f35f38e85f2a008006b892d6bec591c9ff1b70249e5fffa9faf93cf96087ea6e"
+        },
+        {
+          "id": "line-041",
+          "imageSha256": "7f16e4f08eea6045e12471b6c330c957be3d5e132b6b9b61c32757319f6bd9a7"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "location": {
       "status": "checked-against-catalog",
@@ -895,7 +1775,23 @@
           "id": "location-041",
           "imageSha256": "ba89cad5f00bea134733161c26a426714ffab0a2cd9bc02738993a3283cae54a"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Location clipart collection, with {{artworkCount}} illustrations to explore. Pins and place markers become fabric tags, folded paper and theatre curtains. Accessibility symbols, people and travel details give the markers specific meanings beyond a plain map pin.",
+        "The gallery includes “Blue Map Pin with Mint Check” and “Survey-Style Location Stake” among its drawings. Bring the illustrations into a personal travel journal, a place study or an imagined itinerary, choosing a viewpoint that supports the location you are describing."
+      ],
+      "paragraphSourceSha256": "13c15561a374dc9b2080aede20b44b514e1657c583b83ebaa5742a9e854bfa72",
+      "paragraphEvidence": [
+        {
+          "id": "location-001",
+          "imageSha256": "ec430af82498df76d5dafb459373147cf2d90096b0a67ee3ab94c99a6cde409b"
+        },
+        {
+          "id": "location-041",
+          "imageSha256": "ba89cad5f00bea134733161c26a426714ffab0a2cd9bc02738993a3283cae54a"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "mountain": {
       "status": "checked-against-catalog",
@@ -911,7 +1807,23 @@
           "id": "mountain-041",
           "imageSha256": "eccf58ebd1317acd1b4c1efd6b969148d21d62f474ffff788caa22f608b54849"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Mountain clipart collection, with {{artworkCount}} illustrations to explore. Rock faces, wooded peaks and flowing water give these mountains different silhouettes. Cutaway terrain, climbing details and character peaks sit beside badges and ink landscapes.",
+        "The gallery includes “Orange Rock Spire with Blue Ice” and “Mountain Silhouette with a Round Opening” among its drawings. Build a nature observation page, an illustrated setting or a classroom activity around the form and atmosphere that suit your subject."
+      ],
+      "paragraphSourceSha256": "3ac7fb7b35c6dc10af138e702b89fd221598381fa2c2f6ddc16a64546b016d60",
+      "paragraphEvidence": [
+        {
+          "id": "mountain-001",
+          "imageSha256": "dbc736eef1704814fc556277f60a12b83dfab0e4b7a532f9ac6125ecebd80a44"
+        },
+        {
+          "id": "mountain-041",
+          "imageSha256": "eccf58ebd1317acd1b4c1efd6b969148d21d62f474ffff788caa22f608b54849"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "mushroom": {
       "status": "checked-against-catalog",
@@ -927,7 +1839,23 @@
           "id": "mushroom-041",
           "imageSha256": "a674af265bafa253768ad1eb66f4856c21e46cc9c063d682db94102db4245a3f"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Mushroom clipart collection, with {{artworkCount}} illustrations to explore. Shelf fungi, small caps and grouped stems show different mushroom shapes. Storybook scenes, including a sleeping animal beneath a broad cap, sit beside natural specimens and patterned outlines.",
+        "The gallery includes “Red Spotted Mushroom” and “Folded Dark Mushroom” among its drawings. Build a plant observation page, a personal garden journal or a nature-themed greeting, comparing the visible plant details and arrangements before choosing your focal image."
+      ],
+      "paragraphSourceSha256": "f8adda57ebd346ffcd7fc528be9fd97e9086e08f756231b6151931419d4ff710",
+      "paragraphEvidence": [
+        {
+          "id": "mushroom-001",
+          "imageSha256": "61a4e7efec356d66225b2b4a061270bfd8418bc310b57f5ca0cc23ea111f123e"
+        },
+        {
+          "id": "mushroom-041",
+          "imageSha256": "a674af265bafa253768ad1eb66f4856c21e46cc9c063d682db94102db4245a3f"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "no": {
       "status": "checked-against-catalog",
@@ -943,7 +1871,23 @@
           "id": "no-041",
           "imageSha256": "2d09ca8b2d9e7d10d77f7c0467d3f620d0667a168154d1cb8de69b26a263da9b"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our No clipart collection, with {{artworkCount}} illustrations to explore. Crossed-out objects and prohibition marks picture different meanings of no. Fire, vaping, litter and other subjects remain specific to each sign, with colored badges and bold ink treatments.",
+        "The gallery includes “Gold-Framed No Smoking Emblem” and “No Drones Octagonal Graphic” among its drawings. Illustrate a story prompt, a personal journal entry or a classroom discussion, choosing the action and arrangement that make your intended meaning clear."
+      ],
+      "paragraphSourceSha256": "6d4cab1ab7f86dca8484cae2f87f05fc615088c88f4621ffcc4a1f5c45cf4477",
+      "paragraphEvidence": [
+        {
+          "id": "no-001",
+          "imageSha256": "99a370b0176eb3999847f700e11c7226d52588be4f4bd6b0a0276edc63a359b0"
+        },
+        {
+          "id": "no-041",
+          "imageSha256": "2d09ca8b2d9e7d10d77f7c0467d3f620d0667a168154d1cb8de69b26a263da9b"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "nose": {
       "status": "checked-against-catalog",
@@ -959,7 +1903,23 @@
           "id": "nose-041",
           "imageSha256": "06e7295652abd57b190ccd48337e3582d4031926cdd8b178683f364ecfd30c71"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Nose clipart collection, with {{artworkCount}} illustrations to explore. Profiles, front views and geometric forms show noses in different styles. Gestures and expressive faces add context, while dimensional materials and cut-paper shapes provide less literal alternatives.",
+        "The gallery includes “Broad Brown Nose from the Front” and “Bold Engraved Nose from Below” among its drawings. Choose an illustration for a body vocabulary activity, a personal study notebook or an illustrated discussion, matching the visible subject to the concept you want to explain."
+      ],
+      "paragraphSourceSha256": "7a0204070568a2384b9b0fd6c510834492d45d45efeaaefd320f7672c53b888c",
+      "paragraphEvidence": [
+        {
+          "id": "nose-001",
+          "imageSha256": "04b2a77fb679211a275d51d291f13edc94f90e36a767cef05b47c491a63f4448"
+        },
+        {
+          "id": "nose-041",
+          "imageSha256": "06e7295652abd57b190ccd48337e3582d4031926cdd8b178683f364ecfd30c71"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "nurse": {
       "status": "checked-against-catalog",
@@ -975,7 +1935,23 @@
           "id": "nurse-041",
           "imageSha256": "d4cb35bbaff0fed1bc95691c88a2c834b628a441c52387e5debb0d6bf1eae750"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Nurse clipart collection, with {{artworkCount}} illustrations to explore. Nurses appear with clinical tools, seated breaks and everyday gestures. Different clothing, people and settings distinguish the scenes; the drawings illustrate roles rather than medical instructions or credentials.",
+        "The gallery includes “Nurse with a Turtle Hand Puppet” and “Nurse Adjusting an Arm Sling” among its drawings. Illustrate a story prompt, a personal journal entry or a classroom discussion, choosing the action and arrangement that make your intended meaning clear."
+      ],
+      "paragraphSourceSha256": "d9ec9aa37006f8e92320f92c0abae4ad88bb2b222dcfc79d9e49a704fa4ac947",
+      "paragraphEvidence": [
+        {
+          "id": "nurse-001",
+          "imageSha256": "6a495e1abbc98b314483662977c9c336b2da46319f21e317e764f28dc16e0674"
+        },
+        {
+          "id": "nurse-041",
+          "imageSha256": "d4cb35bbaff0fed1bc95691c88a2c834b628a441c52387e5debb0d6bf1eae750"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "october": {
       "status": "checked-against-catalog",
@@ -991,7 +1967,23 @@
           "id": "october-041",
           "imageSha256": "dbb36d0c5582978723298253b6777fcc4c5c52ea3cd9f73f33323a0a33da1102"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our October clipart collection, with {{artworkCount}} illustrations to explore. October lettering, tea tins and seasonal objects sit beside clothing and characters. Autumn details connect the collection without making every drawing a pumpkin or a Halloween costume.",
+        "The gallery includes “Wooden October Letter Blocks” and “Gothic October Grandfather Clock” among its drawings. Build a seasonal journal page, a harvest activity or a personal gathering invitation around the food, plant or scene that matches your theme."
+      ],
+      "paragraphSourceSha256": "cd94f9e03b2f3e97192dc841fa5420d1835620b1b1506bd353dd1cdcc483b636",
+      "paragraphEvidence": [
+        {
+          "id": "october-001",
+          "imageSha256": "baf1a05b67308ad216ec1d95a49263dcc75d4a32a05b0a5e1ea823434d9c4142"
+        },
+        {
+          "id": "october-041",
+          "imageSha256": "dbb36d0c5582978723298253b6777fcc4c5c52ea3cd9f73f33323a0a33da1102"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "pencil": {
       "status": "checked-against-catalog",
@@ -1007,7 +1999,23 @@
           "id": "pencil-041",
           "imageSha256": "4612442c55c3d813b259489d22a806d9366996264b79d08f5a4d9a59861aaec6"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Pencil clipart collection, with {{artworkCount}} illustrations to explore. Short worn pencils, sharpened tips and arranged drawing tools reveal different surfaces and views. Hands and creative scenes add context beside colored objects and separate ink drawings.",
+        "The gallery includes “Upright Yellow Pencil with a Pink Eraser” and “Pencil over a Square Maze” among its drawings. Explore the lettering or making theme in a personal design notebook, an alphabet activity or a creative practice page, choosing details that complement your own words."
+      ],
+      "paragraphSourceSha256": "886d2b4cfb82533f08c8040252429a326881e3917f1f3fcfbb4987adade4e417",
+      "paragraphEvidence": [
+        {
+          "id": "pencil-001",
+          "imageSha256": "a5409896549c6037e2addc46803f49ab655275e185d8a56678c026077e494841"
+        },
+        {
+          "id": "pencil-041",
+          "imageSha256": "4612442c55c3d813b259489d22a806d9366996264b79d08f5a4d9a59861aaec6"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "presentation": {
       "status": "checked-against-catalog",
@@ -1023,7 +2031,23 @@
           "id": "powerpoint-041",
           "imageSha256": "897ea4f826d2a3eccdd26f594c02623a6e1297476ad347ac177d38c96b2fd3e1"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Presentation clipart collection, with {{artworkCount}} illustrations to explore. Presenters, lecterns, charts and visual explanations show ways to share an idea. These are generic presentation activities and props rather than a specific software interface or an official Microsoft product.",
+        "The gallery includes “Woman Arranging Presentation Cards” and “Seated Woman Gesturing while Speaking Outline” among its drawings. Plan a personal creative notebook, a story activity or an entertainment-themed craft, matching the subject and composition to your own idea."
+      ],
+      "paragraphSourceSha256": "5655d6d18d962c2c1da83996649bbe18087da32f8bf178a21f14e3e8e78fe143",
+      "paragraphEvidence": [
+        {
+          "id": "powerpoint-001",
+          "imageSha256": "3e5558991a9eaba3fce68b0918ba2ca7985f4a24f06da7a847d891992a059590"
+        },
+        {
+          "id": "powerpoint-041",
+          "imageSha256": "897ea4f826d2a3eccdd26f594c02623a6e1297476ad347ac177d38c96b2fd3e1"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "quail": {
       "status": "checked-against-catalog",
@@ -1039,7 +2063,23 @@
           "id": "quail-041",
           "imageSha256": "cfd83e23a536a94eee426e2c0c2968029ec075b30e3622456cb4e742059c86ed"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Quail clipart collection, with {{artworkCount}} illustrations to explore. Patterned feathers, rounded bodies and characteristic head plumes anchor this quail collection. Natural poses sit beside raincoats, reading scenes and gardening characters, with nests and botanical details elsewhere.",
+        "The gallery includes “Gray Crested Quail Preening” and “Quail Drinking from a Curled Leaf” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "560d18ba19baaa6ffaf734263e290da25c7fb32bb9b4928fa74d8be6f5be46ee",
+      "paragraphEvidence": [
+        {
+          "id": "quail-001",
+          "imageSha256": "9289d8b98bc896369249064786b582acb2772d262576fe8478eaffb9fa502718"
+        },
+        {
+          "id": "quail-041",
+          "imageSha256": "cfd83e23a536a94eee426e2c0c2968029ec075b30e3622456cb4e742059c86ed"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "quarter": {
       "status": "checked-against-catalog",
@@ -1055,7 +2095,23 @@
           "id": "quarter-041",
           "imageSha256": "58585e9d32d261c49e4814494991d22d67c8454ee6f095fc51137b48bf41281e"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Quarter clipart collection, with {{artworkCount}} illustrations to explore. Quarter coins appear alone, grouped and held between fingers, with everyday scenes around the money. Different views show rims and portraits without making collectible-grade coin identification claims.",
+        "The gallery includes “Tilted Washington Quarter Portrait” and “Hand Dropping a Quarter into an Envelope” among its drawings. Use the drawings in a financial literacy activity, a personal planning page or an illustrated discussion; the artwork supplies visual context for your own explanation."
+      ],
+      "paragraphSourceSha256": "1fc123581ae378de675434c5de80d541c0fbca30c3a0d2448dafc6dadcdf11b0",
+      "paragraphEvidence": [
+        {
+          "id": "quarter-001",
+          "imageSha256": "3f84e1e148088d7ff261b3048e5ac08f589056366d12515eb2b93e819469ae88"
+        },
+        {
+          "id": "quarter-041",
+          "imageSha256": "58585e9d32d261c49e4814494991d22d67c8454ee6f095fc51137b48bf41281e"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "quilt": {
       "status": "checked-against-catalog",
@@ -1071,7 +2127,23 @@
           "id": "quilt-041",
           "imageSha256": "72eaf8a75ba685243025f0197b06f39cb9a12a3aca8508b3acc54726c227a532"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Quilt clipart collection, with {{artworkCount}} illustrations to explore. Patchwork blocks, folded blankets and stitching give these quilts distinct patterns. Different fabric arrangements and views distinguish the textiles, with ink versions alongside colored cloth illustrations.",
+        "The gallery includes “Teal and Coral Striped Quilt” and “Letter Q Quilt Banner” among its drawings. Illustrate a story prompt, a personal journal entry or a classroom discussion, choosing the action and arrangement that make your intended meaning clear."
+      ],
+      "paragraphSourceSha256": "583b2f9151231dbe215d17899d9d49cf6f70cbf937f23d4a8052905304d11b40",
+      "paragraphEvidence": [
+        {
+          "id": "quilt-001",
+          "imageSha256": "dc0b0f21f922af0b4ac7826cae2d1339cc3fb7c13f80fa365c301f90f1aea6ff"
+        },
+        {
+          "id": "quilt-041",
+          "imageSha256": "72eaf8a75ba685243025f0197b06f39cb9a12a3aca8508b3acc54726c227a532"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "rainbow": {
       "status": "checked-against-catalog",
@@ -1087,7 +2159,23 @@
           "id": "rainbow-41-arch-maze",
           "imageSha256": "4e2d20774ffc55f2d4ce1ca02595716689eb7a73e787ab163bf970d898a55fa4"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Rainbow clipart collection, with {{artworkCount}} illustrations to explore. Arched bands, hanging ornaments and bright materials give these rainbows different structures. Stained glass, fabric and decorative objects offer alternatives to a simple painted arc.",
+        "The gallery includes “Rainbow Blown by a Little Cloud” and “Rainbow-Shaped Maze Pattern Outline” among its drawings. Build a nature observation page, an illustrated setting or a classroom activity around the form and atmosphere that suit your subject."
+      ],
+      "paragraphSourceSha256": "90bd26d2f42944c5b3a569899fcd5b55189b5e2cec5bac642fbe8b68ceb3b943",
+      "paragraphEvidence": [
+        {
+          "id": "rainbow-01-windswept-weather",
+          "imageSha256": "ff4903ddd2ee26c478140b47d77442db7c3e8f8f8638582eece55b5ebe5b491a"
+        },
+        {
+          "id": "rainbow-41-arch-maze",
+          "imageSha256": "4e2d20774ffc55f2d4ce1ca02595716689eb7a73e787ab163bf970d898a55fa4"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "rat": {
       "status": "checked-against-catalog",
@@ -1103,7 +2191,23 @@
           "id": "rat-041",
           "imageSha256": "279b5a6b4e2d0edb23fab27b93deffd21036ed5db585761a6330c3c8440f6ed9"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Rat clipart collection, with {{artworkCount}} illustrations to explore. Rats read, play instruments and settle into nests, with more natural poses elsewhere. Different coats, expressions and props distinguish the characters, including detailed ink scenes.",
+        "The gallery includes “Brown Rat on a Stone” and “Rat Jumping over a Block” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "fdc8e092dc32ab6922878fd5b19093fa837e050145d393a3fbb4d972e922582b",
+      "paragraphEvidence": [
+        {
+          "id": "rat-001",
+          "imageSha256": "80af2815dcd558753f88cf83a7ba0a41c4298ed4170a33c4ddf4c1f253ff61b2"
+        },
+        {
+          "id": "rat-041",
+          "imageSha256": "279b5a6b4e2d0edb23fab27b93deffd21036ed5db585761a6330c3c8440f6ed9"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "rock": {
       "status": "checked-against-catalog",
@@ -1119,7 +2223,23 @@
           "id": "rock-041",
           "imageSha256": "9850d989aa6ac3907f237d1bbb238e21060ba05b3804183c2e15144d4da4f4af"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Rock clipart collection, with {{artworkCount}} illustrations to explore. Layered stone, crystals and weathered fragments show different rock surfaces. Fossils, carved marks and a shallow water-filled hollow provide specific details beside boulders and smaller specimens.",
+        "The gallery includes “Rounded Pink Speckled Stone” and “Tall Hoodoo Rock Outline” among its drawings. Build a nature observation page, an illustrated setting or a classroom activity around the form and atmosphere that suit your subject."
+      ],
+      "paragraphSourceSha256": "443ba80693a095c08aaa6fc7e49495a87c950a4de859b2a14f4e3f11ea98e7ec",
+      "paragraphEvidence": [
+        {
+          "id": "rock-001",
+          "imageSha256": "efac8218dd89dad8b84446937dac12f31e229c0d04193283cc691461cf6037ce"
+        },
+        {
+          "id": "rock-041",
+          "imageSha256": "9850d989aa6ac3907f237d1bbb238e21060ba05b3804183c2e15144d4da4f4af"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "sets": {
       "status": "checked-against-catalog",
@@ -1135,7 +2255,23 @@
           "id": "sets-041",
           "imageSha256": "3111f2bdcdf55bf7710621cfc038844a4e6c066db1070ecb61f26060b86e8eff"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Sets clipart collection, with {{artworkCount}} illustrations to explore. Venn diagrams, grouped objects and mathematical arrangements illustrate meanings of a set. Labeled relationships are checked as part of the drawing, with everyday collections providing pictorial alternatives.",
+        "The gallery includes “Five Seashells inside a Rope Set” and “Empty Set and Set Containing Zero Outline” among its drawings. Arrange the artwork around your own text in a personal page layout, an invitation or a classroom display, choosing shapes that frame rather than crowd the main message."
+      ],
+      "paragraphSourceSha256": "1e192df2ab181da6a355d946bde1ad2c40eebc536163b8849d391dd33bf45074",
+      "paragraphEvidence": [
+        {
+          "id": "sets-001",
+          "imageSha256": "37149b36ac625366ddf2ca0f6e5178862526964d3f3f308779277f16be384875"
+        },
+        {
+          "id": "sets-041",
+          "imageSha256": "3111f2bdcdf55bf7710621cfc038844a4e6c066db1070ecb61f26060b86e8eff"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "star": {
       "status": "checked-against-catalog",
@@ -1151,7 +2287,23 @@
           "id": "star-041-woodcut-radiance",
           "imageSha256": "3c7da022b86d2a654c97c196ced4471700b520a107de5e3caea53eacb7eda508"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Star clipart collection, with {{artworkCount}} illustrations to explore. Fabric patches, ribbon, candles and faceted shapes turn stars into different objects. Stitched borders, ornaments and ascending groups provide alternatives to a plain five-point symbol.",
+        "The gallery includes “Folded Copper Star” and “Woodcut Radiating Star” among its drawings. Build a nature observation page, an illustrated setting or a classroom activity around the form and atmosphere that suit your subject."
+      ],
+      "paragraphSourceSha256": "b52490319df5a822bd16fd5363fe7d323bf7b345a231526ddab9967f51094c73",
+      "paragraphEvidence": [
+        {
+          "id": "star-001-copper-origami",
+          "imageSha256": "503de160e5ebfb93e2d714f1003a314706c598d49ec862d80e8550385a0ceba5"
+        },
+        {
+          "id": "star-041-woodcut-radiance",
+          "imageSha256": "3c7da022b86d2a654c97c196ced4471700b520a107de5e3caea53eacb7eda508"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "toilet": {
       "status": "checked-against-catalog",
@@ -1167,7 +2319,23 @@
           "id": "toilet-041",
           "imageSha256": "d02cf87738247cb4b0bb9b378a2c3bfef6a6ee9b7cea119062c9574b0f76e5f7"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Toilet clipart collection, with {{artworkCount}} illustrations to explore. Fixtures, portable arrangements and maintenance scenes explore toilets in different forms. Plumbing details, workshop activity and distinct bowl designs broaden the collection beyond one repeated bathroom fixture.",
+        "The gallery includes “Cream One-Piece Toilet” and “Wall-Mounted Wooden Latrine” among its drawings. Illustrate a story prompt, a personal journal entry or a classroom discussion, choosing the action and arrangement that make your intended meaning clear."
+      ],
+      "paragraphSourceSha256": "8ddec0f0618e660f48ef37b1e885be186646f8b21450f91275d6269369c28282",
+      "paragraphEvidence": [
+        {
+          "id": "toilet-001",
+          "imageSha256": "3ab932d016661c3cc5ad4c208172ebefa5c00efa7738498347324f921814d8a5"
+        },
+        {
+          "id": "toilet-041",
+          "imageSha256": "d02cf87738247cb4b0bb9b378a2c3bfef6a6ee9b7cea119062c9574b0f76e5f7"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "usa": {
       "status": "checked-against-catalog",
@@ -1183,7 +2351,23 @@
           "id": "usa-041",
           "imageSha256": "5caecf49a07ed605b256bee4c63029dd4b9a2de5c86f81cd1abaf80ba72c1550"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our USA clipart collection, with {{artworkCount}} illustrations to explore. USA lettering, civic symbols and people with American-themed props share this collection. Letters, certificates and voting imagery are illustrations rather than evidence of real results, official status or endorsements.",
+        "The gallery includes “Colorful Wooden United States Puzzle Map” and “Paisley and Star Bandana Outline” among its drawings. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
+      ],
+      "paragraphSourceSha256": "f9a241f422913a5b9d9e3153bcac75ef08b90c0233616970b27d7997ce2085c5",
+      "paragraphEvidence": [
+        {
+          "id": "usa-001",
+          "imageSha256": "998f519fe7edc8d231b49e4c2af6d2242eb439d8a4baf143758e48590071509f"
+        },
+        {
+          "id": "usa-041",
+          "imageSha256": "5caecf49a07ed605b256bee4c63029dd4b9a2de5c86f81cd1abaf80ba72c1550"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "van": {
       "status": "checked-against-catalog",
@@ -1199,7 +2383,23 @@
           "id": "van-041",
           "imageSha256": "8e205fd6b44783ad20c68b2de130a4a8d8ec336e75767d38bc899c89e6bced23"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Van clipart collection, with {{artworkCount}} illustrations to explore. Delivery parcels, mobile workshops and family boarding scenes give these vans different uses. Recognizable families are named where supported; custom interiors and cutaway concepts remain distinct from verified factory configurations.",
+        "The gallery includes “Orange Delivery Van” and “Vintage Delivery Van Line Art” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "2227208a031a2a76a5095a73010f3249531d956b6b28b25f8647e39e60f2eef5",
+      "paragraphEvidence": [
+        {
+          "id": "van-001",
+          "imageSha256": "f395010434991e2076e49f2a799158e7b8188a7147354b50351f3289c2e6cbcd"
+        },
+        {
+          "id": "van-041",
+          "imageSha256": "8e205fd6b44783ad20c68b2de130a4a8d8ec336e75767d38bc899c89e6bced23"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "vegetables": {
       "status": "checked-against-catalog",
@@ -1215,7 +2415,23 @@
           "id": "vegetables-041-napa-cabbage-spiral",
           "imageSha256": "72088025baa4eec0282e91593b5b4a898dd92a08af414366dd0cb9021325917f"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Vegetables clipart collection, with {{artworkCount}} illustrations to explore. Whole vegetables, cut faces, roots and young plants show different edible forms. Cauliflower sections, radish slices and Brussels-sprout stalks add specific textures beside colored specimens and separate ink compositions.",
+        "The gallery includes “Three Colorful Carrots with Slices” and “Round Cabbage in Black and White” among its drawings. Illustrate a personal recipe page, a food vocabulary activity or a kitchen journal, selecting a view that makes your chosen ingredient or dish easy to recognize."
+      ],
+      "paragraphSourceSha256": "183784bc2742504d8c3f1a5bc59f0caeea498c2ed8b8450eb6e27131f92c159e",
+      "paragraphEvidence": [
+        {
+          "id": "vegetables-001-rainbow-carrot-fan",
+          "imageSha256": "ba3bc4860f9103c37628f2a8f62e6ad2d3e8adb312aed86e9654851aef9f98af"
+        },
+        {
+          "id": "vegetables-041-napa-cabbage-spiral",
+          "imageSha256": "72088025baa4eec0282e91593b5b4a898dd92a08af414366dd0cb9021325917f"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "violin": {
       "status": "checked-against-catalog",
@@ -1231,7 +2447,23 @@
           "id": "violin-041",
           "imageSha256": "b4b420a425ffadb5c0276beb06009e10eb5556376d0e5c3b1e48384e82fc1fe8"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Violin clipart collection, with {{artworkCount}} illustrations to explore. Instrument views, flowers and bowing gestures sit beside repair-bench scenes. Pegs, strings, body outlines and props distinguish the drawings without assigning an unverified maker or model.",
+        "The gallery includes “Golden Violin Side View” and “Violin on Sheet Music” among its drawings. Illustrate a personal music notebook, a rehearsal journal or a listening activity, matching the pictured instrument or performance theme to the music you are exploring."
+      ],
+      "paragraphSourceSha256": "32e8fec7811cd1ec665497708cbea270af1fee9f9238a308965aee110e3fa115",
+      "paragraphEvidence": [
+        {
+          "id": "violin-001",
+          "imageSha256": "ed0bed830542d460cb34523e28c2215b63756d1e003ad05e72ce50f2809bbc30"
+        },
+        {
+          "id": "violin-041",
+          "imageSha256": "b4b420a425ffadb5c0276beb06009e10eb5556376d0e5c3b1e48384e82fc1fe8"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "vines": {
       "status": "checked-against-catalog",
@@ -1247,7 +2479,23 @@
           "id": "vines-041",
           "imageSha256": "3ba81dccb1560087aa39ef5d11314395db23fcc26bc03a3493c767c3e56b2972"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Vines clipart collection, with {{artworkCount}} illustrations to explore. Trailing stems, curling tendrils and branching leaves create different vine silhouettes. Flowering and autumn-colored treatments sit beside botanical outlines, with leaf and stem details described individually.",
+        "The gallery includes “Climbing Ivy Sprig” and “Thorny Berry Vine” among its drawings. Build a plant observation page, a personal garden journal or a nature-themed greeting, comparing the visible plant details and arrangements before choosing your focal image."
+      ],
+      "paragraphSourceSha256": "136c0e4d6218c82352ca47984ea4ae43e6e75006bd34949e18b020b393e1033c",
+      "paragraphEvidence": [
+        {
+          "id": "vines-001",
+          "imageSha256": "b49d3c86c4bb31e3ee9aee4febb7323e34866937669c95cd2b822af286406baa"
+        },
+        {
+          "id": "vines-041",
+          "imageSha256": "3ba81dccb1560087aa39ef5d11314395db23fcc26bc03a3493c767c3e56b2972"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.553Z"
     },
     "volcano": {
       "status": "checked-against-catalog",
@@ -1263,7 +2511,23 @@
           "id": "volcano-041",
           "imageSha256": "fae927f16eee6a9ab94806c87e3231480a7f4c183c0bc734d2fab70bb6345497"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Volcano clipart collection, with {{artworkCount}} illustrations to explore. Crater lakes, lava channels and erupting peaks show several volcanic forms. Cutaways, terraced slopes and friendly characters add perspectives, with geological illustrations kept separate from fantasy treatments.",
+        "The gallery includes “Dark Volcano with a Side Lava Fountain” and “Ridged Volcano Crater in Black and White” among its drawings. Build a nature observation page, an illustrated setting or a classroom activity around the form and atmosphere that suit your subject."
+      ],
+      "paragraphSourceSha256": "2f34aeb4242a51683bdd912cee83c19db8f4ac222e75a56a16fa41378f84eb6a",
+      "paragraphEvidence": [
+        {
+          "id": "volcano-001",
+          "imageSha256": "5c85441533ba13bd77056d39a9ee3b777e412580f9e2e5106e159da126812ef2"
+        },
+        {
+          "id": "volcano-041",
+          "imageSha256": "fae927f16eee6a9ab94806c87e3231480a7f4c183c0bc734d2fab70bb6345497"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "walmart": {
       "status": "checked-against-catalog",
@@ -1279,7 +2543,23 @@
           "id": "walmart-41-garment-rail",
           "imageSha256": "c84a5d5d7d25c98b9d86cfc81f546ffbb3ba29674fcb1fe7b0943195bdacf99d"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Walmart clipart collection, with {{artworkCount}} illustrations to explore. Walmart-themed bags, baskets and store scenes use the spark and wordmark. Shoppers, gifts and car-loading scenes add contexts without claiming the imagined activity is an advertised Walmart service.",
+        "The gallery includes “Walmart Tote with Fresh Groceries” and “Walmart Associate beside a Clothing Rail” among its drawings. Use these illustrations in a personal shopping journal, a retail vocabulary activity or a classroom discussion about stores and everyday purchases."
+      ],
+      "paragraphSourceSha256": "684d3eb1e921b114f1ad222f09b098bf98e1ec59a5b307611f29e95195973463",
+      "paragraphEvidence": [
+        {
+          "id": "walmart-01-market-tote",
+          "imageSha256": "f4450fc9700b4383fc1d66d66aaf167251de4faae1f5e1e61eb2b25dbd35275a"
+        },
+        {
+          "id": "walmart-41-garment-rail",
+          "imageSha256": "c84a5d5d7d25c98b9d86cfc81f546ffbb3ba29674fcb1fe7b0943195bdacf99d"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "water": {
       "status": "checked-against-catalog",
@@ -1295,7 +2575,23 @@
           "id": "water-041",
           "imageSha256": "b4b78e523c783d95b1f7915a6f4825a388c2df59b89bd1245b4a0bef3b63ff6c"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Water clipart collection, with {{artworkCount}} illustrations to explore. Droplets, flowing channels and water-system diagrams cover different ways to picture water. Screw-pump cutaways, underground layers and water running over stone add movement and structure.",
+        "The gallery includes “Faceted Blue Water Drop” and “Stylized H2O Water Molecule Symbol” among its drawings. Build a nature observation page, an illustrated setting or a classroom activity around the form and atmosphere that suit your subject."
+      ],
+      "paragraphSourceSha256": "23938314f27484808551412fedaea2313f572cba64de84cfb22c6f54da54d19b",
+      "paragraphEvidence": [
+        {
+          "id": "water-001",
+          "imageSha256": "5548187a4000c069882b28223565bb1b5d5eb75468dd7391bcf30aba8ed92a7f"
+        },
+        {
+          "id": "water-041",
+          "imageSha256": "b4b78e523c783d95b1f7915a6f4825a388c2df59b89bd1245b4a0bef3b63ff6c"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "website": {
       "status": "checked-against-catalog",
@@ -1311,7 +2607,23 @@
           "id": "website-041",
           "imageSha256": "5b660ef8925e166160b7b0e38fe1d24e2127ffdd6c79a5590be17d1e3c9d5fb0"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Website clipart collection, with {{artworkCount}} illustrations to explore. Browser windows, page layouts and illustrated web objects explore website ideas. Donation graphics and code panels are visual concepts, with each drawing describing its own controls and content.",
+        "The gallery includes “Sunrise Website in an Open Book” and “Website Page Printing Illustration” among its drawings. Illustrate a communication activity, a personal digital project or a technology vocabulary page, choosing a symbol or scene that makes the intended action clear."
+      ],
+      "paragraphSourceSha256": "8dda329b8cfdb7694cb199d17132498a42f748e926632b251e06ddeb9f6321ca",
+      "paragraphEvidence": [
+        {
+          "id": "website-001",
+          "imageSha256": "a0b10b0ddbc5321fd71297f0a6f506e58c75a69093941c4ae16d89bb81880c8a"
+        },
+        {
+          "id": "website-041",
+          "imageSha256": "5b660ef8925e166160b7b0e38fe1d24e2127ffdd6c79a5590be17d1e3c9d5fb0"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "whatsapp": {
       "status": "checked-against-catalog",
@@ -1327,7 +2639,23 @@
           "id": "whatsapp-041",
           "imageSha256": "312794f7229316923c91a3ed16b2dd65837d6140a7a07fc72839c894eb5818b3"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our WhatsApp clipart collection, with {{artworkCount}} illustrations to explore. Contact ribbons, catalogs and community scenes place the WhatsApp handset mark in illustrated objects. Signs, baskets and people add compositions without representing working accounts, actual messages or verified outcomes.",
+        "The gallery includes “Message Us Ribbon with WhatsApp Symbol” and “Drafting Tools with WhatsApp Contact” among its drawings. Illustrate a communication activity, a personal digital project or a technology vocabulary page, choosing a symbol or scene that makes the intended action clear."
+      ],
+      "paragraphSourceSha256": "e6db7b04cb2b3a7fb9ac352247a0a507f6db5b87535a3ab9559ab35449c6a25e",
+      "paragraphEvidence": [
+        {
+          "id": "whatsapp-001",
+          "imageSha256": "393e807250b31c84718e9dfe7d5237add428f77d7b237cca42081f0fbca38584"
+        },
+        {
+          "id": "whatsapp-041",
+          "imageSha256": "312794f7229316923c91a3ed16b2dd65837d6140a7a07fc72839c894eb5818b3"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "word": {
       "status": "checked-against-catalog",
@@ -1343,7 +2671,23 @@
           "id": "word-outline-hello",
           "imageSha256": "1cdf69060601d3ae8c7f7c5c94fad87b36a52558ca01bb64b896b0a613f25170"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Word clipart collection, with {{artworkCount}} illustrations to explore. Hello, Learn, Kind and other words appear in different materials and scenes. Books, chalk, balloons and character props give the lettering context, with separate outlined words among the ink designs.",
+        "The gallery includes “Rainbow Hello with Little Stars” and “Hello and Stars Coloring Drawing” among its drawings. Explore the lettering or making theme in a personal design notebook, an alphabet activity or a creative practice page, choosing details that complement your own words."
+      ],
+      "paragraphSourceSha256": "3ae621b8b7e008dbfbb25d677159f4602759a46b3b2e9f916f6c14a73c7b9eb9",
+      "paragraphEvidence": [
+        {
+          "id": "word-rainbow-hello",
+          "imageSha256": "5af3ef5b525ca1804ae96438b13139b367f2c45605cf685e30a735a49b0c9ee1"
+        },
+        {
+          "id": "word-outline-hello",
+          "imageSha256": "1cdf69060601d3ae8c7f7c5c94fad87b36a52558ca01bb64b896b0a613f25170"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "xbox": {
       "status": "checked-against-catalog",
@@ -1359,7 +2703,23 @@
           "id": "xbox-041",
           "imageSha256": "915c96d6f90afcb91451466b34342e1ba812739a2c82b4b29f8c04411f60abd2"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Xbox clipart collection, with {{artworkCount}} illustrations to explore. Xbox consoles and controllers sit beside players and gaming objects. Series X and Series S are named where visible features support them; illustrated accessories and connections are not technical product diagrams.",
+        "The gallery includes “Black Xbox Controller” and “Older Xbox Gamer in a Rocking Chair” among its drawings. Use the illustrations in a digital literacy activity, a personal technology notebook or a device-themed layout, selecting the pictured equipment that fits your subject."
+      ],
+      "paragraphSourceSha256": "dfc42aea7f4c38029c44cdcfc0c66cce9d33244ba21ceb60d52c3e5812e469a3",
+      "paragraphEvidence": [
+        {
+          "id": "xbox-001",
+          "imageSha256": "bb4eb44c7abaf2904c962023a41158b3c4f95a99b59e361893de1f687a2e7d2f"
+        },
+        {
+          "id": "xbox-041",
+          "imageSha256": "915c96d6f90afcb91451466b34342e1ba812739a2c82b4b29f8c04411f60abd2"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "yak": {
       "status": "checked-against-catalog",
@@ -1375,7 +2735,23 @@
           "id": "yak-041",
           "imageSha256": "4fa3ff3c87736b524704627ffa9592ad3570296386c7ce0a3e53dff58b6385e9"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Yak clipart collection, with {{artworkCount}} illustrations to explore. Shaggy coats, curved horns and resting or standing poses define these yaks. Parent-and-calf scenes, flowers and landscape details add variety through natural and character-based treatments.",
+        "The gallery includes “Black Yak with a Shaggy Coat” and “Person Guiding a Yak across Stepping Stones Outline” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "3498d81b7ce821bfb5b995f102fdcb2735cbd2504a7d123ab500b69ae055a13d",
+      "paragraphEvidence": [
+        {
+          "id": "yak-001",
+          "imageSha256": "fdf26ca7bb8951e53e08c31daf24ab2d531190f727378523b47cb4f4497fdab0"
+        },
+        {
+          "id": "yak-041",
+          "imageSha256": "4fa3ff3c87736b524704627ffa9592ad3570296386c7ce0a3e53dff58b6385e9"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "yoga": {
       "status": "checked-against-catalog",
@@ -1391,7 +2767,23 @@
           "id": "yoga-041",
           "imageSha256": "1ba4b3d2ec1e8d9a0c3d8a767e6e1c9867e804428da57d57660d4854b79f4638"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Yoga clipart collection, with {{artworkCount}} illustrations to explore. Standing lunges, seated positions and balancing figures show illustrated yoga poses. Different people, clothing and views distinguish the compositions; they are depictions for visual projects rather than exercise instructions.",
+        "The gallery includes “Woman in Warrior Two with Mustard Trousers” and “Crow Balance Outline” among its drawings. Illustrate a personal practice journal, a sports activity or a team-themed keepsake, choosing the pose or equipment that suits the story you are telling."
+      ],
+      "paragraphSourceSha256": "9f1b79abd8c0f3bb1a0f9f02f84a139038e3ef0d8b5f88007304c6f89c4aaf4b",
+      "paragraphEvidence": [
+        {
+          "id": "yoga-001",
+          "imageSha256": "fef2763112292bd1f49134df891fdd202cf4fa893ae489f6bbb05dbf82ec0730"
+        },
+        {
+          "id": "yoga-041",
+          "imageSha256": "1ba4b3d2ec1e8d9a0c3d8a767e6e1c9867e804428da57d57660d4854b79f4638"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "yogurt": {
       "status": "checked-against-catalog",
@@ -1407,7 +2799,23 @@
           "id": "yogurt-041",
           "imageSha256": "6fb74914cb470500dcdfd169218f2d930d2cb725c12d00fdbf9e1bf17326c8eb"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Yogurt clipart collection, with {{artworkCount}} illustrations to explore. Bowls, pots and layered snacks show yogurt with different toppings. Fruit, oats, coconut shells and serving scenes add textures, while characters and packaging provide less literal treatments.",
+        "The gallery includes “Open Green Yogurt Cup with a Foil Lid” and “Yogurt Bowl with Banana and Walnut Toppings” among its drawings. Illustrate a personal recipe page, a food vocabulary activity or a kitchen journal, selecting a view that makes your chosen ingredient or dish easy to recognize."
+      ],
+      "paragraphSourceSha256": "86944800b00a9528902f22227f82f6845e8161ad01b1672bf456b074be9203bd",
+      "paragraphEvidence": [
+        {
+          "id": "yogurt-001",
+          "imageSha256": "993c1b9806aa37ab6b7751ba070dd15416cce5d897d0538eb7895767fa4b7fc7"
+        },
+        {
+          "id": "yogurt-041",
+          "imageSha256": "6fb74914cb470500dcdfd169218f2d930d2cb725c12d00fdbf9e1bf17326c8eb"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "yoyo": {
       "status": "checked-against-catalog",
@@ -1423,7 +2831,23 @@
           "id": "yoyo-041",
           "imageSha256": "9744fb7f646d8e3124461dcd04eaa290c9da487795b925174eeb826b5f4d3054"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Yo-Yo clipart collection, with {{artworkCount}} illustrations to explore. Yo-yos vary from reflective metal to koi patterns and smiling characters. Strings, stands and hand-held views distinguish the objects, with clear ink drawings among the colored designs.",
+        "The gallery includes “Wooden Yo-Yo with a Cream String” and “Ornamental Yo-Yo Line Art” among its drawings. Plan a personal creative notebook, a story activity or an entertainment-themed craft, matching the subject and composition to your own idea."
+      ],
+      "paragraphSourceSha256": "cb2261798feb716008875ddec38c979ee6e8480f140e6fb871be32171016d991",
+      "paragraphEvidence": [
+        {
+          "id": "yoyo-001",
+          "imageSha256": "297ca9dec25397fb19e9d00290aa3aa0c194652ef808aaf7ea1bb4dded7f7f12"
+        },
+        {
+          "id": "yoyo-041",
+          "imageSha256": "9744fb7f646d8e3124461dcd04eaa290c9da487795b925174eeb826b5f4d3054"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "zero": {
       "status": "checked-against-catalog",
@@ -1439,7 +2863,23 @@
           "id": "zero-041",
           "imageSha256": "3b6a6eb79a5fd1d2a60f0128f64649536293180f2e8bfbbcd31b27eaf0ed2595"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Zero clipart collection, with {{artworkCount}} illustrations to explore. Zero appears on calculators, empty objects and decorative signs. Different materials and scenes make the idea of none visible, with clear numeral forms alongside outline drawings.",
+        "The gallery includes “Folded Paper Zero” and “Slashed Zero Brushwork” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "a4de0dc8e209035737c008464b286eda1867deadd4a35709e4a91425cea7d623",
+      "paragraphEvidence": [
+        {
+          "id": "zero-001",
+          "imageSha256": "0bf295d4402e78d1516b4457a36537de7aaccfd797ab171abccb82a7322d87a4"
+        },
+        {
+          "id": "zero-041",
+          "imageSha256": "3b6a6eb79a5fd1d2a60f0128f64649536293180f2e8bfbbcd31b27eaf0ed2595"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "zipline": {
       "status": "checked-against-catalog",
@@ -1455,7 +2895,23 @@
           "id": "zipline-041",
           "imageSha256": "7a1c44f8738e3c8aa975c7a3dfca174bb843e349850f350635a32f1f0997a86c"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Zipline clipart collection, with {{artworkCount}} illustrations to explore. Riders, instructors and cable equipment show parts of a zipline scene. Helmets, harnesses and pulley arrangements distinguish the drawings, including adaptive riders; these are not equipment or safety instructions.",
+        "The gallery includes “Child Ziplining in a Purple Helmet” and “Helmeted Zipline Rider with a Prosthetic Lower Leg” among its drawings. Illustrate a personal practice journal, a sports activity or a team-themed keepsake, choosing the pose or equipment that suits the story you are telling."
+      ],
+      "paragraphSourceSha256": "6dde237de2513b4734f06a3cebae11c4956127df1101d477e3de61a291018297",
+      "paragraphEvidence": [
+        {
+          "id": "zipline-001",
+          "imageSha256": "6f00e257afa578e74f849c072fc48b706a371c1bbab44d9753c43a983db5780a"
+        },
+        {
+          "id": "zipline-041",
+          "imageSha256": "7a1c44f8738e3c8aa975c7a3dfca174bb843e349850f350635a32f1f0997a86c"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "zipper": {
       "status": "checked-against-catalog",
@@ -1471,7 +2927,23 @@
           "id": "zipper-041",
           "imageSha256": "847ad752cf02662d9c5d476e0d24b13843c01e2ee927fd9ba085b5279938268b"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Zipper clipart collection, with {{artworkCount}} illustrations to explore. Open teeth, joined fabric and curved zipper paths show the fastening mechanism. Bags, garments and decorative motifs add context beside close object views and distinct ink drawings.",
+        "The gallery includes “Cream Zipper with Brass-Colored Teeth” and “Paintbrushes in a Zipper Pocket” among its drawings. Plan a personal style board, a clothing vocabulary activity or a costume idea page, comparing the shapes and decorative details that suit your theme."
+      ],
+      "paragraphSourceSha256": "bd06532ea1dd4138762ce663d57380a03d06834ff0fd0c10e53c6e7bcf7c9523",
+      "paragraphEvidence": [
+        {
+          "id": "zipper-001",
+          "imageSha256": "1f6ca99990c57204ccba13801233f760c15f2ce21b12e20ee760fb6493ff308a"
+        },
+        {
+          "id": "zipper-041",
+          "imageSha256": "847ad752cf02662d9c5d476e0d24b13843c01e2ee927fd9ba085b5279938268b"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "zucchini": {
       "status": "checked-against-catalog",
@@ -1487,7 +2959,23 @@
           "id": "zucchini-041",
           "imageSha256": "f1e99e589b68a56a140c9bfa67c99beb4e413ae765dc5da354465431fc36fa78"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Zucchini clipart collection, with {{artworkCount}} illustrations to explore. Whole vegetables, seed cavities, ribbons and prepared dishes show different views of zucchini. Graters, produce crates and seedlings add surrounding objects beside natural textures and outline treatments.",
+        "The gallery includes “Tall Curved Dark Green Zucchini” and “Gardener Cutting a Zucchini from a Raised Bed” among its drawings. Illustrate a personal recipe page, a food vocabulary activity or a kitchen journal, selecting a view that makes your chosen ingredient or dish easy to recognize."
+      ],
+      "paragraphSourceSha256": "55f135a33d2ab8c24dcddce9b5671c9a5f2c1ff723534413f3e20c630d723697",
+      "paragraphEvidence": [
+        {
+          "id": "zucchini-001",
+          "imageSha256": "831b33a539d884e7686e27af561fe8ac5843a45811e632ccffa6b88966bf65b3"
+        },
+        {
+          "id": "zucchini-041",
+          "imageSha256": "f1e99e589b68a56a140c9bfa67c99beb4e413ae765dc5da354465431fc36fa78"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "1x-neo": {
       "status": "checked-against-catalog",
@@ -1503,7 +2991,23 @@
           "id": "neo-robot-pressing-a-test-button-outline-clipart",
           "imageSha256": "1b8b446b924d3a87f7000f65575cf39af0fa9c82b14cc12b6a7bcc001952cb04"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 1X NEO clipart collection, with {{artworkCount}} illustrations to explore. The fabric-covered 1X NEO appears in illustrated home activities, from carrying objects and sorting blocks to offering a book or opening a cupboard. These scenes do not document tested autonomy or real demonstrations.",
+        "The gallery includes “NEO Robot with a Hand Beside Its Head” and “NEO Robot Pressing a Test Button Outline” among its drawings. Use the illustrations in a digital literacy activity, a personal technology notebook or a device-themed layout, selecting the pictured equipment that fits your subject."
+      ],
+      "paragraphSourceSha256": "caf1b3a93aa20cbf93ffd72d996438212e4924ef49f14ab6f715e163597de863",
+      "paragraphEvidence": [
+        {
+          "id": "neo-robot-with-a-hand-beside-its-head-clipart",
+          "imageSha256": "55765b9e87e2f074665727deeb04abc1e81b5803310671ea69a6a2b1b41b5182"
+        },
+        {
+          "id": "neo-robot-pressing-a-test-button-outline-clipart",
+          "imageSha256": "1b8b446b924d3a87f7000f65575cf39af0fa9c82b14cc12b6a7bcc001952cb04"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "100-days-brighter": {
       "status": "checked-against-catalog",
@@ -1519,7 +3023,23 @@
           "id": "sun-reading-in-a-brighter-hammock-outline-clipart",
           "imageSha256": "6244cbd5cf9a9d21fdd595ef9807b90b6fb79565670467cfac13d9614349d300"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 100 Days Brighter clipart collection, with {{artworkCount}} illustrations to explore. Light bulbs, cheerful school buildings and backpacks connect these designs to 100 Days Brighter. Lettering, characters and separate ink scenes provide different focal points for the school-day celebration.",
+        "The gallery includes “Smiling Sun with 100 Days Brighter Ribbon” and “Sun Reading in a Brighter Hammock Outline” among its drawings. Create a classroom activity, a personal study page or a learning journal, choosing the illustration that supports the idea you want to explain."
+      ],
+      "paragraphSourceSha256": "828197c32b7d38c649dafda73c73439ebbdf3de3f4a25144f5ca0f152cf6aaf4",
+      "paragraphEvidence": [
+        {
+          "id": "smiling-sun-with-100-days-brighter-ribbon-clipart",
+          "imageSha256": "62a3ce334e8c573c06f5be8da354b6d413c7fc740ddd4fa9152b1326cb72043d"
+        },
+        {
+          "id": "sun-reading-in-a-brighter-hammock-outline-clipart",
+          "imageSha256": "6244cbd5cf9a9d21fdd595ef9807b90b6fb79565670467cfac13d9614349d300"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "100-days-smarter": {
       "status": "checked-against-catalog",
@@ -1535,7 +3055,23 @@
           "id": "squirrel-reading-a-smarter-book-outline-clipart",
           "imageSha256": "9bb4994a26ae32b6293f2b9b8047e4e6e9b74b5f734681c52f77137ca79c93b1"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 100 Days Smarter clipart collection, with {{artworkCount}} illustrations to explore. A reading caterpillar, chess pieces and stationery give 100 Days Smarter different settings. Clear celebratory wording appears with school objects, character scenes and distinct line drawings.",
+        "The gallery includes “Owl with a 100 Days Smarter Book” and “Squirrel Reading a Smarter Book Outline” among its drawings. Create a classroom activity, a personal study page or a learning journal, choosing the illustration that supports the idea you want to explain."
+      ],
+      "paragraphSourceSha256": "6441c837dfcb3d924ea5e69c5ba98fb87f4306d91acfef85986c7324cf4364f2",
+      "paragraphEvidence": [
+        {
+          "id": "owl-with-a-100-days-smarter-book-clipart",
+          "imageSha256": "61529317a9aff8d46f3bcf83843c3075d3d2de07208f0a7e0d95b54b42bb4364"
+        },
+        {
+          "id": "squirrel-reading-a-smarter-book-outline-clipart",
+          "imageSha256": "9bb4994a26ae32b6293f2b9b8047e4e6e9b74b5f734681c52f77137ca79c93b1"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "100-days-of-school": {
       "status": "checked-against-catalog",
@@ -1551,7 +3087,23 @@
           "id": "schoolhouse-and-long-scroll-outline-clipart",
           "imageSha256": "a924e979f21b4b57b3222950e9cdc904cd9a4b6a0e502f0cdb98ffed288fb5c5"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 100 Days Of School clipart collection, with {{artworkCount}} illustrations to explore. Backpacks, shoes, books and classroom characters frame 100 Days of School. Bright object groups and separate outlines offer different compositions while keeping the celebration message visible.",
+        "The gallery includes “100 Days of School Desktop Sign” and “Schoolhouse and Long Scroll Outline” among its drawings. Create a classroom activity, a personal study page or a learning journal, choosing the illustration that supports the idea you want to explain."
+      ],
+      "paragraphSourceSha256": "253bcb87dd00fa281dfe751c3697447898198e9f94c79666f66b6d3e13773ac2",
+      "paragraphEvidence": [
+        {
+          "id": "100-days-of-school-desktop-sign-clipart",
+          "imageSha256": "162f7d66e32fa6b3df65407fc0173f0b71b96ec8b611f543f6b9c867fff8a9d2"
+        },
+        {
+          "id": "schoolhouse-and-long-scroll-outline-clipart",
+          "imageSha256": "a924e979f21b4b57b3222950e9cdc904cd9a4b6a0e502f0cdb98ffed288fb5c5"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "100th-day-of-school": {
       "status": "checked-against-catalog",
@@ -1567,7 +3119,23 @@
           "id": "pencil-rocket-with-100th-badge-outline-clipart",
           "imageSha256": "b807f21bfd359935f4e4b7150599651561cc2d351552a6fbe1c0f9494aa69a53"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 100Th Day Of School clipart collection, with {{artworkCount}} illustrations to explore. Ordinal 100th lettering appears on backpacks, rainbows, paint palettes and classroom objects. These designs emphasize the hundredth school day through different layouts and distinct ink alternatives.",
+        "The gallery includes “Rainbow Rosette for the 100th Day of School” and “Pencil Rocket with 100th Badge Outline” among its drawings. Create a classroom activity, a personal study page or a learning journal, choosing the illustration that supports the idea you want to explain."
+      ],
+      "paragraphSourceSha256": "4a8564535e560af2cdd89d6150dbba52fe58463c8ab3b697ad5b4f658d8403e3",
+      "paragraphEvidence": [
+        {
+          "id": "rainbow-rosette-for-the-100th-day-of-school-clipart",
+          "imageSha256": "7aa191606239e444e86656a082edb3c528124e0aa2f56dff3b234bde48731d6f"
+        },
+        {
+          "id": "pencil-rocket-with-100th-badge-outline-clipart",
+          "imageSha256": "b807f21bfd359935f4e4b7150599651561cc2d351552a6fbe1c0f9494aa69a53"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "artemis": {
       "status": "checked-against-catalog",
@@ -1583,7 +3151,23 @@
           "id": "space-mission-planning-at-a-console-outline-clipart",
           "imageSha256": "9af2cc58266d8a406824707bf05096938ad06abf52f6414845d74768b80c24b0"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Artemis clipart collection, with {{artworkCount}} illustrations to explore. Artemis-themed drawings combine mission control, spacecraft recovery and astronaut equipment. Work scenes sit beside generic lunar concepts, with imagined hardware and destinations distinguished from verified mission configurations.",
+        "The gallery includes “Adult and Child Building an Artemis Rocket Model” and “Space Mission Planning at a Console Outline” among its drawings. Use the artwork in a personal science notebook, a classroom discussion or an imagined exploration story, keeping illustrative concepts distinct from factual diagrams."
+      ],
+      "paragraphSourceSha256": "3e1954b725199f4240412bcb31b833a4f99748821564706cf861fcc9326ff6fb",
+      "paragraphEvidence": [
+        {
+          "id": "adult-and-child-building-an-artemis-rocket-model-clipart",
+          "imageSha256": "1887ed08bdf0e2ac7c6ba417bdca677281a490843cd23139a87c74f05dbdde5f"
+        },
+        {
+          "id": "space-mission-planning-at-a-console-outline-clipart",
+          "imageSha256": "9af2cc58266d8a406824707bf05096938ad06abf52f6414845d74768b80c24b0"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "artemis-3": {
       "status": "checked-against-catalog",
@@ -1599,7 +3183,23 @@
           "id": "training-module-access-practice-outline-clipart",
           "imageSha256": "444ece561f5394cacb340d932a18e4a9d46ad373d68565579e31d705e4db83f7"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Artemis III clipart collection, with {{artworkCount}} illustrations to explore. Training modules, technicians and orbital demonstration concepts anchor this Artemis III collection. Starship and Blue Moon-inspired test hardware appear beside generic equipment; lunar scenes are concepts, not a claim that Artemis III is a Moon-landing mission.",
+        "The gallery includes “Technician beside a Round Spacecraft Training Module” and “Training Module Access Practice Outline” among its drawings. Use the artwork in a personal science notebook, a classroom discussion or an imagined exploration story, keeping illustrative concepts distinct from factual diagrams."
+      ],
+      "paragraphSourceSha256": "67a8a60df5d0572c80cc30068ffbae271d533693c09edfcb258d1ec8715664c5",
+      "paragraphEvidence": [
+        {
+          "id": "technician-beside-a-round-spacecraft-training-module-clipart",
+          "imageSha256": "44fe1fa2a43e19038db0b1d1715f2e48066de62bdfed93512d79d146de385e38"
+        },
+        {
+          "id": "training-module-access-practice-outline-clipart",
+          "imageSha256": "444ece561f5394cacb340d932a18e4a9d46ad373d68565579e31d705e4db83f7"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "audi": {
       "status": "checked-against-catalog",
@@ -1615,7 +3215,23 @@
           "id": "audi-a5-coupe-outline-from-the-front-corner-clipart",
           "imageSha256": "dd7476a79638c9923316b7a04a48405bc006fc34be663d1e4411315d342b09f5"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Audi clipart collection, with {{artworkCount}} illustrations to explore. Audi coupes, sedans, estates and SUVs appear from different angles. Lights, grilles and body forms support the named families, with classic vehicles and racing illustrations beside current-looking designs.",
+        "The gallery includes “Silver First-Generation Audi R8 with Dark Side Blades” and “Audi A5 Coupe Outline from the Front Corner” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "a6145addcc4bfcc82429eba606cf168c7a1e90598d120fe25bbf772c31fe6dac",
+      "paragraphEvidence": [
+        {
+          "id": "silver-first-generation-audi-r8-with-dark-side-blades-clipart",
+          "imageSha256": "a35ca14e95723d6291b0b00ccd56bdba05c0636a256da1d54ef4712194cdc2f9"
+        },
+        {
+          "id": "audi-a5-coupe-outline-from-the-front-corner-clipart",
+          "imageSha256": "dd7476a79638c9923316b7a04a48405bc006fc34be663d1e4411315d342b09f5"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "bitcoin-cash": {
       "status": "checked-against-catalog",
@@ -1631,7 +3247,23 @@
           "id": "single-bitcoin-cash-token-outline-clipart",
           "imageSha256": "6e49f32fc7ca9497de78eeba919f61042309a45dbbb664d35b21bd5dd37d8cef"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Bitcoin Cash clipart collection, with {{artworkCount}} illustrations to explore. The left-leaning Bitcoin Cash mark appears on green illustrated tokens with different borders. Single emblems, stacks and small groups vary the view beside separate black-and-white compositions.",
+        "The gallery includes “Green Bitcoin Cash Token with a Silver Edge” and “Single Bitcoin Cash Token Outline” among its drawings. Use the artwork in a digital currency vocabulary activity, a personal research notebook or an illustrated comparison of symbols, adding your own explanation of the topic."
+      ],
+      "paragraphSourceSha256": "d580fa7ef0381ad76ee3d437b89443f60001cd2d0ecfb80ce5e2e04abf8377d3",
+      "paragraphEvidence": [
+        {
+          "id": "green-bitcoin-cash-token-with-a-silver-edge-clipart",
+          "imageSha256": "b51b88c33bf59d60275f6611bffa5e66d69f8a5916b2432be4bc5f4f3f12586d"
+        },
+        {
+          "id": "single-bitcoin-cash-token-outline-clipart",
+          "imageSha256": "6e49f32fc7ca9497de78eeba919f61042309a45dbbb664d35b21bd5dd37d8cef"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "bitcoin": {
       "status": "checked-against-catalog",
@@ -1647,7 +3279,23 @@
           "id": "single-bitcoin-token-outline-clipart",
           "imageSha256": "0a8e800e108fe6cfac7bb59a6e8fad1dc334431e630db1b6694691ea94fa70e7"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Bitcoin clipart collection, with {{artworkCount}} illustrations to explore. Orange Bitcoin symbols sit within silver, gold-colored and scalloped frames. Tilted disks, stacks and groups offer different arrangements as decorative representations of the digital currency.",
+        "The gallery includes “Orange Bitcoin Emblem with a Silver Rim” and “Single Bitcoin Token Outline” among its drawings. Use the artwork in a digital currency vocabulary activity, a personal research notebook or an illustrated comparison of symbols, adding your own explanation of the topic."
+      ],
+      "paragraphSourceSha256": "5a0a6afbb16ba8d35a1c93ece7ef05f4d50956da1b3cca83090e9ac30839f6dd",
+      "paragraphEvidence": [
+        {
+          "id": "orange-bitcoin-emblem-with-a-silver-rim-clipart",
+          "imageSha256": "7b7393a2ac173bda3fc1adc0b71413b97cd205af572c5ae86bf9768426728e37"
+        },
+        {
+          "id": "single-bitcoin-token-outline-clipart",
+          "imageSha256": "0a8e800e108fe6cfac7bb59a6e8fad1dc334431e630db1b6694691ea94fa70e7"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "bmw": {
       "status": "checked-against-catalog",
@@ -1663,7 +3311,23 @@
           "id": "bmw-328-roadster-with-hood-straps-line-art-clipart",
           "imageSha256": "bf9ec6806f67d409348d95d1014786908d1bdc44506c614ba90c5d443ead19eb"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our BMW clipart collection, with {{artworkCount}} illustrations to explore. BMW families appear as coupes, sedans, estates, roadsters and racing illustrations. Front, rear and side views highlight body shapes and lighting, with generations named only where the drawing supports them.",
+        "The gallery includes “Blue BMW M3 (E30) with a Rear Spoiler” and “BMW 328 Roadster with Hood Straps Line Art” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "552dd5e7efb174eacf1e8bef49ba79acfe64be56994eb3a784ead6848f70386f",
+      "paragraphEvidence": [
+        {
+          "id": "blue-bmw-m3-e30-with-a-rear-spoiler-clipart",
+          "imageSha256": "e403062dcb7bf6ae12c2000899ed8ee0948783c77d56e0c321a79ca9fe6b8df8"
+        },
+        {
+          "id": "bmw-328-roadster-with-hood-straps-line-art-clipart",
+          "imageSha256": "bf9ec6806f67d409348d95d1014786908d1bdc44506c614ba90c5d443ead19eb"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "bnb": {
       "status": "checked-against-catalog",
@@ -1679,7 +3343,23 @@
           "id": "bnb-chain-single-token-with-a-notched-rim-outline-clipart",
           "imageSha256": "68495859b87e5261db9cb8ad55750faa3a8a0eea10c2dce4c837d89db8211357"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our BNB Chain clipart collection, with {{artworkCount}} illustrations to explore. The yellow geometric BNB Chain emblem appears on dark faces, shaped badges and metallic disks. Surrounding emblems, spinning views and grouped tokens vary the compositions beside ink designs.",
+        "The gallery includes “BNB Chain Round Emblem with a Polished Rim” and “BNB Chain Single Token with a Notched Rim Outline” among its drawings. Use the artwork in a digital currency vocabulary activity, a personal research notebook or an illustrated comparison of symbols, adding your own explanation of the topic."
+      ],
+      "paragraphSourceSha256": "d7b4a14fdf4a03d4a6be46188275001f51b9f501404e185bc0ed1e370a59a22a",
+      "paragraphEvidence": [
+        {
+          "id": "bnb-chain-round-emblem-with-a-polished-rim-clipart",
+          "imageSha256": "3b11d96bf37cce99598ca92665cd290c66f0ed019696e4fcb13ce8ae3c392905"
+        },
+        {
+          "id": "bnb-chain-single-token-with-a-notched-rim-outline-clipart",
+          "imageSha256": "68495859b87e5261db9cb8ad55750faa3a8a0eea10c2dce4c837d89db8211357"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.554Z"
     },
     "bugatti": {
       "status": "checked-against-catalog",
@@ -1695,7 +3375,23 @@
           "id": "bugatti-veyron-grand-sport-side-outline-clipart",
           "imageSha256": "420a8cb4efde631962b87567bee318d344106d15502913a516f9e0b862822dd4"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Bugatti clipart collection, with {{artworkCount}} illustrations to explore. Horseshoe grilles and body forms connect these Bugatti road cars and racing illustrations. Recognizable Veyron, Chiron and other families sit beside vintage vehicles whose exact type is left open where inconclusive.",
+        "The gallery includes “Blue and Black Bugatti Veyron” and “Bugatti Veyron Grand Sport Side Outline” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "f66a6f3296d44766dc6f52ff08e81986e368c05d8283350168dba24b5d18d0f1",
+      "paragraphEvidence": [
+        {
+          "id": "blue-and-black-bugatti-veyron-clipart",
+          "imageSha256": "c99f5d7dad4e8604e5add7ffaa49a810d572a6eb08eac567ab73f2f1626c3d93"
+        },
+        {
+          "id": "bugatti-veyron-grand-sport-side-outline-clipart",
+          "imageSha256": "420a8cb4efde631962b87567bee318d344106d15502913a516f9e0b862822dd4"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.555Z"
     },
     "cardano": {
       "status": "checked-against-catalog",
@@ -1711,7 +3407,23 @@
           "id": "cardano-coin-with-a-ridged-edge-outline-clipart",
           "imageSha256": "05592113ab3e99ebd2f8adbdbe0bd814fb47fe98baea5569cf9c3f4d51dcb893"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Cardano clipart collection, with {{artworkCount}} illustrations to explore. Cardano's radial dots appear on blue, silver and gold-colored medallions. Rope-like borders, scallops and raised dots distinguish emblems, while arcs, diamonds and stacks organize the groups.",
+        "The gallery includes “Silver Cardano Coin with a Ridged Edge” and “Cardano Coin with a Ridged Edge Outline” among its drawings. Use the artwork in a digital currency vocabulary activity, a personal research notebook or an illustrated comparison of symbols, adding your own explanation of the topic."
+      ],
+      "paragraphSourceSha256": "57c8b04975b2d3c9f517a36a0cfa86917d1394eb490ab4f036ca5417140e40d2",
+      "paragraphEvidence": [
+        {
+          "id": "silver-cardano-coin-with-a-ridged-edge-clipart",
+          "imageSha256": "d66a25e530393dd58c6802e21f48b09f80033d4b466930eba0f852ceaecb22c9"
+        },
+        {
+          "id": "cardano-coin-with-a-ridged-edge-outline-clipart",
+          "imageSha256": "05592113ab3e99ebd2f8adbdbe0bd814fb47fe98baea5569cf9c3f4d51dcb893"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.555Z"
     },
     "chainlink": {
       "status": "checked-against-catalog",
@@ -1727,7 +3439,23 @@
           "id": "chainlink-single-token-outline-clipart",
           "imageSha256": "a50ede0cb2abd1bcb6ec11f87ac1388c3c2127bf934812251637a9c183a0cdde"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Chainlink clipart collection, with {{artworkCount}} illustrations to explore. Chainlink's hexagonal mark appears on tokens with smooth, ridged and scalloped rims. Overlapping disks, upright fans and stacks change the layout beside separately outlined compositions.",
+        "The gallery includes “Chainlink Token with a Silver Edge” and “Chainlink Single Token Outline” among its drawings. Use the artwork in a digital currency vocabulary activity, a personal research notebook or an illustrated comparison of symbols, adding your own explanation of the topic."
+      ],
+      "paragraphSourceSha256": "f9602e3ef92679ff9b2f4331123faa020920bdf3013dd0a96bf0256eac8291db",
+      "paragraphEvidence": [
+        {
+          "id": "chainlink-token-with-a-silver-edge-clipart",
+          "imageSha256": "2217634472ae33e803606f88491a0e7ba9d7a3f898bcf5e870bf1d90704efd47"
+        },
+        {
+          "id": "chainlink-single-token-outline-clipart",
+          "imageSha256": "a50ede0cb2abd1bcb6ec11f87ac1388c3c2127bf934812251637a9c183a0cdde"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.555Z"
     },
     "dogecoin": {
       "status": "checked-against-catalog",
@@ -1743,7 +3471,23 @@
           "id": "dogecoin-single-token-with-a-notched-rim-outline-clipart",
           "imageSha256": "466b556add037ca8ae68f6d7ba7e4929ce9df729608a08006b219f906f56c1ac"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Dogecoin clipart collection, with {{artworkCount}} illustrations to explore. Dogecoin-themed emblems combine the D mark with dog details and metallic token shapes. Badges, scattered groups and spinning views vary the framing, without unverified exact portrait identities.",
+        "The gallery includes “Dogecoin Round Emblem with a Polished Rim” and “Dogecoin Single Token with a Notched Rim Outline” among its drawings. Use the artwork in a digital currency vocabulary activity, a personal research notebook or an illustrated comparison of symbols, adding your own explanation of the topic."
+      ],
+      "paragraphSourceSha256": "47304c7f7304f675d3b89a0df70cea350f06ca5ff58d46695eb4de1f436ced72",
+      "paragraphEvidence": [
+        {
+          "id": "dogecoin-round-emblem-with-a-polished-rim-clipart",
+          "imageSha256": "b1b1f01f4ceef7aa458bf3af2049117afe8ed14ff58752b765070e1a2f75c199"
+        },
+        {
+          "id": "dogecoin-single-token-with-a-notched-rim-outline-clipart",
+          "imageSha256": "466b556add037ca8ae68f6d7ba7e4929ce9df729608a08006b219f906f56c1ac"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.555Z"
     },
     "ethereum": {
       "status": "checked-against-catalog",
@@ -1759,7 +3503,23 @@
           "id": "ethereum-token-front-outline-clipart",
           "imageSha256": "b5bbb8dc30e90ca33285708644b625b2b8276a6f62df266042ccb4b49db3eb3c"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Ethereum clipart collection, with {{artworkCount}} illustrations to explore. Ethereum's split diamond centers silver, gold-colored and dark-faced tokens. Rounded-square badges, tilted disks and groups of different sizes give the symbol distinct presentations.",
+        "The gallery includes “Silver Ethereum Token with a Black Diamond” and “Ethereum Token Front Outline” among its drawings. Use the artwork in a digital currency vocabulary activity, a personal research notebook or an illustrated comparison of symbols, adding your own explanation of the topic."
+      ],
+      "paragraphSourceSha256": "6357c18f0bb7798640b3a466f8f269ddc9c0d0be639e4d3301c22de2ef2b8b59",
+      "paragraphEvidence": [
+        {
+          "id": "silver-ethereum-token-with-a-black-diamond-clipart",
+          "imageSha256": "85e3306f301cf628ce26c5ad2ee4372b62f7dbd0ce8726b60041306aca6419d3"
+        },
+        {
+          "id": "ethereum-token-front-outline-clipart",
+          "imageSha256": "b5bbb8dc30e90ca33285708644b625b2b8276a6f62df266042ccb4b49db3eb3c"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.555Z"
     },
     "ferrari": {
       "status": "checked-against-catalog",
@@ -1775,7 +3535,23 @@
           "id": "ferrari-f40-side-profile-outline-clipart",
           "imageSha256": "4e4ee3ae638308821504d8b78590a394cb5249ccd96ba56d7a9cdba2a6daf3cd"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Ferrari clipart collection, with {{artworkCount}} illustrations to explore. Noses, intakes and roof shapes distinguish these Ferrari sports cars. Classic coupes, roadsters, current-looking families and racing prototypes are described individually, with imagined speedsters clearly labeled as concepts.",
+        "The gallery includes “Red Ferrari F40 with a Tall Rear Wing” and “Ferrari F40 Side Profile Outline” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "8db85bd179cf6e1026111257171816e21ff1973db88722bf40698a2f083ed16b",
+      "paragraphEvidence": [
+        {
+          "id": "red-ferrari-f40-with-a-tall-rear-wing-clipart",
+          "imageSha256": "ee3af365f2d6d8394bf3a4af74f2657af96b6d8d53f0aae33f8d95df03e6b3d1"
+        },
+        {
+          "id": "ferrari-f40-side-profile-outline-clipart",
+          "imageSha256": "4e4ee3ae638308821504d8b78590a394cb5249ccd96ba56d7a9cdba2a6daf3cd"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.555Z"
     },
     "fleur-de-lis": {
       "status": "checked-against-catalog",
@@ -1791,7 +3567,23 @@
           "id": "layered-petal-fleur-de-lis-outline-clipart",
           "imageSha256": "beab9b74a9516f4c6c85313e1f4e685639707a10dfb6369aa120da0772b4a71b"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Fleur-de-lis clipart collection, with {{artworkCount}} illustrations to explore. Petals, roots, finials and decorative insets give these fleur-de-lis designs different structures. Purple blossoms, sunflower forms and bees connect some to plants; others emphasize curls and ink outlines.",
+        "The gallery includes “Ornate Gold-Colored Fleur-de-Lis with Green Inset” and “Layered Petal Fleur-de-Lis Outline” among its drawings. Make a personal greeting, an event scrapbook page or a family activity, matching the illustration to the occasion and the space for your message."
+      ],
+      "paragraphSourceSha256": "2d68febe6c1fe3dd6101110b4e9e2036e750f4cb6e65a33d952ed1b46ddb3241",
+      "paragraphEvidence": [
+        {
+          "id": "ornate-gold-colored-fleur-de-lis-with-green-inset-clipart",
+          "imageSha256": "a03fa85c6e5536a531f610b5eff3b2fa33822278ed49bf7f83bc5571d2417337"
+        },
+        {
+          "id": "layered-petal-fleur-de-lis-outline-clipart",
+          "imageSha256": "beab9b74a9516f4c6c85313e1f4e685639707a10dfb6369aa120da0772b4a71b"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.555Z"
     },
     "ford": {
       "status": "checked-against-catalog",
@@ -1807,7 +3599,23 @@
           "id": "ford-model-t-delivery-van-outline-clipart",
           "imageSha256": "48f41ff0ca20351a25adfc332da7d8d9e8498e3fd3aac7a627316ab6ce20442b"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Ford clipart collection, with {{artworkCount}} illustrations to explore. Mustangs, pickups, estate cars and passenger vans show different Ford vehicle families. Classic bodies, modern grilles and working roles distinguish the drawings, with broader names where an exact version is uncertain.",
+        "The gallery includes “Red First-Generation Ford Mustang Fastback” and “Ford Model T Delivery Van Outline” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "a7f1645407381c1ff7fb3675a080c51bbe5ebae4ce873ab82f307ad4cde665ed",
+      "paragraphEvidence": [
+        {
+          "id": "red-first-generation-ford-mustang-fastback-clipart",
+          "imageSha256": "212d8290cc932e854c1d4570db78116cd31f7cb005d89ab11409bbeecbf5c453"
+        },
+        {
+          "id": "ford-model-t-delivery-van-outline-clipart",
+          "imageSha256": "48f41ff0ca20351a25adfc332da7d8d9e8498e3fd3aac7a627316ab6ce20442b"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.555Z"
     },
     "hyperliquid": {
       "status": "checked-against-catalog",
@@ -1823,7 +3631,23 @@
           "id": "hyperliquid-single-token-with-a-notched-rim-outline-clipart",
           "imageSha256": "573520820cb8079f08976f8814530bfb613bb4f518d74e840442a2e552057a46"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Hyperliquid clipart collection, with {{artworkCount}} illustrations to explore. The turquoise Hyperliquid mark appears on metallic token illustrations and shaped badges. Angles, motion marks and differently sized groups vary the arrangement without implying issued physical coins.",
+        "The gallery includes “Hyperliquid Round Emblem with a Polished Rim” and “Hyperliquid Single Token with a Notched Rim Outline” among its drawings. Use the artwork in a digital currency vocabulary activity, a personal research notebook or an illustrated comparison of symbols, adding your own explanation of the topic."
+      ],
+      "paragraphSourceSha256": "507bb8afe6337e8b500c8f6b18e340dba9a567181fe1bfb7150ebf4944b5582a",
+      "paragraphEvidence": [
+        {
+          "id": "hyperliquid-round-emblem-with-a-polished-rim-clipart",
+          "imageSha256": "6542685cbd01a64580b35f7aa01d6d017f26c6d40b5b71f19ade452d3b54dff2"
+        },
+        {
+          "id": "hyperliquid-single-token-with-a-notched-rim-outline-clipart",
+          "imageSha256": "573520820cb8079f08976f8814530bfb613bb4f518d74e840442a2e552057a46"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.555Z"
     },
     "king-cake": {
       "status": "checked-against-catalog",
@@ -1839,7 +3663,23 @@
           "id": "king-cake-on-a-floral-stand-outline-clipart",
           "imageSha256": "20ef7b2cb49f4d179f67f218a80eef725e067fa238461e68e42592cea5c923e6"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our King Cake clipart collection, with {{artworkCount}} illustrations to explore. Spiral slices, icing and purple, green and gold-colored decoration distinguish these king cakes. Boxes, boards, trolleys and crowns add serving arrangements beside separate ink drawings.",
+        "The gallery includes “Sliced King Cake on a Gold-Rimmed Plate” and “King Cake on a Floral Stand Outline” among its drawings. Illustrate a personal recipe page, a food vocabulary activity or a kitchen journal, selecting a view that makes your chosen ingredient or dish easy to recognize."
+      ],
+      "paragraphSourceSha256": "a1af1a2bbf8d619e69e2808473ff8ad524623102633fcc302d76f57e946071dd",
+      "paragraphEvidence": [
+        {
+          "id": "sliced-king-cake-on-a-gold-rimmed-plate-clipart",
+          "imageSha256": "30e167568bfee125d51fce76e69fd1bafdfcfac0afc323e568742673bc6c8515"
+        },
+        {
+          "id": "king-cake-on-a-floral-stand-outline-clipart",
+          "imageSha256": "20ef7b2cb49f4d179f67f218a80eef725e067fa238461e68e42592cea5c923e6"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.555Z"
     },
     "lamborghini": {
       "status": "checked-against-catalog",
@@ -1855,7 +3695,23 @@
           "id": "lamborghini-miura-rear-outline-clipart",
           "imageSha256": "270c6a6d95a03630f12474efd058a99e87c240238b0aa8b6f859192376de41aa"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Lamborghini clipart collection, with {{artworkCount}} illustrations to explore. Lamborghini illustrations range from eyelash-headlight classics to sharply folded coupes and SUVs. Doors, scoops and rear views reveal different details; speculative roadsters and track designs retain concept labels.",
+        "The gallery includes “Orange Lamborghini Miura with Eyelash Headlights” and “Lamborghini Miura Rear Outline” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "2ffd81746a3aad0579210230cd02ad47f162964e57e70294ffdc9ea814ab0206",
+      "paragraphEvidence": [
+        {
+          "id": "orange-lamborghini-miura-with-eyelash-headlights-clipart",
+          "imageSha256": "80c83b9207326b59c7793fc85369659ca17b5269241d2777bd0ee315edfa7f25"
+        },
+        {
+          "id": "lamborghini-miura-rear-outline-clipart",
+          "imageSha256": "270c6a6d95a03630f12474efd058a99e87c240238b0aa8b6f859192376de41aa"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.555Z"
     },
     "laundry-robot": {
       "status": "checked-against-catalog",
@@ -1871,7 +3727,23 @@
           "id": "neo-robot-putting-fabric-in-a-bin-outline-clipart",
           "imageSha256": "7d34cb418eefabe0556357dcc83feca67b3beb2c1cc2ab8f06e91f7d314882b5"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Laundry Robot clipart collection, with {{artworkCount}} illustrations to explore. A fabric-covered NEO robot carries baskets, handles shirts and works around illustrated washing machines. Folding and sorting props vary the scenes; the actions do not prove tested laundry capabilities.",
+        "The gallery includes “NEO Robot Carrying a Wicker Basket” and “NEO Robot Putting Fabric in a Bin Outline” among its drawings. Use the illustrations in a digital literacy activity, a personal technology notebook or a device-themed layout, selecting the pictured equipment that fits your subject."
+      ],
+      "paragraphSourceSha256": "cd8d5efabb69ced64a1f4f8f682877c6c1810aaa7219828370e6f2b9e77ed726",
+      "paragraphEvidence": [
+        {
+          "id": "neo-robot-carrying-a-wicker-basket-clipart",
+          "imageSha256": "9cc81bda4157003417bd6e0e8beba216c50c86a73c3d24e18bc6ef023eb942f9"
+        },
+        {
+          "id": "neo-robot-putting-fabric-in-a-bin-outline-clipart",
+          "imageSha256": "7d34cb418eefabe0556357dcc83feca67b3beb2c1cc2ab8f06e91f7d314882b5"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.555Z"
     },
     "lunar-lander": {
       "status": "checked-against-catalog",
@@ -1887,7 +3759,23 @@
           "id": "faceted-lunar-habitat-and-ladder-outline-clipart",
           "imageSha256": "82daab229753ee2c2f159d72b6e40f69af09c3d4c68301c03308b0b1e06aad6b"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Lunar Lander clipart collection, with {{artworkCount}} illustrations to explore. Landing legs, windows, antenna masts and solar panels distinguish these lander concepts. Low platforms, faceted cabins and twin-tank arrangements explore shapes without an unverified mission or manufacturer model.",
+        "The gallery includes “Lunar Lander Concept with an Ascending Cabin” and “Faceted Lunar Habitat and Ladder Outline” among its drawings. Use the artwork in a personal science notebook, a classroom discussion or an imagined exploration story, keeping illustrative concepts distinct from factual diagrams."
+      ],
+      "paragraphSourceSha256": "5035be0dd070d20813395f6c05935962b07cc6dd115846d3858e2362a64bac00",
+      "paragraphEvidence": [
+        {
+          "id": "lunar-lander-concept-with-an-ascending-cabin-clipart",
+          "imageSha256": "5a3a306a823968b9bf80e8f7fc118e1fb19a651a017d1bf73b74618412f47cda"
+        },
+        {
+          "id": "faceted-lunar-habitat-and-ladder-outline-clipart",
+          "imageSha256": "82daab229753ee2c2f159d72b6e40f69af09c3d4c68301c03308b0b1e06aad6b"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.555Z"
     },
     "mardi-gras-beads": {
       "status": "checked-against-catalog",
@@ -1903,7 +3791,23 @@
           "id": "necklace-on-a-display-card-outline-clipart",
           "imageSha256": "3f7be1312930158bdf0de8fc2c0c37a95c53f5e40cacc22c1cac3f05a0b10702"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Mardi Gras Beads clipart collection, with {{artworkCount}} illustrations to explore. Bead loops, faceted pendants and charms vary these Mardi Gras necklaces. Music notes, crowns and baskets of strands add objects beside purple-and-green accents and separate ink arrangements.",
+        "The gallery includes “Mardi Gras Necklace with a Purple Teardrop” and “Necklace on a Display Card Outline” among its drawings. Make a personal greeting, an event scrapbook page or a family activity, matching the illustration to the occasion and the space for your message."
+      ],
+      "paragraphSourceSha256": "a21c5c9620dc4f5680f5b8429657c7e9508f41dfc63316c075dab60c8919e8c3",
+      "paragraphEvidence": [
+        {
+          "id": "mardi-gras-necklace-with-a-purple-teardrop-clipart",
+          "imageSha256": "5094c1f5d2ed2b035e72cb429bbbea4d214038b7d7410d2afbed3466368b3c8b"
+        },
+        {
+          "id": "necklace-on-a-display-card-outline-clipart",
+          "imageSha256": "3f7be1312930158bdf0de8fc2c0c37a95c53f5e40cacc22c1cac3f05a0b10702"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.555Z"
     },
     "mardi-gras-mask": {
       "status": "checked-against-catalog",
@@ -1919,7 +3823,23 @@
           "id": "harlequin-mask-with-a-side-bow-outline-clipart",
           "imageSha256": "3d3dcbb869da94be0a7782a3106019e5e9c6792467ecb1067bef42646a768f59"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Mardi Gras Mask clipart collection, with {{artworkCount}} illustrations to explore. Rosettes, plumes, filigree and bows give these carnival masks different silhouettes. Handheld forms sit beside pointed crowns and fleur-de-lis patterns, with distinct decorative outlines.",
+        "The gallery includes “Purple Mardi Gras Mask with a Rosette” and “Harlequin Mask with a Side Bow Outline” among its drawings. Make a personal greeting, an event scrapbook page or a family activity, matching the illustration to the occasion and the space for your message."
+      ],
+      "paragraphSourceSha256": "bea642c6f3530691d19d7b991b52ee96fcc4c0f3b597d3f087a29d65982e3b8f",
+      "paragraphEvidence": [
+        {
+          "id": "purple-mardi-gras-mask-with-a-rosette-clipart",
+          "imageSha256": "2232194029370b9717bfb590d100a4e56adb5521425fddaef785c7658d3e910a"
+        },
+        {
+          "id": "harlequin-mask-with-a-side-bow-outline-clipart",
+          "imageSha256": "3d3dcbb869da94be0a7782a3106019e5e9c6792467ecb1067bef42646a768f59"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.555Z"
     },
     "mardi-gras": {
       "status": "checked-against-catalog",
@@ -1935,7 +3855,23 @@
           "id": "crown-and-balloon-bouquet-outline-clipart",
           "imageSha256": "25d1aa5e876d7d6ef580ccc155ecbc1b1d1c29d18498ec0362aa31767a449216"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Mardi Gras clipart collection, with {{artworkCount}} illustrations to explore. Crowns, scepters, instruments and carnival clothing form this Mardi Gras collection. Bunting, lanterns and children with musical props add scenes beyond a repeated mask or necklace.",
+        "The gallery includes “Mardi Gras Crown and Crossed Scepters” and “Crown and Balloon Bouquet Outline” among its drawings. Make a personal greeting, an event scrapbook page or a family activity, matching the illustration to the occasion and the space for your message."
+      ],
+      "paragraphSourceSha256": "0f2d41e8d0569597a55642fe649fa4101ed7d01504fba0981b7a28dd67e4af90",
+      "paragraphEvidence": [
+        {
+          "id": "mardi-gras-crown-and-crossed-scepters-clipart",
+          "imageSha256": "964d6729f7164a4f3fa32c82a7b427473c58c007a3cdf8d6e4684ea379331163"
+        },
+        {
+          "id": "crown-and-balloon-bouquet-outline-clipart",
+          "imageSha256": "25d1aa5e876d7d6ef580ccc155ecbc1b1d1c29d18498ec0362aa31767a449216"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.555Z"
     },
     "mercedes-benz": {
       "status": "checked-against-catalog",
@@ -1951,7 +3887,23 @@
           "id": "mercedes-benz-190-w201-sedan-coloring-drawing-clipart",
           "imageSha256": "1575c93b6de0ae52d3e516accc2ae12121d4d36ec1d7bd287fdc153411b1bf56"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Mercedes-Benz clipart collection, with {{artworkCount}} illustrations to explore. Gullwing doors, classic hoods and different sedan, roadster and SUV bodies distinguish these Mercedes-Benz drawings. Campers and working vehicles broaden the collection, with custom or experimental forms qualified separately.",
+        "The gallery includes “Silver Mercedes-Benz 300 SL (W198) with Gullwing Doors” and “Mercedes-Benz 190 (W201) Sedan Coloring Drawing” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "6dc536d6605c761fdf0c64f5e6b6a7fc3776994baf6978c4285a2ff636d262fd",
+      "paragraphEvidence": [
+        {
+          "id": "silver-mercedes-benz-300-sl-w198-with-gullwing-doors-clipart",
+          "imageSha256": "9076fe1143b6f26586b0e58a8a44f3c66481e203259b02d1ea2649faf5c64bc7"
+        },
+        {
+          "id": "mercedes-benz-190-w201-sedan-coloring-drawing-clipart",
+          "imageSha256": "1575c93b6de0ae52d3e516accc2ae12121d4d36ec1d7bd287fdc153411b1bf56"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.555Z"
     },
     "monero": {
       "status": "checked-against-catalog",
@@ -1967,7 +3919,23 @@
           "id": "monero-single-token-with-a-notched-rim-outline-clipart",
           "imageSha256": "e299105ea09820da9625f7faf286a1cf076d602627a7b0c19b56f033faa16fbd"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Monero clipart collection, with {{artworkCount}} illustrations to explore. Monero's contrasting M mark appears on orange-and-dark faces with varied metal-colored borders. Disks, shaped frames and curving groups offer different layouts beside separately composed ink versions.",
+        "The gallery includes “Monero Round Emblem with a Polished Rim” and “Monero Single Token with a Notched Rim Outline” among its drawings. Use the artwork in a digital currency vocabulary activity, a personal research notebook or an illustrated comparison of symbols, adding your own explanation of the topic."
+      ],
+      "paragraphSourceSha256": "40b7a0f0d6ebd7bd9fbcfd3bd949691d4ba3056343aca49564817c5fbd992308",
+      "paragraphEvidence": [
+        {
+          "id": "monero-round-emblem-with-a-polished-rim-clipart",
+          "imageSha256": "a30d6b3dead8a71d77ac776b8bd5bbdcd6f998809733615938ac7635db144a22"
+        },
+        {
+          "id": "monero-single-token-with-a-notched-rim-outline-clipart",
+          "imageSha256": "e299105ea09820da9625f7faf286a1cf076d602627a7b0c19b56f033faa16fbd"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.555Z"
     },
     "moon-mission": {
       "status": "checked-against-catalog",
@@ -1983,7 +3951,23 @@
           "id": "astronaut-adjusting-a-dish-antenna-outline-clipart",
           "imageSha256": "b3c2c003e027aed6782510dbb347a6d297765ee0d395e744a19b1b1f6a0ee9fe"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Moon Mission clipart collection, with {{artworkCount}} illustrations to explore. Astronaut tasks, rock-handling tools and rover equipment give these Moon scenes specific activities. Desk models, robots and imagined habitat components add alternatives, with speculative hardware described as concepts.",
+        "The gallery includes “Astronaut Stepping across Lunar Rocks” and “Astronaut Adjusting a Dish Antenna Outline” among its drawings. Use the artwork in a personal science notebook, a classroom discussion or an imagined exploration story, keeping illustrative concepts distinct from factual diagrams."
+      ],
+      "paragraphSourceSha256": "e65e5a96bd001476ade04f86097f5fd9c61bebe30987a01f470dfde7176204cf",
+      "paragraphEvidence": [
+        {
+          "id": "astronaut-stepping-across-lunar-rocks-clipart",
+          "imageSha256": "2aba51393f2d531585982944d8dfa1480b18803f0980e17a3f189f298b0fb52d"
+        },
+        {
+          "id": "astronaut-adjusting-a-dish-antenna-outline-clipart",
+          "imageSha256": "b3c2c003e027aed6782510dbb347a6d297765ee0d395e744a19b1b1f6a0ee9fe"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.555Z"
     },
     "near-protocol": {
       "status": "checked-against-catalog",
@@ -1999,7 +3983,23 @@
           "id": "near-protocol-single-token-with-a-notched-rim-outline-clipart",
           "imageSha256": "3e2bcf701db3387219b46551b480578bb90d66dd005a2fb93e5b41174cd63d5c"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our NEAR Protocol clipart collection, with {{artworkCount}} illustrations to explore. The angular NEAR mark sits on bright faces framed by polished, notched or scalloped edges. Disks, shaped badges and curving groups vary the arrangement beside outlined alternatives.",
+        "The gallery includes “NEAR Protocol Round Emblem with a Polished Rim” and “NEAR Protocol Single Token with a Notched Rim Outline” among its drawings. Use the artwork in a digital currency vocabulary activity, a personal research notebook or an illustrated comparison of symbols, adding your own explanation of the topic."
+      ],
+      "paragraphSourceSha256": "c5eafcea25f04a913b16b3ffd434b5f4e96cbaf7bd2b306bec869b0df2218234",
+      "paragraphEvidence": [
+        {
+          "id": "near-protocol-round-emblem-with-a-polished-rim-clipart",
+          "imageSha256": "71479562f120aed529348dc1ef16197ecd21e81426871777a56c6c30a32d3e36"
+        },
+        {
+          "id": "near-protocol-single-token-with-a-notched-rim-outline-clipart",
+          "imageSha256": "3e2bcf701db3387219b46551b480578bb90d66dd005a2fb93e5b41174cd63d5c"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.555Z"
     },
     "orion-spacecraft": {
       "status": "checked-against-catalog",
@@ -2015,7 +4015,23 @@
           "id": "capsule-and-separated-fairing-panels-outline-clipart",
           "imageSha256": "0a2888dab3c8bb55726451cd87fec02408dfba50cb3042b614909f2922f7956b"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Orion Spacecraft clipart collection, with {{artworkCount}} illustrations to explore. Heat shields, access platforms, flotation tests and service-module concepts show spacecraft handling. Four-wing Orion-inspired designs are labeled as concepts; generic capsules avoid unsupported Orion model claims.",
+        "The gallery includes “Spacecraft Heat Shield on a Wheeled Stand” and “Capsule and Separated Fairing Panels Outline” among its drawings. Use the artwork in a personal science notebook, a classroom discussion or an imagined exploration story, keeping illustrative concepts distinct from factual diagrams."
+      ],
+      "paragraphSourceSha256": "00a1eac016ba542322727b7f3bebcbf8d7811c8f161440e4d1ca540840889216",
+      "paragraphEvidence": [
+        {
+          "id": "spacecraft-heat-shield-on-a-wheeled-stand-clipart",
+          "imageSha256": "0a7b0491dccbcbdd3d4417b403da8044ea87b3905846a69588a08dbb9be511fc"
+        },
+        {
+          "id": "capsule-and-separated-fairing-panels-outline-clipart",
+          "imageSha256": "0a2888dab3c8bb55726451cd87fec02408dfba50cb3042b614909f2922f7956b"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.555Z"
     },
     "porsche": {
       "status": "checked-against-catalog",
@@ -2031,7 +4047,23 @@
           "id": "porsche-356-coupe-outline-clipart",
           "imageSha256": "ce35b18d94c7b889447121facb151d8cd05bee5d9b217944adf3cb4b28134790"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Porsche clipart collection, with {{artworkCount}} illustrations to explore. Classic bodies, transaxle coupes, roadsters and modern sports cars appear throughout these Porsche drawings. Different views emphasize details, with racing and off-road adaptations distinguished from exact factory versions.",
+        "The gallery includes “Red Porsche 911 with Round Headlights” and “Porsche 356 Coupe Outline” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "9ffabef916f93a411084e1c48f926050333bf5fdc1e6fcbab26a90e625fe06a8",
+      "paragraphEvidence": [
+        {
+          "id": "red-porsche-911-with-round-headlights-clipart",
+          "imageSha256": "a1bb9eff605b6e68331832c0444cc830e4a4ce94e62a22873345d8e9681f9868"
+        },
+        {
+          "id": "porsche-356-coupe-outline-clipart",
+          "imageSha256": "ce35b18d94c7b889447121facb151d8cd05bee5d9b217944adf3cb4b28134790"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.555Z"
     },
     "rocket-launch": {
       "status": "checked-against-catalog",
@@ -2047,7 +4079,23 @@
           "id": "radio-dish-beside-a-rocket-launch-outline-clipart",
           "imageSha256": "fcb29bcca898a7e2898c1b6c4f8d7b5d2f6141cd3b570a4c89c899a319f9d6c9"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Rocket Launch clipart collection, with {{artworkCount}} illustrations to explore. Pads, erecting rockets and distant spectators give these launches different scales and views. Display models, shorelines and wooden toys offer quieter alternatives to a full plume-and-launch scene.",
+        "The gallery includes “Rocket Releasing Two Side Boosters” and “Radio Dish beside a Rocket Launch Outline” among its drawings. Use the artwork in a personal science notebook, a classroom discussion or an imagined exploration story, keeping illustrative concepts distinct from factual diagrams."
+      ],
+      "paragraphSourceSha256": "b5e48a25ca8a9186330a847530735114eb98f28b0a79c827cc461b8be76ab19e",
+      "paragraphEvidence": [
+        {
+          "id": "rocket-releasing-two-side-boosters-clipart",
+          "imageSha256": "6f5acfc6636973603c0e0c00fe604e771fc5b928207a6bd7adcca146894370e0"
+        },
+        {
+          "id": "radio-dish-beside-a-rocket-launch-outline-clipart",
+          "imageSha256": "fcb29bcca898a7e2898c1b6c4f8d7b5d2f6141cd3b570a4c89c899a319f9d6c9"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.555Z"
     },
     "solana": {
       "status": "checked-against-catalog",
@@ -2063,7 +4111,23 @@
           "id": "solana-single-token-with-a-notched-rim-outline-clipart",
           "imageSha256": "ae3f7c70333eb8d3875995c1035ed7bbf42bb0f4018d7af1524d86abd65eef8b"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Solana clipart collection, with {{artworkCount}} illustrations to explore. Solana's three slanted bars use turquoise-to-purple coloring within coin and badge illustrations. Dark faces, polished rims and groups of different sizes keep the symbol prominent beside ink compositions.",
+        "The gallery includes “Solana Round Emblem with a Polished Rim” and “Solana Single Token with a Notched Rim Outline” among its drawings. Use the artwork in a digital currency vocabulary activity, a personal research notebook or an illustrated comparison of symbols, adding your own explanation of the topic."
+      ],
+      "paragraphSourceSha256": "2e6b254724f0fa7c62aea8cea499cce979b7615e31c7a9da3e1cec2f619b4240",
+      "paragraphEvidence": [
+        {
+          "id": "solana-round-emblem-with-a-polished-rim-clipart",
+          "imageSha256": "1a3b4f8421766f06eb93f5d314228538bd4870a26628e0a02d1de594b0d39735"
+        },
+        {
+          "id": "solana-single-token-with-a-notched-rim-outline-clipart",
+          "imageSha256": "ae3f7c70333eb8d3875995c1035ed7bbf42bb0f4018d7af1524d86abd65eef8b"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.556Z"
     },
     "space-capsule": {
       "status": "checked-against-catalog",
@@ -2079,7 +4143,23 @@
           "id": "capsule-on-airbags-with-an-equipment-case-outline-clipart",
           "imageSha256": "71fee4aafcdfaf59c5fd504eded6c11b886b8f2447bb67add03f3f7e4be25cf4"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Space Capsule clipart collection, with {{artworkCount}} illustrations to explore. Airbags, lifting frames and recovery boats place these generic capsules in specific scenes. Docking displays, hatch activity and test tanks add details without claiming exact models or technical plans.",
+        "The gallery includes “Space Capsule on Landing Airbags” and “Capsule on Airbags with an Equipment Case Outline” among its drawings. Use the artwork in a personal science notebook, a classroom discussion or an imagined exploration story, keeping illustrative concepts distinct from factual diagrams."
+      ],
+      "paragraphSourceSha256": "351e7e34bc8e8d3c7a713f9da24b23fd7c4511181e8a970e949d5034cf7fbf26",
+      "paragraphEvidence": [
+        {
+          "id": "space-capsule-on-landing-airbags-clipart",
+          "imageSha256": "dacf864646795015b5716be0233c5e4ea00f734d9b393c696f10ba40b0297320"
+        },
+        {
+          "id": "capsule-on-airbags-with-an-equipment-case-outline-clipart",
+          "imageSha256": "71fee4aafcdfaf59c5fd504eded6c11b886b8f2447bb67add03f3f7e4be25cf4"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.556Z"
     },
     "stellar": {
       "status": "checked-against-catalog",
@@ -2095,7 +4175,23 @@
           "id": "stellar-emblem-with-a-beaded-rim-outline-clipart",
           "imageSha256": "acd29561ba2fca06bdb1f769699a4f79e683b1ed1b2a13f4f383ff2fcc55687d"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Stellar clipart collection, with {{artworkCount}} illustrations to explore. Stellar's slashed circular mark appears in gold-colored, silver and dark-framed tokens. Rows, descending groups and stacks vary the compositions beside front-and-back and outlined designs.",
+        "The gallery includes “Stellar Emblem with a Gold Inner Ring” and “Stellar Emblem with a Beaded Rim Outline” among its drawings. Use the artwork in a digital currency vocabulary activity, a personal research notebook or an illustrated comparison of symbols, adding your own explanation of the topic."
+      ],
+      "paragraphSourceSha256": "01cea08f22777b17eff78028a28161b234bbcf9336e31075c1331fcebe246332",
+      "paragraphEvidence": [
+        {
+          "id": "stellar-emblem-with-a-gold-inner-ring-clipart",
+          "imageSha256": "ff858b69b6a71bc4a0d96223b91ebec8863ac7646efa82a701afd047eeaab05d"
+        },
+        {
+          "id": "stellar-emblem-with-a-beaded-rim-outline-clipart",
+          "imageSha256": "acd29561ba2fca06bdb1f769699a4f79e683b1ed1b2a13f4f383ff2fcc55687d"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.556Z"
     },
     "tether": {
       "status": "checked-against-catalog",
@@ -2111,7 +4207,23 @@
           "id": "tether-single-token-with-a-notched-rim-outline-clipart",
           "imageSha256": "eecd182e4135b2914ab87f55ee6c2610b031f6c1e9e3fc58d8f4319b28d3e85e"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Tether clipart collection, with {{artworkCount}} illustrations to explore. Tether's T mark appears inside turquoise token illustrations with different rims. Spinning disks, stacks and upright emblems vary the layouts without representing physical currency products.",
+        "The gallery includes “Tether Round Emblem with a Polished Rim” and “Tether Single Token with a Notched Rim Outline” among its drawings. Use the artwork in a digital currency vocabulary activity, a personal research notebook or an illustrated comparison of symbols, adding your own explanation of the topic."
+      ],
+      "paragraphSourceSha256": "755424ce0221dc9c6d19a11d02527282a7e38f2bd0561e3736d89d094c6a2ca3",
+      "paragraphEvidence": [
+        {
+          "id": "tether-round-emblem-with-a-polished-rim-clipart",
+          "imageSha256": "e7ce67c22208c57d0c43b3863ea19907938746767ee2212f408dd72fab9a0914"
+        },
+        {
+          "id": "tether-single-token-with-a-notched-rim-outline-clipart",
+          "imageSha256": "eecd182e4135b2914ab87f55ee6c2610b031f6c1e9e3fc58d8f4319b28d3e85e"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.556Z"
     },
     "tron": {
       "status": "checked-against-catalog",
@@ -2127,7 +4239,23 @@
           "id": "tron-single-token-with-a-notched-rim-outline-clipart",
           "imageSha256": "cd9e4e1f106a1f402cc74054007f11f28552c4e0a1d6a160a154557f4c0d6e73"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our TRON clipart collection, with {{artworkCount}} illustrations to explore. TRON's angular triangle is presented in red, dark and metal-colored token designs. Scalloped frames, square badges and overlapping groups provide different surroundings beside ink compositions.",
+        "The gallery includes “TRON Round Emblem with a Polished Rim” and “TRON Single Token with a Notched Rim Outline” among its drawings. Use the artwork in a digital currency vocabulary activity, a personal research notebook or an illustrated comparison of symbols, adding your own explanation of the topic."
+      ],
+      "paragraphSourceSha256": "1c8d8da91afa6cfb59778eea1207587f146cc249aa6d96a0823561028b2655d4",
+      "paragraphEvidence": [
+        {
+          "id": "tron-round-emblem-with-a-polished-rim-clipart",
+          "imageSha256": "911d07b0a2ec121889f50bcd470eaf1de50fa6ed4ed63cf5d14fb1ff740ae9ac"
+        },
+        {
+          "id": "tron-single-token-with-a-notched-rim-outline-clipart",
+          "imageSha256": "cd9e4e1f106a1f402cc74054007f11f28552c4e0a1d6a160a154557f4c0d6e73"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.556Z"
     },
     "unus-sed-leo": {
       "status": "checked-against-catalog",
@@ -2143,7 +4271,23 @@
           "id": "unus-sed-leo-single-token-outline-clipart",
           "imageSha256": "fc2c150b3f886e148b683d09ff3fbcbabede6cc6d96f7f5946b04f0f22835b80"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our UNUS SED LEO clipart collection, with {{artworkCount}} illustrations to explore. The angular UNUS SED LEO lion stands out on dark token illustrations. Wavy gold-colored borders, mixed rims, separate trios and stacks distinguish the views and arrangements.",
+        "The gallery includes “UNUS SED LEO Token with a Silver Edge” and “UNUS SED LEO Single Token Outline” among its drawings. Use the artwork in a digital currency vocabulary activity, a personal research notebook or an illustrated comparison of symbols, adding your own explanation of the topic."
+      ],
+      "paragraphSourceSha256": "96017e7074b6472ccdb31c598d725297b7f18c39fc699a5a1e04a6cb697ab892",
+      "paragraphEvidence": [
+        {
+          "id": "unus-sed-leo-token-with-a-silver-edge-clipart",
+          "imageSha256": "b263870bb0c9317ce99b35f7d2ec13769f6d53116b43cfe2e36c044d01926c71"
+        },
+        {
+          "id": "unus-sed-leo-single-token-outline-clipart",
+          "imageSha256": "fc2c150b3f886e148b683d09ff3fbcbabede6cc6d96f7f5946b04f0f22835b80"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.556Z"
     },
     "usd-coin": {
       "status": "checked-against-catalog",
@@ -2159,7 +4303,23 @@
           "id": "single-usdc-token-outline-clipart",
           "imageSha256": "76b395564e9c8793027ebb56385ddf28f1ade17a8bcb6763a7a5fab7864a3320"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our USDC clipart collection, with {{artworkCount}} illustrations to explore. Blue USDC tokens display the dollar mark and circular side strokes in varied borders. Smooth disks, wavy rims, polygonal badges and stepped stacks appear beside outlined token groups.",
+        "The gallery includes “Blue USDC Token with a Silver Rim” and “Single USDC Token Outline” among its drawings. Use the artwork in a digital currency vocabulary activity, a personal research notebook or an illustrated comparison of symbols, adding your own explanation of the topic."
+      ],
+      "paragraphSourceSha256": "375859907622189352b64c6ba48d211bd138e272f89d26f18ff3016654b83029",
+      "paragraphEvidence": [
+        {
+          "id": "blue-usdc-token-with-a-silver-rim-clipart",
+          "imageSha256": "b5cbdd90d36f84314522298651cb2b2bf8da70ffa76e5e545503fc4ca9d00d28"
+        },
+        {
+          "id": "single-usdc-token-outline-clipart",
+          "imageSha256": "76b395564e9c8793027ebb56385ddf28f1ade17a8bcb6763a7a5fab7864a3320"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.556Z"
     },
     "usds": {
       "status": "checked-against-catalog",
@@ -2175,7 +4335,23 @@
           "id": "usds-single-token-outline-clipart",
           "imageSha256": "94a1a3034ec1f7aed8cca941725f4afc5fbadef80eda708936c710d6e7fde370"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our USDS clipart collection, with {{artworkCount}} illustrations to explore. The intertwined S motif appears on warm orange USDS tokens. Compact fans, wide groups, smooth rims and stacks vary the compositions beside independently arranged black-and-white drawings.",
+        "The gallery includes “USDS Token with a Silver Edge” and “USDS Single Token Outline” among its drawings. Use the artwork in a digital currency vocabulary activity, a personal research notebook or an illustrated comparison of symbols, adding your own explanation of the topic."
+      ],
+      "paragraphSourceSha256": "bbb7a347cdcb0db9e2c4f4d54a11a657988b293bfd2c5dbaf7474544036be9fa",
+      "paragraphEvidence": [
+        {
+          "id": "usds-token-with-a-silver-edge-clipart",
+          "imageSha256": "4912b36634243112efb0655fc6f9b248dac3c727f028fbef8877255ed463dc9b"
+        },
+        {
+          "id": "usds-single-token-outline-clipart",
+          "imageSha256": "94a1a3034ec1f7aed8cca941725f4afc5fbadef80eda708936c710d6e7fde370"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.556Z"
     },
     "whitebit-coin": {
       "status": "checked-against-catalog",
@@ -2191,7 +4367,23 @@
           "id": "whitebit-coin-single-token-outline-clipart",
           "imageSha256": "ffe83e18c90c246194e1efbbc54d56f6f02565a031b13da342f2af6e114e2db1"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our WhiteBIT Coin clipart collection, with {{artworkCount}} illustrations to explore. WhiteBIT Coin's angled W sits on dark faces with silver or gold-colored edges. Rope borders, square frames, groups and stacks distinguish the designs beside simplified ink compositions.",
+        "The gallery includes “WhiteBIT Coin Token with a Silver Edge” and “WhiteBIT Coin Single Token Outline” among its drawings. Use the artwork in a digital currency vocabulary activity, a personal research notebook or an illustrated comparison of symbols, adding your own explanation of the topic."
+      ],
+      "paragraphSourceSha256": "1fe7e52f19755c6cc4f9bb3fec4592d6e9f316c4b585f4fe1818efbce12cddb9",
+      "paragraphEvidence": [
+        {
+          "id": "whitebit-coin-token-with-a-silver-edge-clipart",
+          "imageSha256": "d8a09ad92fe29acf663498a4b0adeaa8bb38f22305dea31f89a98e5b68dab771"
+        },
+        {
+          "id": "whitebit-coin-single-token-outline-clipart",
+          "imageSha256": "ffe83e18c90c246194e1efbbc54d56f6f02565a031b13da342f2af6e114e2db1"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.556Z"
     },
     "xrp": {
       "status": "checked-against-catalog",
@@ -2207,7 +4399,23 @@
           "id": "xrp-single-token-with-a-notched-rim-outline-clipart",
           "imageSha256": "61b132c0d3e3cb609103527da76edc35d7b36d61b639300fda2806b3704a7631"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our XRP clipart collection, with {{artworkCount}} illustrations to explore. The curved XRP mark centers metallic disks, shaped badges and token groups. Polished rims, scallops and tilted views vary the treatments without identifying XRP artwork as a Ripple company logo.",
+        "The gallery includes “XRP Round Emblem with a Polished Rim” and “XRP Single Token with a Notched Rim Outline” among its drawings. Use the artwork in a digital currency vocabulary activity, a personal research notebook or an illustrated comparison of symbols, adding your own explanation of the topic."
+      ],
+      "paragraphSourceSha256": "c57296d0955d31c7ef204041c87ae650bcc18e03bdc8cc6bf955cf6e10018334",
+      "paragraphEvidence": [
+        {
+          "id": "xrp-round-emblem-with-a-polished-rim-clipart",
+          "imageSha256": "a7dece5bd6dd18802adb2031b727da29160d5f3f4af3d6ee8b60eca7fb65c021"
+        },
+        {
+          "id": "xrp-single-token-with-a-notched-rim-outline-clipart",
+          "imageSha256": "61b132c0d3e3cb609103527da76edc35d7b36d61b639300fda2806b3704a7631"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.556Z"
     },
     "zcash": {
       "status": "checked-against-catalog",
@@ -2223,7 +4431,23 @@
           "id": "zcash-single-token-with-a-notched-rim-outline-clipart",
           "imageSha256": "6dd7592bae8348daea368dd7acae3b4ad4e59df1e03b0b14e1d2a0175edd1514"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Zcash clipart collection, with {{artworkCount}} illustrations to explore. Zcash's barred Z appears on yellow, silver and dark-rimmed token illustrations. Frames, surrounding emblems and coin groups vary the layouts beside separately outlined badges and stacks.",
+        "The gallery includes “Zcash Round Emblem with a Polished Rim” and “Zcash Single Token with a Notched Rim Outline” among its drawings. Use the artwork in a digital currency vocabulary activity, a personal research notebook or an illustrated comparison of symbols, adding your own explanation of the topic."
+      ],
+      "paragraphSourceSha256": "2d0455d891c0469a996f105db9d7990c8e54c161bb9e1c604091c9028362b03e",
+      "paragraphEvidence": [
+        {
+          "id": "zcash-round-emblem-with-a-polished-rim-clipart",
+          "imageSha256": "c685799711d24bbdf1dc2f2779757d7345b74320c3b7f53a8b00ae6a663ce29e"
+        },
+        {
+          "id": "zcash-single-token-with-a-notched-rim-outline-clipart",
+          "imageSha256": "6dd7592bae8348daea368dd7acae3b4ad4e59df1e03b0b14e1d2a0175edd1514"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.556Z"
     },
     "300-movie": {
       "status": "checked-against-catalog",
@@ -2239,7 +4463,23 @@
           "id": "300-041",
           "imageSha256": "10e4efa3fc6186c8fb9c02e4300c8ff6a030ba618bd519a50cffc8c14db7fdb1"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 300 Movie clipart collection, with {{artworkCount}} illustrations to explore. Explore 300-inspired Spartan warriors, Persian court figures, shields, helmets and scenes from an ancient world of battle and legend.",
+        "The gallery includes “Spartan Warrior Tightening a Wrist Wrap” and “Clasped Forearms in Black and White” among its drawings. Plan a personal creative notebook, a story activity or an entertainment-themed craft, matching the subject and composition to your own idea."
+      ],
+      "paragraphSourceSha256": "a44f37502a2da06876e37749679e3b87278b59f3d0a3572e63e064e41518ca3b",
+      "paragraphEvidence": [
+        {
+          "id": "300-001",
+          "imageSha256": "772a799bc87cd1a2e453aa9336b99483e0a29376027fc1ca9061045f0161d7a6"
+        },
+        {
+          "id": "300-041",
+          "imageSha256": "10e4efa3fc6186c8fb9c02e4300c8ff6a030ba618bd519a50cffc8c14db7fdb1"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.556Z"
     }
   }
 }

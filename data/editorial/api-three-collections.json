@@ -19,7 +19,23 @@
           "id": "background-lunar-new-year",
           "imageSha256": "33c0149fce0655fdf36e467f701ff85ba442a97a5a03086de042da7cd52eed9c"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Background clipart collection, with {{artworkCount}} illustrations to explore. Explore illustrated landscapes and ready-to-use backdrops, from spring meadows and snowy villages to science, music and seasonal frames.",
+        "The gallery includes “Spring Meadow with Daisies” and “Colorful Music Notes on a Lavender Frame” among its drawings. Arrange the artwork around your own text in a personal page layout, an invitation or a classroom display, choosing shapes that frame rather than crowd the main message."
+      ],
+      "paragraphSourceSha256": "4ff2d5c95a2f2c3b83b62d9472861b486c0fdb6f180051ed7f29a10a0ad37245",
+      "paragraphEvidence": [
+        {
+          "id": "background-spring-meadow",
+          "imageSha256": "fb17cffaedc7d89a0ff5e9273d6a4cf2fc5bc99ec54d1f8dcc26f918da8e0732"
+        },
+        {
+          "id": "background-music-notes",
+          "imageSha256": "8d112ab1516751a742487047031305249152e39488cc31814430a80ad4d7a6b0"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.529Z"
     },
     "border": {
       "status": "checked-against-catalog",
@@ -39,7 +55,23 @@
           "id": "border-openwork-soccer-ball-net-corner",
           "imageSha256": "75098c5c30bb5391a825b5c22fea0311f5e122a379a36c38ad46d0a65a527359"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Border clipart collection, with {{artworkCount}} illustrations to explore. Choose open frames, decorative corners and illustrated edges, including botanical, geometric, classroom and seasonal designs.",
+        "The gallery includes “Black and Gold Art Deco Frame” and “Soccer Ball and Goal Net Corner” among its drawings. Arrange the artwork around your own text in a personal page layout, an invitation or a classroom display, choosing shapes that frame rather than crowd the main message."
+      ],
+      "paragraphSourceSha256": "e3fec49b3f0a24ae04a850c171fbc556378ae3a47ee56ce9d699fd109c369bb7",
+      "paragraphEvidence": [
+        {
+          "id": "border-openwork-art-deco-fan-corners",
+          "imageSha256": "5928cb40aa161c483e2354a50b6b5f49792242652b926232f2fbb9baf3730900"
+        },
+        {
+          "id": "border-openwork-soccer-ball-net-corner",
+          "imageSha256": "75098c5c30bb5391a825b5c22fea0311f5e122a379a36c38ad46d0a65a527359"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.529Z"
     },
     "zoo": {
       "status": "checked-against-catalog",
@@ -59,7 +91,23 @@
           "id": "zoo-visit-night-lantern-tour",
           "imageSha256": "094047e4fadb47387147770baccda737bfbfeb9616f0df8c75e99710c016422b"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Zoo clipart collection, with {{artworkCount}} illustrations to explore. Explore zoo visits through animal viewing, family outings, entrance signs and printable line drawings of visitor activities.",
+        "The gallery includes “Family Walking Through a Zoo Entrance” and “Lantern Tour Beside an Owl Enclosure” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "a1d3233a23c2dc61bdab77758786b39a0d5feb01b343dcffb43c462ea8a832ff",
+      "paragraphEvidence": [
+        {
+          "id": "zoo-visit-entrance-arch-animal-cutouts",
+          "imageSha256": "fa8f64d5615f8655ac891d8c7806e3a07ce2c495a397640ca0d26f256a08f542"
+        },
+        {
+          "id": "zoo-visit-night-lantern-tour",
+          "imageSha256": "094047e4fadb47387147770baccda737bfbfeb9616f0df8c75e99710c016422b"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.529Z"
     }
   }
 }

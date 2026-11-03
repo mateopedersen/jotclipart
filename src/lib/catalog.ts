@@ -3,7 +3,7 @@ import source from '../../data/topics.json';
 import illustrations from '../../data/art.json';
 import editorialReviews from '../../data/editorial/reviews.json';
 import { reviewedImportCatalog } from '../../scripts/reviewed-imports.mjs';
-import { readRequiredCollectionIntroductions } from '../../scripts/collection-editorial.mjs';
+import { readCollectionPresentation } from '../../scripts/collection-editorial.mjs';
 import extraTopics from '../../data/extra-topics.json';
 import { validateEditorSource } from './artwork-source';
 import { auditMonochrome } from '../../scripts/monochrome-catalog.mjs';
@@ -22,10 +22,15 @@ type PublishedAssets = Record<string, Record<AssetKind, string>>;
 const publishedAssets = import.meta.env.PUBLIC_ASSET_URLS as PublishedAssets | null;
 const reviewedIllustrations = reviewedImportCatalog(illustrations, editorialReviews);
 const monochromeAudit = await auditMonochrome(reviewedIllustrations);
-export const reviewedCollectionIntroductions = readRequiredCollectionIntroductions(illustrations);
+const collectionPresentation = readCollectionPresentation(illustrations, reviewedIllustrations);
+export const reviewedCollectionIntroductions = collectionPresentation.summaries;
+export const reviewedCollectionParagraphs = collectionPresentation.paragraphs;
 const collectionMetaAudit = validateCollectionMetaDescriptions(reviewedCollectionIntroductions);
 if (collectionMetaAudit.needsEditorialReview.length)
-  console.warn('[collection-meta] Review complete search descriptions:', collectionMetaAudit.needsEditorialReview.join(', '));
+  console.warn(
+    '[collection-meta] Review complete search descriptions:',
+    collectionMetaAudit.needsEditorialReview.join(', '),
+  );
 await preparePreviewAssets(reviewedIllustrations);
 const screenImages = (item: (typeof illustrations)[number]) => {
   const original = publishedAssets?.[item.id]?.webp ?? item.webp;

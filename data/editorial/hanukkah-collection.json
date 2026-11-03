@@ -19,7 +19,23 @@
           "id": "hanukkah-outline-treat-swap",
           "imageSha256": "2a239e4136b2b1113acbea9075c5a9b7cb0d338c0dc6224286dd35d5bf04fbed"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Hanukkah clipart collection, with {{artworkCount}} illustrations to explore. Hanukkah illustrations of candle lighting, dreidel games, gelt and shared meals, alongside latkes, sufganiyot and craft materials. Explore detailed objects, colorful celebrations and clear black-and-white scenes, with varied people, clothing and compositions.",
+        "The gallery includes “Brass Hanukkiah with Nine Unlit Candles” and “Sharing Latkes and Sufganiyot” among its drawings. Choose an illustration for a personal Hanukkah greeting, a family activity or a classroom discussion of the celebration and its traditions."
+      ],
+      "paragraphSourceSha256": "25972a6733071e877ba61e3d3ac701084307266e6f8bebbb8bc2aac950c5b2e5",
+      "paragraphEvidence": [
+        {
+          "id": "hanukkah-brass-hanukkiah",
+          "imageSha256": "f97f3c0117156c667edfe2fef68217b94069e5216c0174c90e38ff5ba190a9c9"
+        },
+        {
+          "id": "hanukkah-family-table",
+          "imageSha256": "f0de11cc52e8d299878b7743917d11eded4a24c8b12a580eb118ff208993968d"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.550Z"
     }
   }
 }

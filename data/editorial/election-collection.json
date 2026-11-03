@@ -23,7 +23,23 @@
           "id": "election-outline-election-reporter",
           "imageSha256": "4d18a808f8987c4bbca2c17d76438f583218a676813598d0e59d969d03a72db4"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Election clipart collection, with {{artworkCount}} illustrations to explore. Election Day lettering, I Voted stickers, voter-information scenes and portable polling-place equipment. Explore clear object still lifes, varied adult community scenes and classroom practice activities, alongside detailed black-and-white illustrations.",
+        "The gallery includes “Election Day Paper Lettering” and “A Classroom Mock Election” among its drawings. Use the drawings in a civics discussion, a personal commentary project or an illustrated comparison, keeping imagined scenes distinct from real events."
+      ],
+      "paragraphSourceSha256": "120b4556055ba8b85cc4c3a5121f50a8115520480e1f31fe090f6aa6c9221b8e",
+      "paragraphEvidence": [
+        {
+          "id": "election-day-paper-lettering",
+          "imageSha256": "a5e510c83a164b3331f56ee23ede6f1dc24fc90ec73492abdf54f0c5b602cab2"
+        },
+        {
+          "id": "election-classroom-mock-election",
+          "imageSha256": "eadc8a5aa96ae6fae9061276be02389bb9425dd9c198472ac1227fb330f665f3"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.543Z"
     }
   }
 }

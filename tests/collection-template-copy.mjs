@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   collectionSourceSignature,
+  collectionParagraphSignature,
   collectionIntroductionTemplate,
   verifyCollectionEditorial,
   requiredCollectionIntroductions,
@@ -26,6 +27,13 @@ function fixture(introductions) {
         checkedAt: '2026-10-29T00:00:00Z',
         intro: introductions[item.topic],
         evidence: [{ id: item.id, imageSha256: item.files.webp.sha256 }],
+        paragraphs: [
+          `Welcome to this collection of {{artworkCount}} illustrations. ${introductions[item.topic]} Explore the available drawings and compare their subjects before choosing a composition for your own project.`,
+          `The ${item.topic} collection can support a personal journal, a learning activity or a creative composition. Match an individual illustration to the meaning of your own page and leave room for the words you want to add.`,
+        ],
+        paragraphSourceSha256: collectionParagraphSignature([item], introductions[item.topic]),
+        paragraphsCheckedAt: '2026-11-03T00:00:00Z',
+        paragraphEvidence: [{ id: item.id, imageSha256: item.files.webp.sha256 }],
       },
     ]),
   );
