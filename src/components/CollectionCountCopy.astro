@@ -1,14 +1,15 @@
 ---
 import CatalogCount from './CatalogCount.astro';
 import { collectionCountTemplate } from '../lib/collection-count-copy';
+import { collectionCountParts } from '../lib/collection-count-tokens.mjs';
 interface Props {
   text: string;
   topic: string;
 }
 const { text, topic } = Astro.props;
-const parts = collectionCountTemplate(text).split(/(\{\{artworkCount\}\})/);
+const parts = collectionCountParts(collectionCountTemplate(text));
 ---
 
 {parts.map((part) =>
-  part === '{{artworkCount}}' ? <CatalogCount kind="topic" countKey={topic} /> : part,
+  typeof part === 'string' ? part : <CatalogCount kind="topic" countKey={topic} unit={part.unit} />,
 )}

@@ -37,7 +37,7 @@ for (const [engine, type] of Object.entries({ chromium, webkit })) {
         await expect(panel.locator('p').first()).toContainText('Welcome to');
         const count = catalog.filter((a) => a.topic === topic && a.published && a.indexable).length;
         await expect(panel.locator('[data-catalog-count="topic"]')).toHaveText(
-          new Intl.NumberFormat('en-US').format(count),
+          `${new Intl.NumberFormat('en-US').format(count)} illustration${count === 1 ? '' : 's'}`,
         );
         const bounds = await panel.evaluate((el) => ({
           width: el.clientWidth,
