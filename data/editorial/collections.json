@@ -4203,25 +4203,21 @@
     },
     "mexico-flag": {
       "status": "checked-against-catalog",
-      "checkedAt": "2026-10-26",
-      "sourceSha256": "3e060e1c398c6e063e587e1a75420724897c183034dc0f89a83742afcb040c79",
+      "checkedAt": "2026-11-03T15:03:22.149Z",
+      "sourceSha256": "76d9337ab5cfd76512b6c835dbddaec2586361b79476a9fd6f9233bf2783139e",
       "intro": "Green, white and red Mexican flag designs appear as banners, fabric forms and decorative objects. The central emblem and surrounding arrangement vary in detail across the illustrations.",
       "evidence": [
         {
-          "id": "mexico-flag-clipart-flat-official-tricolor",
-          "imageSha256": "3fadb804cb752e1d6c9e004aa9b8c95d055cd91868258f386ef1a4b75ce2b4fc"
+          "id": "mexico-flag-clipart-crossed-desk-flags",
+          "imageSha256": "1c122d7ba416ab72815e8f8810feba1b3225be0fe8bd281972e9e9dcfcdfe190"
         },
         {
-          "id": "mexico-flag-clipart-flag-bicycle-parade-outline",
-          "imageSha256": "20bfcdd6e35214a80d62eb0b1fe3d5de031198106d4b65b43cab3d7c44c9eefa"
+          "id": "mexico-flag-clipart-curled-fabric-banner",
+          "imageSha256": "ac8c0b35fe647498cfdcaf5d93aba9c96c5b4e569c03d9c76ee71deb5b0485e8"
         },
         {
           "id": "mexico-flag-clipart-flag-balloon-bouquet",
           "imageSha256": "ac12caa173f9933904b94d201e932aa0eed064e18b282758e1f1738d241c2278"
-        },
-        {
-          "id": "mexico-flag-clipart-heart-shaped-flag-token",
-          "imageSha256": "00bbac9d14ab2aec68448106bc2af8ae862dbfe969bf03160412be139a290b87"
         }
       ]
     },

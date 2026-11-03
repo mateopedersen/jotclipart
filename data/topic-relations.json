@@ -3398,5 +3398,101 @@
     "australia-flag",
     "new-zealand-flag",
     "netherlands-flag"
+  ],
+  "nepal-flag": [],
+  "italy-flag": [
+    "france-flag",
+    "spain-flag",
+    "switzerland-flag",
+    "austria-flag",
+    "san-marino-flag"
+  ],
+  "lithuania-flag": [
+    "sweden-flag",
+    "finland-flag",
+    "denmark-flag",
+    "norway-flag"
+  ],
+  "marshall-islands-flag": [
+    "kiribati-flag",
+    "nauru-flag"
+  ],
+  "mauritania-flag": [
+    "morocco-flag",
+    "ivory-coast-flag"
+  ],
+  "mauritius-flag": [
+    "madagascar-flag"
+  ],
+  "kiribati-flag": [
+    "nauru-flag",
+    "marshall-islands-flag"
+  ],
+  "kuwait-flag": [
+    "qatar-flag",
+    "united-arab-emirates-flag"
+  ],
+  "liberia-flag": [
+    "ivory-coast-flag"
+  ],
+  "libya-flag": [
+    "morocco-flag",
+    "mauritania-flag",
+    "italy-flag"
+  ],
+  "myanmar-flag": [
+    "nepal-flag",
+    "singapore-flag",
+    "japan-flag"
+  ],
+  "madagascar-flag": [
+    "mauritius-flag",
+    "mozambique-flag",
+    "kenya-flag"
+  ],
+  "ivory-coast-flag": [
+    "liberia-flag",
+    "mauritania-flag",
+    "morocco-flag"
+  ],
+  "jamaica-flag": [
+    "american-flag",
+    "united-kingdom-flag",
+    "canada-flag"
+  ],
+  "japan-flag": [],
+  "kazakhstan-flag": [],
+  "kenya-flag": [
+    "madagascar-flag",
+    "mozambique-flag",
+    "namibia-flag"
+  ],
+  "micronesia-flag": [
+    "marshall-islands-flag",
+    "kiribati-flag",
+    "nauru-flag"
+  ],
+  "morocco-flag": [
+    "mauritania-flag",
+    "libya-flag",
+    "spain-flag",
+    "france-flag"
+  ],
+  "mozambique-flag": [
+    "madagascar-flag",
+    "namibia-flag",
+    "kenya-flag"
+  ],
+  "namibia-flag": [
+    "mozambique-flag",
+    "kenya-flag",
+    "madagascar-flag"
+  ],
+  "nauru-flag": [
+    "kiribati-flag",
+    "marshall-islands-flag"
+  ],
+  "election-day": [
+    "election"
   ]
 }

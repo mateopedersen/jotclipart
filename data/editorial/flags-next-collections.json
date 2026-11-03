@@ -43,7 +43,7 @@
     },
     "italy-flag": {
       "status": "checked-against-catalog",
-      "intro": "Nepal flag clipart includes Italian tricolor flags, display stands and illustrations of community activities.",
+      "intro": "Italian flag clipart shows the green, white, and red tricolor on poles, tabletop stands, fabric displays, and in community scenes.",
       "sourceSha256": "58f94e75ac114b0b57e883dbfb4a847f8c374920f1d850d8cd00f627deec0545",
       "checkedAt": "2026-11-03T02:35:58.350Z",
       "evidence": [
@@ -198,6 +198,266 @@
         {
           "id": "liberia-flag-clipart-003-brass-ceremonial-stand",
           "imageSha256": "3cbd03ac9357f0fc9248b9c9ba0d45c57443fffb074e1a441d50f65dc620b898"
+        }
+      ]
+    },
+    "ivory-coast-flag": {
+      "status": "checked-against-catalog",
+      "intro": "Orange, white and green panels recur across Ivory Coast flag scenes, from unfurled cloth to small tabletop displays.",
+      "sourceSha256": "1bf3f5f5c26ea156967f544ec8dc09cfe590f196ca8f0b5cdfe94fefe481ae1e",
+      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "evidence": [
+        {
+          "id": "ivory-coast-flag-clipart-001-wooden-hand-pole",
+          "imageSha256": "ee3430c740687f06c29efc4ea192c4c567d5d676107e7b161afd58f62cc50145"
+        },
+        {
+          "id": "ivory-coast-flag-clipart-002-free-flying-silk-wave",
+          "imageSha256": "3a6f706bb5457a5172285706dde92b2d1558287d377334ec3800d05801285f0a"
+        },
+        {
+          "id": "ivory-coast-flag-clipart-003-brass-ceremonial-stand",
+          "imageSha256": "0bbc1d00db7a68780757916f30b3361184e31384bb7fbef89e791ebcc8fe5619"
+        }
+      ]
+    },
+    "jamaica-flag": {
+      "status": "checked-against-catalog",
+      "intro": "For Jamaica, the black diagonal cross edged in gold separates green triangles in these flag scenes and display views.",
+      "sourceSha256": "42d8e160f09f796eefecae9155788c789b6c07e6e6ef37fb50524cfdba2c8c58",
+      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "evidence": [
+        {
+          "id": "jamaica-flag-clipart-001-wooden-hand-pole",
+          "imageSha256": "f37b9176949aac9ea51210bb7369cf3c3e3682fba77c2db1b8fd05a467a3751d"
+        },
+        {
+          "id": "jamaica-flag-clipart-002-free-flying-silk-wave",
+          "imageSha256": "3ce620b7dafecee3d8fa81e33c08f2caf5394e0d324e96c6f0545f557f22bb18"
+        },
+        {
+          "id": "jamaica-flag-clipart-003-brass-ceremonial-stand",
+          "imageSha256": "3439fd23af08e7abdf92aa7aea68c91a322abc204480732f0b7f33568cd07e87"
+        }
+      ]
+    },
+    "japan-flag": {
+      "status": "checked-against-catalog",
+      "intro": "A red disc centers each Japan flag illustration on a white field, from fluttering fabric to simple pole displays.",
+      "sourceSha256": "47135942d8902917c9f5334d872baeea6d61ae7d26b47585c1f1b32fb27b5453",
+      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "evidence": [
+        {
+          "id": "japan-flag-clipart-001-wooden-hand-pole",
+          "imageSha256": "66bc1af77eac90fc389c781a3b7b34e1b780b0e2a0d77aa585fde28db3aa12ae"
+        },
+        {
+          "id": "japan-flag-clipart-002-free-flying-silk-wave",
+          "imageSha256": "d0e3bed6b9041e01fda4d681f83427f2224d06620075e6056b86f9907e75f0bd"
+        },
+        {
+          "id": "japan-flag-clipart-006-wind-filled-cotton",
+          "imageSha256": "a605ec370acaec9678566254777700b7b860dfb21c7fddec21d3bb21dc211f97"
+        }
+      ]
+    },
+    "kazakhstan-flag": {
+      "status": "checked-against-catalog",
+      "intro": "Sky blue fabric, a gold sun and eagle, and a patterned vertical band mark these Kazakhstan flag examples.",
+      "sourceSha256": "32c18a6374894f5ece8fa01f654b2b0a119a61bf2b961c0e899a4e8673a7f573",
+      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "evidence": [
+        {
+          "id": "kazakhstan-flag-clipart-001-wooden-hand-pole",
+          "imageSha256": "30b6f3753aa36f20a4b93b75c037a0f2a2a448aa5a5ee415cd6f92d996da5799"
+        },
+        {
+          "id": "kazakhstan-flag-clipart-003-brass-ceremonial-stand",
+          "imageSha256": "96a4be7c2c76952bca08fba6229dec158d60d67d7ddd2f2a1402b9f6fc166795"
+        },
+        {
+          "id": "kazakhstan-flag-clipart-004-oak-desktop-display",
+          "imageSha256": "fef26e9273487b814481d54de93db5d405475551cc60099d16a4437e12d85b4c"
+        }
+      ]
+    },
+    "kenya-flag": {
+      "status": "checked-against-catalog",
+      "intro": "In the Kenya flag art, a central shield and crossed spears sit over black, red and green stripes edged in white.",
+      "sourceSha256": "9ef2943742a3d4cc85872b04988a752786db8fc7b0ca8e1844e33564d66be224",
+      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "evidence": [
+        {
+          "id": "kenya-flag-clipart-001-wooden-hand-pole",
+          "imageSha256": "cc715bf4b74498a95b1a80dd0bcd282cf80ac0da8bdd77482a467f020195c261"
+        },
+        {
+          "id": "kenya-flag-clipart-002-free-flying-silk-wave",
+          "imageSha256": "f24214eedda331fd310958aa08c2504258d228c8bbb402856a32880835c4e492"
+        },
+        {
+          "id": "kenya-flag-clipart-003-brass-ceremonial-stand",
+          "imageSha256": "5b6ed7c2a0adff7f9f24e6cea929df794e6970560940e17218ee66586002d842"
+        }
+      ]
+    },
+    "micronesia-flag": {
+      "status": "checked-against-catalog",
+      "intro": "Four white stars punctuate the light blue field in this group of Micronesia flag illustrations.",
+      "sourceSha256": "f15d536c5552f9cf7e86b6f1e9f04a764d397c39032dc1a2bf4d85e84cb46f5f",
+      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "evidence": [
+        {
+          "id": "micronesia-flag-clipart-022-ceramic-desk-holder",
+          "imageSha256": "a3c7e1d7aa93a9d4b17e0afc3a79a13db0dc8b4e0c61c97af648ecac9b662eb6"
+        },
+        {
+          "id": "micronesia-flag-clipart-081-canoe-craft-workbench-ink",
+          "imageSha256": "13e9ad82f00689c85a082e5682778813a178b2fa19003aa47afb737a70d9cdca"
+        },
+        {
+          "id": "micronesia-flag-clipart-082-reading-award-ink",
+          "imageSha256": "fa8f585154a3c1ab42f1d1481dd0e94f7225097c64a1b790ef2af57dfe1a0380"
+        }
+      ]
+    },
+    "morocco-flag": {
+      "status": "checked-against-catalog",
+      "intro": "Morocco’s green five-point star stands out against the red field across these flag pictures and display settings.",
+      "sourceSha256": "8450413a3adb5a6b3489b32be3c33dff7532db3c16aad6f4927e74ce66842ddc",
+      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "evidence": [
+        {
+          "id": "morocco-flag-clipart-001-wooden-hand-pole",
+          "imageSha256": "1fb9f8e576765ff3a50af59a5219afe329bb9ec2bbdbd2baa5b9e07671579e07"
+        },
+        {
+          "id": "morocco-flag-clipart-002-free-flying-silk-wave",
+          "imageSha256": "de006539528526049ff1ccccdf6ea8850a057c2e40ffc690647df91aba7db610"
+        },
+        {
+          "id": "morocco-flag-clipart-003-brass-ceremonial-stand",
+          "imageSha256": "ef6430224fd3b521024a41322f34bffb742fbb1f5f5ee0f7d56a6330bfd95c94"
+        }
+      ]
+    },
+    "mozambique-flag": {
+      "status": "checked-against-catalog",
+      "intro": "The red triangle and gold emblem anchor these Mozambique flag scenes, alongside green, black and yellow bands.",
+      "sourceSha256": "be80bce38a92c02cb478397f33933bc4856280259a84749d8d3ae5482f12eecd",
+      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "evidence": [
+        {
+          "id": "mozambique-flag-clipart-001-wooden-hand-pole",
+          "imageSha256": "255a3fcdd56050482b8f3d7013bdb2ec98bb547fbafded98a1c3dc32b8a2fa0c"
+        },
+        {
+          "id": "mozambique-flag-clipart-002-free-flying-silk-wave",
+          "imageSha256": "22663562aa87f946ad1a52e886cd9965d862db8b1b0a5e9180ef3af1092969d3"
+        },
+        {
+          "id": "mozambique-flag-clipart-003-brass-ceremonial-stand",
+          "imageSha256": "89d05b404f483e75fefc791d3906776a1f5f2cfcfbb90ecefb219c6b604a5aa1"
+        }
+      ]
+    },
+    "namibia-flag": {
+      "status": "checked-against-catalog",
+      "intro": "A gold sun sits above the diagonal red band that cuts through the blue and green fields in these Namibia flag illustrations.",
+      "sourceSha256": "01b126daa343ac4f00df67c4455442639342e1b8c43b7fdc82b4a5cf8ec9e4d1",
+      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "evidence": [
+        {
+          "id": "namibia-flag-clipart-001-wooden-hand-pole",
+          "imageSha256": "1a52ae8138c6cedccb47ada79de03b1e310b06d99372b072c5030861d68b4f96"
+        },
+        {
+          "id": "namibia-flag-clipart-002-free-flying-silk-wave",
+          "imageSha256": "f0f5ae6f62070015934d43c118d68951c04e101c052f554af75573f676755b4e"
+        },
+        {
+          "id": "namibia-flag-clipart-003-brass-ceremonial-stand",
+          "imageSha256": "6029fac780fa7dfc33f0ebe470a245a604e1f29963071bcdeb9b820a319a8d42"
+        }
+      ]
+    },
+    "nauru-flag": {
+      "status": "checked-against-catalog",
+      "intro": "One white star beneath a gold stripe identifies the Nauru flag examples against a deep blue field.",
+      "sourceSha256": "019e71f6f42d4d3074967fbb6406e4afe6a1f7fc49253c0965c5f9589a724d4f",
+      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "evidence": [
+        {
+          "id": "nauru-flag-clipart-001-wooden-hand-pole",
+          "imageSha256": "f4ce61c84f55feca3a6c1ec9c8b868a0d1115fd3e6fca97527eec7049b3d71dd"
+        },
+        {
+          "id": "nauru-flag-clipart-003-brass-ceremonial-stand",
+          "imageSha256": "3cde994c5bef56e1fa5bf50c89c5cb92d0747d1b8994ea5822f644e91e3ac829"
+        },
+        {
+          "id": "nauru-flag-clipart-004-oak-desktop-display",
+          "imageSha256": "1d262868d161b2ca1a2018a20b5462eefbab98f8ea1c5abd0ae5056e59b1523d"
+        }
+      ]
+    },
+    "libya-flag": {
+      "status": "checked-against-catalog",
+      "intro": "Libya flag illustrations feature red black and green bands with a crescent and star in a variety of displays.",
+      "sourceSha256": "7f29b68c469897b084de719293ac360cecc199b70cddb7d2cb740d0e22a9287b",
+      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "evidence": [
+        {
+          "id": "libya-flag-clipart-001-wooden-hand-pole",
+          "imageSha256": "a010160d8945d97f456dbf26d379628fa504cc019c247c2b774f8794e431eff0"
+        },
+        {
+          "id": "libya-flag-clipart-002-free-flying-silk-wave",
+          "imageSha256": "8d191d9d14e1ee97c3312cfb790820e6a6f30507dd63b5794afc188cbe2d465f"
+        },
+        {
+          "id": "libya-flag-clipart-003-brass-ceremonial-stand",
+          "imageSha256": "800f35628c1e029230065cf4ea2378a0b09cf02d2c436d111d79086cb3b87db5"
+        }
+      ]
+    },
+    "myanmar-flag": {
+      "status": "checked-against-catalog",
+      "intro": "Myanmar flag illustrations feature yellow green and red bands with a white star in a variety of displays.",
+      "sourceSha256": "17273a3004d903507340b5f9e469cc0f09557c89f4c9c797eba068615a753454",
+      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "evidence": [
+        {
+          "id": "myanmar-flag-clipart-001-wooden-hand-pole",
+          "imageSha256": "a4a95b4989bf022adfe081d8f44cc7423fba0bfa8c4a9904ac1d7447fe74dc07"
+        },
+        {
+          "id": "myanmar-flag-clipart-002-free-flying-silk-wave",
+          "imageSha256": "1f1422a5c1631eb70fe3790dec5ea78f745ab1675c1bf2914ed8d7a22ac278f4"
+        },
+        {
+          "id": "myanmar-flag-clipart-003-brass-ceremonial-stand",
+          "imageSha256": "7260cea611f3780316e4f660231534e0fc28935f9950c5ba8336ccffc0ccf6d7"
+        }
+      ]
+    },
+    "madagascar-flag": {
+      "status": "checked-against-catalog",
+      "intro": "Madagascar flag illustrations feature a white panel beside red and green bands in a variety of displays.",
+      "sourceSha256": "b63bead83f9835d64bd8a04a14b387d5c3860df24aee9c177f604ec41c1fea47",
+      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "evidence": [
+        {
+          "id": "madagascar-flag-clipart-001-wooden-hand-pole",
+          "imageSha256": "be3ad9ef37f619ddcb665caf3fbc8aa942107dafd88e633d5352502ab800729c"
+        },
+        {
+          "id": "madagascar-flag-clipart-002-free-flying-silk-wave",
+          "imageSha256": "01ec66e2d0cb4bc93e3d1b9cc83b21443faf135e71cab72220626c788ceefbb4"
+        },
+        {
+          "id": "madagascar-flag-clipart-003-brass-ceremonial-stand",
+          "imageSha256": "8fa0d33826986346b98f738ea3c8b04cec4bb034bb8829fca842e47f26e08011"
         }
       ]
     }
