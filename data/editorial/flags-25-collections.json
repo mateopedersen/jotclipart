@@ -35,7 +35,8 @@
           "imageSha256": "6d3705fa6e7b73a9f1b4a81af0698723a9d2c00a7f52139e24f28b3a5a3d117c"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.544Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.544Z",
+      "paragraphReviewSha256": "85b5fe36cb6571724000462f14372c290a4738f070bea2ace37f9e7655c8970f"
     },
     "australia-flag": {
       "status": "checked-against-catalog",
@@ -71,7 +72,8 @@
           "imageSha256": "dbdd7913043e21e83fb4a449b3a71eafce16a76021a3bd1385cd667e777637cb"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.544Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.544Z",
+      "paragraphReviewSha256": "8fb35f5b1fbbc90c7252fd5b93f24aac144489114e1a9a759b67ab883fadaedd"
     },
     "austria-flag": {
       "status": "checked-against-catalog",
@@ -107,7 +109,8 @@
           "imageSha256": "96d82aef864791872ae372a4b6a398c84890ed529fcca60e0bf34eee7e5b318c"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.545Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.545Z",
+      "paragraphReviewSha256": "d9d0e686ba4704be46bdc0888f7dce64b86b95379404760e9c9e530695741d00"
     },
     "belgium-flag": {
       "status": "checked-against-catalog",
@@ -143,7 +146,8 @@
           "imageSha256": "0d410893a2a68bd7c41e824280452b60e6fbe769558b4594077e1f727f2f754e"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.545Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.545Z",
+      "paragraphReviewSha256": "e7ddec059eff89db52615d38b3b337974a46858639f141c737e851f61071e17c"
     },
     "canada-flag": {
       "status": "checked-against-catalog",
@@ -179,7 +183,8 @@
           "imageSha256": "13dfc9df1778f6ef174a1bcbe2bad690d53d955db8d0382a97580b8b9d451c06"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.545Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.545Z",
+      "paragraphReviewSha256": "5082bea175e36370a71975da87d34d761f749012fabf33a1029935ea8c4f8440"
     },
     "denmark-flag": {
       "status": "checked-against-catalog",
@@ -215,7 +220,8 @@
           "imageSha256": "b8ef64ab3a6853d3a8514e8c99451935d3c75bb951a1e4fe81134a3fa5180eba"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.545Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.545Z",
+      "paragraphReviewSha256": "0e33f8b72ae2c126942160b52762003e56b63a5c6c471ac2c5e1fca97939f751"
     },
     "finland-flag": {
       "status": "checked-against-catalog",
@@ -251,7 +257,8 @@
           "imageSha256": "9a904cd7db70e43704de69ccc501d407aa9d599f76fd268b120ebc7551c20b08"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.545Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.545Z",
+      "paragraphReviewSha256": "431f6ac5b44729adb7dcc9fd9a61a7703fe1f091b9c66155b74418acc3bb67bb"
     },
     "germany-flag": {
       "status": "checked-against-catalog",
@@ -287,7 +294,8 @@
           "imageSha256": "84378ad751eaeeaeaa36dcf650fba02aeb489d0a38aaf5a8e42f4adf351d3bce"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.545Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.545Z",
+      "paragraphReviewSha256": "a59bb89011da19af9421cd5b52697cf9959992680fa3ae25bbd1187321c4c871"
     },
     "iceland-flag": {
       "status": "checked-against-catalog",
@@ -323,7 +331,8 @@
           "imageSha256": "6b2333f3e6bc6cdd7d548b12056c741538e3ee4bab7f2029f429f9c8add76d42"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.545Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.545Z",
+      "paragraphReviewSha256": "0c684913cc600a59865651c76804d5c03d335c1b43f2227af309326c5dac9cdb"
     },
     "ireland-flag": {
       "status": "checked-against-catalog",
@@ -359,7 +368,8 @@
           "imageSha256": "6bac1047e9a9da13f8a0b6c64fcb749e935df50a2c1612ca3a6f03cb42aea06e"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.545Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.545Z",
+      "paragraphReviewSha256": "aa4449b3d11a4c01e9f4aa6175a6e20cf062937ea0589b8f9cf513a842e4f71b"
     },
     "israel-flag": {
       "status": "checked-against-catalog",
@@ -395,7 +405,8 @@
           "imageSha256": "0928f677d5ed35de723f882138a045cb5266f00b26cc515cf9a6dfc2b791b57a"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.546Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.546Z",
+      "paragraphReviewSha256": "1451e9782b06ce272d73e4f7704553c3d939be3e9c07adad61484a2e73c6235a"
     },
     "liechtenstein-flag": {
       "status": "checked-against-catalog",
@@ -431,7 +442,8 @@
           "imageSha256": "54e7cabf3238906c687d7bc6a9c7b895f0f430d7fb2ee8a21609d372b9e812e2"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.546Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.546Z",
+      "paragraphReviewSha256": "f4ce3ffe153677c4fc220bd1f638a36d42b1239fc647c485eb064416b64354f6"
     },
     "luxembourg-flag": {
       "status": "checked-against-catalog",
@@ -467,7 +479,8 @@
           "imageSha256": "b71522d4b26e9751be8b4e94180c2bbb0ef408d81e5d8e4f3ae2aa674bba3216"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.546Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.546Z",
+      "paragraphReviewSha256": "4c8aca0867eba596f2f9c7743b0b5a889382364d4b24dc168de028e009e3ecf2"
     },
     "malta-flag": {
       "status": "checked-against-catalog",
@@ -503,7 +516,8 @@
           "imageSha256": "a7cbb79762d7c7fe0fadbf3c54ab0b0891fee4016648a253ae330bc2db43ef7c"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.546Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.546Z",
+      "paragraphReviewSha256": "1f3ffc34dd18d36779808391e357f2325ed96cad194a201f2918b338783cb2f0"
     },
     "monaco-flag": {
       "status": "checked-against-catalog",
@@ -539,7 +553,8 @@
           "imageSha256": "deb219b966e7692e4cc277e0bf657163f709cb4d07c7bfbbd843e5d7f6ca9812"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.546Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.546Z",
+      "paragraphReviewSha256": "2621e5ae88b8e3b64d909011dfc45571a09c4745c7191bb64773fba3fd8ad9ce"
     },
     "netherlands-flag": {
       "status": "checked-against-catalog",
@@ -575,7 +590,8 @@
           "imageSha256": "8e0ef9146a41c55aa6e4e65cb1ddcf21fff136924fd3f750b87fedf5cc7a3eb6"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.546Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.546Z",
+      "paragraphReviewSha256": "839bb4c3752299c0378154117a11819beb1addfb7ba023d2cb724f4afec953fc"
     },
     "new-zealand-flag": {
       "status": "checked-against-catalog",
@@ -611,7 +627,8 @@
           "imageSha256": "3d4df3d3544d7edce3d6854ed0c49e572c3f67bce1efac74d5ce70f94b0374ff"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.546Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.546Z",
+      "paragraphReviewSha256": "c3f3609f5cc51c672711a2f389f70dd912c8889e5920489cfadf1dae408e3ca8"
     },
     "norway-flag": {
       "status": "checked-against-catalog",
@@ -647,7 +664,8 @@
           "imageSha256": "5925e5a169a444e51831d0478173f3e05acdbe1378825d033fdcf3e9c8992047"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.546Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.546Z",
+      "paragraphReviewSha256": "333cc8d0b084e61c0ad362c079635d1cb4443014804a35f15a8b58252a180454"
     },
     "qatar-flag": {
       "status": "checked-against-catalog",
@@ -683,7 +701,8 @@
           "imageSha256": "1648687d14c060915555d12f7e2e6cf6ea5a583bac119505affd50fdc231c3b6"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.546Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.546Z",
+      "paragraphReviewSha256": "a61a53faaed7ac919af7ccfed05dfa1e33f01d2f798a2cc4296a227ca810f52d"
     },
     "san-marino-flag": {
       "status": "checked-against-catalog",
@@ -719,7 +738,8 @@
           "imageSha256": "c7167a97e4feec139291324487da75a5baa6a566acd65841d81961f364e3de99"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.547Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.547Z",
+      "paragraphReviewSha256": "4ba26f217a6e6f25cedf57fb7255474360eb1a7c82bc2242d5371b8a3481e1e6"
     },
     "singapore-flag": {
       "status": "checked-against-catalog",
@@ -755,7 +775,8 @@
           "imageSha256": "5cffbf84254443d8344e9f49340f83abf1784e84e689eb3cf98a392f57ffeca6"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.547Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.547Z",
+      "paragraphReviewSha256": "42c3b0a506b5bb88863ff764a56268b9d2fbeaf8fb86f84b0d11f0b8cd313246"
     },
     "sweden-flag": {
       "status": "checked-against-catalog",
@@ -791,7 +812,8 @@
           "imageSha256": "3cf51963ca71ff36613cea2fd3018500228f0ef462827458817848501f8c19ab"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.547Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.547Z",
+      "paragraphReviewSha256": "5f7a9136c1c74b4222839ca64f9af8bc8378edd8e0c72e6234e70e2ad77b1bfd"
     },
     "switzerland-flag": {
       "status": "checked-against-catalog",
@@ -827,7 +849,8 @@
           "imageSha256": "2ed20700c923ec8b115e891a518d1608f5476b26b532c5f1601f1689436c6fe8"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.547Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.547Z",
+      "paragraphReviewSha256": "4314b46e024f5b0bcdfaf8614006172e17fc0c365019a1bb65bcc8d71d89f0eb"
     },
     "united-arab-emirates-flag": {
       "status": "checked-against-catalog",
@@ -863,7 +886,8 @@
           "imageSha256": "8f96d469f9aa02d64475c5e20a5630603be9b56d995c38c9e62af39ce83e4a3b"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.547Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.547Z",
+      "paragraphReviewSha256": "cc20943f6512aa61361ef7b7bcec74506a23a4262f50d116a7266a46fe413c20"
     },
     "united-kingdom-flag": {
       "status": "checked-against-catalog",
@@ -899,7 +923,8 @@
           "imageSha256": "c79f259ef64cc2330895efb5dd877ef2d824e86b9fc7ed35f107c98730aeffed"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.547Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.547Z",
+      "paragraphReviewSha256": "0e38670a958654e867b653c344e733ded3481ec9f8371813255b40bd52dc04f3"
     }
   }
 }

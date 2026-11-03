@@ -35,7 +35,8 @@
           "imageSha256": "8feea6f0e79a2c557aa7f41db13f6e31a167638ef4145bc574cbeadb56cadb32"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z",
+      "paragraphReviewSha256": "c8ca9f47bd0a6d8e5d65f927d304399981d7ec1fca23c9319785b64b34c5c6ff"
     },
     "up": {
       "status": "checked-against-catalog",
@@ -71,7 +72,8 @@
           "imageSha256": "a62f50051c95bc825d6961cecbf2ae2811607673bec6f7dcbbf1b81fc20f7964"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z",
+      "paragraphReviewSha256": "37e2d7719a07eca3c840586e63a84cea8c1e9a20b21f1ae1b8e403979b7ede06"
     }
   }
 }

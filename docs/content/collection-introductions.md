@@ -16,6 +16,8 @@ Each expansion records `paragraphSourceSha256`, `paragraphEvidence` and
 `paragraphsCheckedAt`. The signature binds the summary and the accepted public
 titles, alt text and image hashes for the complete topic. Replacing artwork,
 changing reviewed identities or editing the summary invalidates the expansion.
+`paragraphReviewSha256` also binds the exact paragraph wording, selected examples
+and check date; a text edit needs a renewed catalog check.
 The normal Astro and publisher gates require all published subjects, without a
 legacy exemption, to carry checked 2–3 paragraph copy and valid examples.
 

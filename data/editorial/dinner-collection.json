@@ -39,7 +39,8 @@
           "imageSha256": "3d697773880cec29c4423384a135a76a773029da0adbae6c0ddf221b833fbe57"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.543Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.543Z",
+      "paragraphReviewSha256": "2d7492d64feea28ae5d4ee3d5e7d84de8edf2f3b75b9ff87bb506eb3b8a678b7"
     }
   }
 }

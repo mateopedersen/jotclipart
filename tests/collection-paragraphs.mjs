@@ -37,6 +37,12 @@ test('every published topic has distinct, source-bound two or three paragraph co
 
 test('new and changed subjects cannot publish a missing, one-paragraph or stale expansion', () => {
   assert.equal(validateCollectionParagraphs('qatar-flag', items, record).length, 2);
+  const edited = structuredClone(record);
+  edited.paragraphs[1] += ' Changed wording.';
+  assert.throws(
+    () => validateCollectionParagraphs('qatar-flag', items, edited),
+    /renewed catalog check/,
+  );
   assert.throws(
     () =>
       validateCollectionParagraphs('qatar-flag', items, {
