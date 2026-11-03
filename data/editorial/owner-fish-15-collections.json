@@ -39,7 +39,8 @@
           "imageSha256": "10bdcade06705be7fe9e614fcf80af0d9b24e0af0365ff6e5fafb480b597b9dd"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z",
+      "paragraphReviewSha256": "b114164b9c52186053f80f92aa463f0355c951f5892f7a6b0e2591c82532a211"
     },
     "northern-pike": {
       "status": "checked-against-catalog",
@@ -79,7 +80,8 @@
           "imageSha256": "b49df26e911d7df06b232178bead652887288c3db60bd7ff7cb81080c7b9b897"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z",
+      "paragraphReviewSha256": "a7e1aac710598a94e9d11d74de705bac98442f6eb35ebf1abed3713fba0e6ca9"
     },
     "flounder": {
       "status": "checked-against-catalog",
@@ -119,7 +121,8 @@
           "imageSha256": "bc05ea6cbddbc8a10f92640a2bae5df4941b7b71bd602680466655e41dfe2eac"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z",
+      "paragraphReviewSha256": "28783c048ac8b5655cd42880d3f2a0e8491dd609c5828c8c453501ad924ae925"
     },
     "salmon": {
       "status": "checked-against-catalog",
@@ -159,7 +162,8 @@
           "imageSha256": "1bbccf52985ab3993389170a8427f0ed67f74ac5183a1e47e408d435ca9141a0"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z",
+      "paragraphReviewSha256": "b1b02d33ed1cd2f44a86f25be6bb664a261b5d8a12d3cc6aadd9f4ff46344670"
     },
     "bass": {
       "status": "checked-against-catalog",
@@ -199,7 +203,8 @@
           "imageSha256": "a55c7d36b78bb57612ca3b68e5f6ed243a16274b4f1542e0bb2556fd27fca31e"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z",
+      "paragraphReviewSha256": "1f2c309aea3f6df29238f315c5cb67f589a352c410c6d78401ad2badbe0a60f5"
     },
     "trout": {
       "status": "checked-against-catalog",
@@ -239,7 +244,8 @@
           "imageSha256": "0013d1844cabecc74ce74ba33f2202cfa7e0461d417352907ea8f0eb26b91c93"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z",
+      "paragraphReviewSha256": "5c5107e8c004fa374e8b724dd4fd8e2ed7d1ea279224df0d547c763c9efdd7c4"
     },
     "tuna": {
       "status": "checked-against-catalog",
@@ -279,7 +285,8 @@
           "imageSha256": "6f99e27f12c71f24effebbcbc10d80b0cdccde6110bb3e610e68799ba65d623e"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z",
+      "paragraphReviewSha256": "10bc0aac7a5728b02cb09db1321c5b5487ca1b6c21fcd0a879789c0cfc1e975f"
     },
     "bluegill": {
       "status": "checked-against-catalog",
@@ -319,7 +326,8 @@
           "imageSha256": "08f26ab9aea691947ff617d6749b43586af6c4fea1cb1f1262372a5e47dac306"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z",
+      "paragraphReviewSha256": "9f97eeedc605bfb28276777eebd550a54ae23ec3363ff855447ff84e06926dde"
     },
     "largemouth-bass": {
       "status": "checked-against-catalog",
@@ -359,7 +367,8 @@
           "imageSha256": "cc708410f5dbed9967b19a84d41d7d688268e9e4f4f1f81ad01d87ada63af3e3"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z",
+      "paragraphReviewSha256": "2a8d1adba3a6437d69db4741a7e3aa68f59d30fee7b8be9f2c4b4a8c3d838a47"
     },
     "rainbow-trout": {
       "status": "checked-against-catalog",
@@ -399,7 +408,8 @@
           "imageSha256": "7479c245bd1c65adbe1b325126bc5f89dcd4c88d0ef83148114f555562e6abd2"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z",
+      "paragraphReviewSha256": "87f0ef688ae5b0713ac4871b6860ac708e110ec9bc4fe62035903e8660d667ae"
     },
     "red-snapper": {
       "status": "checked-against-catalog",
@@ -439,7 +449,8 @@
           "imageSha256": "799b32ebce1940f99bdcffad05633795015013505ab4827dba9c37adc82fa144"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z",
+      "paragraphReviewSha256": "bdcbc7dbc50e9fed92e3c869c703d08a61ea6a00aeac783444e8e427fc00d8ff"
     },
     "walleye": {
       "status": "checked-against-catalog",
@@ -479,7 +490,8 @@
           "imageSha256": "c463141cac1b73d4c99258584cb9dc157f63550ffde9b10284d2eb7f8d25e7b5"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z",
+      "paragraphReviewSha256": "7f200a8e546f5db9fa12d53ed46a3936f44570f25472db77db52e65cd39f7117"
     },
     "mahi-mahi": {
       "status": "checked-against-catalog",
@@ -519,7 +531,8 @@
           "imageSha256": "75e50331afcc1be6eb4e1c06f5f999edb1e9e90e6ff91f1ee0a7044750358cd7"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z",
+      "paragraphReviewSha256": "8f3cbc54462c58e2ac674041f54d3bca687ccc21b59964859b5a13439d5779e5"
     },
     "swordfish": {
       "status": "checked-against-catalog",
@@ -559,7 +572,8 @@
           "imageSha256": "ba60d89e52e9f144c81bed60c7cfed78fc852350dd183ef3f09b7ffade580598"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z",
+      "paragraphReviewSha256": "8bde0ff9b9eb25918f279438e73ff0a43fe3c4cfaaba38113f65d7f8f935e65f"
     },
     "marlin": {
       "status": "checked-against-catalog",
@@ -599,7 +613,8 @@
           "imageSha256": "2fa64a785aae850afccc1886415dd23e9871388028d278a187299addec691696"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.567Z",
+      "paragraphReviewSha256": "337d39f956073ec53631213d6f183ef26065f9d7b4618dc6fe9cddbe87e21bea"
     }
   }
 }

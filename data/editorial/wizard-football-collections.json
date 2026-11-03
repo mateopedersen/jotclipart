@@ -35,7 +35,8 @@
           "imageSha256": "2f46ea88eaa0897ba056c0da54d31e6d1e619fee8edbdeb5f1890849bf6f1bba"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z",
+      "paragraphReviewSha256": "6ff15647b06b9d8f816be279ac84b438edcb992ca11500a8779e10465d6cd900"
     },
     "sorting-hat": {
       "status": "checked-against-catalog",
@@ -71,7 +72,8 @@
           "imageSha256": "53588e9c30a42a32f9816a0b659d01d48827e41f5fd28f5181f2b4a932da165b"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z",
+      "paragraphReviewSha256": "0eef34c9c816683357f25ec43ef708d3b539adf77f9c9e98fef590bbb2b6c882"
     },
     "ron-weasley": {
       "status": "checked-against-catalog",
@@ -107,7 +109,8 @@
           "imageSha256": "59ed04773b912077ed9e826aeaeeaa178746c9bdd78f4b6a86cb1818be0384ca"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z",
+      "paragraphReviewSha256": "3037d84f47d3273492aef679edcc02fac192eae8385dac264036ca53f01f8fd8"
     },
     "fantasy-crafts": {
       "status": "checked-against-catalog",
@@ -143,7 +146,8 @@
           "imageSha256": "117f2c185ed92177c5c61e9941ca091be0114b25b953f3c6bafe6265308af070"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z",
+      "paragraphReviewSha256": "d69d0fd8288c1ee5ce56832e22024884334cb1f724dc2e8e713e5f401bb8873f"
     },
     "fantasy-headwear": {
       "status": "checked-against-catalog",
@@ -179,7 +183,8 @@
           "imageSha256": "a130facd29def2680746c42cf765710f8b0337412b0641e6e3f293e821ab9719"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z",
+      "paragraphReviewSha256": "1bf0f5b97ae728de08b374fdd8942ce82d461d5481b4aba0effe86a9faec7acd"
     },
     "football-couple": {
       "status": "checked-against-catalog",
@@ -215,7 +220,8 @@
           "imageSha256": "76c78e9a33312c67e10862a3d691084ec8958fd16b351d1fb8123ca328c0a17f"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z",
+      "paragraphReviewSha256": "9f290d7bf9eea64295e5beae89c14e98f472e30b2899d95ba0a0168915431559"
     },
     "football-love": {
       "status": "checked-against-catalog",
@@ -251,7 +257,8 @@
           "imageSha256": "50099e53430b76570a5aaf3d0dd9521ec49423fb04182246487e0514298b6971"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z",
+      "paragraphReviewSha256": "c13dde87cbf191cbcf516b0752a90bc1d0a6823a849374e073da718b7b198bb8"
     },
     "football-heart": {
       "status": "checked-against-catalog",
@@ -287,7 +294,8 @@
           "imageSha256": "d35e094c663142c2ccf164a75d604bc705912f02280110e41bd32d4a52bb01a8"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z",
+      "paragraphReviewSha256": "2a54a8cd9a069e0f70f29f7945d8588390d7d415868031167da229651d7ac7d6"
     },
     "football-valentine": {
       "status": "checked-against-catalog",
@@ -323,7 +331,8 @@
           "imageSha256": "02429f0c2d56b0ff5d81e6ab8b7ec222889e587aa70e1ed0ed5abbac3704a0e0"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.570Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.570Z",
+      "paragraphReviewSha256": "cb012607ff88d08b6990382cd610a19b12061a5fba6976bfc003e8fac083af14"
     },
     "basketball-bracket": {
       "status": "checked-against-catalog",
@@ -359,7 +368,8 @@
           "imageSha256": "bde0b5a472ff73d3525163fdb5e043332c2c215fac020b65781266a3fd268760"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.570Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.570Z",
+      "paragraphReviewSha256": "57e3e8063a85a6b45e033dc684f31e087f1b08cabe6317db4c9e3cf367d4419d"
     },
     "hogwarts": {
       "status": "checked-against-catalog",
@@ -395,7 +405,8 @@
           "imageSha256": "3a99861b33e19c4a7cc0de9461dc39956fcda2703dc968e211d18d3bcee136d0"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.570Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.570Z",
+      "paragraphReviewSha256": "2c357e90045dd11a333418b3d2f967144457573cfaa7bd465bd77cdcf9105aea"
     }
   }
 }

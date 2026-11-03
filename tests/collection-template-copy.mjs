@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {
   collectionSourceSignature,
   collectionParagraphSignature,
+  collectionParagraphReviewSignature,
   collectionIntroductionTemplate,
   verifyCollectionEditorial,
   requiredCollectionIntroductions,
@@ -37,6 +38,8 @@ function fixture(introductions) {
       },
     ]),
   );
+  for (const record of Object.values(topics))
+    record.paragraphReviewSha256 = collectionParagraphReviewSignature(record);
   return [catalog, { schema: 1, topics }];
 }
 

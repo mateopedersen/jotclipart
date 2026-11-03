@@ -35,7 +35,8 @@
           "imageSha256": "e83da2575251ecb69bac9919e526a4bc7ab5c509dca03443f0a2f1a9747ddc9c"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z",
+      "paragraphReviewSha256": "6d7167cf19ff1f39062623dc7623b91a9411417874949731a5adb4d632720a83"
     },
     "robotaxi": {
       "status": "checked-against-catalog",
@@ -71,7 +72,8 @@
           "imageSha256": "2e8ca5f9bd8679501f12457ea6c867570a03a61b0f1f10d71f92997a430f3bf6"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z",
+      "paragraphReviewSha256": "5603d69256282cde2a28eacaeaaa74bbe6df9a467fca11391570133cbd254d15"
     },
     "autonomous-taxi": {
       "status": "checked-against-catalog",
@@ -107,7 +109,8 @@
           "imageSha256": "94082d86ada79dd15a9f6c840f09decf4a95b72d7e99163a45bb4e3809c7e005"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z",
+      "paragraphReviewSha256": "e3a58c0713fb444c1fa7f5298efc4f23e7be7916a59a3ee074a1c46d208d9687"
     },
     "tesla-optimus": {
       "status": "checked-against-catalog",
@@ -143,7 +146,8 @@
           "imageSha256": "fc12843ae9d71029b74c71bdeadca44f3dc11459fe5e8649054e843fc5187aaa"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z",
+      "paragraphReviewSha256": "7548e4231edced8ee402d22c9f7ec6f368bcaeaa1c1bbbb8cca49a200f340f97"
     },
     "robot-hand": {
       "status": "checked-against-catalog",
@@ -179,7 +183,8 @@
           "imageSha256": "3f056403cfb15b71fb42bb404165b90fbec50945bad97f8f8a1e9f381bf59076"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z",
+      "paragraphReviewSha256": "cb439b5d9ddeb32bd465d8778c094d425114905b2af02f1fde0452abf8255280"
     },
     "black-friday": {
       "status": "checked-against-catalog",
@@ -215,7 +220,8 @@
           "imageSha256": "8db8c421c8ac50526f48c6084e979251b334552c1514e7620d1ce1d6c0221a45"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z",
+      "paragraphReviewSha256": "b154119ccce7454d14e1869f6aca8cf0872e70ecacd66ede6eee8dbf3f0d4b9a"
     },
     "cyber-monday": {
       "status": "checked-against-catalog",
@@ -251,7 +257,8 @@
           "imageSha256": "10981e25d5137ae0ec3cffc1380cb9052f35356b480774c080745b32c3c9387d"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z",
+      "paragraphReviewSha256": "02894fe3b79d0ffed76821f1b1e0b08d2058c3e446b15a43caf979248ff4cfc3"
     },
     "online-sale": {
       "status": "checked-against-catalog",
@@ -287,7 +294,8 @@
           "imageSha256": "166efa9c85458086615020d4a0ca868d7e6096dbf76ca508f5177a636cb19514"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z",
+      "paragraphReviewSha256": "1f23ac72a7232edc462697fbf70a0ed7cc4b80088ee58a36fe2010cf3980add2"
     },
     "online-shopping": {
       "status": "checked-against-catalog",
@@ -323,7 +331,8 @@
           "imageSha256": "39fc49e82cbd9ad959b584dd29dea146dfb5f2dd84462c54f0535d5a8ba1c66c"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z",
+      "paragraphReviewSha256": "920a90cfa3b54a84a51221da3ec953ab2f1456bd2fc70d1da3f991893523c833"
     }
   }
 }

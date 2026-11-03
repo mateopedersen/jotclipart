@@ -21,6 +21,19 @@ export function collectionParagraphSignature(items, summary) {
     .digest('hex');
 }
 
+export function collectionParagraphReviewSignature(record) {
+  return createHash('sha256')
+    .update(
+      JSON.stringify([
+        record.paragraphSourceSha256,
+        record.paragraphs,
+        record.paragraphEvidence,
+        record.paragraphsCheckedAt,
+      ]),
+    )
+    .digest('hex');
+}
+
 /** Catalog-grounded writing approval, never a claim of fresh visual inspection. */
 export function validateCollectionParagraphs(topic, items, record) {
   const fail = (reason) => {
@@ -67,6 +80,8 @@ export function validateCollectionParagraphs(topic, items, record) {
       fail('expanded introduction has stale or unrelated examples');
     seen.add(item.id);
   }
+  if (record.paragraphReviewSha256 !== collectionParagraphReviewSignature(record))
+    fail('expanded copy changed without a renewed catalog check');
   return record.paragraphs;
 }
 

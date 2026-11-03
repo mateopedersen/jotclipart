@@ -35,7 +35,8 @@
           "imageSha256": "8d112ab1516751a742487047031305249152e39488cc31814430a80ad4d7a6b0"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.529Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.529Z",
+      "paragraphReviewSha256": "d0ba80cfd12aa753b6fda94976d22d957acfd173aec0c8013a904cacbcdf0263"
     },
     "border": {
       "status": "checked-against-catalog",
@@ -71,7 +72,8 @@
           "imageSha256": "75098c5c30bb5391a825b5c22fea0311f5e122a379a36c38ad46d0a65a527359"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.529Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.529Z",
+      "paragraphReviewSha256": "615ceef55d7b00365a4c79e14eb48bece245177398d9523483305e5dff2e47bb"
     },
     "zoo": {
       "status": "checked-against-catalog",
@@ -107,7 +109,8 @@
           "imageSha256": "094047e4fadb47387147770baccda737bfbfeb9616f0df8c75e99710c016422b"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.529Z"
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.529Z",
+      "paragraphReviewSha256": "6422cc244b4ec050e33b89a4279f35d9477ce8b7fec562e415bb3e4017580dbd"
     }
   }
 }
