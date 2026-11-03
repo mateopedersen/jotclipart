@@ -57,13 +57,20 @@ test('new topics, changed pictures, duplicated prose and stale example IDs canno
 });
 
 test(
-  'all built subject pages render the short summary and matching schema without the removed essays',
-  { skip: !process.env.UC_TEST_BUILD_DIR && !existsSync(new URL('clipart/sunflower/index.html', testBuildUrl)) },
+  'all built subject pages render checked paragraphs, current counts and matching concise schema',
+  {
+    skip:
+      !process.env.UC_TEST_BUILD_DIR &&
+      !existsSync(new URL('clipart/sunflower/index.html', testBuildUrl)),
+  },
   () => {
     if (process.env.UC_TEST_BUILD_REVISION)
-      assert.ok(readFileSync(new URL('index.html', testBuildUrl), 'utf8').includes(
-        `name="build-revision" content="${process.env.UC_TEST_BUILD_REVISION}"`,
-      ), 'Unexpected build revision');
+      assert.ok(
+        readFileSync(new URL('index.html', testBuildUrl), 'utf8').includes(
+          `name="build-revision" content="${process.env.UC_TEST_BUILD_REVISION}"`,
+        ),
+        'Unexpected build revision',
+      );
     for (const [topic, record] of Object.entries(registry.topics)) {
       const html = readFileSync(new URL(`clipart/${topic}/index.html`, testBuildUrl), 'utf8');
       const schema = [
@@ -82,6 +89,32 @@ test(
         assert.match(html, /<meta name="robots" content="noindex/, topic);
       }
       assert(html.includes('data-collection-summary'), topic);
+      const panel = html.match(/<div[^>]*data-collection-summary[^>]*>([\s\S]*?)<\/div>/)?.[1];
+      assert.ok(panel, `Missing paragraph panel: ${topic}`);
+      const paragraphs = [...panel.matchAll(/<p(?:\s[^>]*)?>([\s\S]*?)<\/p>/g)];
+      assert.equal(paragraphs.length, record.paragraphs.length, topic);
+      const decode = (value) =>
+        value
+          .replace(/<[^>]+>/g, '')
+          .replace(/&#x([0-9a-f]+);|&#(\d+);|&(amp|lt|gt|quot|apos);/gi, (_, hex, num, name) =>
+            hex
+              ? String.fromCodePoint(parseInt(hex, 16))
+              : num
+                ? String.fromCodePoint(Number(num))
+                : { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'" }[name.toLowerCase()],
+          )
+          .replace(/\s+/g, ' ')
+          .trim();
+      for (let i = 0; i < paragraphs.length; i++)
+        assert.equal(
+          decode(paragraphs[i][1]),
+          record.paragraphs[i].replace(
+            '{{artworkCount}}',
+            new Intl.NumberFormat('en-US').format(published.length),
+          ),
+          `${topic}/${i}`,
+        );
+      assert.doesNotMatch(panel, /\{\{artworkCount\}\}/, topic);
       assert.doesNotMatch(
         html,
         /Keep the transparent WebP over|From screen to paper|Find a sunflower image with the right purpose and shape/,

@@ -23,7 +23,23 @@
           "id": "feast-outline-bear-turkey-wagon",
           "imageSha256": "91117f3445e3cf1ca8d003cb112d6d5e5ea60673de1449451f587337013e5e6a"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Feast clipart collection, with {{artworkCount}} illustrations to explore. Turkey dinners, shared tables and abundant food spreads for feast-themed designs. Explore carving and serving scenes, buffet arrangements, different meal traditions, food lettering and four separate cartoon coloring compositions.",
+        "The gallery includes “Chef Carving a Turkey Roast” and “Bear Pulling a Turkey Feast Wagon Coloring Page” among its drawings. Illustrate a personal recipe page, a food vocabulary activity or a kitchen journal, selecting a view that makes your chosen ingredient or dish easy to recognize."
+      ],
+      "paragraphSourceSha256": "3c65241a148c8f5ebaf00f19e90e97d4fdf371cfdc34cce8e4b590201518e462",
+      "paragraphEvidence": [
+        {
+          "id": "feast-turkey-carving-chef",
+          "imageSha256": "e74b21ccc962d09efca9ff7af1fd7de785d0635124ff4899993b27ad56465a80"
+        },
+        {
+          "id": "feast-outline-bear-turkey-wagon",
+          "imageSha256": "91117f3445e3cf1ca8d003cb112d6d5e5ea60673de1449451f587337013e5e6a"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.544Z"
     }
   }
 }

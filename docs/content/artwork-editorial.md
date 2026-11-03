@@ -24,6 +24,13 @@ Run `npm run content:review -- --topic <slug> --limit 25` to prepare the next mi
 
 Use `npm run content:apply -- path/to/review.json` to validate a completed batch without writing, then append `--write` to apply it atomically. An invalid, duplicated, unknown, stale or still-pending entry rejects the whole batch. Unrelated reviews remain intact; original paths and sheet numbering are discarded. This is the reusable production workflow for large imports: prepare image evidence in batches, review the actual images and complete specific copy, validate/apply once, then run the normal build. A language or vision model can prepare proposed copy, but it must actually receive the images; filename-only text expansion is not a substitute for image evidence. No paid inference provider is invoked by these commands.
 
+## Updated collection display — owner direction, 2026-11-03
+
+Topic pages now need two or three short, distinct paragraphs with the automatic
+current count, actual variety and relevant uses. See `collection-introductions.md`.
+Keep the concise `intro` for search metadata. This latest direction supersedes
+the older single-paragraph display limit in the guidance below.
+
 ## Search guidance
 
 Public-figure reviews record `depiction` with the named people, `sceneNature: imagined-illustration` and whether the picture assigns a fictional role. Validation checks identity consistency and rejects unqualified fictional roles and unsupported event/result claims. This text check complements actual pixel review; it is not automatic proof that every sentence is true. Use pixel-based color checks to catch a drawing labeled as line art when its original has colored elements. Keep any image-quality limitations in the internal review, not repeated disclaimer paragraphs on every public page.

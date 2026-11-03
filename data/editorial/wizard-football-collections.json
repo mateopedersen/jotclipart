@@ -19,7 +19,23 @@
           "id": "golden-snitch-caught-on-a-branch-clipart",
           "imageSha256": "2f46ea88eaa0897ba056c0da54d31e6d1e619fee8edbdeb5f1890849bf6f1bba"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Golden Snitch clipart collection, with {{artworkCount}} illustrations to explore. Golden Snitch illustrations show the winged ball in flight, on workbenches, among Quidditch equipment and in small keepsake displays. Close-up objects sit alongside scenes with gloves, books and curious owls.",
+        "The gallery includes “Golden Snitch Above Brass Binoculars” and “Golden Snitch Caught on a Branch” among its drawings. Plan a personal creative notebook, a story activity or an entertainment-themed craft, matching the subject and composition to your own idea."
+      ],
+      "paragraphSourceSha256": "9e8c215ab51c5c2ff7449ea9e79afedc8aad759e817339708cb29910350a0101",
+      "paragraphEvidence": [
+        {
+          "id": "golden-snitch-above-brass-binoculars-clipart",
+          "imageSha256": "8094f03ff8608606a495885b740c4df2d379bbeb5cef17e6d17e0f8e8005988a"
+        },
+        {
+          "id": "golden-snitch-caught-on-a-branch-clipart",
+          "imageSha256": "2f46ea88eaa0897ba056c0da54d31e6d1e619fee8edbdeb5f1890849bf6f1bba"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z"
     },
     "sorting-hat": {
       "status": "checked-against-catalog",
@@ -39,7 +55,23 @@
           "id": "sorting-hat-with-a-seam-magnifier-clipart",
           "imageSha256": "93e08098da56a4a967a7252cd0c8d320220c28aa096694778088ff9b956ff74d"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Sorting Hat clipart collection, with {{artworkCount}} illustrations to explore. The patched Sorting Hat appears with repair tools, house banners, school trunks and watchful animals. Other scenes pair the hat with students, portraits, chess pieces and floating candles.",
+        "The gallery includes “Sorting Hat on a Brass Balance” and “Child Sheltering Beneath the Sorting Hat” among its drawings. Plan a personal creative notebook, a story activity or an entertainment-themed craft, matching the subject and composition to your own idea."
+      ],
+      "paragraphSourceSha256": "0b2eaa0073ebafb6f0446eae3180e7331adc048e3c236aebd05aac576dde7640",
+      "paragraphEvidence": [
+        {
+          "id": "sorting-hat-on-a-brass-balance-clipart",
+          "imageSha256": "c726d8c0a54b2b9bb9cc4935ff5cc5bc186d848a9118e03181fa8b30792b9512"
+        },
+        {
+          "id": "child-sheltering-beneath-the-sorting-hat-clipart",
+          "imageSha256": "53588e9c30a42a32f9816a0b659d01d48827e41f5fd28f5181f2b4a932da165b"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z"
     },
     "ron-weasley": {
       "status": "checked-against-catalog",
@@ -59,7 +91,23 @@
           "id": "ron-weasley-checking-a-broom-clipart",
           "imageSha256": "93f784df156e564e5a7701ce0062ca5a0f59da846d08da2cfe32c026e1eb10f8"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Ron Weasley clipart collection, with {{artworkCount}} illustrations to explore. Ron Weasley scenes include wand repairs, wizard chess, Quidditch and school-day mishaps. The collection mixes expressive close-ups with larger illustrations of the red-haired character and his familiar equipment.",
+        "The gallery includes “Ron Weasley Feeding a House-Elf” and “Ron Weasley Repairing His Wand” among its drawings. Plan a personal creative notebook, a story activity or an entertainment-themed craft, matching the subject and composition to your own idea."
+      ],
+      "paragraphSourceSha256": "166feaf05a04eedfe25f1cba72f81ab8f0eb1ef3fdb058d2385ad3831bf6a108",
+      "paragraphEvidence": [
+        {
+          "id": "ron-weasley-feeding-a-house-elf-clipart",
+          "imageSha256": "2c19b7ecd79753e1b620e0c64cd2f2d3641adf4117667caac996c1f7bd03e78c"
+        },
+        {
+          "id": "ron-weasley-repairing-his-wand-clipart",
+          "imageSha256": "59ed04773b912077ed9e826aeaeeaa178746c9bdd78f4b6a86cb1818be0384ca"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z"
     },
     "fantasy-crafts": {
       "status": "checked-against-catalog",
@@ -79,7 +127,23 @@
           "id": "jewelled-mechanical-hummingbird-clipart",
           "imageSha256": "a45831899d481c85afe9ab20d24c520284a1af0790ab2a426f5806523e0ffc64"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Fantasy crafts and inventions clipart collection, with {{artworkCount}} illustrations to explore. Fantasy makers tend miniature gardens, build unusual instruments and shape enchanted objects. Mechanical insects, a giant planted boot and a tiny leaf boat bring different scales and materials into these workshop scenes.",
+        "The gallery includes “Winged Kite with Trailing Ribbons” and “Dragonfly Propeller Bottle” among its drawings. Plan a personal creative notebook, a story activity or an entertainment-themed craft, matching the subject and composition to your own idea."
+      ],
+      "paragraphSourceSha256": "acdecf70cc01e52f55e7d36cca335c203f08412787d8a6786fbd5695ed54dfe5",
+      "paragraphEvidence": [
+        {
+          "id": "winged-kite-with-trailing-ribbons-clipart",
+          "imageSha256": "90b9cfa3aa6221cab115dc1d47817a331804710fab57daee22f5cb363012e044"
+        },
+        {
+          "id": "dragonfly-propeller-bottle-clipart",
+          "imageSha256": "117f2c185ed92177c5c61e9941ca091be0114b25b953f3c6bafe6265308af070"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z"
     },
     "fantasy-headwear": {
       "status": "checked-against-catalog",
@@ -99,7 +163,23 @@
           "id": "petal-bonnet-on-a-stand-clipart",
           "imageSha256": "a130facd29def2680746c42cf765710f8b0337412b0641e6e3f293e821ab9719"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Fantasy headwear clipart collection, with {{artworkCount}} illustrations to explore. Explore crescent hats, crystal aviator headgear, living branch crowns and delicate insect-wing headdresses. Each design has its own silhouette, with pearls, folded metal, clouds or leaves shaping the details.",
+        "The gallery includes “Moon Circlet with Flowing Ribbons” and “Petal Bonnet on a Stand” among its drawings. Plan a personal creative notebook, a story activity or an entertainment-themed craft, matching the subject and composition to your own idea."
+      ],
+      "paragraphSourceSha256": "cac6482c703c7c62d437aa7f43cfdffbfb8bd5f1499a6f2e2bf5faf48df21bb7",
+      "paragraphEvidence": [
+        {
+          "id": "moon-circlet-with-flowing-ribbons-clipart",
+          "imageSha256": "2ab6bf452c73519f2d8a2ffe46aeaec55516ccdd620df3ee1855972cc3a88c2d"
+        },
+        {
+          "id": "petal-bonnet-on-a-stand-clipart",
+          "imageSha256": "a130facd29def2680746c42cf765710f8b0337412b0641e6e3f293e821ab9719"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z"
     },
     "football-couple": {
       "status": "checked-against-catalog",
@@ -119,7 +199,23 @@
           "id": "couple-sharing-a-blanket-in-the-bleachers-clipart",
           "imageSha256": "76c78e9a33312c67e10862a3d691084ec8958fd16b351d1fb8123ca328c0a17f"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Football couples clipart collection, with {{artworkCount}} illustrations to explore. Football couples share game-day celebrations, quiet radio breaks, practice drills and equipment projects. The scenes include players and supporters of different ages, with affectionate portraits alongside full-body activities.",
+        "The gallery includes “Older Couple Opening a Football Keepsake Box” and “Couple Sharing a Blanket in the Bleachers” among its drawings. Illustrate a personal practice journal, a sports activity or a team-themed keepsake, choosing the pose or equipment that suits the story you are telling."
+      ],
+      "paragraphSourceSha256": "e5aaf60e886e5ee33d1af44245171e569b2af75b9f9b498f88d38fad5becb0c9",
+      "paragraphEvidence": [
+        {
+          "id": "older-couple-opening-a-football-keepsake-box-clipart",
+          "imageSha256": "5e0b66acb093b810ffcc77e2085817a44c0a8c7626b1c6b06c245619e09928ed"
+        },
+        {
+          "id": "couple-sharing-a-blanket-in-the-bleachers-clipart",
+          "imageSha256": "76c78e9a33312c67e10862a3d691084ec8958fd16b351d1fb8123ca328c0a17f"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z"
     },
     "football-love": {
       "status": "checked-against-catalog",
@@ -139,7 +235,23 @@
           "id": "football-memorabilia-on-a-shelf-clipart",
           "imageSha256": "ab2a64a3f40524f37a734a205a46db94daa28b043368958377d0a37e110c57e0"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Football fans and hobbies clipart collection, with {{artworkCount}} illustrations to explore. Football enthusiasm appears in personal keepsakes, baking, knitting, model stadiums and carefully maintained equipment. Fan portraits and small arrangements offer alternatives to on-field action scenes.",
+        "The gallery includes “Repairing the Laces of a Leather Football” and “Brushing Mud from a Football Cleat” among its drawings. Illustrate a personal practice journal, a sports activity or a team-themed keepsake, choosing the pose or equipment that suits the story you are telling."
+      ],
+      "paragraphSourceSha256": "ea0bd881e5b3c521f84f2817ec1d4fece7b6a0470cb860eae07052e586e53ee2",
+      "paragraphEvidence": [
+        {
+          "id": "repairing-the-laces-of-a-leather-football-clipart",
+          "imageSha256": "d8af47a0e461c86a23f00f75bb693d7919bff4ed9bb968795f232c5800edc793"
+        },
+        {
+          "id": "brushing-mud-from-a-football-cleat-clipart",
+          "imageSha256": "50099e53430b76570a5aaf3d0dd9521ec49423fb04182246487e0514298b6971"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z"
     },
     "football-heart": {
       "status": "checked-against-catalog",
@@ -159,7 +271,23 @@
           "id": "football-framed-by-feathered-wings-clipart",
           "imageSha256": "d35e094c663142c2ccf164a75d604bc705912f02280110e41bd32d4a52bb01a8"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Football hearts clipart collection, with {{artworkCount}} illustrations to explore. Football leather, laces and field markings form hearts with different structures. Discover clockwork mechanisms, glass ornaments, balloons, growing plants and small inventions alongside simpler stitched heart shapes.",
+        "The gallery includes “Anatomical Heart Made from Football Leather” and “Football Framed by Feathered Wings” among its drawings. Illustrate a personal practice journal, a sports activity or a team-themed keepsake, choosing the pose or equipment that suits the story you are telling."
+      ],
+      "paragraphSourceSha256": "7b5d7f9558eddca550e063a49906081e8295e02f05f1f2193028a60e3528169c",
+      "paragraphEvidence": [
+        {
+          "id": "anatomical-heart-made-from-football-leather-clipart",
+          "imageSha256": "8f6b12b713688c9bc618b5c80cb219b0576dd9459d37ab0f06d124b5f3b6975b"
+        },
+        {
+          "id": "football-framed-by-feathered-wings-clipart",
+          "imageSha256": "d35e094c663142c2ccf164a75d604bc705912f02280110e41bd32d4a52bb01a8"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z"
     },
     "football-valentine": {
       "status": "checked-against-catalog",
@@ -179,7 +307,23 @@
           "id": "coach-drawing-a-heart-shaped-football-play-clipart",
           "imageSha256": "e5e393beca30ef097f9d0ed1cbb2378cf2f04f80fb14d702ecfc555109b2e40b"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Football Valentine clipart collection, with {{artworkCount}} illustrations to explore. American football meets Valentine's Day in heart-marked players, playful mascots and gift arrangements. Roses, chocolates, ribbons and blank cards accompany the footballs, while character scenes show training and celebrations.",
+        "The gallery includes “Bear Football Center in Red Pads” and “Cat Catching a Football by a Field Marker” among its drawings. Illustrate a personal practice journal, a sports activity or a team-themed keepsake, choosing the pose or equipment that suits the story you are telling."
+      ],
+      "paragraphSourceSha256": "6565dfd8e12c15af1f29c1a3b5692358391b02f251efb1b17bbdf58216184c0d",
+      "paragraphEvidence": [
+        {
+          "id": "bear-football-center-in-red-pads-clipart",
+          "imageSha256": "942de3052edae4d501650e2e27f68053218c48f8cf235703b5b21093143ac277"
+        },
+        {
+          "id": "cat-catching-a-football-by-a-field-marker-clipart",
+          "imageSha256": "02429f0c2d56b0ff5d81e6ab8b7ec222889e587aa70e1ed0ed5abbac3704a0e0"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.570Z"
     },
     "basketball-bracket": {
       "status": "checked-against-catalog",
@@ -199,7 +343,23 @@
           "id": "basketball-bracket-on-a-television-clipart",
           "imageSha256": "0c44cd42eafa25af5e1a549b1d5e3061fb4d6a8211df910e07e06ef7a7786fda"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Basketball brackets clipart collection, with {{artworkCount}} illustrations to explore. Basketball tournament bracket illustrations appear on chalkboards, clipboards, jerseys and screens. Additional designs arrange the blank entry boxes as trees, stepped paths and trophy-centered diagrams.",
+        "The gallery includes “Folded Basketball Tournament Bracket” and “Basketball Bracket in an Arched Window” among its drawings. Illustrate a personal practice journal, a sports activity or a team-themed keepsake, choosing the pose or equipment that suits the story you are telling."
+      ],
+      "paragraphSourceSha256": "a8f3b2b24d33ac1967b26b2f2d5f4d676c930aedbc83a784ee1a5c51142093f4",
+      "paragraphEvidence": [
+        {
+          "id": "folded-basketball-tournament-bracket-clipart",
+          "imageSha256": "0bf3c119fd20069f0bcc932bbf6fb2aebda5bf9b83b73e6a0f35cacdcbb8d359"
+        },
+        {
+          "id": "basketball-bracket-in-an-arched-window-clipart",
+          "imageSha256": "bde0b5a472ff73d3525163fdb5e043332c2c215fac020b65781266a3fd268760"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.570Z"
     },
     "hogwarts": {
       "status": "checked-against-catalog",
@@ -219,7 +379,23 @@
           "id": "hogwarts-astronomy-tower-and-telescope-clipart",
           "imageSha256": "3a99861b33e19c4a7cc0de9461dc39956fcda2703dc968e211d18d3bcee136d0"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Hogwarts clipart collection, with {{artworkCount}} illustrations to explore. Explore Hogwarts through castle views, classrooms, house common rooms and lakeside scenes. The illustrations also visit the Great Hall, library, greenhouses and Quidditch pitch in both color and monochrome.",
+        "The gallery includes “Hogwarts Cloister in Black and White” and “Hogwarts Astronomy Tower and Telescope” among its drawings. Plan a personal creative notebook, a story activity or an entertainment-themed craft, matching the subject and composition to your own idea."
+      ],
+      "paragraphSourceSha256": "f0d89370b0689a14fd0ca50ddc421603c74ab6dc176dd076cad9b0e738884170",
+      "paragraphEvidence": [
+        {
+          "id": "hogwarts-cloister-in-black-and-white-clipart",
+          "imageSha256": "38170af999f45f3b3164d9243b2951b3fb52689a88d1238a8dc3620593fbb89f"
+        },
+        {
+          "id": "hogwarts-astronomy-tower-and-telescope-clipart",
+          "imageSha256": "3a99861b33e19c4a7cc0de9461dc39956fcda2703dc968e211d18d3bcee136d0"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.570Z"
     }
   }
 }

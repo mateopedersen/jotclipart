@@ -23,7 +23,23 @@
           "id": "veterans-outline-poppy-cards",
           "imageSha256": "b56f6bb263d4a626851c430936d57dc10839b0cd3c3a99b31f27bdb1f7e37d50"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Veterans clipart collection, with {{artworkCount}} illustrations to explore. Veterans appreciation illustrations with Thank You Veterans and Happy Veterans Day lettering, American flags, salutes and community gatherings. Choose from textured ribbons, cards and keepsakes, varied people sharing skills, and clear outline scenes.",
+        "The gallery includes “A Homecoming Hug” and “Thank You Veterans with an American Flag” among its drawings. Use the drawings in a civics discussion, a personal commentary project or an illustrated comparison, keeping imagined scenes distinct from real events."
+      ],
+      "paragraphSourceSha256": "e71f3d06d760cd338b14b0c136fc2caf39bbb912d12882b910c602f67704e848",
+      "paragraphEvidence": [
+        {
+          "id": "veterans-homecoming-hug",
+          "imageSha256": "0cc40bd392d385957716dd47db0d7045c045fdabfc2feaacfbb0897bc8a5f115"
+        },
+        {
+          "id": "veterans-volunteer-tool-belt",
+          "imageSha256": "34acf3103bba3022a4889d03b4fd1eefd8a1632bad7e7527a9bace46ad0bfa59"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z"
     }
   }
 }

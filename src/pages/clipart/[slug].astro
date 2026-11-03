@@ -7,12 +7,14 @@ import Layout from '../../layouts/Layout.astro';
 import Card from '../../components/Card.astro';
 import CollectionGalleryHeading from '../../components/CollectionGalleryHeading.astro';
 import RelatedCollections from '../../components/RelatedCollections.astro';
+import CollectionIntroduction from '../../components/CollectionIntroduction.astro';
 import {
   availableTopics,
   topicArt,
   slugify,
   clustersForTopic,
   reviewedCollectionIntroductions,
+  reviewedCollectionParagraphs,
 } from '../../lib/catalog';
 export function getStaticPaths() {
   return availableTopics.map((t) => ({ params: { slug: t.slug }, props: { topic: t } }));
@@ -20,6 +22,8 @@ export function getStaticPaths() {
 const { topic } = Astro.props;
 const copy = collectionCopy[topic.slug as keyof typeof collectionCopy];
 const reviewedIntro = reviewedCollectionIntroductions.get(topic.slug);
+const paragraphs = reviewedCollectionParagraphs.get(topic.slug);
+if (!paragraphs) throw new Error(`Missing expanded introduction: ${topic.slug}`);
 const featured = new Map(copy?.featured.map((id, index) => [id, index]));
 const items = topicArt(topic.slug).sort(
   (a, b) => (featured.get(a.id) ?? 999) - (featured.get(b.id) ?? 999),
@@ -81,7 +85,7 @@ const searchDescription = collectionMetaDescription(description);
       <a href={`/collection/${slugify(topic.cluster)}/`}>{topic.cluster}</a>
     </div>
     <h1>{title}</h1>
-    <p data-collection-summary>{description}</p>
+    <CollectionIntroduction topic={topic.slug} paragraphs={paragraphs} />
     <div class="chips">
       {clustersForTopic(topic)
         .filter((cluster) => cluster !== topic.cluster)

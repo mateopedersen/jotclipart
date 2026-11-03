@@ -19,7 +19,23 @@
           "id": "kwanzaa-outline-basket-garden",
           "imageSha256": "aee171fb78a7513e9db9e23f40569b759d8d8c830845a10a1120f4969a8b4dc7"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Kwanzaa clipart collection, with {{artworkCount}} illustrations to explore. Explore Kwanzaa symbols, woven objects and scenes of people cooking, crafting and helping together. The collection ranges from a seven-candle kinara and carved unity cup to book gifts, percussion players and black-and-white community scenes.",
+        "The gallery includes “Carved Wooden Kinara With Seven Candles” and “Carrying Produce Through a Garden Gate” among its drawings. Pair the artwork with your own words for a personal Kwanzaa greeting, a family reflection page or a cultural learning display."
+      ],
+      "paragraphSourceSha256": "2978ee1371ce041f0ff518285e1f8afb4933bea6bf847b72f89ca09d97370319",
+      "paragraphEvidence": [
+        {
+          "id": "kwanzaa-wooden-kinara",
+          "imageSha256": "583d2dc3ce5866dae136641f6a76971557435b3fb19467a07f64d8cf26b45e2b"
+        },
+        {
+          "id": "kwanzaa-outline-basket-garden",
+          "imageSha256": "aee171fb78a7513e9db9e23f40569b759d8d8c830845a10a1120f4969a8b4dc7"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.550Z"
     }
   }
 }

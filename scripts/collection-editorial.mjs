@@ -1,7 +1,7 @@
 import { createHash } from 'node:crypto';
 import { readFileSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
-import legacyBaseline from '../data/editorial/legacy-baseline.json' with { type: 'json' };
+import { readReviewedImportCatalog } from './reviewed-imports.mjs';
 
 export function collectionSourceSignature(items) {
   return createHash('sha256')
@@ -13,6 +13,61 @@ export function collectionSourceSignature(items) {
       ),
     )
     .digest('hex');
+}
+
+export function collectionParagraphSignature(items, summary) {
+  return createHash('sha256')
+    .update(JSON.stringify([collectionSourceSignature(items), summary]))
+    .digest('hex');
+}
+
+/** Catalog-grounded writing approval, never a claim of fresh visual inspection. */
+export function validateCollectionParagraphs(topic, items, record) {
+  const fail = (reason) => {
+    throw Error(`Collection ${topic}: ${reason}`);
+  };
+  if (record?.paragraphSourceSha256 !== collectionParagraphSignature(items, record?.intro))
+    fail('missing or stale expanded introduction');
+  if (
+    !Array.isArray(record.paragraphs) ||
+    record.paragraphs.length < 2 ||
+    record.paragraphs.length > 3
+  )
+    fail('provide two or three short paragraphs');
+  if (
+    record.paragraphs.some(
+      (text) => typeof text !== 'string' || text.trim().split(/\s+/).length < 10,
+    )
+  )
+    fail('each paragraph must explain the collection');
+  const text = record.paragraphs.join('\n\n');
+  const words = text.trim().split(/\s+/).length;
+  if (words < 50 || words > 200) fail('keep the introduction useful and concise (50–200 words)');
+  if ((text.match(/\{\{artworkCount\}\}/g) ?? []).length !== 1)
+    fail('use the live artwork count exactly once');
+  if (
+    /https?:|<[^>]+>|\b(?:cmyk|icc|gracol|dpi|ppi|E-E-A-T|handmade|expert-approved|human-created|guaranteed ranking)\b/i.test(
+      text,
+    )
+  )
+    fail('remove technical filler or unsupported claims');
+  if (record.paragraphs.some((paragraph) => /[\r\n]/.test(paragraph)))
+    fail('paragraphs must be plain text');
+  if (!Number.isFinite(Date.parse(record.paragraphsCheckedAt)))
+    fail('missing paragraph check date');
+  if (
+    !Array.isArray(record.paragraphEvidence) ||
+    record.paragraphEvidence.length < Math.min(2, items.length)
+  )
+    fail('provide source-bound examples for expanded copy');
+  const seen = new Set();
+  for (const proof of record.paragraphEvidence) {
+    const item = items.find((item) => item.id === proof.id);
+    if (!item || seen.has(item.id) || item.files.webp.sha256 !== proof.imageSha256)
+      fail('expanded introduction has stale or unrelated examples');
+    seen.add(item.id);
+  }
+  return record.paragraphs;
 }
 
 /** Detect topic-name substitution; this is not a visual or semantic review. */
@@ -71,7 +126,7 @@ export function validateCollectionCopy(topic, items, record) {
   return record.intro;
 }
 
-export function verifyCollectionEditorial(catalog, registry) {
+export function verifyCollectionEditorial(catalog, registry, resolvedCatalog = catalog) {
   if (registry?.schema !== 1) throw new Error('Unsupported collection editorial registry');
   const groups = new Map();
   for (const item of catalog.filter((item) => item.published && item.indexable)) {
@@ -91,12 +146,32 @@ export function verifyCollectionEditorial(catalog, registry) {
   for (const topic of Object.keys(registry.topics))
     if (!groups.has(topic))
       throw new Error(`No published artwork for collection summary: ${topic}`);
-  return { topics: groups.size, uniqueIntroductions: texts.size };
+  const expanded = new Set();
+  const publicById = new Map(resolvedCatalog.map((item) => [item.id, item]));
+  for (const [topic, items] of groups) {
+    const text = validateCollectionParagraphs(
+      topic,
+      items.map((item) => publicById.get(item.id)),
+      registry.topics[topic],
+    ).join('\n\n');
+    if (expanded.has(text.toLowerCase()))
+      throw Error('Repeated expanded collection introduction: ' + topic);
+    expanded.add(text.toLowerCase());
+  }
+  return {
+    topics: groups.size,
+    uniqueIntroductions: texts.size,
+    expandedIntroductions: expanded.size,
+  };
 }
 
 export function readCollectionAudit(root) {
   const read = (path) => JSON.parse(readFileSync(resolve(root, path), 'utf8'));
-  const report = verifyCollectionEditorial(read('data/art.json'), readCollectionRegistries(root));
+  const report = verifyCollectionEditorial(
+    read('data/art.json'),
+    readCollectionRegistries(root),
+    readReviewedImportCatalog(root),
+  );
   return {
     ...report,
     checkedIntroductions: report.uniqueIntroductions,
@@ -104,12 +179,9 @@ export function readCollectionAudit(root) {
   };
 }
 
-/** Protect every new topic without rewriting unfinished legacy topic prose. */
-export function requiredCollectionIntroductions(catalog, registry) {
+/** Every current and future published topic must carry checked collection writing. */
+export function requiredCollectionIntroductions(catalog, registry, resolvedCatalog = catalog) {
   if (registry?.schema !== 1 || !registry.topics) throw Error('Invalid collection registry');
-  const legacyTopics = new Set(
-    catalog.filter((item) => legacyBaseline.records[item.id]).map((item) => item.topic),
-  );
   const groups = new Map();
   for (const item of catalog.filter((item) => item.published && item.indexable)) {
     const group = groups.get(item.topic) ?? [];
@@ -121,7 +193,6 @@ export function requiredCollectionIntroductions(catalog, registry) {
     templates = new Map();
   for (const [topic, items] of groups) {
     const record = registry.topics[topic];
-    if (!record && legacyTopics.has(topic)) continue;
     const text = validateCollectionCopy(topic, items, record);
     if (texts.has(text.toLowerCase())) throw Error('Repeated collection introduction: ' + topic);
     texts.add(text.toLowerCase());
@@ -130,6 +201,13 @@ export function requiredCollectionIntroductions(catalog, registry) {
   }
   for (const topic of Object.keys(registry.topics))
     if (!groups.has(topic)) throw Error('Orphan collection review: ' + topic);
+  const publicById = new Map(resolvedCatalog.map((item) => [item.id, item]));
+  for (const [topic, items] of groups)
+    validateCollectionParagraphs(
+      topic,
+      items.map((item) => publicById.get(item.id)),
+      registry.topics[topic],
+    );
   return result;
 }
 
@@ -152,6 +230,32 @@ export function readCollectionRegistries(root = process.cwd()) {
   return { schema: 1, topics };
 }
 
-export function readRequiredCollectionIntroductions(catalog, root = process.cwd()) {
-  return requiredCollectionIntroductions(catalog, readCollectionRegistries(root));
+export function readRequiredCollectionIntroductions(
+  catalog,
+  root = process.cwd(),
+  resolvedCatalog = catalog,
+) {
+  return requiredCollectionIntroductions(catalog, readCollectionRegistries(root), resolvedCatalog);
+}
+
+export function readRequiredCollectionParagraphs(
+  catalog,
+  root = process.cwd(),
+  resolvedCatalog = catalog,
+) {
+  const registry = readCollectionRegistries(root);
+  requiredCollectionIntroductions(catalog, registry, resolvedCatalog);
+  return new Map(
+    Object.entries(registry.topics).map(([topic, record]) => [topic, record.paragraphs]),
+  );
+}
+
+export function readCollectionPresentation(catalog, resolvedCatalog, root = process.cwd()) {
+  const registry = readCollectionRegistries(root);
+  return {
+    summaries: requiredCollectionIntroductions(catalog, registry, resolvedCatalog),
+    paragraphs: new Map(
+      Object.entries(registry.topics).map(([topic, record]) => [topic, record.paragraphs]),
+    ),
+  };
 }

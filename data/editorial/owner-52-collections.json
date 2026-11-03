@@ -23,7 +23,23 @@
           "id": "ten-white-bubble-ink-outline-black-and-white-clipart",
           "imageSha256": "a205c201c854524b60e9676ad0420c0d453564f136a0b0e497f3c7a8af19cbea"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Number 10 clipart collection, with {{artworkCount}} illustrations to explore. Find the number 10 in styles ranging from bold black and varsity outlines to flowers, foil balloons, watercolor and textured decorative numerals.",
+        "The gallery includes “Number One Pulling Zero” and “Lava Rock Number 10” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "2781c7032d842d0460dc157a99116801a325502494baf7cf4d9131ed4eed8f45",
+      "paragraphEvidence": [
+        {
+          "id": "one-pulls-zero-number-friends-clipart",
+          "imageSha256": "3e0148b2878b8cbba91bd6e5dc7dcaf6dcc03545c58478597388a74fa373f907"
+        },
+        {
+          "id": "ten-lava-rock-cut-numerals-clipart",
+          "imageSha256": "6a8ed1fdec8abaa55000a98089a09df5a1fe209cc25c2dff6f1ca11d018c66be"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.560Z"
     },
     "60": {
       "status": "checked-against-catalog",
@@ -47,7 +63,23 @@
           "id": "western-woodcut-sixty-black-and-white-clipart",
           "imageSha256": "0aa82b235723d35ed5af50797d273bb8c53f4ef07874ad4946dedbcf411ca885"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Number 60 clipart collection, with {{artworkCount}} illustrations to explore. Explore the number 60 in colorful decorative styles, including floral, metallic, watercolor and fabric designs alongside black-and-white lettering.",
+        "The gallery includes “Art Deco Number 60” and “Comic Burst Number 60” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "80bb80320d1d56e217fe296756c04dbdf4e33d0dd9c9c2f659d1eb4f8dd51146",
+      "paragraphEvidence": [
+        {
+          "id": "art-deco-fan-sixty-clipart",
+          "imageSha256": "3d5aedebd334a439bb163489279e17713dc256ab645bba90f0205354590ed60e"
+        },
+        {
+          "id": "halftone-pop-sixty-clipart",
+          "imageSha256": "6602fb58c00619afba3b2a95e54dbd2c8072b1116306f6e6c2961466f581eae7"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.560Z"
     },
     "911": {
       "status": "checked-against-catalog",
@@ -71,7 +103,23 @@
           "id": "traffic-police-stop-hand-whistle-clipart",
           "imageSha256": "56e825adb0abe4a17985e8d1e6f65e46188e6588856cc9fb770dcaff63f79ca6"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 911 Emergency clipart collection, with {{artworkCount}} illustrations to explore. Explore 911 emergency illustrations featuring dispatchers, police officers, firefighters, rescue equipment and calls for help.",
+        "The gallery includes “Ambulance with Stretcher” and “911 Location Pin on a Map” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "099929d77f83e884b05efe21f3cfe4a4f0707da962b8517bda12d96151c03aaa",
+      "paragraphEvidence": [
+        {
+          "id": "ambulance-rescue-ramp-clipart",
+          "imageSha256": "7df401c840f88276d753fc3ab91417be55cd3ca26d7cd15e0bff8061578bbd82"
+        },
+        {
+          "id": "emergency-location-map-pin-clipart",
+          "imageSha256": "b341f8d554d562dcde1e28bbd81668b46c127b1df4c176fa5757e583c33d4b39"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.560Z"
     },
     "shapes": {
       "status": "checked-against-catalog",
@@ -95,7 +143,23 @@
           "id": "wide-rectangle-block-clipart",
           "imageSha256": "e4911871ffdb69eb56c8f00c8e40d08b1a5f20897a3cc24466dba5476beb71da"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Shapes clipart collection, with {{artworkCount}} illustrations to explore. Explore geometric shapes in a range of colors and materials, from stitched triangles and faceted polygons to three-dimensional solids and outline drawings.",
+        "The gallery includes “Yellow Ring” and “Mint Green Capsule” among its drawings. Arrange the artwork around your own text in a personal page layout, an invitation or a classroom display, choosing shapes that frame rather than crowd the main message."
+      ],
+      "paragraphSourceSha256": "b04381afbe5fdb4d30ac997a4d667b4e2828933f5ed59cc3fe41083a4d93fa67",
+      "paragraphEvidence": [
+        {
+          "id": "annulus-ring-clipart",
+          "imageSha256": "59d98f2a452ed2e1f0b393d6470ed0204d4b95129709856c0962be18ae3fcd9d"
+        },
+        {
+          "id": "capsule-solid-clipart",
+          "imageSha256": "1774ad475169e7e856f99dfa8c0a15f1f733d2c337c7f40a2d8d2a8cf8551478"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.560Z"
     },
     "key": {
       "status": "checked-against-catalog",
@@ -119,7 +183,23 @@
           "id": "woman-reaching-keyring-grabber-black-and-white-clipart",
           "imageSha256": "43a25366c9b128960b6d9f170e91b9117e76e9c8ebefc6cac6c9fd52aa3a40aa"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Key clipart collection, with {{artworkCount}} illustrations to explore. Explore keys in everyday scenes, including house keys, lock mechanisms, decorative pendants, car fobs and people using or finding keys.",
+        "The gallery includes “Archaeologist Brushing a Buried Key” and “Reaching for Keys with a Grabber” among its drawings. Create a classroom activity, a personal study page or a learning journal, choosing the illustration that supports the idea you want to explain."
+      ],
+      "paragraphSourceSha256": "40a00d914278a6a13256d1f82f4331ae6a173135327da36794475091913aec0e",
+      "paragraphEvidence": [
+        {
+          "id": "archaeology-brush-key-find-clipart",
+          "imageSha256": "6165e5730f55a22e1abe6087d923243a0ea09e9bd2b0ede3e1ee7cfada5e64e1"
+        },
+        {
+          "id": "woman-reaching-keyring-grabber-black-and-white-clipart",
+          "imageSha256": "43a25366c9b128960b6d9f170e91b9117e76e9c8ebefc6cac6c9fd52aa3a40aa"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.560Z"
     },
     "arrow": {
       "status": "checked-against-catalog",
@@ -143,7 +223,23 @@
           "id": "zigzag-lightning-arrow-clipart",
           "imageSha256": "f0e37f25314290bcd99bfcb4f66db98770def6dc2486dff42399330ec4d48f2d"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Arrow clipart collection, with {{artworkCount}} illustrations to explore. Browse arrows in many forms, from colorful directional symbols and curved signs to archery scenes, maps and hand-drawn markings.",
+        "The gallery includes “Green Chevron Trail” and “Heart in a Ribbon Arrow” among its drawings. Arrange the artwork around your own text in a personal page layout, an invitation or a classroom display, choosing shapes that frame rather than crowd the main message."
+      ],
+      "paragraphSourceSha256": "959629315e680c8dab3f26e10686786242177b237a73b68e556cdb96b8a9f2bc",
+      "paragraphEvidence": [
+        {
+          "id": "accelerating-chevron-trail-clipart",
+          "imageSha256": "051b8c0bb59d0a34b88de5046b5d58bcaaa076ab4ca8afd4f50d3d55fbe4e887"
+        },
+        {
+          "id": "heart-loop-ribbon-arrow-clipart",
+          "imageSha256": "8bf8d0360158877ea71b4612550510341c5ddb051c5e3aff064697ec47911139"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.560Z"
     },
     "1st": {
       "status": "checked-against-catalog",
@@ -167,7 +263,23 @@
           "id": "first-triangle-music-lesson-clipart",
           "imageSha256": "9d9b3f8da6e085bbad427be2c912ddffb4d9d8baabc35704669b47172eefce46"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 1st clipart collection, with {{artworkCount}} illustrations to explore. Celebrate first milestones with drawings of first birthdays, school days, hobbies and keepsakes, along with first-place trophies and ribbons.",
+        "The gallery includes “First Anniversary Tea” and “First Easter Basket” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "dc172496ba81c1c12365f2c70c8f6ae206231cdfbc0feac712b61dfb2219399b",
+      "paragraphEvidence": [
+        {
+          "id": "first-anniversary-tea-clipart",
+          "imageSha256": "f540fd524b504091642036c820456cf7083640709faf0afb966aeb88d2146478"
+        },
+        {
+          "id": "first-easter-basket-clipart",
+          "imageSha256": "fdb57825595d581e4444efc2ab78c904801a145a0e1d77bdc6e1b00892c7f346"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.560Z"
     },
     "copyright": {
       "status": "checked-against-catalog",
@@ -191,7 +303,23 @@
           "id": "writer-copyright-page-black-and-white-clipart",
           "imageSha256": "bd151e840fcfc7ca30c3e24e631b5399017711ac474a33ff944c5093e1891621"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Copyright clipart collection, with {{artworkCount}} illustrations to explore. Browse copyright symbols and creative-work scenes, including decorative emblems, books, documents, photography and illustration tools.",
+        "The gallery includes “Archivist Holding a Copyright Folder” and “Writer Adding a Copyright Mark” among its drawings. Illustrate a classroom discussion about creative ownership, a personal writing notebook or a project about how images and words are credited."
+      ],
+      "paragraphSourceSha256": "a163e98e6e85be33956298cacef7bb07d5923392c0a4e15759f20678e56343ef",
+      "paragraphEvidence": [
+        {
+          "id": "archivist-copyright-record-clipart",
+          "imageSha256": "6381889d3cd451043f0094e4b5c2c8f66ec11977182f96e222f750a8bbf24a49"
+        },
+        {
+          "id": "writer-copyright-page-black-and-white-clipart",
+          "imageSha256": "bd151e840fcfc7ca30c3e24e631b5399017711ac474a33ff944c5093e1891621"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.560Z"
     },
     "yes": {
       "status": "checked-against-catalog",
@@ -215,7 +343,23 @@
           "id": "yes-woman-affirmative-nod-clipart",
           "imageSha256": "8734542ec593069f6538b9260dc88dd9ea24a052868eefc3b9b4421e93c163ad"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Yes clipart collection, with {{artworkCount}} illustrations to explore. Explore YES lettering, checkmarks, speech bubbles and everyday scenes of people expressing agreement.",
+        "The gallery includes “Child Using a Choice Board” and “Yes Decision Spinner” among its drawings. Create a classroom activity, a personal study page or a learning journal, choosing the illustration that supports the idea you want to explain."
+      ],
+      "paragraphSourceSha256": "44d7af3b5b020cc0090d45b96ea73a6ca0fe78cfec2a34980da02f7e3fee9f4d",
+      "paragraphEvidence": [
+        {
+          "id": "yes-accessible-choice-board-clipart",
+          "imageSha256": "bc3f2af0e3e6e3a5de156b626dfdb44d3a97d974cf377b43a0a4dafefddab2e6"
+        },
+        {
+          "id": "yes-decision-spinner-black-and-white-clipart",
+          "imageSha256": "0448f8bbb2efbbf513153e8107c7b830e981f66527a0d22502e5312cf975055c"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.560Z"
     },
     "snowflakes": {
       "status": "checked-against-catalog",
@@ -239,7 +383,23 @@
           "id": "wreath-with-three-snowflakes-black-and-white-clipart",
           "imageSha256": "12e05b895b37e0183200ac627ca1e6632a15ef186e59286b39143f40ca43c537"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Snowflakes clipart collection, with {{artworkCount}} illustrations to explore. Discover icy snow crystals, handcrafted snowflake ornaments and cozy winter scenes, from paper crafts to snowy accessories.",
+        "The gallery includes “Ice Sculptor Carving a Snowflake” and “Lacy Blue Snow Crystal” among its drawings. Build a nature observation page, an illustrated setting or a classroom activity around the form and atmosphere that suit your subject."
+      ],
+      "paragraphSourceSha256": "baa2fff078742d76daf48ae13e8c089475cc9f4d6b2c43e42740780d3f8ebf9b",
+      "paragraphEvidence": [
+        {
+          "id": "artisan-ice-snowflake-sculpture-clipart",
+          "imageSha256": "627041ea92825bb49c8e85bc0e51f833349009d664dd5f5c08b963dbb9c8aaa0"
+        },
+        {
+          "id": "fine-lacy-hexagonal-crystal-clipart",
+          "imageSha256": "eb0144bdab38f14c89ad9d354c6f8d6596576edcd3c3773fe2e9498c44122651"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.560Z"
     },
     "90s": {
       "status": "checked-against-catalog",
@@ -263,7 +423,23 @@
           "id": "yo-yo-string-trick-black-and-white-clipart",
           "imageSha256": "f6205fe2e537573447901a9db288874f5e2603f4c2603df6f6d48a3d804a0485"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 1990s clipart collection, with {{artworkCount}} illustrations to explore. Explore 1990s-inspired everyday objects, from cassette players and floppy disks to colorful clothing, games and accessories.",
+        "The gallery includes “Pager on a Leather Belt” and “Inline Skates and Safety Gear” among its drawings. Plan a personal creative notebook, a story activity or an entertainment-themed craft, matching the subject and composition to your own idea."
+      ],
+      "paragraphSourceSha256": "b32c9fb67596cef0f9820e83fe196d54cc23db4e9c47c9a955b3665c5c2be7b5",
+      "paragraphEvidence": [
+        {
+          "id": "alphanumeric-pager-belt-clip-clipart",
+          "imageSha256": "4fe4037b7093e8b25c0429f6a81300b506ee1698ba9f5b17994e150434d84369"
+        },
+        {
+          "id": "inline-skates-protective-gear-clipart",
+          "imageSha256": "07190cbd8ca9150e96c6c6111adc9451b59426745f128664fbe7c8c8a3596124"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.560Z"
     },
     "yellow": {
       "status": "checked-against-catalog",
@@ -287,7 +463,23 @@
           "id": "yellow-task-lamp-and-book-clipart",
           "imageSha256": "6848eba247a8838a9bba6a26584ed778468007c872f681196073aefe21beb3d5"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Yellow clipart collection, with {{artworkCount}} illustrations to explore. Browse yellow objects, flowers, food and vehicles alongside outline drawings ready to color.",
+        "The gallery includes “Painter Applying Yellow Paint” and “Yellow Squash on a Vine” among its drawings. Arrange the artwork around your own text in a personal page layout, an invitation or a classroom display, choosing shapes that frame rather than crowd the main message."
+      ],
+      "paragraphSourceSha256": "f4ff2a6a4c48d11f985869c10e6b823c75803d33422a04732ebb995602543135",
+      "paragraphEvidence": [
+        {
+          "id": "artist-rolls-yellow-paint-clipart",
+          "imageSha256": "1b599998a47ccc610a53f67b2c9ed9b22e95a76810e1cbc073914d1b17dd55f9"
+        },
+        {
+          "id": "crookneck-squash-on-vine-clipart",
+          "imageSha256": "4e5cca8baf06c3662ec8a0876379ddade0f7d25c80b226efc0ceb863b4aed742"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.560Z"
     },
     "umbrella": {
       "status": "checked-against-catalog",
@@ -311,7 +503,23 @@
           "id": "wind-inverted-umbrella-surprise-clipart",
           "imageSha256": "95dd837021a91fc6db8360a60cedc3737b428a2870bf20d3139bf58abec343a3"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Umbrella clipart collection, with {{artworkCount}} illustrations to explore. Explore umbrellas and parasols in rainy-day scenes, beach settings, craft projects and unexpected everyday designs.",
+        "The gallery includes “Umbrella Cake Topper” and “Dancers with Paper Parasols” among its drawings. Plan a personal style board, a clothing vocabulary activity or a costume idea page, comparing the shapes and decorative details that suit your theme."
+      ],
+      "paragraphSourceSha256": "e1a6c3b2afc174fe6b598d82fde3ea5c245f11d67732d25981df269a9cfcaa41",
+      "paragraphEvidence": [
+        {
+          "id": "baby-shower-umbrella-cake-clipart",
+          "imageSha256": "b567e2ce5bd11102777982c7a76aeb9cc43c39fca688be9bdff8f04a34d06bc5"
+        },
+        {
+          "id": "festival-dancers-paper-parasols-clipart",
+          "imageSha256": "f8f8d050bc9f9dcce86f4aae04f5e7afa5aad4dc9956fc2148f4d08a1d11a98e"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.560Z"
     },
     "yarn": {
       "status": "checked-against-catalog",
@@ -335,7 +543,23 @@
           "id": "yarn-wrapped-park-bench-clipart",
           "imageSha256": "a27d1fe841cf5bb4985b839a7346b0fff90cd877f831a3dc49cc3693dfe0ba0d"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Yarn clipart collection, with {{artworkCount}} illustrations to explore. Explore yarn crafts and tools, from knitting, crochet and weaving to colorful skeins, fiber animals and decorative projects.",
+        "The gallery includes “Fluffy Rabbit and Yarn” and “Winding a Hank of Yarn” among its drawings. Plan a personal creative notebook, a story activity or an entertainment-themed craft, matching the subject and composition to your own idea."
+      ],
+      "paragraphSourceSha256": "98d47907746700784bdea2deec7f62486a5e69164ef036d705d27927692bd0f1",
+      "paragraphEvidence": [
+        {
+          "id": "angora-rabbit-grooming-wool-clipart",
+          "imageSha256": "5f7751c1e95d2b3f918f40e6caefff6f604986520622b29262f1ffb9af4d7e5f"
+        },
+        {
+          "id": "friends-hand-wind-yarn-hank-clipart",
+          "imageSha256": "f8d8c68e883631757a2e4e04605d96cc07a41bd1f62dd01c682248785b83904d"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "chef": {
       "status": "checked-against-catalog",
@@ -359,7 +583,23 @@
           "id": "wood-fired-oven-chef-clipart",
           "imageSha256": "9a3ad86080b05152f299ba3f174996e299878372c68b3b90e559219b0502d8f6"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Chef clipart collection, with {{artworkCount}} illustrations to explore. Explore cooks and chefs preparing meals, baking, serving food and working with ingredients and kitchen tools.",
+        "The gallery includes “Baker Scoring Bread Dough” and “Chef Baking Pizza in a Wood-Fired Oven” among its drawings. Illustrate a story prompt, a personal journal entry or a classroom discussion, choosing the action and arrangement that make your intended meaning clear."
+      ],
+      "paragraphSourceSha256": "c57e040f440d48139c3db6a3cc94725730d9a89373e4525fcc40be8622eae9ad",
+      "paragraphEvidence": [
+        {
+          "id": "artisan-bread-scoring-clipart",
+          "imageSha256": "94d00222e43db21101690e9497a117b6b9fd51acefab5286a3907d2429b7167e"
+        },
+        {
+          "id": "wood-fired-oven-chef-clipart",
+          "imageSha256": "9a3ad86080b05152f299ba3f174996e299878372c68b3b90e559219b0502d8f6"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "fireworks": {
       "status": "checked-against-catalog",
@@ -383,7 +623,23 @@
           "id": "waterfall-fireworks-curtain-clipart",
           "imageSha256": "e5f8d531e60b1450d1ed16011d3006cae8009a0df85b8f657999af6983667469"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Fireworks clipart collection, with {{artworkCount}} illustrations to explore. Find colorful firework bursts, festive decorations and scenes of people watching displays over water, landmarks and gathering places.",
+        "The gallery includes “Couple Watching Fireworks from a Balcony” and “Fireworks Tote Bag” among its drawings. Make a personal greeting, an event scrapbook page or a family activity, matching the illustration to the occasion and the space for your message."
+      ],
+      "paragraphSourceSha256": "9d00ac57d95f30661844bc97c8d1d3350587369705874b56aaf222b728105bcc",
+      "paragraphEvidence": [
+        {
+          "id": "balcony-firework-viewers-clipart",
+          "imageSha256": "029efe85ca1b4d9718a73ce52999393372d3e2ec4689de6f8758cbd7584a1178"
+        },
+        {
+          "id": "bw-firework-tote-black-and-white-clipart",
+          "imageSha256": "e480445dda0b61e1c5f64d01b9b03faa2662a5ab6597a816b7f44c452fd5ed29"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "ear": {
       "status": "checked-against-catalog",
@@ -407,7 +663,23 @@
           "id": "wired-earbud-fit-clipart",
           "imageSha256": "630ba8dbb09bd5567f84b2ac71e799133f1e0f0f343c9f600400de415b8ecfbb"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Ear clipart collection, with {{artworkCount}} illustrations to explore. Explore ear illustrations, listening gestures, earrings, protective equipment and a variety of in-ear devices.",
+        "The gallery includes “Ear with an Acoustic Trumpet” and “Deep Brown Ear Illustration” among its drawings. Choose an illustration for a body vocabulary activity, a personal study notebook or an illustrated discussion, matching the visible subject to the concept you want to explain."
+      ],
+      "paragraphSourceSha256": "317201452b74fb292b20d2e828ae8468cc7f6c4ae8c07bc0d2b3a9961ac21b48",
+      "paragraphEvidence": [
+        {
+          "id": "acoustic-ear-trumpet-black-and-white-clipart",
+          "imageSha256": "562ae9a65f670299c1d957599f362fa65cab2645463ed7927ab92475f34aa056"
+        },
+        {
+          "id": "deep-bowl-thin-rim-clipart",
+          "imageSha256": "89981bc1d7735e8a205d35b07790df60f3aa59650544fc216bb933b342c9bee3"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "quiet": {
       "status": "checked-against-catalog",
@@ -431,7 +703,23 @@
           "id": "turning-off-alarm-clock-clipart",
           "imageSha256": "bc5406a66c4f41d8092dd9fea0e6ba7bd7b77d13ec0d4286b875f851ccb5c940"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Quiet clipart collection, with {{artworkCount}} illustrations to explore. Find quiet signs, listening gestures, peaceful scenes and illustrations for reading or resting spaces.",
+        "The gallery includes “Adding Pads to Chair Legs” and “Older Man Reading with a Child” among its drawings. Create a classroom activity, a personal study page or a learning journal, choosing the illustration that supports the idea you want to explain."
+      ],
+      "paragraphSourceSha256": "10dc271bcdbcd81f3e7bf69a4de87e9408e5a3b0bf92bfa65967f15b5c1129cc",
+      "paragraphEvidence": [
+        {
+          "id": "adding-felt-to-chair-feet-clipart",
+          "imageSha256": "896dc2beb5da4b4fab6da3887bf779b1ba4bf632c082fef41117db0e5f5e57e5"
+        },
+        {
+          "id": "grandparent-child-quiet-reading-black-and-white-clipart",
+          "imageSha256": "46e55169f825bc9cacb9be5b2963d00a9c11d5df2d0ad27340f805537948e525"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "dinosaur": {
       "status": "checked-against-catalog",
@@ -455,7 +743,23 @@
           "id": "yutyrannus-shakes-snow-from-feathers-clipart",
           "imageSha256": "58901ee1a3bab18839a778e9a5c480b86f3dd22b47f6dcbcb65d29bfec7bd956"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Dinosaur clipart collection, with {{artworkCount}} illustrations to explore. Explore dinosaurs with feathers, horns, plates and long necks, plus fossil displays, playful characters and dinosaur crafts.",
+        "The gallery includes “Predatory Dinosaur on Rocks” and “Small Dinosaur Inspecting a Log” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "95a86c222603bc51a26a0ba826187d777be9de4e469e7e218695228205a485cb",
+      "paragraphEvidence": [
+        {
+          "id": "allosaurus-descends-rock-step-clipart",
+          "imageSha256": "b5edb88287f5826c50c68f701087024f406122ee395dc1a2ba4cc0fc42df7e89"
+        },
+        {
+          "id": "coelophysis-peers-into-hollow-log-clipart",
+          "imageSha256": "1b5cc1f98dad84ed4a0f3668970650311149ce17575543a33917d178faf82741"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "notebook": {
       "status": "checked-against-catalog",
@@ -479,7 +783,23 @@
           "id": "zippered-notebook-folio-clipart",
           "imageSha256": "9d68509270dd1802ff0f3252bb003d945f4df4f47297bf2ed161943344f3bfb1"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Notebook clipart collection, with {{artworkCount}} illustrations to explore. Explore notebooks for sketches, study, field observations and creative projects, with bindings, tools and everyday writing scenes.",
+        "The gallery includes “Accordion Landscape Sketchbook” and “Notebook Character with Pencil” among its drawings. Create a classroom activity, a personal study page or a learning journal, choosing the illustration that supports the idea you want to explain."
+      ],
+      "paragraphSourceSha256": "a94dd64661edb02598266a6af88187cb7cff48f1f92cdbfc1d84f35f27751664",
+      "paragraphEvidence": [
+        {
+          "id": "accordion-sketch-notebook-clipart",
+          "imageSha256": "c022be54a0ad49594d6b9fdf84f4f74a193ab7b66e8e5214c421c9a3b09536be"
+        },
+        {
+          "id": "notebook-cartoon-mascot-black-and-white-clipart",
+          "imageSha256": "40e3245e8ebbcb3c6e0bb7f370eb99d387b91783cca95af6e7cd96b0c2699a32"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "xylophone": {
       "status": "checked-against-catalog",
@@ -503,7 +823,23 @@
           "id": "xylophone-vocal-pitch-matching-black-and-white-clipart",
           "imageSha256": "094594234dcead4250bd5324225ebe66dc41f7fa02a4a9a3beee1001bb186e07"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Xylophone clipart collection, with {{artworkCount}} illustrations to explore. Explore xylophones and other bar percussion instruments in music lessons, performances, crafts and playful scenes.",
+        "The gallery includes “Wooden Bar Percussion Instrument” and “Older Man and Child Playing Music” among its drawings. Illustrate a personal music notebook, a rehearsal journal or a listening activity, matching the pictured instrument or performance theme to the music you are exploring."
+      ],
+      "paragraphSourceSha256": "41ad6b2d063b8981e3af7745ee703321724dbbeaa102496df64484ef447e58db",
+      "paragraphEvidence": [
+        {
+          "id": "bass-xylophone-low-register-clipart",
+          "imageSha256": "8e2a98e800b7939ad8e62802ff23e0bcbe01667189355741cebcb2060dc18f61"
+        },
+        {
+          "id": "grandfather-teaches-xylophone-clipart",
+          "imageSha256": "967fd7597a93fdf77a33198c36fd4511418470b2568bfa77c01d6a2e482a5565"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "library": {
       "status": "checked-against-catalog",
@@ -527,7 +863,23 @@
           "id": "walk-up-bookmobile-clipart",
           "imageSha256": "a7d293e7a207ce9636617929ce9ee2dc102b4f6f546b618327f18ab6d1e04d53"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Library clipart collection, with {{artworkCount}} illustrations to explore. Explore library spaces and services, from book displays and reading areas to community programs, archives and mobile collections.",
+        "The gallery includes “Library Search at an Accessible Desk” and “Storytime with a Felt Board” among its drawings. Create a classroom activity, a personal study page or a learning journal, choosing the illustration that supports the idea you want to explain."
+      ],
+      "paragraphSourceSha256": "c0ccf067e1075ae898ec2358f80920770217bca6a75630d88e7ba144d90a0e97",
+      "paragraphEvidence": [
+        {
+          "id": "accessible-catalog-terminal-clipart",
+          "imageSha256": "99351c3082803fbd338b8e8705d220790add6e40987071eebef80401912f441e"
+        },
+        {
+          "id": "felt-board-storytime-clipart",
+          "imageSha256": "dec7d211464de0586023add35c46aac47622d097cccec3670c9f0614a8c938be"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "sun": {
       "status": "checked-against-catalog",
@@ -551,7 +903,23 @@
           "id": "waving-sun-with-sunglasses-clipart",
           "imageSha256": "3d2e2b9d64c9c69dcc1a6afc92026720edb4119c7496b731cc536c8ee5718cee"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Sun clipart collection, with {{artworkCount}} illustrations to explore. Find smiling sun characters, warm landscapes, decorative sun motifs and illustrations inspired by the sun and sky.",
+        "The gallery includes “Artist Painting a Sun Plaque” and “Sun Character with Sunglasses” among its drawings. Build a nature observation page, an illustrated setting or a classroom activity around the form and atmosphere that suit your subject."
+      ],
+      "paragraphSourceSha256": "e2508372d64c3d4c53315abb68d773c8f15ab2819a7e7ad51de0606df3402211",
+      "paragraphEvidence": [
+        {
+          "id": "artist-painting-sun-plaque-clipart",
+          "imageSha256": "029667a888a4af2e8b8a3ae0bcc241266d7a0853bce2061d3045377e97f30fd0"
+        },
+        {
+          "id": "waving-sun-with-sunglasses-clipart",
+          "imageSha256": "3d2e2b9d64c9c69dcc1a6afc92026720edb4119c7496b731cc536c8ee5718cee"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "easter": {
       "status": "checked-against-catalog",
@@ -575,7 +943,23 @@
           "id": "wooden-easter-rattle-in-hand-black-and-white-clipart",
           "imageSha256": "52e899cfa912c0fae8bdde72f037bbe14298d17ea6cb461026588450806b0fae"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Easter clipart collection, with {{artworkCount}} illustrations to explore. Explore Easter eggs, spring flowers, celebration foods, religious symbols and playful seasonal scenes.",
+        "The gallery includes “Decorating an Easter Egg” and “Child Making a Bunny Garland” among its drawings. Make a personal greeting, an event scrapbook page or a family activity, matching the illustration to the occasion and the space for your message."
+      ],
+      "paragraphSourceSha256": "6f2b36c29982ff019a902a97334d331a70d410a336755ff54aeca21cd0d9f0a2",
+      "paragraphEvidence": [
+        {
+          "id": "artist-writes-ukrainian-pysanka-clipart",
+          "imageSha256": "379da7dcf52f54f7a35477179507313a92976fdb65eecda7c48617d3f4c89bc7"
+        },
+        {
+          "id": "child-threads-paper-bunny-garland-clipart",
+          "imageSha256": "144461c2a7bd8442e17d35e986629c5c065a11b6ab57e9f5ec57a532dafdc85a"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "ufo": {
       "status": "checked-against-catalog",
@@ -599,7 +983,23 @@
           "id": "windup-tin-ufo-toy-clipart",
           "imageSha256": "44dd08dacab0b2d374026ecd98597c9971a20e3221742f961bd4688ebf7d5846"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our UFO clipart collection, with {{artworkCount}} illustrations to explore. Explore imaginative flying saucers, spacecraft concepts, alien characters and UFO-themed toys and crafts.",
+        "The gallery includes “Alien Character Carrying a Gift” and “Wind-Up Flying-Saucer Toy” among its drawings. Use the artwork in a personal science notebook, a classroom discussion or an imagined exploration story, keeping illustrative concepts distinct from factual diagrams."
+      ],
+      "paragraphSourceSha256": "86858602ce9bef5bc53481c3012c303d8494a2f7a31c7ee1c7e9ce24da7d0529",
+      "paragraphEvidence": [
+        {
+          "id": "alien-bringing-gift-from-ufo-black-and-white-clipart",
+          "imageSha256": "260982ad185d06617fef654f206e01a38b282700b2eb79bf2a745aa1761615ac"
+        },
+        {
+          "id": "windup-tin-ufo-toy-clipart",
+          "imageSha256": "44dd08dacab0b2d374026ecd98597c9971a20e3221742f961bd4688ebf7d5846"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "doctor": {
       "status": "checked-against-catalog",
@@ -623,7 +1023,23 @@
           "id": "white-coat-pocket-still-life-clipart",
           "imageSha256": "334ebe0fd7dd9f6f7389b848b0eecf670c234b519b2fefcb4e5581012a856b53"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Doctor clipart collection, with {{artworkCount}} illustrations to explore. Explore doctors and clinicians in patient visits, medical workspaces, care activities and illustrations of medical tools.",
+        "The gallery includes “Clinician Checking Breathing Equipment” and “Doctor with a Folder” among its drawings. Illustrate a story prompt, a personal journal entry or a classroom discussion, choosing the action and arrangement that make your intended meaning clear."
+      ],
+      "paragraphSourceSha256": "854a5d0cedf36bb1fe9d3a032ed04390772935d225fb54bcbef7b03a1c76b65a",
+      "paragraphEvidence": [
+        {
+          "id": "anesthesia-equipment-check-clipart",
+          "imageSha256": "26386f6f17556444ccce10d5c4477a2b421f66289b8b70de49bdbec0b26c5b01"
+        },
+        {
+          "id": "family-physician-welcome-clipart",
+          "imageSha256": "5a49372538cd7e99d46f2acf249091b85790781dea8097e80bb295f5e6cae406"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "jellyfish": {
       "status": "checked-against-catalog",
@@ -647,7 +1063,23 @@
           "id": "wooden-jelly-pull-toy-clipart",
           "imageSha256": "cbb68e26475b863b914e40f51f87b3ddc6c1cb382c184ccb04b858cc443c7e0b"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Jellyfish clipart collection, with {{artworkCount}} illustrations to explore. Discover colorful jellyfish illustrations, underwater observation scenes, playful characters and jellyfish-inspired crafts.",
+        "The gallery includes “Person Watching Jellyfish in a Tank” and “Wooden Jellyfish Pull Toy” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "a1038ec4341b564c15dd6d86a9ce2b598f209b907d838e00426139155cbd4892",
+      "paragraphEvidence": [
+        {
+          "id": "aquarist-jelly-window-black-and-white-clipart",
+          "imageSha256": "bb13bb3e512af50c6b05191a92ccc77663735e06731773f2f48579ee5172829d"
+        },
+        {
+          "id": "wooden-jelly-pull-toy-clipart",
+          "imageSha256": "cbb68e26475b863b914e40f51f87b3ddc6c1cb382c184ccb04b858cc443c7e0b"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "house": {
       "status": "checked-against-catalog",
@@ -671,7 +1103,23 @@
           "id": "windmill-converted-home-clipart",
           "imageSha256": "40d8d4e65a75d60ce71e043bdb4fcbfae11e9a1dbe1203aee86362acefaf4100"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our House clipart collection, with {{artworkCount}} illustrations to explore. Explore homes of many shapes, from cozy cabins and townhouses to treehouses, houseboats and architectural drawings.",
+        "The gallery includes “A-Frame Cabin with a Lit Porch” and “Family at a House Entrance” among its drawings. Bring the illustrations into a personal travel journal, a place study or an imagined itinerary, choosing a viewpoint that supports the location you are describing."
+      ],
+      "paragraphSourceSha256": "7ae86cc06522c5ef30cb20c5a8b2bde4db1652e00c38bd0092407735b4f14f08",
+      "paragraphEvidence": [
+        {
+          "id": "a-frame-cabin-with-loft-window-clipart",
+          "imageSha256": "b4a2f187ffed082bc933f5ba639b533078a5e3f9b95b2929624c2c8862ac0d16"
+        },
+        {
+          "id": "family-moving-into-home-black-and-white-clipart",
+          "imageSha256": "344d4c436ea4fb7bfe691bb04b0e9d900efdc358d0aab8c99a227875749577a2"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "rose": {
       "status": "checked-against-catalog",
@@ -695,7 +1143,23 @@
           "id": "white-rambling-rose-fence-clipart",
           "imageSha256": "fbc86c188130fab501142d3e5435648faa3080bd9b5cb73b203e4fc9a3b7214a"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Rose clipart collection, with {{artworkCount}} illustrations to explore. Find roses in gardens, bouquets and creative projects, from delicate botanical stems to floral gifts and decorative accents.",
+        "The gallery includes “Rose Hips and Autumn Leaves” and “White Roses on a Fence” among its drawings. Build a plant observation page, a personal garden journal or a nature-themed greeting, comparing the visible plant details and arrangements before choosing your focal image."
+      ],
+      "paragraphSourceSha256": "0fa4ed2435b2e01243a5b873586000fae9662890a1dac1381a6bbeb5627b61cc",
+      "paragraphEvidence": [
+        {
+          "id": "autumn-rosehip-sprig-clipart",
+          "imageSha256": "10187c3df121780ae416715def5641407b1be088076bff81e6057787320b19e3"
+        },
+        {
+          "id": "white-rambling-rose-fence-clipart",
+          "imageSha256": "fbc86c188130fab501142d3e5435648faa3080bd9b5cb73b203e4fc9a3b7214a"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "megaphones": {
       "status": "checked-against-catalog",
@@ -719,7 +1183,23 @@
           "id": "wheelchair-event-announcer-clipart",
           "imageSha256": "9199446a6f37b5f07578a3e3c3cda9b94b31a6a16a004ff8f6b11e944e76f241"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Megaphones clipart collection, with {{artworkCount}} illustrations to explore. Explore megaphones and speaking cones in announcements, sports, community events and creative projects.",
+        "The gallery includes “Painting a Megaphone” and “Announcer with a Microphone” among its drawings. Illustrate a story prompt, a personal journal entry or a classroom discussion, choosing the action and arrangement that make your intended meaning clear."
+      ],
+      "paragraphSourceSha256": "0d72bf53de3b3f2ae5a758ea58e51cec0eeeb9f3659fcb3b0fb2ae697d8286b3",
+      "paragraphEvidence": [
+        {
+          "id": "artist-painting-megaphone-black-and-white-clipart",
+          "imageSha256": "15282dc7c53a67230257b84b1916e7ada8635ac051a79fb665a1920dbcf64e43"
+        },
+        {
+          "id": "festival-announcer-shoulder-megaphone-clipart",
+          "imageSha256": "632db76b8265cc3505be412ac5e1c70290fa0c20bea01ba04ae9b06d32a4c412"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "teacher": {
       "status": "checked-against-catalog",
@@ -743,7 +1223,23 @@
           "id": "woodwork-teacher-measuring-board-clipart",
           "imageSha256": "b5cc369ad6c85178f3ddf5f641ea98654eb79bdbae8ade4112900197c760a810"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Teacher clipart collection, with {{artworkCount}} illustrations to explore. Find teachers and learners sharing lessons in reading, science, art, music, sports and everyday skills.",
+        "The gallery includes “Learning with a Picture Card” and “Outdoor Counting Activity” among its drawings. Create a classroom activity, a personal study page or a learning journal, choosing the illustration that supports the idea you want to explain."
+      ],
+      "paragraphSourceSha256": "ef28e64f1ef61a66d836188342898e5a34cc79fa9e7490c31e1acf5153a49f64",
+      "paragraphEvidence": [
+        {
+          "id": "adult-literacy-teacher-wordless-card-clipart",
+          "imageSha256": "b54dae4fb2d48c9f8575d4a75edb6b68bad548b05c662cc1737eb89c2ae1e613"
+        },
+        {
+          "id": "outdoor-number-line-teacher-clipart",
+          "imageSha256": "ad177ca8a390d5e779bed20055ad34316b9ed8c68f6a5853221d79b7b350057a"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "unicorn": {
       "status": "checked-against-catalog",
@@ -767,7 +1263,23 @@
           "id": "woodland-fern-sniffer-clipart",
           "imageSha256": "2d85c5674bec23ee843f66649d8e939cd5cef3af221a16635cdbe0ea139dca83"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Unicorn clipart collection, with {{artworkCount}} illustrations to explore. Explore unicorns in playful and detailed illustrations, from starry galloping figures to toys, crafts and gentle storybook scenes.",
+        "The gallery includes “Astronaut Unicorn” and “Unicorn Beside a Fern” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "47c79f402d3fdfbfcb94b206f14443473d258263ebea734377e4bba54cb9ecca",
+      "paragraphEvidence": [
+        {
+          "id": "astronaut-unicorn-explorer-clipart",
+          "imageSha256": "fe736d6dbd1cad41c4066afbb8828118aa1798891d0690020c1e450277f15fad"
+        },
+        {
+          "id": "woodland-fern-sniffer-clipart",
+          "imageSha256": "2d85c5674bec23ee843f66649d8e939cd5cef3af221a16635cdbe0ea139dca83"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "eyes": {
       "status": "checked-against-catalog",
@@ -791,7 +1303,23 @@
           "id": "worker-adjusts-safety-goggles-clipart",
           "imageSha256": "39cbc6eb6153d3285ee7bd034105ab9e8784f8ec9f4a738954332fc11df209bf"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Eyes clipart collection, with {{artworkCount}} illustrations to explore. Discover eyes in expressive drawings, vision-themed scenes, creative projects and playful characters.",
+        "The gallery includes “Artist Painting an Eye” and “Sleepy Purple Cartoon Eyes” among its drawings. Choose an illustration for a body vocabulary activity, a personal study notebook or an illustrated discussion, matching the visible subject to the concept you want to explain."
+      ],
+      "paragraphSourceSha256": "e00c41fa367d81a200e27e35d0fe8e66b59fe1d67cae57f8afd930c5d9c9206f",
+      "paragraphEvidence": [
+        {
+          "id": "artist-paints-eye-portrait-clipart",
+          "imageSha256": "0cb8748dbc9ef7ec0767e53a89cc7e0e3ffead3772f9a3ccf16263dff2a9dd5c"
+        },
+        {
+          "id": "drowsy-heavy-eyelid-eyes-clipart",
+          "imageSha256": "f0b8d2b75f40e9963a9503ee2633a1a02bf3f26af873acce8236e921b56ab49e"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "zombie": {
       "status": "checked-against-catalog",
@@ -815,7 +1343,23 @@
           "id": "zombie-yoga-tree-balance-clipart",
           "imageSha256": "52b15843b16cf8dfcde873c943d38bfc7f67425841a0bd1b27a1702b182ab527"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Zombie clipart collection, with {{artworkCount}} illustrations to explore. Explore zombies in playful scenes, from music and crafts to gardening, sports and everyday adventures.",
+        "The gallery includes “Sleepy Zombie with an Alarm Clock” and “Zombie Balancing in a Yoga Pose” among its drawings. Plan a personal Halloween invitation, a story prompt or a seasonal classroom display, choosing the character and mood that fit your activity."
+      ],
+      "paragraphSourceSha256": "84df7e282ebf10320b4a8269527fb0bab2eb4c6441892b3e4dc3c869b3bc7027",
+      "paragraphEvidence": [
+        {
+          "id": "sleepy-zombie-alarm-clock-clipart",
+          "imageSha256": "f3e3f68f1920ae5bab78842ab4e0cda1089fea5e88d1b6a0890466cbcd9b0d06"
+        },
+        {
+          "id": "zombie-yoga-tree-balance-clipart",
+          "imageSha256": "52b15843b16cf8dfcde873c943d38bfc7f67425841a0bd1b27a1702b182ab527"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "frame": {
       "status": "checked-against-catalog",
@@ -839,7 +1383,23 @@
           "id": "walking-frame-mascot-black-and-white-clipart",
           "imageSha256": "eeb1be4ece97cf020e756c1baea41848f2556a5fac2a980f32a9594191edc1f6"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Picture Frame clipart collection, with {{artworkCount}} illustrations to explore. Explore single picture frames, decorative borders and framing activities, from ornate ovals to modern display frames.",
+        "The gallery includes “Acrylic Display Frame” and “Cleaning a Picture Frame” among its drawings. Arrange the artwork around your own text in a personal page layout, an invitation or a classroom display, choosing shapes that frame rather than crowd the main message."
+      ],
+      "paragraphSourceSha256": "88cbc20ddfc93565e01fd6cd3dc8a464cf9b3acb7440dc076e895c245399a7b2",
+      "paragraphEvidence": [
+        {
+          "id": "acrylic-standoff-display-frame-clipart",
+          "imageSha256": "083c6344f657b2875fbb5ffe579c20fa38b3150b8397247dede820ea4511e1eb"
+        },
+        {
+          "id": "cleaning-frame-glazing-clipart",
+          "imageSha256": "ec79d97b326b0d1b68b021bccaf7ec6bb93b2a2c9bdc141bbbe0b18af7ad825f"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "frames": {
       "status": "checked-against-catalog",
@@ -863,7 +1423,23 @@
           "id": "vertical-oval-frame-chain-clipart",
           "imageSha256": "329935fa8d2c554dcebcde9995ad2f9d41bb151d7e408e9f44e87f8fa3a5ebac"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Photo Collage Frames clipart collection, with {{artworkCount}} illustrations to explore. Browse multi-opening frames and photo displays, from folding triptychs and gallery arrangements to keepsake collages.",
+        "The gallery includes “Six-Frame Accordion Display” and “Packing a Stack of Frames” among its drawings. Arrange the artwork around your own text in a personal page layout, an invitation or a classroom display, choosing shapes that frame rather than crowd the main message."
+      ],
+      "paragraphSourceSha256": "b4a68be79732d20f326e8c47a2c304e81eb85401e13162669dd51e6e3ccbd643",
+      "paragraphEvidence": [
+        {
+          "id": "accordion-six-frame-book-clipart",
+          "imageSha256": "ea20eeff4279821d758327b66d58b3a2239b5ee95a81ddd35a2feca9fed3250b"
+        },
+        {
+          "id": "interleaving-packed-frame-stack-black-and-white-clipart",
+          "imageSha256": "d3d819de59f3746733d6ea2b6677787cffe62f9d4a6fc9a85203870e66fb839a"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "wedding": {
       "status": "checked-against-catalog",
@@ -887,7 +1463,23 @@
           "id": "wedding-ring-exchange-clipart",
           "imageSha256": "44801f523e187ab6b58130a8330fd2e4b1d5d0058dfd187bfecad25313b2117e"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Wedding clipart collection, with {{artworkCount}} illustrations to explore. Explore wedding-day details, from gowns and bouquets to ceremony settings, reception decorations and shared celebrations.",
+        "The gallery includes “Wedding Gown on a Mannequin” and “Bride in a White Robe and Hood” among its drawings. Make a personal greeting, an event scrapbook page or a family activity, matching the illustration to the occasion and the space for your message."
+      ],
+      "paragraphSourceSha256": "13a28c46951a8eab465933bd559fd21ae78ac188d6e6d21a86edde141bdb9d72",
+      "paragraphEvidence": [
+        {
+          "id": "a-line-bridal-gown-mannequin-clipart",
+          "imageSha256": "04896fb209fd140eafe427a0593fd64e0fe640bc8e321dea571f9d03b0706fae"
+        },
+        {
+          "id": "japanese-shiromuku-bride-clipart",
+          "imageSha256": "a664a8918ce94442528416c9651ba404b2efffe995220159a9175bca2936f166"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "marriage": {
       "status": "checked-against-catalog",
@@ -911,7 +1503,23 @@
           "id": "two-mugs-and-shared-crossword-clipart",
           "imageSha256": "4e66bf6d5a0f13438960792ba79e8d00e6924387b22c6b4eb01915c1155dbe7d"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Marriage clipart collection, with {{artworkCount}} illustrations to explore. Explore shared moments and everyday activities, from cooking and gardening together to keepsakes, hobbies and quiet time.",
+        "The gallery includes “Couple Looking through a Keepsake Box” and “Two Mugs and a Crossword” among its drawings. Make a personal greeting, an event scrapbook page or a family activity, matching the illustration to the occasion and the space for your message."
+      ],
+      "paragraphSourceSha256": "ef46e1acdc6cbc7e51db338f6cab8d4bb7ff807ed2fe7e84e4b1365f498f4460",
+      "paragraphEvidence": [
+        {
+          "id": "anniversary-memory-box-together-clipart",
+          "imageSha256": "6f40f748554495fc0d522c678991691be5b891d68296a97814eebdb5a119957e"
+        },
+        {
+          "id": "two-mugs-and-shared-crossword-clipart",
+          "imageSha256": "4e66bf6d5a0f13438960792ba79e8d00e6924387b22c6b4eb01915c1155dbe7d"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "september": {
       "status": "checked-against-catalog",
@@ -935,7 +1543,23 @@
           "id": "writing-month-with-dip-pen-black-and-white-clipart",
           "imageSha256": "81c28c69d7cf1de13a1cc1e690880d1009175af6e929eac42d3c3bc2a7a3afb8"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our September clipart collection, with {{artworkCount}} illustrations to explore. Celebrate September with autumn leaves, garden harvests, school scenes and decorative month lettering.",
+        "The gallery includes “Acorn Bell Wind Chime” and “Writing September with a Dip Pen” among its drawings. Build a seasonal journal page, a harvest activity or a personal gathering invitation around the food, plant or scene that matches your theme."
+      ],
+      "paragraphSourceSha256": "bf9e20a6678468e62b955d7e93d5a905ae28a4bc4743f2d2e8bcbf576eceee90",
+      "paragraphEvidence": [
+        {
+          "id": "acorn-and-bell-wind-chime-black-and-white-clipart",
+          "imageSha256": "b9172f5d30e19b5ed0114e98b675cf456802501d9d89a5cb09bc7401efde199c"
+        },
+        {
+          "id": "writing-month-with-dip-pen-black-and-white-clipart",
+          "imageSha256": "81c28c69d7cf1de13a1cc1e690880d1009175af6e929eac42d3c3bc2a7a3afb8"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "underwear": {
       "status": "checked-against-catalog",
@@ -959,7 +1583,23 @@
           "id": "washing-machine-underwear-load-clipart",
           "imageSha256": "ea710db13632b65593292d43a9d4948237680f48ae627598bcf8e0499b0360c5"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Underwear clipart collection, with {{artworkCount}} illustrations to explore. Browse everyday undergarments, sleepwear and laundry scenes, including illustrated clothing styles and care activities.",
+        "The gallery includes “Purple Briefs with Dark Panel” and “Laundry Basket beside a Washer” among its drawings. Plan a personal style board, a clothing vocabulary activity or a costume idea page, comparing the shapes and decorative details that suit your theme."
+      ],
+      "paragraphSourceSha256": "f1d6f74c9edc53e3347ec6a06ace60607542356ae0942c3e41e5113db7a2860f",
+      "paragraphEvidence": [
+        {
+          "id": "absorbent-underwear-inner-panel-clipart",
+          "imageSha256": "185eae4ba8b847545baa9610189c696831ce3ffcd4f8655e8249997331d80b15"
+        },
+        {
+          "id": "washing-machine-underwear-load-clipart",
+          "imageSha256": "ea710db13632b65593292d43a9d4948237680f48ae627598bcf8e0499b0360c5"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "bundle": {
       "status": "checked-against-catalog",
@@ -983,7 +1623,23 @@
           "id": "woodland-friends-bundle-clipart",
           "imageSha256": "a9f9871fa9bfb592752b29e9577c4d40f56447ec9bc3350d4a63e049a69eeda9"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Bundles clipart collection, with {{artworkCount}} illustrations to explore. Discover illustrated groupings of gifts, craft supplies, seasonal harvests and everyday objects.",
+        "The gallery includes “Autumn Harvest Basket” and “Fox and Hedgehog by a Log” among its drawings. Arrange the artwork around your own text in a personal page layout, an invitation or a classroom display, choosing shapes that frame rather than crowd the main message."
+      ],
+      "paragraphSourceSha256": "a1096c8a30b412c783b2e22c5f0820ab6760bfce2309736b03d35b8b83820819",
+      "paragraphEvidence": [
+        {
+          "id": "autumn-harvest-bundle-clipart",
+          "imageSha256": "7326b27042c5c129b2881b99f8478f48b8ce383b8ebf274f1eef6bdb095d34f2"
+        },
+        {
+          "id": "woodland-friends-bundle-clipart",
+          "imageSha256": "a9f9871fa9bfb592752b29e9577c4d40f56447ec9bc3350d4a63e049a69eeda9"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "cartoon": {
       "status": "checked-against-catalog",
@@ -1007,7 +1663,23 @@
           "id": "worm-explorer-watering-can-clipart",
           "imageSha256": "72204d0e390667001f868a0bec2149ea626f41e92396373e6833e9480721d83f"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Cartoon clipart collection, with {{artworkCount}} illustrations to explore. Meet playful cartoon animals, objects and fantasy characters in imaginative everyday scenes.",
+        "The gallery includes “Alpaca Pulling a Toy Train” and “Hedgehog Making Clay Stars” among its drawings. Plan a personal creative notebook, a story activity or an entertainment-themed craft, matching the subject and composition to your own idea."
+      ],
+      "paragraphSourceSha256": "4d763061bc3c42d9558e389ac64fab4f0f0dc578f1f9e3745cb0502a28a82bfd",
+      "paragraphEvidence": [
+        {
+          "id": "alpaca-wind-up-train-clipart",
+          "imageSha256": "0009fc3a7fa6fb5ce15a5624a34af50e617b70e7138d910046cd88b5ea8d72b9"
+        },
+        {
+          "id": "hedgehog-clay-stars-clipart",
+          "imageSha256": "aaef18da668440cc360ddcc9b7782ea377c57d854ed9e60f961bf27d316fc796"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "personal": {
       "status": "checked-against-catalog",
@@ -1031,7 +1703,23 @@
           "id": "writing-in-a-personal-journal-clipart",
           "imageSha256": "1d27bf2fb788b3c43e2e86e69470015f7aef4f56ee7b5cf5066078abf9db167c"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Personal Activities clipart collection, with {{artworkCount}} illustrations to explore. Find illustrations of personal routines, hobbies, keepsakes and everyday belongings.",
+        "The gallery includes “Adjusting a Wristwatch” and “Sewing a Shirt Button” among its drawings. Illustrate a story prompt, a personal journal entry or a classroom discussion, choosing the action and arrangement that make your intended meaning clear."
+      ],
+      "paragraphSourceSha256": "932a6fcad22d85ab26cf262715e4d9e9a7e06067d2cbac1861f2b7b1b0c895e8",
+      "paragraphEvidence": [
+        {
+          "id": "adjusting-personal-wristwatch-black-and-white-clipart",
+          "imageSha256": "089813a6fe3e232bb338c757c7485add8bc5b5618f89df7d7d70b9d61abb0d65"
+        },
+        {
+          "id": "mending-a-shirt-button-clipart",
+          "imageSha256": "11b1393d71dbee716287874058b77d97f36a64c2fe1c2b13319fd7f46711a1a4"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "ed138": {
       "status": "checked-against-catalog",
@@ -1055,7 +1743,23 @@
           "id": "young-stargazer-ed138-telescope-clipart",
           "imageSha256": "156a14efe295bc8b2fa48e6b25768b69561bc7ebde7ea2089c624910c1f018da"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our ED138 clipart collection, with {{artworkCount}} illustrations to explore. Explore imagined world designs labeled ED138 in astronomy-themed illustrations, models, crafts and playful characters.",
+        "The gallery includes “Discussing a World Model” and “Child Looking through a Telescope” among its drawings. Use the artwork in a personal science notebook, a classroom discussion or an imagined exploration story, keeping illustrative concepts distinct from factual diagrams."
+      ],
+      "paragraphSourceSha256": "5123961ef120c7ba4d99ce668042a67b80db032b916ddbeccee47617ff827d99",
+      "paragraphEvidence": [
+        {
+          "id": "accessible-ed138-astronomy-club-black-and-white-clipart",
+          "imageSha256": "9924e27c2227f1175b82d5748c433e079397521a2e39548735990d0c835c590d"
+        },
+        {
+          "id": "young-stargazer-ed138-telescope-clipart",
+          "imageSha256": "156a14efe295bc8b2fa48e6b25768b69561bc7ebde7ea2089c624910c1f018da"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "cricut": {
       "status": "checked-against-catalog",
@@ -1079,7 +1783,23 @@
           "id": "woven-paper-basket-clipart",
           "imageSha256": "ba6d387c02851727b903f411c46e53e2ff35891c53fd7607fecdbf5cbc75426c"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Craft Cutting Projects clipart collection, with {{artworkCount}} illustrations to explore. Explore illustrated craft projects and tools, including paper cutting, vinyl decals and heat-press scenes.",
+        "The gallery includes “Applying a Leaf Decal to a Bottle” and “Colorful Craft Tool Organizer” among its drawings. Explore the lettering or making theme in a personal design notebook, an alphabet activity or a creative practice page, choosing details that complement your own words."
+      ],
+      "paragraphSourceSha256": "55186053c6ad9435dffa949dce33b91d6168e1ffd4371f4064ddd09031ef453e",
+      "paragraphEvidence": [
+        {
+          "id": "applying-bottle-vinyl-decal-clipart",
+          "imageSha256": "e21a20881ebfbc25300355c431f6bfb9a635ba69fe0a9f5aa94f24fe77184897"
+        },
+        {
+          "id": "craft-tool-caddy-clipart",
+          "imageSha256": "8cd859b09d92f716bcae1230bf36f378bdcdfb03df7237a7d0bffeee3d1c00ee"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "coreldraw": {
       "status": "checked-against-catalog",
@@ -1103,7 +1823,23 @@
           "id": "vector-trace-rabbit-clipart",
           "imageSha256": "9cc063bff4285c34e618de9eb3fa320256b150ebba7b823b077047da42939931"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Graphic Design Tools clipart collection, with {{artworkCount}} illustrations to explore. Explore illustrations of digital design tools, curved paths, color palettes, layouts and creative workstations.",
+        "The gallery includes “Pen Nib and Curved Path” and “Circle-to-Square Shape Sequence” among its drawings. Explore the lettering or making theme in a personal design notebook, an alphabet activity or a creative practice page, choosing details that complement your own words."
+      ],
+      "paragraphSourceSha256": "5ba6c224553f33fefdf6ca0cdd07725a39139640893d8a399441758cd6131d27",
+      "paragraphEvidence": [
+        {
+          "id": "bezier-pen-curve-clipart",
+          "imageSha256": "324df9ddd8e559d3c1a2b266718fe6fef887acdf6e1135324427be6c010c19f5"
+        },
+        {
+          "id": "circle-square-blend-clipart",
+          "imageSha256": "527aa33af3d4cef955f1e4a6b81769fae1770023c0bc8e3af4407b17d9f79f1a"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.561Z"
     },
     "commercial": {
       "status": "checked-against-catalog",
@@ -1127,7 +1863,23 @@
           "id": "workshop-wheel-balancer-black-and-white-clipart",
           "imageSha256": "d8c9fe14146c684bc0dcf8d903650776945fd9a3321baff89cb2bd87c54eeeac"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Business and Commerce clipart collection, with {{artworkCount}} illustrations to explore. Explore illustrations of shops, services, workspaces, equipment and everyday business activities.",
+        "The gallery includes “Refrigerator Demonstration” and “Online Shop and Parcel” among its drawings. Use the drawings in a financial literacy activity, a personal planning page or an illustrated discussion; the artwork supplies visual context for your own explanation."
+      ],
+      "paragraphSourceSha256": "6333c8f85f5b213120b52a3914f7c0d55b8a783409173fb193672b8967f65931",
+      "paragraphEvidence": [
+        {
+          "id": "appliance-fridge-demonstration-clipart",
+          "imageSha256": "5fffa2a145dcf376f545c8f37b01f6929e3407e9540258f8746d0b7ad86543a3"
+        },
+        {
+          "id": "online-shop-laptop-and-order-clipart",
+          "imageSha256": "17e043887933b86d31859ff82057b047598a397cdddbdcd0ea48a83019cb5702"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.562Z"
     },
     "ganesh": {
       "status": "checked-against-catalog",
@@ -1151,7 +1903,23 @@
           "id": "yoga-ganapati-meditation-clipart",
           "imageSha256": "8628bf4aacbd0d8a99ec4beee2bdab78a8b0c8a31049f9ccee862ca0a6d2ee5f"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Ganesha clipart collection, with {{artworkCount}} illustrations to explore. Explore illustrations of Ganesha, devotional settings, festival decorations and creative activities.",
+        "The gallery includes “Young Ganesha Holding Fruit” and “Ganesha Writing beside a Sage” among its drawings. Choose an illustration for a personal devotional page, a family celebration keepsake or a cultural learning activity, using your own text to explain its meaning respectfully."
+      ],
+      "paragraphSourceSha256": "f9800447ff5ecc2af27c2e4db16f8dfc7980c865c276028c23bb71923418cb23",
+      "paragraphEvidence": [
+        {
+          "id": "bala-ganapati-fruits-clipart",
+          "imageSha256": "425afa79592723dbbf3454b61a98c55b40fd95eb154ebe1d746d123f653ba029"
+        },
+        {
+          "id": "ganesha-scribes-with-vyasa-clipart",
+          "imageSha256": "014d579d5c75cdb6e50253276a3ee08ef7df90034807b01f0e1ad33bd66b7cc2"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.562Z"
     },
     "jesus": {
       "status": "checked-against-catalog",
@@ -1175,7 +1943,23 @@
           "id": "young-jesus-in-temple-clipart",
           "imageSha256": "fd75d635f6cad5908c8673620ba2f889368981a1c8a706c8d377d23d1b65ec17"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Jesus clipart collection, with {{artworkCount}} illustrations to explore. Explore illustrated scenes of Jesus, from the Nativity and teachings to moments of compassion and prayer.",
+        "The gallery includes “Artist Painting a Portrait of Jesus” and “Young Jesus Reading a Scroll” among its drawings. Choose an illustration for a personal devotional page, a family celebration keepsake or a cultural learning activity, using your own text to explain its meaning respectfully."
+      ],
+      "paragraphSourceSha256": "5945022017272d7b2cdd81fd1c19131210e83e77662dcbb472b46acc889ceaf8",
+      "paragraphEvidence": [
+        {
+          "id": "artist-painting-jesus-portrait-black-and-white-clipart",
+          "imageSha256": "a7ee18832fac5758c2ff424e900dd866ffa24ab182cba066a43ff6433f91a269"
+        },
+        {
+          "id": "young-jesus-in-temple-clipart",
+          "imageSha256": "fd75d635f6cad5908c8673620ba2f889368981a1c8a706c8d377d23d1b65ec17"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.562Z"
     },
     "mundan": {
       "status": "checked-against-catalog",
@@ -1199,7 +1983,23 @@
           "id": "toddler-touching-smooth-scalp-clipart",
           "imageSha256": "b2322ec272a200cf130e5e93eb347a798c86a11b4bcc8a064fa6d6d34e724cd6"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Mundan clipart collection, with {{artworkCount}} illustrations to explore. Explore illustrations of a child’s first haircut ceremony, family moments, ceremonial clothing and keepsakes.",
+        "The gallery includes “Photographing a Child after a Haircut” and “Mother and Child Praying Together” among its drawings. Choose an illustration for a personal devotional page, a family celebration keepsake or a cultural learning activity, using your own text to explain its meaning respectfully."
+      ],
+      "paragraphSourceSha256": "de2d44be61fc6274bafc29429575826db9b87b07c18432e1b3dd77726413a238",
+      "paragraphEvidence": [
+        {
+          "id": "aunt-photographing-mundan-family-black-and-white-clipart",
+          "imageSha256": "195f22d7f21b5a27f2eff716752c57d5acc06759cbc448e0554ef5a80bf7f112"
+        },
+        {
+          "id": "mother-and-child-prayer-after-mundan-clipart",
+          "imageSha256": "c8be82c62e308030028bd01eb4cb650cb9157dd8fbdc266b9d2c69d92f3e4526"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.562Z"
     },
     "upanayanam": {
       "status": "checked-against-catalog",
@@ -1223,7 +2023,23 @@
           "id": "thread-knot-in-brass-dish-clipart",
           "imageSha256": "9f053921b3751d08c8b329e2bae4234e77d19c77f34aa2ec8fe20824502f6989"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Upanayanam clipart collection, with {{artworkCount}} illustrations to explore. Explore illustrations of the Upanayanam ceremony, including sacred threads, family gatherings and traditional learning.",
+        "The gallery includes “Child Carrying a Brass Bowl” and “Sacred Thread in a Brass Dish” among its drawings. Choose an illustration for a personal devotional page, a family celebration keepsake or a cultural learning activity, using your own text to explain its meaning respectfully."
+      ],
+      "paragraphSourceSha256": "6a5dc57703c19f14580ef0e52d5358e6a5ca90dc96436d5e3c81185bcd1c4750",
+      "paragraphEvidence": [
+        {
+          "id": "boy-carrying-brass-alms-bowl-clipart",
+          "imageSha256": "1dd3cbfbd279909989ab0f695d5791a3a6a76ead2d684ae4e192dd6474367244"
+        },
+        {
+          "id": "thread-knot-in-brass-dish-clipart",
+          "imageSha256": "9f053921b3751d08c8b329e2bae4234e77d19c77f34aa2ec8fe20824502f6989"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.562Z"
     },
     "cloud": {
       "status": "checked-against-catalog",
@@ -1247,7 +2063,23 @@
           "id": "cloud-outline-wind",
           "imageSha256": "380d936c2eef6642ecc183aebbe3312eb3169e89712bbb9f0b025c97c14c4ec2"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Cloud clipart collection, with {{artworkCount}} illustrations to explore. Explore clouds in weather scenes, soft painted textures, character designs and black-and-white outlines.",
+        "The gallery includes “White Cumulus Cloud” and “Smiling Rain Cloud and Flowers” among its drawings. Build a nature observation page, an illustrated setting or a classroom activity around the form and atmosphere that suit your subject."
+      ],
+      "paragraphSourceSha256": "7336b8ae85ab950e990699da1654c5ec67df752a4cbb1efa0d1f27b5530f832a",
+      "paragraphEvidence": [
+        {
+          "id": "cloud-fair-weather",
+          "imageSha256": "45df8958b81d2a04f82b73bfeff8e2d2370784a431fbb8b9755ad284444c3fc3"
+        },
+        {
+          "id": "cloud-cloud-garden",
+          "imageSha256": "1dd6e62e0dfc876879d3121c81e385cd0d50e67bbb6e416d0a21d9b307cbb226"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.562Z"
     }
   }
 }

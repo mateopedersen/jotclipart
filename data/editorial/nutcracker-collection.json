@@ -23,7 +23,23 @@
           "id": "nutcracker-outline-paper-card",
           "imageSha256": "ea90d38446fb2e4d61813f0d6093568d6a20ca92b53cf1b7cc41c05c557c417d"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Nutcracker clipart collection, with {{artworkCount}} illustrations to explore. Painted wooden nutcracker figures, ballet-story scenes and practical nut-cracking tools. Browse festive wreaths, ornaments, music boxes and paper crafts, alongside workshop activities and six detailed black-and-white drawings.",
+        "The gallery includes “Crowned Wooden King Nutcracker” and “Nutcracker and Mouse King Puppet Theater” among its drawings. Choose a focal image for a personal seasonal card, a winter story page or a family craft, leaving room for your own message."
+      ],
+      "paragraphSourceSha256": "918707bcd7c30ba029503fa3b70b37c361ef03d93eec395d7fa7e464bef79261",
+      "paragraphEvidence": [
+        {
+          "id": "nutcracker-crowned-walnut-king",
+          "imageSha256": "256f508836aaf173c37e3deb2d306bd0144896d0455f029baa136037018c99e6"
+        },
+        {
+          "id": "nutcracker-miniature-story-stage",
+          "imageSha256": "e3a2935bbc5983e843ea9e271f6ae7363e977e9bc685b932aecc11e9d7ad0c86"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.550Z"
     }
   }
 }

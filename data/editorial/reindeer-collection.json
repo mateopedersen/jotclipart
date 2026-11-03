@@ -23,7 +23,23 @@
           "id": "reindeer-outline-star-frame",
           "imageSha256": "0b445ba9cc8c72876fa4ab055fdddc5fce787476b243cf12483dfc480539da42"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Reindeer clipart collection, with {{artworkCount}} illustrations to explore. Playful Christmas reindeer with scarves, bells, gifts and winter adventures. Browse distinct cartoon characters, festive lettering and crafted decorations, alongside four natural wildlife illustrations and four independent black-and-white coloring scenes.",
+        "The gallery includes “Reindeer Prancing in a Knitted Scarf” and “Reindeer with an Empty Star Frame Outline” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "09ea77cba0cd4e7f5e8de5772168c90ed042d71ebdf756cdcdccd2c16dabe64e",
+      "paragraphEvidence": [
+        {
+          "id": "reindeer-scarf-prance",
+          "imageSha256": "9803a260679e1714c86bd30f37c42f891c9459b69da4198461a38cb8a05aa3dd"
+        },
+        {
+          "id": "reindeer-outline-star-frame",
+          "imageSha256": "0b445ba9cc8c72876fa4ab055fdddc5fce787476b243cf12483dfc480539da42"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z"
     }
   }
 }

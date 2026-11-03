@@ -23,7 +23,23 @@
           "id": "snowman-outline-snowman-puzzle",
           "imageSha256": "28c95e5ee0eb3f40f4f02ac2e3856ba0c372c8923469136513138fc6ccefcc05"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Snowman clipart collection, with {{artworkCount}} illustrations to explore. Cheerful snowmen reading, skating, sharing gifts and enjoying winter adventures. Explore different cartoon faces and outfits, felt, yarn and paper decorations, two seasonal greetings and four independent black-and-white coloring scenes.",
+        "The gallery includes “Snowman Waving a Red Mitten” and “Snowmen Making a Snowflake Puzzle Outline” among its drawings. Choose a focal image for a personal seasonal card, a winter story page or a family craft, leaving room for your own message."
+      ],
+      "paragraphSourceSha256": "b1a52d66ab5bc5f8fb5f6e07eff99972a758efc9999d07b809a7f32cb0f73554",
+      "paragraphEvidence": [
+        {
+          "id": "snowman-waving-mitten",
+          "imageSha256": "bbbea741bcf6f268408421c62bf9fefc244b47546886062801e06ae5100e1784"
+        },
+        {
+          "id": "snowman-outline-snowman-puzzle",
+          "imageSha256": "28c95e5ee0eb3f40f4f02ac2e3856ba0c372c8923469136513138fc6ccefcc05"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z"
     }
   }
 }

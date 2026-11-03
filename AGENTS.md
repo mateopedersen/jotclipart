@@ -1,3 +1,17 @@
+# Collection introductions — latest owner direction, 2026-11-03
+
+All current and future UltraClipart subject pages need two or three short,
+distinct English paragraphs introducing their actual collection. Welcome the
+visitor, show the automatic current artwork count, describe specific available
+variety and suggest relevant personal or educational uses. Keep each topic's
+writing grounded in its accepted summary and source-bound catalog examples.
+Use `paragraphs` in its existing editorial collection record and the shared
+`CollectionIntroduction` renderer; never hard-code counts or edit built pages.
+This latest request supersedes the older one-paragraph limit below. Preserve the
+concise summary used for search metadata. Missing/stale expanded copy blocks
+new imports and publication. The draft helper never approves unseen artwork or
+replaces individual image reviews. See `docs/content/collection-introductions.md`.
+
 # Protected publisher — owner instruction, 2026-10-30
 
 Preserve this accepted publisher's source/Git history, catalog, source-bound

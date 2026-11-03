@@ -23,7 +23,23 @@
           "id": "gingerbread-outline-gingerbread-banner",
           "imageSha256": "5a8212eb770325f1fe1717be7cc63ae6075a3b16a3620b30759cf218d52e6b6c"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Gingerbread clipart collection, with {{artworkCount}} illustrations to explore. Cheerful gingerbread characters, iced animal cookies and fanciful biscuit buildings. Explore distinct cookie faces and outfits, decorating scenes, festive objects, a seasonal greeting and four independent black-and-white coloring compositions.",
+        "The gallery includes “Gingerbread Walker with a Candy Cane” and “Gingerbread Pair Holding a Blank Banner Outline” among its drawings. Illustrate a personal recipe page, a food vocabulary activity or a kitchen journal, selecting a view that makes your chosen ingredient or dish easy to recognize."
+      ],
+      "paragraphSourceSha256": "4fc1902dff3187523268370184a536cb9a14c1eace7efa1af7a700bf9e6a36fa",
+      "paragraphEvidence": [
+        {
+          "id": "gingerbread-candy-cane-walk",
+          "imageSha256": "dfee0e26475e6d4898d0b39824263059b8eb5c9ef8ee877edbd0879eaa7c72cc"
+        },
+        {
+          "id": "gingerbread-outline-gingerbread-banner",
+          "imageSha256": "5a8212eb770325f1fe1717be7cc63ae6075a3b16a3620b30759cf218d52e6b6c"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.549Z"
     }
   }
 }

@@ -19,7 +19,23 @@
           "id": "06-003",
           "imageSha256": "169b636ad12a24e71a5d93ce051f9f7efd13388425cef1a0c4d201296f923e40"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our 06 clipart collection, with {{artworkCount}} illustrations to explore. Explore 06 designs made from rope and paper, with floral details and everyday objects.",
+        "The gallery includes “06 with a Green Pencil” and “06 Made from Rope” among its drawings. Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project."
+      ],
+      "paragraphSourceSha256": "4cd491acc77ec3aca1ce16156dbb248af86bd5a0790e2ca2c093035cf200a04c",
+      "paragraphEvidence": [
+        {
+          "id": "06-001",
+          "imageSha256": "566bf3732ad9d0d6962b1a65a985802c95fec718db94e709d8fafc97a0e40b70"
+        },
+        {
+          "id": "06-002",
+          "imageSha256": "949e2bb48ab087e6f1f882c58ff7ad17b7b8c27202aea0d53e91c98b264b721e"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.563Z"
     },
     "alpaca": {
       "status": "checked-against-catalog",
@@ -43,7 +59,23 @@
           "id": "alpaca-hugging-a-snowman-clipart",
           "imageSha256": "6a6285d62bfd9a0496926b8791c1c9ca516d68ff634ed369134edefc01c0c94d"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Alpaca clipart collection, with {{artworkCount}} illustrations to explore. Soft alpacas rest, nibble apple slices and play the cello, with a winter character hugging a snowman.",
+        "The gallery includes “Resting Cream Alpaca” and “Alpaca Hugging a Snowman” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "9d42f07aeefffd59cdd6686f4ea07f76b3d9c7f8a54e2eac7a8cc0ae45b8b3de",
+      "paragraphEvidence": [
+        {
+          "id": "resting-cream-alpaca-clipart",
+          "imageSha256": "f70a92df3efe00b1911a8ea0ae67ce3dbadf877be4a7e0a89e9390e3b330fe27"
+        },
+        {
+          "id": "alpaca-hugging-a-snowman-clipart",
+          "imageSha256": "6a6285d62bfd9a0496926b8791c1c9ca516d68ff634ed369134edefc01c0c94d"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.563Z"
     },
     "ant": {
       "status": "checked-against-catalog",
@@ -67,7 +99,23 @@
           "id": "ant-tying-a-gift-clipart",
           "imageSha256": "3beb84f59979aaaa512f32837d57e7049117e4ee6fe3c9692f486d3e43e627a0"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Ant clipart collection, with {{artworkCount}} illustrations to explore. Ants carry a larva, tend a green aphid and take part in little adventures with a blue marble and a wrapped gift.",
+        "The gallery includes “Ant Carrying a Larva” and “Ant and a Green Aphid” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "ef870389c74b3de415c362976edcac2e812606ebdb99210a41dc24e4d16a65d6",
+      "paragraphEvidence": [
+        {
+          "id": "ant-carrying-a-larva-clipart",
+          "imageSha256": "c80c1fe9b5499a61568d02b8ddbb81264fc82aa9a38cb75d47dc285010ac6c13"
+        },
+        {
+          "id": "ant-and-a-green-aphid-clipart",
+          "imageSha256": "6d4a8c57484ed3cba01dd09e779ce083c42275624951504e009bbfd1348adb98"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.563Z"
     },
     "armadillo": {
       "status": "checked-against-catalog",
@@ -91,7 +139,23 @@
           "id": "armadillo-arranging-a-flower-bouquet-clipart",
           "imageSha256": "d5c6134d24087cb7c8f3e75557a58ea777e81b66a778b88d16022156b508a903"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Armadillo clipart collection, with {{artworkCount}} illustrations to explore. An armadillo walks in profile and appears as a ballerina, a quill writer and a flower arranger in imaginative scenes.",
+        "The gallery includes “Armadillo Walking in Profile” and “Armadillo Arranging a Flower Bouquet” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "d90608cdbd7e8b2f56a7bc7193777fe79c418e1530441cc59ae6a32f56e97e78",
+      "paragraphEvidence": [
+        {
+          "id": "armadillo-walking-in-profile-clipart",
+          "imageSha256": "71ca5c573b9cdad1c6819ccb51d314f7f21e14980a8d139404b4d4b8b05a11f9"
+        },
+        {
+          "id": "armadillo-arranging-a-flower-bouquet-clipart",
+          "imageSha256": "d5c6134d24087cb7c8f3e75557a58ea777e81b66a778b88d16022156b508a903"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.563Z"
     },
     "axolotl": {
       "status": "checked-against-catalog",
@@ -115,7 +179,23 @@
           "id": "axolotl-flying-a-pink-kite-clipart",
           "imageSha256": "a9751acb80413723694d3706be1c61b10abf4bc18e253c3ee08d8ea19f1e1449"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Axolotl clipart collection, with {{artworkCount}} illustrations to explore. Pink axolotls swim, stack stones, play a small guitar and fly a pink kite in these gentle character scenes.",
+        "The gallery includes “Pink Axolotl Swimming” and “Axolotl Playing a Small Guitar” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "7caca89d6725c08f5c42fd76dad08ee011543afa402cf2f247fe04beb81679c1",
+      "paragraphEvidence": [
+        {
+          "id": "pink-axolotl-swimming-clipart",
+          "imageSha256": "de73a51cb83bec573c96c0cafb27a1cbf30b3020e9c09f3454611c151bdc641d"
+        },
+        {
+          "id": "axolotl-playing-a-small-guitar-clipart",
+          "imageSha256": "b80bd837f5b76b7b74edade741ac67d2e236af3efbdc94dfbf036f39d661fb6c"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.563Z"
     },
     "beaver": {
       "status": "checked-against-catalog",
@@ -139,7 +219,23 @@
           "id": "beaver-sleeping-in-a-hammock-clipart",
           "imageSha256": "20e5b6e98d07834a1f7617071dfaae60fcc9e46a3ff49ce5a93f37eccd3ac008"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Beaver clipart collection, with {{artworkCount}} illustrations to explore. Beavers carry leafy twigs and cattails, write with a quill and rest in a hammock in these character scenes.",
+        "The gallery includes “Beaver Holding a Leafy Twig” and “Beaver Sleeping in a Hammock” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "8ac1515b5337fd98c98617d905f784fa9af6a4523eb9905af75e4fbf9f1da28d",
+      "paragraphEvidence": [
+        {
+          "id": "beaver-holding-a-leafy-twig-clipart",
+          "imageSha256": "bb4156947554f2fb7a88da5ac78d956995b88cb6bccffb402e0bdfbda0a15dc6"
+        },
+        {
+          "id": "beaver-sleeping-in-a-hammock-clipart",
+          "imageSha256": "20e5b6e98d07834a1f7617071dfaae60fcc9e46a3ff49ce5a93f37eccd3ac008"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.563Z"
     },
     "bird": {
       "status": "checked-against-catalog",
@@ -163,7 +259,23 @@
           "id": "yellow-chick-dancing-in-tap-shoes-clipart",
           "imageSha256": "b1f2d1d3e2b7e4b73bcd37c6f96e2414e0a8157119e38cbdd2fb0a5031e48b7b"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Bird clipart collection, with {{artworkCount}} illustrations to explore. A bluebird on a flowering branch, a blue jay with an acorn and a kiwi among fallen leaves share space with a dancing chick.",
+        "The gallery includes “Bluebird on a Flowering Branch” and “Yellow Chick Dancing in Tap Shoes” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "7458ec7f2fbcf753060dc4f03623a6ad77427384118c9e06e1ab84801bf2f79d",
+      "paragraphEvidence": [
+        {
+          "id": "bluebird-on-a-flowering-branch-clipart",
+          "imageSha256": "f78a02d86d1849a41f2c43727a2c51c18d9c0ca085accefb69bbc6e24664ae86"
+        },
+        {
+          "id": "yellow-chick-dancing-in-tap-shoes-clipart",
+          "imageSha256": "b1f2d1d3e2b7e4b73bcd37c6f96e2414e0a8157119e38cbdd2fb0a5031e48b7b"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.563Z"
     },
     "bison": {
       "status": "checked-against-catalog",
@@ -187,7 +299,23 @@
           "id": "bison-under-a-leaf-umbrella-clipart",
           "imageSha256": "2f19de11eefc2cc9b06e195f015b510cb4be8300f56d87c0cdb10bfec0217f27"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Bison clipart collection, with {{artworkCount}} illustrations to explore. Shaggy bison stand and rest beside imaginative characters knitting a scarf or sheltering under a leaf.",
+        "The gallery includes “Standing Bison with a Shaggy Mane” and “Bison Resting on Its Front Knees” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "b3f71e8497c4a5baa99fa9f379400a5e696fea033ae6459157e04768dec1b578",
+      "paragraphEvidence": [
+        {
+          "id": "standing-bison-with-a-shaggy-mane-clipart",
+          "imageSha256": "6480ba96f6ea0b1f6bb545e5949628cd87360935c7ed3bfea914413179b36188"
+        },
+        {
+          "id": "bison-resting-on-its-front-knees-clipart",
+          "imageSha256": "a33e2293909521a6ee0655a44e246ec90079761d225dd859a45aa248fa1858ec"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.563Z"
     },
     "buick": {
       "status": "checked-against-catalog",
@@ -211,7 +339,23 @@
           "id": "buick-tri-shield-with-polished-circular-border-clipart",
           "imageSha256": "f2ca12b06a0507d7288a4e55e7b70fb0b8ef80e31f4fd072e941f9cd992d9dfe"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Buick clipart collection, with {{artworkCount}} illustrations to explore. Explore finned classic Buick cars, sleek coupes and modern SUVs, along with colorful tri-shield emblem illustrations.",
+        "The gallery includes “Buick Electra 225-Style Sedan in Grayscale” and “Buick Tri-Shield with Polished Circular Border” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "358d8920acddf90b1d11ff22ba5779c294a0fdeda825e366c0434d74261d9730",
+      "paragraphEvidence": [
+        {
+          "id": "buick-electra-225-style-sedan-in-grayscale-clipart",
+          "imageSha256": "e2442dc7fda1c6a722f61c378d230718945c538123ddeea1bf057c965fd38eb3"
+        },
+        {
+          "id": "buick-tri-shield-with-polished-circular-border-clipart",
+          "imageSha256": "f2ca12b06a0507d7288a4e55e7b70fb0b8ef80e31f4fd072e941f9cd992d9dfe"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.563Z"
     },
     "byd": {
       "status": "checked-against-catalog",
@@ -235,7 +379,23 @@
           "id": "gray-byd-crossover-in-profile-clipart",
           "imageSha256": "d5839d9c44fa3558971c95ff8dec7f1f98d85f5205f75a3b50f97698da38a404"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our BYD clipart collection, with {{artworkCount}} illustrations to explore. BYD-inspired SUVs, sedans and crossovers appear in clean profile and angled views, with light and dark finishes.",
+        "The gallery includes “BYD ATTO 2-Style SUV in Black and White” and “Cream BYD Sedan with Wide Grille” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "835646b1704f4a2c1becfce51a1e8a7b9dad0456689fbc0663813ab69c6693e1",
+      "paragraphEvidence": [
+        {
+          "id": "byd-atto-2-style-suv-in-black-and-white-clipart",
+          "imageSha256": "eb25f644e4af1cdf169e8be576d387b67b7832f13fc3f7bfedbe52b18b206170"
+        },
+        {
+          "id": "cream-byd-sedan-with-wide-grille-clipart",
+          "imageSha256": "614205bc87e619affa4aea62d67a3bee3f1abbef0220e0d7f268bf38bd4f259d"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.563Z"
     },
     "cadillac": {
       "status": "checked-against-catalog",
@@ -259,7 +419,23 @@
           "id": "white-cadillac-escalade-style-suv-front-view-clipart",
           "imageSha256": "dea4608dee1faa5cb4859eb44f37f2b3368ef8589bab85cfc69643e602d2aece"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Cadillac clipart collection, with {{artworkCount}} illustrations to explore. Vintage convertibles, classic coupes and modern SUV-style illustrations bring together different Cadillac-inspired body shapes.",
+        "The gallery includes “Vintage Silver Cadillac-Style Convertible” and “White Cadillac Escalade-Style SUV Front View” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "a876ea0f0eafee54ad5e51390e6b03c0c5fc3ee8ee3203bc11084b4c12ec9e70",
+      "paragraphEvidence": [
+        {
+          "id": "vintage-silver-cadillac-style-convertible-clipart",
+          "imageSha256": "a04221399056d1fa33e62f3b8b766dd00b363e96377e3954a324ce3e90b10f00"
+        },
+        {
+          "id": "white-cadillac-escalade-style-suv-front-view-clipart",
+          "imageSha256": "dea4608dee1faa5cb4859eb44f37f2b3368ef8589bab85cfc69643e602d2aece"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.563Z"
     },
     "capybara": {
       "status": "checked-against-catalog",
@@ -283,7 +459,23 @@
           "id": "capybara-arranging-books-clipart",
           "imageSha256": "883bd862317ee427f9956f6fb7e1cd940c634aced93b9f698e2f752c3d3ec2eb"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Capybara clipart collection, with {{artworkCount}} illustrations to explore. Capybaras sit and nuzzle, while character scenes show them carrying a letter and arranging books.",
+        "The gallery includes “Seated Capybara” and “Capybara Carrying a Letter” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "7fa28de5a17b4603d0fdde7848225ff0ba8a329383a2e7f0f85a8e0570f67794",
+      "paragraphEvidence": [
+        {
+          "id": "seated-capybara-clipart",
+          "imageSha256": "0b73af855fc656d004c51b033aa837fc8151e3e806c4f314390032d1fa7b513f"
+        },
+        {
+          "id": "capybara-carrying-a-letter-clipart",
+          "imageSha256": "38706b6a1298ed0f3bf6ace68e61093650aed62bc631f85dca31ab1cf2e123ae"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.563Z"
     },
     "cardinal": {
       "status": "checked-against-catalog",
@@ -303,7 +495,23 @@
           "id": "cardinal-nest-with-eggs-clipart",
           "imageSha256": "19ca74805ea2ced5842e9731d92e2ac9ed7fd7442a819cf4928830ba4a12c0f5"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Cardinal clipart collection, with {{artworkCount}} illustrations to explore. Cardinals perch near flowers and nests, while patterned feathers and cozy scarves bring a playful touch to these bird illustrations.",
+        "The gallery includes “Cardinal in a Teal Scarf” and “Cardinal Nest with Eggs” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "4dd69ccc5d1157ec29af1c042020460c25b9649b03f541d9774bf4cc45685efd",
+      "paragraphEvidence": [
+        {
+          "id": "cardinal-in-a-teal-scarf-clipart",
+          "imageSha256": "ed6407c96df39043b38f0fd857e618e711aa7f912ea4ef10a4dd515a0a0c18b9"
+        },
+        {
+          "id": "cardinal-nest-with-eggs-clipart",
+          "imageSha256": "19ca74805ea2ced5842e9731d92e2ac9ed7fd7442a819cf4928830ba4a12c0f5"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.563Z"
     },
     "caterpillar": {
       "status": "checked-against-catalog",
@@ -327,7 +535,23 @@
           "id": "caterpillar-and-a-silk-cocoon-clipart",
           "imageSha256": "32a72a1fbcfaa7edfa71ce0550e1a512ca779b865d2a54e736c4cc4c1f9da309"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Caterpillar clipart collection, with {{artworkCount}} illustrations to explore. Caterpillars curl on leaves, shelter in bark-covered cases and rest beside a silk cocoon in this nature-inspired set.",
+        "The gallery includes “Fuzzy Caterpillar on an Oak Leaf” and “Caterpillar in a Bark-Covered Case” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "c6c92bb765e9fa39d35a442608289a9096d8b850ab9d26abe53910033d3c125b",
+      "paragraphEvidence": [
+        {
+          "id": "fuzzy-caterpillar-on-an-oak-leaf-clipart",
+          "imageSha256": "e76270bdf1398c0acec94d1697d58cdca19c36f959bfaea7003521b34e2be813"
+        },
+        {
+          "id": "caterpillar-in-a-bark-covered-case-clipart",
+          "imageSha256": "5e18c040b12749ea0ff1a2f7d13d8d92921188a9979b9bd4e4e8247e33f19e8a"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.563Z"
     },
     "chameleon": {
       "status": "checked-against-catalog",
@@ -351,7 +575,23 @@
           "id": "chameleon-building-a-sandcastle-clipart",
           "imageSha256": "015b29c7ba23ea3d5fa48f37430752874dbb2754d93114bb4214d9792e0fee63"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Chameleon clipart collection, with {{artworkCount}} illustrations to explore. Chameleons curl through leafy branches and ferns, with playful characters floating on a balloon or building a sandcastle.",
+        "The gallery includes “Striped Chameleon on a Leafy Branch” and “Chameleon Riding a Lavender Balloon” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "60e576071240efc43de410b49ecf295c4571632b3f7e26675252b97726105d45",
+      "paragraphEvidence": [
+        {
+          "id": "striped-chameleon-on-a-leafy-branch-clipart",
+          "imageSha256": "172d64da91b748c5205109555a1486971cd15a5034bd65de8597eb3723479060"
+        },
+        {
+          "id": "chameleon-riding-a-lavender-balloon-clipart",
+          "imageSha256": "cfe478b8ac5571e2b8f7017adce54444065ad73a59928aa4fd1eefa815f6092a"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.563Z"
     },
     "cheetah": {
       "status": "checked-against-catalog",
@@ -375,7 +615,23 @@
           "id": "cheetah-playing-tennis-clipart",
           "imageSha256": "a1b4058e63584b9479bc2e869d0d32fdd3af58eaa20d229b0cb1421099addbd3"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Cheetah clipart collection, with {{artworkCount}} illustrations to explore. Running cheetahs share the collection with playful characters flying a kite, dancing and playing tennis.",
+        "The gallery includes “Cheetah Running” and “Cheetah Dancing with a Red Ribbon” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "e233bad4caa3f40a4e9f5251b84d14a02bbc82852ccd153369ecc946bfa9d96f",
+      "paragraphEvidence": [
+        {
+          "id": "cheetah-running-clipart",
+          "imageSha256": "84a46176fb350f6307409a133c21adb5d173ebce89d07f904c24dd071b5b98e8"
+        },
+        {
+          "id": "cheetah-dancing-with-a-red-ribbon-clipart",
+          "imageSha256": "30f374a514ab9ed73990921ec8d5961094173646b2b0f13c67fb8518ac3fad0b"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.563Z"
     },
     "chery": {
       "status": "checked-against-catalog",
@@ -399,7 +655,23 @@
           "id": "blue-chery-tiggo-7-with-patterned-grille-clipart",
           "imageSha256": "14844926d15c3b6da24c76cd00e1cb26d704d951f28d55706de8c918bb1c5f9d"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Chery clipart collection, with {{artworkCount}} illustrations to explore. Explore Chery-inspired hatchbacks, crossovers and boxy city cars in front, side and rear views.",
+        "The gallery includes “Red Chery Hatchback Front View” and “Blue Chery Tiggo 7 with Patterned Grille” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "781bb419d94af950ab712f08661f33c8db0a66435590c308783bdf09f81f500e",
+      "paragraphEvidence": [
+        {
+          "id": "red-chery-hatchback-front-view-clipart",
+          "imageSha256": "6aeb62319afe22d5feb747744ec79b8321d63841cc81e9fef50e829c5a032b39"
+        },
+        {
+          "id": "blue-chery-tiggo-7-with-patterned-grille-clipart",
+          "imageSha256": "14844926d15c3b6da24c76cd00e1cb26d704d951f28d55706de8c918bb1c5f9d"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.563Z"
     },
     "chevrolet": {
       "status": "checked-against-catalog",
@@ -423,7 +695,23 @@
           "id": "red-chevrolet-ssr-convertible-pickup-clipart",
           "imageSha256": "5c48da1748e69c29feedc08a3ec16e20a935735d6a581134ef1af674eed1f94d"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Chevrolet clipart collection, with {{artworkCount}} illustrations to explore. From a finned classic to a modern sports car and a convertible pickup, these Chevrolet illustrations also include bowtie emblems.",
+        "The gallery includes “Classic Chevrolet Bel Air in Black and White” and “Gold Chevrolet Bowtie with Brushed Finish” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "e30e42c2d6f5722582d78fcb15d86c4dda96719bd7daa2293d44a48f0c801e78",
+      "paragraphEvidence": [
+        {
+          "id": "classic-chevrolet-bel-air-in-black-and-white-clipart",
+          "imageSha256": "b214d7d11ff24919fd891b07fe2fbffa1d1df8c4512cce5c1d76fc03998771dd"
+        },
+        {
+          "id": "gold-chevrolet-bowtie-with-brushed-finish-clipart",
+          "imageSha256": "f908ad3869f4889ff5f0b87dcf57bac19f7776987f947d8b2400dfc8e72687d4"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.564Z"
     },
     "chimpanzee": {
       "status": "checked-against-catalog",
@@ -447,7 +735,23 @@
           "id": "chimpanzee-playing-tennis-clipart",
           "imageSha256": "46e6c9f21f339500829178782a3ebb78da746e8cc36a66edbe9f1f34afb3f44c"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Chimpanzee clipart collection, with {{artworkCount}} illustrations to explore. Chimpanzees climb vines and take part in lively activities, from chess and tennis to dancing with a ribbon.",
+        "The gallery includes “Young Chimpanzee Climbing a Vine” and “Chimpanzee Dancing with a Ribbon” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "bfdfb9e356ae792bae483f26ee6713ea770bf2467ca3995d9f499aaa7f436e6e",
+      "paragraphEvidence": [
+        {
+          "id": "young-chimpanzee-climbing-a-vine-clipart",
+          "imageSha256": "1fa6ee404f5650bf0365146ce64291a9f1a4a8786cadc5da929f95c5a5c00b1a"
+        },
+        {
+          "id": "chimpanzee-dancing-with-a-ribbon-clipart",
+          "imageSha256": "fe3078788374a3c7ee5d50eba820f7352a31d786c72e1ac368a83b0db20977ae"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.564Z"
     },
     "chrysler": {
       "status": "checked-against-catalog",
@@ -471,7 +775,23 @@
           "id": "polished-chrysler-wing-badge-with-blue-center-clipart",
           "imageSha256": "a73f558a3232a10da8089f8a53d247ae03883df9b35c7a5570cfb71f13c2668a"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Chrysler clipart collection, with {{artworkCount}} illustrations to explore. Vintage open-top cars and a modern minivan sit alongside Chrysler-inspired winged badge designs.",
+        "The gallery includes “Vintage Open Touring Car in Grayscale” and “Polished Chrysler Wing Badge With Blue Center” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "0d3202b0005330aaaa998aeba62d24bc86ea6c2ec3d198ba6dd85be6ee7d4f95",
+      "paragraphEvidence": [
+        {
+          "id": "vintage-open-touring-car-in-grayscale-clipart",
+          "imageSha256": "92fb72c6bc151273204c9e515f77303f4ae62662136330616beb536045160afa"
+        },
+        {
+          "id": "polished-chrysler-wing-badge-with-blue-center-clipart",
+          "imageSha256": "a73f558a3232a10da8089f8a53d247ae03883df9b35c7a5570cfb71f13c2668a"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.564Z"
     },
     "clownfish": {
       "status": "checked-against-catalog",
@@ -495,7 +815,23 @@
           "id": "clownfish-carrying-a-gift-clipart",
           "imageSha256": "453e42a06ca66798b5fb89fa8292744e8f9db915d1c6b8887ce071a327e95b10"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Clownfish clipart collection, with {{artworkCount}} illustrations to explore. Clownfish swim near coral and appear in playful scenes with musical pipes, an ornament and a wrapped gift.",
+        "The gallery includes “Clownfish Beneath Coral” and “Clownfish with a Striped Ornament” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "047769d56f7b18b6b2e4bfabe3b1f9b6ee764723c7a4ce5eb1dedc1f21dc4e64",
+      "paragraphEvidence": [
+        {
+          "id": "clownfish-beneath-coral-clipart",
+          "imageSha256": "350083b6ff7cf5f2af22024d3b2e56d14771d3819fb558535b985235501689db"
+        },
+        {
+          "id": "clownfish-with-a-striped-ornament-clipart",
+          "imageSha256": "e4892f85f31b2bce88a2ee334eaa0d244fb52eca83098b47b92ea9383a3d56ef"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.564Z"
     },
     "dodge": {
       "status": "checked-against-catalog",
@@ -519,7 +855,23 @@
           "id": "yellow-dodge-challenger-style-coupe-with-hood-scoop-clipart",
           "imageSha256": "86c3222bfe1c453428de86d6e172ed626b96f36aeb0b914d6f30dbd145f4b3b5"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Dodge clipart collection, with {{artworkCount}} illustrations to explore. Finned classic coupes, muscular cars and a pickup feature in this collection of Dodge-inspired vehicle illustrations.",
+        "The gallery includes “Coral Dodge Classic Finned Coupe” and “Yellow Dodge Challenger-Style Coupe with Hood Scoop” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "5f0ea6c2f7469d70118fc5f7116ae1fb8b5c7146d648a7349ef1fc6d90719655",
+      "paragraphEvidence": [
+        {
+          "id": "coral-dodge-classic-finned-coupe-clipart",
+          "imageSha256": "d7aef8ed2a0c112abe15e5ab9f24e4ccf051f23b288878ffb50b33d92185be65"
+        },
+        {
+          "id": "yellow-dodge-challenger-style-coupe-with-hood-scoop-clipart",
+          "imageSha256": "86c3222bfe1c453428de86d6e172ed626b96f36aeb0b914d6f30dbd145f4b3b5"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.564Z"
     },
     "donkey": {
       "status": "checked-against-catalog",
@@ -543,7 +895,23 @@
           "id": "donkey-shaking-off-water-clipart",
           "imageSha256": "a6dc0f0229d221da5c5392ede4332ffc6a6369250c3e5cb9c511018ae04c7d6d"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Donkey clipart collection, with {{artworkCount}} illustrations to explore. Donkeys graze and rest beside a stone post, walk together and shake water from their coats.",
+        "The gallery includes “Gray Donkey Grazing” and “Donkey Resting against a Stone Post” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "de78b9cccd3057ec7af641122cc0704a637087cfc6e7724cdddf943ca7c4650e",
+      "paragraphEvidence": [
+        {
+          "id": "gray-donkey-grazing-clipart",
+          "imageSha256": "3d4582ee0b09917f4b10edab54d9aa4ab23d8b7eacf8826c301506a34f750075"
+        },
+        {
+          "id": "donkey-resting-against-a-stone-post-clipart",
+          "imageSha256": "41f4e4099ff1c4ca906407fb64951c4d8568c47e3e83babb97727452d4b6b20a"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.564Z"
     },
     "dragonfly": {
       "status": "checked-against-catalog",
@@ -567,7 +935,23 @@
           "id": "dragonfly-aviator-clipart",
           "imageSha256": "bedb10f7ecbbe8e9ccc48c5952dede07a1b2c12e179550b560a84f329b74dfb8"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Dragonfly clipart collection, with {{artworkCount}} illustrations to explore. Delicate dragonflies rest on grass and spread their wings, with imaginative characters carrying a leaf umbrella or dressed as an aviator.",
+        "The gallery includes “Dragonfly on a Grass Blade” and “Blue Dragonfly from Above” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "c3837ecb558033365cae8a38d9878c3f2a827c4d09cdf2d61786edaa2c85bb74",
+      "paragraphEvidence": [
+        {
+          "id": "dragonfly-on-a-grass-blade-clipart",
+          "imageSha256": "4d39e4894829e0dc66b1becd9da36c0a3493a3a222aa0e0e75ad6eca09b1ee23"
+        },
+        {
+          "id": "blue-dragonfly-from-above-clipart",
+          "imageSha256": "93b61bda692759342c30dfbb7e3ce0a4cd1b7bd7744a7334a0753d3a861bfcf0"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.564Z"
     },
     "eating": {
       "status": "checked-against-catalog",
@@ -583,7 +967,23 @@
           "id": "eating-005",
           "imageSha256": "723023c3ff719a01eafd18534b99608c3062443667281be52926b938a776641b"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Eating clipart collection, with {{artworkCount}} illustrations to explore. People of different ages enjoy snacks and meals in everyday illustrated scenes.",
+        "The gallery includes “Toddler Eating a Banana” and “Woman Eating from a Bowl” among its drawings. Illustrate a story prompt, a personal journal entry or a classroom discussion, choosing the action and arrangement that make your intended meaning clear."
+      ],
+      "paragraphSourceSha256": "98f6be8f552b56521f5bb58bb8ef42595e735dc5d8f9b43bf2f114e7df6e9257",
+      "paragraphEvidence": [
+        {
+          "id": "eating-001",
+          "imageSha256": "ecb7e4d8bedb1227b1d45fc994386184fbde0eb4c45669d92d26c5d7bb0bd8ea"
+        },
+        {
+          "id": "eating-005",
+          "imageSha256": "723023c3ff719a01eafd18534b99608c3062443667281be52926b938a776641b"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.564Z"
     },
     "gmc": {
       "status": "checked-against-catalog",
@@ -607,7 +1007,23 @@
           "id": "glossy-red-gmc-wordmark-clipart",
           "imageSha256": "ad5a1062fe617b2122b6af325edd33f25b57c9885643550f3489d37d4df2b387"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our GMC clipart collection, with {{artworkCount}} illustrations to explore. Classic off-roaders, pickups and large SUVs appear alongside bold GMC lettering in several finishes.",
+        "The gallery includes “Classic GMC Jimmy-style SUV in Black and White” and “Blue Long GMC Yukon-style SUV from the Rear” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "d50f4714cbe4aaa0150c467fd74f4cbaf789b64d1b3a533614cb50c833a49a2d",
+      "paragraphEvidence": [
+        {
+          "id": "classic-gmc-jimmy-style-suv-in-black-and-white-clipart",
+          "imageSha256": "36c34f7a9b93a9f8a8037e433f902ff3c7be3ed9072df3b5bb4b868e1b99df4e"
+        },
+        {
+          "id": "blue-long-gmc-yukon-style-suv-from-the-rear-clipart",
+          "imageSha256": "deb39055fd081ebc22c49d17832deb56feb5fd34763f78f270bbdbb50f67864a"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.564Z"
     },
     "goldfish": {
       "status": "checked-against-catalog",
@@ -631,7 +1047,23 @@
           "id": "goldfish-beside-a-pink-seashell-clipart",
           "imageSha256": "78c4d7bb27693f3cf574ed341a6dd34e3406019dea7905ab7d4f7f37bae3d01c"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Goldfish clipart collection, with {{artworkCount}} illustrations to explore. Flowing-finned goldfish swim beside driftwood and seashells, with character scenes that include a curious fish examining a snail.",
+        "The gallery includes “Orange and White Goldfish with Flowing Fins” and “Goldfish Beside a Pink Seashell” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "44d57f2c5429199b3320ed8b2eaa5ed06000159451f80650b579a529428299b2",
+      "paragraphEvidence": [
+        {
+          "id": "orange-and-white-goldfish-with-flowing-fins-clipart",
+          "imageSha256": "371347c83a53d67382011c7d26b4277947988fbe96e34d0b80c9938f40d27938"
+        },
+        {
+          "id": "goldfish-beside-a-pink-seashell-clipart",
+          "imageSha256": "78c4d7bb27693f3cf574ed341a6dd34e3406019dea7905ab7d4f7f37bae3d01c"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.564Z"
     },
     "goose": {
       "status": "checked-against-catalog",
@@ -655,7 +1087,23 @@
           "id": "goose-painting-a-stone-clipart",
           "imageSha256": "76def8e79311c6cd73d674a152d6410d5e991aacc0ae1e77393d3980d68f1d8b"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Goose clipart collection, with {{artworkCount}} illustrations to explore. Goslings hatch and explore, while geese graze on clover or take part in small creative adventures.",
+        "The gallery includes “Gosling and a Feather” and “Goose Eating Clover” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "71a9194a868c209406dcc14e8a255c6f7a58a3d6a51b741a04859f02e0111239",
+      "paragraphEvidence": [
+        {
+          "id": "gosling-and-a-feather-clipart",
+          "imageSha256": "b6471b70ca049d09b7e1828349a637dff1c453df6037b6099ccb1c74f03e7646"
+        },
+        {
+          "id": "goose-eating-clover-clipart",
+          "imageSha256": "7d3d52da4ea14c6de9ceacc4e99b840b8af5db19f5dd66d2c71d1b12b97963f9"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.564Z"
     },
     "gorilla": {
       "status": "checked-against-catalog",
@@ -679,7 +1127,23 @@
           "id": "gorilla-playing-tennis-clipart",
           "imageSha256": "689bdf34344ba7d41fb89ae2c6650382b718eac1fd97bca7dcc2986a3ea83c4e"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Gorilla clipart collection, with {{artworkCount}} illustrations to explore. A walking silverback joins playful gorilla characters with pastel balloons, a dancing ribbon and a tennis racket.",
+        "The gallery includes “Silverback Gorilla Walking” and “Gorilla Dancing with a Red Ribbon” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "f27e6e58d7c1b89321ee3e4bdd8e52551b45c0f4c8249c6565226e7022b7e30e",
+      "paragraphEvidence": [
+        {
+          "id": "silverback-gorilla-walking-clipart",
+          "imageSha256": "806c47ba4fcf2a563679d1eb5fa483f5dae7c1e6e3805bc527e7b555896045cb"
+        },
+        {
+          "id": "gorilla-dancing-with-a-red-ribbon-clipart",
+          "imageSha256": "9eddb1c7d67c9fb5d7a203415f73b47a1445fa8dd95be82c63d70fce26e16e0e"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.564Z"
     },
     "grasshopper": {
       "status": "checked-against-catalog",
@@ -703,7 +1167,23 @@
           "id": "grasshopper-painting-a-daisy-clipart",
           "imageSha256": "1858727257bc11e30396ddc9a4ce5f663e667e97a4861e2a2d21b8ed6736b79d"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Grasshopper clipart collection, with {{artworkCount}} illustrations to explore. Grasshoppers perch among grain, irises and soil, with a playful insect painting a daisy in one scene.",
+        "The gallery includes “Grasshopper on a Grain Head” and “Grasshopper Beside a Purple Iris” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "a0fc33c73464ea1287d2845abb0b8a8b167137d255689144c26949e4652108d1",
+      "paragraphEvidence": [
+        {
+          "id": "grasshopper-on-a-grain-head-clipart",
+          "imageSha256": "640031cdeeb8beae99aa5290e2f9a40acf0d955b72399be815540a735099d86e"
+        },
+        {
+          "id": "grasshopper-beside-a-purple-iris-clipart",
+          "imageSha256": "d71938038e690a5bcbc3101f5fc76316a64543ae9aaeb9cfbd5ebba382faff31"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.564Z"
     },
     "guinea-pig": {
       "status": "checked-against-catalog",
@@ -727,7 +1207,23 @@
           "id": "guinea-pig-with-a-treasure-chest-clipart",
           "imageSha256": "3c64101d38b11a31f4127a2cb54c956f6ddd89b750126bf0fff275cff3f58860"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Guinea Pig clipart collection, with {{artworkCount}} illustrations to explore. Guinea pigs nibble leaves, pour tea and rest beneath a mushroom, with a little treasure chest in another scene.",
+        "The gallery includes “Guinea Pig Eating a Leaf” and “Guinea Pig Resting under a Mushroom” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "13ca4b226e0462c696e7fcf99c241aa66ffe390bf3fde506849b66534d2ddbaa",
+      "paragraphEvidence": [
+        {
+          "id": "guinea-pig-eating-a-leaf-clipart",
+          "imageSha256": "e6add93500340f77db8f1f85aecde643eec52e5e24d9a7c5cd5044eced2359a8"
+        },
+        {
+          "id": "guinea-pig-resting-under-a-mushroom-clipart",
+          "imageSha256": "ab4de875e0f21a4ef05e65f44a06e4194f2d0ebce76bbaa4b0928073532bf17e"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.564Z"
     },
     "hamster": {
       "status": "checked-against-catalog",
@@ -751,7 +1247,23 @@
           "id": "hamster-holding-a-tulip-bouquet-clipart",
           "imageSha256": "f541a67a1299e8bb7bd26fbf2ca9ccafd093948fba54881abd07ebd960f06bb6"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Hamster clipart collection, with {{artworkCount}} illustrations to explore. Round-cheeked hamsters appear with ice skates, bongo drums and a bouquet of tulips.",
+        "The gallery includes “Golden Hamster with Full Cheeks” and “Hamster Ice Skating in a Scarf” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "904016d453253551080d396a537b335ee8b1e8443185a13986bc924d13e49268",
+      "paragraphEvidence": [
+        {
+          "id": "golden-hamster-with-full-cheeks-clipart",
+          "imageSha256": "a93422dc498811408023e10f949b2766d5fb20e8cf56ee91099e573198fe579f"
+        },
+        {
+          "id": "hamster-ice-skating-in-a-scarf-clipart",
+          "imageSha256": "7fa197473a09bda4e2e002ff7614ada0ef3abe3cba98253a32752b358571c2c1"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.564Z"
     },
     "hennessey": {
       "status": "checked-against-catalog",
@@ -775,7 +1287,23 @@
           "id": "blue-hennessey-open-top-hypercar-clipart",
           "imageSha256": "9121cac4dafb71b48a2f6656f9670463c7a101c6ec9bf3cbcc41daff737a4a63"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Hennessey clipart collection, with {{artworkCount}} illustrations to explore. Hennessey-themed pickups, low-slung coupes and open-top cars appear with decorative script.",
+        "The gallery includes “Red Hennessey Goliath 700 Pickup” and “Silver Hennessey Hypercar With Rear Wing” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "ac938b6bee26a04fd8f4ca9397770163fea4c14a57db2da171eb53be3496f2ad",
+      "paragraphEvidence": [
+        {
+          "id": "red-hennessey-goliath-700-pickup-clipart",
+          "imageSha256": "cf070ac8d1c3471af88faaedd78b4840901701576867c83fd9c307dbfba1ba59"
+        },
+        {
+          "id": "silver-hennessey-hypercar-with-rear-wing-clipart",
+          "imageSha256": "ea4c340caf64cf1dee1badb0c68ecb6fa9f7c40cef052d96fd4352af5d8468e8"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.564Z"
     },
     "honda": {
       "status": "checked-against-catalog",
@@ -799,7 +1327,23 @@
           "id": "blue-honda-nsx-side-view-clipart",
           "imageSha256": "5d967fd37f4093704157b39def738b7f3b5be3646e394cd5569ba0db33e550d2"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Honda clipart collection, with {{artworkCount}} illustrations to explore. Honda-inspired sedans and hatchbacks sit alongside low sports-car profiles, with both colored illustrations and line drawings.",
+        "The gallery includes “White Honda Accord Side View” and “Honda Civic Type R-style Hatchback in Profile” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "1821a0eb7ba7459058409ffda4698a03fbaa8e09f644905e7eebcf466e74e776",
+      "paragraphEvidence": [
+        {
+          "id": "white-honda-accord-side-view-clipart",
+          "imageSha256": "d29df77f15d575154119e49c9fb218dab033a05ece89a130f8a968f22a7a041f"
+        },
+        {
+          "id": "honda-civic-type-r-style-hatchback-in-profile-clipart",
+          "imageSha256": "b0ec2baea295c380c798acd561e4ccc74a01f39e3403beb677aaa098c0191e35"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.564Z"
     },
     "hummingbird": {
       "status": "checked-against-catalog",
@@ -823,7 +1367,23 @@
           "id": "hummingbird-in-a-witch-hat-clipart",
           "imageSha256": "aff981ea56ad389a38d7fb9b686cdfe48e9ab39c266b1ac2f50f02e82d66e7c1"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Hummingbird clipart collection, with {{artworkCount}} illustrations to explore. Hummingbirds hover near trumpet-shaped and hanging flowers; other scenes include colorful birds in flight and a tiny witch hat.",
+        "The gallery includes “Hummingbird at a Trumpet Flower” and “Hummingbird and Pink Hanging Flowers” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "de12929d3ec31d0a1f3568384b6881e591d3956d9a41a2f7a5c2d2126cdc4826",
+      "paragraphEvidence": [
+        {
+          "id": "hummingbird-at-a-trumpet-flower-clipart",
+          "imageSha256": "f1e7c2e75fee9574fb20bee9f63b30f7c76dab1fe95076394e4072f48882b6a8"
+        },
+        {
+          "id": "hummingbird-and-pink-hanging-flowers-clipart",
+          "imageSha256": "54b05d300bb8e478e9f32ed0a3a78ed7c5d4d48138238c30d3bf07892ab4d848"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.564Z"
     },
     "jaguar": {
       "status": "checked-against-catalog",
@@ -843,7 +1403,23 @@
           "id": "spotted-cat-repairing-a-clock-clipart",
           "imageSha256": "9231bc23574414ebedf1bfbe2dfdac2c11ed1b790527fa096e240d479562c12b"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Jaguar clipart collection, with {{artworkCount}} illustrations to explore. Spotted cats drink and climb in nature scenes, then take part in imaginative activities such as chess and clock repair.",
+        "The gallery includes “Jaguar Walking Forward” and “Spotted Cat Repairing a Clock” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "b488ee7dbd5d496cce008a1608b5b83837c83c69c2df62f0556e81e1e6aca6a6",
+      "paragraphEvidence": [
+        {
+          "id": "jaguar-walking-forward-clipart",
+          "imageSha256": "3868aa9261ec3c4019f6045b8b909d333b4bbdd8a8154ea92eda792e8e8f7535"
+        },
+        {
+          "id": "spotted-cat-repairing-a-clock-clipart",
+          "imageSha256": "9231bc23574414ebedf1bfbe2dfdac2c11ed1b790527fa096e240d479562c12b"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.564Z"
     },
     "jeep": {
       "status": "checked-against-catalog",
@@ -867,7 +1443,23 @@
           "id": "glossy-dark-green-jeep-wordmark-clipart",
           "imageSha256": "358b371c4f259cfdca5fdb2643f63a1c8b9841433886c6c6a6e8cf8fac0ee3f9"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Jeep clipart collection, with {{artworkCount}} illustrations to explore. From striped vintage pickups to modern SUVs and off-roaders, Jeep-themed artwork includes bold wordmark variations.",
+        "The gallery includes “Red Jeep Honcho-Style Pickup With Gold Stripes” and “Jeep Cherokee Rear View in Grayscale” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "a625aebded2cbbf3bfbf58f6771485d7bb969eacbbf5a108e4633ee15d9536c5",
+      "paragraphEvidence": [
+        {
+          "id": "red-jeep-honcho-pickup-with-gold-stripes-clipart",
+          "imageSha256": "9bf893888c52146a8e68362d8701fbf6e8b507179e5f3c9f2f25ff17925365e6"
+        },
+        {
+          "id": "jeep-cherokee-rear-view-in-grayscale-clipart",
+          "imageSha256": "95fbf2b01a97f191821e4fff6eddad104fe81153daf8ccdcc39616130b68ae53"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.564Z"
     },
     "kia": {
       "status": "checked-against-catalog",
@@ -891,7 +1483,23 @@
           "id": "red-kia-sorento-style-suv-from-behind-clipart",
           "imageSha256": "2dd8b2d810ef25bd61d55827d54c86cd236b673b90b3847ed94c39f35bb8b76a"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Kia clipart collection, with {{artworkCount}} illustrations to explore. Sedan, small hatchback and SUV-inspired Kia illustrations are shown in color and monochrome from several viewpoints.",
+        "The gallery includes “Black Kia Cadenza-Style Sedan” and “Red Kia Sorento-Style SUV from Behind” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "336fd0c202ef698605ada19d3af8eae8548bda6c623ad62afe16a16d796731b7",
+      "paragraphEvidence": [
+        {
+          "id": "black-kia-cadenza-style-sedan-clipart",
+          "imageSha256": "a7e246dfc98c9e57113204380fe9b82aaa3eacbb88d41f63e58c723419b7a6ec"
+        },
+        {
+          "id": "red-kia-sorento-style-suv-from-behind-clipart",
+          "imageSha256": "2dd8b2d810ef25bd61d55827d54c86cd236b673b90b3847ed94c39f35bb8b76a"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.565Z"
     },
     "king": {
       "status": "checked-against-catalog",
@@ -907,7 +1515,23 @@
           "id": "king-014",
           "imageSha256": "7b05e6df790217b3cc64babe4ea58d456060ec6295fbbf7f515b20ac8a677e14"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our King clipart collection, with {{artworkCount}} illustrations to explore. Crowned characters read, create, play and take part in familiar daily activities.",
+        "The gallery includes “Little King with a Pinwheel” and “King Reading a Large Book” among its drawings. Illustrate a story prompt, a personal journal entry or a classroom discussion, choosing the action and arrangement that make your intended meaning clear."
+      ],
+      "paragraphSourceSha256": "08e5ab26d895877586b87412189c1793882128529bbfe57b123c17e2976c2bcb",
+      "paragraphEvidence": [
+        {
+          "id": "king-001",
+          "imageSha256": "58484dde4c012225712e90a2bf9a7259a0ca26530f6f44a4045fda2af835b4b0"
+        },
+        {
+          "id": "king-014",
+          "imageSha256": "7b05e6df790217b3cc64babe4ea58d456060ec6295fbbf7f515b20ac8a677e14"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.565Z"
     },
     "leopard": {
       "status": "checked-against-catalog",
@@ -931,7 +1555,23 @@
           "id": "leopard-brushing-a-fossil-clipart",
           "imageSha256": "ebbc35d7fdd3447833c21b71e845d2274df7066a50ea3fad8df8080123e069aa"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Leopard clipart collection, with {{artworkCount}} illustrations to explore. Leopards rest on branches and appear in playful scenes stretching beside a yoga mat, dancing and brushing a fossil.",
+        "The gallery includes “Leopard Resting on a Branch” and “Leopard Ballerina in a Purple Tutu” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "770caaeab158a5bca3bf33b801497844fa0be4a9d867899d4b765d76415ee461",
+      "paragraphEvidence": [
+        {
+          "id": "leopard-resting-on-a-branch-clipart",
+          "imageSha256": "5cef6d81f78d760e1b2e7864275fa3416f545d9f7e5bdd3e2692b84ec7b27bea"
+        },
+        {
+          "id": "leopard-ballerina-in-a-purple-tutu-clipart",
+          "imageSha256": "a558987aaf4c4bead3c2f53b2cca3751dc00d68d9d71802ba34a8458a5266eb5"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.565Z"
     },
     "lexus": {
       "status": "checked-against-catalog",
@@ -955,7 +1595,23 @@
           "id": "gold-and-black-lexus-rc-inspired-race-car-clipart",
           "imageSha256": "88392572655ec157fbe99c4cffef372771a5645a4a61af6f84830c05c3987097"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Lexus clipart collection, with {{artworkCount}} illustrations to explore. Explore Lexus-inspired hatchbacks, sedans, a minivan and a race-car design in varied angles and finishes.",
+        "The gallery includes “Red Lexus CT-Style Hatchback” and “Gold and Black Lexus RC-Inspired Race Car” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "6e901a4afb75a4a6b1fa6582018376521b6851d3c5e566191a9c33555d071b34",
+      "paragraphEvidence": [
+        {
+          "id": "red-lexus-ct-style-hatchback-clipart",
+          "imageSha256": "6cbe8f08ade3f025769d237c3f843894b9ebb68c89224b076702b0c5047bc8b1"
+        },
+        {
+          "id": "gold-and-black-lexus-rc-inspired-race-car-clipart",
+          "imageSha256": "88392572655ec157fbe99c4cffef372771a5645a4a61af6f84830c05c3987097"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.565Z"
     },
     "lincoln": {
       "status": "checked-against-catalog",
@@ -979,7 +1635,23 @@
           "id": "dark-chrome-lincoln-star-and-wordmark-clipart",
           "imageSha256": "d924fa6e187aaecb7a8723a6dd5de9200a9270f1e7b6350f104c138273bd6254"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Lincoln clipart collection, with {{artworkCount}} illustrations to explore. Classic convertibles and modern SUVs are paired with interpretations of Lincoln’s vertical star and wordmark.",
+        "The gallery includes “Classic Lincoln Continental-style Convertible from the Rear” and “Lincoln Navigator-style SUV in Black and White” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "7c6ef2db4608b768e357577c1db9dc46d88f8272a57f7a8b506faf7702e5eb2f",
+      "paragraphEvidence": [
+        {
+          "id": "classic-lincoln-continental-style-convertible-from-the-rear-clipart",
+          "imageSha256": "8b906f88baeb1c16d1dcb34245e86597cf2234578696b0c92af4867c1d4683f7"
+        },
+        {
+          "id": "lincoln-navigator-style-suv-in-black-and-white-clipart",
+          "imageSha256": "84a774d106864d90e79fd32a9ae0d3f0d9ccd0623766ef35d23d7985320113cd"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.565Z"
     },
     "lizard": {
       "status": "checked-against-catalog",
@@ -1003,7 +1675,23 @@
           "id": "gecko-in-a-hot-air-balloon-clipart",
           "imageSha256": "58749562110032d7f7dd18475b8d09515caa9efd91048aba4972816e7db5f310"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Lizard clipart collection, with {{artworkCount}} illustrations to explore. Spotted geckos and patterned lizards appear on stones and in playful scenes with a skateboard or balloon.",
+        "The gallery includes “Spotted Gecko on a Stone” and “Black and White Patterned Lizard” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "420928cb5b170e7259e8f6ef2cde254336c80a94967eada5a12459231f5b752d",
+      "paragraphEvidence": [
+        {
+          "id": "spotted-gecko-on-a-stone-clipart",
+          "imageSha256": "bdc850f684dc0cbfd9cb894ae6f95f14448e07600c702280d52ea5a6776b0634"
+        },
+        {
+          "id": "black-and-white-patterned-lizard-clipart",
+          "imageSha256": "567e60229cb143e9750475e83c649339128c0d8f398b540548d1993d40806155"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.565Z"
     },
     "llama": {
       "status": "checked-against-catalog",
@@ -1027,7 +1715,23 @@
           "id": "llama-with-a-scarf-and-hot-drink-clipart",
           "imageSha256": "0f917f4d4e9cd1af5de48940b7cf24412c85fc3d04eaba3acabddfced37b49ed"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Llama clipart collection, with {{artworkCount}} illustrations to explore. Llamas stand, cross a wooden bridge and take a ride on a skateboard; a scarf and warm drink add a cozy scene.",
+        "The gallery includes “Brown and White Llama Standing” and “Llama with a Scarf and Hot Drink” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "0fafe5dec1ffd605242e50dfbca2efe27c559810f6ede68a7226127c92cf81fa",
+      "paragraphEvidence": [
+        {
+          "id": "brown-and-white-llama-standing-clipart",
+          "imageSha256": "cfc5670fcb15f63574f5d1668432f2781a8e3196b3991988c36c785a2a31849f"
+        },
+        {
+          "id": "llama-with-a-scarf-and-hot-drink-clipart",
+          "imageSha256": "0f917f4d4e9cd1af5de48940b7cf24412c85fc3d04eaba3acabddfced37b49ed"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.565Z"
     },
     "mazda": {
       "status": "checked-against-catalog",
@@ -1051,7 +1755,23 @@
           "id": "red-mazda-rx-2-style-coupe-profile-clipart",
           "imageSha256": "0d96198fd43660906f1dae3b374249e737fbd41c347956f08fdb97879c2a780e"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Mazda clipart collection, with {{artworkCount}} illustrations to explore. Mazda-inspired hatchbacks and SUVs join open-top roadsters and vintage coupe profiles in these vehicle illustrations.",
+        "The gallery includes “Red Mazda 323-Style Hatchback in Profile” and “White Mazda MX-5 with Raised Headlights” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "b2730182c23febda833c2f6274c01805e83c4097ca26ee9d6bdf4480c198ea22",
+      "paragraphEvidence": [
+        {
+          "id": "red-mazda-323-style-hatchback-in-profile-clipart",
+          "imageSha256": "71f79bf440153b40b2cf97674bc2492c0e5b8aa305275f55f35aef313a441ef2"
+        },
+        {
+          "id": "white-mazda-mx-5-with-raised-headlights-clipart",
+          "imageSha256": "99634df163fea4fe5c4765727824034e763b21874f84272f4e43aa1f937448a1"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.565Z"
     },
     "meerkat": {
       "status": "checked-against-catalog",
@@ -1075,7 +1795,23 @@
           "id": "meerkat-examining-a-fossil-clipart",
           "imageSha256": "1317ec881dcb67d53085cb342d08759d5f865db3f96633db0e610c0c5ac9bac2"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Meerkat clipart collection, with {{artworkCount}} illustrations to explore. Meerkats stand alert and appear as playful chess players, a ballerina and a curious fossil explorer.",
+        "The gallery includes “Standing Meerkat” and “Meerkat Ballerina in a Purple Tutu” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "88f93edaac392428907b9b932e805b1ca033b481ce591cbc0a4824434c57eb10",
+      "paragraphEvidence": [
+        {
+          "id": "standing-meerkat-clipart",
+          "imageSha256": "79477706c55b3739c50229f74fd48bbb1ea799a90eb34affc4a35c87a55954e0"
+        },
+        {
+          "id": "meerkat-ballerina-in-a-purple-tutu-clipart",
+          "imageSha256": "dc353a8ba5cfba19d72a7fef3ef3affb0cfd74584da6d52b2fb3b3eab5bef2e3"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.565Z"
     },
     "moose": {
       "status": "checked-against-catalog",
@@ -1099,7 +1835,23 @@
           "id": "moose-flying-a-teal-kite-clipart",
           "imageSha256": "158683c592cbc5f14065647fc07463db44a43f9a2b96a0ffc9ab10b4db297028"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Moose clipart collection, with {{artworkCount}} illustrations to explore. Moose walk through shallow water and appear in playful scenes with a flying insect, mail bag and teal kite.",
+        "The gallery includes “Moose Walking through Shallow Water” and “Moose Carrying a Mail Bag” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "0075fc375693e70baaf8d41542f80df9c9ea4cbbdef13101edbee3129a0c2fb8",
+      "paragraphEvidence": [
+        {
+          "id": "moose-walking-through-shallow-water-clipart",
+          "imageSha256": "9205bf2974d0ec9d154b8a14483ccfe4586e57604f5d74ab85d3b833f1d0d3b8"
+        },
+        {
+          "id": "moose-carrying-a-mail-bag-clipart",
+          "imageSha256": "e2e590fdb5db8dbb78637b7d617614cd8b07df0d0053be2c7982d49b59142d8d"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.565Z"
     },
     "mouse": {
       "status": "checked-against-catalog",
@@ -1123,7 +1875,23 @@
           "id": "mouse-stacking-rainbow-blocks-clipart",
           "imageSha256": "0dd26c006ea8fa7f123dcafef0278177310d0dd4d9964de1d79ff05e635d64e0"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Mouse clipart collection, with {{artworkCount}} illustrations to explore. Mice hold seeds and nest in grass, while cheerful characters juggle balls and stack rainbow blocks.",
+        "The gallery includes “Brown Mouse Holding a Seed” and “Mouse with Young in a Grass Nest” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "fa607d0e3a81bd2a1ef57e1b47e85d95a1b346f276568edb6cdf9626416b385f",
+      "paragraphEvidence": [
+        {
+          "id": "brown-mouse-holding-a-seed-clipart",
+          "imageSha256": "ea45116311c0818db4ed6c41391eeae7b6555b2fcf4a19bb5bc5a9c52608eeac"
+        },
+        {
+          "id": "mouse-with-young-in-a-grass-nest-clipart",
+          "imageSha256": "9aec48e4af2caf7b2437bc163bcf2c61cec26118695541bd2baf45f729e6d209"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.565Z"
     },
     "narwhal": {
       "status": "checked-against-catalog",
@@ -1147,7 +1915,23 @@
           "id": "narwhal-with-a-star-wand-clipart",
           "imageSha256": "089bb4d56baa6f5a97272d0e06031735ddbf63c0aba8a6c462c30fb27a872151"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Narwhal clipart collection, with {{artworkCount}} illustrations to explore. Spotted narwhals and whale characters appear in swimming scenes and imaginative adventures with balloons and a star wand.",
+        "The gallery includes “Spotted Narwhal Swimming” and “Spotted Whale in a Hot-Air Balloon” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "baa5cdbc5fadcbd8036a68e9eed6421637f9136a881361dd800b5cc071a61017",
+      "paragraphEvidence": [
+        {
+          "id": "spotted-narwhal-swimming-clipart",
+          "imageSha256": "5b74441c5897a823cc57023977a4f226171f35e65c03726ce8a41b912d7545f3"
+        },
+        {
+          "id": "spotted-whale-in-a-hot-air-balloon-clipart",
+          "imageSha256": "0048b334384ac19ac90229faf50c9f91fbbce9760182f75b181bd45d2ae26fb2"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.565Z"
     },
     "nissan": {
       "status": "checked-against-catalog",
@@ -1171,7 +1955,23 @@
           "id": "silver-classic-nissan-skyline-gt-r-style-coupe-clipart",
           "imageSha256": "50af24c96101262eb39a08343cc2e58765e258a9d9cfe1a56ef3f62196243ec5"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Nissan clipart collection, with {{artworkCount}} illustrations to explore. Find Nissan-inspired coupes, compact hatchbacks and classic sedans, shown in colorful views and monochrome line art.",
+        "The gallery includes “Monochrome Nissan 180SX Side View” and “Silver Classic Nissan Skyline GT-R-Style Coupe” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "d89d75502a75902d65c545b9f3cad16232f4e09ea0bfdc88f80fb509872c0bf4",
+      "paragraphEvidence": [
+        {
+          "id": "monochrome-nissan-180sx-side-view-clipart",
+          "imageSha256": "fa63922265461c341399d6daeae03f4e62b41d3279164cdd982532c3747ec9fd"
+        },
+        {
+          "id": "silver-classic-nissan-skyline-gt-r-style-coupe-clipart",
+          "imageSha256": "50af24c96101262eb39a08343cc2e58765e258a9d9cfe1a56ef3f62196243ec5"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.565Z"
     },
     "oldsmobile": {
       "status": "checked-against-catalog",
@@ -1195,7 +1995,23 @@
           "id": "blue-edged-chrome-oldsmobile-style-emblem-clipart",
           "imageSha256": "738230dc301af770a6cffb33e07e5c8922579ff82c0529a5f06269adaff6db29"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Oldsmobile clipart collection, with {{artworkCount}} illustrations to explore. Finned vintage coupes, streamlined cars and stylized oval badges feature in these Oldsmobile-inspired illustrations.",
+        "The gallery includes “Classic Finned Oldsmobile-Style Coupe in Grayscale” and “Blue-Edged Chrome Oldsmobile-Style Emblem” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "658409bb4d1ab3443e43ab602d7cb4184607d8c2b354bb3d25229aec869a668a",
+      "paragraphEvidence": [
+        {
+          "id": "classic-finned-oldsmobile-style-coupe-in-grayscale-clipart",
+          "imageSha256": "272c4d8343da9a33a9369a662cdb1f50a38a693923de4f790383bf9afaabaf62"
+        },
+        {
+          "id": "blue-edged-chrome-oldsmobile-style-emblem-clipart",
+          "imageSha256": "738230dc301af770a6cffb33e07e5c8922579ff82c0529a5f06269adaff6db29"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.565Z"
     },
     "ostrich": {
       "status": "checked-against-catalog",
@@ -1219,7 +2035,23 @@
           "id": "geometric-ostrich-clipart",
           "imageSha256": "e57e53fc48a12b50bb809132a747604f2c4a8737740ded7ca6ce370148c5eb67"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Ostrich clipart collection, with {{artworkCount}} illustrations to explore. Explore ostriches and chicks in nest scenes, patterned portraits and imaginative costumes, from a tiny chess player to a floral cape.",
+        "The gallery includes “Ostrich Nest with Eggs” and “Ostrich Chick and a Chess Rook” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "12bd7e3beae492b6cb39a5dc33702ef1ceaea0441d6eb6bb15811d1943a7c394",
+      "paragraphEvidence": [
+        {
+          "id": "ostrich-nest-with-eggs-clipart",
+          "imageSha256": "8742cdd2d8840f1830751e35d40cdbab9f1ab044bf310e561f09acba21cd0de8"
+        },
+        {
+          "id": "ostrich-chick-and-a-chess-rook-clipart",
+          "imageSha256": "ba1367433ff8a8b86f5d03e906c8c91b7e010c2114e14f8fd2660bbac6f6a592"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.565Z"
     },
     "otter": {
       "status": "checked-against-catalog",
@@ -1243,7 +2075,23 @@
           "id": "otter-reading-under-a-beach-umbrella-clipart",
           "imageSha256": "fd376031d021309d75f897c52f46d09b1dd680c49d53372ca10b0ef1e1a95d0e"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Otter clipart collection, with {{artworkCount}} illustrations to explore. Otters hold shells, fly kites and read beneath a beach umbrella, with one character riding a paper airplane.",
+        "The gallery includes “Otter Holding a Shell” and “Otter Reading under a Beach Umbrella” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "eed954f04b5a89271b2acb4b857f6db024a99145468949c1507bd87d47735049",
+      "paragraphEvidence": [
+        {
+          "id": "otter-holding-a-shell-clipart",
+          "imageSha256": "f233364fa27518628c6f046ac748651673eb5ccfc6c53cc4dce6238765e2fb58"
+        },
+        {
+          "id": "otter-reading-under-a-beach-umbrella-clipart",
+          "imageSha256": "fd376031d021309d75f897c52f46d09b1dd680c49d53372ca10b0ef1e1a95d0e"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.565Z"
     },
     "polar-bear": {
       "status": "checked-against-catalog",
@@ -1267,7 +2115,23 @@
           "id": "polar-bear-with-a-chest-of-gems-clipart",
           "imageSha256": "5f597220277e80c02999e01e5e3309e5fbf590d523c6e1242ef92aa38853478e"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Polar Bear clipart collection, with {{artworkCount}} illustrations to explore. Polar bears walk and play in imaginative scenes, from bongo drums and juggling snowballs to a chest of gems.",
+        "The gallery includes “Polar Bear Walking” and “Polar Bear with a Chest of Gems” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "68f8b78e3e5dbfe51003fe1efd728024a77d1e84b19d0a8cef261e4b8d2e17e4",
+      "paragraphEvidence": [
+        {
+          "id": "polar-bear-walking-clipart",
+          "imageSha256": "0f95f3593bd741d252b2ffc3a8fb546d17cd931bd6b375d0bb5be1a6a639b6f2"
+        },
+        {
+          "id": "polar-bear-with-a-chest-of-gems-clipart",
+          "imageSha256": "5f597220277e80c02999e01e5e3309e5fbf590d523c6e1242ef92aa38853478e"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.565Z"
     },
     "quesadilla": {
       "status": "checked-against-catalog",
@@ -1287,7 +2151,23 @@
           "id": "quesadilla-028",
           "imageSha256": "2211f20b9c2b6b2061823c47d16da4ee77decdeaab9008553b783a6901b583a0"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Quesadilla clipart collection, with {{artworkCount}} illustrations to explore. Find quesadilla wedges, colorful fillings, cooking scenes and playful food characters.",
+        "The gallery includes “Quesadilla Wedges on a Turquoise Plate” and “Grilled Quesadilla in a Pan” among its drawings. Illustrate a personal recipe page, a food vocabulary activity or a kitchen journal, selecting a view that makes your chosen ingredient or dish easy to recognize."
+      ],
+      "paragraphSourceSha256": "f01d4540ae5756cd303948914eabafbd673a168c0197dbe248c9dc92fe114a4f",
+      "paragraphEvidence": [
+        {
+          "id": "quesadilla-001",
+          "imageSha256": "e9afda0e93b6d63856f1fac536f80ccb724b8ba204063d32b9254e6ed4de8a31"
+        },
+        {
+          "id": "quesadilla-003",
+          "imageSha256": "6779f0ed4334c651f5457550d17096299dba9d62d27bfd653e0ab40366137d51"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.565Z"
     },
     "red-panda": {
       "status": "checked-against-catalog",
@@ -1311,7 +2191,23 @@
           "id": "red-panda-wearing-a-flower-crown-clipart",
           "imageSha256": "41a6cb4750435e9420311c72254501465319cf6ab765ba94d3537956163adcf7"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Red Panda clipart collection, with {{artworkCount}} illustrations to explore. Red pandas hold bamboo, play chess and open a ribboned gift; a flower crown adds a gentle character detail.",
+        "The gallery includes “Red Panda Holding Bamboo” and “Red Panda Opening a Ribboned Gift” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "f2d5bf94727ac30f058a7f4024d0c1ae55eddc6b988313376f741938ef70676c",
+      "paragraphEvidence": [
+        {
+          "id": "red-panda-holding-bamboo-clipart",
+          "imageSha256": "7872233b3dd146788ba61d5a9beb39615619d83736f3c09e53b2bdd388eb7d1b"
+        },
+        {
+          "id": "red-panda-opening-a-ribboned-gift-clipart",
+          "imageSha256": "a1c07dee06dfae9f8c4ffde2cb9746512870ce9e28e89b59c7e2af9c3c895593"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.565Z"
     },
     "robin": {
       "status": "checked-against-catalog",
@@ -1331,7 +2227,23 @@
           "id": "robin-in-a-nest-with-eggs-clipart",
           "imageSha256": "83b9012d8ca676a62e01634e64cc1d0bf022973342a45132d1ce5bcfd5fdfd95"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Robin clipart collection, with {{artworkCount}} illustrations to explore. Young robins appear among flowers and nests, alongside storybook birds reading, exploring and caring for their eggs.",
+        "The gallery includes “Young Robin Above a Daisy” and “Robin in a Nest with Eggs” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "d82bafa5261a47ac21bfd4ad572ed6355a04830ac0f10c225a24b2ba21891f17",
+      "paragraphEvidence": [
+        {
+          "id": "young-robin-above-a-daisy-clipart",
+          "imageSha256": "2099a514810127b236eb979fbb66af22887fd5e40b33b816a0fd9429ba023f41"
+        },
+        {
+          "id": "robin-in-a-nest-with-eggs-clipart",
+          "imageSha256": "83b9012d8ca676a62e01634e64cc1d0bf022973342a45132d1ce5bcfd5fdfd95"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.565Z"
     },
     "rolls-royce": {
       "status": "checked-against-catalog",
@@ -1355,7 +2267,23 @@
           "id": "silver-vintage-rolls-royce-style-touring-car-clipart",
           "imageSha256": "0ffa4fc5f63602f7bb6be170cda59b82faca2cce0c2e72b7d8deaa0c0f9f47b4"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Rolls-Royce clipart collection, with {{artworkCount}} illustrations to explore. Rolls-Royce-inspired roadsters and SUVs appear alongside vintage sedans and touring cars in detailed vehicle views.",
+        "The gallery includes “Purple Rolls-Royce Droptail-Inspired Roadster” and “Vintage Rolls-Royce-Style Sedan Rear View Drawing” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+      ],
+      "paragraphSourceSha256": "0e3e3eec0d3409cc28c529e882c512e9a258a6420c5eb9760cc47e343dd2a18a",
+      "paragraphEvidence": [
+        {
+          "id": "purple-rolls-royce-droptail-inspired-roadster-clipart",
+          "imageSha256": "3eeb86c0d310c0cc6b58ca4c60cf77c5571c6a523b0743d953cb35a58c6ad84a"
+        },
+        {
+          "id": "vintage-rolls-royce-style-sedan-rear-view-drawing-clipart",
+          "imageSha256": "f3579a8f21df5dc7ffbbe6676bf2e01ccdbef3d7095b3f109db32ab80aeb269a"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.565Z"
     },
     "scorpion": {
       "status": "checked-against-catalog",
@@ -1375,7 +2303,23 @@
           "id": "scorpion-with-a-leaf-umbrella-clipart",
           "imageSha256": "2e7857152abfbaf96252db31129cbb0f2795a2922e8e3e8e06aaad17d2596e96"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Scorpion clipart collection, with {{artworkCount}} illustrations to explore. Scorpions rest on rocks, lift their claws and appear in imaginative scenes such as a leaf held like an umbrella.",
+        "The gallery includes “Scorpion on a Rock” and “Golden Scorpion with Open Claws” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "094450b6cc0e0a8d7cb9bcea2aebc409ba5a91937e5539a7fe542d9b39bc1845",
+      "paragraphEvidence": [
+        {
+          "id": "scorpion-on-a-rock-clipart",
+          "imageSha256": "015bf967ee2e63246f22af6a311028a2dc98bb9e08c2cd5b688022303bb1a16c"
+        },
+        {
+          "id": "golden-scorpion-with-open-claws-clipart",
+          "imageSha256": "44b797281572225dd449e54bb06a7f1981b77985861ded5baed05f9e8e6c76e2"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.566Z"
     },
     "seahorse": {
       "status": "checked-against-catalog",
@@ -1399,7 +2343,23 @@
           "id": "seahorse-inside-pink-petals-clipart",
           "imageSha256": "97ab05546ef8d1c9688bf2e0f091cd823350c9b3802fece4f7a4bf28b4ade647"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Seahorse clipart collection, with {{artworkCount}} illustrations to explore. Curled seahorses face one another, nestle among pink petals and take part in playful scenes with a crown or a painted sun.",
+        "The gallery includes “Golden Seahorse with a Crown” and “Two Seahorses Facing Each Other” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "44dfe9830a0c72024443a0b6579355eed2e257614822744383928903a2216242",
+      "paragraphEvidence": [
+        {
+          "id": "golden-seahorse-with-a-crown-clipart",
+          "imageSha256": "68efdda1eeed9d6396ce62fb6ea390f5713732af64fd643aa20ef38d40cb1700"
+        },
+        {
+          "id": "two-seahorses-facing-each-other-clipart",
+          "imageSha256": "364b0e855d8f93d652b9932b85083857ad08783eafcdde23d1d680198516ea47"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.566Z"
     },
     "seal": {
       "status": "checked-against-catalog",
@@ -1423,7 +2383,23 @@
           "id": "seal-building-a-sandcastle-clipart",
           "imageSha256": "8203ecddf9d4632a23bbe20bfa03f1e7e77baa3277876dccf9cb47f4ccf912a1"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Seal clipart collection, with {{artworkCount}} illustrations to explore. Spotted seals rest and play chess, while cheerful characters perform a magic trick or build a sandcastle.",
+        "The gallery includes “Spotted Seal Resting” and “Seal Magician with a Top Hat” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "546721695f8d22b30d8c33b6b0200b7e53049cf4a83d5e8059df5af2fba258ad",
+      "paragraphEvidence": [
+        {
+          "id": "spotted-seal-resting-clipart",
+          "imageSha256": "c8ab426a63b5a90cb785f9b2b5b9aad54bc3f854d2c9ea5052432bc87b961574"
+        },
+        {
+          "id": "seal-magician-with-a-top-hat-clipart",
+          "imageSha256": "ee378581ded4a6ac78cea2fdb9f1201b37bb95a8994bbad97d691fc1ddb9bed6"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.566Z"
     },
     "skunk": {
       "status": "checked-against-catalog",
@@ -1447,7 +2423,23 @@
           "id": "skunk-dancing-with-a-red-ribbon-clipart",
           "imageSha256": "3dc9d4ae31fa73688811ec0177499a1a97dc35f38c165e8b079a5f569258aba6"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Skunk clipart collection, with {{artworkCount}} illustrations to explore. A skunk with a curled tail enjoys an apple slice and purple ice cream, then dances with a red ribbon.",
+        "The gallery includes “Smiling Skunk with a Curled Tail” and “Skunk Eating an Apple Slice” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "73007289f6576961a2e9f7b00390ad52d214a3e5df3e02014b27824f8ed2aca6",
+      "paragraphEvidence": [
+        {
+          "id": "smiling-skunk-with-a-curled-tail-clipart",
+          "imageSha256": "818779312f281c0910ce69d0c9778f663202d005c71e8bf5842728cbf463d5e9"
+        },
+        {
+          "id": "skunk-eating-an-apple-slice-clipart",
+          "imageSha256": "8ff1934dbe394addd8b7ef50ab8ac29de3a39f852e018f3c0e250509183f4eac"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.566Z"
     },
     "sloth": {
       "status": "checked-against-catalog",
@@ -1471,7 +2463,23 @@
           "id": "sloth-building-a-sandcastle-clipart",
           "imageSha256": "68e7902cfb2f31a4a64558ecb9632e56cef286dca8e2dfe253ef48ded10fe251"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Sloth clipart collection, with {{artworkCount}} illustrations to explore. Sloths hang from leafy branches and join gentle activities with a pinwheel, colorful blocks and a sandcastle.",
+        "The gallery includes “Sloth Hanging from a Leafy Branch” and “Sloth Stacking Colorful Blocks” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "0178a301e779ef77634d39004814e2cf498939983d76c5921bf91502be1a6a86",
+      "paragraphEvidence": [
+        {
+          "id": "sloth-hanging-from-a-leafy-branch-clipart",
+          "imageSha256": "4746cb844d83f74ed24b13aebf3e3838f35a8a8b2d6977cff3d605f1a33a1aaf"
+        },
+        {
+          "id": "sloth-stacking-colorful-blocks-clipart",
+          "imageSha256": "cc71f9ce11b34579f44d52ad8abce47e3b10cee1e58a0dc000d4eea873666514"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.566Z"
     },
     "snail": {
       "status": "checked-against-catalog",
@@ -1495,7 +2503,23 @@
           "id": "snail-on-a-red-apple-clipart",
           "imageSha256": "56ddc30adc6aeacd7369d66a26c1c114e3e75340ea89867a6dc28a0342c0b430"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Snail clipart collection, with {{artworkCount}} illustrations to explore. Snails curl among ferns and apples or take part in cheerful scenes with a scarf and a birthday cupcake.",
+        "The gallery includes “Snail on a Curled Fern” and “Snail and a Birthday Cupcake” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "9ac07fc1faec5e3085034855463966bb1ef5eeec7dbda29c17d1404afa116c68",
+      "paragraphEvidence": [
+        {
+          "id": "snail-on-a-curled-fern-clipart",
+          "imageSha256": "c6e7277fb76764111d649a23ca081f8be3dafd56c90804717154bbbda8f05338"
+        },
+        {
+          "id": "snail-and-a-birthday-cupcake-clipart",
+          "imageSha256": "802759075e6a9a6cfe350c96f47fb01935267853b5d3a385e62b7c907487b7bc"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.566Z"
     },
     "squid": {
       "status": "checked-against-catalog",
@@ -1519,7 +2543,23 @@
           "id": "squid-wrapping-a-gift-clipart",
           "imageSha256": "f477ae0d4dca6c9f72c2c5aeecaf1d6ab3917d5a42b277975169930043eac784"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Squid clipart collection, with {{artworkCount}} illustrations to explore. Squid with flowing tentacles join patterned illustrations and playful scenes, including badminton and gift wrapping.",
+        "The gallery includes “Squid with Flowing Tentacles” and “Squid Wrapping a Gift” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "9f1e1296bf629b08dcdef1aeb05e504bec14286d58bfe8458b993e616c4fbbc4",
+      "paragraphEvidence": [
+        {
+          "id": "squid-with-flowing-tentacles-clipart",
+          "imageSha256": "51de82d824851f3ce5bb60ace13e95288948b1637bb11fc9ac7a378c444ca426"
+        },
+        {
+          "id": "squid-wrapping-a-gift-clipart",
+          "imageSha256": "f477ae0d4dca6c9f72c2c5aeecaf1d6ab3917d5a42b277975169930043eac784"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.566Z"
     },
     "starfish": {
       "status": "checked-against-catalog",
@@ -1543,7 +2583,23 @@
           "id": "starfish-in-a-wooden-wagon-clipart",
           "imageSha256": "c34df2c4e1e8cb9c3f6f4d2e5b374229f94d814d4d5b65d0a6950c0170aa992e"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Starfish clipart collection, with {{artworkCount}} illustrations to explore. Textured and colorful starfish appear with leaves, in a wooden wagon and as a little graduation character.",
+        "The gallery includes “Orange Starfish with Raised Bumps” and “Pink Starfish with a Green Leaf” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "eb641d5edbb6e40e34ce4d258798eba09e6708303007ff324614469297b965d8",
+      "paragraphEvidence": [
+        {
+          "id": "orange-starfish-with-raised-bumps-clipart",
+          "imageSha256": "f5471b2c0856985b12fd2c5cff81b4276f64aa5c2bbe5e6b1c9eae002e9ae174"
+        },
+        {
+          "id": "pink-starfish-with-a-green-leaf-clipart",
+          "imageSha256": "2857f527c138a276fb6e94fb0e3ba900b6286ee826e7f6470c37a47a92e54cdd"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.566Z"
     },
     "stingray": {
       "status": "checked-against-catalog",
@@ -1567,7 +2623,23 @@
           "id": "stingray-building-a-sandcastle-clipart",
           "imageSha256": "ce36b1d952d32ba02f0cb6853fe7463745f1de08ad7427b5a06e3b5ef62ad820"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Stingray clipart collection, with {{artworkCount}} illustrations to explore. Spotted rays and decorative leaf patterns sit alongside imaginative stingrays in a balloon or building a sandcastle.",
+        "The gallery includes “Blue-Spotted Stingray” and “Decorative Ray and Round Leaves” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "069475fb5c36b10c4959b78caa7d83dc7e5fb564a7d466fd8d0d729b18ca52a0",
+      "paragraphEvidence": [
+        {
+          "id": "blue-spotted-stingray-clipart",
+          "imageSha256": "a2ea6a4e18c2768b1671c6290187fbe38447ae7d24a76634a2029369fdcb535e"
+        },
+        {
+          "id": "decorative-ray-and-round-leaves-clipart",
+          "imageSha256": "6d71777a5219415df978d7957da820014e29ffa5b95fabfdd3d5b19dfbaf4a36"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.566Z"
     },
     "swan": {
       "status": "checked-against-catalog",
@@ -1591,7 +2663,23 @@
           "id": "swan-turning-a-book-page-clipart",
           "imageSha256": "ecd2ef593dc75b38a07a5be7749f6e58234e59c8c2e7fd71c6978f77d94f5b6f"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Swan clipart collection, with {{artworkCount}} illustrations to explore. Find swans resting and preening by the water, a newly hatched cygnet and an imaginative bird turning a book page.",
+        "The gallery includes “Swan Preening on the Water” and “Black-Necked Swan on a Rock” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "06e5d98132d6d7c5f97144509028bea5b53f5b557f57722bd4bfc1e2f0fcf82d",
+      "paragraphEvidence": [
+        {
+          "id": "swan-preening-on-the-water-clipart",
+          "imageSha256": "477c61ada0e31d751278ddff75309d0b40f1faf699bd37e293f78e5a489a9781"
+        },
+        {
+          "id": "black-necked-swan-on-a-rock-clipart",
+          "imageSha256": "7706ad388f1fbe9f812f2c3555b2325854f7ba2cb3a54f61be3c266ec1e97588"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.566Z"
     },
     "toucan": {
       "status": "checked-against-catalog",
@@ -1615,7 +2703,23 @@
           "id": "toucan-wizard-with-a-star-wand-clipart",
           "imageSha256": "38431cbb2415cdd7e259c533d4a083f4bb7cf35beefcd2ec3ad0acf4d9b5899a"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Toucan clipart collection, with {{artworkCount}} illustrations to explore. Colorful toucans share berries, raise their wings and step into whimsical scenes with bright fruit and a star wand.",
+        "The gallery includes “Two Toucans Sharing a Berry” and “Toucan Wizard with a Star Wand” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "35e7ae21fdb103f3d3f07e2824abe60fbcc0959af2d049ef4af73014d2636714",
+      "paragraphEvidence": [
+        {
+          "id": "two-toucans-sharing-a-berry-clipart",
+          "imageSha256": "320e1be28722caf4f91292cdd975c073ea145b1929feb24a0d5825ad73c7c97d"
+        },
+        {
+          "id": "toucan-wizard-with-a-star-wand-clipart",
+          "imageSha256": "38431cbb2415cdd7e259c533d4a083f4bb7cf35beefcd2ec3ad0acf4d9b5899a"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.566Z"
     },
     "vase": {
       "status": "checked-against-catalog",
@@ -1631,7 +2735,23 @@
           "id": "vase-02-amber-twist",
           "imageSha256": "18cc81f0acd39744340a42351ebbfde4b439a79c43e80e672bdc1f869ccfc9e6"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Vase clipart collection, with {{artworkCount}} illustrations to explore. Discover decorative vases in glass, ceramic and other styles, with flowers and without.",
+        "The gallery includes “Folded White Vase” and “Amber Glass Vase with a Calla Lily” among its drawings. Plan a personal creative notebook, a story activity or an entertainment-themed craft, matching the subject and composition to your own idea."
+      ],
+      "paragraphSourceSha256": "3eb330e20b18c39a34624aa30df62c840fbe04537e7a836cca46f9a4ced68a52",
+      "paragraphEvidence": [
+        {
+          "id": "vase-01-folded-porcelain",
+          "imageSha256": "d247fc745ff5862e0aa305a83bd8c2a45af234f9f479d81a77b0d5956c825b21"
+        },
+        {
+          "id": "vase-02-amber-twist",
+          "imageSha256": "18cc81f0acd39744340a42351ebbfde4b439a79c43e80e672bdc1f869ccfc9e6"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.566Z"
     },
     "walrus": {
       "status": "checked-against-catalog",
@@ -1655,7 +2775,23 @@
           "id": "walrus-riding-a-skateboard-clipart",
           "imageSha256": "467a6452a481004c3c50c1b872154f1d71e9e6633a58ee14e161420361feec7a"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Walrus clipart collection, with {{artworkCount}} illustrations to explore. Long-tusked walruses rest beside seaweed and appear as cheerful characters graduating or riding a skateboard.",
+        "The gallery includes “Seated Walrus with Long Tusks” and “Sleeping Walrus Beside Seaweed” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+      ],
+      "paragraphSourceSha256": "8eba5441aaa9ed0569c3b7423313636fd5addd2bd8cc368b44db80d37b5eacf1",
+      "paragraphEvidence": [
+        {
+          "id": "seated-walrus-with-long-tusks-clipart",
+          "imageSha256": "31a6207fd7853332d085ecbda4767528a30239cda4e1f4a5f8e46b39f296f98e"
+        },
+        {
+          "id": "sleeping-walrus-beside-seaweed-clipart",
+          "imageSha256": "72ab021d98cecc926e0063161c33a11cb8b5b672520e77b6f888a9b5479ea800"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.566Z"
     },
     "yay": {
       "status": "checked-against-catalog",
@@ -1671,7 +2807,23 @@
           "id": "yay-002",
           "imageSha256": "55492031925e8c22d3ef30039e517f7e18daec0a7ed36f6ff23e9a3dc2f0ec91"
         }
-      ]
+      ],
+      "paragraphs": [
+        "Welcome to our Yay clipart collection, with {{artworkCount}} illustrations to explore. Cheerful characters, signs and colorful objects share a little celebration.",
+        "The gallery includes “Yay Garden Bunting and Watering Can” and “High-Five with a Yay Speech Bubble” among its drawings. Make a personal greeting, an event scrapbook page or a family activity, matching the illustration to the occasion and the space for your message."
+      ],
+      "paragraphSourceSha256": "cd732efdcd44aeb905cf0471a0223be4eb9042c97315cdb6aae867d8bc4add41",
+      "paragraphEvidence": [
+        {
+          "id": "yay-001",
+          "imageSha256": "72d5fc8d3a1a53e8f546ba3a3e3e9241cc40e8aad3e8e01a285e585d5124afac"
+        },
+        {
+          "id": "yay-002",
+          "imageSha256": "55492031925e8c22d3ef30039e517f7e18daec0a7ed36f6ff23e9a3dc2f0ec91"
+        }
+      ],
+      "paragraphsCheckedAt": "2026-11-03T17:56:59.566Z"
     }
   }
 }
