@@ -3,8 +3,12 @@
 ## State and ownership
 
 This is the canonical source for the build-free publisher in this repository.
-It remains **not installed and not fully end-to-end verified** until the first
-successful production activation and public byte/page checks are recorded.
+The runtime is installed and its content publication is verified live. The
+accepted content revision is `ee55fe713b404a06e12b5808b230b82f91fdb7f2`, root
+`71d2d3b2a1e42d213e95a297eeadc87ece6b10c917effe81eaa168930004e189`.
+Read `config/content-publisher.json`, the primary production record and the actual
+public control endpoint before publishing. Later software-only optimizations do
+not imply a different catalog or permit replaying old imports.
 The source, Git history, original artwork, source-bound review receipts, protected
 IndexNow ledger and independent `UltraClipart-Publisher-KEEP` backup must survive
 chat and cache cleanup. Never preserve private signing keys in a source backup.
@@ -69,9 +73,16 @@ new content or eliminate the native/live gates.
 
 ## Verification limits
 
-Focused private reader, CAS, source-canonicalization, graph, related-tail and
-identifier tests pass. The full bounded cross-facet dark run and final native
-browser/public checks remain necessary. The first-install native report covered
+Focused reader, CAS, canonical-source, graph, related-tail and identifier tests
+pass. Two private 20-topic / 2,000-artwork technical campaigns passed in 2,254.624
+and 2,174.853 seconds. Each transferred and read back 2,000 real WebPs plus 2,000
+PDFs, composed ten bounded catalog packets and tested over 4,000 native routes.
+Both removed all 4,000 private objects and performed no production pointer write.
+Their timings cover transport, composition, native tests and private cleanup; they
+reuse approved payloads and are not new image reviews or a guaranteed complete
+publication time for arbitrary faulty incoming packages. Actual production
+activation and live checks are independently proved by the 674-topic prose delta
+and the 9,456 affected art/editor pages plus all 6,684 incoming media files. The first-install native report covered
 76,136 local R2 objects and 26 managed routes; it is not a live production test.
 The legacy full test command still contains tests requiring a compiled `dist`;
 those failures cannot be described as passed merely because no static build is

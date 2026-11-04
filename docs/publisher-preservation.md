@@ -73,3 +73,34 @@ SHA-256 `ab6ab36b4428f6193bffe85a4d461d1636c38863de1449112a24b0a2798d02f9`.
 The regular KEEP snapshot and a separate isolated restore verification remain
 necessary after committing an installer change; the evidence capsule alone is
 not a source backup or a replacement for native originals and rollback assets.
+
+## Build-free runtime preservation, 2026-11-04
+
+The installed template/runtime package is permanent publisher state. Do not
+delete the current software directory named by `config/content-publisher.json`
+just because it is under work/. Content-only publication uses it without rebuilding
+the catalog. The live data epoch and software/control revision can differ.
+
+The former ccb5 rollback's 71,418 expanded art/editor HTML copies were losslessly
+packed, verified member by member against its remote byte-verified manifest and
+sample-restored before removing only those redundant expanded copies. The exact
+archive and restore guide remain in `work/delivery/ccb5c2c9804c863b00071ddb5f71df0d860857df/rollback-html-preserved/`
+and in immutable `UltraClipart-Publisher-KEEP/rollback-ccb5-html-20261104`.
+Restore art/edit from that archive before an intentionally requested legacy full
+rollback. Non-HTML fallback assets, native art/PDFs and all receipts remain intact.
+
+The installed ee55 runtime and complete small public package are independently
+archived in `UltraClipart-Publisher-KEEP/installed-content-runtime-ee55-20261104`.
+Read its manifest and restore guide. Credentials and the owner signing key are
+not in that capsule. Preserve later installed-runtime capsules too. This is a
+local independent backup, not an off-device backup. Restoration never publishes.
+
+Archive-backed extraction cleanup also retains the complete private native ZIPs.
+Every removed expanded source is mapped to its exact archive SHA-256, member
+name, member SHA-256 and byte size in
+`work/catalog-snapshot/disk-cleanup-archive-backed.jsonl`. Unmatched files were
+kept. `scripts/catalog-snapshot/restore-extracted-source.py` can restore a single
+member to a NEW protected work path after verifying both archive and source.
+A real PDF and WebP were restored and compared before removing only those
+disposable restored test copies. Preserve this journal and the private native
+ZIP directory; a cleanup record is not permission to delete the archives.
