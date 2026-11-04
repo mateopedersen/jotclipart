@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';import {readSharedArtwork} from '../../server/catalog-snapshot/shared-artwork-context.mjs';
+test('shared artwork uses the captured canonical fields rather than stale copied cards',async()=>{
+ const id='example-art',part=createHash('sha256').update(id).digest('hex').slice(0,3),prefix=part.slice(0,2),item={id,title:'Corrected title',published:true,indexable:true},directory={key:'directory'},leaf={key:'leaf'},context={snapshot:{revision:'a'.repeat(40)},getFacet:async()=>({type:'artwork-root',revision:'a'.repeat(40),directories:{[prefix]:directory}}),read:async(_f,d)=>d===directory?{type:'artwork-directory',prefix,shards:{[part]:leaf}}:{schema:1,shard:part,records:[item]}};
+ const result=await readSharedArtwork(context,{ids:[id],artworks:[{id,title:'Outdated title'}]});assert.equal(result[0].title,'Corrected title');await assert.rejects(readSharedArtwork(context,{ids:[id,id],artworks:[{id},{id}]}));item.published=false;await assert.rejects(readSharedArtwork(context,{ids:[id],artworks:[{id}]}));
+});

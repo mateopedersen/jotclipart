@@ -139,13 +139,17 @@ export function safeAsset(value: unknown): value is string {
     /^https:\/\/assets\.ultraclipart\.com\/[a-zA-Z0-9/_.%-]+\.(?:webp|pdf)$/.test(value)
   );
 }
-export function normalize(item: ArtworkInput): Profile {
+export function normalize(
+  item: ArtworkInput,
+  { catalogSubject }: { catalogSubject?: Subject | null } = {},
+): Profile {
   const revision = Number.isSafeInteger(item.revision) && item.revision! > 0 ? item.revision! : 0;
   const title = words(item.title),
     text = words(`${item.title} ${item.alt ?? ''}`);
   const titled = mentions(item.title),
     named = mentions(`${item.title} ${item.alt ?? ''}`);
-  const topic = BY_TOPIC.get(item.topic ?? '') ?? CATALOG_SUBJECTS.get(item.topic ?? '');
+  const topic = BY_TOPIC.get(item.topic ?? '') ??
+    (catalogSubject === undefined ? CATALOG_SUBJECTS.get(item.topic ?? '') : catalogSubject ?? undefined);
   const catalogContext =
     topic?.domain === 'catalog' && topic.terms.some((term) => ` ${text} `.includes(` ${term} `));
   const issues: string[] = [];

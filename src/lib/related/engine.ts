@@ -235,6 +235,7 @@ function card(result: Ranked, group: RelatedCard['group']): RelatedCard {
 /** Build adapter: normalize once, query bounded postings. No browser catalog, network model or N×N matrix. */
 export class RelatedIndex {
   profiles = new Map<string, Profile>();
+  registeredTopics: ReadonlySet<string> = REGISTERED_TOPICS;
   private buckets = new Map<string, string[]>();
   private revisions = new Map<string, number>();
   private topics = new Set<string>();
@@ -267,7 +268,7 @@ export class RelatedIndex {
     this.digest ^= BigInt(`0x${profile.fingerprint}`);
     const postingKeys = [
       ...keys(profile),
-      ...(profile.publicationEligible && REGISTERED_TOPICS.has(item.topic ?? '')
+      ...(profile.publicationEligible && this.registeredTopics.has(item.topic ?? '')
         ? [`collection:${item.topic}`]
         : []),
     ];
@@ -307,7 +308,7 @@ export class RelatedIndex {
     for (const candidate of candidates) {
       const candidateKeys = [
         ...keys(candidate),
-        ...(candidate.publicationEligible && REGISTERED_TOPICS.has(candidate.item.topic ?? '')
+        ...(candidate.publicationEligible && this.registeredTopics.has(candidate.item.topic ?? '')
           ? [`collection:${candidate.item.topic}`]
           : []),
       ];
@@ -356,7 +357,7 @@ export class RelatedIndex {
       algorithm: ALGORITHM_VERSION,
     };
     if (!source.publicationEligible) return empty;
-    const collectionCandidates = REGISTERED_TOPICS.has(source.item.topic ?? '')
+    const collectionCandidates = this.registeredTopics.has(source.item.topic ?? '')
       ? (this.buckets.get(`collection:${source.item.topic}`) ?? []).slice(0, 64)
       : [];
     const candidates = new Set<string>();
