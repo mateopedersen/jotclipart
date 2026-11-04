@@ -1,13 +1,14 @@
 ---
 import CatalogCount from './CatalogCount.astro';
-import { collectionCountTemplate } from '../lib/collection-count-copy';
 import { collectionCountParts } from '../lib/collection-count-tokens.mjs';
 interface Props {
   text: string;
   topic: string;
 }
 const { text, topic } = Astro.props;
-const parts = collectionCountParts(collectionCountTemplate(text));
+// Topic numbers (911, 300, 007, years…) describe the subject. Only an explicit
+// inventory placeholder may be replaced with the current catalog count.
+const parts = collectionCountParts(text);
 ---
 
 {parts.map((part) =>
