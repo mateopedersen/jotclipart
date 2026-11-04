@@ -40,6 +40,40 @@ an archive filename expanded into captions. Actual pixel review and source/brand
 identification happen before admission; the publisher never fabricates them.
 No inference service or paid model is enabled by this command.
 
+## Subject first intake review — owner direction, 2026-11-04
+
+Before freezing a capsule, inspect the actual incoming source pixels and compare
+each title, alt and description with the image. Begin descriptions with the main
+subject and visible action, or the identity and arrangement of a static object.
+Clothing, tools and background are secondary details. A natural action title is
+useful when it distinguishes the scene; preserve existing meaningful titles and
+good descriptions. Follow `content/artwork-editorial.md` and the official product
+identity workflow without adding unsupported model years, specifications or claims.
+
+A model's semantic approval requires the actual pixels, exact source checksums
+and concrete observations. A filename, prompt, regular expression or text gate is
+not image evidence. Automated checks may verify binding, counts, duplication and
+copy consistency, but cannot supply the missing visual judgment. No paid inference
+is implicitly authorized by this policy.
+
+Changing title, alt, description, topic or product identity invalidates the old
+review fingerprint or token even if media hashes still match. Recheck affected
+source pixels and final copy, then validate a newly bound review before admitting
+the capsule. Preserve stable IDs, native media, accepted memberships and licenses.
+Do not mutate a frozen capsule or the inputs of an active packet. A correction
+after publication is a separate reviewed metadata delta against a freshly captured
+signed parent, with the ordinary at most 256 changed artwork limit and all normal
+activation and public verification gates.
+
+Every affected topic needs two short, distinct paragraphs totaling 50 to 200 words.
+The first sentence opens on that topic's actual visual character without a count.
+Exactly one `{{artworkCount}}` in the inventory paragraph renders the accepted live
+count; use the final resulting membership for append and merge checks. Describe
+real available drawing types and differences, without invented classroom, craft
+or packaging uses or a repeated generic opening. Refresh topic source and paragraph
+review signatures when their bound metadata or wording changes. A catalog grounded
+topic check is not a fresh visual review of all historical artwork.
+
 `intakeArchive` in `scripts/catalog-snapshot/intake-archive.mjs` first preserves a
 complete checksum-verified private ZIP and reads every ZIP member for CRC. APFS
 clone support saves physical duplication; no full library/build is copied. Read

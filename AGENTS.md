@@ -943,3 +943,23 @@ Do not publish stale ccb over this activated catalog. Current proof/continuation
 The owner targets 20 topics / 2,000 artworks within 60 minutes for future batches;
 measure real intake/review/repair/transfer/verification separately and do not
 claim this target is guaranteed or achieved before an actual complete test.
+
+
+## Owner copy rule: subject and visible action first — 2026-11-04
+
+For every new or revised artwork, start the description with its actual main
+subject and visible action, or the identity and arrangement of a static object.
+Do not replace a waiter serving drinks or a technician handling equipment with
+a list of clothes or incidental props. Keep natural useful copy; do not apply a
+repeated caption formula. Meaningful action titles must agree with the actual
+pixels. Reinspect exact source pixels and renew metadata/context review bindings
+after copy changes; filename or regex checks are never visual understanding.
+
+Every affected topic uses two short, distinct paragraphs grounded in its accepted
+collection, with its topic name and clipart naturally present, one live count
+placeholder in the inventory paragraph, and real drawing variety. Remove invented
+uses and writing-process filler such as unsupported-model or labeling-policy
+explanations; retain needed concept qualifications naturally on the depicted
+objects. Preserve stable IDs, originals, URLs, licenses, source evidence, normal
+bounded publisher gates and independent live verification. See
+`docs/content/artwork-editorial.md` and `docs/delivery-content-publisher.md`.

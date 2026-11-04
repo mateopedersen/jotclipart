@@ -17,11 +17,16 @@ not promise automatic semantic uniqueness for millions of unseen collections.
 
 # Collection introductions
 
-Owner direction, 2026-11-03: every current and future subject page has two or
-three short, topic-specific English paragraphs. Explain the collection's actual
-drawings, current size, useful differences and relevant uses. This supersedes the
-earlier one-paragraph limit. It is an owner presentation choice, not a Google
-word-count requirement or a ranking guarantee.
+Owner direction, 2026-11-04: every current and future subject page has exactly
+two short, topic-specific English paragraphs totaling 50 to 200 words. Describe
+the actual drawings, current live count and visible variety available in the
+accepted inventory. Open on the topic's own visual character, with no count or
+count placeholder in the first sentence. Put exactly one `{{artworkCount}}` in
+the inventory paragraph; the accepted live membership supplies that count. Do not
+invent classroom, craft, packaging or other uses to fill space, or repeat a generic
+one sentence opening. This supersedes the earlier two or three paragraph and one
+paragraph limits. It is an owner presentation choice, not a Google word count
+requirement or a ranking guarantee.
 
 The existing editorial record keeps `intro` as its concise, checked search/schema
 summary. Its `paragraphs` contain the visible introduction, including exactly one
@@ -35,14 +40,17 @@ titles, alt text and image hashes for the complete topic. Replacing artwork,
 changing reviewed identities or editing the summary invalidates the expansion.
 `paragraphReviewSha256` also binds the exact paragraph wording, selected examples
 and check date; a text edit needs a renewed catalog check.
-The normal Astro and publisher gates require all published subjects, without a
-legacy exemption, to carry checked 2–3 paragraph copy and valid examples.
+Submit checked two paragraph copy and valid examples for every published subject,
+without a legacy exemption. The normal Astro and publisher structural checks do
+not substitute for the semantic catalog check.
 
 For a new topic, complete its normal image reviews and source-bound concise
 summary first. `node scripts/collection-introduction-draft.mjs --topic <slug>`
 prepares a private, non-overwriting draft. It combines the accepted topic summary
 with actual public artwork labels and suggested uses from the current primary
-category. It does not infer a picture from its filename, inspect unseen pixels,
+category. Treat those uses as unapproved suggestions and omit any that are not
+grounded in this collection. Generated suggestions are not evidence. The helper
+does not infer a picture from its filename, inspect unseen pixels,
 approve a record, invoke paid inference or publish anything. Read and edit the
 draft for the particular topic before recording checked paragraphs in the normal
 collection registry. Bind the accepted text with `collectionParagraphSignature`
