@@ -18,12 +18,21 @@ import { verifyNativeContent } from './test-content-native.mjs';
 import { sealCatalogContent } from './seal-content.mjs';
 import { activateCatalogContent } from './activate-content.mjs';
 import { verifyContentLive } from './verify-content-live.mjs';
-import { validateManifest } from '../publication-policy.mjs';
+import {
+  incomingMediaFiles,
+  incomingMediaStageScope,
+  incomingManifestSHA256,
+} from './incoming-media-plan.mjs';
 import { sharedContentBaseline } from './legacy-source-guard.mjs';
+import { reverifyIncomingBeforeSeal } from './incoming-media-readback.mjs';
 const hash = (b) => createHash('sha256').update(b).digest('hex');
 export async function withCatalogReader({ directory, verifier, parentSnapshotSHA256 }, operate) {
   return withPrivateCatalogSession(
-    { directory, kind: 'reader', job: { mode: 'PINNED_CATALOG_READ_ONLY', parentSnapshotSHA256, verifier } },
+    {
+      directory,
+      kind: 'reader',
+      job: { mode: 'PINNED_CATALOG_READ_ONLY', parentSnapshotSHA256, verifier },
+    },
     async ({ secret }) => {
       const cache = metadataDiskCache({
         directory: resolve('work/catalog-snapshot/metadata-cache'),
@@ -111,7 +120,8 @@ export async function publishReviewedCapsule({
           artworkRows: packet.artworkRows,
           topicRows: packet.topicRows,
           incomingMediaManifest: packet.incomingMediaManifest,
-          mediaReceiptSHA256: hash(Buffer.from(JSON.stringify(packet.incomingMediaManifest))),
+          phase: 'local-preflight',
+          mediaPlanSHA256: incomingManifestSHA256(packet.incomingMediaManifest),
         });
       for (const change of packet.changes)
         await validators.validateSourceChange({
@@ -124,27 +134,20 @@ export async function publishReviewedCapsule({
         const descriptor = await topics.lookupCollection(change.slug);
         const oldRecord = descriptor ? await topics.read(descriptor, 256 * 1024) : null;
         assertCompleteTopicSearchDelta(oldRecord, change, new Set(changed.keys()));
-        await validators.validateSourceTopic({ change, oldRecord,
-          resolveAfterArtwork: (id) => changed.has(id) ? changed.get(id) : readArtwork(parent, id) });
+        await validators.validateSourceTopic({
+          change,
+          oldRecord,
+          resolveAfterArtwork: (id) =>
+            changed.has(id) ? changed.get(id) : readArtwork(parent, id),
+        });
       }
     },
   );
-  const files = [...validateManifest(packet.incomingMediaManifest).values()];
+  const files = [...incomingMediaFiles(packet.incomingMediaManifest).values()];
+  let mediaStageReceipt = null;
   if (files.length) {
-    const records = files.map((f) => ({
-        key: new URL(f.url).pathname.slice(1),
-        path: f.path,
-        bytes: f.bytes,
-        sha256: f.sha256,
-        mime: f.contentType,
-        ...(f.kind === 'pdf'
-          ? { contentDisposition: 'attachment; filename="' + f.assetId + '.pdf"' }
-          : {}),
-      })),
-      sourceByKey = Object.fromEntries(
-        files.map((f) => [new URL(f.url).pathname.slice(1), packet.sourceMediaByURL?.[f.url]]),
-      );
-    await stageScopedFiles({
+    const { records, sourceByKey } = incomingMediaStageScope(packet);
+    mediaStageReceipt = await stageScopedFiles({
       records,
       sourceByKey,
       revision,
@@ -162,6 +165,7 @@ export async function publishReviewedCapsule({
         parentBucket: bucket,
         verifier,
         output: join(output, 'prepared'),
+        mediaStageReceipt,
         progress,
       });
       const native = await verifyNativeContent({
@@ -191,10 +195,20 @@ export async function publishReviewedCapsule({
   execFileSync(process.execPath, ['scripts/catalog-snapshot/stage.mjs', prepared.output], {
     stdio: 'inherit',
   });
+  const finalMediaReadback = await reverifyIncomingBeforeSeal({
+    directory: prepared.output,
+    verifier,
+  });
   const sealed = await withCatalogReader(
     { directory: join(output, 'seal-reader'), verifier, parentSnapshotSHA256 },
     (bucket) =>
-      sealCatalogContent({ directory: prepared.output, parentBucket: bucket, verifier, software }),
+      sealCatalogContent({
+        directory: prepared.output,
+        parentBucket: bucket,
+        verifier,
+        software,
+        finalMediaReadback,
+      }),
   );
   const beforeActivation = await (
     await fetch('https://ultraclipart.com/delivery-release.json', { cache: 'no-store' })
@@ -247,7 +261,8 @@ export async function publishReviewedCapsule({
   return result;
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
-  const [mode, capsulePath, software, config, output, reuseFlag, receiptPath] = process.argv.slice(2);
+  const [mode, capsulePath, software, config, output, reuseFlag, receiptPath] =
+    process.argv.slice(2);
   if (!['prepare', 'publish'].includes(mode) || !output)
     throw Error(
       'Use prepare|publish committed-capsule-path installed-software public-config new-work-directory',

@@ -23,7 +23,19 @@ const sha = (b) => createHash('sha256').update(b).digest('hex'),
             : { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'" }[k.toLowerCase()],
       )
       .trim();
-export async function verifyNativeContent({ candidate, created, parentBucket, software, packet }) {
+export async function verifyNativeContent(options) {
+  const verify = () => verifyNativeContentWithSource(options);
+  return typeof options.parentBucket?.withoutDiskCacheAdmissions === 'function'
+    ? options.parentBucket.withoutDiskCacheAdmissions(verify)
+    : verify();
+}
+async function verifyNativeContentWithSource({
+  candidate,
+  created,
+  parentBucket,
+  software,
+  packet,
+}) {
   const sourcePacket = packet,
     sourcePacketSHA256 = sha(Buffer.from(JSON.stringify(sourcePacket)));
   if (packet.status === 'SOURCE_REVIEWED_COLLECTION_PROSE_BATCH') {

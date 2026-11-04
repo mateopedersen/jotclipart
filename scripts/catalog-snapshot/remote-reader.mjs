@@ -27,7 +27,8 @@ export function remoteCatalogBucket({
   let queued = false,
     active = 0,
     requests = 0,
-    receivedBytes = 0;
+    receivedBytes = 0,
+    diskAdmissionHolds = 0;
   const object = (key, r) => ({
     size: r.body.length,
     etag: r.etag,
@@ -118,7 +119,9 @@ export function remoteCatalogBucket({
           r = verified[i];
         pending.delete(key);
         if (r && key !== 'catalog/active.json') {
-          diskCache?.put(key, r.body);
+          // Capture admission intent when the request starts, so a late native
+          // response cannot pollute disk after its scoped check has finished.
+          if (p.admitDisk) diskCache?.put(key, r.body);
           cache.set(key, r);
           while (cache.size > cacheEntries) cache.delete(cache.keys().next().value);
         }
@@ -138,6 +141,15 @@ export function remoteCatalogBucket({
     }
   }
   return {
+    async withoutDiskCacheAdmissions(operate) {
+      if (typeof operate !== 'function') throw Error('Scoped native cache operation required');
+      diskAdmissionHolds++;
+      try {
+        return await operate();
+      } finally {
+        diskAdmissionHolds--;
+      }
+    },
     hint: (d) => {
       if (
         !d ||
@@ -172,7 +184,13 @@ export function remoteCatalogBucket({
         resolve = a;
         reject = b;
       });
-      pending.set(key, { resolve, reject, promise, started: false });
+      pending.set(key, {
+        resolve,
+        reject,
+        promise,
+        started: false,
+        admitDisk: diskAdmissionHolds === 0,
+      });
       if (!queued) {
         queued = true;
         queueMicrotask(flush);

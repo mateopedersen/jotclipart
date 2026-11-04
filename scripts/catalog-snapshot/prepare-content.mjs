@@ -5,6 +5,12 @@ import { createHash } from 'node:crypto';
 import { buildCatalogDelta } from './build-delta.mjs';
 import { createReviewedDeltaValidators } from './validate-delta-source.mjs';
 import { verifyIncomingMedia } from './batch-media.mjs';
+import {
+  isIncomingMediaPlan,
+  incomingMediaFiles,
+  verifyIncomingPlanSources,
+  assertIncomingStageReceipt,
+} from './incoming-media-plan.mjs';
 import { refreshDiscoveryViews } from '../../server/catalog-projections/refresh.mjs';
 import { captureProductionSnapshot } from '../../server/catalog-snapshot/signed-production-snapshot.mjs';
 import { merkle } from '../delivery/manifest.mjs';
@@ -36,6 +42,7 @@ export async function validateContentPacket(packet) {
     if (files.has(file)) throw Error('Duplicate native source');
     files.add(file);
   }
+  await verifyIncomingPlanSources(packet);
   return packet;
 }
 export async function prepareCatalogContent({
@@ -45,20 +52,27 @@ export async function prepareCatalogContent({
   output,
   progress = () => {},
   fetcher = fetch,
+  mediaStageReceipt = null,
 }) {
   if (!(packetBytes instanceof Uint8Array) || packetBytes.length > 32 * 1024 * 1024)
     throw Error('Bounded immutable source packet required');
   output = resolve(output);
   if (!output.startsWith(resolve('work') + '/') || existsSync(output))
     throw Error('Separate protected new batch directory required');
-  const packet = await validateContentPacket(JSON.parse(Buffer.from(packetBytes))),
-    parent = await captureProductionSnapshot(parentBucket, verifier);
+  const packet = await validateContentPacket(JSON.parse(Buffer.from(packetBytes)));
+  const plannedMedia =
+    isIncomingMediaPlan(packet.incomingMediaManifest) &&
+    incomingMediaFiles(packet.incomingMediaManifest).size > 0;
+  if (plannedMedia) assertIncomingStageReceipt(packet, mediaStageReceipt, verifier);
+  const mediaStageBytes = plannedMedia ? Buffer.from(JSON.stringify(mediaStageReceipt)) : null;
+  const parent = await captureProductionSnapshot(parentBucket, verifier);
   if (
     parent.rootSHA256 !== packet.parentSnapshotSHA256 ||
     parent.snapshot.revision === packet.revision
   )
     throw Error('Content predecessor changed');
-  if(!(await parent.getFacet('collections')).openingIndex)throw Error('Verified opening-index bootstrap required before new content');
+  if (!(await parent.getFacet('collections')).openingIndex)
+    throw Error('Verified opening-index bootstrap required before new content');
   const media = await verifyIncomingMedia(packet.incomingMediaManifest, { fetcher, progress }),
     mediaBytes = Buffer.from(JSON.stringify(media)),
     source = {
@@ -70,6 +84,7 @@ export async function prepareCatalogContent({
       parentSnapshotSHA256: parent.rootSHA256,
       packetSHA256: hash(packetBytes),
       mediaReceiptSHA256: hash(mediaBytes),
+      ...(plannedMedia ? { incomingMediaStageReceiptSHA256: hash(mediaStageBytes) } : {}),
       changedArtworks: packet.changes.length,
       changedTopics: packet.topicChanges.length,
       sourceHashes: Object.fromEntries(packet.sourceFiles.map((f) => [resolve(f.path), f.sha256])),
@@ -80,6 +95,7 @@ export async function prepareCatalogContent({
       topicRows: packet.topicRows,
       incomingMediaManifest: packet.incomingMediaManifest,
       mediaReceiptSHA256: hash(mediaBytes),
+      mediaReceipt: media,
     }),
     result = await buildCatalogDelta({
       parentContext: parent,
@@ -131,6 +147,7 @@ export async function prepareCatalogContent({
   write('manifest.json', manifest);
   write('source-receipt.json', sourceBytes);
   write('media-receipt.json', mediaBytes);
+  if (plannedMedia) write('incoming-media-stage-receipt.json', mediaStageBytes);
   write('graph-local-receipt.json', {
     status: 'LOCAL_SOURCE_GRAPH_VERIFIED_REMOTE_READBACK_REQUIRED',
     manifestRoot: manifest.root,

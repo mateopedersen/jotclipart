@@ -5,6 +5,12 @@ import assert from 'node:assert/strict';
 import { validateEditorialReview } from '../artwork-editorial.mjs';
 import { verifyCollectionEditorial } from '../collection-editorial.mjs';
 import { validateManifest, catalogFiles } from '../publication-policy.mjs';
+import {
+  incomingMediaFiles,
+  isIncomingMediaPlan,
+  incomingManifestSHA256,
+  assertIncomingCDNReceipt,
+} from './incoming-media-plan.mjs';
 import { canonical, digest } from '../../server/catalog-search/store.mjs';
 import { bytesOf, digest as collectionDigest } from '../../server/catalog-collections/store.mjs';
 import { validateEditorSource } from '../../src/lib/artwork-source.ts';
@@ -15,7 +21,13 @@ export function createReviewedDeltaValidators({
   topicRows,
   incomingMediaManifest,
   mediaReceiptSHA256,
+  mediaReceipt,
+  mediaPlanSHA256,
+  phase = 'verified-media',
 }) {
+  const preflight = phase === 'local-preflight';
+  if (!['local-preflight', 'verified-media'].includes(phase))
+    throw Error('Unknown media validation phase');
   if (
     !Array.isArray(artworkRows) ||
     artworkRows.length > 256 ||
@@ -23,10 +35,24 @@ export function createReviewedDeltaValidators({
     !Array.isArray(topicRows) ||
     topicRows.length > 64 ||
     new Set(topicRows.map((r) => r.slug)).size !== topicRows.length ||
-    !hex.test(mediaReceiptSHA256 ?? '')
+    !hex.test((preflight ? mediaPlanSHA256 : mediaReceiptSHA256) ?? '')
   )
     throw Error('Bounded exact source batches and media receipt required');
-  const media = validateManifest(incomingMediaManifest),
+  if (
+    preflight &&
+    (mediaReceiptSHA256 !== undefined ||
+      mediaReceipt !== undefined ||
+      mediaPlanSHA256 !== incomingManifestSHA256(incomingMediaManifest))
+  )
+    throw Error('Local preflight needs an exact media plan hash, never a remote receipt');
+  const planned = isIncomingMediaPlan(incomingMediaManifest);
+  if (!preflight && planned)
+    assertIncomingCDNReceipt(incomingMediaManifest, mediaReceipt, mediaReceiptSHA256);
+  const evidence = preflight ? { mediaPlanSHA256 } : { mediaReceiptSHA256 };
+  const media =
+      preflight || planned
+        ? incomingMediaFiles(incomingMediaManifest)
+        : validateManifest(incomingMediaManifest),
     art = new Map(artworkRows.map((r) => [r.id, r])),
     topics = new Map(topicRows.map((r) => [r.slug, r]));
   return {
@@ -46,7 +72,7 @@ export function createReviewedDeltaValidators({
           oldPublicSHA256: await h(oldRecord),
           newPublicSHA256: null,
           reviewReceiptSHA256: await h(row),
-          mediaReceiptSHA256,
+          ...evidence,
         };
       }
       const a = change.record,
@@ -127,7 +153,7 @@ export function createReviewedDeltaValidators({
           monochrome: row.monochromeReceipt,
           pair: row.pairReceipt ?? null,
         }),
-        mediaReceiptSHA256,
+        ...evidence,
       };
     },
     async validateSourceTopic({ change, oldRecord, resolveAfterArtwork }) {

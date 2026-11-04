@@ -11,6 +11,7 @@ import { sealCatalogContent } from './seal-content.mjs';
 import { activateCatalogContent } from './activate-content.mjs';
 import { verifyContentLive } from './verify-content-live.mjs';
 import { sharedContentBaseline } from './legacy-source-guard.mjs';
+import { reverifyIncomingBeforeSeal } from './incoming-media-readback.mjs';
 const hash = (b) => createHash('sha256').update(b).digest('hex');
 export async function resumeStagedContent({ output, software, publicConfig, progress = () => {} }) {
   output = resolve(output);
@@ -42,13 +43,21 @@ export async function resumeStagedContent({ output, software, publicConfig, prog
     metadataObjects: remote.objects,
     mediaUploadsRepeated: 0,
   });
+  const finalMediaReadback = await reverifyIncomingBeforeSeal({ directory, verifier });
   const sealed = await withCatalogReader(
     {
       directory: join(output, 'resume-seal-' + started),
       verifier,
       parentSnapshotSHA256: packet.parentSnapshotSHA256,
     },
-    (bucket) => sealCatalogContent({ directory, parentBucket: bucket, verifier, software }),
+    (bucket) =>
+      sealCatalogContent({
+        directory,
+        parentBucket: bucket,
+        verifier,
+        software,
+        finalMediaReadback,
+      }),
   );
   const before = await (
     await fetch('https://ultraclipart.com/delivery-release.json', { cache: 'no-store' })

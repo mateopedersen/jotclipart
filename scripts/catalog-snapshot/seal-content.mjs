@@ -5,6 +5,11 @@ import { homedir } from 'node:os';
 import { createHash, createPrivateKey, createPublicKey, sign } from 'node:crypto';
 import assert from 'node:assert/strict';
 import { prepareCatalogContent } from './prepare-content.mjs';
+import {
+  isIncomingMediaPlan,
+  incomingMediaFiles,
+  assertIncomingStageReceipt,
+} from './incoming-media-plan.mjs';
 import { validateMetadataManifest, readMetadataBytes } from './stage-manifest.mjs';
 import {
   captureProductionSnapshot,
@@ -18,8 +23,12 @@ export async function sealCatalogContent({
   verifier,
   software,
   replay = prepareCatalogContent,
+  finalMediaReadback = null,
 }) {
-  if (JSON.parse(readFileSync(join(directory, 'packet.json'))).publicationIntent === 'PRIVATE_TEST_ONLY')
+  if (
+    JSON.parse(readFileSync(join(directory, 'packet.json'))).publicationIntent ===
+    'PRIVATE_TEST_ONLY'
+  )
     throw Error('Private test content cannot receive production authority');
   const read = (n) => JSON.parse(readFileSync(join(directory, n))),
     packetBytes = readFileSync(join(directory, 'packet.json')),
@@ -39,10 +48,30 @@ export async function sealCatalogContent({
   assert.equal(parent.rootSHA256, source.parentSnapshotSHA256);
   assert.equal(candidate.parentRevision, parent.snapshot.revision);
   assert.equal(candidate.revision, manifest.revision);
+  const packet = JSON.parse(packetBytes);
+  let mediaStageReceipt = null;
+  if (
+    isIncomingMediaPlan(packet.incomingMediaManifest) &&
+    incomingMediaFiles(packet.incomingMediaManifest).size
+  ) {
+    const stagedBytes = readFileSync(join(directory, 'incoming-media-stage-receipt.json'));
+    assert.equal(hash(stagedBytes), source.incomingMediaStageReceiptSHA256);
+    mediaStageReceipt = JSON.parse(stagedBytes);
+    assertIncomingStageReceipt(packet, mediaStageReceipt, verifier);
+    if (finalMediaReadback?.recoveryMode !== 'FRESH_READ_ONLY_R2_FULL_BYTE_VERIFICATION_NO_UPLOAD')
+      throw Error('Fresh independent incoming R2 readback required before sealing');
+    assertIncomingStageReceipt(packet, finalMediaReadback, verifier);
+  }
   const replayDirectory = join(directory, 'independent-replay');
   if (existsSync(replayDirectory)) throw Error('Independent replay must start clean');
   try {
-    const repeated = await replay({ packetBytes, parentBucket, verifier, output: replayDirectory });
+    const repeated = await replay({
+      packetBytes,
+      parentBucket,
+      verifier,
+      output: replayDirectory,
+      mediaStageReceipt,
+    });
     assert.deepEqual(
       repeated.result.candidate,
       candidate,
@@ -91,6 +120,12 @@ export async function sealCatalogContent({
       objects: manifest.records.length,
       sourceReceiptSHA256: hash(sourceBytes),
       mediaReceiptSHA256: hash(readFileSync(join(directory, 'media-receipt.json'))),
+      ...(finalMediaReadback
+        ? {
+            incomingMediaStageReceiptSHA256: source.incomingMediaStageReceiptSHA256,
+            incomingMediaFinalReadbackSHA256: hash(Buffer.from(JSON.stringify(finalMediaReadback, null, 2))),
+          }
+        : {}),
       remoteReceiptSHA256: hash(readFileSync(join(directory, 'remote-receipt.json'))),
       nativeIntegrationSHA256: hash(
         readFileSync(join(directory, 'native-integration-report.json')),

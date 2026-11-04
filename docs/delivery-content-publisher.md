@@ -1,5 +1,18 @@
 # Content-only operator workflow
 
+New incoming media starts as an honest `PLANNED_INCOMING_MEDIA` schema-2 plan,
+with `plannedAt` and per-file `expectedCorsOrigin`. Do not label a local file as
+CDN verified before transport. Local admission returns `mediaPlanSHA256` only;
+graph composition requires actual complete R2 and streamed CDN byte/hash/MIME/CORS
+receipts. Independent sealing replays source/CDN evidence and requires a fresh
+read-only R2 verification, sequentially outside the metadata reader lock. The
+strict legacy publication-manifest validator remains unchanged.
+
+Native route checks preserve the bounded composition disk-cache working set:
+they may read valid cached objects but do not admit new disk entries during that
+scope. Every read still checks its hash; mutable active pointers stay uncached.
+Object/byte bounds, authorization, independent replay and activation are unchanged.
+
 The changed-artwork transport field is `expectedPublicSHA256`; its source review
 row separately uses `expectedOldPublicSHA256`. Both are `null` for a genuinely
 new artwork. Existing artwork/topic hashes always come from the captured signed

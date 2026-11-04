@@ -1,8 +1,13 @@
 // Actual GET/hash/MIME/CORS for incoming files only; never lists old R2 objects.
 import { createHash } from 'node:crypto';
-import { validateManifest } from '../publication-policy.mjs';
+import {
+  incomingMediaFiles,
+  isIncomingMediaPlan,
+  incomingManifestSHA256,
+} from './incoming-media-plan.mjs';
 export async function verifyIncomingMedia(manifest, { fetcher = fetch, progress = () => {} } = {}) {
-  const rows = [...validateManifest(manifest).values()];
+  const rows = [...incomingMediaFiles(manifest).values()],
+    planned = isIncomingMediaPlan(manifest);
   if (rows.length > 1024) throw Error('Incoming media batch exceeds 1,024 files');
   let next = 0;
   const verified = [];
@@ -23,7 +28,8 @@ export async function verifyIncomingMedia(manifest, { fetcher = fetch, progress 
               r.headers.get('content-type')?.split(';')[0].trim() !== f.contentType ||
               !['*', 'https://ultraclipart.com'].includes(
                 r.headers.get('access-control-allow-origin'),
-              )
+              ) ||
+              (planned && r.headers.get('access-control-allow-origin') !== f.expectedCorsOrigin)
             )
               throw Error('Incoming media MIME/CORS mismatch');
             const hash = createHash('sha256');
@@ -42,6 +48,7 @@ export async function verifyIncomingMedia(manifest, { fetcher = fetch, progress 
               bytes,
               sha256: f.sha256,
               contentType: f.contentType,
+              ...(planned ? { corsOrigin: r.headers.get('access-control-allow-origin') } : {}),
             });
             progress({ verified: verified.length, total: rows.length });
             last = null;
@@ -56,6 +63,7 @@ export async function verifyIncomingMedia(manifest, { fetcher = fetch, progress 
   );
   return {
     status: 'INCOMING_MEDIA_CDN_GET_BYTES_SHA_MIME_CORS_VERIFIED',
+    ...(planned ? { manifestSHA256: incomingManifestSHA256(manifest) } : {}),
     files: verified.sort((a, b) =>
       (a.assetId + '/' + a.kind).localeCompare(b.assetId + '/' + b.kind),
     ),
