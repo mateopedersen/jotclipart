@@ -25,7 +25,8 @@ Changes address measured critical paths while preserving the same files:
 - Pages' combined global and path headers were observed sending two different
   max-age directives on the same immutable JavaScript response. The runtime now
   sets one unambiguous one-year immutable browser policy, only for its verified
-  versioned software files. Actual bytes, ETags, R2 artwork and catalog HTML
+  versioned software files and the exact SHA-verified retained interface font.
+  Actual bytes, ETags, R2 artwork and catalog HTML
   revalidation are preserved. Unknown URLs, queries, personalized/error/HTML
   responses and non-read methods never receive this override.
 - Original-image priority promotion is limited to two actually visible images.
