@@ -1,0 +1,182 @@
+{
+  "status": "UNIT_TEST_SOURCE_FIXTURE_NOT_A_NEW_APPROVAL",
+  "raw": {
+    "id": "election-day-accessible-ballot-marking-station",
+    "title": "Election Day Accessible Voting Station",
+    "alt": "A wheelchair sits beside a voting screen with headphones and a keypad.",
+    "description": "A wheelchair sits beside a voting screen with headphones and a keypad.",
+    "color": "Multicolor",
+    "style": "Color",
+    "topic": "election-day",
+    "orientation": "Square",
+    "width": 1254,
+    "height": 1254,
+    "sourceType": "raster",
+    "svg": null,
+    "sourceCollection": "owner-election-day-20261103",
+    "provenance": "Owner supplied image with a repaired matching printable PDF.",
+    "productionMethod": "owner-supplied",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-11-03",
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "published": true,
+    "indexable": true,
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "revision": 1,
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "4.180 × 4.180 in",
+    "alpha": true,
+    "files": {
+      "webp": {
+        "bytes": 1207606,
+        "sha256": "47583e674b7e014332d2ecb2be97eb2ab6ad6b126029508f4164044310c66ef1"
+      },
+      "pdf": {
+        "bytes": 938333,
+        "sha256": "74fb107d229543b72973b216c88a9f2269e5aaeaa7ef050e9c6a53597218f178"
+      },
+      "thumb": {
+        "bytes": 62718,
+        "sha256": "76fdaab5269f416a2c691c7a24474cbdd11c1eab8bf79bd23b077f361eb8339b"
+      }
+    },
+    "webp": "/catalog/election-day/election-day-accessible-ballot-marking-station.webp",
+    "pdf": "/catalog/election-day/election-day-accessible-ballot-marking-station.pdf",
+    "thumb": "/catalog/election-day/election-day-accessible-ballot-marking-station-thumb.webp"
+  },
+  "review": {
+    "id": "election-day-accessible-ballot-marking-station",
+    "status": "reviewed-from-image",
+    "sourceSha256": "47583e674b7e014332d2ecb2be97eb2ab6ad6b126029508f4164044310c66ef1",
+    "imageSha256": "47583e674b7e014332d2ecb2be97eb2ab6ad6b126029508f4164044310c66ef1",
+    "inspectedImage": "/catalog/election-day/election-day-accessible-ballot-marking-station.webp",
+    "reviewedAt": "2026-11-03T02:55:59.969Z",
+    "observations": [
+      "A wheelchair is in front of a voting screen.",
+      "Headphones and a keypad sit on the table between blue privacy panels."
+    ],
+    "references": [],
+    "copy": {
+      "title": "Election Day Accessible Voting Station",
+      "alt": "A wheelchair sits beside a voting screen with headphones and a keypad.",
+      "description": "A wheelchair sits beside a voting screen with headphones and a keypad."
+    },
+    "inputMetadataSha256": "d2c8d00fa15a4c1e761fe48a9b894707eb377cb63106f09b13137bb28e631fbb",
+    "inputContextSha256": "fb78d6f918deabbecf32fc94c566b38f54c14915fc6a8a1517327ac99d3cde74"
+  },
+  "record": {
+    "alpha": true,
+    "alt": "A wheelchair sits beside a voting screen with headphones and a keypad.",
+    "color": "Multicolor",
+    "createdAt": "2026-11-03T00:00:00.000Z",
+    "description": "A wheelchair sits beside a voting screen with headphones and a keypad.",
+    "editable": true,
+    "files": {
+      "pdf": {
+        "bytes": 938333,
+        "sha256": "74fb107d229543b72973b216c88a9f2269e5aaeaa7ef050e9c6a53597218f178"
+      },
+      "thumb": {
+        "bytes": 62718,
+        "sha256": "76fdaab5269f416a2c691c7a24474cbdd11c1eab8bf79bd23b077f361eb8339b"
+      },
+      "webp": {
+        "bytes": 1207606,
+        "sha256": "47583e674b7e014332d2ecb2be97eb2ab6ad6b126029508f4164044310c66ef1"
+      }
+    },
+    "formats": [
+      "WEBP",
+      "PDF"
+    ],
+    "height": 1254,
+    "id": "election-day-accessible-ballot-marking-station",
+    "indexable": true,
+    "layered": false,
+    "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+    "licenseApprovedAt": "2026-11-03",
+    "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+    "monochrome": false,
+    "monochromeKind": null,
+    "orientation": "Square",
+    "originalThumb": "https://assets.ultraclipart.com/election-day/election-day-accessible-ballot-marking-station.thumbnail.76fdaab5269f416a.webp",
+    "pdf": "https://assets.ultraclipart.com/election-day/election-day-accessible-ballot-marking-station.pdf.74fb107d229543b7.pdf",
+    "pdfColorSpace": "Device CMYK",
+    "pdfPage": "4.180 × 4.180 in",
+    "preview": "https://assets.ultraclipart.com/election-day/election-day-accessible-ballot-marking-station.webp.47583e674b7e0143.webp",
+    "previewHeight": 1254,
+    "previewWidth": 1254,
+    "printProfile": "GRACoL2006_Coated1v2 (registered output intent)",
+    "productionMethod": "owner-supplied",
+    "provenance": "Owner supplied image with a repaired matching printable PDF.",
+    "published": true,
+    "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+    "revision": 1,
+    "sourceCollection": "owner-election-day-20261103",
+    "sourceType": "raster",
+    "style": "Color",
+    "svg": null,
+    "thumb": "https://assets.ultraclipart.com/election-day/election-day-accessible-ballot-marking-station.webp.47583e674b7e0143.webp",
+    "thumbWidth": 1254,
+    "title": "Election Day Accessible Voting Station",
+    "topic": "election-day",
+    "webp": "https://assets.ultraclipart.com/election-day/election-day-accessible-ballot-marking-station.webp.47583e674b7e0143.webp",
+    "width": 1254
+  },
+  "media": {
+    "schema": 2,
+    "status": "verified",
+    "verifiedAt": "2026-11-03T07:34:55.541Z",
+    "files": [
+      {
+        "assetId": "election-day-accessible-ballot-marking-station",
+        "sourceType": "raster",
+        "kind": "webp",
+        "path": "/catalog/election-day/election-day-accessible-ballot-marking-station.webp",
+        "name": "election-day-accessible-ballot-marking-station.webp",
+        "bytes": 1207606,
+        "sha256": "47583e674b7e014332d2ecb2be97eb2ab6ad6b126029508f4164044310c66ef1",
+        "url": "https://assets.ultraclipart.com/election-day/election-day-accessible-ballot-marking-station.webp.47583e674b7e0143.webp",
+        "contentType": "image/webp",
+        "corsOrigin": "https://ultraclipart.com",
+        "verifiedAt": "2026-11-03T07:34:55.541Z",
+        "verification": "cdn-get-sha256"
+      },
+      {
+        "assetId": "election-day-accessible-ballot-marking-station",
+        "sourceType": "raster",
+        "kind": "pdf",
+        "path": "/catalog/election-day/election-day-accessible-ballot-marking-station.pdf",
+        "name": "election-day-accessible-ballot-marking-station.pdf",
+        "bytes": 938333,
+        "sha256": "74fb107d229543b72973b216c88a9f2269e5aaeaa7ef050e9c6a53597218f178",
+        "url": "https://assets.ultraclipart.com/election-day/election-day-accessible-ballot-marking-station.pdf.74fb107d229543b7.pdf",
+        "contentType": "application/pdf",
+        "corsOrigin": "https://ultraclipart.com",
+        "verifiedAt": "2026-11-03T07:34:55.830Z",
+        "verification": "cdn-get-sha256"
+      },
+      {
+        "assetId": "election-day-accessible-ballot-marking-station",
+        "sourceType": "raster",
+        "kind": "thumb",
+        "path": "/catalog/election-day/election-day-accessible-ballot-marking-station-thumb.webp",
+        "name": "election-day-accessible-ballot-marking-station-thumb.webp",
+        "bytes": 62718,
+        "sha256": "76fdaab5269f416a2c691c7a24474cbdd11c1eab8bf79bd23b077f361eb8339b",
+        "url": "https://assets.ultraclipart.com/election-day/election-day-accessible-ballot-marking-station.thumbnail.76fdaab5269f416a.webp",
+        "contentType": "image/webp",
+        "corsOrigin": "https://ultraclipart.com",
+        "verifiedAt": "2026-11-03T07:34:55.295Z",
+        "verification": "cdn-get-sha256"
+      }
+    ],
+    "bytes": 2208657
+  }
+}

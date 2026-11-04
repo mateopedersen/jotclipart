@@ -666,3 +666,28 @@ Evidence and the Turkish owner report: `work/layout-release-20261030/rapor.html`
 representative browser scans and actual live requests; they are not a fresh
 visual review of every artwork or a physical iPhone test. Preserve the sealed
 `4755fa1f.../full-source` rollback and the protected independent software backup.
+
+## Pending build-free catalog cutover — 2026-11-04
+
+Resume `work/imports/flags-next-20261102/dynamic-prototype/CONTINUATION.md` and
+`work/catalog-snapshot/readiness.json`. The live baseline is still `ccb5c2c...`;
+confirm it from the public control endpoint before any activation. The reviewed
+candidate contains 37,937 artworks / 674 topics, including 2,228 approved new
+artworks and 2,500 existing flag text corrections. Held items remain excluded.
+
+The exact initial `3505467` metadata graph was actually staged with full remote
+byte/hash/MIME readback (76,136 immutable objects), and its thirteen-template
+software passed local native tests, but it was NOT installed or published.
+Later source fixes and the future-only projection/writer integration require a
+NEW exact candidate/receipt; do not activate the historical sealed350 envelope
+against changed source or call staging proof a live release. Reuse only exact
+immutable signed readback objects; never replay a full old transfer needlessly.
+
+The build-free content transaction is documented in
+`docs/delivery-catalog-delta.md`. Its bounded private source/media/canonical
+validator, graph overlay, pinned reader, related-tail updater and CAS publisher
+have focused tests; complete cross-facet/native/public verification is still
+pending. The specific Cloudflare prod+preview `nodejs_compat` change was rejected
+by automatic approval review and a permission question is pending. Do not bypass
+it through a different setting, deployment override, UI or another chat.
+Protect all native sources, reviews, IndexNow, rollback and publisher KEEP backup.

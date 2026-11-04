@@ -5928,7 +5928,8 @@
     "wave": "OWNER_ELECTION_DAY_20261103",
     "target_original_artworks": 100,
     "focus_note": "Voting equipment, voters, ballot designs and playful civic illustrations.",
-    "supplemental": true
+    "supplemental": true,
+    "id": 823
   },
   {
     "keyword": "Nepal Flag clipart",
@@ -5937,7 +5938,8 @@
     "wave": "OWNER_NEPAL_FLAG_20261103",
     "target_original_artworks": 100,
     "focus_note": "Nepal flag displays and community illustrations.",
-    "supplemental": true
+    "supplemental": true,
+    "id": 824
   },
   {
     "keyword": "Italy Flag clipart",
@@ -5945,8 +5947,9 @@
     "cluster": "Flags & countries",
     "wave": "OWNER_ITALY_FLAG_20261103",
     "target_original_artworks": 100,
-    "focus_note": "Nepal flag displays and community illustrations.",
-    "supplemental": true
+    "focus_note": "Italian flag clipart shows the green, white, and red tricolor on poles, tabletop stands, fabric displays, and in community scenes.",
+    "supplemental": true,
+    "id": 825
   },
   {
     "keyword": "Lithuania Flag clipart",
@@ -5954,8 +5957,9 @@
     "cluster": "Flags & countries",
     "wave": "OWNER_LITHUANIA_FLAG_20261103",
     "target_original_artworks": 100,
-    "focus_note": "Nepal flag displays and community illustrations.",
-    "supplemental": true
+    "focus_note": "Lithuanian flag clipart includes tricolor flags, display stands and illustrated community scenes.",
+    "supplemental": true,
+    "id": 826
   },
   {
     "keyword": "Marshall Islands Flag clipart",
@@ -5963,8 +5967,9 @@
     "cluster": "Flags & countries",
     "wave": "OWNER_MARSHALL_ISLANDS_FLAG_20261103",
     "target_original_artworks": 100,
-    "focus_note": "Nepal flag displays and community illustrations.",
-    "supplemental": true
+    "focus_note": "Marshall Islands flag clipart includes island flags, display stands and illustrated community scenes.",
+    "supplemental": true,
+    "id": 827
   },
   {
     "keyword": "Mauritania Flag clipart",
@@ -5972,8 +5977,9 @@
     "cluster": "Flags & countries",
     "wave": "OWNER_MAURITANIA_FLAG_20261103",
     "target_original_artworks": 100,
-    "focus_note": "Nepal flag displays and community illustrations.",
-    "supplemental": true
+    "focus_note": "Mauritania flag clipart includes crescent flags, display stands and illustrated community scenes.",
+    "supplemental": true,
+    "id": 828
   },
   {
     "keyword": "Mauritius Flag clipart",
@@ -5981,8 +5987,9 @@
     "cluster": "Flags & countries",
     "wave": "OWNER_MAURITIUS_FLAG_20261103",
     "target_original_artworks": 100,
-    "focus_note": "Nepal flag displays and community illustrations.",
-    "supplemental": true
+    "focus_note": "Mauritius flag clipart includes striped flags, display stands and illustrated community scenes.",
+    "supplemental": true,
+    "id": 829
   },
   {
     "keyword": "Kiribati Flag clipart",
@@ -5990,8 +5997,9 @@
     "cluster": "Flags & countries",
     "wave": "OWNER_KIRIBATI_FLAG_20261103",
     "target_original_artworks": 100,
-    "focus_note": "Nepal flag displays and community illustrations.",
-    "supplemental": true
+    "focus_note": "Kiribati flag designs feature the golden bird and sun on flags displayed alone and in community scenes.",
+    "supplemental": true,
+    "id": 830
   },
   {
     "keyword": "Kuwait Flag clipart",
@@ -5999,8 +6007,9 @@
     "cluster": "Flags & countries",
     "wave": "OWNER_KUWAIT_FLAG_20261103",
     "target_original_artworks": 100,
-    "focus_note": "Nepal flag displays and community illustrations.",
-    "supplemental": true
+    "focus_note": "Kuwait flag illustrations show the striped flag and black trapezoid on displays and in community scenes.",
+    "supplemental": true,
+    "id": 831
   },
   {
     "keyword": "Liberia Flag clipart",
@@ -6008,8 +6017,9 @@
     "cluster": "Flags & countries",
     "wave": "OWNER_LIBERIA_FLAG_20261103",
     "target_original_artworks": 100,
-    "focus_note": "Nepal flag displays and community illustrations.",
-    "supplemental": true
+    "focus_note": "Liberia flag illustrations show its single white star and stripes on displays and in community scenes.",
+    "supplemental": true,
+    "id": 832
   },
   {
     "keyword": "Libya Flag clipart",
@@ -6019,7 +6029,7 @@
     "target_original_artworks": 100,
     "focus_note": "Libya flag displays and community illustrations.",
     "supplemental": true,
-    "id": null
+    "id": 833
   },
   {
     "keyword": "Myanmar Flag clipart",
@@ -6029,7 +6039,7 @@
     "target_original_artworks": 100,
     "focus_note": "Myanmar flag displays and community illustrations.",
     "supplemental": true,
-    "id": null
+    "id": 834
   },
   {
     "keyword": "Madagascar Flag clipart",
@@ -6039,10 +6049,10 @@
     "target_original_artworks": 100,
     "focus_note": "Madagascar flag displays and community illustrations.",
     "supplemental": true,
-    "id": null
+    "id": 835
   },
   {
-    "id": null,
+    "id": 836,
     "keyword": "Ivory Coast Flag clipart",
     "slug": "ivory-coast-flag",
     "cluster": "Flags & countries",
@@ -6052,7 +6062,7 @@
     "supplemental": true
   },
   {
-    "id": null,
+    "id": 837,
     "keyword": "Jamaica Flag clipart",
     "slug": "jamaica-flag",
     "cluster": "Flags & countries",
@@ -6062,7 +6072,7 @@
     "supplemental": true
   },
   {
-    "id": null,
+    "id": 838,
     "keyword": "Japan Flag clipart",
     "slug": "japan-flag",
     "cluster": "Flags & countries",
@@ -6072,7 +6082,7 @@
     "supplemental": true
   },
   {
-    "id": null,
+    "id": 839,
     "keyword": "Kazakhstan Flag clipart",
     "slug": "kazakhstan-flag",
     "cluster": "Flags & countries",
@@ -6082,7 +6092,7 @@
     "supplemental": true
   },
   {
-    "id": null,
+    "id": 840,
     "keyword": "Kenya Flag clipart",
     "slug": "kenya-flag",
     "cluster": "Flags & countries",
@@ -6092,7 +6102,7 @@
     "supplemental": true
   },
   {
-    "id": null,
+    "id": 841,
     "keyword": "Micronesia Flag clipart",
     "slug": "micronesia-flag",
     "cluster": "Flags & countries",
@@ -6102,7 +6112,7 @@
     "supplemental": true
   },
   {
-    "id": null,
+    "id": 842,
     "keyword": "Morocco Flag clipart",
     "slug": "morocco-flag",
     "cluster": "Flags & countries",
@@ -6112,7 +6122,7 @@
     "supplemental": true
   },
   {
-    "id": null,
+    "id": 843,
     "keyword": "Mozambique Flag clipart",
     "slug": "mozambique-flag",
     "cluster": "Flags & countries",
@@ -6122,7 +6132,7 @@
     "supplemental": true
   },
   {
-    "id": null,
+    "id": 844,
     "keyword": "Namibia Flag clipart",
     "slug": "namibia-flag",
     "cluster": "Flags & countries",
@@ -6132,7 +6142,7 @@
     "supplemental": true
   },
   {
-    "id": null,
+    "id": 845,
     "keyword": "Nauru Flag clipart",
     "slug": "nauru-flag",
     "cluster": "Flags & countries",

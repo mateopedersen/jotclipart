@@ -2,12 +2,14 @@ import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
-import { reviewedImportCatalog } from '../scripts/reviewed-imports.mjs';
+import { reviewedImportCatalog, readReviewedImportCatalog } from '../scripts/reviewed-imports.mjs';
 import {
   collectionSourceSignature,
   requiredCollectionIntroductions,
   readRequiredCollectionIntroductions,
   readCollectionAudit,
+  collectionParagraphSignature,
+  collectionParagraphReviewSignature,
 } from '../scripts/collection-editorial.mjs';
 const read = (p) => JSON.parse(readFileSync(new URL('../' + p, import.meta.url)));
 const catalog = read('data/art.json'),
@@ -64,7 +66,17 @@ test('future subjects need an inventory-bound short introduction and replacement
     intro: 'A white volleyball with curved panels.',
     checkedAt: '2026-10-27T00:00:00Z',
     evidence: [{ id: fixture.id, imageSha256: fixture.files.webp.sha256 }],
+    // Synthetic evidence tests the same expanded-copy binding required by real
+    // imports. It is never written into a production source registry.
+    paragraphs: [
+      'This test collection contains {{artworkCount}} example of a white volleyball with curved panels. Its short caption identifies the depicted ball rather than assigning an unrelated sport or character.',
+      'Use the visible seams and rounded outline to distinguish this example from other sporting equipment. The test binds this expanded text to the same source inventory and summary as the public collection reader.',
+    ],
+    paragraphEvidence: [{ id: fixture.id, imageSha256: fixture.files.webp.sha256 }],
+    paragraphsCheckedAt: '2026-10-27T00:00:00Z',
   };
+  record.paragraphSourceSha256 = collectionParagraphSignature([fixture], record.intro);
+  record.paragraphReviewSha256 = collectionParagraphReviewSignature(record);
   const registry = { schema: 1, topics: { 'future-subject': record } };
   assert.equal(
     requiredCollectionIntroductions([fixture], registry).get('future-subject'),
@@ -78,13 +90,23 @@ test('future subjects need an inventory-bound short introduction and replacement
       ),
     /missing or stale/,
   );
-  assert(readRequiredCollectionIntroductions(catalog).size >= 13);
+  assert(
+    readRequiredCollectionIntroductions(
+      catalog,
+      process.cwd(),
+      readReviewedImportCatalog(process.cwd()),
+    ).size >= 13,
+  );
 });
 
 test('the audit reads the split collection registries used by the public catalog', () => {
   const root = new URL('..', import.meta.url).pathname;
   const report = readCollectionAudit(root);
-  const expected = readRequiredCollectionIntroductions(catalog, root);
+  const expected = readRequiredCollectionIntroductions(
+    catalog,
+    root,
+    readReviewedImportCatalog(root),
+  );
   assert.equal(report.checkedIntroductions, expected.size);
   assert.equal(report.uniqueIntroductions, expected.size);
   assert.equal(

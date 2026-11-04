@@ -1,3 +1,4 @@
+import { assignMissingTopicIdentifiers } from './topic-identifiers.mjs';
 import assert from 'node:assert/strict';
 /** Preserve concurrent accepted content while adding only the reviewed incoming IDs. */
 export function mergeReviewedContent({
@@ -36,8 +37,9 @@ export function mergeReviewedContent({
   );
   const publication = { ...currentPublication, ...stagedPublication, files: [...files.values()] };
   publication.bytes = publication.files.reduce((n, x) => n + x.bytes, 0);
-  const extra = structuredClone(currentExtra);
-  let nextId = Math.max(0, ...baseTopics.map((x) => x.id), ...extra.map((x) => x.id)) + 1;
+  const normalized = assignMissingTopicIdentifiers(baseTopics, currentExtra);
+  const extra = normalized.extra;
+  let nextId = normalized.nextId;
   for (const topic of scopes) {
     const row = stagedExtra.find((x) => x.slug === topic),
       prior = extra.find((x) => x.slug === topic);

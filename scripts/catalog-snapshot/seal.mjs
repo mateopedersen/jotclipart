@@ -1,10 +1,181 @@
 // Issue a NEW production snapshot only after source, graph, native and actual
 // remote byte-readback gates. Never modifies or relabels the private candidate.
-import{readFileSync,writeFileSync,existsSync,statSync}from'node:fs';import{join,resolve}from'node:path';import{homedir}from'node:os';import{createPrivateKey,createPublicKey,sign}from'node:crypto';import assert from'node:assert/strict';
-import{validateMetadataManifest,sha256}from'./stage-manifest.mjs';import{productionSnapshotMessage,captureProductionSnapshot}from'../../server/catalog-snapshot/signed-production-snapshot.mjs';import{snapshotDigest,validateSnapshot}from'../../server/catalog-snapshot/release-pointer.mjs';
-const[directoryArg,softwareArg]=process.argv.slice(2);if(!softwareArg)throw Error('Usage: seal verified-metadata-dir compiled-template-dir');const directory=resolve(directoryArg),software=resolve(softwareArg),load=n=>JSON.parse(readFileSync(join(directory,n))),manifest=validateMetadataManifest(load('manifest.json')),candidate=load('snapshot-candidate.json'),source=load('source-receipt.json'),media=load('media-receipt.json'),local=load('graph-local-receipt.json'),remote=load('remote-receipt.json'),native=load('native-integration-report.json'),code=JSON.parse(readFileSync(join(software,'runtime/software-report.json'))),pub=JSON.parse(readFileSync('config/catalog-snapshot-public.json'));
-assert.equal(source.status,'CURRENT_SOURCE_AND_EDITORIAL_VERIFIED_NOT_A_DEPLOYMENT');assert.equal(source.revision,manifest.revision);for(const[file,hash]of Object.entries(source.sourceHashes))assert.equal(sha256(readFileSync(file)),hash,file);assert.equal(source.artwork.reviewed,source.artwork.total);assert.equal(source.artwork.flagged,0);assert.equal(source.collections.expandedIntroductions,source.collections.topics);assert.equal(media.status,'REUSED_IMMUTABLE_CDN_GET_SHA256_RECEIPTS');assert.equal(media.publicationSHA256,sha256(readFileSync('data/publication.json')));assert.equal(local.manifestRoot,manifest.root);assert.equal(local.sourceReceiptSHA256,sha256(readFileSync(join(directory,'source-receipt.json'))));assert.equal(remote.status,'REMOTE_METADATA_BYTES_SHA_MIME_VERIFIED_NOT_ACTIVATED');assert.equal(remote.revision,manifest.revision);assert.equal(remote.root,manifest.root);assert.equal(remote.accountId,pub.accountId);assert.equal(remote.bucket,pub.bucketName);assert.equal(remote.objects,manifest.records.length);assert.equal(remote.sourceReceiptSHA256,local.sourceReceiptSHA256);const verified=new Map(remote.files.map(r=>[r.key,r]));assert.equal(verified.size,manifest.records.length);for(const r of manifest.records){const a=verified.get(r.key);for(const k of ['key','path','bytes','sha256'])assert.equal(a?.[k],r[k]);assert(typeof a.etag==='string'&&a.etag.length)}assert.equal(native.status,'CANONICAL_LOCAL_NATIVE_INTEGRATION_VERIFIED_NOT_PUBLISHED');assert.equal(native.manifestRoot,manifest.root);assert.equal(native.softwareABI,code.abiSHA256);assert.equal(code.status,'SOFTWARE_COMPILED_NOT_INSTALLED');assert.equal(sha256(readFileSync(join(software,'runtime/worker.mjs'))),code.workerSHA256);assert.equal(code.publicKeyHex,pub.publicKeyHex);assert.equal(candidate.revision,manifest.revision);validateSnapshot(candidate);
-const graph={schema:1,status:'SOURCE_MEDIA_GRAPH_AND_REMOTE_READBACK_VERIFIED',revision:manifest.revision,manifestRoot:manifest.root,objects:manifest.records.length,artworks:source.artwork.total,topics:source.collections.topics,sourceReceiptSHA256:local.sourceReceiptSHA256,mediaReceiptSHA256:sha256(readFileSync(join(directory,'media-receipt.json'))),remoteReceiptSHA256:sha256(readFileSync(join(directory,'remote-receipt.json'))),nativeIntegrationSHA256:sha256(readFileSync(join(directory,'native-integration-report.json'))),softwareABI:code.abiSHA256,at:new Date().toISOString()};const graphBytes=Buffer.from(JSON.stringify(graph));
-const credential=join(homedir(),'Library/Application Support/UltraClipart/private-publisher/catalog-signing-v1.pem');if((statSync(credential).mode&0o077)!==0)throw Error('Private key permissions required');const key=createPrivateKey(readFileSync(credential)),actualPub=createPublicKey(key).export({format:'jwk'});assert.equal(Buffer.from(actualPub.x,'base64url').toString('hex'),pub.publicKeyHex);
+import { readFileSync, writeFileSync, existsSync, statSync } from 'node:fs';
+import { join, resolve } from 'node:path';
+import { homedir } from 'node:os';
+import { createPrivateKey, createPublicKey, sign } from 'node:crypto';
+import assert from 'node:assert/strict';
+import { validateMetadataManifest, sha256 } from './stage-manifest.mjs';
+import {
+  productionSnapshotMessage,
+  captureProductionSnapshot,
+} from '../../server/catalog-snapshot/signed-production-snapshot.mjs';
+import {
+  snapshotDigest,
+  validateSnapshot,
+} from '../../server/catalog-snapshot/release-pointer.mjs';
+import { verifyImmutableReadbackAnchor, splitImmutableReadbackPlan } from './reuse-readback.mjs';
+const [directoryArg, softwareArg] = process.argv.slice(2);
+if (!softwareArg) throw Error('Usage: seal verified-metadata-dir compiled-template-dir');
+const directory = resolve(directoryArg),
+  software = resolve(softwareArg),
+  load = (n) => JSON.parse(readFileSync(join(directory, n))),
+  manifest = validateMetadataManifest(load('manifest.json')),
+  candidate = load('snapshot-candidate.json'),
+  source = load('source-receipt.json'),
+  media = load('media-receipt.json'),
+  local = load('graph-local-receipt.json'),
+  remote = load('remote-receipt.json'),
+  native = load('native-integration-report.json'),
+  code = JSON.parse(readFileSync(join(software, 'runtime/software-report.json'))),
+  pub = JSON.parse(readFileSync('config/catalog-snapshot-public.json'));
+assert.equal(source.status, 'CURRENT_SOURCE_AND_EDITORIAL_VERIFIED_NOT_A_DEPLOYMENT');
+assert.equal(source.revision, manifest.revision);
+for (const [file, hash] of Object.entries(source.sourceHashes))
+  assert.equal(sha256(readFileSync(file)), hash, file);
+assert.equal(source.artwork.reviewed, source.artwork.total);
+assert.equal(source.artwork.flagged, 0);
+assert.equal(source.collections.expandedIntroductions, source.collections.topics);
+assert.equal(media.status, 'REUSED_IMMUTABLE_CDN_GET_SHA256_RECEIPTS');
+assert.equal(media.publicationSHA256, sha256(readFileSync('data/publication.json')));
+assert.equal(local.manifestRoot, manifest.root);
+assert.equal(
+  local.sourceReceiptSHA256,
+  sha256(readFileSync(join(directory, 'source-receipt.json'))),
+);
+assert(
+  [
+    'REMOTE_METADATA_BYTES_SHA_MIME_VERIFIED_NOT_ACTIVATED',
+    'REMOTE_METADATA_CHANGED_READBACK_AND_SIGNED_REUSE_VERIFIED_NOT_ACTIVATED',
+  ].includes(remote.status),
+);
+if (remote.status === 'REMOTE_METADATA_CHANGED_READBACK_AND_SIGNED_REUSE_VERIFIED_NOT_ACTIVATED') {
+  if (!process.argv[4]) throw Error('Signed immutable reuse anchor required');
+  const priorDirectory = resolve(process.argv[4]),
+    priorSnapshotBytes = readFileSync(join(priorDirectory, 'production-snapshot.json')),
+    prior = JSON.parse(priorSnapshotBytes),
+    anchor = await verifyImmutableReadbackAnchor({
+      snapshotBytes: priorSnapshotBytes,
+      graphBytes: readFileSync(join(priorDirectory, 'graph-verified-receipt.json')),
+      remoteBytes: readFileSync(join(priorDirectory, 'remote-receipt.json')),
+      verifier: {
+        ...pub,
+        publicKey: new Uint8Array(Buffer.from(pub.publicKeyHex, 'hex')),
+        abiSHA256: prior.authorization.abiSHA256,
+      },
+    }),
+    plan = splitImmutableReadbackPlan(manifest.records, anchor);
+  assert.deepEqual(remote.reuseAnchor, {
+    snapshotSHA256: anchor.snapshotSHA256,
+    graphReceiptSHA256: anchor.graphReceiptSHA256,
+    remoteReceiptSHA256: anchor.remoteReceiptSHA256,
+  });
+  assert.equal(remote.freshReadbackObjects, plan.fresh.length);
+  assert.equal(remote.reusedSignedObjects, plan.reused.length);
+  const actual = new Map(remote.files.map((r) => [r.key, r]));
+  for (const old of plan.reused) assert.deepEqual(actual.get(old.key), old);
+  assert.equal(
+    remote.writeRoot,
+    (await import('../delivery/manifest.mjs')).merkle(plan.fresh).root,
+  );
+} else assert(!remote.reusedSignedObjects);
+assert.equal(remote.revision, manifest.revision);
+assert.equal(remote.root, manifest.root);
+assert.equal(remote.accountId, pub.accountId);
+assert.equal(remote.bucket, pub.bucketName);
+assert.equal(remote.objects, manifest.records.length);
+assert.equal(remote.sourceReceiptSHA256, local.sourceReceiptSHA256);
+const verified = new Map(remote.files.map((r) => [r.key, r]));
+assert.equal(verified.size, manifest.records.length);
+for (const r of manifest.records) {
+  const a = verified.get(r.key);
+  for (const k of ['key', 'path', 'bytes', 'sha256']) assert.equal(a?.[k], r[k]);
+  assert(typeof a.etag === 'string' && a.etag.length);
+}
+assert.equal(native.status, 'CANONICAL_LOCAL_NATIVE_INTEGRATION_VERIFIED_NOT_PUBLISHED');
+assert.equal(native.manifestRoot, manifest.root);
+assert.equal(native.softwareABI, code.abiSHA256);
+assert.equal(code.status, 'SOFTWARE_COMPILED_NOT_INSTALLED');
+assert.equal(sha256(readFileSync(join(software, 'runtime/worker.mjs'))), code.workerSHA256);
+assert.equal(code.publicKeyHex, pub.publicKeyHex);
+assert.equal(candidate.revision, manifest.revision);
+validateSnapshot(candidate);
+const graph = {
+  schema: 1,
+  status: 'SOURCE_MEDIA_GRAPH_AND_REMOTE_READBACK_VERIFIED',
+  revision: manifest.revision,
+  manifestRoot: manifest.root,
+  objects: manifest.records.length,
+  artworks: source.artwork.total,
+  topics: source.collections.topics,
+  sourceReceiptSHA256: local.sourceReceiptSHA256,
+  mediaReceiptSHA256: sha256(readFileSync(join(directory, 'media-receipt.json'))),
+  remoteReceiptSHA256: sha256(readFileSync(join(directory, 'remote-receipt.json'))),
+  nativeIntegrationSHA256: sha256(readFileSync(join(directory, 'native-integration-report.json'))),
+  softwareABI: code.abiSHA256,
+  at: new Date().toISOString(),
+};
+const graphBytes = Buffer.from(JSON.stringify(graph));
+const credential = join(
+  homedir(),
+  'Library/Application Support/UltraClipart/private-publisher/catalog-signing-v1.pem',
+);
+if ((statSync(credential).mode & 0o077) !== 0) throw Error('Private key permissions required');
+const key = createPrivateKey(readFileSync(credential)),
+  actualPub = createPublicKey(key).export({ format: 'jwk' });
+assert.equal(Buffer.from(actualPub.x, 'base64url').toString('hex'), pub.publicKeyHex);
 // Explicit field allowlist creates a distinct production authority envelope.
-const production={schema:1,status:'SOURCE_MEDIA_GRAPH_VERIFIED',revision:candidate.revision,parentRevision:candidate.parentRevision,indexes:structuredClone(candidate.indexes),authorization:{policy:'source-media-graph-ed25519-v1',accountId:pub.accountId,bucket:pub.bucketName,keyId:pub.keyId,abiSHA256:code.abiSHA256,sourceReceiptSHA256:graph.sourceReceiptSHA256,mediaReceiptSHA256:graph.mediaReceiptSHA256,graphReceiptSHA256:sha256(graphBytes),manifestRoot:manifest.root,parentSnapshotSHA256:'e6886e4510c865c7132ae85a50d8768009c93194b5f1b3981fb87067b8deef07',issuedAt:Date.now()}};production.authorization.signature=sign(null,productionSnapshotMessage(production),key).toString('hex');const bytes=Buffer.from(JSON.stringify(production));await captureProductionSnapshot({get:async key=>{assert.equal(key,'catalog/active.json');return{size:bytes.length,json:async()=>JSON.parse(bytes)}}},{accountId:pub.accountId,bucketName:pub.bucketName,keyId:pub.keyId,publicKey:new Uint8Array(Buffer.from(pub.publicKeyHex,'hex')),abiSHA256:code.abiSHA256});if(existsSync(join(directory,'production-snapshot.json')))throw Error('Sealed snapshot already exists; never silently reseal');writeFileSync(join(directory,'graph-verified-receipt.json'),graphBytes,{flag:'wx'});writeFileSync(join(directory,'production-snapshot.json'),bytes,{flag:'wx'});console.log(JSON.stringify({status:'SIGNED_VERIFIED_SNAPSHOT_NOT_ACTIVATED',revision:production.revision,snapshotSHA256:await snapshotDigest(production),manifestRoot:manifest.root,softwareABI:code.abiSHA256}));
+const production = {
+  schema: 1,
+  status: 'SOURCE_MEDIA_GRAPH_VERIFIED',
+  revision: candidate.revision,
+  parentRevision: candidate.parentRevision,
+  indexes: structuredClone(candidate.indexes),
+  authorization: {
+    policy: 'source-media-graph-ed25519-v1',
+    accountId: pub.accountId,
+    bucket: pub.bucketName,
+    keyId: pub.keyId,
+    abiSHA256: code.abiSHA256,
+    sourceReceiptSHA256: graph.sourceReceiptSHA256,
+    mediaReceiptSHA256: graph.mediaReceiptSHA256,
+    graphReceiptSHA256: sha256(graphBytes),
+    manifestRoot: manifest.root,
+    parentSnapshotSHA256: 'e6886e4510c865c7132ae85a50d8768009c93194b5f1b3981fb87067b8deef07',
+    issuedAt: Date.now(),
+  },
+};
+production.authorization.signature = sign(
+  null,
+  productionSnapshotMessage(production),
+  key,
+).toString('hex');
+const bytes = Buffer.from(JSON.stringify(production));
+await captureProductionSnapshot(
+  {
+    get: async (key) => {
+      assert.equal(key, 'catalog/active.json');
+      return { size: bytes.length, json: async () => JSON.parse(bytes) };
+    },
+  },
+  {
+    accountId: pub.accountId,
+    bucketName: pub.bucketName,
+    keyId: pub.keyId,
+    publicKey: new Uint8Array(Buffer.from(pub.publicKeyHex, 'hex')),
+    abiSHA256: code.abiSHA256,
+  },
+);
+if (existsSync(join(directory, 'production-snapshot.json')))
+  throw Error('Sealed snapshot already exists; never silently reseal');
+writeFileSync(join(directory, 'graph-verified-receipt.json'), graphBytes, { flag: 'wx' });
+writeFileSync(join(directory, 'production-snapshot.json'), bytes, { flag: 'wx' });
+console.log(
+  JSON.stringify({
+    status: 'SIGNED_VERIFIED_SNAPSHOT_NOT_ACTIVATED',
+    revision: production.revision,
+    snapshotSHA256: await snapshotDigest(production),
+    manifestRoot: manifest.root,
+    softwareABI: code.abiSHA256,
+  }),
+);
