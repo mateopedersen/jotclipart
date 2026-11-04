@@ -54,6 +54,15 @@ export async function buildCollectionProseDelta({
   if (collections.type !== 'collection-directory' || collections.viewProtocol !== 'collection-references-v2' ||
       !Number.isSafeInteger(collections.topicCount) || collections.topicCount < 1 || collections.topicCount > 10000)
     throw Error('Source-bound reference collections required');
+  const artworkRoot = await store.read('artworks', base.snapshot.indexes.artworks);
+  const discovery = await store.read('collections', collections.discoveryProjection);
+  const surprise = await store.read('collections', collections.surprise);
+  if (artworkRoot.type !== 'artwork-root' || artworkRoot.revision !== base.snapshot.revision ||
+      !artworkRoot.directories || discovery.type !== 'discovery-projection-ledger-v1' ||
+      discovery.artworkRootSHA256 !== base.snapshot.indexes.artworks.sha256 ||
+      surprise.type !== 'cute-discovery-projection' || surprise.version !== 3 ||
+      surprise.artworksRootSHA256 !== base.snapshot.indexes.artworks.sha256)
+    throw Error('Prose predecessor dependent artwork roots differ');
   const directory = await entries(store, collections.directory);
   const bySlug = new Map(directory.map(d => [d.slug, d]));
   if (bySlug.size !== collections.topicCount || directory.length !== bySlug.size) throw Error('Incomplete prose topic directory');
@@ -111,8 +120,14 @@ export async function buildCollectionProseDelta({
     changed.push({ slug: change.slug, beforeDescriptor: prior, afterDescriptor: next });
   }
   const openingIndex = await emitDirectory(store, [...openings.values()], 'collection');
-  const indexes = { ...base.snapshot.indexes, collections: await store.put('collections', {
-    ...collections, directory: nextDirectory, openingIndex,
+  // The reader requires the ART envelope revision to match the new snapshot.
+  // Rebind only this small envelope and its two dependent roots; all directories,
+  // artwork leaves, discovery facts, choices and ledgers remain byte-identical.
+  const artworks = await store.put('artworks', { ...artworkRoot, revision });
+  const discoveryProjection = await store.put('collections', { ...discovery, artworkRootSHA256: artworks.sha256 });
+  const picks = await store.put('collections', { ...surprise, artworksRootSHA256: artworks.sha256 });
+  const indexes = { ...base.snapshot.indexes, artworks, collections: await store.put('collections', {
+    ...collections, directory: nextDirectory, openingIndex, discoveryProjection, surprise: picks,
   }) };
   const candidate = { schema: 1, fixture: true, status: 'PRIVATE_UNPUBLISHABLE', revision,
     parentRevision: base.snapshot.revision, indexes };
@@ -122,5 +137,7 @@ export async function buildCollectionProseDelta({
     parentSnapshotSHA256: parentContext.rootSHA256, fullCatalogPagesBuilt: 0, fullArtworkScans: 0,
     metrics: { ...overlay.metrics(), topicRecordsRead: oldRecords.size,
       openingIndexBootstrapped: !collections.openingIndex, openingFingerprints: openings.size },
-    unchangedFacets: Object.keys(indexes).filter(k => k !== 'collections'), publicationVerified: false };
+    artworkEnvelopeRebinding: { before: base.snapshot.indexes.artworks, after: artworks,
+      directoriesUnchanged: true, artworkLeavesRead: 0 },
+    unchangedFacets: Object.keys(indexes).filter(k => !['collections', 'artworks'].includes(k)), publicationVerified: false };
 }

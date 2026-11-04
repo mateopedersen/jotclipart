@@ -26,13 +26,20 @@ async function fixture() {
       artworkCount: 1, coverArtworkId: slug + '-one', membership: [missing], pageBlocks: [missing], related: [] };
     originals.set(slug, record); directory.push({ slug, path: record.path, artworkCount: 1, ...await store.put('collections', record) });
   }
-  const c = await store.put('collections', { type: 'collection-directory', viewProtocol: 'collection-references-v2',
+  let c = await store.put('collections', { type: 'collection-directory', viewProtocol: 'collection-references-v2',
     topicCount: 3, artworkCount: 3, directory: await emitDirectory(store, directory, 'collection') });
   const indexes = { collections: c };
   for (const facet of ['artworks','search','recent','related','counts','sitemaps']) {
     const bytes = bytesOf({ schema: 1, type: 'explicit-private-unread-facet' }), sha256 = await digest(bytes);
     const key = `catalog/objects/${facet}/${sha256}.json`; objects.set(key, bytes); indexes[facet] = { key, sha256, bytes: bytes.length };
   }
+  indexes.artworks = await store.put('artworks', { type: 'artwork-root', revision: 'a'.repeat(40), directories: {
+    ff: { key: 'catalog/objects/artworks/' + 'e'.repeat(64) + '.json', sha256: 'e'.repeat(64), bytes: 321 },
+  } });
+  const discoveryProjection = await store.put('collections', { type: 'discovery-projection-ledger-v1', artworkRootSHA256: indexes.artworks.sha256 });
+  const surprise = await store.put('collections', { type: 'cute-discovery-projection', version: 3, artworksRootSHA256: indexes.artworks.sha256 });
+  c = await store.put('collections', { ...await store.read('collections', c), discoveryProjection, surprise });
+  indexes.collections = c;
   const snapshot = { schema: 1, revision: 'a'.repeat(40), parentRevision: 'b'.repeat(40),
     status: 'SOURCE_MEDIA_GRAPH_VERIFIED', indexes };
   const parentContext = { snapshot, rootSHA256: await snapshotDigest(snapshot), authorizationVerified: true };
@@ -47,15 +54,18 @@ async function fixture() {
   const args = { parentContext, parentBucket: bucket, revision: 'c'.repeat(40), sourceReceiptSHA256: '3'.repeat(64), validateSourceTopic: proof };
   calls.length = 0; return { objects, bucket, calls, store, originals, makeChange, args };
 }
-test('prose composition preserves all six other facets and never reads membership, artwork or active pointer', async () => {
+test('prose composition preserves five facets and all artwork leaves without reading memberships or active pointer', async () => {
   const f = await fixture(), change = await f.makeChange('apple', 'Apple branches, fruit and simple arrangements provide several starting points.');
   f.calls.length = 0;
   const result = await buildCollectionProseDelta({ ...f.args, changes: [change] });
   assert.equal(result.publicationVerified, false); assert.equal(result.candidate.fixture, true);
   for (const facet of result.unchangedFacets) assert.deepEqual(result.candidate.indexes[facet], f.args.parentContext.snapshot.indexes[facet]);
   assert.equal(result.metrics.topicRecordsRead, 3); assert.equal(result.fullArtworkScans, 0); assert.equal(result.fullCatalogPagesBuilt, 0);
-  assert(f.calls.every(key => key.startsWith('catalog/objects/collections/')));
+  assert(f.calls.every(key => key.startsWith('catalog/objects/collections/') || key === f.args.parentContext.snapshot.indexes.artworks.key));
   assert(!f.calls.some(key => key.includes('f'.repeat(64))));
+  assert(!f.calls.some(key => key.includes('e'.repeat(64))));
+  const art = JSON.parse(new TextDecoder().decode(result.created.get(result.candidate.indexes.artworks.key)));
+  assert.equal(art.revision, result.candidate.revision); assert.equal(result.artworkEnvelopeRebinding.artworkLeavesRead, 0);
   const bytes = result.created.get(result.changed[0].afterDescriptor.key), value = JSON.parse(new TextDecoder().decode(bytes));
   assert.deepEqual(value.membership, change.record.membership); assert.deepEqual(value.pageBlocks, change.record.pageBlocks);
 });
