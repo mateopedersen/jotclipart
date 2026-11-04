@@ -105,15 +105,17 @@ export function initCuteSurprise() {
     });
   }
   choose();
-  setTimeout(
-    () =>
+  const prepareAfterPageLoad = () =>
+    setTimeout(() =>
       void load().then(() => {
         if (prepared || committed) return;
         choose();
         if (location.pathname === '/') prepare();
-      }),
-    250,
-  );
+      }), 250);
+  // Optional preparation must not contend with the page's initial modules,
+  // fonts and eager artwork. Real pointer/focus intent remains immediate.
+  if (document.readyState === 'complete') prepareAfterPageLoad();
+  else window.addEventListener('load', prepareAfterPageLoad, { once: true });
   window.addEventListener('pageshow', (event) => {
     if (!event.persisted) return;
     committed = false;

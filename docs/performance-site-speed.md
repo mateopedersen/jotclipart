@@ -49,6 +49,9 @@ Changes address measured critical paths while preserving the same files:
   hints for its current selected page. No editor/tool state is warmed. Neither
   helper blocks or replaces genuine link navigation. They skip Save-Data, 2G,
   hidden and offline documents; canceled/error/timeout cases fail normally.
+  Homepage automatic preparation waits for the initial page load, while direct
+  pointer/focus intent still starts immediately; optional work never competes
+  with the initial module/font transfers by starting on a fixed early timer.
 
 Source and fixture tests prove different things. The live audit records real
 public response/asset timings. Controlled browser fixtures prove nonblocking
