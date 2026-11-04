@@ -1,3 +1,4 @@
+import { beginArtworkLibraryStartup } from './library-startup';
 import { rasterCatalog, featuredRasterCatalog, type RasterAsset } from './raster';
 import { lookupTopicAssets, pinRasterSnapshot, unpinRasterSnapshot } from './studio-sources';
 import { SearchRepository } from '../lib/search-remote';
@@ -25,7 +26,8 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
   const next = q<HTMLButtonElement>('[data-artwork-more]');
   const previous = q<HTMLButtonElement>('[data-artwork-previous]');
   const position = q<HTMLElement>('[data-artwork-page]');
-  const initial = await featuredRasterCatalog();
+  const startup = beginArtworkLibraryStartup(root);
+  const initial = await featuredRasterCatalog().catch((error) => { startup.fail(); throw error; });
   const remote = !!initial.transport, repository = new SearchRepository();
   let remoteRequest: AbortController | undefined, remoteSequence = 0;
   let assets = initial.items as LibraryAsset[];
@@ -310,7 +312,7 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
   style.addEventListener('change', filter);
   topic.addEventListener('change', filter);
   sort.addEventListener('change', reset);
-  q('[data-artwork-clear]').addEventListener('click', () => {
+  const clearFilters = () => {
     filterRevision++;
     list.removeAttribute('aria-busy');
     search.value = '';
@@ -321,25 +323,27 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
     browseMode = 'categories';
     categoryId = '';
     reset();
-  });
+  };
+  q('[data-artwork-clear]').addEventListener('click', clearFilters);
+  const chooseScope = async (value: string) => {
+    const revision = ++filterRevision;
+    try {
+      if (value === 'all') await ensureFull(revision, '');
+      else list.removeAttribute('aria-busy');
+      if (revision !== filterRevision) return;
+      scope = value;
+      browseMode = 'artwork';
+      categoryId = '';
+      topic.value = '';
+      reset();
+    } catch {
+      if (revision !== filterRevision) return;
+      count.textContent = 'The full library could not load. Select All Artwork to retry.';
+    }
+  };
   for (const button of root.querySelectorAll<HTMLButtonElement>('[data-artwork-scope]'))
-    button.addEventListener('click', async () => {
-      const revision = ++filterRevision;
-      try {
-        if (button.dataset.artworkScope === 'all') await ensureFull(revision, '');
-        else list.removeAttribute('aria-busy');
-        if (revision !== filterRevision) return;
-        scope = button.dataset.artworkScope!;
-        browseMode = 'artwork';
-        categoryId = '';
-        topic.value = '';
-        reset();
-      } catch {
-        if (revision !== filterRevision) return;
-        count.textContent = 'The full library could not load. Select All Artwork to retry.';
-      }
-    });
-  q('[data-library-home]').addEventListener('click', () => {
+    button.addEventListener('click', () => { void chooseScope(button.dataset.artworkScope!); });
+  const goHome = () => {
     filterRevision++;
     list.removeAttribute('aria-busy');
     browseMode = 'categories';
@@ -348,8 +352,9 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
     search.value = '';
     page = 1;
     render();
-  });
-  q('[data-library-parent]').addEventListener('click', () => {
+  };
+  q('[data-library-home]').addEventListener('click', goHome);
+  const goParent = () => {
     filterRevision++;
     list.removeAttribute('aria-busy');
     browseMode = 'topics';
@@ -357,7 +362,8 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
     search.value = '';
     page = 1;
     render();
-  });
+  };
+  q('[data-library-parent]').addEventListener('click', goParent);
   const turn = (delta: number) => {
     page += delta;
     render();
@@ -374,5 +380,11 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
   });
   next.addEventListener('click', () => turn(1));
   previous.addEventListener('click', () => turn(-1));
-  render();
+  const intent = startup.ready();
+  if (intent?.type === 'filter') await filter();
+  else if (intent?.type === 'scope') await chooseScope(intent.scope);
+  else if (intent?.type === 'clear') clearFilters();
+  else if (intent?.type === 'home') goHome();
+  else if (intent?.type === 'parent') goParent();
+  else render();
 }
