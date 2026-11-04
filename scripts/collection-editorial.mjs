@@ -34,6 +34,11 @@ export function collectionParagraphReviewSignature(record) {
     .digest('hex');
 }
 
+/** A conservative text gate, never a visual classification or approval. */
+export function summarySupportsNumberLearning(summary) {
+  return /\b(?:numbers?|numerals?|digits?|zero(?:s|es)?|ordinal)\b/i.test(summary ?? '');
+}
+
 /** Catalog-grounded writing approval, never a claim of fresh visual inspection. */
 export function validateCollectionParagraphs(topic, items, record) {
   const fail = (reason) => {
@@ -56,6 +61,16 @@ export function validateCollectionParagraphs(topic, items, record) {
   const text = record.paragraphs.join('\n\n');
   const words = text.trim().split(/\s+/).length;
   if (words < 50 || words > 200) fail('keep the introduction useful and concise (50–200 words)');
+  // Reject known cross-domain boilerplate; this never approves unseen artwork.
+  if (
+    /\bnumeral treatment\b/i.test(record.paragraphs.slice(1).join(' ')) &&
+    /\b(?:James Bond|spy|emergency|dispatchers?|firefighters?|first milestones)\b/i.test(
+      record.intro,
+    )
+  )
+    fail('number-learning use case is unsupported by the reviewed topic summary');
+  if (/\bplant observation\b/i.test(text) && /\b(?:fungi|mushrooms?)\b/i.test(record.intro))
+    fail('use a fungi-specific activity rather than labeling mushrooms as plants');
   if ((text.match(/\{\{artworkCount\}\}/g) ?? []).length !== 1)
     fail('use the live artwork count exactly once');
   if (
