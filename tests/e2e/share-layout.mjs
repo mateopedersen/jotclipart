@@ -37,7 +37,7 @@ try {
         await expect(dialog).toBeVisible({ timeout: 30000 });
         await expect(dialog.locator('#uc-share-link')).toHaveValue('https://ultraclipart.com/art/winter-arctic-fox-resting/');
         const layout = await dialog.evaluate(element => ({ width: element.clientWidth, scrollWidth: element.scrollWidth, radius: getComputedStyle(element).borderRadius }));
-        assert.equal(layout.radius, '24px');
+        assert.equal(layout.radius, width <= 700 ? '17px' : '24px');
         assert(layout.scrollWidth <= layout.width + 1);
         await dialog.screenshot({ path: out + '/' + engine + '-' + width + '-dialog.png' });
         await dialog.locator('.uc-share-close').click();
