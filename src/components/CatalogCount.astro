@@ -16,9 +16,7 @@ const value = catalogCountValue(catalogStatistics, kind, countKey);
   data-catalog-key={countKey}
   data-catalog-unit={unit}
   data-catalog-version={catalogStatistics.version}
->
-  {formatCatalogCount(value, unit)}
-</span>
+>{formatCatalogCount(value, unit)}</span>
 
 <script>
   import '../scripts/catalog-counts';
