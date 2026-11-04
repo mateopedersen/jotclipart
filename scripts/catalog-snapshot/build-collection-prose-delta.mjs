@@ -1,0 +1,116 @@
+// Publisher-only prose changes. Never builds pages, reads artwork or activates a root.
+import { createDeltaStore } from './delta-store.mjs';
+import { openSnapshot } from '../../server/catalog-snapshot/snapshot-context.mjs';
+import { facetStore, canonical, bytesOf, digest, emitDirectory, patchTopic, slugOK } from '../../server/catalog-collections/store.mjs';
+import { validateTopicIdentity } from '../../server/catalog-collections/writer.mjs';
+import { collectionOpening, collectionIntroductionTemplate, verifyCollectionOpenings } from '../collection-editorial.mjs';
+
+const hex = /^[a-f0-9]{64}$/, allowed = new Set(['summary', 'metaDescription', 'paragraphs', 'editorial']);
+const same = (a, b) => JSON.stringify(canonical(a)) === JSON.stringify(canonical(b));
+const protectedFields = r => Object.fromEntries(Object.entries(r).filter(([k]) => !allowed.has(k)));
+const fingerprint = async (slug, record) => {
+  const opening = collectionOpening(record.paragraphs?.[0] ?? '');
+  return { slug, exact: await digest(opening.normalize('NFKC').toLowerCase()),
+    template: await digest(collectionIntroductionTemplate(slug, opening)) };
+};
+function checkProse(slug, record) {
+  validateTopicIdentity(record, slug);
+  verifyCollectionOpenings({ topics: { [slug]: record.editorial } });
+  if ([record.summary, record.metaDescription, ...record.paragraphs].some(t => /[\u2010-\u2015-]/.test(t)))
+    throw Error('Collection prose must not contain hyphens or dash punctuation');
+}
+async function entries(store, descriptor, prefix = '') {
+  const node = await store.read('collections', descriptor);
+  if (node.kind !== 'collection' || node.prefix !== prefix) throw Error('Wrong prose directory context');
+  if (node.type === 'hashed-topic-leaf') {
+    if (!Array.isArray(node.entries) || node.entries.length > 4096) throw Error('Invalid prose directory leaf');
+    for (const row of node.entries)
+      if (!slugOK(row.slug) || !(await digest(row.slug)).startsWith(prefix)) throw Error('Wrong prose directory partition');
+    return node.entries;
+  }
+  if (node.type !== 'hashed-topic-branch' || !node.children || Object.keys(node.children).length > 16)
+    throw Error('Invalid prose directory branch');
+  const rows = [];
+  for (const [key, child] of Object.entries(node.children)) {
+    if (!/^[a-f0-9]+$/.test(key) || !key.startsWith(prefix) || key.length !== prefix.length + 1)
+      throw Error('Invalid prose directory path');
+    rows.push(...await entries(store, child, key));
+    if (rows.length > 10000) throw Error('Topic opening directory budget exceeded');
+  }
+  return rows;
+}
+export async function buildCollectionProseDelta({
+  parentContext, parentBucket, revision, sourceReceiptSHA256, changes, validateSourceTopic,
+}) {
+  if (!/^[a-f0-9]{40}$/.test(revision ?? '') || revision === parentContext?.snapshot?.revision ||
+      !hex.test(sourceReceiptSHA256 ?? '') || !Array.isArray(changes) || !changes.length || changes.length > 10000 ||
+      new Set(changes.map(c => c.slug)).size !== changes.length || typeof validateSourceTopic !== 'function')
+    throw Error('Bounded source reviewed prose delta required');
+  const overlay = createDeltaStore(parentBucket, parentContext);
+  const base = await openSnapshot(overlay.bucket, { provided: parentContext.snapshot });
+  if (base.rootSHA256 !== parentContext.rootSHA256) throw Error('Authenticated prose parent differs');
+  const store = facetStore(overlay.bucket, { writable: true, maxReads: 20000, maxBytes: 128 * 1024 * 1024 });
+  const collections = await store.read('collections', base.snapshot.indexes.collections);
+  if (collections.type !== 'collection-directory' || collections.viewProtocol !== 'collection-references-v2' ||
+      !Number.isSafeInteger(collections.topicCount) || collections.topicCount < 1 || collections.topicCount > 10000)
+    throw Error('Source-bound reference collections required');
+  const directory = await entries(store, collections.directory);
+  const bySlug = new Map(directory.map(d => [d.slug, d]));
+  if (bySlug.size !== collections.topicCount || directory.length !== bySlug.size) throw Error('Incomplete prose topic directory');
+  const openingRows = collections.openingIndex ? await entries(store, collections.openingIndex) : [];
+  const openings = new Map(openingRows.map(r => [r.slug, r]));
+  if (collections.openingIndex && (openings.size !== bySlug.size || openingRows.length !== bySlug.size ||
+      openingRows.some(r => !bySlug.has(r.slug) || !hex.test(r.exact ?? '') || !hex.test(r.template ?? ''))))
+    throw Error('Incomplete source-bound opening index');
+  const oldRecords = new Map(), plans = [];
+  const readTopic = async slug => {
+    if (!oldRecords.has(slug)) oldRecords.set(slug, await store.read('collections', bySlug.get(slug)));
+    return oldRecords.get(slug);
+  };
+  if (!collections.openingIndex)
+    for (const slug of bySlug.keys()) openings.set(slug, await fingerprint(slug, await readTopic(slug)));
+  // Validate the whole batch before staging any local object.
+  for (const change of changes) {
+    const prior = bySlug.get(change.slug);
+    if (!prior || change.expectedRecordSha256 !== prior.sha256) throw Error('Stale or absent prose topic');
+    const oldRecord = await readTopic(change.slug), record = change.record;
+    if (!record || !same(protectedFields(oldRecord), protectedFields(record)) ||
+        oldRecord.editorial?.sourceSha256 !== record.editorial?.sourceSha256)
+      throw Error('Prose delta changed a protected identity, membership, source or count');
+    checkProse(change.slug, record);
+    if (collections.openingIndex && !same(openings.get(change.slug), await fingerprint(change.slug, oldRecord)))
+      throw Error('Opening index differs from its source topic');
+    const newRecordSha256 = await digest(bytesOf(record));
+    const proof = await validateSourceTopic({ change, oldRecord });
+    if (proof?.oldRecordSha256 !== prior.sha256 || proof.newRecordSha256 !== newRecordSha256 ||
+        !hex.test(proof.reviewReceiptSHA256 ?? '')) throw Error('Prose source review is not bound to the exact record');
+    plans.push({ change, prior, record, proof });
+    openings.set(change.slug, await fingerprint(change.slug, record));
+  }
+  const exact = new Set(), templates = new Set();
+  for (const row of openings.values()) {
+    if (exact.has(row.exact) || templates.has(row.template)) throw Error('Repeated exact or subject substituted collection opening');
+    exact.add(row.exact); templates.add(row.template);
+  }
+  let nextDirectory = collections.directory;
+  const changed = [];
+  for (const { change, prior, record } of plans) {
+    const descriptor = await store.put('collections', record);
+    const next = { ...prior, ...descriptor };
+    nextDirectory = await patchTopic(store, nextDirectory, 'collection', change.slug, next);
+    changed.push({ slug: change.slug, beforeDescriptor: prior, afterDescriptor: next });
+  }
+  const openingIndex = await emitDirectory(store, [...openings.values()], 'collection');
+  const indexes = { ...base.snapshot.indexes, collections: await store.put('collections', {
+    ...collections, directory: nextDirectory, openingIndex,
+  }) };
+  const candidate = { schema: 1, fixture: true, status: 'PRIVATE_UNPUBLISHABLE', revision,
+    parentRevision: base.snapshot.revision, indexes };
+  const graph = overlay.verifyChangedClosure(indexes);
+  return { status: 'PRIVATE_PROSE_DELTA_REQUIRES_SOURCE_GRAPH_NATIVE_AND_REMOTE_APPROVAL',
+    candidate, created: overlay.created, changed, graph, sourceReceiptSHA256,
+    parentSnapshotSHA256: parentContext.rootSHA256, fullCatalogPagesBuilt: 0, fullArtworkScans: 0,
+    metrics: { ...overlay.metrics(), topicRecordsRead: oldRecords.size,
+      openingIndexBootstrapped: !collections.openingIndex, openingFingerprints: openings.size },
+    unchangedFacets: Object.keys(indexes).filter(k => k !== 'collections'), publicationVerified: false };
+}
