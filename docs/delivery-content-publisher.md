@@ -47,6 +47,24 @@ The issuer independently replays the source/graph and checks exact native and
 remote receipts before signing. The activation swaps one R2 pointer only if the
 parent and ETag still match. A collision stops; it never overwrites a newer release.
 
+Topic source/prose and complete search/category identity checks run before binary
+transport too. An append must preserve all accepted categories and keywords unless
+the complete affected member delta is explicitly supplied and reviewed. The same
+gate remains in final graph composition; an accidental secondary-category omission
+cannot silently alter discovery.
+
+If a local process stops after all incoming media were uploaded but before a
+prepared graph exists, use a NEW output directory and the normal operator with
+`--reuse-incoming-receipt work/.../incoming-files-receipt.json`. The historical
+receipt must cover the exact same account, bucket, Merkle root and every native
+file path/key/byte/hash. It is only admission to the existing read-only verifier:
+fresh scoped signed requests GET and hash every R2 object, check MIME and PDF
+disposition, and reject missing or changed objects without PUT fallback. Normal
+public CDN byte/MIME/CORS checks, native HTML checks, independent sealing and
+conditional activation still follow. This avoids re-uploading identical binaries;
+it does not trust old leases, skip current reads, enumerate the account or resume
+an already activated release. Inspect the real active pointer before recovery.
+
 `prepare` does not activate. `publish` activates only after those gates, then checks
 changed public topic/art/editor pages and complete incoming original media bytes.
 It records a shared accepted data-only source ledger. A full legacy deployment is

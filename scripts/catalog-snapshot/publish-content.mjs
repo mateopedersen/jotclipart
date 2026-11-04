@@ -11,6 +11,8 @@ import { captureProductionSnapshot } from '../../server/catalog-snapshot/signed-
 import { prepareCatalogContent, validateContentPacket } from './prepare-content.mjs';
 import { createReviewedDeltaValidators } from './validate-delta-source.mjs';
 import { readArtwork } from '../../server/catalog-snapshot/artwork-facet-reader.mjs';
+import { openSevenFacetCollectionContext } from '../../server/catalog-snapshot/collection-context.mjs';
+import { assertCompleteTopicSearchDelta } from './topic-search-preflight.mjs';
 import { stageScopedFiles } from './stage-files.mjs';
 import { verifyNativeContent } from './test-content-native.mjs';
 import { sealCatalogContent } from './seal-content.mjs';
@@ -52,6 +54,7 @@ export async function publishReviewedCapsule({
   output,
   activate = false,
   prepareReader,
+  reuseIncomingReceipt = null,
   progress = () => {},
 }) {
   if (prepareReader && activate) throw Error('Private test transport cannot activate production');
@@ -115,6 +118,15 @@ export async function publishReviewedCapsule({
           change,
           oldRecord: await readArtwork(parent, change.id),
         });
+      const topics = await openSevenFacetCollectionContext(bucket, { snapshot: parent.snapshot });
+      const changed = new Map(packet.changes.map((c) => [c.id, c.record]));
+      for (const change of packet.topicChanges) {
+        const descriptor = await topics.lookupCollection(change.slug);
+        const oldRecord = descriptor ? await topics.read(descriptor, 256 * 1024) : null;
+        assertCompleteTopicSearchDelta(oldRecord, change, new Set(changed.keys()));
+        await validators.validateSourceTopic({ change, oldRecord,
+          resolveAfterArtwork: (id) => changed.has(id) ? changed.get(id) : readArtwork(parent, id) });
+      }
     },
   );
   const files = [...validateManifest(packet.incomingMediaManifest).values()];
@@ -139,6 +151,7 @@ export async function publishReviewedCapsule({
       verifier: { ...verifier, bucketName: 'ultraclipart-media' },
       directory: join(output, 'incoming-media'),
       progress,
+      reuseReceipt: reuseIncomingReceipt,
     });
   }
   const prepared = await reader(
@@ -234,11 +247,15 @@ export async function publishReviewedCapsule({
   return result;
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
-  const [mode, capsulePath, software, config, output] = process.argv.slice(2);
+  const [mode, capsulePath, software, config, output, reuseFlag, receiptPath] = process.argv.slice(2);
   if (!['prepare', 'publish'].includes(mode) || !output)
     throw Error(
       'Use prepare|publish committed-capsule-path installed-software public-config new-work-directory',
     );
+  if ((reuseFlag && reuseFlag !== '--reuse-incoming-receipt') || (reuseFlag && !receiptPath))
+    throw Error('Use --reuse-incoming-receipt with the exact protected prior receipt');
+  if (receiptPath && !resolve(receiptPath).startsWith(resolve('work') + '/'))
+    throw Error('Protected prior media receipt required');
   console.log(
     JSON.stringify(
       await publishReviewedCapsule({
@@ -247,6 +264,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1]
         publicConfig: JSON.parse(readFileSync(config)),
         output,
         activate: mode === 'publish',
+        reuseIncomingReceipt: receiptPath ? JSON.parse(readFileSync(receiptPath)) : null,
         progress: (r) => console.log(JSON.stringify(r)),
       }),
     ),

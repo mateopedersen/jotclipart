@@ -15,6 +15,7 @@ import { applyCuteBatch, cuteProjection } from '../../server/catalog-snapshot/cu
 import { applySitemapBatch } from '../../server/catalog-snapshot/sitemap-ledger.mjs';
 import { downloadDetails } from '../../src/lib/download-data.ts';
 import { refreshCollectionOpenings } from './refresh-openings.mjs';
+import { assertCompleteTopicSearchDelta } from './topic-search-preflight.mjs';
 const hashRecord = (record) => (record ? digest(JSON.stringify(canonical(record))) : null),
   hex = /^[a-f0-9]{64}$/;
 const searchRecord = (a, t) =>
@@ -99,14 +100,7 @@ export async function buildCatalogDelta({
   const suppliedIds = new Set(changes.map((c) => c.id));
   for (const change of topicChanges) {
     const old = await beforeTopic(change.slug);
-    if (!old || !change.record) continue;
-    const searchTopic = (t) =>
-      canonical({ keyword: t.keyword, primaryCluster: t.primaryCluster, clusters: t.clusters });
-    if (
-      JSON.stringify(searchTopic(old)) !== JSON.stringify(searchTopic(change.record)) &&
-      change.artworkIds.some((id) => !suppliedIds.has(id))
-    )
-      throw Error('Changed topic search identity requires its complete scoped member delta');
+    assertCompleteTopicSearchDelta(old, change, suppliedIds);
   }
   // Validate the WHOLE source batch before writing even local metadata.
   for (const c of changes) {

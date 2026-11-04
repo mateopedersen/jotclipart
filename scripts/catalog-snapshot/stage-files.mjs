@@ -8,7 +8,8 @@ import {
   createReleaseWriteAuthorization,
   OWNER_MANAGED_STORAGE_POLICY,
 } from '../delivery/release-write-authorization.mjs';
-import { validateVerificationReceipt } from '../delivery/verification-batch.mjs';
+import { validateVerificationReceipt, verifyExistingFiles } from '../delivery/verification-batch.mjs';
+import { assertReusableIncomingReceipt } from './incoming-reuse.mjs';
 import { withPrivateCatalogSession } from './operator-session.mjs';
 import { verifySourceFile } from './source-files.mjs';
 export async function stageScopedFiles({
@@ -19,6 +20,7 @@ export async function stageScopedFiles({
   directory,
   media = true,
   benchmarkPrefix = null,
+  reuseReceipt = null,
   progress = () => {},
 }) {
   if (
@@ -50,6 +52,10 @@ export async function stageScopedFiles({
       ...(benchmarkPrefix ? { benchmark: true, testPrefix: benchmarkPrefix } : {}),
     };
   createReleaseWriteAuthorization(job);
+  if (reuseReceipt) {
+    if (benchmarkPrefix || !media) throw Error('Incoming media recovery only');
+    assertReusableIncomingReceipt(reuseReceipt, records, tree.root, verifier);
+  }
   return withPrivateCatalogSession(
     {
       directory: join(directory, 'binary-session'),
@@ -60,7 +66,21 @@ export async function stageScopedFiles({
       let cursor = 0;
       const verified = [],
         started = Date.now();
-      await Promise.all(
+      if (reuseReceipt) {
+        const missing = await verifyExistingFiles(
+          records.map((record, i) => ({ record, proof: tree.proof(i) })),
+          { root: tree.root, accountId: job.accountId, bucket: job.bucket, secret,
+            actors: 4,
+            onVerified: (row) => {
+              verified.push(row);
+              progress({ phase: 'incoming-files-reverified-without-upload',
+                verified: verified.length, total: records.length,
+                seconds: (Date.now() - started) / 1000 });
+            },
+          },
+        );
+        if (missing.length) throw Error('Previously uploaded incoming media is missing');
+      } else await Promise.all(
         Array.from({ length: 4 }, async () => {
           while (cursor < records.length) {
             const i = cursor++,
@@ -120,6 +140,8 @@ export async function stageScopedFiles({
         seconds: (Date.now() - started) / 1000,
         accountInventoryCalls: 0,
         oldCatalogScans: 0,
+        ...(reuseReceipt ? { recoveryMode: 'FRESH_READ_ONLY_R2_FULL_BYTE_VERIFICATION_NO_UPLOAD',
+          previousRevision: reuseReceipt.revision } : {}),
       };
       mkdirSync(directory, { recursive: true });
       writeFileSync(
