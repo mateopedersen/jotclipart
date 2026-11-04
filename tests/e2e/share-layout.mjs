@@ -16,9 +16,11 @@ try {
         const mutations = [];
         page.on('pageerror', error => report.errors.push(error.message));
         page.on('request', request => { if (request.method() === 'POST' && /\/api\/share\//.test(new URL(request.url()).pathname)) mutations.push(request.url()); });
+        const discovery=page.waitForResponse(r=>new URL(r.url()).pathname==='/surprise-picks.json');
         const response = await page.goto(base + '/art/winter-arctic-fox-resting/', { waitUntil: 'domcontentloaded', timeout: 60000 });
         assert.equal(response.status(), 200);
         if (process.env.UC_EXPECTED_SNAPSHOT_SHA256) assert.equal(response.headers()['x-uc-snapshot'], process.env.UC_EXPECTED_SNAPSHOT_SHA256);
+        await(await discovery).json();
         const share = page.locator('.share-trigger-detail'), favorite = page.locator('.art-detail [data-favorite]');
         await share.scrollIntoViewIfNeeded();
         const geometry = await share.evaluate((element) => {
@@ -35,6 +37,7 @@ try {
         await share.click();
         const dialog = page.locator('dialog.uc-share');
         await expect(dialog).toBeVisible({ timeout: 30000 });
+        await expect(dialog.locator('.uc-share-download')).toBeEnabled({ timeout: 30000 });
         await expect(dialog.locator('#uc-share-link')).toHaveValue('https://ultraclipart.com/art/winter-arctic-fox-resting/');
         const layout = await dialog.evaluate(element => ({ width: element.clientWidth, scrollWidth: element.scrollWidth, radius: getComputedStyle(element).borderRadius }));
         assert.equal(layout.radius, width <= 700 ? '17px' : '24px');
@@ -43,8 +46,9 @@ try {
         await dialog.locator('.uc-share-close').click();
         await expect(dialog).toHaveCount(0);
         assert.equal(await favorite.getAttribute('aria-pressed'), originalFavorite);
+        const nextDiscovery=page.waitForResponse(r=>new URL(r.url()).pathname==='/surprise-picks.json');
         const cards = await page.goto(base + '/clipart/winter/', { waitUntil: 'domcontentloaded', timeout: 60000 });
-        assert.equal(cards.status(), 200);
+        assert.equal(cards.status(), 200);await(await nextDiscovery).json();
         const card = page.locator('.share-trigger-card').first();
         assert.equal(await card.evaluate(element => getComputedStyle(element).position), 'absolute');
         assert.equal(Math.round((await card.boundingBox()).width), 40);

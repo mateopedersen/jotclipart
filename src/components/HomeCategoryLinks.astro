@@ -1,56 +1,48 @@
 ---
-import { availableClusters, publishedArt, slugify, topicInCluster, topics } from '../lib/catalog';
+import { availableClusters, slugify } from '../lib/catalog';
+import HomeCategoryIcon from './HomeCategoryIcon.astro';
 
-const topicBySlug = new Map(topics.map((topic) => [topic.slug, topic]));
+
 const categories = [
   {
     cluster: 'Animals & nature',
     label: 'Animals',
     detail: 'Pets & Wildlife',
-    image: 'baby-fennec-fox-watercolor-clipart',
+    icon: 'animals',
   },
   {
     cluster: 'Food & drink',
     label: 'Food & Drink',
     detail: 'Fruit, Meals & Treats',
-    image: 'strawberry-fruit-trio-realistic-clipart',
+    icon: 'food',
   },
   {
     cluster: 'School & learning',
     label: 'School',
     detail: 'Books & Classroom Supplies',
-    image: 'school-backpack-filled-with-pencils-playful-clipart',
+    icon: 'school',
   },
   {
     cluster: 'Technology & devices',
     label: 'Technology',
     detail: 'Devices & Accessories',
-    image: 'keyboard-rgb-gaming-keyboard',
+    icon: 'technology',
   },
   {
     cluster: 'Family & celebrations',
     label: 'Family',
     detail: 'Parents & Children',
-    image: 'baby-girl-with-pink-bow-clipart',
+    icon: 'family',
   },
   {
     cluster: 'Nature & elements',
     label: 'Nature',
     detail: 'Earth & Natural Elements',
-    image: 'earth-clipart-atlantic-globe-natural-color',
+    icon: 'nature',
   },
 ]
   .filter((category) => availableClusters.includes(category.cluster))
-  .flatMap((category) => {
-    const matches = (item: (typeof publishedArt)[number]) => {
-      const topic = topicBySlug.get(item.topic);
-      return topic && topicInCluster(topic, category.cluster);
-    };
-    const image =
-      publishedArt.find((item) => item.id === category.image && matches(item)) ??
-      publishedArt.find((item) => matches(item) && item.alpha && !item.monochrome);
-    return image ? [{ ...category, key: slugify(category.cluster), image }] : [];
-  });
+  .map(category => ({...category, key: slugify(category.cluster)}));
 ---
 
 <div class="home-category-shortcuts">
@@ -61,18 +53,7 @@ const categories = [
     {categories.map((category) => (
       <a href={`/collection/${category.key}/`}>
         <span class="home-category-picture">
-          <img
-            title={category.image.title}
-            src={category.image.thumb}
-            srcset={category.image.thumbSrcSet}
-            sizes="48px"
-            alt={category.image.alt}
-            width="48"
-            height="48"
-            loading="lazy"
-            decoding="async"
-            fetchpriority="low"
-          />
+          <HomeCategoryIcon kind={category.icon} />
         </span>
         <span class="home-category-copy">
           <strong>{category.label}</strong>

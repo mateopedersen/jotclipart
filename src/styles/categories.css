@@ -609,6 +609,14 @@
   max-height: none;
   object-fit: contain;
 }
+.subject-image-pending {
+  display: grid;
+  place-items: center;
+  min-height: 190px;
+  padding: 16px;
+  color: #365775;
+  font: 600 14px/1.4 var(--font-ui);
+}
 .subject-label {
   display: flex;
   align-items: center;

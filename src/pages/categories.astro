@@ -285,6 +285,7 @@ const schema = {
               hidden={index >= 12}
               data-topic={subject.keyword.toLowerCase()}
               data-slug={subject.slug}
+              data-sample-id={subject.sampleId}
               data-group={subject.group}
               data-groups={subject.groups.join(' ')}
               data-name={subject.name}
@@ -294,7 +295,7 @@ const schema = {
             >
               <a href={`/clipart/${subject.slug}/`}>
                 <div class={`subject-art tone-${subject.color}`}>
-                  <img
+                  {index < 12 && subject.sample ? <img
                     title={subject.sample.title}
                     src={subject.sample.thumb}
                     srcset={subject.sample.thumbSrcSet}
@@ -304,7 +305,7 @@ const schema = {
                     height="190"
                     loading="lazy"
                     decoding="async"
-                  />
+                  /> : <span class="subject-image-pending" role="img" aria-label={`${subject.name} collection preview`}>Open Collection</span>}
                 </div>
                 <div class="subject-label">
                   <div>

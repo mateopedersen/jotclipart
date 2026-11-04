@@ -1,4 +1,5 @@
 // Request reader over one captured root. No source approval or pointer reads here.
+import { mapFour } from '../catalog-search/bounded-map.mjs';
 import { lookupTopic, slugOK, fail, CollectionFault } from './store.mjs';
 import {
   VIEW_PROTOCOL,
@@ -96,8 +97,10 @@ export async function readCollectionReferences(
       }
       return null;
     }
-    const r = await store.read('collections', entry),
-      count = await lookupTopic(store, countsRoot.topics, 'count', target);
+    const [r, count] = await Promise.all([
+      store.read('collections', entry),
+      lookupTopic(store, countsRoot.topics, 'count', target),
+    ]);
     if (
       !r ||
       !['collection-topic', 'collection-topic-references'].includes(r.type) ||
@@ -121,8 +124,9 @@ export async function readCollectionReferences(
   validateTopicRecord(record, ids);
   let offset = 0;
   const pageIds = [];
-  for (const d of record.pageBlocks) {
-    const page = await store.read('collections', d),
+  const blocks = await mapFour(record.pageBlocks, d => store.read('collections', d));
+  for (const [index, d] of record.pageBlocks.entries()) {
+    const page = blocks[index],
       rows = page.artworkIds ?? page.artworks?.map((a) => a.id);
     if (
       !['collection-page-artworks', 'collection-page-ids'].includes(page.type) ||
@@ -141,13 +145,12 @@ export async function readCollectionReferences(
   if (ids.length !== pageIds.length || ids.some((id, i) => id !== pageIds[i]))
     fail('Page IDs differ from membership');
   // Legacy duplicated covers/counts/card DTOs are intentionally ignored in v2.
-  const related = [];
-  for (const relation of record.related) {
-    const target = await find(relation.slug);
-    if (target) related.push(target.record);
-  }
-  const shared = await store.read('collections', collections.sharedContext);
-  const resolvedSurprise = resolveSurprise ? await resolveSurprise(context) : null;
+  const [relatedRows, shared, resolvedSurprise] = await Promise.all([
+    mapFour(record.related, relation => find(relation.slug)),
+    store.read('collections', collections.sharedContext),
+    resolveSurprise ? resolveSurprise(context) : null,
+  ]);
+  const related = relatedRows.filter(Boolean).map(target => target.record);
   if (resolvedSurprise && resolvedSurprise.rootSHA256 !== context.rootSHA256)
     fail('Discovery snapshot differs');
   const surprise = resolvedSurprise ? resolvedSurprise.items : shared.surprise;

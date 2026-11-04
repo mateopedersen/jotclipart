@@ -31,6 +31,7 @@ export const categorySubjects = availableTopics
       ),
       count: catalogStatistics.topics[topic.slug] ?? 0,
       sample,
+      sampleId: sample.id,
       group: slugify(topic.cluster),
       groups: [slugify(topic.cluster)],
       relatedGroups: clustersForTopic(topic).map(slugify),

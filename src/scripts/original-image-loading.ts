@@ -112,7 +112,7 @@ export function initOriginalImageLoading(
       if (!s.active && !s.image.complete) s.image.fetchPriority = s.visible ? 'high' : 'low';
     }
     pump();
-  }, { rootMargin: `${Math.min(1200, Math.max(400, innerHeight))}px 0px` });
+  }, { rootMargin: `${Math.min(600, Math.max(240, Math.round(innerHeight / 2)))}px 0px` });
   function remove(image: HTMLImageElement) {
     const s = states.get(image); if (!s) return;
     release(s); queue.delete(s); if (s.retry) clearTimeout(s.retry);
@@ -132,7 +132,10 @@ export function initOriginalImageLoading(
       onError:()=>{if(!s.resetting)recover(s)}};
     states.set(image,s); image.addEventListener('load',s.onLoad);image.addEventListener('error',s.onError);
     if (image.complete && image.naturalWidth > 0) status(s,'loaded');
-    else { s.visible=inView(s); s.near=s.visible; s.top=image.getBoundingClientRect().top;
+    else {
+      // IntersectionObserver batches geometry after layout. Measuring every
+      // image between state writes forces repeated full-document layouts.
+      if (!observer) { s.visible=inView(s); s.near=s.visible; s.top=image.getBoundingClientRect().top; }
       if (image.complete) status(s,'error');
       if (s.visible) queue.add(s); observer?.observe(image); }
   }

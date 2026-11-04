@@ -25,6 +25,21 @@ export const searchKindLabels: Record<string, string> = {
   page: 'Site Pages',
   studio: 'Studio Elements',
 };
+// The source directory is reused across keystrokes. Prepare public text once,
+// without retaining queries or trusting stale fields after a metadata change.
+const preparedEntries = new WeakMap<SiteSearchEntry, {
+  titleSource: string; descriptionSource: string; textSource: string; kindSource: string;
+  title: string[]; body: Set<string>;
+}>();
+export function preparedSiteEntry(entry: SiteSearchEntry) {
+  const old = preparedEntries.get(entry);
+  if (old && old.titleSource === entry.title && old.descriptionSource === entry.description &&
+      old.textSource === entry.text && old.kindSource === entry.kind) return old;
+  const value = { titleSource: entry.title, descriptionSource: entry.description,
+    textSource: entry.text, kindSource: entry.kind, title: normalizeQuery(entry.title),
+    body: new Set(normalizeQuery(`${entry.title} ${entry.description} ${entry.text} ${searchKindLabels[entry.kind]}`)) };
+  preparedEntries.set(entry, value); return value;
+}
 export function searchSiteEntries(entries: SiteSearchEntry[], query: string, kind = 'all') {
   const plan = queryTerms(query),
     tokens = [...plan.tokens];
@@ -35,22 +50,22 @@ export function searchSiteEntries(entries: SiteSearchEntry[], query: string, kin
   const exact: { entry: SiteSearchEntry; score: number; fuzzy: boolean }[] = [],
     close: typeof exact = [];
   for (const entry of candidates) {
-    const title = normalizeQuery(entry.title),
-      body = new Set(
-        normalizeQuery(
-          `${entry.title} ${entry.description} ${entry.text} ${searchKindLabels[entry.kind]}`,
-        ),
-      );
+    const { title, body } = preparedSiteEntry(entry);
     if (plan.excluded.some((word) => termVariants(word).some((term) => body.has(term)))) continue;
     const matches: TermMatch[] = [];
     for (const [i, token] of tokens.entries()) {
       let words = termVariants(token).filter((word) => body.has(word)),
         fuzzy = false;
       if (!words.length) {
+        // A final typed fragment is a prefix, not a misspelling. Keep two-letter
+        // subject navigation usable while the full artwork request continues.
+        if (i === tokens.length - 1 && token.length >= 2)
+          words = [...body].filter((word) => word.startsWith(token));
+      }
+      if (!words.length) {
         words = [...body].filter(
           (word) =>
-            oneEditAway(token, word) ||
-            (i === tokens.length - 1 && token.length >= 3 && word.startsWith(token)),
+            oneEditAway(token, word),
         );
         fuzzy = !!words.length;
       }

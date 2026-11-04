@@ -1,5 +1,5 @@
 import { normalizeQuery, queryTerms, termVariants } from './search-language.ts';
-import { searchKindLabels, type SiteSearchEntry } from './site-search.ts';
+import { preparedSiteEntry, searchKindLabels, type SiteSearchEntry } from './site-search.ts';
 import type { SearchCard } from './search-index.ts';
 
 export interface SearchSuggestion {
@@ -18,10 +18,12 @@ export function isDirectSearchMatch(entry: SiteSearchEntry, query: string) {
   if (plan.wantsOutline) words.push('outline');
   if (plan.wantsMonochrome) words.push('black', 'white');
   if (plan.wantsTransparent) words.push('transparent');
-  const title = normalizeQuery(entry.title);
+  const title = preparedSiteEntry(entry).title;
   return (
     words.length > 0 &&
-    words.every((word) => termVariants(word).some((term) => title.includes(term)))
+    words.every((word, index) => termVariants(word).some((term) =>
+      title.includes(term) || (index === words.length - 1 && term.length >= 2 &&
+        title.some((part) => part.startsWith(term)))))
   );
 }
 

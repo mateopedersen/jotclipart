@@ -1,3 +1,5 @@
+import { SearchRepository } from '../lib/search-remote';
+import type { SearchCard } from '../lib/search-index';
 const input = document.querySelector<HTMLInputElement>('#topic-filter')!;
 const group = document.querySelector<HTMLInputElement>('#category-group')!;
 const sort = document.querySelector<HTMLSelectElement>('#category-sort')!;
@@ -16,6 +18,37 @@ let limit = pageSize;
 let letter = '';
 let previousSort = 'name:';
 let matchedCount = cards.length;
+const samples = new SearchRepository();
+const sampleJobs = new Map<string, Promise<void>>();
+let sampleQueue = Promise.resolve();
+function loadSamples(targets: HTMLLIElement[]) {
+  const missing = targets.filter(card => !card.querySelector('.subject-art img') && card.dataset.sampleId);
+  const fresh = missing.filter(card => !sampleJobs.has(card.dataset.sampleId!));
+  if (!fresh.length) return;
+  const ids = [...new Set(fresh.map(card => card.dataset.sampleId!))];
+  // At most one bounded visible batch. Filter hover never scans all subjects.
+  const job = sampleQueue.then(async () => {
+    const result = await samples.favoriteItems(ids);
+    const byId = new Map(result.filter((item): item is SearchCard => item !== null).map(item => [item.id, item]));
+    for (const card of fresh) {
+      const item = byId.get(card.dataset.sampleId!);
+      if (!item || card.querySelector('.subject-art img')) continue;
+      const url = new URL(item.webp);
+      if (url.origin !== 'https://assets.ultraclipart.com' || !url.pathname.endsWith('.webp') || url.search || url.hash)
+        throw new Error('Collection preview must use its original R2 artwork.');
+      const image = new Image();
+      image.title = item.title; image.alt = item.alt;
+      image.width = 240; image.height = 190; image.loading = 'lazy';
+      image.decoding = 'async'; image.fetchPriority = 'low'; image.src = url.href;
+      card.querySelector('.subject-art')!.replaceChildren(image);
+    }
+  });
+  for (const id of ids) sampleJobs.set(id, job);
+  sampleQueue = job.catch(() => {
+    // Keep the real collection link usable. A later filter action can retry.
+    for (const id of ids) sampleJobs.delete(id);
+  });
+}
 function columnsForCount(count: number) {
   const width = grid.getBoundingClientRect().width;
   const preferred = width < 300 ? 1 : width < 640 ? 2 : 3;
@@ -36,6 +69,7 @@ function updateColumns() {
     grid.style.setProperty('--subject-columns', String(columns));
 }
 function primeImages(targets: HTMLLIElement[], priority: 'high' | 'low', maximum = 3) {
+  loadSamples(targets.slice(0, Math.min(pageSize, maximum)));
   const columns = columnsForCount(Math.min(pageSize, targets.length));
   const width = Math.max(
     64,
@@ -128,6 +162,7 @@ async function filter(save = true) {
   matchedCount = Math.min(limit, matches.length);
   updateColumns();
   const shown = new Set(matches.slice(0, limit));
+  loadSamples(matches.slice(0, limit).filter(card => !card.querySelector('.subject-art img')).slice(0, pageSize));
   if (save) primeImages(matches.slice(0, limit), 'high');
   for (const card of cards) card.hidden = !shown.has(card);
   if (orderKey !== previousSort) {
