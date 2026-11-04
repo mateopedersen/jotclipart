@@ -9,6 +9,7 @@ export function remoteCatalogBucket({
   bucket,
   fetcher = fetch,
   cacheEntries = 512,
+  diskCache,
 }) {
   if (
     endpoint !== 'http://127.0.0.1:8899/read' ||
@@ -97,7 +98,8 @@ export function remoteCatalogBucket({
         const [key, p] = batch[i],
           r = verified[i];
         pending.delete(key);
-        if (r) {
+        if (r && key !== 'catalog/active.json') {
+          diskCache?.put(key, r.body);
           cache.set(key, r);
           while (cache.size > cacheEntries) cache.delete(cache.keys().next().value);
         }
@@ -137,7 +139,9 @@ export function remoteCatalogBucket({
         )
       )
         throw Error('Invalid private metadata key');
-      const old = cache.get(key);
+      const onDisk = key !== 'catalog/active.json' ? diskCache?.get(key) : null;
+      if (onDisk) return object(key, { body: onDisk, etag: sha256(onDisk) });
+      const old = key === 'catalog/active.json' ? null : cache.get(key);
       if (old) {
         cache.delete(key);
         cache.set(key, old);

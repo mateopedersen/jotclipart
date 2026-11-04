@@ -6,6 +6,7 @@ import { createHash } from 'node:crypto';
 import { pathToFileURL } from 'node:url';
 import { withPrivateCatalogSession } from './operator-session.mjs';
 import { remoteCatalogBucket } from './remote-reader.mjs';
+import { metadataDiskCache } from './metadata-disk-cache.mjs';
 import { captureProductionSnapshot } from '../../server/catalog-snapshot/signed-production-snapshot.mjs';
 import { prepareCatalogContent, validateContentPacket } from './prepare-content.mjs';
 import { createReviewedDeltaValidators } from './validate-delta-source.mjs';
@@ -21,17 +22,29 @@ const hash = (b) => createHash('sha256').update(b).digest('hex');
 export async function withCatalogReader({ directory, verifier, parentSnapshotSHA256 }, operate) {
   return withPrivateCatalogSession(
     { directory, kind: 'reader', job: { parentSnapshotSHA256, verifier } },
-    async ({ secret }) =>
-      operate(
-        remoteCatalogBucket({
-          secret,
-          parentSnapshotSHA256,
-          accountId: verifier.accountId,
-          bucket: verifier.bucketName,
-        }),
-      ),
+    async ({ secret }) => {
+      const cache = metadataDiskCache({
+        directory: resolve('work/catalog-snapshot/metadata-cache'),
+        accountId: verifier.accountId,
+        bucketName: verifier.bucketName,
+      });
+      try {
+        return await operate(
+          remoteCatalogBucket({
+            secret,
+            parentSnapshotSHA256,
+            accountId: verifier.accountId,
+            bucket: verifier.bucketName,
+            diskCache: cache,
+          }),
+        );
+      } finally {
+        cache.close();
+      }
+    },
   );
 }
+
 export async function publishReviewedCapsule({
   capsulePath,
   software,
@@ -57,6 +70,8 @@ export async function publishReviewedCapsule({
     ).json(),
     parentSnapshotSHA256 = control.verifiedRoot;
   if (!/^[a-f0-9]{64}$/.test(parentSnapshotSHA256 ?? '')) throw Error('Live catalog root required');
+  if (activate && control.controlRevision !== code.revision)
+    throw Error('Installed production software differs from the verified content renderer');
   const revision = hash(
       Buffer.from(
         'catalog-content-v1\n' +
@@ -163,6 +178,14 @@ export async function publishReviewedCapsule({
     (bucket) =>
       sealCatalogContent({ directory: prepared.output, parentBucket: bucket, verifier, software }),
   );
+  const beforeActivation = await (
+    await fetch('https://ultraclipart.com/delivery-release.json', { cache: 'no-store' })
+  ).json();
+  if (
+    beforeActivation.controlRevision !== code.revision ||
+    beforeActivation.verifiedRoot !== parentSnapshotSHA256
+  )
+    throw Error('Production software or parent changed before activation');
   await activateCatalogContent({ directory: prepared.output, sealed, verifier });
   const live = await verifyContentLive({ directory: prepared.output, packet, sealed, progress }),
     result = {
