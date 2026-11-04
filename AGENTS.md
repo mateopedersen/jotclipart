@@ -712,3 +712,23 @@ activation, the private installer may rebind ONLY an exact installed predecessor
 with verified old/new signatures, identical catalog/source/media scope and an
 ETag conditional write. Check the unchanged public ccb baseline immediately first.
 This is not permission to publish test fixtures or replace arbitrary live data.
+
+## Actual build-free software activation, validation pending — 2026-11-04
+
+Production Pages deployment `9d989714-302a-4a25-84ab-fa207f8f5625` is active:
+software/control `b1267b8c20d1425db31b03420d6dc2769570874d`, rendered catalog
+`ba3582af753d578668154e7de4a2ee63087dd7da`, snapshot
+`063adc0e0edf13f91c8b7b3a5c4e32b3aa7e38822b0e60e44cad797ccd2c5c9d`.
+Actual public control shows 37,937 artworks / 674 subjects. Parent was 35,709 /
+651; 23 genuinely new subjects, while Mexico/Netherlands already existed. All
+674 topics and 23 new topic URLs were verified in the actual sitemap. All 6,684
+incoming media files passed fresh live GET/byte/SHA/MIME/CORS verification.
+Full 4,728 affected art/editor checks continue. The peer's actual 674 live HTTP
+and 96 browser topic checks passed, but extra UI smoke found a scoped Proxy JSON
+serialization defect in Black & White. A source fix and guarded software-only
+upgrade are being prepared; do not claim all checks complete or repeat uploads.
+Do not publish stale ccb over this activated catalog. Current proof/continuation:
+`work/catalog-snapshot/bootstrap-shared-cache/` and `work/catalog-snapshot/`.
+The owner targets 20 topics / 2,000 artworks within 60 minutes for future batches;
+measure real intake/review/repair/transfer/verification separately and do not
+claim this target is guaranteed or achieved before an actual complete test.
