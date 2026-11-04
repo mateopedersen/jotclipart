@@ -25,3 +25,23 @@ The bridge uses scripts/catalog-snapshot/publish-presentation.mjs with prepare, 
 The live verifier records the first four normal canonical requests before warming the remaining routes. It preserves actual MISS/HIT labels and records timing, source header and native/public HTML hashes after strict root normalization. Both Studio aliases must return the same canonical JSON, fresh root, no-store and protocol Vary headers.
 
 HTML/API verification is not the final browser or media result. Separately check fresh Chrome and WebKit sessions, navigation, search, Surprise Me, original-image decode, Studio/editor initialization and actual Image/PDF bytes. Record preview paint separately from full-original completion. Old immutable software must still return its original bytes for existing tabs. Preserve a verified source/Git/installed-runtime backup and report real public measurements, remaining canonical fallbacks and network limitations honestly.
+
+## Verified installation, 2026-11-05
+
+Installed source/control 7f4cd45, Pages 1a560046 and signed root e0e4fc7f are
+recorded with full digests in config/content-publisher.json and
+work/catalog-snapshot/software-first-visit-proof-20261105/production-report.json.
+The final06 catalog remains 39,108 artworks / 696 topics / 101 collections. All 1,319
+prepared HTML routes and both Studio aliases passed real canonical verification;
+1,343 derived metadata objects received fresh byte/hash/MIME readback before
+independent replay and the single conditional pointer activation. Original media
+writes and canonical artwork changes were zero. Do not repeat this activation.
+
+The earlier phase receipt result.json correctly retains its historical
+BROWSER_MEDIA_PENDING label; the final production report and independent live
+QA reports complete that phase without editing its source-bound bytes. Real
+PageSpeed lab results include Studio desktop 94 and School desktop 89; keep these
+alongside the eight 100 device views, full browser warnings and network limitations.
+No confirmed current core functional defect remained in the completed checks.
+The exact installed runtime and Git/source preservation are protected as described
+in docs/publisher-preservation.md and the final backup-verification.json.

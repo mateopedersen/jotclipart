@@ -1,3 +1,52 @@
+# Verified first-visit software and presentation release — 2026-11-05
+
+Current installed software/control/data epoch is
+`7f4cd45a87ad2bd0ac39c3a9b4bc44a3e98091f7`, production Pages
+`1a560046-17f8-41d4-9584-ef5ee035d406`, signed root
+`e0e4fc7f9366f70fe187311e5152babd793135977594e9ca999a01cc4faf37ef`, ABI
+`ac56d3c68ee2e5bd4b9e726345b694b7a19bde18331303f83f08dc255ea9a098`.
+The source/config documentation commit after this note is bookkeeping, not a
+new deployed software revision. Preserve the exact installed 7f4 runtime named
+in config/content-publisher.json and its exact predecessor binding.
+
+The source-derived presentation bridge preserved all 39,108 artworks, 696 topics,
+101 collection views and all nine accepted source capsules from the final06
+content baseline. It changed zero canonical artwork/topic records and zero media
+bytes. No new artwork or fresh catalog-wide pixel review is claimed. Separate
+pending airplane/Nurse/Marvel work is not part of this release.
+
+The actual canonical 1,319 HTML bodies match their native source after strict
+root normalization: 807 discovery/Studio/topic/collection shells and 512 signed
+Surprise detail addresses. Both Studio aliases preserve the same canonical 500
+JSON/protocol/no-store/Vary. Future content and prose preparation use installed
+renderers and independent source replay before conditional activation; all other
+art/editor paths retain the verified canonical reader. Read docs/delivery-first-visit.md.
+
+Evidence: work/catalog-snapshot/software-first-visit-proof-20261105/production-report.json.
+55 source tests, 31 software native routes, 1,334 presentation native checks,
+161 new and 161 retained old actual software/font byte checks, 12 independent
+functional jobs, eight root fresh-browser cases, four additional real Surprise
+flows, actual Image/PDF bytes and twelve real Studio exports passed. Two WebKit
+transition-time background warnings remain explicitly recorded; stable same-origin
+API and core actions passed, but their exact historical cancellation cause was
+not conclusively captured. Do not report zero browser warnings.
+
+Real Google PSI: home/categories/Qatar both device views 100, Studio mobile 100 /
+desktop 94, School collection mobile 100 / desktop 89. All ten views accessibility,
+best-practices and SEO 100. These are lab samples, not field CWV or universal
+subsecond original transfer. First four canonical HTML MISS TTFBs 227–295ms used
+an existing HTTP connection; fresh browser navigation can exceed one second.
+The School trace requested all three originals about 19 ms after HTML headers,
+so an unproven one-second image queue defect did not justify another deployment.
+Full originals remain public img/schema/download sources; no R2 media, DNS,
+account security/credentials, payment, inference or search notification changes.
+
+The installed runtime/public package and verification evidence are independently
+preserved and member-verified in KEEP/installed-content-runtime-7f4cd45-20261105
+(11,746 members, archive SHA 8465a0bbf34d5c2c9cf9be0f30076c37d6d3d506a884e2d0f6f41bda33a4a35d).
+Keep current and previous runtime/Git/native originals/reviews/IndexNow/rollback
+and owner-protected 4755 unchanged. This local independent backup is not off-device.
+
 # Owner approved display spelling, 2026-11-05
 
 Use JPMorgan Chase with a space in public copy. Preserve the same-company

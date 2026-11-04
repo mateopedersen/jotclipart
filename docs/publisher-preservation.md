@@ -104,3 +104,21 @@ member to a NEW protected work path after verifying both archive and source.
 A real PDF and WebP were restored and compared before removing only those
 disposable restored test copies. Preserve this journal and the private native
 ZIP directory; a cleanup record is not permission to delete the archives.
+
+## Verified first-visit runtime, 2026-11-05
+
+The installed 7f4cd45 runtime and exact production package are protected in
+`work/catalog-snapshot/preserved-installed-runtime-first-visit-20261105` and
+`UltraClipart-Publisher-KEEP/installed-content-runtime-7f4cd45-20261105`.
+All 11,746 archive members were SHA/byte verified locally and in the independent
+copy; archive SHA256 is
+`8465a0bbf34d5c2c9cf9be0f30076c37d6d3d506a884e2d0f6f41bda33a4a35d`.
+The independent directory has the user-immutable flag. No private operator session,
+credentials, environment file or signing key was copied. Restore only to a NEW
+private directory after manifest verification, never over an active publisher.
+Compiler source-input absolute paths require deliberate relocation/recompilation
+from matching source; changing digests is not a valid restore. A separate dated
+Git/source backup and its verification are recorded in the final proof directory's
+`backup-verification.json`. The compact runtime archive does not replace native
+originals, source-bound reviews, protected IndexNow, current/previous complete
+rollback or the untouched 4755 owner-protected backup. Restoration never publishes.
