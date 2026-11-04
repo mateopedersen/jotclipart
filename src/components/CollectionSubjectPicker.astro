@@ -1,0 +1,77 @@
+---
+interface Props { topics: { slug: string; keyword: string }[] }
+const { topics } = Astro.props;
+---
+<div class="collection-subject-navigation">
+  <div class="chips desktop-subject-links" aria-label="Topics in this collection">
+    {topics.map((topic) => <a href={`/clipart/${topic.slug}/`}>{topic.keyword}</a>)}
+  </div>
+  <details class="mobile-subject-picker">
+    <summary>
+      <span>Choose a Subject</span>
+      <span class="subject-count">{topics.length}</span>
+      <svg viewBox="0 0 20 20" width="20" height="20" fill="none" aria-hidden="true">
+        <path d="m5 7.5 5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </summary>
+    <nav class="mobile-subject-options" aria-label="Topics in this collection">
+      {topics.map((topic) => <a href={`/clipart/${topic.slug}/`}>{topic.keyword}</a>)}
+    </nav>
+  </details>
+</div>
+<style>
+  .mobile-subject-picker { display: none; }
+  @media (max-width: 767px) {
+    .desktop-subject-links { display: none; }
+    .mobile-subject-picker {
+      display: block;
+      border: 1px solid #bacfe8;
+      border-radius: 14px;
+      background: #fff;
+      color: #214d79;
+      overflow: clip;
+    }
+    summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 15px;
+      min-height: 48px;
+      font-size: 16px;
+      font-weight: 600;
+      list-style: none;
+      cursor: pointer;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary svg { flex-shrink: 0; transition: transform 120ms ease; }
+    .subject-count {
+      margin-inline-start: auto;
+      padding: 1px 9px;
+      border-radius: 7px;
+      background: #edf5ff;
+      font-variant-numeric: tabular-nums;
+    }
+    details[open] summary { border-bottom: 1px solid #dce5ef; }
+    details[open] summary svg { transform: rotate(180deg); }
+    .mobile-subject-options {
+      display: grid;
+      gap: 4px;
+      padding: 8px;
+      max-height: 23rem;
+      max-height: min(55svh, 23rem);
+      overflow-y: auto;
+    }
+    .mobile-subject-options a {
+      display: block;
+      padding: 11px 12px;
+      border-radius: 8px;
+      color: var(--blue);
+      line-height: 1.4;
+      overflow-wrap: anywhere;
+    }
+    .mobile-subject-options a:hover { background: #edf5ff; }
+    summary:focus-visible,
+    .mobile-subject-options a:focus-visible { outline: 2px solid var(--blue); outline-offset: -3px; }
+  }
+  @media (prefers-reduced-motion: reduce) { summary svg { transition: none; } }
+</style>
