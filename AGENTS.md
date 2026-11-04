@@ -700,3 +700,15 @@ unchanged; final EMPTY-flags native and real provider-preview proof remain neede
 Preserve exact approved raw topic definitions: missing internal ordinals and the
 known copied note are resolved canonically without changing old preview hashes.
 Do not manufacture a fresh approval or call metadata equivalence an owner preview.
+
+The actual ba3582a provider preview was uploaded successfully but HTML returned
+503 because the snapshot cache only admitted the canonical production origin.
+The fix admits HTTPS for this exact Pages project and its single-label preview
+hosts; foreign projects, nested names, ports and HTTP remain rejected. The data
+graph and original source approvals remain unchanged. Recompile software only,
+run native tests including actual preview origins, and issue a NEW signed ABI
+envelope in a separate proof directory. Before the first production software
+activation, the private installer may rebind ONLY an exact installed predecessor
+with verified old/new signatures, identical catalog/source/media scope and an
+ETag conditional write. Check the unchanged public ccb baseline immediately first.
+This is not permission to publish test fixtures or replace arbitrary live data.

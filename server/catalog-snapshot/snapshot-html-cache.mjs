@@ -4,7 +4,7 @@
 export async function snapshotHTMLResponse({request,context,rendererSHA256,cache,render}){
  if(!['GET','HEAD'].includes(request.method))return new Response('Method not allowed',{status:405,headers:{allow:'GET, HEAD','cache-control':'no-store'}});
  if(!/^[a-f0-9]{64}$/.test(rendererSHA256??'')||!/^[a-f0-9]{64}$/.test(context?.rootSHA256??'')||typeof render!=='function')throw Error('Captured snapshot and renderer binding required');
- const url=new URL(request.url),route=/^\/(?:art|edit|clipart|collection)\/[a-z0-9]+(?:-[a-z0-9]+)*\/$/.test(url.pathname)||['/','/new/','/search/','/black-and-white/','/categories/','/collections/','/library-index/','/create/','/favorites/'].includes(url.pathname);if(url.origin!=='https://ultraclipart.com'||url.href.length>4096||!route)throw Error('Invalid cache route');
+ const url=new URL(request.url),ownOrigin=url.protocol==='https:'&&!url.port&&(url.hostname==='ultraclipart.com'||url.hostname==='ultraclipart.pages.dev'||/^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.ultraclipart\.pages\.dev$/.test(url.hostname)),route=/^\/(?:art|edit|clipart|collection)\/[a-z0-9]+(?:-[a-z0-9]+)*\/$/.test(url.pathname)||['/','/new/','/search/','/black-and-white/','/categories/','/collections/','/library-index/','/create/','/favorites/'].includes(url.pathname);if(!ownOrigin||url.href.length>4096||!route)throw Error('Invalid cache route');
  // These shells render the same server representation for tracking/search
  // parameters; interactive search reads the URL on the client. Keep the URL
  // untouched for visitors while avoiding unbounded copies in the cache.
