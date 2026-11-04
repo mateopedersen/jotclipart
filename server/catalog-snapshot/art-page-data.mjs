@@ -1,3 +1,4 @@
+import{readSurprisePicks}from'./surprise-picks.mjs';
 // Private complete art-page state from one captured metadata snapshot.
 import {readArtwork} from './artwork-facet-reader.mjs';
 import {readBoundedRelated} from './related-bounded-reader.mjs';
@@ -21,6 +22,6 @@ export async function readArtworkPageState(bucket,context,id,{allowFixture=false
  const [features,counts]=await Promise.all([collections.read(collections.root.features,256*1024),collections.countsFor([item.topic,category],{strict:true})]);
  if(!Array.isArray(features.artworks)||!Array.isArray(features.surprise)||features.artworks.length>500||features.surprise.length>500)throw Error('Invalid shared page context');
  const topic={slug:record.slug,keyword:record.keyword,cluster:record.primaryCluster,sourceCluster:record.sourceCluster};
- const surprise=features.surprise.map(p=>({id:p.id,topic:p.topic,...(Object.hasOwn(p,'fresh')?{fresh:p.fresh}:{})})),shared=await readSharedArtwork(context,features);
+ const surprise=collections.collections.surprise?await readSurprisePicks(context,{limit:48}):features.surprise.map(p=>({id:p.id,topic:p.topic,...(Object.hasOwn(p,'fresh')?{fresh:p.fresh}:{})})),shared=await readSharedArtwork(context,features);
  return{item,related,collectionPreview:(slug,sourceId)=>{if(slug!==category||sourceId!==item.id)throw Error('Wrong preview source');return previews},art:[item,...shared],topics:[topic],counts,surprise,summaries:new Map(),paragraphs:new Map(),copy:{},relations:{},clusterNames:{[topic.slug]:[]}};
 }

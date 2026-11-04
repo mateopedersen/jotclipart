@@ -117,6 +117,7 @@ function hash(value: string) {
   n ^= n >>> 13;
   return (n ^ (n >>> 16)) >>> 0;
 }
+export { hash as discoveryHash };
 type Ranked = CutePick & { priority: number };
 class Reservoir<T extends { priority: number }> {
   readonly capacity: number;

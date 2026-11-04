@@ -1,3 +1,4 @@
+import {adoptCatalogSnapshot} from '../lib/catalog-snapshot-client';
 import { defaults } from '../lib/search';
 import { SearchRepository } from '../lib/search-remote';
 import type { SearchCard } from '../lib/search-index';
@@ -75,6 +76,7 @@ if (root) {
       }
       describe();
       root!.dataset.catalogVersion = version;
+      adoptCatalogSnapshot(version);
     } catch {
       status.textContent =
         'The latest clipart could not be refreshed. Your current results are still available. Try Refresh latest.';

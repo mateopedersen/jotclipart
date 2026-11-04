@@ -1,4 +1,5 @@
 import type { RasterAsset } from './raster';
+import { catalogProtocolHeaders } from '../lib/catalog-protocol.ts';
 import { studioBucket } from './studio-bucket';
 import { requestPinnedStudioAssets, type SnapshotTransport } from '../lib/snapshot-studio';
 type Manifest = {
@@ -20,7 +21,7 @@ export function unpinRasterSnapshot(id: string) { selectedSnapshots.delete(id); 
 let manifest: Promise<Manifest> | undefined;
 const chunks = new Map<string, Promise<RasterAsset[]>>();
 async function getManifest() {
-  return (manifest ??= fetch('/studio-manifest.json', { cache: 'no-cache' })
+  return (manifest ??= fetch('/studio-manifest.json', { cache: 'no-cache', headers: catalogProtocolHeaders })
     .then(async (response) => {
       if (!response.ok) throw Error('The artwork source directory could not load.');
       const value = await response.json();

@@ -1,3 +1,4 @@
+import{readSurprisePicks}from'./surprise-picks.mjs';
 // Private editor state. Original source identity remains authoritative.
 import {readArtwork} from './artwork-facet-reader.mjs';
 import {lookupHashedRecord} from './hashed-record-directory.mjs';
@@ -16,7 +17,7 @@ export async function readEditorPageState(bucket,context,id,{allowFixture=false}
   if(decision.preview){if(!/^\/previews\/p1\/[a-f0-9]{24}-960\.webp$/.test(decision.preview)||!Number.isSafeInteger(decision.width)||decision.width<1||!Number.isSafeInteger(decision.height)||decision.height<1||Math.max(decision.width,decision.height)>960)throw Error('Invalid editor preview');editorItem={...item,preview:decision.preview,previewWidth:decision.width,previewHeight:decision.height}}
  }
  if(!Array.isArray(features.artworks)||!Array.isArray(features.surprise)||features.artworks.length>500||features.surprise.length>500)throw Error('Invalid shared editor context');
- const surprise=features.surprise.map(p=>({id:p.id,topic:p.topic,...(Object.hasOwn(p,'fresh')?{fresh:p.fresh}:{})}));
+ const surprise=collections.collections.surprise?await readSurprisePicks(context,{limit:48}):features.surprise.map(p=>({id:p.id,topic:p.topic,...(Object.hasOwn(p,'fresh')?{fresh:p.fresh}:{})}));
  const shared=await readSharedArtwork(context,features);
  return{item,editorItem,featuredStudioArt,art:[item,...shared],topics:[],counts:{...collections.global,topics:{}},surprise,summaries:new Map(),paragraphs:new Map(),copy:{},relations:{},clusterNames:{}};
 }

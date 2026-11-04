@@ -1,3 +1,4 @@
+import { catalogProtocolHeaders } from '../lib/catalog-protocol.ts';
 import { clone, identity, type EditorDocument, type RasterLayer } from './model';
 import type { VerifiedRepresentation as Representation } from './source-policy';
 import { readVerified } from './verified-fetch';
@@ -138,7 +139,7 @@ let featuredCatalog:
     }>
   | undefined;
 export function featuredRasterCatalog() {
-  return (featuredCatalog ??= fetch('/studio-featured.json')
+  return (featuredCatalog ??= fetch('/studio-featured.json', { headers: catalogProtocolHeaders })
     .then(async (response) => {
       if (!response.ok) throw new Error('The featured library could not be loaded.');
       return (await response.json()) as {
@@ -155,7 +156,7 @@ export function featuredRasterCatalog() {
     }));
 }
 export function rasterCatalog() {
-  return (catalog ??= fetch('/studio-catalog.json')
+  return (catalog ??= fetch('/studio-catalog.json', { headers: catalogProtocolHeaders })
     .then(async (response) => {
       if (!response.ok) throw new Error('The clipart catalog could not be loaded.');
       return (await response.json()) as RasterAsset[];

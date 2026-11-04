@@ -1,3 +1,4 @@
+import {adoptCatalogSnapshot} from '../lib/catalog-snapshot-client';
 import { SearchRepository } from '../lib/search-remote';
 import { defaults } from '../lib/search';
 import type { SearchCard, SearchManifest } from '../lib/search-index';
@@ -170,6 +171,7 @@ if (root) {
       pagination.hidden = !found.total || found.pages <= 1;
       empty.hidden = found.total > 0;
       remember(mode);
+      adoptCatalogSnapshot(found.manifest.version);
       if (move) {
         heading.focus({ preventScroll: true });
         heading.scrollIntoView({ block: 'start', behavior: 'instant' });
