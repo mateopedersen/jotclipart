@@ -33,7 +33,7 @@ try{for(const[engine,type]of Object.entries({chromium,webkit})){
   }else{
    await expect(image).toHaveAttribute('data-original-image-state','loaded');assert.equal(await image.getAttribute('src'),'https://assets.ultraclipart.com/fixture/original.webp');assert.equal(await image.getAttribute('alt'),'Explicit fixture image');
    if(scenario==='transient')assert.equal(requests,2);
-   if(scenario==='stall'){assert(requests>=1&&requests<=3);assert((await page.evaluate(()=>window.__imageTransitions)).includes('error'),'Watchdog attempted recovery; the browser may coalesce the same pending URL');}
+   if(scenario==='stall'){assert.equal(requests,1,'A slow original transfer must not be restarted');assert((await page.evaluate(()=>window.__imageTransitions)).includes('slow'),'Watchdog reports a long transfer without discarding progress');}
    if(scenario==='healthy')assert.equal(requests,1);
    if(scenario==='dynamic'||scenario==='offline'){
     if(scenario==='offline'){offlineFault=true;await context.setOffline(true);}
