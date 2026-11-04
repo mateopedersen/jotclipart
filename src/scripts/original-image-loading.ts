@@ -63,7 +63,13 @@ export function initOriginalImageLoading(
     s.watch = setTimeout(() => {
       s.watch = undefined;
       if (s.image.complete && s.image.naturalWidth > 0) loaded(s);
-      else if (inView(s) && !root.hidden && navigator.onLine) recover(s);
+      else if (s.image.complete) recover(s);
+      else if (inView(s) && !root.hidden && navigator.onLine) {
+        // A large original over a slow connection may still be transferring.
+        // Do not discard its progress merely because a timer expired. Actual
+        // error events retain bounded retries; this transfer can finish intact.
+        release(s); status(s, 'slow', 'Image is still loading. Open artwork.'); pump();
+      }
       else { release(s); pump(); }
     }, stallMs);
   }
