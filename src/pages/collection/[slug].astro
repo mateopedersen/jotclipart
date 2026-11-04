@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import CatalogCount from '../../components/CatalogCount.astro';
 import Card from '../../components/Card.astro';
+import CollectionSubjectPicker from '../../components/CollectionSubjectPicker.astro';
 import {
   publishedArt as art,
   availableTopics,
@@ -37,11 +38,7 @@ const items = art.filter((a) => ts.some((t) => t.slug === a.topic));
       <CatalogCount kind="collection-subjects" countKey={slugify(cluster)} unit="available topic" />
       .
     </p>
-    <div class="chips" aria-label="Topics in this collection">
-      {ts.map((t) => (
-        <a href={`/clipart/${t.slug}/`}>{t.keyword}</a>
-      ))}
-    </div>
+    <CollectionSubjectPicker topics={ts} />
   </section>
   {items.length ? (
     <div class="gallery">
