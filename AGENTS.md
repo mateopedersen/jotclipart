@@ -1,3 +1,53 @@
+# Verified five owner brand packages — 2026-11-04
+
+Costco, Tesla, Apple Devices, Berkshire Hathaway and Microsoft are now live and
+independently verified at data revision
+`88b50ae120a253ab6a4c31b5b9a1ac4a2b99fadb`, root
+`3b6bc53d65df98d2f52be751866fecedb55778c48ccaf32f2b46c7c0ac925bdf`.
+The data source is `36f9907f542bb7c397934004eb3e7eb344ece120`; installed software
+remains `5e6a93990ac67bb529e8e067d8b5827df3d1afd9`, Cloudflare production
+`5bc999a1-8a2f-4632-94c5-2a7528ead1f7`. No new Pages deployment was needed for
+this content activation. Its installed Pages package contains 9,167 files; the
+750 incoming media and 5,173 changed private metadata objects are other resources.
+
+All five source ZIPs, 250 original images and 250 original PDFs passed integrity,
+actual pixel review, independently rendered PDF pairing and source-bound writing
+checks. No repair or redraw was required; original files were preserved. Each
+new artwork has its own concise reviewed title, alt and description. Four new
+topics were added: costco, apple-brand, berkshire-hathaway and microsoft. Tesla
+was appended from 50 to 100, preserving its old artworks and complete category
+identity. Apple Devices is separate from the 50-artwork apple fruit topic. The
+catalog is now 38,208 artworks / 679 subjects; Lesotho remains 21.
+
+All 505 changed public art/editor/topic pages and all 750 real Image/PDF/thumbnail
+GET bytes, hashes, MIME and CORS passed. All 250 heading/alt/description/schema
+and canonical checks, exact topic search membership, 250 original Studio media
+pairs, primary category/home/library discovery and canonical/image sitemap checks
+passed. The canonical page sitemap has 38,936 unique URLs. Five actual public
+collection screenshots and the Costco search UI were checked. This is not a
+fresh visual review of every historical artwork or an indexing guarantee.
+Proof: `work/imports/brands-3-20261104/production-report.json` and its linked
+live, discovery, editorial, search and browser receipts. Do not repeat this upload
+or activation. Earlier stopped publication-01/02 outputs are historical, not live.
+
+Use the normal build-free publisher. Topic/prose and complete category identity
+are checked before binary transport. After a local interruption, the optional
+exact incoming-media receipt recovery performs fresh read-only R2 bytes/hash/MIME
+verification with no PUT fallback; it never substitutes an old receipt for fresh
+authority. Thirty-two focused recovery/topic/related/prose tests passed. Keep all
+source, the shared data-only baseline/IndexNow ledger, originals, reviews, the
+installed runtime and independent KEEP backup. The actual final successful
+publication took 3,718.844 seconds, including source graph composition and
+independent replay. The first media upload/readback was 251.631 seconds and the
+fresh recovery media readback was 8.629 seconds with zero media PUTs. Do not call
+those transport timings an end-to-end speed guarantee.
+
+The separate 76-collection/image-loading handoff is queued, not published by this
+release. Its SHA-checked handoff state is
+`work/imports/collection-expansion-20261104/current-state.json`; integrate against
+this new root and preserve the new four topics and all 250 artworks. Do not put
+the older raw 37,937-artwork JSON over the signed production catalog.
+
 # Installed shared navigation, title display and desktop picker — 2026-11-04
 
 Latest owner direction: collection topic lists use the same closed native

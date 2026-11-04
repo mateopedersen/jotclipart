@@ -12,10 +12,10 @@
   },
   "publicConfig": "config/content-publisher-public.json",
   "lastVerifiedData": {
-    "revision": "0f9a78639c331255b8f81e076825c359a2cce982",
-    "root": "ecd286cc660fab9f187b8623e5d9ed423fcb8464d7feb6df7473ed117d3b8bea",
-    "artworks": 37958,
-    "topics": 675
+    "revision": "88b50ae120a253ab6a4c31b5b9a1ac4a2b99fadb",
+    "root": "3b6bc53d65df98d2f52be751866fecedb55778c48ccaf32f2b46c7c0ac925bdf",
+    "artworks": 38208,
+    "topics": 679
   },
   "limits": {
     "changedArtworksPerPacket": 256,
@@ -25,7 +25,7 @@
     "accountInventoryRequired": false,
     "fullCatalogBuildForContent": false
   },
-  "proof": "work/catalog-snapshot/deep-latency-production-report.json",
+  "proof": "work/imports/brands-3-20261104/production-report.json",
   "loadTests": "work/catalog-snapshot/load-tests/two-run-report.json",
   "protectedIndependentBackup": "/Users/melihozcan/Documents/UltraClipart-Publisher-KEEP",
   "measurementsScope": "Two private real-media transport + composition + native campaigns, approved unique sources reused. Fresh image review/repair/public verification remains separate; <=60 minutes is a measured technical target, not a universal guarantee."
