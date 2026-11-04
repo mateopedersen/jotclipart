@@ -34,6 +34,30 @@ export function collectionParagraphReviewSignature(record) {
     .digest('hex');
 }
 
+/** Editorial style only; this never identifies or visually reviews artwork. */
+export function normalizeCollectionProse(text) {
+  return text.replace(/(\d)\s*[\u2010-\u2015-]\s*(\d)/g, '$1 to $2')
+    .replace(/[\u2010-\u2015-]/g, ' ').replace(/\s+/g, ' ').trim();
+}
+const sentenceSegmenter = new Intl.Segmenter('en', { granularity: 'sentence' });
+export function collectionOpening(text) {
+  return sentenceSegmenter.segment(text.trim())[Symbol.iterator]().next().value?.segment.trim() ?? '';
+}
+/** Reject exact or subject-substituted opening sentences before new content is accepted. */
+export function verifyCollectionOpenings(registry) {
+  const exact = new Map(), templates = new Map();
+  for (const [topic, record] of Object.entries(registry.topics)) {
+    const opening = collectionOpening(record.paragraphs?.[0] ?? '');
+    if (!opening || /^Welcome\s+to\s+(?:our|the)\b/i.test(opening) || opening.includes('{{artworkCount}}'))
+      throw Error('Collection ' + topic + ': start with its particular subject, not a generic welcome or count');
+    const normalized = opening.normalize('NFKC').toLowerCase();
+    if (exact.has(normalized)) throw Error('Repeated collection opening: ' + exact.get(normalized) + ' and ' + topic);
+    exact.set(normalized, topic);
+    checkIntroductionTemplate(templates, topic, opening);
+  }
+  return { uniqueOpenings: exact.size, uniqueOpeningTemplates: templates.size };
+}
+
 /** A conservative text gate, never a visual classification or approval. */
 export function summarySupportsNumberLearning(summary) {
   return /\b(?:numbers?|numerals?|digits?|zero(?:s|es)?|ordinal)\b/i.test(summary ?? '');
@@ -59,6 +83,10 @@ export function validateCollectionParagraphs(topic, items, record) {
   )
     fail('each paragraph must explain the collection');
   const text = record.paragraphs.join('\n\n');
+  if (/[\u2010-\u2015-]/.test(text)) fail('write compound phrases naturally without hyphens or dash punctuation');
+  const opening = collectionOpening(record.paragraphs[0]);
+  if (/^Welcome\s+to\s+(?:our|the)\b/i.test(opening) || opening.includes('{{artworkCount}}'))
+    fail('start with the particular subject rather than a generic welcome or count');
   const words = text.trim().split(/\s+/).length;
   if (words < 50 || words > 200) fail('keep the introduction useful and concise (50–200 words)');
   // Reject known cross-domain boilerplate; this never approves unseen artwork.
@@ -139,6 +167,7 @@ export function validateCollectionCopy(topic, items, record) {
     record.intro.split(/\s+/).length > 80
   )
     fail('provide one concise, useful paragraph');
+  if (/[\u2010-\u2015-]/.test(record.intro)) fail('remove hyphens and dash punctuation from collection prose');
   if (/\b(?:webp|cmyk|icc|gracol|dpi|ppi|E-E-A-T)\b|https?:|\n|<[^>]+>/i.test(record.intro))
     fail('remove technical filler, links or markup from the introduction');
   if (/\b(?:handmade|expert-approved|human-created|guaranteed ranking)\b/i.test(record.intro))
@@ -189,6 +218,7 @@ export function verifyCollectionEditorial(catalog, registry, resolvedCatalog = c
     expanded.add(text.toLowerCase());
   }
   return {
+    ...verifyCollectionOpenings(registry),
     topics: groups.size,
     uniqueIntroductions: texts.size,
     expandedIntroductions: expanded.size,
@@ -238,6 +268,7 @@ export function requiredCollectionIntroductions(catalog, registry, resolvedCatal
       items.map((item) => publicById.get(item.id)),
       registry.topics[topic],
     );
+  verifyCollectionOpenings(registry);
   return result;
 }
 

@@ -4,8 +4,8 @@
     "elf": {
       "status": "checked-against-catalog",
       "sourceSha256": "0029e9c6013de23eaf402c8a26dad937c64ac9c503b8076607bf63f494acedc1",
-      "intro": "Cheerful Christmas elves in green outfits, with big pointed ears and playful expressions. Find toy-making helpers, skating friends, gift deliveries, festive lettering and small craft decorations in soft shaded and clean cartoon styles.",
-      "checkedAt": "2026-10-27T05:29:06.784Z",
+      "intro": "Cheerful Christmas elves in green outfits, with big pointed ears and playful expressions. Find toy making helpers, skating friends, gift deliveries, festive lettering and small craft decorations in soft shaded and clean cartoon styles.",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "elf-wrapping-a-parcel",
@@ -25,10 +25,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Elf clipart collection, with {{artworkCount}} illustrations to explore. Cheerful Christmas elves in green outfits, with big pointed ears and playful expressions. Find toy-making helpers, skating friends, gift deliveries, festive lettering and small craft decorations in soft shaded and clean cartoon styles.",
-        "The gallery includes “Elf Tying a Christmas Gift Bow” and “Happy Holidays Lettering with an Elf” among its drawings. Choose a focal image for a personal seasonal card, a winter story page or a family craft, leaving room for your own message."
+        "Cheerful Christmas elves in green outfits, with big pointed ears and playful expressions. Find toy making helpers, skating friends, gift deliveries, festive lettering and small craft decorations in soft shaded and clean cartoon styles.",
+        "The collection brings together {{artworkCount}} illustrations, including “Elf Tying a Christmas Gift Bow” and “Happy Holidays Lettering with an Elf”. Choose a focal image for a personal seasonal card, a winter story page or a family craft, leaving room for your own message."
       ],
-      "paragraphSourceSha256": "c33815b72cfa316635e19eb7a801fed4f502e2db6f7f9f1d52d5ff701be3fbf8",
+      "paragraphSourceSha256": "c27ec31e13f17a56b8564485e10c729be2f0a6a0cd2177520198e9a0782e3e52",
       "paragraphEvidence": [
         {
           "id": "elf-wrapping-a-parcel",
@@ -39,8 +39,8 @@
           "imageSha256": "21bbf7b88b1d56b065ed99029272201fac5e793161188ab2852c2c69658209b3"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.544Z",
-      "paragraphReviewSha256": "086722dd754d499ec621ca644706985f1116c87ba64c30fa5e9c02291a6e5a09"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "b8aa061ffde041337171f179617e545b7762bbb92a0909f0650ba93403851e24"
     }
   }
 }

@@ -4,8 +4,8 @@
     "kwanzaa": {
       "status": "checked-against-catalog",
       "sourceSha256": "fc856b7fc9fba9eac05d21ec7937c9426b77d02e390edc786562a9911bde5713",
-      "intro": "Explore Kwanzaa symbols, woven objects and scenes of people cooking, crafting and helping together. The collection ranges from a seven-candle kinara and carved unity cup to book gifts, percussion players and black-and-white community scenes.",
-      "checkedAt": "2026-10-26T20:59:43.149Z",
+      "intro": "Explore Kwanzaa symbols, woven objects and scenes of people cooking, crafting and helping together. The collection ranges from a seven candle kinara and carved unity cup to book gifts, percussion players and black and white community scenes.",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "kwanzaa-wooden-kinara",
@@ -21,10 +21,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Kwanzaa clipart collection, with {{artworkCount}} illustrations to explore. Explore Kwanzaa symbols, woven objects and scenes of people cooking, crafting and helping together. The collection ranges from a seven-candle kinara and carved unity cup to book gifts, percussion players and black-and-white community scenes.",
-        "The gallery includes “Carved Wooden Kinara With Seven Candles” and “Carrying Produce Through a Garden Gate” among its drawings. Pair the artwork with your own words for a personal Kwanzaa greeting, a family reflection page or a cultural learning display."
+        "Explore Kwanzaa symbols, woven objects and scenes of people cooking, crafting and helping together. The collection ranges from a seven candle kinara and carved unity cup to book gifts, percussion players and black and white community scenes.",
+        "The collection brings together {{artworkCount}} illustrations, including “Carved Wooden Kinara With Seven Candles” and “Carrying Produce Through a Garden Gate”. Pair the artwork with your own words for a personal Kwanzaa greeting, a family reflection page or a cultural learning display."
       ],
-      "paragraphSourceSha256": "2978ee1371ce041f0ff518285e1f8afb4933bea6bf847b72f89ca09d97370319",
+      "paragraphSourceSha256": "8a41c0027d31d61eb108993e9e688df94b6f364ca335c554f48e05e11d0eb6f0",
       "paragraphEvidence": [
         {
           "id": "kwanzaa-wooden-kinara",
@@ -35,8 +35,8 @@
           "imageSha256": "aee171fb78a7513e9db9e23f40569b759d8d8c830845a10a1120f4969a8b4dc7"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.550Z",
-      "paragraphReviewSha256": "d923997cc7d4fe239b63bd5281cfc9b3426f47a46905cc861b837cb6108dea59"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "8756eaae175bb854eaec3b3637601ff22c99edee5e7a1113fd1114dbd2b4f0a2"
     }
   }
 }

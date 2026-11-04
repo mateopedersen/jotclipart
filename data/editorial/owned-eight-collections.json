@@ -4,8 +4,8 @@
     "blessings": {
       "status": "checked-against-catalog",
       "sourceSha256": "f01139815166b4a001020c9e3e70da88676b371137c48cbe851895d3caaffbcd",
-      "intro": "Blessing messages for seasons and special occasions, paired with floral keepsakes, reflection objects and gentle cartoon prayer scenes. Choose formal lettering, cheerful character greetings or five separate black-and-white coloring designs.",
-      "checkedAt": "2026-10-27T16:09:29.261Z",
+      "intro": "Blessing messages for seasons and special occasions, paired with floral keepsakes, reflection objects and gentle cartoon prayer scenes. Choose formal lettering, cheerful character greetings or five separate black and white coloring designs.",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "blessings-count-your-blessings-wreath",
@@ -25,10 +25,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Blessings clipart collection, with {{artworkCount}} illustrations to explore. Blessing messages for seasons and special occasions, paired with floral keepsakes, reflection objects and gentle cartoon prayer scenes. Choose formal lettering, cheerful character greetings or five separate black-and-white coloring designs.",
-        "The gallery includes “Count Your Blessings Autumn Wreath” and “Girl Praying Beside a Bedside Cabinet” among its drawings. Build a seasonal journal page, a harvest activity or a personal gathering invitation around the food, plant or scene that matches your theme."
+        "Blessing messages for seasons and special occasions, paired with floral keepsakes, reflection objects and gentle cartoon prayer scenes. Choose formal lettering, cheerful character greetings or five separate black and white coloring designs.",
+        "The collection brings together {{artworkCount}} illustrations, including “Count Your Blessings Autumn Wreath” and “Girl Praying Beside a Bedside Cabinet”. Build a seasonal journal page, a harvest activity or a personal gathering invitation around the food, plant or scene that matches your theme."
       ],
-      "paragraphSourceSha256": "7f883bc48f0c11ca80027ce85ac0b67e9c81cc001440e61f60d2ef8a4500a191",
+      "paragraphSourceSha256": "d7146305e8d390ea70d90022c0f9af58e0f36c9f8e1e226573d297a8c95e4554",
       "paragraphEvidence": [
         {
           "id": "blessings-count-your-blessings-wreath",
@@ -39,14 +39,14 @@
           "imageSha256": "f6d7c41a889f2afde3dc9b5f7227e694c6fa2b01201e4db2c9030822ccf8bfd4"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.550Z",
-      "paragraphReviewSha256": "edb8a4c95b112ac47145f3192093512e841f361ce0afd16fc57f8836357a5ed0"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "84fa7ed521409e575c67624322036af5760fc4e99089d19d263f85edfe6d8658"
     },
     "family": {
       "status": "checked-against-catalog",
       "sourceSha256": "fff0ae5b9b980ec32f643bf62ba59983a852c137b7f8eae742433cc1e996182b",
-      "intro": "Family groups and shared activities, from story time and camping to graduation, music and everyday projects. Choose complete cartoon scenes, a photo-frame tree, family lettering or six separate black-and-white designs.",
-      "checkedAt": "2026-10-27T17:21:39.672Z",
+      "intro": "Family groups and shared activities, from story time and camping to graduation, music and everyday projects. Choose complete cartoon scenes, a photo frame tree, family lettering or six separate black and white designs.",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "family-four-person-portrait",
@@ -70,10 +70,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Family clipart collection, with {{artworkCount}} illustrations to explore. Family groups and shared activities, from story time and camping to graduation, music and everyday projects. Choose complete cartoon scenes, a photo-frame tree, family lettering or six separate black-and-white designs.",
-        "The gallery includes “Family Portrait with a Terrier” and “Graduate with Two Proud Relatives” among its drawings. Make a personal greeting, an event scrapbook page or a family activity, matching the illustration to the occasion and the space for your message."
+        "Family groups and shared activities, from story time and camping to graduation, music and everyday projects. Choose complete cartoon scenes, a photo frame tree, family lettering or six separate black and white designs.",
+        "The collection brings together {{artworkCount}} illustrations, including “Family Portrait with a Terrier” and “Graduate with Two Proud Relatives”. Make a personal greeting, an event scrapbook page or a family activity, matching the illustration to the occasion and the space for your message."
       ],
-      "paragraphSourceSha256": "03352d44cff5ebc9054188b53d2b658bf47390f91bb0f77100eeff812c6b2edc",
+      "paragraphSourceSha256": "b1f48d106b85cea109cc2d3eff450416929c6c40f2a647df8a1b2d4eb9aea20c",
       "paragraphEvidence": [
         {
           "id": "family-four-person-portrait",
@@ -84,14 +84,14 @@
           "imageSha256": "ceee2d542bb069f82621cb21d2639478cfc226b85285acc17b27c17581b612bf"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.550Z",
-      "paragraphReviewSha256": "76bcb2f6d1703cd21396732a4ba22e28c87868ad9a3212fa2779fafb7af1b48a"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "4a51bf8df9c1112a571489ce48ca4bbcf23794acbd52296bc63952e36df46427"
     },
     "mistletoe": {
       "status": "checked-against-catalog",
       "sourceSha256": "5d6134b6d43bd7b0420115f33793cc9fd34582a7195479ac28b0a52d54b73361",
-      "intro": "White-berried mistletoe in botanical cuttings, hanging decorations, craft objects and festive cartoon scenes. Choose leafy frames, romantic lettering, illustrated keepsakes or six independent black-and-white designs.",
-      "checkedAt": "2026-10-27T18:37:53.263Z",
+      "intro": "White berried mistletoe in botanical cuttings, hanging decorations, craft objects and festive cartoon scenes. Choose leafy frames, romantic lettering, illustrated keepsakes or six independent black and white designs.",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "mistletoe-forked-white-berry-branch",
@@ -115,10 +115,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Mistletoe clipart collection, with {{artworkCount}} illustrations to explore. White-berried mistletoe in botanical cuttings, hanging decorations, craft objects and festive cartoon scenes. Choose leafy frames, romantic lettering, illustrated keepsakes or six independent black-and-white designs.",
-        "The gallery includes “Forked Mistletoe Branch with White Berries” and “Mistletoe Embroidery in a Wooden Hoop” among its drawings. Build a nature observation page, an illustrated setting or a classroom activity around the form and atmosphere that suit your subject."
+        "White berried mistletoe in botanical cuttings, hanging decorations, craft objects and festive cartoon scenes. Choose leafy frames, romantic lettering, illustrated keepsakes or six independent black and white designs.",
+        "The collection brings together {{artworkCount}} illustrations, including “Forked Mistletoe Branch with White Berries” and “Mistletoe Embroidery in a Wooden Hoop”. Build a nature observation page, an illustrated setting or a classroom activity around the form and atmosphere that suit your subject."
       ],
-      "paragraphSourceSha256": "f9929919e1c2cc8de084655f0e2484d86985b15fc2ab2e333123ac7be6b99626",
+      "paragraphSourceSha256": "db815758595b68cea158f29e4543a1ef2cf48d6333f3cbd4c3e128b9c92ec8e0",
       "paragraphEvidence": [
         {
           "id": "mistletoe-forked-white-berry-branch",
@@ -129,14 +129,14 @@
           "imageSha256": "7045426974422aa99607bc0f9b80112bcf2d5b8f5bd616860a57e59e012d7a52"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.550Z",
-      "paragraphReviewSha256": "841b4bc311466b322519daee983c9cd8776c06814a946a552f8a5af663ae530d"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "bf698270683e8a1ed5330724c5943ac4d927e8f4a65ca6a00ce8a686b3e592fc"
     },
     "pinecone": {
       "status": "checked-against-catalog",
       "sourceSha256": "ac96323b9701e6e6bb4f6bcfa74bb66f3c19f5ace143c0be27501e74674d3ef6",
-      "intro": "Pine cones in botanical arrangements, nature-study objects and illustrated craft figures, alongside playful woodland scenes and practical decorative details. Choose simple natural forms, seasonal lettering or six independent black-and-white designs.",
-      "checkedAt": "2026-10-27T20:27:00.125Z",
+      "intro": "Pine cones in botanical arrangements, nature study objects and illustrated craft figures, alongside playful woodland scenes and practical decorative details. Choose simple natural forms, seasonal lettering or six independent black and white designs.",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "pinecone-open-cone-botanical",
@@ -160,10 +160,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Pinecone clipart collection, with {{artworkCount}} illustrations to explore. Pine cones in botanical arrangements, nature-study objects and illustrated craft figures, alongside playful woodland scenes and practical decorative details. Choose simple natural forms, seasonal lettering or six independent black-and-white designs.",
-        "The gallery includes “Open Pine Cone with Layered Scales” and “Garden Cart Filled with Pine Cones Outline” among its drawings. Build a plant observation page, a personal garden journal or a nature-themed greeting, comparing the visible plant details and arrangements before choosing your focal image."
+        "Pine cones in botanical arrangements, nature study objects and illustrated craft figures, alongside playful woodland scenes and practical decorative details. Choose simple natural forms, seasonal lettering or six independent black and white designs.",
+        "The collection brings together {{artworkCount}} illustrations, including “Open Pine Cone with Layered Scales” and “Garden Cart Filled with Pine Cones Outline”. Build a plant observation page, a personal garden journal or a nature themed greeting, comparing the visible plant details and arrangements before choosing your focal image."
       ],
-      "paragraphSourceSha256": "71415f703ba4bdf0e8090d768c278ac7c41c76e42c1f29157c513589a9f09c63",
+      "paragraphSourceSha256": "49f98662b2c3c904d065b6f6f5357f57c66e7b4a095bb2201f6f35131a4b20d6",
       "paragraphEvidence": [
         {
           "id": "pinecone-open-cone-botanical",
@@ -174,14 +174,14 @@
           "imageSha256": "9d3e7f03557d1857c9c5db962e8dcd01992df8d35b3e48c02cf5e2d9edaabfa5"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.550Z",
-      "paragraphReviewSha256": "dd54b36f5d654afaab27b0d63884ce3903c19705b574652f4ea96e22164423d7"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "b719fd26d06f49b37a015efcd564c3d982e3b55d64e8fd9d97d60625feab02a1"
     },
     "poinsettia": {
       "status": "checked-against-catalog",
       "sourceSha256": "99f36d48b697afc58acfa7ab809318058ecc1cdf582bc0f10ca4d84fd6453056",
       "intro": "Red, cream and pink poinsettias appear as branching plants, floral arrangements and illustrated paper, fabric and decorative objects. Choose an open frame, a seasonal greeting, a character scene or one of six independent coloring designs.",
-      "checkedAt": "2026-10-27T21:12:40.631Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "poinsettia-branching-terracotta-plant",
@@ -205,8 +205,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Poinsettia clipart collection, with {{artworkCount}} illustrations to explore. Red, cream and pink poinsettias appear as branching plants, floral arrangements and illustrated paper, fabric and decorative objects. Choose an open frame, a seasonal greeting, a character scene or one of six independent coloring designs.",
-        "The gallery includes “Branching Poinsettia in a Terracotta Pot” and “Florist Wrapping Pink and Cream Poinsettias” among its drawings. Build a plant observation page, a personal garden journal or a nature-themed greeting, comparing the visible plant details and arrangements before choosing your focal image."
+        "Red, cream and pink poinsettias appear as branching plants, floral arrangements and illustrated paper, fabric and decorative objects. Choose an open frame, a seasonal greeting, a character scene or one of six independent coloring designs.",
+        "The collection brings together {{artworkCount}} illustrations, including “Branching Poinsettia in a Terracotta Pot” and “Florist Wrapping Pink and Cream Poinsettias”. Build a plant observation page, a personal garden journal or a nature themed greeting, comparing the visible plant details and arrangements before choosing your focal image."
       ],
       "paragraphSourceSha256": "1199ce0510032159dfd823a4c511d7bb5984621ef9c79392b35abd18c645db83",
       "paragraphEvidence": [
@@ -219,14 +219,14 @@
           "imageSha256": "88a6c12308efb56a0b5ed15ad8777851389ba8e4542f687a2aaa35970628e280"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.550Z",
-      "paragraphReviewSha256": "39b9d4428321c01f2046e8727c19a3f3d70040bb53e254c104a9e715ea71299e"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "1bc80f85670a61672756a52c18322219a151b7d6f17bef9f6366877dbe88b4a7"
     },
     "holly": {
       "status": "checked-against-catalog",
       "sourceSha256": "a21dbc50f967956a0d96664b7f675b70b77ee4837270165b3375037b6a559692",
-      "intro": "Glossy holly leaves and red fruits appear in botanical studies, garden arrangements, open frames and illustrated crafts. Browse fabric accessories, seasonal lettering, character activities and six separate black-and-white scenes.",
-      "checkedAt": "2026-10-27T21:54:55.182Z",
+      "intro": "Glossy holly leaves and red fruits appear in botanical studies, garden arrangements, open frames and illustrated crafts. Browse fabric accessories, seasonal lettering, character activities and six separate black and white scenes.",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "holly-spring-flowers-and-fruit-study",
@@ -250,10 +250,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Holly clipart collection, with {{artworkCount}} illustrations to explore. Glossy holly leaves and red fruits appear in botanical studies, garden arrangements, open frames and illustrated crafts. Browse fabric accessories, seasonal lettering, character activities and six separate black-and-white scenes.",
-        "The gallery includes “Flowering and Fruiting Holly Cuttings” and “Holly Clippings in a Wooden Garden Trug” among its drawings. Build a plant observation page, a personal garden journal or a nature-themed greeting, comparing the visible plant details and arrangements before choosing your focal image."
+        "Glossy holly leaves and red fruits appear in botanical studies, garden arrangements, open frames and illustrated crafts. Browse fabric accessories, seasonal lettering, character activities and six separate black and white scenes.",
+        "The collection brings together {{artworkCount}} illustrations, including “Flowering and Fruiting Holly Cuttings” and “Holly Clippings in a Wooden Garden Trug”. Build a plant observation page, a personal garden journal or a nature themed greeting, comparing the visible plant details and arrangements before choosing your focal image."
       ],
-      "paragraphSourceSha256": "aa70d5f6e9d02f9095747f0b5bb3bc90b7ec77cacb6f24ad2b7350ec661d9439",
+      "paragraphSourceSha256": "d3317aa249a94200be88efdd6d47fde84b58438a9fd5d2268aff48e9b1331bc8",
       "paragraphEvidence": [
         {
           "id": "holly-spring-flowers-and-fruit-study",
@@ -264,14 +264,14 @@
           "imageSha256": "b808966bdcab21fcfaa597942ef8966064ec43a7dd65a80b884311d8e55a5d0d"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.550Z",
-      "paragraphReviewSha256": "7095df1fc01f22dc27050eea2153955b7b4f174f128b03f3480d6d4f6a727513"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "9ba89748d867ead7bf71812a4cb3b67eb1fe6d9b1d3925ebc7e300ec50a6844b"
     },
     "bell": {
       "status": "checked-against-catalog",
       "sourceSha256": "3a700bd2cfc931b0a340dc442e36248ccef2b4665ddc6e4a2645445b537a8c34",
-      "intro": "Explore handbells, counter bells, jingle bells and other distinctive bell forms, from close instrument studies to illustrated crafts and seasonal greetings. Character scenes show listening, music and repair activities, with six separate black-and-white designs.",
-      "checkedAt": "2026-10-27T22:45:45.085Z",
+      "intro": "Explore handbells, counter bells, jingle bells and other distinctive bell forms, from close instrument studies to illustrated crafts and seasonal greetings. Character scenes show listening, music and repair activities, with six separate black and white designs.",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "bell-spherical-jingle-bell-study",
@@ -295,10 +295,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Bell clipart collection, with {{artworkCount}} illustrations to explore. Explore handbells, counter bells, jingle bells and other distinctive bell forms, from close instrument studies to illustrated crafts and seasonal greetings. Character scenes show listening, music and repair activities, with six separate black-and-white designs.",
-        "The gallery includes “Jingle Bell with a Cutaway Interior Study” and “Three Ceramic Bells on a Wooden Crosspiece” among its drawings. Choose a focal image for a personal seasonal card, a winter story page or a family craft, leaving room for your own message."
+        "Explore handbells, counter bells, jingle bells and other distinctive bell forms, from close instrument studies to illustrated crafts and seasonal greetings. Character scenes show listening, music and repair activities, with six separate black and white designs.",
+        "The collection brings together {{artworkCount}} illustrations, including “Jingle Bell with a Cutaway Interior Study” and “Three Ceramic Bells on a Wooden Crosspiece”. Choose a focal image for a personal seasonal card, a winter story page or a family craft, leaving room for your own message."
       ],
-      "paragraphSourceSha256": "5228ccea0be761941757e87abc6ab057ef7be5d862f6028da29589c6a9120c16",
+      "paragraphSourceSha256": "d7bea7b2586facbd3f63e70970fef01eee452a238e1c3086f792e30600c4183e",
       "paragraphEvidence": [
         {
           "id": "bell-spherical-jingle-bell-study",
@@ -309,14 +309,14 @@
           "imageSha256": "5a830b1dc5f22d5be6f436fba8c9cf1aaf19837d4156dfa052a82f85aca05626"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.550Z",
-      "paragraphReviewSha256": "862d92b3f9fdafa09a7ab5972b543f17f2101198b5460b2bbac905398e8efb99"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "79ef8c270efb30cb65f1c3f32423d85b75fcff10e01e1f1055708b84af3f4b4f"
     },
     "angel": {
       "status": "checked-against-catalog",
       "sourceSha256": "75006fe626fd1f15e8048d1875a4727692ac61a1a6140fa2f0665dfdc09b2899",
       "intro": "Explore angels in quiet moments, musical scenes and imaginative paper, textile and decorative forms. Different faces, ages and robes distinguish the figures, alongside five messages and six separate coloring designs.",
-      "checkedAt": "2026-10-27T23:57:59.934Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "angel-sleeping-angel-on-cloud",
@@ -340,8 +340,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Angel clipart collection, with {{artworkCount}} illustrations to explore. Explore angels in quiet moments, musical scenes and imaginative paper, textile and decorative forms. Different faces, ages and robes distinguish the figures, alongside five messages and six separate coloring designs.",
-        "The gallery includes “Sleeping Angel on a Small Cloud” and “Angels Among Us in Navy and Gold Lettering” among its drawings. Choose an illustration for a personal devotional page, a family celebration keepsake or a cultural learning activity, using your own text to explain its meaning respectfully."
+        "Explore angels in quiet moments, musical scenes and imaginative paper, textile and decorative forms. Different faces, ages and robes distinguish the figures, alongside five messages and six separate coloring designs.",
+        "The collection brings together {{artworkCount}} illustrations, including “Sleeping Angel on a Small Cloud” and “Angels Among Us in Navy and Gold Lettering”. Choose an illustration for a personal devotional page, a family celebration keepsake or a cultural learning activity, using your own text to explain its meaning respectfully."
       ],
       "paragraphSourceSha256": "e045c492f7c29608b3bce0ee259ac055a378e0a6673a23d41174d4ad3def9d75",
       "paragraphEvidence": [
@@ -354,8 +354,8 @@
           "imageSha256": "395b593097b9ae8b535f3f97dcb4542a85a1bc0d548e25a6409965e6c5d45c3e"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.550Z",
-      "paragraphReviewSha256": "1dc8cbe0ce3d5e34f5efaa6326925ef8fc00bc2929d1f762768103fab72ec9c0"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "661f3d0ae1e5a78799e8ecd26e24b96c9124fd4ef320ebaf44d6b6a1987f1a33"
     }
   }
 }

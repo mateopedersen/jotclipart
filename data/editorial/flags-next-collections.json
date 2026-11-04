@@ -5,7 +5,7 @@
       "status": "checked-against-catalog",
       "intro": "Election Day clipart brings together voting equipment, ballots, stickers and people alongside playful civic characters and patriotic designs.",
       "sourceSha256": "2115712327751b10d83cafba01e9f9abe41ea9eb3456e25f63e602d828730b63",
-      "checkedAt": "2026-11-03T16:09:13.237Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "election-day-accessible-ballot-marking-station",
@@ -21,8 +21,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Election Day clipart collection, with {{artworkCount}} illustrations to explore. Election Day clipart brings together voting equipment, ballots, stickers and people alongside playful civic characters and patriotic designs.",
-        "The gallery includes “Election Day Accessible Voting Station” and “Election Day American Map and Check Mark” among its drawings. Use the drawings in a civics discussion, a personal commentary project or an illustrated comparison, keeping imagined scenes distinct from real events."
+        "Election Day clipart brings together voting equipment, ballots, stickers and people alongside playful civic characters and patriotic designs.",
+        "The collection brings together {{artworkCount}} illustrations, including “Election Day Accessible Voting Station” and “Election Day American Map and Check Mark”. Use the drawings in a civics discussion, a personal commentary project or an illustrated comparison, keeping imagined scenes distinct from real events."
       ],
       "paragraphSourceSha256": "968f7c8fb599a22a3c91a34f05fdc270e6151f52a35e160dbddf08582b56776f",
       "paragraphEvidence": [
@@ -35,14 +35,14 @@
           "imageSha256": "8acef64b6d5e527a342aaabc217f5da9a9774580a8405c6c818cd647b82d11bc"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.548Z",
-      "paragraphReviewSha256": "2587b33dbb0a22cafe4df8e6f4690bfe1e91e55edb046f5d688094f0abcdd8b1"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "8c18e6bb53dbdb2e0419d3ec09acb6329a39c519eb3d664ae389fb2e914d9f45"
     },
     "nepal-flag": {
       "status": "checked-against-catalog",
       "intro": "Nepal flag clipart includes double pennant flags, display stands and illustrations of community activities.",
       "sourceSha256": "a732b695b278a2f3bbf79ab4c7f381a221f5a9dbbc04d201f0f5212f60fac9ea",
-      "checkedAt": "2026-11-03T16:09:13.238Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "nepal-flag-clipart-001-wooden-hand-pole",
@@ -58,8 +58,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Nepal Flag clipart collection, with {{artworkCount}} illustrations to explore. Nepal flag clipart includes double pennant flags, display stands and illustrations of community activities.",
-        "The gallery includes “Nepal Flag on a Wooden Pole” and “Nepal Flag on Gold Pole with Round Base” among its drawings. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
+        "Nepal flag clipart includes double pennant flags, display stands and illustrations of community activities.",
+        "The collection brings together {{artworkCount}} illustrations, including “Nepal Flag on a Wooden Pole” and “Nepal Flag on Gold Pole with Round Base”. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
       ],
       "paragraphSourceSha256": "d3f8895afb7c38e05b8248c7838c44dd0f6a3059b5d690b240a8ae1bb88ff58f",
       "paragraphEvidence": [
@@ -72,14 +72,14 @@
           "imageSha256": "30235a0354606c68dcd9825158b49925724a45a147833291d29d9c2fe0e8fed6"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.548Z",
-      "paragraphReviewSha256": "4350215aa4905acbb9f0ca4a643ad4bcc9519e54190a70349d08e424008e0be7"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "148c4528fe7a5b6d2cf4e75b8a2dabfeb93b056730810215d98d631df05c1b1b"
     },
     "italy-flag": {
       "status": "checked-against-catalog",
       "intro": "Italian flag clipart shows the green, white, and red tricolor on poles, tabletop stands, fabric displays, and in community scenes.",
       "sourceSha256": "58f94e75ac114b0b57e883dbfb4a847f8c374920f1d850d8cd00f627deec0545",
-      "checkedAt": "2026-11-03T02:35:58.350Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "italy-flag-clipart-001-wooden-hand-pole",
@@ -95,8 +95,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Italy Flag clipart collection, with {{artworkCount}} illustrations to explore. Italian flag clipart shows the green, white, and red tricolor on poles, tabletop stands, fabric displays, and in community scenes.",
-        "The gallery includes “Italy Flag on a Wooden Pole” and “Italy Flag on a Gold Stand” among its drawings. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
+        "Italian flag clipart shows the green, white, and red tricolor on poles, tabletop stands, fabric displays, and in community scenes.",
+        "The collection brings together {{artworkCount}} illustrations, including “Italy Flag on a Wooden Pole” and “Italy Flag on a Gold Stand”. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
       ],
       "paragraphSourceSha256": "6546993e489aba3699ae314c6019372db904b148bd07ce6f0361a1d88d6a2239",
       "paragraphEvidence": [
@@ -109,14 +109,14 @@
           "imageSha256": "b547fe062d32d76a4735ce92568e4373c9c93dbc67dc9211e792059459750c9c"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.548Z",
-      "paragraphReviewSha256": "747e4e6c5a9c89779f83f97147f069a549bc2d704eca5c260805ce7b466fef00"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "03f929a776c533a89e40dd359a711aa100542de566e4970ba47909e13433e710"
     },
     "lithuania-flag": {
       "status": "checked-against-catalog",
       "intro": "Lithuanian flag clipart includes tricolor flags, display stands and illustrated community scenes.",
       "sourceSha256": "08d1148f18dcd03fc09bacaba1a3938acd813168da001fb8f61115b39d0672a2",
-      "checkedAt": "2026-11-03T02:41:34.289Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "lithuania-flag-clipart-001-wooden-hand-pole",
@@ -132,8 +132,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Lithuania Flag clipart collection, with {{artworkCount}} illustrations to explore. Lithuanian flag clipart includes tricolor flags, display stands and illustrated community scenes.",
-        "The gallery includes “Lithuanian Flag on Wooden Pole” and “Lithuanian Flag on Gold Stand” among its drawings. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
+        "Lithuanian flag clipart includes tricolor flags, display stands and illustrated community scenes.",
+        "The collection brings together {{artworkCount}} illustrations, including “Lithuanian Flag on Wooden Pole” and “Lithuanian Flag on Gold Stand”. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
       ],
       "paragraphSourceSha256": "b3fc5ff7340842a10cc0da2900766492ca67024790a4bcd48e3e81c8586e9d25",
       "paragraphEvidence": [
@@ -146,14 +146,14 @@
           "imageSha256": "87cd65d3e735374b1a3a3cb4bd63be8ad9e98848ec3a50e4f4330eaf29b6dc43"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.548Z",
-      "paragraphReviewSha256": "c946256f30fbd4dbe5af990bbc0e700a529d535dd584e357f20b048461135776"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "def986619414083d64f7b3b91572205023908148cedb171a1d39131073b59af2"
     },
     "marshall-islands-flag": {
       "status": "checked-against-catalog",
       "intro": "Marshall Islands flag clipart includes island flags, display stands and illustrated community scenes.",
       "sourceSha256": "031a7338a234356b8ed48c3c3ec6dd0987e139ec51f4ddab52cd95fa2f762dd4",
-      "checkedAt": "2026-11-03T16:09:13.238Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "marshall-islands-flag-clipart-001-wooden-hand-pole",
@@ -169,8 +169,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Marshall Islands Flag clipart collection, with {{artworkCount}} illustrations to explore. Marshall Islands flag clipart includes island flags, display stands and illustrated community scenes.",
-        "The gallery includes “Marshall Islands Flag on Wooden Pole” and “Marshall Islands Flag with White Star and Color Bands” among its drawings. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
+        "Marshall Islands flag clipart includes island flags, display stands and illustrated community scenes.",
+        "The collection brings together {{artworkCount}} illustrations, including “Marshall Islands Flag on Wooden Pole” and “Marshall Islands Flag with White Star and Color Bands”. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
       ],
       "paragraphSourceSha256": "c991c51aee42254a8ceb47346644c4448282d7014e38f690e2f199eb62ee9320",
       "paragraphEvidence": [
@@ -183,14 +183,14 @@
           "imageSha256": "6300cc63a73957a89800133584ca8450b09587b7ad5315b57cd706aa120b198f"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.548Z",
-      "paragraphReviewSha256": "10d02ba4d6f85c9cc2fc67be988b005cb3b4053f5da1c477985cc6b734d87258"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "4d0d1053b2f7eb7eceaaa0edb24e283db7a4f1598c5234d08ddc3411cb7f252e"
     },
     "mauritania-flag": {
       "status": "checked-against-catalog",
       "intro": "Mauritania flag clipart includes crescent flags, display stands and illustrated community scenes.",
       "sourceSha256": "c307a09e52f7624f730dab89616f3647d574504d2be64ef647f487a2ef02ca13",
-      "checkedAt": "2026-11-03T02:44:54.116Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "mauritania-flag-clipart-001-wooden-hand-pole",
@@ -206,8 +206,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Mauritania Flag clipart collection, with {{artworkCount}} illustrations to explore. Mauritania flag clipart includes crescent flags, display stands and illustrated community scenes.",
-        "The gallery includes “Mauritania Flag on Wooden Pole” and “Mauritania Flag on Gold Stand” among its drawings. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
+        "Mauritania flag clipart includes crescent flags, display stands and illustrated community scenes.",
+        "The collection brings together {{artworkCount}} illustrations, including “Mauritania Flag on Wooden Pole” and “Mauritania Flag on Gold Stand”. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
       ],
       "paragraphSourceSha256": "d94a9d9b1cbff0b029b0618d7788f8dd75d8fc0dcbfa4e14d81b6e398a85d6ae",
       "paragraphEvidence": [
@@ -220,14 +220,14 @@
           "imageSha256": "9737ec0513385d06e7fde01ad43e9c1c74cd6c77fdb608ecc38ab6449db22dd5"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.548Z",
-      "paragraphReviewSha256": "e368b414090f0bed9a955bf484db63460546f3e1342c65be5af0589ee123f4b2"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "5d3ee2b7f06153f3233305d64e9a96444a42cd7c339135c1aa274077759b46be"
     },
     "mauritius-flag": {
       "status": "checked-against-catalog",
       "intro": "Mauritius flag clipart includes striped flags, display stands and illustrated community scenes.",
       "sourceSha256": "b17011332380ca4d0b0edb76cf5b204623865481f99f7cdadbb602a05064a82f",
-      "checkedAt": "2026-11-03T02:44:54.265Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "mauritius-flag-clipart-001-wooden-hand-pole",
@@ -243,8 +243,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Mauritius Flag clipart collection, with {{artworkCount}} illustrations to explore. Mauritius flag clipart includes striped flags, display stands and illustrated community scenes.",
-        "The gallery includes “Mauritius Flag on Wooden Pole” and “Mauritius Flag on Gold Stand” among its drawings. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
+        "Mauritius flag clipart includes striped flags, display stands and illustrated community scenes.",
+        "The collection brings together {{artworkCount}} illustrations, including “Mauritius Flag on Wooden Pole” and “Mauritius Flag on Gold Stand”. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
       ],
       "paragraphSourceSha256": "ab4ee63e04f25ef07041da084323eca7dc07aa1f55173f40a1234206f269dd41",
       "paragraphEvidence": [
@@ -257,14 +257,14 @@
           "imageSha256": "8981d6ed77c3bed6c7f853090ab55b8a155af5d14c6c77d742e11150393dbd73"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.548Z",
-      "paragraphReviewSha256": "2cc52aedc42e88048466cda82f3246da5e9e99bb3eccef49a77f7f96a473728d"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "565dd3b76c6023d74cc5d2c0fa0c9459b4b139deb89d6afabb6cf657284291e8"
     },
     "kiribati-flag": {
       "status": "checked-against-catalog",
       "intro": "Kiribati flag designs feature the golden bird and sun on flags displayed alone and in community scenes.",
       "sourceSha256": "96a8b1b356dbab54459c344bb6f16db4c484417efde2827b2efecda44fa9c9d4",
-      "checkedAt": "2026-11-03T16:09:13.238Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "kiribati-flag-clipart-001-wooden-hand-pole",
@@ -280,8 +280,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Kiribati Flag clipart collection, with {{artworkCount}} illustrations to explore. Kiribati flag designs feature the golden bird and sun on flags displayed alone and in community scenes.",
-        "The gallery includes “Kiribati Flag on Wooden Pole” and “Kiribati Flag with Bird and Rising Sun” among its drawings. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
+        "Kiribati flag designs feature the golden bird and sun on flags displayed alone and in community scenes.",
+        "The collection brings together {{artworkCount}} illustrations, including “Kiribati Flag on Wooden Pole” and “Kiribati Flag with Bird and Rising Sun”. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
       ],
       "paragraphSourceSha256": "454ab9b8b2c0c5f112f9961f1bb86f440424103ec4a4dcb3faa9a74a953d74eb",
       "paragraphEvidence": [
@@ -294,14 +294,14 @@
           "imageSha256": "d11f1b223be9824324726f6391f6d583bf5d8dfa8945c02b2c18cb06a796a53d"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.548Z",
-      "paragraphReviewSha256": "5b1f42db5aad53b3a9fdb11bfccc0b7043f53fb91c625fd7ae7bd37962027a3c"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "18d3a7c12f7340de036ba41cc4e1b8ac4773ca274e7a2cf2d583f1d9af07633b"
     },
     "kuwait-flag": {
       "status": "checked-against-catalog",
       "intro": "Kuwait flag illustrations show the striped flag and black trapezoid on displays and in community scenes.",
       "sourceSha256": "774c260c8d7f39a216a1cee2b8e9d083dc718ca9e01e8e297a8ffab7b0a6c194",
-      "checkedAt": "2026-11-03T16:09:13.238Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "kuwait-flag-clipart-001-wooden-hand-pole",
@@ -317,8 +317,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Kuwait Flag clipart collection, with {{artworkCount}} illustrations to explore. Kuwait flag illustrations show the striped flag and black trapezoid on displays and in community scenes.",
-        "The gallery includes “Kuwait Flag on Wooden Pole” and “Kuwait Flag on Gold Stand” among its drawings. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
+        "Kuwait flag illustrations show the striped flag and black trapezoid on displays and in community scenes.",
+        "The collection brings together {{artworkCount}} illustrations, including “Kuwait Flag on Wooden Pole” and “Kuwait Flag on Gold Stand”. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
       ],
       "paragraphSourceSha256": "eeaf734c33d7b08fda895972811919622684049e171cabb4fba2888fd64e0698",
       "paragraphEvidence": [
@@ -331,14 +331,14 @@
           "imageSha256": "6ac7af2b02259e9d38e54fe26fe75adb478b01bb4b02b53736ffe1dd232c6fbe"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.548Z",
-      "paragraphReviewSha256": "64930500646281771f225eea87b41d5ee0fbfe3ab298fdf85f8bb22c215dea1e"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "5471e050677bee36db9e69590cf2dc37571d7dbaed95c6e35441dd09b794c12b"
     },
     "liberia-flag": {
       "status": "checked-against-catalog",
       "intro": "Liberia flag illustrations show its single white star and stripes on displays and in community scenes.",
       "sourceSha256": "33e86ed2dc7de0ac58f9b68e01121385275b8dde507a8103bdcc6bc03726ad57",
-      "checkedAt": "2026-11-03T16:09:13.239Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "liberia-flag-clipart-001-wooden-hand-pole",
@@ -354,8 +354,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Liberia Flag clipart collection, with {{artworkCount}} illustrations to explore. Liberia flag illustrations show its single white star and stripes on displays and in community scenes.",
-        "The gallery includes “Liberia Flag on a Wooden Pole” and “Liberia Flag on Gold Pole with Round Base” among its drawings. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
+        "Liberia flag illustrations show its single white star and stripes on displays and in community scenes.",
+        "The collection brings together {{artworkCount}} illustrations, including “Liberia Flag on a Wooden Pole” and “Liberia Flag on Gold Pole with Round Base”. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
       ],
       "paragraphSourceSha256": "846bc2499c1a5858e00f9eb1dc9b6b3f4773c719e12b891e339491ae0d128bcb",
       "paragraphEvidence": [
@@ -368,14 +368,14 @@
           "imageSha256": "3cbd03ac9357f0fc9248b9c9ba0d45c57443fffb074e1a441d50f65dc620b898"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.548Z",
-      "paragraphReviewSha256": "0877b76d0699abc8d1eb8cba40f6f2ab05f86eba2e36554942a47b521ee9b5d2"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "1f7760f54827abf03e4ef61adf7e7917a909959ba3c1babdf8eeb660cdb9c4c5"
     },
     "ivory-coast-flag": {
       "status": "checked-against-catalog",
       "intro": "Orange, white and green panels recur across Ivory Coast flag scenes, from unfurled cloth to small tabletop displays.",
       "sourceSha256": "1bf3f5f5c26ea156967f544ec8dc09cfe590f196ca8f0b5cdfe94fefe481ae1e",
-      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "ivory-coast-flag-clipart-001-wooden-hand-pole",
@@ -391,8 +391,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Ivory Coast Flag clipart collection, with {{artworkCount}} illustrations to explore. Orange, white and green panels recur across Ivory Coast flag scenes, from unfurled cloth to small tabletop displays.",
-        "The gallery includes “Ivory Coast Flag on Wooden Pole” and “Ivory Coast Flag on Gold Stand” among its drawings. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
+        "Orange, white and green panels recur across Ivory Coast flag scenes, from unfurled cloth to small tabletop displays.",
+        "The collection brings together {{artworkCount}} illustrations, including “Ivory Coast Flag on Wooden Pole” and “Ivory Coast Flag on Gold Stand”. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
       ],
       "paragraphSourceSha256": "aef76df168b953471fc1490fbaed5100c852f067d6a8953eec5437bb14f7d2d9",
       "paragraphEvidence": [
@@ -405,14 +405,14 @@
           "imageSha256": "0bbc1d00db7a68780757916f30b3361184e31384bb7fbef89e791ebcc8fe5619"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.548Z",
-      "paragraphReviewSha256": "2762d1e752e01632408d7d60907bc430bfca3a1bd64099430fe3615feb39cbac"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "ef4f8e83844ee8180b1208509fd954556a893e2a60012c8c7194cd1d1ceb475f"
     },
     "jamaica-flag": {
       "status": "checked-against-catalog",
-      "intro": "For Jamaica, the black diagonal cross edged in gold separates green triangles in these flag scenes and display views.",
+      "intro": "Jamaica flag artwork moves between individual flags and illustrated settings, with green, gold and black tying the selection together.",
       "sourceSha256": "42d8e160f09f796eefecae9155788c789b6c07e6e6ef37fb50524cfdba2c8c58",
-      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "jamaica-flag-clipart-001-wooden-hand-pole",
@@ -428,10 +428,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Jamaica Flag clipart collection, with {{artworkCount}} illustrations to explore. For Jamaica, the black diagonal cross edged in gold separates green triangles in these flag scenes and display views.",
-        "The gallery includes “Jamaica Flag on a Wooden Pole” and “Jamaica Flag on a Gold Stand” among its drawings. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
+        "Jamaica flag artwork moves between individual flags and illustrated settings, with green, gold and black tying the selection together.",
+        "The collection brings together {{artworkCount}} illustrations, including “Jamaica Flag on a Wooden Pole” and “Jamaica Flag on a Gold Stand”. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
       ],
-      "paragraphSourceSha256": "129c344aa88edf9fb10400a03c54087554d774d9379acf2077dc77131b134c88",
+      "paragraphSourceSha256": "16f457b2c8fad23256274bde35811fcd6fdfcb8da72b43c060d6871bd0640e78",
       "paragraphEvidence": [
         {
           "id": "jamaica-flag-clipart-001-wooden-hand-pole",
@@ -442,14 +442,14 @@
           "imageSha256": "3439fd23af08e7abdf92aa7aea68c91a322abc204480732f0b7f33568cd07e87"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.548Z",
-      "paragraphReviewSha256": "529b7857ba21ea392b08b61ea065ecf1f6426613ced498e01557adeaf42f0986"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "53c27a7ad17d29fc4449cd93993615262e24a216cf26d14f948065dae9fa368a"
     },
     "japan-flag": {
       "status": "checked-against-catalog",
       "intro": "A red disc centers each Japan flag illustration on a white field, from fluttering fabric to simple pole displays.",
       "sourceSha256": "47135942d8902917c9f5334d872baeea6d61ae7d26b47585c1f1b32fb27b5453",
-      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "japan-flag-clipart-001-wooden-hand-pole",
@@ -465,8 +465,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Japan Flag clipart collection, with {{artworkCount}} illustrations to explore. A red disc centers each Japan flag illustration on a white field, from fluttering fabric to simple pole displays.",
-        "The gallery includes “Japan Flag on a Wooden Pole” and “Waving Japan Flag” among its drawings. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
+        "A red disc centers each Japan flag illustration on a white field, from fluttering fabric to simple pole displays.",
+        "The collection brings together {{artworkCount}} illustrations, including “Japan Flag on a Wooden Pole” and “Waving Japan Flag”. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
       ],
       "paragraphSourceSha256": "dcac4f6cdfd7a9a343355ac35061dc176d604e51e42100d1700ae573cca36992",
       "paragraphEvidence": [
@@ -479,14 +479,14 @@
           "imageSha256": "d0e3bed6b9041e01fda4d681f83427f2224d06620075e6056b86f9907e75f0bd"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.548Z",
-      "paragraphReviewSha256": "0dc592f35b1a58a5adef55270b60dde4b76881c291e01edbd8ddf6a792705cb1"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "da44ada4a032a02331a4769f4a455c9b3713f8ad9d05c9c203504b1b905c3653"
     },
     "kazakhstan-flag": {
       "status": "checked-against-catalog",
       "intro": "Sky blue fabric, a gold sun and eagle, and a patterned vertical band mark these Kazakhstan flag examples.",
       "sourceSha256": "32c18a6374894f5ece8fa01f654b2b0a119a61bf2b961c0e899a4e8673a7f573",
-      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "kazakhstan-flag-clipart-001-wooden-hand-pole",
@@ -502,8 +502,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Kazakhstan Flag clipart collection, with {{artworkCount}} illustrations to explore. Sky blue fabric, a gold sun and eagle, and a patterned vertical band mark these Kazakhstan flag examples.",
-        "The gallery includes “Kazakhstan Flag on Wooden Pole” and “Kazakhstan Flag on Gold Stand” among its drawings. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
+        "Sky blue fabric, a gold sun and eagle, and a patterned vertical band mark these Kazakhstan flag examples.",
+        "The collection brings together {{artworkCount}} illustrations, including “Kazakhstan Flag on Wooden Pole” and “Kazakhstan Flag on Gold Stand”. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
       ],
       "paragraphSourceSha256": "fc93b46497e3a4959e346a1a199b0065bde322e380caaa3b63facd44169044a3",
       "paragraphEvidence": [
@@ -516,14 +516,14 @@
           "imageSha256": "96a4be7c2c76952bca08fba6229dec158d60d67d7ddd2f2a1402b9f6fc166795"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.548Z",
-      "paragraphReviewSha256": "235a71f5e5e198616c7cb721bf25304e48cda21ec08bad11048c71b694c064cd"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "e5600d8a00534f71e8de0e12dd1fddcfdc8dc29f5b4cf513d6e97c83372a53b7"
     },
     "kenya-flag": {
       "status": "checked-against-catalog",
       "intro": "In the Kenya flag art, a central shield and crossed spears sit over black, red and green stripes edged in white.",
       "sourceSha256": "9ef2943742a3d4cc85872b04988a752786db8fc7b0ca8e1844e33564d66be224",
-      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "kenya-flag-clipart-001-wooden-hand-pole",
@@ -539,8 +539,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Kenya Flag clipart collection, with {{artworkCount}} illustrations to explore. In the Kenya flag art, a central shield and crossed spears sit over black, red and green stripes edged in white.",
-        "The gallery includes “Kenya Flag on Wooden Pole” and “Kenya Flag on Gold Stand” among its drawings. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
+        "In the Kenya flag art, a central shield and crossed spears sit over black, red and green stripes edged in white.",
+        "The collection brings together {{artworkCount}} illustrations, including “Kenya Flag on Wooden Pole” and “Kenya Flag on Gold Stand”. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
       ],
       "paragraphSourceSha256": "8b8cfddfc9245532e428e8913020246110184478dd740416c4a48dbdbba2f6b3",
       "paragraphEvidence": [
@@ -553,14 +553,14 @@
           "imageSha256": "5b6ed7c2a0adff7f9f24e6cea929df794e6970560940e17218ee66586002d842"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.549Z",
-      "paragraphReviewSha256": "f4b607850e93e3fee2e674a955f3d9d1788ed25d63a49853bbc02be77c6c731b"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "b0df2007c09b92af71d381a149f2dd6ca900fd40c21599446f794dd275b02d64"
     },
     "micronesia-flag": {
       "status": "checked-against-catalog",
       "intro": "Four white stars punctuate the light blue field in this group of Micronesia flag illustrations.",
       "sourceSha256": "f15d536c5552f9cf7e86b6f1e9f04a764d397c39032dc1a2bf4d85e84cb46f5f",
-      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "micronesia-flag-clipart-022-ceramic-desk-holder",
@@ -576,8 +576,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Micronesia Flag clipart collection, with {{artworkCount}} illustrations to explore. Four white stars punctuate the light blue field in this group of Micronesia flag illustrations.",
-        "The gallery includes “Micronesia Flag in Ceramic Holder” and “Micronesia Flag and Canoe Craft Drawing” among its drawings. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
+        "Four white stars punctuate the light blue field in this group of Micronesia flag illustrations.",
+        "The collection brings together {{artworkCount}} illustrations, including “Micronesia Flag in Ceramic Holder” and “Micronesia Flag and Canoe Craft Drawing”. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
       ],
       "paragraphSourceSha256": "ce2f95d089f9fa7863a789a59a9f6088b339a77534a3a5218dd27a7d446f07b7",
       "paragraphEvidence": [
@@ -590,14 +590,14 @@
           "imageSha256": "13e9ad82f00689c85a082e5682778813a178b2fa19003aa47afb737a70d9cdca"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.549Z",
-      "paragraphReviewSha256": "321c2f1dbf0bd6897c3a93637b71fd2a3f2060aa86a03b912d15677fff96f0bb"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "e4006fe60efd83c89ded74b2fa00a1a110f28c6ae54231bf29e08aad064493c2"
     },
     "morocco-flag": {
       "status": "checked-against-catalog",
-      "intro": "Morocco’s green five-point star stands out against the red field across these flag pictures and display settings.",
+      "intro": "Morocco’s green five point star stands out against the red field across these flag pictures and display settings.",
       "sourceSha256": "0d3acc7cb0895aed527af003986ebec9486a4e2023dd4874a91615719081cfb6",
-      "checkedAt": "2026-11-03T16:09:13.239Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "morocco-flag-clipart-001-wooden-hand-pole",
@@ -613,10 +613,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Morocco Flag clipart collection, with {{artworkCount}} illustrations to explore. Morocco’s green five-point star stands out against the red field across these flag pictures and display settings.",
-        "The gallery includes “Morocco Flag on Wooden Pole” and “Morocco Flag on Gold Stand” among its drawings. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
+        "Morocco’s green five point star stands out against the red field across these flag pictures and display settings.",
+        "The collection brings together {{artworkCount}} illustrations, including “Morocco Flag on Wooden Pole” and “Morocco Flag on Gold Stand”. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
       ],
-      "paragraphSourceSha256": "305a0a18689d2875c291327c977ebc98b43a213e44a179d69e537ed8b486958d",
+      "paragraphSourceSha256": "b7176aaa75d93857df9d128bc6f4e2e1029d240a5789d5bd067c1bc2278a9847",
       "paragraphEvidence": [
         {
           "id": "morocco-flag-clipart-001-wooden-hand-pole",
@@ -627,14 +627,14 @@
           "imageSha256": "ef6430224fd3b521024a41322f34bffb742fbb1f5f5ee0f7d56a6330bfd95c94"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.549Z",
-      "paragraphReviewSha256": "1f86623ccc4d7d1edd2b6c6a2e0d495a05d3518604719667a7fdd9e426624c5e"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "3afb8c547188c5e12eb3c9e22bc1b8558b8de1596eeafffb1e1b0178d0851fa8"
     },
     "mozambique-flag": {
       "status": "checked-against-catalog",
       "intro": "The red triangle and gold emblem anchor these Mozambique flag scenes, alongside green, black and yellow bands.",
       "sourceSha256": "7335230d45120ddb3f3dfaba57a9b535b2847eb2782ec551af9fed74c493d717",
-      "checkedAt": "2026-11-03T16:09:13.239Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "mozambique-flag-clipart-001-wooden-hand-pole",
@@ -650,8 +650,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Mozambique Flag clipart collection, with {{artworkCount}} illustrations to explore. The red triangle and gold emblem anchor these Mozambique flag scenes, alongside green, black and yellow bands.",
-        "The gallery includes “Mozambique Flag on Wooden Pole” and “Mozambique Flag on Gold Stand” among its drawings. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
+        "The red triangle and gold emblem anchor these Mozambique flag scenes, alongside green, black and yellow bands.",
+        "The collection brings together {{artworkCount}} illustrations, including “Mozambique Flag on Wooden Pole” and “Mozambique Flag on Gold Stand”. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
       ],
       "paragraphSourceSha256": "446dd9cc5baf9a2b751a916b80e8cde883c7d3a36220b7ba28835aa656475e4d",
       "paragraphEvidence": [
@@ -664,14 +664,14 @@
           "imageSha256": "89d05b404f483e75fefc791d3906776a1f5f2cfcfbb90ecefb219c6b604a5aa1"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.549Z",
-      "paragraphReviewSha256": "e3f8be908eeb03d7d6397c5fc6a140e834f5343d4e70836d014ae71401ddbdfd"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "0a2f2620e8da5e25861d5ff97c5e4943c3a56ad8f7bce2328e172b1591b8734e"
     },
     "namibia-flag": {
       "status": "checked-against-catalog",
       "intro": "A gold sun sits above the diagonal red band that cuts through the blue and green fields in these Namibia flag illustrations.",
       "sourceSha256": "01b126daa343ac4f00df67c4455442639342e1b8c43b7fdc82b4a5cf8ec9e4d1",
-      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "namibia-flag-clipart-001-wooden-hand-pole",
@@ -687,8 +687,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Namibia Flag clipart collection, with {{artworkCount}} illustrations to explore. A gold sun sits above the diagonal red band that cuts through the blue and green fields in these Namibia flag illustrations.",
-        "The gallery includes “Namibia Flag on Wooden Pole” and “Namibia Flag on Gold Stand” among its drawings. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
+        "A gold sun sits above the diagonal red band that cuts through the blue and green fields in these Namibia flag illustrations.",
+        "The collection brings together {{artworkCount}} illustrations, including “Namibia Flag on Wooden Pole” and “Namibia Flag on Gold Stand”. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
       ],
       "paragraphSourceSha256": "0c551ac3b25495d29c0f8fdd1cdd7a128b1d6b6fbc8c0bfff5b6e7280f4b3e2f",
       "paragraphEvidence": [
@@ -701,14 +701,14 @@
           "imageSha256": "6029fac780fa7dfc33f0ebe470a245a604e1f29963071bcdeb9b820a319a8d42"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.549Z",
-      "paragraphReviewSha256": "059bbaddc30706c7a8160a33b5e14f72a1497adc208fa1419ba5052d2fede5b6"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "85f63a0c6836131642101157803d321d06cc42e703db292550ed0ad20a2b524e"
     },
     "nauru-flag": {
       "status": "checked-against-catalog",
       "intro": "One white star beneath a gold stripe identifies the Nauru flag examples against a deep blue field.",
       "sourceSha256": "019e71f6f42d4d3074967fbb6406e4afe6a1f7fc49253c0965c5f9589a724d4f",
-      "checkedAt": "2026-11-03T15:03:22.157Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "nauru-flag-clipart-001-wooden-hand-pole",
@@ -724,8 +724,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Nauru Flag clipart collection, with {{artworkCount}} illustrations to explore. One white star beneath a gold stripe identifies the Nauru flag examples against a deep blue field.",
-        "The gallery includes “Nauru Flag on Wooden Pole” and “Nauru Flag on Gold Stand” among its drawings. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
+        "One white star beneath a gold stripe identifies the Nauru flag examples against a deep blue field.",
+        "The collection brings together {{artworkCount}} illustrations, including “Nauru Flag on Wooden Pole” and “Nauru Flag on Gold Stand”. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
       ],
       "paragraphSourceSha256": "b8499fdcd5b12074410002958310390514796441d47699a1b72d2330d5bcf3b7",
       "paragraphEvidence": [
@@ -738,14 +738,14 @@
           "imageSha256": "3cde994c5bef56e1fa5bf50c89c5cb92d0747d1b8994ea5822f644e91e3ac829"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.549Z",
-      "paragraphReviewSha256": "515390c91a0ec8ba6705ef98133e47fbaddee6f17f2cb3cd04d4c80294d7f066"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "207100f8922b491a8f903d39fc228c5faa414fe05dc2e587f44f671b48c6948e"
     },
     "libya-flag": {
       "status": "checked-against-catalog",
       "intro": "Libya flag illustrations feature red black and green bands with a crescent and star in a variety of displays.",
       "sourceSha256": "45f34cb9ebc8b1095878dd24d39359347fa21e781627eab4fe5e1ab4a512dc90",
-      "checkedAt": "2026-11-03T16:09:13.239Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "libya-flag-clipart-001-wooden-hand-pole",
@@ -761,8 +761,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Libya Flag clipart collection, with {{artworkCount}} illustrations to explore. Libya flag illustrations feature red black and green bands with a crescent and star in a variety of displays.",
-        "The gallery includes “Libya Flag on a Wooden Pole” and “Libya Flag on a Gold Stand” among its drawings. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
+        "Libya flag illustrations feature red black and green bands with a crescent and star in a variety of displays.",
+        "The collection brings together {{artworkCount}} illustrations, including “Libya Flag on a Wooden Pole” and “Libya Flag on a Gold Stand”. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
       ],
       "paragraphSourceSha256": "d57dc8d26bda78336d802c967012686aba94db0d0ddc43863a5cc431f1436302",
       "paragraphEvidence": [
@@ -775,14 +775,14 @@
           "imageSha256": "800f35628c1e029230065cf4ea2378a0b09cf02d2c436d111d79086cb3b87db5"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.549Z",
-      "paragraphReviewSha256": "2e8c1496643f739853cc127ece9a58bd001d5194544add4cd813207a49143bd2"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "7d9257a0cb31e5166d92ee8332842c26c346c2c51c2b8376457a666c4fc6c377"
     },
     "myanmar-flag": {
       "status": "checked-against-catalog",
       "intro": "Myanmar flag illustrations feature yellow green and red bands with a white star in a variety of displays.",
       "sourceSha256": "fb4d9c820e83f69c5845187b5de5c0f3da10eb628ea11ab035159d9077a47aad",
-      "checkedAt": "2026-11-03T16:09:13.240Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "myanmar-flag-clipart-001-wooden-hand-pole",
@@ -798,8 +798,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Myanmar Flag clipart collection, with {{artworkCount}} illustrations to explore. Myanmar flag illustrations feature yellow green and red bands with a white star in a variety of displays.",
-        "The gallery includes “Myanmar Flag on Wooden Pole” and “Myanmar Flag on Gold Stand” among its drawings. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
+        "Myanmar flag illustrations feature yellow green and red bands with a white star in a variety of displays.",
+        "The collection brings together {{artworkCount}} illustrations, including “Myanmar Flag on Wooden Pole” and “Myanmar Flag on Gold Stand”. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
       ],
       "paragraphSourceSha256": "32c598f572c05f9da6e64ce219d92546d7be844896a9555a52877d15c82764d0",
       "paragraphEvidence": [
@@ -812,14 +812,14 @@
           "imageSha256": "7260cea611f3780316e4f660231534e0fc28935f9950c5ba8336ccffc0ccf6d7"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.549Z",
-      "paragraphReviewSha256": "f2c8f7c86b058a810613a10eb5c41c64caa0b40ef23e435e19ab6da6c046ca1d"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "3d23cb953c8e6b794f48b119da9eada5e87da8f46d11d280c32d4940ebcb684d"
     },
     "madagascar-flag": {
       "status": "checked-against-catalog",
       "intro": "Madagascar flag illustrations feature a white panel beside red and green bands in a variety of displays.",
       "sourceSha256": "0f5cf69a9b1656fde91cd153ace073df2171393cb50d50d073409d6aa0346bf9",
-      "checkedAt": "2026-11-03T16:09:13.240Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "madagascar-flag-clipart-001-wooden-hand-pole",
@@ -835,8 +835,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Madagascar Flag clipart collection, with {{artworkCount}} illustrations to explore. Madagascar flag illustrations feature a white panel beside red and green bands in a variety of displays.",
-        "The gallery includes “Madagascar Flag on Wooden Pole” and “Madagascar Flag on a Gold Stand” among its drawings. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
+        "Madagascar flag illustrations feature a white panel beside red and green bands in a variety of displays.",
+        "The collection brings together {{artworkCount}} illustrations, including “Madagascar Flag on Wooden Pole” and “Madagascar Flag on a Gold Stand”. Choose a clear flag view for a geography activity, compare country symbols in a classroom display or add an illustration to a personal travel journal."
       ],
       "paragraphSourceSha256": "4762b1f802e0966e2ae24e900701d20b1be5bf849aff416ef7d96820e3801058",
       "paragraphEvidence": [
@@ -849,8 +849,8 @@
           "imageSha256": "8fa0d33826986346b98f738ea3c8b04cec4bb034bb8829fca842e47f26e08011"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.549Z",
-      "paragraphReviewSha256": "b24548b8b9af00356d949f53e3b01bbfe9d65ab84eab48fe7d21ab03e1e0d53c"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "30b1daeda0ecad64289fdc883dee8b2f2e5a28116cc0ad164084c19c4fe50301"
     }
   }
 }

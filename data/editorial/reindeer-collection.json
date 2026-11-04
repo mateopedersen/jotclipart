@@ -4,8 +4,8 @@
     "reindeer": {
       "status": "checked-against-catalog",
       "sourceSha256": "11688ac7984b84315b731f6af9002e2bbbc743978f52929d857faaf232e83fd1",
-      "intro": "Playful Christmas reindeer with scarves, bells, gifts and winter adventures. Browse distinct cartoon characters, festive lettering and crafted decorations, alongside four natural wildlife illustrations and four independent black-and-white coloring scenes.",
-      "checkedAt": "2026-10-27T07:33:53.703Z",
+      "intro": "Playful Christmas reindeer with scarves, bells, gifts and winter adventures. Browse distinct cartoon characters, festive lettering and crafted decorations, alongside four natural wildlife illustrations and four independent black and white coloring scenes.",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "reindeer-scarf-prance",
@@ -25,10 +25,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Reindeer clipart collection, with {{artworkCount}} illustrations to explore. Playful Christmas reindeer with scarves, bells, gifts and winter adventures. Browse distinct cartoon characters, festive lettering and crafted decorations, alongside four natural wildlife illustrations and four independent black-and-white coloring scenes.",
-        "The gallery includes “Reindeer Prancing in a Knitted Scarf” and “Reindeer with an Empty Star Frame Outline” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+        "Playful Christmas reindeer with scarves, bells, gifts and winter adventures. Browse distinct cartoon characters, festive lettering and crafted decorations, alongside four natural wildlife illustrations and four independent black and white coloring scenes.",
+        "The collection brings together {{artworkCount}} illustrations, including “Reindeer Prancing in a Knitted Scarf” and “Reindeer with an Empty Star Frame Outline”. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
       ],
-      "paragraphSourceSha256": "09ea77cba0cd4e7f5e8de5772168c90ed042d71ebdf756cdcdccd2c16dabe64e",
+      "paragraphSourceSha256": "945779fe10f6b95a4e9007337b79443b4d1585a0be422343ec3d2e39b88edbb0",
       "paragraphEvidence": [
         {
           "id": "reindeer-scarf-prance",
@@ -39,8 +39,8 @@
           "imageSha256": "0b445ba9cc8c72876fa4ab055fdddc5fce787476b243cf12483dfc480539da42"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z",
-      "paragraphReviewSha256": "99bef762b53052025fb2f7dee8981b6e79bb593fa9b2dd8e48ae0f8410838ee3"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "db44ca8410ba2a1f1d07eefe006fdcae7407697c5805b932ec87782dab93ddda"
     }
   }
 }

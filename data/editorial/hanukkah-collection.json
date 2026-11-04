@@ -4,8 +4,8 @@
     "hanukkah": {
       "status": "checked-against-catalog",
       "sourceSha256": "79c3b308ac72ac40d852c0dbc9be35fde5c8588dbdea4da889e0741f5c599a41",
-      "intro": "Hanukkah illustrations of candle lighting, dreidel games, gelt and shared meals, alongside latkes, sufganiyot and craft materials. Explore detailed objects, colorful celebrations and clear black-and-white scenes, with varied people, clothing and compositions.",
-      "checkedAt": "2026-10-26T22:30:39.136Z",
+      "intro": "Hanukkah illustrations of candle lighting, dreidel games, gelt and shared meals, alongside latkes, sufganiyot and craft materials. Explore detailed objects, colorful celebrations and clear black and white scenes, with varied people, clothing and compositions.",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "hanukkah-brass-hanukkiah",
@@ -21,10 +21,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Hanukkah clipart collection, with {{artworkCount}} illustrations to explore. Hanukkah illustrations of candle lighting, dreidel games, gelt and shared meals, alongside latkes, sufganiyot and craft materials. Explore detailed objects, colorful celebrations and clear black-and-white scenes, with varied people, clothing and compositions.",
-        "The gallery includes “Brass Hanukkiah with Nine Unlit Candles” and “Sharing Latkes and Sufganiyot” among its drawings. Choose an illustration for a personal Hanukkah greeting, a family activity or a classroom discussion of the celebration and its traditions."
+        "Hanukkah illustrations of candle lighting, dreidel games, gelt and shared meals, alongside latkes, sufganiyot and craft materials. Explore detailed objects, colorful celebrations and clear black and white scenes, with varied people, clothing and compositions.",
+        "The collection brings together {{artworkCount}} illustrations, including “Brass Hanukkiah with Nine Unlit Candles” and “Sharing Latkes and Sufganiyot”. Choose an illustration for a personal Hanukkah greeting, a family activity or a classroom discussion of the celebration and its traditions."
       ],
-      "paragraphSourceSha256": "25972a6733071e877ba61e3d3ac701084307266e6f8bebbb8bc2aac950c5b2e5",
+      "paragraphSourceSha256": "39c51968b44cdc506db285db76696efd8a02e9fbb085183329a92fad1bd65862",
       "paragraphEvidence": [
         {
           "id": "hanukkah-brass-hanukkiah",
@@ -35,8 +35,8 @@
           "imageSha256": "f0de11cc52e8d299878b7743917d11eded4a24c8b12a580eb118ff208993968d"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.550Z",
-      "paragraphReviewSha256": "e6a0cc0fe8749fc0cbd094749580f9a40625f1f7aa9c09dd3c30a0eb569d8289"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "e5064860dcccca9cf65eb551dfe083075e9867abc70fcb16bec53978809c6d26"
     }
   }
 }

@@ -4,8 +4,8 @@
     "nutcracker": {
       "status": "checked-against-catalog",
       "sourceSha256": "9d0fd57f4793e91cd767048447aea54b60047383782ab3cfbdb9e8c2b9b9bfd0",
-      "intro": "Painted wooden nutcracker figures, ballet-story scenes and practical nut-cracking tools. Browse festive wreaths, ornaments, music boxes and paper crafts, alongside workshop activities and six detailed black-and-white drawings.",
-      "checkedAt": "2026-10-27T02:53:35.505Z",
+      "intro": "Painted wooden nutcracker figures, ballet story scenes and practical nut cracking tools. Browse festive wreaths, ornaments, music boxes and paper crafts, alongside workshop activities and six detailed black and white drawings.",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "nutcracker-crowned-walnut-king",
@@ -25,10 +25,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Nutcracker clipart collection, with {{artworkCount}} illustrations to explore. Painted wooden nutcracker figures, ballet-story scenes and practical nut-cracking tools. Browse festive wreaths, ornaments, music boxes and paper crafts, alongside workshop activities and six detailed black-and-white drawings.",
-        "The gallery includes “Crowned Wooden King Nutcracker” and “Nutcracker and Mouse King Puppet Theater” among its drawings. Choose a focal image for a personal seasonal card, a winter story page or a family craft, leaving room for your own message."
+        "Painted wooden nutcracker figures, ballet story scenes and practical nut cracking tools. Browse festive wreaths, ornaments, music boxes and paper crafts, alongside workshop activities and six detailed black and white drawings.",
+        "The collection brings together {{artworkCount}} illustrations, including “Crowned Wooden King Nutcracker” and “Nutcracker and Mouse King Puppet Theater”. Choose a focal image for a personal seasonal card, a winter story page or a family craft, leaving room for your own message."
       ],
-      "paragraphSourceSha256": "918707bcd7c30ba029503fa3b70b37c361ef03d93eec395d7fa7e464bef79261",
+      "paragraphSourceSha256": "aed0dfeb0537b3b132aed1a573e6457ce1ed4a22b0f828fa22a037aad027f8a6",
       "paragraphEvidence": [
         {
           "id": "nutcracker-crowned-walnut-king",
@@ -39,8 +39,8 @@
           "imageSha256": "e3a2935bbc5983e843ea9e271f6ae7363e977e9bc685b932aecc11e9d7ad0c86"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.550Z",
-      "paragraphReviewSha256": "c3e15542465cca80639926f9ad4c39de0f30cb05721a285af4f179a4ae2e066a"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "5472760c35a548ed67d0455aae34fed798b33bac6eef9872c7ade7e26e0abd14"
     }
   }
 }

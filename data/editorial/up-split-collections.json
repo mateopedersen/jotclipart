@@ -4,8 +4,8 @@
     "up-movie": {
       "status": "checked-against-catalog",
       "sourceSha256": "59e88abba6e08a9630ffbde905b7b6c5275223652605fa5ee917a6312a3a8f1f",
-      "checkedAt": "2026-10-29T09:03:13.464Z",
-      "intro": "Up Movie illustrations include the balloon-lifted house, Kevin, young Ellie and the dog pack. Adventure books, camping gear, flying objects and familiar keepsakes accompany the film characters in color and black-and-white drawings.",
+      "checkedAt": "2026-11-04",
+      "intro": "Up Movie illustrations include the balloon lifted house, Kevin, young Ellie and the dog pack. Adventure books, camping gear, flying objects and familiar keepsakes accompany the film characters in color and black and white drawings.",
       "evidence": [
         {
           "id": "up-adventure-living-room-mantel-clipart",
@@ -21,10 +21,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Up Movie clipart collection, with {{artworkCount}} illustrations to explore. Up Movie illustrations include the balloon-lifted house, Kevin, young Ellie and the dog pack. Adventure books, camping gear, flying objects and familiar keepsakes accompany the film characters in color and black-and-white drawings.",
-        "The gallery includes “Green-Tiled Fireplace and Keepsakes” and “Adventure Route Across an Open Map” among its drawings. Plan a personal creative notebook, a story activity or an entertainment-themed craft, matching the subject and composition to your own idea."
+        "Up Movie illustrations include the balloon lifted house, Kevin, young Ellie and the dog pack. Adventure books, camping gear, flying objects and familiar keepsakes accompany the film characters in color and black and white drawings.",
+        "The collection brings together {{artworkCount}} illustrations, including “Green Tiled Fireplace and Keepsakes” and “Adventure Route Across an Open Map”. Plan a personal creative notebook, a story activity or an entertainment themed craft, matching the subject and composition to your own idea."
       ],
-      "paragraphSourceSha256": "21e595e4299ff4411849aca2bb7896501de2cb434216c35d72c81b608eba70ef",
+      "paragraphSourceSha256": "d4692d77255b285fd56d2c38200189f18bb82a8ef1e2447f252efe1c1f5e4f40",
       "paragraphEvidence": [
         {
           "id": "up-adventure-living-room-mantel-clipart",
@@ -35,14 +35,14 @@
           "imageSha256": "8feea6f0e79a2c557aa7f41db13f6e31a167638ef4145bc574cbeadb56cadb32"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z",
-      "paragraphReviewSha256": "c8ca9f47bd0a6d8e5d65f927d304399981d7ec1fca23c9319785b64b34c5c6ff"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "b56c5e7d5e6c11d5673d84a6c524057613efa50519bfb2faf409560344a9e999"
     },
     "up": {
       "status": "checked-against-catalog",
       "sourceSha256": "75059dc34cfca652b42d4a51646952e88b2f58e689642a98b84e82ee6b028d96",
-      "checkedAt": "2026-10-29T09:36:05.805Z",
-      "intro": "Up arrows, pointing hands and stair-climbing characters show direction and movement. Choose road signs, classroom word cards, rising balloons, upload symbols or black-and-white outlines; the collection also includes a wheelchair ramp, a growing sunflower and an ascending mountain trail.",
+      "checkedAt": "2026-11-04",
+      "intro": "Up arrows, pointing hands and stair climbing characters show direction and movement. Choose road signs, classroom word cards, rising balloons, upload symbols or black and white outlines; the collection also includes a wheelchair ramp, a growing sunflower and an ascending mountain trail.",
       "evidence": [
         {
           "id": "up-direction-upward-direction-road-sign",
@@ -58,10 +58,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Up clipart collection, with {{artworkCount}} illustrations to explore. Up arrows, pointing hands and stair-climbing characters show direction and movement. Choose road signs, classroom word cards, rising balloons, upload symbols or black-and-white outlines; the collection also includes a wheelchair ramp, a growing sunflower and an ascending mountain trail.",
-        "The gallery includes “Blue Upward Arrow Road Sign” and “Wheelchair User Ascending a Ramp” among its drawings. Create a classroom activity, a personal study page or a learning journal, choosing the illustration that supports the idea you want to explain."
+        "Up arrows, pointing hands and stair climbing characters show direction and movement. Choose road signs, classroom word cards, rising balloons, upload symbols or black and white outlines; the collection also includes a wheelchair ramp, a growing sunflower and an ascending mountain trail.",
+        "The collection brings together {{artworkCount}} illustrations, including “Blue Upward Arrow Road Sign” and “Wheelchair User Ascending a Ramp”. Create a classroom activity, a personal study page or a learning journal, choosing the illustration that supports the idea you want to explain."
       ],
-      "paragraphSourceSha256": "169faf07e530a0084d9071fccd1d38ef15e2477db18f2a84e2e58498f44f9d8e",
+      "paragraphSourceSha256": "a1e106ac3c69cc87329626301b4a608c1f342cc1170cd288c5b4b47ef8c65a3c",
       "paragraphEvidence": [
         {
           "id": "up-direction-upward-direction-road-sign",
@@ -72,8 +72,8 @@
           "imageSha256": "a62f50051c95bc825d6961cecbf2ae2811607673bec6f7dcbbf1b81fc20f7964"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z",
-      "paragraphReviewSha256": "37e2d7719a07eca3c840586e63a84cea8c1e9a20b21f1ae1b8e403979b7ede06"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "e54fdfd1cb0241f571d4389950e79ac0a532cd3ffeb9bf926fd4e339bb3b30c3"
     }
   }
 }

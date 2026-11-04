@@ -29,8 +29,8 @@ function fixture(introductions) {
         intro: introductions[item.topic],
         evidence: [{ id: item.id, imageSha256: item.files.webp.sha256 }],
         paragraphs: [
-          `Welcome to this collection of {{artworkCount}} illustrations. ${introductions[item.topic]} Explore the available drawings and compare their subjects before choosing a composition for your own project.`,
-          `The ${item.topic} collection can support a personal journal, a learning activity or a creative composition. Match an individual illustration to the meaning of your own page and leave room for the words you want to add.`,
+          `${introductions[item.topic]} Explore the available drawings and compare their subjects before choosing a composition for your own project.`,
+          `The ${item.topic} collection contains {{artworkCount}} illustrations and can support a personal journal, a learning activity or a creative composition. Match an individual illustration to the meaning of your own page and leave room for the words you want to add.`,
         ],
         paragraphSourceSha256: collectionParagraphSignature([item], introductions[item.topic]),
         paragraphsCheckedAt: '2026-11-03T00:00:00Z',
@@ -45,7 +45,7 @@ function fixture(introductions) {
 
 test('both collection gates reject the Dinner paragraph with a substituted topic name', () => {
   const template = (subject) =>
-    `Family suppers, ${subject}s with friends and Christmas and Thanksgiving tables sit alongside individual meals and Santa enjoying a roast ${subject}. Choose colorful cartoon scenes or black-and-white drawings, with different characters, foods and table settings.`;
+    `Family suppers, ${subject}s with friends and Christmas and Thanksgiving tables sit alongside individual meals and Santa enjoying a roast ${subject}. Choose colorful cartoon scenes or black and white drawings, with different characters, foods and table settings.`;
   const args = fixture({ dinner: template('dinner'), maccabees: template('maccabees') });
   for (const gate of [verifyCollectionEditorial, requiredCollectionIntroductions])
     assert.throws(() => gate(...args), /Topic-name-substituted.*dinner and maccabees/);

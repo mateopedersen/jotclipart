@@ -4,8 +4,8 @@
     "background": {
       "status": "checked-against-catalog",
       "sourceSha256": "4b5c838fce6a5c80f18c5b0f16eb62d7cc081bda8f376cedd43f2f8d427437ee",
-      "checkedAt": "2026-10-29T13:44:49.051Z",
-      "intro": "Explore illustrated landscapes and ready-to-use backdrops, from spring meadows and snowy villages to science, music and seasonal frames.",
+      "checkedAt": "2026-11-04",
+      "intro": "Explore illustrated landscapes and ready to use backdrops, from spring meadows and snowy villages to science, music and seasonal frames.",
       "evidence": [
         {
           "id": "background-spring-meadow",
@@ -21,10 +21,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Background clipart collection, with {{artworkCount}} illustrations to explore. Explore illustrated landscapes and ready-to-use backdrops, from spring meadows and snowy villages to science, music and seasonal frames.",
-        "The gallery includes “Spring Meadow with Daisies” and “Colorful Music Notes on a Lavender Frame” among its drawings. Arrange the artwork around your own text in a personal page layout, an invitation or a classroom display, choosing shapes that frame rather than crowd the main message."
+        "Explore illustrated landscapes and ready to use backdrops, from spring meadows and snowy villages to science, music and seasonal frames.",
+        "The collection brings together {{artworkCount}} illustrations, including “Spring Meadow with Daisies” and “Colorful Music Notes on a Lavender Frame”. Arrange the artwork around your own text in a personal page layout, an invitation or a classroom display, choosing shapes that frame rather than crowd the main message."
       ],
-      "paragraphSourceSha256": "4ff2d5c95a2f2c3b83b62d9472861b486c0fdb6f180051ed7f29a10a0ad37245",
+      "paragraphSourceSha256": "44982bc50950e5458692992c81aecace308e73e13850aeec99871ae77fa3d531",
       "paragraphEvidence": [
         {
           "id": "background-spring-meadow",
@@ -35,13 +35,13 @@
           "imageSha256": "8d112ab1516751a742487047031305249152e39488cc31814430a80ad4d7a6b0"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.529Z",
-      "paragraphReviewSha256": "d0ba80cfd12aa753b6fda94976d22d957acfd173aec0c8013a904cacbcdf0263"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "dda93c1cd6c416db132237f474d66e93ee6e2826b05c09ec2ffb08b0bfc2c94a"
     },
     "border": {
       "status": "checked-against-catalog",
       "sourceSha256": "63b37a527efa0118179985dc8f66302668f05079ddac55f0549376af51519754",
-      "checkedAt": "2026-10-29T13:44:49.340Z",
+      "checkedAt": "2026-11-04",
       "intro": "Choose open frames, decorative corners and illustrated edges, including botanical, geometric, classroom and seasonal designs.",
       "evidence": [
         {
@@ -58,8 +58,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Border clipart collection, with {{artworkCount}} illustrations to explore. Choose open frames, decorative corners and illustrated edges, including botanical, geometric, classroom and seasonal designs.",
-        "The gallery includes “Black and Gold Art Deco Frame” and “Soccer Ball and Goal Net Corner” among its drawings. Arrange the artwork around your own text in a personal page layout, an invitation or a classroom display, choosing shapes that frame rather than crowd the main message."
+        "Choose open frames, decorative corners and illustrated edges, including botanical, geometric, classroom and seasonal designs.",
+        "The collection brings together {{artworkCount}} illustrations, including “Black and Gold Art Deco Frame” and “Soccer Ball and Goal Net Corner”. Arrange the artwork around your own text in a personal page layout, an invitation or a classroom display, choosing shapes that frame rather than crowd the main message."
       ],
       "paragraphSourceSha256": "e3fec49b3f0a24ae04a850c171fbc556378ae3a47ee56ce9d699fd109c369bb7",
       "paragraphEvidence": [
@@ -72,13 +72,13 @@
           "imageSha256": "75098c5c30bb5391a825b5c22fea0311f5e122a379a36c38ad46d0a65a527359"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.529Z",
-      "paragraphReviewSha256": "615ceef55d7b00365a4c79e14eb48bece245177398d9523483305e5dff2e47bb"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "69d3add0d5513ad78f4299d07cfb5ce86553a20f24a15b2dffc15778baf277b7"
     },
     "zoo": {
       "status": "checked-against-catalog",
       "sourceSha256": "06baf7ec4e830bb2d1a427b506fa87847d2de434aad078c6075235b23c58a6dc",
-      "checkedAt": "2026-10-29T13:44:49.655Z",
+      "checkedAt": "2026-11-04",
       "intro": "Explore zoo visits through animal viewing, family outings, entrance signs and printable line drawings of visitor activities.",
       "evidence": [
         {
@@ -95,8 +95,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Zoo clipart collection, with {{artworkCount}} illustrations to explore. Explore zoo visits through animal viewing, family outings, entrance signs and printable line drawings of visitor activities.",
-        "The gallery includes “Family Walking Through a Zoo Entrance” and “Lantern Tour Beside an Owl Enclosure” among its drawings. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
+        "Explore zoo visits through animal viewing, family outings, entrance signs and printable line drawings of visitor activities.",
+        "The collection brings together {{artworkCount}} illustrations, including “Family Walking Through a Zoo Entrance” and “Lantern Tour Beside an Owl Enclosure”. Choose an image for an animal study, a nature journal or a personal story page, comparing the poses and surrounding details before you settle on a design."
       ],
       "paragraphSourceSha256": "a1d3233a23c2dc61bdab77758786b39a0d5feb01b343dcffb43c462ea8a832ff",
       "paragraphEvidence": [
@@ -109,8 +109,8 @@
           "imageSha256": "094047e4fadb47387147770baccda737bfbfeb9616f0df8c75e99710c016422b"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.529Z",
-      "paragraphReviewSha256": "6422cc244b4ec050e33b89a4279f35d9477ce8b7fec562e415bb3e4017580dbd"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "b77c2be9e51c614288279d2676193fb71c4f1e913e2d1894dfcc9af28dfbea4a"
     }
   }
 }

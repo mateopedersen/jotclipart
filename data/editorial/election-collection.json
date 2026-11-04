@@ -4,8 +4,8 @@
     "election": {
       "status": "checked-against-catalog",
       "sourceSha256": "295788458e0ef6ecfc75d17f1a8d238accfd465282cebca5b0ea6996e3be939e",
-      "intro": "Election Day lettering, I Voted stickers, voter-information scenes and portable polling-place equipment. Explore clear object still lifes, varied adult community scenes and classroom practice activities, alongside detailed black-and-white illustrations.",
-      "checkedAt": "2026-10-27T01:30:09.815Z",
+      "intro": "Election Day lettering, I Voted stickers, voter information scenes and portable polling place equipment. Explore clear object still lifes, varied adult community scenes and classroom practice activities, alongside detailed black and white illustrations.",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "election-day-paper-lettering",
@@ -25,10 +25,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Election clipart collection, with {{artworkCount}} illustrations to explore. Election Day lettering, I Voted stickers, voter-information scenes and portable polling-place equipment. Explore clear object still lifes, varied adult community scenes and classroom practice activities, alongside detailed black-and-white illustrations.",
-        "The gallery includes “Election Day Paper Lettering” and “A Classroom Mock Election” among its drawings. Use the drawings in a civics discussion, a personal commentary project or an illustrated comparison, keeping imagined scenes distinct from real events."
+        "Election Day lettering, I Voted stickers, voter information scenes and portable polling place equipment. Explore clear object still lifes, varied adult community scenes and classroom practice activities, alongside detailed black and white illustrations.",
+        "The collection brings together {{artworkCount}} illustrations, including “Election Day Paper Lettering” and “A Classroom Mock Election”. Use the drawings in a civics discussion, a personal commentary project or an illustrated comparison, keeping imagined scenes distinct from real events."
       ],
-      "paragraphSourceSha256": "120b4556055ba8b85cc4c3a5121f50a8115520480e1f31fe090f6aa6c9221b8e",
+      "paragraphSourceSha256": "f89e7e049ace8f668876b53dff73b1b2345c7a612dccf90a048391c59819fe9c",
       "paragraphEvidence": [
         {
           "id": "election-day-paper-lettering",
@@ -39,8 +39,8 @@
           "imageSha256": "eadc8a5aa96ae6fae9061276be02389bb9425dd9c198472ac1227fb330f665f3"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.543Z",
-      "paragraphReviewSha256": "834218da785ee4679f76e816134d6e7ac98519fb36e1bf700b71368b25a6e39b"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "bb5f914ecd355440ee7a2da1442471f0f61629c711d71daad26e0db38354aba8"
     }
   }
 }
