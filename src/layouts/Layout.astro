@@ -1,4 +1,5 @@
 ---
+import '../styles/original-image-loading.css';
 import '../styles/global.css';
 import '../styles/select-controls.css';
 import DownloadPanel from '../components/DownloadPanel.astro';
@@ -495,6 +496,8 @@ const releaseRevision = /^[a-f0-9]{40}$/.test(import.meta.env.PUBLIC_RELEASE_REV
       import '../scripts/downloads';
       import { initSearchSuggestions } from '../scripts/search-suggestions';
       import { initImageInformation } from '../scripts/image-information';
+      import { initOriginalImageLoading } from '../scripts/original-image-loading';
+      initOriginalImageLoading();
       initSearchSuggestions();
       initImageInformation();
     </script>

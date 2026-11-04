@@ -1,0 +1,17 @@
+.art-picture { position: relative; }
+.art-picture > img[data-original-image-state='error'] { opacity: 0; }
+.original-image-status {
+  position: absolute;
+  inset: auto 8px 10px;
+  z-index: 1;
+  padding: 8px 10px;
+  border: 1px solid #cbdcf2;
+  border-radius: 9px;
+  background: #f2f7ff;
+  color: #234d7c;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  pointer-events: none;
+}
