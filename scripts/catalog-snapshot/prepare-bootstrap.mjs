@@ -130,9 +130,16 @@ const bucket = {
           key,
         )?.[1];
     if (!facet) throw Error('Scoped metadata only');
-    const d = put(facet, JSON.parse(bytes));
-    assert.equal(d.key, key);
-    return { etag: d.sha256 };
+    JSON.parse(bytes);
+    const hash = sha(bytes);
+    assert.equal(key, `catalog/objects/${facet}/${hash}.json`);
+    assert(bytes.length > 0 && bytes.length <= 1048576);
+    if (!files.has(key)) {
+      const file = join(out, 'objects', facet + '_' + hash + '.json');
+      writeFileSync(file, bytes, { flag: 'wx' });
+      files.set(key, { key, file, sha256: hash, bytes: bytes.length, mime: 'application/json' });
+    } else assert(bytesFor(key).equals(bytes));
+    return { etag: hash };
   },
 };
 const oldSearch = get(fixture.indexes.search),
