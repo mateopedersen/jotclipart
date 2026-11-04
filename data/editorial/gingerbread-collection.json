@@ -4,8 +4,8 @@
     "gingerbread": {
       "status": "checked-against-catalog",
       "sourceSha256": "158bd27a0f189bdab41f7d9aa6ca87c23ca630e3e91870d58e8ae08b80b556e6",
-      "intro": "Cheerful gingerbread characters, iced animal cookies and fanciful biscuit buildings. Explore distinct cookie faces and outfits, decorating scenes, festive objects, a seasonal greeting and four independent black-and-white coloring compositions.",
-      "checkedAt": "2026-10-27T10:23:28.533Z",
+      "intro": "Cheerful gingerbread characters, iced animal cookies and fanciful biscuit buildings. Explore distinct cookie faces and outfits, decorating scenes, festive objects, a seasonal greeting and four independent black and white coloring compositions.",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "gingerbread-candy-cane-walk",
@@ -25,10 +25,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Gingerbread clipart collection, with {{artworkCount}} illustrations to explore. Cheerful gingerbread characters, iced animal cookies and fanciful biscuit buildings. Explore distinct cookie faces and outfits, decorating scenes, festive objects, a seasonal greeting and four independent black-and-white coloring compositions.",
-        "The gallery includes “Gingerbread Walker with a Candy Cane” and “Gingerbread Pair Holding a Blank Banner Outline” among its drawings. Illustrate a personal recipe page, a food vocabulary activity or a kitchen journal, selecting a view that makes your chosen ingredient or dish easy to recognize."
+        "Cheerful gingerbread characters, iced animal cookies and fanciful biscuit buildings. Explore distinct cookie faces and outfits, decorating scenes, festive objects, a seasonal greeting and four independent black and white coloring compositions.",
+        "The collection brings together {{artworkCount}} illustrations, including “Gingerbread Walker with a Candy Cane” and “Gingerbread Pair Holding a Blank Banner Outline”. Illustrate a personal recipe page, a food vocabulary activity or a kitchen journal, selecting a view that makes your chosen ingredient or dish easy to recognize."
       ],
-      "paragraphSourceSha256": "4fc1902dff3187523268370184a536cb9a14c1eace7efa1af7a700bf9e6a36fa",
+      "paragraphSourceSha256": "f3ce62fb5629488fc0d86e3a6a81f5d4c0f465e514a1a58e5cce434ab069f404",
       "paragraphEvidence": [
         {
           "id": "gingerbread-candy-cane-walk",
@@ -39,8 +39,8 @@
           "imageSha256": "5a8212eb770325f1fe1717be7cc63ae6075a3b16a3620b30759cf218d52e6b6c"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.549Z",
-      "paragraphReviewSha256": "3e3032136de669182d152d0a7609844ecf7043bdc7c74be811a08cf4b579d02c"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "9c1f513cec8a6c78a990ec56a3ddba3166932b19a890933ec0ad3f25ed28f564"
     }
   }
 }

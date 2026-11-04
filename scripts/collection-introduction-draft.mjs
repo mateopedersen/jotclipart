@@ -8,6 +8,7 @@ import {
   readCollectionRegistries,
   collectionParagraphSignature,
   summarySupportsNumberLearning,
+  normalizeCollectionProse,
 } from './collection-editorial.mjs';
 
 // Reviewed topic-specific drafting hints; these do not create an approval.
@@ -158,8 +159,7 @@ export function draftCollectionParagraphs(topic, items, record) {
     return distance(b) - distance(a) || a.id.localeCompare(b.id);
   });
   const selected = [first, ...rest.slice(0, 1)];
-  const name = topic.keyword.replace(/\s+clipart\s*$/i, '').trim();
-  const intro = record.intro.replace(/\s+/g, ' ').trim();
+  const intro = normalizeCollectionProse(record.intro);
   const examples = selected.map((item) => `“${item.title}”`).join(' and ');
   const use =
     (Object.hasOwn(reviewedUseHints, topic.slug) ? reviewedUseHints[topic.slug] : undefined) ??
@@ -172,8 +172,8 @@ export function draftCollectionParagraphs(topic, items, record) {
   return {
     status: 'draft-for-catalog-review',
     paragraphs: [
-      `Welcome to our ${name} clipart collection, with {{artworkCount}} illustrations to explore. ${intro}`,
-      `The gallery includes ${examples} among its drawings. ${use}`,
+      intro,
+      normalizeCollectionProse(`The collection brings together {{artworkCount}} illustrations, including ${examples}. ${use}`),
     ],
     evidence: selected.map((item) => ({ id: item.id, imageSha256: item.files.webp.sha256 })),
     draftSha256: createHash('sha256')

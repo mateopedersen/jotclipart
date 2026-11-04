@@ -4,8 +4,8 @@
     "2027": {
       "status": "checked-against-catalog",
       "sourceSha256": "a9ab4a4c3d3d670debf2c68e32e44c7202e23f75a6b435d5707560a8afdf99e5",
-      "intro": "Find 2027 lettering for New Year greetings, all twelve months, graduation and personal goals. Choose embossed numerals, formal Class of 2027 graphics, cheerful character stickers, business motifs or separate black-and-white coloring designs.",
-      "checkedAt": "2026-10-27T15:46:42.193Z",
+      "intro": "Find 2027 lettering for New Year greetings, all twelve months, graduation and personal goals. Choose embossed numerals, formal Class of 2027 graphics, cheerful character stickers, business motifs or separate black and white coloring designs.",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "2027-month-march",
@@ -25,10 +25,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our 2027 clipart collection, with {{artworkCount}} illustrations to explore. Find 2027 lettering for New Year greetings, all twelve months, graduation and personal goals. Choose embossed numerals, formal Class of 2027 graphics, cheerful character stickers, business motifs or separate black-and-white coloring designs.",
-        "The gallery includes “March 2027 Kite Lettering” and “Happy New Year 2027 Patchwork Coloring” among its drawings. Plan a 2027 calendar cover, a personal graduation keepsake or a New Year greeting, selecting the month, year or celebratory wording that matches your occasion."
+        "Find 2027 lettering for New Year greetings, all twelve months, graduation and personal goals. Choose embossed numerals, formal Class of 2027 graphics, cheerful character stickers, business motifs or separate black and white coloring designs.",
+        "The collection brings together {{artworkCount}} illustrations, including “March 2027 Kite Lettering” and “Happy New Year 2027 Patchwork Coloring”. Plan a 2027 calendar cover, a personal graduation keepsake or a New Year greeting, selecting the month, year or celebratory wording that matches your occasion."
       ],
-      "paragraphSourceSha256": "a04a565a3935d569a236cd74d873975849b261a726d5a20a32e1f5e6f3546cd5",
+      "paragraphSourceSha256": "0e9bec9a901ea41c25b3e0ba6dbe57de000a7d25dfa0fdfca4bb9b4f51ea1f0f",
       "paragraphEvidence": [
         {
           "id": "2027-month-march",
@@ -39,8 +39,8 @@
           "imageSha256": "57e0d860f4c22c29c709ab47f28cb1f760e7de8f61e06f1589da0f41afd649dc"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-04T01:09:32.121Z",
-      "paragraphReviewSha256": "2a1094f2c0a72de12c92829cdac7680cb9b7f655c07a6535c4063d25d6ae623c"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "1c54a57a9c8adb83653499326af2acf5adac2dd23d664f7529e97cd8b8ff0ede"
     }
   }
 }

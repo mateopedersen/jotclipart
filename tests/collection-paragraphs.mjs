@@ -127,8 +127,8 @@ test('numeric-looking non-number topics and fungi cannot inherit contradictory l
 
 test('drafts use reviewed subject meaning rather than a numeric slug and still require review', () => {
   for (const [slug, expected] of [
-    ['007', /spy-story/],
-    ['911', /emergency-services/],
+    ['007', /spy story/],
+    ['911', /emergency services/],
     ['mushroom', /fungi observation/],
     ['unicorn', /fantasy story/],
   ]) {

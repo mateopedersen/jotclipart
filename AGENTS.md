@@ -1,3 +1,14 @@
+# Collection opening style — latest owner direction, 2026-11-04
+
+Lead each collection introduction with a specific feature of its accepted topic;
+never reuse a “Welcome to our … collection, with … illustrations” opening.
+Keep the automatic count in the inventory paragraph and enforce distinct opening
+sentences beyond topic-name substitution. Remove hyphens and dash punctuation
+from introduction prose, preserving numerical ranges in words and stable IDs,
+URLs, originals, checksums and reviewed product identity. These rules apply to
+future imports too; a drafting helper does not approve unseen artwork. See
+`docs/content/collection-introductions.md` and `verifyCollectionOpenings`.
+
 # Collection introductions — latest owner direction, 2026-11-03
 
 All current and future UltraClipart subject pages need two or three short,

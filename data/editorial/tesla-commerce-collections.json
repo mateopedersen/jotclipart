@@ -4,8 +4,8 @@
     "cybercab": {
       "status": "checked-against-catalog",
       "sourceSha256": "7c2250888ffefec7b9c9c036818243196f2792cbf8526607379f5bee0377236f",
-      "intro": "Gold-bodied Cybercab illustrations cover passenger journeys, open-door views, cabin details and display scenes. Mechanical studies and alternative configurations are labeled as concepts; they do not document production equipment or verified vehicle features.",
-      "checkedAt": "2026-10-27T04:38:04.096Z",
+      "intro": "Gold bodied Cybercab illustrations cover passenger journeys, open door views, cabin details and display scenes. Mechanical studies and alternative configurations are labeled as concepts; they do not document production equipment or verified vehicle features.",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "tesla-cybercab-automatic-wash-arch",
@@ -21,10 +21,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Tesla Cybercab clipart collection, with {{artworkCount}} illustrations to explore. Gold-bodied Cybercab illustrations cover passenger journeys, open-door views, cabin details and display scenes. Mechanical studies and alternative configurations are labeled as concepts; they do not document production equipment or verified vehicle features.",
-        "The gallery includes “Cybercab in a Brush Car Wash” and “Cybercab on a Red-Draped Display” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+        "Gold bodied Cybercab illustrations cover passenger journeys, open door views, cabin details and display scenes. Mechanical studies and alternative configurations are labeled as concepts; they do not document production equipment or verified vehicle features.",
+        "The collection brings together {{artworkCount}} illustrations, including “Cybercab in a Brush Car Wash” and “Cybercab on a Red Draped Display”. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
       ],
-      "paragraphSourceSha256": "3f607617133eca60dbf8a287aef03ecb7a6a6fccb5039046b34789aeca229b70",
+      "paragraphSourceSha256": "1a9e6e2d11879665f75230f1df9d1fcd2a06881f9f9f4bb60b99b96e8a40a417",
       "paragraphEvidence": [
         {
           "id": "tesla-cybercab-automatic-wash-arch",
@@ -35,14 +35,14 @@
           "imageSha256": "e83da2575251ecb69bac9919e526a4bc7ab5c509dca03443f0a2f1a9747ddc9c"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z",
-      "paragraphReviewSha256": "6d7167cf19ff1f39062623dc7623b91a9411417874949731a5adb4d632720a83"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "590ff9664f6c0c5fe85064d9d21c034698c6fc67a7441170c4007234bcff390b"
     },
     "robotaxi": {
       "status": "checked-against-catalog",
       "sourceSha256": "771d1da9b3705aa3f6dede72c64f8c33f43d2b9bae5fe21e6952b50822f71d04",
-      "intro": "These robotaxi scenes follow passengers through pickups, luggage loading and everyday journeys. Choose among airport arrivals, station stops, cabin cutaways and neighborhood encounters, with different vehicle shapes and both color and black-and-white compositions.",
-      "checkedAt": "2026-10-27T04:38:04.096Z",
+      "intro": "These robotaxi scenes follow passengers through pickups, luggage loading and everyday journeys. Choose among airport arrivals, station stops, cabin cutaways and neighborhood encounters, with different vehicle shapes and both color and black and white compositions.",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "robotaxi-airport-traveler-watercolor-clipart",
@@ -58,10 +58,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Robotaxi clipart collection, with {{artworkCount}} illustrations to explore. These robotaxi scenes follow passengers through pickups, luggage loading and everyday journeys. Choose among airport arrivals, station stops, cabin cutaways and neighborhood encounters, with different vehicle shapes and both color and black-and-white compositions.",
-        "The gallery includes “Robotaxi Traveler with a Teal Suitcase” and “Robotaxi Child-Seat Concept” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+        "These robotaxi scenes follow passengers through pickups, luggage loading and everyday journeys. Choose among airport arrivals, station stops, cabin cutaways and neighborhood encounters, with different vehicle shapes and both color and black and white compositions.",
+        "The collection brings together {{artworkCount}} illustrations, including “Robotaxi Traveler with a Teal Suitcase” and “Robotaxi Child Seat Concept”. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
       ],
-      "paragraphSourceSha256": "dcf60a95c56493d190728b32cb38840f7ca905b5dd49e1ba6dc4f4ccfcfffaf5",
+      "paragraphSourceSha256": "aff2094515f9acd00f8d20cee8b22bfbb1967296ea8b8c73f66953da2c0fc7dd",
       "paragraphEvidence": [
         {
           "id": "robotaxi-airport-traveler-watercolor-clipart",
@@ -72,14 +72,14 @@
           "imageSha256": "2e8ca5f9bd8679501f12457ea6c867570a03a61b0f1f10d71f92997a430f3bf6"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z",
-      "paragraphReviewSha256": "5603d69256282cde2a28eacaeaaa74bbe6df9a467fca11391570133cbd254d15"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "5c4674da806fc28e787e1ae96f8094bee134bb34979a1bafd4de5eda5713ff27"
     },
     "autonomous-taxi": {
       "status": "checked-against-catalog",
       "sourceSha256": "94c2721d6d673e2898821ed92ffea63054db8a89bf3a88c125ba774ec5cea7c0",
-      "intro": "Explore illustrated autonomous-taxi concepts through sensor arrays, charging stops, service work and road situations. Sensing rings, exploded parts and projected routes are visual explanations within the drawings, rather than verified specifications for a named vehicle.",
-      "checkedAt": "2026-10-27T04:38:04.096Z",
+      "intro": "Explore illustrated autonomous taxi concepts through sensor arrays, charging stops, service work and road situations. Sensing rings, exploded parts and projected routes are visual explanations within the drawings, rather than verified specifications for a named vehicle.",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "autonomous-taxi-battery-cooling-cutaway-clipart",
@@ -95,10 +95,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Autonomous Taxi clipart collection, with {{artworkCount}} illustrations to explore. Explore illustrated autonomous-taxi concepts through sensor arrays, charging stops, service work and road situations. Sensing rings, exploded parts and projected routes are visual explanations within the drawings, rather than verified specifications for a named vehicle.",
-        "The gallery includes “Electric Taxi Battery Cutaway Concept” and “Autonomous Taxi Beside a Bus Lane” among its drawings. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
+        "Explore illustrated autonomous taxi concepts through sensor arrays, charging stops, service work and road situations. Sensing rings, exploded parts and projected routes are visual explanations within the drawings, rather than verified specifications for a named vehicle.",
+        "The collection brings together {{artworkCount}} illustrations, including “Electric Taxi Battery Cutaway Concept” and “Autonomous Taxi Beside a Bus Lane”. Build a personal vehicle notebook, a transport activity or an automotive mood board, comparing the pictured shapes and viewpoints without treating illustrations as technical specifications."
       ],
-      "paragraphSourceSha256": "b2701c5be9892dec40185f54b1c0fa965dfb8baf293a240cb6851cc69e3aff32",
+      "paragraphSourceSha256": "6c8cedfb20e25f8d44db97261bc7a82e1dd8d778b0a75e2131c138d279e08525",
       "paragraphEvidence": [
         {
           "id": "autonomous-taxi-battery-cooling-cutaway-clipart",
@@ -109,14 +109,14 @@
           "imageSha256": "94082d86ada79dd15a9f6c840f09decf4a95b72d7e99163a45bb4e3809c7e005"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z",
-      "paragraphReviewSha256": "e3a58c0713fb444c1fa7f5298efc4f23e7be7916a59a3ee074a1c46d208d9687"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "e3f9818312452281de1bc3d2c6712d86aaeb583b26969d7cf1d3d1e4b324bd0f"
     },
     "tesla-optimus": {
       "status": "checked-against-catalog",
       "sourceSha256": "07070689f3cdc0fc0fbe3be39e3746c5b5f5cfff629cf3bf39887fcdc3857fea",
-      "intro": "Optimus-inspired illustrations pair a black visor and pale articulated body with workshop tools, musical instruments, gardening and household scenes. These imagined activities are illustration subjects, not demonstrations of verified robot capabilities; no specific Optimus generation is assigned.",
-      "checkedAt": "2026-10-27T04:38:04.096Z",
+      "intro": "Optimus inspired illustrations pair a black visor and pale articulated body with workshop tools, musical instruments, gardening and household scenes. These imagined activities are illustration subjects, not demonstrations of verified robot capabilities; no specific Optimus generation is assigned.",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "tesla-optimus-clipart-01-optical-part-inspection",
@@ -132,10 +132,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Tesla Optimus clipart collection, with {{artworkCount}} illustrations to explore. Optimus-inspired illustrations pair a black visor and pale articulated body with workshop tools, musical instruments, gardening and household scenes. These imagined activities are illustration subjects, not demonstrations of verified robot capabilities; no specific Optimus generation is assigned.",
-        "The gallery includes “Optimus Inspecting a Small Part” and “Optimus Sorting Battery Cells” among its drawings. Use the illustrations in a digital literacy activity, a personal technology notebook or a device-themed layout, selecting the pictured equipment that fits your subject."
+        "Optimus inspired illustrations pair a black visor and pale articulated body with workshop tools, musical instruments, gardening and household scenes. These imagined activities are illustration subjects, not demonstrations of verified robot capabilities; no specific Optimus generation is assigned.",
+        "The collection brings together {{artworkCount}} illustrations, including “Optimus Inspecting a Small Part” and “Optimus Sorting Battery Cells”. Use the illustrations in a digital literacy activity, a personal technology notebook or a device themed layout, selecting the pictured equipment that fits your subject."
       ],
-      "paragraphSourceSha256": "6f377d530fc202cb49c143fb74f98225c4547764b7d4b923e6a3babe4388c466",
+      "paragraphSourceSha256": "232c9c0d5cabe21119113c3a5d87d0121f92929536bf3503d983c39f5572ee48",
       "paragraphEvidence": [
         {
           "id": "tesla-optimus-clipart-01-optical-part-inspection",
@@ -146,14 +146,14 @@
           "imageSha256": "fc12843ae9d71029b74c71bdeadca44f3dc11459fe5e8649054e843fc5187aaa"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z",
-      "paragraphReviewSha256": "7548e4231edced8ee402d22c9f7ec6f368bcaeaa1c1bbbb8cca49a200f340f97"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "81c776addd13bfc18a36caa2c7f476e39cb7a37e3ce42fbd16f1469c397062fa"
     },
     "robot-hand": {
       "status": "checked-against-catalog",
       "sourceSha256": "dc9b0c2d154783706503495046281fbf2bff92fd5e78a3c7fc3fb60862123e05",
-      "intro": "Articulated robot hands grip fragile objects, thread a needle, turn a key and work with small tools. Close views emphasize finger joints, contact points and the objects being handled, ranging from decorative metal finishes to detailed black-and-white studies.",
-      "checkedAt": "2026-10-27T04:38:04.096Z",
+      "intro": "Articulated robot hands grip fragile objects, thread a needle, turn a key and work with small tools. Close views emphasize finger joints, contact points and the objects being handled, ranging from decorative metal finishes to detailed black and white studies.",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "robot-hand-clipart-01-delicate-egg-grip",
@@ -169,10 +169,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Robot Hand clipart collection, with {{artworkCount}} illustrations to explore. Articulated robot hands grip fragile objects, thread a needle, turn a key and work with small tools. Close views emphasize finger joints, contact points and the objects being handled, ranging from decorative metal finishes to detailed black-and-white studies.",
-        "The gallery includes “Robotic Hand Holding an Egg” and “Robotic Hands Threading a Needle” among its drawings. Use the illustrations in a digital literacy activity, a personal technology notebook or a device-themed layout, selecting the pictured equipment that fits your subject."
+        "Articulated robot hands grip fragile objects, thread a needle, turn a key and work with small tools. Close views emphasize finger joints, contact points and the objects being handled, ranging from decorative metal finishes to detailed black and white studies.",
+        "The collection brings together {{artworkCount}} illustrations, including “Robotic Hand Holding an Egg” and “Robotic Hands Threading a Needle”. Use the illustrations in a digital literacy activity, a personal technology notebook or a device themed layout, selecting the pictured equipment that fits your subject."
       ],
-      "paragraphSourceSha256": "d05f208381404aa3a60dcce5150971acc60736a109f54eb034dba98ff70ceb0a",
+      "paragraphSourceSha256": "8d174ffff2a22b0ba306c0ccc7a4781ab5806286a44b383799582ebb4fb57edb",
       "paragraphEvidence": [
         {
           "id": "robot-hand-clipart-01-delicate-egg-grip",
@@ -183,14 +183,14 @@
           "imageSha256": "3f056403cfb15b71fb42bb404165b90fbec50945bad97f8f8a1e9f381bf59076"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z",
-      "paragraphReviewSha256": "cb439b5d9ddeb32bd465d8778c094d425114905b2af02f1fde0452abf8255280"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "e6e0df6cd2c9ad2b6700f4aaef8b36dd63afb1a9371e3e79604c699598edfef6"
     },
     "black-friday": {
       "status": "checked-against-catalog",
       "sourceSha256": "e1ea2d68ba34b6fdadb039301f04a76ac323100eafb41e076fef81fbac2e0a6f",
       "intro": "Black Friday storefronts, shoppers and product displays sit alongside standalone sale lettering and percentage tags. Browse fabric rolls, luggage, jewelry, tools and other retail scenes, or choose a typographic sign without a shopping scene.",
-      "checkedAt": "2026-10-27T04:38:04.096Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "black-friday-01-velvet-shopping-bag-burst",
@@ -206,8 +206,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Black Friday clipart collection, with {{artworkCount}} illustrations to explore. Black Friday storefronts, shoppers and product displays sit alongside standalone sale lettering and percentage tags. Browse fabric rolls, luggage, jewelry, tools and other retail scenes, or choose a typographic sign without a shopping scene.",
-        "The gallery includes “Black Shopping Bag with Red Ribbons” and “Shopper at an Opening Storefront” among its drawings. Use the drawings in a financial literacy activity, a personal planning page or an illustrated discussion; the artwork supplies visual context for your own explanation."
+        "Black Friday storefronts, shoppers and product displays sit alongside standalone sale lettering and percentage tags. Browse fabric rolls, luggage, jewelry, tools and other retail scenes, or choose a typographic sign without a shopping scene.",
+        "The collection brings together {{artworkCount}} illustrations, including “Black Shopping Bag with Red Ribbons” and “Shopper at an Opening Storefront”. Use the drawings in a financial literacy activity, a personal planning page or an illustrated discussion; the artwork supplies visual context for your own explanation."
       ],
       "paragraphSourceSha256": "1cc63db777144b6b9ecab4b9cc6291793c4ce2b3b911a0b169f05be7fbe33bcb",
       "paragraphEvidence": [
@@ -220,14 +220,14 @@
           "imageSha256": "8db8c421c8ac50526f48c6084e979251b334552c1514e7620d1ce1d6c0221a45"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z",
-      "paragraphReviewSha256": "b154119ccce7454d14e1869f6aca8cf0872e70ecacd66ede6eee8dbf3f0d4b9a"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "2827df62313e9a1d56bd4d7d0807410dbc074f66ad7efde3a572a92b0d44a565"
     },
     "cyber-monday": {
       "status": "checked-against-catalog",
       "sourceSha256": "1fc483bc41961caa0bc581127dbb011dc90dbe351a3b01db9cc91bd27c4b9ac9",
-      "intro": "Cyber Monday illustrations focus on electronics, unboxing and home technology, including microphones, projectors, routers and drawing tablets. Separate neon-style signs, keycaps, shopping bags and metallic lettering offer simpler headline compositions.",
-      "checkedAt": "2026-10-27T04:38:04.096Z",
+      "intro": "Cyber Monday illustrations focus on electronics, unboxing and home technology, including microphones, projectors, routers and drawing tablets. Separate neon style signs, keycaps, shopping bags and metallic lettering offer simpler headline compositions.",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "cyber-monday-09-podcast-microphone-unboxing",
@@ -243,10 +243,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Cyber Monday clipart collection, with {{artworkCount}} illustrations to explore. Cyber Monday illustrations focus on electronics, unboxing and home technology, including microphones, projectors, routers and drawing tablets. Separate neon-style signs, keycaps, shopping bags and metallic lettering offer simpler headline compositions.",
-        "The gallery includes “Unboxing a Podcast Microphone” and “Portable Drive with a Cable Bow” among its drawings. Use the drawings in a financial literacy activity, a personal planning page or an illustrated discussion; the artwork supplies visual context for your own explanation."
+        "Cyber Monday illustrations focus on electronics, unboxing and home technology, including microphones, projectors, routers and drawing tablets. Separate neon style signs, keycaps, shopping bags and metallic lettering offer simpler headline compositions.",
+        "The collection brings together {{artworkCount}} illustrations, including “Unboxing a Podcast Microphone” and “Portable Drive with a Cable Bow”. Use the drawings in a financial literacy activity, a personal planning page or an illustrated discussion; the artwork supplies visual context for your own explanation."
       ],
-      "paragraphSourceSha256": "478adbcedea1982cec28111caea75b926318c9d20ebeeb42bd98e3f46ef2c581",
+      "paragraphSourceSha256": "aad7884deaa5ea7f63edbfff01fa23061df30d430b79bcc5f0791d4857187773",
       "paragraphEvidence": [
         {
           "id": "cyber-monday-09-podcast-microphone-unboxing",
@@ -257,14 +257,14 @@
           "imageSha256": "10981e25d5137ae0ec3cffc1380cb9052f35356b480774c080745b32c3c9387d"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z",
-      "paragraphReviewSha256": "02894fe3b79d0ffed76821f1b1e0b08d2058c3e446b15a43caf979248ff4cfc3"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "d701bfd6d48540c8bd000f6794daaaef10817ead1f77701d63da6f83a0a2ca7c"
     },
     "online-sale": {
       "status": "checked-against-catalog",
       "sourceSha256": "1e342cdd4f2b7cdc118e76fd89c51e89dea237219feaf00dd086d3e0212566e0",
-      "intro": "Online-sale symbols turn coupons, price comparisons, rewards and refunds into distinct illustrated objects. The collection includes phone-based offers, percentage flowers, a savings abacus and playful metaphors such as a discount compass and a frozen price tag.",
-      "checkedAt": "2026-10-27T04:38:04.096Z",
+      "intro": "Online sale symbols turn coupons, price comparisons, rewards and refunds into distinct illustrated objects. The collection includes phone based offers, percentage flowers, a savings abacus and playful metaphors such as a discount compass and a frozen price tag.",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "online-sale-01-percent-coupon-accordion",
@@ -280,10 +280,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Online Sale clipart collection, with {{artworkCount}} illustrations to explore. Online-sale symbols turn coupons, price comparisons, rewards and refunds into distinct illustrated objects. The collection includes phone-based offers, percentage flowers, a savings abacus and playful metaphors such as a discount compass and a frozen price tag.",
-        "The gallery includes “Coupons Springing from a Phone” and “Gift Parcel Bursting from a Screen” among its drawings. Use the drawings in a financial literacy activity, a personal planning page or an illustrated discussion; the artwork supplies visual context for your own explanation."
+        "Online sale symbols turn coupons, price comparisons, rewards and refunds into distinct illustrated objects. The collection includes phone based offers, percentage flowers, a savings abacus and playful metaphors such as a discount compass and a frozen price tag.",
+        "The collection brings together {{artworkCount}} illustrations, including “Coupons Springing from a Phone” and “Gift Parcel Bursting from a Screen”. Use the drawings in a financial literacy activity, a personal planning page or an illustrated discussion; the artwork supplies visual context for your own explanation."
       ],
-      "paragraphSourceSha256": "de2bc7fa95a570976849bde99f8d7fe4e3bd6481f8cdff8002a00c6300281fc4",
+      "paragraphSourceSha256": "1ea50841ff08696e16b02d8c10dffcb37b82133541be1ca93c5ae19d44e013d1",
       "paragraphEvidence": [
         {
           "id": "online-sale-01-percent-coupon-accordion",
@@ -294,14 +294,14 @@
           "imageSha256": "166efa9c85458086615020d4a0ca868d7e6096dbf76ca508f5177a636cb19514"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z",
-      "paragraphReviewSha256": "1f23ac72a7232edc462697fbf70a0ed7cc4b80088ee58a36fe2010cf3980add2"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "a1473ca2c1803b1edb215edf3e36b59fd423ebf07b63d287d5b01b701a01b7c1"
     },
     "online-shopping": {
       "status": "checked-against-catalog",
       "sourceSha256": "c20f84e3d16081c55dd00ec2e43eb1c98232af1a9773d9871f41314b2ceeb547",
       "intro": "Follow online shopping from comparing products and choosing sizes to receiving parcels, assembling purchases and arranging returns. These scenes include shoppers of different ages, small sellers, collection counters and everyday items such as plants, books, groceries and clothing.",
-      "checkedAt": "2026-10-27T04:38:04.096Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "online-shopping-01-sofa-tablet-shoe-choice",
@@ -317,8 +317,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Online Shopping clipart collection, with {{artworkCount}} illustrations to explore. Follow online shopping from comparing products and choosing sizes to receiving parcels, assembling purchases and arranging returns. These scenes include shoppers of different ages, small sellers, collection counters and everyday items such as plants, books, groceries and clothing.",
-        "The gallery includes “Shopping for Shoes on a Sofa” and “Ordering Groceries by the Refrigerator” among its drawings. Use the drawings in a financial literacy activity, a personal planning page or an illustrated discussion; the artwork supplies visual context for your own explanation."
+        "Follow online shopping from comparing products and choosing sizes to receiving parcels, assembling purchases and arranging returns. These scenes include shoppers of different ages, small sellers, collection counters and everyday items such as plants, books, groceries and clothing.",
+        "The collection brings together {{artworkCount}} illustrations, including “Shopping for Shoes on a Sofa” and “Ordering Groceries by the Refrigerator”. Use the drawings in a financial literacy activity, a personal planning page or an illustrated discussion; the artwork supplies visual context for your own explanation."
       ],
       "paragraphSourceSha256": "ed9a0861de0af2b66298cfbde1eaf0b4408ea31ea1af1ab9edea02d54fb46125",
       "paragraphEvidence": [
@@ -331,8 +331,8 @@
           "imageSha256": "39fc49e82cbd9ad959b584dd29dea146dfb5f2dd84462c54f0535d5a8ba1c66c"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z",
-      "paragraphReviewSha256": "920a90cfa3b54a84a51221da3ec953ab2f1456bd2fc70d1da3f991893523c833"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "07e538a002879142315d3cec865dd7069aa19eb7faf6efe6fc061d47f1c1ffa7"
     }
   }
 }

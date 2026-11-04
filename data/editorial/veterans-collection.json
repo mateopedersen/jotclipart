@@ -5,7 +5,7 @@
       "status": "checked-against-catalog",
       "sourceSha256": "4990bf060fa95d35621d0ca844a0e1b7254fcdf120bcbd4ddfcc03748cdd9b4d",
       "intro": "Veterans appreciation illustrations with Thank You Veterans and Happy Veterans Day lettering, American flags, salutes and community gatherings. Choose from textured ribbons, cards and keepsakes, varied people sharing skills, and clear outline scenes.",
-      "checkedAt": "2026-10-26T23:45:27.180Z",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "veterans-homecoming-hug",
@@ -25,8 +25,8 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Veterans clipart collection, with {{artworkCount}} illustrations to explore. Veterans appreciation illustrations with Thank You Veterans and Happy Veterans Day lettering, American flags, salutes and community gatherings. Choose from textured ribbons, cards and keepsakes, varied people sharing skills, and clear outline scenes.",
-        "The gallery includes “A Homecoming Hug” and “Thank You Veterans with an American Flag” among its drawings. Use the drawings in a civics discussion, a personal commentary project or an illustrated comparison, keeping imagined scenes distinct from real events."
+        "Veterans appreciation illustrations with Thank You Veterans and Happy Veterans Day lettering, American flags, salutes and community gatherings. Choose from textured ribbons, cards and keepsakes, varied people sharing skills, and clear outline scenes.",
+        "The collection brings together {{artworkCount}} illustrations, including “A Homecoming Hug” and “Thank You Veterans with an American Flag”. Use the drawings in a civics discussion, a personal commentary project or an illustrated comparison, keeping imagined scenes distinct from real events."
       ],
       "paragraphSourceSha256": "e71f3d06d760cd338b14b0c136fc2caf39bbb912d12882b910c602f67704e848",
       "paragraphEvidence": [
@@ -39,8 +39,8 @@
           "imageSha256": "34acf3103bba3022a4889d03b4fd1eefd8a1632bad7e7527a9bace46ad0bfa59"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.569Z",
-      "paragraphReviewSha256": "02acceb88f0fd5502122c7b81ab62f3c479b22c205f717b4e6e6bcc17a65b8c2"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "3e13df57937aa3197e48939ebba7b9f82de300b584b4dd23c9b4866faae133c5"
     }
   }
 }

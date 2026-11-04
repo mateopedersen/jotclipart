@@ -4,8 +4,8 @@
     "dinner": {
       "status": "checked-against-catalog",
       "sourceSha256": "4910f6d2be24f132d35021b4d8e3b87cbbae65cad44efa8aaceb140014550b1d",
-      "checkedAt": "2026-10-28T13:34:49.474Z",
-      "intro": "Family suppers, dinners with friends and Christmas and Thanksgiving tables sit alongside individual meals and Santa enjoying a roast dinner. Choose colorful cartoon scenes or black-and-white drawings, with different characters, foods and table settings.",
+      "checkedAt": "2026-11-04",
+      "intro": "Family suppers, dinners with friends and Christmas and Thanksgiving tables sit alongside individual meals and Santa enjoying a roast dinner. Choose colorful cartoon scenes or black and white drawings, with different characters, foods and table settings.",
       "evidence": [
         {
           "id": "dinner-friends-pasta-night",
@@ -25,10 +25,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Dinner clipart collection, with {{artworkCount}} illustrations to explore. Family suppers, dinners with friends and Christmas and Thanksgiving tables sit alongside individual meals and Santa enjoying a roast dinner. Choose colorful cartoon scenes or black-and-white drawings, with different characters, foods and table settings.",
-        "The gallery includes “Three Friends Sharing a Pasta Dinner” and “Passing Vegetables at a Thanksgiving Table” among its drawings. Illustrate a personal recipe page, a food vocabulary activity or a kitchen journal, selecting a view that makes your chosen ingredient or dish easy to recognize."
+        "Family suppers, dinners with friends and Christmas and Thanksgiving tables sit alongside individual meals and Santa enjoying a roast dinner. Choose colorful cartoon scenes or black and white drawings, with different characters, foods and table settings.",
+        "The collection brings together {{artworkCount}} illustrations, including “Three Friends Sharing a Pasta Dinner” and “Passing Vegetables at a Thanksgiving Table”. Illustrate a personal recipe page, a food vocabulary activity or a kitchen journal, selecting a view that makes your chosen ingredient or dish easy to recognize."
       ],
-      "paragraphSourceSha256": "5a12d1f00436f6914e9b026a80d323984d7d270078540f366c6987805277cc9c",
+      "paragraphSourceSha256": "437e2d789193db2d0c46476bc9d438d15dda1f7ff1af87043841d3c519bfa3fe",
       "paragraphEvidence": [
         {
           "id": "dinner-friends-pasta-night",
@@ -39,8 +39,8 @@
           "imageSha256": "3d697773880cec29c4423384a135a76a773029da0adbae6c0ddf221b833fbe57"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.543Z",
-      "paragraphReviewSha256": "2d7492d64feea28ae5d4ee3d5e7d84de8edf2f3b75b9ff87bb506eb3b8a678b7"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "1f4ec5619c08500790b78e68d85c9fe555373922c75bf90a74534060f62848d6"
     }
   }
 }

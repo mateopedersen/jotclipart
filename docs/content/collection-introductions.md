@@ -1,3 +1,20 @@
+# Natural openings — latest owner direction, 2026-11-04
+
+Every current and future topic starts with a specific characteristic of its own
+accepted collection. Do not open with the reusable “Welcome to our … collection”
+formula or a count sentence. The live count belongs in the inventory paragraph.
+Opening sentences must differ even after replacing the current topic name.
+`verifyCollectionOpenings` rejects exact and subject-substituted duplicates across
+the registry; this is a publication gate, not an automatic writing approval.
+
+Visible introductions and concise summaries use natural phrases without hyphens
+or dash punctuation. Write “blue and gold” and “black and white”; numeric ranges
+retain their meaning as “1970 to 1979”. Never change slugs, IDs, original file
+URLs, checksums or product identity to enforce prose style. The draft helper uses
+the accepted summary as a starting point and formats prose, but still requires a
+catalog-grounded editorial check and distinct opening before publication. It does
+not promise automatic semantic uniqueness for millions of unseen collections.
+
 # Collection introductions
 
 Owner direction, 2026-11-03: every current and future subject page has two or

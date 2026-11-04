@@ -4,8 +4,8 @@
     "feast": {
       "status": "checked-against-catalog",
       "sourceSha256": "c3f80c5dfa628de4ce60765ce2407a76ede32e0931ac60a0989795de10569fa2",
-      "intro": "Turkey dinners, shared tables and abundant food spreads for feast-themed designs. Explore carving and serving scenes, buffet arrangements, different meal traditions, food lettering and four separate cartoon coloring compositions.",
-      "checkedAt": "2026-10-27T15:52:36.728Z",
+      "intro": "Turkey dinners, shared tables and abundant food spreads for feast themed designs. Explore carving and serving scenes, buffet arrangements, different meal traditions, food lettering and four separate cartoon coloring compositions.",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "feast-turkey-carving-chef",
@@ -25,10 +25,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Feast clipart collection, with {{artworkCount}} illustrations to explore. Turkey dinners, shared tables and abundant food spreads for feast-themed designs. Explore carving and serving scenes, buffet arrangements, different meal traditions, food lettering and four separate cartoon coloring compositions.",
-        "The gallery includes “Chef Carving a Turkey Roast” and “Bear Pulling a Turkey Feast Wagon Coloring Page” among its drawings. Illustrate a personal recipe page, a food vocabulary activity or a kitchen journal, selecting a view that makes your chosen ingredient or dish easy to recognize."
+        "Turkey dinners, shared tables and abundant food spreads for feast themed designs. Explore carving and serving scenes, buffet arrangements, different meal traditions, food lettering and four separate cartoon coloring compositions.",
+        "The collection brings together {{artworkCount}} illustrations, including “Chef Carving a Turkey Roast” and “Bear Pulling a Turkey Feast Wagon Coloring Page”. Illustrate a personal recipe page, a food vocabulary activity or a kitchen journal, selecting a view that makes your chosen ingredient or dish easy to recognize."
       ],
-      "paragraphSourceSha256": "3c65241a148c8f5ebaf00f19e90e97d4fdf371cfdc34cce8e4b590201518e462",
+      "paragraphSourceSha256": "10366874aa12a96f16be72e190d77f75969e2db50748347926e735e4b93b60a5",
       "paragraphEvidence": [
         {
           "id": "feast-turkey-carving-chef",
@@ -39,8 +39,8 @@
           "imageSha256": "91117f3445e3cf1ca8d003cb112d6d5e5ea60673de1449451f587337013e5e6a"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.544Z",
-      "paragraphReviewSha256": "b74de1611b56af1656a87ad39c66488b1affdd64295298c1dc27c301fdfe1b33"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "83fa0ccec18dbae0f6823e55cc22ab77b900411de894a7e24988b565d8696c42"
     }
   }
 }

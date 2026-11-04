@@ -4,8 +4,8 @@
     "snowman": {
       "status": "checked-against-catalog",
       "sourceSha256": "a756b3f97890161be207194bb939b4ae5adc5ca33c75f2e091c249b6e56a582f",
-      "intro": "Cheerful snowmen reading, skating, sharing gifts and enjoying winter adventures. Explore different cartoon faces and outfits, felt, yarn and paper decorations, two seasonal greetings and four independent black-and-white coloring scenes.",
-      "checkedAt": "2026-10-27T09:29:23.363Z",
+      "intro": "Cheerful snowmen reading, skating, sharing gifts and enjoying winter adventures. Explore different cartoon faces and outfits, felt, yarn and paper decorations, two seasonal greetings and four independent black and white coloring scenes.",
+      "checkedAt": "2026-11-04",
       "evidence": [
         {
           "id": "snowman-waving-mitten",
@@ -25,10 +25,10 @@
         }
       ],
       "paragraphs": [
-        "Welcome to our Snowman clipart collection, with {{artworkCount}} illustrations to explore. Cheerful snowmen reading, skating, sharing gifts and enjoying winter adventures. Explore different cartoon faces and outfits, felt, yarn and paper decorations, two seasonal greetings and four independent black-and-white coloring scenes.",
-        "The gallery includes “Snowman Waving a Red Mitten” and “Snowmen Making a Snowflake Puzzle Outline” among its drawings. Choose a focal image for a personal seasonal card, a winter story page or a family craft, leaving room for your own message."
+        "Cheerful snowmen reading, skating, sharing gifts and enjoying winter adventures. Explore different cartoon faces and outfits, felt, yarn and paper decorations, two seasonal greetings and four independent black and white coloring scenes.",
+        "The collection brings together {{artworkCount}} illustrations, including “Snowman Waving a Red Mitten” and “Snowmen Making a Snowflake Puzzle Outline”. Choose a focal image for a personal seasonal card, a winter story page or a family craft, leaving room for your own message."
       ],
-      "paragraphSourceSha256": "b1a52d66ab5bc5f8fb5f6e07eff99972a758efc9999d07b809a7f32cb0f73554",
+      "paragraphSourceSha256": "3b67d433fbdb74d722b009df6ee31137c160af39785996f20b039a6776d86c53",
       "paragraphEvidence": [
         {
           "id": "snowman-waving-mitten",
@@ -39,8 +39,8 @@
           "imageSha256": "28c95e5ee0eb3f40f4f02ac2e3856ba0c372c8923469136513138fc6ccefcc05"
         }
       ],
-      "paragraphsCheckedAt": "2026-11-03T17:56:59.568Z",
-      "paragraphReviewSha256": "cc1a2a269e90cc8a9e8a11d0bea7e131d3952278ee8a8f63979cc696a6947cf1"
+      "paragraphsCheckedAt": "2026-11-04",
+      "paragraphReviewSha256": "0ff95826bf74c3f7a8137ac2be8cd5db5c0d04072bbeb302941a5016291c54cb"
     }
   }
 }
