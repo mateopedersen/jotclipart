@@ -7,7 +7,7 @@ import StudioWalkthrough from '../components/StudioWalkthrough.astro';
 import StudioIcon from '../components/StudioIcon.astro';
 import { proTools } from '../editor/smart/pro-catalog';
 import { publishedArt as catalogue } from '../lib/catalog';
-import { featuredStudioArt } from '../lib/studio-artwork';
+import { getFeaturedStudioCount } from '../lib/studio-artwork';
 
 import { studioElements } from '../editor/elements';
 import { textStyles } from '../editor/text-styles';
@@ -85,7 +85,7 @@ const workspace = { id: 'my-clipart', title: 'My Clipart Project', svg: '' };
         </p>
         <div class="studio-intro-meta">
           <div>
-            <strong>{featuredStudioArt.length.toLocaleString('en-US')}</strong>
+            <strong>{getFeaturedStudioCount().toLocaleString('en-US')}</strong>
             <span>Featured artworks</span>
           </div>
           <div>

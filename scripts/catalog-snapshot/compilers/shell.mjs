@@ -27,7 +27,7 @@ const aliases = new Map([
 [join(root,'src/lib/collection-feed.ts'),`import {scoped} from ${JSON.stringify(context)};export const latestCollections=scoped('latestCollections',[]),collectionFeed=scoped('collectionFeed');`],
 [join(root,'src/lib/category-search-index.ts'),`export const categorySearchUrl='/category-search/current.json';`],
 [join(root,'src/lib/monochrome-library.ts'),`import {scoped} from ${JSON.stringify(context)};export const monochromeDirectory=scoped('monochromeDirectory');`],
-[join(root,'src/lib/studio-artwork.ts'),`import {current,scoped} from ${JSON.stringify(context)};export const FEATURED_ARTWORK_LIMIT=500,featuredStudioArt=scoped('featuredStudioArt',[]);export const getFeaturedStudioCount=()=>current().featuredStudioArt.length;`],
+[join(root,'src/lib/studio-artwork.ts'),`import {current,scoped} from ${JSON.stringify(context)};export const FEATURED_ARTWORK_LIMIT=500,featuredStudioArt=scoped('featuredStudioArt',[]);export const getFeaturedStudioCount=()=>current().featuredStudioCount??current().featuredStudioArt.length;`],
 [join(root,'src/lib/sitemaps.ts'),`import {current} from ${JSON.stringify(context)};export const indexableTopics=()=>current().topics;export const directoryArtwork=()=>current().directoryArtwork??[];`],
 
   [join(root,'scripts/cookie-startup.mjs'),`export const cookieStartupScript=${JSON.stringify(cookieScripts.cookieStartupScript)};export const cookieMountScript=${JSON.stringify(cookieScripts.cookieMountScript)};`],

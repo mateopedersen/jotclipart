@@ -11,6 +11,15 @@ their existing featured inventory. The separate Studio library request still
 resolves real source-bound artwork, paginates its previews and verifies originals
 before editing or exporting. Never substitute this count for artwork validation.
 
+The same count provider serves the create landing page. Its hero and element
+library labels must not resolve 500 unrelated source records before rendering.
+Keep the existing starter compositions, static hero artwork and independent
+client library request intact.
+
+The matching create-page comparison reduced 756 immutable metadata reads
+(13,262,649 bytes) to 113 (1,584,734 bytes), preserving all 52 static artwork
+records, starter composition previews, discovery, counts and page properties.
+
 The 2026-11-04 source-bound local comparison of the same production snapshot and
 selected original reduced metadata reads from 717 to 39 (12,598,664 to 675,706
 bytes). The selected item, preview decision, shared artwork, discovery and global
