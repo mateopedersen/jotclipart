@@ -16,6 +16,12 @@ unverified cache/configuration failure or promise a smaller full original.
 
 Changes address measured critical paths while preserving the same files:
 
+- Every actual document module and its verified static dependency chunks are
+  preloaded together from the compiler's immutable graph. This removes the
+  entry-to-shared-chunk-to-utility request waterfall without loading optional
+  editor codecs or other dynamic imports. Only modules already required by that
+  document enter the graph walk; URLs, source revision and byte sizes are bound,
+  duplicates/cycles are bounded to 32, and unknown/external dependencies fail.
 - Original-image priority promotion is limited to two actually visible images.
   Near-but-offscreen originals are no longer promoted to eager transfers. Native
   browser lazy requests can still occur; this is not a global two-request limit.
