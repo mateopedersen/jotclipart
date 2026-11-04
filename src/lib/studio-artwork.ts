@@ -29,3 +29,8 @@ for (
   }
 }
 export const featuredStudioIds = new Set(featuredStudioArt.map((item) => item.id));
+/** SSR labels need only the count; point-rendered editors resolve it from the
+ * signed featured ID directory without opening every unrelated artwork. */
+export function getFeaturedStudioCount() {
+  return featuredStudioArt.length;
+}

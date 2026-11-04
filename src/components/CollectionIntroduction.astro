@@ -16,10 +16,13 @@ const { topic, paragraphs } = Astro.props;
 </div>
 <style>
   .collection-introduction {
-    max-width: 82ch;
+    width: 100%;
+    min-width: 0;
+    max-width: none;
   }
   .collection-introduction p {
     margin: 0;
+    max-width: none;
     overflow-wrap: break-word;
   }
   .collection-introduction p + p {
