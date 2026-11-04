@@ -143,6 +143,12 @@ if (root) {
         scope,
       );
       if (controller.signal.aborted || request !== controller) return;
+      if (found.manifest.version !== version) {
+        const selected = [state.collection, state.topic, state.kind].join('/');
+        useManifest(found.manifest);
+        if ([state.collection, state.topic, state.kind].join('/') !== selected)
+          throw new Error('The selected category changed. Please search again.');
+      }
       state.page = found.page;
       pages = found.pages;
       results.replaceChildren(...found.items.map(renderCard));

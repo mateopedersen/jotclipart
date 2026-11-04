@@ -12,12 +12,16 @@ import {
 import {
   openRaster,
   rasterCatalog,
+  featuredRasterCatalog,
   rasterPixels,
   registerLocalImage,
   serializeProject,
   type RasterAsset,
 } from '../raster';
-import { lookupRasterAssets } from '../studio-sources';
+import { lookupRasterAssets, pinRasterSnapshot, unpinRasterSnapshot } from '../studio-sources';
+import { SearchRepository } from '../../lib/search-remote';
+import { defaults } from '../../lib/search';
+import type { SnapshotTransport } from '../../lib/snapshot-studio';
 import { download, renderWebp, recolor } from '../svg';
 import { exportPdf, paperLayout } from '../pdf';
 import { encodeMask, morphology, fillHoles } from './pixels';
@@ -33,6 +37,13 @@ import {
 } from './types';
 export class StudioTools {
   private catalogue: (RasterAsset & { title?: string })[] = [];
+  private catalogueReady = false;
+  private remoteCatalogue?: SnapshotTransport;
+  private catalogueRepository = new SearchRepository();
+  private catalogueRequest?: AbortController;
+  private catalogueTimer?: ReturnType<typeof setTimeout>;
+  private cataloguePage = 1;
+  private cataloguePager?: HTMLElement;
   private effectId = '';
   private batch = 0;
   private pro: ProTools;
@@ -47,7 +58,14 @@ export class StudioTools {
       void this.addLocal(file).catch((error) => editor.host.status(error.message, true));
     });
     editor.host.root.addEventListener('input', (event) => {
-      if ((event.target as Element).matches('[data-composer-search]')) this.list();
+      if ((event.target as Element).matches('[data-composer-search]')) {
+        this.cataloguePage = 1;
+        if (this.remoteCatalogue) {
+          clearTimeout(this.catalogueTimer);
+          this.catalogueRequest?.abort();
+          this.catalogueTimer = setTimeout(() => { void this.listRemote(); }, 180);
+        } else this.list();
+      }
       if ((event.target as Element).matches('[data-pro-search]')) this.filterTools();
     });
     editor.host.root.addEventListener('change', (event) => {
@@ -134,13 +152,13 @@ export class StudioTools {
       name = e.value('data-studio-tool');
     for (const pane of e.host.root.querySelectorAll<HTMLElement>('[data-studio-pane]'))
       pane.hidden = pane.dataset.studioPane !== name;
-    if (name === 'composer' && !this.catalogue.length)
-      void rasterCatalog()
-        .then((list) => {
-          this.catalogue = list;
-          this.list();
-        })
-        .catch((error) => e.host.status(error.message, true));
+    if (name === 'composer' && !this.catalogueReady)
+      void featuredRasterCatalog().then(async initial => {
+        this.remoteCatalogue = initial.transport;
+        this.catalogue = initial.transport ? [] : await rasterCatalog();
+        this.catalogueReady = true;
+        this.list();
+      }).catch(error => e.host.status(error.message, true));
     e.q('data-pro-active').hidden = name === 'home';
     e.q('data-pro-heading').textContent =
       e.q<HTMLSelectElement>('data-studio-tool').selectedOptions[0]?.textContent || '';
@@ -167,7 +185,12 @@ export class StudioTools {
       : 'No tools match. Try another search or category.';
   }
   async addCatalogue(id: string) {
-    const asset = this.catalogue.find((a) => a.id === id) ?? (await lookupRasterAssets([id]))[0];
+    let asset: RasterAsset | undefined;
+    if (this.remoteCatalogue) {
+      pinRasterSnapshot(id, this.remoteCatalogue);
+      try { asset = (await lookupRasterAssets([id]))[0]; }
+      finally { unpinRasterSnapshot(id); }
+    } else asset = this.catalogue.find(a => a.id === id) ?? (await lookupRasterAssets([id]))[0];
     if (!asset) throw new Error('Choose a catalog illustration.');
     const host = this.editor.host;
     const snapshot = host.committed(),
@@ -274,6 +297,7 @@ export class StudioTools {
     visible('data-type-spacing', e.value('data-type-layout') !== 'circle');
   }
   private list() {
+    if (this.remoteCatalogue) { void this.listRemote(); return; }
     const e = this.editor,
       search = e.value('data-composer-search').trim().toLowerCase(),
       list = e.q<HTMLSelectElement>('data-composer-list');
@@ -287,6 +311,38 @@ export class StudioTools {
           return option;
         }),
     );
+  }
+  private async listRemote() {
+    this.catalogueRequest?.abort();
+    const request = new AbortController();
+    this.catalogueRequest = request;
+    const list = this.editor.q<HTMLSelectElement>('data-composer-list');
+    list.disabled = true;
+    try {
+      const result = await this.catalogueRepository.studioSearch({ ...defaults,
+        q: this.editor.value('data-composer-search').trim(), page: this.cataloguePage, size: 24,
+      }, request.signal, ['source/raster']);
+      if (request.signal.aborted || this.catalogueRequest !== request) return;
+      this.remoteCatalogue = result.manifest.transport;
+      this.catalogue = result.studioItems;
+      this.cataloguePage = result.page;
+      list.replaceChildren(...result.studioItems.map(asset => new Option(asset.title, asset.id)));
+      if (!this.cataloguePager) {
+        this.cataloguePager = document.createElement('div');
+        this.cataloguePager.className = 'uc-library-pagination';
+        this.cataloguePager.setAttribute('aria-label', 'Composition artwork pages');
+        list.insertAdjacentElement('afterend', this.cataloguePager);
+      }
+      const previous = document.createElement('button'), next = document.createElement('button'), label = document.createElement('span');
+      previous.type = next.type = 'button'; previous.textContent = 'Previous'; next.textContent = 'Next';
+      previous.disabled = result.page <= 1; next.disabled = result.page >= result.pages;
+      label.textContent = `Page ${result.page} of ${result.pages} · ${result.total.toLocaleString('en-US')} artworks`;
+      previous.onclick = () => { this.cataloguePage--; void this.listRemote(); };
+      next.onclick = () => { this.cataloguePage++; void this.listRemote(); };
+      this.cataloguePager.replaceChildren(previous, label, next);
+    } catch (error) {
+      if (!request.signal.aborted) this.editor.host.status('The artwork search could not load. Your canvas is preserved. Try another search.', true);
+    } finally { if (this.catalogueRequest === request) list.disabled = false; }
   }
   renderEffects() {
     const e = this.editor;

@@ -1,8 +1,9 @@
 import { defaults, normalizeQuery, parseState, stateParams, type SearchState } from '../lib/search';
 import { SearchRepository, type RemoteResults } from '../lib/search-remote';
 import { LatestRequest } from '../lib/search-request';
+import { alignSearchDirectory } from '../lib/search-directory';
 import { searchSiteEntries, searchKindLabels, type SiteSearchEntry } from '../lib/site-search';
-import type { SearchCard } from '../lib/search-index';
+import type { SearchCard, SearchManifest } from '../lib/search-index';
 import { renderCard } from './search-card';
 export function initSearch() {
   const form = document.querySelector<HTMLFormElement>('#catalog-search');
@@ -109,21 +110,23 @@ export function initSearch() {
       siteError: boolean;
     }>(
       async (signal, emit) => {
-        const loadSite = () =>
-          (async () => {
-            if (!requested.q && ['all', 'artwork'].includes(requested.type)) return null;
-            const manifest = await repository.manifest(signal);
-            return repository.siteEntries(manifest, signal);
-          })().then(
-            (entries) => ({ entries, siteError: false }),
-            () => ({ entries: null, siteError: true }),
-          );
+        const loadSite = async (pinned?: SearchManifest) => {
+          if (!requested.q && ['all', 'artwork'].includes(requested.type))
+            return { entries: null, siteError: false, version: '' };
+          try {
+            const manifest = pinned ?? await repository.manifest(signal);
+            const entries = await repository.siteEntries(manifest, signal);
+            return { entries, siteError: false, version: manifest.version };
+          } catch { return { entries: null, siteError: true, version: '' }; }
+        };
         const sitePromise = artMode ? undefined : loadSite();
         const result = await repository.search(requested, signal);
         // Artwork does not wait for the separate page/Studio directory. Both
         // stages use the same cancellation guard, including cached responses.
         if (artMode) emit({ result, entries: null, sitePending: !!requested.q, siteError: false });
-        const { entries, siteError } = await (sitePromise || loadSite());
+        let directory = await (sitePromise || loadSite(result.manifest));
+        directory = await alignSearchDirectory(repository, result.manifest, directory, signal);
+        const { entries, siteError } = directory;
         return { result, entries, sitePending: false, siteError };
       },
       ({ result, entries, sitePending, siteError }) => {

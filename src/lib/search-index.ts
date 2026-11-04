@@ -42,6 +42,11 @@ export interface SearchManifest {
   ranking?: number;
   lexiconInitials?: string[];
   site?: string;
+  transport?: {
+    protocol: 'snapshot-search-v1';
+    endpoint: '/catalog-search.json';
+    snapshot: string;
+  };
 }
 export interface RankedPage {
   ids: string[];

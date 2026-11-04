@@ -2,6 +2,7 @@ import { clone, identity, type EditorDocument, type RasterLayer } from './model'
 import type { VerifiedRepresentation as Representation } from './source-policy';
 import { readVerified } from './verified-fetch';
 import { lookupRasterAssets } from './studio-sources';
+import type { SnapshotTransport } from '../lib/snapshot-studio';
 export interface RasterAsset {
   id: string;
   title?: string;
@@ -133,6 +134,7 @@ let featuredCatalog:
       total: number;
       topics: string[];
       categories?: StudioCategory[];
+      transport?: SnapshotTransport;
     }>
   | undefined;
 export function featuredRasterCatalog() {
@@ -144,6 +146,7 @@ export function featuredRasterCatalog() {
         total: number;
         topics: string[];
         categories?: StudioCategory[];
+        transport?: SnapshotTransport;
       };
     })
     .catch((error) => {
