@@ -158,9 +158,27 @@ export async function readFacts(store, descriptor) {
     root.total < 0
   )
     throw Error('Projection bootstrap required');
+  const entries = [];
+  for await (const entry of mapEntries(store, root.topics, 'discovery-topic-facts')) {
+    if (entries.length >= LIMITS.topics) throw Error('Discovery topic limit exceeded');
+    entries.push(entry);
+  }
+  // Network-bound operator reads must not form one serial RPC per old topic.
+  // Preserve directory order after four bounded readers complete.
+  const values = Array(entries.length);
+  let next = 0;
+  await Promise.all(
+    Array.from({ length: Math.min(4, entries.length) }, async () => {
+      while (next < entries.length) {
+        const i = next++;
+        values[i] = await store.get(entries[i].value);
+      }
+    }),
+  );
   const result = new Map();
-  for await (const { key, value } of mapEntries(store, root.topics, 'discovery-topic-facts')) {
-    const facts = await store.get(value);
+  for (let i = 0; i < entries.length; i++) {
+    const { key, value } = entries[i],
+      facts = values[i];
     if (
       facts.type !== 'discovery-topic-facts-v1' ||
       facts.slug !== key ||

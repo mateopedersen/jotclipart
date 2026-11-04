@@ -1,7 +1,8 @@
 // Publisher-only bounded overlay over a previously authenticated metadata graph.
 // An old object is reusable only through a descriptor actually reached from that
 // predecessor; knowing an unrelated content-addressed key does not admit it.
-import { sha256 } from './stage-manifest.mjs';
+import { createHash } from 'node:crypto';
+const sha256 = (bytes) => createHash('sha256').update(bytes).digest('hex');
 const facets = '(?:artworks|collections|search|recent|related|counts|sitemaps)',
   keyPattern = new RegExp('^catalog/objects/' + facets + '/([a-f0-9]{64})\\.json$');
 export function createDeltaStore(
@@ -67,6 +68,7 @@ export function createDeltaStore(
     if (++reads > maxObjects || (readBytes += d.bytes) > maxBytes)
       throw Error('Changed-batch parent read budget exceeded');
     const p = (async () => {
+      parentBucket.hint?.(d);
       const r = await parentBucket.get(key);
       if (!r || r.size !== d.bytes) throw Error('Missing predecessor metadata');
       const bytes = Buffer.from(await r.arrayBuffer());
