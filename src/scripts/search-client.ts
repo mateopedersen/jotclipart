@@ -1,3 +1,4 @@
+import {adoptCatalogSnapshot} from '../lib/catalog-snapshot-client';
 import { defaults, normalizeQuery, parseState, stateParams, type SearchState } from '../lib/search';
 import { SearchRepository, type RemoteResults } from '../lib/search-remote';
 import { LatestRequest } from '../lib/search-request';
@@ -237,6 +238,7 @@ export function initSearch() {
           }),
         );
         q('#topic-suggestions').hidden = !relatedTopics.length;
+        adoptCatalogSnapshot(result.manifest.version);
       },
       () => {
         document.documentElement.removeAttribute('data-search-pending');

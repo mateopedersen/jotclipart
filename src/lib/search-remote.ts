@@ -2,6 +2,7 @@ import { oneEditAway, queryTerms, normalizeQuery, type SearchState } from './sea
 import { termVariants, relevanceScore, type TermMatch } from './search-language.ts';
 import type { SiteSearchEntry } from './site-search.ts';
 import { validateStudioAsset, type SnapshotStudioAsset } from './snapshot-studio.ts';
+import { catalogMetadataHeaders } from './catalog-protocol.ts';
 import {
   tokenBucket,
   type RankedPage,
@@ -20,6 +21,7 @@ export type JsonLoader = (path: string, signal?: AbortSignal, init?: RequestInit
 const browserLoader: JsonLoader = async (path, signal, init) => {
   const response = await fetch(path, {
     ...init,
+    headers: catalogMetadataHeaders(path, init?.headers),
     signal,
     cache: init?.cache ?? (path.endsWith('/manifest.json') ? 'no-cache' : 'default'),
   });

@@ -1,5 +1,5 @@
-import gta from '../../data/gta-six-review.json';
-import remaining from '../../data/remaining-thirty-one-review.json';
+import gta from '../../data/gta-six-review.json' with { type: 'json' };
+import remaining from '../../data/remaining-thirty-one-review.json' with { type: 'json' };
 import type { DiscoveryArtwork } from './cute-discovery';
 
 // Preserve these existing actual-pixel exclusion decisions only while their

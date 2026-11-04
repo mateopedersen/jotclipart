@@ -53,7 +53,7 @@ const topic = (r) => ({
 export async function readCollectionReferences(
   context,
   slug,
-  { resolveArtwork, maxGallery = 1000 } = {},
+  { resolveArtwork, resolveSurprise, maxGallery = 1000 } = {},
 ) {
   if (!slugOK(slug)) {
     const e = new CollectionFault('Unknown topic');
@@ -147,15 +147,19 @@ export async function readCollectionReferences(
     if (target) related.push(target.record);
   }
   const shared = await store.read('collections', collections.sharedContext);
+  const resolvedSurprise = resolveSurprise ? await resolveSurprise(context) : null;
+  if (resolvedSurprise && resolvedSurprise.rootSHA256 !== context.rootSHA256)
+    fail('Discovery snapshot differs');
+  const surprise = resolvedSurprise ? resolvedSurprise.items : shared.surprise;
   if (
     !Array.isArray(shared.ids) ||
     shared.ids.length > 64 ||
     shared.ids.some((id) => !slugOK(id)) ||
     new Set(shared.ids).size !== shared.ids.length ||
-    !Array.isArray(shared.surprise) ||
-    shared.surprise.length > 64 ||
-    new Set(shared.surprise.map((x) => x.id)).size !== shared.surprise.length ||
-    shared.surprise.some((x) => !slugOK(x.id))
+    !Array.isArray(surprise) ||
+    surprise.length > 64 ||
+    new Set(surprise.map((x) => x.id)).size !== surprise.length ||
+    surprise.some((x) => !slugOK(x.id))
   )
     fail('Invalid shared IDs');
   const resolved = new Map();
@@ -175,7 +179,7 @@ export async function readCollectionReferences(
     ...new Set([
       ...ids,
       ...shared.ids,
-      ...shared.surprise.map((x) => x.id),
+      ...surprise.map((x) => x.id),
       ...related.map((r) => r.coverArtworkId),
     ]),
   ];
@@ -211,7 +215,7 @@ export async function readCollectionReferences(
       art: artwork,
       topics: [topic(record), ...related.map(topic)],
       counts: scopedCounts,
-      surprise: shared.surprise.map((p) => ({
+      surprise: surprise.map((p) => ({
         id: p.id,
         topic: byId.get(p.id).topic,
         ...(Object.hasOwn(p, 'fresh') ? { fresh: p.fresh } : {}),

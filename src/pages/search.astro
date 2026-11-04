@@ -8,13 +8,14 @@ import { cardMetadata } from '../lib/search-index';
 import { getSearchBuild } from '../lib/search-build';
 import { searchKindLabels } from '../lib/site-search';
 import '../styles/site-search.css';
-const initial = searchArtwork(art, defaults);
+const snapshotSearch = Astro.props.snapshotSearch;
+const initial = snapshotSearch?.result ?? searchArtwork(art, defaults);
 const seed = {
-  version: (await getSearchBuild()).manifest.version,
+  version: snapshotSearch?.version ?? (await getSearchBuild()).manifest.version,
   items: initial.items.map(cardMetadata),
 };
-const colors = [...new Set(art.map((item) => item.color))].sort();
-const styles = [...new Set(art.map((item) => item.style))].sort();
+const colors = snapshotSearch?.colors ?? [...new Set(art.map((item) => item.color))].sort();
+const styles = snapshotSearch?.styles ?? [...new Set(art.map((item) => item.style))].sort();
 ---
 
 <Layout
