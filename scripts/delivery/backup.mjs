@@ -33,7 +33,10 @@ const report = JSON.parse(reportBytes);
 const liveRevision = report.revision ?? report.sourceRevision ?? report.renderedRevision;
 if (!/^[a-f0-9]{40}$/.test(liveRevision ?? ''))
   throw Error('A verified production revision is required.');
-git('cat-file', '-e', `${liveRevision}^{commit}`);
+// Content revisions are signed data epochs; sourceCommit is the Git restoration
+// anchor when the build-free publisher generated the public revision.
+const liveSourceCommit = report.catalogSourceCommit ?? report.sourceCommit ?? liveRevision;
+git('cat-file', '-e', `${liveSourceCommit}^{commit}`);
 mkdirSync(destination, { recursive: true, mode: 0o700 });
 if (realpathSync(destination).startsWith(realpathSync(root) + '/'))
   throw Error('Backup destination resolves inside the working repository.');

@@ -64,7 +64,9 @@
     "test:e2e:seo-core": "node tests/e2e/core-seo.mjs",
     "test:e2e:studio-mobile-scroll": "node tests/e2e/studio-mobile-scroll.mjs",
     "test:e2e:button-states": "node tests/e2e/button-states.mjs",
-    "test:e2e:studio-entry": "node tests/e2e/studio-entry.mjs"
+    "test:e2e:studio-entry": "node tests/e2e/studio-entry.mjs",
+    "content:publish": "node --import ./scripts/catalog-snapshot/register-ts.mjs scripts/catalog-snapshot/publish-content.mjs",
+    "test:content-publisher": "node --test tests/catalog-content-operator.mjs tests/catalog-delta-source.mjs tests/catalog-delta-store.mjs tests/catalog-private-publisher.mjs tests/collection-prose-delta.mjs"
   },
   "dependencies": {
     "@fontsource/inter": "5.2.8",

@@ -1,4 +1,6 @@
 import { spawnSync } from 'node:child_process';
+import { assertLegacySourceMaterialized } from './catalog-snapshot/legacy-source-guard.mjs';
+assertLegacySourceMaterialized();
 import { readdirSync, readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { prepareDeliveryRelease } from './delivery/activate.mjs';
@@ -58,8 +60,10 @@ try {
   );
   const expectedBaseline = priorProduction.liveDelivery?.renderedRevision;
   const expectedControlBaseline = priorProduction.liveDelivery?.controlRevision;
-  if (!/^[a-f0-9]{40}$/.test(expectedBaseline ?? '') ||
-      !/^[a-f0-9]{40}$/.test(expectedControlBaseline ?? ''))
+  if (
+    !/^[a-f0-9]{40}$/.test(expectedBaseline ?? '') ||
+    !/^[a-f0-9]{40}$/.test(expectedControlBaseline ?? '')
+  )
     throw Error('Verified production baseline required');
   env.UC_DELIVERY_EXPECTED_LIVE_REVISION = expectedBaseline;
   env.UC_DELIVERY_EXPECTED_LIVE_CONTROL_REVISION = expectedControlBaseline;
@@ -108,15 +112,12 @@ try {
     // Large release fixtures and disk-reservation tests share the same volume.
     // Keep the full suite serial so a payload fixture cannot consume the safety
     // margin while another test checks the real free-space guard.
-    run(
-      '--test',
-      [
-        '--test-concurrency=1',
-        ...readdirSync(resolve(root, 'tests'))
-          .filter((name) => name.endsWith('.mjs'))
-          .map((name) => `tests/${name}`),
-      ],
-    );
+    run('--test', [
+      '--test-concurrency=1',
+      ...readdirSync(resolve(root, 'tests'))
+        .filter((name) => name.endsWith('.mjs'))
+        .map((name) => `tests/${name}`),
+    ]);
     // Optional local browser gate runs against this fresh build before any R2 write
     // or production activation. It leaves the normal storage safeguards untouched.
     if (process.env.UC_DELIVERY_BROWSER_QA === '1')

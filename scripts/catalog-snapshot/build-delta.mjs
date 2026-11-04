@@ -14,6 +14,7 @@ import { applyRecentBatch, recentHomeIDs } from '../../server/catalog-snapshot/r
 import { applyCuteBatch, cuteProjection } from '../../server/catalog-snapshot/cute-ledger.mjs';
 import { applySitemapBatch } from '../../server/catalog-snapshot/sitemap-ledger.mjs';
 import { downloadDetails } from '../../src/lib/download-data.ts';
+import { refreshCollectionOpenings } from './refresh-openings.mjs';
 const hashRecord = (record) => (record ? digest(JSON.stringify(canonical(record))) : null),
   hex = /^[a-f0-9]{64}$/;
 const searchRecord = (a, t) =>
@@ -373,6 +374,16 @@ export async function buildCatalogDelta({
       ? await cuteProjection(cuteStore, cuteLedger, indexes.artworks.sha256)
       : await cuteStore.put({ ...oldPicks, artworksRootSHA256: indexes.artworks.sha256 });
   indexes.collections = await cuteStore.put({ ...collections, surprise: picks });
+  // Legacy private protocol fixtures predate the opening ledger. Real production
+  // packets require the bootstrap in prepare-content before they reach here.
+  if ((await base.getFacet('collections')).openingIndex)
+    indexes.collections = await refreshCollectionOpenings({
+      bucket,
+      parentContext: base,
+      context: await after(),
+      topicChanges,
+      readArtwork: (id) => readArtwork(current, id),
+    });
   const graph = overlay.verifyChangedClosure(indexes);
   return {
     status: 'PRIVATE_COMPLETE_DELTA_REQUIRES_SOURCE_GRAPH_NATIVE_AND_REMOTE_APPROVAL',

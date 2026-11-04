@@ -23,6 +23,7 @@ import {
 } from '../delivery/release-write-authorization.mjs';
 import { validateVerificationReceipt } from '../delivery/verification-batch.mjs';
 import { validateMetadataManifest, readMetadataBytes, sha256 } from './stage-manifest.mjs';
+import { verifySourceFile, verifySourceCapsule } from './source-files.mjs';
 import { verifyImmutableReadbackAnchor, splitImmutableReadbackPlan } from './reuse-readback.mjs';
 function progress(value) {
   mkdirSync('work/catalog-snapshot', { recursive: true });
@@ -43,16 +44,30 @@ const manifest = validateMetadataManifest(
   graph = JSON.parse(readFileSync(join(directory, 'graph-local-receipt.json'))),
   revision = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
 if (
-  manifest.revision !== revision ||
-  audit.revision !== revision ||
+  manifest.revision !== audit.revision ||
+  (audit.kind === 'BOUNDED_CONTENT_DELTA'
+    ? audit.sourceCommit !== revision
+    : audit.revision !== revision) ||
   audit.status !== 'CURRENT_SOURCE_AND_EDITORIAL_VERIFIED_NOT_A_DEPLOYMENT' ||
   graph.manifestRoot !== manifest.root ||
   graph.status !== 'LOCAL_SOURCE_GRAPH_VERIFIED_REMOTE_READBACK_REQUIRED' ||
   graph.sourceReceiptSHA256 !== sha256(readFileSync(join(directory, 'source-receipt.json')))
 )
   throw Error('Current reviewed source and graph required');
+if (audit.kind === 'BOUNDED_CONTENT_DELTA') {
+  const packetBytes = readFileSync(join(directory, 'packet.json'));
+  if (sha256(packetBytes) !== audit.packetSHA256) throw Error('Source packet changed');
+  verifySourceCapsule(JSON.parse(packetBytes));
+}
 for (const [file, hash] of Object.entries(audit.sourceHashes))
-  if (sha256(readFileSync(file)) !== hash) throw Error('Source changed: ' + file);
+  await verifySourceFile(
+    {
+      path: file,
+      bytes: (await import('node:fs')).statSync(file).size,
+      sha256: hash,
+    },
+    audit.kind === 'BOUNDED_CONTENT_DELTA' ? {} : { sourceRoot: process.cwd() },
+  );
 for (const r of manifest.records) readMetadataBytes(manifest, r);
 const anchorDirectory = process.argv[3] ? resolve(process.argv[3]) : null;
 let anchor = null;
@@ -89,7 +104,7 @@ const session = join(directory, 'private-stage'),
   tree = merkle(scope),
   job = {
     root: tree.root,
-    revision,
+    revision: manifest.revision,
     accountId: '48c779c8eaa80234e0bb9d57f96e588b',
     bucket: 'ultraclipart-pages',
     secret,
@@ -254,7 +269,7 @@ try {
         status: anchor
           ? 'REMOTE_METADATA_CHANGED_READBACK_AND_SIGNED_REUSE_VERIFIED_NOT_ACTIVATED'
           : 'REMOTE_METADATA_BYTES_SHA_MIME_VERIFIED_NOT_ACTIVATED',
-        revision,
+        revision: manifest.revision,
         root: manifest.root,
         writeRoot: job.root,
         objects: manifest.records.length,
