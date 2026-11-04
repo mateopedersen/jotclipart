@@ -1,5 +1,5 @@
 ---
-import { featuredStudioArt } from '../lib/studio-artwork';
+import { getFeaturedStudioCount } from '../lib/studio-artwork';
 import { studioElements } from '../editor/elements';
 ---
 
@@ -36,7 +36,7 @@ import { studioElements } from '../editor/elements';
     </label>
     <div class="uc-library-scope" role="group" aria-label="Artwork collection">
       <button data-artwork-scope="featured" aria-pressed="true">
-        Featured <span data-featured-count>{featuredStudioArt.length.toLocaleString('en-US')}</span>
+        Featured <span data-featured-count>{getFeaturedStudioCount().toLocaleString('en-US')}</span>
       </button>
       <button data-artwork-scope="all" aria-pressed="false">
         All Artwork

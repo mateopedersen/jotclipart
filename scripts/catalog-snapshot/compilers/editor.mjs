@@ -26,7 +26,7 @@ const aliases = new Map([
   [join(root, 'src/lib/related/service.ts'), `import {current} from ${JSON.stringify(context)};export const relatedIndex={snapshot:id=>{if(current().related.sourceId!==id)throw Error('Wrong related source');return current().related}};`],
   [join(root, 'src/lib/collection-preview.ts'), `import {current} from ${JSON.stringify(context)};export const collectionPreview=(topic,sourceId)=>current().collectionPreview(topic,sourceId);`],
   [join(root, 'src/lib/editor-screen.ts'), `import {current} from ${JSON.stringify(context)};export const editorScreen=item=>{if(current().editorItem.id!==item.id)throw Error('Wrong editor source');return current().editorItem};`],
-  [join(root, 'src/lib/studio-artwork.ts'), `import {scoped} from ${JSON.stringify(context)};export const FEATURED_ARTWORK_LIMIT=500;export const featuredStudioArt=scoped('featuredStudioArt',[]);`],
+  [join(root, 'src/lib/studio-artwork.ts'), `import {current,scoped} from ${JSON.stringify(context)};export const FEATURED_ARTWORK_LIMIT=500;export const featuredStudioArt=scoped('featuredStudioArt',[]);export const getFeaturedStudioCount=()=>current().featuredStudioCount??current().featuredStudioArt.length;`],
   [join(root, 'src/lib/delivery-build-scope.ts'), `export const renderArtworkScope=items=>items;`],
   [join(root, 'src/lib/catalog-statistics.ts'), `import {scoped} from ${JSON.stringify(context)};export const catalogStatistics=scoped('counts');`],
   [join(root, 'src/lib/surprise-catalog.ts'), `import {scoped} from ${JSON.stringify(context)};export const cuteSurpriseIndex=scoped('surprise',[]);`],
