@@ -16,6 +16,9 @@ try{for(const[engine,type]of Object.entries({chromium,webkit}).filter(([engine])
   for(const topic of topics){
    const stats=page.waitForResponse(r=>new URL(r.url()).pathname==='/catalog-stats.json'),discovery=page.waitForResponse(r=>new URL(r.url()).pathname==='/surprise-picks.json');
    const response=await page.goto(base+'/clipart/'+topic+'/',{waitUntil:'domcontentloaded',timeout:60000});assert.equal(response.status(),200);
+   if(process.env.UC_EXPECTED_CATALOG_REVISION)assert.equal(response.headers()['x-uc-revision'],process.env.UC_EXPECTED_CATALOG_REVISION);
+   if(process.env.UC_EXPECTED_SNAPSHOT_SHA256)assert.equal(response.headers()['x-uc-snapshot'],process.env.UC_EXPECTED_SNAPSHOT_SHA256);
+   if(process.env.UC_REQUIRE_IMAGE_LOADER==='1')await expect(page.locator('html')).toHaveAttribute('data-original-image-loading','ready');
    for(const pending of[stats,discovery]){const resolved=await pending;assert.equal(resolved.status(),200);await resolved.json()}
    const cookie=page.locator('[data-cookie-choice=necessary]:visible');if(await cookie.count())await cookie.click();
    const images=page.locator('main > .gallery').first().locator('article[data-id] .art-picture img'),total=await images.count();assert(total>0);
@@ -25,15 +28,16 @@ try{for(const[engine,type]of Object.entries({chromium,webkit}).filter(([engine])
    for(const index of positions){
     const image=images.nth(index),source=await image.getAttribute('src');assert(source?.startsWith('https://assets.ultraclipart.com/'));
     report.currentStep={engine,width,topic,index,source};writeFileSync(out+'/report.json',JSON.stringify(report,null,2));
+    const visibleStart=Date.now();
     await image.evaluate(e=>e.scrollIntoView({block:'center',behavior:'instant'}));
     await expect.poll(()=>image.evaluate(e=>{const r=e.getBoundingClientRect();return r.top<innerHeight&&r.bottom>0}),{timeout:10000}).toBe(true);
     try { await expect.poll(()=>image.evaluate(e=>({complete:e.complete,width:e.naturalWidth})),{timeout:45000,intervals:[100,300,1000]}).toMatchObject({complete:true}); } catch(error) {report.failedImage=await image.evaluate(e=>({src:e.src,currentSrc:e.currentSrc,loading:e.loading,fetchPriority:e.fetchPriority,complete:e.complete,naturalWidth:e.naturalWidth,box:e.getBoundingClientRect().toJSON(),viewport:[innerWidth,innerHeight],scrollY}));await page.screenshot({path:out+'/failed-'+engine+'-'+width+'.png'});throw error;}
     await expect.poll(()=>image.evaluate(e=>e.naturalWidth),{timeout:45000,intervals:[100,300,1000]}).toBeGreaterThan(0);
     const decoded=await image.evaluate(async e=>{await e.decode();return{width:e.naturalWidth,height:e.naturalHeight,currentSrc:e.currentSrc,src:e.getAttribute('src'),alt:e.alt}});
-    assert.equal(decoded.src,source);assert.equal(decoded.currentSrc,source);assert(decoded.alt.trim());checks.push({index,source,...decoded,passed:true});
+    assert.equal(decoded.src,source);assert.equal(decoded.currentSrc,source);assert(decoded.alt.trim());checks.push({index,source,...decoded,visibleToDecodeMs:Date.now()-visibleStart,passed:true});
    }
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);
-   report.cases.push({engine,width,topic,galleryImages:total,checks,passed:true});
+   report.cases.push({engine,width,topic,catalogRevision:response.headers()['x-uc-revision'],snapshotSha256:response.headers()['x-uc-snapshot'],galleryImages:total,checks,passed:true});
    if(topic==='netherlands-flag')await page.screenshot({path:out+'/'+engine+'-netherlands-'+width+'.png'});
    writeFileSync(out+'/report.json',JSON.stringify(report,null,2));
   }
