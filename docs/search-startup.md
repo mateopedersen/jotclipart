@@ -33,3 +33,26 @@ fallback glyphs and WebKit reporting a font error. A local 350 ms delayed-font
 fixture reproduced the difference and matched the two engines after the change.
 Font families, weight rules, Avenir and the separate reading/editor faces remain
 unchanged.
+
+The suggestion controller can show an exact verified subject or tool as soon as
+the source-bound site directory arrives, while artwork search continues. It does
+not substitute a guessed URL or discard full artwork results. The normal final
+source-alignment step still applies. New queries and BFCache restoration cancel
+older work. A later result must not replace the native link during a pointer
+press or an active keyboard selection; this prevents a late response from
+removing a mobile tap destination.
+
+`tests/e2e/search-suggestions-progressive.mjs` runs the real controller against an
+explicit delayed repository fixture in Chromium and WebKit. It covers early
+subjects, later artwork, a held native press, keyboard Enter and stale queries at
+390 and 1440 pixels. Fixture timings are not live network measurements.
+
+Editor startup downloads the requested tools in parallel with the existing
+preview/first-paint gate. It still initializes only after that gate succeeds;
+original image verification is unchanged. `tests/e2e/editor-startup-parallel.mjs`
+checks both gates and the failure state with explicit controlled fixtures.
+The create page remains lazy until the workspace approaches the viewport.
+
+`tests/e2e/collection-subject-picker.mjs` checks the actual native mobile subject
+disclosure, topic navigation, desktop links, overflow and the no-JavaScript
+fallback. These three browser checks are included in the Studio CI suite.

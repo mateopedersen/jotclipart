@@ -64,7 +64,10 @@
     "test:e2e:seo-core": "node tests/e2e/core-seo.mjs",
     "test:e2e:studio-mobile-scroll": "node tests/e2e/studio-mobile-scroll.mjs",
     "test:e2e:button-states": "node tests/e2e/button-states.mjs",
-    "test:e2e:studio-entry": "node tests/e2e/studio-entry.mjs"
+    "test:e2e:studio-entry": "node tests/e2e/studio-entry.mjs",
+    "test:e2e:collection-subject-picker": "node tests/e2e/collection-subject-picker.mjs",
+    "test:e2e:search-progressive": "node tests/e2e/search-suggestions-progressive.mjs",
+    "test:e2e:editor-startup": "node tests/e2e/editor-startup-parallel.mjs"
   },
   "dependencies": {
     "@fontsource/inter": "5.2.8",
