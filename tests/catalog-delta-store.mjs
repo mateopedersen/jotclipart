@@ -29,10 +29,10 @@ function fixture() {
 test('delta overlay admits only reached predecessor references and verifies changed closure', async () => {
   const f = fixture(),
     s = createDeltaStore(f.bucket, f.context);
-  await assert.rejects(() => s.bucket.get(f.leaf.key), /not reachable/);
+  assert.equal(await s.bucket.get(f.leaf.key), null);
   await s.bucket.get(f.root.key);
   assert((await s.bucket.get(f.leaf.key)).size === f.leaf.bytes);
-  await assert.rejects(() => s.bucket.get(f.orphan.key), /not reachable/);
+  assert.equal(await s.bucket.get(f.orphan.key), null);
   const b = Buffer.from(JSON.stringify({ schema: 1, child: f.leaf })),
     sha = sha256(b),
     d = { key: 'catalog/objects/artworks/' + sha + '.json', sha256: sha, bytes: b.length };

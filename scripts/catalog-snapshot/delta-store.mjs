@@ -57,7 +57,10 @@ export function createDeltaStore(
   });
   async function get(key) {
     if (created.has(key)) return object(key, created.get(key));
-    if (!allowed.has(key)) throw Error('Metadata is not reachable from authenticated predecessor');
+    if (!keyPattern.test(key)) throw Error('Invalid delta metadata key');
+    // Immutable stores probe a new hash before their conditional local put.
+    // An unknown hash is absent from this overlay; never fetch/admit it from R2.
+    if (!allowed.has(key)) return null;
     if (cached.has(key)) return object(key, cached.get(key));
     if (pending.has(key)) return pending.get(key);
     const d = allowed.get(key);
