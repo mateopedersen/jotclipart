@@ -12,10 +12,11 @@ function records(): Promise<PreparedCategory[]> {
     const url = new URL(source, scope.location.origin);
     if (
       url.origin !== scope.location.origin ||
-      !/^\/category-search\/[a-f0-9]{64}\.json$/.test(url.pathname)
+      !/^\/category-search\/(?:[a-f0-9]{64}|current)\.json$/.test(url.pathname) ||
+      url.search || url.hash
     )
       throw Error('Invalid subject index');
-    const response = await fetch(url, { cache: 'force-cache' });
+    const response = await fetch(url, { cache: url.pathname.endsWith('/current.json') ? 'no-store' : 'force-cache' });
     if (!response.ok) throw Error('Subject index unavailable');
     const data = await response.json();
     if (data.version !== 1 || !Array.isArray(data.subjects) || data.subjects.length > 10000)

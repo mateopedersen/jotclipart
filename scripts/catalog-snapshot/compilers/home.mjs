@@ -1,3 +1,4 @@
+import {clientWorkers} from './client-workers.mjs';
 // Private local SSR experiment. Does not read credentials, upload or activate.
 import { createRequire } from 'node:module';
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
@@ -85,10 +86,12 @@ const server = await build({ entryPoints: [entry], outfile: join(out, 'renderer.
 const inputNames = Object.keys(server.metafile.inputs);
 if (inputNames.some(name => /(?:data\/art\.json|editorial\/reviews\.json|preview-assets|monochrome-catalog|collection-editorial\.mjs)$/.test(name))) throw Error('Full catalog or build-only code embedded in renderer');
 const virtualEntries = [...scripts.keys()].map((id, index) => [`script-${index}`, id]);
-const client = await build({ entryPoints: Object.fromEntries(virtualEntries), outdir: join(out, 'client'), publicPath:`/__ssr-client/${revision}/`, entryNames:'[name]-[hash]', chunkNames:'chunk-[hash]', loader:{'.wasm':'file'}, bundle: true, splitting: true, format: 'esm', platform: 'browser', target: 'es2022', minify: true, metafile: true, plugins: [{ name: 'private-client-scripts', setup(b) {
+const workerAssets=clientWorkers({root,outdir:join(out,'client'),revision});
+const client = await build({ entryPoints: Object.fromEntries(virtualEntries), outdir: join(out, 'client'), publicPath:`/__ssr-client/${revision}/`, entryNames:'[name]-[hash]', chunkNames:'chunk-[hash]', loader:{'.wasm':'file'}, bundle: true, splitting: true, format: 'esm', platform: 'browser', target: 'es2022', minify: true, metafile: true, plugins: [workerAssets.plugin,{ name: 'private-client-scripts', setup(b) {
   b.onResolve({filter:/\?astro&type=script/}, args=>({path:args.path,namespace:'astro-script'}));
   b.onLoad({filter:/.*/,namespace:'astro-script'},args=>({contents:scripts.get(args.path).code,loader:'ts',resolveDir:scripts.get(args.path).directory}));
 } }], define: { 'import.meta.env.PUBLIC_RELEASE_REVISION': JSON.stringify(revision), 'import.meta.env.DEV': 'false', 'import.meta.env.PROD': 'true', 'import.meta.env.BASE_URL': '"/"' }, logLevel: 'warning' });
+workerAssets.merge(client.metafile);
 const scriptUrls = Object.fromEntries(virtualEntries.map(([name, id])=>{
  const match=Object.entries(client.metafile.outputs).find(([,info])=>info.entryPoint===`astro-script:${id}`);
  if(!match)throw Error(`Missing content-versioned browser entry ${name}`);
