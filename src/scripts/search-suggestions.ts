@@ -174,6 +174,11 @@ export function initSearchSuggestions() {
     document.addEventListener('pointerdown', (event) => {
       if (!form.contains(event.target as Node)) close();
     });
-    window.addEventListener('pageshow', close);
+    // Initial pageshow can arrive after a visitor starts typing while large
+    // original images finish loading. Only a restored BFCache page needs reset.
+    window.addEventListener('pageshow', (event) => {
+      if (event.persisted) close();
+    });
+    if (document.activeElement === input && input.value.trim()) suggest();
   }
 }
