@@ -605,6 +605,10 @@
   }
 }
 @media (max-width: 359px) {
+  .home-quick-subjects > a {
+    gap: 4px;
+    padding-inline: 5px;
+  }
   .home-collection-display {
     padding-inline: 12px;
   }

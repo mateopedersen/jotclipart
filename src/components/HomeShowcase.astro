@@ -143,7 +143,7 @@ const selection = [
               width={subject.image.width}
               height={subject.image.height}
               loading="lazy"
-              fetchpriority={index === 0 ? 'high' : 'low'}
+              fetchpriority={index === 0 ? 'high' : undefined}
               data-original-placeholder={subject.loadingPreview?.url}
               data-original-placeholder-for={subject.loadingPreview?.source}
               decoding="async"

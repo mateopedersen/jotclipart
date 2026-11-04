@@ -1,3 +1,5 @@
+import {readPreparedHTML} from './prepared-html.mjs';
+import {readPreparedStudioInfo} from './prepared-studio.mjs';
 import { preloadDocumentModules } from './module-preloads.mjs';
 import { navigationRulesResponse, publicNavigationDocument } from './navigation-speculation.mjs';
 import { snapshotHTMLResponse } from './snapshot-html-cache.mjs';
@@ -159,8 +161,10 @@ export function createCatalogHandler({
       else if (path === '/catalog-search.json') response = await api.post(request);
       else if (path === '/search-data/manifest.json') response = await api.manifest(request);
       else if (path === '/studio-manifest.json') response = await api.studioManifest(request);
-      else if (path === '/studio-featured.json' || path === '/studio-catalog.json')
-        response = await api.studioCatalog(request);
+      else if (path === '/studio-featured.json' || path === '/studio-catalog.json') {
+        const prepared=rendererSHA256?await readPreparedStudioInfo(context,rendererSHA256):null;
+        response=prepared===null?await api.studioCatalog(request):new Response(prepared,{headers:{'Content-Type':'application/json','Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff','x-uc-data-source':'prepared'}});
+      }
       else if (path === '/catalog-stats.json') {
         const c = await cc(),
           base =
@@ -240,7 +244,9 @@ export function createCatalogHandler({
         );
       } else {
         const generate = async () => {
-          let state, html;
+          let state, html=await readPreparedHTML(context,path,rendererSHA256);
+          resultHeaders["x-uc-html-source"]=html===null?"rendered":"prepared";
+          if(html===null){html=undefined;
           if (path === '/') {
             state = await readHomePageState(bucket, context, { allowFixture: allowPrivateFixture });
             html = await renderHome(state, 'https://ultraclipart.com/', homeCSS, homeScripts);
@@ -332,6 +338,7 @@ export function createCatalogHandler({
                 shells[selected][1],
                 shellScripts,
               );
+          }
           }
           if (html !== undefined) {
             html = preloadDocumentModules(html, softwareRevision, renderers.moduleImports);

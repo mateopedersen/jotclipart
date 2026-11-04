@@ -35,9 +35,11 @@ async function verifyNativeContentWithSource({
   parentBucket,
   software,
   packet,
+  preparedPresentation,
 }) {
   const sourcePacket = packet,
     sourcePacketSHA256 = sha(Buffer.from(JSON.stringify(sourcePacket)));
+  if(packet.status==='SOURCE_DERIVED_PRESENTATION_BATCH')packet={changes:[],topicChanges:[]};
   if (packet.status === 'SOURCE_REVIEWED_COLLECTION_PROSE_BATCH') {
     const sourceBucket = {
       get: async (key) => {
@@ -205,6 +207,27 @@ async function verifyNativeContentWithSource({
         body = await r.text();
       assert.equal(r.status, 200, path + ' ' + r.headers.get('x-private-error'));
       results.push({ path, status: r.status, sha256: sha(Buffer.from(body)) });
+    }
+    if(preparedPresentation?.studio){
+      const source=preparedPresentation.studio;
+      const {snapshotDigest}=await import('../../server/catalog-snapshot/release-pointer.mjs');
+      const root=await snapshotDigest(candidate);
+      for(const path of ['/studio-featured.json','/studio-catalog.json']){
+        const r=await mf.dispatchFetch('https://ultraclipart.com'+path,{headers}),body=await r.text(),info=JSON.parse(body);
+        assert.equal(r.status,200,path);assert.equal(r.headers.get('x-uc-data-source'),'prepared',path);
+        assert.equal(info.transport.snapshot,root);assert.equal(info.items.length,source.entries);
+        assert.equal(sha(Buffer.from(body.split(root).join(source.sourceRoot))),source.sourceBodySHA256,path+' canonical Studio data');
+        results.push({path,status:r.status,source:'prepared-data',sha256:sha(Buffer.from(body))});
+      }
+    }
+    if(preparedPresentation){
+      const paths=preparedPresentation.receipts.map(r=>r.path);
+      if(paths.length>1536||new Set(paths).size!==paths.length)throw Error('Prepared native route budget');
+      for(const path of paths){const r=await mf.dispatchFetch('https://ultraclipart.com'+path,{headers}),body=await r.text();
+        assert.equal(r.status,200,path+' prepared route');assert(body.includes('name="catalog-snapshot"'));
+        assert.equal(r.headers.get('x-uc-html-source'),'prepared',path+' prepared source');
+        results.push({path,status:r.status,sha256:sha(Buffer.from(body)),source:'prepared'});
+      }
     }
     return {
       status: 'CHANGED_CONTENT_NATIVE_ROUTES_VERIFIED_NOT_PUBLISHED',

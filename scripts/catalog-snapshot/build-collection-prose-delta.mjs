@@ -40,13 +40,13 @@ async function entries(store, descriptor, prefix = '') {
   return rows;
 }
 export async function buildCollectionProseDelta({
-  parentContext, parentBucket, revision, sourceReceiptSHA256, changes, validateSourceTopic,
+  parentContext, parentBucket, revision, sourceReceiptSHA256, changes, validateSourceTopic, preparePresentation,
 }) {
   if (!/^[a-f0-9]{40}$/.test(revision ?? '') || revision === parentContext?.snapshot?.revision ||
       !hex.test(sourceReceiptSHA256 ?? '') || !Array.isArray(changes) || !changes.length || changes.length > 10000 ||
       new Set(changes.map(c => c.slug)).size !== changes.length || typeof validateSourceTopic !== 'function')
     throw Error('Bounded source reviewed prose delta required');
-  const overlay = createDeltaStore(parentBucket, parentContext);
+  const overlay = createDeltaStore(parentBucket, parentContext, preparePresentation ? {maxBytes:256*1024*1024} : {});
   const base = await openSnapshot(overlay.bucket, { provided: parentContext.snapshot });
   if (base.rootSHA256 !== parentContext.rootSHA256) throw Error('Authenticated prose parent differs');
   const store = facetStore(overlay.bucket, { writable: true, maxReads: 20000, maxBytes: 128 * 1024 * 1024 });
@@ -135,10 +135,14 @@ export async function buildCollectionProseDelta({
   }) };
   const candidate = { schema: 1, fixture: true, status: 'PRIVATE_UNPUBLISHABLE', revision,
     parentRevision: base.snapshot.revision, indexes };
+  let presentationReceipt;
+  if(preparePresentation){const context=await openSnapshot(overlay.bucket,{provided:candidate,allowFixture:true,maxReadObjects:20000,maxReadBytes:256*1024*1024});
+    const prepared=await preparePresentation({context,bucket:overlay.bucket});if(!prepared?.collections||!prepared?.receipt)throw Error('Canonical presentation stage missing');
+    indexes.collections=prepared.collections;presentationReceipt=prepared.receipt;}
   const graph = overlay.verifyChangedClosure(indexes);
   return { status: 'PRIVATE_PROSE_DELTA_REQUIRES_SOURCE_GRAPH_NATIVE_AND_REMOTE_APPROVAL',
-    candidate, created: overlay.created, changed, graph, sourceReceiptSHA256,
-    parentSnapshotSHA256: parentContext.rootSHA256, fullCatalogPagesBuilt: 0, fullArtworkScans: 0,
+    candidate, created: overlay.created, changed, graph, sourceReceiptSHA256, ...(presentationReceipt?{presentationReceipt}:{}),
+    parentSnapshotSHA256: parentContext.rootSHA256, fullCatalogPagesBuilt: 0, fullArtworkScans: presentationReceipt ? 1 : 0, preparedDiscoveryDocuments: presentationReceipt?.canonicalDocumentsPrepared ?? 0, nativeMediaScans: 0,
     metrics: { ...overlay.metrics(), topicRecordsRead: oldRecords.size,
       openingIndexBootstrapped: !collections.openingIndex, openingFingerprints: openings.size },
     artworkEnvelopeRebinding: { before: base.snapshot.indexes.artworks, after: artworks,

@@ -67,6 +67,7 @@ export async function sealCatalogContent({
   try {
     const runReplay = () => replay({
       packetBytes,
+      software,
       parentBucket,
       verifier,
       output: replayDirectory,
@@ -137,8 +138,10 @@ export async function sealCatalogContent({
         readFileSync(join(directory, 'native-integration-report.json')),
       ),
       softwareABI: code.abiSHA256,
+      preparedDiscoveryDocuments: existsSync(join(directory,'prepared-presentation-receipt.json'))?read('prepared-presentation-receipt.json').canonicalDocumentsPrepared:0,
       fullCatalogPagesBuilt: 0,
-      fullCatalogScans: 0,
+      fullCatalogScans: existsSync(join(directory,'prepared-presentation-receipt.json'))?1:0,
+      nativeMediaScans: 0,
       at: new Date().toISOString(),
     },
     graphBytes = Buffer.from(JSON.stringify(graph));

@@ -1,3 +1,4 @@
+import {loadPresentationSoftware,stagePresentationViews} from './presentation.mjs';
 // Source-replayed prose only; no artwork/media scan, build or publication.
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { resolve, join } from 'node:path';
@@ -15,7 +16,7 @@ import { bytesOf, digest } from '../../server/catalog-collections/store.mjs';
 import { collectionMetaDescription } from '../../src/lib/collection-meta.mjs';
 import { merkle } from '../delivery/manifest.mjs';
 const hash = (b) => createHash('sha256').update(b).digest('hex');
-export async function prepareCollectionProse({ packetBytes, parentBucket, verifier, output }) {
+export async function prepareCollectionProse({ packetBytes, parentBucket, verifier, output, software }) {
   const packet = JSON.parse(Buffer.from(packetBytes));
   if (
     packet.schema !== 1 ||
@@ -47,6 +48,12 @@ export async function prepareCollectionProse({ packetBytes, parentBucket, verifi
   }
   const parent = await captureProductionSnapshot(parentBucket, verifier);
   assert.equal(parent.rootSHA256, packet.parentSnapshotSHA256);
+  const presentation=software?await loadPresentationSoftware(software,verifier):null;
+  if(!presentation&&((await parent.getFacet('collections')).preparedHTML||(await parent.getFacet('collections')).preparedStudio))throw Error('Installed presentation software required for this predecessor');
+  const preparePresentation=presentation?async ({context,bucket})=>{
+    const work=()=>stagePresentationViews({context,bucket,...presentation,allowFixture:true});
+    return typeof parentBucket.withoutDiskCacheAdmissions==='function'?parentBucket.withoutDiskCacheAdmissions(work):work();
+  }:undefined;
   const attestation = packet.inventoryAttestation;
   assert.equal(
     attestation.status,
@@ -67,6 +74,7 @@ export async function prepareCollectionProse({ packetBytes, parentBucket, verifi
       packetSHA256: hash(packetBytes),
       inventoryAttestationSHA256: hash(Buffer.from(JSON.stringify(attestation))),
       sourceHashes: packet.sourceHashes,
+      ...(presentation?{presentationSoftware:{abiSHA256:presentation.rendererSHA256,bundleSHA256:presentation.bundleSHA256}}:{}),
       openingProof: verifyCollectionOpenings(registry),
       changedTopics: packet.changes.length,
       changedArtworks: 0,
@@ -87,6 +95,7 @@ export async function prepareCollectionProse({ packetBytes, parentBucket, verifi
     revision: packet.revision,
     sourceReceiptSHA256: hash(sourceBytes),
     changes: packet.changes,
+    preparePresentation,
     validateSourceTopic: async ({ change, oldRecord }) => {
       const r = registry.topics[change.slug];
       assert.deepEqual(change.record.editorial, r);
@@ -136,6 +145,7 @@ export async function prepareCollectionProse({ packetBytes, parentBucket, verifi
         value instanceof Uint8Array ? value : JSON.stringify(value),
         { flag: 'wx' },
       );
+  if(result.presentationReceipt)write('prepared-presentation-receipt.json',result.presentationReceipt);
   write('packet.json', packetBytes);
   write('source-receipt.json', sourceBytes);
   write('parent-snapshot.json', parent.snapshot);

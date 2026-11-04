@@ -1,5 +1,5 @@
-// Source-approved metadata composition. No Astro build, native exports, remote
-// writes, pointer activation or whole-catalog enumeration occurs in this module.
+// Source-approved metadata composition. No template compilation, native exports, remote writes or activation.
+// Optional bounded discovery HTML preparation reads authenticated metadata only.
 import { createDeltaStore } from './delta-store.mjs';
 import { openSnapshot } from '../../server/catalog-snapshot/snapshot-context.mjs';
 import { readArtwork } from '../../server/catalog-snapshot/artwork-facet-reader.mjs';
@@ -37,6 +37,7 @@ export async function buildCatalogDelta({
   validateSourceChange,
   validateSourceTopic,
   refreshViews,
+  preparePresentation,
 }) {
   if (
     !/^[a-f0-9]{40}$/.test(revision ?? '') ||
@@ -52,7 +53,7 @@ export async function buildCatalogDelta({
     typeof refreshViews !== 'function'
   )
     throw Error('Bounded reviewed source delta, topics and all view refreshes required');
-  const overlay = createDeltaStore(parentBucket, parentContext),
+  const overlay = createDeltaStore(parentBucket, parentContext, preparePresentation ? {maxBytes:256*1024*1024} : {}),
     bucket = overlay.bucket,
     base = await openSnapshot(bucket, {
       provided: parentContext.snapshot,
@@ -361,6 +362,13 @@ export async function buildCatalogDelta({
       topicChanges,
       readArtwork: (id) => readArtwork(current, id),
     });
+  let presentationReceipt;
+  if (preparePresentation) {
+    const presentationContext=await openSnapshot(bucket,{provided:candidate,allowFixture:true,maxReadObjects:20000,maxReadBytes:256*1024*1024});
+    const prepared=await preparePresentation({context:presentationContext,bucket});
+    if(!prepared?.collections||!prepared?.receipt)throw Error('Canonical presentation stage missing');
+    indexes.collections=prepared.collections;presentationReceipt=prepared.receipt;
+  }
   const graph = overlay.verifyChangedClosure(indexes);
   return {
     status: 'PRIVATE_COMPLETE_DELTA_REQUIRES_SOURCE_GRAPH_NATIVE_AND_REMOTE_APPROVAL',
@@ -372,7 +380,10 @@ export async function buildCatalogDelta({
     metrics: overlay.metrics(),
     searchMetrics: searchStore.metrics(),
     collectionMetrics: ccStore.metrics(),
+    ...(presentationReceipt?{presentationReceipt}:{}),
     fullCatalogPagesBuilt: 0,
-    fullCatalogScans: 0,
+    fullCatalogScans: presentationReceipt ? 1 : 0,
+    preparedDiscoveryDocuments: presentationReceipt?.canonicalDocumentsPrepared ?? 0,
+    nativeMediaScans: 0,
   };
 }

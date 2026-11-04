@@ -162,6 +162,7 @@ export async function publishReviewedCapsule({
     async (bucket) => {
       const result = await prepareCatalogContent({
         packetBytes: Buffer.from(JSON.stringify(packet)),
+        software,
         parentBucket: bucket,
         verifier,
         output: join(output, 'prepared'),
@@ -174,6 +175,7 @@ export async function publishReviewedCapsule({
         parentBucket: bucket,
         software,
         packet,
+        preparedPresentation: result.result.presentationReceipt,
       });
       writeFileSync(
         join(result.output, 'native-integration-report.json'),

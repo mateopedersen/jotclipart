@@ -1,4 +1,6 @@
-// Changed-content composition only. No Astro/templates/full catalog or activation.
+import {loadPresentationSoftware,stagePresentationViews} from './presentation.mjs';
+// Changed content plus optional bounded discovery HTML preparation.
+// No template compilation, native-media scan or activation.
 import { mkdirSync, writeFileSync, readFileSync, lstatSync, existsSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import { createHash } from 'node:crypto';
@@ -47,6 +49,7 @@ export async function validateContentPacket(packet) {
 }
 export async function prepareCatalogContent({
   packetBytes,
+  software,
   parentBucket,
   verifier,
   output,
@@ -73,6 +76,12 @@ export async function prepareCatalogContent({
     throw Error('Content predecessor changed');
   if (!(await parent.getFacet('collections')).openingIndex)
     throw Error('Verified opening-index bootstrap required before new content');
+  const presentation=software?await loadPresentationSoftware(software,verifier):null;
+  if(!presentation&&((await parent.getFacet('collections')).preparedHTML||(await parent.getFacet('collections')).preparedStudio))throw Error('Installed presentation software required for this predecessor');
+  const preparePresentation=presentation?async ({context,bucket})=>{
+    const work=()=>stagePresentationViews({context,bucket,...presentation,allowFixture:true,progress});
+    return typeof parentBucket.withoutDiskCacheAdmissions==='function'?parentBucket.withoutDiskCacheAdmissions(work):work();
+  }:undefined;
   const media = await verifyIncomingMedia(packet.incomingMediaManifest, { fetcher, progress }),
     mediaBytes = Buffer.from(JSON.stringify(media)),
     source = {
@@ -87,6 +96,7 @@ export async function prepareCatalogContent({
       ...(plannedMedia ? { incomingMediaStageReceiptSHA256: hash(mediaStageBytes) } : {}),
       changedArtworks: packet.changes.length,
       changedTopics: packet.topicChanges.length,
+      ...(presentation?{presentationSoftware:{abiSHA256:presentation.rendererSHA256,bundleSHA256:presentation.bundleSHA256}}:{}),
       sourceHashes: Object.fromEntries(packet.sourceFiles.map((f) => [resolve(f.path), f.sha256])),
     },
     sourceBytes = Buffer.from(JSON.stringify(source)),
@@ -106,6 +116,7 @@ export async function prepareCatalogContent({
       topicChanges: packet.topicChanges,
       ...validators,
       refreshViews: refreshDiscoveryViews,
+      preparePresentation,
     });
   // Only final reachable new nodes are staged. Intermediate private search roots
   // and untouched predecessor files do not enter the upload manifest.
@@ -141,6 +152,7 @@ export async function prepareCatalogContent({
         typeof value === 'string' || value instanceof Uint8Array ? value : JSON.stringify(value),
         { flag: 'wx' },
       );
+  if(result.presentationReceipt)write('prepared-presentation-receipt.json',result.presentationReceipt);
   write('packet.json', packetBytes);
   write('parent-snapshot.json', JSON.stringify(parent.snapshot));
   write('snapshot-candidate.json', result.candidate);
@@ -156,7 +168,9 @@ export async function prepareCatalogContent({
     changedGraph: result.graph,
     metrics: result.metrics,
     fullCatalogPagesBuilt: 0,
-    fullCatalogScans: 0,
+    fullCatalogScans: result.presentationReceipt ? 1 : 0,
+    preparedDiscoveryDocuments: result.presentationReceipt?.canonicalDocumentsPrepared ?? 0,
+    nativeMediaScans: 0,
   });
   progress({
     phase: 'content-delta-prepared-not-live',
