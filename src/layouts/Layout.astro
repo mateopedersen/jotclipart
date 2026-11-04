@@ -123,6 +123,16 @@ const releaseRevision = /^[a-f0-9]{40}$/.test(import.meta.env.PUBLIC_RELEASE_REV
   <head>
     <meta charset="UTF-8" />
     <link rel="preconnect" href="https://assets.ultraclipart.com" />
+    <script>
+      import { initOriginalImageLoading } from '../scripts/original-image-loading';
+      initOriginalImageLoading();
+    </script>
+    <script>
+      import { initNavigationWarmth } from '../scripts/navigation-warmth';
+      initNavigationWarmth();
+      import { initCuteSurprise } from '../scripts/cute-surprise';
+      initCuteSurprise();
+    </script>
     <script is:inline set:html={cookieStartupScript} />
     {preloadInterfaceFont && (
       <link
@@ -181,6 +191,13 @@ const releaseRevision = /^[a-f0-9]{40}$/.test(import.meta.env.PUBLIC_RELEASE_REV
       )}
     />
     <slot name="head" />
+    <noscript>
+      <style is:inline>
+        img[data-original-preview] {
+          background-image: none !important;
+        }
+      </style>
+    </noscript>
   </head>
   <body id="page-top" class:list={{ 'reader-page': readingFont }}>
     <a class="skip" href="#main">
@@ -410,8 +427,6 @@ const releaseRevision = /^[a-f0-9]{40}$/.test(import.meta.env.PUBLIC_RELEASE_REV
     <SiteFooter />
     <CookieNotice />
     <script>
-      import { initCuteSurprise } from '../scripts/cute-surprise';
-      initCuteSurprise();
       import '../share/entry';
       const header = document.querySelector<HTMLElement>('[data-site-header]');
       if (header) {
@@ -500,8 +515,6 @@ const releaseRevision = /^[a-f0-9]{40}$/.test(import.meta.env.PUBLIC_RELEASE_REV
       import '../scripts/downloads';
       import { initSearchSuggestions } from '../scripts/search-suggestions';
       import { initImageInformation } from '../scripts/image-information';
-      import { initOriginalImageLoading } from '../scripts/original-image-loading';
-      initOriginalImageLoading();
       initSearchSuggestions();
       initImageInformation();
     </script>

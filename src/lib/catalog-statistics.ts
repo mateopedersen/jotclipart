@@ -8,6 +8,7 @@ import {
   slugify,
 } from './catalog';
 import type { CatalogCounts } from './catalog-counts';
+import { withCuratedCollectionCounts } from './curated-collection-policy.mjs';
 
 const topics: Record<string, number> = Object.fromEntries(
   availableTopics.map((topic) => [topic.slug, 0]),
@@ -35,8 +36,8 @@ const totals = {
 };
 const values = { totals, topics, collections };
 // One stable release identity changes for additions, removals and regrouping.
-export const catalogStatistics: CatalogCounts = {
+export const catalogStatistics: CatalogCounts = withCuratedCollectionCounts({
   schema: 1,
   version: fingerprint(values),
   ...values,
-};
+});

@@ -109,7 +109,8 @@ export function changes(previous, current) {
 /** A retry may run from a newer tooling-only checkout, but it must still bind
  * to the exact live control and rendered revisions confirmed by Cloudflare. */
 export function notificationRevisions({ head, renderedRevision, controlRevision, isAncestor }) {
-  const control = controlRevision ?? head, revision = renderedRevision ?? control;
+  const control = controlRevision ?? head,
+    revision = renderedRevision ?? control;
   if (![head, control, revision].every((value) => /^[a-f0-9]{40}$/.test(value ?? '')))
     throw Error('Invalid rendered or control revision');
   if (control !== head && !isAncestor(control, head))
@@ -119,7 +120,14 @@ export function notificationRevisions({ head, renderedRevision, controlRevision,
   return { revision, controlRevision: control };
 }
 
-export function assertProduction(project, release, manifest, revision, html, controlRevision = revision) {
+export function assertProduction(
+  project,
+  release,
+  manifest,
+  revision,
+  html,
+  controlRevision = revision,
+) {
   if (!/^[a-f0-9]{40}$/.test(revision ?? '') || !/^[a-f0-9]{40}$/.test(controlRevision ?? ''))
     throw Error('Invalid rendered or control revision');
   const deployment = project?.canonical_deployment;
@@ -173,7 +181,9 @@ export async function sendChanges({
       throw Error('Permanent redirect destination is not a current canonical page');
     if (!verifiedTargets.has(destination)) {
       const target = await request(destination, {
-        method: 'GET', redirect: 'manual', signal: AbortSignal.timeout(30000),
+        method: 'GET',
+        redirect: 'manual',
+        signal: AbortSignal.timeout(30000),
       });
       if (target.status !== 200) throw Error('Permanent redirect destination is not directly live');
       if (/\b(noindex|none)\b/i.test(target.headers?.get('x-robots-tag') ?? ''))
@@ -182,8 +192,11 @@ export async function sendChanges({
       const canonical = [...html.matchAll(/<link\b[^>]*>/gi)]
         .map((match) => attributes(match[0]))
         .find((entry) => entry.rel?.toLowerCase() === 'canonical')?.href;
-      if (!canonical || canonicalUrl(canonical) !== destination ||
-          contentFingerprint(html) !== current[destination])
+      if (
+        !canonical ||
+        canonicalUrl(canonical) !== destination ||
+        contentFingerprint(html) !== current[destination]
+      )
         throw Error('Permanent redirect destination does not match the verified current content');
       verifiedTargets.add(destination);
     }
@@ -260,7 +273,7 @@ export function prepareIndexNowSnapshot({ root, target, revision, manifest }) {
   const index = readFileSync(join(target, 'sitemap.xml'), 'utf8');
   const children = [...index.matchAll(/<sitemap>\s*<loc>([^<]+)<\/loc>\s*<\/sitemap>/g)]
     .map((m) => new URL(decode(m[1])))
-    .filter((url) => /^\/sitemap-pages(?:-\d+)?\.xml$/.test(url.pathname));
+    .filter((url) => /^\/sitemap-(?:pages(?:-\d+)?|collections)\.xml$/.test(url.pathname));
   if (!children.length || children.some((url) => url.origin !== SITE || url.search || url.hash))
     throw Error('Invalid page sitemap index');
   const fingerprints = {};
@@ -314,7 +327,14 @@ export function prepareIndexNowSnapshot({ root, target, revision, manifest }) {
   return { urls: Object.keys(fingerprints).length, revision };
 }
 
-export async function runIndexNow({ root, send = false, initialize = false, attempts = 1, renderedRevision, controlRevision: requestedControlRevision }) {
+export async function runIndexNow({
+  root,
+  send = false,
+  initialize = false,
+  attempts = 1,
+  renderedRevision,
+  controlRevision: requestedControlRevision,
+}) {
   const config = JSON.parse(readFileSync(join(root, 'config/indexnow.json'), 'utf8'));
   if (
     config.host !== 'ultraclipart.com' ||
@@ -327,11 +347,22 @@ export async function runIndexNow({ root, send = false, initialize = false, atte
     cwd: root,
     encoding: 'utf8',
   }).trim();
-  const {revision, controlRevision} = notificationRevisions({head, renderedRevision,
-    controlRevision:requestedControlRevision, isAncestor:(ancestor, descendant)=>{
-      try {execFileSync('git',['merge-base','--is-ancestor',ancestor,descendant],{cwd:root,stdio:'ignore'});return true;}
-      catch {return false;}
-    }});
+  const { revision, controlRevision } = notificationRevisions({
+    head,
+    renderedRevision,
+    controlRevision: requestedControlRevision,
+    isAncestor: (ancestor, descendant) => {
+      try {
+        execFileSync('git', ['merge-base', '--is-ancestor', ancestor, descendant], {
+          cwd: root,
+          stdio: 'ignore',
+        });
+        return true;
+      } catch {
+        return false;
+      }
+    },
+  });
   const manifest = JSON.parse(
     readFileSync(join(root, 'work/delivery', revision, 'verified-manifest.json'), 'utf8'),
   );
@@ -430,7 +461,8 @@ export async function runIndexNow({ root, send = false, initialize = false, atte
         const release = await receipt.json();
         if (
           release.workerSha256 !== prepared.workerSha256 ||
-          prepared.verifiedRoot !== manifest.root || prepared.renderedRevision !== revision ||
+          prepared.verifiedRoot !== manifest.root ||
+          prepared.renderedRevision !== revision ||
           prepared.controlRevision !== controlRevision
         )
           throw Error('Live release wrapper differs from the checked package');
@@ -461,7 +493,8 @@ export async function runIndexNow({ root, send = false, initialize = false, atte
         schema: 1,
         host: config.host,
         keySha256: sha(config.key),
-        revision, controlRevision,
+        revision,
+        controlRevision,
         deploymentId,
         verifiedRoot: manifest.root,
         acceptedAt: new Date().toISOString(),
@@ -475,7 +508,8 @@ export async function runIndexNow({ root, send = false, initialize = false, atte
     const result = await sendChanges({ previous, current, config, save });
     const report = {
       status: 'INDEXNOW_RECEIVED_NOT_INDEXING_GUARANTEE',
-      revision, controlRevision,
+      revision,
+      controlRevision,
       deploymentId,
       verifiedRoot: manifest.root,
       ...result,
@@ -493,7 +527,10 @@ if (process.argv[1] && resolve(process.argv[1]) === resolve(import.meta.filename
   try {
     const revisionArgument = (name) => {
       const index = args.indexOf(name);
-      if (index !== -1 && (!/^[a-f0-9]{40}$/.test(args[index + 1] ?? '') || args.lastIndexOf(name) !== index))
+      if (
+        index !== -1 &&
+        (!/^[a-f0-9]{40}$/.test(args[index + 1] ?? '') || args.lastIndexOf(name) !== index)
+      )
         throw Error(`Invalid ${name} argument`);
       return index === -1 ? undefined : args[index + 1];
     };

@@ -52,8 +52,8 @@ const seed = {
       </button>
     </div>
     <div class="gallery">
-      {initial.map((item) => (
-        <Card item={item} />
+      {initial.map((item, index) => (
+        <Card item={item} priority={index === 0} />
       ))}
     </div>
     <div class="latest-more">

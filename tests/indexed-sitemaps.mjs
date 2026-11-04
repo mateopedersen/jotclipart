@@ -1,11 +1,12 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtempSync, writeFileSync, rmSync, mkdirSync } from 'node:fs';
+import { mkdtempSync, readFileSync, writeFileSync, rmSync, mkdirSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { readIndexedSitemaps } from '../scripts/seo/indexed-sitemaps.mjs';
 import { auditImageSeo } from '../scripts/seo/audit-image-seo.mjs';
 import { imageObject } from '../src/lib/image-schema.ts';
+import { displayTitle } from '../src/lib/display-title.ts';
 
 const site = 'https://ultraclipart.com/';
 function fixture(names, indexNames = names) {
@@ -121,7 +122,7 @@ test('image SEO audit covers all parts and rejects a duplicate in a later part',
     const image = { ...a, ...publishedAssets[a.id] };
     writeFileSync(
       join(folder, 'index.html'),
-      `<link rel="canonical" href="${url}"><meta name="robots" content="index,max-image-preview:large"><img src="${original}" alt="${a.alt}" title="${a.title}" width="20" height="30"><script type="application/ld+json">${JSON.stringify(imageObject(image))}</script>`,
+      `<link rel="canonical" href="${url}"><meta name="robots" content="index,max-image-preview:large"><img src="${original}" alt="${a.alt}" title="${displayTitle(a.title)}" width="20" height="30"><script type="application/ld+json">${JSON.stringify(imageObject(image))}</script>`,
     );
     const suffix = i ? '-2' : '';
     writeFileSync(
@@ -138,6 +139,14 @@ test('image SEO audit covers all parts and rejects a duplicate in a later part',
     assert.equal(report.imageSitemapOriginals, 2);
     assert.equal(report.pageSitemapEntries, 2);
     assert.deepEqual(report.errors, []);
+    const page = join(directory, 'art', 'one', 'index.html'),
+      correct = readFileSync(page, 'utf8');
+    writeFileSync(page, correct.replace('title="Title One"', 'title="Unrelated Picture"'));
+    assert.throws(
+      () => auditImageSeo({ root, directory, catalog, publishedAssets }),
+      /Image SEO audit failed/,
+    );
+    writeFileSync(page, correct);
     writeFileSync(
       join(directory, 'sitemap-images-2.xml'),
       `<urlset><image:loc>${publishedAssets.one.webp}</image:loc></urlset>`,

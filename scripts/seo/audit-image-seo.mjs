@@ -19,6 +19,7 @@ import {
 import { imageFileSignature } from './image-file-signature.mjs';
 import { readIndexedSitemaps } from './indexed-sitemaps.mjs';
 import { readReviewedImportCatalog } from '../reviewed-imports.mjs';
+import { displayTitle } from '../../src/lib/display-title.ts';
 
 export function auditImageSeo({ root, directory, catalog, publishedAssets = null }) {
   const eligible = catalog.filter((a) => a.published && a.indexable);
@@ -82,7 +83,7 @@ export function auditImageSeo({ root, directory, catalog, publishedAssets = null
       schemaUrls.add(node.contentUrl);
       const item = record.item;
       if (
-        node.name !== item.title ||
+        node.name !== displayTitle(item.title) ||
         node.description !== item.description ||
         node.caption !== item.alt
       )
@@ -123,7 +124,7 @@ export function auditImageSeo({ root, directory, catalog, publishedAssets = null
       sourceFiles.add(url);
       if (record && a.alt?.trim()) {
         counts.catalogImageInstances++;
-        if (a.alt !== record.item.alt || a.title !== record.item.title)
+        if (a.alt !== record.item.alt || a.title !== displayTitle(record.item.title))
           fail(page, 'rendered image wording', record.item.id);
         if (!noindex) {
           const original =

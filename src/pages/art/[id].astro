@@ -1,5 +1,6 @@
 ---
 import { displayTitle } from '../../lib/display-title';
+import { imageLoadingPreview, loadingPreviewStyle } from '../../lib/image-loading-preview';
 import { imageObject } from '../../lib/image-schema';
 import { downloadDetails } from '../../lib/download-data';
 import { structuredData, breadcrumbs } from '../../lib/structured-data';
@@ -25,6 +26,7 @@ const note = (
 if (item.layered && !note) throw new Error(`Missing source layers for ${item.id}`);
 const layers = note?.layers ?? [];
 const originalImage = item.layered ? item.svg! : item.webp;
+const loadingPreview = imageLoadingPreview(item, originalImage);
 const topic = topics.find((t) => t.slug === item.topic)!;
 const facts = artworkDetails(item);
 const downloadRecord = {
@@ -48,6 +50,9 @@ const downloadRecord = {
   imageHeight={item.height}
 >
   <Fragment slot="head">
+    {loadingPreview && (
+      <link rel="preload" as="image" href={loadingPreview.url} fetchpriority="high" />
+    )}
     {!item.layered && <link rel="preload" as="image" href={originalImage} fetchpriority="high" />}
     {item.published && item.indexable && (
       <script
@@ -67,7 +72,11 @@ const downloadRecord = {
     />
   </Fragment>
   <div class="breadcrumb">
-    <a href="/">Home</a> / <a href={`/clipart/${item.topic}/`} data-display-title>{displayTitle(topic.keyword)}</a> / {item.title}
+    <a href="/">Home</a> /{' '}
+    <a href={`/clipart/${item.topic}/`} data-display-title>
+      {displayTitle(topic.keyword)}
+    </a>{' '}
+    / {item.title}
   </div>
   <div class="detail art-detail">
     <div>
@@ -87,6 +96,10 @@ const downloadRecord = {
           height={item.height}
           fetchpriority="high"
           decoding="async"
+          data-original-placeholder={loadingPreview?.url}
+          data-original-placeholder-for={loadingPreview?.source}
+          data-original-preview={loadingPreview ? 'pending' : undefined}
+          style={loadingPreviewStyle(loadingPreview)}
         />
       </a>
       <fieldset class="swatches art-preview-controls">
@@ -154,7 +167,9 @@ const downloadRecord = {
           </dt>
           <dd>
             <a class="art-collection-link" href={`/clipart/${item.topic}/`}>
-              <span class="art-collection-name" data-display-title>{displayTitle(topic.keyword)}</span>
+              <span class="art-collection-name" data-display-title>
+                {displayTitle(topic.keyword)}
+              </span>
               <span class="art-collection-arrow" aria-hidden="true">
                 <NavigationArrow size={22} variant="collection" />
               </span>

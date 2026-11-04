@@ -8,6 +8,13 @@ import {
   clustersForTopic,
 } from './catalog';
 import { catalogStatistics } from './catalog-statistics';
+import {
+  resolveReviewedCover,
+  coverTone,
+  reviewedPrimaryCopy,
+} from './curated-collection-policy.mjs';
+
+const artworkById = new Map(art.map((item) => [item.id, item]));
 
 const artworkByTopic = new Map<string, typeof art>();
 for (const item of art) {
@@ -63,10 +70,12 @@ export const categoryCollections = availableClusters
     }
     return {
       ...design,
+      ...reviewedPrimaryCopy(slugify(cluster)),
       cluster,
       slug: slugify(cluster),
       subjects,
-      previews: previews.slice(0, 3),
+      previews: resolveReviewedCover(slugify(cluster), artworkById) ?? previews.slice(0, 3),
+      tone: coverTone(slugify(cluster)),
       count: catalogStatistics.collections[slugify(cluster)]?.artworks ?? 0,
     };
   })

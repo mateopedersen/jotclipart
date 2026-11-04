@@ -1,5 +1,6 @@
 ---
 import { displayTitle } from '../../lib/display-title';
+import { imageLoadingPreview } from '../../lib/image-loading-preview';
 import { imageObject } from '../../lib/image-schema';
 import { collectionMetaDescription } from '../../lib/collection-meta.mjs';
 import { structuredData, breadcrumbs } from '../../lib/structured-data';
@@ -30,6 +31,7 @@ const items = topicArt(topic.slug).sort(
   (a, b) => (featured.get(a.id) ?? 999) - (featured.get(b.id) ?? 999),
 );
 const topicReady = items.length > 0 && items.every((item) => item.indexable && item.published);
+const firstLoadingPreview = items[0] && imageLoadingPreview(items[0]);
 const title = displayTitle(topic.keyword);
 const description = reviewedIntro;
 if (!description) throw new Error(`Missing topic introduction: ${topic.slug}`);
@@ -45,6 +47,15 @@ const searchDescription = collectionMetaDescription(description);
   imageHeight={items[0]?.height}
   noindex={!topicReady}
 >
+  {firstLoadingPreview && (
+    <link
+      slot="head"
+      rel="preload"
+      as="image"
+      href={firstLoadingPreview.url}
+      fetchpriority="high"
+    />
+  )}
   <script
     slot="head"
     type="application/ld+json"
@@ -98,8 +109,8 @@ const searchDescription = collectionMetaDescription(description);
   <CollectionGalleryHeading topic={topic.slug} />
   {items.length ? (
     <div class="gallery">
-      {items.map((item) => (
-        <Card item={item} />
+      {items.map((item, index) => (
+        <Card item={item} priority={index === 0} />
       ))}
     </div>
   ) : (

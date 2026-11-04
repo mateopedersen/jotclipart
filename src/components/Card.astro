@@ -1,9 +1,11 @@
 ---
 import { displayTitle } from '../lib/display-title';
+import { imageLoadingPreview, loadingPreviewStyle } from '../lib/image-loading-preview';
 import CardFileActions from './CardFileActions.astro';
 import Icon from './Icon.astro';
 import ShareButton from './ShareButton.astro';
-const { item, subjectLabel } = Astro.props;
+const { item, subjectLabel, priority = false } = Astro.props;
+const preview = imageLoadingPreview(item);
 ---
 
 <article class="art-card" data-id={item.id}>
@@ -15,17 +17,30 @@ const { item, subjectLabel } = Astro.props;
       alt={item.alt}
       width="400"
       height="400"
-      loading="lazy"
+      loading={priority ? 'eager' : 'lazy'}
       decoding="async"
-      fetchpriority="low"
+      fetchpriority={priority ? 'high' : 'low'}
+      data-original-placeholder={preview?.url}
+      data-original-placeholder-for={preview?.source}
+      data-original-preview={priority && preview ? 'pending' : undefined}
+      style={priority ? loadingPreviewStyle(preview) : undefined}
     />
   </a>
   <div class="card-body">
-    {subjectLabel && <a class="home-recent-subject" href={`/clipart/${item.topic}/`} data-display-title>{displayTitle(subjectLabel)}</a>}
+    {subjectLabel && (
+      <a class="home-recent-subject" href={`/clipart/${item.topic}/`} data-display-title>
+        {displayTitle(subjectLabel)}
+      </a>
+    )}
     <a class="card-title" data-display-title href={`/art/${item.id}/`}>
       {displayTitle(item.title)}
     </a>
-    <CardFileActions id={item.id} title={displayTitle(item.title)} webp={item.webp} pdf={item.pdf} />
+    <CardFileActions
+      id={item.id}
+      title={displayTitle(item.title)}
+      webp={item.webp}
+      pdf={item.pdf}
+    />
     <div class="card-actions">
       <a class="button" href={item.editable === false ? `/art/${item.id}/` : `/edit/${item.id}/`}>
         <Icon name={item.editable === false ? 'view' : 'edit'} size={28} />

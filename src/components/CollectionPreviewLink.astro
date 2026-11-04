@@ -1,5 +1,6 @@
 ---
 import { collectionPreview } from '../lib/collection-preview';
+import { imageLoadingPreview } from '../lib/image-loading-preview';
 import CatalogCount from './CatalogCount.astro';
 import NavigationArrow from './NavigationArrow.astro';
 interface Props {
@@ -26,6 +27,8 @@ const examples = collectionPreview(topic, sourceId);
         loading="lazy"
         fetchpriority="low"
         decoding="async"
+        data-original-placeholder={imageLoadingPreview(artwork)?.url}
+        data-original-placeholder-for={imageLoadingPreview(artwork)?.source}
         data-collection-preview-id={artwork.id}
       />
     ))}

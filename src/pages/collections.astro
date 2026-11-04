@@ -1,32 +1,56 @@
 ---
 import { displayTitle } from '../lib/display-title';
+import { imageLoadingPreview } from '../lib/image-loading-preview';
+import { imageObject } from '../lib/image-schema';
+import { structuredData } from '../lib/structured-data';
 import Layout from '../layouts/Layout.astro';
 import CatalogCount from '../components/CatalogCount.astro';
+import CollectionCover from '../components/CollectionCover.astro';
 import { categoryCollections } from '../lib/category-directory';
+import { curatedCollections } from '../lib/curated-collections';
 import { latestCollections, collectionFeed } from '../lib/collection-feed';
 import '../styles/collection-directory.css';
+const collections = [
+  ...curatedCollections,
+  ...categoryCollections.map((g) => ({ ...g, section: 'Categories', summary: g.description })),
+];
+const sections = [...new Set(collections.map((g) => g.section))];
+const firstLoadingPreviews = collections[0].previews.flatMap((item) => {
+  const preview = imageLoadingPreview(item);
+  return preview ? [preview] : [];
+});
+const visibleArtwork = [
+  ...new Map(
+    [...collections.flatMap((g) => g.previews), ...latestCollections.map((s) => s.artwork)].map(
+      (a) => [a.id, a],
+    ),
+  ).values(),
+];
 ---
 
 <Layout
   title="Clipart Collections"
-  description="Explore clipart collections by subject and discover the latest additions to the UltraClipart library."
+  description="Browse themed clipart collections with real artwork previews. Explore animals, fruit, technology, celebrations and more, or choose an individual subject."
 >
+  <Fragment slot="head">
+    {firstLoadingPreviews.map((preview) => (
+      <link rel="preload" as="image" href={preview.url} fetchpriority="high" />
+    ))}
+  </Fragment>
   <div class="collection-directory">
     <header class="collection-directory-hero">
       <div>
-        <p class="collection-eyebrow">The UltraClipart Library</p>
-        <h1>
-          Find a collection.
-          <br />
-          <span>Make it your own.</span>
-        </h1>
+        <h1>Explore clipart collections</h1>
         <p>
-          Explore artwork by subject, discover recently updated collections, and find a starting
-          point for your next project.
+          Find drawings that belong together. Explore a focused theme, compare its subjects, and
+          choose the illustrations for your next project.
         </p>
         <div class="collection-directory-stats">
           <span>
-            <CatalogCount kind="subjects" /> Collections
+            <CatalogCount kind="collections" /> Collections
+          </span>
+          <span>
+            <CatalogCount kind="subjects" /> Subjects
           </span>
           <span>
             <CatalogCount kind="artworks" /> Illustrations
@@ -35,12 +59,74 @@ import '../styles/collection-directory.css';
       </div>
       <img src="/illustrations/footer/explore.svg" width="190" height="190" alt="" />
     </header>
+    <section class="collection-section" aria-labelledby="collection-groups-heading">
+      <div class="collection-section-heading">
+        <h2 id="collection-groups-heading">Find your next theme</h2>
+        <a href="/categories/">Browse Individual Subjects →</a>
+      </div>
+      <div class="collection-find">
+        <label for="collection-query">Find a collection</label>
+        <input
+          id="collection-query"
+          type="search"
+          placeholder="Try birds, fruit, music or computers"
+          autocomplete="off"
+        />
+        <div class="collection-filters" aria-label="Filter collections">
+          <button type="button" data-collection-filter="all" aria-pressed="true">
+            All
+          </button>
+          {sections.map((section) => (
+            <button type="button" data-collection-filter={section} aria-pressed="false">
+              {section}
+            </button>
+          ))}
+        </div>
+        <p id="collection-results" role="status" aria-live="polite">
+          {collections.length} collections
+        </p>
+      </div>
+      <div class="collection-group-grid" id="themed-collections">
+        {collections.map((collection, index) => (
+          <a
+            class="collection-group-tile"
+            href={`/collection/${collection.slug}/`}
+            data-collection-card
+            data-collection-section={collection.section}
+            data-collection-search={`${collection.title} ${collection.summary} ${collection.subjects.map((s) => s.name).join(' ')}`}
+          >
+            <CollectionCover
+              items={collection.previews}
+              tone={collection.tone ?? collection.color}
+              priority={index === 0}
+            />
+            <div class="collection-group-copy">
+              <h3 data-display-title>{displayTitle(collection.title)}</h3>
+              <p class="collection-group-description">{collection.summary}</p>
+              <p class="collection-group-inventory">
+                <CatalogCount
+                  kind="collection-subjects"
+                  countKey={collection.slug}
+                  unit="subject"
+                />{' '}
+                <span aria-hidden="true">·</span>{' '}
+                <CatalogCount
+                  kind="collection-artworks"
+                  countKey={collection.slug}
+                  unit="illustration"
+                />
+              </p>
+            </div>
+          </a>
+        ))}
+      </div>
+      <p class="collection-no-results" id="collection-no-results" hidden>
+        No matching collections. Try another subject or choose All.
+      </p>
+    </section>
     <section class="collection-section" aria-labelledby="latest-collections-heading">
       <div class="collection-section-heading">
-        <div>
-          <p class="collection-eyebrow">Fresh From The Library</p>
-          <h2 id="latest-collections-heading">Recently Updated Collections</h2>
-        </div>
+        <h2 id="latest-collections-heading">Recently Updated Subjects</h2>
         <a href="/new/">See New Artwork →</a>
       </div>
       <div
@@ -58,14 +144,14 @@ import '../styles/collection-directory.css';
                 width="275"
                 height="190"
                 alt={subject.sample.alt}
-                title={subject.sample.title}
+                title={displayTitle(subject.sample.title)}
                 loading="lazy"
                 fetchpriority="low"
                 decoding="async"
               />
             </div>
             <div class="subject-collection-copy">
-              <h3>{subject.name}</h3>
+              <h3 data-display-title>{displayTitle(subject.name)}</h3>
               <p>{subject.count.toLocaleString('en-US')} Illustrations</p>
               <span aria-hidden="true">→</span>
             </div>
@@ -74,46 +160,16 @@ import '../styles/collection-directory.css';
       </div>
       <p id="collection-feed-status" class="sr-only" role="status" aria-live="polite"></p>
     </section>
-    <section class="collection-section" aria-labelledby="collection-groups-heading">
-      <div class="collection-section-heading">
-        <div>
-          <p class="collection-eyebrow">Explore Your Interests</p>
-          <h2 id="collection-groups-heading">Browse By Category</h2>
-        </div>
-        <a href="/categories/">Browse All Subjects →</a>
-      </div>
-      <div class="collection-group-grid">
-        {categoryCollections.map((collection) => (
-          <a class="collection-group-tile" href={`/collection/${collection.slug}/`}>
-            <div class="collection-group-art">
-              {collection.previews.slice(0, 3).map((item) => (
-                <img
-                  src={item.thumb}
-                  srcset={item.thumbSrcSet}
-                  sizes="82px"
-                  alt=""
-                  title={displayTitle(item.title)}
-                  width="82"
-                  height="82"
-                  loading="lazy"
-                  fetchpriority="low"
-                  decoding="async"
-                />
-              ))}
-            </div>
-            <h3 data-display-title>{displayTitle(collection.title)}</h3>
-            <p>
-              {collection.subjects.length}{' '}
-              {collection.subjects.length === 1 ? 'Subject' : 'Subjects'} ·{' '}
-              {collection.subjects.reduce((total, s) => total + s.count, 0).toLocaleString('en-US')}{' '}
-              Illustrations
-            </p>
-          </a>
-        ))}
-      </div>
-    </section>
   </div>
+  <script
+    type="application/ld+json"
+    set:html={structuredData({
+      '@context': 'https://schema.org',
+      '@graph': visibleArtwork.map((a) => imageObject(a)),
+    })}
+  />
   <script>
     import '../scripts/collection-feed';
+    import '../scripts/collection-directory';
   </script>
 </Layout>

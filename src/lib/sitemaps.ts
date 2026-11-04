@@ -1,5 +1,6 @@
 import { guides } from './guides.ts';
 import { primaryClusterForTopic } from './topic-clusters.ts';
+import { curatedSitemap } from './curated-collection-policy.mjs';
 const SITE = 'https://ultraclipart.com/';
 const XML = '<?xml version="1.0" encoding="UTF-8"?>';
 const NS = 'http://www.sitemaps.org/schemas/sitemap/0.9';
@@ -154,5 +155,8 @@ export function sitemapDocuments(art: Artwork[], topics: Topic[] = []) {
 }
 export function sitemapIndex(art: Artwork[], topics: Topic[] = []): string {
   const children = sitemapDocuments(art, topics).map((document) => `sitemap-${document.kind}.xml`);
+  const counts: Record<string, number> = {};
+  for (const item of approvedArt(art)) counts[item.topic] = (counts[item.topic] ?? 0) + 1;
+  if (curatedSitemap(counts)) children.push('sitemap-collections.xml');
   return `${XML}<sitemapindex xmlns="${NS}">${children.map((path) => `<sitemap><loc>${xmlEscape(absolute(path))}</loc></sitemap>`).join('')}</sitemapindex>`;
 }

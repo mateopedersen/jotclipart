@@ -1,3 +1,4 @@
+import { createSurpriseWarmer } from '../lib/surprise-navigation';
 import {
   pickCute,
   validCuteIndex,
@@ -7,6 +8,9 @@ import {
 const key = 'ultraclipart-surprise-recent-v2';
 export function initCuteSurprise() {
   const links = [...document.querySelectorAll<HTMLAnchorElement>('[data-surprise-art]')];
+  if (!links.length || document.documentElement.dataset.surpriseNavigation === 'ready') return;
+  document.documentElement.dataset.surpriseNavigation = 'ready';
+  const warm = createSurpriseWarmer();
   let pool: CutePick[] = [];
   try {
     pool = validCuteIndex(
@@ -43,55 +47,77 @@ export function initCuteSurprise() {
         clearTimeout(timeout);
       }
     })());
-  for (const link of links) initCuteLink(link);
-  if (links.length) setTimeout(() => void load(), 1000);
-  function initCuteLink(link: HTMLAnchorElement) {
-    const current = location.pathname.match(/^\/art\/([a-z0-9-]+)\/$/)?.[1] || '';
-    let chosen = link.pathname.match(/^\/art\/([a-z0-9-]+)\/$/)?.[1] || '';
-    let committed = false;
-    const random = () => {
-      try {
-        return crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296;
-      } catch {
-        return Math.random();
-      }
-    };
-    const choose = () => {
-      if (committed) return;
-      const next = pickCute(pool, recent, current, random);
-      if (next) {
-        chosen = next.id;
-        link.href = `/art/${chosen}/`;
-      }
-    };
-    const prepare = () => {
+  const current = location.pathname.match(/^\/art\/([a-z0-9-]+)\/$/)?.[1] || '';
+  let chosen = links[0].pathname.match(/^\/art\/([a-z0-9-]+)\/$/)?.[1] || '';
+  let committed = false,
+    prepared = false;
+  const random = () => {
+    try {
+      return crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296;
+    } catch {
+      return Math.random();
+    }
+  };
+  const choose = () => {
+    const next = pickCute(pool, recent, current, random);
+    if (next) chosen = next.id;
+    for (const link of links) link.href = `/art/${chosen}/`;
+  };
+  const prepare = () => {
+    if (committed) {
       committed = false;
       choose();
-      void load().then(choose);
-    };
+    }
+    prepared = true;
+    if (chosen) warm(`/art/${chosen}/`);
+    void load();
+  };
+  const remember = () => {
+    if (!chosen) return;
+    recent = [chosen, ...recent.filter((x) => x !== chosen)].slice(0, 24);
+    try {
+      sessionStorage.setItem(key, JSON.stringify(recent));
+    } catch {
+      /* In-memory state still works. */
+    }
+  };
+  for (const link of links) {
     link.addEventListener('pointerenter', prepare);
     link.addEventListener('focus', prepare);
-    const remember = () => {
-      if (!chosen) return;
-      recent = [chosen, ...recent.filter((x) => x !== chosen)].slice(0, 24);
-      try {
-        sessionStorage.setItem(key, JSON.stringify(recent));
-      } catch {
-        /* In-memory state still works. */
-      }
-    };
+    link.addEventListener('pointerdown', prepare, { passive: true });
     link.addEventListener('click', () => {
       if (committed) {
         committed = false;
         choose();
       }
       if (!chosen) choose();
+      prepared = true;
       committed = true;
       remember();
+      // Native navigation starts now; no index, document or image await.
     });
     link.addEventListener('auxclick', (event) => {
-      if (event.button === 1) remember();
+      if (event.button === 1) {
+        prepared = true;
+        committed = true;
+        remember();
+      }
     });
-    choose();
   }
+  choose();
+  setTimeout(
+    () =>
+      void load().then(() => {
+        if (prepared || committed) return;
+        choose();
+        if (location.pathname === '/') prepare();
+      }),
+    250,
+  );
+  window.addEventListener('pageshow', (event) => {
+    if (!event.persisted) return;
+    committed = false;
+    prepared = false;
+    choose();
+  });
 }

@@ -1,5 +1,16 @@
-.art-picture { position: relative; }
-.art-picture > img[data-original-image-state='error'] { opacity: 0; }
+.art-picture {
+  position: relative;
+}
+/* This background is temporary. The real img, schema and file links stay original. */
+img[data-original-preview='pending'] {
+  background-image: var(--original-loading-preview);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.art-picture > img[data-original-image-state='error'] {
+  opacity: 0;
+}
 .original-image-status {
   position: absolute;
   inset: auto 8px 10px;
