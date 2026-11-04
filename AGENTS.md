@@ -691,3 +691,12 @@ pending. The specific Cloudflare prod+preview `nodejs_compat` change was rejecte
 by automatic approval review and a permission question is pending. Do not bypass
 it through a different setting, deployment override, UI or another chat.
 Protect all native sources, reviews, IndexNow, rollback and publisher KEEP backup.
+
+Follow-up: the rejected compatibility PATCH is abandoned, not retried. Current
+official Cloudflare documentation enables Node compatibility by default for dates
+from 2026-08-04; an actual LOCAL native test with the existing2026-10-23 date and
+EMPTY flags passed concurrent ALS isolation. Preserve both current environments
+unchanged; final EMPTY-flags native and real provider-preview proof remain needed.
+Preserve exact approved raw topic definitions: missing internal ordinals and the
+known copied note are resolved canonically without changing old preview hashes.
+Do not manufacture a fresh approval or call metadata equivalence an owner preview.

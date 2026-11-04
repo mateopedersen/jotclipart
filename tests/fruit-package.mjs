@@ -1,3 +1,4 @@
+import { assignMissingTopicIdentifiers } from '../scripts/topic-identifiers.mjs';
 import { testBuildUrl } from './support/build-directory.mjs';
 import { sitemapXml } from './support/sitemaps.mjs';
 import test from 'node:test';
@@ -50,7 +51,10 @@ test('fruit intake preserves all 550 independently verified PDF/WebP pairs', () 
   }
 });
 test('fruit categories have real counts, discoverable entries and separate kiwi fruit/bird routes', () => {
-  const extra = read('data/extra-topics.json');
+  const extra = assignMissingTopicIdentifiers(
+    read('data/topics.json').topics,
+    read('data/extra-topics.json'),
+  ).extra;
   const copy = read('data/collection-copy.json');
   assert.equal(new Set(extra.map((t) => t.id)).size, extra.length);
   for (const topic of topics) {

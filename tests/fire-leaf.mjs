@@ -1,3 +1,4 @@
+import { assignMissingTopicIdentifiers } from '../scripts/topic-identifiers.mjs';
 import { testBuildUrl } from './support/build-directory.mjs';
 import { sitemapXml } from './support/sitemaps.mjs';
 import { assertPublishedImage } from './support/published-page.mjs';
@@ -42,7 +43,7 @@ test('the two owner packs preserve 100 paired, technically reviewed originals', 
 
 test('fire and leaves appear in their own relevant catalog destinations', () => {
   const topics = read('data/topics.json').topics;
-  const extra = read('data/extra-topics.json');
+  const extra = assignMissingTopicIdentifiers(topics, read('data/extra-topics.json')).extra;
   const secondary = read('data/topic-clusters.json');
   const copy = read('data/collection-copy.json');
   assert.equal(new Set([...topics, ...extra].map((x) => x.id)).size, topics.length + extra.length);

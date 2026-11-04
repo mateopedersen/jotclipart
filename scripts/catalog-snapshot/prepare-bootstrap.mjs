@@ -1,3 +1,4 @@
+import { publicTopicDefinitions } from '../topic-identifiers.mjs';
 import {
   bootstrapProjectionFacts,
   collectionStore,
@@ -384,7 +385,11 @@ const initialCollections = get(indexes.collections),
   initialShell = get(initialCollections.shells),
   oldTopics = await readShellField(context, initialShell, 'topics'),
   currentSourceTopics = new Map(
-    [...read('data/topics.json').topics, ...read('data/extra-topics.json')].map((t) => [t.slug, t]),
+    publicTopicDefinitions(
+      read('data/topics.json').topics,
+      read('data/extra-topics.json'),
+      summaries,
+    ).map((t) => [t.slug, t]),
   ),
   shellTopics = oldTopics.map((t) => {
     const current = currentSourceTopics.get(t.slug);

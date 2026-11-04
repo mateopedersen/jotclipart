@@ -1,3 +1,4 @@
+import { assignMissingTopicIdentifiers } from '../scripts/topic-identifiers.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
@@ -99,7 +100,10 @@ test('completion and repair evidence reports truthful print dimensions and revie
 
 test('duplicate keyword packages share canonical topics and permanent collection aliases', () => {
   const redirects = readFileSync(resolve(root, 'public/_redirects'), 'utf8');
-  const topics = read('data/extra-topics.json');
+  const topics = assignMissingTopicIdentifiers(
+    read('data/topics.json').topics,
+    read('data/extra-topics.json'),
+  ).extra;
   for (const [alias, target] of Object.entries({
     'disney-hexed': 'hexed',
     sonic: 'sonic-the-hedgehog',
@@ -120,7 +124,10 @@ test('new collection navigation leads to populated subjects in the correct categ
   const catalog = read('data/art.json');
   const publishedTopics = new Set(catalog.map((x) => x.topic));
   const contexts = read('scripts/culture-tech-contexts.json');
-  const topics = read('data/extra-topics.json');
+  const topics = assignMissingTopicIdentifiers(
+    read('data/topics.json').topics,
+    read('data/extra-topics.json'),
+  ).extra;
   const clusters = read('data/topic-clusters.json');
   assert.equal(new Set(topics.map((x) => x.id)).size, topics.length);
   for (const [slug, context] of Object.entries(contexts)) {

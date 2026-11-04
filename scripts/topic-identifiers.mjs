@@ -27,3 +27,21 @@ export function assignMissingTopicIdentifiers(primary, extra) {
       throw Error('Accepted primary topic identity missing');
   return { extra: result, nextId: next + 1, changes };
 }
+
+// Resolve legacy missing internal ordinals without rewriting the exact approved
+// raw-source preview. Public routes and artwork identities remain slug based.
+export function publicTopicDefinitions(primary, extra, summaries = new Map()) {
+  const normalized = assignMissingTopicIdentifiers(primary, extra);
+  return [...primary, ...normalized.extra].map((topic) => {
+    const summary = summaries.get(topic.slug);
+    const staleImportedNote =
+      topic.slug !== 'nepal-flag' &&
+      topic.focus_note === 'Nepal flag displays and community illustrations.';
+    return {
+      ...topic,
+      ...(staleImportedNote && typeof summary === 'string' && summary.trim()
+        ? { focus_note: summary }
+        : {}),
+    };
+  });
+}

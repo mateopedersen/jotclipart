@@ -30,3 +30,19 @@ test('accepted identity collisions and duplicate public slugs require reconcilia
   );
   assert.throws(() => assignMissingTopicIdentifiers([{ slug: 'a' }], []), /primary/);
 });
+
+test('public resolution keeps exact approved raw definitions and corrects only a known copied note', async () => {
+  const { publicTopicDefinitions } = await import('../scripts/topic-identifiers.mjs');
+  const primary = [{ id: 1, slug: 'accepted' }],
+    extra = [
+      { slug: 'italy-flag', focus_note: 'Nepal flag displays and community illustrations.' },
+      { slug: 'nepal-flag', focus_note: 'Nepal flag displays and community illustrations.' },
+    ],
+    before = JSON.stringify(extra),
+    summary = 'Catalog checked Italian flag summary.';
+  const rows = publicTopicDefinitions(primary, extra, new Map([['italy-flag', summary]]));
+  assert.equal(rows.find((t) => t.slug === 'italy-flag').focus_note, summary);
+  assert.equal(rows.find((t) => t.slug === 'nepal-flag').focus_note, extra[1].focus_note);
+  assert.equal(new Set(rows.map((t) => t.id)).size, 3);
+  assert.equal(JSON.stringify(extra), before);
+});

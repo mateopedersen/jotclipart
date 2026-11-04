@@ -5,6 +5,7 @@ import editorialReviews from '../../data/editorial/reviews.json';
 import { reviewedImportCatalog } from '../../scripts/reviewed-imports.mjs';
 import { readCollectionPresentation } from '../../scripts/collection-editorial.mjs';
 import extraTopics from '../../data/extra-topics.json';
+import { publicTopicDefinitions } from '../../scripts/topic-identifiers.mjs';
 import { validateEditorSource } from './artwork-source';
 import { auditMonochrome } from '../../scripts/monochrome-catalog.mjs';
 import type { MonochromeKind } from './monochrome';
@@ -12,11 +13,6 @@ import { newestFirst } from './publication-order.ts';
 import { preparePreviewAssets } from '../../scripts/preview-assets.mjs';
 import { clustersForTopic, topicInCluster, primaryClusterForTopic } from './topic-clusters';
 export { clustersForTopic, topicInCluster } from './topic-clusters';
-export const topics = [...source.topics, ...extraTopics].map((topic) => ({
-  ...topic,
-  sourceCluster: topic.cluster,
-  cluster: primaryClusterForTopic(topic),
-}));
 type AssetKind = 'svg' | 'webp' | 'pdf' | 'thumb';
 type PublishedAssets = Record<string, Record<AssetKind, string>>;
 const publishedAssets = import.meta.env.PUBLIC_ASSET_URLS as PublishedAssets | null;
@@ -25,6 +21,15 @@ const monochromeAudit = await auditMonochrome(reviewedIllustrations);
 const collectionPresentation = readCollectionPresentation(illustrations, reviewedIllustrations);
 export const reviewedCollectionIntroductions = collectionPresentation.summaries;
 export const reviewedCollectionParagraphs = collectionPresentation.paragraphs;
+export const topics = publicTopicDefinitions(
+  source.topics,
+  extraTopics,
+  reviewedCollectionIntroductions,
+).map((topic) => ({
+  ...topic,
+  sourceCluster: topic.cluster,
+  cluster: primaryClusterForTopic(topic),
+}));
 const collectionMetaAudit = validateCollectionMetaDescriptions(reviewedCollectionIntroductions);
 if (collectionMetaAudit.needsEditorialReview.length)
   console.warn(
