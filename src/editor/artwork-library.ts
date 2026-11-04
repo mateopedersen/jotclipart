@@ -1,5 +1,8 @@
 import { rasterCatalog, featuredRasterCatalog, type RasterAsset } from './raster';
-import { lookupTopicAssets } from './studio-sources';
+import { lookupTopicAssets, pinRasterSnapshot, unpinRasterSnapshot } from './studio-sources';
+import { SearchRepository } from '../lib/search-remote';
+import { defaults } from '../lib/search';
+import type { SnapshotTransport } from '../lib/snapshot-studio';
 interface LibraryAsset extends RasterAsset {
   title: string;
   alt?: string;
@@ -23,11 +26,14 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
   const previous = q<HTMLButtonElement>('[data-artwork-previous]');
   const position = q<HTMLElement>('[data-artwork-page]');
   const initial = await featuredRasterCatalog();
+  const remote = !!initial.transport, repository = new SearchRepository();
+  let remoteRequest: AbortController | undefined, remoteSequence = 0;
   let assets = initial.items as LibraryAsset[];
   let fullAssets: LibraryAsset[] | undefined;
   let loadedKey = 'featured';
   let filterRevision = 0;
   const ensureFull = async (revision: number, subject = topic.value) => {
+    if (remote) return;
     const key = fullAssets ? '*' : subject || '*';
     if (loadedKey === key) {
       list.removeAttribute('aria-busy');
@@ -134,51 +140,9 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
     jump.max = String(pages);
     jump.value = String(page);
   }
-  function render() {
-    root.dataset.libraryBrowse = browseMode;
-    if (browseMode !== 'artwork')
-      for (const button of root.querySelectorAll('[data-artwork-scope]'))
-        button.setAttribute('aria-pressed', 'false');
-    const category = directory.find((item) => item.id === categoryId);
-    const parent = q<HTMLButtonElement>('[data-library-parent]');
-    parent.hidden = !category;
-    parent.textContent = category?.title || '';
-    q('[data-library-current]').textContent = topic.value
-      ? topic.selectedOptions[0]?.textContent || ''
-      : browseMode === 'categories'
-        ? 'Choose a Category'
-        : browseMode === 'topics'
-          ? 'Choose a Subject'
-          : '';
-    if (browseMode !== 'artwork' && !search.value.trim()) {
-      renderDirectory();
-      return;
-    }
-    const words = search.value.trim().toLowerCase().split(/\s+/);
-    const matched = (scope === 'featured' ? featured : assets).filter(
-      (a) =>
-        (!topic.value || topic.value === a.topic) &&
-        (!category || category.topics.some((subject) => subject.id === a.topic)) &&
-        (!style.value ||
-          (style.value === 'realistic'
-            ? a.id.includes('realistic')
-            : style.value === 'Black & White'
-              ? a.monochrome
-              : a.style === style.value)) &&
-        words.every((word) => `${a.title} ${a.topic} ${a.style}`.toLowerCase().includes(word)),
-    );
-    matched.sort((a, b) =>
-      sort.value === 'title'
-        ? a.title.localeCompare(b.title, 'en')
-        : sort.value === 'newest'
-          ? (b.createdAt || '').localeCompare(a.createdAt || '') ||
-            a.title.localeCompare(b.title, 'en')
-          : Number(!!b.featured) - Number(!!a.featured) || a.title.localeCompare(b.title, 'en'),
-    );
-    const pages = Math.max(1, Math.ceil(matched.length / pageSize));
-    page = Math.min(page, pages);
+  function drawCards(windowItems: LibraryAsset[], total: number, pages: number, transport?: SnapshotTransport) {
     list.replaceChildren();
-    for (const asset of matched.slice((page - 1) * pageSize, page * pageSize)) {
+    for (const asset of windowItems) {
       const button = document.createElement('button');
       button.type = 'button';
       button.className = 'uc-artwork-card';
@@ -218,6 +182,7 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
         action.textContent = 'Adding…';
         count.textContent = `Adding ${asset.title}…`;
         try {
+          if (transport) pinRasterSnapshot(asset.id, transport);
           await add(asset.id);
           count.textContent = `${asset.title} added to your canvas.`;
           action.textContent = '✓ Added · Add Again';
@@ -226,6 +191,7 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
             error instanceof Error ? error.message : 'This artwork could not be added. Try again.';
           action.textContent = '+ Add to Canvas';
         } finally {
+          if (transport) unpinRasterSnapshot(asset.id);
           busy = false;
           button.removeAttribute('aria-busy');
           for (const card of list.querySelectorAll<HTMLButtonElement>('button'))
@@ -234,9 +200,9 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
       });
       list.append(button);
     }
-    const first = matched.length ? (page - 1) * pageSize + 1 : 0;
-    count.textContent = matched.length
-      ? `${first}–${Math.min(page * pageSize, matched.length)} of ${matched.length.toLocaleString('en-US')} artworks`
+    const first = total ? (page - 1) * pageSize + 1 : 0;
+    count.textContent = total
+      ? `${first}–${Math.min(page * pageSize, total)} of ${total.toLocaleString('en-US')} artworks`
       : 'No matching artwork. Clear filters or search the full catalog.';
     previous.disabled = page <= 1;
     next.disabled = page >= pages;
@@ -247,7 +213,80 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
     jump.value = String(page);
     for (const button of root.querySelectorAll<HTMLButtonElement>('[data-artwork-scope]'))
       button.setAttribute('aria-pressed', String(button.dataset.artworkScope === scope));
+
   }
+  async function renderRemote() {
+    remoteRequest?.abort();
+    const controller = new AbortController(), sequence = ++remoteSequence, revision = filterRevision;
+    remoteRequest = controller;
+    list.setAttribute('aria-busy', 'true');
+    count.textContent = 'Searching the artwork library…';
+    const scopes = ['source/raster'];
+    if (topic.value) scopes.push('topic/' + topic.value);
+    else if (categoryId) scopes.push('collection/' + categoryId);
+    if (style.value) scopes.push(style.value === 'Black & White' ? 'print/monochrome' : 'studio-style/' + style.value.toLowerCase());
+    try {
+      const result = await repository.studioSearch({ ...defaults, q: search.value.trim(),
+        page: Math.min(10000, Math.max(1, page)), size: pageSize,
+        sort: sort.value === 'featured' ? 'relevance' : sort.value }, controller.signal, scopes);
+      if (controller.signal.aborted || sequence !== remoteSequence || revision !== filterRevision) return;
+      page = result.page;
+      drawCards(result.studioItems as LibraryAsset[], result.total, result.pages, result.manifest.transport);
+    } catch (error) {
+      if (controller.signal.aborted || sequence !== remoteSequence || revision !== filterRevision) return;
+      count.textContent = 'The artwork search could not load. Change a filter or retry All Artwork. Your canvas is preserved.';
+    } finally {
+      if (sequence === remoteSequence) list.removeAttribute('aria-busy');
+    }
+  }
+  function render() {
+    root.dataset.libraryBrowse = browseMode;
+    if (browseMode !== 'artwork')
+      for (const button of root.querySelectorAll('[data-artwork-scope]'))
+        button.setAttribute('aria-pressed', 'false');
+    const category = directory.find((item) => item.id === categoryId);
+    const parent = q<HTMLButtonElement>('[data-library-parent]');
+    parent.hidden = !category;
+    parent.textContent = category?.title || '';
+    q('[data-library-current]').textContent = topic.value
+      ? topic.selectedOptions[0]?.textContent || ''
+      : browseMode === 'categories'
+        ? 'Choose a Category'
+        : browseMode === 'topics'
+          ? 'Choose a Subject'
+          : '';
+    if (browseMode !== 'artwork' && !search.value.trim()) {
+      remoteRequest?.abort(); remoteSequence++;
+      renderDirectory();
+      return;
+    }
+    if (remote && scope === 'all') { void renderRemote(); return; }
+    const words = search.value.trim().toLowerCase().split(/\s+/);
+    const matched = (scope === 'featured' ? featured : assets).filter(
+      (a) =>
+        (!topic.value || topic.value === a.topic) &&
+        (!category || category.topics.some((subject) => subject.id === a.topic)) &&
+        (!style.value ||
+          (style.value === 'realistic'
+            ? a.id.includes('realistic')
+            : style.value === 'Black & White'
+              ? a.monochrome
+              : a.style === style.value)) &&
+        words.every((word) => `${a.title} ${a.topic} ${a.style}`.toLowerCase().includes(word)),
+    );
+    matched.sort((a, b) =>
+      sort.value === 'title'
+        ? a.title.localeCompare(b.title, 'en')
+        : sort.value === 'newest'
+          ? (b.createdAt || '').localeCompare(a.createdAt || '') ||
+            a.title.localeCompare(b.title, 'en')
+          : Number(!!b.featured) - Number(!!a.featured) || a.title.localeCompare(b.title, 'en'),
+    );
+    const pages = Math.max(1, Math.ceil(matched.length / pageSize));
+    page = Math.min(page, pages);
+    drawCards(matched.slice((page - 1) * pageSize, page * pageSize), matched.length, pages, remote ? initial.transport : undefined);
+  }
+
   const reset = () => {
     page = 1;
     render();

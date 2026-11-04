@@ -1,6 +1,7 @@
 import { defaults } from '../lib/search';
 import { SearchRepository } from '../lib/search-remote';
 import { LatestRequest } from '../lib/search-request';
+import { alignSearchDirectory } from '../lib/search-directory';
 import { searchSiteEntries } from '../lib/site-search';
 import { searchSuggestions, type SearchSuggestion } from '../lib/search-suggestions';
 export function initSearchSuggestions() {
@@ -106,9 +107,15 @@ export function initSearchSuggestions() {
               repository.siteEntries(manifest, signal),
             ]);
             if (art.status === 'rejected' && entries.status === 'rejected') throw art.reason;
+            const directory = { version: manifest.version,
+              entries: entries.status === 'fulfilled' ? entries.value : null,
+              siteError: entries.status !== 'fulfilled' };
+            const aligned = art.status === 'fulfilled'
+              ? await alignSearchDirectory(repository, art.value.manifest, directory, signal)
+              : directory;
             return {
               artwork: art.status === 'fulfilled' ? art.value.items : [],
-              site: entries.status === 'fulfilled' ? searchSiteEntries(entries.value, query) : [],
+              site: searchSiteEntries(aligned.entries ?? [], query),
             };
           },
           ({ artwork, site }) => show(searchSuggestions(query, artwork, site)),

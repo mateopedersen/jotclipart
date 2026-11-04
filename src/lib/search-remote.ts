@@ -1,6 +1,7 @@
 import { oneEditAway, queryTerms, normalizeQuery, type SearchState } from './search.ts';
 import { termVariants, relevanceScore, type TermMatch } from './search-language.ts';
 import type { SiteSearchEntry } from './site-search.ts';
+import { validateStudioAsset, type SnapshotStudioAsset } from './snapshot-studio.ts';
 import {
   tokenBucket,
   type RankedPage,
@@ -15,11 +16,12 @@ export class SearchHttpError extends Error {
     this.status = status;
   }
 }
-export type JsonLoader = (path: string, signal?: AbortSignal) => Promise<unknown>;
-const browserLoader: JsonLoader = async (path, signal) => {
+export type JsonLoader = (path: string, signal?: AbortSignal, init?: RequestInit) => Promise<unknown>;
+const browserLoader: JsonLoader = async (path, signal, init) => {
   const response = await fetch(path, {
+    ...init,
     signal,
-    cache: path.endsWith('/manifest.json') ? 'no-cache' : 'default',
+    cache: init?.cache ?? (path.endsWith('/manifest.json') ? 'no-cache' : 'default'),
   });
   if (!response.ok) throw new SearchHttpError(response.status);
   return response.json();
@@ -51,6 +53,7 @@ export interface RemoteResults {
   relatedItems?: SearchCard[];
   relatedMissing?: Record<string, string[]>;
 }
+export interface StudioRemoteResults extends RemoteResults { studioItems: SnapshotStudioAsset[] }
 export class SearchRepository {
   private loader: JsonLoader;
   private cache = new Map<string, unknown>();
@@ -110,10 +113,39 @@ export class SearchRepository {
       (result.ranking !== undefined && result.ranking !== 2) ||
       !/^[a-z0-9-]+$/.test(result.version) ||
       (result.cardChunk !== undefined &&
-        (!Number.isInteger(result.cardChunk) || result.cardChunk < 1 || result.cardChunk > 32))
+        (!Number.isInteger(result.cardChunk) || result.cardChunk < 1 || result.cardChunk > 32)) ||
+      (result.transport !== undefined &&
+        (result.transport.protocol !== 'snapshot-search-v1' ||
+          result.transport.endpoint !== '/catalog-search.json' ||
+          !/^[a-f0-9]{64}$/.test(result.transport.snapshot) ||
+          result.version !== result.transport.snapshot))
     )
       throw new Error('The catalog needs to be refreshed.');
     return result;
+  }
+  private async snapshotRequest<T>(
+    manifest: SearchManifest,
+    operation: 'search' | 'items' | 'site' | 'studio',
+    payload: Record<string, unknown>,
+    signal?: AbortSignal,
+  ): Promise<T> {
+    const transport = manifest.transport;
+    if (!transport || transport.protocol !== 'snapshot-search-v1' ||
+        transport.endpoint !== '/catalog-search.json' ||
+        !/^[a-f0-9]{64}$/.test(transport.snapshot) || manifest.version !== transport.snapshot)
+      throw new Error('The catalog transport is invalid.');
+    if (signal?.aborted) throw new DOMException('Request cancelled', 'AbortError');
+    const generation = this.generation;
+    const response = await this.loader(transport.endpoint, signal, {
+      method: 'POST', cache: 'no-store',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ...payload, schema: 1, operation, snapshot: transport.snapshot }),
+    }) as { schema?: number; snapshot?: string; result?: T };
+    if (signal?.aborted || generation !== this.generation)
+      throw new DOMException('Request cancelled', 'AbortError');
+    if (response?.schema !== 1 || response.snapshot !== transport.snapshot ||
+        !Object.hasOwn(response, 'result')) throw new Error('The catalog snapshot changed.');
+    return response.result as T;
   }
   private path(manifest: SearchManifest, path: string) {
     return `/search-data/${manifest.version}/${path}.json`;
@@ -129,7 +161,12 @@ export class SearchRepository {
     const cached = this.cards.get(key);
     if (cached) return cached;
     let item: SearchCard;
-    if (manifest.cardChunk) {
+    if (manifest.transport) {
+      const items = await this.snapshotRequest<(SearchCard | null)[]>(manifest, 'items', { ids: [id] }, signal);
+      if (!Array.isArray(items) || items.length !== 1) throw new Error('The artwork response is invalid.');
+      if (items[0] === null) throw new SearchHttpError(404);
+      item = items[0];
+    } else if (manifest.cardChunk) {
       // Search already knows ordinals. Only arbitrary saved IDs need the small
       // hashed location table; the manifest never embeds the whole catalog.
       if (ordinal === undefined) {
@@ -158,8 +195,21 @@ export class SearchRepository {
     return item;
   }
   async favoriteItems(ids: string[], signal?: AbortSignal) {
-    const manifest = await this.manifest(signal);
+    let manifest = await this.manifest(signal);
     const load = async (current: SearchManifest) => {
+      if (current.transport) {
+        if (ids.some((id) => !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id))) throw new SearchHttpError(400);
+        const batches: string[][] = [];
+        for (let i = 0; i < ids.length; i += 128) batches.push(ids.slice(i, i + 128));
+        const responses = await mapLimit(batches, async (batch) => {
+          const items = await this.snapshotRequest<(SearchCard | null)[]>(current, 'items', { ids: batch }, signal);
+          if (!Array.isArray(items) || items.length !== batch.length || items.some((item, i) =>
+            item !== null && (item.id !== batch[i] || typeof item.title !== 'string' || typeof item.thumb !== 'string')))
+            throw new Error('The saved artwork response is invalid.');
+          return items;
+        }, 3);
+        return responses.flat();
+      }
       const items = await mapLimit(ids, async (id) => {
         try {
           return await this.item(id, current, signal);
@@ -171,7 +221,14 @@ export class SearchRepository {
       if (signal?.aborted) throw new DOMException('Request cancelled', 'AbortError');
       return items;
     };
-    const items = await load(manifest);
+    let items: (SearchCard | null)[];
+    try { items = await load(manifest); }
+    catch (error) {
+      if (!(error instanceof SearchHttpError) || ![409, 412].includes(error.status) || signal?.aborted) throw error;
+      this.clear();
+      manifest = await this.manifest(signal);
+      items = await load(manifest);
+    }
     if (!items.some((item) => item === null)) return items;
     // A Pages deployment removes the old generation's shards. Confirm that the
     // generation is still current before presenting a 404 as removed artwork.
@@ -186,6 +243,19 @@ export class SearchRepository {
   ): Promise<RemoteResults> {
     const manifest = await this.manifest(signal),
       { tokens, excluded, wantsOutline, wantsMonochrome, wantsTransparent } = queryTerms(state.q);
+    if (manifest.transport) {
+      const result = await this.snapshotRequest<RemoteResults>(manifest, 'search', { state, scope }, signal);
+      if (!result || result.manifest?.version !== manifest.version ||
+          result.manifest.transport?.snapshot !== manifest.transport.snapshot ||
+          !Array.isArray(result.items) || result.items.length > state.size ||
+          !Number.isSafeInteger(result.total) || result.total < 0 ||
+          !Number.isSafeInteger(result.pages) || result.pages < 1 ||
+          !Number.isSafeInteger(result.page) || result.page < 1 || result.page > result.pages ||
+          typeof result.hasFuzzyMatches !== 'boolean' || result.items.some(item =>
+            !item || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.id) || typeof item.title !== 'string' || typeof item.thumb !== 'string'))
+        throw new Error('The artwork search response is invalid.');
+      return result;
+    }
     const facetNames = (['style', 'color', 'format', 'orientation', 'background'] as const)
       .filter((key) => state[key])
       .map((key) =>
@@ -433,11 +503,13 @@ export class SearchRepository {
     let current = manifest,
       entries: SiteSearchEntry[];
     try {
-      entries = current.site
+      entries = current.transport
+        ? await this.snapshotRequest<SiteSearchEntry[]>(current, 'site', {}, signal)
+        : current.site
         ? await this.json<SiteSearchEntry[]>(this.path(current, current.site), signal)
         : [];
     } catch (error) {
-      if (!(error instanceof SearchHttpError) || ![404, 410].includes(error.status)) throw error;
+      if (current.transport || !(error instanceof SearchHttpError) || ![404, 410].includes(error.status)) throw error;
       this.clear();
       current = await this.manifest(signal);
       entries = current.site
@@ -472,13 +544,33 @@ export class SearchRepository {
     } catch (error) {
       if (
         error instanceof SearchHttpError &&
-        [404, 410].includes(error.status) &&
+        [404, 409, 410, 412].includes(error.status) &&
         !signal?.aborted
       ) {
         this.clear();
         return this.performSearch(state, signal, scope);
       }
       throw error;
+    }
+  }
+  async studioSearch(state: SearchState, signal?: AbortSignal, scope: readonly string[] = []): Promise<StudioRemoteResults> {
+    const run = async () => {
+      const manifest = await this.manifest(signal);
+      if (!manifest.transport) throw new SearchHttpError(501);
+      const result = await this.snapshotRequest<StudioRemoteResults>(manifest, 'studio', { state, scope }, signal);
+      if (result?.manifest?.version !== manifest.version || !Array.isArray(result.items) ||
+          !Array.isArray(result.studioItems) || result.items.length !== result.studioItems.length ||
+          result.items.length > state.size || !Number.isSafeInteger(result.total) || result.total < 0 ||
+          !Number.isSafeInteger(result.pages) || result.pages < 1 || !Number.isSafeInteger(result.page) ||
+          result.page < 1 || result.page > result.pages) throw Error('The artwork library response is invalid.');
+      result.studioItems.forEach((asset, i) => validateStudioAsset(asset, result.items[i].id));
+      return result;
+    };
+    try { return await run(); }
+    catch (error) {
+      if (!(error instanceof SearchHttpError) || ![409, 412].includes(error.status) || signal?.aborted) throw error;
+      this.clear();
+      return run();
     }
   }
 }
