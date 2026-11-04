@@ -61,3 +61,16 @@ test('existing subject counts increase without replacing newer collection copy',
   assert.equal(r.extra[0].target_original_artworks, 50);
   assert.equal(r.copy.concurrent.intro, 'Newer accepted copy');
 });
+
+test('an unrelated append reserves legacy ordinals without changing approved raw definitions', () => {
+  const f = fixture();
+  f.currentExtra.push({ slug: 'legacy-missing', focus_note: 'Exact approved source fields' });
+  const before = structuredClone(f.currentExtra),
+    result = mergeReviewedContent(f);
+  assert.deepEqual(
+    result.extra.filter((t) => t.slug !== 'new'),
+    before,
+  );
+  assert.equal(result.extra.find((t) => t.slug === 'new').id, 7);
+  assert.deepEqual(f.currentExtra, before);
+});

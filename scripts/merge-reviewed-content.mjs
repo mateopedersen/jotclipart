@@ -38,7 +38,9 @@ export function mergeReviewedContent({
   const publication = { ...currentPublication, ...stagedPublication, files: [...files.values()] };
   publication.bytes = publication.files.reduce((n, x) => n + x.bytes, 0);
   const normalized = assignMissingTopicIdentifiers(baseTopics, currentExtra);
-  const extra = normalized.extra;
+  // Reserve derived legacy ordinals for allocation, but do not rewrite the raw
+  // definitions that belong to an earlier exact owner-approved preview.
+  const extra = structuredClone(currentExtra);
   let nextId = normalized.nextId;
   for (const topic of scopes) {
     const row = stagedExtra.find((x) => x.slug === topic),
