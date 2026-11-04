@@ -1,3 +1,34 @@
+# Installed shared navigation, title display and desktop picker — 2026-11-04
+
+Latest owner direction: collection topic lists use the same closed native
+“Choose A Subject” disclosure on desktop and mobile, so the artwork is visible
+without scrolling past a wall of topic chips. Preserve all native subject links,
+counts, keyboard access and the JavaScript-disabled fallback.
+
+Use `src/lib/display-title.ts` for consistent initial capitals in public subject
+and artwork headings, captions, hover titles and search/related cards. Preserve
+reviewed identity, known brand casing, stable IDs/URLs, source metadata and image
+checksums. This presentation layer is not an image review or permission to invent
+new copy. Description prose, natural alt text and user-entered Studio project text
+remain unchanged. Future content uses these shared renderers automatically.
+
+Installed software/control is `5e6a93990ac67bb529e8e067d8b5827df3d1afd9`,
+Pages production `5bc999a1-8a2f-4632-94c5-2a7528ead1f7`, runtime ABI
+`49778f3297b9091f9c0c8b3b76684b084115ec429138bc645e3979286218a89a`.
+It retains the ECD/0f9 signed content root documented below. Source-bound signed
+data still carries ABI `cd7f7e...`; config/content-publisher-public.json admits
+ONLY that exact root/ABI predecessor. Never replace it with a broad ABI exception.
+The exact installed software directory and hashes are in config/content-publisher.json.
+The operator's source-matched H1 gates use the same displayTitle helper.
+
+Actual live evidence: 674 topic HTTP checks and 96 Chrome/WebKit layout cases,
+plus focused native subject-selection, short-search, download/Edit/Share flows.
+Detailed scope/results and remaining visual-review backlog are recorded in
+work/catalog-snapshot/deep-latency-production-report.json and the linked Turkish
+report. A catalog-wide metadata display audit is not a fresh pixel review, and
+browser WebKit is not a physical iPhone test. Do not repeat full catalog builds,
+rewrite original R2 media or notify search engines for a software-only release.
+
 # Verified Lesotho extension and build-free publisher — 2026-11-04
 
 The owner's twenty additional Lesotho illustrations are live, independently

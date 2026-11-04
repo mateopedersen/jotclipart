@@ -5,10 +5,10 @@
   "script": "scripts/catalog-snapshot/publish-content.mjs",
   "capsuleRoot": "data/catalog-batches",
   "software": {
-    "directory": "work/catalog-snapshot/software-mobile-subjects-final",
-    "revision": "ddf5fa7c943c3717661e15a7eca9e29c169e727d",
-    "abiSHA256": "cd7f7e3748fdb7e703e44e8d38c9bd3210ca12a36a6e14fbcc5ea8beff058735",
-    "workerSHA256": "09c3a1ab37710c147cf847f486efe5afa8a87ec3e43f8bea570b0558826ee218"
+    "directory": "work/catalog-snapshot/software-consistent-titles",
+    "revision": "5e6a93990ac67bb529e8e067d8b5827df3d1afd9",
+    "abiSHA256": "49778f3297b9091f9c0c8b3b76684b084115ec429138bc645e3979286218a89a",
+    "workerSHA256": "7cffe22f41c89d1628ca4f62d5d353524a97c232181f0f9806deb1249c1137af"
   },
   "publicConfig": "config/content-publisher-public.json",
   "lastVerifiedData": {
@@ -25,7 +25,7 @@
     "accountInventoryRequired": false,
     "fullCatalogBuildForContent": false
   },
-  "proof": "work/catalog-snapshot/production-report.json",
+  "proof": "work/catalog-snapshot/deep-latency-production-report.json",
   "loadTests": "work/catalog-snapshot/load-tests/two-run-report.json",
   "protectedIndependentBackup": "/Users/melihozcan/Documents/UltraClipart-Publisher-KEEP",
   "measurementsScope": "Two private real-media transport + composition + native campaigns, approved unique sources reused. Fresh image review/repair/public verification remains separate; <=60 minutes is a measured technical target, not a universal guarantee."

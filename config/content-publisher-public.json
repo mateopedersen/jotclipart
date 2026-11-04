@@ -5,7 +5,7 @@
   "keyId": "catalog-owner-v1",
   "publicKeyHex": "4309eb97062f41768467b4b7f9139f1682450cc3fd2e33fb9bb50131e7a79479",
   "acceptedPredecessor": {
-    "rootSHA256": "ad303dedafc8b8e8420f64e9c1b087fe25118c81f244f191c2ab3e063629eda7",
-    "abiSHA256": "e922b0cb7b5531d553344edf1a3b82e9d98d3f13613ef432e75c88279bd7ec78"
+    "rootSHA256": "ecd286cc660fab9f187b8623e5d9ed423fcb8464d7feb6df7473ed117d3b8bea",
+    "abiSHA256": "cd7f7e3748fdb7e703e44e8d38c9bd3210ca12a36a6e14fbcc5ea8beff058735"
   }
 }
