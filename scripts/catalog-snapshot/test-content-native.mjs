@@ -6,6 +6,10 @@ import { readFileSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import { createHash } from 'node:crypto';
 import assert from 'node:assert/strict';
+import { openSnapshot } from '../../server/catalog-snapshot/snapshot-context.mjs';
+import { openSevenFacetCollectionContext } from '../../server/catalog-snapshot/collection-context.mjs';
+import { facetStore } from '../../server/catalog-collections/store.mjs';
+import { membership } from '../../server/catalog-collections/writer.mjs';
 const sha = (b) => createHash('sha256').update(b).digest('hex'),
   decode = (s) =>
     s
@@ -19,6 +23,35 @@ const sha = (b) => createHash('sha256').update(b).digest('hex'),
       )
       .trim();
 export async function verifyNativeContent({ candidate, created, parentBucket, software, packet }) {
+  const sourcePacket = packet,
+    sourcePacketSHA256 = sha(Buffer.from(JSON.stringify(sourcePacket)));
+  if (packet.status === 'SOURCE_REVIEWED_COLLECTION_PROSE_BATCH') {
+    const sourceBucket = {
+      get: async (key) => {
+        const b = created.get(key);
+        return b
+          ? {
+              size: b.length,
+              arrayBuffer: async () => b.buffer.slice(b.byteOffset, b.byteOffset + b.byteLength),
+              json: async () => JSON.parse(b),
+            }
+          : parentBucket.get(key);
+      },
+    };
+    const context = await openSnapshot(sourceBucket, { provided: candidate, allowFixture: true }),
+      cc = await openSevenFacetCollectionContext(sourceBucket, {
+        snapshot: candidate,
+        allowUnpublishableFixture: true,
+      }),
+      store = facetStore(sourceBucket),
+      topicChanges = [];
+    for (const c of packet.changes) {
+      const d = await cc.lookupCollection(c.slug),
+        r = await cc.read(d);
+      topicChanges.push({ slug: c.slug, record: c.record, artworkIds: await membership(store, r) });
+    }
+    packet = { changes: [], topicChanges };
+  }
   const report = JSON.parse(readFileSync(join(software, 'runtime/software-report.json')));
   assert.equal(sha(readFileSync(join(software, 'runtime/worker.mjs'))), report.workerSHA256);
   for (const [file, hash] of Object.entries(report.sourceInputs))
@@ -117,6 +150,26 @@ export async function verifyNativeContent({ candidate, created, parentBucket, so
         const ids = [...html.matchAll(/<article\b[^>]*data-id="([^"]+)"/g)].map((m) => m[1]);
         assert.deepEqual([...ids].sort(), [...c.artworkIds].sort());
         assert(!html.includes('{{artworkCount}}'));
+        const panel =
+          html.match(/<div[^>]*data-collection-summary[^>]*>([\s\S]*?)<\/div>/)?.[1] ?? '';
+        const paragraphs = [...panel.matchAll(/<p(?:\s[^>]*)?>([\s\S]*?)<\/p>/g)].map((m) =>
+          decode(m[1]).replace(/\s+/g, ' '),
+        );
+        assert.deepEqual(
+          paragraphs,
+          c.record.paragraphs.map((p) =>
+            p.replace('{{artworkCount}}', c.artworkIds.length.toLocaleString('en-US')),
+          ),
+          path + ' exact paragraphs',
+        );
+        const description =
+          html.match(/<meta[^>]*name="description"[^>]*content="([^"]*)"/)?.[1] ?? '';
+        assert.equal(
+          decode(description),
+          c.record.metaDescription,
+          path + ' exact meta description',
+        );
+        assert(!/noindex/i.test(r.headers.get('x-robots-tag') ?? ''), path + ' indexability');
       }
       results.push({ path, status: r.status, sha256: sha(Buffer.from(html)) });
     }
@@ -127,6 +180,10 @@ export async function verifyNativeContent({ candidate, created, parentBucket, so
       '/collections/',
       '/search/',
       '/create/',
+      '/black-and-white/',
+      '/catalog-stats.json?scope=visible',
+      '/studio-featured.json',
+      '/search-data/manifest.json',
       '/sitemap.xml',
       '/delivery-release.json',
       '/surprise-picks.json',
@@ -140,7 +197,7 @@ export async function verifyNativeContent({ candidate, created, parentBucket, so
       status: 'CHANGED_CONTENT_NATIVE_ROUTES_VERIFIED_NOT_PUBLISHED',
       revision: candidate.revision,
       candidateSHA256: sha(Buffer.from(JSON.stringify(candidate))),
-      packetSHA256: sha(Buffer.from(JSON.stringify(packet))),
+      packetSHA256: sourcePacketSHA256,
       softwareABI: report.abiSHA256,
       routes: results,
       metadataPointReads: reads,
