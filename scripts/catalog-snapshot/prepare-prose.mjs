@@ -12,6 +12,7 @@ import {
   collectionParagraphReviewSignature,
 } from '../collection-editorial.mjs';
 import { bytesOf, digest } from '../../server/catalog-collections/store.mjs';
+import { collectionMetaDescription } from '../../src/lib/collection-meta.mjs';
 import { merkle } from '../delivery/manifest.mjs';
 const hash = (b) => createHash('sha256').update(b).digest('hex');
 export async function prepareCollectionProse({ packetBytes, parentBucket, verifier, output }) {
@@ -32,7 +33,7 @@ export async function prepareCollectionProse({ packetBytes, parentBucket, verifi
     throw Error('New protected prose output required');
   for (const [file, expected] of Object.entries(packet.sourceHashes)) {
     if (
-      !/^(?:data\/editorial\/[a-z0-9-]+\.json|scripts\/[a-z0-9/.-]+\.mjs|server\/[a-z0-9/.-]+\.mjs)$/.test(
+      !/^(?:data\/editorial\/[a-z0-9-]+\.json|(?:scripts|src\/lib)\/[a-z0-9/.-]+\.mjs|server\/[a-z0-9/.-]+\.mjs)$/.test(
         file,
       ) ||
       file.includes('..')
@@ -94,7 +95,7 @@ export async function prepareCollectionProse({ packetBytes, parentBucket, verifi
       assert.deepEqual(r.paragraphEvidence, oldRecord.editorial.paragraphEvidence);
       assert.equal(r.paragraphReviewSha256, collectionParagraphReviewSignature(r));
       assert.equal(change.record.summary, r.intro);
-      assert.equal(change.record.metaDescription, r.intro);
+      assert.equal(change.record.metaDescription, collectionMetaDescription(r.intro).text);
       assert.deepEqual(change.record.paragraphs, r.paragraphs);
       return {
         oldRecordSha256: change.expectedRecordSha256,
