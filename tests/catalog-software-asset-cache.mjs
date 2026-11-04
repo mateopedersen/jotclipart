@@ -12,7 +12,7 @@ test('304 and HEAD preserve representation metadata and never acquire a response
  const notModified=new Response(null,{status:304,headers:{etag:'"original"'}});assert.equal(normalize(request(),notModified,known).headers.get('cache-control'),'public, max-age=31536000, immutable');
 });
 test('The checksum-versioned retained font receives the same unambiguous policy',async()=>{
- const path='/fonts/inter/inter-latin-wght-3100e775e861.woff2';
+ const path='/fonts/inter/inter-latin-wght-3100e775e861-cache-v2.woff2';
  const r=normalize(new Request('https://ultraclipart.com'+path),response({'content-type':'font/woff2'}),new Set([path]));
  assert.equal(r.headers.get('cache-control'),'public, max-age=31536000, immutable');assert.equal(await r.text(),'exact original JS bytes');
 });

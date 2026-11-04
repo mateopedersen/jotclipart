@@ -81,3 +81,5 @@ The native-browser fixture observed PrefetchResponseUsed, one document request
 and complete synthetic image at357ms after click. Prerender activation itself
 was disabled by the debugging environment (activationStart0); do not describe
 that run as a successful prerender or as a real R2/site-wide357ms result.
+
+The canonical domain retained an older edge-cached header on the original font URL, even after the origin/preview policy was corrected. The current session could not purge that one public cache entry. New templates therefore use the cache-v2 font URL, backed by the exact same verified 3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62 bytes. The old URL stays available for old open pages and retained static fallbacks. No font redesign, R2 rewrite or credential scope expansion occurred.
