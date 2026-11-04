@@ -1,3 +1,37 @@
+# Verified mobile navigation and search release — 2026-11-04
+
+Installed software/control is `05f41380545ad9936ce1d134cb688df532da59f9`,
+Pages production `30f52432-e0f0-4799-b28b-e4d7a1eea764`, ABI
+`7f5fec2e123f9c7b2a5f5af6a5e2a5cfbee8812de48b838d38adce8a255d2df8`.
+The existing data revision `f86d9aa4d2d6f0c21fa2a9faac461627624190b0` and root
+`6d7105db3ef30b62842531f62f94817aa580d37a76ea7d13493aa9c5bd8d6558`
+remain unchanged: 38,408 artworks / 682 subjects / 101 collection views. This
+preserves the separately verified first 200 brand artworks; its remaining 700
+are a separate pending publisher queue, not newly verified by this software.
+
+The header has an immediate, idempotent, exact-CSP controller with no image or
+optional module dependency. Initial pageshow preserves the visitor-opened menu;
+BFCache restore still resets it. SSR-pinned header search avoids a serial manifest
+round trip, refreshes changed roots once and aligns directory/artwork generations.
+Seventeen checksum-bound retained static pages use the same critical menu and
+current share-only entry. Old immutable scripts and rollback sources remain
+unchanged. Encoded fallback bodies retain encodeBody manual when adding CSP,
+with a native Workers gzip regression. No unsafe-inline script permission added.
+
+Actual proof: `work/catalog-snapshot/software-mobile-navigation-v2-proof-20261104/production-report.json`.
+It binds 133 native routes, 116 canonical HTTP pages, 140 actual software/font
+files, 26 original media, 17 exact static bodies/CSP, 12 responsive browser cases
+and four real public early/late menu tests in Chrome/WebKit. Search, collection
+filters and original Studio bootstrap passed. Public originals remain in img,
+schema and downloads. This does not claim every cold first visit is subsecond.
+The owner has explicitly requested deeper cold first-visit image work; that
+investigation continues privately without a second content/deploy writer.
+
+Keep the configured installed runtime/package, prior verified runtime, native
+source ZIPs, reviews, immutable metadata source paths, signed receipts, the shared
+IndexNow ledger and independent KEEP backups. No R2 media/metadata/pointer,
+Cloudflare operational settings, credentials or API inference were changed.
+
 # Verified collection and site-speed software release — 2026-11-04
 
 Installed software/control is `baf84e878252e9ee6e65f2b42f0aafc6e1d27642`,
