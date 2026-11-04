@@ -22,6 +22,12 @@ Changes address measured critical paths while preserving the same files:
   editor codecs or other dynamic imports. Only modules already required by that
   document enter the graph walk; URLs, source revision and byte sizes are bound,
   duplicates/cycles are bounded to 32, and unknown/external dependencies fail.
+- Pages' combined global and path headers were observed sending two different
+  max-age directives on the same immutable JavaScript response. The runtime now
+  sets one unambiguous one-year immutable browser policy, only for its verified
+  versioned software files. Actual bytes, ETags, R2 artwork and catalog HTML
+  revalidation are preserved. Unknown URLs, queries, personalized/error/HTML
+  responses and non-read methods never receive this override.
 - Original-image priority promotion is limited to two actually visible images.
   Near-but-offscreen originals are no longer promoted to eager transfers. Native
   browser lazy requests can still occur; this is not a global two-request limit.
