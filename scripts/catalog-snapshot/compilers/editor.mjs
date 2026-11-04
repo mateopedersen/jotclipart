@@ -1,3 +1,4 @@
+import{editorCriticalPreloads}from'./editor-preloads.mjs';
 // Private local SSR experiment. Does not read credentials, upload or activate.
 import { createRequire } from 'node:module';
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
@@ -66,11 +67,11 @@ const entry = join(here, 'entry.mjs');
 writeFileSync(entry, `import {experimental_AstroContainer} from 'astro/container';
 import Page from ${JSON.stringify(join(root, 'src/pages/edit/[id].astro'))};
 import {requestState} from './context.mjs';
-export async function renderEditor(state,url,styles,scriptUrls){
+export async function renderEditor(state,url,styles,scriptUrls,preloads=[]){
  return requestState.run(state,async()=>{
   const container=await experimental_AstroContainer.create({resolve:id=>scriptUrls[id]??(()=>{throw Error('Unresolved script '+id)})()});
   const html=await container.renderToString(Page,{props:{item:state.item},request:new Request(url),partial:false});
-  return html.replace('</head>','<style>'+styles+'</style></head>');
+  return html.replace('</head>',preloads.map(url=>'<link rel="modulepreload" href="'+url+'">').join('')+'<style>'+styles+'</style></head>');
  });
 }
 `);
@@ -91,6 +92,7 @@ writeFileSync(join(out,'script-urls.json'),JSON.stringify(scriptUrls));
 writeFileSync(join(out,'server-metafile.json'),JSON.stringify(server.metafile));
 writeFileSync(join(out,'client-metafile.json'),JSON.stringify(client.metafile));
 const byteReport = meta=>Object.entries(meta.outputs).map(([file,info])=>({file,bytes:info.bytes,gzipBytes:gzipSync(readFileSync(file)).length,sha256:createHash('sha256').update(readFileSync(file)).digest('hex')}));
-const report={scope:'PRIVATE_EDITOR_COMPILER_AND_REQUEST_RENDER_ONLY_NOT_DEPLOYED',revision,astro:'7.4.2',legacyCompilerMetadataRemoved:false,productionAdapterVerified:false,server:byteReport(server.metafile),client:byteReport(client.metafile),astroComponents:[...css.keys()].length,compilerDiagnostics:diagnostics,fullCatalogEmbedded:false,inputNames};
+const critical=editorCriticalPreloads(client.metafile,revision);
+const report={criticalModulePreloads:critical.urls,criticalModulePreloadBytes:critical.bytes,scope:'PRIVATE_EDITOR_COMPILER_AND_REQUEST_RENDER_ONLY_NOT_DEPLOYED',revision,astro:'7.4.2',legacyCompilerMetadataRemoved:false,productionAdapterVerified:false,server:byteReport(server.metafile),client:byteReport(client.metafile),astroComponents:[...css.keys()].length,compilerDiagnostics:diagnostics,fullCatalogEmbedded:false,inputNames};
 writeFileSync(join(here,'build-report.json'),JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify({...report,inputNames:undefined,client:{files:report.client.length,bytes:report.client.reduce((n,x)=>n+x.bytes,0)}}));

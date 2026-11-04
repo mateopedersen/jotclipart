@@ -24,6 +24,19 @@ export function compressHtml(request, response) {
     response.headers.has('Content-Encoding')
   ) return response;
 
+  return gzipResponse(request,response);
+}
+
+// Catalog JSON contains source-bound public artwork metadata. This is transport
+// compression only; private/no-store query policy and original R2 bytes remain.
+export function compressCatalogJson(request,response) {
+  if (!['GET','HEAD','POST'].includes(request.method) || request.headers.has('Range') ||
+      response.status !== 200 || !/^application\/json(?:;|$)/i.test(response.headers.get('Content-Type') || '') ||
+      response.headers.has('Content-Encoding') || response.headers.has('Set-Cookie')) return response;
+  return gzipResponse(request,response);
+}
+
+function gzipResponse(request,response) {
   const headers = new Headers(response.headers);
   const vary = headers.get('Vary');
   if (vary !== '*' && !vary?.split(',').some((v) => v.trim().toLowerCase() === 'accept-encoding'))

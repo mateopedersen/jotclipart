@@ -46,6 +46,7 @@ export interface SearchManifest {
     protocol: 'snapshot-search-v1';
     endpoint: '/catalog-search.json';
     snapshot: string;
+    directory?: 'source-bound-site-v1';
   };
 }
 export interface RankedPage {

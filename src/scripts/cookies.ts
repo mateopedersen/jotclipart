@@ -18,11 +18,22 @@ export function initCookieNotice() {
   let regionalNotice: boolean | undefined;
   let regionPending: Promise<void> | undefined;
 
-  const measure = () =>
-    document.documentElement.style.setProperty(
-      '--cookie-strip-height',
-      `${strip.hidden ? 0 : Math.ceil(strip.getBoundingClientRect().height)}px`,
-    );
+  const measure = () => {
+    const height = `${strip.hidden ? 0 : Math.ceil(strip.getBoundingClientRect().height)}px`;
+    const style = document.documentElement.style;
+    if (style.getPropertyValue('--cookie-strip-height') !== height)
+      style.setProperty('--cookie-strip-height', height);
+  };
+  let measureFrame = 0;
+  const scheduleMeasure = () => {
+    if (measureFrame) return;
+    // Root padding can change layout again. Never write it inside a native
+    // ResizeObserver delivery; coalesce font and viewport changes next frame.
+    measureFrame = requestAnimationFrame(() => {
+      measureFrame = 0;
+      measure();
+    });
+  };
   const show = (visible: boolean) => {
     strip.hidden = !visible;
     measure();
@@ -84,8 +95,8 @@ export function initCookieNotice() {
       if (!dialog.open) dialog.showModal();
     }
   });
-  if (typeof ResizeObserver !== 'undefined') new ResizeObserver(measure).observe(strip);
-  window.addEventListener('resize', measure);
+  if (typeof ResizeObserver !== 'undefined') new ResizeObserver(scheduleMeasure).observe(strip);
+  window.addEventListener('resize', scheduleMeasure);
   window.addEventListener('pageshow', () => {
     void refresh();
   });
