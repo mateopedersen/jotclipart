@@ -2,6 +2,7 @@
 // This validates evidence already produced after inspecting actual pixels; it
 // cannot itself claim a new visual review or silently invoke paid inference.
 import assert from 'node:assert/strict';
+import { assertKnownTopicDisplaySpelling } from './display-spelling-guard.mjs';
 import { validateEditorialReview } from '../artwork-editorial.mjs';
 import { verifyCollectionEditorial } from '../collection-editorial.mjs';
 import { validateManifest, catalogFiles } from '../publication-policy.mjs';
@@ -79,6 +80,7 @@ export function createReviewedDeltaValidators({
         raw = row.raw;
       if (raw?.id !== change.id || !raw.published || !raw.indexable || !a.published || !a.indexable)
         throw Error('Reviewed eligible raw source required');
+      assertKnownTopicDisplaySpelling(a.topic, a, 'Changed artwork ' + change.id);
       const copy = validateEditorialReview(raw, row.review);
       for (const k of ['title', 'alt', 'description']) assert.equal(a[k], copy[k], k);
       for (const k of ['id', 'topic', 'width', 'height', 'alpha', 'sourceType', 'license'])
@@ -170,6 +172,8 @@ export function createReviewedDeltaValidators({
           newRecordSha256: null,
         };
       }
+      assertKnownTopicDisplaySpelling(change.slug, change.record, 'Changed topic ' + change.slug);
+      assertKnownTopicDisplaySpelling(change.slug, row.editorial, 'Changed topic editorial ' + change.slug);
       if (
         !Array.isArray(row.rawItems) ||
         !row.rawItems.length ||

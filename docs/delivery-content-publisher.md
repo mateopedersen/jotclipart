@@ -1,3 +1,17 @@
+## Known display spelling and replay cache protection, 2026-11-05
+
+Public copy uses JPMorgan Chase, USB, VR and 100th for the four explicitly
+reviewed subjects. The source gate rejects the known incorrect forms without
+renaming identifiers, URLs or unrelated joined brand names. A same-company
+JPMorganChase search alias is kept privately in the search projection; public
+headings and descriptions retain the approved spaces.
+
+Independent sealing reads valid cached metadata but does not admit misses to
+the bounded disk cache while replaying. Every remote read still receives scoped
+authority and hash checks; object/byte bounds and atomic activation are unchanged.
+This avoids evicting the verified composition working set. It is an operator
+change and does not establish a universal publication-time guarantee.
+
 # Content-only operator workflow
 
 New incoming media starts as an honest `PLANNED_INCOMING_MEDIA` schema-2 plan,

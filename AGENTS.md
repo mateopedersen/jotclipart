@@ -1,3 +1,12 @@
+# Owner approved display spelling, 2026-11-05
+
+Use JPMorgan Chase with a space in public copy. Preserve the same-company
+JPMorganChase legacy search query alias, immutable source wordmarks, stable IDs,
+URLs and media. Do not blindly split genuine joined names such as ExxonMobil,
+SpaceX or AbbVie. The reviewed USB, VR and 100th topic case corrections must
+stay consistent with source-bound search projections. The shared operator rejects
+these four known incorrect public spellings; this is not an unseen-image review.
+
 # Verified mobile navigation and search release — 2026-11-04
 
 Installed software/control is `05f41380545ad9936ce1d134cb688df532da59f9`,

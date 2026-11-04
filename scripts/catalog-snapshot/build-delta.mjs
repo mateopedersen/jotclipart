@@ -13,28 +13,11 @@ import { applySearchBatch, lookupIdentity } from '../../server/catalog-search/in
 import { applyRecentBatch, recentHomeIDs } from '../../server/catalog-snapshot/recent-ledger.mjs';
 import { applyCuteBatch, cuteProjection } from '../../server/catalog-snapshot/cute-ledger.mjs';
 import { applySitemapBatch } from '../../server/catalog-snapshot/sitemap-ledger.mjs';
-import { downloadDetails } from '../../src/lib/download-data.ts';
+import { searchRecord } from './search-record.mjs';
 import { refreshCollectionOpenings } from './refresh-openings.mjs';
 import { assertCompleteTopicSearchDelta } from './topic-search-preflight.mjs';
 const hashRecord = (record) => (record ? digest(JSON.stringify(canonical(record))) : null),
   hex = /^[a-f0-9]{64}$/;
-const searchRecord = (a, t) =>
-  a
-    ? {
-        ...a,
-        download: downloadDetails(a),
-        cluster: t.primaryCluster,
-        topicLabel: t.keyword,
-        keywords: [t.keyword],
-        collections: t.clusters.map(
-          (c) =>
-            /^\/collection\/([^/]+)\/$/.exec(c.path)?.[1] ??
-            (() => {
-              throw Error('Invalid reviewed category');
-            })(),
-        ),
-      }
-    : null;
 const xml = (text) =>
     text.replace(
       /[&<>"']/g,

@@ -65,13 +65,19 @@ export async function sealCatalogContent({
   const replayDirectory = join(directory, 'independent-replay');
   if (existsSync(replayDirectory)) throw Error('Independent replay must start clean');
   try {
-    const repeated = await replay({
+    const runReplay = () => replay({
       packetBytes,
       parentBucket,
       verifier,
       output: replayDirectory,
       mediaStageReceipt,
     });
+    // Replay misses must not evict the verified composition working set.
+    const repeated = await (
+      typeof parentBucket.withoutDiskCacheAdmissions === 'function'
+        ? parentBucket.withoutDiskCacheAdmissions(runReplay)
+        : runReplay()
+    );
     assert.deepEqual(
       repeated.result.candidate,
       candidate,
