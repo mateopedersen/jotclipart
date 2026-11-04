@@ -97,8 +97,8 @@ const faq = [
 ---
 
 <Layout
-  title="Free AI Clipart Generator & Editable Clipart Maker"
-  description="Describe an idea, generate a clipart illustration with AI, then refine, edit and download it in UltraClipart Studio. Free daily generation capacity available."
+  title="AI Clipart Generator: Create, Edit & Download"
+  description="Create clipart from a text description. Choose a style, edit and download a WebP image, or use Clipart Studio for layouts, text and printable PDFs."
   wide
 >
   <Fragment slot="head">
@@ -120,8 +120,10 @@ const faq = [
         url: 'https://ultraclipart.com/ai-clipart-generator/',
         applicationCategory: 'DesignApplication',
         operatingSystem: 'Web browser',
+        featureList: ['Text to image clipart', 'Visual styles and color choices', 'WebP image downloads', 'Continue editing in Clipart Studio'],
+        provider: { '@type': 'Organization', name: 'UltraClipart', url: 'https://ultraclipart.com/' },
         description:
-          'Generate clipart from a written idea, refine the image, and edit it in Clipart Studio. Limited free daily generation capacity.',
+          'Create clipart from a text description. Choose a style, edit and download a WebP image, or use Clipart Studio for layouts, text and printable PDFs.',
       })}
     />
     <script
@@ -151,11 +153,11 @@ const faq = [
         </div>
         <div class="ai-heading">
           <h1>
-            Create Clipart
+            AI Clipart
             <br />
-            <span>From a Description</span>
+            <span>Generator</span>
           </h1>
-          <p>Describe an image or choose an example to get started.</p>
+          <p>Describe your idea, choose a visual style and create an illustration. Edit the result and download your image when daily generation capacity is available.</p>
         </div>
         <form id="ai-form">
           <h2 id="ai-prompt-title" class="ai-section-heading">
@@ -1169,6 +1171,25 @@ const faq = [
         </article>
       </div>
     </section>
+    <section class="ai-explanation" aria-labelledby="ai-explanation-title">
+      <h2 id="ai-explanation-title">Turn Your Idea Into Clipart</h2>
+      <p>
+        Start with a subject, an action and a few visible details. Use the AI clipart generator
+        to explore an animal, a flower, a celebration or an everyday object in your chosen style.
+        The example library offers starting ideas; its catalog pictures are subject references,
+        not a promise of the generated result. Adjust the description and inspect the image
+        before using it in your project.
+      </p>
+      <p>
+        Download your generated image as WebP, refine a simple background or continue in
+        <a href="/create/">Clipart Studio</a> to add editable text, arrange layers and prepare a
+        printable layout. The generated picture remains a raster image. Our
+        <a href="/guides/">project guides</a> explain editing and printing, while
+        <a href="/categories/">ready made clipart</a> gives you artwork to explore when you
+        prefer an existing illustration. Daily generation limits and availability are shown
+        in the builder.
+      </p>
+    </section>
     <section class="ai-faq" aria-labelledby="ai-faq-title">
       <div>
         <h2 id="ai-faq-title">AI Builder Questions</h2>
@@ -1190,3 +1211,11 @@ const faq = [
     import '../ai/client';
   </script>
 </Layout>
+
+<style>
+  .ai-explanation { margin-block: 26px; padding: clamp(20px, 3vw, 32px); border: 1px solid #cbdcf0; border-radius: 20px; background: #f6f9ff; }
+  .ai-explanation h2 { margin-top: 0; color: #17375c; }
+  .ai-explanation p { max-width: 84ch; line-height: 1.75; color: #405d7d; }
+  .ai-explanation p:last-child { margin-bottom: 0; }
+  .ai-explanation a { font-weight: 600; text-underline-offset: 3px; }
+</style>

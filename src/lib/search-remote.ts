@@ -498,6 +498,21 @@ export class SearchRepository {
       ),
     };
   }
+  async sourceDirectory(root: string, signal?: AbortSignal): Promise<SiteSearchEntry[]> {
+    if (!/^[a-f0-9]{64}$/.test(root)) throw new Error('Invalid directory snapshot.');
+    const cached = this.siteCache.get(root);
+    if (cached) return cached;
+    const response = await this.json<{schema?: number; snapshot?: string; result?: unknown}>(`/search-data/${root}/site.json`, signal);
+    if (response?.schema !== 1 || response.snapshot !== root) throw new Error('Directory snapshot differs.');
+    const entries = response.result;
+    if (!Array.isArray(entries) || entries.length > 10000 || entries.some((entry) => !entry || typeof entry.id !== 'string' ||
+      typeof entry.title !== 'string' || typeof entry.text !== 'string' || typeof entry.description !== 'string' ||
+      !['topic','collection','guide','tool','page','studio'].includes(entry.kind) || typeof entry.href !== 'string' ||
+      !/^\/(?!\/)[^\s\\]*$/.test(entry.href))) throw new Error('The page directory could not be read.');
+    this.siteCache.set(root, entries);
+    if (this.siteCache.size > 2) this.siteCache.delete(this.siteCache.keys().next().value!);
+    return entries;
+  }
   async siteEntries(manifest: SearchManifest, signal?: AbortSignal): Promise<SiteSearchEntry[]> {
     if (signal?.aborted) throw new DOMException('Request cancelled', 'AbortError');
     const cached = this.siteCache.get(manifest.version);
@@ -506,7 +521,9 @@ export class SearchRepository {
       entries: SiteSearchEntry[];
     try {
       entries = current.transport
-        ? await this.snapshotRequest<SiteSearchEntry[]>(current, 'site', {}, signal)
+        ? current.transport.directory === 'source-bound-site-v1'
+          ? await this.sourceDirectory(current.version, signal)
+          : await this.snapshotRequest<SiteSearchEntry[]>(current, 'site', {}, signal)
         : current.site
         ? await this.json<SiteSearchEntry[]>(this.path(current, current.site), signal)
         : [];

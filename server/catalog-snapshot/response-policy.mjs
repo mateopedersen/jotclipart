@@ -9,7 +9,7 @@ export async function validateInlineScripts(html,allowedHashes){
  }
 }
 export function applyCatalogHeaders(response,path,policy){
- const headers=new Headers(response.headers),base=path==='/create/'||path.startsWith('/edit/')?policy.editor:policy.page;
+ const headers=new Headers(response.headers),base=path==='/create/'||path==='/ai-clipart-generator/'||path.startsWith('/edit/')?policy.editor:policy.page;
  for(const[k,v]of Object.entries(base)){if(k.toLowerCase()==='cache-control')continue;headers.set(k,v)}
  if(['/search-data/manifest.json','/studio-manifest.json','/studio-featured.json','/studio-catalog.json'].includes(path))headers.set('Vary','X-UC-Catalog-Protocol');
  return new Response(response.body,{status:response.status,headers});

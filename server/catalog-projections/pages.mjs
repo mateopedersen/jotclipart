@@ -1,3 +1,4 @@
+import { mapFour } from '../catalog-search/bounded-map.mjs';
 // Stable child-page reconciliation. It stages immutable metadata only.
 import { canonical, digest } from '../catalog-search/store.mjs';
 const bytes = (x) => new TextEncoder().encode(JSON.stringify(canonical(x))),
@@ -12,8 +13,9 @@ export async function readPages(
   const entries = [],
     pages = [];
   let offset = 0;
-  for (const d of descriptors) {
-    const page = await store.get(d);
+  const loaded = await mapFour(descriptors, d => store.get(d));
+  for (const [index, d] of descriptors.entries()) {
+    const page = loaded[index];
     if (
       page.schema !== 1 ||
       (field !== undefined && page.field !== field) ||
