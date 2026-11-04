@@ -7,9 +7,10 @@ import { getSearchBuild } from '../lib/search-build';
 import { cardMetadata } from '../lib/search-index';
 import { downloadDetails } from '../lib/download-data';
 const initial = newestArt.slice(0, 32);
+const total = Astro.props.snapshotTotal ?? newestArt.length;
 const seed = {
   version: (await getSearchBuild()).manifest.version,
-  total: newestArt.length,
+  total,
   items: initial.map((item) => cardMetadata({ ...item, download: downloadDetails(item) })),
 };
 ---
@@ -17,7 +18,7 @@ const seed = {
 <Layout
   title="New Clipart"
   description="Browse the latest illustrations added to UltraClipart. Open each artwork to see its image, printable PDF and editing options."
-  noindex={newestArt.length === 0}
+  noindex={total === 0}
 >
   <Fragment slot="head">
     {initial[0] && (
@@ -44,7 +45,7 @@ const seed = {
   >
     <div class="latest-toolbar">
       <p data-new-status aria-live="polite">
-        Showing {initial.length} of {newestArt.length.toLocaleString('en-US')} illustrations.
+        Showing {initial.length} of {total.toLocaleString('en-US')} illustrations.
       </p>
       <button class="button" type="button" data-new-refresh hidden>
         Refresh latest
