@@ -60,7 +60,8 @@ export async function buildCollectionProseDelta({
   const openingRows = collections.openingIndex ? await entries(store, collections.openingIndex) : [];
   const openings = new Map(openingRows.map(r => [r.slug, r]));
   if (collections.openingIndex && (openings.size !== bySlug.size || openingRows.length !== bySlug.size ||
-      openingRows.some(r => !bySlug.has(r.slug) || !hex.test(r.exact ?? '') || !hex.test(r.template ?? ''))))
+      openingRows.some(r => !bySlug.has(r.slug) || !hex.test(r.exact ?? '') || !hex.test(r.template ?? '') ||
+        (r.inventory !== undefined && !hex.test(r.inventory)))))
     throw Error('Incomplete source-bound opening index');
   const oldRecords = new Map(), plans = [];
   const readTopic = async slug => {
@@ -78,14 +79,23 @@ export async function buildCollectionProseDelta({
         oldRecord.editorial?.sourceSha256 !== record.editorial?.sourceSha256)
       throw Error('Prose delta changed a protected identity, membership, source or count');
     checkProse(change.slug, record);
-    if (collections.openingIndex && !same(openings.get(change.slug), await fingerprint(change.slug, oldRecord)))
+    const priorOpening = openings.get(change.slug);
+    if (collections.openingIndex && !same({ slug: priorOpening.slug, exact: priorOpening.exact, template: priorOpening.template }, await fingerprint(change.slug, oldRecord)))
       throw Error('Opening index differs from its source topic');
     const newRecordSha256 = await digest(bytesOf(record));
     const proof = await validateSourceTopic({ change, oldRecord });
     if (proof?.oldRecordSha256 !== prior.sha256 || proof.newRecordSha256 !== newRecordSha256 ||
-        !hex.test(proof.reviewReceiptSHA256 ?? '')) throw Error('Prose source review is not bound to the exact record');
+        !hex.test(proof.reviewReceiptSHA256 ?? '') || !hex.test(proof.paragraphInventorySha256 ?? ''))
+      throw Error('Prose source review is not bound to the exact record');
+    // Resolved and raw-source inventory signatures may differ. Bind the resolved
+    // signature to the signed predecessor before using it with the new summary.
+    const inventory = proof.paragraphInventorySha256;
+    if (oldRecord.editorial.paragraphSourceSha256 !== await digest(JSON.stringify([inventory, oldRecord.summary])) ||
+        record.editorial.paragraphSourceSha256 !== await digest(JSON.stringify([inventory, record.summary])) ||
+        (priorOpening.inventory && priorOpening.inventory !== inventory))
+      throw Error('Paragraph inventory differs from the authenticated predecessor');
     plans.push({ change, prior, record, proof });
-    openings.set(change.slug, await fingerprint(change.slug, record));
+    openings.set(change.slug, { ...await fingerprint(change.slug, record), inventory });
   }
   const exact = new Set(), templates = new Set();
   for (const row of openings.values()) {

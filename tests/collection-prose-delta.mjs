@@ -21,7 +21,8 @@ async function fixture() {
     const record = { schema: 1, type: 'collection-topic-references', slug, keyword: slug + ' clipart', title: slug + ' Clipart',
       path: `/clipart/${slug}/`, canonical: `https://ultraclipart.com/clipart/${slug}/`, summary, metaDescription: summary,
       primaryCluster: 'Nature', sourceCluster: 'Nature', clusters: [{ name: 'Nature', path: '/collection/nature/' }],
-      paragraphs, editorial: { intro: summary, paragraphs, sourceSha256: '1'.repeat(64) },
+      paragraphs, editorial: { intro: summary, paragraphs, sourceSha256: '1'.repeat(64),
+        paragraphSourceSha256: await digest(JSON.stringify(['4'.repeat(64), summary])) },
       artworkCount: 1, coverArtworkId: slug + '-one', membership: [missing], pageBlocks: [missing], related: [] };
     originals.set(slug, record); directory.push({ slug, path: record.path, artworkCount: 1, ...await store.put('collections', record) });
   }
@@ -38,10 +39,11 @@ async function fixture() {
   const makeChange = async (slug, opening) => {
     const old = originals.get(slug), record = { ...old, summary: opening, metaDescription: opening,
       paragraphs: [opening, old.paragraphs[1]], editorial: { ...old.editorial, intro: opening, paragraphs: [opening, old.paragraphs[1]] } };
+    record.editorial.paragraphSourceSha256 = await digest(JSON.stringify(['4'.repeat(64), opening]));
     return { slug, expectedRecordSha256: (await lookupTopic(store, (await store.read('collections', c)).directory, 'collection', slug)).sha256, record };
   };
   const proof = async ({ change }) => ({ oldRecordSha256: change.expectedRecordSha256,
-    newRecordSha256: await digest(bytesOf(change.record)), reviewReceiptSHA256: '2'.repeat(64) });
+    newRecordSha256: await digest(bytesOf(change.record)), reviewReceiptSHA256: '2'.repeat(64), paragraphInventorySha256: '4'.repeat(64) });
   const args = { parentContext, parentBucket: bucket, revision: 'c'.repeat(40), sourceReceiptSHA256: '3'.repeat(64), validateSourceTopic: proof };
   calls.length = 0; return { objects, bucket, calls, store, originals, makeChange, args };
 }
@@ -88,6 +90,13 @@ test('duplicate openings against unchanged topics and subject substitutions are 
   const a = await f.makeChange('apple', 'Apple drawings suit many different creative arrangements and decorative projects.');
   const b = await f.makeChange('pear', 'Pear drawings suit many different creative arrangements and decorative projects.');
   await assert.rejects(buildCollectionProseDelta({ ...f.args, changes: [a, b] }), /Repeated/);
+});
+test('invented resolved inventory or an unrelated paragraph digest is rejected', async () => {
+  const f = await fixture(), c = await f.makeChange('apple', 'Apple branches bring familiar fruit shapes into these decorative arrangements.');
+  await assert.rejects(buildCollectionProseDelta({ ...f.args, changes: [c],
+    validateSourceTopic: async input => ({ ...await f.args.validateSourceTopic(input), paragraphInventorySha256: '5'.repeat(64) }) }), /inventory differs/);
+  c.record.editorial.paragraphSourceSha256 = '0'.repeat(64);
+  await assert.rejects(buildCollectionProseDelta({ ...f.args, changes: [c] }), /inventory differs/);
 });
 test('generic welcome, count openings and prose dashes cannot enter future batches', async () => {
   for (const text of ['Welcome to our apple collection with several different examples.',
