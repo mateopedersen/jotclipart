@@ -19,6 +19,8 @@ export async function sealCatalogContent({
   software,
   replay = prepareCatalogContent,
 }) {
+  if (JSON.parse(readFileSync(join(directory, 'packet.json'))).publicationIntent === 'PRIVATE_TEST_ONLY')
+    throw Error('Private test content cannot receive production authority');
   const read = (n) => JSON.parse(readFileSync(join(directory, n))),
     packetBytes = readFileSync(join(directory, 'packet.json')),
     sourceBytes = readFileSync(join(directory, 'source-receipt.json')),

@@ -21,7 +21,7 @@ import { sharedContentBaseline } from './legacy-source-guard.mjs';
 const hash = (b) => createHash('sha256').update(b).digest('hex');
 export async function withCatalogReader({ directory, verifier, parentSnapshotSHA256 }, operate) {
   return withPrivateCatalogSession(
-    { directory, kind: 'reader', job: { parentSnapshotSHA256, verifier } },
+    { directory, kind: 'reader', job: { mode: 'PINNED_CATALOG_READ_ONLY', parentSnapshotSHA256, verifier } },
     async ({ secret }) => {
       const cache = metadataDiskCache({
         directory: resolve('work/catalog-snapshot/metadata-cache'),
@@ -51,8 +51,11 @@ export async function publishReviewedCapsule({
   publicConfig,
   output,
   activate = false,
+  prepareReader,
   progress = () => {},
 }) {
+  if (prepareReader && activate) throw Error('Private test transport cannot activate production');
+  const reader = prepareReader ?? withCatalogReader;
   const started = Date.now(),
     sourceCommit = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim(),
     capsuleBytes = execFileSync('git', ['show', sourceCommit + ':' + capsulePath], {
@@ -69,6 +72,8 @@ export async function publishReviewedCapsule({
       await fetch('https://ultraclipart.com/delivery-release.json', { cache: 'no-store' })
     ).json(),
     parentSnapshotSHA256 = control.verifiedRoot;
+  if (activate && fields.publicationIntent === 'PRIVATE_TEST_ONLY')
+    throw Error('Private test content cannot be published');
   if (!/^[a-f0-9]{64}$/.test(parentSnapshotSHA256 ?? '')) throw Error('Live catalog root required');
   if (activate && control.controlRevision !== code.revision)
     throw Error('Installed production software differs from the verified content renderer');
@@ -95,7 +100,7 @@ export async function publishReviewedCapsule({
     throw Error('New protected batch work directory required');
   mkdirSync(output, { recursive: true });
   // Review source and exact old records BEFORE permitting binary writes.
-  await withCatalogReader(
+  await reader(
     { directory: join(output, 'preflight-reader'), verifier, parentSnapshotSHA256 },
     async (bucket) => {
       const parent = await captureProductionSnapshot(bucket, verifier),
@@ -136,7 +141,7 @@ export async function publishReviewedCapsule({
       progress,
     });
   }
-  const prepared = await withCatalogReader(
+  const prepared = await reader(
     { directory: join(output, 'compose-reader'), verifier, parentSnapshotSHA256 },
     async (bucket) => {
       const result = await prepareCatalogContent({

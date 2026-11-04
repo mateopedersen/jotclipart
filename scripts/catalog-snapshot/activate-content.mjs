@@ -1,8 +1,9 @@
 import { createHmac } from 'node:crypto';
 import { writeFileSync } from 'node:fs';
-import { join } from 'node:path';
+import { join, resolve } from 'node:path';
 import { withPrivateCatalogSession } from './operator-session.mjs';
 export async function activateCatalogContent({ directory, sealed, verifier }) {
+  directory = resolve(directory);
   const job = {
     mode: 'VERIFIED_CONTENT_DELTA_ACTIVATION',
     parentSnapshotSHA256: sealed.snapshot.authorization.parentSnapshotSHA256,
