@@ -33,9 +33,11 @@ async function fixture() {
     const bytes = bytesOf({ schema: 1, type: 'explicit-private-unread-facet' }), sha256 = await digest(bytes);
     const key = `catalog/objects/${facet}/${sha256}.json`; objects.set(key, bytes); indexes[facet] = { key, sha256, bytes: bytes.length };
   }
-  indexes.artworks = await store.put('artworks', { type: 'artwork-root', revision: 'a'.repeat(40), directories: {
+  const artBytes = bytesOf({ type: 'artwork-root', revision: 'a'.repeat(40), directories: {
     ff: { key: 'catalog/objects/artworks/' + 'e'.repeat(64) + '.json', sha256: 'e'.repeat(64), bytes: 321 },
-  } });
+  } }), artSHA256 = await digest(artBytes);
+  indexes.artworks = { key: `catalog/objects/artworks/${artSHA256}.json`, sha256: artSHA256, bytes: artBytes.length };
+  objects.set(indexes.artworks.key, artBytes);
   const discoveryProjection = await store.put('collections', { type: 'discovery-projection-ledger-v1', artworkRootSHA256: indexes.artworks.sha256 });
   const surprise = await store.put('collections', { type: 'cute-discovery-projection', version: 3, artworksRootSHA256: indexes.artworks.sha256 });
   c = await store.put('collections', { ...await store.read('collections', c), discoveryProjection, surprise });
@@ -66,6 +68,7 @@ test('prose composition preserves five facets and all artwork leaves without rea
   assert(!f.calls.some(key => key.includes('e'.repeat(64))));
   const art = JSON.parse(new TextDecoder().decode(result.created.get(result.candidate.indexes.artworks.key)));
   assert.equal(art.revision, result.candidate.revision); assert.equal(result.artworkEnvelopeRebinding.artworkLeavesRead, 0);
+  assert.equal(art.schema, undefined, 'Original ART envelope format must be preserved');
   const bytes = result.created.get(result.changed[0].afterDescriptor.key), value = JSON.parse(new TextDecoder().decode(bytes));
   assert.deepEqual(value.membership, change.record.membership); assert.deepEqual(value.pageBlocks, change.record.pageBlocks);
 });

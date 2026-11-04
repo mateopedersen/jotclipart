@@ -54,7 +54,9 @@ export async function buildCollectionProseDelta({
   if (collections.type !== 'collection-directory' || collections.viewProtocol !== 'collection-references-v2' ||
       !Number.isSafeInteger(collections.topicCount) || collections.topicCount < 1 || collections.topicCount > 10000)
     throw Error('Source-bound reference collections required');
-  const artworkRoot = await store.read('artworks', base.snapshot.indexes.artworks);
+  // ART roots use their own envelope format (the accepted root has no schema
+  // field); do not route them through the schema-1 collection store.
+  const artworkRoot = await base.getFacet('artworks');
   const discovery = await store.read('collections', collections.discoveryProjection);
   const surprise = await store.read('collections', collections.surprise);
   if (artworkRoot.type !== 'artwork-root' || artworkRoot.revision !== base.snapshot.revision ||
@@ -123,7 +125,9 @@ export async function buildCollectionProseDelta({
   // The reader requires the ART envelope revision to match the new snapshot.
   // Rebind only this small envelope and its two dependent roots; all directories,
   // artwork leaves, discovery facts, choices and ledgers remain byte-identical.
-  const artworks = await store.put('artworks', { ...artworkRoot, revision });
+  const artworkBytes = bytesOf({ ...artworkRoot, revision }), artworkSHA256 = await digest(artworkBytes);
+  const artworks = { key: `catalog/objects/artworks/${artworkSHA256}.json`, sha256: artworkSHA256, bytes: artworkBytes.length };
+  await overlay.bucket.put(artworks.key, artworkBytes);
   const discoveryProjection = await store.put('collections', { ...discovery, artworkRootSHA256: artworks.sha256 });
   const picks = await store.put('collections', { ...surprise, artworksRootSHA256: artworks.sha256 });
   const indexes = { ...base.snapshot.indexes, artworks, collections: await store.put('collections', {
