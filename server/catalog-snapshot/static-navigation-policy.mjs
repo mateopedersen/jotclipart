@@ -18,5 +18,11 @@ export function staticNavigationPolicy(response, scriptToken) {
       'content-security-policy',
       csp.replace(/(\bscript-src\s+[^;]+)/, '$1 ' + scriptToken),
     );
-  return new Response(response.body, { status: response.status, headers });
+  return new Response(response.body, {
+    status: response.status,
+    headers,
+    // The retained worker already emitted encoded bytes. Keep its manual body
+    // contract when adding a CSP hash, otherwise Workers can gzip them again.
+    ...(headers.has('content-encoding') ? { encodeBody: 'manual' } : {}),
+  });
 }
