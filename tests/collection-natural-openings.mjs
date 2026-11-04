@@ -2,8 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readCollectionRegistries,verifyCollectionOpenings,collectionOpening,normalizeCollectionProse} from '../scripts/collection-editorial.mjs';
 const registry=(entries)=>({topics:Object.fromEntries(entries.map(([topic,text])=>[topic,{paragraphs:[text,'Inventory paragraph.']}]))});
-test('all674 current openings are distinct beyond a subject-name substitution and contain no prose dashes',()=>{
- const r=readCollectionRegistries(),v=verifyCollectionOpenings(r);assert.equal(v.uniqueOpenings,674);assert.equal(v.uniqueOpeningTemplates,674);
+test('all current openings are distinct beyond a subject-name substitution and contain no prose dashes',()=>{
+ const r=readCollectionRegistries(),v=verifyCollectionOpenings(r);const size=Object.keys(r.topics).length;assert(size>0);assert.equal(v.uniqueOpenings,size);assert.equal(v.uniqueOpeningTemplates,size);
  for(const[topic,record]of Object.entries(r.topics)){assert.doesNotMatch(record.intro+record.paragraphs.join(' '),/[\u2010-\u2015-]/,topic);assert(!record.paragraphs[0].includes('{{artworkCount}}'));assert.equal((record.paragraphs.join(' ').match(/\{\{artworkCount\}\}/g)??[]).length,1,topic)}
 });
 test('same opening is rejected even if later sentences are different',()=>{
