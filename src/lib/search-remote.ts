@@ -17,7 +17,11 @@ export class SearchHttpError extends Error {
     this.status = status;
   }
 }
-export type JsonLoader = (path: string, signal?: AbortSignal, init?: RequestInit) => Promise<unknown>;
+export type JsonLoader = (
+  path: string,
+  signal?: AbortSignal,
+  init?: RequestInit,
+) => Promise<unknown>;
 const browserLoader: JsonLoader = async (path, signal, init) => {
   const response = await fetch(path, {
     ...init,
@@ -55,7 +59,9 @@ export interface RemoteResults {
   relatedItems?: SearchCard[];
   relatedMissing?: Record<string, string[]>;
 }
-export interface StudioRemoteResults extends RemoteResults { studioItems: SnapshotStudioAsset[] }
+export interface StudioRemoteResults extends RemoteResults {
+  studioItems: SnapshotStudioAsset[];
+}
 export class SearchRepository {
   private loader: JsonLoader;
   private cache = new Map<string, unknown>();
@@ -126,27 +132,36 @@ export class SearchRepository {
     return result;
   }
   private async snapshotRequest<T>(
-    manifest: SearchManifest,
+    manifest: Pick<SearchManifest, 'version' | 'transport'>,
     operation: 'search' | 'items' | 'site' | 'studio',
     payload: Record<string, unknown>,
     signal?: AbortSignal,
   ): Promise<T> {
     const transport = manifest.transport;
-    if (!transport || transport.protocol !== 'snapshot-search-v1' ||
-        transport.endpoint !== '/catalog-search.json' ||
-        !/^[a-f0-9]{64}$/.test(transport.snapshot) || manifest.version !== transport.snapshot)
+    if (
+      !transport ||
+      transport.protocol !== 'snapshot-search-v1' ||
+      transport.endpoint !== '/catalog-search.json' ||
+      !/^[a-f0-9]{64}$/.test(transport.snapshot) ||
+      manifest.version !== transport.snapshot
+    )
       throw new Error('The catalog transport is invalid.');
     if (signal?.aborted) throw new DOMException('Request cancelled', 'AbortError');
     const generation = this.generation;
-    const response = await this.loader(transport.endpoint, signal, {
-      method: 'POST', cache: 'no-store',
+    const response = (await this.loader(transport.endpoint, signal, {
+      method: 'POST',
+      cache: 'no-store',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ ...payload, schema: 1, operation, snapshot: transport.snapshot }),
-    }) as { schema?: number; snapshot?: string; result?: T };
+    })) as { schema?: number; snapshot?: string; result?: T };
     if (signal?.aborted || generation !== this.generation)
       throw new DOMException('Request cancelled', 'AbortError');
-    if (response?.schema !== 1 || response.snapshot !== transport.snapshot ||
-        !Object.hasOwn(response, 'result')) throw new Error('The catalog snapshot changed.');
+    if (
+      response?.schema !== 1 ||
+      response.snapshot !== transport.snapshot ||
+      !Object.hasOwn(response, 'result')
+    )
+      throw new Error('The catalog snapshot changed.');
     return response.result as T;
   }
   private path(manifest: SearchManifest, path: string) {
@@ -164,8 +179,14 @@ export class SearchRepository {
     if (cached) return cached;
     let item: SearchCard;
     if (manifest.transport) {
-      const items = await this.snapshotRequest<(SearchCard | null)[]>(manifest, 'items', { ids: [id] }, signal);
-      if (!Array.isArray(items) || items.length !== 1) throw new Error('The artwork response is invalid.');
+      const items = await this.snapshotRequest<(SearchCard | null)[]>(
+        manifest,
+        'items',
+        { ids: [id] },
+        signal,
+      );
+      if (!Array.isArray(items) || items.length !== 1)
+        throw new Error('The artwork response is invalid.');
       if (items[0] === null) throw new SearchHttpError(404);
       item = items[0];
     } else if (manifest.cardChunk) {
@@ -200,16 +221,35 @@ export class SearchRepository {
     let manifest = await this.manifest(signal);
     const load = async (current: SearchManifest) => {
       if (current.transport) {
-        if (ids.some((id) => !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id))) throw new SearchHttpError(400);
+        if (ids.some((id) => !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)))
+          throw new SearchHttpError(400);
         const batches: string[][] = [];
         for (let i = 0; i < ids.length; i += 128) batches.push(ids.slice(i, i + 128));
-        const responses = await mapLimit(batches, async (batch) => {
-          const items = await this.snapshotRequest<(SearchCard | null)[]>(current, 'items', { ids: batch }, signal);
-          if (!Array.isArray(items) || items.length !== batch.length || items.some((item, i) =>
-            item !== null && (item.id !== batch[i] || typeof item.title !== 'string' || typeof item.thumb !== 'string')))
-            throw new Error('The saved artwork response is invalid.');
-          return items;
-        }, 3);
+        const responses = await mapLimit(
+          batches,
+          async (batch) => {
+            const items = await this.snapshotRequest<(SearchCard | null)[]>(
+              current,
+              'items',
+              { ids: batch },
+              signal,
+            );
+            if (
+              !Array.isArray(items) ||
+              items.length !== batch.length ||
+              items.some(
+                (item, i) =>
+                  item !== null &&
+                  (item.id !== batch[i] ||
+                    typeof item.title !== 'string' ||
+                    typeof item.thumb !== 'string'),
+              )
+            )
+              throw new Error('The saved artwork response is invalid.');
+            return items;
+          },
+          3,
+        );
         return responses.flat();
       }
       const items = await mapLimit(ids, async (id) => {
@@ -224,9 +264,15 @@ export class SearchRepository {
       return items;
     };
     let items: (SearchCard | null)[];
-    try { items = await load(manifest); }
-    catch (error) {
-      if (!(error instanceof SearchHttpError) || ![409, 412].includes(error.status) || signal?.aborted) throw error;
+    try {
+      items = await load(manifest);
+    } catch (error) {
+      if (
+        !(error instanceof SearchHttpError) ||
+        ![409, 412].includes(error.status) ||
+        signal?.aborted
+      )
+        throw error;
       this.clear();
       manifest = await this.manifest(signal);
       items = await load(manifest);
@@ -238,6 +284,79 @@ export class SearchRepository {
     const current = await this.manifest(signal);
     return current.version === manifest.version ? items : load(current);
   }
+  private async performSnapshotSearch(
+    manifest: Pick<SearchManifest, 'version' | 'transport'>,
+    state: SearchState,
+    signal?: AbortSignal,
+    scope: readonly string[] = [],
+  ): Promise<RemoteResults> {
+    const transport = manifest.transport;
+    if (!transport) throw new Error('The catalog transport is invalid.');
+    const result = await this.snapshotRequest<RemoteResults>(
+      manifest,
+      'search',
+      { state, scope },
+      signal,
+    );
+    if (
+      !result ||
+      result.manifest?.schema !== 1 ||
+      result.manifest.transport?.protocol !== 'snapshot-search-v1' ||
+      result.manifest.transport.endpoint !== '/catalog-search.json' ||
+      result.manifest.version !== manifest.version ||
+      result.manifest.transport?.snapshot !== transport.snapshot ||
+      !Array.isArray(result.items) ||
+      result.items.length > state.size ||
+      !Number.isSafeInteger(result.total) ||
+      result.total < 0 ||
+      !Number.isSafeInteger(result.pages) ||
+      result.pages < 1 ||
+      !Number.isSafeInteger(result.page) ||
+      result.page < 1 ||
+      result.page > result.pages ||
+      typeof result.hasFuzzyMatches !== 'boolean' ||
+      result.items.some(
+        (item) =>
+          !item ||
+          !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.id) ||
+          typeof item.title !== 'string' ||
+          typeof item.thumb !== 'string',
+      )
+    )
+      throw new Error('The artwork search response is invalid.');
+    return result;
+  }
+  /** The SSR root is a hint, not authority: the server authenticates it anew.
+   * A changed root refreshes once using the ordinary descriptor path. */
+  async searchAtSnapshot(
+    snapshot: string,
+    state: SearchState,
+    signal?: AbortSignal,
+    scope: readonly string[] = [],
+  ): Promise<RemoteResults> {
+    if (!/^[a-f0-9]{64}$/.test(snapshot)) throw new Error('Invalid page snapshot.');
+    try {
+      return await this.performSnapshotSearch(
+        {
+          version: snapshot,
+          transport: { protocol: 'snapshot-search-v1', endpoint: '/catalog-search.json', snapshot },
+        },
+        state,
+        signal,
+        scope,
+      );
+    } catch (error) {
+      if (
+        !(error instanceof SearchHttpError) ||
+        ![409, 412].includes(error.status) ||
+        signal?.aborted
+      )
+        throw error;
+      this.clear();
+      // Exactly one normal refresh; a second conflict propagates to the caller.
+      return this.performSearch(state, signal, scope);
+    }
+  }
   private async performSearch(
     state: SearchState,
     signal?: AbortSignal,
@@ -246,17 +365,7 @@ export class SearchRepository {
     const manifest = await this.manifest(signal),
       { tokens, excluded, wantsOutline, wantsMonochrome, wantsTransparent } = queryTerms(state.q);
     if (manifest.transport) {
-      const result = await this.snapshotRequest<RemoteResults>(manifest, 'search', { state, scope }, signal);
-      if (!result || result.manifest?.version !== manifest.version ||
-          result.manifest.transport?.snapshot !== manifest.transport.snapshot ||
-          !Array.isArray(result.items) || result.items.length > state.size ||
-          !Number.isSafeInteger(result.total) || result.total < 0 ||
-          !Number.isSafeInteger(result.pages) || result.pages < 1 ||
-          !Number.isSafeInteger(result.page) || result.page < 1 || result.page > result.pages ||
-          typeof result.hasFuzzyMatches !== 'boolean' || result.items.some(item =>
-            !item || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.id) || typeof item.title !== 'string' || typeof item.thumb !== 'string'))
-        throw new Error('The artwork search response is invalid.');
-      return result;
+      return this.performSnapshotSearch(manifest, state, signal, scope);
     }
     const facetNames = (['style', 'color', 'format', 'orientation', 'background'] as const)
       .filter((key) => state[key])
@@ -502,13 +611,29 @@ export class SearchRepository {
     if (!/^[a-f0-9]{64}$/.test(root)) throw new Error('Invalid directory snapshot.');
     const cached = this.siteCache.get(root);
     if (cached) return cached;
-    const response = await this.json<{schema?: number; snapshot?: string; result?: unknown}>(`/search-data/${root}/site.json`, signal);
-    if (response?.schema !== 1 || response.snapshot !== root) throw new Error('Directory snapshot differs.');
+    const response = await this.json<{ schema?: number; snapshot?: string; result?: unknown }>(
+      `/search-data/${root}/site.json`,
+      signal,
+    );
+    if (response?.schema !== 1 || response.snapshot !== root)
+      throw new Error('Directory snapshot differs.');
     const entries = response.result;
-    if (!Array.isArray(entries) || entries.length > 10000 || entries.some((entry) => !entry || typeof entry.id !== 'string' ||
-      typeof entry.title !== 'string' || typeof entry.text !== 'string' || typeof entry.description !== 'string' ||
-      !['topic','collection','guide','tool','page','studio'].includes(entry.kind) || typeof entry.href !== 'string' ||
-      !/^\/(?!\/)[^\s\\]*$/.test(entry.href))) throw new Error('The page directory could not be read.');
+    if (
+      !Array.isArray(entries) ||
+      entries.length > 10000 ||
+      entries.some(
+        (entry) =>
+          !entry ||
+          typeof entry.id !== 'string' ||
+          typeof entry.title !== 'string' ||
+          typeof entry.text !== 'string' ||
+          typeof entry.description !== 'string' ||
+          !['topic', 'collection', 'guide', 'tool', 'page', 'studio'].includes(entry.kind) ||
+          typeof entry.href !== 'string' ||
+          !/^\/(?!\/)[^\s\\]*$/.test(entry.href),
+      )
+    )
+      throw new Error('The page directory could not be read.');
     this.siteCache.set(root, entries);
     if (this.siteCache.size > 2) this.siteCache.delete(this.siteCache.keys().next().value!);
     return entries;
@@ -525,10 +650,15 @@ export class SearchRepository {
           ? await this.sourceDirectory(current.version, signal)
           : await this.snapshotRequest<SiteSearchEntry[]>(current, 'site', {}, signal)
         : current.site
-        ? await this.json<SiteSearchEntry[]>(this.path(current, current.site), signal)
-        : [];
+          ? await this.json<SiteSearchEntry[]>(this.path(current, current.site), signal)
+          : [];
     } catch (error) {
-      if (current.transport || !(error instanceof SearchHttpError) || ![404, 410].includes(error.status)) throw error;
+      if (
+        current.transport ||
+        !(error instanceof SearchHttpError) ||
+        ![404, 410].includes(error.status)
+      )
+        throw error;
       this.clear();
       current = await this.manifest(signal);
       entries = current.site
@@ -572,22 +702,47 @@ export class SearchRepository {
       throw error;
     }
   }
-  async studioSearch(state: SearchState, signal?: AbortSignal, scope: readonly string[] = []): Promise<StudioRemoteResults> {
+  async studioSearch(
+    state: SearchState,
+    signal?: AbortSignal,
+    scope: readonly string[] = [],
+  ): Promise<StudioRemoteResults> {
     const run = async () => {
       const manifest = await this.manifest(signal);
       if (!manifest.transport) throw new SearchHttpError(501);
-      const result = await this.snapshotRequest<StudioRemoteResults>(manifest, 'studio', { state, scope }, signal);
-      if (result?.manifest?.version !== manifest.version || !Array.isArray(result.items) ||
-          !Array.isArray(result.studioItems) || result.items.length !== result.studioItems.length ||
-          result.items.length > state.size || !Number.isSafeInteger(result.total) || result.total < 0 ||
-          !Number.isSafeInteger(result.pages) || result.pages < 1 || !Number.isSafeInteger(result.page) ||
-          result.page < 1 || result.page > result.pages) throw Error('The artwork library response is invalid.');
+      const result = await this.snapshotRequest<StudioRemoteResults>(
+        manifest,
+        'studio',
+        { state, scope },
+        signal,
+      );
+      if (
+        result?.manifest?.version !== manifest.version ||
+        !Array.isArray(result.items) ||
+        !Array.isArray(result.studioItems) ||
+        result.items.length !== result.studioItems.length ||
+        result.items.length > state.size ||
+        !Number.isSafeInteger(result.total) ||
+        result.total < 0 ||
+        !Number.isSafeInteger(result.pages) ||
+        result.pages < 1 ||
+        !Number.isSafeInteger(result.page) ||
+        result.page < 1 ||
+        result.page > result.pages
+      )
+        throw Error('The artwork library response is invalid.');
       result.studioItems.forEach((asset, i) => validateStudioAsset(asset, result.items[i].id));
       return result;
     };
-    try { return await run(); }
-    catch (error) {
-      if (!(error instanceof SearchHttpError) || ![409, 412].includes(error.status) || signal?.aborted) throw error;
+    try {
+      return await run();
+    } catch (error) {
+      if (
+        !(error instanceof SearchHttpError) ||
+        ![409, 412].includes(error.status) ||
+        signal?.aborted
+      )
+        throw error;
       this.clear();
       return run();
     }

@@ -127,12 +127,14 @@ export function createCatalogHandler({
         },
       });
     try {
+      const requestStarted = performance.now();
       const context = await capture(request),
         privateRoot =
           context?.snapshot?.fixture === true ||
           context?.snapshot?.status === 'PRIVATE_UNPUBLISHABLE';
       if (privateRoot ? !allowPrivateFixture : context?.authorizationVerified !== true)
         throw Error('Catalog authorization missing');
+      const capturedAt = performance.now();
       const resultHeaders = {
         'content-type': 'text/html;charset=utf-8',
         'cache-control': 'no-cache',
@@ -364,6 +366,12 @@ export function createCatalogHandler({
           : await generate();
       }
       const headers = new Headers(response.headers);
+      // Numeric request-local diagnostics only; never persist timings in cached HTML.
+      const completedAt = performance.now();
+      headers.set(
+        'Server-Timing',
+        `uc_capture;dur=${Math.max(0, capturedAt - requestStarted).toFixed(1)}, uc_resolve;dur=${Math.max(0, completedAt - capturedAt).toFixed(1)}, uc_total;dur=${Math.max(0, completedAt - requestStarted).toFixed(1)}`,
+      );
       if (
         response.status === 200 &&
         publicNavigationDocument(path) &&

@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "sourceSoftwareRevision": "baf84e878252e9ee6e65f2b42f0aafc6e1d27642",
+  "sourcePackageReceiptSHA256": "86fb97dc805102aa5d95adaa74dcd7f84d77e640d63cebf7e8a6e01afd51be18",
+  "oldNavigationScript": {
+    "url": "/_astro/Layout.astro_astro_type_script_index_0_lang.CqkGEozi.js",
+    "bytes": 5206,
+    "sha256": "3496e230969d7871ec29dfa788f8d09e6fd4e9cabd4b8b975af9b617d740b63d"
+  },
+  "files": [
+    {
+      "path": "/404.html",
+      "sha256": "4647d267e09eb7c02775858063e7437371d3ea6647842c149b4719631b6b1ef0",
+      "bytes": 184781
+    },
+    {
+      "path": "/contact/index.html",
+      "sha256": "b6130df24097f3a7682b2e7129d40507146a00185ab425caede6f10e8cd04d44",
+      "bytes": 209177
+    },
+    {
+      "path": "/privacy/index.html",
+      "sha256": "bb092a50e5287a0b85235bf182fedd8eb3e17e66f1d027764862390fdafde363",
+      "bytes": 242429
+    },
+    {
+      "path": "/license/index.html",
+      "sha256": "df444a9fc9872126a997a197b311568352b9dfe51b52e6d6c0df183b12e5ce2b",
+      "bytes": 230094
+    },
+    {
+      "path": "/faq/index.html",
+      "sha256": "8cd43af6cef1adc144183515b38966d135f3812ff785ce3ac42e6b8263e168a2",
+      "bytes": 245997
+    },
+    {
+      "path": "/terms/index.html",
+      "sha256": "27926a232c1d7f8c48eb08a71a9e03df47591d2b53b2ec65f9a37a338a1d7a38",
+      "bytes": 228997
+    },
+    {
+      "path": "/for-teachers/index.html",
+      "sha256": "6dc880bc09b7c088d303e26a939625cf60ee1a5e9c34561d7b441b5b3f04cb55",
+      "bytes": 297282
+    },
+    {
+      "path": "/about/index.html",
+      "sha256": "b4a9a6db07da0f064655b63f393b1ad6cb85376af55eb96212e01db5b3046c59",
+      "bytes": 218515
+    },
+    {
+      "path": "/guides/index.html",
+      "sha256": "454c8d65715b2d9c02f62ade085e20ee6669c8743d96d4a8ca0b4a18576aca65",
+      "bytes": 249139
+    },
+    {
+      "path": "/guides/turn-clipart-into-a-coloring-activity/index.html",
+      "sha256": "06b1521c70552e8078f39aa5a2739fad601a768fa8a7ebac4260583a5813bd2d",
+      "bytes": 193001
+    },
+    {
+      "path": "/guides/make-a-classroom-label/index.html",
+      "sha256": "46086e024a1e9ffd609e0df2c982bc3ce7589562d983cad6f7283fce5b35fd83",
+      "bytes": 192993
+    },
+    {
+      "path": "/guides/webp-pdf-and-editable-projects/index.html",
+      "sha256": "d194774087790fbd76030205db511231ac5f187bad85195a20269ceafce134d8",
+      "bytes": 193632
+    },
+    {
+      "path": "/copyright/index.html",
+      "sha256": "58fb8899c9b3fec0b3b77e95f0045ae46fb69a15e5f9d8e4c824ea32761a40d1",
+      "bytes": 230817
+    },
+    {
+      "path": "/editorial-process/index.html",
+      "sha256": "76e58411d928632673721671f6b6f0d4f036a3953cfb463b042a281e78faea33",
+      "bytes": 237345
+    },
+    {
+      "path": "/accessibility/index.html",
+      "sha256": "5dc6cd5c430d138b8782f50f6e7771c4e6bdce316043a17a8115bc85d49781f9",
+      "bytes": 227159
+    },
+    {
+      "path": "/print-size/index.html",
+      "sha256": "2ea251e89b6e10b417c9742bfba4a89517545a33a9f591c270a573ea364220b2",
+      "bytes": 231512
+    },
+    {
+      "path": "/cookies/index.html",
+      "sha256": "60d6597a0e3b9d3204d35214c063b98229f7b4f090fc57a4f0af6647574f1921",
+      "bytes": 194256
+    }
+  ]
+}

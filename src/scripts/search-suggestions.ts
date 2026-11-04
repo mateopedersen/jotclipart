@@ -3,7 +3,11 @@ import { SearchRepository } from '../lib/search-remote';
 import { LatestRequest, typingPause } from '../lib/search-request';
 import { alignSearchDirectory } from '../lib/search-directory';
 import { searchSiteEntries } from '../lib/site-search';
-import { searchSuggestions, isDirectSearchMatch, type SearchSuggestion } from '../lib/search-suggestions';
+import {
+  searchSuggestions,
+  isDirectSearchMatch,
+  type SearchSuggestion,
+} from '../lib/search-suggestions';
 export function initSearchSuggestions() {
   for (const form of document.querySelectorAll<HTMLFormElement>('form[action="/search/"]')) {
     if (form.id === 'catalog-search' || form.dataset.suggestionsReady) continue;
@@ -32,7 +36,9 @@ export function initSearchSuggestions() {
       queued: SearchSuggestion[] | undefined,
       composing = false,
       refreshed = Date.now();
-    let pageRoot = document.querySelector<HTMLMetaElement>('meta[name="catalog-snapshot"]')?.content;
+    let pageRoot = document.querySelector<HTMLMetaElement>(
+      'meta[name="catalog-snapshot"]',
+    )?.content;
     if (!/^[a-f0-9]{64}$/.test(pageRoot ?? '')) pageRoot = undefined;
     let earlyDirectory: ReturnType<SearchRepository['sourceDirectory']> | undefined;
     let availableDirectory: Awaited<ReturnType<SearchRepository['sourceDirectory']>> | undefined;
@@ -41,9 +47,12 @@ export function initSearchSuggestions() {
         const root = pageRoot;
         const loading = repository.sourceDirectory(root);
         earlyDirectory = loading;
-        void loading.then((entries) => {
-          if (pageRoot === root && earlyDirectory === loading) availableDirectory = entries;
-        }, () => {});
+        void loading.then(
+          (entries) => {
+            if (pageRoot === root && earlyDirectory === loading) availableDirectory = entries;
+          },
+          () => {},
+        );
         // This contains public source metadata only, with no visitor query.
         void earlyDirectory.catch(() => {});
       }
@@ -63,7 +72,10 @@ export function initSearchSuggestions() {
     function show(options: SearchSuggestion[]) {
       // An exact subject can arrive before artwork. Never remove the native
       // link under an ongoing touch/mouse press or keyboard selection.
-      if (selecting || active >= 0) { queued = options; return; }
+      if (selecting || active >= 0) {
+        queued = options;
+        return;
+      }
       queued = undefined;
       panel.replaceChildren(
         ...options.map((option, i) => {
@@ -111,8 +123,11 @@ export function initSearchSuggestions() {
       input.setAttribute('aria-expanded', 'false');
       input.removeAttribute('aria-activedescendant');
       if (Date.now() - refreshed > 30000) {
-        repository.clear(); pageRoot = undefined; earlyDirectory = undefined;
-        availableDirectory = undefined; refreshed = Date.now();
+        repository.clear();
+        pageRoot = undefined;
+        earlyDirectory = undefined;
+        availableDirectory = undefined;
+        refreshed = Date.now();
       }
       const query = input.value.trim();
       if (composing || query.length < 2) {
@@ -120,21 +135,29 @@ export function initSearchSuggestions() {
         return;
       }
       const direct = availableDirectory ? searchSiteEntries(availableDirectory, query) : [];
-      const directShown = direct.some(({ entry, fuzzy }) => !fuzzy && isDirectSearchMatch(entry, query));
+      const directShown = direct.some(
+        ({ entry, fuzzy }) => !fuzzy && isDirectSearchMatch(entry, query),
+      );
       if (directShown) show(searchSuggestions(query, [], direct));
       timer = setTimeout(() => {
         if (!directShown) {
-        const loading = document.createElement('p');
-        loading.textContent = 'Searching…';
-        panel.replaceChildren(loading);
-        panel.hidden = false;
-        panel.setAttribute('aria-busy', 'true');
-        input.setAttribute('aria-expanded', 'true');
+          const loading = document.createElement('p');
+          loading.textContent = 'Searching…';
+          panel.replaceChildren(loading);
+          panel.hidden = false;
+          panel.setAttribute('aria-busy', 'true');
+          input.setAttribute('aria-expanded', 'true');
         }
-        void requests.run<{ artwork: Parameters<typeof searchSuggestions>[1]; site: ReturnType<typeof searchSiteEntries> }>(
+        void requests.run<{
+          artwork: Parameters<typeof searchSuggestions>[1];
+          site: ReturnType<typeof searchSiteEntries>;
+        }>(
           async (signal, emit) => {
+            const queryRoot = pageRoot;
             const early = primeDirectory();
-            const showDirect = (entries: Awaited<ReturnType<SearchRepository['sourceDirectory']>>) => {
+            const showDirect = (
+              entries: Awaited<ReturnType<SearchRepository['sourceDirectory']>>,
+            ) => {
               const matches = searchSiteEntries(entries, query);
               if (matches.some(({ entry, fuzzy }) => !fuzzy && isDirectSearchMatch(entry, query)))
                 emit({ artwork: [], site: matches });
@@ -143,16 +166,15 @@ export function initSearchSuggestions() {
             // The page already pins its verified root. A direct topic does not
             // wait for the separate full artwork/monochrome manifest round trip.
             if (early) void early.then(showDirect, () => {});
-            const manifest = await repository.manifest(signal);
-            const directoryRead = early && manifest.version === pageRoot
-              ? early.catch(() => repository.siteEntries(manifest, signal))
-              : repository.siteEntries(manifest, signal);
-            const siteEntries = directoryRead.then((entries) => {
-              const matches = searchSiteEntries(entries, query);
-              if (matches.some(({ entry, fuzzy }) => !fuzzy && isDirectSearchMatch(entry, query)))
-                emit({ artwork: [], site: matches });
-              return entries;
-            });
+            // The page already pins the source root. Start the authenticated
+            // search directly; do not serialize it behind the full UI manifest.
+            const siteEntries =
+              early && queryRoot
+                ? early.then((entries) => ({ version: queryRoot, entries }))
+                : repository.manifest(signal).then(async (manifest) => ({
+                    version: manifest.version,
+                    entries: await repository.siteEntries(manifest, signal),
+                  }));
             const artworkRead = async () => {
               if (query.length <= 4 && early) {
                 // Do not race a slow directory with a speculative POST for
@@ -160,19 +182,34 @@ export function initSearchSuggestions() {
                 await early.catch(() => undefined);
                 await typingPause(signal);
               }
-              return repository.search({ ...defaults, q: query, size: 8 }, signal);
+              return queryRoot
+                ? repository.searchAtSnapshot(queryRoot, { ...defaults, q: query, size: 8 }, signal)
+                : repository.search({ ...defaults, q: query, size: 8 }, signal);
             };
-            const [art, entries] = await Promise.allSettled([
-              artworkRead(),
-              siteEntries,
-            ]);
+            const [art, entries] = await Promise.allSettled([artworkRead(), siteEntries]);
             if (art.status === 'rejected' && entries.status === 'rejected') throw art.reason;
-            const directory = { version: manifest.version,
-              entries: entries.status === 'fulfilled' ? entries.value : null,
-              siteError: entries.status !== 'fulfilled' };
-            const aligned = art.status === 'fulfilled'
-              ? await alignSearchDirectory(repository, art.value.manifest, directory, signal)
-              : directory;
+            const directory = {
+              version: entries.status === 'fulfilled' ? entries.value.version : (queryRoot ?? ''),
+              entries: entries.status === 'fulfilled' ? entries.value.entries : null,
+              siteError: entries.status !== 'fulfilled',
+            };
+            const aligned =
+              art.status === 'fulfilled'
+                ? await alignSearchDirectory(repository, art.value.manifest, directory, signal)
+                : directory;
+            if (
+              !signal.aborted &&
+              art.status === 'fulfilled' &&
+              /^[a-f0-9]{64}$/.test(art.value.manifest.version) &&
+              art.value.manifest.version !== queryRoot
+            ) {
+              // Advance only from a validated successful response, never relabel
+              // old directory entries with the refreshed artwork root.
+              pageRoot = art.value.manifest.version;
+              availableDirectory =
+                aligned.version === pageRoot ? (aligned.entries ?? undefined) : undefined;
+              earlyDirectory = availableDirectory ? Promise.resolve(availableDirectory) : undefined;
+            }
             return {
               artwork: art.status === 'fulfilled' ? art.value.items : [],
               site: searchSiteEntries(aligned.entries ?? [], query),
@@ -187,7 +224,10 @@ export function initSearchSuggestions() {
       }, 240);
     }
     input.addEventListener('input', suggest);
-    input.addEventListener('focus', () => { primeDirectory(); suggest(); });
+    input.addEventListener('focus', () => {
+      primeDirectory();
+      suggest();
+    });
     input.addEventListener('compositionstart', () => {
       composing = true;
       close();
@@ -244,7 +284,13 @@ export function initSearchSuggestions() {
     // Initial pageshow can arrive after a visitor starts typing while large
     // original images finish loading. Only a restored BFCache page needs reset.
     window.addEventListener('pageshow', (event) => {
-      if (event.persisted) { pageRoot = undefined; earlyDirectory = undefined; availableDirectory = undefined; repository.clear(); close(); }
+      if (event.persisted) {
+        pageRoot = undefined;
+        earlyDirectory = undefined;
+        availableDirectory = undefined;
+        repository.clear();
+        close();
+      }
     });
     if (document.activeElement === input && input.value.trim()) suggest();
   }
