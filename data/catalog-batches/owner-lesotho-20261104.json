@@ -1,0 +1,470 @@
+{
+  "schema": 1,
+  "status": "SOURCE_REVIEWED_CONTENT_BATCH",
+  "changes": [
+    {
+      "id": "lesotho-flag-clipart-001-wooden-hand-pole",
+      "expectedOldPublicSHA256": null,
+      "record": {
+        "id": "lesotho-flag-clipart-001-wooden-hand-pole",
+        "title": "Lesotho Flag on Wooden Pole",
+        "alt": "A rippling Lesotho flag with a black mokorotlo emblem hangs from a wooden pole with a round finial.",
+        "description": "Stitched blue, white and green fabric folds around the black Basotho hat emblem, with a polished wooden pole along the left edge.",
+        "color": "Multicolor",
+        "style": "Color",
+        "topic": "lesotho-flag",
+        "cluster": "Flags & countries",
+        "orientation": "Landscape",
+        "width": 1536,
+        "height": 1024,
+        "sourceType": "raster",
+        "svg": null,
+        "sourceCollection": "owner-lesotho-20261104",
+        "provenance": "Owner supplied image and matching printable PDF.",
+        "productionMethod": "owner-supplied",
+        "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+        "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+        "licenseApprovedAt": "2026-11-04",
+        "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+        "published": true,
+        "indexable": true,
+        "createdAt": "2026-11-04T07:52:23.618Z",
+        "revision": 1,
+        "formats": [
+          "WEBP",
+          "PDF"
+        ],
+        "pdfColorSpace": "ICC-based CMYK",
+        "pdfPage": "2.560 × 1.707 in",
+        "alpha": true,
+        "files": {
+          "webp": {
+            "bytes": 1469216,
+            "sha256": "6debdcbfc5b37e6318841751793bb4d0b41be279862bbbe025f56164c060b440"
+          },
+          "pdf": {
+            "bytes": 880641,
+            "sha256": "cb9d9e961260b385e0ccfc5e42db161c3d6f4d18122f02f100777d90eb2248c2"
+          },
+          "thumb": {
+            "bytes": 20916,
+            "sha256": "29e4b773193ad4ea37876b560a4746a0c1c096c7bfe760a2b4f3d67d80ffed50"
+          }
+        },
+        "webp": "https://assets.ultraclipart.com/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.webp.6debdcbfc5b37e63.webp",
+        "pdf": "https://assets.ultraclipart.com/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.pdf.cb9d9e961260b385.pdf",
+        "thumb": "https://assets.ultraclipart.com/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.webp.6debdcbfc5b37e63.webp",
+        "discovery": {
+          "cute": false
+        },
+        "monochrome": false,
+        "monochromeKind": null,
+        "editable": true,
+        "layered": false,
+        "originalThumb": "https://assets.ultraclipart.com/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.thumbnail.29e4b773193ad4ea.webp",
+        "thumbWidth": 1536,
+        "preview": "https://assets.ultraclipart.com/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.webp.6debdcbfc5b37e63.webp",
+        "previewWidth": 1536,
+        "previewHeight": 1024
+      }
+    }
+  ],
+  "artworkRows": [
+    {
+      "id": "lesotho-flag-clipart-001-wooden-hand-pole",
+      "expectedOldPublicSHA256": null,
+      "raw": {
+        "id": "lesotho-flag-clipart-001-wooden-hand-pole",
+        "title": "Lesotho Flag on Wooden Pole",
+        "alt": "A rippling Lesotho flag with a black mokorotlo emblem hangs from a wooden pole with a round finial.",
+        "description": "Stitched blue, white and green fabric folds around the black Basotho hat emblem, with a polished wooden pole along the left edge.",
+        "color": "Multicolor",
+        "style": "Color",
+        "topic": "lesotho-flag",
+        "cluster": "Flags & countries",
+        "orientation": "Landscape",
+        "width": 1536,
+        "height": 1024,
+        "sourceType": "raster",
+        "svg": null,
+        "sourceCollection": "owner-lesotho-20261104",
+        "provenance": "Owner supplied image and matching printable PDF.",
+        "productionMethod": "owner-supplied",
+        "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+        "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+        "licenseApprovedAt": "2026-11-04",
+        "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+        "published": true,
+        "indexable": true,
+        "createdAt": "2026-11-04T07:52:23.618Z",
+        "revision": 1,
+        "formats": [
+          "WEBP",
+          "PDF"
+        ],
+        "pdfColorSpace": "ICC-based CMYK",
+        "pdfPage": "2.560 × 1.707 in",
+        "alpha": true,
+        "files": {
+          "webp": {
+            "bytes": 1469216,
+            "sha256": "6debdcbfc5b37e6318841751793bb4d0b41be279862bbbe025f56164c060b440"
+          },
+          "pdf": {
+            "bytes": 880641,
+            "sha256": "cb9d9e961260b385e0ccfc5e42db161c3d6f4d18122f02f100777d90eb2248c2"
+          },
+          "thumb": {
+            "bytes": 20916,
+            "sha256": "29e4b773193ad4ea37876b560a4746a0c1c096c7bfe760a2b4f3d67d80ffed50"
+          }
+        },
+        "webp": "/catalog/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.webp",
+        "pdf": "/catalog/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.pdf",
+        "thumb": "/catalog/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole-thumb.webp",
+        "discovery": {
+          "cute": false
+        }
+      },
+      "review": {
+        "id": "lesotho-flag-clipart-001-wooden-hand-pole",
+        "status": "reviewed-from-image",
+        "sourceSha256": "6debdcbfc5b37e6318841751793bb4d0b41be279862bbbe025f56164c060b440",
+        "imageSha256": "6debdcbfc5b37e6318841751793bb4d0b41be279862bbbe025f56164c060b440",
+        "inputMetadataSha256": "a617cf5c150180cc6f62d3ea444e3a8f7963ce6700405eb3d97324406c91e97c",
+        "inputContextSha256": "604a916f6ce70b3a79838f2a15deb6ccf39276314b152a092f91fa77077e6eef",
+        "inspectedImage": "/catalog/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.webp",
+        "reviewedAt": "2026-11-04T07:52:23.618Z",
+        "observations": [
+          "Blue, white and green horizontal cloth bands carry a black mokorotlo hat centered in the white band.",
+          "Rippling stitched fabric extends to the right of a brown wooden pole with a round finial; no person or hand is depicted."
+        ],
+        "references": [
+          {
+            "publisher": "International Civil Aviation Organization",
+            "url": "https://www.icao.int/sites/default/files/postalhistory/lesotho_1994_50th_anniversary_of_icao.htm",
+            "reason": "Confirms the current blue white green flag and black mokorotlo emblem."
+          }
+        ],
+        "copy": {
+          "title": "Lesotho Flag on Wooden Pole",
+          "alt": "A rippling Lesotho flag with a black mokorotlo emblem hangs from a wooden pole with a round finial.",
+          "description": "Stitched blue, white and green fabric folds around the black Basotho hat emblem, with a polished wooden pole along the left edge."
+        }
+      },
+      "monochromeReceipt": {
+        "sourceSHA256": "29e4b773193ad4ea37876b560a4746a0c1c096c7bfe760a2b4f3d67d80ffed50",
+        "monochrome": false,
+        "kind": null,
+        "measurement": {
+          "method": "Decoded original RGBA pixels; alpha >=128; RGB chroma >18",
+          "visible": 711039,
+          "colored": 448138,
+          "fraction": 0.6302579745977366,
+          "imageSHA256": "6debdcbfc5b37e6318841751793bb4d0b41be279862bbbe025f56164c060b440"
+        },
+        "receiptSHA256": "aa910d4031ec25ce5a78f8aca8c3f50178b657b879d66b6cd4dc22ccdd4d43d6"
+      },
+      "pairReceipt": {
+        "status": "MATCHED_SOURCE_PIXELS",
+        "imageSHA256": "6debdcbfc5b37e6318841751793bb4d0b41be279862bbbe025f56164c060b440",
+        "pdfSHA256": "cb9d9e961260b385e0ccfc5e42db161c3d6f4d18122f02f100777d90eb2248c2",
+        "pages": 1,
+        "embeddedWidth": 1536,
+        "embeddedHeight": 1024,
+        "alphaMaskMatchesSourceExactly": true,
+        "pageInches": [
+          2.56,
+          1.7066666666666666
+        ],
+        "visualObservations": [
+          "The PDF render shows the same blue white green flag, black hat emblem and wooden pole as the inspected WebP.",
+          "No clipping, blank page or misplaced flag elements were seen in the rendered PDF."
+        ],
+        "repairRequired": false,
+        "receiptSHA256": "414028bf4cb0bd71ad1e2c14e29ae8bbfc859ee91825b0e461b1ebe19d1441fa"
+      }
+    }
+  ],
+  "topicChanges": [
+    {
+      "slug": "lesotho-flag",
+      "expectedRecordSha256": null,
+      "record": {
+        "schema": 1,
+        "type": "collection-topic",
+        "slug": "lesotho-flag",
+        "path": "/clipart/lesotho-flag/",
+        "canonical": "https://ultraclipart.com/clipart/lesotho-flag/",
+        "keyword": "Lesotho flag clipart",
+        "title": "Lesotho Flag Clipart",
+        "summary": "Blue, white and green fabric surrounds the black mokorotlo emblem on this Lesotho flag. The rippling cloth hangs from a wooden pole with a rounded finial.",
+        "metaDescription": "Blue, white and green fabric surrounds the black mokorotlo emblem on this Lesotho flag.",
+        "primaryCluster": "Flags & countries",
+        "sourceCluster": "Flags & countries",
+        "clusters": [
+          {
+            "name": "Flags & countries",
+            "path": "/collection/flags-countries/"
+          }
+        ],
+        "paragraphs": [
+          "Lesotho’s blue, white and green bands frame the black mokorotlo emblem in this rippling fabric flag. A rounded wooden finial and stitched cloth edges give the illustration its distinctive finish.",
+          "This collection currently contains {{artworkCount}} illustration, showing the flag on a wooden pole. Choose this design for a personal geography notebook, a country display or a classroom discussion of Lesotho’s national symbols."
+        ],
+        "editorial": {
+          "status": "checked-against-catalog",
+          "intro": "Blue, white and green fabric surrounds the black mokorotlo emblem on this Lesotho flag. The rippling cloth hangs from a wooden pole with a rounded finial.",
+          "sourceSha256": "a1984908733885e9fdb9e3cefc847e154c1709f433ae7d994c9f7d7f1362df50",
+          "checkedAt": "2026-11-04T07:52:23.618Z",
+          "evidence": [
+            {
+              "id": "lesotho-flag-clipart-001-wooden-hand-pole",
+              "imageSha256": "6debdcbfc5b37e6318841751793bb4d0b41be279862bbbe025f56164c060b440"
+            }
+          ],
+          "paragraphs": [
+            "Lesotho’s blue, white and green bands frame the black mokorotlo emblem in this rippling fabric flag. A rounded wooden finial and stitched cloth edges give the illustration its distinctive finish.",
+            "This collection currently contains {{artworkCount}} illustration, showing the flag on a wooden pole. Choose this design for a personal geography notebook, a country display or a classroom discussion of Lesotho’s national symbols."
+          ],
+          "paragraphSourceSha256": "b35337c50f4d8846cd84ea4c9151f4ba79c2abf5dcd444b5327bba1e36744763",
+          "paragraphEvidence": [
+            {
+              "id": "lesotho-flag-clipart-001-wooden-hand-pole",
+              "imageSha256": "6debdcbfc5b37e6318841751793bb4d0b41be279862bbbe025f56164c060b440"
+            }
+          ],
+          "paragraphsCheckedAt": "2026-11-04T07:52:23.618Z",
+          "paragraphReviewSha256": "408ef6dbff165a0b58ba4360a9c73947da564cdeb19f8bfbe1e0edd3d7817b75"
+        },
+        "artworkCount": 1,
+        "coverArtworkId": "lesotho-flag-clipart-001-wooden-hand-pole",
+        "related": []
+      },
+      "artworkIds": [
+        "lesotho-flag-clipart-001-wooden-hand-pole"
+      ]
+    }
+  ],
+  "topicRows": [
+    {
+      "slug": "lesotho-flag",
+      "rawItems": [
+        {
+          "id": "lesotho-flag-clipart-001-wooden-hand-pole",
+          "title": "Lesotho Flag on Wooden Pole",
+          "alt": "A rippling Lesotho flag with a black mokorotlo emblem hangs from a wooden pole with a round finial.",
+          "description": "Stitched blue, white and green fabric folds around the black Basotho hat emblem, with a polished wooden pole along the left edge.",
+          "color": "Multicolor",
+          "style": "Color",
+          "topic": "lesotho-flag",
+          "cluster": "Flags & countries",
+          "orientation": "Landscape",
+          "width": 1536,
+          "height": 1024,
+          "sourceType": "raster",
+          "svg": null,
+          "sourceCollection": "owner-lesotho-20261104",
+          "provenance": "Owner supplied image and matching printable PDF.",
+          "productionMethod": "owner-supplied",
+          "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+          "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+          "licenseApprovedAt": "2026-11-04",
+          "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+          "published": true,
+          "indexable": true,
+          "createdAt": "2026-11-04T07:52:23.618Z",
+          "revision": 1,
+          "formats": [
+            "WEBP",
+            "PDF"
+          ],
+          "pdfColorSpace": "ICC-based CMYK",
+          "pdfPage": "2.560 × 1.707 in",
+          "alpha": true,
+          "files": {
+            "webp": {
+              "bytes": 1469216,
+              "sha256": "6debdcbfc5b37e6318841751793bb4d0b41be279862bbbe025f56164c060b440"
+            },
+            "pdf": {
+              "bytes": 880641,
+              "sha256": "cb9d9e961260b385e0ccfc5e42db161c3d6f4d18122f02f100777d90eb2248c2"
+            },
+            "thumb": {
+              "bytes": 20916,
+              "sha256": "29e4b773193ad4ea37876b560a4746a0c1c096c7bfe760a2b4f3d67d80ffed50"
+            }
+          },
+          "webp": "/catalog/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.webp",
+          "pdf": "/catalog/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.pdf",
+          "thumb": "/catalog/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole-thumb.webp",
+          "discovery": {
+            "cute": false
+          }
+        }
+      ],
+      "resolvedItems": [
+        {
+          "id": "lesotho-flag-clipart-001-wooden-hand-pole",
+          "title": "Lesotho Flag on Wooden Pole",
+          "alt": "A rippling Lesotho flag with a black mokorotlo emblem hangs from a wooden pole with a round finial.",
+          "description": "Stitched blue, white and green fabric folds around the black Basotho hat emblem, with a polished wooden pole along the left edge.",
+          "color": "Multicolor",
+          "style": "Color",
+          "topic": "lesotho-flag",
+          "cluster": "Flags & countries",
+          "orientation": "Landscape",
+          "width": 1536,
+          "height": 1024,
+          "sourceType": "raster",
+          "svg": null,
+          "sourceCollection": "owner-lesotho-20261104",
+          "provenance": "Owner supplied image and matching printable PDF.",
+          "productionMethod": "owner-supplied",
+          "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+          "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+          "licenseApprovedAt": "2026-11-04",
+          "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+          "published": true,
+          "indexable": true,
+          "createdAt": "2026-11-04T07:52:23.618Z",
+          "revision": 1,
+          "formats": [
+            "WEBP",
+            "PDF"
+          ],
+          "pdfColorSpace": "ICC-based CMYK",
+          "pdfPage": "2.560 × 1.707 in",
+          "alpha": true,
+          "files": {
+            "webp": {
+              "bytes": 1469216,
+              "sha256": "6debdcbfc5b37e6318841751793bb4d0b41be279862bbbe025f56164c060b440"
+            },
+            "pdf": {
+              "bytes": 880641,
+              "sha256": "cb9d9e961260b385e0ccfc5e42db161c3d6f4d18122f02f100777d90eb2248c2"
+            },
+            "thumb": {
+              "bytes": 20916,
+              "sha256": "29e4b773193ad4ea37876b560a4746a0c1c096c7bfe760a2b4f3d67d80ffed50"
+            }
+          },
+          "webp": "https://assets.ultraclipart.com/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.webp.6debdcbfc5b37e63.webp",
+          "pdf": "https://assets.ultraclipart.com/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.pdf.cb9d9e961260b385.pdf",
+          "thumb": "https://assets.ultraclipart.com/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.webp.6debdcbfc5b37e63.webp",
+          "discovery": {
+            "cute": false
+          },
+          "monochrome": false,
+          "monochromeKind": null,
+          "editable": true,
+          "layered": false,
+          "originalThumb": "https://assets.ultraclipart.com/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.thumbnail.29e4b773193ad4ea.webp",
+          "thumbWidth": 1536,
+          "preview": "https://assets.ultraclipart.com/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.webp.6debdcbfc5b37e63.webp",
+          "previewWidth": 1536,
+          "previewHeight": 1024
+        }
+      ],
+      "editorial": {
+        "status": "checked-against-catalog",
+        "intro": "Blue, white and green fabric surrounds the black mokorotlo emblem on this Lesotho flag. The rippling cloth hangs from a wooden pole with a rounded finial.",
+        "sourceSha256": "a1984908733885e9fdb9e3cefc847e154c1709f433ae7d994c9f7d7f1362df50",
+        "checkedAt": "2026-11-04T07:52:23.618Z",
+        "evidence": [
+          {
+            "id": "lesotho-flag-clipart-001-wooden-hand-pole",
+            "imageSha256": "6debdcbfc5b37e6318841751793bb4d0b41be279862bbbe025f56164c060b440"
+          }
+        ],
+        "paragraphs": [
+          "Lesotho’s blue, white and green bands frame the black mokorotlo emblem in this rippling fabric flag. A rounded wooden finial and stitched cloth edges give the illustration its distinctive finish.",
+          "This collection currently contains {{artworkCount}} illustration, showing the flag on a wooden pole. Choose this design for a personal geography notebook, a country display or a classroom discussion of Lesotho’s national symbols."
+        ],
+        "paragraphSourceSha256": "b35337c50f4d8846cd84ea4c9151f4ba79c2abf5dcd444b5327bba1e36744763",
+        "paragraphEvidence": [
+          {
+            "id": "lesotho-flag-clipart-001-wooden-hand-pole",
+            "imageSha256": "6debdcbfc5b37e6318841751793bb4d0b41be279862bbbe025f56164c060b440"
+          }
+        ],
+        "paragraphsCheckedAt": "2026-11-04T07:52:23.618Z",
+        "paragraphReviewSha256": "408ef6dbff165a0b58ba4360a9c73947da564cdeb19f8bfbe1e0edd3d7817b75"
+      }
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "/Users/melihozcan/Documents/Codex/2026-10-23/astra6-google-bing-indexing-setup-web/work/ultraclipart-gta/work/imports/lesotho-20261104/source/lesotho-flag-clipart-001-wooden-hand-pole.webp",
+      "bytes": 1469216,
+      "sha256": "6debdcbfc5b37e6318841751793bb4d0b41be279862bbbe025f56164c060b440"
+    },
+    {
+      "path": "/Users/melihozcan/Documents/Codex/2026-10-23/astra6-google-bing-indexing-setup-web/work/ultraclipart-gta/work/imports/lesotho-20261104/source/lesotho-flag-clipart-001-wooden-hand-pole.pdf",
+      "bytes": 880641,
+      "sha256": "cb9d9e961260b385e0ccfc5e42db161c3d6f4d18122f02f100777d90eb2248c2"
+    },
+    {
+      "path": "/Users/melihozcan/Documents/Codex/2026-10-23/astra6-google-bing-indexing-setup-web/work/ultraclipart-gta/work/imports/lesotho-20261104/source/lesotho-flag-clipart-001-wooden-hand-pole-thumb.webp",
+      "bytes": 20916,
+      "sha256": "29e4b773193ad4ea37876b560a4746a0c1c096c7bfe760a2b4f3d67d80ffed50"
+    }
+  ],
+  "sourceMediaByURL": {
+    "https://assets.ultraclipart.com/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.webp.6debdcbfc5b37e63.webp": "/Users/melihozcan/Documents/Codex/2026-10-23/astra6-google-bing-indexing-setup-web/work/ultraclipart-gta/work/imports/lesotho-20261104/source/lesotho-flag-clipart-001-wooden-hand-pole.webp",
+    "https://assets.ultraclipart.com/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.pdf.cb9d9e961260b385.pdf": "/Users/melihozcan/Documents/Codex/2026-10-23/astra6-google-bing-indexing-setup-web/work/ultraclipart-gta/work/imports/lesotho-20261104/source/lesotho-flag-clipart-001-wooden-hand-pole.pdf",
+    "https://assets.ultraclipart.com/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.thumbnail.29e4b773193ad4ea.webp": "/Users/melihozcan/Documents/Codex/2026-10-23/astra6-google-bing-indexing-setup-web/work/ultraclipart-gta/work/imports/lesotho-20261104/source/lesotho-flag-clipart-001-wooden-hand-pole-thumb.webp"
+  },
+  "incomingMediaManifest": {
+    "schema": 2,
+    "status": "verified",
+    "verifiedAt": "2026-11-04T07:52:23.618Z",
+    "files": [
+      {
+        "assetId": "lesotho-flag-clipart-001-wooden-hand-pole",
+        "sourceType": "raster",
+        "kind": "webp",
+        "path": "/catalog/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.webp",
+        "name": "lesotho-flag-clipart-001-wooden-hand-pole.webp",
+        "bytes": 1469216,
+        "sha256": "6debdcbfc5b37e6318841751793bb4d0b41be279862bbbe025f56164c060b440",
+        "url": "https://assets.ultraclipart.com/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.webp.6debdcbfc5b37e63.webp",
+        "contentType": "image/webp",
+        "corsOrigin": "https://ultraclipart.com",
+        "verifiedAt": "2026-11-04T07:52:23.618Z",
+        "verification": "cdn-get-sha256"
+      },
+      {
+        "assetId": "lesotho-flag-clipart-001-wooden-hand-pole",
+        "sourceType": "raster",
+        "kind": "pdf",
+        "path": "/catalog/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.pdf",
+        "name": "lesotho-flag-clipart-001-wooden-hand-pole.pdf",
+        "bytes": 880641,
+        "sha256": "cb9d9e961260b385e0ccfc5e42db161c3d6f4d18122f02f100777d90eb2248c2",
+        "url": "https://assets.ultraclipart.com/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.pdf.cb9d9e961260b385.pdf",
+        "contentType": "application/pdf",
+        "corsOrigin": "https://ultraclipart.com",
+        "verifiedAt": "2026-11-04T07:52:23.618Z",
+        "verification": "cdn-get-sha256"
+      },
+      {
+        "assetId": "lesotho-flag-clipart-001-wooden-hand-pole",
+        "sourceType": "raster",
+        "kind": "thumb",
+        "path": "/catalog/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole-thumb.webp",
+        "name": "lesotho-flag-clipart-001-wooden-hand-pole-thumb.webp",
+        "bytes": 20916,
+        "sha256": "29e4b773193ad4ea37876b560a4746a0c1c096c7bfe760a2b4f3d67d80ffed50",
+        "url": "https://assets.ultraclipart.com/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.thumbnail.29e4b773193ad4ea.webp",
+        "contentType": "image/webp",
+        "corsOrigin": "https://ultraclipart.com",
+        "verifiedAt": "2026-11-04T07:52:23.618Z",
+        "verification": "cdn-get-sha256"
+      }
+    ],
+    "bytes": 2370773
+  }
+}
