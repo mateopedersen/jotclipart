@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "status": "INSTALLED_LIVE_VERIFIED",
+  "operator": "npm run content:publish -- prepare|publish CAPSULE SOFTWARE CONFIG NEW_WORK_OUTPUT",
+  "script": "scripts/catalog-snapshot/publish-content.mjs",
+  "capsuleRoot": "data/catalog-batches",
+  "software": {
+    "directory": "work/catalog-snapshot/software-mobile-subjects-final",
+    "revision": "ddf5fa7c943c3717661e15a7eca9e29c169e727d",
+    "abiSHA256": "cd7f7e3748fdb7e703e44e8d38c9bd3210ca12a36a6e14fbcc5ea8beff058735",
+    "workerSHA256": "09c3a1ab37710c147cf847f486efe5afa8a87ec3e43f8bea570b0558826ee218"
+  },
+  "publicConfig": "config/content-publisher-public.json",
+  "lastVerifiedData": {
+    "revision": "0f9a78639c331255b8f81e076825c359a2cce982",
+    "root": "ecd286cc660fab9f187b8623e5d9ed423fcb8464d7feb6df7473ed117d3b8bea",
+    "artworks": 37958,
+    "topics": 675
+  },
+  "limits": {
+    "changedArtworksPerPacket": 256,
+    "affectedTopicsPerPacket": 64,
+    "binaryConcurrency": 4,
+    "nativeSourceFilesPerPacket": 1024,
+    "accountInventoryRequired": false,
+    "fullCatalogBuildForContent": false
+  },
+  "proof": "work/catalog-snapshot/production-report.json",
+  "loadTests": "work/catalog-snapshot/load-tests/two-run-report.json",
+  "protectedIndependentBackup": "/Users/melihozcan/Documents/UltraClipart-Publisher-KEEP",
+  "measurementsScope": "Two private real-media transport + composition + native campaigns, approved unique sources reused. Fresh image review/repair/public verification remains separate; <=60 minutes is a measured technical target, not a universal guarantee."
+}

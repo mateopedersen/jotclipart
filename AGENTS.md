@@ -1,3 +1,49 @@
+# Verified Lesotho extension and build-free publisher — 2026-11-04
+
+The owner's twenty additional Lesotho illustrations are live, independently
+verified at data revision `0f9a78639c331255b8f81e076825c359a2cce982`, root
+`ecd286cc660fab9f187b8623e5d9ed423fcb8464d7feb6df7473ed117d3b8bea`.
+The verified software/control is `ddf5fa7c943c3717661e15a7eca9e29c169e727d`,
+Cloudflare production `ea1b955d-0fec-4b18-a456-b2166ddb34fa`. The catalog has
+37,958 artworks / 675 topics; Lesotho has 21 artworks, preserving the owner's
+original one. All 20 new drawings received actual pixel review, independent PDF
+render/pair checks, concise image-specific copy, source checksums and review
+receipts. All 41 changed public topic/art/editor pages and all 63 media files
+for the complete 21-artwork collection passed live verification. Search shows
+21 artworks; canonical and image sitemaps include the new files. Proof is in
+`work/imports/lesotho-additional-20-20261104/production-report.json`, discovery,
+media and browser receipts. Do not repeat this completed upload or activation.
+
+Protected source capsules are `data/catalog-batches/owner-lesotho-20261104.json`
+and `data/catalog-batches/lesotho-additional-20-20261104.json`. Their native
+sources, exact generation prompts, reviews and format lineage remain protected.
+One notebook draft was held and replaced; it is not a published extra artwork.
+PDF print resolution/dimensions are recorded truthfully; original RGBA WebPs
+retain native pixels. No paid generation fallback was used.
+
+Use the installed build-free content operator in
+`docs/delivery-content-publisher.md` and `config/content-publisher.json`.
+Content imports do not build Astro or scan the old media library. The shared
+data-only ledger blocks stale legacy full publication until accepted data is
+materialized. Preserve source-bound reviews, immutable manifests, fresh scoped
+authorization, single writer, byte/hash readback and atomic conditional activation.
+The metadata cache is bounded to 8,192 objects / 64 MiB, scoped and hash checked;
+mutable active pointers are never cached. Transient pinned read transport errors
+retry at most three times; conflicts and corrupted successful data fail closed.
+`scripts/catalog-snapshot/resume-content.mjs` independently replays a complete
+staged receipt before activation and repeats no media upload. It refuses completed
+or private-test output. Sixteen focused tests passed; the actual twenty-artwork
+staged recovery and final live verification also passed.
+
+Two separate private 20-topic / 2,000-artwork transport/composition/native tests
+completed in 37m35s and 36m15s. They reused distinct accepted media, were never
+activated and were fully cleaned. They do not promise a one-hour deadline for
+fresh visual review, repairs or every arbitrary package. Preserve the current
+compiled runtime and verified rollback, original ZIP/native artwork, source/Git,
+review evidence, IndexNow ledger and independent UltraClipart-Publisher-KEEP.
+See the latest production report before future work; later software-only releases
+may supersede the control revision while retaining this content root.
+
 # Collection opening style — latest owner direction, 2026-11-04
 
 Lead each collection introduction with a specific feature of its accepted topic;

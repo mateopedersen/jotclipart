@@ -16,15 +16,19 @@ export function metadataDiskCache({
   accountId,
   bucketName,
   maxBytes = 64 * 1024 * 1024,
-  maxObjects = 4096,
+  maxObjects = 8192,
 }) {
   directory = resolve(directory);
   if (
     !directory.startsWith(resolve('work') + '/') ||
     !/^[a-f0-9]{32}$/.test(accountId) ||
     !/^[a-z0-9-]+$/.test(bucketName) ||
+    !Number.isSafeInteger(maxBytes) ||
+    maxBytes < 1 ||
     maxBytes > 64 * 1024 * 1024 ||
-    maxObjects > 4096
+    !Number.isSafeInteger(maxObjects) ||
+    maxObjects < 1 ||
+    maxObjects > 8192
   )
     throw Error('Bounded private metadata cache required');
   mkdirSync(directory, { recursive: true });

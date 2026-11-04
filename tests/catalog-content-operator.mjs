@@ -15,7 +15,42 @@ import {
   OWNER_MANAGED_STORAGE_POLICY,
 } from '../scripts/delivery/release-write-authorization.mjs';
 import { merkle } from '../scripts/delivery/manifest.mjs';
+import { resumeStagedContent } from '../scripts/catalog-snapshot/resume-content.mjs';
+import { readFileSync } from 'node:fs';
 const hash = (b) => createHash('sha256').update(b).digest('hex');
+test('staged resume rejects completed runs and committed private tests before software or network access', async () => {
+  const output = resolve('work/test-resume-' + randomBytes(8).toString('hex'));
+  mkdirSync(output + '/prepared', { recursive: true });
+  try {
+    writeFileSync(output + '/result.json', '{}');
+    await assert.rejects(
+      () => resumeStagedContent({ output, software: 'does-not-exist', publicConfig: {} }),
+      /Completed packet/,
+    );
+    rmSync(output + '/result.json');
+    const file = 'data/catalog-batches/private-existing-topic-check.json',
+      bytes = readFileSync(file),
+      fields = JSON.parse(bytes),
+      sourceCommit = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
+    assert.equal(fields.publicationIntent, 'PRIVATE_TEST_ONLY');
+    writeFileSync(
+      output + '/prepared/packet.json',
+      JSON.stringify({
+        ...fields,
+        sourceCommit,
+        sourceCapsule: { path: file, sha256: hash(bytes) },
+        revision: 'a'.repeat(40),
+        parentSnapshotSHA256: 'b'.repeat(64),
+      }),
+    );
+    await assert.rejects(
+      () => resumeStagedContent({ output, software: 'does-not-exist', publicConfig: {} }),
+      /Private test packet/,
+    );
+  } finally {
+    rmSync(output, { recursive: true, force: true });
+  }
+});
 test('streamed batch sources reject replaced bytes, directories, symlinks and escapes', async () => {
   const dir = resolve('work/test-source-' + randomBytes(8).toString('hex'));
   mkdirSync(dir, { recursive: true });

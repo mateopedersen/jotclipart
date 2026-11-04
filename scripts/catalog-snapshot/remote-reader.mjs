@@ -1,5 +1,6 @@
 // Memory-bounded coalesced point reads. Never lists/scans the parent catalogue.
 import { createHmac } from 'node:crypto';
+import { setTimeout as backoff } from 'node:timers/promises';
 import { sha256 } from './stage-manifest.mjs';
 export function remoteCatalogBucket({
   endpoint = 'http://127.0.0.1:8899/read',
@@ -50,27 +51,45 @@ export function remoteCatalogBucket({
     active++;
     for (const [, r] of batch) r.started = true;
     if (!batch.length) return;
-    const keys = batch.map(([k]) => k),
-      command = {
-        action: 'read-pinned-catalog-metadata',
-        parentSnapshotSHA256,
-        accountId,
-        bucket,
-        at: Date.now() - 1000,
-        keys,
-      },
-      signature = createHmac('sha256', Buffer.from(secret, 'hex'))
-        .update(JSON.stringify(command))
-        .digest('hex');
+    const keys = batch.map(([k]) => k);
     try {
-      requests++;
-      const response = await fetcher(endpoint, {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ command, signature }),
-        signal: AbortSignal.timeout(90000),
-      });
-      if (!response.ok) throw Error('Pinned catalog read HTTP ' + response.status);
+      let response;
+      // Only idempotent pinned reads retry transient transport failures. Every
+      // attempt receives fresh authority for the same exact parent and keys.
+      // Stale parents, authorization and corrupt returned bytes fail closed.
+      for (let attempt = 0; attempt < 3; attempt++) {
+        const command = {
+            action: 'read-pinned-catalog-metadata',
+            parentSnapshotSHA256,
+            accountId,
+            bucket,
+            at: Date.now() - 1000,
+            keys,
+          },
+          signature = createHmac('sha256', Buffer.from(secret, 'hex'))
+            .update(JSON.stringify(command))
+            .digest('hex');
+        requests++;
+        try {
+          response = await fetcher(endpoint, {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({ command, signature }),
+            signal: AbortSignal.timeout(90000),
+          });
+        } catch (error) {
+          if (attempt === 2) throw error;
+          await backoff(200 * 2 ** attempt);
+          continue;
+        }
+        if ([429, 500, 502, 503, 504].includes(response.status) && attempt < 2) {
+          await response.body?.cancel();
+          await backoff(200 * 2 ** attempt);
+          continue;
+        }
+        if (!response.ok) throw Error('Pinned catalog read HTTP ' + response.status);
+        break;
+      }
       const result = await response.json();
       if (
         result.parentSnapshotSHA256 !== parentSnapshotSHA256 ||

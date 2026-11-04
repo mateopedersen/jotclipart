@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "accountId": "48c779c8eaa80234e0bb9d57f96e588b",
+  "bucketName": "ultraclipart-pages",
+  "keyId": "catalog-owner-v1",
+  "publicKeyHex": "4309eb97062f41768467b4b7f9139f1682450cc3fd2e33fb9bb50131e7a79479",
+  "acceptedPredecessor": {
+    "rootSHA256": "ad303dedafc8b8e8420f64e9c1b087fe25118c81f244f191c2ab3e063629eda7",
+    "abiSHA256": "e922b0cb7b5531d553344edf1a3b82e9d98d3f13613ef432e75c88279bd7ec78"
+  }
+}
