@@ -1,5 +1,6 @@
 import{readShellField}from'../catalog-projections/shell.mjs';
 import{readSurprisePicks}from'./surprise-picks.mjs';
+import{readStudioFeaturedCount}from'./studio-featured-count.mjs';
 // Snapshot-only inputs for existing catalog shells; no full artwork catalog.
 import {readArtwork} from './artwork-facet-reader.mjs';
 import {readSharedArtwork} from './shared-artwork-context.mjs';
@@ -31,6 +32,6 @@ export async function readShellPageState(bucket,context,kind,{cluster,allowFixtu
   if(kind==='cluster'){const picks=(await field('clusterPicks',128)).find(p=>p.cluster===cluster);if(!picks)return undefined;state.art=[...await artwork(picks.ids),...staticArt.filter(a=>!picks.ids.includes(a.id))];state.props.cluster=cluster}
   if(kind==='library')state.directoryArtwork=await artwork(await field('directoryIds',1000));
  }
- if(kind==='create'){const d=await context.read('collections',cc.collections.studioFeatured,{maxBytes:65536});if(d.type!=='studio-featured'||!Array.isArray(d.ids)||d.ids.length>500)throw Error('Invalid Studio initial set');state.featuredStudioArt=await artwork(d.ids);state.studioCompositionPreviews=await field('studioCompositionPreviews',128)}
+ if(kind==='create'){state.featuredStudioCount=await readStudioFeaturedCount(context,cc.collections.studioFeatured);state.featuredStudioArt=[];state.studioCompositionPreviews=await field('studioCompositionPreviews',128)}
  return state;
 }
