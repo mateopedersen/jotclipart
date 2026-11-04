@@ -1,3 +1,42 @@
+# Verified collection and site-speed software release — 2026-11-04
+
+Installed software/control is `baf84e878252e9ee6e65f2b42f0aafc6e1d27642`,
+Cloudflare production `a1e0591e-d133-4c3b-9c4a-281be8b85964`.
+The signed catalog remains data revision `88b50ae120a253ab6a4c31b5b9a1ac4a2b99fadb`,
+root `3b6bc53d65df98d2f52be751866fecedb55778c48ccaf32f2b46c7c0ac925bdf`:
+38,208 artworks / 679 topics. There are 101 collection views, including 76 new
+reviewed thematic views. These are overlapping discovery views, not extra original
+artworks. Preserve the latest five-package content release and all accepted IDs.
+
+The existing guarded software-only publisher made no R2 media/metadata writes,
+no signed pointer activation, no environment/DNS/credential scope changes and no
+search-engine notifications. Public original img/schema/download URLs remain full
+originals. Source-bound temporary loading backgrounds, actual-viewport priorities,
+stable nonblocking Surprise selection, parallel captured reads, safe render
+coalescing and browser intent navigation are shared across the templates.
+
+Only actual verified static module dependencies are preloaded. Optional editor
+codecs stay deferred. Versioned software has one unambiguous immutable browser
+cache policy. The interface font uses `inter-latin-wght-3100e775e861-cache-v2.woff2`
+with exactly the retained original font bytes; this avoids stale canonical edge
+headers without a purge permission or changing the artwork storage. Preserve the
+old font URL for old open pages and retained static fallbacks.
+
+Actual proof: `work/catalog-snapshot/software-site-speed-font-v2-proof-20261104/production-report.json`.
+It binds 133 native routes, all 101 collection routes, 116 live HTTP checks,
+144 actual software/font byte/hash/header checks, 26 actual media GETs and 12
+responsive live browser cases, plus real search/editor/filter flows. Local source
+review covered 675 topic representatives in two passes and 280 actual cover
+originals; it is not a fresh pixel review of all historical artwork. Cold and
+prepared visits have separate receipts; some cold visits still exceed one second.
+Do not claim universal subsecond loading or actual prerender reuse without evidence.
+
+Future content uses `config/content-publisher.json` and the exact installed
+runtime/public-config bindings. Do not rebuild the full catalog or republish an
+older source. Protect current/prior verified runtime, native ZIPs, immutable
+metadata sources, shared IndexNow state and independent publisher KEEP backups.
+Unrelated Marvel work stays pending and was not included in this release commit.
+
 # Verified five owner brand packages — 2026-11-04
 
 Costco, Tesla, Apple Devices, Berkshire Hathaway and Microsoft are now live and
