@@ -1,3 +1,4 @@
+import{readShellField}from'../catalog-projections/shell.mjs';
 import{readSurprisePicks}from'./surprise-picks.mjs';
 // Snapshot-only inputs for existing catalog shells; no full artwork catalog.
 import {readArtwork} from './artwork-facet-reader.mjs';
@@ -12,7 +13,7 @@ import {defaults} from '../../src/lib/search.ts';
 export async function readShellPageState(bucket,context,kind,{cluster,allowFixture=false,dataOnly=false}={}){
  const cc=await openSevenFacetCollectionContext(bucket,{snapshot:context.snapshot,allowUnpublishableFixture:allowFixture}),descriptor=cc.collections.shells;
  if(!descriptor)throw Error('Discovery context unavailable');const root=await context.read('collections',descriptor,{maxBytes:65536});if(root.schema!==1||root.type!=='discovery-shell-directory'||!root.fields)throw Error('Invalid discovery context');
- async function field(name,limit=10000){const pages=root.fields[name];if(!Array.isArray(pages)||pages.length>128)throw Error('Invalid discovery field');const result=[];for(const d of pages){const page=await context.read('collections',d,{maxBytes:65536});if(page.schema!==1||page.type!=='discovery-shell-rows'||page.field!==name||page.offset!==result.length||!Array.isArray(page.entries)||page.entries.length!==d.count)throw Error('Discovery part mismatch');result.push(...page.entries);if(result.length>limit)throw Error('Discovery budget exceeded')}return result}
+ const field=(name)=>readShellField(context,root,name);
  const [features,staticIds,clusters]=await Promise.all([dataOnly?{surprise:[],ids:[],artworks:[]}:cc.read(cc.root.features,256*1024),dataOnly?[]:field('staticIds',128),field('clusters',128)]),shared=await readSharedArtwork(context,features),byId=new Map(shared.map(a=>[a.id,a]));
  async function artwork(ids){if(ids.length>1500||new Set(ids).size!==ids.length)throw Error('Invalid shell artwork keys');let cursor=0;const rows=Array(ids.length);await Promise.all(Array.from({length:Math.min(4,ids.length)},async()=>{while(cursor<ids.length){const i=cursor++,id=ids[i],a=byId.get(id)??await readArtwork(context,id);if(!a?.published||!a.indexable)throw Error('Shell references missing artwork');byId.set(id,a);rows[i]=a}}));return rows}
  const staticArt=await artwork(staticIds),state={art:staticArt,topics:[],clusters,counts:{...cc.global,topics:{}},surprise:dataOnly?[]:cc.collections.surprise?await readSurprisePicks(context,{limit:48}):features.surprise.map(p=>({id:p.id,topic:p.topic,...(Object.hasOwn(p,'fresh')?{fresh:p.fresh}:{})})),summaries:new Map(),paragraphs:new Map(),copy:{},relations:{},clusterNames:{},newestArt:[],blackAndWhiteArt:[],props:{},searchManifest:{version:context.rootSHA256}};

@@ -31,7 +31,7 @@ const aliases = new Map([
 
   [join(root,'scripts/cookie-startup.mjs'),`export const cookieStartupScript=${JSON.stringify(cookieScripts.cookieStartupScript)};export const cookieMountScript=${JSON.stringify(cookieScripts.cookieMountScript)};`],
   [join(root, 'src/lib/catalog.ts'), `import {current,scoped} from ${JSON.stringify(context)};
-    export const art=scoped('art',[]),publishedArt=scoped('art',[]),availableTopics=scoped('topics',[]),topics=scoped('topics',[]),newestArt=scoped('newestArt',[]),blackAndWhiteArt=scoped('blackAndWhiteArt',[]),availableClusters=scoped('clusters',[]);export {topicInCluster} from './topic-clusters.ts';
+    export const art=scoped('art',[]),publishedArt=scoped('art',[]),availableTopics=scoped('topics',[]),topics=scoped('topics',[]),newestArt=scoped('newestArt',[]),blackAndWhiteArt=scoped('blackAndWhiteArt',[]),availableClusters=scoped('clusters',[]);export const topicInCluster=(topic,cluster)=>topic.cluster===cluster;
     export const reviewedCollectionIntroductions=scoped('summaries',new Map()),reviewedCollectionParagraphs=scoped('paragraphs',new Map());
     export const topicArt=slug=>current().art.filter(a=>a.topic===slug);
     export const slugify=s=>s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
