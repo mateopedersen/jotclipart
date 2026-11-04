@@ -4,7 +4,6 @@
   "changes": [
     {
       "id": "lesotho-flag-clipart-001-wooden-hand-pole",
-      "expectedOldPublicSHA256": null,
       "record": {
         "id": "lesotho-flag-clipart-001-wooden-hand-pole",
         "title": "Lesotho Flag on Wooden Pole",
@@ -66,7 +65,8 @@
         "preview": "https://assets.ultraclipart.com/lesotho-flag/lesotho-flag-clipart-001-wooden-hand-pole.webp.6debdcbfc5b37e63.webp",
         "previewWidth": 1536,
         "previewHeight": 1024
-      }
+      },
+      "expectedPublicSHA256": null
     }
   ],
   "artworkRows": [
