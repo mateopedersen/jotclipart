@@ -1,4 +1,5 @@
 ---
+import { displayTitle } from '../../lib/display-title';
 import { imageObject } from '../../lib/image-schema';
 import { collectionMetaDescription } from '../../lib/collection-meta.mjs';
 import { structuredData, breadcrumbs } from '../../lib/structured-data';
@@ -29,7 +30,7 @@ const items = topicArt(topic.slug).sort(
   (a, b) => (featured.get(a.id) ?? 999) - (featured.get(b.id) ?? 999),
 );
 const topicReady = items.length > 0 && items.every((item) => item.indexable && item.published);
-const title = topic.keyword.replace('clipart', 'Clipart');
+const title = displayTitle(topic.keyword);
 const description = reviewedIntro;
 if (!description) throw new Error(`Missing topic introduction: ${topic.slug}`);
 const searchDescription = collectionMetaDescription(description);
@@ -72,7 +73,7 @@ const searchDescription = collectionMetaDescription(description);
             '@type': 'ListItem',
             position: index + 1,
             url: `https://ultraclipart.com/art/${item.id}/`,
-            name: item.title,
+            name: displayTitle(item.title),
             item: imageObject(item),
           })),
         },
@@ -84,7 +85,7 @@ const searchDescription = collectionMetaDescription(description);
       <a href="/">Home</a> / <a href="/categories/">Categories</a> /{' '}
       <a href={`/collection/${slugify(topic.cluster)}/`}>{topic.cluster}</a>
     </div>
-    <h1>{title}</h1>
+    <h1 data-display-title>{title}</h1>
     <CollectionIntroduction topic={topic.slug} paragraphs={paragraphs} />
     <div class="chips">
       {clustersForTopic(topic)

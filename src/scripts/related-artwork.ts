@@ -1,3 +1,4 @@
+import { displayTitle } from '../lib/display-title.ts';
 import { FAVORITES_KEY, parseFavoriteIds, toggleStoredFavorite } from '../lib/favorites-storage';
 import type { BrowserRelatedCard, BrowserSnapshot, Mode } from '../lib/related/engine';
 export function initRelatedArtwork() {
@@ -166,14 +167,15 @@ export function initRelatedArtwork() {
     node
       .querySelectorAll<HTMLAnchorElement>('[data-related-detail]')
       .forEach((link) => (link.href = data.href));
-    node.querySelector('.related-card-title')!.textContent = data.title;
+    node.querySelector<HTMLElement>('.related-card-title')!.dataset.displayTitle = '';
+    node.querySelector('.related-card-title')!.textContent = displayTitle(data.title);
     node.querySelector('.related-reason')!.textContent = data.reason;
     const image = node.querySelector('img')!;
     image.removeAttribute('srcset');
     image.removeAttribute('sizes');
     image.src = data.webp;
     image.alt = data.alt;
-    image.title = data.title;
+    image.title = displayTitle(data.title);
     node.querySelectorAll<HTMLAnchorElement>('[data-related-download]').forEach((link) => {
       const format = link.dataset.relatedDownload as 'webp' | 'pdf',
         url = data[format];

@@ -1,4 +1,5 @@
 ---
+import { displayTitle } from '../lib/display-title';
 import Layout from '../layouts/Layout.astro';
 import CatalogCount from '../components/CatalogCount.astro';
 import TeacherSymbol from '../components/TeacherSymbol.astro';
@@ -120,7 +121,7 @@ const information = [
               srcset={image.thumbSrcSet}
               sizes="(max-width: 540px) 25vw, 240px"
               alt={image.alt}
-              title={image.title}
+              title={displayTitle(image.title)}
               width="260"
               height="260"
               decoding="async"
@@ -211,7 +212,7 @@ const information = [
                   srcset={item.thumbSrcSet}
                   sizes="88px"
                   alt={item.alt}
-                  title={item.title}
+                  title={displayTitle(item.title)}
                   width="88"
                   height="88"
                   loading="lazy"

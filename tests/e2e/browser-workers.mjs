@@ -1,0 +1,21 @@
+// Executes the exact packaged JS in real browser workers. Pixel inputs are small
+// synthetic test fixtures, not catalog artwork and not an AI generation request.
+import {chromium,webkit} from '@playwright/test';
+import assert from 'node:assert/strict';import fs from 'node:fs';import{resolve}from'node:path';
+const software=resolve(process.env.UC_SOFTWARE_DIR),code=JSON.parse(fs.readFileSync(software+'/runtime/software-report.json')),meta=JSON.parse(fs.readFileSync(software+'/shell-ssr/compiled/client-metafile.json'));
+const files=Object.entries(meta.outputs).filter(([file])=>/\/worker-[a-f0-9]+\.js$/.test(file));
+const urlFor=suffix=>{const found=files.find(([,v])=>v.entryPoint?.endsWith(suffix));assert(found,suffix);return '/__ssr-client/'+code.revision+'/'+found[0].split('/').at(-1)};
+const urls={category:urlFor('src/workers/category-search.ts'),smart:urlFor('src/editor/smart/worker.ts'),cutout:urlFor('src/ai/cutout.worker.ts')};
+const base=process.env.BASE_URL||'http://127.0.0.1:4351',out=resolve(process.env.EVIDENCE_DIR||'reports/browser-workers');fs.mkdirSync(out,{recursive:true});const report={base,software:code.revision,passed:false,scope:'Actual packaged worker programs in Chromium and WebKit; synthetic 3 by 3 pixel fixtures; no inference',cases:[],errors:[]};
+try{for(const[engine,type]of Object.entries({chromium,webkit})){const b=await type.launch(engine==='chromium'?{executablePath:process.env.UC_CHROMIUM_EXECUTABLE_PATH}:{});try{const p=await b.newPage();p.on('pageerror',e=>report.errors.push(e.message));await p.goto(base+'/categories/',{waitUntil:'domcontentloaded',timeout:60000});
+const results=await p.evaluate(async urls=>{
+ async function withWorker(url,run){const worker=new Worker(new URL(url,location.origin),{type:'module'});const call=message=>new Promise((resolve,reject)=>{const timer=setTimeout(()=>reject(Error('Worker response timeout')),20000);worker.onmessage=e=>{clearTimeout(timer);e.data.error?reject(Error(e.data.error)):resolve(e.data)};worker.onerror=e=>{clearTimeout(timer);reject(Error(e.message))};worker.postMessage(message)});try{return await run(call)}finally{worker.terminate()}}
+ // The category protocol initializes first; unlike image operations it has no
+ // response to init, so send init before making the response-bearing call.
+ const filtered=await new Promise((resolve,reject)=>{const w=new Worker(new URL(urls.category,location.origin),{type:'module'}),timer=setTimeout(()=>{w.terminate();reject(Error('Category worker timeout'))},25000);w.onerror=e=>{clearTimeout(timer);w.terminate();reject(Error(e.message))};w.onmessage=e=>{clearTimeout(timer);w.terminate();resolve(e.data)};w.postMessage({type:'init',url:'/category-search/current.json'});w.postMessage({type:'search',id:2,query:'camera'})});
+ const pixels=new Uint8ClampedArray(36).fill(255);pixels.set([0,0,0,255],16);
+ const smart=await withWorker(urls.smart,async call=>{const source=await call({id:1,op:'source',payload:{width:3,height:3,data:pixels}});const selected=await call({id:2,op:'select',payload:{point:{x:1,y:1},options:{tolerance:1,perceptual:false,contiguous:true}}});return {source:source.result,selected:Array.from(selected.result)}});
+ const cutout=await withWorker(urls.cutout,async call=>{const r=await call({width:3,height:3,pixels:new Uint8ClampedArray(pixels),tolerance:20});return{removed:r.removed,alpha:Array.from(r.pixels).filter((_,i)=>i%4===3)}});
+ return {filtered,smart,cutout};
+},urls);
+assert.equal(results.filtered.type,'result');assert(results.filtered.scores.find(([id,score])=>id==='camera'&&score>0));assert.equal(results.smart.source,true);assert.equal(results.smart.selected[4],255);assert.equal(results.smart.selected.filter(Boolean).length,1);assert.equal(results.cutout.removed,8);assert.equal(results.cutout.alpha[4],255);assert.equal(results.cutout.alpha.filter(Boolean).length,1);report.cases.push({engine,urls,results,passed:true});await p.close()}finally{await b.close()}}assert.deepEqual(report.errors,[]);report.passed=true}catch(e){report.failure=e.stack;throw e}finally{fs.writeFileSync(out+'/report.json',JSON.stringify(report,null,2));console.log(JSON.stringify({passed:report.passed,cases:report.cases.length,failure:report.failure,errors:report.errors}))}

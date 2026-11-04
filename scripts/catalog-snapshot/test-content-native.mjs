@@ -1,3 +1,4 @@
+import { displayTitle } from '../../src/lib/display-title.ts';
 // Native rendering of the changed batch through a verified point-read service.
 // No copied full catalog, no production pointer and no external media downloads.
 import { build } from 'esbuild';
@@ -124,7 +125,7 @@ export async function verifyNativeContent({ candidate, created, parentBucket, so
         if (c.record) {
           assert.equal(
             decode(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? ''),
-            c.record.title,
+            displayTitle(c.record.title),
             path,
           );
           assert(html.includes('https://ultraclipart.com' + path));

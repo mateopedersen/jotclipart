@@ -1,3 +1,4 @@
+import { displayTitle } from '../lib/display-title.ts';
 const grid = document.querySelector<HTMLElement>('#latest-collections');
 if (grid) {
   let busy = false;
@@ -59,7 +60,7 @@ if (grid) {
         const copy = document.createElement('div');
         copy.className = 'subject-collection-copy';
         const title = document.createElement('h3');
-        title.textContent = item.name;
+        title.textContent = displayTitle(item.name);
         const count = document.createElement('p');
         count.textContent = `${item.count.toLocaleString('en-US')} Illustrations`;
         const arrow = document.createElement('span');

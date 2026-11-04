@@ -1,4 +1,5 @@
 ---
+import { displayTitle } from '../../lib/display-title';
 import { imageObject } from '../../lib/image-schema';
 import { downloadDetails } from '../../lib/download-data';
 import { structuredData, breadcrumbs } from '../../lib/structured-data';
@@ -38,7 +39,7 @@ const downloadRecord = {
 ---
 
 <Layout
-  title={item.title}
+  title={displayTitle(item.title)}
   description={item.description}
   noindex={!item.indexable}
   image={item.webp}
@@ -66,7 +67,7 @@ const downloadRecord = {
     />
   </Fragment>
   <div class="breadcrumb">
-    <a href="/">Home</a> / <a href={`/clipart/${item.topic}/`}>{topic.keyword}</a> / {item.title}
+    <a href="/">Home</a> / <a href={`/clipart/${item.topic}/`} data-display-title>{displayTitle(topic.keyword)}</a> / {item.title}
   </div>
   <div class="detail art-detail">
     <div>
@@ -79,7 +80,7 @@ const downloadRecord = {
         aria-label={`Open original image: ${item.title}`}
       >
         <img
-          title={item.title}
+          title={displayTitle(item.title)}
           src={originalImage}
           alt={item.alt}
           width={item.width}
@@ -134,8 +135,8 @@ const downloadRecord = {
       </fieldset>
     </div>
     <section>
-      <p class="eyebrow">{item.layered ? 'Original illustration' : topic.keyword}</p>
-      <h1>{item.title}</h1>
+      <p class="eyebrow">{item.layered ? 'Original Illustration' : displayTitle(topic.keyword)}</p>
+      <h1 data-display-title>{displayTitle(item.title)}</h1>
       <div class="art-detail-badges">
         {item.alpha && (
           <span class="art-alpha-badge">
@@ -153,7 +154,7 @@ const downloadRecord = {
           </dt>
           <dd>
             <a class="art-collection-link" href={`/clipart/${item.topic}/`}>
-              <span class="art-collection-name">{topic.keyword}</span>
+              <span class="art-collection-name" data-display-title>{displayTitle(topic.keyword)}</span>
               <span class="art-collection-arrow" aria-hidden="true">
                 <NavigationArrow size={22} variant="collection" />
               </span>
@@ -274,7 +275,7 @@ const downloadRecord = {
       </div>
       <button
         data-favorite={item.id}
-        data-favorite-title={item.title}
+        data-favorite-title={displayTitle(item.title)}
         data-favorite-thumb={item.thumb}
         aria-pressed="false"
         style="width:100%"

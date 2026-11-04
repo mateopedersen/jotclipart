@@ -1,4 +1,5 @@
 ---
+import { displayTitle } from '../lib/display-title';
 import Icon from './Icon.astro';
 import StudioIcon from './StudioIcon.astro';
 import ExportFormatIcon from './ExportFormatIcon.astro';
@@ -85,7 +86,7 @@ const toolItems = [
     <div>
       {creator ? (
         <>
-          <h2 id="studio-workspace-title">{art.title}</h2>
+          <h2 id="studio-workspace-title" data-display-title>{displayTitle(art.title)}</h2>
           <a class="uc-project-help" href="#studio-privacy">
             Saving &amp; privacy
           </a>
@@ -93,7 +94,7 @@ const toolItems = [
       ) : (
         <>
           <a href={`/art/${art.id}/`}>← Back to artwork</a>
-          <h1>{art.title}</h1>
+          <h1 data-display-title>{displayTitle(art.title)}</h1>
         </>
       )}
     </div>

@@ -1,3 +1,4 @@
+import { displayTitle } from '../lib/display-title.ts';
 /** A shared enhancement for existing and dynamically inserted informative images.
  * Read the image's own metadata; never infer identities from URLs or filenames.
  */
@@ -66,7 +67,7 @@ export function initImageInformation() {
         originalTitle = image.getAttribute('title');
         const heading = originalTitle?.trim() || '';
         const alt = image.alt.trim();
-        title.textContent = heading || 'Image description';
+        title.textContent = displayTitle(heading || 'Image Description');
         description.textContent = alt;
         description.hidden =
           !!heading &&

@@ -1,3 +1,4 @@
+import { displayTitle } from '../lib/display-title.ts';
 import { beginArtworkLibraryStartup } from './library-startup';
 import { rasterCatalog, featuredRasterCatalog, type RasterAsset } from './raster';
 import { lookupTopicAssets, pinRasterSnapshot, unpinRasterSnapshot } from './studio-sources';
@@ -96,7 +97,7 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
       const button = document.createElement('button');
       button.type = 'button';
       button.className = 'wb-category-tile';
-      button.title = entry.title;
+      button.title = displayTitle(entry.title);
       const image = document.createElement('img');
       image.src = entry.thumb;
       image.alt = '';
@@ -104,7 +105,7 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
       image.width = 96;
       image.height = 72;
       const title = document.createElement('strong');
-      title.textContent = entry.title;
+      title.textContent = displayTitle(entry.title);
       const detail = document.createElement('small');
       detail.textContent = entry.detail;
       button.append(image, title, detail);
@@ -168,7 +169,7 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
       img.height = 200;
       preview.append(img);
       const name = document.createElement('strong');
-      name.textContent = asset.title.replace(/ Clipart$/i, '');
+      name.textContent = displayTitle(asset.title.replace(/ Clipart$/i, ''));
       const detail = document.createElement('span');
       detail.className = 'uc-artwork-dimensions';
       detail.textContent = `${asset.width.toLocaleString()} × ${asset.height.toLocaleString()} px`;

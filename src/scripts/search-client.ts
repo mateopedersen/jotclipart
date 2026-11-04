@@ -1,3 +1,4 @@
+import { displayTitle } from '../lib/display-title.ts';
 import {adoptCatalogSnapshot} from '../lib/catalog-snapshot-client';
 import { defaults, normalizeQuery, parseState, stateParams, type SearchState } from '../lib/search';
 import { SearchRepository, type RemoteResults } from '../lib/search-remote';
@@ -59,7 +60,7 @@ export function initSearch() {
         kind.className = 'site-search-kind';
         kind.textContent = searchKindLabels[entry.kind];
         const title = document.createElement('strong');
-        title.textContent = entry.title;
+        title.textContent = displayTitle(entry.title);
         const description = document.createElement('p');
         description.textContent = entry.description;
         link.append(kind, title, description);

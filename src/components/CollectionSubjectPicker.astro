@@ -1,28 +1,24 @@
 ---
+import { displayTitle } from '../lib/display-title';
 interface Props { topics: { slug: string; keyword: string }[] }
 const { topics } = Astro.props;
 ---
 <div class="collection-subject-navigation">
-  <div class="chips desktop-subject-links" aria-label="Topics in this collection">
-    {topics.map((topic) => <a href={`/clipart/${topic.slug}/`}>{topic.keyword}</a>)}
-  </div>
-  <details class="mobile-subject-picker">
+  <details class="collection-subject-picker mobile-subject-picker">
     <summary>
-      <span>Choose a Subject</span>
+      <span>Choose A Subject</span>
       <span class="subject-count">{topics.length}</span>
       <svg viewBox="0 0 20 20" width="20" height="20" fill="none" aria-hidden="true">
         <path d="m5 7.5 5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
     </summary>
     <nav class="mobile-subject-options" aria-label="Topics in this collection">
-      {topics.map((topic) => <a href={`/clipart/${topic.slug}/`}>{topic.keyword}</a>)}
+      {topics.map((topic) => <a href={`/clipart/${topic.slug}/`} data-display-title>{displayTitle(topic.keyword)}</a>)}
     </nav>
   </details>
 </div>
 <style>
-  .mobile-subject-picker { display: none; }
-  @media (max-width: 767px) {
-    .desktop-subject-links { display: none; }
+  .collection-subject-navigation { max-width: 720px; margin-top: 16px; }
     .mobile-subject-picker {
       display: block;
       border: 1px solid #bacfe8;
@@ -72,6 +68,6 @@ const { topics } = Astro.props;
     .mobile-subject-options a:hover { background: #edf5ff; }
     summary:focus-visible,
     .mobile-subject-options a:focus-visible { outline: 2px solid var(--blue); outline-offset: -3px; }
-  }
+  @media (min-width: 768px) { .mobile-subject-options { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (prefers-reduced-motion: reduce) { summary svg { transition: none; } }
 </style>

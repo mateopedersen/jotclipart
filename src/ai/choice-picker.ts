@@ -1,3 +1,4 @@
+import { displayTitle } from '../lib/display-title.ts';
 type Entry = {
   select: HTMLSelectElement;
   trigger: HTMLButtonElement;
@@ -109,7 +110,7 @@ export function mountChoicePickers(root: HTMLElement, isBusy: () => boolean) {
     if (!entry || select.disabled || isBusy() || dialog!.open) return;
     active = entry;
     returnFocus = opener ?? entry.trigger;
-    title.textContent = entry.title;
+    title.textContent = displayTitle(entry.title);
     const hasImages = [...select.options].some((option) => option.dataset.aiChoiceImage);
     description.textContent = hasImages
       ? 'Choose a reference to apply this setting to your idea.'

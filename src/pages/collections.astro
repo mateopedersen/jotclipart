@@ -1,4 +1,5 @@
 ---
+import { displayTitle } from '../lib/display-title';
 import Layout from '../layouts/Layout.astro';
 import CatalogCount from '../components/CatalogCount.astro';
 import { categoryCollections } from '../lib/category-directory';
@@ -91,7 +92,7 @@ import '../styles/collection-directory.css';
                   srcset={item.thumbSrcSet}
                   sizes="82px"
                   alt=""
-                  title={item.title}
+                  title={displayTitle(item.title)}
                   width="82"
                   height="82"
                   loading="lazy"
@@ -100,7 +101,7 @@ import '../styles/collection-directory.css';
                 />
               ))}
             </div>
-            <h3>{collection.title}</h3>
+            <h3 data-display-title>{displayTitle(collection.title)}</h3>
             <p>
               {collection.subjects.length}{' '}
               {collection.subjects.length === 1 ? 'Subject' : 'Subjects'} ·{' '}

@@ -1,6 +1,6 @@
 import { defaults } from '../lib/search';
 import { SearchRepository } from '../lib/search-remote';
-import { LatestRequest } from '../lib/search-request';
+import { LatestRequest, typingPause } from '../lib/search-request';
 import { alignSearchDirectory } from '../lib/search-directory';
 import { searchSiteEntries } from '../lib/site-search';
 import { searchSuggestions, isDirectSearchMatch, type SearchSuggestion } from '../lib/search-suggestions';
@@ -153,8 +153,17 @@ export function initSearchSuggestions() {
                 emit({ artwork: [], site: matches });
               return entries;
             });
+            const artworkRead = async () => {
+              if (query.length <= 4 && early) {
+                // Do not race a slow directory with a speculative POST for
+                // every fragment. Keep the exact/prefix native link on screen.
+                await early.catch(() => undefined);
+                await typingPause(signal);
+              }
+              return repository.search({ ...defaults, q: query, size: 8 }, signal);
+            };
             const [art, entries] = await Promise.allSettled([
-              repository.search({ ...defaults, q: query, size: 8 }, signal),
+              artworkRead(),
               siteEntries,
             ]);
             if (art.status === 'rejected' && entries.status === 'rejected') throw art.reason;

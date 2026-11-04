@@ -1,3 +1,13 @@
+/** Give a short autocomplete fragment time to finish without launching a
+ * superseded artwork POST. Subject links remain immediately clickable. */
+export function typingPause(signal: AbortSignal, ms = 150): Promise<void> {
+  return new Promise((resolve, reject) => {
+    if (signal.aborted) { reject(new DOMException('Request cancelled', 'AbortError')); return; }
+    const cancelled = () => { clearTimeout(timer); reject(new DOMException('Request cancelled', 'AbortError')); };
+    const timer = setTimeout(() => { signal.removeEventListener('abort', cancelled); resolve(); }, ms);
+    signal.addEventListener('abort', cancelled, { once: true });
+  });
+}
 /** Aborting saves bandwidth; the sequence guard also protects against cached or
  * non-cancellable responses resolving after a newer query or browser Back. */
 export class LatestRequest {

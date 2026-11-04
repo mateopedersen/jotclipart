@@ -1,4 +1,5 @@
 ---
+import { displayTitle } from '../lib/display-title';
 import CardFileActions from './CardFileActions.astro';
 import Icon from './Icon.astro';
 import ShareButton from './ShareButton.astro';
@@ -9,7 +10,7 @@ const { item, subjectLabel } = Astro.props;
   <ShareButton item={item} compact />
   <a class="art-picture" href={`/art/${item.id}/`}>
     <img
-      title={item.title}
+      title={displayTitle(item.title)}
       src={item.webp}
       alt={item.alt}
       width="400"
@@ -20,11 +21,11 @@ const { item, subjectLabel } = Astro.props;
     />
   </a>
   <div class="card-body">
-    {subjectLabel && <a class="home-recent-subject" href={`/clipart/${item.topic}/`}>{subjectLabel}</a>}
-    <a class="card-title" href={`/art/${item.id}/`}>
-      {item.title}
+    {subjectLabel && <a class="home-recent-subject" href={`/clipart/${item.topic}/`} data-display-title>{displayTitle(subjectLabel)}</a>}
+    <a class="card-title" data-display-title href={`/art/${item.id}/`}>
+      {displayTitle(item.title)}
     </a>
-    <CardFileActions id={item.id} title={item.title} webp={item.webp} pdf={item.pdf} />
+    <CardFileActions id={item.id} title={displayTitle(item.title)} webp={item.webp} pdf={item.pdf} />
     <div class="card-actions">
       <a class="button" href={item.editable === false ? `/art/${item.id}/` : `/edit/${item.id}/`}>
         <Icon name={item.editable === false ? 'view' : 'edit'} size={28} />

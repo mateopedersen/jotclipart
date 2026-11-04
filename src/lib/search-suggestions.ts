@@ -1,3 +1,4 @@
+import { displayTitle } from './display-title.ts';
 import { normalizeQuery, queryTerms, termVariants } from './search-language.ts';
 import { preparedSiteEntry, searchKindLabels, type SiteSearchEntry } from './site-search.ts';
 import type { SearchCard } from './search-index.ts';
@@ -34,14 +35,14 @@ export function searchSuggestions(
 ): SearchSuggestion[] {
   const direct = matches.filter((match) => !match.fuzzy && isDirectSearchMatch(match.entry, query));
   const toSuggestion = ({ entry }: { entry: SiteSearchEntry }): SearchSuggestion => ({
-    title: entry.title,
+    title: displayTitle(entry.title),
     href: entry.href,
     kind: searchKindLabels[entry.kind],
   });
   const candidates = [
     ...direct.slice(0, 2).map(toSuggestion),
     ...artwork.slice(0, 4).map((item) => ({
-      title: item.title,
+      title: displayTitle(item.title),
       href: `/art/${item.id}/`,
       kind: 'Artwork',
       thumb: item.thumb,

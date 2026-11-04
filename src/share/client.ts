@@ -1,3 +1,4 @@
+import { displayTitle } from '../lib/display-title.ts';
 import { artworkUrl, caption, SITE, socialLinks, type ShareOptions } from './core';
 
 type OwnedShare = { id: string; title: string; url: string; deleteToken: string };
@@ -348,7 +349,7 @@ export async function openShare(options: ShareOptions): Promise<void> {
       } catch {
         continue;
       }
-      link.textContent = record.title;
+      link.textContent = displayTitle(record.title);
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
       const remove = document.createElement('button');

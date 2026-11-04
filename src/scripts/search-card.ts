@@ -1,3 +1,4 @@
+import { displayTitle } from '../lib/display-title.ts';
 import type { SearchCard } from '../lib/search-index';
 import { actionIconAssets } from '../lib/action-icons';
 export function renderCard(item: SearchCard): HTMLElement {
@@ -29,14 +30,16 @@ export function renderCard(item: SearchCard): HTMLElement {
   image.loading = 'lazy';
   image.decoding = 'async';
   image.alt = item.alt;
-  image.title = item.title;
+  image.title = displayTitle(item.title);
   image.width = 400;
   image.height = 400;
   image.src = item.webp;
   picture.append(image);
   const body = document.createElement('div');
   body.className = 'card-body';
-  body.append(link(item.title, detail, 'card-title'));
+  const titleLink = link(displayTitle(item.title), detail, 'card-title');
+  titleLink.dataset.displayTitle = '';
+  body.append(titleLink);
   const formats = document.createElement('div');
   formats.className = 'formats';
   const actions = document.createElement('div');

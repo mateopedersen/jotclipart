@@ -1,3 +1,4 @@
+import { displayTitle } from '../../src/lib/display-title.ts';
 import { createHash } from 'node:crypto';
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -67,7 +68,7 @@ export async function verifyContentLive({ directory, packet, sealed, progress = 
           assert(text.includes('name="build-revision" content="' + revision + '"'));
           assert(text.includes('https://ultraclipart.com' + t.path));
           if (t.art) {
-            assert.equal(clean(text.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? ''), t.art.title);
+            assert.equal(clean(text.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? ''), displayTitle(t.art.title));
             assert(text.includes(t.art.webp));
             if (t.path.startsWith('/art/')) assert(text.includes(t.art.pdf));
           }
