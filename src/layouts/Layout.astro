@@ -19,6 +19,9 @@ import { pageGraph } from '../lib/page-seo';
 import { pageSocialImage } from '../lib/social-images';
 import { cookieStartupScript } from '../../scripts/cookie-startup.mjs';
 import '../styles/image-information.css';
+// These styles belong to the page, even before the sharing module is requested.
+import '../share/trigger.css';
+import '../share/dialog.css';
 const {
   title = 'Clipart for Personal & Classroom Projects',
   description = 'Explore original seasonal clipart. Edit colors and layers, then download WebP and printable PDF files.',
