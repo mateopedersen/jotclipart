@@ -1,5 +1,4 @@
 import { artworkUrl, caption, SITE, socialLinks, type ShareOptions } from './core';
-import './dialog.css';
 
 type OwnedShare = { id: string; title: string; url: string; deleteToken: string };
 type Turnstile = {

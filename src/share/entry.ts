@@ -1,4 +1,3 @@
-import './trigger.css';
 document.addEventListener('click', async (event) => {
   const button =
     event.target instanceof Element
