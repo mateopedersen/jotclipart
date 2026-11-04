@@ -66,7 +66,10 @@
     "test:e2e:button-states": "node tests/e2e/button-states.mjs",
     "test:e2e:studio-entry": "node tests/e2e/studio-entry.mjs",
     "content:publish": "node --import ./scripts/catalog-snapshot/register-ts.mjs scripts/catalog-snapshot/publish-content.mjs",
-    "test:content-publisher": "node --test tests/catalog-content-operator.mjs tests/catalog-delta-source.mjs tests/catalog-delta-store.mjs tests/catalog-private-publisher.mjs tests/collection-prose-delta.mjs"
+    "test:content-publisher": "node --test tests/catalog-content-operator.mjs tests/catalog-delta-source.mjs tests/catalog-delta-store.mjs tests/catalog-private-publisher.mjs tests/collection-prose-delta.mjs",
+    "test:e2e:collection-subject-picker": "node tests/e2e/collection-subject-picker.mjs",
+    "test:e2e:search-progressive": "node tests/e2e/search-suggestions-progressive.mjs",
+    "test:e2e:editor-startup": "node tests/e2e/editor-startup-parallel.mjs"
   },
   "dependencies": {
     "@fontsource/inter": "5.2.8",

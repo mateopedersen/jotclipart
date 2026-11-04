@@ -3,9 +3,12 @@ import { editorPreviewReady } from './preview-ready';
 let loading: Promise<void> | undefined;
 export function ensureEditors() {
   return (loading ??= (async () => {
-    if (document.querySelector('[data-editor-preview]')) await editorPreviewReady();
-    else await afterInitialPaint();
-    const { initializeEditors } = await import('./editor');
+    const visualReady = document.querySelector('[data-editor-preview]')
+      ? editorPreviewReady()
+      : afterInitialPaint();
+    // Download the requested tools while the initial preview is painting.
+    // Initialization and original-source verification still keep their gates.
+    const [{ initializeEditors }] = await Promise.all([import('./editor'), visualReady]);
     document.querySelector('[data-editor-load-retry]')?.remove();
     initializeEditors();
     const root = document.querySelector<HTMLElement>('.uc-editor');

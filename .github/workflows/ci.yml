@@ -267,6 +267,9 @@ jobs:
               BASE_URL=http://127.0.0.1:4321 UC_BROWSER="$engine" node tests/e2e/creative-studio.mjs
               if [ '${{ matrix.engine }}' = chromium ]; then
                 BASE_URL=http://127.0.0.1:4321 node tests/e2e/studio-entry.mjs
+                BASE_URL=http://127.0.0.1:4321 node tests/e2e/collection-subject-picker.mjs
+                node tests/e2e/search-suggestions-progressive.mjs
+                node tests/e2e/editor-startup-parallel.mjs
                 BASE_URL=http://127.0.0.1:4321 node tests/e2e/button-states.mjs
               fi
               BASE_URL=http://127.0.0.1:4321 UC_BROWSER="$engine" node tests/e2e/real-artwork.mjs

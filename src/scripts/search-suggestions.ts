@@ -3,7 +3,7 @@ import { SearchRepository } from '../lib/search-remote';
 import { LatestRequest } from '../lib/search-request';
 import { alignSearchDirectory } from '../lib/search-directory';
 import { searchSiteEntries } from '../lib/site-search';
-import { searchSuggestions, type SearchSuggestion } from '../lib/search-suggestions';
+import { searchSuggestions, isDirectSearchMatch, type SearchSuggestion } from '../lib/search-suggestions';
 export function initSearchSuggestions() {
   for (const form of document.querySelectorAll<HTMLFormElement>('form[action="/search/"]')) {
     if (form.id === 'catalog-search' || form.dataset.suggestionsReady) continue;
@@ -28,6 +28,8 @@ export function initSearchSuggestions() {
       requests = new LatestRequest();
     let timer: ReturnType<typeof setTimeout> | undefined,
       active = -1,
+      selecting = false,
+      queued: SearchSuggestion[] | undefined,
       composing = false,
       refreshed = Date.now();
     const close = () => {
@@ -36,10 +38,16 @@ export function initSearchSuggestions() {
       panel.hidden = true;
       panel.setAttribute('aria-busy', 'false');
       active = -1;
+      selecting = false;
+      queued = undefined;
       input.setAttribute('aria-expanded', 'false');
       input.removeAttribute('aria-activedescendant');
     };
     function show(options: SearchSuggestion[]) {
+      // An exact subject can arrive before artwork. Never remove the native
+      // link under an ongoing touch/mouse press or keyboard selection.
+      if (selecting || active >= 0) { queued = options; return; }
+      queued = undefined;
       panel.replaceChildren(
         ...options.map((option, i) => {
           const link = document.createElement('a');
@@ -81,6 +89,8 @@ export function initSearchSuggestions() {
       requests.cancel();
       panel.hidden = true;
       active = -1;
+      selecting = false;
+      queued = undefined;
       input.setAttribute('aria-expanded', 'false');
       input.removeAttribute('aria-activedescendant');
       const query = input.value.trim();
@@ -99,12 +109,18 @@ export function initSearchSuggestions() {
           repository.clear();
           refreshed = Date.now();
         }
-        void requests.run(
-          async (signal) => {
+        void requests.run<{ artwork: Parameters<typeof searchSuggestions>[1]; site: ReturnType<typeof searchSiteEntries> }>(
+          async (signal, emit) => {
             const manifest = await repository.manifest(signal);
+            const siteEntries = repository.siteEntries(manifest, signal).then((entries) => {
+              const matches = searchSiteEntries(entries, query);
+              if (matches.some(({ entry, fuzzy }) => !fuzzy && isDirectSearchMatch(entry, query)))
+                emit({ artwork: [], site: matches });
+              return entries;
+            });
             const [art, entries] = await Promise.allSettled([
               repository.search({ ...defaults, q: query, size: 8 }, signal),
-              repository.siteEntries(manifest, signal),
+              siteEntries,
             ]);
             if (art.status === 'rejected' && entries.status === 'rejected') throw art.reason;
             const directory = { version: manifest.version,
@@ -135,6 +151,13 @@ export function initSearchSuggestions() {
     input.addEventListener('compositionend', () => {
       composing = false;
       suggest();
+    });
+    panel.addEventListener('pointerdown', (event) => {
+      if ((event.target as Element)?.closest('[role="option"]')) selecting = true;
+    });
+    panel.addEventListener('pointercancel', () => {
+      selecting = false;
+      if (queued && active < 0) show(queued);
     });
     input.addEventListener('keydown', (event) => {
       if (panel.hidden) return;
