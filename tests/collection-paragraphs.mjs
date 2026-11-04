@@ -6,6 +6,7 @@ import {
   validateCollectionParagraphs,
   requiredCollectionIntroductions,
   verifyCollectionEditorial,
+  collectionParagraphReviewSignature,
 } from '../scripts/collection-editorial.mjs';
 import { readReviewedImportCatalog } from '../scripts/reviewed-imports.mjs';
 import { draftCollectionParagraphs } from '../scripts/collection-introduction-draft.mjs';
@@ -98,6 +99,67 @@ test('draft assistance never manufactures a checked approval or visual inspectio
   assert.equal(draft.paragraphsCheckedAt, undefined);
   assert.equal(draft.paragraphSourceSha256, undefined);
   assert.equal(draft.evidence.length, 2);
+});
+
+test('numeric-looking non-number topics and fungi cannot inherit contradictory learning copy', () => {
+  for (const slug of ['007', '911', '1st']) {
+    const source = publicCatalog.filter(
+      (item) => item.topic === slug && item.published && item.indexable,
+    );
+    const good = registry.topics[slug];
+    assert.equal(validateCollectionParagraphs(slug, source, good).length, 2);
+    const bad = structuredClone(good);
+    bad.paragraphs[1] += ' Choose a numeral treatment for a counting activity.';
+    bad.paragraphReviewSha256 = collectionParagraphReviewSignature(bad);
+    assert.throws(
+      () => validateCollectionParagraphs(slug, source, bad),
+      /number-learning use case/,
+    );
+  }
+  const source = publicCatalog.filter(
+    (item) => item.topic === 'mushroom' && item.published && item.indexable,
+  );
+  const bad = structuredClone(registry.topics.mushroom);
+  bad.paragraphs[1] += ' Build a plant observation page with your own labels.';
+  bad.paragraphReviewSha256 = collectionParagraphReviewSignature(bad);
+  assert.throws(() => validateCollectionParagraphs('mushroom', source, bad), /fungi-specific/);
+});
+
+test('drafts use reviewed subject meaning rather than a numeric slug and still require review', () => {
+  for (const [slug, expected] of [
+    ['007', /spy-story/],
+    ['911', /emergency-services/],
+    ['mushroom', /fungi observation/],
+    ['unicorn', /fantasy story/],
+  ]) {
+    const source = publicCatalog.filter(
+      (item) => item.topic === slug && item.published && item.indexable,
+    );
+    const draft = draftCollectionParagraphs(
+      { slug, keyword: slug + ' clipart', cluster: 'People & activities' },
+      source,
+      registry.topics[slug],
+    );
+    assert.match(draft.paragraphs[1], expected);
+    assert.doesNotMatch(
+      draft.paragraphs[1],
+      /numeral treatment|counting activity|plant observation|animal study/,
+    );
+    assert.equal(draft.status, 'draft-for-catalog-review');
+    assert.equal(draft.paragraphReviewSha256, undefined);
+  }
+  const future = draftCollectionParagraphs(
+    { slug: '112', keyword: 'Emergency services clipart', cluster: 'People & activities' },
+    publicCatalog.filter((item) => item.topic === '911'),
+    registry.topics['911'],
+  );
+  assert.doesNotMatch(future.paragraphs[1], /numeral treatment|counting activity/);
+  const number = draftCollectionParagraphs(
+    { slug: '10', keyword: '10 clipart', cluster: 'School & learning' },
+    publicCatalog.filter((item) => item.topic === '10'),
+    registry.topics['10'],
+  );
+  assert.match(number.paragraphs[1], /counting activity/);
 });
 
 test('shared renderer uses actual paragraphs and the automatic topic counter', () => {

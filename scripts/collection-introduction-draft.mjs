@@ -4,7 +4,45 @@ import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { readReviewedImportCatalog } from './reviewed-imports.mjs';
-import { readCollectionRegistries, collectionParagraphSignature } from './collection-editorial.mjs';
+import {
+  readCollectionRegistries,
+  collectionParagraphSignature,
+  summarySupportsNumberLearning,
+} from './collection-editorial.mjs';
+
+// Reviewed topic-specific drafting hints; these do not create an approval.
+const reviewedUseHints = {
+  '007':
+    'Use the illustrations in a personal spy-story storyboard, a secret-agent party invitation or a film notebook, choosing a character or imagined gadget that suits the fictional scene.',
+  '1st':
+    'Mark a first birthday, anniversary, school day or other personal milestone with an illustrated keepsake, choosing the activity and wording that match the event you want to remember.',
+  2007: 'Build a 2007 memory page, a dated journal cover or a personal anniversary layout, choosing the lettering and surface details that match the period or milestone you want to mark.',
+  2025: 'Use the designs on a 2025 memory album, a personal year-in-review page or a dated keepsake, adding your own captions instead of treating decorative charts as recorded results.',
+  2027: 'Plan a 2027 calendar cover, a personal graduation keepsake or a New Year greeting, selecting the month, year or celebratory wording that matches your occasion.',
+  '4th':
+    'Use the ordinal lettering in an ordering activity, a personal fourth-milestone keepsake or a numbered display, keeping the small suffix visible so the design still reads as fourth.',
+  911: 'Use the drawings in an emergency-services vocabulary activity, a community-helper lesson or a personal safety poster, adding locally appropriate contact information and your own clear instructions.',
+  calendar:
+    'Create a personal planning cover, a date-themed classroom activity or a scrapbook page about a particular month, checking any pictured dates before treating a decorative calendar as a usable planner.',
+  coreldraw:
+    'Build a personal design notebook, a digital-art vocabulary page or an illustrated workflow, choosing the path, palette or workstation image that best explains the creative step you are describing.',
+  cricut:
+    'Use the craft scenes in a personal project planner, a cutting-and-assembly activity or an illustrated making guide, choosing the tools and materials that match the process you want to describe.',
+  egg: 'Illustrate a food vocabulary page, a personal recipe journal or a kitchen activity, choosing a whole egg, preparation tool or decorative design that fits the point you want to explain.',
+  mushroom:
+    'Build a fungi observation page, a woodland story or a personal nature journal, choosing between a specimen-focused drawing and a storybook scene according to the purpose of your project.',
+  nature:
+    'Build a personal nature journal, a habitat-themed classroom display or a short woodland story, choosing the plant, animal or small scene that fits the environment you want to describe.',
+  unicorn:
+    'Create a fantasy story page, a personal birthday invitation or a magical-character craft, choosing a pose and setting that match the imaginary world you want to build.',
+  wings:
+    'Compare wing silhouettes in a personal creature-design notebook, a nature-themed layout or a symbolic illustration, keeping natural studies separate from decorative fantasy forms.',
+  zooplankton:
+    'Use the forms in an aquatic-life vocabulary activity, a personal science notebook or a classroom comparison, adding your own labels without treating a stylized organism as a confirmed species diagram.',
+};
+
+const numeralUse =
+  'Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project.';
 
 const specificUses = [
   [
@@ -24,7 +62,7 @@ const specificUses = [
     'Choose an illustration for a body vocabulary activity, a personal study notebook or an illustrated discussion, matching the visible subject to the concept you want to explain.',
   ],
   [
-    /^(?:sunflower|maple|leaves|grass|vines|mushroom|rose|acorn|pinecone|holly|poinsettia)$/,
+    /^(?:sunflower|maple|leaves|grass|vines|rose|acorn|pinecone|holly|poinsettia)$/,
     'Build a plant observation page, a personal garden journal or a nature-themed greeting, comparing the visible plant details and arrangements before choosing your focal image.',
   ],
   [
@@ -46,10 +84,6 @@ const specificUses = [
   [
     /^(?:bitcoin|bitcoin-cash|ethereum|bnb|cardano|chainlink|dogecoin|hyperliquid|monero|near-protocol|solana|stellar|tether|tron|unus-sed-leo|usd-coin|usds|whitebit-coin|xrp|zcash)$/,
     'Use the artwork in a digital currency vocabulary activity, a personal research notebook or an illustrated comparison of symbols, adding your own explanation of the topic.',
-  ],
-  [
-    /^(?:\d+|1st|4th|zero)$/,
-    'Choose a numeral treatment for a counting activity, a personal milestone page or a number-themed display, checking the digits and arrangement against the meaning of your own project.',
   ],
 ];
 
@@ -128,6 +162,10 @@ export function draftCollectionParagraphs(topic, items, record) {
   const intro = record.intro.replace(/\s+/g, ' ').trim();
   const examples = selected.map((item) => `“${item.title}”`).join(' and ');
   const use =
+    (Object.hasOwn(reviewedUseHints, topic.slug) ? reviewedUseHints[topic.slug] : undefined) ??
+    (/^(?:\d+|zero)$/.test(topic.slug) && summarySupportsNumberLearning(intro)
+      ? numeralUse
+      : undefined) ??
     specificUses.find(([pattern]) => pattern.test(topic.slug))?.[1] ??
     uses[primary[topic.slug] ?? topic.browseCluster ?? topic.cluster];
   if (!use) throw Error('Provide topic-appropriate use guidance: ' + topic.slug);
