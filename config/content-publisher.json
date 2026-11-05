@@ -5,17 +5,17 @@
   "script": "scripts/catalog-snapshot/publish-content.mjs",
   "capsuleRoot": "data/catalog-batches",
   "software": {
-    "revision": "7f4cd45a87ad2bd0ac39c3a9b4bc44a3e98091f7",
-    "abiSHA256": "ac56d3c68ee2e5bd4b9e726345b694b7a19bde18331303f83f08dc255ea9a098",
-    "workerSHA256": "c9410da88f3527a041b483edbb105a1fba4a29c93378d51fe55be48c89c30ad1",
-    "directory": "work/catalog-snapshot/software-first-visit-20261105"
+    "revision": "3eb6393287539cc6b2ec21a4e4ba9737a652bf23",
+    "abiSHA256": "ddb5b9b6050299c19364b1981f785449b93feb97f229200e03366249d7d7eb88",
+    "workerSHA256": "1661f5711f9fbee538930dd1a97bdd5209a22e72bc294f23b295890c9120acad",
+    "directory": "work/first-visit-release-final"
   },
   "publicConfig": "config/content-publisher-public.json",
   "lastVerifiedData": {
-    "revision": "7f4cd45a87ad2bd0ac39c3a9b4bc44a3e98091f7",
-    "root": "e0e4fc7f9366f70fe187311e5152babd793135977594e9ca999a01cc4faf37ef",
-    "artworks": 39108,
-    "topics": 696
+    "revision": "3eb6393287539cc6b2ec21a4e4ba9737a652bf23",
+    "root": "7af5e39caba681ba51ef06664c20615c929a790223c92bb6d6796316f124c103",
+    "artworks": 41108,
+    "topics": 716
   },
   "limits": {
     "changedArtworksPerPacket": 256,
@@ -25,9 +25,9 @@
     "accountInventoryRequired": false,
     "fullCatalogBuildForContent": false
   },
-  "proof": "work/catalog-snapshot/software-first-visit-proof-20261105/production-report.json",
+  "proof": "work/first-visit-release-proof/result.json",
   "loadTests": "work/catalog-snapshot/load-tests/two-run-report.json",
   "protectedIndependentBackup": "/Users/melihozcan/Documents/UltraClipart-Publisher-KEEP",
   "measurementsScope": "Two private real-media transport + composition + native campaigns, approved unique sources reused. Fresh image review/repair/public verification remains separate; <=60 minutes is a measured technical target, not a universal guarantee.",
-  "installedRuntimePreservation": "work/catalog-snapshot/preserved-installed-runtime-first-visit-20261105/manifest.json"
+  "installedRuntimePreservation": "/Users/melihozcan/Documents/UltraClipart-Publisher-KEEP/installed-runtime-delta-3eb6393-20261105/manifest.json"
 }
