@@ -1,0 +1,74 @@
+{
+  "pumpkin-lantern-smile": {
+    "originalSHA256": "391e6d2a1e1393a0527985a2c3f0f69a69c5e8ec6596cc088e3cf8f4a5639901",
+    "originalBytes": 911728,
+    "previewSHA256": "c3a6746f390e00fa6e6dad312871a2b00cde42bac14ecc16f9d2ec3860aa6085",
+    "previewBytes": 25836
+  },
+  "halloween-treat-pail": {
+    "originalSHA256": "f7036895404bb902a3265fa6292289e4cd9280efaeff774e8744317509ad0a73",
+    "originalBytes": 843840,
+    "previewSHA256": "f0a75f60011181501776d28c83f855a07b4697088a2d91ff2a8862f931b92698",
+    "previewBytes": 27606
+  },
+  "halloween-caramel-apple": {
+    "originalSHA256": "ed5d92ba80b4f4679accfeed60fb7cdbfd6a1fff5dc7f0d6004302060f603e9b",
+    "originalBytes": 862878,
+    "previewSHA256": "8f94409f7b586941e62bbf92ff18a56f3236ab57e9558dc1194df554fad9e01b",
+    "previewBytes": 25448
+  },
+  "thanksgiving-harvest-door-wreath": {
+    "originalSHA256": "4bc5a7689a3df8f27aeb9c443e860c91f66d4f70c8e8ddb0d11e73391d2a6973",
+    "originalBytes": 882554,
+    "previewSHA256": "906963136cad082d279ff92c91f0a961d7d6ea859051eec443346491f5514e50",
+    "previewBytes": 32300
+  },
+  "thanksgiving-harvest-picnic-basket": {
+    "originalSHA256": "aa85a8feb1c0b5cf675e2c3b517f7e5a2b369c790b9094bb84724a2efca0f1ba",
+    "originalBytes": 1279950,
+    "previewSHA256": "0c056b50b9cceb96b6417f14f9fc910c57a675af7e12c4b8aa6fb2fbe7afeffa",
+    "previewBytes": 44904
+  },
+  "thanksgiving-apple-cider-tray": {
+    "originalSHA256": "10792e73d443343666ba89303096f38e8c84766720517a49e28bdebc77af553b",
+    "originalBytes": 1123746,
+    "previewSHA256": "906144befc72025c1afa070c17d8bc93acab0625044652bb1c01757f5a79220a",
+    "previewBytes": 34544
+  },
+  "winter-snowy-timber-cabin": {
+    "originalSHA256": "6410f1b0320f54b8fed055232a4a66bed69f3ea6fe79506443c1670115aa015b",
+    "originalBytes": 935878,
+    "previewSHA256": "fd0acc6a269ed51a3b1a209ac34c958441533128aad9627f2d87fa833aa3f5a7",
+    "previewBytes": 31074
+  },
+  "winter-thermos-and-cup": {
+    "originalSHA256": "af29f9ff1a1bf3962290048f609fd2edfdcdf7dbf383717ab958dfaba154429f",
+    "originalBytes": 559586,
+    "previewSHA256": "346aa78f547734376d23cabc05b216ba1a44c3205228e7c50183e478ec684ca1",
+    "previewBytes": 20272
+  },
+  "winter-knitted-mittens-on-cord": {
+    "originalSHA256": "f9cc3e044ae4e837eaa04e4d659957db183b784a45d8d17d03af7fbd123a883d",
+    "originalBytes": 582752,
+    "previewSHA256": "c9108f1caaebad36a3e6e94d4c141d3bf69e6416f4a2307350f30c0748f764fa",
+    "previewBytes": 25388
+  },
+  "floral-heart-roses-wreath-clipart": {
+    "originalSHA256": "b79ae752dc0be2aa79ae2871d0835f40d7ea620753209ac9f3fd905c74553b3a",
+    "originalBytes": 1590492,
+    "previewSHA256": "64cb73495778a876d79e89e49318cf1239f6540331be0478cdbf886380165be0",
+    "previewBytes": 55094
+  },
+  "love-letter-envelope-heart-clipart": {
+    "originalSHA256": "6c189dd8345e05ef48300c81816f73425bc426af75b02c6ac0b3754af12a3757",
+    "originalBytes": 1385854,
+    "previewSHA256": "3f9732573e16a62f3dcfeb3d12ae815bb9672dcb0f8f1e20a6fe3478de416bc0",
+    "previewBytes": 23098
+  },
+  "satin-ribbon-heart-bow-clipart": {
+    "originalSHA256": "17ed3dbbbb9332e979424802876af71100bb364d48ce4a42612c2b1dc022bd18",
+    "originalBytes": 688506,
+    "previewSHA256": "2f47eb5a56e3d182c1dbe048185f42308ee3f4b48c0925e4459289537d45bdf2",
+    "previewBytes": 24518
+  }
+}

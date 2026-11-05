@@ -1,8 +1,39 @@
 ---
 import { displayTitle } from '../lib/display-title';
 import { publishedArt as art, slugify, availableClusters } from '../lib/catalog';
+import { imageLoadingPreview } from '../lib/image-loading-preview';
+import { uiPreview } from '../lib/ui-preview';
+import type { ImageMetadata } from 'astro';
+import previewSources from '../../data/seasonal-preview-sources.json';
+import pumpkin from '../../public/home-art/seasonal/pumpkin-lantern-smile.webp';
+import treatPail from '../../public/home-art/seasonal/halloween-treat-pail.webp';
+import caramelApple from '../../public/home-art/seasonal/halloween-caramel-apple.webp';
+import autumnWreath from '../../public/home-art/seasonal/thanksgiving-harvest-door-wreath.webp';
+import picnicBasket from '../../public/home-art/seasonal/thanksgiving-harvest-picnic-basket.webp';
+import ciderTray from '../../public/home-art/seasonal/thanksgiving-apple-cider-tray.webp';
+import snowyCabin from '../../public/home-art/seasonal/winter-snowy-timber-cabin.webp';
+import thermos from '../../public/home-art/seasonal/winter-thermos-and-cup.webp';
+import mittens from '../../public/home-art/seasonal/winter-knitted-mittens-on-cord.webp';
+import roseWreath from '../../public/home-art/seasonal/floral-heart-roses-wreath-clipart.webp';
+import loveLetter from '../../public/home-art/seasonal/love-letter-envelope-heart-clipart.webp';
+import ribbonHeart from '../../public/home-art/seasonal/satin-ribbon-heart-bow-clipart.webp';
 import CatalogCount from './CatalogCount.astro';
-const seasons = [
+const previewAssets: Record<string, ImageMetadata> = {
+  'pumpkin-lantern-smile': pumpkin,
+  'halloween-treat-pail': treatPail,
+  'halloween-caramel-apple': caramelApple,
+  'thanksgiving-harvest-door-wreath': autumnWreath,
+  'thanksgiving-harvest-picnic-basket': picnicBasket,
+  'thanksgiving-apple-cider-tray': ciderTray,
+  'winter-snowy-timber-cabin': snowyCabin,
+  'winter-thermos-and-cup': thermos,
+  'winter-knitted-mittens-on-cord': mittens,
+  'floral-heart-roses-wreath-clipart': roseWreath,
+  'love-letter-envelope-heart-clipart': loveLetter,
+  'satin-ribbon-heart-bow-clipart': ribbonHeart,
+};
+const sourceHashes: Record<string, { originalSHA256: string }> = previewSources;
+const seasonDefinitions = [
   {
     cluster: 'Halloween',
     title: 'Halloween',
@@ -43,16 +74,25 @@ const seasons = [
       'satin-ribbon-heart-bow-clipart',
     ],
   },
-]
-  .filter((s) => availableClusters.includes(s.cluster))
-  .map((s) => ({
+].filter((s) => availableClusters.includes(s.cluster));
+const seasons = await Promise.all(
+  seasonDefinitions.map(async (s) => ({
     ...s,
-    images: s.images.map((id) => {
+    images: await Promise.all(s.images.map(async (id) => {
       const item = art.find((a) => a.id === id);
       if (!item) throw new Error(`Missing seasonal artwork: ${id}`);
-      return item;
-    }),
-  }));
+      if (item.files?.webp?.sha256 === sourceHashes[id]?.originalSHA256 && previewAssets[id]) {
+        return { item, ...await uiPreview(previewAssets[id]) };
+      }
+      const currentPreview = imageLoadingPreview(item);
+      return {
+        item,
+        src: currentPreview?.url ?? item.thumb,
+        srcset: currentPreview ? undefined : item.thumbSrcSet,
+      };
+    })),
+  })),
+);
 ---
 
 <section class="seasonal-showcase" aria-labelledby="seasonal-showcase-title">
@@ -74,14 +114,14 @@ const seasons = [
         <div class="seasonal-scene" aria-hidden="true">
           <span class="seasonal-orbit"></span>
           <span class="seasonal-platform"></span>
-          {season.images.map((image, i) => (
+          {season.images.map(({ item, src, srcset }, i) => (
             <img
-              title={displayTitle(image.title)}
+              title={displayTitle(item.title)}
               class={`seasonal-object seasonal-object-${i}`}
-              src={image.thumb}
-              srcset={image.thumbSrcSet}
-              sizes="(max-width: 540px) 34vw, 160px"
-              alt={image.alt}
+              src={src}
+              srcset={srcset}
+              sizes={i === 0 ? '(max-width: 359px) 100px, (max-width: 600px) 125px, (max-width: 1050px) 195px, 180px' : '(max-width: 600px) 85px, 105px'}
+              alt={item.alt}
               width="240"
               height="240"
               loading="lazy"

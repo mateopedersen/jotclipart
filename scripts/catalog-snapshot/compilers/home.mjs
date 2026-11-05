@@ -14,9 +14,13 @@ writeScopedContext(join(here,'context.mjs'),root);
 const compiler = createRequire(import.meta.resolve('astro/package.json'))('@astrojs/compiler-rs');
 const context = join(here, 'context.mjs');
 const revision = process.env.UC_SNAPSHOT_CODE_REVISION;if(!/^[a-f0-9]{40}$/.test(revision))throw Error('Full source revision required');
-const imageSources=['pineapple-print-preview.webp','studio-real-workspace.webp','kitchen-notes-project.webp'],uiSources=new Map(),uiPreviews={},uiAssets=[];
+const seasonalSources=JSON.parse(readFileSync(join(root,'data/seasonal-preview-sources.json')));
+const imageSources=['pineapple-print-preview.webp','studio-real-workspace.webp','kitchen-notes-project.webp',...Object.keys(seasonalSources).map(id=>'seasonal/'+id+'.webp')],uiSources=new Map(),uiPreviews={},uiAssets=[];
 const sharp=createRequire(import.meta.resolve('astro/package.json'))('sharp');mkdirSync(join(out,'client','home-ui'),{recursive:true});
-for(const name of imageSources){const file=join(root,'public/home-art',name),source=readFileSync(file),metadata=await sharp(source).metadata(),sourceSHA256=createHash('sha256').update(source).digest('hex');if(!metadata.width||!metadata.height)throw Error('Invalid homepage visual');const widths=[...new Set([160,320,640,960].filter(w=>w<metadata.width).concat(Math.min(metadata.width,960)))],variants=[];
+for(const name of imageSources){const file=join(root,'public/home-art',name),source=readFileSync(file),metadata=await sharp(source).metadata(),sourceSHA256=createHash('sha256').update(source).digest('hex');if(!metadata.width||!metadata.height)throw Error('Invalid homepage visual');
+ const seasonal=seasonalSources[name.slice('seasonal/'.length,-'.webp'.length)];
+ if(name.startsWith('seasonal/')&&(!seasonal||seasonal.previewSHA256!==sourceSHA256||seasonal.previewBytes!==source.length))throw Error('Seasonal visual does not match its reviewed source receipt: '+name);
+ const widths=[...new Set([160,320,640,960].filter(w=>w<metadata.width).concat(Math.min(metadata.width,960)))],variants=[];
  for(const width of widths){const bytes=await sharp(source).resize({width,withoutEnlargement:true}).webp({quality:80}).toBuffer(),sha256=createHash('sha256').update(bytes).digest('hex'),path=join(out,'client','home-ui',sha256+'.webp');writeFileSync(path,bytes);const src=`/__ssr-client/${revision}/home-ui/${sha256}.webp`;variants.push({width,src});uiAssets.push({path,sha256,bytes:bytes.length,width,sourceSHA256})}
  uiSources.set(file,sourceSHA256);uiPreviews[sourceSHA256]={src:variants.at(-1).src,srcset:variants.map(v=>`${v.src} ${v.width}w`).join(', ')};
 }
