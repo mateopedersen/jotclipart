@@ -461,7 +461,7 @@ export class StudioTools {
       for (const layer of next.layers) {
         if (!layer.visible || layer.locked) continue;
         if (layer.kind === 'raster') {
-          const source = rasterPixels(layer),
+          const source = await rasterPixels(layer),
             region: Region = {
               id: 'palette-composition',
               name: 'Palette variation',

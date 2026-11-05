@@ -807,7 +807,7 @@ export class SmartController {
     }
     if (action === 'all') {
       const l = this.requireLayer(),
-        image = rasterPixels(l);
+        image = await rasterPixels(l);
       this.regionId = '';
       this.setSelection(
         Uint8Array.from({ length: l.width * l.height }, (_, i) =>

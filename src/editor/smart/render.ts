@@ -22,7 +22,7 @@ export async function withProcessor<T>(
     const idle = [...processors].find(([, entry]) => entry.users === 0);
     if (idle) {
       processors.delete(idle[0]);
-      void idle[1].processor.then((p) => p.dispose());
+      void idle[1].processor.then((p) => p.dispose(), () => {});
       break;
     }
     await new Promise<void>((resolve) => waiting.push(resolve));
@@ -32,16 +32,26 @@ export async function withProcessor<T>(
     entry = {
       users: 0,
       processor: (async () => {
+        const pixels = await rasterPixels(layer);
         const p = new Processor();
-        await p.open(rasterPixels(layer));
-        return p;
+        try {
+          await p.open(pixels);
+          return p;
+        } catch (error) {
+          p.dispose();
+          throw error;
+        }
       })(),
     };
     processors.set(key, entry);
   }
   entry.users++;
   try {
-    return await task(await entry.processor);
+    const processor = await entry.processor.catch((error) => {
+      if (processors.get(key) === entry) processors.delete(key);
+      throw error;
+    });
+    return await task(processor);
   } finally {
     entry.users--;
     for (const wake of waiting.splice(0)) wake();
@@ -96,7 +106,7 @@ export async function processedPixels(layer: RasterLayer): Promise<PixelImage> {
   return hasRasterEdits(layer) ? rendered.get(rasterKey(layer))!.image : rasterPixels(layer);
 }
 export function disposeProcessors() {
-  for (const entry of processors.values()) void entry.processor.then((p) => p.dispose());
+  for (const entry of processors.values()) void entry.processor.then((p) => p.dispose(), () => {});
   processors.clear();
   rendered.clear();
   for (const wake of waiting.splice(0)) wake();

@@ -1,5 +1,6 @@
 import type { EditorDocument } from './model';
 import { documentSvg, renderBitmap } from './svg';
+import { ensureDocumentOriginals } from './raster';
 import { prepareDocument } from './smart/render';
 import { paperLayout } from './pdf-math';
 import { zipFiles } from './smart/zip';
@@ -23,6 +24,7 @@ export function exportFilename(title: string, fallback = 'My Clipart Project') {
 }
 
 export async function portableSvg(doc: EditorDocument) {
+  await ensureDocumentOriginals(doc);
   await prepareDocument(doc);
   await document.fonts.ready;
   const svg = documentSvg(doc);

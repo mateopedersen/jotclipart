@@ -37,6 +37,7 @@ import {
   type ExportFormat,
 } from './export-document';
 import {
+  ensureDocumentOriginals,
   openRaster,
   registerLocalImage,
   prepareProjectSources,
@@ -262,7 +263,7 @@ function init(root: HTMLElement) {
     };
   }
   function paperSvg(state: EditorDocument): SVGSVGElement {
-    const content = documentSvg(state),
+    const content = documentSvg(state, 0),
       p = paperLayout(state),
       svg = document.createElementNS(NS, 'svg');
     svg.setAttribute('viewBox', `0 0 ${p.pageWidth} ${p.pageHeight}`);
@@ -1010,6 +1011,7 @@ function init(root: HTMLElement) {
     status('Preparing a PNG of your current design. Nothing has been uploaded.');
     const snapshot = clone(history.current);
     try {
+      await ensureDocumentOriginals(snapshot);
       await prepareDocument(snapshot);
       const svg = documentSvg(snapshot),
         box = snapshot.crop || snapshot;
@@ -1114,7 +1116,7 @@ function init(root: HTMLElement) {
         ? document.activeElement
         : q<HTMLElement>('[data-action=export]');
     await prepareDocument(history.current);
-    q('[data-export-preview]').replaceChildren(documentSvg(history.current));
+    q('[data-export-preview]').replaceChildren(documentSvg(history.current, 0));
     const preferences = history.current.exportPreferences,
       size = q<HTMLSelectElement>('[data-size]'),
       nativeWidth = history.current.crop?.width || history.current.width;
@@ -2163,7 +2165,7 @@ function init(root: HTMLElement) {
   void (async () => {
     try {
       if (creator) original = blankDocument(id);
-      else if (rasterSource) original = await openRaster(rasterSource);
+      else if (rasterSource) original = await openRaster(rasterSource, true);
       else {
         // A prior cross-origin <img> can leave a no-CORS cache entry for this SVG.
         // Revalidate over the network so editable bytes receive the CORS headers.
@@ -2292,6 +2294,11 @@ function init(root: HTMLElement) {
       await importAiTransfer();
       root.removeAttribute('aria-busy');
       qa('[inert]').forEach((el) => el.removeAttribute('inert'));
+      if (rasterSource) {
+        void ensureDocumentOriginals(history.current)
+          .then(() => renderCanvas())
+          .catch(() => status('The original image could not be verified. Retry a pixel edit or export to load it again.', true));
+      }
       if (creator) {
         const editorTool = workspaceParams.get('editor-tool'),
           starter = studioTemplates.find((item) => item.id === workspaceParams.get('starter')),

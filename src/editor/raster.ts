@@ -22,9 +22,10 @@ export interface LocalSource {
 interface LoadedAsset {
   local?: LocalSource;
   asset: RasterAsset;
-  preview: string;
+  preview?: string;
+  sourceRequest?: Promise<HTMLImageElement>;
   screen?: { url: string; width: number; height: number };
-  image: HTMLImageElement;
+  image?: HTMLImageElement;
   pdf?: Promise<Uint8Array<ArrayBuffer>>;
 }
 // Projects contain compact, hash-bound references, never executable image URLs.
@@ -32,8 +33,9 @@ interface LoadedAsset {
 const assets = new Map<string, LoadedAsset>();
 async function decodeScreen(asset: RasterAsset): Promise<LoadedAsset['screen']> {
   const screen = asset.screen;
-  if (!screen || (!isEditorScreenURL(screen.url) || screen.width === undefined || screen.height === undefined) &&
-      !publicLoadingImageURL(screen.url)) return;
+  if (!screen) return;
+  const screenCopy = isEditorScreenURL(screen.url) && screen.width !== undefined && screen.height !== undefined;
+  if (!screenCopy && !publicLoadingImageURL(screen.url)) return;
   const display = new Image();
   display.src = screen.url;
   try {
@@ -49,26 +51,43 @@ async function decodeScreen(asset: RasterAsset): Promise<LoadedAsset['screen']> 
     return undefined;
   }
 }
-export async function openRaster(asset: RasterAsset): Promise<EditorDocument> {
+function ensureOriginal(loaded: LoadedAsset): Promise<HTMLImageElement> {
+  if (loaded.image) return Promise.resolve(loaded.image);
+  return (loaded.sourceRequest ??= (async () => {
+    const bytes = await readVerified(loaded.asset.webp, 'webp');
+    const preview = await new Promise<string>((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(String(reader.result));
+      reader.onerror = () => reject(new Error('The image could not be opened.'));
+      reader.readAsDataURL(new Blob([bytes], { type: 'image/webp' }));
+    });
+    const image = new Image();
+    image.src = preview;
+    await image.decode();
+    if (image.naturalWidth !== loaded.asset.width || image.naturalHeight !== loaded.asset.height)
+      throw new Error('Image dimensions differ from the verified catalog.');
+    loaded.preview = preview;
+    loaded.image = image;
+    return image;
+  })().finally(() => {
+    loaded.sourceRequest = undefined;
+  }));
+}
+
+export async function openRaster(asset: RasterAsset, openFromScreen = false): Promise<EditorDocument> {
   if (
     !/^[a-z0-9-]+$/.test(asset.id) ||
     ![asset.width, asset.height].every((v) => Number.isInteger(v) && v > 0 && v <= 4096)
   )
     throw new Error('Invalid image dimensions.');
+  const loaded: LoadedAsset = { asset };
   const screenReady = decodeScreen(asset);
-  const bytes = await readVerified(asset.webp, 'webp');
-  const preview = await new Promise<string>((resolve, reject) => {
-    const reader = new FileReader();
-    reader.onload = () => resolve(String(reader.result));
-    reader.onerror = () => reject(new Error('The image could not be opened.'));
-    reader.readAsDataURL(new Blob([bytes], { type: 'image/webp' }));
-  });
-  const image = new Image();
-  image.src = preview;
-  await image.decode();
-  if (image.naturalWidth !== asset.width || image.naturalHeight !== asset.height)
-    throw new Error('Image dimensions differ from the verified catalog.');
-  assets.set(asset.id, { asset, screen: await screenReady, preview, image });
+  if (openFromScreen) loaded.screen = await screenReady;
+  if (!loaded.screen) {
+    const [, screen] = await Promise.all([ensureOriginal(loaded), screenReady]);
+    loaded.screen = screen;
+  }
+  assets.set(asset.id, loaded);
   return {
     version: 2,
     artId: asset.id,
@@ -106,26 +125,35 @@ export function requireRaster(layer: RasterLayer) {
   return loaded;
 }
 export function rasterPreview(layer: RasterLayer, screenScale = Infinity) {
-  const loaded = requireRaster(layer),
-    screen = loaded.screen;
-  // Screen copies never enter pixel processing, project data or exports. The
-  // original is still verified before enabling editing; zoom uses its full detail.
+  const { screen, preview } = requireRaster(layer);
   if (
     screen &&
-    screen.width >= layer.width * Math.abs(layer.scaleX) * screenScale &&
-    screen.height >= layer.height * Math.abs(layer.scaleY) * screenScale
+    Number.isFinite(screenScale) &&
+    (!preview ||
+      (screen.width >= layer.width * Math.abs(layer.scaleX) * screenScale &&
+        screen.height >= layer.height * Math.abs(layer.scaleY) * screenScale))
   )
     return screen.url;
-  return loaded.preview;
+  if (!preview) throw new Error('The original image has not been verified yet.');
+  return preview;
 }
-export function rasterPixels(layer: RasterLayer) {
-  const loaded = requireRaster(layer),
-    canvas = document.createElement('canvas');
+
+/** Pixel operations and portable exports always await the exact source. */
+export async function ensureDocumentOriginals(doc: EditorDocument) {
+  const sources = new Set(
+    doc.layers.filter((l): l is RasterLayer => l.kind === 'raster' && l.visible).map(requireRaster),
+  );
+  await Promise.all([...sources].map(ensureOriginal));
+}
+
+export async function rasterPixels(layer: RasterLayer) {
+  const image = await ensureOriginal(requireRaster(layer));
+  const canvas = document.createElement('canvas');
   canvas.width = layer.width;
   canvas.height = layer.height;
   const context = canvas.getContext('2d', { willReadFrequently: true });
   if (!context) throw new Error('Image processing is unavailable in this browser.');
-  context.drawImage(loaded.image, 0, 0);
+  context.drawImage(image, 0, 0);
   return context.getImageData(0, 0, layer.width, layer.height);
 }
 let catalog: Promise<RasterAsset[]> | undefined;

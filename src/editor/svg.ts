@@ -8,7 +8,7 @@ import {
   type StylePreset,
 } from './model';
 import { parsePath } from './pdf-math';
-import { requireRaster } from './raster';
+import { ensureDocumentOriginals, requireRaster } from './raster';
 import { processedPreview, processedBounds, prepareDocument } from './smart/render';
 import { textNodes } from './smart/typography';
 export const NS = 'http://www.w3.org/2000/svg';
@@ -527,6 +527,7 @@ export async function renderBitmap(
   quality: number,
   format: 'image/webp' | 'image/png' | 'image/jpeg',
 ): Promise<Blob> {
+  await ensureDocumentOriginals(doc);
   await prepareDocument(doc);
   const svg = documentSvg(doc);
   const box = doc.crop || doc;
