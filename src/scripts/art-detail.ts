@@ -17,8 +17,9 @@ export function initArtDetail() {
             image.removeAttribute('srcset');
         }).catch(() => {});
       };
-      if (document.readyState === 'complete') loadOriginal();
-      else window.addEventListener('load', loadOriginal, { once: true });
+      const scheduleOriginal = () => setTimeout(loadOriginal, 0);
+      if (document.readyState === 'complete') scheduleOriginal();
+      else window.addEventListener('load', scheduleOriginal, { once: true });
     }
     const buttons = document.querySelectorAll<HTMLButtonElement>('.art-preview-controls [data-bg]');
     const custom = document.querySelector<HTMLElement>('.art-custom-color');

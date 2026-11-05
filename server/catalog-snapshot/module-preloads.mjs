@@ -1,4 +1,4 @@
-/** Preload essential entries and start optional modules without delaying DOM readiness. */
+/** Preload essential entries and leave optional modules for the post-parse loader. */
 export function preloadDocumentModules(html,revision,moduleImports={},nonBlockingModules=[]){
  if(!/^[a-f0-9]{40}$/.test(revision??''))throw Error('Exact installed source revision required');
  const prefix='/__ssr-client/'+revision+'/',seen=new Set();
@@ -7,7 +7,8 @@ export function preloadDocumentModules(html,revision,moduleImports={},nonBlockin
  html=html.replace(/<script\b([^>]*)>[\s\S]*?<\/script>/g,(tag,attributes)=>{
   const a=Object.fromEntries([...attributes.matchAll(/([a-z-]+)="([^"]*)"/g)].map(v=>[v[1],v[2]]));
   if(a.type!=='module'||!a.src?.startsWith(prefix)||!/^[a-zA-Z0-9_-]+\.js$/.test(a.src.slice(prefix.length)))return tag;
-  if(optional.has(a.src))return /(?:^|\s)async(?:\s|=|$)/.test(attributes)?tag:tag.replace('<script','<script async');
+  if(optional.has(a.src))
+   return '<script type="application/json" data-uc-later-module="'+a.src+'"></script>';
   entries.push(a.src);
   return tag;
  });

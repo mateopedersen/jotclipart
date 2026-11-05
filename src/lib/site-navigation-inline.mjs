@@ -1,6 +1,19 @@
 // Critical header interaction: no image, module or optional share dependency.
 // Exact bytes are included in the reviewed CSP; never enable unsafe-inline.
 export const siteNavigationScript = String.raw`(() => {
+  const loadOptionalModules = () => {
+    for (const entry of document.querySelectorAll("[data-uc-later-module]")) {
+      const url = entry.getAttribute("data-uc-later-module");
+      if (/^\/__ssr-client\/[a-f0-9]{40}\/[a-zA-Z0-9_-]+\.js$/.test(url)) {
+        import(url).catch(() => {});
+      }
+    }
+  };
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", loadOptionalModules, { once: true });
+  } else {
+    loadOptionalModules();
+  }
   const header = document.querySelector("[data-site-header]");
   if (header && header.dataset.navigationReady !== "true") {
     header.dataset.navigationReady = "true";
