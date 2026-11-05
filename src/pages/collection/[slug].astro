@@ -37,10 +37,8 @@ const topicIDs = new Set(ts.map((t) => t.slug));
 const items = curated?.items ?? art.filter((a) => topicIDs.has(a.topic));
 const previews = curated?.previews ?? primary?.previews ?? items.slice(0, 3);
 const title = displayTitle(curated?.title ?? primary?.title ?? cluster);
-const firstLoadingPreviews = previews.flatMap((item) => {
-  const preview = imageLoadingPreview(item);
-  return preview ? [preview] : [];
-});
+const firstCoverArtwork = previews[0];
+const firstCoverPreview = firstCoverArtwork && imageLoadingPreview(firstCoverArtwork);
 const summary =
   curated?.summary ??
   primary?.description ??
@@ -65,9 +63,9 @@ const visibleArtwork = [
   imageHeight={previews[0]?.height}
 >
   <Fragment slot="head">
-    {firstLoadingPreviews.map((preview) => (
-      <link rel="preload" as="image" href={preview.url} fetchpriority="high" />
-    ))}
+    {firstCoverPreview && (
+      <link rel="preload" as="image" href={firstCoverPreview.url} fetchpriority="high" />
+    )}
   </Fragment>
   <section class="themed-collection">
     <a class="collection-back" href="/collections/">

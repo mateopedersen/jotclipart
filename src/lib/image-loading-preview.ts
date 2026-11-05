@@ -43,12 +43,6 @@ export function publicLoadingImageURL(source?: string) {
   }
 }
 
-export function loadingPreviewStyle(preview: ReturnType<typeof imageLoadingPreview>) {
-  return preview
-    ? '--original-loading-preview:url(' + JSON.stringify(preview.url) + ')'
-    : undefined;
-}
-
 /** The editor can paint a source-bound R2 thumbnail when no larger screen copy exists. */
 export function editorDisplayPreview(item: ImageSource & {
   preview?: string;

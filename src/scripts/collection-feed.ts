@@ -51,6 +51,10 @@ if (grid) {
         img.loading = 'lazy';
         img.fetchPriority = 'low';
         img.decoding = 'async';
+        if (safeImage(item.sample.preview)) {
+          img.srcset = item.sample.preview;
+          img.dataset.catalogThumbnail = '';
+        }
         img.src = item.sample.webp ?? item.sample.thumb;
         img.alt = item.sample.alt;
         img.title = item.sample.title;
@@ -82,7 +86,9 @@ if (grid) {
     }
   }
   window.addEventListener('focus', refresh);
-  window.addEventListener('pageshow', refresh);
+  window.addEventListener('pageshow', event => {
+    if (event.persisted) void refresh();
+  });
   document.addEventListener('visibilitychange', refresh);
   setInterval(refresh, 60000);
 }

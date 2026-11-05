@@ -15,10 +15,8 @@ const collections = [
   ...categoryCollections.map((g) => ({ ...g, section: 'Categories', summary: g.description })),
 ];
 const sections = [...new Set(collections.map((g) => g.section))];
-const firstLoadingPreviews = collections[0].previews.flatMap((item) => {
-  const preview = imageLoadingPreview(item);
-  return preview ? [preview] : [];
-});
+const firstCoverArtwork = collections[0]?.previews[0];
+const firstCoverPreview = firstCoverArtwork && imageLoadingPreview(firstCoverArtwork);
 const visibleArtwork = [
   ...new Map(
     [...collections.flatMap((g) => g.previews), ...latestCollections.map((s) => s.artwork)].map(
@@ -33,9 +31,9 @@ const visibleArtwork = [
   description="Browse themed clipart collections with real artwork previews. Explore animals, fruit, technology, celebrations and more, or choose an individual subject."
 >
   <Fragment slot="head">
-    {firstLoadingPreviews.map((preview) => (
-      <link rel="preload" as="image" href={preview.url} fetchpriority="high" />
-    ))}
+    {firstCoverPreview && (
+      <link rel="preload" as="image" href={firstCoverPreview.url} fetchpriority="high" />
+    )}
   </Fragment>
   <div class="collection-directory">
     <header class="collection-directory-hero">
@@ -138,14 +136,16 @@ const visibleArtwork = [
           <a class="subject-collection-tile" href={subject.href}>
             <div class="subject-collection-art">
               <img
-                src={subject.sample.thumb}
-                srcset={subject.sample.thumbSrcSet}
+                src={subject.sample.webp ?? subject.sample.thumb}
+                srcset={subject.sample.preview ?? subject.sample.thumbSrcSet}
+                data-catalog-thumbnail={subject.sample.preview ? '' : undefined}
                 sizes="(max-width: 600px) 44vw, 275px"
                 width="275"
                 height="190"
                 alt={subject.sample.alt}
                 title={displayTitle(subject.sample.title)}
                 loading="lazy"
+                fetchpriority="low"
                 decoding="async"
               />
             </div>

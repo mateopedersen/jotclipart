@@ -1,6 +1,6 @@
 ---
 import { displayTitle } from '../lib/display-title';
-import { imageLoadingPreview, loadingPreviewStyle } from '../lib/image-loading-preview';
+import { imageLoadingPreview } from '../lib/image-loading-preview';
 interface Props {
   items: {
     id: string;
@@ -38,11 +38,9 @@ const previews = items.slice(0, 3).map((item) => imageLoadingPreview(item));
         height={item.height}
         loading={priority ? 'eager' : 'lazy'}
         decoding="async"
-        fetchpriority={priority && index === 0 ? 'high' : previews[index] ? 'low' : undefined}
-        data-original-placeholder={previews[index]?.url}
-        data-original-placeholder-for={previews[index]?.source}
-        data-original-preview={priority && previews[index] ? 'pending' : undefined}
-        style={priority ? loadingPreviewStyle(previews[index]) : undefined}
+        fetchpriority={priority && index === 0 ? 'high' : undefined}
+        srcset={previews[index]?.url}
+        data-catalog-thumbnail={previews[index] ? '' : undefined}
         data-cover-artwork={item.id}
       />
     </div>

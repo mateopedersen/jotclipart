@@ -68,3 +68,23 @@ test('collection limit is validated before returning any cards', () => {
   for (const limit of [-1, 1.5, NaN])
     assert.throws(() => latestSubjectCollections(subjects, items, limit));
 });
+
+test('recent covers expose a verified R2 thumbnail alongside the canonical original', () => {
+  const artwork = {
+    id: 'recent-r2',
+    topic: 'flower',
+    thumb: 'https://assets.ultraclipart.com/flower/original.webp',
+    webp: 'https://assets.ultraclipart.com/flower/original.webp',
+    originalThumb: 'https://assets.ultraclipart.com/flower/thumbnail.webp',
+    alt: 'A yellow flower.',
+    title: 'Yellow Flower',
+    files: { webp: { sha256: 'a'.repeat(64) }, thumb: { sha256: 'b'.repeat(64) } },
+  };
+  const [card] = latestSubjectCollections(subjects, [artwork]);
+  assert.equal(card.sample.webp, artwork.webp);
+  assert.equal(card.sample.preview, artwork.originalThumb);
+
+  const [unverified] = latestSubjectCollections(subjects, [{ ...artwork, files: undefined }]);
+  assert.equal(unverified.sample.preview, undefined);
+  assert.equal(unverified.sample.webp, artwork.webp);
+});

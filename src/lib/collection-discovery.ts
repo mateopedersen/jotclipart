@@ -1,8 +1,10 @@
+import { imageLoadingPreview } from './image-loading-preview';
+
 export interface CollectionSubject {
   slug: string;
   name: string;
   count: number;
-  sample: { thumb: string; thumbSrcSet?: string; webp?: string; alt: string; title: string };
+  sample: { thumb: string; thumbSrcSet?: string; webp?: string; preview?: string; alt: string; title: string };
 }
 export interface CollectionArtwork {
   id: string;
@@ -12,6 +14,8 @@ export interface CollectionArtwork {
   thumb?: string;
   thumbSrcSet?: string;
   webp?: string;
+  originalThumb?: string;
+  files?: { webp?: { sha256?: string }; thumb?: { sha256?: string } };
   alt?: string;
   title?: string;
 }
@@ -44,6 +48,7 @@ export function latestSubjectCollections(
               thumb: art.thumb,
               thumbSrcSet: art.thumbSrcSet,
               webp: art.webp,
+              preview: imageLoadingPreview({ ...art, webp: art.webp })?.url,
               alt: art.alt,
               title: art.title,
             }
