@@ -69,8 +69,8 @@ test('future subjects need an inventory-bound short introduction and replacement
     // Synthetic evidence tests the same expanded-copy binding required by real
     // imports. It is never written into a production source registry.
     paragraphs: [
-      'This test collection contains {{artworkCount}} example of a white volleyball with curved panels. Its short caption identifies the depicted ball rather than assigning an unrelated sport or character.',
-      'Use the visible seams and rounded outline to distinguish this example from other sporting equipment. The test binds this expanded text to the same source inventory and summary as the public collection reader.',
+      'Curved panels define the white volleyball in this example. Its short caption identifies the depicted ball without assigning an unrelated sport or character.',
+      'Use the visible seams and rounded outline to identify the ball. This collection contains {{artworkCount}} example bound to the same source inventory and summary as the public collection reader.',
     ],
     paragraphEvidence: [{ id: fixture.id, imageSha256: fixture.files.webp.sha256 }],
     paragraphsCheckedAt: '2026-10-27T00:00:00Z',

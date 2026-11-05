@@ -5,15 +5,15 @@
   "script": "scripts/catalog-snapshot/publish-content.mjs",
   "capsuleRoot": "data/catalog-batches",
   "software": {
-    "revision": "3eb6393287539cc6b2ec21a4e4ba9737a652bf23",
-    "abiSHA256": "ddb5b9b6050299c19364b1981f785449b93feb97f229200e03366249d7d7eb88",
-    "workerSHA256": "1661f5711f9fbee538930dd1a97bdd5209a22e72bc294f23b295890c9120acad",
-    "directory": "work/first-visit-release-final"
+    "revision": "97be3908bade3aced82fdf1ed888c9fa99625e2a",
+    "abiSHA256": "9dc96a0037313d05ad9c817d559e5c481c7bb08206e9a3f23bafe954f44eaeed",
+    "workerSHA256": "682f05da2b85e77efbd6f14a53abef684e950ce360c2cce9e8c028f822719500",
+    "directory": "work/seasonal-home-release-20261105"
   },
   "publicConfig": "config/content-publisher-public.json",
   "lastVerifiedData": {
-    "revision": "3eb6393287539cc6b2ec21a4e4ba9737a652bf23",
-    "root": "7af5e39caba681ba51ef06664c20615c929a790223c92bb6d6796316f124c103",
+    "revision": "97be3908bade3aced82fdf1ed888c9fa99625e2a",
+    "root": "6dd84fdc50acea707782916c27e0b62c92213ff46181801df071cab2e8f55bb9",
     "artworks": 41108,
     "topics": 716
   },
@@ -25,9 +25,9 @@
     "accountInventoryRequired": false,
     "fullCatalogBuildForContent": false
   },
-  "proof": "work/first-visit-release-proof/result.json",
+  "proof": "work/seasonal-home-release-20261105/result.json",
   "loadTests": "work/catalog-snapshot/load-tests/two-run-report.json",
   "protectedIndependentBackup": "/Users/melihozcan/Documents/UltraClipart-Publisher-KEEP",
   "measurementsScope": "Two private real-media transport + composition + native campaigns, approved unique sources reused. Fresh image review/repair/public verification remains separate; <=60 minutes is a measured technical target, not a universal guarantee.",
-  "installedRuntimePreservation": "/Users/melihozcan/Documents/UltraClipart-Publisher-KEEP/installed-runtime-delta-3eb6393-20261105/manifest.json"
+  "installedRuntimePreservation": "/Users/melihozcan/Documents/UltraClipart-Publisher-KEEP/installed-runtime-delta-97be390-20261105/manifest.json"
 }
