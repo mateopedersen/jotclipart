@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { createReviewedDeltaValidators } from '../scripts/catalog-snapshot/validate-delta-source.mjs';
+import { assertCollectionVisitorCopy } from '../scripts/catalog-snapshot/collection-visitor-copy.mjs';
 const fixture = JSON.parse(
     readFileSync(new URL('./fixtures/catalog-delta-source.json', import.meta.url)),
   ),
@@ -62,6 +63,36 @@ test('canonical approved source preserves original URLs and all public fields', 
     assert.equal(r.newPublicSHA256, hash(f.record));
     assert.equal(r.imageSHA256, f.raw.files.webp.sha256);
     assert.equal(r.oldPublicSHA256, old ? hash(old) : null);
+  }
+});
+test('topic imports reject editor notes and file instructions before reading artwork', async () => {
+  const { options } = inputs();
+  const slug = 'tupolev-aircraft';
+  const good = {
+    intro: 'Tupolev aircraft clipart includes Tu 144 delta wings and Tu 154 airliners.',
+    paragraphs: [
+      'Compare the pointed nose of the Tu 144 with the rear engines on the Tu 154.',
+      'The {{artworkCount}} aircraft drawings include profiles for an aviation timeline.',
+    ],
+  };
+  assert.doesNotThrow(() => assertCollectionVisitorCopy(slug, good));
+  for (const addition of [
+    'The copy highlights the cockpit glazing.',
+    'Similar aircraft remain at family level.',
+    'Download the transparent WebP for a digital layout.',
+  ]) {
+    const editorial = { ...good, paragraphs: [good.paragraphs[0], good.paragraphs[1] + ' ' + addition] };
+    const validators = createReviewedDeltaValidators({ ...options, topicRows: [{ slug, editorial }] });
+    await assert.rejects(
+      () => validators.validateSourceTopic({ change: { slug, record: { editorial } } }),
+      /replace editorial notes or download instructions/,
+    );
+  }
+  for (const paragraphs of [
+    [...good.paragraphs].reverse(),
+    [good.paragraphs[0], good.paragraphs[1].repeat(2)],
+  ]) {
+    assert.throws(() => assertCollectionVisitorCopy(slug, { ...good, paragraphs }), /one live count/);
   }
 });
 test('copy, source pixels, product facts and media cannot change behind a retained review', async () => {

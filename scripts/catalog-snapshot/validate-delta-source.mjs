@@ -3,6 +3,7 @@
 // cannot itself claim a new visual review or silently invoke paid inference.
 import assert from 'node:assert/strict';
 import { assertKnownTopicDisplaySpelling } from './display-spelling-guard.mjs';
+import { assertCollectionVisitorCopy } from './collection-visitor-copy.mjs';
 import { validateEditorialReview } from '../artwork-editorial.mjs';
 import { verifyCollectionEditorial } from '../collection-editorial.mjs';
 import { validateManifest, catalogFiles } from '../publication-policy.mjs';
@@ -174,6 +175,10 @@ export function createReviewedDeltaValidators({
       }
       assertKnownTopicDisplaySpelling(change.slug, change.record, 'Changed topic ' + change.slug);
       assertKnownTopicDisplaySpelling(change.slug, row.editorial, 'Changed topic editorial ' + change.slug);
+      if (!oldRecord || oldRecord.summary !== change.record.summary ||
+          JSON.stringify(oldRecord.paragraphs) !== JSON.stringify(change.record.paragraphs)) {
+        assertCollectionVisitorCopy(change.slug, row.editorial);
+      }
       if (
         !Array.isArray(row.rawItems) ||
         !row.rawItems.length ||

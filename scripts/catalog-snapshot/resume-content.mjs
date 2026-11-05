@@ -90,6 +90,7 @@ export async function resumeStagedContent({ output, software, publicConfig, prog
     baseline,
     JSON.stringify(
       {
+        ...old,
         status: 'DATA_ONLY_CONTENT_PUBLICATION_LIVE_VERIFIED',
         revision: packet.revision,
         sourceCommit: packet.sourceCommit,

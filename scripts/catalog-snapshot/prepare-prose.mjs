@@ -15,8 +15,11 @@ import {
 import { bytesOf, digest } from '../../server/catalog-collections/store.mjs';
 import { collectionMetaDescription } from '../../src/lib/collection-meta.mjs';
 import { merkle } from '../delivery/manifest.mjs';
+import { assertCollectionVisitorCopy } from './collection-visitor-copy.mjs';
 const hash = (b) => createHash('sha256').update(b).digest('hex');
-export async function prepareCollectionProse({ packetBytes, parentBucket, verifier, output, software }) {
+export async function prepareCollectionProse({
+  packetBytes, parentBucket, verifier, output, software, progress = () => {},
+}) {
   const packet = JSON.parse(Buffer.from(packetBytes));
   if (
     packet.schema !== 1 ||
@@ -34,7 +37,7 @@ export async function prepareCollectionProse({ packetBytes, parentBucket, verifi
     throw Error('New protected prose output required');
   for (const [file, expected] of Object.entries(packet.sourceHashes)) {
     if (
-      !/^(?:data\/editorial\/[a-z0-9-]+\.json|(?:scripts|src\/lib)\/[a-z0-9/.-]+\.mjs|server\/[a-z0-9/.-]+\.mjs)$/.test(
+      !/^(?:data\/(?:editorial|catalog-prose)\/[a-z0-9-]+\.json|(?:scripts|src\/lib)\/[a-z0-9/.-]+\.mjs|server\/[a-z0-9/.-]+\.mjs)$/.test(
         file,
       ) ||
       file.includes('..')
@@ -51,7 +54,7 @@ export async function prepareCollectionProse({ packetBytes, parentBucket, verifi
   const presentation=software?await loadPresentationSoftware(software,verifier):null;
   if(!presentation&&((await parent.getFacet('collections')).preparedHTML||(await parent.getFacet('collections')).preparedStudio))throw Error('Installed presentation software required for this predecessor');
   const preparePresentation=presentation?async ({context,bucket})=>{
-    const work=()=>stagePresentationViews({context,bucket,...presentation,allowFixture:true});
+    const work=()=>stagePresentationViews({context,bucket,...presentation,allowFixture:true,progress});
     return typeof parentBucket.withoutDiskCacheAdmissions==='function'?parentBucket.withoutDiskCacheAdmissions(work):work();
   }:undefined;
   const attestation = packet.inventoryAttestation;
@@ -63,8 +66,10 @@ export async function prepareCollectionProse({ packetBytes, parentBucket, verifi
   assert.equal(attestation.parentArtworkFacetSHA256, parent.snapshot.indexes.artworks.sha256);
   const inventories = new Map(attestation.rows.map((r) => [r.slug, r.inventorySha256]));
   assert.equal(inventories.size, attestation.rows.length);
-  const registry = readCollectionRegistries(),
-    source = {
+  const registry = packet.reviewedRegistry === undefined
+    ? readCollectionRegistries()
+    : readReviewedRegistry(packet);
+  const source = {
       schema: 1,
       status: 'CURRENT_SOURCE_AND_EDITORIAL_VERIFIED_NOT_A_DEPLOYMENT',
       kind: 'COLLECTION_PROSE_DELTA',
@@ -99,6 +104,7 @@ export async function prepareCollectionProse({ packetBytes, parentBucket, verifi
     validateSourceTopic: async ({ change, oldRecord }) => {
       const r = registry.topics[change.slug];
       assert.deepEqual(change.record.editorial, r);
+      if (packet.reviewedRegistry !== undefined) assertCollectionVisitorCopy(change.slug, r);
       assert.equal(r.sourceSha256, oldRecord.editorial.sourceSha256);
       assert.deepEqual(r.evidence, oldRecord.editorial.evidence);
       assert.deepEqual(r.paragraphEvidence, oldRecord.editorial.paragraphEvidence);
@@ -171,4 +177,16 @@ export async function prepareCollectionProse({ packetBytes, parentBucket, verifi
     fullArtworkScans: 0,
   });
   return { packet, result, manifest, parent, output };
+}
+
+function readReviewedRegistry(packet) {
+  const file = packet.reviewedRegistry;
+  if (typeof file !== 'string' || !/^data\/catalog-prose\/[a-z0-9-]+\.json$/.test(file) ||
+      !Object.hasOwn(packet.sourceHashes, file)) {
+    throw Error('Committed collection prose registry required');
+  }
+  const registry = JSON.parse(readFileSync(file));
+  assert.equal(registry.schema, 1);
+  assert.deepEqual(Object.keys(registry.topics).sort(), packet.changes.map(change => change.slug).sort());
+  return registry;
 }
