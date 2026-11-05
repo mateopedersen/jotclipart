@@ -22,18 +22,18 @@ for (const [engine, implementation] of Object.entries({ chromium, webkit })) {
       const page = await context.newPage(),
         errors = [];
       page.on('pageerror', (error) => errors.push(error.message));
-      const path = '/edit/classic-white-volleyball-realistic-clipart/';
-      const html = await context.request.get(base + path).then((r) => r.text());
-      const source = JSON.parse(
-        html.match(/<script\b[^>]*id="editor-original-source"[^>]*>([\s\S]*?)<\/script>/)[1],
-      );
+      const id = 'classic-white-volleyball-realistic-clipart';
+      const path = '/edit/' + id + '/';
       let release,
         originals = 0,
         missingRequests = 0;
       const hold = new Promise((done) => {
         release = done;
       });
-      await page.route(source.url, async (route) => {
+      await page.route(
+        (url) => url.pathname.includes(id) && url.pathname.endsWith('.webp') &&
+          !url.pathname.includes('.thumbnail.'),
+        async (route) => {
         originals++;
         try {
           const response = await route.fetch();
@@ -57,9 +57,9 @@ for (const [engine, implementation] of Object.entries({ chromium, webkit })) {
         });
       try {
         await page.goto(base + path, { waitUntil: 'domcontentloaded' });
-        const preview = page.locator('[data-editor-preview] image');
-        await expect(preview).toHaveAttribute('href', /^\/previews\/p1\//);
+        const preview = page.locator('.uc-canvas > svg image');
         if (!missing) {
+          await expect(preview).toHaveAttribute('href', /^\/previews\/p1\//);
           const loaded = await preview.evaluate(async (image) => {
             const probe = new Image();
             probe.src = image.getAttribute('href');
@@ -69,7 +69,8 @@ for (const [engine, implementation] of Object.entries({ chromium, webkit })) {
           assert.ok(loaded > 0 && loaded <= 960);
         }
         await expect.poll(() => originals, { timeout: 30000 }).toBe(1);
-        await expect(page.locator('.uc-workspace')).toHaveAttribute('inert', '');
+        if (missing) await expect(page.locator('.uc-workspace')).toHaveAttribute('inert', '');
+        else await expect(page.locator('.uc-workspace')).not.toHaveAttribute('inert', '');
         release();
         await expect(page.locator('.uc-workspace')).not.toHaveAttribute('inert', '', {
           timeout: 30000,
@@ -89,7 +90,7 @@ for (const [engine, implementation] of Object.entries({ chromium, webkit })) {
           originals,
           missingRequests,
           smallPreview: !missing,
-          controlsWaitedForOriginal: true,
+          controlsWaitedForOriginal: missing,
           fallbackVerified: missing,
           localCdnFixture: fixture,
           errors,

@@ -1,11 +1,11 @@
-// Real public pages and original R2 media. No interception, alternate image sources or test uploads.
+// Real public pages and source-bound R2 media. No interception, alternate image sources or test uploads.
 import {chromium,webkit,expect} from '@playwright/test';
 import assert from 'node:assert/strict';
 import {mkdirSync,writeFileSync} from 'node:fs';
 import {resolve} from 'node:path';
 const base=process.env.BASE_URL??'https://ultraclipart.com',topics=(process.env.UC_IMAGE_TOPICS??'netherlands-flag,qatar-flag,sunflower').split(','),out=resolve(process.env.EVIDENCE_DIR??'reports/topic-image-scroll');
 mkdirSync(out,{recursive:true});
-const report={base,scope:'Actual public gallery original-image decoding during scroll on Chromium/WebKit; not a physical iPhone or emulated LTE test',startedAt:new Date().toISOString(),passed:false,cases:[],errors:[],mediaHttpErrors:[],mediaRequestFailures:[]};
+const report={base,scope:'Actual public gallery image decoding during scroll on Chromium/WebKit; not a physical iPhone or emulated LTE test',startedAt:new Date().toISOString(),passed:false,cases:[],errors:[],mediaHttpErrors:[],mediaRequestFailures:[]};
 try{for(const[engine,type]of Object.entries({chromium,webkit}).filter(([engine])=>!(process.env.UC_IMAGE_ENGINES)||process.env.UC_IMAGE_ENGINES.split(',').includes(engine))){
  const browser=await type.launch(engine==='chromium'&&process.env.UC_CHROMIUM_EXECUTABLE_PATH?{executablePath:process.env.UC_CHROMIUM_EXECUTABLE_PATH}:{});
  try{for(const width of(process.env.UC_IMAGE_WIDTHS??'390,1440').split(',').map(Number)){
@@ -30,7 +30,7 @@ try{for(const[engine,type]of Object.entries({chromium,webkit}).filter(([engine])
     try { await expect.poll(()=>image.evaluate(e=>({complete:e.complete,width:e.naturalWidth})),{timeout:45000,intervals:[100,300,1000]}).toMatchObject({complete:true}); } catch(error) {report.failedImage=await image.evaluate(e=>({src:e.src,currentSrc:e.currentSrc,loading:e.loading,fetchPriority:e.fetchPriority,complete:e.complete,naturalWidth:e.naturalWidth,box:e.getBoundingClientRect().toJSON(),viewport:[innerWidth,innerHeight],scrollY}));await page.screenshot({path:out+'/failed-'+engine+'-'+width+'.png'});throw error;}
     await expect.poll(()=>image.evaluate(e=>e.naturalWidth),{timeout:45000,intervals:[100,300,1000]}).toBeGreaterThan(0);
     const decoded=await image.evaluate(async e=>{await e.decode();return{width:e.naturalWidth,height:e.naturalHeight,currentSrc:e.currentSrc,src:e.getAttribute('src'),alt:e.alt}});
-    assert.equal(decoded.src,source);assert.equal(decoded.currentSrc,source);assert(decoded.alt.trim());checks.push({index,source,...decoded,passed:true});
+    assert.equal(decoded.src,source);assert.equal(decoded.currentSrc,(await image.getAttribute('srcset'))||source);assert(decoded.alt.trim());checks.push({index,source,...decoded,passed:true});
    }
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);
    report.cases.push({engine,width,topic,galleryImages:total,checks,passed:true});

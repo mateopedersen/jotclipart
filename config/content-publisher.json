@@ -5,15 +5,15 @@
   "script": "scripts/catalog-snapshot/publish-content.mjs",
   "capsuleRoot": "data/catalog-batches",
   "software": {
-    "revision": "97be3908bade3aced82fdf1ed888c9fa99625e2a",
-    "abiSHA256": "9dc96a0037313d05ad9c817d559e5c481c7bb08206e9a3f23bafe954f44eaeed",
-    "workerSHA256": "682f05da2b85e77efbd6f14a53abef684e950ce360c2cce9e8c028f822719500",
-    "directory": "work/seasonal-home-release-20261105"
+    "revision": "37c16e0b4167c43b757a6d7b6c9e76af533c4698",
+    "abiSHA256": "7a31b6adde06441e0a71dae79a734ea14a058194c8ca55b4b175316109b398c3",
+    "workerSHA256": "d5567eaace37209e05a37d688d3a3911ccfbdfaa22bcfc54a44c8b82bfd90ee9",
+    "directory": "work/edit-cold-staged-20261105"
   },
   "publicConfig": "config/content-publisher-public.json",
   "lastVerifiedData": {
-    "revision": "97be3908bade3aced82fdf1ed888c9fa99625e2a",
-    "root": "6dd84fdc50acea707782916c27e0b62c92213ff46181801df071cab2e8f55bb9",
+    "revision": "37c16e0b4167c43b757a6d7b6c9e76af533c4698",
+    "root": "4fc09213f49d163d755553076b981ae91dd82298a2d886398275936322733962",
     "artworks": 41108,
     "topics": 716
   },

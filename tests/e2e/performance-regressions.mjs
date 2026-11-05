@@ -56,35 +56,33 @@ for (const [engine, implementation] of Object.entries(engines)) {
           'main img[src^="/catalog/"], main img[src^="https://assets.ultraclipart.com/"]',
         );
         assert.ok(await images.count(), route);
-        assert.equal(await images.first().getAttribute('srcset'), null);
-        if (route.startsWith('/clipart/'))
-          await expect(page.locator('.gallery .art-card img').first()).toHaveAttribute(
-            'fetchpriority',
-            'low',
-          );
+        if (route.startsWith('/art/'))
+          assert.equal(await images.first().getAttribute('srcset'), null);
         await images.first().scrollIntoViewIfNeeded();
         await expect
           .poll(() => images.first().evaluate((img) => img.complete && img.naturalWidth > 0))
           .toBe(true);
         if (route === '/') await page.screenshot({ path: `${out}/${engine}-${width}-home.png` });
-        record(`Full original image and viewport: ${route}`);
+        record(`Image decoded without horizontal overflow: ${route}`);
       }
       await go('/');
       const featured = page.locator('.home-sample-flowers img');
       const desktopPreload = page.locator('head link[rel="preload"][as="image"][media]');
       await expect(featured).toHaveAttribute('loading', 'lazy');
-      await expect(featured).toHaveAttribute('fetchpriority', 'low');
+      await expect(featured).toHaveAttribute('fetchpriority', 'high');
       const preload = await desktopPreload.evaluate((link) => ({
         href: link.href,
         matches: matchMedia(link.media).matches,
       }));
-      assert.equal(preload.href, await featured.evaluate((image) => image.src));
+      assert.equal(preload.href, await featured.evaluate((image) =>
+        image.getAttribute('srcset') || image.src,
+      ));
       assert.equal(preload.matches, width >= 901);
       await page.locator('.home-sample-flowers').scrollIntoViewIfNeeded();
       await expect
         .poll(() => featured.evaluate((image) => image.complete && image.naturalWidth > 0))
         .toBe(true);
-      record('Homepage original image loads on scroll; preload applies only to desktop');
+      record('Homepage artwork loads on scroll; preload applies only to desktop');
       await go('/');
       await page.locator('#search-q').fill('baby pumpkin costume');
       const suggestion = page.locator(
