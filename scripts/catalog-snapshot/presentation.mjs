@@ -47,13 +47,27 @@ export async function stagePresentationViews({context,bucket,renderers,rendererS
   counts=await cc.allLegacyCounts(),collections=await context.getFacet('collections'),
   shells=await context.read('collections',collections.shells,{maxBytes:65536}),groups=await readShellField(context,shells,'clusters');
  const plans=new Map(CORE.map(([path,kind])=>[path,{path,kind}]));
+ const [homeState,newState]=await Promise.all([
+  readHomePageState(bucket,context,{allowFixture}),
+  readShellPageState(bucket,context,'new',{allowFixture}),
+ ]);
+ const artworkLimit=512; // Matches the installed prepared-artwork roster bound.
+ let artworkCount=0;
+ const addArtwork=id=>{
+  const path='/art/'+id+'/';
+  if(artworkCount>=artworkLimit||plans.has(path))return;
+  plans.set(path,{path,kind:'art',id});
+  artworkCount++;
+ };
+ // Prioritize the artwork actually linked from the two recent galleries.
+ // Newly published artwork must not rely on a warm edge or on Surprise selection.
+ for(const item of [...homeState.homeRecent,...newState.newestArt])addArtwork(item.id);
  for(const cluster of groups){const slug=cluster.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');plans.set('/collection/'+slug+'/',{path:'/collection/'+slug+'/',kind:'cluster',cluster});}
  for(const g of activeCuratedCollections(counts.topics))plans.set('/collection/'+g.slug+'/',{path:'/collection/'+g.slug+'/',kind:'cluster',cluster:g.slug});
  for(const slug of Object.keys(counts.topics).sort())plans.set('/clipart/'+slug+'/',{path:'/clipart/'+slug+'/',kind:'collection',topic:slug});
- // Cover the exact current signed roster used by Surprise Me, including the
- // post-load JSON refresh pool. This is bounded metadata rendering, not a full
- // artwork/editor build and never changes an original artwork or download.
- for(const pick of await readSurprisePicks(context,{limit:512}))plans.set('/art/'+pick.id+'/',{path:'/art/'+pick.id+'/',kind:'art',id:pick.id});
+ // Fill the remaining roster from the signed Surprise Me projection. Routes
+ // outside the bounded roster still use the normal canonical reader.
+ for(const pick of await readSurprisePicks(context,{limit:artworkLimit}))addArtwork(pick.id);
  const created=new Map(),entries=[],receipts=[];let bytes=0;
  const put=async value=>{const body=Buffer.from(JSON.stringify(canonical(value))),sha256=sha(body),key='catalog/objects/collections/'+sha256+'.json';
   if(body.length>262144)throw Error('Prepared metadata object bound');
@@ -77,7 +91,7 @@ export async function stagePresentationViews({context,bucket,renderers,rendererS
   const {path,kind}=plan;let state,render,result;
   try{
   if(kind==='home'){
-   state=await readHomePageState(bucket,context,{allowFixture});
+   state=homeState;
    render=s=>renderers.home.render(s,'https://ultraclipart.com'+path,renderers.home.css,renderers.home.scripts);
   }else if(kind==='art'){
    state=await readArtworkPageState(bucket,context,plan.id,{allowFixture});
@@ -88,7 +102,7 @@ export async function stagePresentationViews({context,bucket,renderers,rendererS
     resolveSurprise:async ctx=>({rootSHA256:ctx.rootSHA256,items:await readSurprisePicks(ctx,{limit:48})})})).state;
    render=s=>renderers.collection.render(s,'https://ultraclipart.com'+path,renderers.collection.css,renderers.collection.scripts);
   }else{
-   state=await readShellPageState(bucket,context,kind,{allowFixture,...(plan.cluster?{cluster:plan.cluster}:{})});
+   state=kind==='new'?newState:await readShellPageState(bucket,context,kind,{allowFixture,...(plan.cluster?{cluster:plan.cluster}:{})});
    const [fn,css]=renderers.shells[kind];render=s=>fn(s,'https://ultraclipart.com'+path,css,renderers.shellScripts);
   }
   if(!state)throw Error('Canonical presentation route disappeared: '+path);

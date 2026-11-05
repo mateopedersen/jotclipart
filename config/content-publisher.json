@@ -12,8 +12,8 @@
   },
   "publicConfig": "config/content-publisher-public.json",
   "lastVerifiedData": {
-    "revision": "37c16e0b4167c43b757a6d7b6c9e76af533c4698",
-    "root": "4fc09213f49d163d755553076b981ae91dd82298a2d886398275936322733962",
+    "revision": "87e3ccc6db2ea3c376c909535c2286c433888bf7",
+    "root": "fb418ab18da5818e36ed9224c2d6cb1e41ea02dbe6e05b55d862b2a30ab3b3b4",
     "artworks": 41108,
     "topics": 716
   },

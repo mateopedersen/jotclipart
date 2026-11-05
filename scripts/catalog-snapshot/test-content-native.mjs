@@ -23,6 +23,18 @@ const sha = (b) => createHash('sha256').update(b).digest('hex'),
             : { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'" }[k.toLowerCase()],
       )
       .trim();
+const r2Asset = /^https:\/\/assets\.ultraclipart\.com\//;
+const attribute = (tag, name) => decode(tag.match(new RegExp('\\s' + name + '="([^"]*)"'))?.[1] ?? '');
+
+function assertCatalogDisplayImage(tag, path) {
+  const original = attribute(tag, 'src');
+  if (!r2Asset.test(original)) return;
+  const display = attribute(tag, 'srcset');
+  assert(r2Asset.test(display) && display !== original, path + ' needs a compact R2 display source');
+  assert(!/\s/.test(display), path + ' needs a single thumbnail candidate');
+  assert(tag.includes('data-catalog-thumbnail'), path + ' thumbnail must fall back on error');
+}
+
 export async function verifyNativeContent(options) {
   const verify = () => verifyNativeContentWithSource(options);
   return typeof options.parentBucket?.withoutDiskCacheAdmissions === 'function'
@@ -145,6 +157,15 @@ async function verifyNativeContentWithSource({
           assert(html.includes('https://ultraclipart.com' + path));
           assert(html.includes(c.record.webp));
           if (kind === 'art') assert(html.includes(c.record.pdf));
+          if (kind === 'edit' && c.record.sourceType === 'raster' &&
+              r2Asset.test(c.record.originalThumb ?? '') &&
+              /^[a-f0-9]{64}$/.test(c.record.files?.thumb?.sha256 ?? '')) {
+            const preview = html.match(/<svg\b[^>]*data-editor-preview[^>]*>\s*<g\b[^>]*>\s*(<image\b[^>]*>)/);
+            assert(preview, path + ' must paint the artwork before its full download');
+            assert.equal(attribute(preview[0], 'viewBox'), `0 0 ${c.record.width} ${c.record.height}`);
+            const display = attribute(preview[1], 'href');
+            assert(display === c.record.originalThumb || /^\/previews\/p1\/[a-f0-9]{24}-960\.webp$/.test(display), path);
+          }
           assert(html.includes('name="build-revision" content="' + candidate.revision + '"'));
         }
         results.push({ path, status: r.status, sha256: sha(Buffer.from(html)) });
@@ -185,9 +206,13 @@ async function verifyNativeContentWithSource({
           path + ' exact meta description',
         );
         assert(!/noindex/i.test(r.headers.get('x-robots-tag') ?? ''), path + ' indexability');
+        const galleryImages = [...html.matchAll(/<a\b[^>]*class="[^"]*\bart-picture\b[^"]*"[^>]*>\s*(<img\b[^>]*>)/g)];
+        assert.equal(galleryImages.length, ids.length, path + ' gallery image roster');
+        for (const [, image] of galleryImages) assertCatalogDisplayImage(image, path);
       }
       results.push({ path, status: r.status, sha256: sha(Buffer.from(html)) });
     }
+    const recentGalleryTargets = new Set();
     for (const path of [
       '/',
       '/new/',
@@ -206,6 +231,22 @@ async function verifyNativeContentWithSource({
       const r = await mf.dispatchFetch('https://ultraclipart.com' + path, { headers }),
         body = await r.text();
       assert.equal(r.status, 200, path + ' ' + r.headers.get('x-private-error'));
+      if (path === '/') {
+        const showcase = body.match(/class="home-collection-shelf"[^>]*>([\s\S]*?)class="home-collection-link"/)?.[1] ?? '';
+        const showcaseImages = [...showcase.matchAll(/<img\b[^>]*>/g)];
+        assert(showcaseImages.length > 0, 'Homepage showcase images must be in the initial HTML');
+        for (const [image] of showcaseImages) assertCatalogDisplayImage(image, path);
+      }
+      if (path === '/' || path === '/new/') {
+        const recentGallery = path === '/'
+          ? body.match(/<section\b[^>]*aria-labelledby="home-recent-title"[^>]*>([\s\S]*?)<\/section>/)?.[1] ?? ''
+          : body;
+        for (const [tag] of recentGallery.matchAll(/<a\b[^>]*class="[^"]*\bart-picture\b[^"]*"[^>]*>/g)) {
+          const target = attribute(tag, 'href');
+          assert(/^\/art\/[a-z0-9]+(?:-[a-z0-9]+)*\/$/.test(target), path + ' canonical gallery target');
+          recentGalleryTargets.add(target);
+        }
+      }
       results.push({ path, status: r.status, sha256: sha(Buffer.from(body)) });
     }
     if(preparedPresentation?.studio){
@@ -222,7 +263,11 @@ async function verifyNativeContentWithSource({
     }
     if(preparedPresentation){
       const paths=preparedPresentation.receipts.map(r=>r.path);
-      if(paths.length>1536||new Set(paths).size!==paths.length)throw Error('Prepared native route budget');
+      const preparedPaths = new Set(paths);
+      if(paths.length>1536||preparedPaths.size!==paths.length)throw Error('Prepared native route budget');
+      assert(recentGalleryTargets.size > 0, 'Missing recent gallery artwork');
+      for (const target of recentGalleryTargets)
+        assert(preparedPaths.has(target), target + ' must be ready on the first visit after publishing');
       for(const path of paths){const r=await mf.dispatchFetch('https://ultraclipart.com'+path,{headers}),body=await r.text();
         assert.equal(r.status,200,path+' prepared route');assert(body.includes('name="catalog-snapshot"'));
         assert.equal(r.headers.get('x-uc-html-source'),'prepared',path+' prepared source');
