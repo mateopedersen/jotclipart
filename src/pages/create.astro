@@ -1,4 +1,5 @@
 ---
+import { imageLoadingPreview } from '../lib/image-loading-preview';
 import Layout from '../layouts/Layout.astro';
 import Editor from '../components/Editor.astro';
 import StudioStarters from '../components/StudioStarters.astro';
@@ -18,7 +19,10 @@ const heroArt = [
   'laptop-study-laptop-with-notebook-and-coffee',
   'robot-friendly-robot-reaching-out-to-say-hello',
   'music-acoustic-guitar-watercolor-clipart',
-].map((id) => catalogue.find((a) => a.id === id)!);
+].map((id) => {
+  const item = catalogue.find((a) => a.id === id)!;
+  return { ...item, displayPreview: imageLoadingPreview(item)?.url };
+});
 const workspace = { id: 'my-clipart', title: 'My Clipart Project', svg: '' };
 ---
 
@@ -31,7 +35,7 @@ const workspace = { id: 'my-clipart', title: 'My Clipart Project', svg: '' };
     <link
       rel="preload"
       as="image"
-      href={heroArt[1].thumb}
+      href={heroArt[1].displayPreview ?? heroArt[1].thumb}
       fetchpriority="high"
       media="(min-width: 901px)"
     />
@@ -111,7 +115,8 @@ const workspace = { id: 'my-clipart', title: 'My Clipart Project', svg: '' };
                   <img
                     title={a.title}
                     src={a.thumb}
-                    srcset={a.thumbSrcSet}
+                    srcset={a.displayPreview ?? a.thumbSrcSet}
+                    data-catalog-thumbnail={a.displayPreview ? '' : undefined}
                     sizes="(max-width: 540px) 45vw, (max-width: 1000px) 30vw, 240px"
                     alt={a.alt}
                     width={a.width}
@@ -132,6 +137,8 @@ const workspace = { id: 'my-clipart', title: 'My Clipart Project', svg: '' };
         <img
           title={heroArt[0].title}
           src={heroArt[0].thumb}
+          srcset={heroArt[0].displayPreview}
+          data-catalog-thumbnail={heroArt[0].displayPreview ? '' : undefined}
           alt={heroArt[0].alt}
           width="70"
           height="70"
@@ -146,6 +153,8 @@ const workspace = { id: 'my-clipart', title: 'My Clipart Project', svg: '' };
         <img
           title={heroArt[1].title}
           src={heroArt[1].thumb}
+          srcset={heroArt[1].displayPreview}
+          data-catalog-thumbnail={heroArt[1].displayPreview ? '' : undefined}
           alt={heroArt[1].alt}
           width="70"
           height="70"

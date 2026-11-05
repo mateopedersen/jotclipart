@@ -48,3 +48,19 @@ export function loadingPreviewStyle(preview: ReturnType<typeof imageLoadingPrevi
     ? '--original-loading-preview:url(' + JSON.stringify(preview.url) + ')'
     : undefined;
 }
+
+/** The editor can paint a source-bound R2 thumbnail when no larger screen copy exists. */
+export function editorDisplayPreview(item: ImageSource & {
+  preview?: string;
+  previewWidth?: number;
+  previewHeight?: number;
+}) {
+  if (isEditorScreenURL(item.preview))
+    return { url: item.preview!, width: item.previewWidth, height: item.previewHeight };
+  const thumbnail = imageLoadingPreview(item);
+  return thumbnail && { url: thumbnail.url };
+}
+
+export function isEditorScreenURL(url?: string) {
+  return /^\/previews\/p1\/[a-f0-9]{24}-960\.webp$/.test(url ?? '');
+}

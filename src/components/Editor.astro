@@ -1,4 +1,5 @@
 ---
+import { editorDisplayPreview } from '../lib/image-loading-preview';
 import { displayTitle } from '../lib/display-title';
 import Icon from './Icon.astro';
 import StudioIcon from './StudioIcon.astro';
@@ -22,12 +23,13 @@ interface Props {
     width?: number;
     height?: number;
     webp?: string;
+    originalThumb?: string;
     pdf?: string;
     preview?: string;
     previewWidth?: number;
     previewHeight?: number;
     alt?: string;
-    files?: { webp: { bytes: number; sha256: string }; pdf: { bytes: number; sha256: string } };
+    files?: { webp: { bytes: number; sha256: string }; pdf: { bytes: number; sha256: string }; thumb?: { sha256: string } };
     [key: string]: unknown;
   };
 }
@@ -41,13 +43,7 @@ const rasterSource = raster
       height: art.height,
       webp: { url: art.webp, ...art.files!.webp },
       pdf: { url: art.pdf, ...art.files!.pdf },
-      screen: art.preview?.startsWith('/previews/p1/')
-        ? {
-            url: art.preview,
-            width: art.previewWidth,
-            height: art.previewHeight,
-          }
-        : undefined,
+      screen: art.webp ? editorDisplayPreview({ ...art, webp: art.webp }) : undefined,
     }
   : undefined;
 const toolItems = [

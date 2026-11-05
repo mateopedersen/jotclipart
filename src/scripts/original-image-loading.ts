@@ -16,6 +16,17 @@ export function initOriginalImageLoading(
   )
     throw Error('Bounded image recovery required');
   marker.dataset.originalImageLoading = 'initializing';
+  // A native responsive candidate can fail independently of its R2 original.
+  // Fall back once, including when the error arrived before this module.
+  const fallbackThumbnail = (target: EventTarget | null) => {
+    if (!(target instanceof HTMLImageElement) || !target.hasAttribute('data-catalog-thumbnail'))
+      return;
+    target.removeAttribute('data-catalog-thumbnail');
+    target.removeAttribute('srcset');
+  };
+  root.addEventListener('error', (event) => fallbackThumbnail(event.target), true);
+  for (const image of root.querySelectorAll<HTMLImageElement>('img[data-catalog-thumbnail]'))
+    if (image.complete && image.currentSrc && !image.naturalWidth) fallbackThumbnail(image);
   type State = {
     image: HTMLImageElement;
     source: string;

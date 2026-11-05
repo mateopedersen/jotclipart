@@ -1,3 +1,4 @@
+import { isEditorScreenURL, publicLoadingImageURL } from '../lib/image-loading-preview';
 import { catalogProtocolHeaders } from '../lib/catalog-protocol.ts';
 import { clone, identity, type EditorDocument, type RasterLayer } from './model';
 import type { VerifiedRepresentation as Representation } from './source-policy';
@@ -11,7 +12,7 @@ export interface RasterAsset {
   height: number;
   webp: Representation;
   pdf: Representation;
-  screen?: { url: string; width: number; height: number };
+  screen?: { url: string; width?: number; height?: number };
 }
 export interface LocalSource {
   id: string;
@@ -22,18 +23,39 @@ interface LoadedAsset {
   local?: LocalSource;
   asset: RasterAsset;
   preview: string;
+  screen?: { url: string; width: number; height: number };
   image: HTMLImageElement;
   pdf?: Promise<Uint8Array<ArrayBuffer>>;
 }
 // Projects contain compact, hash-bound references, never executable image URLs.
 // Only the current catalog page can register a source. Undo does not copy bitmap bytes.
 const assets = new Map<string, LoadedAsset>();
+async function decodeScreen(asset: RasterAsset): Promise<LoadedAsset['screen']> {
+  const screen = asset.screen;
+  if (!screen || (!isEditorScreenURL(screen.url) || screen.width === undefined || screen.height === undefined) &&
+      !publicLoadingImageURL(screen.url)) return;
+  const display = new Image();
+  display.src = screen.url;
+  try {
+    await display.decode();
+    const width = display.naturalWidth;
+    const height = display.naturalHeight;
+    const sameFraming = Math.abs(width * asset.height - height * asset.width) <= Math.max(asset.width, asset.height);
+    if (!width || !height || !sameFraming || (screen.width !== undefined && width !== screen.width) ||
+      (screen.height !== undefined && height !== screen.height)) return;
+    return { url: screen.url, width, height };
+  } catch {
+    // The verified original also works if its display derivative fails.
+    return undefined;
+  }
+}
 export async function openRaster(asset: RasterAsset): Promise<EditorDocument> {
   if (
     !/^[a-z0-9-]+$/.test(asset.id) ||
     ![asset.width, asset.height].every((v) => Number.isInteger(v) && v > 0 && v <= 4096)
   )
     throw new Error('Invalid image dimensions.');
+  const screenReady = decodeScreen(asset);
   const bytes = await readVerified(asset.webp, 'webp');
   const preview = await new Promise<string>((resolve, reject) => {
     const reader = new FileReader();
@@ -46,22 +68,7 @@ export async function openRaster(asset: RasterAsset): Promise<EditorDocument> {
   await image.decode();
   if (image.naturalWidth !== asset.width || image.naturalHeight !== asset.height)
     throw new Error('Image dimensions differ from the verified catalog.');
-  let screen = asset.screen;
-  if (screen) {
-    try {
-      if (!/^\/previews\/p1\/[a-f0-9]{24}-960\.webp$/.test(screen.url))
-        throw Error('Invalid screen copy');
-      const display = new Image();
-      display.src = screen.url;
-      await display.decode();
-      if (display.naturalWidth !== screen.width || display.naturalHeight !== screen.height)
-        throw Error('Invalid screen dimensions');
-    } catch {
-      // A missing display derivative must not strand a verified original.
-      screen = undefined;
-    }
-  }
-  assets.set(asset.id, { asset: { ...asset, screen }, preview, image });
+  assets.set(asset.id, { asset, screen: await screenReady, preview, image });
   return {
     version: 2,
     artId: asset.id,
@@ -100,12 +107,11 @@ export function requireRaster(layer: RasterLayer) {
 }
 export function rasterPreview(layer: RasterLayer, screenScale = Infinity) {
   const loaded = requireRaster(layer),
-    screen = loaded.asset.screen;
+    screen = loaded.screen;
   // Screen copies never enter pixel processing, project data or exports. The
   // original is still verified before enabling editing; zoom uses its full detail.
   if (
     screen &&
-    /^\/previews\/p1\/[a-f0-9]{24}-960\.webp$/.test(screen.url) &&
     screen.width >= layer.width * Math.abs(layer.scaleX) * screenScale &&
     screen.height >= layer.height * Math.abs(layer.scaleY) * screenScale
   )

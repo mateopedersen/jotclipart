@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Editor from '../../components/Editor.astro';
 import { art } from '../../lib/catalog';
+import { editorDisplayPreview, publicLoadingImageURL } from '../../lib/image-loading-preview';
 import { editorScreen } from '../../lib/editor-screen';
 import { renderArtworkScope } from '../../lib/delivery-build-scope';
 export function getStaticPaths() {
@@ -9,6 +10,8 @@ export function getStaticPaths() {
 }
 const { item } = Astro.props;
 const editorItem = editorScreen(item);
+const displayPreview = item.sourceType === 'raster' && editorDisplayPreview(editorItem);
+const originalURL = item.sourceType === 'raster' && publicLoadingImageURL(item.webp);
 ---
 
 <Layout
@@ -21,8 +24,11 @@ const editorItem = editorScreen(item);
   imageHeight={item.height}
 >
   <Fragment slot="head">
-    {item.sourceType === 'raster' && editorItem.preview?.startsWith('/previews/') && (
-      <link rel="preload" as="image" href={editorItem.preview} fetchpriority="high" />
+    {displayPreview && (
+      <link rel="preload" as="image" href={displayPreview.url} fetchpriority="high" />
+    )}
+    {originalURL && (
+      <link rel="preload" as="fetch" href={originalURL} crossorigin="anonymous" fetchpriority="low" />
     )}
     {item.sourceType === 'raster' && (
       <script

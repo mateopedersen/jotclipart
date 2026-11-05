@@ -1,6 +1,6 @@
 ---
 import { displayTitle } from '../lib/display-title';
-import { imageLoadingPreview, loadingPreviewStyle } from '../lib/image-loading-preview';
+import { imageLoadingPreview } from '../lib/image-loading-preview';
 import CardFileActions from './CardFileActions.astro';
 import Icon from './Icon.astro';
 import ShareButton from './ShareButton.astro';
@@ -19,11 +19,9 @@ const preview = imageLoadingPreview(item);
       height="400"
       loading={priority ? 'eager' : 'lazy'}
       decoding="async"
-      fetchpriority={priority ? 'high' : preview ? 'low' : undefined}
-      data-original-placeholder={preview?.url}
-      data-original-placeholder-for={preview?.source}
-      data-original-preview={priority && preview ? 'pending' : undefined}
-      style={priority ? loadingPreviewStyle(preview) : undefined}
+      fetchpriority={priority ? 'high' : undefined}
+      srcset={preview?.url}
+      data-catalog-thumbnail={preview ? '' : undefined}
     />
   </a>
   <div class="card-body">

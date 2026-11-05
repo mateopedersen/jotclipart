@@ -137,15 +137,14 @@ const selection = [
             <img
               title={subject.image.title}
               src={subject.image.thumb}
-              srcset={subject.image.thumbSrcSet}
+              srcset={subject.loadingPreview?.url ?? subject.image.thumbSrcSet}
+              data-catalog-thumbnail={subject.loadingPreview ? '' : undefined}
               sizes="(max-width: 540px) 26vw, (max-width: 900px) 200px, 160px"
               alt={subject.image.alt}
               width={subject.image.width}
               height={subject.image.height}
               loading="lazy"
-              fetchpriority={index === 0 ? 'high' : subject.loadingPreview ? 'low' : undefined}
-              data-original-placeholder={subject.loadingPreview?.url}
-              data-original-placeholder-for={subject.loadingPreview?.source}
+              fetchpriority={index === 0 ? 'high' : undefined}
               decoding="async"
             />
           </span>
