@@ -16,6 +16,10 @@ img[data-original-preview='pending'],
 :root[data-original-image-loading='ready']
   .art-card
   > .art-picture
+  > img[data-search-preview-awaiting],
+:root[data-original-image-loading='ready']
+  .art-card
+  > .art-picture
   > img[data-original-request-held] {
   display: none;
 }
@@ -27,6 +31,10 @@ img[data-original-preview='pending'],
     .art-card
     > .art-picture
     > img[loading='lazy'][data-original-placeholder],
+  :root[data-original-image-loading='ready']
+    .art-card
+    > .art-picture
+    > img[data-search-preview-awaiting],
   :root[data-original-image-loading='ready']
     .art-card
     > .art-picture

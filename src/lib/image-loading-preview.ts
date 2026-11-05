@@ -4,6 +4,8 @@ type ImageSource = {
   files?: { webp?: { sha256?: string }; thumb?: { sha256?: string } };
 };
 
+export type LoadingPreview = { source: string; url: string };
+
 /** A temporary CSS background, never an img src/srcset, download or ImageObject. */
 export function imageLoadingPreview(item: ImageSource, source = item.webp) {
   if (
@@ -12,22 +14,30 @@ export function imageLoadingPreview(item: ImageSource, source = item.webp) {
     !/^[a-f0-9]{64}$/.test(item.files?.thumb?.sha256 ?? '')
   )
     return undefined;
+  return boundLoadingPreview(source, item.originalThumb);
+}
+
+export function boundLoadingPreview(
+  source: string,
+  thumbnailURL: string | undefined,
+): LoadingPreview | undefined {
+  const original = publicLoadingImageURL(source);
+  const thumbnail = publicLoadingImageURL(thumbnailURL);
+  if (original && thumbnail && original !== thumbnail) return { source: original, url: thumbnail };
+}
+
+export function publicLoadingImageURL(source?: string) {
   try {
-    const original = new URL(source),
-      thumbnail = new URL(item.originalThumb ?? '');
+    const url = new URL(source ?? '');
     if (
-      [original, thumbnail].some(
-        (u) =>
-          u.protocol !== 'https:' ||
-          u.hostname !== 'assets.ultraclipart.com' ||
-          u.username ||
-          u.password ||
-          u.port,
-      ) ||
-      original.href === thumbnail.href
+      url.protocol === 'https:' &&
+      url.hostname === 'assets.ultraclipart.com' &&
+      !url.username &&
+      !url.password &&
+      !url.port &&
+      !url.hash
     )
-      return undefined;
-    return { source: original.href, url: thumbnail.href };
+      return url.href;
   } catch {
     return undefined;
   }

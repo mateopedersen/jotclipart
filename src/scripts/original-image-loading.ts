@@ -284,12 +284,13 @@ export function initOriginalImageLoading(
   function pump() {
     if (root.hidden || !navigator.onLine) return;
     const readyToPromote = (s: State) =>
-      !s.preview ||
-      s.preferred ||
-      s.previewState === 'ready' ||
-      s.previewState === 'failed' ||
-      Boolean(s.image.dataset.originalPreview) ||
-      s.image.dataset.originalImageState === 'error';
+      !s.image.hasAttribute('data-search-preview-awaiting') &&
+      (!s.preview ||
+        s.preferred ||
+        s.previewState === 'ready' ||
+        s.previewState === 'failed' ||
+        Boolean(s.image.dataset.originalPreview) ||
+        s.image.dataset.originalImageState === 'error');
     const candidates = [...new Set([...queue, ...active])]
       .filter(
         (s) =>
@@ -538,7 +539,12 @@ export function initOriginalImageLoading(
     subtree: true,
     childList: true,
     attributes: true,
-    attributeFilter: ['src', 'data-original-placeholder', 'data-original-placeholder-for'],
+    attributeFilter: [
+      'src',
+      'data-original-placeholder',
+      'data-original-placeholder-for',
+      'data-search-preview-awaiting',
+    ],
   });
   const resume = () => {
     for (const s of new Set([...queue, ...active])) {

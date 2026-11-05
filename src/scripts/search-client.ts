@@ -1,5 +1,5 @@
 import { displayTitle } from '../lib/display-title.ts';
-import {adoptCatalogSnapshot} from '../lib/catalog-snapshot-client';
+import { adoptCatalogSnapshot } from '../lib/catalog-snapshot-client';
 import { defaults, normalizeQuery, parseState, stateParams, type SearchState } from '../lib/search';
 import { SearchRepository, type RemoteResults } from '../lib/search-remote';
 import { LatestRequest } from '../lib/search-request';
@@ -7,6 +7,7 @@ import { alignSearchDirectory } from '../lib/search-directory';
 import { searchSiteEntries, searchKindLabels, type SiteSearchEntry } from '../lib/site-search';
 import type { SearchCard, SearchManifest } from '../lib/search-index';
 import { renderCard } from './search-card';
+import { loadLegacySearchPreviews } from './search-previews';
 export function initSearch() {
   const form = document.querySelector<HTMLFormElement>('#catalog-search');
   if (!form) return;
@@ -39,6 +40,7 @@ export function initSearch() {
     timer: ReturnType<typeof setTimeout> | undefined,
     composing = false;
   let renderedArtwork: RemoteResults | undefined;
+  let previewRequest: AbortController | undefined;
   let siteLimit = 8,
     siteMatches: ReturnType<typeof searchSiteEntries> = [];
   function historyUrl(mode: 'push' | 'replace' | 'none') {
@@ -69,6 +71,8 @@ export function initSearch() {
     );
   }
   function render(mode: 'push' | 'replace' | 'none' = 'none') {
+    previewRequest?.abort();
+    const previewSignal = (previewRequest = new AbortController()).signal;
     clearTimeout(timer);
     timer = undefined;
     if (Date.now() - refreshed >= 30000) {
@@ -116,10 +120,12 @@ export function initSearch() {
           if (!requested.q && ['all', 'artwork'].includes(requested.type))
             return { entries: null, siteError: false, version: '' };
           try {
-            const manifest = pinned ?? await repository.manifest(signal);
+            const manifest = pinned ?? (await repository.manifest(signal));
             const entries = await repository.siteEntries(manifest, signal);
             return { entries, siteError: false, version: manifest.version };
-          } catch { return { entries: null, siteError: true, version: '' }; }
+          } catch {
+            return { entries: null, siteError: true, version: '' };
+          }
         };
         const sitePromise = artMode ? undefined : loadSite();
         const result = await repository.search(requested, signal);
@@ -142,8 +148,13 @@ export function initSearch() {
         const page = artMode ? result.page : Math.min(pages, Math.max(1, requested.page));
         state.page = page;
         if (page !== requested.page) historyUrl('replace');
-        if (renderedArtwork !== result) {
-          gallery.replaceChildren(...(artMode ? result.items.map(renderCard) : []));
+        const artworkChanged = renderedArtwork !== result;
+        if (artworkChanged) {
+          const cards = artMode
+            ? result.items.map((item) => ({ item, element: renderCard(item) }))
+            : [];
+          loadLegacySearchPreviews(cards, result.manifest.transport, previewSignal);
+          gallery.replaceChildren(...cards.map(({ element }) => element));
           renderedArtwork = result;
         }
         gallery.hidden = !artMode || !result.items.length;
@@ -205,22 +216,27 @@ export function initSearch() {
           q('#no-exact-artwork').hidden = false;
           const related = result.relatedItems || [];
           relatedSection.hidden = !related.length;
-          relatedList.replaceChildren(
-            ...related.map((item) => {
-              const wrapper = document.createElement('div');
-              wrapper.className = 'search-related-item';
-              wrapper.append(renderCard(item));
-              const note = document.createElement('p');
-              note.className = 'search-missing';
-              const originalWords = requested.q.match(/[\p{L}\p{N}-]+/gu) || [];
-              const missing = (result.relatedMissing?.[item.id] || []).map(
-                (term) => originalWords.find((word) => normalizeQuery(word).includes(term)) || term,
-              );
-              note.textContent = `Unmatched details: ${missing.join(', ')}`;
-              wrapper.append(note);
-              return wrapper;
-            }),
-          );
+          if (artworkChanged) {
+            const cards = related.map((item) => ({ item, element: renderCard(item) }));
+            loadLegacySearchPreviews(cards, result.manifest.transport, previewSignal);
+            relatedList.replaceChildren(
+              ...cards.map(({ item, element }) => {
+                const wrapper = document.createElement('div');
+                wrapper.className = 'search-related-item';
+                wrapper.append(element);
+                const note = document.createElement('p');
+                note.className = 'search-missing';
+                const originalWords = requested.q.match(/[\p{L}\p{N}-]+/gu) || [];
+                const missing = (result.relatedMissing?.[item.id] || []).map(
+                  (term) =>
+                    originalWords.find((word) => normalizeQuery(word).includes(term)) || term,
+                );
+                note.textContent = `Unmatched details: ${missing.join(', ')}`;
+                wrapper.append(note);
+                return wrapper;
+              }),
+            );
+          }
         }
         const tokens = normalizeQuery(requested.q),
           relatedTopics = tokens.length
@@ -263,9 +279,11 @@ export function initSearch() {
   query.addEventListener('compositionstart', () => {
     composing = true;
     clearTimeout(timer);
+    previewRequest?.abort();
     requests.cancel();
   });
   const schedule = () => {
+    previewRequest?.abort();
     requests.cancel();
     clearTimeout(timer);
     if (!composing) timer = setTimeout(() => submit('replace'), 350);

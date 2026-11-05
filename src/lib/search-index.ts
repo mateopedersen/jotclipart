@@ -1,6 +1,7 @@
 import { normalizeQuery, artworkSearchFields, type SearchArtwork } from './search.ts';
 import { isMonochrome, type MonochromeDirectory } from './monochrome.ts';
 import { newestFirst } from './publication-order.ts';
+import { imageLoadingPreview, type LoadingPreview } from './image-loading-preview.ts';
 
 export interface DownloadDetails {
   width: number;
@@ -23,6 +24,7 @@ export interface SearchCard {
   pdf?: string;
   editable?: boolean;
   download?: DownloadDetails;
+  loadingPreview?: LoadingPreview;
 }
 export interface SearchTopic {
   slug: string;
@@ -71,7 +73,10 @@ export function tokenBucket(token: string): string {
   for (let i = 0; i < token.length; i++) hash = Math.imul(hash ^ token.charCodeAt(i), 16777619);
   return ((hash >>> 0) % TOKEN_BUCKETS).toString(16).padStart(2, '0');
 }
-export function cardMetadata(item: SearchArtwork & SearchCard): SearchCard {
+export function cardMetadata(
+  item: SearchArtwork & SearchCard & Parameters<typeof imageLoadingPreview>[0],
+): SearchCard {
+  const loadingPreview = imageLoadingPreview(item);
   return {
     id: item.id,
     title: item.title,
@@ -82,6 +87,7 @@ export function cardMetadata(item: SearchArtwork & SearchCard): SearchCard {
     ...(item.pdf ? { pdf: item.pdf } : {}),
     ...(item.editable === false ? { editable: false } : {}),
     ...(item.download ? { download: item.download } : {}),
+    ...(loadingPreview ? { loadingPreview } : {}),
   };
 }
 export function buildSearchIndex(

@@ -1,6 +1,18 @@
 import { displayTitle } from '../lib/display-title.ts';
 import type { SearchCard } from '../lib/search-index';
-import { actionIconAssets } from '../lib/action-icons';
+import { actionIconAssets } from '../lib/action-icons.ts';
+import { boundLoadingPreview, type LoadingPreview } from '../lib/image-loading-preview.ts';
+
+export function bindSearchCardPreview(image: HTMLImageElement, preview?: LoadingPreview) {
+  const bound =
+    preview?.source === image.getAttribute('src')
+      ? boundLoadingPreview(preview.source, preview.url)
+      : undefined;
+  if (!bound) return false;
+  image.dataset.originalPlaceholder = bound.url;
+  image.dataset.originalPlaceholderFor = bound.source;
+  return true;
+}
 export function renderCard(item: SearchCard): HTMLElement {
   const article = document.createElement('article');
   article.className = 'art-card';
@@ -35,6 +47,8 @@ export function renderCard(item: SearchCard): HTMLElement {
   image.width = 400;
   image.height = 400;
   image.src = item.webp;
+  picture.setAttribute('aria-label', item.alt || item.title);
+  bindSearchCardPreview(image, item.loadingPreview);
   picture.append(image);
   const body = document.createElement('div');
   body.className = 'card-body';
