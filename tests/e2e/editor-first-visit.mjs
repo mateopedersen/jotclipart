@@ -1,13 +1,15 @@
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { readFile } from 'node:fs/promises';
-import { chromium } from '@playwright/test';
+import { chromium, webkit } from '@playwright/test';
 
 const origin = new URL(process.env.BASE_URL || 'http://127.0.0.1:4326').origin;
 const artwork = process.env.UC_EDIT_ID || 'airbus-aircraft-20261105-001';
 const editPath = '/edit/' + artwork + '/';
-const browser = await chromium.launch({
-  executablePath: process.env.UC_CHROME_EXECUTABLE || undefined,
+const engine = process.env.UC_BROWSER || 'chromium';
+assert.ok(engine === 'chromium' || engine === 'webkit');
+const browser = await (engine === 'chromium' ? chromium : webkit).launch({
+  executablePath: engine === 'chromium' ? process.env.UC_CHROME_EXECUTABLE : undefined,
 });
 
 try {
@@ -121,7 +123,7 @@ try {
         assert.equal(png.subarray(0, 8).toString('hex'), '89504e470d0a1a0a');
         assert.equal(png.readUInt32BE(16), expectedWidth);
         assert.deepEqual(errors, []);
-        console.log(JSON.stringify({ width, editPath, showcase, fitBefore, fitAfterOriginal, originalResponseCount, pngWidth: expectedWidth }));
+        console.log(JSON.stringify({ engine, width, editPath, showcase, fitBefore, fitAfterOriginal, originalResponseCount, pngWidth: expectedWidth }));
 
       } finally {
         resumeSource();
