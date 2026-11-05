@@ -15,14 +15,20 @@ background. Loading completion, a real error or element removal clears it.
 
 The small original-image loader has its own early head module entry so it does not wait
 for the heavier download/PDF tools before attaching image lifecycle handlers.
-The shared original-image loader enables backgrounds for visible images rather
-than starting all directory thumbnails at once. The first collection cover and
+The shared loader warms source-bound thumbnails near the viewport, in a window
+of at most eight requests. It observes the gallery card frame, whose dimensions
+remain available when offscreen child layout is skipped. It paints a successful
+thumbnail as a temporary CSS background. The first collection cover and
 the first subject/detail image can expose that background immediately. Preload
 up to three small files for the first collection cover, or one for the first
 individual subject/detail image. Critical original images receive eager/high priority where
-appropriate. Other originals retain lazy loading and the existing bounded
-recovery logic. Four scheduler promotions do not mean that the browser's native
-network layer can never initiate other lazy requests.
+appropriate. An early, hash-allowed startup script lets eligible gallery cards
+start their small thumbnails before competing for bandwidth with full originals.
+The original `img` stays in the HTML and becomes visible as the shared loader
+promotes it. An unavailable loader releases the startup hold. A failed thumbnail
+also releases its hold through the original scheduler, preserving bounded
+recovery and the same R2 URL. Browsers can still initiate native requests for
+images that are outside this gallery policy or were already requested.
 
 JavaScript-disabled pages disable the temporary background and retain their
 original images. Failed thumbnails cannot block the original. SVG detail pages

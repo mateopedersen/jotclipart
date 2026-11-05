@@ -1,5 +1,6 @@
 import { createHash } from 'node:crypto';
 import { siteNavigationScript } from '../../../src/lib/site-navigation-inline.mjs';
+import { galleryImageStartupScript } from '../../../src/lib/gallery-image-startup.mjs';
 // Only the exact repository-owned navigation controller. Existing cookie/legacy
 // hashes and all non-script policy directives stay intact.
 export function bindSiteNavigationPolicy(page) {
@@ -21,5 +22,19 @@ export function bindSiteNavigationPolicy(page) {
     'Content-Security-Policy': match[1].split(/\s+/).includes(hash)
       ? csp
       : csp.replace(/(\bscript-src\s+[^;]+)/, '$1 ' + hash),
+  };
+}
+
+export function bindGalleryImageStartupPolicy(page) {
+  const csp = page['Content-Security-Policy'];
+  const match = /(?:^|;\s*)script-src\s+([^;]+)/.exec(csp ?? '');
+  if (!match || !match[1].includes("'self'") || match[1].includes("'unsafe-inline'"))
+    throw Error('Exact gallery image startup policy required');
+  const token = "'sha256-" + createHash('sha256').update(galleryImageStartupScript).digest('base64') + "'";
+  return {
+    ...page,
+    'Content-Security-Policy': match[1].split(/\s+/).includes(token)
+      ? csp
+      : csp.replace(/(\bscript-src\s+[^;]+)/, '$1 ' + token),
   };
 }

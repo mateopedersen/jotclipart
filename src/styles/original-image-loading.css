@@ -2,11 +2,37 @@
   position: relative;
 }
 /* This background is temporary. The real img, schema and file links stay original. */
-img[data-original-preview='pending'] {
+img[data-original-preview='pending'],
+:root .art-card > .art-picture[data-card-loading-preview] {
   background-image: var(--original-loading-preview);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+:root[data-gallery-image-startup]
+  .art-card
+  > .art-picture
+  > img[loading='lazy'][data-original-placeholder],
+:root[data-original-image-loading='ready']
+  .art-card
+  > .art-picture
+  > img[data-original-request-held] {
+  display: none;
+}
+.art-picture[data-card-loading-preview] > img[data-original-preview='pending'] {
+  background-image: none;
+}
+@media print {
+  :root[data-gallery-image-startup]
+    .art-card
+    > .art-picture
+    > img[loading='lazy'][data-original-placeholder],
+  :root[data-original-image-loading='ready']
+    .art-card
+    > .art-picture
+    > img[data-original-request-held] {
+    display: block;
+  }
 }
 .art-picture > img[data-original-image-state='error'] {
   opacity: 0;

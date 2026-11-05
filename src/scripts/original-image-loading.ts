@@ -4,7 +4,7 @@ export function initOriginalImageLoading(
   timing: { retryDelays?: number[]; stallMs?: number } = {},
 ) {
   const marker = root.documentElement;
-  if (marker.dataset.originalImageLoading === 'ready') return;
+  if (marker.dataset.originalImageLoading) return;
   const delays = timing.retryDelays ?? [800, 2400];
   const stallMs = timing.stallMs ?? 45000;
   if (
@@ -15,12 +15,17 @@ export function initOriginalImageLoading(
     stallMs > 60000
   )
     throw Error('Bounded image recovery required');
-  marker.dataset.originalImageLoading = 'ready';
+  marker.dataset.originalImageLoading = 'initializing';
   type State = {
     image: HTMLImageElement;
     source: string;
     preferred: boolean;
     preview: string;
+    previewState: 'idle' | 'loading' | 'ready' | 'failed';
+    target: Element;
+    frame?: HTMLElement;
+    previewObjectURL?: string;
+    cancelPreview?: (defer?: boolean) => void;
     retries: number;
     near: boolean;
     visible: boolean;
@@ -35,8 +40,15 @@ export function initOriginalImageLoading(
     onError: () => void;
   };
   const states = new WeakMap<HTMLImageElement, State>();
+  const targets = new WeakMap<Element, State>();
   const queue = new Set<State>(),
     active = new Set<State>();
+  const previewQueue = new Set<State>(),
+    activePreviews = new Set<State>();
+  const rank = (a: State, b: State) =>
+    Number(b.visible) - Number(a.visible) ||
+    Number(b.preferred) - Number(a.preferred) ||
+    Math.abs(a.top) - Math.abs(b.top);
   const valid = (image: HTMLImageElement) => {
     try {
       const url = new URL(image.getAttribute('src') ?? '', location.href);
@@ -64,29 +76,112 @@ export function initOriginalImageLoading(
     }
   };
   const clearPreview = (image: HTMLImageElement) => {
+    const state = states.get(image);
+    const frame = state?.frame;
+    if (state?.previewObjectURL) {
+      URL.revokeObjectURL(state.previewObjectURL);
+      state.previewObjectURL = undefined;
+    }
+    frame?.removeAttribute('data-card-loading-preview');
+    frame?.style.removeProperty('--original-loading-preview');
     delete image.dataset.originalPreview;
     image.style.removeProperty('--original-loading-preview');
   };
   const paintPreview = (s: State) => {
     if (
       !s.preview ||
-      !s.near ||
-      !s.visible ||
+      s.previewState !== 'ready' ||
       valid(s.image) !== s.source ||
       s.image.dataset.originalImageState === 'error' ||
       (s.image.complete && s.image.naturalWidth > 0)
     )
       return;
-    s.image.style.setProperty(
+    (s.frame ?? s.image).style.setProperty(
       '--original-loading-preview',
-      'url(' + JSON.stringify(s.preview) + ')',
+      'url(' + JSON.stringify(s.previewObjectURL ?? s.preview) + ')',
     );
+    if (s.frame) s.frame.dataset.cardLoadingPreview = '';
     s.image.dataset.originalPreview = 'pending';
   };
   const inView = (s: State) => {
-    const r = s.image.getBoundingClientRect();
-    return r.width > 0 && r.height > 0 && r.bottom > 0 && r.top < innerHeight && r.right > 0 && r.left < innerWidth;
+    const r = s.target.getBoundingClientRect();
+    return (
+      r.width > 0 &&
+      r.height > 0 &&
+      r.bottom > 0 &&
+      r.top < innerHeight &&
+      r.right > 0 &&
+      r.left < innerWidth
+    );
   };
+  function pumpPreviews() {
+    if (root.hidden || !navigator.onLine) return;
+    const candidates = [...previewQueue].sort(rank);
+    if (activePreviews.size >= 8 && candidates.some((s) => s.visible)) {
+      // A jump down the page should not sit behind previews for the old row.
+      for (const s of activePreviews) if (!s.visible) s.cancelPreview?.(true);
+    }
+    for (const s of candidates) {
+      if (activePreviews.size >= 8) break;
+      if (!s.visible && activePreviews.size >= 2) continue;
+      previewQueue.delete(s);
+      if (
+        !s.near ||
+        s.previewState !== 'idle' ||
+        !s.image.isConnected ||
+        states.get(s.image) !== s ||
+        (s.image.complete && s.image.naturalWidth > 0)
+      )
+        continue;
+      s.previewState = 'loading';
+      activePreviews.add(s);
+      const controller = new AbortController();
+      let deferred = false;
+      // The native lazy loader may already have queued many large originals.
+      // Give nearby small images their own bounded, higher priority window.
+      function finish(blob?: Blob, useDirectBackground = false) {
+        if (s.previewState !== 'loading') return;
+        clearTimeout(timeout);
+        s.cancelPreview = undefined;
+        activePreviews.delete(s);
+        s.previewState =
+          blob || useDirectBackground
+            ? 'ready'
+            : deferred || (controller.signal.aborted && !s.near && !s.visible)
+              ? 'idle'
+              : 'failed';
+        if (
+          s.previewState === 'ready' &&
+          states.get(s.image) === s &&
+          s.image.dataset.originalImageState !== 'error' &&
+          !(s.image.complete && s.image.naturalWidth > 0)
+        ) {
+          if (blob) s.previewObjectURL = URL.createObjectURL(blob);
+          paintPreview(s);
+        }
+        if (deferred && s.near && states.get(s.image) === s) preparePreview(s);
+        pumpPreviews();
+        pump();
+      }
+      const timeout = setTimeout(() => controller.abort(), 5000);
+      s.cancelPreview = (defer = false) => {
+        deferred = defer;
+        controller.abort();
+      };
+      fetch(s.preview, { signal: controller.signal, credentials: 'omit', priority: 'high' })
+        .then(async (response) => {
+          if (!response.ok || !/^image\//.test(response.headers.get('content-type') ?? ''))
+            return finish();
+          const blob = await response.blob();
+          finish(blob.size > 0 && blob.size <= 512 * 1024 ? blob : undefined);
+        })
+        .catch(() => finish(undefined, !controller.signal.aborted));
+    }
+  }
+  function preparePreview(s: State) {
+    if (s.preview && s.previewState === 'idle' && !s.image.dataset.originalPreview)
+      previewQueue.add(s);
+  }
   function status(s: State, value: string, text = '') {
     s.image.dataset.originalImageState = value;
     if (value === 'loaded' || value === 'error') clearPreview(s.image);
@@ -114,19 +209,29 @@ export function initOriginalImageLoading(
     // masquerade as another active high-priority slot after scrolling/rebalance.
     if (s.image.dataset.originalImageState === 'loading') status(s, 'pending');
   }
-  function loaded(s: State) {
+  function loaded(s: State, reschedule = true) {
     release(s);
+    s.cancelPreview?.();
+    delete s.image.dataset.originalRequestHeld;
     queue.delete(s);
-    observer?.unobserve(s.image);
-    viewportObserver?.unobserve(s.image);
+    previewQueue.delete(s);
+    observer?.unobserve(s.target);
+    viewportObserver?.unobserve(s.target);
     if (s.retry) clearTimeout(s.retry);
     s.retry = undefined;
     s.retryReady = false;
     status(s, 'loaded');
-    pump();
+    if (reschedule) pump();
   }
   function scheduleRetry(s: State) {
-    if (s.retry || s.retries >= delays.length || !navigator.onLine || !s.visible || !inView(s) || root.hidden)
+    if (
+      s.retry ||
+      s.retries >= delays.length ||
+      !navigator.onLine ||
+      !s.visible ||
+      !inView(s) ||
+      root.hidden
+    )
       return;
     const delay = delays[s.retries++];
     s.retry = setTimeout(() => {
@@ -141,8 +246,8 @@ export function initOriginalImageLoading(
     release(s);
     if (!s.image.isConnected || valid(s.image) !== s.source) return;
     s.retryReady = false;
-    observer?.observe(s.image);
-    viewportObserver?.observe(s.image);
+    observer?.observe(s.target);
+    viewportObserver?.observe(s.target);
     status(
       s,
       'error',
@@ -178,29 +283,43 @@ export function initOriginalImageLoading(
   }
   function pump() {
     if (root.hidden || !navigator.onLine) return;
-    const rank = (a: State, b: State) => Number(b.visible) - Number(a.visible) || Number(b.preferred) - Number(a.preferred) || a.top - b.top;
-    const candidates = [...new Set([...queue, ...active])].filter(s => s.visible && s.image.isConnected && valid(s.image) === s.source &&
-      !s.retry && !(s.image.complete && s.image.naturalWidth > 0) && (s.image.dataset.originalImageState !== 'error' || s.retryReady)).sort(rank);
+    const readyToPromote = (s: State) =>
+      !s.preview ||
+      s.preferred ||
+      s.previewState === 'ready' ||
+      s.previewState === 'failed' ||
+      Boolean(s.image.dataset.originalPreview) ||
+      s.image.dataset.originalImageState === 'error';
+    const candidates = [...new Set([...queue, ...active])]
+      .filter(
+        (s) =>
+          s.visible &&
+          s.image.isConnected &&
+          valid(s.image) === s.source &&
+          readyToPromote(s) &&
+          !s.retry &&
+          !(s.image.complete && s.image.naturalWidth > 0) &&
+          (s.image.dataset.originalImageState !== 'error' || s.retryReady),
+      )
+      .sort(rank);
     const desired = new Set(candidates.slice(0, 2));
-    for (const s of [...active]) if (!desired.has(s)) {
-      release(s); s.image.fetchPriority = 'auto'; queue.add(s);
-    }
-    for (const s of [...queue].sort(
-      (a, b) => Number(b.visible) - Number(a.visible) || Number(b.preferred) - Number(a.preferred) || a.top - b.top,
-    )) {
+    for (const s of [...active])
+      if (!desired.has(s)) {
+        release(s);
+        s.image.fetchPriority = s.preview ? 'low' : 'auto';
+        queue.add(s);
+      }
+    for (const s of [...queue].sort(rank)) {
       if (active.size >= 2) break;
       if (!s.image.isConnected || valid(s.image) !== s.source) {
         queue.delete(s);
         release(s);
         continue;
       }
-      if (s.retry || s.active || !s.visible) continue;
+      if (s.retry || s.active || !s.visible || !readyToPromote(s)) continue;
       const failed = s.image.dataset.originalImageState === 'error';
       if (!failed && s.image.complete && s.image.naturalWidth > 0) {
-        queue.delete(s);
-        observer?.unobserve(s.image);
-    viewportObserver?.unobserve(s.image);
-        status(s, 'loaded');
+        loaded(s, false);
         continue;
       }
       if (failed && !s.retryReady) {
@@ -216,6 +335,7 @@ export function initOriginalImageLoading(
       s.active = true;
       active.add(s);
       s.image.fetchPriority = s.visible ? 'high' : 'auto';
+      delete s.image.dataset.originalRequestHeld;
       s.image.loading = 'eager';
       status(s, 'loading');
       paintPreview(s);
@@ -236,46 +356,98 @@ export function initOriginalImageLoading(
       } else watch(s);
     }
   }
-  const viewportObserver = typeof IntersectionObserver === 'undefined' ? undefined : new IntersectionObserver(entries => {
-    for (const entry of entries) {
-      const s = states.get(entry.target as HTMLImageElement);
-      if (!s) continue;
-      const r = entry.boundingClientRect;
-      s.visible = entry.isIntersecting && entry.intersectionRect.width > 0 && entry.intersectionRect.height > 0;
-      s.top = r.top;
-      if (s.visible) { s.near = true; queue.add(s); }
-      if (s.active && !s.visible) { release(s); if (s.near) queue.add(s); }
-      if (!s.active && !s.image.complete) {
-        const overlapsViewport = r.width > 0 && r.height > 0 && r.bottom > 0 && r.top < innerHeight && r.right > 0 && r.left < innerWidth;
-        const horizontallyOffscreen = r.width > 0 && r.height > 0 && r.bottom > 0 && r.top < innerHeight && (r.right <= 0 || r.left >= innerWidth);
-        s.image.fetchPriority = horizontallyOffscreen || (overlapsViewport && !s.visible) ? 'low' : 'auto';
-      }
-      paintPreview(s);
-    }
-    pump();
-  }, { rootMargin: '0px' });
-  const observer = typeof IntersectionObserver === 'undefined' ? undefined : new IntersectionObserver(entries => {
-    for (const entry of entries) {
-      const s = states.get(entry.target as HTMLImageElement);
-      if (!s) continue;
-      s.near = entry.isIntersecting;
-      s.top = entry.boundingClientRect.top;
-      if (s.near) queue.add(s); else queue.delete(s);
-    }
-    pump();
-  }, { rootMargin: `${Math.min(600, Math.max(240, Math.round(innerHeight / 2)))}px 0px` });
+  const viewportObserver =
+    typeof IntersectionObserver === 'undefined'
+      ? undefined
+      : new IntersectionObserver(
+          (entries) => {
+            for (const entry of entries) {
+              const s = targets.get(entry.target);
+              if (!s) continue;
+              const r = entry.boundingClientRect;
+              s.visible =
+                entry.isIntersecting &&
+                entry.intersectionRect.width > 0 &&
+                entry.intersectionRect.height > 0;
+              s.top = r.top;
+              if (s.visible) {
+                s.near = true;
+                queue.add(s);
+                preparePreview(s);
+              }
+              if (s.active && !s.visible) {
+                release(s);
+                s.image.fetchPriority = s.preview ? 'low' : 'auto';
+                if (s.near) queue.add(s);
+              }
+              if (!s.active && !s.image.complete) {
+                const overlapsViewport =
+                  r.width > 0 &&
+                  r.height > 0 &&
+                  r.bottom > 0 &&
+                  r.top < innerHeight &&
+                  r.right > 0 &&
+                  r.left < innerWidth;
+                const horizontallyOffscreen =
+                  r.width > 0 &&
+                  r.height > 0 &&
+                  r.bottom > 0 &&
+                  r.top < innerHeight &&
+                  (r.right <= 0 || r.left >= innerWidth);
+                s.image.fetchPriority =
+                  s.preview || horizontallyOffscreen || (overlapsViewport && !s.visible)
+                    ? 'low'
+                    : 'auto';
+              }
+              paintPreview(s);
+            }
+            pumpPreviews();
+            pump();
+          },
+          { rootMargin: '0px' },
+        );
+  const observer =
+    typeof IntersectionObserver === 'undefined'
+      ? undefined
+      : new IntersectionObserver(
+          (entries) => {
+            for (const entry of entries) {
+              const s = targets.get(entry.target);
+              if (!s) continue;
+              s.near = entry.isIntersecting;
+              s.top = entry.boundingClientRect.top;
+              const r = entry.boundingClientRect;
+              if (s.near && r.width > 0 && r.height > 0 && r.right > 0 && r.left < innerWidth) {
+                queue.add(s);
+                preparePreview(s);
+              } else {
+                queue.delete(s);
+                previewQueue.delete(s);
+                if (!s.visible) s.cancelPreview?.();
+              }
+            }
+            pumpPreviews();
+            pump();
+          },
+          { rootMargin: `${Math.min(800, Math.max(320, Math.round(innerHeight * 0.75)))}px 0px` },
+        );
   function remove(image: HTMLImageElement) {
     const s = states.get(image);
     if (!s) return;
+    s.cancelPreview?.();
     release(s);
     queue.delete(s);
     if (s.retry) clearTimeout(s.retry);
     image.removeEventListener('load', s.onLoad);
     image.removeEventListener('error', s.onError);
-    observer?.unobserve(image);
-    viewportObserver?.unobserve(image);
+    previewQueue.delete(s);
+    observer?.unobserve(s.target);
+    viewportObserver?.unobserve(s.target);
+    targets.delete(s.target);
     s.note?.remove();
     clearPreview(image);
+    delete image.dataset.originalRequestHeld;
+    delete image.dataset.originalImageState;
     states.delete(image);
   }
   function register(image: HTMLImageElement) {
@@ -287,11 +459,24 @@ export function initOriginalImageLoading(
     if (previous) remove(image);
     if (!source) return;
     if (!preview) clearPreview(image);
+    const frame = image.parentElement;
+    // Card frames have stable geometry even when content-visibility skips the
+    // image inside them. Observe that frame before its children are laid out.
+    const cardFrame =
+      frame?.matches('.art-picture') &&
+      frame.querySelector('img') === image &&
+      frame.querySelectorAll('img').length === 1
+        ? frame
+        : undefined;
+    const target = cardFrame ?? image;
     const s: State = {
       image,
       source,
       preferred: image.getAttribute('fetchpriority') === 'high',
       preview,
+      previewState: 'idle',
+      target,
+      frame: cardFrame,
       retries: 0,
       near: false,
       visible: false,
@@ -310,6 +495,7 @@ export function initOriginalImageLoading(
       },
     };
     states.set(image, s);
+    targets.set(target, s);
     image.addEventListener('load', s.onLoad);
     image.addEventListener('error', s.onError);
     if (image.complete && image.naturalWidth > 0) status(s, 'loaded');
@@ -319,12 +505,18 @@ export function initOriginalImageLoading(
       if (!observer) {
         s.visible = inView(s);
         s.near = s.visible;
-        s.top = image.getBoundingClientRect().top;
+        s.top = target.getBoundingClientRect().top;
       }
       if (image.complete) status(s, 'error');
-      if (s.visible) queue.add(s);
-      observer?.observe(image);
-      viewportObserver?.observe(image);
+      if (preview && !s.preferred) image.fetchPriority = 'low';
+      if (cardFrame && preview && image.loading === 'lazy' && viewportObserver && !image.complete)
+        image.dataset.originalRequestHeld = '';
+      if (s.visible) {
+        queue.add(s);
+        preparePreview(s);
+      }
+      observer?.observe(target);
+      viewportObserver?.observe(target);
     }
   }
   const images = (node: Node) =>
@@ -350,34 +542,43 @@ export function initOriginalImageLoading(
   });
   const resume = () => {
     for (const s of new Set([...queue, ...active])) {
-      const r = s.image.getBoundingClientRect();
+      const r = s.target.getBoundingClientRect();
       s.top = r.top;
-      if (!viewportObserver) { s.visible = inView(s); s.near = s.visible; }
+      if (!viewportObserver) {
+        s.visible = inView(s);
+        s.near = s.visible;
+        if (s.visible) preparePreview(s);
+      }
       if (s.active && !s.visible) {
         release(s);
-        s.image.fetchPriority = 'auto';
+        s.image.fetchPriority = s.preview ? 'low' : 'auto';
         if (s.near) queue.add(s);
         else queue.delete(s);
       }
       if (s.active) s.image.fetchPriority = s.visible ? 'high' : 'auto';
     }
+    pumpPreviews();
     pump();
   };
   let scrollFrame = 0;
-  window.addEventListener(
-    'scroll',
-    () => {
-      if (!scrollFrame)
-        scrollFrame = requestAnimationFrame(() => {
-          scrollFrame = 0;
-          resume();
-        });
-    },
-    { passive: true },
-  );
+  if (!viewportObserver)
+    window.addEventListener(
+      'scroll',
+      () => {
+        if (!scrollFrame)
+          scrollFrame = requestAnimationFrame(() => {
+            scrollFrame = 0;
+            resume();
+          });
+      },
+      { passive: true },
+    );
   window.addEventListener('resize', resume);
   window.addEventListener('online', resume);
   root.addEventListener('visibilitychange', resume);
   window.addEventListener('pageshow', resume);
+  marker.dataset.originalImageLoading = 'ready';
+  delete marker.dataset.galleryImageStartup;
+  pumpPreviews();
   pump();
 }

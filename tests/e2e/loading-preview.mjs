@@ -2,10 +2,11 @@
 import { build } from 'esbuild';
 import sharp from 'sharp';
 import { createServer } from 'node:http';
-import { chromium, expect } from '@playwright/test';
+import { chromium, webkit, expect } from '@playwright/test';
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 import assert from 'node:assert/strict';
+import { galleryImageStartupScript } from '../../src/lib/gallery-image-startup.mjs';
 const out = resolve(process.env.UC_COLLECTION_REPORT ?? 'reports/loading-preview');
 mkdirSync(out, { recursive: true });
 const compiled = await build({
@@ -34,22 +35,30 @@ const server = createServer((req, res) => {
     return res.end(compiled.outputFiles[0].text);
   }
   const offscreen = req.url === '/offscreen',
+    near = req.url === '/near',
+    missingModule = req.url === '/missing-module',
     pending = req.url === '/nojs';
   res.setHeader('Content-Type', 'text/html');
   res.end(
-    `<!doctype html><html><head><style>${css}</style><noscript><style>img[data-original-preview]{background-image:none!important}</style></noscript></head><body><div style="height:${offscreen ? 5000 : 0}px"></div><a class="art-picture" href="/art/fixture/"><img width="180" height="180" alt="Explicit synthetic fixture" src="${originalURL}" loading="lazy" data-original-placeholder="${thumbURL}" data-original-placeholder-for="${originalURL}" ${pending ? `data-original-preview="pending" style='--original-loading-preview:url("${thumbURL}")'` : ''}></a><script type="module" src="/loader.js"></script></body></html>`,
+    `<!doctype html><html><head><script>${galleryImageStartupScript}</script><style>${css}.art-picture{display:block;content-visibility:auto;width:180px;height:180px}</style><noscript><style>img[data-original-preview]{background-image:none!important}</style></noscript></head><body><div style="height:${offscreen ? 5000 : near ? 1050 : 0}px"></div><article class="art-card"><a class="art-picture" href="/art/fixture/" aria-label="Explicit synthetic fixture"><img width="180" height="180" alt="Explicit synthetic fixture" src="${originalURL}" loading="lazy" data-original-placeholder="${thumbURL}" data-original-placeholder-for="${originalURL}" ${pending ? `data-original-preview="pending" style='--original-loading-preview:url("${thumbURL}")'` : ''}></a></article>${missingModule ? '' : '<script type="module" src="/loader.js"></script>'}</body></html>`,
   );
 });
 await new Promise((r) => server.listen(0, '127.0.0.1', r));
-const browser = await chromium.launch({
-  executablePath:
-    process.env.UC_CHROME_PATH ?? '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-  headless: true,
-});
+const engine = process.env.UC_TEST_ENGINE === 'webkit' ? 'webkit' : 'chromium';
+const browser =
+  engine === 'webkit'
+    ? await webkit.launch()
+    : await chromium.launch({
+        executablePath:
+          process.env.UC_CHROME_PATH ??
+          '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+        headless: true,
+      });
 const report = {
   scope:
     'Synthetic network gates verify progressive CSS display, original-source invariants, stale binding, offscreen behavior and JavaScript-disabled fallback; not a live CDN measurement.',
   status: 'RUNNING',
+  engine,
   cases: [],
 };
 try {
@@ -57,8 +66,10 @@ try {
     'gated-original',
     'failed-placeholder',
     'changed-source',
+    'near',
     'offscreen',
     'nojs',
+    'missing-module',
   ]) {
     const context = await browser.newContext({
         viewport: { width: 390, height: 844 },
@@ -76,11 +87,12 @@ try {
           thumbnails++;
           return route.fulfill({
             status: scenario === 'failed-placeholder' ? 503 : 200,
-            contentType: 'image/webp',
-            body: blue,
+            headers: { 'access-control-allow-origin': '*' },
+            contentType: scenario === 'failed-placeholder' ? 'text/plain' : 'image/webp',
+            body: scenario === 'failed-placeholder' ? 'Unavailable' : blue,
           });
         }
-        if (scenario !== 'nojs')
+        if (scenario !== 'nojs' && scenario !== 'missing-module')
           await (route.request().url().includes('replacement') ? replacement : gate);
         try {
           await route.fulfill({ status: 200, contentType: 'image/webp', body: red });
@@ -88,16 +100,17 @@ try {
           /* A source change may cancel the deliberately held old request. */
         }
       });
-      await page.goto(
-        'http://127.0.0.1:' +
-          server.address().port +
-          '/' +
-          (scenario === 'offscreen' ? 'offscreen' : scenario === 'nojs' ? 'nojs' : ''),
-        { waitUntil: 'domcontentloaded' },
-      );
+      await page.goto('http://127.0.0.1:' + server.address().port + '/' + scenario, {
+        waitUntil: 'domcontentloaded',
+      });
       const image = page.locator('.art-picture img');
-      if (scenario === 'nojs') {
-        await expect.poll(() => image.evaluate((i) => i.complete && i.naturalWidth > 0)).toBe(true);
+      const frame = page.locator('.art-picture');
+      if (scenario === 'nojs' || scenario === 'missing-module') {
+        await expect
+          .poll(() => image.evaluate((i) => i.complete && i.naturalWidth > 0), {
+            timeout: 8000,
+          })
+          .toBe(true);
         assert.equal(await image.evaluate((i) => getComputedStyle(i).backgroundImage), 'none');
         assert.equal(thumbnails, 0);
       } else {
@@ -105,12 +118,23 @@ try {
         if (scenario === 'offscreen') {
           await page.waitForTimeout(150);
           assert.equal(thumbnails, 0);
-          await image.scrollIntoViewIfNeeded();
+          await frame.scrollIntoViewIfNeeded();
         }
-        await expect(image).toHaveAttribute('data-original-preview', 'pending');
+        if (scenario === 'near') {
+          await expect.poll(() => thumbnails).toBe(1);
+          assert(await frame.evaluate((i) => i.getBoundingClientRect().top > innerHeight));
+          assert.equal(await image.getAttribute('loading'), 'lazy');
+          await frame.scrollIntoViewIfNeeded();
+        }
+        if (scenario === 'failed-placeholder') {
+          await expect(image).not.toHaveAttribute('data-original-preview');
+        } else {
+          await expect(image).toHaveAttribute('data-original-preview', 'pending');
+        }
         await expect.poll(() => thumbnails).toBe(1);
         assert(
-          (await image.evaluate((i) => getComputedStyle(i).backgroundImage)).includes(thumbURL),
+          (await frame.evaluate((i) => getComputedStyle(i).backgroundImage)).includes('blob:') ===
+            (scenario !== 'failed-placeholder'),
         );
         assert.equal(await image.getAttribute('src'), originalURL);
         assert.equal(await image.getAttribute('srcset'), null);
@@ -123,6 +147,7 @@ try {
         await expect(image).toHaveAttribute('data-original-image-state', 'loaded');
         await expect(image).not.toHaveAttribute('data-original-preview');
         assert.equal(await image.evaluate((i) => getComputedStyle(i).backgroundImage), 'none');
+        assert.equal(await frame.evaluate((i) => getComputedStyle(i).backgroundImage), 'none');
         if (scenario === 'changed-source') {
           await image.evaluate(
             (i) => (i.src = 'https://assets.ultraclipart.com/explicit-fixture/replacement.webp'),

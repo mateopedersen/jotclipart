@@ -19,6 +19,7 @@ import { structuredData } from '../lib/structured-data';
 import { pageGraph } from '../lib/page-seo';
 import { pageSocialImage } from '../lib/social-images';
 import { siteNavigationScript } from '../lib/site-navigation-inline.mjs';
+import { galleryImageStartupScript } from '../lib/gallery-image-startup.mjs';
 import { cookieStartupScript } from '../../scripts/cookie-startup.mjs';
 import '../styles/image-information.css';
 // These styles belong to the page, even before the sharing module is requested.
@@ -123,6 +124,7 @@ const releaseRevision = /^[a-f0-9]{40}$/.test(import.meta.env.PUBLIC_RELEASE_REV
 <html lang="en-US">
   <head>
     <meta charset="UTF-8" />
+    <script is:inline set:html={galleryImageStartupScript}></script>
     <link rel="preconnect" href="https://assets.ultraclipart.com" />
     <script>
       import { initOriginalImageLoading } from '../scripts/original-image-loading';
