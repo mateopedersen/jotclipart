@@ -341,7 +341,7 @@ export function createCatalogHandler({
           }
           }
           if (html !== undefined) {
-            html = preloadDocumentModules(html, softwareRevision, renderers.moduleImports);
+            html = preloadDocumentModules(html, softwareRevision, renderers.moduleImports, renderers.nonBlockingModules);
             if (publicNavigationDocument(path))
               html = html.replace(
                 '</head>',

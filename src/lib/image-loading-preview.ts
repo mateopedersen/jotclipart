@@ -6,7 +6,7 @@ type ImageSource = {
 
 export type LoadingPreview = { source: string; url: string };
 
-/** A temporary CSS background, never an img src/srcset, download or ImageObject. */
+/** A thumbnail bound to the original by catalog checksums. */
 export function imageLoadingPreview(item: ImageSource, source = item.webp) {
   if (
     source !== item.webp ||

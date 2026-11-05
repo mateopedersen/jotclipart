@@ -51,6 +51,10 @@ export function surpriseWarmImages(html: string, path: string, origin = location
     }
   }
   if (!bound) return [];
+  const display = image?.hasAttribute('data-full-resolution')
+    ? asset(image.getAttribute('srcset'), origin)
+    : undefined;
+  if (display && display !== original) return [display];
   const thumbnail =
     image?.getAttribute('data-original-placeholder-for') === original
       ? asset(image.getAttribute('data-original-placeholder'), origin)

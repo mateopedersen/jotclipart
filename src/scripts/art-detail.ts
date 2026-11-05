@@ -3,6 +3,23 @@ import { FAVORITES_KEY, parseFavoriteIds, toggleStoredFavorite } from '../lib/fa
 export function initArtDetail() {
   const preview = document.querySelector<HTMLElement>('#art-preview');
   if (preview) {
+    const image = preview.querySelector<HTMLImageElement>('img[data-full-resolution]');
+    if (image) {
+      const loadOriginal = () => {
+        const source = image.getAttribute('src');
+        if (!source || !image.hasAttribute('srcset')) return;
+        const original = new Image();
+        original.fetchPriority = 'low';
+        original.src = source;
+        // Keep the display candidate in place until the full image is decoded.
+        void original.decode().then(() => {
+          if (image.isConnected && image.getAttribute('src') === source)
+            image.removeAttribute('srcset');
+        }).catch(() => {});
+      };
+      if (document.readyState === 'complete') loadOriginal();
+      else window.addEventListener('load', loadOriginal, { once: true });
+    }
     const buttons = document.querySelectorAll<HTMLButtonElement>('.art-preview-controls [data-bg]');
     const custom = document.querySelector<HTMLElement>('.art-custom-color');
     const applyCustom = custom?.querySelector<HTMLButtonElement>('[data-apply-custom]');

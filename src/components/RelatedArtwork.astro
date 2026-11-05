@@ -136,6 +136,8 @@ const companionLabel = snapshot.companions.length ? 'Matching fruit' : 'Companio
   </div>
 </section>
 <script>
+  import { afterDocument } from '../scripts/after-document';
   import { initRelatedArtwork } from '../scripts/related-artwork';
-  initRelatedArtwork();
+
+  afterDocument(initRelatedArtwork);
 </script>

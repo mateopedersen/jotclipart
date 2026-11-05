@@ -19,6 +19,7 @@ import { structuredData } from '../lib/structured-data';
 import { pageGraph } from '../lib/page-seo';
 import { pageSocialImage } from '../lib/social-images';
 import { siteNavigationScript } from '../lib/site-navigation-inline.mjs';
+import SiteDiscovery from '../components/SiteDiscovery.astro';
 import { galleryImageStartupScript } from '../lib/gallery-image-startup.mjs';
 import { cookieStartupScript } from '../../scripts/cookie-startup.mjs';
 import '../styles/image-information.css';
@@ -130,12 +131,7 @@ const releaseRevision = /^[a-f0-9]{40}$/.test(import.meta.env.PUBLIC_RELEASE_REV
       import { initOriginalImageLoading } from '../scripts/original-image-loading';
       initOriginalImageLoading();
     </script>
-    <script>
-      import { initNavigationWarmth } from '../scripts/navigation-warmth';
-      initNavigationWarmth();
-      import { initCuteSurprise } from '../scripts/cute-surprise';
-      initCuteSurprise();
-    </script>
+    <SiteDiscovery />
     <script is:inline set:html={cookieStartupScript} />
     {preloadInterfaceFont && (
       <link

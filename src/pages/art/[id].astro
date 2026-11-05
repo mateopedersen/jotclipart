@@ -1,6 +1,6 @@
 ---
 import { displayTitle } from '../../lib/display-title';
-import { imageLoadingPreview, loadingPreviewStyle } from '../../lib/image-loading-preview';
+import { imageLoadingPreview } from '../../lib/image-loading-preview';
 import { imageObject } from '../../lib/image-schema';
 import { downloadDetails } from '../../lib/download-data';
 import { structuredData, breadcrumbs } from '../../lib/structured-data';
@@ -53,7 +53,6 @@ const downloadRecord = {
     {loadingPreview && (
       <link rel="preload" as="image" href={loadingPreview.url} fetchpriority="high" />
     )}
-    {!item.layered && <link rel="preload" as="image" href={originalImage} fetchpriority="high" />}
     {item.published && item.indexable && (
       <script
         type="application/ld+json"
@@ -96,10 +95,9 @@ const downloadRecord = {
           height={item.height}
           fetchpriority="high"
           decoding="async"
-          data-original-placeholder={loadingPreview?.url}
-          data-original-placeholder-for={loadingPreview?.source}
-          data-original-preview={loadingPreview ? 'pending' : undefined}
-          style={loadingPreviewStyle(loadingPreview)}
+          srcset={loadingPreview?.url}
+          data-catalog-thumbnail={loadingPreview ? '' : undefined}
+          data-full-resolution={loadingPreview ? '' : undefined}
         />
       </a>
       <fieldset class="swatches art-preview-controls">

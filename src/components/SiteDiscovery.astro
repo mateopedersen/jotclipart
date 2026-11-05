@@ -1,0 +1,10 @@
+<script>
+  import { afterDocument } from '../scripts/after-document';
+  import { initNavigationWarmth } from '../scripts/navigation-warmth';
+  import { initCuteSurprise } from '../scripts/cute-surprise';
+
+  afterDocument(() => {
+    initNavigationWarmth();
+    initCuteSurprise();
+  });
+</script>

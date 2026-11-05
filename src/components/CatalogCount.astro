@@ -19,5 +19,10 @@ const value = catalogCountValue(catalogStatistics, kind, countKey);
 >{formatCatalogCount(value, unit)}</span>
 
 <script>
-  import '../scripts/catalog-counts';
+  import { afterDocument } from '../scripts/after-document';
+  afterDocument(() => {
+    void import('../scripts/catalog-counts').catch(() => {
+      // The complete server-rendered counts remain available.
+    });
+  });
 </script>
