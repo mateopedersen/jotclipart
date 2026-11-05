@@ -7,6 +7,26 @@ Opening sentences must differ even after replacing the current topic name.
 `verifyCollectionOpenings` rejects exact and subject-substituted duplicates across
 the registry; this is a publication gate, not an automatic writing approval.
 
+## Search and visitor copy
+
+Name the subject as people look for it, such as Tupolev aircraft clipart or
+sunflower clipart. Use model names, common names and alternate terms only where
+the reviewed inventory supports them. A clear description of a representative
+drawing is more useful than a list of terms. Use the count and the second
+paragraph to explain choices visitors can make for a relevant project, lesson
+or personal design. Keep the examples and sentence structure specific to the
+gallery. Write in American English and leave editor notes, identification
+decisions, file format instructions and licensing details to their own records
+and pages. Distinguish a depicted concept from a released product.
+
+New or rewritten topic copy passes the visitor copy checks in the content
+publisher in addition to the source and signature checks. In a prose-only
+snapshot update, the publisher can replay a committed registry in
+`data/catalog-prose/` against the signed predecessor. This covers collections
+already published through data-only imports as well as older topics. The
+registry proves what copy changed, and the exact prior inventory proves the
+scope of the edit.
+
 Visible introductions and concise summaries use natural phrases without hyphens
 or dash punctuation. Write “blue and gold” and “black and white”; numeric ranges
 retain their meaning as “1970 to 1979”. Never change slugs, IDs, original file
