@@ -1,3 +1,24 @@
+## Fill the existing bounded read window, 2026-11-05
+
+The operator now dispatches another already pending metadata batch while there
+is room in its declared four-request window. Previously an initial queue with
+several bounded batches could wait for the first response before dispatching
+the next, despite available slots. This is client dispatch only: installed site
+software, renderers, source reviews, canonical records and media are unchanged.
+
+Four concurrent requests, sixteen keys and the existing estimated three-million
+byte bound per batch remain enforced. Fresh exact authorization, complete
+root/cardinality/byte/hash validation, duplicate coalescing, transient retry limits,
+the 8,192-object / 64 MiB disk cache, scoped native/replay admission suppression,
+mutable pointer rules, single writer and atomic activation remain unchanged.
+
+Focused tests cover both hinted and unknown-size queues, an additional wave
+while all slots are occupied, out-of-order responses and corruption refusal.
+A controlled fixed-latency fixture fills four slots with identical requests and
+returned bytes; this is not an end-to-end production speed percentage. Measure
+actual authorized content runs separately. No website deployment is required for
+this local operator correction; preserve its committed source and KEEP backup.
+
 ## Known display spelling and replay cache protection, 2026-11-05
 
 Public copy uses JPMorgan Chase, USB, VR and 100th for the four explicitly

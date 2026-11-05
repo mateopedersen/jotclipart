@@ -52,6 +52,13 @@ export function remoteCatalogBucket({
     active++;
     for (const [, r] of batch) r.started = true;
     if (!batch.length) return;
+    // Fill the already declared four-request window when an initial pending
+    // queue contains more than one bounded batch. Previously the next batch
+    // waited for this request to finish even while capacity was available.
+    if (active < 4 && !queued && [...pending.values()].some((p) => !p.started)) {
+      queued = true;
+      queueMicrotask(flush);
+    }
     const keys = batch.map(([k]) => k);
     try {
       let response;
