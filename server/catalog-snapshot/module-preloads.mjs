@@ -1,4 +1,4 @@
-/** Preload essential entries and leave optional modules for the post-parse loader. */
+/** Preload essential entries and leave optional modules for the post-load loader. */
 export function preloadDocumentModules(html,revision,moduleImports={},nonBlockingModules=[]){
  if(!/^[a-f0-9]{40}$/.test(revision??''))throw Error('Exact installed source revision required');
  const prefix='/__ssr-client/'+revision+'/',seen=new Set();

@@ -1,6 +1,7 @@
 ---
 import type { art } from '../lib/catalog';
 import { artworkDetails, formatFileSize } from '../lib/artwork-details';
+import { imageLoadingPreview } from '../lib/image-loading-preview';
 import FileGuideIllustration from './FileGuideIllustration.astro';
 import '../styles/artwork-facts.css';
 interface Props {
@@ -9,6 +10,7 @@ interface Props {
 }
 const { item, layers } = Astro.props;
 const facts = artworkDetails(item);
+const guidePreview = imageLoadingPreview(item)?.url ?? item.thumb;
 ---
 
 <section class="artwork-facts" aria-labelledby="artwork-facts-title">
@@ -22,7 +24,7 @@ const facts = artworkDetails(item);
   <div class="artwork-facts-grid">
     <article class="file-fact file-fact-image">
       <div class="file-fact-top">
-        <FileGuideIllustration kind="image" thumb={item.thumb} />
+        <FileGuideIllustration kind="image" thumb={guidePreview} />
         <span class="file-fact-format">Image</span>
       </div>
       <h3>Ready for your screen</h3>
@@ -63,7 +65,7 @@ const facts = artworkDetails(item);
     {item.pdf && (
       <article class="file-fact file-fact-print">
         <div class="file-fact-top">
-          <FileGuideIllustration kind="print" thumb={item.thumb} />
+          <FileGuideIllustration kind="print" thumb={guidePreview} />
           <span class="file-fact-format">PDF</span>
         </div>
         <h3>Made for the page</h3>
@@ -109,7 +111,7 @@ const facts = artworkDetails(item);
     )}
     <article class="file-fact file-fact-edit">
       <div class="file-fact-top">
-        <FileGuideIllustration kind="edit" thumb={item.thumb} />
+        <FileGuideIllustration kind="edit" thumb={guidePreview} />
         <span class="file-fact-format">Studio</span>
       </div>
       <h3>Edit This Illustration</h3>
@@ -133,7 +135,7 @@ const facts = artworkDetails(item);
     </article>
     <article class="file-fact file-fact-license">
       <div class="file-fact-top">
-        <FileGuideIllustration kind="license" thumb={item.thumb} />
+        <FileGuideIllustration kind="license" thumb={guidePreview} />
         <span class="file-fact-format">Use</span>
       </div>
       <h3>Create with confidence</h3>

@@ -9,10 +9,11 @@ export const siteNavigationScript = String.raw`(() => {
       }
     }
   };
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", loadOptionalModules, { once: true });
+  const scheduleOptionalModules = () => setTimeout(loadOptionalModules, 0);
+  if (document.readyState === "complete") {
+    scheduleOptionalModules();
   } else {
-    loadOptionalModules();
+    window.addEventListener("load", scheduleOptionalModules, { once: true });
   }
   const header = document.querySelector("[data-site-header]");
   if (header && header.dataset.navigationReady !== "true") {
