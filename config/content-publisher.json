@@ -5,17 +5,17 @@
   "script": "scripts/catalog-snapshot/publish-content.mjs",
   "capsuleRoot": "data/catalog-batches",
   "software": {
-    "revision": "37c16e0b4167c43b757a6d7b6c9e76af533c4698",
-    "abiSHA256": "7a31b6adde06441e0a71dae79a734ea14a058194c8ca55b4b175316109b398c3",
-    "workerSHA256": "d5567eaace37209e05a37d688d3a3911ccfbdfaa22bcfc54a44c8b82bfd90ee9",
-    "directory": "work/edit-cold-staged-20261105"
+    "revision": "cb0a96dc7d83c86593c9a1a1e046f3f2ac9c7f31",
+    "abiSHA256": "4b9904e4cc9de398d7cfb43e5c1ab39a65493fa269de5e4f391f6212e9487961",
+    "workerSHA256": "9b170d0d8701bf014e225d112f34daf4fa9e44e66ec22858f90d5bf1aa338ac7",
+    "directory": "work/collections-startup-rebound-20261106"
   },
   "publicConfig": "config/content-publisher-public.json",
   "lastVerifiedData": {
-    "revision": "05d0e04c4b2d5b6f016f76f58da2dd1abdcc9407",
-    "root": "2d722186dd6a2cbdfabe73cad58bf0bf58724894d5e40d5dd6f40899ec64db5e",
-    "artworks": 41108,
-    "topics": 716
+    "revision": "cb0a96dc7d83c86593c9a1a1e046f3f2ac9c7f31",
+    "root": "22a57c42231da9b293509fd0442181f9605037c2afe5e80113845b902108ea4e",
+    "artworks": 41308,
+    "topics": 718
   },
   "limits": {
     "changedArtworksPerPacket": 256,
@@ -25,7 +25,7 @@
     "accountInventoryRequired": false,
     "fullCatalogBuildForContent": false
   },
-  "proof": "work/recent-artwork-ready-20261105/result.json",
+  "proof": "work/collections-startup-rebound-20261106/result.json",
   "loadTests": "work/catalog-snapshot/load-tests/two-run-report.json",
   "protectedIndependentBackup": "/Users/melihozcan/Documents/UltraClipart-Publisher-KEEP",
   "measurementsScope": "Two private real-media transport + composition + native campaigns, approved unique sources reused. Fresh image review/repair/public verification remains separate; <=60 minutes is a measured technical target, not a universal guarantee.",
