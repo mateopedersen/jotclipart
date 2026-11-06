@@ -1,4 +1,5 @@
 ---
+import { catalogThumbnailAttributes } from '../lib/image-loading-preview';
 import Layout from '../layouts/Layout.astro';
 import CatalogCount from '../components/CatalogCount.astro';
 import AboutSymbol from '../components/TeacherSymbol.astro';
@@ -147,8 +148,8 @@ const process = [
               <span class="about-picture">
                 <img
                   title={example.image.title}
-                  src={example.image.thumb}
-                  srcset={example.image.thumbSrcSet}
+                  src={example.image.webp}
+                  {...catalogThumbnailAttributes(example.image)}
                   sizes="(max-width: 540px) 45vw, (max-width: 1000px) 30vw, 240px"
                   alt={example.image.alt}
                   width={400}

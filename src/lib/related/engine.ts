@@ -2,6 +2,7 @@ import { artworkCardSummary, CARD_SUMMARY_VERSION } from './summaries';
 import { normalize, safeAsset, type ArtworkInput, type Profile } from './normalize';
 import { companionSubjects, REGISTERED_TOPICS, TAXONOMY_VERSION, words } from './taxonomy';
 import { CLASSIFIER_VERSION } from './normalize';
+import { imageLoadingPreview } from '../image-loading-preview';
 export const ALGORITHM_VERSION = 'uc-related-6';
 export const CANDIDATE_LIMIT = 240;
 export const BUCKET_LIMIT = 96;
@@ -14,6 +15,7 @@ export interface RelatedCard {
   alt: string;
   thumb: string;
   thumbSrcSet?: string;
+  loadingThumbnail?: string;
   webp: string;
   pdf?: string;
   href: string;
@@ -54,8 +56,8 @@ const snapshotEncoder = new TextEncoder();
 
 /**
  * Keep the embedded browser payload below the per-script limit while preserving
- * the server-rendered first row and highest-ranked recommendations. Thumbnail
- * fields are unnecessary after hydration: cards load their full image URL.
+ * the server-rendered first row and highest-ranked recommendations. Keep the
+ * verified small candidate used by cards that are added after scrolling.
  */
 export function compactBrowserSnapshot(snapshot: Snapshot): BrowserSnapshot {
   const compact = (items: RelatedCard[]) =>
@@ -214,12 +216,14 @@ function card(result: Ranked, group: RelatedCard['group']): RelatedCard {
   const p = result.profile,
     item = p.item;
   const reason = artworkCardSummary(item);
+  const preview = item.webp && imageLoadingPreview({ ...item, webp: item.webp });
   return {
     id: item.id,
     title: item.title,
     alt: item.alt || item.title,
     thumb: item.thumb!,
     ...(item.thumbSrcSet ? { thumbSrcSet: item.thumbSrcSet } : {}),
+    ...(preview ? { loadingThumbnail: preview.url } : {}),
     webp: item.webp!,
     ...(safeAsset(item.pdf) && item.files?.pdf?.bytes && item.files.pdf.sha256
       ? { pdf: item.pdf }

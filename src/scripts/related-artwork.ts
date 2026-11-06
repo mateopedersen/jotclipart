@@ -1,4 +1,5 @@
 import { displayTitle } from '../lib/display-title.ts';
+import { boundLoadingPreview } from '../lib/image-loading-preview.ts';
 import { FAVORITES_KEY, parseFavoriteIds, toggleStoredFavorite } from '../lib/favorites-storage';
 import type { BrowserRelatedCard, BrowserSnapshot, Mode } from '../lib/related/engine';
 export function initRelatedArtwork() {
@@ -155,8 +156,17 @@ export function initRelatedArtwork() {
   }
   function watch(card: HTMLElement) {
     const img = card.querySelector('img')!;
-    img.addEventListener('error', () => imageError(card), { once: true });
-    if (img.complete && img.naturalWidth === 0) imageError(card);
+    const handleError = () => {
+      if (img.currentSrc && img.currentSrc !== img.src) {
+        img.removeAttribute('srcset');
+        delete img.dataset.catalogThumbnail;
+        return;
+      }
+      img.removeEventListener('error', handleError);
+      imageError(card);
+    };
+    img.addEventListener('error', handleError);
+    if (img.complete && img.currentSrc && img.naturalWidth === 0) handleError();
     observer?.observe(card);
   }
   function createCard(data: BrowserRelatedCard) {
@@ -173,6 +183,12 @@ export function initRelatedArtwork() {
     const image = node.querySelector('img')!;
     image.removeAttribute('srcset');
     image.removeAttribute('sizes');
+    delete image.dataset.catalogThumbnail;
+    const preview = boundLoadingPreview(data.webp, data.loadingThumbnail);
+    if (preview) {
+      image.srcset = preview.url;
+      image.dataset.catalogThumbnail = '';
+    }
     image.src = data.webp;
     image.alt = data.alt;
     image.title = displayTitle(data.title);

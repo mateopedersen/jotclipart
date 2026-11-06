@@ -34,7 +34,7 @@ export function loadLegacySearchPreviews(
     const image = element.querySelector<HTMLImageElement>('.art-picture > img');
     if (
       !image ||
-      image.dataset.originalPlaceholder ||
+      image.hasAttribute('data-catalog-thumbnail') ||
       !item.download?.files.webp ||
       !publicLoadingImageURL(item.webp)
     )

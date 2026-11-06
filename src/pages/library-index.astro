@@ -1,4 +1,5 @@
 ---
+import { catalogThumbnailAttributes } from '../lib/image-loading-preview';
 import { displayTitle } from '../lib/display-title';
 import Layout from '../layouts/Layout.astro';
 import CatalogCount from '../components/CatalogCount.astro';
@@ -117,8 +118,8 @@ const information = [
         {highlights.map((image) => (
           <div>
             <img
-              src={image.thumb}
-              srcset={image.thumbSrcSet}
+              src={image.webp}
+              {...catalogThumbnailAttributes(image)}
               sizes="(max-width: 540px) 25vw, 240px"
               alt={image.alt}
               title={displayTitle(image.title)}
@@ -208,8 +209,8 @@ const information = [
             <li>
               <a href={`/art/${item.id}/`} data-index-artwork>
                 <img
-                  src={item.thumb}
-                  srcset={item.thumbSrcSet}
+                  src={item.webp}
+                  {...catalogThumbnailAttributes(item)}
                   sizes="88px"
                   alt={item.alt}
                   title={displayTitle(item.title)}

@@ -1,4 +1,5 @@
 ---
+import { catalogThumbnailAttributes } from '../lib/image-loading-preview';
 import { publishedArt as art } from '../lib/catalog';
 import CatalogCount from './CatalogCount.astro';
 import collectionCopy from '../../data/collection-copy.json';
@@ -43,8 +44,8 @@ const subjects = [
         <span class="hsg-picture">
           <img
             title={subject.image.title}
-            src={subject.image.thumb}
-            srcset={subject.image.thumbSrcSet}
+            src={subject.image.webp}
+            {...catalogThumbnailAttributes(subject.image)}
             sizes="(max-width: 540px) 45vw, (max-width: 1000px) 30vw, 240px"
             alt={subject.image.alt}
             width={subject.image.width}

@@ -1,4 +1,5 @@
 ---
+import { catalogThumbnailAttributes } from '../lib/image-loading-preview';
 import { displayTitle } from '../lib/display-title';
 import ContentLink from '../components/ContentLink.astro';
 import Layout from '../layouts/Layout.astro';
@@ -84,8 +85,8 @@ const checklist = [
             >
               <img
                 title={displayTitle(item.title)}
-                src={item.thumb}
-                srcset={item.thumbSrcSet}
+                src={item.webp}
+                {...catalogThumbnailAttributes(item)}
                 sizes="(max-width: 540px) 45vw, (max-width: 1000px) 30vw, 240px"
                 alt={item.alt}
                 width={item.width}
@@ -299,8 +300,8 @@ const checklist = [
                     <a href={`/art/${item.id}/`}>
                       <img
                         title={displayTitle(item.title)}
-                        src={item.thumb}
-                        srcset={item.thumbSrcSet}
+                        src={item.webp}
+                        {...catalogThumbnailAttributes(item)}
                         sizes="(max-width: 540px) 45vw, (max-width: 1000px) 30vw, 240px"
                         alt={item.alt}
                         width={item.width}
@@ -363,8 +364,8 @@ const checklist = [
               <div class="tc-observe-row">
                 <img
                   title={pictures.earth.title}
-                  src={pictures.earth.thumb}
-                  srcset={pictures.earth.thumbSrcSet}
+                  src={pictures.earth.webp}
+                  {...catalogThumbnailAttributes(pictures.earth)}
                   sizes="(max-width: 540px) 45vw, (max-width: 1000px) 30vw, 240px"
                   alt={pictures.earth.alt}
                   width={pictures.earth.width}
@@ -396,8 +397,8 @@ const checklist = [
             <div class="tc-label-example">
               <img
                 title={pictures.reading.title}
-                src={pictures.reading.thumb}
-                srcset={pictures.reading.thumbSrcSet}
+                src={pictures.reading.webp}
+                {...catalogThumbnailAttributes(pictures.reading)}
                 sizes="(max-width: 540px) 45vw, (max-width: 1000px) 30vw, 240px"
                 alt={pictures.reading.alt}
                 width={pictures.reading.width}
@@ -430,8 +431,8 @@ const checklist = [
               </div>
               <img
                 title={pictures.trumpet.title}
-                src={pictures.trumpet.thumb}
-                srcset={pictures.trumpet.thumbSrcSet}
+                src={pictures.trumpet.webp}
+                {...catalogThumbnailAttributes(pictures.trumpet)}
                 sizes="(max-width: 540px) 45vw, (max-width: 1000px) 30vw, 240px"
                 alt={pictures.trumpet.alt}
                 width={pictures.trumpet.width}
@@ -476,8 +477,8 @@ const checklist = [
             <div class="tc-collection-picture">
               <img
                 title={collection.picture.title}
-                src={collection.picture.thumb}
-                srcset={collection.picture.thumbSrcSet}
+                src={collection.picture.webp}
+                {...catalogThumbnailAttributes(collection.picture)}
                 sizes="(max-width: 540px) 45vw, (max-width: 1000px) 30vw, 240px"
                 alt={collection.picture.alt}
                 width={collection.picture.width}

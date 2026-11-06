@@ -1,5 +1,6 @@
 import { SearchRepository } from '../lib/search-remote';
 import type { SearchCard } from '../lib/search-index';
+import { bindSearchCardPreview } from './search-card';
 const input = document.querySelector<HTMLInputElement>('#topic-filter')!;
 const group = document.querySelector<HTMLInputElement>('#category-group')!;
 const sort = document.querySelector<HTMLSelectElement>('#category-sort')!;
@@ -40,6 +41,7 @@ function loadSamples(targets: HTMLLIElement[]) {
       image.title = item.title; image.alt = item.alt;
       image.width = 240; image.height = 190; image.loading = 'lazy';
       image.decoding = 'async'; image.fetchPriority = 'low'; image.src = url.href;
+      bindSearchCardPreview(image, item.loadingPreview);
       card.querySelector('.subject-art')!.replaceChildren(image);
     }
   });

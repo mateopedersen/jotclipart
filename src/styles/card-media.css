@@ -25,6 +25,11 @@
   padding: 0;
   overflow: hidden;
 }
+/* Native lazy loading can see the small candidate before the row is on screen.
+   Hiding the image subtree as well can make WebKit wait until after scrolling. */
+:is(.art-picture, .hsg-picture, .related-picture):has(> img[data-catalog-thumbnail]) {
+  content-visibility: visible;
+}
 :is(.art-card, .hsg-subject, .related-card)
   > :is(.art-picture, .hsg-picture, .related-picture)
   > img {
