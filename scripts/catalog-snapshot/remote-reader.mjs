@@ -2,6 +2,19 @@
 import { createHmac } from 'node:crypto';
 import { setTimeout as backoff } from 'node:timers/promises';
 import { sha256 } from './stage-manifest.mjs';
+const transientBodyTransportCodes = new Set([
+  'UND_ERR_SOCKET',
+  'UND_ERR_BODY_TIMEOUT',
+  'UND_ERR_HEADERS_TIMEOUT',
+  'UND_ERR_CONNECT_TIMEOUT',
+  'ECONNRESET',
+  'EPIPE',
+  'ETIMEDOUT',
+]);
+function isTransientBodyTransportError(error) {
+  const code = error?.cause?.code ?? error?.code;
+  return error instanceof TypeError && transientBodyTransportCodes.has(code);
+}
 export function remoteCatalogBucket({
   endpoint = 'http://127.0.0.1:8899/read',
   secret,
@@ -61,7 +74,7 @@ export function remoteCatalogBucket({
     }
     const keys = batch.map(([k]) => k);
     try {
-      let response;
+      let response, result;
       // Only idempotent pinned reads retry transient transport failures. Every
       // attempt receives fresh authority for the same exact parent and keys.
       // Stale parents, authorization and corrupt returned bytes fail closed.
@@ -96,9 +109,17 @@ export function remoteCatalogBucket({
           continue;
         }
         if (!response.ok) throw Error('Pinned catalog read HTTP ' + response.status);
-        break;
+        try {
+          // Include body consumption in the retry boundary. A remote preview can
+          // close a streamed JSON response after headers without rejecting fetch().
+          result = await response.json();
+          break;
+        } catch (error) {
+          if (!isTransientBodyTransportError(error) || attempt === 2) throw error;
+          await response.body?.cancel().catch(() => {});
+          await backoff(200 * 2 ** attempt);
+        }
       }
-      const result = await response.json();
       if (
         result.parentSnapshotSHA256 !== parentSnapshotSHA256 ||
         !Array.isArray(result.objects) ||

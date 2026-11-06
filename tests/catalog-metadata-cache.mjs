@@ -156,6 +156,66 @@ test('transient pinned reads retry only three times with fresh exact signed scop
   assert(commands[2].at > commands[0].at);
 });
 
+test('interrupted response bodies retry as fresh pinned reads without retrying corrupt JSON', async () => {
+  const source = record(13),
+    secret = 'a'.repeat(64),
+    root = 'b'.repeat(64),
+    commands = [];
+  const bucket = remoteCatalogBucket({
+    secret,
+    parentSnapshotSHA256: root,
+    accountId: 'c'.repeat(32),
+    bucket: 'private-test',
+    fetcher: async (_, options) => {
+      const { command, signature } = JSON.parse(options.body);
+      commands.push(command);
+      assert.equal(
+        signature,
+        createHmac('sha256', Buffer.from(secret, 'hex')).update(JSON.stringify(command)).digest('hex'),
+      );
+      assert(Date.now() - command.at < 45000);
+      if (commands.length === 1)
+        return {
+          ok: true,
+          status: 200,
+          body: { cancel: async () => {} },
+          json: async () => {
+            throw new TypeError('terminated', { cause: { code: 'UND_ERR_SOCKET' } });
+          },
+        };
+      return Response.json({
+        parentSnapshotSHA256: root,
+        objects: [
+          {
+            key: source.key,
+            body: source.b.toString('base64'),
+            bytes: source.b.length,
+            sha256: sha(source.b),
+            etag: 'exact',
+          },
+        ],
+      });
+    },
+  });
+  assert.deepEqual(Buffer.from(await (await bucket.get(source.key)).arrayBuffer()), source.b);
+  assert.equal(commands.length, 2);
+  assert(commands[1].at > commands[0].at);
+
+  let corruptCalls = 0;
+  const corrupt = remoteCatalogBucket({
+    secret,
+    parentSnapshotSHA256: root,
+    accountId: 'c'.repeat(32),
+    bucket: 'private-test',
+    fetcher: async () => {
+      corruptCalls++;
+      return new Response('{bad json', { status: 200 });
+    },
+  });
+  await assert.rejects(() => corrupt.get(source.key));
+  assert.equal(corruptCalls, 1);
+});
+
 test('parent conflicts and corrupt successful responses never retry', async () => {
   for (const status of [409, 200]) {
     let calls = 0;
