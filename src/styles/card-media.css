@@ -56,9 +56,7 @@
 :is(
   .home-sample,
   .home-category-picture,
-  .seasonal-scene,
-  .creative-studio-scene,
-  .benefit-visual
+  .creative-studio-scene
 ) {
   content-visibility: auto;
 }
