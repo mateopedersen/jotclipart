@@ -17,6 +17,15 @@ export function imageLoadingPreview(item: ImageSource, source = item.webp) {
   return boundLoadingPreview(source, item.originalThumb);
 }
 
+/** For small catalog surfaces. Keep the original in src and file actions. */
+export function catalogThumbnailAttributes(item: ImageSource & { thumbSrcSet?: string }) {
+  const preview = imageLoadingPreview(item);
+  return {
+    srcset: preview?.url ?? item.thumbSrcSet,
+    'data-catalog-thumbnail': preview ? '' : undefined,
+  };
+}
+
 export function boundLoadingPreview(
   source: string,
   thumbnailURL: string | undefined,

@@ -2,6 +2,7 @@
 import EditorialIllustration from './EditorialIllustration.astro';
 import TeacherSymbol from './TeacherSymbol.astro';
 import { publishedArt } from '../lib/catalog';
+import { catalogThumbnailAttributes } from '../lib/image-loading-preview';
 import { trustContact, trustReviewed, type TrustPage } from '../lib/trust-pages';
 import '../styles/editorial-process.css';
 
@@ -60,8 +61,8 @@ const reviewed = new Intl.DateTimeFormat('en', {
       <div class="ep-paper ep-example-sheet">
         <span class="ep-sheet-rule" aria-hidden="true"></span>
         <img
-          src={example.thumb}
-          srcset={example.previewSrcSet}
+          src={example.webp}
+          {...catalogThumbnailAttributes(example)}
           sizes="(max-width: 760px) 250px, 300px"
           alt={example.alt}
           title={example.title}

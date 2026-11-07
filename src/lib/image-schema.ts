@@ -23,6 +23,7 @@ type ImageOptions = {
   height?: number | null;
   primary?: boolean;
   context?: boolean;
+  directory?: boolean;
 };
 export const absoluteImageUrl = (value: string) => new URL(value, IMAGE_SITE).href;
 export const artworkImageId = (id: string) =>
@@ -37,12 +38,14 @@ export function imageObject(item: CatalogImage, options: ImageOptions = {}) {
     '@type': 'ImageObject',
     '@id': originalImage ? artworkImageId(item.id) : `${contentUrl}#image`,
     name: displayTitle(item.title),
-    description: item.description,
+    ...(!options.directory ? { description: item.description } : {}),
     caption: item.alt,
     contentUrl,
-    url: new URL(`art/${encodeURIComponent(item.id)}/`, IMAGE_SITE).href,
-    thumbnailUrl: absoluteImageUrl(options.thumbnailUrl ?? item.thumb),
-    encodingFormat: /\.svg(?:$|[?#])/i.test(contentUrl) ? 'image/svg+xml' : 'image/webp',
+    ...(!options.directory ? {
+      url: new URL(`art/${encodeURIComponent(item.id)}/`, IMAGE_SITE).href,
+      thumbnailUrl: absoluteImageUrl(options.thumbnailUrl ?? item.thumb),
+      encodingFormat: /\.svg(?:$|[?#])/i.test(contentUrl) ? 'image/svg+xml' : 'image/webp',
+    } : {}),
     ...(options.width === null ? {} : { width: options.width ?? item.width }),
     ...(options.height === null ? {} : { height: options.height ?? item.height }),
     creator: {

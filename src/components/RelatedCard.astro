@@ -18,6 +18,8 @@ const { card } = Astro.props;
     <img
       title={displayTitle(card.title)}
       src={card.webp}
+      srcset={card.loadingThumbnail ?? card.thumbSrcSet}
+      data-catalog-thumbnail={card.loadingThumbnail ? '' : undefined}
       alt={card.alt}
       width="400"
       height="400"

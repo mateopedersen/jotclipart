@@ -81,14 +81,21 @@ const seasons = await Promise.all(
     images: await Promise.all(s.images.map(async (id) => {
       const item = art.find((a) => a.id === id);
       if (!item) throw new Error(`Missing seasonal artwork: ${id}`);
-      if (item.files?.webp?.sha256 === sourceHashes[id]?.originalSHA256 && previewAssets[id]) {
-        return { item, ...await uiPreview(previewAssets[id]) };
-      }
       const currentPreview = imageLoadingPreview(item);
+      if (item.files?.webp?.sha256 === sourceHashes[id]?.originalSHA256 && previewAssets[id]) {
+        const local = await uiPreview(previewAssets[id]);
+        return {
+          item,
+          src: currentPreview?.url ?? local.src,
+          srcset: local.srcset,
+          fallback: Boolean(currentPreview),
+        };
+      }
       return {
         item,
-        src: currentPreview?.url ?? item.thumb,
-        srcset: currentPreview ? undefined : item.thumbSrcSet,
+        src: currentPreview?.url ?? item.webp,
+        srcset: undefined,
+        fallback: false,
       };
     })),
   })),
@@ -111,20 +118,22 @@ const seasons = await Promise.all(
         class={`seasonal-card seasonal-${season.tone}`}
         href={`/collection/${slugify(season.cluster)}/`}
       >
-        <div class="seasonal-scene" aria-hidden="true">
+        <div class="seasonal-scene" data-home-preview-scene aria-hidden="true">
           <span class="seasonal-orbit"></span>
           <span class="seasonal-platform"></span>
-          {season.images.map(({ item, src, srcset }, i) => (
+          {season.images.map(({ item, src, srcset, fallback }, i) => (
             <img
               title={displayTitle(item.title)}
               class={`seasonal-object seasonal-object-${i}`}
               src={src}
               srcset={srcset}
+              data-catalog-thumbnail={fallback ? '' : undefined}
               sizes={i === 0 ? '(max-width: 359px) 100px, (max-width: 600px) 125px, (max-width: 1050px) 195px, 180px' : '(max-width: 600px) 85px, 105px'}
               alt={item.alt}
               width="240"
               height="240"
               loading="lazy"
+              fetchpriority="low"
               decoding="async"
             />
           ))}

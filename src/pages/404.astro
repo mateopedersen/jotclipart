@@ -1,4 +1,5 @@
 ---
+import { catalogThumbnailAttributes } from '../lib/image-loading-preview';
 import Layout from '../layouts/Layout.astro';
 import scene from '../../data/not-found-visual.json';
 import TeacherSymbol from '../components/TeacherSymbol.astro';
@@ -171,8 +172,8 @@ const routes = [
           <a class="nf-subject" href={subject.href}>
             <span class="nf-subject-picture">
               <img
-                src={subject.image.thumb}
-                srcset={subject.image.thumbSrcSet}
+                src={subject.image.webp}
+                {...catalogThumbnailAttributes(subject.image)}
                 sizes="(max-width: 600px) 90px, 120px"
                 alt={subject.image.alt}
                 title={subject.image.title}

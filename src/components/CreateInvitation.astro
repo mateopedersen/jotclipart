@@ -1,4 +1,5 @@
 ---
+import { catalogThumbnailAttributes } from '../lib/image-loading-preview';
 import { art } from '../lib/catalog';
 import NavigationArrow from './NavigationArrow.astro';
 import StudioMark from './StudioMark.astro';
@@ -26,8 +27,8 @@ const apple = art.find((item) => item.id === 'apple-and-wedge-watercolor-clipart
           <img
             title={apple.title}
             class="creative-paper-apple"
-            src={apple.thumb}
-            srcset={apple.thumbSrcSet}
+            src={apple.webp}
+            {...catalogThumbnailAttributes(apple)}
             sizes="(max-width: 540px) 45vw, (max-width: 1000px) 30vw, 240px"
             alt={apple.alt}
             width="220"
@@ -38,8 +39,8 @@ const apple = art.find((item) => item.id === 'apple-and-wedge-watercolor-clipart
           <img
             title={strawberry.title}
             class="creative-paper-berry"
-            src={strawberry.thumb}
-            srcset={strawberry.thumbSrcSet}
+            src={strawberry.webp}
+            {...catalogThumbnailAttributes(strawberry)}
             sizes="(max-width: 540px) 45vw, (max-width: 1000px) 30vw, 240px"
             alt={strawberry.alt}
             width="180"

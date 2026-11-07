@@ -1,4 +1,5 @@
 ---
+import { catalogThumbnailAttributes } from '../lib/image-loading-preview';
 import { publishedArt } from '../lib/catalog';
 import CatalogCount from './CatalogCount.astro';
 import { screenPreview } from '../lib/screen-preview';
@@ -133,8 +134,8 @@ const captures = await Promise.all(
               <div class="studio-lesson-artwork">
                 <img
                   title={artwork.title}
-                  src={artwork.thumb}
-                  srcset={artwork.thumbSrcSet}
+                  src={artwork.webp}
+                  {...catalogThumbnailAttributes(artwork)}
                   sizes="(max-width: 540px) 45vw, (max-width: 1000px) 30vw, 240px"
                   alt={artwork.alt}
                   width={artwork.width}

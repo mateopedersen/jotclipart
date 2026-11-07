@@ -31,6 +31,17 @@ for(const kind of ['art','editor','home','collection','shell']){const folder=joi
 // Studio's retained self-contained composition previews are versioned SVGs.
 const oldFull='work/delivery/ccb5c2c9804c863b00071ddb5f71df0d860857df/full-source';const shellContext=JSON.parse(readFileSync('work/imports/flags-next-20261102/dynamic-prototype/shell-ssr/context-export.json'));for(const item of shellContext.studioCompositionPreviews??[]){const url=typeof item==='string'?item:item.src??item.preview??item.thumb??item.url;if(!url||!url.endsWith('.svg'))continue;const file=join(oldFull,url),b=readFileSync(file);const filenameHash=/([a-f0-9]{16,64})\.svg$/.exec(url)?.[1];if(!filenameHash||!sha(b).startsWith(filenameHash)||sha(b)!==item.sha256||b.length!==item.bytes)throw Error('Unverified retained Studio preview');clientAssets.set(url,{url,file,sha256:sha(b),bytes:b.length})}
 const fontURL='/fonts/inter/inter-latin-wght-3100e775e861-cache-v2.woff2',fontFile=join(prior,'/fonts/inter/inter-latin-wght-3100e775e861.woff2'),fontBytes=readFileSync(fontFile),fontSHA=sha(fontBytes);if(fontSHA!=='3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62')throw Error('Retained interface font differs');softwareInputs.set(fontFile,fontSHA);clientAssets.set(fontURL,{url:fontURL,file:fontFile,bytes:fontBytes.length,sha256:fontSHA});
+const browse = JSON.parse(readFileSync(join(root, 'data/browse-library-visual.json')));
+if (!/^[a-f0-9]{64}$/.test(browse.sha256) ||
+    browse.url !== `/home-art/browse-library-${browse.sha256}.webp` ||
+    browse.pieces?.length !== 12 || browse.bytes > 65536)
+  throw Error('Invalid Browse visual manifest');
+const browseFile = join(root, 'public', browse.url);
+const browseBytes = readFileSync(browseFile);
+if (browseBytes.length !== browse.bytes || sha(browseBytes) !== browse.sha256)
+  throw Error('Browse visual bytes differ from the verified source');
+softwareInputs.set(browseFile, browse.sha256);
+clientAssets.set(browse.url, { url: browse.url, file: browseFile, bytes: browse.bytes, sha256: browse.sha256 });
 const shared=`${imports.join('\n')}\nconst renderers={art,editor,home,collection,shells,shellScripts,moduleImports:${JSON.stringify(moduleImports)},nonBlockingModules:${JSON.stringify([...nonBlockingModules])}};\n`,runtimeImport=`import{createSnapshotRuntime}from${JSON.stringify(join(root,'server/catalog-snapshot/runtime.mjs'))};`+`import{immutableSoftwareAssetResponse}from${JSON.stringify(join(root,'server/catalog-snapshot/software-assets.mjs'))};import{staticNavigationPolicy}from${JSON.stringify(join(root,'server/catalog-snapshot/static-navigation-policy.mjs'))};`,config=JSON.stringify({...cfg,publicKey:undefined});
 // The installed publisher reuses this checksum-bound Node bundle. No template
 // build or unbound worktree import is needed for later content transactions.

@@ -1,4 +1,5 @@
 ---
+import { catalogThumbnailAttributes } from '../lib/image-loading-preview';
 import { displayTitle } from '../lib/display-title';
 import relations from '../../data/topic-relations.json';
 import copy from '../../data/collection-copy.json';
@@ -39,8 +40,8 @@ const related = relatedCollectionSlugs(topic, relations, eligible).flatMap((slug
         <a class="related-collection-link" href={`/clipart/${subject.slug}/`}>
           <span class="related-collection-image">
             <img
-              src={image.thumb}
-              srcset={image.thumbSrcSet}
+              src={image.webp}
+              {...catalogThumbnailAttributes(image)}
               sizes="64px"
               alt={image.alt}
               title={displayTitle(image.title)}

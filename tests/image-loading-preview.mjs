@@ -1,18 +1,21 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { imageLoadingPreview, loadingPreviewStyle } from '../src/lib/image-loading-preview.ts';
+import { catalogThumbnailAttributes, imageLoadingPreview } from '../src/lib/image-loading-preview.ts';
 const item = {
   webp: 'https://assets.ultraclipart.com/subject/original.aaa.webp',
   originalThumb: 'https://assets.ultraclipart.com/subject/thumb.bbb.webp',
   files: { webp: { sha256: 'a'.repeat(64) }, thumb: { sha256: 'b'.repeat(64) } },
 };
-test('a source-bound temporary background keeps the original distinct from its thumbnail', () => {
+test('catalog cards select a verified thumbnail and preserve the original as a fallback', () => {
   assert.deepEqual(imageLoadingPreview(item), { source: item.webp, url: item.originalThumb });
-  assert.equal(
-    loadingPreviewStyle(imageLoadingPreview(item)),
-    '--original-loading-preview:url("' + item.originalThumb + '")',
-  );
-  assert.equal(loadingPreviewStyle(undefined), undefined);
+  assert.deepEqual(catalogThumbnailAttributes(item), {
+    srcset: item.originalThumb,
+    'data-catalog-thumbnail': '',
+  });
+  assert.deepEqual(catalogThumbnailAttributes({ ...item, files: undefined }), {
+    srcset: undefined,
+    'data-catalog-thumbnail': undefined,
+  });
 });
 test('missing proof, a different original, credentials and unrelated hosts cannot become a placeholder', () => {
   assert.equal(imageLoadingPreview(item, 'https://assets.ultraclipart.com/other.svg'), undefined);

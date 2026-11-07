@@ -1,6 +1,6 @@
 ---
 import { collectionPreview } from '../lib/collection-preview';
-import { imageLoadingPreview } from '../lib/image-loading-preview';
+import { catalogThumbnailAttributes } from '../lib/image-loading-preview';
 import CatalogCount from './CatalogCount.astro';
 import NavigationArrow from './NavigationArrow.astro';
 interface Props {
@@ -17,8 +17,8 @@ const examples = collectionPreview(topic, sourceId);
   <span class="collection-preview-images" style={`--preview-count: ${examples.length}`}>
     {examples.map((artwork) => (
       <img
-        src={artwork.thumb}
-        srcset={artwork.thumbSrcSet}
+        src={artwork.webp}
+        {...catalogThumbnailAttributes(artwork)}
         sizes="(max-width: 650px) 72px, 80px"
         alt={artwork.alt}
         title={artwork.title}
@@ -26,8 +26,6 @@ const examples = collectionPreview(topic, sourceId);
         height="100"
         loading="lazy"
         decoding="async"
-        data-original-placeholder={imageLoadingPreview(artwork)?.url}
-        data-original-placeholder-for={imageLoadingPreview(artwork)?.source}
         data-collection-preview-id={artwork.id}
       />
     ))}

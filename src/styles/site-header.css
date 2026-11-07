@@ -481,7 +481,7 @@
   border-top-color: #fff;
   background: linear-gradient(145deg, #fff, #fff3df);
 }
-.site-header .site-browse-preview-art img {
+.site-header .site-browse-preview-art :is(img, .site-browse-preview-piece) {
   position: absolute;
   inset: 4px;
   display: block;
@@ -491,6 +491,12 @@
   min-height: 0;
   object-fit: contain;
   filter: drop-shadow(0 3px 2px #31486a26);
+}
+.site-header .site-browse-preview-piece {
+  background-image: var(--browse-preview-image);
+  background-position: var(--cell-x) var(--cell-y);
+  background-size: 300% 400%;
+  background-repeat: no-repeat;
 }
 .site-header .site-browse-preview-action {
   display: flex;

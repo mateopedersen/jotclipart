@@ -9,8 +9,8 @@ export function bindSearchCardPreview(image: HTMLImageElement, preview?: Loading
       ? boundLoadingPreview(preview.source, preview.url)
       : undefined;
   if (!bound) return false;
-  image.dataset.originalPlaceholder = bound.url;
-  image.dataset.originalPlaceholderFor = bound.source;
+  image.srcset = bound.url;
+  image.dataset.catalogThumbnail = '';
   return true;
 }
 export function renderCard(item: SearchCard): HTMLElement {

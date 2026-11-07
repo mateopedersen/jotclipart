@@ -35,6 +35,7 @@ export interface ArtworkInput {
   sourceOriginalSha256?: string;
   pdfColorReview?: OwnerPdfColorDirection;
   thumb?: string;
+  originalThumb?: string;
   thumbSrcSet?: string;
   webp?: string;
   pdf?: string | null;

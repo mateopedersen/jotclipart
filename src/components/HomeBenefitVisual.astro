@@ -1,4 +1,5 @@
 ---
+import { catalogThumbnailAttributes } from '../lib/image-loading-preview';
 import { uiPreview } from '../lib/ui-preview';
 import uiImage0Source from '../../public/home-art/pineapple-print-preview.webp';
 const uiImage0 = await uiPreview(uiImage0Source);
@@ -15,14 +16,14 @@ const balloons = art.find((a) => a.id === 'heart-balloon-bouquet-watercolor-clip
 const pineapple = art.find((a) => a.id === 'pineapple-whole-and-cut-fruit-realistic-clipart')!;
 ---
 
-<div class={`benefit-visual benefit-visual-${kind}`} aria-hidden="true">
+<div class={`benefit-visual benefit-visual-${kind}`} data-home-preview-scene aria-hidden="true">
   {kind === 'license' && (
     <div class="benefit-greeting">
       <span>Thank You</span>
       <img
         title={balloons.title}
-        src={balloons.thumb}
-        srcset={balloons.thumbSrcSet}
+        src={balloons.webp}
+        {...catalogThumbnailAttributes(balloons)}
         sizes="(max-width: 540px) 45vw, (max-width: 1000px) 30vw, 240px"
         alt={balloons.alt}
         width="440"
@@ -38,8 +39,8 @@ const pineapple = art.find((a) => a.id === 'pineapple-whole-and-cut-fruit-realis
       <div class="benefit-image-file">
         <img
           title={pineapple.title}
-          src={pineapple.thumb}
-          srcset={pineapple.thumbSrcSet}
+          src={pineapple.webp}
+          {...catalogThumbnailAttributes(pineapple)}
           sizes="(max-width: 540px) 45vw, (max-width: 1000px) 30vw, 240px"
           alt={pineapple.alt}
           width="440"
@@ -51,8 +52,9 @@ const pineapple = art.find((a) => a.id === 'pineapple-whole-and-cut-fruit-realis
       </div>
       <div class="benefit-print-file">
         <img
-          src={uiImage0.src}
+          src="/home-art/pineapple-print-preview.webp"
           srcset={uiImage0.srcset}
+          data-catalog-thumbnail
           sizes="(max-width: 600px) 80vw, (max-width: 1000px) 40vw, 280px"
           alt=""
           width="440"
@@ -67,8 +69,9 @@ const pineapple = art.find((a) => a.id === 'pineapple-whole-and-cut-fruit-realis
   {kind === 'studio' && (
     <div class="benefit-real-workspace">
       <img
-        src={uiImage1.src}
+        src="/home-art/studio-real-workspace.webp"
         srcset={uiImage1.srcset}
+        data-catalog-thumbnail
         sizes="(max-width: 600px) 80vw, (max-width: 1000px) 40vw, 280px"
         alt=""
         width="1100"
@@ -82,8 +85,9 @@ const pineapple = art.find((a) => a.id === 'pineapple-whole-and-cut-fruit-realis
   {kind === 'privacy' && (
     <div class="benefit-saved-project">
       <img
-        src={uiImage2.src}
+        src="/home-art/kitchen-notes-project.webp"
         srcset={uiImage2.srcset}
+        data-catalog-thumbnail
         sizes="(max-width: 600px) 80vw, (max-width: 1000px) 40vw, 280px"
         alt=""
         width="1000"

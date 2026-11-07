@@ -164,7 +164,7 @@ const visibleArtwork = [
     type="application/ld+json"
     set:html={structuredData({
       '@context': 'https://schema.org',
-      '@graph': visibleArtwork.map((a) => imageObject(a)),
+      '@graph': visibleArtwork.map((a) => imageObject(a, { directory: true })),
     })}
   />
   <script>
