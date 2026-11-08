@@ -68,15 +68,19 @@ async function fixture() {
     };
   let value = structuredClone(parent),
     puts = 0,
+    gets = 0,
     collision = false;
   const bucket = {
-      get: async () => ({
-        size: JSON.stringify(value).length,
-        etag: rawHash(value),
-        httpMetadata: { contentType: 'application/json' },
-        json: async () => structuredClone(value),
-        arrayBuffer: async () => new TextEncoder().encode(JSON.stringify(value)).buffer,
-      }),
+      get: async () => {
+        gets++;
+        return {
+          size: JSON.stringify(value).length,
+          etag: rawHash(value),
+          httpMetadata: { contentType: 'application/json' },
+          json: async () => structuredClone(value),
+          arrayBuffer: async () => new TextEncoder().encode(JSON.stringify(value)).buffer,
+        };
+      },
       put: async (key, bytes, options) => {
         assert.equal(key, 'catalog/active.json');
         assert.equal(options.onlyIf.etagMatches, rawHash(value));
@@ -112,6 +116,7 @@ async function fixture() {
     bucket,
     request,
     puts: () => puts,
+    gets: () => gets,
     collision: () => (collision = true),
     changeParent: () => (value = make('d'.repeat(40), 'e'.repeat(40), 'f'.repeat(64))),
   };
@@ -124,6 +129,7 @@ test('content-only atomic activation preserves parent and rejects unauthenticate
   );
   assert.equal((await f.worker.fetch(f.request({}, true), { TARGET: f.bucket })).status, 403);
   assert.equal(f.puts(), 0);
+  assert.equal(f.gets(), 0);
   const r = await f.worker.fetch(f.request(), { TARGET: f.bucket });
   assert.equal(r.status, 200);
   assert.equal((await r.json()).status, 'VERIFIED_CONTENT_DELTA_POINTER_ACTIVE');
@@ -140,4 +146,137 @@ test('concurrent predecessor and failed conditional swap cannot report a success
   g.collision();
   assert.equal((await g.worker.fetch(g.request(), { TARGET: g.bucket })).status, 409);
   assert.equal(g.puts(), 1);
+});
+
+test('activation bounds actual streamed bytes with absent or understated Content-Length', async () => {
+  for (const declared of [undefined, '1', '4096']) {
+    const f = await fixture();
+    let pulls = 0;
+    let cancelled = 0;
+    const chunks = [new Uint8Array(1024), new Uint8Array(1024), new Uint8Array(2049)];
+    const stream = new ReadableStream(
+      {
+        pull(controller) {
+          assert.ok(pulls < chunks.length, 'must stop reading as soon as 4096 bytes are exceeded');
+          controller.enqueue(chunks[pulls++]);
+        },
+        cancel() {
+          cancelled++;
+        },
+      },
+      { highWaterMark: 0 },
+    );
+    const request = new Request('http://private.invalid/activate', {
+      method: 'POST',
+      body: stream,
+      duplex: 'half',
+      headers: declared === undefined ? {} : { 'Content-Length': declared },
+    });
+    const response = await f.worker.fetch(request, { TARGET: f.bucket });
+    assert.equal(response.status, 413);
+    assert.equal(pulls, 3);
+    assert.equal(cancelled, 1);
+    assert.equal(f.gets(), 0);
+    assert.equal(f.puts(), 0);
+  }
+});
+
+test('an oversized declared body is rejected and cancelled before it is read', async () => {
+  const f = await fixture();
+  let pulls = 0;
+  let cancelled = 0;
+  const stream = new ReadableStream(
+    {
+      pull() {
+        pulls++;
+        throw Error('declared oversize body must not be read');
+      },
+      cancel() {
+        cancelled++;
+      },
+    },
+    { highWaterMark: 0 },
+  );
+  const response = await f.worker.fetch(
+    new Request('http://private.invalid/activate', {
+      method: 'POST',
+      headers: { 'Content-Length': '4097' },
+      body: stream,
+      duplex: 'half',
+    }),
+    { TARGET: f.bucket },
+  );
+  assert.equal(response.status, 413);
+  assert.equal(pulls, 0);
+  assert.equal(cancelled, 1);
+  assert.equal(f.gets(), 0);
+  assert.equal(f.puts(), 0);
+});
+
+test('malformed JSON, null, array and scalar envelopes return 400 without touching R2', async () => {
+  for (const body of ['{', '', 'null', '[]', '1', '"text"']) {
+    const f = await fixture();
+    const response = await f.worker.fetch(
+      new Request('http://private.invalid/activate', {
+        method: 'POST',
+        body,
+      }),
+      { TARGET: f.bucket },
+    );
+    assert.equal(response.status, 400);
+    assert.equal(f.gets(), 0);
+    assert.equal(f.puts(), 0);
+  }
+});
+
+test('invalid command or signature cannot read or write the production pointer', async () => {
+  for (const command of [null, [], 'text', 1]) {
+    const f = await fixture();
+    const response = await f.worker.fetch(
+      new Request('http://private.invalid/activate', {
+        method: 'POST',
+        body: JSON.stringify({ command, signature: '0'.repeat(64) }),
+      }),
+      { TARGET: f.bucket },
+    );
+    assert.equal(response.status, 409);
+    assert.equal(f.gets(), 0);
+    assert.equal(f.puts(), 0);
+  }
+  for (const signature of ['', null, {}, ['0'.repeat(64)], '0'.repeat(64)]) {
+    const f = await fixture();
+    const body = await f.request().json();
+    body.signature = signature;
+    const response = await f.worker.fetch(
+      new Request('http://private.invalid/activate', {
+        method: 'POST',
+        body: JSON.stringify(body),
+      }),
+      { TARGET: f.bucket },
+    );
+    assert.equal(response.status, 403);
+    assert.equal(f.gets(), 0);
+    assert.equal(f.puts(), 0);
+  }
+});
+
+test('an exact 4096-byte valid envelope activates once and supports signed replay', async () => {
+  const f = await fixture();
+  const payload = await f.request().text();
+  const padded = payload + ' '.repeat(4096 - new TextEncoder().encode(payload).length);
+  assert.equal(new TextEncoder().encode(padded).length, 4096);
+  const response = await f.worker.fetch(
+    new Request('http://private.invalid/activate', {
+      method: 'POST',
+      body: padded,
+    }),
+    { TARGET: f.bucket },
+  );
+  assert.equal(response.status, 200);
+  assert.equal((await response.json()).status, 'VERIFIED_CONTENT_DELTA_POINTER_ACTIVE');
+  assert.equal(f.puts(), 1);
+  const replay = await f.worker.fetch(f.request(), { TARGET: f.bucket });
+  assert.equal(replay.status, 200);
+  assert.equal((await replay.json()).status, 'EXACT_DELTA_ALREADY_ACTIVE');
+  assert.equal(f.puts(), 1);
 });
