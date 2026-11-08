@@ -11,7 +11,7 @@ const preview = imageLoadingPreview(item);
 
 <article class="art-card" data-id={item.id}>
   <ShareButton item={item} compact />
-  <a class="art-picture" href={artworkPath(item)}>
+  <a class="art-picture" href={artworkPath(item)} aria-label={item.alt}>
     <img
       title={displayTitle(item.title)}
       src={item.webp}

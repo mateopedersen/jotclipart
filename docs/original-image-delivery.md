@@ -6,7 +6,7 @@ variant. Existing checksum-bound loading backgrounds remain temporary background
 
 Managed gallery and discovery images use `data-original-deferred="pending"` only
 inside an independently sized outer frame. The critical, static, hash-authorized
-head script schedules up to four new managed original requests. Actual intersecting
+head script schedules up to six new managed original requests. Actual intersecting
 frames take priority; at most two speculative near-screen requests can occupy slots.
 Native eager hero images are outside this scheduled count. Changing visibility never
 cancels a healthy original transfer or substitutes another URL.

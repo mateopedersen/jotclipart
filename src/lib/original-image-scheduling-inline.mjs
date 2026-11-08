@@ -37,7 +37,7 @@ export const originalImageSchedulingScript = String.raw`(() => {
         states.get(s.image) === s && source(s.image) === s.source && (s.visible || s.near))
         .sort((a,b) => Number(b.visible)-Number(a.visible) || a.top-b.top);
       for (const s of candidates) {
-        if (active.size >= 4) break;
+        if (active.size >= 6) break;
         // No more than two speculative transfers; leave room for visible work.
         if (!s.visible && [...active].filter(x => !x.visible).length >= 2) break;
         queued.delete(s);

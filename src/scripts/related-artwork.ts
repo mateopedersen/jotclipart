@@ -171,6 +171,13 @@ export function initRelatedArtwork() {
     node.querySelector('.related-card-title')!.textContent = displayTitle(data.title);
     node.querySelector('.related-reason')!.textContent = data.reason;
     const image = node.querySelector('img')!;
+    // A sample clone must not inherit the previous artwork's opened delivery
+    // state or accessible link name when pagination adds a different original.
+    image.dataset.originalDeferred = 'pending';
+    image.loading = 'lazy';
+    delete image.dataset.originalImageState;
+    delete image.dataset.originalRetryReset;
+    node.querySelector('.related-picture')!.setAttribute('aria-label', data.alt);
     image.removeAttribute('srcset');
     image.removeAttribute('sizes');
     image.src = data.webp;

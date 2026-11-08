@@ -1,3 +1,4 @@
+import AxeBuilder from '@axe-core/playwright';
 // Explicit network fixtures test scheduling and failure recovery, not CDN speed.
 import { chromium, webkit, firefox, expect } from '@playwright/test';
 import { createServer } from 'node:http';
@@ -35,7 +36,9 @@ const html =
   Array.from(
     { length: 80 },
     (_, i) =>
-      '<a class="art-picture" href="/art/fixture-' +
+      '<a class="art-picture" aria-label="Explicit fixture ' +
+      i +
+      '" href="/art/fixture-' +
       i +
       '/"><img src="https://assets.ultraclipart.com/fixture/scheduled-' +
       i +
@@ -77,6 +80,7 @@ try {
         'healthy',
         'slow-scroll',
         'transient',
+        'permanent',
         'no-io',
         'no-javascript',
         'constructor-failure',
@@ -134,7 +138,8 @@ try {
               setTimeout(r, scenario === 'slow-scroll' && url.includes('scheduled-0.') ? 1000 : 80),
             );
             await route.fulfill(
-              scenario === 'transient' && url.includes('scheduled-0.') && n === 1
+              (scenario === 'permanent' || (scenario === 'transient' && n === 1)) &&
+                url.includes('scheduled-0.')
                 ? { status: 503, body: 'Explicit failure fixture' }
                 : { status: 200, contentType: 'image/webp', body: bytes },
             );
@@ -180,6 +185,7 @@ try {
             const f = document.createElement('a');
             f.className = 'art-picture';
             f.href = '/art/dynamic/';
+            f.setAttribute('aria-label', 'Explicit dynamic fixture');
             const i = document.createElement('img');
             i.dataset.originalDeferred = 'pending';
             i.loading = 'lazy';
@@ -192,16 +198,24 @@ try {
         await expect
           .poll(
             () =>
-              page.locator('.art-picture').evaluateAll((xs) =>
-                xs
-                  .filter((x) => {
-                    const r = x.getBoundingClientRect();
-                    return r.bottom > 0 && r.top < innerHeight;
-                  })
-                  .every((x) => {
-                    const i = x.querySelector('img');
-                    return i.complete && i.naturalWidth > 0;
-                  }),
+              page.locator('.art-picture').evaluateAll(
+                (xs, allowFailure) =>
+                  xs
+                    .filter((x) => {
+                      const r = x.getBoundingClientRect();
+                      return r.bottom > 0 && r.top < innerHeight;
+                    })
+                    .every((x) => {
+                      const i = x.querySelector('img');
+                      return (
+                        (allowFailure &&
+                          i.src.includes('scheduled-0.') &&
+                          i.dataset.originalImageState === 'error' &&
+                          i.dataset.originalDeferred === 'open') ||
+                        (i.complete && i.naturalWidth > 0)
+                      );
+                    }),
+                scenario === 'permanent',
               ),
             { timeout: 15000 },
           )
@@ -216,8 +230,18 @@ try {
             'print',
           ].includes(scenario)
         ) {
-          assert(peak <= 4, 'No native offscreen request flood: ' + peak);
+          assert(peak <= 6, 'No native offscreen request flood: ' + peak);
           assert(attempts.size < 40, 'The complete offscreen gallery must not be prefetched');
+        }
+        if (scenario === 'permanent') {
+          await expect(page.locator('.art-picture img').first()).toHaveAttribute(
+            'data-original-image-state',
+            'error',
+          );
+          await expect(page.locator('.original-image-status')).toHaveText(
+            'Image unavailable. Open artwork.',
+          );
+          assert.equal(attempts.get('https://assets.ultraclipart.com/fixture/scheduled-0.webp'), 3);
         }
         if (scenario === 'transient')
           assert.equal(attempts.get('https://assets.ultraclipart.com/fixture/scheduled-0.webp'), 2);
@@ -252,6 +276,21 @@ try {
             .toBe(true);
         }
         assert.equal(errors.length, 0, JSON.stringify(errors));
+        // Axe injects executable code and cannot finish with JavaScript disabled.
+        // Native accessible-name checks remain required for that case.
+        await expect(page.locator('.art-picture').first()).toHaveAccessibleName(/Explicit/);
+        const names = await page.locator('.art-picture').evaluateAll((xs) =>
+          xs.map((a) => ({
+            name: a.getAttribute('aria-label'),
+            expected: a.querySelector('img').alt,
+          })),
+        );
+        assert(names.every((x) => x.name === x.expected && x.name.trim()));
+        if (scenario !== 'no-javascript') {
+          const accessibility = await new AxeBuilder({ page }).withRules(['link-name']).analyze();
+          assert.deepEqual(accessibility.violations, []);
+        }
+
         const after = await page
           .locator('.art-picture')
           .evaluateAll((xs) => xs.map((x) => ({ width: x.offsetWidth, height: x.offsetHeight })));
@@ -289,6 +328,16 @@ try {
             : {}),
           errors,
         });
+        console.log(
+          JSON.stringify({
+            engine: name,
+            scenario,
+            passed: true,
+            initialPeak,
+            peak,
+            requests: attempts.size,
+          }),
+        );
         await page.screenshot({ path: resolve(folder, name + '-' + scenario + '.png') });
         await context.close();
       }

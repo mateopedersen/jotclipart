@@ -33,6 +33,7 @@ export function renderCard(item: SearchCard): HTMLElement {
   image.fetchPriority = 'low';
   image.decoding = 'async';
   image.alt = item.alt;
+  picture.setAttribute('aria-label', item.alt);
   image.title = displayTitle(item.title);
   image.width = 400;
   image.height = 400;

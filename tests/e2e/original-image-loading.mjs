@@ -2,7 +2,7 @@
 import { build } from 'esbuild';
 import sharp from 'sharp';
 import { createServer } from 'node:http';
-import { chromium, webkit, expect } from '@playwright/test';
+import { chromium, firefox, webkit, expect } from '@playwright/test';
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import assert from 'node:assert/strict';
@@ -36,7 +36,7 @@ const report = {
   errors: [],
 };
 const engines = process.env.UC_BROWSER
-  ? { [process.env.UC_BROWSER]: { chromium, webkit }[process.env.UC_BROWSER] }
+  ? { [process.env.UC_BROWSER]: { chromium, firefox, webkit }[process.env.UC_BROWSER] }
   : { chromium, webkit };
 try {
   for (const [engine, type] of Object.entries(engines)) {

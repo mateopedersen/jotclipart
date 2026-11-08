@@ -14,7 +14,7 @@ const { card } = Astro.props;
   data-related-group={card.group}
   data-related-reason={card.reasonCode}
 >
-  <a class="related-picture" href={card.href} data-related-detail>
+  <a class="related-picture" href={card.href} aria-label={card.alt} data-related-detail>
     <img
       title={displayTitle(card.title)}
       src={card.webp}
