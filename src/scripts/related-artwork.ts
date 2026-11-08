@@ -144,6 +144,7 @@ export function initRelatedArtwork() {
     });
   }
   function imageError(card: HTMLElement) {
+    const firstFailure = !failed.has(card.dataset.relatedId!);
     failed.add(card.dataset.relatedId!);
     card.querySelector('img')!.hidden = true;
     card.querySelector<HTMLElement>('.related-image-error')!.hidden = false;
@@ -151,12 +152,55 @@ export function initRelatedArtwork() {
       .querySelectorAll<HTMLElement>('[data-related-download]')
       .forEach((link) => (link.hidden = true));
     observer?.unobserve(card);
-    emit('thumbnail_error', { artworkId: card.dataset.relatedId });
+    if (firstFailure) emit('thumbnail_error', { artworkId: card.dataset.relatedId });
   }
   function watch(card: HTMLElement) {
     const img = card.querySelector('img')!;
-    img.addEventListener('error', () => imageError(card), { once: true });
-    if (img.complete && img.naturalWidth === 0) imageError(card);
+    const source = img.getAttribute('src');
+    let fallback: ReturnType<typeof setTimeout> | undefined;
+    const current = () => img.isConnected && img.getAttribute('src') === source;
+    const clearFallback = () => {
+      if (fallback) clearTimeout(fallback);
+      fallback = undefined;
+    };
+    const recovered = () => {
+      if (!current() || !img.complete || img.naturalWidth === 0) return;
+      clearFallback();
+      failed.delete(card.dataset.relatedId!);
+      img.hidden = false;
+      card.querySelector<HTMLElement>('.related-image-error')!.hidden = true;
+      card.querySelectorAll<HTMLElement>('[data-related-download]').forEach((link) => {
+        link.hidden = !link.getAttribute('href');
+      });
+      observer?.observe(card);
+    };
+    const terminal = () => {
+      if (!current() || (img.complete && img.naturalWidth > 0)) return;
+      clearFallback();
+      imageError(card);
+    };
+    img.addEventListener('load', recovered);
+    // Managed originals have one shared, bounded retry controller. Hiding a
+    // failed image here on its first error prevents that controller from seeing
+    // it in the viewport and leaves later successful loads permanently hidden.
+    img.addEventListener('uc:original-image-terminal-error', terminal);
+    const errored = () => {
+      if (!current() || img.dataset.originalRetryReset === 'true') return;
+      if (!img.hasAttribute('data-original-deferred')) return terminal();
+      if (document.documentElement.dataset.originalImageLoading === 'ready') return;
+      // If the shared enhancement never initializes, retain a bounded ordinary
+      // failure UI. A later real load always restores the same original controls.
+      if (!fallback)
+        fallback = setTimeout(() => {
+          fallback = undefined;
+          if (document.documentElement.dataset.originalImageLoading !== 'ready') terminal();
+        }, 6000);
+    };
+    img.addEventListener('error', errored);
+    if (img.complete) {
+      if (img.naturalWidth > 0) recovered();
+      else errored();
+    }
     observer?.observe(card);
   }
   function createCard(data: BrowserRelatedCard) {
@@ -173,6 +217,8 @@ export function initRelatedArtwork() {
     const image = node.querySelector('img')!;
     // A sample clone must not inherit the previous artwork's opened delivery
     // state or accessible link name when pagination adds a different original.
+    image.hidden = false;
+    node.querySelector<HTMLElement>('.related-image-error')!.hidden = true;
     image.dataset.originalDeferred = 'pending';
     image.loading = 'lazy';
     delete image.dataset.originalImageState;
@@ -198,7 +244,6 @@ export function initRelatedArtwork() {
         `Download ${format === 'webp' ? 'Image' : 'PDF'}: ${data.title}`,
       );
     });
-    if (failed.has(data.id)) imageError(node);
     return node;
   }
   function list() {
