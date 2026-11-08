@@ -19,6 +19,8 @@ export interface SearchCard {
   alt: string;
   thumb: string;
   thumbSrcSet?: string;
+  /** Source-bound small R2 image for transient autocomplete only. */
+  suggestionThumb?: string;
   webp: string;
   pdf?: string;
   editable?: boolean;

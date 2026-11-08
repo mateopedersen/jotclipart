@@ -178,8 +178,10 @@ export function initSearchSuggestions() {
                     entries: await navigationRepository.siteEntries(manifest, signal),
                   }));
             const artworkRead = async () => {
-              return queryRoot
-                ? repository.searchAtSnapshot(queryRoot, { ...defaults, q: query, size: 8 }, signal, [], true)
+              if (queryRoot) return repository.searchAtSnapshot(queryRoot, { ...defaults, q: query, size: 8 }, signal, [], true);
+              const manifest = await repository.manifest(signal);
+              return manifest.transport
+                ? repository.searchAtSnapshot(manifest.version, { ...defaults, q: query, size: 8 }, signal, [], true)
                 : repository.search({ ...defaults, q: query, size: 8 }, signal);
             };
             const artworkPromise = artworkRead().then((result) => {
