@@ -265,7 +265,8 @@ try {
             'print',
           ].includes(scenario)
         ) {
-          assert(peak <= 6, 'No native offscreen request flood: ' + peak);
+          const limit = ['slow-scroll', 'late-false-offline-hint', 'replacement'].includes(scenario) ? 8 : 6;
+          assert(peak <= limit, 'Bounded original admission without an offscreen flood: ' + peak);
           assert(attempts.size < 40, 'The complete offscreen gallery must not be prefetched');
         }
         if (scenario === 'permanent') {

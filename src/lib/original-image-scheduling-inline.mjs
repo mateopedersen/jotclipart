@@ -39,7 +39,10 @@ export const originalImageSchedulingScript = String.raw`(() => {
         states.get(s.image) === s && source(s.image) === s.source && (s.visible || s.near))
         .sort((a,b) => Number(b.visible)-Number(a.visible) || a.top-b.top);
       for (const s of candidates) {
-        if (active.size >= 6) break;
+        // Keep old healthy transfers intact, but reserve two bounded admission
+        // slots when scrolling would otherwise leave the visible viewport idle.
+        const visibleActive = [...active].filter(x => x.visible).length;
+        if (active.size >= 6 && (!s.visible || active.size >= 8 || visibleActive >= 2)) break;
         // No more than two speculative transfers; leave room for visible work.
         if (!s.visible && [...active].filter(x => !x.visible).length >= 2) break;
         queued.delete(s);

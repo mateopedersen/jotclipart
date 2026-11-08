@@ -31,6 +31,9 @@ await new Promise((r) => server.listen(0, '127.0.0.1', r));
 const report = {
   scope:
     'Source module with explicitly synthetic media and network fault injection; 20/40ms retry and200ms watchdog are test overrides, production is800/2400ms and45000ms',
+  connectivityEvents: process.env.UC_MODELED_CONNECTIVITY_EVENTS === '1'
+    ? 'Explicit portable online-event model after the actual network-fault fixture is released; no native OS event claim'
+    : 'Native browser connectivity events during the controlled network-fault fixture',
   passed: false,
   cases: [],
   errors: [],
@@ -186,6 +189,8 @@ try {
               }
               offlineFault = false;
               await context.setOffline(false);
+              if (process.env.UC_MODELED_CONNECTIVITY_EVENTS === '1')
+                await page.evaluate(() => dispatchEvent(new Event('online')));
             }
             await expect(second).toHaveAttribute('data-original-image-state', 'loaded');
             assert.equal(
