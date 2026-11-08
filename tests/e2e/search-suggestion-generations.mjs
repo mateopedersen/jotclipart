@@ -114,7 +114,7 @@ try {
           ),
         );
       }
-      if (u.pathname.match(/\/search-data\/[a-f0-9]{64}\/site.json/)) {
+      if (u.pathname.match(/\/search-data\/[a-f0-9]{64}\/(?:site|navigation).json/)) {
         const s = u.pathname.split('/')[2];
         if (mode === 'no-page-root-directory-race' && s === B)
           await new Promise((r) => setTimeout(r, 400));
@@ -150,6 +150,7 @@ try {
     } else {
       const expected = mode === 'stale-page-root' ? B : C;
       await p.locator(`.search-suggestions a[href="/art/camera-${expected[0]}/"]`).waitFor();
+      await p.locator(`.search-suggestions a[href="/clipart/camera-${expected[0]}/"]`).waitFor();
       assert.equal(
         await p.locator(`.search-suggestions a[href="/clipart/camera-${expected[0]}/"]`).count(),
         1,
