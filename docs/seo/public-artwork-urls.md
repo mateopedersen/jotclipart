@@ -34,3 +34,16 @@ References: Google sitemap creation, image sitemaps and permanent redirects:
 https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
 https://developers.google.com/search/docs/crawling-indexing/sitemaps/image-sitemaps
 https://developers.google.com/search/docs/crawling-indexing/301-redirects
+
+## Worker invocation isolation
+
+The shared immutable metadata cache stores only fully consumed, SHA verified
+bytes. Pending reads and HTML render promises must never be shared across Worker
+invocations. Request scoped snapshot reads still deduplicate within their own
+invocation; completed public HTML remains in the root and renderer bound Cache
+API. A departed invocation was reproduced stranding a later request in workerd
+with the previous pending caches. The permanent native lifecycle regression is
+`tests/catalog-worker-request-isolation.mjs`; do not replace it with Node only
+Promise tests or weaken compatibility flags.
+
+Reference: https://developers.cloudflare.com/workers/configuration/compatibility-flags/#handle-cross-request-promise-resolution
