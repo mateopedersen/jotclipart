@@ -175,6 +175,11 @@ try {
         });
         // The fixture network stays reachable. A false OS/browser hint must not
         // gate originals or require an online event to recover visible content.
+        if (scenario === 'late-false-offline-hint') {
+          await context.addInitScript(() => {
+            Object.defineProperty(navigator, 'onLine', { configurable: true, get: () => true });
+          });
+        }
         if (scenario === 'false-offline-hint') {
           await context.addInitScript(() => {
             Object.defineProperty(navigator, 'onLine', { configurable: true, get: () => false });
@@ -187,6 +192,8 @@ try {
           .locator('.art-picture')
           .evaluateAll((xs) => xs.map((x) => ({ width: x.offsetWidth, height: x.offsetHeight })));
         if (scenario === 'late-false-offline-hint') {
+          assert.equal(await page.evaluate(() => navigator.onLine), true);
+          await expect.poll(() => attempts.size).toBeGreaterThan(0);
           await page.evaluate(() => {
             Object.defineProperty(navigator, 'onLine', { configurable: true, get: () => false });
             dispatchEvent(new Event('offline'));
