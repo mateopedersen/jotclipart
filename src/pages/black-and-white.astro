@@ -140,7 +140,7 @@ const number = (value: number) => value.toLocaleString('en-US');
     <p id="bw-close-matches" class="bw-message" hidden>
       Showing close spelling matches for your search.
     </p>
-    <div class="gallery bw-gallery" id="bw-results" aria-label="Clipart results">
+    <div class="gallery bw-gallery" id="bw-results" aria-label="Clipart results" aria-busy="false">
       {initial.map((item, index) => (
         <Card item={item} priority={index < 4} />
       ))}
