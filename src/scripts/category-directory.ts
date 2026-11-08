@@ -1,5 +1,5 @@
 import { SearchRepository } from '../lib/search-remote';
-import type { SearchCard } from '../lib/search-index';
+import { categorySamples, type CategorySample } from '../lib/category-samples';
 const input = document.querySelector<HTMLInputElement>('#topic-filter')!;
 const group = document.querySelector<HTMLInputElement>('#category-group')!;
 const sort = document.querySelector<HTMLSelectElement>('#category-sort')!;
@@ -19,22 +19,27 @@ let letter = '';
 let previousSort = 'name:';
 let matchedCount = cards.length;
 const samples = new SearchRepository();
-const sampleJobs = new Map<string, Promise<void>>();
-let sampleQueue = Promise.resolve();
-function loadSamples(targets: HTMLLIElement[]) {
+let sampleBatch: { ids: Set<string>; controller: AbortController } | undefined;
+function loadSamples(targets: HTMLLIElement[], warmOnly = false) {
   const missing = targets.filter(
     (card) => !card.querySelector('.subject-art img') && card.dataset.sampleId,
   );
-  const fresh = missing.filter((card) => !sampleJobs.has(card.dataset.sampleId!));
-  if (!fresh.length) return;
-  const ids = [...new Set(fresh.map((card) => card.dataset.sampleId!))];
-  // At most one bounded visible batch. Filter hover never scans all subjects.
-  const job = sampleQueue.then(async () => {
-    const result = await samples.favoriteItems(ids);
+  if (!missing.length) return;
+  if (warmOnly && sampleBatch) return;
+  const ids = [...new Set(missing.slice(0, pageSize).map((card) => card.dataset.sampleId!))];
+  if (sampleBatch && ids.every((id) => sampleBatch!.ids.has(id))) return;
+  // A newly chosen filter takes priority over obsolete metadata. Never cancel
+  // an original image transfer, and never queue several old filters in series.
+  sampleBatch?.controller.abort();
+  const batch = { ids: new Set(ids), controller: new AbortController() };
+  sampleBatch = batch;
+  void (async () => {
+    const result = await categorySamples(samples, ids, batch.controller.signal);
+    if (batch.controller.signal.aborted || sampleBatch !== batch) return;
     const byId = new Map(
-      result.filter((item): item is SearchCard => item !== null).map((item) => [item.id, item]),
+      result.filter((item): item is CategorySample => item !== null).map((item) => [item.id, item]),
     );
-    for (const card of fresh) {
+    for (const card of missing) {
       const item = byId.get(card.dataset.sampleId!);
       if (!item || card.querySelector('.subject-art img')) continue;
       const url = new URL(item.webp);
@@ -54,15 +59,20 @@ function loadSamples(targets: HTMLLIElement[]) {
       image.dataset.originalDeferred = 'pending';
       image.decoding = 'async';
       image.fetchPriority = 'low';
+      if (item.preview?.source === url.href) {
+        image.dataset.originalPlaceholder = item.preview.url;
+        image.dataset.originalPlaceholderFor = item.preview.source;
+      }
       image.src = url.href;
       card.querySelector('.subject-art')!.replaceChildren(image);
     }
-  });
-  for (const id of ids) sampleJobs.set(id, job);
-  sampleQueue = job.catch(() => {
-    // Keep the real collection link usable. A later filter action can retry.
-    for (const id of ids) sampleJobs.delete(id);
-  });
+  })()
+    .catch(() => {
+      // Keep the real collection link usable. A later filter action can retry.
+    })
+    .finally(() => {
+      if (sampleBatch === batch) sampleBatch = undefined;
+    });
 }
 function columnsForCount(count: number) {
   const width = grid.getBoundingClientRect().width;
@@ -83,8 +93,13 @@ function updateColumns() {
   if (grid.style.getPropertyValue('--subject-columns') !== String(columns))
     grid.style.setProperty('--subject-columns', String(columns));
 }
-function primeImages(targets: HTMLLIElement[], priority: 'high' | 'low', maximum = 3) {
-  loadSamples(targets.slice(0, Math.min(pageSize, maximum)));
+function primeImages(
+  targets: HTMLLIElement[],
+  priority: 'high' | 'low',
+  maximum = 3,
+  warmOnly = false,
+) {
+  loadSamples(targets.slice(0, Math.min(pageSize, maximum)), warmOnly);
   const columns = columnsForCount(Math.min(pageSize, targets.length));
   const width = Math.max(
     64,
@@ -281,6 +296,8 @@ for (const choice of collections) {
         (card) => !choice.value || (card.dataset.groups ?? '').split(' ').includes(choice.value),
       ),
       'high',
+      3,
+      true,
     );
   choice.parentElement!.addEventListener('pointerenter', () =>
     primeImages(
@@ -289,6 +306,7 @@ for (const choice of collections) {
       ),
       'low',
       2,
+      true,
     ),
   );
   choice.parentElement!.addEventListener('pointerdown', warmChoice, { passive: true });

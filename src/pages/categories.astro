@@ -1,5 +1,6 @@
 ---
 import { displayTitle } from '../lib/display-title';
+import { imageLoadingPreview } from '../lib/image-loading-preview';
 import Layout from '../layouts/Layout.astro';
 import CatalogCount from '../components/CatalogCount.astro';
 import { catalogStatistics } from '../lib/catalog-statistics';
@@ -17,6 +18,14 @@ const heroSubjects = ['fox', 'strawberry', 'school', 'butterfly']
 const title = 'Clipart Categories: Animals, Holidays, Baby & More';
 const description = `Explore ${categorySubjects.length} clipart topics and ${total.toLocaleString('en-US')} illustrations. Browse visual collections, find a subject, and download images or printable PDFs.`;
 const pageUrl = 'https://ultraclipart.com/categories/';
+const firstLoadingPreviews = [
+  ...new Map(
+    [...heroSubjects, ...categorySubjects.slice(0, 3)].flatMap((subject) => {
+      const preview = imageLoadingPreview(subject.sample);
+      return preview ? [[preview.url, preview] as const] : [];
+    }),
+  ).values(),
+];
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
@@ -43,7 +52,12 @@ const schema = {
 ---
 
 <Layout title={title} description={description}>
-  <script slot="head" type="application/ld+json" set:html={structuredData(schema)} />
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={structuredData(schema)} />
+    {firstLoadingPreviews.map((preview) => (
+      <link rel="preload" as="image" href={preview.url} fetchpriority="high" />
+    ))}
+  </Fragment>
   <div class="category-discovery">
     <nav class="discovery-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
@@ -92,18 +106,22 @@ const schema = {
             href={`/clipart/${subject.slug}/`}
             aria-label={`Explore ${subject.name}`}
           >
-            <img
-              src={subject.sample.thumb}
-              srcset={subject.sample.thumbSrcSet}
-              sizes="(max-width: 700px) 100px, 155px"
-              alt={subject.sample.alt}
-              title={subject.sample.title}
-              width="155"
-              height="140"
-              loading="lazy"
-              data-original-deferred="pending"
-              decoding="async"
-            />
+            <span class="discovery-scene-image">
+              <img
+                src={subject.sample.thumb}
+                srcset={subject.sample.thumbSrcSet}
+                sizes="(max-width: 700px) 100px, 155px"
+                alt={subject.sample.alt}
+                title={subject.sample.title}
+                width="155"
+                height="140"
+                loading="lazy"
+                data-original-deferred="pending"
+                data-original-placeholder={imageLoadingPreview(subject.sample)?.url}
+                data-original-placeholder-for={imageLoadingPreview(subject.sample)?.source}
+                decoding="async"
+              />
+            </span>
             <span>{subject.name}</span>
           </a>
         ))}
@@ -197,6 +215,12 @@ const schema = {
                           height="52"
                           loading="lazy"
                           data-original-deferred="pending"
+                          data-original-placeholder={
+                            imageLoadingPreview(collection.previews[0])?.url
+                          }
+                          data-original-placeholder-for={
+                            imageLoadingPreview(collection.previews[0])?.source
+                          }
                           decoding="async"
                           alt=""
                           title={collection.previews[0].title}
@@ -308,6 +332,8 @@ const schema = {
                       height="190"
                       loading="lazy"
                       data-original-deferred="pending"
+                      data-original-placeholder={imageLoadingPreview(subject.sample)?.url}
+                      data-original-placeholder-for={imageLoadingPreview(subject.sample)?.source}
                       decoding="async"
                     />
                   ) : (

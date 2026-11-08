@@ -26,7 +26,7 @@
     "test:layout:regressions": "node tests/e2e/layout-regressions.mjs",
     "test:responsive:controls": "node tests/e2e/responsive-controls.mjs",
     "test:responsive:search": "node tests/e2e/mobile-search-navigation.mjs",
-    "test:responsive:categories": "node tests/e2e/category-collections.mjs",
+    "test:responsive:categories": "node tests/e2e/category-collections.mjs && node tests/e2e/category-preview-loading.mjs",
     "test:favorites:workspace": "node --test tests/favorite-boards.mjs tests/favorites-workspace.mjs",
     "test:e2e:favorites-workspace": "node tests/e2e/favorites-workspace.mjs",
     "test:e2e:brand-accents": "node tests/e2e/brand-accents.mjs",
