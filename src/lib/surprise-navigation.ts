@@ -58,13 +58,14 @@ export function surpriseWarmImages(html: string, path: string, origin = location
   return [...new Set([...(thumbnail ? [thumbnail] : []), original])];
 }
 
-export function createSurpriseWarmer() {
+export function createSurpriseWarmer(isActive: () => boolean = () => true) {
   const connection = (
     navigator as Navigator & {
       connection?: { saveData?: boolean; effectiveType?: string };
     }
   ).connection;
   const allowed = () =>
+    isActive() &&
     !document.hidden &&
     navigator.onLine &&
     !connection?.saveData &&
@@ -73,7 +74,12 @@ export function createSurpriseWarmer() {
     controller: AbortController | undefined,
     attempts = 0;
   const hints: HTMLLinkElement[] = [];
-  return (next: string) => {
+  const cancel = () => {
+    controller?.abort();
+    controller = undefined;
+    while (hints.length) hints.pop()!.remove();
+  };
+  const warm = (next: string) => {
     if (
       !allowed() ||
       path === next ||
@@ -123,4 +129,5 @@ export function createSurpriseWarmer() {
       }
     })();
   };
+  return Object.assign(warm, { cancel });
 }
