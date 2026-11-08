@@ -66,7 +66,7 @@ export function searchSiteEntries(entries: SiteSearchEntry[], query: string, kin
       if (!words.length) {
         words = [...body].filter(
           (word) =>
-            oneEditAway(token, word),
+            token.length >= 4 && oneEditAway(token, word),
         );
         fuzzy = !!words.length;
       }
