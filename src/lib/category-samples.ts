@@ -1,5 +1,5 @@
 import type { SearchRepository } from './search-remote';
-import { requestPinnedStudioAssets } from './snapshot-studio';
+import { requestPinnedStudioAssets } from './snapshot-studio.ts';
 
 export type CategorySample = {
   id: string;
