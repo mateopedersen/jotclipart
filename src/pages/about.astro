@@ -1,4 +1,5 @@
 ---
+import { artworkPath } from '../lib/artwork-route.mjs';
 import Layout from '../layouts/Layout.astro';
 import CatalogCount from '../components/CatalogCount.astro';
 import AboutSymbol from '../components/TeacherSymbol.astro';
@@ -143,7 +144,7 @@ const process = [
         </figcaption>
         <div class="about-artwork-grid">
           {examples.map((example) => (
-            <a href={`/art/${example.image.id}/`}>
+            <a href={artworkPath(example.image)}>
               <span class="about-picture">
                 <img
                   title={example.image.title}

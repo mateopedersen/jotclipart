@@ -1,4 +1,5 @@
 ---
+import { artworkPath } from '../lib/artwork-route.mjs';
 import '../styles/original-image-loading.css';
 import '../styles/global.css';
 import '../styles/display-titles.css';
@@ -358,7 +359,7 @@ const releaseRevision = /^[a-f0-9]{40}$/.test(import.meta.env.PUBLIC_RELEASE_REV
           </div>
           <a
             class="site-surprise-link site-surprise-desktop"
-            href={`/art/${surprisePicks[0].id}/`}
+            href={artworkPath(surprisePicks[0])}
             aria-label="Surprise me. Open a random illustration"
             data-surprise-art={JSON.stringify(surprisePicks)}
             data-surprise-source={`/surprise-picks.json?v=${SURPRISE_INDEX_VERSION}-${import.meta.env.PUBLIC_RELEASE_REVISION || 'local'}`}
@@ -408,7 +409,7 @@ const releaseRevision = /^[a-f0-9]{40}$/.test(import.meta.env.PUBLIC_RELEASE_REV
         </nav>
         <a
           class="site-surprise-link site-surprise-mobile"
-          href={`/art/${surprisePicks[0].id}/`}
+          href={artworkPath(surprisePicks[0])}
           aria-label="Surprise me. Open a random illustration"
           data-surprise-art=""
           data-surprise-source={`/surprise-picks.json?v=${SURPRISE_INDEX_VERSION}-${import.meta.env.PUBLIC_RELEASE_REVISION || 'local'}`}

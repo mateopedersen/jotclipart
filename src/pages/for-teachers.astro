@@ -1,4 +1,5 @@
 ---
+import { artworkPath } from '../lib/artwork-route.mjs';
 import { displayTitle } from '../lib/display-title';
 import ContentLink from '../components/ContentLink.astro';
 import Layout from '../layouts/Layout.astro';
@@ -80,7 +81,7 @@ const checklist = [
           {heroPictures.map((item, index) => (
             <a
               class:list={['tc-desk-item', { 'tc-desk-feature': index === 0 }]}
-              href={`/art/${item.id}/`}
+              href={artworkPath(item)}
             >
               <img
                 title={displayTitle(item.title)}
@@ -296,7 +297,7 @@ const checklist = [
                 <h4>Artwork to explore</h4>
                 <div class="tc-plan-pictures">
                   {path.pictures.map((item) => (
-                    <a href={`/art/${item.id}/`}>
+                    <a href={artworkPath(item)}>
                       <img
                         title={displayTitle(item.title)}
                         src={item.thumb}
@@ -447,7 +448,7 @@ const checklist = [
               Give the image and prompt enough room. Keep your written explanation in the
               presentation so you can adapt it later.
             </p>
-            <a class="tc-text-link" href={`/art/${pictures.trumpet.id}/`}>
+            <a class="tc-text-link" href={artworkPath(pictures.trumpet)}>
               Open the trumpet artwork
               <TeacherArrow size={27} />
             </a>

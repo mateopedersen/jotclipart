@@ -15,6 +15,7 @@ export interface DownloadDetails {
 }
 export interface SearchCard {
   id: string;
+  publicSlug?: string;
   title: string;
   alt: string;
   thumb: string;
@@ -76,6 +77,7 @@ export function tokenBucket(token: string): string {
 export function cardMetadata(item: SearchArtwork & SearchCard): SearchCard {
   return {
     id: item.id,
+    ...(item.publicSlug ? { publicSlug: item.publicSlug } : {}),
     title: item.title,
     alt: item.alt,
     thumb: item.thumb,

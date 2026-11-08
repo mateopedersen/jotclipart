@@ -1,4 +1,5 @@
 ---
+import { artworkPath } from '../../lib/artwork-route.mjs';
 import { displayTitle } from '../../lib/display-title';
 import { imageLoadingPreview, loadingPreviewStyle } from '../../lib/image-loading-preview';
 import { imageObject } from '../../lib/image-schema';
@@ -66,7 +67,7 @@ const downloadRecord = {
         breadcrumbs([
           { name: 'Home', path: '/' },
           { name: topic.keyword, path: `/clipart/${topic.slug}/` },
-          { name: item.title, path: `/art/${item.id}/` },
+          { name: item.title, path: artworkPath(item) },
         ]),
       )}
     />

@@ -1,4 +1,4 @@
-import {adoptCatalogSnapshot} from '../lib/catalog-snapshot-client';
+import { adoptCatalogSnapshot } from '../lib/catalog-snapshot-client';
 import { SearchRepository } from '../lib/search-remote';
 import { defaults } from '../lib/search';
 import type { SearchCard, SearchManifest } from '../lib/search-index';
@@ -37,7 +37,6 @@ if (root) {
   let version = seed.version;
   let request: AbortController | undefined;
   let timer: ReturnType<typeof setTimeout> | undefined;
-  let refreshing = false;
   let pages = Math.max(1, Math.ceil(directory.total / 24));
   const number = (value: number) => value.toLocaleString('en-US');
   type State = {
@@ -133,12 +132,12 @@ if (root) {
     pagination.hidden = true;
     empty.hidden = true;
     try {
-      useManifest(await repository.manifest(controller.signal));
       const scope = ['print/monochrome'];
       if (state.collection) scope.push(`collection/${state.collection}`);
       if (state.topic) scope.push(`topic/${state.topic}`);
       if (state.kind) scope.push(`monochrome-kind/${state.kind}`);
-      const found = await repository.search(
+      const found = await repository.searchAtSnapshot(
+        version,
         { ...defaults, q: state.q, sort: state.sort, page: state.page, size: 24 },
         controller.signal,
         scope,
@@ -257,32 +256,24 @@ if (root) {
     syncControls();
     void run('none');
   });
-  async function refresh() {
-    if (document.hidden || request || refreshing || timer) return;
-    refreshing = true;
-    try {
-      repository.clear();
-      const manifest = await repository.manifest(AbortSignal.timeout(15000));
-      if (request || timer) return;
-      if (manifest.version !== version) {
-        useManifest(manifest);
-        void run('replace');
-      }
-    } catch {
-      /* Keep the last complete collection during an offline refresh. */
-    } finally {
-      refreshing = false;
-    }
-  }
-  window.addEventListener('focus', () => void refresh());
-  document.addEventListener('visibilitychange', () => {
-    if (!document.hidden) void refresh();
-  });
-  window.setInterval(() => void refresh(), 30000);
   window.addEventListener('pagehide', () => {
     request?.abort();
     clearTimeout(timer);
   });
   syncControls();
-  void run('replace');
+  if (
+    state.q ||
+    state.collection ||
+    state.topic ||
+    state.kind ||
+    state.page !== 1 ||
+    state.sort !== 'newest'
+  ) {
+    void run('replace');
+  } else {
+    // SSR already contains the exact newest page at this authenticated root.
+    previous.disabled = true;
+    next.disabled = pages <= 1;
+    pagination.hidden = pages <= 1;
+  }
 }

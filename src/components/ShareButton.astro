@@ -1,4 +1,5 @@
 ---
+import { artworkURL } from '../lib/artwork-route.mjs';
 import { displayTitle } from '../lib/display-title';
 const { item, compact = false } = Astro.props;
 ---
@@ -8,7 +9,7 @@ const { item, compact = false } = Astro.props;
   class:list={['share-trigger', compact ? 'share-trigger-card' : 'share-trigger-detail']}
   data-share-art
   data-share-title={displayTitle(item.title)}
-  data-share-url={`https://ultraclipart.com/art/${item.id}/`}
+  data-share-url={artworkURL(item)}
   data-share-image={item.webp}
   aria-label={compact ? `Share ${item.title}` : `Share this clipart: ${item.title}`}
   title="Share this clipart"

@@ -36,11 +36,9 @@ for (const [engine, implementation] of Object.entries({ chromium, webkit })) {
           return [...rows.values()].flatMap((row) => {
             const left = row[0].left,
               right = row.at(-1).right;
-            const centeredSingle =
-              row.length === 1 &&
-              Math.abs((left + right) / 2 - (bounds.left + bounds.right) / 2) < 1;
+            const centeredRow = Math.abs((left + right) / 2 - (bounds.left + bounds.right) / 2) < 1;
             return (Math.abs(left - bounds.left) < 1 && Math.abs(right - bounds.right) < 1) ||
-              centeredSingle
+              centeredRow
               ? []
               : [{ count: grid.dataset.count, left, right, bounds: [bounds.left, bounds.right] }];
           });

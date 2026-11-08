@@ -1,4 +1,5 @@
 ---
+import { artworkPath } from '../lib/artwork-route.mjs';
 import { displayTitle } from '../lib/display-title';
 import Icon from './Icon.astro';
 import StudioIcon from './StudioIcon.astro';
@@ -86,14 +87,16 @@ const toolItems = [
     <div>
       {creator ? (
         <>
-          <h2 id="studio-workspace-title" data-display-title>{displayTitle(art.title)}</h2>
+          <h2 id="studio-workspace-title" data-display-title>
+            {displayTitle(art.title)}
+          </h2>
           <a class="uc-project-help" href="#studio-privacy">
             Saving &amp; privacy
           </a>
         </>
       ) : (
         <>
-          <a href={`/art/${art.id}/`}>← Back to artwork</a>
+          <a href={artworkPath(art)}>← Back to artwork</a>
           <h1 data-display-title>{displayTitle(art.title)}</h1>
         </>
       )}

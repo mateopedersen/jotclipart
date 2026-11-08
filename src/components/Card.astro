@@ -1,4 +1,5 @@
 ---
+import { artworkPath } from '../lib/artwork-route.mjs';
 import { displayTitle } from '../lib/display-title';
 import { imageLoadingPreview, loadingPreviewStyle } from '../lib/image-loading-preview';
 import CardFileActions from './CardFileActions.astro';
@@ -10,7 +11,7 @@ const preview = imageLoadingPreview(item);
 
 <article class="art-card" data-id={item.id}>
   <ShareButton item={item} compact />
-  <a class="art-picture" href={`/art/${item.id}/`}>
+  <a class="art-picture" href={artworkPath(item)}>
     <img
       title={displayTitle(item.title)}
       src={item.webp}
@@ -32,7 +33,7 @@ const preview = imageLoadingPreview(item);
         {displayTitle(subjectLabel)}
       </a>
     )}
-    <a class="card-title" data-display-title href={`/art/${item.id}/`}>
+    <a class="card-title" data-display-title href={artworkPath(item)}>
       {displayTitle(item.title)}
     </a>
     <CardFileActions
@@ -42,7 +43,7 @@ const preview = imageLoadingPreview(item);
       pdf={item.pdf}
     />
     <div class="card-actions">
-      <a class="button" href={item.editable === false ? `/art/${item.id}/` : `/edit/${item.id}/`}>
+      <a class="button" href={item.editable === false ? artworkPath(item) : `/edit/${item.id}/`}>
         <Icon name={item.editable === false ? 'view' : 'edit'} size={28} />
         <span>{item.editable === false ? 'View' : 'Edit'}</span>
       </a>

@@ -13,6 +13,11 @@ import {
   SITEMAP_MAX_BYTES,
 } from '../src/lib/sitemaps.ts';
 
+const allPages = (art, topics = []) =>
+  sitemapDocuments(art, topics)
+    .filter((d) => !d.kind.startsWith('images'))
+    .map((d) => d.xml)
+    .join('');
 const example = {
   id: 'pumpkin-01',
   topic: 'pumpkin',
@@ -29,23 +34,27 @@ test('a first approved work makes its subject discoverable without a fifty-item 
   const topics = [{ slug: 'pumpkin' }, { slug: 'new-subject' }];
   assert.deepEqual(directoryArtwork([...complete, growing, draft, noindex], topics), []);
   assert.deepEqual(indexableTopics([growing, draft, noindex], topics), [topics[1]]);
-  assert.ok(pageSitemap([growing, draft, noindex], topics).includes('/clipart/new-subject/'));
+  assert.ok(allPages([growing, draft, noindex], topics).includes('/clipart/new-subject/'));
   assert.deepEqual(directoryArtwork([growing, draft, noindex], [topics[0]]), [growing]);
   const completed = Array.from({ length: 50 }, (_, i) => ({ ...growing, id: `new-${i}` }));
   assert.deepEqual(directoryArtwork([...complete, ...completed], topics), []);
 });
 
-test('growing catalogs split automatically while retaining the first sitemap URLs', () => {
+test('growing catalogs retain distinct families and a 10,000 URL bound', () => {
   const art = Array.from({ length: 50001 }, (_, index) => ({ ...example, id: `growing-${index}` }));
   const documents = sitemapDocuments(art, []);
   assert.deepEqual(
     documents.map((document) => document.kind),
-    ['pages', 'pages-2', 'images', 'images-2'],
+    [
+      'pages',
+      ...Array.from({ length: 6 }, (_, i) => `art-${i + 1}`),
+      ...Array.from({ length: 6 }, (_, i) => `images-${i + 1}`),
+    ],
   );
-  const pages = documents.filter((document) => document.kind.startsWith('pages'));
+  const pages = documents.filter((document) => document.kind.startsWith('art-'));
   const images = documents.filter((document) => document.kind.startsWith('images'));
   for (const document of documents) {
-    assert.ok([...document.xml.matchAll(/<url>/g)].length <= 50000);
+    assert.ok([...document.xml.matchAll(/<url>/g)].length <= 10000);
     assert.ok(Buffer.byteLength(document.xml) <= 50 * 1024 ** 2);
   }
   assert.equal(
@@ -76,7 +85,7 @@ test('100,001 approved artworks produce complete bounded image sitemap partition
   const images = documents.filter((document) => document.kind.startsWith('images'));
   assert.deepEqual(
     images.map((document) => document.kind),
-    ['images', 'images-2', 'images-3'],
+    Array.from({ length: 11 }, (_, i) => `images-${i + 1}`),
   );
   const urls = images.flatMap((document) => {
     assert.ok(Buffer.byteLength(document.xml) <= SITEMAP_MAX_BYTES);
@@ -93,12 +102,12 @@ test('sitemap splitting respects UTF-8 bytes as well as URL counts', () => {
   const parts = partitionSitemapEntries(
     [entry, entry, entry],
     false,
-    50000,
+    10000,
     overhead + Buffer.byteLength(entry) * 2,
   );
   assert.equal(parts.length, 2);
   assert.throws(() =>
-    partitionSitemapEntries([entry], false, 50000, overhead + Buffer.byteLength(entry) - 1),
+    partitionSitemapEntries([entry], false, 10000, overhead + Buffer.byteLength(entry) - 1),
   );
 });
 
@@ -115,7 +124,7 @@ test('unapproved and noindex assets never enter the image or page sitemap', () =
   const noindex = { ...example, id: 'noindex', indexable: false };
   assert.deepEqual(approvedArt([draft, noindex, example]), [example]);
   for (const xml of [
-    pageSitemap([draft, noindex, example], []),
+    allPages([draft, noindex, example], []),
     imageSitemap([draft, noindex, example]),
   ]) {
     assert.ok(xml.includes('/art/pumpkin-01/'));
@@ -133,9 +142,9 @@ test('new approved subjects enter HTML/XML discovery and drafts do not hide an e
   }));
   const draft = { ...items[0], id: 'future-draft', published: false };
   assert.deepEqual(indexableTopics([...items, draft], [topic]), [topic]);
-  assert.ok(pageSitemap([...items, draft], [topic]).includes('/clipart/new-subject/'));
+  assert.ok(allPages([...items, draft], [topic]).includes('/clipart/new-subject/'));
   assert.deepEqual(indexableTopics(items.slice(0, 1), [topic]), [topic]);
-  assert.ok(pageSitemap(items.slice(0, 1), [topic]).includes('/clipart/new-subject/'));
+  assert.ok(allPages(items.slice(0, 1), [topic]).includes('/clipart/new-subject/'));
   assert.deepEqual(indexableTopics([], [topic]), []);
   assert.deepEqual(
     indexableTopics(
@@ -148,9 +157,9 @@ test('new approved subjects enter HTML/XML discovery and drafts do not hide an e
 
 test('the pilot index excludes an empty image sitemap; approval adds a real child', () => {
   assert.ok(sitemapIndex([]).includes('/sitemap-pages.xml'));
-  assert.ok(!sitemapIndex([]).includes('/sitemap-images.xml'));
+  assert.ok(!sitemapIndex([]).includes('/sitemap-images-1.xml'));
   assert.throws(() => imageSitemap([]), /empty image sitemap/);
-  assert.ok(sitemapIndex([example]).includes('/sitemap-images.xml'));
+  assert.ok(sitemapIndex([example]).includes('/sitemap-images-1.xml'));
   assert.ok(imageSitemap([example]).includes(`<image:loc>${example.webp}</image:loc>`));
 });
 
@@ -160,15 +169,15 @@ test('only approved nonempty topics enter the sitemap, regardless of collection 
     id: `pumpkin-${index + 1}`,
   }));
   const topics = [{ slug: 'pumpkin' }];
-  assert.ok(pageSitemap(collection, topics).includes('/clipart/pumpkin/'));
+  assert.ok(allPages(collection, topics).includes('/clipart/pumpkin/'));
   assert.ok(
-    pageSitemap([...collection, { ...example, id: 'pumpkin-extra' }], topics).includes(
+    allPages([...collection, { ...example, id: 'pumpkin-extra' }], topics).includes(
       '/clipart/pumpkin/',
     ),
   );
-  assert.ok(pageSitemap(collection.slice(0, 1), topics).includes('/clipart/pumpkin/'));
+  assert.ok(allPages(collection.slice(0, 1), topics).includes('/clipart/pumpkin/'));
   assert.ok(
-    !pageSitemap([{ ...collection[0], indexable: false }], topics).includes('/clipart/pumpkin/'),
+    !allPages([{ ...collection[0], indexable: false }], topics).includes('/clipart/pumpkin/'),
   );
 });
 
@@ -179,7 +188,7 @@ test('public catalog entry pages and nonempty primary collections share sitemap 
     { slug: 'draft-subject', cluster: 'Draft Collection' },
   ];
   const approved = { ...example, topic: 'fresh-subject', monochrome: true };
-  const xml = pageSitemap(
+  const xml = allPages(
     [approved, { ...approved, id: 'draft', topic: 'draft-subject', published: false }],
     topics,
   );
@@ -197,8 +206,8 @@ test('public catalog entry pages and nonempty primary collections share sitemap 
     '/search/',
   ])
     assert.ok(!xml.includes(`https://ultraclipart.com${route}`), route);
-  assert.ok(!pageSitemap([], topics).includes('/new/'));
-  assert.ok(!pageSitemap([example], topics).includes('/black-and-white/'));
+  assert.ok(!allPages([], topics).includes('/new/'));
+  assert.ok(!allPages([example], topics).includes('/black-and-white/'));
 });
 
 test('XML output escapes all reserved characters and real image URL queries', () => {
@@ -210,4 +219,25 @@ test('XML output escapes all reserved characters and real image URL queries', ()
   assert.ok(!xml.includes('art.webp?a=1&b=2'));
   assert.match(xml, /xmlns:image="http:\/\/www.google.com\/schemas\/sitemap-image\/1.1"/);
   assert.ok(!xml.includes('<lastmod>'), 'Do not fabricate modification dates');
+});
+
+test('each canonical page appears once in its own family and image maps use the same landing page', () => {
+  const row = { ...example, publicSlug: 'golden-pumpkin' };
+  const docs = sitemapDocuments([row], [{ slug: 'pumpkin', cluster: 'Nature' }]);
+  const regular = docs.filter((d) => !d.kind.startsWith('images'));
+  const locations = regular.flatMap((d) =>
+    [...d.xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]),
+  );
+  assert.equal(new Set(locations).size, locations.length);
+  for (const d of regular)
+    for (const m of d.xml.matchAll(/<loc>([^<]+)<\/loc>/g)) {
+      if (m[1].includes('/art/')) assert(d.kind.startsWith('art-'));
+      else if (m[1].includes('/clipart/')) assert(d.kind.startsWith('topics'));
+      else if (m[1].includes('/collection/')) assert(d.kind.startsWith('collections'));
+      else assert(d.kind.startsWith('pages'));
+    }
+  assert(locations.includes('https://ultraclipart.com/art/golden-pumpkin/'));
+  assert(!locations.includes('https://ultraclipart.com/art/pumpkin-01/'));
+  assert(docs.find((d) => d.kind === 'images-1').xml.includes('/art/golden-pumpkin/'));
+  assert.throws(() => partitionSitemapEntries([], false, 10001));
 });

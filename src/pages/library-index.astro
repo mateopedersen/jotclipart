@@ -1,4 +1,5 @@
 ---
+import { artworkPath } from '../lib/artwork-route.mjs';
 import { displayTitle } from '../lib/display-title';
 import Layout from '../layouts/Layout.astro';
 import CatalogCount from '../components/CatalogCount.astro';
@@ -206,7 +207,7 @@ const information = [
         <ul class="library-individual-artwork">
           {individualArtwork.map((item) => (
             <li>
-              <a href={`/art/${item.id}/`} data-index-artwork>
+              <a href={artworkPath(item)} data-index-artwork>
                 <img
                   src={item.thumb}
                   srcset={item.thumbSrcSet}

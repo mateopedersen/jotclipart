@@ -1,4 +1,5 @@
 ---
+import { artworkPath } from '../lib/artwork-route.mjs';
 import EditorialIllustration from './EditorialIllustration.astro';
 import TeacherSymbol from './TeacherSymbol.astro';
 import { publishedArt } from '../lib/catalog';
@@ -69,7 +70,7 @@ const reviewed = new Intl.DateTimeFormat('en', {
           height={example.height}
           fetchpriority="high"
         />
-        <a href={`/art/${example.id}/`} data-editorial-example={example.id}>
+        <a href={artworkPath(example)} data-editorial-example={example.id}>
           {example.title} <span aria-hidden="true">↗</span>
         </a>
         <span class="ep-example-caption">An illustration from the UltraClipart library</span>

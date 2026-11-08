@@ -351,22 +351,7 @@ p {
       (100% - (var(--gallery-columns) - 1) * var(--gallery-gap)) / var(--gallery-columns) - 0.1px
     );
 }
-/* Preserve card order and count. A 32-item gallery fits eight full four-card rows;
-   other incomplete rows stay centered with the same card width as the full rows. */
-@media (min-width: 1151px) {
-  .gallery:not(.home-recent-grid):has(> .art-card:last-child:nth-child(4n)):not(
-      :has(> .art-card:last-child:nth-child(5n))
-    ) {
-    --gallery-columns: 4;
-  }
-}
-@media (min-width: 581px) and (max-width: 900px) {
-  .gallery:not(.home-recent-grid):has(> .art-card:last-child:nth-child(2n)):not(
-      :has(> .art-card:last-child:nth-child(3n))
-    ) {
-    --gallery-columns: 2;
-  }
-}
+/* Column count follows the viewport, never the number of appended cards. */
 .art-card {
   container: artwork-card / inline-size;
   display: flex;

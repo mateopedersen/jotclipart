@@ -1,5 +1,5 @@
 import { readSurprisePicks } from './surprise-picks.mjs';
-import { readArtwork } from './artwork-facet-reader.mjs';
+import { readPublicArtwork as readArtwork } from './public-artwork-routes.mjs';
 import { readBoundedRelated } from './related-bounded-reader.mjs';
 import { lookupHashedRecord } from './hashed-record-directory.mjs';
 import { readSharedArtwork } from './shared-artwork-context.mjs';

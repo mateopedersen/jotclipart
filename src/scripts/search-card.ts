@@ -1,3 +1,4 @@
+import { artworkPath, artworkURL } from '../lib/artwork-route.mjs';
 import { displayTitle } from '../lib/display-title.ts';
 import type { SearchCard } from '../lib/search-index';
 import { actionIconAssets } from '../lib/action-icons';
@@ -10,7 +11,7 @@ export function renderCard(item: SearchCard): HTMLElement {
   share.className = 'share-trigger share-trigger-card';
   share.dataset.shareArt = '';
   share.dataset.shareTitle = item.title;
-  share.dataset.shareUrl = `https://ultraclipart.com/art/${item.id}/`;
+  share.dataset.shareUrl = artworkURL(item);
   share.dataset.shareImage = item.webp;
   share.setAttribute('aria-label', `Share ${item.title}`);
   share.title = 'Share this clipart';
@@ -24,7 +25,7 @@ export function renderCard(item: SearchCard): HTMLElement {
     a.className = className;
     return a;
   };
-  const detail = `/art/${item.id}/`,
+  const detail = artworkPath(item),
     picture = link('', detail, 'art-picture'),
     image = document.createElement('img');
   image.loading = 'lazy';

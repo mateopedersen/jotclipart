@@ -4,9 +4,11 @@ import { sitemapDocuments } from '../lib/sitemaps';
 const documents = sitemapDocuments(art, topics);
 
 export function getStaticPaths() {
-  return documents.map((document) => ({
-    params: { kind: document.kind },
-  }));
+  return documents
+    .filter((d) => d.kind !== 'collections')
+    .map((document) => ({
+      params: { kind: document.kind },
+    }));
 }
 
 export const GET: APIRoute = ({ params }) =>

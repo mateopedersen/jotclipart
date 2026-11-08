@@ -26,7 +26,7 @@ export function readIndexedSitemaps(directory, site) {
       url.origin !== new URL(site).origin ||
       url.search ||
       url.hash ||
-      !/^\/sitemap-(?:(?:pages|images)(?:-(?:[2-9]|[1-9]\d+))?|collections)\.xml$/.test(
+      !/^\/sitemap-(?:(?:pages|topics|collections|art|images)(?:-[1-9]\d*)?)\.xml$/.test(
         url.pathname,
       )
     ) {

@@ -141,8 +141,8 @@ const number = (value: number) => value.toLocaleString('en-US');
       Showing close spelling matches for your search.
     </p>
     <div class="gallery bw-gallery" id="bw-results" aria-label="Clipart results">
-      {initial.map((item) => (
-        <Card item={item} />
+      {initial.map((item, index) => (
+        <Card item={item} priority={index < 4} />
       ))}
     </div>
     <div class="bw-empty" id="bw-empty" hidden>

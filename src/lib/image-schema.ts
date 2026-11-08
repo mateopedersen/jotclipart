@@ -1,3 +1,4 @@
+import { artworkURL } from './artwork-route.mjs';
 import { displayTitle } from './display-title.ts';
 /** Catalog image facts shared by detail pages, collections and the build audit. */
 import { ORGANIZATION_ID } from './page-seo.ts';
@@ -8,6 +9,7 @@ export const IMAGE_COPYRIGHT =
 
 type CatalogImage = {
   id: string;
+  publicSlug?: string;
   title: string;
   alt: string;
   description: string;
@@ -35,12 +37,12 @@ export function imageObject(item: CatalogImage, options: ImageOptions = {}) {
   return {
     ...(options.context ? { '@context': 'https://schema.org' } : {}),
     '@type': 'ImageObject',
-    '@id': originalImage ? artworkImageId(item.id) : `${contentUrl}#image`,
+    '@id': originalImage ? artworkURL(item) + '#image' : `${contentUrl}#image`,
     name: displayTitle(item.title),
     description: item.description,
     caption: item.alt,
     contentUrl,
-    url: new URL(`art/${encodeURIComponent(item.id)}/`, IMAGE_SITE).href,
+    url: artworkURL(item),
     thumbnailUrl: absoluteImageUrl(options.thumbnailUrl ?? item.thumb),
     encodingFormat: /\.svg(?:$|[?#])/i.test(contentUrl) ? 'image/svg+xml' : 'image/webp',
     ...(options.width === null ? {} : { width: options.width ?? item.width }),
@@ -55,10 +57,10 @@ export function imageObject(item: CatalogImage, options: ImageOptions = {}) {
     copyrightNotice: IMAGE_COPYRIGHT,
     license: IMAGE_LICENSE,
     acquireLicensePage: IMAGE_LICENSE,
-    ...(!originalImage ? { isBasedOn: { '@id': artworkImageId(item.id) } } : {}),
+    ...(!originalImage ? { isBasedOn: { '@id': artworkURL(item) + '#image' } } : {}),
     ...(options.primary
       ? {
-          mainEntityOfPage: new URL(`art/${encodeURIComponent(item.id)}/`, IMAGE_SITE).href,
+          mainEntityOfPage: artworkURL(item),
           representativeOfPage: true,
         }
       : {}),

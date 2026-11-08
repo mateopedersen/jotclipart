@@ -3,7 +3,7 @@ import { readShellField } from '../catalog-projections/shell.mjs';
 import { readSurprisePicks } from './surprise-picks.mjs';
 import { readStudioFeaturedCount } from './studio-featured-count.mjs';
 // Snapshot-only inputs for existing catalog shells; no full artwork catalog.
-import { readArtwork } from './artwork-facet-reader.mjs';
+import { readPublicArtwork as readArtwork } from './public-artwork-routes.mjs';
 import { readSharedArtwork } from './shared-artwork-context.mjs';
 import { openSevenFacetCollectionContext } from './collection-context.mjs';
 import { newestIDs, recentSubjectIDs } from './recent-ledger.mjs';

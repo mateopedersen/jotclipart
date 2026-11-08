@@ -1,3 +1,5 @@
+import { publicRouteForId } from '../../server/catalog-snapshot/public-artwork-routes.mjs';
+import { sitemapChangeFamily } from '../../server/catalog-snapshot/sitemap-policy.mjs';
 // Source-approved metadata composition. No template compilation, native exports, remote writes or activation.
 // Optional bounded discovery HTML preparation reads authenticated metadata only.
 import { createDeltaStore } from './delta-store.mjs';
@@ -25,8 +27,8 @@ const xml = (text) =>
     ),
   location = (kind, id) => `https://ultraclipart.com/${kind}/${id}/`,
   pageEntry = (loc) => `<url><loc>${xml(loc)}</loc></url>`,
-  imageEntry = (a) =>
-    `<url><loc>${xml(location('art', a.id))}</loc><image:image><image:loc>${xml(a.webp)}</image:loc></image:image></url>`;
+  imageEntry = (a, loc = location('art', a.id)) =>
+    `<url><loc>${xml(loc)}</loc><image:image><image:loc>${xml(a.webp)}</image:loc></image:image></url>`;
 export async function buildCatalogDelta({
   parentContext,
   parentBucket,
@@ -53,7 +55,11 @@ export async function buildCatalogDelta({
     typeof refreshViews !== 'function'
   )
     throw Error('Bounded reviewed source delta, topics and all view refreshes required');
-  const overlay = createDeltaStore(parentBucket, parentContext, preparePresentation ? {maxBytes:256*1024*1024} : {}),
+  const overlay = createDeltaStore(
+      parentBucket,
+      parentContext,
+      preparePresentation ? { maxBytes: 256 * 1024 * 1024 } : {},
+    ),
     bucket = overlay.bucket,
     base = await openSnapshot(bucket, {
       provided: parentContext.snapshot,
@@ -243,6 +249,7 @@ export async function buildCatalogDelta({
     },
     sitemapChanges = [];
   async function sitemapChange(kind, loc, oldEntry, entry) {
+    kind = sitemapChangeFamily(sitemapRoot, kind, loc);
     const prior = await mapGet(sitemapStore, sitemapRoot.slots, 'sitemap-slots', kind + '|' + loc);
     if ((prior?.entrySHA256 ?? null) !== (oldEntry ? await digest(oldEntry) : null))
       throw Error('Sitemap/source parent mismatch');
@@ -250,7 +257,10 @@ export async function buildCatalogDelta({
       sitemapChanges.push({ kind, loc, expectedEntrySHA256: prior?.entrySHA256 ?? null, entry });
   }
   for (const c of prepared) {
-    const loc = location('art', c.id);
+    const slug = await publicRouteForId(current, c.id),
+      loc = location('art', slug);
+    if (c.oldRecord && (await publicRouteForId(base, c.id)) !== slug)
+      throw Error('An import must preserve an existing public URL');
     await sitemapChange(
       'pages',
       loc,
@@ -260,8 +270,8 @@ export async function buildCatalogDelta({
     await sitemapChange(
       'images',
       loc,
-      c.oldRecord ? imageEntry(c.oldRecord) : null,
-      c.record ? imageEntry(c.record) : null,
+      c.oldRecord ? imageEntry(c.oldRecord, loc) : null,
+      c.record ? imageEntry(c.record, loc) : null,
     );
   }
   for (const t of topicChanges) {
@@ -364,10 +374,17 @@ export async function buildCatalogDelta({
     });
   let presentationReceipt;
   if (preparePresentation) {
-    const presentationContext=await openSnapshot(bucket,{provided:candidate,allowFixture:true,maxReadObjects:20000,maxReadBytes:256*1024*1024});
-    const prepared=await preparePresentation({context:presentationContext,bucket});
-    if(!prepared?.collections||!prepared?.receipt)throw Error('Canonical presentation stage missing');
-    indexes.collections=prepared.collections;presentationReceipt=prepared.receipt;
+    const presentationContext = await openSnapshot(bucket, {
+      provided: candidate,
+      allowFixture: true,
+      maxReadObjects: 20000,
+      maxReadBytes: 256 * 1024 * 1024,
+    });
+    const prepared = await preparePresentation({ context: presentationContext, bucket });
+    if (!prepared?.collections || !prepared?.receipt)
+      throw Error('Canonical presentation stage missing');
+    indexes.collections = prepared.collections;
+    presentationReceipt = prepared.receipt;
   }
   const graph = overlay.verifyChangedClosure(indexes);
   return {
@@ -380,7 +397,7 @@ export async function buildCatalogDelta({
     metrics: overlay.metrics(),
     searchMetrics: searchStore.metrics(),
     collectionMetrics: ccStore.metrics(),
-    ...(presentationReceipt?{presentationReceipt}:{}),
+    ...(presentationReceipt ? { presentationReceipt } : {}),
     fullCatalogPagesBuilt: 0,
     fullCatalogScans: presentationReceipt ? 1 : 0,
     preparedDiscoveryDocuments: presentationReceipt?.canonicalDocumentsPrepared ?? 0,

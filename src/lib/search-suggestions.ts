@@ -1,3 +1,4 @@
+import { artworkPath } from './artwork-route.mjs';
 import { displayTitle } from './display-title.ts';
 import { normalizeQuery, queryTerms, termVariants } from './search-language.ts';
 import { preparedSiteEntry, searchKindLabels, type SiteSearchEntry } from './site-search.ts';
@@ -22,9 +23,15 @@ export function isDirectSearchMatch(entry: SiteSearchEntry, query: string) {
   const title = preparedSiteEntry(entry).title;
   return (
     words.length > 0 &&
-    words.every((word, index) => termVariants(word).some((term) =>
-      title.includes(term) || (index === words.length - 1 && term.length >= 2 &&
-        title.some((part) => part.startsWith(term)))))
+    words.every((word, index) =>
+      termVariants(word).some(
+        (term) =>
+          title.includes(term) ||
+          (index === words.length - 1 &&
+            term.length >= 2 &&
+            title.some((part) => part.startsWith(term))),
+      ),
+    )
   );
 }
 
@@ -43,7 +50,7 @@ export function searchSuggestions(
     ...direct.slice(0, 2).map(toSuggestion),
     ...artwork.slice(0, 4).map((item) => ({
       title: displayTitle(item.title),
-      href: `/art/${item.id}/`,
+      href: artworkPath(item),
       kind: 'Artwork',
       thumb: item.suggestionThumb ?? item.thumb,
       ...(!item.suggestionThumb && item.thumbSrcSet ? { thumbSrcSet: item.thumbSrcSet } : {}),

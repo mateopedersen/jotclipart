@@ -39,7 +39,12 @@ async function verifyNativeContentWithSource({
 }) {
   const sourcePacket = packet,
     sourcePacketSHA256 = sha(Buffer.from(JSON.stringify(sourcePacket)));
-  if(packet.status==='SOURCE_DERIVED_PRESENTATION_BATCH')packet={changes:[],topicChanges:[]};
+  if (
+    ['SOURCE_DERIVED_PRESENTATION_BATCH', 'SOURCE_DERIVED_URL_MIGRATION_BATCH'].includes(
+      packet.status,
+    )
+  )
+    packet = { changes: [], topicChanges: [] };
   if (packet.status === 'SOURCE_REVIEWED_COLLECTION_PROSE_BATCH') {
     const sourceBucket = {
       get: async (key) => {
@@ -208,25 +213,129 @@ async function verifyNativeContentWithSource({
       assert.equal(r.status, 200, path + ' ' + r.headers.get('x-private-error'));
       results.push({ path, status: r.status, sha256: sha(Buffer.from(body)) });
     }
-    if(preparedPresentation?.studio){
-      const source=preparedPresentation.studio;
-      const {snapshotDigest}=await import('../../server/catalog-snapshot/release-pointer.mjs');
-      const root=await snapshotDigest(candidate);
-      for(const path of ['/studio-featured.json','/studio-catalog.json']){
-        const r=await mf.dispatchFetch('https://ultraclipart.com'+path,{headers}),body=await r.text(),info=JSON.parse(body);
-        assert.equal(r.status,200,path);assert.equal(r.headers.get('x-uc-data-source'),'prepared',path);
-        assert.equal(info.transport.snapshot,root);assert.equal(info.items.length,source.entries);
-        assert.equal(sha(Buffer.from(body.split(root).join(source.sourceRoot))),source.sourceBodySHA256,path+' canonical Studio data');
-        results.push({path,status:r.status,source:'prepared-data',sha256:sha(Buffer.from(body))});
+    if (preparedPresentation?.studio) {
+      const source = preparedPresentation.studio;
+      const { snapshotDigest } = await import('../../server/catalog-snapshot/release-pointer.mjs');
+      const root = await snapshotDigest(candidate);
+      for (const path of ['/studio-featured.json', '/studio-catalog.json']) {
+        const r = await mf.dispatchFetch('https://ultraclipart.com' + path, { headers }),
+          body = await r.text(),
+          info = JSON.parse(body);
+        assert.equal(r.status, 200, path);
+        assert.equal(r.headers.get('x-uc-data-source'), 'prepared', path);
+        assert.equal(info.transport.snapshot, root);
+        assert.equal(info.items.length, source.entries);
+        assert.equal(
+          sha(Buffer.from(body.split(root).join(source.sourceRoot))),
+          source.sourceBodySHA256,
+          path + ' canonical Studio data',
+        );
+        results.push({
+          path,
+          status: r.status,
+          source: 'prepared-data',
+          sha256: sha(Buffer.from(body)),
+        });
       }
     }
-    if(preparedPresentation){
-      const paths=preparedPresentation.receipts.map(r=>r.path);
-      if(paths.length>1536||new Set(paths).size!==paths.length)throw Error('Prepared native route budget');
-      for(const path of paths){const r=await mf.dispatchFetch('https://ultraclipart.com'+path,{headers}),body=await r.text();
-        assert.equal(r.status,200,path+' prepared route');assert(body.includes('name="catalog-snapshot"'));
-        assert.equal(r.headers.get('x-uc-html-source'),'prepared',path+' prepared source');
-        results.push({path,status:r.status,sha256:sha(Buffer.from(body)),source:'prepared'});
+    if (preparedPresentation) {
+      const paths = preparedPresentation.receipts.map((r) => r.path);
+      if (paths.length > 1536 || new Set(paths).size !== paths.length)
+        throw Error('Prepared native route budget');
+      for (const path of paths) {
+        const r = await mf.dispatchFetch('https://ultraclipart.com' + path, { headers }),
+          body = await r.text();
+        assert.equal(r.status, 200, path + ' prepared route');
+        assert(body.includes('name="catalog-snapshot"'));
+        assert.equal(r.headers.get('x-uc-html-source'), 'prepared', path + ' prepared source');
+        results.push({
+          path,
+          status: r.status,
+          sha256: sha(Buffer.from(body)),
+          source: 'prepared',
+        });
+      }
+    }
+    if (sourcePacket.status === 'SOURCE_DERIVED_URL_MIGRATION_BATCH') {
+      const plan = JSON.parse(readFileSync('data/routes/artwork-public-urls-v1.json'));
+      assert.equal(plan.parentRoot, sourcePacket.parentSnapshotSHA256);
+      let cursor = 0;
+      await Promise.all(
+        Array.from({ length: 4 }, async () => {
+          while (cursor < plan.changes.length) {
+            const c = plan.changes[cursor++],
+              path = '/art/' + c.id + '/',
+              expectedLocation = 'https://ultraclipart.com/art/' + c.slug + '/';
+            const r = await mf.dispatchFetch('https://ultraclipart.com' + path, {
+              headers,
+              redirect: 'manual',
+            });
+            assert.equal(r.status, 301, path);
+            assert.equal(r.headers.get('location'), expectedLocation, path);
+            await r.arrayBuffer();
+            results.push({ path, status: 301, expectedLocation, source: 'legacy-redirect' });
+          }
+        }),
+      );
+      const samples = [
+        ...plan.changes.filter((c) =>
+          ['futsal-20261107-002', 'walmart-20261104-004'].includes(c.id),
+        ),
+        ...plan.changes.filter((_, i) => i % Math.ceil(plan.changes.length / 32) === 0),
+      ];
+      for (const c of samples) {
+        const path = '/art/' + c.slug + '/',
+          r = await mf.dispatchFetch('https://ultraclipart.com' + path, {
+            headers,
+            redirect: 'manual',
+          }),
+          html = await r.text();
+        assert.equal(r.status, 200, path);
+        assert(html.includes('rel="canonical" href="https://ultraclipart.com' + path + '"'), path);
+        assert(html.includes('https://assets.ultraclipart.com/'), path);
+        assert.equal(
+          decode(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? ''),
+          displayTitle(c.title),
+          path,
+        );
+        results.push({
+          path,
+          status: 200,
+          source: 'canonical-migrated-detail',
+          sha256: sha(Buffer.from(html)),
+        });
+      }
+      const r = await mf.dispatchFetch('https://ultraclipart.com/sitemap.xml', { headers }),
+        index = await r.text(),
+        pageURLs = new Set(),
+        imageURLs = new Set();
+      for (const m of index.matchAll(
+        /<loc>(https:\/\/ultraclipart.com\/sitemap-([^<]+)\.xml)<\/loc>/g,
+      )) {
+        const response = await mf.dispatchFetch(m[1], { headers }),
+          xml = await response.text();
+        assert.equal(response.status, 200);
+        const urls = [...xml.matchAll(/<url><loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+        assert(urls.length <= 10000);
+        const set = m[2].startsWith('images') ? imageURLs : pageURLs;
+        for (const url of urls) {
+          assert(!set.has(url), 'Repeated sitemap URL');
+          set.add(url);
+        }
+        results.push({
+          path: new URL(m[1]).pathname,
+          status: 200,
+          source: 'sitemap-family',
+          urls: urls.length,
+          sha256: sha(Buffer.from(xml)),
+        });
+      }
+      assert.equal(imageURLs.size, plan.total);
+      for (const c of plan.changes) {
+        const url = 'https://ultraclipart.com/art/' + c.slug + '/';
+        assert(pageURLs.has(url));
+        assert(imageURLs.has(url));
+        assert(!pageURLs.has('https://ultraclipart.com/art/' + c.id + '/'));
       }
     }
     return {

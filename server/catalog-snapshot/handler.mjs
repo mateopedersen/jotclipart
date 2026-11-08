@@ -1,11 +1,13 @@
-import {readPreparedHTML} from './prepared-html.mjs';
-import {readPreparedStudioInfo} from './prepared-studio.mjs';
+import { resolvePublicArtworkRoute } from './public-artwork-routes.mjs';
+import { separatedSitemaps } from './sitemap-policy.mjs';
+import { readPreparedHTML } from './prepared-html.mjs';
+import { readPreparedStudioInfo } from './prepared-studio.mjs';
 import { preloadDocumentModules } from './module-preloads.mjs';
 import { navigationRulesResponse, publicNavigationDocument } from './navigation-speculation.mjs';
 import { snapshotHTMLResponse } from './snapshot-html-cache.mjs';
 import { readSurprisePicks } from './surprise-picks.mjs';
 import { readCollectionReferences } from '../catalog-collections/reader.mjs';
-import { readArtwork } from './artwork-facet-reader.mjs';
+import { readPublicArtwork as readArtwork } from './public-artwork-routes.mjs';
 // Integration handler: injected capture must authenticate production snapshots.
 import { readArtworkPageState } from './art-page-data.mjs';
 import { readEditorPageState } from './editor-page-data.mjs';
@@ -75,7 +77,9 @@ export function createCatalogHandler({
       art = /^\/(art|edit)\/([a-z0-9]+(?:-[a-z0-9]+)*)\/$/.exec(path),
       topic = /^\/clipart\/([a-z0-9]+(?:-[a-z0-9]+)*)\/$/.exec(path),
       cluster = /^\/collection\/([a-z0-9]+(?:-[a-z0-9]+)*)\/$/.exec(path),
-      xml = /^\/sitemap(?:-(?:(?:pages|images)(?:-\d+)?|collections))?\.xml$/.test(path),
+      xml = /^\/sitemap(?:-(?:(?:pages|topics|collections|art|images)(?:-[1-9]\d*)?))?\.xml$/.test(
+        path,
+      ),
       kind = paths[path],
       siteDirectory = /^\/search-data\/([a-f0-9]{64})\/(?:site|navigation)\.json$/.exec(path);
     if (request.method === 'GET' || request.method === 'HEAD') {
@@ -156,16 +160,42 @@ export function createCatalogHandler({
         defer,
         ...uiProviders,
       });
+      if (
+        xml &&
+        path === '/sitemap-images.xml' &&
+        separatedSitemaps(await context.getFacet('sitemaps'))
+      )
+        return Response.redirect(new URL('/sitemap-images-1.xml', url.origin), 301);
+      let resolvedArtwork;
+      if (art && art[1] === 'art') {
+        resolvedArtwork = await resolvePublicArtworkRoute(context, art[2]);
+        if (!resolvedArtwork) return missing();
+        if (resolvedArtwork.slug !== art[2]) {
+          if (!(await readArtwork(context, resolvedArtwork.id))) return missing();
+          return Response.redirect(new URL('/art/' + resolvedArtwork.slug + '/', url.origin), 301);
+        }
+      }
       let response;
       if (siteDirectory) response = await api.siteDirectory(request, siteDirectory[1]);
       else if (path === '/catalog-search.json') response = await api.post(request);
       else if (path === '/search-data/manifest.json') response = await api.manifest(request);
       else if (path === '/studio-manifest.json') response = await api.studioManifest(request);
       else if (path === '/studio-featured.json' || path === '/studio-catalog.json') {
-        const prepared=rendererSHA256?await readPreparedStudioInfo(context,rendererSHA256):null;
-        response=prepared===null?await api.studioCatalog(request):new Response(prepared,{headers:{'Content-Type':'application/json','Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff','x-uc-data-source':'prepared'}});
-      }
-      else if (path === '/catalog-stats.json') {
+        const prepared = rendererSHA256
+          ? await readPreparedStudioInfo(context, rendererSHA256)
+          : null;
+        response =
+          prepared === null
+            ? await api.studioCatalog(request)
+            : new Response(prepared, {
+                headers: {
+                  'Content-Type': 'application/json',
+                  'Cache-Control': 'private, no-store',
+                  'X-Content-Type-Options': 'nosniff',
+                  'x-uc-data-source': 'prepared',
+                },
+              });
+      } else if (path === '/catalog-stats.json') {
         const c = await cc(),
           base =
             url.searchParams.get('scope') === 'visible'
@@ -198,7 +228,10 @@ export function createCatalogHandler({
         );
       } else if (xml) {
         let body;
-        if (path === '/sitemap-collections.xml' || path === '/sitemap.xml') {
+        if (
+          (path === '/sitemap-collections.xml' || path === '/sitemap.xml') &&
+          !separatedSitemaps(await context.getFacet('sitemaps'))
+        ) {
           const c = await cc(),
             keys = [...new Set([...curatedBySlug.values()].flatMap((g) => g.topicSlugs))],
             counts = {};
@@ -244,101 +277,105 @@ export function createCatalogHandler({
         );
       } else {
         const generate = async () => {
-          let state, html=await readPreparedHTML(context,path,rendererSHA256);
-          resultHeaders["x-uc-html-source"]=html===null?"rendered":"prepared";
-          if(html===null){html=undefined;
-          if (path === '/') {
-            state = await readHomePageState(bucket, context, { allowFixture: allowPrivateFixture });
-            html = await renderHome(state, 'https://ultraclipart.com/', homeCSS, homeScripts);
-          } else if (art) {
-            state =
-              art[1] === 'art'
-                ? await readArtworkPageState(bucket, context, art[2], {
-                    allowFixture: allowPrivateFixture,
-                  })
-                : await readEditorPageState(bucket, context, art[2], {
-                    allowFixture: allowPrivateFixture,
-                  });
-            if (state)
-              html =
+          let state,
+            html = await readPreparedHTML(context, path, rendererSHA256);
+          resultHeaders['x-uc-html-source'] = html === null ? 'rendered' : 'prepared';
+          if (html === null) {
+            html = undefined;
+            if (path === '/') {
+              state = await readHomePageState(bucket, context, {
+                allowFixture: allowPrivateFixture,
+              });
+              html = await renderHome(state, 'https://ultraclipart.com/', homeCSS, homeScripts);
+            } else if (art) {
+              state =
                 art[1] === 'art'
-                  ? await renderArtwork(
-                      state,
-                      'https://ultraclipart.com' + path,
-                      artCSS,
-                      artScripts,
-                    )
-                  : await renderEditor(
-                      state,
-                      'https://ultraclipart.com' + path,
-                      editorCSS,
-                      editorScripts,
-                      editorPreloads,
-                    );
-          } else if (topic) {
-            try {
-              state = (
-                await ((await context.getFacet('collections')).viewProtocol ===
-                'collection-references-v2'
-                  ? readCollectionReferences(context, topic[1], {
-                      resolveArtwork: async (id, ctx) => ({
-                        rootSHA256: ctx.rootSHA256,
-                        artwork: await readArtwork(ctx, id),
-                      }),
-                      resolveSurprise: async (ctx) => ({
-                        rootSHA256: ctx.rootSHA256,
-                        items: await readSurprisePicks(ctx, { limit: 48 }),
-                      }),
+                  ? await readArtworkPageState(bucket, context, resolvedArtwork?.id ?? art[2], {
+                      allowFixture: allowPrivateFixture,
                     })
-                  : collectionStateFromContext(await cc(), topic[1]))
-              ).state;
-            } catch (error) {
-              if (error.status !== 404) throw error;
-            }
-            if (state)
-              html = await renderCollection(
-                state,
-                'https://ultraclipart.com' + path,
-                collectionCSS,
-                collectionScripts,
-              );
-          } else {
-            const selected = cluster ? 'cluster' : kind,
-              c = cluster ? (await cc()).global.collections[cluster[1]] : undefined,
-              clusterName = cluster
-                ? curatedBySlug.has(cluster[1])
-                  ? cluster[1]
-                  : c?.name
-                : undefined;
-            if (cluster && !clusterName) {
-              const cctx = await cc(),
-                root = await context.read('collections', cctx.collections.shells),
-                pages = root.fields.clusters;
-              for (const d of pages) {
-                const page = await context.read('collections', d, { maxBytes: 65536 });
-                for (const name of page.entries)
-                  if (
-                    name
-                      .toLowerCase()
-                      .replace(/[^a-z0-9]+/g, '-')
-                      .replace(/^-|-$/g, '') === cluster[1]
-                  )
-                    state = { cluster: name };
+                  : await readEditorPageState(bucket, context, art[2], {
+                      allowFixture: allowPrivateFixture,
+                    });
+              if (state)
+                html =
+                  art[1] === 'art'
+                    ? await renderArtwork(
+                        state,
+                        'https://ultraclipart.com' + path,
+                        artCSS,
+                        artScripts,
+                      )
+                    : await renderEditor(
+                        state,
+                        'https://ultraclipart.com' + path,
+                        editorCSS,
+                        editorScripts,
+                        editorPreloads,
+                      );
+            } else if (topic) {
+              try {
+                state = (
+                  await ((await context.getFacet('collections')).viewProtocol ===
+                  'collection-references-v2'
+                    ? readCollectionReferences(context, topic[1], {
+                        resolveArtwork: async (id, ctx) => ({
+                          rootSHA256: ctx.rootSHA256,
+                          artwork: await readArtwork(ctx, id),
+                        }),
+                        resolveSurprise: async (ctx) => ({
+                          rootSHA256: ctx.rootSHA256,
+                          items: await readSurprisePicks(ctx, { limit: 48 }),
+                        }),
+                      })
+                    : collectionStateFromContext(await cc(), topic[1]))
+                ).state;
+              } catch (error) {
+                if (error.status !== 404) throw error;
               }
-              if (!state) return missing();
+              if (state)
+                html = await renderCollection(
+                  state,
+                  'https://ultraclipart.com' + path,
+                  collectionCSS,
+                  collectionScripts,
+                );
+            } else {
+              const selected = cluster ? 'cluster' : kind,
+                c = cluster ? (await cc()).global.collections[cluster[1]] : undefined,
+                clusterName = cluster
+                  ? curatedBySlug.has(cluster[1])
+                    ? cluster[1]
+                    : c?.name
+                  : undefined;
+              if (cluster && !clusterName) {
+                const cctx = await cc(),
+                  root = await context.read('collections', cctx.collections.shells),
+                  pages = root.fields.clusters;
+                for (const d of pages) {
+                  const page = await context.read('collections', d, { maxBytes: 65536 });
+                  for (const name of page.entries)
+                    if (
+                      name
+                        .toLowerCase()
+                        .replace(/[^a-z0-9]+/g, '-')
+                        .replace(/^-|-$/g, '') === cluster[1]
+                    )
+                      state = { cluster: name };
+                }
+                if (!state) return missing();
+              }
+              state = await readShellPageState(bucket, context, selected, {
+                cluster: clusterName ?? state?.cluster,
+                allowFixture: allowPrivateFixture,
+              });
+              if (state)
+                html = await shells[selected][0](
+                  state,
+                  'https://ultraclipart.com' + path,
+                  shells[selected][1],
+                  shellScripts,
+                );
             }
-            state = await readShellPageState(bucket, context, selected, {
-              cluster: clusterName ?? state?.cluster,
-              allowFixture: allowPrivateFixture,
-            });
-            if (state)
-              html = await shells[selected][0](
-                state,
-                'https://ultraclipart.com' + path,
-                shells[selected][1],
-                shellScripts,
-              );
-          }
           }
           if (html !== undefined) {
             html = preloadDocumentModules(html, softwareRevision, renderers.moduleImports);

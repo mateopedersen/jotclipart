@@ -1,3 +1,4 @@
+import { artworkPath } from '../artwork-route.mjs';
 import { artworkCardSummary, CARD_SUMMARY_VERSION } from './summaries';
 import { normalize, safeAsset, type ArtworkInput, type Profile } from './normalize';
 import { companionSubjects, REGISTERED_TOPICS, TAXONOMY_VERSION, words } from './taxonomy';
@@ -224,7 +225,7 @@ function card(result: Ranked, group: RelatedCard['group']): RelatedCard {
     ...(safeAsset(item.pdf) && item.files?.pdf?.bytes && item.files.pdf.sha256
       ? { pdf: item.pdf }
       : {}),
-    href: `/art/${item.id}/`,
+    href: artworkPath(item),
     reason,
     reasonCode: result.reasons.join(':'),
     group,

@@ -1,26 +1,209 @@
+import { extendPublicArtworkRoutes } from './public-artwork-routes.mjs';
 // Private changed-leaf artwork writer; does not approve images or activate data.
-import {canonical,digest} from '../catalog-search/store.mjs';
-import {lookupHashedRecord} from './hashed-record-directory.mjs';
-import {updateHashedRecord} from './hashed-record-directory-update.mjs';
-const idOK=x=>typeof x==='string'&&/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(x);
-export async function applyArtworkBatch(context,changes,{revision,leafBytes=256*1024}={}){
- if(!/^[a-f0-9]{40}$/.test(revision??'')||!Array.isArray(changes)||new Set(changes.map(x=>x.id)).size!==changes.length||!Number.isSafeInteger(leafBytes)||leafBytes<256||leafBytes>1024*1024)throw Error('Invalid artwork batch');
- const original=await context.getFacet('artworks');if(original.type!=='artwork-root'||original.revision!==context.snapshot.revision||!original.directories||!original.editorPreviews)throw Error('Complete artwork baseline required');
- const created=new Map(),encoder=new TextEncoder(),groups=new Map(),priorRows=new Map();let previewRoot=original.editorPreviews;
- for(const change of changes){if(!idOK(change.id)||change.expectedPublicSHA256===undefined||(change.record!==null&&(!change.record||change.record.id!==change.id||!change.record.published||!change.record.indexable||!idOK(change.record.topic))))throw Error('Invalid reviewed artwork change');const hash=await digest(change.id),part=hash.slice(0,3);if(!groups.has(part))groups.set(part,[]);groups.get(part).push({...change,hash})}
- async function pack(value){const bytes=encoder.encode(JSON.stringify(canonical(value)));if(bytes.length>1024*1024)throw Error('Artwork object too large');const sha256=await digest(bytes),descriptor={key:`catalog/objects/artworks/${sha256}.json`,sha256,bytes:bytes.length};created.set(descriptor.key,bytes);return descriptor}
- const overlay={read:async(f,d,options)=>{const b=created.get(d.key);if(!b)return context.read(f,d,options);if(f!=='artworks'||b.length!==d.bytes||await digest(b)!==d.sha256)throw Error('Invalid changed artwork node');return JSON.parse(new TextDecoder().decode(b))}};
- async function serialize(prefix,records){const node={schema:1,shard:prefix,records:[...records].sort((a,b)=>a.id.localeCompare(b.id,'en'))};if(encoder.encode(JSON.stringify(canonical(node))).length<=leafBytes)return pack(node);if(prefix.length===64)throw Error('Artwork hash collision');const parts=new Map();for(const row of records){const key=(await digest(row.id)).slice(0,prefix.length+1);if(!parts.has(key))parts.set(key,[]);parts.get(key).push(row)}const children={};for(const [p,rows] of [...parts].sort())children[p]=await serialize(p,rows);return pack({schema:1,type:'artwork-split',prefix,children})}
- async function patch(descriptor,prefix,edits){const node=descriptor?await context.read('artworks',descriptor):{schema:1,shard:prefix,records:[]};if(node.schema!==1)throw Error('Invalid artwork schema');
-  if(node.type==='artwork-split'){if(node.prefix!==prefix||!node.children||Object.keys(node.children).length>16||Object.keys(node.children).some(k=>!k.startsWith(prefix)||k.length!==prefix.length+1||!/^[a-f0-9]+$/.test(k)))throw Error('Invalid artwork split');const nested=new Map();for(const edit of edits){const key=edit.hash.slice(0,prefix.length+1);if(!nested.has(key))nested.set(key,[]);nested.get(key).push(edit)}const children={...node.children};for(const [p,list] of nested)children[p]=await patch(children[p],p,list);return pack({...node,children})}
-  if(node.shard!==prefix||!Array.isArray(node.records)||new Set(node.records.map(x=>x.id)).size!==node.records.length)throw Error('Invalid artwork leaf');for(const row of node.records)if(!idOK(row.id)||!(await digest(row.id)).startsWith(prefix))throw Error('Artwork in wrong leaf');const rows=new Map(node.records.map(row=>[row.id,row]));
-  for(const edit of edits){const prior=rows.get(edit.id);if((prior?await digest(JSON.stringify(canonical(prior))):null)!==edit.expectedPublicSHA256)throw Error('Stale public artwork source');if(!prior&&edit.record===null)throw Error('Unknown artwork withdrawal');priorRows.set(edit.id,prior??null);if(edit.record===null)rows.delete(edit.id);else rows.set(edit.id,structuredClone(edit.record))}return serialize(prefix,[...rows.values()]);
- }
- const directories={...original.directories},byPrefix=new Map();for(const [part,edits] of groups){const p=part.slice(0,2);if(!byPrefix.has(p))byPrefix.set(p,[]);byPrefix.get(p).push([part,edits])}
- for(const [prefix,parts] of byPrefix){const descriptor=directories[prefix],old=descriptor?await context.read('artworks',descriptor):{type:'artwork-directory',prefix,shards:{}};if(old.type!=='artwork-directory'||old.prefix!==prefix||!old.shards)throw Error('Invalid artwork directory');const shards={...old.shards};for(const [part,edits] of parts)shards[part]=await patch(shards[part],part,edits);directories[prefix]=await pack({...old,shards})}
- for(const change of changes){const prior=priorRows.get(change.id),record=change.record,old=await lookupHashedRecord(overlay,'artworks',previewRoot,change.id);if(prior?.sourceType==='raster'&&(!old||old.sourceSHA256!==prior.files?.webp?.sha256))throw Error('Stale prior editor decision');let next=null;
-  if(record?.sourceType==='raster'){if(!/^[a-f0-9]{64}$/.test(record.files?.webp?.sha256??''))throw Error('Missing reviewed image hash');next=change.previewDecision??(old?.sourceSHA256===record.files.webp.sha256?old:{schema:1,type:'editor-source',id:record.id,sourceSHA256:record.files.webp.sha256});if(next.id!==record.id||next.sourceSHA256!==record.files.webp.sha256||next.type!=='editor-source'||next.schema!==1)throw Error('Invalid new editor decision')}
-  if(JSON.stringify(canonical(old??null))!==JSON.stringify(canonical(next))){const result=await updateHashedRecord(overlay,'artworks',previewRoot,{name:change.id,expectedValue:old??null,newValue:next});for(const [key,b] of result.created)created.set(key,b);previewRoot=result.root}
- }
- const root=await pack({...original,revision,directories,editorPreviews:previewRoot});return{root,created,status:'PRIVATE_ARTWORK_DELTA_ONLY_NOT_PUBLISHABLE'};
+import { canonical, digest } from '../catalog-search/store.mjs';
+import { lookupHashedRecord } from './hashed-record-directory.mjs';
+import { updateHashedRecord } from './hashed-record-directory-update.mjs';
+const idOK = (x) => typeof x === 'string' && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(x);
+export async function applyArtworkBatch(
+  context,
+  changes,
+  { revision, leafBytes = 256 * 1024 } = {},
+) {
+  if (
+    !/^[a-f0-9]{40}$/.test(revision ?? '') ||
+    !Array.isArray(changes) ||
+    new Set(changes.map((x) => x.id)).size !== changes.length ||
+    !Number.isSafeInteger(leafBytes) ||
+    leafBytes < 256 ||
+    leafBytes > 1024 * 1024
+  )
+    throw Error('Invalid artwork batch');
+  const original = await context.getFacet('artworks');
+  if (
+    original.type !== 'artwork-root' ||
+    original.revision !== context.snapshot.revision ||
+    !original.directories ||
+    !original.editorPreviews
+  )
+    throw Error('Complete artwork baseline required');
+  const created = new Map(),
+    encoder = new TextEncoder(),
+    groups = new Map(),
+    priorRows = new Map();
+  let previewRoot = original.editorPreviews;
+  for (const change of changes) {
+    if (
+      !idOK(change.id) ||
+      change.expectedPublicSHA256 === undefined ||
+      (change.record !== null &&
+        (!change.record ||
+          change.record.id !== change.id ||
+          !change.record.published ||
+          !change.record.indexable ||
+          !idOK(change.record.topic)))
+    )
+      throw Error('Invalid reviewed artwork change');
+    const hash = await digest(change.id),
+      part = hash.slice(0, 3);
+    if (!groups.has(part)) groups.set(part, []);
+    groups.get(part).push({ ...change, hash });
+  }
+  async function pack(value) {
+    const bytes = encoder.encode(JSON.stringify(canonical(value)));
+    if (bytes.length > 1024 * 1024) throw Error('Artwork object too large');
+    const sha256 = await digest(bytes),
+      descriptor = { key: `catalog/objects/artworks/${sha256}.json`, sha256, bytes: bytes.length };
+    created.set(descriptor.key, bytes);
+    return descriptor;
+  }
+  const overlay = {
+    read: async (f, d, options) => {
+      const b = created.get(d.key);
+      if (!b) return context.read(f, d, options);
+      if (f !== 'artworks' || b.length !== d.bytes || (await digest(b)) !== d.sha256)
+        throw Error('Invalid changed artwork node');
+      return JSON.parse(new TextDecoder().decode(b));
+    },
+  };
+  async function serialize(prefix, records) {
+    const node = {
+      schema: 1,
+      shard: prefix,
+      records: [...records].sort((a, b) => a.id.localeCompare(b.id, 'en')),
+    };
+    if (encoder.encode(JSON.stringify(canonical(node))).length <= leafBytes) return pack(node);
+    if (prefix.length === 64) throw Error('Artwork hash collision');
+    const parts = new Map();
+    for (const row of records) {
+      const key = (await digest(row.id)).slice(0, prefix.length + 1);
+      if (!parts.has(key)) parts.set(key, []);
+      parts.get(key).push(row);
+    }
+    const children = {};
+    for (const [p, rows] of [...parts].sort()) children[p] = await serialize(p, rows);
+    return pack({ schema: 1, type: 'artwork-split', prefix, children });
+  }
+  async function patch(descriptor, prefix, edits) {
+    const node = descriptor
+      ? await context.read('artworks', descriptor)
+      : { schema: 1, shard: prefix, records: [] };
+    if (node.schema !== 1) throw Error('Invalid artwork schema');
+    if (node.type === 'artwork-split') {
+      if (
+        node.prefix !== prefix ||
+        !node.children ||
+        Object.keys(node.children).length > 16 ||
+        Object.keys(node.children).some(
+          (k) => !k.startsWith(prefix) || k.length !== prefix.length + 1 || !/^[a-f0-9]+$/.test(k),
+        )
+      )
+        throw Error('Invalid artwork split');
+      const nested = new Map();
+      for (const edit of edits) {
+        const key = edit.hash.slice(0, prefix.length + 1);
+        if (!nested.has(key)) nested.set(key, []);
+        nested.get(key).push(edit);
+      }
+      const children = { ...node.children };
+      for (const [p, list] of nested) children[p] = await patch(children[p], p, list);
+      return pack({ ...node, children });
+    }
+    if (
+      node.shard !== prefix ||
+      !Array.isArray(node.records) ||
+      new Set(node.records.map((x) => x.id)).size !== node.records.length
+    )
+      throw Error('Invalid artwork leaf');
+    for (const row of node.records)
+      if (!idOK(row.id) || !(await digest(row.id)).startsWith(prefix))
+        throw Error('Artwork in wrong leaf');
+    const rows = new Map(node.records.map((row) => [row.id, row]));
+    for (const edit of edits) {
+      const prior = rows.get(edit.id);
+      if (
+        (prior ? await digest(JSON.stringify(canonical(prior))) : null) !==
+        edit.expectedPublicSHA256
+      )
+        throw Error('Stale public artwork source');
+      if (!prior && edit.record === null) throw Error('Unknown artwork withdrawal');
+      priorRows.set(edit.id, prior ?? null);
+      if (edit.record === null) rows.delete(edit.id);
+      else rows.set(edit.id, structuredClone(edit.record));
+    }
+    return serialize(prefix, [...rows.values()]);
+  }
+  const directories = { ...original.directories },
+    byPrefix = new Map();
+  for (const [part, edits] of groups) {
+    const p = part.slice(0, 2);
+    if (!byPrefix.has(p)) byPrefix.set(p, []);
+    byPrefix.get(p).push([part, edits]);
+  }
+  for (const [prefix, parts] of byPrefix) {
+    const descriptor = directories[prefix],
+      old = descriptor
+        ? await context.read('artworks', descriptor)
+        : { type: 'artwork-directory', prefix, shards: {} };
+    if (old.type !== 'artwork-directory' || old.prefix !== prefix || !old.shards)
+      throw Error('Invalid artwork directory');
+    const shards = { ...old.shards };
+    for (const [part, edits] of parts) shards[part] = await patch(shards[part], part, edits);
+    directories[prefix] = await pack({ ...old, shards });
+  }
+  for (const change of changes) {
+    const prior = priorRows.get(change.id),
+      record = change.record,
+      old = await lookupHashedRecord(overlay, 'artworks', previewRoot, change.id);
+    if (prior?.sourceType === 'raster' && (!old || old.sourceSHA256 !== prior.files?.webp?.sha256))
+      throw Error('Stale prior editor decision');
+    let next = null;
+    if (record?.sourceType === 'raster') {
+      if (!/^[a-f0-9]{64}$/.test(record.files?.webp?.sha256 ?? ''))
+        throw Error('Missing reviewed image hash');
+      next =
+        change.previewDecision ??
+        (old?.sourceSHA256 === record.files.webp.sha256
+          ? old
+          : {
+              schema: 1,
+              type: 'editor-source',
+              id: record.id,
+              sourceSHA256: record.files.webp.sha256,
+            });
+      if (
+        next.id !== record.id ||
+        next.sourceSHA256 !== record.files.webp.sha256 ||
+        next.type !== 'editor-source' ||
+        next.schema !== 1
+      )
+        throw Error('Invalid new editor decision');
+    }
+    if (JSON.stringify(canonical(old ?? null)) !== JSON.stringify(canonical(next))) {
+      const result = await updateHashedRecord(overlay, 'artworks', previewRoot, {
+        name: change.id,
+        expectedValue: old ?? null,
+        newValue: next,
+      });
+      for (const [key, b] of result.created) created.set(key, b);
+      previewRoot = result.root;
+    }
+  }
+  const publicRoutes = original.publicRoutes
+    ? await extendPublicArtworkRoutes(
+        {
+          get: (d) => overlay.read('artworks', d, { maxBytes: 65536 }),
+          put: (value) => pack({ schema: 1, ...value }),
+        },
+        original.publicRoutes,
+        changes.filter((c) => c.record).map((c) => c.record),
+      )
+    : undefined;
+  const root = await pack({
+    ...original,
+    revision,
+    directories,
+    editorPreviews: previewRoot,
+    ...(publicRoutes ? { publicRoutes } : {}),
+  });
+  return { root, created, status: 'PRIVATE_ARTWORK_DELTA_ONLY_NOT_PUBLISHABLE' };
 }

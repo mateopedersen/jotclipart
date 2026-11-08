@@ -1,12 +1,18 @@
+import { artworkURL } from './artwork-route.mjs';
+import {
+  SITEMAP_URL_LIMIT,
+  sitemapDocumentKind,
+} from '../../server/catalog-snapshot/sitemap-policy.mjs';
 import { guides } from './guides.ts';
 import { primaryClusterForTopic } from './topic-clusters.ts';
-import { curatedSitemap } from './curated-collection-policy.mjs';
+import { activeCuratedCollections } from './curated-collection-policy.mjs';
 const SITE = 'https://ultraclipart.com/';
 const XML = '<?xml version="1.0" encoding="UTF-8"?>';
 const NS = 'http://www.sitemaps.org/schemas/sitemap/0.9';
 
 type Artwork = {
   id: string;
+  publicSlug?: string;
   topic: string;
   webp: string;
   published: boolean;
@@ -44,7 +50,7 @@ export function directoryArtwork<T extends Artwork>(art: T[], topics: Topic[]): 
   return art.filter((item) => item.published && item.indexable && !indexed.has(item.topic));
 }
 const absolute = (path: string) => new URL(path, SITE).href;
-const artUrl = (item: Artwork) => absolute(`art/${encodeURIComponent(item.id)}/`);
+const artUrl = (item: Artwork) => artworkURL(item);
 
 function pageEntries(art: Artwork[], topics: Topic[]): string[] {
   const routes = [
@@ -73,22 +79,33 @@ function pageEntries(art: Artwork[], topics: Topic[]): string[] {
   const approved = approvedArt(art);
   if (approved.length) urls.push(absolute('new/'));
   if (approved.some((item) => item.monochrome === true)) urls.push(absolute('black-and-white/'));
+  return [...new Set(urls)].map(pageEntry);
+}
+const pageEntry = (url: string) => `<url><loc>${xmlEscape(url)}</loc></url>`;
+function collectionEntries(art: Artwork[], topics: Topic[]): string[] {
   const collectionNames = new Set(
     indexableTopics(art, topics)
-      .filter((topic): topic is Topic & { cluster: string } => typeof topic.cluster === 'string')
+      .filter((topic) => typeof topic.cluster === 'string')
       .map(primaryClusterForTopic),
   );
-  for (const cluster of collectionNames) {
-    const slug = cluster
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, '-')
-      .replace(/^-|-$/g, '');
-    if (slug) urls.push(absolute(`collection/${slug}/`));
-  }
-  urls.push(...approvedArt(art).map(artUrl));
-  for (const topic of indexableTopics(art, topics))
-    urls.push(absolute(`clipart/${encodeURIComponent(topic.slug)}/`));
-  return [...new Set(urls)].map((url) => `<url><loc>${xmlEscape(url)}</loc></url>`);
+  const urls = [...collectionNames]
+    .map((cluster) =>
+      cluster
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-|-$/g, ''),
+    )
+    .filter(Boolean)
+    .map((slug) => absolute(`collection/${slug}/`));
+  const counts: Record<string, number> = {};
+  for (const item of approvedArt(art)) counts[item.topic] = (counts[item.topic] ?? 0) + 1;
+  urls.push(...activeCuratedCollections(counts).map((g) => absolute(`collection/${g.slug}/`)));
+  return [...new Set(urls)].sort().map(pageEntry);
+}
+function topicEntries(art: Artwork[], topics: Topic[]): string[] {
+  return [...new Set(indexableTopics(art, topics).map((t) => absolute(`clipart/${t.slug}/`)))]
+    .sort()
+    .map(pageEntry);
 }
 
 function imageEntries(art: Artwork[]): string[] {
@@ -111,9 +128,11 @@ export const SITEMAP_MAX_BYTES = 24 * 1024 ** 2;
 export function partitionSitemapEntries(
   entries: string[],
   images = false,
-  maxUrls = 50000,
+  maxUrls = SITEMAP_URL_LIMIT,
   maxBytes = SITEMAP_MAX_BYTES,
 ): string[] {
+  if (!Number.isSafeInteger(maxUrls) || maxUrls < 1 || maxUrls > SITEMAP_URL_LIMIT)
+    throw Error('Sitemaps contain at most 10,000 canonical URLs');
   const start = prefix(images),
     overhead = Buffer.byteLength(start + suffix),
     parts: string[] = [];
@@ -140,23 +159,29 @@ export function imageSitemap(art: Artwork[]): string {
   return prefix(true) + imageEntries(art).join('') + suffix;
 }
 export function sitemapDocuments(art: Artwork[], topics: Topic[] = []) {
-  return [
-    ...partitionSitemapEntries(pageEntries(art, topics)).map((xml, index) => ({
-      kind: index ? `pages-${index + 1}` : 'pages',
+  const families: [string, string[]][] = [
+    ['pages', pageEntries(art, topics)],
+    ['topics', topicEntries(art, topics)],
+    ['collections', collectionEntries(art, topics)],
+    ['art', approvedArt(art).map((item) => pageEntry(artUrl(item)))],
+    ['images', approvedArt(art).length ? imageEntries(art) : []],
+  ];
+  const canonical = new Set<string>();
+  for (const [family, entries] of families)
+    if (family !== 'images')
+      for (const entry of entries) {
+        const loc = /<loc>([^<]+)<\/loc>/.exec(entry)![1];
+        if (canonical.has(loc)) throw Error('Duplicate canonical page in sitemap families: ' + loc);
+        canonical.add(loc);
+      }
+  return families.flatMap(([family, entries]) =>
+    partitionSitemapEntries(entries, family === 'images').map((xml, i) => ({
+      kind: sitemapDocumentKind(family, i + 1),
       xml,
     })),
-    ...(approvedArt(art).length
-      ? partitionSitemapEntries(imageEntries(art), true).map((xml, index) => ({
-          kind: index ? `images-${index + 1}` : 'images',
-          xml,
-        }))
-      : []),
-  ];
+  );
 }
 export function sitemapIndex(art: Artwork[], topics: Topic[] = []): string {
-  const children = sitemapDocuments(art, topics).map((document) => `sitemap-${document.kind}.xml`);
-  const counts: Record<string, number> = {};
-  for (const item of approvedArt(art)) counts[item.topic] = (counts[item.topic] ?? 0) + 1;
-  if (curatedSitemap(counts)) children.push('sitemap-collections.xml');
+  const children = sitemapDocuments(art, topics).map((d) => `sitemap-${d.kind}.xml`);
   return `${XML}<sitemapindex xmlns="${NS}">${children.map((path) => `<sitemap><loc>${xmlEscape(absolute(path))}</loc></sitemap>`).join('')}</sitemapindex>`;
 }

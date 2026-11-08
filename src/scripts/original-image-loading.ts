@@ -71,7 +71,6 @@ export function initOriginalImageLoading(
     if (
       !s.preview ||
       !s.near ||
-      !s.visible ||
       valid(s.image) !== s.source ||
       s.image.dataset.originalImageState === 'error' ||
       (s.image.complete && s.image.naturalWidth > 0)
@@ -85,7 +84,14 @@ export function initOriginalImageLoading(
   };
   const inView = (s: State) => {
     const r = s.image.getBoundingClientRect();
-    return r.width > 0 && r.height > 0 && r.bottom > 0 && r.top < innerHeight && r.right > 0 && r.left < innerWidth;
+    return (
+      r.width > 0 &&
+      r.height > 0 &&
+      r.bottom > 0 &&
+      r.top < innerHeight &&
+      r.right > 0 &&
+      r.left < innerWidth
+    );
   };
   function status(s: State, value: string, text = '') {
     s.image.dataset.originalImageState = value;
@@ -126,7 +132,14 @@ export function initOriginalImageLoading(
     pump();
   }
   function scheduleRetry(s: State) {
-    if (s.retry || s.retries >= delays.length || !navigator.onLine || !s.visible || !inView(s) || root.hidden)
+    if (
+      s.retry ||
+      s.retries >= delays.length ||
+      !navigator.onLine ||
+      !s.visible ||
+      !inView(s) ||
+      root.hidden
+    )
       return;
     const delay = delays[s.retries++];
     s.retry = setTimeout(() => {
@@ -178,15 +191,33 @@ export function initOriginalImageLoading(
   }
   function pump() {
     if (root.hidden || !navigator.onLine) return;
-    const rank = (a: State, b: State) => Number(b.visible) - Number(a.visible) || Number(b.preferred) - Number(a.preferred) || a.top - b.top;
-    const candidates = [...new Set([...queue, ...active])].filter(s => s.visible && s.image.isConnected && valid(s.image) === s.source &&
-      !s.retry && !(s.image.complete && s.image.naturalWidth > 0) && (s.image.dataset.originalImageState !== 'error' || s.retryReady)).sort(rank);
+    const rank = (a: State, b: State) =>
+      Number(b.visible) - Number(a.visible) ||
+      Number(b.preferred) - Number(a.preferred) ||
+      a.top - b.top;
+    const candidates = [...new Set([...queue, ...active])]
+      .filter(
+        (s) =>
+          (s.visible || s.near) &&
+          s.image.isConnected &&
+          valid(s.image) === s.source &&
+          !s.retry &&
+          !(s.image.complete && s.image.naturalWidth > 0) &&
+          (s.image.dataset.originalImageState !== 'error' || s.retryReady),
+      )
+      .sort(rank);
     const desired = new Set(candidates.slice(0, 2));
-    for (const s of [...active]) if (!desired.has(s)) {
-      release(s); s.image.fetchPriority = 'auto'; queue.add(s);
-    }
+    for (const s of [...active])
+      if (!desired.has(s)) {
+        release(s);
+        s.image.fetchPriority = 'auto';
+        queue.add(s);
+      }
     for (const s of [...queue].sort(
-      (a, b) => Number(b.visible) - Number(a.visible) || Number(b.preferred) - Number(a.preferred) || a.top - b.top,
+      (a, b) =>
+        Number(b.visible) - Number(a.visible) ||
+        Number(b.preferred) - Number(a.preferred) ||
+        a.top - b.top,
     )) {
       if (active.size >= 2) break;
       if (!s.image.isConnected || valid(s.image) !== s.source) {
@@ -194,12 +225,12 @@ export function initOriginalImageLoading(
         release(s);
         continue;
       }
-      if (s.retry || s.active || !s.visible) continue;
+      if (s.retry || s.active || !(s.visible || s.near)) continue;
       const failed = s.image.dataset.originalImageState === 'error';
       if (!failed && s.image.complete && s.image.naturalWidth > 0) {
         queue.delete(s);
         observer?.unobserve(s.image);
-    viewportObserver?.unobserve(s.image);
+        viewportObserver?.unobserve(s.image);
         status(s, 'loaded');
         continue;
       }
@@ -236,34 +267,67 @@ export function initOriginalImageLoading(
       } else watch(s);
     }
   }
-  const viewportObserver = typeof IntersectionObserver === 'undefined' ? undefined : new IntersectionObserver(entries => {
-    for (const entry of entries) {
-      const s = states.get(entry.target as HTMLImageElement);
-      if (!s) continue;
-      const r = entry.boundingClientRect;
-      s.visible = entry.isIntersecting && entry.intersectionRect.width > 0 && entry.intersectionRect.height > 0;
-      s.top = r.top;
-      if (s.visible) { s.near = true; queue.add(s); }
-      if (s.active && !s.visible) { release(s); if (s.near) queue.add(s); }
-      if (!s.active && !s.image.complete) {
-        const overlapsViewport = r.width > 0 && r.height > 0 && r.bottom > 0 && r.top < innerHeight && r.right > 0 && r.left < innerWidth;
-        const horizontallyOffscreen = r.width > 0 && r.height > 0 && r.bottom > 0 && r.top < innerHeight && (r.right <= 0 || r.left >= innerWidth);
-        s.image.fetchPriority = horizontallyOffscreen || (overlapsViewport && !s.visible) ? 'low' : 'auto';
-      }
-      paintPreview(s);
-    }
-    pump();
-  }, { rootMargin: '0px' });
-  const observer = typeof IntersectionObserver === 'undefined' ? undefined : new IntersectionObserver(entries => {
-    for (const entry of entries) {
-      const s = states.get(entry.target as HTMLImageElement);
-      if (!s) continue;
-      s.near = entry.isIntersecting;
-      s.top = entry.boundingClientRect.top;
-      if (s.near) queue.add(s); else queue.delete(s);
-    }
-    pump();
-  }, { rootMargin: `${Math.min(600, Math.max(240, Math.round(innerHeight / 2)))}px 0px` });
+  const viewportObserver =
+    typeof IntersectionObserver === 'undefined'
+      ? undefined
+      : new IntersectionObserver(
+          (entries) => {
+            for (const entry of entries) {
+              const s = states.get(entry.target as HTMLImageElement);
+              if (!s) continue;
+              const r = entry.boundingClientRect;
+              s.visible =
+                entry.isIntersecting &&
+                entry.intersectionRect.width > 0 &&
+                entry.intersectionRect.height > 0;
+              s.top = r.top;
+              if (s.visible) {
+                s.near = true;
+                queue.add(s);
+              }
+              if (s.active && !s.visible && !s.near) {
+                release(s);
+              }
+              if (!s.active && !s.image.complete) {
+                const overlapsViewport =
+                  r.width > 0 &&
+                  r.height > 0 &&
+                  r.bottom > 0 &&
+                  r.top < innerHeight &&
+                  r.right > 0 &&
+                  r.left < innerWidth;
+                const horizontallyOffscreen =
+                  r.width > 0 &&
+                  r.height > 0 &&
+                  r.bottom > 0 &&
+                  r.top < innerHeight &&
+                  (r.right <= 0 || r.left >= innerWidth);
+                s.image.fetchPriority =
+                  horizontallyOffscreen || (overlapsViewport && !s.visible) ? 'low' : 'auto';
+              }
+              paintPreview(s);
+            }
+            pump();
+          },
+          { rootMargin: '0px' },
+        );
+  const observer =
+    typeof IntersectionObserver === 'undefined'
+      ? undefined
+      : new IntersectionObserver(
+          (entries) => {
+            for (const entry of entries) {
+              const s = states.get(entry.target as HTMLImageElement);
+              if (!s) continue;
+              s.near = entry.isIntersecting;
+              s.top = entry.boundingClientRect.top;
+              if (s.near) queue.add(s);
+              else queue.delete(s);
+            }
+            pump();
+          },
+          { rootMargin: `${Math.min(600, Math.max(240, Math.round(innerHeight / 2)))}px 0px` },
+        );
   function remove(image: HTMLImageElement) {
     const s = states.get(image);
     if (!s) return;
@@ -352,8 +416,11 @@ export function initOriginalImageLoading(
     for (const s of new Set([...queue, ...active])) {
       const r = s.image.getBoundingClientRect();
       s.top = r.top;
-      if (!viewportObserver) { s.visible = inView(s); s.near = s.visible; }
-      if (s.active && !s.visible) {
+      if (!viewportObserver) {
+        s.visible = inView(s);
+        s.near = s.visible;
+      }
+      if (s.active && !s.visible && !s.near) {
         release(s);
         s.image.fetchPriority = 'auto';
         if (s.near) queue.add(s);
