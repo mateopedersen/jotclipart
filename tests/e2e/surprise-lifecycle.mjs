@@ -43,9 +43,14 @@ const server = createServer(async (req, res) => {
     await new Promise((r) => setTimeout(r, 700));
     return res.end('<h1>Destination</h1>');
   }
+  if (req.url === '/download') {
+    res.setHeader('content-type', 'application/octet-stream');
+    res.setHeader('content-disposition', 'attachment; filename=fixture.txt');
+    return res.end('fixture');
+  }
   if (req.url?.startsWith('/art/')) return res.end('<h1>Actual fallback destination</h1>');
   res.end(
-    `<!doctype html><a data-surprise-art='[{"id":"alpha","topic":"cat"}]' data-surprise-source='/surprise-picks.json' href='/art/alpha/'>Surprise</a><a id='depart' href='/depart/'>Native departure</a><a id='hash' href='#details'>Same document</a><a id='new-tab' href='/depart/' target='_blank'>New tab</a><p id='details'>Details</p><script type='module' src='/client.js'></script>`,
+    `<!doctype html><a data-surprise-art='[{"id":"alpha","topic":"cat"}]' data-surprise-source='/surprise-picks.json' href='/art/alpha/'>Surprise</a><a id='depart' href='/depart/'>Native departure</a><a id='hash' href='#details'>Same document</a><a id='new-tab' href='/depart/' target='_blank'>New tab</a><a id='download' href='/download' download>Download</a><a id='malformed' href='http://['>Malformed</a><p id='details'>Details</p><script type='module' src='/client.js'></script>`,
   );
 });
 await new Promise((r) => server.listen(0, '127.0.0.1', r));
@@ -56,7 +61,7 @@ assert(
   selectedEngines.length &&
     selectedEngines.every((e) => ['chromium', 'firefox', 'webkit'].includes(e)),
 );
-const expectedCases = new Set(selectedEngines).size * 12;
+const expectedCases = new Set(selectedEngines).size * 20;
 let environmentError;
 const saveReport = () =>
   writeFileSync(
@@ -96,6 +101,10 @@ try {
           'same-document',
           'new-tab',
           'restored',
+          'modified',
+          'download',
+          'malformed',
+          'controlled-restore',
         ]) {
           mode = scenario;
           pendingIndex = undefined;
@@ -128,13 +137,41 @@ try {
               await page
                 .locator('#depart')
                 .evaluate((link) => link.addEventListener('click', (e) => e.preventDefault()));
+            if (scenario === 'malformed')
+              await page.evaluate(() =>
+                window.addEventListener('click', (e) => e.preventDefault(), { once: true }),
+              );
             const clickAt = Date.now() - start;
-            if (scenario === 'new-tab') {
-              const popupPromise = page.waitForEvent('popup');
-              await page.locator('#new-tab').click();
+            if (scenario === 'new-tab' || scenario === 'modified') {
+              const popupPromise = context.waitForEvent('page');
+              if (scenario === 'modified')
+                await page
+                  .locator('#depart')
+                  .click({ modifiers: [process.platform === 'darwin' ? 'Meta' : 'Control'] });
+              else await page.locator('#new-tab').click();
               const popup = await popupPromise;
               await expect(popup.locator('h1')).toHaveText('Destination');
               await popup.close();
+            } else if (scenario === 'download') {
+              const filePromise = page.waitForEvent('download');
+              await page.locator('#download').click();
+              const download = await filePromise;
+              assert.equal(download.suggestedFilename(), 'fixture.txt');
+              pendingIndex();
+            } else if (scenario === 'malformed') {
+              await page.locator('#malformed').click();
+              pendingIndex();
+            } else if (scenario === 'controlled-restore') {
+              await page.evaluate(() => {
+                dispatchEvent(new PageTransitionEvent('pagehide'));
+                dispatchEvent(new PageTransitionEvent('pageshow', { persisted: true }));
+              });
+              const previous = pendingIndex;
+              await page.locator('[data-surprise-art]').focus();
+              await expect.poll(() => pendingIndex !== previous).toBe(true);
+              pendingIndex();
+              row.restoreScope =
+                'Explicit synthetic lifecycle events, separate from the genuine back-navigation case';
             } else if (scenario === 'same-document') {
               await page.locator('#hash').click();
               pendingIndex();
@@ -164,15 +201,18 @@ try {
                 await expect(page.locator('h1')).toHaveText('Actual fallback destination');
               }
             } else {
+              const expectedTarget = scenario === 'controlled-restore' ? 'alpha' : 'bravo';
               await expect(page.locator('[data-surprise-art]')).toHaveAttribute(
                 'href',
-                '/art/bravo/',
+                '/art/' + expectedTarget + '/',
               );
               await expect
                 .poll(
                   () =>
-                    events.filter((e) => e.url.includes('/art/bravo/') && e.resource === 'fetch')
-                      .length,
+                    events.filter(
+                      (e) =>
+                        e.url.includes('/art/' + expectedTarget + '/') && e.resource === 'fetch',
+                    ).length,
                 )
                 .toBe(1);
               assert(

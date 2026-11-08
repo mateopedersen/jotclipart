@@ -165,7 +165,12 @@ export function initCuteSurprise() {
         event.target instanceof Element ? event.target.closest<HTMLAnchorElement>('a[href]') : null;
       if (!link || link.hasAttribute('download') || (link.target && link.target !== '_self'))
         return;
-      const url = new URL(link.href, location.href);
+      let url: URL;
+      try {
+        url = new URL(link.href, location.href);
+      } catch {
+        return;
+      }
       if (
         !['http:', 'https:'].includes(url.protocol) ||
         url.href === location.href ||
