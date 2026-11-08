@@ -45,7 +45,8 @@ export function initOriginalImageLoading(
   };
   const states = new WeakMap<HTMLImageElement, State>();
   const queue = new Set<State>(),
-    active = new Set<State>();
+    active = new Set<State>(),
+    exhausted = new Set<State>();
   const valid = (image: HTMLImageElement) => {
     try {
       const url = new URL(image.getAttribute('src') ?? '', location.href);
@@ -130,6 +131,7 @@ export function initOriginalImageLoading(
     if (s.image.dataset.originalImageState === 'loading') status(s, 'pending');
   }
   function loaded(s: State) {
+    exhausted.delete(s);
     release(s);
     queue.delete(s);
     observer?.unobserve(s.image);
@@ -173,8 +175,10 @@ export function initOriginalImageLoading(
           ? 'Image unavailable. Open artwork.'
           : 'Image still loading. Open artwork.',
     );
-    if (s.retries >= delays.length && s.image.complete)
+    if (s.retries >= delays.length && s.image.complete) {
+      exhausted.add(s);
       s.image.dispatchEvent(new Event('uc:original-image-terminal-error'));
+    }
     queue.add(s);
     scheduleRetry(s);
     pump();
@@ -341,6 +345,7 @@ export function initOriginalImageLoading(
   function remove(image: HTMLImageElement) {
     const s = states.get(image);
     if (!s) return;
+    exhausted.delete(s);
     release(s);
     queue.delete(s);
     if (s.retry) clearTimeout(s.retry);
@@ -453,7 +458,19 @@ export function initOriginalImageLoading(
     { passive: true },
   );
   window.addEventListener('resize', resume);
-  window.addEventListener('online', resume);
+  window.addEventListener('online', () => {
+    // A new connectivity event is a new bounded recovery opportunity, not an
+    // unbounded retry timer. Keep terminal states reachable after queue removal.
+    for (const s of exhausted) {
+      exhausted.delete(s);
+      if (!s.image.isConnected || valid(s.image) !== s.source) continue;
+      s.retries = 0;
+      s.retryReady = false;
+      status(s, 'error', 'Retrying image…');
+      queue.add(s);
+    }
+    resume();
+  });
   root.addEventListener('visibilitychange', resume);
   window.addEventListener('pageshow', resume);
   pump();

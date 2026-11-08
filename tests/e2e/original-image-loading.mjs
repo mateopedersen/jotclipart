@@ -53,6 +53,7 @@ try {
         'stall',
         'dynamic',
         'offline',
+        'offline-exhaustion',
         'non-r2',
         'queued',
         'false-hint-healthy',
@@ -148,7 +149,7 @@ try {
             );
           }
           if (['healthy', 'false-hint-healthy'].includes(scenario)) assert.equal(requests, 1);
-          if (['dynamic', 'offline', 'late-false-hint-transient'].includes(scenario)) {
+          if (['dynamic', 'offline', 'offline-exhaustion', 'late-false-hint-transient'].includes(scenario)) {
             if (scenario === 'late-false-hint-transient') {
               assert.equal(await page.evaluate(() => navigator.onLine), true);
               assert.equal(requests, 1);
@@ -157,7 +158,7 @@ try {
                 dispatchEvent(new Event('offline'));
               });
             }
-            if (scenario === 'offline') {
+            if (['offline', 'offline-exhaustion'].includes(scenario)) {
               offlineFault = true;
               await context.setOffline(true);
             }
@@ -173,8 +174,16 @@ try {
               body.append(frame);
             });
             const second = page.locator('.art-picture img').nth(1);
-            if (scenario === 'offline') {
+            if (['offline', 'offline-exhaustion'].includes(scenario)) {
               await expect(second).toHaveAttribute('data-original-image-state', 'error');
+              if (scenario === 'offline-exhaustion') {
+                await expect.poll(() => requests).toBe(4);
+                await expect(page.locator('.original-image-status')).toHaveText(
+                  'Image unavailable. Open artwork.',
+                );
+                await page.waitForTimeout(150);
+                assert.equal(requests, 4, 'Exhaustion must not create an unbounded retry timer');
+              }
               offlineFault = false;
               await context.setOffline(false);
             }
@@ -184,6 +193,7 @@ try {
               'https://assets.ultraclipart.com/fixture/dynamic.webp',
             );
           }
+          if (scenario === 'offline-exhaustion') assert.equal(requests, 5);
           if (scenario === 'queued') {
             await page.locator('body').evaluate((body) => {
               for (let i = 0; i < 10; i++) {
