@@ -1,3 +1,5 @@
+import { originalImageFrameBounds } from '../lib/original-image-frame.mjs';
+
 /** Original R2 URLs stay in SSR src and schema. Only loading priority and retries change. */
 export function initOriginalImageLoading(
   root: Document = document,
@@ -92,8 +94,10 @@ export function initOriginalImageLoading(
     );
     s.image.dataset.originalPreview = 'pending';
   };
+  const geometry = (s: State) =>
+    (s.image.hasAttribute('data-original-deferred') ? s.image.parentElement : null) ?? s.image;
   const inView = (s: State) => {
-    const r = s.image.getBoundingClientRect();
+    const r = originalImageFrameBounds(geometry(s));
     return (
       r.width > 0 &&
       r.height > 0 &&
@@ -156,6 +160,11 @@ export function initOriginalImageLoading(
   function recover(s: State) {
     release(s);
     if (!s.image.isConnected || valid(s.image) !== s.source) return;
+    // Actual failure must not depend on a delayed intersection callback. The
+    // reserved frame stays measurable while a deferred/failed image is hidden.
+    s.visible = inView(s);
+    s.near = s.near || s.visible;
+    s.top = geometry(s).getBoundingClientRect().top;
     s.retryReady = false;
     observer?.observe(s.image);
     viewportObserver?.observe(s.image);
@@ -194,6 +203,10 @@ export function initOriginalImageLoading(
       }
     }, stallMs);
   }
+  const admittedOrFailed = (s: State) =>
+    s.image.dataset.originalImageState === 'error' ||
+    marker.dataset.originalScheduling !== 'active' ||
+    s.image.dataset.originalDeferred !== 'pending';
   function pump() {
     // Connectivity hints can be false while R2 remains reachable. Keep the
     // same two retry/promoted-slot limits and trust actual load/error results.
@@ -209,6 +222,7 @@ export function initOriginalImageLoading(
           (s.visible || s.near) &&
           s.image.isConnected &&
           valid(s.image) === s.source &&
+          admittedOrFailed(s) &&
           !s.retry &&
           !(s.image.complete && s.image.naturalWidth > 0) &&
           (s.image.dataset.originalImageState !== 'error' || s.retryReady),
@@ -230,7 +244,7 @@ export function initOriginalImageLoading(
         release(s);
         continue;
       }
-      if (s.retry || s.active || !(s.visible || s.near)) continue;
+      if (s.retry || s.active || !(s.visible || s.near) || !admittedOrFailed(s)) continue;
       const failed = s.image.dataset.originalImageState === 'error';
       if (!failed && s.image.complete && s.image.naturalWidth > 0) {
         queue.delete(s);
@@ -420,12 +434,11 @@ export function initOriginalImageLoading(
   });
   const resume = () => {
     for (const s of new Set([...queue, ...active])) {
-      const r = s.image.getBoundingClientRect();
+      const r = geometry(s).getBoundingClientRect();
       s.top = r.top;
-      if (!viewportObserver) {
-        s.visible = inView(s);
-        s.near = s.visible;
-      }
+      s.visible = inView(s);
+      if (!viewportObserver) s.near = s.visible;
+      else if (s.visible) s.near = true;
       if (s.active && !s.visible && !s.near) {
         release(s);
         s.image.fetchPriority = 'auto';
@@ -446,7 +459,7 @@ export function initOriginalImageLoading(
           resume();
         });
     },
-    { passive: true },
+    { passive: true, capture: true },
   );
   window.addEventListener('resize', resume);
   window.addEventListener('online', () => {
