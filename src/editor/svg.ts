@@ -591,4 +591,3 @@ export function download(blob: Blob, name: string) {
     setTimeout(() => URL.revokeObjectURL(url), 30000);
   }
 }
-
