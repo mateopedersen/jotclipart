@@ -8,6 +8,19 @@ export async function readUi(ctx,data){if(!data.manifest.ui)throw Object.assign(
 async function legacyEntries(store,pages,type){if(!Array.isArray(pages)||pages.length>128)throw Error('UI page budget exceeded');const result=[],loaded=await mapFour(pages,d=>store.get(d));let offset=0;for(const [i,d]of pages.entries()){const value=loaded[i];if(value.type!==type||value.offset!==offset||d.offset!==offset||!Array.isArray(value.entries)||value.entries.length!==d.count)throw Error('Invalid UI metadata page');result.push(...value.entries);offset+=d.count;if(result.length>10000)throw Error('UI entry budget exceeded')}return result}
 export async function readUiEntries(store,ui,name,type){return ui.type==='source-bound-search-ui-v2'?(await readPages(store,ui[name],type,{stable:true})).entries:legacyEntries(store,ui[name],type)}
 export const uiProviders={
+ async readSuggestionThumbnails(ctx,data){
+  if(!Array.isArray(data.ids)||data.ids.length>8)throw Error('Bounded suggestion identities required');
+  const value=await mapFour(data.ids,async id=>{
+   const identity=await mapGet(data.store,data.manifest.ids,'identities',id);
+   if(!identity?.active)throw Error('Suggestion identity absent');
+   const descriptor=await mapGet(data.store,data.manifest.ledger,'search-ledger',String(Math.floor(identity.n/8)));
+   if(!descriptor)throw Error('Suggestion source absent');
+   const page=await data.store.get(descriptor),doc=page.documents?.[identity.n%8];
+   if(page.type!=='search-ledger'||doc?.id!==id||!doc.active||doc.sourceSha256!==identity.sourceSha256)throw Error('Suggestion source differs');
+   return {id,thumb:doc.studio?.thumb??null,webp:doc.studio?.webp?.url??null};
+  });
+  return {snapshotSha256:ctx.snapshotSha256,value};
+ },
  async readStudioInfo(ctx,data){return{snapshotSha256:ctx.snapshotSha256,value:await studioInfo(ctx,data)}},
  async readSiteEntries(ctx,data){const ui=await readUi(ctx,data);return{snapshotSha256:ctx.snapshotSha256,value:await readUiEntries(data.store,ui,'site','public-site-search-entries')}},
  async readMonochromeDirectory(ctx,data){const ui=await readUi(ctx,data);return{snapshotSha256:ctx.snapshotSha256,value:{...ui.monoGlobal,topics:await readUiEntries(data.store,ui,'mono','monochrome-topic-entries')}}},
