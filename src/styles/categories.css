@@ -174,8 +174,11 @@
 }
 .discovery-scene-card {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  --scene-image-height: 118px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: var(--scene-image-height) auto;
+  justify-items: center;
   align-items: center;
   justify-content: center;
   min-width: 0;
@@ -192,10 +195,12 @@
 .discovery-scene-card img {
   display: block;
   width: 100%;
-  height: 118px;
+  height: var(--scene-image-height);
+  grid-row: 1;
   object-fit: contain;
 }
 .discovery-scene-card span {
+  grid-row: 2;
   font-size: 11px;
   line-height: 1.4;
   font-weight: 600;
@@ -747,8 +752,8 @@
     gap: 24px;
     padding: 30px;
   }
-  .discovery-scene-card img {
-    height: 95px;
+  .discovery-scene-card {
+    --scene-image-height: 95px;
   }
   .discovery-scene-orbit {
     width: 240px;
@@ -780,8 +785,8 @@
     padding: 6px 4px 8px;
     border-radius: 12px;
   }
-  .discovery-scene-card img {
-    height: 65px;
+  .discovery-scene-card {
+    --scene-image-height: 65px;
   }
   .discovery-scene-card span {
     font-size: 9px;

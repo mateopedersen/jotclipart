@@ -47,6 +47,31 @@ const html =
       '" loading="lazy" data-original-deferred="pending" width="100" height="100"></a>',
   ).join('') +
   '</div><script type="module" src="/client.js"></script></body></html>';
+// Actual category CSS reserves the artwork track even while scheduling is offline.
+const categoryCSS = readFileSync('src/styles/categories.css', 'utf8');
+const categoryHTML =
+  '<!doctype html><html><head><meta name="viewport" content="width=device-width"><script>' +
+  siteNavigationScript +
+  '</script><style>' +
+  css +
+  categoryCSS +
+  '</style></head><body><div class="category-discovery"><header class="discovery-hero"><div>Explicit geometry fixture</div><div class="discovery-moodboard">' +
+  Array.from(
+    { length: 4 },
+    (_, i) =>
+      '<a class="discovery-scene-card" href="/art/fixture-' +
+      i +
+      '/" aria-label="Explicit fixture ' +
+      i +
+      '"><img src="https://assets.ultraclipart.com/fixture/category-' +
+      i +
+      '.webp" alt="Explicit fixture ' +
+      i +
+      '" width="155" height="140" loading="lazy" data-original-deferred="pending"><span>Fixture ' +
+      i +
+      '</span></a>',
+  ).join('') +
+  '</div></header></div></body></html>';
 const token = "'sha256-" + createHash('sha256').update(siteNavigationScript).digest('base64') + "'";
 const server = createServer((q, r) => {
   r.setHeader('Content-Type', q.url === '/client.js' ? 'text/javascript' : 'text/html');
@@ -55,7 +80,7 @@ const server = createServer((q, r) => {
     "default-src 'self'; img-src https://assets.ultraclipart.com; style-src 'self' 'unsafe-inline'; script-src 'self' " +
       token,
   );
-  r.end(q.url === '/client.js' ? client : html);
+  r.end(q.url === '/client.js' ? client : q.url === '/category-frames' ? categoryHTML : html);
 }).listen(0, '127.0.0.1');
 await new Promise((r) => server.once('listening', r));
 let completed = false;
@@ -340,6 +365,64 @@ try {
         );
         await page.screenshot({ path: resolve(folder, name + '-' + scenario + '.png') });
         await context.close();
+      }
+      for (const width of [390, 1440]) {
+        const context = await browser.newContext({ viewport: { width, height: 900 } });
+        try {
+          await context.addInitScript(() =>
+            Object.defineProperty(navigator, 'onLine', { configurable: true, get: () => false }),
+          );
+          await context.route('https://assets.ultraclipart.com/**', (route) =>
+            route.fulfill({ status: 200, contentType: 'image/webp', body: bytes }),
+          );
+          const page = await context.newPage();
+          await page.goto('http://127.0.0.1:' + server.address().port + '/category-frames', {
+            waitUntil: 'domcontentloaded',
+          });
+          const cards = page.locator('.discovery-scene-card');
+          await expect(page.locator('img[data-original-deferred="pending"]')).toHaveCount(4);
+          const before = await cards.evaluateAll((xs) =>
+            xs.map((x) => ({ width: x.offsetWidth, height: x.offsetHeight })),
+          );
+          await page.evaluate(() => {
+            Object.defineProperty(navigator, 'onLine', { configurable: true, get: () => true });
+            dispatchEvent(new Event('online'));
+          });
+          await expect
+            .poll(() =>
+              page
+                .locator('img')
+                .evaluateAll((xs) => xs.every((i) => i.complete && i.naturalWidth > 0)),
+            )
+            .toBe(true);
+          const after = await cards.evaluateAll((xs) =>
+            xs.map((x) => ({ width: x.offsetWidth, height: x.offsetHeight })),
+          );
+          assert.deepEqual(
+            after,
+            before,
+            'Category artwork space stays reserved before original requests start',
+          );
+          assert(before.every((x) => x.width > 0 && x.height > 0));
+          report.cases.push({
+            engine: name,
+            scenario: 'category-reserved-frame',
+            width,
+            before,
+            after,
+            passed: true,
+          });
+          console.log(
+            JSON.stringify({
+              engine: name,
+              scenario: 'category-reserved-frame',
+              width,
+              passed: true,
+            }),
+          );
+        } finally {
+          await context.close();
+        }
       }
     } finally {
       await browser.close();
