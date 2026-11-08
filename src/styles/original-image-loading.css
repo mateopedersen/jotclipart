@@ -15,6 +15,18 @@ img[data-original-preview='pending'] {
   background-origin: content-box;
   background-clip: content-box;
 }
+.original-image-loading-backdrop {
+  position: absolute;
+  inset: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+  transition: transform 0.2s;
+}
+.art-picture:hover > .original-image-loading-backdrop {
+  transform: scale(1.035);
+}
 .art-picture > img[data-original-image-state='error'] {
   opacity: 0;
 }

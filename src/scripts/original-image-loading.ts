@@ -42,6 +42,8 @@ export function initOriginalImageLoading(
     retry?: ReturnType<typeof setTimeout>;
     watch?: ReturnType<typeof setTimeout>;
     note?: HTMLSpanElement;
+    previewFrame?: HTMLElement;
+    backdrop?: HTMLSpanElement;
     onLoad: () => void;
     onError: () => void;
   };
@@ -49,6 +51,8 @@ export function initOriginalImageLoading(
   const queue = new Set<State>(),
     active = new Set<State>(),
     exhausted = new Set<State>();
+  const previewFrames = new WeakMap<Element, Set<State>>();
+  const previewing = new Set<State>();
   const valid = (image: HTMLImageElement) => {
     try {
       const url = new URL(image.getAttribute('src') ?? '', location.href);
@@ -76,8 +80,81 @@ export function initOriginalImageLoading(
     }
   };
   const clearPreview = (image: HTMLImageElement) => {
+    const s = states.get(image);
+    s?.backdrop?.remove();
+    if (s) {
+      s.backdrop = undefined;
+      previewing.delete(s);
+    }
     delete image.dataset.originalPreview;
     image.style.removeProperty('--original-loading-preview');
+  };
+  const paintFramePreview = (s: State) => {
+    const frame = s.previewFrame;
+    if (
+      !frame ||
+      !frame.isConnected ||
+      s.image.parentElement !== frame ||
+      !s.preview ||
+      valid(s.image) !== s.source ||
+      s.image.dataset.originalImageState === 'error' ||
+      (s.image.complete && s.image.naturalWidth > 0)
+    )
+      return;
+    const style = getComputedStyle(frame);
+    if (style.position === 'static') return;
+    const padding = [style.paddingTop, style.paddingRight, style.paddingBottom, style.paddingLeft];
+    // Pending originals are display:none to prevent native request flooding.
+    // Their temporary thumbnail therefore needs its own fixed-frame paint box.
+    // It never replaces src/srcset, file controls or image structured data.
+    if (!s.backdrop) {
+      s.backdrop = root.createElement('span');
+      s.backdrop.className = 'original-image-loading-backdrop';
+      s.backdrop.setAttribute('aria-hidden', 'true');
+      frame.append(s.backdrop);
+      previewing.add(s);
+    }
+    // Match the original's reserved content box, including responsive parent
+    // padding. A full-frame thumbnail would appear to shrink when src finishes.
+    [s.backdrop.style.top, s.backdrop.style.right, s.backdrop.style.bottom, s.backdrop.style.left] =
+      padding;
+    s.backdrop.style.backgroundImage = 'url(' + JSON.stringify(s.preview) + ')';
+  };
+  const forgetFramePreview = (s: State) => {
+    if (!s.previewFrame) return;
+    const frame = s.previewFrame;
+    previewFrames.get(frame)?.delete(s);
+    if (!previewFrames.get(frame)?.size) previewObserver?.unobserve(frame);
+    s.previewFrame = undefined;
+  };
+  const previewFrameFor = (s: State) => {
+    const frame = s.image.parentElement;
+    if (!s.preview || !s.image.hasAttribute('data-original-deferred') || !frame) return;
+    if (
+      [...frame.children].some(
+        (child) => child !== s.image && child !== s.backdrop && child !== s.note,
+      )
+    )
+      return;
+    if (
+      [...frame.childNodes].some(
+        (child) => child.nodeType === Node.TEXT_NODE && child.textContent?.trim(),
+      )
+    )
+      return;
+    return frame;
+  };
+  const watchFramePreview = (s: State) => {
+    const frame = previewFrameFor(s);
+    if (s.previewFrame === frame) return;
+    clearPreview(s.image);
+    forgetFramePreview(s);
+    if (!frame || (s.image.complete && s.image.naturalWidth > 0)) return;
+    s.previewFrame = frame;
+    const members = previewFrames.get(frame) ?? new Set<State>();
+    members.add(s);
+    previewFrames.set(frame, members);
+    previewObserver?.observe(frame);
   };
   const paintPreview = (s: State) => {
     if (
@@ -93,6 +170,7 @@ export function initOriginalImageLoading(
       'url(' + JSON.stringify(s.preview) + ')',
     );
     s.image.dataset.originalPreview = 'pending';
+    paintFramePreview(s);
   };
   const geometry = (s: State) =>
     (s.image.hasAttribute('data-original-deferred') ? s.image.parentElement : null) ?? s.image;
@@ -144,6 +222,7 @@ export function initOriginalImageLoading(
     s.retry = undefined;
     s.retryReady = false;
     status(s, 'loaded');
+    forgetFramePreview(s);
     pump();
   }
   function scheduleRetry(s: State) {
@@ -288,6 +367,29 @@ export function initOriginalImageLoading(
       } else watch(s);
     }
   }
+  // Observe the reserved parent, not the hidden pending img. This observer only
+  // paints a small source-bound background; original admission stays bounded.
+  const previewObserver = !supportsObserver
+    ? undefined
+    : new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries)
+            for (const s of previewFrames.get(entry.target) ?? []) {
+              if (
+                entry.isIntersecting &&
+                entry.intersectionRect.width > 0 &&
+                entry.intersectionRect.height > 0
+              )
+                paintFramePreview(s);
+              else {
+                s.backdrop?.remove();
+                s.backdrop = undefined;
+                previewing.delete(s);
+              }
+            }
+        },
+        { rootMargin: '160px 0px' },
+      );
   const viewportObserver = !supportsObserver
     ? undefined
     : new IntersectionObserver(
@@ -360,6 +462,7 @@ export function initOriginalImageLoading(
     viewportObserver?.unobserve(image);
     s.note?.remove();
     clearPreview(image);
+    forgetFramePreview(s);
     states.delete(image);
   }
   function register(image: HTMLImageElement) {
@@ -367,7 +470,10 @@ export function initOriginalImageLoading(
       preview = previewFor(image, source),
       previous = states.get(image);
     if (previous?.resetting && image.getAttribute('src') === null) return;
-    if (previous?.source === source && previous.preview === preview) return;
+    if (previous?.source === source && previous.preview === preview) {
+      watchFramePreview(previous);
+      return;
+    }
     if (previous) remove(image);
     if (!source) return;
     if (!preview) clearPreview(image);
@@ -398,6 +504,7 @@ export function initOriginalImageLoading(
     image.addEventListener('error', s.onError);
     if (image.complete && image.naturalWidth > 0) status(s, 'loaded');
     else {
+      watchFramePreview(s);
       // IntersectionObserver batches geometry after layout. Measuring every
       // image between state writes forces repeated full-document layouts.
       if (!observer) {
@@ -421,6 +528,15 @@ export function initOriginalImageLoading(
   new MutationObserver((records) => {
     for (const r of records) {
       if (r.type === 'attributes' && r.target instanceof HTMLImageElement) register(r.target);
+      if (r.type === 'childList' && r.target instanceof Element) {
+        const affected = new Set([
+          ...[...(previewFrames.get(r.target) ?? [])].map((s) => s.image),
+          ...[...r.target.children].filter(
+            (child): child is HTMLImageElement => child instanceof HTMLImageElement,
+          ),
+        ]);
+        for (const image of affected) register(image);
+      }
       for (const node of r.removedNodes)
         for (const image of images(node)) if (!image.isConnected) remove(image);
       for (const node of r.addedNodes) for (const image of images(node)) register(image);
@@ -462,6 +578,9 @@ export function initOriginalImageLoading(
     { passive: true, capture: true },
   );
   window.addEventListener('resize', resume);
+  window.addEventListener('resize', () => {
+    for (const s of previewing) paintFramePreview(s);
+  });
   window.addEventListener('online', () => {
     // A new connectivity event is a new bounded recovery opportunity, not an
     // unbounded retry timer. Keep terminal states reachable after queue removal.

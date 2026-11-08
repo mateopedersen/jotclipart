@@ -1,5 +1,6 @@
 ---
 import { displayTitle } from '../lib/display-title';
+import { imageLoadingPreview } from '../lib/image-loading-preview';
 import { publishedArt as art, slugify, availableClusters } from '../lib/catalog';
 import CatalogCount from './CatalogCount.astro';
 const seasons = [
@@ -74,21 +75,27 @@ const seasons = [
         <div class="seasonal-scene" aria-hidden="true">
           <span class="seasonal-orbit"></span>
           <span class="seasonal-platform"></span>
-          {season.images.map((image, i) => (
-            <img
-              title={displayTitle(image.title)}
-              class={`seasonal-object seasonal-object-${i}`}
-              src={image.thumb}
-              srcset={image.thumbSrcSet}
-              sizes="(max-width: 540px) 34vw, 160px"
-              alt={image.alt}
-              width="240"
-              height="240"
-              loading="lazy"
-              data-original-deferred="pending"
-              decoding="async"
-            />
-          ))}
+          {season.images.map((image, i) => {
+            const preview = imageLoadingPreview(image, image.thumb);
+            return (
+              <span class={`seasonal-object seasonal-object-${i}`}>
+                <img
+                  title={displayTitle(image.title)}
+                  src={image.thumb}
+                  srcset={image.thumbSrcSet}
+                  sizes="(max-width: 540px) 34vw, 160px"
+                  alt={image.alt}
+                  width="240"
+                  height="240"
+                  loading="lazy"
+                  data-original-deferred="pending"
+                  data-original-placeholder={preview?.url}
+                  data-original-placeholder-for={preview?.source}
+                  decoding="async"
+                />
+              </span>
+            );
+          })}
           <span class="seasonal-count">
             <CatalogCount
               kind="collection-artworks"
@@ -226,9 +233,14 @@ const seasons = [
   }
   .seasonal-object {
     position: absolute;
-    object-fit: contain;
     filter: drop-shadow(0 10px 6px #4d41251e);
     transition: transform 0.2s;
+  }
+  .seasonal-object > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
   .seasonal-object-0 {
     width: 180px;

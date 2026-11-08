@@ -71,6 +71,7 @@
     "test:e2e:search-progressive": "node tests/e2e/search-suggestions-progressive.mjs",
     "test:e2e:original-image-loading": "node tests/e2e/original-image-loading.mjs",
     "test:e2e:original-image-scheduling": "node tests/e2e/original-image-scheduling.mjs",
+    "test:e2e:original-image-pending-preview": "node tests/e2e/original-image-pending-preview.mjs",
     "test:e2e:editor-startup": "node tests/e2e/editor-startup-parallel.mjs",
     "test:e2e:cookie-resize": "node tests/e2e/cookie-resize-stability.mjs",
     "test:shared-latency": "node --test tests/catalog-edge-metadata.mjs tests/catalog-parallel-pages.mjs tests/catalog-json-compression.mjs tests/editor-critical-preloads.mjs tests/catalog-module-preloads.mjs tests/search-source-directory.mjs",

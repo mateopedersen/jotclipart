@@ -214,6 +214,7 @@ jobs:
               BASE_URL=http://127.0.0.1:4321 UC_BROWSER="$engine" node tests/e2e/performance-layout.mjs
               UC_BROWSER="$engine" node tests/e2e/original-image-loading.mjs
               UC_BROWSER="$engine" node tests/e2e/original-image-scheduling.mjs
+              UC_BROWSER="$engine" node tests/e2e/original-image-pending-preview.mjs
               UC_BROWSER="$engine" node tests/e2e/related-image-recovery.mjs
               BASE_URL=http://127.0.0.1:4321 UC_BROWSER="$engine" node tests/e2e/cookie-startup.mjs
               BASE_URL=http://127.0.0.1:4321 UC_BROWSER="$engine" node tests/e2e/warm-editor-cache.mjs
