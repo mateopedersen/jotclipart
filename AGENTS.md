@@ -1,3 +1,28 @@
+# Current installed release — 2026-11-09
+
+This note supersedes historical installed-version notes below. Production
+software/control is `14a216ccf157c71be0ae022712612730f0adb76d`, signed root
+`aef87966ac69abc34df56c42603138c8252e6c9be2ea87d644a40904aed3739f`,
+Worker SHA `c66543a43f007819fbd866969d74b4d5d780a2eedc52916827432c7ca3b09eae`,
+ABI `971ed88ebd5ee97c5e77df7dcee83f2ebee48696ec3bf13501c77ad56e00fb17`.
+Pages: https://f52fd1ac.ultraclipart.pages.dev. Counts: 46,358 artworks / 769
+subjects. No pending 35-package intake was applied in this release.
+
+Use config/content-publisher.json and its protected installed runtime. Its 277
+exact-byte files and original absolute compiled dependencies are recorded in
+its manifest. Both DO-NOT-DELETE records apply: do not delete the original
+compiled dependency directory as disposable QA output. Do not rebase imports,
+alter the ABI or publish historical 7f4. Independent KEEP archives are separate
+from same-volume hardlinks. The config update is post-deployment bookkeeping.
+
+Proof: work/categories-14a216c-release-20261109/result.json, live browser and
+original-download receipts, publisher-binding-receipt.json and rapor.html.
+Actual 1,392 canonical bodies, four Chrome/WebKit responsive browser flows and
+two original download formats passed. Independent root rounds each checked 13
+GETs; independent UI categories to Alligator to Edit passed. No universal 1–2
+second, PageSpeed 100, physical iPhone or fresh catalog-wide review is claimed.
+Preserve the separate content-review backlog and pending quality holds.
+
 # Verified first-visit software and presentation release — 2026-11-05
 
 Current installed software/control/data epoch is

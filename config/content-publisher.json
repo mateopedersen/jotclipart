@@ -5,17 +5,17 @@
   "script": "scripts/catalog-snapshot/publish-content.mjs",
   "capsuleRoot": "data/catalog-batches",
   "software": {
-    "revision": "7f4cd45a87ad2bd0ac39c3a9b4bc44a3e98091f7",
-    "abiSHA256": "ac56d3c68ee2e5bd4b9e726345b694b7a19bde18331303f83f08dc255ea9a098",
-    "workerSHA256": "c9410da88f3527a041b483edbb105a1fba4a29c93378d51fe55be48c89c30ad1",
-    "directory": "work/catalog-snapshot/software-first-visit-20261105"
+    "revision": "14a216ccf157c71be0ae022712612730f0adb76d",
+    "abiSHA256": "971ed88ebd5ee97c5e77df7dcee83f2ebee48696ec3bf13501c77ad56e00fb17",
+    "workerSHA256": "c66543a43f007819fbd866969d74b4d5d780a2eedc52916827432c7ca3b09eae",
+    "directory": "/Users/melihozcan/Documents/UltraClipart-Publisher-Runtime/installed-content-runtime-14a216c-20261109"
   },
-  "publicConfig": "config/content-publisher-public.json",
+  "publicConfig": "/Users/melihozcan/Documents/UltraClipart-Publisher-Runtime/installed-content-runtime-14a216c-20261109/config.json",
   "lastVerifiedData": {
-    "revision": "7f4cd45a87ad2bd0ac39c3a9b4bc44a3e98091f7",
-    "root": "e0e4fc7f9366f70fe187311e5152babd793135977594e9ca999a01cc4faf37ef",
-    "artworks": 39108,
-    "topics": 696
+    "revision": "14a216ccf157c71be0ae022712612730f0adb76d",
+    "root": "aef87966ac69abc34df56c42603138c8252e6c9be2ea87d644a40904aed3739f",
+    "artworks": 46358,
+    "topics": 769
   },
   "limits": {
     "changedArtworksPerPacket": 256,
@@ -25,9 +25,9 @@
     "accountInventoryRequired": false,
     "fullCatalogBuildForContent": false
   },
-  "proof": "work/catalog-snapshot/software-first-visit-proof-20261105/production-report.json",
+  "proof": "/Users/melihozcan/Documents/UltraClipart-Publisher-Runtime/installed-content-runtime-14a216c-20261109/live-delivery-verification.json",
   "loadTests": "work/catalog-snapshot/load-tests/two-run-report.json",
   "protectedIndependentBackup": "/Users/melihozcan/Documents/UltraClipart-Publisher-KEEP",
   "measurementsScope": "Two private real-media transport + composition + native campaigns, approved unique sources reused. Fresh image review/repair/public verification remains separate; <=60 minutes is a measured technical target, not a universal guarantee.",
-  "installedRuntimePreservation": "work/catalog-snapshot/preserved-installed-runtime-first-visit-20261105/manifest.json"
+  "installedRuntimePreservation": "/Users/melihozcan/Documents/UltraClipart-Publisher-Runtime/installed-content-runtime-14a216c-20261109/manifest.json"
 }
