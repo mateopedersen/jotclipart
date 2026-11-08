@@ -47,7 +47,7 @@ const html =
       '" loading="lazy" data-original-deferred="pending" width="100" height="100"></a>',
   ).join('') +
   '</div><script type="module" src="/client.js"></script></body></html>';
-// Actual category CSS reserves the artwork track even while scheduling is offline.
+// Actual category CSS reserves the artwork track while original bytes are pending.
 const categoryCSS = readFileSync('src/styles/categories.css', 'utf8');
 const categoryHTML =
   '<!doctype html><html><head><meta name="viewport" content="width=device-width"><script>' +
@@ -374,20 +374,27 @@ try {
           await context.addInitScript(() =>
             Object.defineProperty(navigator, 'onLine', { configurable: true, get: () => false }),
           );
-          await context.route('https://assets.ultraclipart.com/**', (route) =>
-            route.fulfill({ status: 200, contentType: 'image/webp', body: bytes }),
-          );
+          let releaseImages, requested = 0;
+          const imageGate = new Promise((resolve) => { releaseImages = resolve; });
+          await context.route('https://assets.ultraclipart.com/**', async (route) => {
+            requested++;
+            await imageGate;
+            await route.fulfill({ status: 200, contentType: 'image/webp', body: bytes });
+          });
           const page = await context.newPage();
           await page.goto('http://127.0.0.1:' + server.address().port + '/category-frames', {
             waitUntil: 'domcontentloaded',
           });
           const cards = page.locator('.discovery-scene-card');
-          await expect(page.locator('img[data-original-deferred="pending"]')).toHaveCount(4);
+          await expect(cards.locator('img')).toHaveCount(4);
+          await expect.poll(() => requested).toBeGreaterThan(0);
+          assert.equal(await cards.locator('img').evaluateAll((xs) => xs.some((i) => i.complete && i.naturalWidth > 0)), false);
           const before = await cards.evaluateAll((xs) =>
             xs.map((x) => ({ width: x.offsetWidth, height: x.offsetHeight })),
           );
           await expect(page.locator('html')).toHaveAttribute('data-original-scheduling', 'active');
           assert.equal(await page.evaluate(() => navigator.onLine), false);
+          releaseImages();
           await expect
             .poll(() =>
               page
