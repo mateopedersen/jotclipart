@@ -179,11 +179,16 @@ try {
     await page.locator('[data-action=crop]').click();
     await page.locator('[data-panel=background]').click();
     await page.locator('[data-bg="#edf1e7"]').click();
-    await page.locator('.wb-file-menu summary').click();
+    const fileMenu = page.locator('.wb-file-menu');
+    if (!(await fileMenu.evaluate((element) => element.open)))
+      await fileMenu.locator('summary').click();
+    const saveProject = fileMenu.locator('[data-action=save]');
+    await expect(saveProject).toBeVisible();
     const [project] = await Promise.all([
       page.waitForEvent('download', { timeout: 60000 }),
-      page.locator('.wb-file-menu [data-action=save]').click(),
+      saveProject.click(),
     ]);
+    await expect(page.locator('[data-status]')).toContainText('Editable project saved.');
     await project.saveAs(resolve(out, `${a.id}-project.json`));
     const data = JSON.parse(readFileSync(resolve(out, `${a.id}-project.json`)));
     assert.equal(data.layers.filter((l) => l.kind === 'raster').length, imageCount);
