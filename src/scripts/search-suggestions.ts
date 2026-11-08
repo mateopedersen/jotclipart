@@ -65,9 +65,12 @@ export function initSearchSuggestions() {
     // Begin public metadata ahead of typing; immutable roots stay valid until
     // the authenticated server reports a newer catalog. No visitor query is sent.
     primeDirectory();
-    const close = () => {
+    const stopPendingSearch = () => {
       clearTimeout(timer);
       requests.cancel();
+    };
+    const close = () => {
+      stopPendingSearch();
       panel.hidden = true;
       panel.setAttribute('aria-busy', 'false');
       active = -1;
@@ -249,6 +252,11 @@ export function initSearchSuggestions() {
       selecting = false;
       if (queued && active < 0) show(queued);
     });
+    // Keep the native destination intact while stopping work for the page the
+    // visitor is leaving. Otherwise the debounce can fire during WebKit unload.
+    panel.addEventListener('click', (event) => {
+      if ((event.target as Element)?.closest('a[href]')) stopPendingSearch();
+    });
     input.addEventListener('keydown', (event) => {
       if (panel.hidden) return;
       const links = [...panel.querySelectorAll<HTMLAnchorElement>('[role="option"]')];
@@ -272,6 +280,7 @@ export function initSearchSuggestions() {
       }
       if (event.key === 'Enter' && active >= 0) {
         event.preventDefault();
+        stopPendingSearch();
         location.assign(links[active].href);
       }
     });
@@ -289,6 +298,7 @@ export function initSearchSuggestions() {
     });
     // Initial pageshow can arrive after a visitor starts typing while large
     // original images finish loading. Only a restored BFCache page needs reset.
+    window.addEventListener('pagehide', close);
     window.addEventListener('pageshow', (event) => {
       if (event.persisted) {
         pageRoot = undefined;
