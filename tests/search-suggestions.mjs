@@ -24,7 +24,41 @@ test('direct subjects precede artwork, without duplicate destinations', () => {
   assert.equal(results[1].href, `/art/${art.id}/`);
   assert.equal(results[1].alt, art.alt);
   assert.equal(results[1].title, art.title);
+  assert.equal(results[0].kind, 'Clipart Set');
+  assert.equal(results[1].kind, 'Individual Clipart');
   assert.equal(new Set(results.map((x) => x.href)).size, results.length);
+});
+test('collection and individual destination labels remain distinct', () => {
+  const collection = {
+    ...topic,
+    id: 'autumn-thanksgiving',
+    kind: 'collection',
+    title: 'Autumn & Thanksgiving',
+    href: '/collection/autumn-thanksgiving/',
+  };
+  const results = searchSuggestions(
+    'autumn thanksgiving',
+    [art],
+    [{ entry: collection, fuzzy: false }],
+  );
+  assert.equal(results[0].href, collection.href);
+  assert.equal(results[0].kind, 'Collection');
+  assert.equal(results[1].kind, 'Individual Clipart');
+});
+test('a multiword named set remains direct navigation, not a scene query', () => {
+  const namedSet = {
+    ...topic,
+    title: 'Red And Blue States Clipart',
+    href: '/clipart/red-and-blue-states/',
+  };
+  assert.equal(isDirectSearchMatch(namedSet, 'red and blue states'), true);
+  const results = searchSuggestions(
+    'red and blue states',
+    [art],
+    [{ entry: namedSet, fuzzy: false }],
+  );
+  assert.equal(results[0].href, namedSet.href);
+  assert.equal(results[0].kind, 'Clipart Set');
 });
 test('detailed scene and style queries never promote a broad subject', () => {
   for (const query of [

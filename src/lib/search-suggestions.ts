@@ -1,7 +1,7 @@
 import { artworkPath } from './artwork-route.mjs';
 import { displayTitle } from './display-title.ts';
 import { normalizeQuery, queryTerms, termVariants } from './search-language.ts';
-import { preparedSiteEntry, searchKindLabels, type SiteSearchEntry } from './site-search.ts';
+import { preparedSiteEntry, type SiteSearchEntry, type SiteSearchKind } from './site-search.ts';
 import type { SearchCard } from './search-index.ts';
 
 export interface SearchSuggestion {
@@ -12,6 +12,18 @@ export interface SearchSuggestion {
   thumbSrcSet?: string;
   alt?: string;
 }
+
+// A suggestion names its destination, while the full search tabs use plural
+// category labels. Keep these separate so a subject set is not confused with
+// one downloadable illustration or a broader collection.
+const suggestionKindLabels: Record<SiteSearchKind, string> = {
+  topic: 'Clipart Set',
+  collection: 'Collection',
+  guide: 'Guide',
+  tool: 'Tool',
+  page: 'Site Page',
+  studio: 'Studio Element',
+};
 
 /** Promote deliberate subject/tool navigation, not incidental matches in page copy. */
 export function isDirectSearchMatch(entry: SiteSearchEntry, query: string) {
@@ -44,14 +56,14 @@ export function searchSuggestions(
   const toSuggestion = ({ entry }: { entry: SiteSearchEntry }): SearchSuggestion => ({
     title: displayTitle(entry.title),
     href: entry.href,
-    kind: searchKindLabels[entry.kind],
+    kind: suggestionKindLabels[entry.kind],
   });
   const candidates = [
     ...direct.slice(0, 2).map(toSuggestion),
     ...artwork.slice(0, 4).map((item) => ({
       title: displayTitle(item.title),
       href: artworkPath(item),
-      kind: 'Artwork',
+      kind: 'Individual Clipart',
       thumb: item.suggestionThumb ?? item.thumb,
       ...(!item.suggestionThumb && item.thumbSrcSet ? { thumbSrcSet: item.thumbSrcSet } : {}),
       alt: item.alt,

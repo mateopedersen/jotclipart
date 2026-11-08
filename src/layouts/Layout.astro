@@ -361,7 +361,7 @@ const releaseRevision = /^[a-f0-9]{40}$/.test(import.meta.env.PUBLIC_RELEASE_REV
           <a
             class="site-surprise-link site-surprise-desktop"
             href={artworkPath(surprisePicks[0])}
-            aria-label="Surprise me. Open a random illustration"
+            aria-label="Surprise me. A little reason to smile. Open a random illustration"
             data-surprise-art={JSON.stringify(surprisePicks)}
             data-surprise-source={`/surprise-picks.json?v=${SURPRISE_INDEX_VERSION}-${import.meta.env.PUBLIC_RELEASE_REVISION || 'local'}`}
           >
@@ -411,7 +411,7 @@ const releaseRevision = /^[a-f0-9]{40}$/.test(import.meta.env.PUBLIC_RELEASE_REV
         <a
           class="site-surprise-link site-surprise-mobile"
           href={artworkPath(surprisePicks[0])}
-          aria-label="Surprise me. Open a random illustration"
+          aria-label="Surprise me. A little reason to smile. Open a random illustration"
           data-surprise-art=""
           data-surprise-source={`/surprise-picks.json?v=${SURPRISE_INDEX_VERSION}-${import.meta.env.PUBLIC_RELEASE_REVISION || 'local'}`}
         >
