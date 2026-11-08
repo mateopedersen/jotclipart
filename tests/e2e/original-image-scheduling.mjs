@@ -114,7 +114,8 @@ try {
         'dynamic',
         'replacement',
         'back-forward',
-        'offline',
+        'false-offline-hint',
+        'late-false-offline-hint',
         'print',
       ]) {
         const context = await browser.newContext({
@@ -172,11 +173,9 @@ try {
             active--;
           }
         });
-        if (scenario === 'offline') await context.setOffline(true);
-        // The HTTP fixture is kept reachable while navigator reports offline through
-        // a controlled online event; no CDN result is represented by this case.
-        if (scenario === 'offline') {
-          await context.setOffline(false);
+        // The fixture network stays reachable. A false OS/browser hint must not
+        // gate originals or require an online event to recover visible content.
+        if (scenario === 'false-offline-hint') {
           await context.addInitScript(() => {
             Object.defineProperty(navigator, 'onLine', { configurable: true, get: () => false });
           });
@@ -187,13 +186,16 @@ try {
         const frames = await page
           .locator('.art-picture')
           .evaluateAll((xs) => xs.map((x) => ({ width: x.offsetWidth, height: x.offsetHeight })));
-        if (scenario === 'offline') {
-          await page.waitForTimeout(150);
-          assert.equal(attempts.size, 0);
+        if (scenario === 'late-false-offline-hint') {
           await page.evaluate(() => {
-            Object.defineProperty(navigator, 'onLine', { configurable: true, get: () => true });
-            dispatchEvent(new Event('online'));
+            Object.defineProperty(navigator, 'onLine', { configurable: true, get: () => false });
+            dispatchEvent(new Event('offline'));
+            scrollTo(0, 700);
           });
+        }
+        if (['false-offline-hint', 'late-false-offline-hint'].includes(scenario)) {
+          await expect(page.locator('html')).toHaveAttribute('data-original-scheduling', 'active');
+          assert.equal(await page.evaluate(() => navigator.onLine), false);
         }
         if (scenario === 'watchdog-deep') await page.evaluate(() => scrollTo(0, 1800));
         if (scenario === 'slow-scroll') await page.evaluate(() => scrollTo(0, 700));
@@ -384,10 +386,8 @@ try {
           const before = await cards.evaluateAll((xs) =>
             xs.map((x) => ({ width: x.offsetWidth, height: x.offsetHeight })),
           );
-          await page.evaluate(() => {
-            Object.defineProperty(navigator, 'onLine', { configurable: true, get: () => true });
-            dispatchEvent(new Event('online'));
-          });
+          await expect(page.locator('html')).toHaveAttribute('data-original-scheduling', 'active');
+          assert.equal(await page.evaluate(() => navigator.onLine), false);
           await expect
             .poll(() =>
               page

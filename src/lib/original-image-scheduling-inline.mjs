@@ -21,6 +21,8 @@ export const originalImageSchedulingScript = String.raw`(() => {
     clearInterval(watchdog);
     queued.clear();
   };
+  // navigator.onLine is only an unreliable connectivity hint. Actual image
+  // results drive loading and recovery; the hint must not gate the queue.
   const source = image => {
     try {
       const u = new URL(image.getAttribute('src') || '', location.href);
@@ -30,7 +32,7 @@ export const originalImageSchedulingScript = String.raw`(() => {
   };
   function pump() {
     scheduled = false;
-    if (failed || document.hidden || !navigator.onLine) return;
+    if (failed || document.hidden) return;
     try {
       for (const s of active) s.image.fetchPriority = s.visible ? 'high' : 'low';
       const candidates = [...queued].filter(s => s.image.isConnected &&
@@ -127,7 +129,7 @@ export const originalImageSchedulingScript = String.raw`(() => {
     }
     discover(root);
     watchdog = setInterval(() => {
-      if (failed || document.hidden || !navigator.onLine || document.readyState === 'loading') return;
+      if (failed || document.hidden || document.readyState === 'loading') return;
       try {
         // Never restart or discard a healthy request. If scheduling cannot make
         // progress, remove this enhancement and let native original loading work.
