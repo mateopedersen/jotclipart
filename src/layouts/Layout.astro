@@ -124,6 +124,7 @@ const releaseRevision = /^[a-f0-9]{40}$/.test(import.meta.env.PUBLIC_RELEASE_REV
 <html lang="en-US">
   <head>
     <meta charset="UTF-8" />
+    <script is:inline set:html={siteNavigationScript}></script>
     <link rel="preconnect" href="https://assets.ultraclipart.com" />
     <script>
       import { initOriginalImageLoading } from '../scripts/original-image-loading';

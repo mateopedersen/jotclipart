@@ -19,6 +19,7 @@ const preview = imageLoadingPreview(item);
       width="400"
       height="400"
       loading={priority ? 'eager' : 'lazy'}
+      data-original-deferred={priority ? undefined : 'pending'}
       decoding="async"
       fetchpriority={priority ? 'high' : undefined}
       data-original-placeholder={preview?.url}

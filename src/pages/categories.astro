@@ -101,6 +101,7 @@ const schema = {
               width="155"
               height="140"
               loading="lazy"
+              data-original-deferred="pending"
               decoding="async"
             />
             <span>{subject.name}</span>
@@ -195,6 +196,7 @@ const schema = {
                           width="52"
                           height="52"
                           loading="lazy"
+                          data-original-deferred="pending"
                           decoding="async"
                           alt=""
                           title={collection.previews[0].title}
@@ -295,17 +297,28 @@ const schema = {
             >
               <a href={`/clipart/${subject.slug}/`}>
                 <div class={`subject-art tone-${subject.color}`}>
-                  {index < 12 && subject.sample ? <img
-                    title={subject.sample.title}
-                    src={subject.sample.thumb}
-                    srcset={subject.sample.thumbSrcSet}
-                    sizes="(max-width: 520px) 44vw, (max-width: 979px) 28vw, 240px"
-                    alt={subject.sample.alt}
-                    width="240"
-                    height="190"
-                    loading="lazy"
-                    decoding="async"
-                  /> : <span class="subject-image-pending" role="img" aria-label={`${subject.name} collection preview`}>Open Collection</span>}
+                  {index < 12 && subject.sample ? (
+                    <img
+                      title={subject.sample.title}
+                      src={subject.sample.thumb}
+                      srcset={subject.sample.thumbSrcSet}
+                      sizes="(max-width: 520px) 44vw, (max-width: 979px) 28vw, 240px"
+                      alt={subject.sample.alt}
+                      width="240"
+                      height="190"
+                      loading="lazy"
+                      data-original-deferred="pending"
+                      decoding="async"
+                    />
+                  ) : (
+                    <span
+                      class="subject-image-pending"
+                      role="img"
+                      aria-label={`${subject.name} collection preview`}
+                    >
+                      Open Collection
+                    </span>
+                  )}
                 </div>
                 <div class="subject-label">
                   <div>

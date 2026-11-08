@@ -37,6 +37,7 @@ const previews = items.slice(0, 3).map((item) => imageLoadingPreview(item));
         width={item.width}
         height={item.height}
         loading={priority ? 'eager' : 'lazy'}
+        data-original-deferred={priority ? undefined : 'pending'}
         decoding="async"
         fetchpriority={priority && index === 0 ? 'high' : undefined}
         data-original-placeholder={previews[index]?.url}

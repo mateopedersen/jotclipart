@@ -22,6 +22,7 @@ const { card } = Astro.props;
       width="400"
       height="400"
       loading="lazy"
+      data-original-deferred="pending"
       decoding="async"
     />
     <span class="related-image-error" hidden>
@@ -33,7 +34,13 @@ const { card } = Astro.props;
       {displayTitle(card.title)}
     </a>
     <p class="related-reason">{card.reason}</p>
-    <CardFileActions id={card.id} title={displayTitle(card.title)} webp={card.webp} pdf={card.pdf} related>
+    <CardFileActions
+      id={card.id}
+      title={displayTitle(card.title)}
+      webp={card.webp}
+      pdf={card.pdf}
+      related
+    >
       <button
         type="button"
         class="related-favorite"

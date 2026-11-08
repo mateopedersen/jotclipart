@@ -49,6 +49,7 @@ if (grid) {
         media.className = 'subject-collection-art';
         const img = document.createElement('img');
         img.loading = 'lazy';
+        img.dataset.originalDeferred = 'pending';
         img.fetchPriority = 'low';
         img.decoding = 'async';
         img.src = item.sample.webp ?? item.sample.thumb;

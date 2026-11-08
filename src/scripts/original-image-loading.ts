@@ -16,6 +16,15 @@ export function initOriginalImageLoading(
   )
     throw Error('Bounded image recovery required');
   marker.dataset.originalImageLoading = 'ready';
+  let supportsObserver = typeof IntersectionObserver === 'function';
+  if (supportsObserver) {
+    try {
+      const probe = new IntersectionObserver(() => {});
+      probe.disconnect();
+    } catch {
+      supportsObserver = false;
+    }
+  }
   type State = {
     image: HTMLImageElement;
     source: string;
@@ -167,6 +176,8 @@ export function initOriginalImageLoading(
             ? 'Image unavailable. Open artwork.'
             : 'Image still loading. Open artwork.',
     );
+    if (s.retries >= delays.length && s.image.complete)
+      s.image.dispatchEvent(new Event('uc:original-image-terminal-error'));
     queue.add(s);
     scheduleRetry(s);
     pump();
@@ -256,78 +267,78 @@ export function initOriginalImageLoading(
         // restore the identical immutable URL; no derivative or query is used.
         s.retryReady = false;
         s.resetting = true;
+        s.image.dataset.originalRetryReset = 'true';
         s.image.removeAttribute('src');
         requestAnimationFrame(() => {
           if (states.get(s.image) !== s || !s.image.isConnected) return;
           if (s.image.getAttribute('src') === null) s.image.src = s.source;
           s.resetting = false;
+          delete s.image.dataset.originalRetryReset;
           paintPreview(s);
           if (s.active) watch(s);
         });
       } else watch(s);
     }
   }
-  const viewportObserver =
-    typeof IntersectionObserver === 'undefined'
-      ? undefined
-      : new IntersectionObserver(
-          (entries) => {
-            for (const entry of entries) {
-              const s = states.get(entry.target as HTMLImageElement);
-              if (!s) continue;
-              const r = entry.boundingClientRect;
-              s.visible =
-                entry.isIntersecting &&
-                entry.intersectionRect.width > 0 &&
-                entry.intersectionRect.height > 0;
-              s.top = r.top;
-              if (s.visible) {
-                s.near = true;
-                queue.add(s);
-              }
-              if (s.active && !s.visible && !s.near) {
-                release(s);
-              }
-              if (!s.active && !s.image.complete) {
-                const overlapsViewport =
-                  r.width > 0 &&
-                  r.height > 0 &&
-                  r.bottom > 0 &&
-                  r.top < innerHeight &&
-                  r.right > 0 &&
-                  r.left < innerWidth;
-                const horizontallyOffscreen =
-                  r.width > 0 &&
-                  r.height > 0 &&
-                  r.bottom > 0 &&
-                  r.top < innerHeight &&
-                  (r.right <= 0 || r.left >= innerWidth);
-                s.image.fetchPriority =
-                  horizontallyOffscreen || (overlapsViewport && !s.visible) ? 'low' : 'auto';
-              }
-              paintPreview(s);
+  const viewportObserver = !supportsObserver
+    ? undefined
+    : new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            const s = states.get(entry.target as HTMLImageElement);
+            if (!s) continue;
+            const r = entry.boundingClientRect;
+            s.visible =
+              entry.isIntersecting &&
+              entry.intersectionRect.width > 0 &&
+              entry.intersectionRect.height > 0;
+            s.top = r.top;
+            if (s.visible) {
+              s.near = true;
+              queue.add(s);
             }
-            pump();
-          },
-          { rootMargin: '0px' },
-        );
-  const observer =
-    typeof IntersectionObserver === 'undefined'
-      ? undefined
-      : new IntersectionObserver(
-          (entries) => {
-            for (const entry of entries) {
-              const s = states.get(entry.target as HTMLImageElement);
-              if (!s) continue;
-              s.near = entry.isIntersecting;
-              s.top = entry.boundingClientRect.top;
-              if (s.near) queue.add(s);
-              else queue.delete(s);
+            if (s.active && !s.visible && !s.near) {
+              release(s);
             }
-            pump();
-          },
-          { rootMargin: `${Math.min(600, Math.max(240, Math.round(innerHeight / 2)))}px 0px` },
-        );
+            if (!s.active && !s.image.complete) {
+              const overlapsViewport =
+                r.width > 0 &&
+                r.height > 0 &&
+                r.bottom > 0 &&
+                r.top < innerHeight &&
+                r.right > 0 &&
+                r.left < innerWidth;
+              const horizontallyOffscreen =
+                r.width > 0 &&
+                r.height > 0 &&
+                r.bottom > 0 &&
+                r.top < innerHeight &&
+                (r.right <= 0 || r.left >= innerWidth);
+              s.image.fetchPriority =
+                horizontallyOffscreen || (overlapsViewport && !s.visible) ? 'low' : 'auto';
+            }
+            paintPreview(s);
+          }
+          pump();
+        },
+        { rootMargin: '0px' },
+      );
+  const observer = !supportsObserver
+    ? undefined
+    : new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            const s = states.get(entry.target as HTMLImageElement);
+            if (!s) continue;
+            s.near = entry.isIntersecting;
+            s.top = entry.boundingClientRect.top;
+            if (s.near) queue.add(s);
+            else queue.delete(s);
+          }
+          pump();
+        },
+        { rootMargin: `${Math.min(600, Math.max(240, Math.round(innerHeight / 2)))}px 0px` },
+      );
   function remove(image: HTMLImageElement) {
     const s = states.get(image);
     if (!s) return;

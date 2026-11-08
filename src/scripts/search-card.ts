@@ -29,6 +29,7 @@ export function renderCard(item: SearchCard): HTMLElement {
     picture = link('', detail, 'art-picture'),
     image = document.createElement('img');
   image.loading = 'lazy';
+  image.dataset.originalDeferred = 'pending';
   image.fetchPriority = 'low';
   image.decoding = 'async';
   image.alt = item.alt;

@@ -191,6 +191,7 @@ export function initFavorites() {
         img.src = url;
         img.alt = '';
         img.loading = 'lazy';
+        img.dataset.originalDeferred = 'pending';
         img.width = 160;
         img.height = 160;
         cover.append(img);

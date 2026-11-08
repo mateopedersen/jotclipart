@@ -22,24 +22,39 @@ const samples = new SearchRepository();
 const sampleJobs = new Map<string, Promise<void>>();
 let sampleQueue = Promise.resolve();
 function loadSamples(targets: HTMLLIElement[]) {
-  const missing = targets.filter(card => !card.querySelector('.subject-art img') && card.dataset.sampleId);
-  const fresh = missing.filter(card => !sampleJobs.has(card.dataset.sampleId!));
+  const missing = targets.filter(
+    (card) => !card.querySelector('.subject-art img') && card.dataset.sampleId,
+  );
+  const fresh = missing.filter((card) => !sampleJobs.has(card.dataset.sampleId!));
   if (!fresh.length) return;
-  const ids = [...new Set(fresh.map(card => card.dataset.sampleId!))];
+  const ids = [...new Set(fresh.map((card) => card.dataset.sampleId!))];
   // At most one bounded visible batch. Filter hover never scans all subjects.
   const job = sampleQueue.then(async () => {
     const result = await samples.favoriteItems(ids);
-    const byId = new Map(result.filter((item): item is SearchCard => item !== null).map(item => [item.id, item]));
+    const byId = new Map(
+      result.filter((item): item is SearchCard => item !== null).map((item) => [item.id, item]),
+    );
     for (const card of fresh) {
       const item = byId.get(card.dataset.sampleId!);
       if (!item || card.querySelector('.subject-art img')) continue;
       const url = new URL(item.webp);
-      if (url.origin !== 'https://assets.ultraclipart.com' || !url.pathname.endsWith('.webp') || url.search || url.hash)
+      if (
+        url.origin !== 'https://assets.ultraclipart.com' ||
+        !url.pathname.endsWith('.webp') ||
+        url.search ||
+        url.hash
+      )
         throw new Error('Collection preview must use its original R2 artwork.');
       const image = new Image();
-      image.title = item.title; image.alt = item.alt;
-      image.width = 240; image.height = 190; image.loading = 'lazy';
-      image.decoding = 'async'; image.fetchPriority = 'low'; image.src = url.href;
+      image.title = item.title;
+      image.alt = item.alt;
+      image.width = 240;
+      image.height = 190;
+      image.loading = 'lazy';
+      image.dataset.originalDeferred = 'pending';
+      image.decoding = 'async';
+      image.fetchPriority = 'low';
+      image.src = url.href;
       card.querySelector('.subject-art')!.replaceChildren(image);
     }
   });
@@ -79,7 +94,9 @@ function primeImages(targets: HTMLLIElement[], priority: 'high' | 'low', maximum
     const image = card.querySelector<HTMLImageElement>('.subject-art img');
     if (!image) continue;
     image.sizes = `${width}px`;
-    image.loading = 'eager';
+    // The shared original scheduler starts visible images without flooding the
+    // connection with every hovered collection's full-resolution artwork.
+    if (image.dataset.originalDeferred !== 'pending') image.loading = 'eager';
     image.fetchPriority = priority;
   }
 }
@@ -162,7 +179,12 @@ async function filter(save = true) {
   matchedCount = Math.min(limit, matches.length);
   updateColumns();
   const shown = new Set(matches.slice(0, limit));
-  loadSamples(matches.slice(0, limit).filter(card => !card.querySelector('.subject-art img')).slice(0, pageSize));
+  loadSamples(
+    matches
+      .slice(0, limit)
+      .filter((card) => !card.querySelector('.subject-art img'))
+      .slice(0, pageSize),
+  );
   if (save) primeImages(matches.slice(0, limit), 'high');
   for (const card of cards) card.hidden = !shown.has(card);
   if (orderKey !== previousSort) {

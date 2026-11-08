@@ -1,6 +1,11 @@
 .art-picture {
   position: relative;
 }
+/* The fixed parent retains its exact geometry. If the critical script is
+   disabled or fails, this selector never hides the ordinary original image. */
+html[data-original-scheduling='active'] img[data-original-deferred='pending'] {
+  display: none !important;
+}
 /* This background is temporary. The real img, schema and file links stay original. */
 img[data-original-preview='pending'] {
   background-image: var(--original-loading-preview);

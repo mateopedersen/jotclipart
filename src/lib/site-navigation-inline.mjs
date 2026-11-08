@@ -1,6 +1,9 @@
-// Critical header interaction: no image, module or optional share dependency.
+// Critical header interaction: no network, module or optional share dependency.
 // Exact bytes are included in the reviewed CSP; never enable unsafe-inline.
-export const siteNavigationScript = String.raw`(() => {
+import { originalImageSchedulingScript } from './original-image-scheduling-inline.mjs';
+export const siteNavigationScript =
+  originalImageSchedulingScript +
+  String.raw`(() => {
   const header = document.querySelector("[data-site-header]");
   if (header && header.dataset.navigationReady !== "true") {
     header.dataset.navigationReady = "true";
