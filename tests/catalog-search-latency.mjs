@@ -64,3 +64,5 @@ test('parallel candidate loading still rejects corrupt immutable forward bytes',
   const engine=await openSearch(corrupt,descriptor,{allowPrivateFixture:true});
   await assert.rejects(engine.search(state('quokka')),/Corrupt search object/);
 });
+
+test('narrow exact queries do not walk unrelated alphabetical pages',async()=>{const {descriptor}=await fixture;let orderedTitleReads=0;const observed={get:async key=>{const value=await bucket.get(key);if(value){const body=JSON.parse(new TextDecoder().decode(await value.arrayBuffer()));if(body.type.startsWith('ledger-order-')&&body.kind==='title')orderedTitleReads++}return value}};const engine=await openSearch(observed,descriptor,{allowPrivateFixture:true});const result=await engine.search(state('capybara'));assert.equal(result.items[0].id,'fixture-2561');assert.equal(orderedTitleReads,0);assert.equal(engine.metrics().forwardBlocks,1);});

@@ -61,8 +61,8 @@ export async function openSearch(bucket,descriptor,{maxReads=8000,maxBytes=256*1
    // A narrow query must not walk the global alphabet merely to sort its few
    // matches. Read only the already-selected candidates' verified forward blocks.
    // Broad queries retain the bounded streaming ordered index.
-   const scanLimit=eligible.size<=512?Math.min(4096,Math.max(256,new Set([...eligible].map(n=>Math.floor(n/manifest.forwardChunk))).size*256)):Infinity;
-   let count=0,visited=0;const chosen=[];for await(const entry of orderedValues(structures,manifest.ranked[kind],kind)){const n=entry.n;if(eligible.has(n)){if(count++>=start)chosen.push({n});if(chosen.length===size)return chosen}if(++visited>=scanLimit){await loadRankedMetadata(eligible);return [...eligible].map(n=>rankedMetadata.get(n)).sort(comparator(kind)).slice(start,start+size).map(({n})=>({n}));}}return chosen;
+   if(eligible.size<=512){await loadRankedMetadata(eligible);return [...eligible].map(n=>rankedMetadata.get(n)).sort(comparator(kind)).slice(start,start+size).map(({n})=>({n}));}
+   let count=0;const chosen=[];for await(const entry of orderedValues(structures,manifest.ranked[kind],kind)){const n=entry.n;if(eligible.has(n)){if(count++>=start)chosen.push({n});if(chosen.length===size)return chosen}}return chosen;
   }
   if(tokens.length===1){
    const denied=excluded.length?await idsFor(excluded.flatMap(termVariants)):new Set(),scores=new Map();

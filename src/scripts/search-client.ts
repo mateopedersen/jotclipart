@@ -38,6 +38,8 @@ export function initSearch() {
   let state: SearchState = parseState(new URLSearchParams(location.search)),
     timer: ReturnType<typeof setTimeout> | undefined,
     composing = false;
+  let pageRoot = document.querySelector<HTMLMetaElement>('meta[name="catalog-snapshot"]')?.content;
+  if (!/^[a-f0-9]{64}$/.test(pageRoot ?? '')) pageRoot = undefined;
   let renderedArtwork: RemoteResults | undefined;
   let siteLimit = 8,
     siteMatches: ReturnType<typeof searchSiteEntries> = [];
@@ -116,13 +118,17 @@ export function initSearch() {
           if (!requested.q && ['all', 'artwork'].includes(requested.type))
             return { entries: null, siteError: false, version: '' };
           try {
+            if (!pinned && pageRoot) return { entries: await repository.sourceDirectory(pageRoot, signal), siteError: false, version: pageRoot };
             const manifest = pinned ?? await repository.manifest(signal);
             const entries = await repository.siteEntries(manifest, signal);
             return { entries, siteError: false, version: manifest.version };
           } catch { return { entries: null, siteError: true, version: '' }; }
         };
-        const sitePromise = artMode ? undefined : loadSite();
-        const result = await repository.search(requested, signal);
+        const sitePromise = loadSite();
+        const result = pageRoot
+          ? await repository.searchAtSnapshot(pageRoot, requested, signal)
+          : await repository.search(requested, signal);
+        if (!signal.aborted) pageRoot = result.manifest.version;
         // Artwork does not wait for the separate page/Studio directory. Both
         // stages use the same cancellation guard, including cached responses.
         if (artMode) emit({ result, entries: null, sitePending: !!requested.q, siteError: false });

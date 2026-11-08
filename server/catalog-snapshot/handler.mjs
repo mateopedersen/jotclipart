@@ -77,7 +77,7 @@ export function createCatalogHandler({
       cluster = /^\/collection\/([a-z0-9]+(?:-[a-z0-9]+)*)\/$/.exec(path),
       xml = /^\/sitemap(?:-(?:(?:pages|images)(?:-\d+)?|collections))?\.xml$/.test(path),
       kind = paths[path],
-      siteDirectory = /^\/search-data\/([a-f0-9]{64})\/site\.json$/.exec(path);
+      siteDirectory = /^\/search-data\/([a-f0-9]{64})\/(?:site|navigation)\.json$/.exec(path);
     if (request.method === 'GET' || request.method === 'HEAD') {
       if (redirects[path]) return Response.redirect(new URL(redirects[path], url.origin), 301);
       if (/^\/download\//.test(path))
@@ -375,7 +375,7 @@ export function createCatalogHandler({
       const headers = new Headers(response.headers);
       // Numeric request-local diagnostics only; never persist timings in cached HTML.
       const completedAt = performance.now();
-      headers.set(
+      headers.append(
         'Server-Timing',
         `uc_capture;dur=${Math.max(0, capturedAt - requestStarted).toFixed(1)}, uc_resolve;dur=${Math.max(0, completedAt - capturedAt).toFixed(1)}, uc_total;dur=${Math.max(0, completedAt - requestStarted).toFixed(1)}`,
       );

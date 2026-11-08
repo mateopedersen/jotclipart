@@ -125,3 +125,5 @@ test('a pending old-root response cannot cross a repository clear boundary', asy
     (e) => e.name === 'AbortError',
   );
 });
+
+test('compact suggestions retain operation through a single stale-root retry',async()=>{const operations=[];const repo=new SearchRepository(async(path,signal,init)=>{if(path.endsWith('/manifest.json'))return manifest(B);const body=JSON.parse(init.body);operations.push(body.operation);if(body.snapshot===A)throw new SearchHttpError(409);return{schema:1,snapshot:B,result:result(B)}});assert.equal((await repo.searchAtSnapshot(A,state,undefined,[],true)).manifest.version,B);assert.deepEqual(operations,['suggest','suggest'])});
