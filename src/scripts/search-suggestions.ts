@@ -1,5 +1,5 @@
 import { defaults } from '../lib/search';
-import { SearchRepository } from '../lib/search-remote';
+import { SearchRepository, type RemoteResults } from '../lib/search-remote';
 import { LatestRequest } from '../lib/search-request';
 import { alignSearchDirectory } from '../lib/search-directory';
 import { searchNavigationEntries as searchSiteEntries } from '../lib/site-search';
@@ -10,6 +10,11 @@ import {
 } from '../lib/search-suggestions';
 export function initSearchSuggestions() {
   const repository = new SearchRepository();
+  const navigationRepository: Pick<SearchRepository, 'siteEntries'> = {
+    siteEntries: (manifest, signal) => manifest.transport?.directory === 'source-bound-site-v1'
+      ? repository.sourceDirectory(manifest.version, signal, true)
+      : repository.siteEntries(manifest, signal),
+  };
   for (const form of document.querySelectorAll<HTMLFormElement>('form[action="/search/"]')) {
     if (form.id === 'catalog-search' || form.dataset.suggestionsReady) continue;
     const found = form.querySelector<HTMLInputElement>('input[name="q"]');
@@ -50,7 +55,7 @@ export function initSearchSuggestions() {
           (entries) => {
             if (pageRoot === root && earlyDirectory === loading) availableDirectory = entries;
           },
-          () => {},
+          () => { if (earlyDirectory === loading) earlyDirectory = undefined; },
         );
         // This contains public source metadata only, with no visitor query.
         void earlyDirectory.catch(() => {});
@@ -149,13 +154,15 @@ export function initSearchSuggestions() {
         }>(
           async (signal, emit) => {
             const queryRoot = pageRoot;
+            let readyArtwork: RemoteResults | undefined;
             const early = primeDirectory();
             const showDirect = (
               entries: Awaited<ReturnType<SearchRepository['sourceDirectory']>>,
             ) => {
+              if (readyArtwork && readyArtwork.manifest.version !== queryRoot) return entries;
               const matches = searchSiteEntries(entries, query);
-              if (matches.some(({ entry, fuzzy }) => !fuzzy && isDirectSearchMatch(entry, query)))
-                emit({ artwork: [], site: matches });
+              if (readyArtwork?.items.length || matches.some(({ entry, fuzzy }) => !fuzzy && isDirectSearchMatch(entry, query)))
+                emit({ artwork: readyArtwork?.items ?? [], site: matches });
               return entries;
             };
             // The page already pins its verified root. A direct topic does not
@@ -168,14 +175,22 @@ export function initSearchSuggestions() {
                 ? early.then((entries) => ({ version: queryRoot, entries }))
                 : repository.manifest(signal).then(async (manifest) => ({
                     version: manifest.version,
-                    entries: await repository.siteEntries(manifest, signal),
+                    entries: await navigationRepository.siteEntries(manifest, signal),
                   }));
             const artworkRead = async () => {
               return queryRoot
                 ? repository.searchAtSnapshot(queryRoot, { ...defaults, q: query, size: 8 }, signal, [], true)
                 : repository.search({ ...defaults, q: query, size: 8 }, signal);
             };
-            const [art, entries] = await Promise.allSettled([artworkRead(), siteEntries]);
+            const artworkPromise = artworkRead().then((result) => {
+              readyArtwork = result;
+              // Validated artwork is usable even while navigation metadata is slow.
+              // Never attach an old directory to a refreshed artwork generation.
+              const sameDirectory = result.manifest.version === queryRoot ? availableDirectory : undefined;
+              emit({ artwork: result.items, site: searchSiteEntries(sameDirectory ?? [], query) });
+              return result;
+            });
+            const [art, entries] = await Promise.allSettled([artworkPromise, siteEntries]);
             if (art.status === 'rejected' && entries.status === 'rejected') throw art.reason;
             const directory = {
               version: entries.status === 'fulfilled' ? entries.value.version : (queryRoot ?? ''),
@@ -184,7 +199,7 @@ export function initSearchSuggestions() {
             };
             const aligned =
               art.status === 'fulfilled'
-                ? await alignSearchDirectory(repository, art.value.manifest, directory, signal)
+                ? await alignSearchDirectory(navigationRepository, art.value.manifest, directory, signal)
                 : directory;
             if (
               !signal.aborted &&

@@ -73,10 +73,6 @@ export function initSearch() {
   function render(mode: 'push' | 'replace' | 'none' = 'none') {
     clearTimeout(timer);
     timer = undefined;
-    if (Date.now() - refreshed >= 30000) {
-      refreshed = Date.now();
-      repository.clear();
-    }
     const requested = { ...state },
       artMode = ['all', 'artwork'].includes(state.type);
     historyUrl(mode);
@@ -118,7 +114,10 @@ export function initSearch() {
           if (!requested.q && ['all', 'artwork'].includes(requested.type))
             return { entries: null, siteError: false, version: '' };
           try {
-            if (!pinned && pageRoot) return { entries: await repository.sourceDirectory(pageRoot, signal), siteError: false, version: pageRoot };
+            if (!pinned && pageRoot) {
+              const root = pageRoot;
+              return { entries: await repository.sourceDirectory(root, signal), siteError: false, version: root };
+            }
             const manifest = pinned ?? await repository.manifest(signal);
             const entries = await repository.siteEntries(manifest, signal);
             return { entries, siteError: false, version: manifest.version };
@@ -362,22 +361,7 @@ export function initSearch() {
     state = parseState(new URLSearchParams(location.search));
     render();
   });
-  let refreshed = Date.now();
-  const refresh = () => {
-    if (
-      document.visibilityState !== 'visible' ||
-      document.activeElement === query ||
-      timer !== undefined ||
-      composing ||
-      Date.now() - refreshed < 30000
-    )
-      return;
-    refreshed = Date.now();
-    repository.clear();
-    render();
-  };
-  window.addEventListener('focus', refresh);
-  document.addEventListener('visibilitychange', refresh);
-  window.setInterval(refresh, 30000);
+  // Each interaction is authenticated against its pinned root; a conflict refreshes once.
+  // Do not clear working results and refetch a large directory on an idle timer.
   render('replace');
 }
