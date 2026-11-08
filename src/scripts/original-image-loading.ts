@@ -144,7 +144,6 @@ export function initOriginalImageLoading(
     if (
       s.retry ||
       s.retries >= delays.length ||
-      !navigator.onLine ||
       !s.visible ||
       !inView(s) ||
       root.hidden
@@ -168,13 +167,11 @@ export function initOriginalImageLoading(
     status(
       s,
       'error',
-      !navigator.onLine
-        ? 'Waiting for connection…'
-        : s.retries < delays.length
-          ? 'Retrying image…'
-          : s.image.complete
-            ? 'Image unavailable. Open artwork.'
-            : 'Image still loading. Open artwork.',
+      s.retries < delays.length
+        ? 'Retrying image…'
+        : s.image.complete
+          ? 'Image unavailable. Open artwork.'
+          : 'Image still loading. Open artwork.',
     );
     if (s.retries >= delays.length && s.image.complete)
       s.image.dispatchEvent(new Event('uc:original-image-terminal-error'));
@@ -187,7 +184,7 @@ export function initOriginalImageLoading(
       s.watch = undefined;
       if (s.image.complete && s.image.naturalWidth > 0) loaded(s);
       else if (s.image.complete) recover(s);
-      else if (inView(s) && !root.hidden && navigator.onLine) {
+      else if (inView(s) && !root.hidden) {
         // A large original over a slow connection may still be transferring.
         // Do not discard its progress merely because a timer expired. Actual
         // error events retain bounded retries; this transfer can finish intact.
@@ -201,7 +198,9 @@ export function initOriginalImageLoading(
     }, stallMs);
   }
   function pump() {
-    if (root.hidden || !navigator.onLine) return;
+    // Connectivity hints can be false while R2 remains reachable. Keep the
+    // same two retry/promoted-slot limits and trust actual load/error results.
+    if (root.hidden) return;
     const rank = (a: State, b: State) =>
       Number(b.visible) - Number(a.visible) ||
       Number(b.preferred) - Number(a.preferred) ||

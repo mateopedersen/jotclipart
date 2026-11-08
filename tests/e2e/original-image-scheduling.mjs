@@ -197,7 +197,8 @@ try {
           await page.evaluate(() => {
             Object.defineProperty(navigator, 'onLine', { configurable: true, get: () => false });
             dispatchEvent(new Event('offline'));
-            scrollTo(0, 700);
+            // Expose another row while preserving overlap with the first viewport.
+            scrollTo(0, 220);
           });
         }
         if (['false-offline-hint', 'late-false-offline-hint'].includes(scenario)) {

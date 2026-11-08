@@ -55,6 +55,10 @@ try {
         'offline',
         'non-r2',
         'queued',
+        'false-hint-healthy',
+        'false-hint-transient',
+        'false-hint-permanent',
+        'late-false-hint-transient',
       ]) {
         const context = await browser.newContext({ viewport: { width: 390, height: 900 } }),
           page = await context.newPage();
@@ -69,9 +73,9 @@ try {
             return;
           }
           if (
-            scenario === 'permanent' ||
-            (scenario === 'transient' && n === 1) ||
-            (scenario === 'dynamic' && n === 2)
+            ['permanent', 'false-hint-permanent'].includes(scenario) ||
+            (['transient', 'false-hint-transient'].includes(scenario) && n === 1) ||
+            (['dynamic', 'late-false-hint-transient'].includes(scenario) && n === 2)
           ) {
             await route.fulfill({
               status: 503,
@@ -110,12 +114,18 @@ try {
             attributeFilter: ['data-original-image-state'],
           });
         });
+        if (scenario.startsWith('false-hint-') || scenario === 'late-false-hint-transient') {
+          const online = scenario === 'late-false-hint-transient';
+          await context.addInitScript((value) => {
+            Object.defineProperty(navigator, 'onLine', { configurable: true, get: () => value });
+          }, online);
+        }
         await page.goto('http://127.0.0.1:' + server.address().port, {
           waitUntil: 'domcontentloaded',
         });
         const image = page.locator('.art-picture img').first();
         await expect(page.locator('html')).toHaveAttribute('data-original-image-loading', 'ready');
-        if (scenario === 'permanent') {
+        if (['permanent', 'false-hint-permanent'].includes(scenario)) {
           await expect(image).toHaveAttribute('data-original-image-state', 'error');
           await expect(page.locator('.original-image-status')).toHaveText(
             'Image unavailable. Open artwork.',
@@ -129,7 +139,7 @@ try {
             'https://assets.ultraclipart.com/fixture/original.webp',
           );
           assert.equal(await image.getAttribute('alt'), 'Explicit fixture image');
-          if (scenario === 'transient') assert.equal(requests, 2);
+          if (['transient', 'false-hint-transient'].includes(scenario)) assert.equal(requests, 2);
           if (scenario === 'stall') {
             assert.equal(requests, 1, 'A slow original transfer must not be restarted');
             assert(
@@ -137,8 +147,16 @@ try {
               'Watchdog reports a long transfer without discarding progress',
             );
           }
-          if (scenario === 'healthy') assert.equal(requests, 1);
-          if (scenario === 'dynamic' || scenario === 'offline') {
+          if (['healthy', 'false-hint-healthy'].includes(scenario)) assert.equal(requests, 1);
+          if (['dynamic', 'offline', 'late-false-hint-transient'].includes(scenario)) {
+            if (scenario === 'late-false-hint-transient') {
+              assert.equal(await page.evaluate(() => navigator.onLine), true);
+              assert.equal(requests, 1);
+              await page.evaluate(() => {
+                Object.defineProperty(navigator, 'onLine', { configurable: true, get: () => false });
+                dispatchEvent(new Event('offline'));
+              });
+            }
             if (scenario === 'offline') {
               offlineFault = true;
               await context.setOffline(true);
@@ -193,6 +211,11 @@ try {
             await expect(other).not.toHaveAttribute('data-original-image-state', /.+/);
             assert((await other.getAttribute('src')).startsWith('data:image/webp;'));
           }
+        }
+        if (scenario.includes('false-hint')) {
+          assert.equal(await page.evaluate(() => navigator.onLine), false);
+          assert((await page.evaluate(() => window.__maxImagePromotions)) <= 2);
+          if (scenario === 'late-false-hint-transient') assert.equal(requests, 3);
         }
         report.cases.push({
           engine,
