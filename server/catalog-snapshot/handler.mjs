@@ -74,7 +74,10 @@ export function createCatalogHandler({
     if (rules) return rules;
     const url = new URL(request.url),
       path = url.pathname,
-      art = /^\/(art|edit)\/([a-z0-9]+(?:-[a-z0-9]+)*)\/$/.exec(path),
+      legacyDownload = /^\/download\/([a-z0-9]+(?:-[a-z0-9]+)*)\/?$/.exec(path),
+      art =
+        /^\/(art|edit)\/([a-z0-9]+(?:-[a-z0-9]+)*)\/?$/.exec(path) ??
+        (legacyDownload ? [path, 'art', legacyDownload[1]] : null),
       topic = /^\/clipart\/([a-z0-9]+(?:-[a-z0-9]+)*)\/$/.exec(path),
       cluster = /^\/collection\/([a-z0-9]+(?:-[a-z0-9]+)*)\/$/.exec(path),
       xml = /^\/sitemap(?:-(?:(?:pages|topics|collections|art|images)(?:-[1-9]\d*)?))?\.xml$/.test(
@@ -84,11 +87,9 @@ export function createCatalogHandler({
       siteDirectory = /^\/search-data\/([a-f0-9]{64})\/(?:site|navigation)\.json$/.exec(path);
     if (request.method === 'GET' || request.method === 'HEAD') {
       if (redirects[path]) return Response.redirect(new URL(redirects[path], url.origin), 301);
-      if (/^\/download\//.test(path))
-        return Response.redirect(new URL(path.replace(/^\/download\//, '/art/'), url.origin), 301);
       if (
         !path.endsWith('/') &&
-        (/^\/(?:art|edit|clipart|collection)\/[a-z0-9-]+$/.test(path) ||
+        (/^\/(?:edit|clipart|collection)\/[a-z0-9-]+$/.test(path) ||
           Object.hasOwn(paths, path + '/'))
       )
         return Response.redirect(new URL(path + '/' + url.search, url.origin), 301);
@@ -170,7 +171,7 @@ export function createCatalogHandler({
       if (art && art[1] === 'art') {
         resolvedArtwork = await resolvePublicArtworkRoute(context, art[2]);
         if (!resolvedArtwork) return missing();
-        if (resolvedArtwork.slug !== art[2]) {
+        if (resolvedArtwork.slug !== art[2] || path !== '/art/' + resolvedArtwork.slug + '/') {
           if (!(await readArtwork(context, resolvedArtwork.id))) return missing();
           return Response.redirect(new URL('/art/' + resolvedArtwork.slug + '/', url.origin), 301);
         }

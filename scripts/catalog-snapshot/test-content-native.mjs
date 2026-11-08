@@ -259,21 +259,35 @@ async function verifyNativeContentWithSource({
     if (sourcePacket.status === 'SOURCE_DERIVED_URL_MIGRATION_BATCH') {
       const plan = JSON.parse(readFileSync('data/routes/artwork-public-urls-v1.json'));
       assert.equal(plan.parentRoot, sourcePacket.parentSnapshotSHA256);
-      let cursor = 0;
+      const priority = plan.changes.find((c) => c.id === 'diamond-aircraft-20261105-004');
+      const redirects = priority
+        ? [priority, ...plan.changes.filter((c) => c.id !== priority.id)]
+        : plan.changes;
+      let cursor = 0,
+        verified = 0;
       await Promise.all(
         Array.from({ length: 4 }, async () => {
-          while (cursor < plan.changes.length) {
-            const c = plan.changes[cursor++],
+          while (cursor < redirects.length) {
+            const c = redirects[cursor++],
               path = '/art/' + c.id + '/',
               expectedLocation = 'https://ultraclipart.com/art/' + c.slug + '/';
             const r = await mf.dispatchFetch('https://ultraclipart.com' + path, {
               headers,
               redirect: 'manual',
             });
-            assert.equal(r.status, 301, path);
+            const detail = r.status === 301 ? '' : (await r.text()).slice(0, 1600);
+            assert.equal(r.status, 301, path + ' ' + detail);
             assert.equal(r.headers.get('location'), expectedLocation, path);
             await r.arrayBuffer();
             results.push({ path, status: 301, expectedLocation, source: 'legacy-redirect' });
+            if (++verified % 1000 === 0)
+              console.log(
+                JSON.stringify({
+                  phase: 'native-legacy-redirects',
+                  verified,
+                  total: redirects.length,
+                }),
+              );
           }
         }),
       );

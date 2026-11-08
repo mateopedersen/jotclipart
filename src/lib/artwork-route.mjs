@@ -20,7 +20,13 @@ export function readableArtworkSlug(title) {
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '')
     .replace(/-clipart$/, '');
-  const bounded = slug.length <= 150 ? slug : slug.slice(0, 151).replace(/-[^-]*$/, '');
+  const truncated = slug.slice(0, 150);
+  const bounded =
+    slug.length <= 150
+      ? slug
+      : truncated.lastIndexOf('-') > 0
+        ? truncated.slice(0, truncated.lastIndexOf('-'))
+        : truncated;
   if (!SLUG.test(bounded)) throw Error('Source title has no readable URL');
   return bounded;
 }

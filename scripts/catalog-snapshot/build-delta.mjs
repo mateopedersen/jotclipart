@@ -1,3 +1,8 @@
+import {
+  activeCuratedCollections,
+  curatedDefinitions,
+} from '../../src/lib/curated-collection-policy.mjs';
+import { separatedSitemaps } from '../../server/catalog-snapshot/sitemap-policy.mjs';
 import { publicRouteForId } from '../../server/catalog-snapshot/public-artwork-routes.mjs';
 import { sitemapChangeFamily } from '../../server/catalog-snapshot/sitemap-policy.mjs';
 // Source-approved metadata composition. No template compilation, native exports, remote writes or activation.
@@ -310,6 +315,37 @@ export async function buildCatalogDelta({
         oldCounts.collections[slug] ? pageEntry(loc) : null,
         afterCC.global.collections[slug] ? pageEntry(loc) : null,
       );
+  }
+  if (separatedSitemaps(sitemapRoot)) {
+    const keys = [...new Set(curatedDefinitions.flatMap((g) => g.topicSlugs))];
+    const beforeTopics = {},
+      afterTopics = {};
+    for (let offset = 0; offset < keys.length; offset += 64) {
+      const subset = keys.slice(offset, offset + 64);
+      const [before, after] = await Promise.all([
+        collectionBefore.countsFor(subset),
+        afterCC.countsFor(subset),
+      ]);
+      Object.assign(beforeTopics, before.topics);
+      Object.assign(afterTopics, after.topics);
+    }
+    const previous = new Set(activeCuratedCollections(beforeTopics).map((g) => g.slug));
+    const next = new Set(activeCuratedCollections(afterTopics).map((g) => g.slug));
+    for (const slug of new Set([...previous, ...next])) {
+      if (
+        oldCounts.collections[slug] ||
+        afterCC.global.collections[slug] ||
+        previous.has(slug) === next.has(slug)
+      )
+        continue;
+      const loc = location('collection', slug);
+      await sitemapChange(
+        'pages',
+        loc,
+        previous.has(slug) ? pageEntry(loc) : null,
+        next.has(slug) ? pageEntry(loc) : null,
+      );
+    }
   }
   if (sitemapChanges.length)
     indexes.sitemaps = await applySitemapBatch(sitemapStore, indexes.sitemaps, sitemapChanges);
