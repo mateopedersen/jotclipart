@@ -24,21 +24,45 @@ export function privateSnapshotPublisher(job) {
           snapshotSHA256: job.snapshotSHA256,
           parentSnapshotSHA256: job.parentSnapshotSHA256,
         });
-      if (
-        request.method !== 'POST' ||
-        path !== '/activate' ||
-        Number(request.headers.get('content-length')) > 4096
-      )
+      if (request.method !== 'POST' || path !== '/activate')
         return new Response('Not found', { status: 404 });
+      if (Number(request.headers.get('content-length')) > 4096) {
+        if (request.body) await request.body.cancel().catch(() => {});
+        return new Response('Request too large', { status: 413 });
+      }
       let body;
       try {
-        body = await request.json();
+        if (!request.body) return new Response('Invalid request', { status: 400 });
+        const reader = request.body.getReader();
+        const bytes = new Uint8Array(4096);
+        let size = 0;
+        try {
+          for (;;) {
+            const { value, done } = await reader.read();
+            if (done) break;
+            if (size + value.byteLength > bytes.length) {
+              await reader.cancel().catch(() => {});
+              return new Response('Request too large', { status: 413 });
+            }
+            bytes.set(value, size);
+            size += value.byteLength;
+          }
+        } finally {
+          reader.releaseLock();
+        }
+        body = JSON.parse(
+          new TextDecoder('utf-8', { fatal: true }).decode(bytes.subarray(0, size)),
+        );
       } catch {
         return new Response('Invalid request', { status: 400 });
       }
+      if (!body || typeof body !== 'object' || Array.isArray(body))
+        return new Response('Invalid request', { status: 400 });
       const c = body.command;
       if (
         !c ||
+        typeof c !== 'object' ||
+        Array.isArray(c) ||
         Object.keys(c).length !== 6 ||
         c.action !== 'activate-verified-catalog-delta' ||
         c.snapshotSHA256 !== job.snapshotSHA256 ||
@@ -58,7 +82,8 @@ export function privateSnapshotPublisher(job) {
         ['verify'],
       );
       if (
-        !/^[a-f0-9]{64}$/.test(body.signature ?? '') ||
+        typeof body.signature !== 'string' ||
+        !/^[a-f0-9]{64}$/.test(body.signature) ||
         !(await crypto.subtle.verify(
           'HMAC',
           key,
