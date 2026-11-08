@@ -133,7 +133,9 @@ export const originalImageSchedulingScript = String.raw`(() => {
         // progress, remove this enhancement and let native original loading work.
         if (active.size && performance.now()-progressAt > 15000) { failOpen(); return; }
         if (!active.size && !queued.size) {
-          const pending = [...document.querySelectorAll(selector)].slice(0,32);
+          // This is the bounded rendered DOM, never the remote catalogue. A
+          // restored deep scroll may be beyond the first 32 pending frames.
+          const pending = [...document.querySelectorAll(selector)];
           if (pending.some(i => { const r=i.parentElement.getBoundingClientRect();
             return r.width>0 && r.height>0 && r.bottom>0 && r.top<innerHeight && r.right>0 && r.left<innerWidth;
           })) failOpen();

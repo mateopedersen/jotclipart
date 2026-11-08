@@ -33,7 +33,7 @@ const html =
   css +
   '.grid{display:grid;grid-template-columns:repeat(4,100px);gap:10px}.art-picture{width:100px;height:100px;aspect-ratio:1;display:block;position:relative}.art-picture img{width:100%;height:100%;object-fit:contain}.space{height:900px}</style></head><body><div class="grid">' +
   Array.from(
-    { length: 40 },
+    { length: 80 },
     (_, i) =>
       '<a class="art-picture" href="/art/fixture-' +
       i +
@@ -81,6 +81,7 @@ try {
         'no-javascript',
         'constructor-failure',
         'watchdog',
+        'watchdog-deep',
         'dynamic',
         'replacement',
         'back-forward',
@@ -101,7 +102,7 @@ try {
           await context.addInitScript(() => {
             window.IntersectionObserver = undefined;
           });
-        if (scenario === 'watchdog')
+        if (['watchdog', 'watchdog-deep'].includes(scenario))
           await context.addInitScript(() => {
             window.IntersectionObserver = class {
               observe() {}
@@ -164,6 +165,7 @@ try {
             dispatchEvent(new Event('online'));
           });
         }
+        if (scenario === 'watchdog-deep') await page.evaluate(() => scrollTo(0, 1800));
         if (scenario === 'slow-scroll') await page.evaluate(() => scrollTo(0, 700));
         if (scenario === 'print')
           await page.evaluate(() => dispatchEvent(new Event('beforeprint')));
@@ -205,7 +207,14 @@ try {
           )
           .toBe(true);
         if (
-          !['no-io', 'no-javascript', 'constructor-failure', 'watchdog', 'print'].includes(scenario)
+          ![
+            'no-io',
+            'no-javascript',
+            'constructor-failure',
+            'watchdog',
+            'watchdog-deep',
+            'print',
+          ].includes(scenario)
         ) {
           assert(peak <= 4, 'No native offscreen request flood: ' + peak);
           assert(attempts.size < 40, 'The complete offscreen gallery must not be prefetched');
@@ -248,16 +257,14 @@ try {
           .evaluateAll((xs) => xs.map((x) => ({ width: x.offsetWidth, height: x.offsetHeight })));
         assert(after.every((x) => x.width === 100 && x.height === 100));
         assert(frames.every((x) => x.width === 100 && x.height === 100));
-        const urls = await page
-          .locator('.art-picture img')
-          .evaluateAll((xs) =>
-            xs.map((i) => ({
-              src: i.getAttribute('src'),
-              current: i.currentSrc,
-              alt: i.alt,
-              loaded: i.complete && i.naturalWidth > 0,
-            })),
-          );
+        const urls = await page.locator('.art-picture img').evaluateAll((xs) =>
+          xs.map((i) => ({
+            src: i.getAttribute('src'),
+            current: i.currentSrc,
+            alt: i.alt,
+            loaded: i.complete && i.naturalWidth > 0,
+          })),
+        );
         assert(
           urls.every(
             (i) =>
