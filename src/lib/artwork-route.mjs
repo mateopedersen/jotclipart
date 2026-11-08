@@ -30,10 +30,10 @@ export function readableArtworkSlug(title) {
   if (!SLUG.test(bounded)) throw Error('Source title has no readable URL');
   return bounded;
 }
+// Migrate only unmistakable machine addresses. A descriptive suffix after an
+// old package serial is already a useful public URL and stays where it is.
 export function needsReadableArtworkSlug(id, topic) {
-  return (
-    /(?:^|-)20\d{6}(?:-|$)/.test(id) ||
-    /(?:^|-)clipart-\d{2,4}(?:-|$)/.test(id) ||
-    (id.startsWith(topic + '-') && /^\d{2,4}$/.test(id.slice(topic.length + 1)))
-  );
+  if (typeof id !== 'string' || typeof topic !== 'string') return false;
+  return /-20\d{6}-\d{2,4}$/.test(id) ||
+    (id.startsWith(topic + '-') && /^(?:clipart-)?\d{2,4}$/.test(id.slice(topic.length + 1)));
 }

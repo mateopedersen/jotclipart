@@ -221,7 +221,7 @@ async function verifyNativeContentWithSource({
         const r = await mf.dispatchFetch('https://ultraclipart.com' + path, { headers }),
           body = await r.text(),
           info = JSON.parse(body);
-        assert.equal(r.status, 200, path);
+        assert.equal(r.status, 200, path+' '+r.headers.get('x-private-error'));
         assert.equal(r.headers.get('x-uc-data-source'), 'prepared', path);
         assert.equal(info.transport.snapshot, root);
         assert.equal(info.items.length, source.entries);
@@ -291,6 +291,14 @@ async function verifyNativeContentWithSource({
           }
         }),
       );
+      // Already descriptive public addresses retain their original canonical URL.
+      for (const id of ['pumpkin-hot-air-balloon', 'andorra-flag-clipart-001-flat-sewn-national-flag']) {
+        assert(!plan.changes.some(c=>c.id===id), 'Readable URL entered migration');
+        const path='/art/'+id+'/',r=await mf.dispatchFetch('https://ultraclipart.com'+path,{headers,redirect:'manual'}),html=await r.text();
+        assert.equal(r.status,200,path+' '+r.headers.get('x-private-error'));
+        assert(html.includes('rel="canonical" href="https://ultraclipart.com'+path+'"'),path);
+        results.push({path,status:200,source:'preserved-readable-detail',sha256:sha(Buffer.from(html))});
+      }
       const samples = [
         ...plan.changes.filter((c) =>
           ['futsal-20261107-002', 'walmart-20261104-004'].includes(c.id),
@@ -304,7 +312,7 @@ async function verifyNativeContentWithSource({
             redirect: 'manual',
           }),
           html = await r.text();
-        assert.equal(r.status, 200, path);
+        assert.equal(r.status, 200, path+' '+r.headers.get('x-private-error'));
         assert(html.includes('rel="canonical" href="https://ultraclipart.com' + path + '"'), path);
         assert(html.includes('https://assets.ultraclipart.com/'), path);
         assert.equal(

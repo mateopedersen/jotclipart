@@ -7,7 +7,7 @@ import {
   resolvePublicArtworkRoute,
   extendPublicArtworkRoutes,
 } from '../../server/catalog-snapshot/public-artwork-routes.mjs';
-import { artworkPath, readableArtworkSlug } from '../../src/lib/artwork-route.mjs';
+import { artworkPath, readableArtworkSlug, needsReadableArtworkSlug } from '../../src/lib/artwork-route.mjs';
 function memory() {
   const values = new Map();
   return {
@@ -78,4 +78,9 @@ test('future imports allocate collision safe persistent URLs, and copy edits nev
     'blue-and-gold-aircraft-concept',
   );
   assert.equal(readableArtworkSlug('Very '.repeat(80)).endsWith('very'), true);
+});
+
+test('migration changes machine-only suffixes and preserves already descriptive URLs',()=>{
+ for(const [id,topic] of [['futsal-20261107-002','futsal'],['walmart-20261104-004','walmart'],['007-001','007'],['80s-01','80s']])assert.equal(needsReadableArtworkSlug(id,topic),true,id);
+ for(const [id,topic] of [['pumpkin-hot-air-balloon','pumpkin'],['andorra-flag-clipart-001-flat-sewn-national-flag','andorra-flag'],['boeing-747-in-flight','boeing'],['futsal-20261107-002-red-shoes','futsal'],['number-100-school-celebration','100']])assert.equal(needsReadableArtworkSlug(id,topic),false,id);
 });

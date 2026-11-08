@@ -47,3 +47,12 @@ with the previous pending caches. The permanent native lifecycle regression is
 Promise tests or weaken compatibility flags.
 
 Reference: https://developers.cloudflare.com/workers/configuration/compatibility-flags/#handle-cross-request-promise-resolution
+
+## Owner scope clarification, 8 November 2026
+
+Only machine-only date/serial suffixes and bare topic/serial paths enter the
+finite migration. Existing descriptive addresses, including older flag names
+with a package serial followed by meaningful scene words, stay canonical at
+their current URL. The current source inventory identifies 12,700 broken paths
+and preserves 33,658 existing artwork URLs. In particular
+`/art/pumpkin-hot-air-balloon/` is not redirected.
