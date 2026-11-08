@@ -143,14 +143,7 @@ export function initOriginalImageLoading(
     pump();
   }
   function scheduleRetry(s: State) {
-    if (
-      s.retry ||
-      s.retries >= delays.length ||
-      !s.visible ||
-      !inView(s) ||
-      root.hidden
-    )
-      return;
+    if (s.retry || s.retries >= delays.length || !s.visible || !inView(s) || root.hidden) return;
     const delay = delays[s.retries++];
     s.retry = setTimeout(() => {
       s.retry = undefined;
@@ -207,6 +200,7 @@ export function initOriginalImageLoading(
     if (root.hidden) return;
     const rank = (a: State, b: State) =>
       Number(b.visible) - Number(a.visible) ||
+      Number(b.retryReady) - Number(a.retryReady) ||
       Number(b.preferred) - Number(a.preferred) ||
       a.top - b.top;
     const candidates = [...new Set([...queue, ...active])]
@@ -227,12 +221,9 @@ export function initOriginalImageLoading(
         s.image.fetchPriority = 'auto';
         queue.add(s);
       }
-    for (const s of [...queue].sort(
-      (a, b) =>
-        Number(b.visible) - Number(a.visible) ||
-        Number(b.preferred) - Number(a.preferred) ||
-        a.top - b.top,
-    )) {
+    // Ready retries of visible failed originals must not wait behind healthy
+    // preferred transfers. Rebalance promotion only; never abort their bytes.
+    for (const s of [...queue].sort(rank)) {
       if (active.size >= 2) break;
       if (!s.image.isConnected || valid(s.image) !== s.source) {
         queue.delete(s);

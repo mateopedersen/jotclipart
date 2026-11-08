@@ -67,7 +67,9 @@ try {
         const context = await browser.newContext({ viewport: { width: 390, height: 900 } }),
           page = await context.newPage();
         let requests = 0,
-          offlineFault = false;
+          offlineFault = false,
+          releaseStall;
+        const stallReady = new Promise((resolve) => { releaseStall = resolve; });
         page.on('pageerror', (e) => report.errors.push({ engine, scenario, message: e.message }));
         await context.route('https://assets.ultraclipart.com/**', async (route) => {
           requests++;
@@ -88,7 +90,10 @@ try {
             });
             return;
           }
-          if (scenario === 'stall' && n === 1) await new Promise((r) => setTimeout(r, 800));
+          if (scenario === 'stall' && n === 1) {
+            await stallReady;
+            await new Promise((r) => setTimeout(r, 800));
+          }
           if (scenario === 'queued' && n > 1) await new Promise((r) => setTimeout(r, 100));
           try {
             await route.fulfill({
@@ -129,6 +134,12 @@ try {
         });
         const image = page.locator('.art-picture img').first();
         await expect(page.locator('html')).toHaveAttribute('data-original-image-loading', 'ready');
+        if (scenario === 'stall') {
+          // Start the held transfer's timer only after the real observer has
+          // admitted it. Browser observer startup time is not the stall under test.
+          await expect(image).toHaveAttribute('data-original-image-state', 'loading');
+          releaseStall();
+        }
         if (['permanent', 'false-hint-permanent'].includes(scenario)) {
           await expect(image).toHaveAttribute('data-original-image-state', 'error');
           await expect(page.locator('.original-image-status')).toHaveText(
