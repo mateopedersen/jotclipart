@@ -5,7 +5,11 @@ copy, editorial fingerprints, original R2 files and personal saved IDs do not ch
 `artworkRoot.publicRoutes` is a signed source-bound address projection, using
 bounded hash maps. Its ID map persists the initial canonical slug; its path map
 reserves both canonical and historical paths. New imports allocate a readable
-address from the accepted title, resolving collisions without reusing any old path.
+address from the accepted image-specific title. A collision rejects the import
+until the visible distinction has been reviewed and naturally named. Never append
+automatic dates, package/sequence numbers or `-2`/`-3` collision counters. Meaningful
+subject numbers such as Airbus A380, B-2 Spirit and Number 100 remain. Do not reuse
+any old path.
 Subsequent title corrections retain the initial canonical URL.
 
 Use `artworkPath` / `artworkURL` for page links and image schema. Search resolves

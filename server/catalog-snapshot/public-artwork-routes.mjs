@@ -75,11 +75,10 @@ export async function extendPublicArtworkRoutes(store, descriptor, records) {
     if (!record || !SLUG.test(record.id)) throw Error('Invalid incoming artwork route');
     const old = await mapGet(store, prior.byId, 'public-artwork-ids', record.id);
     if (old) continue;
-    const base = readableArtworkSlug(record.title);
-    let slug = base,
-      suffix = 1;
-    while ((await taken(slug))?.id && (await taken(slug)).id !== record.id)
-      slug = base + '-' + ++suffix;
+    const slug = readableArtworkSlug(record.title);
+    const collision = await taken(slug);
+    if (collision && collision.id !== record.id)
+      throw Error('Readable artwork URL collision: review an image-specific distinguishing title; automatic numeric suffixes are forbidden');
     const legacy = await taken(record.id);
     if (legacy && legacy.id !== record.id) throw Error('Incoming ID conflicts with a reserved URL');
     ids.set(record.id, { id: record.id, slug });

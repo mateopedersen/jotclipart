@@ -6,6 +6,7 @@ import { openSnapshot } from '../../server/catalog-snapshot/snapshot-context.mjs
 import { canonical } from '../../server/catalog-search/store.mjs';
 import { buildPublicArtworkRoutes } from '../../server/catalog-snapshot/public-artwork-routes.mjs';
 import { readSitemap } from '../../server/catalog-snapshot/sitemap-reader.mjs';
+import { readableArtworkSlug, needsReadableArtworkSlug } from '../../src/lib/artwork-route.mjs';
 import {
   bootstrapSitemaps,
   sitemapEnvelope,
@@ -82,6 +83,17 @@ export async function buildURLMigration({
     assert(!assignments.has(c.id));
     assert.equal(c.title, r.title);
     assert.equal(c.sourceRecordSHA256, sha(JSON.stringify(canonical(r))));
+    assert(needsReadableArtworkSlug(r.id, r.topic), 'Already descriptive URLs must stay canonical');
+    if (c.slug !== readableArtworkSlug(r.title)) {
+      const review = c.routeReview;
+      assert.equal(review?.scope, 'URL disambiguation only, accepted metadata unchanged');
+      assert.equal(review.inspectedOriginalPixels, true);
+      assert(/^[a-f0-9]{64}$/.test(review.sourceImageSHA256));
+      assert(r.webp.includes('.' + review.sourceImageSHA256.slice(0, 16) + '.'));
+      assert(Array.isArray(review.observations) && review.observations.length >= 2);
+      assert.equal(c.slug, readableArtworkSlug(c.slug));
+      assert(!/-\d+$/.test(c.slug), 'No artificial numeric route disambiguation');
+    }
     assignments.set(c.id, c.slug);
   }
   const stage = async (facet, value) => {

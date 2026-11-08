@@ -22124,9 +22124,20 @@
     },
     {
       "id": "cessna-aircraft-20261105-037",
-      "slug": "green-twin-propeller-aircraft-2",
+      "slug": "green-and-white-twin-propeller-aircraft",
       "sourceRecordSHA256": "c5332023545e2ecd3bf2bf6d13147a2d1b3e324819488b3b7c06258f7ca774d3",
-      "title": "Green Twin Propeller Aircraft"
+      "title": "Green Twin Propeller Aircraft",
+      "routeReview": {
+        "scope": "URL disambiguation only, accepted metadata unchanged",
+        "sourceImageSHA256": "b914741c9d2e8504f541d2dbd7cb4a4174f30cee3e92651efa70ba7acb9233d3",
+        "inspectedOriginalPixels": true,
+        "observations": [
+          "White fuselage and wings with a dark green lower fuselage and tail band",
+          "Two visible propellers, a low wing and wingtip tanks; no exact manufacturer or model inferred"
+        ],
+        "references": [],
+        "reviewedAt": "2026-11-08T13:03:27.066Z"
+      }
     },
     {
       "id": "cessna-aircraft-20261105-038",
@@ -72614,9 +72625,22 @@
     },
     {
       "id": "xbox-002",
-      "slug": "xbox-series-x-and-controller-2",
+      "slug": "black-xbox-series-x-console-and-controller",
       "sourceRecordSHA256": "2c06bff4e3eee805d7090d95d2598d7233cfca1af23bd5f091b4c440df1ef472",
-      "title": "Xbox Series X and Controller"
+      "title": "Xbox Series X and Controller",
+      "routeReview": {
+        "scope": "URL disambiguation only, accepted metadata unchanged",
+        "sourceImageSHA256": "4bb1db86966623066db87ded9327f06d640ec1902002df35bf569d1227d680d3",
+        "inspectedOriginalPixels": true,
+        "observations": [
+          "Black rectangular tower console with Xbox logo, green-tinted circular top ventilation and front disc slot",
+          "Black Xbox controller stands in front of the console with colored lettered face buttons"
+        ],
+        "references": [
+          "https://www.xbox.com/en-us/consoles/xbox-series-x"
+        ],
+        "reviewedAt": "2026-11-08T13:03:27.079Z"
+      }
     },
     {
       "id": "xbox-003",

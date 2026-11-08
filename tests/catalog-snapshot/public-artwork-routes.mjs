@@ -54,21 +54,24 @@ test('readable routes preserve immutable IDs and give legacy and canonical paths
     /collision/,
   );
 });
-test('future imports allocate collision safe persistent URLs, and copy edits never rename them', async () => {
+test('future imports reject artificial numeric disambiguation, and copy edits never rename URLs', async () => {
   const store = memory(),
     first = await buildPublicArtworkRoutes(
       store,
       [{ id: 'existing' }],
       new Map([['existing', 'red-balloon']]),
     );
-  const second = await extendPublicArtworkRoutes(store, first, [
+  await assert.rejects(extendPublicArtworkRoutes(store, first, [
     { id: 'new-20261108-001', title: 'Red Balloon Clipart' },
+  ]), /automatic numeric suffixes are forbidden/);
+  const second = await extendPublicArtworkRoutes(store, first, [
+    { id: 'new-20261108-001', title: 'Red Heart Shaped Balloon' },
   ]);
-  assert.equal(await publicRouteForId(ctx(store, second), 'new-20261108-001'), 'red-balloon-2');
+  assert.equal(await publicRouteForId(ctx(store, second), 'new-20261108-001'), 'red-heart-shaped-balloon');
   const third = await extendPublicArtworkRoutes(store, second, [
     { id: 'new-20261108-001', title: 'Corrected Source Caption' },
   ]);
-  assert.equal(await publicRouteForId(ctx(store, third), 'new-20261108-001'), 'red-balloon-2');
+  assert.equal(await publicRouteForId(ctx(store, third), 'new-20261108-001'), 'red-heart-shaped-balloon');
   await assert.rejects(
     extendPublicArtworkRoutes(store, third, [{ id: 'red-balloon', title: 'Other Image' }]),
     /reserved/,
@@ -78,6 +81,12 @@ test('future imports allocate collision safe persistent URLs, and copy edits nev
     'blue-and-gold-aircraft-concept',
   );
   assert.equal(readableArtworkSlug('Very '.repeat(80)).endsWith('very'), true);
+  for (const title of ['Airbus A380 In Flight', 'B-2 Spirit', 'Number 100'])
+    assert.match(readableArtworkSlug(title), /\d/, 'Meaningful subject/model numbers remain');
+  await assert.rejects(extendPublicArtworkRoutes(store, first, [
+    { id: 'first-new', title: 'Blue Balloon' },
+    { id: 'second-new', title: 'Blue Balloon' },
+  ]), /collision/, 'Two records in the same atomic import cannot silently gain numeric suffixes');
 });
 
 test('migration changes machine-only suffixes and preserves already descriptive URLs',()=>{
