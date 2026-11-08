@@ -40,7 +40,7 @@ export function preparedSiteEntry(entry: SiteSearchEntry) {
     body: new Set(normalizeQuery(`${entry.title} ${entry.description} ${entry.text} ${searchKindLabels[entry.kind]}`)) };
   preparedEntries.set(entry, value); return value;
 }
-export function searchSiteEntries(entries: SiteSearchEntry[], query: string, kind = 'all') {
+export function searchSiteEntries(entries: SiteSearchEntry[], query: string, kind = 'all', navigationOnly = false) {
   const plan = queryTerms(query),
     tokens = [...plan.tokens];
   if (plan.wantsOutline) tokens.push('outline');
@@ -50,7 +50,8 @@ export function searchSiteEntries(entries: SiteSearchEntry[], query: string, kin
   const exact: { entry: SiteSearchEntry; score: number; fuzzy: boolean }[] = [],
     close: typeof exact = [];
   for (const entry of candidates) {
-    const { title, body } = preparedSiteEntry(entry);
+    const prepared = preparedSiteEntry(entry), title = prepared.title,
+      body = navigationOnly ? new Set(title) : prepared.body;
     if (plan.excluded.some((word) => termVariants(word).some((term) => body.has(term)))) continue;
     const matches: TermMatch[] = [];
     for (const [i, token] of tokens.entries()) {
@@ -83,4 +84,9 @@ export function searchSiteEntries(entries: SiteSearchEntry[], query: string, kin
   return (exact.length ? exact : close).sort(
     (a, b) => b.score - a.score || a.entry.title.localeCompare(b.entry.title, 'en'),
   );
+}
+
+/** Autocomplete navigates named subjects and collections, not incidental words in policy copy. */
+export function searchNavigationEntries(entries: SiteSearchEntry[], query: string) {
+  return searchSiteEntries(entries, query, 'all', true);
 }

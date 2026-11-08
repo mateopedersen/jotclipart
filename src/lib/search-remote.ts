@@ -133,7 +133,7 @@ export class SearchRepository {
   }
   private async snapshotRequest<T>(
     manifest: Pick<SearchManifest, 'version' | 'transport'>,
-    operation: 'search' | 'items' | 'site' | 'studio',
+    operation: 'search' | 'suggest' | 'items' | 'site' | 'studio',
     payload: Record<string, unknown>,
     signal?: AbortSignal,
   ): Promise<T> {
@@ -289,12 +289,13 @@ export class SearchRepository {
     state: SearchState,
     signal?: AbortSignal,
     scope: readonly string[] = [],
+    suggestions = false,
   ): Promise<RemoteResults> {
     const transport = manifest.transport;
     if (!transport) throw new Error('The catalog transport is invalid.');
     const result = await this.snapshotRequest<RemoteResults>(
       manifest,
-      'search',
+      suggestions ? 'suggest' : 'search',
       { state, scope },
       signal,
     );
@@ -333,6 +334,7 @@ export class SearchRepository {
     state: SearchState,
     signal?: AbortSignal,
     scope: readonly string[] = [],
+    suggestions = false,
   ): Promise<RemoteResults> {
     if (!/^[a-f0-9]{64}$/.test(snapshot)) throw new Error('Invalid page snapshot.');
     try {
@@ -344,6 +346,7 @@ export class SearchRepository {
         state,
         signal,
         scope,
+        suggestions,
       );
     } catch (error) {
       if (
@@ -354,18 +357,19 @@ export class SearchRepository {
         throw error;
       this.clear();
       // Exactly one normal refresh; a second conflict propagates to the caller.
-      return this.performSearch(state, signal, scope);
+      return this.performSearch(state, signal, scope, suggestions);
     }
   }
   private async performSearch(
     state: SearchState,
     signal?: AbortSignal,
     scope: readonly string[] = [],
+    suggestions = false,
   ): Promise<RemoteResults> {
     const manifest = await this.manifest(signal),
       { tokens, excluded, wantsOutline, wantsMonochrome, wantsTransparent } = queryTerms(state.q);
     if (manifest.transport) {
-      return this.performSnapshotSearch(manifest, state, signal, scope);
+      return this.performSnapshotSearch(manifest, state, signal, scope, suggestions);
     }
     const facetNames = (['style', 'color', 'format', 'orientation', 'background'] as const)
       .filter((key) => state[key])
@@ -607,12 +611,13 @@ export class SearchRepository {
       ),
     };
   }
-  async sourceDirectory(root: string, signal?: AbortSignal): Promise<SiteSearchEntry[]> {
+  async sourceDirectory(root: string, signal?: AbortSignal, navigationOnly = false): Promise<SiteSearchEntry[]> {
     if (!/^[a-f0-9]{64}$/.test(root)) throw new Error('Invalid directory snapshot.');
-    const cached = this.siteCache.get(root);
+    const cacheKey = navigationOnly ? root + '/navigation' : root;
+    const cached = this.siteCache.get(cacheKey);
     if (cached) return cached;
     const response = await this.json<{ schema?: number; snapshot?: string; result?: unknown }>(
-      `/search-data/${root}/site.json`,
+      `/search-data/${root}/${navigationOnly ? 'navigation' : 'site'}.json`,
       signal,
     );
     if (response?.schema !== 1 || response.snapshot !== root)
@@ -634,7 +639,7 @@ export class SearchRepository {
       )
     )
       throw new Error('The page directory could not be read.');
-    this.siteCache.set(root, entries);
+    this.siteCache.set(cacheKey, entries);
     if (this.siteCache.size > 2) this.siteCache.delete(this.siteCache.keys().next().value!);
     return entries;
   }

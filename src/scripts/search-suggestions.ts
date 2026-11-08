@@ -1,14 +1,15 @@
 import { defaults } from '../lib/search';
 import { SearchRepository } from '../lib/search-remote';
-import { LatestRequest, typingPause } from '../lib/search-request';
+import { LatestRequest } from '../lib/search-request';
 import { alignSearchDirectory } from '../lib/search-directory';
-import { searchSiteEntries } from '../lib/site-search';
+import { searchNavigationEntries as searchSiteEntries } from '../lib/site-search';
 import {
   searchSuggestions,
   isDirectSearchMatch,
   type SearchSuggestion,
 } from '../lib/search-suggestions';
 export function initSearchSuggestions() {
+  const repository = new SearchRepository();
   for (const form of document.querySelectorAll<HTMLFormElement>('form[action="/search/"]')) {
     if (form.id === 'catalog-search' || form.dataset.suggestionsReady) continue;
     const found = form.querySelector<HTMLInputElement>('input[name="q"]');
@@ -28,14 +29,12 @@ export function initSearchSuggestions() {
     input.setAttribute('aria-controls', panel.id);
     input.setAttribute('aria-autocomplete', 'list');
     input.setAttribute('aria-expanded', 'false');
-    const repository = new SearchRepository(),
-      requests = new LatestRequest();
+    const requests = new LatestRequest();
     let timer: ReturnType<typeof setTimeout> | undefined,
       active = -1,
       selecting = false,
       queued: SearchSuggestion[] | undefined,
-      composing = false,
-      refreshed = Date.now();
+      composing = false;
     let pageRoot = document.querySelector<HTMLMetaElement>(
       'meta[name="catalog-snapshot"]',
     )?.content;
@@ -45,7 +44,7 @@ export function initSearchSuggestions() {
     const primeDirectory = () => {
       if (pageRoot && !earlyDirectory) {
         const root = pageRoot;
-        const loading = repository.sourceDirectory(root);
+        const loading = repository.sourceDirectory(root, undefined, true);
         earlyDirectory = loading;
         void loading.then(
           (entries) => {
@@ -58,6 +57,9 @@ export function initSearchSuggestions() {
       }
       return earlyDirectory;
     };
+    // Begin public metadata ahead of typing; immutable roots stay valid until
+    // the authenticated server reports a newer catalog. No visitor query is sent.
+    primeDirectory();
     const close = () => {
       clearTimeout(timer);
       requests.cancel();
@@ -122,13 +124,6 @@ export function initSearchSuggestions() {
       queued = undefined;
       input.setAttribute('aria-expanded', 'false');
       input.removeAttribute('aria-activedescendant');
-      if (Date.now() - refreshed > 30000) {
-        repository.clear();
-        pageRoot = undefined;
-        earlyDirectory = undefined;
-        availableDirectory = undefined;
-        refreshed = Date.now();
-      }
       const query = input.value.trim();
       if (composing || query.length < 2) {
         close();
@@ -176,14 +171,8 @@ export function initSearchSuggestions() {
                     entries: await repository.siteEntries(manifest, signal),
                   }));
             const artworkRead = async () => {
-              if (query.length <= 4 && early) {
-                // Do not race a slow directory with a speculative POST for
-                // every fragment. Keep the exact/prefix native link on screen.
-                await early.catch(() => undefined);
-                await typingPause(signal);
-              }
               return queryRoot
-                ? repository.searchAtSnapshot(queryRoot, { ...defaults, q: query, size: 8 }, signal)
+                ? repository.searchAtSnapshot(queryRoot, { ...defaults, q: query, size: 8 }, signal, [], true)
                 : repository.search({ ...defaults, q: query, size: 8 }, signal);
             };
             const [art, entries] = await Promise.allSettled([artworkRead(), siteEntries]);
@@ -221,7 +210,7 @@ export function initSearchSuggestions() {
             show(searchSuggestions(query, [], []));
           },
         );
-      }, 240);
+      }, 80);
     }
     input.addEventListener('input', suggest);
     input.addEventListener('focus', () => {
