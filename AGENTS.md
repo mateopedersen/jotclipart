@@ -1,3 +1,48 @@
+# Current installed release — recovery and search, 2026-11-09
+
+This note supersedes the earlier installed-version notes below. Production
+software/control is `f0aeb778c5c2ad9db53218b1e821aa405d290faa`, signed root
+`c6b17b99e695ce9d17c5729f02b150ceb302b61d1c5377b3663475c89dbfb7dc`,
+Worker SHA `5032d649ecb2eea8dd56dfd647222433fc1d8b44ffbff7975747ecb6216857c5`,
+ABI `cf7d79192aa07e7b0f9f541b359b414c5b17c93290b04c2df41a2818e69cbced`.
+Pages: https://55187472.ultraclipart.pages.dev. Counts: 46,358 artworks / 769
+subjects. No original-media or canonical artwork/topic text changes; the pending
+35-package intake remains separate and unapproved by this software release.
+
+Use config/content-publisher.json and its protected installed f0 runtime. Keep
+its 282 exact-byte files AND original absolute compiled dependencies at
+work/recovery-search-f0aeb77-release-20261109. Same-volume hardlinks are not an
+independent backup; the read-verified KEEP base/14/9d/f0 archive chain is separate.
+Preserve current and prior9d/14 runtimes, old4755, originals and user data.
+The config/documentation commit is post-deployment bookkeeping, not new software.
+
+Studio recovery compares reserved revision/writer metadata across localStorage
+and IndexedDB. Atomic conditional IDB transactions reject late old writes and
+deletion of a newer other-tab record. Save captures a portable project, waits
+a bounded time for recovery, strips reserved metadata from exports and warns
+honestly when browser recovery is unavailable. Both stores failing cannot be
+made reliable by deleting user data. Unknown historical legacy copy order is
+not inferred. Preserve the existing plain workbench checkpoint APIs.
+
+Escape cancels pending suggestions before the panel opens. Only an already-open
+panel consumes the key; native closed-panel/IME Escape is preserved. The9d
+shared padded image-preview/content-box repair remains unchanged.
+
+Proof: work/recovery-search-f0aeb77-release-20261109/live-delivery-verification.json,
+result.json, publisher-binding-receipt.json and rapor.html. Actual live1,392
+canonical bodies,20additionalGETs,32Chrome/WebKit recovery cases (20 newest-copy
+matches and12 correct portable downloads with explicit warnings),4home/search/
+topic/Edit flows,4realR2content-boxpairs and16originalImage/PDF byte checks passed.
+Predeployment: native1407,stage1416,CSP5,storage8,Escape16,progressiveSearch32,
+recoveryUI32 plus independent private unit16 twice. Earlier image180/52 proofs
+are inherited with exact unchanged source hashes, not fresh f0 executions.
+One incomplete19-case run ended in test-route teardown; it was preserved and
+replaced by a full fresh32-case run after waiting for inflight routing on close.
+No universal1–2second,PageSpeed100,physicaliPhone or freshfullcatalogpixelreview
+claim is made. PublicD153/PR40 validation and remaining content reviews stay
+separate. Never replace the native installed runtime with an unaccepted legacy
+candidate or bypass source-bound content/review gates for pending imports.
+
 # Current installed release — 2026-11-09
 
 This note supersedes historical installed-version notes below. Production
