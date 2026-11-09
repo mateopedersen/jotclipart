@@ -5,15 +5,15 @@
   "script": "scripts/catalog-snapshot/publish-content.mjs",
   "capsuleRoot": "data/catalog-batches",
   "software": {
-    "revision": "14a216ccf157c71be0ae022712612730f0adb76d",
-    "abiSHA256": "971ed88ebd5ee97c5e77df7dcee83f2ebee48696ec3bf13501c77ad56e00fb17",
-    "workerSHA256": "c66543a43f007819fbd866969d74b4d5d780a2eedc52916827432c7ca3b09eae",
-    "directory": "/Users/melihozcan/Documents/UltraClipart-Publisher-Runtime/installed-content-runtime-14a216c-20261109"
+    "revision": "9d300978b1d4c748024fb75ad128363deabca901",
+    "abiSHA256": "0023a904975b9696bccf82d58a17ceff01331f526b96650cbda9f6248ffe2585",
+    "workerSHA256": "4042358b5219c1c267b21a39339c7def0cf1446b05daa9acac2940ddbbae1f4c",
+    "directory": "/Users/melihozcan/Documents/UltraClipart-Publisher-Runtime/installed-content-runtime-9d30097-20261109"
   },
-  "publicConfig": "/Users/melihozcan/Documents/UltraClipart-Publisher-Runtime/installed-content-runtime-14a216c-20261109/config.json",
+  "publicConfig": "/Users/melihozcan/Documents/UltraClipart-Publisher-Runtime/installed-content-runtime-9d30097-20261109/config.json",
   "lastVerifiedData": {
-    "revision": "14a216ccf157c71be0ae022712612730f0adb76d",
-    "root": "aef87966ac69abc34df56c42603138c8252e6c9be2ea87d644a40904aed3739f",
+    "revision": "9d300978b1d4c748024fb75ad128363deabca901",
+    "root": "7678737c062408209c4bbf8a44278f7fe3e00e89d0a9ec9a0998f57d4eafe5f2",
     "artworks": 46358,
     "topics": 769
   },
@@ -25,9 +25,9 @@
     "accountInventoryRequired": false,
     "fullCatalogBuildForContent": false
   },
-  "proof": "/Users/melihozcan/Documents/UltraClipart-Publisher-Runtime/installed-content-runtime-14a216c-20261109/live-delivery-verification.json",
+  "proof": "/Users/melihozcan/Documents/UltraClipart-Publisher-Runtime/installed-content-runtime-9d30097-20261109/live-delivery-verification.json",
   "loadTests": "work/catalog-snapshot/load-tests/two-run-report.json",
   "protectedIndependentBackup": "/Users/melihozcan/Documents/UltraClipart-Publisher-KEEP",
   "measurementsScope": "Two private real-media transport + composition + native campaigns, approved unique sources reused. Fresh image review/repair/public verification remains separate; <=60 minutes is a measured technical target, not a universal guarantee.",
-  "installedRuntimePreservation": "/Users/melihozcan/Documents/UltraClipart-Publisher-Runtime/installed-content-runtime-14a216c-20261109/manifest.json"
+  "installedRuntimePreservation": "/Users/melihozcan/Documents/UltraClipart-Publisher-Runtime/installed-content-runtime-9d30097-20261109/manifest.json"
 }
