@@ -69,6 +69,7 @@
     "test:content-publisher": "node --test tests/catalog-content-operator.mjs tests/catalog-delta-source.mjs tests/catalog-delta-store.mjs tests/catalog-private-publisher.mjs tests/collection-prose-delta.mjs",
     "test:e2e:collection-subject-picker": "node tests/e2e/collection-subject-picker.mjs",
     "test:e2e:search-progressive": "node tests/e2e/search-suggestions-progressive.mjs",
+    "test:e2e:search-escape": "node tests/e2e/search-suggestions-escape.mjs",
     "test:e2e:original-image-loading": "node tests/e2e/original-image-loading.mjs",
     "test:e2e:original-image-scheduling": "node tests/e2e/original-image-scheduling.mjs",
     "test:e2e:original-image-pending-preview": "node tests/e2e/original-image-pending-preview.mjs",

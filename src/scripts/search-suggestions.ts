@@ -258,13 +258,19 @@ export function initSearchSuggestions() {
       if ((event.target as Element)?.closest('a[href]')) stopPendingSearch();
     });
     input.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        const wasOpen = !panel.hidden;
+        close();
+        // Cancel queued work even before results appear. Preserve native Escape
+        // and IME cancellation when no suggestion panel was consuming the key.
+        if (wasOpen) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        return;
+      }
       if (panel.hidden) return;
       const links = [...panel.querySelectorAll<HTMLAnchorElement>('[role="option"]')];
-      if (event.key === 'Escape') {
-        event.preventDefault();
-        event.stopPropagation();
-        close();
-      }
       if (['ArrowDown', 'ArrowUp'].includes(event.key)) {
         if (!links.length) return;
         event.preventDefault();
