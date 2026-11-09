@@ -1,0 +1,1518 @@
+{
+  "schema": 1,
+  "kind": "OWNER_AUTHORIZED_READABLE_ARTWORK_URL_REPAIR",
+  "ownerScope": "Only the 150 missed bare numeric/historical topic serial canonicals; all descriptive routes and original source records remain unchanged.",
+  "parentRoot": "4f9db43f365ab92a8de624b22b6bd4c9cb2ee8598877fdf60adfb86c714e9014",
+  "total": 46358,
+  "audit": {
+    "at": "2026-11-09T11:31:54.608Z",
+    "allSitemapDocuments": 14,
+    "canonicalPages": 47252,
+    "allArtworkURLs": 46358,
+    "openedSuspectPages": 370,
+    "sitemapAuditSHA256": "ad74ebafdc299e72003fae645813d7f4795a4b687e7da29343a6d24741be7d30",
+    "pageAuditSHA256": "3b307beb64a2c023ed64106ef34fdd592741903fb98a609782c6e15483bc202c"
+  },
+  "changes": [
+    {
+      "id": "300-005",
+      "oldSlug": "300-005",
+      "slug": "young-spartan-holding-a-shield",
+      "title": "Young Spartan Holding a Shield",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "721689e92a0ef1fefbe8503e5ef3638aa17388ea2a0e2bfee83dfdba080e3ff4",
+      "original": "https://assets.ultraclipart.com/300/300-005.webp.1578d25b96d0d3cd.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-002",
+      "oldSlug": "300-002",
+      "slug": "spartan-woman-in-a-teal-cloak",
+      "title": "Spartan Woman in a Teal Cloak",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "f05ec5ebefc0a3979b4e7082cdc0edbeb26cbcf87e80d31296b987f796c0a678",
+      "original": "https://assets.ultraclipart.com/300/300-002.webp.b4b6ed74dd30bb9c.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-006",
+      "oldSlug": "300-006",
+      "slug": "kneeling-spartan-fastening-his-greave",
+      "title": "Kneeling Spartan Fastening His Greave",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "020c6d7f31906c600b12f04366aed172949a5cb63fc1bca05851755139daf234",
+      "original": "https://assets.ultraclipart.com/300/300-006.webp.44612324630bb878.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-004",
+      "oldSlug": "300-004",
+      "slug": "spartan-fighter-with-sword-and-shield",
+      "title": "Spartan Fighter with Sword and Shield",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "b101e942176e71d9e28193d4ee3324156e51fec9863ea6da346578b6655da233",
+      "original": "https://assets.ultraclipart.com/300/300-004.webp.949f4cfbe6e6ead8.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-001",
+      "oldSlug": "300-001",
+      "slug": "spartan-warrior-tightening-a-wrist-wrap",
+      "title": "Spartan Warrior Tightening a Wrist Wrap",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "d8da196e2c20858c5cb08b24cfcb40433a9f45c844cec599bc4f9886186cfae0",
+      "original": "https://assets.ultraclipart.com/300/300-001.webp.772a799bc87cd1a2.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-003",
+      "oldSlug": "300-003",
+      "slug": "seated-warrior-with-a-bandaged-face",
+      "title": "Seated Warrior with a Bandaged Face",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "cd5af1bb16d094f9761b9dab5233fd82eb9cb83a5cbe401c45dbf7ed4d235031",
+      "original": "https://assets.ultraclipart.com/300/300-003.webp.793645399365006d.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-007",
+      "oldSlug": "300-007",
+      "slug": "spartan-scribe-with-a-writing-tablet",
+      "title": "Spartan Scribe with a Writing Tablet",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "78ec48b86cccf689cedf42b8762e07a7d5fd3bd693cbbc6d7476da517daaf81b",
+      "original": "https://assets.ultraclipart.com/300/300-007.webp.0486a5e04d27fbfc.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-008",
+      "oldSlug": "300-008",
+      "slug": "spear-bearer-with-a-bronze-shield",
+      "title": "Spear Bearer with a Bronze Shield",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "42bc9a6418ed75fce3a0101faabe28972add9e9f9c25ffd58f41b222c4301fd5",
+      "original": "https://assets.ultraclipart.com/300/300-008.webp.41f330274e4a6a2d.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-009",
+      "oldSlug": "300-009",
+      "slug": "persian-court-figure-in-purple-and-gold",
+      "title": "Persian Court Figure in Purple and Gold",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "fb94c42841b071503789444957d6fd140bbc673584c881356449a7b15fe236e4",
+      "original": "https://assets.ultraclipart.com/300/300-009.webp.61328d303b61457e.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-010",
+      "oldSlug": "300-010",
+      "slug": "persian-envoy-carrying-a-scroll-case",
+      "title": "Persian Envoy Carrying a Scroll Case",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "4531f66a14f4b7740a64dba6831b1ef8bdeaf34c65ba53891e5c5d0eeec8e281",
+      "original": "https://assets.ultraclipart.com/300/300-010.webp.947840b075d5ba32.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-012",
+      "oldSlug": "300-012",
+      "slug": "woman-in-a-flowing-ivory-gown",
+      "title": "Woman in a Flowing Ivory Gown",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "8e96ec893bd9a2aedf9bd1bc00f0fb2b76e99cea004dc540d74b47d37a73bdf5",
+      "original": "https://assets.ultraclipart.com/300/300-012.webp.1d8f9ec5d83f4752.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-011",
+      "oldSlug": "300-011",
+      "slug": "masked-fighter-with-twin-curved-swords",
+      "title": "Masked Fighter with Twin Curved Swords",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "9b5d07f28f12101e874cd1372544b6113559d25059d3cfcf6559eac789abd85a",
+      "original": "https://assets.ultraclipart.com/300/300-011.webp.4ccc11f9c9993e1d.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-013",
+      "oldSlug": "300-013",
+      "slug": "elder-in-a-brown-hood-reading-a-scroll",
+      "title": "Elder in a Brown Hood Reading a Scroll",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "05bcc255631792d04ca9d030ffeaa3d0494f8db148e3c9d97d4839b7f871e828",
+      "original": "https://assets.ultraclipart.com/300/300-013.webp.77b1bb6221cef127.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-014",
+      "oldSlug": "300-014",
+      "slug": "shield-maker-at-an-anvil",
+      "title": "Shield Maker at an Anvil",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "51f3907ed2cc2797ff8e5e40bbfe0aedff2458add13b9025bc909f19e3e27992",
+      "original": "https://assets.ultraclipart.com/300/300-014.webp.a36ba2b6aca414c6.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-017",
+      "oldSlug": "300-017",
+      "slug": "red-spartan-cloak-on-a-wall-rail",
+      "title": "Red Spartan Cloak on a Wall Rail",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "a960221178fef6beb1e953c6b7c4a799cd34e267fbb7cedbb2ded95b959da985",
+      "original": "https://assets.ultraclipart.com/300/300-017.webp.111b233c78ead43b.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-019",
+      "oldSlug": "300-019",
+      "slug": "crested-spartan-helmet-on-a-plinth",
+      "title": "Crested Spartan Helmet on a Plinth",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "d758d819e99c173f2719a83958ddc92aba1a2d5cb7ae5070e838b3542dc159a9",
+      "original": "https://assets.ultraclipart.com/300/300-019.webp.7e2fcdacc0b98482.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-016",
+      "oldSlug": "300-016",
+      "slug": "young-spartan-balancing-on-one-leg",
+      "title": "Young Spartan Balancing on One Leg",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "454223517b975b986beafeb7f43c1d11aea7e53539534b289f4abc5bc25601fa",
+      "original": "https://assets.ultraclipart.com/300/300-016.webp.aa44115785068c23.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-021",
+      "oldSlug": "300-021",
+      "slug": "bundle-of-three-spartan-spears",
+      "title": "Bundle of Three Spartan Spears",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "9c0cee4f7b3c7ee2177f5d859e0b17f90eba1549071ce4533fe719435aaf03e7",
+      "original": "https://assets.ultraclipart.com/300/300-021.webp.5167e19d7b45c769.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-020",
+      "oldSlug": "300-020",
+      "slug": "short-sword-and-leather-scabbard",
+      "title": "Short Sword and Leather Scabbard",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "7090a1962d5916643a91e1fc25b1ee1349fd6730bb824790b0d69df09054d695",
+      "original": "https://assets.ultraclipart.com/300/300-020.webp.f78810aad1b64dea.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-015",
+      "oldSlug": "300-015",
+      "slug": "weaver-at-a-wooden-loom",
+      "title": "Weaver at a Wooden Loom",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "bbc758307ee1e06ec4d3461e7fd989985a4cdad487edff5b31c33f1cdc90c15f",
+      "original": "https://assets.ultraclipart.com/300/300-015.webp.db3077c4709f11ee.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-018",
+      "oldSlug": "300-018",
+      "slug": "back-of-a-round-wooden-shield",
+      "title": "Back of a Round Wooden Shield",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "852d18ecc0059ee2c240350e851b9df57393ec5589586644dc02a350ada464a8",
+      "original": "https://assets.ultraclipart.com/300/300-018.webp.7834ec5d5d9e4fb2.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-022",
+      "oldSlug": "300-022",
+      "slug": "pair-of-bronze-spartan-greaves",
+      "title": "Pair of Bronze Spartan Greaves",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "2bd57c7c14bdecc7cf8d8d92812865a5e53e7200caf6e6e7feefa2510709681c",
+      "original": "https://assets.ultraclipart.com/300/300-022.webp.3472ba1befef32bc.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-024",
+      "oldSlug": "300-024",
+      "slug": "pair-of-brown-strapped-sandals",
+      "title": "Pair of Brown Strapped Sandals",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "315623d63ffc6431718e61fa16e689a0fd57065b456b9988f23f917976f416fa",
+      "original": "https://assets.ultraclipart.com/300/300-024.webp.7fe5e19c4f33f0c4.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-026",
+      "oldSlug": "300-026",
+      "slug": "glowing-oil-lamp-with-an-olive-branch",
+      "title": "Glowing Oil Lamp with an Olive Branch",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "58f914a300e1db06baa5caea3cd4a9721571a0ca7f09185ff66922a362156c1e",
+      "original": "https://assets.ultraclipart.com/300/300-026.webp.5b11fee17a4b3435.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-027",
+      "oldSlug": "300-027",
+      "slug": "open-writing-tablet-with-stylus-and-seal",
+      "title": "Open Writing Tablet with Stylus and Seal",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "143e28fc28567e94d3db774706c4c09fb391bc14378a308703e559b65f6f057f",
+      "original": "https://assets.ultraclipart.com/300/300-027.webp.f4458a940d52773c.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-025",
+      "oldSlug": "300-025",
+      "slug": "corked-travel-flask-with-a-shoulder-strap",
+      "title": "Corked Travel Flask with a Shoulder Strap",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "0999aa7574600d96b2deeaee705f5a00172ea6e03a09478297faa26c2ccd25bc",
+      "original": "https://assets.ultraclipart.com/300/300-025.webp.3deee74aa48af393.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-029",
+      "oldSlug": "300-029",
+      "slug": "coastal-map-with-a-marked-route",
+      "title": "Coastal Map with a Marked Route",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "889324d63f80e32f0da55437ca649cd14493afddeb851b6a7063f3699b2bec6d",
+      "original": "https://assets.ultraclipart.com/300/300-029.webp.1347b38f62a9d0cc.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-030",
+      "oldSlug": "300-030",
+      "slug": "warriors-metalworking-tool-roll",
+      "title": "Warrior's Metalworking Tool Roll",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "cbe440b463f7342870f91b330b0a17e9dcbfbcada4e4e56cfe2eab4b39932fc1",
+      "original": "https://assets.ultraclipart.com/300/300-030.webp.3a6d29cc530bde05.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-028",
+      "oldSlug": "300-028",
+      "slug": "ornate-cuffs-with-a-broken-chain",
+      "title": "Ornate Cuffs with a Broken Chain",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "1ed61c2f83b8dbbf98f97cff7a141c94a8611d2dba81667681d2e3ea5626e4b7",
+      "original": "https://assets.ultraclipart.com/300/300-028.webp.56673de7105fbd83.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-031",
+      "oldSlug": "300-031",
+      "slug": "rhinoceros-with-decorative-harness",
+      "title": "Rhinoceros with Decorative Harness",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "ffdfb7f5cf6d0f5394bd3f6d8bc44f1eddad049dd9fd57e8a3c3d6f516db04a9",
+      "original": "https://assets.ultraclipart.com/300/300-031.webp.dcf7230ed9ae4379.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-035",
+      "oldSlug": "300-035",
+      "slug": "three-spartans-advancing-together",
+      "title": "Three Spartans Advancing Together",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "d868a6475822999593c98f1c906140e445f46438888af6876cc156b4f667f630",
+      "original": "https://assets.ultraclipart.com/300/300-035.webp.0a0c95916ff41dc4.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-032",
+      "oldSlug": "300-032",
+      "slug": "elephant-with-purple-and-gold-trappings",
+      "title": "Elephant with Purple and Gold Trappings",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "0ab96285539cceeb7ccb8c1b9f4796f252bdc24ca1c9b9e8a3a206bcad54144a",
+      "original": "https://assets.ultraclipart.com/300/300-032.webp.0f5284dc54807a50.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-023",
+      "oldSlug": "300-023",
+      "slug": "gold-cuff-with-turquoise-details",
+      "title": "Gold Cuff with Turquoise Details",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "ab1e8cd363e0f5d094571512f98dc985a1c76d4517b3cc441cff9eef3821d69c",
+      "original": "https://assets.ultraclipart.com/300/300-023.webp.23d89ff0aa99b417.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-036",
+      "oldSlug": "300-036",
+      "slug": "arrow-struck-spartan-shield",
+      "title": "Arrow-Struck Spartan Shield",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "81645519678da1e6913d2b87b243652a28f7676bf3026eb1c9fdb26804613be7",
+      "original": "https://assets.ultraclipart.com/300/300-036.webp.d31668248845327b.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-037",
+      "oldSlug": "300-037",
+      "slug": "mountain-pass-beside-the-sea",
+      "title": "Mountain Pass Beside the Sea",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "ee20ddb88f465f85557f43529e6a3437df5f3729bfad85dff2a0d0ad83a37ff5",
+      "original": "https://assets.ultraclipart.com/300/300-037.webp.e3b6bef0accff328.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-039",
+      "oldSlug": "300-039",
+      "slug": "300-spartan-helmet-badge",
+      "title": "300 Spartan Helmet Badge",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "d0683a5726995d9f832438d3e9f9638f8699ae896184d2416ea5e0ff313ce53c",
+      "original": "https://assets.ultraclipart.com/300/300-039.webp.c5b1b96fde8aa7d0.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-034",
+      "oldSlug": "300-034",
+      "slug": "spartan-shield-resting-on-broken-stone",
+      "title": "Spartan Shield Resting on Broken Stone",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "f70cde76a34faa1bfd96e8d2a829f86faf061a73d1fd4a53194b02b7f7054ea6",
+      "original": "https://assets.ultraclipart.com/300/300-034.webp.df087dadea209968.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-033",
+      "oldSlug": "300-033",
+      "slug": "black-horse-with-decorated-saddle",
+      "title": "Black Horse with Decorated Saddle",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "23a48ed439db398a19044447d25fe1fb470d30d42c937734056128e42b896e9d",
+      "original": "https://assets.ultraclipart.com/300/300-033.webp.654742bffe217c03.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-040",
+      "oldSlug": "300-040",
+      "slug": "cartoon-messenger-carrying-a-scroll",
+      "title": "Cartoon Messenger Carrying a Scroll",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "616ceace88ec7a1b8e379f2e3bfd641deeb0a406cb9f3db161db79ee27bab884",
+      "original": "https://assets.ultraclipart.com/300/300-040.webp.c415ba4017c261c1.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-041",
+      "oldSlug": "300-041",
+      "slug": "clasped-forearms-in-black-and-white",
+      "title": "Clasped Forearms in Black and White",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "8edf8c802794d4e417afe7fce467210c35335999e541d5582a65b26a63bbda14",
+      "original": "https://assets.ultraclipart.com/300/300-041.webp.10e4efa3fc6186c8.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-042",
+      "oldSlug": "300-042",
+      "slug": "warrior-pouring-water-for-a-dog",
+      "title": "Warrior Pouring Water for a Dog",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "e33024bea2ed85193b224da4c8a437362fe81cb51992d85172faf1d1ff86e945",
+      "original": "https://assets.ultraclipart.com/300/300-042.webp.f560e20dbd1a85cb.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-045",
+      "oldSlug": "300-045",
+      "slug": "carved-horse-head-emblem",
+      "title": "Carved Horse Head Emblem",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "c5e7c3e5367cf238c99d38a8d972943791c1369b8e760b041eebefc4ed4209e8",
+      "original": "https://assets.ultraclipart.com/300/300-045.webp.e86259f73afd01b3.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-044",
+      "oldSlug": "300-044",
+      "slug": "ancient-messenger-running-with-a-tablet",
+      "title": "Ancient Messenger Running with a Tablet",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "ad80b31693a9c9bbce1c0b09d49e9b63bfaac2cd3ca4561826c2e1fabfd79654",
+      "original": "https://assets.ultraclipart.com/300/300-044.webp.c50aa6d5f6fbab31.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-038",
+      "oldSlug": "300-038",
+      "slug": "burning-brazier-with-firewood",
+      "title": "Burning Brazier with Firewood",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "58af4aedb9768bc44c8da2f01090a53d0d815869c065806114f7b67a46380e48",
+      "original": "https://assets.ultraclipart.com/300/300-038.webp.4f80a18629c645b3.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-047",
+      "oldSlug": "300-047",
+      "slug": "spartan-climbing-stone-steps",
+      "title": "Spartan Climbing Stone Steps",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "80eb8763a4bd21cf95108b230d7ae80b2926d5da72a27ed8ded6f50c5e2203e3",
+      "original": "https://assets.ultraclipart.com/300/300-047.webp.c582743d1f046913.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-046",
+      "oldSlug": "300-046",
+      "slug": "three-women-carrying-leafy-branches",
+      "title": "Three Women Carrying Leafy Branches",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "c5ed2fdd4c4006adfad1202c77c607166879fbadd279677eb6d6865b195e2c54",
+      "original": "https://assets.ultraclipart.com/300/300-046.webp.84d7f3ffac734347.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-049",
+      "oldSlug": "300-049",
+      "slug": "reclining-lion-stone-relief",
+      "title": "Reclining Lion Stone Relief",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "30b43da987e8cc966c26ec95279637321070af7b9c81db92bb24a688f6dec588",
+      "original": "https://assets.ultraclipart.com/300/300-049.webp.89fbeca22c9b6afa.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-048",
+      "oldSlug": "300-048",
+      "slug": "patterned-banner-with-hanging-tassels",
+      "title": "Patterned Banner with Hanging Tassels",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "ebf4d5da307c861218519aeb001004d50b0541478b69928441d7048b98639d63",
+      "original": "https://assets.ultraclipart.com/300/300-048.webp.d7476d27e88ad1cf.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-043",
+      "oldSlug": "300-043",
+      "slug": "kneeling-archer-with-a-drawn-bow",
+      "title": "Kneeling Archer with a Drawn Bow",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "93e008d69545bcd7b2a7ac3d314f2dc55c7b35723eecbce95ff7ba33946b4054",
+      "original": "https://assets.ultraclipart.com/300/300-043.webp.016844903b33f9e2.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "300-050",
+      "oldSlug": "300-050",
+      "slug": "elder-passing-a-spear-to-a-young-warrior",
+      "title": "Elder Passing a Spear to a Young Warrior",
+      "topic": "300-movie",
+      "sourceRecordSHA256": "43827bdb07c631380e0481ec3b8a78b228ec5830385c30f017dbd532bd80cb07",
+      "original": "https://assets.ultraclipart.com/300/300-050.webp.cadea4f05d9b24a2.webp",
+      "historicalTopicPrefix": "300"
+    },
+    {
+      "id": "powerpoint-003",
+      "oldSlug": "powerpoint-003",
+      "slug": "wheelchair-user-with-a-circular-agenda-display",
+      "title": "Wheelchair User with a Circular Agenda Display",
+      "topic": "presentation",
+      "sourceRecordSHA256": "a04854b204e594c1454f263fa77553e5419bf2140a11748fbbee6ad2d39e40cd",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-003.webp.29964999b00ab155.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-001",
+      "oldSlug": "powerpoint-001",
+      "slug": "woman-arranging-presentation-cards",
+      "title": "Woman Arranging Presentation Cards",
+      "topic": "presentation",
+      "sourceRecordSHA256": "67f81e534f9beab1a9fbd74307254414d78951e80553469b310557299bc679d5",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-001.webp.3e5558991a9eaba3.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-002",
+      "oldSlug": "powerpoint-002",
+      "slug": "older-presenter-holding-a-cue-card",
+      "title": "Older Presenter Holding a Cue Card",
+      "topic": "presentation",
+      "sourceRecordSHA256": "2bf145595fa67e80ad58e4bea4701f64f47cf2d4908afee0217ed93c6c972056",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-002.webp.a72e774c7eb500a9.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-004",
+      "oldSlug": "powerpoint-004",
+      "slug": "child-presenting-a-seed-to-sprout-display",
+      "title": "Child Presenting a Seed-to-Sprout Display",
+      "topic": "presentation",
+      "sourceRecordSHA256": "a0562078312fd9abef7e8b47e603e5c332095e0d6a13d27d7d106149b4346d9e",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-004.webp.e62d393578d4d073.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-005",
+      "oldSlug": "powerpoint-005",
+      "slug": "woman-rehearsing-beside-a-tablet",
+      "title": "Woman Rehearsing Beside a Tablet",
+      "topic": "presentation",
+      "sourceRecordSHA256": "1dd35c23cdd0578f7fede1347b0afc3db328819ec34a714c0a65b5d288e8e9ae",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-005.webp.781afc26693a13c2.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-007",
+      "oldSlug": "powerpoint-007",
+      "slug": "smiling-presenter-holding-a-welcome-card",
+      "title": "Smiling Presenter Holding a WELCOME Card",
+      "topic": "presentation",
+      "sourceRecordSHA256": "feed20b33ec583c3e6526fc318e2e30e6d36b694cc5b533708ab3cba71d08356",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-007.webp.1e17e438959e893d.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-009",
+      "oldSlug": "powerpoint-009",
+      "slug": "audience-members-holding-question-signs",
+      "title": "Audience Members Holding Question Signs",
+      "topic": "presentation",
+      "sourceRecordSHA256": "826cbf7bc13c22daf99d559ddb7c0d5c95f1c94ffb1038d4d2095da6bf2aaa91",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-009.webp.957cad9f63dd604e.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-006",
+      "oldSlug": "powerpoint-006",
+      "slug": "two-presenters-with-interlocking-chart-boards",
+      "title": "Two Presenters with Interlocking Chart Boards",
+      "topic": "presentation",
+      "sourceRecordSHA256": "cedd8eca0d242d91f2a380f861b0221850d130298fec2d0f27fee8da24cd58d0",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-006.webp.293544be7e85f5cd.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-012",
+      "oldSlug": "powerpoint-012",
+      "slug": "child-holding-a-four-part-story-strip",
+      "title": "Child Holding a Four-Part Story Strip",
+      "topic": "presentation",
+      "sourceRecordSHA256": "ac71459d0f0bf22e5a70e42b8ecfb5e441c8662f06d56824a7f5e35e433acd98",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-012.webp.1ee123cff94dbbfc.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-008",
+      "oldSlug": "powerpoint-008",
+      "slug": "woman-arranging-a-hexagonal-flowchart",
+      "title": "Woman Arranging a Hexagonal Flowchart",
+      "topic": "presentation",
+      "sourceRecordSHA256": "048d86b8e4c396326c192658eb9de66fc542d83447bbbfaa86e592f30161a06c",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-008.webp.397947a921e8a163.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-011",
+      "oldSlug": "powerpoint-011",
+      "slug": "presenter-reviewing-a-foldout-chart-sheet",
+      "title": "Presenter Reviewing a Foldout Chart Sheet",
+      "topic": "presentation",
+      "sourceRecordSHA256": "9c8a0ab6d7e431a11e85bd723874ef937824d1aff0ce1a9be2d144f633429f3c",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-011.webp.c888fc6bb03e4bc5.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-015",
+      "oldSlug": "powerpoint-015",
+      "slug": "hand-holding-a-presentation-remote",
+      "title": "Hand Holding a Presentation Remote",
+      "topic": "presentation",
+      "sourceRecordSHA256": "762319fde9b115c8f690505f724850080e66122911732704bfc6e3cf1f23961b",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-015.webp.ec8c0679be2bdace.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-013",
+      "oldSlug": "powerpoint-013",
+      "slug": "five-slide-cards-along-a-spiral-ribbon",
+      "title": "Five Slide Cards along a Spiral Ribbon",
+      "topic": "presentation",
+      "sourceRecordSHA256": "8c45a01e7ab44682b69449ceced702f912d8c68ab12d7c5d40974676086f3ed5",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-013.webp.3ed2ad8840cd3b6a.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-016",
+      "oldSlug": "powerpoint-016",
+      "slug": "folding-lectern-with-a-wooden-top",
+      "title": "Folding Lectern with a Wooden Top",
+      "topic": "presentation",
+      "sourceRecordSHA256": "9ff9a4361f65413173e34d6c9503427dbeba84d68d4611ddc090e914dfb448ec",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-016.webp.4d783861308bdf8c.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-017",
+      "oldSlug": "powerpoint-017",
+      "slug": "gooseneck-microphone-beside-a-q-and-a-sign",
+      "title": "Gooseneck Microphone beside a Q&A Sign",
+      "topic": "presentation",
+      "sourceRecordSHA256": "22ed345c7fc5552e73f0ec7aefbe7e30c3560f3e02d8b8fdec30e67743076162",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-017.webp.eb74faba9f1a4819.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-018",
+      "oldSlug": "powerpoint-018",
+      "slug": "triangular-signal-light-with-three-panels",
+      "title": "Triangular Signal Light with Three Panels",
+      "topic": "presentation",
+      "sourceRecordSHA256": "f459616094d56ada8f00851c3c8b8f9d1aef68afcff62ee6fea5cc703ac2a8e7",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-018.webp.dfce06a328b99dc4.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-019",
+      "oldSlug": "powerpoint-019",
+      "slug": "presentation-cue-tags-on-a-carrying-loop",
+      "title": "Presentation Cue Tags on a Carrying Loop",
+      "topic": "presentation",
+      "sourceRecordSHA256": "4812e7d1fc431190efee66ceb3ad94befa07da8960bbbb64658744a901f5d766",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-019.webp.13394024279f2020.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-010",
+      "oldSlug": "powerpoint-010",
+      "slug": "presenter-demonstrating-a-wooden-mechanism",
+      "title": "Presenter Demonstrating a Wooden Mechanism",
+      "topic": "presentation",
+      "sourceRecordSHA256": "06863723f9ef0b1486fb624a6d14f5e71fa00e6c8366a5a81126cfe051f8bd74",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-010.webp.e0c17cb96f83529e.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-022",
+      "oldSlug": "powerpoint-022",
+      "slug": "colored-chart-rings-on-a-vertical-rod",
+      "title": "Colored Chart Rings on a Vertical Rod",
+      "topic": "presentation",
+      "sourceRecordSHA256": "02e1aeaf295108880f76f2c5fcb188cead231010c8581287b03ec23ad1388a67",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-022.webp.fc9cc6d2db794a67.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-020",
+      "oldSlug": "powerpoint-020",
+      "slug": "magnifying-glass-over-a-glass-diagram-card",
+      "title": "Magnifying Glass over a Glass Diagram Card",
+      "topic": "presentation",
+      "sourceRecordSHA256": "6c1ca8afead6f4cf899b6e3773500df1c97e4006cd356f445abc072dc940a67f",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-020.webp.54391e3c87473578.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-021",
+      "oldSlug": "powerpoint-021",
+      "slug": "rising-bar-chart-with-a-gold-arrow",
+      "title": "Rising Bar Chart with a Gold Arrow",
+      "topic": "presentation",
+      "sourceRecordSHA256": "259c0ddbb03e4573793fab4d959531aba17402af57c0ab3523119735233ecae8",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-021.webp.c97f2482d1088db0.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-023",
+      "oldSlug": "powerpoint-023",
+      "slug": "folded-roadmap-card-with-milestone-flags",
+      "title": "Folded Roadmap Card with Milestone Flags",
+      "topic": "presentation",
+      "sourceRecordSHA256": "c2052e26d4a4e02c072ba56512aa3907ab7f59a63399fd4f4c69929f2bf58b3b",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-023.webp.39ab3f79387155bb.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-024",
+      "oldSlug": "powerpoint-024",
+      "slug": "four-linked-workflow-tiles",
+      "title": "Four Linked Workflow Tiles",
+      "topic": "presentation",
+      "sourceRecordSHA256": "f96614db38f266044f366b783c1d56eec1d73d2cebb5f8b80ddb8969d30977d6",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-024.webp.5cfdb3d6acd0a18f.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-025",
+      "oldSlug": "powerpoint-025",
+      "slug": "balance-scale-with-two-decision-cards",
+      "title": "Balance Scale with Two Decision Cards",
+      "topic": "presentation",
+      "sourceRecordSHA256": "074051ad18926d0fb4f4b1b277eb1f64267408549143041ec389b7c2a9ab378f",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-025.webp.3a116318d705353a.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-026",
+      "oldSlug": "powerpoint-026",
+      "slug": "hanging-diagram-mobile-with-colored-tags",
+      "title": "Hanging Diagram Mobile with Colored Tags",
+      "topic": "presentation",
+      "sourceRecordSHA256": "3f7f41d7f6c987b137aeb006ef718e7208b7b8ac3b6e6f180a449c68241ba54a",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-026.webp.989cfe55c4ae06bf.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-029",
+      "oldSlug": "powerpoint-029",
+      "slug": "three-numbered-yellow-presentation-tabs",
+      "title": "Three Numbered Yellow Presentation Tabs",
+      "topic": "presentation",
+      "sourceRecordSHA256": "f567cf2a4b4b4e1869f409dc45ef428ae234802e885d139388e2ce41ff180c12",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-029.webp.6de40f1b2cbbc98c.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-030",
+      "oldSlug": "powerpoint-030",
+      "slug": "target-arrow-on-a-framed-presentation-board",
+      "title": "Target Arrow on a Framed Presentation Board",
+      "topic": "presentation",
+      "sourceRecordSHA256": "2d16f27f936f2c01a62b85e74425efa7153dfee8aa37594649e10d009b8f220b",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-030.webp.20c996c9e0747dd0.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-028",
+      "oldSlug": "powerpoint-028",
+      "slug": "circular-workflow-arrows-with-a-check-tag",
+      "title": "Circular Workflow Arrows with a Check Tag",
+      "topic": "presentation",
+      "sourceRecordSHA256": "47788a154b99f013c4b377f6950b7d10c415aa6c03390256abe2cab2f52b379a",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-028.webp.19c36b65f9f32661.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-033",
+      "oldSlug": "powerpoint-033",
+      "slug": "presentation-symbols-with-a-speaker",
+      "title": "Presentation Symbols with a Speaker",
+      "topic": "presentation",
+      "sourceRecordSHA256": "1b53c457240fd8e690d425953bb2f5e8e4db442b1409246437746d28c11ba961",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-033.webp.5875f6de0c1962a4.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-031",
+      "oldSlug": "powerpoint-031",
+      "slug": "opening-panels-revealing-an-orange-starburst",
+      "title": "Opening Panels Revealing an Orange Starburst",
+      "topic": "presentation",
+      "sourceRecordSHA256": "de1800f71474a013f34a28c1f4f29adc3092b2aaf098870cc23515508cec5b69",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-031.webp.c1a5fe4b54f49ae5.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-032",
+      "oldSlug": "powerpoint-032",
+      "slug": "chart-sheet-becoming-a-folded-summary",
+      "title": "Chart Sheet Becoming a Folded Summary",
+      "topic": "presentation",
+      "sourceRecordSHA256": "7adc716834f28d8a145cc8faa6d78fe685901321bc06206b7c3b0d61c67fd369",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-032.webp.22ab1601668f743b.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-027",
+      "oldSlug": "powerpoint-027",
+      "slug": "layered-funnel-sorting-colored-tokens",
+      "title": "Layered Funnel Sorting Colored Tokens",
+      "topic": "presentation",
+      "sourceRecordSHA256": "5db17cffad09e0f77ed11711994ee639c05467dcd2c65619d4c00d0c5b90c0db",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-027.webp.b48dfcf107dd28a3.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-034",
+      "oldSlug": "powerpoint-034",
+      "slug": "audio-ribbon-above-a-bar-chart",
+      "title": "Audio Ribbon above a Bar Chart",
+      "topic": "presentation",
+      "sourceRecordSHA256": "a1d88eb285c2f0c6450130824640c461e9ef9dedf1009ad4f95eea457f8c8ae6",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-034.webp.8516c29adfc208a3.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-035",
+      "oldSlug": "powerpoint-035",
+      "slug": "filmstrip-passing-through-a-play-symbol",
+      "title": "Filmstrip Passing through a Play Symbol",
+      "topic": "presentation",
+      "sourceRecordSHA256": "a8ba19799da3c870ca8a81a913a6d61d12ac26e62a19d7b74e6ad016e0fdb5d2",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-035.webp.190ecafbdb839069.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-037",
+      "oldSlug": "powerpoint-037",
+      "slug": "hands-framing-an-abstract-composition",
+      "title": "Hands Framing an Abstract Composition",
+      "topic": "presentation",
+      "sourceRecordSHA256": "11eed4fa6d783ae4f090d74e7d41a1cb405cb3994a3bacbf3d2307a928e60b0c",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-037.webp.6ca91f67676976c2.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-036",
+      "oldSlug": "powerpoint-036",
+      "slug": "architectural-presentation-sheets-with-a-magnifier",
+      "title": "Architectural Presentation Sheets with a Magnifier",
+      "topic": "presentation",
+      "sourceRecordSHA256": "2cbf6f29775f6a4919b3b6b2ce2fe4940d0593a81c03558ee8f050e5002d2a85",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-036.webp.494d4ca2e7e98bf2.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-038",
+      "oldSlug": "powerpoint-038",
+      "slug": "audience-voting-paddles-with-matching-tokens",
+      "title": "Audience Voting Paddles with Matching Tokens",
+      "topic": "presentation",
+      "sourceRecordSHA256": "9672fa0c1e60dc6eecc8caacfb3d7add5f0744f2631bc3c531eb2af1267e477a",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-038.webp.26f11362ac0b6de4.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-014",
+      "oldSlug": "powerpoint-014",
+      "slug": "teal-box-filled-with-presentation-cards",
+      "title": "Teal Box Filled with Presentation Cards",
+      "topic": "presentation",
+      "sourceRecordSHA256": "f512436b781fadab7b98ecd5d4bfa2f163ee129337b1ac38e50d5fe00d8f935b",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-014.webp.2b4845822b7623d9.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-039",
+      "oldSlug": "powerpoint-039",
+      "slug": "fabric-award-rosette-with-a-check-mark",
+      "title": "Fabric Award Rosette with a Check Mark",
+      "topic": "presentation",
+      "sourceRecordSHA256": "c26b37ea0e70587e32b385b1b594e1349b55efb155248c075babd823047ba75c",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-039.webp.23d89177474c0111.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-040",
+      "oldSlug": "powerpoint-040",
+      "slug": "glowing-lightbulb-on-a-foldout-card",
+      "title": "Glowing Lightbulb on a Foldout Card",
+      "topic": "presentation",
+      "sourceRecordSHA256": "becf86b623a7d34fb2280c775b1b464aadef58892b665ceced21b9a3cf49c634",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-040.webp.accddcc160619fdf.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-042",
+      "oldSlug": "powerpoint-042",
+      "slug": "child-presenting-with-a-sock-puppet-outline",
+      "title": "Child Presenting with a Sock Puppet Outline",
+      "topic": "presentation",
+      "sourceRecordSHA256": "9aacd9ba48f4769cf0931e34912281c825467df6e1425a8f5c6f547c3d263385",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-042.webp.ec48be4d546d2f77.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-043",
+      "oldSlug": "powerpoint-043",
+      "slug": "hands-sharing-circular-presentation-cards-outline",
+      "title": "Hands Sharing Circular Presentation Cards Outline",
+      "topic": "presentation",
+      "sourceRecordSHA256": "906af70f405bec458aa8cd9bfc80efce734836efda428ff5c1e3bdf6a61336eb",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-043.webp.1a5fb2a4ef72ebff.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-041",
+      "oldSlug": "powerpoint-041",
+      "slug": "seated-woman-gesturing-while-speaking-outline",
+      "title": "Seated Woman Gesturing while Speaking Outline",
+      "topic": "presentation",
+      "sourceRecordSHA256": "65e050d4283d58f7e9374359451e4aa002c5551aaa2f8e7bc09cc6d8886e0507",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-041.webp.897ea4f826d2a3ec.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-045",
+      "oldSlug": "powerpoint-045",
+      "slug": "q-and-a-ticket-dispenser-outline",
+      "title": "Q&A Ticket Dispenser Outline",
+      "topic": "presentation",
+      "sourceRecordSHA256": "4542be2d9498f0bcb21b1128eea5ae5829470cf24b3030b9518f32ff762ca49e",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-045.webp.5568b081b18ed70d.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-047",
+      "oldSlug": "powerpoint-047",
+      "slug": "speaker-practicing-calm-breathing-outline",
+      "title": "Speaker Practicing Calm Breathing Outline",
+      "topic": "presentation",
+      "sourceRecordSHA256": "b8bb2736abcc0a3e9f1f98f5ea78880dc9d83785a86b3a5d47d8f50c5d861253",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-047.webp.ba5d9b4312165a56.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-048",
+      "oldSlug": "powerpoint-048",
+      "slug": "coiled-cable-and-adapter-with-a-storage-pouch-outline",
+      "title": "Coiled Cable and Adapter with a Storage Pouch Outline",
+      "topic": "presentation",
+      "sourceRecordSHA256": "a03fc9e6504a1f20c90dd3ca621581fccacb9684cf59d2a7cafc05f1152c8236",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-048.webp.25da10593581adf0.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-044",
+      "oldSlug": "powerpoint-044",
+      "slug": "adjustable-presentation-stand-outline",
+      "title": "Adjustable Presentation Stand Outline",
+      "topic": "presentation",
+      "sourceRecordSHA256": "24d3a03c1127389e9269ea15e0c2249869db9954bf2ede215a754fbeff9fccca",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-044.webp.6c5ba5d37ae0e340.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-049",
+      "oldSlug": "powerpoint-049",
+      "slug": "speaker-rehearsing-in-a-tabletop-mirror-outline",
+      "title": "Speaker Rehearsing in a Tabletop Mirror Outline",
+      "topic": "presentation",
+      "sourceRecordSHA256": "983549458ab6c1bd7e2c0c4a50d66bf2a56d8d94f441c79cf78a4d9f146dcfc8",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-049.webp.e12a6a181337a77f.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-050",
+      "oldSlug": "powerpoint-050",
+      "slug": "break-flip-chart-with-a-coffee-cup-outline",
+      "title": "BREAK Flip Chart with a Coffee Cup Outline",
+      "topic": "presentation",
+      "sourceRecordSHA256": "979d2aa33466a2731d489399dd284d6671685da2c048e47c88de7d6079b427d7",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-050.webp.98981dd51d183879.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "powerpoint-046",
+      "oldSlug": "powerpoint-046",
+      "slug": "miniature-audience-and-lectern-layout-outline",
+      "title": "Miniature Audience and Lectern Layout Outline",
+      "topic": "presentation",
+      "sourceRecordSHA256": "a54057532bb02e243abd79d3eb7f85f762d3594918f28c6528ba8ff002efbf8e",
+      "original": "https://assets.ultraclipart.com/presentation/powerpoint-046.webp.02e31916897f2ea2.webp",
+      "historicalTopicPrefix": "powerpoint"
+    },
+    {
+      "id": "tesla-brand-001",
+      "oldSlug": "tesla-brand-001",
+      "slug": "tesla-battery-pack-cutaway",
+      "title": "Tesla Battery Pack Cutaway",
+      "topic": "tesla",
+      "sourceRecordSHA256": "86944faf164f4097abf5fc6722dd7f4da9c1df7ce35e74f385ef699f8cacf637",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-001.webp.505fb247bd66c527.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-003",
+      "oldSlug": "tesla-brand-003",
+      "slug": "tesla-dashboard-black-and-white",
+      "title": "Tesla Dashboard (black and white)",
+      "topic": "tesla",
+      "sourceRecordSHA256": "99fc1dde6ee18dd3e06ee6f93a5b660c7c5200c6b349d30b8b788a0acf8fca1f",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-003.webp.fbdb3a8b8a0d800f.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-006",
+      "oldSlug": "tesla-brand-006",
+      "slug": "tesla-car-carrier-concept-black-and-white",
+      "title": "Tesla Car Carrier Concept (black and white)",
+      "topic": "tesla",
+      "sourceRecordSHA256": "0862990a7ff659b80d5d6cb07176b5c6f18b013e8148a078fc55deb45f6a9d6f",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-006.webp.167f4f226f6b2104.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-002",
+      "oldSlug": "tesla-brand-002",
+      "slug": "tesla-cybertruck-camping-concept",
+      "title": "Tesla Cybertruck Camping Concept",
+      "topic": "tesla",
+      "sourceRecordSHA256": "055b955200547109d98f617debd213717cb7e35978c40aa54dd25d75c15a0238",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-002.webp.29280f878a76e79d.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-005",
+      "oldSlug": "tesla-brand-005",
+      "slug": "tesla-interior-with-center-screen",
+      "title": "Tesla Interior with Center Screen",
+      "topic": "tesla",
+      "sourceRecordSHA256": "d00505ed9d6b13e70e34664786fb17bdf3a3736e8e7da6b55e9fc20e308834d2",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-005.webp.73f1f21b9f39b4db.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-008",
+      "oldSlug": "tesla-brand-008",
+      "slug": "tesla-sedan-at-a-supercharger",
+      "title": "Tesla Sedan at a Supercharger",
+      "topic": "tesla",
+      "sourceRecordSHA256": "3ad6f5f6e1a8bf589cde690536feb0e8cc79caaf51195e9e4048af8ea8c33761",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-008.webp.2de8d33d12f59602.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-004",
+      "oldSlug": "tesla-brand-004",
+      "slug": "tesla-car-delivery-scene",
+      "title": "Tesla Car Delivery Scene",
+      "topic": "tesla",
+      "sourceRecordSHA256": "cc923926efc3b076b2d7aa9b6f04821b32006d8bfbad47f090c03fd1b25b57a2",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-004.webp.05d3eed4e5cd9c5d.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-010",
+      "oldSlug": "tesla-brand-010",
+      "slug": "tesla-solar-charging-hub-concept",
+      "title": "Tesla Solar Charging Hub Concept",
+      "topic": "tesla",
+      "sourceRecordSHA256": "a7e551a5cf4d13fdbf048bf62c2b19c9d26d1840d173ea7dda2fcd8b96e0c5dd",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-010.webp.8ae9d87719328da1.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-007",
+      "oldSlug": "tesla-brand-007",
+      "slug": "tesla-coiled-charging-cable",
+      "title": "Tesla Coiled Charging Cable",
+      "topic": "tesla",
+      "sourceRecordSHA256": "74b2a47cc2c1f76792bac4df4cb442c50703683460cd500a1a8231a79dc4aaea",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-007.webp.2a75a271ab97d6f2.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-009",
+      "oldSlug": "tesla-brand-009",
+      "slug": "smiling-tesla-car-character",
+      "title": "Smiling Tesla Car Character",
+      "topic": "tesla",
+      "sourceRecordSHA256": "97b01a62478b286a9aa9e1abd539edd82d21b600fd31e6d640406b6b69349ba4",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-009.webp.5a9c95088c42de3c.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-011",
+      "oldSlug": "tesla-brand-011",
+      "slug": "red-tesla-emblem",
+      "title": "Red Tesla Emblem",
+      "topic": "tesla",
+      "sourceRecordSHA256": "5a4dffb2a06d925b9c061d6a09c481e876aa200dcee5d47e83c1059375dcf283",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-011.webp.3ccdb2173976ae17.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-015",
+      "oldSlug": "tesla-brand-015",
+      "slug": "tesla-driver-planning-a-route",
+      "title": "Tesla Driver Planning a Route",
+      "topic": "tesla",
+      "sourceRecordSHA256": "915abb76d6d2efb7f6f72988323b4f46ddfa9ce911cceac11b4fa4c7fcd6d422",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-015.webp.2ce2876b67e454e5.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-012",
+      "oldSlug": "tesla-brand-012",
+      "slug": "tesla-cybertruck-with-tool-cases",
+      "title": "Tesla Cybertruck with Tool Cases",
+      "topic": "tesla",
+      "sourceRecordSHA256": "30703da14cd55a0d6a399f7bf8a3231d658bda5fec9376a3c1fa87345612e49f",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-012.webp.c44e46b88a30811d.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-013",
+      "oldSlug": "tesla-brand-013",
+      "slug": "tesla-cybertruck-front-view",
+      "title": "Tesla Cybertruck Front View",
+      "topic": "tesla",
+      "sourceRecordSHA256": "54116ed4596051e4ff98788fd0ec93794fe845decab71b49a33a8f579eec913d",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-013.webp.b7585c29c8adf1a7.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-017",
+      "oldSlug": "tesla-brand-017",
+      "slug": "family-packing-a-tesla",
+      "title": "Family Packing a Tesla",
+      "topic": "tesla",
+      "sourceRecordSHA256": "e2646c70903820443a56ce48ac29bd347d6cc7d3ca44b3eeb285420026536309",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-017.webp.768a8970130acff1.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-014",
+      "oldSlug": "tesla-brand-014",
+      "slug": "dog-beside-a-tesla",
+      "title": "Dog Beside a Tesla",
+      "topic": "tesla",
+      "sourceRecordSHA256": "3f9eb025a86b1d370a9bdf1ebb65287165cdd4d48d16aeb925151e329c07bfd5",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-014.webp.d41bdf69d1c134dd.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-018",
+      "oldSlug": "tesla-brand-018",
+      "slug": "tesla-factory-building-concept",
+      "title": "Tesla Factory Building Concept",
+      "topic": "tesla",
+      "sourceRecordSHA256": "3c3321fa05111072b4fc369c6ac9893f25eefa6db5306acb2c14053a26b2bee0",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-018.webp.b4b43f670a4ba3e2.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-019",
+      "oldSlug": "tesla-brand-019",
+      "slug": "tesla-garage-black-and-white",
+      "title": "Tesla Garage (black and white)",
+      "topic": "tesla",
+      "sourceRecordSHA256": "e93e374ba783b0d94252e7d328fee8538993ec0d05849fc99eb34fd8557dbae9",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-019.webp.4b71a7af3f365dd9.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-021",
+      "oldSlug": "tesla-brand-021",
+      "slug": "tesla-wheel-service-black-and-white",
+      "title": "Tesla Wheel Service (black and white)",
+      "topic": "tesla",
+      "sourceRecordSHA256": "c590b062b171e5391547ebf2b92e200699e27ad08b14d88e203a50ce6f9f81bd",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-021.webp.7cfb8d2efa954647.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-022",
+      "oldSlug": "tesla-brand-022",
+      "slug": "tesla-grid-battery-enclosure",
+      "title": "Tesla Grid Battery Enclosure",
+      "topic": "tesla",
+      "sourceRecordSHA256": "74cb76d9d2c76ec1186fe178eaa8bb837f0d6dd4ba6974bf2d16cacb807c8c85",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-022.webp.df9a8cd5139575bd.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-016",
+      "oldSlug": "tesla-brand-016",
+      "slug": "tesla-cybertruck-charging",
+      "title": "Tesla Cybertruck Charging",
+      "topic": "tesla",
+      "sourceRecordSHA256": "73d5a44b09ef1a48a39b614449c183b632c453493b76f1ebb4dabd53a1d80956",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-016.webp.5c4dd36658e95aa6.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-023",
+      "oldSlug": "tesla-brand-023",
+      "slug": "tesla-service-van-concept",
+      "title": "Tesla Service Van Concept",
+      "topic": "tesla",
+      "sourceRecordSHA256": "ec17b482af3e56cc104f6c6219ddcbf18e6a864834d82c449ed962349d020098",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-023.webp.b08e1fc4009b7755.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-024",
+      "oldSlug": "tesla-brand-024",
+      "slug": "red-tesla-model-3",
+      "title": "Red Tesla Model 3",
+      "topic": "tesla",
+      "sourceRecordSHA256": "416916d52136d390aa53404f295bdc6ca70dd367ecd98d1941b81527e6e0132e",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-024.webp.e3e4c71debd21de9.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-020",
+      "oldSlug": "tesla-brand-020",
+      "slug": "tesla-key-card-and-fob-concept",
+      "title": "Tesla Key Card and Fob Concept",
+      "topic": "tesla",
+      "sourceRecordSHA256": "82d0cf3b5b741c6af9702b74fb6cb534703f97d6264ab18811b817183663ef7e",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-020.webp.82f85eb82a7ba32a.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-025",
+      "oldSlug": "tesla-brand-025",
+      "slug": "gray-tesla-model-s",
+      "title": "Gray Tesla Model S",
+      "topic": "tesla",
+      "sourceRecordSHA256": "dafd10d5f294447c312ed71c40ad4611960fc62761b3ba088c7406c483a00343",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-025.webp.eede8cb58924364d.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-030",
+      "oldSlug": "tesla-brand-030",
+      "slug": "tesla-powerwall-home-battery",
+      "title": "Tesla Powerwall Home Battery",
+      "topic": "tesla",
+      "sourceRecordSHA256": "b323da04dbca488c70980e1d8c0384605a9be3bd379f858af4c962be0d2ed614",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-030.webp.c69ccc29857cf325.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-026",
+      "oldSlug": "tesla-brand-026",
+      "slug": "tesla-model-x-with-open-doors",
+      "title": "Tesla Model X with Open Doors",
+      "topic": "tesla",
+      "sourceRecordSHA256": "f93551f79cb37c68bb030695a49b440b2ba3733ff3b515d39375249432cb7c3f",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-026.webp.6d3b0311632812f4.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-028",
+      "oldSlug": "tesla-brand-028",
+      "slug": "tesla-optimus-robot-concept",
+      "title": "Tesla Optimus Robot Concept",
+      "topic": "tesla",
+      "sourceRecordSHA256": "9e4ea6c83104d1a56c3f9658578efb1263606cdf5b2dfc1d8db4a8526eceaaf8",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-028.webp.8548578ade467fbf.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-027",
+      "oldSlug": "tesla-brand-027",
+      "slug": "white-tesla-model-y",
+      "title": "White Tesla Model Y",
+      "topic": "tesla",
+      "sourceRecordSHA256": "c99e3c22833cbe81c99042927d46a0a822809b7907bdb22012772ca88ebc42d8",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-027.webp.7b5c2d9a45f85d30.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-029",
+      "oldSlug": "tesla-brand-029",
+      "slug": "tesla-charging-kit-black-and-white",
+      "title": "Tesla Charging Kit (black and white)",
+      "topic": "tesla",
+      "sourceRecordSHA256": "fe03745929e3478ef5fa6aae4ae0eea594a81544bb20441af3892047f1d8b0a5",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-029.webp.a61f16f61b3bbef9.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-031",
+      "oldSlug": "tesla-brand-031",
+      "slug": "tesla-powerwall-installer-black-and-white",
+      "title": "Tesla Powerwall Installer (black and white)",
+      "topic": "tesla",
+      "sourceRecordSHA256": "ccb4614fe54d0f6f96f4725c7425acc0c6711ddbf452d3f6b67eff9580b40900",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-031.webp.bf0a30985082eaa5.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-032",
+      "oldSlug": "tesla-brand-032",
+      "slug": "tesla-road-trip-stop",
+      "title": "Tesla Road Trip Stop",
+      "topic": "tesla",
+      "sourceRecordSHA256": "e127c4a3b1671a30054e0e3b13606cac4cbb2e483d8d12443db23f94193a0ac9",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-032.webp.d40525657e61041e.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-033",
+      "oldSlug": "tesla-brand-033",
+      "slug": "tesla-roadster-concept",
+      "title": "Tesla Roadster Concept",
+      "topic": "tesla",
+      "sourceRecordSHA256": "8ec601a1ec02ae9eb3e0aa8139e36b32b262f2e65c72985c232f140303c0e5f8",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-033.webp.4ebe24d7c202c9a1.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-034",
+      "oldSlug": "tesla-brand-034",
+      "slug": "tesla-factory-robot-arm",
+      "title": "Tesla Factory Robot Arm",
+      "topic": "tesla",
+      "sourceRecordSHA256": "12ad5877dba6a8b9e12916094cd23fb85fece31b8fc1b33b144bbf42dc2e5688",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-034.webp.50eb7c21f9af7d11.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-038",
+      "oldSlug": "tesla-brand-038",
+      "slug": "tesla-semi-tractor",
+      "title": "Tesla Semi Tractor",
+      "topic": "tesla",
+      "sourceRecordSHA256": "ba8732e24b8d1b23f6878f5c89ba4cea228193ff650fcca83c2639df44ac0b84",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-038.webp.f86e0ef041a2159d.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-037",
+      "oldSlug": "tesla-brand-037",
+      "slug": "tesla-solar-home-concept",
+      "title": "Tesla Solar Home Concept",
+      "topic": "tesla",
+      "sourceRecordSHA256": "6ec5c9d1758dcd96dc6463ba7435133a42d56de42add1ddf3ba516f16bd27bba",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-037.webp.95f0612c278bbd13.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-039",
+      "oldSlug": "tesla-brand-039",
+      "slug": "tesla-semi-loading-bay-black-and-white",
+      "title": "Tesla Semi Loading Bay (black and white)",
+      "topic": "tesla",
+      "sourceRecordSHA256": "b01e8ec2e50a52631fa1c862c31f4782556824da99ff1ed5787b0511b19c2959",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-039.webp.ead3003fae1b731c.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-041",
+      "oldSlug": "tesla-brand-041",
+      "slug": "tesla-lift-inspection",
+      "title": "Tesla Lift Inspection",
+      "topic": "tesla",
+      "sourceRecordSHA256": "3f0100c36177767b5560e9b8a4b1cc33742513a6909b9916a6033c3aa265feef",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-041.webp.230b11f5e3a90d46.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-040",
+      "oldSlug": "tesla-brand-040",
+      "slug": "tesla-wheel-alignment-bay-black-and-white",
+      "title": "Tesla Wheel Alignment Bay (black and white)",
+      "topic": "tesla",
+      "sourceRecordSHA256": "9fe2feb51c88885215d991be8cec1bd3ba07831e1e34ee7269fd6b25e58f11fc",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-040.webp.8b62cc257a7c3af9.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-035",
+      "oldSlug": "tesla-brand-035",
+      "slug": "tesla-robotics-lab-concept",
+      "title": "Tesla Robotics Lab Concept",
+      "topic": "tesla",
+      "sourceRecordSHA256": "32764c07e528f819d8d146b1ecb2723ec0e754dba337f02ecd13988adf0bcea5",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-035.webp.2a9cd913b0e7e795.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-036",
+      "oldSlug": "tesla-brand-036",
+      "slug": "tesla-solar-worker-black-and-white",
+      "title": "Tesla Solar Worker (black and white)",
+      "topic": "tesla",
+      "sourceRecordSHA256": "bfbbbdd2eb5836ef060a46798fb86854691c5532cfc6dc88f997ad1b1b88d265",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-036.webp.82d574516a89de6d.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-043",
+      "oldSlug": "tesla-brand-043",
+      "slug": "tesla-charging-app-concept",
+      "title": "Tesla Charging App Concept",
+      "topic": "tesla",
+      "sourceRecordSHA256": "051acf4bdcdda41ba8e6258d8b0770c2e47950beda3a23e16cd3334877460ea2",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-043.webp.6e6e5189222a9392.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-044",
+      "oldSlug": "tesla-brand-044",
+      "slug": "tesla-solar-roof-sample",
+      "title": "Tesla Solar Roof Sample",
+      "topic": "tesla",
+      "sourceRecordSHA256": "1c867b14b4779e29b9c10e1f5c6c886192dc7e82a5f1e0d9f4c88f10725939b4",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-044.webp.8a54ea60ea5b3194.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-042",
+      "oldSlug": "tesla-brand-042",
+      "slug": "tesla-showroom-display",
+      "title": "Tesla Showroom Display",
+      "topic": "tesla",
+      "sourceRecordSHA256": "ffd2f3db42cd65f12b5d99d6dc5054943f9edacdfac7e69c2b9b782227565b05",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-042.webp.af1826cb90f59e6c.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-047",
+      "oldSlug": "tesla-brand-047",
+      "slug": "tesla-wall-connector",
+      "title": "Tesla Wall Connector",
+      "topic": "tesla",
+      "sourceRecordSHA256": "c09b27a1902d369314a12aa0b4f40c062150215e93c54c32dbf87c0200bd9948",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-047.webp.08f88cef8efc6b90.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-048",
+      "oldSlug": "tesla-brand-048",
+      "slug": "tesla-wheel-and-tire",
+      "title": "Tesla Wheel and Tire",
+      "topic": "tesla",
+      "sourceRecordSHA256": "0d6739364a557e22c17ad902e1267c9e50bd8c2be03d341d236ccd73d4d4c683",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-048.webp.695cf40eee8d249d.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-046",
+      "oldSlug": "tesla-brand-046",
+      "slug": "tesla-front-trunk-black-and-white",
+      "title": "Tesla Front Trunk (black and white)",
+      "topic": "tesla",
+      "sourceRecordSHA256": "3d748147d80f0bfe57920a1bb3297863fa452ef6ad13e33adbb977430d76d4b1",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-046.webp.e6ea436374690296.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-049",
+      "oldSlug": "tesla-brand-049",
+      "slug": "tesla-winter-travel-scene",
+      "title": "Tesla Winter Travel Scene",
+      "topic": "tesla",
+      "sourceRecordSHA256": "9e09e1b60aabc45290b86078a4eaf5bd1243b96283ac69e4022ee65d7e8562bc",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-049.webp.5ef569da7dd0c761.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-050",
+      "oldSlug": "tesla-brand-050",
+      "slug": "tesla-yoke-steering-control",
+      "title": "Tesla Yoke Steering Control",
+      "topic": "tesla",
+      "sourceRecordSHA256": "d73d462f382944a71ed916ad5f94fff03e92c2bc960839e3fd182123250482c0",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-050.webp.689a3551c9ecdbd6.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    },
+    {
+      "id": "tesla-brand-045",
+      "oldSlug": "tesla-brand-045",
+      "slug": "tesla-supercharger-pedestal",
+      "title": "Tesla Supercharger Pedestal",
+      "topic": "tesla",
+      "sourceRecordSHA256": "2dd2d8a96e8c66e03c1e596ff510ae069338afccc5bf4379741088eadf7dcdeb",
+      "original": "https://assets.ultraclipart.com/tesla/tesla-brand-045.webp.bdba599419bc1afb.webp",
+      "historicalTopicPrefix": "tesla-brand"
+    }
+  ]
+}

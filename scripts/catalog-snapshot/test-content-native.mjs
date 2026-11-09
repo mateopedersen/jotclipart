@@ -8,6 +8,7 @@ import { resolve, join } from 'node:path';
 import { createHash } from 'node:crypto';
 import assert from 'node:assert/strict';
 import { openSnapshot } from '../../server/catalog-snapshot/snapshot-context.mjs';
+import { publicRouteForId } from '../../server/catalog-snapshot/public-artwork-routes.mjs';
 import { openSevenFacetCollectionContext } from '../../server/catalog-snapshot/collection-context.mjs';
 import { facetStore } from '../../server/catalog-collections/store.mjs';
 import { membership } from '../../server/catalog-collections/writer.mjs';
@@ -40,9 +41,11 @@ async function verifyNativeContentWithSource({
   const sourcePacket = packet,
     sourcePacketSHA256 = sha(Buffer.from(JSON.stringify(sourcePacket)));
   if (
-    ['SOURCE_DERIVED_PRESENTATION_BATCH', 'SOURCE_DERIVED_URL_MIGRATION_BATCH'].includes(
-      packet.status,
-    )
+    [
+      'SOURCE_DERIVED_PRESENTATION_BATCH',
+      'SOURCE_DERIVED_URL_MIGRATION_BATCH',
+      'SOURCE_DERIVED_URL_REPAIR_BATCH',
+    ].includes(packet.status)
   )
     packet = { changes: [], topicChanges: [] };
   if (packet.status === 'SOURCE_REVIEWED_COLLECTION_PROSE_BATCH') {
@@ -135,11 +138,47 @@ async function verifyNativeContentWithSource({
     headers = { 'x-uc-catalog-protocol': 'snapshot-search-v1' },
     started = Date.now();
   try {
+    const addressContext = await openSnapshot(
+      {
+        get: async (key) => {
+          const bytes = created.get(key);
+          return bytes
+            ? {
+                size: bytes.length,
+                arrayBuffer: async () =>
+                  bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength),
+              }
+            : parentBucket.get(key);
+        },
+      },
+      { provided: candidate, allowFixture: true },
+    );
     for (const c of packet.changes)
       for (const kind of ['art', 'edit']) {
-        const path = '/' + kind + '/' + c.id + '/',
-          r = await mf.dispatchFetch('https://ultraclipart.com' + path, { headers }),
-          html = await r.text();
+        const requestedPath = '/' + kind + '/' + c.id + '/';
+        const slug =
+          c.record && kind === 'art' ? await publicRouteForId(addressContext, c.id) : c.id;
+        const path = '/' + kind + '/' + slug + '/';
+        let r = await mf.dispatchFetch('https://ultraclipart.com' + requestedPath, {
+          headers,
+          redirect: 'manual',
+        });
+        if (c.record && path !== requestedPath) {
+          assert.equal(r.status, 301, requestedPath + ' stable ID must redirect');
+          assert.equal(r.headers.get('location'), 'https://ultraclipart.com' + path);
+          await r.arrayBuffer();
+          results.push({
+            path: requestedPath,
+            status: 301,
+            expectedLocation: 'https://ultraclipart.com' + path,
+            source: 'changed-artwork-stable-id-redirect',
+          });
+          r = await mf.dispatchFetch('https://ultraclipart.com' + path, {
+            headers,
+            redirect: 'manual',
+          });
+        }
+        const html = await r.text();
         assert.equal(r.status, c.record ? 200 : 404, path + ' ' + r.headers.get('x-private-error'));
         if (c.record) {
           assert.equal(
@@ -147,7 +186,10 @@ async function verifyNativeContentWithSource({
             displayTitle(c.record.title),
             path,
           );
-          assert(html.includes('https://ultraclipart.com' + path));
+          assert(
+            html.includes('rel="canonical" href="https://ultraclipart.com' + path + '"'),
+            path + ' self canonical',
+          );
           assert(html.includes(c.record.webp));
           if (kind === 'art') assert(html.includes(c.record.pdf));
           assert(html.includes('name="build-revision" content="' + candidate.revision + '"'));
@@ -221,7 +263,7 @@ async function verifyNativeContentWithSource({
         const r = await mf.dispatchFetch('https://ultraclipart.com' + path, { headers }),
           body = await r.text(),
           info = JSON.parse(body);
-        assert.equal(r.status, 200, path+' '+r.headers.get('x-private-error'));
+        assert.equal(r.status, 200, path + ' ' + r.headers.get('x-private-error'));
         assert.equal(r.headers.get('x-uc-data-source'), 'prepared', path);
         assert.equal(info.transport.snapshot, root);
         assert.equal(info.items.length, source.entries);
@@ -256,8 +298,19 @@ async function verifyNativeContentWithSource({
         });
       }
     }
-    if (sourcePacket.status === 'SOURCE_DERIVED_URL_MIGRATION_BATCH') {
-      const plan = JSON.parse(readFileSync('data/routes/artwork-public-urls-v1.json'));
+    if (
+      ['SOURCE_DERIVED_URL_MIGRATION_BATCH', 'SOURCE_DERIVED_URL_REPAIR_BATCH'].includes(
+        sourcePacket.status,
+      )
+    ) {
+      const repair = sourcePacket.status === 'SOURCE_DERIVED_URL_REPAIR_BATCH';
+      const plan = JSON.parse(
+        readFileSync(
+          repair
+            ? 'data/routes/artwork-public-url-repair-20261109.json'
+            : 'data/routes/artwork-public-urls-v1.json',
+        ),
+      );
       assert.equal(plan.parentRoot, sourcePacket.parentSnapshotSHA256);
       const priority = plan.changes.find((c) => c.id === 'diamond-aircraft-20261105-004');
       const redirects = priority
@@ -292,19 +345,34 @@ async function verifyNativeContentWithSource({
         }),
       );
       // Already descriptive public addresses retain their original canonical URL.
-      for (const id of ['pumpkin-hot-air-balloon', 'andorra-flag-clipart-001-flat-sewn-national-flag']) {
-        assert(!plan.changes.some(c=>c.id===id), 'Readable URL entered migration');
-        const path='/art/'+id+'/',r=await mf.dispatchFetch('https://ultraclipart.com'+path,{headers,redirect:'manual'}),html=await r.text();
-        assert.equal(r.status,200,path+' '+r.headers.get('x-private-error'));
-        assert(html.includes('rel="canonical" href="https://ultraclipart.com'+path+'"'),path);
-        results.push({path,status:200,source:'preserved-readable-detail',sha256:sha(Buffer.from(html))});
+      for (const id of [
+        'pumpkin-hot-air-balloon',
+        'andorra-flag-clipart-001-flat-sewn-national-flag',
+      ]) {
+        assert(!plan.changes.some((c) => c.id === id), 'Readable URL entered migration');
+        const path = '/art/' + id + '/',
+          r = await mf.dispatchFetch('https://ultraclipart.com' + path, {
+            headers,
+            redirect: 'manual',
+          }),
+          html = await r.text();
+        assert.equal(r.status, 200, path + ' ' + r.headers.get('x-private-error'));
+        assert(html.includes('rel="canonical" href="https://ultraclipart.com' + path + '"'), path);
+        results.push({
+          path,
+          status: 200,
+          source: 'preserved-readable-detail',
+          sha256: sha(Buffer.from(html)),
+        });
       }
-      const samples = [
-        ...plan.changes.filter((c) =>
-          ['futsal-20261107-002', 'walmart-20261104-004'].includes(c.id),
-        ),
-        ...plan.changes.filter((_, i) => i % Math.ceil(plan.changes.length / 32) === 0),
-      ];
+      const samples = repair
+        ? plan.changes
+        : [
+            ...plan.changes.filter((c) =>
+              ['futsal-20261107-002', 'walmart-20261104-004'].includes(c.id),
+            ),
+            ...plan.changes.filter((_, i) => i % Math.ceil(plan.changes.length / 32) === 0),
+          ];
       for (const c of samples) {
         const path = '/art/' + c.slug + '/',
           r = await mf.dispatchFetch('https://ultraclipart.com' + path, {
@@ -312,7 +380,7 @@ async function verifyNativeContentWithSource({
             redirect: 'manual',
           }),
           html = await r.text();
-        assert.equal(r.status, 200, path+' '+r.headers.get('x-private-error'));
+        assert.equal(r.status, 200, path + ' ' + r.headers.get('x-private-error'));
         assert(html.includes('rel="canonical" href="https://ultraclipart.com' + path + '"'), path);
         assert(html.includes('https://assets.ultraclipart.com/'), path);
         assert.equal(
@@ -326,6 +394,19 @@ async function verifyNativeContentWithSource({
           source: 'canonical-migrated-detail',
           sha256: sha(Buffer.from(html)),
         });
+        if (repair) {
+          const editPath = '/edit/' + c.id + '/';
+          const edit = await mf.dispatchFetch('https://ultraclipart.com' + editPath, { headers });
+          const editHTML = await edit.text();
+          assert.equal(edit.status, 200, editPath);
+          assert(editHTML.includes('https://assets.ultraclipart.com/'), editPath);
+          results.push({
+            path: editPath,
+            status: 200,
+            source: 'preserved-stable-id-edit',
+            sha256: sha(Buffer.from(editHTML)),
+          });
+        }
       }
       const r = await mf.dispatchFetch('https://ultraclipart.com/sitemap.xml', { headers }),
         index = await r.text(),

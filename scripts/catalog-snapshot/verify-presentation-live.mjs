@@ -25,9 +25,16 @@ export async function verifyPresentationLive({ directory, sealed, software, prog
   assert(
     bridge.canonicalArtworkDirectoriesUnchanged && bridge.protectedCollectionDirectoryUnchanged,
   );
-  if (bridge.kind === 'OWNER_AUTHORIZED_PUBLIC_URL_AND_SITEMAP_MIGRATION')
+  if (
+    [
+      'OWNER_AUTHORIZED_PUBLIC_URL_AND_SITEMAP_MIGRATION',
+      'OWNER_AUTHORIZED_PUBLIC_URL_AND_SITEMAP_REPAIR',
+    ].includes(bridge.kind)
+  )
     assert(
-      bridge.publicRoutesAdded &&
+      (bridge.kind === 'OWNER_AUTHORIZED_PUBLIC_URL_AND_SITEMAP_REPAIR'
+        ? bridge.publicRoutesRepaired && bridge.historicalReservationsRemoved === 0
+        : bridge.publicRoutesAdded) &&
         Number.isSafeInteger(bridge.sourceRecordChecks) &&
         bridge.sourceRecordChecks > 0,
     );
