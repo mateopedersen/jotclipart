@@ -2,7 +2,6 @@
 import { artworkPath } from '../lib/artwork-route.mjs';
 import { publishedArt } from '../lib/catalog';
 import { imageLoadingPreview } from '../lib/image-loading-preview';
-import { homeImageCandidates } from '../lib/home-image-candidates';
 import CatalogCount from './CatalogCount.astro';
 import HomeCategoryLinks from './HomeCategoryLinks.astro';
 import { HOME_SHOWCASE_FEATURED_ID } from '../lib/home-showcase-featured';
@@ -139,8 +138,7 @@ const selection = [
             <img
               title={subject.image.title}
               src={subject.image.thumb}
-              srcset={homeImageCandidates(subject.image)}
-              data-home-responsive={homeImageCandidates(subject.image) ? 'true' : undefined}
+              srcset={subject.image.thumbSrcSet}
               sizes="(max-width: 540px) 26vw, (max-width: 900px) 200px, 160px"
               alt={subject.image.alt}
               width={subject.image.width}

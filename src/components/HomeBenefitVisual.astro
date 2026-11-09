@@ -7,7 +7,6 @@ const uiImage1 = await uiPreview(uiImage1Source);
 import uiImage2Source from '../../public/home-art/kitchen-notes-project.webp';
 const uiImage2 = await uiPreview(uiImage2Source);
 import { art } from '../lib/catalog';
-import { homeImageCandidates } from '../lib/home-image-candidates';
 interface Props {
   kind: 'license' | 'formats' | 'studio' | 'privacy';
 }
@@ -23,8 +22,7 @@ const pineapple = art.find((a) => a.id === 'pineapple-whole-and-cut-fruit-realis
       <img
         title={balloons.title}
         src={balloons.thumb}
-        srcset={homeImageCandidates(balloons)}
-        data-home-responsive={homeImageCandidates(balloons) ? 'true' : undefined}
+        srcset={balloons.thumbSrcSet}
         sizes="(max-width: 540px) 45vw, (max-width: 1000px) 30vw, 240px"
         alt={balloons.alt}
         width="440"
@@ -41,8 +39,7 @@ const pineapple = art.find((a) => a.id === 'pineapple-whole-and-cut-fruit-realis
         <img
           title={pineapple.title}
           src={pineapple.thumb}
-          srcset={homeImageCandidates(pineapple)}
-          data-home-responsive={homeImageCandidates(pineapple) ? 'true' : undefined}
+          srcset={pineapple.thumbSrcSet}
           sizes="(max-width: 540px) 45vw, (max-width: 1000px) 30vw, 240px"
           alt={pineapple.alt}
           width="440"

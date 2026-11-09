@@ -2,8 +2,6 @@
 import { displayTitle } from '../lib/display-title';
 import { publishedArt } from '../lib/catalog';
 import CatalogCount from './CatalogCount.astro';
-import { homeImageCandidates } from '../lib/home-image-candidates';
-const homeResponsive = Astro.url.pathname === '/';
 
 // A small selection of real catalog artwork, resolved through the same approved
 // asset map as the gallery. A withdrawn feature falls back within its subject.
@@ -40,8 +38,7 @@ const artwork = choices.flatMap(([id, topic]) => {
         <img
           title={displayTitle(item.title)}
           src={item.thumb}
-          srcset={homeResponsive ? homeImageCandidates(item) : item.thumbSrcSet}
-          data-home-responsive={homeResponsive && homeImageCandidates(item) ? 'true' : undefined}
+          srcset={item.thumbSrcSet}
           sizes="(max-width: 1100px) 80px, 120px"
           width="120"
           height="120"

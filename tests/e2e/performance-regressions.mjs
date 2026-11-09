@@ -57,11 +57,7 @@ for (const [engine, implementation] of Object.entries(engines)) {
           'main img[src^="/catalog/"], main img[src^="https://assets.ultraclipart.com/"]',
         );
         assert.ok(await images.count(), route);
-        if (route === '/') {
-          const candidates = await images.first().getAttribute('srcset');
-          assert(candidates?.includes('https://assets.ultraclipart.com/'));
-          assert(candidates?.includes(' 1x, ') && candidates?.endsWith(' 2x'));
-        } else assert.equal(await images.first().getAttribute('srcset'), null);
+        assert.equal(await images.first().getAttribute('srcset'), null);
         if (route.startsWith('/clipart/'))
           await expect(page.locator('.gallery .art-card img').first()).toHaveAttribute(
             'fetchpriority',
@@ -72,7 +68,7 @@ for (const [engine, implementation] of Object.entries(engines)) {
           .poll(() => images.first().evaluate((img) => img.complete && img.naturalWidth > 0))
           .toBe(true);
         if (route === '/') await page.screenshot({ path: `${out}/${engine}-${width}-home.png` });
-        record(`Original src preserved and viewport stable: ${route}`);
+        record(`Full original image and viewport: ${route}`);
       }
       await go('/');
       const featured = page.locator('.home-sample-flowers img');

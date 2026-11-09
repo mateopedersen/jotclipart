@@ -2,11 +2,10 @@
 import { artworkPath } from '../lib/artwork-route.mjs';
 import { displayTitle } from '../lib/display-title';
 import { imageLoadingPreview, loadingPreviewStyle } from '../lib/image-loading-preview';
-import { homeImageCandidates } from '../lib/home-image-candidates';
 import CardFileActions from './CardFileActions.astro';
 import Icon from './Icon.astro';
 import ShareButton from './ShareButton.astro';
-const { item, subjectLabel, priority = false, homeResponsive = false } = Astro.props;
+const { item, subjectLabel, priority = false } = Astro.props;
 const preview = imageLoadingPreview(item);
 ---
 
@@ -16,8 +15,6 @@ const preview = imageLoadingPreview(item);
     <img
       title={displayTitle(item.title)}
       src={item.webp}
-      srcset={homeResponsive ? homeImageCandidates(item) : undefined}
-      data-home-responsive={homeResponsive && homeImageCandidates(item) ? 'true' : undefined}
       alt={item.alt}
       width="400"
       height="400"
