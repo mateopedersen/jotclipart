@@ -1,6 +1,7 @@
 ---
 import { displayTitle } from '../lib/display-title';
 import { imageLoadingPreview } from '../lib/image-loading-preview';
+import { homeImageCandidates } from '../lib/home-image-candidates';
 import { publishedArt as art, slugify, availableClusters } from '../lib/catalog';
 import CatalogCount from './CatalogCount.astro';
 const seasons = [
@@ -82,7 +83,8 @@ const seasons = [
                 <img
                   title={displayTitle(image.title)}
                   src={image.thumb}
-                  srcset={image.thumbSrcSet}
+                  srcset={homeImageCandidates(image)}
+                  data-home-responsive={homeImageCandidates(image) ? 'true' : undefined}
                   sizes="(max-width: 540px) 34vw, 160px"
                   alt={image.alt}
                   width="240"

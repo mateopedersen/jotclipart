@@ -496,6 +496,12 @@ export function initOriginalImageLoading(
         }
       },
       onError: () => {
+        // Only homepage density candidates opt in. If the small R2 candidate
+        // fails, let the existing bounded recovery load the unchanged original.
+        if (image.dataset.homeResponsive === 'true' && image.hasAttribute('srcset')) {
+          image.removeAttribute('srcset');
+          image.dataset.homeResponsive = 'fallback';
+        }
         if (!s.resetting) recover(s);
       },
     };

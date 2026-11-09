@@ -9,6 +9,7 @@ import SeasonalShowcase from '../components/SeasonalShowcase.astro';
 import { newestArt, publishedArt, topics } from '../lib/catalog';
 import { HOME_SHOWCASE_FEATURED_ID } from '../lib/home-showcase-featured';
 import { diverseRecentArtwork } from '../lib/recent-artwork';
+import { homeImageCandidates } from '../lib/home-image-candidates';
 const categoryByTopic = new Map(topics.map((topic) => [topic.slug, topic.cluster]));
 const labelByTopic = new Map(topics.map((topic) => [topic.slug, topic.keyword]));
 const featuredImage = publishedArt.find((item) => item.id === HOME_SHOWCASE_FEATURED_ID);
@@ -30,6 +31,7 @@ const recentPicks = diverseRecentArtwork(
     rel="preload"
     as="image"
     href={featuredImage.thumb}
+    imagesrcset={homeImageCandidates(featuredImage)}
     media="(min-width: 901px)"
     fetchpriority="high"
   />
@@ -44,7 +46,7 @@ const recentPicks = diverseRecentArtwork(
     <p>Recent additions across color and black-and-white styles.</p>
     <div class="gallery home-recent-grid">
       {recentPicks.slice(0, 15).map((item) => (
-        <Card item={item} subjectLabel={labelByTopic.get(item.topic)} />
+        <Card item={item} subjectLabel={labelByTopic.get(item.topic)} homeResponsive />
       ))}
     </div>
   </section>
