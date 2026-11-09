@@ -145,6 +145,7 @@ const selection = [
               height={subject.image.height}
               loading="lazy"
               data-original-deferred="pending"
+              data-home-critical={index === 0 ? 'true' : undefined}
               fetchpriority={index === 0 ? 'high' : undefined}
               data-original-placeholder={subject.loadingPreview?.url}
               data-original-placeholder-for={subject.loadingPreview?.source}
