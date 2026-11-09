@@ -1,3 +1,35 @@
+# Current installed release — original homepage priority, 2026-11-09
+
+This note supersedes the earlier installed-version notes below. Production
+software/control is `1ba0483e46937a41112eeb66044060c43ed32f98`, signed root
+`4f9db43f365ab92a8de624b22b6bd4c9cb2ee8598877fdf60adfb86c714e9014`,
+Worker SHA `9ab5af0d7790547ba65be9d811062de707022f4c1ef3e1a20dd7065ca38e4907`,
+ABI `59be336b2643ebfb80036c3c836321f219d714de215d05d0b4f3f59e4831b8fb`.
+Pages: https://1750341d.ultraclipart.pages.dev. Counts: 46,358 artworks / 769
+subjects. Canonical metadata, R2 originals, schema/download sources, layout and
+Cloudflare settings are unchanged. Pending35 and old editorial reviews remain
+separate. Do not restore the unpublished/reverted b94 thumbnail experiment.
+
+Only a visible, pending desktop homepage critical original receives a bounded
+1500ms head start before competing originals enter the existing queue. Mobile,
+hidden frames and other pages do not wait. Completion/error/timeout resumes the
+normal queue; no indefinite load gate or source-quality downgrade is permitted.
+
+Use config/content-publisher.json and installed-content-runtime-1ba0483-20261109.
+Preserve its 282 exact-byte files, original absolute compiled dependencies at
+work/home-original-1ba0483-release-20261109, previous f0/9d/14 runtimes, old4755,
+originals, user data and independent KEEP archive chain. Same-volume hardlinks
+are not independent backups. This config/docs commit is bookkeeping only.
+
+Actual live proof: 1392 source-matched canonical bodies,20 extra GETs over two
+rounds,8 Chrome/WebKit 390/1440 DPR1/2 cases with original currentSrc,4 search to
+USA topic to Edit flows over two rounds and16 original Image/PDF full-byte checks
+passed. Google PSI report tth9cof539 captured Nov9 12:45:44 GMT+3: homepage mobile
+and desktop both100/100/100/100. This is a lab sample, not universal100 or physical
+iPhone testing. Predeployment10 newcritical fixtures,17 queue,8 compiled realR2,
+4 unit,5 sealed and5 transition realWorker CSP checks passed. See verified-release.json,
+publisher-binding-receipt.json and rapor.html in the release directory.
+
 # Current installed release — recovery and search, 2026-11-09
 
 This note supersedes the earlier installed-version notes below. Production
