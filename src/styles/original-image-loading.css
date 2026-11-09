@@ -21,6 +21,8 @@ img[data-original-preview='pending'] {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  background-origin: content-box;
+  background-clip: content-box;
   pointer-events: none;
   transition: transform 0.2s;
 }

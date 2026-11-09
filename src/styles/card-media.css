@@ -26,7 +26,10 @@
 }
 :is(.art-card, .hsg-subject, .related-card)
   > :is(.art-picture, .hsg-picture, .related-picture)
-  > img {
+  > img,
+:is(.art-card, .hsg-subject, .related-card)
+  > :is(.art-picture, .hsg-picture, .related-picture)
+  > .original-image-loading-backdrop {
   position: absolute;
   inset: 0;
   display: block;

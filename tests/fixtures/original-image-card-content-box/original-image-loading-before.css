@@ -1,0 +1,47 @@
+.art-picture {
+  position: relative;
+}
+/* The fixed parent retains its exact geometry. If the critical script is
+   disabled or fails, this selector never hides the ordinary original image. */
+html[data-original-scheduling='active'] img[data-original-deferred='pending'] {
+  display: none !important;
+}
+/* This background is temporary. The real img, schema and file links stay original. */
+img[data-original-preview='pending'] {
+  background-image: var(--original-loading-preview);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+.original-image-loading-backdrop {
+  position: absolute;
+  inset: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+  transition: transform 0.2s;
+}
+.art-picture:hover > .original-image-loading-backdrop {
+  transform: scale(1.035);
+}
+.art-picture > img[data-original-image-state='error'] {
+  opacity: 0;
+}
+.original-image-status {
+  position: absolute;
+  inset: auto 8px 10px;
+  z-index: 1;
+  padding: 8px 10px;
+  border: 1px solid #cbdcf2;
+  border-radius: 9px;
+  background: #f2f7ff;
+  color: #234d7c;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  pointer-events: none;
+}
