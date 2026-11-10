@@ -307,7 +307,7 @@ async function verifyNativeContentWithSource({
       const plan = JSON.parse(
         readFileSync(
           repair
-            ? 'data/routes/artwork-public-url-repair-20261109.json'
+            ? (sourcePacket.planPath ?? 'data/routes/artwork-public-url-repair-20261109.json')
             : 'data/routes/artwork-public-urls-v1.json',
         ),
       );
@@ -347,7 +347,7 @@ async function verifyNativeContentWithSource({
       // Already descriptive public addresses retain their original canonical URL.
       for (const id of [
         'pumpkin-hot-air-balloon',
-        'andorra-flag-clipart-001-flat-sewn-national-flag',
+        ...(plan.kind === 'OWNER_AUTHORIZED_ARTWORK_ORDINAL_URL_REPAIR' ? ['red-tesla-model-3'] : ['andorra-flag-clipart-001-flat-sewn-national-flag']),
       ]) {
         assert(!plan.changes.some((c) => c.id === id), 'Readable URL entered migration');
         const path = '/art/' + id + '/',

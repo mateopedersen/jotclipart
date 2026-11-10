@@ -1,3 +1,4 @@
+import { artworkPath } from '../lib/artwork-route.mjs';
 import { createSurpriseWarmer } from '../lib/surprise-navigation';
 import {
   pickCute,
@@ -66,7 +67,9 @@ export function initCuteSurprise() {
       }
     })());
   };
-  const current = location.pathname.match(/^\/art\/([a-z0-9-]+)\/$/)?.[1] || '';
+  const currentSlug = location.pathname.match(/^\/art\/([a-z0-9-]+)\/$/)?.[1] || '';
+  const currentId = () => pool.find((pick) => (pick.publicSlug ?? pick.id) === currentSlug)?.id ?? currentSlug;
+  const chosenPath = () => artworkPath(pool.find((pick) => pick.id === chosen) ?? { id: chosen });
   let chosen = links[0].pathname.match(/^\/art\/([a-z0-9-]+)\/$/)?.[1] || '';
   let committed = false,
     prepared = false;
@@ -78,9 +81,9 @@ export function initCuteSurprise() {
     }
   };
   const choose = () => {
-    const next = pickCute(pool, recent, current, random);
+    const next = pickCute(pool, recent, currentId(), random);
     if (next) chosen = next.id;
-    for (const link of links) link.href = `/art/${chosen}/`;
+    for (const link of links) link.href = chosenPath();
   };
   const prepare = () => {
     if (!active()) return;
@@ -89,7 +92,7 @@ export function initCuteSurprise() {
       choose();
     }
     prepared = true;
-    if (chosen) warm(`/art/${chosen}/`);
+    if (chosen) warm(chosenPath());
     void load();
   };
   const remember = () => {

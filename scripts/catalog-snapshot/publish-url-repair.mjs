@@ -18,12 +18,14 @@ import { captureProductionSnapshot } from '../../server/catalog-snapshot/signed-
 const sha = (b) => createHash('sha256').update(b).digest('hex');
 export async function publishURLRepair({
   mode,
+  planPath = 'data/routes/artwork-public-url-repair-20261109.json',
   software,
   publicConfig,
   output,
   progress = () => {},
 }) {
   assert(['prepare', 'seal', 'activate', 'finalize'].includes(mode));
+  assert(['data/routes/artwork-public-url-repair-20261109.json','data/routes/artwork-public-url-ordinal-repair-20261110.json'].includes(planPath));
   output = resolve(output);
   assert(output.startsWith(resolve('work') + '/'));
   const code = JSON.parse(readFileSync(join(software, 'runtime/software-report.json'))),
@@ -49,7 +51,7 @@ export async function publishURLRepair({
     mkdirSync(output, { recursive: true });
     const expected = await control(),
       head = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim(),
-      plan = JSON.parse(readFileSync('data/routes/artwork-public-url-repair-20261109.json')),
+      plan = JSON.parse(readFileSync(planPath)),
       baselineBytes = readFileSync(baselinePath);
     assert.equal(expected.controlRevision, code.revision);
     assert.equal(plan.parentRoot, expected.verifiedRoot);
@@ -61,6 +63,7 @@ export async function publishURLRepair({
       publicationIntent: 'OWNER_AUTHORIZED_URL_REPAIR',
       sourceCommit: head,
       revision: head,
+      planPath,
       parentSnapshotSHA256: expected.verifiedRoot,
       softwareABI: code.abiSHA256,
       presentationBundleSHA256: code.presentation.sha256,
@@ -205,7 +208,7 @@ export async function publishURLRepair({
   return finalizePresentationOnly({ software, publicConfig, output, progress });
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
-  const [mode, software, config, output] = process.argv.slice(2);
+  const [mode, software, config, output, planPath] = process.argv.slice(2);
   if (!output)
     throw Error(
       'Use prepare|seal|activate|finalize installed-software public-config new-work-output',
@@ -213,6 +216,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1]
   process.env.CLOUDFLARE_API_TOKEN = configuredToken();
   const result = await publishURLRepair({
     mode,
+    ...(planPath ? { planPath } : {}),
     software: resolve(software),
     publicConfig: JSON.parse(readFileSync(config)),
     output,

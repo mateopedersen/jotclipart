@@ -60,3 +60,19 @@ with a package serial followed by meaningful scene words, stay canonical at
 their current URL. The current source inventory identifies 12,700 broken paths
 and preserves 33,658 existing artwork URLs. In particular
 `/art/pumpkin-hot-air-balloon/` is not redirected.
+
+## Expanded owner scope, 10 November 2026 — pending source work
+
+The owner now explicitly requests removal of artificial package ordinals even
+when the existing URL also has scene words. This supersedes the earlier scope
+exception for such historical scene URLs, including the Election Day suffixes
+and flag package ordinals. Meaningful subject/model numbers remain unchanged.
+The new finite plan is source-bound to the current signed root and accepted
+artwork titles. It does not authorize changing original artwork, metadata,
+stable IDs, reviews or licenses. All historical URLs must point directly with
+301 to the final canonical route; retain every reservation. Reject collisions
+rather than adding automatic counters. Source preparation is not live delivery.
+
+The shared Surprise Me selection must carry stable `id` and root-derived
+`publicSlug` separately. SSR anchors, client choices and warm navigation use
+the canonical slug; recent-item tracking and source identity use the stable ID.

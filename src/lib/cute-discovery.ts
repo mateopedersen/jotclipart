@@ -14,6 +14,7 @@ export interface DiscoveryArtwork {
 }
 export interface CutePick {
   id: string;
+  publicSlug?: string;
   topic: string;
   fresh?: boolean;
 }
@@ -269,13 +270,15 @@ export function validCuteIndex(value: unknown): CutePick[] {
         typeof item.topic !== 'string' ||
         !/^[a-z0-9-]+$/.test(item.id) ||
         !/^[a-z0-9-]+$/.test(item.topic) ||
+        (item.publicSlug !== undefined &&
+          (typeof item.publicSlug !== 'string' || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.publicSlug))) ||
         seen.has(item.id)
       )
         return false;
       seen.add(item.id);
       return true;
     })
-    .map(({ id, topic, fresh }) => ({ id, topic, ...(fresh === true ? { fresh: true } : {}) }));
+    .map(({ id, topic, fresh, publicSlug }) => ({ id, topic, ...(publicSlug ? { publicSlug } : {}), ...(fresh === true ? { fresh: true } : {}) }));
 }
 
 export function pickCute(

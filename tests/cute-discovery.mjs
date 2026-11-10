@@ -266,3 +266,11 @@ test('a smile alone does not admit ordinary adult portraits, clinical closeups o
     }) > 0,
   );
 });
+
+test('discovery URLs retain canonical projection without changing stable selection identity', () => {
+  const row = { id: 'dart-20261107-031', topic: 'dart', publicSlug: 'smiling-darts-champion', fresh: true };
+  assert.deepEqual(validCuteIndex([row]), [row]);
+  for (const publicSlug of ['../admin', 'https://foreign.invalid/art', '/art/title/', '', 'double--dash'])
+    assert.deepEqual(validCuteIndex([{...row, publicSlug}]), []);
+  assert.deepEqual(validCuteIndex([{id: row.id, topic: row.topic}]), [{id: row.id, topic: row.topic}]);
+});

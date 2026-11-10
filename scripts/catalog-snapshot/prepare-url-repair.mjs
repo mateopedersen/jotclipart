@@ -11,6 +11,8 @@ import { merkle } from '../../scripts/delivery/manifest.mjs';
 const hash = (b) => createHash('sha256').update(b).digest('hex');
 export const URL_REPAIR_SOURCE_FILES = Object.freeze([
   'data/routes/artwork-public-url-repair-20261109.json',
+  'data/routes/artwork-public-url-ordinal-repair-20261110.json',
+  'server/catalog-snapshot/surprise-picks.mjs',
   'src/lib/artwork-route.mjs',
   'server/catalog-snapshot/public-artwork-routes.mjs',
   'server/catalog-snapshot/sitemap-policy.mjs',
@@ -54,7 +56,7 @@ export async function prepareURLRepair({
   );
   for (const [file, expected] of Object.entries(packet.sourceHashes)) {
     if (
-      !/^(?:(?:server|scripts|src)\/[a-z0-9/.-]+\.mjs|data\/routes\/artwork-public-url-repair-20261109\.json)$/.test(
+      !/^(?:(?:server|scripts|src)\/[a-z0-9/.-]+\.mjs|data\/routes\/artwork-public-url-(?:repair-20261109|ordinal-repair-20261110)\.json)$/.test(
         file,
       ) ||
       file.includes('..')
@@ -69,6 +71,8 @@ export async function prepareURLRepair({
   output = resolve(output);
   if (!output.startsWith(resolve('work') + '/') || existsSync(output))
     throw Error('Separate protected presentation output required');
+  const planPath = packet.planPath ?? 'data/routes/artwork-public-url-repair-20261109.json';
+  assert(['data/routes/artwork-public-url-repair-20261109.json','data/routes/artwork-public-url-ordinal-repair-20261110.json'].includes(planPath), 'Explicit committed URL repair plan required');
   const parent = await captureProductionSnapshot(parentBucket, verifier);
   assert.equal(parent.rootSHA256, packet.parentSnapshotSHA256);
   const installed = await loadPresentationSoftware(software, verifier);
@@ -98,7 +102,7 @@ export async function prepareURLRepair({
     parentContext: parent,
     parentBucket,
     revision: packet.revision,
-    plan: JSON.parse(readFileSync('data/routes/artwork-public-url-repair-20261109.json')),
+    plan: JSON.parse(readFileSync(planPath)),
     progress,
     preparePresentation: ({ context, bucket }) => {
       const work = () =>

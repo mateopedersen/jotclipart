@@ -32,6 +32,22 @@ export function missedLegacyRoute({ id, oldSlug, topic, historicalTopicPrefix })
   );
 }
 
+// Owner scope expanded on 10 November: remove package ordinals even when scene words remain.
+// The same numeric token in accepted subject copy is meaningful and stays stable.
+export function artificialOrdinalRoute({ id, oldSlug, topic, title }) {
+  if (oldSlug !== id || !SLUG.test(id ?? '') || !SLUG.test(topic ?? '') || typeof title !== 'string') return null;
+  const escaped = topic.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const before = new RegExp('^' + escaped + '-(?:clipart-)?(\\d{2,4})-.+').exec(oldSlug);
+  const after = new RegExp('^' + escaped + '-.+-(\\d{2,4})$').exec(oldSlug);
+  const padded = /(?:^|-)(0\d{1,3})(?=-|$)/.exec(oldSlug);
+  const tagged = /(?:^|-)(?:clipart|artwork)-(\d{2,4})-/.exec(oldSlug);
+  const tokens = [...(title.match(/\d+/g) ?? []), ...(topic.match(/\d+/g) ?? [])];
+  for (const [match, ordinalKind] of [[before, 'package-ordinal-before-scene'], [after, 'package-ordinal-after-scene'], [padded, 'zero-padded-package-ordinal'], [tagged, 'tagged-package-ordinal']]) {
+    if (match && !tokens.some(n => Number(n) === Number(match[1]))) return {ordinal:match[1], ordinalKind};
+  }
+  return null;
+}
+
 export async function buildURLRepair({
   parentContext,
   parentBucket,
@@ -43,27 +59,40 @@ export async function buildURLRepair({
   assert.match(revision ?? '', /^[a-f0-9]{40}$/);
   assert.notEqual(revision, parentContext.snapshot.revision);
   assert.equal(plan.schema, 1);
-  assert.equal(plan.kind, 'OWNER_AUTHORIZED_READABLE_ARTWORK_URL_REPAIR');
+  assert(['OWNER_AUTHORIZED_READABLE_ARTWORK_URL_REPAIR', 'OWNER_AUTHORIZED_ARTWORK_ORDINAL_URL_REPAIR'].includes(plan.kind));
+  const ordinalRepair = plan.kind === 'OWNER_AUTHORIZED_ARTWORK_ORDINAL_URL_REPAIR';
   assert.equal(plan.parentRoot, parentContext.rootSHA256);
-  assert(Array.isArray(plan.changes) && plan.changes.length > 0 && plan.changes.length <= 500);
+  assert(Array.isArray(plan.changes) && plan.changes.length > 0 && plan.changes.length <= (ordinalRepair ? 8000 : 500));
   const overlay = createDeltaStore(parentBucket, parentContext, {
     maxObjects: 20000,
     maxBytes: 384 * 1024 * 1024,
   });
   const base = await openSnapshot(overlay.bucket, {
     provided: parentContext.snapshot,
+    maxConcurrentReads: 16,
     maxReadObjects: 20000,
     maxReadBytes: 384 * 1024 * 1024,
   });
+  const originalRead = base.read;
+  base.read = (facet, descriptor, options) => {
+    parentBucket.hint?.(descriptor);
+    return originalRead(facet, descriptor, options);
+  };
   const art = await base.getFacet('artworks'),
     collections = await base.getFacet('collections');
   assert(art.publicRoutes, 'Repair requires the already installed public route projection');
   const rows = new Map();
+  async function parallel(values, inspect) {
+    let next = 0;
+    await Promise.all(Array.from({ length: Math.min(8, values.length) }, async () => {
+      while (next < values.length) await inspect(values[next++]);
+    }));
+  }
   async function visit(d, prefix) {
     const leaf = await base.read('artworks', d);
     if (leaf.type === 'artwork-split') {
       assert.equal(leaf.prefix, prefix);
-      for (const [part, child] of Object.entries(leaf.children)) await visit(child, part);
+      await parallel(Object.entries(leaf.children), ([part, child]) => visit(child, part));
       return;
     }
     assert.equal(leaf.shard, prefix);
@@ -74,18 +103,24 @@ export async function buildURLRepair({
       rows.set(row.id, row);
     }
   }
-  for (const [prefix, d] of Object.entries(art.directories)) {
+  await parallel(Object.entries(art.directories), async ([prefix, d]) => {
     const directory = await base.read('artworks', d);
     assert.equal(directory.type, 'artwork-directory');
     assert.equal(directory.prefix, prefix);
-    for (const [part, child] of Object.entries(directory.shards)) await visit(child, part);
-  }
+    await parallel(Object.entries(directory.shards), ([part, child]) => visit(child, part));
+  });
   assert.equal(rows.size, plan.total);
   const store = {
     get: (d) => base.read('artworks', d, { maxBytes: 65536 }),
     put: (value) => stage('artworks', value),
   };
   const routes = validateRoutes(await base.read('artworks', art.publicRoutes));
+  async function warmMap(d) {
+    const value = await store.get(d);
+    if (value.children) await parallel(Object.values(value.children), warmMap);
+  }
+  await warmMap(routes.byId);
+  await warmMap(routes.byPath);
   const ids = new Map(),
     paths = new Map();
   for await (const { key, value } of mapEntries(store, routes.byId, 'public-artwork-ids')) {
@@ -116,7 +151,12 @@ export async function buildURLRepair({
     assert.equal(change.topic, row.topic);
     assert.equal(change.sourceRecordSHA256, sha(JSON.stringify(canonical(row))));
     assert.equal(change.original, row.webp);
-    assert(missedLegacyRoute(change), 'Only explicitly reviewed bare historical topic/serial URLs');
+    if (ordinalRepair) {
+      const ordinal = artificialOrdinalRoute(change);
+      assert(ordinal, 'Only source-bound artificial package ordinals');
+      assert.equal(change.ordinalKind, ordinal.ordinalKind);
+      assert.equal(change.ordinal, ordinal.ordinal);
+    } else assert(missedLegacyRoute(change), 'Only explicitly reviewed bare historical topic/serial URLs');
     assert.equal(ids.get(change.id).slug, change.oldSlug, 'Stale canonical route');
     assert.equal(change.slug, readableArtworkSlug(row.title), 'Use accepted source title only');
     assert(!/^\d+(?:-\d+)*$/.test(change.slug), 'New route cannot be numeric only');
@@ -153,6 +193,7 @@ export async function buildURLRepair({
     assert(!/^\d+(?:-\d+)*$/.test(value.slug), 'Numeric-only canonical remains');
     assert(!/-20\d{6}-\d{2,4}$/.test(value.slug), 'Machine date/serial canonical remains');
     const row = rows.get(key);
+    if (ordinalRepair) assert(!artificialOrdinalRoute({id:key,oldSlug:value.slug,topic:row.topic,title:row.title}), 'Artificial package ordinal remains');
     assert(
       !missedLegacyRoute({
         id: key,
