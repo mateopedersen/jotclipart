@@ -207,14 +207,17 @@ export async function publishURLRepair({
   }
   return finalizePresentationOnly({ software, publicConfig, output, progress });
 }
-if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
-  const [mode, software, config, output, planPath] = process.argv.slice(2);
+export async function runURLRepairCLI({ argv = process.argv.slice(2), publish = publishURLRepair } = {}) {
+  const [mode, software, config, output, planPath] = argv;
   if (!output)
     throw Error(
       'Use prepare|seal|activate|finalize installed-software public-config new-work-output',
     );
-  process.env.CLOUDFLARE_API_TOKEN = configuredToken();
-  const result = await publishURLRepair({
+  // Validate without converting a refreshable Wrangler OAuth login into a
+  // fixed custom API token inherited by the long-running reader child.
+  // Explicit API-token environments remain unchanged and supported.
+  configuredToken();
+  const result = await publish({
     mode,
     ...(planPath ? { planPath } : {}),
     software: resolve(software),
@@ -222,5 +225,8 @@ if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1]
     output,
     progress: (row) => console.log(JSON.stringify(row)),
   });
-  console.log(JSON.stringify(result));
+  return result;
+}
+if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
+  console.log(JSON.stringify(await runURLRepairCLI()));
 }
