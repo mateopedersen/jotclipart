@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {buildPublicArtworkRoutes} from '../../server/catalog-snapshot/public-artwork-routes.mjs';
-import {readSurprisePicks} from '../../server/catalog-snapshot/surprise-picks.mjs';
+import {readPresentationSurprisePicks as readSurprisePicks} from '../../scripts/catalog-snapshot/presentation.mjs';
 import {artworkPath} from '../../src/lib/artwork-route.mjs';
 test('Surprise preserves stable identities while using root-bound canonical URLs', async()=>{
  const values=new Map(),put=async x=>{const value={schema:1,...x},body=Buffer.from(JSON.stringify(value)),sha256=createHash('sha256').update(body).digest('hex'),d={key:'catalog/objects/artworks/'+sha256+'.json',sha256,bytes:body.length};values.set(d.key,value);return d;},store={put,get:async d=>values.get(d.key)},id='dart-20261107-031',slug='smiling-amateur-darts-champion';

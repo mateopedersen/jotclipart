@@ -28,6 +28,15 @@ import { activeCuratedCollections } from '../../src/lib/curated-collection-polic
 import { canonical } from '../../server/catalog-search/store.mjs';
 import { buildHashedRecordDirectory } from '../../server/catalog-snapshot/hashed-record-directory-build.mjs';
 const sha = (b) => createHash('sha256').update(b).digest('hex');
+// Canonical discovery links belong to the publisher's prepared HTML. Keep the
+// installed request handler and its ABI-bound source inputs unchanged.
+export async function readPresentationSurprisePicks(context, options) {
+  const picks = await readSurprisePicks(context, options);
+  return Promise.all(picks.map(async (pick) => ({
+    ...pick,
+    publicSlug: await publicRouteForId(context, pick.id),
+  })));
+}
 const CORE = [
   ['/', 'home'],
   ['/new/', 'new'],
@@ -224,7 +233,7 @@ export async function stagePresentationViews({
             }),
             resolveSurprise: async (ctx) => ({
               rootSHA256: ctx.rootSHA256,
-              items: await readSurprisePicks(ctx, { limit: 48 }),
+              items: await readPresentationSurprisePicks(ctx, { limit: 48 }),
             }),
           })
         ).state;
