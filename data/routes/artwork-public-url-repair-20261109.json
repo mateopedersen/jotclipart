@@ -2,8 +2,8 @@
   "schema": 1,
   "kind": "OWNER_AUTHORIZED_READABLE_ARTWORK_URL_REPAIR",
   "ownerScope": "Only the 150 missed bare numeric/historical topic serial canonicals; all descriptive routes and original source records remain unchanged.",
-  "parentRoot": "4f9db43f365ab92a8de624b22b6bd4c9cb2ee8598877fdf60adfb86c714e9014",
-  "total": 46358,
+  "parentRoot": "bfddefe140da7b1cd70a7e99b037d9878abb03bdf645008e91dc668a12c10d8d",
+  "total": 49858,
   "audit": {
     "at": "2026-11-09T11:31:54.608Z",
     "allSitemapDocuments": 14,
