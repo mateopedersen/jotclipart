@@ -37,12 +37,13 @@ export function missedLegacyRoute({ id, oldSlug, topic, historicalTopicPrefix })
 export function artificialOrdinalRoute({ id, oldSlug, topic, title }) {
   if (oldSlug !== id || !SLUG.test(id ?? '') || !SLUG.test(topic ?? '') || typeof title !== 'string') return null;
   const escaped = topic.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const before = new RegExp('^' + escaped + '-(?:clipart-)?(\\d{2,4})-.+').exec(oldSlug);
+  const before = new RegExp('^' + escaped + '-(?:(?:clipart|typography)-)?(\\d{2,4})-.+').exec(oldSlug);
   const after = new RegExp('^' + escaped + '-.+-(\\d{2,4})$').exec(oldSlug);
   const padded = /(?:^|-)(0\d{1,3})(?=-|$)/.exec(oldSlug);
   const tagged = /(?:^|-)(?:clipart|artwork)-(\d{2,4})-/.exec(oldSlug);
+  const version = /-v([2-9]\d*)$/.exec(oldSlug);
   const tokens = [...(title.match(/\d+/g) ?? []), ...(topic.match(/\d+/g) ?? [])];
-  for (const [match, ordinalKind] of [[before, 'package-ordinal-before-scene'], [after, 'package-ordinal-after-scene'], [padded, 'zero-padded-package-ordinal'], [tagged, 'tagged-package-ordinal']]) {
+  for (const [match, ordinalKind] of [[before, 'package-ordinal-before-scene'], [after, 'package-ordinal-after-scene'], [padded, 'zero-padded-package-ordinal'], [tagged, 'tagged-package-ordinal'], [version, 'source-file-version-suffix']]) {
     if (match && !tokens.some(n => Number(n) === Number(match[1]))) return {ordinal:match[1], ordinalKind};
   }
   return null;

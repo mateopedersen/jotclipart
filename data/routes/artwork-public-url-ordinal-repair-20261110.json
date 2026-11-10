@@ -5,7 +5,7 @@
   "parentRoot": "7c311351a6c725394ca7473cbcc1025868a281d17449cc817776452f0f3f6753",
   "total": 49858,
   "audit": {
-    "at": "2026-11-10T15:03:44.018Z",
+    "at": "2026-11-10T17:12:47.527Z",
     "liveArtURLs": 49858,
     "liveDiscoveryPagesOpened": 929,
     "liveSuspectArtPagesOpened": 224
@@ -537,7 +537,7 @@
       "sourceRecordSHA256": "47059cfab96bdd0eadceeafb22599dfec2ffcbea2ad5f4b19228cec3ccdac1f0",
       "original": "https://assets.ultraclipart.com/cyber-monday/cyber-monday-typography-03-chrome-two-tier-letter-sculpture.webp.10b22c3d669f4886.webp",
       "ordinal": "03",
-      "ordinalKind": "zero-padded-package-ordinal"
+      "ordinalKind": "package-ordinal-before-scene"
     },
     {
       "id": "jaguar-17-fishing-paw",
@@ -593,6 +593,17 @@
       "original": "https://assets.ultraclipart.com/nauru-flag/nauru-flag-clipart-033-spherical-finial-pole.webp.53ae9dfd4273e7b6.webp",
       "ordinalKind": "package-ordinal-before-scene",
       "ordinal": "033"
+    },
+    {
+      "id": "smart-doorbell-router-connection-kit-v2",
+      "oldSlug": "smart-doorbell-router-connection-kit-v2",
+      "slug": "doorbell-with-router-and-chime",
+      "title": "Doorbell With Router and Chime",
+      "topic": "smart-doorbell",
+      "sourceRecordSHA256": "efc7e08515212422e14ac0198401bf3d850a7f852b889183c75f47b80f95a9dd",
+      "original": "https://assets.ultraclipart.com/smart-doorbell/smart-doorbell-router-connection-kit-v2.webp.79c3950048f256b9.webp",
+      "ordinal": "2",
+      "ordinalKind": "source-file-version-suffix"
     },
     {
       "id": "cyber-monday-33-home-weather-station",
@@ -1046,6 +1057,17 @@
       "ordinal": "049"
     },
     {
+      "id": "smart-doorbell-rear-terminal-detail-v3",
+      "oldSlug": "smart-doorbell-rear-terminal-detail-v3",
+      "slug": "back-of-doorbell-with-wire-connectors",
+      "title": "Back of Doorbell With Wire Connectors",
+      "topic": "smart-doorbell",
+      "sourceRecordSHA256": "8e1ebcab04a5a1e2ba19dcb4e0069e9d194454d60416b8af99f974a953e8d8af",
+      "original": "https://assets.ultraclipart.com/smart-doorbell/smart-doorbell-rear-terminal-detail-v3.webp.2a233f2090ecf06a.webp",
+      "ordinal": "3",
+      "ordinalKind": "source-file-version-suffix"
+    },
+    {
       "id": "united-kingdom-flag-clipart-003-folded-flag-on-a-display-cushion",
       "oldSlug": "united-kingdom-flag-clipart-003-folded-flag-on-a-display-cushion",
       "slug": "uk-folded-flag-on-a-display-cushion",
@@ -1264,6 +1286,17 @@
       "original": "https://assets.ultraclipart.com/online-shopping/online-shopping-42-ecommerce-cart-phone-hand-black-and-white.webp.daf93c94405b2f45.webp",
       "ordinalKind": "package-ordinal-before-scene",
       "ordinal": "42"
+    },
+    {
+      "id": "smart-doorbell-privacy-zone-display-v2",
+      "oldSlug": "smart-doorbell-privacy-zone-display-v2",
+      "slug": "doorbell-and-indoor-display",
+      "title": "Doorbell and Indoor Display",
+      "topic": "smart-doorbell",
+      "sourceRecordSHA256": "6258b6d3aacc7f6fd5561f80e1771fcc551d96d2d0c16765842a28acb8480a03",
+      "original": "https://assets.ultraclipart.com/smart-doorbell/smart-doorbell-privacy-zone-display-v2.webp.01a6048416d21b51.webp",
+      "ordinal": "2",
+      "ordinalKind": "source-file-version-suffix"
     },
     {
       "id": "switzerland-flag-clipart-061-mountain-guide-welcome-ceremony",
@@ -2424,7 +2457,7 @@
       "id": "rainbow-06-macrame-hanging",
       "oldSlug": "rainbow-06-macrame-hanging",
       "slug": "macrame-rainbow-hanging",
-      "title": "Macramé Rainbow Hanging",
+      "title": "Macram\u00e9 Rainbow Hanging",
       "topic": "rainbow",
       "sourceRecordSHA256": "04198625e5f6c8819b23bcd79e6a534ff21825a7e71c99b0205d3c6b8ccb0942",
       "original": "https://assets.ultraclipart.com/rainbow/rainbow-06-macrame-hanging.webp.605114166373966c.webp",
@@ -4178,7 +4211,7 @@
       "sourceRecordSHA256": "d3feef8b78d3ae7f061d38836d0d0561eb7ae1beac213a85c835d0d55be12708",
       "original": "https://assets.ultraclipart.com/cyber-monday/cyber-monday-typography-09-twin-keycap-headline.webp.72f94add6a230dc8.webp",
       "ordinal": "09",
-      "ordinalKind": "zero-padded-package-ordinal"
+      "ordinalKind": "package-ordinal-before-scene"
     },
     {
       "id": "finland-flag-clipart-081-wooden-craft-workshop-halyard-knot-practice-ink-drawing",
@@ -5311,7 +5344,7 @@
       "sourceRecordSHA256": "f28e6dd4667b0f839d11c2443a83192ec39a41b42ebefba697711a79f6e9bb86",
       "original": "https://assets.ultraclipart.com/cyber-monday/cyber-monday-typography-07-arched-etched-edge-lit-sign.webp.876116477fcad9b6.webp",
       "ordinal": "07",
-      "ordinalKind": "zero-padded-package-ordinal"
+      "ordinalKind": "package-ordinal-before-scene"
     },
     {
       "id": "cybercab-clipart-019-cel-destination-pin-arrival",
@@ -7181,7 +7214,7 @@
       "sourceRecordSHA256": "41949fec834f390a2eebe98c2cad48997059c6ba02bab0057f225337ce9656d1",
       "original": "https://assets.ultraclipart.com/cyber-monday/cyber-monday-typography-05-smartphone-screen-headline.webp.eccb8ebf8cdea13c.webp",
       "ordinal": "05",
-      "ordinalKind": "zero-padded-package-ordinal"
+      "ordinalKind": "package-ordinal-before-scene"
     },
     {
       "id": "germany-flag-clipart-071-public-transport-heritage-desk-club-ribbon-gift",
@@ -8161,6 +8194,17 @@
       "original": "https://assets.ultraclipart.com/robot-hand/robot-hand-clipart-23-citrus-peeling.webp.385cfc67280655c9.webp",
       "ordinalKind": "package-ordinal-before-scene",
       "ordinal": "23"
+    },
+    {
+      "id": "smart-doorbell-grocery-arrival-v2",
+      "oldSlug": "smart-doorbell-grocery-arrival-v2",
+      "slug": "woman-with-groceries-at-doorbell",
+      "title": "Woman With Groceries at Doorbell",
+      "topic": "smart-doorbell",
+      "sourceRecordSHA256": "6d1180d53eb00916ce09364ecb41a05d52111f1f5adeac81929d4ec56f55221a",
+      "original": "https://assets.ultraclipart.com/smart-doorbell/smart-doorbell-grocery-arrival-v2.webp.b67b5dae7b3e3488.webp",
+      "ordinal": "2",
+      "ordinalKind": "source-file-version-suffix"
     },
     {
       "id": "walmart-49-registry-cookware",
@@ -9208,6 +9252,17 @@
       "ordinal": "050"
     },
     {
+      "id": "microwave-leftovers-plate-v2",
+      "oldSlug": "microwave-leftovers-plate-v2",
+      "slug": "microwave-with-fish-and-vegetables",
+      "title": "Microwave With Fish and Vegetables",
+      "topic": "microwave",
+      "sourceRecordSHA256": "4b04d2b61dd59745e20dfae6ba904f6ff2aec03a019d1ff4ba6264a408b27b55",
+      "original": "https://assets.ultraclipart.com/microwave/microwave-leftovers-plate-v2.webp.c3867a29d3ec977e.webp",
+      "ordinal": "2",
+      "ordinalKind": "source-file-version-suffix"
+    },
+    {
       "id": "monaco-flag-clipart-027-seafront-promenade-opening",
       "oldSlug": "monaco-flag-clipart-027-seafront-promenade-opening",
       "slug": "monaco-flag-seafront-promenade-opening",
@@ -9272,6 +9327,17 @@
       "original": "https://assets.ultraclipart.com/netherlands-flag/netherlands-flag-clipart-067-village-cheese-market-stall-accessible-club-adventure.webp.acaf051f5682ca8c.webp",
       "ordinalKind": "package-ordinal-before-scene",
       "ordinal": "067"
+    },
+    {
+      "id": "smart-doorbell-dog-walker-visitor-v2",
+      "oldSlug": "smart-doorbell-dog-walker-visitor-v2",
+      "slug": "woman-at-doorbell-with-dog",
+      "title": "Woman at Doorbell With Dog",
+      "topic": "smart-doorbell",
+      "sourceRecordSHA256": "b5577457b9c0ceef9b691b37803ee5fe9ad3079b5408256be19a3c0487765ded",
+      "original": "https://assets.ultraclipart.com/smart-doorbell/smart-doorbell-dog-walker-visitor-v2.webp.020b60c889c00cdf.webp",
+      "ordinal": "2",
+      "ordinalKind": "source-file-version-suffix"
     },
     {
       "id": "vase-45-pierced-lattice",
@@ -10745,7 +10811,7 @@
       "sourceRecordSHA256": "1703d4d408d614d284679f1ee47d8a7a8bf9468ae0bc917bedc844cd928f4523",
       "original": "https://assets.ultraclipart.com/cyber-monday/cyber-monday-typography-01-neon-script-tube-sign.webp.4eb7792074e4ab32.webp",
       "ordinal": "01",
-      "ordinalKind": "zero-padded-package-ordinal"
+      "ordinalKind": "package-ordinal-before-scene"
     },
     {
       "id": "denmark-flag-clipart-014-flag-keeper-packing-a-travel-sleeve",
@@ -12483,7 +12549,7 @@
       "sourceRecordSHA256": "39ba07c05055457be1fef8115318f4c3f9e4b67df00da0844c165ea203e03d84",
       "original": "https://assets.ultraclipart.com/cyber-monday/cyber-monday-typography-02-acrylic-retail-desk-plaque.webp.5baa4b36673ff8d8.webp",
       "ordinal": "02",
-      "ordinalKind": "zero-padded-package-ordinal"
+      "ordinalKind": "package-ordinal-before-scene"
     },
     {
       "id": "vegetables-044-shallot-braid",
@@ -15335,6 +15401,17 @@
       "ordinal": "032"
     },
     {
+      "id": "smart-doorbell-indoor-answering-screen-v2",
+      "oldSlug": "smart-doorbell-indoor-answering-screen-v2",
+      "slug": "woman-viewing-doorbell-on-phone",
+      "title": "Woman Viewing Doorbell on Phone",
+      "topic": "smart-doorbell",
+      "sourceRecordSHA256": "746597982e3049c33742b34b3aea950b03aee86d976465fae9fd57f8de01caae",
+      "original": "https://assets.ultraclipart.com/smart-doorbell/smart-doorbell-indoor-answering-screen-v2.webp.d291e1650c46ec13.webp",
+      "ordinal": "2",
+      "ordinalKind": "source-file-version-suffix"
+    },
+    {
       "id": "denmark-flag-clipart-063-bicycle-repair-station-small-team-big-welcome",
       "oldSlug": "denmark-flag-clipart-063-bicycle-repair-station-small-team-big-welcome",
       "slug": "denmark-flag-bicycle-repair-station-team-big-welcome",
@@ -17224,7 +17301,7 @@
       "sourceRecordSHA256": "282efe46abf3b731685aa4b9c6e654fb2ef071e8fc9846232aedc2f50a2ca091",
       "original": "https://assets.ultraclipart.com/cyber-monday/cyber-monday-typography-04-pixel-led-counter-display.webp.2ec018035cba4574.webp",
       "ordinal": "04",
-      "ordinalKind": "zero-padded-package-ordinal"
+      "ordinalKind": "package-ordinal-before-scene"
     },
     {
       "id": "germany-flag-clipart-053-city-library-maker-table-project-completion-handshake",
@@ -18143,7 +18220,7 @@
       "id": "baseball-008-catchers-protection",
       "oldSlug": "baseball-008-catchers-protection",
       "slug": "teal-catchers-protective-gear",
-      "title": "Teal Catcher’s Protective Gear",
+      "title": "Teal Catcher\u2019s Protective Gear",
       "topic": "baseball",
       "sourceRecordSHA256": "baa06327504261f36b0c9088940fa9a3af1b55a17a5fca25b58e2c95b4eb06f7",
       "original": "https://assets.ultraclipart.com/baseball/baseball-008-catchers-protection.webp.9eb8947f65792006.webp",
@@ -21493,6 +21570,17 @@
       "original": "https://assets.ultraclipart.com/micronesia-flag/micronesia-flag-clipart-088-sailing-club-ink.webp.8d54938499ed0bb9.webp",
       "ordinalKind": "package-ordinal-before-scene",
       "ordinal": "088"
+    },
+    {
+      "id": "microwave-senior-controls-v2",
+      "oldSlug": "microwave-senior-controls-v2",
+      "slug": "older-woman-using-microwave",
+      "title": "Older Woman Using Microwave",
+      "topic": "microwave",
+      "sourceRecordSHA256": "f625536c0d7739a4ec66fb2890d01e62d907d8878408eac241bf96573db9d80e",
+      "original": "https://assets.ultraclipart.com/microwave/microwave-senior-controls-v2.webp.c39f79f8c3054c97.webp",
+      "ordinal": "2",
+      "ordinalKind": "source-file-version-suffix"
     },
     {
       "id": "netherlands-flag-clipart-034-rowing-heritage-exhibition",
@@ -26676,6 +26764,17 @@
       "ordinal": "035"
     },
     {
+      "id": "smart-doorbell-parcel-view-phone-v2",
+      "oldSlug": "smart-doorbell-parcel-view-phone-v2",
+      "slug": "doorbell-and-phone-with-parcel-view",
+      "title": "Doorbell and Phone With Parcel View",
+      "topic": "smart-doorbell",
+      "sourceRecordSHA256": "f3fd013f728e6ff368190cb8dbd1a02ccf2100fd07d777538685e87f6431eb0d",
+      "original": "https://assets.ultraclipart.com/smart-doorbell/smart-doorbell-parcel-view-phone-v2.webp.62cc200f5492db0e.webp",
+      "ordinal": "2",
+      "ordinalKind": "source-file-version-suffix"
+    },
+    {
       "id": "star-022-skateboard-character",
       "oldSlug": "star-022-skateboard-character",
       "slug": "skateboarding-orange-star",
@@ -27466,6 +27565,17 @@
       "original": "https://assets.ultraclipart.com/walmart/walmart-44-couple-reviewing-receipt.webp.68a4e6adac8c8d48.webp",
       "ordinalKind": "package-ordinal-before-scene",
       "ordinal": "44"
+    },
+    {
+      "id": "3d-printer-extruder-drive-v2",
+      "oldSlug": "3d-printer-extruder-drive-v2",
+      "slug": "extruder-mechanism-detail",
+      "title": "Extruder Mechanism Detail",
+      "topic": "3d-printer",
+      "sourceRecordSHA256": "c6023b32ff7042d25c933265250b06a190bcfabc015d6879a44f3e683c191202",
+      "original": "https://assets.ultraclipart.com/3d-printer/3d-printer-extruder-drive-v2.webp.99dfcb7047e0eb38.webp",
+      "ordinal": "2",
+      "ordinalKind": "source-file-version-suffix"
     },
     {
       "id": "alligator-42-umbrella-step",
@@ -34299,6 +34409,17 @@
       "ordinal": "073"
     },
     {
+      "id": "microwave-over-range-product-v2",
+      "oldSlug": "microwave-over-range-product-v2",
+      "slug": "over-range-microwave",
+      "title": "Over-Range Microwave",
+      "topic": "microwave",
+      "sourceRecordSHA256": "e26fc99b46e9a962127ccac5f8444ff9dc8ac95e52d53fc1826373566560ce14",
+      "original": "https://assets.ultraclipart.com/microwave/microwave-over-range-product-v2.webp.f0fdb8e739f79bbd.webp",
+      "ordinal": "2",
+      "ordinalKind": "source-file-version-suffix"
+    },
+    {
       "id": "namibia-flag-clipart-041-double-hem-closeup",
       "oldSlug": "namibia-flag-clipart-041-double-hem-closeup",
       "slug": "namibia-flag-with-gold-grommets",
@@ -34750,6 +34871,17 @@
       "ordinal": "011"
     },
     {
+      "id": "smart-speaker-smart-light-control-kit-v2",
+      "oldSlug": "smart-speaker-smart-light-control-kit-v2",
+      "slug": "speaker-with-lamp-and-smart-bulb",
+      "title": "Speaker With Lamp and Smart Bulb",
+      "topic": "smart-speaker",
+      "sourceRecordSHA256": "1e85be6e37097efbcda528fac3c4d63cc615d764d8a52f02159109f006d52212",
+      "original": "https://assets.ultraclipart.com/smart-speaker/smart-speaker-smart-light-control-kit-v2.webp.701a986def7c1c78.webp",
+      "ordinal": "2",
+      "ordinalKind": "source-file-version-suffix"
+    },
+    {
       "id": "sweden-flag-clipart-024-community-ceramics-market-heritage-demonstration",
       "oldSlug": "sweden-flag-clipart-024-community-ceramics-market-heritage-demonstration",
       "slug": "sweden-flag-ceramics-market-heritage-demonstration",
@@ -34830,7 +34962,7 @@
       "id": "baseball-044-wire-catcher-mask",
       "oldSlug": "baseball-044-wire-catcher-mask",
       "slug": "wire-catchers-mask",
-      "title": "Wire Catcher’s Mask",
+      "title": "Wire Catcher\u2019s Mask",
       "topic": "baseball",
       "sourceRecordSHA256": "f47999ee0570a34abb97870995a2e6e38ee06a0cb3ab1cbe39b1dddc7b65a115",
       "original": "https://assets.ultraclipart.com/baseball/baseball-044-wire-catcher-mask.webp.fc3caa61a79aa1d5.webp",
@@ -35484,7 +35616,7 @@
       "sourceRecordSHA256": "7ba302a108db5a8ac53bc43beb33b6475942012695d5011b164fb5f07d4857cc",
       "original": "https://assets.ultraclipart.com/cyber-monday/cyber-monday-typography-08-matte-shopping-bag-lettering.webp.935949d8bbcc293a.webp",
       "ordinal": "08",
-      "ordinalKind": "zero-padded-package-ordinal"
+      "ordinalKind": "package-ordinal-before-scene"
     },
     {
       "id": "germany-flag-clipart-028-city-library-maker-table-early-morning-preparation",
@@ -36763,6 +36895,17 @@
       "ordinal": "076"
     },
     {
+      "id": "smart-doorbell-duplex-entry-v2",
+      "oldSlug": "smart-doorbell-duplex-entry-v2",
+      "slug": "two-front-doors-with-doorbells",
+      "title": "Two Front Doors With Doorbells",
+      "topic": "smart-doorbell",
+      "sourceRecordSHA256": "3a8930ea805d680fa1f02e469f05eb020e254806d7803835b3069a5714544343",
+      "original": "https://assets.ultraclipart.com/smart-doorbell/smart-doorbell-duplex-entry-v2.webp.deecb7f139c8d594.webp",
+      "ordinal": "2",
+      "ordinalKind": "source-file-version-suffix"
+    },
+    {
       "id": "united-kingdom-flag-clipart-085-junior-athletics-medal-table-flagpole-rope-winder-ink-drawing",
       "oldSlug": "united-kingdom-flag-clipart-085-junior-athletics-medal-table-flagpole-rope-winder-ink-drawing",
       "slug": "uk-flag-medal-table-flagpole-rope-winder-black-and-white",
@@ -36981,6 +37124,17 @@
       "original": "https://assets.ultraclipart.com/united-arab-emirates-flag/united-arab-emirates-flag-clipart-059-book-conservation-studio-opening-day-little-helpers.webp.8f1da026a04defd3.webp",
       "ordinalKind": "package-ordinal-before-scene",
       "ordinal": "059"
+    },
+    {
+      "id": "3d-printer-packing-finished-print-v2",
+      "oldSlug": "3d-printer-packing-finished-print-v2",
+      "slug": "woman-packing-a-printed-plant-pot",
+      "title": "Woman Packing a Printed Plant Pot",
+      "topic": "3d-printer",
+      "sourceRecordSHA256": "fd910220f840eb0f5595ab6489935cd3699ae60098a9e1a69925a5b06d96481c",
+      "original": "https://assets.ultraclipart.com/3d-printer/3d-printer-packing-finished-print-v2.webp.9c64d196a1c0fac3.webp",
+      "ordinal": "2",
+      "ordinalKind": "source-file-version-suffix"
     },
     {
       "id": "andorra-flag-clipart-060-local-harvest-cooperative-creative-workshop-flag-bearer",
@@ -39511,6 +39665,17 @@
       "original": "https://assets.ultraclipart.com/norway-flag/norway-flag-clipart-011-sewing-machine-finishing-flag.webp.433f4b986dffe340.webp",
       "ordinalKind": "package-ordinal-before-scene",
       "ordinal": "011"
+    },
+    {
+      "id": "smart-doorbell-peephole-monitor-kit-v2",
+      "oldSlug": "smart-doorbell-peephole-monitor-kit-v2",
+      "slug": "peephole-camera-and-indoor-screen",
+      "title": "Peephole Camera and Indoor Screen",
+      "topic": "smart-doorbell",
+      "sourceRecordSHA256": "2f91c8cff00bf7abf6e9db6b7068ffe557837de1ecbac4fb00630855dc606fbf",
+      "original": "https://assets.ultraclipart.com/smart-doorbell/smart-doorbell-peephole-monitor-kit-v2.webp.dfd0496d3ab95b41.webp",
+      "ordinal": "2",
+      "ordinalKind": "source-file-version-suffix"
     },
     {
       "id": "sweden-flag-clipart-058-city-allotment-garden-club-celebration-podium",
@@ -43418,6 +43583,17 @@
       "ordinal": "050"
     },
     {
+      "id": "3d-printer-printed-gear-v2",
+      "oldSlug": "3d-printer-printed-gear-v2",
+      "slug": "printer-with-blue-gear",
+      "title": "Printer With Blue Gear",
+      "topic": "3d-printer",
+      "sourceRecordSHA256": "616500b06c48693b2fd274bc3bf8f220c97a399f9d7bc8cafadd2b22369e30ba",
+      "original": "https://assets.ultraclipart.com/3d-printer/3d-printer-printed-gear-v2.webp.e380a527b0387f51.webp",
+      "ordinal": "2",
+      "ordinalKind": "source-file-version-suffix"
+    },
+    {
       "id": "andorra-flag-clipart-044-accessible-mountain-viewpoint-garden-supporters-reception",
       "oldSlug": "andorra-flag-clipart-044-accessible-mountain-viewpoint-garden-supporters-reception",
       "slug": "moving-a-flower-planter-at-an-andorra-flag-display",
@@ -45011,6 +45187,17 @@
       "original": "https://assets.ultraclipart.com/canada-flag/canada-flag-clipart-070-woodcraft-learning-studio-seedling-and-flag-day.webp.c32cf21d9205bcfa.webp",
       "ordinalKind": "package-ordinal-before-scene",
       "ordinal": "070"
+    },
+    {
+      "id": "cyber-monday-typography-10-gift-card-envelope-headline",
+      "oldSlug": "cyber-monday-typography-10-gift-card-envelope-headline",
+      "slug": "cyber-monday-email-envelope",
+      "title": "Cyber Monday Email Envelope",
+      "topic": "cyber-monday",
+      "sourceRecordSHA256": "cfad7f63b1434dc025fa495dc4d93598f9d132ee3168eb4788390b1574768166",
+      "original": "https://assets.ultraclipart.com/cyber-monday/cyber-monday-typography-10-gift-card-envelope-headline.webp.26835c078f84cfca.webp",
+      "ordinal": "10",
+      "ordinalKind": "package-ordinal-before-scene"
     },
     {
       "id": "cybercab-clipart-028-paper-taxi-baggage-stroller",
@@ -49303,6 +49490,17 @@
       "ordinal": "047"
     },
     {
+      "id": "cyber-monday-typography-11-monochrome-embossed-round-seal-black-and-white",
+      "oldSlug": "cyber-monday-typography-11-monochrome-embossed-round-seal-black-and-white",
+      "slug": "black-cyber-monday-seal",
+      "title": "Black Cyber Monday Seal",
+      "topic": "cyber-monday",
+      "sourceRecordSHA256": "f30227351734225ea77c6f9777d2ce71b3be411b25d9f5d87147fff249fb1455",
+      "original": "https://assets.ultraclipart.com/cyber-monday/cyber-monday-typography-11-monochrome-embossed-round-seal-black-and-white.webp.a47e81aaa737d544.webp",
+      "ordinal": "11",
+      "ordinalKind": "package-ordinal-before-scene"
+    },
+    {
       "id": "libya-flag-clipart-051-wooden-clip-stand",
       "oldSlug": "libya-flag-clipart-051-wooden-clip-stand",
       "slug": "libya-flag-on-a-hanging-stand",
@@ -51264,7 +51462,7 @@
       "id": "iceland-flag-clipart-018-fishermens-day-life-ring-challenge",
       "oldSlug": "iceland-flag-clipart-018-fishermens-day-life-ring-challenge",
       "slug": "iceland-flag-fishermens-day-life-ring-challenge",
-      "title": "Iceland Flag: Fishermen’s Day Life Ring Challenge",
+      "title": "Iceland Flag: Fishermen\u2019s Day Life Ring Challenge",
       "topic": "iceland-flag",
       "sourceRecordSHA256": "f193f871c746924b0b450fd3081001908af8f80221617dd7099d66ea6fcdc9da",
       "original": "https://assets.ultraclipart.com/iceland-flag/iceland-flag-clipart-018-fishermens-day-life-ring-challenge.webp.f860124b60a7f00f.webp",
@@ -52072,7 +52270,7 @@
       "sourceRecordSHA256": "ac05398f54cf74f7311e9e6b4b2e17cdfb81fa2c160d6a396f7ee9b89db304cf",
       "original": "https://assets.ultraclipart.com/cyber-monday/cyber-monday-typography-06-perforated-foil-coupon.webp.b87b59a2de127686.webp",
       "ordinal": "06",
-      "ordinalKind": "zero-padded-package-ordinal"
+      "ordinalKind": "package-ordinal-before-scene"
     },
     {
       "id": "denmark-flag-clipart-078-city-bicycle-welcome-point-happy-volunteer-team",
@@ -52815,7 +53013,7 @@
       "id": "baseball-004-catchers-mitt",
       "oldSlug": "baseball-004-catchers-mitt",
       "slug": "dark-brown-catchers-mitt",
-      "title": "Dark Brown Catcher’s Mitt",
+      "title": "Dark Brown Catcher\u2019s Mitt",
       "topic": "baseball",
       "sourceRecordSHA256": "fab4c0d2a028d745dd84333949c047c2a41d0701bde42e70d22aaf4de4b6bb0b",
       "original": "https://assets.ultraclipart.com/baseball/baseball-004-catchers-mitt.webp.ae380e80b33ecf91.webp",
@@ -58695,6 +58893,17 @@
       "original": "https://assets.ultraclipart.com/cyber-monday/cyber-monday-31-smart-kitchen-scale.webp.b26ae6bab5dadf09.webp",
       "ordinalKind": "package-ordinal-before-scene",
       "ordinal": "31"
+    },
+    {
+      "id": "cyber-monday-typography-12-monochrome-engraved-hanging-tag-black-and-white",
+      "oldSlug": "cyber-monday-typography-12-monochrome-engraved-hanging-tag-black-and-white",
+      "slug": "cyber-monday-metal-tag",
+      "title": "Cyber Monday Metal Tag",
+      "topic": "cyber-monday",
+      "sourceRecordSHA256": "a8e019674e5e428e99cc0eaf13c2cfa7a99a191cd6f44a602d9849ba6c0d701c",
+      "original": "https://assets.ultraclipart.com/cyber-monday/cyber-monday-typography-12-monochrome-engraved-hanging-tag-black-and-white.webp.26044f6776a3ba0d.webp",
+      "ordinal": "12",
+      "ordinalKind": "package-ordinal-before-scene"
     },
     {
       "id": "election-day-civic-ferris-wheel-cartoon-071",
