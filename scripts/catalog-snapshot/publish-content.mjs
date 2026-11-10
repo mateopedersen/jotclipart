@@ -49,6 +49,10 @@ export async function withCatalogReader({ directory, verifier, parentSnapshotSHA
             diskCache: cache,
           }),
         );
+      } catch (error) {
+        // Preserve the primary failure in operator logs if cache persistence also fails.
+        console.error('Catalog read operation failed:', error);
+        throw error;
       } finally {
         cache.close();
       }

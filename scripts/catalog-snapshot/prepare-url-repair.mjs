@@ -21,6 +21,7 @@ export const URL_REPAIR_SOURCE_FILES = Object.freeze([
   'scripts/catalog-snapshot/build-url-repair.mjs',
   'scripts/catalog-snapshot/prepare-url-repair.mjs',
   'scripts/catalog-snapshot/publish-url-repair.mjs',
+  'scripts/catalog-snapshot/publish-content.mjs',
   'scripts/catalog-snapshot/presentation.mjs',
   'scripts/catalog-snapshot/test-content-native.mjs',
   'scripts/catalog-snapshot/verify-presentation-live.mjs',
