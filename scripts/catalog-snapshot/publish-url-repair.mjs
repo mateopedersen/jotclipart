@@ -1,3 +1,4 @@
+import { assertPublisherTarget, assertPublisherSoftware } from '../jotclipart/publisher-target.mjs';
 // Operator-only repair through the existing immutable stage/replay/sign/CAS lifecycle.
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { resolve, join } from 'node:path';
@@ -24,11 +25,20 @@ export async function publishURLRepair({
   output,
   progress = () => {},
 }) {
+  const publicOrigin = assertPublisherTarget(publicConfig);
   assert(['prepare', 'seal', 'activate', 'finalize'].includes(mode));
-  assert(['data/routes/artwork-public-url-repair-20261109.json','data/routes/artwork-public-url-ordinal-repair-20261110.json'].includes(planPath));
+  assert(
+    [
+      'data/routes/artwork-public-url-repair-20261109.json',
+      'data/routes/artwork-public-url-ordinal-repair-20261110.json',
+    ].includes(planPath),
+  );
   output = resolve(output);
   assert(output.startsWith(resolve('work') + '/'));
-  const code = JSON.parse(readFileSync(join(software, 'runtime/software-report.json'))),
+  const code = assertPublisherSoftware(
+      JSON.parse(readFileSync(join(software, 'runtime/software-report.json'))),
+      publicConfig,
+    ),
     verifier = {
       ...publicConfig,
       abiSHA256: code.abiSHA256,
@@ -39,7 +49,7 @@ export async function publishURLRepair({
     read = (n) => JSON.parse(readFileSync(join(output, n))),
     write = (n, v) => writeFileSync(join(output, n), JSON.stringify(v, null, 2), { flag: 'wx' }),
     control = async () => {
-      const r = await fetch('https://ultraclipart.com/delivery-release.json', {
+      const r = await fetch(publicOrigin + '/delivery-release.json', {
         cache: 'no-store',
         signal: AbortSignal.timeout(30000),
       });
@@ -96,6 +106,7 @@ export async function publishURLRepair({
           software,
           packet,
           preparedPresentation: result.result.presentationReceipt,
+          publicOrigin,
         });
         writeFileSync(
           join(prepared, 'native-integration-report.json'),
@@ -207,7 +218,10 @@ export async function publishURLRepair({
   }
   return finalizePresentationOnly({ software, publicConfig, output, progress });
 }
-export async function runURLRepairCLI({ argv = process.argv.slice(2), publish = publishURLRepair } = {}) {
+export async function runURLRepairCLI({
+  argv = process.argv.slice(2),
+  publish = publishURLRepair,
+} = {}) {
   const [mode, software, config, output, planPath] = argv;
   if (!output)
     throw Error(

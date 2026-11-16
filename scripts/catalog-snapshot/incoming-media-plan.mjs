@@ -15,6 +15,7 @@ import { sourceTypeOf, representationKinds } from '../asset-representations.mjs'
 import { verifySourceFile } from './source-files.mjs';
 import { merkle } from '../delivery/manifest.mjs';
 import { assertReusableIncomingReceipt } from './incoming-reuse.mjs';
+import { brand, publicBrandURL } from '../../src/lib/brand.mjs';
 export const incomingManifestSHA256 = (manifest) =>
   createHash('sha256').update(JSON.stringify(manifest)).digest('hex');
 export const isIncomingMediaPlan = (manifest) => manifest?.status === 'PLANNED_INCOMING_MEDIA';
@@ -50,10 +51,18 @@ export function incomingMediaFiles(manifest) {
       f.name !== basename(f.path) ||
       !f.path.endsWith('.' + (f.kind === 'thumb' ? 'webp' : f.kind)) ||
       f.contentType !== MIME_TYPES[f.kind] ||
-      ![SITE_ORIGIN, '*'].includes(f.expectedCorsOrigin)
+      ![SITE_ORIGIN, brand.origin, '*'].includes(f.expectedCorsOrigin)
     )
       throw Error('Planned media filename, extension, MIME or expected CORS differs');
-    validateAssetUrl(f);
+    // New plans may name the new public host. Reuse the strict existing path,
+    // extension and hash validator on a temporary descriptor only. Source plan
+    // URLs and hashes are never rewritten, and legacy verified receipts retain
+    // their original validator and signed bytes.
+    const legacyContractURL =
+      typeof f.url === 'string' && f.url.startsWith(brand.assetsOrigin + '/')
+        ? 'https://assets.ultraclipart.com' + f.url.slice(brand.assetsOrigin.length)
+        : f.url;
+    validateAssetUrl({ ...f, url: legacyContractURL });
     const keyHash = /\.([a-f0-9]{12,64})\.[a-z]+$/.exec(new URL(f.url).pathname)?.[1];
     if (!keyHash || !f.sha256.startsWith(keyHash))
       throw Error('New incoming media must use its reviewed content hash');
@@ -154,6 +163,9 @@ export function assertIncomingCDNReceipt(manifest, receipt, receiptSHA256) {
     receipt.files.length !== files.size
   )
     throw Error('Exact fresh incoming CDN receipt required');
+  const projected = receipt.publicOrigin !== undefined;
+  if (projected && receipt.publicOrigin !== brand.origin)
+    throw Error('Incoming CDN receipt has an unreviewed public origin');
   const seen = new Set();
   for (const row of receipt.files) {
     const id = assetIdentity(row.assetId, row.kind),
@@ -161,7 +173,17 @@ export function assertIncomingCDNReceipt(manifest, receipt, receiptSHA256) {
     if (!expected || seen.has(id)) throw Error('Unknown or duplicate incoming CDN proof');
     for (const key of ['url', 'assetId', 'kind', 'bytes', 'sha256', 'contentType'])
       assert.equal(row[key], expected[key], 'Incoming CDN ' + key + ' differs');
-    assert.equal(row.corsOrigin, expected.expectedCorsOrigin, 'Incoming CDN CORS differs');
+    if (projected)
+      assert.equal(
+        row.publicUrl,
+        publicBrandURL(expected.url),
+        'Incoming public media URL differs',
+      );
+    const corsOrigin =
+      projected && expected.expectedCorsOrigin !== '*'
+        ? new URL(publicBrandURL(expected.expectedCorsOrigin)).origin
+        : expected.expectedCorsOrigin;
+    assert.equal(row.corsOrigin, corsOrigin, 'Incoming CDN CORS differs');
     seen.add(id);
   }
 }

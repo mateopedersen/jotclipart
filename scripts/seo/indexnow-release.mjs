@@ -13,9 +13,10 @@ import { resolve, join } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { setTimeout as delay } from 'node:timers/promises';
 import { validateIncrementalPlan } from '../delivery/incremental.mjs';
+import { readIndexNowPolicy, assertIndexNowSubmissionEnabled } from './indexnow-policy.mjs';
 
 export const INDEXNOW_ENDPOINT = 'https://api.indexnow.org/indexnow';
-const SITE = 'https://ultraclipart.com';
+const SITE = 'https://jotclipart.com';
 const sha = (text) => createHash('sha256').update(text).digest('hex');
 const decode = (text) =>
   text.replace(
@@ -161,6 +162,8 @@ export async function sendChanges({
   save,
   wait = delay,
 }) {
+  assertIndexNowSubmissionEnabled(config);
+  if (request === globalThis.fetch) assertIndexNowSubmissionEnabled(readIndexNowPolicy());
   const delta = changes(previous, current);
   for (const url of [...delta.updated, ...delta.removed]) canonicalUrl(url);
   const verifiedTargets = new Set();
@@ -336,10 +339,11 @@ export async function runIndexNow({
   controlRevision: requestedControlRevision,
 }) {
   const config = JSON.parse(readFileSync(join(root, 'config/indexnow.json'), 'utf8'));
+  if (send) assertIndexNowSubmissionEnabled(config);
   if (
-    config.host !== 'ultraclipart.com' ||
+    config.host !== 'jotclipart.com' ||
     !/^[a-f0-9]{32}$/.test(config.key) ||
-    config.project !== 'ultraclipart' ||
+    config.project !== 'jotclipart' ||
     !/^[a-f0-9]{32}$/.test(config.accountId)
   )
     throw Error('Invalid site-scoped IndexNow configuration');

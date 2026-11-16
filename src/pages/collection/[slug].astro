@@ -56,7 +56,7 @@ const visibleArtwork = [
 ---
 
 <Layout
-  title={`${title} Clipart Collection`}
+  title={`${title}${/\bClipart$/i.test(title) ? '' : ' Clipart'} Collection`}
   description={summary}
   noindex={items.length === 0}
   image={previews[0]?.webp}

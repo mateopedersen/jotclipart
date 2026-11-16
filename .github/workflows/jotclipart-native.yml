@@ -3,6 +3,7 @@ name: JotClipart native release gates
 on:
   push:
     branches: [main, 'migration/**']
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -10,21 +11,24 @@ permissions:
 
 concurrency:
   group: jotclipart-native-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 env:
   ASTRO_TELEMETRY_DISABLED: '1'
-  BASE_URL: https://migration-preview.jotclipart.pages.dev
+  PLAYWRIGHT_SKIP_BROWSER_GC: '1'
+  BASE_URL: https://preview.jotclipart.com
+  EXPECT_REVISION: ${{ github.event.pull_request.head.sha || github.sha }}
 
 jobs:
   native-source-and-package:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
           persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - uses: pnpm/action-setup@v4
         with:
           version: 11.25.0
@@ -33,6 +37,8 @@ jobs:
           node-version: '24.22.2'
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      - name: Lint preserved legacy and native workflow expressions with the pinned linter
+        run: bash scripts/jotclipart/lint-workflows.sh
       - name: Verify changed code formatting against accepted native source
         run: node scripts/jotclipart/ci-native.mjs format
       - name: Source, signed social originals and all required native invariants
@@ -41,6 +47,8 @@ jobs:
         run: pnpm build
       - name: Verify every exact package byte and actual platform limits
         run: node scripts/jotclipart/ci-native.mjs package
+      - name: Verify the new repository has no old checkout, object-store or compiled-input dependency
+        run: node scripts/jotclipart/verify-independent.mjs
       - name: Preserve bounded structured gate evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -48,6 +56,23 @@ jobs:
           name: jotclipart-native-source-${{ github.sha }}
           path: reports/jotclipart-native-ci/
           retention-days: 3
+
+  art:
+    name: Preserved Python 3.12 source and PDF contracts
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c
+        with:
+          python-version: '3.12'
+      - name: Install the existing pinned art dependencies
+        run: python -m pip install --disable-pip-version-check --requirement scripts/requirements-art.txt
+      - name: Preserve all PDF, image, alpha and source-bound export checks
+        run: python -m unittest discover -s tests -p 'test_*.py'
 
   preview-pin:
     needs: native-source-and-package
@@ -57,6 +82,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - uses: pnpm/action-setup@v4
         with:
           version: 11.25.0
@@ -76,7 +102,7 @@ jobs:
   native-browser:
     needs: preview-pin
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 45
     strategy:
       fail-fast: false
       max-parallel: 3
@@ -93,6 +119,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - uses: pnpm/action-setup@v4
         with:
           version: 11.25.0
@@ -106,7 +133,11 @@ jobs:
           name: jotclipart-preview-pin-${{ github.sha }}
           path: reports/jotclipart-native-browser/
       - name: Actual preview flows with old hosts blocked
+        id: basic
         run: node scripts/jotclipart/ci-browser.mjs browser
+      - name: All workbench commands, export formats, recovery and private portability
+        if: ${{ !cancelled() && steps.basic.outcome != 'skipped' }}
+        run: node scripts/jotclipart/feature-browser.mjs
       - name: Preserve reports and viewport evidence, without original download binaries
         if: always()
         uses: actions/upload-artifact@v4
@@ -119,7 +150,7 @@ jobs:
 
   native-release:
     if: always()
-    needs: [native-source-and-package, preview-pin, native-browser]
+    needs: [native-source-and-package, art, preview-pin, native-browser]
     runs-on: ubuntu-latest
     steps:
       - name: All native gates are mandatory
@@ -127,7 +158,9 @@ jobs:
           SOURCE_RESULT: ${{ needs.native-source-and-package.result }}
           PREVIEW_RESULT: ${{ needs.preview-pin.result }}
           BROWSER_RESULT: ${{ needs.native-browser.result }}
+          ART_RESULT: ${{ needs.art.result }}
         run: |
           test "$SOURCE_RESULT" = success
           test "$PREVIEW_RESULT" = success
           test "$BROWSER_RESULT" = success
+          test "$ART_RESULT" = success

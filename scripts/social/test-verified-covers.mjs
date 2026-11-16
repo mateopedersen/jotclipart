@@ -78,8 +78,12 @@ try {
   assert.throws(() => verifySocialImages({ root: dir }), /font changed/);
   writeFileSync(join(dir, font), fontBytes);
   results.push('changed font byte rejected');
-  const brandPath = 'src/lib/brand.mjs', brandBytes = readFileSync(join(dir, brandPath));
-  writeFileSync(join(dir, brandPath), Buffer.concat([brandBytes, Buffer.from('\n// Changed palette input\n')]));
+  const brandPath = 'src/lib/brand.mjs',
+    brandBytes = readFileSync(join(dir, brandPath));
+  writeFileSync(
+    join(dir, brandPath),
+    Buffer.concat([brandBytes, Buffer.from('\n// Changed palette input\n')]),
+  );
   assert.throws(() => verifySocialImages({ root: dir }), /renderer changed/);
   writeFileSync(join(dir, brandPath), brandBytes);
   results.push('changed brand/palette module rejected');

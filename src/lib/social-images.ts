@@ -26,7 +26,8 @@ function imageType(src: string) {
   return types[extension ?? ''];
 }
 
-/** Hubs have composed covers; artwork and subject pages retain their own original. */
+/** Dedicated pages use reviewed covers. Native catalog responses replace the
+ * source-image fallback with their authenticated, versioned JotClipart cover. */
 export function pageSocialImage(pathname: string, original?: SocialImage): SocialImage {
   const dedicated = pages[pagePath(pathname)];
   if (dedicated) return dedicated;

@@ -1,4 +1,4 @@
-import {loadPresentationSoftware,stagePresentationViews} from './presentation.mjs';
+import { loadPresentationSoftware, stagePresentationViews } from './presentation.mjs';
 // Changed content plus optional bounded discovery HTML preparation.
 // No template compilation, native-media scan or activation.
 import { mkdirSync, writeFileSync, readFileSync, lstatSync, existsSync } from 'node:fs';
@@ -17,6 +17,7 @@ import { refreshDiscoveryViews } from '../../server/catalog-projections/refresh.
 import { captureProductionSnapshot } from '../../server/catalog-snapshot/signed-production-snapshot.mjs';
 import { merkle } from '../delivery/manifest.mjs';
 import { verifySourceFile, verifySourceCapsule } from './source-files.mjs';
+import { assertPublisherTarget } from '../jotclipart/publisher-target.mjs';
 const hash = (b) => createHash('sha256').update(b).digest('hex');
 export async function validateContentPacket(packet) {
   if (
@@ -56,6 +57,7 @@ export async function prepareCatalogContent({
   progress = () => {},
   fetcher = fetch,
   mediaStageReceipt = null,
+  publicOrigin,
 }) {
   if (!(packetBytes instanceof Uint8Array) || packetBytes.length > 32 * 1024 * 1024)
     throw Error('Bounded immutable source packet required');
@@ -63,6 +65,12 @@ export async function prepareCatalogContent({
   if (!output.startsWith(resolve('work') + '/') || existsSync(output))
     throw Error('Separate protected new batch directory required');
   const packet = await validateContentPacket(JSON.parse(Buffer.from(packetBytes)));
+  if (verifier.activeKey === 'catalog/jotclipart/active.json') {
+    const target = assertPublisherTarget(verifier);
+    if (publicOrigin !== undefined && publicOrigin !== target)
+      throw Error('New publisher media verification origin differs from its scoped target');
+    publicOrigin = target;
+  }
   const plannedMedia =
     isIncomingMediaPlan(packet.incomingMediaManifest) &&
     incomingMediaFiles(packet.incomingMediaManifest).size > 0;
@@ -76,13 +84,33 @@ export async function prepareCatalogContent({
     throw Error('Content predecessor changed');
   if (!(await parent.getFacet('collections')).openingIndex)
     throw Error('Verified opening-index bootstrap required before new content');
-  const presentation=software?await loadPresentationSoftware(software,verifier):null;
-  if(!presentation&&((await parent.getFacet('collections')).preparedHTML||(await parent.getFacet('collections')).preparedStudio))throw Error('Installed presentation software required for this predecessor');
-  const preparePresentation=presentation?async ({context,bucket})=>{
-    const work=()=>stagePresentationViews({context,bucket,...presentation,allowFixture:true,progress});
-    return typeof parentBucket.withoutDiskCacheAdmissions==='function'?parentBucket.withoutDiskCacheAdmissions(work):work();
-  }:undefined;
-  const media = await verifyIncomingMedia(packet.incomingMediaManifest, { fetcher, progress }),
+  const presentation = software ? await loadPresentationSoftware(software, verifier) : null;
+  if (
+    !presentation &&
+    ((await parent.getFacet('collections')).preparedHTML ||
+      (await parent.getFacet('collections')).preparedStudio)
+  )
+    throw Error('Installed presentation software required for this predecessor');
+  const preparePresentation = presentation
+    ? async ({ context, bucket }) => {
+        const work = () =>
+          stagePresentationViews({
+            context,
+            bucket,
+            ...presentation,
+            allowFixture: true,
+            progress,
+          });
+        return typeof parentBucket.withoutDiskCacheAdmissions === 'function'
+          ? parentBucket.withoutDiskCacheAdmissions(work)
+          : work();
+      }
+    : undefined;
+  const media = await verifyIncomingMedia(packet.incomingMediaManifest, {
+      fetcher,
+      progress,
+      publicOrigin,
+    }),
     mediaBytes = Buffer.from(JSON.stringify(media)),
     source = {
       status: 'CURRENT_SOURCE_AND_EDITORIAL_VERIFIED_NOT_A_DEPLOYMENT',
@@ -93,10 +121,18 @@ export async function prepareCatalogContent({
       parentSnapshotSHA256: parent.rootSHA256,
       packetSHA256: hash(packetBytes),
       mediaReceiptSHA256: hash(mediaBytes),
+      ...(publicOrigin !== undefined ? { publicOrigin } : {}),
       ...(plannedMedia ? { incomingMediaStageReceiptSHA256: hash(mediaStageBytes) } : {}),
       changedArtworks: packet.changes.length,
       changedTopics: packet.topicChanges.length,
-      ...(presentation?{presentationSoftware:{abiSHA256:presentation.rendererSHA256,bundleSHA256:presentation.bundleSHA256}}:{}),
+      ...(presentation
+        ? {
+            presentationSoftware: {
+              abiSHA256: presentation.rendererSHA256,
+              bundleSHA256: presentation.bundleSHA256,
+            },
+          }
+        : {}),
       sourceHashes: Object.fromEntries(packet.sourceFiles.map((f) => [resolve(f.path), f.sha256])),
     },
     sourceBytes = Buffer.from(JSON.stringify(source)),
@@ -152,7 +188,8 @@ export async function prepareCatalogContent({
         typeof value === 'string' || value instanceof Uint8Array ? value : JSON.stringify(value),
         { flag: 'wx' },
       );
-  if(result.presentationReceipt)write('prepared-presentation-receipt.json',result.presentationReceipt);
+  if (result.presentationReceipt)
+    write('prepared-presentation-receipt.json', result.presentationReceipt);
   write('packet.json', packetBytes);
   write('parent-snapshot.json', JSON.stringify(parent.snapshot));
   write('snapshot-candidate.json', result.candidate);

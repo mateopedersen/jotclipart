@@ -17,13 +17,18 @@ export async function fallbackFetch(request, env, execution, reviewedPagePolicy)
   if (html) {
     const csp = reviewedPagePolicy?.['Content-Security-Policy'];
     const script = /(?:^|;\s*)script-src\s+([^;]+)/.exec(csp ?? '');
-    if (!script || !script[1].split(/\s+/).includes("'self'") || script[1].includes("'unsafe-inline'"))
+    if (
+      !script ||
+      !script[1].split(/\s+/).includes("'self'") ||
+      script[1].includes("'unsafe-inline'")
+    )
       throw Error('Reviewed fallback page policy required');
     for (const [name, value] of Object.entries(reviewedPagePolicy)) {
       if (name.toLowerCase() === 'cache-control' && headers.has(name)) continue;
       headers.set(name, value);
     }
-    const transfer = url.pathname === '/move-your-work' || url.pathname.startsWith('/move-your-work/');
+    const transfer =
+      url.pathname === '/move-your-work' || url.pathname.startsWith('/move-your-work/');
     if (transfer) {
       headers.set('Content-Security-Policy', transferCSP);
       headers.set('Cache-Control', 'private, no-store, max-age=0');

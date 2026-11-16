@@ -27,6 +27,7 @@ import {
 } from './incoming-media-plan.mjs';
 import { sharedContentBaseline } from './legacy-source-guard.mjs';
 import { reverifyIncomingBeforeSeal } from './incoming-media-readback.mjs';
+import { assertPublisherTarget, assertPublisherSoftware } from '../jotclipart/publisher-target.mjs';
 const hash = (b) => createHash('sha256').update(b).digest('hex');
 export async function withCatalogReader({ directory, verifier, parentSnapshotSHA256 }, operate) {
   return withPrivateCatalogSession(
@@ -75,14 +76,17 @@ export async function publishReviewedCapsule({
 }) {
   if (prepareReader && activate) throw Error('Private test transport cannot activate production');
   const reader = prepareReader ?? withCatalogReader;
-  const publicOrigin = catalogPublicOrigin(publicConfig.publicOrigin ?? brand.origin);
+  const publicOrigin = catalogPublicOrigin(assertPublisherTarget(publicConfig));
   const started = Date.now(),
     sourceCommit = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim(),
     capsuleBytes = execFileSync('git', ['show', sourceCommit + ':' + capsulePath], {
       maxBuffer: 32 * 1024 * 1024,
     }),
     fields = JSON.parse(capsuleBytes),
-    code = JSON.parse(readFileSync(join(software, 'runtime/software-report.json'))),
+    code = assertPublisherSoftware(
+      JSON.parse(readFileSync(join(software, 'runtime/software-report.json'))),
+      publicConfig,
+    ),
     verifier = {
       ...publicConfig,
       abiSHA256: code.abiSHA256,
@@ -176,6 +180,7 @@ export async function publishReviewedCapsule({
         output: join(output, 'prepared'),
         mediaStageReceipt,
         progress,
+        publicOrigin,
       });
       const native = await verifyNativeContent({
         candidate: result.result.candidate,
@@ -184,6 +189,7 @@ export async function publishReviewedCapsule({
         software,
         packet,
         preparedPresentation: result.result.presentationReceipt,
+        publicOrigin,
       });
       writeFileSync(
         join(result.output, 'native-integration-report.json'),

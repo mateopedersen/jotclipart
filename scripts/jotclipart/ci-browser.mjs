@@ -7,12 +7,14 @@ import assert from 'node:assert/strict';
 import { chromium, firefox, webkit, expect } from '@playwright/test';
 
 const mode = process.argv[2] ?? 'browser',
-  base = process.env.BASE_URL ?? 'https://migration-preview.jotclipart.pages.dev';
+  base = process.env.BASE_URL ?? 'https://preview.jotclipart.com';
 const wanted = process.env.EXPECT_REVISION ?? process.env.GITHUB_SHA;
 assert(/^[a-f0-9]{40}$/.test(wanted ?? ''), 'A real source commit is required');
 const origin = new URL(base).origin;
 assert(
-  base === origin && /^https:\/\/(?:[a-z0-9-]+\.)?jotclipart\.pages\.dev$/.test(origin),
+  base === origin &&
+    (origin === 'https://preview.jotclipart.com' ||
+      /^https:\/\/(?:[a-z0-9-]+\.)?jotclipart\.pages\.dev$/.test(origin)),
   'Only the independent JotClipart Pages preview is allowed',
 );
 const rootDir = resolve('reports/jotclipart-native-browser');
@@ -36,19 +38,19 @@ const oldHost = (host) =>
   host.endsWith('.ultraclipart.pages.dev') ||
   (/ultraclipart/i.test(host) && host.endsWith('.workers.dev'));
 let sourceGETs = 0;
-async function get(path) {
+async function get(path, timeout = 60000) {
   await delay(40);
   sourceGETs++;
   const response = await fetch(origin + path, {
     redirect: 'manual',
     headers: { 'Cache-Control': 'no-cache' },
-    signal: AbortSignal.timeout(60000),
+    signal: AbortSignal.timeout(Math.max(1, Math.min(60000, timeout))),
   });
   assert.equal(response.status, 200, 'Source GET ' + path);
   return response;
 }
-async function release() {
-  const r = await get('/delivery-release.json');
+async function release(timeout = 60000) {
+  const r = await get('/delivery-release.json', timeout);
   const body = await r.json();
   assert.equal(body.controlRevision, wanted, 'Preview has a different software commit');
   assert(/^[a-f0-9]{64}$/.test(body.verifiedRoot));
@@ -70,14 +72,14 @@ async function pinPreview() {
   let before, last;
   while (Date.now() < deadline) {
     try {
-      before = await release();
+      before = await release(deadline - Date.now());
       break;
     } catch (error) {
       last = error.message;
       console.log(
         JSON.stringify({ phase: 'waiting-for-owner-preview-deployment', expectedCommit: wanted }),
       );
-      await delay(15000);
+      await delay(Math.max(0, Math.min(15000, deadline - Date.now())));
     }
   }
   assert(before, 'Matching preview deployment did not arrive within 20 minutes: ' + last);

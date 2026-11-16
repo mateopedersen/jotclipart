@@ -27,6 +27,7 @@ export async function snapshotHTMLResponse({
       url.protocol === 'https:' &&
       !url.port &&
       (url.hostname === 'jotclipart.com' ||
+        url.hostname === 'preview.jotclipart.com' ||
         url.hostname === 'jotclipart.pages.dev' ||
         /^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.jotclipart\.pages\.dev$/.test(url.hostname)),
     route =
@@ -49,15 +50,18 @@ export async function snapshotHTMLResponse({
   // parameters; interactive search reads the URL on the client. Keep the URL
   // untouched for visitors while avoiding unbounded copies in the cache.
   url.search = '';
+  // Allowed origins all use HTTPS without a port, so the reviewed hostname is
+  // also an exact origin namespace. Isolate caches, render flights and ETags
+  // between production, the custom preview and individual Pages deployments.
   const routeSHA256 = [
     ...new Uint8Array(
-      await crypto.subtle.digest('SHA-256', new TextEncoder().encode(url.pathname + url.search)),
+      await crypto.subtle.digest('SHA-256', new TextEncoder().encode(url.origin + url.pathname)),
     ),
   ]
     .map((n) => n.toString(16).padStart(2, '0'))
     .join('');
   const key = new Request(
-      `https://jotclipart-snapshot-cache.invalid/${rendererSHA256}/${context.rootSHA256}${url.pathname}${url.search}`,
+      `https://jotclipart-snapshot-cache.invalid/${url.hostname}/${rendererSHA256}/${context.rootSHA256}${url.pathname}`,
     ),
     etag = `"uc-${rendererSHA256}-${context.rootSHA256}-${routeSHA256}"`;
   let response = cache ? await cache.match(key) : undefined;

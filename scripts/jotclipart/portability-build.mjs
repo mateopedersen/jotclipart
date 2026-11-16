@@ -15,8 +15,15 @@ const html = await readFile(htmlPath, 'utf8');
 const header = `<header><a href="https://jotclipart.com/" aria-label="JotClipart home"><img src="data:image/webp;base64,${logo.toString('base64')}" alt="JotClipart" width="1200" height="314" data-logo-sha256="${logoSHA}"></a></header>`;
 if ((html.match(/<header>[\s\S]*?<\/header>/g) || []).length !== 1)
   throw new Error('Expected one standalone transfer helper header');
-await writeFile(htmlPath, html.replace(/<header>[\s\S]*?<\/header>/, header)
-  .replace('header svg{width:34px;height:38px}', 'header img{display:block;width:min(236px,70vw);height:auto}'));
+await writeFile(
+  htmlPath,
+  html
+    .replace(/<header>[\s\S]*?<\/header>/, header)
+    .replace(
+      'header svg{width:34px;height:38px}',
+      'header img{display:block;width:min(236px,70vw);height:auto}',
+    ),
+);
 
 await build({
   entryPoints: ['scripts/jotclipart/portability-source.mjs'],

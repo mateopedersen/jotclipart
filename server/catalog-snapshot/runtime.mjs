@@ -1,3 +1,4 @@
+import { createCatalogOgService, fetchOgRenderService } from '../jotclipart/og-runtime.mjs';
 // Production adapter: one authenticated snapshot, budget, cache and fallback.
 import { captureProductionSnapshot } from './signed-production-snapshot.mjs';
 import { requestBucket } from './request-bucket.mjs';
@@ -13,6 +14,7 @@ export function createSnapshotRuntime({
   softwareRevision,
   policy,
   redirects = {},
+  ogIdentity,
 }) {
   if (
     !verifier?.publicKey ||
@@ -33,6 +35,12 @@ export function createSnapshotRuntime({
         renderers,
         softwareRevision,
         redirects,
+        ogService: ogIdentity
+          ? createCatalogOgService({
+              identity: ogIdentity,
+              render: (source) => fetchOgRenderService(env.OG_RENDERER, source, ogIdentity),
+            })
+          : undefined,
         rendererSHA256: verifier.abiSHA256,
         cache: globalThis.caches?.default,
         defer: execution?.waitUntil ? (task) => execution.waitUntil(task) : undefined,

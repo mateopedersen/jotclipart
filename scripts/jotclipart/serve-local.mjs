@@ -66,7 +66,10 @@ export async function createLocalPreview({
   metadata = resolve(root, '../captured-catalog'),
   cache = true,
   workerPath,
+  ogBinding,
 } = {}) {
+  if (ogBinding && typeof ogBinding.fetch !== 'function')
+    throw Error('Explicit local OG service adapter required');
   root = resolve(root);
   metadata = resolve(metadata);
   const output = await realpath(resolve(root, 'dist'));
@@ -80,6 +83,7 @@ export async function createLocalPreview({
     pathToFileURL(workerFile).href + '?local-preview=' + mtime
   );
   const env = {
+    ...(ogBinding ? { OG_RENDERER: ogBinding } : {}),
     CATALOG_PAGES: {
       async get(key) {
         metrics.reads++;

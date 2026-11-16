@@ -442,7 +442,7 @@ export function createSnapshotSearchApi({
                 }
                 if (
                   url.protocol !== 'https:' ||
-                  url.hostname !== 'assets.ultraclipart.com' ||
+                  !['assets.ultraclipart.com', 'assets.jotclipart.com'].includes(url.hostname) ||
                   url.username ||
                   url.password ||
                   url.port ||

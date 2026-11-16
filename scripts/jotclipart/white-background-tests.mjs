@@ -5,9 +5,13 @@ import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { brand } from '../../src/lib/brand.mjs';
 
-const postcssPackage = readdirSync('node_modules/.pnpm').find((name) => name.startsWith('postcss@'));
+const postcssPackage = readdirSync('node_modules/.pnpm').find((name) =>
+  name.startsWith('postcss@'),
+);
 const { default: postcss } = await import(
-  pathToFileURL(resolve('node_modules/.pnpm', postcssPackage, 'node_modules/postcss/lib/postcss.js'))
+  pathToFileURL(
+    resolve('node_modules/.pnpm', postcssPackage, 'node_modules/postcss/lib/postcss.js'),
+  )
 );
 const read = (file) => readFileSync(file, 'utf8');
 function rules(file) {
@@ -55,7 +59,8 @@ test('broad catalog and footer backgrounds are white', () => {
     ['src/styles/trust-pages.css', '.trust-hero'],
     ['src/components/HomeBenefits.astro', '.home-benefits'],
     ['src/components/HomeBenefits.astro', '.home-benefit-art'],
-  ]) white(file, selector);
+  ])
+    white(file, selector);
 });
 
 test('Studio workspace and decorative invitation panels use white surfaces', () => {
@@ -66,7 +71,11 @@ test('Studio workspace and decorative invitation panels use white surfaces', () 
   white('src/components/Editor.astro', '.uc-stage');
   white('src/components/Editor.astro', '.uc-stage.uc-paper-mode');
   white('src/components/CreateInvitation.astro', '.creative-studio-scene');
-  for (const selector of ['.seasonal-scene', '.seasonal-autumn .seasonal-scene', '.seasonal-love .seasonal-scene']) {
+  for (const selector of [
+    '.seasonal-scene',
+    '.seasonal-autumn .seasonal-scene',
+    '.seasonal-love .seasonal-scene',
+  ]) {
     white('src/components/SeasonalShowcase.astro', selector);
   }
   white('src/components/AiInvitation.astro', '.ai-invitation-art');
@@ -75,20 +84,26 @@ test('Studio workspace and decorative invitation panels use white surfaces', () 
 
 test('soft green is not used as a broad page or section background', () => {
   const violations = [];
-  const broad = /(?:^|[\s.>])(?:body|main)|(?:page|hero|section|workspace|panel|shell|container|dialog|inspector|scene|visual)(?:$|[\s.:_-])/i;
-  const permittedSmall = /:hover|:focus|:active|::backdrop|aria-|button|btn|link|badge|icon|toggle|chip|swatch|check|notice|warning|status|alert|busy|error|canvas|skeleton|logo|shadow|paper|window|house|roof|pencil|ribbon|stamp|tag|dot|orb|mark|action/i;
+  const broad =
+    /(?:^|[\s.>])(?:body|main)|(?:page|hero|section|workspace|panel|shell|container|dialog|inspector|scene|visual)(?:$|[\s.:_-])/i;
+  const permittedSmall =
+    /:hover|:focus|:active|::backdrop|aria-|button|btn|link|badge|icon|toggle|chip|swatch|check|notice|warning|status|alert|busy|error|canvas|skeleton|logo|shadow|paper|window|house|roof|pencil|ribbon|stamp|tag|dot|orb|mark|action/i;
   for (const directory of ['src/styles', 'src/components']) {
     for (const name of readdirSync(directory)) {
       if (!/\.(css|astro)$/.test(name)) continue;
       const file = `${directory}/${name}`;
-      for (const root of rules(file)) root.walkDecls((declaration) => {
-        const selector = declaration.parent.selector || '';
-        if (/^background(?:-color|-image)?$/.test(declaration.prop) &&
+      for (const root of rules(file))
+        root.walkDecls((declaration) => {
+          const selector = declaration.parent.selector || '';
+          if (
+            /^background(?:-color|-image)?$/.test(declaration.prop) &&
             /var\(--brand-soft\)|#(?:f4faf6|d8f3dc)\b/i.test(declaration.value) &&
-            broad.test(selector) && !permittedSmall.test(selector)) {
-          violations.push(`${file}: ${selector}: ${declaration.value}`);
-        }
-      });
+            broad.test(selector) &&
+            !permittedSmall.test(selector)
+          ) {
+            violations.push(`${file}: ${selector}: ${declaration.value}`);
+          }
+        });
     }
   }
   assert.deepEqual(violations, []);
@@ -98,11 +113,20 @@ test('user canvas choices and warning/error visual distinction remain available'
   const editor = read('src/components/Editor.astro');
   assert.match(editor, /data-bg="#e8f1fa" style="background:#e8f1fa"/);
   assert.match(editor, /data-bg="#edf1e7" style="background:#edf1e7"/);
-  assert(values('src/components/Editor.astro', ".uc-notice[data-error='true']", 'background')
-    .every((value) => value === '#fff0e9'));
-  assert(values('src/components/Editor.astro', ".uc-notice[data-error='true']", 'color')
-    .every((value) => value === '#792300'));
-  assert.match(read('src/styles/studio-next.css'), /background-image:\s*\n?\s*linear-gradient\(45deg/);
+  assert(
+    values('src/components/Editor.astro', ".uc-notice[data-error='true']", 'background').every(
+      (value) => value === '#fff0e9',
+    ),
+  );
+  assert(
+    values('src/components/Editor.astro', ".uc-notice[data-error='true']", 'color').every(
+      (value) => value === '#792300',
+    ),
+  );
+  assert.match(
+    read('src/styles/studio-next.css'),
+    /background-image:\s*\n?\s*linear-gradient\(45deg/,
+  );
 });
 
 test('the standalone transfer help page follows the white background policy', () => {

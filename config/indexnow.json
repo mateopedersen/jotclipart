@@ -1,6 +1,8 @@
 {
   "host": "jotclipart.com",
   "project": "jotclipart",
+  "submissionEnabled": false,
+  "submissionStatus": "OWNER_DEFERRED_2026_11_16",
   "accountId": "48c779c8eaa80234e0bb9d57f96e588b",
   "key": "e218a1ebcbe6eec5902fa985d920caba"
 }

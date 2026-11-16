@@ -66,11 +66,18 @@ export function auditOrigin(value) {
       url.protocol === 'https:' &&
       !url.port &&
       (host === 'jotclipart.com' ||
+        host === 'preview.jotclipart.com' ||
         host === 'jotclipart.pages.dev' ||
         /^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.jotclipart\.pages\.dev$/.test(host)),
     'INVALID_AUDIT_ORIGIN',
   );
   return url.origin;
+}
+function auditMode(origin, mode = 'production') {
+  must(['production', 'preview'].includes(mode), 'INVALID_INDEXABILITY_MODE');
+  auditOrigin(origin);
+  must(mode !== 'preview' || origin !== brand.origin, 'INVALID_PREVIEW_POLICY_ORIGIN');
+  return mode;
 }
 function normalizedPath(value) {
   must(
@@ -560,7 +567,75 @@ function validateCSP(doc, headers) {
     must(authorized.has("'sha256-" + digest + "'"), 'INLINE_CSP_HASH_DIFFERS');
   }
 }
-export function validateCanonicalHTML({ html, headers, expected, origin, root, revision }) {
+function catalogHeading(expected) {
+  return (
+    expected.displayTitle +
+    (expected.kind === 'collection'
+      ? (/\bClipart$/i.test(expected.displayTitle) ? '' : ' Clipart') + ' Collection'
+      : '')
+  );
+}
+function validateCatalogOG(doc, expected) {
+  const image = oneMeta(doc, 'og:image', true);
+  let url;
+  try {
+    url = new URL(image);
+  } catch {
+    throw new AuditFault('INVALID_CATALOG_OG_URL');
+  }
+  const prefix = `/og/catalog/${expected.kind}/${encodeURIComponent(expected.id)}/`;
+  must(
+    url.origin === brand.origin &&
+      !url.port &&
+      !url.username &&
+      !url.password &&
+      !url.search &&
+      !url.hash &&
+      url.href === image &&
+      url.pathname.startsWith(prefix) &&
+      /^[a-f0-9]{64}\.png$/.test(url.pathname.slice(prefix.length)),
+    'CATALOG_OG_IDENTITY_DIFFERS',
+  );
+  equalText(
+    oneMeta(doc, 'og:image:secure_url', true),
+    image,
+    'CATALOG_OG_URL_DIFFERS',
+    'og:image:secure_url',
+  );
+  equalText(oneMeta(doc, 'twitter:image'), image, 'CATALOG_OG_URL_DIFFERS', 'twitter:image');
+  equalText(
+    oneMeta(doc, 'og:image:type', true),
+    'image/png',
+    'CATALOG_OG_FORMAT_DIFFERS',
+    'og:image:type',
+  );
+  equalText(
+    oneMeta(doc, 'og:image:width', true),
+    '1200',
+    'CATALOG_OG_SIZE_DIFFERS',
+    'og:image:width',
+  );
+  equalText(
+    oneMeta(doc, 'og:image:height', true),
+    '630',
+    'CATALOG_OG_SIZE_DIFFERS',
+    'og:image:height',
+  );
+  const alt = catalogHeading(expected) + ' — JotClipart';
+  for (const field of ['og:image:alt', 'twitter:image:alt'])
+    equalText(oneMeta(doc, field, field.startsWith('og:')), alt, 'CATALOG_OG_ALT_DIFFERS', field);
+  return { kind: expected.kind, id: expected.id, digest: url.pathname.slice(prefix.length, -4) };
+}
+export function validateCanonicalHTML({
+  html,
+  headers,
+  expected,
+  origin,
+  root,
+  revision,
+  mode = 'production',
+}) {
+  mode = auditMode(origin, mode);
   must(
     headers.get('content-type')?.split(';')[0].trim().toLowerCase() === 'text/html',
     'WRONG_HTML_MIME',
@@ -575,13 +650,13 @@ export function validateCanonicalHTML({ html, headers, expected, origin, root, r
   equalText(canonical[0].href, expected.newCanonical, 'CANONICAL_DIFFERS', 'canonical');
   equalText(oneMeta(doc, 'build-revision'), revision, 'PAGE_REVISION_DIFFERS', 'build-revision');
   const robots = [
-    headers.get('x-robots-tag') ?? '',
     ...doc.meta
       .filter((item) => ['robots', 'googlebot', 'bingbot'].includes(item.name?.toLowerCase()))
       .map((item) => item.content ?? ''),
   ];
   must(
-    robots.every((value) => !/\b(?:noindex|none)\b/i.test(value)),
+    robots.every((value) => !/\b(?:noindex|none)\b/i.test(value)) &&
+      (mode === 'preview' || !/\b(?:noindex|none)\b/i.test(headers.get('x-robots-tag') ?? '')),
     'INDEXABLE_PAGE_NOINDEX',
   );
   validateCSP(doc, headers);
@@ -607,13 +682,12 @@ export function validateCanonicalHTML({ html, headers, expected, origin, root, r
     'site-brand',
     'resource-origins',
   ];
+  if (mode === 'preview' && /\b(?:noindex|none)\b/i.test(headers.get('x-robots-tag') ?? ''))
+    checks.push('preview-transport-noindex');
   if (expected.kind === 'page') return { checks };
   must(doc.h1.length === 1 && doc.titles.length === 1, 'TITLE_CARDINALITY');
   equalText(headingText(doc.h1[0]), headingText(expected.displayTitle), 'H1_DIFFERS', 'h1');
-  const title =
-    expected.displayTitle +
-    (expected.kind === 'collection' ? ' Clipart Collection' : '') +
-    ' | JotClipart';
+  const title = catalogHeading(expected) + ' | JotClipart';
   for (const [field, value] of [
     ['title', doc.titles[0]],
     ['og:title', oneMeta(doc, 'og:title', true)],
@@ -635,6 +709,8 @@ export function validateCanonicalHTML({ html, headers, expected, origin, root, r
   ])
     equalText(textHash(value), expected.descriptionSHA256, 'DESCRIPTION_DIFFERS', field);
   checks.push('Free-H1', 'SEO-titles', 'source-description');
+  const og = validateCatalogOG(doc, expected);
+  checks.push('new-branded-OG-identity', 'OG-PNG1200x630', 'OG-secure-Twitter-URL', 'OG-title-ALT');
   const nodes = schemaNodes(doc);
   for (const node of nodes.filter((node) => hasType(node, 'BreadcrumbList'))) {
     for (const item of node.itemListElement ?? [])
@@ -675,13 +751,6 @@ export function validateCanonicalHTML({ html, headers, expected, origin, root, r
     must(hero.length === 1, 'PRIMARY_IMAGE_CARDINALITY');
     exactAsset(hero[0].attrs.src, expected.assets.webp, 'primary-image-src');
     equalText(textHash(hero[0].attrs.alt), expected.altSHA256, 'ALT_DIFFERS', 'primary-image-alt');
-    for (const field of ['og:image:alt', 'twitter:image:alt'])
-      equalText(
-        textHash(oneMeta(doc, field, field.startsWith('og:'))),
-        expected.altSHA256,
-        'ALT_DIFFERS',
-        field,
-      );
     for (const role of ['webp', 'pdf'])
       must(
         doc.anchors.some((link) => {
@@ -765,7 +834,7 @@ export function validateCanonicalHTML({ html, headers, expected, origin, root, r
       checks.push('collection-schema-name');
     }
   }
-  return { checks };
+  return { checks, og };
 }
 
 export function createRateLimiter({
@@ -998,6 +1067,7 @@ async function restoreLedger(file, contract, jobs) {
 /** Default use is the CLI dry run. Actual network execution requires --run. */
 export async function runHttpAudit(options) {
   const origin = auditOrigin(options.origin);
+  const mode = auditMode(origin, options.mode);
   must(SHA1.test(options.expectedControlRevision ?? ''), 'EXPECTED_CONTROL_REVISION_REQUIRED');
   const input = await loadHttpAuditInputs(options);
   const concurrency = options.concurrency ?? 8;
@@ -1005,9 +1075,11 @@ export async function runHttpAudit(options) {
   const rps = options.requestsPerSecond ?? 40;
   must(Number.isInteger(rps) && rps >= 1 && rps <= 40, 'RATE_BOUND');
   const policy = {
-    version: 'jotclipart-http-acceptance-v1',
+    version: 'jotclipart-http-acceptance-v2',
     toolSHA256: sha(await fsp.readFile(TOOL_FILE)),
     origin,
+    mode,
+    previewTransportNoindexAllowed: mode === 'preview',
     auditSHA256: input.auditSHA256,
     root: input.root,
     revision: input.revision,
@@ -1148,6 +1220,7 @@ export async function runHttpAudit(options) {
         origin,
         root: input.root,
         revision: input.revision,
+        mode,
       });
       return {
         ok: true,
@@ -1159,6 +1232,7 @@ export async function runHttpAudit(options) {
         totalMs: response.totalMs,
         cache: response.headers.get('x-uc-html-cache'),
         checks: checked.checks,
+        ...(checked.og ? { og: checked.og } : {}),
       };
     }
     if (job.kind === 'negative') {
@@ -1200,6 +1274,7 @@ export async function runHttpAudit(options) {
       origin,
       root: input.root,
       revision: input.revision,
+      mode,
     });
     return {
       ok: true,
@@ -1212,6 +1287,7 @@ export async function runHttpAudit(options) {
       sha256: followed.sha256,
       attempts: response.attempts + followed.attempts,
       checks: checked.checks,
+      ...(checked.og ? { og: checked.og } : {}),
     };
   }
   try {
@@ -1313,6 +1389,12 @@ export async function runHttpAudit(options) {
       },
       declaredDownloadWildcardEnumerated: false,
       mediaBodiesDownloaded: 0,
+      ogImageBodiesDownloaded: 0,
+      productionHTTPIndexabilityVerified:
+        mode === 'production' &&
+        origin === brand.origin &&
+        status === 'HTTP_AUDIT_PASSED' &&
+        options.fetcher === undefined,
       scope:
         'Pinned canonical HTML, concrete legacy paths with query preservation and one-hop target validation, and five unknown-route negatives. Separate browser and full asset acceptance gates remain.',
       at: new Date().toISOString(),
@@ -1369,6 +1451,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1]
       'expected-root': { type: 'string' },
       'expected-control-revision': { type: 'string' },
       origin: { type: 'string' },
+      mode: { type: 'string' },
       output: { type: 'string' },
       run: { type: 'boolean' },
       'dry-run': { type: 'boolean' },
@@ -1386,6 +1469,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1]
     expectedRoot: values['expected-root'],
     expectedControlRevision: values['expected-control-revision'],
     origin: values.origin,
+    mode: values.mode,
     output: values.output,
     dryRun: !values.run || values['dry-run'],
     maxJobs: values['max-jobs'] === undefined ? Infinity : Number(values['max-jobs']),

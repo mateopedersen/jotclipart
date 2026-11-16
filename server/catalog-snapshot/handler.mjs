@@ -1,3 +1,9 @@
+import {
+  catalogOgRoute,
+  catalogOgSource,
+  readCatalogOgSource,
+  applyCatalogOgMetadata,
+} from '../jotclipart/og-catalog-source.mjs';
 import { teacherArtworkIDs } from '../../src/lib/teacher-resources.ts';
 import { auxiliaryRoutes } from './auxiliary-routes.mjs';
 import { resolvePublicArtworkRoute } from './public-artwork-routes.mjs';
@@ -55,6 +61,7 @@ export function createCatalogHandler({
   rendererSHA256,
   validateHTML,
   defer,
+  ogService,
 }) {
   if (typeof capture !== 'function' || !bucket) throw Error('Captured catalog provider required');
   const { render: renderArtwork, css: artCSS, scripts: artScripts } = renderers.art,
@@ -87,6 +94,7 @@ export function createCatalogHandler({
         path,
       ),
       kind = paths[path],
+      ogRoute = ogService ? catalogOgRoute(path) : undefined,
       siteDirectory = /^\/search-data\/([a-f0-9]{64})\/(?:site|navigation)\.json$/.exec(path);
     if (request.method === 'GET' || request.method === 'HEAD') {
       if (redirects[path]) {
@@ -127,7 +135,8 @@ export function createCatalogHandler({
         '/category-search/current.json',
         '/collection-feed.json',
       ].includes(path);
-    if (!art && !topic && !cluster && !xml && !kind && path !== '/' && !apiPath) return null;
+    if (!art && !topic && !cluster && !xml && !kind && path !== '/' && !apiPath && !ogRoute)
+      return null;
     if (
       request.method !== 'GET' &&
       request.method !== 'HEAD' &&
@@ -168,6 +177,23 @@ export function createCatalogHandler({
         defer,
         ...uiProviders,
       });
+      if (ogRoute) {
+        const source = await readCatalogOgSource({
+          bucket,
+          context,
+          ...ogRoute,
+          allowFixture: allowPrivateFixture,
+        });
+        if (!source || (await ogService.descriptor(source)).digest !== ogRoute.digest)
+          return missing();
+        const image = await ogService.image(request, source, { cache, defer });
+        const headers = new Headers(image.headers);
+        headers.set('x-uc-snapshot', context.rootSHA256);
+        return new Response(request.method === 'HEAD' ? null : image.body, {
+          status: image.status,
+          headers,
+        });
+      }
       if (
         xml &&
         path === '/sitemap-images.xml' &&
@@ -405,6 +431,27 @@ export function createCatalogHandler({
             }
           }
           if (html !== undefined) {
+            if (ogService && (art || topic || cluster)) {
+              const ogKind = art
+                ? art[1] === 'art'
+                  ? 'art'
+                  : 'editor'
+                : topic
+                  ? 'topic'
+                  : 'collection';
+              const ogId = art ? (resolvedArtwork?.id ?? art[2]) : (topic?.[1] ?? cluster[1]);
+              const source = state
+                ? await catalogOgSource({ kind: ogKind, id: ogId, state, context })
+                : await readCatalogOgSource({
+                    bucket,
+                    context,
+                    kind: ogKind,
+                    id: ogId,
+                    allowFixture: allowPrivateFixture,
+                  });
+              if (!source) throw Error('Missing authenticated page OG source');
+              html = applyCatalogOgMetadata(html, await ogService.descriptor(source));
+            }
             html = preloadDocumentModules(html, softwareRevision, renderers.moduleImports);
             if (publicNavigationDocument(path))
               html = html.replace(

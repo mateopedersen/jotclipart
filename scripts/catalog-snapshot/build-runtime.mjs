@@ -205,6 +205,18 @@ const presentation = {
   sha256: presentationSHA256,
   bytes: presentationBytes.length,
 };
+const ogWorkerReportPath = join(dir, 'og-worker/og-worker-report.json');
+const ogWorker = existsSync(ogWorkerReportPath)
+  ? JSON.parse(readFileSync(ogWorkerReportPath))
+  : undefined;
+if (ogWorker) {
+  for (const [file, digest] of Object.entries(ogWorker.sourceInputs)) {
+    const actual = sha(readFileSync(resolve(root, file)));
+    if (actual !== digest) throw Error('OG source changed after renderer build');
+    softwareInputs.set(file, digest);
+  }
+  softwareInputs.set(ogWorkerReportPath, sha(readFileSync(ogWorkerReportPath)));
+}
 // Hash the actual dependency graph before injecting its own ABI identity.
 const probe = await build({
   stdin: {
@@ -240,7 +252,7 @@ writeFileSync(join(out, 'renderers-entry.mjs'), shared + 'export{renderers};');
 const entry = join(out, 'entry.mjs');
 writeFileSync(
   entry,
-  `${runtimeImport}\nimport{fallbackFetch}from${JSON.stringify(resolve('server/jotclipart/fallback.mjs'))};\n${shared}\nconst verifier={...${config},publicKey:Uint8Array.from(${JSON.stringify([...Buffer.from(cfg.publicKeyHex, 'hex')])}),abiSHA256:${JSON.stringify(abiSHA256)}};const catalog=createSnapshotRuntime({renderers,verifier,softwareRevision:${JSON.stringify(revision)},policy:${JSON.stringify(policy)},redirects:${JSON.stringify(JSON.parse(readFileSync('config/jotclipart-legacy-routes.json')))}});const immutableURLs=new Set(${JSON.stringify([...clientAssets.keys()])});export default{async fetch(request,env,ctx){const path=new URL(request.url).pathname;if(path.startsWith('/api/ai/'))return handleAi(request,env,ctx);if(path.startsWith('/api/share')||path.startsWith('/share/'))return handleShare(request,env,ctx);const response=await catalog(request,env,ctx);return response??immutableSoftwareAssetResponse(request,staticNavigationPolicy(await fallbackFetch(request,env,ctx,${JSON.stringify(policy.page)}),${JSON.stringify("'sha256-" + createHash('sha256').update(siteNavigationScript).digest('base64') + "'")}),immutableURLs)}};`,
+  `${runtimeImport}\nimport{fallbackFetch}from${JSON.stringify(resolve('server/jotclipart/fallback.mjs'))};\n${shared}\nconst verifier={...${config},publicKey:Uint8Array.from(${JSON.stringify([...Buffer.from(cfg.publicKeyHex, 'hex')])}),abiSHA256:${JSON.stringify(abiSHA256)}};const catalog=createSnapshotRuntime({renderers,verifier,softwareRevision:${JSON.stringify(revision)},ogIdentity:${JSON.stringify(ogWorker?.identity)},policy:${JSON.stringify(policy)},redirects:${JSON.stringify(JSON.parse(readFileSync('config/jotclipart-legacy-routes.json')))}});const immutableURLs=new Set(${JSON.stringify([...clientAssets.keys()])});export default{async fetch(request,env,ctx){const path=new URL(request.url).pathname;if(path.startsWith('/api/ai/'))return handleAi(request,env,ctx);if(path.startsWith('/api/share')||path.startsWith('/share/'))return handleShare(request,env,ctx);const response=await catalog(request,env,ctx);return response??immutableSoftwareAssetResponse(request,staticNavigationPolicy(await fallbackFetch(request,env,ctx,${JSON.stringify(policy.page)}),${JSON.stringify("'sha256-" + createHash('sha256').update(siteNavigationScript).digest('base64') + "'")}),immutableURLs)}};`,
 );
 const bundled = await build({
   entryPoints: [entry],
@@ -274,6 +286,16 @@ writeFileSync(
       workerSHA256: sha(worker),
       workerBytes: worker.length,
       presentation,
+      ...(ogWorker
+        ? {
+            ogWorker: {
+              name: ogWorker.name,
+              identity: ogWorker.identity,
+              directory: ogWorker.directory,
+              outputFiles: ogWorker.outputFiles,
+            },
+          }
+        : {}),
       sourceInputs: Object.fromEntries(softwareInputs),
       clientAssets: [...clientAssets.values()],
       policy,

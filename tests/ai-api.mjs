@@ -138,7 +138,7 @@ test('production route validates origin, session, Turnstile, inference and no-st
         },
       },
     };
-  const base = 'https://ultraclipart.com/api/ai/clipart/';
+  const base = 'https://jotclipart.com/api/ai/clipart/';
   let r = await handleAi(
     new Request(base + 'quota', { headers: { 'CF-Connecting-IP': '192.0.2.1' } }),
     env,
@@ -147,7 +147,7 @@ test('production route validates origin, session, Turnstile, inference and no-st
   assert.match(r.headers.get('set-cookie'), /HttpOnly; SameSite=Strict/);
   const cookie = r.headers.get('set-cookie').split(';')[0];
   assert.equal((await r.json()).remaining, 2);
-  const req = (body, origin = 'https://ultraclipart.com') =>
+  const req = (body, origin = 'https://jotclipart.com') =>
     new Request(base + 'generate', {
       method: 'POST',
       headers: {
@@ -159,16 +159,20 @@ test('production route validates origin, session, Turnstile, inference and no-st
       body: JSON.stringify(body),
     });
   assert.equal((await handleAi(req(valid, 'https://evil.example'), env)).status, 403);
+  assert.equal((await handleAi(req(valid, 'https://ultraclipart.com'), env)).status, 403);
   const saved = globalThis.fetch;
   try {
     globalThis.fetch = async () => Response.json({ success: false });
     assert.equal((await handleAi(req(valid), env)).status, 403);
     assert.equal(d.raw.prepare('SELECT COUNT(*) n FROM ai_jobs').get().n, 0);
     globalThis.fetch = async () =>
-      Response.json({ success: true, hostname: 'ultraclipart.com', action: 'wrong' });
+      Response.json({ success: true, hostname: 'jotclipart.com', action: 'wrong' });
     assert.equal((await handleAi(req(valid), env)).status, 403);
     globalThis.fetch = async () =>
       Response.json({ success: true, hostname: 'ultraclipart.com', action: 'clipart' });
+    assert.equal((await handleAi(req(valid), env)).status, 403);
+    globalThis.fetch = async () =>
+      Response.json({ success: true, hostname: 'jotclipart.com', action: 'clipart' });
     r = await handleAi(req(valid), env);
     assert.equal(r.status, 200);
     assert.match(r.headers.get('cache-control'), /no-store/);
@@ -208,7 +212,7 @@ test('production route validates origin, session, Turnstile, inference and no-st
   }
 });
 test('missing production security settings never enable inference; public health contains no secrets', async () => {
-  const r = await handleAi(new Request('https://ultraclipart.com/api/ai/clipart/health'), {
+  const r = await handleAi(new Request('https://jotclipart.com/api/ai/clipart/health'), {
     TURNSTILE_SECRET: 'secret',
   });
   const j = await r.json();
@@ -220,7 +224,7 @@ test('missing production security settings never enable inference; public health
   );
 });
 
-const apiBase = 'https://ultraclipart.com/api/ai/clipart/';
+const apiBase = 'https://jotclipart.com/api/ai/clipart/';
 async function harness(run, extras = {}) {
   const d = db();
   let calls = [];
@@ -248,7 +252,7 @@ async function harness(run, extras = {}) {
     new Request(apiBase + 'generate', {
       method: 'POST',
       headers: {
-        Origin: 'https://ultraclipart.com',
+        Origin: 'https://jotclipart.com',
         Cookie: cookie,
         'Content-Type': 'application/json',
         'CF-Connecting-IP': '192.0.2.55',
@@ -266,7 +270,7 @@ const translated = () =>
 const imageResponse = () =>
   Response.json({ image: '/9j/AAAA' }, { headers: { 'cf-ai-neurons': '172.8' } });
 const turnstileSuccess = () =>
-  Response.json({ success: true, hostname: 'ultraclipart.com', action: 'clipart' });
+  Response.json({ success: true, hostname: 'jotclipart.com', action: 'clipart' });
 
 test('model cost ledger records both bounded operations without retaining prompt or image', async () => {
   const h = await harness((model) => (model.includes('llama') ? translated() : imageResponse()));

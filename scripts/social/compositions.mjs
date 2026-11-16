@@ -214,7 +214,7 @@ export async function compose(c, page, catalog) {
     }
     case 'guides': {
       paper(587, 139, 571, 391);
-      await c.image('public/social/jotclipart-studio-native-20261116.jpg', 598, 151, 548, 350);
+      await c.image('public/social/jotclipart-studio-white-3d-20261116.jpg', 598, 151, 548, 350);
       for (const [i, label] of ['Download', 'Edit', 'Print'].entries()) {
         c.rect(612 + i * 174, 535, 160, 42, '#D8F3DC', 8);
         await c.text(`${i + 1}  ${label}`, 692 + i * 174, 547, {
@@ -342,7 +342,7 @@ export async function compose(c, page, catalog) {
     }
     case 'contact': {
       await c.image('public/illustrations/actions/contact.svg', 670, 153, 409, 316);
-      await c.text('ultraclipart@gmail.com', 869, 500, {
+      await c.text('Let’s hear your ideas', 869, 500, {
         size: 24,
         weight: 600,
         center: true,

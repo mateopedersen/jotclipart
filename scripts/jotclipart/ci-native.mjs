@@ -3,10 +3,11 @@ import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync } from 
 import { join, resolve } from 'node:path';
 import { createHash } from 'node:crypto';
 import { gunzipSync } from 'node:zlib';
+import assert from 'node:assert/strict';
 
 const phase = process.argv[2] ?? 'source';
-if (!['source', 'package', 'format'].includes(phase))
-  throw Error('Choose source, package or format');
+if (!['source', 'invariants', 'package', 'release', 'format'].includes(phase))
+  throw Error('Choose source, invariants, package, release or format');
 const out = resolve('reports/jotclipart-native-ci');
 mkdirSync(out, { recursive: true });
 const report = {
@@ -62,9 +63,22 @@ try {
       ]);
     report.formatScope = { base, files };
   }
-  if (phase === 'source') {
-    command('source-catalog-policy', ['scripts/seo/check-catalog.mjs']);
-    command('signed-social-source-policy', ['scripts/verify-social-images.mjs']);
+  if (['source', 'invariants', 'release'].includes(phase)) {
+    if (phase !== 'invariants') {
+      command('source-catalog-policy', ['scripts/seo/check-catalog.mjs']);
+      command('signed-social-source-policy', ['scripts/verify-social-images.mjs']);
+      command('astro-typescript-diagnostics', [
+        'node_modules/@astrojs/check/bin/astro-check.js',
+        '--root',
+        '.',
+        '--tsconfig',
+        'tsconfig.json',
+        '--minimumFailingSeverity',
+        'error',
+        '--minimumSeverity',
+        'error',
+      ]);
+    }
     const snapshot = readdirSync('tests/catalog-snapshot')
       .filter((f) => f.endsWith('.mjs'))
       .sort()
@@ -108,15 +122,68 @@ try {
       'social-images',
       'jotclipart-brand',
       'page-seo',
+      'jotclipart-build-root',
+      'jotclipart-publisher-target',
+      'jotclipart-legacy-source',
+      'jotclipart-future-import',
+      'collection-reference-deltas',
+      'search-suggestion-thumbnails',
+      'jotclipart-ci-policy',
+      'jotclipart-indexing-deferred',
+      'jotclipart-og-image',
+      'jotclipart-og-source',
+      'jotclipart-og-package',
+      'indexnow-release',
+      'indexnow-notify',
+      'jotclipart-http-audit',
+      'ai-api',
+      'ai-client-state',
+      'ai-cutout',
+      'ai-pdf-export',
+      'ai-transfer-extract',
+      'editor',
+      'export-name',
+      'favorite-boards',
+      'favorite-downloads',
+      'favorites-storage',
+      'favorites-workspace',
+      'raster-placement',
+      'sharing-api',
+      'sharing-links',
+      'smart-selection',
+      'studio-elements',
+      'studio-compositions',
+      'print-size',
+      'verified-source-cache',
+      'original-image-scheduling-policy',
+      'image-loading-preview',
+      'static-navigation-policy',
+      'site-navigation-policy',
+      'cookie-startup',
+      'topic-identifiers',
+      'catalog-policy',
+      'pages-limits',
+      'r2-cloudflare-api',
+      'r2-jurisdictions',
+      'r2-budget',
+      'production-public-assets',
+      'prune-catalog-output',
+      'ci-plan',
+      'ci-raster-shards',
     ];
     const tests = [
       ...snapshot,
       ...required.map((n) => 'tests/' + n + '.mjs'),
       ...extra.map((n) => 'tests/' + n + '.mjs'),
+      'tests/unit/editor-recovery.test.ts',
+      'scripts/jotclipart/white-background-tests.mjs',
+      'scripts/jotclipart/fallback-tests.mjs',
+      'scripts/jotclipart/portability-tests.mjs',
     ];
     for (const file of tests)
       if (!existsSync(file)) throw Error('Required native invariant missing: ' + file);
     const tap = command('native-invariants', [
+      '--experimental-transform-types',
       '--import',
       './scripts/catalog-snapshot/register-ts.mjs',
       '--test',
@@ -127,7 +194,7 @@ try {
     const count = Number([...tap.matchAll(/^# tests (\d+)$/gm)].at(-1)?.[1]),
       failed = Number([...tap.matchAll(/^# fail (\d+)$/gm)].at(-1)?.[1]),
       skipped = Number([...tap.matchAll(/^# skipped (\d+)$/gm)].at(-1)?.[1]);
-    if (!(count >= 162) || failed !== 0 || skipped !== 0)
+    if (!(count >= 500) || failed !== 0 || skipped !== 0)
       throw Error('The mandatory invariant aggregate is incomplete, failed or skipped');
     report.invariants = {
       files: tests,
@@ -139,6 +206,21 @@ try {
       freshProductionReadbackClaim: false,
     };
     const pin = JSON.parse(readFileSync('config/jotclipart-migration-baseline.json'));
+    const fields = [
+      'id',
+      'canonicalPath',
+      'sourceTitle',
+      'displayTitle',
+      'descriptionHash',
+      'altHash',
+      'topic',
+      'published',
+      'indexable',
+      'media',
+    ].sort();
+    const mediaFields = ['role', 'objectKey', 'bytes', 'mime', 'sha256'].sort();
+    assert.deepEqual([...pin.fields].sort(), fields);
+    assert.deepEqual([...pin.mediaFields].sort(), mediaFields);
     const bytes = readFileSync('config/' + pin.file);
     if (bytes.length !== pin.bytes || sha(bytes) !== pin.sha256)
       throw Error('Public baseline artifact pin changed');
@@ -150,6 +232,24 @@ try {
     if (rows.length !== pin.artworks || new Set(rows.map((r) => r.id)).size !== rows.length)
       throw Error('Public baseline identity coverage differs');
     for (const r of rows) {
+      assert.deepEqual(Object.keys(r).sort(), fields, 'Private or unapproved baseline field');
+      assert(/^[a-f0-9]{64}$/.test(r.descriptionHash) && /^[a-f0-9]{64}$/.test(r.altHash));
+      for (const media of r.media) {
+        assert.deepEqual(
+          Object.keys(media).sort(),
+          mediaFields,
+          'Private or unapproved media field',
+        );
+        assert(/^[a-f0-9]{64}$/.test(media.sha256));
+        assert(Number.isSafeInteger(media.bytes) && media.bytes > 0);
+        assert(['image/webp', 'application/pdf', 'image/svg+xml'].includes(media.mime));
+        assert(
+          typeof media.objectKey === 'string' &&
+            !media.objectKey.startsWith('/') &&
+            !media.objectKey.includes('..') &&
+            !/[?#]/.test(media.objectKey),
+        );
+      }
       if (
         !r.published ||
         !r.indexable ||
@@ -166,7 +266,7 @@ try {
       privateFieldsIncluded: false,
     };
   }
-  if (phase === 'package')
+  if (['package', 'release'].includes(phase))
     command('exact-built-package', [
       '--test',
       'tests/jotclipart-brand.mjs',

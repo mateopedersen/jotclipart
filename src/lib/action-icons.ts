@@ -1,8 +1,8 @@
 /** Cached, colored SVG objects shared by server-rendered and dynamic buttons. */
 export const actionIconAssets = {
-  image: '/illustrations/actions/image.svg',
-  document: '/illustrations/actions/document.svg',
-  edit: '/illustrations/actions/edit.svg',
+  image: '/illustrations/actions/image-jot-v2.svg',
+  document: '/illustrations/actions/document-jot-v2.svg',
+  edit: '/illustrations/actions/edit-jot-v2.svg',
   view: '/illustrations/actions/view.svg',
   download: '/illustrations/actions/download.svg',
 } as const;

@@ -12,17 +12,20 @@ import {
 import { resolve, join, dirname, relative } from 'node:path';
 import { createHash } from 'node:crypto';
 import { gzipSync } from 'node:zlib';
+import { buildRoot as selectBuildRoot } from './build-root.mjs';
+import { buildOgWorker } from './og-worker-build.mjs';
 
 // The established Astro native-template / signed R2 catalog architecture.
 // No catalog prerender, media duplication, old deployment or old checkout input.
 const root = process.cwd(),
-  buildRoot = 'work/jotclipart-build',
+  buildRoot = selectBuildRoot(),
   out = resolve('dist');
 const run = (script, ...args) =>
   execFileSync(process.execPath, [script, ...args], { stdio: 'inherit', cwd: root });
 const sha = (b) => createHash('sha256').update(b).digest('hex');
 run('scripts/build-site-icons.mjs');
 run('scripts/verify-social-images.mjs');
+const ogWorker = await buildOgWorker({ root, buildRoot });
 run('scripts/catalog-snapshot/compile-renderers.mjs', buildRoot);
 run('scripts/catalog-snapshot/build-runtime.mjs', buildRoot, 'config/catalog-snapshot-public.json');
 const code = JSON.parse(readFileSync(join(buildRoot, 'runtime/software-report.json')));
@@ -44,10 +47,18 @@ function copy(source, path, proof) {
 const tracked = execFileSync('git', ['ls-files', '-z', 'public'], { encoding: 'utf8' })
   .split('\0')
   .filter(Boolean);
+const socialImages = JSON.parse(readFileSync('data/social-images.json'));
+const activeCovers = new Set(
+  Object.values(socialImages.pages).map((image) => 'public' + image.src),
+);
+if (activeCovers.size !== Object.keys(socialImages.pages).length)
+  throw Error('Every dedicated page requires its own reviewed social cover');
 for (const file of tracked) {
   if (
     file.startsWith('public/catalog/') ||
     file.startsWith('public/art/') ||
+    (file.startsWith('public/og/') && !activeCovers.has(file)) ||
+    file === 'public/social/jotclipart-studio-native-20261116.jpg' ||
     file === 'public/_headers' ||
     file === 'public/_redirects'
   )
@@ -94,6 +105,14 @@ if (workerGzipBytes > 10 * 1024 * 1024)
   throw Error('Workers Paid compressed script limit exceeded');
 const report = {
   status: 'BUILT_NOT_DEPLOYED',
+  ogWorker: {
+    name: ogWorker.name,
+    identity: ogWorker.identity,
+    pagesConfig: ogWorker.pagesConfig,
+    workerConfig: ogWorker.workerConfig,
+    directory: ogWorker.directory,
+    outputFiles: ogWorker.outputFiles,
+  },
   sourceRevision: code.revision,
   abiSHA256: code.abiSHA256,
   staticFiles: assets.length,
@@ -106,6 +125,6 @@ const report = {
   mediaFilesCopied: 0,
   inventory,
 };
-mkdirSync('work/jotclipart-build', { recursive: true });
-writeFileSync('work/jotclipart-build/package-report.json', JSON.stringify(report, null, 2));
+mkdirSync(buildRoot, { recursive: true });
+writeFileSync(join(buildRoot, 'package-report.json'), JSON.stringify(report, null, 2));
 console.log(JSON.stringify({ ...report, inventory: undefined }));

@@ -31,7 +31,7 @@ function validArtwork(a, id) {
       fail('Missing original media');
     }
     if (
-      url.origin !== 'https://assets.ultraclipart.com' ||
+      !['https://assets.ultraclipart.com', 'https://assets.jotclipart.com'].includes(url.origin) ||
       url.search ||
       url.hash ||
       url.username ||
@@ -124,7 +124,7 @@ export async function readCollectionReferences(
   validateTopicRecord(record, ids);
   let offset = 0;
   const pageIds = [];
-  const blocks = await mapFour(record.pageBlocks, d => store.read('collections', d));
+  const blocks = await mapFour(record.pageBlocks, (d) => store.read('collections', d));
   for (const [index, d] of record.pageBlocks.entries()) {
     const page = blocks[index],
       rows = page.artworkIds ?? page.artworks?.map((a) => a.id);
@@ -146,11 +146,11 @@ export async function readCollectionReferences(
     fail('Page IDs differ from membership');
   // Legacy duplicated covers/counts/card DTOs are intentionally ignored in v2.
   const [relatedRows, shared, resolvedSurprise] = await Promise.all([
-    mapFour(record.related, relation => find(relation.slug)),
+    mapFour(record.related, (relation) => find(relation.slug)),
     store.read('collections', collections.sharedContext),
     resolveSurprise ? resolveSurprise(context) : null,
   ]);
-  const related = relatedRows.filter(Boolean).map(target => target.record);
+  const related = relatedRows.filter(Boolean).map((target) => target.record);
   if (resolvedSurprise && resolvedSurprise.rootSHA256 !== context.rootSHA256)
     fail('Discovery snapshot differs');
   const surprise = resolvedSurprise ? resolvedSurprise.items : shared.surprise;

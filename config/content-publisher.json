@@ -1,22 +1,14 @@
 {
   "schema": 1,
-  "status": "INSTALLED_LIVE_VERIFIED",
-  "operator": "npm run content:publish -- prepare|publish CAPSULE SOFTWARE CONFIG NEW_WORK_OUTPUT",
+  "status": "AWAITING_JOTCLIPART_PRODUCTION_INSTALLATION",
+  "operator": "pnpm content:publish -- prepare|publish CAPSULE VERIFIED_SOFTWARE config/content-publisher-public.json NEW_WORK_OUTPUT",
   "script": "scripts/catalog-snapshot/publish-content.mjs",
   "capsuleRoot": "data/catalog-batches",
-  "software": {
-    "revision": "1ba0483e46937a41112eeb66044060c43ed32f98",
-    "abiSHA256": "59be336b2643ebfb80036c3c836321f219d714de215d05d0b4f3f59e4831b8fb",
-    "workerSHA256": "9ab5af0d7790547ba65be9d811062de707022f4c1ef3e1a20dd7065ca38e4907",
-    "directory": "/Users/melihozcan/Documents/UltraClipart-Publisher-Runtime/installed-content-runtime-1ba0483-20261109"
-  },
-  "publicConfig": "/Users/melihozcan/Documents/UltraClipart-Publisher-Runtime/installed-content-runtime-1ba0483-20261109/config.json",
-  "lastVerifiedData": {
-    "revision": "1ba0483e46937a41112eeb66044060c43ed32f98",
-    "root": "4f9db43f365ab92a8de624b22b6bd4c9cb2ee8598877fdf60adfb86c714e9014",
-    "artworks": 46358,
-    "topics": 769
-  },
+  "publicOrigin": "https://jotclipart.com",
+  "activeKey": "catalog/jotclipart/active.json",
+  "software": null,
+  "publicConfig": "config/content-publisher-public.json",
+  "lastVerifiedData": null,
   "limits": {
     "changedArtworksPerPacket": 256,
     "affectedTopicsPerPacket": 64,
@@ -25,9 +17,9 @@
     "accountInventoryRequired": false,
     "fullCatalogBuildForContent": false
   },
-  "proof": "/Users/melihozcan/Documents/UltraClipart-Publisher-Runtime/installed-content-runtime-1ba0483-20261109/live-delivery-verification.json",
-  "loadTests": "work/catalog-snapshot/load-tests/two-run-report.json",
+  "proof": null,
   "protectedIndependentBackup": "/Users/melihozcan/Documents/UltraClipart-Publisher-KEEP",
-  "measurementsScope": "Two private real-media transport + composition + native campaigns, approved unique sources reused. Fresh image review/repair/public verification remains separate; <=60 minutes is a measured technical target, not a universal guarantee.",
-  "installedRuntimePreservation": "/Users/melihozcan/Documents/UltraClipart-Publisher-Runtime/installed-content-runtime-1ba0483-20261109/manifest.json"
+  "previousInstallationRetained": true,
+  "installationRequirement": "Run scripts/jotclipart/freeze-publisher.mjs only after the exact independent JotClipart software is live and its release gates pass. Old installed runtimes are preserved but cannot target this namespace.",
+  "measurementsScope": "No new JotClipart content publication or timing result is claimed by this pending configuration."
 }

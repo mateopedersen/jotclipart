@@ -12,7 +12,7 @@ import {
   stripWebPMetadata,
 } from '../server/share/handler.mjs';
 
-const origin = 'https://ultraclipart.com';
+const origin = 'https://jotclipart.com';
 const image = await sharp({
   create: { width: 96, height: 80, channels: 4, background: '#27a5ddaa' },
 })
@@ -108,7 +108,7 @@ async function setup(extra = {}) {
 }
 async function verified(
   callback,
-  payload = { success: true, hostname: 'ultraclipart.com', action: 'share' },
+  payload = { success: true, hostname: 'jotclipart.com', action: 'share' },
 ) {
   const original = globalThis.fetch;
   globalThis.fetch = async (url, options) => {
@@ -211,6 +211,7 @@ test('create requires origin, signed visitor, CSRF and action/hostname-verified 
   const h = await setup();
   for (const overrides of [
     { Origin: 'https://evil.example' },
+    { Origin: 'https://ultraclipart.com' },
     { Origin: '' },
     { Cookie: '' },
     { Cookie: h.cookie.slice(0, -1) + 'z' },
@@ -221,7 +222,8 @@ test('create requires origin, signed visitor, CSRF and action/hostname-verified 
   for (const bad of [
     { success: false },
     { success: true, hostname: 'evil.example', action: 'share' },
-    { success: true, hostname: 'ultraclipart.com', action: 'clipart' },
+    { success: true, hostname: 'ultraclipart.com', action: 'share' },
+    { success: true, hostname: 'jotclipart.com', action: 'clipart' },
   ])
     await verified(
       async () => assert.equal((await handleShare(h.create(), h.env)).status, 403),
@@ -269,7 +271,7 @@ test('public HTML escapes titles and supplies actual OG image; image bytes match
   assert.equal(pinterest.searchParams.get('media'), published.imageUrl);
   assert.equal(
     pinterest.searchParams.get('description'),
-    'Made with UltraClipart — <script>alert("x")</script> & title',
+    'Made with JotClipart — <script>alert("x")</script> & title',
   );
   assert.ok(
     html.includes(`id="shared-artwork-link" class="share-link" readonly value="${published.url}"`),
@@ -280,9 +282,13 @@ test('public HTML escapes titles and supplies actual OG image; image bytes match
   );
   const imageSources = [...html.matchAll(/<img\b[^>]+src="([^"]+)"/g)].map((match) => match[1]);
   assert.equal(imageSources.length, 11);
+  assert(imageSources.includes('/brand/jotclipart-logo-3d.webp'));
+  assert(!imageSources.includes('/logo.svg'));
   for (const src of imageSources)
     assert.ok(
-      src === '/logo.svg' || /^\/social\/[a-z-]+\.svg$/.test(src) || src === published.imageUrl,
+      src === '/brand/jotclipart-logo-3d.webp' ||
+        /^\/social\/[a-z-]+\.svg$/.test(src) ||
+        src === published.imageUrl,
     );
   assert.ok(html.includes('name="robots" content="noindex,follow"'));
   assert.match(response.headers.get('cache-control'), /no-store/);
@@ -398,7 +404,7 @@ test('pre-saved publication capability recovers a lost response without new veri
   let calls = 0;
   globalThis.fetch = async () => {
     calls++;
-    return Response.json({ success: true, hostname: 'ultraclipart.com', action: 'share' });
+    return Response.json({ success: true, hostname: 'jotclipart.com', action: 'share' });
   };
   try {
     const initial = await handleShare(h.create(publication), h.env);

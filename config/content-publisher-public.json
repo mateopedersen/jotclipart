@@ -4,8 +4,10 @@
   "bucketName": "ultraclipart-pages",
   "keyId": "catalog-owner-v1",
   "publicKeyHex": "4309eb97062f41768467b4b7f9139f1682450cc3fd2e33fb9bb50131e7a79479",
+  "activeKey": "catalog/jotclipart/active.json",
   "acceptedPredecessor": {
-    "rootSHA256": "8f1c0387031dbaf72236164e94127f15b778005b2a4d25e4ecca576e91876210",
-    "abiSHA256": "7f5fec2e123f9c7b2a5f5af6a5e2a5cfbee8812de48b838d38adce8a255d2df8"
-  }
+    "rootSHA256": "7c311351a6c725394ca7473cbcc1025868a281d17449cc817776452f0f3f6753",
+    "abiSHA256": "59be336b2643ebfb80036c3c836321f219d714de215d05d0b4f3f59e4831b8fb"
+  },
+  "publicOrigin": "https://jotclipart.com"
 }

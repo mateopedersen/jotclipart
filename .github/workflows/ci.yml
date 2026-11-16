@@ -1,8 +1,5 @@
-name: Validate UltraClipart
+name: Legacy static artifact validation (manual)
 on:
-  push:
-    branches: [main]
-  pull_request:
   workflow_dispatch:
 permissions:
   contents: read
@@ -97,7 +94,7 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm format:check
       - run: pnpm check
-      - run: pnpm build
+      - run: pnpm build:legacy-static
       - run: pnpm test
   art:
     name: Python 3.12 art and PDF checks
@@ -135,8 +132,8 @@ jobs:
           node-version: '24.22.2'
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm build
-      - run: pnpm test:release
+      - run: pnpm build:legacy-static
+      - run: pnpm test:release:legacy
       - name: Verify atomic delivery and final capacity gates
         run: node --test tests/delivery*.mjs tests/pages-session.mjs tests/studio-style-delivery.mjs
   browser:
@@ -178,7 +175,7 @@ jobs:
           key: previews-${{ runner.os }}-${{ hashFiles('scripts/preview-assets.mjs', 'pnpm-lock.yaml') }}-${{ hashFiles('data/art.json') }}
           restore-keys: |
             previews-${{ runner.os }}-${{ hashFiles('scripts/preview-assets.mjs', 'pnpm-lock.yaml') }}-
-      - run: pnpm build
+      - run: pnpm build:legacy-static
       - name: Desktop, tablet, mobile and accessibility
         run: |
           mkdir -p reports

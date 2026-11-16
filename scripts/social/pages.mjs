@@ -109,7 +109,7 @@ export const pages = [
     title: ['Contact', 'JotClipart'],
     subtitle: ['Questions, corrections', 'and feedback.'],
     layout: 'contact',
-    alt: 'Contact JotClipart with an illustrated envelope and the public contact email address.',
+    alt: 'Contact JotClipart with an illustrated envelope for questions and feedback.',
   },
   {
     key: 'faq',

@@ -16,6 +16,7 @@ import {
   productionSnapshotMessage,
 } from '../../server/catalog-snapshot/signed-production-snapshot.mjs';
 import { snapshotDigest } from '../../server/catalog-snapshot/release-pointer.mjs';
+import { assertPublisherTarget } from '../jotclipart/publisher-target.mjs';
 const hash = (b) => createHash('sha256').update(b).digest('hex');
 export async function sealCatalogContent({
   directory,
@@ -41,6 +42,18 @@ export async function sealCatalogContent({
     code = JSON.parse(readFileSync(join(software, 'runtime/software-report.json')));
   assert.equal(source.status, 'CURRENT_SOURCE_AND_EDITORIAL_VERIFIED_NOT_A_DEPLOYMENT');
   assert.equal(source.packetSHA256, hash(packetBytes));
+  if (verifier.activeKey === 'catalog/jotclipart/active.json')
+    assert.equal(
+      source.publicOrigin,
+      assertPublisherTarget(verifier),
+      'New publisher source origin differs',
+    );
+  if (verifier.activeKey === 'catalog/jotclipart/active.json')
+    assert.equal(
+      native.publicOrigin,
+      source.publicOrigin,
+      'Native route proof uses another public origin',
+    );
   assert.equal(hash(readFileSync(join(software, 'runtime/worker.mjs'))), code.workerSHA256);
   assert.equal(code.abiSHA256, verifier.abiSHA256);
   assert.equal(code.publicKeyHex, verifier.publicKeyHex);
@@ -65,20 +78,20 @@ export async function sealCatalogContent({
   const replayDirectory = join(directory, 'independent-replay');
   if (existsSync(replayDirectory)) throw Error('Independent replay must start clean');
   try {
-    const runReplay = () => replay({
-      packetBytes,
-      software,
-      parentBucket,
-      verifier,
-      output: replayDirectory,
-      mediaStageReceipt,
-    });
+    const runReplay = () =>
+      replay({
+        packetBytes,
+        software,
+        parentBucket,
+        verifier,
+        output: replayDirectory,
+        mediaStageReceipt,
+        ...(source.publicOrigin !== undefined ? { publicOrigin: source.publicOrigin } : {}),
+      });
     // Replay misses must not evict the verified composition working set.
-    const repeated = await (
-      typeof parentBucket.withoutDiskCacheAdmissions === 'function'
-        ? parentBucket.withoutDiskCacheAdmissions(runReplay)
-        : runReplay()
-    );
+    const repeated = await (typeof parentBucket.withoutDiskCacheAdmissions === 'function'
+      ? parentBucket.withoutDiskCacheAdmissions(runReplay)
+      : runReplay());
     assert.deepEqual(
       repeated.result.candidate,
       candidate,
@@ -130,7 +143,9 @@ export async function sealCatalogContent({
       ...(finalMediaReadback
         ? {
             incomingMediaStageReceiptSHA256: source.incomingMediaStageReceiptSHA256,
-            incomingMediaFinalReadbackSHA256: hash(Buffer.from(JSON.stringify(finalMediaReadback, null, 2))),
+            incomingMediaFinalReadbackSHA256: hash(
+              Buffer.from(JSON.stringify(finalMediaReadback, null, 2)),
+            ),
           }
         : {}),
       remoteReceiptSHA256: hash(readFileSync(join(directory, 'remote-receipt.json'))),
@@ -138,9 +153,11 @@ export async function sealCatalogContent({
         readFileSync(join(directory, 'native-integration-report.json')),
       ),
       softwareABI: code.abiSHA256,
-      preparedDiscoveryDocuments: existsSync(join(directory,'prepared-presentation-receipt.json'))?read('prepared-presentation-receipt.json').canonicalDocumentsPrepared:0,
+      preparedDiscoveryDocuments: existsSync(join(directory, 'prepared-presentation-receipt.json'))
+        ? read('prepared-presentation-receipt.json').canonicalDocumentsPrepared
+        : 0,
       fullCatalogPagesBuilt: 0,
-      fullCatalogScans: existsSync(join(directory,'prepared-presentation-receipt.json'))?1:0,
+      fullCatalogScans: existsSync(join(directory, 'prepared-presentation-receipt.json')) ? 1 : 0,
       nativeMediaScans: 0,
       at: new Date().toISOString(),
     },

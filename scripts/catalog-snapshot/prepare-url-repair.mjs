@@ -1,3 +1,4 @@
+import { assertPublisherTarget } from '../jotclipart/publisher-target.mjs';
 // Source-replayed URL/sitemap migration, with inherited immutable artwork/media.
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { resolve, join } from 'node:path';
@@ -73,7 +74,13 @@ export async function prepareURLRepair({
   if (!output.startsWith(resolve('work') + '/') || existsSync(output))
     throw Error('Separate protected presentation output required');
   const planPath = packet.planPath ?? 'data/routes/artwork-public-url-repair-20261109.json';
-  assert(['data/routes/artwork-public-url-repair-20261109.json','data/routes/artwork-public-url-ordinal-repair-20261110.json'].includes(planPath), 'Explicit committed URL repair plan required');
+  assert(
+    [
+      'data/routes/artwork-public-url-repair-20261109.json',
+      'data/routes/artwork-public-url-ordinal-repair-20261110.json',
+    ].includes(planPath),
+    'Explicit committed URL repair plan required',
+  );
   const parent = await captureProductionSnapshot(parentBucket, verifier);
   assert.equal(parent.rootSHA256, packet.parentSnapshotSHA256);
   const installed = await loadPresentationSoftware(software, verifier);
@@ -91,6 +98,9 @@ export async function prepareURLRepair({
     revision: packet.revision,
     parentSnapshotSHA256: parent.rootSHA256,
     packetSHA256: hash(packetBytes),
+    ...(verifier.activeKey === 'catalog/jotclipart/active.json'
+      ? { publicOrigin: assertPublisherTarget(verifier) }
+      : {}),
     sourceHashes: packet.sourceHashes,
     softwareABI: installed.rendererSHA256,
     presentationBundleSHA256: installed.bundleSHA256,

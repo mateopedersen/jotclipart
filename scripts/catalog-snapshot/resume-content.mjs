@@ -12,6 +12,7 @@ import { activateCatalogContent } from './activate-content.mjs';
 import { verifyContentLive } from './verify-content-live.mjs';
 import { sharedContentBaseline } from './legacy-source-guard.mjs';
 import { reverifyIncomingBeforeSeal } from './incoming-media-readback.mjs';
+import { assertPublisherTarget, assertPublisherSoftware } from '../jotclipart/publisher-target.mjs';
 const hash = (b) => createHash('sha256').update(b).digest('hex');
 export async function resumeStagedContent({ output, software, publicConfig, progress = () => {} }) {
   output = resolve(output);
@@ -24,14 +25,18 @@ export async function resumeStagedContent({ output, software, publicConfig, prog
     packet = await validateContentPacket(read('packet.json'));
   if (packet.publicationIntent === 'PRIVATE_TEST_ONLY')
     throw Error('Private test packet cannot resume production');
-  const code = JSON.parse(readFileSync(join(software, 'runtime/software-report.json'))),
+  const publicOrigin = assertPublisherTarget(publicConfig);
+  const code = assertPublisherSoftware(
+      JSON.parse(readFileSync(join(software, 'runtime/software-report.json'))),
+      publicConfig,
+    ),
     verifier = {
       ...publicConfig,
       abiSHA256: code.abiSHA256,
       publicKey: Uint8Array.from(Buffer.from(publicConfig.publicKeyHex, 'hex')),
     };
   const control = await (
-    await fetch('https://ultraclipart.com/delivery-release.json', { cache: 'no-store' })
+    await fetch(publicOrigin + '/delivery-release.json', { cache: 'no-store' })
   ).json();
   assert.equal(control.controlRevision, code.revision, 'Installed software changed');
   assert.equal(control.verifiedRoot, packet.parentSnapshotSHA256, 'Production parent changed');
@@ -60,12 +65,12 @@ export async function resumeStagedContent({ output, software, publicConfig, prog
       }),
   );
   const before = await (
-    await fetch('https://ultraclipart.com/delivery-release.json', { cache: 'no-store' })
+    await fetch(publicOrigin + '/delivery-release.json', { cache: 'no-store' })
   ).json();
   assert.equal(before.controlRevision, code.revision);
   assert.equal(before.verifiedRoot, packet.parentSnapshotSHA256);
   await activateCatalogContent({ directory, sealed, verifier });
-  await verifyContentLive({ directory, packet, sealed, progress });
+  await verifyContentLive({ directory, packet, sealed, progress, publicOrigin });
   const log = join(output, '..', 'publish.log'),
     firstStarted = existsSync(log) ? statSync(log).birthtimeMs : started;
   const result = {

@@ -38,8 +38,7 @@
   padding: 38px 42px;
   border: 1px solid var(--brand-border);
   border-radius: 26px;
-  background:
-    #ffffff;
+  background: #ffffff;
   box-shadow:
     inset 0 2px #fff,
     0 5px 0 var(--brand-soft);
@@ -609,8 +608,7 @@
   height: clamp(170px, 21vw, 235px);
   min-width: 0;
   padding: 10px;
-  background:
-    #ffffff;
+  background: #ffffff;
   border-bottom: 1px solid var(--brand-soft);
 }
 .subject-art img {

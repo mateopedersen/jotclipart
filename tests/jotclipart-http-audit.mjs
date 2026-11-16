@@ -216,11 +216,20 @@ async function fixture() {
   function html(path) {
     const record = documents.get(path),
       display = record.displayTitle ?? 'About JotClipart';
-    const title =
-      display + (record.kind === 'collection' ? ' Clipart Collection' : '') + ' | JotClipart';
+    const coverTitle =
+      display +
+      (record.kind === 'collection'
+        ? (/\bClipart$/i.test(display) ? '' : ' Clipart') + ' Collection'
+        : '');
+    const title = coverTitle + ' | JotClipart';
+    const ogURL =
+      record.kind === 'page'
+        ? primary + '/og/about-private-fixture.png'
+        : `${primary}/og/catalog/${record.kind}/${record.id}/${'9'.repeat(64)}.png`;
+    const ogAlt = coverTitle + ' — JotClipart';
     const raw =
       "const apparent = '<meta name=robots content=noindex><link rel=canonical href=https://wrong.example>';";
-    const common = `<html><head><meta name="build-revision" content="${revision}"><title>${escape(title)}</title><link rel="canonical" href="${record.newCanonical}"><meta name="description" content="${escape(description)}"><meta property="og:description" content="${escape(description)}"><meta name="twitter:description" content="${escape(description)}"><meta property="og:title" content="${escape(title)}"><meta name="twitter:title" content="${escape(title)}"><meta property="og:site_name" content="JotClipart"><meta property="og:image:alt" content="${escape(alt)}"><meta name="twitter:image:alt" content="${escape(alt)}"><script>${raw}</script></head><body><h1>${escape(display)}</h1><svg><title>Decoration</title></svg><template><title>Inert title</title><h1>Inert heading</h1><script type="application/ld+json">invalid inert JSON</script></template>`;
+    const common = `<html><head><meta name="build-revision" content="${revision}"><title>${escape(title)}</title><link rel="canonical" href="${record.newCanonical}"><meta name="description" content="${escape(description)}"><meta property="og:description" content="${escape(description)}"><meta name="twitter:description" content="${escape(description)}"><meta property="og:title" content="${escape(title)}"><meta name="twitter:title" content="${escape(title)}"><meta property="og:site_name" content="JotClipart"><meta property="og:image" content="${ogURL}"><meta property="og:image:secure_url" content="${ogURL}"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:image" content="${ogURL}"><meta property="og:image:alt" content="${escape(ogAlt)}"><meta name="twitter:image:alt" content="${escape(ogAlt)}"><script>${raw}</script></head><body><h1>${escape(display)}</h1><svg><title>Decoration</title></svg><template><title>Inert title</title><h1>Inert heading</h1><script type="application/ld+json">invalid inert JSON</script></template>`;
     const assetURL = (role) =>
       'https://assets.jotclipart.com/' +
       art.assets
@@ -272,7 +281,12 @@ async function fixture() {
     };
     return { html: common + body + '</body></html>', headers };
   }
-  function transport({ legacyFault, metadataFault, changedAfter = false } = {}) {
+  function transport({
+    legacyFault,
+    metadataFault,
+    changedAfter = false,
+    transportOrigin = preview,
+  } = {}) {
     const calls = [],
       counts = new Map();
     let controls = 0;
@@ -280,7 +294,7 @@ async function fixture() {
       const url = new URL(value);
       calls.push(url.href);
       counts.set(url.href, (counts.get(url.href) ?? 0) + 1);
-      assert.equal(url.origin, preview);
+      assert.equal(url.origin, transportOrigin);
       assert.equal(init.method, 'GET');
       assert.equal(init.redirect, 'manual');
       if (url.pathname === '/delivery-release.json') {
@@ -300,14 +314,17 @@ async function fixture() {
       if (legacyTarget) {
         const target = legacyFault === 'loop' ? url.pathname : legacyTarget;
         const location =
-          (legacyFault === 'foreign' ? 'https://ultraclipart.com' : preview) +
+          (legacyFault === 'foreign' ? 'https://ultraclipart.com' : transportOrigin) +
           target +
           (legacyFault === 'query' ? '' : url.search);
         return new Response(null, { status: 301, headers: { location } });
       }
       if (documents.has(url.pathname)) {
         if (legacyFault === 'chain' && url.search)
-          return new Response(null, { status: 301, headers: { location: preview + url.pathname } });
+          return new Response(null, {
+            status: 301,
+            headers: { location: transportOrigin + url.pathname },
+          });
         let { html: body, headers } = html(url.pathname);
         if (metadataFault === 'CSP')
           headers = { ...headers, 'content-security-policy': "script-src 'self'" };
@@ -409,6 +426,210 @@ test('raw-text boundaries preserve Unicode character offsets and decoded entity 
   assert.deepEqual(parsed.h1, ['İstanbul & Flowers']);
   assert.equal(JSON.parse(parsed.scripts[0].text).name, 'İstanbul');
 });
+test('only the exact owned custom preview origin is admitted; production cannot borrow preview indexability policy', () =>
+  withFixture(async (f) => {
+    assert.equal(auditOrigin('https://preview.jotclipart.com'), 'https://preview.jotclipart.com');
+    for (const origin of [
+      'https://foreign.preview.jotclipart.com',
+      'http://preview.jotclipart.com',
+      'https://preview.jotclipart.com:444',
+      'https://preview.jotclipart.com.evil.test',
+    ])
+      assert.throws(() => auditOrigin(origin));
+    await assert.rejects(
+      runHttpAudit({ ...f.options, origin: primary, mode: 'preview', dryRun: true }),
+      /INVALID_PREVIEW_POLICY_ORIGIN/,
+    );
+    await assert.rejects(
+      runHttpAudit({ ...f.options, mode: 'skip-indexability', dryRun: true }),
+      /INVALID_INDEXABILITY_MODE/,
+    );
+  }));
+test('preview policy permits only its transport noindex header, never catalog noindex metadata', () =>
+  withFixture(async (f) => {
+    const input = await loadHttpAuditInputs(f.options),
+      page = f.html(f.paths[0]);
+    const configuration = {
+      html: page.html,
+      headers: new Headers({ ...page.headers, 'x-robots-tag': 'noindex, nofollow' }),
+      expected: input.expected.get(f.paths[0]),
+      origin: 'https://preview.jotclipart.com',
+      root: input.root,
+      revision: input.revision,
+    };
+    assert.throws(() => validateCanonicalHTML(configuration), /INDEXABLE_PAGE_NOINDEX/);
+    assert(
+      validateCanonicalHTML({ ...configuration, mode: 'preview' }).checks.includes(
+        'preview-transport-noindex',
+      ),
+    );
+    for (const robot of ['robots', 'googlebot', 'bingbot'])
+      assert.throws(
+        () =>
+          validateCanonicalHTML({
+            ...configuration,
+            mode: 'preview',
+            html: page.html.replace('</head>', `<meta name="${robot}" content="noindex"></head>`),
+          }),
+        /INDEXABLE_PAGE_NOINDEX/,
+      );
+    assert.throws(
+      () => validateCanonicalHTML({ ...configuration, origin: primary, mode: 'preview' }),
+      /INVALID_PREVIEW_POLICY_ORIGIN/,
+    );
+  }));
+test('custom preview runs carry their policy in the resume contract and cannot become a production pass', () =>
+  withFixture(async (f) => {
+    const origin = 'https://preview.jotclipart.com',
+      t = f.transport({ metadataFault: 'noindex', transportOrigin: origin });
+    const result = await runHttpAudit({
+      ...f.options,
+      origin,
+      mode: 'preview',
+      fetcher: t.fetcher,
+    });
+    assert.equal(result.status, 'HTTP_AUDIT_PASSED');
+    assert.equal(result.mode, 'preview');
+    assert.equal(result.productionHTTPIndexabilityVerified, false);
+    assert.equal(result.previewTransportNoindexAllowed, true);
+    assert(t.calls.every((url) => new URL(url).origin === origin));
+    await assert.rejects(
+      runHttpAudit({ ...f.options, origin, mode: 'production', fetcher: t.fetcher }),
+      /RESUME_CONTRACT_DIFFERS/,
+    );
+  }));
+test('catalog OG metadata has the correct new ID, PNG size, secure/Twitter URL and derived caption', () =>
+  withFixture(async (f) => {
+    const input = await loadHttpAuditInputs(f.options);
+    for (const path of [f.paths[0], f.topic.path, f.collection.path]) {
+      const page = f.html(path),
+        expected = input.expected.get(path);
+      const validate = (html) =>
+        validateCanonicalHTML({
+          html,
+          headers: new Headers(page.headers),
+          expected,
+          origin: preview,
+          root: input.root,
+          revision: input.revision,
+        });
+      assert.equal(validate(page.html).og.id, expected.id);
+      const image = inspectDocument(page.html).meta.find((m) => m.property === 'og:image').content;
+      const changes = [
+        [
+          page.html.replace(
+            `property="og:image" content="${image}"`,
+            'property="og:image" content="https://assets.jotclipart.com/private/old-original.webp"',
+          ),
+          'CATALOG_OG_IDENTITY_DIFFERS',
+        ],
+        [
+          page.html.replace(
+            `property="og:image" content="${image}"`,
+            `property="og:image" content="${image.replace('/' + expected.id + '/', '/wrong-identity/')}"`,
+          ),
+          'CATALOG_OG_IDENTITY_DIFFERS',
+        ],
+        [
+          page.html.replace(
+            `property="og:image:secure_url" content="${image}"`,
+            'property="og:image:secure_url" content="https://assets.ultraclipart.com/old.webp"',
+          ),
+          'CATALOG_OG_URL_DIFFERS',
+        ],
+        [
+          page.html.replace(
+            `name="twitter:image" content="${image}"`,
+            `name="twitter:image" content="${image.replace('9'.repeat(64), '8'.repeat(64))}"`,
+          ),
+          'CATALOG_OG_URL_DIFFERS',
+        ],
+        [
+          page.html.replace(
+            'property="og:image:type" content="image/png"',
+            'property="og:image:type" content="image/webp"',
+          ),
+          'CATALOG_OG_FORMAT_DIFFERS',
+        ],
+        [
+          page.html.replace(
+            'property="og:image:width" content="1200"',
+            'property="og:image:width" content="500"',
+          ),
+          'CATALOG_OG_SIZE_DIFFERS',
+        ],
+        [
+          page.html.replace(
+            'property="og:image:height" content="630"',
+            'property="og:image:height" content="500"',
+          ),
+          'CATALOG_OG_SIZE_DIFFERS',
+        ],
+        [
+          page.html.replace(
+            /(property="og:image:alt" content=")[^"]*(")/,
+            '$1' + escape(f.alt) + '$2',
+          ),
+          'CATALOG_OG_ALT_DIFFERS',
+        ],
+        [
+          page.html.replace(
+            /(name="twitter:image:alt" content=")[^"]*(")/,
+            '$1' + escape(f.alt) + '$2',
+          ),
+          'CATALOG_OG_ALT_DIFFERS',
+        ],
+        [
+          page.html.replace(
+            '</head>',
+            `<meta property="og:image:secure_url" content="${image}"></head>`,
+          ),
+          'METADATA_CARDINALITY',
+        ],
+      ];
+      for (const [html, code] of changes)
+        assert.throws(
+          () => validate(html),
+          (error) => error instanceof AuditFault && error.code === code,
+        );
+    }
+  }));
+test('collection titles already ending Clipart keep exactly one suffix in SEO and OG while source ALT remains protected', () =>
+  withFixture(async (f) => {
+    const input = await loadHttpAuditInputs(f.options),
+      expected = {
+        ...input.expected.get(f.collection.path),
+        displayTitle: 'Free Elephants Clipart',
+      };
+    f.collection.displayTitle = expected.displayTitle;
+    const page = f.html(f.collection.path),
+      checked = validateCanonicalHTML({
+        html: page.html,
+        headers: new Headers(page.headers),
+        expected,
+        origin: preview,
+        root: input.root,
+        revision: input.revision,
+      });
+    assert(checked.checks.includes('new-branded-OG-identity'));
+    assert(!inspectDocument(page.html).titles[0].includes('Clipart Clipart'));
+    const art = f.html(f.paths[0]);
+    assert.throws(
+      () =>
+        validateCanonicalHTML({
+          html: art.html.replace(
+            '"caption":' + JSON.stringify(f.alt),
+            '"caption":"changed source"',
+          ),
+          headers: new Headers(art.headers),
+          expected: input.expected.get(f.paths[0]),
+          origin: preview,
+          root: input.root,
+          revision: input.revision,
+        }),
+      /ALT_DIFFERS/,
+    );
+  }));
 test('source H1, description, ALT, ID, object key, download digest and JSON-LD mismatches are rejected', () =>
   withFixture(async (f) => {
     const input = await loadHttpAuditInputs(f.options),

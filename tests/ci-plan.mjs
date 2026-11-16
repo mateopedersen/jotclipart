@@ -282,13 +282,20 @@ test('shared source and production checks stay mandatory without repeating insid
   const unit = workflow.split('\n  unit:')[1].split('\n  production:')[0];
   const production = workflow.split('\n  production:')[1].split('\n  browser:')[0];
   const browser = workflow.split('\n  browser:')[1].split('\n  validate:')[0];
-  for (const command of ['pnpm format:check', 'pnpm check', 'pnpm build', 'pnpm test'])
+  for (const command of [
+    'pnpm format:check',
+    'pnpm check',
+    'pnpm build:legacy-static',
+    'pnpm test',
+  ])
     assert.ok(
       unit.split('\n').some((line) => line.trim() === `- run: ${command}`),
       command,
     );
   assert.match(production, /CF_PAGES: '1'/);
-  assert.ok(production.includes('- run: pnpm test:release'));
+  assert.ok(production.includes('- run: pnpm build:legacy-static'));
+  assert.ok(browser.includes('- run: pnpm build:legacy-static'));
+  assert.ok(production.includes('- run: pnpm test:release:legacy'));
   assert.doesNotMatch(browser, /- run: pnpm (?:test|check|format:check)/);
   assert.doesNotMatch(browser, /CF_PAGES=1/);
   assert.match(workflow, /needs: \[plan, unit, production, browser, art\]/);

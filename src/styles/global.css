@@ -715,8 +715,7 @@ p {
   display: grid;
   place-items: center;
   background-color: #ffffff;
-  background-image:
-    none;
+  background-image: none;
   background-size: 24px 24px;
   background-position:
     0 0,
