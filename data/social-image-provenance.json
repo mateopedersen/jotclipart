@@ -21,7 +21,7 @@
   "pages": {
     "home": {
       "route": "/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "3da5f5f1dffd1700b9efba25a00478ec18a3cb323bd57d5abd577af67f59cbe3",
       "sources": [
         {
@@ -166,7 +166,7 @@
     },
     "studio": {
       "route": "/create/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "7c6a3dc4011373e8fcc8147f46849c693a51712731d9739fb713b0179a9136ff",
       "sources": [
         {
@@ -255,7 +255,7 @@
     },
     "ai-builder": {
       "route": "/ai-clipart-generator/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "85ef492c235cd3bd6fa0d3c3bd129759be8fa5abe3fbabc788681f812b63c2af",
       "sources": [
         {
@@ -344,7 +344,7 @@
     },
     "categories": {
       "route": "/categories/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "5a02e1dc2468e791056b47e32a3c4b164dc9acd4bf2c5d928e3c1a81426e6f48",
       "sources": [
         {
@@ -477,7 +477,7 @@
     },
     "collections": {
       "route": "/collections/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "4227f4aaf0e01a7ad60fa2ef6e525ea65286abe4fca07bf01fefa39a80bf5a4a",
       "sources": [
         {
@@ -574,7 +574,7 @@
     },
     "black-and-white": {
       "route": "/black-and-white/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "213ebda1d3c97a8f3804a0f83abf54203af3d967ed98fddd1df5a7af1c2fff34",
       "sources": [
         {
@@ -655,7 +655,7 @@
     },
     "teachers": {
       "route": "/for-teachers/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "d80671d9a483fbe90670e058c9ec4f878ac3211bb08e23f2e1304854ef011d73",
       "sources": [
         {
@@ -764,7 +764,7 @@
     },
     "guides": {
       "route": "/guides/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "d293fe5fbaee39a8e7940bcec22dd7727c395c20220b34ba01c29cb9b16c7fc1",
       "sources": [
         {
@@ -853,7 +853,7 @@
     },
     "print-size": {
       "route": "/print-size/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "0b42636b79c74b24e79f72ef8ebe0739d182ea978592f8afd25b11390a00fa98",
       "sources": [
         {
@@ -942,7 +942,7 @@
     },
     "about": {
       "route": "/about/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "ca1bec1a6b31cd227cccb87e28ec54b2447e9e6ed01e5e41ac2e2b0efd498184",
       "sources": [
         {
@@ -1039,7 +1039,7 @@
     },
     "new": {
       "route": "/new/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "acd4a9dbe13ae0456422d21d61b75975d40fabf559909cb0dcf58d5772cd9699",
       "sources": [
         {
@@ -1124,7 +1124,7 @@
     },
     "favorites": {
       "route": "/favorites/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "f43d452adc281bd34437a46502408e59f027f7c8b25b5edbbf13437a0c271544",
       "sources": [
         {
@@ -1229,7 +1229,7 @@
     },
     "search": {
       "route": "/search/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "f4c710a92f52495720c7ab4b07657aa92f0410c6f56e4c5d1d450032e642466c",
       "sources": [
         {
@@ -1314,7 +1314,7 @@
     },
     "contact": {
       "route": "/contact/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "3ac35e2881cf553984ee0883ddd307d5d43cc80b4c396c555892ec213c71e971",
       "sources": [
         {
@@ -1403,7 +1403,7 @@
     },
     "faq": {
       "route": "/faq/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "5dff08554ea7bcdd26bed7c5cd942bdcd3528b626e066d8bf6d885262f813528",
       "sources": [
         {
@@ -1508,7 +1508,7 @@
     },
     "classroom-label": {
       "route": "/guides/make-a-classroom-label/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "257fb5d597eed2623be43223be91a3d8d63a9f0963305c0c685f40740112ca69",
       "sources": [
         {
@@ -1601,7 +1601,7 @@
     },
     "coloring-activity": {
       "route": "/guides/turn-clipart-into-a-coloring-activity/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "22ad6912f8f53ea4ed5175a03828e5a2fe48033ba67624e38bf60e39761b1f3a",
       "sources": [
         {
@@ -1682,7 +1682,7 @@
     },
     "download-formats": {
       "route": "/guides/webp-pdf-and-editable-projects/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "75d4ff1b6a149c1087c93460438e6be673b6cd6e114201005afc05c4920ef652",
       "sources": [
         {
@@ -1803,7 +1803,7 @@
     },
     "license": {
       "route": "/license/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "941c202d8b694192649592feb1395f578fe50aea8fc4c87a12861a448cca05fa",
       "sources": [
         {
@@ -1888,7 +1888,7 @@
     },
     "privacy": {
       "route": "/privacy/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "0aba7318d19dfed8087978ad1e31d8c426051abb688575365fbf5d0a4db0e5fb",
       "sources": [
         {
@@ -1973,7 +1973,7 @@
     },
     "cookies": {
       "route": "/cookies/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "a1e98c8587e85d12c15424825fff8308b7675513ccc2abbddfc2b47395168d0c",
       "sources": [
         {
@@ -2054,7 +2054,7 @@
     },
     "terms": {
       "route": "/terms/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "9437d222221f0cf16a08c9369d7f0437ac8219555f57c5aa137c2e8fba639c8c",
       "sources": [
         {
@@ -2139,7 +2139,7 @@
     },
     "copyright": {
       "route": "/copyright/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "01a39102b246276193d67aec767713efdb49697f22e771ef188ccc7b5ee09b5e",
       "sources": [
         {
@@ -2224,7 +2224,7 @@
     },
     "accessibility": {
       "route": "/accessibility/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "cf63fde2d0bf525759de73aba02bce8996d0a9dad4c5f99e699bd147205c0b5c",
       "sources": [
         {
@@ -2301,7 +2301,7 @@
     },
     "creative-process": {
       "route": "/editorial-process/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "8542390a247111fadf48ee2f587e0d37b5f92c1afdb70733de2b3a7121307a54",
       "sources": [
         {
@@ -2398,7 +2398,7 @@
     },
     "not-found": {
       "route": "/404/",
-      "rendererSha": "99403c73182704bd4d4ce5765f599931f45dd7b5e6eac38f012e511de880d676",
+      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
       "outputSha256": "7403a89d034ce3763e353b2cd8f6edd1784f4017eab87cdb07bc18032269f574",
       "sources": [
         {
