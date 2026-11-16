@@ -1,3 +1,4 @@
+import { settleBeforeDirectNavigation } from './browser-readiness.mjs';
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import { createHash } from 'node:crypto';
@@ -311,6 +312,7 @@ async function browserFlow() {
     );
   };
   const navigate = async (p, path, { javascript = true } = {}) => {
+    await settleBeforeDirectNavigation(p);
     const r = await p.goto(origin + path, { waitUntil: 'domcontentloaded' });
     assert.equal(r.status(), 200, path);
     assert.equal(r.headers()['x-uc-snapshot'], pin.snapshotRoot, 'Mixed snapshot on ' + path);
@@ -689,7 +691,8 @@ async function browserFlow() {
     await click(page.locator('[data-action=export]'));
     const exportDialog = page.locator('[data-export-dialog]');
     await expect(exportDialog).toBeVisible();
-    await exportDialog.locator('[data-format][value=webp]').check();
+    await click(exportDialog.locator('label:has([data-format][value=webp])'));
+    await expect(exportDialog.locator('[data-format][value=webp]')).toBeChecked();
     await exportDialog.locator('[data-size]').selectOption('1024');
     const exported = page.waitForEvent('download');
     await click(exportDialog.locator('[data-action=download]'));

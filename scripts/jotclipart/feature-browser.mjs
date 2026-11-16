@@ -1,5 +1,7 @@
+import { settleBeforeDirectNavigation } from './browser-readiness.mjs';
 import assert from 'node:assert/strict';
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, mkdtempSync, rmSync } from 'node:fs';
+import { tmpdir } from 'node:os';
 import { resolve, join } from 'node:path';
 import { createHash } from 'node:crypto';
 import { createServer } from 'node:http';
@@ -67,6 +69,7 @@ const oldHost = (host) =>
   /(^|\.)ultraclipart\.(?:com|pages\.dev)$/.test(host) ||
   (/ultraclipart/i.test(host) && host.endsWith('.workers.dev'));
 let browser;
+const temporaryProfiles = new Map();
 const contexts = [],
   servers = [];
 let currentPage;
@@ -81,12 +84,16 @@ async function release() {
   assert.equal(body.verifiedRoot, pin.snapshotRoot);
   return body;
 }
-async function context(options = {}) {
-  const value = await browser.newContext({
-    viewport: report.viewport,
-    acceptDownloads: true,
-    ...options,
-  });
+async function context(options = {}, binaryTransfer = false) {
+  const settings = { viewport: report.viewport, acceptDownloads: true, ...options };
+  let value;
+  if (binaryTransfer && engine === 'webkit') {
+    // WebKit ephemeral contexts cannot store Blob objects in IndexedDB. Use an
+    // isolated disposable profile, preserving the full Blob/ArrayBuffer test.
+    const profile = mkdtempSync(join(tmpdir(), 'jotclipart-transfer-test-'));
+    value = await webkit.launchPersistentContext(profile, { headless: true, ...settings });
+    temporaryProfiles.set(value, profile);
+  } else value = await browser.newContext(settings);
   contexts.push(value);
   let starts = [];
   await value.route('**/*', async (route) => {
@@ -154,6 +161,7 @@ async function pageFor(path, options) {
   return { ctx, page };
 }
 async function navigate(page, path) {
+  await settleBeforeDirectNavigation(page);
   const response = await page.goto(origin + path, {
     waitUntil: 'domcontentloaded',
   });
@@ -229,6 +237,26 @@ async function openProject(page, doc) {
     buffer: Buffer.from(JSON.stringify(doc)),
   });
   await expect(page.locator('[data-status]')).toContainText('Saved project opened');
+  await expect
+    .poll(
+      () =>
+        page.evaluate((expected) => {
+          const actual = JSON.parse(
+            localStorage.getItem(
+              'ultraclipart:editor:v1:' + document.querySelector('.uc-editor').dataset.artId,
+            ) || 'null',
+          );
+          return (
+            !!actual &&
+            actual.title === expected.title &&
+            actual.width === expected.width &&
+            actual.height === expected.height &&
+            JSON.stringify(actual.layers) === JSON.stringify(expected.layers)
+          );
+        }, doc),
+      { timeout: 10000 },
+    )
+    .toBe(true);
 }
 async function runCommand(page, id, value = '24') {
   await page.keyboard.press('Control+k');
@@ -422,6 +450,15 @@ const fixture = {
 
 async function exportFormats() {
   const { page } = await pageFor('/create/');
+  await page.evaluate(() => {
+    window.__featureDownloadNames = [];
+    new MutationObserver((records) => {
+      for (const record of records)
+        for (const node of record.addedNodes)
+          if (node instanceof HTMLAnchorElement && node.download)
+            window.__featureDownloadNames.push(node.download);
+    }).observe(document.body, { childList: true, subtree: true });
+  });
   await editorReady(page);
   await openProject(page, fixture);
   await click(page.locator('[data-action=export]'));
@@ -432,7 +469,8 @@ async function exportFormats() {
   await dialog.locator('[data-filename]').press('Tab');
   const formats = [];
   for (const format of ['png', 'jpg', 'webp', 'svg', 'pdf', 'docx']) {
-    await dialog.locator(`[data-format][value="${format}"]`).check();
+    await click(dialog.locator(`label:has([data-format][value="${format}"])`));
+    await expect(dialog.locator(`[data-format][value="${format}"]`)).toBeChecked();
     if (['png', 'jpg', 'webp'].includes(format))
       await dialog.locator('[data-size]').selectOption('1024');
     if (format === 'pdf') await dialog.locator('[data-allow-large-pdf]').check();
@@ -441,7 +479,17 @@ async function exportFormats() {
     const download = await waiting,
       bytes = await downloadBytes(download),
       name = download.suggestedFilename();
-    assert.equal(name.normalize('NFC'), `${fixture.title}.${format}`);
+    await expect
+      .poll(() => page.evaluate(() => window.__featureDownloadNames.at(-1)))
+      .toBe(`${fixture.title}.${format}`);
+    // The browser may replace spaces in its native suggested filename on Linux
+    // WebKit. The exact requested name is checked independently before download.
+    assert(
+      [
+        `${fixture.title}.${format}`,
+        ...(engine === 'webkit' ? [`${fixture.title.replaceAll(' ', '_')}.${format}`] : []),
+      ].includes(name.normalize('NFC')),
+    );
     const evidence = { format, bytes: bytes.length, sha256: sha(bytes), name };
     if (['png', 'jpg', 'webp'].includes(format)) {
       const metadata = await sharp(bytes).metadata();
@@ -495,11 +543,19 @@ async function exportFormats() {
   await click(dialog.locator('[data-action=download]'));
   await expect(page.locator('[data-status]')).toContainText('Enter a project name');
   await dialog.locator('[data-filename]').fill('Safe / filename : 2026.png');
-  await dialog.locator('[data-format][value=png]').check();
+  await click(dialog.locator('label:has([data-format][value=png])'));
+  await expect(dialog.locator('[data-format][value=png]')).toBeChecked();
   const waiting = page.waitForEvent('download');
   await click(dialog.locator('[data-action=download]'));
   const safe = await waiting;
-  assert.equal(safe.suggestedFilename().normalize('NFC'), 'Safe filename 2026.png');
+  await expect
+    .poll(() => page.evaluate(() => window.__featureDownloadNames.at(-1)))
+    .toBe('Safe filename 2026.png');
+  assert(
+    ['Safe filename 2026.png', ...(engine === 'webkit' ? ['Safe_filename_2026.png'] : [])].includes(
+      safe.suggestedFilename().normalize('NFC'),
+    ),
+  );
   await downloadBytes(safe);
   await click(dialog.locator('[data-action=close-export]'));
   await expect(dialog).not.toBeVisible();
@@ -723,7 +779,11 @@ async function allWorkbenchCommands() {
   await navigate(page, '/create/');
   await editorReady(page);
   const readState = () =>
-    page.evaluate(() => JSON.parse(localStorage.getItem('ultraclipart:editor:v1:my-clipart')));
+    page.evaluate(() => {
+      const value = JSON.parse(localStorage.getItem('ultraclipart:editor:v1:my-clipart'));
+      if (value) delete value._ucRecovery;
+      return value;
+    });
   const closeDialogs = async () => {
     for (const dialog of await page.locator('.uc-editor dialog[open]').all()) {
       const close = dialog.locator('[data-wb-close]').first();
@@ -887,8 +947,15 @@ async function allWorkbenchCommands() {
       await expect
         .poll(async () => JSON.stringify(await readState()) !== before, {
           timeout: 15000,
+          message: 'The actual document must change after ' + id,
         })
         .toBe(true);
+    if (id === 'delete-outside') {
+      const after = await readState();
+      assert(!after.layers.some((layer) => layer.id === 'outside-card'));
+      assert.equal(after.layers.length, fixture.layers.length - 1);
+      assert(after.layers.some((layer) => layer.id === 'blue-card'));
+    }
     page.off('download', onDownload);
     executed.push({ id, name, group });
   }
@@ -1288,7 +1355,7 @@ async function portability() {
   const source = await helperServer(html, js, headers),
     destination = await helperServer(html, js, headers);
   assert.notEqual(source, destination);
-  const ctx = await context(),
+  const ctx = await context({}, true),
     page = await ctx.newPage();
   currentPage = page;
   await page.goto(source + '/move-your-work/');
@@ -1437,6 +1504,15 @@ try {
 } finally {
   for (const ctx of contexts) await ctx.close().catch(() => {});
   await browser?.close();
+  for (const [context, profile] of temporaryProfiles) {
+    try {
+      await context.close();
+      rmSync(profile, { recursive: true, force: true });
+    } catch {
+      report.retainedFixtureProfiles ??= [];
+      report.retainedFixtureProfiles.push(profile);
+    }
+  }
   for (const server of servers) await new Promise((done) => server.close(done));
   report.completedAt = new Date().toISOString();
   writeFileSync(join(out, 'feature-result.json'), JSON.stringify(report, null, 2));

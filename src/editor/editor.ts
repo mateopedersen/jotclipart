@@ -215,7 +215,9 @@ function init(root: HTMLElement) {
   function bounds(ids = selected): Bounds | null {
     const svg = canvas.querySelector('svg');
     if (!svg) return null;
-    const inv = svg.getCTM()?.inverse();
+    // Screen matrices share one coordinate system in every engine, including
+    // Firefox when the responsive SVG viewport is scaled or scrolled.
+    const inv = svg.getScreenCTM()?.inverse();
     if (!inv) return null;
     const points: DOMPoint[] = [];
     for (const sid of ids) {
@@ -227,7 +229,7 @@ function init(root: HTMLElement) {
       } catch {
         continue;
       }
-      const matrix = node.getCTM();
+      const matrix = node.getScreenCTM();
       if (!matrix) continue;
       const m = inv.multiply(matrix);
       for (const [x, y] of [
