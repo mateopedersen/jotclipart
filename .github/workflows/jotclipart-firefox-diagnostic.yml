@@ -1,0 +1,40 @@
+name: JotClipart isolated Firefox diagnostic
+on:
+  push:
+    branches: [diagnostic/firefox-workbench-20261117]
+permissions:
+  contents: read
+jobs:
+  diagnostic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    container:
+      image: mcr.microsoft.com/playwright:v1.64.1-noble@sha256:47b510dd9230bf0b9bfc9b20102241e577ea7a99334ab4c3ca19f19770e9b8ea
+      options: --user 1001
+    env:
+      UC_BROWSER: firefox
+      VIEWPORT_WIDTH: 320
+      BASE_URL: https://preview.jotclipart.com
+      EXPECT_REVISION: b10a122f4eb7406586276630dbb4abe49076c051
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Confirm every application input is the deployed B10 source
+        run: git diff --exit-code b10a122f4eb7406586276630dbb4abe49076c051 -- src server public config package.json pnpm-lock.yaml astro.config.mjs
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.25.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.22.2'
+      - run: pnpm install --frozen-lockfile
+      - run: node scripts/jotclipart/ci-browser.mjs pin
+      - run: node scripts/jotclipart/feature-browser.mjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: firefox-command-diagnostic
+          path: reports/jotclipart-native-browser/
+          retention-days: 3

@@ -52,6 +52,8 @@ const report = {
   snapshotRoot: pin.snapshotRoot,
   scope:
     'Real independent preview browser actions and downloaded bytes; synthetic private storage exists only in isolated test contexts. Cross-origin portability serves the exact deployed helper bytes on two ephemeral loopback origins. No owner browser or production data writes.',
+  diagnosticHarness: 'Firefox command geometry and async recovery trace only; not a release gate',
+  commandTrace: [],
   checks: [],
   downloads: [],
   failures: [],
@@ -814,6 +816,14 @@ async function allWorkbenchCommands() {
           ? ['second-card']
           : ['blue-card', 'second-card'],
     );
+    const observed = await page.evaluate(() => {
+      const svg=document.querySelector('.uc-canvas > svg');
+      const node=svg?.querySelector('[data-layer=outside-card]');
+      const bounds=(el)=>{try {const b=el?.getBBox(); const m=el?.getCTM(); return {box:b&&[b.x,b.y,b.width,b.height],matrix:m&&[m.a,m.b,m.c,m.d,m.e,m.f]};}catch(e){return {error:e.message}}};
+      return {root:bounds(svg),outside:bounds(node),status:document.querySelector('[data-status]')?.textContent, layerIDs:[...svg.querySelectorAll('[data-layer]')].map(n=>n.getAttribute('data-layer'))};
+    });
+    const trace={id,beforeGeometry:observed,before:await readState()};report.commandTrace.push(trace);
+    console.log('COMMAND',id,JSON.stringify(observed));
     const before = JSON.stringify(await readState()),
       downloads = [],
       onDownload = (download) => downloads.push(download);
@@ -883,6 +893,7 @@ async function allWorkbenchCommands() {
       await expect
         .poll(() => page.evaluate(() => window.__featureCopiedText ?? ''))
         .toContain('<svg');
+    trace.after=await readState();
     if (mutating.has(id))
       await expect
         .poll(async () => JSON.stringify(await readState()) !== before, {
@@ -1411,16 +1422,16 @@ try {
     headless: true,
   });
   for (const [id, operation] of [
-    ['studio-six-formats', exportFormats],
-    ['project-open-recovery', recoveryAndProject],
-    ['signed-source-project-compatibility', signedProjectCompatibility],
-    ['workbench-controls', workbench],
+
+
+
+
     ['all-100-workbench-commands', allWorkbenchCommands],
-    ['download-retry-cancel-switch', downloadControls],
-    ['art-background-related-modes', artworkRelated],
-    ['discovery-and-print-tools', discoveryTools],
-    ['search-filters-pagination', searchFilters],
-    ['cross-origin-private-portability', portability],
+
+
+
+
+
   ])
     await check(id, operation);
   await release();
