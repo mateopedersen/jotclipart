@@ -5,6 +5,7 @@ import { gunzipSync } from 'node:zlib';
 import { setTimeout as delay } from 'node:timers/promises';
 import assert from 'node:assert/strict';
 import { chromium, firefox, webkit, expect } from '@playwright/test';
+import sharp from 'sharp';
 
 const mode = process.argv[2] ?? 'browser',
   base = process.env.BASE_URL ?? 'https://preview.jotclipart.com';
@@ -364,8 +365,21 @@ async function browserFlow() {
     const wordmark = brandLink.locator('img');
     await expect(wordmark).toHaveAttribute('alt', 'JotClipart');
     await expect(wordmark).toHaveAttribute('src', '/brand/jotclipart-logo-3d.webp');
-    await expect(wordmark).toHaveJSProperty('naturalWidth', 1200);
-    await expect(wordmark).toHaveJSProperty('naturalHeight', 314);
+    await expect(wordmark).toHaveJSProperty('complete', true);
+    const renderedLogoURL = new URL(await wordmark.evaluate((image) => image.currentSrc));
+    assert.equal(renderedLogoURL.origin, origin);
+    assert(/^\/brand\/jotclipart-logo-3d(?:-(?:320|480))?\.webp$/.test(renderedLogoURL.pathname));
+    const renderedLogoBytes = readFileSync('public' + renderedLogoURL.pathname),
+      renderedLogoInfo = await sharp(renderedLogoBytes).metadata();
+    await expect.poll(() => wordmark.evaluate((image) => image.naturalWidth)).toBeGreaterThan(0);
+    // Responsive w-descriptor sources have density-corrected naturalWidth.
+    // Verify the actual selected file's pixel dimensions and full bytes instead.
+    assert(renderedLogoInfo.width > 0 && renderedLogoInfo.height > 0);
+    assert([320, 480, 1200].includes(renderedLogoInfo.width));
+    assert.equal(
+      sha(Buffer.from(await (await get(renderedLogoURL.pathname)).arrayBuffer())),
+      sha(renderedLogoBytes),
+    );
     const logoSHA = sha(
       Buffer.from(await (await get('/brand/jotclipart-logo-3d.webp')).arrayBuffer()),
     );
@@ -374,11 +388,186 @@ async function browserFlow() {
     await layout(page);
     await page.screenshot({ path: join(dir, 'home.png') });
     check('Homepage branding, typography load and responsive viewport', { logoSHA256: logoSHA });
+    const surprise = page.locator('[data-surprise-art]:visible').first();
+    await expect(surprise).toBeVisible();
+    const surpriseReady = page.waitForURL(
+      (url) => url.origin === origin && /^\/art\/[a-z0-9-]+\/$/.test(url.pathname),
+      { waitUntil: 'domcontentloaded', timeout: 45000 },
+    );
+    await click(surprise);
+    await surpriseReady;
+    const surprisedURL = new URL(page.url());
+    assert.equal(surprisedURL.origin, origin, 'Surprise escaped the preview origin');
+    assert(/^\/art\/[a-z0-9-]+\/$/.test(surprisedURL.pathname));
+    assert(!surprisedURL.search && !surprisedURL.hash);
+    // Native prerender activation need not emit a fresh navigation Response.
+    // Validate the actual clicked document and its canonical HTTP route instead.
+    const surpriseResponse = await get(surprisedURL.pathname);
+    assert.equal(surpriseResponse.headers.get('x-uc-snapshot'), pin.snapshotRoot);
+    await expect(page.locator('meta[name="catalog-snapshot"]')).toHaveAttribute(
+      'content',
+      pin.snapshotRoot,
+    );
+    const surpriseTiming = await page.evaluate(() => {
+      const entry = performance.getEntriesByType('navigation')[0];
+      return {
+        responseStatus: entry?.responseStatus ?? null,
+        activationStart: entry?.activationStart ?? null,
+      };
+    });
+    if (surpriseTiming.responseStatus) assert.equal(surpriseTiming.responseStatus, 200);
+    await dismiss(page);
+    const surpriseCanonical = await page.locator('link[rel=canonical]').getAttribute('href');
+    assert.equal(surpriseCanonical, 'https://jotclipart.com' + surprisedURL.pathname);
+    const surpriseRecord = await page
+      .locator('script[data-download-record]')
+      .evaluate((el) => JSON.parse(el.textContent));
+    assert(/^[a-z0-9-]+$/.test(surpriseRecord.id));
+    assert.equal(new URL(surpriseRecord.webp).origin, 'https://assets.jotclipart.com');
+    await expect(page.locator('h1')).toHaveText(/^Free (?!Free )/);
+    await layout(page);
+    check(
+      'Surprise actual pointer click follows its real alias redirect to a source-bound same-origin artwork',
+      { path: surprisedURL.pathname, id: surpriseRecord.id },
+    );
     await navigate(page, '/clipart/' + pin.sample.topic + '/');
     await expect(page.locator('h1')).toHaveText(/^Free (?!Free )/);
     assert((await page.locator('.art-card').count()) > 0);
     await layout(page);
     check('Topic gallery and one Free prefix');
+    const shareCard = page.locator('.art-card').first(),
+      shareTrigger = shareCard.locator('[data-share-art]'),
+      shareID = await shareCard.getAttribute('data-id'),
+      shareURL = await shareTrigger.getAttribute('data-share-url'),
+      shareImageURL = await shareTrigger.getAttribute('data-share-image');
+    assert.equal(new URL(shareURL).origin, 'https://jotclipart.com');
+    assert(/^\/art\/[a-z0-9-]+\/$/.test(new URL(shareURL).pathname));
+    assert.equal(new URL(shareImageURL).origin, 'https://assets.jotclipart.com');
+    assert.equal(await shareCard.locator('.art-picture img').getAttribute('src'), shareImageURL);
+    const expectedShareSource = baseline
+      .find((item) => item.id === shareID)
+      ?.media.find((media) => media.role === 'webp');
+    if (pin.exactBaselineMetadataRequired) assert(expectedShareSource);
+    const shareCanonicalResponse = await get(new URL(shareURL).pathname);
+    assert.equal(shareCanonicalResponse.headers.get('x-uc-snapshot'), pin.snapshotRoot);
+    const shareCanonicalHTML = await shareCanonicalResponse.text(),
+      shareRecordJSON = /<script\b[^>]*\bdata-download-record\b[^>]*>([\s\S]*?)<\/script>/i.exec(
+        shareCanonicalHTML,
+      );
+    assert(shareRecordJSON, 'Current share canonical lacks a source-bound download descriptor');
+    const shareRecord = JSON.parse(shareRecordJSON[1]),
+      currentShareSource = shareRecord.download?.files?.webp;
+    assert.equal(shareRecord.id, shareID);
+    assert.equal(shareRecord.webp, shareImageURL);
+    assert(currentShareSource?.bytes > 0 && /^[a-f0-9]{64}$/.test(currentShareSource.sha256));
+    const sourceFetch = page.waitForResponse(
+      (response) =>
+        response.url() === shareImageURL && response.request().resourceType() === 'fetch',
+      { timeout: 45000 },
+    );
+    await click(shareTrigger);
+    const shareDialog = page.locator('dialog.uc-share');
+    await expect(shareDialog).toBeVisible();
+    assert.equal(await page.locator('dialog.uc-share').count(), 1);
+    await expect(shareDialog.locator('#uc-share-link')).toHaveValue(shareURL);
+    const sourceResponse = await sourceFetch,
+      shareSourceBytes = await sourceResponse.body();
+    assert.equal(sourceResponse.status(), 200);
+    assert.equal(shareSourceBytes.length, currentShareSource.bytes);
+    assert.equal(sha(shareSourceBytes), currentShareSource.sha256);
+    assert.equal(
+      sourceResponse.headers()['access-control-allow-origin'],
+      origin,
+      'Actual share source CORS',
+    );
+    if (pin.exactBaselineMetadataRequired) {
+      assert.equal(shareSourceBytes.length, expectedShareSource.bytes);
+      assert.equal(sha(shareSourceBytes), expectedShareSource.sha256);
+      assert.equal(
+        decodeURIComponent(new URL(shareImageURL).pathname.slice(1)),
+        expectedShareSource.objectKey,
+      );
+    }
+    await expect(shareDialog.locator('.uc-share-download')).toBeEnabled({ timeout: 45000 });
+    await expect(shareDialog.locator('.uc-share-file-note')).toContainText(/\d+ × \d+ PNG/);
+    for (const href of await shareDialog
+      .locator('.uc-share-network')
+      .evaluateAll((links) => links.map((link) => link.href))) {
+      const networkURL = new URL(href);
+      assert.equal(networkURL.protocol, 'https:');
+      assert(
+        [
+          'www.pinterest.com',
+          'www.facebook.com',
+          'wa.me',
+          'x.com',
+          't.me',
+          'www.linkedin.com',
+          'www.reddit.com',
+          'bsky.app',
+          'www.threads.net',
+        ].includes(networkURL.hostname),
+      );
+      assert(!decodeURIComponent(href).includes('ultraclipart.com'));
+    }
+    assert.equal(await shareDialog.locator('.uc-share-network').count(), 9);
+    const shareSize = await shareDialog.evaluate((dialog) => {
+      const rect = dialog.getBoundingClientRect();
+      return {
+        left: rect.left,
+        right: rect.right,
+        width: rect.width,
+        scrollWidth: dialog.scrollWidth,
+        clientWidth: dialog.clientWidth,
+        viewport: innerWidth,
+      };
+    });
+    assert(shareSize.left >= -1 && shareSize.right <= shareSize.viewport + 1);
+    assert(shareSize.scrollWidth <= shareSize.clientWidth + 2, 'Share dialog horizontal overflow');
+    const shareDownloadPending = page.waitForEvent('download');
+    await click(shareDialog.locator('.uc-share-download'));
+    const shareDownload = await shareDownloadPending,
+      sharedPNG = await readDownload(shareDownload),
+      sharedPNGInfo = await sharp(sharedPNG).metadata();
+    assert.match(shareDownload.suggestedFilename(), /^jotclipart-[a-z0-9-]+\.png$/);
+    assert.equal(sharedPNGInfo.format, 'png');
+    assert(
+      sharedPNGInfo.width > 0 &&
+        sharedPNGInfo.height > 0 &&
+        Math.max(sharedPNGInfo.width, sharedPNGInfo.height) <= 2048,
+    );
+    await expect(shareDialog.locator('.uc-share-preview img')).toHaveJSProperty(
+      'naturalWidth',
+      sharedPNGInfo.width,
+    );
+    await expect(shareDialog.locator('.uc-share-preview img')).toHaveJSProperty(
+      'naturalHeight',
+      sharedPNGInfo.height,
+    );
+    report.downloads.push({
+      kind: 'actual-share-derived-PNG',
+      id: shareID,
+      bytes: sharedPNG.length,
+      sha256: sha(sharedPNG),
+      filename: shareDownload.suggestedFilename(),
+      width: sharedPNGInfo.width,
+      height: sharedPNGInfo.height,
+    });
+    await page.screenshot({ path: join(dir, 'share.png') });
+    await page.keyboard.press('Escape');
+    await expect(shareDialog).toHaveCount(0);
+    assert.equal(await shareTrigger.evaluate((button) => document.activeElement === button), true);
+    await layout(page);
+    check(
+      'Actual gallery-card Share opens one responsive dialog, validates original CORS/source, downloads a branded PNG and restores keyboard focus',
+      {
+        id: shareID,
+        originalSHA256: sha(shareSourceBytes),
+        originalBytes: shareSourceBytes.length,
+        nativeOSShareInvoked: false,
+        publicShareCreated: false,
+      },
+    );
     const cold = await navigate(page, pin.sample.canonicalPath);
     await expect(page.locator('h1')).toHaveText(/^Free (?!Free )/);
     const record = await page

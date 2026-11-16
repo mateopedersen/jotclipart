@@ -1071,11 +1071,13 @@ export async function runHttpAudit(options) {
   must(SHA1.test(options.expectedControlRevision ?? ''), 'EXPECTED_CONTROL_REVISION_REQUIRED');
   const input = await loadHttpAuditInputs(options);
   const concurrency = options.concurrency ?? 8;
-  must(Number.isInteger(concurrency) && concurrency >= 1 && concurrency <= 8, 'CONCURRENCY_BOUND');
+  must(Number.isInteger(concurrency) && concurrency >= 1 && concurrency <= 16, 'CONCURRENCY_BOUND');
   const rps = options.requestsPerSecond ?? 40;
   must(Number.isInteger(rps) && rps >= 1 && rps <= 40, 'RATE_BOUND');
   const policy = {
-    version: 'jotclipart-http-acceptance-v2',
+    version: 'jotclipart-http-acceptance-v3',
+    concurrency,
+    requestsPerSecond: rps,
     toolSHA256: sha(await fsp.readFile(TOOL_FILE)),
     origin,
     mode,

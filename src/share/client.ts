@@ -1,7 +1,17 @@
 import { displayTitle } from '../lib/display-title.ts';
-import { artworkUrl, caption, SITE, socialLinks, type ShareOptions } from './core';
+import {
+  artworkUrl,
+  caption,
+  captionAndLink,
+  mergeOwnedShares,
+  normalizeOwnedShare,
+  SITE,
+  socialLinks,
+  type OwnedShare,
+  type ShareOptions,
+} from './core';
+import { handOffNativeShare, nativeShareMode, shareWasCancelled } from './native';
 
-type OwnedShare = { id: string; title: string; url: string; deleteToken: string };
 type Turnstile = {
   render: (container: HTMLElement, options: Record<string, unknown>) => string;
   remove: (id: string) => void;
@@ -10,25 +20,15 @@ const ownedKey = 'uc-public-shares-v1';
 let activeClose: (() => void) | undefined;
 const icon =
   '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 16V3m-5 5 5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-function validOwned(value: unknown): value is OwnedShare {
-  if (!value || typeof value !== 'object') return false;
-  const item = value as Partial<OwnedShare>;
-  return (
-    typeof item.id === 'string' &&
-    /^[a-f0-9]{32}$/.test(item.id) &&
-    typeof item.deleteToken === 'string' &&
-    /^[A-Za-z0-9_-]{43}$/.test(item.deleteToken) &&
-    typeof item.title === 'string' &&
-    item.title.trim().length > 0 &&
-    item.title.length <= 100 &&
-    !/[\u0000-\u001f\u007f]/.test(item.title) &&
-    item.url === `${SITE}/share/${item.id}/`
-  );
-}
 function owned(): OwnedShare[] {
   try {
     const value: unknown = JSON.parse(localStorage.getItem(ownedKey) || '[]');
-    return Array.isArray(value) ? value.filter(validOwned).slice(0, 1000) : [];
+    return Array.isArray(value)
+      ? value
+          .map(normalizeOwnedShare)
+          .filter((record): record is OwnedShare => !!record)
+          .slice(0, 1000)
+      : [];
   } catch {
     return [];
   }
@@ -162,6 +162,7 @@ export async function openShare(options: ShareOptions): Promise<void> {
   <section class="uc-share-options"><div class="uc-share-link-area"><label for="uc-share-link">A link back to the artwork</label><div class="uc-share-link-row"><input id="uc-share-link" readonly><button type="button" class="uc-share-copy-link">Copy link</button></div></div>
   <div class="uc-share-social" aria-label="Share on social media"></div><p class="uc-share-network-note">Choose where to share. You review the post before publishing.</p>
   <label for="uc-share-caption">Make the message your own</label><textarea id="uc-share-caption" rows="3" maxlength="500"></textarea><div class="uc-share-caption-actions"><button type="button" class="uc-share-copy-caption">Copy caption + link</button><a class="uc-share-email">Email</a></div>
+  <div class="uc-share-manual-copy" hidden><label for="uc-share-manual-text">Select and copy this complete message</label><textarea id="uc-share-manual-text" rows="4" readonly></textarea></div>
   <div class="uc-share-apps"><span>Sharing to</span><button type="button" data-share-app="instagram"><img src="/social/instagram.svg" width="19" height="19" alt="">Instagram</button><button type="button" data-share-app="tiktok"><img src="/social/tiktok.svg" width="19" height="19" alt="">TikTok</button><button type="button" class="uc-share-more">More apps</button></div>
   <div class="uc-share-app-help" hidden><p></p><a target="_blank" rel="noopener noreferrer">Open app website ↗</a></div>
   <details class="uc-share-publish"><summary>Create a public artwork link</summary><p>Only this finished image and its title will be uploaded. Anyone with the link can view and download it. Your project, layers and prompt stay private.</p><label for="uc-share-title">Artwork title</label><input id="uc-share-title" maxlength="100"><label class="uc-share-consent"><input type="checkbox">I want to make this image public and have permission to share it.</label><button type="button" class="uc-share-publish-button" disabled>Create public link</button><div class="uc-share-verification"></div><p>Free limited storage. Keep this browser’s saved removal key to delete your link later.</p></details>
@@ -231,12 +232,26 @@ export async function openShare(options: ShareOptions): Promise<void> {
   ) {
     try {
       await navigator.clipboard.writeText(value);
+      q('.uc-share-manual-copy').hidden = true;
       status(success);
     } catch {
-      field?.focus();
-      field?.select();
+      const manual = q<HTMLTextAreaElement>('#uc-share-manual-text');
+      const target = field?.value === value ? field : manual;
+      if (target === manual) {
+        manual.value = value;
+        q('.uc-share-manual-copy').hidden = false;
+      } else q('.uc-share-manual-copy').hidden = true;
+      target.focus();
+      target.select();
       status('Clipboard access is unavailable. Select and copy the text shown here.');
     }
+  }
+  function updateNativeButton() {
+    const mode = nativeShareMode(navigator, file);
+    const button = q<HTMLButtonElement>('.uc-share-native');
+    button.disabled = mode === 'none';
+    button.querySelector('span')!.textContent =
+      mode === 'link' ? 'Share link to apps' : 'Share image to apps';
   }
   function updateLinks() {
     q<HTMLElement>('.uc-share-link-area').hidden = !url;
@@ -272,13 +287,19 @@ export async function openShare(options: ShareOptions): Promise<void> {
     q<HTMLButtonElement>('.uc-share-more').hidden = !navigator.share || !url;
   }
   updateLinks();
+  updateNativeButton();
   text.addEventListener('input', updateLinks);
   q('.uc-share-copy-link').addEventListener('click', () => {
     if (url) void copy(url, 'Artwork link copied.', q<HTMLInputElement>('#uc-share-link'));
   });
   q('.uc-share-copy-caption').addEventListener(
     'click',
-    () => void copy(`${text.value}\n${url || source}`, 'Caption and JotClipart link copied.', text),
+    () =>
+      void copy(
+        captionAndLink(text.value, url || source),
+        'Caption and JotClipart link copied.',
+        text,
+      ),
   );
   q('.uc-share-download').addEventListener('click', () => {
     if (file) {
@@ -287,35 +308,49 @@ export async function openShare(options: ShareOptions): Promise<void> {
     }
   });
   q('.uc-share-native').addEventListener('click', () => {
-    if (!file || !navigator.canShare?.({ files: [file] })) {
-      status(
-        'This browser cannot share image files directly. Download the PNG and copy the caption instead.',
-      );
+    const handoff = handOffNativeShare(navigator, {
+      file,
+      title,
+      text: text.value,
+      url: url || source,
+    });
+    if (handoff.mode === 'none') {
+      status('Download the PNG and copy the caption to share it with your app.');
       return;
     }
-    void navigator
-      .share({ files: [file], title, text: `${text.value}\n${url || source}` })
-      .then(() => status('Image handed to your selected app.'))
+    void handoff.completion
+      .then(() =>
+        status(
+          handoff.mode === 'file'
+            ? 'Image handed to your selected app.'
+            : 'Link handed to your selected app.',
+        ),
+      )
       .catch((error) =>
         status(
-          error.name === 'AbortError'
+          shareWasCancelled(error)
             ? 'Sharing cancelled. Your artwork is unchanged.'
-            : 'The app could not receive the file. Download the PNG and copy the caption instead.',
+            : 'The app could not receive the share. Download the PNG or copy the caption and link instead.',
         ),
       );
   });
   q('.uc-share-more').addEventListener('click', () => {
-    if (url && navigator.share)
-      void navigator
-        .share({ title, text: text.value, url })
+    if (url) {
+      const handoff = handOffNativeShare(navigator, { title, text: text.value, url });
+      if (handoff.mode === 'none') {
+        status('Use Copy link to share this artwork.');
+        return;
+      }
+      void handoff.completion
         .then(() => status('Link handed to your selected app.'))
         .catch((error) =>
           status(
-            error.name === 'AbortError'
+            shareWasCancelled(error)
               ? 'Sharing cancelled.'
               : 'Use Copy link to share this artwork.',
           ),
         );
+    }
   });
   dialog.querySelectorAll<HTMLButtonElement>('[data-share-app]').forEach((button) =>
     button.addEventListener('click', () => {
@@ -415,7 +450,7 @@ export async function openShare(options: ShareOptions): Promise<void> {
     if (!records.length) return;
     save(
       new Blob([JSON.stringify(records, null, 2)], { type: 'application/json' }),
-      'ultraclipart-share-removal-keys.json',
+      'jotclipart-share-removal-keys.json',
     );
     status(
       'Removal keys saved. Keep this file private; restoring it does not publish or remove any artwork.',
@@ -432,15 +467,8 @@ export async function openShare(options: ShareOptions): Promise<void> {
         throw new Error('Removal-key files must be smaller than 1 MB.');
       const parsed: unknown = JSON.parse(await selected.text());
       const records: unknown[] = Array.isArray(parsed) ? parsed : [parsed];
-      if (!records.length || records.length > 1000 || !records.every(validOwned))
-        throw new Error(
-          'This is not a valid JotClipart removal-key backup. Your saved keys are unchanged.',
-        );
-      const merged = new Map(owned().map((record) => [record.id, record]));
-      for (const record of records as OwnedShare[]) merged.set(record.id, record);
-      if (merged.size > 1000)
-        throw new Error('This device already has too many saved removal keys.');
-      localStorage.setItem(ownedKey, JSON.stringify([...merged.values()]));
+      const merged = mergeOwnedShares(owned(), records);
+      localStorage.setItem(ownedKey, JSON.stringify(merged));
       for (const record of records as OwnedShare[]) removedKeys.delete(record.id);
       if (closed) return;
       renderOwned();
@@ -514,7 +542,7 @@ export async function openShare(options: ShareOptions): Promise<void> {
             } catch {
               save(
                 new Blob([JSON.stringify(record, null, 2)], { type: 'application/json' }),
-                'ultraclipart-share-removal-key.json',
+                'jotclipart-share-removal-key.json',
               );
             }
             renderOwned();
@@ -596,7 +624,7 @@ export async function openShare(options: ShareOptions): Promise<void> {
     const canvas = await canvasFor(original);
     file = new File(
       [await encode(canvas, 'image/png')],
-      'ultraclipart-' +
+      'jotclipart-' +
         title
           .toLowerCase()
           .replace(/[^a-z0-9]+/g, '-')
@@ -608,10 +636,10 @@ export async function openShare(options: ShareOptions): Promise<void> {
     previewUrl = URL.createObjectURL(file);
     q<HTMLImageElement>('.uc-share-preview img').src = previewUrl;
     q<HTMLButtonElement>('.uc-share-download').disabled = false;
-    const canShare = !!navigator.canShare?.({ files: [file] });
-    q<HTMLButtonElement>('.uc-share-native').disabled = !canShare;
+    const mode = nativeShareMode(navigator, file);
+    updateNativeButton();
     q('.uc-share-file-note').textContent =
-      `${canvas.width} × ${canvas.height} PNG · ${canShare ? 'Ready for your apps' : 'Download and post in your favorite app'}`;
+      `${canvas.width} × ${canvas.height} PNG · ${mode === 'file' ? 'Ready for your apps' : 'Download and post in your favorite app'}`;
     publishButton.disabled = !consent.checked;
   } catch (error) {
     q('.uc-share-file-note').textContent = 'Image preparation unavailable';

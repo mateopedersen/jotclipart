@@ -372,6 +372,31 @@
   overflow: auto;
   --wb-work-height: calc(100dvh - 235px);
 }
+/* The parser-time seed uses the existing workspace layout. A normal link keeps
+   a delayed/failed startup escapable before the interactive controls are ready. */
+.uc-editor > .uc-startup-back {
+  display: none;
+}
+.uc-editor[data-wb-startup='workspace'][data-wb-focus='true'][aria-busy='true'] > .uc-startup-back,
+.uc-editor[data-wb-startup='workspace'][data-wb-focus='true']:has(
+    [data-status][data-error='true']
+  ):has([data-wb-back-page]:disabled)
+  > .uc-startup-back {
+  display: inline-flex;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 3;
+  padding: 8px 12px;
+  border: 1px solid var(--brand-border);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--brand-ink);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+/* End parser-time workspace escape. */
 .uc-next .wb-dialog {
   width: min(660px, calc(100vw - 24px));
   max-height: calc(100dvh - 30px);

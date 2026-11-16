@@ -1,5 +1,6 @@
 import { siteNavigationScript } from '../../src/lib/site-navigation-inline.mjs';
 import { bindSiteNavigationPolicy } from './compilers/navigation-policy.mjs';
+import { bindStudioWorkspaceStartupPolicy } from './compilers/workspace-startup-policy.mjs';
 // Build the small software control layer, reusing the verified static fallback.
 // No catalogue pages, media exports, uploads, pointer changes or activation.
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
@@ -42,8 +43,10 @@ if (
 )
   throw Error('Reviewed compiled software and public key configuration required');
 const baselinePolicy = JSON.parse(readFileSync('config/jotclipart-http-policy.json'));
-const page = bindSiteNavigationPolicy(
-  bindCookieScriptPolicy(baselinePolicy.page, [cookieStartupScript, cookieMountScript]),
+const page = bindStudioWorkspaceStartupPolicy(
+  bindSiteNavigationPolicy(
+    bindCookieScriptPolicy(baselinePolicy.page, [cookieStartupScript, cookieMountScript]),
+  ),
 );
 const scheduleHash =
   "'sha256-" + createHash('sha256').update(originalImageSchedulingScript).digest('base64') + "'";

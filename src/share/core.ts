@@ -8,6 +8,55 @@ export type ShareOptions = {
   sourceUrl?: string;
 };
 export const SITE = 'https://jotclipart.com';
+export type OwnedShare = { id: string; title: string; url: string; deleteToken: string };
+
+// Read compatible removal keys without changing their stored bytes. Only the
+// exact historical host and matching share identity may acquire a new UI URL.
+export function normalizeOwnedShare(value: unknown): OwnedShare | undefined {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return;
+  const item = value as Partial<OwnedShare>;
+  if (
+    typeof item.id !== 'string' ||
+    !/^[a-f0-9]{32}$/.test(item.id) ||
+    typeof item.deleteToken !== 'string' ||
+    !/^[A-Za-z0-9_-]{43}$/.test(item.deleteToken) ||
+    typeof item.title !== 'string' ||
+    !item.title.trim() ||
+    item.title.length > 100 ||
+    /[\u0000-\u001f\u007f]/.test(item.title) ||
+    ![`${SITE}/share/${item.id}/`, `https://ultraclipart.com/share/${item.id}/`].includes(
+      item.url ?? '',
+    )
+  )
+    return;
+  return { ...item, url: `${SITE}/share/${item.id}/` } as OwnedShare;
+}
+
+export function mergeOwnedShares(existing: OwnedShare[], incoming: unknown[]): OwnedShare[] {
+  if (!incoming.length || incoming.length > 1000)
+    throw new Error(
+      'This is not a valid JotClipart removal-key backup. Your saved keys are unchanged.',
+    );
+  const merged = new Map(existing.map((record) => [record.id, record]));
+  for (const value of incoming) {
+    const record = normalizeOwnedShare(value);
+    if (!record)
+      throw new Error(
+        'This is not a valid JotClipart removal-key backup. Your saved keys are unchanged.',
+      );
+    const previous = merged.get(record.id);
+    if (previous && previous.deleteToken !== record.deleteToken)
+      throw new Error(
+        'A different removal key already exists for this link. Keep both backup files; your saved keys are unchanged.',
+      );
+    if (!previous) merged.set(record.id, record);
+  }
+  if (merged.size > 1000) throw new Error('This device already has too many saved removal keys.');
+  return [...merged.values()];
+}
+
+export const captionAndLink = (text: string, url: string) => `${text}\n${url}`;
+
 export function publicMediaUrl(value?: string): string | undefined {
   if (!value) return;
   try {

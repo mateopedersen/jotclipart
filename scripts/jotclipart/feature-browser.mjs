@@ -732,6 +732,16 @@ async function allWorkbenchCommands() {
     }
   };
   const select = async (ids) => {
+    const mobileInspector = await page.evaluate(
+      () => matchMedia('(max-width: 800px), (pointer: coarse) and (max-height: 600px)').matches,
+    );
+    const viewCanvas = page.locator('.uc-properties [data-inspector-canvas]');
+    if (mobileInspector && (await viewCanvas.isVisible())) {
+      // Follow the responsive inspector's real exit control before reaching a
+      // toolbar behind it. Opening a project does not reset the current panel.
+      await click(viewCanvas);
+      await expect(page.locator('.uc-editor')).toHaveAttribute('data-properties-collapsed', 'true');
+    }
     await click(page.locator('.uc-tools [data-panel=layers]'));
     for (const [index, id] of ids.entries()) {
       const layer = page.locator(`[data-select="${id}"]`);

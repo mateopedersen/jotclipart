@@ -30,7 +30,7 @@ const escape = (value) =>
     .replaceAll('<', '&lt;')
     .replaceAll('>', '&gt;');
 const scriptJSON = (value) => JSON.stringify(value).replaceAll('<', '\\u003c');
-async function fixture() {
+async function fixture({ additionalPages = 0 } = {}) {
   mkdirSync(resolve('work'), { recursive: true });
   const directory = mkdtempSync(join(resolve('work'), 'jot-http-test-'));
   const pair = generateKeyPairSync('ed25519');
@@ -146,7 +146,18 @@ async function fixture() {
     descriptionUnchanged: true,
   };
   const page = { kind: 'page', path: '/about/', newCanonical: primary + '/about/' };
-  const paths = [new URL(art.newCanonical).pathname, topic.path, collection.path, page.path];
+  const extraPages = Array.from({ length: additionalPages }, (_, i) => ({
+    kind: 'page',
+    path: `/fixture-page-${i}/`,
+    newCanonical: primary + `/fixture-page-${i}/`,
+  }));
+  const paths = [
+    new URL(art.newCanonical).pathname,
+    topic.path,
+    collection.path,
+    page.path,
+    ...extraPages.map((item) => item.path),
+  ];
   const outputChecksums = [];
   async function write(name, value) {
     const bytes = Buffer.isBuffer(value) ? value : Buffer.from(value);
@@ -183,8 +194,8 @@ async function fixture() {
       artworks: 1,
       topics: 1,
       collections: 1,
-      otherPages: 1,
-      canonicalPages: 4,
+      otherPages: 1 + additionalPages,
+      canonicalPages: 4 + additionalPages,
       legacyArtworkPaths: 1,
       unreconciledAssetReferences: 0,
     },
@@ -212,6 +223,7 @@ async function fixture() {
     [topic.path, topic],
     [collection.path, collection],
     [page.path, page],
+    ...extraPages.map((item) => [item.path, item]),
   ]);
   function html(path) {
     const record = documents.get(path),
@@ -353,8 +365,8 @@ async function fixture() {
     report,
   };
 }
-async function withFixture(run) {
-  const f = await fixture();
+async function withFixture(run, options) {
+  const f = await fixture(options);
   try {
     return await run(f);
   } finally {
@@ -734,28 +746,95 @@ test('resumable evidence skips only verified completed jobs and never stores raw
       4,
     );
   }));
-test('network work stays within eight concurrent jobs and rejects a larger worker pool', () =>
+for (const concurrency of [undefined, 16])
+  test(
+    'network work preserves the default eight jobs and explicitly bounds sixteen requested jobs: ' +
+      concurrency,
+    () =>
+      withFixture(
+        async (f) => {
+          const t = f.transport();
+          let active = 0,
+            peak = 0;
+          const fetcher = async (...args) => {
+            active++;
+            peak = Math.max(peak, active);
+            try {
+              await new Promise((done) => setTimeout(done, 2));
+              return await t.fetcher(...args);
+            } finally {
+              active--;
+            }
+          };
+          const result = await runHttpAudit({
+            ...f.options,
+            fetcher,
+            ...(concurrency ? { concurrency } : {}),
+          });
+          assert.equal(result.status, 'HTTP_AUDIT_PASSED');
+          assert.equal(peak, concurrency ?? 8);
+          assert.equal(result.concurrency, concurrency ?? 8);
+          assert.equal(result.completed, 27);
+          await assert.rejects(
+            runHttpAudit({ ...f.options, fetcher, concurrency: 17 }),
+            /CONCURRENCY_BOUND/,
+          );
+        },
+        { additionalPages: 16 },
+      ),
+  );
+test('invalid pool/rate choices fail before any network request and the actual twenty-per-second reservation stays shared', () =>
   withFixture(async (f) => {
     const t = f.transport();
-    let active = 0,
-      peak = 0;
-    const fetcher = async (...args) => {
-      active++;
-      peak = Math.max(peak, active);
-      try {
-        await new Promise((done) => setTimeout(done, 2));
-        return await t.fetcher(...args);
-      } finally {
-        active--;
-      }
-    };
-    const result = await runHttpAudit({ ...f.options, fetcher, concurrency: 8 });
-    assert.equal(result.status, 'HTTP_AUDIT_PASSED');
-    assert.equal(peak, 8);
-    await assert.rejects(
-      runHttpAudit({ ...f.options, fetcher, concurrency: 9 }),
-      /CONCURRENCY_BOUND/,
+    for (const concurrency of [0, -1, 1.5, NaN, Infinity])
+      await assert.rejects(
+        runHttpAudit({ ...f.options, fetcher: t.fetcher, concurrency }),
+        /CONCURRENCY_BOUND/,
+      );
+    for (const requestsPerSecond of [0, -1, 1.5, NaN, Infinity, 41])
+      await assert.rejects(
+        runHttpAudit({ ...f.options, fetcher: t.fetcher, requestsPerSecond }),
+        /RATE_BOUND/,
+      );
+    assert.equal(t.calls.length, 0);
+    const waits = [];
+    const throttle = createRateLimiter({
+      requestsPerSecond: 20,
+      now: () => 0,
+      delay: async (ms) => waits.push(ms),
+    });
+    await Promise.all(Array.from({ length: 16 }, () => throttle()));
+    assert.deepEqual(
+      waits,
+      Array.from({ length: 15 }, (_, i) => (i + 1) * 50),
     );
+    let attempts = 0,
+      cancelled = 0,
+      reservations = 0;
+    await assert.rejects(
+      fetchBounded(preview + '/', {
+        throttle: async () => {
+          reservations++;
+          await throttle();
+        },
+        delay: async () => {},
+        fetcher: async () => {
+          attempts++;
+          return new Response(
+            new ReadableStream({
+              cancel() {
+                cancelled++;
+              },
+            }),
+            { status: 429, headers: { 'retry-after': '99' } },
+          );
+        },
+      }),
+      /TRANSIENT_HTTP_EXHAUSTED/,
+    );
+    assert.equal(attempts, 3);
+    assert.equal(cancelled, 3);
+    assert.equal(reservations, 3);
   }));
 test('a torn last record is archived and rechecked; intact ledger corruption is rejected', () =>
   withFixture(async (f) => {

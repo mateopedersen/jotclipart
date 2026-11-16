@@ -18,6 +18,21 @@ const types = {
   '.wasm': 'application/wasm',
 };
 
+/** Keep a genuine public canonical redirect inside this explicit local preview. */
+export function localNavigationHeaders(response, localOrigin) {
+  if (!/^http:\/\/(?:127\.0\.0\.1|localhost):[1-9][0-9]{0,4}$/.test(localOrigin))
+    throw Error('Explicit loopback preview origin required');
+  new URL(localOrigin);
+  const headers = new Headers(response.headers);
+  const location = headers.get('location');
+  if (location && [301, 302, 303, 307, 308].includes(response.status)) {
+    const target = new URL(location, 'https://jotclipart.com');
+    if (target.origin === 'https://jotclipart.com' && !target.username && !target.password)
+      headers.set('location', localOrigin + target.pathname + target.search + target.hash);
+  }
+  return headers;
+}
+
 // An isolated, bounded local substitute for the edge Cache API, for warm/cold
 // request testing. It never persists or uploads catalog/user data.
 export function localCache(maxBytes = 64 * 1024 * 1024) {
@@ -67,13 +82,25 @@ export async function createLocalPreview({
   cache = true,
   workerPath,
   ogBinding,
+  previewBodyOrigin,
 } = {}) {
+  if (
+    previewBodyOrigin &&
+    !['https://jotclipart.com', 'https://preview.jotclipart.com'].includes(previewBodyOrigin)
+  )
+    throw Error('Exact public JotClipart preview-body origin required');
   if (ogBinding && typeof ogBinding.fetch !== 'function')
     throw Error('Explicit local OG service adapter required');
   root = resolve(root);
   metadata = resolve(metadata);
   const output = await realpath(resolve(root, 'dist'));
-  const metrics = { reads: 0, bytes: 0, missing: new Map() };
+  const metrics = {
+    reads: 0,
+    bytes: 0,
+    previewBodyReads: 0,
+    previewBodyBytes: 0,
+    missing: new Map(),
+  };
   const cacheApi = localCache();
   if (cache) globalThis.caches = { default: cacheApi };
   else delete globalThis.caches;
@@ -86,6 +113,40 @@ export async function createLocalPreview({
     ...(ogBinding ? { OG_RENDERER: ogBinding } : {}),
     CATALOG_PAGES: {
       async get(key) {
+        if (previewBodyOrigin && /^delivery\/previews\/p1\/[a-f0-9]{24}-960\.webp$/.test(key)) {
+          // The runtime's signed allowlist and full SHA check still authorize
+          // the body. This explicit local adapter only reads its public bytes.
+          const response = await fetch(previewBodyOrigin + key.slice('delivery'.length), {
+            redirect: 'error',
+            credentials: 'omit',
+            signal: AbortSignal.timeout(30000),
+          });
+          if (response.status === 404) return null;
+          if (!response.ok || response.headers.get('content-type')?.split(';')[0] !== 'image/webp')
+            throw Error('Verified local editor preview unavailable');
+          const chunks = [];
+          let length = 0;
+          const reader = response.body?.getReader();
+          if (!reader) throw Error('Missing local editor preview body');
+          while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            length += value.length;
+            if (length > 1048576) {
+              await reader.cancel();
+              throw Error('Local editor preview exceeds bound');
+            }
+            chunks.push(value);
+          }
+          const body = Buffer.concat(chunks);
+          metrics.previewBodyReads++;
+          metrics.previewBodyBytes += body.length;
+          return {
+            size: body.length,
+            httpMetadata: { contentType: 'image/webp' },
+            arrayBuffer: async () => body,
+          };
+        }
         metrics.reads++;
         const pointer = key === 'catalog/jotclipart/active.json';
         const match =
@@ -179,6 +240,8 @@ export async function createLocalPreview({
     summary: () => ({
       r2Reads: metrics.reads,
       r2Bytes: metrics.bytes,
+      publicPreviewBodyReads: metrics.previewBodyReads,
+      publicPreviewBodyBytes: metrics.previewBodyBytes,
       missingObjects: [...metrics.missing].map(([key, requests]) => ({ key, requests })),
       cache: cacheApi.stats(),
     }),
@@ -204,7 +267,12 @@ export async function serveLocal({ port = 8797, ...options } = {}) {
       const response = await preview.handle(
         new Request(new URL(req.url, 'https://jotclipart.com'), init),
       );
-      res.writeHead(response.status, Object.fromEntries(response.headers));
+      const localOrigin =
+        localOrigins.find((origin) => new URL(origin).host === req.headers.host) ?? localOrigins[0];
+      res.writeHead(
+        response.status,
+        Object.fromEntries(localNavigationHeaders(response, localOrigin)),
+      );
       res.end(req.method === 'HEAD' ? undefined : Buffer.from(await response.arrayBuffer()));
     } catch (error) {
       res.writeHead(500, { 'content-type': 'text/plain' });

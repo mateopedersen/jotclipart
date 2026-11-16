@@ -25,6 +25,7 @@ const run = (script, ...args) =>
   execFileSync(process.execPath, [script, ...args], { stdio: 'inherit', cwd: root });
 const sha = (b) => createHash('sha256').update(b).digest('hex');
 run('scripts/build-site-icons.mjs');
+run('scripts/jotclipart/wordmark.mjs', '--check');
 run('scripts/verify-social-images.mjs');
 const ogWorker = await buildOgWorker({ root, buildRoot });
 const editorPreviewIndex = await buildEditorPreviewIndex({ root, buildRoot });

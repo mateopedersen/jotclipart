@@ -1,6 +1,7 @@
 ---
 import { artworkPath } from '../lib/artwork-route.mjs';
 import { displayTitle } from '../lib/display-title';
+import { studioWorkspaceStartupScript } from '../lib/studio-workspace-startup.mjs';
 import Icon from './Icon.astro';
 import StudioIcon from './StudioIcon.astro';
 import ExportFormatIcon from './ExportFormatIcon.astro';
@@ -83,6 +84,12 @@ const toolItems = [
   aria-label={creator ? 'Clipart creation studio' : 'Clipart editor'}
   aria-busy="true"
 >
+  {creator && <script is:inline set:html={studioWorkspaceStartupScript} />}
+  {creator && (
+    <a class="uc-startup-back" href="/create/">
+      Back to page
+    </a>
+  )}
   <div class="uc-command">
     <div>
       {creator ? (

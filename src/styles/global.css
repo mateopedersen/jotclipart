@@ -375,7 +375,7 @@ p {
   flex-shrink: 0;
   display: block;
   aspect-ratio: 1.16;
-  background: #f0f5f1;
+  background: #ffffff;
   padding: 9px;
 }
 .art-card:nth-child(3n + 2) .art-picture {
