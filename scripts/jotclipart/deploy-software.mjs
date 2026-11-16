@@ -39,7 +39,7 @@ const output = execFileSync(
     'JotClipart independent native software ' + revision,
     '--commit-dirty=false',
   ],
-  { encoding: 'utf8', maxBuffer: 2000000, stdio: ['ignore', 'pipe', 'pipe'] },
+  { encoding: 'utf8', maxBuffer: 2000000, env:{...process.env,CLOUDFLARE_ACCOUNT_ID:config.accountId}, stdio: ['ignore', 'pipe', 'pipe'] },
 );
 writeFileSync('work/jotclipart-deployment/' + environment + '.log', output, { mode: 0o600 });
 const urls = [...output.matchAll(/https:\/\/[a-z0-9-]+\.jotclipart\.pages\.dev\/?/g)].map(
