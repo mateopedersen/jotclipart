@@ -5,19 +5,19 @@
   "r2_buckets": [
     {
       "binding": "CATALOG_PAGES",
-      "bucket_name": "ultraclipart-pages",
-    },
+      "bucket_name": "ultraclipart-pages"
+    }
   ],
   "ai": {
-    "binding": "AI",
+    "binding": "AI"
   },
   "d1_databases": [
     {
       "binding": "AI_DB",
       "database_name": "ultraclipart-ai-quota",
       "database_id": "4099f6dc-b595-41c4-85e2-c7922ea1c0f4",
-      "migrations_dir": "migrations",
-    },
+      "migrations_dir": "migrations"
+    }
   ],
   "vars": {
     "SHARE_ENABLED": "true",
@@ -31,6 +31,31 @@
     "MAX_CONCURRENT_JOBS": "2",
     "AI_EDIT_ENABLED": "false",
     "AI_MODEL_ALLOWLIST": "@cf/black-forest-labs/flux-1-schnell,@cf/meta/llama-3.1-8b-instruct-fp8-fast",
-    "TURNSTILE_SITEKEY": "0x4AAAAAAFjox3Yo7r7lMR6i",
+    "TURNSTILE_SITEKEY": "0x4AAAAAAFjox3Yo7r7lMR6i"
   },
+  "env": {
+    "preview": {
+      "r2_buckets": [
+        {
+          "binding": "CATALOG_PAGES",
+          "bucket_name": "ultraclipart-pages"
+        }
+      ],
+      "d1_databases": [],
+      "vars": {
+        "SHARE_ENABLED": "false",
+        "SHARE_PUBLIC_ORIGIN": "https://jotclipart.com",
+        "AI_GENERATION_ENABLED": "false",
+        "AI_FREE_PLAN_CONFIRMED": "true",
+        "AI_PUBLIC_ORIGIN": "https://jotclipart.com",
+        "MAX_DAILY_NEURONS": "6000",
+        "MAX_DAILY_GENERATIONS": "24",
+        "MAX_GENERATIONS_PER_VISITOR": "2",
+        "MAX_CONCURRENT_JOBS": "2",
+        "AI_EDIT_ENABLED": "false",
+        "AI_MODEL_ALLOWLIST": "@cf/black-forest-labs/flux-1-schnell,@cf/meta/llama-3.1-8b-instruct-fp8-fast",
+        "TURNSTILE_SITEKEY": "0x4AAAAAAFjox3Yo7r7lMR6i"
+      }
+    }
+  }
 }
