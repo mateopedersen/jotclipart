@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 10
           persist-credentials: false
       - name: Confirm every application input is the deployed B10 source
         run: git diff --exit-code b10a122f4eb7406586276630dbb4abe49076c051 -- src server public config package.json pnpm-lock.yaml astro.config.mjs
