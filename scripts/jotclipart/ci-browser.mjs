@@ -273,8 +273,25 @@ async function browserFlow() {
   const page = await context.newPage();
   currentPage = page;
   const dismiss = async (p) => {
-    const choice = p.locator('[data-cookie-choice=necessary]:visible').first();
+    await p.waitForFunction(() => typeof window.__ucCookieNoticeReady?.then === 'function', null, {
+      timeout: 10000,
+    });
+    await p.evaluate(async () => {
+      let timeout;
+      try {
+        await Promise.race([
+          window.__ucCookieNoticeReady,
+          new Promise((_, reject) => {
+            timeout = setTimeout(() => reject(Error('Cookie notice readiness timed out')), 7000);
+          }),
+        ]);
+      } finally {
+        clearTimeout(timeout);
+      }
+    });
+    const choice = p.locator('#cookie-notice [data-cookie-choice=necessary]:visible').first();
     if (await choice.count()) await choice.click();
+    await expect(p.locator('#cookie-notice')).not.toBeVisible();
   };
   const layout = async (p) => {
     await p.evaluate(() => document.fonts.ready);
@@ -292,11 +309,11 @@ async function browserFlow() {
       '#52B788',
     );
   };
-  const navigate = async (p, path) => {
+  const navigate = async (p, path, { javascript = true } = {}) => {
     const r = await p.goto(origin + path, { waitUntil: 'domcontentloaded' });
     assert.equal(r.status(), 200, path);
     assert.equal(r.headers()['x-uc-snapshot'], pin.snapshotRoot, 'Mixed snapshot on ' + path);
-    await dismiss(p);
+    if (javascript) await dismiss(p);
     return r;
   };
   const check = (name, details = {}) => report.checks.push({ name, ...details });
@@ -452,10 +469,14 @@ async function browserFlow() {
     if ((await favorite.getAttribute('aria-pressed')) !== 'true') await click(favorite);
     await expect(favorite).toHaveAttribute('aria-pressed', 'true');
     await navigate(page, '/search/?q=' + encodeURIComponent(pin.sample.topic) + '&type=artwork');
-    await expect(page.locator('#search-results')).toHaveAttribute('aria-busy', 'false');
+    await expect(page.locator('#search-results')).toHaveAttribute('aria-busy', 'false', {
+      timeout: 30000,
+    });
     assert((await page.locator('#search-results .art-card').count()) > 0);
     await page.locator('#search-query').fill(record.title.replace(/ clipart$/i, ''));
-    await expect(page.locator(`#search-results [data-id="${record.id}"]`)).toBeVisible();
+    await expect(page.locator(`#search-results [data-id="${record.id}"]`)).toBeVisible({
+      timeout: 30000,
+    });
     await layout(page);
     check('Actual search UI resolves the selected identity');
     await navigate(page, '/edit/' + record.id + '/');
@@ -552,7 +573,7 @@ async function browserFlow() {
       await browser.newContext({ viewport: report.viewport, javaScriptEnabled: false }),
     );
     const plain = await noJS.newPage();
-    await navigate(plain, pin.sample.canonicalPath);
+    await navigate(plain, pin.sample.canonicalPath, { javascript: false });
     for (const format of ['webp', 'pdf'])
       assert.equal(
         new URL(

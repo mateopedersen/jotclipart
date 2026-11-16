@@ -28,6 +28,29 @@ const sha = (b) => createHash('sha256').update(b).digest('hex'),
             : { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'" }[k.toLowerCase()],
       )
       .trim();
+
+/** Worker source for the same strict authority split used by the public handler.
+ * The candidate is a frozen private input, never a live pointer read or an
+ * invented authorization flag. Explicit preparations remain unpublishable. */
+export function nativeCandidateCaptureSource(
+  candidate,
+  report,
+  { activeKey = 'catalog/active.json' } = {},
+) {
+  assert(['catalog/active.json', 'catalog/jotclipart/active.json'].includes(activeKey));
+  if (candidate.fixture === true || candidate.status === 'PRIVATE_UNPUBLISHABLE')
+    return 'async function captureNativeCandidate(scoped){return openSnapshot(scoped,{provided:snapshot,allowFixture:true})}';
+  assert.match(report.publicKeyHex ?? '', /^[a-f0-9]{64}$/, 'Installed public verifier required');
+  const verifier = {
+    accountId: report.accountId,
+    bucketName: report.bucketName,
+    keyId: report.keyId,
+    abiSHA256: report.abiSHA256,
+    activeKey,
+    ...(report.acceptedPredecessor ? { acceptedPredecessor: report.acceptedPredecessor } : {}),
+  };
+  return `const nativeVerifier={...${JSON.stringify(verifier)},publicKey:Uint8Array.from(${JSON.stringify([...Buffer.from(report.publicKeyHex, 'hex')])})};async function captureNativeCandidate(scoped){const bytes=new TextEncoder().encode(JSON.stringify(snapshot));return captureProductionSnapshot({async get(key){if(key===nativeVerifier.activeKey)return{size:bytes.length,json:async()=>structuredClone(snapshot),arrayBuffer:async()=>bytes.buffer};return scoped.get(key)}},nativeVerifier)}`;
+}
 export async function verifyNativeContent(options) {
   const verify = () => verifyNativeContentWithSource(options);
   return typeof options.parentBucket?.withoutDiskCacheAdmissions === 'function'
@@ -91,10 +114,13 @@ async function verifyNativeContentWithSource({
   for (const [file, hash] of Object.entries(report.sourceInputs))
     if (!['trusted-public-config', 'http-policy'].includes(file))
       assert.equal(sha(readFileSync(file)), hash, 'Installed renderer source changed: ' + file);
+  const captureSource = nativeCandidateCaptureSource(candidate, report, {
+    activeKey: projected ? 'catalog/jotclipart/active.json' : 'catalog/active.json',
+  });
   const code = await build({
       stdin: {
         resolveDir: process.cwd(),
-        contents: `import{openSnapshot}from'./server/catalog-snapshot/snapshot-context.mjs';import{requestBucket}from'./server/catalog-snapshot/request-bucket.mjs';import{immutableMetadataCache}from'./server/catalog-snapshot/immutable-cache.mjs';import{createCatalogHandler}from'./server/catalog-snapshot/handler.mjs';import{validateInlineScripts}from'./server/catalog-snapshot/response-policy.mjs';import{renderers}from${JSON.stringify(resolve(software, 'runtime/renderers-entry.mjs'))};const snapshot=${JSON.stringify(candidate)},bucket={async get(key){const r=await fetch('https://catalog-private.invalid/'+encodeURIComponent(key));if(r.status===404)return null;if(!r.ok)throw Error('Private metadata service failed');const bytes=await r.arrayBuffer();return{size:bytes.byteLength,arrayBuffer:async()=>bytes,json:async()=>JSON.parse(new TextDecoder().decode(bytes))}}};const metadata=immutableMetadataCache();export default{async fetch(request){const scoped=requestBucket({get:key=>metadata.get(bucket,key)}),handler=createCatalogHandler({bucket:scoped,capture:()=>openSnapshot(scoped,{provided:snapshot,allowFixture:true}),allowPrivateFixture:true,softwareRevision:${JSON.stringify(report.revision)},renderers,cache:caches.default,rendererSHA256:${JSON.stringify(report.abiSHA256)},validateHTML:html=>validateInlineScripts(html,${JSON.stringify(report.policy.inlineSHA256)})});return await handler(request)??new Response('Retained software fallback',{status:418})}}`,
+        contents: `import{openSnapshot}from'./server/catalog-snapshot/snapshot-context.mjs';import{captureProductionSnapshot}from'./server/catalog-snapshot/signed-production-snapshot.mjs';import{requestBucket}from'./server/catalog-snapshot/request-bucket.mjs';import{immutableMetadataCache}from'./server/catalog-snapshot/immutable-cache.mjs';import{createCatalogHandler}from'./server/catalog-snapshot/handler.mjs';import{validateInlineScripts}from'./server/catalog-snapshot/response-policy.mjs';import{renderers}from${JSON.stringify(resolve(software, 'runtime/renderers-entry.mjs'))};const snapshot=${JSON.stringify(candidate)},bucket={async get(key){const r=await fetch('https://catalog-private.invalid/'+encodeURIComponent(key));if(r.status===404)return null;if(!r.ok)throw Error('Private metadata service failed');const bytes=await r.arrayBuffer();return{size:bytes.byteLength,arrayBuffer:async()=>bytes,json:async()=>JSON.parse(new TextDecoder().decode(bytes))}}};const metadata=immutableMetadataCache();${captureSource};export default{async fetch(request){const scoped=requestBucket({get:key=>metadata.get(bucket,key)}),handler=createCatalogHandler({bucket:scoped,capture:()=>captureNativeCandidate(scoped),allowPrivateFixture:true,softwareRevision:${JSON.stringify(report.revision)},renderers,cache:caches.default,rendererSHA256:${JSON.stringify(report.abiSHA256)},validateHTML:html=>validateInlineScripts(html,${JSON.stringify(report.policy.inlineSHA256)})});return await handler(request)??new Response('Retained software fallback',{status:418})}}`,
       },
       write: false,
       bundle: true,
@@ -175,7 +201,11 @@ async function verifyNativeContentWithSource({
           redirect: 'manual',
         });
         if (c.record && path !== requestedPath) {
-          assert.equal(r.status, 301, requestedPath + ' stable ID must redirect');
+          assert.equal(
+            r.status,
+            301,
+            requestedPath + ' stable ID must redirect; ' + (r.headers.get('x-private-error') ?? ''),
+          );
           assert.equal(r.headers.get('location'), canonicalOrigin + path);
           await r.arrayBuffer();
           results.push({

@@ -75,6 +75,7 @@ for (const file of [
   'src/lib/original-image-scheduling-inline.mjs',
   'server/jotclipart/fallback.mjs',
   'server/jotclipart/preview-policy.mjs',
+  'server/jotclipart/canonical-origin.mjs',
 ])
   softwareInputs.set(file, sha(readFileSync(file)));
 for (const kind of ['art', 'editor', 'home', 'collection', 'shell']) {
@@ -177,7 +178,7 @@ clientAssets.set(fontURL, {
 const shared = `${imports.join('\n')}\nconst renderers={art,editor,home,collection,shells,shellScripts,moduleImports:${JSON.stringify(moduleImports)}};\n`,
   runtimeImport =
     `import{handleShare}from${JSON.stringify(join(root, 'server/share/handler.mjs'))};import{handleAi}from${JSON.stringify(join(root, 'server/ai/handler.mjs'))};import{createSnapshotRuntime}from${JSON.stringify(join(root, 'server/catalog-snapshot/runtime.mjs'))};` +
-    `import{immutableSoftwareAssetResponse}from${JSON.stringify(join(root, 'server/catalog-snapshot/software-assets.mjs'))};import{staticNavigationPolicy}from${JSON.stringify(join(root, 'server/catalog-snapshot/static-navigation-policy.mjs'))};import{withPreviewResponsePolicy}from${JSON.stringify(join(root, 'server/jotclipart/preview-policy.mjs'))};`,
+    `import{immutableSoftwareAssetResponse}from${JSON.stringify(join(root, 'server/catalog-snapshot/software-assets.mjs'))};import{staticNavigationPolicy}from${JSON.stringify(join(root, 'server/catalog-snapshot/static-navigation-policy.mjs'))};import{withPreviewResponsePolicy}from${JSON.stringify(join(root, 'server/jotclipart/preview-policy.mjs'))};import{canonicalPublicRedirect}from${JSON.stringify(join(root, 'server/jotclipart/canonical-origin.mjs'))};`,
   config = JSON.stringify({ ...cfg, publicKey: undefined });
 // The installed publisher reuses this checksum-bound Node bundle. No template
 // build or unbound worktree import is needed for later content transactions.
@@ -237,7 +238,7 @@ const probe = await build({
     contents:
       runtimeImport +
       shared +
-      'export{handleAi,handleShare,renderers,immutableSoftwareAssetResponse,staticNavigationPolicy,withPreviewResponsePolicy};',
+      'export{handleAi,handleShare,renderers,immutableSoftwareAssetResponse,canonicalPublicRedirect,staticNavigationPolicy,withPreviewResponsePolicy};',
   },
   bundle: true,
   write: false,
@@ -265,7 +266,7 @@ writeFileSync(join(out, 'renderers-entry.mjs'), shared + 'export{renderers};');
 const entry = join(out, 'entry.mjs');
 writeFileSync(
   entry,
-  `${runtimeImport}\nimport{fallbackFetch}from${JSON.stringify(resolve('server/jotclipart/fallback.mjs'))};\n${shared}\nconst verifier={...${config},publicKey:Uint8Array.from(${JSON.stringify([...Buffer.from(cfg.publicKeyHex, 'hex')])}),abiSHA256:${JSON.stringify(abiSHA256)}};const catalog=createSnapshotRuntime({renderers,verifier,softwareRevision:${JSON.stringify(revision)},ogIdentity:${JSON.stringify(ogWorker?.identity)},editorPreviewIndex:${JSON.stringify(editorPreviews?.rootSHA256)},policy:${JSON.stringify(policy)},redirects:${JSON.stringify(JSON.parse(readFileSync('config/jotclipart-legacy-routes.json')))}});const immutableURLs=new Set(${JSON.stringify([...clientAssets.keys()])});export default{fetch:withPreviewResponsePolicy(async function(request,env,ctx){const path=new URL(request.url).pathname;if(path.startsWith('/api/ai/'))return handleAi(request,env,ctx);if(path.startsWith('/api/share')||path.startsWith('/share/'))return handleShare(request,env,ctx);const response=await catalog(request,env,ctx);return response??immutableSoftwareAssetResponse(request,staticNavigationPolicy(await fallbackFetch(request,env,ctx,${JSON.stringify(policy.page)}),${JSON.stringify("'sha256-" + createHash('sha256').update(siteNavigationScript).digest('base64') + "'")}),immutableURLs)})};`,
+  `${runtimeImport}\nimport{fallbackFetch}from${JSON.stringify(resolve('server/jotclipart/fallback.mjs'))};\n${shared}\nconst verifier={...${config},publicKey:Uint8Array.from(${JSON.stringify([...Buffer.from(cfg.publicKeyHex, 'hex')])}),abiSHA256:${JSON.stringify(abiSHA256)}};const catalog=createSnapshotRuntime({renderers,verifier,softwareRevision:${JSON.stringify(revision)},ogIdentity:${JSON.stringify(ogWorker?.identity)},editorPreviewIndex:${JSON.stringify(editorPreviews?.rootSHA256)},policy:${JSON.stringify(policy)},redirects:${JSON.stringify(JSON.parse(readFileSync('config/jotclipart-legacy-routes.json')))}});const immutableURLs=new Set(${JSON.stringify([...clientAssets.keys()])});export default{fetch:withPreviewResponsePolicy(async function(request,env,ctx){const canonical=canonicalPublicRedirect(request);if(canonical)return canonical;const path=new URL(request.url).pathname;if(path.startsWith('/api/ai/'))return handleAi(request,env,ctx);if(path.startsWith('/api/share')||path.startsWith('/share/'))return handleShare(request,env,ctx);const response=await catalog(request,env,ctx);return response??immutableSoftwareAssetResponse(request,staticNavigationPolicy(await fallbackFetch(request,env,ctx,${JSON.stringify(policy.page)}),${JSON.stringify("'sha256-" + createHash('sha256').update(siteNavigationScript).digest('base64') + "'")}),immutableURLs)})};`,
 );
 const bundled = await build({
   entryPoints: [entry],

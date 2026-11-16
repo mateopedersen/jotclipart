@@ -159,9 +159,29 @@ async function navigate(page, path) {
   });
   assert.equal(response.status(), 200, path);
   assert.equal(response.headers()['x-uc-snapshot'], pin.snapshotRoot, 'Mixed signed catalog root');
-  const choice = page.locator('[data-cookie-choice=necessary]:visible').first();
-  if (await choice.count()) await choice.click();
+  await dismissCookies(page);
   return response;
+}
+async function dismissCookies(page) {
+  await page.waitForFunction(() => typeof window.__ucCookieNoticeReady?.then === 'function', null, {
+    timeout: 10000,
+  });
+  await page.evaluate(async () => {
+    let timeout;
+    try {
+      await Promise.race([
+        window.__ucCookieNoticeReady,
+        new Promise((_, reject) => {
+          timeout = setTimeout(() => reject(Error('Cookie notice readiness timed out')), 7000);
+        }),
+      ]);
+    } finally {
+      clearTimeout(timeout);
+    }
+  });
+  const choice = page.locator('#cookie-notice [data-cookie-choice=necessary]:visible').first();
+  if (await choice.count()) await choice.click();
+  await expect(page.locator('#cookie-notice')).not.toBeVisible();
 }
 async function click(locator) {
   await locator.scrollIntoViewIfNeeded();
@@ -193,6 +213,7 @@ async function saveProject(page) {
   return { bytes, doc, name: download.suggestedFilename() };
 }
 async function editorReady(page) {
+  await dismissCookies(page);
   await page.locator('.uc-editor').scrollIntoViewIfNeeded();
   await expect(page.locator('.uc-editor')).not.toHaveAttribute('aria-busy', 'true', {
     timeout: 60000,
@@ -998,7 +1019,20 @@ async function artworkRelated() {
     .evaluateAll((buttons) => buttons.map((button) => button.dataset.relatedMode));
   const results = [];
   for (const mode of modes) {
-    await click(page.locator(`[data-related-mode="${mode}"]`));
+    const button = page.locator(`[data-related-mode="${mode}"]`);
+    await button.scrollIntoViewIfNeeded();
+    await page.evaluate(
+      () => new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve))),
+    );
+    await expect(page.locator('[data-related-root]')).not.toHaveAttribute('aria-busy', 'true', {
+      timeout: 15000,
+    });
+    await button.click();
+    // Best may already be pressed while its fresh-snapshot request is pending.
+    // Wait for that real request to finish before the next filter activation.
+    await expect(page.locator('[data-related-root]')).not.toHaveAttribute('aria-busy', 'true', {
+      timeout: 15000,
+    });
     await expect(page.locator(`[data-related-mode="${mode}"]`)).toHaveAttribute(
       'aria-pressed',
       'true',
