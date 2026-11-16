@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFileSync, realpathSync, lstatSync } from 'node:fs';
+import { readFileSync, realpathSync, lstatSync, existsSync } from 'node:fs';
 import { resolve, join, relative, sep } from 'node:path';
 import { createHash } from 'node:crypto';
 const sha = (bytes) => createHash('sha256').update(bytes).digest('hex');
@@ -13,6 +13,11 @@ export function verifyOgBuild({
   root = realpathSync(root);
   const directory = realpathSync(resolve(root, buildDirectory, 'og-worker'));
   assert(directory.startsWith(root + sep));
+  for (const name of ['wrangler.json', 'wrangler.toml'])
+    assert(
+      !existsSync(join(directory, name)),
+      'A competing default Wrangler config could shadow the reviewed Pages configuration',
+    );
   const reportPath = join(directory, 'og-worker-report.json'),
     report = JSON.parse(readFileSync(reportPath));
   assert(lstatSync(reportPath).isFile() && !lstatSync(reportPath).isSymbolicLink());
@@ -67,8 +72,8 @@ export function verifyOgBuild({
       'resvg.wasm',
       'webp.wasm',
       'entry.mjs',
-      'wrangler.json',
-      'wrangler.pages.json',
+      'wrangler.worker.json',
+      'wrangler.jsonc',
     ].sort(),
   );
   assert.equal(
@@ -87,8 +92,8 @@ export function verifyOgBuild({
     report.sourceInputs['node_modules/@fontsource/inter/files/inter-latin-400-normal.woff'],
     report.sourceInputs['node_modules/@fontsource/inter/files/inter-latin-700-normal.woff'],
   ]);
-  assert.equal(realpathSync(report.workerConfig), join(directory, 'wrangler.json'));
-  const worker = JSON.parse(readFileSync(join(directory, 'wrangler.json')));
+  assert.equal(realpathSync(report.workerConfig), join(directory, 'wrangler.worker.json'));
+  const worker = JSON.parse(readFileSync(join(directory, 'wrangler.worker.json')));
   assert.deepEqual(
     worker,
     {
@@ -118,7 +123,7 @@ export function verifyOgBuild({
     binding,
   ];
   expected.pages_build_output_dir = relative(directory, resolve(root, 'dist')).split(sep).join('/');
-  assert.equal(realpathSync(report.pagesConfig), join(directory, 'wrangler.pages.json'));
+  assert.equal(realpathSync(report.pagesConfig), join(directory, 'wrangler.jsonc'));
   assert.deepEqual(
     JSON.parse(readFileSync(report.pagesConfig)),
     expected,

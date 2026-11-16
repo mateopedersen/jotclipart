@@ -84,8 +84,8 @@ function fixture(t) {
     'resvg.wasm': readFileSync(join(root, sourceNames[0])),
     'webp.wasm': readFileSync(join(root, sourceNames[1])),
     'entry.mjs': '// Private fixture entry',
-    'wrangler.json': JSON.stringify(worker),
-    'wrangler.pages.json': JSON.stringify(pages),
+    'wrangler.worker.json': JSON.stringify(worker),
+    'wrangler.jsonc': JSON.stringify(pages),
   };
   for (const [file, bytes] of Object.entries(bodies))
     put(buildDirectory + '/og-worker/' + file, bytes);
@@ -95,8 +95,8 @@ function fixture(t) {
     name,
     identity,
     directory,
-    pagesConfig: join(directory, 'wrangler.pages.json'),
-    workerConfig: join(directory, 'wrangler.json'),
+    pagesConfig: join(directory, 'wrangler.jsonc'),
+    workerConfig: join(directory, 'wrangler.worker.json'),
     sourceInputs,
     outputFiles: [],
     originalsWritten: 0,
@@ -128,6 +128,17 @@ test('OG package identity verifies exact source/output hashes and retains all or
   assert.equal(proof.originalsWritten, 0);
   assert.equal(proof.providerPrivacyAndHealthVerified, false);
 });
+test('Pages auto-discovery selects only the reviewed standard config and rejects shadow or swapped configs', (t) => {
+  for (const name of ['wrangler.json', 'wrangler.toml']) {
+    const f = fixture(t);
+    f.put('work/release/og-worker/' + name, JSON.stringify(f.worker));
+    assert.throws(f.verify, /could shadow/);
+  }
+  const f = fixture(t);
+  f.report.pagesConfig = f.report.workerConfig;
+  f.save();
+  assert.throws(f.verify);
+});
 test('a rehashed config still cannot expose the renderer or add a storage/service binding', (t) => {
   for (const patch of [
     { workers_dev: true },
@@ -140,7 +151,7 @@ test('a rehashed config still cannot expose the renderer or add a storage/servic
     { services: [{ binding: 'UNEXPECTED', service: 'wrong' }] },
   ]) {
     const f = fixture(t);
-    f.update('wrangler.json', { ...f.worker, ...patch });
+    f.update('wrangler.worker.json', { ...f.worker, ...patch });
     assert.throws(f.verify);
   }
 });
@@ -156,7 +167,7 @@ test('a rehashed service config cannot drop production/preview R2 D1 AI or targe
     const f = fixture(t),
       pages = structuredClone(f.pages);
     change(pages);
-    f.update('wrangler.pages.json', pages);
+    f.update('wrangler.jsonc', pages);
     assert.throws(f.verify, /must preserve/);
   }
 });

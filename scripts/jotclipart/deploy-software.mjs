@@ -1,8 +1,10 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
+import { resolve } from 'node:path';
 import { buildRoot } from './build-root.mjs';
 import { acquireAccountWriter } from '../delivery/account-lock.mjs';
+import { verifyOgBuild } from './og-invariants.mjs';
 
 const environment = process.argv[2];
 if (!['preview', 'production'].includes(environment))
@@ -12,6 +14,8 @@ execFileSync('git', ['diff', '--cached', '--quiet']);
 const revision = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
 const config = JSON.parse(readFileSync('config/catalog-snapshot-public.json'));
 const report = JSON.parse(readFileSync(buildRoot() + '/package-report.json'));
+const wrangler = resolve('node_modules/wrangler/bin/wrangler.js');
+const distribution = resolve('dist');
 if (
   config.accountId !== '48c779c8eaa80234e0bb9d57f96e588b' ||
   config.activeKey !== 'catalog/jotclipart/active.json' ||
@@ -30,12 +34,13 @@ for (const asset of report.ogWorker.outputFiles) {
   if (b.length !== asset.bytes || createHash('sha256').update(b).digest('hex') !== asset.sha256)
     throw Error('OG worker changed after build');
 }
+verifyOgBuild({ buildDirectory: buildRoot(), requireIndependentSources: true });
 mkdirSync('work/jotclipart-deployment', { recursive: true });
 const releaseAccountWriter = acquireAccountWriter();
 try {
   const ogOutput = execFileSync(
     process.execPath,
-    ['node_modules/wrangler/bin/wrangler.js', 'deploy', '--config', report.ogWorker.workerConfig],
+    [wrangler, 'deploy', '--config', report.ogWorker.workerConfig],
     {
       encoding: 'utf8',
       maxBuffer: 2000000,
@@ -47,12 +52,10 @@ try {
   const output = execFileSync(
     process.execPath,
     [
-      'node_modules/wrangler/bin/wrangler.js',
+      wrangler,
       'pages',
       'deploy',
-      'dist',
-      '--config',
-      report.ogWorker.pagesConfig,
+      distribution,
       '--project-name',
       'jotclipart',
       '--branch',
@@ -65,6 +68,7 @@ try {
     ],
     {
       encoding: 'utf8',
+      cwd: report.ogWorker.directory,
       maxBuffer: 2000000,
       env: { ...process.env, CLOUDFLARE_ACCOUNT_ID: config.accountId },
       stdio: ['ignore', 'pipe', 'pipe'],

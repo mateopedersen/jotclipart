@@ -88,7 +88,7 @@ export async function buildOgWorker({ root = process.cwd(), buildRoot }) {
     limits: { cpu_ms: 5000 },
     rules: [{ type: 'CompiledWasm', globs: ['**/*.wasm'], fallthrough: true }],
   };
-  writeFileSync(join(directory, 'wrangler.json'), JSON.stringify(wrangler, null, 2) + '\n');
+  writeFileSync(join(directory, 'wrangler.worker.json'), JSON.stringify(wrangler, null, 2) + '\n');
   const base = JSON.parse(readFileSync(resolve(root, 'wrangler.jsonc')));
   const binding = { binding: 'OG_RENDERER', service: finalName };
   base.services = [...(base.services ?? []).filter((b) => b.binding !== 'OG_RENDERER'), binding];
@@ -97,15 +97,15 @@ export async function buildOgWorker({ root = process.cwd(), buildRoot }) {
     binding,
   ];
   base.pages_build_output_dir = relative(directory, resolve(root, 'dist')).split('\\').join('/');
-  const pagesConfig = join(directory, 'wrangler.pages.json');
+  const pagesConfig = join(directory, 'wrangler.jsonc');
   writeFileSync(pagesConfig, JSON.stringify(base, null, 2) + '\n');
   const outputFiles = [
     'worker.mjs',
     'resvg.wasm',
     'webp.wasm',
     'entry.mjs',
-    'wrangler.json',
-    'wrangler.pages.json',
+    'wrangler.worker.json',
+    'wrangler.jsonc',
   ].map((file) => {
     const b = readFileSync(join(directory, file));
     return { file, bytes: b.length, sha256: sha(b) };
@@ -117,7 +117,7 @@ export async function buildOgWorker({ root = process.cwd(), buildRoot }) {
     identity: finalIdentity,
     directory,
     pagesConfig,
-    workerConfig: join(directory, 'wrangler.json'),
+    workerConfig: join(directory, 'wrangler.worker.json'),
     sourceInputs: graph,
     outputFiles,
     originalsWritten: 0,
