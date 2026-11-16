@@ -29,12 +29,7 @@
   position: relative;
   padding: 0 1.75rem 2.5rem;
   border-radius: 36px;
-  background: radial-gradient(
-    ellipse at 50% 26%,
-    var(--brand-soft) 0%,
-    var(--brand-page) 30%,
-    #fff 64%
-  );
+  background: #ffffff;
 }
 .nf-visual {
   grid-area: visual;
@@ -69,7 +64,7 @@
   padding: 4px 10px;
   border: 1px solid var(--brand-border);
   border-radius: 7px;
-  background: var(--brand-soft);
+  background: #ffffff;
   color: var(--brand-action);
   font-size: 0.85rem;
 }
@@ -115,7 +110,7 @@
   padding: 6px 6px 6px 14px;
   border: 1px solid var(--brand-border);
   border-radius: 12px;
-  background: var(--brand-page);
+  background: #ffffff;
   box-shadow: inset 0 2px 3px #e6eef960;
 }
 .nf-search-field > svg {
@@ -226,7 +221,7 @@
   border-radius: 13px;
   color: var(--brand-action);
   text-decoration: none;
-  background: linear-gradient(125deg, var(--brand-page), #fff);
+  background: #ffffff;
 }
 .nf-shortcut-grid > a:hover {
   background: var(--brand-soft);
@@ -306,7 +301,7 @@
   padding: 10px 25px;
   border: 1px solid var(--brand-soft);
   border-radius: 20px;
-  background: radial-gradient(ellipse at 45% 30%, #fff, var(--brand-page));
+  background: #ffffff;
   box-shadow:
     inset 0 1px 0 #fff,
     0 6px 0 var(--brand-soft),
@@ -330,7 +325,7 @@
 }
 .nf-subject-copy strong {
   display: block;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 1rem;
   line-height: 1.45;
   font-weight: 600;
@@ -342,7 +337,7 @@
 .nf-subject-copy > span {
   display: block;
   margin-top: 0.4rem;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 0.84rem;
   line-height: 1.75;
 }
@@ -357,13 +352,13 @@
   margin-top: 2.5rem;
   padding: 1.25rem;
   border-radius: 14px;
-  background: var(--brand-page);
+  background: #ffffff;
 }
 .nf-report img {
   flex-shrink: 0;
 }
 .nf-report p {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 0.88rem;
   line-height: 1.75;
 }
@@ -397,7 +392,7 @@
     gap: 1rem;
     padding: 1.7rem 0.6rem 2rem;
     border-radius: 22px;
-    background: radial-gradient(ellipse at 50% 44%, var(--brand-soft), #fff 65%);
+    background: #ffffff;
   }
   .nf-visual {
     width: min(100%, 420px);

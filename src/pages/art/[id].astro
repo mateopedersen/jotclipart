@@ -67,7 +67,7 @@ const downloadRecord = {
         breadcrumbs([
           { name: 'Home', path: '/' },
           { name: topic.keyword, path: `/clipart/${topic.slug}/` },
-          { name: item.title, path: artworkPath(item) },
+          { name: displayCatalogTitle(item.title), path: artworkPath(item) },
         ]),
       )}
     />

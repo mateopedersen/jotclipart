@@ -13,6 +13,7 @@ const rendererFiles = [
   'scripts/social/compositions.mjs',
   'scripts/social/pages.mjs',
   'scripts/social/sources.mjs',
+  'src/lib/brand.mjs',
   'data/social-source-artworks.json',
 ];
 

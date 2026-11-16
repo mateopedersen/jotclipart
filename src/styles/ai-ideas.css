@@ -209,7 +209,7 @@
   padding: clamp(18px, 2.4vw, 34px);
   border: 1px solid var(--brand-border);
   border-radius: 18px;
-  background: var(--brand-page);
+  background: #ffffff;
   scroll-margin-top: 95px;
 }
 .ai-ideas-heading {
@@ -229,7 +229,7 @@
 .ai-ideas-heading p {
   margin: 0;
   max-width: 730px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 16px;
 }
 .ai-ideas-heading > a {
@@ -268,7 +268,7 @@
 .ai-prompt-recipe b {
   display: grid;
   place-items: center;
-  background: var(--brand-soft);
+  background: #ffffff;
   color: var(--brand-action);
   width: 21px;
   height: 21px;
@@ -401,13 +401,13 @@
 }
 .ai-page .ai-idea-copy h3 {
   margin: 0 0 8px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 19px;
   line-height: 1.3;
   font-weight: 600;
 }
 .ai-page .ai-idea-copy p {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 13px;
   line-height: 1.65;
   margin: 0 0 17px;

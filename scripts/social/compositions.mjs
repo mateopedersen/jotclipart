@@ -24,7 +24,7 @@ const P = {
   blue: brand.action,
   line: '#B7DCC5',
   pale: brand.soft,
-  muted: brand.action,
+  muted: '#4B5563',
 };
 export async function compose(c, page, catalog) {
   const art = (name) => {
@@ -35,7 +35,7 @@ export async function compose(c, page, catalog) {
   };
   const image = (name, x, y, w, h, options) => c.image(art(name), x, y, w, h, options);
   async function tile(name, x, y, w, h, label = '', fill = '#fff') {
-    c.rect(x, y, w, h, fill, 16, P.line);
+    c.rect(x, y, w, h, brand.surface, 16, P.line);
     await image(name, x + 12, y + 10, w - 24, h - (label ? 48 : 20));
     if (label)
       await c.text(label, x + w / 2, y + h - 31, {
@@ -70,7 +70,7 @@ export async function compose(c, page, catalog) {
       break;
     }
     case 'home': {
-      c.rect(590, 108, 558, 425, '#D8F3DC', 24);
+      c.rect(590, 108, 558, 425, brand.surface, 24);
       const samples = [
         ['heart', 610, 125, 172, 249, 'Hearts & Flowers', '#fff5f8'],
         ['pizza-pepperoni-slice-watercolor-clipart', 798, 125, 157, 117, 'Food & Drink', '#fff8ec'],
@@ -234,7 +234,7 @@ export async function compose(c, page, catalog) {
       for (let i = 0; i <= 10; i++)
         c.line(803 + i * 23, 470, 803 + i * 23, i % 5 === 0 ? 452 : 459, P.blue, 2);
       await c.text('Size on Paper', 917, 491, { size: 18, center: true, color: P.muted });
-      c.rect(588, 189, 132, 181, '#D8F3DC', 12, '#B7DCC5');
+      c.rect(588, 189, 132, 181, brand.surface, 12, '#B7DCC5');
       await image('lemon', 602, 222, 105, 105);
       await c.text('Pixels', 653, 335, { size: 19, weight: 600, center: true });
       arrow(711, 400, 772);
@@ -245,18 +245,18 @@ export async function compose(c, page, catalog) {
     }
     case 'about': {
       c.svg(`<defs>
-        <radialGradient id="about-light"><stop stop-color="#216E4E" stop-opacity=".5"/><stop offset="1" stop-color="#216E4E" stop-opacity="0"/></radialGradient>
-        <radialGradient id="about-floor"><stop stop-color="#123524" stop-opacity=".45"/><stop offset="1" stop-color="#123524" stop-opacity="0"/></radialGradient>
+        <radialGradient id="about-light"><stop stop-color="#FFFFFF" stop-opacity="0"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+        <radialGradient id="about-floor"><stop stop-color="#4B5563" stop-opacity=".09"/><stop offset="1" stop-color="#4B5563" stop-opacity="0"/></radialGradient>
       </defs><ellipse cx="875" cy="320" rx="310" ry="248" fill="url(#about-light)"/>
       <ellipse cx="880" cy="542" rx="273" ry="29" fill="url(#about-floor)"/>
       <g transform="rotate(-7 870 315)">
-        <rect x="687" y="149" width="348" height="345" rx="24" fill="#B7DCC5"/>
-        <rect x="681" y="137" width="348" height="345" rx="24" fill="#B7DCC5" stroke="#D8F3DC" stroke-width="2"/>
+        <rect x="687" y="149" width="348" height="345" rx="24" fill="#FFFFFF"/>
+        <rect x="681" y="137" width="348" height="345" rx="24" fill="#FFFFFF" stroke="#D8F3DC" stroke-width="2"/>
       </g>`);
-      c.rect(724, 168, 294, 327, '#B7DCC5', 21);
-      c.rect(721, 160, 294, 327, '#D8F3DC', 21);
+      c.rect(724, 168, 294, 327, brand.surface, 21);
+      c.rect(721, 160, 294, 327, brand.surface, 21);
       c.rect(718, 153, 294, 327, '#fff', 21, '#D8F3DC');
-      await c.image('public/logo.svg', 810, 195, 110, 121);
+      await c.image('public/brand/jotclipart-mark-3d.png', 810, 195, 110, 121);
       await c.text('JotClipart', 865, 341, {
         size: 30,
         weight: 700,
@@ -280,15 +280,15 @@ export async function compose(c, page, catalog) {
       // Small original-art cards surround the brand, rather than portraits.
       c.svg('<g transform="rotate(-9 671 345)">');
       c.rect(591, 250, 166, 207, '#B7DCC5', 17);
-      c.rect(588, 243, 166, 207, '#fff7fa', 17, '#e6dce6');
+      c.rect(588, 243, 166, 207, brand.surface, 17, '#e6dce6');
       await image('heart', 601, 262, 140, 163);
       c.svg('</g><g transform="rotate(8 1064 218)">');
       c.rect(994, 132, 148, 184, '#B7DCC5', 17);
-      c.rect(991, 125, 148, 184, '#f5fbf7', 17, '#d6e5dc');
+      c.rect(991, 125, 148, 184, brand.surface, 17, '#d6e5dc');
       await image('fern', 1003, 139, 124, 153);
       c.svg('</g><g transform="rotate(8 1075 423)">');
       c.rect(1009, 345, 144, 166, '#c8bfae', 17);
-      c.rect(1006, 338, 144, 166, '#fff9eb', 17, '#eadcc2');
+      c.rect(1006, 338, 144, 166, brand.surface, 17, '#eadcc2');
       await image('lemon', 1017, 353, 122, 132);
       c.svg('</g>');
       await c.image('public/illustrations/builder/palette.svg', 785, 451, 171, 144, { angle: -10 });
@@ -437,7 +437,7 @@ export async function compose(c, page, catalog) {
     }
     case 'license': {
       paper(626, 125, 347, 398);
-      await c.image('public/logo.svg', 763, 151, 68, 75);
+      await c.image('public/brand/jotclipart-mark-3d.png', 763, 151, 68, 75);
       await c.lines(['Personal &', 'Educational Use'], 799, 263, {
         size: 30,
         weight: 600,
@@ -451,7 +451,7 @@ export async function compose(c, page, catalog) {
       break;
     }
     case 'privacy': {
-      c.rect(693, 177, 361, 267, '#D8F3DC', 22, '#B7DCC5');
+      c.rect(693, 177, 361, 267, brand.surface, 22, '#B7DCC5');
       c.svg(
         '<path d="M817 277v-42a55 55 0 0 1 110 0v42" fill="none" stroke="#216E4E" stroke-width="14"/><rect x="795" y="270" width="153" height="124" rx="17" fill="#fff" stroke="#216E4E" stroke-width="4"/><circle cx="871" cy="326" r="10" fill="#216E4E"/><path d="M871 334v24" stroke="#216E4E" stroke-width="7" stroke-linecap="round"/>',
       );
@@ -468,7 +468,7 @@ export async function compose(c, page, catalog) {
     }
     case 'terms': {
       paper(643, 115, 435, 420);
-      await c.image('public/logo.svg', 679, 149, 42, 47);
+      await c.image('public/brand/jotclipart-mark-3d.png', 679, 149, 42, 47);
       await c.text('Terms of Use', 745, 158, { size: 31, weight: 600, maxWidth: 300 });
       c.line(680, 222, 1040, 222, '#B7DCC5', 2);
       await c.text('Using JotClipart', 681, 254, { size: 22, weight: 600 });

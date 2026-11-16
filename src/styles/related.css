@@ -3,7 +3,7 @@
   padding: clamp(20px, 3.3vw, 44px);
   border: 1px solid var(--brand-soft);
   border-radius: 24px;
-  background: var(--brand-page);
+  background: #ffffff;
   color: var(--brand-ink);
   isolation: isolate;
 }
@@ -52,7 +52,7 @@
   border: 1px solid var(--brand-border);
   border-bottom: 3px solid var(--brand-border);
   border-radius: 12px;
-  background: linear-gradient(145deg, #fff, var(--brand-page));
+  background: #ffffff;
   box-shadow:
     inset 0 1px #fff,
     0 3px 0 var(--brand-soft);
@@ -168,7 +168,7 @@
   aspect-ratio: 1;
   min-width: 0;
   overflow: hidden;
-  background: radial-gradient(ellipse at 50% 45%, var(--brand-page) 0, var(--brand-soft) 100%);
+  background: #ffffff;
   text-decoration: none;
   position: relative;
 }
@@ -258,7 +258,7 @@
 }
 .related-group-heading p {
   font-size: 13px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   margin: 0;
   line-height: 1.6;
 }
@@ -479,7 +479,7 @@
   margin: 0;
   font-size: 13px;
   line-height: 1.5;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .related-more:disabled {
   cursor: progress;

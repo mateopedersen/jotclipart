@@ -178,12 +178,7 @@ export async function createRenderer(root) {
       return this;
     }
     async brand({ dark = false } = {}) {
-      await this.image('public/logo.svg', 56, 45, 32, 36);
-      await this.text('JotClipart', 101, 47, {
-        size: 29,
-        weight: 700,
-        color: dark ? '#fff' : brand.ink,
-      });
+      await this.image('public/brand/jotclipart-logo-3d.webp', 56, 31, 235, 62);
       await this.text('jotclipart.com', 58, 565, {
         size: 21,
         weight: 400,
@@ -201,7 +196,7 @@ export async function createRenderer(root) {
       await this.lines(subtitle, 58, 354 + Math.max(0, lines.length - 2) * 30, {
         size: 25,
         lineHeight: 38,
-        color: dark ? brand.soft : brand.action,
+        color: dark ? brand.soft : '#4B5563',
         maxWidth: 490,
       });
     }

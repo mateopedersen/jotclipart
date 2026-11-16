@@ -211,8 +211,15 @@ const releaseRevision = /^[a-f0-9]{40}$/.test(import.meta.env.PUBLIC_RELEASE_REV
     <header class="site-header" data-site-header>
       <div class="site-header-inner">
         <a class="brand site-brand" href="/" aria-label="JotClipart home">
-          <img src="/logo.svg" width="36" height="40" alt="" />
-          <span>JotClipart</span>
+          <img
+            class="brand-wordmark"
+            src="/brand/jotclipart-logo-3d.webp"
+            width="1200"
+            height="314"
+            alt="JotClipart"
+            fetchpriority="high"
+            decoding="async"
+          />
         </a>
         <button
           class="menu-button site-menu-button"

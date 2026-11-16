@@ -5,7 +5,6 @@ export const pages = [
     title: ['Free Clipart for', 'Every Project'],
     subtitle: ['Flowers, food, school and sports.', 'Find artwork for your next design.'],
     layout: 'home',
-    dark: true,
     alt: 'JotClipart library with a floral heart, pizza, school backpack, guitar, volleyball, autumn leaves and winter mittens.',
   },
   {
@@ -14,7 +13,6 @@ export const pages = [
     title: ['Clipart', 'Studio'],
     subtitle: ['Artwork, shapes and editable text.', 'Build your design in the browser.'],
     layout: 'studio',
-    dark: true,
     alt: 'Clipart Studio: a strawberry card composition with text, layers and selection handles.',
   },
   {
@@ -63,7 +61,6 @@ export const pages = [
     title: ['JotClipart', 'User Guide'],
     subtitle: ['Real screens.', 'Step-by-step instructions.'],
     layout: 'guides',
-    dark: true,
     alt: 'JotClipart User Guide with an actual Studio screenshot and download, edit and print guide labels.',
   },
   {
@@ -80,8 +77,7 @@ export const pages = [
     title: ['About', 'JotClipart'],
     subtitle: ['A clipart library and design tools', 'for everyday projects.'],
     layout: 'about',
-    dark: true,
-    alt: 'About JotClipart: the green J emblem on layered cards, with a floral heart, fern, lemon, paint palette and pencil.',
+    alt: 'About JotClipart: the three-dimensional clipart logo on layered white cards, with a floral heart, fern, lemon, paint palette and pencil.',
   },
   {
     key: 'new',

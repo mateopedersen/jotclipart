@@ -6,7 +6,7 @@ footer.site-footer {
   margin-top: 0;
   padding: 0;
   border-top: 1px solid var(--brand-soft);
-  background: linear-gradient(180deg, var(--brand-page) 0%, var(--brand-page) 100%);
+  background: #ffffff;
   color: var(--brand-ink);
 }
 .site-footer-inner {
@@ -25,7 +25,7 @@ footer.site-footer {
   padding: 35px 38px;
   border: 1px solid var(--brand-border);
   border-radius: 26px;
-  background: var(--brand-page);
+  background: #ffffff;
   box-shadow: none;
   overflow: hidden;
 }
@@ -44,7 +44,7 @@ footer.site-footer {
 .site-footer .footer-invitation-copy > p {
   max-width: 540px;
   margin: 16px 0 25px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 17px;
   line-height: 1.7;
 }
@@ -565,4 +565,10 @@ footer.site-footer {
   .footer-invitation-actions a:hover {
     transform: none;
   }
+}
+
+.site-footer .footer-brand img.brand-wordmark {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
 }

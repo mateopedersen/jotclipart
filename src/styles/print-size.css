@@ -231,7 +231,7 @@
   border: 1px solid var(--brand-border);
   border-radius: 2px;
   transform: rotate(-8deg) rotateY(-10deg);
-  background: linear-gradient(130deg, #fff, var(--brand-soft));
+  background: #ffffff;
   box-shadow:
     2px 3px 0 var(--brand-border),
     4px 5px 4px #233e5b20;
@@ -278,7 +278,7 @@
   padding: 23px;
   border: 1px solid var(--brand-border);
   border-radius: 13px;
-  background: var(--brand-page);
+  background: #ffffff;
   box-shadow:
     0 5px 0 var(--brand-soft),
     0 11px 24px #18304d08;
@@ -304,7 +304,7 @@
   padding: 10px 8px 15px;
   border: 1px solid var(--brand-border);
   border-radius: 6px;
-  background: var(--brand-soft);
+  background: #ffffff;
   background-image:
     linear-gradient(#ffffff36 1px, transparent 1px),
     linear-gradient(90deg, #ffffff36 1px, transparent 1px);
@@ -412,7 +412,7 @@
   font-size: 13px;
   font-weight: 700;
   color: var(--brand-action);
-  background: linear-gradient(#fff, var(--brand-soft));
+  background: #ffffff;
   box-shadow:
     0 2px 0 var(--brand-border),
     inset 0 1px 0 white;
@@ -469,7 +469,7 @@
 }
 .print-reference-heading > p {
   font-size: 14px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   margin: 0;
 }
 .print-reference-cards {
@@ -484,14 +484,14 @@
   padding: 15px 12px;
 }
 .print-density-featured {
-  background: var(--brand-page);
+  background: #ffffff;
   box-shadow: inset 3px 0 0 var(--brand-action);
 }
 .print-density-card > p {
   grid-column: 2;
   grid-row: 1;
   font-size: 13px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   margin: 0;
 }
 .print-density-card h3 {
@@ -565,7 +565,7 @@
 .print-guide-grid p {
   grid-column: 2;
   font-size: 15px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   margin: 0;
   max-width: 70ch;
 }
@@ -589,7 +589,7 @@
   list-style: none;
   font-size: 14px;
   font-weight: 700;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .print-method summary::-webkit-details-marker {
   display: none;
@@ -631,7 +631,7 @@
 .print-next p {
   margin: 0;
   font-size: 14px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .print-next a {
   display: inline-flex;

@@ -7,7 +7,7 @@
   margin: 12px 0 28px;
   border: 1px solid var(--brand-soft);
   border-radius: 20px;
-  background: linear-gradient(115deg, var(--brand-page), var(--brand-page));
+  background: #ffffff;
 }
 .bw-intro h1 {
   margin: 0 0 15px;
@@ -39,7 +39,7 @@
 }
 .bw-controls {
   border: 1px solid var(--brand-soft);
-  background: var(--brand-page);
+  background: #ffffff;
   border-radius: 16px;
   padding: 24px;
 }
@@ -149,7 +149,7 @@
 .bw-gallery .art-picture,
 .bw-gallery .art-card:nth-child(n) .art-picture {
   aspect-ratio: 1;
-  background: var(--brand-page);
+  background: #ffffff;
   border-bottom: 1px solid var(--brand-soft);
 }
 .bw-gallery .card-title {
@@ -165,7 +165,7 @@
   padding: 15px 20px;
   border: 1px solid var(--brand-border);
   border-radius: 10px;
-  background: var(--brand-page);
+  background: #ffffff;
   color: var(--brand-action);
   font-size: 15px;
 }
@@ -226,7 +226,7 @@
   margin-top: 45px;
   padding: 27px 30px;
   border-top: 1px solid var(--brand-soft);
-  background: var(--brand-page);
+  background: #ffffff;
   border-radius: 12px;
 }
 .bw-print-note h2 {

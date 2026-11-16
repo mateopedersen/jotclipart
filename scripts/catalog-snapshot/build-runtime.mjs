@@ -73,6 +73,7 @@ const policy = { page, editor, inlineSHA256 },
 for (const file of [
   'src/lib/original-image-frame.mjs',
   'src/lib/original-image-scheduling-inline.mjs',
+  'server/jotclipart/fallback.mjs',
 ])
   softwareInputs.set(file, sha(readFileSync(file)));
 for (const kind of ['art', 'editor', 'home', 'collection', 'shell']) {
@@ -239,7 +240,7 @@ writeFileSync(join(out, 'renderers-entry.mjs'), shared + 'export{renderers};');
 const entry = join(out, 'entry.mjs');
 writeFileSync(
   entry,
-  `${runtimeImport}\nimport{fallbackFetch}from${JSON.stringify(resolve('server/jotclipart/fallback.mjs'))};\n${shared}\nconst verifier={...${config},publicKey:Uint8Array.from(${JSON.stringify([...Buffer.from(cfg.publicKeyHex, 'hex')])}),abiSHA256:${JSON.stringify(abiSHA256)}};const catalog=createSnapshotRuntime({renderers,verifier,softwareRevision:${JSON.stringify(revision)},policy:${JSON.stringify(policy)},redirects:${JSON.stringify(JSON.parse(readFileSync('config/jotclipart-legacy-routes.json')))}});const immutableURLs=new Set(${JSON.stringify([...clientAssets.keys()])});export default{async fetch(request,env,ctx){const path=new URL(request.url).pathname;if(path.startsWith('/api/ai/'))return handleAi(request,env,ctx);if(path.startsWith('/api/share')||path.startsWith('/share/'))return handleShare(request,env,ctx);const response=await catalog(request,env,ctx);return response??immutableSoftwareAssetResponse(request,staticNavigationPolicy(await fallbackFetch(request,env,ctx),${JSON.stringify("'sha256-" + createHash('sha256').update(siteNavigationScript).digest('base64') + "'")}),immutableURLs)}};`,
+  `${runtimeImport}\nimport{fallbackFetch}from${JSON.stringify(resolve('server/jotclipart/fallback.mjs'))};\n${shared}\nconst verifier={...${config},publicKey:Uint8Array.from(${JSON.stringify([...Buffer.from(cfg.publicKeyHex, 'hex')])}),abiSHA256:${JSON.stringify(abiSHA256)}};const catalog=createSnapshotRuntime({renderers,verifier,softwareRevision:${JSON.stringify(revision)},policy:${JSON.stringify(policy)},redirects:${JSON.stringify(JSON.parse(readFileSync('config/jotclipart-legacy-routes.json')))}});const immutableURLs=new Set(${JSON.stringify([...clientAssets.keys()])});export default{async fetch(request,env,ctx){const path=new URL(request.url).pathname;if(path.startsWith('/api/ai/'))return handleAi(request,env,ctx);if(path.startsWith('/api/share')||path.startsWith('/share/'))return handleShare(request,env,ctx);const response=await catalog(request,env,ctx);return response??immutableSoftwareAssetResponse(request,staticNavigationPolicy(await fallbackFetch(request,env,ctx,${JSON.stringify(policy.page)}),${JSON.stringify("'sha256-" + createHash('sha256').update(siteNavigationScript).digest('base64') + "'")}),immutableURLs)}};`,
 );
 const bundled = await build({
   entryPoints: [entry],

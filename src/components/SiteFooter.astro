@@ -193,9 +193,16 @@ const sculpture = (name: string) =>
     </div>
     <div class="footer-brand-row">
       <div class="footer-brand-lockup">
-        <a class="brand footer-brand" href="/">
-          <img src="/logo.svg" width="40" height="44" alt="" />
-          <span>JotClipart</span>
+        <a class="brand footer-brand" href="/" aria-label="JotClipart home">
+          <img
+            class="brand-wordmark"
+            src="/brand/jotclipart-logo-3d.webp"
+            width="1200"
+            height="314"
+            alt="JotClipart"
+            loading="lazy"
+            decoding="async"
+          />
         </a>
         <p class="footer-copyright">© {new Date().getFullYear()}</p>
       </div>

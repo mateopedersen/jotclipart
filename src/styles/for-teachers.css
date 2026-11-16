@@ -171,7 +171,7 @@
   border: 1px solid #d4d7dc;
   border-radius: 12px;
   padding: 23px;
-  background: var(--brand-soft);
+  background: #ffffff;
   box-shadow: 0 4px 0 var(--brand-soft);
 }
 .tc-library-desk figcaption {
@@ -259,7 +259,7 @@
   padding: 15px 11px;
   border: 1px solid var(--brand-border);
   border-radius: 9px;
-  background: var(--brand-page);
+  background: #ffffff;
   box-shadow: 0 2px 0 var(--brand-soft);
 }
 .tc-jump-links > a:hover {
@@ -318,7 +318,7 @@
   padding: 29px;
   border: 1px solid var(--brand-border);
   border-radius: 11px;
-  background: var(--brand-soft);
+  background: #ffffff;
 }
 .tc-free h2 {
   font-size: 33px;
@@ -399,7 +399,7 @@
   border: 1px solid #c5cad1;
   border-radius: 8px;
   padding: 14px 16px;
-  background: var(--brand-page);
+  background: #ffffff;
   box-shadow: 0 3px 0 var(--brand-soft);
   font-size: 20px;
   font-weight: 650;
@@ -482,7 +482,7 @@
   height: 35px;
   border: 1px solid var(--brand-border);
   border-radius: 5px;
-  background: var(--brand-soft);
+  background: #ffffff;
   color: var(--brand-action);
   font-size: 19px;
   font-weight: 700;
@@ -502,7 +502,7 @@
 .tc-adapt {
   padding: 19px 22px;
   border-left: 4px solid var(--brand-action);
-  background: var(--brand-soft);
+  background: #ffffff;
 }
 .tc-adapt strong {
   font-size: 20px;
@@ -535,7 +535,7 @@
   padding: 13px 9px;
   border: 1px solid var(--brand-border);
   border-radius: 7px;
-  background: var(--brand-page);
+  background: #ffffff;
   text-decoration: none;
 }
 .tc-plan-pictures > a:hover {
@@ -602,7 +602,7 @@
   margin-top: 25px;
   padding: 20px;
   border: 1px solid var(--brand-border);
-  background: var(--brand-soft);
+  background: #ffffff;
   border-radius: 7px;
 }
 .tc-copy-fallback label {
@@ -646,7 +646,7 @@
   border-bottom: 1px solid var(--brand-border);
 }
 .tc-example-stage-paper {
-  background: var(--brand-soft);
+  background: #ffffff;
 }
 .tc-paper-example {
   width: 100%;
@@ -700,7 +700,7 @@
   color: var(--brand-action);
 }
 .tc-example-stage-label {
-  background: var(--brand-soft);
+  background: #ffffff;
 }
 .tc-label-example {
   width: 100%;
@@ -736,7 +736,7 @@
   color: var(--brand-action);
 }
 .tc-example-stage-slide {
-  background: var(--brand-soft);
+  background: #ffffff;
   padding-inline: 18px;
 }
 .tc-slide-example {
@@ -819,7 +819,7 @@
   padding: 19px;
   border: 1px solid var(--brand-border);
   border-radius: 9px;
-  background: var(--brand-page);
+  background: #ffffff;
   text-decoration: none;
 }
 .tc-collection:hover {
@@ -872,7 +872,7 @@
   padding: 26px;
   border: 1px solid var(--brand-border);
   border-radius: 9px;
-  background: var(--brand-soft);
+  background: #ffffff;
 }
 .tc-outline-link h3 {
   font-size: 26px;
@@ -970,7 +970,7 @@
   padding: 28px;
   border: 1px solid var(--brand-border);
   border-radius: 9px;
-  background: var(--brand-soft);
+  background: #ffffff;
 }
 .tc-checklist-heading {
   display: flex;

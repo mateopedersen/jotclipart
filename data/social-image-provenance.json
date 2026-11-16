@@ -21,9 +21,13 @@
   "pages": {
     "home": {
       "route": "/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "3da5f5f1dffd1700b9efba25a00478ec18a3cb323bd57d5abd577af67f59cbe3",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "b09a65eff867db22b5617c9f54ef81c3f3ce6a64e7ec3a8692615520f67385b2",
       "sources": [
+        {
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
+        },
         {
           "path": "public/catalog/heart/floral-heart-roses-wreath-clipart.webp",
           "sha256": "b79ae752dc0be2aa79ae2871d0835f40d7ea620753209ac9f3fd905c74553b3a"
@@ -51,21 +55,9 @@
         {
           "path": "public/catalog/wave_034/winter-knitted-mittens-on-cord.webp",
           "sha256": "f9cc3e044ae4e837eaa04e4d659957db183b784a45d8d17d03af7fbd123a883d"
-        },
-        {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -166,27 +158,19 @@
     },
     "studio": {
       "route": "/create/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "7c6a3dc4011373e8fcc8147f46849c693a51712731d9739fb713b0179a9136ff",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "33bccea07844ad9260318d5e0a436af1b86194d33e2519873977cffd6dede240",
       "sources": [
+        {
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
+        },
         {
           "path": "public/catalog/strawberry/strawberry-fruit-trio-realistic-clipart.webp",
           "sha256": "750311440409a705209eb673fa780eaaf8bf1f7cf38c0cfb956c29b14117f5f8"
-        },
-        {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -255,8 +239,8 @@
     },
     "ai-builder": {
       "route": "/ai-clipart-generator/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "85ef492c235cd3bd6fa0d3c3bd129759be8fa5abe3fbabc788681f812b63c2af",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "9a3618a365fa937901030b3a5ae639957b18f1691335f25ebc26a49f6ecfb7a9",
       "sources": [
         {
           "path": "public/ai-examples/baby-rabbit-640.webp",
@@ -271,19 +255,11 @@
           "sha256": "30447c3e846137494acfcaa5a85ba5ee92727202839c8e29f6ae98d1c9431659"
         },
         {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -344,9 +320,13 @@
     },
     "categories": {
       "route": "/categories/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "5a02e1dc2468e791056b47e32a3c4b164dc9acd4bf2c5d928e3c1a81426e6f48",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "e9d2639ce9ba3e75997a1eda1f40f46caa3dd27c6da75d315a57d76f5872bf9d",
       "sources": [
+        {
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
+        },
         {
           "path": "public/catalog/earth/earth-clipart-classroom-globe-wooden-stand.webp",
           "sha256": "a80d2f6de49083f87de02417c446c11ef1273a05c118ae748c35b42fc65e3726"
@@ -370,21 +350,9 @@
         {
           "path": "public/catalog/strawberry/strawberry-fruit-trio-realistic-clipart.webp",
           "sha256": "750311440409a705209eb673fa780eaaf8bf1f7cf38c0cfb956c29b14117f5f8"
-        },
-        {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -477,9 +445,13 @@
     },
     "collections": {
       "route": "/collections/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "4227f4aaf0e01a7ad60fa2ef6e525ea65286abe4fca07bf01fefa39a80bf5a4a",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "47e15cdaac8fb96e47445a05aff8c21fedc8d6ed07f31582ae126b0e2e32af96",
       "sources": [
+        {
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
+        },
         {
           "path": "public/catalog/heart/floral-heart-roses-wreath-clipart.webp",
           "sha256": "b79ae752dc0be2aa79ae2871d0835f40d7ea620753209ac9f3fd905c74553b3a"
@@ -491,21 +463,9 @@
         {
           "path": "public/catalog/wave_047/winter-snowy-timber-cabin.webp",
           "sha256": "6410f1b0320f54b8fed055232a4a66bed69f3ea6fe79506443c1670115aa015b"
-        },
-        {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -574,9 +534,13 @@
     },
     "black-and-white": {
       "route": "/black-and-white/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "213ebda1d3c97a8f3804a0f83abf54203af3d967ed98fddd1df5a7af1c2fff34",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "f82a484bba9fad237ec7233e9a9f70e7981d0af059e7120c5bf25f725b4e68ec",
       "sources": [
+        {
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
+        },
         {
           "path": "public/catalog/book/book-and-feather-quill-black-and-white-clipart.webp",
           "sha256": "19cc31f4a28eae606bb0dea909595bff424138181bc6d41c9ae7c939c2c0c9c5"
@@ -588,21 +552,9 @@
         {
           "path": "public/catalog/music/music-violin-with-bow-black-and-white-engraving-clipart.webp",
           "sha256": "bb9cbe696c22b543a0ce3e6ec0bb5b4ebf51f7625f4826f7d8a8aec8f2748e51"
-        },
-        {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -655,9 +607,13 @@
     },
     "teachers": {
       "route": "/for-teachers/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "d80671d9a483fbe90670e058c9ec4f878ac3211bb08e23f2e1304854ef011d73",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "e94ff54ef018c95045bc7a0c7c3858a0b0844ce47ce2de88ac8befdcf0673ccf",
       "sources": [
+        {
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
+        },
         {
           "path": "public/catalog/book/book-children-reading-together-classic-clipart.webp",
           "sha256": "139f27752808f36e8f8c29172844a9ffe06e94db342e9f5af0384d132e4406e7"
@@ -665,21 +621,9 @@
         {
           "path": "public/catalog/earth/earth-clipart-classroom-globe-wooden-stand.webp",
           "sha256": "a80d2f6de49083f87de02417c446c11ef1273a05c118ae748c35b42fc65e3726"
-        },
-        {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -764,12 +708,12 @@
     },
     "guides": {
       "route": "/guides/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "d293fe5fbaee39a8e7940bcec22dd7727c395c20220b34ba01c29cb9b16c7fc1",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "1d8247beaa66749eaf96821503e8f2ef713ff36681afca8c8566a37df487928d",
       "sources": [
         {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
         },
         {
           "path": "public/social/jotclipart-studio-native-20261116.jpg",
@@ -777,14 +721,6 @@
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -853,27 +789,19 @@
     },
     "print-size": {
       "route": "/print-size/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "0b42636b79c74b24e79f72ef8ebe0739d182ea978592f8afd25b11390a00fa98",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "411730ae166c7ed495976decbcede6db6628cac2407a56119919ead51ca515f7",
       "sources": [
+        {
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
+        },
         {
           "path": "public/catalog/lemon/lemon-whole-and-cut-fruit-realistic-clipart.webp",
           "sha256": "c8fe73ef4caa08f1bc2fe972fc29bf09fcdc6be5fb879a64acadd8c2db790a85"
-        },
-        {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -942,9 +870,17 @@
     },
     "about": {
       "route": "/about/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "ca1bec1a6b31cd227cccb87e28ec54b2447e9e6ed01e5e41ac2e2b0efd498184",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "63f6709158055d1aa98275795241232e89134677906a91e259c0a3280ad5ed11",
       "sources": [
+        {
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
+        },
+        {
+          "path": "public/brand/jotclipart-mark-3d.png",
+          "sha256": "2e77f70de1fcac8f6fcc300d74f745894dd19a82c1ede0298bbc1a4715b66d19"
+        },
         {
           "path": "public/catalog/heart/floral-heart-roses-wreath-clipart.webp",
           "sha256": "b79ae752dc0be2aa79ae2871d0835f40d7ea620753209ac9f3fd905c74553b3a"
@@ -964,21 +900,9 @@
         {
           "path": "public/illustrations/builder/pencil.svg",
           "sha256": "332721b6e9d890a769ee72fb6eb98a32b76690a2700bbe7329a6d9c8011c87b6"
-        },
-        {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -1039,9 +963,13 @@
     },
     "new": {
       "route": "/new/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "acd4a9dbe13ae0456422d21d61b75975d40fabf559909cb0dcf58d5772cd9699",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "1ea8a31de5e9120cfba8a2f27ab7b738df4d992429969324fb9f9cf59d936fb0",
       "sources": [
+        {
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
+        },
         {
           "path": "public/catalog/social-approved/giorgio-armani-rectangular-optical-frames-line-art-clipart-100.webp",
           "sha256": "1c5936843d7ab598aebb139a4d5bb839bd342225d340ff2d1edf9b5c71131a1e"
@@ -1065,21 +993,9 @@
         {
           "path": "public/catalog/social-approved/versace-medusa-95-shoulder-midi-dress-line-art-clipart-100.webp",
           "sha256": "2e700b7a37b751a96a5263bca042b982b741812996c8ae5915a42083cefc4779"
-        },
-        {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -1124,9 +1040,13 @@
     },
     "favorites": {
       "route": "/favorites/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "f43d452adc281bd34437a46502408e59f027f7c8b25b5edbbf13437a0c271544",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "1f30f4002ebdbe8796ae75a17b1a2d6a0bd74dd7cde31fbea544c52f669ce773",
       "sources": [
+        {
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
+        },
         {
           "path": "public/catalog/book/book-and-feather-quill-playful-clipart.webp",
           "sha256": "1c689d79c18cd9502ee7423e4514166f4a45d2fe3500c701a98bf467e9916331"
@@ -1146,21 +1066,9 @@
         {
           "path": "public/catalog/school/school-backpack-filled-with-pencils-classic-clipart.webp",
           "sha256": "3c135ace06155b3c53574b1e9f84eea74296d928a73ad9f05029feb6c4279d0d"
-        },
-        {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -1229,9 +1137,13 @@
     },
     "search": {
       "route": "/search/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "f4c710a92f52495720c7ab4b07657aa92f0410c6f56e4c5d1d450032e642466c",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "0a00d42c6aca8ec5cee5e088cb0ba1542b305404cd79ca3f3886b8ccd357bf8c",
       "sources": [
+        {
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
+        },
         {
           "path": "public/catalog/book/book-and-feather-quill-playful-clipart.webp",
           "sha256": "1c689d79c18cd9502ee7423e4514166f4a45d2fe3500c701a98bf467e9916331"
@@ -1247,21 +1159,9 @@
         {
           "path": "public/catalog/strawberry/strawberry-fruit-trio-realistic-clipart.webp",
           "sha256": "750311440409a705209eb673fa780eaaf8bf1f7cf38c0cfb956c29b14117f5f8"
-        },
-        {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -1314,27 +1214,19 @@
     },
     "contact": {
       "route": "/contact/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "3ac35e2881cf553984ee0883ddd307d5d43cc80b4c396c555892ec213c71e971",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "b64a72ab11aa453c4f8915fb206ca65cc7af5c2461e9b8331c6bb068cca59b79",
       "sources": [
+        {
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
+        },
         {
           "path": "public/illustrations/actions/contact.svg",
           "sha256": "f0ace1df3b385665987c9ac1a6591a893b79f484d1ee3229d58f7d8d3cf1a2c3"
-        },
-        {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -1403,9 +1295,13 @@
     },
     "faq": {
       "route": "/faq/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "5dff08554ea7bcdd26bed7c5cd942bdcd3528b626e066d8bf6d885262f813528",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "3339b595599d9d56cf8ad0b8775d03f742f49a335f893fae7a719dafc4059742",
       "sources": [
+        {
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
+        },
         {
           "path": "public/illustrations/actions/document.svg",
           "sha256": "01d2171adebd822ed40e11b04ccf9d69b3b5d47a8fd1efca613d3d4bdfd94177"
@@ -1417,21 +1313,9 @@
         {
           "path": "public/illustrations/actions/image.svg",
           "sha256": "292c6701b4f752365636acf261ca844d602e035f0389196e15901e3ed59c1eb0"
-        },
-        {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -1508,16 +1392,16 @@
     },
     "classroom-label": {
       "route": "/guides/make-a-classroom-label/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "257fb5d597eed2623be43223be91a3d8d63a9f0963305c0c685f40740112ca69",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "fa07ccd6adf9d20bf5a742c24a7dc602b341667af5bdf3e157bcf84ab903a9f0",
       "sources": [
+        {
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
+        },
         {
           "path": "public/catalog/book/book-and-feather-quill-playful-clipart.webp",
           "sha256": "1c689d79c18cd9502ee7423e4514166f4a45d2fe3500c701a98bf467e9916331"
-        },
-        {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
         },
         {
           "path": "public/studio/school-label.svg",
@@ -1525,14 +1409,6 @@
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -1601,12 +1477,12 @@
     },
     "coloring-activity": {
       "route": "/guides/turn-clipart-into-a-coloring-activity/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "22ad6912f8f53ea4ed5175a03828e5a2fe48033ba67624e38bf60e39761b1f3a",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "c4e06793f6a3b9534207b69546486f8cbc81d2026573226d09732f4251f7afcc",
       "sources": [
         {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
         },
         {
           "path": "public/studio/botanical-sprig.svg",
@@ -1614,14 +1490,6 @@
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -1682,9 +1550,13 @@
     },
     "download-formats": {
       "route": "/guides/webp-pdf-and-editable-projects/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "75d4ff1b6a149c1087c93460438e6be673b6cd6e114201005afc05c4920ef652",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "57013312495144999b4953a3b47f83ef2b9340c5341b13b54a7c1afb3af9b6f0",
       "sources": [
+        {
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
+        },
         {
           "path": "public/illustrations/actions/document.svg",
           "sha256": "01d2171adebd822ed40e11b04ccf9d69b3b5d47a8fd1efca613d3d4bdfd94177"
@@ -1696,21 +1568,9 @@
         {
           "path": "public/illustrations/actions/image.svg",
           "sha256": "292c6701b4f752365636acf261ca844d602e035f0389196e15901e3ed59c1eb0"
-        },
-        {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -1803,9 +1663,17 @@
     },
     "license": {
       "route": "/license/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "941c202d8b694192649592feb1395f578fe50aea8fc4c87a12861a448cca05fa",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "adc98f85e13523c2172a028292d0049a6b901ddd5136ae8d2b5412c3d318d2ca",
       "sources": [
+        {
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
+        },
+        {
+          "path": "public/brand/jotclipart-mark-3d.png",
+          "sha256": "2e77f70de1fcac8f6fcc300d74f745894dd19a82c1ede0298bbc1a4715b66d19"
+        },
         {
           "path": "public/catalog/book/book-and-feather-quill-playful-clipart.webp",
           "sha256": "1c689d79c18cd9502ee7423e4514166f4a45d2fe3500c701a98bf467e9916331"
@@ -1813,21 +1681,9 @@
         {
           "path": "public/catalog/heart/floral-heart-roses-wreath-clipart.webp",
           "sha256": "b79ae752dc0be2aa79ae2871d0835f40d7ea620753209ac9f3fd905c74553b3a"
-        },
-        {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -1888,23 +1744,15 @@
     },
     "privacy": {
       "route": "/privacy/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "0aba7318d19dfed8087978ad1e31d8c426051abb688575365fbf5d0a4db0e5fb",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "ad66727764862cd5c806b9225855645cc96b81cf821f49b1f746937cc8ddda11",
       "sources": [
         {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -1973,27 +1821,19 @@
     },
     "cookies": {
       "route": "/cookies/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "a1e98c8587e85d12c15424825fff8308b7675513ccc2abbddfc2b47395168d0c",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "e902b275ca8af3e0f7b1b7abcda954ee223facbdfeb85e49719fe2518eda2e56",
       "sources": [
+        {
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
+        },
         {
           "path": "public/illustrations/actions/cookies.svg",
           "sha256": "31b53159d19b3e9071c6b92613b40d86049de39374968a6c4ab7fe485b387a58"
-        },
-        {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -2054,23 +1894,19 @@
     },
     "terms": {
       "route": "/terms/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "9437d222221f0cf16a08c9369d7f0437ac8219555f57c5aa137c2e8fba639c8c",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "c2c8245501d5543ca2a52c35cfafcd731b54247629666b2a4cc25483600e2ce7",
       "sources": [
         {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
+        },
+        {
+          "path": "public/brand/jotclipart-mark-3d.png",
+          "sha256": "2e77f70de1fcac8f6fcc300d74f745894dd19a82c1ede0298bbc1a4715b66d19"
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -2139,9 +1975,13 @@
     },
     "copyright": {
       "route": "/copyright/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "01a39102b246276193d67aec767713efdb49697f22e771ef188ccc7b5ee09b5e",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "ebbad60a6791cb79ee275874e45c7cecf69a6b2c3f69a218b2a79f7388e3a601",
       "sources": [
+        {
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
+        },
         {
           "path": "public/illustrations/actions/contact.svg",
           "sha256": "f0ace1df3b385665987c9ac1a6591a893b79f484d1ee3229d58f7d8d3cf1a2c3"
@@ -2149,21 +1989,9 @@
         {
           "path": "public/illustrations/actions/document.svg",
           "sha256": "01d2171adebd822ed40e11b04ccf9d69b3b5d47a8fd1efca613d3d4bdfd94177"
-        },
-        {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -2224,23 +2052,15 @@
     },
     "accessibility": {
       "route": "/accessibility/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "cf63fde2d0bf525759de73aba02bce8996d0a9dad4c5f99e699bd147205c0b5c",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "c85f5d494d0252e69741b82ae9d437a64bb21eadfa357ee80a1b537a6dec2f75",
       "sources": [
         {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -2301,9 +2121,13 @@
     },
     "creative-process": {
       "route": "/editorial-process/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "8542390a247111fadf48ee2f587e0d37b5f92c1afdb70733de2b3a7121307a54",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "92054af79ca3690df2a7ff1f320e89719df4dab8a150e916a14be7047bb125da",
       "sources": [
+        {
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
+        },
         {
           "path": "public/catalog/fox/baby-fennec-fox-watercolor-clipart.webp",
           "sha256": "9fdda59dfc350b5357dc8303f47c1bf5093887da982646a64973f98c8e0b8621"
@@ -2315,21 +2139,9 @@
         {
           "path": "public/illustrations/actions/edit.svg",
           "sha256": "b411a393139c0b9a0496555f3aaa3377143c49a65a27fd51415d5d93c1ba2c0f"
-        },
-        {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,
@@ -2398,9 +2210,13 @@
     },
     "not-found": {
       "route": "/404/",
-      "rendererSha": "5eb5dcaa7195ac110665ac3723186ec8a20cf401976fc1ceaf63b5fb8d1103d0",
-      "outputSha256": "7403a89d034ce3763e353b2cd8f6edd1784f4017eab87cdb07bc18032269f574",
+      "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
+      "outputSha256": "4a3864cd4ff9097d4e89e4d0cbe6d9b3d45e07c86d4cf593ac73cfa9b8515bc7",
       "sources": [
+        {
+          "path": "public/brand/jotclipart-logo-3d.webp",
+          "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
+        },
         {
           "path": "public/catalog/butterfly/blue-morpho-butterfly-flying-illustration-clipart.webp",
           "sha256": "a2dda292f5c63a1fbe148852ee117fa3bcfd17303266b75599cef85c6c4be5b9"
@@ -2408,21 +2224,9 @@
         {
           "path": "public/catalog/fox/baby-fennec-fox-watercolor-clipart.webp",
           "sha256": "9fdda59dfc350b5357dc8303f47c1bf5093887da982646a64973f98c8e0b8621"
-        },
-        {
-          "path": "public/logo.svg",
-          "sha256": "b8edd6fd56f63017994b6375921f7da02a2835c7ca09feb5283054e1e8a7c49c"
         }
       ],
       "text": [
-        {
-          "text": "JotClipart",
-          "x": 101,
-          "y": 47,
-          "width": 133.5,
-          "height": 28,
-          "size": 29
-        },
         {
           "text": "jotclipart.com",
           "x": 58,

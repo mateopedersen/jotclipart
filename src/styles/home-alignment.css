@@ -75,7 +75,7 @@
   container-type: inline-size;
 }
 .home-recent > p {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   line-height: 1.55;
   margin: 0 0 22px;
 }

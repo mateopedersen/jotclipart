@@ -46,12 +46,7 @@
   padding: clamp(1.5rem, 3.5vw, 3rem);
   border: 1px solid var(--brand-border);
   border-radius: 26px;
-  background: radial-gradient(
-    ellipse at 83% 38%,
-    var(--brand-soft) 0%,
-    var(--brand-page) 44%,
-    #fff 78%
-  );
+  background: #ffffff;
   box-shadow:
     0 12px 32px -26px #1d497d52,
     inset 0 1px 0 #fff;
@@ -194,7 +189,7 @@
 .contact-topic-details {
   padding: 1.3rem;
   border-radius: 15px;
-  background: var(--brand-page);
+  background: #ffffff;
   border: 1px solid var(--brand-soft);
   margin-top: 1.25rem;
 }
@@ -236,7 +231,7 @@
   align-items: center;
   gap: 1rem;
   padding: 1.6rem 1.6rem 1.25rem;
-  background: linear-gradient(110deg, var(--brand-page), #fff);
+  background: #ffffff;
   border-bottom: 1px solid var(--brand-soft);
 }
 .contact-compose-heading > img {
@@ -261,11 +256,11 @@
   color: var(--ct-copy);
 }
 .contact-form-summary strong {
-  background: var(--brand-soft);
+  background: #ffffff;
   border: 1px solid var(--brand-border);
   padding: 5px 10px;
   border-radius: 8px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-weight: 600;
 }
 .contact-form-gateway {
@@ -279,7 +274,7 @@
   text-align: center;
   border: 1px solid var(--brand-soft);
   border-radius: 17px;
-  background: radial-gradient(ellipse at 50% 0, var(--brand-soft), var(--brand-page) 66%, #fff);
+  background: #ffffff;
 }
 .contact-form-gateway[hidden],
 .contact-frame-host[hidden] {
@@ -350,7 +345,7 @@
   padding-bottom: 1rem;
 }
 .contact-frame-host {
-  background: var(--brand-page);
+  background: #ffffff;
   margin-top: 1rem;
 }
 .contact-frame-host iframe {
@@ -358,7 +353,7 @@
   width: 100%;
   height: 1640px;
   border: 0;
-  background: var(--brand-page);
+  background: #ffffff;
 }
 .contact-form-fallback {
   padding: 1.5rem;
@@ -379,7 +374,7 @@
 }
 .contact-no-script {
   padding: 1rem 1.5rem;
-  background: var(--brand-page);
+  background: #ffffff;
   line-height: 1.8;
 }
 .contact-expect {
@@ -390,7 +385,7 @@
   margin-top: 3rem;
   border: 1px solid var(--brand-soft);
   border-radius: 22px;
-  background: linear-gradient(125deg, var(--brand-page), var(--brand-page));
+  background: #ffffff;
 }
 .contact-expect > div > img {
   margin-bottom: 0.6rem;
@@ -419,7 +414,7 @@
   place-items: center;
   align-self: start;
   min-height: 38px;
-  background: var(--brand-soft);
+  background: #ffffff;
   border: 1px solid var(--brand-border);
   border-radius: 10px;
   color: var(--brand-action);

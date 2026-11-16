@@ -39,8 +39,7 @@
   border: 1px solid var(--brand-border);
   border-radius: 26px;
   background:
-    radial-gradient(ellipse at 90% 15%, #f9ecdb80, transparent 40%),
-    radial-gradient(ellipse at 10% 90%, var(--brand-soft), transparent 65%), var(--brand-page);
+    #ffffff;
   box-shadow:
     inset 0 2px #fff,
     0 5px 0 var(--brand-soft);
@@ -85,7 +84,7 @@
   color: var(--brand-accent);
 }
 .discovery-lead {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 16px;
   line-height: 1.7;
   max-width: 510px;
@@ -215,19 +214,19 @@
 }
 .discovery-scene-card-1 {
   transform: rotate(-7deg) translateY(6px);
-  background: #f4faf7;
+  background: #ffffff;
 }
 .discovery-scene-card-2 {
   transform: rotate(6deg) translateY(-5px);
-  background: #fff9ef;
+  background: #ffffff;
 }
 .discovery-scene-card-3 {
   transform: rotate(5deg);
-  background: var(--brand-page);
+  background: #ffffff;
 }
 .discovery-scene-card-4 {
   transform: rotate(-6deg) translateY(-10px);
-  background: #f7f2fc;
+  background: #ffffff;
 }
 .discovery-scene-card:hover {
   border-color: var(--brand-border);
@@ -259,12 +258,12 @@
   gap: 10px;
   min-height: 105px;
   padding: 20px 17px;
-  background: linear-gradient(130deg, var(--brand-soft), var(--brand-page) 75%);
+  background: #ffffff;
   border-bottom: 1px solid var(--brand-soft);
   font-size: 18px;
   font-weight: 650;
   list-style: none;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .discovery-controls > summary::-webkit-details-marker {
   display: none;
@@ -298,7 +297,7 @@
   padding: 5px;
   border: 1px solid var(--brand-border);
   border-radius: 14px;
-  background: var(--brand-page);
+  background: #ffffff;
   box-shadow: inset 0 2px 3px #255f9810;
 }
 .directory-query-input:focus-within {
@@ -328,7 +327,7 @@
   padding: 8px;
   border: 1px solid var(--brand-action);
   border-radius: 10px;
-  background: linear-gradient(145deg, var(--brand-soft), var(--brand-border));
+  background: #ffffff;
   color: #fff;
   font: inherit;
   font-size: 14px;
@@ -398,7 +397,7 @@
   height: 52px;
   border-radius: 11px;
   border: 1px solid var(--brand-soft);
-  background: var(--tone-bg, var(--brand-page));
+  background: #ffffff;
   box-shadow: 0 2px 0 var(--brand-soft);
 }
 .collection-filter-art img {
@@ -443,7 +442,7 @@
   margin-top: 18px;
   border: 1px solid var(--brand-soft);
   border-radius: 13px;
-  background: linear-gradient(120deg, var(--brand-page), var(--brand-page));
+  background: #ffffff;
   padding: 5px 10px;
 }
 .discovery-alphabet summary {
@@ -452,7 +451,7 @@
   justify-content: space-between;
   min-height: 54px;
   gap: 10px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 14px;
   font-weight: 650;
   cursor: pointer;
@@ -462,7 +461,7 @@
   display: none;
 }
 .discovery-alphabet summary span {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 12px;
 }
 .discovery-letters {
@@ -509,7 +508,7 @@
 .discovery-results-heading p {
   font-size: 14px;
   font-weight: 550;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   line-height: 1.4;
   margin: 0;
 }
@@ -543,14 +542,14 @@
   margin-bottom: 18px;
   border: 1px solid var(--brand-soft);
   border-radius: 10px;
-  background: var(--brand-page);
+  background: #ffffff;
 }
 .discovery-active-filters p {
   margin: 0;
   font-size: 14px;
   font-weight: 550;
   line-height: 1.5;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   overflow-wrap: anywhere;
 }
 .discovery-active-filters button {
@@ -611,8 +610,7 @@
   min-width: 0;
   padding: 10px;
   background:
-    radial-gradient(ellipse at 50% 45%, #ffffffc9, transparent 65%),
-    linear-gradient(135deg, var(--tone-bg, var(--brand-page)), var(--brand-soft));
+    #ffffff;
   border-bottom: 1px solid var(--brand-soft);
 }
 .subject-art img {
@@ -660,7 +658,7 @@
 .discovery-empty {
   padding: 38px 20px;
   text-align: center;
-  background: var(--brand-page);
+  background: #ffffff;
   border: 1px dashed var(--brand-border);
   border-radius: 16px;
 }
@@ -901,7 +899,7 @@
   height: 22px;
   margin-left: 7px;
   border-radius: 6px;
-  background: var(--brand-soft);
+  background: #ffffff;
   color: var(--brand-action);
   font-size: 11px;
   font-weight: 650;
@@ -920,12 +918,12 @@
 }
 .discovery-alphabet .alphabet-copy {
   flex: 1;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 13px;
 }
 .alphabet-copy small {
   display: block;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 10px;
   font-weight: 400;
   margin-top: 3px;

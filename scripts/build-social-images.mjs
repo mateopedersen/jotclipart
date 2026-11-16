@@ -43,16 +43,17 @@ const rendererSha = sha(
         'scripts/social/compositions.mjs',
         'scripts/social/pages.mjs',
         'scripts/social/sources.mjs',
+        'src/lib/brand.mjs',
         'data/social-source-artworks.json',
       ].map((path) => readFile(join(root, path))),
     ),
   ),
 );
 for (const page of pages) {
-  const c = new Canvas(page.dark ? brand.ink : brand.background);
-  if (!page.dark) c.rect(564, 90, 614, 463, brand.soft, 25);
-  await c.brand({ dark: page.dark });
-  await c.title(page.title, page.subtitle, { dark: page.dark, size: page.titleSize || 59 });
+  const c = new Canvas(brand.background);
+  c.rect(564, 90, 614, 463, brand.surface, 25);
+  await c.brand();
+  await c.title(page.title, page.subtitle, { size: page.titleSize || 59 });
   await compose(
     c,
     page.layout === 'new' ? { ...page, sampleIDs: socialSourceManifest.currentSampleIDs } : page,
@@ -107,7 +108,7 @@ const overview = await sharp({
     width: 1520,
     height: Math.ceil(pages.length / 4) * 209,
     channels: 3,
-    background: '#B7DCC5',
+    background: '#FFFFFF',
   },
 })
   .composite(previewLayers)

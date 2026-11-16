@@ -1,0 +1,133 @@
+name: JotClipart native release gates
+
+on:
+  push:
+    branches: [main, 'migration/**']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: jotclipart-native-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  ASTRO_TELEMETRY_DISABLED: '1'
+  BASE_URL: https://migration-preview.jotclipart.pages.dev
+
+jobs:
+  native-source-and-package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.25.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.22.2'
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Verify changed code formatting against accepted native source
+        run: node scripts/jotclipart/ci-native.mjs format
+      - name: Source, signed social originals and all required native invariants
+        run: node scripts/jotclipart/ci-native.mjs source
+      - name: Clean independent Astro native software build
+        run: pnpm build
+      - name: Verify every exact package byte and actual platform limits
+        run: node scripts/jotclipart/ci-native.mjs package
+      - name: Preserve bounded structured gate evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jotclipart-native-source-${{ github.sha }}
+          path: reports/jotclipart-native-ci/
+          retention-days: 3
+
+  preview-pin:
+    needs: native-source-and-package
+    runs-on: ubuntu-latest
+    timeout-minutes: 24
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.25.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.22.2'
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Wait at most twenty minutes for the owner-deployed matching preview
+        run: node scripts/jotclipart/ci-browser.mjs pin
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jotclipart-preview-pin-${{ github.sha }}
+          path: reports/jotclipart-native-browser/preview-pin.json
+          retention-days: 3
+
+  native-browser:
+    needs: preview-pin
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        engine: [chromium, firefox, webkit]
+        width: [320, 390, 768, 1440]
+    container:
+      image: mcr.microsoft.com/playwright:v1.64.1-noble@sha256:47b510dd9230bf0b9bfc9b20102241e577ea7a99334ab4c3ca19f19770e9b8ea
+      options: --user 1001
+    env:
+      UC_BROWSER: ${{ matrix.engine }}
+      VIEWPORT_WIDTH: ${{ matrix.width }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.25.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.22.2'
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - uses: actions/download-artifact@v4
+        with:
+          name: jotclipart-preview-pin-${{ github.sha }}
+          path: reports/jotclipart-native-browser/
+      - name: Actual preview flows with old hosts blocked
+        run: node scripts/jotclipart/ci-browser.mjs browser
+      - name: Preserve reports and viewport evidence, without original download binaries
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jotclipart-browser-${{ matrix.engine }}-${{ matrix.width }}-${{ github.sha }}
+          path: |
+            reports/jotclipart-native-browser/${{ matrix.engine }}-${{ matrix.width }}/*.json
+            reports/jotclipart-native-browser/${{ matrix.engine }}-${{ matrix.width }}/*.png
+          retention-days: 3
+
+  native-release:
+    if: always()
+    needs: [native-source-and-package, preview-pin, native-browser]
+    runs-on: ubuntu-latest
+    steps:
+      - name: All native gates are mandatory
+        env:
+          SOURCE_RESULT: ${{ needs.native-source-and-package.result }}
+          PREVIEW_RESULT: ${{ needs.preview-pin.result }}
+          BROWSER_RESULT: ${{ needs.native-browser.result }}
+        run: |
+          test "$SOURCE_RESULT" = success
+          test "$PREVIEW_RESULT" = success
+          test "$BROWSER_RESULT" = success

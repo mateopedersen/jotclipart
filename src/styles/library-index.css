@@ -15,7 +15,7 @@
   padding: clamp(24px, 4vw, 48px);
   border: 1px solid var(--brand-soft);
   border-radius: 26px;
-  background: linear-gradient(140deg, var(--brand-page), var(--brand-soft));
+  background: #ffffff;
   box-shadow: 0 6px 0 var(--brand-soft);
 }
 .library-index-hero h1 {
@@ -66,7 +66,7 @@
   place-items: center;
   padding: 12px;
   aspect-ratio: 1;
-  background: linear-gradient(150deg, #fff, var(--brand-page));
+  background: #ffffff;
   border: 1px solid var(--brand-border);
   border-radius: 20px;
   box-shadow:
@@ -110,7 +110,7 @@
   text-underline-offset: 4px;
 }
 .library-index-filter {
-  background: var(--brand-page);
+  background: #ffffff;
   border: 1px solid var(--brand-soft);
   border-radius: 16px;
   padding: 20px;
@@ -243,7 +243,7 @@
   padding: 12px;
   border: 1px solid var(--brand-border);
   border-radius: 14px;
-  background: var(--brand-page);
+  background: #ffffff;
   color: var(--brand-action);
   font-weight: 600;
   text-decoration: none;
@@ -310,7 +310,7 @@
   padding: 28px;
   border: 1px solid var(--brand-soft);
   border-radius: 20px;
-  background: var(--brand-page);
+  background: #ffffff;
 }
 .library-information ul {
   display: grid;

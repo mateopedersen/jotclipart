@@ -1,0 +1,26 @@
+{
+  "tool": "built-in image_gen",
+  "createdAt": "2026-11-16T18:45:59.726Z",
+  "reference": "/Users/melihozcan/Downloads/logo-3d.webp",
+  "source": {
+    "path": "design-assets/brand/jotclipart-logo-3d-source.png",
+    "sha256": "f690ab63530b9a0738f547f1f468e85187026f630c735dcd33569750e1ad1308",
+    "width": 2172,
+    "height": 724,
+    "hasAlpha": true
+  },
+  "wordmark": {
+    "path": "public/brand/jotclipart-logo-3d.webp",
+    "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530",
+    "sourceTrimmedWidth": 2057,
+    "sourceTrimmedHeight": 538
+  },
+  "mark": {
+    "path": "public/brand/jotclipart-mark-3d.png",
+    "sourcePath": "design-assets/brand/jotclipart-mark-3d-source.png",
+    "sha256": "2e77f70de1fcac8f6fcc300d74f745894dd19a82c1ede0298bbc1a4715b66d19",
+    "tool": "built-in image_gen",
+    "prompt": "Create a standalone square brand symbol from the reviewed wordmark: preserve only the leading glossy green J, cream peeled sticker edge and yellow star. Remove every other letter and dark fragment. Keep the complete shape, transparent alpha and small icon legibility."
+  },
+  "prompt": "Match the supplied JotColoring logo style: glossy rounded 3D JotClipart wordmark on transparent alpha, charcoal Jot and fresh green Clipart, leading J shaped as a peeled die-cut sticker with a small star cutout. Compact horizontal logo with no extra text or scene. Reference is style only; no pencil. Exact text JotClipart."
+}

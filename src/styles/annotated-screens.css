@@ -24,7 +24,7 @@
   max-width: 100%;
   border: 1px solid var(--brand-border);
   border-radius: 7px;
-  background: var(--brand-page);
+  background: #ffffff;
   box-shadow: 0 3px 0 var(--brand-soft);
 }
 .gm-screen-image {

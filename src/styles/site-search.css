@@ -69,7 +69,7 @@
 .site-search-result p {
   font-size: 14px;
   line-height: 1.6;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   margin: 0;
 }
 #site-search-section,
@@ -145,7 +145,7 @@ form:has(> .search-suggestions) {
   width: 44px;
   height: 44px;
   object-fit: contain;
-  background: var(--brand-page);
+  background: #ffffff;
   border-radius: 6px;
   flex: 0 0 44px;
 }
@@ -162,7 +162,7 @@ form:has(> .search-suggestions) {
 }
 .search-suggestions p {
   margin: 8px 10px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 13px;
   line-height: 1.5;
 }

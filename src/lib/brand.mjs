@@ -7,7 +7,7 @@ export const brand = Object.freeze({
   action: '#216E4E',
   ink: '#123524',
   soft: '#D8F3DC',
-  background: '#F4FAF6',
+  background: '#FFFFFF',
   surface: '#FFFFFF',
 });
 

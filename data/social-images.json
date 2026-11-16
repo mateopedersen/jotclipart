@@ -5,238 +5,238 @@
   "type": "image/png",
   "pages": {
     "/": {
-      "src": "/og/home-3da5f5f1dffd.png",
+      "src": "/og/home-b09a65eff867.png",
       "alt": "JotClipart library with a floral heart, pizza, school backpack, guitar, volleyball, autumn leaves and winter mittens.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "3da5f5f1dffd1700b9efba25a00478ec18a3cb323bd57d5abd577af67f59cbe3",
-      "bytes": 46922
+      "sha256": "b09a65eff867db22b5617c9f54ef81c3f3ce6a64e7ec3a8692615520f67385b2",
+      "bytes": 49381
     },
     "/create/": {
-      "src": "/og/studio-7c6a3dc40113.png",
+      "src": "/og/studio-33bccea07844.png",
       "alt": "Clipart Studio: a strawberry card composition with text, layers and selection handles.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "7c6a3dc4011373e8fcc8147f46849c693a51712731d9739fb713b0179a9136ff",
-      "bytes": 39567
+      "sha256": "33bccea07844ad9260318d5e0a436af1b86194d33e2519873977cffd6dede240",
+      "bytes": 42664
     },
     "/ai-clipart-generator/": {
-      "src": "/og/ai-builder-85ef492c235c.png",
+      "src": "/og/ai-builder-9a3618a365fa.png",
       "alt": "AI Clipart Builder with examples of a gardening robot, flowers and a rabbit.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "85ef492c235cd3bd6fa0d3c3bd129759be8fa5abe3fbabc788681f812b63c2af",
-      "bytes": 59037
+      "sha256": "9a3618a365fa937901030b3a5ae639957b18f1691335f25ebc26a49f6ecfb7a9",
+      "bytes": 63109
     },
     "/categories/": {
-      "src": "/og/categories-5a02e1dc2468.png",
+      "src": "/og/categories-e9d2639ce9ba.png",
       "alt": "Clipart categories illustrated by animals, plants, food, school, music and nature.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "5a02e1dc2468e791056b47e32a3c4b164dc9acd4bf2c5d928e3c1a81426e6f48",
-      "bytes": 56953
+      "sha256": "e9d2639ce9ba3e75997a1eda1f40f46caa3dd27c6da75d315a57d76f5872bf9d",
+      "bytes": 59976
     },
     "/collections/": {
-      "src": "/og/collections-4227f4aaf0e0.png",
+      "src": "/og/collections-47e15cdaac8f.png",
       "alt": "Clipart collections with Halloween pumpkins, a snowy cabin and a floral heart.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "4227f4aaf0e01a7ad60fa2ef6e525ea65286abe4fca07bf01fefa39a80bf5a4a",
-      "bytes": 42804
+      "sha256": "47e15cdaac8fb96e47445a05aff8c21fedc8d6ed07f31582ae126b0e2e32af96",
+      "bytes": 46833
     },
     "/black-and-white/": {
-      "src": "/og/black-and-white-213ebda1d3c9.png",
+      "src": "/og/black-and-white-f82a484bba9f.png",
       "alt": "Black-and-white clipart: an ink fern, violin and open book arranged on white panels.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "213ebda1d3c97a8f3804a0f83abf54203af3d967ed98fddd1df5a7af1c2fff34",
-      "bytes": 46573
+      "sha256": "f82a484bba9fad237ec7233e9a9f70e7981d0af059e7120c5bf25f725b4e68ec",
+      "bytes": 49725
     },
     "/for-teachers/": {
-      "src": "/og/teachers-d80671d9a483.png",
+      "src": "/og/teachers-e94ff54ef018.png",
       "alt": "For Teachers: illustrated worksheet and reading-corner examples with an Earth globe and books.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "d80671d9a483fbe90670e058c9ec4f878ac3211bb08e23f2e1304854ef011d73",
-      "bytes": 37624
+      "sha256": "e94ff54ef018c95045bc7a0c7c3858a0b0844ce47ce2de88ac8befdcf0673ccf",
+      "bytes": 41548
     },
     "/guides/": {
-      "src": "/og/guides-d293fe5fbaee.png",
+      "src": "/og/guides-1d8247beaa66.png",
       "alt": "JotClipart User Guide with an actual Studio screenshot and download, edit and print guide labels.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "d293fe5fbaee39a8e7940bcec22dd7727c395c20220b34ba01c29cb9b16c7fc1",
-      "bytes": 56640
+      "sha256": "1d8247beaa66749eaf96821503e8f2ef713ff36681afca8c8566a37df487928d",
+      "bytes": 59894
     },
     "/print-size/": {
-      "src": "/og/print-size-0b42636b79c7.png",
+      "src": "/og/print-size-411730ae166c.png",
       "alt": "Print Size Calculator: an illustrated paper layout, image dimensions and measuring rulers.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "0b42636b79c74b24e79f72ef8ebe0739d182ea978592f8afd25b11390a00fa98",
-      "bytes": 38699
+      "sha256": "411730ae166c7ed495976decbcede6db6628cac2407a56119919ead51ca515f7",
+      "bytes": 41811
     },
     "/about/": {
-      "src": "/og/about-ca1bec1a6b31.png",
-      "alt": "About JotClipart: the green J emblem on layered cards, with a floral heart, fern, lemon, paint palette and pencil.",
+      "src": "/og/about-63f670915805.png",
+      "alt": "About JotClipart: the three-dimensional clipart logo on layered white cards, with a floral heart, fern, lemon, paint palette and pencil.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "ca1bec1a6b31cd227cccb87e28ec54b2447e9e6ed01e5e41ac2e2b0efd498184",
-      "bytes": 52509
+      "sha256": "63f6709158055d1aa98275795241232e89134677906a91e259c0a3280ad5ed11",
+      "bytes": 55775
     },
     "/new/": {
-      "src": "/og/new-acd4a9dbe13a.png",
+      "src": "/og/new-1ea8a31de5e9.png",
       "alt": "New Clipart: a selection of the latest published subjects in the JotClipart catalog.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "acd4a9dbe13ae0456422d21d61b75975d40fabf559909cb0dcf58d5772cd9699",
-      "bytes": 41450
+      "sha256": "1ea8a31de5e9120cfba8a2f27ab7b738df4d992429969324fb9f9cf59d936fb0",
+      "bytes": 44585
     },
     "/favorites/": {
-      "src": "/og/favorites-f43d452adc28.png",
+      "src": "/og/favorites-1f30f4002ebd.png",
       "alt": "Favorites and boards shown through illustrated Classroom and Cards example collections.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "f43d452adc281bd34437a46502408e59f027f7c8b25b5edbbf13437a0c271544",
-      "bytes": 52609
+      "sha256": "1f30f4002ebdbe8796ae75a17b1a2d6a0bd74dd7cde31fbea544c52f669ce773",
+      "bytes": 55745
     },
     "/search/": {
-      "src": "/og/search-f4c710a92f52.png",
+      "src": "/og/search-0a00d42c6aca.png",
       "alt": "Search JotClipart with a search illustration and varied clipart subject examples.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "f4c710a92f52495720c7ab4b07657aa92f0410c6f56e4c5d1d450032e642466c",
-      "bytes": 36547
+      "sha256": "0a00d42c6aca8ec5cee5e088cb0ba1542b305404cd79ca3f3886b8ccd357bf8c",
+      "bytes": 40055
     },
     "/contact/": {
-      "src": "/og/contact-3ac35e2881cf.png",
+      "src": "/og/contact-b64a72ab11aa.png",
       "alt": "Contact JotClipart with an illustrated envelope and the public contact email address.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "3ac35e2881cf553984ee0883ddd307d5d43cc80b4c396c555892ec213c71e971",
-      "bytes": 26522
+      "sha256": "b64a72ab11aa453c4f8915fb206ca65cc7af5c2461e9b8331c6bb068cca59b79",
+      "bytes": 28475
     },
     "/faq/": {
-      "src": "/og/faq-5dff08554ea7.png",
+      "src": "/og/faq-3339b595599d.png",
       "alt": "JotClipart FAQ with a question mark and illustrated Image, PDF and Editing topics.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "5dff08554ea7bcdd26bed7c5cd942bdcd3528b626e066d8bf6d885262f813528",
-      "bytes": 25073
+      "sha256": "3339b595599d9d56cf8ad0b8775d03f742f49a335f893fae7a719dafc4059742",
+      "bytes": 28751
     },
     "/guides/make-a-classroom-label/": {
-      "src": "/og/classroom-label-257fb5d597ee.png",
+      "src": "/og/classroom-label-fa07ccd6adf9.png",
       "alt": "Classroom label tutorial with a Reading Corner example made from the editable Learning label starter.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "257fb5d597eed2623be43223be91a3d8d63a9f0963305c0c685f40740112ca69",
-      "bytes": 28534
+      "sha256": "fa07ccd6adf9d20bf5a742c24a7dc602b341667af5bdf3e157bcf84ab903a9f0",
+      "bytes": 32283
     },
     "/guides/turn-clipart-into-a-coloring-activity/": {
-      "src": "/og/coloring-activity-22ad6912f8f5.png",
+      "src": "/og/coloring-activity-c4e06793f6a3.png",
       "alt": "Botanical coloring activity guide showing the same editable sprig in color and in outline.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "22ad6912f8f53ea4ed5175a03828e5a2fe48033ba67624e38bf60e39761b1f3a",
-      "bytes": 23338
+      "sha256": "c4e06793f6a3b9534207b69546486f8cbc81d2026573226d09732f4251f7afcc",
+      "bytes": 27250
     },
     "/guides/webp-pdf-and-editable-projects/": {
-      "src": "/og/download-formats-75d4ff1b6a14.png",
+      "src": "/og/download-formats-570133124951.png",
       "alt": "Download format guide showing distinct WebP, PDF and editable Project file illustrations.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "75d4ff1b6a149c1087c93460438e6be673b6cd6e114201005afc05c4920ef652",
-      "bytes": 24688
+      "sha256": "57013312495144999b4953a3b47f83ef2b9340c5341b13b54a7c1afb3af9b6f0",
+      "bytes": 28294
     },
     "/license/": {
-      "src": "/og/license-941c202d8b69.png",
+      "src": "/og/license-adc98f85e135.png",
       "alt": "JotClipart Artwork License: a license document with personal and educational use illustrations.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "941c202d8b694192649592feb1395f578fe50aea8fc4c87a12861a448cca05fa",
-      "bytes": 38084
+      "sha256": "adc98f85e13523c2172a028292d0049a6b901ddd5136ae8d2b5412c3d318d2ca",
+      "bytes": 43559
     },
     "/privacy/": {
-      "src": "/og/privacy-0aba7318d19d.png",
+      "src": "/og/privacy-ad6672776486.png",
       "alt": "JotClipart Privacy: a lock and separate browser, AI service and saved-file illustrations.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "0aba7318d19dfed8087978ad1e31d8c426051abb688575365fbf5d0a4db0e5fb",
-      "bytes": 19990
+      "sha256": "ad66727764862cd5c806b9225855645cc96b81cf821f49b1f746937cc8ddda11",
+      "bytes": 24341
     },
     "/cookies/": {
-      "src": "/og/cookies-a1e98c8587e8.png",
+      "src": "/og/cookies-e902b275ca8a.png",
       "alt": "JotClipart Cookie Policy with a cookie and security shield, necessary-cookie information and privacy controls.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "a1e98c8587e85d12c15424825fff8308b7675513ccc2abbddfc2b47395168d0c",
-      "bytes": 28446
+      "sha256": "e902b275ca8af3e0f7b1b7abcda954ee223facbdfeb85e49719fe2518eda2e56",
+      "bytes": 31889
     },
     "/terms/": {
-      "src": "/og/terms-9437d222221f.png",
+      "src": "/og/terms-c2c8245501d5.png",
       "alt": "JotClipart Terms of Use with an illustrated document and the site logo.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "9437d222221f0cf16a08c9369d7f0437ac8219555f57c5aa137c2e8fba639c8c",
-      "bytes": 17729
+      "sha256": "c2c8245501d5543ca2a52c35cfafcd731b54247629666b2a4cc25483600e2ce7",
+      "bytes": 22920
     },
     "/copyright/": {
-      "src": "/og/copyright-01a39102b246.png",
+      "src": "/og/copyright-ebbad60a6791.png",
       "alt": "Copyright and corrections with a copyright symbol, document and artwork reference.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "01a39102b246276193d67aec767713efdb49697f22e771ef188ccc7b5ee09b5e",
-      "bytes": 26824
+      "sha256": "ebbad60a6791cb79ee275874e45c7cecf69a6b2c3f69a218b2a79f7388e3a601",
+      "bytes": 30140
     },
     "/accessibility/": {
-      "src": "/og/accessibility-cf63fde2d0bf.png",
+      "src": "/og/accessibility-c85f5d494d02.png",
       "alt": "Accessibility information illustrated by keyboard Tab keys and a clearly visible focus outline.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "cf63fde2d0bf525759de73aba02bce8996d0a9dad4c5f99e699bd147205c0b5c",
-      "bytes": 18874
+      "sha256": "c85f5d494d0252e69741b82ae9d437a64bb21eadfa357ee80a1b537a6dec2f75",
+      "bytes": 23257
     },
     "/editorial-process/": {
-      "src": "/og/creative-process-8542390a2471.png",
+      "src": "/og/creative-process-92054af79ca3.png",
       "alt": "JotClipart editorial process illustrated by a subject brief, review tools and a publication document.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "8542390a247111fadf48ee2f587e0d37b5f92c1afdb70733de2b3a7121307a54",
-      "bytes": 26594
+      "sha256": "92054af79ca3690df2a7ff1f320e89719df4dab8a150e916a14be7047bb125da",
+      "bytes": 30292
     },
     "/404/": {
-      "src": "/og/not-found-7403a89d034c.png",
+      "src": "/og/not-found-4a3864cd4ff9.png",
       "alt": "JotClipart page not found with a green 404 illustration, a fox and a search symbol.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "7403a89d034ce3763e353b2cd8f6edd1784f4017eab87cdb07bc18032269f574",
-      "bytes": 37722
+      "sha256": "4a3864cd4ff9097d4e89e4d0cbe6d9b3d45e07c86d4cf593ac73cfa9b8515bc7",
+      "bytes": 40532
     }
   }
 }

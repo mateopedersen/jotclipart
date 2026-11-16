@@ -44,9 +44,26 @@ export function presentationState(input, seen = new WeakMap(), field = '', paren
   const out = Array.isArray(input) ? [] : {};
   seen.set(input, out);
   for (const key of Reflect.ownKeys(input)) {
-    if (!Object.prototype.propertyIsEnumerable.call(input, key)) continue;
-    const value = Reflect.get(input, key);
-    out[key] = presentationState(value, seen, Array.isArray(input) ? field : key, field);
+    const descriptor = Object.getOwnPropertyDescriptor(input, key);
+    if (!descriptor) continue;
+    if (!descriptor.enumerable) {
+      Object.defineProperty(out, key, descriptor);
+      continue;
+    }
+    const nextField = Array.isArray(input) ? field : key;
+    if ('value' in descriptor) {
+      Object.defineProperty(out, key, {
+        ...descriptor,
+        value: presentationState(descriptor.value, seen, nextField, field),
+      });
+    } else {
+      Object.defineProperty(out, key, {
+        ...descriptor,
+        get: descriptor.get
+          ? () => presentationState(descriptor.get.call(input), seen, nextField, field)
+          : undefined,
+      });
+    }
   }
   return out;
 }

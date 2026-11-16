@@ -22,7 +22,7 @@
 }
 .hsg-heading p {
   margin: 0;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 20px;
   line-height: 1.5;
 }
@@ -80,7 +80,7 @@
   padding: 17px 12px;
   aspect-ratio: 1.08;
   border-bottom: 1px solid var(--brand-soft);
-  background: radial-gradient(ellipse at 50% 35%, #fff, var(--brand-page));
+  background: #ffffff;
 }
 .hsg-picture img {
   display: block;

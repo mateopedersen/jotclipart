@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "policy": "public-identity-no-rollback-baseline-v1",
+  "sourceRoot": "7c311351a6c725394ca7473cbcc1025868a281d17449cc817776452f0f3f6753",
+  "sourceRevision": "afb3383986d90bb4c167422f512b2ed320badde5",
+  "file": "jotclipart-migration-baseline.jsonl.gz",
+  "bytes": 15173029,
+  "sha256": "edf8653a3eff7c7cf26fbc7b4817cf7fc409d83ed82581be204314f4c55e7b54",
+  "artworks": 49858,
+  "topics": 804,
+  "collections": 101,
+  "otherPages": 24,
+  "canonicalPages": 50787,
+  "sitemapDocuments": 15,
+  "newDataOnlyPublicationsAllowed": true,
+  "exactMetadataRequiredWhenRootEqualsBaseline": true,
+  "alwaysRequireExistingCanonicalCoverage": true,
+  "fields": [
+    "id",
+    "canonicalPath",
+    "sourceTitle",
+    "displayTitle",
+    "descriptionHash",
+    "altHash",
+    "topic",
+    "published",
+    "indexable",
+    "media"
+  ],
+  "mediaFields": ["role", "objectKey", "bytes", "mime", "sha256"],
+  "privateFieldsIncluded": false
+}

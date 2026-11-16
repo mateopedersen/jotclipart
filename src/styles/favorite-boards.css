@@ -7,7 +7,7 @@
   padding: clamp(25px, 4vw, 52px);
   border: 1px solid var(--brand-soft);
   border-radius: 27px;
-  background: linear-gradient(125deg, var(--brand-page), var(--brand-page) 62%, #f5f0ff);
+  background: #ffffff;
   color: var(--brand-ink);
   overflow: hidden;
 }
@@ -62,7 +62,7 @@
   height: 160px;
   border: 1px solid var(--brand-border);
   border-radius: 18px;
-  background: linear-gradient(#fff, var(--brand-page));
+  background: #ffffff;
   box-shadow: 0 15px 22px #1e487418;
   transform: rotate(-11deg) translate(15px, 10px);
   flex-shrink: 0;
@@ -70,12 +70,12 @@
 .boards-art-card:nth-child(2) {
   z-index: 2;
   transform: translateY(-15px);
-  background: linear-gradient(#fff, #fff7e6);
+  background: #ffffff;
   border-color: #eedbb8;
 }
 .boards-art-card:nth-child(3) {
   transform: rotate(12deg) translate(-15px, 10px);
-  background: linear-gradient(#fff, #eff8f4);
+  background: #ffffff;
   border-color: #c7e3d8;
 }
 .boards-art-card svg {
@@ -171,19 +171,19 @@
   height: 116px;
   border-radius: 10px;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--brand-soft), var(--brand-soft));
+  background: #ffffff;
 }
 .board-tile[data-color='rose'] .board-cover {
-  background: linear-gradient(135deg, #fff0f3, #f3cdd9);
+  background: #ffffff;
 }
 .board-tile[data-color='sage'] .board-cover {
-  background: linear-gradient(135deg, #eaf5ef, #c4e1d2);
+  background: #ffffff;
 }
 .board-tile[data-color='gold'] .board-cover {
-  background: linear-gradient(135deg, #fff6df, #efdcaf);
+  background: #ffffff;
 }
 .board-tile[data-color='lavender'] .board-cover {
-  background: linear-gradient(135deg, #f3edff, #daccf3);
+  background: #ffffff;
 }
 .board-cover img {
   width: 33.333%;
@@ -200,7 +200,7 @@
   height: 66px;
   border: 1px solid #ffffffb3;
   border-radius: 17px;
-  background: #ffffff7a;
+  background: #ffffff;
   font-size: 35px;
   font-weight: 750;
   color: var(--brand-action);
@@ -242,7 +242,7 @@
   gap: 12px;
   padding: 18px;
   margin-bottom: 20px;
-  background: var(--brand-page);
+  background: #ffffff;
   border: 1px solid var(--brand-soft);
   border-radius: 15px;
 }
@@ -288,7 +288,7 @@
   margin-bottom: 20px;
   padding: 15px;
   border: 1px solid var(--brand-border);
-  background: var(--brand-page);
+  background: #ffffff;
   border-radius: 12px;
 }
 .favorites-bulk strong {
@@ -313,7 +313,7 @@
   flex-direction: column;
   align-items: stretch;
   gap: 9px;
-  background: var(--brand-page);
+  background: #ffffff;
 }
 .favorite-saved-at {
   font-size: 11px;
@@ -353,7 +353,7 @@
   padding: 50px 20px;
   border: 1px dashed var(--brand-border);
   border-radius: 20px;
-  background: linear-gradient(var(--brand-page), #fff);
+  background: #ffffff;
   color: var(--brand-action);
 }
 .boards-empty svg {
@@ -370,7 +370,7 @@
   line-height: 1.75;
   max-width: 490px;
   margin: 10px auto;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .boards-empty a {
   display: inline-flex;
@@ -392,7 +392,7 @@
   margin: 45px 0;
   border: 1px solid var(--brand-soft);
   border-radius: 19px;
-  background: var(--brand-page);
+  background: #ffffff;
 }
 .boards-backup h2 {
   font-size: 21px;
@@ -404,7 +404,7 @@
   max-width: 650px;
   font-size: 14px;
   line-height: 1.7;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   margin: 0;
 }
 .boards-backup > div:last-child {
@@ -450,7 +450,7 @@
 .boards-dialog form > p {
   font-size: 14px;
   line-height: 1.65;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .boards-dialog form > label {
   display: flex;
@@ -704,7 +704,7 @@
   min-width: 0;
   font-size: 13px;
   font-weight: 650;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .boards-directory-tools label:first-child {
   flex: 1 1 220px;
@@ -730,14 +730,14 @@
   border: 1px solid var(--brand-border);
   border-radius: 15px;
   margin: 0 0 18px;
-  background: var(--brand-page);
+  background: #ffffff;
 }
 .favorites-refine summary {
   cursor: pointer;
   padding: 16px 18px;
   min-height: 52px;
   font-weight: 700;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .favorites-refine summary span {
   font-size: 13px;
@@ -755,7 +755,7 @@
   font-size: 13px;
   margin: 0;
   padding: 0 18px 18px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 :is(.boards-directory-tools, .favorites-refine-grid, .boards-dialog) label.favorites-checkbox {
   display: flex;

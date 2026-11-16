@@ -57,7 +57,7 @@ test('a stale same-size browser copy is repaired once and the replacement must v
 test('a cached no-CORS image response is repaired once and still requires exact original bytes', async () => {
   const previous = globalThis.fetch,
     previousTimeout = AbortSignal.timeout,
-    remote = { ...file, url: 'https://assets.ultraclipart.com/test/original.webp' },
+    remote = { ...file, url: 'https://assets.jotclipart.com/test/original.webp' },
     calls = [];
   try {
     globalThis.fetch = async (_url, options) => {
