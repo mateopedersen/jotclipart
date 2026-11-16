@@ -27,6 +27,7 @@ function fixture(t) {
     'scripts/social/compositions.mjs',
     'scripts/social/pages.mjs',
     'scripts/social/sources.mjs',
+    'src/lib/brand.mjs',
   ];
   for (const path of renderer) put(path, path + '\n');
   const fonts = [400, 600, 700].map((weight) => {
@@ -238,6 +239,9 @@ test('renderer or font updates require new approved provenance', (t) => {
   const other = fixture(t);
   other.put('node_modules/@fontsource/inter/files/inter-latin-700-normal.woff', 'changed font');
   assert.throws(other.check, /font changed/);
+  const branded = fixture(t);
+  branded.put('src/lib/brand.mjs', 'changed brand palette');
+  assert.throws(branded.check, /renderer changed/);
 });
 test('missing routes, stale descriptions and unpublished sources fail closed', (t) => {
   const f = fixture(t);

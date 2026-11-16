@@ -338,11 +338,23 @@ async function browserFlow() {
     assert.equal(live.verifiedRoot, pin.snapshotRoot);
     await navigate(page, '/');
     await expect(page.locator('h1')).toContainText(/clipart/i);
-    await expect(page.locator('.site-header')).toContainText('JotClipart');
+    const brandLink = page
+      .locator('.site-header')
+      .getByRole('link', { name: 'JotClipart home', exact: true });
+    await expect(brandLink).toBeVisible();
+    const wordmark = brandLink.locator('img');
+    await expect(wordmark).toHaveAttribute('alt', 'JotClipart');
+    await expect(wordmark).toHaveAttribute('src', '/brand/jotclipart-logo-3d.webp');
+    await expect(wordmark).toHaveJSProperty('naturalWidth', 1200);
+    await expect(wordmark).toHaveJSProperty('naturalHeight', 314);
+    const logoSHA = sha(
+      Buffer.from(await (await get('/brand/jotclipart-logo-3d.webp')).arrayBuffer()),
+    );
+    assert.equal(logoSHA, sha(readFileSync('public/brand/jotclipart-logo-3d.webp')));
     await expect(page).toHaveTitle(/Free.*JotClipart/);
     await layout(page);
     await page.screenshot({ path: join(dir, 'home.png') });
-    check('Homepage branding, typography load and responsive viewport');
+    check('Homepage branding, typography load and responsive viewport', { logoSHA256: logoSHA });
     await navigate(page, '/clipart/' + pin.sample.topic + '/');
     await expect(page.locator('h1')).toHaveText(/^Free (?!Free )/);
     assert((await page.locator('.art-card').count()) > 0);
