@@ -43,8 +43,11 @@ export function presentationState(input, seen = new WeakMap(), field = '', paren
     throw Error('Unreviewed catalog presentation type');
   const out = Array.isArray(input) ? [] : {};
   seen.set(input, out);
-  for (const [key, value] of Object.entries(input))
+  for (const key of Reflect.ownKeys(input)) {
+    if (!Object.prototype.propertyIsEnumerable.call(input, key)) continue;
+    const value = Reflect.get(input, key);
     out[key] = presentationState(value, seen, Array.isArray(input) ? field : key, field);
+  }
   return out;
 }
 
