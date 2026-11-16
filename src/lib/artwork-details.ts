@@ -49,7 +49,7 @@ export function artworkDetails(item: ArtworkFacts) {
     (item.style === 'Color' ? 'Full-color illustration' : item.style);
   const aiGenerated = item.productionMethod === 'generated-raster';
   const generatedOrigin = 'Catalog artwork';
-  const originDescription = 'Source illustration retained in the UltraClipart collection.';
+  const originDescription = 'Source illustration retained in the JotClipart collection.';
   const inches = (px: number) => (px / 300).toFixed(2);
   const centimeters = (px: number) => ((px / 300) * 2.54).toFixed(1);
   return {

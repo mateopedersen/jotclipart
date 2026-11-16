@@ -152,6 +152,11 @@ try {
       const title = plain(/<title>([\s\S]*?)<\/title>/i.exec(body)?.[1] ?? '');
       const h1 = plain(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i.exec(body)?.[1] ?? '');
       assert(title.includes('JotClipart'), 'New brand title missing');
+      const visibleCopy = plain(body.replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1>/gi, ''));
+      assert(
+        !/UltraClipart(?!@gmail\.com)/i.test(visibleCopy),
+        'Old brand remains in visible copy',
+      );
       assert(h1.length > 0, 'Heading missing');
       assert(
         ![title, h1].some((value) => /\bFree\s+Free\b|\bClipart\s+Clipart\b/i.test(value)),

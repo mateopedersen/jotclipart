@@ -178,7 +178,7 @@ export const guideQuestions = [
   {
     question: 'Can I use the artwork in products I sell?',
     answer:
-      'UltraClipart artwork is for personal and educational use. Commercial use and resale are not permitted. Recoloring, editing or changing the file format does not change that license.',
+      'JotClipart artwork is for personal and educational use. Commercial use and resale are not permitted. Recoloring, editing or changing the file format does not change that license.',
     href: '/license/',
     label: 'Read the artwork license',
   },
