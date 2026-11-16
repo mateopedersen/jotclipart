@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "sourceSoftware": "1ba0483e46937a41112eeb66044060c43ed32f98",
+  "sourceHeadersSHA256": "2d1a072189f2b8ce471489c531613d8adba950e7fc323ff4df843f2a1a675a8d",
+  "page": {
+    "Cache-Control": "public, max-age=0, must-revalidate, no-transform",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "X-Frame-Options": "DENY",
+    "Permissions-Policy": "camera=(), microphone=(), geolocation=(), web-share=(self)",
+    "Strict-Transport-Security": "max-age=31536000",
+    "Cross-Origin-Opener-Policy": "same-origin",
+    "Content-Security-Policy": "default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-su6ViBclGb4wUM/1LysqBe0Is47W/ZDLxMUNwdEivjI=' 'sha256-golQYhR6LRKd8vrgr6QIjsiQyKQ11o2P8/cmDmgmtJc=' 'sha256-sE0rNlYfoz4uyWB72pRGiO45WUmFthkkkGhpSoOepE8=' 'sha256-xu/mFegxxj7JEIMKkAcQm1XG3C/5VvuqkKb6y8CHG70=' 'sha256-DV0SYMbvLHb5YEgQZ2Zy3V5BsHn1bxmc3Z22g7nZApQ=' 'sha256-hJPqbiAdiBQn21gbnWTCBEp/7UBNy0VeiXwxcjS0jsE=' 'sha256-go0mOekY7EmdKXIaT1z3zSe2qx2epgGdTCy0SN7vilE=' 'sha256-tpSb+Z+PdCCJ4kih9HwDgfUjVhfNXhvMz/891IJquvY=' 'sha256-Ws7xGvfyZLlMkQgVOG2VfpwCk7FcA9+bEoyMa8pfuWc=' 'sha256-yEUel/VVbjmuhbkfRq4T+U01kBlkNtri/ZtzDVSfDtk='; style-src 'self' 'unsafe-inline'; img-src 'self' https://assets.jotclipart.com data: blob:; font-src 'self'; connect-src 'self' https://assets.jotclipart.com; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self' mailto:"
+  }
+}

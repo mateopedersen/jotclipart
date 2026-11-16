@@ -4,8 +4,53 @@ import { join } from 'node:path';
 import { createHash } from 'node:crypto';
 import assert from 'node:assert/strict';
 import { snapshotDigest } from '../../server/catalog-snapshot/release-pointer.mjs';
+import { openSnapshot } from '../../server/catalog-snapshot/snapshot-context.mjs';
+import { readPreparedStudioInfo } from '../../server/catalog-snapshot/prepared-studio.mjs';
+import { presentationState } from '../../server/catalog-snapshot/brand-presentation.mjs';
+import { brand } from '../../src/lib/brand.mjs';
+import { catalogPublicOrigin } from './batch-media.mjs';
+import { validateMetadataManifest, readMetadataBytes } from './stage-manifest.mjs';
 const sha = (b) => createHash('sha256').update(b).digest('hex');
-export async function verifyPresentationLive({ directory, sealed, software, progress = () => {} }) {
+
+/** Verify the original prepared bytes before deriving the public URL projection. */
+export async function verifiedPublicStudioSHA256({ directory, candidate, softwareABI, receipt }) {
+  const manifest = validateMetadataManifest(
+    JSON.parse(fs.readFileSync(join(directory, 'manifest.json'))),
+  );
+  const records = new Map(manifest.records.map((record) => [record.key, record]));
+  const context = await openSnapshot(
+    {
+      get: async (key) => {
+        const record = records.get(key);
+        if (!record) throw Error('Prepared Studio source absent from verified local manifest');
+        const bytes = readMetadataBytes(manifest, record);
+        return { size: bytes.length, arrayBuffer: async () => bytes };
+      },
+    },
+    { provided: candidate, allowFixture: true },
+  );
+  const source = await readPreparedStudioInfo(context, softwareABI);
+  assert.notEqual(source, null, 'Prepared Studio source/code binding differs');
+  const normalized = source.split(context.rootSHA256).join(receipt.sourceRoot);
+  assert.equal(
+    sha(Buffer.from(normalized)),
+    receipt.sourceBodySHA256,
+    'Original prepared Studio bytes differ before public projection',
+  );
+  const info = JSON.parse(normalized);
+  assert.equal(info.items.length, receipt.entries);
+  return sha(Buffer.from(JSON.stringify(presentationState(info))));
+}
+
+export async function verifyPresentationLive({
+  directory,
+  sealed,
+  software,
+  progress = () => {},
+  publicOrigin = brand.origin,
+  fetcher = fetch,
+}) {
+  const origin = catalogPublicOrigin(publicOrigin);
   const read = (n) => JSON.parse(fs.readFileSync(join(directory, n))),
     candidate = read('snapshot-candidate.json'),
     native = read('native-integration-report.json'),
@@ -41,9 +86,17 @@ export async function verifyPresentationLive({ directory, sealed, software, prog
   else assert(bridge.artworkEnvelopeRevisionOnly);
   assert.equal(bridge.mediaBytesChanged, 0);
   assert.equal(bridge.canonicalArtworkRecordsChanged, 0);
+  const publicStudioSHA256 = prepared.studio
+    ? await verifiedPublicStudioSHA256({
+        directory,
+        candidate,
+        softwareABI: code.abiSHA256,
+        receipt: prepared.studio,
+      })
+    : null;
   const get = async (path, headers) => {
     const start = performance.now(),
-      r = await fetch('https://ultraclipart.com' + path, {
+      r = await fetcher(origin + path, {
         headers,
         redirect: 'manual',
         signal: AbortSignal.timeout(30000),
@@ -66,7 +119,7 @@ export async function verifyPresentationLive({ directory, sealed, software, prog
     assert.equal(r.headers.get('x-uc-snapshot'), root, path);
     assert.equal(r.headers.get('x-uc-html-source'), 'prepared', path);
     assert(!r.headers.has('set-cookie'), path);
-    assert(text.includes('https://ultraclipart.com' + path), path + ' canonical');
+    assert(text.includes(brand.origin + path), path + ' canonical');
     assert.equal(
       sha(Buffer.from(text.split(root).join(privateRoot))),
       expected.get(path),
@@ -113,8 +166,8 @@ export async function verifyPresentationLive({ directory, sealed, software, prog
       assert(!r.headers.has('set-cookie'));
       assert.equal(
         sha(Buffer.from(text.split(root).join(prepared.studio.sourceRoot))),
-        prepared.studio.sourceBodySHA256,
-        path + ' exact canonical Studio JSON',
+        publicStudioSHA256,
+        path + ' exact source-verified public Studio JSON',
       );
       assert.match(r.headers.get('cache-control') ?? '', /no-store/);
       assert.match(r.headers.get('vary') ?? '', /X-UC-Catalog-Protocol/i);
@@ -124,6 +177,8 @@ export async function verifyPresentationLive({ directory, sealed, software, prog
         entries: info.items.length,
         bytes: Buffer.byteLength(text),
         sha256: sha(Buffer.from(text)),
+        sourceBodySHA256: prepared.studio.sourceBodySHA256,
+        projectedBodySHA256: publicStudioSHA256,
         ttfbMs,
         totalMs,
         serverTiming: r.headers.get('server-timing'),
@@ -141,6 +196,7 @@ export async function verifyPresentationLive({ directory, sealed, software, prog
   assert.equal(JSON.parse(after.text).verifiedRoot, root, 'Production changed during verification');
   const report = {
     status: 'PREPARED_PRESENTATION_CANONICAL_HTML_LIVE_VERIFIED',
+    publicOrigin: origin,
     revision: candidate.revision,
     softwareRevision: code.revision,
     root,

@@ -2,6 +2,7 @@
 import { createHmac } from 'node:crypto';
 import { setTimeout as backoff } from 'node:timers/promises';
 import { sha256 } from './stage-manifest.mjs';
+import { catalogPointerKey } from '../../server/catalog-snapshot/release-pointer.mjs';
 const transientBodyTransportCodes = new Set([
   'UND_ERR_SOCKET',
   'UND_ERR_BODY_TIMEOUT',
@@ -24,6 +25,7 @@ export function remoteCatalogBucket({
   fetcher = fetch,
   cacheEntries = 512,
   diskCache,
+  activeKey,
 }) {
   if (
     endpoint !== 'http://127.0.0.1:8899/read' ||
@@ -34,6 +36,8 @@ export function remoteCatalogBucket({
     cacheEntries > 512
   )
     throw Error('Private pinned reader configuration required');
+  const pointerKey = catalogPointerKey({ activeKey });
+  const namespaceRequired = activeKey !== undefined;
   const cache = new Map(),
     pending = new Map();
   const hints = new Map();
@@ -86,6 +90,7 @@ export function remoteCatalogBucket({
             bucket,
             at: Date.now() - 1000,
             keys,
+            ...(namespaceRequired ? { pointerKey } : {}),
           },
           signature = createHmac('sha256', Buffer.from(secret, 'hex'))
             .update(JSON.stringify(command))
@@ -122,6 +127,7 @@ export function remoteCatalogBucket({
       }
       if (
         result.parentSnapshotSHA256 !== parentSnapshotSHA256 ||
+        (namespaceRequired && result.pointerKey !== pointerKey) ||
         !Array.isArray(result.objects) ||
         result.objects.length !== keys.length
       )
@@ -136,7 +142,7 @@ export function remoteCatalogBucket({
         if (
           r.bytes !== body.length ||
           sha256(body) !== r.sha256 ||
-          (key !== 'catalog/active.json' && key.split('/').at(-1) !== r.sha256 + '.json')
+          (key !== pointerKey && key.split('/').at(-1) !== r.sha256 + '.json')
         )
           throw Error('Private read bytes differ');
         receivedBytes += body.length;
@@ -146,7 +152,7 @@ export function remoteCatalogBucket({
         const [key, p] = batch[i],
           r = verified[i];
         pending.delete(key);
-        if (r && key !== 'catalog/active.json') {
+        if (r && key !== pointerKey) {
           // Capture admission intent when the request starts, so a late native
           // response cannot pollute disk after its scoped check has finished.
           if (p.admitDisk) diskCache?.put(key, r.body);
@@ -193,14 +199,16 @@ export function remoteCatalogBucket({
     },
     get: async (key) => {
       if (
-        !/^catalog\/(?:active\.json|objects\/(?:artworks|collections|search|recent|related|counts|sitemaps)\/[a-f0-9]{64}\.json)$/.test(
-          key,
-        )
+        typeof key !== 'string' ||
+        (key !== pointerKey &&
+          !/^catalog\/objects\/(?:artworks|collections|search|recent|related|counts|sitemaps)\/[a-f0-9]{64}\.json$/.test(
+            key,
+          ))
       )
         throw Error('Invalid private metadata key');
-      const onDisk = key !== 'catalog/active.json' ? diskCache?.get(key) : null;
+      const onDisk = key !== pointerKey ? diskCache?.get(key) : null;
       if (onDisk) return object(key, { body: onDisk, etag: sha256(onDisk) });
-      const old = key === 'catalog/active.json' ? null : cache.get(key);
+      const old = key === pointerKey ? null : cache.get(key);
       if (old) {
         cache.delete(key);
         cache.set(key, old);

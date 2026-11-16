@@ -2,7 +2,7 @@ const asset = (value: string | null, origin: string) => {
   try {
     const url = new URL(value ?? '', origin);
     return url.protocol === 'https:' &&
-      url.hostname === 'assets.ultraclipart.com' &&
+      url.hostname === 'assets.jotclipart.com' &&
       !url.username &&
       !url.password &&
       !url.port &&

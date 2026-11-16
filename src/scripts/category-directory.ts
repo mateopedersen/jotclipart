@@ -44,7 +44,7 @@ function loadSamples(targets: HTMLLIElement[], warmOnly = false) {
       if (!item || card.querySelector('.subject-art img')) continue;
       const url = new URL(item.webp);
       if (
-        url.origin !== 'https://assets.ultraclipart.com' ||
+        url.origin !== 'https://assets.jotclipart.com' ||
         !url.pathname.endsWith('.webp') ||
         url.search ||
         url.hash

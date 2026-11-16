@@ -544,7 +544,7 @@ export class StudioTools {
       download(
         new Blob(
           [
-            `<svg xmlns="http://www.w3.org/2000/svg" width="${width / 600}in" height="${height / 600}in" viewBox="0 0 ${width} ${height}"><title>UltraClipart cut contour at 600 pixels per inch</title><g fill="none" stroke="#ff00ff" stroke-width="1">${paths.map((path) => `<path d="${path}"/>`).join('')}</g></svg>`,
+            `<svg xmlns="http://www.w3.org/2000/svg" width="${width / 600}in" height="${height / 600}in" viewBox="0 0 ${width} ${height}"><title>JotClipart cut contour at 600 pixels per inch</title><g fill="none" stroke="#ff00ff" stroke-width="1">${paths.map((path) => `<path d="${path}"/>`).join('')}</g></svg>`,
           ],
           { type: 'image/svg+xml' },
         ),

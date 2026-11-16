@@ -1,6 +1,6 @@
 // Ephemeral operator-only content activation. Never include in the public Worker.
 import { captureProductionSnapshot } from './signed-production-snapshot.mjs';
-import { snapshotDigest } from './release-pointer.mjs';
+import { snapshotDigest, catalogPointerKey } from './release-pointer.mjs';
 const hex = (s) => Uint8Array.from(s.match(/../g).map((x) => parseInt(x, 16))),
   enc = new TextEncoder(),
   rawHash = async (b) =>
@@ -16,6 +16,10 @@ export function privateSnapshotPublisher(job) {
     job.snapshot.authorization?.parentSnapshotSHA256 !== job.parentSnapshotSHA256
   )
     throw Error('Exact signed delta and predecessor required');
+  if (!job.verifier || typeof job.verifier !== 'object' || Array.isArray(job.verifier))
+    throw Error('Exact verifier scope required');
+  const pointerKey = catalogPointerKey(job.verifier);
+  const namespaceRequired = job.verifier.activeKey !== undefined;
   return {
     async fetch(request, env) {
       const path = new URL(request.url).pathname;
@@ -23,6 +27,7 @@ export function privateSnapshotPublisher(job) {
         return Response.json({
           snapshotSHA256: job.snapshotSHA256,
           parentSnapshotSHA256: job.parentSnapshotSHA256,
+          pointerKey,
         });
       if (request.method !== 'POST' || path !== '/activate')
         return new Response('Not found', { status: 404 });
@@ -59,11 +64,14 @@ export function privateSnapshotPublisher(job) {
       if (!body || typeof body !== 'object' || Array.isArray(body))
         return new Response('Invalid request', { status: 400 });
       const c = body.command;
+      const hasPointer = c && typeof c === 'object' && Object.hasOwn(c, 'pointerKey');
       if (
         !c ||
         typeof c !== 'object' ||
         Array.isArray(c) ||
-        Object.keys(c).length !== 6 ||
+        Object.keys(c).length !== (namespaceRequired || hasPointer ? 7 : 6) ||
+        (namespaceRequired && !hasPointer) ||
+        (hasPointer && c.pointerKey !== pointerKey) ||
         c.action !== 'activate-verified-catalog-delta' ||
         c.snapshotSHA256 !== job.snapshotSHA256 ||
         c.parentSnapshotSHA256 !== job.parentSnapshotSHA256 ||
@@ -97,14 +105,17 @@ export function privateSnapshotPublisher(job) {
       const trusted = { ...job.verifier, publicKey: hex(job.verifier.publicKeyHex) },
         verified = await captureProductionSnapshot(
           {
-            get: async () => ({
-              size: bytes.length,
-              json: async () => structuredClone(job.snapshot),
-            }),
+            get: async (key) => {
+              if (key !== pointerKey) throw Error('Snapshot verifier pointer scope differs');
+              return {
+                size: bytes.length,
+                json: async () => structuredClone(job.snapshot),
+              };
+            },
           },
           trusted,
         ),
-        old = await env.TARGET.get('catalog/active.json');
+        old = await env.TARGET.get(pointerKey);
       if (!old?.etag) return new Response('Existing production pointer required', { status: 409 });
       const oldSnapshot = await old.json(),
         oldDigest = await snapshotDigest(oldSnapshot);
@@ -113,6 +124,7 @@ export function privateSnapshotPublisher(job) {
           status: 'EXACT_DELTA_ALREADY_ACTIVE',
           snapshotSHA256: job.snapshotSHA256,
           verifiedRoot: verified.rootSHA256,
+          pointerKey,
           etag: old.etag,
         });
       if (
@@ -122,20 +134,23 @@ export function privateSnapshotPublisher(job) {
         return new Response('Production predecessor changed', { status: 409 });
       await captureProductionSnapshot(
         {
-          get: async () => ({
-            size: JSON.stringify(oldSnapshot).length,
-            json: async () => oldSnapshot,
-          }),
+          get: async (key) => {
+            if (key !== pointerKey) throw Error('Snapshot verifier pointer scope differs');
+            return {
+              size: JSON.stringify(oldSnapshot).length,
+              json: async () => oldSnapshot,
+            };
+          },
         },
         trusted,
       );
-      const updated = await env.TARGET.put('catalog/active.json', bytes, {
+      const updated = await env.TARGET.put(pointerKey, bytes, {
         onlyIf: { etagMatches: old.etag },
         sha256: job.snapshotSHA256,
         httpMetadata: { contentType: 'application/json', cacheControl: 'no-store' },
       });
       if (!updated) return new Response('Concurrent activation rejected', { status: 409 });
-      const after = await env.TARGET.get('catalog/active.json');
+      const after = await env.TARGET.get(pointerKey);
       if (
         !after ||
         after.size !== bytes.length ||
@@ -147,6 +162,7 @@ export function privateSnapshotPublisher(job) {
         status: 'VERIFIED_CONTENT_DELTA_POINTER_ACTIVE',
         snapshotSHA256: job.snapshotSHA256,
         verifiedRoot: verified.rootSHA256,
+        pointerKey,
         etag: after.etag,
       });
     },

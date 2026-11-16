@@ -1,5 +1,6 @@
 // Short-lived operator-only metadata reader. No writes/listing/public fallback.
 import { captureProductionSnapshot } from './signed-production-snapshot.mjs';
+import { catalogPointerKey } from './release-pointer.mjs';
 const enc = new TextEncoder(),
   hex = (s) => Uint8Array.from(s.match(/../g).map((x) => parseInt(x, 16))),
   hash = async (b) =>
@@ -19,11 +20,19 @@ export function privateCatalogReader(job) {
     !/^[a-f0-9]{64}$/.test(job.parentSnapshotSHA256 ?? '')
   )
     throw Error('Pinned private reader required');
+  if (!job.verifier || typeof job.verifier !== 'object' || Array.isArray(job.verifier))
+    throw Error('Exact verifier scope required');
+  const pointerKey = catalogPointerKey(job.verifier);
+  const namespaceRequired = job.verifier.activeKey !== undefined;
   return {
     async fetch(request, env) {
       const path = new URL(request.url).pathname;
       if (request.method === 'GET' && path === '/health')
-        return Response.json({ mode: job.mode, parentSnapshotSHA256: job.parentSnapshotSHA256 });
+        return Response.json({
+          mode: job.mode,
+          parentSnapshotSHA256: job.parentSnapshotSHA256,
+          ...(namespaceRequired ? { pointerKey } : {}),
+        });
       if (
         request.method !== 'POST' ||
         path !== '/read' ||
@@ -36,10 +45,17 @@ export function privateCatalogReader(job) {
       } catch {
         return new Response('Invalid request', { status: 400 });
       }
+      if (!body || typeof body !== 'object' || Array.isArray(body))
+        return new Response('Invalid request', { status: 400 });
       const c = body.command;
+      const hasPointer = c && typeof c === 'object' && Object.hasOwn(c, 'pointerKey');
       if (
         !c ||
-        Object.keys(c).length !== 6 ||
+        typeof c !== 'object' ||
+        Array.isArray(c) ||
+        Object.keys(c).length !== (namespaceRequired || hasPointer ? 7 : 6) ||
+        (namespaceRequired && !hasPointer) ||
+        (hasPointer && c.pointerKey !== pointerKey) ||
         c.action !== 'read-pinned-catalog-metadata' ||
         c.parentSnapshotSHA256 !== job.parentSnapshotSHA256 ||
         c.accountId !== job.verifier.accountId ||
@@ -53,9 +69,11 @@ export function privateCatalogReader(job) {
         new Set(c.keys).size !== c.keys.length ||
         c.keys.some(
           (k) =>
-            !/^catalog\/(?:active\.json|objects\/(?:artworks|collections|search|recent|related|counts|sitemaps)\/[a-f0-9]{64}\.json)$/.test(
-              k,
-            ),
+            typeof k !== 'string' ||
+            (k !== pointerKey &&
+              !/^catalog\/objects\/(?:artworks|collections|search|recent|related|counts|sitemaps)\/[a-f0-9]{64}\.json$/.test(
+                k,
+              )),
         )
       )
         return new Response('Fresh exact read scope required', { status: 409 });
@@ -76,6 +94,8 @@ export function privateCatalogReader(job) {
         ))
       )
         return new Response('Invalid signature', { status: 403 });
+      if (catalogPointerKey(job.verifier) !== pointerKey)
+        throw Error('Verifier pointer scope changed');
       const context = await captureProductionSnapshot(env.TARGET, {
         ...job.verifier,
         publicKey: hex(job.verifier.publicKeyHex),
@@ -100,14 +120,18 @@ export function privateCatalogReader(job) {
             const b = new Uint8Array(await o.arrayBuffer());
             if (b.length !== o.size) throw Error('Incomplete private metadata');
             const sha256 = await hash(b);
-            if (name !== 'catalog/active.json' && name.split('/').at(-1) !== sha256 + '.json')
+            if (name !== pointerKey && name.split('/').at(-1) !== sha256 + '.json')
               throw Error('Corrupt content-addressed metadata');
             rows[i] = { key: name, bytes: b.length, sha256, body: base64(b), etag: o.etag };
           }
         }),
       );
       return Response.json(
-        { parentSnapshotSHA256: context.rootSHA256, objects: rows },
+        {
+          parentSnapshotSHA256: context.rootSHA256,
+          objects: rows,
+          ...(namespaceRequired || hasPointer ? { pointerKey } : {}),
+        },
         { headers: { 'cache-control': 'no-store' } },
       );
     },

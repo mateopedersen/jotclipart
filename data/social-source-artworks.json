@@ -1,0 +1,694 @@
+{
+  "version": 1,
+  "policy": "signed-catalog-bound-reviewed-social-originals-v1",
+  "signedCatalogRoot": "7c311351a6c725394ca7473cbcc1025868a281d17449cc817776452f0f3f6753",
+  "catalogRevision": "afb3383986d90bb4c167422f512b2ed320badde5",
+  "signatureVerified": true,
+  "accountId": "48c779c8eaa80234e0bb9d57f96e588b",
+  "bucketName": "ultraclipart-pages",
+  "keyId": "catalog-owner-v1",
+  "publicKeyHex": "4309eb97062f41768467b4b7f9139f1682450cc3fd2e33fb9bb50131e7a79479",
+  "sourceSnapshotSHA256": "8cc2f80dc6f85290c5089591435db3ad74cab6578d8f6d9900a12d8aed43d8ee",
+  "productionSnapshot": {
+    "schema": 1,
+    "status": "SOURCE_MEDIA_GRAPH_VERIFIED",
+    "revision": "afb3383986d90bb4c167422f512b2ed320badde5",
+    "parentRevision": "672f53435bed0c3866fbf24b9d43154c716a69f3",
+    "indexes": {
+      "artworks": {
+        "key": "catalog/objects/artworks/d086e556147b2191a6b46b4aa901640a239e1c69f3af00042272ba547910cd70.json",
+        "sha256": "d086e556147b2191a6b46b4aa901640a239e1c69f3af00042272ba547910cd70",
+        "bytes": 51467
+      },
+      "collections": {
+        "key": "catalog/objects/collections/9755d1a8939dbccd739189355ba41fc176436ced40fbce86e1096a893d5a32f5.json",
+        "sha256": "9755d1a8939dbccd739189355ba41fc176436ced40fbce86e1096a893d5a32f5",
+        "bytes": 27411
+      },
+      "search": {
+        "key": "catalog/objects/search/b5693a46e4d91516230b8d8c375ab4d738650a9bd9986d645d6f2f50e8164afb.json",
+        "sha256": "b5693a46e4d91516230b8d8c375ab4d738650a9bd9986d645d6f2f50e8164afb",
+        "bytes": 58646
+      },
+      "recent": {
+        "key": "catalog/objects/recent/30584ff5428d82d09866e155f80fbb8f05b7a4c2552d2bf7b29b5545324f92eb.json",
+        "sha256": "30584ff5428d82d09866e155f80fbb8f05b7a4c2552d2bf7b29b5545324f92eb",
+        "bytes": 438
+      },
+      "related": {
+        "key": "catalog/objects/related/43723a9828706eb675007eeffebea87e94ad7b94ed80f14f180d9526374d33ee.json",
+        "sha256": "43723a9828706eb675007eeffebea87e94ad7b94ed80f14f180d9526374d33ee",
+        "bytes": 367
+      },
+      "counts": {
+        "key": "catalog/objects/counts/cd446211ca1455830600fde907ff2dfb6fbb8d8d64b5cc67ad121ee3e4b55f28.json",
+        "sha256": "cd446211ca1455830600fde907ff2dfb6fbb8d8d64b5cc67ad121ee3e4b55f28",
+        "bytes": 485
+      },
+      "sitemaps": {
+        "key": "catalog/objects/sitemaps/2f2ba7b53570a8fbb022d3bb61e7a669a3b136a40ffacc8a41adbabedd217100.json",
+        "sha256": "2f2ba7b53570a8fbb022d3bb61e7a669a3b136a40ffacc8a41adbabedd217100",
+        "bytes": 813
+      }
+    },
+    "authorization": {
+      "policy": "source-media-graph-ed25519-v1",
+      "accountId": "48c779c8eaa80234e0bb9d57f96e588b",
+      "bucket": "ultraclipart-pages",
+      "keyId": "catalog-owner-v1",
+      "abiSHA256": "59be336b2643ebfb80036c3c836321f219d714de215d05d0b4f3f59e4831b8fb",
+      "sourceReceiptSHA256": "6f266277722f2e33212d9093bf9f71fb30cde7f41d54fd0897ed18888017044a",
+      "mediaReceiptSHA256": "58949854014a09ab58d5af4f7e8b852fc4de070daddba5a420cb1e45b32bdebe",
+      "graphReceiptSHA256": "b223a1903121da9ac57c3e523451449dd440cca5877077232893b66cf02e56a3",
+      "manifestRoot": "fa806c37f9d4f544b566d42c7c5a7d3ebd24adb28e5eee612457b6fade4d6fa8",
+      "parentSnapshotSHA256": "bfddefe140da7b1cd70a7e99b037d9878abb03bdf645008e91dc668a12c10d8d",
+      "issuedAt": 1794321012759,
+      "signature": "32ad5db9042bd4b98e9bdca45eb66acfc3c47be777407fc50827fde129ee362a1fc881101b97e2263d2af21c5cced83a8cdbef054269cdf9c1b01e05a3fefb0d"
+    }
+  },
+  "currentSampleIDs": [
+    "giorgio-armani-rectangular-optical-frames-line-art-clipart-100",
+    "versace-medusa-95-shoulder-midi-dress-line-art-clipart-100",
+    "tommy-hilfiger-rolled-belt-flag-buckle-black-and-white-clipart-100",
+    "saint-laurent-lavalliere-bow-blouse-line-art-clipart-100",
+    "prada-re-nylon-utility-dress-flat-line-art-clipart-100",
+    "polo-ralph-lauren-repp-striped-silk-tie-line-art-clipart-100"
+  ],
+  "items": [
+    {
+      "id": "book-and-feather-quill-black-and-white-clipart",
+      "localPath": "public/catalog/book/book-and-feather-quill-black-and-white-clipart.webp",
+      "url": "https://assets.jotclipart.com/book/book-and-feather-quill-black-and-white-clipart.webp.19cc31f4a28eae60.webp",
+      "bytes": 450138,
+      "sha256": "19cc31f4a28eae606bb0dea909595bff424138181bc6d41c9ae7c939c2c0c9c5",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "da06db888a4f7e853a31d700562783741c705faa8736f5ccf9939b93d8008b21"
+    },
+    {
+      "id": "book-and-feather-quill-playful-clipart",
+      "localPath": "public/catalog/book/book-and-feather-quill-playful-clipart.webp",
+      "url": "https://assets.jotclipart.com/book/book-and-feather-quill-playful-clipart.webp.1c689d79c18cd950.webp",
+      "bytes": 587834,
+      "sha256": "1c689d79c18cd9502ee7423e4514166f4a45d2fe3500c701a98bf467e9916331",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "955f15262abdbef1a5a6e0cb1dfff152b503a30721ff4394ea895c14d813bfc8"
+    },
+    {
+      "id": "book-children-reading-together-classic-clipart",
+      "localPath": "public/catalog/book/book-children-reading-together-classic-clipart.webp",
+      "url": "https://assets.jotclipart.com/book/book-children-reading-together-classic-clipart.webp.139f27752808f36e.webp",
+      "bytes": 691738,
+      "sha256": "139f27752808f36e8f8c29172844a9ffe06e94db342e9f5af0384d132e4406e7",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "e4364143dba3126116cf854a8231d9abd8b49917d4b5f6d1819b8a9b56a83dd5"
+    },
+    {
+      "id": "blue-morpho-butterfly-flying-illustration-clipart",
+      "localPath": "public/catalog/butterfly/blue-morpho-butterfly-flying-illustration-clipart.webp",
+      "url": "https://assets.jotclipart.com/butterfly/blue-morpho-butterfly-flying-illustration-clipart.webp.a2dda292f5c63a1f.webp",
+      "bytes": 527986,
+      "sha256": "a2dda292f5c63a1fbe148852ee117fa3bcfd17303266b75599cef85c6c4be5b9",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "fb04bfb96b59cf381aafa762d0794bc3f5e297d47a87d728a36cd53ab9c67a1e"
+    },
+    {
+      "id": "earth-clipart-classroom-globe-wooden-stand",
+      "localPath": "public/catalog/earth/earth-clipart-classroom-globe-wooden-stand.webp",
+      "url": "https://assets.jotclipart.com/earth/earth-clipart-classroom-globe-wooden-stand.webp.a80d2f6de49083f8.webp",
+      "bytes": 1293436,
+      "sha256": "a80d2f6de49083f87de02417c446c11ef1273a05c118ae748c35b42fc65e3726",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "6fddf5548c77ac4cf73140bca2e36674ab529f7a387d51b454ed5147017ee3fd"
+    },
+    {
+      "id": "baby-fennec-fox-watercolor-clipart",
+      "localPath": "public/catalog/fox/baby-fennec-fox-watercolor-clipart.webp",
+      "url": "https://assets.jotclipart.com/fox/baby-fennec-fox-watercolor-clipart.webp.9fdda59dfc350b53.webp",
+      "bytes": 429528,
+      "sha256": "9fdda59dfc350b5357dc8303f47c1bf5093887da982646a64973f98c8e0b8621",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "d1f9959fcf8b1da35884b88a76717048972d9d4b66f99bc641371527de1443e0"
+    },
+    {
+      "id": "floral-heart-roses-wreath-clipart",
+      "localPath": "public/catalog/heart/floral-heart-roses-wreath-clipart.webp",
+      "url": "https://assets.jotclipart.com/heart/floral-heart-roses-wreath-clipart.webp.b79ae752dc0be2aa.webp",
+      "bytes": 1590492,
+      "sha256": "b79ae752dc0be2aa79ae2871d0835f40d7ea620753209ac9f3fd905c74553b3a",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "07f3c37efe61dba1c60e1ef60333368c672ce1770eea4a579233b5d4c8832135"
+    },
+    {
+      "id": "leaf-arching-fern-frond-botanical-illustration-clipart",
+      "localPath": "public/catalog/leaves/leaf-arching-fern-frond-botanical-illustration-clipart.webp",
+      "url": "https://assets.jotclipart.com/leaves/leaf-arching-fern-frond-botanical-illustration-clipart.webp.df326dbfbc965a6d.webp",
+      "bytes": 1024744,
+      "sha256": "df326dbfbc965a6d025e0eea92e2f01f505c094ca4ba2f0c72037688f41dad27",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "5c9e080f85ad358d1686b3be19d6944f74e033bde748eb88a6c0b05037d05c68"
+    },
+    {
+      "id": "leaf-autumn-maple-oak-birch-cluster-painted-illustration-clipart",
+      "localPath": "public/catalog/leaves/leaf-autumn-maple-oak-birch-cluster-painted-illustration-clipart.webp",
+      "url": "https://assets.jotclipart.com/leaves/leaf-autumn-maple-oak-birch-cluster-painted-illustration-clipart.webp.3d29be9a1cfdf950.webp",
+      "bytes": 1252304,
+      "sha256": "3d29be9a1cfdf9508712d7325dacb4db00f81bb86ff02655ad658a9c3ae61bbf",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "f5da1168bb0e943fbd6a04bc7581f72d4ca1ca91fc81564103d4363975479aeb"
+    },
+    {
+      "id": "leaf-fern-unfurling-frond-black-and-white-woodcut-clipart",
+      "localPath": "public/catalog/leaves/leaf-fern-unfurling-frond-black-and-white-woodcut-clipart.webp",
+      "url": "https://assets.jotclipart.com/leaves/leaf-fern-unfurling-frond-black-and-white-woodcut-clipart.webp.b85d10bc2aefb0d8.webp",
+      "bytes": 894884,
+      "sha256": "b85d10bc2aefb0d8151fc85da4adc4280dabf4d76881c7d103dbdbbfdf990b91",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "aa5ae649f591216b5b43d8d3029761328a3fb22aac959c67d019c41aa1366101"
+    },
+    {
+      "id": "lemon-whole-and-cut-fruit-realistic-clipart",
+      "localPath": "public/catalog/lemon/lemon-whole-and-cut-fruit-realistic-clipart.webp",
+      "url": "https://assets.jotclipart.com/lemon/lemon-whole-and-cut-fruit-realistic-clipart.webp.c8fe73ef4caa08f1.webp",
+      "bytes": 1105598,
+      "sha256": "c8fe73ef4caa08f1bc2fe972fc29bf09fcdc6be5fb879a64acadd8c2db790a85",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "50572afd02ac30fc526dc71bc504c74cdf589f462aebce4fff059b646fbe9881"
+    },
+    {
+      "id": "music-acoustic-guitar-watercolor-clipart",
+      "localPath": "public/catalog/music/music-acoustic-guitar-watercolor-clipart.webp",
+      "url": "https://assets.jotclipart.com/music/music-acoustic-guitar-watercolor-clipart.webp.4b93bc82fe44d29a.webp",
+      "bytes": 799750,
+      "sha256": "4b93bc82fe44d29a197ed812900b8cd607b5555e07a7d561afcde8ce4b1d3d37",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "543405998ff3e9d1bb3a2e9bb60bfc1c6b9f4143c5a435a38c1b7306a3b7abca"
+    },
+    {
+      "id": "music-violin-with-bow-black-and-white-engraving-clipart",
+      "localPath": "public/catalog/music/music-violin-with-bow-black-and-white-engraving-clipart.webp",
+      "url": "https://assets.jotclipart.com/music/music-violin-with-bow-black-and-white-engraving-clipart.webp.bb9cbe696c22b543.webp",
+      "bytes": 808878,
+      "sha256": "bb9cbe696c22b543a0ce3e6ec0bb5b4ebf51f7625f4826f7d8a8aec8f2748e51",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "95dff3e49ab7994d0bf7d1801dec3177dd5a30d4a5370280f4ff817a2fd411fb"
+    },
+    {
+      "id": "pizza-pepperoni-slice-watercolor-clipart",
+      "localPath": "public/catalog/pizza/pizza-pepperoni-slice-watercolor-clipart.webp",
+      "url": "https://assets.jotclipart.com/pizza/pizza-pepperoni-slice-watercolor-clipart.webp.039eebac54ff7ae9.webp",
+      "bytes": 1413718,
+      "sha256": "039eebac54ff7ae943419ac37405eb4cbdd06ba539dfbd7dfbb32fe451d3548c",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "93ee88bb1cf0d61237f51ce33ab86f6a5b322650e922dc49f8a0f16da4c84a03"
+    },
+    {
+      "id": "school-backpack-filled-with-pencils-classic-clipart",
+      "localPath": "public/catalog/school/school-backpack-filled-with-pencils-classic-clipart.webp",
+      "url": "https://assets.jotclipart.com/school/school-backpack-filled-with-pencils-classic-clipart.webp.3c135ace06155b3c.webp",
+      "bytes": 603476,
+      "sha256": "3c135ace06155b3c53574b1e9f84eea74296d928a73ad9f05029feb6c4279d0d",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "822c224fab916554e05cb9862682effdad336d7ed42210e175d9ca36f8755874"
+    },
+    {
+      "id": "school-backpack-filled-with-pencils-playful-clipart",
+      "localPath": "public/catalog/school/school-backpack-filled-with-pencils-playful-clipart.webp",
+      "url": "https://assets.jotclipart.com/school/school-backpack-filled-with-pencils-playful-clipart.webp.7027934f046f1cc2.webp",
+      "bytes": 619510,
+      "sha256": "7027934f046f1cc28b6ec2c67df02223a91670ed526e019facd33a44b3e2130a",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "bbd5f05e85c7d3ee45ea486a88bee5e4bdd984995312820abf2935bee5cfcc8d"
+    },
+    {
+      "id": "giorgio-armani-rectangular-optical-frames-line-art-clipart-100",
+      "localPath": "public/catalog/social-approved/giorgio-armani-rectangular-optical-frames-line-art-clipart-100.webp",
+      "url": "https://assets.jotclipart.com/giorgio-armani/giorgio-armani-rectangular-optical-frames-line-art-clipart-100.webp.1c5936843d7ab598.webp",
+      "bytes": 116596,
+      "sha256": "1c5936843d7ab598aebb139a4d5bb839bd342225d340ff2d1edf9b5c71131a1e",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "40d01df0fae0165825ec1303eec37a147118873519c6d84ecbce8b82269b6063",
+      "catalogRecord": {
+        "alpha": true,
+        "alt": "A pair of rectangular glasses has dark rims and Giorgio Armani lettering on one temple.",
+        "cluster": "Clothing & accessories",
+        "color": "Black and White",
+        "createdAt": "2026-11-09T23:53:30.894Z",
+        "description": "This black and white line drawing shows rectangular optical frames with a curved bridge and slim temples. Giorgio Armani lettering is visible on one temple.",
+        "discovery": {
+          "cute": false
+        },
+        "editable": true,
+        "files": {
+          "pdf": {
+            "bytes": 301993,
+            "sha256": "f774787e027a65cdf5d0ed28f768dda6759fe70485791989fdc63a5b7f8a36f1"
+          },
+          "thumb": {
+            "bytes": 11592,
+            "sha256": "a07ef4be57a0481a47197b0dffd91d861d3bbcb923678c430b2b2fe3a741f4c6"
+          },
+          "webp": {
+            "bytes": 116596,
+            "sha256": "1c5936843d7ab598aebb139a4d5bb839bd342225d340ff2d1edf9b5c71131a1e"
+          }
+        },
+        "formats": [
+          "WEBP",
+          "PDF"
+        ],
+        "height": 887,
+        "id": "giorgio-armani-rectangular-optical-frames-line-art-clipart-100",
+        "indexable": true,
+        "layered": false,
+        "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+        "licenseApprovedAt": "2026-11-09",
+        "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+        "monochrome": true,
+        "monochromeKind": "outline",
+        "orientation": "Landscape",
+        "originalThumb": "https://assets.ultraclipart.com/giorgio-armani/giorgio-armani-rectangular-optical-frames-line-art-clipart-100.thumbnail.a07ef4be57a0481a.webp",
+        "pdf": "https://assets.ultraclipart.com/giorgio-armani/giorgio-armani-rectangular-optical-frames-line-art-clipart-100.pdf.f774787e027a65cd.pdf",
+        "pdfColorSpace": "ICC-based CMYK",
+        "pdfPage": "2.957 × 1.478 in",
+        "preview": "https://assets.ultraclipart.com/giorgio-armani/giorgio-armani-rectangular-optical-frames-line-art-clipart-100.webp.1c5936843d7ab598.webp",
+        "previewHeight": 887,
+        "previewWidth": 1774,
+        "productionMethod": "owner-supplied",
+        "provenance": "Owner supplied original illustration. Exact immutable archive, source pixel observations, paired PDF reviews and repair lineage are protected.",
+        "published": true,
+        "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+        "revision": 1,
+        "sourceCollection": "owner-fashion-trucks-35-20261108",
+        "sourceType": "raster",
+        "style": "Black & White",
+        "svg": null,
+        "thumb": "https://assets.ultraclipart.com/giorgio-armani/giorgio-armani-rectangular-optical-frames-line-art-clipart-100.webp.1c5936843d7ab598.webp",
+        "thumbWidth": 1774,
+        "title": "Giorgio Armani Rectangular Optical Frames Line Art Clipart",
+        "topic": "giorgio-armani",
+        "webp": "/catalog/social-approved/giorgio-armani-rectangular-optical-frames-line-art-clipart-100.webp",
+        "width": 1774
+      }
+    },
+    {
+      "id": "polo-ralph-lauren-repp-striped-silk-tie-line-art-clipart-100",
+      "localPath": "public/catalog/social-approved/polo-ralph-lauren-repp-striped-silk-tie-line-art-clipart-100.webp",
+      "url": "https://assets.jotclipart.com/polo-ralph-lauren/polo-ralph-lauren-repp-striped-silk-tie-line-art-clipart-100.webp.e8013fcacb3d9d8e.webp",
+      "bytes": 248888,
+      "sha256": "e8013fcacb3d9d8e4277b0acdb28305546b2702e28db9790dfed3e67984be9d1",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "5569259b2e6df4f90211010f3d43cf6d4b47d336a4669734083d11326b8f9680",
+      "catalogRecord": {
+        "alpha": true,
+        "alt": "Black and white line art shows a necktie with diagonal stripes and a branded tip.",
+        "cluster": "Clothing & accessories",
+        "color": "Grayscale",
+        "createdAt": "2026-11-09T23:52:29.500Z",
+        "description": "This long necktie has repeated diagonal bands and a pointed wide end with a small logo label.",
+        "discovery": {
+          "cute": false
+        },
+        "editable": true,
+        "files": {
+          "pdf": {
+            "bytes": 354194,
+            "sha256": "fa3dd15c7eed5586953ab8bc2ab5f336c54f18bcb50960627c7fb1c9c259edc8"
+          },
+          "thumb": {
+            "bytes": 17030,
+            "sha256": "5fb1451ec675aebf91ed4fd27cbc105147e370294eb6222b48ec016a3cb80b29"
+          },
+          "webp": {
+            "bytes": 248888,
+            "sha256": "e8013fcacb3d9d8e4277b0acdb28305546b2702e28db9790dfed3e67984be9d1"
+          }
+        },
+        "formats": [
+          "WEBP",
+          "PDF"
+        ],
+        "height": 1536,
+        "id": "polo-ralph-lauren-repp-striped-silk-tie-line-art-clipart-100",
+        "indexable": true,
+        "layered": false,
+        "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+        "licenseApprovedAt": "2026-11-09",
+        "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+        "monochrome": true,
+        "monochromeKind": "grayscale",
+        "orientation": "Portrait",
+        "originalThumb": "https://assets.ultraclipart.com/polo-ralph-lauren/polo-ralph-lauren-repp-striped-silk-tie-line-art-clipart-100.thumbnail.5fb1451ec675aebf.webp",
+        "pdf": "https://assets.ultraclipart.com/polo-ralph-lauren/polo-ralph-lauren-repp-striped-silk-tie-line-art-clipart-100.pdf.fa3dd15c7eed5586.pdf",
+        "pdfColorSpace": "ICC-based CMYK",
+        "pdfPage": "1.707 × 2.560 in",
+        "preview": "https://assets.ultraclipart.com/polo-ralph-lauren/polo-ralph-lauren-repp-striped-silk-tie-line-art-clipart-100.webp.e8013fcacb3d9d8e.webp",
+        "previewHeight": 1536,
+        "previewWidth": 1024,
+        "productionMethod": "owner-supplied",
+        "provenance": "Owner supplied original illustration. Exact immutable archive, source pixel observations, paired PDF reviews and repair lineage are protected.",
+        "published": true,
+        "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+        "revision": 1,
+        "sourceCollection": "owner-fashion-trucks-35-20261108",
+        "sourceType": "raster",
+        "style": "Grayscale",
+        "svg": null,
+        "thumb": "https://assets.ultraclipart.com/polo-ralph-lauren/polo-ralph-lauren-repp-striped-silk-tie-line-art-clipart-100.webp.e8013fcacb3d9d8e.webp",
+        "thumbWidth": 1024,
+        "title": "Polo Ralph Lauren Striped Necktie Line Art Clipart",
+        "topic": "polo-ralph-lauren",
+        "webp": "/catalog/social-approved/polo-ralph-lauren-repp-striped-silk-tie-line-art-clipart-100.webp",
+        "width": 1024
+      }
+    },
+    {
+      "id": "prada-re-nylon-utility-dress-flat-line-art-clipart-100",
+      "localPath": "public/catalog/social-approved/prada-re-nylon-utility-dress-flat-line-art-clipart-100.webp",
+      "url": "https://assets.jotclipart.com/prada/prada-re-nylon-utility-dress-flat-line-art-clipart-100.webp.34b5d4e4ee78a052.webp",
+      "bytes": 260932,
+      "sha256": "34b5d4e4ee78a052e20e0a85207f0071b3ed14f550b83b07e49474cfdb2761b4",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "80abaafef58ed587a7a792310de0c93aa51367dbd0e28c9eec58c4f4598a7714",
+      "catalogRecord": {
+        "alpha": true,
+        "alt": "Black and white line art of a sleeveless zip front shirt dress with a belt.",
+        "cluster": "Clothing & accessories",
+        "color": "Black and White",
+        "createdAt": "2026-11-09T23:52:53.329Z",
+        "description": "A sleeveless shirt dress has a pointed collar, full front zipper, waist belt and two large flap pockets. A triangular Prada plaque is placed on the chest.",
+        "discovery": {
+          "cute": false
+        },
+        "editable": true,
+        "files": {
+          "pdf": {
+            "bytes": 375598,
+            "sha256": "89f90ed93280fd33577b1362d8eb651c1b383c4dc5e6af3630c735dd6c23a768"
+          },
+          "thumb": {
+            "bytes": 21120,
+            "sha256": "895c7c8d2f236818cd74257c7c2a81f802d3f57f4138ed4f914e02e7f0d0ea18"
+          },
+          "webp": {
+            "bytes": 260932,
+            "sha256": "34b5d4e4ee78a052e20e0a85207f0071b3ed14f550b83b07e49474cfdb2761b4"
+          }
+        },
+        "formats": [
+          "WEBP",
+          "PDF"
+        ],
+        "height": 1536,
+        "id": "prada-re-nylon-utility-dress-flat-line-art-clipart-100",
+        "indexable": true,
+        "layered": false,
+        "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+        "licenseApprovedAt": "2026-11-09",
+        "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+        "monochrome": true,
+        "monochromeKind": "outline",
+        "orientation": "Portrait",
+        "originalThumb": "https://assets.ultraclipart.com/prada/prada-re-nylon-utility-dress-flat-line-art-clipart-100.thumbnail.895c7c8d2f236818.webp",
+        "pdf": "https://assets.ultraclipart.com/prada/prada-re-nylon-utility-dress-flat-line-art-clipart-100.pdf.89f90ed93280fd33.pdf",
+        "pdfColorSpace": "ICC-based CMYK",
+        "pdfPage": "1.707 × 2.560 in",
+        "preview": "https://assets.ultraclipart.com/prada/prada-re-nylon-utility-dress-flat-line-art-clipart-100.webp.34b5d4e4ee78a052.webp",
+        "previewHeight": 1536,
+        "previewWidth": 1024,
+        "productionMethod": "owner-supplied",
+        "provenance": "Owner supplied original illustration. Exact immutable archive, source pixel observations, paired PDF reviews and repair lineage are protected.",
+        "published": true,
+        "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+        "revision": 1,
+        "sourceCollection": "owner-fashion-trucks-35-20261108",
+        "sourceType": "raster",
+        "style": "Black & White",
+        "svg": null,
+        "thumb": "https://assets.ultraclipart.com/prada/prada-re-nylon-utility-dress-flat-line-art-clipart-100.webp.34b5d4e4ee78a052.webp",
+        "thumbWidth": 1024,
+        "title": "Prada Utility Shirt Dress Line Art Clipart",
+        "topic": "prada",
+        "webp": "/catalog/social-approved/prada-re-nylon-utility-dress-flat-line-art-clipart-100.webp",
+        "width": 1024
+      }
+    },
+    {
+      "id": "saint-laurent-lavalliere-bow-blouse-line-art-clipart-100",
+      "localPath": "public/catalog/social-approved/saint-laurent-lavalliere-bow-blouse-line-art-clipart-100.webp",
+      "url": "https://assets.jotclipart.com/saint-laurent/saint-laurent-lavalliere-bow-blouse-line-art-clipart-100.webp.1d301e1736796b1d.webp",
+      "bytes": 212750,
+      "sha256": "1d301e1736796b1dce1bdb49e65042729ae3095bffa561269ead8f45ede513b5",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "1aae47d38ad1fd6c3dd4eb931a74e8c51a39c24b5b6f8231cf956a478852ce14",
+      "catalogRecord": {
+        "alpha": true,
+        "alt": "Line drawing of a blouse with a tall collar, oversized tied bow, gathered sleeves and button cuffs.",
+        "cluster": "Clothing & accessories",
+        "color": "Black and White",
+        "createdAt": "2026-11-09T23:52:53.329Z",
+        "description": "A blouse has a tall collar wrapped by an oversized tied bow with long ends. Gathered sleeves, buttoned cuffs and a straight hem complete the standalone garment drawing.",
+        "discovery": {
+          "cute": false
+        },
+        "editable": true,
+        "files": {
+          "pdf": {
+            "bytes": 477543,
+            "sha256": "7c11fd7fd21dbf5a8bc936517baa96f98926a66f882055329804490fa8ebe5ac"
+          },
+          "thumb": {
+            "bytes": 41676,
+            "sha256": "923efe27fdd76c95961633a932f9f109c900dfd91b8d0b70291b89e7d64bc374"
+          },
+          "webp": {
+            "bytes": 212750,
+            "sha256": "1d301e1736796b1dce1bdb49e65042729ae3095bffa561269ead8f45ede513b5"
+          }
+        },
+        "formats": [
+          "WEBP",
+          "PDF"
+        ],
+        "height": 1240,
+        "id": "saint-laurent-lavalliere-bow-blouse-line-art-clipart-100",
+        "indexable": true,
+        "layered": false,
+        "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+        "licenseApprovedAt": "2026-11-09",
+        "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+        "monochrome": true,
+        "monochromeKind": "outline",
+        "orientation": "Landscape",
+        "originalThumb": "https://assets.ultraclipart.com/saint-laurent/saint-laurent-lavalliere-bow-blouse-line-art-clipart-100.thumbnail.923efe27fdd76c95.webp",
+        "pdf": "https://assets.ultraclipart.com/saint-laurent/saint-laurent-lavalliere-bow-blouse-line-art-clipart-100.pdf.7c11fd7fd21dbf5a.pdf",
+        "pdfColorSpace": "ICC-based CMYK",
+        "pdfPage": "2.113 × 2.067 in",
+        "preview": "https://assets.ultraclipart.com/saint-laurent/saint-laurent-lavalliere-bow-blouse-line-art-clipart-100.webp.1d301e1736796b1d.webp",
+        "previewHeight": 1240,
+        "previewWidth": 1268,
+        "productionMethod": "owner-supplied",
+        "provenance": "Owner supplied original illustration. Exact immutable archive, source pixel observations, paired PDF reviews and repair lineage are protected.",
+        "published": true,
+        "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+        "revision": 1,
+        "sourceCollection": "owner-fashion-trucks-35-20261108",
+        "sourceType": "raster",
+        "style": "Black & White",
+        "svg": null,
+        "thumb": "https://assets.ultraclipart.com/saint-laurent/saint-laurent-lavalliere-bow-blouse-line-art-clipart-100.webp.1d301e1736796b1d.webp",
+        "thumbWidth": 1268,
+        "title": "Saint Laurent Bow Neck Blouse Line Art",
+        "topic": "saint-laurent",
+        "webp": "/catalog/social-approved/saint-laurent-lavalliere-bow-blouse-line-art-clipart-100.webp",
+        "width": 1268
+      }
+    },
+    {
+      "id": "tommy-hilfiger-rolled-belt-flag-buckle-black-and-white-clipart-100",
+      "localPath": "public/catalog/social-approved/tommy-hilfiger-rolled-belt-flag-buckle-black-and-white-clipart-100.webp",
+      "url": "https://assets.jotclipart.com/tommy-hilfiger/tommy-hilfiger-rolled-belt-flag-buckle-black-and-white-clipart-100.webp.5dd531768ac9716d.webp",
+      "bytes": 375602,
+      "sha256": "5dd531768ac9716d60a94549a1519b75639e62f21a1a6380ceb2d7e7808fba39",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "716a359e8f37bc1bc4961088cfb98bfa8837ba316dddfad464f3802c21c0ae1a",
+      "catalogRecord": {
+        "alpha": true,
+        "alt": "A looped Tommy Hilfiger belt with adjustment holes, a keeper loop and a rectangular flag style buckle.",
+        "cluster": "Clothing & accessories",
+        "color": "Grayscale",
+        "createdAt": "2026-11-09T23:53:11.528Z",
+        "description": "The belt is arranged in a broad loop, with three adjustment holes, a keeper loop and a rectangular buckle displaying a flag style mark.",
+        "discovery": {
+          "cute": false
+        },
+        "editable": true,
+        "files": {
+          "pdf": {
+            "bytes": 492579,
+            "sha256": "aceef646785e211563cf6621d5c6078ca4e44916d95e8dcb0244af5925622295"
+          },
+          "thumb": {
+            "bytes": 18692,
+            "sha256": "6cdd70f83e71cc49024f46baf8559afc3dc0ff66e208d0dc2eaabce11712a054"
+          },
+          "webp": {
+            "bytes": 375602,
+            "sha256": "5dd531768ac9716d60a94549a1519b75639e62f21a1a6380ceb2d7e7808fba39"
+          }
+        },
+        "formats": [
+          "WEBP",
+          "PDF"
+        ],
+        "height": 1024,
+        "id": "tommy-hilfiger-rolled-belt-flag-buckle-black-and-white-clipart-100",
+        "indexable": true,
+        "layered": false,
+        "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+        "licenseApprovedAt": "2026-11-09",
+        "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+        "monochrome": true,
+        "monochromeKind": "grayscale",
+        "orientation": "Landscape",
+        "originalThumb": "https://assets.ultraclipart.com/tommy-hilfiger/tommy-hilfiger-rolled-belt-flag-buckle-black-and-white-clipart-100.thumbnail.6cdd70f83e71cc49.webp",
+        "pdf": "https://assets.ultraclipart.com/tommy-hilfiger/tommy-hilfiger-rolled-belt-flag-buckle-black-and-white-clipart-100.pdf.aceef646785e2115.pdf",
+        "pdfColorSpace": "ICC-based CMYK",
+        "pdfPage": "2.560 × 1.707 in",
+        "preview": "https://assets.ultraclipart.com/tommy-hilfiger/tommy-hilfiger-rolled-belt-flag-buckle-black-and-white-clipart-100.webp.5dd531768ac9716d.webp",
+        "previewHeight": 1024,
+        "previewWidth": 1536,
+        "productionMethod": "owner-supplied",
+        "provenance": "Owner supplied original illustration. Exact immutable archive, source pixel observations, paired PDF reviews and repair lineage are protected.",
+        "published": true,
+        "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+        "revision": 1,
+        "sourceCollection": "owner-fashion-trucks-35-20261108",
+        "sourceType": "raster",
+        "style": "Grayscale",
+        "svg": null,
+        "thumb": "https://assets.ultraclipart.com/tommy-hilfiger/tommy-hilfiger-rolled-belt-flag-buckle-black-and-white-clipart-100.webp.5dd531768ac9716d.webp",
+        "thumbWidth": 1536,
+        "title": "Tommy Hilfiger Flag Buckle Belt Clipart",
+        "topic": "tommy-hilfiger",
+        "webp": "/catalog/social-approved/tommy-hilfiger-rolled-belt-flag-buckle-black-and-white-clipart-100.webp",
+        "width": 1536
+      }
+    },
+    {
+      "id": "versace-medusa-95-shoulder-midi-dress-line-art-clipart-100",
+      "localPath": "public/catalog/social-approved/versace-medusa-95-shoulder-midi-dress-line-art-clipart-100.webp",
+      "url": "https://assets.jotclipart.com/versace/versace-medusa-95-shoulder-midi-dress-line-art-clipart-100.webp.2e700b7a37b751a9.webp",
+      "bytes": 276388,
+      "sha256": "2e700b7a37b751a96a5263bca042b982b741812996c8ae5915a42083cefc4779",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "af898cad8e746a5f893ad2bd728e97f59b15a26ff7181837ba90c753fee900c5",
+      "catalogRecord": {
+        "alpha": true,
+        "alt": "Line drawing of a sleeveless draped midi dress with Medusa shoulder details and Greca hem.",
+        "cluster": "Clothing & accessories",
+        "color": "Black and White",
+        "createdAt": "2026-11-09T23:53:11.528Z",
+        "description": "A line drawn sleeveless midi dress has Medusa details at the shoulder straps, gathered fabric at the waist and a Greca border around the hem.",
+        "discovery": {
+          "cute": false
+        },
+        "editable": true,
+        "files": {
+          "pdf": {
+            "bytes": 343790,
+            "sha256": "3b30ab2d0190676c6d3bba200ff92797e575bdd1949df09794353f7d0708b286"
+          },
+          "thumb": {
+            "bytes": 17914,
+            "sha256": "53b295ac4ceaa20641585a08dcd3d613f0d6940eff4cb6a186641dbca4909a37"
+          },
+          "webp": {
+            "bytes": 276388,
+            "sha256": "2e700b7a37b751a96a5263bca042b982b741812996c8ae5915a42083cefc4779"
+          }
+        },
+        "formats": [
+          "WEBP",
+          "PDF"
+        ],
+        "height": 1536,
+        "id": "versace-medusa-95-shoulder-midi-dress-line-art-clipart-100",
+        "indexable": true,
+        "layered": false,
+        "license": "Free personal and educational use. Commercial use and resale as clipart are prohibited.",
+        "licenseApprovedAt": "2026-11-09",
+        "licenseStatus": "OWNER_APPROVED_PERSONAL_EDUCATIONAL_ONLY",
+        "monochrome": true,
+        "monochromeKind": "outline",
+        "orientation": "Portrait",
+        "originalThumb": "https://assets.ultraclipart.com/versace/versace-medusa-95-shoulder-midi-dress-line-art-clipart-100.thumbnail.53b295ac4ceaa206.webp",
+        "pdf": "https://assets.ultraclipart.com/versace/versace-medusa-95-shoulder-midi-dress-line-art-clipart-100.pdf.3b30ab2d0190676c.pdf",
+        "pdfColorSpace": "ICC-based CMYK",
+        "pdfPage": "1.707 × 2.560 in",
+        "preview": "https://assets.ultraclipart.com/versace/versace-medusa-95-shoulder-midi-dress-line-art-clipart-100.webp.2e700b7a37b751a9.webp",
+        "previewHeight": 1536,
+        "previewWidth": 1024,
+        "productionMethod": "owner-supplied",
+        "provenance": "Owner supplied original illustration. Exact immutable archive, source pixel observations, paired PDF reviews and repair lineage are protected.",
+        "published": true,
+        "reviewStatus": "FORMAT_AND_PAIR_REVIEW_PASSED",
+        "revision": 1,
+        "sourceCollection": "owner-fashion-trucks-35-20261108",
+        "sourceType": "raster",
+        "style": "Black & White",
+        "svg": null,
+        "thumb": "https://assets.ultraclipart.com/versace/versace-medusa-95-shoulder-midi-dress-line-art-clipart-100.webp.2e700b7a37b751a9.webp",
+        "thumbWidth": 1024,
+        "title": "Versace Medusa Strap Dress Clipart",
+        "topic": "versace",
+        "webp": "/catalog/social-approved/versace-medusa-95-shoulder-midi-dress-line-art-clipart-100.webp",
+        "width": 1024
+      }
+    },
+    {
+      "id": "strawberry-fruit-trio-realistic-clipart",
+      "localPath": "public/catalog/strawberry/strawberry-fruit-trio-realistic-clipart.webp",
+      "url": "https://assets.jotclipart.com/strawberry/strawberry-fruit-trio-realistic-clipart.webp.750311440409a705.webp",
+      "bytes": 477452,
+      "sha256": "750311440409a705209eb673fa780eaaf8bf1f7cf38c0cfb956c29b14117f5f8",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "9095f73f09c9f715fd0b5af18ab7422fb4d4e9c4abd1b143b60e83db1200d507"
+    },
+    {
+      "id": "watercolor-blue-yellow-volleyball-clipart",
+      "localPath": "public/catalog/volleyball/watercolor-blue-yellow-volleyball-clipart.webp",
+      "url": "https://assets.jotclipart.com/volleyball/watercolor-blue-yellow-volleyball-clipart.webp.35e3bc19c9b575ec.webp",
+      "bytes": 1211908,
+      "sha256": "35e3bc19c9b575ec622d91cd22a726586449cad5817db7231d166f35ad234e6b",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "8ebba4b7e17880fd4c097bc91f4ceccac0594f887b2ee7c52b7f3d08c225baf5"
+    },
+    {
+      "id": "pumpkin-lantern-smile",
+      "localPath": "public/catalog/wave_022/pumpkin-lantern-smile.webp",
+      "url": "https://assets.jotclipart.com/pumpkin/pumpkin-lantern-smile.webp.391e6d2a1e1393a0.webp",
+      "bytes": 911728,
+      "sha256": "391e6d2a1e1393a0527985a2c3f0f69a69c5e8ec6596cc088e3cf8f4a5639901",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "2c1397465427fb4499ebf403cbd3d984cfaaba70c94448cb8aff238bed98eadd"
+    },
+    {
+      "id": "winter-knitted-mittens-on-cord",
+      "localPath": "public/catalog/wave_034/winter-knitted-mittens-on-cord.webp",
+      "url": "https://assets.jotclipart.com/winter/winter-knitted-mittens-on-cord.webp.f9cc3e044ae4e837.webp",
+      "bytes": 582752,
+      "sha256": "f9cc3e044ae4e837eaa04e4d659957db183b784a45d8d17d03af7fbd123a883d",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "ff7031d4910723296e9e8a5216562121e44c133903a24a655f3ce8f645486ad7"
+    },
+    {
+      "id": "winter-snowy-timber-cabin",
+      "localPath": "public/catalog/wave_047/winter-snowy-timber-cabin.webp",
+      "url": "https://assets.jotclipart.com/winter/winter-snowy-timber-cabin.webp.6410f1b0320f54b8.webp",
+      "bytes": 935878,
+      "sha256": "6410f1b0320f54b8fed055232a4a66bed69f3ea6fe79506443c1670115aa015b",
+      "mime": "image/webp",
+      "sourceRecordSHA256": "7a8031e4bdfad7c1eed2760cf542e1a099e73f16c8bfca2db12bd7f5f7f5538e"
+    }
+  ]
+}

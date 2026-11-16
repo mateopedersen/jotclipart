@@ -2,7 +2,9 @@ import { createHmac } from 'node:crypto';
 import { writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { withPrivateCatalogSession } from './operator-session.mjs';
+import { catalogPointerKey } from '../../server/catalog-snapshot/release-pointer.mjs';
 export async function activateCatalogContent({ directory, sealed, verifier }) {
+  const pointerKey = catalogPointerKey(verifier);
   directory = resolve(directory);
   const job = {
     mode: 'VERIFIED_CONTENT_DELTA_ACTIVATION',
@@ -20,6 +22,7 @@ export async function activateCatalogContent({ directory, sealed, verifier }) {
           parentSnapshotSHA256: job.parentSnapshotSHA256,
           accountId: verifier.accountId,
           bucket: verifier.bucketName,
+          pointerKey,
           at: Date.now() - 1000,
         },
         signature = createHmac('sha256', Buffer.from(secret, 'hex'))
@@ -38,7 +41,8 @@ export async function activateCatalogContent({ directory, sealed, verifier }) {
           result.status,
         ) ||
         result.snapshotSHA256 !== sealed.snapshotSHA256 ||
-        result.verifiedRoot !== sealed.verifiedRoot
+        result.verifiedRoot !== sealed.verifiedRoot ||
+        result.pointerKey !== pointerKey
       )
         throw Error('Activation readback differs');
       writeFileSync(

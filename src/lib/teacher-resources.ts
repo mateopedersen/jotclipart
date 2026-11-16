@@ -1,8 +1,8 @@
-import { publishedArt as art } from './catalog';
-import { catalogStatistics } from './catalog-statistics';
+export const teacherArtworkIDs = ["earth-clipart-classroom-globe-wooden-stand", "earth-clipart-atlantic-globe-natural-color", "book-children-reading-together-classic-clipart", "school-backpack-filled-with-pencils-classic-clipart", "tablet-tablet-with-geometry-study-supplies", "music-brass-trumpet-detailed-metallic-illustration-clipart", "money-balance-scale-with-coins-colored-engraving-clipart"];
 import { guideLessons, type GuideScreen } from './guide-walkthroughs';
 import type { GuideSymbolKind } from '../components/GuideSymbol.astro';
 
+export function teacherResources(art: any[], catalogStatistics: any) {
 const picture = (id: string, label: string) => {
   const item = art.find((candidate) => candidate.id === id);
   if (!item) throw new Error(`Teacher example is missing from the catalog: ${id}`);
@@ -17,7 +17,7 @@ const picture = (id: string, label: string) => {
     height: item.height,
   };
 };
-export const teacherPictures = {
+const teacherPictures = {
   globe: picture('earth-clipart-classroom-globe-wooden-stand', 'Classroom globe'),
   earth: picture('earth-clipart-atlantic-globe-natural-color', 'Earth'),
   reading: picture('book-children-reading-together-classic-clipart', 'Reading together'),
@@ -41,7 +41,7 @@ interface TeacherPath {
   guide: { href: string; label: string };
   pictures: Picture[];
 }
-export const teacherPaths: TeacherPath[] = [
+const teacherPaths: TeacherPath[] = [
   {
     id: 'worksheets',
     label: 'Worksheets',
@@ -242,7 +242,7 @@ export const teacherPaths: TeacherPath[] = [
   },
 ];
 
-export const teacherCollections = [
+const teacherCollections = [
   {
     topic: 'school',
     label: 'Classroom and school',
@@ -287,7 +287,7 @@ export const teacherCollections = [
 // Reuse unchanged screenshots of the actual site, with teacher-specific explanations.
 const studio = guideLessons.find((lesson) => lesson.id === 'edit')!.screens[0];
 const boards = guideLessons.find((lesson) => lesson.id === 'boards')!.screens[0];
-export const teacherScreens: GuideScreen[] = [
+const teacherScreens: GuideScreen[] = [
   {
     ...studio,
     id: 'teacher-studio',
@@ -314,3 +314,6 @@ export const teacherScreens: GuideScreen[] = [
       'Favorites with sample boards. Give your own boards names that match your lessons or projects.',
   },
 ];
+
+return {teacherPictures,teacherPaths,teacherCollections,teacherScreens};
+}

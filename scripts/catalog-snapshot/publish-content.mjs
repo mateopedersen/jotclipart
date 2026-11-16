@@ -18,6 +18,8 @@ import { verifyNativeContent } from './test-content-native.mjs';
 import { sealCatalogContent } from './seal-content.mjs';
 import { activateCatalogContent } from './activate-content.mjs';
 import { verifyContentLive } from './verify-content-live.mjs';
+import { brand } from '../../src/lib/brand.mjs';
+import { catalogPublicOrigin } from './batch-media.mjs';
 import {
   incomingMediaFiles,
   incomingMediaStageScope,
@@ -46,6 +48,7 @@ export async function withCatalogReader({ directory, verifier, parentSnapshotSHA
             parentSnapshotSHA256,
             accountId: verifier.accountId,
             bucket: verifier.bucketName,
+            activeKey: verifier.activeKey,
             diskCache: cache,
           }),
         );
@@ -72,6 +75,7 @@ export async function publishReviewedCapsule({
 }) {
   if (prepareReader && activate) throw Error('Private test transport cannot activate production');
   const reader = prepareReader ?? withCatalogReader;
+  const publicOrigin = catalogPublicOrigin(publicConfig.publicOrigin ?? brand.origin);
   const started = Date.now(),
     sourceCommit = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim(),
     capsuleBytes = execFileSync('git', ['show', sourceCommit + ':' + capsulePath], {
@@ -85,7 +89,7 @@ export async function publishReviewedCapsule({
       publicKey: Uint8Array.from(Buffer.from(publicConfig.publicKeyHex, 'hex')),
     },
     control = await (
-      await fetch('https://ultraclipart.com/delivery-release.json', { cache: 'no-store' })
+      await fetch(publicOrigin + '/delivery-release.json', { cache: 'no-store' })
     ).json(),
     parentSnapshotSHA256 = control.verifiedRoot;
   if (activate && fields.publicationIntent === 'PRIVATE_TEST_ONLY')
@@ -217,7 +221,7 @@ export async function publishReviewedCapsule({
       }),
   );
   const beforeActivation = await (
-    await fetch('https://ultraclipart.com/delivery-release.json', { cache: 'no-store' })
+    await fetch(publicOrigin + '/delivery-release.json', { cache: 'no-store' })
   ).json();
   if (
     beforeActivation.controlRevision !== code.revision ||
@@ -225,7 +229,13 @@ export async function publishReviewedCapsule({
   )
     throw Error('Production software or parent changed before activation');
   await activateCatalogContent({ directory: prepared.output, sealed, verifier });
-  const live = await verifyContentLive({ directory: prepared.output, packet, sealed, progress }),
+  const live = await verifyContentLive({
+      directory: prepared.output,
+      packet,
+      sealed,
+      progress,
+      publicOrigin,
+    }),
     result = {
       status: 'CONTENT_ONLY_PRODUCTION_LIVE_VERIFIED',
       revision,

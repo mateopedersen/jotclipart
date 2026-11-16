@@ -1,5 +1,5 @@
 {
-  "name": "ultraclipart",
+  "name": "jotclipart",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -11,14 +11,14 @@
     "content:review": "node scripts/prepare-editorial-review.mjs",
     "content:apply": "node scripts/apply-editorial-review.mjs",
     "dev": "astro dev --host 127.0.0.1",
-    "build": "node scripts/seo/check-catalog.mjs && node scripts/restore-assets.mjs && node scripts/verify-social-images.mjs && astro build && node scripts/seo/audit-image-metadata.mjs && node scripts/security-headers.mjs",
+    "build": "node scripts/jotclipart/build.mjs",
     "social:build": "node scripts/build-social-images.mjs",
     "social:check": "node scripts/verify-social-images.mjs",
     "preview": "astro preview --host 127.0.0.1",
     "check": "node scripts/restore-assets.mjs && astro check",
     "test": "node --test tests/*.mjs",
     "test:release": "node --test --test-concurrency=2 tests/catalog.mjs tests/csp.mjs tests/publication.mjs tests/retired-routes.mjs",
-    "deploy": "node scripts/deploy.mjs",
+    "deploy": "node scripts/jotclipart/deploy-software.mjs production",
     "format": "prettier --write \"src/**/*.{astro,ts,css}\" \"tests/**/*.mjs\" \"scripts/**/*.mjs\" \"server/**/*.mjs\" astro.config.mjs",
     "format:check": "prettier --check \"src/**/*.{astro,ts,css}\" \"tests/**/*.mjs\" \"scripts/**/*.mjs\" \"server/**/*.mjs\" astro.config.mjs",
     "test:layout": "node tests/e2e/layout-audit.mjs",
@@ -79,7 +79,12 @@
     "test:e2e:ai-page-seo": "node tests/e2e/ai-page-seo.mjs",
     "test:editor:recovery:unit": "node --experimental-transform-types --import ./scripts/catalog-snapshot/register-ts.mjs --test tests/unit/editor-recovery.test.ts",
     "test:editor:recovery:storage": "node tests/e2e/editor-recovery-storage.mjs",
-    "test:editor:recovery:ui": "node tests/e2e/editor-recovery-quota.mjs"
+    "test:editor:recovery:ui": "node tests/e2e/editor-recovery-quota.mjs",
+    "build:legacy-static": "node scripts/seo/check-catalog.mjs && node scripts/restore-assets.mjs && node scripts/verify-social-images.mjs && astro build && node scripts/seo/audit-image-metadata.mjs && node scripts/security-headers.mjs",
+    "test:release:legacy": "node --test --test-concurrency=2 tests/catalog.mjs tests/csp.mjs tests/publication.mjs tests/retired-routes.mjs",
+    "test:migration": "node --test tests/jotclipart-brand.mjs tests/jotclipart-release.mjs",
+    "deploy:legacy-static": "node scripts/deploy.mjs",
+    "deploy:preview": "node scripts/jotclipart/deploy-software.mjs preview"
   },
   "dependencies": {
     "@fontsource/inter": "5.2.8",

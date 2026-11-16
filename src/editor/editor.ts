@@ -1044,11 +1044,11 @@ function init(root: HTMLElement) {
       await openShare({
         kind: 'creation',
         trigger: q<HTMLButtonElement>('[data-action=share]'),
-        title: creator ? 'My UltraClipart creation' : 'My edited UltraClipart artwork',
+        title: creator ? 'My JotClipart creation' : 'My edited JotClipart artwork',
         blob,
         sourceUrl: creator
-          ? 'https://ultraclipart.com/create/'
-          : `https://ultraclipart.com/art/${id}/`,
+          ? 'https://jotclipart.com/create/'
+          : `https://jotclipart.com/art/${id}/`,
       });
       status(
         `Share image prepared at ${width} × ${height} pixels. Your editable project stays on this device.`,

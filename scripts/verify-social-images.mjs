@@ -1,9 +1,10 @@
 import assert from 'node:assert/strict';
-import { readFileSync, realpathSync } from 'node:fs';
+import { readFileSync, realpathSync, existsSync } from 'node:fs';
 import { resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { createHash } from 'node:crypto';
+import { createHash, createPublicKey, verify } from 'node:crypto';
 import { pages } from './social/pages.mjs';
+import {productionSnapshotMessage} from '../server/catalog-snapshot/signed-production-snapshot.mjs';
 
 const digest = (bytes) => createHash('sha256').update(bytes).digest('hex');
 const rendererFiles = [
@@ -11,6 +12,8 @@ const rendererFiles = [
   'scripts/social/render.mjs',
   'scripts/social/compositions.mjs',
   'scripts/social/pages.mjs',
+  'scripts/social/sources.mjs',
+  'data/social-source-artworks.json',
 ];
 
 /** Publish reviewed PNGs without letting the build host re-render their fonts. */
@@ -20,6 +23,20 @@ export function verifySocialImages({ root, definitions = pages }) {
   const json = (path) => JSON.parse(read(path));
   const manifest = json('data/social-images.json');
   const provenance = json('data/social-image-provenance.json');
+  const originals = json('data/social-source-artworks.json');
+  assert.equal(originals.version,1);assert.equal(originals.policy,'signed-catalog-bound-reviewed-social-originals-v1');
+  const trusted=json('config/catalog-snapshot-public.json');
+  assert.equal(originals.publicKeyHex,trusted.publicKeyHex);assert.equal(originals.accountId,trusted.accountId);
+  assert.equal(originals.bucketName,trusted.bucketName);assert.equal(originals.keyId,trusted.keyId);
+  const signed=originals.productionSnapshot,authorization=signed?.authorization;
+  assert.equal(signed?.status,'SOURCE_MEDIA_GRAPH_VERIFIED');assert.equal(authorization?.accountId,trusted.accountId);
+  assert.equal(authorization?.bucket,trusted.bucketName);assert.equal(authorization?.keyId,trusted.keyId);
+  const canonical=value=>Array.isArray(value)?value.map(canonical):value&&typeof value==='object'?Object.fromEntries(Object.keys(value).sort().map(k=>[k,canonical(value[k])])):value;
+  assert.equal(digest(JSON.stringify(canonical(signed))),originals.signedCatalogRoot,'Signed social catalog root differs');
+  const key=createPublicKey({key:Buffer.concat([Buffer.from('302a300506032b6570032100','hex'),Buffer.from(trusted.publicKeyHex,'hex')]),format:'der',type:'spki'});
+  assert(verify(null,productionSnapshotMessage(signed),key,Buffer.from(authorization.signature,'hex')),'Invalid signed social source snapshot');
+  const boundOriginals=new Map(originals.items.map(item=>[item.localPath,item]));
+  assert.equal(boundOriginals.size,originals.items.length);
   assert.equal(manifest.version, 1, 'Unsupported social-image manifest');
   assert.equal(provenance.version, 1, 'Unsupported social-image provenance');
   assert.equal(manifest.width, 1200);
@@ -102,7 +119,14 @@ export function verifySocialImages({ root, definitions = pages }) {
     }
     assert(review.sources.length > 0, `${page.key}: source proof missing`);
     for (const source of review.sources) {
-      if (!sourceHashes.has(source.path))
+      const bound=boundOriginals.get(source.path);
+      if(bound){
+        assert.match(bound.url,/^https:\/\/assets\.jotclipart\.com\/[a-zA-Z0-9_./-]+\.webp$/);
+        assert.equal(bound.mime,'image/webp');assert(Number.isSafeInteger(bound.bytes)&&bound.bytes>0);
+        assert.equal(source.sha256,bound.sha256,`${page.key}: signed-source original hash differs`);
+        if(existsSync(resolve(root,source.path)))assert.equal(digest(publicSource(source.path)),bound.sha256);
+        sourceHashes.set(source.path,bound.sha256);
+      }else if (!sourceHashes.has(source.path))
         sourceHashes.set(source.path, digest(publicSource(source.path)));
       assert.equal(
         sourceHashes.get(source.path),

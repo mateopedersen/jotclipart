@@ -104,7 +104,7 @@ function initialize(root: HTMLElement) {
     invalid_style: 'Please choose one of the available illustration styles.',
     invalid_option: 'One of the illustration settings is invalid. Reset the options and try again.',
     origin_not_allowed:
-      'Generation is available on ultraclipart.com. Open the official AI Clipart Builder to continue.',
+      'Generation is available on jotclipart.com. Open the official AI Clipart Builder to continue.',
     network_verification_unavailable: 'Your network could not be verified. Try again later.',
     provider_unavailable:
       'The image model is temporarily unavailable. Try again later; your current artwork is safe.',

@@ -1,3 +1,5 @@
+import {brand} from '../../src/lib/brand.mjs';
+import {socialSources} from './sources.mjs';
 import { readFile, mkdir, writeFile, copyFile } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
 import { createHash } from 'node:crypto';
@@ -7,6 +9,18 @@ const xml = (value) =>
     /[&<>"']/g,
     (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' })[c],
   );
+
+// Only repository-owned interface symbols, never catalog art or editor palettes.
+function interfacePalette(svg) {
+  return svg.replace(/#[0-9a-fA-F]{6}\b/g,color=>{
+    const [r,g,b]=[1,3,5].map(i=>parseInt(color.slice(i,i+2),16)/255),max=Math.max(r,g,b),min=Math.min(r,g,b),d=max-min,light=(max+min)/2;
+    if(!d)return color;
+    const saturation=d/(1-Math.abs(2*light-1));
+    let hue=max===r?((g-b)/d)%6:max===g?(b-r)/d+2:(r-g)/d+4;hue=(hue*60+360)%360;
+    if(hue<190||hue>255||saturation<.12)return color;
+    return light<.27?brand.ink:light<.62?brand.action:light<.88?'#B7DCC5':light<.96?brand.soft:brand.background;
+  });
+}
 
 export async function createRenderer(root) {
   const work = join(root, '.astro/social-images');
@@ -30,6 +44,7 @@ export async function createRenderer(root) {
   process.env.FONTCONFIG_FILE = config;
   process.env.FONTCONFIG_PATH = work;
   const { default: sharp } = await import('sharp');
+  const sourceReader=await socialSources(root);
   const textCache = new Map();
   const imageCache = new Map();
   const sourceHashes = new Map();
@@ -37,7 +52,7 @@ export async function createRenderer(root) {
     const absolute = resolve(root, path);
     if (!absolute.startsWith(root + '/'))
       throw new Error('Social image source is outside the project');
-    const bytes = await readFile(absolute);
+    const bytes = await sourceReader.read(path);
     sourceHashes.set(path, sha(bytes));
     return bytes;
   }
@@ -66,7 +81,7 @@ export async function createRenderer(root) {
     return textCache.get(key);
   }
   class Canvas {
-    constructor(background = '#f4f8ff') {
+    constructor(background = brand.background) {
       this.parts = [`<rect width="1200" height="630" fill="${background}"/>`];
       this.sources = new Set();
       this.textBounds = [];
@@ -80,7 +95,7 @@ export async function createRenderer(root) {
         `<rect x="${x}" y="${y}" width="${width}" height="${height}" rx="${radius}" fill="${fill}"${stroke ? ` stroke="${stroke}" stroke-width="1.5"` : ''}/>`,
       );
     }
-    line(x1, y1, x2, y2, color = '#c9dbee', width = 2) {
+    line(x1, y1, x2, y2, color = '#B7DCC5', width = 2) {
       return this.svg(
         `<path d="M${x1} ${y1}L${x2} ${y2}" stroke="${color}" stroke-width="${width}" stroke-linecap="round"/>`,
       );
@@ -89,7 +104,7 @@ export async function createRenderer(root) {
       value,
       x,
       y,
-      { size = 28, weight = 400, color = '#243f64', maxWidth = 1080, center = false } = {},
+      { size = 28, weight = 400, color = brand.ink, maxWidth = 1080, center = false } = {},
     ) {
       let layer = await textLayer(value, { size, weight, color });
       while (layer.width > maxWidth && size > 12) {
@@ -120,6 +135,7 @@ export async function createRenderer(root) {
       return this;
     }
     async image(path, x, y, width, height, { angle = 0, cover = false, transformSource } = {}) {
+      if(path.startsWith('public/illustrations/actions/')&&path.endsWith('.svg')&&!transformSource)transformSource=interfacePalette;
       this.sources.add(path);
       const key = JSON.stringify([path, width, height, cover, transformSource?.name]);
       if (!imageCache.has(key))
@@ -145,15 +161,15 @@ export async function createRenderer(root) {
     }
     async brand({ dark = false } = {}) {
       await this.image('public/logo.svg', 56, 45, 32, 36);
-      await this.text('UltraClipart', 101, 47, {
+      await this.text('JotClipart', 101, 47, {
         size: 29,
         weight: 700,
-        color: dark ? '#fff' : '#21466f',
+        color: dark ? '#fff' : brand.ink,
       });
-      await this.text('ultraclipart.com', 58, 565, {
+      await this.text('jotclipart.com', 58, 565, {
         size: 21,
         weight: 400,
-        color: dark ? '#cbdff7' : '#5b7798',
+        color: dark ? brand.soft : brand.action,
       });
     }
     async title(lines, subtitle, { dark = false, size = 59 } = {}) {
@@ -161,13 +177,13 @@ export async function createRenderer(root) {
         size,
         lineHeight: size * 1.16,
         weight: 700,
-        color: dark ? '#fff' : '#1d3e67',
+        color: dark ? '#fff' : brand.ink,
         maxWidth: 490,
       });
       await this.lines(subtitle, 58, 354 + Math.max(0, lines.length - 2) * 30, {
         size: 25,
         lineHeight: 38,
-        color: dark ? '#d2e3f7' : '#526e91',
+        color: dark ? brand.soft : brand.action,
         maxWidth: 490,
       });
     }
@@ -184,6 +200,7 @@ export async function createRenderer(root) {
     }
   }
   return {
+    downloadReceipts:sourceReader.receipts,
     Canvas,
     sharp,
     source,

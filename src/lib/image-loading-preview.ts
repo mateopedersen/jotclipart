@@ -19,7 +19,7 @@ export function imageLoadingPreview(item: ImageSource, source = item.webp) {
       [original, thumbnail].some(
         (u) =>
           u.protocol !== 'https:' ||
-          u.hostname !== 'assets.ultraclipart.com' ||
+          u.hostname !== 'assets.jotclipart.com' ||
           u.username ||
           u.password ||
           u.port,

@@ -1,3 +1,4 @@
+import {teacherArtworkIDs} from '../../src/lib/teacher-resources.ts';
 import {auxiliaryRoutes} from './auxiliary-routes.mjs';
 import { resolvePublicArtworkRoute } from './public-artwork-routes.mjs';
 import { separatedSitemaps } from './sitemap-policy.mjs';
@@ -88,7 +89,7 @@ export function createCatalogHandler({
       kind = paths[path],
       siteDirectory = /^\/search-data\/([a-f0-9]{64})\/(?:site|navigation)\.json$/.exec(path);
     if (request.method === 'GET' || request.method === 'HEAD') {
-      if (redirects[path]) return Response.redirect(new URL(redirects[path], url.origin), 301);
+      if (redirects[path]) {const target=new URL(redirects[path],url.origin);target.search=url.search;return Response.redirect(target,301);}
       if (
         !path.endsWith('/') &&
         (/^\/(?:edit|clipart|collection)\/[a-z0-9-]+$/.test(path) ||
@@ -175,7 +176,7 @@ export function createCatalogHandler({
         if (!resolvedArtwork) return missing();
         if (resolvedArtwork.slug !== art[2] || path !== '/art/' + resolvedArtwork.slug + '/') {
           if (!(await readArtwork(context, resolvedArtwork.id))) return missing();
-          return Response.redirect(new URL('/art/' + resolvedArtwork.slug + '/', url.origin), 301);
+          return Response.redirect(new URL('/art/' + resolvedArtwork.slug + '/' + url.search, url.origin), 301);
         }
       }
       let response;
@@ -371,6 +372,7 @@ export function createCatalogHandler({
                 cluster: clusterName ?? state?.cluster,
                 allowFixture: allowPrivateFixture,
               });
+              if(state && selected==='teachers'){const ids=new Set(state.art.map(a=>a.id));for(const id of teacherArtworkIDs){if(ids.has(id))continue;const item=await readArtwork(context,id);if(!item?.published||!item.indexable)throw Error('Missing source-bound teacher artwork');state.art.push(item)}}
               if(state && selected==='info')state.params={info:path.split('/')[1]};
               if (state)
                 html = await shells[selected][0](

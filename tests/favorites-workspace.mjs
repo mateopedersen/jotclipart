@@ -91,7 +91,7 @@ test('CSV uses public artwork URLs, escapes quotes and prevents spreadsheet form
     tags: ['summer'],
   };
   const csv = favoriteCsv(['apple'], s);
-  assert.ok(csv.includes('https://ultraclipart.com/art/apple/'));
+  assert.ok(csv.includes('https://jotclipart.com/art/apple/'));
   assert.ok(csv.includes('Apple ""Red""'));
   assert.ok(csv.includes("' =HYPERLINK"));
   assert.ok(csv.includes('summer'));

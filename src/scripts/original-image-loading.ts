@@ -56,7 +56,7 @@ export function initOriginalImageLoading(
   const valid = (image: HTMLImageElement) => {
     try {
       const url = new URL(image.getAttribute('src') ?? '', location.href);
-      return url.protocol === 'https:' && url.hostname === 'assets.ultraclipart.com'
+      return url.protocol === 'https:' && url.hostname === 'assets.jotclipart.com'
         ? url.href
         : '';
     } catch {
@@ -68,7 +68,7 @@ export function initOriginalImageLoading(
     try {
       const url = new URL(image.dataset.originalPlaceholder ?? '');
       return url.protocol === 'https:' &&
-        url.hostname === 'assets.ultraclipart.com' &&
+        url.hostname === 'assets.jotclipart.com' &&
         !url.username &&
         !url.password &&
         !url.port &&

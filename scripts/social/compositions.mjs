@@ -1,3 +1,4 @@
+import {brand} from '../../src/lib/brand.mjs';
 const A = {
   fox: 'baby-fennec-fox-watercolor-clipart',
   butterfly: 'blue-morpho-butterfly-flying-illustration-clipart',
@@ -18,7 +19,7 @@ const A = {
   volleyball: 'classic-white-volleyball-realistic-clipart',
   lemon: 'lemon-whole-and-cut-fruit-realistic-clipart',
 };
-const P = { ink: '#1d3e67', blue: '#2866ad', line: '#cfdfef', pale: '#eaf3ff', muted: '#5e799a' };
+const P = { ink: brand.ink, blue: brand.action, line: '#B7DCC5', pale: brand.soft, muted: brand.action };
 export async function compose(c, page, catalog) {
   const art = (name) => {
     const id = A[name] || name;
@@ -45,12 +46,12 @@ export async function compose(c, page, catalog) {
     c.rect(x, y, w, h, '#fff', 13, P.line);
   }
   function rules(x, y, w, count = 4, step = 25) {
-    for (let i = 0; i < count; i++) c.line(x, y + i * step, x + w, y + i * step, '#d9e5f2', 3);
+    for (let i = 0; i < count; i++) c.line(x, y + i * step, x + w, y + i * step, '#D8F3DC', 3);
   }
   function arrow(x1, y, x2) {
-    c.line(x1, y, x2, y, '#77a1cd', 3);
+    c.line(x1, y, x2, y, '#B7DCC5', 3);
     c.svg(
-      `<path d="m${x2 - 9} ${y - 7} 9 7-9 7" fill="none" stroke="#77a1cd" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>`,
+      `<path d="m${x2 - 9} ${y - 7} 9 7-9 7" fill="none" stroke="#B7DCC5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>`,
     );
   }
   switch (page.layout) {
@@ -63,7 +64,7 @@ export async function compose(c, page, catalog) {
       break;
     }
     case 'home': {
-      c.rect(590, 108, 558, 425, '#e7f1fe', 24);
+      c.rect(590, 108, 558, 425, '#D8F3DC', 24);
       const samples = [
         ['heart', 610, 125, 172, 249, 'Hearts & Flowers', '#fff5f8'],
         ['pizza-pepperoni-slice-watercolor-clipart', 798, 125, 157, 117, 'Food & Drink', '#fff8ec'],
@@ -74,10 +75,10 @@ export async function compose(c, page, catalog) {
           157,
           117,
           'School',
-          '#f7faff',
+          '#F4FAF6',
         ],
         ['guitar', 798, 260, 157, 249, 'Music', '#f4f0ff'],
-        ['watercolor-blue-yellow-volleyball-clipart', 970, 260, 157, 117, 'Sports', '#f7fbff'],
+        ['watercolor-blue-yellow-volleyball-clipart', 970, 260, 157, 117, 'Sports', '#F4FAF6'],
         [
           'leaf-autumn-maple-oak-birch-cluster-painted-illustration-clipart',
           610,
@@ -87,10 +88,10 @@ export async function compose(c, page, catalog) {
           'Botanicals',
           '#fff9ef',
         ],
-        ['winter-knitted-mittens-on-cord', 970, 395, 157, 114, 'Winter', '#f7faff'],
+        ['winter-knitted-mittens-on-cord', 970, 395, 157, 114, 'Winter', '#F4FAF6'],
       ];
       for (const [name, x, y, w, h, label, fill] of samples) {
-        c.rect(x, y + 5, w, h, '#bacde6', 16);
+        c.rect(x, y + 5, w, h, '#B7DCC5', 16);
         await tile(name, x, y, w, h, label, fill);
       }
       break;
@@ -104,16 +105,16 @@ export async function compose(c, page, catalog) {
         maxWidth: 390,
       });
       await image('berry', 702, 210, 328, 237);
-      c.rect(694, 205, 344, 251, 'none', 3, '#3678be');
+      c.rect(694, 205, 344, 251, 'none', 3, '#216E4E');
       for (const [x, y] of [
         [689, 200],
         [1033, 200],
         [689, 451],
         [1033, 451],
       ])
-        c.rect(x, y, 10, 10, '#fff', 1, '#3678be');
+        c.rect(x, y, 10, 10, '#fff', 1, '#216E4E');
       await c.text('Design example', 866, 483, { size: 18, center: true, color: P.muted });
-      c.rect(580, 307, 94, 101, '#e1edfc', 15, '#adc8e9');
+      c.rect(580, 307, 94, 101, '#D8F3DC', 15, '#B7DCC5');
       await c.text('Aa', 627, 335, { size: 43, weight: 600, center: true });
       for (let i = 0; i < 4; i++)
         c.rect(963 + i * 36, 553, 26, 12, ['#2d639f', '#e6a65b', '#b44a58', '#83a787'][i], 4);
@@ -158,7 +159,7 @@ export async function compose(c, page, catalog) {
     case 'collections': {
       const rows = [
         ['pumpkin', 'Halloween', '#fff5e9'],
-        ['cabin', 'Winter', '#edf5ff'],
+        ['cabin', 'Winter', '#F4FAF6'],
         ['heart', 'Hearts', '#fff3f5'],
       ];
       for (let i = 0; i < rows.length; i++) {
@@ -207,9 +208,9 @@ export async function compose(c, page, catalog) {
     }
     case 'guides': {
       paper(587, 139, 571, 391);
-      await c.image('public/guide-screens/editor-toolbar.png', 598, 151, 548, 350);
+      await c.image('public/social/jotclipart-studio-native-20261116.jpg', 598, 151, 548, 350);
       for (const [i, label] of ['Download', 'Edit', 'Print'].entries()) {
-        c.rect(612 + i * 174, 535, 160, 42, '#e4effd', 8);
+        c.rect(612 + i * 174, 535, 160, 42, '#D8F3DC', 8);
         await c.text(`${i + 1}  ${label}`, 692 + i * 174, 547, {
           size: 18,
           weight: 600,
@@ -227,30 +228,30 @@ export async function compose(c, page, catalog) {
       for (let i = 0; i <= 10; i++)
         c.line(803 + i * 23, 470, 803 + i * 23, i % 5 === 0 ? 452 : 459, P.blue, 2);
       await c.text('Size on Paper', 917, 491, { size: 18, center: true, color: P.muted });
-      c.rect(588, 189, 132, 181, '#e5effc', 12, '#b9d1ed');
+      c.rect(588, 189, 132, 181, '#D8F3DC', 12, '#B7DCC5');
       await image('lemon', 602, 222, 105, 105);
       await c.text('Pixels', 653, 335, { size: 19, weight: 600, center: true });
       arrow(711, 400, 772);
-      c.line(1104, 147, 1104, 492, '#83a9d1', 2);
+      c.line(1104, 147, 1104, 492, '#B7DCC5', 2);
       for (let i = 0; i <= 12; i++)
-        c.line(1104, 147 + i * 28.75, i % 3 === 0 ? 1122 : 1115, 147 + i * 28.75, '#83a9d1', 2);
+        c.line(1104, 147 + i * 28.75, i % 3 === 0 ? 1122 : 1115, 147 + i * 28.75, '#B7DCC5', 2);
       break;
     }
     case 'about': {
       c.svg(`<defs>
-        <radialGradient id="about-light"><stop stop-color="#5484bc" stop-opacity=".5"/><stop offset="1" stop-color="#5484bc" stop-opacity="0"/></radialGradient>
-        <radialGradient id="about-floor"><stop stop-color="#0c2649" stop-opacity=".45"/><stop offset="1" stop-color="#0c2649" stop-opacity="0"/></radialGradient>
+        <radialGradient id="about-light"><stop stop-color="#216E4E" stop-opacity=".5"/><stop offset="1" stop-color="#216E4E" stop-opacity="0"/></radialGradient>
+        <radialGradient id="about-floor"><stop stop-color="#123524" stop-opacity=".45"/><stop offset="1" stop-color="#123524" stop-opacity="0"/></radialGradient>
       </defs><ellipse cx="875" cy="320" rx="310" ry="248" fill="url(#about-light)"/>
       <ellipse cx="880" cy="542" rx="273" ry="29" fill="url(#about-floor)"/>
       <g transform="rotate(-7 870 315)">
-        <rect x="687" y="149" width="348" height="345" rx="24" fill="#83a7d0"/>
-        <rect x="681" y="137" width="348" height="345" rx="24" fill="#c8def5" stroke="#e6f1ff" stroke-width="2"/>
+        <rect x="687" y="149" width="348" height="345" rx="24" fill="#B7DCC5"/>
+        <rect x="681" y="137" width="348" height="345" rx="24" fill="#B7DCC5" stroke="#D8F3DC" stroke-width="2"/>
       </g>`);
-      c.rect(724, 168, 294, 327, '#91aed0', 21);
-      c.rect(721, 160, 294, 327, '#dbe7f5', 21);
-      c.rect(718, 153, 294, 327, '#fff', 21, '#d3e2f3');
+      c.rect(724, 168, 294, 327, '#B7DCC5', 21);
+      c.rect(721, 160, 294, 327, '#D8F3DC', 21);
+      c.rect(718, 153, 294, 327, '#fff', 21, '#D8F3DC');
       await c.image('public/logo.svg', 810, 195, 110, 121);
-      await c.text('UltraClipart', 865, 341, {
+      await c.text('JotClipart', 865, 341, {
         size: 30,
         weight: 700,
         center: true,
@@ -262,15 +263,15 @@ export async function compose(c, page, catalog) {
         color: P.muted,
         maxWidth: 254,
       });
-      for (const [i, color] of ['#2f6eb7', '#67a9de', '#b6d5f5', '#f2cf94', '#d9899c'].entries())
+      for (const [i, color] of [brand.action, brand.primary, brand.soft, '#f2cf94', '#d9899c'].entries())
         c.rect(791 + i * 31, 429, 23, 7, color, 3);
       // Small original-art cards surround the brand, rather than portraits.
       c.svg('<g transform="rotate(-9 671 345)">');
-      c.rect(591, 250, 166, 207, '#b9cde5', 17);
+      c.rect(591, 250, 166, 207, '#B7DCC5', 17);
       c.rect(588, 243, 166, 207, '#fff7fa', 17, '#e6dce6');
       await image('heart', 601, 262, 140, 163);
       c.svg('</g><g transform="rotate(8 1064 218)">');
-      c.rect(994, 132, 148, 184, '#a8c3e2', 17);
+      c.rect(994, 132, 148, 184, '#B7DCC5', 17);
       c.rect(991, 125, 148, 184, '#f5fbf7', 17, '#d6e5dc');
       await image('fern', 1003, 139, 124, 153);
       c.svg('</g><g transform="rotate(8 1075 423)">');
@@ -283,17 +284,8 @@ export async function compose(c, page, catalog) {
       break;
     }
     case 'new': {
-      const subjects = new Set();
-      const newest = [...catalog.values()].sort(
-        (a, b) => b.createdAt.localeCompare(a.createdAt) || a.id.localeCompare(b.id),
-      );
-      const selected = newest
-        .filter((item) => {
-          if (subjects.has(item.topic)) return false;
-          subjects.add(item.topic);
-          return true;
-        })
-        .slice(0, 6);
+      if(!Array.isArray(page.sampleIDs)||page.sampleIDs.length!==6)throw Error('Six signed-recent social sources required');
+      const selected=page.sampleIDs.map(id=>{const item=catalog.get(id);if(!item?.published||!item.indexable)throw Error('Missing signed-recent social artwork');return item;});
       for (let i = 0; i < selected.length; i++) {
         const x = 595 + (i % 3) * 190,
           y = 127 + Math.floor(i / 3) * 210;
@@ -318,9 +310,9 @@ export async function compose(c, page, catalog) {
     case 'search': {
       paper(594, 130, 555, 73);
       c.svg(
-        '<circle cx="627" cy="165" r="11" fill="none" stroke="#4d7fb8" stroke-width="3"/><path d="m636 174 11 11" stroke="#4d7fb8" stroke-width="3" stroke-linecap="round"/>',
+        '<circle cx="627" cy="165" r="11" fill="none" stroke="#216E4E" stroke-width="3"/><path d="m636 174 11 11" stroke="#216E4E" stroke-width="3" stroke-linecap="round"/>',
       );
-      await c.text('Find a Subject', 671, 153, { size: 27, weight: 400, color: '#62809f' });
+      await c.text('Find a Subject', 671, 153, { size: 27, weight: 400, color: '#216E4E' });
       const rows = [
         ['fox', 594, 227],
         ['berry', 878, 227],
@@ -345,7 +337,7 @@ export async function compose(c, page, catalog) {
       break;
     }
     case 'faq': {
-      await c.text('?', 640, 131, { size: 277, weight: 700, color: '#98bce6' });
+      await c.text('?', 640, 131, { size: 277, weight: 700, color: '#B7DCC5' });
       const rows = [
         ['Image Downloads', 'public/illustrations/actions/image.svg'],
         ['Printable PDFs', 'public/illustrations/actions/document.svg'],
@@ -441,9 +433,9 @@ export async function compose(c, page, catalog) {
       break;
     }
     case 'privacy': {
-      c.rect(693, 177, 361, 267, '#e3eefc', 22, '#b2cce9');
+      c.rect(693, 177, 361, 267, '#D8F3DC', 22, '#B7DCC5');
       c.svg(
-        '<path d="M817 277v-42a55 55 0 0 1 110 0v42" fill="none" stroke="#2b639e" stroke-width="14"/><rect x="795" y="270" width="153" height="124" rx="17" fill="#fff" stroke="#2b639e" stroke-width="4"/><circle cx="871" cy="326" r="10" fill="#2b639e"/><path d="M871 334v24" stroke="#2b639e" stroke-width="7" stroke-linecap="round"/>',
+        '<path d="M817 277v-42a55 55 0 0 1 110 0v42" fill="none" stroke="#216E4E" stroke-width="14"/><rect x="795" y="270" width="153" height="124" rx="17" fill="#fff" stroke="#216E4E" stroke-width="4"/><circle cx="871" cy="326" r="10" fill="#216E4E"/><path d="M871 334v24" stroke="#216E4E" stroke-width="7" stroke-linecap="round"/>',
       );
       for (const [i, label] of ['Browser', 'AI Service', 'Saved Files'].entries()) {
         paper(600 + i * 185, 475, 170, 52);
@@ -460,8 +452,8 @@ export async function compose(c, page, catalog) {
       paper(643, 115, 435, 420);
       await c.image('public/logo.svg', 679, 149, 42, 47);
       await c.text('Terms of Use', 745, 158, { size: 31, weight: 600, maxWidth: 300 });
-      c.line(680, 222, 1040, 222, '#a8c3e3', 2);
-      await c.text('Using UltraClipart', 681, 254, { size: 22, weight: 600 });
+      c.line(680, 222, 1040, 222, '#B7DCC5', 2);
+      await c.text('Using JotClipart', 681, 254, { size: 22, weight: 600 });
       rules(681, 310, 355, 4, 26);
       await c.text('Artwork & Creative Tools', 681, 439, {
         size: 21,
@@ -472,7 +464,7 @@ export async function compose(c, page, catalog) {
     }
     case 'copyright': {
       paper(625, 133, 351, 389);
-      await c.text('©', 798, 171, { size: 165, weight: 600, center: true, color: '#5083bb' });
+      await c.text('©', 798, 171, { size: 165, weight: 600, center: true, color: '#216E4E' });
       await c.text('Copyright & Corrections', 800, 392, {
         size: 24,
         weight: 600,
@@ -486,12 +478,12 @@ export async function compose(c, page, catalog) {
     }
     case 'accessibility': {
       paper(608, 132, 538, 389);
-      c.rect(661, 181, 184, 97, '#e9f2fe', 12, '#c4d6ee');
+      c.rect(661, 181, 184, 97, '#D8F3DC', 12, '#B7DCC5');
       await c.text('Tab', 753, 209, { size: 36, weight: 600, center: true });
-      c.rect(882, 181, 209, 97, '#fff', 12, '#c4d6ee');
+      c.rect(882, 181, 209, 97, '#fff', 12, '#B7DCC5');
       await c.text('Enter', 986, 209, { size: 36, weight: 600, center: true });
-      c.rect(649, 335, 454, 105, 'none', 14, '#2b6fc3');
-      c.rect(658, 344, 436, 87, '#2867ac', 8);
+      c.rect(649, 335, 454, 105, 'none', 14, '#216E4E');
+      c.rect(658, 344, 436, 87, '#216E4E', 8);
       await c.text('Visible Keyboard Focus', 876, 371, {
         size: 27,
         weight: 600,
@@ -528,13 +520,13 @@ export async function compose(c, page, catalog) {
         size: 188,
         weight: 700,
         center: true,
-        color: '#bed5ee',
+        color: '#B7DCC5',
         maxWidth: 545,
       });
       await image('fox', 728, 264, 260, 260);
       await image('butterfly', 1017, 135, 123, 119);
       c.svg(
-        '<circle cx="656" cy="412" r="38" fill="white" stroke="#3b76b9" stroke-width="8"/><path d="m683 440 29 29" stroke="#3b76b9" stroke-width="12" stroke-linecap="round"/>',
+        '<circle cx="656" cy="412" r="38" fill="white" stroke="#216E4E" stroke-width="8"/><path d="m683 440 29 29" stroke="#216E4E" stroke-width="12" stroke-linecap="round"/>',
       );
       break;
     }

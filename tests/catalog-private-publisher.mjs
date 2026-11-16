@@ -280,3 +280,102 @@ test('an exact 4096-byte valid envelope activates once and supports signed repla
   assert.equal((await replay.json()).status, 'EXACT_DELTA_ALREADY_ACTIVE');
   assert.equal(f.puts(), 1);
 });
+
+async function namespacedFixture() {
+  const f = await fixture();
+  const parent = await (await f.bucket.get()).json();
+  const oldKey = 'catalog/active.json',
+    newKey = 'catalog/jotclipart/active.json';
+  const values = new Map([
+    [oldKey, structuredClone(parent)],
+    [newKey, structuredClone(parent)],
+  ]);
+  const reads = [],
+    writes = [];
+  const bucket = {
+    get: async (key) => {
+      reads.push(key);
+      const value = values.get(key);
+      if (!value) return null;
+      const bytes = Buffer.from(JSON.stringify(value));
+      return {
+        size: bytes.length,
+        etag: rawHash(value),
+        httpMetadata: { contentType: 'application/json' },
+        json: async () => structuredClone(value),
+        arrayBuffer: async () => bytes,
+      };
+    },
+    put: async (key, bytes, options) => {
+      assert(values.has(key));
+      assert.equal(options.onlyIf.etagMatches, rawHash(values.get(key)));
+      writes.push(key);
+      values.set(key, JSON.parse(new TextDecoder().decode(bytes)));
+      return { etag: rawHash(values.get(key)) };
+    },
+  };
+  const job = { ...f.job, verifier: { ...f.job.verifier, activeKey: newKey } };
+  return {
+    ...f,
+    job,
+    worker: privateSnapshotPublisher(job),
+    bucket,
+    values,
+    reads,
+    writes,
+    oldKey,
+    newKey,
+  };
+}
+test('same-root projects still publish and read back only the explicitly scoped new pointer', async () => {
+  const f = await namespacedFixture(),
+    before = rawHash(f.values.get(f.oldKey));
+  assert.equal(rawHash(f.values.get(f.newKey)), before);
+  const response = await f.worker.fetch(f.request({ pointerKey: f.newKey }), { TARGET: f.bucket });
+  assert.equal(response.status, 200);
+  assert.equal((await response.json()).pointerKey, f.newKey);
+  assert.equal(rawHash(f.values.get(f.oldKey)), before);
+  assert.equal(rawHash(f.values.get(f.newKey)), f.job.snapshotSHA256);
+  assert.deepEqual(f.writes, [f.newKey]);
+  assert(f.reads.every((key) => key === f.newKey));
+  const replay = await f.worker.fetch(f.request({ pointerKey: f.newKey }), { TARGET: f.bucket });
+  assert.equal((await replay.json()).status, 'EXACT_DELTA_ALREADY_ACTIVE');
+  assert.deepEqual(f.writes, [f.newKey]);
+});
+test('new namespace refuses old/unscoped commands and wrong verifier before any target read', async () => {
+  const f = await namespacedFixture();
+  for (const request of [f.request(), f.request({ pointerKey: f.oldKey })])
+    assert.equal((await f.worker.fetch(request, { TARGET: f.bucket })).status, 409);
+  const oldWorker = privateSnapshotPublisher({
+    ...f.job,
+    verifier: { ...f.job.verifier, activeKey: f.oldKey },
+  });
+  assert.equal(
+    (await oldWorker.fetch(f.request({ pointerKey: f.newKey }), { TARGET: f.bucket })).status,
+    409,
+  );
+  assert.deepEqual(f.reads, []);
+  assert.deepEqual(f.writes, []);
+  for (const activeKey of [
+    null,
+    '',
+    'catalog/other/active.json',
+    'catalog/jotclipart/../active.json',
+  ])
+    assert.throws(
+      () => privateSnapshotPublisher({ ...f.job, verifier: { ...f.job.verifier, activeKey } }),
+      /pointer scope/,
+    );
+});
+test('changing a signed pointer field cannot retarget an activation authorization', async () => {
+  const f = await namespacedFixture();
+  const envelope = await f.request({ pointerKey: f.oldKey }).json();
+  envelope.command.pointerKey = f.newKey;
+  const request = new Request('http://private.invalid/activate', {
+    method: 'POST',
+    body: JSON.stringify(envelope),
+  });
+  assert.equal((await f.worker.fetch(request, { TARGET: f.bucket })).status, 403);
+  assert.deepEqual(f.reads, []);
+  assert.deepEqual(f.writes, []);
+});

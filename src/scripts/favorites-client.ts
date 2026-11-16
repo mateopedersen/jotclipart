@@ -516,7 +516,7 @@ export function initFavorites() {
       notify('There are no designs to copy in this view.');
       return;
     }
-    const text = list.map((id) => `https://ultraclipart.com/art/${id}/`).join('\n');
+    const text = list.map((id) => `https://jotclipart.com/art/${id}/`).join('\n');
     try {
       await navigator.clipboard.writeText(text);
       notify(`${list.length} artwork links copied. Private notes were not included.`);
@@ -564,7 +564,7 @@ export function initFavorites() {
       `<!doctype html><html lang="en"><title>${escape(title)} — Planning Sheet</title><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{font:16px/1.5 system-ui;color:#193456;margin:24px}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}article{border:1px solid #ccd9e8;padding:16px;break-inside:avoid;border-radius:12px}img{width:100%;height:170px;object-fit:contain}p{white-space:pre-wrap;overflow-wrap:anywhere}a{color:#1464d4;overflow-wrap:anywhere}button{padding:12px;font:inherit}@media print{button{display:none}body{margin:0}main{grid-template-columns:repeat(2,1fr)}}</style><h1>${escape(title)}</h1><p>Your private planning sheet · ${visibleIds.length} designs on this page</p><button id="print-sheet">Print or Save as PDF</button><main>${visibleIds
         .map((id) => {
           const e = state.entries[id];
-          return `<article>${e?.thumb ? `<img src="${escape(e.thumb)}" alt="${escape(e.title || id)}">` : ''}<h2>${escape(e?.title || id.replaceAll('-', ' '))}</h2><p>${escape(e?.stage || 'idea')}${e?.tags?.length ? ' · ' + escape(e.tags.join(', ')) : ''}</p>${e?.note ? `<p>${escape(e.note)}</p>` : ''}<a href="https://ultraclipart.com/art/${id}/">Open Artwork</a></article>`;
+          return `<article>${e?.thumb ? `<img src="${escape(e.thumb)}" alt="${escape(e.title || id)}">` : ''}<h2>${escape(e?.title || id.replaceAll('-', ' '))}</h2><p>${escape(e?.stage || 'idea')}${e?.tags?.length ? ' · ' + escape(e.tags.join(', ')) : ''}</p>${e?.note ? `<p>${escape(e.note)}</p>` : ''}<a href="https://jotclipart.com/art/${id}/">Open Artwork</a></article>`;
         })
         .join('')}</main></html>`,
     );
@@ -993,7 +993,7 @@ export function initFavorites() {
         data.state?.schema !== 1 ||
         !Array.isArray(data.favorites)
       )
-        throw Error('This is not an UltraClipart board backup.');
+        throw Error('This is not an JotClipart board backup.');
       const incoming = parseBoards(JSON.stringify(data.state)),
         current = readBoards(localStorage),
         list = [...new Set([...ids(), ...parseFavoriteIds(JSON.stringify(data.favorites))])];

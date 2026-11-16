@@ -1,9 +1,10 @@
-import { displayTitle } from '../../src/lib/display-title.ts';
+import { displayTitle, displayCatalogTitle } from '../../src/lib/display-title.ts';
+import { brand, publicBrandURL } from '../../src/lib/brand.mjs';
 import { createHash } from 'node:crypto';
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import assert from 'node:assert/strict';
-import { verifyIncomingMedia } from './batch-media.mjs';
+import { verifyIncomingMedia, catalogPublicOrigin } from './batch-media.mjs';
 const clean = (s) =>
   s
     .replace(/<[^>]*>/g, '')
@@ -15,7 +16,15 @@ const clean = (s) =>
           : { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'" }[k.toLowerCase()],
     )
     .trim();
-export async function verifyContentLive({ directory, packet, sealed, progress = () => {} }) {
+export async function verifyContentLive({
+  directory,
+  packet,
+  sealed,
+  progress = () => {},
+  publicOrigin = brand.origin,
+  fetcher = fetch,
+}) {
+  const origin = catalogPublicOrigin(publicOrigin);
   const root = sealed.verifiedRoot,
     revision = sealed.snapshot.revision,
     headers = { 'x-uc-catalog-protocol': 'snapshot-search-v1' },
@@ -24,7 +33,7 @@ export async function verifyContentLive({ directory, packet, sealed, progress = 
     let last;
     for (let i = 0; i < 3; i++)
       try {
-        const r = await fetch('https://ultraclipart.com' + path, {
+        const r = await fetcher(origin + path, {
             headers,
             redirect: 'manual',
             signal: AbortSignal.timeout(90000),
@@ -66,11 +75,15 @@ export async function verifyContentLive({ directory, packet, sealed, progress = 
         if (!t.removed) {
           assert.equal(r.headers.get('x-uc-snapshot'), root, t.path);
           assert(text.includes('name="build-revision" content="' + revision + '"'));
-          assert(text.includes('https://ultraclipart.com' + t.path));
+          assert(text.includes(brand.origin + t.path));
           if (t.art) {
-            assert.equal(clean(text.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? ''), displayTitle(t.art.title));
-            assert(text.includes(t.art.webp));
-            if (t.path.startsWith('/art/')) assert(text.includes(t.art.pdf));
+            const title = t.path.startsWith('/art/') ? displayCatalogTitle : displayTitle;
+            assert.equal(
+              clean(text.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? ''),
+              title(t.art.title),
+            );
+            assert(text.includes(publicBrandURL(t.art.webp)));
+            if (t.path.startsWith('/art/')) assert(text.includes(publicBrandURL(t.art.pdf)));
           }
           if (t.topic) {
             const schema = [
@@ -101,11 +114,16 @@ export async function verifyContentLive({ directory, packet, sealed, progress = 
       }
     }),
   );
-  const media = await verifyIncomingMedia(packet.incomingMediaManifest, { progress }),
+  const media = await verifyIncomingMedia(packet.incomingMediaManifest, {
+      progress,
+      publicOrigin: origin,
+      fetcher,
+    }),
     after = await get('/delivery-release.json');
   assert.equal(JSON.parse(after.text).verifiedRoot, root);
   const receipt = {
     status: 'CHANGED_PUBLIC_PAGES_AND_ORIGINAL_MEDIA_VERIFIED',
+    publicOrigin: origin,
     revision,
     verifiedRoot: root,
     pages: rows,

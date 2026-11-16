@@ -1,5 +1,6 @@
 {
-  "name": "ultraclipart",
+  "name": "jotclipart",
+  "account_id": "48c779c8eaa80234e0bb9d57f96e588b",
   "compatibility_date": "2026-10-23",
   "pages_build_output_dir": "./dist",
   "r2_buckets": [
@@ -21,10 +22,10 @@
   ],
   "vars": {
     "SHARE_ENABLED": "true",
-    "SHARE_PUBLIC_ORIGIN": "https://ultraclipart.com",
+    "SHARE_PUBLIC_ORIGIN": "https://jotclipart.com",
     "AI_GENERATION_ENABLED": "true",
     "AI_FREE_PLAN_CONFIRMED": "true",
-    "AI_PUBLIC_ORIGIN": "https://ultraclipart.com",
+    "AI_PUBLIC_ORIGIN": "https://jotclipart.com",
     "MAX_DAILY_NEURONS": "6000",
     "MAX_DAILY_GENERATIONS": "24",
     "MAX_GENERATIONS_PER_VISITOR": "2",

@@ -30,7 +30,7 @@ export async function categorySamples(
           const url = new URL(asset.thumb);
           if (
             url.protocol === 'https:' &&
-            url.hostname === 'assets.ultraclipart.com' &&
+            url.hostname === 'assets.jotclipart.com' &&
             !url.username &&
             !url.password &&
             !url.port &&

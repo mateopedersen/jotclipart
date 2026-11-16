@@ -2,11 +2,11 @@ export const pages = [
   {
     key: 'home',
     route: '/',
-    title: ['Clipart for', 'Every Project'],
+    title: ['Free Clipart for', 'Every Project'],
     subtitle: ['Flowers, food, school and sports.', 'Find artwork for your next design.'],
     layout: 'home',
     dark: true,
-    alt: 'UltraClipart library with a floral heart, pizza, school backpack, guitar, volleyball, autumn leaves and winter mittens.',
+    alt: 'JotClipart library with a floral heart, pizza, school backpack, guitar, volleyball, autumn leaves and winter mittens.',
   },
   {
     key: 'studio',
@@ -28,7 +28,7 @@ export const pages = [
   {
     key: 'categories',
     route: '/categories/',
-    title: ['Browse', 'by Subject'],
+    title: ['Free Clipart', 'by Subject'],
     subtitle: ['Animals, plants, food, school', 'and more clipart categories.'],
     layout: 'categories',
     alt: 'Clipart categories illustrated by animals, plants, food, school, music and nature.',
@@ -36,7 +36,7 @@ export const pages = [
   {
     key: 'collections',
     route: '/collections/',
-    title: ['Clipart', 'Collections'],
+    title: ['Free Clipart', 'Collections'],
     subtitle: ['Related subjects together.', 'Browse by theme or occasion.'],
     layout: 'collections',
     alt: 'Clipart collections with Halloween pumpkins, a snowy cabin and a floral heart.',
@@ -44,7 +44,7 @@ export const pages = [
   {
     key: 'black-and-white',
     route: '/black-and-white/',
-    title: ['Black & White', 'Clipart'],
+    title: ['Free Black & White', 'Clipart'],
     subtitle: ['Line art, shaded drawings', 'and silhouettes.'],
     layout: 'monochrome',
     alt: 'Black-and-white clipart: an ink fern, violin and open book arranged on white panels.',
@@ -60,11 +60,11 @@ export const pages = [
   {
     key: 'guides',
     route: '/guides/',
-    title: ['UltraClipart', 'User Guide'],
+    title: ['JotClipart', 'User Guide'],
     subtitle: ['Real screens.', 'Step-by-step instructions.'],
     layout: 'guides',
     dark: true,
-    alt: 'UltraClipart User Guide with an actual Studio screenshot and download, edit and print guide labels.',
+    alt: 'JotClipart User Guide with an actual Studio screenshot and download, edit and print guide labels.',
   },
   {
     key: 'print-size',
@@ -77,19 +77,19 @@ export const pages = [
   {
     key: 'about',
     route: '/about/',
-    title: ['About', 'UltraClipart'],
+    title: ['About', 'JotClipart'],
     subtitle: ['A clipart library and design tools', 'for everyday projects.'],
     layout: 'about',
     dark: true,
-    alt: 'About UltraClipart: the blue U emblem on layered cards, with a floral heart, fern, lemon, paint palette and pencil.',
+    alt: 'About JotClipart: the green J emblem on layered cards, with a floral heart, fern, lemon, paint palette and pencil.',
   },
   {
     key: 'new',
     route: '/new/',
-    title: ['New', 'Clipart'],
+    title: ['Free New', 'Clipart'],
     subtitle: ['The latest illustrations', 'added to the catalog.'],
     layout: 'new',
-    alt: 'New Clipart: a selection of the latest published subjects in the UltraClipart catalog.',
+    alt: 'New Clipart: a selection of the latest published subjects in the JotClipart catalog.',
   },
   {
     key: 'favorites',
@@ -102,18 +102,18 @@ export const pages = [
   {
     key: 'search',
     route: '/search/',
-    title: ['Search', 'UltraClipart'],
+    title: ['Search', 'JotClipart'],
     subtitle: ['Find a subject, an action,', 'a guide or an editing tool.'],
     layout: 'search',
-    alt: 'Search UltraClipart with a search illustration and varied clipart subject examples.',
+    alt: 'Search JotClipart with a search illustration and varied clipart subject examples.',
   },
   {
     key: 'contact',
     route: '/contact/',
-    title: ['Contact', 'UltraClipart'],
+    title: ['Contact', 'JotClipart'],
     subtitle: ['Questions, corrections', 'and feedback.'],
     layout: 'contact',
-    alt: 'Contact UltraClipart with an illustrated envelope and the public contact email address.',
+    alt: 'Contact JotClipart with an illustrated envelope and the public contact email address.',
   },
   {
     key: 'faq',
@@ -121,7 +121,7 @@ export const pages = [
     title: ['Questions', '& Answers'],
     subtitle: ['Help with downloading,', 'editing and saving your work.'],
     layout: 'faq',
-    alt: 'UltraClipart FAQ with a question mark and illustrated Image, PDF and Editing topics.',
+    alt: 'JotClipart FAQ with a question mark and illustrated Image, PDF and Editing topics.',
   },
   {
     key: 'classroom-label',
@@ -156,7 +156,7 @@ export const pages = [
     title: ['Artwork', 'License'],
     subtitle: ['Read the permissions', 'for catalog artwork.'],
     layout: 'license',
-    alt: 'UltraClipart Artwork License: a license document with personal and educational use illustrations.',
+    alt: 'JotClipart Artwork License: a license document with personal and educational use illustrations.',
   },
   {
     key: 'privacy',
@@ -164,7 +164,7 @@ export const pages = [
     title: ['Privacy &', 'Your Data'],
     subtitle: ['Local editing, cloud generation', 'and saved work explained.'],
     layout: 'privacy',
-    alt: 'UltraClipart Privacy: a lock and separate browser, AI service and saved-file illustrations.',
+    alt: 'JotClipart Privacy: a lock and separate browser, AI service and saved-file illustrations.',
   },
   {
     key: 'cookies',
@@ -172,7 +172,7 @@ export const pages = [
     title: ['Cookies &', 'Your Privacy'],
     subtitle: ['See what this site stores.', 'Review your cookie choices.'],
     layout: 'cookies',
-    alt: 'UltraClipart Cookie Policy with a cookie and security shield, necessary-cookie information and privacy controls.',
+    alt: 'JotClipart Cookie Policy with a cookie and security shield, necessary-cookie information and privacy controls.',
   },
   {
     key: 'terms',
@@ -180,7 +180,7 @@ export const pages = [
     title: ['Terms', 'of Use'],
     subtitle: ['Using the site, artwork', 'and creative tools.'],
     layout: 'terms',
-    alt: 'UltraClipart Terms of Use with an illustrated document and the site logo.',
+    alt: 'JotClipart Terms of Use with an illustrated document and the site logo.',
   },
   {
     key: 'copyright',
@@ -205,7 +205,7 @@ export const pages = [
     title: ['Our Editorial', 'Process'],
     subtitle: ['Subject briefs, file checks', 'and corrections after release.'],
     layout: 'process',
-    alt: 'UltraClipart editorial process illustrated by a subject brief, review tools and a publication document.',
+    alt: 'JotClipart editorial process illustrated by a subject brief, review tools and a publication document.',
   },
   {
     key: 'not-found',
@@ -213,6 +213,6 @@ export const pages = [
     title: ['Page', 'Not Found'],
     subtitle: ['Search for an illustration', 'or browse a subject instead.'],
     layout: 'error',
-    alt: 'UltraClipart page not found with a blue 404 illustration, a fox and a search symbol.',
+    alt: 'JotClipart page not found with a green 404 illustration, a fox and a search symbol.',
   },
 ];

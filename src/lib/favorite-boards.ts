@@ -81,7 +81,7 @@ export function parseBoards(value: string | null): BoardState {
       const thumb =
         typeof entry.thumb === 'string' &&
         (/^\/catalog\/[a-z0-9/_-]+\.webp$/.test(entry.thumb) ||
-          /^https:\/\/assets\.ultraclipart\.com\/[a-zA-Z0-9/_.%-]+\.webp$/.test(entry.thumb))
+          /^https:\/\/assets\.jotclipart\.com\/[a-zA-Z0-9/_.%-]+\.webp$/.test(entry.thumb))
           ? entry.thumb
           : undefined;
       empty.entries[id] = {
@@ -173,7 +173,7 @@ export function favoriteCsv(ids: string[], state: BoardState) {
     const e = state.entries[id];
     rows.push([
       e?.title || id.replaceAll('-', ' '),
-      `https://ultraclipart.com/art/${id}/`,
+      `https://jotclipart.com/art/${id}/`,
       e?.stage || 'idea',
       (e?.tags || []).join(', '),
       e?.note || '',

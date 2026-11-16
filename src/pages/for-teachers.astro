@@ -8,12 +8,10 @@ import TeacherSymbol from '../components/TeacherSymbol.astro';
 import TeacherText from '../components/TeacherText.astro';
 import TeacherArrow from '../components/TeacherArrow.astro';
 import AnnotatedScreen from '../components/AnnotatedScreen.astro';
-import {
-  teacherPictures as pictures,
-  teacherPaths,
-  teacherCollections,
-  teacherScreens,
-} from '../lib/teacher-resources';
+import {teacherResources} from '../lib/teacher-resources';
+import {publishedArt} from '../lib/catalog';
+import {catalogStatistics} from '../lib/catalog-statistics';
+const {teacherPictures:pictures,teacherPaths,teacherCollections,teacherScreens}=teacherResources(publishedArt,catalogStatistics);
 import { structuredData, breadcrumbs } from '../lib/structured-data';
 import '../styles/for-teachers.css';
 const heroPictures = [pictures.globe, pictures.reading, pictures.geometry];

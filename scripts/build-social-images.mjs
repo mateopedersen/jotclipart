@@ -1,4 +1,5 @@
 import { readFile, writeFile, mkdir, readdir, unlink } from 'node:fs/promises';
+import {brand} from '../src/lib/brand.mjs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createRenderer } from './social/render.mjs';
@@ -7,12 +8,14 @@ import { pages } from './social/pages.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 process.chdir(root);
-const { Canvas, sharp, source, sha, fonts, work } = await createRenderer(root);
+const { Canvas, sharp, source, sha, fonts, work, downloadReceipts } = await createRenderer(root);
 const catalog = new Map(
   JSON.parse(await readFile(join(root, 'data/art.json'), 'utf8'))
     .filter((item) => item.published && item.indexable)
     .map((item) => [item.id, item]),
 );
+const socialSourceManifest=JSON.parse(await readFile(join(root,'data/social-source-artworks.json')));
+for(const item of socialSourceManifest.items)if(item.catalogRecord)catalog.set(item.id,item.catalogRecord);
 const originals = new Map([...catalog.values()].map((item) => [`public${item.webp}`, item]));
 for (const field of ['key', 'route']) {
   if (new Set(pages.map((page) => page[field])).size !== pages.length)
@@ -36,16 +39,18 @@ const rendererSha = sha(
         'scripts/social/render.mjs',
         'scripts/social/compositions.mjs',
         'scripts/social/pages.mjs',
+        'scripts/social/sources.mjs',
+        'data/social-source-artworks.json',
       ].map((path) => readFile(join(root, path))),
     ),
   ),
 );
 for (const page of pages) {
-  const c = new Canvas(page.dark ? '#1c426f' : '#f4f8ff');
-  if (!page.dark) c.rect(564, 90, 614, 463, '#eaf2fd', 25);
+  const c = new Canvas(page.dark ? brand.ink : brand.background);
+  if (!page.dark) c.rect(564, 90, 614, 463, brand.soft, 25);
   await c.brand({ dark: page.dark });
   await c.title(page.title, page.subtitle, { dark: page.dark, size: page.titleSize || 59 });
-  await compose(c, page, catalog);
+  await compose(c, page.layout==='new'?{...page,sampleIDs:socialSourceManifest.currentSampleIDs}:page, catalog);
   for (const path of c.sources) {
     const item = originals.get(path);
     if (item) {
@@ -83,11 +88,7 @@ await writeFile(
   join(root, 'data/social-image-provenance.json'),
   JSON.stringify(provenance, null, 2) + '\n',
 );
-// Retire only old generated names; never remove manually supplied or unrelated images.
-const current = new Set(Object.values(manifest.pages).map((entry) => entry.src.split('/').at(-1)));
-for (const file of await readdir(output))
-  if (/^[a-z-]+-[a-f0-9]{12}\.png$/.test(file) && !current.has(file))
-    await unlink(join(output, file));
+// Prior generated covers remain available as explicit migration rollback evidence.
 const previewLayers = [];
 for (const [i, page] of pages.entries()) {
   const src = join(root, 'public', manifest.pages[page.route].src);
@@ -99,13 +100,14 @@ const overview = await sharp({
     width: 1520,
     height: Math.ceil(pages.length / 4) * 209,
     channels: 3,
-    background: '#d3dce8',
+    background: '#B7DCC5',
   },
 })
   .composite(previewLayers)
   .png()
   .toBuffer();
 await writeFile(join(work, 'contact-sheet.png'), overview);
+await writeFile(join(work,'original-download-receipts.json'),JSON.stringify(downloadReceipts(),null,2));
 const designOutput = join(root, 'design-assets/social');
 await mkdir(designOutput, { recursive: true });
 await writeFile(join(designOutput, 'overview.png'), overview);

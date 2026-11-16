@@ -15,7 +15,7 @@ export function contentLink(
     throw Error(`Unsupported content link destination: ${href}`);
   const external =
     url.protocol === 'https:' &&
-    !['ultraclipart.com', 'www.ultraclipart.com', 'assets.ultraclipart.com'].includes(url.hostname);
+    !['jotclipart.com', 'www.jotclipart.com', 'assets.jotclipart.com'].includes(url.hostname);
   const rel = new Set(
     (options.rel ?? '')
       .toLowerCase()
