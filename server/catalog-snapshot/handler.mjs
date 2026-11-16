@@ -4,6 +4,7 @@ import {
   readCatalogOgSource,
   applyCatalogOgMetadata,
 } from '../jotclipart/og-catalog-source.mjs';
+import { isLegacyEditorPreviewPath } from '../jotclipart/editor-preview.mjs';
 import { teacherArtworkIDs } from '../../src/lib/teacher-resources.ts';
 import { auxiliaryRoutes } from './auxiliary-routes.mjs';
 import { resolvePublicArtworkRoute } from './public-artwork-routes.mjs';
@@ -62,6 +63,7 @@ export function createCatalogHandler({
   validateHTML,
   defer,
   ogService,
+  editorPreviewService,
 }) {
   if (typeof capture !== 'function' || !bucket) throw Error('Captured catalog provider required');
   const { render: renderArtwork, css: artCSS, scripts: artScripts } = renderers.art,
@@ -95,6 +97,7 @@ export function createCatalogHandler({
       ),
       kind = paths[path],
       ogRoute = ogService ? catalogOgRoute(path) : undefined,
+      editorPreview = editorPreviewService && isLegacyEditorPreviewPath(path),
       siteDirectory = /^\/search-data\/([a-f0-9]{64})\/(?:site|navigation)\.json$/.exec(path);
     if (request.method === 'GET' || request.method === 'HEAD') {
       if (redirects[path]) {
@@ -135,7 +138,17 @@ export function createCatalogHandler({
         '/category-search/current.json',
         '/collection-feed.json',
       ].includes(path);
-    if (!art && !topic && !cluster && !xml && !kind && path !== '/' && !apiPath && !ogRoute)
+    if (
+      !art &&
+      !topic &&
+      !cluster &&
+      !xml &&
+      !kind &&
+      path !== '/' &&
+      !apiPath &&
+      !ogRoute &&
+      !editorPreview
+    )
       return null;
     if (
       request.method !== 'GET' &&
@@ -158,6 +171,16 @@ export function createCatalogHandler({
       if (privateRoot ? !allowPrivateFixture : context?.authorizationVerified !== true)
         throw Error('Catalog authorization missing');
       const capturedAt = performance.now();
+      if (editorPreview) {
+        const response = await editorPreviewService.response(request, context, { cache, defer });
+        const headers = new Headers(response.headers);
+        headers.set('x-uc-snapshot', context.rootSHA256);
+        headers.set('x-uc-revision', context.snapshot.revision);
+        return new Response(request.method === 'HEAD' ? null : response.body, {
+          status: response.status,
+          headers,
+        });
+      }
       const resultHeaders = {
         'content-type': 'text/html;charset=utf-8',
         'cache-control': 'no-cache',

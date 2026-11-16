@@ -5,6 +5,7 @@ import { resolve, join, sep } from 'node:path';
 import { createHash } from 'node:crypto';
 import { buildRoot } from './build-root.mjs';
 import { verifyOgBuild } from './og-invariants.mjs';
+import { verifyEditorPreviewBuild } from './editor-preview-invariants.mjs';
 
 const root = realpathSync(process.cwd());
 const git = (...args) => execFileSync('git', args, { encoding: 'utf8' }).trim();
@@ -53,6 +54,7 @@ for (const deps of [pkg.dependencies, pkg.devDependencies, pkg.optionalDependenc
 const code = JSON.parse(readFileSync(join(buildRoot(), 'runtime/software-report.json')));
 const pack = JSON.parse(readFileSync(join(buildRoot(), 'package-report.json')));
 const og = verifyOgBuild({ root, buildDirectory: buildRoot(), requireIndependentSources: true });
+const editorPreviews = verifyEditorPreviewBuild({ root, buildDirectory: buildRoot() });
 assert.equal(code.revision, revision);
 assert.equal(pack.sourceRevision, revision);
 let sourceFiles = 0;
@@ -96,6 +98,7 @@ const report = {
   externalCompiledInputs: 0,
   originalsCopied: 0,
   og,
+  editorPreviews,
   liveDeploymentVerified: false,
 };
 mkdirSync('reports/jotclipart-native-ci', { recursive: true });

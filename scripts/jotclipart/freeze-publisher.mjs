@@ -13,6 +13,7 @@ import { resolve, join, sep } from 'node:path';
 import { createHash } from 'node:crypto';
 import { buildRoot } from './build-root.mjs';
 import { verifyOgBuild } from './og-invariants.mjs';
+import { verifyEditorPreviewBuild } from './editor-preview-invariants.mjs';
 import {
   assertPublisherTarget,
   assertPublisherSoftware,
@@ -38,6 +39,7 @@ const origin = assertPublisherTarget(config),
     config,
   );
 const og = verifyOgBuild({ root, buildDirectory: releaseArg, requireIndependentSources: true });
+const editorPreviews = verifyEditorPreviewBuild({ root, buildDirectory: releaseArg });
 const sha = (bytes) => createHash('sha256').update(bytes).digest('hex');
 const baseline = JSON.parse(readFileSync('config/jotclipart-migration-baseline.json'));
 async function control() {
@@ -99,6 +101,7 @@ const manifest = {
   activeKey: config.activeKey,
   software: { ...publisherRuntimeIdentity(code), directory: software },
   og,
+  editorPreviews,
   catalog: {
     revision: before.renderedRevision,
     root: before.verifiedRoot,

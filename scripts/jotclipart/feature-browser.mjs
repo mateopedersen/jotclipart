@@ -58,6 +58,7 @@ const report = {
   pageErrors: [],
   oldHostRequests: [],
   unexpectedWrites: [],
+  readOnlyCatalogPOSTs: {},
   actualAIInference: false,
   actualPublicShareMutation: false,
   ownerPrivateDataRead: false,
@@ -95,7 +96,37 @@ async function context(options = {}) {
       report.oldHostRequests.push(url.origin + url.pathname);
       return route.abort();
     }
-    if (request.method() !== 'GET' && request.method() !== 'HEAD' && url.origin === origin) {
+    let readOnlyCatalogPOST = false;
+    if (
+      request.method() === 'POST' &&
+      url.origin === origin &&
+      url.pathname === '/catalog-search.json' &&
+      !url.search
+    ) {
+      // The native catalog uses bounded POST queries for read-only snapshot
+      // lookup/search. This does not authorize AI, shares or other mutations.
+      try {
+        const bytes = request.postData() ?? '';
+        if (Buffer.byteLength(bytes) <= 65536) {
+          const body = JSON.parse(bytes);
+          readOnlyCatalogPOST =
+            body.schema === 1 &&
+            body.snapshot === pin.snapshotRoot &&
+            ['search', 'suggest', 'items', 'site', 'studio'].includes(body.operation);
+          if (readOnlyCatalogPOST)
+            report.readOnlyCatalogPOSTs[body.operation] =
+              (report.readOnlyCatalogPOSTs[body.operation] ?? 0) + 1;
+        }
+      } catch {
+        /* Invalid or unknown POSTs remain blocked below. */
+      }
+    }
+    if (
+      request.method() !== 'GET' &&
+      request.method() !== 'HEAD' &&
+      url.origin === origin &&
+      !readOnlyCatalogPOST
+    ) {
       report.unexpectedWrites.push({
         method: request.method(),
         path: url.pathname,

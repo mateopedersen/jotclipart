@@ -5,6 +5,7 @@ import { resolve } from 'node:path';
 import { buildRoot } from './build-root.mjs';
 import { acquireAccountWriter } from '../delivery/account-lock.mjs';
 import { verifyOgBuild } from './og-invariants.mjs';
+import { verifyEditorPreviewBuild } from './editor-preview-invariants.mjs';
 
 const environment = process.argv[2];
 if (!['preview', 'production'].includes(environment))
@@ -35,6 +36,7 @@ for (const asset of report.ogWorker.outputFiles) {
     throw Error('OG worker changed after build');
 }
 verifyOgBuild({ buildDirectory: buildRoot(), requireIndependentSources: true });
+verifyEditorPreviewBuild({ buildDirectory: buildRoot() });
 mkdirSync('work/jotclipart-deployment', { recursive: true });
 const releaseAccountWriter = acquireAccountWriter();
 try {

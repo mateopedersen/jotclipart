@@ -14,6 +14,7 @@ import { createHash } from 'node:crypto';
 import { gzipSync } from 'node:zlib';
 import { buildRoot as selectBuildRoot } from './build-root.mjs';
 import { buildOgWorker } from './og-worker-build.mjs';
+import { buildEditorPreviewIndex } from './editor-preview-index.mjs';
 
 // The established Astro native-template / signed R2 catalog architecture.
 // No catalog prerender, media duplication, old deployment or old checkout input.
@@ -26,6 +27,7 @@ const sha = (b) => createHash('sha256').update(b).digest('hex');
 run('scripts/build-site-icons.mjs');
 run('scripts/verify-social-images.mjs');
 const ogWorker = await buildOgWorker({ root, buildRoot });
+const editorPreviewIndex = await buildEditorPreviewIndex({ root, buildRoot });
 run('scripts/catalog-snapshot/compile-renderers.mjs', buildRoot);
 run('scripts/catalog-snapshot/build-runtime.mjs', buildRoot, 'config/catalog-snapshot-public.json');
 const code = JSON.parse(readFileSync(join(buildRoot, 'runtime/software-report.json')));
@@ -67,6 +69,7 @@ for (const file of tracked) {
   copy(file, file.slice(7));
 }
 for (const a of code.clientAssets) copy(a.file, a.url.replace(/^\//, ''), a);
+for (const a of editorPreviewIndex.outputs) copy(a.file, a.path.replace(/^\//, ''), a);
 copy(join(buildRoot, 'runtime/worker.mjs'), '_worker.js', {
   sha256: code.workerSHA256,
   bytes: code.workerBytes,
@@ -77,7 +80,7 @@ writeFileSync(
 );
 writeFileSync(
   join(out, '_headers'),
-  '/*\n  X-Content-Type-Options: nosniff\n/__ssr-client/*\n  Cache-Control: public, max-age=31536000, immutable\n',
+  '/*\n  X-Content-Type-Options: nosniff\n/__ssr-client/*\n  Cache-Control: public, max-age=31536000, immutable\n/__editor-preview-index/*\n  Cache-Control: public, max-age=31536000, immutable\n  X-Robots-Tag: noindex\n',
 );
 writeFileSync(
   join(out, '404.html'),
@@ -105,6 +108,13 @@ if (workerGzipBytes > 10 * 1024 * 1024)
   throw Error('Workers Paid compressed script limit exceeded');
 const report = {
   status: 'BUILT_NOT_DEPLOYED',
+  editorPreviewIndex: {
+    rootSHA256: editorPreviewIndex.rootSHA256,
+    records: editorPreviewIndex.records,
+    shards: editorPreviewIndex.outputs.length,
+    previewBodiesCopied: 0,
+    originalsCopied: 0,
+  },
   ogWorker: {
     name: ogWorker.name,
     identity: ogWorker.identity,

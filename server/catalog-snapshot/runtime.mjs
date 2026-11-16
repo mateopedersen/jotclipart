@@ -1,4 +1,5 @@
 import { createCatalogOgService, fetchOgRenderService } from '../jotclipart/og-runtime.mjs';
+import { createLegacyEditorPreviewService } from '../jotclipart/editor-preview.mjs';
 // Production adapter: one authenticated snapshot, budget, cache and fallback.
 import { captureProductionSnapshot } from './signed-production-snapshot.mjs';
 import { requestBucket } from './request-bucket.mjs';
@@ -15,6 +16,7 @@ export function createSnapshotRuntime({
   policy,
   redirects = {},
   ogIdentity,
+  editorPreviewIndex,
 }) {
   if (
     !verifier?.publicKey ||
@@ -39,6 +41,13 @@ export function createSnapshotRuntime({
           ? createCatalogOgService({
               identity: ogIdentity,
               render: (source) => fetchOgRenderService(env.OG_RENDERER, source, ogIdentity),
+            })
+          : undefined,
+        editorPreviewService: editorPreviewIndex
+          ? createLegacyEditorPreviewService({
+              assets: env.ASSETS,
+              bucket: env.CATALOG_PAGES,
+              expectedRootSHA256: editorPreviewIndex,
             })
           : undefined,
         rendererSHA256: verifier.abiSHA256,

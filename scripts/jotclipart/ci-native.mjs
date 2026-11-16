@@ -68,6 +68,10 @@ try {
       command('source-catalog-policy', ['scripts/seo/check-catalog.mjs']);
       command('signed-social-source-policy', ['scripts/verify-social-images.mjs']);
       command('exact-catalog-json-types', ['scripts/jotclipart/catalog-json-types.mjs', '--check']);
+      command('source-bound-editor-preview-index', [
+        'scripts/jotclipart/editor-preview-index.mjs',
+        '--check',
+      ]);
       command('astro-typescript-diagnostics', [
         'node_modules/@astrojs/check/bin/astro-check.js',
         '--root',
@@ -135,6 +139,9 @@ try {
       'jotclipart-og-source',
       'jotclipart-og-package',
       'jotclipart-catalog-json-types',
+      'jotclipart-preview-policy',
+      'jotclipart-editor-preview',
+      'jotclipart-editor-preview-index',
       'indexnow-release',
       'indexnow-notify',
       'jotclipart-http-audit',
