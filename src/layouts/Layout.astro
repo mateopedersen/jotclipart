@@ -14,6 +14,7 @@ import '../styles/site-header.css';
 import '../styles/site-display-restoration.css';
 import '../styles/site-search.css';
 import HeaderIllustration from '../components/HeaderIllustration.astro';
+import SurpriseMark from '../components/SurpriseMark.astro';
 import BrowsePreview from '../components/BrowsePreview.astro';
 import { cuteSurpriseIndex } from '../lib/surprise-catalog';
 import { SURPRISE_INDEX_VERSION } from '../lib/cute-discovery';
@@ -373,7 +374,7 @@ const releaseRevision = /^[a-f0-9]{40}$/.test(import.meta.env.PUBLIC_RELEASE_REV
             data-surprise-art={JSON.stringify(surprisePicks)}
             data-surprise-source={`/surprise-picks.json?v=${SURPRISE_INDEX_VERSION}-${import.meta.env.PUBLIC_RELEASE_REVISION || 'local'}`}
           >
-            <HeaderIllustration kind="surprise" instance="header-art-desktop" />
+            <SurpriseMark id="desktop" />
             <span>
               <strong>Surprise me</strong> <span>A little reason to smile</span>
               <span class="sr-only"> Open a random illustration</span>
@@ -422,7 +423,7 @@ const releaseRevision = /^[a-f0-9]{40}$/.test(import.meta.env.PUBLIC_RELEASE_REV
           data-surprise-art=""
           data-surprise-source={`/surprise-picks.json?v=${SURPRISE_INDEX_VERSION}-${import.meta.env.PUBLIC_RELEASE_REVISION || 'local'}`}
         >
-          <HeaderIllustration kind="surprise" />
+          <SurpriseMark id="mobile" />
           <span>
             <strong>Surprise me</strong> <span>A little reason to smile</span>
             <span class="sr-only"> Open a random illustration</span>

@@ -15,15 +15,15 @@ export function assetsRobotsPlan(body) {
   // separate crawler overrides, external sitemap, or accidental Disallow survives.
   if (
     JSON.stringify(rules) !==
-    JSON.stringify(['User-agent: *', 'Allow: /', 'Sitemap: https://ultraclipart.com/sitemap.xml'])
+    JSON.stringify(['User-agent: *', 'Allow: /', 'Sitemap: https://jotclipart.com/sitemap.xml'])
   )
     throw new Error('Assets robots policy must allow all crawlers and use the production sitemap');
   return {
     schema: 1,
     mode: 'local-preparation-only',
-    targetUrl: 'https://assets.ultraclipart.com/robots.txt',
+    targetUrl: 'https://assets.jotclipart.com/robots.txt',
     expectedBucket: 'ultraclipart-media',
-    verifyBeforeWrite: 'Confirm the assets.ultraclipart.com custom domain belongs to this bucket.',
+    verifyBeforeWrite: 'Confirm the assets.jotclipart.com custom domain belongs to this bucket.',
     objectKey: 'robots.txt',
     contentType: 'text/plain; charset=utf-8',
     cacheControl: 'public, max-age=300, must-revalidate',
@@ -31,15 +31,15 @@ export function assetsRobotsPlan(body) {
     sha256: createHash('sha256').update(body).digest('hex'),
     source: 'config/assets/robots.txt',
     discovery: {
-      directory: 'https://ultraclipart.com/library-index/',
-      sitemapIndex: 'https://ultraclipart.com/sitemap.xml',
-      pages: 'https://ultraclipart.com/sitemap-pages.xml',
-      images: 'https://ultraclipart.com/sitemap-images.xml',
+      directory: 'https://jotclipart.com/library-index/',
+      sitemapIndex: 'https://jotclipart.com/sitemap.xml',
+      pages: 'https://jotclipart.com/sitemap-pages.xml',
+      images: 'https://jotclipart.com/sitemap-images.xml',
       updates: 'Generated from the published catalog in every normal site build.',
       note: 'The HTML directory is linked by the page sitemap; Sitemap directives point to XML, never HTML.',
     },
     deployment: 'Separate R2 root object; a Pages deployment does not publish this file.',
-    purgeAfterAuthorizedPublication: ['https://assets.ultraclipart.com/robots.txt'],
+    purgeAfterAuthorizedPublication: ['https://assets.jotclipart.com/robots.txt'],
     verifyAfterPublication: [
       'HTTP 200',
       'Exact UTF-8 body and SHA256',

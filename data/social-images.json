@@ -131,13 +131,13 @@
       "bytes": 28475
     },
     "/faq/": {
-      "src": "/og/faq-3339b595599d.png",
+      "src": "/og/faq-3b3b08d46efe.png",
       "alt": "JotClipart FAQ with a question mark and illustrated Image, PDF and Editing topics.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "3339b595599d9d56cf8ad0b8775d03f742f49a335f893fae7a719dafc4059742",
-      "bytes": 28751
+      "sha256": "3b3b08d46efe3b849efb2abbe3bb0f5c63c71a4a868e94742a296378de320dbc",
+      "bytes": 29704
     },
     "/guides/make-a-classroom-label/": {
       "src": "/og/classroom-label-fa07ccd6adf9.png",
@@ -158,13 +158,13 @@
       "bytes": 27250
     },
     "/guides/webp-pdf-and-editable-projects/": {
-      "src": "/og/download-formats-570133124951.png",
+      "src": "/og/download-formats-70a57586f05d.png",
       "alt": "Download format guide showing distinct WebP, PDF and editable Project file illustrations.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "57013312495144999b4953a3b47f83ef2b9340c5341b13b54a7c1afb3af9b6f0",
-      "bytes": 28294
+      "sha256": "70a57586f05de6f612be40f5f7fbed59cb74acc1b265887b4d51db52893380de",
+      "bytes": 30288
     },
     "/license/": {
       "src": "/og/license-adc98f85e135.png",
@@ -203,13 +203,13 @@
       "bytes": 22920
     },
     "/copyright/": {
-      "src": "/og/copyright-ebbad60a6791.png",
+      "src": "/og/copyright-ec887b59dc18.png",
       "alt": "Copyright and corrections with a copyright symbol, document and artwork reference.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "ebbad60a6791cb79ee275874e45c7cecf69a6b2c3f69a218b2a79f7388e3a601",
-      "bytes": 30140
+      "sha256": "ec887b59dc1862eb3494dcfb2d688fb3b733cf754e6616e60fcda328aeb22b9a",
+      "bytes": 30100
     },
     "/accessibility/": {
       "src": "/og/accessibility-c85f5d494d02.png",
@@ -221,13 +221,13 @@
       "bytes": 23257
     },
     "/editorial-process/": {
-      "src": "/og/creative-process-92054af79ca3.png",
+      "src": "/og/creative-process-681853dfa684.png",
       "alt": "JotClipart editorial process illustrated by a subject brief, review tools and a publication document.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "92054af79ca3690df2a7ff1f320e89719df4dab8a150e916a14be7047bb125da",
-      "bytes": 30292
+      "sha256": "681853dfa684c1cf78974cf8dfb050718b514bcafa0534746a3b523a5e4e979a",
+      "bytes": 31267
     },
     "/404/": {
       "src": "/og/not-found-4a3864cd4ff9.png",

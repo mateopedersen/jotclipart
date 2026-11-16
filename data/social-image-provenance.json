@@ -1296,7 +1296,7 @@
     "faq": {
       "route": "/faq/",
       "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
-      "outputSha256": "3339b595599d9d56cf8ad0b8775d03f742f49a335f893fae7a719dafc4059742",
+      "outputSha256": "3b3b08d46efe3b849efb2abbe3bb0f5c63c71a4a868e94742a296378de320dbc",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -1304,15 +1304,15 @@
         },
         {
           "path": "public/illustrations/actions/document.svg",
-          "sha256": "01d2171adebd822ed40e11b04ccf9d69b3b5d47a8fd1efca613d3d4bdfd94177"
+          "sha256": "3007d67618be2c74825c041c55f3043ea76ea41fff922647070c678c6d907319"
         },
         {
           "path": "public/illustrations/actions/edit.svg",
-          "sha256": "b411a393139c0b9a0496555f3aaa3377143c49a65a27fd51415d5d93c1ba2c0f"
+          "sha256": "a0acd700b9cb8ac61866ef5e1d626aebce7c377f299b9cbc53bd44bf296bc655"
         },
         {
           "path": "public/illustrations/actions/image.svg",
-          "sha256": "292c6701b4f752365636acf261ca844d602e035f0389196e15901e3ed59c1eb0"
+          "sha256": "03217645497f03d17283b57286beb84f6e5236b64b63330f61653db5597bfbff"
         }
       ],
       "text": [
@@ -1551,7 +1551,7 @@
     "download-formats": {
       "route": "/guides/webp-pdf-and-editable-projects/",
       "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
-      "outputSha256": "57013312495144999b4953a3b47f83ef2b9340c5341b13b54a7c1afb3af9b6f0",
+      "outputSha256": "70a57586f05de6f612be40f5f7fbed59cb74acc1b265887b4d51db52893380de",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -1559,15 +1559,15 @@
         },
         {
           "path": "public/illustrations/actions/document.svg",
-          "sha256": "01d2171adebd822ed40e11b04ccf9d69b3b5d47a8fd1efca613d3d4bdfd94177"
+          "sha256": "3007d67618be2c74825c041c55f3043ea76ea41fff922647070c678c6d907319"
         },
         {
           "path": "public/illustrations/actions/edit.svg",
-          "sha256": "b411a393139c0b9a0496555f3aaa3377143c49a65a27fd51415d5d93c1ba2c0f"
+          "sha256": "a0acd700b9cb8ac61866ef5e1d626aebce7c377f299b9cbc53bd44bf296bc655"
         },
         {
           "path": "public/illustrations/actions/image.svg",
-          "sha256": "292c6701b4f752365636acf261ca844d602e035f0389196e15901e3ed59c1eb0"
+          "sha256": "03217645497f03d17283b57286beb84f6e5236b64b63330f61653db5597bfbff"
         }
       ],
       "text": [
@@ -1976,7 +1976,7 @@
     "copyright": {
       "route": "/copyright/",
       "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
-      "outputSha256": "ebbad60a6791cb79ee275874e45c7cecf69a6b2c3f69a218b2a79f7388e3a601",
+      "outputSha256": "ec887b59dc1862eb3494dcfb2d688fb3b733cf754e6616e60fcda328aeb22b9a",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -1988,7 +1988,7 @@
         },
         {
           "path": "public/illustrations/actions/document.svg",
-          "sha256": "01d2171adebd822ed40e11b04ccf9d69b3b5d47a8fd1efca613d3d4bdfd94177"
+          "sha256": "3007d67618be2c74825c041c55f3043ea76ea41fff922647070c678c6d907319"
         }
       ],
       "text": [
@@ -2122,7 +2122,7 @@
     "creative-process": {
       "route": "/editorial-process/",
       "rendererSha": "4c8cdbf4a09c7291030eaf0835d803cda8bb16ca528cbd770c0a952847125581",
-      "outputSha256": "92054af79ca3690df2a7ff1f320e89719df4dab8a150e916a14be7047bb125da",
+      "outputSha256": "681853dfa684c1cf78974cf8dfb050718b514bcafa0534746a3b523a5e4e979a",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -2134,11 +2134,11 @@
         },
         {
           "path": "public/illustrations/actions/document.svg",
-          "sha256": "01d2171adebd822ed40e11b04ccf9d69b3b5d47a8fd1efca613d3d4bdfd94177"
+          "sha256": "3007d67618be2c74825c041c55f3043ea76ea41fff922647070c678c6d907319"
         },
         {
           "path": "public/illustrations/actions/edit.svg",
-          "sha256": "b411a393139c0b9a0496555f3aaa3377143c49a65a27fd51415d5d93c1ba2c0f"
+          "sha256": "a0acd700b9cb8ac61866ef5e1d626aebce7c377f299b9cbc53bd44bf296bc655"
         }
       ],
       "text": [
