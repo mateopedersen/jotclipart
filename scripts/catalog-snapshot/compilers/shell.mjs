@@ -1,5 +1,5 @@
-import {auxiliaryTemplates} from '../../../server/catalog-snapshot/auxiliary-routes.mjs';
-import {compileUIImages} from './ui-images.mjs';
+import { auxiliaryTemplates } from '../../../server/catalog-snapshot/auxiliary-routes.mjs';
+import { compileUIImages } from './ui-images.mjs';
 import { clientWorkers } from './client-workers.mjs';
 // Private local SSR experiment. Does not read credentials, upload or activate.
 import { createRequire } from 'node:module';
@@ -70,17 +70,29 @@ for (const match of readFileSync(
   });
 }
 if (screenProofs.length !== 3) throw Error('Complete Studio screenshot crops required');
-const uiImages=await compileUIImages(root,here,revision);
-const {guideLessons}=await import(pathToFileURL(join(root,'src/lib/guide-walkthroughs.ts')));
-for(const screen of guideLessons.flatMap(lesson=>lesson.screens)){
- const crop=screen.crop??[0,0,screen.width,screen.height], key=screen.src+'|'+crop.join(',');
- if(screenUrls[key])continue;
- const url=await screenPreview(screen.src,crop),bytes=readFileSync(join(root,'public',url));
- screenUrls[key]=url;
- screenProofs.push({source:screen.src,sourceSHA256:createHash('sha256').update(readFileSync(join(root,'public',screen.src))).digest('hex'),crop,path:join(root,'public',url),url,sha256:createHash('sha256').update(bytes).digest('hex'),bytes:bytes.length});
+const uiImages = await compileUIImages(root, here, revision);
+const { guideLessons } = await import(pathToFileURL(join(root, 'src/lib/guide-walkthroughs.ts')));
+for (const screen of guideLessons.flatMap((lesson) => lesson.screens)) {
+  const crop = screen.crop ?? [0, 0, screen.width, screen.height],
+    key = screen.src + '|' + crop.join(',');
+  if (screenUrls[key]) continue;
+  const url = await screenPreview(screen.src, crop),
+    bytes = readFileSync(join(root, 'public', url));
+  screenUrls[key] = url;
+  screenProofs.push({
+    source: screen.src,
+    sourceSHA256: createHash('sha256')
+      .update(readFileSync(join(root, 'public', screen.src)))
+      .digest('hex'),
+    crop,
+    path: join(root, 'public', url),
+    url,
+    sha256: createHash('sha256').update(bytes).digest('hex'),
+    bytes: bytes.length,
+  });
 }
 const aliases = new Map([
-  [join(root,'src/lib/ui-preview.ts'),uiImages.alias],
+  [join(root, 'src/lib/ui-preview.ts'), uiImages.alias],
   [
     join(root, 'src/lib/screen-preview.ts'),
     `const sources=${JSON.stringify(screenUrls)};export async function screenPreview(source,crop){const url=sources[source+'|'+crop.join(',')];if(!url)throw Error('Unbound Studio screenshot');return url;}`,
@@ -183,7 +195,11 @@ const plugin = {
       loader: 'ts',
       resolveDir: dirname(args.path),
     }));
-    builder.onLoad({filter:/\.webp$/},args=>{const assetKey=uiImages.sources.get(args.path);if(!assetKey)throw Error('Unreviewed interface source');return {contents:'export default '+JSON.stringify({assetKey}),loader:'js'}});
+    builder.onLoad({ filter: /\.webp$/ }, (args) => {
+      const assetKey = uiImages.sources.get(args.path);
+      if (!assetKey) throw Error('Unreviewed interface source');
+      return { contents: 'export default ' + JSON.stringify({ assetKey }), loader: 'js' };
+    });
     builder.onLoad({ filter: /\.astro$/ }, async (args) => {
       const transformed = await compiler.transform(readFileSync(args.path, 'utf8'), {
         filename: args.path,
@@ -223,7 +239,7 @@ const plugin = {
   },
 };
 const css = new Map();
-writeFileSync(join(out,'script-page-templates.json'),JSON.stringify(pages));
+writeFileSync(join(out, 'script-page-templates.json'), JSON.stringify(pages));
 const entries = {};
 for (const [name, page] of Object.entries(pages)) {
   const entry = join(here, name + '-entry.mjs');
@@ -344,7 +360,7 @@ const report = {
   astroComponents: [...css.keys()].length,
   compilerDiagnostics: diagnostics,
   screenProofs,
-  uiAssets:uiImages.assets,
+  uiAssets: uiImages.assets,
   fullCatalogEmbedded: false,
   inputNames,
 };

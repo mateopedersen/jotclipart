@@ -4,7 +4,9 @@ import { presentationState } from './brand-presentation.mjs';
 /** One isolated state store per compiled renderer, including enumerable object views. */
 export function createScopedContext() {
   class PresentationStorage extends AsyncLocalStorage {
-    run(state, callback, ...args) { return super.run(presentationState(state), callback, ...args); }
+    run(state, callback, ...args) {
+      return super.run(presentationState(state), callback, ...args);
+    }
   }
   const requestState = new PresentationStorage();
   function current() {
@@ -13,11 +15,18 @@ export function createScopedContext() {
     return value;
   }
   function scoped(key, target = {}) {
-    if (typeof key !== 'string' || !key || !target || typeof target !== 'object' ||
-        !Reflect.isExtensible(target) || Reflect.ownKeys(target).some(property => {
-          const d=Reflect.getOwnPropertyDescriptor(target,property);
-          return !d.configurable && !(Array.isArray(target) && property==='length' && d.writable);
-        })) throw Error('An extensible scoped view target is required');
+    if (
+      typeof key !== 'string' ||
+      !key ||
+      !target ||
+      typeof target !== 'object' ||
+      !Reflect.isExtensible(target) ||
+      Reflect.ownKeys(target).some((property) => {
+        const d = Reflect.getOwnPropertyDescriptor(target, property);
+        return !d.configurable && !(Array.isArray(target) && property === 'length' && d.writable);
+      })
+    )
+      throw Error('An extensible scoped view target is required');
     const object = () => {
       const value = current()[key];
       if (!value || typeof value !== 'object' || Array.isArray(value) !== Array.isArray(target))
@@ -30,10 +39,15 @@ export function createScopedContext() {
         const result = Reflect.get(value, property);
         return typeof result === 'function' ? result.bind(value) : result;
       },
-      has(_, property) { return Reflect.has(object(), property); },
-      ownKeys() { return Reflect.ownKeys(object()); },
+      has(_, property) {
+        return Reflect.has(object(), property);
+      },
+      ownKeys() {
+        return Reflect.ownKeys(object());
+      },
       getOwnPropertyDescriptor(_, property) {
-        const value = object(), fixed = Reflect.getOwnPropertyDescriptor(target, property);
+        const value = object(),
+          fixed = Reflect.getOwnPropertyDescriptor(target, property);
         // Array length is non-configurable on the proxy target. Preserve its
         // invariant while forwarding the current array's readable length.
         if (fixed && !fixed.configurable) {
@@ -44,13 +58,25 @@ export function createScopedContext() {
         const descriptor = Reflect.getOwnPropertyDescriptor(value, property);
         return descriptor ? { ...descriptor, configurable: true } : undefined;
       },
-      getPrototypeOf() { return Reflect.getPrototypeOf(object()); },
+      getPrototypeOf() {
+        return Reflect.getPrototypeOf(object());
+      },
       // View reflection must not mutate or freeze the empty proxy target.
-      set() { return false; },
-      defineProperty() { return false; },
-      deleteProperty() { return false; },
-      setPrototypeOf() { return false; },
-      preventExtensions() { return false; },
+      set() {
+        return false;
+      },
+      defineProperty() {
+        return false;
+      },
+      deleteProperty() {
+        return false;
+      },
+      setPrototypeOf() {
+        return false;
+      },
+      preventExtensions() {
+        return false;
+      },
     });
   }
   return { requestState, current, scoped };

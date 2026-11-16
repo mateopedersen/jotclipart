@@ -52,13 +52,13 @@
   line-gap-override: 0%;
 }
 :root {
-  --brand-primary: #52B788;
-  --brand-action: #216E4E;
+  --brand-primary: #52b788;
+  --brand-action: #216e4e;
   --brand-ink: #123524;
-  --brand-soft: #D8F3DC;
-  --brand-page: #F4FAF6;
-  --brand-border: #B7DCC5;
-  --brand-surface: #FFFFFF;
+  --brand-soft: #d8f3dc;
+  --brand-page: #f4faf6;
+  --brand-border: #b7dcc5;
+  --brand-surface: #ffffff;
   --font-ui: 'UltraClipart Sans', Arial, sans-serif;
   font-family: 'Avenir Next', Avenir, 'UltraClipart Sans', 'UltraClipart Fallback', sans-serif;
   color: var(--brand-ink);

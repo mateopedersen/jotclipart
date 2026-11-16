@@ -1,5 +1,5 @@
 import { displayTitle, displayCatalogTitle } from '../lib/display-title.ts';
-import {adoptCatalogSnapshot} from '../lib/catalog-snapshot-client';
+import { adoptCatalogSnapshot } from '../lib/catalog-snapshot-client';
 import { defaults, normalizeQuery, parseState, stateParams, type SearchState } from '../lib/search';
 import { SearchRepository, type RemoteResults } from '../lib/search-remote';
 import { LatestRequest } from '../lib/search-request';
@@ -62,7 +62,9 @@ export function initSearch() {
         kind.className = 'site-search-kind';
         kind.textContent = searchKindLabels[entry.kind];
         const title = document.createElement('strong');
-        title.textContent = (['topic','collection'].includes(entry.kind) ? displayCatalogTitle : displayTitle)(entry.title);
+        title.textContent = (
+          ['topic', 'collection'].includes(entry.kind) ? displayCatalogTitle : displayTitle
+        )(entry.title);
         const description = document.createElement('p');
         description.textContent = entry.description;
         link.append(kind, title, description);
@@ -116,12 +118,18 @@ export function initSearch() {
           try {
             if (!pinned && pageRoot) {
               const root = pageRoot;
-              return { entries: await repository.sourceDirectory(root, signal), siteError: false, version: root };
+              return {
+                entries: await repository.sourceDirectory(root, signal),
+                siteError: false,
+                version: root,
+              };
             }
-            const manifest = pinned ?? await repository.manifest(signal);
+            const manifest = pinned ?? (await repository.manifest(signal));
             const entries = await repository.siteEntries(manifest, signal);
             return { entries, siteError: false, version: manifest.version };
-          } catch { return { entries: null, siteError: true, version: '' }; }
+          } catch {
+            return { entries: null, siteError: true, version: '' };
+          }
         };
         const sitePromise = loadSite();
         const result = pageRoot

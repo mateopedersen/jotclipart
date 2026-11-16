@@ -1046,9 +1046,7 @@ function init(root: HTMLElement) {
         trigger: q<HTMLButtonElement>('[data-action=share]'),
         title: creator ? 'My JotClipart creation' : 'My edited JotClipart artwork',
         blob,
-        sourceUrl: creator
-          ? 'https://jotclipart.com/create/'
-          : `https://jotclipart.com/art/${id}/`,
+        sourceUrl: creator ? 'https://jotclipart.com/create/' : `https://jotclipart.com/art/${id}/`,
       });
       status(
         `Share image prepared at ${width} × ${height} pixels. Your editable project stays on this device.`,

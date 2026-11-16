@@ -1,4 +1,4 @@
-import {brand} from '../../src/lib/brand.mjs';
+import { brand } from '../../src/lib/brand.mjs';
 const A = {
   fox: 'baby-fennec-fox-watercolor-clipart',
   butterfly: 'blue-morpho-butterfly-flying-illustration-clipart',
@@ -19,7 +19,13 @@ const A = {
   volleyball: 'classic-white-volleyball-realistic-clipart',
   lemon: 'lemon-whole-and-cut-fruit-realistic-clipart',
 };
-const P = { ink: brand.ink, blue: brand.action, line: '#B7DCC5', pale: brand.soft, muted: brand.action };
+const P = {
+  ink: brand.ink,
+  blue: brand.action,
+  line: '#B7DCC5',
+  pale: brand.soft,
+  muted: brand.action,
+};
 export async function compose(c, page, catalog) {
   const art = (name) => {
     const id = A[name] || name;
@@ -263,7 +269,13 @@ export async function compose(c, page, catalog) {
         color: P.muted,
         maxWidth: 254,
       });
-      for (const [i, color] of [brand.action, brand.primary, brand.soft, '#f2cf94', '#d9899c'].entries())
+      for (const [i, color] of [
+        brand.action,
+        brand.primary,
+        brand.soft,
+        '#f2cf94',
+        '#d9899c',
+      ].entries())
         c.rect(791 + i * 31, 429, 23, 7, color, 3);
       // Small original-art cards surround the brand, rather than portraits.
       c.svg('<g transform="rotate(-9 671 345)">');
@@ -284,8 +296,14 @@ export async function compose(c, page, catalog) {
       break;
     }
     case 'new': {
-      if(!Array.isArray(page.sampleIDs)||page.sampleIDs.length!==6)throw Error('Six signed-recent social sources required');
-      const selected=page.sampleIDs.map(id=>{const item=catalog.get(id);if(!item?.published||!item.indexable)throw Error('Missing signed-recent social artwork');return item;});
+      if (!Array.isArray(page.sampleIDs) || page.sampleIDs.length !== 6)
+        throw Error('Six signed-recent social sources required');
+      const selected = page.sampleIDs.map((id) => {
+        const item = catalog.get(id);
+        if (!item?.published || !item.indexable)
+          throw Error('Missing signed-recent social artwork');
+        return item;
+      });
       for (let i = 0; i < selected.length; i++) {
         const x = 595 + (i % 3) * 190,
           y = 127 + Math.floor(i / 3) * 210;

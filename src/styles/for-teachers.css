@@ -782,7 +782,13 @@
   height: 22px;
   width: 75px;
   border-bottom: 4px solid var(--brand-action);
-  background: linear-gradient(90deg, transparent 29%, #adb3bb 29%, var(--brand-action) 70%, transparent 70%);
+  background: linear-gradient(
+    90deg,
+    transparent 29%,
+    #adb3bb 29%,
+    var(--brand-action) 70%,
+    transparent 70%
+  );
 }
 .tc-example-copy {
   display: flex;

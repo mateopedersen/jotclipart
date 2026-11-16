@@ -278,8 +278,7 @@ export async function openShare(options: ShareOptions): Promise<void> {
   });
   q('.uc-share-copy-caption').addEventListener(
     'click',
-    () =>
-      void copy(`${text.value}\n${url || source}`, 'Caption and JotClipart link copied.', text),
+    () => void copy(`${text.value}\n${url || source}`, 'Caption and JotClipart link copied.', text),
   );
   q('.uc-share-download').addEventListener('click', () => {
     if (file) {
@@ -391,8 +390,7 @@ export async function openShare(options: ShareOptions): Promise<void> {
             consent.disabled = false;
             publishButton.disabled = true;
             remoteImage = undefined;
-            q('.uc-share-origin').textContent =
-              'Made with JotClipart · private until you publish';
+            q('.uc-share-origin').textContent = 'Made with JotClipart · private until you publish';
           }
           renderOwned();
           status(

@@ -110,7 +110,12 @@
   border: 1px solid var(--brand-soft);
   border-radius: 18px;
   background-color: white;
-  background-image: conic-gradient(var(--brand-soft) 25%, transparent 0 50%, var(--brand-soft) 0 75%, transparent 0);
+  background-image: conic-gradient(
+    var(--brand-soft) 25%,
+    transparent 0 50%,
+    var(--brand-soft) 0 75%,
+    transparent 0
+  );
   background-size: 20px 20px;
   display: grid;
   place-items: center;

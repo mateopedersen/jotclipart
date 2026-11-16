@@ -56,9 +56,7 @@ export function initOriginalImageLoading(
   const valid = (image: HTMLImageElement) => {
     try {
       const url = new URL(image.getAttribute('src') ?? '', location.href);
-      return url.protocol === 'https:' && url.hostname === 'assets.jotclipart.com'
-        ? url.href
-        : '';
+      return url.protocol === 'https:' && url.hostname === 'assets.jotclipart.com' ? url.href : '';
     } catch {
       return '';
     }

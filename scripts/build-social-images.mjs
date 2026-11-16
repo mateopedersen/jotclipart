@@ -1,5 +1,5 @@
 import { readFile, writeFile, mkdir, readdir, unlink } from 'node:fs/promises';
-import {brand} from '../src/lib/brand.mjs';
+import { brand } from '../src/lib/brand.mjs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createRenderer } from './social/render.mjs';
@@ -14,8 +14,11 @@ const catalog = new Map(
     .filter((item) => item.published && item.indexable)
     .map((item) => [item.id, item]),
 );
-const socialSourceManifest=JSON.parse(await readFile(join(root,'data/social-source-artworks.json')));
-for(const item of socialSourceManifest.items)if(item.catalogRecord)catalog.set(item.id,item.catalogRecord);
+const socialSourceManifest = JSON.parse(
+  await readFile(join(root, 'data/social-source-artworks.json')),
+);
+for (const item of socialSourceManifest.items)
+  if (item.catalogRecord) catalog.set(item.id, item.catalogRecord);
 const originals = new Map([...catalog.values()].map((item) => [`public${item.webp}`, item]));
 for (const field of ['key', 'route']) {
   if (new Set(pages.map((page) => page[field])).size !== pages.length)
@@ -50,7 +53,11 @@ for (const page of pages) {
   if (!page.dark) c.rect(564, 90, 614, 463, brand.soft, 25);
   await c.brand({ dark: page.dark });
   await c.title(page.title, page.subtitle, { dark: page.dark, size: page.titleSize || 59 });
-  await compose(c, page.layout==='new'?{...page,sampleIDs:socialSourceManifest.currentSampleIDs}:page, catalog);
+  await compose(
+    c,
+    page.layout === 'new' ? { ...page, sampleIDs: socialSourceManifest.currentSampleIDs } : page,
+    catalog,
+  );
   for (const path of c.sources) {
     const item = originals.get(path);
     if (item) {
@@ -107,7 +114,10 @@ const overview = await sharp({
   .png()
   .toBuffer();
 await writeFile(join(work, 'contact-sheet.png'), overview);
-await writeFile(join(work,'original-download-receipts.json'),JSON.stringify(downloadReceipts(),null,2));
+await writeFile(
+  join(work, 'original-download-receipts.json'),
+  JSON.stringify(downloadReceipts(), null, 2),
+);
 const designOutput = join(root, 'design-assets/social');
 await mkdir(designOutput, { recursive: true });
 await writeFile(join(designOutput, 'overview.png'), overview);

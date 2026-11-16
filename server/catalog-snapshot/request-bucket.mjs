@@ -1,7 +1,69 @@
 // One read budget and four body-consuming connections across all request facets.
-export function requestBucket(bucket,{maxObjects=9000,maxBytes=64*1024*1024,connections=4}={}){
- if(!bucket?.get||!Number.isSafeInteger(maxObjects)||maxObjects<1||!Number.isSafeInteger(maxBytes)||maxBytes<1||!Number.isSafeInteger(connections)||connections<1||connections>4)throw Error('Invalid request budget');
- let objects=0,bytes=0,pending=0,peak=0,slots=connections;const queue=[];
- const acquire=async()=>{if(slots)slots--;else await new Promise(resolve=>queue.push(resolve));pending++;peak=Math.max(peak,pending)},release=()=>{pending--;const next=queue.shift();if(next)next();else slots++};
- return{get:async key=>{if(++objects>maxObjects||typeof key!=='string'||!/^catalog\/(?:active\.json|jotclipart\/active\.json|objects\/(?:artworks|collections|search|recent|related|counts|sitemaps)\/[a-f0-9]{64}\.json)$/.test(key))throw Error('Catalog request budget or scope exceeded');await acquire();try{const value=await bucket.get(key);if(!value)return null;if(value.size>1024*1024||(bytes+=value.size)>maxBytes){await value.body?.cancel?.();throw Error('Catalog byte budget exceeded')}const body=await value.arrayBuffer();if(body.byteLength!==value.size)throw Error('Incomplete catalog object');return{size:body.byteLength,etag:value.etag,httpMetadata:value.httpMetadata,customMetadata:value.customMetadata,arrayBuffer:async()=>body,json:async()=>JSON.parse(new TextDecoder('utf8',{fatal:true}).decode(body))}}finally{release()}},metrics:()=>({objects,bytes,peakPending:peak})};
+export function requestBucket(
+  bucket,
+  { maxObjects = 9000, maxBytes = 64 * 1024 * 1024, connections = 4 } = {},
+) {
+  if (
+    !bucket?.get ||
+    !Number.isSafeInteger(maxObjects) ||
+    maxObjects < 1 ||
+    !Number.isSafeInteger(maxBytes) ||
+    maxBytes < 1 ||
+    !Number.isSafeInteger(connections) ||
+    connections < 1 ||
+    connections > 4
+  )
+    throw Error('Invalid request budget');
+  let objects = 0,
+    bytes = 0,
+    pending = 0,
+    peak = 0,
+    slots = connections;
+  const queue = [];
+  const acquire = async () => {
+      if (slots) slots--;
+      else await new Promise((resolve) => queue.push(resolve));
+      pending++;
+      peak = Math.max(peak, pending);
+    },
+    release = () => {
+      pending--;
+      const next = queue.shift();
+      if (next) next();
+      else slots++;
+    };
+  return {
+    get: async (key) => {
+      if (
+        ++objects > maxObjects ||
+        typeof key !== 'string' ||
+        !/^catalog\/(?:active\.json|jotclipart\/active\.json|objects\/(?:artworks|collections|search|recent|related|counts|sitemaps)\/[a-f0-9]{64}\.json)$/.test(
+          key,
+        )
+      )
+        throw Error('Catalog request budget or scope exceeded');
+      await acquire();
+      try {
+        const value = await bucket.get(key);
+        if (!value) return null;
+        if (value.size > 1024 * 1024 || (bytes += value.size) > maxBytes) {
+          await value.body?.cancel?.();
+          throw Error('Catalog byte budget exceeded');
+        }
+        const body = await value.arrayBuffer();
+        if (body.byteLength !== value.size) throw Error('Incomplete catalog object');
+        return {
+          size: body.byteLength,
+          etag: value.etag,
+          httpMetadata: value.httpMetadata,
+          customMetadata: value.customMetadata,
+          arrayBuffer: async () => body,
+          json: async () => JSON.parse(new TextDecoder('utf8', { fatal: true }).decode(body)),
+        };
+      } finally {
+        release();
+      }
+    },
+    metrics: () => ({ objects, bytes, peakPending: peak }),
+  };
 }

@@ -1024,7 +1024,10 @@
   font-size: 16px;
   line-height: 1.7;
 }
-.ai-how > div { gap: 20px; align-items: stretch; }
+.ai-how > div {
+  gap: 20px;
+  align-items: stretch;
+}
 .ai-how article {
   position: relative;
   min-width: 0;
@@ -1046,15 +1049,55 @@
   box-shadow: 0 3px 8px #183f7214;
   font-variant-numeric: tabular-nums;
 }
-.ai-how-visual { margin: 0; padding: 20px 16px 12px; background: var(--brand-page); }
-.ai-how-visual img { display: block; width: 100%; height: 220px; object-fit: contain; }
-.ai-how-studio img { border-radius: 10px; background: #fff; }
-.ai-how-visual figcaption { margin-top: 10px; text-align: center; color: var(--brand-action); font-size: 11px; line-height: 1.5; }
-.ai-how-copy { padding: 6px 22px 24px; }
-.ai-how h3 { font-size: 21px; line-height: 1.35; color: var(--brand-ink); }
-.ai-how .ai-how-copy p + p { margin-top: 12px; }
-.ai-how-copy > a { display: inline-block; margin-top: 18px; color: var(--brand-accent); font-weight: 600; }
-.ai-how blockquote { margin: 16px 0 0; padding: 12px 14px; border-left: 3px solid var(--brand-action); border-radius: 0 9px 9px 0; background: var(--brand-page); color: var(--brand-action); font-size: 14px; line-height: 1.6; }
+.ai-how-visual {
+  margin: 0;
+  padding: 20px 16px 12px;
+  background: var(--brand-page);
+}
+.ai-how-visual img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+}
+.ai-how-studio img {
+  border-radius: 10px;
+  background: #fff;
+}
+.ai-how-visual figcaption {
+  margin-top: 10px;
+  text-align: center;
+  color: var(--brand-action);
+  font-size: 11px;
+  line-height: 1.5;
+}
+.ai-how-copy {
+  padding: 6px 22px 24px;
+}
+.ai-how h3 {
+  font-size: 21px;
+  line-height: 1.35;
+  color: var(--brand-ink);
+}
+.ai-how .ai-how-copy p + p {
+  margin-top: 12px;
+}
+.ai-how-copy > a {
+  display: inline-block;
+  margin-top: 18px;
+  color: var(--brand-accent);
+  font-weight: 600;
+}
+.ai-how blockquote {
+  margin: 16px 0 0;
+  padding: 12px 14px;
+  border-left: 3px solid var(--brand-action);
+  border-radius: 0 9px 9px 0;
+  background: var(--brand-page);
+  color: var(--brand-action);
+  font-size: 14px;
+  line-height: 1.6;
+}
 .ai-faq {
   display: grid;
   grid-template-columns: 1fr 1.8fr;

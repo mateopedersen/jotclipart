@@ -698,7 +698,12 @@
   overflow: hidden;
   aspect-ratio: 1.12;
   border-bottom: 1px solid var(--brand-soft);
-  background: radial-gradient(ellipse at 50% 39%, #fff 8%, var(--brand-page) 58%, var(--brand-soft) 100%);
+  background: radial-gradient(
+    ellipse at 50% 39%,
+    #fff 8%,
+    var(--brand-page) 58%,
+    var(--brand-soft) 100%
+  );
 }
 .about-founder-portrait::before {
   content: '';

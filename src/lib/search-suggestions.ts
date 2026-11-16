@@ -54,7 +54,9 @@ export function searchSuggestions(
 ): SearchSuggestion[] {
   const direct = matches.filter((match) => !match.fuzzy && isDirectSearchMatch(match.entry, query));
   const toSuggestion = ({ entry }: { entry: SiteSearchEntry }): SearchSuggestion => ({
-    title: ['topic','collection'].includes(entry.kind) ? displayCatalogTitle(entry.title) : displayTitle(entry.title),
+    title: ['topic', 'collection'].includes(entry.kind)
+      ? displayCatalogTitle(entry.title)
+      : displayTitle(entry.title),
     href: entry.href,
     kind: suggestionKindLabels[entry.kind],
   });

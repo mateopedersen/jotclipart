@@ -28,9 +28,14 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
   const previous = q<HTMLButtonElement>('[data-artwork-previous]');
   const position = q<HTMLElement>('[data-artwork-page]');
   const startup = beginArtworkLibraryStartup(root);
-  const initial = await featuredRasterCatalog().catch((error) => { startup.fail(); throw error; });
-  const remote = !!initial.transport, repository = new SearchRepository();
-  let remoteRequest: AbortController | undefined, remoteSequence = 0;
+  const initial = await featuredRasterCatalog().catch((error) => {
+    startup.fail();
+    throw error;
+  });
+  const remote = !!initial.transport,
+    repository = new SearchRepository();
+  let remoteRequest: AbortController | undefined,
+    remoteSequence = 0;
   let assets = initial.items as LibraryAsset[];
   let fullAssets: LibraryAsset[] | undefined;
   let loadedKey = 'featured';
@@ -143,7 +148,12 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
     jump.max = String(pages);
     jump.value = String(page);
   }
-  function drawCards(windowItems: LibraryAsset[], total: number, pages: number, transport?: SnapshotTransport) {
+  function drawCards(
+    windowItems: LibraryAsset[],
+    total: number,
+    pages: number,
+    transport?: SnapshotTransport,
+  ) {
     list.replaceChildren();
     for (const asset of windowItems) {
       const button = document.createElement('button');
@@ -216,28 +226,50 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
     jump.value = String(page);
     for (const button of root.querySelectorAll<HTMLButtonElement>('[data-artwork-scope]'))
       button.setAttribute('aria-pressed', String(button.dataset.artworkScope === scope));
-
   }
   async function renderRemote() {
     remoteRequest?.abort();
-    const controller = new AbortController(), sequence = ++remoteSequence, revision = filterRevision;
+    const controller = new AbortController(),
+      sequence = ++remoteSequence,
+      revision = filterRevision;
     remoteRequest = controller;
     list.setAttribute('aria-busy', 'true');
     count.textContent = 'Searching the artwork library…';
     const scopes = ['source/raster'];
     if (topic.value) scopes.push('topic/' + topic.value);
     else if (categoryId) scopes.push('collection/' + categoryId);
-    if (style.value) scopes.push(style.value === 'Black & White' ? 'print/monochrome' : 'studio-style/' + style.value.toLowerCase());
+    if (style.value)
+      scopes.push(
+        style.value === 'Black & White'
+          ? 'print/monochrome'
+          : 'studio-style/' + style.value.toLowerCase(),
+      );
     try {
-      const result = await repository.studioSearch({ ...defaults, q: search.value.trim(),
-        page: Math.min(10000, Math.max(1, page)), size: pageSize,
-        sort: sort.value === 'featured' ? 'relevance' : sort.value }, controller.signal, scopes);
-      if (controller.signal.aborted || sequence !== remoteSequence || revision !== filterRevision) return;
+      const result = await repository.studioSearch(
+        {
+          ...defaults,
+          q: search.value.trim(),
+          page: Math.min(10000, Math.max(1, page)),
+          size: pageSize,
+          sort: sort.value === 'featured' ? 'relevance' : sort.value,
+        },
+        controller.signal,
+        scopes,
+      );
+      if (controller.signal.aborted || sequence !== remoteSequence || revision !== filterRevision)
+        return;
       page = result.page;
-      drawCards(result.studioItems as LibraryAsset[], result.total, result.pages, result.manifest.transport);
+      drawCards(
+        result.studioItems as LibraryAsset[],
+        result.total,
+        result.pages,
+        result.manifest.transport,
+      );
     } catch (error) {
-      if (controller.signal.aborted || sequence !== remoteSequence || revision !== filterRevision) return;
-      count.textContent = 'The artwork search could not load. Change a filter or retry All Artwork. Your canvas is preserved.';
+      if (controller.signal.aborted || sequence !== remoteSequence || revision !== filterRevision)
+        return;
+      count.textContent =
+        'The artwork search could not load. Change a filter or retry All Artwork. Your canvas is preserved.';
     } finally {
       if (sequence === remoteSequence) list.removeAttribute('aria-busy');
     }
@@ -259,11 +291,15 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
           ? 'Choose a Subject'
           : '';
     if (browseMode !== 'artwork' && !search.value.trim()) {
-      remoteRequest?.abort(); remoteSequence++;
+      remoteRequest?.abort();
+      remoteSequence++;
       renderDirectory();
       return;
     }
-    if (remote && scope === 'all') { void renderRemote(); return; }
+    if (remote && scope === 'all') {
+      void renderRemote();
+      return;
+    }
     const words = search.value.trim().toLowerCase().split(/\s+/);
     const matched = (scope === 'featured' ? featured : assets).filter(
       (a) =>
@@ -287,7 +323,12 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
     );
     const pages = Math.max(1, Math.ceil(matched.length / pageSize));
     page = Math.min(page, pages);
-    drawCards(matched.slice((page - 1) * pageSize, page * pageSize), matched.length, pages, remote ? initial.transport : undefined);
+    drawCards(
+      matched.slice((page - 1) * pageSize, page * pageSize),
+      matched.length,
+      pages,
+      remote ? initial.transport : undefined,
+    );
   }
 
   const reset = () => {
@@ -343,7 +384,9 @@ export async function mountArtworkLibrary(root: HTMLElement, add: (id: string) =
     }
   };
   for (const button of root.querySelectorAll<HTMLButtonElement>('[data-artwork-scope]'))
-    button.addEventListener('click', () => { void chooseScope(button.dataset.artworkScope!); });
+    button.addEventListener('click', () => {
+      void chooseScope(button.dataset.artworkScope!);
+    });
   const goHome = () => {
     filterRevision++;
     list.removeAttribute('aria-busy');

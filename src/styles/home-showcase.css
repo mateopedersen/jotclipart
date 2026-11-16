@@ -183,7 +183,12 @@
   border: 1px solid var(--brand-border);
   border-bottom: 4px solid var(--brand-border);
   border-radius: 27px;
-  background: radial-gradient(ellipse at 45% 10%, #fff 0%, var(--brand-page) 60%, var(--brand-soft));
+  background: radial-gradient(
+    ellipse at 45% 10%,
+    #fff 0%,
+    var(--brand-page) 60%,
+    var(--brand-soft)
+  );
   box-shadow:
     inset 0 3px #fff,
     0 6px 0 var(--brand-page),

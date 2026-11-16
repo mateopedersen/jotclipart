@@ -24,7 +24,12 @@
   position: absolute;
   inset: 8px -14px 2px 10px;
   border-radius: 50%;
-  background: radial-gradient(ellipse at 45% 30%, #fff 0%, var(--brand-soft) 55%, var(--brand-border) 100%);
+  background: radial-gradient(
+    ellipse at 45% 30%,
+    #fff 0%,
+    var(--brand-soft) 55%,
+    var(--brand-border) 100%
+  );
   box-shadow: 0 2px 0 #fff inset;
   transform: rotate(-12deg);
   opacity: 0.8;

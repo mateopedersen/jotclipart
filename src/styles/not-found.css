@@ -29,7 +29,12 @@
   position: relative;
   padding: 0 1.75rem 2.5rem;
   border-radius: 36px;
-  background: radial-gradient(ellipse at 50% 26%, var(--brand-soft) 0%, var(--brand-page) 30%, #fff 64%);
+  background: radial-gradient(
+    ellipse at 50% 26%,
+    var(--brand-soft) 0%,
+    var(--brand-page) 30%,
+    #fff 64%
+  );
 }
 .nf-visual {
   grid-area: visual;

@@ -1,5 +1,5 @@
-import {brand} from '../../src/lib/brand.mjs';
-import {socialSources} from './sources.mjs';
+import { brand } from '../../src/lib/brand.mjs';
+import { socialSources } from './sources.mjs';
 import { readFile, mkdir, writeFile, copyFile } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
 import { createHash } from 'node:crypto';
@@ -12,13 +12,26 @@ const xml = (value) =>
 
 // Only repository-owned interface symbols, never catalog art or editor palettes.
 function interfacePalette(svg) {
-  return svg.replace(/#[0-9a-fA-F]{6}\b/g,color=>{
-    const [r,g,b]=[1,3,5].map(i=>parseInt(color.slice(i,i+2),16)/255),max=Math.max(r,g,b),min=Math.min(r,g,b),d=max-min,light=(max+min)/2;
-    if(!d)return color;
-    const saturation=d/(1-Math.abs(2*light-1));
-    let hue=max===r?((g-b)/d)%6:max===g?(b-r)/d+2:(r-g)/d+4;hue=(hue*60+360)%360;
-    if(hue<190||hue>255||saturation<.12)return color;
-    return light<.27?brand.ink:light<.62?brand.action:light<.88?'#B7DCC5':light<.96?brand.soft:brand.background;
+  return svg.replace(/#[0-9a-fA-F]{6}\b/g, (color) => {
+    const [r, g, b] = [1, 3, 5].map((i) => parseInt(color.slice(i, i + 2), 16) / 255),
+      max = Math.max(r, g, b),
+      min = Math.min(r, g, b),
+      d = max - min,
+      light = (max + min) / 2;
+    if (!d) return color;
+    const saturation = d / (1 - Math.abs(2 * light - 1));
+    let hue = max === r ? ((g - b) / d) % 6 : max === g ? (b - r) / d + 2 : (r - g) / d + 4;
+    hue = (hue * 60 + 360) % 360;
+    if (hue < 190 || hue > 255 || saturation < 0.12) return color;
+    return light < 0.27
+      ? brand.ink
+      : light < 0.62
+        ? brand.action
+        : light < 0.88
+          ? '#B7DCC5'
+          : light < 0.96
+            ? brand.soft
+            : brand.background;
   });
 }
 
@@ -44,7 +57,7 @@ export async function createRenderer(root) {
   process.env.FONTCONFIG_FILE = config;
   process.env.FONTCONFIG_PATH = work;
   const { default: sharp } = await import('sharp');
-  const sourceReader=await socialSources(root);
+  const sourceReader = await socialSources(root);
   const textCache = new Map();
   const imageCache = new Map();
   const sourceHashes = new Map();
@@ -135,7 +148,12 @@ export async function createRenderer(root) {
       return this;
     }
     async image(path, x, y, width, height, { angle = 0, cover = false, transformSource } = {}) {
-      if(path.startsWith('public/illustrations/actions/')&&path.endsWith('.svg')&&!transformSource)transformSource=interfacePalette;
+      if (
+        path.startsWith('public/illustrations/actions/') &&
+        path.endsWith('.svg') &&
+        !transformSource
+      )
+        transformSource = interfacePalette;
       this.sources.add(path);
       const key = JSON.stringify([path, width, height, cover, transformSource?.name]);
       if (!imageCache.has(key))
@@ -200,7 +218,7 @@ export async function createRenderer(root) {
     }
   }
   return {
-    downloadReceipts:sourceReader.receipts,
+    downloadReceipts: sourceReader.receipts,
     Canvas,
     sharp,
     source,

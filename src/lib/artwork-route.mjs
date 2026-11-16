@@ -34,6 +34,8 @@ export function readableArtworkSlug(title) {
 // old package serial is already a useful public URL and stays where it is.
 export function needsReadableArtworkSlug(id, topic) {
   if (typeof id !== 'string' || typeof topic !== 'string') return false;
-  return /-20\d{6}-\d{2,4}$/.test(id) ||
-    (id.startsWith(topic + '-') && /^(?:clipart-)?\d{2,4}$/.test(id.slice(topic.length + 1)));
+  return (
+    /-20\d{6}-\d{2,4}$/.test(id) ||
+    (id.startsWith(topic + '-') && /^(?:clipart-)?\d{2,4}$/.test(id.slice(topic.length + 1)))
+  );
 }

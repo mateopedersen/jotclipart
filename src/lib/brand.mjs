@@ -14,13 +14,21 @@ export const brand = Object.freeze({
 /** Idempotent display projection; source titles, descriptions, IDs and slugs stay intact. */
 export function freeCatalogTitle(value) {
   if (typeof value !== 'string' || !value.trim()) throw new TypeError('Catalog title required');
-  const source = value.trim().replace(/^(?:free\s+)+/i, '').replace(/(?:\s+clipart){2,}$/i, ' Clipart');
+  const source = value
+    .trim()
+    .replace(/^(?:free\s+)+/i, '')
+    .replace(/(?:\s+clipart){2,}$/i, ' Clipart');
   return 'Free ' + source;
 }
 
 export function isCatalogTitlePath(pathname) {
-  return pathname === '/' || /^\/(?:art|clipart|collection)\/[a-z0-9-]+\/$/.test(pathname) ||
-    ['/categories/', '/collections/', '/new/', '/black-and-white/', '/library-index/'].includes(pathname);
+  return (
+    pathname === '/' ||
+    /^\/(?:art|clipart|collection)\/[a-z0-9-]+\/$/.test(pathname) ||
+    ['/categories/', '/collections/', '/new/', '/black-and-white/', '/library-index/'].includes(
+      pathname,
+    )
+  );
 }
 
 export function pageDisplayTitle(value, pathname) {

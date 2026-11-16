@@ -1,4 +1,4 @@
-import {displayCatalogTitle} from '../lib/display-title';
+import { displayCatalogTitle } from '../lib/display-title';
 import { formatFileSize } from '../lib/artwork-details';
 import { SearchRepository } from '../lib/search-remote';
 import type { SearchCard } from '../lib/search-index';

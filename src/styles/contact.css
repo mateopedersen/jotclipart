@@ -46,7 +46,12 @@
   padding: clamp(1.5rem, 3.5vw, 3rem);
   border: 1px solid var(--brand-border);
   border-radius: 26px;
-  background: radial-gradient(ellipse at 83% 38%, var(--brand-soft) 0%, var(--brand-page) 44%, #fff 78%);
+  background: radial-gradient(
+    ellipse at 83% 38%,
+    var(--brand-soft) 0%,
+    var(--brand-page) 44%,
+    #fff 78%
+  );
   box-shadow:
     0 12px 32px -26px #1d497d52,
     inset 0 1px 0 #fff;
