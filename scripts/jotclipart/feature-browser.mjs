@@ -237,26 +237,6 @@ async function openProject(page, doc) {
     buffer: Buffer.from(JSON.stringify(doc)),
   });
   await expect(page.locator('[data-status]')).toContainText('Saved project opened');
-  await expect
-    .poll(
-      () =>
-        page.evaluate((expected) => {
-          const actual = JSON.parse(
-            localStorage.getItem(
-              'ultraclipart:editor:v1:' + document.querySelector('.uc-editor').dataset.artId,
-            ) || 'null',
-          );
-          return (
-            !!actual &&
-            actual.title === expected.title &&
-            actual.width === expected.width &&
-            actual.height === expected.height &&
-            JSON.stringify(actual.layers) === JSON.stringify(expected.layers)
-          );
-        }, doc),
-      { timeout: 10000 },
-    )
-    .toBe(true);
 }
 async function runCommand(page, id, value = '24') {
   await page.keyboard.press('Control+k');
@@ -865,7 +845,33 @@ async function allWorkbenchCommands() {
     outputs = [];
   for (const [id, name, group] of workbenchCommands) {
     await closeDialogs();
-    if (id !== 'end-solo') await openProject(page, fixture);
+    if (id !== 'end-solo') {
+      await openProject(page, fixture);
+      // Before comparing command effects, wait for the imported fixture's actual
+      // recovery document. A read-only re-open of an identical original need not
+      // create any recovery entry, so this wait belongs only to this edit fixture.
+      await expect
+        .poll(
+          async () => {
+            const actual = await readState();
+            return (
+              actual && {
+                title: actual.title,
+                width: actual.width,
+                height: actual.height,
+                layers: actual.layers,
+              }
+            );
+          },
+          { timeout: 10000 },
+        )
+        .toEqual({
+          title: fixture.title,
+          width: fixture.width,
+          height: fixture.height,
+          layers: fixture.layers,
+        });
+    }
     const text = id.startsWith('text-') || id === 'label-from-text';
     await select(
       text
