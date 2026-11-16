@@ -20,7 +20,7 @@ export async function buildSiteIcons(root = resolve(import.meta.dirname, '..')) 
   if (!paths || /<(?:script|image|foreignObject)\b|(?:href|url)\s*=/i.test(paths))
     throw Error('Unexpected logo content');
   const square = Buffer.from(
-    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><title>UltraClipart</title><g transform="translate(4 2)">${paths}</g></svg>\n`,
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><title>JotClipart</title><g transform="translate(4 2)">${paths}</g></svg>\n`,
   );
   const outputs = new Map([['favicon.svg', square]]);
   for (const [file, size] of [

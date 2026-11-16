@@ -1,6 +1,6 @@
 .collection-directory {
   padding: 24px 0 0;
-  color: #193552;
+  color: var(--brand-ink);
 }
 .collection-directory-hero {
   display: flex;
@@ -8,16 +8,16 @@
   justify-content: space-between;
   gap: 32px;
   padding: 36px 40px;
-  border: 1px solid #d0e0f1;
+  border: 1px solid var(--brand-soft);
   border-radius: 24px;
-  background: linear-gradient(125deg, #eff6ff, #fafcff);
+  background: linear-gradient(125deg, var(--brand-page), var(--brand-page));
   margin-bottom: 36px;
 }
 .collection-directory-hero h1 {
   font: 700 clamp(32px, 4vw, 50px)/1.13 inherit;
   letter-spacing: -0.025em;
   margin: 8px 0 18px;
-  color: #153151;
+  color: var(--brand-ink);
 }
 .collection-directory-hero h1 span {
   color: var(--brand-accent);
@@ -25,7 +25,7 @@
 .collection-directory-hero p {
   max-width: 640px;
   line-height: 1.65;
-  color: #496382;
+  color: var(--brand-action);
   margin: 0 0 16px;
 }
 .collection-directory-hero > img {
@@ -41,7 +41,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 12px 24px;
-  color: #355c83;
+  color: var(--brand-action);
   font-weight: 600;
   font-size: 14px;
 }
@@ -58,7 +58,7 @@
 .collection-section-heading h2 {
   margin: 0;
   font-size: 25px;
-  color: #193552;
+  color: var(--brand-ink);
 }
 .collection-section-heading > a {
   display: inline-flex;
@@ -76,24 +76,24 @@
 .collection-group-tile {
   display: block;
   min-width: 0;
-  border: 1px solid #d3e1ef;
+  border: 1px solid var(--brand-soft);
   border-radius: 17px;
   overflow: hidden;
   background: #fff;
-  color: #234567;
+  color: var(--brand-action);
   text-decoration: none;
-  box-shadow: 0 3px 0 #e5eef7;
+  box-shadow: 0 3px 0 var(--brand-soft);
 }
 .subject-collection-tile:hover,
 .collection-group-tile:hover {
-  border-color: #72a6d6;
+  border-color: var(--brand-border);
   text-decoration: none;
-  box-shadow: 0 4px 0 #d6e6f5;
+  box-shadow: 0 4px 0 var(--brand-soft);
 }
 .subject-collection-art {
   content-visibility: auto;
   height: 185px;
-  background: radial-gradient(ellipse, #fff, #edf4fc);
+  background: radial-gradient(ellipse, #fff, var(--brand-soft));
   padding: 12px;
 }
 .subject-collection-art img {
@@ -114,7 +114,7 @@
 .subject-collection-copy p {
   font-size: 13px;
   font-weight: 550;
-  color: #4a6785;
+  color: var(--brand-action);
   margin: 0;
 }
 .subject-collection-copy > span {
@@ -146,12 +146,12 @@
   line-height: 1.55;
   font-weight: 400;
   margin: 0 0 18px;
-  color: #506b83;
+  color: var(--brand-action);
 }
 .collection-group-tile .collection-group-inventory {
   margin-top: auto;
   padding-top: 3px;
-  color: #2c587d;
+  color: var(--brand-action);
   font-size: 13px;
 }
 .collection-group-inventory > span[aria-hidden] {
@@ -168,12 +168,12 @@
 }
 .collection-find input {
   width: min(100%, 550px);
-  border: 1px solid #a8bfd6;
+  border: 1px solid var(--brand-border);
   border-radius: 12px;
   padding: 13px 16px;
   font: inherit;
   background: #fff;
-  color: #193552;
+  color: var(--brand-ink);
   min-height: 48px;
 }
 .collection-filters {
@@ -183,34 +183,34 @@
   margin-top: 16px;
 }
 .collection-filters button {
-  border: 1px solid #c8d9e9;
+  border: 1px solid var(--brand-border);
   border-radius: 99px;
   background: #fff;
   padding: 9px 16px;
   min-height: 44px;
-  color: #28577f;
+  color: var(--brand-action);
   font: 600 14px/1.2 inherit;
   cursor: pointer;
 }
 .collection-filters button[aria-pressed='true'] {
-  background: #1c5eaa;
-  border-color: #1c5eaa;
+  background: var(--brand-action);
+  border-color: var(--brand-action);
   color: #fff;
 }
 .collection-find input:focus-visible,
 .collection-filters button:focus-visible,
 .collection-group-tile:focus-visible {
-  outline: 3px solid #5b93cf;
+  outline: 3px solid var(--brand-action);
   outline-offset: 3px;
 }
 .collection-find #collection-results {
   font-size: 14px;
   margin: 15px 0 0;
-  color: #506b83;
+  color: var(--brand-action);
 }
 .collection-no-results {
   padding: 36px;
-  border: 1px solid #d3e1ef;
+  border: 1px solid var(--brand-soft);
   border-radius: 16px;
   text-align: center;
 }
@@ -223,7 +223,7 @@
   gap: 12px;
   padding: 12px;
   border-radius: 12px;
-  background: #f4f8fd;
+  background: var(--brand-page);
   margin-bottom: 18px;
 }
 .collection-group-art img {
@@ -241,7 +241,7 @@
   margin: 0;
   font-size: 13px;
   line-height: 1.6;
-  color: #4a6785;
+  color: var(--brand-action);
   font-weight: 550;
 }
 @media (max-width: 1000px) {

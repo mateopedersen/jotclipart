@@ -29,10 +29,10 @@ export async function exportRasterPdf(
   const output = await PDFDocument.create(),
     p = paperLayout(doc),
     page = output.addPage([p.pageWidth, p.pageHeight]);
-  output.setTitle(doc.title || 'UltraClipart edited artwork');
-  output.setAuthor('UltraClipart');
-  output.setCreator('UltraClipart editor');
-  output.setProducer('UltraClipart');
+  output.setTitle(doc.title || 'JotClipart edited artwork');
+  output.setAuthor('JotClipart');
+  output.setCreator('JotClipart editor');
+  output.setProducer('JotClipart');
   const intent = output.context.obj({
     Type: 'OutputIntent',
     S: 'GTS_PDFX',

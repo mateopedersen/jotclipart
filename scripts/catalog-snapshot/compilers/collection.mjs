@@ -64,11 +64,11 @@ const css = new Map();
 const entry = join(here, 'entry.mjs');
 writeFileSync(entry, `import {experimental_AstroContainer} from 'astro/container';
 import Page from ${JSON.stringify(join(root, 'src/pages/clipart/[slug].astro'))};
-import {requestState} from './context.mjs';
+import {requestState,current} from './context.mjs';
 export async function renderCollection(state,url,styles,scriptUrls){
  return requestState.run(state,async()=>{
   const container=await experimental_AstroContainer.create({resolve:id=>scriptUrls[id]??(()=>{throw Error('Unresolved script '+id)})()});
-  const html=await container.renderToString(Page,{props:{topic:state.topic},request:new Request(url),partial:false});
+  const html=await container.renderToString(Page,{props:{topic:current().topic},request:new Request(url),partial:false});
   return html.replace('</head>','<style>'+styles+'</style></head>');
  });
 }

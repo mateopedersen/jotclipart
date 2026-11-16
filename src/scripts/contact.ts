@@ -45,7 +45,7 @@ export function initContact() {
     if (opened) return;
     opened = true;
     const frame = document.createElement('iframe');
-    frame.title = 'Contact UltraClipart — Google Form';
+    frame.title = 'Contact JotClipart — Google Form';
     frame.src = contactFormLink(selected, true);
     frame.referrerPolicy = 'no-referrer';
     frame.setAttribute('height', '1640');

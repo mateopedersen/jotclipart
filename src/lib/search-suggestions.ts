@@ -1,5 +1,5 @@
 import { artworkPath } from './artwork-route.mjs';
-import { displayTitle } from './display-title.ts';
+import { displayTitle, displayCatalogTitle } from './display-title.ts';
 import { normalizeQuery, queryTerms, termVariants } from './search-language.ts';
 import { preparedSiteEntry, type SiteSearchEntry, type SiteSearchKind } from './site-search.ts';
 import type { SearchCard } from './search-index.ts';
@@ -54,14 +54,14 @@ export function searchSuggestions(
 ): SearchSuggestion[] {
   const direct = matches.filter((match) => !match.fuzzy && isDirectSearchMatch(match.entry, query));
   const toSuggestion = ({ entry }: { entry: SiteSearchEntry }): SearchSuggestion => ({
-    title: displayTitle(entry.title),
+    title: ['topic','collection'].includes(entry.kind) ? displayCatalogTitle(entry.title) : displayTitle(entry.title),
     href: entry.href,
     kind: suggestionKindLabels[entry.kind],
   });
   const candidates = [
     ...direct.slice(0, 2).map(toSuggestion),
     ...artwork.slice(0, 4).map((item) => ({
-      title: displayTitle(item.title),
+      title: displayCatalogTitle(item.title),
       href: artworkPath(item),
       kind: 'Individual Clipart',
       thumb: item.suggestionThumb ?? item.thumb,

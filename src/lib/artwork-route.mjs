@@ -7,7 +7,7 @@ export function artworkPath(item) {
   return `/art/${slug}/`;
 }
 export function artworkURL(item) {
-  return `https://ultraclipart.com${artworkPath(item)}`;
+  return `https://jotclipart.com${artworkPath(item)}`;
 }
 export function readableArtworkSlug(title) {
   if (typeof title !== 'string') throw Error('A source title is required');

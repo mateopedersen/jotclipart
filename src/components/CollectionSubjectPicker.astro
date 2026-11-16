@@ -1,5 +1,5 @@
 ---
-import { displayTitle } from '../lib/display-title';
+import { displayTitle, displayCatalogTitle } from '../lib/display-title';
 interface Props { topics: { slug: string; keyword: string }[] }
 const { topics } = Astro.props;
 ---
@@ -13,7 +13,7 @@ const { topics } = Astro.props;
       </svg>
     </summary>
     <nav class="mobile-subject-options" aria-label="Topics in this collection">
-      {topics.map((topic) => <a href={`/clipart/${topic.slug}/`} data-display-title>{displayTitle(topic.keyword)}</a>)}
+      {topics.map((topic) => <a href={`/clipart/${topic.slug}/`} data-display-title>{displayCatalogTitle(topic.keyword)}</a>)}
     </nav>
   </details>
 </div>
@@ -21,10 +21,10 @@ const { topics } = Astro.props;
   .collection-subject-navigation { max-width: 720px; margin-top: 16px; }
     .mobile-subject-picker {
       display: block;
-      border: 1px solid #bacfe8;
+      border: 1px solid var(--brand-border);
       border-radius: 14px;
       background: #fff;
-      color: #214d79;
+      color: var(--brand-action);
       overflow: clip;
     }
     summary {
@@ -44,10 +44,10 @@ const { topics } = Astro.props;
       margin-inline-start: auto;
       padding: 1px 9px;
       border-radius: 7px;
-      background: #edf5ff;
+      background: var(--brand-page);
       font-variant-numeric: tabular-nums;
     }
-    details[open] summary { border-bottom: 1px solid #dce5ef; }
+    details[open] summary { border-bottom: 1px solid var(--brand-soft); }
     details[open] summary svg { transform: rotate(180deg); }
     .mobile-subject-options {
       display: grid;
@@ -65,7 +65,7 @@ const { topics } = Astro.props;
       line-height: 1.4;
       overflow-wrap: anywhere;
     }
-    .mobile-subject-options a:hover { background: #edf5ff; }
+    .mobile-subject-options a:hover { background: var(--brand-page); }
     summary:focus-visible,
     .mobile-subject-options a:focus-visible { outline: 2px solid var(--blue); outline-offset: -3px; }
   @media (min-width: 768px) { .mobile-subject-options { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

@@ -6,13 +6,13 @@ export const infoPages: Record<
 > = {
   ...trustInfoPages,
   contact: {
-    title: 'Contact UltraClipart',
+    title: 'Contact JotClipart',
     description:
-      'Contact UltraClipart about downloads, Clipart Studio, illustration licenses, corrections, accessibility, or a copyright concern.',
+      'Contact JotClipart about downloads, Clipart Studio, illustration licenses, corrections, accessibility, or a copyright concern.',
     sections: [
       [
         'Write to us',
-        'Use the contact form to send your question to UltraClipart through Google Forms, or email ultraclipart@gmail.com. Include the relevant page address and a short description. Email correspondence stays in our mailbox; form submissions are recorded in Google Forms.',
+        'Use the contact form to send your question to JotClipart through Google Forms, or email ultraclipart@gmail.com. Include the relevant page address and a short description. Email correspondence stays in our mailbox; form submissions are recorded in Google Forms.',
       ],
       [
         'Report a problem',

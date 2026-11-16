@@ -116,7 +116,7 @@ export async function exportWord(doc: EditorDocument) {
     {
       name: 'docProps/core.xml',
       blob: xmlFile(
-        `<cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:dc="http://purl.org/dc/elements/1.1/"><dc:title>${title}</dc:title><dc:creator>UltraClipart</dc:creator></cp:coreProperties>`,
+        `<cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:dc="http://purl.org/dc/elements/1.1/"><dc:title>${title}</dc:title><dc:creator>JotClipart</dc:creator></cp:coreProperties>`,
       ),
     },
     { name: 'word/media/artwork.png', blob: page.blob },

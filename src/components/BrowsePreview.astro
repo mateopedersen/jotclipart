@@ -1,5 +1,5 @@
 ---
-import { displayTitle } from '../lib/display-title';
+import { displayTitle, displayCatalogTitle } from '../lib/display-title';
 import { publishedArt } from '../lib/catalog';
 import CatalogCount from './CatalogCount.astro';
 
@@ -36,7 +36,7 @@ const artwork = choices.flatMap(([id, topic]) => {
     {artwork.map((item) => (
       <span class="site-browse-preview-tile">
         <img
-          title={displayTitle(item.title)}
+          title={displayCatalogTitle(item.title)}
           src={item.thumb}
           srcset={item.thumbSrcSet}
           sizes="(max-width: 1100px) 80px, 120px"

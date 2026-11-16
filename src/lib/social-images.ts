@@ -16,7 +16,7 @@ function pagePath(pathname: string) {
 }
 
 function imageType(src: string) {
-  const extension = new URL(src, 'https://ultraclipart.com').pathname.split('.').at(-1);
+  const extension = new URL(src, 'https://jotclipart.com').pathname.split('.').at(-1);
   const types: Record<string, string> = {
     png: 'image/png',
     webp: 'image/webp',

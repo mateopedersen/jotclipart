@@ -116,12 +116,12 @@ const faq = [
       set:html={structuredData({
         '@context': 'https://schema.org',
         '@type': 'WebApplication',
-        name: 'UltraClipart AI Clipart Builder',
-        url: 'https://ultraclipart.com/ai-clipart-generator/',
+        name: 'JotClipart AI Clipart Builder',
+        url: 'https://jotclipart.com/ai-clipart-generator/',
         applicationCategory: 'DesignApplication',
         operatingSystem: 'Web browser',
         featureList: ['Text to image clipart', 'Visual styles and color choices', 'WebP image downloads', 'Continue editing in Clipart Studio'],
-        provider: { '@type': 'Organization', name: 'UltraClipart', url: 'https://ultraclipart.com/' },
+        provider: { '@type': 'Organization', name: 'JotClipart', url: 'https://jotclipart.com/' },
         description:
           'Create clipart from a text description. Choose a style, edit and download a WebP image, or use Clipart Studio for layouts, text and printable PDFs.',
       })}
@@ -132,12 +132,12 @@ const faq = [
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ultraclipart.com/' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://jotclipart.com/' },
           {
             '@type': 'ListItem',
             position: 2,
             name: 'AI Clipart Builder',
-            item: 'https://ultraclipart.com/ai-clipart-generator/',
+            item: 'https://jotclipart.com/ai-clipart-generator/',
           },
         ],
       })}
@@ -535,7 +535,7 @@ const faq = [
               <ContentLink
                 id="ai-live-builder"
                 class="button primary"
-                href="https://ultraclipart.com/ai-clipart-generator/"
+                href="https://jotclipart.com/ai-clipart-generator/"
                 hidden
               >
                 Continue on AI Clipart Builder
@@ -1145,7 +1145,7 @@ const faq = [
           <span>01</span>
           <figure class="ai-how-visual">
             <img src={ideaCards.find(card => card.id === 'fern')!.image} alt={ideaCards.find(card => card.id === 'fern')!.alt} title={ideaCards.find(card => card.id === 'fern')!.imageTitle} width="400" height="260" loading="lazy" decoding="async" fetchpriority="low" />
-            <figcaption>Subject reference from the UltraClipart library</figcaption>
+            <figcaption>Subject reference from the JotClipart library</figcaption>
           </figure>
           <div class="ai-how-copy">
             <h3>Write a Clear Clipart Prompt</h3>
@@ -1224,9 +1224,9 @@ const faq = [
 </Layout>
 
 <style>
-  .ai-explanation { margin-block: 26px; padding: clamp(20px, 3vw, 32px); border: 1px solid #cbdcf0; border-radius: 20px; background: #f6f9ff; }
-  .ai-explanation h2 { margin-top: 0; color: #17375c; }
-  .ai-explanation p { max-width: 84ch; line-height: 1.75; color: #405d7d; }
+  .ai-explanation { margin-block: 26px; padding: clamp(20px, 3vw, 32px); border: 1px solid var(--brand-border); border-radius: 20px; background: var(--brand-page); }
+  .ai-explanation h2 { margin-top: 0; color: var(--brand-ink); }
+  .ai-explanation p { max-width: 84ch; line-height: 1.75; color: var(--brand-action); }
   .ai-explanation p:last-child { margin-bottom: 0; }
   .ai-explanation a { font-weight: 600; text-underline-offset: 3px; }
 </style>

@@ -99,9 +99,9 @@ async function exportVectorPdf(doc: EditorDocument): Promise<Blob> {
     pdf as unknown as { __private__: { setPdfVersion: (version: string) => void } }
   ).__private__.setPdfVersion('1.7');
   pdf.setProperties({
-    title: doc.title || 'UltraClipart edited artwork',
+    title: doc.title || 'JotClipart edited artwork',
     subject: 'ICC-converted process CMYK vector artwork',
-    creator: 'UltraClipart editor',
+    creator: 'JotClipart editor',
   });
   registerOutputCondition(pdf, lut.profileName || 'CMYK print profile');
   const svg = documentSvg(doc);

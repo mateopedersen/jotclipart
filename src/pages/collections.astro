@@ -1,5 +1,5 @@
 ---
-import { displayTitle } from '../lib/display-title';
+import { displayTitle, displayCatalogTitle } from '../lib/display-title';
 import { imageLoadingPreview } from '../lib/image-loading-preview';
 import { imageObject } from '../lib/image-schema';
 import { structuredData } from '../lib/structured-data';
@@ -101,7 +101,7 @@ const visibleArtwork = [
               priority={index === 0}
             />
             <div class="collection-group-copy">
-              <h3 data-display-title>{displayTitle(collection.title)}</h3>
+              <h3 data-display-title>{displayCatalogTitle(collection.title)}</h3>
               <p class="collection-group-description">{collection.summary}</p>
               <p class="collection-group-inventory">
                 <CatalogCount
@@ -144,14 +144,14 @@ const visibleArtwork = [
                 width="275"
                 height="190"
                 alt={subject.sample.alt}
-                title={displayTitle(subject.sample.title)}
+                title={displayCatalogTitle(subject.sample.title)}
                 loading="lazy"
                 data-original-deferred="pending"
                 decoding="async"
               />
             </div>
             <div class="subject-collection-copy">
-              <h3 data-display-title>{displayTitle(subject.name)}</h3>
+              <h3 data-display-title>{displayCatalogTitle(subject.name)}</h3>
               <p>{subject.count.toLocaleString('en-US')} Illustrations</p>
               <span aria-hidden="true">→</span>
             </div>

@@ -12,18 +12,18 @@
   text-align: start;
   align-items: center;
   gap: 7px;
-  border: 1px solid #cbdcf0;
+  border: 1px solid var(--brand-border);
   background: #fff;
   border-radius: 9px;
   padding: 10px 13px;
-  color: #31577e;
+  color: var(--brand-action);
   font: 500 14px/1.35 var(--font-ui);
   min-height: 42px;
 }
 .search-kind-tabs button[aria-pressed='true'] {
-  background: #2c629f;
+  background: var(--brand-action);
   color: #fff;
-  border-color: #2c629f;
+  border-color: var(--brand-action);
 }
 .search-kind-tabs button span {
   flex: 0 0 6ch;
@@ -47,16 +47,16 @@
   flex-direction: column;
   gap: 7px;
   padding: 18px 20px;
-  border: 1px solid #d0e0f2;
+  border: 1px solid var(--brand-soft);
   border-radius: 11px;
   background: #fff;
   text-decoration: none;
-  color: #284a72;
+  color: var(--brand-action);
   min-width: 0;
 }
 .site-search-result:hover {
-  background: #f6faff;
-  border-color: #88add9;
+  background: var(--brand-page);
+  border-color: var(--brand-border);
 }
 .site-search-result strong {
   font: 600 18px/1.4 var(--font-ui);
@@ -64,12 +64,12 @@
 }
 .site-search-kind {
   font-size: 12px;
-  color: #365e88;
+  color: var(--brand-action);
 }
 .site-search-result p {
   font-size: 14px;
   line-height: 1.6;
-  color: #516b88;
+  color: var(--brand-action);
   margin: 0;
 }
 #site-search-section,
@@ -113,7 +113,7 @@ form:has(> .search-suggestions) {
   max-height: min(490px, 62dvh);
   overflow: auto;
   overscroll-behavior: contain;
-  border: 1px solid #bad0ec;
+  border: 1px solid var(--brand-border);
   border-radius: 12px;
   background: #fff;
   padding: 7px;
@@ -129,23 +129,23 @@ form:has(> .search-suggestions) {
   touch-action: manipulation;
   border-radius: 7px;
   text-decoration: none;
-  color: #24476f;
+  color: var(--brand-action);
   font: 500 14px/1.4 var(--font-ui);
 }
 .search-suggestions a:hover,
 .search-suggestions a:focus-visible,
 .search-suggestions a[aria-selected='true'] {
-  background: #edf5ff;
+  background: var(--brand-page);
 }
 .search-suggestions a:focus-visible {
-  outline: 2px solid #245f9e;
+  outline: 2px solid var(--brand-action);
   outline-offset: -2px;
 }
 .search-suggestions img {
   width: 44px;
   height: 44px;
   object-fit: contain;
-  background: #f6f9ff;
+  background: var(--brand-page);
   border-radius: 6px;
   flex: 0 0 44px;
 }
@@ -157,24 +157,24 @@ form:has(> .search-suggestions) {
   overflow-wrap: anywhere;
 }
 .search-suggestions small {
-  color: #65819e;
+  color: var(--brand-action);
   font: 400 11px/1.4 var(--font-ui);
 }
 .search-suggestions p {
   margin: 8px 10px;
-  color: #617b99;
+  color: var(--brand-action);
   font-size: 13px;
   line-height: 1.5;
 }
 .search-suggestions .search-suggestion-all {
-  border-top: 1px solid #e1eaf5;
+  border-top: 1px solid var(--brand-soft);
   margin-top: 5px;
   border-radius: 0;
   padding-top: 12px;
-  color: #245f9e;
+  color: var(--brand-action);
 }
 .uc-editor .uc-element-card[data-search-target] {
-  outline: 2px solid #4b82c2;
+  outline: 2px solid var(--brand-action);
   outline-offset: 2px;
   border-radius: 10px;
 }

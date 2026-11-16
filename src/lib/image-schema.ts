@@ -1,11 +1,11 @@
 import { artworkURL } from './artwork-route.mjs';
-import { displayTitle } from './display-title.ts';
+import { displayTitle, displayCatalogTitle } from './display-title.ts';
 /** Catalog image facts shared by detail pages, collections and the build audit. */
 import { ORGANIZATION_ID } from './page-seo.ts';
-export const IMAGE_SITE = 'https://ultraclipart.com/';
+export const IMAGE_SITE = 'https://jotclipart.com/';
 export const IMAGE_LICENSE = new URL('license/', IMAGE_SITE).href;
 export const IMAGE_COPYRIGHT =
-  'UltraClipart. Rights in protectable contributions reserved; third-party rights remain with their owners.';
+  'JotClipart. Rights in protectable contributions reserved; third-party rights remain with their owners.';
 
 type CatalogImage = {
   id: string;
@@ -38,7 +38,7 @@ export function imageObject(item: CatalogImage, options: ImageOptions = {}) {
     ...(options.context ? { '@context': 'https://schema.org' } : {}),
     '@type': 'ImageObject',
     '@id': originalImage ? artworkURL(item) + '#image' : `${contentUrl}#image`,
-    name: displayTitle(item.title),
+    name: displayCatalogTitle(item.title),
     description: item.description,
     caption: item.alt,
     contentUrl,
@@ -50,10 +50,10 @@ export function imageObject(item: CatalogImage, options: ImageOptions = {}) {
     creator: {
       '@type': 'Organization',
       '@id': ORGANIZATION_ID,
-      name: 'UltraClipart',
+      name: 'JotClipart',
       url: IMAGE_SITE,
     },
-    creditText: 'UltraClipart',
+    creditText: 'JotClipart',
     copyrightNotice: IMAGE_COPYRIGHT,
     license: IMAGE_LICENSE,
     acquireLicensePage: IMAGE_LICENSE,

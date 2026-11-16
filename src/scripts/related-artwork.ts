@@ -1,4 +1,4 @@
-import { displayTitle } from '../lib/display-title.ts';
+import { displayTitle, displayCatalogTitle } from '../lib/display-title.ts';
 import { FAVORITES_KEY, parseFavoriteIds, toggleStoredFavorite } from '../lib/favorites-storage';
 import type { BrowserRelatedCard, BrowserSnapshot, Mode } from '../lib/related/engine';
 export function initRelatedArtwork() {
@@ -212,7 +212,7 @@ export function initRelatedArtwork() {
       .querySelectorAll<HTMLAnchorElement>('[data-related-detail]')
       .forEach((link) => (link.href = data.href));
     node.querySelector<HTMLElement>('.related-card-title')!.dataset.displayTitle = '';
-    node.querySelector('.related-card-title')!.textContent = displayTitle(data.title);
+    node.querySelector('.related-card-title')!.textContent = displayCatalogTitle(data.title);
     node.querySelector('.related-reason')!.textContent = data.reason;
     const image = node.querySelector('img')!;
     // A sample clone must not inherit the previous artwork's opened delivery
@@ -228,7 +228,7 @@ export function initRelatedArtwork() {
     image.removeAttribute('sizes');
     image.src = data.webp;
     image.alt = data.alt;
-    image.title = displayTitle(data.title);
+    image.title = displayCatalogTitle(data.title);
     node.querySelectorAll<HTMLAnchorElement>('[data-related-download]').forEach((link) => {
       const format = link.dataset.relatedDownload as 'webp' | 'pdf',
         url = data[format];

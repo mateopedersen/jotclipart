@@ -1,6 +1,6 @@
 ---
 import { artworkPath } from '../lib/artwork-route.mjs';
-import { displayTitle } from '../lib/display-title';
+import { displayTitle, displayCatalogTitle } from '../lib/display-title';
 import ContentLink from '../components/ContentLink.astro';
 import Layout from '../layouts/Layout.astro';
 import CatalogCount from '../components/CatalogCount.astro';
@@ -28,7 +28,7 @@ const checklist = [
 
 <Layout
   title="Clipart for Teachers · Worksheets, Slides & Classroom Materials"
-  description="Prepare worksheets, teaching slides, classroom labels and visual instructions with UltraClipart. Find real artwork, practical steps, editing guides and a classroom preparation checklist."
+  description="Prepare worksheets, teaching slides, classroom labels and visual instructions with JotClipart. Find real artwork, practical steps, editing guides and a classroom preparation checklist."
 >
   <script
     slot="head"
@@ -44,7 +44,7 @@ const checklist = [
     <header class="tc-hero">
       <div class="tc-hero-copy">
         <p class="tc-breadcrumb">
-          <a href="/">UltraClipart</a>
+          <a href="/">JotClipart</a>
           <span aria-hidden="true">/</span> For teachers
         </p>
         <p class="tc-free-tag">
@@ -84,7 +84,7 @@ const checklist = [
               href={artworkPath(item)}
             >
               <img
-                title={displayTitle(item.title)}
+                title={displayCatalogTitle(item.title)}
                 src={item.thumb}
                 srcset={item.thumbSrcSet}
                 sizes="(max-width: 540px) 45vw, (max-width: 1000px) 30vw, 240px"
@@ -157,7 +157,7 @@ const checklist = [
     <section class="tc-start" aria-labelledby="teacher-start-title">
       <div class="tc-section-heading">
         <div>
-          <h2 id="teacher-start-title">How to use UltraClipart for teaching</h2>
+          <h2 id="teacher-start-title">How to use JotClipart for teaching</h2>
           <p>
             Bring an illustration into the material you already use, or build the layout in the
             studio.
@@ -299,7 +299,7 @@ const checklist = [
                   {path.pictures.map((item) => (
                     <a href={artworkPath(item)}>
                       <img
-                        title={displayTitle(item.title)}
+                        title={displayCatalogTitle(item.title)}
                         src={item.thumb}
                         srcset={item.thumbSrcSet}
                         sizes="(max-width: 540px) 45vw, (max-width: 1000px) 30vw, 240px"
@@ -668,7 +668,7 @@ const checklist = [
         </summary>
         <p>
           <strong>
-            UltraClipart catalog artwork and starters are free for personal and educational use.
+            JotClipart catalog artwork and starters are free for personal and educational use.
           </strong>{' '}
           This includes classroom worksheets and student assignments. Commercial use and resale are
           not permitted. Edited versions keep the same restrictions.{' '}
@@ -726,7 +726,7 @@ const checklist = [
         Need help with a particular step? <a href="/guides/">Open the illustrated guides</a>.
       </p>
       <a class="tc-text-link" href="/contact/">
-        Contact UltraClipart
+        Contact JotClipart
         <TeacherArrow size={27} />
       </a>
     </footer>

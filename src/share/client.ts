@@ -43,7 +43,7 @@ async function imageFile(options: ShareOptions, signal: AbortSignal): Promise<Bl
     return options.blob;
   }
   const url = new URL(options.imageUrl || '', location.origin);
-  if (![location.origin, SITE, 'https://assets.ultraclipart.com'].includes(url.origin))
+  if (![location.origin, SITE, 'https://assets.jotclipart.com'].includes(url.origin))
     throw new Error('The image source is unavailable.');
   const response = await fetch(url, {
     signal,
@@ -187,8 +187,8 @@ export async function openShare(options: ShareOptions): Promise<void> {
   q('.uc-share-art-title').textContent = title;
   q('.uc-share-origin').textContent =
     options.kind === 'catalog'
-      ? 'Found on UltraClipart'
-      : 'Made with UltraClipart · private until you publish';
+      ? 'Found on JotClipart'
+      : 'Made with JotClipart · private until you publish';
   q<HTMLInputElement>('#uc-share-title').value = title.slice(0, 100);
   q<HTMLDetailsElement>('.uc-share-publish').hidden = options.kind !== 'creation';
   q<HTMLImageElement>('.uc-share-preview img').alt = title;
@@ -268,7 +268,7 @@ export async function openShare(options: ShareOptions): Promise<void> {
       ? 'Some platforms only attach the link. Copy your caption to paste it into the post.'
       : 'Share the image directly, or create a public link below to use social posting buttons.';
     q<HTMLAnchorElement>('.uc-share-email').href =
-      `mailto:?${new URLSearchParams({ subject: title + ' — UltraClipart', body: `${text.value}\n${url || source}` }).toString().replace(/\+/g, '%20')}`;
+      `mailto:?${new URLSearchParams({ subject: title + ' — JotClipart', body: `${text.value}\n${url || source}` }).toString().replace(/\+/g, '%20')}`;
     q<HTMLButtonElement>('.uc-share-more').hidden = !navigator.share || !url;
   }
   updateLinks();
@@ -279,7 +279,7 @@ export async function openShare(options: ShareOptions): Promise<void> {
   q('.uc-share-copy-caption').addEventListener(
     'click',
     () =>
-      void copy(`${text.value}\n${url || source}`, 'Caption and UltraClipart link copied.', text),
+      void copy(`${text.value}\n${url || source}`, 'Caption and JotClipart link copied.', text),
   );
   q('.uc-share-download').addEventListener('click', () => {
     if (file) {
@@ -392,7 +392,7 @@ export async function openShare(options: ShareOptions): Promise<void> {
             publishButton.disabled = true;
             remoteImage = undefined;
             q('.uc-share-origin').textContent =
-              'Made with UltraClipart · private until you publish';
+              'Made with JotClipart · private until you publish';
           }
           renderOwned();
           status(
@@ -436,7 +436,7 @@ export async function openShare(options: ShareOptions): Promise<void> {
       const records: unknown[] = Array.isArray(parsed) ? parsed : [parsed];
       if (!records.length || records.length > 1000 || !records.every(validOwned))
         throw new Error(
-          'This is not a valid UltraClipart removal-key backup. Your saved keys are unchanged.',
+          'This is not a valid JotClipart removal-key backup. Your saved keys are unchanged.',
         );
       const merged = new Map(owned().map((record) => [record.id, record]));
       for (const record of records as OwnedShare[]) merged.set(record.id, record);
@@ -554,7 +554,7 @@ export async function openShare(options: ShareOptions): Promise<void> {
             updateLinks();
             renderOwned();
             q<HTMLDetailsElement>('.uc-share-publish').hidden = true;
-            q('.uc-share-origin').textContent = 'Made with UltraClipart · public share link';
+            q('.uc-share-origin').textContent = 'Made with JotClipart · public share link';
             status(
               'Public link created. Copy it or choose a social app. Keep your saved removal key on this device.',
             );

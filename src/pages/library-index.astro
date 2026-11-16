@@ -1,6 +1,6 @@
 ---
 import { artworkPath } from '../lib/artwork-route.mjs';
-import { displayTitle } from '../lib/display-title';
+import { displayTitle, displayCatalogTitle } from '../lib/display-title';
 import Layout from '../layouts/Layout.astro';
 import CatalogCount from '../components/CatalogCount.astro';
 import TeacherSymbol from '../components/TeacherSymbol.astro';
@@ -59,7 +59,7 @@ const tools = [
   },
 ];
 const information = [
-  { href: '/about/', title: 'About UltraClipart' },
+  { href: '/about/', title: 'About JotClipart' },
   ...Object.entries(infoPages).map(([slug, page]) => ({ href: `/${slug}/`, title: page.title })),
   { href: '/cookies/', title: 'Cookie Policy' },
 ];
@@ -67,7 +67,7 @@ const information = [
 
 <Layout
   title="Clipart Library Index — All Subjects, Tools & Guides"
-  description="Find every published UltraClipart subject in one A–Z index. Explore artwork collections, creative tools, practical guides and usage information."
+  description="Find every published JotClipart subject in one A–Z index. Explore artwork collections, creative tools, practical guides and usage information."
   image={highlights[0]?.webp}
   imageAlt={highlights[0]?.alt}
   imageWidth={highlights[0]?.width}
@@ -122,7 +122,7 @@ const information = [
               srcset={image.thumbSrcSet}
               sizes="(max-width: 540px) 25vw, 240px"
               alt={image.alt}
-              title={displayTitle(image.title)}
+              title={displayCatalogTitle(image.title)}
               width="260"
               height="260"
               decoding="async"
@@ -213,7 +213,7 @@ const information = [
                   srcset={item.thumbSrcSet}
                   sizes="88px"
                   alt={item.alt}
-                  title={displayTitle(item.title)}
+                  title={displayCatalogTitle(item.title)}
                   width="88"
                   height="88"
                   loading="lazy"

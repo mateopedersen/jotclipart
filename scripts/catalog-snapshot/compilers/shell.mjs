@@ -1,3 +1,5 @@
+import {auxiliaryTemplates} from '../../../server/catalog-snapshot/auxiliary-routes.mjs';
+import {compileUIImages} from './ui-images.mjs';
 import { clientWorkers } from './client-workers.mjs';
 // Private local SSR experiment. Does not read credentials, upload or activate.
 import { createRequire } from 'node:module';
@@ -19,6 +21,7 @@ const revision = process.env.UC_SNAPSHOT_CODE_REVISION;
 if (!/^[a-f0-9]{40}$/.test(revision ?? ''))
   throw Error('Canonical compiler source revision required');
 const pages = {
+  ...auxiliaryTemplates,
   new: 'new.astro',
   search: 'search.astro',
   monochrome: 'black-and-white.astro',
@@ -67,7 +70,9 @@ for (const match of readFileSync(
   });
 }
 if (screenProofs.length !== 3) throw Error('Complete Studio screenshot crops required');
+const uiImages=await compileUIImages(root,here,revision);
 const aliases = new Map([
+  [join(root,'src/lib/ui-preview.ts'),uiImages.alias],
   [
     join(root, 'src/lib/screen-preview.ts'),
     `const sources=${JSON.stringify(screenUrls)};export async function screenPreview(source,crop){const url=sources[source+'|'+crop.join(',')];if(!url)throw Error('Unbound Studio screenshot');return url;}`,
@@ -170,6 +175,7 @@ const plugin = {
       loader: 'ts',
       resolveDir: dirname(args.path),
     }));
+    builder.onLoad({filter:/\.webp$/},args=>{const assetKey=uiImages.sources.get(args.path);if(!assetKey)throw Error('Unreviewed interface source');return {contents:'export default '+JSON.stringify({assetKey}),loader:'js'}});
     builder.onLoad({ filter: /\.astro$/ }, async (args) => {
       const transformed = await compiler.transform(readFileSync(args.path, 'utf8'), {
         filename: args.path,
@@ -215,7 +221,7 @@ for (const [name, page] of Object.entries(pages)) {
   entries[name] = entry;
   writeFileSync(
     entry,
-    `import {experimental_AstroContainer} from 'astro/container';import Page from ${JSON.stringify(join(root, 'src/pages', page))};import {requestState} from './context.mjs';export async function renderPage(state,url,styles,scriptUrls){return requestState.run(state,async()=>{const container=await experimental_AstroContainer.create({resolve:id=>scriptUrls[id]??(()=>{throw Error('Unresolved script '+id)})()});const html=await container.renderToString(Page,{props:state.props??{},request:new Request(url),partial:false});return html.replace('</head>','<style>'+styles+'</style></head>');});}`,
+    `import {experimental_AstroContainer} from 'astro/container';import Page from ${JSON.stringify(join(root, 'src/pages', page))};import {requestState,current} from './context.mjs';export async function renderPage(state,url,styles,scriptUrls){return requestState.run(state,async()=>{const container=await experimental_AstroContainer.create({resolve:id=>scriptUrls[id]??(()=>{throw Error('Unresolved script '+id)})()});const html=await container.renderToString(Page,{params:current().params??{},props:current().props??{},request:new Request(url),partial:false});return html.replace('</head>','<style>'+styles+'</style></head>');});}`,
   );
 }
 const server = await build({
@@ -329,6 +335,7 @@ const report = {
   astroComponents: [...css.keys()].length,
   compilerDiagnostics: diagnostics,
   screenProofs,
+  uiAssets:uiImages.assets,
   fullCatalogEmbedded: false,
   inputNames,
 };

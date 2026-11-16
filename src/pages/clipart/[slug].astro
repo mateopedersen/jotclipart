@@ -1,6 +1,6 @@
 ---
 import { artworkURL } from '../../lib/artwork-route.mjs';
-import { displayTitle } from '../../lib/display-title';
+import { displayTitle, displayCatalogTitle } from '../../lib/display-title';
 import { imageLoadingPreview } from '../../lib/image-loading-preview';
 import { imageObject } from '../../lib/image-schema';
 import { collectionMetaDescription } from '../../lib/collection-meta.mjs';
@@ -33,7 +33,7 @@ const items = topicArt(topic.slug).sort(
 );
 const topicReady = items.length > 0 && items.every((item) => item.indexable && item.published);
 const firstLoadingPreview = items[0] && imageLoadingPreview(items[0]);
-const title = displayTitle(topic.keyword);
+const title = displayCatalogTitle(topic.keyword);
 const description = reviewedIntro;
 if (!description) throw new Error(`Missing topic introduction: ${topic.slug}`);
 const searchDescription = collectionMetaDescription(description);
@@ -76,7 +76,7 @@ const searchDescription = collectionMetaDescription(description);
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',
         name: title,
-        url: `https://ultraclipart.com/clipart/${topic.slug}/`,
+        url: `https://jotclipart.com/clipart/${topic.slug}/`,
         description,
         mainEntity: {
           '@type': 'ItemList',
@@ -85,7 +85,7 @@ const searchDescription = collectionMetaDescription(description);
             '@type': 'ListItem',
             position: index + 1,
             url: artworkURL(item),
-            name: displayTitle(item.title),
+            name: displayCatalogTitle(item.title),
             item: imageObject(item),
           })),
         },
@@ -137,7 +137,7 @@ const searchDescription = collectionMetaDescription(description);
     flex-wrap: wrap;
     gap: 0.75rem 1.5rem;
     padding-block: 1.5rem;
-    border-top: 1px solid #d5e3f7;
+    border-top: 1px solid var(--brand-soft);
     font-weight: 600;
   }
   .collection-help a {

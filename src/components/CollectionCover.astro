@@ -1,5 +1,5 @@
 ---
-import { displayTitle } from '../lib/display-title';
+import { displayTitle, displayCatalogTitle } from '../lib/display-title';
 import { imageLoadingPreview, loadingPreviewStyle } from '../lib/image-loading-preview';
 interface Props {
   items: {
@@ -33,7 +33,7 @@ const previews = items.slice(0, 3).map((item) => imageLoadingPreview(item));
       <img
         src={item.webp}
         alt={item.alt}
-        title={displayTitle(item.title)}
+        title={displayCatalogTitle(item.title)}
         width={item.width}
         height={item.height}
         loading={priority ? 'eager' : 'lazy'}
@@ -51,9 +51,9 @@ const previews = items.slice(0, 3).map((item) => imageLoadingPreview(item));
 </div>
 <style>
   .collection-cover {
-    --cover-a: #e8f3ff;
-    --cover-b: #c2dafa;
-    --cover-c: #84b3e6;
+    --cover-a: var(--brand-soft);
+    --cover-b: var(--brand-border);
+    --cover-c: var(--brand-border);
     position: relative;
     isolation: isolate;
     aspect-ratio: 1.6;
@@ -79,7 +79,7 @@ const previews = items.slice(0, 3).map((item) => imageLoadingPreview(item));
   }
   .collection-cover-lavender {
     --cover-a: #f3eeff;
-    --cover-b: #d9cff7;
+    --cover-b: var(--brand-soft);
     --cover-c: #afa1d5;
   }
   .collection-cover-sand {

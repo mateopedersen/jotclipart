@@ -1,6 +1,6 @@
 ---
 import { artworkPath } from '../../lib/artwork-route.mjs';
-import { displayTitle } from '../../lib/display-title';
+import { displayTitle, displayCatalogTitle } from '../../lib/display-title';
 import { imageLoadingPreview, loadingPreviewStyle } from '../../lib/image-loading-preview';
 import { imageObject } from '../../lib/image-schema';
 import { downloadDetails } from '../../lib/download-data';
@@ -42,7 +42,7 @@ const downloadRecord = {
 ---
 
 <Layout
-  title={displayTitle(item.title)}
+  title={displayCatalogTitle(item.title)}
   description={item.description}
   noindex={!item.indexable}
   image={item.webp}
@@ -90,7 +90,7 @@ const downloadRecord = {
         aria-label={`Open original image: ${item.title}`}
       >
         <img
-          title={displayTitle(item.title)}
+          title={displayCatalogTitle(item.title)}
           src={originalImage}
           alt={item.alt}
           width={item.width}
@@ -150,7 +150,7 @@ const downloadRecord = {
     </div>
     <section>
       <p class="eyebrow">{item.layered ? 'Original Illustration' : displayTitle(topic.keyword)}</p>
-      <h1 data-display-title>{displayTitle(item.title)}</h1>
+      <h1 data-display-title>{displayCatalogTitle(item.title)}</h1>
       <div class="art-detail-badges">
         {item.alpha && (
           <span class="art-alpha-badge">
@@ -291,7 +291,7 @@ const downloadRecord = {
       </div>
       <button
         data-favorite={item.id}
-        data-favorite-title={displayTitle(item.title)}
+        data-favorite-title={displayCatalogTitle(item.title)}
         data-favorite-thumb={item.thumb}
         aria-pressed="false"
         style="width:100%"
@@ -304,7 +304,7 @@ const downloadRecord = {
         Free for personal and educational use. No commercial use or resale as clipart.{' '}
         <a href="/license/">License details →</a>
         <span class="art-image-credit">
-          Published by UltraClipart. Rights in protectable contributions reserved; third-party
+          Published by JotClipart. Rights in protectable contributions reserved; third-party
           rights remain with their owners.
         </span>
       </p>

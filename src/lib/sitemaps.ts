@@ -6,7 +6,7 @@ import {
 import { guides } from './guides.ts';
 import { primaryClusterForTopic } from './topic-clusters.ts';
 import { activeCuratedCollections } from './curated-collection-policy.mjs';
-const SITE = 'https://ultraclipart.com/';
+const SITE = 'https://jotclipart.com/';
 const XML = '<?xml version="1.0" encoding="UTF-8"?>';
 const NS = 'http://www.sitemaps.org/schemas/sitemap/0.9';
 

@@ -1,6 +1,7 @@
+import { freeCatalogTitle } from './brand.mjs';
 /** Presentation only: keep reviewed words, IDs, artwork and personal text intact. */
 const spellings: Record<string, string> = {
-  ultraclipart: 'UltraClipart', iphone: 'iPhone', ipad: 'iPad', ipod: 'iPod',
+  ultraclipart: 'UltraClipart', jotclipart: 'JotClipart', iphone: 'iPhone', ipad: 'iPad', ipod: 'iPod',
   imac: 'iMac', macbook: 'MacBook', macos: 'macOS', ios: 'iOS',
   chatgpt: 'ChatGPT', openai: 'OpenAI', webp: 'WebP', pdf: 'PDF', png: 'PNG',
   jpg: 'JPG', jpeg: 'JPEG', svg: 'SVG', docx: 'DOCX', ai: 'AI', usa: 'USA', '3d': '3D',
@@ -12,4 +13,8 @@ export function displayTitle(value: string): string {
     if (/[a-z][A-Z]/.test(word)) return word;
     return word[0].toLocaleUpperCase('en-US') + word.slice(1);
   });
+}
+
+export function displayCatalogTitle(value: string): string {
+  return freeCatalogTitle(displayTitle(value));
 }

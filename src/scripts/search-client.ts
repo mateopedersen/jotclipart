@@ -1,4 +1,4 @@
-import { displayTitle } from '../lib/display-title.ts';
+import { displayTitle, displayCatalogTitle } from '../lib/display-title.ts';
 import {adoptCatalogSnapshot} from '../lib/catalog-snapshot-client';
 import { defaults, normalizeQuery, parseState, stateParams, type SearchState } from '../lib/search';
 import { SearchRepository, type RemoteResults } from '../lib/search-remote';
@@ -62,7 +62,7 @@ export function initSearch() {
         kind.className = 'site-search-kind';
         kind.textContent = searchKindLabels[entry.kind];
         const title = document.createElement('strong');
-        title.textContent = displayTitle(entry.title);
+        title.textContent = (['topic','collection'].includes(entry.kind) ? displayCatalogTitle : displayTitle)(entry.title);
         const description = document.createElement('p');
         description.textContent = entry.description;
         link.append(kind, title, description);
@@ -100,7 +100,7 @@ export function initSearch() {
     q('#close-matches').hidden = true;
     q('#topic-suggestions').hidden = true;
     q('#no-exact-artwork').hidden = true;
-    count.textContent = 'Searching UltraClipart…';
+    count.textContent = 'Searching JotClipart…';
     document.documentElement.setAttribute('data-search-pending', '');
     siteLimit = 8;
     void requests.run<{

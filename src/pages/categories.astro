@@ -1,5 +1,5 @@
 ---
-import { displayTitle } from '../lib/display-title';
+import { displayTitle, displayCatalogTitle } from '../lib/display-title';
 import { imageLoadingPreview } from '../lib/image-loading-preview';
 import Layout from '../layouts/Layout.astro';
 import CatalogCount from '../components/CatalogCount.astro';
@@ -17,7 +17,7 @@ const heroSubjects = ['fox', 'strawberry', 'school', 'butterfly']
   .slice(0, 4);
 const title = 'Clipart Categories: Animals, Holidays, Baby & More';
 const description = `Explore ${categorySubjects.length} clipart topics and ${total.toLocaleString('en-US')} illustrations. Browse visual collections, find a subject, and download images or printable PDFs.`;
-const pageUrl = 'https://ultraclipart.com/categories/';
+const pageUrl = 'https://jotclipart.com/categories/';
 const firstLoadingPreviews = [
   ...new Map(
     [...heroSubjects, ...categorySubjects.slice(0, 3)].flatMap((subject) => {
@@ -45,7 +45,7 @@ const schema = {
       '@type': 'ListItem',
       position: index + 1,
       name: subject.keyword,
-      url: `https://ultraclipart.com/clipart/${subject.slug}/`,
+      url: `https://jotclipart.com/clipart/${subject.slug}/`,
     })),
   },
 };
@@ -348,7 +348,7 @@ const schema = {
                 </div>
                 <div class="subject-label">
                   <div>
-                    <h3 data-display-title>{displayTitle(subject.name)}</h3>
+                    <h3 data-display-title>{displayCatalogTitle(subject.name)}</h3>
                     <span class="subject-count">
                       <CatalogCount kind="topic" countKey={subject.slug} unit="illustration" />
                     </span>

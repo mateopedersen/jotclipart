@@ -1,5 +1,5 @@
 ---
-import { displayTitle } from '../../lib/display-title';
+import { displayTitle, displayCatalogTitle } from '../../lib/display-title';
 import { imageLoadingPreview } from '../../lib/image-loading-preview';
 import { imageObject } from '../../lib/image-schema';
 import { structuredData } from '../../lib/structured-data';
@@ -36,7 +36,7 @@ const ts = curated?.topics ?? availableTopics.filter((t) => topicInCluster(t, cl
 const topicIDs = new Set(ts.map((t) => t.slug));
 const items = curated?.items ?? art.filter((a) => topicIDs.has(a.topic));
 const previews = curated?.previews ?? primary?.previews ?? items.slice(0, 3);
-const title = displayTitle(curated?.title ?? primary?.title ?? cluster);
+const title = displayCatalogTitle(curated?.title ?? primary?.title ?? cluster);
 const firstLoadingPreviews = previews.flatMap((item) => {
   const preview = imageLoadingPreview(item);
   return preview ? [preview] : [];
@@ -163,26 +163,26 @@ const visibleArtwork = [
     line-height: 1.15;
     letter-spacing: -0.025em;
     margin: 0 0 20px;
-    color: #183857;
+    color: var(--brand-ink);
   }
   .themed-collection-hero p {
     font-size: 17px;
     line-height: 1.7;
-    color: #45627b;
+    color: var(--brand-action);
     margin: 0 0 16px;
     max-width: 65ch;
   }
   .themed-collection-hero .themed-collection-inventory {
     font-size: 14px;
     font-weight: 600;
-    color: #285d91;
+    color: var(--brand-action);
   }
   .themed-collection h2,
   #collection-artwork-heading {
     font-size: 22px;
     font-weight: 600;
     margin: 0 0 18px;
-    color: #193552;
+    color: var(--brand-ink);
   }
   @media (max-width: 720px) {
     .themed-collection-hero {

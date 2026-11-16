@@ -1,5 +1,5 @@
 ---
-import { displayTitle } from '../lib/display-title';
+import { displayTitle, displayCatalogTitle } from '../lib/display-title';
 import { imageLoadingPreview } from '../lib/image-loading-preview';
 import { publishedArt as art, slugify, availableClusters } from '../lib/catalog';
 import CatalogCount from './CatalogCount.astro';
@@ -80,7 +80,7 @@ const seasons = [
             return (
               <span class={`seasonal-object seasonal-object-${i}`}>
                 <img
-                  title={displayTitle(image.title)}
+                  title={displayCatalogTitle(image.title)}
                   src={image.thumb}
                   srcset={image.thumbSrcSet}
                   sizes="(max-width: 540px) 34vw, 160px"
@@ -116,7 +116,7 @@ const seasons = [
 <style>
   .seasonal-showcase {
     margin: 0;
-    color: #1b3557;
+    color: var(--brand-ink);
   }
   .seasonal-heading {
     display: flex;
@@ -127,7 +127,7 @@ const seasons = [
   }
   .seasonal-heading p {
     margin: 0 0 9px;
-    color: #46688c;
+    color: var(--brand-action);
     font:
       650 13px/1.5 'UltraClipart Sans',
       Arial,
@@ -135,7 +135,7 @@ const seasons = [
   }
   .seasonal-heading h2 {
     margin: 0;
-    color: #183557;
+    color: var(--brand-ink);
     font:
       750 clamp(27px, 3vw, 36px)/1.2 'UltraClipart Sans',
       Arial,
@@ -147,7 +147,7 @@ const seasons = [
     align-items: center;
     gap: 16px;
     flex-shrink: 0;
-    color: #155bb6;
+    color: var(--brand-action);
     font-size: 13px;
     font-weight: 650;
     padding: 8px 0;
@@ -162,11 +162,11 @@ const seasons = [
     flex-direction: column;
     min-width: 0;
     overflow: hidden;
-    border: 1px solid #dee5ee;
+    border: 1px solid var(--brand-soft);
     border-radius: 21px;
     background: #fff;
     text-decoration: none;
-    box-shadow: 0 5px 0 #edf2f9;
+    box-shadow: 0 5px 0 var(--brand-soft);
     transition:
       transform 0.2s,
       border-color 0.2s,
@@ -174,9 +174,9 @@ const seasons = [
   }
   .seasonal-card:hover {
     transform: translateY(-5px);
-    border-color: #91b2df;
+    border-color: var(--brand-border);
     box-shadow:
-      0 7px 0 #dfe9f7,
+      0 7px 0 var(--brand-soft),
       0 17px 22px #294c7a13;
   }
   .seasonal-scene {
@@ -191,7 +191,7 @@ const seasons = [
     background: radial-gradient(ellipse at 40% 10%, #fffaf0, #eee5cf);
   }
   .seasonal-winter .seasonal-scene {
-    background: radial-gradient(ellipse at 40% 10%, #fcffff, #e1edf5);
+    background: radial-gradient(ellipse at 40% 10%, #fcffff, var(--brand-soft));
   }
   .seasonal-love .seasonal-scene {
     background: radial-gradient(ellipse at 40% 10%, #fffafc, #f4e5ea);
@@ -220,9 +220,9 @@ const seasons = [
       0 16px 18px #69574320;
   }
   .seasonal-winter .seasonal-platform {
-    background: linear-gradient(#fff, #d0e3f0);
+    background: linear-gradient(#fff, var(--brand-border));
     box-shadow:
-      0 5px 0 #b9cfde,
+      0 5px 0 var(--brand-border),
       0 16px 18px #36577520;
   }
   .seasonal-love .seasonal-platform {
@@ -279,7 +279,7 @@ const seasons = [
       sans-serif;
   }
   .seasonal-winter .seasonal-count {
-    color: #42647e;
+    color: var(--brand-action);
   }
   .seasonal-love .seasonal-count {
     color: #775367;
@@ -300,14 +300,14 @@ const seasons = [
     margin-bottom: 10px;
   }
   .seasonal-winter .seasonal-label {
-    color: #476a84;
+    color: var(--brand-action);
   }
   .seasonal-love .seasonal-label {
     color: #8a4d69;
   }
   .seasonal-copy h3 {
     margin: 0 0 13px;
-    color: #1b3557;
+    color: var(--brand-ink);
     font:
       750 22px/1.25 'UltraClipart Sans',
       Arial,
@@ -316,7 +316,7 @@ const seasons = [
   }
   .seasonal-copy p {
     margin: 0 0 24px;
-    color: #455f7e;
+    color: var(--brand-action);
     font-size: 13px;
     line-height: 1.75;
   }
@@ -326,14 +326,14 @@ const seasons = [
     justify-content: space-between;
     gap: 10px;
     margin-top: auto;
-    color: #155bb6;
+    color: var(--brand-action);
     font:
       650 12px/1.6 'UltraClipart Sans',
       Arial,
       sans-serif;
   }
   .seasonal-card:focus-visible {
-    outline: 3px solid #246ad0;
+    outline: 3px solid var(--brand-action);
     outline-offset: 4px;
   }
   @media (max-width: 1050px) {

@@ -1,5 +1,5 @@
 ---
-import { displayTitle } from '../lib/display-title';
+import { displayTitle, displayCatalogTitle } from '../lib/display-title';
 import relations from '../../data/topic-relations.json';
 import copy from '../../data/collection-copy.json';
 import { availableTopics, publishedArt } from '../lib/catalog';
@@ -43,7 +43,7 @@ const related = relatedCollectionSlugs(topic, relations, eligible).flatMap((slug
               srcset={image.thumbSrcSet}
               sizes="64px"
               alt={image.alt}
-              title={displayTitle(image.title)}
+              title={displayCatalogTitle(image.title)}
               width="100"
               height="100"
               loading="lazy"
@@ -52,7 +52,7 @@ const related = relatedCollectionSlugs(topic, relations, eligible).flatMap((slug
             />
           </span>
           <span class="related-collection-copy">
-            <strong data-display-title>{displayTitle(subject.keyword)}</strong>
+            <strong data-display-title>{displayCatalogTitle(subject.keyword)}</strong>
             <span>
               <CatalogCount kind="topic" countKey={subject.slug} unit="illustration" />
             </span>
@@ -91,12 +91,12 @@ const related = relatedCollectionSlugs(topic, relations, eligible).flatMap((slug
     gap: 0.85rem;
     min-width: 0;
     padding: 0.75rem;
-    border: 1px solid #cdddf0;
+    border: 1px solid var(--brand-border);
     border-radius: 16px;
-    color: #1c426e;
-    background: linear-gradient(150deg, #fff, #f3f8ff);
+    color: var(--brand-action);
+    background: linear-gradient(150deg, #fff, var(--brand-page));
     text-decoration: none;
-    box-shadow: 0 3px 0 #e2ecf8;
+    box-shadow: 0 3px 0 var(--brand-soft);
   }
   @container related-collections (min-width: 500px) {
     .related-collection-grid {
@@ -117,11 +117,11 @@ const related = relatedCollectionSlugs(topic, relations, eligible).flatMap((slug
     }
   }
   .related-collection-link:hover {
-    border-color: #609bdc;
-    background: #edf5ff;
+    border-color: var(--brand-action);
+    background: var(--brand-page);
   }
   .related-collection-link:focus-visible {
-    outline: 3px solid #1769d5;
+    outline: 3px solid var(--brand-action);
     outline-offset: 3px;
   }
   .related-collection-image {
@@ -151,7 +151,7 @@ const related = relatedCollectionSlugs(topic, relations, eligible).flatMap((slug
     overflow-wrap: anywhere;
   }
   .related-collection-copy > span {
-    color: #526984;
+    color: var(--brand-action);
     font-size: 0.875rem;
     line-height: 1.4;
   }

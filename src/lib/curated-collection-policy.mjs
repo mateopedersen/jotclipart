@@ -173,7 +173,7 @@ export function balancedCollectionIDs(group, byTopic, { limit = 32 } = {}) {
 }
 export function curatedSitemap(topicCounts) {
   const urls = activeCuratedCollections(topicCounts).map(
-    (g) => `<url><loc>https://ultraclipart.com/collection/${g.slug}/</loc></url>`,
+    (g) => `<url><loc>https://jotclipart.com/collection/${g.slug}/</loc></url>`,
   );
   if (!urls.length) return undefined;
   return (

@@ -1,5 +1,5 @@
 ---
-import { displayTitle } from '../lib/display-title';
+import { displayTitle, displayCatalogTitle } from '../lib/display-title';
 import '../styles/site-footer.css';
 import NavigationArrow from './NavigationArrow.astro';
 import { art } from '../lib/catalog';
@@ -51,7 +51,7 @@ const links = [
     subtitle: 'Team & Contact',
     icon: 'boards',
     items: [
-      ['About UltraClipart', '/about/'],
+      ['About JotClipart', '/about/'],
       ['Contact Us', '/contact/'],
       ['Copyright & Corrections', '/copyright/'],
       ['Our Editorial Process', '/editorial-process/'],
@@ -118,7 +118,7 @@ const sculpture = (name: string) =>
             <div class={`footer-art-card footer-art-card-${i}`}>
               <div class="footer-art-paper">
                 <img
-                  title={displayTitle(item.title)}
+                  title={displayCatalogTitle(item.title)}
                   src={item.thumb}
                   srcset={item.thumbSrcSet}
                   sizes="(max-width: 950px) 120px, (max-width: 1200px) 135px, 150px"
@@ -195,7 +195,7 @@ const sculpture = (name: string) =>
       <div class="footer-brand-lockup">
         <a class="brand footer-brand" href="/">
           <img src="/logo.svg" width="40" height="44" alt="" />
-          <span>UltraClipart</span>
+          <span>JotClipart</span>
         </a>
         <p class="footer-copyright">© {new Date().getFullYear()}</p>
       </div>

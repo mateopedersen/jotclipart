@@ -1,4 +1,4 @@
-export const SEO_SITE = 'https://ultraclipart.com/';
+export const SEO_SITE = 'https://jotclipart.com/';
 export const ORGANIZATION_ID = SEO_SITE + '#organization';
 export const WEBSITE_ID = SEO_SITE + '#website';
 
@@ -18,7 +18,7 @@ export function pageGraph(options: PageOptions) {
   const organization = {
     '@type': 'Organization',
     '@id': ORGANIZATION_ID,
-    name: 'UltraClipart',
+    name: 'JotClipart',
     url: SEO_SITE,
     logo: new URL('favicon-192.png', SEO_SITE).href,
     email: 'ultraclipart@gmail.com',
@@ -26,7 +26,7 @@ export function pageGraph(options: PageOptions) {
   const website = {
     '@type': 'WebSite',
     '@id': WEBSITE_ID,
-    name: 'UltraClipart',
+    name: 'JotClipart',
     url: SEO_SITE,
     inLanguage: 'en-US',
     publisher: { '@id': ORGANIZATION_ID },

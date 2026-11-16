@@ -5,9 +5,9 @@ footer.site-footer {
   font-synthesis: none;
   margin-top: 0;
   padding: 0;
-  border-top: 1px solid #d4e1f0;
-  background: linear-gradient(180deg, #f8fbff 0%, #eef4fc 100%);
-  color: #203a5f;
+  border-top: 1px solid var(--brand-soft);
+  background: linear-gradient(180deg, var(--brand-page) 0%, var(--brand-page) 100%);
+  color: var(--brand-ink);
 }
 .site-footer-inner {
   max-width: 1380px;
@@ -23,16 +23,16 @@ footer.site-footer {
   align-items: center;
   gap: 20px;
   padding: 35px 38px;
-  border: 1px solid #c8daf1;
+  border: 1px solid var(--brand-border);
   border-radius: 26px;
-  background: #f4f8fd;
+  background: var(--brand-page);
   box-shadow: none;
   overflow: hidden;
 }
 .footer-invitation h2 {
   max-width: 19ch;
   margin: 0;
-  color: #193756;
+  color: var(--brand-ink);
   font-size: clamp(30px, 3vw, 40px);
   line-height: 1.2;
   font-weight: 600;
@@ -44,7 +44,7 @@ footer.site-footer {
 .site-footer .footer-invitation-copy > p {
   max-width: 540px;
   margin: 16px 0 25px;
-  color: #435f7e;
+  color: var(--brand-action);
   font-size: 17px;
   line-height: 1.7;
 }
@@ -78,9 +78,9 @@ footer.site-footer {
 }
 .site-footer :is(.footer-explore-button, .footer-studio-button) {
   color: #fff;
-  background: linear-gradient(#3578bc, #2867a8);
-  border-color: #2b67a4;
-  border-bottom-color: #1d5088;
+  background: linear-gradient(var(--brand-action), var(--brand-action));
+  border-color: var(--brand-action);
+  border-bottom-color: var(--brand-action);
   box-shadow:
     0 1px 0 #b4d5f580 inset,
     0 3px 6px #275d9c18;
@@ -94,7 +94,7 @@ footer.site-footer {
 }
 .footer-invitation-actions a:hover {
   transform: translateY(-1px);
-  background: linear-gradient(#3e83c7, #2d70b2);
+  background: linear-gradient(var(--brand-action), var(--brand-action));
   box-shadow:
     0 1px 0 #b4d5f580 inset,
     0 4px 8px #275d9c24;
@@ -113,7 +113,7 @@ footer.site-footer {
 .footer-art-card {
   min-width: 0;
   padding: 8px;
-  border: 1px solid #d3e1f1;
+  border: 1px solid var(--brand-soft);
   border-radius: 9px;
   background: #fff;
 }
@@ -132,7 +132,7 @@ footer.site-footer {
 .footer-art-card > span {
   display: block;
   margin-top: 8px;
-  color: #3c5c80;
+  color: var(--brand-action);
   font-size: 11px;
   font-weight: 500;
   text-align: center;
@@ -146,7 +146,7 @@ footer.site-footer {
   gap: 28px;
   margin-top: 28px;
   padding: 27px 3px 30px;
-  border-top: 1px solid #d1dff0;
+  border-top: 1px solid var(--brand-soft);
 }
 .footer-brand-lockup {
   grid-area: brand;
@@ -158,7 +158,7 @@ footer.site-footer {
 .site-footer .footer-copyright {
   margin: 0;
   padding-inline-start: 45px;
-  color: #193858;
+  color: var(--brand-ink);
   font-family: inherit;
   font-size: 15px;
   font-weight: 700;
@@ -169,7 +169,7 @@ footer.site-footer {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  color: #193858;
+  color: var(--brand-ink);
   font-size: 25px;
   font-weight: 700;
   line-height: 1;
@@ -191,13 +191,13 @@ footer.site-footer {
   min-width: 0;
   max-width: 620px;
   margin: 0;
-  color: #3e6184;
+  color: var(--brand-action);
   font-size: 16px;
   font-weight: 600;
   line-height: 1.55;
 }
 .site-footer .footer-message strong {
-  color: #183e66;
+  color: var(--brand-ink);
   font-size: clamp(18px, 1.5vw, 20px);
   font-weight: 700;
   line-height: 1.4;
@@ -215,8 +215,8 @@ footer.site-footer {
 }
 .footer-nav-card {
   min-width: 0;
-  border: 1px solid #cddded;
-  border-bottom: 3px solid #c1d2e6;
+  border: 1px solid var(--brand-border);
+  border-bottom: 3px solid var(--brand-border);
   border-radius: 19px;
   background: #fff;
   box-shadow: none;
@@ -236,7 +236,7 @@ footer.site-footer {
   align-items: center;
   gap: 8px;
   margin: 0;
-  color: #233e60;
+  color: var(--brand-ink);
   line-height: 1.3;
   font-size: 16px;
 }
@@ -258,7 +258,7 @@ footer.site-footer {
   letter-spacing: -0.02em;
 }
 .footer-nav-card h3 small {
-  color: #54708e;
+  color: var(--brand-action);
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
@@ -270,17 +270,17 @@ footer.site-footer {
   margin-left: auto;
   width: 22px;
   height: 22px;
-  border: 1px solid #d1dfef;
+  border: 1px solid var(--brand-border);
   border-radius: 7px;
-  background: linear-gradient(#fff, #e9f1fc);
-  box-shadow: 0 2px 0 #d5e2f1;
+  background: linear-gradient(#fff, var(--brand-soft));
+  box-shadow: 0 2px 0 var(--brand-soft);
   flex-shrink: 0;
 }
 .footer-group-toggle > span {
   position: absolute;
   width: 8px;
   height: 2px;
-  background: #476e9b;
+  background: var(--brand-action);
   border-radius: 2px;
 }
 .footer-group-toggle > span:last-child {
@@ -296,7 +296,7 @@ footer.site-footer {
   list-style: none;
   margin: 0;
   padding: 5px 0 0;
-  border-top: 1px solid #e0e9f5;
+  border-top: 1px solid var(--brand-soft);
 }
 .footer-nav-card li {
   padding: 0;
@@ -313,7 +313,7 @@ footer.site-footer {
   min-height: 46px;
   padding: 8px;
   border: 1px solid transparent;
-  color: #365577;
+  color: var(--brand-action);
   font-size: 18px;
   font-weight: 600;
   line-height: 1.5;
@@ -334,9 +334,9 @@ footer.site-footer {
   min-width: 0;
 }
 .footer-nav-card nav a:hover {
-  color: #1455a1;
-  border-color: #c9dcef;
-  background: linear-gradient(#f6faff, #eaf3ff);
+  color: var(--brand-action);
+  border-color: var(--brand-border);
+  background: linear-gradient(var(--brand-page), var(--brand-soft));
 }
 .site-footer .footer-back-top {
   grid-area: top;
@@ -346,10 +346,10 @@ footer.site-footer {
   gap: 12px;
   min-height: 48px;
   padding: 10px 15px;
-  border: 1px solid #22568d;
-  border-bottom: 3px solid #173f6a;
+  border: 1px solid var(--brand-action);
+  border-bottom: 3px solid var(--brand-ink);
   border-radius: 10px;
-  background: linear-gradient(#447fb8, #2d6399);
+  background: linear-gradient(var(--brand-action), var(--brand-action));
   box-shadow:
     inset 0 1px 0 #a9c8e68c,
     0 3px 6px #244d7412;
@@ -364,18 +364,18 @@ footer.site-footer {
     box-shadow 0.14s;
 }
 .site-footer .footer-back-top:hover {
-  background: linear-gradient(#528dc4, #376fa6);
+  background: linear-gradient(var(--brand-action), var(--brand-action));
   color: #fff;
   box-shadow:
     inset 0 1px 0 #bfd9ee9c,
     0 4px 9px #244d7420;
 }
 .site-footer .footer-back-top:active {
-  background: linear-gradient(#2d6399, #3975ac);
+  background: linear-gradient(var(--brand-action), var(--brand-action));
   box-shadow: inset 0 2px 4px #173f6a40;
 }
 .site-footer :is(a, summary):focus-visible {
-  outline: 3px solid #2068bc;
+  outline: 3px solid var(--brand-action);
   outline-offset: 4px;
 }
 @media (min-width: 1201px) {

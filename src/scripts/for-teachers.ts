@@ -82,7 +82,7 @@ if (teacherPage && taskNavigation) {
         ...steps,
         `Adapt for your class\n${adapt}`,
         `${action.textContent!.trim()}\n${action.href}`,
-        `UltraClipart teacher resources\n${location.origin}/for-teachers/`,
+        `JotClipart teacher resources\n${location.origin}/for-teachers/`,
       ].join('\n\n');
       copy.disabled = true;
       try {

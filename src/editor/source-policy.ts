@@ -16,7 +16,7 @@ export function verifiedSourceUrl(
     !url.pathname.includes('..') &&
     !url.pathname.includes('//');
   const local = url.origin === origin && /^\/(catalog|pilot)\//.test(url.pathname);
-  const remote = url.origin === 'https://assets.ultraclipart.com';
+  const remote = url.origin === 'https://assets.jotclipart.com';
   if (
     !safePath ||
     (!local && !remote) ||

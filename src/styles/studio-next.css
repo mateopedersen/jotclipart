@@ -6,15 +6,15 @@
   width: 100%;
   max-width: none;
   padding: 16px;
-  border: 1px solid #d6e2f2;
+  border: 1px solid var(--brand-soft);
   border-radius: 18px;
-  background: #f7f9fd;
+  background: var(--brand-page);
   font-family: inherit;
 }
 .uc-next .uc-command {
   align-items: center;
   padding-bottom: 12px;
-  border-bottom: 1px solid #dce5f1;
+  border-bottom: 1px solid var(--brand-soft);
   margin-bottom: 12px;
 }
 .uc-editor.uc-next .uc-command :is(h1, h2) {
@@ -64,8 +64,8 @@
 }
 .wb-launchbar kbd {
   font-size: 11px;
-  color: #36516f;
-  background: #eff4fa;
+  color: var(--brand-action);
+  background: var(--brand-soft);
   border-radius: 4px;
   padding: 3px;
 }
@@ -137,9 +137,9 @@
   font-size: 13px;
 }
 .uc-editor.uc-next[data-work-mode] .uc-tools button[aria-pressed='true'] {
-  background: #eaf2ff;
+  background: var(--brand-soft);
   box-shadow: inset 3px 0 var(--brand-accent);
-  border-color: #d6e4fb;
+  border-color: var(--brand-soft);
 }
 .uc-editor.uc-next[data-work-mode] .uc-canvas-column {
   grid-area: canvas;
@@ -159,7 +159,7 @@
   min-height: 44px;
   padding: 6px 9px;
   background: #fff;
-  border: 1px solid #dce5f1;
+  border: 1px solid var(--brand-soft);
   border-radius: 10px;
   order: 0;
 }
@@ -168,7 +168,7 @@
   font-size: 12px;
   max-width: 240px;
   overflow-wrap: anywhere;
-  color: #405b7b;
+  color: var(--brand-action);
 }
 .uc-editor.uc-next .wb-context button {
   display: inline-flex;
@@ -178,7 +178,7 @@
   padding: 6px 9px;
   min-height: 34px;
   border: 0;
-  background: #f2f6fc;
+  background: var(--brand-page);
 }
 .uc-editor.uc-next[data-work-mode] .uc-stage {
   order: 1;
@@ -188,8 +188,8 @@
   min-height: 300px;
   max-height: none;
   border-radius: 10px;
-  background: #e9eef5;
-  border: 1px solid #d5e0ee;
+  background: var(--brand-soft);
+  border: 1px solid var(--brand-soft);
   overflow: auto;
   isolation: isolate;
 }
@@ -197,10 +197,10 @@
   flex: none;
   background-color: #fff;
   background-image:
-    linear-gradient(45deg, #f2f4f8 25%, transparent 25%),
-    linear-gradient(-45deg, #f2f4f8 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, #f2f4f8 75%),
-    linear-gradient(-45deg, transparent 75%, #f2f4f8 75%);
+    linear-gradient(45deg, var(--brand-page) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--brand-page) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--brand-page) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--brand-page) 75%);
   background-size: 16px 16px;
   background-position:
     0 0,
@@ -225,7 +225,7 @@
   pointer-events: none;
   max-width: min(400px, 90%);
   background: #ffffffdd;
-  border: 1px solid #e3eaf3;
+  border: 1px solid var(--brand-soft);
   border-radius: 12px;
 }
 .uc-editor.uc-next .uc-empty-canvas strong {
@@ -274,7 +274,7 @@
   gap: 10px;
   align-items: center;
   flex-wrap: wrap;
-  color: #4c6381;
+  color: var(--brand-action);
   font-size: 11px;
   min-height: 26px;
 }
@@ -293,7 +293,7 @@
   min-height: 0;
   max-height: none;
   overflow: hidden;
-  border: 1px solid #d5e0ee;
+  border: 1px solid var(--brand-soft);
   border-radius: 12px;
   background: #fff;
 }
@@ -301,7 +301,7 @@
   flex: 0 0 auto;
   padding: 12px 13px;
   background: #fff;
-  border-bottom: 1px solid #e0e8f4;
+  border-bottom: 1px solid var(--brand-soft);
 }
 .uc-editor.uc-next .uc-inspector-heading {
   gap: 8px;
@@ -339,7 +339,7 @@
   flex: 0 0 auto;
   padding: 8px;
   gap: 5px;
-  background: #f8faff;
+  background: var(--brand-page);
 }
 .uc-editor.uc-next .uc-inspector-footer button {
   min-height: 36px;
@@ -376,9 +376,9 @@
   width: min(660px, calc(100vw - 24px));
   max-height: calc(100dvh - 30px);
   padding: 22px;
-  border: 1px solid #cbdcf2;
+  border: 1px solid var(--brand-border);
   border-radius: 18px;
-  color: #1c3656;
+  color: var(--brand-ink);
   overflow: auto;
   box-shadow: 0 25px 100px #16345940;
 }
@@ -399,7 +399,7 @@
 .uc-next .wb-dialog header p {
   margin: 5px 0 0;
   font-size: 13px;
-  color: #526b89;
+  color: var(--brand-action);
 }
 .uc-next .wb-dialog header > button {
   min-width: 40px;
@@ -420,7 +420,7 @@
   font-size: 16px;
   min-height: 44px;
   padding: 10px 12px;
-  border: 1px solid #bcd0ea;
+  border: 1px solid var(--brand-border);
   border-radius: 8px;
   width: 100%;
   max-width: 100%;
@@ -457,9 +457,9 @@
 .wb-command-row {
   display: flex;
   gap: 6px;
-  border: 1px solid #dbe5f2;
+  border: 1px solid var(--brand-soft);
   border-radius: 10px;
-  background: #f8faff;
+  background: var(--brand-page);
 }
 .uc-next .wb-command-row > button:first-child {
   display: flex;
@@ -480,7 +480,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
-  color: #526b89;
+  color: var(--brand-action);
 }
 .uc-next .wb-command-row > button:last-child {
   min-width: 42px;
@@ -505,7 +505,7 @@
   font: 14px/1.7 inherit;
 }
 .wb-footnote {
-  color: #526b89;
+  color: var(--brand-action);
   font-size: 12px;
   line-height: 1.5;
 }
@@ -607,14 +607,14 @@
 }
 .uc-next .wb-library-filters {
   margin: 12px 0 !important;
-  border: 1px solid #dbe5f2;
+  border: 1px solid var(--brand-soft);
   border-radius: 8px;
   padding: 0 10px;
 }
 .uc-next .wb-library-filters summary {
   padding: 10px 0 !important;
   min-height: 40px;
-  color: #355a87;
+  color: var(--brand-action);
   font-size: 13px;
 }
 .wb-command-row button:disabled {
@@ -644,7 +644,7 @@
   cursor: pointer;
   padding: 8px 12px;
   min-height: 40px;
-  border: 1px solid #d4e0ef;
+  border: 1px solid var(--brand-soft);
   border-radius: 8px;
   background: white;
   font-size: 13px;
@@ -656,7 +656,7 @@
   top: calc(100% + 6px);
   z-index: 690;
   background: white;
-  border: 1px solid #cbdcf1;
+  border: 1px solid var(--brand-border);
   padding: 7px;
   border-radius: 10px;
   box-shadow: 0 12px 35px #1e365833;
@@ -765,7 +765,7 @@
 }
 .uc-editor.uc-next .uc-library-pagination {
   padding: 8px 0 0;
-  border-top: 1px solid #e1e9f3;
+  border-top: 1px solid var(--brand-soft);
   gap: 6px;
 }
 .uc-editor.uc-next .uc-library-pagination button {
@@ -873,7 +873,7 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 16px;
-  border-top: 1px solid #dce5f1;
+  border-top: 1px solid var(--brand-soft);
   padding-top: 12px;
 }
 .wb-command-dialog .wb-results {
@@ -893,11 +893,11 @@
   min-height: 30px;
   font-size: 11px;
   color: var(--brand-accent);
-  background: #edf4ff;
+  background: var(--brand-page);
   border: 0;
 }
 .wb-library-path span {
-  color: #526a86;
+  color: var(--brand-action);
   font-size: 11px;
 }
 .uc-editor.uc-next .wb-category-tile {
@@ -908,8 +908,8 @@
   padding: 9px 5px;
   height: 130px;
   gap: 4px;
-  background: #f6f9ff;
-  border: 1px solid #d8e5f5;
+  background: var(--brand-page);
+  border: 1px solid var(--brand-soft);
   border-radius: 9px;
   min-width: 0;
   text-align: center;
@@ -927,7 +927,7 @@
 .wb-category-tile small {
   font-size: 10px;
   font-weight: 400;
-  color: #58718f;
+  color: var(--brand-action);
 }
 .uc-next[data-wb-focus='true'] .uc-stage {
   min-height: 80px;

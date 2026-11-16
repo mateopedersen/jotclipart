@@ -7,12 +7,12 @@ export type ShareOptions = {
   blob?: Blob;
   sourceUrl?: string;
 };
-export const SITE = 'https://ultraclipart.com';
+export const SITE = 'https://jotclipart.com';
 export function publicMediaUrl(value?: string): string | undefined {
   if (!value) return;
   try {
     const url = new URL(value, SITE);
-    if (![SITE, 'https://assets.ultraclipart.com'].includes(url.origin)) return;
+    if (![SITE, 'https://assets.jotclipart.com'].includes(url.origin)) return;
     if (!/\.(?:webp|png|jpe?g)$/i.test(url.pathname)) return;
     return url.origin + url.pathname;
   } catch {
@@ -28,8 +28,8 @@ export function artworkUrl(value: string): string {
 export function caption(kind: ShareOptions['kind'], title: string): string {
   const name = title.trim().replace(/\s+/g, ' ').slice(0, 120) || 'My clipart';
   return kind === 'catalog'
-    ? `I found “${name}” on UltraClipart. A little inspiration for your next creative project!`
-    : `I created “${name}” with UltraClipart. Make something of your own with Clipart Studio or AI Clipart Builder!`;
+    ? `I found “${name}” on JotClipart. A little inspiration for your next creative project!`
+    : `I created “${name}” with JotClipart. Make something of your own with Clipart Studio or AI Clipart Builder!`;
 }
 export function socialLinks(url: string, text: string, imageUrl?: string) {
   const link = artworkUrl(url);

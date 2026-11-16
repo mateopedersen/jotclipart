@@ -1,4 +1,5 @@
 ---
+import { brand, pageDisplayTitle } from '../lib/brand.mjs';
 import { artworkPath } from '../lib/artwork-route.mjs';
 import '../styles/original-image-loading.css';
 import '../styles/global.css';
@@ -26,7 +27,7 @@ import '../styles/image-information.css';
 import '../share/trigger.css';
 import '../share/dialog.css';
 const {
-  title = 'Clipart for Personal & Classroom Projects',
+  title: inputTitle = 'Free Clipart for Personal & Classroom Projects',
   description = 'Explore original seasonal clipart. Edit colors and layers, then download WebP and printable PDF files.',
   noindex = false,
   wide = false,
@@ -37,13 +38,14 @@ const {
   imageHeight,
   socialPage = Astro.url.pathname,
 } = Astro.props;
+const title = pageDisplayTitle(inputTitle, Astro.url.pathname);
 const socialImage = pageSocialImage(socialPage, {
   src: image,
   alt: imageAlt,
   width: imageWidth,
   height: imageHeight,
 });
-const socialImageUrl = new URL(socialImage.src, 'https://ultraclipart.com').href;
+const socialImageUrl = new URL(socialImage.src, 'https://jotclipart.com').href;
 const readingFont =
   Astro.url.pathname === '/for-teachers/' || Astro.url.pathname.startsWith('/guides/');
 const preloadInterfaceFont = !readingFont && !/^\/(?:art|edit)\//.test(Astro.url.pathname);
@@ -100,7 +102,7 @@ const resourceLinks = [
     icon: 'print',
   },
   {
-    label: 'About UltraClipart',
+    label: 'About JotClipart',
     href: '/about/',
     description: 'Meet the team and learn about the site.',
     icon: 'info',
@@ -114,7 +116,7 @@ const browseCurrent =
 const resourcesCurrent =
   resourceLinks.some((link) => Astro.url.pathname === link.href) ||
   Astro.url.pathname.startsWith('/guides/');
-const canonical = new URL(Astro.url.pathname, 'https://ultraclipart.com').href;
+const canonical = new URL(Astro.url.pathname, 'https://jotclipart.com').href;
 const releaseRevision = /^[a-f0-9]{40}$/.test(import.meta.env.PUBLIC_RELEASE_REVISION ?? '')
   ? import.meta.env.PUBLIC_RELEASE_REVISION
   : 'local';
@@ -125,7 +127,7 @@ const releaseRevision = /^[a-f0-9]{40}$/.test(import.meta.env.PUBLIC_RELEASE_REV
   <head>
     <meta charset="UTF-8" />
     <script is:inline set:html={siteNavigationScript}></script>
-    <link rel="preconnect" href="https://assets.ultraclipart.com" />
+    <link rel="preconnect" href="https://assets.jotclipart.com" />
     <script>
       import { initOriginalImageLoading } from '../scripts/original-image-loading';
       initOriginalImageLoading();
@@ -158,18 +160,18 @@ const releaseRevision = /^[a-f0-9]{40}$/.test(import.meta.env.PUBLIC_RELEASE_REV
     )}
     <meta name="viewport" content="width=device-width" />
     <meta name="build-revision" content={releaseRevision} />
-    <title>{title} | UltraClipart</title>
+    <title>{title} | JotClipart</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <meta
       name="robots"
       content={noindex ? 'noindex,follow' : 'index,follow,max-image-preview:large'}
     />
-    <meta property="og:title" content={title + ' | UltraClipart'} />
+    <meta property="og:title" content={title + ' | JotClipart'} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="UltraClipart" />
+    <meta property="og:site_name" content="JotClipart" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:image" content={socialImageUrl} />
     <meta property="og:image:secure_url" content={socialImageUrl} />
@@ -178,11 +180,11 @@ const releaseRevision = /^[a-f0-9]{40}$/.test(import.meta.env.PUBLIC_RELEASE_REV
     {socialImage.width && <meta property="og:image:width" content={String(socialImage.width)} />}
     {socialImage.height && <meta property="og:image:height" content={String(socialImage.height)} />}
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title + ' | UltraClipart'} />
+    <meta name="twitter:title" content={title + ' | JotClipart'} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={socialImageUrl} />
     <meta name="twitter:image:alt" content={socialImage.alt} />
-    <meta name="theme-color" content="#2865D2" />
+    <meta name="theme-color" content={brand.primary} />
     <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
     <link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any" />
@@ -208,9 +210,9 @@ const releaseRevision = /^[a-f0-9]{40}$/.test(import.meta.env.PUBLIC_RELEASE_REV
     </a>
     <header class="site-header" data-site-header>
       <div class="site-header-inner">
-        <a class="brand site-brand" href="/" aria-label="UltraClipart home">
+        <a class="brand site-brand" href="/" aria-label="JotClipart home">
           <img src="/logo.svg" width="36" height="40" alt="" />
-          <span>UltraClipart</span>
+          <span>JotClipart</span>
         </a>
         <button
           class="menu-button site-menu-button"
@@ -449,10 +451,10 @@ const releaseRevision = /^[a-f0-9]{40}$/.test(import.meta.env.PUBLIC_RELEASE_REV
     max-width: min(420px, calc(100vw - 36px));
     padding: 14px 18px;
     margin: 0;
-    border: 1px solid #bacce5;
+    border: 1px solid var(--brand-border);
     border-radius: 12px;
     background: #fff;
-    color: #142442;
+    color: var(--brand-ink);
     box-shadow: 0 5px 24px #14244224;
     font-size: 14px;
     line-height: 1.5;

@@ -1,5 +1,5 @@
 ---
-import { displayTitle } from '../lib/display-title';
+import { displayTitle, displayCatalogTitle } from '../lib/display-title';
 import CardFileActions from './CardFileActions.astro';
 import type { RelatedCard } from '../lib/related/engine';
 interface Props {
@@ -16,7 +16,7 @@ const { card } = Astro.props;
 >
   <a class="related-picture" href={card.href} aria-label={card.alt} data-related-detail>
     <img
-      title={displayTitle(card.title)}
+      title={displayCatalogTitle(card.title)}
       src={card.webp}
       alt={card.alt}
       width="400"
@@ -31,12 +31,12 @@ const { card } = Astro.props;
   </a>
   <div class="related-card-copy">
     <a class="related-card-title" data-display-title href={card.href} data-related-detail>
-      {displayTitle(card.title)}
+      {displayCatalogTitle(card.title)}
     </a>
     <p class="related-reason">{card.reason}</p>
     <CardFileActions
       id={card.id}
-      title={displayTitle(card.title)}
+      title={displayCatalogTitle(card.title)}
       webp={card.webp}
       pdf={card.pdf}
       related

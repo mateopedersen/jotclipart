@@ -1,7 +1,7 @@
 /* Categories uses one search-and-filter workspace. Other pages keep their own styles. */
 .category-discovery {
-  --directory-border: #d4e1ef;
-  --directory-muted: #526882;
+  --directory-border: var(--brand-soft);
+  --directory-muted: var(--brand-action);
   color: var(--ink);
   padding: 0;
 }
@@ -13,14 +13,14 @@
   flex-shrink: 0;
 }
 .category-discovery :is(a, button, input, select, summary):focus-visible {
-  outline: 3px solid #377bc0;
+  outline: 3px solid var(--brand-action);
   outline-offset: 3px;
 }
 .discovery-breadcrumb {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: #526882;
+  color: var(--brand-action);
   font-size: 13px;
   margin: 14px 0 18px;
 }
@@ -36,14 +36,14 @@
   align-items: center;
   gap: 45px;
   padding: 38px 42px;
-  border: 1px solid #cddff1;
+  border: 1px solid var(--brand-border);
   border-radius: 26px;
   background:
     radial-gradient(ellipse at 90% 15%, #f9ecdb80, transparent 40%),
-    radial-gradient(ellipse at 10% 90%, #e5efff, transparent 65%), #f7fbff;
+    radial-gradient(ellipse at 10% 90%, var(--brand-soft), transparent 65%), var(--brand-page);
   box-shadow:
     inset 0 2px #fff,
-    0 5px 0 #edf3fa;
+    0 5px 0 var(--brand-soft);
   margin-bottom: 34px;
   overflow: hidden;
 }
@@ -58,7 +58,7 @@
   gap: 11px;
   margin: 0 0 18px;
   padding: 6px 15px 6px 7px;
-  border: 1px solid #d5e3f2;
+  border: 1px solid var(--brand-soft);
   border-radius: 14px;
   background: #ffffffbc;
   box-shadow: 0 3px 0 #dce8f580;
@@ -78,14 +78,14 @@
   line-height: 1.13;
   letter-spacing: -0.025em;
   font-weight: 700;
-  color: #153151;
+  color: var(--brand-ink);
   margin: 0 0 18px;
 }
 .discovery-hero h1 span {
   color: var(--brand-accent);
 }
 .discovery-lead {
-  color: #4d6680;
+  color: var(--brand-action);
   font-size: 16px;
   line-height: 1.7;
   max-width: 510px;
@@ -108,17 +108,17 @@
   gap: 5px;
 }
 .discovery-stats div + div {
-  border-left: 1px solid #cddcea;
+  border-left: 1px solid var(--brand-border);
   padding-left: 24px;
 }
 .discovery-stats dt {
-  color: #536c84;
+  color: var(--brand-action);
   font-size: 11px;
   line-height: 1.4;
 }
 .discovery-stats dd {
   margin: 0;
-  color: #284d70;
+  color: var(--brand-action);
   font-size: 23px;
   font-weight: 700;
   letter-spacing: -0.025em;
@@ -131,7 +131,7 @@
   min-height: 44px;
   font-size: 13px;
   font-weight: 650;
-  color: #225f9a;
+  color: var(--brand-action);
 }
 .discovery-moodboard {
   position: relative;
@@ -144,7 +144,7 @@
   position: absolute;
   width: 310px;
   height: 280px;
-  border: 1px dashed #bacde2;
+  border: 1px dashed var(--brand-border);
   border-radius: 50%;
   top: 20px;
   left: 15px;
@@ -164,7 +164,7 @@
   box-shadow: 0 2px 4px #62748725;
 }
 .discovery-scene-orbit::after {
-  background: #88b6e2;
+  background: var(--brand-border);
   width: 10px;
   height: 10px;
   top: auto;
@@ -189,7 +189,7 @@
   box-shadow:
     0 5px 0 #cadbec75,
     0 12px 20px #23476a13;
-  color: #35577c;
+  color: var(--brand-action);
   text-decoration: none;
 }
 .discovery-scene-card .discovery-scene-image {
@@ -223,14 +223,14 @@
 }
 .discovery-scene-card-3 {
   transform: rotate(5deg);
-  background: #edf5ff;
+  background: var(--brand-page);
 }
 .discovery-scene-card-4 {
   transform: rotate(-6deg) translateY(-10px);
   background: #f7f2fc;
 }
 .discovery-scene-card:hover {
-  border-color: #8eb4d9;
+  border-color: var(--brand-border);
   text-decoration: none;
 }
 .discovery-layout {
@@ -244,12 +244,12 @@
   min-width: 0;
 }
 .discovery-controls {
-  border: 1px solid #c9dbed;
+  border: 1px solid var(--brand-border);
   border-radius: 22px;
   background: #fff;
   box-shadow:
     0 8px 28px #244c7410,
-    0 3px 0 #e6eef8;
+    0 3px 0 var(--brand-soft);
   overflow: hidden;
 }
 .discovery-controls > summary {
@@ -259,12 +259,12 @@
   gap: 10px;
   min-height: 105px;
   padding: 20px 17px;
-  background: linear-gradient(130deg, #e9f3ff, #f5faff 75%);
-  border-bottom: 1px solid #dce9f6;
+  background: linear-gradient(130deg, var(--brand-soft), var(--brand-page) 75%);
+  border-bottom: 1px solid var(--brand-soft);
   font-size: 18px;
   font-weight: 650;
   list-style: none;
-  color: #23496f;
+  color: var(--brand-action);
 }
 .discovery-controls > summary::-webkit-details-marker {
   display: none;
@@ -286,7 +286,7 @@
 .directory-query label,
 .collection-filter legend {
   display: block;
-  color: #2f4d6c;
+  color: var(--brand-action);
   font-size: 13px;
   font-weight: 650;
   line-height: 1.5;
@@ -296,14 +296,14 @@
   display: flex;
   align-items: center;
   padding: 5px;
-  border: 1px solid #bed2e9;
+  border: 1px solid var(--brand-border);
   border-radius: 14px;
-  background: #f7fbff;
+  background: var(--brand-page);
   box-shadow: inset 0 2px 3px #255f9810;
 }
 .directory-query-input:focus-within {
-  border-color: #5893cc;
-  box-shadow: 0 0 0 3px #dcecff;
+  border-color: var(--brand-action);
+  box-shadow: 0 0 0 3px var(--brand-soft);
 }
 .directory-query input {
   width: 100%;
@@ -313,7 +313,7 @@
   border: 0;
   border-radius: 8px;
   background: transparent;
-  color: #183958;
+  color: var(--brand-ink);
   font: inherit;
   font-size: 16px;
 }
@@ -326,15 +326,15 @@
   min-height: 44px;
   margin: 0;
   padding: 8px;
-  border: 1px solid #25629f;
+  border: 1px solid var(--brand-action);
   border-radius: 10px;
-  background: linear-gradient(145deg, #e4f2ff, #c3def7);
+  background: linear-gradient(145deg, var(--brand-soft), var(--brand-border));
   color: #fff;
   font: inherit;
   font-size: 14px;
   font-weight: 650;
   cursor: pointer;
-  box-shadow: 0 2px 0 #d8e5f4;
+  box-shadow: 0 2px 0 var(--brand-soft);
 }
 .collection-filter {
   min-width: 0;
@@ -347,7 +347,7 @@
   overflow: auto;
   padding-right: 4px;
   scrollbar-width: thin;
-  scrollbar-color: #b6c9df transparent;
+  scrollbar-color: var(--brand-border) transparent;
 }
 .collection-filter-option {
   position: relative;
@@ -358,10 +358,10 @@
   min-height: 76px;
   padding: 8px;
   margin-bottom: 7px;
-  border: 1px solid #e3ebf5;
+  border: 1px solid var(--brand-soft);
   border-radius: 14px;
   background: #fff;
-  color: #284565;
+  color: var(--brand-action);
   cursor: pointer;
   transition:
     border-color 0.16s,
@@ -369,16 +369,16 @@
     box-shadow 0.16s;
 }
 .collection-filter-option:hover {
-  border-color: #a8c7e6;
-  background: #f7fbff;
+  border-color: var(--brand-border);
+  background: var(--brand-page);
 }
 .collection-filter-option:has(input:checked) {
-  border-color: #85b2de;
-  background: linear-gradient(110deg, #eaf4ff, #f4f9ff);
-  box-shadow: inset 3px 0 #347bbb;
+  border-color: var(--brand-border);
+  background: linear-gradient(110deg, var(--brand-soft), var(--brand-page));
+  box-shadow: inset 3px 0 var(--brand-action);
 }
 .collection-filter-option:has(input:focus-visible) {
-  outline: 3px solid #377bc0;
+  outline: 3px solid var(--brand-action);
   outline-offset: -3px;
 }
 .collection-filter-option input {
@@ -397,9 +397,9 @@
   width: 52px;
   height: 52px;
   border-radius: 11px;
-  border: 1px solid #dce7f2;
-  background: var(--tone-bg, #f0f6fc);
-  box-shadow: 0 2px 0 #e0e9f3;
+  border: 1px solid var(--brand-soft);
+  background: var(--tone-bg, var(--brand-page));
+  box-shadow: 0 2px 0 var(--brand-soft);
 }
 .collection-filter-art img {
   display: block;
@@ -422,7 +422,7 @@
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: #2872b2;
+  background: var(--brand-action);
   color: #fff;
   font-size: 12px;
   font-weight: 700;
@@ -432,7 +432,7 @@
   opacity: 1;
 }
 .collection-filter-count {
-  color: #506b87;
+  color: var(--brand-action);
   display: block;
   margin-top: 4px;
   font-size: 11px;
@@ -441,9 +441,9 @@
 }
 .discovery-alphabet {
   margin-top: 18px;
-  border: 1px solid #d5e4f3;
+  border: 1px solid var(--brand-soft);
   border-radius: 13px;
-  background: linear-gradient(120deg, #f1f7ff, #fbfdff);
+  background: linear-gradient(120deg, var(--brand-page), var(--brand-page));
   padding: 5px 10px;
 }
 .discovery-alphabet summary {
@@ -452,7 +452,7 @@
   justify-content: space-between;
   min-height: 54px;
   gap: 10px;
-  color: #2f4d6c;
+  color: var(--brand-action);
   font-size: 14px;
   font-weight: 650;
   cursor: pointer;
@@ -462,7 +462,7 @@
   display: none;
 }
 .discovery-alphabet summary span {
-  color: #506b87;
+  color: var(--brand-action);
   font-size: 12px;
 }
 .discovery-letters {
@@ -475,17 +475,17 @@
   display: grid;
   place-items: center;
   min-height: 44px;
-  border: 1px solid #d6e2f1;
+  border: 1px solid var(--brand-soft);
   border-radius: 8px;
   background: white;
-  color: #355573;
+  color: var(--brand-action);
   font: inherit;
   font-size: 13px;
   cursor: pointer;
 }
 .discovery-letters button[aria-pressed='true'] {
-  background: #265f98;
-  border-color: #265f98;
+  background: var(--brand-action);
+  border-color: var(--brand-action);
   color: #fff;
 }
 .discovery-directory {
@@ -509,7 +509,7 @@
 .discovery-results-heading p {
   font-size: 14px;
   font-weight: 550;
-  color: #405e7d;
+  color: var(--brand-action);
   line-height: 1.4;
   margin: 0;
 }
@@ -526,10 +526,10 @@
   min-height: 44px;
   min-width: 145px;
   padding: 9px 34px 9px 12px;
-  border: 1px solid #ccdaeb;
+  border: 1px solid var(--brand-border);
   border-radius: 10px;
   background-color: #fff;
-  color: #304f71;
+  color: var(--brand-action);
   font: inherit;
   font-size: 14px;
 }
@@ -541,16 +541,16 @@
   gap: 10px;
   padding: 10px 13px;
   margin-bottom: 18px;
-  border: 1px solid #d5e3f3;
+  border: 1px solid var(--brand-soft);
   border-radius: 10px;
-  background: #f3f8ff;
+  background: var(--brand-page);
 }
 .discovery-active-filters p {
   margin: 0;
   font-size: 14px;
   font-weight: 550;
   line-height: 1.5;
-  color: #365778;
+  color: var(--brand-action);
   overflow-wrap: anywhere;
 }
 .discovery-active-filters button {
@@ -562,7 +562,7 @@
   border: 0;
   padding: 8px;
   background: transparent;
-  color: #275f97;
+  color: var(--brand-action);
   font: inherit;
   font-size: 13px;
   font-weight: 650;
@@ -588,20 +588,20 @@
   height: 100%;
   flex-direction: column;
   overflow: hidden;
-  border: 1px solid #d7e2ef;
+  border: 1px solid var(--brand-soft);
   border-radius: 15px;
   background: #fff;
-  color: #243e61;
+  color: var(--brand-ink);
   text-decoration: none;
-  box-shadow: 0 3px 0 #e8eff8;
+  box-shadow: 0 3px 0 var(--brand-soft);
   transition:
     border-color 0.15s,
     box-shadow 0.15s;
 }
 .discovery-subject > a:hover {
-  border-color: #4b8cc8;
+  border-color: var(--brand-action);
   box-shadow:
-    0 4px 0 #c7dcf2,
+    0 4px 0 var(--brand-border),
     0 8px 20px #285e9512;
 }
 .subject-art {
@@ -612,8 +612,8 @@
   padding: 10px;
   background:
     radial-gradient(ellipse at 50% 45%, #ffffffc9, transparent 65%),
-    linear-gradient(135deg, var(--tone-bg, #f4f8ff), #e8f1fc);
-  border-bottom: 1px solid #dce7f4;
+    linear-gradient(135deg, var(--tone-bg, var(--brand-page)), var(--brand-soft));
+  border-bottom: 1px solid var(--brand-soft);
 }
 .subject-art img {
   display: block;
@@ -627,7 +627,7 @@
   place-items: center;
   min-height: 190px;
   padding: 16px;
-  color: #365775;
+  color: var(--brand-action);
   font: 600 14px/1.4 var(--font-ui);
 }
 .subject-label {
@@ -648,7 +648,7 @@
 }
 .subject-count {
   display: block;
-  color: #405e7d;
+  color: var(--brand-action);
   font-size: 14px;
   font-weight: 550;
   line-height: 1.4;
@@ -660,8 +660,8 @@
 .discovery-empty {
   padding: 38px 20px;
   text-align: center;
-  background: #f5f9ff;
-  border: 1px dashed #bacfe6;
+  background: var(--brand-page);
+  border: 1px dashed var(--brand-border);
   border-radius: 16px;
 }
 .discovery-empty > svg {
@@ -684,10 +684,10 @@
   gap: 10px;
   min-height: 46px;
   padding: 10px 20px;
-  border: 1px solid #b4cae3;
+  border: 1px solid var(--brand-border);
   border-radius: 10px;
-  background: #edf5ff;
-  color: #22598e;
+  background: var(--brand-page);
+  color: var(--brand-action);
   font: inherit;
   font-size: 15px;
   font-weight: 650;
@@ -875,20 +875,20 @@
   flex: 0 0 48px;
   height: 48px;
   border-radius: 14px;
-  background: linear-gradient(145deg, #fff, #e3effd);
-  border: 1px solid #cbdff2;
-  box-shadow: 0 3px 0 #cddff0;
+  background: linear-gradient(145deg, #fff, var(--brand-soft));
+  border: 1px solid var(--brand-border);
+  box-shadow: 0 3px 0 var(--brand-border);
 }
 .filter-heading small {
   display: block;
-  color: #4b6d90;
+  color: var(--brand-action);
   font-size: 11px;
   font-weight: 550;
   margin-bottom: 4px;
 }
 .filter-heading strong {
   display: block;
-  color: #183e66;
+  color: var(--brand-ink);
   font-size: 17px;
   font-weight: 700;
   letter-spacing: -0.025em;
@@ -901,8 +901,8 @@
   height: 22px;
   margin-left: 7px;
   border-radius: 6px;
-  background: #e8f1fc;
-  color: #355c87;
+  background: var(--brand-soft);
+  color: var(--brand-action);
   font-size: 11px;
   font-weight: 650;
 }
@@ -911,28 +911,28 @@
   place-items: center;
   width: 36px;
   height: 36px;
-  border: 1px solid #d3e2f1;
+  border: 1px solid var(--brand-soft);
   border-radius: 9px;
   background: white;
-  color: #2f649a;
+  color: var(--brand-action);
   font-size: 19px;
   font-weight: 650;
 }
 .discovery-alphabet .alphabet-copy {
   flex: 1;
-  color: #284565;
+  color: var(--brand-action);
   font-size: 13px;
 }
 .alphabet-copy small {
   display: block;
-  color: #526b86;
+  color: var(--brand-action);
   font-size: 10px;
   font-weight: 400;
   margin-top: 3px;
 }
 .discovery-alphabet .alphabet-chevron {
   font-size: 20px;
-  color: #355c87;
+  color: var(--brand-action);
 }
 .tone-sage {
   --tone-bg: #eff8f2;
@@ -944,7 +944,7 @@
   --tone-bg: #fff4f6;
 }
 .tone-ice {
-  --tone-bg: #f0f7ff;
+  --tone-bg: var(--brand-page);
 }
 .tone-lavender {
   --tone-bg: #f6f2ff;

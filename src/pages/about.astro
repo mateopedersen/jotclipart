@@ -48,18 +48,18 @@ const founders = [
   {
     name: 'Melih',
     portrait: '/team/melih-cartoon-v3.webp',
-    alt: 'Face-only cartoon portrait of Melih, co-founder of UltraClipart.',
+    alt: 'Face-only cartoon portrait of Melih, co-founder of JotClipart.',
     caption: 'Design & Creative Direction',
     story:
-      'Melih leads the design of UltraClipart, from the way artwork is presented to the details of each page. He enjoys working with illustration and making the site clear enough that people can find a picture and start using it without a long explanation.',
+      'Melih leads the design of JotClipart, from the way artwork is presented to the details of each page. He enjoys working with illustration and making the site clear enough that people can find a picture and start using it without a long explanation.',
   },
   {
     name: 'Mustafa',
     portrait: '/team/mustafa-cartoon-v4.webp',
-    alt: 'Face-only cartoon portrait of Mustafa, co-founder of UltraClipart.',
+    alt: 'Face-only cartoon portrait of Mustafa, co-founder of JotClipart.',
     caption: 'Software & Infrastructure',
     story:
-      'Mustafa builds the software and infrastructure behind UltraClipart. His work connects the catalog, editor, downloads and saved boards. He enjoys solving the practical problems behind those tools so people can concentrate on their designs.',
+      'Mustafa builds the software and infrastructure behind JotClipart. His work connects the catalog, editor, downloads and saved boards. He enjoys solving the practical problems behind those tools so people can concentrate on their designs.',
   },
 ];
 const process = [
@@ -83,8 +83,8 @@ const process = [
 ---
 
 <Layout
-  title="About UltraClipart · Our Library, Tools & Purpose"
-  description="Meet UltraClipart: an independent clipart library for personal and educational projects. Learn why we built it, what you can make, and how the artwork and tools work."
+  title="About JotClipart · Our Library, Tools & Purpose"
+  description="Meet JotClipart: an independent clipart library for personal and educational projects. Learn why we built it, what you can make, and how the artwork and tools work."
 >
   <script
     slot="head"
@@ -92,12 +92,12 @@ const process = [
     set:html={structuredData({
       '@context': 'https://schema.org',
       '@type': 'AboutPage',
-      name: 'About UltraClipart',
-      url: 'https://ultraclipart.com/about/',
-      description: 'The purpose, artwork library, and creative tools behind UltraClipart.',
+      name: 'About JotClipart',
+      url: 'https://jotclipart.com/about/',
+      description: 'The purpose, artwork library, and creative tools behind JotClipart.',
       breadcrumb: breadcrumbs([
         { name: 'Home', path: '/' },
-        { name: 'About UltraClipart', path: '/about/' },
+        { name: 'About JotClipart', path: '/about/' },
       ]),
     })}
   />
@@ -107,11 +107,11 @@ const process = [
         <nav class="about-breadcrumb" aria-label="Breadcrumb">
           <a href="/">Home</a>
           <span aria-hidden="true">/</span>
-          <span aria-current="page">About UltraClipart</span>
+          <span aria-current="page">About JotClipart</span>
         </nav>
-        <p class="about-eyebrow">About UltraClipart</p>
+        <p class="about-eyebrow">About JotClipart</p>
         <h1>
-          About <span>UltraClipart</span>
+          About <span>JotClipart</span>
         </h1>
         <p class="about-intro">
           We're an <strong>independent clipart library</strong> for personal projects and education,
@@ -139,7 +139,7 @@ const process = [
           <AboutSymbol kind="book" size={64} />
           <span>
             <strong>Examples From the Library</strong>
-            <span>Examples from the UltraClipart library</span>
+            <span>Examples from the JotClipart library</span>
           </span>
         </figcaption>
         <div class="about-artwork-grid">
@@ -184,11 +184,11 @@ const process = [
     <section class="about-purpose" id="about-purpose" aria-labelledby="about-purpose-title">
       <div>
         <p class="about-eyebrow">Why we're here</p>
-        <h2 id="about-purpose-title">Why We Built UltraClipart</h2>
+        <h2 id="about-purpose-title">Why We Built JotClipart</h2>
       </div>
       <div class="about-story">
         <p>
-          We built UltraClipart because{' '}
+          We built JotClipart because{' '}
           <strong>finding a picture is often only the first task.</strong> You may also need to add
           a name, leave room for instructions, check a print size or save a few images for later.
         </p>
@@ -205,7 +205,7 @@ const process = [
     </section>
     <section class="about-team" id="about-team" aria-labelledby="about-team-title">
       <header class="about-section-heading">
-        <p class="about-eyebrow">The people behind UltraClipart</p>
+        <p class="about-eyebrow">The people behind JotClipart</p>
         <h2 id="about-team-title">Meet the Co-Founders</h2>
         <p>
           Melih and Mustafa are building an independent library for personal projects and education.
@@ -376,7 +376,7 @@ const process = [
             loading="lazy"
             decoding="async"
           />
-          <span>Contact UltraClipart</span>
+          <span>Contact JotClipart</span>
           <ActionArrow light size={25} />
         </a>
         <a class="about-contact-secondary" href="/copyright/">

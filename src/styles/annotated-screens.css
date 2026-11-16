@@ -5,7 +5,7 @@
   align-items: start;
   padding-bottom: 32px;
   margin-bottom: 32px;
-  border-bottom: 1px solid #d9e2ec;
+  border-bottom: 1px solid var(--brand-soft);
 }
 .gm-screen-column {
   min-width: 0;
@@ -22,10 +22,10 @@
   position: relative;
   width: 100%;
   max-width: 100%;
-  border: 1px solid #c5d3e2;
+  border: 1px solid var(--brand-border);
   border-radius: 7px;
-  background: #f7f9fc;
-  box-shadow: 0 3px 0 #e7edf3;
+  background: var(--brand-page);
+  box-shadow: 0 3px 0 var(--brand-soft);
 }
 .gm-screen-image {
   position: absolute;
@@ -95,7 +95,7 @@
   padding-top: 17px;
   font-size: 13px;
   line-height: 1.65;
-  color: #536a82;
+  color: var(--brand-action);
 }
 .gm-screen-figure figcaption > span {
   display: block;
@@ -137,7 +137,7 @@
   border: 0;
   border-radius: 0;
   background: transparent;
-  color: #284765;
+  color: var(--brand-action);
   font-size: 17px;
   font-weight: 600;
   line-height: 1.5;

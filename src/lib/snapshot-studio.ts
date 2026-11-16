@@ -13,7 +13,7 @@ export function validateStudioAsset(asset: SnapshotStudioAsset, id = asset?.id) 
       ![asset.width, asset.height].every(n => Number.isSafeInteger(n) && n > 0 && n <= 4096) ||
       ['title', 'alt', 'topic', 'style', 'thumb'].some(k => typeof asset[k as keyof SnapshotStudioAsset] !== 'string'))
     throw Error('The artwork source metadata is invalid.');
-  const origin = typeof location === 'undefined' ? 'https://ultraclipart.com' : location.origin;
+  const origin = typeof location === 'undefined' ? 'https://jotclipart.com' : location.origin;
   verifiedSourceUrl(asset.webp, 'webp', origin);
   verifiedSourceUrl(asset.pdf, 'pdf', origin);
   return asset;

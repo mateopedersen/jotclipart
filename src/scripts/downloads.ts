@@ -82,7 +82,7 @@ async function downloadFile(link: HTMLAnchorElement, status: HTMLElement) {
     if (
       !response.ok ||
       new URL(response.url).origin !==
-        (station ? new URL(source).origin : 'https://assets.ultraclipart.com')
+        (station ? new URL(source).origin : 'https://assets.jotclipart.com')
     )
       throw new Error('Unavailable download');
     const type = response.headers.get('content-type')?.split(';')[0].trim().toLowerCase() ?? '';
@@ -179,7 +179,7 @@ document.addEventListener('click', (event) => {
     !link ||
     link.hasAttribute('data-download-open') ||
     (!link.hasAttribute('data-final-download') &&
-      new URL(link.href).origin !== 'https://assets.ultraclipart.com')
+      new URL(link.href).origin !== 'https://assets.jotclipart.com')
   )
     return;
   event.preventDefault();

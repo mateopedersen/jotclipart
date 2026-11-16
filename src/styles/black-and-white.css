@@ -5,9 +5,9 @@
   gap: 32px;
   padding: 34px 38px;
   margin: 12px 0 28px;
-  border: 1px solid #d4e2f4;
+  border: 1px solid var(--brand-soft);
   border-radius: 20px;
-  background: linear-gradient(115deg, #f1f7ff, #fbfdff);
+  background: linear-gradient(115deg, var(--brand-page), var(--brand-page));
 }
 .bw-intro h1 {
   margin: 0 0 15px;
@@ -28,7 +28,7 @@
   gap: 9px;
   margin-top: 19px;
   font-size: 14px;
-  color: #375d89;
+  color: var(--brand-action);
 }
 .bw-intro-art {
   flex: 0 0 105px;
@@ -38,15 +38,15 @@
   height: 105px;
 }
 .bw-controls {
-  border: 1px solid #d4e2f4;
-  background: #f8fbff;
+  border: 1px solid var(--brand-soft);
+  background: var(--brand-page);
   border-radius: 16px;
   padding: 24px;
 }
 .bw-controls label,
 .bw-sort label {
   display: block;
-  color: #29496f;
+  color: var(--brand-action);
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 8px;
@@ -65,13 +65,13 @@
   align-items: center;
   gap: 12px;
   background: white;
-  border: 1px solid #bccfe7;
+  border: 1px solid var(--brand-border);
   border-radius: 10px;
   padding-left: 15px;
-  color: #537399;
+  color: var(--brand-action);
 }
 .bw-search-input:focus-within {
-  outline: 3px solid #9bc4fa;
+  outline: 3px solid var(--brand-border);
   outline-offset: 2px;
 }
 .bw-search-input input {
@@ -101,15 +101,15 @@
 .bw-filter-row select {
   width: 100%;
   background: white;
-  color: #29496f;
+  color: var(--brand-action);
   font-size: 15px;
   min-height: 47px;
 }
 .bw-reset {
   min-height: 47px;
-  color: #315e92;
+  color: var(--brand-action);
   background: transparent;
-  border-color: #bdcfe6;
+  border-color: var(--brand-border);
   font-size: 14px;
 }
 .bw-results-heading {
@@ -149,8 +149,8 @@
 .bw-gallery .art-picture,
 .bw-gallery .art-card:nth-child(n) .art-picture {
   aspect-ratio: 1;
-  background: #f7f9fc;
-  border-bottom: 1px solid #e5edf6;
+  background: var(--brand-page);
+  border-bottom: 1px solid var(--brand-soft);
 }
 .bw-gallery .card-title {
   font-size: 16px;
@@ -163,10 +163,10 @@
 }
 .bw-message {
   padding: 15px 20px;
-  border: 1px solid #c8d9ee;
+  border: 1px solid var(--brand-border);
   border-radius: 10px;
-  background: #f5f9ff;
-  color: #31567e;
+  background: var(--brand-page);
+  color: var(--brand-action);
   font-size: 15px;
 }
 .bw-error {
@@ -178,7 +178,7 @@
 .bw-empty {
   text-align: center;
   padding: 48px 22px;
-  border: 1px dashed #bed0e8;
+  border: 1px dashed var(--brand-border);
   border-radius: 14px;
 }
 .bw-empty h3 {
@@ -202,7 +202,7 @@
   display: flex;
   align-items: center;
   gap: 9px;
-  color: #466589;
+  color: var(--brand-action);
   font-size: 14px;
 }
 .bw-pagination input {
@@ -212,7 +212,7 @@
 }
 .bw-pagination button {
   min-width: 104px;
-  color: #2d5687;
+  color: var(--brand-action);
 }
 .bw-pagination button:disabled {
   opacity: 0.45;
@@ -225,8 +225,8 @@
   gap: 40px;
   margin-top: 45px;
   padding: 27px 30px;
-  border-top: 1px solid #d4e2f4;
-  background: #f6f9fd;
+  border-top: 1px solid var(--brand-soft);
+  background: var(--brand-page);
   border-radius: 12px;
 }
 .bw-print-note h2 {

@@ -37,10 +37,10 @@ img[data-original-preview='pending'] {
   inset: auto 8px 10px;
   z-index: 1;
   padding: 8px 10px;
-  border: 1px solid #cbdcf2;
+  border: 1px solid var(--brand-border);
   border-radius: 9px;
-  background: #f2f7ff;
-  color: #234d7c;
+  background: var(--brand-page);
+  color: var(--brand-action);
   font-size: 13px;
   font-weight: 600;
   line-height: 1.4;

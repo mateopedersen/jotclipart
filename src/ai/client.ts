@@ -652,7 +652,7 @@ function initialize(root: HTMLElement) {
   element('ai-refresh-quota').addEventListener('click', () => void refreshQuota(true, true));
   element<HTMLAnchorElement>('ai-live-builder').addEventListener('click', (event) => {
     event.preventDefault();
-    const target = new URL('https://ultraclipart.com/ai-clipart-generator/');
+    const target = new URL('https://jotclipart.com/ai-clipart-generator/');
     target.hash = new URLSearchParams({ idea: composedIdea(), style: style.value }).toString();
     location.assign(target.href);
   });
@@ -906,7 +906,7 @@ function initialize(root: HTMLElement) {
             trigger: root.querySelector<HTMLButtonElement>('[data-ai-action=share]') || undefined,
             title: 'My AI clipart',
             blob,
-            sourceUrl: 'https://ultraclipart.com/ai-clipart-generator/',
+            sourceUrl: 'https://jotclipart.com/ai-clipart-generator/',
           });
           say(
             'ready',

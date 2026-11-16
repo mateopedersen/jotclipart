@@ -3,7 +3,7 @@
   display: none !important;
 }
 .ai-page .ai-control-help {
-  color: #526d90;
+  color: var(--brand-action);
   font-size: 12px;
   line-height: 1.55;
   margin: 5px 0 10px;
@@ -11,7 +11,7 @@
 .ai-ideas-jump {
   display: inline-block;
   margin: 2px 0 13px;
-  color: #165db8;
+  color: var(--brand-action);
   font-size: 14px;
   font-weight: 600;
   text-decoration: underline;
@@ -31,10 +31,10 @@
   max-width: 100%;
   min-width: 0;
   min-height: 36px;
-  border: 1px solid #cbdcf0;
+  border: 1px solid var(--brand-border);
   border-radius: 7px;
   background: #fff;
-  color: #294e7c;
+  color: var(--brand-action);
   padding: 6px 24px 6px 9px;
   font-size: 12px;
 }
@@ -60,7 +60,7 @@
 }
 .ai-visual-styles small {
   display: block;
-  color: #5b7394;
+  color: var(--brand-action);
   font-size: 10px;
   line-height: 1.35;
   font-weight: 400;
@@ -73,11 +73,11 @@
   flex-wrap: wrap;
   gap: 5px 10px;
   margin-top: 8px;
-  color: #547092;
+  color: var(--brand-action);
   font-size: 12px;
 }
 .ai-style-choice strong {
-  color: #294e7e;
+  color: var(--brand-action);
   font-weight: 600;
 }
 .ai-page .ai-style-choice button {
@@ -85,7 +85,7 @@
   min-height: 34px;
   background: transparent;
   border: 0;
-  color: #165db8;
+  color: var(--brand-action);
   font-size: 12px;
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -100,10 +100,10 @@
   display: none;
 }
 .ai-selected-ingredients button {
-  background: #eef5ff;
-  border: 1px solid #bfd5f2;
+  background: var(--brand-page);
+  border: 1px solid var(--brand-border);
   border-radius: 7px;
-  color: #244e80;
+  color: var(--brand-action);
   padding: 6px 9px;
   min-height: 34px;
   text-align: left;
@@ -115,7 +115,7 @@
   background: transparent;
   padding: 9px 0;
   min-height: 40px;
-  color: #165db8;
+  color: var(--brand-action);
   font-size: 13px;
   font-weight: 600;
 }
@@ -152,14 +152,14 @@
 }
 .ai-starter-caption strong {
   display: block;
-  color: #203d66;
+  color: var(--brand-ink);
   font-size: 16px;
   font-weight: 600;
   line-height: 1.35;
 }
 .ai-starter-caption > span {
   display: block;
-  color: #587398;
+  color: var(--brand-action);
   font-size: 11px;
   margin-top: 4px;
 }
@@ -167,21 +167,21 @@
   display: block;
   text-align: left;
   width: 100%;
-  color: #165db8;
-  border-top: 1px solid #e7eef7;
+  color: var(--brand-action);
+  border-top: 1px solid var(--brand-soft);
   padding: 8px 12px;
   font-size: 12px;
   font-weight: 600;
 }
 .ai-starter-board .ai-concept[aria-pressed='true'] {
-  border-color: #1669d6 !important;
-  box-shadow: 0 0 0 1px #1669d6;
+  border-color: var(--brand-action) !important;
+  box-shadow: 0 0 0 1px var(--brand-action);
 }
 .ai-starter-board .ai-concept[aria-pressed='true'] .ai-starter-use {
-  background: #eaf3ff;
+  background: var(--brand-soft);
 }
 .ai-example-note a {
-  color: #165db8;
+  color: var(--brand-action);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -207,9 +207,9 @@
 .ai-idea-library {
   margin-top: 42px;
   padding: clamp(18px, 2.4vw, 34px);
-  border: 1px solid #ccddf1;
+  border: 1px solid var(--brand-border);
   border-radius: 18px;
-  background: #f4f8fe;
+  background: var(--brand-page);
   scroll-margin-top: 95px;
 }
 .ai-ideas-heading {
@@ -221,7 +221,7 @@
 }
 .ai-ideas-heading h2 {
   margin: 0 0 8px;
-  color: #1d3d69;
+  color: var(--brand-ink);
   font-size: clamp(25px, 2.5vw, 34px);
   letter-spacing: -0.6px;
   line-height: 1.2;
@@ -229,11 +229,11 @@
 .ai-ideas-heading p {
   margin: 0;
   max-width: 730px;
-  color: #506d92;
+  color: var(--brand-action);
   font-size: 16px;
 }
 .ai-ideas-heading > a {
-  color: #165db8;
+  color: var(--brand-action);
   font-size: 13px;
   flex-shrink: 0;
   padding-top: 8px;
@@ -246,10 +246,10 @@
   gap: 18px;
   padding: 19px 21px;
   background: #fff;
-  border: 1px solid #dbe6f4;
+  border: 1px solid var(--brand-soft);
   border-radius: 12px;
   margin-bottom: 24px;
-  color: #264d7c;
+  color: var(--brand-action);
   font-size: 14px;
 }
 .ai-prompt-recipe > strong {
@@ -268,8 +268,8 @@
 .ai-prompt-recipe b {
   display: grid;
   place-items: center;
-  background: #eaf3ff;
-  color: #2266b9;
+  background: var(--brand-soft);
+  color: var(--brand-action);
   width: 21px;
   height: 21px;
   border-radius: 6px;
@@ -279,7 +279,7 @@
 .ai-prompt-recipe small {
   grid-column: 2;
   font-size: 12px;
-  color: #5c7390;
+  color: var(--brand-action);
   font-weight: 400;
   line-height: 1.5;
 }
@@ -295,8 +295,8 @@
   gap: 9px;
   padding: 9px 12px;
   min-height: 40px;
-  color: #345a85;
-  border: 1px solid #cdddf1;
+  color: var(--brand-action);
+  border: 1px solid var(--brand-border);
   border-radius: 8px;
   background: #fff;
   font-size: 13px;
@@ -307,8 +307,8 @@
   font-weight: 500;
 }
 .ai-idea-filters button[aria-pressed='true'] {
-  background: #235faa;
-  border-color: #235faa;
+  background: var(--brand-action);
+  border-color: var(--brand-action);
   color: #fff;
 }
 .ai-idea-filters button[aria-pressed='true'] span {
@@ -322,7 +322,7 @@
   scroll-margin-top: 95px;
 }
 .ai-idea-search-row label {
-  color: #294d79;
+  color: var(--brand-action);
   font-size: 14px;
   font-weight: 600;
 }
@@ -331,20 +331,20 @@
   width: min(100%, 350px);
   min-height: 43px;
   padding: 10px 12px;
-  border: 1px solid #becfe7;
+  border: 1px solid var(--brand-border);
   border-radius: 8px;
   background: #fff;
-  color: #263f60;
+  color: var(--brand-ink);
   font-size: 14px;
 }
 #ai-idea-count {
   font-size: 13px;
   margin-left: auto;
-  color: #587197;
+  color: var(--brand-action);
 }
 .ai-page .ai-ideas-reference-note {
   font-size: 12px;
-  color: #5d7290;
+  color: var(--brand-action);
   margin: 10px 0 19px;
 }
 .ai-idea-cards {
@@ -357,7 +357,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  border: 1px solid #d2e0f0;
+  border: 1px solid var(--brand-soft);
   border-radius: 12px;
   background: #fff;
 }
@@ -367,7 +367,7 @@
   background: #fff;
   aspect-ratio: 1.65;
   flex-shrink: 0;
-  border-bottom: 1px solid #edf2f9;
+  border-bottom: 1px solid var(--brand-soft);
 }
 .ai-idea-picture img {
   display: block;
@@ -385,7 +385,7 @@
   right: 0;
   text-align: center;
   font-size: 10px;
-  color: #667e9b;
+  color: var(--brand-action);
 }
 .ai-idea-copy {
   padding: 17px 16px 15px;
@@ -394,20 +394,20 @@
   flex: 1;
 }
 .ai-idea-category {
-  color: #547295;
+  color: var(--brand-action);
   font-size: 11px;
   font-weight: 500;
   margin-bottom: 5px;
 }
 .ai-page .ai-idea-copy h3 {
   margin: 0 0 8px;
-  color: #24456f;
+  color: var(--brand-action);
   font-size: 19px;
   line-height: 1.3;
   font-weight: 600;
 }
 .ai-page .ai-idea-copy p {
-  color: #516a89;
+  color: var(--brand-action);
   font-size: 13px;
   line-height: 1.65;
   margin: 0 0 17px;
@@ -419,29 +419,29 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 9px;
-  border-top: 1px solid #e4ecf7;
+  border-top: 1px solid var(--brand-soft);
   padding-top: 13px;
 }
 .ai-idea-card-footer > span {
-  color: #547398;
+  color: var(--brand-action);
   font-size: 11px;
 }
 .ai-page .ai-idea-card-footer button {
   min-height: 38px;
-  border: 1px solid #1b59a0;
+  border: 1px solid var(--brand-action);
   border-radius: 7px;
-  background: #2667b5;
+  background: var(--brand-action);
   padding: 8px 10px;
   color: #fff;
   font-size: 12px;
   font-weight: 600;
-  box-shadow: 0 2px 0 #16487f;
+  box-shadow: 0 2px 0 var(--brand-action);
 }
 .ai-page .ai-idea-card-footer button:hover {
-  background: #1c58a0;
+  background: var(--brand-action);
 }
 .ai-page .ai-idea-card-footer button[aria-pressed='true'] {
-  background: #163f73;
+  background: var(--brand-ink);
   box-shadow: inset 0 0 0 1px #fff8;
 }
 .ai-idea-pagination {
@@ -454,15 +454,15 @@
 .ai-idea-pagination button {
   min-height: 42px;
   padding: 9px 17px;
-  border: 1px solid #bfd2ec;
+  border: 1px solid var(--brand-border);
   border-radius: 8px;
   background: #fff;
-  color: #285887;
+  color: var(--brand-action);
   font-size: 14px;
 }
 .ai-idea-pagination > span {
   font-size: 13px;
-  color: #5a7394;
+  color: var(--brand-action);
 }
 .ai-idea-pagination button:disabled {
   opacity: 0.45;
@@ -471,9 +471,9 @@
 .ai-idea-empty {
   padding: 30px 15px;
   text-align: center;
-  color: #516b8b;
+  color: var(--brand-action);
   background: #fff;
-  border: 1px solid #d5e2f3;
+  border: 1px solid var(--brand-soft);
   border-radius: 10px;
 }
 .ai-idea-library > .ai-control-help {

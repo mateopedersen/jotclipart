@@ -14,7 +14,7 @@ export function breadcrumbs(items: Array<{ name: string; path: string }>) {
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
-      item: new URL(item.path, 'https://ultraclipart.com').href,
+      item: new URL(item.path, 'https://jotclipart.com').href,
     })),
   };
 }

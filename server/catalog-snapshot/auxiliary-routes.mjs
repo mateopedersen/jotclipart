@@ -1,0 +1,17 @@
+// Existing Astro page templates, rendered by the same signed snapshot pipeline.
+export const auxiliaryRoutes=Object.freeze({
+  '/about/':'about','/contact/':'contact','/cookies/':'cookies',
+  '/editorial-process/':'editorial','/for-teachers/':'teachers','/print-size/':'print',
+  '/guides/':'guides','/guides/make-a-classroom-label/':'guideLabel',
+  '/guides/turn-clipart-into-a-coloring-activity/':'guideColoring',
+  '/guides/webp-pdf-and-editable-projects/':'guideFormats',
+  '/license/':'info','/privacy/':'info','/terms/':'info','/faq/':'info',
+  '/accessibility/':'info','/copyright/':'info',
+});
+export const auxiliaryTemplates=Object.freeze({
+  about:'about.astro',contact:'contact.astro',cookies:'cookies.astro',
+  editorial:'editorial-process.astro',teachers:'for-teachers.astro',print:'print-size.astro',
+  guides:'guides/index.astro',guideLabel:'guides/make-a-classroom-label.astro',
+  guideColoring:'guides/turn-clipart-into-a-coloring-activity.astro',
+  guideFormats:'guides/webp-pdf-and-editable-projects.astro', info:'[info].astro',
+});

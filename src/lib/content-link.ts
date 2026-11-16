@@ -1,4 +1,4 @@
-const SITE = 'https://ultraclipart.com';
+const SITE = 'https://jotclipart.com';
 export type LinkRelationship = 'reference' | 'sponsored' | 'ugc';
 /** Shared authoring policy; ordinary editorial links remain ordinary links. */
 export function contentLink(

@@ -1,10 +1,10 @@
 .related-discovery {
   margin: 64px 0 40px;
   padding: clamp(20px, 3.3vw, 44px);
-  border: 1px solid #d9e4f2;
+  border: 1px solid var(--brand-soft);
   border-radius: 24px;
-  background: #f4f7fc;
-  color: #1c2e48;
+  background: var(--brand-page);
+  color: var(--brand-ink);
   isolation: isolate;
 }
 .related-discovery [hidden] {
@@ -37,25 +37,25 @@
   margin: 12px 0 0;
   font-size: 16px;
   line-height: 1.65;
-  color: #52637a;
+  color: var(--brand-action);
 }
 .related-collection {
   flex-shrink: 0;
   display: inline-flex;
   gap: 10px;
   align-items: center;
-  color: #234f8e;
+  color: var(--brand-action);
   font-size: 14px;
   font-weight: 700;
   text-decoration: none;
   padding: 10px 14px;
-  border: 1px solid #c7d7ec;
-  border-bottom: 3px solid #adc5e3;
+  border: 1px solid var(--brand-border);
+  border-bottom: 3px solid var(--brand-border);
   border-radius: 12px;
-  background: linear-gradient(145deg, #fff, #edf5ff);
+  background: linear-gradient(145deg, #fff, var(--brand-page));
   box-shadow:
     inset 0 1px #fff,
-    0 3px 0 #e9f0f9;
+    0 3px 0 var(--brand-soft);
   min-height: 48px;
 }
 .related-collection-discovery {
@@ -66,7 +66,7 @@
   gap: 16px 24px;
   margin-top: 24px;
   padding-top: 24px;
-  border-top: 1px solid #d5dfec;
+  border-top: 1px solid var(--brand-soft);
 }
 .related-collection-discovery h3 {
   margin: 0;
@@ -88,10 +88,10 @@
 .related-filters button {
   padding: 11px 17px;
   min-height: 44px;
-  border: 1px solid #cbd7e6;
+  border: 1px solid var(--brand-border);
   border-radius: 30px;
   background: #fff;
-  color: #384d69;
+  color: var(--brand-action);
   font: inherit;
   font-size: 14px;
   font-weight: 650;
@@ -99,12 +99,12 @@
   box-shadow: none;
 }
 .related-filters button[aria-pressed='true'] {
-  border-color: #233f68;
-  background: #233f68;
+  border-color: var(--brand-action);
+  background: var(--brand-action);
   color: white;
 }
 .related-discovery :is(button, a):focus-visible {
-  outline: 3px solid #235fb2;
+  outline: 3px solid var(--brand-action);
   outline-offset: 4px;
 }
 .related-group h3 {
@@ -112,7 +112,7 @@
   line-height: 1.35;
   margin: 0 0 16px;
   font-weight: 600;
-  color: #273d5c;
+  color: var(--brand-ink);
 }
 .related-grid {
   --related-grid-gap: 18px;
@@ -150,7 +150,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  border: 1px solid #dce4ee;
+  border: 1px solid var(--brand-soft);
   border-radius: 16px;
   background: #fff;
   box-shadow: 0 3px 10px #16365b04;
@@ -159,7 +159,7 @@
     box-shadow 0.15s;
 }
 .related-card:hover {
-  border-color: #a8bfdd;
+  border-color: var(--brand-border);
   box-shadow: 0 5px 18px #16365b0c;
 }
 .related-picture {
@@ -168,7 +168,7 @@
   aspect-ratio: 1;
   min-width: 0;
   overflow: hidden;
-  background: radial-gradient(ellipse at 50% 45%, #fafbfd 0, #e9eef4 100%);
+  background: radial-gradient(ellipse at 50% 45%, var(--brand-page) 0, var(--brand-soft) 100%);
   text-decoration: none;
   position: relative;
 }
@@ -183,7 +183,7 @@
 .related-image-error {
   padding: 25px;
   text-align: center;
-  color: #3f5778;
+  color: var(--brand-action);
   font-size: 14px;
   line-height: 1.6;
 }
@@ -198,7 +198,7 @@
   font-size: 15px;
   font-weight: 600;
   line-height: 1.45;
-  color: #243952;
+  color: var(--brand-ink);
   text-decoration: none;
   overflow-wrap: anywhere;
 }
@@ -209,7 +209,7 @@
   font-size: 14px;
   font-weight: 450;
   min-height: 4.5em;
-  color: #415b78;
+  color: var(--brand-action);
   line-height: 1.5;
   margin: 7px 0 17px;
 }
@@ -227,10 +227,10 @@
   width: 42px;
   min-height: 44px;
   padding: 0;
-  border: 1px solid #dae4ef;
+  border: 1px solid var(--brand-soft);
   border-radius: 8px;
   background: white;
-  color: #536780;
+  color: var(--brand-action);
   cursor: pointer;
 }
 .related-favorite[aria-pressed='true'] {
@@ -244,7 +244,7 @@
 .related-companions {
   margin-top: 32px;
   padding-top: 28px;
-  border-top: 1px solid #d5dfec;
+  border-top: 1px solid var(--brand-soft);
 }
 .related-group-heading {
   display: flex;
@@ -258,7 +258,7 @@
 }
 .related-group-heading p {
   font-size: 13px;
-  color: #61728a;
+  color: var(--brand-action);
   margin: 0;
   line-height: 1.6;
 }
@@ -279,8 +279,8 @@
   min-height: 48px;
   border-radius: 12px;
   background: white;
-  border: 1px solid #b8cbe3;
-  color: #264d81;
+  border: 1px solid var(--brand-border);
+  color: var(--brand-action);
   font: inherit;
   font-size: 14px;
   font-weight: 700;
@@ -288,7 +288,7 @@
 }
 .related-status {
   margin: 0;
-  color: #52637a;
+  color: var(--brand-action);
   font-size: 13px;
   line-height: 1.5;
   min-height: 20px;
@@ -296,7 +296,7 @@
 .related-license {
   text-align: center;
   font-size: 12px;
-  color: #465870;
+  color: var(--brand-action);
   margin: 16px 0 0;
   line-height: 1.6;
 }
@@ -307,7 +307,7 @@
 .related-footer > a {
   font-size: 14px;
   font-weight: 650;
-  color: #315a8d;
+  color: var(--brand-action);
 }
 .related-footer > a[data-related-end] {
   display: inline-flex;
@@ -479,7 +479,7 @@
   margin: 0;
   font-size: 13px;
   line-height: 1.5;
-  color: #465870;
+  color: var(--brand-action);
 }
 .related-more:disabled {
   cursor: progress;
@@ -489,7 +489,7 @@
 .related-collection-group {
   margin-top: 32px;
   padding-top: 28px;
-  border-top: 1px solid #d5dfec;
+  border-top: 1px solid var(--brand-soft);
 }
 .related-collection-group:first-child {
   margin-top: 0;

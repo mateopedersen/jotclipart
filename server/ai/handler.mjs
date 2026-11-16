@@ -281,7 +281,7 @@ export async function handleAi(request, env, context) {
     );
   let job, who;
   try {
-    const origin = env.AI_PUBLIC_ORIGIN || 'https://ultraclipart.com';
+    const origin = env.AI_PUBLIC_ORIGIN || 'https://jotclipart.com';
     if (new URL(request.url).origin !== origin) throw new ApiError('origin_not_allowed', 403);
     if (request.method === 'POST' && request.headers.get('origin') !== origin)
       throw new ApiError('origin_not_allowed', 403);

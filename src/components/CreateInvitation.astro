@@ -141,14 +141,14 @@ const apple = art.find((item) => item.id === 'apple-and-wedge-watercolor-clipart
 <style>
   .creative-projects {
     margin: 0;
-    color: #183557;
+    color: var(--brand-ink);
   }
   .creative-projects-heading {
     margin-bottom: 24px;
   }
   .creative-projects-heading > p {
     margin: 0 0 9px;
-    color: #416389;
+    color: var(--brand-action);
     font:
       650 13px/1.5 'UltraClipart Sans',
       Arial,
@@ -156,7 +156,7 @@ const apple = art.find((item) => item.id === 'apple-and-wedge-watercolor-clipart
   }
   .creative-projects h2 {
     margin: 0;
-    color: #183557;
+    color: var(--brand-ink);
     font:
       750 clamp(27px, 3vw, 36px)/1.2 'UltraClipart Sans',
       Arial,
@@ -172,20 +172,20 @@ const apple = art.find((item) => item.id === 'apple-and-wedge-watercolor-clipart
     display: flex;
     flex-direction: column;
     min-width: 0;
-    border: 1px solid #dae3ed;
+    border: 1px solid var(--brand-soft);
     border-radius: 24px;
     overflow: hidden;
     text-decoration: none;
     background: #fff;
-    box-shadow: 0 6px 0 #edf2f9;
+    box-shadow: 0 6px 0 var(--brand-soft);
     transition:
       box-shadow 0.2s,
       border-color 0.2s;
   }
   .creative-studio-card:hover {
-    border-color: #95b5df;
+    border-color: var(--brand-border);
     box-shadow:
-      0 8px 0 #e1ebf7,
+      0 8px 0 var(--brand-soft),
       0 16px 30px #29466f12;
   }
   .creative-studio-scene {
@@ -337,7 +337,7 @@ const apple = art.find((item) => item.id === 'apple-and-wedge-watercolor-clipart
     height: 18px;
     border-radius: 7px 7px 0 0;
     background: #d68e98;
-    border-bottom: 7px solid #bacbd8;
+    border-bottom: 7px solid var(--brand-border);
   }
   .creative-pencil:after {
     content: '';
@@ -353,7 +353,7 @@ const apple = art.find((item) => item.id === 'apple-and-wedge-watercolor-clipart
     left: 5px;
     width: 6px;
     height: 8px;
-    background: #38474e;
+    background: var(--brand-ink);
     z-index: 1;
     clip-path: polygon(0 0, 100% 0, 50% 100%);
   }
@@ -390,7 +390,7 @@ const apple = art.find((item) => item.id === 'apple-and-wedge-watercolor-clipart
   }
   .creative-projects h3 {
     margin: 0 0 13px;
-    color: #183557;
+    color: var(--brand-ink);
     font:
       750 26px/1.2 'UltraClipart Sans',
       Arial,
@@ -399,7 +399,7 @@ const apple = art.find((item) => item.id === 'apple-and-wedge-watercolor-clipart
   }
   .creative-studio-copy > p {
     margin: 0 0 23px;
-    color: #425f7e;
+    color: var(--brand-action);
     font-size: 15px;
     line-height: 1.8;
     max-width: 460px;
@@ -410,7 +410,7 @@ const apple = art.find((item) => item.id === 'apple-and-wedge-watercolor-clipart
     gap: 26px;
     padding: 13px 18px;
     border-radius: 11px;
-    background: #1260cf;
+    background: var(--brand-action);
     color: #fff;
     font:
       650 14px/1.5 'UltraClipart Sans',
@@ -418,12 +418,12 @@ const apple = art.find((item) => item.id === 'apple-and-wedge-watercolor-clipart
       sans-serif;
     box-shadow:
       inset 0 1px #fff3,
-      0 3px 0 #d1e2fa;
+      0 3px 0 var(--brand-soft);
   }
   .creative-studio-copy > small {
     display: block;
     margin-top: 13px;
-    color: #526b89;
+    color: var(--brand-action);
     font-size: 11px;
     line-height: 1.5;
   }
@@ -437,26 +437,26 @@ const apple = art.find((item) => item.id === 'apple-and-wedge-watercolor-clipart
     display: flex;
     flex-direction: column;
     flex: 1;
-    border: 1px solid #dce6f2;
+    border: 1px solid var(--brand-soft);
     border-radius: 20px;
     overflow: hidden;
     text-decoration: none;
     background: #fff;
-    box-shadow: 0 4px 0 #edf2f9;
+    box-shadow: 0 4px 0 var(--brand-soft);
     transition:
       border-color 0.2s,
       transform 0.2s;
   }
   .creative-guide-card:hover {
     transform: translateY(-3px);
-    border-color: #95b5df;
+    border-color: var(--brand-border);
   }
   .creative-guide-cover {
     position: relative;
     overflow: hidden;
     height: 145px;
     flex-shrink: 0;
-    background: linear-gradient(140deg, #eef5ff, #dce9fb);
+    background: linear-gradient(140deg, var(--brand-page), var(--brand-soft));
   }
   .creative-guide-coloring .creative-guide-cover {
     background: linear-gradient(140deg, #f0f6f0, #e1ece0);
@@ -473,19 +473,19 @@ const apple = art.find((item) => item.id === 'apple-and-wedge-watercolor-clipart
     transform: translateX(-50%) rotate(-6deg);
     background: #fff;
     box-shadow:
-      0 5px 0 #b9cce5,
+      0 5px 0 var(--brand-border),
       0 15px 16px #304f7d20;
   }
   .creative-label-sheet:before {
     content: '';
     position: absolute;
     inset: 7px;
-    border: 1px dashed #b7cbe6;
+    border: 1px dashed var(--brand-border);
     border-radius: 4px;
   }
   .creative-label-sheet > strong {
     display: block;
-    color: #305d96;
+    color: var(--brand-action);
     font:
       700 20px/1.05 'UltraClipart Sans',
       Arial,
@@ -495,7 +495,7 @@ const apple = art.find((item) => item.id === 'apple-and-wedge-watercolor-clipart
   .creative-label-sheet > span {
     display: block;
     margin-top: 6px;
-    color: #59779b;
+    color: var(--brand-action);
     font-size: 8px;
   }
   .creative-mini-pencil {
@@ -567,7 +567,7 @@ const apple = art.find((item) => item.id === 'apple-and-wedge-watercolor-clipart
   }
   .creative-guide-card p {
     margin: 0 0 17px;
-    color: #425f7e;
+    color: var(--brand-action);
     font-size: 13px;
     line-height: 1.7;
   }
@@ -577,7 +577,7 @@ const apple = art.find((item) => item.id === 'apple-and-wedge-watercolor-clipart
     justify-content: space-between;
     align-items: center;
     gap: 12px;
-    color: #155bb6;
+    color: var(--brand-action);
     font:
       650 13px/1.5 'UltraClipart Sans',
       Arial,
@@ -587,7 +587,7 @@ const apple = art.find((item) => item.id === 'apple-and-wedge-watercolor-clipart
     padding: 5px 4px;
   }
   .creative-projects a:focus-visible {
-    outline: 3px solid #246ad0;
+    outline: 3px solid var(--brand-action);
     outline-offset: 4px;
   }
   @media (min-width: 1100px) {
@@ -717,9 +717,9 @@ const apple = art.find((item) => item.id === 'apple-and-wedge-watercolor-clipart
     gap: 9px;
     min-height: 47px;
     padding: 8px 13px;
-    border: 1px solid #205a9f;
+    border: 1px solid var(--brand-action);
     border-radius: 8px;
-    background: #2869b4;
+    background: var(--brand-action);
     color: #fff;
     font-size: 14px;
     font-weight: 600;

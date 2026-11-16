@@ -148,10 +148,10 @@ const pineapple = art.find((a) => a.id === 'pineapple-whole-and-cut-fruit-realis
     width: 137px;
     height: 159px;
     padding: 7px 7px 25px;
-    border: 1px solid #d5e0e8;
+    border: 1px solid var(--brand-border);
     border-radius: 5px;
     box-shadow:
-      3px 5px 0 #cbd6dd,
+      3px 5px 0 var(--brand-border),
       8px 12px 16px #28415b16;
     background: #fff;
   }
@@ -160,7 +160,7 @@ const pineapple = art.find((a) => a.id === 'pineapple-whole-and-cut-fruit-realis
     top: 34px;
     transform: rotate(-9deg);
     background-color: #fff;
-    background-image: conic-gradient(#dbe3e8 25%, #fff 0 50%, #dbe3e8 0 75%, #fff 0);
+    background-image: conic-gradient(var(--brand-soft) 25%, #fff 0 50%, var(--brand-soft) 0 75%, #fff 0);
     background-size: 14px 14px;
   }
   .benefit-print-file {
@@ -184,21 +184,21 @@ const pineapple = art.find((a) => a.id === 'pineapple-whole-and-cut-fruit-realis
     display: grid;
     place-items: center;
     height: 24px;
-    border-top: 1px solid #e4e9ee;
+    border-top: 1px solid var(--brand-soft);
     background: #fff;
-    color: #304a65;
+    color: var(--brand-action);
     font: 700 10px/1.3 var(--font-ui);
     letter-spacing: 0.2px;
   }
   .benefit-real-workspace {
     position: relative;
     width: calc(100% - 28px);
-    border: 1px solid #bccbd9;
+    border: 1px solid var(--brand-border);
     border-radius: 7px;
     background: #fff;
     transform: rotate(-3deg);
     box-shadow:
-      3px 5px 0 #cbd6e3,
+      3px 5px 0 var(--brand-border),
       8px 13px 20px #23384f20;
     overflow: hidden;
   }
@@ -212,11 +212,11 @@ const pineapple = art.find((a) => a.id === 'pineapple-whole-and-cut-fruit-realis
   .benefit-real-workspace > span {
     display: block;
     padding: 8px 5px;
-    color: #344b65;
+    color: var(--brand-action);
     background: #fff;
     font: 600 9px/1.4 var(--font-ui);
     text-align: center;
-    border-top: 1px solid #dce5ef;
+    border-top: 1px solid var(--brand-soft);
   }
   .benefit-saved-project {
     position: relative;

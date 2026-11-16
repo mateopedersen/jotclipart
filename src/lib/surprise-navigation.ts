@@ -21,7 +21,7 @@ export function surpriseWarmImages(html: string, path: string, origin = location
   const template = document.createElement('template');
   template.innerHTML = html;
   const content = template.content,
-    canonical = 'https://ultraclipart.com' + path;
+    canonical = 'https://jotclipart.com' + path;
   if (content.querySelector('link[rel="canonical"]')?.getAttribute('href') !== canonical) return [];
   const image = content.querySelector('#art-preview img');
   const original = asset(image?.getAttribute('src') ?? null, origin);

@@ -30,7 +30,7 @@ const production = process.env.CF_PAGES === '1';
 const publication = production ? readPublication(import.meta.dirname) : null;
 
 export default defineConfig({
-  site: 'https://ultraclipart.com',
+  site: 'https://jotclipart.com',
   output: 'static',
   trailingSlash: 'always',
   devToolbar: { enabled: false },

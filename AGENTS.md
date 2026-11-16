@@ -1,3 +1,7 @@
+# JotClipart migration — owner direction 2026-11-16
+
+New public brand/domain: JotClipart / https://jotclipart.com. Primary #52B788; white-text actions #216E4E, dark text #123524. Preserve Astro, all accepted source-bound artwork, original bytes, IDs, healthy routes, descriptions, prior fixes and user storage formats. Catalog display titles receive one idempotent Free prefix without changing reviewed source records. These current brand/palette/publication instructions supersede historical UltraClipart-only color and local-only restrictions below. No old-domain-to-new redirects. Existing source signing prefixes and compatible project/storage keys remain technical identifiers. Old repo/project deletion requires complete inventory, functional and independent live verification first. No secret/private user data in Git.
+
 # Current installed release — original homepage priority, 2026-11-09
 
 This note supersedes the earlier installed-version notes below. Production

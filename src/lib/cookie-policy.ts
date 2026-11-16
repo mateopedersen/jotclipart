@@ -6,7 +6,7 @@ export const COOKIE_CHOICE_SECONDS = COOKIE_CHOICE_DAYS * 86400;
 export const cookieRecords = [
   {
     name: COOKIE_CHOICE_NAME,
-    provider: 'UltraClipart · First party',
+    provider: 'JotClipart · First party',
     purpose:
       'Remembers that you accepted this notice or chose necessary cookies only. It contains a policy version, your choice and its date, without a visitor identifier.',
     duration: '180 days for either choice',
@@ -14,7 +14,7 @@ export const cookieRecords = [
   },
   {
     name: '__Host-uc_ai',
-    provider: 'UltraClipart · First party',
+    provider: 'JotClipart · First party',
     purpose:
       'Protects Builder requests and enforces free usage limits. Signed, Secure, HttpOnly and SameSite=Strict.',
     duration: 'Up to 24 hours; the signed session is tied to a UTC day',
@@ -22,7 +22,7 @@ export const cookieRecords = [
   },
   {
     name: '__Host-uc_share',
-    provider: 'UltraClipart · First party',
+    provider: 'JotClipart · First party',
     purpose:
       'Protects public-link publication, request verification and free sharing limits. Signed, Secure, HttpOnly and SameSite=Strict.',
     duration: 'Up to 24 hours; the signed session is tied to a UTC day',

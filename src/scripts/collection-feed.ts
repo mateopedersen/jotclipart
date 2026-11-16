@@ -1,4 +1,4 @@
-import { displayTitle } from '../lib/display-title.ts';
+import { displayTitle, displayCatalogTitle } from '../lib/display-title.ts';
 const grid = document.querySelector<HTMLElement>('#latest-collections');
 if (grid) {
   let busy = false;
@@ -9,7 +9,7 @@ if (grid) {
     try {
       const url = new URL(value, location.origin);
       return (
-        [location.origin, 'https://assets.ultraclipart.com'].includes(url.origin) &&
+        [location.origin, 'https://assets.jotclipart.com'].includes(url.origin) &&
         !url.pathname.includes('..')
       );
     } catch {
@@ -61,7 +61,7 @@ if (grid) {
         const copy = document.createElement('div');
         copy.className = 'subject-collection-copy';
         const title = document.createElement('h3');
-        title.textContent = displayTitle(item.name);
+        title.textContent = displayCatalogTitle(item.name);
         const count = document.createElement('p');
         count.textContent = `${item.count.toLocaleString('en-US')} Illustrations`;
         const arrow = document.createElement('span');

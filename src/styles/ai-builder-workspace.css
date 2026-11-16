@@ -1,9 +1,9 @@
 /* Builder workbench: compact cards, dimensional controls and one natural page flow. */
 .ai-page {
-  --ai-label-ink: #17375d;
-  --ai-support-ink: #466487;
-  --ai-edge: #b8cfea;
-  --ai-accent: #1769d5;
+  --ai-label-ink: var(--brand-ink);
+  --ai-support-ink: var(--brand-action);
+  --ai-edge: var(--brand-border);
+  --ai-accent: var(--brand-action);
 }
 .ai-workspace {
   grid-template-columns: minmax(360px, 0.38fr) minmax(0, 0.62fr);
@@ -40,7 +40,7 @@
 }
 .ai-prompt-panel .ai-heading p {
   font-size: 16px;
-  color: #48678f;
+  color: var(--brand-action);
 }
 .ai-page .ai-section-heading {
   font-size: 22px;
@@ -78,7 +78,7 @@
   font-size: 17px;
 }
 .ai-page .ai-description-field .ai-prompt-input {
-  border: 1px solid #a9c4e6;
+  border: 1px solid var(--brand-border);
   border-radius: 9px;
   background: #fff;
   box-shadow: inset 0 2px 4px #2349710d;
@@ -94,12 +94,12 @@
   min-height: 108px;
   max-height: 220px;
   padding: 12px;
-  color: #17375d;
+  color: var(--brand-ink);
   font-size: 16px;
   line-height: 1.65;
 }
 .ai-page .ai-description-field textarea::placeholder {
-  color: #667e9c;
+  color: var(--brand-action);
   opacity: 1;
 }
 .ai-page .ai-description-field .ai-input-meta {
@@ -112,7 +112,7 @@
 }
 .ai-page .ai-input-meta output {
   flex-shrink: 0;
-  color: #284e7c;
+  color: var(--brand-action);
   font-weight: 600;
   font-variant-numeric: tabular-nums;
 }
@@ -127,12 +127,12 @@
   width: 100%;
   min-height: 44px;
   padding: 6px 10px;
-  border: 1px solid #aac5e5;
-  border-bottom: 3px solid #98b5db;
+  border: 1px solid var(--brand-border);
+  border-bottom: 3px solid var(--brand-border);
   border-radius: 8px;
-  background: linear-gradient(#fff, #e9f2ff);
+  background: linear-gradient(#fff, var(--brand-soft));
   box-shadow: inset 0 1px #fff;
-  color: #1d4b81;
+  color: var(--brand-action);
   font-size: 13px;
   font-weight: 600;
 }
@@ -184,9 +184,9 @@
   min-height: 52px;
 }
 .ai-page .ai-select-trigger {
-  border-bottom-color: #99b9df;
-  background: linear-gradient(145deg, #fff 25%, #e8f1fe);
-  color: #214875;
+  border-bottom-color: var(--brand-border);
+  background: linear-gradient(145deg, #fff 25%, var(--brand-soft));
+  color: var(--brand-action);
   font-weight: 600;
 }
 .ai-page .ai-ingredient-grid,
@@ -195,13 +195,13 @@
 }
 .ai-page .ai-ingredient-grid button,
 .ai-page .ai-visual-styles button {
-  border: 1px solid #c0d4ed;
-  border-bottom: 3px solid #adc6e5;
+  border: 1px solid var(--brand-border);
+  border-bottom: 3px solid var(--brand-border);
   border-radius: 11px;
-  background: linear-gradient(145deg, #fff 20%, #eaf2ff);
+  background: linear-gradient(145deg, #fff 20%, var(--brand-soft));
   box-shadow:
     inset 0 1px #fff,
-    0 3px 0 #e3ecf9;
+    0 3px 0 var(--brand-soft);
 }
 .ai-page .ai-ingredient-grid img,
 .ai-page .ai-visual-styles img {
@@ -212,28 +212,28 @@
 }
 .ai-page .ai-ingredient-grid button > span:last-child,
 .ai-page .ai-visual-styles button > span:last-child {
-  color: #203f67;
+  color: var(--brand-ink);
   font-size: 12px;
   font-weight: 600;
   padding: 5px 5px 9px;
   overflow-wrap: anywhere;
 }
 .ai-page .ai-visual-styles small {
-  color: #4d6789;
+  color: var(--brand-action);
   font-size: 10px;
   line-height: 1.4;
 }
 .ai-page .ai-ingredient-grid button:hover,
 .ai-page .ai-visual-styles button:hover {
-  border-color: #7da8df;
+  border-color: var(--brand-border);
 }
 .ai-page .ai-ingredient-grid button[aria-pressed='true'],
 .ai-page .ai-visual-styles button[aria-pressed='true'] {
-  background: linear-gradient(#fff, #dcecff);
-  border-color: #1b6ddd;
+  background: linear-gradient(#fff, var(--brand-soft));
+  border-color: var(--brand-action);
   box-shadow:
-    0 0 0 1px #1b6ddd,
-    0 3px 0 #c4d9f3;
+    0 0 0 1px var(--brand-action),
+    0 3px 0 var(--brand-border);
 }
 .ai-page .ai-custom-toggle,
 .ai-page .ai-style-choice button {
@@ -254,8 +254,8 @@
 }
 .ai-page .ai-concept-board {
   padding: 17px;
-  border-color: #c5d9f2;
-  background: linear-gradient(150deg, #f5faff, #e8f2ff);
+  border-color: var(--brand-border);
+  background: linear-gradient(150deg, var(--brand-page), var(--brand-soft));
   box-shadow: inset 0 2px #fff;
 }
 .ai-page .ai-board-heading {
@@ -265,10 +265,10 @@
 }
 .ai-page .ai-board-heading h2 {
   font-size: 24px;
-  color: #1c3f69;
+  color: var(--brand-ink);
 }
 .ai-page .ai-board-heading p {
-  color: #48688f;
+  color: var(--brand-action);
   font-size: 15px;
 }
 .ai-page .ai-board-views {
@@ -300,13 +300,13 @@
   grid-template-rows: auto 1fr auto;
   justify-items: stretch;
   min-height: 210px;
-  border: 1px solid #bfd4ee !important;
-  border-bottom: 3px solid #abc5e6 !important;
+  border: 1px solid var(--brand-border) !important;
+  border-bottom: 3px solid var(--brand-border) !important;
   border-radius: 12px !important;
-  background: linear-gradient(145deg, #fff, #fbfdff) !important;
+  background: linear-gradient(145deg, #fff, var(--brand-page)) !important;
   box-shadow:
     inset 0 1px #fff,
-    0 3px 0 #dce8f8,
+    0 3px 0 var(--brand-soft),
     0 6px 12px #254a760a;
 }
 .ai-page .ai-starter-board .ai-concept img {
@@ -327,7 +327,7 @@
 }
 .ai-page .ai-starter-caption > span {
   margin-top: 3px;
-  color: #4c6c94;
+  color: var(--brand-action);
   font-size: 11px;
   line-height: 1.4;
 }
@@ -339,9 +339,9 @@
   align-items: center;
   justify-content: space-between;
   padding: 9px 12px;
-  border-top: 1px solid #d4e3f7;
-  background: linear-gradient(#f7fbff, #e9f2ff);
-  color: #175cae;
+  border-top: 1px solid var(--brand-soft);
+  background: linear-gradient(var(--brand-page), var(--brand-soft));
+  color: var(--brand-action);
   font-size: 12px;
   font-weight: 600;
   text-align: left;
@@ -366,7 +366,7 @@
   align-self: stretch;
   gap: 10px;
   border-top: 0;
-  border-left: 1px solid #d4e3f7;
+  border-left: 1px solid var(--brand-soft);
 }
 .ai-page .ai-board-actions {
   display: grid;
@@ -386,10 +386,10 @@
   padding: 8px 10px;
   margin: 0;
   gap: 8px;
-  border-bottom: 3px solid #b8cfea;
-  background: linear-gradient(#fff, #edf4ff);
+  border-bottom: 3px solid var(--brand-border);
+  background: linear-gradient(#fff, var(--brand-page));
   border-radius: 10px;
-  color: #224b7a;
+  color: var(--brand-action);
   font-size: 13px;
   font-weight: 600;
   line-height: 1.4;
@@ -397,8 +397,8 @@
   text-align: center;
 }
 .ai-page .ai-board-actions > button.primary {
-  background: linear-gradient(#3e92fa, #1066dc);
-  border-bottom-color: #0a4eac;
+  background: linear-gradient(var(--brand-action), var(--brand-action));
+  border-bottom-color: var(--brand-action);
   color: #fff;
 }
 .ai-page .ai-board-actions .ai-action-object {
@@ -425,7 +425,7 @@
   margin-top: 22px;
   padding-top: 18px;
   border: 0;
-  border-top: 1px solid #d6e3f4;
+  border-top: 1px solid var(--brand-soft);
   border-radius: 0;
   background: transparent;
   box-shadow: none;
@@ -455,12 +455,12 @@
   font-size: 17px;
   line-height: 1.3;
   margin: 0 0 3px;
-  color: #173b67;
+  color: var(--brand-ink);
   letter-spacing: -0.2px;
 }
 .ai-station-heading p {
   font-size: 12px;
-  color: #46698f;
+  color: var(--brand-action);
   margin: 0;
   line-height: 1.5;
 }
@@ -479,7 +479,7 @@
   border-bottom-width: 3px;
   box-shadow:
     inset 0 1px #ffffffcc,
-    0 2px 0 #e0e8f4;
+    0 2px 0 var(--brand-soft);
 }
 .ai-paint-heading {
   display: flex;
@@ -487,11 +487,11 @@
   align-items: center;
   gap: 8px;
   margin-bottom: 8px;
-  color: #204873;
+  color: var(--brand-action);
   font-size: 13px;
 }
 .ai-paint-heading > span {
-  color: #4c698c;
+  color: var(--brand-action);
   font-size: 11px;
   font-variant-numeric: tabular-nums;
 }
@@ -507,13 +507,13 @@
   padding: 0;
   min-width: 44px;
   min-height: 44px;
-  border: 1px solid #c5d6eb;
-  border-bottom: 3px solid #adbfda;
+  border: 1px solid var(--brand-border);
+  border-bottom: 3px solid var(--brand-border);
   border-radius: 10px;
-  background: linear-gradient(145deg, #fff, #e8f0fb);
+  background: linear-gradient(145deg, #fff, var(--brand-soft));
   box-shadow:
     inset 0 1px #fff,
-    0 2px 0 #dce7f5;
+    0 2px 0 var(--brand-soft);
 }
 .ai-paint-grid button > span {
   display: block;
@@ -538,21 +538,21 @@
   height: 18px;
   border: 2px solid #fff;
   border-radius: 50%;
-  background: #1769d5;
+  background: var(--brand-action);
   color: #fff;
   font-size: 11px;
   font-weight: 700;
 }
 .ai-page .ai-paint-grid button[aria-pressed='true'] {
-  border-color: #1769d5;
-  background: #dcecff;
+  border-color: var(--brand-action);
+  background: var(--brand-soft);
 }
 .ai-custom-paint {
   margin-top: 12px;
 }
 .ai-custom-paint > label {
   display: block;
-  color: #254c79;
+  color: var(--brand-action);
   font-size: 12px;
   font-weight: 700;
   margin-bottom: 6px;
@@ -566,10 +566,10 @@
 .ai-page .ai-custom-paint-fields button {
   min-height: 44px;
   min-width: 0;
-  border: 1px solid #b6cce8;
+  border: 1px solid var(--brand-border);
   border-radius: 8px;
   background: #fff;
-  color: #244d7f;
+  color: var(--brand-action);
 }
 .ai-page #ai-custom-color {
   width: 44px;
@@ -589,8 +589,8 @@
   padding: 8px 10px;
   font-size: 12px;
   font-weight: 600;
-  background: linear-gradient(#fff, #e6effc);
-  border-bottom: 3px solid #a6bedf;
+  background: linear-gradient(#fff, var(--brand-soft));
+  border-bottom: 3px solid var(--brand-border);
 }
 .ai-selected-colors {
   display: flex;
@@ -608,10 +608,10 @@
   gap: 7px;
   min-height: 44px;
   padding: 5px 9px;
-  border: 1px solid #bed0e8;
+  border: 1px solid var(--brand-border);
   border-radius: 8px;
   background: #fff;
-  color: #294c75;
+  color: var(--brand-action);
   font-size: 11px;
 }
 .ai-selected-colors i {
@@ -625,7 +625,7 @@
 .ai-color-note {
   font-size: 11px;
   line-height: 1.5;
-  color: #4b678b;
+  color: var(--brand-action);
   margin: 7px 0 0;
 }
 .ai-page .ai-create-row {
@@ -637,7 +637,7 @@
 .ai-page .ai-transparent {
   min-height: 44px;
   padding: 8px 11px;
-  border: 1px solid #c7d8ee;
+  border: 1px solid var(--brand-border);
   border-radius: 9px;
   background: #ffffffb3;
   font-size: 13px;
@@ -649,13 +649,13 @@
   text-align: center;
   min-height: 60px;
   gap: 11px;
-  border: 1px solid #1661bf;
-  border-bottom: 4px solid #104887;
+  border: 1px solid var(--brand-action);
+  border-bottom: 4px solid var(--brand-action);
   border-radius: 11px;
-  background: linear-gradient(#4aa0ff, #146cde 75%);
+  background: linear-gradient(var(--brand-border), var(--brand-action) 75%);
   box-shadow:
     inset 0 2px #ffffff75,
-    0 3px 0 #c0d6f0,
+    0 3px 0 var(--brand-border),
     0 6px 13px #1c579827;
   color: #fff;
   font-size: 16px;
@@ -677,18 +677,18 @@
   margin-right: 0;
 }
 .ai-page .ai-generate:disabled {
-  background: linear-gradient(#e5eef9, #ccddef);
-  border-color: #a8bedb;
-  border-bottom-color: #90accf;
+  background: linear-gradient(var(--brand-soft), var(--brand-border));
+  border-color: var(--brand-border);
+  border-bottom-color: var(--brand-border);
   box-shadow:
     inset 0 1px #fff,
-    0 3px 0 #e1eaf7;
-  color: #47698f;
+    0 3px 0 var(--brand-soft);
+  color: var(--brand-action);
   cursor: not-allowed;
   opacity: 1;
 }
 .ai-page .ai-generate[aria-busy='true'] {
-  background: linear-gradient(#4aa0ff, #146cde 75%);
+  background: linear-gradient(var(--brand-border), var(--brand-action) 75%);
   color: #fff;
 }
 .ai-page .ai-generation-note {
@@ -706,7 +706,7 @@
 }
 .ai-form-guidance p {
   margin: 0;
-  color: #466487;
+  color: var(--brand-action);
   font-size: 12px;
 }
 .ai-form-guidance button {
@@ -714,7 +714,7 @@
   padding: 4px 0;
   border: 0;
   background: transparent;
-  color: #165db8;
+  color: var(--brand-action);
   font-size: 12px;
   text-decoration: underline;
 }
@@ -947,10 +947,10 @@
 .ai-page .ai-paint-heading > button {
   min-height: 44px;
   padding: 6px 10px;
-  border: 1px solid #b5cbe6;
+  border: 1px solid var(--brand-border);
   border-radius: 8px;
-  background: linear-gradient(#fff, #e9f1fc);
-  color: #2c547e;
+  background: linear-gradient(#fff, var(--brand-soft));
+  color: var(--brand-action);
   font-size: 12px;
   font-weight: 600;
 }
@@ -973,20 +973,20 @@
     0 2px 5px #244b7526;
 }
 .ai-page .ai-paint-grid button[aria-pressed='true'] {
-  background: #e3efff;
-  box-shadow: inset 0 0 0 2px #1769d5;
+  background: var(--brand-soft);
+  box-shadow: inset 0 0 0 2px var(--brand-action);
 }
 .ai-more-colors {
   margin: 10px 0 0;
   padding: 0 12px 12px;
-  border: 1px solid #cbdcf1;
+  border: 1px solid var(--brand-border);
   border-radius: 10px;
-  background: #f7faff;
+  background: var(--brand-page);
 }
 .ai-more-colors > summary {
   min-height: 44px;
   padding-block: 12px;
-  color: #28588e;
+  color: var(--brand-action);
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;

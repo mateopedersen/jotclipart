@@ -50,15 +50,15 @@ const examples = collectionPreview(topic, sourceId);
     gap: 20px;
     width: 100%;
     padding: 18px 22px;
-    border: 1px solid #c7d9ee;
+    border: 1px solid var(--brand-border);
     border-radius: 18px;
-    background: linear-gradient(125deg, #fff, #edf5ff);
-    box-shadow: 0 3px 0 #e1eaf6;
-    color: #214d7c;
+    background: linear-gradient(125deg, #fff, var(--brand-page));
+    box-shadow: 0 3px 0 var(--brand-soft);
+    color: var(--brand-action);
     text-decoration: none;
   }
   .collection-preview-link:hover {
-    border-color: #83a9d2;
+    border-color: var(--brand-border);
   }
   .collection-preview-images {
     display: grid;
@@ -76,10 +76,10 @@ const examples = collectionPreview(topic, sourceId);
     aspect-ratio: 1;
     padding: 5px;
     object-fit: contain;
-    border: 1px solid #d8e4f2;
+    border: 1px solid var(--brand-soft);
     border-radius: 12px;
     background: #fff;
-    box-shadow: 0 2px 0 #dce7f4;
+    box-shadow: 0 2px 0 var(--brand-soft);
   }
   .collection-preview-copy {
     display: grid;
@@ -94,7 +94,7 @@ const examples = collectionPreview(topic, sourceId);
   .collection-preview-copy > span {
     font-size: 14px;
     line-height: 1.4;
-    color: #526987;
+    color: var(--brand-action);
     text-transform: capitalize;
   }
   @media (max-width: 650px) {

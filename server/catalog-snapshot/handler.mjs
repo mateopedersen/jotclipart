@@ -1,3 +1,4 @@
+import {auxiliaryRoutes} from './auxiliary-routes.mjs';
 import { resolvePublicArtworkRoute } from './public-artwork-routes.mjs';
 import { separatedSitemaps } from './sitemap-policy.mjs';
 import { readPreparedHTML } from './prepared-html.mjs';
@@ -21,6 +22,7 @@ import { uiProviders } from '../catalog-search/ui-metadata.mjs';
 import { curatedBySlug, curatedSitemap } from '../../src/lib/curated-collection-policy.mjs';
 import { curatedStatistics } from './curated-collections.mjs';
 const paths = {
+  ...auxiliaryRoutes,
   '/new/': 'new',
   '/search/': 'search',
   '/black-and-white/': 'monochrome',
@@ -35,7 +37,7 @@ const json = (body, root) =>
   Response.json(body, { headers: { 'cache-control': 'no-store', 'x-uc-snapshot': root } });
 const missing = () =>
   new Response(
-    '<!doctype html><html lang="en"><head><meta name="robots" content="noindex"><title>Page Not Found</title></head><body><h1>Page Not Found</h1><a href="/">UltraClipart</a></body></html>',
+    '<!doctype html><html lang="en"><head><meta name="robots" content="noindex"><title>Page Not Found</title></head><body><h1>Page Not Found</h1><a href="/">JotClipart</a></body></html>',
     {
       status: 404,
       headers: { 'content-type': 'text/html;charset=utf-8', 'cache-control': 'no-store' },
@@ -245,7 +247,7 @@ export function createCatalogHandler({
             if (extra)
               body = body.replace(
                 '</sitemapindex>',
-                '<sitemap><loc>https://ultraclipart.com/sitemap-collections.xml</loc></sitemap></sitemapindex>',
+                '<sitemap><loc>https://jotclipart.com/sitemap-collections.xml</loc></sitemap></sitemapindex>',
               );
           }
         } else body = await readSitemap(context, path);
@@ -287,7 +289,7 @@ export function createCatalogHandler({
               state = await readHomePageState(bucket, context, {
                 allowFixture: allowPrivateFixture,
               });
-              html = await renderHome(state, 'https://ultraclipart.com/', homeCSS, homeScripts);
+              html = await renderHome(state, 'https://jotclipart.com/', homeCSS, homeScripts);
             } else if (art) {
               state =
                 art[1] === 'art'
@@ -302,13 +304,13 @@ export function createCatalogHandler({
                   art[1] === 'art'
                     ? await renderArtwork(
                         state,
-                        'https://ultraclipart.com' + path,
+                        'https://jotclipart.com' + path,
                         artCSS,
                         artScripts,
                       )
                     : await renderEditor(
                         state,
-                        'https://ultraclipart.com' + path,
+                        'https://jotclipart.com' + path,
                         editorCSS,
                         editorScripts,
                         editorPreloads,
@@ -336,7 +338,7 @@ export function createCatalogHandler({
               if (state)
                 html = await renderCollection(
                   state,
-                  'https://ultraclipart.com' + path,
+                  'https://jotclipart.com' + path,
                   collectionCSS,
                   collectionScripts,
                 );
@@ -365,14 +367,15 @@ export function createCatalogHandler({
                 }
                 if (!state) return missing();
               }
-              state = await readShellPageState(bucket, context, selected, {
+              state = await readShellPageState(bucket, context, auxiliaryRoutes[path] ? 'new' : selected, {
                 cluster: clusterName ?? state?.cluster,
                 allowFixture: allowPrivateFixture,
               });
+              if(state && selected==='info')state.params={info:path.split('/')[1]};
               if (state)
                 html = await shells[selected][0](
                   state,
-                  'https://ultraclipart.com' + path,
+                  'https://jotclipart.com' + path,
                   shells[selected][1],
                   shellScripts,
                 );

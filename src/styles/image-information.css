@@ -9,10 +9,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 13px 16px;
-  border: 1px solid #c2d5ec;
+  border: 1px solid var(--brand-border);
   border-radius: 12px;
-  background: #f9fcff;
-  color: #203c60;
+  background: var(--brand-page);
+  color: var(--brand-ink);
   box-shadow: 0 7px 24px #193f7026;
   font: 14px/1.6 var(--font-ui);
   text-align: left;
@@ -25,11 +25,11 @@
   display: block;
   font-size: 14px;
   font-weight: 650;
-  color: #153a69;
+  color: var(--brand-ink);
 }
 .image-information p {
   margin: 5px 0 0;
-  color: #3e5978;
+  color: var(--brand-action);
 }
 .image-information p[hidden] {
   display: none;

@@ -1,8 +1,12 @@
 import { AsyncLocalStorage } from 'node:async_hooks';
+import { presentationState } from './brand-presentation.mjs';
 
 /** One isolated state store per compiled renderer, including enumerable object views. */
 export function createScopedContext() {
-  const requestState = new AsyncLocalStorage();
+  class PresentationStorage extends AsyncLocalStorage {
+    run(state, callback, ...args) { return super.run(presentationState(state), callback, ...args); }
+  }
+  const requestState = new PresentationStorage();
   function current() {
     const value = requestState.getStore();
     if (!value) throw Error('Collection SSR requires an isolated request snapshot');
