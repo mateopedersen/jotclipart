@@ -85,7 +85,7 @@ const pageEntry = (url: string) => `<url><loc>${xmlEscape(url)}</loc></url>`;
 function collectionEntries(art: Artwork[], topics: Topic[]): string[] {
   const collectionNames = new Set(
     indexableTopics(art, topics)
-      .filter((topic) => typeof topic.cluster === 'string')
+      .filter((topic): topic is Topic & { cluster: string } => typeof topic.cluster === 'string')
       .map(primaryClusterForTopic),
   );
   const urls = [...collectionNames]

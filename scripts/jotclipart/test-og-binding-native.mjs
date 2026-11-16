@@ -112,7 +112,10 @@ try {
   );
   const catalogChecks = [];
   if (process.argv[4] === '--catalog') {
-    const preview = await createLocalPreview({ ogBinding: binding });
+    const preview = await createLocalPreview({
+      ogBinding: binding,
+      metadata: process.env.JOTCLIPART_TEST_METADATA,
+    });
     const paths = [
       '/art/versace-purple-barocco-jumpsuit/',
       '/edit/versace-violet-medusa-belted-jumpsuit-clipart-080/',

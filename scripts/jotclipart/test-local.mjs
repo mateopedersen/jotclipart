@@ -99,7 +99,7 @@ async function getHTML(path) {
 }
 
 try {
-  preview = await createLocalPreview();
+  preview = await createLocalPreview({ metadata: process.env.JOTCLIPART_TEST_METADATA });
   let snapshot, artID, artSlug;
   await caseOf('signed production delivery identity', async () => {
     const response = await request('/delivery-release.json'),

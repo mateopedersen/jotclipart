@@ -26,6 +26,8 @@ This creates a real network clone of `mateopedersen/jotclipart`, installs the fr
 
 `JOTCLIPART_BUILD_ROOT` selects a relative, separate descendant of this checkout's `work/` directory for both build and deployment. It rejects traversal, aliases and existing symlink/non-directory components. The default remains `work/jotclipart-build`; a verified installed release needs its own stable directory.
 
+The two large historical JSON sources have generated, source-SHA-bound structural declarations so the unchanged strict Astro checker does not build a multi-gigabyte literal type graph. Runtime imports still read the original JSON. The mandatory source gate regenerates and compares every declaration byte from the complete actual sources, in addition to the existing editorial, source-identity and hash checks. When an approved source edit changes `data/art.json` or `data/editorial/reviews.json`, regenerate the declarations with `node scripts/jotclipart/catalog-json-types.mjs --write` and rerun the complete gate. Do not replace this with an `any` declaration, ignore a stale declaration, or reduce the Astro/TypeScript source scope.
+
 ## Preserve the exact installed publisher
 
 Compiled renderer inputs have original absolute paths bound into their ABI. Moving only `runtime/` does not preserve the full installed publisher. Keep the exact unique build tree, its source inputs and the new checkout. Future source changes require a separately built and verified software release.

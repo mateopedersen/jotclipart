@@ -1,3 +1,5 @@
+export {};
+
 const query = document.querySelector<HTMLInputElement>('#collection-query');
 const cards = [...document.querySelectorAll<HTMLAnchorElement>('[data-collection-card]')];
 const filters = [...document.querySelectorAll<HTMLButtonElement>('[data-collection-filter]')];

@@ -97,7 +97,7 @@ const visibleArtwork = [
           >
             <CollectionCover
               items={collection.previews}
-              tone={collection.tone ?? collection.color}
+              tone={collection.tone ?? ('color' in collection ? collection.color : undefined)}
               priority={index === 0}
             />
             <div class="collection-group-copy">

@@ -2,6 +2,7 @@ import registry from '../../data/curated-collections.json' with { type: 'json' }
 import { fingerprint } from './cache-fingerprint.ts';
 
 const slugOK = (s) => typeof s === 'string' && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(s);
+/** @template T @param {T} value @returns {T} */
 const freeze = (value) => {
   if (value && typeof value === 'object') {
     Object.values(value).forEach(freeze);
@@ -9,6 +10,7 @@ const freeze = (value) => {
   }
   return value;
 };
+/** @template T @param {T} value @returns {T} */
 export function validateCuratedRegistry(value) {
   if (
     value?.schema !== 1 ||

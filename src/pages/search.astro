@@ -3,11 +3,19 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import CatalogCount from '../components/CatalogCount.astro';
 import { publishedArt as art, topics } from '../lib/catalog';
-import { defaults, searchArtwork } from '../lib/search';
-import { cardMetadata } from '../lib/search-index';
+import { defaults, searchArtwork, type SearchArtwork } from '../lib/search';
+import { cardMetadata, type SearchCard } from '../lib/search-index';
 import { getSearchBuild } from '../lib/search-build';
 import { searchKindLabels } from '../lib/site-search';
 import '../styles/site-search.css';
+interface Props {
+  snapshotSearch?: {
+    version: string;
+    result: ReturnType<typeof searchArtwork<SearchArtwork & SearchCard>>;
+    colors: string[];
+    styles: string[];
+  };
+}
 const snapshotSearch = Astro.props.snapshotSearch;
 const initial = snapshotSearch?.result ?? searchArtwork(art, defaults);
 const seed = {

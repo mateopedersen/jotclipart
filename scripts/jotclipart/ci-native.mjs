@@ -67,6 +67,7 @@ try {
     if (phase !== 'invariants') {
       command('source-catalog-policy', ['scripts/seo/check-catalog.mjs']);
       command('signed-social-source-policy', ['scripts/verify-social-images.mjs']);
+      command('exact-catalog-json-types', ['scripts/jotclipart/catalog-json-types.mjs', '--check']);
       command('astro-typescript-diagnostics', [
         'node_modules/@astrojs/check/bin/astro-check.js',
         '--root',
@@ -133,6 +134,7 @@ try {
       'jotclipart-og-image',
       'jotclipart-og-source',
       'jotclipart-og-package',
+      'jotclipart-catalog-json-types',
       'indexnow-release',
       'indexnow-notify',
       'jotclipart-http-audit',
