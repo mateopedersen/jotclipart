@@ -21,8 +21,8 @@
   "pages": {
     "home": {
       "route": "/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "b09a65eff867db22b5617c9f54ef81c3f3ce6a64e7ec3a8692615520f67385b2",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "06ca5b2131ee1f9162cb755fe07d024227f036e27a893c735fab131f9ad6b089",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -158,8 +158,8 @@
     },
     "studio": {
       "route": "/create/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "33bccea07844ad9260318d5e0a436af1b86194d33e2519873977cffd6dede240",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "5300d5ab2d09fd9353e82333fd0622230f26110f3d6ed49184046ac2495cdf2a",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -239,8 +239,8 @@
     },
     "ai-builder": {
       "route": "/ai-clipart-generator/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "9a3618a365fa937901030b3a5ae639957b18f1691335f25ebc26a49f6ecfb7a9",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "d16401ef1ea94b51fa136a3f48d3bba9290bee89c12a55f14c5680896dca35c9",
       "sources": [
         {
           "path": "public/ai-examples/baby-rabbit-640.webp",
@@ -320,8 +320,8 @@
     },
     "categories": {
       "route": "/categories/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "e9d2639ce9ba3e75997a1eda1f40f46caa3dd27c6da75d315a57d76f5872bf9d",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "34de4f8dee10bf45532a975678cca2f343c896e911933802fb87c00424f29376",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -445,8 +445,8 @@
     },
     "collections": {
       "route": "/collections/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "47e15cdaac8fb96e47445a05aff8c21fedc8d6ed07f31582ae126b0e2e32af96",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "a0ed8f6f584489d2ae7466bb7120f6c2c933555cb876194a84ce128e8f0f71a7",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -534,8 +534,8 @@
     },
     "black-and-white": {
       "route": "/black-and-white/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "f82a484bba9fad237ec7233e9a9f70e7981d0af059e7120c5bf25f725b4e68ec",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "ab8fd6f3f17cb1c1fd7a8740fd17fb6f3aac296e76003907c91ca365dd09a5e0",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -607,8 +607,8 @@
     },
     "teachers": {
       "route": "/for-teachers/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "e94ff54ef018c95045bc7a0c7c3858a0b0844ce47ce2de88ac8befdcf0673ccf",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "39bac927ec41b8fdfdae2ecb19df3cf49ff2a2143f3fbdfa4719f48db3e94cd0",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -708,8 +708,8 @@
     },
     "guides": {
       "route": "/guides/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "345d323c4b892caf76e1df77bc23c6eaa46ae39419d6cb1ae081d02c7bd61e0a",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "e639af96faf1aa28639afbfafd9cb9e36f352851b3fc62cd0cd4fdeb39f0730b",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -789,8 +789,8 @@
     },
     "print-size": {
       "route": "/print-size/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "411730ae166c7ed495976decbcede6db6628cac2407a56119919ead51ca515f7",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "8b5bf244333a5feb6dbce274b0574aa6a8c4d45a4827a6e2972a928d102e0aa3",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -870,8 +870,8 @@
     },
     "about": {
       "route": "/about/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "63f6709158055d1aa98275795241232e89134677906a91e259c0a3280ad5ed11",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "07438246371ee9c1ed88dc98ab5a9d9ac8f5de130ccdd2380504418ddc049759",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -963,8 +963,8 @@
     },
     "new": {
       "route": "/new/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "1ea8a31de5e9120cfba8a2f27ab7b738df4d992429969324fb9f9cf59d936fb0",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "6a9a37cfa583128a869806563a3502494cfa77fd5345639b10c2255285aff603",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -1040,8 +1040,8 @@
     },
     "favorites": {
       "route": "/favorites/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "1f30f4002ebdbe8796ae75a17b1a2d6a0bd74dd7cde31fbea544c52f669ce773",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "bbac5877afed7e4bb911cf43d39f0b6f6b20367c4d2c8c476e9ee7f017c60447",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -1137,8 +1137,8 @@
     },
     "search": {
       "route": "/search/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "0a00d42c6aca8ec5cee5e088cb0ba1542b305404cd79ca3f3886b8ccd357bf8c",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "d97e5ed8084ad11b2b4fa11ce74c8ed486fc975293460f0ea7a79b028614d801",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -1214,8 +1214,8 @@
     },
     "contact": {
       "route": "/contact/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "1bf1c04564c81a53f8bd303e0c00e375444e68ba17cdc0f0741d70c48cef8b1e",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "2c22e0f9641aeec937e6598a16709edc5bc6f2fecbae3aef120f1bf9f4189fe1",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -1295,8 +1295,8 @@
     },
     "faq": {
       "route": "/faq/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "f144c40ad23b1e16fdec69ff4bc77ef06fe78618ec07a870ff20867c77845c0c",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "3f59b8cdc4c657cf0f5ab36dbfc461ef7dfc46d3f6c7366a0e46f9d4a8662c5b",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -1392,8 +1392,8 @@
     },
     "classroom-label": {
       "route": "/guides/make-a-classroom-label/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "fa07ccd6adf9d20bf5a742c24a7dc602b341667af5bdf3e157bcf84ab903a9f0",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "b81a7c13da4074971e5a9593bb6e18f7fd97ba2e90b3e73a6ac7e657d9481a9e",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -1477,8 +1477,8 @@
     },
     "coloring-activity": {
       "route": "/guides/turn-clipart-into-a-coloring-activity/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "c4e06793f6a3b9534207b69546486f8cbc81d2026573226d09732f4251f7afcc",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "998eda160a2e21a40e7a0a03ec37f556e8bdbf1a379384ddd96811747e6bd726",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -1550,8 +1550,8 @@
     },
     "download-formats": {
       "route": "/guides/webp-pdf-and-editable-projects/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "bfceac73be986c4b98a39dc6d5e570c6650dee4524e1ffcee0bfbc53769603fc",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "a18641582efff361f0bec66ef6db6fdf705407d0c9107cc25e9921c38b236442",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -1663,8 +1663,8 @@
     },
     "license": {
       "route": "/license/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "adc98f85e13523c2172a028292d0049a6b901ddd5136ae8d2b5412c3d318d2ca",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "ebc9bef61edf00735b981fd200ea77eb1fd1761361c3fac4b8d38b902a54a5e1",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -1744,8 +1744,8 @@
     },
     "privacy": {
       "route": "/privacy/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "ad66727764862cd5c806b9225855645cc96b81cf821f49b1f746937cc8ddda11",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "e7e0515b0f994904e3ad8a027f968ed204557300715b6c14adf9e5625affb888",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -1821,8 +1821,8 @@
     },
     "cookies": {
       "route": "/cookies/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "e902b275ca8af3e0f7b1b7abcda954ee223facbdfeb85e49719fe2518eda2e56",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "77a3702105578d3a9705823c35f16f9bf0eef4507c93fcc5b71e5ed008a38d44",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -1894,8 +1894,8 @@
     },
     "terms": {
       "route": "/terms/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "c2c8245501d5543ca2a52c35cfafcd731b54247629666b2a4cc25483600e2ce7",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "024dc990049c9534ab6dc7e4a1d3c9f45c5ccc68b52e93d0e165697a67e09404",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -1975,8 +1975,8 @@
     },
     "copyright": {
       "route": "/copyright/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "6c887115b5abd04ca21c7372740710dbd0d6dcba3e47a2b9b996098de1e40783",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "289138101a15d42c618174dc9b9e3b924f3616c8b063c77536b0f2a761d05df8",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -2052,8 +2052,8 @@
     },
     "accessibility": {
       "route": "/accessibility/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "c85f5d494d0252e69741b82ae9d437a64bb21eadfa357ee80a1b537a6dec2f75",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "f5a6fd095a9bbfd87f58b1b9d116230416ae375c1ba0a3fe2a172d9ee20dc27f",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -2121,8 +2121,8 @@
     },
     "creative-process": {
       "route": "/editorial-process/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "1e7bcaaf86262fa0e6d20162b795763d99afd80cf151a997be444f8bcca15009",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "c738055272b894ceba78740100a1f81ba3da492870a802d8a0b8b86bbf9f1bb4",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
@@ -2210,8 +2210,8 @@
     },
     "not-found": {
       "route": "/404/",
-      "rendererSha": "d93450e673f84fb2b44fb82295878c25f00a64f74bb73111a1f5e45e79427c9d",
-      "outputSha256": "4a3864cd4ff9097d4e89e4d0cbe6d9b3d45e07c86d4cf593ac73cfa9b8515bc7",
+      "rendererSha": "fc815a8104953699ab3954138c726fd843550537a1dbc4fb2ff6c75662e50860",
+      "outputSha256": "82112cfdf9409eea1957271872e1a4bfead3ba5db9397c361656060ba378797d",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",

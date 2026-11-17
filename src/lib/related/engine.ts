@@ -222,7 +222,7 @@ function card(result: Ranked, group: RelatedCard['group']): RelatedCard {
   const reason = artworkCardSummary(item);
   const loadingPreview = imageLoadingPreview({
     webp: publicBrandURL(item.webp!),
-    originalThumb: publicBrandURL(item.originalThumb),
+    originalThumb: publicBrandURL(item.originalThumb || item.thumb),
     files: item.files,
   });
   return {
