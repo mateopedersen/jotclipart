@@ -273,6 +273,7 @@
     border-color 200ms;
 }
 .home-sample-picture {
+  position: relative;
   display: grid;
   place-items: center;
   flex: 1;

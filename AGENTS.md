@@ -1,3 +1,12 @@
+# Homepage image preview correction — 2026-11-17
+
+Homepage sample picture frames need position:relative so the existing source-bound
+preview backdrop can paint while the full original is queued. Prioritize previews
+from their visible/near fixed frame independently of original admission; retain
+source validation, invalidation, loaded/error cleanup, clipping and admission caps.
+The desktop-only featured preview preload supplements the unchanged original
+preload. No original src/srcset/schema/file bytes, R2 objects or catalog change.
+
 # Latest owner homepage subject-color correction — 2026-11-17
 
 Homepage recent-card subject links such as Gucci Clipart, Fendi Clipart and Dior

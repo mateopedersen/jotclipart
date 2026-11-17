@@ -89,6 +89,14 @@ export function initOriginalImageLoading(
     delete image.dataset.originalPreview;
     image.style.removeProperty('--original-loading-preview');
   };
+  const requestPreview = (s: State) => {
+    if (s.previewRequest) return;
+    const request = new Image();
+    request.decoding = 'async';
+    request.fetchPriority = 'high';
+    request.src = s.preview;
+    s.previewRequest = request;
+  };
   const paintFramePreview = (s: State) => {
     const frame = s.previewFrame;
     if (
@@ -103,6 +111,9 @@ export function initOriginalImageLoading(
       return;
     const style = getComputedStyle(frame);
     if (style.position === 'static') return;
+    // A pending original is hidden, so its own observer cannot prioritize the
+    // preview. The visible fixed frame must request it independently of admission.
+    requestPreview(s);
     const padding = [style.paddingTop, style.paddingRight, style.paddingBottom, style.paddingLeft];
     // Pending originals are display:none to prevent native request flooding.
     // Their temporary thumbnail therefore needs its own fixed-frame paint box.
@@ -172,13 +183,7 @@ export function initOriginalImageLoading(
     // The existing source-bound thumbnail is tiny compared with a full
     // original. Admit its first request at high priority so CSS backgrounds
     // cannot sit behind several slow original transfers on mobile.
-    if (!s.previewRequest) {
-      const request = new Image();
-      request.decoding = 'async';
-      request.fetchPriority = 'high';
-      request.src = s.preview;
-      s.previewRequest = request;
-    }
+    requestPreview(s);
     s.image.style.setProperty(
       '--original-loading-preview',
       'url(' + JSON.stringify(s.preview) + ')',
