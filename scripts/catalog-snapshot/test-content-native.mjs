@@ -386,10 +386,10 @@ async function verifyNativeContentWithSource({
               headers,
               redirect: 'manual',
             });
-            const detail = r.status === 301 ? '' : (await r.text()).slice(0, 1600);
+            const body = await r.text();
+            const detail = r.status === (retire ? 404 : 301) ? '' : body.slice(0, 1600);
             assert.equal(r.status, retire ? 404 : 301, path + ' ' + detail);
             assert.equal(r.headers.get('location'), retire ? null : expectedLocation, path);
-            await r.arrayBuffer();
             results.push({
               path,
               status: retire ? 404 : 301,
