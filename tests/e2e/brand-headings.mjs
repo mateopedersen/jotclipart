@@ -102,14 +102,12 @@ try {
       );
       for (const label of labels)
         if (label.color !== 'rgb(0, 0, 0)') report.errors.push({ route, width, ...label });
-      const cards = await page
-        .locator('.card-title, .related-card-title')
-        .evaluateAll((ns) =>
-          ns.map((n) => ({
-            weight: Number(getComputedStyle(n).fontWeight),
-            color: getComputedStyle(n).color,
-          })),
-        );
+      const cards = await page.locator('.card-title, .related-card-title').evaluateAll((ns) =>
+        ns.map((n) => ({
+          weight: Number(getComputedStyle(n).fontWeight),
+          color: getComputedStyle(n).color,
+        })),
+      );
       for (const card of cards) {
         assert(card.weight >= 800, 'Artwork card titles must stand out from descriptions');
         assert.equal(card.color, 'rgb(0, 0, 0)');
