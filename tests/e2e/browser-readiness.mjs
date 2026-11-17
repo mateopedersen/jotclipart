@@ -11,7 +11,7 @@ import {
 const engine = process.env.UC_BROWSER ?? 'chromium';
 const width = Number(process.env.VIEWPORT_WIDTH ?? 768);
 assert(['chromium', 'firefox', 'webkit'].includes(engine));
-let catalogResponse, streamResponse, outgoingResponse;
+let catalogResponse, streamResponse, outgoingResponse, optionalResponse;
 let outgoingSeen;
 const heldOutgoing = new Promise((done) => {
   outgoingSeen = done;
@@ -29,6 +29,10 @@ const server = createServer((request, response) => {
     response.writeHead(200, { 'Content-Type': 'application/json' });
     response.write('{"ok":');
     catalogSeen();
+  } else if (request.url === '/surprise-picks.json') {
+    optionalResponse = response;
+    response.writeHead(200, { 'Content-Type': 'application/json' });
+    response.write('{"items":');
   } else if (request.url === '/catalog-stats.json') {
     outgoingResponse = response;
     response.writeHead(200, { 'Content-Type': 'application/json' });
@@ -143,6 +147,24 @@ try {
     name: 'A committed replacement document cannot inherit cancelled outgoing metadata',
     status: 'PASS',
   });
+  await page.evaluate(async () => {
+    document.documentElement.dataset.surpriseNavigation = 'ready';
+    const controller = new AbortController();
+    setTimeout(() => controller.abort(), 80);
+    try {
+      await (await fetch('/surprise-picks.json', { signal: controller.signal })).json();
+    } catch {
+      document.body.dataset.optionalFallback = 'true';
+    }
+    performance.clearResourceTimings();
+  });
+  await settleBeforeDirectNavigation(page);
+  assert.equal(await page.evaluate(() => document.body.dataset.optionalFallback), 'true');
+  assert.deepEqual(errors, ['deliberate readiness fixture error']);
+  report.checks.push({
+    name: 'A genuinely aborted optional index settles even without a ResourceTiming entry',
+    status: 'PASS',
+  });
   const disabled = await browser.newContext({ javaScriptEnabled: false });
   const disabledPage = await disabled.newPage();
   observeCatalogRequests(disabledPage, origin);
@@ -174,6 +196,7 @@ try {
   catalogResponse?.end();
   streamResponse?.end();
   outgoingResponse?.end();
+  optionalResponse?.end();
   await browser?.close();
   await new Promise((done) => server.close(done));
   writeFileSync(output + '/readiness-result.json', JSON.stringify(report, null, 2) + '\n');

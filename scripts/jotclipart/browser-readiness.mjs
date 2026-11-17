@@ -7,7 +7,12 @@ const catalogRequests = new WeakMap();
 
 export function observeCatalogRequests(page, origin) {
   if (catalogRequests.has(page)) return;
-  const state = { pending: new Set(), lastActivity: 0, documentNavigation: undefined };
+  const state = {
+    pending: new Set(),
+    lastActivity: 0,
+    documentNavigation: undefined,
+    discoverySettled: false,
+  };
   catalogRequests.set(page, state);
   page.on('request', (request) => {
     const url = new URL(request.url());
@@ -33,10 +38,14 @@ export function observeCatalogRequests(page, origin) {
       state.pending.clear();
       state.lastActivity = 0;
       state.documentNavigation = undefined;
+      state.discoverySettled = false;
     }
   });
   const finished = (request) => {
-    if (state.pending.delete(request)) state.lastActivity = Date.now();
+    if (state.pending.delete(request)) {
+      state.lastActivity = Date.now();
+      if (new URL(request.url()).pathname === '/surprise-picks.json') state.discoverySettled = true;
+    }
   };
   page.on('requestfinished', finished);
   page.on('requestfailed', finished);
@@ -48,19 +57,17 @@ export async function settleBeforeDirectNavigation(page) {
   );
   if (active) {
     await page.waitForLoadState('load', { timeout: 60000 });
-    await page.waitForFunction(
-      () =>
-        performance.getEntriesByType('resource').some((entry) => {
-          const url = new URL(entry.name);
-          return (
-            url.origin === location.origin &&
-            url.pathname === '/surprise-picks.json' &&
-            entry.responseEnd > 0
-          );
-        }),
-      null,
-      { timeout: 7000 },
-    );
+    // Optional discovery falls back to the embedded, source-bound selection
+    // after its normal abort deadline. WebKit may omit ResourceTiming for that
+    // failed request. Observe the real request lifecycle, including failure;
+    // the required complete 512-destination API proof remains in the pin gate.
+    const state = catalogRequests.get(page);
+    if (!state) throw Error('Catalog request observation was not registered');
+    const discoveryDeadline = Date.now() + 7000;
+    while (!state.discoverySettled && Date.now() < discoveryDeadline)
+      await new Promise((done) => setTimeout(done, 25));
+    if (!state.discoverySettled)
+      throw Error('Optional discovery request did not settle before artificial navigation');
   }
   const state = catalogRequests.get(page);
   if (!state?.lastActivity) return;
