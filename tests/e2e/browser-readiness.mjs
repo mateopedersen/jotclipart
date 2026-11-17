@@ -120,6 +120,28 @@ try {
     name: 'Unrelated ongoing streams do not turn readiness into a network-idle wait',
     status: 'PASS',
   });
+  const disabled = await browser.newContext({ javaScriptEnabled: false });
+  const disabledPage = await disabled.newPage();
+  observeCatalogRequests(disabledPage, origin);
+  let disabledTimeout;
+  try {
+    await Promise.race([
+      settleBeforeDirectNavigation(disabledPage),
+      new Promise((_, fail) => {
+        disabledTimeout = setTimeout(
+          () => fail(Error('JavaScript-disabled readiness stalled')),
+          1500,
+        );
+      }),
+    ]);
+  } finally {
+    clearTimeout(disabledTimeout);
+    await disabled.close();
+  }
+  report.checks.push({
+    name: 'Initial and JavaScript-disabled pages do not require animation frames',
+    status: 'PASS',
+  });
   report.status = 'PASS';
 } catch (error) {
   report.status = 'FAIL';

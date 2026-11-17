@@ -7,8 +7,8 @@ const catalogRequests = new WeakMap();
 
 export function observeCatalogRequests(page, origin) {
   if (catalogRequests.has(page)) return;
-  const requests = new Set();
-  catalogRequests.set(page, requests);
+  const state = { pending: new Set(), lastActivity: 0 };
+  catalogRequests.set(page, state);
   page.on('request', (request) => {
     const url = new URL(request.url());
     if (
@@ -17,10 +17,14 @@ export function observeCatalogRequests(page, origin) {
         url.pathname,
       ) ||
         url.pathname.startsWith('/search-data/'))
-    )
-      requests.add(request);
+    ) {
+      state.pending.add(request);
+      state.lastActivity = Date.now();
+    }
   });
-  const finished = (request) => requests.delete(request);
+  const finished = (request) => {
+    if (state.pending.delete(request)) state.lastActivity = Date.now();
+  };
   page.on('requestfinished', finished);
   page.on('requestfailed', finished);
 }
@@ -45,22 +49,19 @@ export async function settleBeforeDirectNavigation(page) {
       { timeout: 7000 },
     );
   }
-  const pending = catalogRequests.get(page);
-  if (!pending) return;
+  const state = catalogRequests.get(page);
+  if (!state?.lastActivity) return;
   const deadline = Date.now() + 60000;
   while (Date.now() < deadline) {
-    if (!pending.size) {
-      // A completed response may queue a dependent metadata read while its JSON
-      // is parsed. Flush render tasks, then check the observed requests again.
-      await page.evaluate(
-        () => new Promise((done) => requestAnimationFrame(() => requestAnimationFrame(done))),
-      );
-      if (!pending.size) return;
-    }
+    // A completed response may enqueue a dependent metadata read while JSON is
+    // parsed. Only observed catalog activity needs a short quiet interval.
+    // Use the test runner's clock: disabled JavaScript and background pages do
+    // not promise animation frames, and must never hang the navigation helper.
+    if (!state.pending.size && Date.now() - state.lastActivity >= 100) return;
     await new Promise((done) => setTimeout(done, 25));
   }
   throw Error(
     'Catalog requests did not finish before artificial navigation: ' +
-      [...pending].map((request) => new URL(request.url()).pathname).join(', '),
+      [...state.pending].map((request) => new URL(request.url()).pathname).join(', '),
   );
 }
