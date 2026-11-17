@@ -1,3 +1,24 @@
+# Current installed contact and no-redirect route support — 2026-11-17
+
+Current LIVE software15b0e20cb1c56edc2e649a1d97503f23fc201ebc, Pages
+https://69971e7d.jotclipart.pages.dev, ABI
+1f27c628389871785d33f038dfb63515a2f4f6ba866709525b2cc321fcf7be45.
+Permanently preserve ENTIRE work/jotclipart-contact-retirement-20261117 independent
+checkout, its work/jotclipart-release-15b0e20cb1c5 compiled inputs and
+work/jotclipart-installed-15b0/manifest.json (801 files). All earlier installed
+checkouts and KEEP copies remain protected. Current freeze and full Git/payload
+KEEP recovery verified, including independent bundle restore/fsck and uchg.
+Read config/content-publisher.json for actual absolute bindings.
+693 source checks and6 targeted contact/security tests passed.96 preview and96
+production real UI states plus9 real Google iframe/prefill/draft states on each
+origin passed. New form owned only by jotclipart@gmail.com; notification email
+actually observed. Six live information pages have no old Ultra mailbox/form.
+This software adds authenticated retired-route support; the5423-entry URL plan
+is NOT yet published. Continue normal prepare/replay/readback/sign/CAS/finalize
+against8cec421c20fd3367cc6be5b5f2d0cbdec0a5a81e95e7c075a1d6ca548df52ed4.
+Freeze source HEAD while the URL publication packet is in progress. No source
+artwork/metadata/media or Google/Bing/IndexNow submissions are changed.
+
 # Final contact integration regression — 2026-11-17
 
 The actual dynamic Contact response lacked frame-src despite the legacy static
