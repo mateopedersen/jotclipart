@@ -62,6 +62,14 @@ export async function settleBeforeDirectNavigation(page) {
   }
   throw Error(
     'Catalog requests did not finish before artificial navigation: ' +
-      [...state.pending].map((request) => new URL(request.url()).pathname).join(', '),
+      JSON.stringify(
+        [...state.pending].map((request) => ({
+          url: request.url(),
+          method: request.method(),
+          type: request.resourceType(),
+          timing: request.timing(),
+          frame: request.frame().url(),
+        })),
+      ),
   );
 }
