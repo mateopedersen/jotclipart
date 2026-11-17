@@ -162,6 +162,7 @@ export function searchArtwork<T extends SearchArtwork>(artwork: T[], state: Sear
   const { tokens, excluded } = queryTerms(state.q),
     seen = new Set<string>();
   const exact: { item: T; score: number; fuzzy: boolean }[] = [],
+    prefixes: typeof exact = [],
     close: typeof exact = [];
   for (const item of artwork) {
     if (seen.has(item.id) || !artworkMatchesFilters(item, state)) continue;
@@ -173,6 +174,7 @@ export function searchArtwork<T extends SearchArtwork>(artwork: T[], state: Sear
     const { title, weights } = artworkSearchFields(item);
     if (excluded.some((token) => termVariants(token).some((word) => weights.has(word)))) continue;
     const matches: TermMatch[] = [];
+    let prefixMatch = false;
     for (const [index, token] of tokens.entries()) {
       const variants = termVariants(token);
       let words = variants.filter(
@@ -180,11 +182,16 @@ export function searchArtwork<T extends SearchArtwork>(artwork: T[], state: Sear
         ),
         fuzzy = false;
       if (!words.length) {
+        if (index === tokens.length - 1 && token.length >= 3) {
+          words = [...weights.keys()].filter(
+            (word) => (tokens.length === 1 || weights.get(word)! >= 3) && word.startsWith(token),
+          );
+          prefixMatch = words.length > 0;
+        }
+      }
+      if (!words.length) {
         words = [...weights.keys()].filter(
-          (word) =>
-            (tokens.length === 1 || weights.get(word)! >= 3) &&
-            (oneEditAway(token, word) ||
-              (index === tokens.length - 1 && token.length >= 3 && word.startsWith(token))),
+          (word) => (tokens.length === 1 || weights.get(word)! >= 3) && oneEditAway(token, word),
         );
         fuzzy = !!words.length;
       }
@@ -199,10 +206,14 @@ export function searchArtwork<T extends SearchArtwork>(artwork: T[], state: Sear
     }
     if (matches.length === tokens.length) {
       const fuzzy = matches.some((m) => m.fuzzy);
-      (fuzzy ? close : exact).push({ item, score: relevanceScore(matches), fuzzy });
+      (fuzzy ? close : prefixMatch ? prefixes : exact).push({
+        item,
+        score: relevanceScore(matches),
+        fuzzy,
+      });
     }
   }
-  const ranked = exact.length ? exact : close;
+  const ranked = exact.length ? exact : prefixes.length ? prefixes : close;
   const publicationRank =
     state.sort === 'newest'
       ? new Map(newestFirst(artwork).map((item, index) => [item.id, index]))

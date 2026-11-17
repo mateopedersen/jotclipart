@@ -1,3 +1,25 @@
+# Owner search refinement — 2026-11-17
+
+A public source-bound query audit found mang matching man (3251 results,29.5s)
+before literal mango prefixes. Keep exact matches first, then final-word literal
+prefixes, then spelling tolerance only when both earlier passes have no results.
+Apply the same tiers in the snapshot engine, sharded client and in-memory scorer.
+Preserve every scene term/exclusion/filter, ranking choices and pagination; a
+literal prefix is not a spelling correction. Reuse the existing authenticated
+language-v13 index; no artwork/index/media rewrite is needed. The actual public
+AI Clipart Builder navigation label must also find its AI Generator destination,
+without making incidental policy/example text an autocomplete destination.
+New eight-case regression and the normal701-check source suite passed in private
+development. Broad scoring/5500-row equivalence checks passed; an obsolete static
+whole-catalog Pages-file-cap check still fails (83771) because this site publishes
+only677 static software assets and serves its signed catalog dynamically. Do not
+claim this legacy full-static fixture is the deployed architecture or bypass the
+actual native package/file-cap gates. Preview/production search QA still required.
+The SOURCE checkout remains frozen atdcbdc770a360dc198f21a609e86734108cf1e0bc while
+the separate normal URL-retirement publication runs. Develop/verify search only
+in an isolated checkout; do not alter that SOURCE HEAD until URL finalization.
+All installed runtimes and KEEP copies remain permanently protected.
+
 # Current installed contact and no-redirect route support — 2026-11-17
 
 Current LIVE software15b0e20cb1c56edc2e649a1d97503f23fc201ebc, Pages

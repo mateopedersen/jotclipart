@@ -115,6 +115,7 @@ try {
       'catalog-protocol',
       'snapshot-search-transport',
       'snapshot-pinned-search',
+      'search-prefix-priority',
       'catalog-snapshot-api',
       'catalog-snapshot-client',
       'catalog-software-asset-cache',

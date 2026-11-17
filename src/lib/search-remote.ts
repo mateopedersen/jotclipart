@@ -499,6 +499,30 @@ export class SearchRepository {
     };
     let termMaps = mapsFor(variants),
       ranked = rank(termMaps);
+    let prefix: string[] = [];
+    if (!ranked.length && tokens.length) {
+      const last = tokens[tokens.length - 1];
+      prefix =
+        last.length >= 3 && manifest.lexiconInitials?.includes(last[0])
+          ? await this.json<string[]>(this.path(manifest, `prefix/${last[0]}`), signal)
+          : [];
+      const expanded = variants.map((words, index) =>
+        index === tokens.length - 1
+          ? [
+              ...words,
+              ...prefix
+                .filter((word) => !words.includes(word) && word.startsWith(last))
+                .sort((a, b) => a.length - b.length || a.localeCompare(b))
+                .slice(0, 16),
+            ]
+          : words,
+      );
+      if (expanded.some((words, index) => words.length > variants[index].length)) {
+        await loadWords(expanded.flat());
+        termMaps = mapsFor(expanded);
+        ranked = rank(termMaps);
+      }
+    }
     // An exact search does not pay for spelling dictionaries, nor mix in misspellings.
     if (!ranked.length && tokens.length) {
       const lengths = new Set(
@@ -511,10 +535,6 @@ export class SearchRepository {
         (length) => this.json<string[]>(this.path(manifest, `lexicon/${length}`), signal),
       );
       const last = tokens[tokens.length - 1];
-      const prefix =
-        last.length >= 3 && manifest.lexiconInitials?.includes(last[0])
-          ? await this.json<string[]>(this.path(manifest, `prefix/${last[0]}`), signal)
-          : [];
       const vocabulary = [...new Set([...dictionaries.flat(), ...prefix])];
       const expanded = variants.map((words, i) => [
         ...words,
@@ -611,7 +631,11 @@ export class SearchRepository {
       ),
     };
   }
-  async sourceDirectory(root: string, signal?: AbortSignal, navigationOnly = false): Promise<SiteSearchEntry[]> {
+  async sourceDirectory(
+    root: string,
+    signal?: AbortSignal,
+    navigationOnly = false,
+  ): Promise<SiteSearchEntry[]> {
     if (!/^[a-f0-9]{64}$/.test(root)) throw new Error('Invalid directory snapshot.');
     const cacheKey = navigationOnly ? root + '/navigation' : root;
     const cached = this.siteCache.get(cacheKey);

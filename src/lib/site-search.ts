@@ -27,20 +27,55 @@ export const searchKindLabels: Record<string, string> = {
 };
 // The source directory is reused across keystrokes. Prepare public text once,
 // without retaining queries or trusting stale fields after a metadata change.
-const preparedEntries = new WeakMap<SiteSearchEntry, {
-  titleSource: string; descriptionSource: string; textSource: string; kindSource: string;
-  title: string[]; body: Set<string>;
-}>();
+const preparedEntries = new WeakMap<
+  SiteSearchEntry,
+  {
+    titleSource: string;
+    descriptionSource: string;
+    textSource: string;
+    kindSource: string;
+    hrefSource: string;
+    title: string[];
+    body: Set<string>;
+  }
+>();
 export function preparedSiteEntry(entry: SiteSearchEntry) {
   const old = preparedEntries.get(entry);
-  if (old && old.titleSource === entry.title && old.descriptionSource === entry.description &&
-      old.textSource === entry.text && old.kindSource === entry.kind) return old;
-  const value = { titleSource: entry.title, descriptionSource: entry.description,
-    textSource: entry.text, kindSource: entry.kind, title: normalizeQuery(entry.title),
-    body: new Set(normalizeQuery(`${entry.title} ${entry.description} ${entry.text} ${searchKindLabels[entry.kind]}`)) };
-  preparedEntries.set(entry, value); return value;
+  if (
+    old &&
+    old.titleSource === entry.title &&
+    old.descriptionSource === entry.description &&
+    old.textSource === entry.text &&
+    old.kindSource === entry.kind &&
+    old.hrefSource === entry.href
+  )
+    return old;
+  // This is the real public navigation label for the same tool whose SEO title
+  // uses Generator. Do not treat incidental policy or example copy as a name.
+  const navigationAlias =
+    entry.kind === 'tool' && entry.href === '/ai-clipart-generator/' ? 'AI Clipart Builder' : '';
+  const value = {
+    titleSource: entry.title,
+    descriptionSource: entry.description,
+    textSource: entry.text,
+    kindSource: entry.kind,
+    hrefSource: entry.href,
+    title: normalizeQuery(`${entry.title} ${navigationAlias}`),
+    body: new Set(
+      normalizeQuery(
+        `${entry.title} ${navigationAlias} ${entry.description} ${entry.text} ${searchKindLabels[entry.kind]}`,
+      ),
+    ),
+  };
+  preparedEntries.set(entry, value);
+  return value;
 }
-export function searchSiteEntries(entries: SiteSearchEntry[], query: string, kind = 'all', navigationOnly = false) {
+export function searchSiteEntries(
+  entries: SiteSearchEntry[],
+  query: string,
+  kind = 'all',
+  navigationOnly = false,
+) {
   const plan = queryTerms(query),
     tokens = [...plan.tokens];
   if (plan.wantsOutline) tokens.push('outline');
@@ -50,7 +85,8 @@ export function searchSiteEntries(entries: SiteSearchEntry[], query: string, kin
   const exact: { entry: SiteSearchEntry; score: number; fuzzy: boolean }[] = [],
     close: typeof exact = [];
   for (const entry of candidates) {
-    const prepared = preparedSiteEntry(entry), title = prepared.title,
+    const prepared = preparedSiteEntry(entry),
+      title = prepared.title,
       body = navigationOnly ? new Set(title) : prepared.body;
     if (plan.excluded.some((word) => termVariants(word).some((term) => body.has(term)))) continue;
     const matches: TermMatch[] = [];
@@ -64,10 +100,7 @@ export function searchSiteEntries(entries: SiteSearchEntry[], query: string, kin
           words = [...body].filter((word) => word.startsWith(token));
       }
       if (!words.length) {
-        words = [...body].filter(
-          (word) =>
-            token.length >= 4 && oneEditAway(token, word),
-        );
+        words = [...body].filter((word) => token.length >= 4 && oneEditAway(token, word));
         fuzzy = !!words.length;
       }
       if (!words.length) break;
