@@ -143,7 +143,7 @@ for (const kind of ['webp', 'pdf', 'thumb']) {
     url,
     ...facts,
     contentType: kind === 'pdf' ? 'application/pdf' : 'image/webp',
-    expectedCorsOrigin: '*',
+    expectedCorsOrigin: config.publicOrigin,
   });
 }
 const review = structuredClone(oldRow.review);
