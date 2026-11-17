@@ -594,6 +594,7 @@ async function browserFlow() {
     assert(!ids.includes(record.id));
     await layout(page);
     await page.screenshot({ path: join(dir, 'art.png') });
+    await settleBeforeDirectNavigation(page);
     const warm = await page.reload({ waitUntil: 'domcontentloaded' });
     assert.equal(warm.headers()['x-uc-snapshot'], pin.snapshotRoot);
     check('Artwork metadata, related identity and cold/warm snapshot consistency', {

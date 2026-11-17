@@ -1,14 +1,24 @@
 {
   "schema": 1,
-  "status": "AWAITING_JOTCLIPART_PRODUCTION_INSTALLATION",
+  "status": "INSTALLED_LIVE_VERIFIED",
   "operator": "pnpm content:publish -- prepare|publish CAPSULE VERIFIED_SOFTWARE config/content-publisher-public.json NEW_WORK_OUTPUT",
   "script": "scripts/catalog-snapshot/publish-content.mjs",
   "capsuleRoot": "data/catalog-batches",
   "publicOrigin": "https://jotclipart.com",
   "activeKey": "catalog/jotclipart/active.json",
-  "software": null,
-  "publicConfig": "config/content-publisher-public.json",
-  "lastVerifiedData": null,
+  "software": {
+    "revision": "fb19a84b475431d723798fa0a9bfe655b28b62f4",
+    "abiSHA256": "a4107cccd9fda91f0b3a546f2fa3da7d74847acbb021373a4d2285823259aee1",
+    "workerSHA256": "2cf555375104c3c48204959e04f756bce7e3e4c985870482658b67d9e6c8512e",
+    "directory": "/Users/melihozcan/Documents/Codex/2026-10-22/bilgisayarima-baglan-ve-codex-te-gereksiz/work/jotclipart-migration/site/work/independent-jotclipart-final-20261117/work/jotclipart-release-fb19a84b4754"
+  },
+  "publicConfig": "/Users/melihozcan/Documents/Codex/2026-10-22/bilgisayarima-baglan-ve-codex-te-gereksiz/work/jotclipart-migration/site/work/independent-jotclipart-final-20261117/work/jotclipart-installed-fb19/config.json",
+  "lastVerifiedData": {
+    "revision": "afb3383986d90bb4c167422f512b2ed320badde5",
+    "root": "7c311351a6c725394ca7473cbcc1025868a281d17449cc817776452f0f3f6753",
+    "artworks": 49858,
+    "topics": 804
+  },
   "limits": {
     "changedArtworksPerPacket": 256,
     "affectedTopicsPerPacket": 64,
@@ -17,9 +27,11 @@
     "accountInventoryRequired": false,
     "fullCatalogBuildForContent": false
   },
-  "proof": null,
+  "proof": "/Users/melihozcan/Documents/Codex/2026-10-22/bilgisayarima-baglan-ve-codex-te-gereksiz/work/jotclipart-migration/site/work/independent-jotclipart-final-20261117/work/jotclipart-installed-fb19/manifest.json",
   "protectedIndependentBackup": "/Users/melihozcan/Documents/UltraClipart-Publisher-KEEP",
   "previousInstallationRetained": true,
   "installationRequirement": "Run scripts/jotclipart/freeze-publisher.mjs only after the exact independent JotClipart software is live and its release gates pass. Old installed runtimes are preserved but cannot target this namespace.",
-  "measurementsScope": "No new JotClipart content publication or timing result is claimed by this pending configuration."
+  "measurementsScope": "Actual production control/root read twice and exact ABI/source/worker/client bytes. Feature, model, full HTTP and R2 inventory gates remain separate release evidence.",
+  "installedRuntimePreservation": "/Users/melihozcan/Documents/Codex/2026-10-22/bilgisayarima-baglan-ve-codex-te-gereksiz/work/jotclipart-migration/site/work/independent-jotclipart-final-20261117/work/jotclipart-installed-fb19/manifest.json",
+  "preservationManifestSHA256": "0bf25c1b8dc8cd33db5d4bf9fdeef5fcd1723d0248a78284c1f421d4290f026a"
 }

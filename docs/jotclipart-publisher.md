@@ -12,6 +12,18 @@ The separate Cloudflare project is connected to `mateopedersen/jotclipart` on `m
 
 ## Current installation record
 
+Production was installed and verified on 2026-11-17 at software/control
+`fb19a84b475431d723798fa0a9bfe655b28b62f4`, Pages deployment
+`94667797-69e3-4ee1-88ff-df95d23c0f1f`. The exact independent checkout is
+`work/independent-jotclipart-final-20261117`; preserve its entire unique build
+`work/jotclipart-release-fb19a84b4754` and installation evidence
+`work/jotclipart-installed-fb19`. `config/content-publisher.json` records the
+verified absolute inputs and new public configuration. The 799-file installation
+and full Git history were independently archived, member-readback verified and
+protected under the owner's KEEP directory. This is a same-volume recovery copy,
+not an off-device backup. Post-installation audit/test/documentation commits do
+not change the deployed FB19 software or authorize an automatic deployment.
+
 Read `config/content-publisher.json` before a content operation. `AWAITING_JOTCLIPART_PRODUCTION_INSTALLATION` is a real hold, not proof that the historical UltraClipart runtime is the new installed publisher. The old protected runtime and independent KEEP archives must remain intact. The new public configuration is `config/content-publisher-public.json`, with explicit production origin `https://jotclipart.com` and pointer `catalog/jotclipart/active.json` in the existing shared bucket.
 
 The normal content, presentation, URL-repair and resume operators reject an old origin, omitted/old pointer, changed authority or software whose trusted-configuration digest belongs to the old namespace before staging or activation. A software revision also has to match actual production control before activation. Never fix a failure by relaxing these checks, reusing an old active pointer or overwriting a newer catalog root.

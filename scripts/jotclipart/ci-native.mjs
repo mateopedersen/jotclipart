@@ -126,6 +126,7 @@ try {
       'verified-fetch',
       'social-images',
       'jotclipart-brand',
+      'jotclipart-topic-heading',
       'page-seo',
       'jotclipart-build-root',
       'jotclipart-publisher-target',

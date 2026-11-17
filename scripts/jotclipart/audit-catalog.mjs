@@ -1,3 +1,4 @@
+import { topicHeadingEvidence } from './topic-heading.mjs';
 import { readFileSync, writeFileSync, mkdirSync, existsSync, renameSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import { createHash } from 'node:crypto';
@@ -478,8 +479,7 @@ try {
       oldCanonical: item.canonical,
       newCanonical: publicBrandURL(item.canonical),
       path: item.path,
-      sourceTitle: item.title,
-      displayTitle: displayCatalogTitle(item.title),
+      ...topicHeadingEvidence(item),
       descriptionSHA256: sha(Buffer.from(description)),
       artworkCount: item.artworkCount,
       clusters: item.clusters,

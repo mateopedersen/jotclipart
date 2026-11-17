@@ -1,3 +1,31 @@
+# Verified JotClipart installation — 2026-11-17
+
+Production origin is https://jotclipart.com, control/source
+`fb19a84b475431d723798fa0a9bfe655b28b62f4`, Pages deployment
+`94667797-69e3-4ee1-88ff-df95d23c0f1f` (https://94667797.jotclipart.pages.dev).
+The installed catalog root at cutover was
+`7c311351a6c725394ca7473cbcc1025868a281d17449cc817776452f0f3f6753`,
+49,858 artworks / 804 topics. Read actual production control before any write.
+Use config/content-publisher.json and its exact independent installed software.
+Preserve the entire `work/independent-jotclipart-final-20261117` checkout,
+its unique `work/jotclipart-release-fb19a84b4754` compiled dependencies and
+`work/jotclipart-installed-fb19` preservation manifest. Its source `.git` is
+independent and complete; do not move its ABI-bound absolute inputs.
+The private, member-verified same-volume KEEP archive is separately recorded in
+the migration rollback runbook; it is not an off-device backup.
+Keep the shared R2 buckets, active editor previews, D1, private signer,
+Turnstile widget and account Workers Paid plan when closing the old website.
+No new JotClipart Google/Bing/IndexNow submissions are authorized.
+Contact changes remain deferred by the owner. Read the current migration
+verification and closure reports for remaining work. The complete 67,150-route
+HTTP scan passed; the old Pages project/deployments, asset attachment and two
+old Workers were removed. Old repository/zone UI deletion still awaits the
+computer-control tool's action-time confirmation. Google old-prefix requests
+are processing; old Bing access is unavailable. Post-closure Chromium/WebKit
+critical flows passed. Keep these limits separate from completed checks.
+Post-installation audit, test and documentation commits are bookkeeping;
+they must not be called deployed software or automatically redeployed.
+
 # White page backgrounds — latest owner direction 2026-11-16
 
 All page, main, large section, panel and workspace surfaces are white (#FFFFFF). This supersedes the earlier #F4FAF6 page-background/pale-green broad-surface migration palette below. Green #52B788 remains the main logo accent; #216E4E is for actions, links and small accents. Pale green is limited to small badges, hover/selected controls and fine outlines. Preserve fonts, grid, spacing, breakpoints, original artwork and user canvas/background colors, warning/error semantics, URLs and source metadata. The owner rejected the first flat J logo and requested a separate 3D clipart logo; do not restore the old flat logo through a generator.
