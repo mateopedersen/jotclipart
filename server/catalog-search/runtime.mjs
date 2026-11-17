@@ -286,16 +286,24 @@ export async function openSearch(
               (_, n) => token.slice(0, n) + token.slice(n + 1),
             ),
           ]);
-          for (const sig of signatures)
+          await mapFour([...signatures], async (sig) => {
             for (const word of await wordsFrom(
               structures,
               await lookup(manifest.edits, 'edits', sig),
             ))
               candidates.add(word);
-          for (let n = 0; n < token.length - 1; n++) {
-            const swap = token.slice(0, n) + token[n + 1] + token[n] + token.slice(n + 2);
+          });
+          const swaps = [
+            ...new Set(
+              Array.from(
+                { length: token.length - 1 },
+                (_, n) => token.slice(0, n) + token[n + 1] + token[n] + token.slice(n + 2),
+              ),
+            ),
+          ];
+          await mapFour(swaps, async (swap) => {
             if (await term(swap)) candidates.add(swap);
-          }
+          });
         }
         if (i === tokens.length - 1 && token.length >= 3)
           for (const word of await wordsFrom(

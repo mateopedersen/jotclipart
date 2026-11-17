@@ -8,7 +8,7 @@ export async function settleBeforeDirectNavigation(page) {
     () => document.documentElement?.dataset.surpriseNavigation === 'ready',
   );
   if (!active) return;
-  await page.waitForLoadState('load', { timeout: 30000 });
+  await page.waitForLoadState('load', { timeout: 60000 });
   await page.waitForFunction(
     () =>
       performance.getEntriesByType('resource').some((entry) => {
