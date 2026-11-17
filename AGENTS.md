@@ -1,3 +1,28 @@
+# Current installed speed and green interface release — 2026-11-17
+
+Current LIVE software c2422d8b6f5f310bf86ce9c00a3286fe01cd3cbb, Pages
+https://7580006a.jotclipart.pages.dev, ABI
+745600c8759b254ba904b2437e42e70e9e56c041f956240ca69ae610bb0e1b84.
+Permanently preserve the ENTIRE independent work/jotclipart-speed-green-20261117
+checkout, work/jotclipart-release-c2422d8b6f5f compiled inputs and the800-file
+work/jotclipart-installed-c242/manifest.json. Do not move/rebuild/clean this tree.
+Read config/content-publisher.json for actual absolute bindings. Previous D1,
+1d3/FE81/11730/FB19 installations and KEEP copies remain protected.
+691 source checks,34 controlled original-loader cases,12 related pixel cases,
+96 real preview and96 real production UI states passed. Eight before/after
+performance observations are bounded samples, not universal field CWV claims.
+Full originals remain unchanged. New source-bound previews have high priority;
+compact ordinary admission is2 with2 reserved visible-scroll slots. Healthy
+transfers are retained. WebKit BFCache fixture late peak differs from initial
+admission; never claim every lifecycle has a2-request maximum.
+Green cookie/paw/file-fact/folder UI, green art breadcrumbs/eyebrow,850 main H1
+and card titles, aligned compact headers are live. Descriptions, original artwork,
+actual color choices, accepted logo/favicon/hero and peer Explore/Edit preserved.
+Data root8cec421c20fd3367cc6be5b5f2d0cbdec0a5a81e95e7c075a1d6ca548df52ed4,
+49,858 artworks/804 topics/all1215 PDF repairs unchanged. No media/catalog/index
+writes. Contact/search submissions remain deferred. Source bookkeeping is not
+another deployment. Historical installation notes below are superseded.
+
 # Homepage hero refinement — latest owner direction, 2026-11-17
 
 Latest owner additions: art detail breadcrumbs and the small uppercase topic
