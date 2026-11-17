@@ -503,6 +503,7 @@ p {
 }
 .card-actions .button span {
   display: block;
+  font-weight: 700;
 }
 @container artwork-card (max-width: 210px) {
   .card-actions {

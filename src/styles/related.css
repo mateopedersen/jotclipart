@@ -237,6 +237,7 @@
   width: 100%;
   min-height: 44px;
   margin-top: 8px;
+  font-weight: 700;
   color: var(--brand-ink);
   border-color: var(--brand-border);
 }

@@ -68,7 +68,11 @@ const showcase = [
 });
 const showInvitation = Astro.url.pathname !== '/';
 const sculpture = (name: string) =>
-  name === 'studio' ? '/illustrations/studio-compose-v3.svg' : `/illustrations/footer/${name}.svg`;
+  name === 'studio'
+    ? '/illustrations/studio-compose-v3.svg'
+    : name === 'explore'
+      ? '/illustrations/footer/explore-green-v1.svg'
+      : `/illustrations/footer/${name}.svg`;
 ---
 
 <footer class="site-footer" aria-label="Site footer">
