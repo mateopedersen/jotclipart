@@ -6,7 +6,7 @@
   "publicKeyHex": "4309eb97062f41768467b4b7f9139f1682450cc3fd2e33fb9bb50131e7a79479",
   "activeKey": "catalog/jotclipart/active.json",
   "acceptedPredecessor": {
-    "rootSHA256": "18de204ffe10a02b8681254eee279f69656a04415b88c2ed6dbf6e988b60ad5b",
-    "abiSHA256": "a4107cccd9fda91f0b3a546f2fa3da7d74847acbb021373a4d2285823259aee1"
+    "rootSHA256": "8cec421c20fd3367cc6be5b5f2d0cbdec0a5a81e95e7c075a1d6ca548df52ed4",
+    "abiSHA256": "4350e3567f45234ec516de8ec65920be30bf68c23702dc43036ff942c6f4ac8d"
   }
 }
