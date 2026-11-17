@@ -160,6 +160,21 @@ async function pinPreview() {
         'Unchanged-root artwork points to a different R2 original',
       );
   }
+  const discoveryResponse = await get('/surprise-picks.json');
+  assert.equal(discoveryResponse.headers.get('x-uc-snapshot'), before.verifiedRoot);
+  const discovery = await discoveryResponse.json();
+  assert.equal(discovery.version, 3);
+  assert(
+    Array.isArray(discovery.items) && discovery.items.length > 0 && discovery.items.length <= 512,
+  );
+  for (const pick of discovery.items) {
+    const slug = pick.publicSlug ?? pick.id;
+    assert(/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug));
+    assert(
+      families.art.has('/art/' + slug + '/'),
+      'A Surprise destination is not a current canonical artwork URL',
+    );
+  }
   const after = await release();
   assert.equal(
     after.verifiedRoot,
@@ -218,6 +233,7 @@ async function pinPreview() {
     collections: families.collections.size,
     otherPages: families.pages.size,
     sitemapDocuments: docs.length,
+    currentCanonicalSurpriseDestinationsVerified: discovery.items.length,
     sitemaps,
     baselineCanonicalPathsPresent: baseline.length,
     unchangedRootR2KeysCompared: exactRoot ? baseline.length : 0,
@@ -303,7 +319,14 @@ async function browserFlow() {
     });
     context.on('page', (page) => {
       observeCatalogRequests(page, origin);
-      page.on('pageerror', (e) => report.pageErrors.push(e.message));
+      page.on('pageerror', (e) => {
+        report.pageErrors.push(e.message);
+        (report.pageErrorContexts ??= []).push({
+          url: page.url(),
+          message: e.message,
+          stack: e.stack,
+        });
+      });
       page.on('response', (r) => {
         const u = new URL(r.url()),
           status = r.status();
@@ -748,6 +771,13 @@ async function browserFlow() {
     });
     assert((await page.locator('#search-results .art-card').count()) > 0);
     await page.locator('#search-query').fill(record.title.replace(/ clipart$/i, ''));
+    // Submit the new query with the actual keyboard. The previous topic results
+    // already include this artwork, so its visibility alone cannot prove the
+    // debounced query has run before the following direct navigation.
+    await page.locator('#search-query').press('Enter');
+    await expect(page.locator('#search-results')).toHaveAttribute('aria-busy', 'false', {
+      timeout: 30000,
+    });
     await expect(page.locator(`#search-results [data-id="${record.id}"]`)).toBeVisible({
       timeout: 30000,
     });
