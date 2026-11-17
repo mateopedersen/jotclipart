@@ -654,7 +654,7 @@ export class SearchRepository {
     const cached = this.siteCache.get(cacheKey);
     if (cached) return cached;
     const response = await this.json<{ schema?: number; snapshot?: string; result?: unknown }>(
-      `/search-data/${root}/${navigationOnly ? 'navigation' : 'site'}.json`,
+      `/search-data/${root}/${navigationOnly ? 'navigation' : 'site'}-v2.json`,
       signal,
     );
     if (response?.schema !== 1 || response.snapshot !== root)

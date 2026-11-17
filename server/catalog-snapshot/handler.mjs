@@ -98,7 +98,9 @@ export function createCatalogHandler({
       kind = paths[path],
       ogRoute = ogService ? catalogOgRoute(path) : undefined,
       editorPreview = editorPreviewService && isLegacyEditorPreviewPath(path),
-      siteDirectory = /^\/search-data\/([a-f0-9]{64})\/(?:site|navigation)\.json$/.exec(path);
+      siteDirectory = /^\/search-data\/([a-f0-9]{64})\/(?:site|navigation)(?:-v2)?\.json$/.exec(
+        path,
+      );
     if (request.method === 'GET' || request.method === 'HEAD') {
       if (redirects[path]) {
         const target = new URL(redirects[path], url.origin);

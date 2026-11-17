@@ -1,7 +1,86 @@
-import test from'node:test';import assert from'node:assert/strict';import{SearchRepository}from'../src/lib/search-remote.ts';
-const root='a'.repeat(64),entries=[{id:'topic:camera',kind:'topic',title:'Camera Clipart',description:'Accepted camera subject.',text:'camera',href:'/clipart/camera/'}];
-test('public immutable directory needs one root-addressed read and contains no visitor query',async()=>{const calls=[],repo=new SearchRepository(async(path,signal,init)=>{calls.push({path,signal,init});return{schema:1,snapshot:root,result:entries}});assert.deepEqual(await repo.sourceDirectory(root),entries);assert.deepEqual(await repo.sourceDirectory(root),entries);assert.equal(calls.length,1);assert.equal(calls[0].path,'/search-data/'+root+'/site.json');assert.equal(calls[0].init,undefined);assert(!calls[0].path.includes('?'))});
-test('wrong roots and unsafe directory destinations cannot become early links',async()=>{for(const value of[{schema:1,snapshot:'b'.repeat(64),result:entries},{schema:1,snapshot:root,result:[{...entries[0],href:'//evil.invalid'}]},{schema:1,snapshot:root,result:[{...entries[0],href:'https://evil.invalid'}]}])await assert.rejects(()=>new SearchRepository(async()=>value).sourceDirectory(root));let read=false;await assert.rejects(()=>new SearchRepository(async()=>{read=true}).sourceDirectory('../private'));assert.equal(read,false)});
-test('negotiated new directory and the legacy private compatibility operation remain separate',async()=>{const calls=[],manifest={schema:1,version:root,total:1,pageChunk:256,tokenBuckets:256,lexiconLengths:[],facets:[],topics:[],site:'site',transport:{protocol:'snapshot-search-v1',endpoint:'/catalog-search.json',snapshot:root}},repo=new SearchRepository(async(path,signal,init)=>{calls.push({path,init});return{schema:1,snapshot:root,result:entries}});assert.deepEqual(await repo.siteEntries(manifest),entries);assert.equal(calls[0].path,'/catalog-search.json');repo.clear();manifest.transport.directory='source-bound-site-v1';assert.deepEqual(await repo.siteEntries(manifest),entries);assert.equal(calls[1].path,'/search-data/'+root+'/site.json')});
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { SearchRepository } from '../src/lib/search-remote.ts';
+const root = 'a'.repeat(64),
+  entries = [
+    {
+      id: 'topic:camera',
+      kind: 'topic',
+      title: 'Camera Clipart',
+      description: 'Accepted camera subject.',
+      text: 'camera',
+      href: '/clipart/camera/',
+    },
+  ];
+test('public immutable directory needs one root-addressed read and contains no visitor query', async () => {
+  const calls = [],
+    repo = new SearchRepository(async (path, signal, init) => {
+      calls.push({ path, signal, init });
+      return { schema: 1, snapshot: root, result: entries };
+    });
+  assert.deepEqual(await repo.sourceDirectory(root), entries);
+  assert.deepEqual(await repo.sourceDirectory(root), entries);
+  assert.equal(calls.length, 1);
+  assert.equal(calls[0].path, '/search-data/' + root + '/site-v2.json');
+  assert.equal(calls[0].init, undefined);
+  assert(!calls[0].path.includes('?'));
+});
+test('wrong roots and unsafe directory destinations cannot become early links', async () => {
+  for (const value of [
+    { schema: 1, snapshot: 'b'.repeat(64), result: entries },
+    { schema: 1, snapshot: root, result: [{ ...entries[0], href: '//evil.invalid' }] },
+    { schema: 1, snapshot: root, result: [{ ...entries[0], href: 'https://evil.invalid' }] },
+  ])
+    await assert.rejects(() => new SearchRepository(async () => value).sourceDirectory(root));
+  let read = false;
+  await assert.rejects(() =>
+    new SearchRepository(async () => {
+      read = true;
+    }).sourceDirectory('../private'),
+  );
+  assert.equal(read, false);
+});
+test('negotiated new directory and the legacy private compatibility operation remain separate', async () => {
+  const calls = [],
+    manifest = {
+      schema: 1,
+      version: root,
+      total: 1,
+      pageChunk: 256,
+      tokenBuckets: 256,
+      lexiconLengths: [],
+      facets: [],
+      topics: [],
+      site: 'site',
+      transport: {
+        protocol: 'snapshot-search-v1',
+        endpoint: '/catalog-search.json',
+        snapshot: root,
+      },
+    },
+    repo = new SearchRepository(async (path, signal, init) => {
+      calls.push({ path, init });
+      return { schema: 1, snapshot: root, result: entries };
+    });
+  assert.deepEqual(await repo.siteEntries(manifest), entries);
+  assert.equal(calls[0].path, '/catalog-search.json');
+  repo.clear();
+  manifest.transport.directory = 'source-bound-site-v1';
+  assert.deepEqual(await repo.siteEntries(manifest), entries);
+  assert.equal(calls[1].path, '/search-data/' + root + '/site-v2.json');
+});
 
-test('compact navigation and full page text have separate immutable cache identities',async()=>{const calls=[],repo=new SearchRepository(async path=>{calls.push(path);return{schema:1,snapshot:root,result:entries}});await repo.sourceDirectory(root,undefined,true);await repo.sourceDirectory(root);await repo.sourceDirectory(root,undefined,true);assert.deepEqual(calls,['/search-data/'+root+'/navigation.json','/search-data/'+root+'/site.json']);});
+test('compact navigation and full page text have separate immutable cache identities', async () => {
+  const calls = [],
+    repo = new SearchRepository(async (path) => {
+      calls.push(path);
+      return { schema: 1, snapshot: root, result: entries };
+    });
+  await repo.sourceDirectory(root, undefined, true);
+  await repo.sourceDirectory(root);
+  await repo.sourceDirectory(root, undefined, true);
+  assert.deepEqual(calls, [
+    '/search-data/' + root + '/navigation-v2.json',
+    '/search-data/' + root + '/site-v2.json',
+  ]);
+});

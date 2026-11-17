@@ -82,7 +82,7 @@ for (const [engine, implementation] of Object.entries(engines)) {
     const directoryGate = new Promise((resolve) => {
       releaseDirectory = resolve;
     });
-    await page.route('**/search-data/*/site.json', async (route) => {
+    await page.route('**/search-data/*/site-v2.json', async (route) => {
       await directoryGate;
       await route.continue();
     });
@@ -101,12 +101,12 @@ for (const [engine, implementation] of Object.entries(engines)) {
       true,
     );
     record('Artwork arrives before slow directory; directory arrival keeps artwork nodes');
-    await page.unroute('**/search-data/*/site.json');
-    await page.route('**/search-data/*/site.json', (route) => route.abort());
+    await page.unroute('**/search-data/*/site-v2.json');
+    await page.route('**/search-data/*/site-v2.json', (route) => route.abort());
     await page.goto(base + '/search/?q=volleyball', { waitUntil: 'domcontentloaded' });
     await expect(page.locator('#search-results .art-card').first()).toBeVisible();
     await expect(page.locator('#site-search-retry')).toBeVisible();
-    await page.unroute('**/search-data/*/site.json');
+    await page.unroute('**/search-data/*/site-v2.json');
     await page.locator('#site-search-retry').click();
     await expect(page.locator('#site-search-retry')).toBeHidden();
     await expect(page.locator('#result-count')).toContainText('volleyball');

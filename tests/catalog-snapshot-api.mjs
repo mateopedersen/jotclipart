@@ -46,6 +46,14 @@ const bound = await attachUiMetadata(store, base.descriptor, {
       text: 'Camera',
       href: '/clipart/camera/',
     },
+    {
+      id: 'page:/contact/',
+      kind: 'page',
+      title: 'Contact UltraClipart',
+      description: 'Write to ultraclipart@gmail.com at ultraclipart.com.',
+      text: 'Contact UltraClipart for download help.',
+      href: '/contact/',
+    },
   ],
   categories: [],
   featuredIds: records.slice(0, 4).map((a) => a.id),
@@ -456,5 +464,46 @@ await test('Exact named subject suggestions prefer its own artwork without narro
   assert.equal(filtered.total, 1);
   assert.equal(filtered.items[0].id, 'fixture-incidental-cat');
 });
-assert.equal(rows.length, 18);
+await test('Fresh public search directories use the current brand on verified page entries', async () => {
+  const dir = `https://ultraclipart.com/search-data/${root}/`;
+  const read = async (name) =>
+    (await (await api.siteDirectory(new Request(dir + name), root)).json()).result;
+  const full = await read('site-v2.json');
+  const navigation = await read('navigation-v2.json');
+  assert.deepEqual(await read('site.json'), full);
+  assert.deepEqual(
+    full.find((entry) => entry.id === 'camera'),
+    {
+      id: 'camera',
+      kind: 'topic',
+      title: 'Camera Clipart',
+      href: '/clipart/camera/',
+      description: 'Source-specific camera artwork.',
+      text: 'Camera',
+    },
+  );
+  assert.deepEqual(
+    full.find((entry) => entry.id === 'page:/contact/'),
+    {
+      id: 'page:/contact/',
+      kind: 'page',
+      title: 'Contact JotClipart',
+      href: '/contact/',
+      description: 'Write to jotclipart@gmail.com at jotclipart.com.',
+      text: 'Contact JotClipart for download help.',
+    },
+  );
+  assert.deepEqual(
+    navigation.find((entry) => entry.id === 'page:/contact/'),
+    {
+      id: 'page:/contact/',
+      kind: 'page',
+      title: 'Contact JotClipart',
+      href: '/contact/',
+      description: '',
+      text: '',
+    },
+  );
+});
+assert.equal(rows.length, 19);
 console.log(JSON.stringify({ passed: true, cases: rows.length }));

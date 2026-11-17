@@ -1,3 +1,5 @@
+import { brand } from '../../src/lib/brand.mjs';
+import { contactEmail, contactFormUrl, contactTopicField } from '../../src/lib/contact.ts';
 import { publicRouteForId } from '../catalog-snapshot/public-artwork-routes.mjs';
 import { mapFour } from './bounded-map.mjs';
 import { readPages } from '../catalog-projections/pages.mjs';
@@ -90,6 +92,53 @@ export async function readUiEntries(store, ui, name, type) {
     ? (await readPages(store, ui[name], type, { stable: true })).entries
     : legacyEntries(store, ui[name], type);
 }
+// The migration retained signed directory records from the former site. Apply
+// the current public identity to those verified page descriptions at read time.
+const legacyPages = new Set([
+  '/about/',
+  '/ai-clipart-generator/',
+  '/collections/',
+  '/contact/',
+  '/cookies/',
+  '/create/',
+  '/for-teachers/',
+  '/guides/',
+  '/guides/make-a-classroom-label/',
+  '/guides/webp-pdf-and-editable-projects/',
+  '/library-index/',
+  '/new/',
+  '/license/',
+  '/privacy/',
+  '/terms/',
+  '/copyright/',
+  '/accessibility/',
+  '/faq/',
+  '/editorial-process/',
+]);
+const legacyForm =
+  'https://docs.google.com/forms/d/e/1FAIpQLSc2fOKsmo2Ypr7EkTV9jqBO7BhyAX8HYBxcIHNybkD5fC5HRw/viewform';
+function currentSiteEntry(entry) {
+  if (
+    !legacyPages.has(entry.href) ||
+    !['page', 'tool', 'guide'].includes(entry.kind) ||
+    ![`page:${entry.href}`, `info:${entry.href.slice(1, -1)}`].includes(entry.id)
+  )
+    return entry;
+  const project = (value) =>
+    value
+      .replace(/\bultraclipart@gmail\.com\b/gi, contactEmail)
+      .replaceAll(legacyForm, contactFormUrl)
+      .replaceAll('entry.1751201779', contactTopicField)
+      .replace(/\b(?:www\.)?ultraclipart\.com\b/gi, new URL(brand.origin).hostname)
+      .replace(/\bultraclipart\b/gi, brand.name);
+  return {
+    ...entry,
+    title: project(entry.title),
+    description: project(entry.description),
+    text: project(entry.text),
+  };
+}
+
 export const uiProviders = {
   async readPublicRoutes(ctx, data) {
     return {
@@ -133,7 +182,9 @@ export const uiProviders = {
     const ui = await readUi(ctx, data);
     return {
       snapshotSha256: ctx.snapshotSha256,
-      value: await readUiEntries(data.store, ui, 'site', 'public-site-search-entries'),
+      value: (await readUiEntries(data.store, ui, 'site', 'public-site-search-entries')).map(
+        currentSiteEntry,
+      ),
     };
   },
   async readMonochromeDirectory(ctx, data) {
