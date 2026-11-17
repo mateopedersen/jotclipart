@@ -28,6 +28,8 @@ for (const engine of [chromium, webkit]) {
           assert.equal(response.status(), 404, path);
           assert.equal(response.request().redirectedFrom(), null, path);
           await expect(page.locator('h1')).toHaveText("We couldn't find that page.");
+          await expect(page.locator('h1')).toHaveCSS('color', 'rgb(17, 17, 17)');
+          await expect(page.locator('.error-description')).toHaveCSS('color', 'rgb(69, 69, 69)');
           await expect(page.locator('meta[name=robots]')).toHaveAttribute('content', 'noindex');
           await expect(page.getByLabel('Search the library')).toBeVisible();
           await expect
