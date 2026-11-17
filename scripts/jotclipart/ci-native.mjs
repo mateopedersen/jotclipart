@@ -132,6 +132,7 @@ try {
       'linking',
       'page-seo',
       'jotclipart-build-root',
+      'jotclipart-deployment-branch',
       'jotclipart-publisher-target',
       'jotclipart-native-publisher',
       'jotclipart-workspace-startup',

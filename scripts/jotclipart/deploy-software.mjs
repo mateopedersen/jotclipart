@@ -6,10 +6,13 @@ import { buildRoot } from './build-root.mjs';
 import { acquireAccountWriter } from '../delivery/account-lock.mjs';
 import { verifyOgBuild } from './og-invariants.mjs';
 import { verifyEditorPreviewBuild } from './editor-preview-invariants.mjs';
+import { deploymentBranch } from './deployment-branch.mjs';
 
 const environment = process.argv[2];
-if (!['preview', 'production'].includes(environment))
-  throw Error('Choose preview or production explicitly');
+const extra = process.argv.slice(3);
+if (extra.length > 1 || (extra.length && !extra[0].startsWith('--preview-branch=')))
+  throw Error('Only one explicit --preview-branch option is supported');
+const branch = deploymentBranch(environment, extra[0]?.slice('--preview-branch='.length));
 execFileSync('git', ['diff', '--quiet']);
 execFileSync('git', ['diff', '--cached', '--quiet']);
 const revision = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
@@ -61,7 +64,7 @@ try {
       '--project-name',
       'jotclipart',
       '--branch',
-      environment === 'production' ? 'main' : 'migration-preview',
+      branch,
       '--commit-hash',
       revision,
       '--commit-message',
@@ -87,6 +90,7 @@ try {
   const result = {
     status: 'DEPLOYED_AWAITING_LIVE_VERIFICATION',
     environment,
+    branch,
     revision,
     project: 'jotclipart',
     ogWorker: report.ogWorker.name,
