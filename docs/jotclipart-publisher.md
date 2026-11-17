@@ -48,7 +48,11 @@ replacing the shared preview. Normal push and pull-request runs still use
 before any request and require the exact source revision and signed catalog root.
 Every source, package, Python and all twelve browser matrix checks remain required.
 The exact owned preview must also have GET/HEAD media access in the bucket's CORS
-policy; verify actual media response headers before dispatching the browser run.
+policy. The pin phase checks an actual original GET, its CORS origin and its
+authenticated byte count and checksum before starting the browser matrix. A
+successful HEAD alone cannot establish that cached GET responses have the new
+CORS policy. Use the normal shared preview when an extra preview origin's cached
+responses have not been refreshed through the account's cache controls.
 Never overwrite a preview while a workflow pinned to its prior source is running.
 
 The two large historical JSON sources have generated, source-SHA-bound structural declarations so the unchanged strict Astro checker does not build a multi-gigabyte literal type graph. Runtime imports still read the original JSON. The mandatory source gate regenerates and compares every declaration byte from the complete actual sources, in addition to the existing editorial, source-identity and hash checks. When an approved source edit changes `data/art.json` or `data/editorial/reviews.json`, regenerate the declarations with `node scripts/jotclipart/catalog-json-types.mjs --write` and rerun the complete gate. Do not replace this with an `any` declaration, ignore a stale declaration, or reduce the Astro/TypeScript source scope.

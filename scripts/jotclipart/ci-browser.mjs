@@ -174,6 +174,35 @@ async function pinPreview() {
         r.media.find((m) => m.role === 'webp')?.bytes < 2_000_000,
     );
   assert(chosen);
+  const repairedSample = retiredRepairs.get(chosen.id),
+    samplePath = repairedSample ? '/art/' + repairedSample.slug + '/' : chosen.canonicalPath,
+    sampleResponse = await get(samplePath);
+  assert.equal(sampleResponse.headers.get('x-uc-snapshot'), before.verifiedRoot);
+  const sampleHTML = await sampleResponse.text(),
+    downloadJSON = /<script\b[^>]*\bdata-download-record\b[^>]*>([\s\S]*?)<\/script>/i.exec(
+      sampleHTML,
+    );
+  assert(downloadJSON, 'Preview sample lacks its authenticated download descriptor');
+  const record = JSON.parse(downloadJSON[1]),
+    original = record.download?.files?.webp;
+  assert.equal(record.id, chosen.id);
+  assert.equal(new URL(record.webp).origin, 'https://assets.jotclipart.com');
+  assert(original?.bytes > 0 && /^[a-f0-9]{64}$/.test(original.sha256));
+  sourceGETs++;
+  const mediaResponse = await fetch(record.webp, {
+    headers: { Origin: origin },
+    redirect: 'error',
+    signal: AbortSignal.timeout(60000),
+  });
+  assert.equal(mediaResponse.status, 200, 'Actual original GET failed before browser matrix');
+  assert.equal(
+    mediaResponse.headers.get('access-control-allow-origin'),
+    origin,
+    'Original GET must allow the preview origin; HEAD alone does not verify cached GET CORS',
+  );
+  const mediaBytes = Buffer.from(await mediaResponse.arrayBuffer());
+  assert.equal(mediaBytes.length, original.bytes);
+  assert.equal(sha(mediaBytes), original.sha256);
   const result = {
     status: 'MATCHING_PREVIEW_AND_COMPLETE_SITEMAPS_VERIFIED',
     at: new Date().toISOString(),
@@ -197,6 +226,13 @@ async function pinPreview() {
     sourceGETs,
     maximumExplicitSourceGETRatePerSecond: 25,
     sample: chosen,
+    actualOriginalGET: {
+      id: record.id,
+      bytes: mediaBytes.length,
+      sha256: original.sha256,
+      cors: mediaResponse.headers.get('access-control-allow-origin'),
+      cache: mediaResponse.headers.get('cf-cache-status'),
+    },
     actualAIInference: false,
   };
   writeFileSync(join(rootDir, 'preview-pin.json'), JSON.stringify(result, null, 2));
