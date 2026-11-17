@@ -22,8 +22,21 @@ accepts the exact JotClipart assets host as well as historical signed sources;
 never suppress a repaired PDF merely because its domain is the new brand.
 The installed data root was `18de204ffe10a02b8681254eee279f69656a04415b88c2ed6dbf6e988b60ad5b`
 with 49,858 artworks / 804 topics. Read current live control before future writes.
-Remaining PDF repair source capsules 3–6 are prepared and must pass the normal
-source/media/native/seal/activation/public gates before being called live.
+All 1,215 PDF repairs (Fendi and waves 1–6) passed normal source/media/native/
+seal/activation/public gates. Final verified data revision is
+`c665ceb2dbefdffcf4238f40d482ea8ac7cbea54`, root
+`8cec421c20fd3367cc6be5b5f2d0cbdec0a5a81e95e7c075a1d6ca548df52ed4`,
+49,858 artworks / 804 topics. A fresh final-root check independently downloaded
+all 1,215 canonical pages, 1,215 repaired PDFs and 1,215 unchanged original WebPs;
+all passed full-byte/MIME/source-record checks and native macOS rendering.
+PDFium independently opened every repaired PDF. Zero final holds; this is not
+a new semantic subject/model review of the catalog. Original sources and all
+repair source capsules/plans and verified private backups remain protected.
+Old Cloudflare zone deletion is official-API verified. Old GitHub repository
+delete is owner-authorized but blocked by the connection lacking delete_repo
+authority; do not bypass authentication. Google old-prefix removal was last
+observed Processing; old Bing access unavailable, separate Kalenteri365 untouched.
+Source/config documentation commits are bookkeeping, never a new deployment.
 No new Google/Bing/IndexNow submissions; Contact remains deferred.
 
 # Black typography and green control icons — owner direction 2026-11-17
