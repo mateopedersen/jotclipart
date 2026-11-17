@@ -139,6 +139,8 @@ jobs:
         with:
           name: jotclipart-preview-pin-${{ github.sha }}
           path: reports/jotclipart-native-browser/
+      - name: Verify real browser metadata readiness and preserve visible errors
+        run: node tests/e2e/browser-readiness.mjs
       - name: Actual preview flows with old hosts blocked
         id: basic
         run: node scripts/jotclipart/ci-browser.mjs browser

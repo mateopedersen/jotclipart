@@ -1,4 +1,4 @@
-import { settleBeforeDirectNavigation } from './browser-readiness.mjs';
+import { observeCatalogRequests, settleBeforeDirectNavigation } from './browser-readiness.mjs';
 import assert from 'node:assert/strict';
 import { readFileSync, writeFileSync, mkdirSync, mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
@@ -149,9 +149,10 @@ async function context(options = {}, binaryTransfer = false) {
     }
     return route.continue();
   });
-  value.on('page', (page) =>
-    page.on('pageerror', (error) => report.pageErrors.push(error.message)),
-  );
+  value.on('page', (page) => {
+    observeCatalogRequests(page, origin);
+    page.on('pageerror', (error) => report.pageErrors.push(error.message));
+  });
   return value;
 }
 async function pageFor(path, options) {

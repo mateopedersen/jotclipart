@@ -1,4 +1,4 @@
-import { settleBeforeDirectNavigation } from './browser-readiness.mjs';
+import { observeCatalogRequests, settleBeforeDirectNavigation } from './browser-readiness.mjs';
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import { createHash } from 'node:crypto';
@@ -302,6 +302,7 @@ async function browserFlow() {
       return route.continue();
     });
     context.on('page', (page) => {
+      observeCatalogRequests(page, origin);
       page.on('pageerror', (e) => report.pageErrors.push(e.message));
       page.on('response', (r) => {
         const u = new URL(r.url()),
@@ -672,8 +673,24 @@ async function browserFlow() {
         .locator(`[data-download-open="${record.id}"][data-download-format="${format}"]`)
         .first();
       await opener.scrollIntoViewIfNeeded();
-      const scroll = await page.evaluate(() => scrollY);
+      const beforePointerScroll = await page.evaluate(() => scrollY);
+      // Pointer activation can scroll after an earlier visibility check. Capture
+      // the real opening position before the application's document click handler.
+      await opener.evaluate((link) => {
+        link.removeAttribute('data-native-opening-scroll');
+        link.addEventListener(
+          'click',
+          () => link.setAttribute('data-native-opening-scroll', String(scrollY)),
+          { once: true, capture: true },
+        );
+      });
       await opener.click();
+      const capturedScroll = await opener.getAttribute('data-native-opening-scroll'),
+        scroll = Number(capturedScroll);
+      assert(
+        capturedScroll !== null && Number.isFinite(scroll),
+        'Actual download opening scroll was not captured',
+      );
       const dialog = page.locator('#download-dialog');
       await expect(dialog).toBeVisible();
       await expect(dialog.locator('[data-download-artwork]')).toHaveText(/^Free (?!Free )/);
@@ -704,6 +721,8 @@ async function browserFlow() {
         bytes: bytes.length,
         sha256: sha(bytes),
         filename: download.suggestedFilename(),
+        beforePointerScroll,
+        actualOpeningScroll: scroll,
       });
       await page.keyboard.press('Escape');
       await expect(dialog).toHaveCount(0);
@@ -711,7 +730,11 @@ async function browserFlow() {
         await page.evaluate(() => document.activeElement?.getAttribute('data-download-open')),
         record.id,
       );
-      assert(Math.abs((await page.evaluate(() => scrollY)) - scroll) <= 2);
+      const restoredScroll = await page.evaluate(() => scrollY);
+      assert(
+        Math.abs(restoredScroll - scroll) <= 2,
+        JSON.stringify({ beforePointerScroll, actualOpeningScroll: scroll, restoredScroll }),
+      );
     }
     check(
       'Actual original Image/PDF browser downloads, rapid format switch, Escape/focus/scroll restoration',
