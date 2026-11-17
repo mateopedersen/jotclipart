@@ -1,3 +1,49 @@
+# Current installed JotClipart — final typography and bold arrows, 2026-11-17
+
+This supersedes the historical installed-release notes below. Production software
+is `fe81e3d1ef11b38069f9de0a20000cb484c75230`, Pages
+`https://72af1bd7.jotclipart.pages.dev`, ABI
+`0205f6f681a79fb6ff17dcd279cfd38c7482d97f9b379d5165387b44a8c1bf70`.
+Permanently preserve the entire independent checkout
+`work/jotclipart-black-text-bold-final-20261117`, its exact compiled inputs at
+`work/jotclipart-release-fe81e3d1ef11` and the 800-file preservation manifest at
+`work/jotclipart-installed-fe81/manifest.json`. Do not move, rebuild or clean this
+installed tree. Preserve previous 11730 V5 and FB19 installations and their
+independent KEEP recovery copies. Read config/content-publisher.json for exact
+absolute paths; source/config bookkeeping is not a new software deployment.
+
+The final data root remains
+`8cec421c20fd3367cc6be5b5f2d0cbdec0a5a81e95e7c075a1d6ca548df52ed4`,
+revision `c665ceb2dbefdffcf4238f40d482ea8ac7cbea54`, 49,858 artworks / 804 topics.
+All 1,215 PDF repairs remain verified at this unchanged root. This UI-only release
+made no original-media or catalog-pointer writes. The exact accepted-predecessor
+pin was refreshed to that reviewed root and its prior authorization ABI4350;
+no verifier or source/media gate was widened or bypassed.
+
+Homepage hero text is green by explicit owner direction. All other normal
+navigation/body/helper/card text and links use black ink. The illustration total
+is black and bold700. Green interface arrows use immutable bold-v2 assets, with
+30px footer arrows; accepted backgrounds and artwork colors are unchanged.
+690 source checks passed. Real preview and production each passed84 typography,
+overflow and accessibility states across Chromium/WebKit,390/1440 widths and21
+route families. Three fresh public canonical/PDF/WebP native samples passed;
+the earlier full1,215 download audit is separate, not repeated by these samples.
+Actual browser JPEGs were inspected. No universal browser/speed guarantee.
+
+All old closure steps are now verified: old GitHub repository deleted after the
+owner completed GitHub MFA, with87 remote and51 local refs independently preserved;
+old Cloudflare zone absent; both old Google prefixes Temporarily removed; six
+old Bing Directory/URL&Cache blocks active90days. These temporary search statuses
+are not proof of permanently zero remaining index entries. Kalenteri365 properties
+and new JotClipart Google/Bing/IndexNow submissions remain untouched. Contact copy
+stays owner-deferred. Keep shared R2/D1/signers/editor previews and Workers Paid.
+
+Verified full same-volume installed/source/all-ref recovery copy:
+`/Users/melihozcan/Documents/UltraClipart-Publisher-KEEP/jotclipart-installed-fe81e3d1ef11b38069f9de0a20000cb484c75230-20261117T131032028676Z-a84e92929d97`.
+It is not an off-device backup. Old uninstalled282/b8/failedb12 trial dependency
+and build caches were cleaned with open-file checks; their Git/source/reports
+remain. Those incomplete trials must never be used as installed runtimes.
+
 # Sitewide black interface text — owner clarification 2026-11-17
 
 The homepage hero headline “Free Clipart For Every Project” is the explicit
