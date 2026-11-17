@@ -2,54 +2,238 @@
 const { kind } = Astro.props;
 const prefix = `home-category-${kind}`;
 ---
+
 <svg viewBox="0 0 64 64" width="48" height="48" fill="none" aria-hidden="true" focusable="false">
   <defs>
-    <linearGradient id={`${prefix}-blue`} x1="15" y1="10" x2="48" y2="57" gradientUnits="userSpaceOnUse"><stop stop-color="#94d0ff"/><stop offset=".48" stop-color="#438fe6"/><stop offset="1" stop-color="#1d58a4"/></linearGradient>
-    <linearGradient id={`${prefix}-red`} x1="21" y1="14" x2="47" y2="54" gradientUnits="userSpaceOnUse"><stop stop-color="#ffb1ac"/><stop offset=".4" stop-color="#f45d75"/><stop offset="1" stop-color="#bc3457"/></linearGradient>
-    <linearGradient id={`${prefix}-green`} x1="16" y1="11" x2="48" y2="51" gradientUnits="userSpaceOnUse"><stop stop-color="#b8eacc"/><stop offset=".45" stop-color="#54b49b"/><stop offset="1" stop-color="#227d75"/></linearGradient>
-    <linearGradient id={`${prefix}-paper`} x1="20" y1="12" x2="47" y2="55" gradientUnits="userSpaceOnUse"><stop stop-color="white"/><stop offset="1" stop-color="#d5e5fa"/></linearGradient>
+    <linearGradient
+      id={`${prefix}-blue`}
+      x1="15"
+      y1="10"
+      x2="48"
+      y2="57"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#b0e3cc" />
+      <stop offset=".48" stop-color="#61c89a" />
+      <stop offset="1" stop-color="#328f65" />
+    </linearGradient>
+    <linearGradient
+      id={`${prefix}-red`}
+      x1="21"
+      y1="14"
+      x2="47"
+      y2="54"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#ffb1ac" />
+      <stop offset=".4" stop-color="#f45d75" />
+      <stop offset="1" stop-color="#bc3457" />
+    </linearGradient>
+    <linearGradient
+      id={`${prefix}-green`}
+      x1="16"
+      y1="11"
+      x2="48"
+      y2="51"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#b8eacc" />
+      <stop offset=".45" stop-color="#54b49b" />
+      <stop offset="1" stop-color="#227d75" />
+    </linearGradient>
+    <linearGradient
+      id={`${prefix}-paper`}
+      x1="20"
+      y1="12"
+      x2="47"
+      y2="55"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="white" />
+      <stop offset="1" stop-color="#dcf3e9" />
+    </linearGradient>
   </defs>
-  <ellipse cx="32" cy="57" rx="23" ry="3.5" fill="#183e6c" opacity=".11"/>
-  {kind === 'animals' && <>
-    <path d="M17 37c4-7 7-13 15-13s12 9 16 15c4 8-1 14-9 11-5-2-9-2-14 0-10 4-14-5-8-13Z" fill={`url(#${prefix}-blue)`} stroke="#2863ac" stroke-width="1.5"/>
-    <ellipse cx="12" cy="26" rx="6" ry="8" transform="rotate(-25 12 26)" fill="#8bc7f8" stroke="#3576bc"/>
-    <ellipse cx="25" cy="15" rx="6" ry="8" transform="rotate(-8 25 15)" fill="#a6d7ff" stroke="#3576bc"/>
-    <ellipse cx="40" cy="16" rx="6" ry="8" transform="rotate(10 40 16)" fill="#8bc7f8" stroke="#3576bc"/>
-    <ellipse cx="53" cy="28" rx="6" ry="8" transform="rotate(28 53 28)" fill="#69a9eb" stroke="#3576bc"/>
-    <path d="m22 39 5-7" stroke="white" stroke-width="3" stroke-linecap="round" opacity=".65"/>
-  </>}
-  {kind === 'food' && <>
-    <path d="M14 24c1-10 35-10 37 0 2 13-13 31-19 31S11 38 14 24Z" fill={`url(#${prefix}-red)`} stroke="#b83d56" stroke-width="1.4"/>
-    <path d="m31 24-12-9 10 1 3-9 4 9 11-2-12 11" fill={`url(#${prefix}-green)`} stroke="#30846b" stroke-width="1.4" stroke-linejoin="round"/>
-    <path d="m22 28-1 3m13-4-1 3m10 2-1 3m-14 3-1 3m8 4-1 3" stroke="#ffe3ad" stroke-width="2.3" stroke-linecap="round"/>
-    <path d="M19 25c-2 5 0 9 2 12" stroke="white" stroke-opacity=".5" stroke-width="3" stroke-linecap="round"/>
-  </>}
-  {kind === 'school' && <>
-    <path d="M16 15h15c5 0 8 2 9 4 1-2 5-4 10-4h4v36H40c-5-3-9-3-12-3H13V18l3-3Z" fill="#2f66b0"/>
-    <path d="M12 12h15c5 0 9 2 12 5v31c-4-3-8-4-13-4H12V12Z" fill={`url(#${prefix}-paper)`} stroke="#90b6df" stroke-width="1.2"/>
-    <path d="M39 17c4-4 8-5 15-5v32c-7 0-11 1-15 4V17Z" fill="#e7f2ff" stroke="#90b6df" stroke-width="1.2"/>
-    <path d="M18 23h13m-13 7h13m-13 7h10m16-14h5m-5 7h5m-5 7h5" stroke="#83a8cd" stroke-width="2" stroke-linecap="round"/>
-    <path d="m42 48 10-25 5 2-10 25-5 3v-5Z" fill="#ffc956" stroke="#c68b29" stroke-linejoin="round"/>
-  </>}
-  {kind === 'technology' && <>
-    <rect x="10" y="11" width="44" height="34" rx="5" fill="#264d7f" stroke="#17365c" stroke-width="1.4"/>
-    <rect x="14" y="15" width="36" height="25" rx="2" fill={`url(#${prefix}-blue)`}/>
-    <path d="m18 20 11-1-9 13" fill="white" opacity=".22"/>
-    <path d="M10 45h44l6 9H4l6-9Z" fill={`url(#${prefix}-paper)`} stroke="#8da8cb" stroke-width="1.2"/>
-    <path d="M4 54h56c-1 3-3 4-6 4H10c-3 0-5-1-6-4Z" fill="#7e9fc7"/>
-    <path d="M25 49h14l2 3H23l2-3Z" fill="#97b5d9"/>
-  </>}
-  {kind === 'family' && <>
-    <path d="M8 53V42c0-9 5-14 12-14s13 5 13 14v11H8Z" fill={`url(#${prefix}-blue)`} stroke="#2c64a6" stroke-width="1.2"/>
-    <circle cx="20" cy="17" r="9" fill={`url(#${prefix}-paper)`} stroke="#97b6d9" stroke-width="1.3"/>
-    <path d="M31 53V41c0-8 5-12 12-12s13 5 13 12v12H31Z" fill={`url(#${prefix}-red)`} stroke="#bd4662" stroke-width="1.2"/>
-    <circle cx="43" cy="18" r="9" fill="#ffe8d6" stroke="#d4a990" stroke-width="1.3"/>
-    <path d="M22 54V45c0-6 4-9 10-9s10 3 10 9v9H22Z" fill={`url(#${prefix}-green)`} stroke="#3b8b7d" stroke-width="1.2"/>
-    <circle cx="32" cy="30" r="7" fill="#fff2df" stroke="#d4b993" stroke-width="1.2"/>
-  </>}
-  {kind === 'nature' && <>
-    <circle cx="43" cy="19" r="10" fill="#ffd36d" stroke="#e8ac43" stroke-width="1.2"/>
-    <path d="M13 46C4 22 29 10 47 12c5 22-3 43-26 40l-8-6Z" fill={`url(#${prefix}-green)`} stroke="#358b7b" stroke-width="1.4"/>
-    <path d="M12 56c5-13 14-24 26-34M20 41l-1-11m8 3 11-1m-20 17 15-2" stroke="#e4f8e7" stroke-width="2.2" stroke-linecap="round"/>
-  </>}
+  <ellipse cx="32" cy="57" rx="23" ry="3.5" fill="#226245" opacity=".11" />
+  {kind === 'animals' && (
+    <>
+      <path
+        d="M17 37c4-7 7-13 15-13s12 9 16 15c4 8-1 14-9 11-5-2-9-2-14 0-10 4-14-5-8-13Z"
+        fill={`url(#${prefix}-blue)`}
+        stroke="#379d6f"
+        stroke-width="1.5"
+      />
+      <ellipse
+        cx="12"
+        cy="26"
+        rx="6"
+        ry="8"
+        transform="rotate(-25 12 26)"
+        fill="#a4dfc4"
+        stroke="#3fb27e"
+      />
+      <ellipse
+        cx="25"
+        cy="15"
+        rx="6"
+        ry="8"
+        transform="rotate(-8 25 15)"
+        fill="#bde8d5"
+        stroke="#3fb27e"
+      />
+      <ellipse
+        cx="40"
+        cy="16"
+        rx="6"
+        ry="8"
+        transform="rotate(10 40 16)"
+        fill="#a4dfc4"
+        stroke="#3fb27e"
+      />
+      <ellipse
+        cx="53"
+        cy="28"
+        rx="6"
+        ry="8"
+        transform="rotate(28 53 28)"
+        fill="#81d3ae"
+        stroke="#3fb27e"
+      />
+      <path d="m22 39 5-7" stroke="white" stroke-width="3" stroke-linecap="round" opacity=".65" />
+    </>
+  )}
+  {kind === 'food' && (
+    <>
+      <path
+        d="M14 24c1-10 35-10 37 0 2 13-13 31-19 31S11 38 14 24Z"
+        fill={`url(#${prefix}-red)`}
+        stroke="#b83d56"
+        stroke-width="1.4"
+      />
+      <path
+        d="m31 24-12-9 10 1 3-9 4 9 11-2-12 11"
+        fill={`url(#${prefix}-green)`}
+        stroke="#30846b"
+        stroke-width="1.4"
+        stroke-linejoin="round"
+      />
+      <path
+        d="m22 28-1 3m13-4-1 3m10 2-1 3m-14 3-1 3m8 4-1 3"
+        stroke="#ffe3ad"
+        stroke-width="2.3"
+        stroke-linecap="round"
+      />
+      <path
+        d="M19 25c-2 5 0 9 2 12"
+        stroke="white"
+        stroke-opacity=".5"
+        stroke-width="3"
+        stroke-linecap="round"
+      />
+    </>
+  )}
+  {kind === 'school' && (
+    <>
+      <path
+        d="M16 15h15c5 0 8 2 9 4 1-2 5-4 10-4h4v36H40c-5-3-9-3-12-3H13V18l3-3Z"
+        fill="#3aa575"
+      />
+      <path
+        d="M12 12h15c5 0 9 2 12 5v31c-4-3-8-4-13-4H12V12Z"
+        fill={`url(#${prefix}-paper)`}
+        stroke="#95dabb"
+        stroke-width="1.2"
+      />
+      <path
+        d="M39 17c4-4 8-5 15-5v32c-7 0-11 1-15 4V17Z"
+        fill="#edf9f4"
+        stroke="#95dabb"
+        stroke-width="1.2"
+      />
+      <path
+        d="M18 23h13m-13 7h13m-13 7h10m16-14h5m-5 7h5m-5 7h5"
+        stroke="#83cdac"
+        stroke-width="2"
+        stroke-linecap="round"
+      />
+      <path
+        d="m42 48 10-25 5 2-10 25-5 3v-5Z"
+        fill="#ffc956"
+        stroke="#c68b29"
+        stroke-linejoin="round"
+      />
+    </>
+  )}
+  {kind === 'technology' && (
+    <>
+      <rect
+        x="10"
+        y="11"
+        width="44"
+        height="34"
+        rx="5"
+        fill="#2b7a56"
+        stroke="#1e553c"
+        stroke-width="1.4"
+      />
+      <rect x="14" y="15" width="36" height="25" rx="2" fill={`url(#${prefix}-blue)`} />
+      <path d="m18 20 11-1-9 13" fill="white" opacity=".22" />
+      <path
+        d="M10 45h44l6 9H4l6-9Z"
+        fill={`url(#${prefix}-paper)`}
+        stroke="#8dcbaf"
+        stroke-width="1.2"
+      />
+      <path d="M4 54h56c-1 3-3 4-6 4H10c-3 0-5-1-6-4Z" fill="#7ec7a6" />
+      <path d="M25 49h14l2 3H23l2-3Z" fill="#97d9bb" />
+    </>
+  )}
+  {kind === 'family' && (
+    <>
+      <path
+        d="M8 53V42c0-9 5-14 12-14s13 5 13 14v11H8Z"
+        fill={`url(#${prefix}-blue)`}
+        stroke="#379b6e"
+        stroke-width="1.2"
+      />
+      <circle
+        cx="20"
+        cy="17"
+        r="9"
+        fill={`url(#${prefix}-paper)`}
+        stroke="#97d9bb"
+        stroke-width="1.3"
+      />
+      <path
+        d="M31 53V41c0-8 5-12 12-12s13 5 13 12v12H31Z"
+        fill={`url(#${prefix}-red)`}
+        stroke="#bd4662"
+        stroke-width="1.2"
+      />
+      <circle cx="43" cy="18" r="9" fill="#ffe8d6" stroke="#d4a990" stroke-width="1.3" />
+      <path
+        d="M22 54V45c0-6 4-9 10-9s10 3 10 9v9H22Z"
+        fill={`url(#${prefix}-green)`}
+        stroke="#3b8b7d"
+        stroke-width="1.2"
+      />
+      <circle cx="32" cy="30" r="7" fill="#fff2df" stroke="#d4b993" stroke-width="1.2" />
+    </>
+  )}
+  {kind === 'nature' && (
+    <>
+      <circle cx="43" cy="19" r="10" fill="#ffd36d" stroke="#e8ac43" stroke-width="1.2" />
+      <path
+        d="M13 46C4 22 29 10 47 12c5 22-3 43-26 40l-8-6Z"
+        fill={`url(#${prefix}-green)`}
+        stroke="#358b7b"
+        stroke-width="1.4"
+      />
+      <path
+        d="M12 56c5-13 14-24 26-34M20 41l-1-11m8 3 11-1m-20 17 15-2"
+        stroke="#e4f8e7"
+        stroke-width="2.2"
+        stroke-linecap="round"
+      />
+    </>
+  )}
 </svg>

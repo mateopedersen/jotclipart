@@ -1,5 +1,22 @@
 # Homepage hero refinement — latest owner direction, 2026-11-17
 
+Latest owner additions: art detail breadcrumbs and the small uppercase topic
+label are green/750; card titles use850 while descriptions stay unchanged.
+Align topic headings with their gallery and reduce unused header whitespace.
+Cookie shields/chips, all paw symbols, file-fact device/printer/editor/license
+illustration blue accents and the outside file-details folder use the green
+brand palette. Keep artwork pixels, actual color-picker swatches, white large
+surfaces and accepted wordmark/favicon/hero/Explore/Edit designs unchanged.
+Old immutable cookie SVG remains; new UI uses cookies-jot-green-v1.svg.
+
+Current speed work preserves exact original src/schema/download bytes. Give only
+validated source-bound temporary thumbnails high priority; compact viewports use
+two ordinary original admissions plus at most two reserved visible scroll slots,
+without canceling healthy original transfers. Keep retries, fallback, BFCache,
+printing, independent source/route checks and captured-root isolation. Overlap
+independent canonical-route and artwork reads and discovery shell reads within
+the same existing budgets. No cache/publishing/authentication gate is relaxed.
+
 The owner requested a redesigned logo-matched3D favicon. The new transparent
 master is public/brand/jotclipart-mark-3d-v2.png; keep the old master and accepted
 wordmark unchanged. Generate all stable root ICO/PNG/SVG/apple icon outputs from

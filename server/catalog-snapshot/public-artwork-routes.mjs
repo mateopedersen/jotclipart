@@ -39,8 +39,17 @@ export async function resolvePublicArtworkRoute(context, slug) {
   return { id: row.id, slug: row.slug };
 }
 export async function readPublicArtwork(context, id) {
-  const item = await readArtwork(context, id);
-  return item ? { ...item, publicSlug: await publicRouteForId(context, id) } : undefined;
+  // Both immutable lookups are bound to the same captured root and depend only
+  // on the ID. Overlap them without masking an artwork error or turning a
+  // missing artwork into a route error. Existing request budgets still apply.
+  const [artwork, route] = await Promise.allSettled([
+    readArtwork(context, id),
+    publicRouteForId(context, id),
+  ]);
+  if (artwork.status === 'rejected') throw artwork.reason;
+  if (!artwork.value) return undefined;
+  if (route.status === 'rejected') throw route.reason;
+  return { ...artwork.value, publicSlug: route.value };
 }
 export async function buildPublicArtworkRoutes(store, rows, assignments) {
   const ids = [],
@@ -78,7 +87,9 @@ export async function extendPublicArtworkRoutes(store, descriptor, records) {
     const slug = readableArtworkSlug(record.title);
     const collision = await taken(slug);
     if (collision && collision.id !== record.id)
-      throw Error('Readable artwork URL collision: review an image-specific distinguishing title; automatic numeric suffixes are forbidden');
+      throw Error(
+        'Readable artwork URL collision: review an image-specific distinguishing title; automatic numeric suffixes are forbidden',
+      );
     const legacy = await taken(record.id);
     if (legacy && legacy.id !== record.id) throw Error('Incoming ID conflicts with a reserved URL');
     ids.set(record.id, { id: record.id, slug });

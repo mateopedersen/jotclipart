@@ -75,11 +75,19 @@ export async function readShellPageState(
     );
     return rows;
   }
-  const [staticArt, shared, surprise, recent] = await Promise.all([
+  const [staticArt, shared, surprise, recent, discovery] = await Promise.all([
     artwork(staticIds),
     sharedPromise,
     surprisePromise,
     recentPromise,
+    ['categories', 'collections', 'library', 'cluster'].includes(kind)
+      ? Promise.all([
+          field('subjects'),
+          field('clustersData', 128),
+          field('topics'),
+          cc.allLegacyCounts(),
+        ])
+      : null,
   ]);
   for (const item of shared) byId.set(item.id, item);
   const state = {
@@ -141,12 +149,7 @@ export async function readShellPageState(
     }
   }
   if (['categories', 'collections', 'library', 'cluster'].includes(kind)) {
-    const [subjects, groups, topics, counts] = await Promise.all([
-      field('subjects'),
-      field('clustersData', 128),
-      field('topics'),
-      cc.allLegacyCounts(),
-    ]);
+    const [subjects, groups, topics, counts] = discovery;
     state.counts = counts;
     state.topics = topics;
     state.clusterNames = Object.fromEntries(topics.map((t) => [t.slug, [t.cluster]]));

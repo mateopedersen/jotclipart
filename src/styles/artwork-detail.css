@@ -1,7 +1,7 @@
 /* Dedicated artwork controls: tactile material samples and compact file facts. */
 .art-detail {
   align-items: start;
-  gap: 36px;
+  gap: 28px;
 }
 .art-detail > section {
   container: artwork-copy / inline-size;
@@ -18,7 +18,8 @@
 .art-detail .eyebrow {
   margin: 0;
   font-size: 14px;
-  color: var(--brand-ink);
+  color: var(--brand-action);
+  font-weight: 750;
 }
 .art-detail .preview {
   border: 1px solid var(--brand-soft);

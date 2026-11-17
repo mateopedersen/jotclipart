@@ -62,7 +62,7 @@ export async function compose(c, page, catalog) {
   }
   switch (page.layout) {
     case 'cookies': {
-      await c.image('public/illustrations/actions/cookies.svg', 687, 134, 338, 338);
+      await c.image('public/illustrations/actions/cookies-jot-green-v1.svg', 687, 134, 338, 338);
       paper(605, 473, 249, 55);
       paper(874, 473, 267, 55);
       await c.text('Necessary Cookies', 729, 492, { size: 21, weight: 600, center: true });

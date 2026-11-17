@@ -13,7 +13,10 @@ export async function readHomePageState(bucket, context, { allowFixture = false 
   ]);
   if (recent.schema !== 1 || recent.type !== 'recent-directory')
     throw Error('Invalid recent facet');
-  const home = await context.read('recent', recent.home, { maxBytes: 65536 });
+  const [home, features] = await Promise.all([
+    context.read('recent', recent.home, { maxBytes: 65536 }),
+    collections.read(collections.root.features, 256 * 1024),
+  ]);
   if (
     home.schema !== 1 ||
     home.type !== 'home-context' ||
@@ -61,7 +64,6 @@ export async function readHomePageState(bucket, context, { allowFixture = false 
       }
     }),
   );
-  const features = await collections.read(collections.root.features, 256 * 1024);
   if (!Array.isArray(features.surprise)) throw Error('Invalid home discovery context');
   return {
     art,

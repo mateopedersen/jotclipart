@@ -405,7 +405,7 @@ p {
   display: block;
   color: var(--ink);
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 850;
   min-height: 42px;
   line-height: 1.45;
   overflow-wrap: anywhere;
@@ -588,14 +588,31 @@ p {
   gap: 12px;
   flex-wrap: wrap;
 }
-.hero > .breadcrumb {
+.hero > .breadcrumb,
+main.container > .breadcrumb:has(+ .art-detail) {
   color: var(--brand-action);
   font-size: clamp(15px, 1.3vw, 18px);
   font-weight: 750;
   line-height: 1.5;
+  align-items: baseline;
+  overflow-wrap: anywhere;
 }
-.hero > .breadcrumb a {
+.hero > .breadcrumb a,
+main.container > .breadcrumb:has(+ .art-detail) a {
   color: inherit;
+  min-width: 0;
+}
+.hero:has(> .breadcrumb) {
+  padding: 28px 0 12px;
+  margin: 0 0 24px;
+}
+.hero > .breadcrumb {
+  margin: 0 0 18px;
+}
+main.container > .breadcrumb:has(+ .art-detail) {
+  margin: 18px 0;
+  column-gap: 10px;
+  row-gap: 4px;
 }
 .catalog-grid {
   display: grid;

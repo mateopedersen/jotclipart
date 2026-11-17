@@ -44,6 +44,7 @@ export function initOriginalImageLoading(
     note?: HTMLSpanElement;
     previewFrame?: HTMLElement;
     backdrop?: HTMLSpanElement;
+    previewRequest?: HTMLImageElement;
     onLoad: () => void;
     onError: () => void;
   };
@@ -82,6 +83,7 @@ export function initOriginalImageLoading(
     s?.backdrop?.remove();
     if (s) {
       s.backdrop = undefined;
+      s.previewRequest = undefined;
       previewing.delete(s);
     }
     delete image.dataset.originalPreview;
@@ -167,6 +169,16 @@ export function initOriginalImageLoading(
       (s.image.complete && s.image.naturalWidth > 0)
     )
       return;
+    // The existing source-bound thumbnail is tiny compared with a full
+    // original. Admit its first request at high priority so CSS backgrounds
+    // cannot sit behind several slow original transfers on mobile.
+    if (!s.previewRequest) {
+      const request = new Image();
+      request.decoding = 'async';
+      request.fetchPriority = 'high';
+      request.src = s.preview;
+      s.previewRequest = request;
+    }
     s.image.style.setProperty(
       '--original-loading-preview',
       'url(' + JSON.stringify(s.preview) + ')',

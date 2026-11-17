@@ -46,7 +46,12 @@ try {
         )
         .evaluateAll((nodes) =>
           nodes
-            .filter((n) => n.getBoundingClientRect().width && n.getBoundingClientRect().height)
+            .filter(
+              (n) =>
+                !n.matches('.art-detail .eyebrow') &&
+                n.getBoundingClientRect().width &&
+                n.getBoundingClientRect().height,
+            )
             .map((n) => ({
               text: n.textContent.trim(),
               color: getComputedStyle(n).color,
@@ -56,7 +61,11 @@ try {
       assert(labels.length > 0, `Missing visible typography at ${route}`);
       const unexpectedGreen = await page.locator('body').evaluate((body) =>
         Array.from(body.querySelectorAll('*')).flatMap((el) => {
-          if (el.closest('svg, .home-showcase h1, .hero > .breadcrumb, [data-text-preset]'))
+          if (
+            el.closest(
+              'svg, .home-showcase h1, .hero > .breadcrumb, main.container > .breadcrumb:has(+ .art-detail), .art-detail .eyebrow, [data-text-preset]',
+            )
+          )
             return [];
           const text = Array.from(el.childNodes)
             .filter((n) => n.nodeType === 3)
@@ -93,6 +102,33 @@ try {
       );
       for (const label of labels)
         if (label.color !== 'rgb(0, 0, 0)') report.errors.push({ route, width, ...label });
+      const cards = await page
+        .locator('.card-title, .related-card-title')
+        .evaluateAll((ns) =>
+          ns.map((n) => ({
+            weight: Number(getComputedStyle(n).fontWeight),
+            color: getComputedStyle(n).color,
+          })),
+        );
+      for (const card of cards) {
+        assert(card.weight >= 800, 'Artwork card titles must stand out from descriptions');
+        assert.equal(card.color, 'rgb(0, 0, 0)');
+      }
+      if (route.startsWith('/art/')) {
+        const detail = await page
+          .locator('main.container > .breadcrumb, .art-detail .eyebrow')
+          .evaluateAll((ns) =>
+            ns.map((n) => ({
+              color: getComputedStyle(n).color,
+              weight: Number(getComputedStyle(n).fontWeight),
+            })),
+          );
+        assert(detail.length >= 2, 'Artwork breadcrumb and collection label must exist');
+        for (const item of detail) {
+          assert.equal(item.color, 'rgb(33, 110, 78)');
+          assert(item.weight >= 750);
+        }
+      }
       if (route.startsWith('/clipart/')) {
         const breadcrumb = await page.locator('.hero > .breadcrumb').evaluate((nav) =>
           [nav, ...nav.querySelectorAll('a')].map((el) => ({

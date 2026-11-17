@@ -40,7 +40,7 @@ const html =
       i +
       '" href="/art/fixture-' +
       i +
-      '/"><img src="https://assets.ultraclipart.com/fixture/scheduled-' +
+      '/"><img src="https://assets.jotclipart.com/fixture/scheduled-' +
       i +
       '.webp" alt="Explicit fixture ' +
       i +
@@ -63,7 +63,7 @@ const categoryHTML =
       i +
       '/" aria-label="Explicit fixture ' +
       i +
-      '"><img src="https://assets.ultraclipart.com/fixture/category-' +
+      '"><img src="https://assets.jotclipart.com/fixture/category-' +
       i +
       '.webp" alt="Explicit fixture ' +
       i +
@@ -77,7 +77,7 @@ const server = createServer((q, r) => {
   r.setHeader('Content-Type', q.url === '/client.js' ? 'text/javascript' : 'text/html');
   r.setHeader(
     'Content-Security-Policy',
-    "default-src 'self'; img-src https://assets.ultraclipart.com; style-src 'self' 'unsafe-inline'; script-src 'self' " +
+    "default-src 'self'; img-src https://assets.jotclipart.com; style-src 'self' 'unsafe-inline'; script-src 'self' " +
       token,
   );
   r.end(q.url === '/client.js' ? client : q.url === '/category-frames' ? categoryHTML : html);
@@ -153,7 +153,7 @@ try {
               }
             };
           });
-        await context.route('https://assets.ultraclipart.com/**', async (route) => {
+        await context.route('https://assets.jotclipart.com/**', async (route) => {
           const url = route.request().url(),
             n = (attempts.get(url) ?? 0) + 1;
           attempts.set(url, n);
@@ -212,7 +212,7 @@ try {
         if (scenario === 'replacement')
           await page.evaluate(() => {
             const i = document.querySelectorAll('.art-picture img')[35];
-            i.src = 'https://assets.ultraclipart.com/fixture/replacement.webp';
+            i.src = 'https://assets.jotclipart.com/fixture/replacement.webp';
             i.scrollIntoView();
           });
         if (scenario === 'dynamic')
@@ -226,7 +226,7 @@ try {
             i.loading = 'lazy';
             i.alt = 'Explicit dynamic fixture';
             i.width = i.height = 100;
-            i.src = 'https://assets.ultraclipart.com/fixture/dynamic.webp';
+            i.src = 'https://assets.jotclipart.com/fixture/dynamic.webp';
             f.append(i);
             document.querySelector('.grid').prepend(f);
           });
@@ -265,7 +265,9 @@ try {
             'print',
           ].includes(scenario)
         ) {
-          const limit = ['slow-scroll', 'late-false-offline-hint', 'replacement'].includes(scenario) ? 8 : 6;
+          const limit = ['slow-scroll', 'late-false-offline-hint', 'replacement'].includes(scenario)
+            ? 4
+            : 2;
           assert(peak <= limit, 'Bounded original admission without an offscreen flood: ' + peak);
           assert(attempts.size < 40, 'The complete offscreen gallery must not be prefetched');
         }
@@ -277,14 +279,14 @@ try {
           await expect(page.locator('.original-image-status')).toHaveText(
             'Image unavailable. Open artwork.',
           );
-          assert.equal(attempts.get('https://assets.ultraclipart.com/fixture/scheduled-0.webp'), 3);
+          assert.equal(attempts.get('https://assets.jotclipart.com/fixture/scheduled-0.webp'), 3);
         }
         if (scenario === 'transient')
-          assert.equal(attempts.get('https://assets.ultraclipart.com/fixture/scheduled-0.webp'), 2);
+          assert.equal(attempts.get('https://assets.jotclipart.com/fixture/scheduled-0.webp'), 2);
         if (scenario === 'slow-scroll') {
           await page.waitForTimeout(1100);
           assert.equal(
-            attempts.get('https://assets.ultraclipart.com/fixture/scheduled-0.webp'),
+            attempts.get('https://assets.jotclipart.com/fixture/scheduled-0.webp'),
             1,
             'Healthy slow transfer retains progress',
           );
@@ -343,7 +345,7 @@ try {
         assert(
           urls.every(
             (i) =>
-              i.src.startsWith('https://assets.ultraclipart.com/fixture/') &&
+              i.src.startsWith('https://assets.jotclipart.com/fixture/') &&
               (!i.current || i.current === i.src) &&
               i.alt,
           ),
@@ -383,9 +385,12 @@ try {
           await context.addInitScript(() =>
             Object.defineProperty(navigator, 'onLine', { configurable: true, get: () => false }),
           );
-          let releaseImages, requested = 0;
-          const imageGate = new Promise((resolve) => { releaseImages = resolve; });
-          await context.route('https://assets.ultraclipart.com/**', async (route) => {
+          let releaseImages,
+            requested = 0;
+          const imageGate = new Promise((resolve) => {
+            releaseImages = resolve;
+          });
+          await context.route('https://assets.jotclipart.com/**', async (route) => {
             requested++;
             await imageGate;
             await route.fulfill({ status: 200, contentType: 'image/webp', body: bytes });
@@ -397,7 +402,12 @@ try {
           const cards = page.locator('.discovery-scene-card');
           await expect(cards.locator('img')).toHaveCount(4);
           await expect.poll(() => requested).toBeGreaterThan(0);
-          assert.equal(await cards.locator('img').evaluateAll((xs) => xs.some((i) => i.complete && i.naturalWidth > 0)), false);
+          assert.equal(
+            await cards
+              .locator('img')
+              .evaluateAll((xs) => xs.some((i) => i.complete && i.naturalWidth > 0)),
+            false,
+          );
           const before = await cards.evaluateAll((xs) =>
             xs.map((x) => ({ width: x.offsetWidth, height: x.offsetHeight })),
           );

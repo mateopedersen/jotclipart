@@ -18,8 +18,8 @@ const id = `file-guide-${kind}`;
       gradientUnits="userSpaceOnUse"
     >
       <stop stop-color="#fff" />
-      <stop offset=".55" stop-color="#fcfdff" />
-      <stop offset="1" stop-color="#c6d4e5" />
+      <stop offset=".55" stop-color="#fdfefe" />
+      <stop offset="1" stop-color="#c6e5d7" />
     </linearGradient>
     <linearGradient
       id={`${id}-metal`}
@@ -29,11 +29,11 @@ const id = `file-guide-${kind}`;
       y2="120"
       gradientUnits="userSpaceOnUse"
     >
-      <stop stop-color="#f4f7fb" />
-      <stop offset=".25" stop-color="#cfdaea" />
-      <stop offset=".5" stop-color="#edf3fa" />
-      <stop offset=".75" stop-color="#9bafc8" />
-      <stop offset="1" stop-color="#536e91" />
+      <stop stop-color="#f4fbf8" />
+      <stop offset=".25" stop-color="#cfeade" />
+      <stop offset=".5" stop-color="#eef9f4" />
+      <stop offset=".75" stop-color="#9bc8b4" />
+      <stop offset="1" stop-color="#539175" />
     </linearGradient>
     <linearGradient
       id={`${id}-blue`}
@@ -43,9 +43,9 @@ const id = `file-guide-${kind}`;
       y2="115"
       gradientUnits="userSpaceOnUse"
     >
-      <stop stop-color="#70baf4" />
-      <stop offset=".4" stop-color="#357ec4" />
-      <stop offset="1" stop-color="#153e76" />
+      <stop stop-color="#8dd7b6" />
+      <stop offset=".4" stop-color="#41b882" />
+      <stop offset="1" stop-color="#246749" />
     </linearGradient>
     <linearGradient
       id={`${id}-glass`}
@@ -55,8 +55,8 @@ const id = `file-guide-${kind}`;
       y2="98"
       gradientUnits="userSpaceOnUse"
     >
-      <stop stop-color="#f6fbff" />
-      <stop offset="1" stop-color="#d5e5f5" />
+      <stop stop-color="#f8fdfb" />
+      <stop offset="1" stop-color="#d9f1e6" />
     </linearGradient>
     <linearGradient
       id={`${id}-gold`}
@@ -79,24 +79,24 @@ const id = `file-guide-${kind}`;
       y2="96"
       gradientUnits="userSpaceOnUse"
     >
-      <stop stop-color="#526a88" />
-      <stop offset="1" stop-color="#182e4c" />
+      <stop stop-color="#528870" />
+      <stop offset="1" stop-color="#1a4a34" />
     </linearGradient>
     <pattern id={`${id}-check`} width="12" height="12" patternUnits="userSpaceOnUse">
-      <rect width="12" height="12" fill="#f7fbff" />
-      <path d="M0 0h6v6H0zM6 6h6v6H6z" fill="#dce7f2" />
+      <rect width="12" height="12" fill="#f9fdfb" />
+      <path d="M0 0h6v6H0zM6 6h6v6H6z" fill="#dcf2e8" />
     </pattern>
     <filter id={`${id}-shadow`} x="0" y="0" width="200" height="136" filterUnits="userSpaceOnUse">
-      <feDropShadow dx="0" dy="5" stdDeviation="3" flood-color="#163359" flood-opacity=".2" />
+      <feDropShadow dx="0" dy="5" stdDeviation="3" flood-color="#1d523a" flood-opacity=".2" />
     </filter>
   </defs>
-  <ellipse cx="103" cy="124" rx="68" ry="8" fill="#1a3553" opacity=".08" />
-  <ellipse cx="103" cy="124" rx="45" ry="3" fill="#1a3553" opacity=".12" />
+  <ellipse cx="103" cy="124" rx="68" ry="8" fill="#1c5139" opacity=".08" />
+  <ellipse cx="103" cy="124" rx="45" ry="3" fill="#1c5139" opacity=".12" />
   {kind === 'image' && (
     <g filter={`url(#${id}-shadow)`}>
-      <path d="m79 97-3 18-16 7h81l-17-7-3-18" fill={`url(#${id}-metal)`} stroke="#91a5be" />
+      <path d="m79 97-3 18-16 7h81l-17-7-3-18" fill={`url(#${id}-metal)`} stroke="#91beaa" />
       <path d="M78 116h47" stroke="#fff" stroke-opacity=".8" />
-      <rect x="25" y="15" width="151" height="90" rx="10" fill="#344e70" />
+      <rect x="25" y="15" width="151" height="90" rx="10" fill="#347055" />
       <rect
         x="24"
         y="11"
@@ -104,9 +104,9 @@ const id = `file-guide-${kind}`;
         height="90"
         rx="10"
         fill={`url(#${id}-metal)`}
-        stroke="#a0b7d2"
+        stroke="#a0d2bb"
       />
-      <rect x="29" y="16" width="141" height="73" rx="6" fill="#1e3b61" />
+      <rect x="29" y="16" width="141" height="73" rx="6" fill="#215e43" />
       <rect x="33" y="20" width="133" height="65" rx="3" fill={`url(#${id}-check)`} />
       <image
         href={thumb}
@@ -117,8 +117,8 @@ const id = `file-guide-${kind}`;
         preserveAspectRatio="xMidYMid meet"
       />
       <path d="M35 21h100L35 67Z" fill="white" opacity=".15" />
-      <circle cx="100" cy="95" r="2.5" fill="#8b9fb7" />
-      <rect x="135" y="79" width="49" height="29" rx="7" fill="#183e74" />
+      <circle cx="100" cy="95" r="2.5" fill="#8bb7a3" />
+      <rect x="135" y="79" width="49" height="29" rx="7" fill="#246849" />
       <rect
         x="135"
         y="76"
@@ -126,9 +126,9 @@ const id = `file-guide-${kind}`;
         height="29"
         rx="7"
         fill={`url(#${id}-blue)`}
-        stroke="#6b9dd0"
+        stroke="#6fcca2"
       />
-      <path d="M142 80h34" stroke="#a7d4f8" stroke-opacity=".6" />
+      <path d="M142 80h34" stroke="#b9e6d2" stroke-opacity=".6" />
       <text
         x="159.5"
         y="95"
@@ -147,7 +147,7 @@ const id = `file-guide-${kind}`;
       <path
         d="m29 59 17-20h107l18 20v43a8 8 0 0 1-8 8H37a8 8 0 0 1-8-8Z"
         fill={`url(#${id}-metal)`}
-        stroke="#91a7c0"
+        stroke="#91c0ab"
       />
       <rect
         x="60"
@@ -156,7 +156,7 @@ const id = `file-guide-${kind}`;
         height="53"
         rx="3"
         fill={`url(#${id}-paper)`}
-        stroke="#9eafc6"
+        stroke="#9ec6b4"
       />
       <image
         href={thumb}
@@ -166,8 +166,8 @@ const id = `file-guide-${kind}`;
         height="34"
         preserveAspectRatio="xMidYMid meet"
       />
-      <path d="M68 51h63" stroke="#9eafc6" stroke-width="2" />
-      <path d="m31 59 15-12h108l15 12" fill="#f5f8fc" />
+      <path d="M68 51h63" stroke="#9ec6b4" stroke-width="2" />
+      <path d="m31 59 15-12h108l15 12" fill="#f5fcf9" />
       <rect
         x="29"
         y="59"
@@ -175,14 +175,14 @@ const id = `file-guide-${kind}`;
         height="36"
         rx="8"
         fill={`url(#${id}-metal)`}
-        stroke="#a0b4ce"
+        stroke="#a0ceb9"
       />
       <path d="M34 64h131" stroke="white" stroke-opacity=".8" />
       <rect x="50" y="80" width="102" height="20" rx="4" fill={`url(#${id}-dark)`} />
-      <rect x="148" y="67" width="12" height="5" rx="2" fill="#2e557d" />
+      <rect x="148" y="67" width="12" height="5" rx="2" fill="#2e7d59" />
       <circle cx="152" cy="69.5" r="1.5" fill="#7fe4b4" />
-      <path d="M62 88h77v27l-7 8H55l7-8Z" fill={`url(#${id}-paper)`} stroke="#9eafc6" />
-      <path d="M70 98h58m-58 7h42" stroke="#a5b6ca" stroke-width="3" stroke-linecap="round" />
+      <path d="M62 88h77v27l-7 8H55l7-8Z" fill={`url(#${id}-paper)`} stroke="#9ec6b4" />
+      <path d="M70 98h58m-58 7h42" stroke="#a5cab9" stroke-width="3" stroke-linecap="round" />
       <rect x="19" y="88" width="46" height="28" rx="7" fill="#862b45" />
       <rect x="19" y="85" width="46" height="28" rx="7" fill="#bd4c69" stroke="#e3a0b2" />
       <text
@@ -202,20 +202,20 @@ const id = `file-guide-${kind}`;
     <g filter={`url(#${id}-shadow)`}>
       <path
         d="m35 18 123 7a10 10 0 0 1 9 10l-6 74a9 9 0 0 1-10 8l-123-7a10 10 0 0 1-9-10l6-73a10 10 0 0 1 10-9Z"
-        fill="#253e60"
+        fill="#256045"
       />
       <path
         d="m34 13 123 7a10 10 0 0 1 9 10l-6 74a9 9 0 0 1-10 8l-123-7a10 10 0 0 1-9-10l6-73a10 10 0 0 1 10-9Z"
         fill={`url(#${id}-metal)`}
-        stroke="#9cafc5"
+        stroke="#9cc5b3"
       />
       <path d="m34 21 123 7-6 74-123-7Z" fill={`url(#${id}-glass)`} />
-      <path d="m34 21 123 7-1 11-123-7Z" fill="#e7eef7" />
+      <path d="m34 21 123 7-1 11-123-7Z" fill="#e7f7f0" />
       <circle cx="41" cy="27" r="2" fill="#c87584" />
       <circle cx="48" cy="27.4" r="2" fill="#dfb36e" />
       <circle cx="55" cy="27.8" r="2" fill="#63a794" />
-      <path d="m35 38 13 1-4 50-13-1Z" fill="#a6c9e9" />
-      <path d="m37 47 6 .4m-7 11 6 .4m-7 11 6 .4m-7 11 6 .4" stroke="#376699" stroke-width="2" />
+      <path d="m35 38 13 1-4 50-13-1Z" fill="#ade2ca" />
+      <path d="m37 47 6 .4m-7 11 6 .4m-7 11 6 .4m-7 11 6 .4" stroke="#37996d" stroke-width="2" />
       <image
         href={thumb}
         x="61"
@@ -230,7 +230,7 @@ const id = `file-guide-${kind}`;
         width="79"
         height="54"
         rx="1"
-        stroke="#397db8"
+        stroke="#3fb27e"
         stroke-width="1.3"
         stroke-dasharray="4 3"
       />
@@ -240,29 +240,29 @@ const id = `file-guide-${kind}`;
         ['56', '90'],
         ['135', '90'],
       ].map(([x, y]) => (
-        <rect x={x} y={y} width="6" height="6" rx="1" fill="white" stroke="#28649b" />
+        <rect x={x} y={y} width="6" height="6" rx="1" fill="white" stroke="#339066" />
       ))}
-      <path d="m176 31 7 3-34 78-9 9 1-13Z" fill={`url(#${id}-dark)`} stroke="#45607f" />
-      <path d="m176 31 7 3 2-5-7-3Z" fill="#c9d5e3" />
-      <path d="m140 121 5-3-4-2Z" fill="#567b9f" />
-      <path d="m177 37-30 69" stroke="#9eafc4" stroke-width="1.5" />
+      <path d="m176 31 7 3-34 78-9 9 1-13Z" fill={`url(#${id}-dark)`} stroke="#457f65" />
+      <path d="m176 31 7 3 2-5-7-3Z" fill="#c9e3d7" />
+      <path d="m140 121 5-3-4-2Z" fill="#569f7e" />
+      <path d="m177 37-30 69" stroke="#9ec4b3" stroke-width="1.5" />
     </g>
   )}
   {kind === 'license' && (
     <g filter={`url(#${id}-shadow)`}>
-      <path d="m48 14 81 4 23 25-4 73-111-6Z" fill="#93a9c3" />
-      <path d="m45 10 81 4 24 25-4 73-111-6Z" fill={`url(#${id}-paper)`} stroke="#a2b6ce" />
-      <path d="m126 14-1 24 25 1" fill="#cbd9ea" stroke="#9fb5ce" />
-      <path d="m127 16 21 23-20-3Z" fill="#e7eef8" />
+      <path d="m48 14 81 4 23 25-4 73-111-6Z" fill="#93c3ad" />
+      <path d="m45 10 81 4 24 25-4 73-111-6Z" fill={`url(#${id}-paper)`} stroke="#a2ceba" />
+      <path d="m126 14-1 24 25 1" fill="#cbeadc" stroke="#9fceb9" />
+      <path d="m127 16 21 23-20-3Z" fill="#e8f7f0" />
       <path
         d="m51 31 52 3m-53 10 71 4m-72 10 65 4m-66 10 44 2"
-        stroke="#8ca4c1"
+        stroke="#8cc1a9"
         stroke-width="3"
         stroke-linecap="round"
       />
-      <path d="m49 89 21 1m-21 5 32 2" stroke="#a5b8cf" stroke-width="2" stroke-linecap="round" />
-      <path d="m128 98-4 31 13-8 11 10 1-34" fill="#3365a0" stroke="#204878" />
-      <path d="m126 98-4 26 9-5 6 4 3-27" fill="#5e91c5" />
+      <path d="m49 89 21 1m-21 5 32 2" stroke="#a5cfbc" stroke-width="2" stroke-linecap="round" />
+      <path d="m128 98-4 31 13-8 11 10 1-34" fill="#379c6f" stroke="#287050" />
+      <path d="m126 98-4 26 9-5 6 4 3-27" fill="#5ec597" />
       <path
         d="m140 67 6 4 7-1 4 6 7 3v8l4 5-4 6-1 7-7 2-5 6-7-2-7 3-5-6-7-2v-8l-4-5 4-6 1-7 7-3Z"
         fill={`url(#${id}-gold)`}
