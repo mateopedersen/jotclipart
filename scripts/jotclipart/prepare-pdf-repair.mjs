@@ -7,6 +7,7 @@ import { createHash } from 'node:crypto';
 import { captureProductionSnapshot } from '../../server/catalog-snapshot/signed-production-snapshot.mjs';
 import { readArtwork } from '../../server/catalog-snapshot/artwork-facet-reader.mjs';
 import { openSevenFacetCollectionContext } from '../../server/catalog-snapshot/collection-context.mjs';
+import { validateTopicRecord } from '../../server/catalog-collections/writer.mjs';
 import { canonical } from '../../server/catalog-search/store.mjs';
 import {
   metadataSignature,
@@ -79,6 +80,15 @@ const collections = await openSevenFacetCollectionContext(bucket, { snapshot: co
 const descriptor = await collections.lookupCollection(topic);
 assert(descriptor);
 const oldTopic = await collections.read(descriptor, 256 * 1024);
+const topicIds = [];
+for (const part of oldTopic.membership) {
+  const body = await bucket.get(part.key);
+  const bytes = Buffer.from(await body.arrayBuffer());
+  assert.equal(sha(bytes), part.sha256);
+  assert.equal(bytes.length, part.bytes);
+  topicIds.push(...JSON.parse(bytes).artworkIds);
+}
+validateTopicRecord(oldTopic, topicIds);
 const receipt = JSON.parse(readFileSync(repairReceiptArg)),
   repair = readFileSync(repairPDFArg);
 assert.equal(sha(repair), receipt.sha256);
@@ -192,7 +202,7 @@ const packet = {
       slug: topic,
       expectedRecordSha256: hashRecord(oldTopic),
       record: oldTopic,
-      artworkIds: sourceTopic.rawItems.map((a) => a.id),
+      artworkIds: topicIds,
     },
   ],
   artworkRows: [artworkRow],
