@@ -1,5 +1,11 @@
 import { oneEditAway, queryTerms, normalizeQuery, type SearchState } from './search.ts';
-import { termVariants, relevanceScore, type TermMatch } from './search-language.ts';
+import {
+  termVariants,
+  relevanceScore,
+  EXACT_SUBJECT_BONUS,
+  exactSubjectFacets,
+  type TermMatch,
+} from './search-language.ts';
 import type { SiteSearchEntry } from './site-search.ts';
 import { validateStudioAsset, type SnapshotStudioAsset } from './snapshot-studio.ts';
 import { catalogMetadataHeaders } from './catalog-protocol.ts';
@@ -430,6 +436,13 @@ export class SearchRepository {
     );
     if (allowedSets.some((set) => set.size === 0))
       return { ...pagination(0), items: [], hasFuzzyMatches: false, manifest };
+    const preferred = new Set<number>();
+    if (state.sort === 'relevance') {
+      for (const name of exactSubjectFacets(tokens, manifest.topics, manifest.facets)) {
+        for (const id of await this.json<number[]>(this.path(manifest, `facets/${name}`), signal))
+          preferred.add(id);
+      }
+    }
     const loaded = new Map<string, Record<string, number[]>>();
     const loadWords = async (words: string[]) => {
       const keys = [...new Set(words.map(tokenBucket))].filter((key) => !loaded.has(key));
@@ -492,7 +505,7 @@ export class SearchRepository {
           const matches = maps.map((map) => map.get(id)!);
           return {
             id,
-            score: relevanceScore(matches),
+            score: relevanceScore(matches) + (preferred.has(id) ? EXACT_SUBJECT_BONUS : 0),
             fuzzy: matches.some((match) => match.fuzzy),
           };
         });

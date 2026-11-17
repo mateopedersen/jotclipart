@@ -6,6 +6,8 @@ import {
   relevanceScore,
   normalizeQuery,
   SEARCH_LANGUAGE_VERSION,
+  EXACT_SUBJECT_BONUS,
+  exactSubjectFacets,
 } from '../../src/lib/search-language.ts';
 import { makeStore, mapGet, mapEntries, wordsFrom, orderedValues } from './store.mjs';
 import { mapFour } from './bounded-map.mjs';
@@ -485,6 +487,30 @@ export async function openSearch(
         manifest: standard,
       };
     }
+    const preferred = new Set();
+    if (state.sort === 'relevance') {
+      await mapFour(
+        exactSubjectFacets(tokens, manifest.topics, manifest.facetNames),
+        async (name) => {
+          if (scope.includes(name)) {
+            for (const n of allowed ?? []) preferred.add(n);
+            return;
+          }
+          const facet = await lookup(manifest.facets, 'facets', name);
+          if (!facet?.count) return;
+          await mapFour(await rangePages(facet.ranges, 'facet-ranges'), async (d) => {
+            const page = await read(d);
+            if (page.type !== 'search-facet-ids' || page.facet !== name)
+              throw new SearchBudgetError('Invalid subject facet');
+            for (const n of page.ids) {
+              preferred.add(n);
+              if (preferred.size > maxCandidates)
+                throw new SearchBudgetError('Subject candidate budget exceeded');
+            }
+          });
+        },
+      );
+    }
     const rankedMetadata = new Map();
     async function loadRankedMetadata(eligible) {
       const missing = new Set([...eligible].filter((n) => !rankedMetadata.has(n))),
@@ -574,7 +600,8 @@ export async function openSearch(
         else {
           const groups = new Map();
           for (const [n, value] of scores) {
-            const score = value.weight + (value.title ? 5 : 0);
+            const score =
+              value.weight + (value.title ? 5 : 0) + (preferred.has(n) ? EXACT_SUBJECT_BONUS : 0);
             if (!groups.has(score)) groups.set(score, new Set());
             groups.get(score).add(n);
           }
@@ -747,7 +774,10 @@ export async function openSearch(
               n: doc.n,
               title: doc.title,
               time: doc.time,
-              score: (related ? found.length * 20 : 0) + relevanceScore(found),
+              score:
+                (related ? found.length * 20 : 0) +
+                relevanceScore(found) +
+                (preferred.has(doc.n) ? EXACT_SUBJECT_BONUS : 0),
               fuzzy: found.some((x) => x.fuzzy),
               missing: related ? tokens.filter((_, i) => !matches[i]) : [],
             });

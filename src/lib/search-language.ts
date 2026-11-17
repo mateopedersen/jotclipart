@@ -239,6 +239,32 @@ export function queryTerms(query: string) {
     wantsTransparent,
   };
 }
+/** Prefer a deliberately named subject without changing which artwork matches. */
+export const EXACT_SUBJECT_BONUS = 16;
+export function isExactSubjectQuery(tokens: string[], subject: string) {
+  const words = normalizeQuery(subject);
+  return (
+    tokens.length > 0 &&
+    words.length === tokens.length &&
+    words.every((word) => tokens.includes(word))
+  );
+}
+export function exactSubjectFacets(
+  tokens: string[],
+  topics: { slug: string; keyword: string }[],
+  facets: string[],
+) {
+  const named = new Set(
+    topics
+      .filter((topic) => isExactSubjectQuery(tokens, topic.keyword))
+      .map((topic) => `topic/${topic.slug}`),
+  );
+  // Facets retain verified membership when a compact UI directory omits a label.
+  return facets.filter(
+    (name) =>
+      name.startsWith('topic/') && (named.has(name) || isExactSubjectQuery(tokens, name.slice(6))),
+  );
+}
 export interface TermMatch {
   weight: number;
   fuzzy: boolean;

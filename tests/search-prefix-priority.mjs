@@ -13,6 +13,8 @@ const records = [
   { id: 'forest-roots', topic: 'mangrove', title: 'Mangrove Roots', color: 'Brown' },
   { id: 'person-portrait', topic: 'people', title: 'A Man Reading', color: 'Green' },
   { id: 'fruit-plate', topic: 'mango', title: 'Yellow Mango on a Plate', color: 'Yellow' },
+  { id: 'cat-play', topic: 'cat', title: 'Zebra Cat Playing', color: 'Blue' },
+  { id: 'flag-scene', topic: 'flag', title: 'Alpha Flag With a Cat', color: 'Red' },
 ].map((item) => ({
   ...item,
   alt: item.title,
@@ -71,6 +73,25 @@ const engines = {
   },
 };
 for (const [name, search] of Object.entries(engines)) {
+  test(
+    name + ': an exact subject ranks its own artwork first without hiding cross-topic matches',
+    async () => {
+      const result = await search({ ...defaults, q: 'cat' });
+      assert.equal(result.total, 2);
+      assert.deepEqual(
+        result.items.map((row) => row.id),
+        ['cat-play', 'flag-scene'],
+      );
+      const alphabetic = await search({ ...defaults, q: 'cat', sort: 'title' });
+      assert.deepEqual(
+        alphabetic.items.map((row) => row.id),
+        ['flag-scene', 'cat-play'],
+      );
+      const red = await search({ ...defaults, q: 'cat', color: 'red' });
+      assert.equal(red.total, 1);
+      assert.equal(red.items[0].id, 'flag-scene', 'a preference must never bypass a filter');
+    },
+  );
   test(
     name +
       ': literal final-word prefixes exclude neighboring misspellings and preserve every constraint',

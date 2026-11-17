@@ -1,3 +1,20 @@
+# Exact-subject search relevance follow-up — 2026-11-17
+
+Public cat search incorrectly ranked an incidental Andorra-flag scene before
+Cat-subject artwork. Prefer exact named-subject membership for relevance only,
+using authenticated existing topic facets (including facets omitted by compact
+or legacy UI topic labels). Preserve every match, total, filter, alphabetical and
+newest order. Share the16-point preference and exact-subject matcher across all
+three scoring paths. No index language/schema/media or metadata rewrite.
+704 normal source checks and both complete semantic-equivalence suites passed:
+real pilot queries/typos/facets plus5500 rows/all110 topics/filters/ranks/pages.
+The existing API regression now requires own-subject-first full ranking while
+asserting both cross-topic IDs remain; detailed queries remain unrestricted.
+The isolated search development branch has these changes; SOURCE must remain
+dcbdc770a360dc198f21a609e86734108cf1e0bc until the separate URL publisher finalizes.
+The earliercfd2 candidate was never deployed/installed; rebuild the uninstalled
+independent checkout at the new exact commit before preview or production.
+
 # Owner search refinement — 2026-11-17
 
 A public source-bound query audit found mang matching man (3251 results,29.5s)

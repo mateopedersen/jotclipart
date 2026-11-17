@@ -6,6 +6,8 @@ import {
   queryTerms,
   termVariants,
   relevanceScore,
+  EXACT_SUBJECT_BONUS,
+  isExactSubjectQuery,
   type TermMatch,
 } from './search-language.ts';
 export { normalizeQuery, oneEditAway, queryTerms } from './search-language.ts';
@@ -208,7 +210,13 @@ export function searchArtwork<T extends SearchArtwork>(artwork: T[], state: Sear
       const fuzzy = matches.some((m) => m.fuzzy);
       (fuzzy ? close : prefixMatch ? prefixes : exact).push({
         item,
-        score: relevanceScore(matches),
+        score:
+          relevanceScore(matches) +
+          (state.sort === 'relevance' &&
+          (isExactSubjectQuery(tokens, item.topic) ||
+            (item.topicLabel && isExactSubjectQuery(tokens, item.topicLabel)))
+            ? EXACT_SUBJECT_BONUS
+            : 0),
         fuzzy,
       });
     }
