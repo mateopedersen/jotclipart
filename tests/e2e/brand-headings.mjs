@@ -94,12 +94,10 @@ try {
           .locator('.home-showcase h1, .home-showcase h1 > span')
           .evaluateAll((nodes) => nodes.map((n) => getComputedStyle(n).color));
         assert(hero.length > 0, 'Homepage hero must exist');
-        const total = await page
-          .locator('.home-collection-total')
-          .evaluate((el) => ({
-            color: getComputedStyle(el).color,
-            weight: Number(getComputedStyle(el).fontWeight),
-          }));
+        const total = await page.locator('.home-collection-total').evaluate((el) => ({
+          color: getComputedStyle(el).color,
+          weight: Number(getComputedStyle(el).fontWeight),
+        }));
         if (total.color !== 'rgb(0, 0, 0)' || total.weight < 700)
           report.errors.push({ route, width, total });
         for (const color of hero)
