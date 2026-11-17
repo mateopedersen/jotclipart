@@ -7,10 +7,12 @@ const catalogRequests = new WeakMap();
 
 export function observeCatalogRequests(page, origin) {
   if (catalogRequests.has(page)) return;
-  const state = { pending: new Set(), lastActivity: 0 };
+  const state = { pending: new Set(), lastActivity: 0, documentNavigation: undefined };
   catalogRequests.set(page, state);
   page.on('request', (request) => {
     const url = new URL(request.url());
+    if (request.isNavigationRequest() && request.frame() === page.mainFrame())
+      state.documentNavigation = request;
     if (
       url.origin === origin &&
       (/^\/(?:catalog-search|catalog-stats|surprise-picks|studio-assets)\.json$/.test(
@@ -20,6 +22,17 @@ export function observeCatalogRequests(page, origin) {
     ) {
       state.pending.add(request);
       state.lastActivity = Date.now();
+    }
+  });
+  page.on('framenavigated', (frame) => {
+    if (frame === page.mainFrame() && state.documentNavigation?.url() === frame.url()) {
+      // Only a committed replacement document invalidates its predecessor's
+      // requests. Chromium can cancel a routed outgoing fetch before it has
+      // network timing without emitting requestfailed. History/pushState alone
+      // must never clear an active read in the current document.
+      state.pending.clear();
+      state.lastActivity = 0;
+      state.documentNavigation = undefined;
     }
   });
   const finished = (request) => {

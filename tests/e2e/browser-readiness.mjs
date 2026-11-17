@@ -11,7 +11,11 @@ import {
 const engine = process.env.UC_BROWSER ?? 'chromium';
 const width = Number(process.env.VIEWPORT_WIDTH ?? 768);
 assert(['chromium', 'firefox', 'webkit'].includes(engine));
-let catalogResponse, streamResponse;
+let catalogResponse, streamResponse, outgoingResponse;
+let outgoingSeen;
+const heldOutgoing = new Promise((done) => {
+  outgoingSeen = done;
+});
 let catalogSeen, streamSeen;
 const heldCatalog = new Promise((done) => {
   catalogSeen = done;
@@ -25,6 +29,11 @@ const server = createServer((request, response) => {
     response.writeHead(200, { 'Content-Type': 'application/json' });
     response.write('{"ok":');
     catalogSeen();
+  } else if (request.url === '/catalog-stats.json') {
+    outgoingResponse = response;
+    response.writeHead(200, { 'Content-Type': 'application/json' });
+    response.write('{"ok":');
+    outgoingSeen();
   } else if (request.url === '/telemetry-stream') {
     streamResponse = response;
     response.writeHead(200, { 'Content-Type': 'text/plain' });
@@ -73,6 +82,7 @@ try {
   });
   await heldCatalog;
   await page.waitForFunction(() => document.body.dataset.headersReceived === 'true');
+  await page.evaluate(() => history.pushState({}, '', '/same-document'));
   let settled = false;
   const pending = settleBeforeDirectNavigation(page).then(() => {
     settled = true;
@@ -85,7 +95,7 @@ try {
   await page.goto(origin + '/next');
   assert.deepEqual(errors, []);
   report.checks.push({
-    name: 'Wait for the complete real metadata body before an artificial navigation',
+    name: 'Wait for complete metadata bytes, including across same-document history changes',
     status: 'PASS',
   });
 
@@ -120,6 +130,19 @@ try {
     name: 'Unrelated ongoing streams do not turn readiness into a network-idle wait',
     status: 'PASS',
   });
+  await page.evaluate(() => {
+    void fetch('/catalog-stats.json')
+      .then((r) => r.json())
+      .catch(() => {});
+  });
+  await heldOutgoing;
+  await page.goto(origin + '/replacement-document');
+  await settleBeforeDirectNavigation(page);
+  outgoingResponse.end('true}');
+  report.checks.push({
+    name: 'A committed replacement document cannot inherit cancelled outgoing metadata',
+    status: 'PASS',
+  });
   const disabled = await browser.newContext({ javaScriptEnabled: false });
   const disabledPage = await disabled.newPage();
   observeCatalogRequests(disabledPage, origin);
@@ -150,6 +173,7 @@ try {
 } finally {
   catalogResponse?.end();
   streamResponse?.end();
+  outgoingResponse?.end();
   await browser?.close();
   await new Promise((done) => server.close(done));
   writeFileSync(output + '/readiness-result.json', JSON.stringify(report, null, 2) + '\n');
