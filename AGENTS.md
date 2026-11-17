@@ -1,5 +1,16 @@
 # Homepage hero refinement — latest owner direction, 2026-11-17
 
+The owner requested a redesigned logo-matched3D favicon. The new transparent
+master is public/brand/jotclipart-mark-3d-v2.png; keep the old master and accepted
+wordmark unchanged. Generate all stable root ICO/PNG/SVG/apple icon outputs from
+that one master with scripts/build-site-icons.mjs. Keep real square96/192 PNG,
+16/32/48 ICO frames and180 apple sizes. Search-engine display is not guaranteed;
+do not submit new Google/Bing indexing requests or change discovery settings.
+
+The topic breadcrumb (“Home / Categories / subject category”) is a separate
+owner-approved green text exception: brand-action green, responsive15–18px and
+weight750 across all topic pages. Keep the actual links, spacing and wrapping.
+
 Only the words “Free Clipart” are green, with a thin, hand-drawn double swoosh
 directly underneath those words. “for Every Project” is black. The headline uses
 the existing self-hosted Inter variable font at weight900. This supersedes the

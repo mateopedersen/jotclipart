@@ -15,6 +15,9 @@ try {
       '/',
       '/collections/',
       '/collection/food-drink/',
+      '/clipart/giorgio-armani/',
+      '/clipart/fendi/',
+      '/clipart/bmw/',
       '/categories/',
       '/library-index/',
       '/new/',
@@ -53,7 +56,8 @@ try {
       assert(labels.length > 0, `Missing visible typography at ${route}`);
       const unexpectedGreen = await page.locator('body').evaluate((body) =>
         Array.from(body.querySelectorAll('*')).flatMap((el) => {
-          if (el.closest('svg, .home-showcase h1, [data-text-preset]')) return [];
+          if (el.closest('svg, .home-showcase h1, .hero > .breadcrumb, [data-text-preset]'))
+            return [];
           const text = Array.from(el.childNodes)
             .filter((n) => n.nodeType === 3)
             .map((n) => n.textContent)
@@ -89,6 +93,21 @@ try {
       );
       for (const label of labels)
         if (label.color !== 'rgb(0, 0, 0)') report.errors.push({ route, width, ...label });
+      if (route.startsWith('/clipart/')) {
+        const breadcrumb = await page.locator('.hero > .breadcrumb').evaluate((nav) =>
+          [nav, ...nav.querySelectorAll('a')].map((el) => ({
+            color: getComputedStyle(el).color,
+            weight: Number(getComputedStyle(el).fontWeight),
+            size: parseFloat(getComputedStyle(el).fontSize),
+          })),
+        );
+        assert(breadcrumb.length >= 4, 'Topic breadcrumb and its links must exist');
+        for (const item of breadcrumb) {
+          assert.equal(item.color, 'rgb(33, 110, 78)');
+          assert(item.weight >= 750, 'Topic breadcrumb must be bold');
+          assert(item.size >= 15, 'Topic breadcrumb must be readable on mobile');
+        }
+      }
       if (route === '/') {
         const hero = await page.locator('.home-showcase h1').evaluate((heading) => {
           const brand = heading.querySelector('.home-title-brand'),

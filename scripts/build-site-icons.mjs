@@ -12,7 +12,7 @@ export const siteIconFiles = [
   'favicon.ico',
 ];
 const sha = (bytes) => createHash('sha256').update(bytes).digest('hex');
-export const siteIconSource = 'public/brand/jotclipart-mark-3d.png';
+export const siteIconSource = 'public/brand/jotclipart-mark-3d-v2.png';
 export async function buildSiteIcons(root = resolve(import.meta.dirname, '..')) {
   // One reviewed raster mark feeds every size; the legacy flat SVG is never an input.
   const source = readFileSync(join(root, siteIconSource));

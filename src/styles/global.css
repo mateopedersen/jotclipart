@@ -588,6 +588,15 @@ p {
   gap: 12px;
   flex-wrap: wrap;
 }
+.hero > .breadcrumb {
+  color: var(--brand-action);
+  font-size: clamp(15px, 1.3vw, 18px);
+  font-weight: 750;
+  line-height: 1.5;
+}
+.hero > .breadcrumb a {
+  color: inherit;
+}
 .catalog-grid {
   display: grid;
   grid-template-columns: 220px 1fr;
