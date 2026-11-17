@@ -3,10 +3,20 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import CatalogCount from '../components/CatalogCount.astro';
 import { newestArt } from '../lib/catalog';
+import { diverseRecentArtwork } from '../lib/recent-artwork';
 import { getSearchBuild } from '../lib/search-build';
 import { cardMetadata } from '../lib/search-index';
 import { downloadDetails } from '../lib/download-data';
-const initial = newestArt.slice(0, 32);
+const limit = 32;
+const initial =
+  Astro.props.snapshotTotal === undefined
+    ? [
+        ...new Set([
+          ...diverseRecentArtwork(newestArt, () => undefined, limit),
+          ...newestArt.slice(0, limit),
+        ]),
+      ].slice(0, limit)
+    : newestArt.slice(0, limit);
 const total = Astro.props.snapshotTotal ?? newestArt.length;
 const seed = {
   version: (await getSearchBuild()).manifest.version,

@@ -54,8 +54,8 @@ const surprisePicks = cuteSurpriseIndex.slice(0, 48);
 const browseLinks = [
   {
     label: 'Explore clipart',
-    href: '/',
-    description: 'Browse illustrations by subject.',
+    href: '/search/?type=artwork',
+    description: 'Search and filter the clipart library.',
     icon: 'discover',
   },
   {
@@ -109,9 +109,10 @@ const resourceLinks = [
     icon: 'info',
   },
 ];
-const current = (path: string) => (Astro.url.pathname === path ? 'page' : undefined);
+const current = (href: string) =>
+  Astro.url.pathname + (href.includes('?') ? Astro.url.search : '') === href ? 'page' : undefined;
 const browseCurrent =
-  browseLinks.some((link) => Astro.url.pathname === link.href) ||
+  browseLinks.some((link) => Astro.url.pathname === link.href.split('?')[0]) ||
   Astro.url.pathname.startsWith('/clipart/') ||
   Astro.url.pathname.startsWith('/art/');
 const resourcesCurrent =

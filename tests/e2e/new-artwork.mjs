@@ -28,13 +28,25 @@ for (const [engine, implementation] of Object.entries({ chromium, webkit })) {
         const ranked = await (
           await page.request.get(`${base}/search-data/${manifest.version}/ranked/newest/0.json`)
         ).json();
-        const promoted = ranked.ids[40];
-        const nextRanked = {
-          ...ranked,
-          ids: [promoted, ...ranked.ids.filter((id) => id !== promoted)],
-          ordinals: [ranked.ordinals[40], ...ranked.ordinals.filter((_, i) => i !== 40)],
+        const html = await (await page.request.get(base + '/new/')).text();
+        const seed = await page.evaluate((source) => {
+          const doc = new DOMParser().parseFromString(source, 'text/html');
+          return JSON.parse(doc.querySelector('[data-new-seed]').textContent);
+        }, html);
+        const [first, promoted, ...rest] = seed.items;
+        const nextSeed = {
+          ...seed,
+          version: 'new-page-regression',
+          items: [promoted, first, ...rest],
         };
         let mode = 'current';
+        await page.route('**/new/', (route) => {
+          if (mode !== 'updated' || route.request().isNavigationRequest()) return route.continue();
+          return route.fulfill({
+            contentType: 'text/html',
+            body: `<script type="application/json" data-new-seed>${JSON.stringify(nextSeed).replace(/</g, '\\u003c')}</script>`,
+          });
+        });
         await page.route('**/api/cookie-region.json', (route) =>
           route.fulfill({ contentType: 'application/json', body: '{"showNotice":false}' }),
         );
@@ -50,39 +62,29 @@ for (const [engine, implementation] of Object.entries({ chromium, webkit })) {
               }),
             });
           }
-          if (url.pathname.includes('/new-page-regression/')) {
-            if (url.pathname.endsWith('/ranked/newest/0.json'))
-              return route.fulfill({
-                contentType: 'application/json',
-                body: JSON.stringify(nextRanked),
-              });
-            const response = await route.fetch({
-              url: url.href.replace('/new-page-regression/', `/${manifest.version}/`),
-            });
-            return route.fulfill({ response });
-          }
           return route.continue();
         });
         await page.goto(base + '/new/');
         const root = page.locator('[data-new-artwork]');
         await expect(root).toHaveAttribute('data-ready', 'true');
         await expect(root.locator('.art-card')).toHaveCount(32);
-        assert.equal(
-          await root.locator('.art-card').first().getAttribute('data-id'),
-          ranked.ids[0],
-        );
+        assert.equal(await root.locator('.art-card').first().getAttribute('data-id'), first.id);
+        const initialIDs = new Set(seed.items.map((item) => item.id));
+        const firstPage = ranked.ids.slice(0, 32);
+        const extra = firstPage.filter((id) => !initialIDs.has(id));
+        const expectedIDs = [...initialIDs, ...(extra.length ? extra : ranked.ids.slice(32, 64))];
         await root.locator('[data-new-more]').click();
-        await expect(root.locator('.art-card')).toHaveCount(64);
+        await expect(root.locator('.art-card')).toHaveCount(expectedIDs.length);
         const ids = await root
           .locator('.art-card')
           .evaluateAll((cards) => cards.map((card) => card.dataset.id));
-        assert.equal(new Set(ids).size, 64);
+        assert.deepEqual(ids, expectedIDs);
         await expect(root.locator('[data-new-refresh]')).toBeEnabled();
         mode = 'updated';
         await page.clock.fastForward(30_001);
         await expect(root).toHaveAttribute('data-catalog-version', 'new-page-regression');
         await expect(root.locator('.art-card')).toHaveCount(32);
-        assert.equal(await root.locator('.art-card').first().getAttribute('data-id'), promoted);
+        assert.equal(await root.locator('.art-card').first().getAttribute('data-id'), promoted.id);
         mode = 'error';
         await root.locator('[data-new-refresh]').click();
         await expect(root.locator('[data-new-status]')).toContainText('could not be refreshed');
@@ -102,7 +104,7 @@ for (const [engine, implementation] of Object.entries({ chromium, webkit })) {
           engine,
           width,
           initial: 32,
-          expanded: 64,
+          expanded: expectedIDs.length,
           automaticRefresh: true,
           refresh: true,
           recovery: true,
