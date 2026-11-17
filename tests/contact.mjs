@@ -1,14 +1,19 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { contactFormLink, contactTopics, contactFormUrl } from '../src/lib/contact.ts';
+import {
+  contactFormLink,
+  contactTopics,
+  contactFormUrl,
+  contactEmail,
+} from '../src/lib/contact.ts';
 import { contactContentSecurityPolicy } from '../scripts/contact-security.mjs';
 test('all topic links use the real published form and a documented pre-fill field', () => {
   assert.equal(contactTopics.length, new Set(contactTopics.map((topic) => topic.id)).size);
   for (const topic of contactTopics) {
     const url = new URL(contactFormLink(topic.id, true));
     assert.equal(url.origin + url.pathname, contactFormUrl);
-    assert.equal(url.searchParams.get('entry.1751201779'), topic.value);
+    assert.equal(url.searchParams.get('entry.1081521294'), topic.value);
     assert.equal(url.searchParams.get('embedded'), 'true');
     assert.ok(topic.href.startsWith('/') && !topic.href.startsWith('//'));
   }
@@ -38,4 +43,23 @@ test('the Contact policy permits only the Google Docs frame while preserving scr
   assert.ok(!policy.includes("script-src 'unsafe-inline'"));
   assert.equal((contactContentSecurityPolicy(policy).match(/frame-src/g) || []).length, 1);
   assert.throws(() => contactContentSecurityPolicy(''), /complete base CSP/);
+});
+
+test('JotClipart contact and organization references use only the new mailbox and published form', () => {
+  assert.equal(contactEmail, 'jotclipart@gmail.com');
+  assert.equal(
+    contactFormUrl,
+    'https://docs.google.com/forms/d/e/1FAIpQLSdW7bocRNn3EEUUoQ0VorAzL_ZHQ6NH0GtlSzj8NZG8UC3IuA/viewform',
+  );
+  for (const file of [
+    'src/lib/contact.ts',
+    'src/lib/info-pages.ts',
+    'src/lib/page-seo.ts',
+    'src/pages/cookies.astro',
+    'src/pages/[info].astro',
+    'src/scripts/trust-pages.ts',
+  ]) {
+    const source = readFileSync(file, 'utf8');
+    assert(!/ultraclipart@gmail\.com/i.test(source), file);
+  }
 });
