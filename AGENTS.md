@@ -1,3 +1,20 @@
+# Current installed homepage card refinement — 2026-11-17
+
+This supersedes all historical installed-release notes below. Current LIVE
+software a30c460d2a693272175e0f703136decb864814b2, Pages
+https://8a43be69.jotclipart.pages.dev, ABI
+5473e700f1b864fa7f0c204d00573d90d811a0013d2b4b4bc9491d4e3ad6a036.
+Permanently preserve the ENTIRE independent work/jotclipart-home-card-refine-20261117
+checkout, work/jotclipart-release-a30c460d2a69 compiled inputs and the800-file
+work/jotclipart-installed-a30c/manifest.json. Never move, rebuild or clean this tree.
+Read config/content-publisher.json for actual absolute bindings. Previous C242,
+D1,1d3,FE81,11730,FB19 ENTIRE installations and KEEP copies stay protected.
+691 source checks,96 preview and96 production Chromium/WebKit UI states passed,
+including actual homepage descriptions/colors/weights and art/topic breadcrumbs.
+Native live homepage and compact art breadcrumb screenshots were inspected.
+No metadata/media/catalog/index writes; data root remains8cec421c20fd3367cc6be5b5f2d0cbdec0a5a81e95e7c075a1d6ca548df52ed4,
+49,858 artworks/804 topics/all1215 PDF repairs. Bookkeeping is not a deployment.
+
 # Latest owner card and breadcrumb refinement — 2026-11-17
 
 Homepage recent artwork cards: both subject links and artwork titles use brand
