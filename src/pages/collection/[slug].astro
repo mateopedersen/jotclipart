@@ -86,18 +86,15 @@ const visibleArtwork = [
                 return (
                   <a class="editorial-inline-link" href={contentLink(href).href} set:text={text} />
                 );
-              const [before, after] = text.split('{{artworkCount}}');
-              return (
-                <>
-                  {before}
-                  {after !== undefined && (
-                    <>
-                      <CatalogCount kind="collection-artworks" countKey={collectionSlug} />
-                      {after}
-                    </>
-                  )}
-                </>
-              );
+              return text
+                .split(/(\{\{artworkCount\}\})/g)
+                .map((part) =>
+                  part === '{{artworkCount}}' ? (
+                    <CatalogCount kind="collection-artworks" countKey={collectionSlug} />
+                  ) : (
+                    part
+                  ),
+                );
             })}
           </p>
         ))}
