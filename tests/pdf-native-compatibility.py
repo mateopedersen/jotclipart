@@ -19,7 +19,9 @@ for name,obj in before.pages[0]['/Resources']['/XObject'].items():
  if x.get('/SMask'):
   assert x['/SMask'].get_object().get_data()==y['/SMask'].get_object().get_data()
   assert hashlib.sha256(y['/SMask'].get_object().get_data()).hexdigest()==proof['originalAlphaSHA256']
- assert y['/Filter']!='/JPXDecode'
+ if y['/Filter']=='/JPXDecode':
+  color=y['/ColorSpace'];assert isinstance(color,list) and color[0]=='/ICCBased' and color[1].get_object()['/N']==3
+  assert y._data[:12]==bytes.fromhex('0000000c6a5020200d0a870a'),'Raw four-component JPX failure must never return'
 with tempfile.TemporaryDirectory(prefix='jot-pdf-regression-') as tmp:
  results={}
  for label,path in [('before',original),('after',repaired)]:

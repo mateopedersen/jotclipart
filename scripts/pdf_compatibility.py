@@ -54,14 +54,27 @@ def repair_confirmed_jpx(source, output, maximum_bytes=1_000_000, max_sample_rms
     def encode(mode,pix,profile=None):
         array=np.asarray(pix).astype(float)
         if array.ndim==2:array=array[:,:,None]
-        for quality in [None,100,99,98,97,96,95]:
+        # Native Apple readers reject the four-component CMYK JPX fixture.
+        # A fully boxed three-component RGB JP2 is separately permitted only
+        # after the source ICC conversion; never reuse a CMYK codestream as RGB.
+        encodings=[('flate',None)]+[('jpeg',q) for q in [100,99,98,97,96,95]]
+        if mode=='RGB':encodings += [('rgb-jp2',q) for q in range(60,43,-2)]
+        for codec,quality in encodings:
             if quality is None:
                 data=zlib.compress(pix.tobytes(),9);filter_name='/FlateDecode';error=0.0
-            else:
+            elif codec=='jpeg':
                 stream=io.BytesIO();pix.save(stream,format='JPEG',quality=quality,subsampling=0,optimize=True);data=stream.getvalue();filter_name='/DCTDecode'
                 decoded=np.asarray(Image.open(io.BytesIO(data))).astype(float)
                 if decoded.ndim==2:decoded=decoded[:,:,None]
                 error=float(np.sqrt((((array-decoded)**2)*weights[:,:,None]).sum()/(weights.sum()*array.shape[2])))
+            else:
+                stream=io.BytesIO();pix.save(stream,format='JPEG2000',irreversible=True,quality_mode='dB',quality_layers=[quality],no_jp2=False,mct=1)
+                data=stream.getvalue();filter_name='/JPXDecode'
+                if data[:12]!=bytes.fromhex('0000000c6a5020200d0a870a'):raise ValueError('Full standard JP2 signature required')
+                decodedImage=Image.open(io.BytesIO(data));decodedImage.load()
+                if decodedImage.mode!='RGB' or decodedImage.size!=pix.size:raise ValueError('RGB JP2 component layout differs')
+                decoded=np.asarray(decodedImage).astype(float)
+                error=float(np.sqrt((((array-decoded)**2)*weights[:,:,None]).sum()/(weights.sum()*3)))
             if error>max_sample_rmse:continue
             writer=PdfWriter();writer.clone_document_from_reader(PdfReader(io.BytesIO(original)))
             target=writer.pages[0]['/Resources']['/XObject'][name].get_object();target._data=data;target[NameObject('/Filter')]=NameObject(filter_name)
@@ -75,8 +88,8 @@ def repair_confirmed_jpx(source, output, maximum_bytes=1_000_000, max_sample_rms
             writer.add_metadata({'/Producer':'JotClipart verified PDF compatibility repair (pypdf)','/ModDate':datetime.now(timezone.utc).strftime('D:%Y%m%d%H%M%SZ')})
             writer.compress_identical_objects(remove_duplicates=True,remove_unreferenced=True)
             buffer=io.BytesIO();writer.write(buffer);body=buffer.getvalue()
-            candidates.append({'mode':mode,'quality':quality,'filter':filter_name,'bytes':len(body),'sampleRMSE':error})
-            if len(body)<=maximum_bytes:return body,{'mode':mode,'quality':quality,'filter':filter_name,'sampleRMSE':error}
+            candidates.append({'mode':mode,'codec':codec,'quality':quality,'filter':filter_name,'bytes':len(body),'sampleRMSE':error})
+            if len(body)<=maximum_bytes:return body,{'mode':mode,'codec':codec,'quality':quality,'filter':filter_name,'sampleRMSE':error}
         return None
     result=encode(pixels.mode,pixels)
     if not result and pixels.mode=='CMYK':
