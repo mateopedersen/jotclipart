@@ -5,6 +5,12 @@ on:
     branches: [main, 'migration/**']
   pull_request:
   workflow_dispatch:
+    inputs:
+      preview_origin:
+        description: Owned JotClipart preview origin with the exact source revision
+        required: false
+        type: string
+        default: https://preview.jotclipart.com
 
 permissions:
   contents: read
@@ -16,8 +22,8 @@ concurrency:
 env:
   ASTRO_TELEMETRY_DISABLED: '1'
   PLAYWRIGHT_SKIP_BROWSER_GC: '1'
-  # This candidate branch tests its own immutable software without replacing the shared preview.
-  BASE_URL: https://ci-native-20261117-f978.jotclipart.pages.dev
+  # Browser runners reject foreign origins before requests and pin the exact source and root.
+  BASE_URL: ${{ inputs.preview_origin || 'https://preview.jotclipart.com' }}
   EXPECT_REVISION: ${{ github.event.pull_request.head.sha || github.sha }}
 
 jobs:

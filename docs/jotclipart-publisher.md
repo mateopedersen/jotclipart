@@ -40,6 +40,17 @@ This creates a real network clone of `mateopedersen/jotclipart`, installs the fr
 
 `JOTCLIPART_BUILD_ROOT` selects a relative, separate descendant of this checkout's `work/` directory for both build and deployment. It rejects traversal, aliases and existing symlink/non-directory components. The default remains `work/jotclipart-build`; a verified installed release needs its own stable directory.
 
+For concurrent release preparation, the preview publisher accepts an explicit
+`--preview-branch=ci-LABEL` on preview deployments only. The native workflow's
+optional `preview_origin` dispatch input can select that owned preview without
+replacing the shared preview. Normal push and pull-request runs still use
+`https://preview.jotclipart.com`. Both browser runners reject foreign origins
+before any request and require the exact source revision and signed catalog root.
+Every source, package, Python and all twelve browser matrix checks remain required.
+The exact owned preview must also have GET/HEAD media access in the bucket's CORS
+policy; verify actual media response headers before dispatching the browser run.
+Never overwrite a preview while a workflow pinned to its prior source is running.
+
 The two large historical JSON sources have generated, source-SHA-bound structural declarations so the unchanged strict Astro checker does not build a multi-gigabyte literal type graph. Runtime imports still read the original JSON. The mandatory source gate regenerates and compares every declaration byte from the complete actual sources, in addition to the existing editorial, source-identity and hash checks. When an approved source edit changes `data/art.json` or `data/editorial/reviews.json`, regenerate the declarations with `node scripts/jotclipart/catalog-json-types.mjs --write` and rerun the complete gate. Do not replace this with an `any` declaration, ignore a stale declaration, or reduce the Astro/TypeScript source scope.
 
 ## Preserve the exact installed publisher
