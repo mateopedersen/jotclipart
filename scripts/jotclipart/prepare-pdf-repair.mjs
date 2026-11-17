@@ -1,6 +1,13 @@
 // Prepare only a committed source-bound normal content packet; no cloud writes.
 import assert from 'node:assert/strict';
-import { readFileSync, writeFileSync, mkdirSync, copyFileSync, existsSync } from 'node:fs';
+import {
+  readFileSync,
+  writeFileSync,
+  mkdirSync,
+  copyFileSync,
+  existsSync,
+  constants,
+} from 'node:fs';
 import { resolve, join, basename } from 'node:path';
 import { gunzipSync } from 'node:zlib';
 import { createHash } from 'node:crypto';
@@ -15,12 +22,13 @@ import {
   validateEditorialReview,
 } from '../artwork-editorial.mjs';
 import { createReviewedDeltaValidators } from '../catalog-snapshot/validate-delta-source.mjs';
+import { verifySourceFile } from '../catalog-snapshot/source-files.mjs';
 import {
   incomingManifestSHA256,
   incomingMediaFiles,
 } from '../catalog-snapshot/incoming-media-plan.mjs';
 
-const [id, repairPDFArg, repairReceiptArg, outputArg] = process.argv.slice(2);
+const [id, repairPDFArg, repairReceiptArg, outputArg, sourceImageArg] = process.argv.slice(2);
 assert(
   id && repairPDFArg && repairReceiptArg && outputArg,
   'id verified-repair.pdf verified-repair.json new-work-directory',
@@ -129,8 +137,11 @@ for (const kind of ['webp', 'pdf', 'thumb']) {
     'https://assets.ultraclipart.com/',
     'https://assets.jotclipart.com/',
   );
-  if (kind === 'pdf') copyFileSync(repairPDFArg, native);
-  else {
+  if (kind === 'pdf') copyFileSync(repairPDFArg, native, constants.COPYFILE_FICLONE);
+  else if (kind === 'webp' && sourceImageArg) {
+    await verifySourceFile({ path: resolve(sourceImageArg), ...facts });
+    copyFileSync(sourceImageArg, native, constants.COPYFILE_FICLONE);
+  } else {
     const response = await fetch(url, {
       headers: { Origin: config.publicOrigin },
       redirect: 'error',
@@ -168,9 +179,26 @@ review.technicalRepair = {
   repairReceiptSHA256: sha(readFileSync(repairReceiptArg)),
 };
 validateEditorialReview(raw, review);
+if (oldRow.pairReceipt?.imageSHA256 !== raw.files.webp.sha256) {
+  const pair = receipt.imagePair;
+  assert.equal(
+    pair?.status,
+    'NUMERICAL_COMPOSITION_MATCH',
+    'New exact image/PDF pixel evidence required',
+  );
+  assert.equal(pair.imageSHA256, raw.files.webp.sha256);
+  assert.equal(pair.pdfSHA256, receipt.sha256);
+  assert(
+    pair.aspectRelativeError <= 0.01 &&
+      pair.normalizedRGBRMSE <= 30 &&
+      pair.normalizedRGBMeanAbsoluteError <= 20 &&
+      pair.luminanceCorrelation >= 0.92,
+  );
+}
 const pairReceipt = {
   ...structuredClone(oldRow.pairReceipt),
   status: 'REPAIRED_AND_MATCHED_SOURCE_PIXELS',
+  imageSHA256: raw.files.webp.sha256,
   pdfSHA256: receipt.sha256,
   sourceOriginalPDFSHA256: receipt.sourceSHA256,
   technicalCompatibilityReceipt: receipt,
@@ -184,7 +212,9 @@ const artworkRow = {
   review,
   pairReceipt,
 };
-const sourceTopic = structuredClone(historical.capsule.topicRows.find((r) => r.slug === topic));
+const latestTopicsBytes = gunzipSync(readFileSync(join(material, manifest.topicRows.file)));
+assert.equal(sha(latestTopicsBytes), manifest.topicRows.sha256);
+const sourceTopic = structuredClone(JSON.parse(latestTopicsBytes).find((r) => r.slug === topic));
 assert(sourceTopic);
 sourceTopic.rawItems = sourceTopic.rawItems.map((a) => (a.id === id ? raw : a));
 sourceTopic.resolvedItems = await Promise.all(

@@ -1,7 +1,7 @@
 import { displayTitle, displayCatalogTitle } from '../../src/lib/display-title.ts';
 import { brand, publicBrandURL } from '../../src/lib/brand.mjs';
 import { createHash } from 'node:crypto';
-import { writeFileSync } from 'node:fs';
+import { writeFileSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import assert from 'node:assert/strict';
 import { verifyIncomingMedia, catalogPublicOrigin } from './batch-media.mjs';
@@ -16,6 +16,41 @@ const clean = (s) =>
           : { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'" }[k.toLowerCase()],
     )
     .trim();
+export function verifiedLiveArtworkRedirects(directory, packet, sealed) {
+  const hash = (b) => createHash('sha256').update(b).digest('hex');
+  const graphBytes = readFileSync(join(directory, 'graph-verified-receipt.json'));
+  assert.equal(
+    hash(graphBytes),
+    sealed.snapshot.authorization.graphReceiptSHA256,
+    'Signed source graph receipt changed',
+  );
+  const graph = JSON.parse(graphBytes),
+    nativeBytes = readFileSync(join(directory, 'native-integration-report.json'));
+  assert.equal(
+    hash(nativeBytes),
+    graph.nativeIntegrationSHA256,
+    'Authenticated native route proof changed',
+  );
+  const native = JSON.parse(nativeBytes),
+    packetBytes = readFileSync(join(directory, 'packet.json'));
+  assert.deepEqual(JSON.parse(packetBytes), packet);
+  assert.equal(native.packetSHA256, hash(packetBytes));
+  assert.equal(native.revision, sealed.snapshot.revision);
+  assert.equal(native.softwareABI, sealed.snapshot.authorization.abiSHA256);
+  assert.equal(native.productionWrites, 0);
+  const aliases = new Map();
+  for (const row of native.routes.filter(
+    (r) => r.source === 'changed-artwork-stable-id-redirect',
+  )) {
+    assert.equal(row.status, 301);
+    assert(!aliases.has(row.path));
+    const url = new URL(row.expectedLocation);
+    assert.equal(url.origin, brand.origin);
+    assert(!url.search && !url.hash && /^\/art\/[a-z0-9][a-z0-9-]*\/$/.test(url.pathname));
+    aliases.set(row.path, row.expectedLocation);
+  }
+  return aliases;
+}
 export async function verifyContentLive({
   directory,
   packet,
@@ -53,6 +88,7 @@ export async function verifyContentLive({
     .flatMap((c) =>
       ['art', 'edit'].map((kind) => ({
         path: `/${kind}/${c.id}/`,
+        kind,
         art: c.record,
         removed: c.record === null,
       })),
@@ -66,16 +102,36 @@ export async function verifyContentLive({
       })),
     );
   let cursor = 0;
+  let redirects;
   await Promise.all(
     Array.from({ length: 8 }, async () => {
       while (cursor < targets.length) {
-        const t = targets[cursor++],
-          { r, text } = await get(t.path);
-        assert.equal(r.status, t.removed ? 404 : 200, t.path);
+        const t = targets[cursor++];
+        let path = t.path,
+          { r, text } = await get(path);
+        if (!t.removed && t.kind === 'art' && r.status === 301) {
+          redirects ??= verifiedLiveArtworkRedirects(directory, packet, sealed);
+          const expected = redirects.get(path);
+          assert(expected, 'Authenticated canonical target required for ' + path);
+          assert.equal(
+            r.headers.get('location'),
+            expected,
+            'Live stable ID redirected to an unexpected artwork',
+          );
+          rows.push({
+            path,
+            status: 301,
+            expectedLocation: expected,
+            source: 'authenticated-stable-id-redirect',
+          });
+          path = new URL(expected).pathname;
+          ({ r, text } = await get(path));
+        }
+        assert.equal(r.status, t.removed ? 404 : 200, path);
         if (!t.removed) {
           assert.equal(r.headers.get('x-uc-snapshot'), root, t.path);
           assert(text.includes('name="build-revision" content="' + revision + '"'));
-          assert(text.includes(brand.origin + t.path));
+          assert(text.includes(brand.origin + path));
           if (t.art) {
             const title = t.path.startsWith('/art/') ? displayCatalogTitle : displayTitle;
             assert.equal(
@@ -102,7 +158,7 @@ export async function verifyContentLive({
           }
         }
         rows.push({
-          path: t.path,
+          path,
           status: r.status,
           sha256: createHash('sha256').update(text).digest('hex'),
         });

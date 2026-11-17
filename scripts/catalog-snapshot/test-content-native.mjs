@@ -11,6 +11,7 @@ import { readFileSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import { createHash } from 'node:crypto';
 import assert from 'node:assert/strict';
+import { installedSourceRoot, installedSourcePath } from './installed-source-paths.mjs';
 import { openSnapshot } from '../../server/catalog-snapshot/snapshot-context.mjs';
 import { publicRouteForId } from '../../server/catalog-snapshot/public-artwork-routes.mjs';
 import { openSevenFacetCollectionContext } from '../../server/catalog-snapshot/collection-context.mjs';
@@ -113,14 +114,18 @@ async function verifyNativeContentWithSource({
   assert.equal(sha(readFileSync(join(software, 'runtime/worker.mjs'))), report.workerSHA256);
   for (const [file, hash] of Object.entries(report.sourceInputs))
     if (!['trusted-public-config', 'http-policy'].includes(file))
-      assert.equal(sha(readFileSync(file)), hash, 'Installed renderer source changed: ' + file);
+      assert.equal(
+        sha(readFileSync(installedSourcePath(software, file))),
+        hash,
+        'Installed renderer source changed: ' + file,
+      );
   const captureSource = nativeCandidateCaptureSource(candidate, report, {
     activeKey: projected ? 'catalog/jotclipart/active.json' : 'catalog/active.json',
   });
   const code = await build({
       stdin: {
-        resolveDir: process.cwd(),
-        contents: `import{openSnapshot}from'./server/catalog-snapshot/snapshot-context.mjs';import{captureProductionSnapshot}from'./server/catalog-snapshot/signed-production-snapshot.mjs';import{requestBucket}from'./server/catalog-snapshot/request-bucket.mjs';import{immutableMetadataCache}from'./server/catalog-snapshot/immutable-cache.mjs';import{createCatalogHandler}from'./server/catalog-snapshot/handler.mjs';import{validateInlineScripts}from'./server/catalog-snapshot/response-policy.mjs';import{renderers}from${JSON.stringify(resolve(software, 'runtime/renderers-entry.mjs'))};const snapshot=${JSON.stringify(candidate)},bucket={async get(key){const r=await fetch('https://catalog-private.invalid/'+encodeURIComponent(key));if(r.status===404)return null;if(!r.ok)throw Error('Private metadata service failed');const bytes=await r.arrayBuffer();return{size:bytes.byteLength,arrayBuffer:async()=>bytes,json:async()=>JSON.parse(new TextDecoder().decode(bytes))}}};const metadata=immutableMetadataCache();${captureSource};export default{async fetch(request){const scoped=requestBucket({get:key=>metadata.get(bucket,key)}),handler=createCatalogHandler({bucket:scoped,capture:()=>captureNativeCandidate(scoped),allowPrivateFixture:true,softwareRevision:${JSON.stringify(report.revision)},renderers,cache:caches.default,rendererSHA256:${JSON.stringify(report.abiSHA256)},validateHTML:html=>validateInlineScripts(html,${JSON.stringify(report.policy.inlineSHA256)})});return await handler(request)??new Response('Retained software fallback',{status:418})}}`,
+        resolveDir: installedSourceRoot(software),
+        contents: `import{openSnapshot}from'./server/catalog-snapshot/snapshot-context.mjs';import{captureProductionSnapshot}from'./server/catalog-snapshot/signed-production-snapshot.mjs';import{requestBucket}from'./server/catalog-snapshot/request-bucket.mjs';import{immutableMetadataCache}from'./server/catalog-snapshot/immutable-cache.mjs';import{createCatalogHandler}from'./server/catalog-snapshot/handler.mjs';import{validateInlineScripts}from'./server/catalog-snapshot/response-policy.mjs';import{presentationResponse}from'./server/catalog-snapshot/brand-presentation.mjs';import{renderers}from${JSON.stringify(resolve(software, 'runtime/renderers-entry.mjs'))};const snapshot=${JSON.stringify(candidate)},bucket={async get(key){const r=await fetch('https://catalog-private.invalid/'+encodeURIComponent(key));if(r.status===404)return null;if(!r.ok)throw Error('Private metadata service failed');const bytes=await r.arrayBuffer();return{size:bytes.byteLength,arrayBuffer:async()=>bytes,json:async()=>JSON.parse(new TextDecoder().decode(bytes))}}};const metadata=immutableMetadataCache();${captureSource};export default{async fetch(request){const scoped=requestBucket({get:key=>metadata.get(bucket,key)}),handler=createCatalogHandler({bucket:scoped,capture:()=>captureNativeCandidate(scoped),allowPrivateFixture:true,softwareRevision:${JSON.stringify(report.revision)},renderers,cache:caches.default,rendererSHA256:${JSON.stringify(report.abiSHA256)},validateHTML:html=>validateInlineScripts(html,${JSON.stringify(report.policy.inlineSHA256)})});const response=await handler(request);return response?${projected ? 'await presentationResponse(response)' : 'response'}:new Response('Retained software fallback',{status:418})}}`,
       },
       write: false,
       bundle: true,
