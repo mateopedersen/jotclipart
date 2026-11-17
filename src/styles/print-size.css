@@ -88,7 +88,7 @@
 }
 .print-tool .print-section-head p {
   font-size: 14px;
-  color: var(--print-muted);
+  color: var(--brand-ink);
   margin: 0;
 }
 .print-tool fieldset {
