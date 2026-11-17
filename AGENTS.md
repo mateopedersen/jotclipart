@@ -1,3 +1,28 @@
+# Latest owner URL policy — 2026-11-17
+
+The owner explicitly says to fix bad addresses WITHOUT redirects. For the finite
+5,423 ordinal plan use legacyPolicy:retire-without-redirect. New accepted-title
+canonicals return200; affected old aliases return404 with no Location header.
+Retain their reserved path identities internally, all editor IDs, records and media.
+Do not extend retirement to unrelated healthy aliases or meaningful number topics.
+This overrides earlier redirect wording below. The plan and graph remain subject
+to normal source replay, native/public checks, signing and guarded activation.
+
+# Final owner URL and smoke audit — 2026-11-17
+
+The owner requests a complete public URL inventory and deep final live smoke test.
+All49,858 art and804 topic sitemap URLs were enumerated, with no malformed or
+repeated canonicals and exact coverage of the signed migration map. Numeric topics
+are genuine number artwork or named subjects (007 etc.), not arbitrary serials.
+The existing source-bound ordinal classifier found5,423 remaining package/version
+canonicals, with no reserved-path collisions. The updated finite ordinal plan uses
+only unchanged accepted titles and source checksums; no new visual/identity review
+or metadata rewrite is claimed. Publish only through the normal URL repair
+prepare/replay/readback/sign/CAS/finalize lifecycle with the current installed2146
+runtime. All old routes remain reserved direct redirects. Preserve originals,
+accepted IDs/reviews, topics, live features and installed recovery copies.
+Do not assume this plan is live merely because it was prepared.
+
 # Current installed homepage loading and black subject release — 2026-11-17
 
 This supersedes all historical installed-release notes below. Current LIVE

@@ -122,13 +122,13 @@
       "bytes": 40416
     },
     "/contact/": {
-      "src": "/og/contact-2c22e0f9641a.png",
+      "src": "/og/contact-469f29fdc01f.png",
       "alt": "Contact JotClipart with an illustrated envelope for questions and feedback.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "2c22e0f9641aeec937e6598a16709edc5bc6f2fecbae3aef120f1bf9f4189fe1",
-      "bytes": 28008
+      "sha256": "469f29fdc01f6a375604cc2beb80074d649c8ba7ff80c789857d1961458025fe",
+      "bytes": 29005
     },
     "/faq/": {
       "src": "/og/faq-3f59b8cdc4c6.png",
@@ -203,13 +203,13 @@
       "bytes": 22908
     },
     "/copyright/": {
-      "src": "/og/copyright-289138101a15.png",
+      "src": "/og/copyright-9d083a4ffae4.png",
       "alt": "Copyright and corrections with a copyright symbol, document and artwork reference.",
       "width": 1200,
       "height": 630,
       "type": "image/png",
-      "sha256": "289138101a15d42c618174dc9b9e3b924f3616c8b063c77536b0f2a761d05df8",
-      "bytes": 29712
+      "sha256": "9d083a4ffae4245782debd0f0847787acd64722ee2a51cb1dd02b4b7a2f1f104",
+      "bytes": 30143
     },
     "/accessibility/": {
       "src": "/og/accessibility-f5a6fd095a9b.png",

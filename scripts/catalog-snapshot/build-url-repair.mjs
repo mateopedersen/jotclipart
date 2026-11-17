@@ -35,16 +35,31 @@ export function missedLegacyRoute({ id, oldSlug, topic, historicalTopicPrefix })
 // Owner scope expanded on 10 November: remove package ordinals even when scene words remain.
 // The same numeric token in accepted subject copy is meaningful and stays stable.
 export function artificialOrdinalRoute({ id, oldSlug, topic, title }) {
-  if (oldSlug !== id || !SLUG.test(id ?? '') || !SLUG.test(topic ?? '') || typeof title !== 'string') return null;
+  if (
+    oldSlug !== id ||
+    !SLUG.test(id ?? '') ||
+    !SLUG.test(topic ?? '') ||
+    typeof title !== 'string'
+  )
+    return null;
   const escaped = topic.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const before = new RegExp('^' + escaped + '-(?:(?:clipart|typography)-)?(\\d{2,4})-.+').exec(oldSlug);
+  const before = new RegExp('^' + escaped + '-(?:(?:clipart|typography)-)?(\\d{2,4})-.+').exec(
+    oldSlug,
+  );
   const after = new RegExp('^' + escaped + '-.+-(\\d{2,4})$').exec(oldSlug);
   const padded = /(?:^|-)(0\d{1,3})(?=-|$)/.exec(oldSlug);
   const tagged = /(?:^|-)(?:clipart|artwork)-(\d{2,4})-/.exec(oldSlug);
   const version = /-v([2-9]\d*)$/.exec(oldSlug);
   const tokens = [...(title.match(/\d+/g) ?? []), ...(topic.match(/\d+/g) ?? [])];
-  for (const [match, ordinalKind] of [[before, 'package-ordinal-before-scene'], [after, 'package-ordinal-after-scene'], [padded, 'zero-padded-package-ordinal'], [tagged, 'tagged-package-ordinal'], [version, 'source-file-version-suffix']]) {
-    if (match && !tokens.some(n => Number(n) === Number(match[1]))) return {ordinal:match[1], ordinalKind};
+  for (const [match, ordinalKind] of [
+    [before, 'package-ordinal-before-scene'],
+    [after, 'package-ordinal-after-scene'],
+    [padded, 'zero-padded-package-ordinal'],
+    [tagged, 'tagged-package-ordinal'],
+    [version, 'source-file-version-suffix'],
+  ]) {
+    if (match && !tokens.some((n) => Number(n) === Number(match[1])))
+      return { ordinal: match[1], ordinalKind };
   }
   return null;
 }
@@ -60,10 +75,27 @@ export async function buildURLRepair({
   assert.match(revision ?? '', /^[a-f0-9]{40}$/);
   assert.notEqual(revision, parentContext.snapshot.revision);
   assert.equal(plan.schema, 1);
-  assert(['OWNER_AUTHORIZED_READABLE_ARTWORK_URL_REPAIR', 'OWNER_AUTHORIZED_ARTWORK_ORDINAL_URL_REPAIR'].includes(plan.kind));
+  assert(
+    [
+      'OWNER_AUTHORIZED_READABLE_ARTWORK_URL_REPAIR',
+      'OWNER_AUTHORIZED_ARTWORK_ORDINAL_URL_REPAIR',
+    ].includes(plan.kind),
+  );
   const ordinalRepair = plan.kind === 'OWNER_AUTHORIZED_ARTWORK_ORDINAL_URL_REPAIR';
+  assert([undefined, 'redirect', 'retire-without-redirect'].includes(plan.legacyPolicy));
+  const retire = plan.legacyPolicy === 'retire-without-redirect';
+  const activeValue = (value) => {
+    const { retired, ...active } = value;
+    assert(retired === undefined || retired === true);
+    return active;
+  };
+
   assert.equal(plan.parentRoot, parentContext.rootSHA256);
-  assert(Array.isArray(plan.changes) && plan.changes.length > 0 && plan.changes.length <= (ordinalRepair ? 8000 : 500));
+  assert(
+    Array.isArray(plan.changes) &&
+      plan.changes.length > 0 &&
+      plan.changes.length <= (ordinalRepair ? 8000 : 500),
+  );
   const overlay = createDeltaStore(parentBucket, parentContext, {
     maxObjects: 20000,
     maxBytes: 384 * 1024 * 1024,
@@ -85,9 +117,11 @@ export async function buildURLRepair({
   const rows = new Map();
   async function parallel(values, inspect) {
     let next = 0;
-    await Promise.all(Array.from({ length: Math.min(8, values.length) }, async () => {
-      while (next < values.length) await inspect(values[next++]);
-    }));
+    await Promise.all(
+      Array.from({ length: Math.min(8, values.length) }, async () => {
+        while (next < values.length) await inspect(values[next++]);
+      }),
+    );
   }
   async function visit(d, prefix) {
     const leaf = await base.read('artworks', d);
@@ -134,11 +168,12 @@ export async function buildURLRepair({
   assert.equal(routes.artworks, rows.size);
   for await (const { key, value } of mapEntries(store, routes.byPath, 'public-artwork-paths')) {
     assert(SLUG.test(key));
-    assert.deepEqual(value, ids.get(value.id));
+    assert.deepEqual(activeValue(value), ids.get(value.id));
+    if (value.retired) assert.notEqual(key, value.slug, 'Canonical route cannot be retired');
     paths.set(key, value);
   }
   for (const [id, value] of ids) {
-    assert.deepEqual(paths.get(id), value);
+    assert.deepEqual(activeValue(paths.get(id)), value);
     assert.deepEqual(paths.get(value.slug), value);
   }
   const changed = new Map(),
@@ -157,7 +192,11 @@ export async function buildURLRepair({
       assert(ordinal, 'Only source-bound artificial package ordinals');
       assert.equal(change.ordinalKind, ordinal.ordinalKind);
       assert.equal(change.ordinal, ordinal.ordinal);
-    } else assert(missedLegacyRoute(change), 'Only explicitly reviewed bare historical topic/serial URLs');
+    } else
+      assert(
+        missedLegacyRoute(change),
+        'Only explicitly reviewed bare historical topic/serial URLs',
+      );
     assert.equal(ids.get(change.id).slug, change.oldSlug, 'Stale canonical route');
     assert.equal(change.slug, readableArtworkSlug(row.title), 'Use accepted source title only');
     assert(!/^\d+(?:-\d+)*$/.test(change.slug), 'New route cannot be numeric only');
@@ -172,8 +211,12 @@ export async function buildURLRepair({
   }
   // Repoint every existing alias directly to the new canonical address, preserving reservations.
   for (const [path, value] of paths)
-    if (changed.has(value.id))
-      pathChanges.set(path, { id: value.id, slug: changed.get(value.id).slug });
+    if (changed.has(value.id) && path !== changed.get(value.id).slug)
+      pathChanges.set(path, {
+        id: value.id,
+        slug: changed.get(value.id).slug,
+        ...(retire ? { retired: true } : {}),
+      });
   async function stage(facet, value) {
     const body = Buffer.from(JSON.stringify(canonical({ schema: 1, ...value }))),
       sha256 = sha(body);
@@ -194,7 +237,16 @@ export async function buildURLRepair({
     assert(!/^\d+(?:-\d+)*$/.test(value.slug), 'Numeric-only canonical remains');
     assert(!/-20\d{6}-\d{2,4}$/.test(value.slug), 'Machine date/serial canonical remains');
     const row = rows.get(key);
-    if (ordinalRepair) assert(!artificialOrdinalRoute({id:key,oldSlug:value.slug,topic:row.topic,title:row.title}), 'Artificial package ordinal remains');
+    if (ordinalRepair)
+      assert(
+        !artificialOrdinalRoute({
+          id: key,
+          oldSlug: value.slug,
+          topic: row.topic,
+          title: row.title,
+        }),
+        'Artificial package ordinal remains',
+      );
     assert(
       !missedLegacyRoute({
         id: key,
@@ -360,7 +412,9 @@ export async function buildURLRepair({
   progress({
     phase: 'missed-legacy-routes-repaired',
     artworks: rows.size,
-    redirects: changed.size,
+    redirects: retire ? 0 : changed.size,
+    changedCanonicalRoutes: changed.size,
+    retiredRoutes: retire ? [...pathChanges.values()].filter((v) => v.retired).length : 0,
     preservedIDs,
     preservedPaths,
     sitemaps: documents.length,
@@ -373,7 +427,9 @@ export async function buildURLRepair({
     kind: 'OWNER_AUTHORIZED_PUBLIC_URL_AND_SITEMAP_REPAIR',
     parentRevision: base.snapshot.revision,
     revision,
-    redirects: changed.size,
+    redirects: retire ? 0 : changed.size,
+    changedCanonicalRoutes: changed.size,
+    retiredRoutes: retire ? [...pathChanges.values()].filter((v) => v.retired).length : 0,
     canonicalArtworkRecordsChanged: 0,
     canonicalArtworkDirectoriesUnchanged: same(
       art.directories,

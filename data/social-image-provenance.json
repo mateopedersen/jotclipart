@@ -21,7 +21,7 @@
   "pages": {
     "home": {
       "route": "/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "06ca5b2131ee1f9162cb755fe07d024227f036e27a893c735fab131f9ad6b089",
       "sources": [
         {
@@ -158,7 +158,7 @@
     },
     "studio": {
       "route": "/create/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "5300d5ab2d09fd9353e82333fd0622230f26110f3d6ed49184046ac2495cdf2a",
       "sources": [
         {
@@ -239,7 +239,7 @@
     },
     "ai-builder": {
       "route": "/ai-clipart-generator/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "d16401ef1ea94b51fa136a3f48d3bba9290bee89c12a55f14c5680896dca35c9",
       "sources": [
         {
@@ -320,7 +320,7 @@
     },
     "categories": {
       "route": "/categories/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "34de4f8dee10bf45532a975678cca2f343c896e911933802fb87c00424f29376",
       "sources": [
         {
@@ -445,7 +445,7 @@
     },
     "collections": {
       "route": "/collections/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "a0ed8f6f584489d2ae7466bb7120f6c2c933555cb876194a84ce128e8f0f71a7",
       "sources": [
         {
@@ -534,7 +534,7 @@
     },
     "black-and-white": {
       "route": "/black-and-white/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "ab8fd6f3f17cb1c1fd7a8740fd17fb6f3aac296e76003907c91ca365dd09a5e0",
       "sources": [
         {
@@ -607,7 +607,7 @@
     },
     "teachers": {
       "route": "/for-teachers/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "39bac927ec41b8fdfdae2ecb19df3cf49ff2a2143f3fbdfa4719f48db3e94cd0",
       "sources": [
         {
@@ -708,7 +708,7 @@
     },
     "guides": {
       "route": "/guides/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "e639af96faf1aa28639afbfafd9cb9e36f352851b3fc62cd0cd4fdeb39f0730b",
       "sources": [
         {
@@ -789,7 +789,7 @@
     },
     "print-size": {
       "route": "/print-size/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "8b5bf244333a5feb6dbce274b0574aa6a8c4d45a4827a6e2972a928d102e0aa3",
       "sources": [
         {
@@ -870,7 +870,7 @@
     },
     "about": {
       "route": "/about/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "07438246371ee9c1ed88dc98ab5a9d9ac8f5de130ccdd2380504418ddc049759",
       "sources": [
         {
@@ -963,7 +963,7 @@
     },
     "new": {
       "route": "/new/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "6a9a37cfa583128a869806563a3502494cfa77fd5345639b10c2255285aff603",
       "sources": [
         {
@@ -1040,7 +1040,7 @@
     },
     "favorites": {
       "route": "/favorites/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "bbac5877afed7e4bb911cf43d39f0b6f6b20367c4d2c8c476e9ee7f017c60447",
       "sources": [
         {
@@ -1137,7 +1137,7 @@
     },
     "search": {
       "route": "/search/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "d97e5ed8084ad11b2b4fa11ce74c8ed486fc975293460f0ea7a79b028614d801",
       "sources": [
         {
@@ -1214,16 +1214,16 @@
     },
     "contact": {
       "route": "/contact/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
-      "outputSha256": "2c22e0f9641aeec937e6598a16709edc5bc6f2fecbae3aef120f1bf9f4189fe1",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
+      "outputSha256": "469f29fdc01f6a375604cc2beb80074d649c8ba7ff80c789857d1961458025fe",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
           "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
         },
         {
-          "path": "public/illustrations/actions/contact.svg",
-          "sha256": "f0ace1df3b385665987c9ac1a6591a893b79f484d1ee3229d58f7d8d3cf1a2c3"
+          "path": "public/illustrations/actions/contact-jot-green-v1.svg",
+          "sha256": "15b236e2259e4f0fbdc0eecad7dcd12ea42b7a307a1fbe648fea081d7632a34f"
         }
       ],
       "text": [
@@ -1295,7 +1295,7 @@
     },
     "faq": {
       "route": "/faq/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "3f59b8cdc4c657cf0f5ab36dbfc461ef7dfc46d3f6c7366a0e46f9d4a8662c5b",
       "sources": [
         {
@@ -1392,7 +1392,7 @@
     },
     "classroom-label": {
       "route": "/guides/make-a-classroom-label/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "b81a7c13da4074971e5a9593bb6e18f7fd97ba2e90b3e73a6ac7e657d9481a9e",
       "sources": [
         {
@@ -1477,7 +1477,7 @@
     },
     "coloring-activity": {
       "route": "/guides/turn-clipart-into-a-coloring-activity/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "998eda160a2e21a40e7a0a03ec37f556e8bdbf1a379384ddd96811747e6bd726",
       "sources": [
         {
@@ -1550,7 +1550,7 @@
     },
     "download-formats": {
       "route": "/guides/webp-pdf-and-editable-projects/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "a18641582efff361f0bec66ef6db6fdf705407d0c9107cc25e9921c38b236442",
       "sources": [
         {
@@ -1663,7 +1663,7 @@
     },
     "license": {
       "route": "/license/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "ebc9bef61edf00735b981fd200ea77eb1fd1761361c3fac4b8d38b902a54a5e1",
       "sources": [
         {
@@ -1744,7 +1744,7 @@
     },
     "privacy": {
       "route": "/privacy/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "e7e0515b0f994904e3ad8a027f968ed204557300715b6c14adf9e5625affb888",
       "sources": [
         {
@@ -1821,7 +1821,7 @@
     },
     "cookies": {
       "route": "/cookies/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "e2c416361f699393b827122f5d9d3361c9b189004cc542e44b7efb796ab24544",
       "sources": [
         {
@@ -1894,7 +1894,7 @@
     },
     "terms": {
       "route": "/terms/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "024dc990049c9534ab6dc7e4a1d3c9f45c5ccc68b52e93d0e165697a67e09404",
       "sources": [
         {
@@ -1975,16 +1975,16 @@
     },
     "copyright": {
       "route": "/copyright/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
-      "outputSha256": "289138101a15d42c618174dc9b9e3b924f3616c8b063c77536b0f2a761d05df8",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
+      "outputSha256": "9d083a4ffae4245782debd0f0847787acd64722ee2a51cb1dd02b4b7a2f1f104",
       "sources": [
         {
           "path": "public/brand/jotclipart-logo-3d.webp",
           "sha256": "69d06e13609c6a23e0338c9a7761a7291a0d3fc4fed60151aaa9ff7824d2c530"
         },
         {
-          "path": "public/illustrations/actions/contact.svg",
-          "sha256": "f0ace1df3b385665987c9ac1a6591a893b79f484d1ee3229d58f7d8d3cf1a2c3"
+          "path": "public/illustrations/actions/contact-jot-green-v1.svg",
+          "sha256": "15b236e2259e4f0fbdc0eecad7dcd12ea42b7a307a1fbe648fea081d7632a34f"
         },
         {
           "path": "public/illustrations/actions/document.svg",
@@ -2052,7 +2052,7 @@
     },
     "accessibility": {
       "route": "/accessibility/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "f5a6fd095a9bbfd87f58b1b9d116230416ae375c1ba0a3fe2a172d9ee20dc27f",
       "sources": [
         {
@@ -2121,7 +2121,7 @@
     },
     "creative-process": {
       "route": "/editorial-process/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "c738055272b894ceba78740100a1f81ba3da492870a802d8a0b8b86bbf9f1bb4",
       "sources": [
         {
@@ -2210,7 +2210,7 @@
     },
     "not-found": {
       "route": "/404/",
-      "rendererSha": "22afc83c4f541f5b35076f428de222b148fd2fefaf8d4e299d36fe2b3094bc0c",
+      "rendererSha": "3813f5a239e319b21b30bc01c66d2dd6780dc1f5b32b7dd42353aca8f9f4da02",
       "outputSha256": "82112cfdf9409eea1957271872e1a4bfead3ba5db9397c361656060ba378797d",
       "sources": [
         {

@@ -132,10 +132,26 @@ async function pinPreview() {
       families.pages.size >= baselinePin.otherPages,
   );
   const exactRoot = before.verifiedRoot === baselinePin.sourceRoot;
+  const urlPlan = JSON.parse(
+    readFileSync('data/routes/artwork-public-url-ordinal-repair-20261110.json'),
+  );
+  const retiredRepairs =
+    before.verifiedRoot !== urlPlan.parentRoot &&
+    urlPlan.kind === 'OWNER_AUTHORIZED_ARTWORK_ORDINAL_URL_REPAIR' &&
+    urlPlan.legacyPolicy === 'retire-without-redirect'
+      ? new Map(urlPlan.changes.map((change) => [change.id, change]))
+      : new Map();
   for (const row of baseline) {
+    const repair = retiredRepairs.get(row.id);
+    if (repair) {
+      assert.equal(row.canonicalPath, '/art/' + repair.oldSlug + '/');
+      assert.equal(row.sourceTitle, repair.title);
+      assert.equal(row.topic, repair.topic);
+    }
+    const acceptedPath = repair ? '/art/' + repair.slug + '/' : row.canonicalPath;
     assert(
-      families.art.has(row.canonicalPath) && families.images.has(row.canonicalPath),
-      'An accepted canonical path disappeared',
+      families.art.has(acceptedPath) && families.images.has(acceptedPath),
+      'An accepted canonical path disappeared without its exact owner-authorized replacement',
     );
     if (exactRoot)
       assert.equal(

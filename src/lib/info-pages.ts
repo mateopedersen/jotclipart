@@ -12,7 +12,7 @@ export const infoPages: Record<
     sections: [
       [
         'Write to us',
-        'Use the contact form to send your question to JotClipart through Google Forms, or email ultraclipart@gmail.com. Include the relevant page address and a short description. Email correspondence stays in our mailbox; form submissions are recorded in Google Forms.',
+        'Use the contact form to send your question to JotClipart through Google Forms, or email jotclipart@gmail.com. Include the relevant page address and a short description. Email correspondence stays in our mailbox; form submissions are recorded in Google Forms.',
       ],
       [
         'Report a problem',

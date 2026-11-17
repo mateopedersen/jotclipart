@@ -71,7 +71,7 @@ export function initTrustTools() {
         'My relationship to the work: [explain if you are the creator, owner or representative]',
         'Reply email: [add your contact email]',
       ].join('\n');
-      email.href = `mailto:ultraclipart@gmail.com?subject=${encodeURIComponent(`${kind.value} report`)}&body=${encodeURIComponent(draft.value)}`;
+      email.href = `mailto:jotclipart@gmail.com?subject=${encodeURIComponent(`${kind.value} report`)}&body=${encodeURIComponent(draft.value)}`;
     }
     builder.hidden = false;
     builder.addEventListener('input', update);

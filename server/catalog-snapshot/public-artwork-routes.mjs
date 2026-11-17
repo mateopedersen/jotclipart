@@ -35,7 +35,15 @@ export async function resolvePublicArtworkRoute(context, slug) {
   const store = routeStore(context),
     row = await mapGet(store, routes.byPath, 'public-artwork-paths', slug);
   if (!row) return undefined;
-  if (!SLUG.test(row.id) || !SLUG.test(row.slug)) throw Error('Wrong route identity');
+  if (
+    !SLUG.test(row.id) ||
+    !SLUG.test(row.slug) ||
+    (row.retired !== undefined && row.retired !== true)
+  )
+    throw Error('Wrong route identity');
+  // An explicitly retired owner-selected bad address stays reserved, but is
+  // not resolved into a redirect. Immutable IDs still work in editor/by-ID reads.
+  if (row.retired === true) return undefined;
   return { id: row.id, slug: row.slug };
 }
 export async function readPublicArtwork(context, id) {

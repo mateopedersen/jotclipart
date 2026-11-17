@@ -21,7 +21,7 @@ export function pageGraph(options: PageOptions) {
     name: 'JotClipart',
     url: SEO_SITE,
     logo: new URL('favicon-192.png', SEO_SITE).href,
-    email: 'ultraclipart@gmail.com',
+    email: 'jotclipart@gmail.com',
   };
   const website = {
     '@type': 'WebSite',

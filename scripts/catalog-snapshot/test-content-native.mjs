@@ -369,6 +369,7 @@ async function verifyNativeContentWithSource({
         ),
       );
       assert.equal(plan.parentRoot, sourcePacket.parentSnapshotSHA256);
+      const retire = plan.legacyPolicy === 'retire-without-redirect';
       const priority = plan.changes.find((c) => c.id === 'diamond-aircraft-20261105-004');
       const redirects = priority
         ? [priority, ...plan.changes.filter((c) => c.id !== priority.id)]
@@ -386,10 +387,15 @@ async function verifyNativeContentWithSource({
               redirect: 'manual',
             });
             const detail = r.status === 301 ? '' : (await r.text()).slice(0, 1600);
-            assert.equal(r.status, 301, path + ' ' + detail);
-            assert.equal(r.headers.get('location'), expectedLocation, path);
+            assert.equal(r.status, retire ? 404 : 301, path + ' ' + detail);
+            assert.equal(r.headers.get('location'), retire ? null : expectedLocation, path);
             await r.arrayBuffer();
-            results.push({ path, status: 301, expectedLocation, source: 'legacy-redirect' });
+            results.push({
+              path,
+              status: retire ? 404 : 301,
+              expectedLocation: retire ? null : expectedLocation,
+              source: retire ? 'owner-retired-without-redirect' : 'legacy-redirect',
+            });
             if (++verified % 1000 === 0)
               console.log(
                 JSON.stringify({

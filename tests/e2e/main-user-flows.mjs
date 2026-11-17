@@ -1,15 +1,256 @@
-import{execFileSync}from'node:child_process';
-import{chromium,webkit,expect as rawExpect}from'@playwright/test';import assert from'node:assert/strict';import fs from'node:fs';import{createHash}from'node:crypto';import{resolve}from'node:path';
-const expect=rawExpect.configure({timeout:45000}),base=process.env.BASE_URL||'https://ultraclipart.com',out=resolve(process.env.EVIDENCE_DIR||'reports/main-user-flows');fs.mkdirSync(out,{recursive:true});const report={base,scope:'Real native home links, menu, recent subject, topic/art/Edit chain and original Image/PDF downloads; fresh isolated storage; no external messages or inference',passed:false,cases:[]};
-const bounded=async(promise,label,ms=60000)=>{let timer;try{return await Promise.race([promise,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('Timed out: '+label)),ms)})])}finally{clearTimeout(timer)}};
-const binding=async()=>{const j=JSON.parse(execFileSync('curl',['-4','-fsS','--max-time','20',base+'/delivery-release.json'],{encoding:'utf8'}));if(process.env.UC_EXPECTED_CONTROL_RELEASE)assert.equal(j.controlRevision,process.env.UC_EXPECTED_CONTROL_RELEASE);if(process.env.UC_EXPECTED_SNAPSHOT_SHA256)assert.equal(j.verifiedRoot,process.env.UC_EXPECTED_SNAPSHOT_SHA256);return j};report.start=await binding();
-try{for(const[engine,type]of Object.entries({chromium,webkit})){const b=await type.launch(engine==='chromium'?{executablePath:process.env.UC_CHROMIUM_EXECUTABLE_PATH}:{});try{for(const width of[390,1440]){const context=await b.newContext({viewport:{width,height:1000},isMobile:width<768,hasTouch:width<768,acceptDownloads:true}),p=await context.newPage(),row={engine,width,errors:[],navigation:[],downloads:[],passed:false};report.cases.push(row);p.on('pageerror',e=>row.errors.push(e.message));const pending=new Set();p.on('request',r=>{const u=new URL(r.url());if(u.origin===base&&u.pathname.endsWith('.json')&&u.pathname!=='/surprise-picks.json')pending.add(r)});p.on('requestfinished',r=>pending.delete(r));p.on('requestfailed',r=>pending.delete(r));const drained=async()=>{await expect.poll(()=>[...pending].map(r=>r.url()),{timeout:30000,message:'Required catalog JSON transport must finish before the next isolated navigation'}).toEqual([])};context.setDefaultTimeout(30000);
-const collect=()=>p.evaluate(()=>{const n=performance.getEntriesByType('navigation')[0];return{responseStartMs:n.responseStart,responseEndMs:n.responseEnd,domReadyMs:n.domContentLoadedEventEnd}});
-async function opened(action,label){console.log(JSON.stringify({phase:'navigation',engine,width,label}));await drained();const start=Date.now();await action();await p.waitForLoadState('domcontentloaded');await expect(p.locator('h1')).toBeVisible();const nav=await collect();row.navigation.push({label,url:p.url(),clickToDocumentMs:Date.now()-start,...nav});const cookie=p.locator('[data-cookie-choice=necessary]:visible');if(await cookie.count())await cookie.click();assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false)}
-await opened(()=>p.goto(base+'/',{waitUntil:'domcontentloaded',timeout:60000}),'home');row.homeLinks=await p.locator('a[href^="/"]').evaluateAll(es=>[...new Set(es.map(e=>e.getAttribute('href')).filter(h=>!h.startsWith('//')&&!h.startsWith('/edit/')&&!h.startsWith('/art/')))]);
-const menu=p.locator('.site-menu-button');if(await menu.isVisible()){await menu.click();await expect(p.locator('#site-browse-toggle')).toBeVisible();await p.keyboard.press('Escape')}else{await p.locator('#site-browse-toggle').click();await expect(p.locator('#site-browse-panel')).toBeVisible();await p.keyboard.press('Escape')}
-let all=p.locator('a[href="/categories/"]').filter({hasText:'Browse All Subjects',visible:true}).first();if(!await all.count()){if(await menu.isVisible())await menu.click();await p.locator('#site-browse-toggle').click();all=p.locator('#site-browse-panel a[href="/categories/"]').filter({visible:true}).first()}await opened(()=>all.click(),'home Browse All Subjects / mobile Categories');await expect(p.locator('#discovery-controls')).toHaveAttribute('data-ready','true');
-await opened(()=>p.goto(base+'/',{waitUntil:'domcontentloaded'}),'home return');const recent=p.locator('.home-recent-subject').first(),topicHref=await recent.getAttribute('href');assert(topicHref.startsWith('/clipart/'));await opened(()=>recent.click(),'Recently Added subject');await expect(p.locator('[data-collection-summary] p')).toHaveCount(2);
-for(const format of['webp','pdf']){console.log(JSON.stringify({phase:'download',engine,width,format,step:'open'}));const button=p.locator('[data-download-format="'+format+'"]').first();const start=Date.now();await button.click();const panel=p.locator('#download-dialog');await expect(panel.locator('[data-download-content]')).toBeVisible();await panel.locator('.download-panel-technical > summary').click();const sha=(await panel.locator('[data-download-hash]').textContent()).trim();assert.match(sha,/^[a-f0-9]{64}$/);const waitDownload=p.waitForEvent('download');await panel.locator('[data-final-download]').click();console.log(JSON.stringify({phase:'download',engine,width,format,step:'requested'}));const download=await bounded(waitDownload,'download event');console.log(JSON.stringify({phase:'download',engine,width,format,step:'received'}));assert.equal(await bounded(download.failure(),'download completion'),null);const bytes=fs.readFileSync(await bounded(download.path(),'download file'));assert.equal(createHash('sha256').update(bytes).digest('hex'),sha);assert(download.suggestedFilename().endsWith('.'+format));assert(format==='pdf'?bytes.subarray(0,5).toString()==='%PDF-':bytes.subarray(0,4).toString()==='RIFF'&&bytes.subarray(8,12).toString()==='WEBP');row.downloads.push({format,bytes:bytes.length,sha256:sha,elapsedMs:Date.now()-start});const footer=panel.locator('.download-panel-footer'),bounds=await footer.boundingBox(),close=footer.locator('[data-download-close]'),c=await close.boundingBox();assert(c.x>=bounds.x-1&&c.x+c.width<=bounds.x+bounds.width+1);await panel.screenshot({path:out+'/'+engine+'-'+width+'-'+format+'.png'});await close.click();await expect(panel).not.toBeVisible()}
-const art=p.locator('.gallery .art-picture').first(),artHref=await art.getAttribute('href');await opened(()=>art.click(),'topic artwork');const favorite=p.locator('.art-detail [data-favorite]'),before=await favorite.getAttribute('aria-pressed');await favorite.click();await expect(favorite).toHaveAttribute('aria-pressed',before==='true'?'false':'true');await favorite.click();await expect(favorite).toHaveAttribute('aria-pressed',before);
-const editHref=artHref.replace('/art/','/edit/'),edit=p.locator('a[href="'+editHref+'"]').filter({visible:true}).first();await opened(()=>edit.click(),'artwork Edit');await expect(p.locator('.uc-editor')).not.toHaveAttribute('aria-busy','true');await expect(p.locator('.uc-editor .uc-canvas [data-layer]').first()).toBeVisible();row.editCanvasMs=await p.evaluate(()=>performance.now());await p.screenshot({path:out+'/'+engine+'-'+width+'-edit.png'});assert.deepEqual(row.errors,[]);await drained();row.passed=true;fs.writeFileSync(out+'/report.json',JSON.stringify(report,null,2));await context.close()}}finally{await b.close()}}report.finish=await binding();report.passed=true}catch(e){report.failure=e.stack;throw e}finally{fs.writeFileSync(out+'/report.json',JSON.stringify(report,null,2));console.log(JSON.stringify({passed:report.passed,cases:report.cases.map(({engine,width,navigation,downloads})=>({engine,width,navigation,downloads})),failure:report.failure}))}
+import { execFileSync } from 'node:child_process';
+import { chromium, webkit, expect as rawExpect } from '@playwright/test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import { createHash } from 'node:crypto';
+import { resolve } from 'node:path';
+const expect = rawExpect.configure({ timeout: 45000 }),
+  base = process.env.BASE_URL || 'https://ultraclipart.com',
+  out = resolve(process.env.EVIDENCE_DIR || 'reports/main-user-flows');
+fs.mkdirSync(out, { recursive: true });
+const report = {
+  base,
+  scope:
+    'Real native home links, menu, recent subject, topic/art/Edit chain and original Image/PDF downloads; fresh isolated storage; no external messages or inference',
+  passed: false,
+  cases: [],
+};
+const bounded = async (promise, label, ms = 60000) => {
+  let timer;
+  try {
+    return await Promise.race([
+      promise,
+      new Promise((_, reject) => {
+        timer = setTimeout(() => reject(Error('Timed out: ' + label)), ms);
+      }),
+    ]);
+  } finally {
+    clearTimeout(timer);
+  }
+};
+const binding = async () => {
+  const j = JSON.parse(
+    execFileSync('curl', ['-4', '-fsS', '--max-time', '20', base + '/delivery-release.json'], {
+      encoding: 'utf8',
+    }),
+  );
+  if (process.env.UC_EXPECTED_CONTROL_RELEASE)
+    assert.equal(j.controlRevision, process.env.UC_EXPECTED_CONTROL_RELEASE);
+  if (process.env.UC_EXPECTED_SNAPSHOT_SHA256)
+    assert.equal(j.verifiedRoot, process.env.UC_EXPECTED_SNAPSHOT_SHA256);
+  return j;
+};
+report.start = await binding();
+try {
+  for (const [engine, type] of Object.entries({ chromium, webkit })) {
+    const b = await type.launch(
+      engine === 'chromium' ? { executablePath: process.env.UC_CHROMIUM_EXECUTABLE_PATH } : {},
+    );
+    try {
+      for (const width of [390, 1440]) {
+        const context = await b.newContext({
+            viewport: { width, height: 1000 },
+            isMobile: width < 768,
+            hasTouch: width < 768,
+            acceptDownloads: true,
+          }),
+          p = await context.newPage(),
+          row = { engine, width, errors: [], navigation: [], downloads: [], passed: false };
+        report.cases.push(row);
+        p.on('pageerror', (e) => row.errors.push(e.message));
+        const pending = new Set();
+        p.on('request', (r) => {
+          const u = new URL(r.url());
+          if (
+            u.origin === base &&
+            u.pathname.endsWith('.json') &&
+            u.pathname !== '/surprise-picks.json'
+          )
+            pending.add(r);
+        });
+        p.on('requestfinished', (r) => pending.delete(r));
+        p.on('requestfailed', (r) => pending.delete(r));
+        const drained = async () => {
+          await expect
+            .poll(() => [...pending].map((r) => r.url()), {
+              timeout: 30000,
+              message:
+                'Required catalog JSON transport must finish before the next isolated navigation',
+            })
+            .toEqual([]);
+        };
+        context.setDefaultTimeout(30000);
+        const collect = () =>
+          p.evaluate(() => {
+            const n = performance.getEntriesByType('navigation')[0];
+            return {
+              responseStartMs: n.responseStart,
+              responseEndMs: n.responseEnd,
+              domReadyMs: n.domContentLoadedEventEnd,
+            };
+          });
+        async function opened(action, label) {
+          console.log(JSON.stringify({ phase: 'navigation', engine, width, label }));
+          await drained();
+          const start = Date.now();
+          await action();
+          await p.waitForLoadState('domcontentloaded');
+          await expect(p.locator('h1')).toBeVisible();
+          const nav = await collect();
+          row.navigation.push({
+            label,
+            url: p.url(),
+            clickToDocumentMs: Date.now() - start,
+            ...nav,
+          });
+          const cookie = p.locator('[data-cookie-choice=necessary]:visible');
+          if (await cookie.count()) await cookie.click();
+          assert.equal(
+            await p.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1),
+            false,
+          );
+        }
+        await opened(
+          () => p.goto(base + '/', { waitUntil: 'domcontentloaded', timeout: 60000 }),
+          'home',
+        );
+        row.homeLinks = await p
+          .locator('a[href^="/"]')
+          .evaluateAll((es) => [
+            ...new Set(
+              es
+                .map((e) => e.getAttribute('href'))
+                .filter(
+                  (h) => !h.startsWith('//') && !h.startsWith('/edit/') && !h.startsWith('/art/'),
+                ),
+            ),
+          ]);
+        const menu = p.locator('.site-menu-button');
+        if (await menu.isVisible()) {
+          await menu.click();
+          await expect(p.locator('#site-browse-toggle')).toBeVisible();
+          await p.keyboard.press('Escape');
+        } else {
+          await p.locator('#site-browse-toggle').click();
+          await expect(p.locator('#site-browse-panel')).toBeVisible();
+          await p.keyboard.press('Escape');
+        }
+        let all = p
+          .locator('a[href="/categories/"]')
+          .filter({ hasText: 'Browse All Subjects', visible: true })
+          .first();
+        if (!(await all.count())) {
+          if (await menu.isVisible()) await menu.click();
+          await p.locator('#site-browse-toggle').click();
+          all = p
+            .locator('#site-browse-panel a[href="/categories/"]')
+            .filter({ visible: true })
+            .first();
+        }
+        await opened(() => all.click(), 'home Browse All Subjects / mobile Categories');
+        await expect(p.locator('#discovery-controls')).toHaveAttribute('data-ready', 'true');
+        await opened(() => p.goto(base + '/', { waitUntil: 'domcontentloaded' }), 'home return');
+        const recent = p.locator('.home-recent-subject').first(),
+          topicHref = await recent.getAttribute('href');
+        assert(topicHref.startsWith('/clipart/'));
+        await opened(() => recent.click(), 'Recently Added subject');
+        await expect(p.locator('[data-collection-summary] p')).toHaveCount(2);
+        for (const format of ['webp', 'pdf']) {
+          console.log(JSON.stringify({ phase: 'download', engine, width, format, step: 'open' }));
+          const button = p.locator('[data-download-format="' + format + '"]').first();
+          const start = Date.now();
+          await button.click();
+          const panel = p.locator('#download-dialog');
+          await expect(panel.locator('[data-download-content]')).toBeVisible();
+          await panel.locator('.download-panel-technical > summary').click();
+          const sha = (await panel.locator('[data-download-hash]').textContent()).trim();
+          assert.match(sha, /^[a-f0-9]{64}$/);
+          const waitDownload = p.waitForEvent('download');
+          await panel.locator('[data-final-download]').click();
+          console.log(
+            JSON.stringify({ phase: 'download', engine, width, format, step: 'requested' }),
+          );
+          const download = await bounded(waitDownload, 'download event');
+          console.log(
+            JSON.stringify({ phase: 'download', engine, width, format, step: 'received' }),
+          );
+          assert.equal(await bounded(download.failure(), 'download completion'), null);
+          const bytes = fs.readFileSync(await bounded(download.path(), 'download file'));
+          assert.equal(createHash('sha256').update(bytes).digest('hex'), sha);
+          assert(download.suggestedFilename().endsWith('.' + format));
+          assert(
+            format === 'pdf'
+              ? bytes.subarray(0, 5).toString() === '%PDF-'
+              : bytes.subarray(0, 4).toString() === 'RIFF' &&
+                  bytes.subarray(8, 12).toString() === 'WEBP',
+          );
+          row.downloads.push({
+            format,
+            bytes: bytes.length,
+            sha256: sha,
+            elapsedMs: Date.now() - start,
+          });
+          const footer = panel.locator('.download-panel-footer'),
+            bounds = await footer.boundingBox(),
+            close = footer.locator('[data-download-close]'),
+            c = await close.boundingBox();
+          assert(c.x >= bounds.x - 1 && c.x + c.width <= bounds.x + bounds.width + 1);
+          await panel.screenshot({
+            path: out + '/' + engine + '-' + width + '-' + format + '.png',
+          });
+          await close.click();
+          await expect(panel).not.toBeVisible();
+        }
+        const art = p.locator('.gallery .art-picture').first(),
+          artHref = await art.getAttribute('href');
+        await opened(() => art.click(), 'topic artwork');
+        const favorite = p.locator('.art-detail [data-favorite]'),
+          before = await favorite.getAttribute('aria-pressed');
+        await favorite.click();
+        await expect(favorite).toHaveAttribute(
+          'aria-pressed',
+          before === 'true' ? 'false' : 'true',
+        );
+        await favorite.click();
+        await expect(favorite).toHaveAttribute('aria-pressed', before);
+        const edit = p.locator('.art-detail a[href^="/edit/"]').filter({ visible: true }).first(),
+          editHref = await edit.getAttribute('href');
+        assert(
+          /^\/edit\/[a-z0-9-]+\/$/.test(editHref),
+          'Use the real immutable editor ID rather than deriving it from the public slug',
+        );
+        await opened(() => edit.click(), 'artwork Edit');
+        await expect(p.locator('.uc-editor')).not.toHaveAttribute('aria-busy', 'true');
+        await expect(p.locator('.uc-editor .uc-canvas [data-layer]').first()).toBeVisible();
+        row.editCanvasMs = await p.evaluate(() => performance.now());
+        await p.screenshot({ path: out + '/' + engine + '-' + width + '-edit.png' });
+        assert.deepEqual(row.errors, []);
+        await drained();
+        row.passed = true;
+        fs.writeFileSync(out + '/report.json', JSON.stringify(report, null, 2));
+        await context.close();
+      }
+    } finally {
+      await b.close();
+    }
+  }
+  report.finish = await binding();
+  report.passed = true;
+} catch (e) {
+  report.failure = e.stack;
+  throw e;
+} finally {
+  fs.writeFileSync(out + '/report.json', JSON.stringify(report, null, 2));
+  console.log(
+    JSON.stringify({
+      passed: report.passed,
+      cases: report.cases.map(({ engine, width, navigation, downloads }) => ({
+        engine,
+        width,
+        navigation,
+        downloads,
+      })),
+      failure: report.failure,
+    }),
+  );
+}

@@ -341,7 +341,7 @@ export async function compose(c, page, catalog) {
       break;
     }
     case 'contact': {
-      await c.image('public/illustrations/actions/contact.svg', 670, 153, 409, 316);
+      await c.image('public/illustrations/actions/contact-jot-green-v1.svg', 670, 153, 409, 316);
       await c.text('Let’s hear your ideas', 869, 500, {
         size: 24,
         weight: 600,
@@ -491,7 +491,7 @@ export async function compose(c, page, catalog) {
       });
       rules(668, 452, 267, 2, 25);
       await c.image('public/illustrations/actions/document.svg', 985, 180, 148, 158);
-      await c.image('public/illustrations/actions/contact.svg', 975, 355, 180, 154);
+      await c.image('public/illustrations/actions/contact-jot-green-v1.svg', 975, 355, 180, 154);
       break;
     }
     case 'accessibility': {

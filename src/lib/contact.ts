@@ -1,8 +1,8 @@
-export const contactEmail = 'ultraclipart@gmail.com';
+export const contactEmail = 'jotclipart@gmail.com';
 export const contactFormUrl =
-  'https://docs.google.com/forms/d/e/1FAIpQLSc2fOKsmo2Ypr7EkTV9jqBO7BhyAX8HYBxcIHNybkD5fC5HRw/viewform';
+  'https://docs.google.com/forms/d/e/1FAIpQLSdW7bocRNn3EEUUoQ0VorAzL_ZHQ6NH0GtlSzj8NZG8UC3IuA/viewform';
 // Taken from this form's official pre-fill screen. Keep in sync with its topic question.
-export const contactTopicField = 'entry.1751201779';
+export const contactTopicField = 'entry.1081521294';
 export const contactTopics = [
   {
     id: 'general',
