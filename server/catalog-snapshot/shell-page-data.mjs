@@ -6,7 +6,7 @@ import { readStudioFeaturedCount } from './studio-featured-count.mjs';
 import { readPublicArtwork as readArtwork } from './public-artwork-routes.mjs';
 import { readSharedArtwork } from './shared-artwork-context.mjs';
 import { openSevenFacetCollectionContext } from './collection-context.mjs';
-import { newestIDs, recentSubjectIDs } from './recent-ledger.mjs';
+import { newestIDs, recentHomeIDs, recentSubjectIDs } from './recent-ledger.mjs';
 import { openSearch } from '../catalog-search/runtime.mjs';
 import { makeStore } from '../catalog-search/store.mjs';
 import { uiProviders } from '../catalog-search/ui-metadata.mjs';
@@ -109,7 +109,10 @@ export async function readShellPageState(
   const rs = { get: (d) => context.read('recent', d, { maxBytes: 65536 }) };
   if (recent.type !== 'recent-directory') throw Error('Invalid recent root');
   if (kind === 'new') {
-    state.newestArt = await artwork(await newestIDs(rs, recent.ledger, { limit: 32 }));
+    const limit = 32;
+    const mixed = await recentHomeIDs(rs, recent.ledger, limit);
+    const fill = mixed.length < limit ? await newestIDs(rs, recent.ledger, { limit }) : [];
+    state.newestArt = await artwork([...new Set([...mixed, ...fill])].slice(0, limit));
     state.props.snapshotTotal = cc.global.totals.artworks;
   }
   if (kind === 'search' || kind === 'monochrome') {
