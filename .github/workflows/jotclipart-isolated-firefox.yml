@@ -1,0 +1,59 @@
+name: JotClipart isolated current-preview Firefox diagnostic
+
+# Branch-only diagnostic. This never deploys or changes the signed catalog and
+# does not certify that the candidate software has been installed.
+on:
+  push:
+    branches: [codex/jotclipart-ci-timing-20261117]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: jotclipart-isolated-firefox-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  firefox-current-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    container:
+      image: mcr.microsoft.com/playwright:v1.64.1-noble@sha256:47b510dd9230bf0b9bfc9b20102241e577ea7a99334ab4c3ca19f19770e9b8ea
+      options: --user 1001
+    env:
+      ASTRO_TELEMETRY_DISABLED: '1'
+      PLAYWRIGHT_SKIP_BROWSER_GC: '1'
+      BASE_URL: https://preview.jotclipart.com
+      EXPECT_REVISION: 15b0e20cb1c56edc2e649a1d97503f23fc201ebc
+      UC_BROWSER: firefox
+      VIEWPORT_WIDTH: '1440'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.25.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.22.2'
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Pin the unchanged signed public preview
+        run: node scripts/jotclipart/ci-browser.mjs pin
+      - name: Actual Firefox navigation, original downloads and favorites
+        id: basic
+        run: node scripts/jotclipart/ci-browser.mjs browser
+      - name: Actual Firefox workbench, recovery and search
+        if: ${{ !cancelled() && steps.basic.outcome != 'skipped' }}
+        run: node scripts/jotclipart/feature-browser.mjs
+      - name: Preserve diagnostic evidence without original download binaries
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: isolated-current-preview-firefox-1440-${{ github.sha }}
+          path: |
+            reports/jotclipart-native-browser/preview-pin.json
+            reports/jotclipart-native-browser/firefox-1440/*.json
+            reports/jotclipart-native-browser/firefox-1440/*.png
+          retention-days: 3
