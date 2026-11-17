@@ -63,7 +63,7 @@ try {
         Array.from(body.querySelectorAll('*')).flatMap((el) => {
           if (
             el.closest(
-              'svg, .home-showcase h1, .hero > .breadcrumb, main.container > .breadcrumb:has(+ .art-detail), .art-detail .eyebrow, .home-recent-subject, .home-recent .card-title, [data-text-preset]',
+              'svg, .home-showcase h1, .hero > .breadcrumb, main.container > .breadcrumb:has(+ .art-detail), .art-detail .eyebrow, .home-recent .card-title, [data-text-preset]',
             )
           )
             return [];
@@ -178,7 +178,7 @@ try {
           assert.equal(card.descriptionColor, 'rgb(0, 0, 0)');
           assert.equal(card.descriptionWeight, '400');
           assert.equal(card.titleWeight, '700');
-          assert.equal(card.subjectColor, 'rgb(33, 110, 78)');
+          assert.equal(card.subjectColor, 'rgb(0, 0, 0)');
         }
 
         const hero = await page.locator('.home-showcase h1').evaluate((heading) => {

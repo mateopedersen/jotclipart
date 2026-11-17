@@ -1,3 +1,10 @@
+# Latest owner homepage subject-color correction — 2026-11-17
+
+Homepage recent-card subject links such as Gucci Clipart, Fendi Clipart and Dior
+Clipart must be black. Keep their650 weight. The artwork titles underneath remain
+brand green700 and existing descriptions black400. This supersedes the earlier
+instruction making both heading levels green. Other pages and hero stay unchanged.
+
 # Current installed homepage card refinement — 2026-11-17
 
 This supersedes all historical installed-release notes below. Current LIVE
