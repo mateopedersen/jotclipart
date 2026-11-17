@@ -30,13 +30,11 @@ export async function readSurprisePicks(context, { limit = 512 } = {}) {
     )
       throw Error('Invalid discovery selection');
   return Promise.all(
-    node.items
-      .slice(0, limit)
-      .map(async (p) => ({
-        id: p.id,
-        publicSlug: await publicRouteForId(context, p.id),
-        topic: p.topic,
-        ...(Object.hasOwn(p, 'fresh') ? { fresh: p.fresh } : {}),
-      })),
+    node.items.slice(0, limit).map(async (p) => ({
+      id: p.id,
+      publicSlug: await publicRouteForId(context, p.id),
+      topic: p.topic,
+      ...(Object.hasOwn(p, 'fresh') ? { fresh: p.fresh } : {}),
+    })),
   );
 }
