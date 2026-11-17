@@ -1,3 +1,27 @@
+# Current installed homepage loading and black subject release — 2026-11-17
+
+This supersedes all historical installed-release notes below. Current LIVE
+software214628934db7453f16a8227f27d9df41d33351f3, Pages
+https://6cdd651c.jotclipart.pages.dev, ABI
+0bdd87965119b522456c6c40e6ab6a0a04a85cb81bbeb140066b09f0f48a5fd8.
+Permanently preserve the ENTIRE work/jotclipart-home-subject-black-20261117
+independent checkout, work/jotclipart-release-214628934db7 compiled inputs and
+800-file work/jotclipart-installed-2146/manifest.json. Never move/rebuild/clean it.
+All previous installed A30C,C242,D1,1d3,FE81,11730,FB19 trees and KEEP copies remain
+protected. The084 color-only candidate was built but never installed or deployed.
+Read config/content-publisher.json for actual absolute bindings.
+Home subject links are black650; artwork titles remain green700/descriptions
+black400. Home picture frames now correctly paint pending source-bound previews,
+independent high-priority preview requests and desktop featured preview preload.
+691 source checks,2 actual home held-original cases,14 preview lifecycle/pixel
+cases,96 preview and96 production real UI states passed. Native live seven full
+originals were checked. Bounded slow-mobile observations showed7/7 painted home
+frames versus2/7 earlier; representative preview request started at1.257s vs9.222s.
+Cold-preview TTFB was slower; no universal field CWV/full-original speed guarantee.
+Original URLs, pixels, files, schema, clipping, retries and admission caps retained.
+No catalog/media/index changes. Root8cec421c20fd3367cc6be5b5f2d0cbdec0a5a81e95e7c075a1d6ca548df52ed4,
+49,858 artworks/804 topics/all1215 PDF repairs unchanged. Bookkeeping is not deploy.
+
 # Homepage image preview correction — 2026-11-17
 
 Homepage sample picture frames need position:relative so the existing source-bound
