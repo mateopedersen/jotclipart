@@ -40,6 +40,13 @@ try {
         );
       for (const label of labels)
         if (label.color !== 'rgb(0, 0, 0)') report.errors.push({ route, width, ...label });
+      if (route === '/') {
+        const hero = await page
+          .locator('.home-showcase h1, .home-showcase h1 > span')
+          .evaluateAll((nodes) => nodes.map((n) => getComputedStyle(n).color));
+        for (const color of hero)
+          if (color !== 'rgb(33, 110, 78)') report.errors.push({ route, width, heroColor: color });
+      }
       if (route === '/collections/') {
         const axe = await new AxeBuilder({ page })
           .setLegacyMode(engine === 'webkit')

@@ -12,7 +12,7 @@
 }
 .home-showcase h1 {
   margin: 0 0 21px;
-  color: var(--brand-ink);
+  color: var(--brand-action);
   font-family: inherit;
   font-size: clamp(43px, 4.8vw, 66px);
   font-weight: 700;
@@ -22,7 +22,7 @@
 }
 .home-showcase h1 > span {
   display: block;
-  color: var(--brand-ink);
+  color: var(--brand-action);
 }
 .home-showcase-lead {
   max-width: 490px;

@@ -1,6 +1,8 @@
 # Sitewide black interface text — owner clarification 2026-11-17
 
-All normal interface text is neutral black (#000000): navigation and footer links,
+The homepage hero headline “Free Clipart For Every Project” is the explicit
+owner-approved green exception (brand-action), including its child spans.
+All other normal interface text is neutral black (#000000): navigation and footer links,
 Surprise me title/subtitle, body and helper copy, collection introductions/counts,
 subject picker labels/options, card descriptions and text links. Use the ink token
 for typography; never reuse the green action/accent token as a normal text color.
