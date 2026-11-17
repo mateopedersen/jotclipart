@@ -313,7 +313,7 @@ footer.site-footer {
   min-height: 46px;
   padding: 8px;
   border: 1px solid transparent;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 18px;
   font-weight: 600;
   line-height: 1.5;
@@ -334,7 +334,7 @@ footer.site-footer {
   min-width: 0;
 }
 .footer-nav-card nav a:hover {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   border-color: var(--brand-border);
   background: linear-gradient(var(--brand-page), var(--brand-soft));
 }
