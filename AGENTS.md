@@ -1,7 +1,7 @@
 # Homepage hero refinement — latest owner direction, 2026-11-17
 
 Latest owner additions: art detail breadcrumbs and the small uppercase topic
-label are green/750; card titles use850 while descriptions stay unchanged.
+label are green/750; both main artwork H1 and card titles use850 while descriptions stay unchanged.
 Align topic headings with their gallery and reduce unused header whitespace.
 Cookie shields/chips, all paw symbols, file-fact device/printer/editor/license
 illustration blue accents and the outside file-details folder use the green

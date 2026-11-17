@@ -113,6 +113,12 @@ try {
         assert.equal(card.color, 'rgb(0, 0, 0)');
       }
       if (route.startsWith('/art/')) {
+        assert(
+          await page
+            .locator('.art-detail h1')
+            .evaluate((n) => Number(getComputedStyle(n).fontWeight) >= 800),
+          'The main artwork title must stand out from its description',
+        );
         const detail = await page
           .locator('main.container > .breadcrumb, .art-detail .eyebrow')
           .evaluateAll((ns) =>
