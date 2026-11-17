@@ -8,7 +8,8 @@ import {
   existsSync,
   constants,
 } from 'node:fs';
-import { resolve, join, basename } from 'node:path';
+import { resolve, join, basename, dirname } from 'node:path';
+import { execFileSync } from 'node:child_process';
 import { gunzipSync } from 'node:zlib';
 import { createHash } from 'node:crypto';
 import { captureProductionSnapshot } from '../../server/catalog-snapshot/signed-production-snapshot.mjs';
@@ -23,6 +24,8 @@ import {
 } from '../artwork-editorial.mjs';
 import { createReviewedDeltaValidators } from '../catalog-snapshot/validate-delta-source.mjs';
 import { verifySourceFile } from '../catalog-snapshot/source-files.mjs';
+import { sharedContentBaseline } from '../catalog-snapshot/legacy-source-guard.mjs';
+import { verifiedArrayMember } from '../catalog-snapshot/array-member-source.mjs';
 import {
   incomingManifestSHA256,
   incomingMediaFiles,
@@ -56,17 +59,63 @@ const oldRow = historical.capsule.artworkRows.find((r) => r.id === id),
 const captured = resolve('../captured-catalog'),
   config = JSON.parse(readFileSync('config/content-publisher-public.json'));
 const software = JSON.parse(readFileSync('config/content-publisher.json')).software;
+const baselinePath = sharedContentBaseline(),
+  accepted = existsSync(baselinePath) ? JSON.parse(readFileSync(baselinePath)) : null;
+const originalCapsules = new Set(
+  manifest.capsules.map((c) => c.sourceCommit + ':' + c.path + ':' + c.sha256),
+);
+const acceptedRawOverrides = new Map(),
+  objectDirectories = [];
+let snapshotPath = join(captured, 'production-snapshot.json'),
+  selectedRoot = manifest.root;
+for (const entry of accepted?.capsules ?? []) {
+  if (entry.liveReceipt && existsSync(entry.liveReceipt)) {
+    const receipt = JSON.parse(readFileSync(entry.liveReceipt)),
+      directory = dirname(resolve(entry.liveReceipt));
+    if (
+      existsSync(join(directory, 'production-snapshot.json')) &&
+      existsSync(join(directory, 'objects'))
+    ) {
+      objectDirectories.unshift(join(directory, 'objects'));
+      if (receipt.verifiedRoot === accepted.verifiedRoot) {
+        snapshotPath = join(directory, 'production-snapshot.json');
+        selectedRoot = accepted.verifiedRoot;
+      }
+    }
+  }
+  if (originalCapsules.has(entry.sourceCommit + ':' + entry.path + ':' + entry.sha256)) continue;
+  assert(
+    /^[a-f0-9]{40}$/.test(entry.sourceCommit) &&
+      /^data\/catalog-batches\/[a-z0-9-]+\.json$/.test(entry.path),
+  );
+  const bytes = execFileSync('git', ['show', entry.sourceCommit + ':' + entry.path], {
+    maxBuffer: 32 * 1024 * 1024,
+  });
+  assert.equal(sha(bytes), entry.sha256);
+  for (const row of JSON.parse(bytes).artworkRows ?? [])
+    if (row.raw) acceptedRawOverrides.set(row.id, row.raw);
+}
+if (accepted)
+  assert.equal(
+    selectedRoot,
+    accepted.verifiedRoot,
+    'Accepted signed source snapshot is unavailable; do not use an older parent',
+  );
 const bucket = {
   async get(key) {
     let bytes;
-    if (key === config.activeKey) bytes = readFileSync(join(captured, 'production-snapshot.json'));
+    if (key === config.activeKey) bytes = readFileSync(snapshotPath);
     else {
       const match =
         /^catalog\/objects\/(?:artworks|collections|search|recent|related|counts|sitemaps)\/([a-f0-9]{64})\.json$/.exec(
           key,
         );
       assert(match);
-      bytes = readFileSync(join(captured, match[1] + '.json'));
+      const filename = match[1] + '.json',
+        file =
+          objectDirectories.map((d) => join(d, filename)).find(existsSync) ??
+          join(captured, filename);
+      bytes = readFileSync(file);
       assert.equal(sha(bytes), match[1]);
     }
     return {
@@ -81,6 +130,7 @@ const context = await captureProductionSnapshot(bucket, {
   abiSHA256: software.abiSHA256,
   publicKey: Buffer.from(config.publicKeyHex, 'hex'),
 });
+assert.equal(context.rootSHA256, selectedRoot);
 const oldRecord = await readArtwork(context, id);
 assert(oldRecord);
 assert.equal(oldRecord.files.webp.sha256, oldRow.raw.files.webp.sha256);
@@ -214,9 +264,17 @@ const artworkRow = {
 };
 const latestTopicsBytes = gunzipSync(readFileSync(join(material, manifest.topicRows.file)));
 assert.equal(sha(latestTopicsBytes), manifest.topicRows.sha256);
-const sourceTopic = structuredClone(JSON.parse(latestTopicsBytes).find((r) => r.slug === topic));
+const sourceTopic = verifiedArrayMember(latestTopicsBytes,'slug',topic);
 assert(sourceTopic);
-sourceTopic.rawItems = sourceTopic.rawItems.map((a) => (a.id === id ? raw : a));
+const currentRawById = new Map(sourceTopic.rawItems.map((a) => [a.id, a]));
+for (const [key, value] of acceptedRawOverrides)
+  if (value.topic === topic) currentRawById.set(key, value);
+currentRawById.set(id, raw);
+sourceTopic.rawItems = topicIds.map((key) => {
+  const value = currentRawById.get(key);
+  assert(value, 'Accepted member source missing: ' + key);
+  return value;
+});
 sourceTopic.resolvedItems = await Promise.all(
   sourceTopic.rawItems.map(async (a) => (a.id === id ? newRecord : readArtwork(context, a.id))),
 );

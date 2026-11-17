@@ -16,6 +16,8 @@ import { verifySourceFile } from './source-files.mjs';
 import { merkle } from '../delivery/manifest.mjs';
 import { assertReusableIncomingReceipt } from './incoming-reuse.mjs';
 import { brand, publicBrandURL } from '../../src/lib/brand.mjs';
+import { readFileSync } from 'node:fs';
+import { assertNoCMYKJPX } from '../pdf-compatibility-gate.mjs';
 export const incomingManifestSHA256 = (manifest) =>
   createHash('sha256').update(JSON.stringify(manifest)).digest('hex');
 export const isIncomingMediaPlan = (manifest) => manifest?.status === 'PLANNED_INCOMING_MEDIA';
@@ -110,6 +112,7 @@ export async function verifyIncomingPlanSources(packet) {
     if (!source || source.bytes !== f.bytes || source.sha256 !== f.sha256)
       throw Error('Planned media must match an exact protected native source');
     await verifySourceFile({ path, bytes: f.bytes, sha256: f.sha256 });
+    if (f.kind === 'pdf') await assertNoCMYKJPX(readFileSync(path));
   }
   return {
     status: 'PLANNED_INCOMING_MEDIA_LOCAL_SOURCE_VERIFIED_NOT_REMOTE',

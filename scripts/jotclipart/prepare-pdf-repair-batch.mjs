@@ -22,8 +22,11 @@ const results = JSON.parse(readFileSync(join(base, 'results.json')));
 assert(results.length > 0 && results.length <= 256);
 assert(results.every((r) => r.status === 'NATIVE_AND_PDFIUM_REPAIR_CHECKED_NOT_PUBLISHED'));
 mkdirSync(output, { recursive: true, mode: 0o700 });
-const packets = [],
-  failures = [];
+const preparedIds = [],
+  failures = [],
+  topics = new Map(),
+  merged = { changes: [], artworkRows: [], sourceFiles: [], sourceMediaByURL: {}, files: [] };
+let firstPacket;
 for (const r of results) {
   const dir = join(output, r.id);
   try {
@@ -33,39 +36,45 @@ for (const r of results) {
         ['scripts/jotclipart/prepare-pdf-repair.mjs', r.id, r.pdf, r.receipt, dir, r.sourceImage],
         { stdio: ['ignore', 'pipe', 'pipe'], maxBuffer: 4 * 1024 * 1024 },
       );
-    packets.push(JSON.parse(readFileSync(join(dir, 'packet-plan.json'))));
+    const p = JSON.parse(readFileSync(join(dir, 'packet-plan.json')));
+    if (!firstPacket) firstPacket = structuredClone(p);
+    preparedIds.push(p.changes[0].id);
+    for (const key of ['changes', 'artworkRows', 'sourceFiles']) merged[key].push(...p[key]);
+    Object.assign(merged.sourceMediaByURL, p.sourceMediaByURL);
+    merged.files.push(...p.incomingMediaManifest.files);
+    if (!topics.has(p.topicRows[0].slug))
+      topics.set(p.topicRows[0].slug, { row: p.topicRows[0], change: p.topicChanges[0] });
   } catch (e) {
     failures.push({ id: r.id, error: (e.stderr?.toString() ?? String(e)).slice(-1600) });
   }
-  if ((packets.length + failures.length) % 10 === 0)
+  if ((preparedIds.length + failures.length) % 10 === 0)
     console.log(
-      JSON.stringify({ prepared: packets.length, held: failures.length, total: results.length }),
+      JSON.stringify({
+        prepared: preparedIds.length,
+        held: failures.length,
+        total: results.length,
+      }),
     );
 }
 writeFileSync(
   join(output, 'source-preparation-results.json'),
-  JSON.stringify({ prepared: packets.map((p) => p.changes[0].id), failures }, null, 2) + '\n',
+  JSON.stringify({ prepared: preparedIds, failures }, null, 2) + '\n',
 );
 if (failures.length)
   throw Error('Source reconciliation holds must be resolved; no partial capsule written');
-const packet = structuredClone(packets[0]);
+const packet = firstPacket;
 packet.campaign = capsulePath
   .split('/')
   .at(-1)
   .replace(/\.json$/, '');
-for (const key of ['changes', 'artworkRows', 'sourceFiles'])
-  packet[key] = packets.flatMap((p) => p[key]);
-packet.sourceMediaByURL = Object.assign({}, ...packets.map((p) => p.sourceMediaByURL));
-packet.incomingMediaManifest.files = packets.flatMap((p) => p.incomingMediaManifest.files);
+for (const key of ['changes', 'artworkRows', 'sourceFiles']) packet[key] = merged[key];
+packet.sourceMediaByURL = merged.sourceMediaByURL;
+packet.incomingMediaManifest.files = merged.files;
 packet.incomingMediaManifest.bytes = packet.incomingMediaManifest.files.reduce(
   (n, f) => n + f.bytes,
   0,
 );
 packet.incomingMediaManifest.plannedAt = new Date().toISOString();
-const topics = new Map();
-for (const p of packets)
-  if (!topics.has(p.topicRows[0].slug))
-    topics.set(p.topicRows[0].slug, { row: p.topicRows[0], change: p.topicChanges[0] });
 const rawById = new Map(packet.artworkRows.map((r) => [r.id, r.raw])),
   recordById = new Map(packet.changes.map((c) => [c.id, c.record]));
 packet.topicRows = [];

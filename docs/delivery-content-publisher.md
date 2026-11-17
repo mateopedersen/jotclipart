@@ -1,3 +1,33 @@
+## Native PDF compatibility — confirmed incident, 2026-11-17
+
+Four-component CMYK `JPXDecode` artwork was confirmed to render entirely white
+in macOS CoreGraphics while PDFium and Poppler displayed it. A successful GET,
+matching SHA-256 and a nonblank render in one other reader do not prove that a
+PDF works on the owner's Mac.
+
+Planned incoming PDFs now pass a portable syntax and known-codec admission guard
+before binary transport. Page and nested Form resources containing DeviceCMYK or
+four-component ICC JPX images are refused. This guard is structural, not a claim
+of visual review or complete cross-reader compatibility. Original archives and
+immutable R2 objects remain untouched.
+
+Use `scripts/check_pdf_native.py` with the PDF runtime on a real Mac, a new work
+output, and the matching original WebP. Inspect its native/reference PNGs. Retain
+the actual report and checksums; never invent a native check. White artwork needs
+human review rather than automatic recoloring. A genuine compatibility repair
+gets a separate content-addressed PDF, complete pixel-pair evidence and actual
+color-space facts. Preserve full resolution, page geometry and original alpha;
+the normal one-million-byte and source-quality limits remain. The supplied
+`pdf_compatibility.py` helper can produce a separately verified compatible
+derivative; it cannot identify an unseen branded subject or publish by itself.
+
+Run the normal source/media/native-renderer/independent-seal/conditional-activation
+and public download gates. Existing accepted source copy and Image bytes remain
+unchanged in a codec-only repair. Local preparation follows the accepted signed
+source ledger and earlier source deltas so a later batch cannot restore an older
+PDF in the same topic. Optional bounded prepared-HTML coverage prioritizes the
+changed pages; omitted pages retain the existing canonical render path.
+
 ## Fill the existing bounded read window, 2026-11-05
 
 The operator now dispatches another already pending metadata batch while there

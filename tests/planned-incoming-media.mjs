@@ -16,6 +16,10 @@ import {
 import { verifyIncomingMedia } from '../scripts/catalog-snapshot/batch-media.mjs';
 import { createReviewedDeltaValidators } from '../scripts/catalog-snapshot/validate-delta-source.mjs';
 import { merkle } from '../scripts/delivery/manifest.mjs';
+import { PDFDocument } from 'pdf-lib';
+const protocolPDF = await PDFDocument.create();
+protocolPDF.addPage([72, 72]).drawRectangle({ x: 12, y: 12, width: 24, height: 24 });
+const validProtocolPDFBytes = Buffer.from(await protocolPDF.save());
 const sha = (b) => createHash('sha256').update(b).digest('hex');
 const canonical = (x) =>
   Array.isArray(x)
@@ -45,7 +49,10 @@ function planOf(verified) {
 function mediaFixture() {
   const bodies = new Map(),
     files = ['webp', 'pdf', 'thumb'].map((kind) => {
-      const body = Buffer.from('PRIVATE_SYNTHETIC_PROTOCOL_BYTES_' + kind),
+      const body =
+          kind === 'pdf'
+            ? validProtocolPDFBytes
+            : Buffer.from('PRIVATE_SYNTHETIC_PROTOCOL_BYTES_' + kind),
         hash = sha(body),
         extension = kind === 'thumb' ? 'webp' : kind,
         path = '/catalog/private/' + kind + '.' + extension,
