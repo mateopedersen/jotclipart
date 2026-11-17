@@ -29,7 +29,7 @@ for (const engine of [chromium, webkit]) {
           assert.equal(response.request().redirectedFrom(), null, path);
           await expect(page.locator('h1')).toHaveText("We couldn't find that page.");
           await expect(page.locator('meta[name=robots]')).toHaveAttribute('content', 'noindex');
-          await expect(page.getByRole('searchbox', { name: 'Search the library' })).toBeVisible();
+          await expect(page.getByLabel('Search the library')).toBeVisible();
           await expect
             .poll(() =>
               page
