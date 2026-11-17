@@ -62,7 +62,7 @@
 .contact-hero-copy > p {
   font-size: 1.05rem;
   line-height: 1.8;
-  color: var(--ct-copy);
+  color: var(--brand-ink);
   max-width: 44ch;
   margin: 1.3rem 0 1.6rem;
 }
@@ -127,7 +127,7 @@
 }
 .contact-help-intro {
   margin-top: 0.65rem !important;
-  color: var(--ct-copy);
+  color: var(--brand-ink);
   font-size: 0.96rem;
   line-height: 1.7;
 }
@@ -200,7 +200,7 @@
 .contact-topic-details ul {
   padding-left: 1.2rem;
   margin: 0.7rem 0;
-  color: var(--ct-copy);
+  color: var(--brand-ink);
   font-size: 0.89rem;
   line-height: 1.8;
 }
@@ -240,7 +240,7 @@
 .contact-compose-heading p {
   font-size: 0.93rem;
   line-height: 1.65;
-  color: var(--ct-copy);
+  color: var(--brand-ink);
   margin-top: 0.4rem;
 }
 .contact-form-summary {
@@ -253,7 +253,7 @@
   line-height: 1.6;
 }
 .contact-form-summary > span {
-  color: var(--ct-copy);
+  color: var(--brand-ink);
 }
 .contact-form-summary strong {
   background: #ffffff;
@@ -320,7 +320,7 @@
 .contact-form-gateway > p {
   max-width: 43ch;
   margin: 0.8rem auto 1.2rem;
-  color: var(--ct-copy);
+  color: var(--brand-ink);
   line-height: 1.75;
   font-size: 0.95rem;
 }
@@ -336,7 +336,7 @@
 }
 .contact-form-status {
   padding: 0 1.5rem;
-  color: var(--ct-copy);
+  color: var(--brand-ink);
   line-height: 1.7;
   font-size: 0.87rem;
 }
@@ -360,7 +360,7 @@
   text-align: center;
 }
 .contact-form-fallback p {
-  color: var(--ct-copy);
+  color: var(--brand-ink);
   line-height: 1.65;
   font-size: 0.85rem;
 }
@@ -394,7 +394,7 @@
 .contact-expect p {
   font-size: 0.96rem;
   line-height: 1.75;
-  color: var(--ct-copy);
+  color: var(--brand-ink);
   margin-top: 0.7rem;
 }
 .contact-expect ol {
@@ -441,7 +441,7 @@
   margin-top: 0.65rem;
   font-size: 0.96rem;
   line-height: 1.75;
-  color: var(--ct-copy);
+  color: var(--brand-ink);
 }
 .contact-answers details {
   border-bottom: 1px solid var(--brand-soft);
@@ -457,7 +457,7 @@
   padding: 0 0 1.15rem;
   font-size: 0.94rem;
   line-height: 1.85;
-  color: var(--ct-copy);
+  color: var(--brand-ink);
 }
 @media (min-width: 900px) {
   .contact-topics {

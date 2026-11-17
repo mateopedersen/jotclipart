@@ -16,6 +16,17 @@ try {
       '/collections/',
       '/collection/food-drink/',
       '/categories/',
+      '/library-index/',
+      '/new/',
+      '/black-and-white/',
+      '/search/?q=flowers',
+      '/for-teachers/',
+      '/license/',
+      '/privacy/',
+      '/terms/',
+      '/faq/',
+      '/editorial-process/',
+      '/ai-clipart-generator/',
       '/about/',
       '/favorites/',
       '/create/',
@@ -23,7 +34,8 @@ try {
       '/art/sunflower-straw-hat/',
       '/guides/webp-pdf-and-editable-projects/',
     ]) {
-      await page.goto(base + route);
+      const response = await page.goto(base + route);
+      assert.equal(response.status(), 200, `Expected real page at ${route}`);
       await page.evaluate(() => document.fonts.ready);
       const labels = await page
         .locator(
@@ -38,12 +50,58 @@ try {
               size: getComputedStyle(n).fontSize,
             })),
         );
+      assert(labels.length > 0, `Missing visible typography at ${route}`);
+      const unexpectedGreen = await page.locator('body').evaluate((body) =>
+        Array.from(body.querySelectorAll('*')).flatMap((el) => {
+          if (el.closest('svg, .home-showcase h1, [data-text-preset]')) return [];
+          const text = Array.from(el.childNodes)
+            .filter((n) => n.nodeType === 3)
+            .map((n) => n.textContent)
+            .join(' ')
+            .trim();
+          if (!/[A-Za-z0-9]/.test(text)) return [];
+          const rect = el.getBoundingClientRect(),
+            style = getComputedStyle(el);
+          if (
+            !rect.width ||
+            !rect.height ||
+            style.visibility === 'hidden' ||
+            el.closest('[hidden]')
+          )
+            return [];
+          const rgb = style.color.match(/[\d.]+/g)?.map(Number) || [];
+          if (rgb.length < 3 || !(rgb[1] > rgb[0] * 1.1 && rgb[1] > rgb[2] * 1.05)) return [];
+          return [
+            {
+              text: text.slice(0, 120),
+              color: style.color,
+              tag: el.tagName,
+              className: el.className,
+            },
+          ];
+        }),
+      );
+      for (const green of unexpectedGreen)
+        report.errors.push({ route, width, unexpectedGreen: green });
+      assert(
+        await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1),
+        `Horizontal overflow at ${route}`,
+      );
       for (const label of labels)
         if (label.color !== 'rgb(0, 0, 0)') report.errors.push({ route, width, ...label });
       if (route === '/') {
         const hero = await page
           .locator('.home-showcase h1, .home-showcase h1 > span')
           .evaluateAll((nodes) => nodes.map((n) => getComputedStyle(n).color));
+        assert(hero.length > 0, 'Homepage hero must exist');
+        const total = await page
+          .locator('.home-collection-total')
+          .evaluate((el) => ({
+            color: getComputedStyle(el).color,
+            weight: Number(getComputedStyle(el).fontWeight),
+          }));
+        if (total.color !== 'rgb(0, 0, 0)' || total.weight < 700)
+          report.errors.push({ route, width, total });
         for (const color of hero)
           if (color !== 'rgb(33, 110, 78)') report.errors.push({ route, width, heroColor: color });
       }

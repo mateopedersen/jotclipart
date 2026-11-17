@@ -32,19 +32,19 @@
   border: 1px solid var(--brand-border);
   border-radius: 10px;
   background: var(--uc-share-button-bg, #fff);
-  color: var(--uc-share-button-fg, var(--brand-action));
+  color: var(--uc-share-button-fg, var(--brand-ink));
   padding: 10px 14px;
   cursor: pointer;
 }
 .uc-share button:not(:disabled):is(:hover, :focus-visible) {
   background: var(--uc-share-button-hover-bg, var(--brand-page));
   border-color: var(--uc-share-button-hover-border, var(--brand-border));
-  color: var(--uc-share-button-fg, var(--brand-action));
+  color: var(--uc-share-button-fg, var(--brand-ink));
 }
 .uc-share button:not(:disabled):active {
   background: var(--uc-share-button-active-bg, var(--brand-soft));
   border-color: var(--uc-share-button-hover-border, var(--brand-border));
-  color: var(--uc-share-button-fg, var(--brand-action));
+  color: var(--uc-share-button-fg, var(--brand-ink));
 }
 .uc-share-network:is(:hover, :focus-visible) {
   background: var(--brand-page);

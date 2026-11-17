@@ -20,7 +20,7 @@
   overflow-wrap: normal;
 }
 .about-page p {
-  color: var(--about-text);
+  color: var(--brand-ink);
   margin: 0 0 18px;
 }
 .about-page strong {

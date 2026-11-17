@@ -518,7 +518,7 @@
 }
 .directory-sort label {
   font-size: 13px;
-  color: var(--directory-muted);
+  color: var(--brand-ink);
 }
 .directory-sort select {
   min-height: 44px;
@@ -669,7 +669,7 @@
 }
 .discovery-empty p {
   margin: 0 0 18px;
-  color: var(--directory-muted);
+  color: var(--brand-ink);
   line-height: 1.6;
 }
 .discovery-empty button,
@@ -695,12 +695,12 @@
 }
 .discovery-more p {
   margin: 0 0 12px;
-  color: var(--directory-muted);
+  color: var(--brand-ink);
   font-size: 13px;
   line-height: 1.5;
 }
 .directory-no-script {
-  color: var(--directory-muted);
+  color: var(--brand-ink);
   font-size: 14px;
   margin-top: 22px;
 }

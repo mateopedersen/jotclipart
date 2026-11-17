@@ -160,7 +160,7 @@
   line-height: 1.5;
 }
 .trust-flow p {
-  color: var(--trust-muted);
+  color: var(--brand-ink);
   line-height: 1.6;
   font-size: 0.9rem;
   margin: 0.6rem 0 0;
@@ -287,7 +287,7 @@
 .trust-sidebar-contact p {
   font-size: 0.84rem;
   line-height: 1.65;
-  color: var(--trust-muted);
+  color: var(--brand-ink);
   margin-bottom: 0.7rem;
 }
 .trust-sidebar-contact a {
@@ -520,7 +520,7 @@
 }
 .trust-faq-options p {
   font-size: 0.86rem;
-  color: var(--trust-muted);
+  color: var(--brand-ink);
   margin: 0;
 }
 .trust-faq-options > div {
@@ -701,7 +701,7 @@
 .trust-contact-band p {
   max-width: 69ch;
   font-size: 0.96rem;
-  color: var(--trust-muted);
+  color: var(--brand-ink);
   margin-bottom: 0.8rem;
 }
 .trust-contact-band a {

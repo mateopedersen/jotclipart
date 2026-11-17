@@ -1184,7 +1184,7 @@
 .studio-answers > div > p:not(.studio-kicker) {
   font-size: 17px;
   line-height: 1.7;
-  color: var(--studio-copy);
+  color: var(--brand-ink);
   font-weight: 600;
 }
 .studio-answers a,
@@ -1211,7 +1211,7 @@
 .studio-answer-list p {
   font-size: 16px;
   line-height: 1.85;
-  color: var(--studio-copy);
+  color: var(--brand-ink);
   font-weight: 500;
   margin: 8px 0 0;
 }
@@ -1235,7 +1235,7 @@
 .studio-trust p {
   font-size: 16px;
   line-height: 1.8;
-  color: var(--studio-copy);
+  color: var(--brand-ink);
   font-weight: 500;
   margin: 0 0 16px;
 }

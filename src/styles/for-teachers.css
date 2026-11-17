@@ -29,13 +29,13 @@
   overflow-wrap: normal;
 }
 .teachers-page :is(p, li, dd) {
-  color: var(--tc-text);
+  color: var(--brand-ink);
 }
 .teachers-page p {
   line-height: inherit;
 }
 .teachers-page a {
-  color: var(--tc-blue);
+  color: var(--brand-ink);
   text-underline-offset: 4px;
 }
 .teachers-page :is(button, input, textarea) {

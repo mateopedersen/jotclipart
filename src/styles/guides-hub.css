@@ -25,10 +25,10 @@
   overflow-wrap: normal;
 }
 .guide-manual p {
-  color: var(--gm-text);
+  color: var(--brand-ink);
 }
 .guide-manual a {
-  color: var(--gm-blue);
+  color: var(--brand-ink);
   text-underline-offset: 4px;
 }
 .guide-manual :is(a, button, summary, [tabindex]):focus-visible {
@@ -372,7 +372,7 @@
   margin: 19px 0 0;
   font-size: 19px;
   line-height: 1.6;
-  color: var(--gm-text);
+  color: var(--brand-ink);
 }
 .gm-questions details {
   border-bottom: 1px solid var(--gm-line);

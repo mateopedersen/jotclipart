@@ -79,7 +79,7 @@
   margin: 0.85rem auto 0 !important;
   font-size: 1rem;
   line-height: 1.75;
-  color: var(--nf-text);
+  color: var(--brand-ink);
 }
 .nf-recovery {
   grid-area: recovery;
@@ -200,7 +200,7 @@
 }
 .nf-section-intro {
   margin-top: 0.5rem !important;
-  color: var(--nf-text);
+  color: var(--brand-ink);
   font-size: 0.93rem;
   line-height: 1.75;
 }
@@ -262,7 +262,7 @@
 }
 .nf-section-heading p {
   margin-top: 0.45rem;
-  color: var(--nf-text);
+  color: var(--brand-ink);
   font-size: 0.93rem;
   line-height: 1.7;
 }

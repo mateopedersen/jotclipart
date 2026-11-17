@@ -106,7 +106,7 @@
   align-items: start;
   gap: 8px;
   margin: 8px 0;
-  color: var(--ai-support-ink);
+  color: var(--brand-ink);
   font-size: 11px;
   line-height: 1.5;
 }
@@ -148,7 +148,7 @@
 }
 .ai-page .ai-control-help {
   margin: 6px 0 9px;
-  color: var(--ai-support-ink);
+  color: var(--brand-ink);
   font-size: 12px;
 }
 .ai-section-card {

@@ -10,6 +10,7 @@ Keep accepted page/card/background treatments, green action surfaces and borders
 green interface symbols/arrows, original artwork and user-selected editor colors.
 White-on-green primary labels and semantic warning/error distinctions are retained.
 Navigation arrows use stronger immutable bold-v2 assets; footer arrows are 30px.
+The homepage illustration total uses black text with font-weight 700.
 Never overwrite old immutable arrow assets or clean current/previous installed
 runtimes. This typography-only release must preserve the final1215PDF repair root.
 
