@@ -7,15 +7,15 @@
   "publicOrigin": "https://jotclipart.com",
   "activeKey": "catalog/jotclipart/active.json",
   "software": {
-    "revision": "15b0e20cb1c56edc2e649a1d97503f23fc201ebc",
-    "abiSHA256": "1f27c628389871785d33f038dfb63515a2f4f6ba866709525b2cc321fcf7be45",
-    "workerSHA256": "034ce8a008ec095055d1f190b8428e606cf90d20f712510dc095384c71e2bb47",
-    "directory": "/Users/melihozcan/Documents/Codex/2026-10-22/bilgisayarima-baglan-ve-codex-te-gereksiz/work/jotclipart-migration/site/work/jotclipart-contact-retirement-20261117/work/jotclipart-release-15b0e20cb1c5"
+    "revision": "da8b83a4d35e8c33e9911ede3ab99058f6b2bce6",
+    "abiSHA256": "6b44b250d4105d5f2d5610862bde1a736a5ed0ef51e78aa4d43cbde62c4c341a",
+    "workerSHA256": "7a7fa8c9227d2aaa1bf4731f61bbdc5603c4d1d1d2d018ac0929750159914eb6",
+    "directory": "/Users/melihozcan/Documents/Codex/2026-10-22/bilgisayarima-baglan-ve-codex-te-gereksiz/work/jotclipart-migration/site/work/jotclipart-search-independent-20261117/work/jotclipart-release-da8b83a4d35e"
   },
-  "publicConfig": "/Users/melihozcan/Documents/Codex/2026-10-22/bilgisayarima-baglan-ve-codex-te-gereksiz/work/jotclipart-migration/site/work/jotclipart-contact-retirement-20261117/work/jotclipart-installed-15b0/config.json",
+  "publicConfig": "/Users/melihozcan/Documents/Codex/2026-10-22/bilgisayarima-baglan-ve-codex-te-gereksiz/work/jotclipart-migration/site/work/jotclipart-search-independent-20261117/work/jotclipart-installed-da8b83a4d35e/config.json",
   "lastVerifiedData": {
-    "revision": "c665ceb2dbefdffcf4238f40d482ea8ac7cbea54",
-    "root": "8cec421c20fd3367cc6be5b5f2d0cbdec0a5a81e95e7c075a1d6ca548df52ed4",
+    "revision": "dcbdc770a360dc198f21a609e86734108cf1e0bc",
+    "root": "d5879bd8000d94cd83a6dc5f458d933e845758893e29f23efb8e3c16c97e5081",
     "artworks": 49858,
     "topics": 804
   },
@@ -27,11 +27,11 @@
     "accountInventoryRequired": false,
     "fullCatalogBuildForContent": false
   },
-  "proof": "/Users/melihozcan/Documents/Codex/2026-10-22/bilgisayarima-baglan-ve-codex-te-gereksiz/work/jotclipart-migration/site/work/jotclipart-contact-retirement-20261117/work/jotclipart-installed-15b0/manifest.json",
+  "proof": "/Users/melihozcan/Documents/Codex/2026-10-22/bilgisayarima-baglan-ve-codex-te-gereksiz/work/jotclipart-migration/site/work/jotclipart-search-independent-20261117/work/jotclipart-installed-da8b83a4d35e/manifest.json",
   "protectedIndependentBackup": "/Users/melihozcan/Documents/UltraClipart-Publisher-KEEP",
   "previousInstallationRetained": true,
   "installationRequirement": "Run scripts/jotclipart/freeze-publisher.mjs only after the exact independent JotClipart software is live and its release gates pass. Old installed runtimes are preserved but cannot target this namespace.",
   "measurementsScope": "Actual production control/root read twice and exact ABI/source/worker/client bytes. Feature, model, full HTTP and R2 inventory gates remain separate release evidence.",
-  "installedRuntimePreservation": "/Users/melihozcan/Documents/Codex/2026-10-22/bilgisayarima-baglan-ve-codex-te-gereksiz/work/jotclipart-migration/site/work/jotclipart-contact-retirement-20261117/work/jotclipart-installed-15b0/manifest.json",
-  "preservationManifestSHA256": "8bd094b1c3f2bbeaa0c27c290f1a42125f11909aef77f0f0a8e7ef90a973c48a"
+  "installedRuntimePreservation": "/Users/melihozcan/Documents/Codex/2026-10-22/bilgisayarima-baglan-ve-codex-te-gereksiz/work/jotclipart-migration/site/work/jotclipart-search-independent-20261117/work/jotclipart-installed-da8b83a4d35e/manifest.json",
+  "preservationManifestSHA256": "1ce75c8fd5a797a81fb09024f4f10b101da66c4aeba7e7aadcfe2139d34adb5d"
 }
