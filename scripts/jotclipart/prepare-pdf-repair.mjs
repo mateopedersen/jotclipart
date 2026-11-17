@@ -264,7 +264,7 @@ const artworkRow = {
 };
 const latestTopicsBytes = gunzipSync(readFileSync(join(material, manifest.topicRows.file)));
 assert.equal(sha(latestTopicsBytes), manifest.topicRows.sha256);
-const sourceTopic = verifiedArrayMember(latestTopicsBytes,'slug',topic);
+const sourceTopic = verifiedArrayMember(latestTopicsBytes, 'slug', topic);
 assert(sourceTopic);
 const currentRawById = new Map(sourceTopic.rawItems.map((a) => [a.id, a]));
 for (const [key, value] of acceptedRawOverrides)
