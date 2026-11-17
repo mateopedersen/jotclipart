@@ -1,6 +1,11 @@
 import registry from '../../data/jotclipart-editorial-links.json' with { type: 'json' };
 
-/** Attach reviewed links only while the exact surrounding source phrase is present. */
+/**
+ * Attach reviewed links only while the exact surrounding source phrase is present.
+ * @param {string} path
+ * @param {readonly string[]} paragraphs
+ * @returns {{text: string, href?: string}[][]}
+ */
 export function editorialParagraphParts(path, paragraphs) {
   const approved = registry.pages[path] ?? [];
   const used = new Set();
