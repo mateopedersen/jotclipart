@@ -1,16 +1,21 @@
+import { notFoundResponse, notFoundSearchScript } from './not-found.mjs';
 import { handleCookieRegion } from '../cookies/region.mjs';
 
 /** Only local immutable UI/software assets. No old project/host proxy exists. */
 export const transferCSP =
   "default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; font-src data:; img-src data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'";
 
-export async function fallbackFetch(request, env, execution, reviewedPagePolicy) {
+export async function fallbackFetch(request, env, execution, reviewedPagePolicy, shellScripts) {
   const url = new URL(request.url);
   if (url.pathname === '/api/cookie-region.json') return handleCookieRegion(request);
   if (!['GET', 'HEAD'].includes(request.method))
     return new Response('Method not allowed', { status: 405, headers: { allow: 'GET, HEAD' } });
-  if (!env.ASSETS?.fetch) throw Error('Independent Pages asset binding required');
-  const response = await env.ASSETS.fetch(request);
+  const explicitErrorPage = ['/404', '/404/', '/404.html'].includes(url.pathname);
+  if (!explicitErrorPage && !env.ASSETS?.fetch)
+    throw Error('Independent Pages asset binding required');
+  const response = explicitErrorPage
+    ? notFoundResponse(request, notFoundSearchScript(shellScripts))
+    : await env.ASSETS.fetch(request);
   const html = response.headers.get('content-type')?.toLowerCase().startsWith('text/html');
   if (!html && request.method !== 'HEAD') return response;
   const headers = new Headers(response.headers);

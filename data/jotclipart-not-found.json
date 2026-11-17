@@ -1,0 +1,36 @@
+{
+  "src": "/illustrations/not-found/jotclipart-search-57a01253126f-1200.webp",
+  "srcset": "/illustrations/not-found/jotclipart-search-2a4d65f882f8-400.webp 400w, /illustrations/not-found/jotclipart-search-6a59da0b35ab-700.webp 700w, /illustrations/not-found/jotclipart-search-57a01253126f-1200.webp 1200w",
+  "width": 1200,
+  "height": 900,
+  "alt": "A green glass lens frames an orange slice beside a sculpted leaf.",
+  "sourceRenderSha256": "b9ed0674a6470651cf7c40d8e97ef4a3634be3e60fc4b88e0bcd2e5fbb7eb4c7",
+  "files": [
+    {
+      "src": "/illustrations/not-found/jotclipart-search-2a4d65f882f8-400.webp",
+      "width": 400,
+      "height": 300,
+      "bytes": 22886,
+      "sha256": "2a4d65f882f802e843d265e9c08c930b49e2145208bfb2b4d8d5575da0eebc6b"
+    },
+    {
+      "src": "/illustrations/not-found/jotclipart-search-6a59da0b35ab-700.webp",
+      "width": 700,
+      "height": 525,
+      "bytes": 48892,
+      "sha256": "6a59da0b35abbcc6040849527fbf6186492b0d24d2a8be1603434e82e4f429b0"
+    },
+    {
+      "src": "/illustrations/not-found/jotclipart-search-57a01253126f-1200.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 120568,
+      "sha256": "57a01253126fdd2bd10d05ce6727391c0b6561275769cfd23a89f8b771354a04"
+    }
+  ],
+  "source": "design-assets/not-found-3d/jotclipart-search-hero.png",
+  "generation": {
+    "tool": "Built-in ImageGen",
+    "prompt": "Create a stand-alone premium 3D editorial hero illustration for JotClipart's 404 page. A large translucent emerald glass lens tilts gracefully over two floating warm-white illustration cards, one bearing a vivid sculpted orange slice and the other a deep green die-cut leaf. The lens and cards sit above a pale mint rounded slab with a fine perforated corner detail. Art-directed composition: one clear focal point, asymmetric overlap, visible separation, honest three-dimensional materials, beautifully soft studio lighting, delicate contact shadows, restrained use of golden orange against a forest and mint palette. Keep the illustration fully in frame with generous transparent perimeter on all sides. Landscape 4:3, isolated on true transparent alpha, no backdrop or horizon. Render as crafted physical collectibles with sophisticated subtle texture and polished glass, crisp at 600 CSS pixels. Absolutely no text, letters, numbers, watermarks, logos, website UI, mock browser or extra floating confetti. The numeric error code will be separate HTML."
+  }
+}

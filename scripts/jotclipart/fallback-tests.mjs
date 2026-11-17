@@ -127,3 +127,23 @@ test('cookie-region edge semantics and unsupported methods remain unchanged', as
   assert.equal(post.status, 405);
   assert.equal(post.headers.get('allow'), 'GET, HEAD');
 });
+test('explicit 404 variants and HEAD use the real error page without redirecting', async () => {
+  const script = '/__ssr-client/' + 'a'.repeat(40) + '/search.js';
+  const shellScripts = {
+    '/repo/src/layouts/Layout.astro?astro&type=script&index=3&lang.ts': script,
+  };
+  for (const path of ['/404', '/404/', '/404.html']) {
+    const response = await fallbackFetch(req(path), {}, {}, page, shellScripts);
+    assert.equal(response.status, 404);
+    assert.equal(response.headers.get('location'), null);
+    assert.equal(response.headers.get('x-robots-tag'), 'noindex');
+    assert.match(response.headers.get('cache-control'), /no-store/);
+    const html = await response.text();
+    assert.match(html, /We couldn't find that page/);
+    assert.match(html, /method="get"/);
+    assert(html.includes('src="' + script + '"'));
+    const head = await fallbackFetch(req(path, 'HEAD'), {}, {}, page, shellScripts);
+    assert.equal(head.status, 404);
+    assert.equal(await head.text(), '');
+  }
+});

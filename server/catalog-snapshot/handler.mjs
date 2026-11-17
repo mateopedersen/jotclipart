@@ -1,3 +1,4 @@
+import { notFoundResponse, notFoundSearchScript } from '../jotclipart/not-found.mjs';
 import {
   catalogOgRoute,
   catalogOgSource,
@@ -43,14 +44,6 @@ const paths = {
 };
 const json = (body, root) =>
   Response.json(body, { headers: { 'cache-control': 'no-store', 'x-uc-snapshot': root } });
-const missing = () =>
-  new Response(
-    '<!doctype html><html lang="en"><head><meta name="robots" content="noindex"><title>Page Not Found</title></head><body><h1>Page Not Found</h1><a href="/">JotClipart</a></body></html>',
-    {
-      status: 404,
-      headers: { 'content-type': 'text/html;charset=utf-8', 'cache-control': 'no-store' },
-    },
-  );
 export function createCatalogHandler({
   capture,
   bucket,
@@ -84,6 +77,7 @@ export function createCatalogHandler({
   return async (request) => {
     const rules = navigationRulesResponse(request);
     if (rules) return rules;
+    const missing = () => notFoundResponse(request, notFoundSearchScript(shellScripts));
     const url = new URL(request.url),
       path = url.pathname,
       legacyDownload = /^\/download\/([a-z0-9]+(?:-[a-z0-9]+)*)\/?$/.exec(path),

@@ -1,3 +1,4 @@
+import { notFoundHTML, notFoundSearchScript } from '../../server/jotclipart/not-found.mjs';
 import { execFileSync } from 'node:child_process';
 import {
   readFileSync,
@@ -83,10 +84,13 @@ writeFileSync(
   join(out, '_headers'),
   '/*\n  X-Content-Type-Options: nosniff\n/__ssr-client/*\n  Cache-Control: public, max-age=31536000, immutable\n/__editor-preview-index/*\n  Cache-Control: public, max-age=31536000, immutable\n  X-Robots-Tag: noindex\n',
 );
-writeFileSync(
-  join(out, '404.html'),
-  '<!doctype html><html lang="en"><head><meta name="robots" content="noindex"><title>Page Not Found | JotClipart</title></head><body><h1>Page Not Found</h1><a href="/">JotClipart</a></body></html>',
+const shellScripts = JSON.parse(
+  readFileSync(join(buildRoot, 'shell-ssr/compiled/script-urls.json')),
 );
+const errorSearch = notFoundSearchScript(shellScripts);
+if (!errorSearch || !code.clientAssets.some((asset) => asset.url === errorSearch))
+  throw Error('Missing verified error-page search asset');
+writeFileSync(join(out, '404.html'), notFoundHTML(errorSearch));
 const inventory = [];
 function walk(dir) {
   for (const name of readdirSync(dir)) {
