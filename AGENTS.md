@@ -1,3 +1,11 @@
+# Homepage hero refinement — latest owner direction, 2026-11-17
+
+Only the words “Free Clipart” are green, with a thin, hand-drawn double swoosh
+directly underneath those words. “for Every Project” is black. The headline uses
+the existing self-hosted Inter variable font at weight900. This supersedes the
+earlier all-green hero exception. Preserve other black text, bold illustration
+counter, accepted backgrounds, green Explore illustration and bold Edit labels.
+
 # Current installed JotClipart — concurrent UI release reconciled, 2026-11-17
 
 This supersedes all historical installed-release notes below. The actual current

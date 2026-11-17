@@ -90,18 +90,38 @@ try {
       for (const label of labels)
         if (label.color !== 'rgb(0, 0, 0)') report.errors.push({ route, width, ...label });
       if (route === '/') {
-        const hero = await page
-          .locator('.home-showcase h1, .home-showcase h1 > span')
-          .evaluateAll((nodes) => nodes.map((n) => getComputedStyle(n).color));
-        assert(hero.length > 0, 'Homepage hero must exist');
+        const hero = await page.locator('.home-showcase h1').evaluate((heading) => {
+          const brand = heading.querySelector('.home-title-brand'),
+            project = heading.querySelector('.home-title-project'),
+            underline = brand?.querySelector('.home-title-underline'),
+            brandRect = brand?.getBoundingClientRect(),
+            lineRect = underline?.getBoundingClientRect();
+          return {
+            text: heading.textContent.replace(/\s+/g, ' ').trim(),
+            brand: brand && getComputedStyle(brand).color,
+            project: project && getComputedStyle(project).color,
+            weight: Number(getComputedStyle(heading).fontWeight),
+            underline:
+              !!underline &&
+              underline.getAttribute('aria-hidden') === 'true' &&
+              lineRect.width > 0 &&
+              lineRect.height > 0 &&
+              lineRect.left >= brandRect.left - 1 &&
+              lineRect.right <= brandRect.right + 1 &&
+              lineRect.bottom <= brandRect.bottom + 1,
+          };
+        });
+        assert.equal(hero.text, 'Free Clipart for Every Project');
+        assert.equal(hero.brand, 'rgb(33, 110, 78)');
+        assert.equal(hero.project, 'rgb(0, 0, 0)');
+        assert(hero.weight >= 900, 'Homepage headline must use the requested heavy font');
+        assert(hero.underline, 'Decorative underline must sit inside Free Clipart only');
         const total = await page.locator('.home-collection-total').evaluate((el) => ({
           color: getComputedStyle(el).color,
           weight: Number(getComputedStyle(el).fontWeight),
         }));
         if (total.color !== 'rgb(0, 0, 0)' || total.weight < 700)
           report.errors.push({ route, width, total });
-        for (const color of hero)
-          if (color !== 'rgb(33, 110, 78)') report.errors.push({ route, width, heroColor: color });
       }
       if (route === '/collections/') {
         const axe = await new AxeBuilder({ page })

@@ -12,17 +12,36 @@
 }
 .home-showcase h1 {
   margin: 0 0 21px;
-  color: var(--brand-action);
-  font-family: inherit;
+  color: var(--brand-ink);
+  font-family: 'UltraClipart Sans', Arial, sans-serif;
   font-size: clamp(43px, 4.8vw, 66px);
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.13;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.04em;
   overflow-wrap: normal;
 }
-.home-showcase h1 > span {
-  display: block;
+.home-showcase .home-title-brand {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.15em;
   color: var(--brand-action);
+  white-space: nowrap;
+}
+.home-title-underline {
+  position: absolute;
+  inset: auto 0 0;
+  width: 100%;
+  height: 0.17em;
+  overflow: visible;
+  fill: none;
+  stroke: var(--brand-primary);
+  stroke-width: 2.7;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+.home-showcase .home-title-project {
+  display: block;
+  color: var(--brand-ink);
 }
 .home-showcase-lead {
   max-width: 490px;
@@ -475,9 +494,6 @@
   .home-showcase h1 {
     font-size: clamp(44px, 7vw, 62px);
   }
-  .home-showcase h1 > span {
-    display: inline;
-  }
   .home-showcase-lead {
     max-width: 620px;
     font-size: 18px;
@@ -516,9 +532,6 @@
     font-size: clamp(36px, 9.7vw, 48px);
     line-height: 1.16;
     letter-spacing: -0.02em;
-  }
-  .home-showcase h1 > span {
-    display: block;
   }
   .home-showcase-lead {
     margin-bottom: 23px;
