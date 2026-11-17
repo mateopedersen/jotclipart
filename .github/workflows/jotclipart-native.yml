@@ -16,7 +16,8 @@ concurrency:
 env:
   ASTRO_TELEMETRY_DISABLED: '1'
   PLAYWRIGHT_SKIP_BROWSER_GC: '1'
-  BASE_URL: https://preview.jotclipart.com
+  # This candidate branch tests its own immutable software without replacing the shared preview.
+  BASE_URL: https://ci-native-20261117-f978.jotclipart.pages.dev
   EXPECT_REVISION: ${{ github.event.pull_request.head.sha || github.sha }}
 
 jobs:
