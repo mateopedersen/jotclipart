@@ -1,4 +1,5 @@
 import { loadPresentationSoftware, stagePresentationViews } from './presentation.mjs';
+import { contentPresentationOptions } from './content-presentation-options.mjs';
 // Changed content plus optional bounded discovery HTML preparation.
 // No template compilation, native-media scan or activation.
 import { mkdirSync, writeFileSync, readFileSync, lstatSync, existsSync } from 'node:fs';
@@ -20,6 +21,7 @@ import { verifySourceFile, verifySourceCapsule } from './source-files.mjs';
 import { assertPublisherTarget } from '../jotclipart/publisher-target.mjs';
 const hash = (b) => createHash('sha256').update(b).digest('hex');
 export async function validateContentPacket(packet) {
+  contentPresentationOptions(packet);
   if (
     packet?.schema !== 1 ||
     packet.status !== 'SOURCE_REVIEWED_CONTENT_BATCH' ||
@@ -98,6 +100,7 @@ export async function prepareCatalogContent({
             context,
             bucket,
             ...presentation,
+            ...contentPresentationOptions(packet),
             allowFixture: true,
             progress,
           });

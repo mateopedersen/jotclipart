@@ -32,10 +32,12 @@ const sha = (b) => createHash('sha256').update(b).digest('hex');
 // installed request handler and its ABI-bound source inputs unchanged.
 export async function readPresentationSurprisePicks(context, options) {
   const picks = await readSurprisePicks(context, options);
-  return Promise.all(picks.map(async (pick) => ({
-    ...pick,
-    publicSlug: await publicRouteForId(context, pick.id),
-  })));
+  return Promise.all(
+    picks.map(async (pick) => ({
+      ...pick,
+      publicSlug: await publicRouteForId(context, pick.id),
+    })),
+  );
 }
 const CORE = [
   ['/', 'home'],
@@ -103,6 +105,8 @@ export async function stagePresentationViews({
   allowFixture = false,
   maxRoutes = 1536,
   maxOutputBytes = 128 * 1024 * 1024,
+  priorityArtworkIDs = [],
+  priorityTopics = [],
   progress = () => {},
 }) {
   if (
@@ -114,7 +118,16 @@ export async function stagePresentationViews({
     maxRoutes > 1536 ||
     !Number.isSafeInteger(maxOutputBytes) ||
     maxOutputBytes < 1048576 ||
-    maxOutputBytes > 128 * 1024 * 1024
+    maxOutputBytes > 128 * 1024 * 1024 ||
+    !Array.isArray(priorityArtworkIDs) ||
+    priorityArtworkIDs.length > 256 ||
+    !Array.isArray(priorityTopics) ||
+    priorityTopics.length > 64 ||
+    new Set(priorityArtworkIDs).size !== priorityArtworkIDs.length ||
+    new Set(priorityTopics).size !== priorityTopics.length ||
+    [...priorityArtworkIDs, ...priorityTopics].some(
+      (id) => typeof id !== 'string' || !/^[a-z0-9][a-z0-9-]*$/.test(id),
+    )
   )
     throw Error('Bounded presentation stage required');
   const cc = await openSevenFacetCollectionContext(bucket, {
@@ -126,6 +139,19 @@ export async function stagePresentationViews({
     shells = await context.read('collections', collections.shells, { maxBytes: 65536 }),
     groups = await readShellField(context, shells, 'clusters');
   const plans = new Map(CORE.map(([path, kind]) => [path, { path, kind }]));
+  for (const topic of priorityTopics) {
+    if (!Object.hasOwn(counts.topics, topic))
+      throw Error('Changed presentation topic absent from signed counts');
+    const path = '/clipart/' + topic + '/';
+    plans.set(path, { path, kind: 'collection', topic });
+  }
+  for (const id of priorityArtworkIDs) {
+    const artwork = await readArtwork(context, id);
+    if (!artwork?.published || !artwork.indexable)
+      throw Error('Changed presentation artwork is not eligible');
+    const path = '/art/' + (await publicRouteForId(context, id)) + '/';
+    plans.set(path, { path, kind: 'art', id });
+  }
   for (const cluster of groups) {
     const slug = cluster
       .toLowerCase()

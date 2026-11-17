@@ -159,9 +159,10 @@ for (const kind of ['webp', 'pdf', 'thumb']) {
 const review = structuredClone(oldRow.review);
 review.inputMetadataSha256 = metadataSignature(raw);
 review.inputContextSha256 = reviewContextSignature(raw);
-review.reviewedAt = new Date().toISOString();
 review.technicalRepair = {
   status: 'UNCHANGED_SOURCE_IMAGE_AND_COPY_RECONCILED_AFTER_PDF_CODEC_REPAIR',
+  checkedAt: new Date().toISOString(),
+  semanticReviewRetained: true,
   priorReviewSHA256: hashRecord(oldRow.review),
   sourceCapsuleSHA256: historical.source.sha256,
   repairReceiptSHA256: sha(readFileSync(repairReceiptArg)),
