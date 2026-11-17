@@ -1,3 +1,16 @@
+# Final contact integration regression — 2026-11-17
+
+The actual dynamic Contact response lacked frame-src despite the legacy static
+helper. Apply the existing exact docs.google.com-only Contact CSP helper in
+applyCatalogHeaders for HTML /contact/ only, retaining the reviewed script,
+connect, form-action, object-src, frame-ancestors, cache and snapshot controls.
+Validate the real Google iframe and all seven prefilled topic choices, plus
+open-draft preservation. Do not replace these checks with mocked CSP headers.
+New Google Form owner is solely jotclipart@gmail.com, notifications enabled
+and a real new-response notification was observed in that exact mailbox.
+Public form ID1FAIpQLSdW7bocRNn3EEUUoQ0VorAzL_ZHQ6NH0GtlSzj8NZG8UC3IuA,
+topic field entry.1081521294 comes from the owner's official prefill link.
+
 # Latest owner URL policy — 2026-11-17
 
 The owner explicitly says to fix bad addresses WITHOUT redirects. For the finite
