@@ -4,7 +4,9 @@ import { mkdtempSync, mkdirSync, writeFileSync, rmSync, readFileSync } from 'nod
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { contentLink } from '../src/lib/content-link.ts';
+import { editorialParagraphParts } from '../src/lib/editorial-links.mjs';
 import { auditLinkGraph, linkKind } from '../scripts/seo/audit-link-graph.mjs';
+import editorial from '../data/jotclipart-editorial-links.json' with { type: 'json' };
 
 const document = (body, noindex = false) =>
   `<!doctype html><html><head><meta name="robots" content="${noindex ? 'noindex,follow' : 'index,follow'}"></head><body><main id="main">${body}</main></body></html>`;
@@ -137,4 +139,52 @@ test('the two Builder policy links use section IDs present in the shared policy 
     assert.ok(source.includes(`/${page}/#builder`));
     assert.ok(pages[page].sections.some((section) => section.id === 'builder'));
   }
+});
+test('editorial annotations have a unique contextual anchor and a direct, verified destination', () => {
+  assert.equal(editorial.schema, 1);
+  for (const [source, rules] of Object.entries(editorial.pages)) {
+    assert.match(source, /^\/(?:clipart|collection)\/[a-z0-9]+(?:-[a-z0-9]+)*\/$/);
+    assert.ok(rules.length >= 1 && rules.length <= 3, source);
+    const destinations = new Set();
+    for (const rule of rules) {
+      assert.ok(rule.text.trim().length >= 3, source);
+      assert.ok(rule.in.length > rule.text.length && rule.in.length <= 240, source);
+      assert.ok(rule.in.includes(rule.text) && !rule.in.includes('{{artworkCount}}'), source);
+      assert.equal(rule.in.indexOf(rule.text), rule.in.lastIndexOf(rule.text), source);
+      assert.notEqual(rule.href, source);
+      assert.ok(!destinations.has(rule.href), source);
+      destinations.add(rule.href);
+      const link = contentLink(rule.href);
+      if (link.external) {
+        assert.match(rule.href, /^https:\/\//);
+        assert.ok(rule.source?.length > 16, source);
+        assert.match(rule.verifiedAt, /^\d{4}-\d{2}-\d{2}$/);
+      } else {
+        assert.match(rule.href, /^\/[a-z0-9]+(?:[\/-][a-z0-9]+)*\/$/);
+      }
+    }
+  }
+});
+test('editorial links preserve source prose and its live count and never repeat a destination', () => {
+  const paragraphs = [
+    'Medusa and Greca details appear on visible garments and accessories.',
+    'Explore {{artworkCount}} drawings in color and black and white, including knitwear looks.',
+    'Medusa and Greca details appear on visible garments and accessories.',
+    'Medusa is mentioned in a different context.',
+  ];
+  const parts = editorialParagraphParts('/clipart/versace/', paragraphs);
+  assert.deepEqual(
+    parts.map((row) => row.map((part) => part.text).join('')),
+    paragraphs,
+  );
+  assert.deepEqual(
+    parts.flatMap((row) => row.filter((part) => part.href).map((part) => part.text)),
+    ['Medusa', 'black and white'],
+  );
+  assert.deepEqual(
+    editorialParagraphParts('/clipart/unrelated/', paragraphs).flatMap((row) =>
+      row.filter((part) => part.href),
+    ),
+    [],
+  );
 });

@@ -128,6 +128,7 @@ try {
       'social-images',
       'jotclipart-brand',
       'jotclipart-topic-heading',
+      'linking',
       'page-seo',
       'jotclipart-build-root',
       'jotclipart-publisher-target',
