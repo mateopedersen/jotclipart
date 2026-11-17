@@ -3,8 +3,8 @@ export const actionIconAssets = {
   image: '/illustrations/actions/image-jot-v2.svg',
   document: '/illustrations/actions/document-jot-v2.svg',
   edit: '/illustrations/actions/edit-jot-v2.svg',
-  view: '/illustrations/actions/view.svg',
-  download: '/illustrations/actions/download.svg',
+  view: '/illustrations/actions/view-jot-green-v1.svg',
+  download: '/illustrations/actions/download-jot-green-v1.svg',
 } as const;
 export function actionIconAsset(name: string): string | undefined {
   return Object.hasOwn(actionIconAssets, name)

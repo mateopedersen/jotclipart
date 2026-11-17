@@ -35,6 +35,8 @@ export interface ArtworkInput {
   sourceOriginalSha256?: string;
   pdfColorReview?: OwnerPdfColorDirection;
   thumb?: string;
+  originalThumb?: string;
+  editable?: boolean;
   thumbSrcSet?: string;
   webp?: string;
   pdf?: string | null;
@@ -148,8 +150,11 @@ export function normalize(
     text = words(`${item.title} ${item.alt ?? ''}`);
   const titled = mentions(item.title),
     named = mentions(`${item.title} ${item.alt ?? ''}`);
-  const topic = BY_TOPIC.get(item.topic ?? '') ??
-    (catalogSubject === undefined ? CATALOG_SUBJECTS.get(item.topic ?? '') : catalogSubject ?? undefined);
+  const topic =
+    BY_TOPIC.get(item.topic ?? '') ??
+    (catalogSubject === undefined
+      ? CATALOG_SUBJECTS.get(item.topic ?? '')
+      : (catalogSubject ?? undefined));
   const catalogContext =
     topic?.domain === 'catalog' && topic.terms.some((term) => ` ${text} `.includes(` ${term} `));
   const issues: string[] = [];

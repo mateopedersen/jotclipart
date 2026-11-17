@@ -74,7 +74,7 @@
 }
 .trust-intro {
   max-width: 47ch;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: clamp(1.07rem, 1.8vw, 1.24rem);
   line-height: 1.65;
   margin-bottom: 1.6rem;

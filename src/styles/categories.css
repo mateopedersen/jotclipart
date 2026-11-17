@@ -80,7 +80,7 @@
   margin: 0 0 18px;
 }
 .discovery-hero h1 span {
-  color: var(--brand-accent);
+  color: var(--brand-ink);
 }
 .discovery-lead {
   color: var(--brand-ink);
@@ -877,7 +877,7 @@
 }
 .filter-heading small {
   display: block;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 11px;
   font-weight: 550;
   margin-bottom: 4px;

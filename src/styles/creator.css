@@ -23,7 +23,7 @@
   margin: 0 0 22px;
 }
 .studio-intro h1 span {
-  color: var(--brand-accent);
+  color: var(--brand-ink);
 }
 .studio-intro-copy > p:not(.studio-kicker) {
   font-size: 17px;
@@ -52,7 +52,7 @@
 }
 .studio-intro-meta strong {
   display: block;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 25px;
   font-weight: 700;
   line-height: 1.15;
@@ -61,7 +61,7 @@
 .studio-intro-meta span {
   display: block;
   margin-top: 6px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 12px;
   font-weight: 700;
   line-height: 1.5;
@@ -141,7 +141,7 @@
 .studio-artboard-caption {
   display: block;
   text-align: center;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 22px;
   font-weight: 750;
   letter-spacing: -0.5px;
@@ -184,7 +184,7 @@
 .studio-launch small {
   display: block;
   font-size: 12px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   margin-top: 5px;
   line-height: 1.5;
   font-weight: 600;
@@ -711,7 +711,7 @@
   flex: 1;
   min-height: 44px;
   padding: 10px 0 0;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 13px;
   font-weight: 700;
   line-height: 1.45;
@@ -975,7 +975,7 @@
   margin: 12px 0 20px;
 }
 .studio-learning-heading h2 span {
-  color: var(--brand-accent);
+  color: var(--brand-ink);
 }
 .studio-learning-heading > p:last-child {
   font-size: 18px;

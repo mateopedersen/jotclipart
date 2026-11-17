@@ -130,7 +130,11 @@ export function initOriginalImageLoading(
     if (!s.preview || !s.image.hasAttribute('data-original-deferred') || !frame) return;
     if (
       [...frame.children].some(
-        (child) => child !== s.image && child !== s.backdrop && child !== s.note,
+        (child) =>
+          child !== s.image &&
+          child !== s.backdrop &&
+          child !== s.note &&
+          !(child.classList.contains('related-image-error') && (child as HTMLElement).hidden),
       )
     )
       return;

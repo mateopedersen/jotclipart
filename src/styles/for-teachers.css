@@ -190,7 +190,7 @@
 .tc-library-desk figcaption small {
   display: block;
   margin-top: 5px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 16px;
 }
 .tc-library-desk > p {
@@ -372,7 +372,7 @@
   margin: 0 0 12px;
 }
 .tc-start-flow h3 > span {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   margin-right: 7px;
   font-weight: 650;
 }
@@ -697,7 +697,7 @@
   border-top: 1px solid var(--brand-border);
   padding-top: 10px;
   font-size: 16px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .tc-example-stage-label {
   background: #ffffff;
@@ -911,7 +911,7 @@
 }
 .teachers-page .gm-screen-figure figcaption {
   font-family: inherit;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 17px;
   line-height: 1.55;
 }

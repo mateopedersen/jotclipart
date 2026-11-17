@@ -1,6 +1,6 @@
 .about-page {
   --about-ink: var(--brand-ink);
-  --about-text: var(--brand-action);
+  --about-text: var(--brand-ink);
   --about-blue: var(--brand-action);
   --about-line: var(--brand-soft);
   max-width: 1200px;
@@ -83,7 +83,7 @@
   letter-spacing: -0.035em;
 }
 .about-hero h1 span {
-  color: var(--brand-accent);
+  color: var(--brand-ink);
 }
 .about-page .about-intro {
   font-size: 21px;
@@ -168,7 +168,7 @@
 }
 .about-artwork figcaption > span > span {
   display: block;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 13px;
 }
 .about-artwork-grid {

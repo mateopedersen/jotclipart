@@ -58,7 +58,9 @@ def repair_confirmed_jpx(source, output, maximum_bytes=1_000_000, max_sample_rms
         # A fully boxed three-component RGB JP2 is separately permitted only
         # after the source ICC conversion; never reuse a CMYK codestream as RGB.
         encodings=[('flate',None)]+[('jpeg',q) for q in [100,99,98,97,96,95]]
-        if mode=='RGB':encodings += [('rgb-jp2',q) for q in range(60,43,-2)]
+        # Use every integer dB: a two-dB jump can miss the only encoding that
+        # satisfies both the unchanged 1 MB ceiling and strict pixel-error bound.
+        if mode=='RGB':encodings += [('rgb-jp2',q) for q in range(60,43,-1)]
         for codec,quality in encodings:
             if quality is None:
                 data=zlib.compress(pix.tobytes(),9);filter_name='/FlateDecode';error=0.0

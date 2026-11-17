@@ -37,7 +37,7 @@
   margin: 12px 0 0;
   font-size: 16px;
   line-height: 1.65;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .related-collection {
   flex-shrink: 0;
@@ -209,7 +209,7 @@
   font-size: 14px;
   font-weight: 450;
   min-height: 4.5em;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   line-height: 1.5;
   margin: 7px 0 17px;
 }
@@ -232,6 +232,13 @@
   background: white;
   color: var(--brand-action);
   cursor: pointer;
+}
+.related-card-copy > .related-edit {
+  width: 100%;
+  min-height: 44px;
+  margin-top: 8px;
+  color: var(--brand-action);
+  border-color: var(--brand-border);
 }
 .related-favorite[aria-pressed='true'] {
   color: #b73556;

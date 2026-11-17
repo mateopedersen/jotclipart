@@ -22,7 +22,7 @@
 }
 .home-showcase h1 > span {
   display: block;
-  color: var(--brand-accent);
+  color: var(--brand-ink);
 }
 .home-showcase-lead {
   max-width: 490px;
@@ -102,7 +102,7 @@
 }
 .home-category-heading h2 {
   margin: 0;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 14px;
   font-weight: 600;
   line-height: 1.5;
@@ -210,7 +210,7 @@
 }
 .home-collection-heading h2 {
   margin: 0;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 15px;
   font-weight: 600;
   line-height: 1.5;
@@ -285,7 +285,7 @@
 .home-sample-caption > span {
   display: block;
   margin-top: 6px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 10px;
   line-height: 1.5;
 }

@@ -59,7 +59,7 @@
   font-weight: 700;
 }
 .ai-heading h1 span {
-  color: var(--brand-accent);
+  color: var(--brand-ink);
 }
 .ai-heading p {
   font-size: clamp(16px, 1.35vw, 20px);
@@ -79,7 +79,7 @@
 }
 .ai-section-heading > span,
 .ai-board-heading h2 > span {
-  color: var(--brand-accent);
+  color: var(--brand-ink);
   font-weight: 700;
 }
 .ai-field-label {
@@ -950,7 +950,7 @@
 }
 .ai-small {
   font-size: 13px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   line-height: 1.7;
 }
 .ai-clear {
@@ -1016,7 +1016,7 @@
 .ai-how-intro {
   max-width: 82ch;
   margin: -12px 0 28px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 16px;
   line-height: 1.7;
 }
@@ -1063,7 +1063,7 @@
 .ai-how-visual figcaption {
   margin-top: 10px;
   text-align: center;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 11px;
   line-height: 1.5;
 }

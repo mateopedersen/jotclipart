@@ -25,6 +25,36 @@ function item(id, overrides = {}) {
 function ids(result) {
   return [...result.alternatives, ...result.companions].map((c) => c.id);
 }
+test('related display previews stay source-bound without replacing full originals or edit eligibility', () => {
+  const fixture = (id, digest, editable = true, withProof = true) =>
+    item(id, {
+      webp: `https://assets.ultraclipart.com/fixtures/${id}.${digest.slice(0, 16)}.webp`,
+      originalThumb: `https://assets.ultraclipart.com/fixtures/${id}.thumbnail.webp`,
+      editable,
+      files: {
+        webp: { bytes: 1000, sha256: digest },
+        ...(withProof ? { thumb: { bytes: 100, sha256: 'd'.repeat(64) } } : {}),
+        pdf: { bytes: 1000, sha256: digest.split('').reverse().join('') },
+      },
+    });
+  const entries = [
+    fixture('preview-source', 'a'.repeat(64)),
+    fixture('preview-read-only', 'b'.repeat(64), false),
+    fixture('preview-no-proof', 'c'.repeat(64), true, false),
+  ];
+  const result = compactBrowserSnapshot(new RelatedIndex(entries).snapshot('preview-source'));
+  const cards = [...result.alternatives, ...result.companions, ...result.collection];
+  const matched = cards.find((c) => c.id === 'preview-read-only');
+  assert(matched);
+  assert.equal(matched.webp, entries[1].webp);
+  assert.equal(matched.editable, false);
+  assert.deepEqual(matched.loadingPreview, {
+    source: entries[1].webp.replace('assets.ultraclipart.com', 'assets.jotclipart.com'),
+    url: entries[1].originalThumb.replace('assets.ultraclipart.com', 'assets.jotclipart.com'),
+  });
+  assert.equal(cards.find((c) => c.id === 'preview-no-proof')?.loadingPreview, undefined);
+  assert(Buffer.byteLength(JSON.stringify(result)) <= 60_000);
+});
 test('matching title details improve ranking only within a valid subject', () => {
   const source = normalize(
     item('detail-source', {

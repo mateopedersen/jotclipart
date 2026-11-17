@@ -177,7 +177,7 @@
 .library-letter-group h3 {
   margin: 4px 0;
   font-size: 1.7rem;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .library-letter-group ul {
   display: grid;
@@ -210,7 +210,7 @@
   line-height: 1.35;
 }
 .library-letter-group small {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 0.85rem;
 }
 .library-letter-group a:hover,

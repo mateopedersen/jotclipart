@@ -145,11 +145,11 @@
   color: var(--brand-action);
 }
 .site-header .site-nav-trigger[data-current='true'] {
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .site-header .site-nav-trigger:hover,
 .site-header .site-nav-trigger[aria-expanded='true'] {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   background: var(--brand-page);
   border-color: var(--brand-soft);
 }
@@ -697,14 +697,14 @@
     border-radius: 0;
     font-size: 16px;
     font-weight: 650;
-    color: var(--brand-action);
+    color: var(--brand-ink);
     background: white;
   }
   .site-header .site-nav-trigger:hover,
   .site-header .site-nav-trigger[aria-expanded='true'] {
     background: white;
     border: 0;
-    color: var(--brand-action);
+    color: var(--brand-ink);
   }
   .site-header .site-dropdown {
     position: static;

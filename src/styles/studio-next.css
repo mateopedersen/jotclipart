@@ -505,7 +505,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .uc-next .wb-command-row > button:last-child {
   min-width: 42px;
@@ -952,7 +952,7 @@
 .wb-category-tile small {
   font-size: 10px;
   font-weight: 400;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .uc-next[data-wb-focus='true'] .uc-stage {
   min-height: 80px;

@@ -93,7 +93,7 @@
   padding: 14px 5px 3px;
   font-size: 16px;
   line-height: 1.5;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .gm-page-links {
   display: grid;
@@ -201,7 +201,7 @@
 .gm-topics a small {
   display: block;
   margin-top: 7px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 17px;
   line-height: 1.4;
 }

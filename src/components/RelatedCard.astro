@@ -1,6 +1,7 @@
 ---
 import { displayTitle, displayCatalogTitle } from '../lib/display-title';
 import CardFileActions from './CardFileActions.astro';
+import Icon from './Icon.astro';
 import type { RelatedCard } from '../lib/related/engine';
 interface Props {
   card: RelatedCard;
@@ -23,6 +24,8 @@ const { card } = Astro.props;
       height="400"
       loading="lazy"
       data-original-deferred="pending"
+      data-original-placeholder={card.loadingPreview?.url}
+      data-original-placeholder-for={card.loadingPreview?.source}
       decoding="async"
     />
     <span class="related-image-error" hidden>
@@ -62,5 +65,14 @@ const { card } = Astro.props;
         </svg>
       </button>
     </CardFileActions>
+    <a
+      class="button related-edit"
+      data-related-edit
+      href={card.editable === false ? card.href : `/edit/${card.id}/`}
+      aria-label={`${card.editable === false ? 'View' : 'Edit'} ${displayCatalogTitle(card.title)}`}
+    >
+      <Icon name={card.editable === false ? 'view' : 'edit'} size={28} />
+      <span data-related-edit-label>{card.editable === false ? 'View' : 'Edit'}</span>
+    </a>
   </div>
 </article>

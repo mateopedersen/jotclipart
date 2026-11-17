@@ -54,7 +54,7 @@
 .print-tool .print-intro {
   font-size: 18px;
   font-weight: 400;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   margin: 0;
   max-width: 54ch;
 }
@@ -212,7 +212,7 @@
 .print-orientation small {
   display: block;
   margin-top: 3px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 13px;
   font-weight: 400;
 }
@@ -323,14 +323,14 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 13px;
 }
 .print-paper-figure figcaption small {
   flex-basis: 100%;
   text-align: center;
   font-size: 13px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .print-legend-image {
   width: 12px;
@@ -502,7 +502,7 @@
 }
 .print-density-card h3 span {
   font-size: 13px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   letter-spacing: 0;
 }
 .print-density-card output {

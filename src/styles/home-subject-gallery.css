@@ -108,7 +108,7 @@
   font-weight: 600;
 }
 .hsg-caption > span {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 16px;
   line-height: 1.4;
 }

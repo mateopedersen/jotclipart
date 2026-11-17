@@ -54,7 +54,7 @@
 :root {
   --brand-primary: #52b788;
   --brand-action: #216e4e;
-  --brand-ink: #123524;
+  --brand-ink: #000000;
   --brand-soft: #d8f3dc;
   --brand-page: #ffffff;
   --brand-border: #b7dcc5;
@@ -1158,7 +1158,7 @@ button[aria-busy='true'],
 }
 .category-copy h3 span {
   font-size: 18px;
-  color: var(--blue);
+  color: var(--brand-ink);
   flex-shrink: 0;
 }
 .category-copy p {
@@ -1195,7 +1195,7 @@ button[aria-busy='true'],
   height: 42px;
   border-radius: 10px;
   background: var(--ice);
-  color: var(--blue);
+  color: var(--brand-ink);
   font-size: 20px;
   margin: 0;
 }
@@ -1354,7 +1354,7 @@ button[aria-busy='true'],
 }
 .topic-planned small {
   font-size: 11px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .guide-grid {
   display: grid;
@@ -1375,7 +1375,7 @@ button[aria-busy='true'],
   text-decoration: none;
 }
 .guide-card a:hover h2 {
-  color: var(--blue);
+  color: var(--brand-ink);
 }
 .guide-card img {
   width: 100%;
@@ -1463,7 +1463,7 @@ button[aria-busy='true'],
 }
 .guide-figure figcaption {
   font-size: 14px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   line-height: 1.6;
   margin-top: 14px;
 }

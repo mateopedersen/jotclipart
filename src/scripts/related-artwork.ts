@@ -1,6 +1,7 @@
 import { displayTitle, displayCatalogTitle } from '../lib/display-title.ts';
 import { FAVORITES_KEY, parseFavoriteIds, toggleStoredFavorite } from '../lib/favorites-storage';
 import type { BrowserRelatedCard, BrowserSnapshot, Mode } from '../lib/related/engine';
+import { actionIconAssets } from '../lib/action-icons';
 export function initRelatedArtwork() {
   const root = document.querySelector<HTMLElement>('[data-related-root]');
   if (!root || root.dataset.ready) return;
@@ -203,6 +204,29 @@ export function initRelatedArtwork() {
     }
     observer?.observe(card);
   }
+  function updateEditor(node: HTMLElement, data: BrowserRelatedCard) {
+    let editor = node.querySelector<HTMLAnchorElement>('[data-related-edit]');
+    if (!editor) {
+      editor = document.createElement('a');
+      editor.className = 'button related-edit';
+      editor.dataset.relatedEdit = '';
+      const icon = document.createElement('img');
+      icon.className = 'action-icon';
+      icon.alt = '';
+      icon.width = icon.height = 28;
+      icon.setAttribute('aria-hidden', 'true');
+      const label = document.createElement('span');
+      label.dataset.relatedEditLabel = '';
+      editor.append(icon, label);
+      (node.querySelector('.related-card-copy') ?? node).append(editor);
+    }
+    const editLabel = data.editable === false ? 'View' : 'Edit';
+    editor.href = data.editable === false ? data.href : `/edit/${data.id}/`;
+    editor.setAttribute('aria-label', `${editLabel} ${displayCatalogTitle(data.title)}`);
+    editor.querySelector('[data-related-edit-label]')!.textContent = editLabel;
+    const editIcon = editor.querySelector<HTMLImageElement>('img');
+    if (editIcon) editIcon.src = actionIconAssets[data.editable === false ? 'view' : 'edit'];
+  }
   function createCard(data: BrowserRelatedCard) {
     const node = sample!.cloneNode(true) as HTMLElement;
     node.dataset.relatedId = data.id;
@@ -214,10 +238,22 @@ export function initRelatedArtwork() {
     node.querySelector<HTMLElement>('.related-card-title')!.dataset.displayTitle = '';
     node.querySelector('.related-card-title')!.textContent = displayCatalogTitle(data.title);
     node.querySelector('.related-reason')!.textContent = data.reason;
+    updateEditor(node, data);
     const image = node.querySelector('img')!;
     // A sample clone must not inherit the previous artwork's opened delivery
     // state or accessible link name when pagination adds a different original.
     image.hidden = false;
+    node
+      .querySelectorAll('.original-image-loading-backdrop, .original-image-status')
+      .forEach((child) => child.remove());
+    delete image.dataset.originalPlaceholder;
+    delete image.dataset.originalPlaceholderFor;
+    delete image.dataset.originalPreview;
+    image.style.removeProperty('--original-loading-preview');
+    if (data.loadingPreview?.source === data.webp) {
+      image.dataset.originalPlaceholder = data.loadingPreview.url;
+      image.dataset.originalPlaceholderFor = data.loadingPreview.source;
+    }
     node.querySelector<HTMLElement>('.related-image-error')!.hidden = true;
     image.dataset.originalDeferred = 'pending';
     image.loading = 'lazy';
@@ -272,6 +308,7 @@ export function initRelatedArtwork() {
       ...snapshot.collection.slice(collectionCount),
     ];
   }
+  let firstRender = true;
   function render(append = false, focusNew = false) {
     if (stale) return;
     const all = list(),
@@ -281,19 +318,41 @@ export function initRelatedArtwork() {
       find('[data-related-companions]'),
       find('[data-related-collection]'),
     ];
+    const retained = new Map<string, HTMLElement>();
     if (!append) {
       observer?.disconnect();
       for (const timer of timers.values()) clearTimeout(timer);
       timers.clear();
       displayed.clear();
-      for (const group of groups) group.querySelector('.related-grid')!.replaceChildren();
+      if (firstRender) {
+        // Keep matching SSR nodes and their healthy original requests intact.
+        // Recreating the visible first row discards useful loading/decoding work.
+        const wanted = new Map(visible.map((card) => [card.id, card]));
+        for (const node of root!.querySelectorAll<HTMLElement>('.related-card')) {
+          const data = wanted.get(node.dataset.relatedId ?? '');
+          const group =
+            data && groups[data.group === 'alternatives' ? 0 : data.group === 'companions' ? 1 : 2];
+          if (
+            data &&
+            node.querySelector('img')?.getAttribute('src') === data.webp &&
+            node.parentElement === group?.querySelector('.related-grid')
+          ) {
+            retained.set(data.id, node);
+          } else node.remove();
+        }
+      } else {
+        for (const group of groups) group.querySelector('.related-grid')!.replaceChildren();
+      }
     }
+    firstRender = false;
     const newlyAdded: HTMLElement[] = [];
     for (const card of visible) {
       if (displayed.has(card.id)) continue;
-      const node = createCard(card),
+      const existing = retained.get(card.id),
+        node = existing ?? createCard(card),
         group = groups[card.group === 'alternatives' ? 0 : card.group === 'companions' ? 1 : 2];
-      group.querySelector('.related-grid')!.append(node);
+      if (existing) updateEditor(existing, card);
+      else group.querySelector('.related-grid')!.append(node);
       displayed.add(card.id);
       watch(node);
       newlyAdded.push(node);

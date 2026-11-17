@@ -39,7 +39,7 @@ footer.site-footer {
   letter-spacing: -0.015em;
 }
 .footer-invitation h2 span {
-  color: var(--brand-accent);
+  color: var(--brand-ink);
 }
 .site-footer .footer-invitation-copy > p {
   max-width: 540px;
@@ -258,7 +258,7 @@ footer.site-footer {
   letter-spacing: -0.02em;
 }
 .footer-nav-card h3 small {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;

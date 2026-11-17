@@ -5,7 +5,7 @@ export const brand = Object.freeze({
   assetsOrigin: 'https://assets.jotclipart.com',
   primary: '#52B788',
   action: '#216E4E',
-  ink: '#123524',
+  ink: '#000000',
   soft: '#D8F3DC',
   background: '#FFFFFF',
   surface: '#FFFFFF',

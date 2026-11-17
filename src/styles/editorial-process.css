@@ -173,7 +173,7 @@
 }
 .ep-example-caption {
   display: block;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 0.77rem;
   line-height: 1.5;
   margin-top: 0.3rem;
@@ -189,7 +189,7 @@
 }
 .ep-hero-visual > figcaption {
   position: relative;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 0.75rem;
   line-height: 1.6;
   text-align: center;

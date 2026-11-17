@@ -182,7 +182,7 @@
 .artwork-facts dd small {
   display: block;
   font-weight: 400;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 11px;
 }
 .artwork-technical {

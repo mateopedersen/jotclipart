@@ -1,4 +1,6 @@
 import { artworkPath } from '../artwork-route.mjs';
+import { imageLoadingPreview } from '../image-loading-preview';
+import { publicBrandURL } from '../brand.mjs';
 import { artworkCardSummary, CARD_SUMMARY_VERSION } from './summaries';
 import { normalize, safeAsset, type ArtworkInput, type Profile } from './normalize';
 import { companionSubjects, REGISTERED_TOPICS, TAXONOMY_VERSION, words } from './taxonomy';
@@ -16,6 +18,8 @@ export interface RelatedCard {
   thumb: string;
   thumbSrcSet?: string;
   webp: string;
+  loadingPreview?: { source: string; url: string };
+  editable?: boolean;
   pdf?: string;
   href: string;
   reason: string;
@@ -56,7 +60,8 @@ const snapshotEncoder = new TextEncoder();
 /**
  * Keep the embedded browser payload below the per-script limit while preserving
  * the server-rendered first row and highest-ranked recommendations. Thumbnail
- * fields are unnecessary after hydration: cards load their full image URL.
+ * Full thumbnail records are unnecessary after hydration. The small, validated
+ * loading-preview pair remains separate from the original image URL.
  */
 export function compactBrowserSnapshot(snapshot: Snapshot): BrowserSnapshot {
   const compact = (items: RelatedCard[]) =>
@@ -215,6 +220,11 @@ function card(result: Ranked, group: RelatedCard['group']): RelatedCard {
   const p = result.profile,
     item = p.item;
   const reason = artworkCardSummary(item);
+  const loadingPreview = imageLoadingPreview({
+    webp: publicBrandURL(item.webp!),
+    originalThumb: publicBrandURL(item.originalThumb),
+    files: item.files,
+  });
   return {
     id: item.id,
     title: item.title,
@@ -222,6 +232,8 @@ function card(result: Ranked, group: RelatedCard['group']): RelatedCard {
     thumb: item.thumb!,
     ...(item.thumbSrcSet ? { thumbSrcSet: item.thumbSrcSet } : {}),
     webp: item.webp!,
+    editable: item.editable !== false,
+    ...(loadingPreview ? { loadingPreview } : {}),
     ...(safeAsset(item.pdf) && item.files?.pdf?.bytes && item.files.pdf.sha256
       ? { pdf: item.pdf }
       : {}),

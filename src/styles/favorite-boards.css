@@ -28,13 +28,13 @@
   letter-spacing: -0.045em;
 }
 .boards-hero h1 span {
-  color: var(--brand-accent);
+  color: var(--brand-ink);
 }
 .boards-hero > div > p:not(.boards-eyebrow) {
   max-width: 490px;
   font-size: 16px;
   line-height: 1.8;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   margin: 20px 0 17px;
 }
 .boards-device-note {
@@ -105,7 +105,7 @@
 .boards-section-heading p:not(.boards-eyebrow) {
   font-size: 14px;
   line-height: 1.65;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   margin: 7px 0 0;
 }
 .boards-library {

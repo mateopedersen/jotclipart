@@ -1,10 +1,27 @@
 /* Shared labels, including future topics. Authored descriptions and canvas
    content remain normal prose; source-bound names use displayTitle in SSR/JS. */
-:where(h1, h2, h3, h4, h5, h6, button, .button, .site-nav-trigger,
-  .site-dropdown-link strong, .site-dropdown-heading, .site-link-title,
-  .collection-filter-title, .subject-count, .home-section-link) {
+:where(
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  button,
+  .button,
+  .site-nav-trigger,
+  .site-dropdown-link strong,
+  .site-dropdown-heading,
+  .site-link-title,
+  .collection-filter-title,
+  .subject-count,
+  .home-section-link
+) {
   text-transform: capitalize;
 }
-[data-display-title], .uc-canvas, .uc-canvas *, [contenteditable="true"] {
+[data-display-title],
+.uc-canvas,
+.uc-canvas *,
+[contenteditable='true'] {
   text-transform: none;
 }

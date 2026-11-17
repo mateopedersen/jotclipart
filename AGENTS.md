@@ -1,3 +1,14 @@
+# Black typography and green control icons — owner direction 2026-11-17
+
+Normal headings, navigation labels and descriptive text are neutral black, with
+the heading/text ink token #000000. Do not restore the migration's dark green
+text. Keep white large surfaces. Green remains for actions, small accents and
+interface arrows/share/download SVGs; preserve original artwork colors, accepted
+Image/PDF/Edit illustrations, semantic warnings and white-on-green controls.
+Related artwork cards include an Edit action below Image/PDF, respecting an
+explicit noneditable record. Loading may paint a source-bound temporary preview
+while the original URL/bytes remain the final image and download source.
+
 # Verified JotClipart installation — 2026-11-17
 
 Production origin is https://jotclipart.com, control/source

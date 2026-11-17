@@ -228,12 +228,6 @@ const downloadRecord = {
         set:html={structuredData(downloadRecord)}
       />
       <div class="detail-actions">
-        {item.editable && (
-          <a class="button primary" href={`/edit/${item.id}/`}>
-            <Icon name="edit" size={18} />
-            <span>Edit Clipart</span>
-          </a>
-        )}
         <a
           class="button download-option"
           href={item.webp}
@@ -286,6 +280,12 @@ const downloadRecord = {
               <strong>{formatFileSize(item.files.pdf.bytes)}</strong>
             </span>
             <Icon name="download" size={18} />
+          </a>
+        )}
+        {item.editable !== false && (
+          <a class="button primary" href={`/edit/${item.id}/`}>
+            <Icon name="edit" size={18} />
+            <span>Edit Clipart</span>
           </a>
         )}
       </div>

@@ -20,7 +20,7 @@
   color: var(--brand-ink);
 }
 .collection-directory-hero h1 span {
-  color: var(--brand-accent);
+  color: var(--brand-ink);
 }
 .collection-directory-hero p {
   max-width: 640px;
