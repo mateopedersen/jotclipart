@@ -44,7 +44,7 @@ const recentPicks = diverseRecentArtwork(
     <p>Recent additions across color and black-and-white styles.</p>
     <div class="gallery home-recent-grid">
       {recentPicks.slice(0, 15).map((item) => (
-        <Card item={item} subjectLabel={labelByTopic.get(item.topic)} />
+        <Card item={item} subjectLabel={labelByTopic.get(item.topic)} showDescription />
       ))}
     </div>
   </section>

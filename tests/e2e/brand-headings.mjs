@@ -63,7 +63,7 @@ try {
         Array.from(body.querySelectorAll('*')).flatMap((el) => {
           if (
             el.closest(
-              'svg, .home-showcase h1, .hero > .breadcrumb, main.container > .breadcrumb:has(+ .art-detail), .art-detail .eyebrow, [data-text-preset]',
+              'svg, .home-showcase h1, .hero > .breadcrumb, main.container > .breadcrumb:has(+ .art-detail), .art-detail .eyebrow, .home-recent-subject, .home-recent .card-title, [data-text-preset]',
             )
           )
             return [];
@@ -109,8 +109,11 @@ try {
         })),
       );
       for (const card of cards) {
-        assert(card.weight >= 800, 'Artwork card titles must stand out from descriptions');
-        assert.equal(card.color, 'rgb(0, 0, 0)');
+        assert(
+          card.weight >= (route === '/' ? 700 : 800),
+          'Artwork card titles must stand out from descriptions',
+        );
+        assert.equal(card.color, route === '/' ? 'rgb(33, 110, 78)' : 'rgb(0, 0, 0)');
       }
       if (route.startsWith('/art/')) {
         assert(
@@ -125,12 +128,15 @@ try {
             ns.map((n) => ({
               color: getComputedStyle(n).color,
               weight: Number(getComputedStyle(n).fontWeight),
+              breadcrumb: n.matches('.breadcrumb'),
+              size: parseFloat(getComputedStyle(n).fontSize),
             })),
           );
         assert(detail.length >= 2, 'Artwork breadcrumb and collection label must exist');
         for (const item of detail) {
           assert.equal(item.color, 'rgb(33, 110, 78)');
-          assert(item.weight >= 750);
+          assert.equal(item.weight, item.breadcrumb ? 600 : 750);
+          if (item.breadcrumb) assert(item.size >= 13 && item.size <= 14);
         }
       }
       if (route.startsWith('/clipart/')) {
@@ -149,6 +155,32 @@ try {
         }
       }
       if (route === '/') {
+        const recent = await page.locator('.home-recent .art-card').evaluateAll((cards) =>
+          cards.map((card) => {
+            const description = card.querySelector('.home-recent-description');
+            const title = card.querySelector('.card-title');
+            const subject = card.querySelector('.home-recent-subject');
+            return {
+              description: description?.textContent.trim(),
+              descriptionColor: description && getComputedStyle(description).color,
+              descriptionWeight: description && getComputedStyle(description).fontWeight,
+              titleWeight: title && getComputedStyle(title).fontWeight,
+              subjectColor: subject && getComputedStyle(subject).color,
+            };
+          }),
+        );
+        assert.equal(recent.length, 15);
+        for (const card of recent) {
+          assert(
+            card.description,
+            'Every recent artwork needs its existing image-specific description',
+          );
+          assert.equal(card.descriptionColor, 'rgb(0, 0, 0)');
+          assert.equal(card.descriptionWeight, '400');
+          assert.equal(card.titleWeight, '700');
+          assert.equal(card.subjectColor, 'rgb(33, 110, 78)');
+        }
+
         const hero = await page.locator('.home-showcase h1').evaluate((heading) => {
           const brand = heading.querySelector('.home-title-brand'),
             project = heading.querySelector('.home-title-project'),

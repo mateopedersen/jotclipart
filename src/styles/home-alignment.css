@@ -80,11 +80,11 @@
   margin: 0 0 22px;
 }
 .home-recent-subject {
-  color: var(--brand-ink);
+  color: var(--brand-action);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 650;
   line-height: 1.4;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   text-decoration: none;
 }
 .home-recent-subject:hover {
@@ -115,4 +115,17 @@
     width: calc((100% - var(--gallery-gap, 16px)) / 2);
     justify-self: center;
   }
+}
+
+.home-recent .card-title {
+  color: var(--brand-action);
+  font-weight: 700;
+  min-height: 0;
+}
+.home-recent-description {
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.55;
+  margin: 9px 0 0;
 }

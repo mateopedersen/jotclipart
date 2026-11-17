@@ -1,3 +1,12 @@
+# Latest owner card and breadcrumb refinement — 2026-11-17
+
+Homepage recent artwork cards: both subject links and artwork titles use brand
+ green; artwork titles use700, subject links650, with each existing artwork
+ description shown in black400 below its title. Do not invent or rewrite metadata.
+ Other gallery titles retain850. Only art detail breadcrumbs become compact13–14px
+ and600; topic breadcrumbs keep the prior green15–18px/750 design.
+ This supersedes the older broad850 card/750 art breadcrumb direction below.
+
 # Current installed speed and green interface release — 2026-11-17
 
 Current LIVE software c2422d8b6f5f310bf86ce9c00a3286fe01cd3cbb, Pages
