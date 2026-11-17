@@ -1,3 +1,31 @@
+# Current JotClipart installation — 2026-11-17 black text and related controls
+
+This supersedes the historical installation notes below. Production software is
+`11730aafd72f4f87805a21652c08b0f3dd817f3f`, Pages deployment
+`a4937de4.jotclipart.pages.dev`, ABI
+`4350e3567f45234ec516de8ec65920be30bf68c23702dc43036ff942c6f4ac8d`.
+Use the actual installation in config/content-publisher.json. Permanently preserve
+its independent checkout under
+`../related-black-20261117/work/jotclipart-black-related-independent-v5-20261117`,
+its original absolute compiled inputs at `work/jotclipart-release-11730aafd72f`
+and the `work/jotclipart-installed-11730` preservation record (800 exact files).
+Do not move, clean, rebuild or delete that installed tree. Preserve previous
+installed fb19 and its full verified rollback too. Same-volume KEEP archives are
+separate verified recovery copies, not off-device backups.
+
+Black headings/navigation/descriptions, green interface arrows/share/download
+controls, source-bound related loading previews and Edit below Image/PDF passed
+690 native checks, 35 related tests, 12 controlled Chromium/WebKit preview cases
+and 26 actual preview plus 26 actual production UI/download checks. Actual
+original media URLs/bytes and stable IDs are preserved. Related PDF validation
+accepts the exact JotClipart assets host as well as historical signed sources;
+never suppress a repaired PDF merely because its domain is the new brand.
+The installed data root was `18de204ffe10a02b8681254eee279f69656a04415b88c2ed6dbf6e988b60ad5b`
+with 49,858 artworks / 804 topics. Read current live control before future writes.
+Remaining PDF repair source capsules 3–6 are prepared and must pass the normal
+source/media/native/seal/activation/public gates before being called live.
+No new Google/Bing/IndexNow submissions; Contact remains deferred.
+
 # Black typography and green control icons — owner direction 2026-11-17
 
 Normal headings, navigation labels and descriptive text are neutral black, with
