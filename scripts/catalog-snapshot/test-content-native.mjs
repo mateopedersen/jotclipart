@@ -438,7 +438,7 @@ async function verifyNativeContentWithSource({
             ),
             ...plan.changes.filter((_, i) => i % Math.ceil(plan.changes.length / 32) === 0),
           ];
-      for (const c of samples) {
+      const verifyCanonical = async (c) => {
         const path = '/art/' + c.slug + '/',
           r = await mf.dispatchFetch(origin + path, {
             headers,
@@ -480,7 +480,24 @@ async function verifyNativeContentWithSource({
             sha256: sha(Buffer.from(editHTML)),
           });
         }
-      }
+      };
+      let canonicalCursor = 0,
+        canonicalVerified = 0;
+      await Promise.all(
+        Array.from({ length: 4 }, async () => {
+          while (canonicalCursor < samples.length) {
+            await verifyCanonical(samples[canonicalCursor++]);
+            if (++canonicalVerified % 1000 === 0)
+              console.log(
+                JSON.stringify({
+                  phase: 'native-canonical-and-edit',
+                  verified: canonicalVerified,
+                  total: samples.length,
+                }),
+              );
+          }
+        }),
+      );
       const r = await mf.dispatchFetch(origin + '/sitemap.xml', { headers }),
         index = await r.text(),
         pageURLs = new Set(),
