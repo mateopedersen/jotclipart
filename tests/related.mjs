@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import { loadTypescript } from './helpers/typescript.mjs';
 const { RelatedIndex, compactBrowserSnapshot, rank, CANDIDATE_LIMIT, SNAPSHOT_LIMIT } =
   await loadTypescript('src/lib/related/engine.ts');
-const { normalize } = await loadTypescript('src/lib/related/normalize.ts');
+const { normalize, safeAsset } = await loadTypescript('src/lib/related/normalize.ts');
 const { artworkCardSummary } = await loadTypescript('src/lib/related/summaries.ts');
 const catalog = JSON.parse(readFileSync('data/art.json'));
 const index = new RelatedIndex(catalog);
@@ -25,6 +25,26 @@ function item(id, overrides = {}) {
 function ids(result) {
   return [...result.alternatives, ...result.companions].map((c) => c.id);
 }
+test('related cards retain source-verified JotClipart PDF links after a content repair', () => {
+  const pdf = 'https://assets.jotclipart.com/apple/repaired.pdf.1234abcd.pdf';
+  const entries = [
+    item('pdf-source'),
+    item('pdf-repaired', { pdf }),
+    item('pdf-untrusted', { pdf: 'https://unrelated.example/repaired.pdf' }),
+  ];
+  const snapshot = compactBrowserSnapshot(new RelatedIndex(entries).snapshot('pdf-source'));
+  const cards = [...snapshot.alternatives, ...snapshot.companions, ...snapshot.collection];
+  assert.equal(cards.find((card) => card.id === 'pdf-repaired')?.pdf, pdf);
+  assert.equal(cards.find((card) => card.id === 'pdf-untrusted')?.pdf, undefined);
+  for (const url of [
+    'https://assets.jotclipart.com.evil.example/apple.pdf',
+    'https://assets.jotclipart.com@evil.example/apple.pdf',
+    'https://assets.jotclipart.com:443/apple.pdf',
+    'http://assets.jotclipart.com/apple.pdf',
+    'https://assets.jotclipart.com/apple.pdf?redirect=1',
+  ])
+    assert.equal(safeAsset(url), false, url);
+});
 test('related display previews stay source-bound without replacing full originals or edit eligibility', () => {
   const fixture = (id, digest, editable = true, withProof = true) =>
     item(id, {

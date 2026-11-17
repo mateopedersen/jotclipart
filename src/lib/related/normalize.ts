@@ -138,7 +138,9 @@ export function safeAsset(value: unknown): value is string {
   return (
     /^\/catalog\/[a-z0-9/_-]+\.(?:webp|pdf)$/.test(value) ||
     /^\/previews\/p\d+\/[a-f0-9]{24}-(?:96|220|440|960)\.webp$/.test(value) ||
-    /^https:\/\/assets\.ultraclipart\.com\/[a-zA-Z0-9/_.%-]+\.(?:webp|pdf)$/.test(value)
+    /^https:\/\/assets\.(?:jotclipart|ultraclipart)\.com\/[a-zA-Z0-9/_.%-]+\.(?:webp|pdf)$/.test(
+      value,
+    )
   );
 }
 export function normalize(
