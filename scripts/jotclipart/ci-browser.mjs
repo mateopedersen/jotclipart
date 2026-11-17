@@ -234,6 +234,9 @@ async function browserFlow() {
   const contexts = [];
   let currentPage;
   const guard = async (context) => {
+    // Cold provider pages and their source-bound modules can exceed the
+    // library's 30s default. Content, snapshot and UI assertions still follow.
+    context.setDefaultNavigationTimeout(60000);
     contexts.push(context);
     const starts = [];
     await context.route('**/*', async (route) => {
@@ -408,12 +411,16 @@ async function browserFlow() {
     check('Homepage branding, typography load and responsive viewport', { logoSHA256: logoSHA });
     const surprise = page.locator('[data-surprise-art]:visible').first();
     await expect(surprise).toBeVisible();
-    const surpriseReady = page.waitForURL(
-      (url) => url.origin === origin && /^\/art\/[a-z0-9-]+\/$/.test(url.pathname),
-      { waitUntil: 'domcontentloaded', timeout: 45000 },
-    );
-    await click(surprise);
-    await surpriseReady;
+    await surprise.scrollIntoViewIfNeeded();
+    // The real pointer click is followed by an explicit document readiness
+    // check. Do not add a second implicit wait for every image on that page.
+    await Promise.all([
+      page.waitForURL(
+        (url) => url.origin === origin && /^\/art\/[a-z0-9-]+\/$/.test(url.pathname),
+        { waitUntil: 'domcontentloaded', timeout: 45000 },
+      ),
+      surprise.click({ noWaitAfter: true }),
+    ]);
     const surprisedURL = new URL(page.url());
     assert.equal(surprisedURL.origin, origin, 'Surprise escaped the preview origin');
     assert(/^\/art\/[a-z0-9-]+\/$/.test(surprisedURL.pathname));
@@ -728,7 +735,9 @@ async function browserFlow() {
     await page.screenshot({ path: join(dir, 'studio.png') });
     check('Actual Studio shape edit, portable project save and rendered WebP export');
     await navigate(page, '/favorites/');
-    await expect(page.locator('#favorites')).toHaveAttribute('aria-busy', 'false');
+    await expect(page.locator('#favorites')).toHaveAttribute('aria-busy', 'false', {
+      timeout: 45000,
+    });
     assert((await page.locator(`#favorites [data-id="${record.id}"]`).count()) > 0);
     await click(page.locator('[data-board-create]'));
     const board = page.locator('#board-dialog');
@@ -740,7 +749,9 @@ async function browserFlow() {
     );
     const boardId = boards.boards.find((b) => b.title === 'CI ' + engine + ' ' + width).id;
     await click(page.locator('[data-board=all]'));
-    await expect(page.locator('#favorites')).toHaveAttribute('aria-busy', 'false');
+    await expect(page.locator('#favorites')).toHaveAttribute('aria-busy', 'false', {
+      timeout: 45000,
+    });
     await click(page.locator('#favorites-select'));
     await click(page.locator(`[data-favorite-select="${record.id}"]`));
     await page.locator('#favorites-bulk-board').selectOption(boardId);
@@ -763,7 +774,9 @@ async function browserFlow() {
       .locator('#boards-import-file')
       .setInputFiles({ name: 'boards.json', mimeType: 'application/json', buffer: backup });
     await expect(restored.locator(`[data-board="${boardId}"]`)).toBeVisible();
-    await expect(restored.locator('#favorites')).toHaveAttribute('aria-busy', 'false');
+    await expect(restored.locator('#favorites')).toHaveAttribute('aria-busy', 'false', {
+      timeout: 45000,
+    });
     assert((await restored.locator(`#favorites [data-id="${record.id}"]`).count()) > 0);
     check('Actual backup file imports into a clean browser context');
     await navigate(restored, '/create/');

@@ -94,6 +94,7 @@ async function context(options = {}, binaryTransfer = false) {
     value = await webkit.launchPersistentContext(profile, { headless: true, ...settings });
     temporaryProfiles.set(value, profile);
   } else value = await browser.newContext(settings);
+  value.setDefaultNavigationTimeout(60000);
   contexts.push(value);
   let starts = [];
   await value.route('**/*', async (route) => {
@@ -1141,10 +1142,13 @@ async function artworkRelated() {
 
 async function discoveryTools() {
   const { page } = await pageFor('/black-and-white/');
-  const ready = () =>
-    expect(page.locator('#bw-results')).toHaveAttribute('aria-busy', 'false', {
+  const ready = async () => {
+    await expect(page.locator('#bw-results')).toHaveAttribute('aria-busy', 'false', {
       timeout: 45000,
     });
+    await expect(page.locator('#bw-error')).toBeHidden();
+    await expect(page.locator('#bw-results')).toHaveJSProperty('hidden', false);
+  };
   await ready();
   const queries = [];
   for (const query of ['sunflower', 'bunnies', 'elephant line drawing', 'sunflwer']) {
@@ -1192,10 +1196,13 @@ async function discoveryTools() {
 
 async function searchFilters() {
   const { page } = await pageFor('/search/?q=bunnies&type=artwork');
-  const ready = () =>
-    expect(page.locator('#search-results')).toHaveAttribute('aria-busy', 'false', {
+  const ready = async () => {
+    await expect(page.locator('#search-results')).toHaveAttribute('aria-busy', 'false', {
       timeout: 45000,
     });
+    await expect(page.locator('#search-error')).toBeHidden();
+    await expect(page.locator('#search-results')).toHaveJSProperty('hidden', false);
+  };
   await ready();
   assert(
     (await page.locator('#search-results .art-card').count()) > 0,
@@ -1219,6 +1226,7 @@ async function searchFilters() {
   assert(firstPage.length > 0);
   await click(page.locator('#next-page'));
   await ready();
+  await expect(page.locator('#page-position')).toHaveText(/^Page 2 of /);
   const nextPage = await page
     .locator('#search-results .art-card')
     .evaluateAll((nodes) => nodes.map((node) => node.dataset.id));

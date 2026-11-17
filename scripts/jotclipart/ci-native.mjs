@@ -104,6 +104,7 @@ try {
       'catalog-native-cache-admission',
       'catalog-seal-cache-admission',
       'catalog-metadata-cache',
+      'catalog-search-latency',
     ];
     const extra = [
       'r2-binding-media',
