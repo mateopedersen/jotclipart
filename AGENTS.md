@@ -1,3 +1,29 @@
+# Current installed JotClipart — concurrent UI release reconciled, 2026-11-17
+
+This supersedes all historical installed-release notes below. The actual current
+software is `1d3b166911543e20d9c69abe3ef1e07932ccf2cf`, Pages
+`https://4ed45a2c.jotclipart.pages.dev`, ABI
+`453708f6cb86ae53e17d3117d34d1c28fc966afc8497bdd76af4c21b90eeeede`.
+It includes final black typography, green homepage hero, black bold700 total,
+bold-v2 green arrows, plus the owner's concurrent green Explore illustration
+and bold Edit labels. Preserve those additional six-file changes. Do not redeploy
+an older typography release over them. Fresh production checks passed84 actual
+Chromium/WebKit states at390/1440 widths across21 route families, zero errors.
+The unchanged catalog root remains8cec421c20fd3367cc6be5b5f2d0cbdec0a5a81e95e7c075a1d6ca548df52ed4;
+49,858 artworks /804 topics, all1,215 earlier PDF repairs preserved.
+
+Permanently preserve the ENTIRE independent current installation at:
+`/Users/melihozcan/Documents/Codex/2026-10-31/simdi-jotcoloring-icin-icerikleri-yukleyecegiz-sana-2/work/jotclipart-green-edit-ui-nov17/work/independent-green-edit-ui-v4-nov17`.
+Its compiled inputs are `work/jotclipart-release-1d3b16691154`; the exact800-file
+freeze is `work/jotclipart-installed-1d3b-typography-reconciled-20261117/manifest.json`.
+Use config/content-publisher.json for actual absolute publication inputs.
+This was local read-only live verification/preservation, with no deployment,
+R2 writes or original-media copying. Preserve previous installedFE81,11730 andFB19
+ENTIRE trees and their verified same-volume KEEP copies as well. Do not move,
+clean or rebuild any current/previous installed tree. Source-bookkeeping commits
+are not a new software deployment. All old-site closure facts below remain valid;
+new JotClipart search submissions and Contact changes remain deferred.
+
 # Current installed JotClipart — final typography and bold arrows, 2026-11-17
 
 This supersedes the historical installed-release notes below. Production software
