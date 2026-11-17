@@ -17,7 +17,42 @@ the existing self-hosted Inter variable font at weight900. This supersedes the
 earlier all-green hero exception. Preserve other black text, bold illustration
 counter, accepted backgrounds, green Explore illustration and bold Edit labels.
 
-# Current installed JotClipart — concurrent UI release reconciled, 2026-11-17
+# Current installed JotClipart — hero, favicon and topic breadcrumbs, 2026-11-17
+
+This supersedes all historical installed-release notes below. Current production
+software is `d1c3f04f4e5325e84927d56c6c7439b470759945`, Pages
+`https://df9223d1.jotclipart.pages.dev`, ABI
+`22a23089e35fe581f17b171f15dac94d9f995a6d1043b9d99f2b36f0dabc258e`.
+It retains the concurrent green Explore illustration, bold Edit labels, black
+normal text/counter and bold-v2 arrows. Free Clipart alone is green with a thin
+double underline; for Every Project is black, using self-hosted Inter900.
+Topic breadcrumbs are green15–18px/750. The new3D favicon master feeds stable
+96/192PNG,16/32/48ICO,180apple and self-contained SVG; the original logo and
+old favicon master are retained. No search submissions or discovery changes.
+
+690 source checks passed. Preview and production EACH passed96 actual
+Chromium/WebKit states at390/1440 across24 route families, plus8 further hero
+states at320/768/1024/1920. Actual icon bodies/MIME/SHA/ICO frames/PNG dimensions,
+robots access and responses under two public crawler user-agents passed; these
+are not evidence that the actual search engines crawled the site. Native browser
+home/topic JPEGs were inspected. No universal browser/indexing guarantee.
+
+Permanently preserve the ENTIRE independent current checkout:
+`work/jotclipart-hero-icons-breadcrumb-20261117`.
+Its compiled inputs are `work/jotclipart-release-d1c3f04f4e53`; the exact800-file
+freeze is `work/jotclipart-installed-d1c3/manifest.json`.
+Read config/content-publisher.json for actual absolute publication inputs.
+Do not move, rebuild or clean this tree. Preserve previous installed1d3,FE81,
+11730 andFB19 ENTIRE trees plus their verified same-volume KEEP recoveries.
+The unchanged data root is8cec421c20fd3367cc6be5b5f2d0cbdec0a5a81e95e7c075a1d6ca548df52ed4;
+49,858 artworks /804 topics and all1,215 prior PDF repairs remain intact.
+No original-media/catalog-pointer writes. Source/config bookkeeping after the
+live verification is not a new software deployment. Contact and new JotClipart
+Google/Bing/IndexNow submissions remain owner-deferred. Old-site closure remains
+as separately verified below; temporary search removal is not permanentzeroindex.
+
+## Previous1d3 installation — retain permanently
+
 
 This supersedes all historical installed-release notes below. The actual current
 software is `1d3b166911543e20d9c69abe3ef1e07932ccf2cf`, Pages
@@ -42,6 +77,7 @@ ENTIRE trees and their verified same-volume KEEP copies as well. Do not move,
 clean or rebuild any current/previous installed tree. Source-bookkeeping commits
 are not a new software deployment. All old-site closure facts below remain valid;
 new JotClipart search submissions and Contact changes remain deferred.
+
 
 # Current installed JotClipart — final typography and bold arrows, 2026-11-17
 

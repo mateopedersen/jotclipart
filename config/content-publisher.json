@@ -7,12 +7,12 @@
   "publicOrigin": "https://jotclipart.com",
   "activeKey": "catalog/jotclipart/active.json",
   "software": {
-    "revision": "1d3b166911543e20d9c69abe3ef1e07932ccf2cf",
-    "abiSHA256": "453708f6cb86ae53e17d3117d34d1c28fc966afc8497bdd76af4c21b90eeeede",
-    "workerSHA256": "76aa360cab5f39cf0f8c2e6c04abb33527ca872a77f29e00c30a875edad82b77",
-    "directory": "/Users/melihozcan/Documents/Codex/2026-10-31/simdi-jotcoloring-icin-icerikleri-yukleyecegiz-sana-2/work/jotclipart-green-edit-ui-nov17/work/independent-green-edit-ui-v4-nov17/work/jotclipart-release-1d3b16691154"
+    "revision": "d1c3f04f4e5325e84927d56c6c7439b470759945",
+    "abiSHA256": "22a23089e35fe581f17b171f15dac94d9f995a6d1043b9d99f2b36f0dabc258e",
+    "workerSHA256": "c172f9d85ddaef427075e381a3a9ab852eba9ddfc69737f908a454c20720d954",
+    "directory": "/Users/melihozcan/Documents/Codex/2026-10-22/bilgisayarima-baglan-ve-codex-te-gereksiz/work/jotclipart-migration/site/work/jotclipart-hero-icons-breadcrumb-20261117/work/jotclipart-release-d1c3f04f4e53"
   },
-  "publicConfig": "/Users/melihozcan/Documents/Codex/2026-10-31/simdi-jotcoloring-icin-icerikleri-yukleyecegiz-sana-2/work/jotclipart-green-edit-ui-nov17/work/independent-green-edit-ui-v4-nov17/work/jotclipart-installed-1d3b-typography-reconciled-20261117/config.json",
+  "publicConfig": "/Users/melihozcan/Documents/Codex/2026-10-22/bilgisayarima-baglan-ve-codex-te-gereksiz/work/jotclipart-migration/site/work/jotclipart-hero-icons-breadcrumb-20261117/work/jotclipart-installed-d1c3/config.json",
   "lastVerifiedData": {
     "revision": "c665ceb2dbefdffcf4238f40d482ea8ac7cbea54",
     "root": "8cec421c20fd3367cc6be5b5f2d0cbdec0a5a81e95e7c075a1d6ca548df52ed4",
@@ -27,11 +27,11 @@
     "accountInventoryRequired": false,
     "fullCatalogBuildForContent": false
   },
-  "proof": "/Users/melihozcan/Documents/Codex/2026-10-31/simdi-jotcoloring-icin-icerikleri-yukleyecegiz-sana-2/work/jotclipart-green-edit-ui-nov17/work/independent-green-edit-ui-v4-nov17/work/jotclipart-installed-1d3b-typography-reconciled-20261117/manifest.json",
+  "proof": "/Users/melihozcan/Documents/Codex/2026-10-22/bilgisayarima-baglan-ve-codex-te-gereksiz/work/jotclipart-migration/site/work/jotclipart-hero-icons-breadcrumb-20261117/work/jotclipart-installed-d1c3/manifest.json",
   "protectedIndependentBackup": "/Users/melihozcan/Documents/UltraClipart-Publisher-KEEP",
   "previousInstallationRetained": true,
   "installationRequirement": "Run scripts/jotclipart/freeze-publisher.mjs only after the exact independent JotClipart software is live and its release gates pass. Old installed runtimes are preserved but cannot target this namespace.",
   "measurementsScope": "Actual production control/root read twice and exact ABI/source/worker/client bytes. Feature, model, full HTTP and R2 inventory gates remain separate release evidence.",
-  "installedRuntimePreservation": "/Users/melihozcan/Documents/Codex/2026-10-31/simdi-jotcoloring-icin-icerikleri-yukleyecegiz-sana-2/work/jotclipart-green-edit-ui-nov17/work/independent-green-edit-ui-v4-nov17/work/jotclipart-installed-1d3b-typography-reconciled-20261117/manifest.json",
-  "preservationManifestSHA256": "ece4a9fc89c55ab13a497036726d923ad73ea0697804aaa928d39f7998c38510"
+  "installedRuntimePreservation": "/Users/melihozcan/Documents/Codex/2026-10-22/bilgisayarima-baglan-ve-codex-te-gereksiz/work/jotclipart-migration/site/work/jotclipart-hero-icons-breadcrumb-20261117/work/jotclipart-installed-d1c3/manifest.json",
+  "preservationManifestSHA256": "27e27d6be89ffe4a14204ef12eb83318e5d5869feb6c5b9087925983da1ebffc"
 }
