@@ -1,6 +1,6 @@
 ---
 import CollectionCountCopy from './CollectionCountCopy.astro';
-import ContentLink from './ContentLink.astro';
+import { contentLink } from '../lib/content-link';
 import { editorialParagraphParts } from '../lib/editorial-links.mjs';
 interface Props {
   topic: string;
@@ -15,9 +15,7 @@ const linkedParagraphs = editorialParagraphParts(`/clipart/${topic}/`, paragraph
     <p>
       {parts.map(({ href, text }) =>
         href ? (
-          <ContentLink class="editorial-inline-link" href={href} relationship="reference">
-            {text}
-          </ContentLink>
+          <a class="editorial-inline-link" href={contentLink(href).href} set:text={text} />
         ) : (
           <CollectionCountCopy topic={topic} text={text} />
         ),

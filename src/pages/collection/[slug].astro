@@ -3,10 +3,10 @@ import { displayTitle, displayCatalogTitle } from '../../lib/display-title';
 import { imageLoadingPreview } from '../../lib/image-loading-preview';
 import { imageObject } from '../../lib/image-schema';
 import { structuredData } from '../../lib/structured-data';
+import { contentLink } from '../../lib/content-link';
 import { editorialParagraphParts } from '../../lib/editorial-links.mjs';
 import Layout from '../../layouts/Layout.astro';
 import CatalogCount from '../../components/CatalogCount.astro';
-import ContentLink from '../../components/ContentLink.astro';
 import CollectionCover from '../../components/CollectionCover.astro';
 import Card from '../../components/Card.astro';
 import CollectionSubjectPicker from '../../components/CollectionSubjectPicker.astro';
@@ -84,9 +84,7 @@ const visibleArtwork = [
             {parts.map(({ href, text }) => {
               if (href)
                 return (
-                  <ContentLink class="editorial-inline-link" href={href} relationship="reference">
-                    {text}
-                  </ContentLink>
+                  <a class="editorial-inline-link" href={contentLink(href).href} set:text={text} />
                 );
               const [before, after] = text.split('{{artworkCount}}');
               return (
