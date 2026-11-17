@@ -12,7 +12,7 @@
   overflow: hidden;
 }
 .boards-eyebrow {
-  color: var(--brand-accent);
+  color: var(--brand-ink);
   font-size: 14px;
   line-height: 1.5;
   font-weight: 750;
@@ -43,7 +43,7 @@
   background: #fff;
   border: 1px solid var(--brand-soft);
   border-radius: 8px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 12px;
   line-height: 1.6;
 }
@@ -85,7 +85,7 @@
 .boards-art-card span {
   font-size: 13px;
   font-weight: 750;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .boards-section-heading {
   display: flex;
@@ -124,7 +124,7 @@
   line-height: 1.5;
   min-height: 44px;
   cursor: pointer;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   border: 1px solid var(--brand-border);
   border-radius: 10px;
   background: #fff;
@@ -203,7 +203,7 @@
   background: #ffffff;
   font-size: 35px;
   font-weight: 750;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   transform: rotate(-7deg);
   box-shadow: 0 5px 10px #213e5b0a;
 }
@@ -215,7 +215,7 @@
   overflow-wrap: anywhere;
 }
 .board-tile-count {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 12px;
   font-weight: 400;
   margin: 0 3px 3px;
@@ -227,7 +227,7 @@
   gap: 8px;
   margin-top: 20px;
   font-size: 13px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .boards-quick-start button {
   font-size: 12px;
@@ -252,7 +252,7 @@
   gap: 7px;
   font-size: 12px;
   font-weight: 700;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .boards-toolbar .boards-search {
   flex: 1;
@@ -293,7 +293,7 @@
 }
 .favorites-bulk strong {
   font-size: 14px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   margin-right: auto;
 }
 .favorite-board-gallery {
@@ -318,12 +318,12 @@
 .favorite-saved-at {
   font-size: 11px;
   line-height: 1.6;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .favorite-note {
   font-size: 13px;
   line-height: 1.65;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   margin: 0;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -334,7 +334,7 @@
 .favorite-board-tags {
   font-size: 11px;
   line-height: 1.5;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   overflow-wrap: anywhere;
 }
 .favorite-card-meta button {
@@ -354,7 +354,7 @@
   border: 1px dashed var(--brand-border);
   border-radius: 20px;
   background: #ffffff;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .boards-empty svg {
   width: 86px;
@@ -378,7 +378,7 @@
   justify-content: center;
   gap: 12px;
   margin-top: 10px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-weight: 750;
   font-size: 14px;
   text-decoration: none;
@@ -507,7 +507,7 @@
   border: 1px solid var(--brand-border);
   background: var(--brand-page);
   border-radius: 12px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 14px;
   line-height: 1.65;
 }
@@ -675,11 +675,11 @@
 }
 .favorites-overview strong {
   font-size: 29px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   line-height: 1.15;
 }
 .favorites-overview span {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-weight: 650;
 }
 .boards-directory-tools,
@@ -793,7 +793,7 @@
 .favorite-stage {
   font-size: 12px;
   font-weight: 700;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .favorite-tags {
   display: flex;

@@ -53,7 +53,7 @@
 .uc-share button:disabled {
   background: var(--brand-soft);
   border-color: var(--brand-border);
-  color: var(--brand-action);
+  color: var(--brand-ink);
   opacity: 1;
   cursor: default;
 }
@@ -62,7 +62,7 @@
   outline-offset: 3px;
 }
 .uc-share a {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   text-decoration: none;
 }
 .uc-share a:hover {
@@ -80,7 +80,7 @@
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.12em;
-  color: var(--brand-accent);
+  color: var(--brand-ink);
 }
 .uc-share h2 {
   margin: 4px 0 0;
@@ -138,7 +138,7 @@
 .uc-share-origin,
 .uc-share-file-note {
   font-size: 12px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .uc-share .uc-share-native {
   display: flex;
@@ -237,7 +237,7 @@
   filter: brightness(0) invert(1);
 }
 .uc-share-network-note {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 12px;
   margin: 0 0 22px;
 }
@@ -260,7 +260,7 @@
 .uc-share-apps > span {
   width: 100%;
   font-size: 12px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   margin-bottom: 2px;
 }
 .uc-share .uc-share-apps button {
@@ -291,11 +291,11 @@
   cursor: pointer;
   font-size: 14px;
   font-weight: 700;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   padding: 3px 0;
 }
 .uc-share details p {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 12px;
   line-height: 1.65;
 }
@@ -341,7 +341,7 @@
   padding: 12px 25px;
   margin: 0;
   background: var(--brand-page);
-  color: var(--brand-action);
+  color: var(--brand-ink);
   border-top: 1px solid var(--brand-soft);
   font-size: 13px;
   min-height: 1px;

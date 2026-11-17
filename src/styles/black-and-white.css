@@ -46,7 +46,7 @@
 .bw-controls label,
 .bw-sort label {
   display: block;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 8px;
@@ -68,7 +68,7 @@
   border: 1px solid var(--brand-border);
   border-radius: 10px;
   padding-left: 15px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .bw-search-input:focus-within {
   outline: 3px solid var(--brand-border);
@@ -101,13 +101,13 @@
 .bw-filter-row select {
   width: 100%;
   background: white;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 15px;
   min-height: 47px;
 }
 .bw-reset {
   min-height: 47px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   background: transparent;
   border-color: var(--brand-border);
   font-size: 14px;
@@ -166,7 +166,7 @@
   border: 1px solid var(--brand-border);
   border-radius: 10px;
   background: #ffffff;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 15px;
 }
 .bw-error {
@@ -202,7 +202,7 @@
   display: flex;
   align-items: center;
   gap: 9px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 14px;
 }
 .bw-pagination input {
@@ -212,7 +212,7 @@
 }
 .bw-pagination button {
   min-width: 104px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .bw-pagination button:disabled {
   opacity: 0.45;

@@ -15,7 +15,7 @@
   line-height: 1.1;
 }
 .guide-page .guide-heading .eyebrow {
-  color: var(--brand-accent);
+  color: var(--brand-ink);
   font-size: 16px;
   letter-spacing: normal;
   text-transform: none;
@@ -28,7 +28,7 @@
 .guide-page .guide-body {
   font-size: 20px;
   line-height: 1.7;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .guide-page .guide-body h2 {
   font-size: 33px;

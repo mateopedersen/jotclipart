@@ -283,7 +283,7 @@
   margin-top: 7px;
   font-size: 16px;
   line-height: 1.35;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .tc-section-heading {
   display: flex;
@@ -483,7 +483,7 @@
   border: 1px solid var(--brand-border);
   border-radius: 5px;
   background: #ffffff;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 19px;
   font-weight: 700;
 }
@@ -507,7 +507,7 @@
 .tc-adapt strong {
   font-size: 20px;
   font-weight: 700;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .tc-adapt p {
   font-size: 18px;
@@ -568,7 +568,7 @@
 .tc-output strong {
   font-size: 17px;
   font-weight: 700;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   margin-bottom: 8px;
 }
 .tc-plan-resources > :is(.tc-button, .tc-text-link) {
@@ -595,7 +595,7 @@
 .tc-copy-status,
 .tc-print-status {
   font-size: 17px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   margin: 20px 0 0;
 }
 .tc-copy-fallback {
@@ -733,7 +733,7 @@
   font-size: 16px;
   line-height: 1.45;
   margin-top: 10px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .tc-example-stage-slide {
   background: #ffffff;
@@ -1008,7 +1008,7 @@
   border-radius: 3px;
 }
 .tc-check-items label:has(input:checked) span {
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .tc-field-note {
   font-size: 17px;

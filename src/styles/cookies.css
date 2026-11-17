@@ -19,7 +19,7 @@ body:has(#cookie-settings-dialog[open]) {
   box-shadow:
     0 -7px 30px #234a7817,
     inset 0 2px #fff;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-family: var(--font-ui);
 }
 .cookie-strip-inner {
@@ -56,7 +56,7 @@ body:has(#cookie-settings-dialog[open]) {
   color: var(--brand-ink);
 }
 :is(.cookie-notice, .cookie-dialog, .cookie-policy) a {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -107,7 +107,7 @@ body:has(#cookie-settings-dialog[open]) {
   border: 1px solid var(--brand-border);
   border-radius: 22px;
   background: #fff;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-family: var(--font-ui);
   box-shadow: 0 28px 100px #0c28494a;
 }
@@ -161,7 +161,7 @@ body:has(#cookie-settings-dialog[open]) {
   border: 1px solid var(--brand-border);
   border-radius: 12px;
   background: #fff;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   cursor: pointer;
 }
 .cookie-dialog-body {
@@ -199,7 +199,7 @@ body:has(#cookie-settings-dialog[open]) {
 .cookie-category :is(.cookie-category-required, .cookie-category-local) {
   padding: 4px 8px;
   border-radius: 6px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   background: #ffffff;
   font-size: 11px;
   font-weight: 600;
@@ -256,7 +256,7 @@ body:has(#cookie-settings-dialog[open]) {
 .cookie-policy {
   max-width: 1110px;
   margin: 0 auto 50px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .cookie-policy-hero {
   display: grid;
@@ -364,7 +364,7 @@ body:has(#cookie-settings-dialog[open]) {
   line-height: 1.7;
 }
 .cookie-register .cookie-provider {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 12px;
   margin-bottom: 15px;
 }
@@ -376,14 +376,14 @@ body:has(#cookie-settings-dialog[open]) {
 .cookie-register dt {
   font-size: 12px;
   font-weight: 600;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   margin: 0 0 5px;
 }
 .cookie-register dd {
   margin: 0 0 13px;
   font-size: 14px;
   line-height: 1.6;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .cookie-device-register {
   grid-template-columns: repeat(2, minmax(0, 1fr));

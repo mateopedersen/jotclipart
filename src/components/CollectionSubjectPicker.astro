@@ -15,7 +15,7 @@ const { topics } = Astro.props;
         <path
           d="m5 7.5 5 5 5-5"
           stroke="currentColor"
-          stroke-width="2"
+          stroke-width="2.8"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
@@ -40,7 +40,7 @@ const { topics } = Astro.props;
     border: 1px solid var(--brand-border);
     border-radius: 14px;
     background: #fff;
-    color: var(--brand-action);
+    color: var(--brand-ink);
     overflow: clip;
   }
   summary {
@@ -58,6 +58,7 @@ const { topics } = Astro.props;
     display: none;
   }
   summary svg {
+    color: var(--brand-action);
     flex-shrink: 0;
     transition: transform 120ms ease;
   }
@@ -86,7 +87,7 @@ const { topics } = Astro.props;
     display: block;
     padding: 11px 12px;
     border-radius: 8px;
-    color: var(--blue);
+    color: var(--brand-ink);
     line-height: 1.4;
     overflow-wrap: anywhere;
   }

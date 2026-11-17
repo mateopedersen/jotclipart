@@ -3,7 +3,7 @@
   display: none !important;
 }
 .ai-page .ai-control-help {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 12px;
   line-height: 1.55;
   margin: 5px 0 10px;
@@ -11,7 +11,7 @@
 .ai-ideas-jump {
   display: inline-block;
   margin: 2px 0 13px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 14px;
   font-weight: 600;
   text-decoration: underline;
@@ -34,7 +34,7 @@
   border: 1px solid var(--brand-border);
   border-radius: 7px;
   background: #fff;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   padding: 6px 24px 6px 9px;
   font-size: 12px;
 }
@@ -73,11 +73,11 @@
   flex-wrap: wrap;
   gap: 5px 10px;
   margin-top: 8px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 12px;
 }
 .ai-style-choice strong {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-weight: 600;
 }
 .ai-page .ai-style-choice button {
@@ -85,7 +85,7 @@
   min-height: 34px;
   background: transparent;
   border: 0;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 12px;
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -103,7 +103,7 @@
   background: var(--brand-page);
   border: 1px solid var(--brand-border);
   border-radius: 7px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   padding: 6px 9px;
   min-height: 34px;
   text-align: left;
@@ -115,7 +115,7 @@
   background: transparent;
   padding: 9px 0;
   min-height: 40px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 13px;
   font-weight: 600;
 }
@@ -167,7 +167,7 @@
   display: block;
   text-align: left;
   width: 100%;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   border-top: 1px solid var(--brand-soft);
   padding: 8px 12px;
   font-size: 12px;
@@ -181,7 +181,7 @@
   background: var(--brand-soft);
 }
 .ai-example-note a {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -233,7 +233,7 @@
   font-size: 16px;
 }
 .ai-ideas-heading > a {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 13px;
   flex-shrink: 0;
   padding-top: 8px;
@@ -249,7 +249,7 @@
   border: 1px solid var(--brand-soft);
   border-radius: 12px;
   margin-bottom: 24px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 14px;
 }
 .ai-prompt-recipe > strong {
@@ -269,7 +269,7 @@
   display: grid;
   place-items: center;
   background: #ffffff;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   width: 21px;
   height: 21px;
   border-radius: 6px;
@@ -295,7 +295,7 @@
   gap: 9px;
   padding: 9px 12px;
   min-height: 40px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   border: 1px solid var(--brand-border);
   border-radius: 8px;
   background: #fff;
@@ -322,7 +322,7 @@
   scroll-margin-top: 95px;
 }
 .ai-idea-search-row label {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 14px;
   font-weight: 600;
 }
@@ -340,11 +340,11 @@
 #ai-idea-count {
   font-size: 13px;
   margin-left: auto;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .ai-page .ai-ideas-reference-note {
   font-size: 12px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   margin: 10px 0 19px;
 }
 .ai-idea-cards {
@@ -385,7 +385,7 @@
   right: 0;
   text-align: center;
   font-size: 10px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .ai-idea-copy {
   padding: 17px 16px 15px;
@@ -394,7 +394,7 @@
   flex: 1;
 }
 .ai-idea-category {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 11px;
   font-weight: 500;
   margin-bottom: 5px;
@@ -423,7 +423,7 @@
   padding-top: 13px;
 }
 .ai-idea-card-footer > span {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 11px;
 }
 .ai-page .ai-idea-card-footer button {
@@ -457,12 +457,12 @@
   border: 1px solid var(--brand-border);
   border-radius: 8px;
   background: #fff;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 14px;
 }
 .ai-idea-pagination > span {
   font-size: 13px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .ai-idea-pagination button:disabled {
   opacity: 0.45;
@@ -471,7 +471,7 @@
 .ai-idea-empty {
   padding: 30px 15px;
   text-align: center;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   background: #fff;
   border: 1px solid var(--brand-soft);
   border-radius: 10px;

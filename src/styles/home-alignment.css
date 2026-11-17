@@ -17,7 +17,7 @@
   flex-shrink: 0;
   min-height: 44px;
   padding: 8px 0;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
@@ -27,7 +27,7 @@
   text-underline-offset: 5px;
 }
 .home-page a.home-section-link:hover {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   text-decoration-color: currentColor;
 }
 .home-page a.home-section-link:focus-visible {
@@ -80,7 +80,7 @@
   margin: 0 0 22px;
 }
 .home-recent-subject {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 13px;
   font-weight: 700;
   line-height: 1.4;

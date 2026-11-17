@@ -1,3 +1,16 @@
+# Sitewide black interface text — owner clarification 2026-11-17
+
+All normal interface text is neutral black (#000000): navigation and footer links,
+Surprise me title/subtitle, body and helper copy, collection introductions/counts,
+subject picker labels/options, card descriptions and text links. Use the ink token
+for typography; never reuse the green action/accent token as a normal text color.
+Keep accepted page/card/background treatments, green action surfaces and borders,
+green interface symbols/arrows, original artwork and user-selected editor colors.
+White-on-green primary labels and semantic warning/error distinctions are retained.
+Navigation arrows use stronger immutable bold-v2 assets; footer arrows are 30px.
+Never overwrite old immutable arrow assets or clean current/previous installed
+runtimes. This typography-only release must preserve the final1215PDF repair root.
+
 # Current JotClipart installation — 2026-11-17 black text and related controls
 
 This supersedes the historical installation notes below. Production software is

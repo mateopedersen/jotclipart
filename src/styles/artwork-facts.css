@@ -27,7 +27,7 @@
   color: var(--brand-ink);
 }
 .artwork-facts a {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 13px;
   font-weight: 650;
   line-height: 1.6;
@@ -74,23 +74,23 @@
   background: #ffffff;
   border: 1px solid var(--brand-soft);
   border-radius: 5px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 9px;
   font-weight: 750;
   letter-spacing: 0.02em;
 }
 .file-fact-print .file-fact-format {
-  color: #99455b;
+  color: var(--brand-ink);
   background: #fff0f4;
   border-color: #efd5de;
 }
 .file-fact-edit .file-fact-format {
-  color: #286b61;
+  color: var(--brand-ink);
   background: #eef8f4;
   border-color: #cfe6de;
 }
 .file-fact-license .file-fact-format {
-  color: #71568f;
+  color: var(--brand-ink);
   background: #f5f0fb;
   border-color: #e3d9ef;
 }
@@ -105,7 +105,7 @@
 .file-fact-primary {
   font-size: 13px;
   font-weight: 650;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   line-height: 1.4;
   margin: 0 0 7px;
 }
@@ -168,7 +168,7 @@
 }
 .artwork-facts dt {
   font-size: 11px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   line-height: 1.5;
 }
 .artwork-facts dd {
@@ -177,7 +177,7 @@
   font-weight: 600;
   line-height: 1.6;
   overflow-wrap: anywhere;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .artwork-facts dd small {
   display: block;
@@ -273,7 +273,7 @@
 .file-fact-primary {
   font-size: 14px;
   font-weight: 700;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .file-fact-description {
   font-size: 14px;
@@ -293,7 +293,7 @@
 }
 .artwork-facts dt {
   font-size: 12px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .artwork-facts dd {
   font-size: 13px;

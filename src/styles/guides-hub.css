@@ -57,7 +57,7 @@
   margin: 0 0 23px;
 }
 .gm-breadcrumb span {
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .gm-header h1 {
   font-size: clamp(43px, 4.3vw, 60px);
@@ -189,7 +189,7 @@
   border-radius: 10px;
   background: #fff;
   text-decoration: none;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   box-shadow: 0 3px 0 var(--brand-soft);
 }
 .gm-topics a strong {
@@ -286,7 +286,7 @@
 .gm-lesson-note strong {
   font-size: 19px;
   font-weight: 700;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .gm-lesson-note p {
   margin: 0;
@@ -295,7 +295,7 @@
 }
 .guide-manual .gm-capture-note {
   font-size: 16px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   margin: 22px 0 0;
 }
 .gm-projects,
@@ -366,7 +366,7 @@
   margin-top: 5px;
   font-size: 17px;
   font-weight: 450;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .gm-file-reference dd {
   margin: 19px 0 0;

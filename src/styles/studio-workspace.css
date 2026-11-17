@@ -21,7 +21,7 @@
 }
 .uc-editor .uc-studio-label {
   font-size: 12px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   letter-spacing: 1.4px;
 }
 .uc-editor button {
@@ -69,11 +69,11 @@
   background: transparent;
   border-color: transparent;
   box-shadow: none;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .uc-editor .uc-modes button[aria-pressed='true'] {
   background: white;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   border-color: var(--brand-border);
   box-shadow: 0 2px 5px #254c7612;
 }
@@ -83,7 +83,7 @@
   background: var(--brand-soft);
   border: 1px solid var(--brand-soft);
   border-radius: 10px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   padding: 10px 14px;
   min-height: 44px;
 }
@@ -141,7 +141,7 @@
   background: var(--brand-page);
   border-color: var(--brand-border);
   box-shadow: inset 0 -3px var(--brand-action);
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .uc-editor .uc-canvas-column {
   order: 0;
@@ -219,7 +219,7 @@
   background: #ffffff;
   border: 1px solid var(--brand-soft);
   border-radius: 8px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   overflow-wrap: anywhere;
 }
 .uc-editor .uc-properties label {
@@ -313,7 +313,7 @@
 .uc-editor .uc-library-count {
   display: inline-block;
   font-size: 12px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   background: #ffffff;
   border: 1px solid var(--brand-soft);
   padding: 5px 9px;
@@ -384,7 +384,7 @@
   min-height: 44px;
   width: 44px;
   padding: 10px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   background: #ffffffee;
   display: flex;
   align-items: center;
@@ -423,7 +423,7 @@
 .uc-editor .uc-text-presets span {
   font-size: 12px;
   font-weight: 600;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .uc-editor [data-text-preset='editorial'] b {
   font:
@@ -509,7 +509,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .uc-editor .uc-arrange-tools .uc-row {
   gap: 7px;
@@ -689,7 +689,7 @@
 }
 .uc-editor .uc-library-tabs button[aria-pressed='true'] {
   background: white;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   border-color: var(--brand-border);
   box-shadow: 0 2px 5px #18385e0c;
 }
@@ -734,7 +734,7 @@
 }
 .uc-editor .uc-artwork-dimensions {
   font-size: 11px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-weight: 500;
   padding: 0 10px 12px;
 }
@@ -746,7 +746,7 @@
   width: 100%;
   margin-top: 14px;
   background: #ffffff;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .uc-editor .uc-place-card {
   padding: 16px;

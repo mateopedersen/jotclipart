@@ -81,7 +81,7 @@
 }
 .trust-reviewed {
   font-size: 0.85rem;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   margin: 0;
 }
 .trust-reviewed time {
@@ -155,7 +155,7 @@
 }
 .trust-flow strong {
   display: block;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 0.84rem;
   line-height: 1.5;
 }
@@ -209,7 +209,7 @@
   box-shadow: 0 0 0 1px var(--brand-soft);
 }
 .trust-process span {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1;
@@ -260,18 +260,18 @@
   padding: 0.55rem 0.1rem;
   font-size: 0.86rem;
   line-height: 1.5;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   text-decoration: none;
 }
 .trust-sidebar nav a > span {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   flex: 0 0 1.25rem;
   font-size: 0.74rem;
   padding-top: 0.1rem;
   font-variant-numeric: tabular-nums;
 }
 .trust-sidebar nav a:hover {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   text-decoration: underline;
 }
 .trust-sidebar-contact {
@@ -342,7 +342,7 @@
   background: #ffffff;
   border: 1px solid var(--brand-soft);
   border-bottom: 3px solid var(--brand-border);
-  color: var(--brand-action);
+  color: var(--brand-ink);
   border-radius: 8px;
   font-size: 0.75rem;
   font-weight: 700;
@@ -354,7 +354,7 @@
   border-left: 3px solid var(--brand-action);
   background: #ffffff;
   border-radius: 0 12px 12px 0;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .trust-checklist li {
   padding-left: 0.3rem;
@@ -375,7 +375,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 0.9rem;
   font-weight: 600;
   line-height: 1.55;
@@ -406,7 +406,7 @@
   line-height: 1.7;
 }
 .trust-table th {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   background: #ffffff;
   font-size: 0.82rem;
   font-weight: 700;
@@ -417,7 +417,7 @@
 .trust-table td {
   padding: 1rem;
   vertical-align: top;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   border-bottom: 1px solid var(--brand-soft);
   overflow-wrap: break-word;
 }
@@ -441,7 +441,7 @@
 }
 .trust-table td[data-result='allowed'] > span {
   background: #ffffff;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .trust-table td[data-result='restricted'] > span {
   background: #faeae4;
@@ -505,7 +505,7 @@
   border: 1px solid var(--brand-border);
   border-radius: 8px;
   background: var(--brand-page);
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font: inherit;
   font-size: 0.86rem;
   font-weight: 600;
@@ -585,7 +585,7 @@
   border-left: 3px solid var(--brand-action);
   padding: 1rem;
   background: #ffffff;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   border-radius: 6px;
 }
 .trust-report-builder {
@@ -615,7 +615,7 @@
   font-size: 0.87rem;
   line-height: 1.5;
   font-weight: 600;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .trust-report-builder :is(input, select, textarea) {
   min-width: 0;
@@ -641,7 +641,7 @@
 }
 .trust-report-builder textarea[readonly] {
   background: #fff;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 0.86rem;
 }
 .trust-report-actions {
@@ -730,7 +730,7 @@
   border-bottom: 3px solid var(--brand-border);
   border-radius: 12px;
   background: #fff;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   text-decoration: none;
   font-size: 0.94rem;
   font-weight: 600;
@@ -979,7 +979,7 @@
   }
   .trust-table td::before {
     content: attr(data-label);
-    color: var(--brand-action);
+    color: var(--brand-ink);
     font-size: 0.77rem;
     font-weight: 600;
     padding-top: 0.1rem;

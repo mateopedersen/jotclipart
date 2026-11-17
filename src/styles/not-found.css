@@ -54,7 +54,7 @@
   align-items: center;
   gap: 0.7rem;
   margin-bottom: 0.9rem !important;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 0.84rem;
   font-weight: 600;
 }
@@ -65,7 +65,7 @@
   border: 1px solid var(--brand-border);
   border-radius: 7px;
   background: #ffffff;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 0.85rem;
 }
 .not-found h1 {
@@ -99,7 +99,7 @@
 .nf-search > label {
   display: block;
   margin-bottom: 0.65rem;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 0.88rem;
   font-weight: 600;
 }
@@ -131,7 +131,7 @@
   font: 400 16px/1.5 var(--font-ui);
 }
 .nf-search-field input::placeholder {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   opacity: 1;
 }
 .nf-search-field button {
@@ -170,7 +170,7 @@
   justify-content: center;
   gap: 0.6rem;
   min-height: 44px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 0.87rem;
   font-weight: 600;
 }
@@ -219,7 +219,7 @@
   min-width: 0;
   padding: 1rem 0.8rem;
   border-radius: 13px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   text-decoration: none;
   background: #ffffff;
 }
@@ -235,7 +235,7 @@
 }
 .nf-shortcut-grid strong {
   display: block;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.4;
@@ -247,7 +247,7 @@
   line-height: 1.75;
 }
 .nf-shortcut-arrow {
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .nf-subjects {
   padding-top: 2.5rem;
@@ -271,7 +271,7 @@
   align-items: center;
   gap: 0.7rem;
   min-height: 44px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 0.87rem;
   font-weight: 600;
 }
@@ -290,7 +290,7 @@
   gap: 1.25rem;
   padding: 0 0 0.5rem;
   text-align: center;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   text-decoration: none;
 }
 .nf-subject-picture {
@@ -363,7 +363,7 @@
   line-height: 1.75;
 }
 .nf-report a {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-weight: 600;
 }
 @media (max-width: 1000px) {

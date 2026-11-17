@@ -1,7 +1,7 @@
 import { chromium, webkit } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import assert from 'node:assert/strict';
-import { writeFileSync } from 'node:fs';
+import { writeFileSync, mkdirSync } from 'node:fs';
 const engine = process.env.UC_BROWSER || 'chromium',
   base = process.env.BASE_URL || 'http://127.0.0.1:4323';
 const browser = await { chromium, webkit }[engine].launch(),
@@ -14,6 +14,7 @@ try {
     for (const route of [
       '/',
       '/collections/',
+      '/collection/food-drink/',
       '/categories/',
       '/about/',
       '/favorites/',
@@ -26,7 +27,7 @@ try {
       await page.evaluate(() => document.fonts.ready);
       const labels = await page
         .locator(
-          '.eyebrow,.collection-eyebrow,.discovery-eyebrow,.about-eyebrow,.boards-eyebrow,.related-eyebrow,.studio-kicker,.print-eyebrow,.creative-project-eyebrow,.home-benefits-eyebrow',
+          '.eyebrow,.collection-eyebrow,.discovery-eyebrow,.about-eyebrow,.boards-eyebrow,.related-eyebrow,.studio-kicker,.print-eyebrow,.creative-project-eyebrow,.home-benefits-eyebrow,.home-benefit-body,.home-benefit-link,.footer-nav-card nav a,.themed-collection-hero p,.themed-collection-inventory,.mobile-subject-picker summary,.site-surprise-link strong,.site-surprise-link > span > span',
         )
         .evaluateAll((nodes) =>
           nodes
@@ -38,7 +39,7 @@ try {
             })),
         );
       for (const label of labels)
-        if (label.color !== 'rgb(20, 100, 212)') report.errors.push({ route, width, ...label });
+        if (label.color !== 'rgb(0, 0, 0)') report.errors.push({ route, width, ...label });
       if (route === '/collections/') {
         const axe = await new AxeBuilder({ page })
           .setLegacyMode(engine === 'webkit')
@@ -58,6 +59,7 @@ try {
   assert.deepEqual(report.errors, []);
   report.status = 'passed';
 } finally {
+  mkdirSync('reports/categories-refresh', { recursive: true });
   writeFileSync(`reports/categories-refresh/brand-${engine}.json`, JSON.stringify(report, null, 2));
   await browser.close();
 }

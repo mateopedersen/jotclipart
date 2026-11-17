@@ -86,7 +86,7 @@
     inset 0 1px 0 #fff,
     0 3px 8px #3262a00a;
   text-decoration: none;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   transition:
     background-color 0.16s,
     border-color 0.16s;
@@ -108,14 +108,14 @@
 .site-header .site-surprise-link strong {
   display: block;
   font: 650 16px/1.35 var(--font-ui);
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .site-header .site-surprise-link > span > span {
   display: block;
   margin-top: 3px;
   font-size: 12px;
   line-height: 1.4;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .site-header .site-nav-disclosure {
   position: relative;
@@ -183,7 +183,7 @@
 .site-header .site-studio-link[aria-current='page'] {
   border-color: var(--brand-soft);
   background: var(--brand-page);
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .site-header .site-ai-link {
   display: inline-flex;
@@ -235,7 +235,7 @@
 }
 .site-header .site-favorites-link:hover,
 .site-header .site-favorites-link[aria-current='page'] {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   background: var(--brand-page);
   border-color: var(--brand-soft);
 }
@@ -281,7 +281,7 @@
   font-size: 12px;
   font-weight: 650;
   letter-spacing: 0.03em;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .site-header .site-dropdown-heading > a {
   display: inline-flex;
@@ -290,7 +290,7 @@
   padding: 5px 0;
   font-size: 12px;
   font-weight: 600;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   border: 0;
 }
 .site-header .site-dropdown-heading > a:hover {
@@ -355,7 +355,7 @@
 .site-header .site-dropdown-link small {
   display: block;
   font-size: 12px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-weight: 400;
   line-height: 1.5;
   margin-top: 3px;
@@ -394,7 +394,7 @@
     inset 0 0 0 4px #ffffff70,
     0 5px 0 var(--brand-soft),
     0 9px 16px #3157850c;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   isolation: isolate;
 }
 .site-header .site-browse-preview-copy {
@@ -520,7 +520,7 @@
   border: 1px solid var(--brand-border);
   border-radius: 6px;
   background: #ffffff;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   text-align: center;
   font-size: 10px;
   font-weight: 600;
@@ -637,7 +637,7 @@
     min-height: 44px;
     border: 1px solid var(--brand-soft);
     border-radius: 9px;
-    color: var(--brand-action);
+    color: var(--brand-ink);
     background: var(--brand-page);
     font-size: 16px;
     font-weight: 550;
@@ -998,4 +998,9 @@
     width: 148px;
     height: 39px;
   }
+}
+
+/* Keep interface symbols green while their labels use the black text token. */
+.site-header :is(.site-menu-button, .site-favorites-link) > svg {
+  color: var(--brand-action);
 }

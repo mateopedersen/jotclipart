@@ -25,7 +25,7 @@
   box-shadow:
     inset 0 1px #fff,
     0 3px 0 var(--brand-soft);
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font: 600 15px/1.45 var(--font-ui);
   text-align: left;
   cursor: pointer;
@@ -132,7 +132,7 @@
     0 25px 80px #0e2c5f55,
     inset 0 2px #fff;
   overflow: hidden;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-family: var(--font-ui);
   overscroll-behavior: contain;
 }
@@ -182,7 +182,7 @@
   box-shadow:
     inset 0 1px #fff,
     0 2px 0 var(--brand-soft);
-  color: var(--brand-action);
+  color: var(--brand-ink);
   cursor: pointer;
 }
 .ai-choice-close > span {
@@ -202,7 +202,7 @@
   border: 1px solid var(--brand-border);
   border-radius: 11px;
   background: #fff;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font: 400 16px/1.45 var(--font-ui);
 }
 .ai-choice-scroll {
@@ -236,7 +236,7 @@
   box-shadow:
     inset 0 1px #fff,
     0 3px 5px #31578109;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   text-align: left;
   cursor: pointer;
 }
@@ -297,7 +297,7 @@
   box-shadow:
     inset 0 0 0 1px var(--brand-border),
     0 3px 0 var(--brand-border);
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .ai-choice-option[aria-pressed='true'] .ai-choice-check {
   border-color: var(--brand-action);
@@ -312,7 +312,7 @@
   margin: 0;
   padding: 30px 10px;
   text-align: center;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 15px;
 }
 .ai-choice-footer {
@@ -325,12 +325,12 @@
   padding: 14px 24px;
   border-top: 1px solid var(--brand-border);
   background: #ffffff;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 12px;
   line-height: 1.5;
 }
 .ai-choice-footer > span:first-child {
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-weight: 600;
 }
 @media (max-width: 600px) {

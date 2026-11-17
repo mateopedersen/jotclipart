@@ -30,13 +30,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.7rem;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 0.88rem;
   line-height: 1.6;
   margin-bottom: 1.4rem;
 }
 .contact-breadcrumb a {
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .contact-hero {
   display: grid;
@@ -98,7 +98,7 @@
   max-width: 100%;
   width: fit-content;
   overflow-wrap: anywhere;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 0.95rem;
   font-weight: 600;
   margin-top: 1.35rem;
@@ -176,7 +176,7 @@
 .contact-topic > span:nth-child(2) > span {
   font-size: 0.8rem;
   line-height: 1.55;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .contact-topic-check {
   opacity: 0;
@@ -212,7 +212,7 @@
   font-size: 0.88rem;
   line-height: 1.65;
   font-weight: 600;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .contact-compose {
   display: flex;
@@ -329,10 +329,10 @@
   line-height: 1.75;
   margin: 1.35rem auto 0;
   max-width: 54ch;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .contact-form-disclosure a {
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .contact-form-status {
   padding: 0 1.5rem;
@@ -367,7 +367,7 @@
 .contact-form-fallback > a {
   display: inline-block;
   padding: 8px 0;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 0.94rem;
   font-weight: 600;
   line-height: 1.5;
@@ -417,7 +417,7 @@
   background: #ffffff;
   border: 1px solid var(--brand-border);
   border-radius: 10px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 0.85rem;
   font-weight: 600;
 }

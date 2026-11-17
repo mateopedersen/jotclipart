@@ -93,7 +93,7 @@
   box-shadow:
     inset 0 1px #fff,
     0 3px 0 var(--brand-soft);
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 13px;
   font-weight: 700;
   line-height: 1.5;
@@ -131,7 +131,7 @@
   display: block;
   font-size: 12px;
   font-weight: 650;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .studio-artboard svg {
   width: 100%;
@@ -206,7 +206,7 @@
   background: #ffffff;
   border-bottom: 1px solid var(--brand-border);
   box-shadow: inset 0 2px #fff;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .studio-workspace-identity {
   display: flex;
@@ -262,7 +262,7 @@
   box-shadow:
     inset 0 1px #fff,
     0 2px 0 var(--brand-soft);
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font: 600 13px/1.4 var(--font-ui);
   text-decoration: none;
 }
@@ -272,7 +272,7 @@
 .studio-workspace-label .studio-workspace-help:hover {
   border-color: var(--brand-border);
   background: var(--brand-soft);
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .studio-workspace-help:focus-visible {
   outline: 3px solid var(--brand-action);
@@ -316,7 +316,7 @@
   padding: 10px 18px;
   border: 1px solid var(--brand-border);
   background: var(--brand-page);
-  color: var(--brand-action);
+  color: var(--brand-ink);
   border-radius: 10px;
   font-size: 14px;
   font-weight: 700;
@@ -387,7 +387,7 @@
 .studio-template-use {
   font-size: 11px;
   font-weight: 750;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   background: #ffffff;
   border-radius: 5px;
   padding: 4px 6px;
@@ -395,7 +395,7 @@
 .studio-starter-note {
   font-size: 13px;
   line-height: 1.6;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   margin: 16px 0 0;
 }
 .studio-starter-scroll-hint {
@@ -646,7 +646,7 @@
   font:
     italic 42px Georgia,
     serif;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .studio-launch a > span:last-child {
   min-width: 0;
@@ -829,7 +829,7 @@
 }
 .studio-scene-label > span {
   font-size: 12px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   white-space: nowrap;
 }
 .studio-basic-starters {
@@ -1035,7 +1035,7 @@
   border-radius: 7px;
   font-size: 12px;
   line-height: 1.4;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-weight: 600;
 }
 .studio-learning-edit {
@@ -1091,7 +1091,7 @@
   font:
     italic 16px Georgia,
     serif;
-  color: #405f58;
+  color: var(--brand-ink);
   white-space: nowrap;
 }
 .studio-paper-preview img {
@@ -1100,7 +1100,7 @@
 }
 .studio-paper-preview span {
   font-size: 10px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -1114,7 +1114,7 @@
   font-size: 12px;
   letter-spacing: 1px;
   font-weight: 700;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   line-height: 1.6;
 }
 .studio-learning-copy h3 {
@@ -1138,7 +1138,7 @@
   gap: 10px;
   font-size: 15px;
   font-weight: 700;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   background: #ffffff;
   border: 1px solid var(--brand-soft);
   border-radius: 9px;
@@ -1163,7 +1163,7 @@
   font-size: 14px;
   line-height: 1.6;
   margin-top: 16px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -1191,7 +1191,7 @@
 .studio-trust a {
   font-size: 16px;
   font-weight: 600;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -1326,7 +1326,7 @@
 }
 
 .studio-kicker {
-  color: var(--brand-accent);
+  color: var(--brand-ink);
   font-size: 14px;
   font-weight: 650;
 }

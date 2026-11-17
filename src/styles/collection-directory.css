@@ -34,14 +34,14 @@
 .collection-directory .collection-eyebrow {
   font-size: 15px;
   font-weight: 650;
-  color: var(--brand-accent);
+  color: var(--brand-ink);
   margin: 0 0 8px;
 }
 .collection-directory-stats {
   display: flex;
   flex-wrap: wrap;
   gap: 12px 24px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-weight: 600;
   font-size: 14px;
 }
@@ -80,7 +80,7 @@
   border-radius: 17px;
   overflow: hidden;
   background: #fff;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   text-decoration: none;
   box-shadow: 0 3px 0 var(--brand-soft);
 }
@@ -151,7 +151,7 @@
 .collection-group-tile .collection-group-inventory {
   margin-top: auto;
   padding-top: 3px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font-size: 13px;
 }
 .collection-group-inventory > span[aria-hidden] {
@@ -188,7 +188,7 @@
   background: #fff;
   padding: 9px 16px;
   min-height: 44px;
-  color: var(--brand-action);
+  color: var(--brand-ink);
   font: 600 14px/1.2 inherit;
   cursor: pointer;
 }
@@ -206,7 +206,7 @@
 .collection-find #collection-results {
   font-size: 14px;
   margin: 15px 0 0;
-  color: var(--brand-action);
+  color: var(--brand-ink);
 }
 .collection-no-results {
   padding: 36px;
