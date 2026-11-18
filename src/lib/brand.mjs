@@ -21,10 +21,6 @@ export function freeCatalogTitle(value) {
   return 'Free ' + source;
 }
 
-export function artworkCatalogTitle(value) {
-  return freeCatalogTitle(value).replace(/(?:\s+clip[ -]?art)+[.!?…]*$/i, '') + ' Clipart';
-}
-
 export function isCatalogTitlePath(pathname) {
   return (
     pathname === '/' ||
@@ -36,7 +32,6 @@ export function isCatalogTitlePath(pathname) {
 }
 
 export function pageDisplayTitle(value, pathname) {
-  if (/^\/art\/[a-z0-9-]+\/$/.test(pathname)) return artworkCatalogTitle(value);
   return isCatalogTitlePath(pathname) ? freeCatalogTitle(value) : value;
 }
 

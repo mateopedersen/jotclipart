@@ -1,12 +1,7 @@
+import { displayArtworkTitle } from '../src/lib/display-title.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {
-  artworkCatalogTitle,
-  brand,
-  freeCatalogTitle,
-  pageDisplayTitle,
-  publicBrandURL,
-} from '../src/lib/brand.mjs';
+import { brand, freeCatalogTitle, pageDisplayTitle, publicBrandURL } from '../src/lib/brand.mjs';
 import { presentationState } from '../server/catalog-snapshot/brand-presentation.mjs';
 
 test('catalog display title is idempotent without changing source identity', () => {
@@ -28,10 +23,10 @@ test('catalog display title is idempotent without changing source identity', () 
 test('every artwork display title has a single Clipart suffix without changing topic and guide titles', () => {
   const title = 'Walter Clayton Jr. In A Navy Mavericks Jersey';
   const name = 'Free Walter Clayton Jr. In A Navy Mavericks Jersey Clipart';
-  assert.equal(artworkCatalogTitle(title), name);
-  assert.equal(artworkCatalogTitle(name), name);
-  assert.equal(artworkCatalogTitle(name + ' Clip Art.'), name);
-  assert.equal(pageDisplayTitle(title, '/art/walter-clayton-jr/'), name);
+  assert.equal(displayArtworkTitle(title), name);
+  assert.equal(displayArtworkTitle(name), name);
+  assert.equal(displayArtworkTitle(name + ' Clip Art.'), name);
+  assert.equal(pageDisplayTitle(displayArtworkTitle(title), '/art/walter-clayton-jr/'), name);
   assert.equal(pageDisplayTitle('Print Size Calculator', '/print-size/'), 'Print Size Calculator');
 });
 test('Free is limited to catalog page families', () => {
