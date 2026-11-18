@@ -5,9 +5,9 @@ import {
   publicationRevision,
   stampFirstPublication,
   verifyRecentDiscovery,
-} from '../scripts/catalog-snapshot/publication-date.mjs';
-import { validateEditorialReview } from '../scripts/artwork-editorial.mjs';
-import { publicationTime } from '../src/lib/publication-order.ts';
+} from '../../scripts/catalog-snapshot/publication-date.mjs';
+import { validateEditorialReview } from '../../scripts/artwork-editorial.mjs';
+import { publicationTime } from '../../src/lib/publication-order.ts';
 
 const batch = JSON.parse(
   readFileSync('data/catalog-batches/owner-watercraft-20-20261105-02-v2.json'),

@@ -1,4 +1,5 @@
 import content from '../../data/trust-pages.json';
+import { contactEmail } from './contact';
 
 export interface TrustLink {
   label: string;
@@ -29,7 +30,7 @@ export interface TrustPage {
 }
 export const trustPages = content.pages as Record<string, TrustPage>;
 export const trustReviewed = content.reviewed;
-export const trustContact = content.contact;
+export const trustContact = contactEmail;
 export const trustNavigation: TrustLink[] = [
   { label: 'Artwork License', href: '/license/' },
   { label: 'Privacy & Your Data', href: '/privacy/' },
