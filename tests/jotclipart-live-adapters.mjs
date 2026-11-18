@@ -6,7 +6,7 @@ import { mkdirSync, mkdtempSync, writeFileSync, rmSync, readFileSync } from 'nod
 import { resolve, join } from 'node:path';
 import { gzipSync } from 'node:zlib';
 import { brand, publicBrandURL } from '../src/lib/brand.mjs';
-import { displayTitle, displayCatalogTitle } from '../src/lib/display-title.ts';
+import { displayTitle, displayArtworkTitle } from '../src/lib/display-title.ts';
 import {
   catalogPublicOrigin,
   verifyIncomingMedia,
@@ -174,7 +174,7 @@ function contentFixture(directory, free = true) {
       assert(['/art/private-artwork/', '/edit/private-artwork/'].includes(path));
       const title =
         path.startsWith('/art/') && free
-          ? displayCatalogTitle(record.title)
+          ? displayArtworkTitle(record.title)
           : displayTitle(record.title);
       return new Response(
         `<html><head><meta name="build-revision" content="${revision}"><link rel="canonical" href="${brand.origin}${path}"></head><body><h1>${title}</h1><img src="${publicBrandURL(record.webp)}"><a href="${publicBrandURL(record.pdf)}">PDF</a></body></html>`,

@@ -1,4 +1,4 @@
-import { displayCatalogTitle } from '../lib/display-title';
+import { displayArtworkTitle } from '../lib/display-title';
 import { formatFileSize } from '../lib/artwork-details';
 import { SearchRepository } from '../lib/search-remote';
 import type { SearchCard } from '../lib/search-index';
@@ -149,7 +149,7 @@ async function load(root: HTMLElement, id: string, format: Format) {
     if (!details.files[format] || !item[format]) throw new Error('Format unavailable');
     if (controller.signal.aborted || panel !== root) return;
     current = item;
-    text(root, '[data-download-artwork]', displayCatalogTitle(item.title));
+    text(root, '[data-download-artwork]', displayArtworkTitle(item.title));
     // The preview uses the validated original image URL, not a query-supplied URL.
     const image = root.querySelector<HTMLImageElement>('[data-download-preview]')!;
     image.src = verifiedSourceUrl(

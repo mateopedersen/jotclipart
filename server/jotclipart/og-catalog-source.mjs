@@ -1,4 +1,4 @@
-import { displayCatalogTitle, topicPageTitle } from '../../src/lib/display-title.ts';
+import { displayArtworkTitle, topicPageTitle } from '../../src/lib/display-title.ts';
 import { readPublicArtwork } from '../catalog-snapshot/public-artwork-routes.mjs';
 import { openSevenFacetCollectionContext } from '../catalog-snapshot/collection-context.mjs';
 import { readShellPageState } from '../catalog-snapshot/shell-page-data.mjs';
@@ -84,7 +84,7 @@ export async function catalogOgSource({ kind, id, state, context }) {
     const item = state.item;
     if (item?.id !== id) fail('Wrong OG artwork');
     selected = [item];
-    title = kind === 'art' ? displayCatalogTitle(item.title) : `Edit ${item.title}`;
+    title = kind === 'art' ? displayArtworkTitle(item.title) : `Edit ${item.title}`;
     canonicalPath = kind === 'art' ? `/art/${item.publicSlug ?? item.id}/` : `/edit/${item.id}/`;
     metadata = { item };
   } else if (kind === 'topic') {

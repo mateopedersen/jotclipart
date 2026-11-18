@@ -1,4 +1,4 @@
-import { displayTitle, displayCatalogTitle } from '../../src/lib/display-title.ts';
+import { displayTitle, displayArtworkTitle } from '../../src/lib/display-title.ts';
 import { brand, publicBrandURL } from '../../src/lib/brand.mjs';
 import { createHash } from 'node:crypto';
 import { writeFileSync, readFileSync } from 'node:fs';
@@ -134,7 +134,7 @@ export async function verifyContentLive({
           assert(text.includes('name="build-revision" content="' + revision + '"'));
           assert(text.includes(brand.origin + path));
           if (t.art) {
-            const title = t.path.startsWith('/art/') ? displayCatalogTitle : displayTitle;
+            const title = t.path.startsWith('/art/') ? displayArtworkTitle : displayTitle;
             assert.equal(
               clean(text.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? ''),
               title(t.art.title),

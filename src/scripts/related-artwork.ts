@@ -1,4 +1,4 @@
-import { displayTitle, displayCatalogTitle } from '../lib/display-title.ts';
+import { displayTitle, displayArtworkTitle } from '../lib/display-title.ts';
 import { FAVORITES_KEY, parseFavoriteIds, toggleStoredFavorite } from '../lib/favorites-storage';
 import type { BrowserRelatedCard, BrowserSnapshot, Mode } from '../lib/related/engine';
 import { actionIconAssets } from '../lib/action-icons';
@@ -222,7 +222,7 @@ export function initRelatedArtwork() {
     }
     const editLabel = data.editable === false ? 'View' : 'Edit';
     editor.href = data.editable === false ? data.href : `/edit/${data.id}/`;
-    editor.setAttribute('aria-label', `${editLabel} ${displayCatalogTitle(data.title)}`);
+    editor.setAttribute('aria-label', `${editLabel} ${displayArtworkTitle(data.title)}`);
     editor.querySelector('[data-related-edit-label]')!.textContent = editLabel;
     const editIcon = editor.querySelector<HTMLImageElement>('img');
     if (editIcon) editIcon.src = actionIconAssets[data.editable === false ? 'view' : 'edit'];
@@ -236,7 +236,7 @@ export function initRelatedArtwork() {
       .querySelectorAll<HTMLAnchorElement>('[data-related-detail]')
       .forEach((link) => (link.href = data.href));
     node.querySelector<HTMLElement>('.related-card-title')!.dataset.displayTitle = '';
-    node.querySelector('.related-card-title')!.textContent = displayCatalogTitle(data.title);
+    node.querySelector('.related-card-title')!.textContent = displayArtworkTitle(data.title);
     node.querySelector('.related-reason')!.textContent = data.reason;
     updateEditor(node, data);
     const image = node.querySelector('img')!;
@@ -264,7 +264,7 @@ export function initRelatedArtwork() {
     image.removeAttribute('sizes');
     image.src = data.webp;
     image.alt = data.alt;
-    image.title = displayCatalogTitle(data.title);
+    image.title = displayArtworkTitle(data.title);
     node.querySelectorAll<HTMLAnchorElement>('[data-related-download]').forEach((link) => {
       const format = link.dataset.relatedDownload as 'webp' | 'pdf',
         url = data[format];

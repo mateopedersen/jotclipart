@@ -1,6 +1,6 @@
 ---
 import { artworkURL } from '../../lib/artwork-route.mjs';
-import { displayCatalogTitle, topicPageTitle } from '../../lib/display-title';
+import { displayArtworkTitle, topicPageTitle } from '../../lib/display-title';
 import { imageLoadingPreview } from '../../lib/image-loading-preview';
 import { imageObject } from '../../lib/image-schema';
 import { collectionMetaDescription } from '../../lib/collection-meta.mjs';
@@ -89,7 +89,7 @@ const curatedMemberships = curatedDefinitions
             '@type': 'ListItem',
             position: index + 1,
             url: artworkURL(item),
-            name: displayCatalogTitle(item.title),
+            name: displayArtworkTitle(item.title),
             item: imageObject(item),
           })),
         },

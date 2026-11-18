@@ -1,5 +1,5 @@
 ---
-import { displayTitle, displayCatalogTitle } from '../lib/display-title';
+import { displayTitle, displayArtworkTitle, displayCatalogTitle } from '../lib/display-title';
 import relations from '../../data/topic-relations.json';
 import copy from '../../data/collection-copy.json';
 import { availableTopics, publishedArt } from '../lib/catalog';
@@ -43,7 +43,7 @@ const related = relatedCollectionSlugs(topic, relations, eligible).flatMap((slug
               srcset={image.thumbSrcSet}
               sizes="64px"
               alt={image.alt}
-              title={displayCatalogTitle(image.title)}
+              title={displayArtworkTitle(image.title)}
               width="100"
               height="100"
               loading="lazy"

@@ -6,7 +6,7 @@ import { gzipSync } from 'node:zlib';
 import { captureProductionSnapshot } from '../../server/catalog-snapshot/signed-production-snapshot.mjs';
 import { readSitemap } from '../../server/catalog-snapshot/sitemap-reader.mjs';
 import { publicBrandURL, freeCatalogTitle } from '../../src/lib/brand.mjs';
-import { displayCatalogTitle } from '../../src/lib/display-title.ts';
+import { displayArtworkTitle } from '../../src/lib/display-title.ts';
 import {
   presentationState,
   presentationSitemap,
@@ -392,7 +392,7 @@ try {
     required(route?.id === item.id && typeof route.slug === 'string', 'Missing artwork canonical');
     const view = presentationState(item),
       sourceTitle = item.title,
-      displayTitle = displayCatalogTitle(sourceTitle);
+      displayTitle = displayArtworkTitle(sourceTitle);
     descriptionDiffs += Number(view.description !== item.description);
     altDiffs += Number(view.alt !== item.alt);
     titleMutation += Number(view.title !== item.title);
@@ -601,7 +601,7 @@ try {
       newCanonical: publicBrandURL(u),
       path: new URL(u).pathname,
       sourceTitle,
-      displayTitle: displayCatalogTitle(sourceTitle),
+      displayTitle: displayArtworkTitle(sourceTitle),
       sourceDescription,
       descriptionSHA256: sha(Buffer.from(sourceDescription)),
       newDescriptionSHA256: sha(Buffer.from(view.description)),

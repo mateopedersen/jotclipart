@@ -1,5 +1,5 @@
 ---
-import { displayTitle, displayCatalogTitle } from '../lib/display-title';
+import { displayTitle, displayArtworkTitle } from '../lib/display-title';
 import { imageLoadingPreview, loadingPreviewStyle } from '../lib/image-loading-preview';
 interface Props {
   items: {
@@ -33,7 +33,7 @@ const previews = items.slice(0, 3).map((item) => imageLoadingPreview(item));
       <img
         src={item.webp}
         alt={item.alt}
-        title={displayCatalogTitle(item.title)}
+        title={displayArtworkTitle(item.title)}
         width={item.width}
         height={item.height}
         loading={priority ? 'eager' : 'lazy'}

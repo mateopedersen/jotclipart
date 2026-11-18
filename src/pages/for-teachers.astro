@@ -1,6 +1,6 @@
 ---
 import { artworkPath } from '../lib/artwork-route.mjs';
-import { displayTitle, displayCatalogTitle } from '../lib/display-title';
+import { displayTitle, displayArtworkTitle } from '../lib/display-title';
 import ContentLink from '../components/ContentLink.astro';
 import Layout from '../layouts/Layout.astro';
 import CatalogCount from '../components/CatalogCount.astro';
@@ -87,7 +87,7 @@ const checklist = [
               href={artworkPath(item)}
             >
               <img
-                title={displayCatalogTitle(item.title)}
+                title={displayArtworkTitle(item.title)}
                 src={item.thumb}
                 srcset={item.thumbSrcSet}
                 sizes="(max-width: 540px) 45vw, (max-width: 1000px) 30vw, 240px"
@@ -302,7 +302,7 @@ const checklist = [
                   {path.pictures.map((item) => (
                     <a href={artworkPath(item)}>
                       <img
-                        title={displayCatalogTitle(item.title)}
+                        title={displayArtworkTitle(item.title)}
                         src={item.thumb}
                         srcset={item.thumbSrcSet}
                         sizes="(max-width: 540px) 45vw, (max-width: 1000px) 30vw, 240px"

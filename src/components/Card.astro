@@ -1,6 +1,6 @@
 ---
 import { artworkPath } from '../lib/artwork-route.mjs';
-import { displayTitle, displayCatalogTitle } from '../lib/display-title';
+import { displayTitle, displayArtworkTitle } from '../lib/display-title';
 import { imageLoadingPreview, loadingPreviewStyle } from '../lib/image-loading-preview';
 import CardFileActions from './CardFileActions.astro';
 import Icon from './Icon.astro';
@@ -13,7 +13,7 @@ const preview = imageLoadingPreview(item);
   <ShareButton item={item} compact />
   <a class="art-picture" href={artworkPath(item)} aria-label={item.alt}>
     <img
-      title={displayCatalogTitle(item.title)}
+      title={displayArtworkTitle(item.title)}
       src={item.webp}
       alt={item.alt}
       width="400"
@@ -35,14 +35,14 @@ const preview = imageLoadingPreview(item);
       </a>
     )}
     <a class="card-title" data-display-title href={artworkPath(item)}>
-      {displayCatalogTitle(item.title)}
+      {displayArtworkTitle(item.title)}
     </a>
     {showDescription && item.description && (
       <p class="home-recent-description">{item.description}</p>
     )}
     <CardFileActions
       id={item.id}
-      title={displayCatalogTitle(item.title)}
+      title={displayArtworkTitle(item.title)}
       webp={item.webp}
       pdf={item.pdf}
     />

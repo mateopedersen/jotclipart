@@ -1,6 +1,6 @@
 ---
 import { artworkPath } from '../../lib/artwork-route.mjs';
-import { displayTitle, displayCatalogTitle } from '../../lib/display-title';
+import { displayTitle, displayArtworkTitle } from '../../lib/display-title';
 import { imageLoadingPreview, loadingPreviewStyle } from '../../lib/image-loading-preview';
 import { imageObject } from '../../lib/image-schema';
 import { downloadDetails } from '../../lib/download-data';
@@ -42,7 +42,7 @@ const downloadRecord = {
 ---
 
 <Layout
-  title={displayCatalogTitle(item.title)}
+  title={displayArtworkTitle(item.title)}
   description={item.description}
   noindex={!item.indexable}
   image={item.webp}
@@ -77,7 +77,7 @@ const downloadRecord = {
         breadcrumbs([
           { name: 'Home', path: '/' },
           { name: topic.keyword, path: `/clipart/${topic.slug}/` },
-          { name: displayCatalogTitle(item.title), path: artworkPath(item) },
+          { name: displayArtworkTitle(item.title), path: artworkPath(item) },
         ]),
       )}
     />
@@ -100,7 +100,7 @@ const downloadRecord = {
         aria-label={`Open original image: ${item.title}`}
       >
         <img
-          title={displayCatalogTitle(item.title)}
+          title={displayArtworkTitle(item.title)}
           src={originalImage}
           alt={item.alt}
           width={item.width}
@@ -160,7 +160,7 @@ const downloadRecord = {
     </div>
     <section>
       <p class="eyebrow">{item.layered ? 'Original Illustration' : displayTitle(topic.keyword)}</p>
-      <h1 data-display-title>{displayCatalogTitle(item.title)}</h1>
+      <h1 data-display-title>{displayArtworkTitle(item.title)}</h1>
       <div class="art-detail-badges">
         {item.alpha && (
           <span class="art-alpha-badge">
@@ -301,7 +301,7 @@ const downloadRecord = {
       </div>
       <button
         data-favorite={item.id}
-        data-favorite-title={displayCatalogTitle(item.title)}
+        data-favorite-title={displayArtworkTitle(item.title)}
         data-favorite-thumb={item.thumb}
         aria-pressed="false"
         style="width:100%"

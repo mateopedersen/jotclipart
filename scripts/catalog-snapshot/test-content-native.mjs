@@ -1,5 +1,5 @@
 import { verifyRecentDiscovery } from './publication-date.mjs';
-import { displayTitle, displayCatalogTitle } from '../../src/lib/display-title.ts';
+import { displayTitle, displayArtworkTitle } from '../../src/lib/display-title.ts';
 import { brand, publicBrandURL } from '../../src/lib/brand.mjs';
 import { catalogPublicOrigin } from './batch-media.mjs';
 import { readPreparedStudioInfo } from '../../server/catalog-snapshot/prepared-studio.mjs';
@@ -230,7 +230,7 @@ async function verifyNativeContentWithSource({
         if (c.record) {
           assert.equal(
             decode(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? ''),
-            (projected && kind === 'art' ? displayCatalogTitle : displayTitle)(c.record.title),
+            (projected && kind === 'art' ? displayArtworkTitle : displayTitle)(c.record.title),
             path,
           );
           assert(
@@ -455,7 +455,7 @@ async function verifyNativeContentWithSource({
         );
         assert.equal(
           decode(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? ''),
-          (projected ? displayCatalogTitle : displayTitle)(c.title),
+          (projected ? displayArtworkTitle : displayTitle)(c.title),
           path,
         );
         results.push({

@@ -1,4 +1,4 @@
-import { freeCatalogTitle } from './brand.mjs';
+import { artworkCatalogTitle, freeCatalogTitle } from './brand.mjs';
 /** Presentation only: keep reviewed words, IDs, artwork and personal text intact. */
 const spellings: Record<string, string> = {
   ultraclipart: 'UltraClipart',
@@ -34,6 +34,10 @@ export function displayTitle(value: string): string {
 
 export function displayCatalogTitle(value: string): string {
   return freeCatalogTitle(displayTitle(value));
+}
+
+export function displayArtworkTitle(value: string): string {
+  return artworkCatalogTitle(displayTitle(value));
 }
 
 export function topicPageTitle(subject: string): string {

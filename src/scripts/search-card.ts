@@ -1,5 +1,5 @@
 import { artworkPath, artworkURL } from '../lib/artwork-route.mjs';
-import { displayTitle, displayCatalogTitle } from '../lib/display-title.ts';
+import { displayTitle, displayArtworkTitle } from '../lib/display-title.ts';
 import type { SearchCard } from '../lib/search-index';
 import { actionIconAssets } from '../lib/action-icons';
 export function renderCard(item: SearchCard): HTMLElement {
@@ -34,14 +34,14 @@ export function renderCard(item: SearchCard): HTMLElement {
   image.decoding = 'async';
   image.alt = item.alt;
   picture.setAttribute('aria-label', item.alt);
-  image.title = displayCatalogTitle(item.title);
+  image.title = displayArtworkTitle(item.title);
   image.width = 400;
   image.height = 400;
   image.src = item.webp;
   picture.append(image);
   const body = document.createElement('div');
   body.className = 'card-body';
-  const titleLink = link(displayCatalogTitle(item.title), detail, 'card-title');
+  const titleLink = link(displayArtworkTitle(item.title), detail, 'card-title');
   titleLink.dataset.displayTitle = '';
   body.append(titleLink);
   const formats = document.createElement('div');

@@ -1,5 +1,5 @@
 ---
-import { displayTitle, displayCatalogTitle } from '../lib/display-title';
+import { displayTitle, displayArtworkTitle } from '../lib/display-title';
 import { imageLoadingPreview } from '../lib/image-loading-preview';
 import { publishedArt as art, slugify, availableClusters } from '../lib/catalog';
 import CatalogCount from './CatalogCount.astro';
@@ -80,7 +80,7 @@ const seasons = [
             return (
               <span class={`seasonal-object seasonal-object-${i}`}>
                 <img
-                  title={displayCatalogTitle(image.title)}
+                  title={displayArtworkTitle(image.title)}
                   src={image.thumb}
                   srcset={image.thumbSrcSet}
                   sizes="(max-width: 540px) 34vw, 160px"

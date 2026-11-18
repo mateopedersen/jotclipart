@@ -1,5 +1,5 @@
 ---
-import { displayTitle, displayCatalogTitle } from '../lib/display-title';
+import { displayTitle, displayArtworkTitle } from '../lib/display-title';
 import CardFileActions from './CardFileActions.astro';
 import Icon from './Icon.astro';
 import type { RelatedCard } from '../lib/related/engine';
@@ -17,7 +17,7 @@ const { card } = Astro.props;
 >
   <a class="related-picture" href={card.href} aria-label={card.alt} data-related-detail>
     <img
-      title={displayCatalogTitle(card.title)}
+      title={displayArtworkTitle(card.title)}
       src={card.webp}
       alt={card.alt}
       width="400"
@@ -34,12 +34,12 @@ const { card } = Astro.props;
   </a>
   <div class="related-card-copy">
     <a class="related-card-title" data-display-title href={card.href} data-related-detail>
-      {displayCatalogTitle(card.title)}
+      {displayArtworkTitle(card.title)}
     </a>
     <p class="related-reason">{card.reason}</p>
     <CardFileActions
       id={card.id}
-      title={displayCatalogTitle(card.title)}
+      title={displayArtworkTitle(card.title)}
       webp={card.webp}
       pdf={card.pdf}
       related
@@ -69,7 +69,7 @@ const { card } = Astro.props;
       class="button related-edit"
       data-related-edit
       href={card.editable === false ? card.href : `/edit/${card.id}/`}
-      aria-label={`${card.editable === false ? 'View' : 'Edit'} ${displayCatalogTitle(card.title)}`}
+      aria-label={`${card.editable === false ? 'View' : 'Edit'} ${displayArtworkTitle(card.title)}`}
     >
       <Icon name={card.editable === false ? 'view' : 'edit'} size={28} />
       <span data-related-edit-label>{card.editable === false ? 'View' : 'Edit'}</span>

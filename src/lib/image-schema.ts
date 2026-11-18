@@ -1,5 +1,5 @@
 import { artworkURL } from './artwork-route.mjs';
-import { displayTitle, displayCatalogTitle } from './display-title.ts';
+import { displayTitle, displayArtworkTitle } from './display-title.ts';
 /** Catalog image facts shared by detail pages, collections and the build audit. */
 import { ORGANIZATION_ID } from './page-seo.ts';
 export const IMAGE_SITE = 'https://jotclipart.com/';
@@ -38,7 +38,7 @@ export function imageObject(item: CatalogImage, options: ImageOptions = {}) {
     ...(options.context ? { '@context': 'https://schema.org' } : {}),
     '@type': 'ImageObject',
     '@id': originalImage ? artworkURL(item) + '#image' : `${contentUrl}#image`,
-    name: displayCatalogTitle(item.title),
+    name: displayArtworkTitle(item.title),
     description: item.description,
     caption: item.alt,
     contentUrl,

@@ -1,6 +1,6 @@
 ---
 import { artworkURL } from '../lib/artwork-route.mjs';
-import { displayTitle, displayCatalogTitle } from '../lib/display-title';
+import { displayTitle, displayArtworkTitle } from '../lib/display-title';
 const { item, compact = false } = Astro.props;
 ---
 
@@ -8,7 +8,7 @@ const { item, compact = false } = Astro.props;
   type="button"
   class:list={['share-trigger', compact ? 'share-trigger-card' : 'share-trigger-detail']}
   data-share-art
-  data-share-title={displayCatalogTitle(item.title)}
+  data-share-title={displayArtworkTitle(item.title)}
   data-share-url={artworkURL(item)}
   data-share-image={item.webp}
   aria-label={compact ? `Share ${item.title}` : `Share this clipart: ${item.title}`}
