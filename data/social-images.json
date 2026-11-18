@@ -49,6 +49,15 @@
       "sha256": "a0ed8f6f584489d2ae7466bb7120f6c2c933555cb876194a84ce128e8f0f71a7",
       "bytes": 46955
     },
+    "/library-index/": {
+      "src": "/og/library-index-61da35e6f345.png",
+      "alt": "JotClipart Library Index with alphabetical tabs and illustrated subject cards for animals, flowers and music.",
+      "width": 1200,
+      "height": 630,
+      "type": "image/png",
+      "sha256": "61da35e6f345ecd136ca8446c52bf870faa3e4a6261d263629a7b5556928136a",
+      "bytes": 32169
+    },
     "/black-and-white/": {
       "src": "/og/black-and-white-ab8fd6f3f17c.png",
       "alt": "Black-and-white clipart: an ink fern, violin and open book arranged on white panels.",

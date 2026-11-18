@@ -35,3 +35,8 @@ export function displayTitle(value: string): string {
 export function displayCatalogTitle(value: string): string {
   return freeCatalogTitle(displayTitle(value));
 }
+
+export function topicPageTitle(subject: string): string {
+  const name = displayCatalogTitle(subject);
+  return /\bClipart$/i.test(name) ? name : `${name} Clipart`;
+}

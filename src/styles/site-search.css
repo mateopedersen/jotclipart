@@ -17,7 +17,7 @@
   border-radius: 9px;
   padding: 10px 13px;
   color: var(--brand-ink);
-  font: 500 14px/1.35 var(--font-ui);
+  font: 600 14px/1.35 var(--font-ui);
   min-height: 42px;
 }
 .search-kind-tabs button[aria-pressed='true'] {

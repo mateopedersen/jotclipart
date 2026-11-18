@@ -40,6 +40,14 @@ export const pages = [
     alt: 'Clipart collections with Halloween pumpkins, a snowy cabin and a floral heart.',
   },
   {
+    key: 'library-index',
+    route: '/library-index/',
+    title: ['Clipart', 'Library Index'],
+    subtitle: ['Browse subjects from A to Z.', 'Find the gallery you need.'],
+    layout: 'library-index',
+    alt: 'JotClipart Library Index with alphabetical tabs and illustrated subject cards for animals, flowers and music.',
+  },
+  {
     key: 'black-and-white',
     route: '/black-and-white/',
     title: ['Free Black & White', 'Clipart'],

@@ -162,6 +162,22 @@ export async function compose(c, page, catalog) {
         );
       break;
     }
+    case 'library-index': {
+      const rows = [
+        ['A', 'fox', 'Animals'],
+        ['F', 'fern', 'Flowers & plants'],
+        ['M', 'guitar', 'Music'],
+      ];
+      for (const [i, [letter, artwork, label]] of rows.entries()) {
+        const y = 122 + i * 138;
+        paper(604, y, 524, 116);
+        c.rect(623, y + 30, 55, 55, P.pale, 10);
+        await c.text(letter, 650, y + 67, { size: 28, weight: 700, center: true });
+        await image(artwork, 698, y + 9, 102, 98);
+        await c.text(label, 823, y + 69, { size: 27, weight: 600, maxWidth: 255 });
+      }
+      break;
+    }
     case 'collections': {
       const rows = [
         ['pumpkin', 'Halloween', '#fff5e9'],

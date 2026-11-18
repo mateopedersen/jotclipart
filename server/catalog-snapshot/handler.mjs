@@ -469,7 +469,11 @@ export function createCatalogHandler({
                     allowFixture: allowPrivateFixture,
                   });
               if (!source) throw Error('Missing authenticated page OG source');
-              html = applyCatalogOgMetadata(html, await ogService.descriptor(source));
+              html = applyCatalogOgMetadata(
+                html,
+                await ogService.descriptor(source),
+                source.imageAlt,
+              );
             }
             html = preloadDocumentModules(html, softwareRevision, renderers.moduleImports);
             if (publicNavigationDocument(path))

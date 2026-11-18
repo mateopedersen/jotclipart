@@ -148,7 +148,8 @@ const descriptor = {
   title: 'Free Fixture & Source',
 };
 test('all OG and Twitter image metadata point to one new PNG, including secure_url, with no stale value', () => {
-  const patched = applyCatalogOgMetadata(html, descriptor),
+  const imageAlt = 'JotClipart cover. An illustrated leaf & branch on a white panel.';
+  const patched = applyCatalogOgMetadata(html, descriptor, imageAlt),
     doc = inspectDocument(patched);
   const expected = {
     'og:image': descriptor.url,
@@ -156,9 +157,9 @@ test('all OG and Twitter image metadata point to one new PNG, including secure_u
     'og:image:type': 'image/png',
     'og:image:width': '1200',
     'og:image:height': '630',
-    'og:image:alt': descriptor.title + ' — JotClipart',
+    'og:image:alt': imageAlt,
     'twitter:image': descriptor.url,
-    'twitter:image:alt': descriptor.title + ' — JotClipart',
+    'twitter:image:alt': imageAlt,
   };
   for (const [key, value] of Object.entries(expected)) {
     const tags = doc.meta.filter((m) => (m.property ?? m.name) === key);

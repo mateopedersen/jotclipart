@@ -78,6 +78,20 @@
         "href": "/clipart/robot/"
       }
     ],
+    "/clipart/300-movie/": [
+      {
+        "text": "movie",
+        "in": "300 movie clipart takes inspiration from the film's Spartans, Persian court figures, shields and helmets.",
+        "href": "/clipart/movie/"
+      }
+    ],
+    "/clipart/3d-printer/": [
+      {
+        "text": "printer",
+        "in": "3D printer clipart shows open frames, build platforms and the things people make on them.",
+        "href": "/clipart/printer/"
+      }
+    ],
     "/clipart/acorn/": [
       {
         "text": "autumn",
@@ -106,6 +120,13 @@
         "text": "speaker",
         "in": "A Nest speaker, a reading accessibility scene and a Google Sheets chart concept offer three distinct ways to show how a tool might be used.",
         "href": "/clipart/speaker/"
+      }
+    ],
+    "/clipart/angry-birds-3/": [
+      {
+        "text": "Angry Birds",
+        "in": "Angry Birds 3 clipart offers fan concepts with familiar birds and imagined younger characters.",
+        "href": "/clipart/angry-birds/"
       }
     ],
     "/clipart/anthropic/": [
@@ -159,6 +180,13 @@
         "href": "/clipart/shoe/"
       }
     ],
+    "/clipart/basketball-bracket/": [
+      {
+        "text": "basketball",
+        "in": "Folded paper and an arched window turn this basketball bracket clipart into more than a plain tournament chart.",
+        "href": "/clipart/basketball/"
+      }
+    ],
     "/clipart/blessings/": [
       {
         "text": "gratitude",
@@ -210,6 +238,11 @@
         "text": "birds",
         "in": "Browse birds near flowers and patterns that emphasize the feathers.",
         "href": "/clipart/bird/"
+      },
+      {
+        "text": "nest",
+        "in": "The cardinal in a teal scarf makes a winter character, while a nest with eggs shows another side of cardinal clipart.",
+        "href": "/clipart/nest/"
       }
     ],
     "/clipart/caroling/": [
@@ -217,6 +250,13 @@
         "text": "music",
         "in": "Groups of different ages sing, rehearse and share music indoors and outdoors.",
         "href": "/clipart/music/"
+      }
+    ],
+    "/clipart/cessna-aircraft/": [
+      {
+        "text": "Cessna Skyhawk",
+        "in": "Follow the strut from wing to fuselage on a Cessna Skyhawk, then look for the jet engines on a Citation.",
+        "href": "https://cessna.txtav.com/en/piston/cessna-skyhawk"
       }
     ],
     "/clipart/chicken/": [
@@ -233,11 +273,23 @@
         "href": "/clipart/ocean/"
       }
     ],
+    "/clipart/coca-cola/": [
+      {
+        "text": "contour bottle",
+        "in": "A red contour bottle, an ice cream float and a reusable tumbler show different subjects in this Coca Cola clipart.",
+        "href": "https://www.coca-colacompany.com/about-us/history/11-facts-about-the-coca-cola-contour-bottle"
+      }
+    ],
     "/clipart/cornucopia/": [
       {
         "text": "harvest",
         "in": "Woven horns spill out pumpkins, apples, pears and other harvest produce in this cornucopia clipart.",
         "href": "/clipart/harvest/"
+      },
+      {
+        "text": "pumpkins",
+        "in": "Woven horns spill out pumpkins, apples, pears and other harvest produce in this cornucopia clipart.",
+        "href": "/clipart/pumpkin/"
       }
     ],
     "/clipart/cruise-ship/": [
@@ -286,11 +338,23 @@
         "href": "/clipart/shoe/"
       }
     ],
+    "/clipart/dune-part-three/": [
+      {
+        "text": "Dune",
+        "in": "Dune Part Three clipart offers fan concepts set among desert architecture and imagined character encounters.",
+        "href": "/clipart/dune/"
+      }
+    ],
     "/clipart/dune/": [
       {
         "text": "desert planet",
         "in": "An aircraft over a desert planet shows the setting at scale, while shield practice brings the focus back to the figures.",
         "href": "/clipart/desert-planet/"
+      },
+      {
+        "text": "sandworms",
+        "in": "Dune clipart takes inspiration from desert worlds, sandworms, ornithopters and character training scenes.",
+        "href": "/clipart/sandworm/"
       }
     ],
     "/clipart/eagle/": [
@@ -298,6 +362,13 @@
         "text": "bird",
         "in": "The brown eagle in profile and the broad winged flight scenes make this eagle clipart useful for comparing a perched and flying bird.",
         "href": "/clipart/bird/"
+      }
+    ],
+    "/clipart/earth/": [
+      {
+        "text": "Earth",
+        "in": "Earth clipart includes globes, map views and environmental motifs.",
+        "href": "https://science.nasa.gov/earth/facts/"
       }
     ],
     "/clipart/fall/": [
@@ -312,6 +383,11 @@
         "text": "dinners",
         "in": "Look for turkey dinners, spreads of food and people around a shared table.",
         "href": "/clipart/dinner/"
+      },
+      {
+        "text": "turkey",
+        "in": "A chef carving a turkey and a bear pulling a feast wagon give this feast clipart realistic and playful ways to show an abundant meal.",
+        "href": "/clipart/turkey/"
       }
     ],
     "/clipart/flamingo/": [
@@ -321,11 +397,30 @@
         "href": "/clipart/bird/"
       }
     ],
+    "/clipart/football-couple/": [
+      {
+        "text": "football",
+        "in": "A couple under a blanket in the bleachers and two people opening a keepsake box give this football couple clipart a personal game day feel.",
+        "href": "/clipart/football/"
+      }
+    ],
     "/clipart/football-heart/": [
       {
         "text": "football Valentine",
         "in": "designs for a personal football Valentine or a game day keepsake. U",
         "href": "/clipart/football-valentine/"
+      },
+      {
+        "text": "Football",
+        "in": "Football leather and laces give the heart shapes in this football heart clipart a sporting feel.",
+        "href": "/clipart/football/"
+      }
+    ],
+    "/clipart/football-love/": [
+      {
+        "text": "football",
+        "in": "Repairing a ball’s laces and brushing mud from a cleat make this football love clipart about the things people do for a sport.",
+        "href": "/clipart/football/"
       }
     ],
     "/clipart/ford/": [
@@ -398,6 +493,11 @@
         "text": "ghost",
         "in": "A ghost reading by lantern light sets a gentler tone for this Halloween clipart.",
         "href": "/clipart/ghost/"
+      },
+      {
+        "text": "witches",
+        "in": "Costumed children, active witches, friendly monsters and bats around a crescent moon provide different levels of detail and atmosphere.",
+        "href": "/clipart/witch/"
       }
     ],
     "/clipart/harvest/": [
@@ -405,6 +505,13 @@
         "text": "wheat",
         "in": "An apple picker on a ladder and a wheat bundle beside a grain scoop show different stages of harvest clipart.",
         "href": "/clipart/wheat/"
+      }
+    ],
+    "/clipart/headphones/": [
+      {
+        "text": "music",
+        "in": "Navy headphones appear with cables, while a black pair beside a record makes a ready scene for a music page.",
+        "href": "/clipart/music/"
       }
     ],
     "/clipart/hugo-boss/": [
@@ -440,6 +547,13 @@
         "text": "crown",
         "in": "Use the crown to introduce the character, and pick the prop or action that best fits the story on the rest of the page.",
         "href": "/clipart/crown/"
+      }
+    ],
+    "/clipart/ladybug/": [
+      {
+        "text": "grass",
+        "in": "A golden grass stem, natural insect views and friendly character designs offer more ways to show the small beetle.",
+        "href": "/clipart/grass/"
       }
     ],
     "/clipart/lamb/": [
@@ -495,11 +609,23 @@
         "href": "/clipart/hanukkah/"
       }
     ],
+    "/clipart/mars/": [
+      {
+        "text": "Mars",
+        "in": "Mars clipart ranges from a red globe covered in craters to faceted planet models and imaginary surface exploration scenes.",
+        "href": "https://science.nasa.gov/mars/facts/"
+      }
+    ],
     "/clipart/melon/": [
       {
         "text": "cantaloupe",
         "in": "Pale flesh and a green wedge give this melon clipart a softer palette than a cantaloupe or watermelon page.",
         "href": "/clipart/cantaloupe/"
+      },
+      {
+        "text": "watermelon",
+        "in": "Pale flesh and a green wedge give this melon clipart a softer palette than a cantaloupe or watermelon page.",
+        "href": "/clipart/watermelon/"
       }
     ],
     "/clipart/miami/": [
@@ -546,6 +672,13 @@
         "verifiedAt": "2026-11-17"
       }
     ],
+    "/clipart/mountain/": [
+      {
+        "text": "rock",
+        "in": "Use a silhouette in a narrow label and save a larger space for pictures where rock or ice is the focus.",
+        "href": "/clipart/rock/"
+      }
+    ],
     "/clipart/music/": [
       {
         "text": "guitars",
@@ -572,6 +705,18 @@
         "text": "bird",
         "in": "A yellow bird in a hanging woven pouch looks quite different from an owl family on a rafter in this nest clipart.",
         "href": "/clipart/bird/"
+      }
+    ],
+    "/clipart/new-york/": [
+      {
+        "text": "Central Park's Bow Bridge",
+        "in": "New York City clipart includes Central Park's Bow Bridge in autumn, the Statue of Liberty, subway details and familiar street foods.",
+        "href": "https://www.centralparknyc.org/locations/bow-bridge"
+      },
+      {
+        "text": "Statue of Liberty",
+        "in": "New York City clipart includes Central Park's Bow Bridge in autumn, the Statue of Liberty, subway details and familiar street foods.",
+        "href": "https://www.nps.gov/stli/learn/statue-of-liberty-facts.htm"
       }
     ],
     "/clipart/ostrich/": [
@@ -609,6 +754,20 @@
         "text": "birds",
         "in": "Walking birds have a narrower shape, and patterned feathers and a Santa hat offer more decorative or playful versions.",
         "href": "/clipart/bird/"
+      }
+    ],
+    "/clipart/pie/": [
+      {
+        "text": "apple",
+        "in": "A lattice red fruit pie and an apple pie missing a slice put two pastry patterns into this pie clipart.",
+        "href": "/clipart/apple/"
+      }
+    ],
+    "/clipart/pizza/": [
+      {
+        "text": "cheese",
+        "in": "A pepperoni slice with melted cheese and a whole pizza with a missing wedge show different views in this pizza clipart.",
+        "href": "/clipart/cheese/"
       }
     ],
     "/clipart/polar-bear/": [
@@ -674,6 +833,11 @@
         "text": "bird",
         "in": "Nest scenes show eggs, while other drawings place the bird among flowers, books and storybook props.",
         "href": "/clipart/bird/"
+      },
+      {
+        "text": "Nest",
+        "in": "Nest scenes show eggs, while other drawings place the bird among flowers, books and storybook props.",
+        "href": "/clipart/nest/"
       }
     ],
     "/clipart/sailboat/": [
@@ -718,6 +882,13 @@
         "href": "/clipart/lamb/"
       }
     ],
+    "/clipart/smart-glasses/": [
+      {
+        "text": "camera",
+        "in": "Smart glasses clipart explores camera frames, audio glasses, charging cases and imagined display concepts.",
+        "href": "/clipart/camera/"
+      }
+    ],
     "/clipart/smart-home/": [
       {
         "text": "vacuums",
@@ -760,6 +931,20 @@
         "href": "/clipart/headphones/"
       }
     ],
+    "/clipart/tesla-optimus/": [
+      {
+        "text": "robot",
+        "in": "The collection also places the robot among gardening, household and music props.",
+        "href": "/clipart/robot/"
+      }
+    ],
+    "/clipart/tesla/": [
+      {
+        "text": "Cybertruck",
+        "in": "A Cybertruck front view, a Model S and a Tesla Semi give this Tesla clipart gallery several recognizable vehicle shapes.",
+        "href": "https://www.tesla.com/cybertruck"
+      }
+    ],
     "/clipart/thanksgiving-parade/": [
       {
         "text": "Harvest",
@@ -786,6 +971,13 @@
         "text": "birds",
         "in": "Bright bills, raised wings and a wizard holding a star wand give the birds lively shapes and playful settings.",
         "href": "/clipart/bird/"
+      }
+    ],
+    "/clipart/turkey/": [
+      {
+        "text": "autumn",
+        "in": "A fan tail is the most striking shape in this turkey clipart, from a whole bird to a design made of autumn leaves.",
+        "href": "/clipart/autumn/"
       }
     ],
     "/clipart/ufo/": [
@@ -821,6 +1013,20 @@
         "text": "leaves",
         "in": "Vine clipart includes trailing stems, curling tendrils and branching leaves.",
         "href": "/clipart/leaves/"
+      }
+    ],
+    "/clipart/violin/": [
+      {
+        "text": "music",
+        "in": "Violin clipart shows golden side views, bows, sheet music and repair benches.",
+        "href": "/clipart/music/"
+      }
+    ],
+    "/clipart/volleyball/": [
+      {
+        "text": "serving, setting, blocking",
+        "in": "Player scenes show serving, setting, blocking and diving on indoor and beach courts.",
+        "href": "https://www.fivb.com/volleyball/the-game/official-volleyball-rules/"
       }
     ],
     "/clipart/watermelon/": [
@@ -1157,6 +1363,13 @@
         "text": "Guitar",
         "in": "Guitar, violin and bar percussion drawings range from instrument portraits to character scenes.",
         "href": "/clipart/guitar/"
+      }
+    ],
+    "/collection/nature-elements/": [
+      {
+        "text": "water",
+        "in": "Landscapes, water and botanical details extend the selection beyond these individual objects.",
+        "href": "/clipart/water/"
       }
     ],
     "/collection/numbers-counting/": [

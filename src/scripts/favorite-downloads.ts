@@ -85,7 +85,7 @@ export function mountFavoriteDownloads() {
       if (signal.aborted || token !== generation) return;
       url = URL.createObjectURL(archive);
       download.href = url;
-      download.download = `ultraclipart-favorites-${format}-part-${part + 1}-of-${parts.length}.zip`;
+      download.download = `jotclipart-favorites-${format}-part-${part + 1}-of-${parts.length}.zip`;
       download.textContent = `Download ZIP · ${files.length} ${format === 'pdf' ? 'PDFs' : 'Images'} · Part ${part + 1}/${parts.length}`;
       download.hidden = false;
       state(

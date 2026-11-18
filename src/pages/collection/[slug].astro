@@ -1,10 +1,11 @@
 ---
-import { displayTitle, displayCatalogTitle } from '../../lib/display-title';
+import { displayCatalogTitle, topicPageTitle } from '../../lib/display-title';
 import { imageLoadingPreview } from '../../lib/image-loading-preview';
 import { imageObject } from '../../lib/image-schema';
 import { structuredData } from '../../lib/structured-data';
 import { contentLink } from '../../lib/content-link';
 import { editorialParagraphParts } from '../../lib/editorial-links.mjs';
+import { curatedDefinitions } from '../../lib/curated-collection-policy.mjs';
 import Layout from '../../layouts/Layout.astro';
 import CatalogCount from '../../components/CatalogCount.astro';
 import CollectionCover from '../../components/CollectionCover.astro';
@@ -39,6 +40,7 @@ const topicIDs = new Set(ts.map((t) => t.slug));
 const items = curated?.items ?? art.filter((a) => topicIDs.has(a.topic));
 const previews = curated?.previews ?? primary?.previews ?? items.slice(0, 3);
 const title = displayCatalogTitle(curated?.title ?? primary?.title ?? cluster);
+const pageTitle = `${topicPageTitle(title)} Collection`;
 const firstLoadingPreviews = previews.flatMap((item) => {
   const preview = imageLoadingPreview(item);
   return preview ? [preview] : [];
@@ -53,13 +55,22 @@ const paragraphs = curated?.paragraphs ??
     'Explore {{artworkCount}} illustrations across the subjects below. Choose a subject to browse its complete gallery.',
   ];
 const linkedParagraphs = editorialParagraphParts(`/collection/${collectionSlug}/`, paragraphs);
+const relatedCollections = curatedDefinitions
+  .filter((group) => group.slug !== collectionSlug)
+  .map((group) => ({
+    group,
+    shared: group.topicSlugs.filter((slug) => topicIDs.has(slug)).length,
+  }))
+  .filter(({ group, shared }) => shared >= 2 && shared * 3 >= group.topicSlugs.length)
+  .sort((a, b) => b.shared / b.group.topicSlugs.length - a.shared / a.group.topicSlugs.length)
+  .slice(0, 3);
 const visibleArtwork = [
   ...new Map([...previews, ...items.slice(0, 32)].map((a) => [a.id, a])).values(),
 ];
 ---
 
 <Layout
-  title={`${title}${/\bClipart$/i.test(title) ? '' : ' Clipart'} Collection`}
+  title={pageTitle}
   description={summary}
   noindex={items.length === 0}
   image={previews[0]?.webp}
@@ -78,7 +89,7 @@ const visibleArtwork = [
     </a>
     <div class="themed-collection-hero">
       <div>
-        <h1 data-display-title>{title}</h1>
+        <h1 data-display-title>{pageTitle}</h1>
         {linkedParagraphs.map((parts) => (
           <p>
             {parts.map(({ href, text }) => {
@@ -112,6 +123,16 @@ const visibleArtwork = [
     </div>
     <h2>Explore the subjects</h2>
     <CollectionSubjectPicker topics={ts} />
+    {relatedCollections.length > 0 && (
+      <nav aria-label="Related collections" class="collection-related-navigation">
+        <h2>Related collections</h2>
+        <div class="chips">
+          {relatedCollections.map(({ group }) => (
+            <a href={`/collection/${group.slug}/`}>{group.title}</a>
+          ))}
+        </div>
+      </nav>
+    )}
   </section>
   {items.length > 0 ? (
     <section aria-labelledby="collection-artwork-heading">
@@ -148,6 +169,9 @@ const visibleArtwork = [
   />
 </Layout>
 <style>
+  .collection-related-navigation {
+    margin-block-start: 1.5rem;
+  }
   .themed-collection {
     padding: 24px 0 28px;
   }

@@ -1,4 +1,4 @@
-import { displayCatalogTitle } from '../../src/lib/display-title.ts';
+import { displayCatalogTitle, topicPageTitle } from '../../src/lib/display-title.ts';
 import { readPublicArtwork } from '../catalog-snapshot/public-artwork-routes.mjs';
 import { openSevenFacetCollectionContext } from '../catalog-snapshot/collection-context.mjs';
 import { readShellPageState } from '../catalog-snapshot/shell-page-data.mjs';
@@ -43,10 +43,6 @@ export function originalOgThumbnail(item) {
     sha256: file.sha256,
   };
 }
-const collectionTitle = (value) => {
-  const heading = displayCatalogTitle(value);
-  return heading + (/\bClipart$/i.test(heading) ? '' : ' Clipart') + ' Collection';
-};
 function canonicalSource(value) {
   if (Array.isArray(value)) return value.map(canonicalSource);
   if (value && typeof value === 'object')
@@ -98,7 +94,7 @@ export async function catalogOgSource({ kind, id, state, context }) {
     const cover = state.art.find((a) => (first ? a.id === first : a.topic === id));
     if (!cover || cover.topic !== id) fail('Missing topic OG cover');
     selected = [cover];
-    title = displayCatalogTitle(topic.keyword);
+    title = topicPageTitle(topic.keyword);
     canonicalPath = `/clipart/${id}/`;
     metadata = {
       topic,
@@ -113,7 +109,7 @@ export async function catalogOgSource({ kind, id, state, context }) {
     if (!group) fail('Missing authenticated OG collection');
     selected = (group.previews ?? []).slice(0, 2);
     if (!selected.length) fail('Missing reviewed OG collection covers');
-    title = collectionTitle(group.title ?? state.props?.cluster ?? state.cluster);
+    title = `${topicPageTitle(group.title ?? state.props?.cluster ?? state.cluster)} Collection`;
     canonicalPath = `/collection/${id}/`;
     metadata = {
       id,
@@ -125,10 +121,22 @@ export async function catalogOgSource({ kind, id, state, context }) {
     };
   } else fail('Unsupported authenticated OG page family');
   const images = selected.map(originalOgThumbnail);
+  const artworkDescriptions = selected.map(({ alt }) => String(alt ?? '').trim()).filter(Boolean);
   const sourceSHA256 = await ogSHA256(
     new TextEncoder().encode(JSON.stringify(canonicalSource(metadata))),
   );
-  return { kind, id, title, canonicalPath, sourceSHA256, sourceRoot: context.rootSHA256, images };
+  return {
+    kind,
+    id,
+    title,
+    canonicalPath,
+    sourceSHA256,
+    sourceRoot: context.rootSHA256,
+    images,
+    imageAlt: artworkDescriptions.length
+      ? `JotClipart cover. ${artworkDescriptions.join(' ')}`
+      : undefined,
+  };
 }
 export async function readCatalogOgSource({ bucket, context, kind, id, allowFixture = false }) {
   if (!SLUG.test(id ?? '')) return undefined;
@@ -180,16 +188,20 @@ const escape = (value) =>
     /[&<>"']/g,
     (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c],
   );
-export function applyCatalogOgMetadata(html, descriptor) {
+export function applyCatalogOgMetadata(
+  html,
+  descriptor,
+  imageAlt = `${descriptor.title} — JotClipart`,
+) {
   const values = {
     'og:image': descriptor.url,
     'og:image:secure_url': descriptor.url,
     'og:image:type': descriptor.type,
     'og:image:width': descriptor.width,
     'og:image:height': descriptor.height,
-    'og:image:alt': `${descriptor.title} — JotClipart`,
+    'og:image:alt': imageAlt,
     'twitter:image': descriptor.url,
-    'twitter:image:alt': `${descriptor.title} — JotClipart`,
+    'twitter:image:alt': imageAlt,
   };
   for (const [key, value] of Object.entries(values)) {
     const attribute = key.startsWith('twitter:') ? 'name' : 'property';

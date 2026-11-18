@@ -15,7 +15,7 @@ import NavigationArrow from '../../components/NavigationArrow.astro';
 import { artworkDetails, formatFileSize } from '../../lib/artwork-details';
 import '../../styles/artwork-detail.css';
 import notes from '../../../data/artwork-notes.json';
-import { art, topics } from '../../lib/catalog';
+import { art, topics, slugify } from '../../lib/catalog';
 import { renderArtworkScope } from '../../lib/delivery-build-scope';
 export function getStaticPaths() {
   return renderArtworkScope(art).map((a) => ({ params: { id: a.id }, props: { item: a } }));
@@ -58,7 +58,17 @@ const downloadRecord = {
     {item.published && item.indexable && (
       <script
         type="application/ld+json"
-        set:html={structuredData(imageObject(item, { context: true, primary: true }))}
+        set:html={structuredData(
+          item.layered
+            ? {
+                '@context': 'https://schema.org',
+                '@graph': [
+                  imageObject(item, { primary: true }),
+                  imageObject(item, { contentUrl: originalImage }),
+                ],
+              }
+            : imageObject(item, { context: true, primary: true }),
+        )}
       />
     )}
     <script
@@ -308,6 +318,12 @@ const downloadRecord = {
           remain with their owners.
         </span>
       </p>
+      {topic.cluster && (
+        <p class="notice">
+          Explore more subjects in{' '}
+          <a href={`/collection/${slugify(topic.cluster)}/`}>{topic.cluster}</a>.
+        </p>
+      )}
       {item.layered && (
         <p class="notice">
           Changing the preview background does not change the original download; use the editor to

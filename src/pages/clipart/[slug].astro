@@ -1,9 +1,10 @@
 ---
 import { artworkURL } from '../../lib/artwork-route.mjs';
-import { displayTitle, displayCatalogTitle } from '../../lib/display-title';
+import { displayCatalogTitle, topicPageTitle } from '../../lib/display-title';
 import { imageLoadingPreview } from '../../lib/image-loading-preview';
 import { imageObject } from '../../lib/image-schema';
 import { collectionMetaDescription } from '../../lib/collection-meta.mjs';
+import { curatedDefinitions } from '../../lib/curated-collection-policy.mjs';
 import { structuredData, breadcrumbs } from '../../lib/structured-data';
 import collectionCopy from '../../../data/collection-copy.json';
 import Layout from '../../layouts/Layout.astro';
@@ -33,10 +34,13 @@ const items = topicArt(topic.slug).sort(
 );
 const topicReady = items.length > 0 && items.every((item) => item.indexable && item.published);
 const firstLoadingPreview = items[0] && imageLoadingPreview(items[0]);
-const title = displayCatalogTitle(topic.keyword);
+const title = topicPageTitle(topic.keyword);
 const description = reviewedIntro;
 if (!description) throw new Error(`Missing topic introduction: ${topic.slug}`);
 const searchDescription = collectionMetaDescription(description);
+const curatedMemberships = curatedDefinitions
+  .filter((group) => group.topicSlugs.includes(topic.slug))
+  .slice(0, 3);
 ---
 
 <Layout
@@ -106,6 +110,13 @@ const searchDescription = collectionMetaDescription(description);
           <a href={`/collection/${slugify(cluster)}/`}>{cluster}</a>
         ))}
     </div>
+    {curatedMemberships.length > 0 && (
+      <nav class="chips" aria-label="Featured in these collections">
+        {curatedMemberships.map((group) => (
+          <a href={`/collection/${group.slug}/`}>{group.title}</a>
+        ))}
+      </nav>
+    )}
   </section>
   <CollectionGalleryHeading topic={topic.slug} />
   {items.length ? (

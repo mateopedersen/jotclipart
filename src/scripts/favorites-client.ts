@@ -536,7 +536,7 @@ export function initFavorites() {
     );
     const link = make('a');
     link.href = url;
-    link.download = `ultraclipart-favorites-${new Date().toISOString().slice(0, 10)}.csv`;
+    link.download = `jotclipart-favorites-${new Date().toISOString().slice(0, 10)}.csv`;
     link.click();
     setTimeout(() => URL.revokeObjectURL(url), 60000);
     notify(
@@ -958,7 +958,7 @@ export function initFavorites() {
   q('#boards-export').addEventListener('click', () =>
     guarded(() => {
       const data = {
-          application: 'ultraclipart-board-backup',
+          application: 'jotclipart-board-backup',
           version: 1,
           exportedAt: new Date().toISOString(),
           favorites: ids(),
@@ -969,7 +969,7 @@ export function initFavorites() {
         ),
         link = make('a');
       link.href = url;
-      link.download = `ultraclipart-boards-${new Date().toISOString().slice(0, 10)}.json`;
+      link.download = `jotclipart-boards-${new Date().toISOString().slice(0, 10)}.json`;
       document.body.append(link);
       link.click();
       link.remove();
@@ -988,7 +988,7 @@ export function initFavorites() {
       if (file.size > 5_000_000) throw Error('Choose a board backup smaller than 5 MB.');
       const data = JSON.parse(await file.text());
       if (
-        data?.application !== 'ultraclipart-board-backup' ||
+        !['jotclipart-board-backup', 'ultraclipart-board-backup'].includes(data?.application) ||
         data.version !== 1 ||
         data.state?.schema !== 1 ||
         !Array.isArray(data.favorites)

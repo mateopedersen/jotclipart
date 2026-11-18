@@ -131,7 +131,7 @@ try {
   const backup = await pending;
   const contents = readFileSync(await backup.path());
   const data = JSON.parse(contents);
-  assert.equal(data.application, 'ultraclipart-board-backup');
+  assert.equal(data.application, 'jotclipart-board-backup');
   assert.equal(data.favorites.length, 3);
   assert.equal(data.state.boards.length, 2);
   await page.locator(`[data-board="${first}"]`).click();
