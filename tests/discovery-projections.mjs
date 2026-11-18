@@ -54,6 +54,31 @@ test('stable pages reuse exact legacy children after insertion, update and delet
   );
 });
 
+test('inserting into a fully fragmented directory repacks all rows within the existing page limit', async () => {
+  const store = m.search.makeStore(memory(), { writable: true });
+  const rows = Array.from({ length: 128 }, (_, n) => ({
+    id: 'fragment-' + n,
+    text: 'published entry',
+  }));
+  const descriptors = [];
+  for (const row of rows)
+    descriptors.push({
+      count: 1,
+      ...(await store.put({ type: 'test-rows-stable-v2', entries: [row] })),
+    });
+  const edited = [rows[0], { id: 'newly-published', text: 'new entry' }, ...rows.slice(1)];
+  const compact = await m.pages.reconcilePages(store, descriptors, 'test-rows', edited, {
+    stable: true,
+    key: (row) => row.id,
+  });
+  assert.equal(compact.pages.length, 1);
+  assert.equal(compact.metrics.stagedPages, 1);
+  same(
+    (await m.pages.readPages(store, compact.pages, 'test-rows', { stable: true })).entries,
+    edited,
+  );
+});
+
 test('changed-topic discovery refresh updates new, edited, moved and withdrawn source records', async () => {
   let f = await fixture();
   const sequence = [

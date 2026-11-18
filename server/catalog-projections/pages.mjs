@@ -13,7 +13,7 @@ export async function readPages(
   const entries = [],
     pages = [];
   let offset = 0;
-  const loaded = await mapFour(descriptors, d => store.get(d));
+  const loaded = await mapFour(descriptors, (d) => store.get(d));
   for (const [index, d] of descriptors.entries()) {
     const page = loaded[index];
     if (
@@ -66,11 +66,10 @@ export async function reconcilePages(
     if (anchors.has(start)) throw Error('Duplicate projection anchor');
     anchors.set(start, p);
   }
-  const result = [];
+  const planned = [];
   let batch = [],
-    reused = 0,
-    created = 0;
-  const flush = async () => {
+    reused = 0;
+  const flush = () => {
     if (!batch.length) return;
     const value = {
       schema: 1,
@@ -79,8 +78,7 @@ export async function reconcilePages(
       entries: batch,
     };
     if (bytes(value).length > maxBytes) throw Error('Oversized projection row');
-    result.push({ count: batch.length, ...(await store.put(value)) });
-    created++;
+    planned.push({ value });
     batch = [];
   };
   for (let i = 0; i < desired.length;) {
@@ -90,8 +88,8 @@ export async function reconcilePages(
       anchor.page.entries.length <= desired.length - i &&
       anchor.page.entries.every((v, j) => same(v, desired[i + j]))
     ) {
-      await flush();
-      result.push(anchor.descriptor);
+      flush();
+      planned.push({ descriptor: anchor.descriptor });
       reused++;
       i += anchor.page.entries.length;
       continue;
@@ -106,14 +104,25 @@ export async function reconcilePages(
         entries: [...batch, next],
       }).length > maxBytes
     )
-      await flush();
+      flush();
     batch.push(next);
   }
-  await flush();
-  if (result.length > 128) throw Error('Projection page limit');
+  flush();
+  if (planned.length > 128) {
+    // Once reused fragments exhaust the descriptor budget, repack the same
+    // ordered rows before writing. Readers keep their existing bounded format.
+    if (reused)
+      return reconcilePages(store, [], type, desired, { stable, key, limit, maxBytes, field });
+    throw Error('Projection page limit');
+  }
+  const result = [];
+  for (const entry of planned)
+    result.push(
+      entry.descriptor ?? { count: entry.value.entries.length, ...(await store.put(entry.value)) },
+    );
   return {
     pages: result,
-    metrics: { reusedPages: reused, stagedPages: created },
+    metrics: { reusedPages: reused, stagedPages: planned.length - reused },
     changed: !same(oldDescriptors, result),
   };
 }
