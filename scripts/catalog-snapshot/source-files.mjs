@@ -3,6 +3,7 @@ import { createReadStream, lstatSync, realpathSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
+import { publicationRevision, stampFirstPublication } from './publication-date.mjs';
 export async function verifySourceFile(f, { sourceRoot = resolve('work') } = {}) {
   const path = resolve(f?.path ?? ''),
     base = realpathSync(sourceRoot) + '/',
@@ -27,7 +28,7 @@ export async function verifySourceFile(f, { sourceRoot = resolve('work') } = {})
   return path;
 }
 export function verifySourceCapsule(packet) {
-  const { sourceCommit, sourceCapsule, ...fields } = packet;
+  const { sourceCommit, sourceCapsule, publicationStartedAt, ...fields } = packet;
   if (
     !/^[a-f0-9]{40}$/.test(sourceCommit ?? '') ||
     !/^data\/catalog-batches\/[a-z0-9][a-z0-9-]*\.json$/.test(sourceCapsule?.path ?? '') ||
@@ -51,7 +52,19 @@ export function verifySourceCapsule(packet) {
               .map((k) => [k, canonical(x[k])]),
           )
         : x;
-  if (JSON.stringify(canonical(JSON.parse(bytes))) !== JSON.stringify(canonical(fields)))
+  if (
+    publicationStartedAt !== undefined &&
+    packet.revision !==
+      publicationRevision({
+        sourceCommit,
+        sourceCapsuleSHA256: hash,
+        parentSnapshotSHA256: packet.parentSnapshotSHA256,
+        publicationStartedAt,
+      })
+  )
+    throw Error('Publication timestamp differs from the reviewed release identity');
+  const expected = stampFirstPublication(JSON.parse(bytes), publicationStartedAt);
+  if (JSON.stringify(canonical(expected)) !== JSON.stringify(canonical(fields)))
     throw Error('Transport differs from committed source capsule');
   return { sourceCommit, path: sourceCapsule.path, sha256: hash };
 }

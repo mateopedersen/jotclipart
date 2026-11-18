@@ -64,6 +64,7 @@ if (
     sourceCommit: packet.sourceCommit,
     path: packet.sourceCapsule.path,
     sha256: packet.sourceCapsule.sha256,
+    ...(packet.publicationStartedAt ? { publicationStartedAt: packet.publicationStartedAt } : {}),
     liveReceipt: join(directory, 'live-verification.json'),
   });
 writeFileSync(

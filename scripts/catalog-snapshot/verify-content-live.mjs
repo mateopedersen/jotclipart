@@ -5,6 +5,7 @@ import { writeFileSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import assert from 'node:assert/strict';
 import { verifyIncomingMedia, catalogPublicOrigin } from './batch-media.mjs';
+import { verifyRecentDiscovery } from './publication-date.mjs';
 const clean = (s) =>
   s
     .replace(/<[^>]*>/g, '')
@@ -170,6 +171,19 @@ export async function verifyContentLive({
       }
     }),
   );
+  if (packet.publicationStartedAt) {
+    for (const path of ['/', '/new/']) {
+      const { r, text } = await get(path);
+      assert.equal(r.status, 200);
+      assert.equal(r.headers.get('x-uc-snapshot'), root, path);
+      verifyRecentDiscovery(text, path, packet);
+      rows.push({
+        path,
+        status: r.status,
+        sha256: createHash('sha256').update(text).digest('hex'),
+      });
+    }
+  }
   const media = await verifyIncomingMedia(packet.incomingMediaManifest, {
       progress,
       publicOrigin: origin,

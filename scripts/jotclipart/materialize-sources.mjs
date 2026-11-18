@@ -3,6 +3,7 @@ import { resolve, join } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { gzipSync, gunzipSync } from 'node:zlib';
+import { stampFirstPublication } from '../catalog-snapshot/publication-date.mjs';
 
 // Preserve exact accepted source capsules separately. Never modify data/ or
 // fabricate an editorial approval, a media receipt or missing original archive.
@@ -71,7 +72,7 @@ for (const c of [...baseline.capsules, ...supplement.records]) {
     maxBuffer: 64 * 1024 * 1024,
   });
   if (sha(b) !== c.sha256) throw Error('Committed reviewed capsule bytes differ');
-  const packet = JSON.parse(b);
+  const packet = stampFirstPublication(JSON.parse(b), c.publicationStartedAt);
   if (
     packet.status !== 'SOURCE_REVIEWED_CONTENT_BATCH' ||
     !Array.isArray(packet.artworkRows) ||

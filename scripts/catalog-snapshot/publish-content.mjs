@@ -26,6 +26,7 @@ import {
   incomingManifestSHA256,
 } from './incoming-media-plan.mjs';
 import { sharedContentBaseline } from './legacy-source-guard.mjs';
+import { publicationRevision, stampFirstPublication } from './publication-date.mjs';
 import { reverifyIncomingBeforeSeal } from './incoming-media-readback.mjs';
 import { assertPublisherTarget, assertPublisherSoftware } from '../jotclipart/publisher-target.mjs';
 const hash = (b) => createHash('sha256').update(b).digest('hex');
@@ -101,22 +102,21 @@ export async function publishReviewedCapsule({
   if (!/^[a-f0-9]{64}$/.test(parentSnapshotSHA256 ?? '')) throw Error('Live catalog root required');
   if (activate && control.controlRevision !== code.revision)
     throw Error('Installed production software differs from the verified content renderer');
-  const revision = hash(
-      Buffer.from(
-        'catalog-content-v1\n' +
-          sourceCommit +
-          '\n' +
-          hash(capsuleBytes) +
-          '\n' +
-          parentSnapshotSHA256,
-      ),
-    ).slice(0, 40),
-    packet = {
-      ...fields,
+  const publicationStartedAt = new Date(started).toISOString(),
+    sourceCapsule = { path: capsulePath, sha256: hash(capsuleBytes) },
+    revision = publicationRevision({
       sourceCommit,
-      sourceCapsule: { path: capsulePath, sha256: hash(capsuleBytes) },
+      sourceCapsuleSHA256: sourceCapsule.sha256,
+      parentSnapshotSHA256,
+      publicationStartedAt,
+    }),
+    packet = {
+      ...stampFirstPublication(fields, publicationStartedAt),
+      sourceCommit,
+      sourceCapsule,
       revision,
       parentSnapshotSHA256,
+      publicationStartedAt,
     };
   await validateContentPacket(packet);
   output = resolve(output);
@@ -270,6 +270,9 @@ export async function publishReviewedCapsule({
             sourceCommit,
             path: capsulePath,
             sha256: hash(capsuleBytes),
+            ...(packet.publicationStartedAt
+              ? { publicationStartedAt: packet.publicationStartedAt }
+              : {}),
             liveReceipt: join(prepared.output, 'live-verification.json'),
           },
         ],

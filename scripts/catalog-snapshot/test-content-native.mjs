@@ -1,3 +1,4 @@
+import { verifyRecentDiscovery } from './publication-date.mjs';
 import { displayTitle, displayCatalogTitle } from '../../src/lib/display-title.ts';
 import { brand, publicBrandURL } from '../../src/lib/brand.mjs';
 import { catalogPublicOrigin } from './batch-media.mjs';
@@ -299,6 +300,7 @@ async function verifyNativeContentWithSource({
       const r = await mf.dispatchFetch(origin + path, { headers }),
         body = await r.text();
       assert.equal(r.status, 200, path + ' ' + r.headers.get('x-private-error'));
+      if (path === '/' || path === '/new/') verifyRecentDiscovery(body, path, packet);
       results.push({ path, status: r.status, sha256: sha(Buffer.from(body)) });
     }
     if (preparedPresentation?.studio) {

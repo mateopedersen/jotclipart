@@ -88,6 +88,12 @@ export function createReviewedDeltaValidators({
       if (oldRecord) {
         assert.equal(a.id, oldRecord.id);
         assert.deepEqual(a.license, oldRecord.license);
+        if (oldRecord.firstPublishedAt !== undefined)
+          assert.equal(
+            a.firstPublishedAt,
+            oldRecord.firstPublishedAt,
+            'First publication date must be preserved',
+          );
       }
       assert.equal(a.thumb, a.webp, 'public thumbnails use the accepted original');
       assert.equal(typeof a.monochrome, 'boolean');
@@ -173,7 +179,11 @@ export function createReviewedDeltaValidators({
         };
       }
       assertKnownTopicDisplaySpelling(change.slug, change.record, 'Changed topic ' + change.slug);
-      assertKnownTopicDisplaySpelling(change.slug, row.editorial, 'Changed topic editorial ' + change.slug);
+      assertKnownTopicDisplaySpelling(
+        change.slug,
+        row.editorial,
+        'Changed topic editorial ' + change.slug,
+      );
       if (
         !Array.isArray(row.rawItems) ||
         !row.rawItems.length ||
