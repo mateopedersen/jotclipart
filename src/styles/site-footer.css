@@ -5,7 +5,7 @@ footer.site-footer {
   font-synthesis: none;
   margin-top: 0;
   padding: 0;
-  border-top: 1px solid var(--brand-soft);
+  border-top: 1px solid var(--brand-border);
   background: #ffffff;
   color: var(--brand-ink);
 }
@@ -82,22 +82,22 @@ footer.site-footer {
   border-color: var(--brand-action);
   border-bottom-color: var(--brand-action);
   box-shadow:
-    0 1px 0 #b4d5f580 inset,
-    0 3px 6px #275d9c18;
+    0 1px 0 #baefd280 inset,
+    0 3px 6px #31925d18;
 }
 .footer-action-object {
   display: block;
   width: 36px;
   height: 36px;
   flex-shrink: 0;
-  filter: drop-shadow(0 2px 2px #122d531a);
+  filter: drop-shadow(0 2px 2px #184d301a);
 }
 .footer-invitation-actions a:hover {
   transform: translateY(-1px);
   background: linear-gradient(var(--brand-action), var(--brand-action));
   box-shadow:
-    0 1px 0 #b4d5f580 inset,
-    0 4px 8px #275d9c24;
+    0 1px 0 #baefd280 inset,
+    0 4px 8px #31925d24;
 }
 .footer-invitation-actions a:active {
   transform: translateY(1px);
@@ -146,7 +146,7 @@ footer.site-footer {
   gap: 28px;
   margin-top: 28px;
   padding: 27px 3px 30px;
-  border-top: 1px solid var(--brand-soft);
+  border-top: 1px solid var(--brand-border);
 }
 .footer-brand-lockup {
   grid-area: brand;
@@ -218,7 +218,7 @@ footer.site-footer {
   border: 1px solid var(--brand-border);
   border-bottom: 3px solid var(--brand-border);
   border-radius: 19px;
-  background: #fff;
+  background: linear-gradient(150deg, #f5fcf7, var(--brand-soft));
   box-shadow: none;
 }
 .footer-nav-card > summary {
@@ -296,7 +296,7 @@ footer.site-footer {
   list-style: none;
   margin: 0;
   padding: 5px 0 0;
-  border-top: 1px solid var(--brand-soft);
+  border-top: 1px solid var(--brand-border);
 }
 .footer-nav-card li {
   padding: 0;
@@ -351,8 +351,8 @@ footer.site-footer {
   border-radius: 10px;
   background: linear-gradient(var(--brand-action), var(--brand-action));
   box-shadow:
-    inset 0 1px 0 #a9c8e68c,
-    0 3px 6px #244d7412;
+    inset 0 1px 0 #aee1c58c,
+    0 3px 6px #2b6d4912;
   color: #fff;
   font-size: 16px;
   font-weight: 700;
@@ -367,12 +367,12 @@ footer.site-footer {
   background: linear-gradient(var(--brand-action), var(--brand-action));
   color: #fff;
   box-shadow:
-    inset 0 1px 0 #bfd9ee9c,
-    0 4px 9px #244d7420;
+    inset 0 1px 0 #c3ead59c,
+    0 4px 9px #2b6d4920;
 }
 .site-footer .footer-back-top:active {
   background: linear-gradient(var(--brand-action), var(--brand-action));
-  box-shadow: inset 0 2px 4px #173f6a40;
+  box-shadow: inset 0 2px 4px #1e633d40;
 }
 .site-footer :is(a, summary):focus-visible {
   outline: 3px solid var(--brand-action);

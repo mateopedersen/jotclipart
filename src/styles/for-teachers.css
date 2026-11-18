@@ -127,7 +127,7 @@
   box-shadow:
     inset 0 1px 0 var(--brand-action),
     0 3px 0 var(--brand-ink),
-    0 5px 10px #16294413;
+    0 5px 10px #1a402b13;
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
@@ -656,7 +656,7 @@
   box-shadow:
     2px 3px 0 #ced2d8,
     4px 6px 0 var(--brand-soft),
-    0 8px 13px #22334a12;
+    0 8px 13px #25473412;
 }
 .tc-paper-subject {
   display: block;
@@ -713,7 +713,7 @@
     inset 0 0 0 5px var(--brand-soft),
     inset 0 0 0 6px var(--brand-border),
     0 4px 0 var(--brand-border),
-    0 8px 13px #20324b12;
+    0 8px 13px #24473412;
 }
 .tc-label-example img {
   display: block;
@@ -753,7 +753,7 @@
   background: #fffaf0;
   box-shadow:
     2px 3px 0 #778291,
-    0 7px 10px #162a4517;
+    0 7px 10px #1a412c17;
 }
 .tc-slide-example span {
   display: block;
@@ -837,7 +837,7 @@
   width: 100%;
   height: 185px;
   object-fit: contain;
-  filter: drop-shadow(0 5px 4px #20345015);
+  filter: drop-shadow(0 5px 4px #244c3615);
 }
 .tc-collection > div:last-child {
   display: flex;

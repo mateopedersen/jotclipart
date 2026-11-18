@@ -1,6 +1,6 @@
 {
   "reviewed": "2026-10-26",
-  "contact": "ultraclipart@gmail.com",
+  "contact": "jotclipart@gmail.com",
   "pages": {
     "license": {
       "title": "Artwork License",
@@ -17,8 +17,8 @@
           "id": "permission",
           "title": "The permission for catalog artwork",
           "paragraphs": [
-            "UltraClipart gives you a non-exclusive, non-transferable permission to download, edit and incorporate its catalog illustrations into personal and noncommercial educational projects, subject to this page. There is no download fee or account requirement for that permission. You receive permission to use the material, rather than ownership of its underlying rights.",
-            "This covers the UltraClipart material we are entitled to license. A depicted brand, character, product, person or other protected subject may carry separate rights. A file being downloadable does not establish that every intended use is cleared. Statutory exceptions and rights that cannot lawfully be limited remain available."
+            "JotClipart gives you a non-exclusive, non-transferable permission to download, edit and incorporate its catalog illustrations into personal and noncommercial educational projects, subject to this page. There is no download fee or account requirement for that permission. You receive permission to use the material, rather than ownership of its underlying rights.",
+            "This covers the JotClipart material we are entitled to license. A depicted brand, character, product, person or other protected subject may carry separate rights. A file being downloadable does not establish that every intended use is cleared. Statutory exceptions and rights that cannot lawfully be limited remain available."
           ]
         },
         {
@@ -100,7 +100,7 @@
           "title": "Redistribution, resale and misleading claims",
           "paragraphs": [
             "Do not sell, sublicense, rent or redistribute the catalog artwork as stock media, standalone files, clipart packs, templates for resale or a competing image library. Do not give others a broader license than you received. A crop, recolor, traced version, composite or new file format remains subject to the permission for the catalog material it contains.",
-            "Do not claim that you created the unchanged catalog illustration or that UltraClipart or a depicted rights holder endorses your project. Do not register catalog material as your exclusive logo or trademark, or present it as exclusive work. Do not remove a notice required by a separately licensed component.",
+            "Do not claim that you created the unchanged catalog illustration or that JotClipart or a depicted rights holder endorses your project. Do not register catalog material as your exclusive logo or trademark, or present it as exclusive work. Do not remove a notice required by a separately licensed component.",
             "These restrictions describe our license grant. They do not eliminate lawful quotation, fair use, fair dealing or another statutory exception where the applicable law actually permits your particular use."
           ]
         },
@@ -108,7 +108,7 @@
           "id": "credit",
           "title": "Credit and ownership",
           "paragraphs": [
-            "The standard catalog permission does not require a visible UltraClipart credit in every permitted personal or educational project. A link to the original artwork page is welcome when practical. Keep the artwork URL or license page with your project records so you can identify the source later.",
+            "The standard catalog permission does not require a visible JotClipart credit in every permitted personal or educational project. A link to the original artwork page is welcome when practical. Keep the artwork URL or license page with your project records so you can identify the source later.",
             "Optional catalog credit does not replace a notice required by a font, third-party icon or other separately licensed asset. This license does not assign copyright, guarantee exclusive ownership, or promise that every element qualifies for protection in every country."
           ]
         },
@@ -116,8 +116,8 @@
           "id": "studio",
           "title": "Studio projects, imports and starter designs",
           "paragraphs": [
-            "Original text, drawings and compositions you create on a blank Studio canvas remain yours to the extent you hold rights in them. UltraClipart does not take ownership of that original contribution merely because you used the editor. Imported files remain subject to their existing permissions; you are responsible for having the right to use them.",
-            "When a project includes catalog illustrations or a catalog-based starter design, the catalog conditions continue to apply to those parts. Your original additions do not become UltraClipart property, and your additions do not remove the source artwork’s restrictions. Saving a project or exporting a PDF does not change that distinction."
+            "Original text, drawings and compositions you create on a blank Studio canvas remain yours to the extent you hold rights in them. JotClipart does not take ownership of that original contribution merely because you used the editor. Imported files remain subject to their existing permissions; you are responsible for having the right to use them.",
+            "When a project includes catalog illustrations or a catalog-based starter design, the catalog conditions continue to apply to those parts. Your original additions do not become JotClipart property, and your additions do not remove the source artwork’s restrictions. Saving a project or exporting a PDF does not change that distinction."
           ],
           "links": [
             {
@@ -148,7 +148,7 @@
           "id": "builder",
           "title": "Images requested in AI Clipart Builder",
           "paragraphs": [
-            "Builder outputs are separate from the catalog permission. UltraClipart does not claim ownership of your original prompts or apply the catalog’s personal-and-educational restriction merely because an image was requested through the Builder. This is not a promise that an output is unique, copyrightable, exclusive, non-infringing or commercially cleared.",
+            "Builder outputs are separate from the catalog permission. JotClipart does not claim ownership of your original prompts or apply the catalog’s personal-and-educational restriction merely because an image was requested through the Builder. This is not a promise that an output is unique, copyrightable, exclusive, non-infringing or commercially cleared.",
             "The current image service uses FLUX.1 schnell, whose model license is Apache 2.0. Prompt assistance is Built with Llama under the Llama 3.1 Community License. Model licenses govern the models and relevant uses; they are not a blanket clearance of every output. Cloudflare service terms and third-party copyright, trademark, privacy and personality rights can also apply.",
             "Review the result and its intended use before publication. An output combined with catalog illustrations still carries the catalog conditions on those illustrations. The public sharing tool does not grant recipients a new reuse license."
           ],
@@ -167,13 +167,13 @@
           "id": "specific-permission",
           "title": "Ask about a particular project",
           "paragraphs": [
-            "Email ultraclipart@gmail.com with the artwork URL, your project, whether it is paid or promotional, the intended audience, and how the finished work will be distributed. Include any brand or character involved. Please ask before starting a use outside the standard permission.",
+            "Email jotclipart@gmail.com with the artwork URL, your project, whether it is paid or promotional, the intended audience, and how the finished work will be distributed. Include any brand or character involved. Please ask before starting a use outside the standard permission.",
             "An unanswered message is not permission. Any exception needs an explicit written agreement describing its scope; it does not automatically clear third-party rights. No general commercial license is sold or granted by this page."
           ],
           "links": [
             {
               "label": "Email a license question",
-              "href": "mailto:ultraclipart@gmail.com?subject=Artwork%20license%20question"
+              "href": "mailto:jotclipart@gmail.com?subject=Artwork%20license%20question"
             }
           ]
         },
@@ -202,7 +202,7 @@
           "id": "scope",
           "title": "Who this notice covers",
           "paragraphs": [
-            "This notice describes UltraClipart’s website, catalog, Studio, Builder and public-link features. UltraClipart is the name used for the service in this notice. Send privacy questions and requests to ultraclipart@gmail.com.",
+            "This notice describes JotClipart’s website, catalog, Studio, Builder and public-link features. JotClipart is the name used for the service in this notice. Send privacy questions and requests to jotclipart@gmail.com.",
             "You can browse and download without creating an account. Some features need ordinary hosting requests, browser storage or protected online processing. Local editing and public publication are different actions: opening a project does not automatically make it public. This notice concerns the current implementation, not a promise about every external app you may use with a downloaded image.",
             "The report-preparation helper on the Copyright page builds a draft in this browser. It does not send the typed text to us by itself. If you open the email action or copy and send the draft, your email app and providers handle that message."
           ]
@@ -256,7 +256,7 @@
               [
                 "Open or submit the contact form",
                 "Your connection details when the form loads; your reply email, selected topic, message, and any optional name or page address you submit",
-                "Google loads the form. Submitted responses are recorded in UltraClipart’s Google Forms and used to handle your request. No Studio project or Favorites are attached."
+                "Google loads the form. Submitted responses are recorded in JotClipart’s Google Forms and used to handle your request. No Studio project or Favorites are attached."
               ]
             ]
           }
@@ -403,7 +403,7 @@
           "id": "providers",
           "title": "Service providers and international processing",
           "paragraphs": [
-            "Cloudflare provides hosting, content delivery, security, generation and application storage. Google provides the Gmail mailbox used for correspondence and the Google Forms contact form. Opening the embedded contact form connects your browser to Google; messages submitted through it are stored in the UltraClipart form and used to handle the request. Google processes form requests under its own privacy policy. Email messages remain in the mailbox and are not automatically added to the form. Apps, social platforms and email providers you choose also process the information you give them under their own policies. We do not add advertising trackers or third-party analytics, or sell personal information or share it for cross-context behavioral advertising.",
+            "Cloudflare provides hosting, content delivery, security, generation and application storage. Google provides the Gmail mailbox used for correspondence and the Google Forms contact form. Opening the embedded contact form connects your browser to Google; messages submitted through it are stored in the JotClipart form and used to handle the request. Google processes form requests under its own privacy policy. Email messages remain in the mailbox and are not automatically added to the form. Apps, social platforms and email providers you choose also process the information you give them under their own policies. We do not add advertising trackers or third-party analytics, or sell personal information or share it for cross-context behavioral advertising.",
             "Requests and correspondence may be processed in countries other than yours, including through global provider infrastructure. Cloudflare’s published data-processing terms describe mechanisms such as standard contractual clauses for relevant restricted transfers. The mechanism applicable to a particular transfer depends on the law and service terms involved; contact us for information about the relevant processing and safeguards. This notice does not promise that all processing stays in one country.",
             "We may need to disclose information to comply with a valid legal requirement or address a substantiated security or rights concern. We limit such handling to what is relevant. A privacy notice is not a claim that a provider has no separate obligations or records."
           ],
@@ -442,7 +442,7 @@
           "title": "Your choices and privacy rights",
           "paragraphs": [
             "Depending on the law that applies and the processing involved, you may have rights to access, correct or erase personal information; restrict processing; obtain portable data; and object to processing based on legitimate interests. Where processing relies on consent, you can withdraw it without changing the lawfulness of earlier processing. You can also complain to the relevant supervisory authority.",
-            "Email ultraclipart@gmail.com with “Privacy request”, the feature or URL involved and what you want us to do. We may need proportionate verification to avoid giving someone else access to your information. Do not send identity documents or a private project unless we explain why they are necessary. We do not require an account just to receive a privacy request.",
+            "Email jotclipart@gmail.com with “Privacy request”, the feature or URL involved and what you want us to do. We may need proportionate verification to avoid giving someone else access to your information. Do not send identity documents or a private project unless we explain why they are necessary. We do not require an account just to receive a privacy request.",
             "We answer valid requests within the deadline required by the applicable law, explaining any lawful extension or exception. Some lawfully retained records may be needed for security, a legal obligation or a dispute. We cannot identify or retrieve browser-only records that were never sent to us; you control those through the device.",
             "Where relevant law applies, you may contact your local EU/EEA authority, the UK Information Commissioner or the Turkish data-protection authority. California rights and authorized-agent procedures apply where the relevant law covers the service and request. Exercising a valid privacy right is not a reason for unlawful discrimination."
           ],
@@ -479,15 +479,15 @@
           "title": "Security, updates and contact",
           "paragraphs": [
             "We use bounded feature storage, signed protected sessions, verified publication requests and security controls appropriate to the service. No website or browser storage can be promised completely secure. Protect your device, keep project backups and report a suspected exposure with the affected URL.",
-            "We update this notice when the service’s processing changes and identify its review date. A page edit or an old cookie choice does not supply consent for an unrelated new purpose. For questions about this notice, the relevant records or an update, contact ultraclipart@gmail.com."
+            "We update this notice when the service’s processing changes and identify its review date. A page edit or an old cookie choice does not supply consent for an unrelated new purpose. For questions about this notice, the relevant records or an update, contact jotclipart@gmail.com."
           ]
         }
       ]
     },
     "terms": {
       "title": "Terms of Use",
-      "description": "Service terms for UltraClipart downloads, Studio, Builder and public links, with clear limits, user responsibilities and protections for mandatory legal rights.",
-      "intro": "Practical terms for browsing, creating, downloading and sharing with UltraClipart.",
+      "description": "Service terms for JotClipart downloads, Studio, Builder and public links, with clear limits, user responsibilities and protections for mandatory legal rights.",
+      "intro": "Practical terms for browsing, creating, downloading and sharing with JotClipart.",
       "symbol": "terms",
       "highlights": [
         "Catalog permission and service terms work together",
@@ -499,8 +499,8 @@
           "id": "service",
           "title": "The service and these terms",
           "paragraphs": [
-            "UltraClipart provides an illustration catalog, download tools, a browser-based Studio, AI Clipart Builder and optional public-link publication. These terms explain the conditions on which we provide those features. The Artwork License describes permission for catalog material; the Privacy and Cookie policies explain information handling.",
-            "Read the terms relevant to the feature you use, especially before uploading or publishing material. Nothing on this page claims that merely opening a page waives a statutory right or supplies consent to unrelated data processing. Questions about the service can be sent to ultraclipart@gmail.com."
+            "JotClipart provides an illustration catalog, download tools, a browser-based Studio, AI Clipart Builder and optional public-link publication. These terms explain the conditions on which we provide those features. The Artwork License describes permission for catalog material; the Privacy and Cookie policies explain information handling.",
+            "Read the terms relevant to the feature you use, especially before uploading or publishing material. Nothing on this page claims that merely opening a page waives a statutory right or supplies consent to unrelated data processing. Questions about the service can be sent to jotclipart@gmail.com."
           ],
           "links": [
             {
@@ -531,7 +531,7 @@
           "title": "Catalog artwork and your projects",
           "paragraphs": [
             "Catalog downloads are provided under the free personal and noncommercial educational permission on the License page. Commercial use, sale of catalog-based merchandise and redistribution as a clipart library are not authorized by the standard permission. A modified file keeps the conditions on the material it contains.",
-            "You retain rights you hold in your own imported files, text, drawings and original additions. Using Studio does not transfer those rights to UltraClipart. You must have the permissions needed for an import or a publication, including any third-party copyright, trademark, privacy or personality rights.",
+            "You retain rights you hold in your own imported files, text, drawings and original additions. Using Studio does not transfer those rights to JotClipart. You must have the permissions needed for an import or a publication, including any third-party copyright, trademark, privacy or personality rights.",
             "Third-party icons, software, fonts and model-related materials keep their own licenses. A depicted brand or fictional character is not an endorsement or an additional rights grant. A public link, download button or successful export does not itself establish clearance."
           ],
           "links": [
@@ -596,8 +596,8 @@
           "id": "sharing",
           "title": "Public links and the permission to host them",
           "paragraphs": [
-            "Creating a public link is your affirmative instruction to upload and publish the finished image and title. You give UltraClipart a non-exclusive permission to store, technically adapt, reproduce and display that submitted image as needed to provide the requested link and its download/preview. This permission does not transfer ownership of your original work.",
-            "The hosting permission lasts for the publication’s operation, subject to removal and any lawful residual handling described in Privacy. It does not authorize UltraClipart to sell your original project as stock artwork. Recipients do not gain a new reuse license merely from possession of a link.",
+            "Creating a public link is your affirmative instruction to upload and publish the finished image and title. You give JotClipart a non-exclusive permission to store, technically adapt, reproduce and display that submitted image as needed to provide the requested link and its download/preview. This permission does not transfer ownership of your original work.",
+            "The hosting permission lasts for the publication’s operation, subject to removal and any lawful residual handling described in Privacy. It does not authorize JotClipart to sell your original project as stock artwork. Recipients do not gain a new reuse license merely from possession of a link.",
             "Publish only material you are entitled to share. Keep your removal key or its backup. Public links are not private classrooms, permanent archives or substitutes for a project backup. Removal cannot retrieve copies already downloaded or held by third parties. Contact us with a share URL if you lose your key or need to report someone else’s publication."
           ],
           "links": [
@@ -634,12 +634,12 @@
           "title": "Changes, existing permissions and contact",
           "paragraphs": [
             "We identify the review date of these terms and update the page when the service changes. A change does not automatically amend a separately agreed permission or retroactively cancel rights already validly granted. Where notice or consent is legally necessary for a change, a silent page edit does not replace it.",
-            "If a provision cannot be enforced, its treatment is governed by applicable law; we do not use that circumstance to expand an invalid restriction. For questions, a correction or a proposed use outside the standard permission, email ultraclipart@gmail.com."
+            "If a provision cannot be enforced, its treatment is governed by applicable law; we do not use that circumstance to expand an invalid restriction. For questions, a correction or a proposed use outside the standard permission, email jotclipart@gmail.com."
           ],
           "links": [
             {
               "label": "Email about these terms",
-              "href": "mailto:ultraclipart@gmail.com?subject=Terms%20of%20Use%20question"
+              "href": "mailto:jotclipart@gmail.com?subject=Terms%20of%20Use%20question"
             }
           ]
         }
@@ -647,7 +647,7 @@
     },
     "copyright": {
       "title": "Copyright & Corrections",
-      "description": "Understand the rights in UltraClipart materials, third-party subjects and user publications, and send a clear copyright, privacy or factual-correction report.",
+      "description": "Understand the rights in JotClipart materials, third-party subjects and user publications, and send a clear copyright, privacy or factual-correction report.",
       "intro": "A clear place to understand rights, report a problem and request a correction.",
       "symbol": "copyright",
       "highlights": [
@@ -660,8 +660,8 @@
           "id": "rights",
           "title": "What our rights statement covers",
           "paragraphs": [
-            "UltraClipart develops and maintains this website, its editorial material, design system, catalog organization and the materials it is entitled to provide. We reserve the rights we hold in protectable contributions, subject to the permission on the Artwork License page and the rights of other owners.",
-            "A copyright notice does not prove that every element qualifies for copyright or that all rights in a depicted subject belong to UltraClipart. Protection depends on the material, the contribution and the applicable law. We do not promise exclusivity, registration or universal ownership for every downloadable image.",
+            "JotClipart develops and maintains this website, its editorial material, design system, catalog organization and the materials it is entitled to provide. We reserve the rights we hold in protectable contributions, subject to the permission on the Artwork License page and the rights of other owners.",
+            "A copyright notice does not prove that every element qualifies for copyright or that all rights in a depicted subject belong to JotClipart. Protection depends on the material, the contribution and the applicable law. We do not promise exclusivity, registration or universal ownership for every downloadable image.",
             "The site’s selection, arrangement, written descriptions, code and visual design can involve rights separate from an individual file. Conversely, an idea, factual identification or a public-domain element does not become exclusively ours merely because it appears on this site. Statutory exceptions are not removed by this notice."
           ],
           "links": [
@@ -688,7 +688,7 @@
             "rows": [
               [
                 "Catalog illustrations and catalog-based starter material",
-                "The relevant rights holders, with UltraClipart’s permission limited to rights it can grant",
+                "The relevant rights holders, with JotClipart’s permission limited to rights it can grant",
                 "Follow the catalog’s personal and educational permission and check separate subject rights."
               ],
               [
@@ -723,7 +723,7 @@
           "id": "subjects",
           "title": "Brands, people and protected subjects",
           "paragraphs": [
-            "Some illustrations refer to recognizable products, cultural subjects, entertainment characters or other protected material. Names and visual references help identify what is depicted. They do not state that the owner commissioned, approved or endorsed UltraClipart or your proposed use.",
+            "Some illustrations refer to recognizable products, cultural subjects, entertainment characters or other protected material. Names and visual references help identify what is depicted. They do not state that the owner commissioned, approved or endorsed JotClipart or your proposed use.",
             "An editorial or personal context is not automatically a legal defense for every depiction. Commercial promotion, product packaging, merchandising, logos and potentially misleading associations can raise additional issues. Our standard catalog permission cannot grant a third party’s trademark, character, publicity or privacy rights.",
             "Please report a wrong product identification, a concept presented as a released product, a misleading affiliation, or an inaccurate cultural detail. A faithful title should reflect the evidence for the actual image rather than an attractive but unsupported model name."
           ],
@@ -742,12 +742,12 @@
           "id": "report",
           "title": "How to report a copyright or other rights concern",
           "paragraphs": [
-            "Email ultraclipart@gmail.com with the exact artwork or public-share URL. A screenshot or search phrase alone may not identify the file reliably, so include the page address whenever possible. Say whether the concern is copyright, trademark, likeness/privacy, a misleading claim or another issue.",
+            "Email jotclipart@gmail.com with the exact artwork or public-share URL. A screenshot or search phrase alone may not identify the file reliably, so include the page address whenever possible. Say whether the concern is copyright, trademark, likeness/privacy, a misleading claim or another issue.",
             "Give enough information to locate the material and understand your relationship to the rights: for example, that you created the work, hold the relevant rights or are authorized to represent the owner. Include a link to the original work or other relevant evidence and explain what action you request.",
             "Do not send passwords, private project files, removal keys or identity documents in an initial report. We may request limited additional information if it is necessary to verify authority or resolve a genuine ambiguity. A clear factual report is more useful than unrelated personal information."
           ],
           "bullets": [
-            "The exact UltraClipart page, file or shared-image URL.",
+            "The exact JotClipart page, file or shared-image URL.",
             "The original work or other right affected, with a source link where possible.",
             "Your name or organization and the capacity in which you are reporting.",
             "A contact email and a specific explanation of the issue.",
@@ -757,7 +757,7 @@
           "links": [
             {
               "label": "Email a rights report",
-              "href": "mailto:ultraclipart@gmail.com?subject=Copyright%20or%20rights%20report"
+              "href": "mailto:jotclipart@gmail.com?subject=Copyright%20or%20rights%20report"
             }
           ]
         },
@@ -774,7 +774,7 @@
           "id": "reply",
           "title": "If your publication was restricted by mistake",
           "paragraphs": [
-            "Reply through ultraclipart@gmail.com with the affected URL, an explanation of the mistake and evidence of your permission or rights. Tell us how the material was created or obtained when that is relevant. Do not republish the same disputed material through another link to bypass review.",
+            "Reply through jotclipart@gmail.com with the affected URL, an explanation of the mistake and evidence of your permission or rights. Tell us how the material was created or obtained when that is relevant. Do not republish the same disputed material through another link to bypass review.",
             "We consider a supported correction request and any legal obligations before deciding whether a restriction should change. A disagreement alone does not establish permission; equally, a report alone is not proof that your material infringes. Where a formal legal process applies, an informal email does not replace its required elements."
           ]
         },
@@ -815,7 +815,7 @@
           "title": "Removal, saved copies and your responsibilities",
           "paragraphs": [
             "Removing a page or public-link image stops the relevant serving on our service, but cannot retrieve copies saved by visitors or instantly erase social previews, search caches or third-party reposts. We can address what the service controls and consider relevant follow-up information.",
-            "If you previously downloaded affected material, reassess the intended use and any rights concern rather than assuming an old download guarantees clearance. If you see UltraClipart material redistributed outside the standard permission, send the original artwork URL and the location of the suspected reuse; we will assess the specific circumstances.",
+            "If you previously downloaded affected material, reassess the intended use and any rights concern rather than assuming an old download guarantees clearance. If you see JotClipart material redistributed outside the standard permission, send the original artwork URL and the location of the suspected reuse; we will assess the specific circumstances.",
             "Please report in good faith. Knowingly false ownership claims or misleading reports can harm another person’s lawful work and may have legal consequences. Honest uncertainty is welcome: explain what you know and what you would like checked."
           ]
         }
@@ -823,7 +823,7 @@
     },
     "accessibility": {
       "title": "Accessibility",
-      "description": "Practical access information for UltraClipart, keyboard help, known limitations, testing scope and a direct way to report an accessibility barrier.",
+      "description": "Practical access information for JotClipart, keyboard help, known limitations, testing scope and a direct way to report an accessibility barrier.",
       "intro": "Useful access information, honest limitations and a direct way to ask for help.",
       "symbol": "accessibility",
       "highlights": [
@@ -836,7 +836,7 @@
           "id": "commitment",
           "title": "Our approach and current status",
           "paragraphs": [
-            "We want UltraClipart to be usable by people with different vision, movement, reading and interaction needs. WCAG 2.2 Level AA guides our work on page structure, contrast, visible focus, labels, responsive layouts and controls. This is a target and a review framework, not a statement that every part of the site has been proven conformant.",
+            "We want JotClipart to be usable by people with different vision, movement, reading and interaction needs. WCAG 2.2 Level AA guides our work on page structure, contrast, visible focus, labels, responsive layouts and controls. This is a target and a review framework, not a statement that every part of the site has been proven conformant.",
             "We have not established full-site conformance through an independent accessibility audit and do not claim an accessibility certification. Automated results and browser checks cover particular pages and tasks; they cannot establish every screen-reader, motor, cognitive or real-device experience."
           ],
           "links": [
@@ -954,13 +954,13 @@
           "id": "feedback",
           "title": "Report a barrier or request help",
           "paragraphs": [
-            "Email ultraclipart@gmail.com with the page URL, the task you were trying to complete and what prevented it. If useful, include your browser, device, zoom level and assistive technology/version. A short step-by-step example is usually enough; screenshots are optional.",
+            "Email jotclipart@gmail.com with the page URL, the task you were trying to complete and what prevented it. If useful, include your browser, device, zoom level and assistive technology/version. A short step-by-step example is usually enough; screenshots are optional.",
             "Tell us if you need the explanation in another accessible form and what would help. We review reports and consider a correction or practical alternative. We do not promise a fixed turnaround for every issue, and you do not need to disclose a diagnosis or send sensitive personal information to ask for assistance."
           ],
           "links": [
             {
               "label": "Email accessibility feedback",
-              "href": "mailto:ultraclipart@gmail.com?subject=Accessibility%20feedback"
+              "href": "mailto:jotclipart@gmail.com?subject=Accessibility%20feedback"
             }
           ]
         },
@@ -982,7 +982,7 @@
     },
     "faq": {
       "title": "Frequently Asked Questions",
-      "description": "Clear answers about UltraClipart search, downloads, printing, Studio projects, Favorites, Builder, public links, privacy and artwork permissions.",
+      "description": "Clear answers about JotClipart search, downloads, printing, Studio projects, Favorites, Builder, public links, privacy and artwork permissions.",
       "intro": "Find a practical answer, then go straight to the tool or guide you need.",
       "symbol": "faq",
       "highlights": [
@@ -997,7 +997,7 @@
           "paragraphs": [],
           "questions": [
             {
-              "question": "Is UltraClipart free, and do I need an account?",
+              "question": "Is JotClipart free, and do I need an account?",
               "answer": [
                 "Catalog downloads and Studio are available without creating an account. The standard catalog permission is for personal and noncommercial educational projects. Free access does not authorize commercial use or resale. Builder and public-link features also have capacity and security limits."
               ]
@@ -1254,11 +1254,11 @@
             {
               "question": "Does sharing automatically post to my accounts?",
               "answer": [
-                "No. Catalog sharing passes the artwork URL, and device/social sharing uses the destination you choose. The receiving app or platform has its own terms. Creating a public artwork link on UltraClipart is a separate, explicit publication action."
+                "No. Catalog sharing passes the artwork URL, and device/social sharing uses the destination you choose. The receiving app or platform has its own terms. Creating a public artwork link on JotClipart is a separate, explicit publication action."
               ]
             },
             {
-              "question": "Is an UltraClipart public link private?",
+              "question": "Is an JotClipart public link private?",
               "answer": [
                 "No. Anyone who has the link can view, download or forward its image. Do not use it as a private classroom, confidential client proof or access-controlled file store. Your project layers and Builder prompt are not included in the finished public image."
               ]
@@ -1340,7 +1340,7 @@
           "paragraphs": [],
           "questions": [
             {
-              "question": "Does UltraClipart add advertising or analytics trackers?",
+              "question": "Does JotClipart add advertising or analytics trackers?",
               "answer": [
                 "The current site does not add advertising trackers or third-party analytics. Necessary request delivery, security checks, optional online features and browser storage are still forms of processing described in the Privacy and Cookie policies."
               ]
@@ -1348,19 +1348,19 @@
             {
               "question": "How do I request a correction or report a rights problem?",
               "answer": [
-                "Email ultraclipart@gmail.com with the exact page or share URL, the problem, relevant evidence and the action you request. If you represent a rights holder, explain that relationship. Do not send passwords, secret removal keys or unnecessary identity documents."
+                "Email jotclipart@gmail.com with the exact page or share URL, the problem, relevant evidence and the action you request. If you represent a rights holder, explain that relationship. Do not send passwords, secret removal keys or unnecessary identity documents."
               ]
             },
             {
               "question": "What if a keyboard or assistive technology cannot complete my task?",
               "answer": [
-                "Report the page, intended task and barrier to ultraclipart@gmail.com. Browser, device, zoom and assistive-technology details can help. Our Accessibility page describes practical controls, testing scope and known limitations; it does not claim a full-site certification."
+                "Report the page, intended task and barrier to jotclipart@gmail.com. Browser, device, zoom and assistive-technology details can help. Our Accessibility page describes practical controls, testing scope and known limitations; it does not claim a full-site certification."
               ]
             },
             {
-              "question": "How do I contact UltraClipart?",
+              "question": "How do I contact JotClipart?",
               "answer": [
-                "Use ultraclipart@gmail.com. For a technical problem, include the page, browser and reproducible steps. For a license question, explain the planned purpose and distribution. Avoid including private student information or other sensitive material."
+                "Use jotclipart@gmail.com. For a technical problem, include the page, browser and reproducible steps. For a license question, explain the planned purpose and distribution. Avoid including private student information or other sensitive material."
               ]
             }
           ],
@@ -1374,8 +1374,8 @@
               "href": "/privacy/#rights"
             },
             {
-              "label": "Email UltraClipart",
-              "href": "mailto:ultraclipart@gmail.com"
+              "label": "Email JotClipart",
+              "href": "mailto:jotclipart@gmail.com"
             }
           ]
         }
@@ -1383,7 +1383,7 @@
     },
     "editorial-process": {
       "title": "Our Editorial Process",
-      "description": "See how UltraClipart selects subjects, reviews distinct illustrations, checks names and download files, and handles corrections after publication.",
+      "description": "See how JotClipart selects subjects, reviews distinct illustrations, checks names and download files, and handles corrections after publication.",
       "intro": "How we choose subjects, review illustrations, and prepare the files you download.",
       "symbol": "editorial",
       "highlights": [
@@ -1503,12 +1503,12 @@
           "id": "responsibilities",
           "title": "Creative direction and technical care",
           "paragraphs": [
-            "UltraClipart co-founders Melih and Mustafa bring two complementary responsibilities to this process. Melih leads Design & Creative Direction; Mustafa leads Software & Infrastructure. Visual choices and technical delivery need to work together.",
+            "JotClipart co-founders Melih and Mustafa bring two complementary responsibilities to this process. Melih leads Design & Creative Direction; Mustafa leads Software & Infrastructure. Visual choices and technical delivery need to work together.",
             "The editorial standard is the same across the library: a useful illustration, an accurate description and files that match. This page describes our process and review criteria; it is not a promise that every illustration is free of defects."
           ],
           "links": [
             {
-              "label": "Meet the people behind UltraClipart",
+              "label": "Meet the people behind JotClipart",
               "href": "/about/"
             }
           ]
@@ -1517,7 +1517,7 @@
           "id": "rights",
           "title": "Keep permissions clear",
           "paragraphs": [
-            "The artwork license explains the uses UltraClipart permits. Rights in third-party characters, brands, fonts, and imported materials may be separate. A depicted product name does not imply endorsement, and a technically valid file does not establish ownership of everything it depicts.",
+            "The artwork license explains the uses JotClipart permits. Rights in third-party characters, brands, fonts, and imported materials may be separate. A depicted product name does not imply endorsement, and a technically valid file does not establish ownership of everything it depicts.",
             "User-published links are separate from the reviewed catalog. Sharing a design does not automatically turn it into a catalog-approved illustration or create a new reuse license. Check the relevant permission before using artwork in a project."
           ],
           "links": [
@@ -1546,7 +1546,7 @@
           "links": [
             {
               "label": "Email an editorial correction",
-              "href": "mailto:ultraclipart@gmail.com?subject=Editorial%20correction"
+              "href": "mailto:jotclipart@gmail.com?subject=Editorial%20correction"
             },
             {
               "label": "Information for a rights report",

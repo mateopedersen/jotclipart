@@ -48,7 +48,7 @@
   border-radius: 26px;
   background: #ffffff;
   box-shadow:
-    0 12px 32px -26px #1d497d52,
+    0 12px 32px -26px #25754952,
     inset 0 1px 0 #fff;
 }
 .contact-hero-copy {
@@ -222,7 +222,7 @@
   border: 1px solid var(--brand-border);
   border-radius: 22px;
   background: #fff;
-  box-shadow: 0 8px 24px -18px #2b538447;
+  box-shadow: 0 8px 24px -18px #337c5447;
   scroll-margin-top: 110px;
   overflow: hidden;
 }

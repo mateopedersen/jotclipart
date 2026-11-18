@@ -148,12 +148,12 @@
   font: inherit;
   font-size: 16px;
   font-weight: 600;
-  box-shadow: inset 0 2px 3px #243b5310;
+  box-shadow: inset 0 2px 3px #284f3a10;
 }
 .print-tool select {
   --uc-select-surface-image: linear-gradient(#fff, var(--brand-page));
   font-size: 14px;
-  box-shadow: 0 1px 2px #293e5310;
+  box-shadow: 0 1px 2px #2d4f3c10;
 }
 .print-tool input:focus-visible,
 .print-tool select:focus-visible,
@@ -234,7 +234,7 @@
   background: #ffffff;
   box-shadow:
     2px 3px 0 var(--brand-border),
-    4px 5px 4px #233e5b20;
+    4px 5px 4px #28563d20;
 }
 .print-tool button {
   cursor: pointer;
@@ -255,7 +255,7 @@
   box-shadow:
     inset 0 1px 0 #ffffff38,
     0 3px 0 var(--brand-ink),
-    0 5px 8px #183d6120;
+    0 5px 8px #1e5b3920;
   font-size: 15px;
   font-weight: 700;
 }
@@ -281,7 +281,7 @@
   background: #ffffff;
   box-shadow:
     0 5px 0 var(--brand-soft),
-    0 11px 24px #18304d08;
+    0 11px 24px #1d483008;
 }
 .print-preview-panel .print-section-head {
   justify-content: space-between;
@@ -309,7 +309,7 @@
     linear-gradient(#ffffff36 1px, transparent 1px),
     linear-gradient(90deg, #ffffff36 1px, transparent 1px);
   background-size: 20px 20px;
-  box-shadow: inset 0 2px 5px #283b5310;
+  box-shadow: inset 0 2px 5px #2c4f3c10;
 }
 .print-paper-figure > svg {
   display: block;

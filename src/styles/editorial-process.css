@@ -141,7 +141,7 @@
   position: relative;
   padding: 1.1rem 1.1rem 1.25rem;
   transform: rotate(-3deg);
-  box-shadow: 0 13px 18px -14px #203f6d80;
+  box-shadow: 0 13px 18px -14px #27664380;
 }
 .ep-sheet-rule {
   display: block;
@@ -396,7 +396,7 @@
   padding: 0.65rem 0.8rem;
   border: 1px solid var(--ep-line);
   border-radius: 10px;
-  background: #ffffff;
+  background: #f5fcf7;
 }
 .ep-file-pair img {
   flex: 0 0 42px;
@@ -420,7 +420,7 @@
   margin: 2rem 0 0;
   border: 1px solid var(--ep-line);
   border-radius: 18px;
-  background: #ffffff;
+  background: #f5fcf7;
 }
 .ep-context-heading .teacher-symbol {
   margin-bottom: 1rem;
@@ -429,10 +429,10 @@
   max-width: 19ch;
 }
 .editorial-page .ep-context-responsibilities {
-  background: #fff;
+  background: #f5fcf7;
 }
 .editorial-page .ep-context-rights {
-  background: #ffffff;
+  background: #f5fcf7;
 }
 .ep-roles {
   display: grid;
@@ -465,7 +465,7 @@
   margin: 2rem 0;
   border: 1px solid var(--brand-border);
   border-radius: 20px;
-  background: #ffffff;
+  background: #f5fcf7;
 }
 .ep-correction-copy > img {
   display: block;

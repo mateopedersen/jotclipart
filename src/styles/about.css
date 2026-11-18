@@ -111,7 +111,7 @@
   box-shadow:
     inset 0 1px 0 var(--brand-border),
     0 3px 0 var(--brand-ink),
-    0 6px 10px #244d7410;
+    0 6px 10px #2b6d4910;
   font-size: 15px;
   font-weight: 700;
   line-height: 1.4;
@@ -689,7 +689,7 @@
   background: white;
   box-shadow:
     0 4px 0 var(--brand-soft),
-    0 14px 24px #264e7610;
+    0 14px 24px #2d6f4b10;
 }
 .about-founder-portrait {
   position: relative;
