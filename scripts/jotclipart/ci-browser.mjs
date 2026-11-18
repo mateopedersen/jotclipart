@@ -849,7 +849,7 @@ async function browserFlow() {
     await click(page.locator('#boards-export'));
     const backup = await readDownload(await backupPending, 5_000_000),
       backupData = JSON.parse(backup);
-    assert.equal(backupData.application, 'ultraclipart-board-backup');
+    assert.equal(backupData.application, 'jotclipart-board-backup');
     assert(backupData.favorites.includes(record.id));
     assert(backupData.state.entries[record.id].boards.includes(boardId));
     check('Favorite, real board organization and portable legacy-compatible backup');
