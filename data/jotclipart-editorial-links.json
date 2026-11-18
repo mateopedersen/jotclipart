@@ -256,7 +256,9 @@
       {
         "text": "Cessna Skyhawk",
         "in": "Follow the strut from wing to fuselage on a Cessna Skyhawk, then look for the jet engines on a Citation.",
-        "href": "https://cessna.txtav.com/en/piston/cessna-skyhawk"
+        "href": "https://cessna.txtav.com/en/piston/cessna-skyhawk",
+        "source": "Textron Aviation official Cessna Skyhawk product reference",
+        "verifiedAt": "2026-11-18"
       }
     ],
     "/clipart/chicken/": [
@@ -277,7 +279,9 @@
       {
         "text": "contour bottle",
         "in": "A red contour bottle, an ice cream float and a reusable tumbler show different subjects in this Coca Cola clipart.",
-        "href": "https://www.coca-colacompany.com/about-us/history/11-facts-about-the-coca-cola-contour-bottle"
+        "href": "https://www.coca-colacompany.com/about-us/history/11-facts-about-the-coca-cola-contour-bottle",
+        "source": "The Coca-Cola Company official contour bottle history",
+        "verifiedAt": "2026-11-18"
       }
     ],
     "/clipart/cornucopia/": [
@@ -368,7 +372,9 @@
       {
         "text": "Earth",
         "in": "Earth clipart includes globes, map views and environmental motifs.",
-        "href": "https://science.nasa.gov/earth/facts/"
+        "href": "https://science.nasa.gov/earth/facts/",
+        "source": "NASA Science planetary reference",
+        "verifiedAt": "2026-11-18"
       }
     ],
     "/clipart/fall/": [
@@ -613,7 +619,9 @@
       {
         "text": "Mars",
         "in": "Mars clipart ranges from a red globe covered in craters to faceted planet models and imaginary surface exploration scenes.",
-        "href": "https://science.nasa.gov/mars/facts/"
+        "href": "https://science.nasa.gov/mars/facts/",
+        "source": "NASA Science planetary reference",
+        "verifiedAt": "2026-11-18"
       }
     ],
     "/clipart/melon/": [
@@ -711,12 +719,16 @@
       {
         "text": "Central Park's Bow Bridge",
         "in": "New York City clipart includes Central Park's Bow Bridge in autumn, the Statue of Liberty, subway details and familiar street foods.",
-        "href": "https://www.centralparknyc.org/locations/bow-bridge"
+        "href": "https://www.centralparknyc.org/locations/bow-bridge",
+        "source": "Central Park Conservancy official Bow Bridge landmark entry",
+        "verifiedAt": "2026-11-18"
       },
       {
         "text": "Statue of Liberty",
         "in": "New York City clipart includes Central Park's Bow Bridge in autumn, the Statue of Liberty, subway details and familiar street foods.",
-        "href": "https://www.nps.gov/stli/learn/statue-of-liberty-facts.htm"
+        "href": "https://www.nps.gov/stli/learn/statue-of-liberty-facts.htm",
+        "source": "U.S. National Park Service Statue of Liberty institutional facts",
+        "verifiedAt": "2026-11-18"
       }
     ],
     "/clipart/ostrich/": [
@@ -942,7 +954,9 @@
       {
         "text": "Cybertruck",
         "in": "A Cybertruck front view, a Model S and a Tesla Semi give this Tesla clipart gallery several recognizable vehicle shapes.",
-        "href": "https://www.tesla.com/cybertruck"
+        "href": "https://www.tesla.com/cybertruck",
+        "source": "Tesla official Cybertruck product reference",
+        "verifiedAt": "2026-11-18"
       }
     ],
     "/clipart/thanksgiving-parade/": [
@@ -1026,7 +1040,9 @@
       {
         "text": "serving, setting, blocking",
         "in": "Player scenes show serving, setting, blocking and diving on indoor and beach courts.",
-        "href": "https://www.fivb.com/volleyball/the-game/official-volleyball-rules/"
+        "href": "https://www.fivb.com/volleyball/the-game/official-volleyball-rules/",
+        "source": "International Volleyball Federation official rules and play reference",
+        "verifiedAt": "2026-11-18"
       }
     ],
     "/clipart/watermelon/": [

@@ -1,4 +1,4 @@
-import { displayCatalogTitle } from '../../src/lib/display-title.ts';
+import { topicPageTitle } from '../../src/lib/display-title.ts';
 
 /** The accepted topic template renders keyword; title is separate SEO/source copy.
  * Keep both source fields and validate the exact heading, without fallback titles.
@@ -14,6 +14,6 @@ export function topicHeadingEvidence(record) {
   return {
     sourceTitle: record.title,
     headingSource: record.keyword,
-    displayTitle: displayCatalogTitle(record.keyword),
+    displayTitle: topicPageTitle(record.keyword),
   };
 }

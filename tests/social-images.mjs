@@ -170,7 +170,8 @@ test('all actual reviewed covers and typography retain their verified bytes', ()
     ]),
   );
   const result = verifySocialImages({ root });
-  assert.equal(result.pages, 26);
+  assert.equal(result.pages, 27);
+  assert.notEqual(approved.pages['/library-index/'].src, approved.pages['/'].src);
   assert.equal(result.status, 'passed');
   for (const [path, hash] of before)
     assert.equal(sha(readFileSync(join(root, 'public', path))), hash);
