@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'UltraClipart Reader';
+  font-family: 'JotClipart Reader';
   font-style: normal;
   font-weight: 200 900;
   font-display: swap;
@@ -7,7 +7,7 @@
 }
 
 .reader-page {
-  --font-ui: 'UltraClipart Reader', 'Segoe UI', Arial, sans-serif;
+  --font-ui: 'JotClipart Reader', 'Segoe UI', Arial, sans-serif;
   font-family: var(--font-ui);
 }
 .reader-page :is(.site-header, footer.site-footer) {
