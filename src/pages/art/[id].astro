@@ -332,7 +332,7 @@ const downloadRecord = {
       )}
     </section>
   </div>
-  <RelatedArtwork sourceId={item.id} />
+  <RelatedArtwork sourceId={item.id} sourceHref={artworkPath(item)} />
   <ArtworkFacts item={item} layers={layers} />
   <script>
     import { initArtDetail } from '../../scripts/art-detail';

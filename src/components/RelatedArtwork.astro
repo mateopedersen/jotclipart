@@ -6,8 +6,10 @@ import { relatedIndex } from '../lib/related/service';
 import '../styles/related.css';
 interface Props {
   sourceId: string;
+  sourceHref: string;
 }
-const snapshot = relatedIndex.snapshot(Astro.props.sourceId);
+const { sourceId, sourceHref } = Astro.props;
+const snapshot = relatedIndex.snapshot(sourceId);
 const browserSnapshot = compactBrowserSnapshot(snapshot);
 const alternatives = snapshot.alternatives.slice(0, 8),
   companions = snapshot.companions.slice(0, 4);
@@ -112,7 +114,7 @@ const companionLabel = snapshot.companions.length ? 'Matching fruit' : 'Companio
           Keep scrolling to discover more, or use the button above.
         </p>
         <p class="related-status" role="status" aria-live="polite" data-related-status></p>
-        <a href={`/art/${snapshot.sourceId}/`} data-related-refresh hidden>
+        <a href={sourceHref} data-related-refresh hidden>
           Refresh artwork recommendations <span aria-hidden="true">↻</span>
         </a>
       </div>
