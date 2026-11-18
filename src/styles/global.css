@@ -5,7 +5,7 @@
    replace the fallback consistently in Safari and Chrome. Canvas text has its own
    UltraEditorText face and keeps its existing loading/export contract. */
 @font-face {
-  font-family: 'UltraClipart Sans';
+  font-family: 'JotClipart Sans';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -59,8 +59,8 @@
   --brand-page: #ffffff;
   --brand-border: #b7dcc5;
   --brand-surface: #ffffff;
-  --font-ui: 'UltraClipart Sans', Arial, sans-serif;
-  font-family: 'Avenir Next', Avenir, 'UltraClipart Sans', 'UltraClipart Fallback', sans-serif;
+  --font-ui: 'JotClipart Sans', Arial, sans-serif;
+  font-family: 'Avenir Next', Avenir, 'JotClipart Sans', 'UltraClipart Fallback', sans-serif;
   color: var(--brand-ink);
   background: #ffffff;
   font-synthesis: none;

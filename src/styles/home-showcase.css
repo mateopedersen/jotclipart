@@ -13,7 +13,7 @@
 .home-showcase h1 {
   margin: 0 0 21px;
   color: var(--brand-ink);
-  font-family: 'UltraClipart Sans', Arial, sans-serif;
+  font-family: 'JotClipart Sans', Arial, sans-serif;
   font-size: clamp(43px, 4.8vw, 66px);
   font-weight: 900;
   line-height: 1.13;

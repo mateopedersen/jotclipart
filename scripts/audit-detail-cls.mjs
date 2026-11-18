@@ -108,9 +108,9 @@ try {
             const ctx = canvas.getContext('2d');
             const text = document.querySelector('.detail > section').textContent;
             const family = getComputedStyle(document.documentElement).fontFamily.includes(
-              'UltraClipart Sans',
+              'JotClipart Sans',
             )
-              ? 'UltraClipart Sans'
+              ? 'JotClipart Sans'
               : 'Inter';
             ctx.font = `${weight} 100px "${family}"`;
             const targetMetrics = ctx.measureText(text);
