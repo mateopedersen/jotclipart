@@ -173,7 +173,26 @@ export async function openSearch(
     }
   }
 
-  const structures = makeStore(bucket, { cacheLimit: 64, maxReads: 8000, maxBytes });
+  const structureStore = makeStore(bucket, { cacheLimit: 64, maxReads: 8000, maxBytes });
+  const pendingStructures = new Map();
+  const structures = {
+    async get(descriptor) {
+      const key = descriptor?.key;
+      const pending = pendingStructures.get(key);
+      if (pending) {
+        if (pending.sha256 !== descriptor?.sha256 || pending.bytes !== descriptor?.bytes)
+          throw new SearchBudgetError('Conflicting ordered structure');
+        return pending.result;
+      }
+      const result = structureStore.get(descriptor);
+      pendingStructures.set(key, { sha256: descriptor?.sha256, bytes: descriptor?.bytes, result });
+      try {
+        return await result;
+      } finally {
+        pendingStructures.delete(key);
+      }
+    },
+  };
   const manifest = await read(descriptor, true);
   const privateIndex =
       manifest.type === 'private-incremental-public-search-v1' &&
@@ -417,6 +436,20 @@ export async function openSearch(
 
   const ranges = (ids) => new Set([...ids].map((n) => Math.floor(n / 512)));
   const intersect = (a, b) => new Set([...a].filter((n) => b.has(n)));
+  async function* scanOrder(kind) {
+    const root = manifest.ranked[kind];
+    const width = 128;
+    for (let first = 0; first < root.count; first += width * 4) {
+      const offsets = [0, 1, 2, 3].map((index) => first + index * width);
+      const blocks = await mapFour(offsets, async (offset) => {
+        const entries = [];
+        for await (const entry of orderedValues(structures, root, kind, { offset, limit: width }))
+          entries.push(entry);
+        return entries;
+      });
+      for (const block of blocks) yield* block;
+    }
+  }
   async function readFacet(name, descriptor) {
     const page = await read(descriptor, true);
     if (
@@ -583,9 +616,11 @@ export async function openSearch(
         start = (meta.page - 1) * state.size,
         selected = [];
       let eligible = 0;
-      for await (const entry of orderedValues(structures, manifest.ranked[kind], kind, {
-        offset: !allowed && !denied.size ? start : 0,
-      })) {
+      const ordered =
+        allowed || denied.size
+          ? scanOrder(kind)
+          : orderedValues(structures, manifest.ranked[kind], kind, { offset: start });
+      for await (const entry of ordered) {
         const n = entry.n;
         if ((allowed && !allowed.has(n)) || denied.has(n)) continue;
         if ((!allowed && !denied.size) || eligible++ >= start) selected.push({ n });
@@ -650,7 +685,7 @@ export async function openSearch(
       }
       let count = 0;
       const chosen = [];
-      for await (const entry of orderedValues(structures, manifest.ranked[kind], kind)) {
+      for await (const entry of scanOrder(kind)) {
         const n = entry.n;
         if (eligible.has(n)) {
           if (count++ >= start) chosen.push({ n });
@@ -957,7 +992,7 @@ export async function openSearch(
       peakCandidates,
       forwardBlocks,
       peakScoredRows,
-      structures: structures.metrics(),
+      structures: structureStore.metrics(),
     }),
   };
 }
