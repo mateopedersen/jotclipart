@@ -209,14 +209,15 @@ export async function openSearch(
   }
 
   const metadata = new Map();
-  const term = async (word) => {
+  const term = (word) => {
     if (!metadata.has(word)) {
-      const value = await lookup(manifest.terms, 'terms', word);
       metadata.set(
         word,
-        value?.count
-          ? { ...value, pages: await rangePages(value.ranges, 'term-ranges') }
-          : undefined,
+        (async () => {
+          const value = await lookup(manifest.terms, 'terms', word);
+          if (value?.count)
+            return { ...value, pages: await rangePages(value.ranges, 'term-ranges') };
+        })(),
       );
     }
     return metadata.get(word);
@@ -414,8 +415,58 @@ export async function openSearch(
     return page;
   }
 
+  const ranges = (ids) => new Set([...ids].map((n) => Math.floor(n / 512)));
+  const intersect = (a, b) => new Set([...a].filter((n) => b.has(n)));
+  async function readFacet(name, descriptor) {
+    const page = await read(descriptor, true);
+    if (
+      page.type !== 'search-facet-ids' ||
+      page.facet !== name ||
+      page.range !== descriptor.range ||
+      !Array.isArray(page.ids) ||
+      page.ids.length !== descriptor.count ||
+      page.ids.some(
+        (n, i) =>
+          !Number.isSafeInteger(n) ||
+          n < 0 ||
+          n >= manifest.nextDoc ||
+          Math.floor(n / 512) !== page.range ||
+          (i > 0 && n <= page.ids[i - 1]),
+      )
+    )
+      throw new SearchBudgetError('Invalid facet');
+    return page.ids;
+  }
+  async function firstFacetPage(kind, facet, size) {
+    const descriptors = new Map(facet.pages.map((page) => [page.range, page]));
+    const loaded = new Map();
+    const rows = [];
+    let batch = [];
+    for await (const entry of orderedValues(structures, manifest.ranked[kind], kind, {
+      limit: 192,
+    })) {
+      batch.push(entry);
+      if (batch.length < 24) continue;
+      const needed = [...ranges(batch.map(({ n }) => n))].filter(
+        (range) => descriptors.has(range) && !loaded.has(range),
+      );
+      // Sparse facets keep using the full membership pass. Limit the extra
+      // work before falling back to that exact path.
+      if (loaded.size + needed.length > 24) return;
+      await mapFour(needed, async (range) => {
+        loaded.set(range, new Set(await readFacet(facet.name, descriptors.get(range))));
+      });
+      for (const row of batch) {
+        if (loaded.get(Math.floor(row.n / 512))?.has(row.n)) rows.push(row);
+        if (rows.length === size) return rows;
+      }
+      batch = [];
+    }
+  }
+
   async function search(state, scope = []) {
-    const { tokens, excluded } = queryTerms(state.q),
+    const intent = queryTerms(state.q);
+    const { tokens, excluded } = intent,
       variants = tokens.map(termVariants),
       excludedIds = new Set();
     for (const w of excluded.flatMap(termVariants)) {
@@ -447,29 +498,82 @@ export async function openSearch(
               ? 'print/outline'
               : k + '/' + state[k],
         );
-    const intent = queryTerms(state.q);
     if (intent.wantsMonochrome) facetNames.push('print/monochrome');
     if (intent.wantsOutline) facetNames.push('print/outline');
     if (intent.wantsTransparent) facetNames.push('background/transparent');
-    let allowed = null;
-    for (const name of [...new Set(facetNames)]) {
-      const facet = await lookup(manifest.facets, 'facets', name),
-        ids = new Set();
-      if (facet?.count)
-        await mapFour(await rangePages(facet.ranges, 'facet-ranges'), async (d) => {
-          const p = await read(d);
-          if (p.type !== 'search-facet-ids' || p.facet !== name)
-            throw new SearchBudgetError('Invalid facet');
-          p.ids.forEach((n) => {
-            ids.add(n);
-            if (ids.size > maxCandidates)
-              throw new SearchBudgetError('Search facet budget exceeded');
-          });
-        });
-      allowed = allowed === null ? ids : new Set([...allowed].filter((n) => ids.has(n)));
+    const empty = () => ({ ...pageInfo(0), items: [], hasFuzzyMatches: false, manifest: standard });
+    const facets = await mapFour([...new Set(facetNames)], async (name) => {
+      const facet = await lookup(manifest.facets, 'facets', name);
+      if (!facet?.count) return null;
+      if (!Number.isSafeInteger(facet.count) || facet.count < 0 || facet.count > manifest.total)
+        throw new SearchBudgetError('Invalid facet total');
+      const pages = await rangePages(facet.ranges, 'facet-ranges');
+      if (
+        pages.some(
+          ({ range, count }) =>
+            !Number.isSafeInteger(range) ||
+            range < 0 ||
+            range * 512 >= manifest.nextDoc ||
+            !Number.isSafeInteger(count) ||
+            count < 1 ||
+            count > 512,
+        ) ||
+        new Set(pages.map(({ range }) => range)).size !== pages.length ||
+        pages.reduce((total, page) => total + page.count, 0) !== facet.count
+      )
+        throw new SearchBudgetError('Invalid facet ranges');
+      return { name, count: facet.count, pages };
+    });
+    if (facets.includes(null)) return empty();
+    const kind = state.sort === 'newest' ? 'newest' : 'title';
+    if (
+      !tokens.length &&
+      !excluded.length &&
+      state.page === 1 &&
+      facets.length === 1 &&
+      facets[0].count <= maxCandidates
+    ) {
+      const [facet] = facets;
+      const selected = await firstFacetPage(kind, facet, Math.min(facet.count, state.size));
+      if (selected)
+        return {
+          ...pageInfo(facet.count),
+          items: await cardsFor(selected),
+          hasFuzzyMatches: false,
+          manifest: standard,
+        };
     }
-    if (allowed?.size === 0)
-      return { ...pageInfo(0), items: [], hasFuzzyMatches: false, manifest: standard };
+    facets.sort((a, b) => a.count - b.count);
+    async function facetMembers(firstRanges) {
+      let allowed = null;
+      for (const { name, pages } of facets) {
+        const allowedRanges = allowed ? ranges(allowed) : firstRanges;
+        const ids = new Set();
+        await mapFour(
+          pages.filter((page) => !allowedRanges || allowedRanges.has(page.range)),
+          async (descriptor) => {
+            for (const n of await readFacet(name, descriptor)) {
+              ids.add(n);
+              if (ids.size > maxCandidates)
+                throw new SearchBudgetError('Search facet budget exceeded');
+            }
+          },
+        );
+        allowed = allowed ? intersect(allowed, ids) : ids;
+        if (!allowed.size) break;
+      }
+      return allowed;
+    }
+    const exactRanges =
+      facets.length && tokens.length === 1
+        ? new Set(
+            (await mapFour(variants[0], term)).flatMap((entry) =>
+              entry ? entry.pages.map((page) => page.range) : [],
+            ),
+          )
+        : null;
+    let allowed = await facetMembers(exactRanges);
+    if (allowed?.size === 0 && !exactRanges) return empty();
     if (!tokens.length) {
       const denied = excluded.length ? await idsFor(excluded.flatMap(termVariants)) : new Set();
       const count = allowed
@@ -479,7 +583,6 @@ export async function openSearch(
         start = (meta.page - 1) * state.size,
         selected = [];
       let eligible = 0;
-      const kind = state.sort === 'newest' ? 'newest' : 'title';
       for await (const entry of orderedValues(structures, manifest.ranked[kind], kind, {
         offset: !allowed && !denied.size ? start : 0,
       })) {
@@ -496,21 +599,19 @@ export async function openSearch(
       };
     }
     const preferred = new Set();
+    let preferScope = false;
     if (state.sort === 'relevance') {
       await mapFour(
         exactSubjectFacets(tokens, manifest.topics, manifest.facetNames),
         async (name) => {
           if (scope.includes(name)) {
-            for (const n of allowed ?? []) preferred.add(n);
+            preferScope = true;
             return;
           }
           const facet = await lookup(manifest.facets, 'facets', name);
           if (!facet?.count) return;
           await mapFour(await rangePages(facet.ranges, 'facet-ranges'), async (d) => {
-            const page = await read(d);
-            if (page.type !== 'search-facet-ids' || page.facet !== name)
-              throw new SearchBudgetError('Invalid subject facet');
-            for (const n of page.ids) {
+            for (const n of await readFacet(name, d)) {
               preferred.add(n);
               if (preferred.size > maxCandidates)
                 throw new SearchBudgetError('Subject candidate budget exceeded');
@@ -609,7 +710,9 @@ export async function openSearch(
           const groups = new Map();
           for (const [n, value] of scores) {
             const score =
-              value.weight + (value.title ? 5 : 0) + (preferred.has(n) ? EXACT_SUBJECT_BONUS : 0);
+              value.weight +
+              (value.title ? 5 : 0) +
+              (preferScope || preferred.has(n) ? EXACT_SUBJECT_BONUS : 0);
             if (!groups.has(score)) groups.set(score, new Set());
             groups.get(score).add(n);
           }
@@ -634,8 +737,11 @@ export async function openSearch(
         };
       }
     }
-    const ranges = (ids) => new Set([...ids].map((n) => Math.floor(n / 512)));
-    const intersect = (a, b) => new Set([...a].filter((n) => b.has(n)));
+    // Prefix and spelling alternatives can occur outside the exact word's ranges.
+    if (exactRanges) {
+      allowed = await facetMembers();
+      if (allowed?.size === 0) return empty();
+    }
     async function candidateIds(groups, related = false) {
       if (!groups.length)
         return allowed ?? new Set(Array.from({ length: manifest.nextDoc }, (_, n) => n));
@@ -649,11 +755,20 @@ export async function openSearch(
         let candidates = null;
         for (const index of ordered) {
           if (!sizes[index]) return new Set();
-          const ids = await idsFor(
-            groups[index],
-            candidates ? ranges(candidates) : undefined,
-            tokens.length > 1 ? 3 : 0,
-          );
+          const candidateRanges = candidates || allowed ? ranges(candidates ?? allowed) : undefined;
+          if (candidates && groups.length > 1) {
+            const forwardCount = new Set(
+              [...candidates].map((n) => Math.floor(n / manifest.forwardChunk)),
+            ).size;
+            const postingCount = (await Promise.all(groups[index].map(term))).reduce(
+              (sum, entry) =>
+                sum + (entry?.pages.filter((page) => candidateRanges.has(page.range)).length ?? 0),
+              0,
+            );
+            // The forward records recheck all words and term weights when scoring.
+            if (forwardCount <= postingCount) return candidates;
+          }
+          const ids = await idsFor(groups[index], candidateRanges, tokens.length > 1 ? 3 : 0);
           candidates = candidates
             ? intersect(candidates, ids)
             : allowed
@@ -785,7 +900,7 @@ export async function openSearch(
               score:
                 (related ? found.length * 20 : 0) +
                 relevanceScore(found) +
-                (preferred.has(doc.n) ? EXACT_SUBJECT_BONUS : 0),
+                (preferScope || preferred.has(doc.n) ? EXACT_SUBJECT_BONUS : 0),
               fuzzy: found.some((x) => x.fuzzy),
               missing: related ? tokens.filter((_, i) => !matches[i]) : [],
             });

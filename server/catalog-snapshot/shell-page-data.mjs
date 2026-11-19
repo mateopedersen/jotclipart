@@ -37,13 +37,16 @@ export async function readShellPageState(
   if (root.schema !== 1 || root.type !== 'discovery-shell-directory' || !root.fields)
     throw Error('Invalid discovery context');
   const field = (name) => readShellField(context, root, name);
+  const searchPage = kind === 'search';
   const [features, staticIds, clusters] = await Promise.all([
-      dataOnly ? { surprise: [], ids: [], artworks: [] } : cc.read(cc.root.features, 256 * 1024),
+      dataOnly || (searchPage && cc.collections.surprise)
+        ? { surprise: [], ids: [], artworks: [] }
+        : cc.read(cc.root.features, 256 * 1024),
       dataOnly ? [] : field('staticIds', 128),
       field('clusters', 128),
     ]),
     byId = new Map(),
-    sharedPromise = readSharedArtwork(context, features),
+    sharedPromise = searchPage ? [] : readSharedArtwork(context, features),
     surprisePromise = dataOnly
       ? Promise.resolve([])
       : cc.collections.surprise
@@ -55,7 +58,7 @@ export async function readShellPageState(
               ...(Object.hasOwn(p, 'fresh') ? { fresh: p.fresh } : {}),
             })),
           ),
-    recentPromise = context.getFacet('recent');
+    recentPromise = searchPage ? null : context.getFacet('recent');
   async function artwork(ids) {
     if (ids.length > 1500 || new Set(ids).size !== ids.length)
       throw Error('Invalid shell artwork keys');
@@ -75,7 +78,7 @@ export async function readShellPageState(
     );
     return rows;
   }
-  const [staticArt, shared, surprise, recent, discovery] = await Promise.all([
+  const [staticArt, shared, surprise, recent, discovery, browse] = await Promise.all([
     artwork(staticIds),
     sharedPromise,
     surprisePromise,
@@ -86,6 +89,19 @@ export async function readShellPageState(
           field('clustersData', 128),
           field('topics'),
           cc.allLegacyCounts(),
+        ])
+      : null,
+    searchPage
+      ? Promise.all([
+          openSearch(bucket, context.snapshot.indexes.search, {
+            allowPrivateFixture: allowFixture,
+          }).then(async (engine) => {
+            const found = await engine.search(defaults);
+            return { ...found, items: await artwork(found.items.map((item) => item.id)) };
+          }),
+          field('topics'),
+          field('colors', 128),
+          field('styles', 128),
         ])
       : null,
   ]);
@@ -107,7 +123,7 @@ export async function readShellPageState(
     searchManifest: { version: context.rootSHA256 },
   };
   const rs = { get: (d) => context.read('recent', d, { maxBytes: 65536 }) };
-  if (recent.type !== 'recent-directory') throw Error('Invalid recent root');
+  if (!searchPage && recent.type !== 'recent-directory') throw Error('Invalid recent root');
   if (kind === 'new') {
     const limit = 32;
     const mixed = await recentHomeIDs(rs, recent.ledger, limit);
@@ -115,7 +131,12 @@ export async function readShellPageState(
     state.newestArt = await artwork([...new Set([...mixed, ...fill])].slice(0, limit));
     state.props.snapshotTotal = cc.global.totals.artworks;
   }
-  if (kind === 'search' || kind === 'monochrome') {
+  if (browse) {
+    const [result, topics, colors, styles] = browse;
+    state.topics = topics;
+    state.props.snapshotSearch = { version: context.rootSHA256, result, colors, styles };
+  }
+  if (kind === 'monochrome') {
     const engine = await openSearch(bucket, context.snapshot.indexes.search, {
         allowPrivateFixture: allowFixture,
       }),
@@ -125,31 +146,13 @@ export async function readShellPageState(
         store: makeStore(bucket, { cacheLimit: 64, maxReads: 4000, maxBytes: 64 * 1024 * 1024 }),
       },
       ctx = { snapshotSha256: context.rootSHA256 },
-      found = await engine.search(
-        kind === 'monochrome' ? { ...defaults, sort: 'newest', size: 24 } : defaults,
-        kind === 'monochrome' ? ['print/monochrome'] : [],
-      ),
+      found = await engine.search({ ...defaults, sort: 'newest', size: 24 }, ['print/monochrome']),
       full = await artwork(found.items.map((a) => a.id));
-    if (kind === 'search') {
-      const [topics, colors, styles] = await Promise.all([
-        field('topics'),
-        field('colors', 128),
-        field('styles', 128),
-      ]);
-      state.topics = topics;
-      state.props.snapshotSearch = {
-        version: context.rootSHA256,
-        result: { ...found, items: full },
-        colors,
-        styles,
-      };
-    } else {
-      state.monochromeDirectory = (await uiProviders.readMonochromeDirectory(ctx, data)).value;
-      if (state.monochromeDirectory.total !== cc.global.totals.printable)
-        throw Error('Monochrome totals differ');
-      state.newestArt = full;
-      state.blackAndWhiteArt = full;
-    }
+    state.monochromeDirectory = (await uiProviders.readMonochromeDirectory(ctx, data)).value;
+    if (state.monochromeDirectory.total !== cc.global.totals.printable)
+      throw Error('Monochrome totals differ');
+    state.newestArt = full;
+    state.blackAndWhiteArt = full;
   }
   if (['categories', 'collections', 'library', 'cluster'].includes(kind)) {
     const [subjects, groups, topics, counts] = discovery;

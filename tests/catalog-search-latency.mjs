@@ -210,3 +210,32 @@ test('narrow exact queries do not walk unrelated alphabetical pages', async () =
   assert.equal(orderedTitleReads, 0);
   assert.equal(engine.metrics().forwardBlocks, 1);
 });
+
+test('first filtered page reads only its membership shards and keeps the exact total and order', async () => {
+  const { descriptor } = await fixture;
+  for (const sort of ['title', 'newest']) {
+    let facetReads = 0;
+    const observed = {
+      get: async (key) => {
+        const object = await bucket.get(key);
+        if (object) {
+          const body = JSON.parse(new TextDecoder().decode(await object.arrayBuffer()));
+          if (body.type === 'search-facet-ids') facetReads++;
+        }
+        return object;
+      },
+    };
+    const engine = await openSearch(observed, descriptor, { allowPrivateFixture: true });
+    const result = await engine.search(state('', sort), ['print/monochrome']);
+    const rows = records.filter((row) => row.monochrome);
+    if (sort === 'newest') rows.reverse();
+    else rows.sort((a, b) => a.title.localeCompare(b.title, 'en'));
+    assert.equal(result.total, rows.length);
+    assert.deepEqual(
+      result.items.map((row) => row.id),
+      rows.slice(0, 8).map((row) => row.id),
+    );
+    assert(facetReads <= 2, 'Only the leading ranked rows’ facet ranges are needed');
+    assert(engine.metrics().peakPendingR2 <= 4);
+  }
+});

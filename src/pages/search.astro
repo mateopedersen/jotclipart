@@ -242,7 +242,8 @@ const styles = snapshotSearch?.styles ?? [...new Set(art.map((item) => item.styl
 <script>
   import { initSearch } from '../scripts/search-client';
   import { afterInitialPaint } from '../lib/initial-paint';
-  void afterInitialPaint().then(initSearch);
+  if (document.documentElement.hasAttribute('data-search-pending')) initSearch();
+  else void afterInitialPaint().then(initSearch);
 </script>
 <style>
   .notice a {
