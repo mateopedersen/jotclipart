@@ -765,6 +765,24 @@ async function browserFlow() {
     const favorite = page.locator(`[data-favorite="${record.id}"]`).first();
     if ((await favorite.getAttribute('aria-pressed')) !== 'true') await click(favorite);
     await expect(favorite).toHaveAttribute('aria-pressed', 'true');
+    const catalogSearch = origin + '/catalog-search.json';
+    const blockSearch = (route) => route.abort();
+    await page.route(catalogSearch, blockSearch);
+    try {
+      await navigate(page, '/search/?type=artwork');
+      const gallery = page.locator('#search-results');
+      await expect(gallery).toBeVisible();
+      await expect(gallery).toHaveAttribute('aria-busy', 'false');
+      await expect(gallery.locator('.art-card')).toHaveCount(8);
+      await expect(page.locator('[data-search-kind="artwork"]')).toHaveAttribute(
+        'aria-pressed',
+        'true',
+      );
+      await expect(page.locator('#next-page')).toBeEnabled();
+    } finally {
+      await page.unroute(catalogSearch, blockSearch);
+    }
+    check('First Artwork browse is ready without a catalog search request');
     await navigate(page, '/search/?q=' + encodeURIComponent(pin.sample.topic) + '&type=artwork');
     await expect(page.locator('#search-results')).toHaveAttribute('aria-busy', 'false', {
       timeout: 30000,

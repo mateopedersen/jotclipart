@@ -20,6 +20,7 @@ const snapshotSearch = Astro.props.snapshotSearch;
 const initial = snapshotSearch?.result ?? searchArtwork(art, defaults);
 const seed = {
   version: snapshotSearch?.version ?? (await getSearchBuild()).manifest.version,
+  total: initial.total,
   items: initial.items.map(cardMetadata),
 };
 const colors = snapshotSearch?.colors ?? [...new Set(art.map((item) => item.color))].sort();
@@ -32,7 +33,9 @@ const styles = snapshotSearch?.styles ?? [...new Set(art.map((item) => item.styl
   noindex={true}
 >
   <script slot="head" is:inline>
-    if (location.search) document.documentElement.setAttribute('data-search-pending', '');
+    const initialSearchParams = new URLSearchParams(location.search).toString();
+    if (initialSearchParams && initialSearchParams !== 'type=artwork')
+      document.documentElement.setAttribute('data-search-pending', '');
   </script>
   <section class="hero search-hero">
     <h1>Search JotClipart</h1>
@@ -130,7 +133,7 @@ const styles = snapshotSearch?.styles ?? [...new Set(art.map((item) => item.styl
     <section aria-label="Search results">
       <div class="result-head">
         <p id="result-count" role="status" aria-live="polite" aria-atomic="true">
-          {art.length} illustrations
+          {initial.total.toLocaleString('en-US')} artworks
         </p>
         <div class="sort-control">
           <label for="search-sort">Sort Artwork</label>
@@ -192,14 +195,19 @@ const styles = snapshotSearch?.styles ?? [...new Set(art.map((item) => item.styl
           </button>
         </div>
       </div>
-      <nav id="search-pagination" class="pagination" aria-label="Search result pages">
-        <button type="button" id="previous-page">
+      <nav
+        id="search-pagination"
+        class="pagination"
+        aria-label="Search result pages"
+        hidden={initial.pages <= 1}
+      >
+        <button type="button" id="previous-page" disabled>
           ← Previous
         </button>
         <span id="page-position" aria-live="polite">
-          Page 1
+          Page 1 of {initial.pages}
         </span>
-        <button type="button" id="next-page">
+        <button type="button" id="next-page" disabled={initial.pages <= 1}>
           Next →
         </button>
       </nav>

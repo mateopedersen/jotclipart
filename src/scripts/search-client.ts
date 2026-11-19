@@ -30,10 +30,17 @@ export function initSearch() {
   const repository = new SearchRepository(),
     requests = new LatestRequest();
   const seed = q('#search-seed');
+  let initialBrowse: { version: string; total: number } | undefined;
   if (seed?.textContent)
     try {
-      const value = JSON.parse(seed.textContent) as { version: string; items: SearchCard[] };
+      const value = JSON.parse(seed.textContent) as {
+        version: string;
+        total: number;
+        items: SearchCard[];
+      };
       repository.seed(value.version, value.items);
+      if (Number.isSafeInteger(value.total) && value.total > 0 && value.items.length)
+        initialBrowse = value;
     } catch {}
   let state: SearchState = parseState(new URLSearchParams(location.search)),
     timer: ReturnType<typeof setTimeout> | undefined,
@@ -72,7 +79,7 @@ export function initSearch() {
       }),
     );
   }
-  function render(mode: 'push' | 'replace' | 'none' = 'none') {
+  function render(mode: 'push' | 'replace' | 'none' = 'none', firstRender = false) {
     clearTimeout(timer);
     timer = undefined;
     const requested = { ...state },
@@ -92,6 +99,22 @@ export function initSearch() {
       .forEach((button) =>
         button.setAttribute('aria-pressed', String(button.dataset.searchKind === state.type)),
       );
+    // The two default browse tabs use the same first page from the signed
+    // catalog snapshot. Keep the original cards and their image requests.
+    if (
+      firstRender &&
+      pageRoot &&
+      initialBrowse?.version === pageRoot &&
+      artMode &&
+      !stateParams({ ...requested, type: defaults.type }).size
+    ) {
+      const total = initialBrowse.total.toLocaleString('en-US');
+      for (const kind of ['all', 'artwork'])
+        q(`[data-search-kind="${kind}"] span`).textContent = total;
+      gallery.setAttribute('aria-busy', 'false');
+      document.documentElement.removeAttribute('data-search-pending');
+      return;
+    }
     gallery.setAttribute('aria-busy', 'true');
     gallery.hidden = true;
     empty.hidden = true;
@@ -371,5 +394,5 @@ export function initSearch() {
   });
   // Each interaction is authenticated against its pinned root; a conflict refreshes once.
   // Do not clear working results and refetch a large directory on an idle timer.
-  render('replace');
+  render('replace', true);
 }
