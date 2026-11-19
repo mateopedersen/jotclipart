@@ -12,6 +12,7 @@ import Card from '../../components/Card.astro';
 import CollectionGalleryHeading from '../../components/CollectionGalleryHeading.astro';
 import RelatedCollections from '../../components/RelatedCollections.astro';
 import CollectionIntroduction from '../../components/CollectionIntroduction.astro';
+import NbaReferences from '../../components/NbaReferences.astro';
 import {
   availableTopics,
   topicArt,
@@ -103,6 +104,7 @@ const curatedMemberships = curatedDefinitions
     </div>
     <h1 data-display-title>{title}</h1>
     <CollectionIntroduction topic={topic.slug} paragraphs={paragraphs} />
+    <NbaReferences topic={topic.slug} teamPage />
     <div class="chips">
       {clustersForTopic(topic)
         .filter((cluster) => cluster !== topic.cluster)

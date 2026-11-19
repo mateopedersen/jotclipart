@@ -1,3 +1,13 @@
+# JotClipart editorial linking — owner direction 2026-11-19
+
+For every JotClipart artwork, topic and collection publication or revision, review
+internal and external editorial links. Use descriptive anchors in context or in
+a short references section. Link to closely related live canonical pages and
+verified primary sources. Prefer authoritative team, player, manufacturer,
+institution or original documentation. Preserve accepted metadata, canonical
+URLs and originals. Check the rendered links after the normal publication
+gates. Document gaps when a relevant external destination cannot be verified.
+
 # Exact-subject search relevance follow-up — 2026-11-17
 
 Public cat search incorrectly ranked an incidental Andorra-flag scene before

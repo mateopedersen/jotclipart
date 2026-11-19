@@ -1,0 +1,58 @@
+---
+import ContentLink from './ContentLink.astro';
+import { nbaLinks } from '../lib/nba-links.mjs';
+
+interface Props {
+  topic: string;
+  teamPage?: boolean;
+}
+
+const { topic, teamPage = false } = Astro.props;
+const team = nbaLinks(topic);
+---
+
+{team && (
+  <div class="nba-references" data-nba-references>
+    <p>
+      {teamPage ? (
+        <>
+          Explore more{' '}
+          <ContentLink class="editorial-inline-link" href="/collection/sports/">
+            sports clipart
+          </ContentLink>
+          .
+        </>
+      ) : (
+        <>
+          Browse all{' '}
+          <ContentLink class="editorial-inline-link" href={team.href}>
+            {team.name} clipart
+          </ContentLink>
+          .
+        </>
+      )}{' '}
+      See the{' '}
+      <ContentLink class="editorial-inline-link" href={team.officialHref}>
+        {team.name} on NBA.com
+      </ContentLink>
+      .
+    </p>
+    {teamPage && (
+      <nav class="chips" aria-label="More clipart from this NBA division">
+        {team.divisionLinks.map(({ href, name }) => (
+          <ContentLink href={href}>{name} clipart</ContentLink>
+        ))}
+      </nav>
+    )}
+  </div>
+)}
+
+<style>
+  .nba-references {
+    margin-block: 0.85rem 1.25rem;
+  }
+
+  .nba-references p {
+    margin: 0;
+  }
+</style>
