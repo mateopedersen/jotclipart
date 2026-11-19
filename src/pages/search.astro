@@ -7,6 +7,7 @@ import { defaults, searchArtwork, type SearchArtwork } from '../lib/search';
 import { cardMetadata, type SearchCard } from '../lib/search-index';
 import { getSearchBuild } from '../lib/search-build';
 import { searchKindLabels } from '../lib/site-search';
+import { searchStartupScript } from '../lib/search-startup-inline.mjs';
 import '../styles/site-search.css';
 interface Props {
   snapshotSearch?: {
@@ -32,11 +33,7 @@ const styles = snapshotSearch?.styles ?? [...new Set(art.map((item) => item.styl
   description="Find clipart by subject, style, color and format. Explore transparent images and printable PDFs for your projects."
   noindex={true}
 >
-  <script slot="head" is:inline>
-    const initialSearchParams = new URLSearchParams(location.search).toString();
-    if (initialSearchParams && initialSearchParams !== 'type=artwork')
-      document.documentElement.setAttribute('data-search-pending', '');
-  </script>
+  <script slot="head" is:inline set:html={searchStartupScript}></script>
   <section class="hero search-hero">
     <h1>Search JotClipart</h1>
     <p>

@@ -12,6 +12,7 @@ import {
   originalImageSchedulingScript,
 } from '../../src/lib/original-image-scheduling-inline.mjs';
 import { compiledModuleImports } from './module-imports.mjs';
+import { searchStartupScript } from '../../src/lib/search-startup-inline.mjs';
 import { bindCookieScriptPolicy } from './compilers/inline-policy.mjs';
 import { cookieStartupScript, cookieMountScript } from '../cookie-startup.mjs';
 const [buildArg, configArg] = process.argv.slice(2);
@@ -48,13 +49,14 @@ const page = bindStudioWorkspaceStartupPolicy(
     bindCookieScriptPolicy(baselinePolicy.page, [cookieStartupScript, cookieMountScript]),
   ),
 );
-const scheduleHash =
-  "'sha256-" + createHash('sha256').update(originalImageSchedulingScript).digest('base64') + "'";
-if (!page['Content-Security-Policy'].includes(scheduleHash))
-  page['Content-Security-Policy'] = page['Content-Security-Policy'].replace(
-    /(\bscript-src\s+[^;]+)/,
-    '$1 ' + scheduleHash,
-  );
+for (const script of [originalImageSchedulingScript, searchStartupScript]) {
+  const hash = "'sha256-" + createHash('sha256').update(script).digest('base64') + "'";
+  if (!page['Content-Security-Policy'].includes(hash))
+    page['Content-Security-Policy'] = page['Content-Security-Policy'].replace(
+      /(\bscript-src\s+[^;]+)/,
+      '$1 ' + hash,
+    );
+}
 const editor = {
   ...page,
   'Content-Security-Policy':
@@ -76,6 +78,7 @@ const policy = { page, editor, inlineSHA256 },
 for (const file of [
   'src/lib/original-image-frame.mjs',
   'src/lib/original-image-scheduling-inline.mjs',
+  'src/lib/search-startup-inline.mjs',
   'server/jotclipart/fallback.mjs',
   'server/jotclipart/preview-policy.mjs',
   'server/jotclipart/canonical-origin.mjs',

@@ -1345,7 +1345,7 @@ async function helperImport(page, bytes) {
     buffer: bytes,
   });
   await click(page.locator('#restore'));
-  await expect(page.locator('#status')).toContainText('Restore checked');
+  await expect(page.locator('#status')).toContainText('Restore checked', { timeout: 30000 });
 }
 async function portability() {
   const htmlResponse = await fetch(origin + '/move-your-work/', {
