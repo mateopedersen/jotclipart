@@ -12,6 +12,7 @@ import Card from '../../components/Card.astro';
 import CollectionGalleryHeading from '../../components/CollectionGalleryHeading.astro';
 import RelatedCollections from '../../components/RelatedCollections.astro';
 import CollectionIntroduction from '../../components/CollectionIntroduction.astro';
+import TopicEditorialResources from '../../components/TopicEditorialResources.astro';
 import NbaReferences from '../../components/NbaReferences.astro';
 import MlbReferences from '../../components/MlbReferences.astro';
 import {
@@ -40,9 +41,15 @@ const title = topicPageTitle(topic.keyword);
 const description = reviewedIntro;
 if (!description) throw new Error(`Missing topic introduction: ${topic.slug}`);
 const searchDescription = collectionMetaDescription(description);
-const curatedMemberships = curatedDefinitions
-  .filter((group) => group.topicSlugs.includes(topic.slug))
-  .slice(0, 3);
+const collectionLinks = [
+  ...curatedDefinitions
+    .filter((group) => group.topicSlugs.includes(topic.slug))
+    .slice(0, 3)
+    .map((group) => ({ href: `/collection/${group.slug}/`, text: group.title })),
+  ...clustersForTopic(topic)
+    .filter((cluster) => cluster !== topic.cluster)
+    .map((cluster) => ({ href: `/collection/${slugify(cluster)}/`, text: cluster })),
+];
 ---
 
 <Layout
@@ -105,22 +112,13 @@ const curatedMemberships = curatedDefinitions
     </div>
     <h1 data-display-title>{title}</h1>
     <CollectionIntroduction topic={topic.slug} paragraphs={paragraphs} />
+    <TopicEditorialResources
+      topic={topic.slug}
+      paragraphs={paragraphs}
+      collections={collectionLinks}
+    />
     <NbaReferences topic={topic.slug} teamPage />
     <MlbReferences topic={topic.slug} teamPage />
-    <div class="chips">
-      {clustersForTopic(topic)
-        .filter((cluster) => cluster !== topic.cluster)
-        .map((cluster) => (
-          <a href={`/collection/${slugify(cluster)}/`}>{cluster}</a>
-        ))}
-    </div>
-    {curatedMemberships.length > 0 && (
-      <nav class="chips" aria-label="Featured in these collections">
-        {curatedMemberships.map((group) => (
-          <a href={`/collection/${group.slug}/`}>{group.title}</a>
-        ))}
-      </nav>
-    )}
   </section>
   <CollectionGalleryHeading topic={topic.slug} />
   {items.length ? (

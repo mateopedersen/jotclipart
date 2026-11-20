@@ -1,0 +1,29 @@
+---
+import EditorialRecommendations from './EditorialRecommendations.astro';
+import { editorialParagraphParts } from '../lib/editorial-links.mjs';
+import { topicEditorialResources } from '../lib/topic-editorial-resources.mjs';
+
+interface Props {
+  topic: string;
+  paragraphs: readonly string[];
+  collections: readonly { href: string; text: string }[];
+}
+const { topic, paragraphs, collections } = Astro.props;
+const inline = new Set(
+  editorialParagraphParts(`/clipart/${topic}/`, paragraphs)
+    .flat()
+    .map(({ href }) => href)
+    .filter(Boolean),
+);
+const { related, sources } = topicEditorialResources(topic);
+const groups = [
+  { label: 'Related topics', kind: 'topic' as const, links: related },
+  { label: 'Collections', kind: 'collection' as const, links: collections },
+  { label: 'References', kind: 'source' as const, links: sources },
+].map(({ links, ...group }) => ({
+  ...group,
+  links: links.filter(({ href }) => !inline.has(href)),
+}));
+---
+
+<EditorialRecommendations groups={groups} data-topic-editorial-resources />

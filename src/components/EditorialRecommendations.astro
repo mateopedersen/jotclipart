@@ -1,0 +1,144 @@
+---
+import ContentLink from './ContentLink.astro';
+
+interface Link {
+  href: string;
+  text: string;
+}
+interface Group {
+  label: string;
+  kind: 'topic' | 'collection' | 'source';
+  links: readonly Link[];
+}
+interface Props {
+  groups: readonly Group[];
+  'data-topic-editorial-resources'?: boolean;
+}
+const { groups, ...attributes } = Astro.props;
+const seen = new Set<string>();
+const visibleGroups = groups
+  .map((group) => ({
+    ...group,
+    links: group.links.filter(({ href }) => {
+      if (seen.has(href)) return false;
+      seen.add(href);
+      return true;
+    }),
+  }))
+  .filter((group) => group.links.length > 0);
+---
+
+{visibleGroups.length > 0 && (
+  <div class="recommendations" data-editorial-recommendations {...attributes}>
+    {visibleGroups.map(({ label, kind, links }) => (
+      <nav class:list={['recommendation-row', kind]} aria-label={label}>
+        <span class="recommendation-label" aria-hidden="true">
+          {label}
+        </span>
+        <ul>
+          {links.map(({ href, text }) => (
+            <li>
+              <ContentLink href={href} class="recommendation-link">
+                <span>{text}</span>
+                <span class="link-arrow" aria-hidden="true">
+                  {kind === 'source' ? '↗' : '→'}
+                </span>
+              </ContentLink>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    ))}
+  </div>
+)}
+
+<style>
+  .recommendations {
+    display: grid;
+    min-inline-size: 0;
+    margin-block-start: clamp(1.3rem, 3vw, 1.8rem);
+    padding: clamp(0.85rem, 2vw, 1.15rem);
+    border: 1px solid var(--brand-border);
+    border-radius: 14px;
+    background: color-mix(in srgb, var(--brand-soft) 26%, var(--brand-page));
+  }
+  .recommendation-row {
+    display: grid;
+    grid-template-columns: minmax(7rem, 8.25rem) minmax(0, 1fr);
+    align-items: start;
+    gap: 0.5rem 0.8rem;
+    min-inline-size: 0;
+  }
+  .recommendation-row + .recommendation-row {
+    border-block-start: 1px solid var(--brand-border);
+    padding-block-start: 0.7rem;
+    margin-block-start: 0.7rem;
+  }
+  .recommendation-label {
+    align-self: center;
+    color: var(--brand-action);
+    font-size: 0.86rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    min-inline-size: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: flex;
+    max-inline-size: 100%;
+    min-inline-size: 0;
+  }
+  .recommendation-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45em;
+    max-inline-size: 100%;
+    min-block-size: 44px;
+    min-inline-size: 0;
+    padding: 0.38rem 0.72rem;
+    border: 1px solid var(--brand-border);
+    border-radius: 8px;
+    background: var(--brand-page);
+    color: var(--brand-ink);
+    font-size: 0.91rem;
+    font-weight: 625;
+    line-height: 1.35;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+  }
+  .collection .recommendation-link {
+    background: var(--brand-soft);
+  }
+  .source .recommendation-link {
+    border-color: transparent;
+    background: transparent;
+    color: var(--brand-action);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+  .recommendation-link:hover {
+    border-color: var(--brand-action);
+    background: var(--brand-soft);
+  }
+  .recommendation-link:focus-visible {
+    outline: 2px solid var(--brand-action);
+    outline-offset: 2px;
+  }
+  .link-arrow {
+    flex: none;
+    color: var(--brand-action);
+    text-decoration: none;
+  }
+  @media (max-width: 560px) {
+    .recommendation-row {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

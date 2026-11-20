@@ -11,6 +11,7 @@ import CatalogCount from '../../components/CatalogCount.astro';
 import CollectionCover from '../../components/CollectionCover.astro';
 import Card from '../../components/Card.astro';
 import CollectionSubjectPicker from '../../components/CollectionSubjectPicker.astro';
+import EditorialRecommendations from '../../components/EditorialRecommendations.astro';
 import {
   publishedArt as art,
   availableTopics,
@@ -123,16 +124,18 @@ const visibleArtwork = [
     </div>
     <h2>Explore the subjects</h2>
     <CollectionSubjectPicker topics={ts} />
-    {relatedCollections.length > 0 && (
-      <nav aria-label="Related collections" class="collection-related-navigation">
-        <h2>Related collections</h2>
-        <div class="chips">
-          {relatedCollections.map(({ group }) => (
-            <a href={`/collection/${group.slug}/`}>{group.title}</a>
-          ))}
-        </div>
-      </nav>
-    )}
+    <EditorialRecommendations
+      groups={[
+        {
+          label: 'Related collections',
+          kind: 'collection',
+          links: relatedCollections.map(({ group }) => ({
+            href: `/collection/${group.slug}/`,
+            text: group.title,
+          })),
+        },
+      ]}
+    />
   </section>
   {items.length > 0 ? (
     <section aria-labelledby="collection-artwork-heading">
@@ -169,9 +172,6 @@ const visibleArtwork = [
   />
 </Layout>
 <style>
-  .collection-related-navigation {
-    margin-block-start: 1.5rem;
-  }
   .themed-collection {
     padding: 24px 0 28px;
   }

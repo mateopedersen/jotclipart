@@ -296,6 +296,27 @@
         "href": "/clipart/pumpkin/"
       }
     ],
+    "/clipart/crab/": [
+      {
+        "text": "blue crab",
+        "in": "A blue crab and a red crab with raised claws show distinct silhouettes in this crab clipart.",
+        "href": "https://www.chesapeakebay.net/discover/field-guide/entry/blue-crab",
+        "source": "Chesapeake Bay Program Blue Crab Field Guide",
+        "verifiedAt": "2026-11-20"
+      },
+      {
+        "text": "beach",
+        "in": "a personal beach journal or a classroom tide pool activity",
+        "href": "/clipart/beach/"
+      },
+      {
+        "text": "tide pool",
+        "in": "a personal beach journal or a classroom tide pool activity",
+        "href": "https://oceanservice.noaa.gov/facts/tide-pool.html",
+        "source": "NOAA National Ocean Service tide pool guide",
+        "verifiedAt": "2026-11-20"
+      }
+    ],
     "/clipart/cruise-ship/": [
       {
         "text": "Lifeboats",

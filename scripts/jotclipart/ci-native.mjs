@@ -130,6 +130,7 @@ try {
       'jotclipart-brand',
       'jotclipart-topic-heading',
       'linking',
+      'jotclipart-topic-resources',
       'page-seo',
       'jotclipart-build-root',
       'jotclipart-deployment-branch',
