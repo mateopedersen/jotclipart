@@ -1013,7 +1013,12 @@
           "href": "/clipart/microwave/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "ENERGY STAR room air conditioners",
+          "href": "https://www.energystar.gov/products/room_air_conditioners"
+        }
+      ]
     },
     "airbus-aircraft": {
       "related": [
@@ -1732,7 +1737,12 @@
           "href": "/clipart/tesla/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "Waymo’s autonomous driving technology",
+          "href": "https://waymo.com/waymo-driver/"
+        }
+      ]
     },
     "autumn": {
       "related": [
@@ -3200,7 +3210,12 @@
           "href": "/clipart/icebreaker-ship/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "International Maritime Organization ship safety",
+          "href": "https://www.imo.org/en/ourwork/safety/pages/default.aspx"
+        }
+      ]
     },
     "caroling": {
       "related": [
@@ -3451,7 +3466,12 @@
           "href": "/clipart/pear/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "FDA cheese identity standards",
+          "href": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-133"
+        }
+      ]
     },
     "cheetah": {
       "related": [
@@ -3469,6 +3489,10 @@
         }
       ],
       "sources": [
+        {
+          "text": "Smithsonian National Zoo cheetah profile",
+          "href": "https://nationalzoo.si.edu/animals/cheetah"
+        },
         {
           "text": "Animal Diversity Web profile for cheetah",
           "href": "https://animaldiversity.org/accounts/Acinonyx_jubatus/"
@@ -4959,7 +4983,12 @@
           "href": "/clipart/vr-headset/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "FAA unmanned aircraft systems",
+          "href": "https://www.faa.gov/uas"
+        }
+      ]
     },
     "duck": {
       "related": [
@@ -5049,7 +5078,12 @@
           "href": "/clipart/brain/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "NIH guide to how we hear",
+          "href": "https://www.nidcd.nih.gov/health/how-do-we-hear"
+        }
+      ]
     },
     "earbuds": {
       "related": [
@@ -5308,7 +5342,12 @@
           "href": "/clipart/facebook/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "IETF Internet Message Format standard",
+          "href": "https://www.rfc-editor.org/info/rfc5322/"
+        }
+      ]
     },
     "embraer-aircraft": {
       "related": [
@@ -5433,7 +5472,12 @@
           "href": "/clipart/ear/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "National Eye Institute eye anatomy",
+          "href": "https://www.nei.nih.gov/eye-health-information/healthy-vision/how-eyes-work"
+        }
+      ]
     },
     "facebook": {
       "related": [
@@ -5825,7 +5869,12 @@
           "href": "/clipart/frame/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "W3C CSS Fonts specification",
+          "href": "https://www.w3.org/TR/css-fonts-4/"
+        }
+      ]
     },
     "football": {
       "related": [
@@ -6139,7 +6188,12 @@
           "href": "/clipart/headphones/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "Xbox console lineup",
+          "href": "https://www.xbox.com/en-US/consoles"
+        }
+      ]
     },
     "game-controller": {
       "related": [
@@ -8203,7 +8257,12 @@
           "href": "/clipart/cookie/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "New Orleans king cake tradition",
+          "href": "https://www.neworleans.com/events/holidays-seasonal/mardi-gras/king-cakes/"
+        }
+      ]
     },
     "kiribati-flag": {
       "related": [
@@ -8630,7 +8689,12 @@
           "href": "/clipart/audi/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "Lexus vehicle lineup",
+          "href": "https://www.lexus.com/"
+        }
+      ]
     },
     "liberia-flag": {
       "related": [
@@ -8664,7 +8728,12 @@
           "href": "/clipart/school/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "American Library Association library resources",
+          "href": "https://www.ala.org/"
+        }
+      ]
     },
     "libya-flag": {
       "related": [
@@ -9285,7 +9354,12 @@
           "href": "/clipart/pie/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "New Orleans’ Mardi Gras guide",
+          "href": "https://www.neworleans.com/events/holidays-seasonal/mardi-gras/"
+        }
+      ]
     },
     "mardi-gras-beads": {
       "related": [
@@ -9319,7 +9393,12 @@
           "href": "/clipart/king-cake/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "New Orleans Mardi Gras traditions",
+          "href": "https://www.neworleans.com/events/holidays-seasonal/mardi-gras/"
+        }
+      ]
     },
     "marlin": {
       "related": [
@@ -9404,7 +9483,12 @@
           "href": "/clipart/clock/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "Illustrative Mathematics curriculum",
+          "href": "https://illustrativemathematics.org/"
+        }
+      ]
     },
     "mauritania-flag": {
       "related": [
@@ -10375,7 +10459,12 @@
           "href": "/clipart/zoo/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "Cornell Lab’s NestWatch nest and egg guide",
+          "href": "https://nestwatch.org/learn/focal-species/"
+        }
+      ]
     },
     "netball": {
       "related": [
@@ -10638,7 +10727,12 @@
           "href": "/clipart/mouth/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "NIH guide to the sense of smell",
+          "href": "https://www.nidcd.nih.gov/health/smell-disorders"
+        }
+      ]
     },
     "notebook": {
       "related": [
@@ -10672,7 +10766,12 @@
           "href": "/clipart/thermometer/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "American Nurses Association definition of nursing",
+          "href": "https://www.nursingworld.org/practice-policy/workforce/what-is-nursing/"
+        }
+      ]
     },
     "nutcracker": {
       "related": [
@@ -10728,12 +10827,7 @@
           "href": "/clipart/starfish/"
         }
       ],
-      "sources": [
-        {
-          "text": "NOAA ocean and coast education resources",
-          "href": "https://www.noaa.gov/education/resource-collections/ocean-coasts"
-        }
-      ]
+      "sources": []
     },
     "october": {
       "related": [
@@ -10768,6 +10862,10 @@
         }
       ],
       "sources": [
+        {
+          "text": "Monterey Bay Aquarium giant Pacific octopus profile",
+          "href": "https://www.montereybayaquarium.org/animals-the-ocean/animals-a-to-z/giant-pacific-octopus"
+        },
         {
           "text": "Animal Diversity Web profile for octopus",
           "href": "https://animaldiversity.org/accounts/Octopoda/classification/"
@@ -11058,6 +11156,10 @@
         }
       ],
       "sources": [
+        {
+          "text": "Smithsonian National Zoo giant panda profile",
+          "href": "https://nationalzoo.si.edu/animals/giant-panda"
+        },
         {
           "text": "Animal Diversity Web profile for panda",
           "href": "https://animaldiversity.org/accounts/Ailuropoda_melanoleuca/"
@@ -11464,7 +11566,12 @@
           "href": "/clipart/cornucopia/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "Plimoth Patuxet Museums guide to the Pilgrims",
+          "href": "https://plimoth.org/for-students/homework-help/who-were-the-pilgrims"
+        }
+      ]
     },
     "pineapple": {
       "related": [
@@ -12209,6 +12316,10 @@
       ],
       "sources": [
         {
+          "text": "Smithsonian National Zoo red panda profile",
+          "href": "https://nationalzoo.si.edu/animals/red-panda"
+        },
+        {
           "text": "Animal Diversity Web profile for red panda",
           "href": "https://animaldiversity.org/accounts/Ailurus_fulgens/"
         }
@@ -12252,6 +12363,10 @@
         }
       ],
       "sources": [
+        {
+          "text": "National Park Service caribou guide",
+          "href": "https://www.nps.gov/dena/learn/nature/caribou.htm"
+        },
         {
           "text": "Animal Diversity Web profile for reindeer",
           "href": "https://animaldiversity.org/accounts/Rangifer_tarandus/"
@@ -12828,7 +12943,12 @@
           "href": "/clipart/4th/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "National Center for Education Statistics school data",
+          "href": "https://nces.ed.gov/ccd/"
+        }
+      ]
     },
     "scorpion": {
       "related": [
@@ -13193,7 +13313,12 @@
           "href": "/clipart/security-camera/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "ENERGY STAR certified refrigerators",
+          "href": "https://www.energystar.gov/products/refrigerators"
+        }
+      ]
     },
     "smart-speaker": {
       "related": [
@@ -14191,7 +14316,12 @@
           "href": "/clipart/wheat/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "Plimoth Patuxet Museums Thanksgiving history",
+          "href": "https://plimoth.org/for-students/homework-help/thanksgiving"
+        }
+      ]
     },
     "thanksgiving-parade": {
       "related": [
@@ -14243,6 +14373,10 @@
         }
       ],
       "sources": [
+        {
+          "text": "Smithsonian National Zoo tiger profile",
+          "href": "https://nationalzoo.si.edu/animals/tiger"
+        },
         {
           "text": "Animal Diversity Web profile for tiger",
           "href": "https://animaldiversity.org/accounts/Panthera_tigris/"
@@ -15086,7 +15220,12 @@
           "href": "/clipart/computer-monitor/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "Khronos OpenXR standard",
+          "href": "https://www.khronos.org/openxr/"
+        }
+      ]
     },
     "walleye": {
       "related": [
@@ -15169,7 +15308,12 @@
           "href": "/clipart/air-conditioner/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "ENERGY STAR certified clothes washers",
+          "href": "https://www.energystar.gov/products/clothes_washers"
+        }
+      ]
     },
     "washington-nationals": {
       "related": [
@@ -15303,7 +15447,12 @@
           "href": "/clipart/smart-refrigerator/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "W3C media capture specification",
+          "href": "https://www.w3.org/TR/mediacapture-streams/"
+        }
+      ]
     },
     "website": {
       "related": [
@@ -15320,7 +15469,12 @@
           "href": "/clipart/generator/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "MDN HTML reference",
+          "href": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+        }
+      ]
     },
     "wedding": {
       "related": [
@@ -15420,7 +15574,12 @@
           "href": "/clipart/cranberry/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "USDA Economic Research Service wheat data",
+          "href": "https://www.ers.usda.gov/topics/crops/wheat"
+        }
+      ]
     },
     "white-motor-truck": {
       "related": [
@@ -15522,7 +15681,12 @@
           "href": "/clipart/hat/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "NOAA winter weather safety",
+          "href": "https://www.weather.gov/safety/winter"
+        }
+      ]
     },
     "wireless-charger": {
       "related": [
@@ -15836,7 +16000,12 @@
           "href": "/clipart/king-cake/"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "text": "FDA yogurt standard of identity",
+          "href": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-131/subpart-B/section-131.200"
+        }
+      ]
     },
     "yoyo": {
       "related": [
