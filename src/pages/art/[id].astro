@@ -8,6 +8,7 @@ import { structuredData, breadcrumbs } from '../../lib/structured-data';
 import Layout from '../../layouts/Layout.astro';
 import RelatedArtwork from '../../components/RelatedArtwork.astro';
 import NbaReferences from '../../components/NbaReferences.astro';
+import MlbReferences from '../../components/MlbReferences.astro';
 import Icon from '../../components/Icon.astro';
 import ShareButton from '../../components/ShareButton.astro';
 import ArtworkFacts from '../../components/ArtworkFacts.astro';
@@ -172,6 +173,7 @@ const downloadRecord = {
       </div>
       <p class="art-detail-description">{item.description}</p>
       <NbaReferences topic={item.topic} />
+      <MlbReferences topic={item.topic} />
       <dl class="art-detail-overview">
         <div class="art-fact art-fact-subject">
           <dt>

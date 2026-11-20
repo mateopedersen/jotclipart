@@ -1,0 +1,33 @@
+---
+import ContentLink from './ContentLink.astro';
+import { mlbOfficialRoster } from '../lib/mlb-links.mjs';
+
+interface Props {
+  topic: string;
+  teamPage?: boolean;
+}
+const { topic, teamPage = false } = Astro.props;
+const roster = mlbOfficialRoster(topic);
+---
+
+{roster && (
+  <p class="mlb-references" data-mlb-references>
+    <ContentLink class="editorial-inline-link" href={roster}>
+      Official MLB team roster
+    </ContentLink>
+    {teamPage && (
+      <>
+        {' · '}
+        <ContentLink class="editorial-inline-link" href="/collection/sports/">
+          More sports clipart
+        </ContentLink>
+      </>
+    )}
+  </p>
+)}
+
+<style>
+  .mlb-references {
+    margin-block: 0.85rem 1.25rem;
+  }
+</style>
