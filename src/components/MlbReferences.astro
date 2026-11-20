@@ -1,12 +1,16 @@
 ---
 import ContentLink from './ContentLink.astro';
 import { mlbOfficialRoster } from '../lib/mlb-links.mjs';
+import playerIndex from '../../data/jotclipart-mlb-player-references.json';
 
 interface Props {
   topic: string;
+  artworkId?: string;
   teamPage?: boolean;
 }
-const { topic, teamPage = false } = Astro.props;
+const { topic, artworkId, teamPage = false } = Astro.props;
+const players =
+  (playerIndex as Record<string, { label: string; href: string }[]>)[artworkId ?? ''] ?? [];
 const roster = mlbOfficialRoster(topic);
 ---
 
@@ -15,6 +19,14 @@ const roster = mlbOfficialRoster(topic);
     <ContentLink class="editorial-inline-link" href={roster}>
       Official MLB team roster
     </ContentLink>
+    {players.map(({ label, href }) => (
+      <>
+        {' · '}
+        <ContentLink class="editorial-inline-link" href={href}>
+          {label} on MLB.com
+        </ContentLink>
+      </>
+    ))}
     {teamPage && (
       <>
         {' · '}
