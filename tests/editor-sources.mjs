@@ -29,12 +29,12 @@ test('every catalog source is editable without a topic-specific feature switch',
 });
 
 test('catalog image requests support any collection but reject foreign origins, wrong formats and invalid identities', () => {
-  const origin = 'https://ultraclipart.com';
+  const origin = 'https://jotclipart.com';
   const file = { bytes: 1024, sha256: 'a'.repeat(64) };
   for (const url of [
     '/catalog/flowers/pink-peony.webp',
     '/catalog/wave_003/winter.webp',
-    'https://assets.ultraclipart.com/flowers/pink-peony.aaaaaaaaaaaaaaaa.webp',
+    'https://assets.jotclipart.com/flowers/pink-peony.aaaaaaaaaaaaaaaa.webp',
   ])
     assert.equal(
       verifiedSourceUrl({ ...file, url }, 'webp', origin).pathname.endsWith('.webp'),
@@ -47,7 +47,7 @@ test('catalog image requests support any collection but reject foreign origins, 
     '/catalog/x/a.pdf',
     '/catalog/x/a.webp?url=other',
     '/catalog/x/a.webp#other',
-    'https://user:pass@assets.ultraclipart.com/a.webp',
+    'https://user:pass@assets.jotclipart.com/a.webp',
     '/catalog/x/%2e%2e/a.webp',
   ])
     assert.throws(() => verifiedSourceUrl({ ...file, url }, 'webp', origin));
@@ -78,3 +78,15 @@ test(
     }
   },
 );
+
+test('the reviewed large flag PDF requires the exact approved hash and size', () => {
+  const origin = 'https://jotclipart.com';
+  const file = {
+    url: '/catalog/afghanistan-flag/flag-print.pdf',
+    bytes: 1246576,
+    sha256: 'dc775a983d82d471db35baebb9e1247bcf1023658721a97613c17ca13e251318',
+  };
+  assert.equal(verifiedSourceUrl(file, 'pdf', origin).pathname, file.url);
+  assert.throws(() => verifiedSourceUrl({ ...file, bytes: file.bytes + 1 }, 'pdf', origin));
+  assert.throws(() => verifiedSourceUrl({ ...file, sha256: '0'.repeat(64) }, 'pdf', origin));
+});
