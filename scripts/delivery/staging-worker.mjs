@@ -1,4 +1,4 @@
-import { withinPrintPdfLimit } from './approved-flag-print-pdfs.mjs';
+import { withinPrintPdfLimit } from '../../src/lib/approved-flag-print-pdfs.mjs';
 // This module is used only by a private Wrangler remote-development session.
 // A fixed Merkle root limits every write to the locally reviewed release.
 import {

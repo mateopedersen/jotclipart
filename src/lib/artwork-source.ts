@@ -1,3 +1,5 @@
+import { withinPrintPdfLimit } from './approved-flag-print-pdfs.mjs';
+
 export type SourceType = 'layered' | 'raster';
 export type RepresentationKind = 'svg' | 'webp' | 'pdf' | 'thumb';
 export interface CatalogSource {
@@ -46,7 +48,7 @@ export function validateEditorSource(item: CatalogSource): SourceType {
       !file ||
       !Number.isSafeInteger(file.bytes) ||
       file.bytes < 1 ||
-      file.bytes > cap ||
+      (kind === 'pdf' ? !withinPrintPdfLimit(file) : file.bytes > cap) ||
       !/^[a-f0-9]{64}$/.test(file.sha256)
     )
       throw new Error(`Missing or invalid editor source: ${item.id}/${kind}`);

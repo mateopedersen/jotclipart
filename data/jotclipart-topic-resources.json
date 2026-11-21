@@ -16242,6 +16242,160 @@
           "href": "https://plants.ces.ncsu.edu/plants/cucurbita-pepo/"
         }
       ]
+    },
+    "palau-flag": {
+      "related": [
+        {
+          "text": "Pacific country flags",
+          "href": "/collection/oceania-flags/"
+        },
+        {
+          "text": "Flags and countries",
+          "href": "/collection/flags-countries/"
+        },
+        {
+          "text": "Micronesia Flag Clipart",
+          "href": "/clipart/micronesia-flag/"
+        }
+      ],
+      "sources": [
+        {
+          "text": "Government of Palau flag reference",
+          "href": "https://www.palaugov.pw/about-palau/flag/"
+        }
+      ]
+    },
+    "palestine-flag": {
+      "related": [
+        {
+          "text": "Asian flags",
+          "href": "/collection/asian-flags/"
+        },
+        {
+          "text": "Flags and countries",
+          "href": "/collection/flags-countries/"
+        },
+        {
+          "text": "United Arab Emirates Flag Clipart",
+          "href": "/clipart/united-arab-emirates-flag/"
+        }
+      ],
+      "sources": [
+        {
+          "text": "Palestinian Ministry of Foreign Affairs flag reference",
+          "href": "https://www.mofa.pna.ps/en-us/palestine/thepalestinianflag"
+        }
+      ]
+    },
+    "turkiye-flag": {
+      "related": [
+        {
+          "text": "Asian flags",
+          "href": "/collection/asian-flags/"
+        },
+        {
+          "text": "Flags and countries",
+          "href": "/collection/flags-countries/"
+        },
+        {
+          "text": "Singapore Flag Clipart",
+          "href": "/clipart/singapore-flag/"
+        }
+      ],
+      "sources": [
+        {
+          "text": "Presidency of the Republic of Türkiye flag reference",
+          "href": "https://tccb.gov.tr/en/presidency/turkishflag/"
+        }
+      ]
+    },
+    "south-korea-flag": {
+      "related": [
+        {
+          "text": "Asian flags",
+          "href": "/collection/asian-flags/"
+        },
+        {
+          "text": "Flags and countries",
+          "href": "/collection/flags-countries/"
+        },
+        {
+          "text": "Japan Flag Clipart",
+          "href": "/clipart/japan-flag/"
+        }
+      ],
+      "sources": [
+        {
+          "text": "Republic of Korea Ministry of the Interior and Safety flag reference",
+          "href": "https://www.mois.go.kr/eng/sub/a03/nationalSymbol/screen.do"
+        }
+      ]
+    },
+    "papua-new-guinea-flag": {
+      "related": [
+        {
+          "text": "Pacific country flags",
+          "href": "/collection/oceania-flags/"
+        },
+        {
+          "text": "Flags and countries",
+          "href": "/collection/flags-countries/"
+        },
+        {
+          "text": "Australia Flag Clipart",
+          "href": "/clipart/australia-flag/"
+        }
+      ],
+      "sources": [
+        {
+          "text": "Papua New Guinea National Identity Act flag reference",
+          "href": "https://www.paclii.org/pg/legis/consol_act/nia1971197.pdf"
+        }
+      ]
+    },
+    "panama-flag": {
+      "related": [
+        {
+          "text": "Flags of the Americas",
+          "href": "/collection/americas-flags/"
+        },
+        {
+          "text": "Flags and countries",
+          "href": "/collection/flags-countries/"
+        },
+        {
+          "text": "Mexico Flag Clipart",
+          "href": "/clipart/mexico-flag/"
+        }
+      ],
+      "sources": [
+        {
+          "text": "Panama Ministry of Government flag reference",
+          "href": "https://www.mingob.gob.pa/simbolosdelanacion/bandera-nacional/"
+        }
+      ]
+    },
+    "afghanistan-flag": {
+      "related": [
+        {
+          "text": "Asian flags",
+          "href": "/collection/asian-flags/"
+        },
+        {
+          "text": "Flags and countries",
+          "href": "/collection/flags-countries/"
+        },
+        {
+          "text": "Kazakhstan Flag Clipart",
+          "href": "/clipart/kazakhstan-flag/"
+        }
+      ],
+      "sources": [
+        {
+          "text": "WIPO Lex, Constitution of Afghanistan (2004), Article 19",
+          "href": "https://cdn.nestjs.wipolex.wji.prd.web1.wipo.int/wipolex/en/legislation/details/10739"
+        }
+      ]
     }
   }
 }

@@ -1,4 +1,4 @@
-import { withinPrintPdfLimit } from '../delivery/approved-flag-print-pdfs.mjs';
+import { withinPrintPdfLimit } from '../../src/lib/approved-flag-print-pdfs.mjs';
 // Operator-only incoming intent. This is never a verified publication manifest.
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';

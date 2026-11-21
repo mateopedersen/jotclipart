@@ -1,4 +1,4 @@
-import { withinPrintPdfLimit } from './delivery/approved-flag-print-pdfs.mjs';
+import { withinPrintPdfLimit } from '../src/lib/approved-flag-print-pdfs.mjs';
 import { createHash } from 'node:crypto';
 import { readFileSync, realpathSync } from 'node:fs';
 import { verifiedSourceCache } from './verified-source-cache.mjs';
@@ -219,7 +219,8 @@ function localSourceVerifier(root) {
   return {
     verify(asset) {
       const file = realpathSync(join(publicRoot, validateLocalAssetPath(asset.path)));
-      if (!file.startsWith(`${publicRoot}${sep}`)) throw new Error('Source symlink escapes public/');
+      if (!file.startsWith(`${publicRoot}${sep}`))
+        throw new Error('Source symlink escapes public/');
       cache.verify(file, asset);
     },
     save: () => cache.save(),
@@ -229,7 +230,8 @@ function localSourceVerifier(root) {
 
 /** Verify every catalog source locally before network requests. */
 export function verifyCatalogSourcesAtRoot(root, catalog) {
-  const assets = catalogFiles(catalog), verifier = localSourceVerifier(root);
+  const assets = catalogFiles(catalog),
+    verifier = localSourceVerifier(root);
   for (const asset of assets) verifier.verify(asset);
   verifier.save();
   return { files: assets.length, ...verifier.stats() };
@@ -238,10 +240,8 @@ export function verifyCatalogSourcesAtRoot(root, catalog) {
 /** Validate full manifest metadata and every source using the fixed local verifier. */
 export function validatePublicationAtRoot(root, manifest, catalog) {
   const verifier = localSourceVerifier(root);
-  const result = validatePublicationWithVerifier(
-    manifest,
-    catalog,
-    (asset) => verifier.verify(asset),
+  const result = validatePublicationWithVerifier(manifest, catalog, (asset) =>
+    verifier.verify(asset),
   );
   verifier.save();
   return { result, sourceVerification: verifier.stats() };

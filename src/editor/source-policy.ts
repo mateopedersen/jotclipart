@@ -1,3 +1,5 @@
+import { withinPrintPdfLimit } from '../lib/approved-flag-print-pdfs.mjs';
+
 export interface VerifiedRepresentation {
   url: string;
   bytes: number;
@@ -28,7 +30,7 @@ export function verifiedSourceUrl(
     !url.pathname.endsWith(`.${kind}`) ||
     !Number.isSafeInteger(file.bytes) ||
     file.bytes < 1 ||
-    file.bytes > (kind === 'pdf' ? 1_000_000 : 16_000_000) ||
+    (kind === 'pdf' ? !withinPrintPdfLimit(file) : file.bytes > 16_000_000) ||
     !/^[a-f0-9]{64}$/.test(file.sha256)
   )
     throw new Error('The artwork source is not a verified catalog file.');
