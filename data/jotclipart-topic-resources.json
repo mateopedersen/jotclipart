@@ -16432,6 +16432,50 @@
           "href": "https://www.riigikantselei.ee/en/el140"
         }
       ]
+    },
+    "poland-flag": {
+      "related": [
+        {
+          "text": "European flags",
+          "href": "/collection/european-flags/"
+        },
+        {
+          "text": "Germany Flag Clipart",
+          "href": "/clipart/germany-flag/"
+        },
+        {
+          "text": "Lithuania Flag Clipart",
+          "href": "/clipart/lithuania-flag/"
+        }
+      ],
+      "sources": [
+        {
+          "text": "Poland Ministry of Foreign Affairs flag reference",
+          "href": "https://www.gov.pl/web/diplomacy/polands-day-of-the-flag"
+        }
+      ]
+    },
+    "portugal-flag": {
+      "related": [
+        {
+          "text": "European flags",
+          "href": "/collection/european-flags/"
+        },
+        {
+          "text": "Spain Flag Clipart",
+          "href": "/clipart/spain-flag/"
+        },
+        {
+          "text": "France Flag Clipart",
+          "href": "/clipart/france-flag/"
+        }
+      ],
+      "sources": [
+        {
+          "text": "Presidency of the Portuguese Republic flag reference",
+          "href": "https://www.presidencia.pt/en-en/president-of-the-republic/the-presidency/national-symbols/national-flag/"
+        }
+      ]
     }
   }
 }
