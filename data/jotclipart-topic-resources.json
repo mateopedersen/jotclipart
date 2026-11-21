@@ -16498,6 +16498,64 @@
           "href": "https://en.moj.gov.cn/2021-06/22/c_634901.htm"
         }
       ]
+    },
+    "vatican-city-flag": {
+      "related": [
+        {
+          "text": "European flags",
+          "href": "/collection/european-flags/"
+        },
+        {
+          "text": "Italy Flag Clipart",
+          "href": "/clipart/italy-flag/"
+        }
+      ],
+      "sources": [
+        {
+          "text": "Governorate of Vatican City flag reference",
+          "href": "https://www.vaticanstate.va/en/state-and-government/general-informations/flag.html"
+        }
+      ]
+    },
+    "eritrea-flag": {
+      "related": [
+        {
+          "text": "African flags",
+          "href": "/collection/african-flags/"
+        },
+        {
+          "text": "Kenya Flag Clipart",
+          "href": "/clipart/kenya-flag/"
+        }
+      ],
+      "sources": [
+        {
+          "text": "Eritrea Ministry of Information national flag reference",
+          "href": "https://shabait.com/2021/05/19/respecting-eritrean-national-symbols/"
+        }
+      ]
+    },
+    "uzbekistan-flag": {
+      "related": [
+        {
+          "text": "Asian flags",
+          "href": "/collection/asian-flags/"
+        },
+        {
+          "text": "Kazakhstan Flag Clipart",
+          "href": "/clipart/kazakhstan-flag/"
+        },
+        {
+          "text": "Afghanistan Republic Era Flag Clipart",
+          "href": "/clipart/afghanistan-flag/"
+        }
+      ],
+      "sources": [
+        {
+          "text": "Government of Uzbekistan state symbols",
+          "href": "https://gov.uz/en/pages/symbols"
+        }
+      ]
     }
   }
 }
