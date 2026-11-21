@@ -16476,6 +16476,28 @@
           "href": "https://www.presidencia.pt/en-en/president-of-the-republic/the-presidency/national-symbols/national-flag/"
         }
       ]
+    },
+    "china-flag": {
+      "related": [
+        {
+          "text": "Asian flags",
+          "href": "/collection/asian-flags/"
+        },
+        {
+          "text": "Japan Flag Clipart",
+          "href": "/clipart/japan-flag/"
+        },
+        {
+          "text": "South Korea Flag Clipart",
+          "href": "/clipart/south-korea-flag/"
+        }
+      ],
+      "sources": [
+        {
+          "text": "Constitution of the People’s Republic of China, Article 141",
+          "href": "https://en.moj.gov.cn/2021-06/22/c_634901.htm"
+        }
+      ]
     }
   }
 }
