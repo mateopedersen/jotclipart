@@ -1,3 +1,4 @@
+import { withinPrintPdfLimit } from '../delivery/approved-flag-print-pdfs.mjs';
 // Operator-only incoming intent. This is never a verified publication manifest.
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
@@ -71,7 +72,7 @@ export function incomingMediaFiles(manifest) {
     const id = assetIdentity(f.assetId, f.kind);
     if (files.has(id) || paths.has(f.path) || urls.has(f.url))
       throw Error('Duplicate planned media identity, path or URL');
-    if (f.kind === 'pdf' && f.bytes > 1_000_000)
+    if (f.kind === 'pdf' && !withinPrintPdfLimit(f))
       throw Error('Standard PDF exceeds its byte ceiling');
     const sourceType = sourceTypeOf(f),
       group = groups.get(f.assetId) ?? { sourceType, kinds: [] };

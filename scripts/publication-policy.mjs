@@ -1,3 +1,4 @@
+import { withinPrintPdfLimit } from './delivery/approved-flag-print-pdfs.mjs';
 import { createHash } from 'node:crypto';
 import { readFileSync, realpathSync } from 'node:fs';
 import { verifiedSourceCache } from './verified-source-cache.mjs';
@@ -105,7 +106,7 @@ export function validateManifest(manifest) {
     const id = assetIdentity(file.assetId, file.kind);
     if (files.has(id) || paths.has(file.path) || urls.has(file.url))
       throw new Error('Duplicate publication identity, local path or URL');
-    if (file.kind === 'pdf' && file.bytes > 1_000_000)
+    if (file.kind === 'pdf' && !withinPrintPdfLimit(file))
       throw new Error('Standard PDF exceeds its byte ceiling');
     files.set(id, file);
     paths.add(file.path);

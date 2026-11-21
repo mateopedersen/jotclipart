@@ -1,3 +1,4 @@
+import { withinPrintPdfLimit } from './approved-flag-print-pdfs.mjs';
 // This module is used only by a private Wrangler remote-development session.
 // A fixed Merkle root limits every write to the locally reviewed release.
 import {
@@ -261,7 +262,7 @@ export function stagingWorker(job) {
           keys.has(record.key) ||
           (job.media === true &&
             (!['image/webp', 'image/svg+xml', 'application/pdf'].includes(record.mime) ||
-              (record.mime === 'application/pdf' && record.bytes > 1_000_000))) ||
+              (record.mime === 'application/pdf' && !withinPrintPdfLimit(record)))) ||
           !Array.isArray(proof) ||
           (record.contentDisposition !== undefined &&
             (record.mime !== 'application/pdf' ||
