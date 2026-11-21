@@ -16260,8 +16260,8 @@
       ],
       "sources": [
         {
-          "text": "Government of Palau flag reference",
-          "href": "https://www.palaugov.pw/about-palau/flag/"
+          "text": "Palau flag display in a UN regional development presentation",
+          "href": "https://uncrd.un.org/sites/default/files/2025sids-trg_s4-p7-palau.pdf"
         }
       ]
     },
@@ -16282,8 +16282,8 @@
       ],
       "sources": [
         {
-          "text": "Palestinian Ministry of Foreign Affairs flag reference",
-          "href": "https://www.mofa.pna.ps/en-us/palestine/thepalestinianflag"
+          "text": "Palestinian mission statement and official national emblem",
+          "href": "https://legal.un.org/diplomaticconferences/cah/prepcom_1sess/statements/wg1_palestine.pdf"
         }
       ]
     },
@@ -16304,8 +16304,8 @@
       ],
       "sources": [
         {
-          "text": "Presidency of the Republic of Türkiye flag reference",
-          "href": "https://tccb.gov.tr/en/presidency/turkishflag/"
+          "text": "Türkiye Flag Law No. 2893",
+          "href": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2893.pdf"
         }
       ]
     },
@@ -16348,8 +16348,8 @@
       ],
       "sources": [
         {
-          "text": "Papua New Guinea National Identity Act flag reference",
-          "href": "https://www.paclii.org/pg/legis/consol_act/nia1971197.pdf"
+          "text": "Papua New Guinea Constitution, national symbols",
+          "href": "https://www.ombudsman.gov.pg/legislation/png-constitution/"
         }
       ]
     },
@@ -16370,8 +16370,8 @@
       ],
       "sources": [
         {
-          "text": "Panama Ministry of Government flag reference",
-          "href": "https://www.mingob.gob.pa/simbolosdelanacion/bandera-nacional/"
+          "text": "Constitution of Panama, national symbols",
+          "href": "https://constitucion.te.gob.pa/constitucion-vigente/"
         }
       ]
     },
@@ -16394,6 +16394,42 @@
         {
           "text": "WIPO Lex, Constitution of Afghanistan (2004), Article 19",
           "href": "https://cdn.nestjs.wipolex.wji.prd.web1.wipo.int/wipolex/en/legislation/details/10739"
+        }
+      ]
+    },
+    "colombia-flag": {
+      "related": [
+        {
+          "text": "Flags of the Americas",
+          "href": "/collection/americas-flags/"
+        },
+        {
+          "text": "Flags and countries",
+          "href": "/collection/flags-countries/"
+        }
+      ],
+      "sources": [
+        {
+          "text": "Colombia Ministry of Foreign Affairs flag reference",
+          "href": "https://cancilleria.gov.co/politica-exterior/simbolos-patrios-y-otros-datos-de-interes"
+        }
+      ]
+    },
+    "estonia-flag": {
+      "related": [
+        {
+          "text": "European flags",
+          "href": "/collection/european-flags/"
+        },
+        {
+          "text": "Flags and countries",
+          "href": "/collection/flags-countries/"
+        }
+      ],
+      "sources": [
+        {
+          "text": "Estonian Government Office flag reference",
+          "href": "https://www.riigikantselei.ee/en/el140"
         }
       ]
     }
