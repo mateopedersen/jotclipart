@@ -3,7 +3,7 @@ import { mapFour } from './bounded-map.mjs';
 import { publicSiteDirectory } from './site-directory-cache.mjs';
 // Serving adapter only. The canonical publisher must supply captured authorization.
 import { openSearch } from './runtime.mjs';
-import { makeStore, mapGet } from './store.mjs';
+import { makeStore, mapGet, SEARCH_MANIFEST_MAX_BYTES, SEARCH_OBJECT_MAX_BYTES } from './store.mjs';
 const SHA = /^[a-f0-9]{64}$/,
   ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 class ApiFault extends Error {
@@ -31,7 +31,7 @@ const headers = {
 };
 const reply = (value, status = 200) => new Response(JSON.stringify(value), { status, headers });
 // Both search and directory providers share this connection/body-consumption budget.
-function boundedBucket(source, { maxReadObjects = 8000, maxReadBytes = 128 * 1024 * 1024 } = {}) {
+function boundedBucket(source, searchManifestKey, { maxReadObjects = 8000, maxReadBytes = 128 * 1024 * 1024 } = {}) {
   let reads = 0,
     bytes = 0,
     slots = 4,
@@ -48,7 +48,8 @@ function boundedBucket(source, { maxReadObjects = 8000, maxReadBytes = 128 * 102
       try {
         const object = await source.get(key);
         if (!object) return null;
-        if (object.size > 65536 || (bytes += object.size) > maxReadBytes) {
+        const limit=key === searchManifestKey ? SEARCH_MANIFEST_MAX_BYTES : SEARCH_OBJECT_MAX_BYTES;
+        if (object.size > limit || (bytes += object.size) > maxReadBytes) {
           await object.body?.cancel?.();
           fail(503, 'Catalog byte budget exceeded');
         }
@@ -222,7 +223,7 @@ export function createSnapshotSearchApi({
       ...(captured.snapshot ? { snapshot: freeze(structuredClone(captured.snapshot)) } : {}),
       snapshotSha256,
       searchDescriptor: Object.freeze({ ...searchDescriptor }),
-      bucket: boundedBucket(captured.bucket ?? bucket),
+      bucket: boundedBucket(captured.bucket ?? bucket, searchDescriptor.key),
       fixture,
     });
   }
