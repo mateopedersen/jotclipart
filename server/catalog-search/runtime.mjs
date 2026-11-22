@@ -9,8 +9,15 @@ import {
   EXACT_SUBJECT_BONUS,
   exactSubjectFacets,
 } from '../../src/lib/search-language.ts';
-import { makeStore, mapGet, mapEntries, wordsFrom, orderedValues,
-  SEARCH_MANIFEST_MAX_BYTES, SEARCH_OBJECT_MAX_BYTES } from './store.mjs';
+import {
+  makeStore,
+  mapGet,
+  mapEntries,
+  wordsFrom,
+  orderedValues,
+  SEARCH_MANIFEST_MAX_BYTES,
+  SEARCH_OBJECT_MAX_BYTES,
+} from './store.mjs';
 import { mapFour } from './bounded-map.mjs';
 const hex = async (bytes) =>
   [...new Uint8Array(await crypto.subtle.digest('SHA-256', bytes))]

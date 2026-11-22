@@ -31,7 +31,11 @@ const headers = {
 };
 const reply = (value, status = 200) => new Response(JSON.stringify(value), { status, headers });
 // Both search and directory providers share this connection/body-consumption budget.
-function boundedBucket(source, searchManifestKey, { maxReadObjects = 8000, maxReadBytes = 128 * 1024 * 1024 } = {}) {
+function boundedBucket(
+  source,
+  searchManifestKey,
+  { maxReadObjects = 8000, maxReadBytes = 128 * 1024 * 1024 } = {},
+) {
   let reads = 0,
     bytes = 0,
     slots = 4,
@@ -48,7 +52,8 @@ function boundedBucket(source, searchManifestKey, { maxReadObjects = 8000, maxRe
       try {
         const object = await source.get(key);
         if (!object) return null;
-        const limit=key === searchManifestKey ? SEARCH_MANIFEST_MAX_BYTES : SEARCH_OBJECT_MAX_BYTES;
+        const limit =
+          key === searchManifestKey ? SEARCH_MANIFEST_MAX_BYTES : SEARCH_OBJECT_MAX_BYTES;
         if (object.size > limit || (bytes += object.size) > maxReadBytes) {
           await object.body?.cancel?.();
           fail(503, 'Catalog byte budget exceeded');

@@ -3,7 +3,12 @@ import assert from 'node:assert/strict';
 import { readFileSync, writeFileSync } from 'node:fs';
 import { createSnapshotSearchApi } from '../server/catalog-search/api.mjs';
 import { bootstrapSearch } from '../server/catalog-search/index.mjs';
-import { digest, makeStore, SEARCH_MANIFEST_MAX_BYTES, SEARCH_OBJECT_MAX_BYTES } from '../server/catalog-search/store.mjs';
+import {
+  digest,
+  makeStore,
+  SEARCH_MANIFEST_MAX_BYTES,
+  SEARCH_OBJECT_MAX_BYTES,
+} from '../server/catalog-search/store.mjs';
 import { attachUiMetadata, uiProviders } from '../server/catalog-search/ui-metadata.mjs';
 import { defaults } from '../src/lib/search.ts';
 const source = JSON.parse(readFileSync(new URL('../data/art.json', import.meta.url))).filter(
@@ -110,25 +115,41 @@ await test('Growing topic directories stay searchable without enlarging child-ob
   });
   assert(descriptor.bytes > SEARCH_OBJECT_MAX_BYTES);
   assert(descriptor.bytes < SEARCH_MANIFEST_MAX_BYTES);
-  assert.equal((await makeStore(bucket).get(descriptor)).topics.length, manifest.topics.length + 1100);
+  assert.equal(
+    (await makeStore(bucket).get(descriptor)).topics.length,
+    manifest.topics.length + 1100,
+  );
   const largeCatalog = createSnapshotSearchApi({
     captureAuthorizedSnapshot: async () => ({ ...(await capture()), searchDescriptor: descriptor }),
     allowPrivateFixture: true,
   });
-  const response = await largeCatalog.post(req({ operation: 'search', state: { ...defaults, size: 6 } }));
+  const response = await largeCatalog.post(
+    req({ operation: 'search', state: { ...defaults, size: 6 } }),
+  );
   assert.equal(response.status, 200);
   assert.equal((await response.json()).result.items.length, 6);
-  await assert.rejects(() => store.put({
-    ...manifest,
-    topics: [{ slug: 'x', keyword: 'x'.repeat(SEARCH_MANIFEST_MAX_BYTES) }],
-  }), /size budget/);
-  const largeChild = { schema: 1, type: 'search-posting-shard', values: 'x'.repeat(SEARCH_OBJECT_MAX_BYTES) };
+  await assert.rejects(
+    () =>
+      store.put({
+        ...manifest,
+        topics: [{ slug: 'x', keyword: 'x'.repeat(SEARCH_MANIFEST_MAX_BYTES) }],
+      }),
+    /size budget/,
+  );
+  const largeChild = {
+    schema: 1,
+    type: 'search-posting-shard',
+    values: 'x'.repeat(SEARCH_OBJECT_MAX_BYTES),
+  };
   await assert.rejects(() => store.put(largeChild), /size budget/);
   const body = new TextEncoder().encode(JSON.stringify(largeChild));
   const sha256 = await digest(body);
   const key = `catalog/objects/search/${sha256}.json`;
   map.set(key, body);
-  await assert.rejects(() => makeStore(bucket).get({ key, sha256, bytes: body.length }), /size budget/);
+  await assert.rejects(
+    () => makeStore(bucket).get({ key, sha256, bytes: body.length }),
+    /size budget/,
+  );
 });
 await test('Studio and B&W sizes 4/6/24 preserved; capture once per request', async () => {
   for (const size of [4, 6, 24, 32]) {
