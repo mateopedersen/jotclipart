@@ -150,7 +150,7 @@ try {
         assert(breadcrumb.length >= 4, 'Topic breadcrumb and its links must exist');
         for (const item of breadcrumb) {
           assert.equal(item.color, 'rgb(33, 110, 78)');
-          assert(item.weight >= 750, 'Topic breadcrumb must be bold');
+          assert.equal(item.weight, 500, 'Topic breadcrumb must use a medium weight');
           assert(item.size >= 15, 'Topic breadcrumb must be readable on mobile');
         }
       }

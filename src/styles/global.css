@@ -607,7 +607,7 @@ p {
 main.container > .breadcrumb:has(+ .art-detail) {
   color: var(--brand-action);
   font-size: clamp(15px, 1.3vw, 18px);
-  font-weight: 750;
+  font-weight: 500;
   line-height: 1.5;
   align-items: baseline;
   overflow-wrap: anywhere;
