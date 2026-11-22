@@ -1,0 +1,76 @@
+name: Verified JotClipart flag package
+on:
+  push:
+    branches: [ci/jotclipart-flag-context-3ce1123ab760]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      EXACT_REVISION: 3ce1123ab7607cfd93d8e3a60b33e8b49a9133c9
+      JOTCLIPART_BUILD_ROOT: work/jotclipart-release-3ce1123ab760
+      ASTRO_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.25.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.22.2'
+      - name: Main-source-independent repository checkout and exact native build
+        shell: bash
+        run: |
+          set -euo pipefail
+          root="/Users/Shared/JotClipartFlagRelease/3ce1123ab760"
+          sudo install -d -o "$(id -u)" -g "$(id -g)" -m 700 /Users/Shared/JotClipartFlagRelease
+          git clone --filter=blob:none --no-checkout https://github.com/mateopedersen/jotclipart.git "$root"
+          cd "$root"
+          git checkout --detach "$EXACT_REVISION"
+          test "$(git rev-parse HEAD)" = "$EXACT_REVISION"
+          pnpm install --frozen-lockfile --store-dir "$RUNNER_TEMP/jotclipart-pnpm"
+          node scripts/jotclipart/ci-native.mjs format
+          node scripts/jotclipart/ci-native.mjs source
+          pnpm build
+          node scripts/jotclipart/ci-native.mjs package
+          EXPECT_REVISION="$EXACT_REVISION" node scripts/jotclipart/verify-independent.mjs
+      - name: Encrypt the exact package to the local release operator
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd "/Users/Shared/JotClipartFlagRelease/3ce1123ab760"
+          cat > "$RUNNER_TEMP/receiver.crt" <<'CERT'
+          -----BEGIN CERTIFICATE-----
+          MIID3DCCAkQCCQD4ME5Tw6zzqjANBgkqhkiG9w0BAQsFADAwMS4wLAYDVQQDDCVK
+          b3RDbGlwYXJ0IGVwaGVtZXJhbCBwYWNrYWdlIHJlY2VpdmVyMB4XDTI2MTEyMjA0
+          MjkzOFoXDTI2MTEyNTA0MjkzOFowMDEuMCwGA1UEAwwlSm90Q2xpcGFydCBlcGhl
+          bWVyYWwgcGFja2FnZSByZWNlaXZlcjCCAaIwDQYJKoZIhvcNAQEBBQADggGPADCC
+          AYoCggGBAKIgdH661aENRhTA022zcb9jts8SNI1OviiOqFhGQobwDQcvelUObypB
+          zXtq62KEVVnliTb7bbRZiIBJGEovz9Y507tI/HGtAF0g5v8ObzqGfJueHXaAgJ6l
+          GSAMD54xvkQZEbe2+kMBIJX0ReM9nEi1qUvKaJsk4qcoQyydS8ngJ/dYHSW+ZJdW
+          jov4r4MWt5+p0dn21aV495kgS3Vfz4iJZ6enpwZAZaOjcGpMnE4cDvp7wkmqkJBT
+          63znLo6+HL3TCdNplD2uNjoT40IVB0+FQ51YTJ5c1PQ6SO//suDttL2h0p219oa6
+          RV1ManAUwlSDAPkfC/4jvCZeN3tE0byTUMIwWwgsb2OXuxnmFJ9ByDGg6TXPlbCR
+          aTNc6yH9GunvAvMkwdTlkE8jlpPvh6E1haYOtwgeMFp14q43dmeot9G068jBZKTi
+          tr0EU4wb2+CsZjp3ii0awJNZZtSVzUk3H91II5U2K0ZTlaq+Ai5Y97a+HWhF3YM2
+          aRtHAD3L/QIDAQABMA0GCSqGSIb3DQEBCwUAA4IBgQB5LGu83JOMFowTuYGkCJ71
+          adgr5K37CylwOVt2lEkB9zKme9fcHP8dEWdA8UNg0F4ZHDcnDKDUijAw72CQZpRr
+          bkDIvmEGgZaHpF9EDI3KoaCu0KK2pY8YAEZIuza2TUt07kM0p9xWR+nmoJPkIqt6
+          kybxbt15trMySxuBVnw1Dbbxr40gwxlhXiDvIpya+LLVilo6gjhoV4LAciiBErei
+          JeIULvZSGUQNt0PtxmDkGa230Cv3m/9CvGnaGEIqGLFIagQzL/KnNfczItYqPDyj
+          7ZlrFClQcVStA83HAiLPwO3Vuryzqz4wTdiUmLMSCXokVSpN9mC/QHaFnFYag63P
+          Qo4cYkHC/xunbFjUfdKJ82GGFcAfsbW234L9R8/my1O+9Blewd1ARcWBSAVtF1M9
+          o66wFAp14zfAOPtkg3WRzLpdp2JcIl66FDOyrmXtrXn9wYKGMKhzlLKvYvnwaDgJ
+          N8KEzaYm8xtfl/80rcPlYXXSh4NpvoB480iExVqcELA=
+          -----END CERTIFICATE-----
+          CERT
+          tar -czf - dist "$JOTCLIPART_BUILD_ROOT" reports/jotclipart-native-ci |
+            openssl cms -encrypt -binary -stream -outform DER -aes-256-cbc -out "$RUNNER_TEMP/jotclipart-package.cms" "$RUNNER_TEMP/receiver.crt"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jotclipart-native-package-3ce1123ab760
+          path: ${{ runner.temp }}/jotclipart-package.cms
+          retention-days: 1
+          compression-level: 0
+          if-no-files-found: error
