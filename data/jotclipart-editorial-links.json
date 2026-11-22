@@ -2577,6 +2577,20 @@
         "in": "Foxes and deer sit alongside squirrels, hedgehogs, owls and riverbank animals.",
         "href": "/clipart/hedgehog/"
       }
+    ],
+    "/clipart/argentina-flag/": [
+      {
+        "text": "a pair of table tennis players",
+        "href": "/clipart/table-tennis/",
+        "in": "including a bicycle repair scene, a pair of table tennis players and a group gathered around a small solar panel."
+      },
+      {
+        "text": "golden Sun of May",
+        "href": "https://www.argentina.gob.ar/pais/simbolos/bandera",
+        "source": "Government of Argentina",
+        "verifiedAt": "2026-11-22",
+        "in": "Sky-blue bands frame the golden Sun of May, whether the Argentina flag hangs from a rail or ripples above a freestanding pole."
+      }
     ]
   }
 }
