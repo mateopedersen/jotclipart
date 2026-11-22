@@ -1,7 +1,7 @@
 // Stages metadata only. The source issuer and atomic publisher remain separate.
 import { facetStore, lookupTopic, bytesOf } from '../catalog-collections/store.mjs';
 import { membership, validateTopicRecord } from '../catalog-collections/writer.mjs';
-import { mapGet, canonical, digest } from '../catalog-search/store.mjs';
+import { mapGet, canonical, digest, SEARCH_OBJECT_MAX_BYTES } from '../catalog-search/store.mjs';
 import { readUi, readUiEntries } from '../catalog-search/ui-metadata.mjs';
 import { lookupHashedRecord } from '../catalog-snapshot/hashed-record-directory.mjs';
 import { updateHashedRecord } from '../catalog-snapshot/hashed-record-directory-update.mjs';
@@ -12,6 +12,26 @@ import { reconcilePages, projectionDigest } from './pages.mjs';
 import { deriveViews, replaceSiteEntries, fieldKey, alignCategoryOrder } from './views.mjs';
 const same = (a, b) => JSON.stringify(canonical(a)) === JSON.stringify(canonical(b)),
   hex = /^[a-f0-9]{64}$/;
+// Each page list can fit independently while their combined directory exceeds
+// the existing search object budget. Repack the same rows in that case.
+export async function reconcileSearchUiPages(store, ui, groups, record) {
+  const reconcile = async (repack) => {
+    const parts = {},
+      metrics = {};
+    for (const [name, type, desired] of groups) {
+      const result = await reconcilePages(store, repack ? [] : ui[name], type, desired, {
+        stable: ui.type === 'source-bound-search-ui-v2',
+        key: (value) => value.id ?? value.slug,
+      });
+      parts[name] = result.pages;
+      metrics[name] = result.metrics;
+    }
+    return { boundUi: { ...record, ...parts }, metrics };
+  };
+  const preserved = await reconcile(false);
+  return bytesOf(preserved.boundUi).length <= SEARCH_OBJECT_MAX_BYTES ? preserved : reconcile(true);
+}
+
 export async function refreshDiscoveryViews({
   bucket,
   parentContext,
@@ -306,26 +326,17 @@ export async function refreshDiscoveryViews({
       studioFeatured,
     });
   const dataRoot = await searchStore.put(bare),
-    parts = {};
-  for (const [name, type, desired] of [
-    ['site', 'public-site-search-entries', desiredSite],
-    ['categories', 'studio-category-entries', view.ui.categories],
-    ['mono', 'monochrome-topic-entries', view.ui.monochrome.topics],
-  ]) {
-    const r = await reconcilePages(searchStore, ui[name], type, desired, {
-      stable: ui.type === 'source-bound-search-ui-v2',
-      key: (v) => v.id ?? v.slug,
-    });
-    parts[name] = r.pages;
-    metrics.ui[name] = r.metrics;
-  }
-  const boundUi = {
+    groups = [
+      ['site', 'public-site-search-entries', desiredSite],
+      ['categories', 'studio-category-entries', view.ui.categories],
+      ['mono', 'monochrome-topic-entries', view.ui.monochrome.topics],
+    ],
+    record = {
       schema: 1,
       type: 'source-bound-search-ui-v2',
       dataRoot,
       sourceSha256: await projectionDigest(desiredUi),
       sourceReceiptSHA256,
-      ...parts,
       monoGlobal: {
         total: view.ui.monochrome.total,
         collections: view.ui.monochrome.collections,
@@ -333,7 +344,9 @@ export async function refreshDiscoveryViews({
       },
       featuredIds: view.ui.featuredIds,
     },
+    { boundUi, metrics: uiMetrics } = await reconcileSearchUiPages(searchStore, ui, groups, record),
     uiDescriptor = await searchStore.put(boundUi),
     search = await searchStore.put({ ...bare, ui: uiDescriptor });
+  metrics.ui = uiMetrics;
   return { collections, search, sourceReceiptSHA256, metrics, publicationVerified: false };
 }

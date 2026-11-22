@@ -79,6 +79,50 @@ test('inserting into a fully fragmented directory repacks all rows within the ex
   );
 });
 
+test('compacts search UI pages when their combined directory outruns the object limit', async () => {
+  const { reconcileSearchUiPages } = await import('../server/catalog-projections/refresh.mjs');
+  const store = m.search.makeStore(memory(), { writable: true }),
+    names = ['site', 'categories', 'mono'],
+    fragmented = { type: 'source-bound-search-ui-v2' },
+    groups = [];
+  for (const name of names) {
+    const type = name + '-fixture',
+      rows = Array.from({ length: 128 }, (_, index) => ({
+        id: name + '-' + index,
+        text: 'exact visible metadata',
+      }));
+    groups.push([name, type, rows]);
+    fragmented[name] = [];
+    for (const row of rows)
+      fragmented[name].push({
+        count: 1,
+        ...(await store.put({ type: type + '-stable-v2', entries: [row] })),
+      });
+  }
+  const record = {
+    schema: 1,
+    type: 'source-bound-search-ui-v2',
+    sourceSha256: 'a'.repeat(64),
+    sourceReceiptSHA256: 'b'.repeat(64),
+    monoGlobal: { total: 128, collections: [], kinds: [] },
+    featuredIds: [],
+  };
+  await assert.rejects(
+    store.put({ ...record, ...fragmented }),
+    /Immutable object size budget exceeded/,
+  );
+  const compact = await reconcileSearchUiPages(store, fragmented, groups, record),
+    descriptor = await store.put(compact.boundUi),
+    reread = await store.get(descriptor);
+  assert.ok(descriptor.bytes < m.search.SEARCH_OBJECT_MAX_BYTES);
+  assert.equal(reread.sourceSha256, record.sourceSha256);
+  assert.equal(reread.sourceReceiptSHA256, record.sourceReceiptSHA256);
+  for (const [name, type, expected] of groups) {
+    assert.equal(compact.metrics[name].stagedPages, 1);
+    same((await m.pages.readPages(store, reread[name], type, { stable: true })).entries, expected);
+  }
+});
+
 test('changed-topic discovery refresh updates new, edited, moved and withdrawn source records', async () => {
   let f = await fixture();
   const sequence = [
