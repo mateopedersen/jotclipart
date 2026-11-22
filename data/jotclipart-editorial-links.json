@@ -99,6 +99,20 @@
         "href": "/clipart/autumn/"
       }
     ],
+    "/clipart/afghanistan-flag/": [
+      {
+        "text": "flat sewn flag",
+        "href": "/art/afghanistan-republic-era-flag-as-a-flat-sewn-panel/",
+        "in": "illustrations include a flat sewn flag, a hanging banner and a fold of woven cloth."
+      },
+      {
+        "text": "2004 constitution",
+        "href": "https://cdn.nestjs.wipolex.wji.prd.web1.wipo.int/wipolex/en/legislation/details/10739",
+        "source": "WIPO Lex, Constitution of Afghanistan (2004), Article 19",
+        "verifiedAt": "2026-11-22",
+        "in": "The design follows the flag described in the 2004 constitution and is presented in historical context."
+      }
+    ],
     "/clipart/ai/": [
       {
         "text": "robots",
@@ -115,11 +129,53 @@
         "verifiedAt": "2026-11-17"
       }
     ],
+    "/clipart/albania-flag/": [
+      {
+        "text": "table tennis",
+        "href": "/clipart/table-tennis/",
+        "in": "illustrations, from a stone doorway to a textile table and a game of table tennis."
+      },
+      {
+        "text": "black eagle with two heads",
+        "href": "https://www.wipo.int/wipolex/en/legislation/details/21584",
+        "source": "Constitution of Albania, Article 14",
+        "verifiedAt": "2026-11-22",
+        "in": "Albania flag clipart depicts a black eagle with two heads on red cloth."
+      }
+    ],
+    "/clipart/algeria-flag/": [
+      {
+        "text": "arched doorway",
+        "href": "/art/algeria-flag-two-people-beside-an-arched-doorway/",
+        "in": "illustrations, including an arched doorway, a sewing station and a pair of musicians at a worktable."
+      },
+      {
+        "text": "red crescent and star across green and white panels",
+        "href": "https://premier-ministre.gov.dz/fr/document/decret-de-promulgation-de-la-revision-constitutionnelle-2020-2",
+        "source": "Official Gazette of the Republic of Algeria, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Algeria flag clipart shows the red crescent and star across green and white panels."
+      }
+    ],
     "/clipart/alphabet-google/": [
       {
         "text": "speaker",
         "in": "A Nest speaker, a reading accessibility scene and a Google Sheets chart concept offer three distinct ways to show how a tool might be used.",
         "href": "/clipart/speaker/"
+      }
+    ],
+    "/clipart/angola-flag/": [
+      {
+        "text": "guitar",
+        "href": "/clipart/guitar/",
+        "in": "illustrations include scenes with a guitar, a bicycle workshop and a wooden planter."
+      },
+      {
+        "text": "gold gear segment, machete and star",
+        "href": "https://governo.gov.ao/angola/simbolos-nacionais",
+        "source": "Government of Angola — national flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Angola flag clipart shows red above black, with a gold gear segment, machete and star."
       }
     ],
     "/clipart/angry-birds-3/": [
@@ -134,6 +190,25 @@
         "text": "Claude",
         "in": "A set of agent evaluation cards and a Claude constitution handbook give two abstract topics recognizable shapes.",
         "href": "/clipart/claude/"
+      }
+    ],
+    "/clipart/antigua-and-barbuda-flag/": [
+      {
+        "text": "table tennis game",
+        "href": "/clipart/table-tennis/",
+        "in": "illustrations include a pink doorway, a bicycle workshop and a table tennis game."
+      },
+      {
+        "text": "pink doorway",
+        "href": "/art/antigua-and-barbuda-flag-pink-door-and-potted-plants/",
+        "in": "illustrations include a pink doorway, a bicycle workshop and a table tennis game."
+      },
+      {
+        "text": "golden rising sun over blue and white",
+        "href": "https://gis.gov.ag/?page_id=122",
+        "source": "Antigua and Barbuda Government Information Service, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Antigua and Barbuda flag clipart shows a golden rising sun over blue and white, framed by red sides."
       }
     ],
     "/clipart/app/": [
@@ -185,6 +260,44 @@
         "text": "basketball",
         "in": "Folded paper and an arched window turn this basketball bracket clipart into more than a plain tournament chart.",
         "href": "/clipart/basketball/"
+      }
+    ],
+    "/clipart/benin-flag/": [
+      {
+        "text": "wooden loom",
+        "href": "/art/benin-flag-patterned-textile-at-a-loom/",
+        "in": "illustrations include a wooden loom, a small doorway and two table tennis players."
+      },
+      {
+        "text": "table tennis players",
+        "href": "/clipart/table-tennis/",
+        "in": "illustrations include a wooden loom, a small doorway and two table tennis players."
+      },
+      {
+        "text": "green band along the hoist, with yellow above red",
+        "href": "https://sgg.gouv.bj/doc/decret-2009-548/download",
+        "source": "Government of Benin constitutional flag description",
+        "verifiedAt": "2026-11-22",
+        "in": "Benin flag clipart shows a green band along the hoist, with yellow above red on the other side."
+      }
+    ],
+    "/clipart/bhutan-flag/": [
+      {
+        "text": "white dragon",
+        "href": "/clipart/dragon/",
+        "in": "Bhutan flag clipart shows a white dragon across yellow and orange fields."
+      },
+      {
+        "text": "crossed desk stands",
+        "href": "/art/bhutan-flag-crossed-desk-flags/",
+        "in": "The flag is pictured on folded cloth, a stitched patch and crossed desk stands."
+      },
+      {
+        "text": "yellow and orange fields",
+        "href": "https://cms.parliament.gov.bt/uploads/Constitution_Dzongkha_n_english_1a63683445.pdf",
+        "source": "Parliament of Bhutan, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Bhutan flag clipart shows a white dragon across yellow and orange fields."
       }
     ],
     "/clipart/blessings/": [
@@ -261,11 +374,53 @@
         "verifiedAt": "2026-11-18"
       }
     ],
+    "/clipart/chad-flag/": [
+      {
+        "text": "table tennis game",
+        "href": "/clipart/table-tennis/",
+        "in": "illustrations include a tall wooden door, a bicycle repair and a table tennis game."
+      },
+      {
+        "text": "three upright bands of dark blue, gold and red",
+        "href": "https://mesrsfp.gouv.td/wp-content/uploads/2026/04/Guide-pratique-de-redaction-administrative-et-de-de-Charte-graphique-de-lEtat-du-Tchad_230823_190003.pdf",
+        "source": "Government of Chad, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Chad flag clipart shows three upright bands of dark blue, gold and red."
+      }
+    ],
     "/clipart/chicken/": [
       {
         "text": "Nests",
         "in": "Nests, flowers and family groups offer larger compositions alongside individual hens.",
         "href": "/clipart/nest/"
+      }
+    ],
+    "/clipart/chile-flag/": [
+      {
+        "text": "guitar player",
+        "href": "/clipart/guitar/",
+        "in": "illustrations, including a blue doorway, a guitar player and a bicycle workshop."
+      },
+      {
+        "text": "single white star in a blue canton",
+        "href": "https://www.bcn.cl/leychile/navegar?idNorma=23382",
+        "source": "Chile’s national flag law, Article 1",
+        "verifiedAt": "2026-11-22",
+        "in": "Chile flag clipart shows the single white star in a blue canton, beside white above and red below."
+      }
+    ],
+    "/clipart/china-flag/": [
+      {
+        "text": "pair of crossed desk flags",
+        "href": "/art/china-flag-crossed-desk-flags/",
+        "in": "illustrations include a folded cloth flag, a pair of crossed desk flags and drawings with a bicycle or a workbench."
+      },
+      {
+        "text": "one large yellow star and four smaller stars",
+        "href": "https://en.moj.gov.cn/2021-06/22/c_634901.htm",
+        "source": "Constitution of the People’s Republic of China, Article 141",
+        "verifiedAt": "2026-11-22",
+        "in": "China flag clipart depicts the red flag of the People's Republic of China with one large yellow star and four smaller stars, on cloth, desk stands and a stitched patch."
       }
     ],
     "/clipart/clownfish/": [
@@ -282,6 +437,39 @@
         "href": "https://www.coca-colacompany.com/about-us/history/11-facts-about-the-coca-cola-contour-bottle",
         "source": "The Coca-Cola Company official contour bottle history",
         "verifiedAt": "2026-11-18"
+      }
+    ],
+    "/clipart/colombia-flag/": [
+      {
+        "text": "crossed miniature flags",
+        "href": "/art/colombia-flag-crossed-miniature-flags/",
+        "in": "illustrations include crossed miniature flags and a stitched patch."
+      },
+      {
+        "text": "bicycle repair",
+        "href": "/art/colombia-flag-bicycle-repair/",
+        "in": "Other views place the tricolor beside musicians, a bicycle repair and a tabletop display."
+      },
+      {
+        "text": "wide yellow band above blue and red",
+        "href": "https://cancilleria.gov.co/politica-exterior/simbolos-patrios-y-otros-datos-de-interes",
+        "source": "Colombia Ministry of Foreign Affairs flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Colombia flag clipart shows a wide yellow band above blue and red in cloth studies, pole displays and illustrated community scenes."
+      }
+    ],
+    "/clipart/comoros-flag/": [
+      {
+        "text": "arched doorway",
+        "href": "/art/comoros-flag-two-people-at-an-arched-door/",
+        "in": "illustrations, including an arched doorway, a bicycle workshop and a planting scene."
+      },
+      {
+        "text": "white crescent and four stars on green",
+        "href": "https://www.wipo.int/wipolex/fr/legislation/details/19949",
+        "source": "Constitution of the Union of the Comoros via WIPO Lex, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Comoros flag clipart shows a white crescent and four stars on green alongside yellow, white, red and blue bands."
       }
     ],
     "/clipart/cornucopia/": [
@@ -396,6 +584,105 @@
         "href": "https://science.nasa.gov/earth/facts/",
         "source": "NASA Science planetary reference",
         "verifiedAt": "2026-11-18"
+      }
+    ],
+    "/clipart/ecuador-flag/": [
+      {
+        "text": "bicycle workshop",
+        "href": "/art/ecuador-flag-two-people-working-on-a-bicycle/",
+        "in": "illustrations include a stitched patch, crossed desk flags and scenes with a wooden doorway and a bicycle workshop."
+      },
+      {
+        "text": "national coat of arms and its condor in the center",
+        "href": "https://www.asambleanacional.gob.ec/es/contenido/saludo_la_bandera",
+        "source": "Ecuador National Assembly, flag design",
+        "verifiedAt": "2026-11-22",
+        "in": "Ecuador flag clipart shows the broad yellow band above blue and red, with the national coat of arms and its condor in the center."
+      }
+    ],
+    "/clipart/egypt-flag/": [
+      {
+        "text": "table tennis game",
+        "href": "/clipart/table-tennis/",
+        "in": "illustrations, from a tall arched door to a woodworking bench and a table tennis game."
+      },
+      {
+        "text": "gold Eagle of Saladin",
+        "href": "https://sis.gov.eg/en/egypt/basic-information/",
+        "source": "Egyptian State Information Service, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Egypt flag clipart shows the gold Eagle of Saladin on a red, white and black flag."
+      }
+    ],
+    "/clipart/el-salvador-flag/": [
+      {
+        "text": "guitarist",
+        "href": "/clipart/guitar/",
+        "in": "illustrations include a blue doorway, a guitarist at a workshop table and a planting scene."
+      },
+      {
+        "text": "blue doorway",
+        "href": "/art/el-salvador-flag-two-people-beside-a-blue-door/",
+        "in": "illustrations include a blue doorway, a guitarist at a workshop table and a planting scene."
+      },
+      {
+        "text": "blue bands around a white center with the national coat of arms",
+        "href": "https://www.asamblea.gob.sv/sites/default/files/documents/decretos/0718B3F4-7075-4296-B6ED-2530A9B36F52.pdf",
+        "source": "Legislative Assembly of El Salvador, national symbols law",
+        "verifiedAt": "2026-11-22",
+        "in": "El Salvador flag clipart shows blue bands around a white center with the national coat of arms."
+      }
+    ],
+    "/clipart/equatorial-guinea-flag/": [
+      {
+        "text": "pair of crossed flags",
+        "href": "/art/equatorial-guinea-flag-crossed-flags-on-a-desk-stand/",
+        "in": "illustrations, from a stitched patch and a pair of crossed flags to a workshop and a garden planter."
+      },
+      {
+        "text": "coat of arms centered on the white band",
+        "href": "https://www.guineaecuatorialpress.com/gobierno",
+        "source": "Government of Equatorial Guinea, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Equatorial Guinea flag clipart shows the blue triangle beside green, white and red bands, with the coat of arms centered on the white band."
+      }
+    ],
+    "/clipart/eritrea-flag/": [
+      {
+        "text": "sewing station",
+        "href": "/art/eritrea-flag-sewing-table-with-a-draped-flag/",
+        "in": "illustrations with a sewing station, a bicycle repair and a group beside an arched doorway."
+      },
+      {
+        "text": "bicycle repair",
+        "href": "/art/eritrea-flag-bicycle-wheel-inspection/",
+        "in": "illustrations with a sewing station, a bicycle repair and a group beside an arched doorway."
+      },
+      {
+        "text": "golden olive wreath on a red triangle",
+        "href": "https://home.eritreaembassy.ch/discover-eritrea/fact-and-figures",
+        "source": "Embassy of Eritrea, national flag and olive wreath",
+        "verifiedAt": "2026-11-22",
+        "in": "Eritrea flag clipart shows a golden olive wreath on a red triangle, framed by green above and blue below."
+      }
+    ],
+    "/clipart/estonia-flag/": [
+      {
+        "text": "hand loom",
+        "href": "/art/estonia-flag-two-people-at-a-hand-loom/",
+        "in": "Estonia flag clipart shows blue, black and white bands on flat and folded cloth, next to everyday settings from a hand loom to a bicycle workshop."
+      },
+      {
+        "text": "red doorway",
+        "href": "/art/estonia-flag-red-wooden-door/",
+        "in": "illustrations include a flat sewn panel, a gold edged banner and a flag beside a red doorway."
+      },
+      {
+        "text": "blue, black and white bands",
+        "href": "https://www.riigikantselei.ee/en/el140",
+        "source": "Estonian Government Office flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Estonia flag clipart shows blue, black and white bands on flat and folded cloth, next to everyday settings from a hand loom to a bicycle workshop."
       }
     ],
     "/clipart/fall/": [
@@ -766,11 +1053,101 @@
         "href": "/clipart/bird/"
       }
     ],
+    "/clipart/palau-flag/": [
+      {
+        "text": "kayak briefing",
+        "href": "/clipart/kayaking/",
+        "in": "illustrations include a flag raising with students and a kayak briefing, plus grayscale scenes with a lighthouse and table tennis players."
+      },
+      {
+        "text": "table tennis players",
+        "href": "/clipart/table-tennis/",
+        "in": "illustrations include a flag raising with students and a kayak briefing, plus grayscale scenes with a lighthouse and table tennis players."
+      },
+      {
+        "text": "yellow disk on blue cloth",
+        "href": "https://www.cbd.int/doc/meetings/chm/chmws-2016-01/other/chmws-2016-01-item-04-pw-en.pdf",
+        "source": "Palau national flag in the presentation hosted by the Convention on Biological Diversity",
+        "verifiedAt": "2026-11-22",
+        "in": "Palau flag clipart features a yellow disk on blue cloth in flat panels, on poles, and alongside boats, workshops and island landscapes."
+      }
+    ],
+    "/clipart/palestine-flag/": [
+      {
+        "text": "flat flag",
+        "href": "/art/palestine-flag-as-a-flat-cloth-panel/",
+        "in": "Compare the flat flag with the pole and hanging cloth, or browse the grayscale drawings for a different treatment of the same flag."
+      },
+      {
+        "text": "red triangle at the hoist beside black, white and green stripes",
+        "href": "https://unfccc.int/sites/default/files/NDC/2022-06/Updated%20NDC_%20State%20of%20Palestine_2021_FINAL.pdf",
+        "source": "State of Palestine, flag description in its submission to the UNFCCC",
+        "verifiedAt": "2026-11-22",
+        "in": "Palestine flag clipart shows the red triangle at the hoist beside black, white and green stripes in cloth studies and illustrated community settings."
+      }
+    ],
+    "/clipart/panama-flag/": [
+      {
+        "text": "passenger train scene",
+        "href": "/clipart/train/",
+        "in": "illustrations include a tabletop flag, a canal overlook and a passenger train scene."
+      },
+      {
+        "text": "canal overlook",
+        "href": "/art/panama-flag-over-a-canal-lookout/",
+        "in": "illustrations include a tabletop flag, a canal overlook and a passenger train scene."
+      },
+      {
+        "text": "quartered red, white and blue design with its two stars",
+        "href": "https://constitucion.te.gob.pa/constitucion-vigente/",
+        "source": "Constitution of Panama, national symbols",
+        "verifiedAt": "2026-11-22",
+        "in": "Panama flag clipart shows the quartered red, white and blue design with its two stars in cloth studies, waterfront scenes and community illustrations."
+      }
+    ],
     "/clipart/panda/": [
       {
         "text": "bears",
         "in": "Standing and seated black and white bears offer different shapes for a small icon or a larger scene.",
         "href": "/clipart/bear/"
+      }
+    ],
+    "/clipart/papua-new-guinea-flag/": [
+      {
+        "text": "canoe workshop",
+        "href": "/clipart/canoe/",
+        "in": "illustrations range from a flat cloth and small desk flag to a boat landing, a canoe workshop and grayscale scenes with a lighthouse or a map lesson."
+      },
+      {
+        "text": "lighthouse",
+        "href": "/clipart/lighthouse/",
+        "in": "illustrations range from a flat cloth and small desk flag to a boat landing, a canoe workshop and grayscale scenes with a lighthouse or a map lesson."
+      },
+      {
+        "text": "Southern Cross with a yellow bird of paradise",
+        "href": "https://www.ombudsman.gov.pg/legislation/png-constitution/",
+        "source": "Papua New Guinea Constitution, national symbols",
+        "verifiedAt": "2026-11-22",
+        "in": "Papua New Guinea flag clipart pairs the Southern Cross with a yellow bird of paradise across a diagonal black and red field."
+      }
+    ],
+    "/clipart/paraguay-flag/": [
+      {
+        "text": "pair of desk flags that shows both sides",
+        "href": "/art/paraguay-flag-two-flags-showing-different-sides/",
+        "in": "illustrations, including a pair of desk flags that shows both sides and scenes with lacework, pottery and rowing."
+      },
+      {
+        "text": "rowing",
+        "href": "/clipart/rowing/",
+        "in": "illustrations, including a pair of desk flags that shows both sides and scenes with lacework, pottery and rowing."
+      },
+      {
+        "text": "distinct emblems on the two sides",
+        "href": "https://informacionpublica.paraguay.gov.py/public/5475046-59749pdf-59749.pdf",
+        "source": "Presidential decree of Paraguay on the national flag, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Paraguay flag clipart shows red, white and blue bands with distinct emblems on the two sides."
       }
     ],
     "/clipart/paris/": [
@@ -789,6 +1166,44 @@
         "href": "/clipart/bird/"
       }
     ],
+    "/clipart/peru-flag/": [
+      {
+        "text": "fishing boats",
+        "href": "/clipart/fishing-boat/",
+        "in": "illustrations include a weaving bench, fishing boats and a football team."
+      },
+      {
+        "text": "football team",
+        "href": "/clipart/football/",
+        "in": "illustrations include a weaving bench, fishing boats and a football team."
+      },
+      {
+        "text": "plain red, white and red national flag",
+        "href": "https://www.leyes.congreso.gob.pe/Documentos/Leyes/08916.pdf",
+        "source": "Congress of Peru, law distinguishing flag designs",
+        "verifiedAt": "2026-11-22",
+        "in": "Peru flag clipart shows the plain red, white and red national flag, with vertical bands and an unmarked white center."
+      }
+    ],
+    "/clipart/philippines-flag/": [
+      {
+        "text": "coastal lighthouse",
+        "href": "/clipart/lighthouse/",
+        "in": "illustrations, including a decorated jeepney, a star lantern and a coastal lighthouse."
+      },
+      {
+        "text": "decorated jeepney",
+        "href": "/art/philippines-flag-passengers-beside-a-decorated-jeepney/",
+        "in": "illustrations, including a decorated jeepney, a star lantern and a coastal lighthouse."
+      },
+      {
+        "text": "sun and three stars in a white triangle",
+        "href": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/4626",
+        "source": "Supreme Court E-Library of the Philippines, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Philippines flag clipart shows the sun and three stars in a white triangle beside blue and red."
+      }
+    ],
     "/clipart/pie/": [
       {
         "text": "apple",
@@ -801,6 +1216,20 @@
         "text": "cheese",
         "in": "A pepperoni slice with melted cheese and a whole pizza with a missing wedge show different views in this pizza clipart.",
         "href": "/clipart/cheese/"
+      }
+    ],
+    "/clipart/poland-flag/": [
+      {
+        "text": "river rowing practice",
+        "href": "/clipart/rowing/",
+        "in": "Poland flag clipart pairs a white upper band and red lower band with scenes at an orchard, a pottery workshop and a river rowing practice."
+      },
+      {
+        "text": "white upper band and red lower band",
+        "href": "https://www.gov.pl/web/diplomacy/polands-day-of-the-flag",
+        "source": "Poland Ministry of Foreign Affairs flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Poland flag clipart pairs a white upper band and red lower band with scenes at an orchard, a pottery workshop and a river rowing practice."
       }
     ],
     "/clipart/polar-bear/": [
@@ -817,6 +1246,25 @@
         "href": "https://newsroom.porsche.com/en/2019/history/porsche-911-magazine-episode-13-sports-car-dna-356-gmuend-19078.html",
         "source": "Porsche’s historical archive describes the 356 coupés and shows an original body.",
         "verifiedAt": "2026-11-17"
+      }
+    ],
+    "/clipart/portugal-flag/": [
+      {
+        "text": "coastal lighthouse",
+        "href": "/clipart/lighthouse/",
+        "in": "illustrations include a yellow tram, a coastal lighthouse and a wooden boat under construction."
+      },
+      {
+        "text": "wooden boat under construction",
+        "href": "/art/portugal-flag-wooden-boat-workshop/",
+        "in": "illustrations include a yellow tram, a coastal lighthouse and a wooden boat under construction."
+      },
+      {
+        "text": "shield and gold armillary sphere",
+        "href": "https://www.presidencia.pt/en-en/president-of-the-republic/the-presidency/national-symbols/national-flag/",
+        "source": "Presidency of the Portuguese Republic flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Portugal flag clipart shows the green and red flag with its shield and gold armillary sphere, from a small desk flag to a banner above a tiled courtyard."
       }
     ],
     "/clipart/pumpkin/": [
@@ -861,6 +1309,20 @@
         "href": "/clipart/apple/"
       }
     ],
+    "/clipart/republic-of-the-congo-flag/": [
+      {
+        "text": "wooden canoe",
+        "href": "/clipart/canoe/",
+        "in": "illustrations include a clay pot workshop, a wooden canoe and a market display."
+      },
+      {
+        "text": "yellow diagonal between the green and red parts",
+        "href": "https://www.sgg.cg/JO/2015/congo-jo-2015-08-sp.pdf",
+        "source": "Constitution of the Republic of the Congo, Article 3",
+        "verifiedAt": "2026-11-22",
+        "in": "Republic of the Congo flag clipart shows a yellow diagonal between the green and red parts of the Congo Republic flag."
+      }
+    ],
     "/clipart/robin/": [
       {
         "text": "bird",
@@ -873,11 +1335,77 @@
         "href": "/clipart/nest/"
       }
     ],
+    "/clipart/romania-flag/": [
+      {
+        "text": "model locomotive",
+        "href": "/clipart/train/",
+        "in": "illustrations include a string ensemble, a beekeeper at an open hive and a model locomotive."
+      },
+      {
+        "text": "printing press",
+        "href": "/art/romania-flag-printing-press-in-grayscale/",
+        "in": "The three upright bands remain distinguishable in grayscale drawings of a printing press and a wooden chest."
+      },
+      {
+        "text": "vertical tricolor of blue, yellow and red",
+        "href": "https://www.cdep.ro/ords/pls/dic/site.page?id=371&idl=2&par1=1",
+        "source": "Chamber of Deputies of Romania, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Romania flag clipart shows a vertical tricolor of blue, yellow and red."
+      }
+    ],
+    "/clipart/russia-flag/": [
+      {
+        "text": "two cello players",
+        "href": "/art/russia-flag-two-seated-cello-players/",
+        "in": "illustrations include nesting dolls, blue and white pottery and two cello players."
+      },
+      {
+        "text": "three horizontal bands of white, blue and red",
+        "href": "https://minjust.gov.ru/ru/documents/8048/",
+        "source": "Ministry of Justice of the Russian Federation, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Russia flag clipart shows three horizontal bands of white, blue and red, on draped cloth, a desk stand and flags beside illustrated craft scenes."
+      }
+    ],
+    "/clipart/rwanda-flag/": [
+      {
+        "text": "two chess players",
+        "href": "/art/rwanda-flag-two-people-playing-chess/",
+        "in": "illustrations, including a group looking at a leaf, two chess players and a beekeeper holding a frame."
+      },
+      {
+        "text": "golden sun on a wide blue band",
+        "href": "https://www.gov.rw/about",
+        "source": "Government of Rwanda, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Rwanda flag clipart shows a golden sun on a wide blue band, above yellow and green."
+      }
+    ],
     "/clipart/sailboat/": [
       {
         "text": "yachts",
         "in": "Dinghies and larger yachts appear with visible sails, spars and rigging; fictional or stylized scenes are kept clearly illustrative.",
         "href": "/clipart/yacht/"
+      }
+    ],
+    "/clipart/saint-kitts-and-nevis-flag/": [
+      {
+        "text": "cricket player",
+        "href": "/art/saint-kitts-and-nevis-flag-cricket-player-by-the-stumps/",
+        "in": "illustrations, including a desk flag, a cricket player and musicians with guitars."
+      },
+      {
+        "text": "guitars",
+        "href": "/clipart/guitar/",
+        "in": "illustrations, including a desk flag, a cricket player and musicians with guitars."
+      },
+      {
+        "text": "two white stars on a black diagonal edged in yellow",
+        "href": "https://www.mofa.gov.kn/national-flag-of-the-federation-of-st-kitts-and-nevis/",
+        "source": "Ministry of Foreign Affairs of Saint Kitts and Nevis, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Saint Kitts and Nevis flag clipart shows two white stars on a black diagonal edged in yellow, between green and red fields."
       }
     ],
     "/clipart/saint-laurent/": [
@@ -887,11 +1415,115 @@
         "href": "/clipart/jeans/"
       }
     ],
+    "/clipart/saint-lucia-flag/": [
+      {
+        "text": "netball game",
+        "href": "/clipart/netball/",
+        "in": "illustrations, including a cricket player, a netball game and a small model boat."
+      },
+      {
+        "text": "cricket player",
+        "href": "/art/saint-lucia-flag-cricket-player-beside-stumps/",
+        "in": "illustrations, including a cricket player, a netball game and a small model boat."
+      },
+      {
+        "text": "yellow, black and white triangles on a blue field",
+        "href": "https://archive.stlucia.gov.lc/saint_lucia/the_flag_of_saint_lucia.htm",
+        "source": "Government of Saint Lucia, flag design",
+        "verifiedAt": "2026-11-22",
+        "in": "Saint Lucia flag clipart shows yellow, black and white triangles on a blue field."
+      }
+    ],
+    "/clipart/saint-vincent-and-the-grenadines-flag/": [
+      {
+        "text": "cricket player",
+        "href": "/art/saint-vincent-and-the-grenadines-flag-cricket-player-beside-stumps/",
+        "in": "illustrations with a wooden boat frame, a cricket player and performers with steel pans."
+      },
+      {
+        "text": "wooden boat frame",
+        "href": "/art/saint-vincent-and-the-grenadines-flag-building-a-wooden-boat-frame/",
+        "in": "illustrations with a wooden boat frame, a cricket player and performers with steel pans."
+      },
+      {
+        "text": "three green diamonds in a V on a gold band",
+        "href": "https://www.gov.vc/images/RDVRPPublications/operations_manual_sept_2016.pdf",
+        "source": "Government of Saint Vincent and the Grenadines, official flag depiction",
+        "verifiedAt": "2026-11-22",
+        "in": "Saint Vincent and the Grenadines flag clipart shows three green diamonds in a V on a gold band between blue and green."
+      }
+    ],
+    "/clipart/samoa-flag/": [
+      {
+        "text": "canoe",
+        "href": "/clipart/canoe/",
+        "in": "The illustrations range from a small desk flag to scenes with a canoe and a guitar."
+      },
+      {
+        "text": "guitar",
+        "href": "/clipart/guitar/",
+        "in": "The illustrations range from a small desk flag to scenes with a canoe and a guitar."
+      },
+      {
+        "text": "white Southern Cross stars in a blue canton",
+        "href": "https://www.mfat.gov.ws/wp-content/uploads/2013/10/Flag-of-Samoa.pdf",
+        "source": "Ministry of Foreign Affairs and Trade of Samoa, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Samoa flag clipart shows the white Southern Cross stars in a blue canton on red."
+      }
+    ],
+    "/clipart/sao-tome-and-principe-flag/": [
+      {
+        "text": "painted model boat",
+        "href": "/art/sao-tome-and-principe-flag-small-model-boat-at-a-workshop/",
+        "in": "illustrations include desk flags, baskets of cacao and a painted model boat."
+      },
+      {
+        "text": "two black stars on a yellow band",
+        "href": "https://www.wipo.int/wipolex/en/text/498095",
+        "source": "Constitution of São Tomé and Príncipe via WIPO Lex, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "São Tomé and Príncipe flag clipart shows two black stars on a yellow band, green outer bands and a red triangle at the hoist."
+      }
+    ],
+    "/clipart/saudi-arabia-flag/": [
+      {
+        "text": "model boat",
+        "href": "/art/saudi-arabia-flag-model-boat-in-grayscale/",
+        "in": "illustrations include desk flags and scenes with a coffee pot, a model boat and a telescope."
+      },
+      {
+        "text": "white Arabic calligraphy and a white sword",
+        "href": "https://spa.gov.sa/en/N2063157",
+        "source": "Saudi Press Agency national flag explanation",
+        "verifiedAt": "2026-11-22",
+        "in": "Saudi Arabia flag clipart shows a green field, white Arabic calligraphy and a white sword, from a simple cloth flag to a banner beside a pottery bench."
+      }
+    ],
     "/clipart/school/": [
       {
         "text": "Books",
         "in": "Books and other learning supplies give you simpler images to use beside labels.",
         "href": "/clipart/book/"
+      }
+    ],
+    "/clipart/senegal-flag/": [
+      {
+        "text": "football drill",
+        "href": "/clipart/football/",
+        "in": "illustrations, including a boat workshop, a football drill and two hand drum players."
+      },
+      {
+        "text": "boat workshop",
+        "href": "/art/senegal-flag-carving-a-wooden-boat-frame/",
+        "in": "illustrations, including a boat workshop, a football drill and two hand drum players."
+      },
+      {
+        "text": "green, gold and red vertical bands with a green star in the middle",
+        "href": "https://forcesarmees.gouv.sn/dossiers/lois/loi-ndeg-2001-03-du-22-janvier-2001-portant-constitution-modifiee",
+        "source": "Ministry of the Armed Forces of Senegal — national flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Senegal flag clipart shows green, gold and red vertical bands with a green star in the middle."
       }
     ],
     "/clipart/september/": [
@@ -901,6 +1533,20 @@
         "href": "/clipart/harvest/"
       }
     ],
+    "/clipart/serbia-flag/": [
+      {
+        "text": "small bandstand",
+        "href": "/art/serbia-flag-musicians-in-a-bandstand/",
+        "in": "illustrations, including a pottery bench, a small bandstand and a carved doorway."
+      },
+      {
+        "text": "crowned coat of arms toward the hoist",
+        "href": "https://www.srbija.gov.rs/tekst/en/130128/national",
+        "source": "Government of Serbia, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Serbia flag clipart shows the red, blue and white state flag with the crowned coat of arms toward the hoist."
+      }
+    ],
     "/clipart/sets/": [
       {
         "text": "math",
@@ -908,11 +1554,82 @@
         "href": "/clipart/math/"
       }
     ],
+    "/clipart/seychelles-flag/": [
+      {
+        "text": "red lighthouse lantern",
+        "href": "/clipart/lighthouse/",
+        "in": "illustrations include a boat frame, a large tortoise and a red lighthouse lantern."
+      },
+      {
+        "text": "large tortoise",
+        "href": "/art/seychelles-flag-two-people-beside-a-large-tortoise/",
+        "in": "illustrations include a boat frame, a large tortoise and a red lighthouse lantern."
+      },
+      {
+        "text": "blue, yellow, red, white and green bands spreading from the lower hoist corner",
+        "href": "https://www.nationalassembly.sc/sites/default/files/2025-10/Protocol%20Manual.pdf",
+        "source": "National Assembly of Seychelles, flag design in its protocol manual",
+        "verifiedAt": "2026-11-22",
+        "in": "Seychelles flag clipart shows blue, yellow, red, white and green bands spreading from the lower hoist corner, on folded fabric, a framed display and desk flags."
+      }
+    ],
     "/clipart/sheep/": [
       {
         "text": "lamb",
         "in": "A geometric sheep gives the wool an angular look, while an outline of a sheep and lamb shows the animals together.",
         "href": "/clipart/lamb/"
+      }
+    ],
+    "/clipart/sierra-leone-flag/": [
+      {
+        "text": "grayscale lighthouse",
+        "href": "/clipart/lighthouse/",
+        "in": "The middle stripe remains light in the grayscale lighthouse and stonework scenes."
+      },
+      {
+        "text": "pair of crossed desk flags",
+        "href": "/art/sierra-leone-flag-crossed-miniature-flag-pair/",
+        "in": "Sierra Leone flag clipart shows green, white and blue horizontal stripes on folded fabric, a framed flag and a pair of crossed desk flags."
+      },
+      {
+        "text": "green, white and blue horizontal stripes",
+        "href": "https://www.wipo.int/wipolex/en/legislation/details/20542",
+        "source": "Constitution of Sierra Leone, Article 3",
+        "verifiedAt": "2026-11-22",
+        "in": "Sierra Leone flag clipart shows green, white and blue horizontal stripes on folded fabric, a framed flag and a pair of crossed desk flags."
+      }
+    ],
+    "/clipart/slovakia-flag/": [
+      {
+        "text": "red tram",
+        "href": "/art/slovakia-flag-passengers-near-a-red-tram/",
+        "in": "illustrations, including a telescope beside a dome, a red tram and paddlers with outdoor gear."
+      },
+      {
+        "text": "red shield bearing a double cross above blue hills",
+        "href": "https://www.prezident.sk/en/symbols-and-currency/",
+        "source": "Office of the President of Slovakia, flag and coat of arms",
+        "verifiedAt": "2026-11-22",
+        "in": "Slovakia flag clipart shows white, blue and red bands with a red shield bearing a double cross above blue hills."
+      }
+    ],
+    "/clipart/slovenia-flag/": [
+      {
+        "text": "steam locomotive",
+        "href": "/clipart/train/",
+        "in": "The mountain shield remains recognizable in grayscale illustrations alongside a stone bridge and steam locomotive."
+      },
+      {
+        "text": "outdoor chess table",
+        "href": "/art/slovenia-flag-outdoor-chess-table/",
+        "in": "illustrations include a wooden boat frame, a small observatory and an outdoor chess table."
+      },
+      {
+        "text": "shield of Mount Triglav and three stars",
+        "href": "https://www.gov.si/en/topics/national-symbols/",
+        "source": "Government of Slovenia, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Slovenia flag clipart shows white, blue and red bands with the shield of Mount Triglav and three stars."
       }
     ],
     "/clipart/smart-glasses/": [
@@ -941,6 +1658,72 @@
         "text": "winter",
         "in": "A red mitten wave and a snowflake puzzle make two different winter moments in this snowman clipart.",
         "href": "/clipart/winter/"
+      }
+    ],
+    "/clipart/solomon-islands-flag/": [
+      {
+        "text": "small sailing boat",
+        "href": "/clipart/sailing/",
+        "in": "illustrations, including paddlers raising their paddles, a market stall and a small sailing boat."
+      },
+      {
+        "text": "canoes",
+        "href": "/clipart/canoe/",
+        "in": "The designs range from desk flags to scenes with canoes and woven baskets."
+      },
+      {
+        "text": "five white stars on blue, with a yellow diagonal above the green field",
+        "href": "https://solomons.gov.sb/wp-content/uploads/2023/06/Sol2023-Newsletter-May-Issue-11-2023_French_compressed.pdf#page=18",
+        "source": "Solomon Islands Pacific Games Organising Committee, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Solomon Islands flag clipart shows five white stars on blue, with a yellow diagonal above the green field."
+      }
+    ],
+    "/clipart/somalia-flag/": [
+      {
+        "text": "painted boat",
+        "href": "/art/somalia-flag-person-working-around-a-painted-boat/",
+        "in": "illustrations, including a painted boat, a graduation group and a small solar panel."
+      },
+      {
+        "text": "centered white star on light blue",
+        "href": "https://parliament.gov.so/wp-content/uploads/2024/12/Provisional-Constitution-2012.pdf",
+        "source": "Federal Parliament of Somalia, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Somalia flag clipart shows a centered white star on light blue."
+      }
+    ],
+    "/clipart/south-africa-flag/": [
+      {
+        "text": "visitors near a lighthouse",
+        "href": "/clipart/lighthouse/",
+        "in": "illustrations include surfers with boards, musicians at a keyboard and visitors near a lighthouse."
+      },
+      {
+        "text": "musicians at a keyboard",
+        "href": "/art/south-africa-flag-saxophone-and-keyboard-duo/",
+        "in": "illustrations include surfers with boards, musicians at a keyboard and visitors near a lighthouse."
+      },
+      {
+        "text": "green Y band, gold edging and red and blue fields",
+        "href": "https://www.justice.gov.za/constitution/docs/30y-2026/SAConstitution-30yearsAnniversary-Eng-2026.pdf",
+        "source": "South African Department of Justice, Constitution Schedule 1",
+        "verifiedAt": "2026-11-22",
+        "in": "South Africa flag clipart shows the green Y band, gold edging and red and blue fields."
+      }
+    ],
+    "/clipart/south-korea-flag/": [
+      {
+        "text": "flat flag view",
+        "href": "/art/south-korea-flag-on-flat-white-fabric/",
+        "in": "A flat flag view makes the corner trigrams easier to compare with the folded versions."
+      },
+      {
+        "text": "red and blue taegeuk and four black trigrams",
+        "href": "https://www.mois.go.kr/eng/sub/a03/nationalSymbol/screen.do",
+        "source": "Republic of Korea Ministry of the Interior and Safety flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "South Korea flag clipart shows the red and blue taegeuk and four black trigrams on white cloth, from a flat panel to illustrated flag raisings and community scenes."
       }
     ],
     "/clipart/swan/": [
@@ -1015,11 +1798,156 @@
         "href": "/clipart/autumn/"
       }
     ],
+    "/clipart/turkiye-flag/": [
+      {
+        "text": "flag beside a rescue stretcher",
+        "href": "/art/turkiye-flag-with-an-orange-rescue-stretcher/",
+        "in": "illustrations include a flag above a carved doorway, a flag beside a rescue stretcher and a grayscale tram scene."
+      },
+      {
+        "text": "white crescent and star on red fabric",
+        "href": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2893.pdf",
+        "source": "Türkiye Flag Law No. 2893",
+        "verifiedAt": "2026-11-22",
+        "in": "Türkiye flag clipart shows the white crescent and star on red fabric in flat, folded and waving views, as well as in illustrated community settings."
+      }
+    ],
+    "/clipart/turkmenistan-flag/": [
+      {
+        "text": "grayscale scenes with patterned carpets",
+        "href": "/art/turkmenistan-flag-grayscale-framed-carpet-display/",
+        "in": "illustrations, including a folded cloth, a flag beside an arched doorway and grayscale scenes with patterned carpets."
+      },
+      {
+        "text": "white crescent with a red band of carpet motifs",
+        "href": "https://www.turkmenistan.gov.tm/en/post/106044/turkmenistan-will-widely-celebrate-constitution-and-national-flag-day",
+        "source": "Government of Turkmenistan, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Turkmenistan flag clipart pairs a green field and a white crescent with a red band of carpet motifs."
+      }
+    ],
+    "/clipart/tuvalu-flag/": [
+      {
+        "text": "table stand",
+        "href": "/art/tuvalu-flag-on-a-gold-colored-base/",
+        "in": "illustrations, from a folded flag and a table stand to scenes with boats, woven mats and coastal buildings."
+      },
+      {
+        "text": "boats",
+        "href": "/art/tuvalu-flag-waterfront-hut-with-a-boat/",
+        "in": "illustrations, from a folded flag and a table stand to scenes with boats, woven mats and coastal buildings."
+      },
+      {
+        "text": "Union Jack at the hoist and a diagonal group of yellow stars",
+        "href": "https://finance.gov.tv/wp-content/uploads/2022/10/Tuvalu-presentation-at-donor-networking-event.pdf",
+        "source": "Tuvalu Ministry of Finance, flag depiction in its donor briefing",
+        "verifiedAt": "2026-11-22",
+        "in": "Tuvalu flag clipart shows a blue field, the Union Jack at the hoist and a diagonal group of yellow stars."
+      }
+    ],
     "/clipart/ufo/": [
       {
         "text": "alien",
         "in": "UFO clipart explores flying saucers, alien characters and imaginative toys.",
         "href": "/clipart/alien/"
+      }
+    ],
+    "/clipart/uganda-flag/": [
+      {
+        "text": "long wooden boat",
+        "href": "/art/uganda-flag-wooden-boat-on-supports/",
+        "in": "illustrations, including flag displays, workshops, a long wooden boat and grayscale scenes."
+      },
+      {
+        "text": "crowned crane in a white disc",
+        "href": "https://www.vicepresident.go.ug/national-symbols/",
+        "source": "Office of the Vice President of Uganda, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Uganda flag clipart shows the crowned crane in a white disc against repeating black, yellow and red stripes."
+      }
+    ],
+    "/clipart/ukraine-flag/": [
+      {
+        "text": "accordion duet",
+        "href": "/art/ukraine-flag-two-musicians-with-an-accordion/",
+        "in": "illustrations, including an accordion duet, a wooden cart and gardeners planting a tree."
+      },
+      {
+        "text": "blue upper band and yellow lower band",
+        "href": "https://zakonst.rada.gov.ua/docs/en/constitution.pdf",
+        "source": "Verkhovna Rada of Ukraine — national flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Ukraine flag clipart shows the blue upper band and yellow lower band on a folded flag, a hanging banner and a tall outdoor pole."
+      }
+    ],
+    "/clipart/uruguay-flag/": [
+      {
+        "text": "flowered doorway",
+        "href": "/art/uruguay-flag-blue-doorway-under-flowers/",
+        "in": "illustrations include a flowered doorway, a clay workshop and a tall flagpole."
+      },
+      {
+        "text": "blue and white stripes and the golden Sun of May",
+        "href": "https://www.gub.uy/ministerio-relaciones-exteriores/sites/ministerio-relaciones-exteriores/files/documentos/publicaciones/Boleti%CC%81n%20Informativo%20DGCV%20-%20edicio%CC%81n%20especial%2025%20de%20agosto.pdf",
+        "source": "Ministry of Foreign Affairs of Uruguay, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Uruguay flag clipart shows blue and white stripes and the golden Sun of May."
+      }
+    ],
+    "/clipart/uzbekistan-flag/": [
+      {
+        "text": "tiled arch",
+        "href": "/art/uzbekistan-flag-beside-a-tiled-arch/",
+        "in": "illustrations range from folded cloth to scenes with a tiled arch, a pottery bench and a patterned textile."
+      },
+      {
+        "text": "blue, white and green bands with thin red stripes",
+        "href": "https://gov.uz/en/pages/symbols",
+        "source": "Government of Uzbekistan — national flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Uzbekistan flag clipart shows blue, white and green bands with thin red stripes, plus a white crescent and rows of stars at the hoist."
+      }
+    ],
+    "/clipart/vanuatu-flag/": [
+      {
+        "text": "wooden boat under construction",
+        "href": "/art/vanuatu-flag-wooden-boat-hull-at-a-workshop/",
+        "in": "illustrations include folded cloth, a thatched shelter and a wooden boat under construction."
+      },
+      {
+        "text": "a gold Y dividing red and green",
+        "href": "https://pmo.gov.vu/images/annual-report/Annual%20report%202023.pdf#page=1",
+        "source": "Prime Minister’s Office of Vanuatu, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Vanuatu flag clipart shows a gold Y dividing red and green, with a boar tusk and crossed leaves on the black triangle at the hoist."
+      }
+    ],
+    "/clipart/vatican-city-flag/": [
+      {
+        "text": "stone arch",
+        "href": "/art/vatican-city-flag-stone-arch-with-potted-plants/",
+        "in": "Vatican City flag clipart shows yellow and white panels with crossed keys under a tiara, pictured on folded cloth, a tabletop stand and beside a stone arch."
+      },
+      {
+        "text": "yellow and white panels with crossed keys under a tiara",
+        "href": "https://www.vaticanstate.va/en/state-and-government/general-informations/flag.html",
+        "source": "Governorate of Vatican City flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Vatican City flag clipart shows yellow and white panels with crossed keys under a tiara, pictured on folded cloth, a tabletop stand and beside a stone arch."
+      }
+    ],
+    "/clipart/venezuela-flag/": [
+      {
+        "text": "flowered doorway",
+        "href": "/art/venezuela-flag-beside-a-flowered-doorway/",
+        "in": "illustrations, including a folded flag, a flowered doorway, musicians and grayscale workshop scenes."
+      },
+      {
+        "text": "white arc of stars in the blue band",
+        "href": "https://www.mincultura.gob.ve/eventos/dia-de-la-bandera-nacional/",
+        "source": "Venezuelan Ministry of Culture, flag design",
+        "verifiedAt": "2026-11-22",
+        "in": "Venezuela flag clipart shows the yellow, blue and red tricolor with a white arc of stars in the blue band."
       }
     ],
     "/clipart/versace/": [
@@ -1041,6 +1969,25 @@
         "text": "American flag",
         "in": "A homecoming hug and Thank You Veterans lettering beside an American flag give Veterans Day clipart both personal and civic scenes.",
         "href": "/clipart/american-flag/"
+      }
+    ],
+    "/clipart/vietnam-flag/": [
+      {
+        "text": "a loom",
+        "href": "/art/vietnam-flag-patterned-textile-at-a-wooden-loom/",
+        "in": "Vietnam flag clipart shows a centered yellow star on red cloth, from folded fabric studies to scenes with a wooden boat, a loom and a roofed doorway."
+      },
+      {
+        "text": "roofed doorway",
+        "href": "/art/vietnam-flag-above-a-roofed-doorway/",
+        "in": "Vietnam flag clipart shows a centered yellow star on red cloth, from folded fabric studies to scenes with a wooden boat, a loom and a roofed doorway."
+      },
+      {
+        "text": "centered yellow star on red cloth",
+        "href": "https://xaydungchinhsach.chinhphu.vn/toan-van-hien-phap-nuoc-cong-hoa-xa-hoi-chu-nghia-viet-nam-119231225213002261.htm",
+        "source": "Government of Vietnam, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Vietnam flag clipart shows a centered yellow star on red cloth, from folded fabric studies to scenes with a wooden boat, a loom and a roofed doorway."
       }
     ],
     "/clipart/vines/": [
@@ -1106,6 +2053,53 @@
         "text": "music",
         "in": "Xylophone clipart shows wooden bars, other bar percussion designs and people playing music.",
         "href": "/clipart/music/"
+      }
+    ],
+    "/clipart/yemen-flag/": [
+      {
+        "text": "wooden loom",
+        "href": "/art/yemen-flag-working-at-a-wooden-loom/",
+        "in": "illustrations, including an arched doorway, a wooden loom and a small boat under construction."
+      },
+      {
+        "text": "small boat under construction",
+        "href": "/art/yemen-flag-two-people-beside-a-wooden-boat/",
+        "in": "illustrations, including an arched doorway, a wooden loom and a small boat under construction."
+      },
+      {
+        "text": "red, white and black horizontal bands",
+        "href": "https://cdn.nestjs.wipolex.wji.prd.web1.wipo.int/wipolex/en/legislation/details/19992",
+        "source": "Constitution of the Republic of Yemen in WIPO Lex, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Yemen flag clipart shows red, white and black horizontal bands on folded cloth, a hanging banner and flags alongside illustrated craft scenes."
+      }
+    ],
+    "/clipart/zambia-flag/": [
+      {
+        "text": "wooden boat under construction",
+        "href": "/art/zambia-flag-wooden-boat-and-two-workers/",
+        "in": "illustrations, including folded cloth, two drummers and a wooden boat under construction."
+      },
+      {
+        "text": "orange fish eagle above red, black and orange stripes",
+        "href": "https://www.sh.gov.zm/national-symbols/",
+        "source": "State House of Zambia, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Zambia flag clipart shows an orange fish eagle above red, black and orange stripes on a green field."
+      }
+    ],
+    "/clipart/zimbabwe-flag/": [
+      {
+        "text": "wooden cart with a spoked wheel",
+        "href": "/art/zimbabwe-flag-wooden-cart-with-two-people/",
+        "in": "illustrations include folded cloth, two drum players and a wooden cart with a spoked wheel."
+      },
+      {
+        "text": "Zimbabwe Bird on a red star inside a white triangle",
+        "href": "https://www.npa.gov.zw/storage/documents/slc9uoWW9DFCnnLHWRqMZxxEhCalLs0MIeCVrBlZ.pdf",
+        "source": "Constitution of Zimbabwe via the National Prosecuting Authority, flag reference",
+        "verifiedAt": "2026-11-22",
+        "in": "Zimbabwe flag clipart shows horizontal green, yellow, red and black stripes with the Zimbabwe Bird on a red star inside a white triangle."
       }
     ],
     "/clipart/zucchini/": [
