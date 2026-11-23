@@ -1,0 +1,736 @@
+{
+  "afghanistan-flag": [
+    "AFG",
+    "Asia",
+    "Southern Asia",
+    [66.008, 33.836],
+    ["CHN", "IRN", "PAK", "TJK", "TKM", "UZB"]
+  ],
+  "albania-flag": [
+    "ALB",
+    "Europe",
+    "Southern Europe",
+    [20.054, 41.142],
+    ["GRC", "KOS", "MKD", "MNE"]
+  ],
+  "algeria-flag": [
+    "DZA",
+    "Africa",
+    "Northern Africa",
+    [2.618, 28.159],
+    ["LBY", "MAR", "MLI", "MRT", "NER", "TUN"]
+  ],
+  "american-flag": ["USA", "Americas", "Northern America", [-98.58, 39.83], ["CAN", "MEX"]],
+  "american-samoa-flag": ["ASM", "Oceania", "Polynesia", [-170.765, -14.326], []],
+  "andorra-flag": ["AND", "Europe", "Southern Europe", [1.561, 42.541], ["ESP", "FRA"]],
+  "angola-flag": [
+    "AGO",
+    "Africa",
+    "Middle Africa",
+    [17.564, -12.329],
+    ["COD", "COG", "NAM", "ZMB"]
+  ],
+  "anguilla-flag": ["AIA", "Americas", "Caribbean", [-63.021, 18.244], []],
+  "antigua-and-barbuda-flag": ["ATG", "Americas", "Caribbean", [-61.79, 17.075], []],
+  "argentina-flag": [
+    "ARG",
+    "Americas",
+    "South America",
+    [-68.618, -54.857],
+    ["BOL", "BRA", "CHL", "PRY", "URY"]
+  ],
+  "armenia-flag": ["ARM", "Asia", "Western Asia", [44.932, 40.289], ["AZE", "GEO", "IRN", "TUR"]],
+  "aruba-flag": ["ABW", "Americas", "Caribbean", [-69.974, 12.517], []],
+  "australia-flag": ["AUS", "Oceania", "Australia and New Zealand", [124.966, -23.994], []],
+  "austria-flag": [
+    "AUT",
+    "Europe",
+    "Western Europe",
+    [14.131, 47.586],
+    ["CHE", "CZE", "DEU", "HUN", "ITA", "LIE", "SVK", "SVN"]
+  ],
+  "azerbaijan-flag": [
+    "AZE",
+    "Asia",
+    "Western Asia",
+    [44.996, 41.054],
+    ["ARM", "GEO", "IRN", "TUR"]
+  ],
+  "bahamas-flag": ["BHS", "Americas", "Caribbean", [-73.061, 22.394], []],
+  "bahrain-flag": ["BHR", "Asia", "Western Asia", [50.544, 26.049], []],
+  "bangladesh-flag": ["BGD", "Asia", "Southern Asia", [90.227, 23.882], ["IND", "MMR"]],
+  "barbados-flag": ["BRB", "Americas", "Caribbean", [-59.541, 13.148], []],
+  "belarus-flag": [
+    "BLR",
+    "Europe",
+    "Eastern Europe",
+    [28.034, 53.532],
+    ["LTU", "LVA", "POL", "RUS", "UKR"]
+  ],
+  "belgium-flag": ["BEL", "Europe", "Western Europe", [4.37, 50.837], ["DEU", "FRA", "LUX", "NLD"]],
+  "belize-flag": ["BLZ", "Americas", "Central America", [-88.786, 17.544], ["GTM", "MEX"]],
+  "benin-flag": ["BEN", "Africa", "Western Africa", [2.329, 9.641], ["BFA", "NER", "NGA", "TGO"]],
+  "bermuda-flag": ["BMU", "Americas", "Northern America", [-64.768, 32.298], []],
+  "bhutan-flag": ["BTN", "Asia", "Southern Asia", [90.404, 27.411], ["CHN", "IND"]],
+  "bolivia-flag": [
+    "BOL",
+    "Americas",
+    "South America",
+    [-64.685, -16.707],
+    ["ARG", "BRA", "CHL", "PER", "PRY"]
+  ],
+  "bosnia-and-herzegovina-flag": [
+    "BIH",
+    "Europe",
+    "Southern Europe",
+    [17.506, 44.08],
+    ["HRV", "MNE", "SRB"]
+  ],
+  "botswana-flag": ["BWA", "Africa", "Southern Africa", [23.799, -22.186], ["NAM", "ZAF", "ZWE"]],
+  "bouvet-island-flag": ["BVT", "Americas", "South America", [3.413, -54.419], []],
+  "brazil-flag": [
+    "BRA",
+    "Americas",
+    "South America",
+    [-59.005, -4.947],
+    ["ARG", "BOL", "COL", "GUY", "PER", "PRY", "SUR", "URY", "VEN"]
+  ],
+  "british-indian-ocean-territory-flag": ["IOT", "Africa", "Eastern Africa", [72.467, -7.261], []],
+  "british-virgin-islands-flag": ["VGB", "Americas", "Caribbean", [-64.632, 18.427], []],
+  "brunei-flag": ["BRN", "Asia", "South-eastern Asia", [115.167, 4.595], ["MYS"]],
+  "bulgaria-flag": [
+    "BGR",
+    "Europe",
+    "Eastern Europe",
+    [25.217, 42.769],
+    ["GRC", "MKD", "ROU", "SRB", "TUR"]
+  ],
+  "burkina-faso-flag": [
+    "BFA",
+    "Africa",
+    "Western Africa",
+    [-1.756, 12.27],
+    ["BEN", "CIV", "GHA", "MLI", "NER", "TGO"]
+  ],
+  "burundi-flag": ["BDI", "Africa", "Eastern Africa", [29.875, -3.357], ["COD", "RWA", "TZA"]],
+  "cabo-verde-flag": ["CPV", "Africa", "Western Africa", [-23.18, 15.221], []],
+  "cambodia-flag": ["KHM", "Asia", "South-eastern Asia", [104.905, 12.718], ["LAO", "THA", "VNM"]],
+  "cameroon-flag": [
+    "CMR",
+    "Africa",
+    "Middle Africa",
+    [12.737, 5.693],
+    ["CAF", "COG", "GAB", "GNQ", "NGA", "TCD"]
+  ],
+  "canada-flag": ["CAN", "Americas", "Northern America", [-67.128, 46.499], ["USA"]],
+  "cayman-islands-flag": ["CYM", "Americas", "Caribbean", [-81.175, 19.33], []],
+  "central-african-republic-flag": [
+    "CAF",
+    "Africa",
+    "Middle Africa",
+    [17.651, 5.806],
+    ["CMR", "COD", "COG", "SDN", "TCD"]
+  ],
+  "chad-flag": [
+    "TCD",
+    "Africa",
+    "Middle Africa",
+    [18.646, 15.333],
+    ["CAF", "CMR", "LBY", "NER", "NGA", "SDN"]
+  ],
+  "chile-flag": ["CHL", "Americas", "South America", [-71.248, -35.448], ["ARG", "BOL", "PER"]],
+  "china-flag": [
+    "CHN",
+    "Asia",
+    "Eastern Asia",
+    [93.785, 35.217],
+    [
+      "AFG",
+      "BTN",
+      "HKG",
+      "IND",
+      "KAZ",
+      "KGZ",
+      "LAO",
+      "MAC",
+      "MMR",
+      "MNG",
+      "NPL",
+      "PAK",
+      "PRK",
+      "TJK",
+      "VNM"
+    ]
+  ],
+  "christmas-island-flag": ["CXR", "Oceania", "Australia and New Zealand", [105.663, -10.493], []],
+  "cocos-keeling-islands-flag": [
+    "CCK",
+    "Oceania",
+    "Australia and New Zealand",
+    [96.845, -12.192],
+    []
+  ],
+  "colombia-flag": [
+    "COL",
+    "Americas",
+    "South America",
+    [-73.078, 3.911],
+    ["BRA", "ECU", "PAN", "PER", "VEN"]
+  ],
+  "comoros-flag": ["COM", "Africa", "Eastern Africa", [44.435, -12.215], []],
+  "cook-islands-flag": ["COK", "Oceania", "Polynesia", [-159.786, -21.219], []],
+  "costa-rica-flag": ["CRI", "Americas", "Central America", [-84.192, 9.975], ["NIC", "PAN"]],
+  "croatia-flag": [
+    "HRV",
+    "Europe",
+    "Southern Europe",
+    [17.376, 42.95],
+    ["BIH", "HUN", "MNE", "SRB", "SVN"]
+  ],
+  "cuba-flag": ["CUB", "Americas", "Caribbean", [-79.541, 22.093], []],
+  "curacao-flag": ["CUW", "Americas", "Caribbean", [-68.956, 12.156], []],
+  "cyprus-flag": ["CYP", "Asia", "Western Asia", [32.954, 34.911], []],
+  "czechia-flag": [
+    "CZE",
+    "Europe",
+    "Eastern Europe",
+    [15.314, 49.732],
+    ["AUT", "DEU", "POL", "SVK"]
+  ],
+  "democratic-republic-of-the-congo-flag": [
+    "COD",
+    "Africa",
+    "Middle Africa",
+    [23.646, -2.879],
+    ["AGO", "BDI", "CAF", "COG", "RWA", "TZA", "UGA", "ZMB"]
+  ],
+  "denmark-flag": ["DNK", "Europe", "Northern Europe", [8.812, 55.801], ["DEU"]],
+  "djibouti-flag": ["DJI", "Africa", "Eastern Africa", [42.167, 11.575], ["ERI", "ETH"]],
+  "dominica-flag": ["DMA", "Americas", "Caribbean", [-61.357, 15.436], []],
+  "dominican-republic-flag": ["DOM", "Americas", "Caribbean", [-70.5, 18.899], ["HTI"]],
+  "ecuador-flag": ["ECU", "Americas", "South America", [-78.39, -1.448], ["COL", "PER"]],
+  "egypt-flag": [
+    "EGY",
+    "Africa",
+    "Northern Africa",
+    [29.861, 26.492],
+    ["ISR", "LBY", "PSE", "SDN"]
+  ],
+  "el-salvador-flag": ["SLV", "Americas", "Central America", [-88.87, 13.737], ["GTM", "HND"]],
+  "equatorial-guinea-flag": ["GNQ", "Africa", "Middle Africa", [10.467, 1.565], ["CMR", "GAB"]],
+  "eritrea-flag": ["ERI", "Africa", "Eastern Africa", [38.099, 16.087], ["DJI", "ETH", "SDN"]],
+  "estonia-flag": ["EST", "Europe", "Northern Europe", [25.831, 58.684], ["LVA", "RUS"]],
+  "eswatini-flag": ["SWZ", "Africa", "Southern Africa", [31.48, -26.562], ["MOZ", "ZAF"]],
+  "ethiopia-flag": [
+    "ETH",
+    "Africa",
+    "Eastern Africa",
+    [36.737, 9.38],
+    ["DJI", "ERI", "KEN", "SDN", "SOM"]
+  ],
+  "falkland-islands-malvinas-flag": ["FLK", "Americas", "South America", [-60.125, -51.844], []],
+  "faroe-islands-flag": ["FRO", "Europe", "Northern Europe", [-6.485, 62.222], []],
+  "fiji-flag": ["FJI", "Oceania", "Melanesia", [177.975, -17.824], []],
+  "finland-flag": ["FIN", "Europe", "Northern Europe", [23.36, 61.921], ["NOR", "RUS", "SWE"]],
+  "france-flag": [
+    "FRA",
+    "Europe",
+    "Western Europe",
+    [2.57, 46.61],
+    ["AND", "BEL", "CHE", "DEU", "ESP", "ITA", "LUX", "MCO"]
+  ],
+  "french-guiana-flag": ["GUF", "Americas", "South America", [-53.245, 3.926], []],
+  "french-polynesia-flag": ["PYF", "Oceania", "Polynesia", [-149.42, -17.664], []],
+  "french-southern-territories-flag": ["ATF", "Africa", "Eastern Africa", [69.501, -49.311], []],
+  "gabon-flag": ["GAB", "Africa", "Middle Africa", [11.793, -0.587], ["CMR", "COG", "GNQ"]],
+  "gambia-flag": ["GMB", "Africa", "Western Africa", [-16.077, 13.288], ["SEN"]],
+  "georgia-flag": ["GEO", "Asia", "Western Asia", [43.34, 42.045], ["ARM", "AZE", "TUR"]],
+  "germany-flag": [
+    "DEU",
+    "Europe",
+    "Western Europe",
+    [13.981, 53.905],
+    ["AUT", "BEL", "CHE", "CZE", "DNK", "FRA", "LUX", "NLD", "POL"]
+  ],
+  "ghana-flag": ["GHA", "Africa", "Western Africa", [-1.217, 7.954], ["BFA", "CIV", "TGO"]],
+  "gibraltar-flag": ["GIB", "Europe", "Southern Europe", [-5.347, 36.13], ["ESP"]],
+  "greece-flag": [
+    "GRC",
+    "Europe",
+    "Southern Europe",
+    [22.582, 39.475],
+    ["ALB", "BGR", "MKD", "TUR"]
+  ],
+  "greenland-flag": ["GRL", "Americas", "Northern America", [-64.883, 77.838], []],
+  "grenada-flag": ["GRD", "Americas", "Caribbean", [-61.679, 12.118], []],
+  "guadeloupe-flag": ["GLP", "Americas", "Caribbean", [-61.674, 16.167], []],
+  "guam-flag": ["GUM", "Oceania", "Micronesia", [144.706, 13.355], []],
+  "guatemala-flag": [
+    "GTM",
+    "Americas",
+    "Central America",
+    [-91.24, 15.008],
+    ["BLZ", "HND", "MEX", "SLV"]
+  ],
+  "guernsey-flag": ["GGY", "Europe", "Northern Europe", [-2.577, 49.463], []],
+  "guinea-bissau-flag": ["GNB", "Africa", "Western Africa", [-14.428, 12.12], ["GIN", "SEN"]],
+  "guinea-flag": [
+    "GIN",
+    "Africa",
+    "Western Africa",
+    [-11.372, 11.031],
+    ["CIV", "GNB", "LBR", "MLI", "SEN", "SLE"]
+  ],
+  "guyana-flag": ["GUY", "Americas", "South America", [-58.231, 5.096], ["BRA", "SUR", "VEN"]],
+  "haiti-flag": ["HTI", "Americas", "Caribbean", [-72.352, 18.38], ["DOM"]],
+  "heard-island-and-mcdonald-islands-flag": [
+    "HMD",
+    "Oceania",
+    "Australia and New Zealand",
+    [73.505, -53.089],
+    []
+  ],
+  "honduras-flag": ["HND", "Americas", "Central America", [-86.618, 14.822], ["GTM", "NIC", "SLV"]],
+  "hong-kong-flag": ["HKG", "Asia", "Eastern Asia", [114.023, 22.414], ["CHN"]],
+  "hungary-flag": [
+    "HUN",
+    "Europe",
+    "Eastern Europe",
+    [19.397, 47.163],
+    ["AUT", "HRV", "ROU", "SRB", "SVK", "SVN", "UKR"]
+  ],
+  "iceland-flag": ["ISL", "Europe", "Northern Europe", [-18.596, 64.998], []],
+  "india-flag": [
+    "IND",
+    "Asia",
+    "Southern Asia",
+    [82.753, 22.426],
+    ["BGD", "BTN", "CHN", "MMR", "NPL", "PAK"]
+  ],
+  "indonesia-flag": ["IDN", "Asia", "South-eastern Asia", [111.395, -0.96], ["MYS", "TLS"]],
+  "iran-flag": [
+    "IRN",
+    "Asia",
+    "Southern Asia",
+    [54.275, 32.578],
+    ["AFG", "ARM", "AZE", "IRQ", "PAK", "TKM", "TUR"]
+  ],
+  "iraq-flag": [
+    "IRQ",
+    "Asia",
+    "Western Asia",
+    [43.745, 33.04],
+    ["IRN", "JOR", "KWT", "SAU", "SYR", "TUR"]
+  ],
+  "ireland-flag": ["IRL", "Europe", "Northern Europe", [-8.138, 53.177], ["GBR"]],
+  "isle-of-man-flag": ["IMN", "Europe", "Northern Europe", [-4.534, 54.229], []],
+  "israel-flag": [
+    "ISR",
+    "Asia",
+    "Western Asia",
+    [34.658, 31.029],
+    ["EGY", "JOR", "LBN", "PSE", "SYR"]
+  ],
+  "italy-flag": [
+    "ITA",
+    "Europe",
+    "Southern Europe",
+    [9.581, 45.236],
+    ["AUT", "CHE", "FRA", "SMR", "SVN", "VAT"]
+  ],
+  "ivory-coast-flag": [
+    "CIV",
+    "Africa",
+    "Western Africa",
+    [-3.207, 5.125],
+    ["BFA", "GHA", "GIN", "LBR", "MLI"]
+  ],
+  "jamaica-flag": ["JAM", "Americas", "Caribbean", [-77.319, 18.155], []],
+  "japan-flag": ["JPN", "Asia", "Eastern Asia", [142.576, 43.378], []],
+  "jersey-flag": ["JEY", "Europe", "Northern Europe", [-2.125, 49.23], []],
+  "jordan-flag": [
+    "JOR",
+    "Asia",
+    "Western Asia",
+    [37.121, 30.636],
+    ["IRQ", "ISR", "PSE", "SAU", "SYR"]
+  ],
+  "kazakhstan-flag": [
+    "KAZ",
+    "Asia",
+    "Central Asia",
+    [50.301, 45.022],
+    ["CHN", "KGZ", "RUS", "TKM", "UZB"]
+  ],
+  "kenya-flag": ["KEN", "Africa", "Eastern Africa", [37.795, 0.599], ["ETH", "SOM", "TZA", "UGA"]],
+  "kiribati-flag": ["KIR", "Oceania", "Micronesia", [-171.663, -2.838], []],
+  "kosovo-flag": [
+    "KOS",
+    "Europe",
+    "Southern Europe",
+    [20.874, 42.573],
+    ["ALB", "MKD", "MNE", "SRB"]
+  ],
+  "kuwait-flag": ["KWT", "Asia", "Western Asia", [47.482, 29.51], ["IRQ", "SAU"]],
+  "kyrgyzstan-flag": ["KGZ", "Asia", "Central Asia", [77.5, 41.948], ["CHN", "KAZ", "TJK", "UZB"]],
+  "laos-flag": [
+    "LAO",
+    "Asia",
+    "South-eastern Asia",
+    [101.989, 20.285],
+    ["CHN", "KHM", "MMR", "THA", "VNM"]
+  ],
+  "latvia-flag": [
+    "LVA",
+    "Europe",
+    "Northern Europe",
+    [26.405, 56.633],
+    ["BLR", "EST", "LTU", "RUS"]
+  ],
+  "lebanon-flag": ["LBN", "Asia", "Western Asia", [35.88, 33.92], ["ISR", "SYR"]],
+  "lesotho-flag": ["LSO", "Africa", "Southern Africa", [28.229, -29.58], ["ZAF"]],
+  "liberia-flag": ["LBR", "Africa", "Western Africa", [-9.32, 6.452], ["CIV", "GIN", "SLE"]],
+  "libya-flag": [
+    "LBY",
+    "Africa",
+    "Northern Africa",
+    [13.254, 28.075],
+    ["DZA", "EGY", "NER", "SDN", "TCD", "TUN"]
+  ],
+  "liechtenstein-flag": ["LIE", "Europe", "Western Europe", [9.541, 47.138], ["AUT", "CHE"]],
+  "lithuania-flag": [
+    "LTU",
+    "Europe",
+    "Northern Europe",
+    [21.029, 55.36],
+    ["BLR", "LVA", "POL", "RUS"]
+  ],
+  "luxembourg-flag": ["LUX", "Europe", "Western Europe", [6.072, 49.767], ["BEL", "DEU", "FRA"]],
+  "macao-flag": ["MAC", "Asia", "Eastern Asia", [113.538, 22.198], ["CHN"]],
+  "madagascar-flag": ["MDG", "Africa", "Eastern Africa", [46.704, -19.377], []],
+  "malawi-flag": ["MWI", "Africa", "Eastern Africa", [34.708, -12.062], ["MOZ", "TZA", "ZMB"]],
+  "malaysia-flag": [
+    "MYS",
+    "Asia",
+    "South-eastern Asia",
+    [102.187, 4.03],
+    ["BRN", "IDN", "SGP", "THA"]
+  ],
+  "maldives-flag": ["MDV", "Asia", "Southern Asia", [73.508, 4.176], []],
+  "mali-flag": [
+    "MLI",
+    "Africa",
+    "Western Africa",
+    [0.111, 18.363],
+    ["BFA", "CIV", "DZA", "GIN", "MRT", "NER", "SEN"]
+  ],
+  "malta-flag": ["MLT", "Europe", "Southern Europe", [14.441, 35.891], []],
+  "marshall-islands-flag": ["MHL", "Oceania", "Micronesia", [169.698, 5.968], []],
+  "martinique-flag": ["MTQ", "Americas", "Caribbean", [-60.915, 14.573], []],
+  "mauritania-flag": ["MRT", "Africa", "Western Africa", [-10.342, 20.256], ["DZA", "MLI", "SEN"]],
+  "mauritius-flag": ["MUS", "Africa", "Eastern Africa", [57.57, -20.279], []],
+  "mayotte-flag": ["MYT", "Africa", "Eastern Africa", [45.138, -12.819], []],
+  "mexico-flag": ["MEX", "Americas", "Central America", [-102.507, 23.941], ["BLZ", "GTM", "USA"]],
+  "micronesia-flag": ["FSM", "Oceania", "Micronesia", [158.234, 6.883], []],
+  "moldova-flag": ["MDA", "Europe", "Eastern Europe", [28.461, 47.195], ["ROU", "UKR"]],
+  "monaco-flag": ["MCO", "Europe", "Western Europe", [7.398, 43.746], ["FRA"]],
+  "mongolia-flag": ["MNG", "Asia", "Eastern Asia", [95.779, 46.75], ["CHN"]],
+  "montenegro-flag": [
+    "MNE",
+    "Europe",
+    "Southern Europe",
+    [19.238, 42.786],
+    ["ALB", "BIH", "HRV", "KOS", "SRB"]
+  ],
+  "montserrat-flag": ["MSR", "Americas", "Caribbean", [-62.187, 16.738], []],
+  "morocco-flag": ["MAR", "Africa", "Northern Africa", [-6.324, 31.883], ["DZA", "ESP"]],
+  "mozambique-flag": [
+    "MOZ",
+    "Africa",
+    "Eastern Africa",
+    [38.189, -14.276],
+    ["MWI", "SWZ", "TZA", "ZAF", "ZMB", "ZWE"]
+  ],
+  "myanmar-flag": [
+    "MMR",
+    "Asia",
+    "South-eastern Asia",
+    [96.489, 21.215],
+    ["BGD", "CHN", "IND", "LAO", "THA"]
+  ],
+  "namibia-flag": [
+    "NAM",
+    "Africa",
+    "Southern Africa",
+    [17.211, -22.129],
+    ["AGO", "BWA", "ZAF", "ZMB"]
+  ],
+  "nauru-flag": ["NRU", "Oceania", "Micronesia", [166.93, -0.53], []],
+  "nepal-flag": ["NPL", "Asia", "Southern Asia", [83.916, 28.248], ["CHN", "IND"]],
+  "netherlands-flag": ["NLD", "Europe", "Western Europe", [3.567, 51.347], ["BEL", "DEU"]],
+  "new-caledonia-flag": ["NCL", "Oceania", "Melanesia", [165.51, -21.405], []],
+  "new-zealand-flag": ["NZL", "Oceania", "Australia and New Zealand", [170.516, -43.986], []],
+  "nicaragua-flag": ["NIC", "Americas", "Central America", [-85.034, 12.845], ["CRI", "HND"]],
+  "niger-flag": [
+    "NER",
+    "Africa",
+    "Western Africa",
+    [12.016, 18.325],
+    ["BEN", "BFA", "DZA", "LBY", "MLI", "NGA", "TCD"]
+  ],
+  "nigeria-flag": ["NGA", "Africa", "Western Africa", [8.091, 9.597], ["BEN", "CMR", "NER", "TCD"]],
+  "niue-flag": ["NIU", "Oceania", "Polynesia", [-169.869, -19.049], []],
+  "norfolk-island-flag": ["NFK", "Oceania", "Australia and New Zealand", [167.955, -29.035], []],
+  "north-korea-flag": ["PRK", "Asia", "Eastern Asia", [127.19, 40.172], ["CHN", "KOR"]],
+  "north-macedonia-flag": [
+    "MKD",
+    "Europe",
+    "Southern Europe",
+    [21.684, 41.595],
+    ["ALB", "BGR", "GRC", "KOS", "SRB"]
+  ],
+  "northern-mariana-islands-flag": ["MNP", "Oceania", "Micronesia", [145.211, 14.156], []],
+  "norway-flag": ["NOR", "Europe", "Northern Europe", [18.833, 78.644], ["FIN", "RUS", "SWE"]],
+  "oman-flag": ["OMN", "Asia", "Western Asia", [56.269, 25.306], ["ARE", "SAU", "YEM"]],
+  "pakistan-flag": ["PAK", "Asia", "Southern Asia", [64.896, 27.442], ["AFG", "CHN", "IND", "IRN"]],
+  "palau-flag": ["PLW", "Oceania", "Micronesia", [134.58, 7.514], []],
+  "palestine-flag": ["PSE", "Asia", "Western Asia", [35.245, 31.945], ["EGY", "ISR", "JOR"]],
+  "panama-flag": ["PAN", "Americas", "Central America", [-78.636, 9.074], ["COL", "CRI"]],
+  "papua-new-guinea-flag": ["PNG", "Oceania", "Melanesia", [144.25, -6.612], []],
+  "paraguay-flag": ["PRY", "Americas", "South America", [-58.398, -23.228], ["ARG", "BOL", "BRA"]],
+  "peru-flag": [
+    "PER",
+    "Americas",
+    "South America",
+    [-71.852, -13.588],
+    ["BOL", "BRA", "CHL", "COL", "ECU"]
+  ],
+  "philippines-flag": ["PHL", "Asia", "South-eastern Asia", [121.418, 15.953], []],
+  "pitcairn-flag": ["PCN", "Oceania", "Polynesia", [-128.317, -24.366], []],
+  "poland-flag": [
+    "POL",
+    "Europe",
+    "Eastern Europe",
+    [19.394, 52.125],
+    ["BLR", "CZE", "DEU", "LTU", "RUS", "SVK", "UKR"]
+  ],
+  "portugal-flag": ["PRT", "Europe", "Southern Europe", [-7.978, 39.679], ["ESP"]],
+  "puerto-rico-flag": ["PRI", "Americas", "Caribbean", [-66.481, 18.228], []],
+  "qatar-flag": ["QAT", "Asia", "Western Asia", [51.187, 25.313], ["SAU"]],
+  "republic-of-the-congo-flag": [
+    "COG",
+    "Africa",
+    "Middle Africa",
+    [13.006, -3.467],
+    ["AGO", "CAF", "CMR", "COD", "GAB"]
+  ],
+  "reunion-flag": ["REU", "Africa", "Eastern Africa", [55.542, -21.119], []],
+  "romania-flag": [
+    "ROU",
+    "Europe",
+    "Eastern Europe",
+    [24.973, 45.853],
+    ["BGR", "HUN", "MDA", "SRB", "UKR"]
+  ],
+  "russia-flag": [
+    "RUS",
+    "Europe",
+    "Eastern Europe",
+    [54.37, 71.979],
+    ["BLR", "EST", "FIN", "KAZ", "LTU", "LVA", "NOR", "POL", "UKR"]
+  ],
+  "rwanda-flag": [
+    "RWA",
+    "Africa",
+    "Eastern Africa",
+    [29.919, -1.993],
+    ["BDI", "COD", "TZA", "UGA"]
+  ],
+  "saint-barthelemy-flag": ["BLM", "Americas", "Caribbean", [-62.833, 17.906], []],
+  "saint-helena-flag": ["SHN", "Africa", "Western Africa", [-14.364, -7.935], []],
+  "saint-kitts-and-nevis-flag": ["KNA", "Americas", "Caribbean", [-62.581, 17.15], []],
+  "saint-lucia-flag": ["LCA", "Americas", "Caribbean", [-60.97, 13.903], []],
+  "saint-martin-french-part-flag": ["MAF", "Americas", "Caribbean", [-63.055, 18.077], ["SXM"]],
+  "saint-pierre-and-miquelon-flag": ["SPM", "Americas", "Northern America", [-56.276, 46.859], []],
+  "saint-vincent-and-the-grenadines-flag": ["VCT", "Americas", "Caribbean", [-61.194, 13.256], []],
+  "samoa-flag": ["WSM", "Oceania", "Polynesia", [-171.76, -13.934], []],
+  "san-marino-flag": ["SMR", "Europe", "Southern Europe", [12.442, 43.936], ["ITA"]],
+  "sao-tome-and-principe-flag": ["STP", "Africa", "Middle Africa", [6.608, 0.236], []],
+  "saudi-arabia-flag": [
+    "SAU",
+    "Asia",
+    "Western Asia",
+    [44.54, 24.124],
+    ["ARE", "IRQ", "JOR", "KWT", "OMN", "QAT", "YEM"]
+  ],
+  "senegal-flag": [
+    "SEN",
+    "Africa",
+    "Western Africa",
+    [-14.471, 14.368],
+    ["GIN", "GMB", "GNB", "MLI", "MRT"]
+  ],
+  "serbia-flag": [
+    "SRB",
+    "Europe",
+    "Southern Europe",
+    [20.064, 45.399],
+    ["BGR", "BIH", "HRV", "HUN", "KOS", "MKD", "MNE", "ROU"]
+  ],
+  "seychelles-flag": ["SYC", "Africa", "Eastern Africa", [55.708, -4.314], []],
+  "sierra-leone-flag": ["SLE", "Africa", "Western Africa", [-11.787, 8.572], ["GIN", "LBR"]],
+  "singapore-flag": ["SGP", "Asia", "South-eastern Asia", [103.813, 1.359], ["MYS"]],
+  "sint-maarten-dutch-part-flag": ["SXM", "Americas", "Caribbean", [-63.07, 18.04], ["MAF"]],
+  "slovakia-flag": [
+    "SVK",
+    "Europe",
+    "Eastern Europe",
+    [19.48, 48.705],
+    ["AUT", "CZE", "HUN", "POL", "UKR"]
+  ],
+  "slovenia-flag": [
+    "SVN",
+    "Europe",
+    "Southern Europe",
+    [14.94, 46.064],
+    ["AUT", "HRV", "HUN", "ITA"]
+  ],
+  "solomon-islands-flag": ["SLB", "Oceania", "Melanesia", [160.17, -9.623], []],
+  "somalia-flag": ["SOM", "Africa", "Eastern Africa", [43.578, 2.79], ["ETH", "KEN"]],
+  "south-africa-flag": [
+    "ZAF",
+    "Africa",
+    "Southern Africa",
+    [25.159, -29.009],
+    ["BWA", "LSO", "MOZ", "NAM", "SWZ", "ZWE"]
+  ],
+  "south-georgia-and-the-south-sandwich-islands-flag": [
+    "SGS",
+    "Americas",
+    "South America",
+    [-36.908, -54.202],
+    []
+  ],
+  "south-korea-flag": ["KOR", "Asia", "Eastern Asia", [127.88, 36.437], ["PRK"]],
+  "spain-flag": [
+    "ESP",
+    "Europe",
+    "Southern Europe",
+    [1.969, 42.46],
+    ["AND", "FRA", "GIB", "MAR", "PRT"]
+  ],
+  "sri-lanka-flag": ["LKA", "Asia", "Southern Asia", [80.705, 7.609], []],
+  "sudan-flag": [
+    "SDN",
+    "Africa",
+    "Northern Africa",
+    [29.939, 15.987],
+    ["CAF", "EGY", "ERI", "ETH", "LBY", "TCD"]
+  ],
+  "suriname-flag": ["SUR", "Americas", "South America", [-55.912, 4.129], ["BRA", "GUY"]],
+  "sweden-flag": ["SWE", "Europe", "Northern Europe", [14.372, 60.595], ["FIN", "NOR"]],
+  "switzerland-flag": [
+    "CHE",
+    "Europe",
+    "Western Europe",
+    [8.211, 46.973],
+    ["AUT", "DEU", "FRA", "ITA", "LIE"]
+  ],
+  "syria-flag": [
+    "SYR",
+    "Asia",
+    "Western Asia",
+    [38.508, 35.026],
+    ["IRQ", "ISR", "JOR", "LBN", "TUR"]
+  ],
+  "taiwan-flag": ["TWN", "Asia", "Eastern Asia", [120.963, 23.753], []],
+  "tajikistan-flag": [
+    "TJK",
+    "Asia",
+    "Central Asia",
+    [69.298, 38.317],
+    ["AFG", "CHN", "KGZ", "UZB"]
+  ],
+  "tanzania-flag": [
+    "TZA",
+    "Africa",
+    "Eastern Africa",
+    [34.799, -6.276],
+    ["BDI", "COD", "KEN", "MOZ", "MWI", "RWA", "UGA", "ZMB"]
+  ],
+  "thailand-flag": [
+    "THA",
+    "Asia",
+    "South-eastern Asia",
+    [101.009, 15.137],
+    ["KHM", "LAO", "MMR", "MYS"]
+  ],
+  "timor-leste-flag": ["TLS", "Asia", "South-eastern Asia", [124.267, -9.327], ["IDN"]],
+  "togo-flag": ["TGO", "Africa", "Western Africa", [0.962, 8.527], ["BEN", "BFA", "GHA"]],
+  "tokelau-flag": ["TKL", "Oceania", "Polynesia", [-172.491, -8.556], []],
+  "tonga-flag": ["TON", "Oceania", "Polynesia", [-174.938, -21.375], []],
+  "trinidad-and-tobago-flag": ["TTO", "Americas", "Caribbean", [-61.294, 10.422], []],
+  "tunisia-flag": ["TUN", "Africa", "Northern Africa", [9.522, 33.76], ["DZA", "LBY"]],
+  "turkiye-flag": [
+    "TUR",
+    "Asia",
+    "Western Asia",
+    [35.424, 38.99],
+    ["ARM", "AZE", "BGR", "GEO", "GRC", "IRN", "IRQ", "SYR"]
+  ],
+  "turkmenistan-flag": [
+    "TKM",
+    "Asia",
+    "Central Asia",
+    [53.5, 39.552],
+    ["AFG", "IRN", "KAZ", "UZB"]
+  ],
+  "turks-and-caicos-islands-flag": ["TCA", "Americas", "Caribbean", [-72.254, 21.799], []],
+  "tuvalu-flag": ["TUV", "Oceania", "Polynesia", [178.682, -7.477], []],
+  "uganda-flag": ["UGA", "Africa", "Eastern Africa", [32.367, 1.276], ["COD", "KEN", "RWA", "TZA"]],
+  "ukraine-flag": [
+    "UKR",
+    "Europe",
+    "Eastern Europe",
+    [29.935, 45.693],
+    ["BLR", "HUN", "MDA", "POL", "ROU", "RUS", "SVK"]
+  ],
+  "united-arab-emirates-flag": ["ARE", "Asia", "Western Asia", [53.977, 23.434], ["OMN", "SAU"]],
+  "united-kingdom-flag": ["GBR", "Europe", "Northern Europe", [-4.012, 56.686], ["IRL"]],
+  "united-states-minor-outlying-islands-flag": [
+    "UMI",
+    "Oceania",
+    "Micronesia",
+    [-75.015, 18.407],
+    []
+  ],
+  "united-states-virgin-islands-flag": ["VIR", "Americas", "Caribbean", [-64.731, 18.346], []],
+  "uruguay-flag": ["URY", "Americas", "South America", [-56.018, -32.8], ["ARG", "BRA"]],
+  "uzbekistan-flag": [
+    "UZB",
+    "Asia",
+    "Central Asia",
+    [71.734, 39.941],
+    ["AFG", "KAZ", "KGZ", "TJK", "TKM"]
+  ],
+  "vanuatu-flag": ["VUT", "Oceania", "Melanesia", [167.475, -16.263], []],
+  "vatican-city-flag": ["VAT", "Europe", "Southern Europe", [12.453, 41.903], ["ITA"]],
+  "venezuela-flag": ["VEN", "Americas", "South America", [-63.209, 7.268], ["BRA", "COL", "GUY"]],
+  "vietnam-flag": ["VNM", "Asia", "South-eastern Asia", [107.634, 12.9], ["CHN", "KHM", "LAO"]],
+  "wallis-and-futuna-islands-flag": ["WLF", "Oceania", "Polynesia", [-176.162, -13.282], []],
+  "yemen-flag": ["YEM", "Asia", "Western Asia", [50.47, 16.904], ["OMN", "SAU"]],
+  "zambia-flag": [
+    "ZMB",
+    "Africa",
+    "Eastern Africa",
+    [24.903, -14.407],
+    ["AGO", "COD", "MOZ", "MWI", "NAM", "TZA", "ZWE"]
+  ],
+  "zimbabwe-flag": [
+    "ZWE",
+    "Africa",
+    "Eastern Africa",
+    [29.852, -19.003],
+    ["BWA", "MOZ", "ZAF", "ZMB"]
+  ]
+}

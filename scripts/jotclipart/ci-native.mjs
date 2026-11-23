@@ -140,6 +140,7 @@ try {
       'jotclipart-legacy-source',
       'jotclipart-future-import',
       'collection-reference-deltas',
+      'related-topic-ranking',
       'search-suggestion-thumbnails',
       'jotclipart-ci-policy',
       'jotclipart-indexing-deferred',

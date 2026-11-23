@@ -1,6 +1,7 @@
 // Request reader over one captured root. No source approval or pointer reads here.
 import { mapFour } from '../catalog-search/bounded-map.mjs';
 import { lookupTopic, slugOK, fail, CollectionFault } from './store.mjs';
+import { findRelatedTopics } from './related-topics.mjs';
 import {
   VIEW_PROTOCOL,
   validateTopicIdentity,
@@ -146,7 +147,7 @@ export async function readCollectionReferences(
     fail('Page IDs differ from membership');
   // Legacy duplicated covers/counts/card DTOs are intentionally ignored in v2.
   const [relatedRows, shared, resolvedSurprise] = await Promise.all([
-    mapFour(record.related, (relation) => find(relation.slug)),
+    findRelatedTopics(record, find),
     store.read('collections', collections.sharedContext),
     resolveSurprise ? resolveSurprise(context) : null,
   ]);
