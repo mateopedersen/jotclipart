@@ -6,3 +6,4 @@ allowBuilds:
 overrides:
   "undici@>=7 <7.30.2": "7.30.2"
   "undici@>=8 <8.12.4": "8.12.4"
+  "@napi-rs/wasm-runtime@1.2.4>@emnapi/runtime": "1.11.3"
