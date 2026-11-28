@@ -34,7 +34,9 @@ for (const [engine, launcher] of Object.entries(engines)) {
   await context.route(base + '/contact/', async (route) => {
     const response = await route.fetch();
     const html = await response.text();
-    const hashes = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script(?:[\t\n\f\r /][^>]*)?>/gi)]
+    const hashes = [
+      ...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script(?:[\t\n\f\r /][^>]*)?>/gi),
+    ]
       .filter(
         (m) =>
           !(
