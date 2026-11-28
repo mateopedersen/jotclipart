@@ -25,7 +25,7 @@ const hashes = new Set();
 
 for (const file of htmlFiles) {
   const html = readFileSync(file, 'utf8');
-  for (const match of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)) {
+  for (const match of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script\s*[^>]*>/gi)) {
     if (
       /\bsrc\s*=/.test(match[1]) ||
       /type="application\/(?:ld\+)?json"/.test(match[1]) ||

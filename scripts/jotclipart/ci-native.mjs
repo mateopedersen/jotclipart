@@ -141,6 +141,7 @@ try {
       'jotclipart-future-import',
       'collection-reference-deltas',
       'related-topic-ranking',
+      'related-browser-url',
       'search-suggestion-thumbnails',
       'jotclipart-ci-policy',
       'jotclipart-indexing-deferred',

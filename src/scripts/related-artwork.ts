@@ -2,6 +2,7 @@ import { displayTitle, displayArtworkTitle } from '../lib/display-title.ts';
 import { FAVORITES_KEY, parseFavoriteIds, toggleStoredFavorite } from '../lib/favorites-storage';
 import type { BrowserRelatedCard, BrowserSnapshot, Mode } from '../lib/related/engine';
 import { actionIconAssets } from '../lib/action-icons';
+import { relatedCardURL } from '../lib/related/browser-url';
 export function initRelatedArtwork() {
   const root = document.querySelector<HTMLElement>('[data-related-root]');
   if (!root || root.dataset.ready) return;
@@ -221,7 +222,10 @@ export function initRelatedArtwork() {
       (node.querySelector('.related-card-copy') ?? node).append(editor);
     }
     const editLabel = data.editable === false ? 'View' : 'Edit';
-    editor.href = data.editable === false ? data.href : `/edit/${data.id}/`;
+    editor.href =
+      data.editable === false
+        ? relatedCardURL(data.href, 'detail')
+        : `/edit/${encodeURIComponent(data.id)}/`;
     editor.setAttribute('aria-label', `${editLabel} ${displayArtworkTitle(data.title)}`);
     editor.querySelector('[data-related-edit-label]')!.textContent = editLabel;
     const editIcon = editor.querySelector<HTMLImageElement>('img');
@@ -234,7 +238,7 @@ export function initRelatedArtwork() {
     node.dataset.relatedReason = data.reasonCode;
     node
       .querySelectorAll<HTMLAnchorElement>('[data-related-detail]')
-      .forEach((link) => (link.href = data.href));
+      .forEach((link) => (link.href = relatedCardURL(data.href, 'detail')));
     node.querySelector<HTMLElement>('.related-card-title')!.dataset.displayTitle = '';
     node.querySelector('.related-card-title')!.textContent = displayArtworkTitle(data.title);
     node.querySelector('.related-reason')!.textContent = data.reason;
@@ -262,14 +266,14 @@ export function initRelatedArtwork() {
     node.querySelector('.related-picture')!.setAttribute('aria-label', data.alt);
     image.removeAttribute('srcset');
     image.removeAttribute('sizes');
-    image.src = data.webp;
+    image.src = relatedCardURL(data.webp, 'media');
     image.alt = data.alt;
     image.title = displayArtworkTitle(data.title);
     node.querySelectorAll<HTMLAnchorElement>('[data-related-download]').forEach((link) => {
       const format = link.dataset.relatedDownload as 'webp' | 'pdf',
         url = data[format];
       link.hidden = !url;
-      if (url) link.href = url;
+      if (url) link.href = relatedCardURL(url, 'media');
       else link.removeAttribute('href');
       link.download = `${data.id}.${format}`;
       link.dataset.downloadOpen = data.id;

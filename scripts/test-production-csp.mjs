@@ -27,7 +27,7 @@ page.on('pageerror', (e) => errors.push(e.message));
 page.on('response', (r) => {
   if (r.url().includes('.wasm'))
     wasm.push({ url: r.url(), status: r.status(), type: r.headers()['content-type'] });
-  if (r.url().includes('assets.ultraclipart.com'))
+  if (new URL(r.url()).hostname === 'assets.ultraclipart.com')
     responses.push({
       url: r.url(),
       status: r.status(),

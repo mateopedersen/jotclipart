@@ -24,9 +24,10 @@ const assert = (condition, message) => {
 const plain = (html) =>
   html
     .replace(/<[^>]+>/g, '')
-    .replace(/&amp;/g, '&')
-    .replace(/&#(?:39|x27);/g, "'")
-    .replace(/&quot;/g, '"')
+    .replace(
+      /&(amp|quot|#39|#x27);/g,
+      (_, name) => ({ amp: '&', quot: '"', '#39': "'", '#x27': "'" })[name],
+    )
     .replace(/\s+/g, ' ')
     .trim();
 const oldHost =

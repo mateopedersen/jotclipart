@@ -13,7 +13,9 @@ test('deployed CSP authorizes every exact executable inline script without unsaf
   const script = headers.match(/script-src ([^;]+)/)[1];
   assert(!script.includes("'unsafe-inline'"));
   for (const f of walk(testBuildDirectory).filter((f) => f.endsWith('.html'))) {
-    for (const m of readFileSync(f, 'utf8').matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)) {
+    for (const m of readFileSync(f, 'utf8').matchAll(
+      /<script\b([^>]*)>([\s\S]*?)<\/script\s*[^>]*>/gi,
+    )) {
       if (/\bsrc\s*=/.test(m[1]) || /type="application\/(?:ld\+)?json"/.test(m[1]) || !m[2].trim())
         continue;
       assert(script.includes(`'sha256-${createHash('sha256').update(m[2]).digest('base64')}'`), f);

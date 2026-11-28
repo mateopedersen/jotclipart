@@ -39,7 +39,7 @@ export function htmlElements(html, { headOnly = false } = {}) {
       attributes[match[1].toLowerCase()] = decodeHtml(match[2] ?? match[3] ?? match[4] ?? '');
     let text = '';
     if (['script', 'style', 'textarea', 'title'].includes(name)) {
-      const end = new RegExp(`</${name}\\s*>`, 'gi');
+      const end = new RegExp(`</${name}\\s*[^>]*>`, 'gi');
       end.lastIndex = tags.lastIndex;
       const close = end.exec(html);
       if (close) {
@@ -164,7 +164,11 @@ export function renderedCatalogImages(elements, index) {
 
 export function attachImageMetadata(html, index) {
   // Re-running the hook must not accumulate duplicate graphs.
-  html = html.replace(/<script\b[^>]*\bid="catalog-image-metadata"[^>]*>[\s\S]*?<\/script>/gi, '');
+  const previous = htmlElements(html).filter(
+    (element) => element.name === 'script' && element.attributes.id === 'catalog-image-metadata',
+  );
+  for (const element of previous.reverse())
+    html = html.slice(0, element.index) + html.slice(element.end);
   html = deferLargeStructuredData(html);
   const elements = htmlElements(html);
   if (isNoindex(elements)) return { html, images: 0, added: 0, noindex: true };

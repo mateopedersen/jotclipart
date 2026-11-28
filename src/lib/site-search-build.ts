@@ -99,10 +99,10 @@ function staticAttribute(source: string, name: string) {
     source.match(new RegExp(`\\b${name}="([^"]+)"`))?.[1] ||
     source.match(new RegExp(`\\bconst\\s+${name}\\s*=\\s*(['"])(.*?)\\1`))?.[2] ||
     '';
-  return value
-    .replace(/&amp;/g, '&')
-    .replace(/&quot;/g, '"')
-    .replace(/&(?:apos|rsquo);/g, "'");
+  return value.replace(
+    /&(amp|quot|apos|rsquo);/g,
+    (_, entity: string) => ({ amp: '&', quot: '"', apos: "'", rsquo: "'" })[entity]!,
+  );
 }
 export function buildSiteSearch(): SiteSearchEntry[] {
   const entries = new Map<string, SiteSearchEntry>();

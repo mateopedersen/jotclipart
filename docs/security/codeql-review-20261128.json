@@ -1,0 +1,837 @@
+{
+  "reviewDate": "2026-11-28",
+  "repository": "mateopedersen/jotclipart",
+  "sourceRevision": "c8ce33e5c567ba03ed6df045ca77d82fef0f8e65",
+  "scope": "First complete default CodeQL analysis (Actions, JavaScript/TypeScript and Python). Every initial result reviewed against source and SARIF; no query exclusions, blanket suppressions, artwork rewrites or weakened tests. GitHub follow-up scan and deployment receipts are separate evidence.",
+  "initialAlerts": 59,
+  "codeHardened": 17,
+  "reviewedFalsePositives": 42,
+  "alerts": [
+    {
+      "alert": 1,
+      "rule": "js/bad-code-sanitization",
+      "originalLocation": {
+        "path": "scripts/catalog-snapshot/build-runtime.mjs",
+        "start_line": 275,
+        "end_line": 275,
+        "start_column": 1218,
+        "end_column": 1245
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "JSON.stringify(policy.page) serializes a repository-owned policy object into a JavaScript object expression. It is not a quote-replacement sanitizer. Quotes, backslashes and controls are escaped by JSON.stringify, and no request value is evaluated.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/1"
+    },
+    {
+      "alert": 2,
+      "rule": "js/bad-code-sanitization",
+      "originalLocation": {
+        "path": "scripts/catalog-snapshot/build-runtime.mjs",
+        "start_line": 275,
+        "end_line": 275,
+        "start_column": 1263,
+        "end_column": 1364
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "The interpolated CSP token is a fixed sha256 prefix plus a base64 digest of the repository navigation script, serialized by JSON.stringify into a JavaScript string literal. Neither source code nor a visitor-provided expression is concatenated at this position.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/2"
+    },
+    {
+      "alert": 3,
+      "rule": "js/bad-code-sanitization",
+      "originalLocation": {
+        "path": "scripts/catalog-snapshot/test-content-native.mjs",
+        "start_line": 129,
+        "end_line": 129,
+        "start_column": 1340,
+        "end_column": 1371
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "The native test generator serializes report.revision (a checked source commit) with JSON.stringify into a worker fixture. It is not raw expression interpolation or a custom code sanitizer.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/3"
+    },
+    {
+      "alert": 4,
+      "rule": "js/bad-code-sanitization",
+      "originalLocation": {
+        "path": "scripts/catalog-snapshot/test-content-native.mjs",
+        "start_line": 129,
+        "end_line": 129,
+        "start_column": 1421,
+        "end_column": 1453
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "The native test generator serializes report.abiSHA256 with JSON.stringify into a worker fixture. The fixture uses the verified installed renderer ABI; no request-provided code is evaluated.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/4"
+    },
+    {
+      "alert": 5,
+      "rule": "js/bad-code-sanitization",
+      "originalLocation": {
+        "path": "scripts/catalog-snapshot/test-content-native.mjs",
+        "start_line": 129,
+        "end_line": 129,
+        "start_column": 1503,
+        "end_column": 1545
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "The native test generator serializes the reviewed inline hash array with JSON.stringify into a worker fixture. Elements remain string literals and cannot escape the generated expression.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/5"
+    },
+    {
+      "alert": 6,
+      "rule": "js/bad-code-sanitization",
+      "originalLocation": {
+        "path": "tests/catalog-worker-request-isolation.mjs",
+        "start_line": 13,
+        "end_line": 13,
+        "start_column": 585,
+        "end_column": 604
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "The isolation fixture injects only a local constant object-store key through JSON.stringify into a synthetic worker. Network inputs are read as data and never used as code.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/6"
+    },
+    {
+      "alert": 7,
+      "rule": "js/bad-code-sanitization",
+      "originalLocation": {
+        "path": "tests/jotclipart-editor-preview.mjs",
+        "start_line": 527,
+        "end_line": 527,
+        "start_column": 688,
+        "end_column": 720
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "The editor-preview fixture serializes context.snapshot with JSON.stringify. The generated worker receives a data object, not an unquoted expression.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/7"
+    },
+    {
+      "alert": 8,
+      "rule": "js/bad-code-sanitization",
+      "originalLocation": {
+        "path": "tests/jotclipart-editor-preview.mjs",
+        "start_line": 527,
+        "end_line": 527,
+        "start_column": 735,
+        "end_column": 769
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "The editor-preview fixture serializes context.rootSHA256 with JSON.stringify; the checked digest is a string literal, not code.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/8"
+    },
+    {
+      "alert": 9,
+      "rule": "js/bad-code-sanitization",
+      "originalLocation": {
+        "path": "tests/jotclipart-editor-preview.mjs",
+        "start_line": 527,
+        "end_line": 527,
+        "start_column": 1145,
+        "end_column": 1188
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "The editor-preview fixture serializes the delivery key with JSON.stringify. Any quote or control is escaped in the generated worker string literal.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/9"
+    },
+    {
+      "alert": 10,
+      "rule": "js/xss-through-dom",
+      "originalLocation": {
+        "path": "src/editor/svg.ts",
+        "start_line": 82,
+        "end_line": 82,
+        "start_column": 50,
+        "end_column": 56
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "DOMParser uses the inert image/svg+xml document. sanitizeSvg rejects DOCTYPE/ENTITY, parser errors, non-SVG namespaces, any element outside the finite shape/gradient whitelist and every attribute outside the finite allowlist. Event handlers, external/data/javascript URLs and nonlocal url() references are rejected before document.importNode. The parsed untrusted document is never attached before validation.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/10"
+    },
+    {
+      "alert": 11,
+      "rule": "js/xss-through-dom",
+      "originalLocation": {
+        "path": "src/scripts/related-artwork.ts",
+        "start_line": 224,
+        "end_line": 224,
+        "start_column": 19,
+        "end_column": 76
+      },
+      "disposition": "code-hardened",
+      "evidence": "View links pass through relatedCardURL; edit IDs are percent-encoded in a fixed local editor path.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/11"
+    },
+    {
+      "alert": 12,
+      "rule": "js/xss-through-dom",
+      "originalLocation": {
+        "path": "src/scripts/related-artwork.ts",
+        "start_line": 237,
+        "end_line": 237,
+        "start_column": 39,
+        "end_column": 48
+      },
+      "disposition": "code-hardened",
+      "evidence": "Related detail links are parsed and restricted to the exact owned HTTPS origin and canonical /art/slug/ path.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/12"
+    },
+    {
+      "alert": 13,
+      "rule": "js/xss-through-dom",
+      "originalLocation": {
+        "path": "src/scripts/related-artwork.ts",
+        "start_line": 265,
+        "end_line": 265,
+        "start_column": 17,
+        "end_column": 26
+      },
+      "disposition": "code-hardened",
+      "evidence": "Original image URLs are parsed and restricted to the exact owned HTTPS page or assets origin and WebP/PDF media paths.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/13"
+    },
+    {
+      "alert": 14,
+      "rule": "js/xss-through-dom",
+      "originalLocation": {
+        "path": "src/scripts/related-artwork.ts",
+        "start_line": 272,
+        "end_line": 272,
+        "start_column": 28,
+        "end_column": 31
+      },
+      "disposition": "code-hardened",
+      "evidence": "Download links use the same exact-origin URL validator, rejecting active schemes, credentials, nonstandard ports, query/fragment payloads and lookalike hosts.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/14"
+    },
+    {
+      "alert": 15,
+      "rule": "js/reflected-xss",
+      "originalLocation": {
+        "path": "tests/e2e/surprise-navigation.mjs",
+        "start_line": 63,
+        "end_line": 63,
+        "start_column": 7,
+        "end_column": 99
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "The local-only synthetic HTTP server accepts only the regex alternatives alpha or bravo at /art/(alpha|bravo)/. The capture inserted into detail() is therefore one of two fixed words; arbitrary request markup cannot reach the HTML response.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/15"
+    },
+    {
+      "alert": 16,
+      "rule": "js/incomplete-url-substring-sanitization",
+      "originalLocation": {
+        "path": "scripts/catalog-snapshot/test-content-native.mjs",
+        "start_line": 453,
+        "end_line": 453,
+        "start_column": 11,
+        "end_column": 99
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "This is a regression assertion over a test fixture, generated XML/HTML/CSV or already parsed share URL, not a URL authorization check. It requires the expected original-media host to be present in the rendered fixture; production asset eligibility uses anchored safeAsset rules.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/16"
+    },
+    {
+      "alert": 17,
+      "rule": "js/incomplete-url-substring-sanitization",
+      "originalLocation": {
+        "path": "scripts/catalog-snapshot/test-content-native.mjs",
+        "start_line": 473,
+        "end_line": 475,
+        "start_column": 13,
+        "end_column": 14
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "This is a regression assertion over a test fixture, generated XML/HTML/CSV or already parsed share URL, not a URL authorization check. It checks an editor fixture contains the accepted original-media origin; it does not grant that origin permission.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/17"
+    },
+    {
+      "alert": 18,
+      "rule": "js/incomplete-url-substring-sanitization",
+      "originalLocation": {
+        "path": "scripts/jotclipart/ci-browser.mjs",
+        "start_line": 596,
+        "end_line": 596,
+        "start_column": 15,
+        "end_column": 68
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "This is a regression assertion over a test fixture, generated XML/HTML/CSV or already parsed share URL, not a URL authorization check. It rejects any old-brand hostname substring in already parsed public share links, after exact network host checks. The negative condition is stricter than origin matching.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/18"
+    },
+    {
+      "alert": 19,
+      "rule": "js/incomplete-url-substring-sanitization",
+      "originalLocation": {
+        "path": "scripts/jotclipart/test-local.mjs",
+        "start_line": 183,
+        "end_line": 183,
+        "start_column": 15,
+        "end_column": 54
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "This is a regression assertion over a test fixture, generated XML/HTML/CSV or already parsed share URL, not a URL authorization check. It rejects an old asset-host token in generated CSP output. It cannot authorize any visitor URL.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/19"
+    },
+    {
+      "alert": 20,
+      "rule": "js/incomplete-url-substring-sanitization",
+      "originalLocation": {
+        "path": "scripts/test-production-csp.mjs",
+        "start_line": 30,
+        "end_line": 30,
+        "start_column": 7,
+        "end_column": 50
+      },
+      "disposition": "code-hardened",
+      "evidence": "The production CSP probe selects requests by parsed exact hostname instead of a URL substring.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/20"
+    },
+    {
+      "alert": 21,
+      "rule": "js/incomplete-url-substring-sanitization",
+      "originalLocation": {
+        "path": "tests/assets-indexing.mjs",
+        "start_line": 10,
+        "end_line": 10,
+        "start_column": 13,
+        "end_column": 62
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "This is a regression assertion over a test fixture, generated XML/HTML/CSV or already parsed share URL, not a URL authorization check. It asserts the cookie-policy entry is included in a generated sitemap; no request is accepted.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/21"
+    },
+    {
+      "alert": 22,
+      "rule": "js/incomplete-url-substring-sanitization",
+      "originalLocation": {
+        "path": "tests/assets-indexing.mjs",
+        "start_line": 11,
+        "end_line": 11,
+        "start_column": 13,
+        "end_column": 68
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "This is a regression assertion over a test fixture, generated XML/HTML/CSV or already parsed share URL, not a URL authorization check. It asserts the public library-index entry is included in a generated sitemap; no request is accepted.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/22"
+    },
+    {
+      "alert": 23,
+      "rule": "js/incomplete-url-substring-sanitization",
+      "originalLocation": {
+        "path": "tests/basketball.mjs",
+        "start_line": 68,
+        "end_line": 68,
+        "start_column": 15,
+        "end_column": 76
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "This is a regression assertion over a test fixture, generated XML/HTML/CSV or already parsed share URL, not a URL authorization check. It asserts the expected basketball canonical URL occurs in a built fixture; no URL is routed or authorized.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/23"
+    },
+    {
+      "alert": 24,
+      "rule": "js/incomplete-url-substring-sanitization",
+      "originalLocation": {
+        "path": "tests/book.mjs",
+        "start_line": 69,
+        "end_line": 69,
+        "start_column": 15,
+        "end_column": 70
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "This is a regression assertion over a test fixture, generated XML/HTML/CSV or already parsed share URL, not a URL authorization check. It asserts the expected book canonical URL occurs in a built fixture; no URL is routed or authorized.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/24"
+    },
+    {
+      "alert": 25,
+      "rule": "js/incomplete-url-substring-sanitization",
+      "originalLocation": {
+        "path": "tests/catalog-snapshot/snapshot-html-cache.mjs",
+        "start_line": 237,
+        "end_line": 237,
+        "start_column": 10,
+        "end_column": 75
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "This is a regression assertion over a test fixture, generated XML/HTML/CSV or already parsed share URL, not a URL authorization check. It asserts preview HTML uses the preview origin after a synthetic cache-isolation request. Request routing and cache identity are separately checked.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/25"
+    },
+    {
+      "alert": 26,
+      "rule": "js/incomplete-url-substring-sanitization",
+      "originalLocation": {
+        "path": "tests/contact.mjs",
+        "start_line": 41,
+        "end_line": 41,
+        "start_column": 14,
+        "end_column": 48
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "This is a regression assertion over a test fixture, generated XML/HTML/CSV or already parsed share URL, not a URL authorization check. It rejects the Google Forms token in the contact policy source. This negative source assertion cannot accept a foreign hostname.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/26"
+    },
+    {
+      "alert": 27,
+      "rule": "js/incomplete-url-substring-sanitization",
+      "originalLocation": {
+        "path": "tests/e2e/favorites-workspace.mjs",
+        "start_line": 214,
+        "end_line": 214,
+        "start_column": 13,
+        "end_column": 59
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "This is a regression assertion over a test fixture, generated XML/HTML/CSV or already parsed share URL, not a URL authorization check. It checks a downloaded fixture CSV contains the expected artwork prefix. The CSV is inspected as text and spreadsheet formulas are independently made inert.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/27"
+    },
+    {
+      "alert": 28,
+      "rule": "js/incomplete-url-substring-sanitization",
+      "originalLocation": {
+        "path": "tests/e2e/library-index.mjs",
+        "start_line": 143,
+        "end_line": 143,
+        "start_column": 17,
+        "end_column": 74
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "This is a regression assertion over a test fixture, generated XML/HTML/CSV or already parsed share URL, not a URL authorization check. It checks the public library-index entry in a fixture sitemap response, not the hostname of an untrusted link.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/28"
+    },
+    {
+      "alert": 29,
+      "rule": "js/incomplete-url-substring-sanitization",
+      "originalLocation": {
+        "path": "tests/favorites-workspace.mjs",
+        "start_line": 94,
+        "end_line": 94,
+        "start_column": 13,
+        "end_column": 62
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "This is a regression assertion over a test fixture, generated XML/HTML/CSV or already parsed share URL, not a URL authorization check. It checks the expected canonical artwork URL occurs in a generated CSV export. This is not a navigation decision.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/29"
+    },
+    {
+      "alert": 30,
+      "rule": "js/incomplete-url-substring-sanitization",
+      "originalLocation": {
+        "path": "tests/jotclipart-live-adapters.mjs",
+        "start_line": 196,
+        "end_line": 196,
+        "start_column": 42,
+        "end_column": 74
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "This is a regression assertion over a test fixture, generated XML/HTML/CSV or already parsed share URL, not a URL authorization check. It rejects any old host substring from calls recorded by the synthetic publisher adapter. This negative assertion is not a production host allowlist.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/30"
+    },
+    {
+      "alert": 31,
+      "rule": "js/incomplete-url-substring-sanitization",
+      "originalLocation": {
+        "path": "tests/jotclipart-share-client.mjs",
+        "start_line": 191,
+        "end_line": 191,
+        "start_column": 13,
+        "end_column": 70
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "This is a regression assertion over a test fixture, generated XML/HTML/CSV or already parsed share URL, not a URL authorization check. It rejects old-brand text from share links whose protocol and exact network hosts have already been asserted. No untrusted host is accepted.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/31"
+    },
+    {
+      "alert": 32,
+      "rule": "js/incomplete-url-substring-sanitization",
+      "originalLocation": {
+        "path": "tests/school.mjs",
+        "start_line": 69,
+        "end_line": 69,
+        "start_column": 15,
+        "end_column": 72
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "This is a regression assertion over a test fixture, generated XML/HTML/CSV or already parsed share URL, not a URL authorization check. It asserts the expected school canonical URL in a built fixture; it is not a URL validator.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/32"
+    },
+    {
+      "alert": 33,
+      "rule": "js/incomplete-url-substring-sanitization",
+      "originalLocation": {
+        "path": "tests/sharing-links.mjs",
+        "start_line": 58,
+        "end_line": 58,
+        "start_column": 15,
+        "end_column": 58
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "This is a regression assertion over a test fixture, generated XML/HTML/CSV or already parsed share URL, not a URL authorization check. It checks an encoded share payload contains the expected canonical artwork after separately checking HTTPS/network URLs. It is not an origin allowlist.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/33"
+    },
+    {
+      "alert": 34,
+      "rule": "js/incomplete-url-substring-sanitization",
+      "originalLocation": {
+        "path": "tests/sitemaps.mjs",
+        "start_line": 239,
+        "end_line": 239,
+        "start_column": 10,
+        "end_column": 76
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "This is a regression assertion over a test fixture, generated XML/HTML/CSV or already parsed share URL, not a URL authorization check. locations is an array of individual XML loc values, not a URL string. Array.includes performs exact element equality with the expected canonical URL.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/34"
+    },
+    {
+      "alert": 35,
+      "rule": "js/incomplete-url-substring-sanitization",
+      "originalLocation": {
+        "path": "tests/sitemaps.mjs",
+        "start_line": 240,
+        "end_line": 240,
+        "start_column": 11,
+        "end_column": 73
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "This is a regression assertion over a test fixture, generated XML/HTML/CSV or already parsed share URL, not a URL authorization check. locations is an array of individual XML loc values. Array.includes performs exact equality; this assertion excludes the exact retired artwork URL.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/35"
+    },
+    {
+      "alert": 36,
+      "rule": "js/incomplete-url-substring-sanitization",
+      "originalLocation": {
+        "path": "tests/volleyball.mjs",
+        "start_line": 86,
+        "end_line": 86,
+        "start_column": 15,
+        "end_column": 79
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "This is a regression assertion over a test fixture, generated XML/HTML/CSV or already parsed share URL, not a URL authorization check. It asserts the expected volleyball entry in a generated sitemap fixture, not whether an arbitrary URL is trusted.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/36"
+    },
+    {
+      "alert": 37,
+      "rule": "js/bad-tag-filter",
+      "originalLocation": {
+        "path": "scripts/audit-performance.mjs",
+        "start_line": 97,
+        "end_line": 97,
+        "start_column": 35,
+        "end_column": 72
+      },
+      "disposition": "code-hardened",
+      "evidence": "Performance inspection recognizes browser-accepted script end-tag whitespace and attributes.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/37"
+    },
+    {
+      "alert": 38,
+      "rule": "js/bad-tag-filter",
+      "originalLocation": {
+        "path": "scripts/security-headers.mjs",
+        "start_line": 28,
+        "end_line": 28,
+        "start_column": 38,
+        "end_column": 75
+      },
+      "disposition": "code-hardened",
+      "evidence": "Static CSP hash extraction recognizes browser-accepted script end-tag whitespace and attributes.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/38"
+    },
+    {
+      "alert": 39,
+      "rule": "js/bad-tag-filter",
+      "originalLocation": {
+        "path": "scripts/seo/indexnow-release.mjs",
+        "start_line": 87,
+        "end_line": 87,
+        "start_column": 37,
+        "end_column": 74
+      },
+      "disposition": "code-hardened",
+      "evidence": "IndexNow JSON-LD extraction recognizes browser-accepted script end-tag whitespace and attributes.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/39"
+    },
+    {
+      "alert": 40,
+      "rule": "js/bad-tag-filter",
+      "originalLocation": {
+        "path": "server/catalog-snapshot/module-preloads.mjs",
+        "start_line": 6,
+        "end_line": 6,
+        "start_column": 58,
+        "end_column": 93
+      },
+      "disposition": "code-hardened",
+      "evidence": "Module preload extraction is case-insensitive and recognizes browser-accepted closing tags.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/40"
+    },
+    {
+      "alert": 41,
+      "rule": "js/bad-tag-filter",
+      "originalLocation": {
+        "path": "server/catalog-snapshot/response-policy.mjs",
+        "start_line": 8,
+        "end_line": 8,
+        "start_column": 34,
+        "end_column": 71
+      },
+      "disposition": "code-hardened",
+      "evidence": "The executable inline hash guard checks browser-accepted script end tags; adversarial mixed-case/whitespace regressions reject unreviewed code.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/41"
+    },
+    {
+      "alert": 42,
+      "rule": "js/bad-tag-filter",
+      "originalLocation": {
+        "path": "tests/csp.mjs",
+        "start_line": 16,
+        "end_line": 16,
+        "start_column": 55,
+        "end_column": 92
+      },
+      "disposition": "code-hardened",
+      "evidence": "The static CSP regression inspects scripts with browser-accepted closing tags.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/42"
+    },
+    {
+      "alert": 43,
+      "rule": "js/bad-tag-filter",
+      "originalLocation": {
+        "path": "tests/e2e/contact.mjs",
+        "start_line": 37,
+        "end_line": 37,
+        "start_column": 39,
+        "end_column": 76
+      },
+      "disposition": "code-hardened",
+      "evidence": "Contact browser test policy hashing uses the same browser-accepted closing-tag grammar.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/43"
+    },
+    {
+      "alert": 44,
+      "rule": "js/bad-tag-filter",
+      "originalLocation": {
+        "path": "tests/helpers/production-csp.mjs",
+        "start_line": 17,
+        "end_line": 17,
+        "start_column": 40,
+        "end_column": 77
+      },
+      "disposition": "code-hardened",
+      "evidence": "Production browser CSP fixture hashing uses the same browser-accepted closing-tag grammar.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/44"
+    },
+    {
+      "alert": 45,
+      "rule": "js/double-escaping",
+      "originalLocation": {
+        "path": "scripts/jotclipart/ci-browser.mjs",
+        "start_line": 66,
+        "end_line": 67,
+        "start_column": 3,
+        "end_column": 30
+      },
+      "disposition": "code-hardened",
+      "evidence": "The browser verifier decodes each entity exactly once in one replacement pass.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/45"
+    },
+    {
+      "alert": 46,
+      "rule": "js/double-escaping",
+      "originalLocation": {
+        "path": "scripts/jotclipart/test-local.mjs",
+        "start_line": 25,
+        "end_line": 27,
+        "start_column": 3,
+        "end_column": 28
+      },
+      "disposition": "code-hardened",
+      "evidence": "The local verifier decodes each entity exactly once in one replacement pass.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/46"
+    },
+    {
+      "alert": 47,
+      "rule": "js/double-escaping",
+      "originalLocation": {
+        "path": "src/lib/site-search-build.ts",
+        "start_line": 102,
+        "end_line": 103,
+        "start_column": 10,
+        "end_column": 28
+      },
+      "disposition": "code-hardened",
+      "evidence": "Static search attributes decode each entity once, preserving literal nested entity text.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/47"
+    },
+    {
+      "alert": 48,
+      "rule": "js/incomplete-multi-character-sanitization",
+      "originalLocation": {
+        "path": "scripts/catalog-snapshot/test-content-native.mjs",
+        "start_line": 23,
+        "end_line": 24,
+        "start_column": 5,
+        "end_column": 31
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "decode is a plain-text assertion helper in a local native content test. Stripped/decoded text is compared with accepted metadata and is never emitted as HTML.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/48"
+    },
+    {
+      "alert": 49,
+      "rule": "js/incomplete-multi-character-sanitization",
+      "originalLocation": {
+        "path": "scripts/catalog-snapshot/verify-content-live.mjs",
+        "start_line": 10,
+        "end_line": 11,
+        "start_column": 3,
+        "end_column": 29
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "clean is a plain-text verification helper; its output is compared against the reviewed catalog during live readback and is not rendered as markup.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/49"
+    },
+    {
+      "alert": 50,
+      "rule": "js/incomplete-multi-character-sanitization",
+      "originalLocation": {
+        "path": "scripts/jotclipart/test-local.mjs",
+        "start_line": 25,
+        "end_line": 26,
+        "start_column": 3,
+        "end_column": 29
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "plain extracts text for assertions in the local verification script. Its result never enters an HTML sink; this is not an HTML sanitizer.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/50"
+    },
+    {
+      "alert": 51,
+      "rule": "js/incomplete-multi-character-sanitization",
+      "originalLocation": {
+        "path": "scripts/jotclipart/test-local.mjs",
+        "start_line": 155,
+        "end_line": 155,
+        "start_column": 33,
+        "end_column": 92
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "The script/style removal feeds plain() and string assertions about visible branding. Nothing from this verifier is served as HTML or used to authorize content.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/51"
+    },
+    {
+      "alert": 52,
+      "rule": "js/incomplete-multi-character-sanitization",
+      "originalLocation": {
+        "path": "scripts/seo/audit-core-seo.mjs",
+        "start_line": 9,
+        "end_line": 9,
+        "start_column": 14,
+        "end_column": 43
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "strip extracts heading copy for an SEO report and plain-text comparisons. It does not claim to sanitize HTML for rendering.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/52"
+    },
+    {
+      "alert": 53,
+      "rule": "js/incomplete-multi-character-sanitization",
+      "originalLocation": {
+        "path": "scripts/seo/audit-image-metadata.mjs",
+        "start_line": 62,
+        "end_line": 62,
+        "start_column": 5,
+        "end_column": 83
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "The extracted H1 is decoded and compared with item.title in a build audit. It is not emitted into a page.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/53"
+    },
+    {
+      "alert": 54,
+      "rule": "js/incomplete-multi-character-sanitization",
+      "originalLocation": {
+        "path": "scripts/seo/image-seo.mjs",
+        "start_line": 167,
+        "end_line": 167,
+        "start_column": 10,
+        "end_column": 99
+      },
+      "disposition": "code-hardened",
+      "evidence": "Metadata replacement removes only tokenized script elements with the exact catalog-image-metadata ID, using source spans instead of a regex stripping pass. Raw-text tokenization now recognizes whitespace and attributes in closing tags.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/54"
+    },
+    {
+      "alert": 55,
+      "rule": "js/incomplete-multi-character-sanitization",
+      "originalLocation": {
+        "path": "scripts/seo/indexnow-release.mjs",
+        "start_line": 81,
+        "end_line": 81,
+        "start_column": 17,
+        "end_column": 82
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "The removed script/style bodies are used only to compute an IndexNow editorial change fingerprint. The cleaned fragment is never served; the original HTML remains subject to its own publication/CSP checks.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/55"
+    },
+    {
+      "alert": 56,
+      "rule": "js/incomplete-multi-character-sanitization",
+      "originalLocation": {
+        "path": "src/lib/site-search-build.ts",
+        "start_line": 67,
+        "end_line": 71,
+        "start_column": 18,
+        "end_column": 37
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "publicText removes nonpublic source regions only to collect search words. The result becomes data in the search directory; search-client.ts uses title.textContent and description.textContent, and search-suggestions.ts uses label.textContent. This is not HTML sanitization.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/56"
+    },
+    {
+      "alert": 57,
+      "rule": "js/incomplete-multi-character-sanitization",
+      "originalLocation": {
+        "path": "src/lib/site-search-build.ts",
+        "start_line": 67,
+        "end_line": 70,
+        "start_column": 18,
+        "end_column": 73
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "publicText strips source script/style/svg/noscript regions solely for search indexing. Extracted text is not executable markup, and the browser search UI assigns it with textContent.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/57"
+    },
+    {
+      "alert": 58,
+      "rule": "js/incomplete-multi-character-sanitization",
+      "originalLocation": {
+        "path": "src/lib/site-search-build.ts",
+        "start_line": 67,
+        "end_line": 69,
+        "start_column": 18,
+        "end_column": 66
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "publicText removes self-closing nonpublic source regions solely for search indexing. Its output feeds normalized search tokens and textContent-based labels, never innerHTML.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/58"
+    },
+    {
+      "alert": 59,
+      "rule": "js/incomplete-multi-character-sanitization",
+      "originalLocation": {
+        "path": "tests/collection-editorial.mjs",
+        "start_line": 99,
+        "end_line": 100,
+        "start_column": 9,
+        "end_column": 35
+      },
+      "disposition": "reviewed-false-positive",
+      "evidence": "The collection-editorial decode helper removes markup to compare rendered paragraph text with the accepted catalog prose. No text produced by this assertion helper is returned as HTML.",
+      "url": "https://github.com/mateopedersen/jotclipart/security/code-scanning/59"
+    }
+  ]
+}

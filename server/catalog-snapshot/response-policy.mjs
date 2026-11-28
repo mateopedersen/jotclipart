@@ -5,7 +5,7 @@ const hex = (bytes) =>
 export async function validateInlineScripts(html, allowedHashes) {
   if (!Array.isArray(allowedHashes) || !allowedHashes.length)
     throw Error('Reviewed script policy required');
-  for (const m of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)) {
+  for (const m of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script\s*[^>]*>/gi)) {
     if (/\bsrc\s*=/.test(m[1]) || /type="application\/(?:ld\+)?json"/.test(m[1]) || !m[2].trim())
       continue;
     const digest = hex(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(m[2])));

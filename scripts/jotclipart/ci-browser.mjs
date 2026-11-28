@@ -63,12 +63,10 @@ async function release(timeout = 60000) {
   return body;
 }
 const decode = (s) =>
-  s
-    .replaceAll('&amp;', '&')
-    .replaceAll('&quot;', '"')
-    .replaceAll('&apos;', "'")
-    .replaceAll('&lt;', '<')
-    .replaceAll('&gt;', '>');
+  s.replace(
+    /&(amp|quot|apos|lt|gt);/g,
+    (_, name) => ({ amp: '&', quot: '"', apos: "'", lt: '<', gt: '>' })[name],
+  );
 async function pinPreview() {
   const deadline = Date.now() + 20 * 60 * 1000;
   let before, last;

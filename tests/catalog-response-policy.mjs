@@ -16,6 +16,17 @@ test('only reviewed executable inline source hashes are allowed', async () => {
   await assert.rejects(() => validateInlineScripts('<script>alert(1)</script>', [h]), /Unexpected/);
   await assert.rejects(() => validateInlineScripts('', []), /Reviewed/);
 });
+test('inline policy checks browser-recognized mixed-case and whitespace closing tags', async () => {
+  const source = 'window.example=1',
+    hash = createHash('sha256').update(source).digest('hex');
+  for (const end of ['</script >', '</ScRiPt\t\n bar>', '</script/>']) {
+    await validateInlineScripts(`<SCRIPT>${source}${end}`, [hash]);
+    await assert.rejects(
+      () => validateInlineScripts(`<SCRIPT>window.unreviewed=1${end}`, [hash]),
+      /Unexpected/,
+    );
+  }
+});
 test('site security policy preserves dynamic response caching and editor rules', () => {
   const p = {
       page: { 'Content-Security-Policy': "script-src 'self'", 'Cache-Control': 'wrong' },
