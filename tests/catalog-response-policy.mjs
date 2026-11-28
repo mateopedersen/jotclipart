@@ -26,6 +26,12 @@ test('inline policy checks browser-recognized mixed-case and whitespace closing 
       /Unexpected/,
     );
   }
+  for (const fakeEnd of ['</scripture>', '</script-evil>', '</script\u00a0x>'])
+    await assert.rejects(
+      () =>
+        validateInlineScripts(`<script>${source}${fakeEnd}window.unreviewed=1</script>`, [hash]),
+      /Unexpected/,
+    );
 });
 test('site security policy preserves dynamic response caching and editor rules', () => {
   const p = {

@@ -84,7 +84,7 @@ export function contentFingerprint(html) {
       names = m[1].toLowerCase() === 'a' ? ['href'] : ['src', 'srcset', 'alt', 'poster', 'data'];
     return [m[1].toLowerCase(), ...names.map((name) => a[name] ?? '')];
   });
-  const graphs = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script\s*[^>]*>/gi)]
+  const graphs = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script(?:[\t\n\f\r /][^>]*)?>/gi)]
     .filter((m) => attributes(m[1]).type === 'application/ld+json')
     .map((m) => ordered(JSON.parse(m[2])));
   return sha(

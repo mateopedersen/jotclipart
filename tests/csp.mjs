@@ -14,7 +14,7 @@ test('deployed CSP authorizes every exact executable inline script without unsaf
   assert(!script.includes("'unsafe-inline'"));
   for (const f of walk(testBuildDirectory).filter((f) => f.endsWith('.html'))) {
     for (const m of readFileSync(f, 'utf8').matchAll(
-      /<script\b([^>]*)>([\s\S]*?)<\/script\s*[^>]*>/gi,
+      /<script\b([^>]*)>([\s\S]*?)<\/script(?:[\t\n\f\r /][^>]*)?>/gi,
     )) {
       if (/\bsrc\s*=/.test(m[1]) || /type="application\/(?:ld\+)?json"/.test(m[1]) || !m[2].trim())
         continue;

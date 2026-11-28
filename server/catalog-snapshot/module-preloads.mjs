@@ -12,7 +12,7 @@ export function preloadDocumentModules(html, revision, moduleImports = {}) {
   }
   const links = [],
     entries = [];
-  for (const m of html.matchAll(/<script\b([^>]*)>[\s\S]*?<\/script\s*[^>]*>/gi)) {
+  for (const m of html.matchAll(/<script\b([^>]*)>[\s\S]*?<\/script(?:[\t\n\f\r /][^>]*)?>/gi)) {
     const a = Object.fromEntries(
       [...m[1].matchAll(/([a-z-]+)="([^"]*)"/g)].map((v) => [v[1], v[2]]),
     );

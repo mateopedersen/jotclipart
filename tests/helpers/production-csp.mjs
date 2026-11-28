@@ -14,7 +14,7 @@ export async function installProductionCsp(page) {
     const response = await route.fetch(),
       body = await response.text(),
       hashes = new Set();
-    for (const match of body.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script\s*[^>]*>/gi)) {
+    for (const match of body.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script(?:[\t\n\f\r /][^>]*)?>/gi)) {
       if (
         /\bsrc\s*=/.test(match[1]) ||
         /type="application\/(?:ld\+)?json"/.test(match[1]) ||

@@ -94,7 +94,7 @@ report.security.configuredHeaders = readFileSync(resolve(root, 'dist/_headers'),
 const inlineFiles = [];
 for (const file of all.filter((f) => f.endsWith('.html'))) {
   const text = readFileSync(file, 'utf8');
-  const tags = [...text.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script\s*[^>]*>/gi)].filter(
+  const tags = [...text.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script(?:[\t\n\f\r /][^>]*)?>/gi)].filter(
     (m) =>
       !/\bsrc\s*=/.test(m[1]) && !/type\s*=\s*["']application\/(?:ld\+json|json)["']/i.test(m[1]),
   );

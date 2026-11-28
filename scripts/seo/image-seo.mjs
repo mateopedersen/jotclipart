@@ -39,7 +39,7 @@ export function htmlElements(html, { headOnly = false } = {}) {
       attributes[match[1].toLowerCase()] = decodeHtml(match[2] ?? match[3] ?? match[4] ?? '');
     let text = '';
     if (['script', 'style', 'textarea', 'title'].includes(name)) {
-      const end = new RegExp(`</${name}\\s*[^>]*>`, 'gi');
+      const end = new RegExp(`</${name}(?:[\\t\\n\\f\\r /][^>]*)?>`, 'gi');
       end.lastIndex = tags.lastIndex;
       const close = end.exec(html);
       if (close) {
